@@ -46,19 +46,29 @@ if admin_key:
 
 # ============ CONFIG ============
 # Baca dari Secrets Cloud dulu, kalau tidak ada baru baca dari config.yaml lokal
+from quant.auth import get_all_approved_users_for_auth # Tambahkan import ini di atas
+
+# ... kode sebelumnya ...
+
+# 1. Load base config (untuk cookie & admin)
 if "CONFIG_YAML" in st.secrets:
-    try:
-        config = yaml.safe_load(st.secrets["CONFIG_YAML"])
-    except Exception as e:
-        st.error(f"Gagal membaca CONFIG_YAML dari secrets: {e}")
-        st.stop()
+    config = yaml.safe_load(st.secrets["CONFIG_YAML"])
 else:
-    CONFIG_FILE = "config.yaml"
-    if not os.path.exists(CONFIG_FILE):
-        st.error("config.yaml tidak ditemukan (lokal).")
-        st.stop()
-    with open(CONFIG_FILE, encoding="utf-8") as f:
+    with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
+
+# 2. Timpa daftar usernames dengan data terbaru dari Supabase
+# (Termasuk admin yg ada di config.yaml, digabung dengan user dari DB)
+db_users = get_all_approved_users_for_auth()
+if db_users:
+    config["credentials"]["usernames"].update(db_users)
+
+authenticator = stauth.Authenticate(
+    config["credentials"],
+    config["cookie"]["name"],
+    config["cookie"]["key"],
+    config["cookie"]["expiry_days"],
+)
 
 authenticator = stauth.Authenticate(
     config["credentials"],
