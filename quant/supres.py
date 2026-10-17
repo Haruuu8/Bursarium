@@ -15,10 +15,31 @@ def _get_parquet():
     if not os.path.exists(PARQUET_FILE):
         return None
     df = pd.read_parquet(PARQUET_FILE)
-    df.columns = [str(c).strip().title() for c in df.columns]
+    
+    # 1. Normalisasi nama kolom: lowercase dulu agar tidak ada yg dobel
+    df.columns = [str(c).strip().lower() for c in df.columns]
+    
+    # 2. Petakan ke nama standar
+    col_map = {
+        "date": "Date", "tanggal": "Date",
+        "open": "Open", "high": "High", "low": "Low", "close": "Close",
+        "volume": "Volume", "vol": "Volume",
+        "kode": "Kode"
+    }
+    df = df.rename(columns=col_map)
+    
+    # 3. Hapus kolom ganda (jika ada)
+    df = df.loc[:, ~df.columns.duplicated(keep="first")]
+    
+    # 4. Konversi Date dengan sangat aman
     if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
+        date_series = df["Date"]
+        if isinstance(date_series, pd.DataFrame):
+            date_series = date_series.iloc[:, 0]
+        df["Date"] = pd.to_datetime(date_series, errors="coerce").dt.tz_localize(None)
+    
     return df
+
 
 def _load_ohlcv(kode, timeframe="daily"):
     df_all = _get_parquet()
