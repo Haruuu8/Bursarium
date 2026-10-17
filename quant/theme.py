@@ -376,6 +376,64 @@ footer { visibility: hidden; }
 [data-testid="stMarkdown"] > div > p:empty {
     display: none;
 }
+
+
+/* ============================================================ */
+/* 🔥 TAMBAHAN CSS UNTUK MOBILE (TOMBOL 3 GARIS & RESPONSIVE) 🔥 */
+/* ============================================================ */
+
+/* 1. Memaksa Tombol Sidebar (Hamburger) Muncul di HP */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+    position: fixed !important;
+    top: 15px !important;
+    left: 15px !important;
+    background-color: #6366f1 !important; /* Warna ungu */
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6) !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sembunyikan panah bawaan Streamlit */
+[data-testid="collapsedControl"] svg {
+    display: none !important;
+}
+
+/* Ganti ikon dengan 3 garis (Hamburger) */
+[data-testid="collapsedControl"]::after {
+    content: "☰";
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+/* 2. Perbaikan Desain Khusus Layar HP */
+@media (max-width: 768px) {
+    /* Beri jarak atas agar tidak tertutup tombol hamburger */
+    .block-container {
+        padding-top: 4rem !important; 
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Ubah 2 kolom bersebelahan jadi menumpuk ke bawah di HP */
+    [data-testid="column"] {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+        margin-bottom: 10px;
+    }
+    
+    /* Sesuaikan ukuran teks agar tidak kepanjangan */
+    h1 { font-size: 2rem !important; }
+    .hero-title { font-size: 28px !important; }
+}
 </style>
 """
 
@@ -402,7 +460,7 @@ def hero(title, subtitle, badge_text="", badge_color="#06b6d4"):
             f'● {badge_text}</div>'
         )
     return (
-        '<div style="'
+        '<div class="hero-title" style="'
         'background: linear-gradient(135deg, #0d1424 0%, #0a1020 100%); '
         'border: 1px solid #1e2942; border-radius: 20px; '
         'padding: 36px 40px; margin-bottom: 28px;">'
@@ -417,7 +475,6 @@ def hero(title, subtitle, badge_text="", badge_color="#06b6d4"):
 
 
 def page_header(icon, title, subtitle=""):
-    # Kalau icon kosong / cuma whitespace → skip kotak icon
     icon = (icon or "").strip()
     if icon:
         icon_html = (

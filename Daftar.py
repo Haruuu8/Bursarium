@@ -37,10 +37,12 @@ else:
     with open("config.yaml", encoding="utf-8") as f:
         config = yaml.safe_load(f)
 
+# Ambil user dari Database Supabase
 db_users = get_all_approved_users_for_auth()
 if db_users:
     config["credentials"]["usernames"].update(db_users)
 
+# ============ INISIALISASI AUTHENTICATOR ============
 authenticator = stauth.Authenticate(
     config["credentials"],
     config["cookie"]["name"],
@@ -59,10 +61,10 @@ if st.session_state.get("authentication_status"):
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
     ]
     
-    # INI AKAN MEMBUAT SIDEBAR NAVIGASI BAWAAN STREAMLIT (KIRI)
-    pg = st.navigation(pages)
+    # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) muncul
+    pg = st.navigation(pages) 
     
-    # Tampilkan info user di sidebar bawah (jika ada)
+    # Tampilkan info user di sidebar (jika ada)
     from quant.nav import render_user_sidebar
     render_user_sidebar() 
     
@@ -70,10 +72,15 @@ if st.session_state.get("authentication_status"):
     st.stop()
 
 # ============ KALAU BELUM LOGIN → LANDING PAGE ============
+# HERO SECTION
 st.markdown(hero("📊 Bursarium", "Platform analisis saham IDX — fundamental, teknikal, screening, dan valuasi dalam satu tempat. Semua yang Anda butuhkan untuk ambil keputusan trading.", badge_text="PLATFORM ANALISIS SAHAM", badge_color="#06b6d4"), unsafe_allow_html=True)
 
+# MEMBUAT TAB UNTUK LOGIN DAN DAFTAR
 tab_login, tab_daftar = st.tabs(["🔐 Login", "📝 Daftar Sekarang"])
 
+# ==========================================
+# ISI TAB 1: LOGIN
+# ==========================================
 with tab_login:
     st.markdown("<br>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1, 2, 1])
@@ -87,6 +94,9 @@ with tab_login:
         
         st.markdown('<div style="text-align:center; margin-top:20px; font-size:13px; color:#94a3b8;">Belum punya akun? Silakan klik tab <b>Daftar Sekarang</b> di atas.</div>', unsafe_allow_html=True)
 
+# ==========================================
+# ISI TAB 2: DAFTAR & MARKETING
+# ==========================================
 with tab_daftar:
     st.markdown(section_title("✨ Yang Anda Dapatkan"), unsafe_allow_html=True)
     FITUR = [
