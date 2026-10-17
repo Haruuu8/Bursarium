@@ -412,13 +412,13 @@ footer { visibility: hidden; }
     line-height: 1;
 }
 
-/* 2. PERBAIKAN DESAIN KHUSUS LAYAR HP (Maksimal 991px agar HP layar lebar kena) */
+/* 2. PERBAIKAN DESAIN KHUSUS LAYAR HP (Maksimal 991px) */
 @media (max-width: 991px) {
     /* Perkecil padding halaman */
     .block-container {
         padding-top: 4rem !important;
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
         padding-bottom: 2rem !important;
         max-width: 100% !important;
     }
@@ -430,63 +430,87 @@ footer { visibility: hidden; }
     p, li, .stMarkdown { font-size: 13px !important; line-height: 1.5 !important; }
 
     /* ========================================================
-       FIX GAMBAR 1: BUY ON SUPPORT / BREAKOUT
-       (Paksa jadi rata kiri dan tumpuk ke bawah)
+       FIX GAMBAR 1: WATCHLIST (Tulisan TRUK berantakan)
        ======================================================== */
-    
-    /* Paksa semua container yang memakai flex-row menjadi kolom */
-    div[style*="display: flex; justify-content: space-between"],
-    div[style*="display:flex; justify-content:space-between"],
-    div[style*="justify-content:space-between"] {
-        flex-direction: column !important;
+    /* Pastikan container flex tidak memaksa text jadi vertikal */
+    div[style*="display: flex; align-items: center; gap: 20px;"] {
+        flex-direction: row !important;
         align-items: flex-start !important;
-        gap: 8px !important;
     }
-    
-    /* Paksa teks Harga Saat Ini agar RATA KIRI */
-    div[style*="text-align: right"],
-    div[style*="text-align:right"] {
-        text-align: left !important;
-        min-width: 100% !important;
-        margin-top: 8px !important;
+    /* Paksa kode saham agar tidak turun ke bawah */
+    div[style*="flex: 1; min-width: 0;"] {
+        flex: 1 !important;
+        min-width: 50px !important;
+    }
+    /* Pastikan harga tetap di kanan */
+    div[style*="text-align:right; flex-shrink:0;"] {
+        min-width: 80px !important;
+        text-align: right !important;
     }
 
     /* ========================================================
-       FIX GAMBAR 2: VALUASI
-       (Paksa jadi 2 kolom menyamping dan rata kiri)
+       FIX GAMBAR 2: VALUASI (Teks berantakan)
        ======================================================== */
-       
-    /* Ubah semua Grid (baik 3 atau 4 kolom) menjadi 2 kolom (1fr 1fr) */
+    /* Jangan ubah flex-direction di valuation, cukup atur grid metric-nya */
     div[style*="grid-template-columns: repeat(4, 1fr)"],
     div[style*="grid-template-columns:repeat(4, 1fr)"],
     div[style*="grid-template-columns: repeat(3, 1fr)"],
-    div[style*="grid-template-columns:repeat(3, 1fr)"],
-    div[style*="display: grid"],
-    div[style*="display:grid"] {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important; /* 2 Kolom */
-        gap: 12px !important;
-        align-items: start !important;
-        justify-items: start !important;
+    div[style*="grid-template-columns:repeat(3, 1fr)"] {
+        grid-template-columns: 1fr 1fr !important; /* Jadi 2 kolom */
+        gap: 8px !important;
+    }
+    /* Rapikan teks tengah di valuasi */
+    div[style*="text-align: center;"] {
+        text-align: left !important;
     }
 
-    /* Paksa semua teks (termasuk Harga ke Fair Value) agar rata kiri */
-    div[style*="text-align: center"],
-    div[style*="text-align:center"] {
-        text-align: left !important;
+    /* ========================================================
+       FIX GAMBAR 3: PERFORMA (Tabel kepotong)
+       ======================================================== */
+    /* Ubah layout baris performa jadi wrap */
+    div[style*="display:flex; justify-content:space-between; align-items:center; padding:11px 18px;"] {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+        padding: 12px !important;
+    }
+    /* Hilangkan min-width yang memaksa tabel melebar */
+    div[style*="display:flex; justify-content:space-between; align-items:center; padding:11px 18px;"] span {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+    div[style*="display:flex; gap:20px; align-items:center; flex:1;"] {
+        flex-wrap: wrap !important;
+        gap: 5px !important;
+    }
+    div[style*="display:flex; gap:24px; align-items:center;"] {
+        width: 100% !important;
+        justify-content: space-between !important;
+        margin-top: 5px !important;
+    }
+
+    /* ========================================================
+       FIX GAMBAR 4: BUY ON SUPPORT (Kotak bolong)
+       ======================================================== */
+    /* Paksa grid 4 kolom (ENTRY, SL, TP1, TP2) jadi 2x2 yang rapi */
+    div[style*="display:grid; grid-template-columns:repeat(4, 1fr);"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+    }
+    /* Perkecil padding kotak di dalamnya */
+    div[style*="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;"] {
+        padding: 10px !important;
     }
 
     /* ========================================================
        PENYESUAIAN UKURAN LAINNYA
        ======================================================== */
     span[style*="font-size: 30px"], span[style*="font-size:30px"],
-    span[style*="font-size: 26px"], span[style*="font-size:26px"],
-    span[style*="font-size: 24px"], span[style*="font-size:24px"] {
+    span[style*="font-size: 26px"], span[style*="font-size:26px"] {
         font-size: 20px !important;
     }
 
-    div[style*="padding: 20px 24px"], div[style*="padding:20px 24px"],
-    div[style*="padding: 22px 26px"], div[style*="padding:22px 26px"] {
+    div[style*="padding: 20px 24px"], div[style*="padding:20px 24px"] {
         padding: 14px 16px !important;
     }
 }
