@@ -364,12 +364,11 @@ span[class*="material-symbols"] {
 ::-webkit-scrollbar-thumb:hover { background: #3a4d75; }
 
 /* ============================================================
-   HIDE STREAMLIT BRANDING (PERBAIKAN: JANGAN SEMBUNYIKAN TOOLBAR)
+   HIDE STREAMLIT BRANDING
    ============================================================ */
 #MainMenu { visibility: hidden; }
 footer { visibility: hidden; }
-[data-testid="stAppDeployButton"] { display: none !important; } /* Hanya sembunyikan tombol deploy */
-/* [data-testid="stToolbar"] { display: none !important; } <-- DIHAPUS KARENA MEMBUAT TOMBOL SIDEBAR HILANG */
+[data-testid="stAppDeployButton"] { display: none !important; }
 
 /* Sembunyikan stray text node */
 [data-testid="stMarkdown"] > div > p:empty {
@@ -381,7 +380,7 @@ footer { visibility: hidden; }
 /* 🔥 TAMBAHAN CSS UNTUK MOBILE (TOMBOL 3 GARIS & RESPONSIVE) 🔥 */
 /* ============================================================ */
 
-/* 1. Memaksa Tombol Sidebar (Hamburger) Muncul di HP dengan Selector Terbaru */
+/* 1. Memaksa Tombol Sidebar (Hamburger) Muncul di HP */
 [data-testid="stExpandSidebarButton"],
 [data-testid="stSidebarCollapsedControl"] {
     display: flex !important;
@@ -391,7 +390,7 @@ footer { visibility: hidden; }
     position: fixed !important;
     top: 15px !important;
     left: 15px !important;
-    background-color: #6366f1 !important; /* Warna ungu */
+    background-color: #6366f1 !important;
     border-radius: 8px !important;
     padding: 8px 12px !important;
     box-shadow: 0 4px 15px rgba(0,0,0,0.6) !important;
@@ -399,13 +398,11 @@ footer { visibility: hidden; }
     justify-content: center;
 }
 
-/* Sembunyikan ikon panah bawaan Streamlit */
 [data-testid="stExpandSidebarButton"] svg,
 [data-testid="stSidebarCollapsedControl"] svg {
     display: none !important;
 }
 
-/* Ganti ikon dengan 3 garis (Hamburger) */
 [data-testid="stExpandSidebarButton"]::after,
 [data-testid="stSidebarCollapsedControl"]::after {
     content: "☰";
@@ -415,26 +412,74 @@ footer { visibility: hidden; }
     line-height: 1;
 }
 
-/* 2. Perbaikan Desain Khusus Layar HP */
+/* 2. PERBAIKAN DESAIN KHUSUS LAYAR HP (AGAR TIDAK TERLALU ZOOM) */
 @media (max-width: 768px) {
-    /* Beri jarak atas agar konten tidak tertutup tombol hamburger */
+    /* Perkecil padding halaman */
     .block-container {
-        padding-top: 4rem !important; 
+        padding-top: 4rem !important;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
+        padding-bottom: 2rem !important;
+        max-width: 100% !important;
+    }
+
+    /* Perkecil ukuran judul bawaan Streamlit */
+    h1 { font-size: 1.6rem !important; }
+    h2 { font-size: 1.3rem !important; }
+    h3 { font-size: 1.1rem !important; }
+    p, li, .stMarkdown { font-size: 13px !important; line-height: 1.5 !important; }
+
+    /* Perkecil tombol */
+    .stButton > button, .stDownloadButton > button, .stFormSubmitButton > button {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+
+    /* Perkecil tab agar tidak kepotong ke samping */
+    .stTabs [data-baseweb="tab"] {
+        font-size: 12px !important;
+        padding: 8px 10px !important;
+    }
+
+    /* Ubah Grid 4 Kolom (seperti di Card Setup) jadi 2 Kolom */
+    div[style*="grid-template-columns:repeat(4, 1fr)"],
+    div[style*="grid-template-columns: repeat(4, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
     }
     
-    /* Ubah 2 kolom bersebelahan jadi menumpuk ke bawah di HP */
-    [data-testid="column"] {
-        width: 100% !important;
-        flex: 1 1 100% !important;
-        min-width: 100% !important;
-        margin-bottom: 10px;
+    /* Ubah Grid 3 Kolom jadi 1 Kolom */
+    div[style*="grid-template-columns:repeat(3, 1fr)"],
+    div[style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
     }
-    
-    /* Sesuaikan ukuran teks agar tidak kepanjangan */
-    h1 { font-size: 2rem !important; }
-    .hero-title { font-size: 28px !important; }
+
+    /* Perkecil ukuran teks harga / angka raksasa di dalam Card Custom */
+    span[style*="font-size: 30px"], div[style*="font-size: 30px"],
+    span[style*="font-size:30px"], div[style*="font-size:30px"],
+    span[style*="font-size: 26px"], div[style*="font-size: 26px"],
+    span[style*="font-size: 22px"], div[style*="font-size: 22px"] {
+        font-size: 20px !important;
+    }
+
+    span[style*="font-size: 24px"], div[style*="font-size: 24px"],
+    span[style*="font-size: 20px"], div[style*="font-size: 20px"] {
+        font-size: 16px !important;
+    }
+
+    /* Perkecil padding di dalam Card Custom */
+    div[style*="padding: 20px 24px"], div[style*="padding:20px 24px"],
+    div[style*="padding: 22px 26px"], div[style*="padding:22px 26px"],
+    div[style*="padding: 18px 22px"], div[style*="padding:18px 22px"] {
+        padding: 12px 14px !important;
+    }
+
+    /* Pastikan elemen flexbox menumpuk ke bawah jika tidak muat */
+    div[style*="display:flex; justify-content:space-between;"] {
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+    }
 }
 </style>
 """
