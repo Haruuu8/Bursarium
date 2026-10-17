@@ -3,7 +3,8 @@ if not st.session_state.get("authentication_status"):
     st.error("Silakan login dulu di halaman utama.")
     st.info("Buka tab baru → http://localhost:8501")
     st.stop()
-"""Halaman WATCHLIST — 6 tab, baca dari JSON (fast)."""
+
+# Halaman WATCHLIST — 6 tab, baca dari JSON (fast).
 
 import os, sys, json
 import numpy as np

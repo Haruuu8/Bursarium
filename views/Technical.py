@@ -3,7 +3,8 @@ if not st.session_state.get("authentication_status"):
     st.error("Silakan login dulu di halaman utama.")
     st.info("Buka tab baru → http://localhost:8501")
     st.stop()
-"""Halaman TECHNICAL — multi-scale S/R + indikator + sinyal + R:R long-only."""
+
+# Halaman TECHNICAL — multi-scale S/R + indikator + sinyal + R:R long-only.
 
 import os, sys
 import numpy as np
