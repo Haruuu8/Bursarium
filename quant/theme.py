@@ -432,17 +432,16 @@ footer { visibility: hidden; }
     /* ========================================================
        FIX VALUASI: Paksa Flex Column jadi Grid 2 Kolom Menyamping
        ======================================================== */
-    div[style*="display: flex; flex-direction: column"],
-    div[style*="display:flex; flex-direction:column"] {
+    /* Menargetkan container yang membungkus metrik ROE, DER, dll */
+    div[style*="display: flex"][style*="flex-direction: column"] {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        gap: 12px !important;
+        gap: 16px 8px !important;
         align-items: start !important;
     }
     
-    /* Paksa semua text rata kiri (termasuk Harga ke Fair Value) */
-    div[style*="text-align: center;"],
-    div[style*="text-align:center;"] {
+    /* Teks rata kiri */
+    div[style*="text-align: center;"] {
         text-align: left !important;
     }
 
@@ -452,6 +451,11 @@ footer { visibility: hidden; }
     div[style*="display:grid; grid-template-columns:repeat(4, 1fr);"] {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 8px !important;
+    }
+    
+    /* Perkecil padding kotak Entry/SL/TP agar muat */
+    div[style*="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;"] {
+        padding: 10px !important;
     }
 
     /* Penyesuaian ukuran font */

@@ -1153,21 +1153,21 @@ with tab6:
                             ihsg_col = ("#10b981" if (not pd.isna(ihsg_r) and ihsg_r >= 0)
                                         else "#f43f5e" if not pd.isna(ihsg_r) else "#64748b")
 
-                            # ALPHA DIHAPUS & TATA LETAK RAPI KE KIRI BAWAH
+                            # ALPHA DIHAPUS & TATA LETAK RAPI MENGGUNAKAN GRID 2 KOLOM
                             st.markdown(
                                 '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
                                 'border-radius:10px; margin-bottom:8px; padding:12px 16px; '
-                                'border:1px solid #1a2338; display:flex; flex-direction:column; gap:6px;">'
-                                f'<div style="display:flex; justify-content:space-between; align-items:center;">'
+                                'border:1px solid #1a2338;">'
+                                f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
                                 f'<span style="font-size:13px; color:#e6ebf5; font-weight:700;">{tgl_str}</span>'
                                 f'<span style="font-size:11px; color:#7d8ba3;">{r["N_exec"]} trade</span>'
                                 f'</div>'
-                                f'<div style="display:flex; gap:30px; margin-top:4px;">'
-                                f'<div style="text-align:left;">'
+                                f'<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">'
+                                f'<div>'
                                 f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">Porto</div>'
                                 f'<div style="font-size:13px; font-weight:800; color:{port_col};">{port_str}</div>'
                                 f'</div>'
-                                f'<div style="text-align:left;">'
+                                f'<div>'
                                 f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">IHSG</div>'
                                 f'<div style="font-size:13px; font-weight:800; color:{ihsg_col};">{ihsg_str}</div>'
                                 f'</div>'
