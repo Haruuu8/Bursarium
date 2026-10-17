@@ -1,16 +1,14 @@
 """
-PRE-GOLDEN-CROSS SCANNER v3 — dengan Emerging Pre-Cross
-
-Fungsi:
-  - scan_pre_cross()          : setup skor ≥ 85 (WR ~91%)
-  - scan_emerging_pre_cross() : kandidat skor 65-84 menuju 85+
+PRE-GOLDEN-CROSS SCANNER v3 - dengan Emerging Pre-Cross
+(Dimodifikasi untuk membaca dari file parquet)
 """
 
 import os
 import pandas as pd
 import numpy as np
+import streamlit as st
 
-OHLCV_DIR = "data_ohlcv_idx"
+PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 
 # ==== Threshold pre-cross ====
 SKOR_MIN = 85
@@ -26,11 +24,18 @@ EMA_TREND = 200
 CONVERGE_LB = 5
 SLOPE_LB = 5
 
+@st.cache_data(ttl=3600)
+def _get_parquet():
+    if not os.path.exists(PARQUET_FILE):
+        return None
+    df = pd.read_parquet(PARQUET_FILE)
+    df.columns = [str(c).strip().title() for c in df.columns]
+    if "Date" in df.columns:
+        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
+    return df
 
-# ==== Indikator ====
 def ema(s, p):
     return s.ewm(span=p, adjust=False).mean()
-
 
 def rsi(s, p=14):
     d = s.diff()
@@ -40,7 +45,6 @@ def rsi(s, p=14):
     rs = ag / al.replace(0, np.nan)
     return 100 - (100 / (1 + rs))
 
-
 def macd_hist(s, fast=12, slow=26, sig=9):
     ef = s.ewm(span=fast, adjust=False).mean()
     es = s.ewm(span=slow, adjust=False).mean()
@@ -48,71 +52,17 @@ def macd_hist(s, fast=12, slow=26, sig=9):
     signal = line.ewm(span=sig, adjust=False).mean()
     return line - signal
 
-
 def load_ohlcv(kode):
-    """Loader universal — handle format lama (30 kolom) & baru (6 kolom)."""
-    path = os.path.join(OHLCV_DIR, f"{kode}.csv")
-    if not os.path.exists(path):
+    df_all = _get_parquet()
+    if df_all is None or "Kode" not in df_all.columns:
         return None
-
-    try:
-        df = pd.read_csv(path)
-    except Exception:
+    df = df_all[df_all["Kode"] == kode].copy()
+    if df.empty:
         return None
-
-    # Rename kolom (case-insensitive + alias)
-    ren = {}
-    for c in df.columns:
-        cl = str(c).lower().strip()
-        if cl in ("date", "tanggal"):
-            ren[c] = "Date"
-        elif cl in ("open", "openprice", "open_price"):
-            ren[c] = "Open"
-        elif cl in ("high", "highprice", "high_price"):
-            ren[c] = "High"
-        elif cl in ("low", "lowprice", "low_price"):
-            ren[c] = "Low"
-        elif cl in ("close", "closeprice", "close_price"):
-            ren[c] = "Close"
-        elif cl == "volume":
-            ren[c] = "Volume"
-
-    df = df.rename(columns=ren)
-
-    # Buang kolom duplikat setelah rename (kasus: High + HIGH → 2x High)
-    df = df.loc[:, ~df.columns.duplicated(keep="first")]
-
-    # Cek kolom wajib
-    for col in ["Date", "Open", "High", "Low", "Close", "Volume"]:
-        if col not in df.columns:
-            return None
-
-    # Konversi Date — handle format campuran (tz-aware & tz-naive)
-    try:
-        df["Date"] = pd.to_datetime(
-            df["Date"], format="mixed", errors="coerce", utc=True
-        ).dt.tz_localize(None)
-    except Exception:
-        return None
-
-    df = df.dropna(subset=["Date"]).sort_values("Date").reset_index(drop=True)
-
-    # Konversi numerik — handle kalau df[col] = DataFrame
-    for col in ["Open", "High", "Low", "Close", "Volume"]:
-        s = df[col]
-        if isinstance(s, pd.DataFrame):
-            s = s.iloc[:, 0]
-        df[col] = pd.to_numeric(s, errors="coerce")
-
-    df = df.dropna(
-        subset=["Open", "High", "Low", "Close", "Volume"]
-    ).reset_index(drop=True)
-
+    df = df.sort_values("Date").reset_index(drop=True)
     return df
 
-
 def hitung_skor(df, i):
-    """Skor 0-95 berdasarkan rule tervalidasi."""
     close = df["Close"].iloc[i]
     ema_f = df["ema_f"].iloc[i]
     ema_s = df["ema_s"].iloc[i]
@@ -121,7 +71,6 @@ def hitung_skor(df, i):
     detail = {}
     total = 0
 
-    # 1. GAP (max 15)
     gap_pct = (ema_s - ema_f) / ema_s * 100 if ema_s > 0 else 999
     if gap_pct <= 1.0: pts = 15
     elif gap_pct <= 2.0: pts = 10
@@ -129,7 +78,6 @@ def hitung_skor(df, i):
     total += pts
     detail["gap"] = {"pts": pts, "pct": gap_pct, "max": 15}
 
-    # 2. KONVERGEN (max 15)
     j = i - CONVERGE_LB
     konv_pct = 0
     if j >= 0:
@@ -143,7 +91,6 @@ def hitung_skor(df, i):
     total += pts
     detail["konvergen"] = {"pts": pts, "pct": konv_pct, "max": 15}
 
-    # 3. SLOPE EMA20 (max 15)
     k = i - SLOPE_LB
     slope_pct = 0
     if k >= 0:
@@ -157,7 +104,6 @@ def hitung_skor(df, i):
     total += pts
     detail["slope"] = {"pts": pts, "pct": slope_pct, "max": 15}
 
-    # 4. RSI (max 15)
     rsi_v = df["rsi"].iloc[i]
     if not pd.isna(rsi_v):
         if rsi_v >= 60: pts = 15
@@ -167,7 +113,6 @@ def hitung_skor(df, i):
     total += pts
     detail["rsi"] = {"pts": pts, "val": rsi_v, "max": 15}
 
-    # 5. MACD (max 10)
     mh_v = df["macd_h"].iloc[i]
     mh_p = df["macd_h"].iloc[i-1] if i > 0 else np.nan
     if not pd.isna(mh_v):
@@ -178,13 +123,11 @@ def hitung_skor(df, i):
     total += pts
     detail["macd"] = {"pts": pts, "max": 10}
 
-    # 6. HARGA > EMA200 (max 10)
     if not pd.isna(ema_t) and close > ema_t: pts = 10
     else: pts = 0
     total += pts
     detail["ema200"] = {"pts": pts, "max": 10}
 
-    # 7. VOLUME (max 10)
     v5 = df["Volume"].iloc[max(0, i-4):i+1].mean()
     vma = df["vol_ma20"].iloc[i]
     vol_ratio = v5 / vma if vma > 0 else 0
@@ -194,7 +137,6 @@ def hitung_skor(df, i):
     total += pts
     detail["volume"] = {"pts": pts, "ratio": vol_ratio, "max": 10}
 
-    # 8. HIGHER LOW (max 5)
     if i >= 10:
         lows = df["Low"].iloc[i-10:i+1].values
         mid = len(lows) // 2
@@ -211,9 +153,7 @@ def hitung_skor(df, i):
         "rsi": round(float(rsi_v), 1) if not pd.isna(rsi_v) else None,
     }
 
-
 def _prepare_df(df):
-    """Hitung semua indikator ke df."""
     df["ema_f"] = ema(df["Close"], EMA_FAST)
     df["ema_s"] = ema(df["Close"], EMA_SLOW)
     df["ema_t"] = ema(df["Close"], EMA_TREND)
@@ -222,24 +162,14 @@ def _prepare_df(df):
     df["vol_ma20"] = df["Volume"].rolling(20).mean()
     return df
 
-
-# ============================================================
-# SCAN 1 — SETUP SKOR ≥ 85 (presisi tinggi, WR ~91%)
-# ============================================================
 def scan_pre_cross():
-    """
-    Scan saham dengan threshold DIKUNCI:
-      - Gap ≤ 4%
-      - Skor ≥ 85
-      - Harga > EMA20
-    """
-    if not os.path.exists(OHLCV_DIR):
+    df_all = _get_parquet()
+    if df_all is None:
         return []
-
+    
+    kodes = df_all["Kode"].unique()
     results = []
-    for f in sorted(os.listdir(OHLCV_DIR)):
-        if not f.endswith(".csv"): continue
-        kode = f.replace(".csv", "")
+    for kode in kodes:
         df = load_ohlcv(kode)
         if df is None or len(df) < EMA_TREND + 50:
             continue
@@ -292,29 +222,14 @@ def scan_pre_cross():
     results.sort(key=lambda x: -x["skor"])
     return results
 
-
-# ============================================================
-# SCAN 2 — KANDIDAT EMERGING SKOR 65-84 (menuju 85+)
-# ============================================================
 def scan_emerging_pre_cross(min_skor=65, max_skor=84, max_gap=5.0):
-    """
-    Scan saham yang BELUM 85+ tapi sedang menuju ke sana.
-
-    Kriteria:
-      - EMA20 < EMA50 (belum cross)
-      - Gap ≤ max_gap
-      - Skor antara min_skor s/d max_skor
-      - Konvergen (gap mengecil) — WAJIB
-      - Slope EMA20 positif — WAJIB
-      - Harga > EMA20
-    """
-    if not os.path.exists(OHLCV_DIR):
+    df_all = _get_parquet()
+    if df_all is None:
         return []
-
+        
+    kodes = df_all["Kode"].unique()
     results = []
-    for f in sorted(os.listdir(OHLCV_DIR)):
-        if not f.endswith(".csv"): continue
-        kode = f.replace(".csv", "")
+    for kode in kodes:
         df = load_ohlcv(kode)
         if df is None or len(df) < EMA_TREND + 50:
             continue
@@ -349,16 +264,13 @@ def scan_emerging_pre_cross(min_skor=65, max_skor=84, max_gap=5.0):
         if not (min_skor <= skor <= max_skor):
             continue
 
-        # WAJIB: konvergen
         konv_pct = values["konv_pct"]
         if konv_pct <= 0:
             continue
 
-        # WAJIB: slope EMA20 positif
         if values["slope_pct"] <= 0:
             continue
 
-        # Estimasi hari ke skor 85
         days_to_85 = None
         if konv_pct > 0 and gap_pct > 0:
             rate_gap_per_day = (gap_pct * konv_pct / 100) / CONVERGE_LB
@@ -387,7 +299,6 @@ def scan_emerging_pre_cross(min_skor=65, max_skor=84, max_gap=5.0):
 
     results.sort(key=lambda x: (-x["skor"], x.get("days_to_85") or 999))
     return results
-
 
 def load_nama_map():
     nama = {}

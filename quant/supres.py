@@ -1,73 +1,34 @@
 """
-Support/Resistance v2 — Multi-Timeframe + Multi-Scale Pivot.
-
-Konsep:
-  - Deteksi pivot di 3 skala: SHORT (n=3), MEDIUM (n=7), LONG (n=15)
-  - Setiap skala di-cluster terpisah
-  - SHORT = intraday swing / day trading
-  - MEDIUM = swing trading / 1-2 minggu
-  - LONG = position trading / bulanan
-
-  Timeframe resample (opsional): daily, weekly, monthly
-
-Output:
-  {
-    "current_price": ...,
-    "scales": {
-      "short":  {"supports": [...], "resistances": [...]},
-      "medium": {"supports": [...], "resistances": [...]},
-      "long":   {"supports": [...], "resistances": [...]},
-    },
-    "combined": {
-      "supports": [...],    # gabungan semua skala, dedup
-      "resistances": [...],
-    }
-  }
+Support/Resistance v2 - Multi-Timeframe + Multi-Scale Pivot.
+(Dimodifikasi untuk membaca dari file parquet)
 """
 
 import os
 import numpy as np
 import pandas as pd
+import streamlit as st
 
+PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 
-OHLCV_DIR = "data_ohlcv_idx"
+@st.cache_data(ttl=3600)
+def _get_parquet():
+    if not os.path.exists(PARQUET_FILE):
+        return None
+    df = pd.read_parquet(PARQUET_FILE)
+    df.columns = [str(c).strip().title() for c in df.columns]
+    if "Date" in df.columns:
+        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
+    return df
 
-
-# ============================================================
-# LOAD & RESAMPLE
-# ============================================================
 def _load_ohlcv(kode, timeframe="daily"):
-    path = os.path.join(OHLCV_DIR, f"{kode}.csv")
-    if not os.path.exists(path):
+    df_all = _get_parquet()
+    if df_all is None or "Kode" not in df_all.columns:
         return None
-    try:
-        df = pd.read_csv(path)
-    except Exception:
+    
+    df = df_all[df_all["Kode"] == kode].copy()
+    if df.empty:
         return None
-
-    rename_map = {}
-    for col in df.columns:
-        cl = str(col).lower().strip()
-        if cl in ("open", "openprice"): rename_map[col] = "Open"
-        elif cl in ("high", "highprice"): rename_map[col] = "High"
-        elif cl in ("low", "lowprice"): rename_map[col] = "Low"
-        elif cl in ("close", "closeprice"): rename_map[col] = "Close"
-        elif cl in ("volume", "vol"): rename_map[col] = "Volume"
-        elif cl == "date": rename_map[col] = "Date"
-
-    df = df.rename(columns=rename_map)
-    df = df.loc[:, ~df.columns.duplicated(keep="first")]
-
-    required = ["Date", "Open", "High", "Low", "Close"]
-    if any(c not in df.columns for c in required):
-        return None
-
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-    df = df[df["Date"].notna()].copy()
-    for c in ["Open", "High", "Low", "Close"]:
-        df = df[df[c].notna() & (df[c] > 0)]
-    df = df.sort_values("Date").reset_index(drop=True)
-
+        
     if "Volume" not in df.columns:
         df["Volume"] = 0
 
@@ -100,9 +61,6 @@ def _atr(df, n=14):
     return tr.rolling(n, min_periods=n).mean()
 
 
-# ============================================================
-# PIVOT & CLUSTER
-# ============================================================
 def find_pivots(df, n=5):
     highs = df["High"].values
     lows = df["Low"].values
@@ -161,9 +119,6 @@ def cluster_pivots(pivots, tolerance):
     return out
 
 
-# ============================================================
-# SCORE + BREAK
-# ============================================================
 def check_break(zone, df, atr_val, original_type):
     last_price = float(df["Close"].iloc[-1])
     recent = df.tail(5)
@@ -187,7 +142,6 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     n_low = types.count("low")
     n_high = types.count("high")
 
-    # Tipe asli dari pivot (untuk deteksi flip)
     if n_low > n_high:
         original_type = "support"
     elif n_high > n_low:
@@ -195,13 +149,11 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     else:
         original_type = "support" if zone["level"] < current_price else "resistance"
 
-    # --- Touches ---
     if n_touches >= 5: score += 4
     elif n_touches >= 3: score += 3
     elif n_touches >= 2: score += 2
     else: score += 1
 
-    # --- Bounce ---
     bounces = 0
     for p in zone["pivots"]:
         idx = p["idx"]
@@ -216,7 +168,6 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     if bounces >= 2: score += 2
     elif bounces >= 1: score += 1
 
-    # --- Volume ---
     if "Volume" in df.columns and df["Volume"].sum() > 0:
         vma = df["Volume"].rolling(20).mean()
         high_vol = 0
@@ -228,12 +179,10 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
         if high_vol >= 2: score += 1.5
         elif high_vol >= 1: score += 0.75
 
-    # --- Recency ---
     days_ago = (df["Date"].iloc[-1] - zone["last_touch"]).days
     recency = np.exp(-days_ago / 365)
     score += recency * 1.5
 
-    # --- Round number ---
     level = zone["level"]
     for step in [1000, 500, 100]:
         nearest = round(level / step) * step
@@ -241,26 +190,21 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
             score += 1
             break
 
-    # --- Scale weight ---
     score *= scale_weight
 
-    # --- Break + flip ---
     brk = check_break(zone, df, atr_val, original_type)
 
-    # ✅ FIX: Tipe FINAL ditentukan oleh POSISI RELATIF (bukan pivot)
     if level < current_price:
         final_type = "support"
     elif level > current_price:
         final_type = "resistance"
     else:
-        final_type = original_type  # hanya kalau exact sama
+        final_type = original_type
 
-    # FLIP hanya valid kalau:
-    # - original support, sekarang resistance (dan sebaliknya)
     is_flip = (final_type != original_type) and brk["broken"]
 
     if brk["broken"]:
-        final_type = brk["flip"]  # override kalau memang break
+        final_type = brk["flip"]
 
     if score >= 7: strength = "STRONG"
     elif score >= 4.5: strength = "MODERATE"
@@ -282,9 +226,6 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     }
 
 
-# ============================================================
-# DETEKSI PER SKALA
-# ============================================================
 def detect_zones_at_scale(df, n_pivot, atr_val, current_price,
                            tolerance, min_touches=2, scale_weight=1.0):
     pivots = find_pivots(df, n=n_pivot)
@@ -310,14 +251,7 @@ def detect_zones_at_scale(df, n_pivot, atr_val, current_price,
     return zones
 
 
-# ============================================================
-# COMBINE DARI MULTIPLE SCALES
-# ============================================================
 def dedup_zones(zones, tolerance):
-    """
-    Gabung zona dari beberapa skala yang berdekatan.
-    Ambil skor tertinggi + akumulasi touches.
-    """
     if not zones:
         return []
 
@@ -350,7 +284,6 @@ def _merge_group(group):
     total_touches = sum(z["n_touches"] for z in group)
     scales = sorted(set(z.get("scale_n", 0) for z in group))
 
-    # Bonus konfirmasi multi-skala
     bonus = 0
     if len(scales) >= 3: bonus = 2.0
     elif len(scales) >= 2: bonus = 1.0
@@ -378,23 +311,9 @@ def _merge_group(group):
     }
 
 
-# ============================================================
-# MAIN API
-# ============================================================
 def get_support_resistance(kode, timeframe="daily",
                             scales=None, max_per_side=5,
                             min_touches=2, atr_mult_tolerance=0.5):
-    """
-    Deteksi S/R multi-skala.
-
-    Args:
-      kode: kode saham
-      timeframe: "daily" (resample opsional weekly/2week/monthly)
-      scales: dict {nama: n_pivot} — default {short:3, medium:7, long:15}
-      max_per_side: max zona per sisi (support/resistance)
-      min_touches: minimal sentuhan
-      atr_mult_tolerance: lebar cluster = 0.5 × ATR
-    """
     if scales is None:
         scales = {"short": 3, "medium": 7, "long": 15}
 
@@ -406,15 +325,12 @@ def get_support_resistance(kode, timeframe="daily",
     atr_val = float(atr_series.iloc[-1]) if atr_series.notna().any() else 0
     current = float(df["Close"].iloc[-1])
 
-    # Tolerance
     tol_atr = atr_mult_tolerance * atr_val if atr_val > 0 else 0
     tol_pct = 0.008 * current
     tolerance = max(tol_atr, tol_pct)
 
-    # Scale weights: long lebih kuat
     weights = {"short": 0.9, "medium": 1.0, "long": 1.1}
 
-    # Detect di tiap skala
     result_scales = {}
     all_zones = []
 
@@ -432,21 +348,17 @@ def get_support_resistance(kode, timeframe="daily",
     if not all_zones:
         return None
 
-    # Combine semua skala
     combined = dedup_zones(all_zones, tolerance)
 
-        # Split
     supports = [z for z in combined if z["level"] < current]
     resistances = [z for z in combined if z["level"] > current]
 
     supports = sorted(supports, key=lambda x: (-x["score"], -x["level"]))[:max_per_side]
     resistances = sorted(resistances, key=lambda x: (-x["score"], x["level"]))[:max_per_side]
 
-    # Sort final by level
     supports = sorted(supports, key=lambda x: -x["level"])
     resistances = sorted(resistances, key=lambda x: x["level"])
 
-    # ✅ FALLBACK: kalau kosong, pakai lowest/highest dari OHLCV
     if not supports and len(df) >= 20:
         low_20 = float(df["Low"].tail(20).min())
         low_60 = float(df["Low"].tail(60).min()) if len(df) >= 60 else low_20
@@ -455,39 +367,19 @@ def get_support_resistance(kode, timeframe="daily",
         fallbacks = []
         if low_60 < current:
             fallbacks.append({
-                "level": low_60,
-                "lower": low_60 * 0.995,
-                "upper": low_60 * 1.005,
-                "type": "support",
-                "original_type": "support",
-                "flip": False,
-                "n_touches": 0,
-                "last_touch": df["Date"].iloc[-len(df)],
-                "days_since_last": 999,
-                "score": 5.5,
-                "strength": "MODERATE",
-                "scales": [],
-                "n_scales": 0,
-                "note": "60d low",
-                "distance_pct": round((low_60 / current - 1) * 100, 2),
+                "level": low_60, "lower": low_60 * 0.995, "upper": low_60 * 1.005,
+                "type": "support", "original_type": "support", "flip": False,
+                "n_touches": 0, "last_touch": df["Date"].iloc[-len(df)], "days_since_last": 999,
+                "score": 5.5, "strength": "MODERATE", "scales": [], "n_scales": 0,
+                "note": "60d low", "distance_pct": round((low_60 / current - 1) * 100, 2),
             })
         if low_120 < low_60 and low_120 < current:
             fallbacks.append({
-                "level": low_120,
-                "lower": low_120 * 0.995,
-                "upper": low_120 * 1.005,
-                "type": "support",
-                "original_type": "support",
-                "flip": False,
-                "n_touches": 0,
-                "last_touch": df["Date"].iloc[-len(df)],
-                "days_since_last": 999,
-                "score": 6.0,
-                "strength": "MODERATE",
-                "scales": [],
-                "n_scales": 0,
-                "note": "120d low",
-                "distance_pct": round((low_120 / current - 1) * 100, 2),
+                "level": low_120, "lower": low_120 * 0.995, "upper": low_120 * 1.005,
+                "type": "support", "original_type": "support", "flip": False,
+                "n_touches": 0, "last_touch": df["Date"].iloc[-len(df)], "days_since_last": 999,
+                "score": 6.0, "strength": "MODERATE", "scales": [], "n_scales": 0,
+                "note": "120d low", "distance_pct": round((low_120 / current - 1) * 100, 2),
             })
         supports = sorted(fallbacks, key=lambda x: -x["level"])[:max_per_side]
 
@@ -499,96 +391,25 @@ def get_support_resistance(kode, timeframe="daily",
         fallbacks = []
         if high_20 > current:
             fallbacks.append({
-                "level": high_20,
-                "lower": high_20 * 0.995,
-                "upper": high_20 * 1.005,
-                "type": "resistance",
-                "original_type": "resistance",
-                "flip": False,
-                "n_touches": 0,
-                "last_touch": df["Date"].iloc[-1],
-                "days_since_last": 0,
-                "score": 5.5,
-                "strength": "MODERATE",
-                "scales": [],
-                "n_scales": 0,
-                "note": "20d high",
-                "distance_pct": round((high_20 / current - 1) * 100, 2),
+                "level": high_20, "lower": high_20 * 0.995, "upper": high_20 * 1.005,
+                "type": "resistance", "original_type": "resistance", "flip": False,
+                "n_touches": 0, "last_touch": df["Date"].iloc[-1], "days_since_last": 0,
+                "score": 5.5, "strength": "MODERATE", "scales": [], "n_scales": 0,
+                "note": "20d high", "distance_pct": round((high_20 / current - 1) * 100, 2),
             })
         if high_120 > high_20:
             fallbacks.append({
-                "level": high_120,
-                "lower": high_120 * 0.995,
-                "upper": high_120 * 1.005,
-                "type": "resistance",
-                "original_type": "resistance",
-                "flip": False,
-                "n_touches": 0,
-                "last_touch": df["Date"].iloc[-1],
-                "days_since_last": 0,
-                "score": 6.0,
-                "strength": "MODERATE",
-                "scales": [],
-                "n_scales": 0,
-                "note": "120d high",
-                "distance_pct": round((high_120 / current - 1) * 100, 2),
+                "level": high_120, "lower": high_120 * 0.995, "upper": high_120 * 1.005,
+                "type": "resistance", "original_type": "resistance", "flip": False,
+                "n_touches": 0, "last_touch": df["Date"].iloc[-1], "days_since_last": 0,
+                "score": 6.0, "strength": "MODERATE", "scales": [], "n_scales": 0,
+                "note": "120d high", "distance_pct": round((high_120 / current - 1) * 100, 2),
             })
         resistances = sorted(fallbacks, key=lambda x: x["level"])[:max_per_side]
 
     return {
-        "kode": kode,
-        "timeframe": timeframe,
-        "current_price": current,
-        "atr": atr_val,
-        "tolerance": round(tolerance, 2),
-        "n_bars": len(df),
+        "kode": kode, "timeframe": timeframe, "current_price": current,
+        "atr": atr_val, "tolerance": round(tolerance, 2), "n_bars": len(df),
         "scales": {k: len(v) for k, v in result_scales.items()},
-        "supports": supports,
-        "resistances": resistances,
+        "supports": supports, "resistances": resistances,
     }
-
-
-# ============================================================
-# TEST
-# ============================================================
-if __name__ == "__main__":
-    for kode in ["BBCA", "BBRI", "TLKM", "ASII"]:
-        print(f"\n{'='*80}")
-        print(f"  {kode}")
-        print(f"{'='*80}")
-
-        for tf in ["daily", "weekly", "2week"]:
-            r = get_support_resistance(kode, timeframe=tf)
-            if not r:
-                continue
-
-            print(f"\n[{tf.upper()}] Harga: {r['current_price']:,.0f} | "
-                  f"ATR: {r['atr']:,.0f} | Bars: {r['n_bars']}")
-            print(f"  Scales detected: {r['scales']}")
-            print()
-
-            hdr = f"{'Level':>10} {'Zona':>18} {'Tipe':<14} {'Skor':>5} " \
-                  f"{'Str':<9} {'Touch':>5} {'Skala':<10} {'Dist%':>7}"
-            print(hdr)
-            print("-" * 95)
-
-            # Tampilkan resistance dulu (di atas), lalu support
-            for z in r["resistances"][:3]:
-                zona = f"{z['lower']:,.0f}-{z['upper']:,.0f}"
-                flip = " [F]" if z.get("flip") else ""
-                scales_str = ",".join(str(s) for s in z.get("scales", []))
-                print(f"{z['level']:>10,.0f} {zona:>18} "
-                      f"{z['type'] + flip:<14} {z['score']:>5.1f} "
-                      f"{z['strength']:<9} {z['n_touches']:>5} "
-                      f"{scales_str:<10} {z['distance_pct']:>+6.2f}%")
-
-            print(f"{'-- current --':>10}")
-
-            for z in r["supports"][:3]:
-                zona = f"{z['lower']:,.0f}-{z['upper']:,.0f}"
-                flip = " [F]" if z.get("flip") else ""
-                scales_str = ",".join(str(s) for s in z.get("scales", []))
-                print(f"{z['level']:>10,.0f} {zona:>18} "
-                      f"{z['type'] + flip:<14} {z['score']:>5.1f} "
-                      f"{z['strength']:<9} {z['n_touches']:>5} "
-                      f"{scales_str:<10} {z['distance_pct']:>+6.2f}%")
