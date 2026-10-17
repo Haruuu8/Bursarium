@@ -1,6 +1,5 @@
 """
 Modul perhitungan indikator teknikal & sinyal trading.
-Semua dari data lokal OHLCV parquet.
 """
 
 import os
@@ -15,9 +14,29 @@ def _get_parquet():
     if not os.path.exists(PARQUET_FILE):
         return None
     df = pd.read_parquet(PARQUET_FILE)
-    df.columns = [str(c).strip().title() for c in df.columns]
+    
+    # 1. Normalisasi nama kolom: lowercase dulu agar tidak ada yg dobel
+    df.columns = [str(c).strip().lower() for c in df.columns]
+    
+    # 2. Petakan ke nama standar
+    col_map = {
+        "date": "Date", "tanggal": "Date",
+        "open": "Open", "high": "High", "low": "Low", "close": "Close",
+        "volume": "Volume", "vol": "Volume",
+        "kode": "Kode"
+    }
+    df = df.rename(columns=col_map)
+    
+    # 3. Hapus kolom ganda (jika ada)
+    df = df.loc[:, ~df.columns.duplicated(keep="first")]
+    
+    # 4. Konversi Date dengan sangat aman
     if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
+        date_series = df["Date"]
+        if isinstance(date_series, pd.DataFrame):
+            date_series = date_series.iloc[:, 0]
+        df["Date"] = pd.to_datetime(date_series, errors="coerce").dt.tz_localize(None)
+    
     return df
 
 def load_ohlcv(kode, min_rows=60):
@@ -30,7 +49,6 @@ def load_ohlcv(kode, min_rows=60):
         return None
         
     df = df.sort_values("Date").reset_index(drop=True)
-    # Ambil 250 hari terakhir untuk cukup data
     df = df.tail(250).reset_index(drop=True)
     if len(df) < min_rows:
         return None
@@ -123,8 +141,6 @@ def hitung_indikator_teknikal(kode):
     last = close.iloc[-1]
 
     rsi14 = _rsi(close, 14).iloc[-1]
-    ema12 = _ema(close, 12)
-    ema26 = _ema(close, 26)
     macd_line, signal_line, hist = _macd(close)
     macd_hist = hist.iloc[-1]
 
