@@ -6,7 +6,6 @@ PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 
 @st.cache_data(ttl=1800)
 def load_parquet_safe():
-    """Fungsi super aman untuk membaca parquet dan membuang kolom duplikat."""
     if not os.path.exists(PARQUET_FILE):
         return None
         

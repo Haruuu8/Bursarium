@@ -26,7 +26,7 @@ ADMIN_SECRET = st.secrets.get("ADMIN_SECRET", os.environ.get("ADMIN_SECRET", "")
 admin_key = st.query_params.get("admin", "")
 if admin_key:
     if not ADMIN_SECRET or admin_key != ADMIN_SECRET:
-        st.markdown('<div style="text-align:center; padding:120px 20px;"><div style="font-size:80px; font-weight:900; color:#1e2942;">404</div><div style="font-size:16px; color:#64748b; margin-top:12px;">Halaman tidak ditemukan</div></div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align:center; padding:120px 20px;"><div style="font-size:80px; font-weight:900; color:#1e2942; letter-spacing:-0.05em;">404</div><div style="font-size:16px; color:#64748b; margin-top:12px;">Halaman tidak ditemukan</div></div>', unsafe_allow_html=True)
         st.stop()
     exec(open("admin_panel.py", encoding="utf-8-sig").read())
     st.stop()
@@ -69,7 +69,7 @@ if st.session_state.get("authentication_status"):
 
 # ============ KALAU BELUM LOGIN → LANDING PAGE ============
 with st.sidebar:
-    st.markdown('<div style="text-align:center; padding:8px 0 20px;"><div style="font-size:32px;">🔐</div><div style="font-size:18px; font-weight:800; color:#ffffff; margin-top:8px;">Login</div><div style="font-size:11px; color:#64748b; margin-top:4px;">Masuk ke dashboard</div></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align:center; padding:8px 0 20px;"><div style="font-size:32px;">🔐</div><div style="font-size:18px; font-weight:800; color:#ffffff; letter-spacing:-0.02em; margin-top:8px;">Login</div><div style="font-size:11px; color:#64748b; margin-top:4px;">Masuk ke dashboard</div></div>', unsafe_allow_html=True)
     authenticator.login(location="main")
     if st.session_state.get("authentication_status") is False:
         st.error("❌ Username atau password salah")
@@ -92,7 +92,7 @@ st.markdown(info_banner("Transfer <b>Rp 200.000</b> ke salah satu e-wallet di ba
 
 c1, c2 = st.columns([2, 1])
 with c1:
-    st.markdown(f'<div style="background:linear-gradient(135deg, #131a2e 0%, #0a1020 100%); border:1px solid #2c3a5c; border-radius:14px; padding:24px 28px; margin-bottom:20px;"><div style="font-size:11px; color:#a5a8d8; font-weight:800; letter-spacing:1.5px; margin-bottom:18px;">TRANSFER KE SALAH SATU</div><div style="display:flex; justify-content:space-between; align-items:center; padding:14px 0; border-bottom:1px solid #1e2942;"><div style="font-size:15px; font-weight:700; color:#e6ebf5;">OVO</div><div style="font-size:20px; font-weight:900; color:#ffffff; font-family:monospace;">082369477717</div></div><div style="display:flex; justify-content:space-between; align-items:center; padding:14px 0 0 0;"><div style="font-size:15px; font-weight:700; color:#e6ebf5;">GoPay</div><div style="font-size:20px; font-weight:900; color:#ffffff; font-family:monospace;">082369477717</div></div></div>', unsafe_allow_html=True)
+    st.markdown(f'<div style="background:linear-gradient(135deg, #131a2e 0%, #0a1020 100%); border:1px solid #2c3a5c; border-radius:14px; padding:24px 28px; margin-bottom:20px;"><div style="font-size:11px; color:#a5a8d8; font-weight:800; letter-spacing:1.5px; margin-bottom:18px;">TRANSFER KE SALAH SATU</div><div style="display:flex; justify-content:space-between; align-items:center; padding:14px 0; border-bottom:1px solid #1e2942;"><div style="font-size:15px; font-weight:700; color:#e6ebf5;">OVO</div><div style="font-size:20px; font-weight:900; color:#ffffff; font-family:monospace; letter-spacing:1px;">082369477717</div></div><div style="display:flex; justify-content:space-between; align-items:center; padding:14px 0 0 0;"><div style="font-size:15px; font-weight:700; color:#e6ebf5;">GoPay</div><div style="font-size:20px; font-weight:900; color:#ffffff; font-family:monospace; letter-spacing:1px;">082369477717</div></div></div>', unsafe_allow_html=True)
 with c2:
     st.markdown(f'<div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.3); border-radius:12px; padding:16px 20px; height:100%;"><div style="font-size:11px; font-weight:800; color:#f59e0b; letter-spacing:0.5px; margin-bottom:12px;">⚠ PENTING</div><div style="font-size:12px; color:#cbd5e1; line-height:1.9;">Transfer <b style="color:#fbbf24;">tepat</b> Rp 200.000<br>Bukti harus jelas:<br>• Tanggal<br>• Nominal<br>• Status berhasil</div></div>', unsafe_allow_html=True)
 
