@@ -498,7 +498,6 @@ if search_kode:
         red_flag = r.get("red_flag", "")
         suspect = bool(r.get("fv_capped", False)) or bool(r.get("pe_suspect", False))
 
-        # ===== STATUS & WARNA =====
         is_red = bool(red_flag)
         is_suspect = suspect and not is_red
 
@@ -571,7 +570,6 @@ if search_kode:
                 'font-weight:700;">SANGAT MAHAL</span>'
             )
 
-        # Banner warning kalau red flag
         warning_banner = ""
         if is_red:
             warning_banner = (
@@ -589,103 +587,74 @@ if search_kode:
                 '</div>'
             )
 
+        # ==========================================
+        # DESAIN BARU UNTUK SEARCH RESULT (RATA KIRI)
+        # ==========================================
         st.markdown(
             f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
             f'border:1px solid #1a2338; border-left:4px solid {accent}; '
             f'border-radius:16px; padding:24px 28px; margin:16px 0 20px;">'
 
-            f'<div style="display:flex; justify-content:space-between; '
-            f'align-items:flex-start; flex-wrap:wrap; gap:16px; margin-bottom:20px;">'
-            f'<div>'
-            f'<div style="font-size:26px; font-weight:900; color:#ffffff; '
-            f'letter-spacing:-0.03em;">{kode}</div>'
-            f'<div style="font-size:13px; color:#94a3b8; margin-top:4px;">'
-            f'{nama} - <span style="color:#64748b;">{sektor}</span></div>'
+            # Header
+            f'<div style="margin-bottom:20px;">'
+            f'<div style="font-size:26px; font-weight:900; color:#ffffff; letter-spacing:-0.03em;">{kode}</div>'
+            f'<div style="font-size:13px; color:#94a3b8; margin-top:4px;">{nama} - <span style="color:#64748b;">{sektor}</span></div>'
             f'<div style="margin-top:10px;">{status_badge}</div>'
             f'</div>'
-            f'<div style="text-align:right;">'
-            f'<div style="font-size:11px; color:#64748b; letter-spacing:0.8px;">'
-            f'HARGA SAAT INI</div>'
-            f'<div style="font-size:32px; font-weight:900; color:#ffffff; '
-            f'letter-spacing:-0.03em; margin-top:4px;">{fmt(harga, 0)}</div>'
-            f'</div>'
+
+            # Harga Rata Kiri
+            f'<div style="margin-bottom:20px;">'
+            f'<div style="font-size:11px; color:#64748b; letter-spacing:0.8px; font-weight:700;">HARGA SAAT INI</div>'
+            f'<div style="font-size:32px; font-weight:900; color:#ffffff; letter-spacing:-0.03em; margin-top:4px;">{fmt(harga, 0)}</div>'
             f'</div>'
 
             f'{warning_banner}'
 
-            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); '
-            f'gap:12px; margin-bottom:20px;">'
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:14px 18px;">'
-            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">'
-            f'FAIR VALUE</div>'
-            f'<div style="font-size:22px; font-weight:800; color:#a5b4fc; '
-            f'margin-top:4px;">{fmt(fv, 0)}</div></div>'
+            # Grid 3 Kolom (FV, Potential, Skor)
+            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:14px 18px;">'
+            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">FAIR VALUE</div>'
+            f'<div style="font-size:22px; font-weight:800; color:#a5b4fc; margin-top:4px;">{fmt(fv, 0)}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:14px 18px;">'
-            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">'
-            f'POTENTIAL</div>'
-            f'<div style="font-size:22px; font-weight:800; color:{pot_color}; '
-            f'margin-top:4px;">{fmt_pct(pot, 1, True)}</div>'
-            f'<div style="font-size:10px; color:{pot_color}; font-weight:700; '
-            f'margin-top:2px;">{pot_label}</div></div>'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:14px 18px;">'
+            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">POTENTIAL</div>'
+            f'<div style="font-size:22px; font-weight:800; color:{pot_color}; margin-top:4px;">{fmt_pct(pot, 1, True)}</div>'
+            f'<div style="font-size:10px; color:{pot_color}; font-weight:700; margin-top:2px;">{pot_label}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:14px 18px;">'
-            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">'
-            f'SKOR</div>'
-            f'<div style="font-size:22px; font-weight:800; color:#ffffff; '
-            f'margin-top:4px;">{skor:.0f}<span style="font-size:12px; '
-            f'color:#64748b;">/100</span></div></div>'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:14px 18px;">'
+            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">SKOR</div>'
+            f'<div style="font-size:22px; font-weight:800; color:#ffffff; margin-top:4px;">{skor:.0f}<span style="font-size:12px; color:#64748b;">/100</span></div></div>'
             f'</div>'
 
-            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); '
-            f'gap:12px; margin-bottom:20px;">'
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:12px 16px;">'
+            # Grid 3 Kolom (Metrik)
+            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
             f'<div style="font-size:10px; color:#64748b;">EPS</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; '
-            f'margin-top:2px;">{fmt(eps_val, 1)} '
-            f'<span style="font-size:10px; color:#64748b;">({eps_src})</span></div></div>'
+            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(eps_val, 1)} <span style="font-size:10px; color:#64748b;">({eps_src})</span></div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:12px 16px;">'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
             f'<div style="font-size:10px; color:#64748b;">BV</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; '
-            f'margin-top:2px;">{fmt(bv_val, 0)}</div></div>'
+            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(bv_val, 0)}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:12px 16px;">'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
             f'<div style="font-size:10px; color:#64748b;">ROE</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; '
-            f'margin-top:2px;">{fmt_pct(roe, 1)}</div></div>'
+            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt_pct(roe, 1)}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:12px 16px;">'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
             f'<div style="font-size:10px; color:#64748b;">PE</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; '
-            f'margin-top:2px;">{fmt(pe, 1)} '
-            f'<span style="font-size:10px; color:#64748b;">'
-            f'(tgt {fmt(target_pe, 1)})</span></div></div>'
+            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(pe, 1)} <span style="font-size:10px; color:#64748b;">(tgt {fmt(target_pe, 1)})</span></div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:12px 16px;">'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
             f'<div style="font-size:10px; color:#64748b;">PB</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; '
-            f'margin-top:2px;">{fmt(pb, 2)} '
-            f'<span style="font-size:10px; color:#64748b;">'
-            f'(tgt {fmt(target_pb, 2)})</span></div></div>'
+            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(pb, 2)} <span style="font-size:10px; color:#64748b;">(tgt {fmt(target_pb, 2)})</span></div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-            f'border-radius:10px; padding:12px 16px;">'
+            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
             f'<div style="font-size:10px; color:#64748b;">DER</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; '
-            f'margin-top:2px;">{fmt(de_val, 2)}</div></div>'
+            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(de_val, 2)}</div></div>'
             f'</div>'
 
-            f'<div style="border-top:1px solid #1a2338; padding-top:14px; '
-            f'display:flex; gap:20px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
+            # Footer FV
+            f'<div style="border-top:1px solid #1a2338; padding-top:14px; display:flex; gap:20px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
             f'<span>FV Graham: <b style="color:#cbd5e1;">{fmt(fv_graham, 0)}</b></span>'
             f'<span>FV-PE: <b style="color:#cbd5e1;">{fmt(fv_pe, 0)}</b></span>'
             f'<span>FV-PB: <b style="color:#cbd5e1;">{fmt(fv_pb, 0)}</b></span>'
@@ -703,7 +672,7 @@ st.markdown(
 
 
 # ============================================================
-# TOP 10 UNDERVALUED (auto)
+# TOP 10 UNDERVALUED (auto) - DESAIN BARU
 # ============================================================
 st.markdown(section_title("Top 10 Undervalued",
                           "Auto-sorted by potential - Conservative FV"),
@@ -728,83 +697,80 @@ else:
         pe = r["pe"]
         pb = r["pb"]
         sektor = r.get("sektor", "")
-        target_pe = r["target_pe"]
-        target_pb = r["target_pb"]
-        suspect = bool(r.get("fv_capped", False)) or bool(r.get("pe_suspect", False))
-        eps_src = r.get("eps_src", "?")
         eps_val = r.get("eps", np.nan)
 
-        if pot >= 40:
-            pot_color = "#10b981"
-        elif pot >= 20:
-            pot_color = "#34d399"
-        elif pot >= 0:
-            pot_color = "#f59e0b"
-        else:
-            pot_color = "#f43f5e"
+        if pot >= 40: pot_color = "#10b981"
+        elif pot >= 20: pot_color = "#34d399"
+        elif pot >= 0: pot_color = "#f59e0b"
+        else: pot_color = "#f43f5e"
+        
+        # Warna dinamis untuk Score Circle
+        score_color = "#10b981" if skor >= 80 else "#818cf8" if skor >= 60 else "#94a3b8"
 
-        suspect_badge = (
-            '<span style="font-size:10px; padding:2px 6px; '
-            'background:rgba(245,158,11,0.15); color:#f59e0b; '
-            'border-radius:4px; font-weight:700; margin-left:6px;">'
-            'suspect</span>'
-            if suspect else ""
-        )
-
+        # ==========================================
+        # DESAIN BARU UNTUK TOP 10 CARD (SEPERTI GAMBAR)
+        # ==========================================
         st.markdown(
-            '<div style="'
-            'background: linear-gradient(135deg, #131a2a 0%, #0f1628 100%); '
-            'border: 1px solid #1a2338; border-radius: 14px; '
-            'padding: 18px 22px; margin-bottom: 10px; '
-            'display: flex; align-items: center; gap: 20px; '
-            'position: relative; overflow: hidden;">'
-            '<div style="position:absolute; left:0; top:0; bottom:0; width:3px; '
-            f'background: linear-gradient(180deg, {pot_color}, {pot_color}40);"></div>'
-
-            '<div style="flex: 1; min-width: 0; padding-left: 8px;">'
-            f'<div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;">'
-            f'<span style="font-size:20px; font-weight:800; color:{pot_color};">'
-            f'#{i+1}</span>'
-            f'<span style="font-size:17px; font-weight:800; color:#ffffff; '
-            f'letter-spacing:-0.02em;">{kode}</span>'
-            f'<span style="font-size:11px; padding:3px 8px; '
-            f'background:rgba(99,102,241,0.15); color:#a5b4fc; '
-            f'border-radius:5px; font-weight:700;">Skor {skor:.0f}</span>'
-            f'{suspect_badge}'
+            f'<div style="background: #131a2a; border-radius: 12px; border: 1px solid #1e293b; padding: 20px; margin-bottom: 16px; border-left: 4px solid {pot_color};">'
+            
+            # 1. Header (Kode & Target Range)
+            f'<div style="display: flex; justify-content: space-between; align-items: stretch; border-bottom: 1px solid #1e293b; padding-bottom: 12px; margin-bottom: 16px;">'
+            f'<div style="flex: 1;">'
+            f'<div style="font-size: 24px; font-weight: 800; color: #fff; line-height: 1.2;">{kode}</div>'
+            f'<div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Last: {harga:,.2f}</div>'
             f'</div>'
-            f'<div style="font-size:12px; color:#7d8ba3; margin-top:4px; '
-            f'white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">'
-            f'{nama} - <span style="color:#64748b;">{sektor}</span></div>'
-            f'<div style="margin-top:10px; display:flex; gap:14px; flex-wrap:wrap; '
-            f'font-size:11px; color:#94a3b8;">'
-            f'<span>ROE <b style="color:#cbd5e1;">{fmt_pct(roe, 1)}</b></span>'
-            f'<span>DER <b style="color:#cbd5e1;">{fmt(de_val, 2)}</b></span>'
-            f'<span>EPS <b style="color:#cbd5e1;">{fmt(eps_val, 1)}</b> '
-            f'<span style="color:#64748b;">({eps_src})</span></span>'
-            f'<span>PE <b style="color:#cbd5e1;">{fmt(pe, 1)}</b> '
-            f'<span style="color:#64748b;">(tgt {target_pe:.1f})</span></span>'
-            f'<span>PB <b style="color:#cbd5e1;">{fmt(pb, 2)}</b> '
-            f'<span style="color:#64748b;">(tgt {target_pb:.2f})</span></span>'
+            f'<div style="width: 1px; background: #1e293b; margin: 0 16px;"></div>'
+            f'<div style="flex: 1; text-align: right; display: flex; flex-direction: column; justify-content: center;">'
+            f'<div style="font-size: 11px; color: #94a3b8;">Target Range:</div>'
+            f'<div style="font-size: 18px; font-weight: 800; color: #fff;">{fv:,.0f}</div>'
             f'</div>'
-            '</div>'
+            f'</div>'
 
-            '<div style="text-align:right; flex-shrink:0; min-width:180px;">'
-            f'<div style="font-size:10px; color:#64748b; '
-            f'letter-spacing:0.6px;">HARGA KE FAIR VALUE</div>'
-            f'<div style="font-size:14px; color:#cbd5e1; margin-top:4px;">'
-            f'{harga:,.0f} <span style="color:#64748b;">-</span> '
-            f'<b style="color:#a5b4fc;">{fv:,.0f}</b></div>'
-            '</div>'
+            # 2. Metrik (6 Kolom Menyamping)
+            f'<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; text-align: center; border-bottom: 1px solid #1e293b; padding-bottom: 16px; margin-bottom: 16px;">'
+            f'<div>'
+            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">Rank:</div>'
+            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">#{i+1}</div>'
+            f'</div>'
+            f'<div>'
+            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">ROE</div>'
+            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt_pct(roe, 1)}</div>'
+            f'</div>'
+            f'<div>'
+            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">DER</div>'
+            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(de_val, 2)}</div>'
+            f'</div>'
+            f'<div>'
+            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">EPS</div>'
+            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(eps_val, 1)}</div>'
+            f'</div>'
+            f'<div>'
+            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">PE</div>'
+            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(pe, 1)}</div>'
+            f'</div>'
+            f'<div>'
+            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">PB</div>'
+            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(pb, 2)}</div>'
+            f'</div>'
+            f'</div>'
 
-            '<div style="text-align:right; flex-shrink:0; min-width:110px;">'
-            f'<div style="font-size:10px; color:#64748b; '
-            f'letter-spacing:0.6px;">POTENTIAL</div>'
-            f'<div style="font-size:24px; font-weight:800; '
-            f'color:{pot_color}; margin-top:2px; letter-spacing:-0.03em;">'
-            f'{pot:+.1f}%</div>'
-            '</div>'
+            # 3. Footer (Score & Potential)
+            f'<div style="display: flex; justify-content: space-between; align-items: center;">'
+            
+            # Score Circle (CSS Conic Gradient)
+            f'<div style="position: relative; width: 65px; height: 65px; border-radius: 50%; background: conic-gradient({score_color} {skor}%, #1e293b 0); display: flex; align-items: center; justify-content: center;">'
+            f'<div style="width: 57px; height: 57px; background: #131a2a; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">'
+            f'<span style="font-size: 10px; color: #94a3b8; line-height: 1;">Score:</span>'
+            f'<span style="font-size: 18px; font-weight: 800; color: #fff; line-height: 1.2;">{skor:.0f}</span>'
+            f'</div></div>'
 
-            '</div>',
+            # Potential Text
+            f'<div style="text-align: right;">'
+            f'<div style="font-size: 11px; color: #94a3b8;">Potential:</div>'
+            f'<div style="font-size: 24px; font-weight: 900; color: {pot_color};">{pot:+.1f}%</div>'
+            f'</div>'
+            f'</div>'
+            f'</div>',
             unsafe_allow_html=True
         )
 

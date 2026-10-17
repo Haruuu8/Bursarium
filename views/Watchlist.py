@@ -403,133 +403,73 @@ def setup_row(r, tipe="support"):
 
     if tipe == "support":
         accent = "#10b981"
-        badge = ('<span style="background:rgba(16,185,129,0.15); color:#10b981; '
-                 'padding:3px 10px; border-radius:6px; font-size:10px; '
-                 'font-weight:800;">🎯 LIMIT · ZONA SUPPORT</span>')
-        if harga < zona_lo:
-            posisi_txt = "↓ di bawah zona"
-            posisi_color = "#f43f5e"
-        elif harga > zona_hi:
-            posisi_txt = "↑ di atas zona"
-            posisi_color = "#f59e0b"
-        else:
-            posisi_txt = "● di dalam zona"
-            posisi_color = "#10b981"
+        badge = '<span style="background:rgba(16,185,129,0.15); color:#10b981; padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">🎯 LIMIT · ZONA SUPPORT</span>'
+        if harga < zona_lo: posisi_txt = "↓ di bawah zona"; posisi_color = "#f43f5e"
+        elif harga > zona_hi: posisi_txt = "↑ di atas zona"; posisi_color = "#f59e0b"
+        else: posisi_txt = "● di dalam zona"; posisi_color = "#10b981"
     else:
         accent = "#06b6d4"
-        badge = ('<span style="background:rgba(6,182,212,0.15); color:#06b6d4; '
-                 'padding:3px 10px; border-radius:6px; font-size:10px; '
-                 'font-weight:800;">🚀 STOP · BREAKOUT</span>')
-        if harga < entry:
-            posisi_txt = f"↓ {((entry-harga)/harga*100):.1f}% di bawah trigger"
-            posisi_color = "#94a3b8"
-        else:
-            posisi_txt = "↑ sudah melewati trigger"
-            posisi_color = "#f43f5e"
-
-    if rr_tp1 >= 3: rr_color = "#10b981"
-    elif rr_tp1 >= 2: rr_color = "#34d399"
-    elif rr_tp1 >= 1.5: rr_color = "#f59e0b"
-    else: rr_color = "#f43f5e"
-
-    if jarak > 0:
-        jarak_color = "#f59e0b"
-        jarak_icon = "↑"
-    elif jarak < 0:
-        jarak_color = "#10b981"
-        jarak_icon = "↓"
-    else:
-        jarak_color = "#94a3b8"
-        jarak_icon = "="
+        badge = '<span style="background:rgba(6,182,212,0.15); color:#06b6d4; padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">🚀 STOP · BREAKOUT</span>'
+        if harga < entry: posisi_txt = f"↓ {((entry-harga)/harga*100):.1f}% di bawah trigger"; posisi_color = "#94a3b8"
+        else: posisi_txt = "↑ sudah melewati trigger"; posisi_color = "#f43f5e"
 
     tp2_disp = f'{tp2:,.0f}' if tp2 else "—"
     tp2_rr = f'RR {rr_tp2:.2f}' if tp2 else "—"
+    jarak_color = "#f59e0b" if jarak > 0 else "#10b981" if jarak < 0 else "#94a3b8"
+    jarak_icon = "↑" if jarak > 0 else "↓" if jarak < 0 else "="
+    rr_color = "#10b981" if rr_tp1 >= 3 else "#34d399" if rr_tp1 >= 2 else "#f59e0b" if rr_tp1 >= 1.5 else "#f43f5e"
 
+    # Layout Card Baru (Rata Kiri)
     return (
-        f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-        f'border:1px solid #1a2338; border-left:4px solid {accent}; '
-        f'border-radius:14px; padding:20px 24px; margin-bottom:12px;">'
-
-        f'<div style="display:flex; justify-content:space-between; '
-        f'align-items:flex-start; gap:20px; margin-bottom:16px; '
-        f'flex-wrap:wrap;">'
-        f'<div style="flex:1; min-width:200px;">'
-        f'<div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">'
-        f'<span style="font-size:20px; font-weight:900; color:#ffffff; '
-        f'letter-spacing:-0.02em;">{kode}</span>'
+        f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); border:1px solid #1a2338; border-left:4px solid {accent}; border-radius:14px; padding:20px 24px; margin-bottom:12px;">'
+        
+        # 1. Header (Kode & Badge)
+        f'<div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:4px;">'
+        f'<span style="font-size:20px; font-weight:900; color:#ffffff;">{kode}</span>'
         f'{badge}'
         f'</div>'
-        f'<div style="font-size:12px; color:#94a3b8; margin-top:4px;">{nama}</div>'
+        f'<div style="font-size:12px; color:#94a3b8; margin-bottom:16px;">{nama}</div>'
+
+        # 2. Harga Saat Ini (Rata Kiri)
+        f'<div style="margin-bottom:16px;">'
+        f'<div style="font-size:11px; color:#64748b; font-weight:700; text-transform:uppercase; margin-bottom:4px;">Harga Saat Ini</div>'
+        f'<div style="font-size:32px; font-weight:900; color:#ffffff; line-height:1;">{harga:,.0f}</div>'
+        f'<div style="font-size:11px; color:{posisi_color}; font-weight:700; margin-top:6px;">{posisi_txt}</div>'
         f'</div>'
 
-        f'<div style="text-align:right; min-width:140px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.8px; '
-        f'font-weight:700; text-transform:uppercase;">Harga Saat Ini</div>'
-        f'<div style="font-size:26px; font-weight:900; color:#ffffff; '
-        f'letter-spacing:-0.03em; margin-top:2px;">'
-        f'{harga:,.0f}</div>'
-        f'<div style="font-size:10px; color:{posisi_color}; font-weight:700; '
-        f'margin-top:2px;">{posisi_txt}</div>'
-        f'</div>'
-        f'</div>'
-
-        f'<div style="background:rgba(99,102,241,0.06); '
-        f'border:1px solid rgba(99,102,241,0.15); border-radius:10px; '
-        f'padding:12px 18px; margin-bottom:16px; '
-        f'display:flex; justify-content:space-between; align-items:center; '
-        f'flex-wrap:wrap; gap:12px;">'
-        f'<div style="display:flex; align-items:center; gap:14px;">'
-        f'<span style="font-size:14px; font-weight:700; color:#cbd5e1;">'
-        f'{harga:,.0f}</span>'
+        # 3. Kotak Entry
+        f'<div style="background:rgba(99,102,241,0.06); border:1px solid rgba(99,102,241,0.15); border-radius:10px; padding:12px 18px; margin-bottom:16px;">'
+        f'<div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">'
+        f'<span style="font-size:14px; font-weight:700; color:#cbd5e1;">{harga:,.0f}</span>'
         f'<span style="font-size:16px; color:#64748b;">→</span>'
-        f'<span style="font-size:16px; font-weight:800; color:#a5b4fc;">'
-        f'{entry:,.0f}</span>'
-        f'<span style="font-size:11px; color:{jarak_color}; font-weight:700;">'
-        f'({jarak_icon} {abs(jarak):.2f}% ke entry)</span>'
-        f'</div>'
-        f'<span style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">HARGA SAAT INI → ENTRY</span>'
-        f'</div>'
+        f'<span style="font-size:16px; font-weight:800; color:#a5b4fc;">{entry:,.0f}</span>'
+        f'<span style="font-size:11px; color:{jarak_color}; font-weight:700;">({jarak_icon} {abs(jarak):.2f}% ke entry)</span>'
+        f'</div></div>'
 
-        f'<div style="display:grid; grid-template-columns:repeat(4, 1fr); '
-        f'gap:12px; margin-bottom:14px;">'
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">ENTRY</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#ffffff; '
-        f'margin-top:4px;">{entry:,.0f}</div></div>'
+        # 4. Grid 2x2 (Entry, SL, TP1, TP2) - Otomatis rapi di HP
+        f'<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; margin-bottom:14px;">'
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; font-weight:600;">ENTRY</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#ffffff; margin-top:4px;">{entry:,.0f}</div></div>'
 
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">STOP LOSS</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#f43f5e; '
-        f'margin-top:4px;">{sl:,.0f}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
-        f'-{risk_pct:.2f}%</div></div>'
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; font-weight:600;">STOP LOSS</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#f43f5e; margin-top:4px;">{sl:,.0f}</div>'
+        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">-{risk_pct:.2f}%</div></div>'
 
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">TP1</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#10b981; '
-        f'margin-top:4px;">{tp1:,.0f}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
-        f'RR {rr_tp1:.2f}</div></div>'
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; font-weight:600;">TP1</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#10b981; margin-top:4px;">{tp1:,.0f}</div>'
+        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">RR {rr_tp1:.2f}</div></div>'
 
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">TP2</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#10b981; '
-        f'margin-top:4px;">{tp2_disp}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
-        f'{tp2_rr}</div></div>'
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; font-weight:600;">TP2</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#10b981; margin-top:4px;">{tp2_disp}</div>'
+        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">{tp2_rr}</div></div>'
         f'</div>'
 
-        f'<div style="border-top:1px solid #1a2338; padding-top:12px; '
-        f'display:flex; gap:24px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
+        # 5. Footer
+        f'<div style="border-top:1px solid #1a2338; padding-top:12px; display:flex; gap:24px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
         f'<span>RR <b style="color:{rr_color}; font-size:13px;">{rr_tp1:.2f}</b></span>'
         f'<span>Risk <b style="color:#cbd5e1;">{risk_pct:.2f}%</b></span>'
         f'<span>Zona <b style="color:#cbd5e1;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
