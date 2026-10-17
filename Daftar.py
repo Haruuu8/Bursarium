@@ -17,7 +17,6 @@ except ImportError:
     st.error("Install: py -m pip install streamlit-authenticator bcrypt")
     st.stop()
 
-# PENGAMAN BUG STREAMLIT-AUTHENTICATOR
 if "logout" not in st.session_state:
     st.session_state["logout"] = False
 
@@ -38,12 +37,10 @@ else:
     with open("config.yaml", encoding="utf-8") as f:
         config = yaml.safe_load(f)
 
-# Ambil user dari Database Supabase
 db_users = get_all_approved_users_for_auth()
 if db_users:
     config["credentials"]["usernames"].update(db_users)
 
-# ============ INISIALISASI AUTHENTICATOR (CUKUP 1X) ============
 authenticator = stauth.Authenticate(
     config["credentials"],
     config["cookie"]["name"],
@@ -62,46 +59,23 @@ if st.session_state.get("authentication_status"):
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
     ]
     
-    # Sembunyikan sidebar bawaan
-    pg = st.navigation(pages, position="hidden")
+    # INI AKAN MEMBUAT SIDEBAR NAVIGASI BAWAAN STREAMLIT (KIRI)
+    pg = st.navigation(pages)
     
-    # ==========================================
-    # 🔥 TOMBOL MENU CUSTOM (RAMAH HP) 🔥
-    # ==========================================
-    with st.container():
-        col1, col2 = st.columns([1, 4])
-        with col1:
-            # Tombol Popover sebagai pengganti Sidebar
-            with st.popover("☰ Menu", use_container_width=True):
-                st.markdown("### Navigasi")
-                for p in pages:
-                    st.page_link(p, use_container_width=True)
-                st.divider()
-                if st.button("🚪 Logout", use_container_width=True, type="primary"):
-                    st.session_state["authentication_status"] = False
-                    st.session_state["logout"] = True
-                    st.rerun()
-        with col2:
-            # Menampilkan judul di sebelah tombol menu
-            st.markdown("<div style='padding-top: 5px; font-weight: 800; font-size: 22px; color: #ffffff;'>📊 Bursarium</div>", unsafe_allow_html=True)
-
-    # Jalankan halaman yang dipilih
+    # Tampilkan info user di sidebar bawah (jika ada)
+    from quant.nav import render_user_sidebar
+    render_user_sidebar() 
+    
     pg.run()
     st.stop()
 
 # ============ KALAU BELUM LOGIN → LANDING PAGE ============
-# HERO SECTION
 st.markdown(hero("📊 Bursarium", "Platform analisis saham IDX — fundamental, teknikal, screening, dan valuasi dalam satu tempat. Semua yang Anda butuhkan untuk ambil keputusan trading.", badge_text="PLATFORM ANALISIS SAHAM", badge_color="#06b6d4"), unsafe_allow_html=True)
 
-# MEMBUAT TAB UNTUK LOGIN DAN DAFTAR
 tab_login, tab_daftar = st.tabs(["🔐 Login", "📝 Daftar Sekarang"])
 
-# ==========================================
-# ISI TAB 1: LOGIN
-# ==========================================
 with tab_login:
     st.markdown("<br>", unsafe_allow_html=True)
-    # Gunakan kolom agar form login berada di tengah
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         st.markdown('<div style="text-align:center; margin-bottom:20px;"><div style="font-size:24px; font-weight:800; color:#ffffff;">Masuk ke Akun Anda</div><div style="font-size:13px; color:#94a3b8;">Silakan login untuk mengakses dashboard</div></div>', unsafe_allow_html=True)
@@ -113,9 +87,6 @@ with tab_login:
         
         st.markdown('<div style="text-align:center; margin-top:20px; font-size:13px; color:#94a3b8;">Belum punya akun? Silakan klik tab <b>Daftar Sekarang</b> di atas.</div>', unsafe_allow_html=True)
 
-# ==========================================
-# ISI TAB 2: DAFTAR & MARKETING
-# ==========================================
 with tab_daftar:
     st.markdown(section_title("✨ Yang Anda Dapatkan"), unsafe_allow_html=True)
     FITUR = [
