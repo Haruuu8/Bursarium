@@ -1,0 +1,125 @@
+{
+  "kode": "VRNA",
+  "nama": "PT Mizuho Leasing Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 78.0,
+  "update": "2026-10-11 15:23",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 113.20754,
+    "pb": 0.5962437,
+    "ps": 2.295286,
+    "roe": 0.003238415569758483,
+    "eps": 0.69,
+    "de": 3.213944932733029,
+    "margin_net": 27.659113007469774,
+    "current_ratio": null,
+    "roa": 0.000768499736340444,
+    "bv": 130.82,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 106136.0,
+      "2024-Q2": 242686.0,
+      "2024-Q3": 308080.0,
+      "2024-Q4": 351787.0,
+      "2025-Q1": 82324.0,
+      "2025-Q3": 301486.0,
+      "2025-Q4": 338481.0,
+      "2026-Q1": 27870.0,
+      "2026-Q2": 87419.0
+    },
+    "eps": {
+      "2024-Q1": 1.43,
+      "2024-Q2": 2.79,
+      "2024-Q3": 1.46,
+      "2024-Q4": -380000.0,
+      "2025-Q1": -450000.0,
+      "2025-Q3": -360000.0,
+      "2025-Q4": 510000.0,
+      "2026-Q1": -650000.0,
+      "2026-Q2": 430000.0
+    },
+    "net_income": {
+      "2024-Q1": 8152090.0,
+      "2024-Q2": 15866848.0,
+      "2024-Q3": 8278278.0,
+      "2024-Q4": -2155665.0,
+      "2025-Q1": -2568265.0,
+      "2025-Q3": -2020733.0,
+      "2025-Q4": 2892639.0,
+      "2026-Q1": -3719631.0,
+      "2026-Q2": 2417932.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.91,
+      "2023": 10.75,
+      "2024": -380000.0,
+      "2025": 510000.0
+    },
+    "revenue_per_share": {
+      "2022": 390037.0,
+      "2023": 327809.0,
+      "2024": 351787.0,
+      "2025": 338481.0
+    }
+  },
+  "statistik": {
+    "market_cap": 443613609984,
+    "enterprise_value": 2686950834176,
+    "shares_outstanding": 5687353997,
+    "free_float_pct": null
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2384,
+    "vol_trend": 0.156,
+    "price_chg_20d": -14.29
+  },
+  "neraca": {
+    "aset": 3146301665.0,
+    "aset_lancar": null,
+    "kas": 339793.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 39138968.0,
+    "liabilitas": 2399661233.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 746640432.0,
+    "ekuitas_induk": 746640432.0,
+    "modal_saham": null,
+    "saldo_laba": 84953644.0
+  },
+  "laba_rugi": {
+    "pendapatan": 87419.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4373883.0,
+    "beban_pajak": -1955951.0,
+    "laba_bersih": 2417932.0,
+    "laba_induk": 2417932.0,
+    "eps_basic": 430000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2108827.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "FAST",
+  "nama": "PT Fast Food Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 400.0,
+  "update": "2026-10-11 13:26",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 7.4636617,
+    "ps": 0.34322852,
+    "roe": -0.2342167195528371,
+    "eps": null,
+    "de": 19.63534514681508,
+    "margin_net": -0.020338560284547877,
+    "current_ratio": 0.31623768550447695,
+    "roa": -0.010984040781267338,
+    "bv": 53.59,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1178609484.0,
+      "2024-Q2": 2480917943.0,
+      "2024-Q3": 3590255015.0,
+      "2024-Q4": 4875792516.0,
+      "2025-Q1": 1199965514.0,
+      "2025-Q2": 2403271439.0,
+      "2025-Q3": 3562692391.0,
+      "2025-Q4": 4881502418.0,
+      "2026-Q1": 1423117899.0,
+      "2026-Q2": 2789865271.0
+    },
+    "eps": {
+      "2024-Q1": -49.0,
+      "2024-Q2": -87.0,
+      "2024-Q3": -140.0,
+      "2024-Q4": -200.0,
+      "2025-Q1": -9.0,
+      "2025-Q2": -31.0,
+      "2025-Q3": -53.0,
+      "2025-Q4": -85.0,
+      "2026-Q1": 3.0,
+      "2026-Q2": -13.0
+    },
+    "net_income": {
+      "2024-Q1": -196211779.0,
+      "2024-Q2": -348830042.0,
+      "2024-Q3": -557080998.0,
+      "2024-Q4": -796711869.0,
+      "2025-Q1": -36777452.0,
+      "2025-Q2": -138750557.0,
+      "2025-Q3": -239581794.0,
+      "2025-Q4": -366049097.0,
+      "2026-Q1": 13289132.0,
+      "2026-Q2": -56741843.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -19.0,
+      "2023": -104.0,
+      "2024": -200.0,
+      "2025": -85.0
+    },
+    "revenue_per_share": {
+      "2022": 5857474313.0,
+      "2023": 5935004692.0,
+      "2024": 4875792516.0,
+      "2025": 4881502418.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1808160915456,
+    "enterprise_value": 4188634349568,
+    "shares_outstanding": 4520402492,
+    "free_float_pct": 21.256000006647195
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.301,
+    "vol_trend": 0.344,
+    "price_chg_20d": -9.09
+  },
+  "neraca": {
+    "aset": 5165844167.0,
+    "aset_lancar": 663881100.0,
+    "kas": 147029708.0,
+    "piutang_usaha": null,
+    "persediaan": 221784512.0,
+    "aset_tetap": 1859080809.0,
+    "liabilitas": 4756900676.0,
+    "liabilitas_jangka_pendek": 2099310520.0,
+    "utang_usaha": 496107366.0,
+    "utang_bank": 150000000.0,
+    "ekuitas": 242262137.0,
+    "ekuitas_induk": 242262137.0,
+    "modal_saham": null,
+    "saldo_laba": -530134272.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2789865271.0,
+    "beban_pokok": 1232881048.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -76953466.0,
+    "beban_pajak": 15806842.0,
+    "laba_bersih": -56741843.0,
+    "laba_induk": -56741843.0,
+    "eps_basic": -13.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 208883245.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

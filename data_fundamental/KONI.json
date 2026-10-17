@@ -1,0 +1,123 @@
+{
+  "kode": "KONI",
+  "nama": "PT Perdana Bangun Pusaka Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 1855.0,
+  "update": "2026-10-11 14:04",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 26.511362,
+    "pb": 3.1737504,
+    "ps": 1.8006923,
+    "roe": 0.03529659575236532,
+    "eps": 69.97,
+    "de": 0.08479949391277235,
+    "margin_net": 0.04114954020155657,
+    "current_ratio": 47.616370872095054,
+    "roa": 0.03253738511957519,
+    "bv": 584.48,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 47416389971.0,
+      "2024-Q2": 110453570884.0,
+      "2024-Q3": 195610156110.0,
+      "2025-Q1": 52282166336.0,
+      "2025-Q2": 125606834102.0,
+      "2025-Q3": 203342805021.0,
+      "2025-Q4": 290596179298.0,
+      "2026-Q1": 66371647238.0,
+      "2026-Q2": 156420359024.0
+    },
+    "eps": {
+      "2024-Q1": 5.99,
+      "2024-Q2": 17.96,
+      "2024-Q3": 40.66,
+      "2025-Q1": 1.61,
+      "2025-Q2": 14.5,
+      "2025-Q3": 29.99,
+      "2025-Q4": 59.0,
+      "2026-Q1": 8.1,
+      "2026-Q2": 25.54
+    },
+    "net_income": {
+      "2024-Q1": 1510566357.0,
+      "2024-Q2": 4525425438.0,
+      "2024-Q3": 10245125779.0,
+      "2025-Q1": 406847798.0,
+      "2025-Q2": 3652905409.0,
+      "2025-Q3": 7556668556.0,
+      "2025-Q4": 18386200043.0,
+      "2026-Q1": 2042178268.0,
+      "2026-Q2": 6436625852.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 37.0,
+      "2023": 63.0,
+      "2025": 59.0
+    },
+    "revenue_per_share": {
+      "2022": 178583574879.0,
+      "2023": 250993441832.0,
+      "2025": 290596179298.0
+    }
+  },
+  "statistik": {
+    "market_cap": 578760015872,
+    "enterprise_value": 519759429632,
+    "shares_outstanding": 312000000,
+    "free_float_pct": 21.387
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2858,
+    "vol_trend": 0.228,
+    "price_chg_20d": -10.39
+  },
+  "neraca": {
+    "aset": 197822468780.0,
+    "aset_lancar": 162565869099.0,
+    "kas": 59000891021.0,
+    "piutang_usaha": 36748984196.0,
+    "persediaan": 62165413431.0,
+    "aset_tetap": 21324193266.0,
+    "liabilitas": 15463888319.0,
+    "liabilitas_jangka_pendek": 3414075162.0,
+    "utang_usaha": 36748984196.0,
+    "utang_bank": null,
+    "ekuitas": 182358261889.0,
+    "ekuitas_induk": 182358261889.0,
+    "modal_saham": null,
+    "saldo_laba": 56277776457.0
+  },
+  "laba_rugi": {
+    "pendapatan": 156420359024.0,
+    "beban_pokok": 124718429631.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8676169750.0,
+    "beban_pajak": -2239543898.0,
+    "laba_bersih": 6436625852.0,
+    "laba_induk": 6436625852.0,
+    "eps_basic": 25.54,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 31853836.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

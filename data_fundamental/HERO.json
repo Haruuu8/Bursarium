@@ -1,0 +1,126 @@
+{
+  "kode": "HERO",
+  "nama": "PT DFI Retail Nusantara Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 316.0,
+  "update": "2026-10-11 13:40",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 105.333336,
+    "pb": 0.76796144,
+    "ps": 0.25394365,
+    "roe": 0.03641932852970358,
+    "eps": 3.0,
+    "de": 1.503536500073193,
+    "margin_net": 0.023110714310727875,
+    "current_ratio": 0.60683190486255,
+    "roa": 0.014547153008809271,
+    "bv": 411.48,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1254964.0,
+      "2024-Q2": 2251927.0,
+      "2024-Q3": 3380448.0,
+      "2024-Q4": 4543989.0,
+      "2025-Q1": 1210232.0,
+      "2025-Q2": 2354475.0,
+      "2025-Q3": 3511201.0,
+      "2025-Q4": 4847655.0,
+      "2026-Q1": 1407911.0,
+      "2026-Q2": 2712811.0
+    },
+    "eps": {
+      "2024-Q1": -20.0,
+      "2024-Q2": -2.0,
+      "2024-Q3": 5.699999999999999,
+      "2024-Q4": -35.0,
+      "2025-Q1": 3.0,
+      "2025-Q2": 12.0,
+      "2025-Q3": 9.0,
+      "2025-Q4": 10.0,
+      "2026-Q1": 10.0,
+      "2026-Q2": 6.0
+    },
+    "net_income": {
+      "2024-Q1": -1125.0,
+      "2024-Q2": 162164.0,
+      "2024-Q3": 183645.0,
+      "2024-Q4": -5585.0,
+      "2025-Q1": 27137.0,
+      "2025-Q2": 75178.0,
+      "2025-Q3": 70341.0,
+      "2025-Q4": 160336.0,
+      "2026-Q1": 87015.0,
+      "2026-Q2": 62695.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -74.0,
+      "2024": -35.0,
+      "2025": 10.0
+    },
+    "revenue_per_share": {
+      "2022": 4436667.0,
+      "2024": 4543989.0,
+      "2025": 4847655.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1322028367872,
+    "enterprise_value": 2617420283904,
+    "shares_outstanding": 4183634000,
+    "free_float_pct": 7.035000002390267
+  },
+  "akumulasi": {
+    "score": 4.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0252,
+    "vol_trend": 0.505,
+    "price_chg_20d": -5.39
+  },
+  "neraca": {
+    "aset": 4309778.0,
+    "aset_lancar": 1358054.0,
+    "kas": 25591.0,
+    "piutang_usaha": 56535.0,
+    "persediaan": 1037446.0,
+    "aset_tetap": 1611.0,
+    "liabilitas": 2588302.0,
+    "liabilitas_jangka_pendek": 2237941.0,
+    "utang_usaha": 56535.0,
+    "utang_bank": 615000.0,
+    "ekuitas": 1721476.0,
+    "ekuitas_induk": 1721476.0,
+    "modal_saham": null,
+    "saldo_laba": 42000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2712811.0,
+    "beban_pokok": 1524804.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 37903.0,
+    "beban_pajak": -14324.0,
+    "laba_bersih": 62695.0,
+    "laba_induk": 62695.0,
+    "eps_basic": 6.0,
+    "eps_diluted": 6.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1611.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

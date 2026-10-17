@@ -1,0 +1,128 @@
+{
+  "kode": "SCCO",
+  "nama": "PT Supreme Cable Manufacturing & Commerce Tbk",
+  "sektor": "Industrials",
+  "industri": "Electrical Equipment & Parts",
+  "harga": 2760.0,
+  "update": "2026-10-11 14:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.7579145,
+    "pb": 0.39566272,
+    "ps": 0.30291137,
+    "roe": 0.03579919780666029,
+    "eps": 408.41,
+    "de": 0.08218377137992605,
+    "margin_net": 0.0523858523822147,
+    "current_ratio": 6.557597577184406,
+    "roa": 0.0330415264870834,
+    "bv": 6975.64,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1649882837357.0,
+      "2024-Q2": 3402507113074.0,
+      "2024-Q3": 5524771029337.0,
+      "2024-Q4": 6939147619476.0,
+      "2025-Q1": 1986753739763.0,
+      "2025-Q2": 3847345091384.0,
+      "2025-Q3": 5816165687238.0,
+      "2025-Q4": 7420053450826.0,
+      "2026-Q1": 1960006946164.0,
+      "2026-Q2": 3920046810343.0
+    },
+    "eps": {
+      "2024-Q1": 74.0,
+      "2024-Q2": 186.0,
+      "2024-Q3": 304.0,
+      "2024-Q4": 322.0,
+      "2025-Q1": 113.0,
+      "2025-Q2": 222.0,
+      "2025-Q3": 341.0,
+      "2025-Q4": 381.0,
+      "2026-Q1": 113.0,
+      "2026-Q2": 250.0
+    },
+    "net_income": {
+      "2024-Q1": 60553791654.0,
+      "2024-Q2": 152900513068.0,
+      "2024-Q3": 266709295226.0,
+      "2024-Q4": 294373699764.0,
+      "2025-Q1": 92859538754.0,
+      "2025-Q2": 182602521402.0,
+      "2025-Q3": 280664855887.0,
+      "2025-Q4": 313055053493.0,
+      "2026-Q1": 92554053017.0,
+      "2026-Q2": 205354993538.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 567.0,
+      "2023": 1154.0,
+      "2024": 322.0,
+      "2025": 381.0
+    },
+    "revenue_per_share": {
+      "2022": 5469205561730.0,
+      "2023": 5823016502106.0,
+      "2024": 6939147619476.0,
+      "2025": 7420053450826.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2269640654848,
+    "enterprise_value": 1112641896448,
+    "shares_outstanding": 822333600,
+    "free_float_pct": 24.12599995914067
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2456,
+    "vol_trend": 5.294,
+    "price_chg_20d": 9.52
+  },
+  "neraca": {
+    "aset": 6215057697721.0,
+    "aset_lancar": 2762063797300.0,
+    "kas": 1164324099773.0,
+    "piutang_usaha": 391243045491.0,
+    "persediaan": 826073201901.0,
+    "aset_tetap": 3096384665619.0,
+    "liabilitas": 471430894396.0,
+    "liabilitas_jangka_pendek": 421200563894.0,
+    "utang_usaha": 391243045491.0,
+    "utang_bank": null,
+    "ekuitas": 5736301540807.0,
+    "ekuitas_induk": 5736301540807.0,
+    "modal_saham": null,
+    "saldo_laba": 118100131504.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3920046810343.0,
+    "beban_pokok": 3560712165646.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 256672161039.0,
+    "beban_pajak": -51174850702.0,
+    "laba_bersih": 205354993538.0,
+    "laba_induk": 205354993538.0,
+    "eps_basic": 250.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14825635600.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

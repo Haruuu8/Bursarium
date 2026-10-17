@@ -1,0 +1,120 @@
+{
+  "kode": "DEFI",
+  "nama": "PT Danasupra Erapacific Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 90.0,
+  "update": "2026-10-11 13:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.5179052,
+    "ps": 10.5385275,
+    "roe": -0.1346990595911001,
+    "eps": null,
+    "de": 0.1578195162248928,
+    "margin_net": -1.9443683772478857,
+    "current_ratio": 3.8542321780909923,
+    "roa": -0.11144979026227154,
+    "bv": 35.74,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 568877550.0,
+      "2024-Q2": 1916872889.0,
+      "2024-Q3": 3656771818.0,
+      "2025-Q2": 3675392858.0,
+      "2025-Q3": 5372982913.0,
+      "2025-Q4": 7810845628.0,
+      "2026-Q1": 1334850000.0,
+      "2026-Q2": 1637650000.0
+    },
+    "eps": {
+      "2024-Q1": -6.37,
+      "2024-Q2": -9.89,
+      "2024-Q3": -10.4,
+      "2025-Q2": -4.75,
+      "2025-Q3": -6.85,
+      "2025-Q4": -16.76,
+      "2026-Q1": -1.41,
+      "2026-Q2": -5.05
+    },
+    "net_income": {
+      "2024-Q1": -1120122629.0,
+      "2024-Q2": -1749293959.0,
+      "2024-Q3": -2426753513.0,
+      "2025-Q2": -3093131096.0,
+      "2025-Q3": -4305946777.0,
+      "2025-Q4": -11152061803.0,
+      "2026-Q1": -815376221.0,
+      "2026-Q2": -3184194873.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -31.74653,
+      "2023": -14.26,
+      "2025": -16.76
+    },
+    "revenue_per_share": {
+      "2022": 617834221.0,
+      "2023": 614802900.0,
+      "2025": 7810845628.0
+    }
+  },
+  "statistik": {
+    "market_cap": 60840001536,
+    "enterprise_value": 62474711040,
+    "shares_outstanding": 676000000,
+    "free_float_pct": 58.045
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1442,
+    "vol_trend": 8.76,
+    "price_chg_20d": -13.46
+  },
+  "neraca": {
+    "aset": 28570667253.0,
+    "aset_lancar": 14108222862.0,
+    "kas": 110140504.0,
+    "piutang_usaha": 391417969.0,
+    "persediaan": null,
+    "aset_tetap": 111847516.0,
+    "liabilitas": 3730746866.0,
+    "liabilitas_jangka_pendek": 3660449659.0,
+    "utang_usaha": 391417969.0,
+    "utang_bank": null,
+    "ekuitas": 23639325194.0,
+    "ekuitas_induk": 23639325194.0,
+    "modal_saham": null,
+    "saldo_laba": 2450000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1637650000.0,
+    "beban_pokok": 1152128658.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3413389671.0,
+    "beban_pajak": null,
+    "laba_bersih": -3184194873.0,
+    "laba_induk": -3184194873.0,
+    "eps_basic": -5.05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1350000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

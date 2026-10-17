@@ -1,0 +1,128 @@
+{
+  "kode": "JTPE",
+  "nama": "PT Jasuindo Tiga Perkasa Tbk",
+  "sektor": "Industrials",
+  "industri": "Specialty Business Services",
+  "harga": 580.0,
+  "update": "2026-10-11 13:57",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.332552,
+    "pb": 3.1982884,
+    "ps": 1.4123275,
+    "roe": 0.06384513555142551,
+    "eps": 51.18,
+    "de": 1.1148968386003257,
+    "margin_net": 0.11686129980642848,
+    "current_ratio": 1.4343723481560497,
+    "roa": 0.028600277990334873,
+    "bv": 181.35,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 370025606742.0,
+      "2024-Q2": 775131948900.0,
+      "2024-Q3": 1124460016968.0,
+      "2024-Q4": 2116285894967.0,
+      "2025-Q1": 348322577266.0,
+      "2025-Q2": 666507435822.0,
+      "2025-Q3": 1261145029755.0,
+      "2025-Q4": 2782642802655.0,
+      "2026-Q1": 265050928479.0,
+      "2026-Q2": 672857277253.0
+    },
+    "eps": {
+      "2024-Q1": 6.43,
+      "2024-Q2": 11.72,
+      "2024-Q3": 17.46,
+      "2024-Q4": 34.73,
+      "2025-Q1": 7.47,
+      "2025-Q2": 11.66,
+      "2025-Q3": 22.33,
+      "2025-Q4": 51.293113043681494,
+      "2026-Q1": 4.01,
+      "2026-Q2": 11.56
+    },
+    "net_income": {
+      "2024-Q1": 44040892733.0,
+      "2024-Q2": 80328401477.0,
+      "2024-Q3": 119640070325.0,
+      "2024-Q4": 237971904389.0,
+      "2025-Q1": 51166512095.0,
+      "2025-Q2": 79900198110.0,
+      "2025-Q3": 153033799009.0,
+      "2025-Q4": 351445310726.0,
+      "2026-Q1": 27307252634.0,
+      "2026-Q2": 78630976004.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 29.71,
+      "2023": 30.3,
+      "2024": 34.73,
+      "2025": 51.293113043681494
+    },
+    "revenue_per_share": {
+      "2022": 1423142732743.0,
+      "2023": 2296271601062.0,
+      "2024": 2116285894967.0,
+      "2025": 2782642802655.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3938971287552,
+    "enterprise_value": 3579006156800,
+    "shares_outstanding": 6791330000,
+    "free_float_pct": 26.0509999955826
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2151,
+    "vol_trend": 1.037,
+    "price_chg_20d": -4.13
+  },
+  "neraca": {
+    "aset": 2749308102200.0,
+    "aset_lancar": 1892904843669.0,
+    "kas": 670459711938.0,
+    "piutang_usaha": 168676271960.0,
+    "persediaan": 840003254184.0,
+    "aset_tetap": 36011114301.0,
+    "liabilitas": 1373094845923.0,
+    "liabilitas_jangka_pendek": 1319674661954.0,
+    "utang_usaha": 168676271960.0,
+    "utang_bank": 161495425701.0,
+    "ekuitas": 1231589146532.0,
+    "ekuitas_induk": 1231589146532.0,
+    "modal_saham": null,
+    "saldo_laba": 6852050000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 672857277253.0,
+    "beban_pokok": 485554788635.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 114117862719.0,
+    "beban_pajak": -24058340103.0,
+    "laba_bersih": 78630976004.0,
+    "laba_induk": 78630976004.0,
+    "eps_basic": 11.56,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 36011114301.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

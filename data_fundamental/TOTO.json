@@ -1,0 +1,123 @@
+{
+  "kode": "TOTO",
+  "nama": "PT Surya Toto Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 242.0,
+  "update": "2026-10-11 15:19",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.261386,
+    "pb": 0.9901436,
+    "ps": 1.1456553,
+    "roe": 0.03487946234583709,
+    "eps": 26.13,
+    "de": 0.3421277277529723,
+    "margin_net": 0.08540654760525362,
+    "current_ratio": 4.90506503600876,
+    "roa": 0.025988184004091218,
+    "bv": 244.41,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 577748822476.0,
+      "2024-Q2": 1097081147521.0,
+      "2024-Q3": 1707458283469.0,
+      "2025-Q1": 576935002679.0,
+      "2025-Q2": 1204527362585.0,
+      "2025-Q3": 1817453132092.0,
+      "2025-Q4": 2354358428860.0,
+      "2026-Q1": 484483505155.0,
+      "2026-Q2": 1030091862191.0
+    },
+    "eps": {
+      "2024-Q1": 5.7,
+      "2024-Q2": 10.4,
+      "2024-Q3": 19.22,
+      "2025-Q1": 8.32,
+      "2025-Q2": 16.39,
+      "2025-Q3": 24.94,
+      "2025-Q4": 34.03,
+      "2026-Q1": 4.4,
+      "2026-Q2": 8.52
+    },
+    "net_income": {
+      "2024-Q1": 58837379589.0,
+      "2024-Q2": 107296561532.0,
+      "2024-Q3": 198351061980.0,
+      "2025-Q1": 85887772176.0,
+      "2025-Q2": 169099573886.0,
+      "2025-Q3": 257399389527.0,
+      "2025-Q4": 351151543489.0,
+      "2026-Q1": 45364724302.0,
+      "2026-Q2": 87976589666.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 30.37,
+      "2023": 23.49,
+      "2025": 34.03
+    },
+    "revenue_per_share": {
+      "2022": 2086058728390.0,
+      "2023": 2125542963624.0,
+      "2025": 2354358428860.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2497440120832,
+    "enterprise_value": 2493464969216,
+    "shares_outstanding": 10320000000,
+    "free_float_pct": 7.762
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4443,
+    "vol_trend": 0.757,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 3385253454114.0,
+    "aset_lancar": 1592918029053.0,
+    "kas": 213485851256.0,
+    "piutang_usaha": 1235288633.0,
+    "persediaan": 862695740849.0,
+    "aset_tetap": 13124107237.0,
+    "liabilitas": 862949962343.0,
+    "liabilitas_jangka_pendek": 324749624594.0,
+    "utang_usaha": 1235288633.0,
+    "utang_bank": 5000000000.0,
+    "ekuitas": 2522303491771.0,
+    "ekuitas_induk": 2522303491771.0,
+    "modal_saham": null,
+    "saldo_laba": 2254218537232.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1030091862191.0,
+    "beban_pokok": 813915583360.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 112790499572.0,
+    "beban_pajak": -24813909906.0,
+    "laba_bersih": 87976589666.0,
+    "laba_induk": 87976589666.0,
+    "eps_basic": 8.52,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13124107237.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

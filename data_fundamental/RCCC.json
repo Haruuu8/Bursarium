@@ -1,0 +1,128 @@
+{
+  "kode": "RCCC",
+  "nama": "PT Utama Radar Cahaya Tbk",
+  "sektor": "Industrials",
+  "industri": "Trucking",
+  "harga": 103.0,
+  "update": "2026-10-11 11:18",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.5433024,
+    "ps": 0.8546079,
+    "roe": 0.028443062451075012,
+    "eps": 5.67,
+    "de": 0.8712872209746219,
+    "margin_net": 0.032864682003364114,
+    "current_ratio": 0.6140776246327908,
+    "roa": 0.015199731036618216,
+    "bv": 66.74,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 20264414422.0,
+      "2024-Q2": 38047089148.0,
+      "2024-Q3": 68124008227.0,
+      "2024-Q4": 93776687510.0,
+      "2025-Q1": 24046510303.0,
+      "2025-Q2": 44468959572.0,
+      "2025-Q3": 70286752215.0,
+      "2025-Q4": 93894488666.0,
+      "2026-Q1": 24073928362.0,
+      "2026-Q2": 45486429470.0
+    },
+    "eps": {
+      "2024-Q1": 1.1,
+      "2024-Q2": 1.63,
+      "2024-Q3": 4.69,
+      "2024-Q4": 4.66,
+      "2025-Q1": 1.08,
+      "2025-Q2": 1.57,
+      "2025-Q3": 4.71,
+      "2025-Q4": 5.67,
+      "2026-Q1": 1.65,
+      "2026-Q2": 1.9
+    },
+    "net_income": {
+      "2024-Q1": 824474746.0,
+      "2024-Q2": 1220133340.0,
+      "2024-Q3": 3695207028.0,
+      "2024-Q4": 3667097012.0,
+      "2025-Q1": 851646067.0,
+      "2025-Q2": 1238360258.0,
+      "2025-Q3": 3707532059.0,
+      "2025-Q4": 4465759886.0,
+      "2026-Q1": 1296187511.0,
+      "2026-Q2": 1494897040.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 5.82,
+      "2023": 4.61,
+      "2024": 4.66,
+      "2025": 5.67
+    },
+    "revenue_per_share": {
+      "2022": 60891278469.0,
+      "2023": 75756461938.0,
+      "2024": 93776687510.0,
+      "2025": 93894488666.0
+    }
+  },
+  "statistik": {
+    "market_cap": 81112506368,
+    "enterprise_value": 115486220288,
+    "shares_outstanding": 787500000,
+    "free_float_pct": 20.0
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.31,
+    "vol_trend": 0.544,
+    "price_chg_20d": -10.43
+  },
+  "neraca": {
+    "aset": 98350229777.0,
+    "aset_lancar": 17682434301.0,
+    "kas": 202327685.0,
+    "piutang_usaha": 10267619626.0,
+    "persediaan": 3495333192.0,
+    "aset_tetap": 79130339222.0,
+    "liabilitas": 45792702170.0,
+    "liabilitas_jangka_pendek": 28795112526.0,
+    "utang_usaha": 10267619626.0,
+    "utang_bank": null,
+    "ekuitas": 52557527607.0,
+    "ekuitas_induk": 52557527607.0,
+    "modal_saham": null,
+    "saldo_laba": 4600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 45486429470.0,
+    "beban_pokok": 35001540632.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2105717580.0,
+    "beban_pajak": -610820540.0,
+    "laba_bersih": 1494897040.0,
+    "laba_induk": 1494897040.0,
+    "eps_basic": 1.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 498000000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

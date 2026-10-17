@@ -1,0 +1,125 @@
+{
+  "kode": "TRIS",
+  "nama": "PT Trisula International Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 170.0,
+  "update": "2026-10-11 15:21",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 46.23334,
+    "pb": 0.97759014,
+    "ps": 0.28345853,
+    "roe": 0.05326629606657179,
+    "eps": 3.68,
+    "de": 1.0436514117838773,
+    "margin_net": 0.032205826820129034,
+    "current_ratio": 1.9084000520564903,
+    "roa": 0.020199743244698615,
+    "bv": 173.9,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 344636042722.0,
+      "2024-Q3": 1082624900912.0,
+      "2024-Q4": 1518058140222.0,
+      "2025-Q1": 402343975741.0,
+      "2025-Q2": 767856534477.0,
+      "2025-Q3": 1188877188859.0,
+      "2025-Q4": 1733311160699.0,
+      "2026-Q1": 455334981655.0,
+      "2026-Q2": 889652510461.0
+    },
+    "eps": {
+      "2024-Q1": 4.69,
+      "2024-Q3": 10.24,
+      "2024-Q4": 15.02,
+      "2025-Q1": 5.27,
+      "2025-Q2": 9.61,
+      "2025-Q3": 13.94,
+      "2025-Q4": 19.8,
+      "2026-Q1": 5.57,
+      "2026-Q2": 8.55
+    },
+    "net_income": {
+      "2024-Q1": 14613612643.0,
+      "2024-Q3": 31925691306.0,
+      "2024-Q4": 46767523372.0,
+      "2025-Q1": 16297739010.0,
+      "2025-Q2": 29622140621.0,
+      "2025-Q3": 42924617030.0,
+      "2025-Q4": 60956404559.0,
+      "2026-Q1": 17231555733.0,
+      "2026-Q2": 28651994682.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.91,
+      "2023": 12.23,
+      "2024": 15.02,
+      "2025": 19.8
+    },
+    "revenue_per_share": {
+      "2022": 1498011822265.0,
+      "2023": 1472856196208.0,
+      "2024": 1518058140222.0,
+      "2025": 1733311160699.0
+    }
+  },
+  "statistik": {
+    "market_cap": 525845921792,
+    "enterprise_value": 840876621824,
+    "shares_outstanding": 3093211331,
+    "free_float_pct": 33.963999985101566
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4511,
+    "vol_trend": 0.958,
+    "price_chg_20d": -0.58
+  },
+  "neraca": {
+    "aset": 1418433607542.0,
+    "aset_lancar": 1002292955115.0,
+    "kas": 202780729369.0,
+    "piutang_usaha": 254947647608.0,
+    "persediaan": 453939895115.0,
+    "aset_tetap": 370728145705.0,
+    "liabilitas": 561381152970.0,
+    "liabilitas_jangka_pendek": 525200653833.0,
+    "utang_usaha": 254947647608.0,
+    "utang_bank": 192284046952.0,
+    "ekuitas": 537901014296.0,
+    "ekuitas_induk": 537901014296.0,
+    "modal_saham": null,
+    "saldo_laba": 5300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 889652510461.0,
+    "beban_pokok": 688178499773.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 76968597220.0,
+    "beban_pajak": 338966912.0,
+    "laba_bersih": 28651994682.0,
+    "laba_induk": 28651994682.0,
+    "eps_basic": 8.55,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 50698650.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

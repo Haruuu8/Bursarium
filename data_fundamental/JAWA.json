@@ -1,0 +1,126 @@
+{
+  "kode": "JAWA",
+  "nama": "PT Jaya Agra Wattie Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 149.0,
+  "update": "2026-10-11 13:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.771237,
+    "ps": 1.5092493,
+    "roe": 0.008541088760650269,
+    "eps": null,
+    "de": 1.9705911391938835,
+    "margin_net": 0.014602084306399617,
+    "current_ratio": 0.8757244671147623,
+    "roa": 0.0028697558475055717,
+    "bv": 84.12,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2026-tw2"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 190935051293.0,
+      "2024-Q2": 405723213709.0,
+      "2024-Q3": 627721192340.0,
+      "2024-Q4": 1070773284944.0,
+      "2025-Q1": 475668309998.0,
+      "2025-Q2": 938081587726.0,
+      "2025-Q3": 1344763837758.0,
+      "2025-Q4": 1741937139009.0,
+      "2026-Q1": 354571786533.0,
+      "2026-Q2": 798735838889.0
+    },
+    "eps": {
+      "2024-Q1": -2.21,
+      "2024-Q2": -7.5,
+      "2024-Q3": -11.22,
+      "2024-Q4": -11.89,
+      "2025-Q1": 1.33,
+      "2025-Q2": 2.06,
+      "2025-Q3": 2.19,
+      "2025-Q4": -1.84,
+      "2026-Q1": -1.43,
+      "2026-Q2": 720000.0
+    },
+    "net_income": {
+      "2024-Q1": -35904824163.0,
+      "2024-Q2": -121762771180.0,
+      "2024-Q3": -182064061258.0,
+      "2024-Q4": -193042953159.0,
+      "2025-Q1": 21647014338.0,
+      "2025-Q2": 33440428487.0,
+      "2025-Q3": 35623086536.0,
+      "2025-Q4": -29868955194.0,
+      "2026-Q1": -23139942941.0,
+      "2026-Q2": 11663208058.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -79.53,
+      "2024": -11.89,
+      "2025": -1.84
+    },
+    "revenue_per_share": {
+      "2022": 971541518082.0,
+      "2024": 1070773284944.0,
+      "2025": 1741937139009.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2418709889024,
+    "enterprise_value": 4778109698048,
+    "shares_outstanding": 16232951842,
+    "free_float_pct": 7.501000002042635
+  },
+  "akumulasi": {
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.389,
+    "vol_trend": 2.873,
+    "price_chg_20d": 0.68
+  },
+  "neraca": {
+    "aset": 4064181302440.0,
+    "aset_lancar": 637741509912.0,
+    "kas": 3567855052.0,
+    "piutang_usaha": 94041514971.0,
+    "persediaan": 214990885540.0,
+    "aset_tetap": 65159404072.0,
+    "liabilitas": 2690923264907.0,
+    "liabilitas_jangka_pendek": 728244480839.0,
+    "utang_usaha": 94041514971.0,
+    "utang_bank": 85000000000.0,
+    "ekuitas": 1365541137066.0,
+    "ekuitas_induk": 1365541137066.0,
+    "modal_saham": null,
+    "saldo_laba": 29709895542.0
+  },
+  "laba_rugi": {
+    "pendapatan": 798735838889.0,
+    "beban_pokok": 736643091955.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17460130573.0,
+    "beban_pajak": -5244401694.0,
+    "laba_bersih": 11663208058.0,
+    "laba_induk": 11663208058.0,
+    "eps_basic": 720000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 65159404072.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

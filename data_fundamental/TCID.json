@@ -1,0 +1,125 @@
+{
+  "kode": "TCID",
+  "nama": "PT. Mandom Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Household & Personal Products",
+  "harga": 2450.0,
+  "update": "2026-10-11 15:14",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.5445426,
+    "ps": 0.47811905,
+    "roe": 0.011135927792663158,
+    "eps": 100.21,
+    "de": 0.2883556145368057,
+    "margin_net": 0.02042660265958415,
+    "current_ratio": 5.529488306524559,
+    "roa": 0.008643528541049177,
+    "bv": 4499.19,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 853717821362.0,
+      "2024-Q3": 1344583239543.0,
+      "2024-Q4": 1859368093471.0,
+      "2025-Q1": 551246383398.0,
+      "2025-Q2": 1072280867532.0,
+      "2025-Q3": 1581369590199.0,
+      "2025-Q4": 2146553443744.0,
+      "2026-Q1": 513657911201.0,
+      "2026-Q2": 986357907028.0
+    },
+    "eps": {
+      "2024-Q2": -104.0,
+      "2024-Q3": -216.0,
+      "2024-Q4": -310.212230680185,
+      "2025-Q1": 75.0,
+      "2025-Q2": 120.0,
+      "2025-Q3": 83.0,
+      "2025-Q4": 38.0,
+      "2026-Q1": 65.0,
+      "2026-Q2": 50.0
+    },
+    "net_income": {
+      "2024-Q2": -41680080195.0,
+      "2024-Q3": -86844596449.0,
+      "2024-Q4": -124746678571.0,
+      "2025-Q1": 30230934994.0,
+      "2025-Q2": 48445369750.0,
+      "2025-Q3": 33374082345.0,
+      "2025-Q4": 15299884349.0,
+      "2026-Q1": 26175830617.0,
+      "2026-Q2": 20147941047.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 92.0,
+      "2023": 95.0,
+      "2024": -310.212230680185,
+      "2025": 38.0
+    },
+    "revenue_per_share": {
+      "2022": 2044821803111.0,
+      "2023": 2050460062443.0,
+      "2024": 1859368093471.0,
+      "2025": 2146553443744.0
+    }
+  },
+  "statistik": {
+    "market_cap": 985226674176,
+    "enterprise_value": 303681503232,
+    "shares_outstanding": 402133334,
+    "free_float_pct": 18.98000005142573
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.264,
+    "vol_trend": 0.577,
+    "price_chg_20d": -5.77
+  },
+  "neraca": {
+    "aset": 2330985656068.0,
+    "aset_lancar": 1676398465929.0,
+    "kas": 683703298713.0,
+    "piutang_usaha": 30071873459.0,
+    "persediaan": 625094859606.0,
+    "aset_tetap": 572716375484.0,
+    "liabilitas": 521714223586.0,
+    "liabilitas_jangka_pendek": 303174249225.0,
+    "utang_usaha": 30071873459.0,
+    "utang_bank": null,
+    "ekuitas": 1809273679044.0,
+    "ekuitas_induk": 1809273679044.0,
+    "modal_saham": null,
+    "saldo_laba": 20106666700.0
+  },
+  "laba_rugi": {
+    "pendapatan": 986357907028.0,
+    "beban_pokok": 710789158939.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 33194647884.0,
+    "beban_pajak": -13046916287.0,
+    "laba_bersih": 20147941047.0,
+    "laba_induk": 20147941047.0,
+    "eps_basic": 50.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 22508234249.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

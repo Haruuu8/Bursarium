@@ -1,0 +1,128 @@
+{
+  "kode": "IATA",
+  "nama": "PT MNC Energy Investments Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 106.0,
+  "update": "2026-10-11 13:40",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 62.72189,
+    "pb": 26499.998,
+    "ps": 45381.414,
+    "roe": 0.007287580545780472,
+    "eps": 1.69,
+    "de": 0.7721796469534682,
+    "margin_net": 0.028789019758493784,
+    "current_ratio": 0.7742265293577212,
+    "roa": 0.004121341282798078,
+    "bv": 0.0,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 27903065.0,
+      "2024-Q2": 59263470.0,
+      "2024-Q3": 100959960.0,
+      "2024-Q4": 117889631.0,
+      "2025-Q1": 22566703.0,
+      "2025-Q2": 39966198.0,
+      "2025-Q3": 62391288.0,
+      "2025-Q4": 79636971.0,
+      "2026-Q1": 21663544.0,
+      "2026-Q2": 33381998.0
+    },
+    "eps": {
+      "2024-Q1": 141.97486137698732,
+      "2024-Q2": 350.0,
+      "2024-Q3": 200.0,
+      "2024-Q4": 304.1862004337269,
+      "2025-Q1": 50.0,
+      "2025-Q2": 170.0,
+      "2025-Q3": 230.0,
+      "2025-Q4": 240.0,
+      "2026-Q1": 15.125322023024845,
+      "2026-Q2": 30.0
+    },
+    "net_income": {
+      "2024-Q1": 3583193.0,
+      "2024-Q2": 8825072.0,
+      "2024-Q3": 13739480.0,
+      "2024-Q4": 7677126.0,
+      "2025-Q1": 1641997.0,
+      "2025-Q2": 5469191.0,
+      "2025-Q3": 7170287.0,
+      "2025-Q4": 7610667.0,
+      "2026-Q1": 473057.0,
+      "2026-Q2": 961035.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1340.0,
+      "2023": 1050.0,
+      "2024": 304.1862004337269,
+      "2025": 240.0
+    },
+    "revenue_per_share": {
+      "2022": 192064470.0,
+      "2023": 170071936.0,
+      "2024": 117889631.0,
+      "2025": 79636971.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3315237912576,
+    "enterprise_value": 3315294011392,
+    "shares_outstanding": 31275829981,
+    "free_float_pct": 7.207999999902545
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1713,
+    "vol_trend": 0.385,
+    "price_chg_20d": -15.87
+  },
+  "neraca": {
+    "aset": 233185008.0,
+    "aset_lancar": 53987834.0,
+    "kas": 1208803.0,
+    "piutang_usaha": 2618800.0,
+    "persediaan": 37622577.0,
+    "aset_tetap": 27615216.0,
+    "liabilitas": 101829635.0,
+    "liabilitas_jangka_pendek": 69731315.0,
+    "utang_usaha": 2618800.0,
+    "utang_bank": 6402133.0,
+    "ekuitas": 131872985.0,
+    "ekuitas_induk": 131872985.0,
+    "modal_saham": null,
+    "saldo_laba": 263894.0
+  },
+  "laba_rugi": {
+    "pendapatan": 33381998.0,
+    "beban_pokok": 17020382.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1992041.0,
+    "beban_pajak": -1395717.0,
+    "laba_bersih": 961035.0,
+    "laba_induk": 961035.0,
+    "eps_basic": 30.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 890223.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

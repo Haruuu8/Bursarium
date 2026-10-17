@@ -1,0 +1,123 @@
+{
+  "kode": "BREN",
+  "nama": "PT Barito Renewables Energy Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Renewable",
+  "harga": 2700.0,
+  "update": "2026-10-11 11:53",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 139.17526,
+    "pb": 540000.0,
+    "ps": 564778.6,
+    "roe": 0.125284472781903,
+    "eps": 19.4,
+    "de": 4.453836698606209,
+    "margin_net": 0.2605752353956052,
+    "current_ratio": 1.6301052247546997,
+    "roa": 0.021554738067612513,
+    "bv": 0.01,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 290072.0,
+      "2024-Q3": 441295.0,
+      "2024-Q4": 596823.0,
+      "2025-Q1": 150478.0,
+      "2025-Q2": 300073.0,
+      "2025-Q3": 457397.0,
+      "2025-Q4": 605187.0,
+      "2026-Q1": 165167.0,
+      "2026-Q2": 334437.0
+    },
+    "eps": {
+      "2024-Q2": 430.0,
+      "2024-Q3": 640.0,
+      "2024-Q4": 910.0,
+      "2025-Q1": 260.0,
+      "2025-Q2": 489.3329073801472,
+      "2025-Q3": 800.0,
+      "2025-Q4": 990.0,
+      "2026-Q1": 321.4909687375425,
+      "2026-Q2": 650.0
+    },
+    "net_income": {
+      "2024-Q2": 57953.0,
+      "2024-Q3": 86059.0,
+      "2024-Q4": 122108.0,
+      "2025-Q1": 34241.0,
+      "2025-Q2": 65466.0,
+      "2025-Q3": 106553.0,
+      "2025-Q4": 132198.0,
+      "2026-Q1": 43009.0,
+      "2026-Q2": 87146.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 820.0,
+      "2024": 910.0,
+      "2025": 990.0
+    },
+    "revenue_per_share": {
+      "2023": 594937.0,
+      "2024": 596823.0,
+      "2025": 605187.0
+    }
+  },
+  "statistik": {
+    "market_cap": 361204702773248,
+    "enterprise_value": 361206850256896,
+    "shares_outstanding": 133779520000,
+    "free_float_pct": 12.581999999701003
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.178,
+    "vol_trend": 0.325,
+    "price_chg_20d": -16.67
+  },
+  "neraca": {
+    "aset": 4043009.0,
+    "aset_lancar": 679154.0,
+    "kas": 202234.0,
+    "piutang_usaha": 137075.0,
+    "persediaan": 21320.0,
+    "aset_tetap": 1007246.0,
+    "liabilitas": 3098022.0,
+    "liabilitas_jangka_pendek": 416632.0,
+    "utang_usaha": 137075.0,
+    "utang_bank": 132117.0,
+    "ekuitas": 695585.0,
+    "ekuitas_induk": 695585.0,
+    "modal_saham": null,
+    "saldo_laba": 3231.0
+  },
+  "laba_rugi": {
+    "pendapatan": 334437.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 183614.0,
+    "beban_pajak": -77639.0,
+    "laba_bersih": 87146.0,
+    "laba_induk": 87146.0,
+    "eps_basic": 650.0,
+    "eps_diluted": 650.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 48260.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

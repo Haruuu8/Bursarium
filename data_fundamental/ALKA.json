@@ -1,0 +1,128 @@
+{
+  "kode": "ALKA",
+  "nama": "PT Alakasa Industrindo Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Aluminum",
+  "harga": 7125.0,
+  "update": "2026-10-11 12:27",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 187.93027,
+    "pb": 15.454325,
+    "ps": 25.809847,
+    "roe": -0.0011381591609892013,
+    "eps": 37.91,
+    "de": 0.09485982032750176,
+    "margin_net": -0.005427876531274169,
+    "current_ratio": 12.683160395117465,
+    "roa": -0.0010344529713641082,
+    "bv": 461.04,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 13822661.0,
+      "2024-Q2": 29585694.0,
+      "2024-Q3": 38670638.0,
+      "2024-Q4": 78893845.0,
+      "2025-Q1": 69442108.0,
+      "2025-Q2": 79456654.0,
+      "2025-Q3": 108160529.0,
+      "2025-Q4": 170523601.0,
+      "2026-Q1": 18594315.0,
+      "2026-Q2": 49077756.0
+    },
+    "eps": {
+      "2024-Q1": -3.2,
+      "2024-Q2": 4.41,
+      "2024-Q3": 4910.0,
+      "2024-Q4": -85300.0,
+      "2025-Q1": -2330.0,
+      "2025-Q2": -1020.0000000000001,
+      "2025-Q3": 3.0,
+      "2025-Q4": 38.29,
+      "2026-Q1": -7.63606893419545,
+      "2026-Q2": 520000.0
+    },
+    "net_income": {
+      "2024-Q1": -1622371.0,
+      "2024-Q2": -2237859.0,
+      "2024-Q3": 2494273.0,
+      "2024-Q4": -4331740.0,
+      "2025-Q1": -1182868.0,
+      "2025-Q2": -516909.0,
+      "2025-Q3": 1607433.0,
+      "2025-Q4": 19440395.0,
+      "2026-Q1": -3876565.0,
+      "2026-Q2": -266388.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 94.56,
+      "2023": 82670.0,
+      "2024": -85300.0,
+      "2025": 38.29
+    },
+    "revenue_per_share": {
+      "2022": 4131540432.0,
+      "2023": 1891073803.0,
+      "2024": 78893845.0,
+      "2025": 170523601.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3617113505792,
+    "enterprise_value": 3595479023616,
+    "shares_outstanding": 107250000,
+    "free_float_pct": 20.67107972027972
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.348,
+    "vol_trend": 1.4,
+    "price_chg_20d": 43.07
+  },
+  "neraca": {
+    "aset": 257515815.0,
+    "aset_lancar": 246864831.0,
+    "kas": 22896624.0,
+    "piutang_usaha": 69250954.0,
+    "persediaan": 6851800.0,
+    "aset_tetap": 1865357.0,
+    "liabilitas": 22202095.0,
+    "liabilitas_jangka_pendek": 19463984.0,
+    "utang_usaha": 69250954.0,
+    "utang_bank": null,
+    "ekuitas": 234051624.0,
+    "ekuitas_induk": 234051624.0,
+    "modal_saham": null,
+    "saldo_laba": 1536285.0
+  },
+  "laba_rugi": {
+    "pendapatan": 49077756.0,
+    "beban_pokok": 37967556.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -137649.0,
+    "beban_pajak": null,
+    "laba_bersih": -266388.0,
+    "laba_induk": -266388.0,
+    "eps_basic": 520000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2917.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

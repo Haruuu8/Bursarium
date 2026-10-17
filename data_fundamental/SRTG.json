@@ -1,0 +1,119 @@
+{
+  "kode": "SRTG",
+  "nama": "PT Saratoga Investama Sedaya Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 1750.0,
+  "update": "2026-10-11 15:04",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.142857,
+    "pb": 0.44183072,
+    "ps": 5.3801928,
+    "roe": -0.07218505850599817,
+    "eps": 245.0,
+    "de": 0.0715915773185655,
+    "margin_net": -284.68797766019986,
+    "current_ratio": null,
+    "roa": -0.06732718329068678,
+    "bv": 3960.79,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 11580.0,
+      "2024-Q2": 26450.0,
+      "2024-Q3": 32882.0,
+      "2024-Q4": 62459.0,
+      "2025-Q2": 32230.0,
+      "2025-Q4": 161371.0,
+      "2026-Q2": 13608.0
+    },
+    "eps": {
+      "2024-Q1": -190.0,
+      "2024-Q2": -33.0,
+      "2024-Q3": 385.0,
+      "2024-Q4": 243.0,
+      "2025-Q2": 8.0,
+      "2025-Q4": 538.0,
+      "2026-Q2": 286.0
+    },
+    "net_income": {
+      "2024-Q1": -2577473.0,
+      "2024-Q2": -446390.0,
+      "2024-Q3": 5218366.0,
+      "2024-Q4": 3290197.0,
+      "2025-Q2": 102017.0,
+      "2025-Q4": 7318796.0,
+      "2026-Q2": -3874034.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 342.0,
+      "2023": -750.0,
+      "2024": 243.0,
+      "2025": 538.0
+    },
+    "revenue_per_share": {
+      "2022": 21473.0,
+      "2023": 24540.0,
+      "2024": 62459.0,
+      "2025": 161371.0
+    }
+  },
+  "statistik": {
+    "market_cap": 23712208257024,
+    "enterprise_value": -28120440635392,
+    "shares_outstanding": 13549832900,
+    "free_float_pct": 17.449000002059066
+  },
+  "akumulasi": {
+    "score": 4.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.004,
+    "vol_trend": 0.32,
+    "price_chg_20d": -3.05
+  },
+  "neraca": {
+    "aset": 57540414.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": -25752.0,
+    "liabilitas": 3842183.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 53668087.0,
+    "ekuitas_induk": 53668087.0,
+    "modal_saham": null,
+    "saldo_laba": 47860317.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13608.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3305292.0,
+    "beban_pajak": -566914.0,
+    "laba_bersih": -3874034.0,
+    "laba_induk": -3874034.0,
+    "eps_basic": 286.0,
+    "eps_diluted": 285.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

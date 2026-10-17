@@ -1,0 +1,100 @@
+{
+  "kode": "POLU",
+  "nama": null,
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 14650.0,
+  "update": "2026-10-11 17:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": -708.0715321411309,
+    "pb": 89.9115,
+    "ps": 66.2559,
+    "roe": -0.12219,
+    "eps": null,
+    "de": 0.39121,
+    "margin_net": -0.093760006,
+    "current_ratio": 1.299,
+    "roa": -0.06574,
+    "bv": 162.94,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 39891357024.0,
+      "2024-Q2": 76580583865.0,
+      "2024-Q3": 103450566636.0,
+      "2026-Q2": 86944924326.0
+    },
+    "eps": {
+      "2024-Q1": 5.0,
+      "2024-Q2": 8.0,
+      "2024-Q3": -350000.0,
+      "2026-Q2": 5.8
+    },
+    "net_income": {
+      "2024-Q1": 3924425903.0,
+      "2024-Q2": 5965450186.0,
+      "2024-Q3": -264776961.0,
+      "2026-Q2": 4348400385.0
+    }
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 10987500470272,
+    "enterprise_value": 10928561061888,
+    "shares_outstanding": 750000000,
+    "free_float_pct": 11.453000000000001
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1917,
+    "vol_trend": 0.669,
+    "price_chg_20d": -15.56
+  },
+  "neraca": {
+    "aset": 261801097552.0,
+    "aset_lancar": 141662939928.0,
+    "kas": 106746415244.0,
+    "piutang_usaha": 9384396572.0,
+    "persediaan": 21359725395.0,
+    "aset_tetap": 24822058612.0,
+    "liabilitas": 139597290023.0,
+    "liabilitas_jangka_pendek": 109035590182.0,
+    "utang_usaha": 9384396572.0,
+    "utang_bank": 43751873690.0,
+    "ekuitas": 122203807529.0,
+    "ekuitas_induk": 122203807529.0,
+    "modal_saham": null,
+    "saldo_laba": 1798295075.0
+  },
+  "laba_rugi": {
+    "pendapatan": 86944924326.0,
+    "beban_pokok": 77800104115.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5463935905.0,
+    "beban_pajak": -1115535520.0,
+    "laba_bersih": 4348400385.0,
+    "laba_induk": 4348400385.0,
+    "eps_basic": 5.8,
+    "eps_diluted": 5.8
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 23400000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

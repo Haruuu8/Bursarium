@@ -1,0 +1,110 @@
+{
+  "kode": "LPGI",
+  "nama": "PT Lippo General Insurance Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Diversified",
+  "harga": 640.0,
+  "update": "2026-10-11 14:05",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 12.084593,
+    "pb": 1.7198384,
+    "ps": 0.38712132,
+    "roe": 0.10627802010937716,
+    "eps": 52.96,
+    "de": 2.180643231056031,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 0.033414002259565256,
+    "bv": 372.13,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2024-Q2": 93.0,
+      "2024-Q3": 19.0,
+      "2024-Q4": 21.0,
+      "2025-Q1": 14.0,
+      "2025-Q2": 35.0,
+      "2025-Q3": 39.0,
+      "2025-Q4": 48.0,
+      "2026-Q1": 16.0,
+      "2026-Q2": 40.0
+    },
+    "net_income": {
+      "2024-Q2": 27941023110.0,
+      "2024-Q3": 55814007095.0,
+      "2024-Q4": 62274344673.0,
+      "2025-Q1": 43446565734.0,
+      "2025-Q2": 105706522181.0,
+      "2025-Q3": 117936453305.0,
+      "2025-Q4": 144731453092.0,
+      "2026-Q1": 48836221743.0,
+      "2026-Q2": 118646967772.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 246.0,
+      "2023": 83.0,
+      "2024": 21.0,
+      "2025": 48.0
+    },
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1920000065536,
+    "enterprise_value": 1827737698304,
+    "shares_outstanding": 3000000000,
+    "free_float_pct": 7.534000000000001
+  },
+  "akumulasi": {
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1111,
+    "vol_trend": 0.436,
+    "price_chg_20d": -0.78
+  },
+  "neraca": {
+    "aset": 3550815818181.0,
+    "aset_lancar": null,
+    "kas": 15585204627.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 44162393238.0,
+    "liabilitas": 2434432885474.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 1116382932707.0,
+    "ekuitas_induk": 1116382932707.0,
+    "modal_saham": null,
+    "saldo_laba": 25000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 130454552494.0,
+    "beban_pajak": -11807584722.0,
+    "laba_bersih": 118646967772.0,
+    "laba_induk": 118646967772.0,
+    "eps_basic": 40.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6501250664.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

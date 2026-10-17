@@ -1,0 +1,128 @@
+{
+  "kode": "JIHD",
+  "nama": "PT Jakarta International Hotels & Development Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 392.0,
+  "update": "2026-10-11 13:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.25929597,
+    "ps": 0.5657475,
+    "roe": 0.004469349491315434,
+    "eps": null,
+    "de": 0.7014579898736513,
+    "margin_net": 0.019986375314201603,
+    "current_ratio": 0.8594662150578184,
+    "roa": 0.0022158084560663428,
+    "bv": 1511.79,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 371345271.0,
+      "2024-Q2": 761064157.0,
+      "2024-Q3": 1174656891.0,
+      "2024-Q4": 1624022798.0,
+      "2025-Q1": 391071119.0,
+      "2025-Q2": 786461351.0,
+      "2025-Q3": 1187629227.0,
+      "2025-Q4": 1612859188.0,
+      "2026-Q1": 386790537.0,
+      "2026-Q2": 787367882.0
+    },
+    "eps": {
+      "2024-Q1": 4885.057210439681,
+      "2024-Q2": 17920.0,
+      "2024-Q3": 29460.0,
+      "2024-Q4": 53030.0,
+      "2025-Q1": 1950.0,
+      "2025-Q2": 13100.0,
+      "2025-Q3": 24050.0,
+      "2025-Q4": -86750.0,
+      "2026-Q1": 1250.0,
+      "2026-Q2": 6760.0
+    },
+    "net_income": {
+      "2024-Q1": 11377496.0,
+      "2024-Q2": 41730708.0,
+      "2024-Q3": 68619678.0,
+      "2024-Q4": 123501043.0,
+      "2025-Q1": 4548551.0,
+      "2025-Q2": 30515282.0,
+      "2025-Q3": 56023396.0,
+      "2025-Q4": -202051242.0,
+      "2026-Q1": 2912702.0,
+      "2026-Q2": 15736630.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1660.0,
+      "2023": 22580.0,
+      "2024": 53030.0,
+      "2025": -86750.0
+    },
+    "revenue_per_share": {
+      "2022": 1266978042.0,
+      "2023": 1465917923.0,
+      "2024": 1624022798.0,
+      "2025": 1612859188.0
+    }
+  },
+  "statistik": {
+    "market_cap": 912983851008,
+    "enterprise_value": 2087186333696,
+    "shares_outstanding": 2329040482,
+    "free_float_pct": 32.98500000052812
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4748,
+    "vol_trend": 0.921,
+    "price_chg_20d": -12.89
+  },
+  "neraca": {
+    "aset": 7101981201.0,
+    "aset_lancar": 836657093.0,
+    "kas": 585978400.0,
+    "piutang_usaha": 32998110.0,
+    "persediaan": 11978887.0,
+    "aset_tetap": 828414400.0,
+    "liabilitas": 2469841499.0,
+    "liabilitas_jangka_pendek": 973461293.0,
+    "utang_usaha": 32998110.0,
+    "utang_bank": 57790875.0,
+    "ekuitas": 3521011286.0,
+    "ekuitas_induk": 3521011286.0,
+    "modal_saham": null,
+    "saldo_laba": 1312305305.0
+  },
+  "laba_rugi": {
+    "pendapatan": 787367882.0,
+    "beban_pokok": 173276980.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 117844614.0,
+    "beban_pajak": -24123157.0,
+    "laba_bersih": 15736630.0,
+    "laba_induk": 15736630.0,
+    "eps_basic": 6760.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 37875005.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

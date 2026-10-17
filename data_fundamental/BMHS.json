@@ -1,0 +1,146 @@
+{
+  "kode": "BMHS",
+  "nama": "PT Bundamedik Tbk",
+  "periode_terbaru": "2025-tw3",
+  "update": "2026-10-09 18:49",
+  "neraca": {
+    "aset": 3635619910537.0,
+    "aset_lancar": 1160524581287.0,
+    "aset_tidak_lancar": 2475095329250.0,
+    "kas": 810679047702.0,
+    "piutang_usaha": 182377922500.0,
+    "persediaan": 37043890064.0,
+    "aset_tetap": 2028990623209.0,
+    "investasi": 6545992254.0,
+    "properti_investasi": 5686273044.0,
+    "goodwill": 94793507471.0,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 1479986395906.0,
+    "liabilitas_jangka_pendek": 593418912019.0,
+    "liabilitas_jangka_panjang": 886567483887.0,
+    "utang_usaha": 182377922500.0,
+    "utang_bank": 442316762934.0,
+    "ekuitas": 1718314353689.0,
+    "ekuitas_induk": 1718314353689.0,
+    "ekuitas_non_pengendali": 437319160942.0,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 556675032353.0,
+    "saldo_laba": 311632807868.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1154892287618.0,
+    "beban_pokok": 616573894514.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "beban_bunga": 50483599355.0,
+    "laba_sebelum_pajak": 26131359627.0,
+    "beban_pajak": -6123794759.0,
+    "laba_bersih": 12248631212.0,
+    "laba_induk": 12248631212.0,
+    "laba_komprehensif": null,
+    "eps_basic": 1.4,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 102645027916.0,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": 0.00712828312567125,
+    "roa": 0.003369062639496551,
+    "der": 0.8613013053919147,
+    "dar": 0.4070795166504076,
+    "current_ratio": 1.955658233638908,
+    "margin_laba_bersih": 0.010605864584361515,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": null,
+    "quick_ratio": 1.8932337147809482
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 413751175478.0,
+      "2024-Q2": 784481313665.0,
+      "2025-Q2": 757799843350.0,
+      "2025-Q3": 1154892287618.0,
+      "2026-Q2": 767544633081.0
+    },
+    "eps": {
+      "2024-Q1": 1.0,
+      "2024-Q2": 1.3,
+      "2025-Q2": 0.5,
+      "2025-Q3": 1.4,
+      "2026-Q2": -1.1
+    },
+    "net_income": {
+      "2024-Q1": 10869955745.0,
+      "2024-Q2": 10963452110.0,
+      "2025-Q2": 3902442748.0,
+      "2025-Q3": 12248631212.0,
+      "2026-Q2": -9604928990.0
+    },
+    "aset": {
+      "2024-Q1": 3139014921285.0,
+      "2024-Q2": 3180765411013.0,
+      "2025-Q2": 3526414841634.0,
+      "2025-Q3": 3635619910537.0,
+      "2026-Q2": 4127237041700.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.0,
+      "2023": 0.9
+    },
+    "revenue": {
+      "2022": 1658687911222.0,
+      "2023": 1287690839110.0
+    },
+    "net_income": {
+      "2022": 83227727173.0,
+      "2023": 7461134368.0
+    },
+    "ekuitas": {
+      "2022": 1596150796616.0,
+      "2023": 1589813147615.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": -985.0,
+    "pb": 0.87263125,
+    "ps": 1.0435861,
+    "roe": 0.00087,
+    "eps": 0.9,
+    "de": 0.6288,
+    "margin_net": -0.00067000004,
+    "current_ratio": 1.713,
+    "roa": 0.0147,
+    "bv": 225.75,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2023",
+    "eps_reliable": true,
+    "eps_period": "2023-audit"
+  },
+  "statistik": {
+    "market_cap": 1694873026560,
+    "enterprise_value": 2789691359232,
+    "shares_outstanding": 8603416176,
+    "free_float_pct": 23.770999997710675
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.209,
+    "vol_trend": 0.57,
+    "price_chg_20d": -1.5
+  },
+  "harga": 197.0,
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "update_bv": "2026-10-11 17:37"
+}

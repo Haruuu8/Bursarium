@@ -1,0 +1,113 @@
+{
+  "kode": "BMBL",
+  "nama": "PT Lavender Bina Cendikia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Education & Training Services",
+  "harga": 31.0,
+  "update": "2026-10-11 11:32",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.47712126,
+    "ps": 2.2116504,
+    "roe": -0.01615728143074283,
+    "eps": 2.13,
+    "de": 0.07277891044071495,
+    "margin_net": -0.14279139877441296,
+    "current_ratio": 4.487099008637329,
+    "roa": -0.015061147523962004,
+    "bv": 64.97,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 7917235800.0,
+      "2024-Q4": 11468835800.0,
+      "2025-Q2": 8031566900.0,
+      "2025-Q4": 14896818050.0,
+      "2026-Q2": 7573068296.0
+    },
+    "eps": {
+      "2024-Q2": 140000.0,
+      "2024-Q4": 8.6,
+      "2025-Q2": 80000.0,
+      "2025-Q4": 2.13,
+      "2026-Q2": 1.05
+    },
+    "net_income": {
+      "2024-Q2": 144087191.0,
+      "2024-Q4": -8857535111.0,
+      "2025-Q2": -79250522.0,
+      "2025-Q4": -2197124924.0,
+      "2026-Q2": -1081369015.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 9.0,
+      "2023": 90000.0,
+      "2024": 8.6,
+      "2025": 2.13
+    },
+    "revenue_per_share": {
+      "2022": 12525312378.0,
+      "2023": 17267332513.0,
+      "2024": 11468835800.0,
+      "2025": 14896818050.0
+    }
+  },
+  "statistik": {
+    "market_cap": 31932512256,
+    "enterprise_value": 33196806144,
+    "shares_outstanding": 1030080995,
+    "free_float_pct": 58.63099998267612
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1584,
+    "vol_trend": 0.644,
+    "price_chg_20d": 3.33
+  },
+  "neraca": {
+    "aset": 71798580638.0,
+    "aset_lancar": 16851166746.0,
+    "kas": 294206421.0,
+    "piutang_usaha": 10454310325.0,
+    "persediaan": 3575900000.0,
+    "aset_tetap": 1335428925.0,
+    "liabilitas": 4870922069.0,
+    "liabilitas_jangka_pendek": 3755470230.0,
+    "utang_usaha": 10454310325.0,
+    "utang_bank": 423084247.0,
+    "ekuitas": 66927658569.0,
+    "ekuitas_induk": 66927658569.0,
+    "modal_saham": null,
+    "saldo_laba": -11475806069.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7573068296.0,
+    "beban_pokok": 3417437939.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1260652869.0,
+    "beban_pajak": 179283854.0,
+    "laba_bersih": -1081369015.0,
+    "laba_induk": -1081369015.0,
+    "eps_basic": 1.05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1335428925.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "CHEM",
+  "nama": "PT Chemstar Indonesia Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 59.0,
+  "update": "2026-10-11 11:18",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8851815,
+    "ps": 0.47513896,
+    "roe": -0.01843855202464015,
+    "eps": 1.09,
+    "de": 0.5881438462966995,
+    "margin_net": -0.021040880015916915,
+    "current_ratio": 2.3612640531326883,
+    "roa": -0.011610127173074367,
+    "bv": 66.65,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 41595358670.0,
+      "2024-Q2": 94263987124.0,
+      "2024-Q3": 129133826094.0,
+      "2024-Q4": 174343695864.0,
+      "2025-Q1": 62325234578.0,
+      "2025-Q2": 106971228302.0,
+      "2025-Q3": 161723435102.0,
+      "2025-Q4": 218773743069.0,
+      "2026-Q1": 44415657116.0,
+      "2026-Q2": 99297694508.0
+    },
+    "eps": {
+      "2024-Q1": 1.31,
+      "2024-Q2": 3.99,
+      "2024-Q3": 3.88,
+      "2024-Q4": 2.49,
+      "2025-Q1": 300000.0,
+      "2025-Q2": 1.21,
+      "2025-Q3": 1.59,
+      "2025-Q4": 1.09,
+      "2026-Q1": -1.53,
+      "2026-Q2": -1.23
+    },
+    "net_income": {
+      "2024-Q1": 2230648776.0,
+      "2024-Q2": 6790150217.0,
+      "2024-Q3": 6595205422.0,
+      "2024-Q4": 4226914778.0,
+      "2025-Q1": 506652073.0,
+      "2025-Q2": 2055792847.0,
+      "2025-Q3": 2703148131.0,
+      "2025-Q4": 1861132512.0,
+      "2026-Q1": -2606840990.0,
+      "2026-Q2": -2089310876.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 4.87,
+      "2023": 360000.0,
+      "2024": 2.49,
+      "2025": 1.09
+    },
+    "revenue_per_share": {
+      "2022": 127523508227.0,
+      "2023": 119655832334.0,
+      "2024": 174343695864.0,
+      "2025": 218773743069.0
+    }
+  },
+  "statistik": {
+    "market_cap": 100301930496,
+    "enterprise_value": 129200750592,
+    "shares_outstanding": 1700032794,
+    "free_float_pct": 29.413000017692596
+  },
+  "akumulasi": {
+    "score": 1.6,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1273,
+    "vol_trend": 2.129,
+    "price_chg_20d": -18.06
+  },
+  "neraca": {
+    "aset": 179955899264.0,
+    "aset_lancar": 142108871993.0,
+    "kas": 8850169210.0,
+    "piutang_usaha": 80991522736.0,
+    "persediaan": 46625764979.0,
+    "aset_tetap": 35104596248.0,
+    "liabilitas": 66643808748.0,
+    "liabilitas_jangka_pendek": 60183388556.0,
+    "utang_usaha": 80991522736.0,
+    "utang_bank": 36486393462.0,
+    "ekuitas": 113312090516.0,
+    "ekuitas_induk": 113312090516.0,
+    "modal_saham": null,
+    "saldo_laba": 4544000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 99297694508.0,
+    "beban_pokok": 81990431721.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2196513299.0,
+    "beban_pajak": 107202423.0,
+    "laba_bersih": -2089310876.0,
+    "laba_induk": -2089310876.0,
+    "eps_basic": -1.23,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 495884725.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

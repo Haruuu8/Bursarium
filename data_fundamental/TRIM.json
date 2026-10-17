@@ -1,0 +1,110 @@
+{
+  "kode": "TRIM",
+  "nama": "PT Trimegah Sekuritas Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 745.0,
+  "update": "2026-10-11 15:15",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.5458317,
+    "pb": 2.26397,
+    "ps": 2.9798808,
+    "roe": 0.11996547025191145,
+    "eps": 98.73,
+    "de": 2.5125173546989084,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 0.034037209887386656,
+    "bv": 329.07,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2024-Q2": 11.73431983458287,
+      "2024-Q3": 21.342163222820812,
+      "2024-Q4": 36.54982797181157,
+      "2025-Q1": 16.105140027850844,
+      "2025-Q2": 22.2334601156232,
+      "2025-Q3": 52.39250235606881,
+      "2025-Q4": 83.47616,
+      "2026-Q1": 19.2673,
+      "2026-Q2": 39.47677
+    },
+    "net_income": {
+      "2024-Q2": 83422800.0,
+      "2024-Q3": 151727841.0,
+      "2024-Q4": 259843692.0,
+      "2025-Q1": 114496272.0,
+      "2025-Q2": 158064338.0,
+      "2025-Q3": 372474008.0,
+      "2025-Q4": 593457069.0,
+      "2026-Q1": 136977034.0,
+      "2026-Q2": 280652180.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 24.97,
+      "2023": 22.852123697129112,
+      "2024": 36.54982797181157,
+      "2025": 83.47616
+    },
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 5296428679168,
+    "enterprise_value": 3165102014464,
+    "shares_outstanding": 7109300000,
+    "free_float_pct": 51.392
+  },
+  "akumulasi": {
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.3556,
+    "vol_trend": 2.188,
+    "price_chg_20d": 4.2
+  },
+  "neraca": {
+    "aset": 8245451990.0,
+    "aset_lancar": null,
+    "kas": 577341557.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 51270630.0,
+    "liabilitas": 5877886957.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": 1020000000.0,
+    "ekuitas": 2339441336.0,
+    "ekuitas_induk": 2339441336.0,
+    "modal_saham": null,
+    "saldo_laba": 13725000.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 360277171.0,
+    "beban_pajak": 5826034.0,
+    "laba_bersih": 280652180.0,
+    "laba_induk": 280652180.0,
+    "eps_basic": 39.47677,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5218051.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

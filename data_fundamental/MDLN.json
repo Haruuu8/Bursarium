@@ -1,0 +1,128 @@
+{
+  "kode": "MDLN",
+  "nama": "PT Modernland Realty Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 43.0,
+  "update": "2026-10-11 14:19",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.16360821,
+    "ps": 0.66024804,
+    "roe": -0.2251965338706454,
+    "eps": 20.23,
+    "de": 3.2509380282234166,
+    "margin_net": -2.5029613077621433,
+    "current_ratio": 0.283515197600014,
+    "roa": -0.052982991293730915,
+    "bv": 262.82,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 182151293544.0,
+      "2024-Q2": 385015461673.0,
+      "2024-Q3": 712248746227.0,
+      "2024-Q4": 1017570122981.0,
+      "2025-Q1": 217396658527.0,
+      "2025-Q2": 517581362078.0,
+      "2025-Q3": 703427229725.0,
+      "2025-Q4": 1013159445954.0,
+      "2026-Q1": 142217764279.0,
+      "2026-Q2": 282515240123.0
+    },
+    "eps": {
+      "2024-Q1": -21.84,
+      "2024-Q2": -49.45,
+      "2024-Q3": -13.39,
+      "2024-Q4": -57.78,
+      "2025-Q1": 63.74,
+      "2025-Q2": 67.55,
+      "2025-Q3": 37.25,
+      "2025-Q4": 20.23,
+      "2026-Q1": -20.13,
+      "2026-Q2": -59.19
+    },
+    "net_income": {
+      "2024-Q1": -270063108643.0,
+      "2024-Q2": -611516107398.0,
+      "2024-Q3": -165540781314.0,
+      "2024-Q4": -690272176510.0,
+      "2025-Q1": 761479777594.0,
+      "2025-Q2": 807032892777.0,
+      "2025-Q3": 445047851908.0,
+      "2025-Q4": 241712905790.0,
+      "2026-Q1": -240513524636.0,
+      "2026-Q2": -707124714881.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.63,
+      "2023": -8.25,
+      "2024": -57.78,
+      "2025": 20.23
+    },
+    "revenue_per_share": {
+      "2022": 1098860308931.0,
+      "2023": 1152307658513.0,
+      "2024": 1017570122981.0,
+      "2025": 1013159445954.0
+    }
+  },
+  "statistik": {
+    "market_cap": 513734606848,
+    "enterprise_value": 7149725941760,
+    "shares_outstanding": 5527940476,
+    "free_float_pct": 16.3801892573056
+  },
+  "akumulasi": {
+    "score": 1.9,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1042,
+    "vol_trend": 7.862,
+    "price_chg_20d": -14.0
+  },
+  "neraca": {
+    "aset": 13346258820322.0,
+    "aset_lancar": 2721167384384.0,
+    "kas": 122382348823.0,
+    "piutang_usaha": 98874598251.0,
+    "persediaan": null,
+    "aset_tetap": 1163632728816.0,
+    "liabilitas": 10208055100989.0,
+    "liabilitas_jangka_pendek": 9597959500651.0,
+    "utang_usaha": 98874598251.0,
+    "utang_bank": 383863597282.0,
+    "ekuitas": 3140033741759.0,
+    "ekuitas_induk": 3140033741759.0,
+    "modal_saham": null,
+    "saldo_laba": 4500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 282515240123.0,
+    "beban_pokok": 148995428490.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -698189186551.0,
+    "beban_pajak": -9224669776.0,
+    "laba_bersih": -707124714881.0,
+    "laba_induk": -707124714881.0,
+    "eps_basic": -59.19,
+    "eps_diluted": -59.19
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11388432996.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

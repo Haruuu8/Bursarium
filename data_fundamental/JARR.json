@@ -1,0 +1,120 @@
+{
+  "kode": "JARR",
+  "nama": "PT Jhonlin Agro Raya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 3110.0,
+  "update": "2026-10-11 11:19",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 107.50086,
+    "pb": 14.240188,
+    "ps": 7.1744204,
+    "roe": 0.07883844938363488,
+    "eps": 28.93,
+    "de": 1.030598581848766,
+    "margin_net": 0.09013314989470081,
+    "current_ratio": 3.9543629071774613,
+    "roa": 0.03882522626005979,
+    "bv": 218.4,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 826998281252.0,
+      "2024-Q3": 2634327293517.0,
+      "2024-Q4": 3864889048543.0,
+      "2025-Q1": 849085467907.0,
+      "2025-Q2": 2040851048147.0,
+      "2025-Q4": 4278884819576.0,
+      "2026-Q1": 776514418419.0,
+      "2026-Q2": 1763316331324.0
+    },
+    "eps": {
+      "2024-Q1": 3.26,
+      "2024-Q3": 16.83,
+      "2024-Q4": 28.25,
+      "2025-Q1": 6.47,
+      "2025-Q2": 17.38,
+      "2025-Q4": 29.09,
+      "2026-Q1": 4.48,
+      "2026-Q2": 17.22
+    },
+    "net_income": {
+      "2024-Q1": 30130959672.0,
+      "2024-Q3": 155346067946.0,
+      "2024-Q4": 260725531457.0,
+      "2025-Q1": 59726086775.0,
+      "2025-Q2": 160391808721.0,
+      "2025-Q4": 268481281878.0,
+      "2026-Q1": 41331460703.0,
+      "2026-Q2": 158933255203.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 5.8,
+      "2024": 28.25,
+      "2025": 29.09
+    },
+    "revenue_per_share": {
+      "2022": 4707542336960.0,
+      "2024": 3864889048543.0,
+      "2025": 4278884819576.0
+    }
+  },
+  "statistik": {
+    "market_cap": 28707366371328,
+    "enterprise_value": 29977546326016,
+    "shares_outstanding": 9230665050,
+    "free_float_pct": 13.294000002740864
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2935,
+    "vol_trend": 1.174,
+    "price_chg_20d": -16.17
+  },
+  "neraca": {
+    "aset": 4093556445452.0,
+    "aset_lancar": 1984827723999.0,
+    "kas": 456938119001.0,
+    "piutang_usaha": 122445426943.0,
+    "persediaan": 546005722253.0,
+    "aset_tetap": 1270743576582.0,
+    "liabilitas": 2077620611534.0,
+    "liabilitas_jangka_pendek": 501933628903.0,
+    "utang_usaha": 122445426943.0,
+    "utang_bank": 165502000000.0,
+    "ekuitas": 2015935833918.0,
+    "ekuitas_induk": 2015935833918.0,
+    "modal_saham": null,
+    "saldo_laba": 676834218572.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1763316331324.0,
+    "beban_pokok": 1412617808272.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 203530354298.0,
+    "beban_pajak": -44597099095.0,
+    "laba_bersih": 158933255203.0,
+    "laba_induk": 158933255203.0,
+    "eps_basic": 17.22,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4826751890.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

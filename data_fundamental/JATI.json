@@ -1,0 +1,126 @@
+{
+  "kode": "JATI",
+  "nama": "PT Informasi Teknologi Indonesia Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 109.0,
+  "update": "2026-10-11 11:42",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.9502944,
+    "ps": 0.3839656,
+    "roe": 0.048088890256525366,
+    "eps": 5.38,
+    "de": 2.54554318363637,
+    "margin_net": 0.015329767230983667,
+    "current_ratio": 1.130554237961332,
+    "roa": 0.013563194062469315,
+    "bv": 55.89,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 130741831460.0,
+      "2024-Q2": 254574728702.0,
+      "2024-Q3": 385973146314.0,
+      "2024-Q4": 534453966633.0,
+      "2025-Q1": 143352382267.0,
+      "2025-Q2": 280768149974.0,
+      "2025-Q3": 452272286863.0,
+      "2025-Q4": 634943344152.0,
+      "2026-Q1": 184437286493.0,
+      "2026-Q2": 571987677300.0
+    },
+    "eps": {
+      "2024-Q1": 70000.0,
+      "2024-Q2": 200000.0,
+      "2024-Q3": 360000.0,
+      "2024-Q4": 1.56,
+      "2025-Q1": 1.68,
+      "2025-Q2": 3.1,
+      "2025-Q3": 4.85,
+      "2025-Q4": 6.38,
+      "2026-Q1": 1.25,
+      "2026-Q2": 2.69
+    },
+    "net_income": {
+      "2024-Q1": 208424834.0,
+      "2024-Q2": 638449044.0,
+      "2024-Q3": 1111047364.0,
+      "2024-Q4": 5078046051.0,
+      "2025-Q1": 5492225045.0,
+      "2025-Q2": 10105322489.0,
+      "2025-Q3": 15829460975.0,
+      "2025-Q4": 20809772692.0,
+      "2026-Q1": 4062083679.0,
+      "2026-Q2": 8768437952.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 880000.0,
+      "2024": 1.56,
+      "2025": 6.38
+    },
+    "revenue_per_share": {
+      "2023": 468953507777.0,
+      "2024": 534453966633.0,
+      "2025": 634943344152.0
+    }
+  },
+  "statistik": {
+    "market_cap": 355614687232,
+    "enterprise_value": 523368169472,
+    "shares_outstanding": 3262520106,
+    "free_float_pct": 19.994993649243735
+  },
+  "akumulasi": {
+    "score": 5.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0887,
+    "vol_trend": 1.735,
+    "price_chg_20d": -1.8
+  },
+  "neraca": {
+    "aset": 646487686574.0,
+    "aset_lancar": 513332114019.0,
+    "kas": 25514616712.0,
+    "piutang_usaha": 367435605312.0,
+    "persediaan": 67566753889.0,
+    "aset_tetap": 41594370627.0,
+    "liabilitas": 464149564292.0,
+    "liabilitas_jangka_pendek": 454053504717.0,
+    "utang_usaha": 367435605312.0,
+    "utang_bank": 193268224040.0,
+    "ekuitas": 182338122282.0,
+    "ekuitas_induk": 182338122282.0,
+    "modal_saham": null,
+    "saldo_laba": 39022393056.0
+  },
+  "laba_rugi": {
+    "pendapatan": 571987677300.0,
+    "beban_pokok": 507099363689.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11664206010.0,
+    "beban_pajak": -2895768058.0,
+    "laba_bersih": 8768437952.0,
+    "laba_induk": 8768437952.0,
+    "eps_basic": 2.69,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1970632750.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

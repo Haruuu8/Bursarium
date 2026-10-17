@@ -1,0 +1,123 @@
+{
+  "kode": "BNBR",
+  "nama": "PT Bakrie & Brothers Tbk",
+  "sektor": "Industrials",
+  "industri": "Conglomerates",
+  "harga": 72.0,
+  "update": "2026-10-11 12:57",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 58.536583,
+    "pb": 3.3654296,
+    "ps": 8.319848,
+    "roe": -0.06059448692619317,
+    "eps": 1.23,
+    "de": 5.325205857539844,
+    "margin_net": -0.08673160158964148,
+    "current_ratio": 1.1836086817773102,
+    "roa": -0.009255682723474894,
+    "bv": 21.39,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 854328.0,
+      "2024-Q2": 1792176.0,
+      "2024-Q3": 2722558.0,
+      "2025-Q1": 953801.0,
+      "2025-Q2": 1777338.0,
+      "2025-Q3": 2654146.0,
+      "2025-Q4": 3742973.0,
+      "2026-Q1": 1135184.0,
+      "2026-Q2": 2592031.0
+    },
+    "eps": {
+      "2024-Q1": 1.6,
+      "2024-Q2": 3.11,
+      "2024-Q3": 14.16,
+      "2025-Q1": 1.38,
+      "2025-Q2": 320000.0,
+      "2025-Q3": 70000.0,
+      "2025-Q4": 2.85,
+      "2026-Q1": 70000.0,
+      "2026-Q2": -1.3
+    },
+    "net_income": {
+      "2024-Q1": 53017.0,
+      "2024-Q2": 139832.0,
+      "2024-Q3": 636272.0,
+      "2025-Q1": 62021.0,
+      "2025-Q2": 55872.0,
+      "2025-Q3": 11658.0,
+      "2025-Q4": 493852.0,
+      "2026-Q1": 12541.0,
+      "2026-Q2": -224811.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 12.173469348480412,
+      "2023": 7.15,
+      "2025": 2.85
+    },
+    "revenue_per_share": {
+      "2022": 3626696.0,
+      "2023": 3759484.0,
+      "2025": 3742973.0
+    }
+  },
+  "statistik": {
+    "market_cap": 37919087656960,
+    "enterprise_value": 29140388413440,
+    "shares_outstanding": 263336671587,
+    "free_float_pct": null
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1467,
+    "vol_trend": 0.537,
+    "price_chg_20d": -24.21
+  },
+  "neraca": {
+    "aset": 24288970.0,
+    "aset_lancar": 5125776.0,
+    "kas": 203147.0,
+    "piutang_usaha": 1135367.0,
+    "persediaan": 903247.0,
+    "aset_tetap": 2110822.0,
+    "liabilitas": 19756993.0,
+    "liabilitas_jangka_pendek": 4330634.0,
+    "utang_usaha": 1135367.0,
+    "utang_bank": 1934250.0,
+    "ekuitas": 3710090.0,
+    "ekuitas_induk": 3710090.0,
+    "modal_saham": null,
+    "saldo_laba": 596631.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2592031.0,
+    "beban_pokok": 1942052.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -195543.0,
+    "beban_pajak": 22713.0,
+    "laba_bersih": -224811.0,
+    "laba_induk": -224811.0,
+    "eps_basic": -1.3,
+    "eps_diluted": -1.3
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 124639.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

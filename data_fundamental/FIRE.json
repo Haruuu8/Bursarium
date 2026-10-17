@@ -1,0 +1,118 @@
+{
+  "kode": "FIRE",
+  "nama": "PT Alfa Energi Investama Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 107.0,
+  "update": "2026-10-11 15:42",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 21.357285,
+    "pb": 0.65300846,
+    "ps": 0.6755482,
+    "roe": 0.007740100435902578,
+    "eps": 5.01,
+    "de": 0.4368829348059673,
+    "margin_net": 0.017647244569544012,
+    "current_ratio": 0.8748013956303408,
+    "roa": 0.005386462681538836,
+    "bv": 163.86,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 162172744801.0,
+      "2024-Q2": 224337989169.0,
+      "2025-Q1": 99325482373.0,
+      "2025-Q2": 183878456424.0,
+      "2025-Q3": 230389292558.0,
+      "2025-Q4": 311529632651.0,
+      "2026-Q1": 48398709373.0,
+      "2026-Q2": 106031441318.0
+    },
+    "eps": {
+      "2024-Q1": 10.74,
+      "2024-Q2": 12.54,
+      "2025-Q1": 3.04,
+      "2025-Q2": -3.7,
+      "2025-Q3": -5.65,
+      "2025-Q4": 40000.0,
+      "2026-Q1": 330000.0,
+      "2026-Q2": 1.27
+    },
+    "net_income": {
+      "2024-Q1": 15803634241.0,
+      "2024-Q2": 18446916765.0,
+      "2025-Q1": 4484326123.0,
+      "2025-Q2": -5452863723.0,
+      "2025-Q3": -8338262707.0,
+      "2025-Q4": 58463596.0,
+      "2026-Q1": 485343264.0,
+      "2026-Q2": 1871162777.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -64.31,
+      "2025": 40000.0
+    },
+    "revenue_per_share": {
+      "2022": 250181705309.0,
+      "2025": 311529632651.0
+    }
+  },
+  "statistik": {
+    "market_cap": 157863870464,
+    "enterprise_value": 165190057984,
+    "shares_outstanding": 1475363179,
+    "free_float_pct": 63.89199997785766
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.324,
+    "vol_trend": 0.274,
+    "price_chg_20d": -12.3
+  },
+  "neraca": {
+    "aset": 347382482276.0,
+    "aset_lancar": 73776334339.0,
+    "kas": 9936684960.0,
+    "piutang_usaha": 18927935300.0,
+    "persediaan": 9385396885.0,
+    "aset_tetap": 94643394774.0,
+    "liabilitas": 105616082412.0,
+    "liabilitas_jangka_pendek": 84334952719.0,
+    "utang_usaha": 18927935300.0,
+    "utang_bank": 14189215778.0,
+    "ekuitas": 241749159781.0,
+    "ekuitas_induk": 241749159781.0,
+    "modal_saham": null,
+    "saldo_laba": -106888825292.0
+  },
+  "laba_rugi": {
+    "pendapatan": 106031441318.0,
+    "beban_pokok": 86537034653.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3065231406.0,
+    "beban_pajak": -1191105596.0,
+    "laba_bersih": 1871162777.0,
+    "laba_induk": 1871162777.0,
+    "eps_basic": 1.27,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1816139702.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

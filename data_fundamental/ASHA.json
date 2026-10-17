@@ -1,0 +1,125 @@
+{
+  "kode": "ASHA",
+  "nama": "PT Cilacap Samudera Fishing Industry Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 44.0,
+  "update": "2026-10-11 11:15",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.0308316,
+    "ps": 0.9366709,
+    "roe": 0.0028066360095043894,
+    "eps": 6.18,
+    "de": 0.15857456499713235,
+    "margin_net": 0.002538756659894492,
+    "current_ratio": 4.927060093018485,
+    "roa": 0.0024225234897350756,
+    "bv": 21.67,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 105494939233.0,
+      "2024-Q3": 173949702658.0,
+      "2024-Q4": 263480469443.0,
+      "2025-Q1": 22561277236.0,
+      "2025-Q2": 55390092161.0,
+      "2025-Q3": 110789182673.0,
+      "2025-Q4": 170506180539.0,
+      "2026-Q1": 41221969942.0,
+      "2026-Q2": 119758289482.0
+    },
+    "eps": {
+      "2024-Q2": 180000.0,
+      "2024-Q3": 170000.0,
+      "2024-Q4": 6.18,
+      "2025-Q1": -850000.0,
+      "2025-Q2": -570000.0,
+      "2025-Q3": -1.35,
+      "2025-Q4": -3.91,
+      "2026-Q1": -790000.0,
+      "2026-Q2": 60000.0
+    },
+    "net_income": {
+      "2024-Q2": 899161834.0,
+      "2024-Q3": 873723374.0,
+      "2024-Q4": -30894423139.0,
+      "2025-Q1": -4268392056.0,
+      "2025-Q2": -2840368768.0,
+      "2025-Q3": -6752043460.0,
+      "2025-Q4": -19566532323.0,
+      "2026-Q1": -3943284386.0,
+      "2026-Q2": 304037155.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 4.06,
+      "2023": 4.13,
+      "2024": 6.18,
+      "2025": -3.91
+    },
+    "revenue_per_share": {
+      "2022": 449623068624.0,
+      "2023": 404353571310.0,
+      "2024": 263480469443.0,
+      "2025": 170506180539.0
+    }
+  },
+  "statistik": {
+    "market_cap": 219999993856,
+    "enterprise_value": 221030924288,
+    "shares_outstanding": 5000000000,
+    "free_float_pct": 44.5
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2894,
+    "vol_trend": 1.168,
+    "price_chg_20d": -22.81
+  },
+  "neraca": {
+    "aset": 125504316589.0,
+    "aset_lancar": 69521798698.0,
+    "kas": 2284287568.0,
+    "piutang_usaha": 29503434025.0,
+    "persediaan": 37524952072.0,
+    "aset_tetap": 49715401574.0,
+    "liabilitas": 17178059226.0,
+    "liabilitas_jangka_pendek": 14110199061.0,
+    "utang_usaha": 29503434025.0,
+    "utang_bank": null,
+    "ekuitas": 108327960580.0,
+    "ekuitas_induk": 108327960580.0,
+    "modal_saham": null,
+    "saldo_laba": -50396695541.0
+  },
+  "laba_rugi": {
+    "pendapatan": 119758289482.0,
+    "beban_pokok": 106081562393.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 770310908.0,
+    "beban_pajak": -466357760.0,
+    "laba_bersih": 304037155.0,
+    "laba_induk": 304037155.0,
+    "eps_basic": 60000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 27051450.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

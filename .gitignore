@@ -1,0 +1,27 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Secrets & Config (JANGAN UPLOAD)
+config.yaml
+.env
+.streamlit/secrets.toml
+data_registrations/
+
+# Data Besar (Tidak perlu di Cloud)
+data_ohlcv_idx/
+data_idx_news/
+failed_update.txt
+
+# Backup
+pages_backup_*/
+pages_broken_*/
+*.log
+ohlcv_idx_2026_all.csv
+
+ohlcv_idx_2026_all.csv

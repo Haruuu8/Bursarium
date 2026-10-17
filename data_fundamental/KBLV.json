@@ -1,0 +1,126 @@
+{
+  "kode": "KBLV",
+  "nama": "PT First Media Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 103.0,
+  "update": "2026-10-11 14:03",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.11877183,
+    "ps": 161.36987,
+    "roe": -0.003470291708365766,
+    "eps": 36.0,
+    "de": 0.9341200563401164,
+    "margin_net": null,
+    "current_ratio": 0.19792611600318752,
+    "roa": -0.002577154895709526,
+    "bv": 867.21,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 11069.0,
+      "2024-Q2": 13148.0,
+      "2024-Q3": 27277.0,
+      "2024-Q4": 28572.0,
+      "2025-Q1": 11069.0,
+      "2025-Q2": 13148.0,
+      "2025-Q3": 1428.0,
+      "2025-Q4": 1694.0
+    },
+    "eps": {
+      "2024-Q1": -5.0,
+      "2024-Q2": -11.0,
+      "2024-Q3": 11.0,
+      "2024-Q4": 36.0,
+      "2025-Q1": -3.0,
+      "2025-Q2": -1.0,
+      "2025-Q3": -3.0,
+      "2025-Q4": -1.0,
+      "2026-Q1": -1.0,
+      "2026-Q2": -3.0
+    },
+    "net_income": {
+      "2024-Q1": -8462.0,
+      "2024-Q2": -19378.0,
+      "2024-Q3": 18518.0,
+      "2024-Q4": 63496.0,
+      "2025-Q1": -5719.0,
+      "2025-Q2": -1867.0,
+      "2025-Q3": -5932.0,
+      "2025-Q4": -1041.0,
+      "2026-Q1": -2138.0,
+      "2026-Q2": -5243.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -156.0,
+      "2023": -46.0,
+      "2024": 36.0,
+      "2025": -1.0
+    },
+    "revenue_per_share": {
+      "2022": 140413.0,
+      "2023": 113520.0,
+      "2024": 28572.0,
+      "2025": 1694.0
+    }
+  },
+  "statistik": {
+    "market_cap": 179443302400,
+    "enterprise_value": -968414724096,
+    "shares_outstanding": 1742167907,
+    "free_float_pct": 54.21299997578247
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.173,
+    "vol_trend": 0.327,
+    "price_chg_20d": -19.53
+  },
+  "neraca": {
+    "aset": 2034414.0,
+    "aset_lancar": 276444.0,
+    "kas": 210157.0,
+    "piutang_usaha": 132780.0,
+    "persediaan": null,
+    "aset_tetap": null,
+    "liabilitas": 1411291.0,
+    "liabilitas_jangka_pendek": 1396703.0,
+    "utang_usaha": 1353526.0,
+    "utang_bank": null,
+    "ekuitas": 1510824.0,
+    "ekuitas_induk": 1510824.0,
+    "modal_saham": null,
+    "saldo_laba": -722992.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -13076.0,
+    "beban_pajak": null,
+    "laba_bersih": -5243.0,
+    "laba_induk": -5243.0,
+    "eps_basic": -3.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

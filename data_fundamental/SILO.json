@@ -1,0 +1,122 @@
+{
+  "kode": "SILO",
+  "nama": "PT Siloam International Hospitals Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 1905.0,
+  "update": "2026-10-11 14:57",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 20.010506,
+    "pb": 2.4065428,
+    "ps": 1.8319466,
+    "roe": 0.05648020262305032,
+    "eps": 95.2,
+    "de": 0.5144741449408432,
+    "margin_net": 0.08585653456198578,
+    "current_ratio": 0.7217078231619433,
+    "roa": 0.036676504215939154,
+    "bv": 791.59,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 9123173.0,
+      "2024-Q4": 12207563.0,
+      "2025-Q1": 3036971.0,
+      "2025-Q2": 6104948.0,
+      "2025-Q3": 9425533.0,
+      "2025-Q4": 12847434.0,
+      "2026-Q1": 3277776.0,
+      "2026-Q2": 6763399.0
+    },
+    "eps": {
+      "2024-Q3": 48.9,
+      "2024-Q4": 69.49,
+      "2025-Q1": 18.93,
+      "2025-Q2": 35.18,
+      "2025-Q3": 58.630988649670854,
+      "2025-Q4": 85.68,
+      "2026-Q1": 21.56,
+      "2026-Q2": 44.71002317531148
+    },
+    "net_income": {
+      "2024-Q3": 634880.0,
+      "2024-Q4": 902152.0,
+      "2025-Q1": 245982.0,
+      "2025-Q2": 456823.0,
+      "2025-Q3": 761342.0,
+      "2025-Q4": 1112663.0,
+      "2026-Q1": 279968.0,
+      "2026-Q2": 580682.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 70.74,
+      "2023": 93.27,
+      "2024": 69.49,
+      "2025": 85.68
+    },
+    "revenue_per_share": {
+      "2022": 9518012.0,
+      "2023": 11190511.0,
+      "2024": 12207563.0,
+      "2025": 12847434.0
+    }
+  },
+  "statistik": {
+    "market_cap": 24742060883968,
+    "enterprise_value": 26227423313920,
+    "shares_outstanding": 12987957905,
+    "free_float_pct": 15.143000003432796
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2052,
+    "vol_trend": 3.792,
+    "price_chg_20d": -5.22
+  },
+  "neraca": {
+    "aset": 15832534.0,
+    "aset_lancar": 3596776.0,
+    "kas": 1226974.0,
+    "piutang_usaha": 1879009.0,
+    "persediaan": 208570.0,
+    "aset_tetap": 9070168.0,
+    "liabilitas": 5289391.0,
+    "liabilitas_jangka_pendek": 4983701.0,
+    "utang_usaha": 1879009.0,
+    "utang_bank": 2081181.0,
+    "ekuitas": 10281160.0,
+    "ekuitas_induk": 10281160.0,
+    "modal_saham": null,
+    "saldo_laba": 33515.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6763399.0,
+    "beban_pokok": 4182807.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 805432.0,
+    "beban_pajak": -195979.0,
+    "laba_bersih": 580682.0,
+    "laba_induk": 580682.0,
+    "eps_basic": 44.71002317531148,
+    "eps_diluted": 44.70068259797714
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 48860.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

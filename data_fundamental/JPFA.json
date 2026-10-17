@@ -1,0 +1,127 @@
+{
+  "kode": "JPFA",
+  "nama": "PT Japfa Comfeed Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 2040.0,
+  "update": "2026-10-11 13:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.54343,
+    "pb": 1.204576,
+    "ps": 0.34812897,
+    "roe": 0.12487793031562713,
+    "eps": 449.0,
+    "de": 1.2012030251791204,
+    "margin_net": 0.07001578582930844,
+    "current_ratio": 1.4932188724133055,
+    "roa": 0.05483242357116156,
+    "bv": 1693.54,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 13925495.0,
+      "2024-Q2": 27648515.0,
+      "2024-Q3": 41279935.0,
+      "2024-Q4": 55800849.0,
+      "2025-Q1": 14332271.0,
+      "2025-Q2": 27481591.0,
+      "2025-Q3": 43104381.0,
+      "2025-Q4": 60715806.0,
+      "2026-Q1": 17714001.0,
+      "2026-Q2": 35355127.0
+    },
+    "eps": {
+      "2024-Q1": 57.0,
+      "2024-Q2": 127.0,
+      "2024-Q3": 180.0,
+      "2024-Q4": 260.0,
+      "2025-Q1": 59.0,
+      "2025-Q2": 106.0,
+      "2025-Q3": 207.0,
+      "2025-Q4": 340.0,
+      "2026-Q1": 160.0,
+      "2026-Q2": 210.0
+    },
+    "net_income": {
+      "2024-Q1": 664823.0,
+      "2024-Q2": 1479292.0,
+      "2024-Q3": 2095915.0,
+      "2024-Q4": 3018892.0,
+      "2025-Q1": 680417.0,
+      "2025-Q2": 1236264.0,
+      "2025-Q3": 2411411.0,
+      "2025-Q4": 4004000.0,
+      "2026-Q1": 1816410.0,
+      "2026-Q2": 2475417.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 122.0,
+      "2023": 80.0,
+      "2024": 260.0,
+      "2025": 340.0
+    },
+    "revenue_per_share": {
+      "2022": 48972085.0,
+      "2024": 55800849.0,
+      "2025": 60715806.0
+    }
+  },
+  "statistik": {
+    "market_cap": 23877935693824,
+    "enterprise_value": 39054015987712,
+    "shares_outstanding": 8793280701,
+    "free_float_pct": 57.48554644030804
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2675,
+    "vol_trend": 0.631,
+    "price_chg_20d": -9.33
+  },
+  "neraca": {
+    "aset": 45145132.0,
+    "aset_lancar": 24480974.0,
+    "kas": 2596987.0,
+    "piutang_usaha": 3700266.0,
+    "persediaan": 2099548.0,
+    "aset_tetap": 697052.0,
+    "liabilitas": 23811080.0,
+    "liabilitas_jangka_pendek": 16394766.0,
+    "utang_usaha": 3700266.0,
+    "utang_bank": 9048827.0,
+    "ekuitas": 19822694.0,
+    "ekuitas_induk": 19822694.0,
+    "modal_saham": null,
+    "saldo_laba": 381000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 35355127.0,
+    "beban_pokok": 27729938.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3420235.0,
+    "beban_pajak": -735891.0,
+    "laba_bersih": 2475417.0,
+    "laba_induk": 2475417.0,
+    "eps_basic": 210.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 697052.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

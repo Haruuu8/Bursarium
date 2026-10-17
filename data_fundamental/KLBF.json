@@ -1,0 +1,128 @@
+{
+  "kode": "KLBF",
+  "nama": "PT Kalbe Farma Tbk.",
+  "sektor": "Healthcare",
+  "industri": "Drug Manufacturers - General",
+  "harga": 785.0,
+  "update": "2026-10-11 14:04",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.885405,
+    "pb": 1.4599953,
+    "ps": 0.9415837,
+    "roe": 0.07889574734065444,
+    "eps": 79.41,
+    "de": 0.30062880239002615,
+    "margin_net": 0.09854109648501574,
+    "current_ratio": 3.153238520252332,
+    "roa": 0.058028215527990756,
+    "bv": 537.67,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 8363028651272.0,
+      "2024-Q2": 16328251670616.0,
+      "2024-Q3": 24238762731250.0,
+      "2024-Q4": 32627776108026.0,
+      "2025-Q1": 8845368157355.0,
+      "2025-Q2": 17079294370143.0,
+      "2025-Q3": 25988296571671.0,
+      "2025-Q4": 35324544.0,
+      "2026-Q1": 9678361.0,
+      "2026-Q2": 19478807.0
+    },
+    "eps": {
+      "2024-Q1": 20.7,
+      "2024-Q2": 38.93,
+      "2024-Q3": 51.34,
+      "2024-Q4": 70.16,
+      "2025-Q1": 23.57,
+      "2025-Q2": 43.35,
+      "2025-Q3": 57.79,
+      "2025-Q4": 80.51,
+      "2026-Q1": 22.74,
+      "2026-Q2": 42.419999999999995
+    },
+    "net_income": {
+      "2024-Q1": 957560071712.0,
+      "2024-Q2": 1805095883934.0,
+      "2024-Q3": 2378379096789.0,
+      "2024-Q4": 3240636626331.0,
+      "2025-Q1": 1076772395269.0,
+      "2025-Q2": 1974937979137.0,
+      "2025-Q3": 2631345328770.0,
+      "2025-Q4": 3664998.0,
+      "2026-Q1": 1028927.0,
+      "2026-Q2": 1919463.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 72.71,
+      "2023": 59.81,
+      "2024": 70.16,
+      "2025": 80.51
+    },
+    "revenue_per_share": {
+      "2022": 28933502646719.0,
+      "2023": 30449134077618.0,
+      "2024": 32627776108026.0,
+      "2025": 35324544.0
+    }
+  },
+  "statistik": {
+    "market_cap": 35520356810752,
+    "enterprise_value": 32796561113088,
+    "shares_outstanding": 45248860110,
+    "free_float_pct": 39.75000000060775
+  },
+  "akumulasi": {
+    "score": 6.4,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0602,
+    "vol_trend": 0.654,
+    "price_chg_20d": 6.8
+  },
+  "neraca": {
+    "aset": 33078098.0,
+    "aset_lancar": 20983437.0,
+    "kas": 4831831.0,
+    "piutang_usaha": 6517185.0,
+    "persediaan": 7923721.0,
+    "aset_tetap": 8267430.0,
+    "liabilitas": 7314030.0,
+    "liabilitas_jangka_pendek": 6654567.0,
+    "utang_usaha": 6517185.0,
+    "utang_bank": 628050.0,
+    "ekuitas": 24329106.0,
+    "ekuitas_induk": 24329106.0,
+    "modal_saham": null,
+    "saldo_laba": 404093.0
+  },
+  "laba_rugi": {
+    "pendapatan": 19478807.0,
+    "beban_pokok": 12161831.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2534378.0,
+    "beban_pajak": -561921.0,
+    "laba_bersih": 1919463.0,
+    "laba_induk": 1919463.0,
+    "eps_basic": 42.419999999999995,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 393725.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

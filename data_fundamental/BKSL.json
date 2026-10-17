@@ -1,0 +1,123 @@
+{
+  "kode": "BKSL",
+  "nama": "PT Sentul City Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 56.0,
+  "update": "2026-10-11 12:52",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.37037,
+    "pb": 0.61269814,
+    "ps": 3.1117902,
+    "roe": 0.005860839842722284,
+    "eps": 5.4,
+    "de": 0.37444512968955845,
+    "margin_net": 0.12069937357384318,
+    "current_ratio": 2.116454848981655,
+    "roa": 0.004117081907385835,
+    "bv": 91.4,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 81732860453.0,
+      "2024-Q2": 235660378423.0,
+      "2024-Q3": 426429934292.0,
+      "2025-Q1": 278747314532.0,
+      "2025-Q2": 483668654455.0,
+      "2025-Q3": 836979819540.0,
+      "2025-Q4": 2757463756020.0,
+      "2026-Q1": 360443961054.0,
+      "2026-Q2": 744306509752.0
+    },
+    "eps": {
+      "2024-Q1": -640000.0,
+      "2024-Q2": 440000.0,
+      "2024-Q3": 160000.0,
+      "2025-Q1": 10000.0,
+      "2025-Q2": 90000.0,
+      "2025-Q3": 430000.0,
+      "2025-Q4": 4.95,
+      "2026-Q1": 210000.0,
+      "2026-Q2": 540000.0
+    },
+    "net_income": {
+      "2024-Q1": -108066478287.0,
+      "2024-Q2": 73304167997.0,
+      "2024-Q3": 27524931394.0,
+      "2025-Q1": 842319053.0,
+      "2025-Q2": 14581716852.0,
+      "2025-Q3": 71946385717.0,
+      "2025-Q4": 830294981798.0,
+      "2026-Q1": 34659376390.0,
+      "2026-Q2": 89837329474.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -2.43,
+      "2023": 2.2,
+      "2025": 4.95
+    },
+    "revenue_per_share": {
+      "2022": 672300266688.0,
+      "2023": 1720160600872.0,
+      "2025": 2757463756020.0
+    }
+  },
+  "statistik": {
+    "market_cap": 9391698870272,
+    "enterprise_value": 12855320510464,
+    "shares_outstanding": 357500000,
+    "free_float_pct": null
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1532,
+    "vol_trend": 0.728,
+    "price_chg_20d": -21.13
+  },
+  "neraca": {
+    "aset": 21820632062927.0,
+    "aset_lancar": 5221257059341.0,
+    "kas": 234834974477.0,
+    "piutang_usaha": 421269486502.0,
+    "persediaan": null,
+    "aset_tetap": 3750777050588.0,
+    "liabilitas": 5739646772233.0,
+    "liabilitas_jangka_pendek": 2466982492848.0,
+    "utang_usaha": 421269486502.0,
+    "utang_bank": 500000000000.0,
+    "ekuitas": 15328405464885.0,
+    "ekuitas_induk": 15328405464885.0,
+    "modal_saham": null,
+    "saldo_laba": 23700000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 744306509752.0,
+    "beban_pokok": 352244515674.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 88241725287.0,
+    "beban_pajak": null,
+    "laba_bersih": 89837329474.0,
+    "laba_induk": 89837329474.0,
+    "eps_basic": 540000.0,
+    "eps_diluted": 540000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3750777050588.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "IDPR",
+  "nama": "PT Indonesia Pondasi Raya Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 238.0,
+  "update": "2026-10-11 15:34",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 14.810205,
+    "pb": 0.6849335,
+    "ps": 0.3081672,
+    "roe": 0.012291966077844186,
+    "eps": 16.07,
+    "de": 1.6271724623470414,
+    "margin_net": 0.009577375876152079,
+    "current_ratio": 1.2004301262134376,
+    "roa": 0.004656040648688217,
+    "bv": 347.48,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 259249129859.0,
+      "2024-Q2": 510835510418.0,
+      "2024-Q3": 784652616462.0,
+      "2024-Q4": 1115261513273.0,
+      "2025-Q1": 288832130800.0,
+      "2025-Q2": 567503650231.0,
+      "2025-Q3": 885482396314.0,
+      "2025-Q4": 1221164136092.0,
+      "2026-Q1": 400930952047.0,
+      "2026-Q2": 893272505395.0
+    },
+    "eps": {
+      "2024-Q1": 230000.0,
+      "2024-Q2": 400000.0,
+      "2024-Q3": 870000.0,
+      "2024-Q4": 12.0,
+      "2025-Q1": 530000.0,
+      "2025-Q2": 1.2,
+      "2025-Q3": 1.06,
+      "2025-Q4": 13.0,
+      "2026-Q1": 2.46,
+      "2026-Q2": 4.27
+    },
+    "net_income": {
+      "2024-Q1": 460455542.0,
+      "2024-Q2": -799143610.0,
+      "2024-Q3": 1747457615.0,
+      "2024-Q4": 23229973108.0,
+      "2025-Q1": 1063638304.0,
+      "2025-Q2": 2405432628.0,
+      "2025-Q3": 2131409788.0,
+      "2025-Q4": 26069864362.0,
+      "2026-Q1": 4685486363.0,
+      "2026-Q2": 8555206544.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -4.0,
+      "2023": 19.0,
+      "2024": 12.0,
+      "2025": 13.0
+    },
+    "revenue_per_share": {
+      "2022": 1060124902677.0,
+      "2023": 1289582924477.0,
+      "2024": 1115261513273.0,
+      "2025": 1221164136092.0
+    }
+  },
+  "statistik": {
+    "market_cap": 476714008576,
+    "enterprise_value": 980996587520,
+    "shares_outstanding": 2003000000,
+    "free_float_pct": 9.26
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5039,
+    "vol_trend": 1.048,
+    "price_chg_20d": -14.39
+  },
+  "neraca": {
+    "aset": 1837442408586.0,
+    "aset_lancar": 1242127434314.0,
+    "kas": 7893651437.0,
+    "piutang_usaha": 241308607672.0,
+    "persediaan": 242725331792.0,
+    "aset_tetap": 501973268931.0,
+    "liabilitas": 1132511789402.0,
+    "liabilitas_jangka_pendek": 1034735306279.0,
+    "utang_usaha": 241308607672.0,
+    "utang_bank": 2900000052.0,
+    "ekuitas": 695999849806.0,
+    "ekuitas_induk": 695999849806.0,
+    "modal_saham": null,
+    "saldo_laba": 40600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 893272505395.0,
+    "beban_pokok": 803817114454.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11408340918.0,
+    "beban_pajak": -1411493397.0,
+    "laba_bersih": 8555206544.0,
+    "laba_induk": 8555206544.0,
+    "eps_basic": 4.27,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4900608440.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "JRPT",
+  "nama": "PT Jaya Real Property, Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 1155.0,
+  "update": "2026-10-11 13:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.733203,
+    "pb": 1.352049,
+    "ps": 4.269774,
+    "roe": 0.06088520291224924,
+    "eps": 107.61,
+    "de": 0.4093078499195243,
+    "margin_net": 0.4004505738569996,
+    "current_ratio": 1.25864350650468,
+    "roa": 0.04227347122153065,
+    "bv": 854.26,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 569729894.0,
+      "2024-Q2": 1293170398.0,
+      "2024-Q3": 2048897389.0,
+      "2024-Q4": 2948078235.0,
+      "2025-Q1": 641621515.0,
+      "2025-Q2": 1472097267.0,
+      "2025-Q3": 2265078910.0,
+      "2025-Q4": 3275283177.0,
+      "2026-Q1": 733724631.0,
+      "2026-Q2": 1665468576.0
+    },
+    "eps": {
+      "2024-Q1": 17.35,
+      "2024-Q2": 39330.0,
+      "2024-Q3": 60840.0,
+      "2024-Q4": 87570.0,
+      "2025-Q1": 18910.0,
+      "2025-Q2": 45.0,
+      "2025-Q3": 70.07,
+      "2025-Q4": 101.14,
+      "2026-Q1": 22.0,
+      "2026-Q2": 52.0
+    },
+    "net_income": {
+      "2024-Q1": 224025774.0,
+      "2024-Q2": 507719230.0,
+      "2024-Q3": 785511044.0,
+      "2024-Q4": 1130540838.0,
+      "2025-Q1": 244090320.0,
+      "2025-Q2": 584908772.0,
+      "2025-Q3": 903105540.0,
+      "2025-Q4": 1303160976.0,
+      "2026-Q1": 285343795.0,
+      "2026-Q2": 666937847.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 64.93,
+      "2023": 77.4,
+      "2024": 87570.0,
+      "2025": 101.14
+    },
+    "revenue_per_share": {
+      "2022": 2258974450.0,
+      "2023": 2503645371000.0,
+      "2024": 2948078235.0,
+      "2025": 3275283177.0
+    }
+  },
+  "statistik": {
+    "market_cap": 14810371588096,
+    "enterprise_value": 13385744777216,
+    "shares_outstanding": 12822832300,
+    "free_float_pct": 31.808999997605834
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.6809,
+    "vol_trend": 1.177,
+    "price_chg_20d": 3.59
+  },
+  "neraca": {
+    "aset": 15776746686.0,
+    "aset_lancar": 5374911896.0,
+    "kas": 1769993551.0,
+    "piutang_usaha": 32321791.0,
+    "persediaan": 652059875.0,
+    "aset_tetap": 1500000.0,
+    "liabilitas": 4483567158.0,
+    "liabilitas_jangka_pendek": 4270400529.0,
+    "utang_usaha": 32321791.0,
+    "utang_bank": null,
+    "ekuitas": 10954021915.0,
+    "ekuitas_induk": 10954021915.0,
+    "modal_saham": null,
+    "saldo_laba": 55000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1665468576.0,
+    "beban_pokok": 749371210.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 691952019.0,
+    "beban_pajak": -14842730.0,
+    "laba_bersih": 666937847.0,
+    "laba_induk": 666937847.0,
+    "eps_basic": 52.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1500000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

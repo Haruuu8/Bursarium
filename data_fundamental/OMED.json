@@ -1,0 +1,125 @@
+{
+  "kode": "OMED",
+  "nama": "PT Jayamas Medica Industri Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Instruments & Supplies",
+  "harga": 226.0,
+  "update": "2026-10-11 11:27",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.4925375,
+    "pb": 2.1572297,
+    "ps": 2.6483555,
+    "roe": 0.07755482507294381,
+    "eps": 16.75,
+    "de": 0.19326171754135424,
+    "margin_net": 0.18807158085758696,
+    "current_ratio": 8.293258114740386,
+    "roa": 0.06430706651896194,
+    "bv": 104.76,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 427388438715.0,
+      "2024-Q2": 879648060816.0,
+      "2024-Q3": 1364495028819.0,
+      "2024-Q4": 1885822041124.0,
+      "2025-Q2": 925846133453.0,
+      "2025-Q3": 1469894209428.0,
+      "2025-Q4": 2063816900533.0,
+      "2026-Q1": 572248285974.0,
+      "2026-Q2": 1166793476741.0
+    },
+    "eps": {
+      "2024-Q1": 2.34,
+      "2024-Q2": 5.32,
+      "2024-Q3": 7.8,
+      "2024-Q4": 11.9,
+      "2025-Q2": 5.68,
+      "2025-Q3": 9.4,
+      "2025-Q4": 13.57,
+      "2026-Q1": 3.64,
+      "2026-Q2": 8.12
+    },
+    "net_income": {
+      "2024-Q1": 63460534161.0,
+      "2024-Q2": 143948846175.0,
+      "2024-Q3": 210926480482.0,
+      "2024-Q4": 321673462325.0,
+      "2025-Q2": 153731315812.0,
+      "2025-Q3": 254208486630.0,
+      "2025-Q4": 366948755823.0,
+      "2026-Q1": 98369588296.0,
+      "2026-Q2": 219440693705.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.5615,
+      "2023": 9.59,
+      "2024": 11.9,
+      "2025": 13.57
+    },
+    "revenue_per_share": {
+      "2022": 1739054461606.0,
+      "2023": 1736989809989.0,
+      "2024": 1885822041124.0,
+      "2025": 2063816900533.0
+    }
+  },
+  "statistik": {
+    "market_cap": 6103835344896,
+    "enterprise_value": 4984262361088,
+    "shares_outstanding": 27008119900,
+    "free_float_pct": 14.623999999348344
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2219,
+    "vol_trend": 0.216,
+    "price_chg_20d": 5.61
+  },
+  "neraca": {
+    "aset": 3412388491400.0,
+    "aset_lancar": 2535879888981.0,
+    "kas": 1264486619840.0,
+    "piutang_usaha": 322836237733.0,
+    "persediaan": 735799734853.0,
+    "aset_tetap": 14114414109.0,
+    "liabilitas": 546832325700.0,
+    "liabilitas_jangka_pendek": 305776071828.0,
+    "utang_usaha": 322836237733.0,
+    "utang_bank": 3333333335.0,
+    "ekuitas": 2829491182510.0,
+    "ekuitas_induk": 2829491182510.0,
+    "modal_saham": null,
+    "saldo_laba": 120000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1166793476741.0,
+    "beban_pokok": 747472268784.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 280553007553.0,
+    "beban_pajak": -59056679200.0,
+    "laba_bersih": 219440693705.0,
+    "laba_induk": 219440693705.0,
+    "eps_basic": 8.12,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14114414109.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

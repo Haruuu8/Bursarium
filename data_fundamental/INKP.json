@@ -1,0 +1,128 @@
+{
+  "kode": "INKP",
+  "nama": "PT Indah Kiat Pulp & Paper Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Paper & Paper Products",
+  "harga": 8275.0,
+  "update": "2026-10-11 13:48",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.054107,
+    "pb": 6292.7754,
+    "ps": 13685.777,
+    "roe": 0.0517687193912389,
+    "eps": 2041.14,
+    "de": 0.8421140958493676,
+    "margin_net": 0.21896741335811196,
+    "current_ratio": 2.733353609741652,
+    "roa": 0.028101904405371463,
+    "bv": 1.32,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 805226.0,
+      "2024-Q2": 1602837.0,
+      "2024-Q3": 2420623.0,
+      "2024-Q4": 3195731.0,
+      "2025-Q1": 782718.0,
+      "2025-Q2": 1563678.0,
+      "2025-Q3": 2363061.0,
+      "2025-Q4": 3171276.0,
+      "2026-Q1": 816292.0,
+      "2026-Q2": 1700390.0
+    },
+    "eps": {
+      "2024-Q1": 23910.0,
+      "2024-Q2": 50950.0,
+      "2024-Q3": 41328.222448939276,
+      "2024-Q4": 77560.0,
+      "2025-Q1": 25610.0,
+      "2025-Q2": 29920.0,
+      "2025-Q3": 59570.0,
+      "2025-Q4": 82860.0,
+      "2026-Q1": 28534.72615132397,
+      "2026-Q2": 68060.0
+    },
+    "net_income": {
+      "2024-Q1": 130788.0,
+      "2024-Q2": 278762.0,
+      "2024-Q3": 226106.0,
+      "2024-Q4": 424308.0,
+      "2025-Q1": 140120.0,
+      "2025-Q2": 163712.0,
+      "2025-Q3": 325921.0,
+      "2025-Q4": 453348.0,
+      "2026-Q1": 156113.0,
+      "2026-Q2": 372330.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 156740.0,
+      "2023": 75210.0,
+      "2024": 77560.0,
+      "2025": 82860.0
+    },
+    "revenue_per_share": {
+      "2022": 4002632.0,
+      "2023": 3479018.0,
+      "2024": 3195731.0,
+      "2025": 3171276.0
+    }
+  },
+  "statistik": {
+    "market_cap": 45272386240512,
+    "enterprise_value": 45273694863360,
+    "shares_outstanding": 5470982941,
+    "free_float_pct": 41.29300000315976
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2779,
+    "vol_trend": 0.812,
+    "price_chg_20d": -6.5
+  },
+  "neraca": {
+    "aset": 13249280.0,
+    "aset_lancar": 6821114.0,
+    "kas": 726665.0,
+    "piutang_usaha": 297082.0,
+    "persediaan": 497018.0,
+    "aset_tetap": 177219.0,
+    "liabilitas": 6056637.0,
+    "liabilitas_jangka_pendek": 2495511.0,
+    "utang_usaha": 297082.0,
+    "utang_bank": 925703.0,
+    "ekuitas": 7192181.0,
+    "ekuitas_induk": 7192181.0,
+    "modal_saham": null,
+    "saldo_laba": 67000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1700390.0,
+    "beban_pokok": 1162913.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 421409.0,
+    "beban_pajak": -49055.0,
+    "laba_bersih": 372330.0,
+    "laba_induk": 372330.0,
+    "eps_basic": 68060.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 177219.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

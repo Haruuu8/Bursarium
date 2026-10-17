@@ -1,0 +1,126 @@
+{
+  "kode": "SUNI",
+  "nama": "PT Sunindo Pratama Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 650.0,
+  "update": "2026-10-11 11:34",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.649644,
+    "pb": 1.7735479,
+    "ps": 1.8009826,
+    "roe": 0.0662218443295631,
+    "eps": 67.36,
+    "de": 0.3355297613843908,
+    "margin_net": 0.18009923205322415,
+    "current_ratio": 3.224002879263726,
+    "roa": 0.0489996202972723,
+    "bv": 366.5,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 162686494500.0,
+      "2024-Q2": 522391417959.0,
+      "2024-Q3": 800103801201.0,
+      "2024-Q4": 1047117484360.0,
+      "2025-Q1": 313527795909.0,
+      "2025-Q2": 438170636182.0,
+      "2025-Q3": 714773739103.0,
+      "2025-Q4": 982388797337.0,
+      "2026-Q1": 154911411423.0,
+      "2026-Q2": 324285569173.0
+    },
+    "eps": {
+      "2024-Q1": 13.5,
+      "2024-Q2": 49.67,
+      "2024-Q3": 67.92,
+      "2024-Q4": 82.81,
+      "2025-Q1": 26.56,
+      "2025-Q2": 36.28,
+      "2025-Q3": 58.92,
+      "2025-Q4": 79.37,
+      "2026-Q1": 7.62,
+      "2026-Q2": 24.27
+    },
+    "net_income": {
+      "2024-Q1": 33743347344.0,
+      "2024-Q2": 124170022282.0,
+      "2024-Q3": 169792154407.0,
+      "2024-Q4": 207021987709.0,
+      "2025-Q1": 66407212837.0,
+      "2025-Q2": 90688178231.0,
+      "2025-Q3": 147308851886.0,
+      "2025-Q4": 193580630211.0,
+      "2026-Q1": 18333350679.0,
+      "2026-Q2": 58403581974.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 33.06,
+      "2024": 82.81,
+      "2025": 79.37
+    },
+    "revenue_per_share": {
+      "2022": 540272575371.0,
+      "2024": 1047117484360.0,
+      "2025": 982388797337.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1564160032768,
+    "enterprise_value": 1587221364736,
+    "shares_outstanding": 2406400000,
+    "free_float_pct": 20.961
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.3704,
+    "vol_trend": 1.286,
+    "price_chg_20d": -4.41
+  },
+  "neraca": {
+    "aset": 1191919072427.0,
+    "aset_lancar": 507698447908.0,
+    "kas": 159644592788.0,
+    "piutang_usaha": 100759563902.0,
+    "persediaan": 183030616667.0,
+    "aset_tetap": 7848897267.0,
+    "liabilitas": 295916553248.0,
+    "liabilitas_jangka_pendek": 157474564050.0,
+    "utang_usaha": 100759563902.0,
+    "utang_bank": 34061197053.0,
+    "ekuitas": 881938317564.0,
+    "ekuitas_induk": 881938317564.0,
+    "modal_saham": null,
+    "saldo_laba": 8000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 324285569173.0,
+    "beban_pokok": 213225141469.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 73975286493.0,
+    "beban_pajak": -16067877358.0,
+    "laba_bersih": 58403581974.0,
+    "laba_induk": 58403581974.0,
+    "eps_basic": 24.27,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7848897267.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

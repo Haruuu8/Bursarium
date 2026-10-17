@@ -1,0 +1,128 @@
+{
+  "kode": "BAPA",
+  "nama": "PT Bekasi Asri Pemula Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 103.0,
+  "update": "2026-10-11 12:42",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.60477245,
+    "ps": 14.355851,
+    "roe": -0.02190858587273445,
+    "eps": null,
+    "de": 0.13929502483491513,
+    "margin_net": -2.3790701969524686,
+    "current_ratio": 1.6766864798412457,
+    "roa": -0.019227963111652133,
+    "bv": 170.31,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 521206581.0,
+      "2024-Q2": 1181688819.0,
+      "2024-Q3": 1330526901.0,
+      "2024-Q4": 4066108299.0,
+      "2025-Q1": 244332677.0,
+      "2025-Q2": 300604542.0,
+      "2025-Q3": 872177761.0,
+      "2025-Q4": 4010828314.0,
+      "2026-Q1": 95377274.0,
+      "2026-Q2": 1037930885.0
+    },
+    "eps": {
+      "2024-Q1": -2.39,
+      "2024-Q2": -4.49,
+      "2024-Q3": -6.76,
+      "2024-Q4": -7.82,
+      "2025-Q1": -2.56,
+      "2025-Q2": -5.26,
+      "2025-Q3": -7.52,
+      "2025-Q4": -8.26,
+      "2026-Q1": -2.43,
+      "2026-Q2": -3.68
+    },
+    "net_income": {
+      "2024-Q1": -1536674746.0,
+      "2024-Q2": -2880530153.0,
+      "2024-Q3": -4333582037.0,
+      "2024-Q4": -4572611851.0,
+      "2025-Q1": -1542928693.0,
+      "2025-Q2": -3177546250.0,
+      "2025-Q3": -4521187793.0,
+      "2025-Q4": -5539998556.0,
+      "2026-Q1": -1628328366.0,
+      "2026-Q2": -2469310435.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -5.37,
+      "2023": -4.6,
+      "2024": -7.82,
+      "2025": -8.26
+    },
+    "revenue_per_share": {
+      "2022": 3716043983.0,
+      "2023": 8119901265.0,
+      "2024": 4066108299.0,
+      "2025": 4010828314.0
+    }
+  },
+  "statistik": {
+    "market_cap": 68163805184,
+    "enterprise_value": 70934183936,
+    "shares_outstanding": 661784520,
+    "free_float_pct": 39.95500000513763
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1327,
+    "vol_trend": 0.435,
+    "price_chg_20d": -19.53
+  },
+  "neraca": {
+    "aset": 128422881855.0,
+    "aset_lancar": 23816926243.0,
+    "kas": 242891041.0,
+    "piutang_usaha": 201659602.0,
+    "persediaan": null,
+    "aset_tetap": 17786608.0,
+    "liabilitas": 15699902329.0,
+    "liabilitas_jangka_pendek": 14204758331.0,
+    "utang_usaha": 201659602.0,
+    "utang_bank": 3000000000.0,
+    "ekuitas": 112709713413.0,
+    "ekuitas_induk": 112709713413.0,
+    "modal_saham": null,
+    "saldo_laba": 50033359968.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1037930885.0,
+    "beban_pokok": 1002872570.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2454310538.0,
+    "beban_pajak": -14999897.0,
+    "laba_bersih": -2469310435.0,
+    "laba_induk": -2469310435.0,
+    "eps_basic": -3.68,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 16346232.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

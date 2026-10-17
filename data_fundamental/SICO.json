@@ -1,0 +1,122 @@
+{
+  "kode": "SICO",
+  "nama": "PT Sigma Energy Compressindo Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 119.0,
+  "update": "2026-10-11 11:12",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 12.540836,
+    "pb": 0.80887455,
+    "ps": 0.68937093,
+    "roe": 0.06069797814021137,
+    "eps": 9.49,
+    "de": 0.35350385535648954,
+    "margin_net": 0.10593491255341399,
+    "current_ratio": 7.210122158411707,
+    "roa": 0.04344063948504611,
+    "bv": 147.12,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 25524482812.0,
+      "2024-Q2": 49222475087.0,
+      "2024-Q4": 111074709353.0,
+      "2025-Q2": 73794722277.0,
+      "2025-Q3": 117805706528.0,
+      "2025-Q4": 154178593875.0,
+      "2026-Q1": 38981285138.0,
+      "2026-Q2": 76714800901.0
+    },
+    "eps": {
+      "2024-Q1": 5.47,
+      "2024-Q2": 8.52,
+      "2024-Q4": 12.16,
+      "2025-Q2": 9.22,
+      "2025-Q3": 11.09,
+      "2025-Q4": 14.18,
+      "2026-Q1": 7.16,
+      "2026-Q2": 8.93
+    },
+    "net_income": {
+      "2024-Q1": 4976236709.0,
+      "2024-Q2": 7755625738.0,
+      "2024-Q4": 11065560004.0,
+      "2025-Q2": 8395143781.0,
+      "2025-Q3": 10093105533.0,
+      "2025-Q4": 12903378721.0,
+      "2026-Q1": 6520704440.0,
+      "2026-Q2": 8126775725.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 12.42,
+      "2023": 11.56,
+      "2024": 12.16,
+      "2025": 14.18
+    },
+    "revenue_per_share": {
+      "2022": 78173815627.0,
+      "2023": 100077030286.0,
+      "2024": 111074709353.0,
+      "2025": 154178593875.0
+    }
+  },
+  "statistik": {
+    "market_cap": 108299255808,
+    "enterprise_value": 127005032448,
+    "shares_outstanding": 910077764,
+    "free_float_pct": 26.761999977839256
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2729,
+    "vol_trend": 0.706,
+    "price_chg_20d": 3.48
+  },
+  "neraca": {
+    "aset": 187077718499.0,
+    "aset_lancar": 81173847761.0,
+    "kas": 23042826024.0,
+    "piutang_usaha": 21848620876.0,
+    "persediaan": 11188739239.0,
+    "aset_tetap": 15754054055.0,
+    "liabilitas": 47330185262.0,
+    "liabilitas_jangka_pendek": 11258317956.0,
+    "utang_usaha": 21848620876.0,
+    "utang_bank": 2875033333.0,
+    "ekuitas": 133888738538.0,
+    "ekuitas_induk": 133888738538.0,
+    "modal_saham": null,
+    "saldo_laba": 9100548840.0
+  },
+  "laba_rugi": {
+    "pendapatan": 76714800901.0,
+    "beban_pokok": 51379512196.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10086562404.0,
+    "beban_pajak": -1957217695.0,
+    "laba_bersih": 8126775725.0,
+    "laba_induk": 8126775725.0,
+    "eps_basic": 8.93,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15754054055.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

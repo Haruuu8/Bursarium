@@ -1,0 +1,153 @@
+{
+  "kode": "MASB",
+  "nama": "PT Bank Multiarta Sentosa Tbk",
+  "periode_terbaru": "2026-tw2",
+  "update": "2026-10-09 18:47",
+  "neraca": {
+    "aset": 32061610597665.0,
+    "aset_lancar": null,
+    "aset_tidak_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 123167759018.0,
+    "investasi": 1000505305332.0,
+    "properti_investasi": null,
+    "goodwill": null,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 27941512933128.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4120097664537.0,
+    "ekuitas_induk": 4120097664537.0,
+    "ekuitas_non_pengendali": null,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 838617054630.0,
+    "saldo_laba": 1908237716551.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1009189238412.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 146014728890.0,
+    "beban_bunga": 488085619220.0,
+    "laba_sebelum_pajak": 138156143932.0,
+    "beban_pajak": -30394351666.0,
+    "laba_bersih": 107761792266.0,
+    "laba_induk": 107761792266.0,
+    "laba_komprehensif": null,
+    "eps_basic": 76.86,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": 0.02615515481429973,
+    "roa": 0.0033610848069450428,
+    "der": 6.781759853323272,
+    "dar": 0.8714943638908439,
+    "current_ratio": null,
+    "margin_laba_bersih": 0.106780560240186,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": 0.1446851822555699,
+    "quick_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 872820658271.0,
+      "2024-Q4": 1797238366212.0,
+      "2025-Q2": 953678066810.0,
+      "2025-Q3": 1444359160895.0,
+      "2025-Q4": 1951455104250.0,
+      "2026-Q2": 1009189238412.0
+    },
+    "eps": {
+      "2024-Q2": 73.83,
+      "2024-Q4": 153.13,
+      "2025-Q2": 71.24,
+      "2025-Q3": 111.41,
+      "2025-Q4": 146.31,
+      "2026-Q2": 76.86
+    },
+    "net_income": {
+      "2024-Q2": 103511916012.0,
+      "2024-Q4": 214693101959.0,
+      "2025-Q2": 99878057534.0,
+      "2025-Q3": 156204045064.0,
+      "2025-Q4": 205129328597.0,
+      "2026-Q2": 107761792266.0
+    },
+    "aset": {
+      "2024-Q2": 29207763990115.0,
+      "2024-Q4": 28889529883136.0,
+      "2025-Q2": 30824223275864.0,
+      "2025-Q3": 33590844264995.0,
+      "2025-Q4": 33103126830713.0,
+      "2026-Q2": 32061610597665.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 237.76,
+      "2023": 173.93,
+      "2025": 146.31
+    },
+    "revenue": {
+      "2022": 1251929379462.0,
+      "2025": 1951455104250.0
+    },
+    "net_income": {
+      "2022": 304602238519.0,
+      "2023": 243856768977.0,
+      "2025": 205129328597.0
+    },
+    "ekuitas": {
+      "2022": 3418111613917.0,
+      "2023": 3682511096003.0,
+      "2025": 4105106573161.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": 20.535774,
+    "pb": 1.0616918,
+    "ps": 4.196366,
+    "roe": 0.05243,
+    "eps": 151.93,
+    "de": 6.781759853323272,
+    "margin_net": 0.20435,
+    "current_ratio": null,
+    "roa": 0.00677,
+    "bv": 2938.71,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "statistik": {
+    "market_cap": 4374273458176,
+    "enterprise_value": 2739149733888,
+    "shares_outstanding": 1402010763,
+    "free_float_pct": 26.973999984905966
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.5968,
+    "vol_trend": 0.546,
+    "price_chg_20d": -7.14
+  },
+  "harga": 3120.0,
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "update_bv": "2026-10-11 17:37"
+}

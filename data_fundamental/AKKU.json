@@ -1,0 +1,128 @@
+{
+  "kode": "AKKU",
+  "nama": "PT Anugerah Kagum Karya Utama Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 81.0,
+  "update": "2026-10-11 12:24",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 716.81415,
+    "pb": 1.3326094,
+    "ps": 66.30179,
+    "roe": -0.006529171961745322,
+    "eps": 0.11,
+    "de": 0.7789519212556194,
+    "margin_net": -0.6784638748134709,
+    "current_ratio": 2.8229588584346925,
+    "roa": -0.003670243948734496,
+    "bv": 60.78,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2022-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1641317466.0,
+      "2024-Q2": 3729070773.0,
+      "2024-Q3": 6218113567.0,
+      "2024-Q4": 8520856393.0,
+      "2025-Q1": 1585482556.0,
+      "2025-Q2": 3566202687.0,
+      "2025-Q3": 5263473376.0,
+      "2025-Q4": 7687740296.0,
+      "2026-Q1": 2039189881.0,
+      "2026-Q2": 3757685331.0
+    },
+    "eps": {
+      "2024-Q1": -42217.756,
+      "2024-Q2": -122496.55468869132,
+      "2024-Q3": -24888.006705919426,
+      "2024-Q4": -1.41,
+      "2025-Q1": -60000.0,
+      "2025-Q2": -109757.91856610897,
+      "2025-Q3": -95857.22575682464,
+      "2025-Q4": -4.23,
+      "2026-Q1": 130000.0,
+      "2026-Q2": -400000.0
+    },
+    "net_income": {
+      "2024-Q1": -272281879.0,
+      "2024-Q2": -790037075.0,
+      "2024-Q3": -160514294.0,
+      "2024-Q4": -9098920560.0,
+      "2025-Q1": -411520415.0,
+      "2025-Q2": -707879705.0,
+      "2025-Q3": -618227692.0,
+      "2025-Q4": -27318368346.0,
+      "2026-Q1": 820147379.0,
+      "2026-Q2": -2549453750.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 5.54,
+      "2023": -720000.0,
+      "2024": -1.41,
+      "2025": -4.23
+    },
+    "revenue_per_share": {
+      "2022": 4581408975.0,
+      "2023": 7162838621.0,
+      "2024": 8520856393.0,
+      "2025": 7687740296.0
+    }
+  },
+  "statistik": {
+    "market_cap": 522406559744,
+    "enterprise_value": 587913494528,
+    "shares_outstanding": 6449463636,
+    "free_float_pct": 61.05999999780447
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1003,
+    "vol_trend": 1.0,
+    "price_chg_20d": 113.16
+  },
+  "neraca": {
+    "aset": 694627873681.0,
+    "aset_lancar": 655708347179.0,
+    "kas": 5310454045.0,
+    "piutang_usaha": 12861394560.0,
+    "persediaan": 18913304.0,
+    "aset_tetap": 595616700964.0,
+    "liabilitas": 304158308029.0,
+    "liabilitas_jangka_pendek": 232276976060.0,
+    "utang_usaha": 12861394560.0,
+    "utang_bank": 70833310418.0,
+    "ekuitas": 390471221303.0,
+    "ekuitas_induk": 390471221303.0,
+    "modal_saham": null,
+    "saldo_laba": -303260819049.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3757685331.0,
+    "beban_pokok": 4144000.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2551182601.0,
+    "beban_pajak": null,
+    "laba_bersih": -2549453750.0,
+    "laba_induk": -2549453750.0,
+    "eps_basic": -400000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 595616700964.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

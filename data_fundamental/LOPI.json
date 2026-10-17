@@ -1,0 +1,111 @@
+{
+  "kode": "LOPI",
+  "nama": "PT Logisticsplus International Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 61.0,
+  "update": "2026-10-11 11:51",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.0987626,
+    "ps": 0.49917293,
+    "roe": 0.009732471060587685,
+    "eps": 3.17,
+    "de": 0.8264009893975572,
+    "margin_net": 0.010565100048416704,
+    "current_ratio": 2.4830848859616688,
+    "roa": 0.005328770142529305,
+    "bv": 55.52,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 33733886234.0,
+      "2024-Q4": 86386331661.0,
+      "2025-Q2": 53305432220.0,
+      "2025-Q4": 130068459090.0,
+      "2026-Q2": 57660706686.0
+    },
+    "eps": {
+      "2024-Q2": 360000.0,
+      "2024-Q4": 2.43,
+      "2025-Q2": 1.99,
+      "2025-Q4": 3.17,
+      "2026-Q2": 550000.0
+    },
+    "net_income": {
+      "2024-Q2": 290438559.0,
+      "2024-Q4": 2675504133.0,
+      "2025-Q2": 2190676606.0,
+      "2025-Q4": 3482086583.0,
+      "2026-Q2": 609191135.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 2.18,
+      "2024": 2.43,
+      "2025": 3.17
+    },
+    "revenue_per_share": {
+      "2023": 82557863238.0,
+      "2024": 86386331661.0,
+      "2025": 130068459090.0
+    }
+  },
+  "statistik": {
+    "market_cap": 67100688384,
+    "enterprise_value": 103264976896,
+    "shares_outstanding": 1100011289,
+    "free_float_pct": 44.04200000896537
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1558,
+    "vol_trend": 0.479,
+    "price_chg_20d": -1.61
+  },
+  "neraca": {
+    "aset": 114321150792.0,
+    "aset_lancar": 96823198008.0,
+    "kas": 5092849347.0,
+    "piutang_usaha": 75272906588.0,
+    "persediaan": null,
+    "aset_tetap": 12701053116.0,
+    "liabilitas": 51727475331.0,
+    "liabilitas_jangka_pendek": 38993108353.0,
+    "utang_usaha": 75272906588.0,
+    "utang_bank": 22057210445.0,
+    "ekuitas": 62593675461.0,
+    "ekuitas_induk": 62593675461.0,
+    "modal_saham": null,
+    "saldo_laba": 1753628292.0
+  },
+  "laba_rugi": {
+    "pendapatan": 57660706686.0,
+    "beban_pokok": 58091849930.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 742295029.0,
+    "beban_pajak": -133103894.0,
+    "laba_bersih": 609191135.0,
+    "laba_induk": 609191135.0,
+    "eps_basic": 550000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7424305151.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

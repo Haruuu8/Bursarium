@@ -1,0 +1,125 @@
+{
+  "kode": "MINA",
+  "nama": "PT Sanurhasta Mitra Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 210.0,
+  "update": "2026-10-11 15:38",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 8.251473,
+    "ps": 222.9142,
+    "roe": 0.000993194958263144,
+    "eps": null,
+    "de": 0.012133664143765849,
+    "margin_net": 0.06040939869388528,
+    "current_ratio": 135.29903424480105,
+    "roa": 0.0009809628852455333,
+    "bv": 25.45,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2026-tw2"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 3051650598.0,
+      "2024-Q3": 5696700355.0,
+      "2024-Q4": 8354047884.0,
+      "2025-Q1": 1386495368.0,
+      "2025-Q2": 3866629310.0,
+      "2025-Q3": 7484017440.0,
+      "2025-Q4": 9021170176.0,
+      "2026-Q1": 1873401133.0,
+      "2026-Q2": 4118926233.0
+    },
+    "eps": {
+      "2024-Q2": -290000.0,
+      "2024-Q3": -360000.0,
+      "2024-Q4": -850000.0,
+      "2025-Q1": -210000.0,
+      "2025-Q2": -290000.0,
+      "2025-Q3": -390000.0,
+      "2025-Q4": -380000.0,
+      "2026-Q1": -1000.0,
+      "2026-Q2": 30000.0
+    },
+    "net_income": {
+      "2024-Q2": -1924674835.0,
+      "2024-Q3": -2344111867.0,
+      "2024-Q4": -5605698948.0,
+      "2025-Q1": -1375426531.0,
+      "2025-Q2": -1908132456.0,
+      "2025-Q3": -3798118861.0,
+      "2025-Q4": -2938617049.0,
+      "2026-Q1": -63991348.0,
+      "2026-Q2": 248821857.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -530000.0,
+      "2023": -440000.0,
+      "2024": -850000.0,
+      "2025": -380000.0
+    },
+    "revenue_per_share": {
+      "2022": 9306489051.0,
+      "2023": 11674547348.0,
+      "2024": 8354047884.0,
+      "2025": 9021170176.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2067187499008,
+    "enterprise_value": 1914098417664,
+    "shares_outstanding": 9843750000,
+    "free_float_pct": 44.51100000507937
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1552,
+    "vol_trend": 0.544,
+    "price_chg_20d": -23.36
+  },
+  "neraca": {
+    "aset": 253650633212.0,
+    "aset_lancar": 177207858012.0,
+    "kas": 153299169511.0,
+    "piutang_usaha": 231965185.0,
+    "persediaan": 23560803688.0,
+    "aset_tetap": 8496473569.0,
+    "liabilitas": 3039806857.0,
+    "liabilitas_jangka_pendek": 1309749615.0,
+    "utang_usaha": 231965185.0,
+    "utang_bank": null,
+    "ekuitas": 250526701661.0,
+    "ekuitas_induk": 250526701661.0,
+    "modal_saham": null,
+    "saldo_laba": -37202319746.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4118926233.0,
+    "beban_pokok": 1512942688.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 227454871.0,
+    "beban_pajak": 21367013.0,
+    "laba_bersih": 248821857.0,
+    "laba_induk": 248821857.0,
+    "eps_basic": 30000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 824410000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

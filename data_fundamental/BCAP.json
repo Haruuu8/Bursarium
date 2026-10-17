@@ -1,0 +1,128 @@
+{
+  "kode": "BCAP",
+  "nama": "PT MNC Kapital Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Financial Conglomerates",
+  "harga": 31.0,
+  "update": "2026-10-11 12:42",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.6199703,
+    "pb": 0.2911892,
+    "ps": 0.53022134,
+    "roe": 0.02679303468376258,
+    "eps": 6.71,
+    "de": 5.49815129250837,
+    "margin_net": 0.11382733481525038,
+    "current_ratio": null,
+    "roa": 0.004009847721047119,
+    "bv": 106.46,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 476251.0,
+      "2024-Q2": 951126.0,
+      "2024-Q3": 1447001.0,
+      "2024-Q4": 1957050.0,
+      "2025-Q1": 524837.0,
+      "2025-Q2": 1041181.0,
+      "2025-Q3": 1563903.0,
+      "2025-Q4": 2113096.0,
+      "2026-Q1": 539098.0,
+      "2026-Q2": 1067986.0
+    },
+    "eps": {
+      "2024-Q1": 820000.0,
+      "2024-Q2": 2.15,
+      "2024-Q3": 2.7,
+      "2024-Q4": 2.17,
+      "2025-Q1": 770000.0,
+      "2025-Q2": 2.15,
+      "2025-Q3": 3.23,
+      "2025-Q4": 6.08,
+      "2026-Q1": 1.1,
+      "2026-Q2": 2.85
+    },
+    "net_income": {
+      "2024-Q1": 34778.0,
+      "2024-Q2": 91771.0,
+      "2024-Q3": 96654.0,
+      "2024-Q4": 92373.0,
+      "2025-Q1": 32854.0,
+      "2025-Q2": 91762.0,
+      "2025-Q3": 137538.0,
+      "2025-Q4": 256046.0,
+      "2026-Q1": 46750.0,
+      "2026-Q2": 121566.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 3.2,
+      "2023": 1.31,
+      "2024": 2.17,
+      "2025": 6.08
+    },
+    "revenue_per_share": {
+      "2022": 1670327.0,
+      "2023": 1874772.0,
+      "2024": 1957050.0,
+      "2025": 2113096.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1321184395264,
+    "enterprise_value": 1162061414400,
+    "shares_outstanding": 42618850927,
+    "free_float_pct": 26.91100000008219
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.7024,
+    "vol_trend": 170.578,
+    "price_chg_20d": -38.0
+  },
+  "neraca": {
+    "aset": 30316862.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 1063031.0,
+    "liabilitas": 24946344.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4537224.0,
+    "ekuitas_induk": 4537224.0,
+    "modal_saham": null,
+    "saldo_laba": 981127.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1067986.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 148172.0,
+    "laba_sebelum_pajak": 148172.0,
+    "beban_pajak": -15412.0,
+    "laba_bersih": 121566.0,
+    "laba_induk": 121566.0,
+    "eps_basic": 2.85,
+    "eps_diluted": 2.85
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

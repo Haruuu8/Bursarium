@@ -1,0 +1,126 @@
+{
+  "kode": "HYGN",
+  "nama": "PT Ecocare Indo Pasifik Tbk",
+  "sektor": "Industrials",
+  "industri": "Specialty Business Services",
+  "harga": 182.0,
+  "update": "2026-10-11 12:01",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.7078097,
+    "ps": 1.145329,
+    "roe": 0.04742222264135967,
+    "eps": 7.85,
+    "de": 0.4691835486624485,
+    "margin_net": 0.03815795886587904,
+    "current_ratio": 2.4189406420491077,
+    "roa": 0.032240131631736925,
+    "bv": 67.21,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 68905072261.0,
+      "2024-Q2": 145957786532.0,
+      "2024-Q3": 223208321191.0,
+      "2024-Q4": 309339761435.0,
+      "2025-Q1": 85685518455.0,
+      "2025-Q2": 172405390940.0,
+      "2025-Q3": 263980203860.0,
+      "2025-Q4": 360586953402.0,
+      "2026-Q1": 100252277824.0,
+      "2026-Q2": 208547146035.0
+    },
+    "eps": {
+      "2024-Q1": 560000.0,
+      "2024-Q2": 2.19,
+      "2024-Q3": 4.19,
+      "2024-Q4": 7.51,
+      "2025-Q1": 650000.0,
+      "2025-Q2": 2.38,
+      "2025-Q3": 4.2,
+      "2025-Q4": 7.85,
+      "2026-Q1": 1.17,
+      "2026-Q2": 3.18
+    },
+    "net_income": {
+      "2024-Q1": 1322364437.0,
+      "2024-Q2": 5331473101.0,
+      "2024-Q3": 10326716618.0,
+      "2024-Q4": 18638570620.0,
+      "2025-Q1": 1634969723.0,
+      "2025-Q2": 6003133137.0,
+      "2025-Q3": 10595622407.0,
+      "2025-Q4": 19714109181.0,
+      "2026-Q1": 2936035119.0,
+      "2026-Q2": 7957733420.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 9.09,
+      "2024": 7.51,
+      "2025": 7.85
+    },
+    "revenue_per_share": {
+      "2023": 235644447704.0,
+      "2024": 309339761435.0,
+      "2025": 360586953402.0
+    }
+  },
+  "statistik": {
+    "market_cap": 454384877568,
+    "enterprise_value": 445316071424,
+    "shares_outstanding": 2496620300,
+    "free_float_pct": 19.73099998425872
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2076,
+    "vol_trend": 2.192,
+    "price_chg_20d": -8.08
+  },
+  "neraca": {
+    "aset": 246826951915.0,
+    "aset_lancar": 138497172358.0,
+    "kas": 8452623520.0,
+    "piutang_usaha": 49986712775.0,
+    "persediaan": 28479216171.0,
+    "aset_tetap": 95558463231.0,
+    "liabilitas": 78731813849.0,
+    "liabilitas_jangka_pendek": 57255300089.0,
+    "utang_usaha": 49986712775.0,
+    "utang_bank": 5159751584.0,
+    "ekuitas": 167805998470.0,
+    "ekuitas_induk": 167805998470.0,
+    "modal_saham": null,
+    "saldo_laba": 8000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 208547146035.0,
+    "beban_pokok": 137722301185.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10430358673.0,
+    "beban_pajak": -2441337021.0,
+    "laba_bersih": 7957733420.0,
+    "laba_induk": 7957733420.0,
+    "eps_basic": 3.18,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13210932476.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

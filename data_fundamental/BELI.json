@@ -1,0 +1,125 @@
+{
+  "kode": "BELI",
+  "nama": "PT Global Digital Niaga Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Internet Retail",
+  "harga": 294.0,
+  "update": "2026-10-11 11:26",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.4094486,
+    "ps": 1.4619052,
+    "roe": -0.07775206770553818,
+    "eps": null,
+    "de": 1.0290650484258987,
+    "margin_net": -0.0479660147115216,
+    "current_ratio": 1.2441485690570637,
+    "roa": -0.03793671855671989,
+    "bv": 66.68,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 3923122.0,
+      "2024-Q3": 12131578.0,
+      "2024-Q4": 16715576.0,
+      "2025-Q1": 4693759.0,
+      "2025-Q2": 9595691.0,
+      "2025-Q3": 15239346.0,
+      "2025-Q4": 22361030.0,
+      "2026-Q1": 7835282.0,
+      "2026-Q2": 14830417.0
+    },
+    "eps": {
+      "2024-Q1": -6.0,
+      "2024-Q3": -15.0,
+      "2024-Q4": -20.0,
+      "2025-Q1": -5.0,
+      "2025-Q2": -9.0,
+      "2025-Q3": -14.0,
+      "2025-Q4": -17.0,
+      "2026-Q1": -2.0,
+      "2026-Q2": -5.0
+    },
+    "net_income": {
+      "2024-Q1": -691290.0,
+      "2024-Q3": -1872352.0,
+      "2024-Q4": -2531379.0,
+      "2025-Q1": -638147.0,
+      "2025-Q2": -1252373.0,
+      "2025-Q3": -1842274.0,
+      "2025-Q4": -2278884.0,
+      "2026-Q1": -303004.0,
+      "2026-Q2": -711356.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -53.0,
+      "2023": -31.0,
+      "2024": -20.0,
+      "2025": -17.0
+    },
+    "revenue_per_share": {
+      "2022": 15269078.0,
+      "2023": 14717896.0,
+      "2024": 16715576.0,
+      "2025": 22361030.0
+    }
+  },
+  "statistik": {
+    "market_cap": 40342380347392,
+    "enterprise_value": 40351985303552,
+    "shares_outstanding": 137218985689,
+    "free_float_pct": 23.64299999967186
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3463,
+    "vol_trend": 0.621,
+    "price_chg_20d": -0.68
+  },
+  "neraca": {
+    "aset": 18751121.0,
+    "aset_lancar": 10114740.0,
+    "kas": 1630052.0,
+    "piutang_usaha": 2313853.0,
+    "persediaan": 3626468.0,
+    "aset_tetap": 35280.0,
+    "liabilitas": 9414947.0,
+    "liabilitas_jangka_pendek": 8129849.0,
+    "utang_usaha": 2313853.0,
+    "utang_bank": 3021100.0,
+    "ekuitas": 9149030.0,
+    "ekuitas_induk": 9149030.0,
+    "modal_saham": null,
+    "saldo_laba": -29016123.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14830417.0,
+    "beban_pokok": 12505657.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -651126.0,
+    "beban_pajak": -67945.0,
+    "laba_bersih": -711356.0,
+    "laba_induk": -711356.0,
+    "eps_basic": -5.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 35280.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

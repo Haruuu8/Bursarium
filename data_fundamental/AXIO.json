@@ -1,0 +1,128 @@
+{
+  "kode": "AXIO",
+  "nama": "PT Tera Data Indonusa Tbk",
+  "sektor": "Technology",
+  "industri": "Computer Hardware",
+  "harga": 126.0,
+  "update": "2026-10-11 11:20",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3776213,
+    "ps": 0.425882,
+    "roe": 0.04063824798318131,
+    "eps": 7.43,
+    "de": 1.4125773626021945,
+    "margin_net": 0.029770719031689853,
+    "current_ratio": 1.249509651149314,
+    "roa": 0.016553172820116483,
+    "bv": 91.46,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 201105316982.0,
+      "2024-Q2": 434408232124.0,
+      "2024-Q3": 761996051291.0,
+      "2024-Q4": 1233328155585.0,
+      "2025-Q1": 280781775109.0,
+      "2025-Q2": 617506745774.0,
+      "2025-Q3": 1093777660312.0,
+      "2025-Q4": 1616214464383.0,
+      "2026-Q1": 351248410699.0,
+      "2026-Q2": 729132202346.0
+    },
+    "eps": {
+      "2024-Q1": 910000.0,
+      "2024-Q2": 1.57,
+      "2024-Q3": 5.53,
+      "2024-Q4": 10.0,
+      "2025-Q1": 1.34,
+      "2025-Q2": 2.46,
+      "2025-Q3": 5.69,
+      "2025-Q4": 12.0,
+      "2026-Q1": 1.62,
+      "2026-Q2": 3.72
+    },
+    "net_income": {
+      "2024-Q1": 5325296579.0,
+      "2024-Q2": 9154803873.0,
+      "2024-Q3": 32280445930.0,
+      "2024-Q4": 55863111502.0,
+      "2025-Q1": 7733344423.0,
+      "2025-Q2": 14365548947.0,
+      "2025-Q3": 33234340588.0,
+      "2025-Q4": 67969238926.0,
+      "2026-Q1": 9447080876.0,
+      "2026-Q2": 21706789933.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 17.0,
+      "2023": 21.0,
+      "2024": 10.0,
+      "2025": 12.0
+    },
+    "revenue_per_share": {
+      "2022": 1491553148517.0,
+      "2023": 1272200321269.0,
+      "2024": 1233328155585.0,
+      "2025": 1616214464383.0
+    }
+  },
+  "statistik": {
+    "market_cap": 735855902720,
+    "enterprise_value": 1058398732288,
+    "shares_outstanding": 5840126500,
+    "free_float_pct": 20.35199999520558
+  },
+  "akumulasi": {
+    "score": 4.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0617,
+    "vol_trend": 0.771,
+    "price_chg_20d": 9.57
+  },
+  "neraca": {
+    "aset": 1311337117596.0,
+    "aset_lancar": 927135353476.0,
+    "kas": 8679525424.0,
+    "piutang_usaha": 61056583527.0,
+    "persediaan": 703009951195.0,
+    "aset_tetap": 289645603141.0,
+    "liabilitas": 754523671562.0,
+    "liabilitas_jangka_pendek": 741999353605.0,
+    "utang_usaha": 61056583527.0,
+    "utang_bank": 186259531271.0,
+    "ekuitas": 534146795452.0,
+    "ekuitas_induk": 534146795452.0,
+    "modal_saham": null,
+    "saldo_laba": 29200632500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 729132202346.0,
+    "beban_pokok": 606510125599.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 26691436716.0,
+    "beban_pajak": -6293313664.0,
+    "laba_bersih": 21706789933.0,
+    "laba_induk": 21706789933.0,
+    "eps_basic": 3.72,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11984739206.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

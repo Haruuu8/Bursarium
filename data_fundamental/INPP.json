@@ -1,0 +1,128 @@
+{
+  "kode": "INPP",
+  "nama": "PT Indonesian Paradise Property Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 635.0,
+  "update": "2026-10-11 13:52",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.2380388,
+    "ps": 4.1123,
+    "roe": 0.0010752782742073934,
+    "eps": 29.95,
+    "de": 0.6108952619506635,
+    "margin_net": 0.01869956501257242,
+    "current_ratio": 3.496162908244142,
+    "roa": 0.0005962738396143348,
+    "bv": 512.91,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 262583176143.0,
+      "2024-Q2": 556456810488.0,
+      "2024-Q3": 878072217199.0,
+      "2024-Q4": 1309661867481.0,
+      "2025-Q1": 286402626224.0,
+      "2025-Q2": 872110.0,
+      "2025-Q3": 1315070.0,
+      "2025-Q4": 1740629.0,
+      "2026-Q1": 326906.0,
+      "2026-Q2": 858143.0
+    },
+    "eps": {
+      "2024-Q1": 10.54,
+      "2024-Q2": 25.11,
+      "2024-Q3": 25.19,
+      "2024-Q4": 29.95,
+      "2025-Q1": 31.85,
+      "2025-Q2": 396344.2935368276,
+      "2025-Q3": 35.22,
+      "2025-Q4": -8.82,
+      "2026-Q1": 550000.0,
+      "2026-Q2": 5.04
+    },
+    "net_income": {
+      "2024-Q1": 117885875158.0,
+      "2024-Q2": 280769281567.0,
+      "2024-Q3": 281631066786.0,
+      "2024-Q4": 334903246413.0,
+      "2025-Q1": 356167979520.0,
+      "2025-Q2": 443191.0,
+      "2025-Q3": 393836.0,
+      "2025-Q4": -98595.0,
+      "2026-Q1": 6113.0,
+      "2026-Q2": 56394.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 2.51,
+      "2023": 9.39,
+      "2024": 29.95,
+      "2025": -8.82
+    },
+    "revenue_per_share": {
+      "2022": 955541184718.0,
+      "2023": 1104710911002.0,
+      "2024": 1309661867481.0,
+      "2025": 1740629.0
+    }
+  },
+  "statistik": {
+    "market_cap": 7100551921664,
+    "enterprise_value": 9647292416000,
+    "shares_outstanding": 11181971732,
+    "free_float_pct": 9.09399999724485
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.5795,
+    "vol_trend": 0.248,
+    "price_chg_20d": -15.33
+  },
+  "neraca": {
+    "aset": 10252001.0,
+    "aset_lancar": 1777652.0,
+    "kas": 777534.0,
+    "piutang_usaha": 55373.0,
+    "persediaan": 4976.0,
+    "aset_tetap": 1759555.0,
+    "liabilitas": 3472964.0,
+    "liabilitas_jangka_pendek": 508458.0,
+    "utang_usaha": 55373.0,
+    "utang_bank": 85265.0,
+    "ekuitas": 5685040.0,
+    "ekuitas_induk": 5685040.0,
+    "modal_saham": null,
+    "saldo_laba": 2394588.0
+  },
+  "laba_rugi": {
+    "pendapatan": 326906.0,
+    "beban_pokok": 115124.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 41114.0,
+    "beban_pajak": 15204.0,
+    "laba_bersih": 6113.0,
+    "laba_induk": 6113.0,
+    "eps_basic": 550000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1284.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

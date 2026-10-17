@@ -1,0 +1,125 @@
+{
+  "kode": "HEAL",
+  "nama": "PT Medikaloka Hermina Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 600.0,
+  "update": "2026-10-11 15:58",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 23.166023,
+    "pb": 1.6587508,
+    "ps": 1.2438047,
+    "roe": 0.03502996563698512,
+    "eps": 25.9,
+    "de": 0.8876652190075526,
+    "margin_net": 0.053520673329068555,
+    "current_ratio": 1.2710236484981028,
+    "roa": 0.016108571461449808,
+    "bv": 361.72,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 3344256.0,
+      "2024-Q3": 5026528.0,
+      "2024-Q4": 6717179.0,
+      "2025-Q1": 1692471.0,
+      "2025-Q2": 3388561.0,
+      "2025-Q3": 5287968.0,
+      "2025-Q4": 7133538.0,
+      "2026-Q1": 1783206.0,
+      "2026-Q2": 3609409.0
+    },
+    "eps": {
+      "2024-Q2": 23.200000000000003,
+      "2024-Q3": 31.58,
+      "2024-Q4": 36.11,
+      "2025-Q1": 8.379999999999999,
+      "2025-Q2": 15.11,
+      "2025-Q3": 23.669999999999998,
+      "2025-Q4": 28.4,
+      "2026-Q1": 6.6000000000000005,
+      "2026-Q2": 12.62
+    },
+    "net_income": {
+      "2024-Q2": 343157.0,
+      "2024-Q3": 468160.0,
+      "2024-Q4": 535942.0,
+      "2025-Q1": 124729.0,
+      "2025-Q2": 224847.0,
+      "2025-Q3": 356017.0,
+      "2025-Q4": 429547.0,
+      "2026-Q1": 101262.0,
+      "2026-Q2": 193178.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 20.64,
+      "2023": 30.16,
+      "2024": 36.11,
+      "2025": 28.4
+    },
+    "revenue_per_share": {
+      "2022": 4901810.0,
+      "2023": 5784086.0,
+      "2024": 6717179.0,
+      "2025": 7133538.0
+    }
+  },
+  "statistik": {
+    "market_cap": 9147419459584,
+    "enterprise_value": 13796189929472,
+    "shares_outstanding": 15245698700,
+    "free_float_pct": 52.04299999710737
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1961,
+    "vol_trend": 0.31,
+    "price_chg_20d": -11.11
+  },
+  "neraca": {
+    "aset": 11992249.0,
+    "aset_lancar": 2224782.0,
+    "kas": 571787.0,
+    "piutang_usaha": 1402319.0,
+    "persediaan": 130692.0,
+    "aset_tetap": 837161.0,
+    "liabilitas": 4895163.0,
+    "liabilitas_jangka_pendek": 1750386.0,
+    "utang_usaha": 1402319.0,
+    "utang_bank": 30000.0,
+    "ekuitas": 5514650.0,
+    "ekuitas_induk": 5514650.0,
+    "modal_saham": null,
+    "saldo_laba": 73760.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3609409.0,
+    "beban_pokok": 2373247.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 331836.0,
+    "beban_pajak": -82810.0,
+    "laba_bersih": 193178.0,
+    "laba_induk": 193178.0,
+    "eps_basic": 12.62,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 837161.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

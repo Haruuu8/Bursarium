@@ -1,0 +1,126 @@
+{
+  "kode": "MEDC",
+  "nama": "PT Medco Energi Internasional Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas E&P",
+  "harga": 1430.0,
+  "update": "2026-10-11 14:17",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.1934257,
+    "pb": 15212.767,
+    "ps": 13568.794,
+    "roe": 0.11878260196407418,
+    "eps": 230.89,
+    "de": 2.806281838073894,
+    "margin_net": 0.1946054138816061,
+    "current_ratio": 1.6916011538565858,
+    "roa": 0.030477996080441324,
+    "bv": 0.09,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 556399929.0,
+      "2024-Q2": 1165368521.0,
+      "2024-Q3": 1783060553.0,
+      "2024-Q4": 2399190555.0,
+      "2025-Q1": 560470126.0,
+      "2025-Q2": 1138390027.0,
+      "2025-Q3": 1757017718.0,
+      "2025-Q4": 2395035969.0,
+      "2026-Q1": 668309873.0,
+      "2026-Q2": 1414745271.0
+    },
+    "eps": {
+      "2024-Q1": 11810.0,
+      "2024-Q2": 8080.0,
+      "2024-Q3": 10910.0,
+      "2024-Q4": 14720.0,
+      "2025-Q1": 690.0,
+      "2025-Q2": 1510.0,
+      "2025-Q3": 3460.0,
+      "2025-Q4": 4080.0000000000005,
+      "2026-Q1": 2730.0,
+      "2026-Q2": 11150.0
+    },
+    "net_income": {
+      "2024-Q1": 72659043.0,
+      "2024-Q2": 200996060.0,
+      "2024-Q3": 273273138.0,
+      "2024-Q4": 367358268.0,
+      "2025-Q1": 17624741.0,
+      "2025-Q2": 37188257.0,
+      "2025-Q3": 85648479.0,
+      "2025-Q4": 100923998.0,
+      "2026-Q1": 67386474.0,
+      "2026-Q2": 275317089.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 14900.0,
+      "2024": 14720.0,
+      "2025": 4080.0000000000005
+    },
+    "revenue_per_share": {
+      "2023": 2249337578.0,
+      "2024": 2399190555.0,
+      "2025": 2395035969.0
+    }
+  },
+  "statistik": {
+    "market_cap": 35359517835264,
+    "enterprise_value": 35362747449344,
+    "shares_outstanding": 24726935674,
+    "free_float_pct": 25.01299999944344
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3435,
+    "vol_trend": 0.973,
+    "price_chg_20d": -8.04
+  },
+  "neraca": {
+    "aset": 9033306792.0,
+    "aset_lancar": 2425108733.0,
+    "kas": 1326518563.0,
+    "piutang_usaha": 467056365.0,
+    "persediaan": 147568449.0,
+    "aset_tetap": 136123359.0,
+    "liabilitas": 6504465585.0,
+    "liabilitas_jangka_pendek": 1433617332.0,
+    "utang_usaha": 467056365.0,
+    "utang_bank": 75000000.0,
+    "ekuitas": 2317823355.0,
+    "ekuitas_induk": 2317823355.0,
+    "modal_saham": null,
+    "saldo_laba": 10435835.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1414745271.0,
+    "beban_pokok": 826253482.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 477385093.0,
+    "beban_pajak": -189886759.0,
+    "laba_bersih": 275317089.0,
+    "laba_induk": 275317089.0,
+    "eps_basic": 11150.0,
+    "eps_diluted": 11150.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3208254.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

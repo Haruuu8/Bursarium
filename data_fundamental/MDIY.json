@@ -1,0 +1,110 @@
+{
+  "kode": "MDIY",
+  "nama": "PT Daya Intiguna Yasa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 895.0,
+  "update": "2026-10-11 12:07",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 18.790678,
+    "pb": 5.226491,
+    "ps": 2.5516605,
+    "roe": 0.13669989194848114,
+    "eps": 47.63,
+    "de": 0.8980724823775877,
+    "margin_net": 0.12686957163446985,
+    "current_ratio": 1.295473266769486,
+    "roa": 0.0711402024663095,
+    "bv": 171.24,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1806198.0,
+      "2025-Q2": 3734589.0,
+      "2025-Q3": 5772123.0,
+      "2025-Q4": 7922246.0,
+      "2026-Q1": 2365425.0,
+      "2026-Q2": 4647923.0
+    },
+    "eps": {
+      "2025-Q1": 8.940075247737312,
+      "2025-Q2": 20.0,
+      "2025-Q3": 30.0,
+      "2025-Q4": 44.0,
+      "2026-Q1": 12.14,
+      "2026-Q2": 23.41
+    },
+    "net_income": {
+      "2025-Q1": 225204.0,
+      "2025-Q2": 505686.0,
+      "2025-Q3": 790279.0,
+      "2025-Q4": 1109251.0,
+      "2026-Q1": 305894.0,
+      "2026-Q2": 589680.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2025": 44.0
+    },
+    "revenue_per_share": {
+      "2025": 7922246.0
+    }
+  },
+  "statistik": {
+    "market_cap": 22545401118720,
+    "enterprise_value": 24026864943104,
+    "shares_outstanding": 25190392000,
+    "free_float_pct": 17.903000000952744
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.214,
+    "vol_trend": 0.564,
+    "price_chg_20d": -4.28
+  },
+  "neraca": {
+    "aset": 8288984.0,
+    "aset_lancar": 3793296.0,
+    "kas": 911480.0,
+    "piutang_usaha": null,
+    "persediaan": 2338014.0,
+    "aset_tetap": 1914319.0,
+    "liabilitas": 3874000.0,
+    "liabilitas_jangka_pendek": 2928116.0,
+    "utang_usaha": 104716.0,
+    "utang_bank": 295000.0,
+    "ekuitas": 4313683.0,
+    "ekuitas_induk": 4313683.0,
+    "modal_saham": null,
+    "saldo_laba": 155952.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4647923.0,
+    "beban_pokok": 2231138.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 761969.0,
+    "beban_pajak": -171264.0,
+    "laba_bersih": 589680.0,
+    "laba_induk": 589680.0,
+    "eps_basic": 23.41,
+    "eps_diluted": 23.41
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 400468.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

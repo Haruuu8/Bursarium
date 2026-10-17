@@ -1,0 +1,123 @@
+{
+  "kode": "MPIX",
+  "nama": "PT Mitra Pedagang Indonesia Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Infrastructure",
+  "harga": 206.0,
+  "update": "2026-10-11 11:59",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.0103445,
+    "ps": 0.14651628,
+    "roe": 0.05545758549805754,
+    "eps": 11.37,
+    "de": 0.14341213217511392,
+    "margin_net": 0.007988155382192514,
+    "current_ratio": 11.679633712545561,
+    "roa": 0.048501834060970236,
+    "bv": 102.47,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 241906949562.0,
+      "2024-Q2": 620601171002.0,
+      "2024-Q3": 1027284316732.0,
+      "2024-Q4": 1494736188279.0,
+      "2025-Q1": 450029341404.0,
+      "2025-Q2": 860344766214.0,
+      "2025-Q4": 1945699508007.0,
+      "2026-Q1": 536138704726.0,
+      "2026-Q2": 1111604676318.0
+    },
+    "eps": {
+      "2024-Q1": 4.07,
+      "2024-Q2": 6.89,
+      "2024-Q3": 12.17,
+      "2024-Q4": 13.13,
+      "2025-Q1": 2.94,
+      "2025-Q2": 4.41,
+      "2025-Q4": 5.18,
+      "2026-Q1": 3.45,
+      "2026-Q2": 5.68
+    },
+    "net_income": {
+      "2024-Q1": 5425615613.0,
+      "2024-Q2": 9973823924.0,
+      "2024-Q3": 18097449485.0,
+      "2024-Q4": 20083262116.0,
+      "2025-Q1": 4589346459.0,
+      "2025-Q2": 6886484930.0,
+      "2025-Q4": 7921881262.0,
+      "2026-Q1": 5383795300.0,
+      "2026-Q2": 8879670878.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 13.17,
+      "2024": 13.13,
+      "2025": 5.18
+    },
+    "revenue_per_share": {
+      "2023": 819947029143.0,
+      "2024": 1494736188279.0,
+      "2025": 1945699508007.0
+    }
+  },
+  "statistik": {
+    "market_cap": 321890320384,
+    "enterprise_value": 317952884736,
+    "shares_outstanding": 1562574308,
+    "free_float_pct": 33.52299998266706
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2549,
+    "vol_trend": 2.007,
+    "price_chg_20d": 62.2
+  },
+  "neraca": {
+    "aset": 183079074223.0,
+    "aset_lancar": 165064049341.0,
+    "kas": 14444217501.0,
+    "piutang_usaha": 33266433597.0,
+    "persediaan": 117308284947.0,
+    "aset_tetap": 15769034111.0,
+    "liabilitas": 22962639325.0,
+    "liabilitas_jangka_pendek": 14132639208.0,
+    "utang_usaha": 33266433597.0,
+    "utang_bank": 1940000000.0,
+    "ekuitas": 160116434898.0,
+    "ekuitas_induk": 160116434898.0,
+    "modal_saham": null,
+    "saldo_laba": 4000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1111604676318.0,
+    "beban_pokok": 1090504395505.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11382082878.0,
+    "beban_pajak": -2502412000.0,
+    "laba_bersih": 8879670878.0,
+    "laba_induk": 8879670878.0,
+    "eps_basic": 5.68,
+    "eps_diluted": 5.68
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10407378380.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

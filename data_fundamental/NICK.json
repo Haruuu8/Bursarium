@@ -1,0 +1,127 @@
+{
+  "kode": "NICK",
+  "nama": "PT Charnic Capital Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 2720.0,
+  "update": "2026-10-11 15:53",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.243698,
+    "pb": 5.8521934,
+    "ps": 46.930656,
+    "roe": -0.029989881791180086,
+    "eps": 329.95,
+    "de": 0.09912053894290017,
+    "margin_net": 1.9003502755468373,
+    "current_ratio": 68.57292888081476,
+    "roa": -0.027285035800429347,
+    "bv": 464.78,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": -9192442934.0,
+      "2024-Q2": -9764073247.0,
+      "2024-Q3": -16338596702.0,
+      "2024-Q4": 6436780052.0,
+      "2025-Q1": 959764935.0,
+      "2025-Q2": 67617594247.0,
+      "2025-Q3": 102211936978.0,
+      "2025-Q4": 110132936051.0,
+      "2026-Q1": -16927221892.0,
+      "2026-Q2": -4776084757.0
+    },
+    "eps": {
+      "2024-Q1": -13.02,
+      "2024-Q2": -12.46,
+      "2024-Q3": -29.83,
+      "2024-Q4": 12.84,
+      "2025-Q1": 4.99,
+      "2025-Q2": 104.8,
+      "2025-Q3": 128.04,
+      "2025-Q4": 166.27,
+      "2026-Q1": -25.36,
+      "2026-Q2": -13.94
+    },
+    "net_income": {
+      "2024-Q1": -8479124218.0,
+      "2024-Q2": -8111195792.0,
+      "2024-Q3": -19422621608.0,
+      "2024-Q4": 8360560730.0,
+      "2025-Q1": 3246170770.0,
+      "2025-Q2": 68249724299.0,
+      "2025-Q3": 83375725921.0,
+      "2025-Q4": 108268099272.0,
+      "2026-Q1": -16508950503.0,
+      "2026-Q2": -9076233984.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -78.16,
+      "2023": -105.11,
+      "2024": 12.84,
+      "2025": 166.27
+    },
+    "revenue_per_share": {
+      "2022": -50235590241.0,
+      "2024": 6436780052.0,
+      "2025": 110132936051.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1771128094720,
+    "enterprise_value": 1559763484672,
+    "shares_outstanding": 651150000,
+    "free_float_pct": 21.566
+  },
+  "akumulasi": {
+    "score": 3.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5779,
+    "vol_trend": 0.473,
+    "price_chg_20d": 11.93
+  },
+  "neraca": {
+    "aset": 332645119119.0,
+    "aset_lancar": 268485916978.0,
+    "kas": 190316779671.0,
+    "piutang_usaha": 2089998601.0,
+    "persediaan": null,
+    "aset_tetap": 44747786032.0,
+    "liabilitas": 29998157723.0,
+    "liabilitas_jangka_pendek": 3915333957.0,
+    "utang_usaha": 2089998601.0,
+    "utang_bank": null,
+    "ekuitas": 302643206372.0,
+    "ekuitas_induk": 302643206372.0,
+    "modal_saham": null,
+    "saldo_laba": 219212916264.0
+  },
+  "laba_rugi": {
+    "pendapatan": -4776084757.0,
+    "beban_pokok": 10846284230.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9075573676.0,
+    "beban_pajak": null,
+    "laba_bersih": -9076233984.0,
+    "laba_induk": -9076233984.0,
+    "eps_basic": -13.94,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 24354633667.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

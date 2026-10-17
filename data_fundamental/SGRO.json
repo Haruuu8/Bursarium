@@ -1,0 +1,128 @@
+{
+  "kode": "SGRO",
+  "nama": "PT Prime Agri Resources Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 4310.0,
+  "update": "2026-10-11 14:58",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 19.327354,
+    "pb": 1.5291665,
+    "ps": 1.2726178,
+    "roe": 0.08567277435174171,
+    "eps": 223.0,
+    "de": 0.6927857884091658,
+    "margin_net": 0.1502043424305735,
+    "current_ratio": 1.0002371874835287,
+    "roa": 0.050610523161500935,
+    "bv": 2818.53,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1133907.0,
+      "2024-Q2": 2268769.0,
+      "2024-Q3": 3485488.0,
+      "2024-Q4": 5694228.0,
+      "2025-Q1": 1677323.0,
+      "2025-Q2": 3293852.0,
+      "2025-Q3": 4612824.0,
+      "2025-Q4": 6446671.0,
+      "2026-Q1": 1256531.0,
+      "2026-Q2": 2923524.0
+    },
+    "eps": {
+      "2024-Q1": 55.0,
+      "2024-Q2": 88.0,
+      "2024-Q3": 136.0,
+      "2024-Q4": 412.0,
+      "2025-Q1": 158.0,
+      "2025-Q2": 295.99555537634643,
+      "2025-Q3": 480.9,
+      "2025-Q4": 278.0,
+      "2026-Q1": 60.0,
+      "2026-Q2": 240.0
+    },
+    "net_income": {
+      "2024-Q1": 100326.0,
+      "2024-Q2": 160172.0,
+      "2024-Q3": 247272.0,
+      "2024-Q4": 748560.0,
+      "2025-Q1": 287540.0,
+      "2025-Q2": 538282.0,
+      "2025-Q3": 874596.0,
+      "2025-Q4": 359677.0,
+      "2026-Q1": 107930.0,
+      "2026-Q2": 439126.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 577.0,
+      "2023": 266.0,
+      "2024": 412.0,
+      "2025": 278.0
+    },
+    "revenue_per_share": {
+      "2022": 5671723.0,
+      "2023": 5620503.0,
+      "2024": 5694228.0,
+      "2025": 6446671.0
+    }
+  },
+  "statistik": {
+    "market_cap": 7838260789248,
+    "enterprise_value": 7446973120512,
+    "shares_outstanding": 1818622000,
+    "free_float_pct": 1.3009443963616407
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1589,
+    "vol_trend": 0.181,
+    "price_chg_20d": -10.02
+  },
+  "neraca": {
+    "aset": 8676575.0,
+    "aset_lancar": 2960386.0,
+    "kas": 1523094.0,
+    "piutang_usaha": 145474.0,
+    "persediaan": 761760.0,
+    "aset_tetap": 1978664.0,
+    "liabilitas": 3550956.0,
+    "liabilitas_jangka_pendek": 2959684.0,
+    "utang_usaha": 145474.0,
+    "utang_bank": 30882.0,
+    "ekuitas": 5125619.0,
+    "ekuitas_induk": 5125619.0,
+    "modal_saham": null,
+    "saldo_laba": 83995.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2923524.0,
+    "beban_pokok": 2123752.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 573264.0,
+    "beban_pajak": -134138.0,
+    "laba_bersih": 439126.0,
+    "laba_induk": 439126.0,
+    "eps_basic": 240.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 85709.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

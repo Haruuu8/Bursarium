@@ -1,0 +1,122 @@
+{
+  "kode": "ECII",
+  "nama": "PT Electronic City Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 154.0,
+  "update": "2026-10-11 13:21",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.19081415,
+    "ps": 0.08531648,
+    "roe": -0.009915655296603291,
+    "eps": 7.0,
+    "de": 0.5757203552246762,
+    "margin_net": -0.008516008343227662,
+    "current_ratio": 1.490492214301846,
+    "roa": -0.006292487130119709,
+    "bv": 807.07,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 609684164074.0,
+      "2024-Q2": 1228504182001.0,
+      "2024-Q3": 1751656245437.0,
+      "2024-Q4": 2429123633795.0,
+      "2025-Q3": 1663707936717.0,
+      "2025-Q4": 2188342375976.0,
+      "2026-Q1": 600290961136.0,
+      "2026-Q2": 1141641037932.0
+    },
+    "eps": {
+      "2024-Q1": 2.0,
+      "2024-Q2": -2.0,
+      "2024-Q3": -13.0,
+      "2024-Q4": 7.0,
+      "2025-Q3": -40.0,
+      "2025-Q4": -123.64,
+      "2026-Q1": 160000.0,
+      "2026-Q2": -8.0
+    },
+    "net_income": {
+      "2024-Q1": 2125453226.0,
+      "2024-Q2": -2927205068.0,
+      "2024-Q3": -15300098391.0,
+      "2024-Q4": 8494709059.0,
+      "2025-Q3": -48663635177.0,
+      "2025-Q4": -150207842343.0,
+      "2026-Q1": 195088266.0,
+      "2026-Q2": -9722224604.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.0,
+      "2023": 11.0,
+      "2024": 7.0,
+      "2025": -123.64
+    },
+    "revenue_per_share": {
+      "2022": 2192317036972.0,
+      "2023": 2469277515021.0,
+      "2024": 2429123633795.0,
+      "2025": 2188342375976.0
+    }
+  },
+  "statistik": {
+    "market_cap": 187091795968,
+    "enterprise_value": -56542593024,
+    "shares_outstanding": 1214881805,
+    "free_float_pct": 46.43100000991455
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3375,
+    "vol_trend": 0.776,
+    "price_chg_20d": -7.23
+  },
+  "neraca": {
+    "aset": 1545052759419.0,
+    "aset_lancar": 713322879881.0,
+    "kas": 296322911925.0,
+    "piutang_usaha": 15716048063.0,
+    "persediaan": 308149126588.0,
+    "aset_tetap": 21181487531.0,
+    "liabilitas": 564489429610.0,
+    "liabilitas_jangka_pendek": 478582090558.0,
+    "utang_usaha": 15716048063.0,
+    "utang_bank": null,
+    "ekuitas": 980492394419.0,
+    "ekuitas_induk": 980492394419.0,
+    "modal_saham": null,
+    "saldo_laba": -282992101094.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1141641037932.0,
+    "beban_pokok": 958271491357.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9705483790.0,
+    "beban_pajak": null,
+    "laba_bersih": -9722224604.0,
+    "laba_induk": -9722224604.0,
+    "eps_basic": -8.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 21181487531.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

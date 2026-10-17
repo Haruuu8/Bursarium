@@ -1,0 +1,125 @@
+{
+  "kode": "SDPC",
+  "nama": "PT Millennium Pharmacon International Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 196.0,
+  "update": "2026-10-11 14:56",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.0475163,
+    "pb": 0.75401723,
+    "ps": 0.058093272,
+    "roe": 0.05907115031355794,
+    "eps": 32.41,
+    "de": 5.3449718840543765,
+    "margin_net": 0.009178993348458554,
+    "current_ratio": 1.1095075496941693,
+    "roa": 0.009310014557905208,
+    "bv": 259.94,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 973732361455.0,
+      "2024-Q2": 1940285110547.0,
+      "2024-Q3": 2924110991772.0,
+      "2024-Q4": 3916863878530.0,
+      "2025-Q2": 1942682775984.0,
+      "2025-Q3": 3002174952376.0,
+      "2025-Q4": 4109810339016.0,
+      "2026-Q1": 1017973008426.0,
+      "2026-Q2": 2131201413746.0
+    },
+    "eps": {
+      "2024-Q1": 5.57,
+      "2024-Q2": 12.0322764854396,
+      "2024-Q3": 16.08,
+      "2024-Q4": 13.28,
+      "2025-Q2": 13.14,
+      "2025-Q3": 16.0,
+      "2025-Q4": 30.2,
+      "2026-Q1": 7.93,
+      "2026-Q2": 15.36
+    },
+    "net_income": {
+      "2024-Q1": 7099782770.0,
+      "2024-Q2": 15348276393.0,
+      "2024-Q3": 20516140628.0,
+      "2024-Q4": 16928878936.0,
+      "2025-Q2": 16745209648.0,
+      "2025-Q3": 20385582454.0,
+      "2025-Q4": 38468911988.0,
+      "2026-Q1": 10104641692.0,
+      "2026-Q2": 19562283601.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 19.2,
+      "2023": 25.97,
+      "2024": 13.28,
+      "2025": 30.2
+    },
+    "revenue_per_share": {
+      "2022": 3200833096416.0,
+      "2023": 3363517807834.0,
+      "2024": 3916863878530.0,
+      "2025": 4109810339016.0
+    }
+  },
+  "statistik": {
+    "market_cap": 249704005632,
+    "enterprise_value": 1163871387648,
+    "shares_outstanding": 1274000000,
+    "free_float_pct": 11.626
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3373,
+    "vol_trend": 0.785,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 2101208701590.0,
+    "aset_lancar": 1868751807504.0,
+    "kas": 33780457569.0,
+    "piutang_usaha": 945055540189.0,
+    "persediaan": 614454607585.0,
+    "aset_tetap": 107511898464.0,
+    "liabilitas": 1770066356931.0,
+    "liabilitas_jangka_pendek": 1684307428119.0,
+    "utang_usaha": 945055540189.0,
+    "utang_bank": 890847432254.0,
+    "ekuitas": 331164764816.0,
+    "ekuitas_induk": 331164764816.0,
+    "modal_saham": null,
+    "saldo_laba": 18154500000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2131201413746.0,
+    "beban_pokok": 1948144037641.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 28109585859.0,
+    "beban_pajak": -8548488132.0,
+    "laba_bersih": 19562283601.0,
+    "laba_induk": 19562283601.0,
+    "eps_basic": 15.36,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2946254470.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

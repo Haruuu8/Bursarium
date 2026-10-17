@@ -1,0 +1,154 @@
+{
+  "kode": "IPAC",
+  "nama": "PT Era Graharealty Tbk",
+  "periode_terbaru": "2026-tw1",
+  "update": "2026-10-09 18:47",
+  "neraca": {
+    "aset": 53165955745.0,
+    "aset_lancar": 28368683465.0,
+    "aset_tidak_lancar": 24797272280.0,
+    "kas": 22733425204.0,
+    "piutang_usaha": 3901725717.0,
+    "persediaan": null,
+    "aset_tetap": 3878845005.0,
+    "investasi": -238587501.0,
+    "properti_investasi": null,
+    "goodwill": 16640920237.0,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 14363833060.0,
+    "liabilitas_jangka_pendek": 5146659766.0,
+    "liabilitas_jangka_panjang": 9217173294.0,
+    "utang_usaha": 3901725717.0,
+    "utang_bank": null,
+    "ekuitas": 35117810676.0,
+    "ekuitas_induk": 35117810676.0,
+    "ekuitas_non_pengendali": 3684312009.0,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 21680872247.0,
+    "saldo_laba": 3060574029.0
+  },
+  "laba_rugi": {
+    "pendapatan": 12947707225.0,
+    "beban_pokok": 6681871568.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "beban_bunga": null,
+    "laba_sebelum_pajak": -1999806883.0,
+    "beban_pajak": 91007400.0,
+    "laba_bersih": -1443030080.0,
+    "laba_induk": -1443030080.0,
+    "laba_komprehensif": null,
+    "eps_basic": -2.01,
+    "eps_diluted": -2.01
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15584356.0,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": -0.04109111736245525,
+    "roa": -0.027141994529755256,
+    "der": 0.4090184662284897,
+    "dar": 0.27016975165260426,
+    "current_ratio": 5.512057286632769,
+    "margin_laba_bersih": -0.11145062634824908,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": null,
+    "quick_ratio": 5.512057286632769
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 19350542822.0,
+      "2024-Q4": 44704983641.0,
+      "2025-Q1": 14288728183.0,
+      "2025-Q2": 25820946929.0,
+      "2026-Q1": 12947707225.0,
+      "2026-Q2": 27533812300.0
+    },
+    "eps": {
+      "2024-Q2": -1.14,
+      "2024-Q4": 0.49,
+      "2025-Q1": -0.91,
+      "2025-Q2": -1.29,
+      "2026-Q1": -2.01,
+      "2026-Q2": -1.48
+    },
+    "net_income": {
+      "2024-Q2": -1178366359.0,
+      "2024-Q4": 461253568.0,
+      "2025-Q1": -863757683.0,
+      "2025-Q2": -1224097210.0,
+      "2026-Q1": -1443030080.0,
+      "2026-Q2": -1408464503.0
+    },
+    "aset": {
+      "2024-Q2": 45955713362.0,
+      "2024-Q4": 48477411779.0,
+      "2025-Q1": 48980627855.0,
+      "2025-Q2": 46915364622.0,
+      "2026-Q1": 53165955745.0,
+      "2026-Q2": 53926179503.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 3.35,
+      "2024": 0.49,
+      "2025": 1.56
+    },
+    "revenue": {
+      "2023": 28793867081.0,
+      "2024": 44704983641.0,
+      "2025": 58499735099.0
+    },
+    "net_income": {
+      "2023": 2960731743.0,
+      "2024": 461253568.0,
+      "2025": 1755825449.0
+    },
+    "ekuitas": {
+      "2023": 33447707562.0,
+      "2024": 35017822468.0,
+      "2025": 36560573757.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": 49.437614,
+    "pb": 5.107004,
+    "ps": 2.9815211,
+    "roe": 0.02853,
+    "eps": 3.82,
+    "de": 0.02226,
+    "margin_net": 0.026099999,
+    "current_ratio": 5.44,
+    "roa": 0.03102,
+    "bv": 37.01,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "statistik": {
+    "market_cap": 179525140480,
+    "enterprise_value": 160651395072,
+    "shares_outstanding": 949868500,
+    "free_float_pct": 9.40199996104724
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 0.0,
+    "price_chg_20d": 0.0
+  },
+  "harga": 189.0,
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "update_bv": "2026-10-11 17:37"
+}

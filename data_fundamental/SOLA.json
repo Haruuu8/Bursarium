@@ -1,0 +1,121 @@
+{
+  "kode": "SOLA",
+  "nama": "PT Xolare RCR Energy TBK",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 79.0,
+  "update": "2026-10-11 12:01",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3669003,
+    "ps": 0.8076232,
+    "roe": -0.014705922730656448,
+    "eps": 13.59,
+    "de": 0.7393558791256362,
+    "margin_net": -0.031900104767352236,
+    "current_ratio": 1.3838724180592812,
+    "roa": -0.008449814517504414,
+    "bv": 57.79,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 33094636210.0,
+      "2024-Q3": 72058400853.0,
+      "2024-Q4": 119079832588.0,
+      "2025-Q1": 14948854526.0,
+      "2025-Q2": 100020617371.0,
+      "2025-Q3": 172342386246.0,
+      "2025-Q4": 333998417970.0,
+      "2026-Q1": 75268216755.0,
+      "2026-Q2": 87586308176.0
+    },
+    "eps": {
+      "2024-Q2": -1.28,
+      "2024-Q3": 5364.954514285715,
+      "2024-Q4": 2.19,
+      "2025-Q1": 30000.0,
+      "2025-Q2": 3.08,
+      "2025-Q3": 6.6,
+      "2025-Q4": 13.59,
+      "2026-Q1": 3.33,
+      "2026-Q2": -850000.0
+    },
+    "net_income": {
+      "2024-Q2": -4195362587.0,
+      "2024-Q3": 17603757.0,
+      "2024-Q4": 6697664845.0,
+      "2025-Q1": 113448286.0,
+      "2025-Q2": 10114514231.0,
+      "2025-Q3": 21686417778.0,
+      "2025-Q4": 44646409613.0,
+      "2026-Q1": 10935714753.0,
+      "2026-Q2": -2794012407.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 2.19,
+      "2025": 13.59
+    },
+    "revenue_per_share": {
+      "2024": 119079832588.0,
+      "2025": 333998417970.0
+    }
+  },
+  "statistik": {
+    "market_cap": 259702636544,
+    "enterprise_value": 307126304768,
+    "shares_outstanding": 3287375000,
+    "free_float_pct": 18.942999992395148
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3042,
+    "vol_trend": 0.436,
+    "price_chg_20d": -13.19
+  },
+  "neraca": {
+    "aset": 330659614032.0,
+    "aset_lancar": 185967389022.0,
+    "kas": 2259620214.0,
+    "piutang_usaha": 88597270097.0,
+    "persediaan": 18769076863.0,
+    "aset_tetap": 120527614626.0,
+    "liabilitas": 140471940272.0,
+    "liabilitas_jangka_pendek": 134381888529.0,
+    "utang_usaha": 88597270097.0,
+    "utang_bank": 19738995147.0,
+    "ekuitas": 189992322017.0,
+    "ekuitas_induk": 189992322017.0,
+    "modal_saham": null,
+    "saldo_laba": 14000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 87586308176.0,
+    "beban_pokok": 76183634868.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2794380904.0,
+    "beban_pajak": 1569492833.0,
+    "laba_bersih": -2794012407.0,
+    "laba_induk": -2794012407.0,
+    "eps_basic": -850000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8455622698.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

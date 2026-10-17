@@ -1,0 +1,128 @@
+{
+  "kode": "CFIN",
+  "nama": "PT. Clipan Finance Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 356.0,
+  "update": "2026-10-11 13:01",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.061638,
+    "pb": 0.24928053,
+    "ps": 2.2991724,
+    "roe": 0.017984566861829702,
+    "eps": 58.73,
+    "de": 0.629047521681886,
+    "margin_net": 210.58099921807482,
+    "current_ratio": null,
+    "roa": 0.011039927701594487,
+    "bv": 1428.11,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 315678.0,
+      "2024-Q2": 583558.0,
+      "2024-Q3": 854095.0,
+      "2024-Q4": 1026129.0,
+      "2025-Q1": 173985.0,
+      "2025-Q2": 439818.0,
+      "2025-Q3": 630202.0,
+      "2025-Q4": 872061.0,
+      "2026-Q1": 138017.0,
+      "2026-Q2": 485980.0
+    },
+    "eps": {
+      "2024-Q1": 21610.0,
+      "2024-Q2": 32.18,
+      "2024-Q3": 40.32,
+      "2024-Q4": 53.91,
+      "2025-Q1": 8.79,
+      "2025-Q2": 20210.0,
+      "2025-Q3": 34050.0,
+      "2025-Q4": 53.26,
+      "2026-Q1": 14.89,
+      "2026-Q2": 25.68
+    },
+    "net_income": {
+      "2024-Q1": 86092008.0,
+      "2024-Q2": 128207020.0,
+      "2024-Q3": 160660399.0,
+      "2024-Q4": 214801061.0,
+      "2025-Q1": 35038257.0,
+      "2025-Q2": 80526663.0,
+      "2025-Q3": 135658728.0,
+      "2025-Q4": 212215701.0,
+      "2026-Q1": 59332365.0,
+      "2026-Q2": 102338154.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 77.98,
+      "2023": 204540.0,
+      "2024": 53.91,
+      "2025": 53.26
+    },
+    "revenue_per_share": {
+      "2022": 2391749.0,
+      "2023": 1735489000.0,
+      "2024": 1026129.0,
+      "2025": 872061.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1418489233408,
+    "enterprise_value": 4500687945728,
+    "shares_outstanding": 3984520457,
+    "free_float_pct": 35.89300000926059
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3782,
+    "vol_trend": 0.523,
+    "price_chg_20d": -2.73
+  },
+  "neraca": {
+    "aset": 9269821032.0,
+    "aset_lancar": null,
+    "kas": 70123632.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 139492519.0,
+    "liabilitas": 3579489161.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": 3144312643.0,
+    "ekuitas": 5690331871.0,
+    "ekuitas_induk": 5690331871.0,
+    "modal_saham": null,
+    "saldo_laba": 4283054213.0
+  },
+  "laba_rugi": {
+    "pendapatan": 485980.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 132258845.0,
+    "beban_pajak": -29920691.0,
+    "laba_bersih": 102338154.0,
+    "laba_induk": 102338154.0,
+    "eps_basic": 25.68,
+    "eps_diluted": 25.68
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6779378.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

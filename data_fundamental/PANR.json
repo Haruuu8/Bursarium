@@ -1,0 +1,128 @@
+{
+  "kode": "PANR",
+  "nama": "PT Panorama Sentrawisata Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 396.0,
+  "update": "2026-10-11 14:35",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.59494925,
+    "ps": 0.1339484,
+    "roe": 0.036880911896372784,
+    "eps": 64.0,
+    "de": 0.7310562863580472,
+    "margin_net": 0.016259428409822595,
+    "current_ratio": 1.577902457018142,
+    "roa": 0.017750923270698663,
+    "bv": 665.6,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 646214539.0,
+      "2024-Q2": 1510395493.0,
+      "2024-Q3": 2242584857.0,
+      "2024-Q4": 3094277043.0,
+      "2025-Q1": 852021885.0,
+      "2025-Q2": 1800581517.0,
+      "2025-Q3": 2605299107.0,
+      "2025-Q4": 3807725258.0,
+      "2026-Q1": 1001886573.0,
+      "2026-Q2": 2094809371.0
+    },
+    "eps": {
+      "2024-Q1": 45500.0,
+      "2024-Q2": 20830.0,
+      "2024-Q3": 25.0,
+      "2024-Q4": 244.0,
+      "2025-Q1": 104300.0,
+      "2025-Q2": 29.45,
+      "2025-Q3": 38.98,
+      "2025-Q4": 64.0,
+      "2026-Q1": 11.12,
+      "2026-Q2": 24.55
+    },
+    "net_income": {
+      "2024-Q1": 6314783.0,
+      "2024-Q2": 28901189.0,
+      "2024-Q3": 34247281.0,
+      "2024-Q4": 335331793.0,
+      "2025-Q1": 14466893.0,
+      "2025-Q2": 40866324.0,
+      "2025-Q3": 54079940.0,
+      "2025-Q4": 89331349.0,
+      "2026-Q1": 15424745.0,
+      "2026-Q2": 34060403.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.2,
+      "2023": 53.0,
+      "2024": 244.0,
+      "2025": 64.0
+    },
+    "revenue_per_share": {
+      "2022": 1526643156.0,
+      "2023": 2858881069.0,
+      "2024": 3094277043.0,
+      "2025": 3807725258.0
+    }
+  },
+  "statistik": {
+    "market_cap": 549450022912,
+    "enterprise_value": 802163720192,
+    "shares_outstanding": 1387500000,
+    "free_float_pct": 21.119
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2053,
+    "vol_trend": 0.643,
+    "price_chg_20d": -6.6
+  },
+  "neraca": {
+    "aset": 1918796137.0,
+    "aset_lancar": 892568774.0,
+    "kas": 257341372.0,
+    "piutang_usaha": 308692812.0,
+    "persediaan": 906468.0,
+    "aset_tetap": 555365679.0,
+    "liabilitas": 675147941.0,
+    "liabilitas_jangka_pendek": 565667903.0,
+    "utang_usaha": 308692812.0,
+    "utang_bank": 89039133.0,
+    "ekuitas": 923523884.0,
+    "ekuitas_induk": 923523884.0,
+    "modal_saham": null,
+    "saldo_laba": 13875000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2094809371.0,
+    "beban_pokok": 1914096565.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 81824531.0,
+    "beban_pajak": -16108471.0,
+    "laba_bersih": 34060403.0,
+    "laba_induk": 34060403.0,
+    "eps_basic": 24.55,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5743425.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

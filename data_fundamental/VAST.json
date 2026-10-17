@@ -1,0 +1,128 @@
+{
+  "kode": "VAST",
+  "nama": "PT Vastland Indonesia Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 110.0,
+  "update": "2026-10-11 11:37",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.83063376,
+    "ps": 8.216152,
+    "roe": 0.020100853323833243,
+    "eps": 5.32,
+    "de": 0.27854134021703386,
+    "margin_net": 0.3974509213591369,
+    "current_ratio": 0.527178731860868,
+    "roa": 0.015721707770842277,
+    "bv": 132.43,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 8978406114.0,
+      "2024-Q2": 18222666729.0,
+      "2024-Q3": 27977814663.0,
+      "2024-Q4": 38112417791.0,
+      "2025-Q1": 9431767471.0,
+      "2025-Q2": 19187574757.0,
+      "2025-Q3": 29251327955.0,
+      "2025-Q4": 39632731330.0,
+      "2026-Q1": 10031057176.0,
+      "2026-Q2": 20465850823.0
+    },
+    "eps": {
+      "2024-Q1": 610000.0,
+      "2024-Q2": 1.8,
+      "2024-Q3": 3.15,
+      "2024-Q4": 4.84,
+      "2025-Q1": 1.03,
+      "2025-Q2": 2.4174074063367788,
+      "2025-Q3": 3.81,
+      "2025-Q4": 5.56,
+      "2026-Q1": 1.17,
+      "2026-Q2": 2.66
+    },
+    "net_income": {
+      "2024-Q1": 1868316548.0,
+      "2024-Q2": 5489475126.0,
+      "2024-Q3": 9632401161.0,
+      "2024-Q4": 14786424430.0,
+      "2025-Q1": 3153685938.0,
+      "2025-Q2": 7386861981.0,
+      "2025-Q3": 11654191801.0,
+      "2025-Q4": 16992870724.0,
+      "2026-Q1": 3573311183.0,
+      "2026-Q2": 8134171266.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 6.9,
+      "2023": 32.93,
+      "2024": 4.84,
+      "2025": 5.56
+    },
+    "revenue_per_share": {
+      "2022": 23761241363.0,
+      "2023": 25685236163.0,
+      "2024": 38112417791.0,
+      "2025": 39632731330.0
+    }
+  },
+  "statistik": {
+    "market_cap": 336131063808,
+    "enterprise_value": 381524475904,
+    "shares_outstanding": 3055737049,
+    "free_float_pct": 20.77400001442336
+  },
+  "akumulasi": {
+    "score": 5.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1072,
+    "vol_trend": 10.835,
+    "price_chg_20d": -2.65
+  },
+  "neraca": {
+    "aset": 517384713198.0,
+    "aset_lancar": 18250159353.0,
+    "kas": 10568245425.0,
+    "piutang_usaha": 268096566.0,
+    "persediaan": null,
+    "aset_tetap": 675217692.0,
+    "liabilitas": 112716755328.0,
+    "liabilitas_jangka_pendek": 34618542536.0,
+    "utang_usaha": 268096566.0,
+    "utang_bank": 1597114938.0,
+    "ekuitas": 404667957870.0,
+    "ekuitas_induk": 404667957870.0,
+    "modal_saham": null,
+    "saldo_laba": 180000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 20465850823.0,
+    "beban_pokok": 4063497307.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8146070255.0,
+    "beban_pajak": -11898989.0,
+    "laba_bersih": 8134171266.0,
+    "laba_induk": 8134171266.0,
+    "eps_basic": 2.66,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 287303529.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

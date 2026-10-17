@@ -1,0 +1,128 @@
+{
+  "kode": "IMAS",
+  "nama": "PT Indomobil Sukses Internasional Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto & Truck Dealerships",
+  "harga": 850.0,
+  "update": "2026-10-11 13:43",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 33.851055,
+    "pb": 0.23962608,
+    "ps": 0.102532946,
+    "roe": 0.0007834267552094174,
+    "eps": 25.11,
+    "de": 4.818552928911504,
+    "margin_net": 0.0006391150134104755,
+    "current_ratio": 0.9235653155381195,
+    "roa": 0.0001305411391226784,
+    "bv": 3547.19,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 7284194.0,
+      "2024-Q2": 14394439.0,
+      "2024-Q3": 21716390.0,
+      "2024-Q4": 29318218.0,
+      "2025-Q1": 7536997.0,
+      "2025-Q2": 14760505.0,
+      "2025-Q3": 22720782.0,
+      "2025-Q4": 30505483.0,
+      "2026-Q1": 8505045.0,
+      "2026-Q2": 17367766.0
+    },
+    "eps": {
+      "2024-Q1": 3.67,
+      "2024-Q2": 9.88,
+      "2024-Q3": 20.4,
+      "2024-Q4": 58.52,
+      "2025-Q1": 1.32,
+      "2025-Q2": 10.8,
+      "2025-Q3": 64.49,
+      "2025-Q4": 33.13,
+      "2026-Q1": 400000.0,
+      "2026-Q2": 2.78
+    },
+    "net_income": {
+      "2024-Q1": 14667.0,
+      "2024-Q2": 39460.0,
+      "2024-Q3": 81500.0,
+      "2024-Q4": 233738.0,
+      "2025-Q1": 5263.0,
+      "2025-Q2": 43157.0,
+      "2025-Q3": 257597.0,
+      "2025-Q4": 132335.0,
+      "2026-Q1": 1584.0,
+      "2026-Q2": 11100.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 111.03,
+      "2023": 158.36,
+      "2024": 58.52,
+      "2025": 33.13
+    },
+    "revenue_per_share": {
+      "2022": 25581929.0,
+      "2023": 28892314.0,
+      "2024": 29318218.0,
+      "2025": 30505483.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3395147268096,
+    "enterprise_value": 57921215922176,
+    "shares_outstanding": 3994291039,
+    "free_float_pct": 26.06499999210498
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1341,
+    "vol_trend": 0.206,
+    "price_chg_20d": -5.56
+  },
+  "neraca": {
+    "aset": 85030666.0,
+    "aset_lancar": 35654227.0,
+    "kas": 4967444.0,
+    "piutang_usaha": 4624447.0,
+    "persediaan": 9494066.0,
+    "aset_tetap": 24001957.0,
+    "liabilitas": 68271778.0,
+    "liabilitas_jangka_pendek": 38604987.0,
+    "utang_usaha": 4624447.0,
+    "utang_bank": 11894309.0,
+    "ekuitas": 14168523.0,
+    "ekuitas_induk": 14168523.0,
+    "modal_saham": null,
+    "saldo_laba": 25000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 17367766.0,
+    "beban_pokok": 14051830.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 197758.0,
+    "beban_pajak": 18697.0,
+    "laba_bersih": 11100.0,
+    "laba_induk": 11100.0,
+    "eps_basic": 2.78,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1087258.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

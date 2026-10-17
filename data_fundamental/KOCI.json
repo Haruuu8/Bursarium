@@ -1,0 +1,121 @@
+{
+  "kode": "KOCI",
+  "nama": "PT Kokoh Exa Nusantara Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 102.0,
+  "update": "2026-10-11 11:52",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.352947,
+    "ps": 9.189964,
+    "roe": 0.0177157485022301,
+    "eps": 4.4,
+    "de": 0.08045787925499076,
+    "margin_net": 0.14129149429755866,
+    "current_ratio": 6.009133604860962,
+    "roa": 0.016396519329791606,
+    "bv": 30.42,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 20694622747.0,
+      "2024-Q2": 38537145268.0,
+      "2024-Q3": 59636059682.0,
+      "2024-Q4": 72585145269.0,
+      "2025-Q2": 35944108108.0,
+      "2025-Q3": 48102720719.0,
+      "2025-Q4": 68503630629.0,
+      "2026-Q1": 9659256799.0,
+      "2026-Q2": 17038378382.0
+    },
+    "eps": {
+      "2024-Q1": 1.37,
+      "2024-Q2": 2.56,
+      "2024-Q3": 4.03,
+      "2024-Q4": 4.73,
+      "2025-Q2": 1.46,
+      "2025-Q3": 3.1,
+      "2025-Q4": 4.4,
+      "2026-Q1": 300000.0,
+      "2026-Q2": 540000.0
+    },
+    "net_income": {
+      "2024-Q1": 6032380760.0,
+      "2024-Q2": 11304998513.0,
+      "2024-Q3": 17804760969.0,
+      "2024-Q4": 20886822817.0,
+      "2025-Q2": 10915146576.0,
+      "2025-Q3": 13702043035.0,
+      "2025-Q4": 19411447971.0,
+      "2026-Q1": 1349404237.0,
+      "2026-Q2": 2407377942.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 4.73,
+      "2025": 4.4
+    },
+    "revenue_per_share": {
+      "2024": 72585145269.0,
+      "2025": 68503630629.0
+    }
+  },
+  "statistik": {
+    "market_cap": 455802978304,
+    "enterprise_value": 448163217408,
+    "shares_outstanding": 4468656707,
+    "free_float_pct": 11.631409461053504
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4305,
+    "vol_trend": 0.42,
+    "price_chg_20d": -23.88
+  },
+  "neraca": {
+    "aset": 146822498945.0,
+    "aset_lancar": 62177670250.0,
+    "kas": 7459939404.0,
+    "piutang_usaha": null,
+    "persediaan": 2165920574.0,
+    "aset_tetap": 5142723864.0,
+    "liabilitas": 10933352534.0,
+    "liabilitas_jangka_pendek": 10347193845.0,
+    "utang_usaha": 1347652514.0,
+    "utang_bank": null,
+    "ekuitas": 135889146411.0,
+    "ekuitas_induk": 135889146411.0,
+    "modal_saham": null,
+    "saldo_laba": 8831180000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 17038378382.0,
+    "beban_pokok": 9961160401.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2632837472.0,
+    "beban_pajak": -225459530.0,
+    "laba_bersih": 2407377942.0,
+    "laba_induk": 2407377942.0,
+    "eps_basic": 540000.0,
+    "eps_diluted": 540000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5626730.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

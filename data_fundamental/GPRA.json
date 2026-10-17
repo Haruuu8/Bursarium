@@ -1,0 +1,125 @@
+{
+  "kode": "GPRA",
+  "nama": "PT Perdana Gapuraprima Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 102.0,
+  "update": "2026-10-11 13:32",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.484425,
+    "pb": 0.32528,
+    "ps": 1.0094413,
+    "roe": 0.022789918522843417,
+    "eps": 15.73,
+    "de": 0.37221689590504903,
+    "margin_net": 0.15067698877045493,
+    "current_ratio": 6.922390172410433,
+    "roa": 0.015291108098189779,
+    "bv": 313.58,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 119996073365.0,
+      "2024-Q2": 273318877498.0,
+      "2024-Q3": 387317208599.0,
+      "2024-Q4": 517063735554.0,
+      "2025-Q2": 224981014064.0,
+      "2025-Q3": 351056743533.0,
+      "2025-Q4": 454284713454.0,
+      "2026-Q1": 80953350035.0,
+      "2026-Q2": 202835202876.0
+    },
+    "eps": {
+      "2024-Q1": 8.6,
+      "2024-Q2": 10.35,
+      "2024-Q3": 19.39,
+      "2024-Q4": 28.3,
+      "2025-Q2": 10.56,
+      "2025-Q3": 18.42,
+      "2025-Q4": 19.29,
+      "2026-Q1": 1.49,
+      "2026-Q2": 7.15
+    },
+    "net_income": {
+      "2024-Q1": 36788763809.0,
+      "2024-Q2": 44247064444.0,
+      "2024-Q3": 82928885076.0,
+      "2024-Q4": 124100698045.0,
+      "2025-Q2": 45147120282.0,
+      "2025-Q3": 76836481297.0,
+      "2025-Q4": 81846563733.0,
+      "2026-Q1": 6386688512.0,
+      "2026-Q2": 30562597586.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 17.65,
+      "2023": 20.89,
+      "2024": 28.3,
+      "2025": 19.29
+    },
+    "revenue_per_share": {
+      "2022": 370376407242.0,
+      "2023": 459530105155.0,
+      "2024": 517063735554.0,
+      "2025": 454284713454.0
+    }
+  },
+  "statistik": {
+    "market_cap": 436218855424,
+    "enterprise_value": 840348532736,
+    "shares_outstanding": 4276655336,
+    "free_float_pct": 11.348999998067649
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.308,
+    "vol_trend": 0.426,
+    "price_chg_20d": -2.86
+  },
+  "neraca": {
+    "aset": 1998716992238.0,
+    "aset_lancar": 1605525408280.0,
+    "kas": 49965401712.0,
+    "piutang_usaha": 42968002790.0,
+    "persediaan": 689103784823.0,
+    "aset_tetap": 34749170027.0,
+    "liabilitas": 499164364842.0,
+    "liabilitas_jangka_pendek": 231932232696.0,
+    "utang_usaha": 42968002790.0,
+    "utang_bank": 54475706000.0,
+    "ekuitas": 1341057781991.0,
+    "ekuitas_induk": 1341057781991.0,
+    "modal_saham": null,
+    "saldo_laba": 34700422490.0
+  },
+  "laba_rugi": {
+    "pendapatan": 202835202876.0,
+    "beban_pokok": 94612516343.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 30523747176.0,
+    "beban_pajak": null,
+    "laba_bersih": 30562597586.0,
+    "laba_induk": 30562597586.0,
+    "eps_basic": 7.15,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4399505727.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,123 @@
+{
+  "kode": "TFCO",
+  "nama": "PT Tifico Fiber Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 1030.0,
+  "update": "2026-10-11 15:12",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 15846.154,
+    "ps": 25698.895,
+    "roe": 0.010382082649160825,
+    "eps": 700.0,
+    "de": 0.09128492933197996,
+    "margin_net": 0.03362825875570336,
+    "current_ratio": 6.201398198978817,
+    "roa": 0.009513631472502898,
+    "bv": 0.06,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2023",
+    "eps_reliable": true,
+    "eps_period": "2023-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 47500145.0,
+      "2024-Q2": 89616958.0,
+      "2024-Q3": 137521378.0,
+      "2025-Q1": 47256477.0,
+      "2025-Q2": 92547153.0,
+      "2025-Q3": 142168938.0,
+      "2025-Q4": 188525304.0,
+      "2026-Q1": 48825559.0,
+      "2026-Q2": 97328560.0
+    },
+    "eps": {
+      "2024-Q1": 40.0,
+      "2024-Q2": -30.0,
+      "2024-Q3": 400.0,
+      "2025-Q1": 400.0,
+      "2025-Q2": 710.0,
+      "2025-Q3": 900.0,
+      "2025-Q4": -300.0,
+      "2026-Q1": -400.0,
+      "2026-Q2": 700.0
+    },
+    "net_income": {
+      "2024-Q1": 201626.0,
+      "2024-Q2": -167094.0,
+      "2024-Q3": 1981231.0,
+      "2025-Q1": 2004019.0,
+      "2025-Q2": 3443679.0,
+      "2025-Q3": 4545672.0,
+      "2025-Q4": -1444716.0,
+      "2026-Q1": -1709737.0,
+      "2026-Q2": 3272990.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 700.0,
+      "2023": 700.0,
+      "2025": -300.0
+    },
+    "revenue_per_share": {
+      "2022": 225468149.0,
+      "2023": 196072753.0,
+      "2025": 188525304.0
+    }
+  },
+  "statistik": {
+    "market_cap": 4967768784896,
+    "enterprise_value": 4967721074688,
+    "shares_outstanding": 4823076400,
+    "free_float_pct": 14.160999999917065
+  },
+  "akumulasi": {
+    "score": 8.4,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1247,
+    "vol_trend": 18.876,
+    "price_chg_20d": 28.75
+  },
+  "neraca": {
+    "aset": 344031615.0,
+    "aset_lancar": 131687776.0,
+    "kas": 30628620.0,
+    "piutang_usaha": 15667945.0,
+    "persediaan": 60048134.0,
+    "aset_tetap": 12433.0,
+    "liabilitas": 28777912.0,
+    "liabilitas_jangka_pendek": 21235175.0,
+    "utang_usaha": 15667945.0,
+    "utang_bank": 878700.0,
+    "ekuitas": 315253703.0,
+    "ekuitas_induk": 315253703.0,
+    "modal_saham": null,
+    "saldo_laba": 24527216.0
+  },
+  "laba_rugi": {
+    "pendapatan": 97328560.0,
+    "beban_pokok": 92981787.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3584026.0,
+    "beban_pajak": -311036.0,
+    "laba_bersih": 3272990.0,
+    "laba_induk": 3272990.0,
+    "eps_basic": 700.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12433.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

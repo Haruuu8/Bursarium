@@ -1,0 +1,158 @@
+{
+  "kode": "UVCR",
+  "nama": "PT Trimegah Karya Pratama Tbk.",
+  "periode_terbaru": "2026-tw2",
+  "update": "2026-10-09 18:50",
+  "neraca": {
+    "aset": 236265288717.0,
+    "aset_lancar": 202587182707.0,
+    "aset_tidak_lancar": 33678106010.0,
+    "kas": 14005100402.0,
+    "piutang_usaha": 11865652560.0,
+    "persediaan": 125264261158.0,
+    "aset_tetap": 17562841953.0,
+    "investasi": 910051279.0,
+    "properti_investasi": 910051279.0,
+    "goodwill": 12843478043.0,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 125271033852.0,
+    "liabilitas_jangka_pendek": 121958990804.0,
+    "liabilitas_jangka_panjang": 3312043048.0,
+    "utang_usaha": 11865652560.0,
+    "utang_bank": 50371912683.0,
+    "ekuitas": 110994254865.0,
+    "ekuitas_induk": 110994254865.0,
+    "ekuitas_non_pengendali": null,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 33267191995.0,
+    "saldo_laba": 7116673666.0
+  },
+  "laba_rugi": {
+    "pendapatan": 628881045728.0,
+    "beban_pokok": 600259899507.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "beban_bunga": 2806663584.0,
+    "laba_sebelum_pajak": 10530549848.0,
+    "beban_pajak": -2156661437.0,
+    "laba_bersih": 8373888411.0,
+    "laba_induk": 8373888411.0,
+    "laba_komprehensif": null,
+    "eps_basic": 4.19,
+    "eps_diluted": 4.19
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 309645868.0,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": 0.07544434098129661,
+    "roa": 0.03544273666467483,
+    "der": 1.1286262879494489,
+    "dar": 0.5302134500258749,
+    "current_ratio": 1.6611090446999301,
+    "margin_laba_bersih": 0.013315536328982995,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": null,
+    "quick_ratio": 0.6340075548285364
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 589866087064.0,
+      "2024-Q4": 834431373367.0,
+      "2025-Q1": 228745395886.0,
+      "2025-Q2": 441435096866.0,
+      "2025-Q3": 665507684565.0,
+      "2026-Q1": 330115022761.0,
+      "2026-Q2": 628881045728.0
+    },
+    "eps": {
+      "2024-Q3": 2.91,
+      "2024-Q4": 1.8,
+      "2025-Q1": -0.57,
+      "2025-Q2": 0.59,
+      "2025-Q3": 1.07,
+      "2026-Q1": 2.13,
+      "2026-Q2": 4.19
+    },
+    "net_income": {
+      "2024-Q3": 5822965787.0,
+      "2024-Q4": 3595155125.0,
+      "2025-Q1": -1135223602.0,
+      "2025-Q2": 1187662520.0,
+      "2025-Q3": 2143703900.0,
+      "2026-Q1": 4258320360.0,
+      "2026-Q2": 8373888411.0
+    },
+    "aset": {
+      "2024-Q3": 174687046558.0,
+      "2024-Q4": 194802004050.0,
+      "2025-Q1": 213984918570.0,
+      "2025-Q2": 220729463046.0,
+      "2025-Q3": 215690153317.0,
+      "2026-Q1": 271347987775.0,
+      "2026-Q2": 236265288717.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 5.94,
+      "2023": 3.45,
+      "2025": 2.74
+    },
+    "revenue": {
+      "2022": 1222169265859.0,
+      "2023": 799216635841.0,
+      "2025": 982180275164.0
+    },
+    "net_income": {
+      "2022": 11885663594.0,
+      "2023": 6940325093.0,
+      "2025": 5473461032.0
+    },
+    "ekuitas": {
+      "2022": 89503306633.0,
+      "2023": 95315878249.0,
+      "2025": 103620438873.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": 84.63768,
+    "pb": 5.413924,
+    "ps": 0.49934095,
+    "roe": 0.12043,
+    "eps": 3.45,
+    "de": 0.47761000000000003,
+    "margin_net": 0.01082,
+    "current_ratio": 1.661,
+    "roa": 0.01541,
+    "bv": 53.94,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "statistik": {
+    "market_cap": 584042283008,
+    "enterprise_value": 623049244672,
+    "shares_outstanding": 2000144838,
+    "free_float_pct": 69.98399997870554
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4504,
+    "vol_trend": 2.498,
+    "price_chg_20d": 88.39
+  },
+  "harga": 292.0,
+  "sektor": "Technology",
+  "industri": "Software - Application",
+  "update_bv": "2026-10-11 17:37"
+}

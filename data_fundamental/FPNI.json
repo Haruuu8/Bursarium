@@ -1,0 +1,125 @@
+{
+  "kode": "FPNI",
+  "nama": "PT Lotte Chemical Titan Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 515.0,
+  "update": "2026-10-11 13:30",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.3,
+    "pb": 25750.0,
+    "ps": 8334.288,
+    "roe": 0.07649864312954732,
+    "eps": 50.0,
+    "de": 0.6345916315803709,
+    "margin_net": 0.04797173144876325,
+    "current_ratio": 1.5310925656534722,
+    "roa": 0.04675935876028458,
+    "bv": 0.02,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 99091.0,
+      "2024-Q2": 192703.0,
+      "2024-Q3": 281269.0,
+      "2024-Q4": 367977.0,
+      "2025-Q2": 153580.0,
+      "2025-Q3": 233907.0,
+      "2025-Q4": 320670.0,
+      "2026-Q1": 80049.0,
+      "2026-Q2": 176875.0
+    },
+    "eps": {
+      "2024-Q1": -200.0,
+      "2024-Q2": -500.0,
+      "2024-Q3": -500.0,
+      "2024-Q4": -1500.0,
+      "2025-Q2": -700.0,
+      "2025-Q3": 1000.0,
+      "2025-Q4": 800.0,
+      "2026-Q1": 300.0,
+      "2026-Q2": 1500.0
+    },
+    "net_income": {
+      "2024-Q1": -1180.0,
+      "2024-Q2": -2983.0,
+      "2024-Q3": -2920.0,
+      "2024-Q4": -8282.0,
+      "2025-Q2": -3822.0,
+      "2025-Q3": 5545.0,
+      "2025-Q4": 4252.0,
+      "2026-Q1": 1641.0,
+      "2026-Q2": 8485.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 500.0,
+      "2023": -100.0,
+      "2024": -1500.0,
+      "2025": 800.0
+    },
+    "revenue_per_share": {
+      "2022": 473879.0,
+      "2023": 376213.0,
+      "2024": 367977.0,
+      "2025": 320670.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2866703237120,
+    "enterprise_value": 2866668371968,
+    "shares_outstanding": 5566414000,
+    "free_float_pct": 7.500999997484915
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1719,
+    "vol_trend": 0.355,
+    "price_chg_20d": -5.5
+  },
+  "neraca": {
+    "aset": 181461.0,
+    "aset_lancar": 99988.0,
+    "kas": 28955.0,
+    "piutang_usaha": 10424.0,
+    "persediaan": 48071.0,
+    "aset_tetap": 56941.0,
+    "liabilitas": 70387.0,
+    "liabilitas_jangka_pendek": 65305.0,
+    "utang_usaha": 10424.0,
+    "utang_bank": null,
+    "ekuitas": 110917.0,
+    "ekuitas_induk": 110917.0,
+    "modal_saham": null,
+    "saldo_laba": -98941.0
+  },
+  "laba_rugi": {
+    "pendapatan": 176875.0,
+    "beban_pokok": 162715.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10619.0,
+    "beban_pajak": -2122.0,
+    "laba_bersih": 8485.0,
+    "laba_induk": 8485.0,
+    "eps_basic": 1500.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1364.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

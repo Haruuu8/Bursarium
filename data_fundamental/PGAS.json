@@ -1,0 +1,120 @@
+{
+  "kode": "PGAS",
+  "nama": "PT Perusahaan Gas Negara (Persero) Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Regulated Gas",
+  "harga": 1420.0,
+  "update": "2026-10-11 14:38",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 8.90059,
+    "pb": 12136.752,
+    "ps": 8739.191,
+    "roe": 0.031965568444525375,
+    "eps": 159.54,
+    "de": 0.8743386789588403,
+    "margin_net": 0.0973017428514532,
+    "current_ratio": 2.0063837014897725,
+    "roa": 0.014582891387117608,
+    "bv": 0.12,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 949333807.0,
+      "2024-Q2": 1838998384.0,
+      "2024-Q3": 2816560475.0,
+      "2025-Q1": 966563402.0,
+      "2025-Q2": 1937792533.0,
+      "2025-Q3": 2922901281.0,
+      "2025-Q4": 3975918206.0,
+      "2026-Q1": 929561551.0
+    },
+    "eps": {
+      "2024-Q1": 4997.14894059226,
+      "2024-Q2": 7697.6501829531635,
+      "2024-Q3": 11030.508656393005,
+      "2025-Q1": 2558.2588549599004,
+      "2025-Q2": 5957.7085646771275,
+      "2025-Q3": 10000.0,
+      "2025-Q4": 8884.133662753562,
+      "2026-Q1": 5026.132615795932
+    },
+    "net_income": {
+      "2024-Q1": 121138427.0,
+      "2024-Q2": 186602650.0,
+      "2024-Q3": 263387873.0,
+      "2025-Q1": 62016053.0,
+      "2025-Q2": 144423841.0,
+      "2025-Q3": 237892510.0,
+      "2025-Q4": 215364799.0,
+      "2026-Q1": 90447959.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 13271.131333861666,
+      "2023": 11000.0,
+      "2025": 8884.133662753562
+    },
+    "revenue_per_share": {
+      "2022": 3568594775.0,
+      "2023": 3646304165.0,
+      "2025": 3975918206.0
+    }
+  },
+  "statistik": {
+    "market_cap": 34422942334976,
+    "enterprise_value": 34423560994816,
+    "shares_outstanding": 24241508195,
+    "free_float_pct": 43.015000003798235
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2698,
+    "vol_trend": 0.833,
+    "price_chg_20d": -6.58
+  },
+  "neraca": {
+    "aset": 6202333721.0,
+    "aset_lancar": 2087825037.0,
+    "kas": 1359938854.0,
+    "piutang_usaha": 256117738.0,
+    "persediaan": 109092503.0,
+    "aset_tetap": 3018854312.0,
+    "liabilitas": 2473979123.0,
+    "liabilitas_jangka_pendek": 1040591107.0,
+    "utang_usaha": 256117738.0,
+    "utang_bank": 35000000.0,
+    "ekuitas": 2829543268.0,
+    "ekuitas_induk": 2829543268.0,
+    "modal_saham": null,
+    "saldo_laba": 2715705689.0
+  },
+  "laba_rugi": {
+    "pendapatan": 929561551.0,
+    "beban_pokok": 771593368.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 136265391.0,
+    "beban_pajak": -14424356.0,
+    "laba_bersih": 90447959.0,
+    "laba_induk": 90447959.0,
+    "eps_basic": 5026.132615795932,
+    "eps_diluted": 3731.1192962377017
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 37556254.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

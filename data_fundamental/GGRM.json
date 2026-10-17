@@ -1,0 +1,126 @@
+{
+  "kode": "GGRM",
+  "nama": "PT Gudang Garam Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Tobacco",
+  "harga": 18000.0,
+  "update": "2026-10-11 13:33",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.8431373,
+    "pb": 0.54111075,
+    "ps": 0.40188125,
+    "roe": 0.046499363530300264,
+    "eps": 2295.0,
+    "de": 0.21528579390943323,
+    "margin_net": 0.07227682737849352,
+    "current_ratio": 3.644119620193322,
+    "roa": 0.03826054341270702,
+    "bv": 33264.91,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 26264938.0,
+      "2024-Q2": 50018584.0,
+      "2024-Q3": 73893383.0,
+      "2024-Q4": 98655483.0,
+      "2025-Q1": 23066333.0,
+      "2025-Q2": 44368534.0,
+      "2025-Q3": 67326797.0,
+      "2025-Q4": 89369758.0,
+      "2026-Q1": 20114143.0,
+      "2026-Q2": 41177430.0
+    },
+    "eps": {
+      "2024-Q1": 310.0,
+      "2024-Q2": 481.0,
+      "2024-Q3": 516.0,
+      "2024-Q4": 510.0,
+      "2025-Q1": 54.0,
+      "2025-Q2": 61.0,
+      "2025-Q3": 575.0,
+      "2025-Q4": 809.0,
+      "2026-Q1": 799.0,
+      "2026-Q2": 1547.0
+    },
+    "net_income": {
+      "2024-Q1": 595572.0,
+      "2024-Q2": 925515.0,
+      "2024-Q3": 992203.0,
+      "2024-Q4": 980805.0,
+      "2025-Q1": 104432.0,
+      "2025-Q2": 117164.0,
+      "2025-Q3": 1106771.0,
+      "2025-Q4": 1556533.0,
+      "2026-Q1": 1538215.0,
+      "2026-Q2": 2976174.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1445.0,
+      "2024": 510.0,
+      "2025": 809.0
+    },
+    "revenue_per_share": {
+      "2022": 124682692.0,
+      "2024": 98655483.0,
+      "2025": 89369758.0
+    }
+  },
+  "statistik": {
+    "market_cap": 34633584476160,
+    "enterprise_value": 25895725170688,
+    "shares_outstanding": 1924088000,
+    "free_float_pct": 23.779000024946882
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2859,
+    "vol_trend": 0.853,
+    "price_chg_20d": -7.1
+  },
+  "neraca": {
+    "aset": 77787029.0,
+    "aset_lancar": 42896233.0,
+    "kas": 8719955.0,
+    "piutang_usaha": 1770283.0,
+    "persediaan": 31762515.0,
+    "aset_tetap": 89684.0,
+    "liabilitas": 13779285.0,
+    "liabilitas_jangka_pendek": 11771357.0,
+    "utang_usaha": 1770283.0,
+    "utang_bank": 761931.0,
+    "ekuitas": 64004618.0,
+    "ekuitas_induk": 64004618.0,
+    "modal_saham": null,
+    "saldo_laba": 200000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 41177430.0,
+    "beban_pokok": 35191908.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3897664.0,
+    "beban_pajak": -921487.0,
+    "laba_bersih": 2976174.0,
+    "laba_induk": 2976174.0,
+    "eps_basic": 1547.0,
+    "eps_diluted": 1547.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 89684.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

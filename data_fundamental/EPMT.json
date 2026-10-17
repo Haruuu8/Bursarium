@@ -1,0 +1,128 @@
+{
+  "kode": "EPMT",
+  "nama": "PT Enseval Putera Megatrading Tbk.",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 2650.0,
+  "update": "2026-10-11 13:24",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.6601305,
+    "pb": 0.8693031,
+    "ps": 0.20405872,
+    "roe": 0.052574731602989866,
+    "eps": 306.0,
+    "de": 0.7225992019457541,
+    "margin_net": 0.023758793850012252,
+    "current_ratio": 2.1182739433971323,
+    "roa": 0.030421972100485646,
+    "bv": 3048.42,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 7976519344065.0,
+      "2024-Q2": 15609294999232.0,
+      "2024-Q3": 23190154033800.0,
+      "2024-Q4": 30957341452181.0,
+      "2025-Q1": 8307891681470.0,
+      "2025-Q2": 16056767980114.0,
+      "2025-Q3": 24434728496186.0,
+      "2025-Q4": 32960722510571.0,
+      "2026-Q1": 9057132801049.0,
+      "2026-Q2": 18271684713312.0
+    },
+    "eps": {
+      "2024-Q1": 103.0,
+      "2024-Q2": 135.0,
+      "2024-Q3": 216.94478145563826,
+      "2024-Q4": 274.0,
+      "2025-Q1": 104.0,
+      "2025-Q2": 145.0,
+      "2025-Q3": 223.0,
+      "2025-Q4": 291.0,
+      "2026-Q1": 99.0,
+      "2026-Q2": 160.0
+    },
+    "net_income": {
+      "2024-Q1": 278934322554.0,
+      "2024-Q2": 366478883934.0,
+      "2024-Q3": 587625313018.0,
+      "2024-Q4": 741773914585.0,
+      "2025-Q1": 280985461160.0,
+      "2025-Q2": 393247681181.0,
+      "2025-Q3": 603871685398.0,
+      "2025-Q4": 789193995959.0,
+      "2026-Q1": 267587095367.0,
+      "2026-Q2": 434113190396.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 313.0,
+      "2023": 254.0,
+      "2024": 274.0,
+      "2025": 291.0
+    },
+    "revenue_per_share": {
+      "2022": 28027488218598.0,
+      "2023": 28507872779591.0,
+      "2024": 30957341452181.0,
+      "2025": 32960722510571.0
+    }
+  },
+  "statistik": {
+    "market_cap": 7177895936000,
+    "enterprise_value": 6963294896128,
+    "shares_outstanding": 2708640000,
+    "free_float_pct": 7.7790000147675595
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2382,
+    "vol_trend": 0.926,
+    "price_chg_20d": 4.33
+  },
+  "neraca": {
+    "aset": 14269725478746.0,
+    "aset_lancar": 12329513610735.0,
+    "kas": 442588599550.0,
+    "piutang_usaha": 5383282976446.0,
+    "persediaan": 5131965328616.0,
+    "aset_tetap": 1531033866270.0,
+    "liabilitas": 5966551523326.0,
+    "liabilitas_jangka_pendek": 5820547266404.0,
+    "utang_usaha": 5383282976446.0,
+    "utang_bank": null,
+    "ekuitas": 8257069074059.0,
+    "ekuitas_induk": 8257069074059.0,
+    "modal_saham": null,
+    "saldo_laba": 99427016423.0
+  },
+  "laba_rugi": {
+    "pendapatan": 18271684713312.0,
+    "beban_pokok": 16431766352253.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 564582217404.0,
+    "beban_pajak": 1658243191.0,
+    "laba_bersih": 434113190396.0,
+    "laba_induk": 434113190396.0,
+    "eps_basic": 160.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2595755918.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

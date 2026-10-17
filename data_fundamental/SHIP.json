@@ -1,0 +1,125 @@
+{
+  "kode": "SHIP",
+  "nama": "PT Sillo Maritime Perdana Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 2670.0,
+  "update": "2026-10-11 15:30",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 27.289454,
+    "pb": 47678.57,
+    "ps": 36127.72,
+    "roe": 0.06653542604659593,
+    "eps": 97.84,
+    "de": 2.568567636843999,
+    "margin_net": 0.08717326847410871,
+    "current_ratio": 1.3248934304065711,
+    "roa": 0.016162508197627354,
+    "bv": 0.06,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 44894742.0,
+      "2024-Q2": 89441100.0,
+      "2024-Q4": 185057669.0,
+      "2025-Q1": 47201683.0,
+      "2025-Q2": 89035089.0,
+      "2025-Q3": 127911411.0,
+      "2025-Q4": 173808110.0,
+      "2026-Q1": 61273928.0,
+      "2026-Q2": 116231629.0
+    },
+    "eps": {
+      "2024-Q1": 2400.0,
+      "2024-Q2": 3400.0,
+      "2024-Q4": 6400.0,
+      "2025-Q1": 1600.0,
+      "2025-Q2": 4500.0,
+      "2025-Q3": 4800.0,
+      "2025-Q4": 6600.0,
+      "2026-Q1": 2200.0,
+      "2026-Q2": 3700.0
+    },
+    "net_income": {
+      "2024-Q1": 6493032.0,
+      "2024-Q2": 9189774.0,
+      "2024-Q4": 17412249.0,
+      "2025-Q1": 4377268.0,
+      "2025-Q2": 12344227.0,
+      "2025-Q3": 13128732.0,
+      "2025-Q4": 17986251.0,
+      "2026-Q1": 5855699.0,
+      "2026-Q2": 10132291.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 6900.0,
+      "2023": 6800.0,
+      "2024": 6400.0,
+      "2025": 6600.0
+    },
+    "revenue_per_share": {
+      "2022": 134657972.0,
+      "2023": 163631548.0,
+      "2024": 185057669.0,
+      "2025": 173808110.0
+    }
+  },
+  "statistik": {
+    "market_cap": 7261839687680,
+    "enterprise_value": 7262235000832,
+    "shares_outstanding": 2719790000,
+    "free_float_pct": 18.306999988969736
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2954,
+    "vol_trend": 0.59,
+    "price_chg_20d": 2.69
+  },
+  "neraca": {
+    "aset": 626900904.0,
+    "aset_lancar": 109329611.0,
+    "kas": 49642827.0,
+    "piutang_usaha": 30453440.0,
+    "persediaan": null,
+    "aset_tetap": 506324310.0,
+    "liabilitas": 391152147.0,
+    "liabilitas_jangka_pendek": 82519551.0,
+    "utang_usaha": 30453440.0,
+    "utang_bank": 5000000.0,
+    "ekuitas": 152284153.0,
+    "ekuitas_induk": 152284153.0,
+    "modal_saham": null,
+    "saldo_laba": 1400000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 116231629.0,
+    "beban_pokok": 83809692.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 14379855.0,
+    "beban_pajak": -2604366.0,
+    "laba_bersih": 10132291.0,
+    "laba_induk": 10132291.0,
+    "eps_basic": 3700.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 85841290.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

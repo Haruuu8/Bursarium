@@ -1,0 +1,124 @@
+{
+  "kode": "DATA",
+  "nama": "PT Remala Abadi Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 1500.0,
+  "update": "2026-10-11 12:04",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 16.30612,
+    "pb": 4.977188,
+    "ps": 4.344933,
+    "roe": 0.1418511078822329,
+    "eps": 91.99,
+    "de": 1.5792607633600617,
+    "margin_net": 0.23678773305621528,
+    "current_ratio": 0.38335457293899233,
+    "roa": 0.052876560304246964,
+    "bv": 301.37,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 58752380980.0,
+      "2024-Q2": 127478519246.0,
+      "2024-Q3": 249014087512.0,
+      "2024-Q4": 348191610324.0,
+      "2025-Q1": 86394572595.0,
+      "2025-Q2": 203905404483.0,
+      "2025-Q3": 314434987716.0,
+      "2025-Q4": 430349759483.0,
+      "2026-Q1": 118309709877.0,
+      "2026-Q2": 248246513218.0
+    },
+    "eps": {
+      "2024-Q1": 10.64,
+      "2024-Q2": 21.73,
+      "2024-Q3": 41.92,
+      "2024-Q4": 75.53,
+      "2025-Q1": 9.96,
+      "2025-Q2": 24.95,
+      "2025-Q3": 47.07,
+      "2025-Q4": 74.19,
+      "2026-Q1": 19.09,
+      "2026-Q2": 42.75
+    },
+    "net_income": {
+      "2024-Q1": 11698898489.0,
+      "2024-Q2": 29178190827.0,
+      "2024-Q3": 52253244563.0,
+      "2024-Q4": 96589613487.0,
+      "2025-Q1": 13700766465.0,
+      "2025-Q2": 34312403344.0,
+      "2025-Q3": 64721385335.0,
+      "2025-Q4": 102012086225.0,
+      "2026-Q1": 26252130757.0,
+      "2026-Q2": 58781729104.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 75.53,
+      "2025": 74.19
+    },
+    "revenue_per_share": {
+      "2024": 348191610324.0,
+      "2025": 430349759483.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2062500102144,
+    "enterprise_value": 2601529376768,
+    "shares_outstanding": 1375000000,
+    "free_float_pct": 14.444
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3484,
+    "vol_trend": 0.578,
+    "price_chg_20d": -14.77
+  },
+  "neraca": {
+    "aset": 1111678383877.0,
+    "aset_lancar": 233293958334.0,
+    "kas": 9786961354.0,
+    "piutang_usaha": 48194777192.0,
+    "persediaan": 73979934655.0,
+    "aset_tetap": 682598181581.0,
+    "liabilitas": 654430407787.0,
+    "liabilitas_jangka_pendek": 608559215938.0,
+    "utang_usaha": 48194777192.0,
+    "utang_bank": 467156404823.0,
+    "ekuitas": 414390341969.0,
+    "ekuitas_induk": 414390341969.0,
+    "modal_saham": null,
+    "saldo_laba": 13750000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 248246513218.0,
+    "beban_pokok": 71296012306.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 87820896406.0,
+    "beban_pajak": -25246769963.0,
+    "laba_bersih": 58781729104.0,
+    "laba_induk": 58781729104.0,
+    "eps_basic": 42.75,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4126557118.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

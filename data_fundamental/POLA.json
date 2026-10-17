@@ -1,0 +1,126 @@
+{
+  "kode": "POLA",
+  "nama": "PT Pool Advista Finance Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 108.0,
+  "update": "2026-10-11 16:04",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 55.95855,
+    "pb": 1.6205996,
+    "ps": 13.51008,
+    "roe": 0.007268666081644259,
+    "eps": 1.93,
+    "de": 0.030558196841140545,
+    "margin_net": 1.2072492624368112,
+    "current_ratio": null,
+    "roa": 0.0070531349941460085,
+    "bv": 66.64,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 113844373.0,
+      "2024-Q2": 193459167.0,
+      "2024-Q3": 322725354.0,
+      "2024-Q4": 510236208.0,
+      "2025-Q1": 173035975.0,
+      "2025-Q2": 1956043747.0,
+      "2025-Q3": 2473645391.0,
+      "2025-Q4": 3125702944.0,
+      "2026-Q1": 666092767.0,
+      "2026-Q2": 1344593948.0
+    },
+    "eps": {
+      "2024-Q1": -530000.0,
+      "2024-Q2": -730000.0,
+      "2024-Q3": -733372.7802956107,
+      "2024-Q4": -8.58,
+      "2025-Q1": 480000.0,
+      "2025-Q2": -340000.0,
+      "2025-Q3": 2.16,
+      "2025-Q4": 1.11,
+      "2026-Q1": 260000.0,
+      "2026-Q2": 480000.0
+    },
+    "net_income": {
+      "2024-Q1": -1776593538.0,
+      "2024-Q2": -2457587630.0,
+      "2024-Q3": -10827340582.0,
+      "2024-Q4": -28745813427.0,
+      "2025-Q1": 1620584329.0,
+      "2025-Q2": -1137475596.0,
+      "2025-Q3": 7226478859.0,
+      "2025-Q4": 3711867510.0,
+      "2026-Q1": 864294731.0,
+      "2026-Q2": 1623260052.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": -4.969765820860622,
+      "2024": -8.58,
+      "2025": 1.11
+    },
+    "revenue_per_share": {
+      "2023": 659098883.0,
+      "2024": 510236208.0,
+      "2025": 3125702944.0
+    }
+  },
+  "statistik": {
+    "market_cap": 361916170240,
+    "enterprise_value": 243035078656,
+    "shares_outstanding": 3351075600,
+    "free_float_pct": 23.658999993912403
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.2126,
+    "vol_trend": 1.836,
+    "price_chg_20d": 42.11
+  },
+  "neraca": {
+    "aset": 230147310855.0,
+    "aset_lancar": null,
+    "kas": 101465937766.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 42209828944.0,
+    "liabilitas": 6824347086.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 223322963769.0,
+    "ekuitas_induk": 223322963769.0,
+    "modal_saham": null,
+    "saldo_laba": -152718865708.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1344593948.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2154292756.0,
+    "beban_pajak": -531032704.0,
+    "laba_bersih": 1623260052.0,
+    "laba_induk": 1623260052.0,
+    "eps_basic": 480000.0,
+    "eps_diluted": -270000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 42989050.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

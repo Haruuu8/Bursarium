@@ -1,0 +1,128 @@
+{
+  "kode": "INPS",
+  "nama": "PT Indah Prakasa Sentosa Tbk",
+  "sektor": "Industrials",
+  "industri": "Trucking",
+  "harga": 1065.0,
+  "update": "2026-10-11 15:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": -15.789943,
+    "ps": 2.0454693,
+    "roe": -0.1899234731731634,
+    "eps": null,
+    "de": -4.999355343775044,
+    "margin_net": 0.04279097132492389,
+    "current_ratio": 0.6918931375510151,
+    "roa": 0.04721523388483664,
+    "bv": -67.45,
+    "bv_src": "ekuitas/penuh",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2023-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 64836553019.0,
+      "2024-Q2": 127720191990.0,
+      "2024-Q3": 218916991774.0,
+      "2024-Q4": 283911455819.0,
+      "2025-Q1": 61975944593.0,
+      "2025-Q2": 120006472575.0,
+      "2025-Q3": 185651901084.0,
+      "2025-Q4": 263851941927.0,
+      "2026-Q1": 73098786543.0,
+      "2026-Q2": 194585459460.0
+    },
+    "eps": {
+      "2024-Q1": 6.29,
+      "2024-Q2": -14.85,
+      "2024-Q3": -14.06,
+      "2024-Q4": -46.44,
+      "2025-Q1": 16.43,
+      "2025-Q2": 5.11,
+      "2025-Q3": 5.80085613494101,
+      "2025-Q4": -29.64,
+      "2026-Q1": -14.02,
+      "2026-Q2": 26.77
+    },
+    "net_income": {
+      "2024-Q1": 973549096.0,
+      "2024-Q2": -4889404258.0,
+      "2024-Q3": -6985053429.0,
+      "2024-Q4": -30182790681.0,
+      "2025-Q1": 2595738036.0,
+      "2025-Q2": 1559575223.0,
+      "2025-Q3": 2711807007.0,
+      "2025-Q4": -19134479047.0,
+      "2026-Q1": -2239227168.0,
+      "2026-Q2": 8326500816.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -115.03,
+      "2023": 850000.0,
+      "2024": -46.44,
+      "2025": -29.64
+    },
+    "revenue_per_share": {
+      "2022": 281984072223.0,
+      "2023": 277802896905.0,
+      "2024": 283911455819.0,
+      "2025": 263851941927.0
+    }
+  },
+  "statistik": {
+    "market_cap": 692250017792,
+    "enterprise_value": 747777949696,
+    "shares_outstanding": 650000000,
+    "free_float_pct": 32.116
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2916,
+    "vol_trend": 0.476,
+    "price_chg_20d": 31.48
+  },
+  "neraca": {
+    "aset": 176351997669.0,
+    "aset_lancar": 60497420853.0,
+    "kas": 3310961783.0,
+    "piutang_usaha": 47825069147.0,
+    "persediaan": 2420781199.0,
+    "aset_tetap": 97997647850.0,
+    "liabilitas": 219178470433.0,
+    "liabilitas_jangka_pendek": 87437521157.0,
+    "utang_usaha": 47825069147.0,
+    "utang_bank": 15100000000.0,
+    "ekuitas": -43841346606.0,
+    "ekuitas_induk": -43841346606.0,
+    "modal_saham": null,
+    "saldo_laba": -218972477166.0
+  },
+  "laba_rugi": {
+    "pendapatan": 194585459460.0,
+    "beban_pokok": 159775849355.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8370137433.0,
+    "beban_pajak": null,
+    "laba_bersih": 8326500816.0,
+    "laba_induk": 8326500816.0,
+    "eps_basic": 26.77,
+    "eps_diluted": 26.77
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2219435929.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

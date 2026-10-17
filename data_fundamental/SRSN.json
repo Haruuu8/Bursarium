@@ -1,0 +1,128 @@
+{
+  "kode": "SRSN",
+  "nama": "PT Indo Acidatama Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 136.0,
+  "update": "2026-10-11 15:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.570048,
+    "pb": 0.9353958,
+    "ps": 0.68330544,
+    "roe": 0.08234079407358932,
+    "eps": 20.7,
+    "de": 0.15707270869220624,
+    "margin_net": 0.1292452253091876,
+    "current_ratio": 5.45598731401551,
+    "roa": 0.07116302498107996,
+    "bv": 145.39,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 228194939.0,
+      "2024-Q2": 499745859.0,
+      "2024-Q3": 807850990.0,
+      "2024-Q4": 1153788430.0,
+      "2025-Q1": 312451513.0,
+      "2025-Q2": 615810400.0,
+      "2025-Q3": 953096660.0,
+      "2025-Q4": 1256364046.0,
+      "2026-Q1": 239537811.0,
+      "2026-Q2": 557622023.0
+    },
+    "eps": {
+      "2024-Q1": 1.43,
+      "2024-Q2": 3.55,
+      "2024-Q3": 3.26,
+      "2024-Q4": 3740.0,
+      "2025-Q1": 1620.0,
+      "2025-Q2": 4120.0,
+      "2025-Q3": 7490.0,
+      "2025-Q4": 12850.0,
+      "2026-Q1": 4800.0,
+      "2026-Q2": 11.97
+    },
+    "net_income": {
+      "2024-Q1": 8593526.0,
+      "2024-Q2": 21366561.0,
+      "2024-Q3": 19653422.0,
+      "2024-Q4": 22501564.0,
+      "2025-Q1": 9733215.0,
+      "2025-Q2": 24782630.0,
+      "2025-Q3": 45376045.0,
+      "2025-Q4": 77352138.0,
+      "2026-Q1": 28907392.0,
+      "2026-Q2": 72069984.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 5.59,
+      "2023": 9.64,
+      "2024": 3740.0,
+      "2025": 12850.0
+    },
+    "revenue_per_share": {
+      "2022": 977707591.0,
+      "2023": 1026705444.0,
+      "2024": 1153788430.0,
+      "2025": 1256364046.0
+    }
+  },
+  "statistik": {
+    "market_cap": 818719948800,
+    "enterprise_value": 800816365568,
+    "shares_outstanding": 6020000000,
+    "free_float_pct": 34.131
+  },
+  "akumulasi": {
+    "score": 5.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0434,
+    "vol_trend": 2.458,
+    "price_chg_20d": 40.21
+  },
+  "neraca": {
+    "aset": 1012744807.0,
+    "aset_lancar": 596321305.0,
+    "kas": 31984067.0,
+    "piutang_usaha": 232365480.0,
+    "persediaan": 171814365.0,
+    "aset_tetap": 415225502.0,
+    "liabilitas": 137480185.0,
+    "liabilitas_jangka_pendek": 109296681.0,
+    "utang_usaha": 232365480.0,
+    "utang_bank": 95012590.0,
+    "ekuitas": 875264622.0,
+    "ekuitas_induk": 875264622.0,
+    "modal_saham": null,
+    "saldo_laba": 63000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 557622023.0,
+    "beban_pokok": 391335417.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 92592148.0,
+    "beban_pajak": -20522164.0,
+    "laba_bersih": 72069984.0,
+    "laba_induk": 72069984.0,
+    "eps_basic": 11.97,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 731413.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

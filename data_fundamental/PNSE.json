@@ -1,0 +1,128 @@
+{
+  "kode": "PNSE",
+  "nama": "PT Pudjiadi and Sons Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Resorts & Casinos",
+  "harga": 442.0,
+  "update": "2026-10-11 14:43",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.2906983,
+    "ps": 1.5713456,
+    "roe": -0.0843008367902381,
+    "eps": 5.0,
+    "de": 1.7959093627130218,
+    "margin_net": -0.09255671481779071,
+    "current_ratio": 0.45679383779047883,
+    "roa": -0.0242962562121472,
+    "bv": 134.32,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 41217463959.0,
+      "2024-Q2": 99332962735.0,
+      "2024-Q3": 170381179233.0,
+      "2024-Q4": 241138264831.0,
+      "2025-Q1": 45734629197.0,
+      "2025-Q2": 100676983941.0,
+      "2025-Q3": 167382652201.0,
+      "2025-Q4": 227489884306.0,
+      "2026-Q1": 41608020208.0,
+      "2026-Q2": 97602127947.0
+    },
+    "eps": {
+      "2024-Q1": -5.0,
+      "2024-Q2": 2.0,
+      "2024-Q3": 10.0,
+      "2024-Q4": 5.0,
+      "2025-Q1": -7.0,
+      "2025-Q2": -5.0,
+      "2025-Q3": -2.0,
+      "2025-Q4": -13.0,
+      "2026-Q1": -10.0,
+      "2026-Q2": -11.0
+    },
+    "net_income": {
+      "2024-Q1": -3620563896.0,
+      "2024-Q2": 1907487225.0,
+      "2024-Q3": 7936057766.0,
+      "2024-Q4": 4012989439.0,
+      "2025-Q1": -5509663230.0,
+      "2025-Q2": -4070417288.0,
+      "2025-Q3": -1908904458.0,
+      "2025-Q4": -10036330401.0,
+      "2026-Q1": -8078553989.0,
+      "2026-Q2": -9033732322.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -13.0,
+      "2023": 15.0,
+      "2024": 5.0,
+      "2025": -13.0
+    },
+    "revenue_per_share": {
+      "2022": 143574826603.0,
+      "2023": 221619050499.0,
+      "2024": 241138264831.0,
+      "2025": 227489884306.0
+    }
+  },
+  "statistik": {
+    "market_cap": 352633552896,
+    "enterprise_value": 418625224704,
+    "shares_outstanding": 797813496,
+    "free_float_pct": 8.270999968142931
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2822,
+    "vol_trend": 0.679,
+    "price_chg_20d": -11.24
+  },
+  "neraca": {
+    "aset": 371815815701.0,
+    "aset_lancar": 72988535417.0,
+    "kas": 27302435147.0,
+    "piutang_usaha": 14631329644.0,
+    "persediaan": 16199931827.0,
+    "aset_tetap": 18158499262.0,
+    "liabilitas": 192450811582.0,
+    "liabilitas_jangka_pendek": 159784413402.0,
+    "utang_usaha": 14631329644.0,
+    "utang_bank": 4900000000.0,
+    "ekuitas": 107160648292.0,
+    "ekuitas_induk": 107160648292.0,
+    "modal_saham": null,
+    "saldo_laba": 2000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 97602127947.0,
+    "beban_pokok": 47775258223.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -8124132444.0,
+    "beban_pajak": -153748660.0,
+    "laba_bersih": -9033732322.0,
+    "laba_induk": -9033732322.0,
+    "eps_basic": -11.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 18158499262.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

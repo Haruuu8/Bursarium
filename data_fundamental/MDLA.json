@@ -1,0 +1,107 @@
+{
+  "kode": "MDLA",
+  "nama": "PT Medela Potentia Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 208.0,
+  "update": "2026-10-11 12:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.0724244,
+    "pb": 0.94785005,
+    "ps": 0.18630603,
+    "roe": 0.07185423496543612,
+    "eps": 29.41,
+    "de": 1.1227740468307474,
+    "margin_net": 0.02704122687478468,
+    "current_ratio": 1.7804361290062072,
+    "roa": 0.03345038865029709,
+    "bv": 219.44,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q2": 7419932.0,
+      "2025-Q3": 11091369.0,
+      "2025-Q4": 14893442.0,
+      "2026-Q1": 4032659.0,
+      "2026-Q2": 8171005.0
+    },
+    "eps": {
+      "2025-Q2": 16.53,
+      "2025-Q3": 22.87,
+      "2025-Q4": 30.17,
+      "2026-Q1": 8.33,
+      "2026-Q2": 15.77
+    },
+    "net_income": {
+      "2025-Q2": 197948.0,
+      "2025-Q3": 289626.0,
+      "2025-Q4": 392267.0,
+      "2026-Q1": 116660.0,
+      "2026-Q2": 220954.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2025": 30.17
+    },
+    "revenue_per_share": {
+      "2025": 14893442.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2914667462656,
+    "enterprise_value": 2505418473472,
+    "shares_outstanding": 14012825000,
+    "free_float_pct": 17.48200000356816
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3615,
+    "vol_trend": 0.386,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 6605424.0,
+    "aset_lancar": 5996662.0,
+    "kas": 242578.0,
+    "piutang_usaha": 2633972.0,
+    "persediaan": 1886084.0,
+    "aset_tetap": 478305.0,
+    "liabilitas": 3452565.0,
+    "liabilitas_jangka_pendek": 3368086.0,
+    "utang_usaha": 2633972.0,
+    "utang_bank": 1589.0,
+    "ekuitas": 3075031.0,
+    "ekuitas_induk": 3075031.0,
+    "modal_saham": null,
+    "saldo_laba": 56051.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8171005.0,
+    "beban_pokok": 7408773.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 291416.0,
+    "beban_pajak": -65778.0,
+    "laba_bersih": 220954.0,
+    "laba_induk": 220954.0,
+    "eps_basic": 15.77,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1037.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

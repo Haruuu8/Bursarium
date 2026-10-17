@@ -1,0 +1,125 @@
+{
+  "kode": "BBYB",
+  "nama": "PT Bank Neo Commerce Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 199.0,
+  "update": "2026-10-11 12:41",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.5454545,
+    "pb": 0.60114306,
+    "ps": 1.8368839,
+    "roe": 0.06671532985450371,
+    "eps": 43.78,
+    "de": 2.94921205911808,
+    "margin_net": 0.19944195107432874,
+    "current_ratio": null,
+    "roa": 0.016893326784128748,
+    "bv": 331.04,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 990116.0,
+      "2024-Q3": 2684433.0,
+      "2024-Q4": 3612292.0,
+      "2025-Q1": 810442.0,
+      "2025-Q2": 1599459.0,
+      "2025-Q3": 2377101.0,
+      "2025-Q4": 3145192.0,
+      "2026-Q1": 738937.0,
+      "2026-Q2": 1478365.0
+    },
+    "eps": {
+      "2024-Q1": 1.18,
+      "2024-Q3": 0.33999999999999997,
+      "2024-Q4": 1.58,
+      "2025-Q1": 12.71,
+      "2025-Q2": 20.68,
+      "2025-Q3": 34.76,
+      "2025-Q4": 42.37,
+      "2026-Q1": 10.26,
+      "2026-Q2": 22.09
+    },
+    "net_income": {
+      "2024-Q1": 14233.0,
+      "2024-Q3": 4063.0,
+      "2024-Q4": 19885.0,
+      "2025-Q1": 159945.0,
+      "2025-Q2": 276046.0,
+      "2025-Q3": 464003.0,
+      "2025-Q4": 565690.0,
+      "2026-Q1": 136982.0,
+      "2026-Q2": 294848.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -83.75,
+      "2023": -47.61,
+      "2024": 1.58,
+      "2025": 42.37
+    },
+    "revenue_per_share": {
+      "2022": 2161809.0,
+      "2023": 3847049.0,
+      "2024": 3612292.0,
+      "2025": 3145192.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2656745816064,
+    "enterprise_value": 1292380012544,
+    "shares_outstanding": 13350482346,
+    "free_float_pct": 49.49899999665525
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4852,
+    "vol_trend": 0.981,
+    "price_chg_20d": -20.4
+  },
+  "neraca": {
+    "aset": 17453519.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 257127.0,
+    "liabilitas": 13034025.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4419494.0,
+    "ekuitas_induk": 4419494.0,
+    "modal_saham": null,
+    "saldo_laba": -1434490.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1478365.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 298166.0,
+    "laba_sebelum_pajak": 293648.0,
+    "beban_pajak": 1200.0,
+    "laba_bersih": 294848.0,
+    "laba_induk": 294848.0,
+    "eps_basic": 22.09,
+    "eps_diluted": 22.09
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

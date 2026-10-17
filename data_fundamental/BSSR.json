@@ -1,0 +1,128 @@
+{
+  "kode": "BSSR",
+  "nama": "PT Baramulti Suksessarana Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 5150.0,
+  "update": "2026-10-11 12:19",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.207171,
+    "pb": 50490.195,
+    "ps": 18247.477,
+    "roe": 0.23658433056628178,
+    "eps": 627.5,
+    "de": 0.6239366491176815,
+    "margin_net": 0.17452397158330976,
+    "current_ratio": 1.8573179578643826,
+    "roa": 0.1456852166967108,
+    "bv": 0.1,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 241081155.0,
+      "2024-Q2": 482508548.0,
+      "2024-Q3": 718321001.0,
+      "2024-Q4": 947769460.0,
+      "2025-Q1": 153121136.0,
+      "2025-Q2": 326383564.0,
+      "2025-Q3": 514992596.0,
+      "2025-Q4": 703773741.0,
+      "2026-Q1": 167700226.0,
+      "2026-Q2": 361066680.0
+    },
+    "eps": {
+      "2024-Q1": 16100.0,
+      "2024-Q2": 30000.0,
+      "2024-Q3": 42500.0,
+      "2024-Q4": 50300.0,
+      "2025-Q1": 7500.0,
+      "2025-Q2": 19000.0,
+      "2025-Q3": 23500.0,
+      "2025-Q4": 32099.999999999996,
+      "2026-Q1": 9740.0,
+      "2026-Q2": 24100.0
+    },
+    "net_income": {
+      "2024-Q1": 42166956.0,
+      "2024-Q2": 80356550.0,
+      "2024-Q3": 111242755.0,
+      "2024-Q4": 131551348.0,
+      "2025-Q1": 19532771.0,
+      "2025-Q2": 49674177.0,
+      "2025-Q3": 61578204.0,
+      "2025-Q4": 83985142.0,
+      "2026-Q1": 25495050.0,
+      "2026-Q2": 63014791.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 91700.0,
+      "2023": 62000.0,
+      "2024": 50300.0,
+      "2025": 32099.999999999996
+    },
+    "revenue_per_share": {
+      "2022": 1029015864.0,
+      "2023": 1134336606.0,
+      "2024": 947769460.0,
+      "2025": 703773741.0
+    }
+  },
+  "statistik": {
+    "market_cap": 13474974400512,
+    "enterprise_value": 13474869542912,
+    "shares_outstanding": 2616500000,
+    "free_float_pct": 9.259
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3456,
+    "vol_trend": 1.862,
+    "price_chg_20d": 4.46
+  },
+  "neraca": {
+    "aset": 432540737.0,
+    "aset_lancar": 285015381.0,
+    "kas": 105465062.0,
+    "piutang_usaha": 42216576.0,
+    "persediaan": 40519092.0,
+    "aset_tetap": 55462175.0,
+    "liabilitas": 166186989.0,
+    "liabilitas_jangka_pendek": 153455352.0,
+    "utang_usaha": 42216576.0,
+    "utang_bank": 1070054.0,
+    "ekuitas": 266352344.0,
+    "ekuitas_induk": 266352344.0,
+    "modal_saham": null,
+    "saldo_laba": 5693728.0
+  },
+  "laba_rugi": {
+    "pendapatan": 361066680.0,
+    "beban_pokok": 226195461.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 81096843.0,
+    "beban_pajak": -18081907.0,
+    "laba_bersih": 63014791.0,
+    "laba_induk": 63014791.0,
+    "eps_basic": 24100.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 142734.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

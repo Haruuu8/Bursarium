@@ -1,0 +1,116 @@
+{
+  "kode": "STAR",
+  "nama": "PT Calculus Global Ventures Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 382.0,
+  "update": "2026-10-11 15:07",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 70.09174,
+    "pb": 3.3532891,
+    "ps": 221.95613,
+    "roe": 0.016076951688178666,
+    "eps": 5.45,
+    "de": 0.0029210020856239964,
+    "margin_net": 1.846709214299659,
+    "current_ratio": 585.7723490488814,
+    "roa": 0.01603009488655813,
+    "bv": 113.92,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1159286330.0,
+      "2024-Q2": 2136678871.0,
+      "2024-Q4": 4060531960.0,
+      "2025-Q3": 4592413320.0,
+      "2025-Q4": 6618150922.0,
+      "2026-Q2": 4760369005.0
+    },
+    "eps": {
+      "2024-Q1": 165000.0,
+      "2024-Q2": 27000.0,
+      "2024-Q4": 882000.0,
+      "2025-Q3": 1.738,
+      "2025-Q4": 4.78,
+      "2026-Q2": 1.83
+    },
+    "net_income": {
+      "2024-Q1": 793489578.0,
+      "2024-Q2": 130282732.0,
+      "2024-Q4": 4234913034.0,
+      "2025-Q3": 8340231665.0,
+      "2025-Q4": 22945487714.0,
+      "2026-Q2": 8791017305.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 365000.0,
+      "2023": 569000.0,
+      "2024": 882000.0,
+      "2025": 4.78
+    },
+    "revenue_per_share": {
+      "2022": 4527998678.0,
+      "2023": 4738184022.0,
+      "2024": 4060531960.0,
+      "2025": 6618150922.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1833600155648,
+    "enterprise_value": 1289794617344,
+    "shares_outstanding": 4800000602,
+    "free_float_pct": 67.81399999499416
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2763,
+    "vol_trend": 0.845,
+    "price_chg_20d": 1.6
+  },
+  "neraca": {
+    "aset": 548407066035.0,
+    "aset_lancar": 546919006958.0,
+    "kas": 28622765639.0,
+    "piutang_usaha": 722373777.0,
+    "persediaan": null,
+    "aset_tetap": 791698503.0,
+    "liabilitas": 1597229399.0,
+    "liabilitas_jangka_pendek": 933671601.0,
+    "utang_usaha": 722373777.0,
+    "utang_bank": null,
+    "ekuitas": 546808715701.0,
+    "ekuitas_induk": 546808715701.0,
+    "modal_saham": null,
+    "saldo_laba": 4200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4760369005.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 9026247036.0,
+    "beban_pajak": -235220545.0,
+    "laba_bersih": 8791017305.0,
+    "laba_induk": 8791017305.0,
+    "eps_basic": 1.83,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 34857390000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

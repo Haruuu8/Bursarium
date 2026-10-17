@@ -1,0 +1,123 @@
+{
+  "kode": "POLI",
+  "nama": null,
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 885.0,
+  "update": "2026-10-11 17:07",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 26.66466,
+    "pb": 0.8309671,
+    "ps": 3.234646,
+    "roe": 0.03135,
+    "eps": 33.19,
+    "de": 0.64125,
+    "margin_net": 0.12804,
+    "current_ratio": 1.854,
+    "roa": 0.023599999,
+    "bv": 1065.02,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 91465275641.0,
+      "2024-Q2": 186542658263.0,
+      "2024-Q3": 276479597473.0,
+      "2024-Q4": 486591217349.0,
+      "2025-Q1": 132342844999.0,
+      "2025-Q2": 362485898437.0,
+      "2025-Q3": 479359499698.0,
+      "2026-Q1": 113227649590.0,
+      "2026-Q2": 297002946815.0
+    },
+    "eps": {
+      "2024-Q1": 5.22,
+      "2024-Q2": 10.0,
+      "2024-Q3": 5.13,
+      "2024-Q4": 16.82,
+      "2025-Q1": 10.79,
+      "2025-Q2": 28.67,
+      "2025-Q3": 32.94,
+      "2026-Q1": 9.7,
+      "2026-Q2": 28.74
+    },
+    "net_income": {
+      "2024-Q1": 8571032798.0,
+      "2024-Q2": 20800631808.0,
+      "2024-Q3": 11497401335.0,
+      "2024-Q4": 35255764325.0,
+      "2025-Q1": 21893787258.0,
+      "2025-Q2": 57335430602.0,
+      "2025-Q3": 65826756953.0,
+      "2026-Q1": 19807790170.0,
+      "2026-Q2": 58115007273.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 77.12,
+      "2023": 45.95,
+      "2024": 16.82
+    },
+    "revenue_per_share": {
+      "2022": 330487533012.0,
+      "2023": 360929836864.0,
+      "2024": 486591217349.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1779315900416,
+    "enterprise_value": 3166059888640,
+    "shares_outstanding": 2010526400,
+    "free_float_pct": 20.0
+  },
+  "akumulasi": {
+    "score": 6.9,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1243,
+    "vol_trend": 0.43,
+    "price_chg_20d": -0.56
+  },
+  "neraca": {
+    "aset": 4146691417522.0,
+    "aset_lancar": 1119366572287.0,
+    "kas": 21002331891.0,
+    "piutang_usaha": 40900343436.0,
+    "persediaan": 939484203701.0,
+    "aset_tetap": 451155772142.0,
+    "liabilitas": 1984311888175.0,
+    "liabilitas_jangka_pendek": 603763776233.0,
+    "utang_usaha": 40900343436.0,
+    "utang_bank": 90737695183.0,
+    "ekuitas": 2141259089731.0,
+    "ekuitas_induk": 2141259089731.0,
+    "modal_saham": null,
+    "saldo_laba": 88006248604.0
+  },
+  "laba_rugi": {
+    "pendapatan": 297002946815.0,
+    "beban_pokok": 156541527306.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 57788382282.0,
+    "beban_pajak": 1685616968.0,
+    "laba_bersih": 58115007273.0,
+    "laba_induk": 58115007273.0,
+    "eps_basic": 28.74,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 902973743.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

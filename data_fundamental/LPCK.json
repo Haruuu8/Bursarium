@@ -1,0 +1,120 @@
+{
+  "kode": "LPCK",
+  "nama": "PT Lippo Cikarang Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 525.0,
+  "update": "2026-10-11 14:10",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.546074,
+    "pb": 0.39210474,
+    "ps": 0.7055438,
+    "roe": 0.03321482135275295,
+    "eps": 45.47,
+    "de": 0.5754173870937384,
+    "margin_net": 0.14052870810158147,
+    "current_ratio": 2.953990319343604,
+    "roa": 0.021192689848685692,
+    "bv": 1338.93,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 690821.0,
+      "2024-Q3": 980843.0,
+      "2025-Q1": 1094654.0,
+      "2025-Q2": 2238092.0,
+      "2025-Q3": 3444180.0,
+      "2025-Q4": 4519170.0,
+      "2026-Q1": 760170.0,
+      "2026-Q2": 1624942.0
+    },
+    "eps": {
+      "2024-Q2": 25.0,
+      "2024-Q3": -601.0,
+      "2025-Q1": 53.0,
+      "2025-Q2": 41.0,
+      "2025-Q3": 52.0,
+      "2025-Q4": 42.0,
+      "2026-Q1": 15.0,
+      "2026-Q2": 44.0
+    },
+    "net_income": {
+      "2024-Q2": 71126.0,
+      "2024-Q3": -1604308.0,
+      "2025-Q1": 142797.0,
+      "2025-Q2": 208209.0,
+      "2025-Q3": 264846.0,
+      "2025-Q4": 215766.0,
+      "2026-Q1": 79135.0,
+      "2026-Q2": 228351.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 115.0,
+      "2023": 60.0,
+      "2025": 42.0
+    },
+    "revenue_per_share": {
+      "2022": 1267725.0,
+      "2023": 1075474.0,
+      "2025": 4519170.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2695710113792,
+    "enterprise_value": 3079805075456,
+    "shares_outstanding": 5134685692,
+    "free_float_pct": 10.999999997662952
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3761,
+    "vol_trend": 0.762,
+    "price_chg_20d": -11.76
+  },
+  "neraca": {
+    "aset": 10774989.0,
+    "aset_lancar": 9007839.0,
+    "kas": 264084.0,
+    "piutang_usaha": 42486.0,
+    "persediaan": 8205039.0,
+    "aset_tetap": 467693.0,
+    "liabilitas": 3955979.0,
+    "liabilitas_jangka_pendek": 3049380.0,
+    "utang_usaha": 42486.0,
+    "utang_bank": 790000.0,
+    "ekuitas": 6874973.0,
+    "ekuitas_induk": 6874973.0,
+    "modal_saham": null,
+    "saldo_laba": 4450.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1624942.0,
+    "beban_pokok": 1113911.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 280707.0,
+    "beban_pajak": -52356.0,
+    "laba_bersih": 228351.0,
+    "laba_induk": 228351.0,
+    "eps_basic": 44.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4847.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

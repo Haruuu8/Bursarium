@@ -1,0 +1,122 @@
+{
+  "kode": "WEGE",
+  "nama": "PT Wijaya Karya Bangunan Gedung Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 40.0,
+  "update": "2026-10-11 15:48",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.19798745,
+    "ps": 0.34167647,
+    "roe": -0.047758591854529596,
+    "eps": 7.09,
+    "de": 0.9821201538036611,
+    "margin_net": -0.22168660512056573,
+    "current_ratio": 1.7960083137620637,
+    "roa": -0.024081950694425203,
+    "bv": 202.03,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 474217433881.0,
+      "2024-Q2": 1380295918390.0,
+      "2024-Q3": 2257799627046.0,
+      "2024-Q4": 3673527175483.0,
+      "2025-Q2": 907812618431.0,
+      "2025-Q3": 1174674286450.0,
+      "2026-Q1": 213623463597.0,
+      "2026-Q2": 404849631899.0
+    },
+    "eps": {
+      "2024-Q1": 460000.0,
+      "2024-Q2": 1.94,
+      "2024-Q3": 4.92,
+      "2024-Q4": 7.09,
+      "2025-Q2": 40000.0,
+      "2025-Q3": -5.27,
+      "2026-Q1": -3.67,
+      "2026-Q2": -9.38
+    },
+    "net_income": {
+      "2024-Q1": 4448484934.0,
+      "2024-Q2": 18613475164.0,
+      "2024-Q3": 47110164976.0,
+      "2024-Q4": 67888264873.0,
+      "2025-Q2": 415179707.0,
+      "2025-Q3": -50443036157.0,
+      "2026-Q1": -35127958959.0,
+      "2026-Q2": -89749740480.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 24.03,
+      "2023": 4.88,
+      "2024": 7.09,
+      "2025": -65.86
+    },
+    "revenue_per_share": {
+      "2022": 2366259622099.0,
+      "2023": 3979714569719.0,
+      "2024": 3673527175483.0,
+      "2025": 1623555133947.0
+    }
+  },
+  "statistik": {
+    "market_cap": 382879989760,
+    "enterprise_value": 451612016640,
+    "shares_outstanding": 9572000000,
+    "free_float_pct": 30.703000000000003
+  },
+  "akumulasi": {
+    "score": 4.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.02,
+    "vol_trend": 0.099,
+    "price_chg_20d": -20.0
+  },
+  "neraca": {
+    "aset": 3726846783254.0,
+    "aset_lancar": 2755394161634.0,
+    "kas": 123275071508.0,
+    "piutang_usaha": 120947079636.0,
+    "persediaan": 295430056662.0,
+    "aset_tetap": 35745947421.0,
+    "liabilitas": 1845637099028.0,
+    "liabilitas_jangka_pendek": 1534176729874.0,
+    "utang_usaha": 120947079636.0,
+    "utang_bank": 64615046329.0,
+    "ekuitas": 1879237577887.0,
+    "ekuitas_induk": 1879237577887.0,
+    "modal_saham": null,
+    "saldo_laba": 172324647000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 404849631899.0,
+    "beban_pokok": 382435586222.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -89893800854.0,
+    "beban_pajak": 9417039281.0,
+    "laba_bersih": -89749740480.0,
+    "laba_induk": -89749740480.0,
+    "eps_basic": -9.38,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 483301333.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

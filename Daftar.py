@@ -1,0 +1,290 @@
+"""Entry point — Landing page + admin routing + link ke Daftar."""
+
+import os
+import re
+import sys
+
+import streamlit as st
+import yaml
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from quant.theme import load_theme, hero, section_title, info_banner
+from quant.auth import submit_registration
+
+st.set_page_config(page_title="Daytrade Platform", layout="wide")
+load_theme()
+
+try:
+    import streamlit_authenticator as stauth
+except ImportError:
+    st.error("Install: py -m pip install streamlit-authenticator bcrypt")
+    st.stop()
+
+
+# ============ ADMIN ROUTING (rahasia) ============
+# Baca dari Secrets Cloud dulu, kalau tidak ada baru baca dari Env Lokal
+ADMIN_SECRET = st.secrets.get("ADMIN_SECRET", os.environ.get("ADMIN_SECRET", ""))
+
+admin_key = st.query_params.get("admin", "")
+if admin_key:
+    if not ADMIN_SECRET:
+        st.error("⚠ ADMIN_SECRET env var belum di-set.")
+        st.stop()
+    if admin_key != ADMIN_SECRET:
+        st.markdown(
+            '<div style="text-align:center; padding:120px 20px;">'
+            '<div style="font-size:80px; font-weight:900; '
+            'color:#1e2942; letter-spacing:-0.05em;">404</div>'
+            '<div style="font-size:16px; color:#64748b; margin-top:12px;">'
+            'Halaman tidak ditemukan</div></div>',
+            unsafe_allow_html=True
+        )
+        st.stop()
+    exec(open("admin_panel.py", encoding="utf-8-sig").read())
+    st.stop()
+
+
+# ============ CONFIG ============
+# Baca dari Secrets Cloud dulu, kalau tidak ada baru baca dari config.yaml lokal
+if "CONFIG_YAML" in st.secrets:
+    try:
+        config = yaml.safe_load(st.secrets["CONFIG_YAML"])
+    except Exception as e:
+        st.error(f"Gagal membaca CONFIG_YAML dari secrets: {e}")
+        st.stop()
+else:
+    CONFIG_FILE = "config.yaml"
+    if not os.path.exists(CONFIG_FILE):
+        st.error("config.yaml tidak ditemukan (lokal).")
+        st.stop()
+    with open(CONFIG_FILE, encoding="utf-8") as f:
+        config = yaml.safe_load(f)
+
+authenticator = stauth.Authenticate(
+    config["credentials"],
+    config["cookie"]["name"],
+    config["cookie"]["key"],
+    config["cookie"]["expiry_days"],
+)
+
+
+# ============ KALAU SUDAH LOGIN → REDIRECT ============
+if st.session_state.get("authentication_status"):
+    st.switch_page("views/Dashboard.py")
+    st.stop()
+
+
+# ============ KONFIGURASI LANDING ============
+HARGA = 200000
+
+FITUR = [
+    (":material/dashboard:", "Dashboard",    "Ringkasan market & watchlist harian"),
+    (":material/analytics:", "Fundamental",  "Analisis rasio keuangan & valuasi emiten IDX"),
+    (":material/trending_up:", "Technical",  "Chart, RSI, support-resistance, pre-cross setup"),
+    (":material/star:", "Watchlist",         "Pantau saham favorit Anda"),
+    (":material/payments:", "Valuation",     "Hitung valuasi & risk/reward otomatis"),
+    (":material/newspaper:", "News",         "Berita terkini seputar pasar IDX"),
+]
+
+
+# ============ LOGIN DI SIDEBAR ============
+with st.sidebar:
+    st.markdown(
+        '<div style="text-align:center; padding:8px 0 20px;">'
+        '<div style="font-size:32px;">🔐</div>'
+        '<div style="font-size:18px; font-weight:800; color:#ffffff; '
+        'letter-spacing:-0.02em; margin-top:8px;">Login</div>'
+        '<div style="font-size:11px; color:#64748b; margin-top:4px;">'
+        'Masuk ke dashboard</div>'
+        '</div>',
+        unsafe_allow_html=True
+    )
+
+    authenticator.login(location="main")
+
+    auth_status = st.session_state.get("authentication_status")
+    if auth_status is False:
+        st.error("❌ Username atau password salah")
+
+    st.markdown(
+        '<div style="text-align:center; padding:20px 12px 10px; '
+        'border-top:1px solid #1e2942; margin-top:20px;">'
+        '<div style="font-size:12px; color:#94a3b8; line-height:1.6;">'
+        'Belum punya akun?<br>'
+        '<span style="color:#06b6d4; font-weight:700;">'
+        '↓ Scroll ke bawah untuk daftar</span>'
+        '</div></div>',
+        unsafe_allow_html=True
+    )
+
+
+# ============ HERO ============
+st.markdown(
+    hero(
+        "📊 Daytrade Platform",
+        "Platform analisis saham IDX — fundamental, teknikal, "
+        "screening, dan valuasi dalam satu tempat. "
+        "Semua yang Anda butuhkan untuk ambil keputusan trading.",
+        badge_text="PLATFORM ANALISIS SAHAM",
+        badge_color="#06b6d4",
+    ),
+    unsafe_allow_html=True
+)
+
+
+# ============ FITUR ============
+st.markdown(section_title("✨ Yang Anda Dapatkan"), unsafe_allow_html=True)
+
+cols = st.columns(2)
+for i, (icon, nama, desk) in enumerate(FITUR):
+    with cols[i % 2]:
+        st.markdown(
+            f'<div style="background:#0d1424; border:1px solid #1e2942; '
+            f'border-left:3px solid #6366f1; border-radius:12px; '
+            f'padding:18px 22px; margin-bottom:12px;">'
+            f'<div style="display:flex; align-items:center; gap:12px; '
+            f'margin-bottom:8px;">'
+            f'<div style="font-size:24px;">{icon}</div>'
+            f'<div style="font-size:16px; font-weight:800; '
+            f'color:#ffffff;">{nama}</div></div>'
+            f'<div style="font-size:13px; color:#94a3b8; '
+            f'line-height:1.5;">{desk}</div></div>',
+            unsafe_allow_html=True
+        )
+
+
+# ============ HARGA ============
+st.markdown(section_title("💰 Harga"), unsafe_allow_html=True)
+
+st.markdown(
+    f'<div style="background:linear-gradient(135deg, #131a2e 0%, #0a1020 100%); '
+    f'border:1px solid #2c3a5c; border-radius:16px; '
+    f'padding:32px 36px; text-align:center; margin-bottom:12px;">'
+    f'<div style="font-size:12px; color:#a5a8d8; font-weight:800; '
+    f'letter-spacing:2px; margin-bottom:12px;">AKSES PENUH PLATFORM</div>'
+    f'<div style="font-size:48px; font-weight:900; color:#ffffff; '
+    f'letter-spacing:-0.04em; line-height:1;">'
+    f'Rp 200.000'
+    f'<span style="font-size:16px; color:#94a3b8; font-weight:600; '
+    f'margin-left:8px;">/ bulan</span></div>'
+    f'<div style="font-size:13px; color:#94a3b8; margin-top:14px;">'
+    f'Akses semua fitur tanpa batas · Bayar bulanan · Cancel kapan saja</div>'
+    f'</div>',
+    unsafe_allow_html=True
+)
+
+
+# ============ FORM DAFTAR ============
+st.markdown(section_title("📝 Daftar Sekarang"), unsafe_allow_html=True)
+
+st.markdown(
+    info_banner(
+        "Transfer <b>Rp 200.000</b> ke salah satu e-wallet di bawah, "
+        "lalu upload bukti. Akun di-approve manual dalam <b>1×24 jam</b>. "
+        "Username & password dikirim via Telegram.", "info"
+    ), unsafe_allow_html=True
+)
+
+c1, c2 = st.columns([2, 1])
+
+with c1:
+    st.markdown(
+        f'<div style="background:linear-gradient(135deg, #131a2e 0%, #0a1020 100%); '
+        f'border:1px solid #2c3a5c; border-radius:14px; '
+        f'padding:24px 28px; margin-bottom:20px;">'
+        f'<div style="font-size:11px; color:#a5a8d8; font-weight:800; '
+        f'letter-spacing:1.5px; margin-bottom:18px;">'
+        f'TRANSFER KE SALAH SATU</div>'
+        f'<div style="display:flex; justify-content:space-between; '
+        f'align-items:center; padding:14px 0; '
+        f'border-bottom:1px solid #1e2942;">'
+        f'<div style="font-size:15px; font-weight:700; color:#e6ebf5;">OVO</div>'
+        f'<div style="font-size:20px; font-weight:900; color:#ffffff; '
+        f'font-family:monospace; letter-spacing:1px;">082369477717</div></div>'
+        f'<div style="display:flex; justify-content:space-between; '
+        f'align-items:center; padding:14px 0 0 0;">'
+        f'<div style="font-size:15px; font-weight:700; color:#e6ebf5;">GoPay</div>'
+        f'<div style="font-size:20px; font-weight:900; color:#ffffff; '
+        f'font-family:monospace; letter-spacing:1px;">082369477717</div></div>'
+        f'</div>',
+        unsafe_allow_html=True
+    )
+
+with c2:
+    st.markdown(
+        f'<div style="background:rgba(245,158,11,0.08); '
+        f'border:1px solid rgba(245,158,11,0.3); '
+        f'border-radius:12px; padding:16px 20px; height:100%;">'
+        f'<div style="font-size:11px; font-weight:800; color:#f59e0b; '
+        f'letter-spacing:0.5px; margin-bottom:12px;">⚠ PENTING</div>'
+        f'<div style="font-size:12px; color:#cbd5e1; line-height:1.9;">'
+        f'Transfer <b style="color:#fbbf24;">tepat</b> Rp 200.000<br>'
+        f'Bukti harus jelas:<br>• Tanggal<br>• Nominal<br>• Status berhasil'
+        f'</div></div>',
+        unsafe_allow_html=True
+    )
+
+
+with st.form("form_daftar", clear_on_submit=False):
+    telegram = st.text_input(
+        "Username Telegram * (untuk kirim username & password)",
+        placeholder="Contoh: @johndoe", max_chars=64
+    )
+    bukti = st.file_uploader(
+        "Bukti Transfer * (JPG/PNG/PDF, max 5 MB)",
+        type=["jpg", "jpeg", "png", "pdf"]
+    )
+    setuju = st.checkbox("Saya sudah transfer dan data yang saya isi benar *")
+
+    submit = st.form_submit_button(
+        "🚀 Kirim Pendaftaran", type="primary", use_container_width=True
+    )
+
+    if submit:
+        errors = []
+        tele_clean = telegram.strip().lstrip("@")
+        if not tele_clean:
+            errors.append("Username Telegram wajib diisi")
+        elif not re.match(r"^[a-zA-Z0-9_]{4,32}$", tele_clean):
+            errors.append(
+                "Username Telegram tidak valid "
+                "(4-32 karakter, hanya huruf/angka/underscore)"
+            )
+        if bukti is None:
+            errors.append("Bukti transfer wajib diupload")
+        if not setuju:
+            errors.append("Centang persetujuan")
+
+        if errors:
+            for e in errors:
+                st.error(f"❌ {e}")
+        else:
+            file_bytes = bukti.getvalue()
+            if len(file_bytes) > 5 * 1024 * 1024:
+                st.error("❌ File terlalu besar (max 5 MB)")
+            else:
+                try:
+                    reg_id = submit_registration(
+                        telegram="@" + tele_clean,
+                        bukti_bytes=file_bytes,
+                        bukti_filename=bukti.name,
+                    )
+                    st.success(
+                        f"✅ Pendaftaran BERHASIL!\n\n"
+                        f"ID Registrasi: **{reg_id}**\n\n"
+                        f"Akun di-approve 1×24 jam. "
+                        f"Username & password dikirim via Telegram."
+                    )
+                    st.balloons()
+                except Exception as e:
+                    st.error(f"❌ Gagal submit: {e}")
+
+
+# ============ FOOTER ============
+st.markdown(
+    '<div style="text-align:center; padding:40px 20px 20px; '
+    'font-size:12px; color:#64748b;">'
+    '© 2026 Daytrade Platform · IDX Analysis'
+    '</div>',
+    unsafe_allow_html=True
+)

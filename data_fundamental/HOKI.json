@@ -1,0 +1,128 @@
+{
+  "kode": "HOKI",
+  "nama": "PT Buyung Poetra Sembada Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 45.0,
+  "update": "2026-10-11 15:43",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8164746,
+    "ps": 0.31157258,
+    "roe": -0.10725891012165252,
+    "eps": null,
+    "de": 0.6342589331228554,
+    "margin_net": -0.07507592539676752,
+    "current_ratio": 1.6353518386214025,
+    "roa": -0.0648570703692784,
+    "bv": 55.12,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2022-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 500112970200.0,
+      "2024-Q2": 744414995929.0,
+      "2024-Q3": 1064910003275.0,
+      "2024-Q4": 1298675060004.0,
+      "2025-Q1": 365292357139.0,
+      "2025-Q2": 575333499892.0,
+      "2025-Q3": 824693081590.0,
+      "2025-Q4": 1211043057867.0,
+      "2026-Q1": 535807002286.0,
+      "2026-Q2": 762034866965.0
+    },
+    "eps": {
+      "2024-Q1": 1.57,
+      "2024-Q2": 1.72,
+      "2024-Q3": 2.09,
+      "2024-Q4": -310000.0,
+      "2025-Q1": -2.71,
+      "2025-Q2": -1.06,
+      "2025-Q3": -40000.0,
+      "2025-Q4": -3.54,
+      "2026-Q1": -3.22,
+      "2026-Q2": -5.91
+    },
+    "net_income": {
+      "2024-Q1": 15163290073.0,
+      "2024-Q2": 16691447006.0,
+      "2024-Q3": 20210212989.0,
+      "2024-Q4": -3000946555.0,
+      "2025-Q1": -26238428761.0,
+      "2025-Q2": -10251652102.0,
+      "2025-Q3": -369204311.0,
+      "2025-Q4": -34242899318.0,
+      "2026-Q1": -31205472962.0,
+      "2026-Q2": -57210472822.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 190000.0,
+      "2023": -150000.0,
+      "2024": -310000.0,
+      "2025": -3.54
+    },
+    "revenue_per_share": {
+      "2022": 925708985640.0,
+      "2023": 1284510497729.0,
+      "2024": 1298675060004.0,
+      "2025": 1211043057867.0
+    }
+  },
+  "statistik": {
+    "market_cap": 435498844160,
+    "enterprise_value": 456062763008,
+    "shares_outstanding": 9677752680,
+    "free_float_pct": 30.455000003161892
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6335,
+    "vol_trend": 3.452,
+    "price_chg_20d": -19.64
+  },
+  "neraca": {
+    "aset": 882100787104.0,
+    "aset_lancar": 508552862144.0,
+    "kas": 7785480711.0,
+    "piutang_usaha": 87586880792.0,
+    "persediaan": 130977876199.0,
+    "aset_tetap": 274650697028.0,
+    "liabilitas": 338305259809.0,
+    "liabilitas_jangka_pendek": 310974586712.0,
+    "utang_usaha": 87586880792.0,
+    "utang_bank": 249501855562.0,
+    "ekuitas": 533386669295.0,
+    "ekuitas_induk": 533386669295.0,
+    "modal_saham": null,
+    "saldo_laba": 850000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 762034866965.0,
+    "beban_pokok": 760350623233.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -57382318764.0,
+    "beban_pajak": -307488294.0,
+    "laba_bersih": -57210472822.0,
+    "laba_induk": -57210472822.0,
+    "eps_basic": -5.91,
+    "eps_diluted": -5.91
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 18971152177.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

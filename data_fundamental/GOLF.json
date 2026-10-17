@@ -1,0 +1,121 @@
+{
+  "kode": "GOLF",
+  "nama": "PT Intra Golflink Resorts Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Leisure",
+  "harga": 166.0,
+  "update": "2026-10-11 12:04",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 60.583942,
+    "pb": 0.40332574,
+    "ps": 13.588201,
+    "roe": 0.0015958000821798463,
+    "eps": 2.74,
+    "de": 0.082994126355954,
+    "margin_net": 0.13817510057604984,
+    "current_ratio": 5.855822863965262,
+    "roa": 0.0014734239901572934,
+    "bv": 411.58,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 63499170446.0,
+      "2024-Q3": 99467745167.0,
+      "2024-Q4": 197993814652.0,
+      "2025-Q1": 28452147722.0,
+      "2025-Q2": 70087603948.0,
+      "2025-Q3": 109623113103.0,
+      "2025-Q4": 215519553620.0,
+      "2026-Q1": 28824494305.0,
+      "2026-Q2": 92627723140.0
+    },
+    "eps": {
+      "2024-Q2": 500000.0,
+      "2024-Q3": 849000.0,
+      "2024-Q4": 3.896,
+      "2025-Q1": 68000.0,
+      "2025-Q2": 580000.0,
+      "2025-Q3": 970000.0,
+      "2025-Q4": 2.659,
+      "2026-Q1": 82000.0,
+      "2026-Q2": 657000.0
+    },
+    "net_income": {
+      "2024-Q2": 8774613686.0,
+      "2024-Q3": 15393348045.0,
+      "2024-Q4": 67574993523.0,
+      "2025-Q1": 1322959424.0,
+      "2025-Q2": 11304027404.0,
+      "2025-Q3": 18882691880.0,
+      "2025-Q4": 51809424238.0,
+      "2026-Q1": 1595464312.0,
+      "2026-Q2": 12798844961.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 3.896,
+      "2025": 2.659
+    },
+    "revenue_per_share": {
+      "2024": 197993814652.0,
+      "2025": 215519553620.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3234802434048,
+    "enterprise_value": 3483877244928,
+    "shares_outstanding": 19486760000,
+    "free_float_pct": 10.006999998973662
+  },
+  "akumulasi": {
+    "score": 3.4,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.074,
+    "vol_trend": 0.699,
+    "price_chg_20d": -7.78
+  },
+  "neraca": {
+    "aset": 8686464348686.0,
+    "aset_lancar": 873830812702.0,
+    "kas": 235494358132.0,
+    "piutang_usaha": 6114258683.0,
+    "persediaan": 386802484762.0,
+    "aset_tetap": 7346922509236.0,
+    "liabilitas": 665640369220.0,
+    "liabilitas_jangka_pendek": 149224256437.0,
+    "utang_usaha": 6114258683.0,
+    "utang_bank": 18813647959.0,
+    "ekuitas": 8020331057708.0,
+    "ekuitas_induk": 8020331057708.0,
+    "modal_saham": null,
+    "saldo_laba": 53499125328.0
+  },
+  "laba_rugi": {
+    "pendapatan": 92627723140.0,
+    "beban_pokok": 44950260375.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 14938083709.0,
+    "beban_pajak": 796691117.0,
+    "laba_bersih": 12798844961.0,
+    "laba_induk": 12798844961.0,
+    "eps_basic": 657000.0,
+    "eps_diluted": 657000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1170000000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

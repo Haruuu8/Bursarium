@@ -1,0 +1,116 @@
+{
+  "kode": "CAKK",
+  "nama": "PT Cahayaputra Asa Keramik Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 156.0,
+  "update": "2026-10-11 16:08",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 13.009757,
+    "pb": 1.3985387,
+    "ps": 0.40597838,
+    "roe": -0.0682631489160466,
+    "eps": 11.99,
+    "de": 2.7126114483430763,
+    "margin_net": -0.08643182057011206,
+    "current_ratio": 0.5345685537539621,
+    "roa": -0.01838718615123025,
+    "bv": 111.55,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2022-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q4": 239479149464.0,
+      "2025-Q1": 80192172211.0,
+      "2025-Q2": 156352436320.0,
+      "2025-Q3": 238871916188.0,
+      "2026-Q1": 107514635544.0,
+      "2026-Q2": 252500992284.0
+    },
+    "eps": {
+      "2024-Q4": -13.5,
+      "2025-Q1": -4.52,
+      "2025-Q2": -16.45,
+      "2025-Q3": -25.12,
+      "2026-Q1": -7.72,
+      "2026-Q2": -9.31
+    },
+    "net_income": {
+      "2024-Q4": -16250006159.0,
+      "2025-Q1": -5435046658.0,
+      "2025-Q2": -19790810600.0,
+      "2025-Q3": -30223526613.0,
+      "2026-Q1": -9292685688.0,
+      "2026-Q2": -11200839610.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 8.77,
+      "2023": -28.33,
+      "2024": -13.5,
+      "2025": -32.55
+    },
+    "revenue_per_share": {
+      "2022": 250320655340.0,
+      "2023": 208635900710.0,
+      "2024": 239479149464.0,
+      "2025": 366227839384.0
+    }
+  },
+  "statistik": {
+    "market_cap": 187714830336,
+    "enterprise_value": 464443211776,
+    "shares_outstanding": 1203300219,
+    "free_float_pct": 11.35700001065154
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1582,
+    "vol_trend": 0.378,
+    "price_chg_20d": -1.89
+  },
+  "neraca": {
+    "aset": 505389221144.0,
+    "aset_lancar": 169225078649.0,
+    "kas": 1105703709.0,
+    "piutang_usaha": 59487574024.0,
+    "persediaan": 53984917428.0,
+    "aset_tetap": 32207639825.0,
+    "liabilitas": 369268719410.0,
+    "liabilitas_jangka_pendek": 316563848473.0,
+    "utang_usaha": 59487574024.0,
+    "utang_bank": 180297861801.0,
+    "ekuitas": 136130340243.0,
+    "ekuitas_induk": 136130340243.0,
+    "modal_saham": null,
+    "saldo_laba": -39555908585.0
+  },
+  "laba_rugi": {
+    "pendapatan": 107514635544.0,
+    "beban_pokok": 106794469215.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9294156306.0,
+    "beban_pajak": null,
+    "laba_bersih": -9292685688.0,
+    "laba_induk": -9292685688.0,
+    "eps_basic": -7.72,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32207639825.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

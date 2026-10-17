@@ -1,0 +1,125 @@
+{
+  "kode": "TRUE",
+  "nama": "PT Triniti Dinamik Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 52.0,
+  "update": "2026-10-11 11:00",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.8597997,
+    "ps": 4.261241,
+    "roe": -0.055625778243683,
+    "eps": 2.28,
+    "de": 2.1985155643058785,
+    "margin_net": -0.9242043944220538,
+    "current_ratio": 3.133907176605316,
+    "roa": -0.01736995028979476,
+    "bv": 27.96,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2022",
+    "eps_reliable": true,
+    "eps_period": "2022-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 23439539623.0,
+      "2024-Q2": 49841185986.0,
+      "2024-Q3": 70316973080.0,
+      "2024-Q4": 87150570699.0,
+      "2025-Q1": 10737124919.0,
+      "2025-Q2": 23882423785.0,
+      "2025-Q3": 35810260172.0,
+      "2026-Q1": 12771077223.0,
+      "2026-Q2": 24770265102.0
+    },
+    "eps": {
+      "2024-Q1": -710000.0,
+      "2024-Q2": -1.10108777078431,
+      "2024-Q3": -2.119472768701251,
+      "2024-Q4": -7.7,
+      "2025-Q1": -790000.0,
+      "2025-Q2": -1.32,
+      "2025-Q3": -2.27,
+      "2026-Q1": -1.56,
+      "2026-Q2": -1.62
+    },
+    "net_income": {
+      "2024-Q1": -5408647479.0,
+      "2024-Q2": -8336454276.0,
+      "2024-Q3": -16046756938.0,
+      "2024-Q4": -58320112682.0,
+      "2025-Q1": -5943710317.0,
+      "2025-Q2": -9975955678.0,
+      "2025-Q3": -17184018879.0,
+      "2026-Q1": -11803085691.0,
+      "2026-Q2": -12302158720.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 2.28,
+      "2023": -2.67,
+      "2024": -7.7,
+      "2025": -4.65
+    },
+    "revenue_per_share": {
+      "2022": 210537267933.0,
+      "2023": 95125448551.0,
+      "2024": 87150570699.0,
+      "2025": 91502525432.0
+    }
+  },
+  "statistik": {
+    "market_cap": 393697624064,
+    "enterprise_value": 742611550208,
+    "shares_outstanding": 7571107860,
+    "free_float_pct": 18.440474615032098
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1863,
+    "vol_trend": 1.0,
+    "price_chg_20d": 4.0
+  },
+  "neraca": {
+    "aset": 679511771426.0,
+    "aset_lancar": 539931762100.0,
+    "kas": 7171813644.0,
+    "piutang_usaha": 28981186021.0,
+    "persediaan": null,
+    "aset_tetap": 26869256357.0,
+    "liabilitas": 466497160450.0,
+    "liabilitas_jangka_pendek": 172287094567.0,
+    "utang_usaha": 28981186021.0,
+    "utang_bank": 64641868638.0,
+    "ekuitas": 212187335866.0,
+    "ekuitas_induk": 212187335866.0,
+    "modal_saham": null,
+    "saldo_laba": -88303599113.0
+  },
+  "laba_rugi": {
+    "pendapatan": 12771077223.0,
+    "beban_pokok": 7856166950.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -11795090202.0,
+    "beban_pajak": null,
+    "laba_bersih": -11803085691.0,
+    "laba_induk": -11803085691.0,
+    "eps_basic": -1.56,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6951476923.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

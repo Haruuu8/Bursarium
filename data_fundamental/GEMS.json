@@ -1,0 +1,128 @@
+{
+  "kode": "GEMS",
+  "nama": "PT Golden Energy Mines Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 7900.0,
+  "update": "2026-10-11 13:32",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.514583,
+    "pb": 55244.754,
+    "ps": 16807.213,
+    "roe": 0.2607458318961042,
+    "eps": 927.82,
+    "de": 0.6880389750177311,
+    "margin_net": 0.14710495113178182,
+    "current_ratio": 1.6568646275748469,
+    "roa": 0.15348461143435632,
+    "bv": 0.14,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 715641070.0,
+      "2024-Q2": 1367203110.0,
+      "2024-Q3": 2012545147.0,
+      "2024-Q4": 2705520884.0,
+      "2025-Q1": 648339139.0,
+      "2025-Q2": 1144417056.0,
+      "2025-Q3": 1737812157.0,
+      "2025-Q4": 2414053508.0,
+      "2026-Q1": 582596487.0,
+      "2026-Q2": 1495283084.0
+    },
+    "eps": {
+      "2024-Q1": 29000.0,
+      "2024-Q2": 54000.0,
+      "2024-Q3": 67557.26305442737,
+      "2024-Q4": 80500.0,
+      "2025-Q1": 19220.0,
+      "2025-Q2": 25780.0,
+      "2025-Q3": 34000.0,
+      "2025-Q4": 43900.0,
+      "2026-Q1": 14000.0,
+      "2026-Q2": 37000.0
+    },
+    "net_income": {
+      "2024-Q1": 171718367.0,
+      "2024-Q2": 316915667.0,
+      "2024-Q3": 397395669.0,
+      "2024-Q4": 473806214.0,
+      "2025-Q1": 113041381.0,
+      "2025-Q2": 151672560.0,
+      "2025-Q3": 199318513.0,
+      "2025-Q4": 258234508.0,
+      "2026-Q1": 79754928.0,
+      "2026-Q2": 219963545.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 115660.0,
+      "2023": 88000.0,
+      "2024": 80500.0,
+      "2025": 43900.0
+    },
+    "revenue_per_share": {
+      "2022": 2919964403.0,
+      "2023": 2901836296.0,
+      "2024": 2705520884.0,
+      "2025": 2414053508.0
+    }
+  },
+  "statistik": {
+    "market_cap": 46470589841408,
+    "enterprise_value": 46470451429376,
+    "shares_outstanding": 5882353000,
+    "free_float_pct": 10.390000005100001
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4936,
+    "vol_trend": 2.419,
+    "price_chg_20d": 5.33
+  },
+  "neraca": {
+    "aset": 1433130937.0,
+    "aset_lancar": 810084460.0,
+    "kas": 278395474.0,
+    "piutang_usaha": 320894441.0,
+    "persediaan": 41855125.0,
+    "aset_tetap": 157107.0,
+    "liabilitas": 580425355.0,
+    "liabilitas_jangka_pendek": 488926160.0,
+    "utang_usaha": 320894441.0,
+    "utang_bank": 58684331.0,
+    "ekuitas": 843593715.0,
+    "ekuitas_induk": 843593715.0,
+    "modal_saham": null,
+    "saldo_laba": 9516287.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1495283084.0,
+    "beban_pokok": 982061231.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 290489548.0,
+    "beban_pajak": 710823.0,
+    "laba_bersih": 219963545.0,
+    "laba_induk": 219963545.0,
+    "eps_basic": 37000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 157107.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

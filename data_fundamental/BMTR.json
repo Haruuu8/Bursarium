@@ -1,0 +1,125 @@
+{
+  "kode": "BMTR",
+  "nama": "PT Global Mediacom Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 76.0,
+  "update": "2026-10-11 12:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 2.192097,
+    "pb": 0.077362746,
+    "ps": 0.13888168,
+    "roe": 0.011164150220835365,
+    "eps": 34.67,
+    "de": 0.4163179879854008,
+    "margin_net": 0.04069888822726349,
+    "current_ratio": 4.008688769644609,
+    "roa": 0.005093214868600078,
+    "bv": 982.38,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 2889672.0,
+      "2024-Q2": 5478510.0,
+      "2024-Q4": 10059317.0,
+      "2025-Q1": 2808865.0,
+      "2025-Q2": 5106871.0,
+      "2025-Q3": 7371125.0,
+      "2025-Q4": 9594211.0,
+      "2026-Q1": 2376220.0,
+      "2026-Q2": 4406656.0
+    },
+    "eps": {
+      "2024-Q1": 20.3,
+      "2024-Q2": 25.7,
+      "2024-Q4": 32.9,
+      "2025-Q1": 11.9,
+      "2025-Q2": 20.1,
+      "2025-Q3": 23.2,
+      "2025-Q4": 47.1,
+      "2026-Q1": 16.0,
+      "2026-Q2": 10.0
+    },
+    "net_income": {
+      "2024-Q1": 332448.0,
+      "2024-Q2": 420436.0,
+      "2024-Q4": 537399.0,
+      "2025-Q1": 194641.0,
+      "2025-Q2": 328784.0,
+      "2025-Q3": 379888.0,
+      "2025-Q4": 770975.0,
+      "2026-Q1": 261657.0,
+      "2026-Q2": 179346.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 72.0,
+      "2023": 41.4,
+      "2024": 32.9,
+      "2025": 47.1
+    },
+    "revenue_per_share": {
+      "2022": 12233495.0,
+      "2023": 10163157.0,
+      "2024": 10059317.0,
+      "2025": 9594211.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1242790887424,
+    "enterprise_value": 16486553878528,
+    "shares_outstanding": 16352512086,
+    "free_float_pct": 46.87399999882807
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2133,
+    "vol_trend": 1.595,
+    "price_chg_20d": -35.04
+  },
+  "neraca": {
+    "aset": 35212730.0,
+    "aset_lancar": 12960648.0,
+    "kas": 907077.0,
+    "piutang_usaha": 4086542.0,
+    "persediaan": 3861797.0,
+    "aset_tetap": 11060745.0,
+    "liabilitas": 6687922.0,
+    "liabilitas_jangka_pendek": 3233139.0,
+    "utang_usaha": 4086542.0,
+    "utang_bank": 1376313.0,
+    "ekuitas": 16064456.0,
+    "ekuitas_induk": 16064456.0,
+    "modal_saham": null,
+    "saldo_laba": 18000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4406656.0,
+    "beban_pokok": 2849851.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 232272.0,
+    "beban_pajak": 72553.0,
+    "laba_bersih": 179346.0,
+    "laba_induk": 179346.0,
+    "eps_basic": 10.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 200357.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,126 @@
+{
+  "kode": "ACRO",
+  "nama": "PT Samcro Hyosung Adilestari Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 53.0,
+  "update": "2026-10-11 11:58",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.011489,
+    "ps": 4.011863,
+    "roe": 0.011802597444967642,
+    "eps": 3.04,
+    "de": 0.30444276524679803,
+    "margin_net": 0.09129028592819928,
+    "current_ratio": 1.1537638845488127,
+    "roa": 0.00904799946721665,
+    "bv": 52.4,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 13168704267.0,
+      "2024-Q2": 23229449449.0,
+      "2024-Q3": 32355979035.0,
+      "2024-Q4": 43724769550.0,
+      "2025-Q1": 13921920104.0,
+      "2025-Q2": 19542380336.0,
+      "2025-Q3": 30191836414.0,
+      "2025-Q4": 41872866308.0,
+      "2026-Q1": 11737005567.0,
+      "2026-Q2": 23502405488.0
+    },
+    "eps": {
+      "2024-Q1": 1.13,
+      "2024-Q2": 1.3471,
+      "2024-Q3": 3.40111607694306,
+      "2024-Q4": 2.63,
+      "2025-Q1": 1.56,
+      "2025-Q2": 1.33,
+      "2025-Q3": 2.46,
+      "2025-Q4": 3.04,
+      "2026-Q1": 490000.0,
+      "2026-Q2": 620000.0
+    },
+    "net_income": {
+      "2024-Q1": 2792640391.0,
+      "2024-Q2": 4673415385.0,
+      "2024-Q3": 8396879067.0,
+      "2024-Q4": 9112274242.0,
+      "2025-Q1": 3435275722.0,
+      "2025-Q2": 4532083257.0,
+      "2025-Q3": 8123908811.0,
+      "2025-Q4": 10021677456.0,
+      "2026-Q1": 1694608556.0,
+      "2026-Q2": 2145541317.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 2.08,
+      "2024": 2.63,
+      "2025": 3.04
+    },
+    "revenue_per_share": {
+      "2023": 38699524704.0,
+      "2024": 43724769550.0,
+      "2025": 41872866308.0
+    }
+  },
+  "statistik": {
+    "market_cap": 183875305472,
+    "enterprise_value": 197421154304,
+    "shares_outstanding": 3469345537,
+    "free_float_pct": 21.5970000107833
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5388,
+    "vol_trend": 2.498,
+    "price_chg_20d": -18.46
+  },
+  "neraca": {
+    "aset": 237128806735.0,
+    "aset_lancar": 60450671384.0,
+    "kas": 31469133746.0,
+    "piutang_usaha": 8329716953.0,
+    "persediaan": 19809089962.0,
+    "aset_tetap": 109463019201.0,
+    "liabilitas": 55343286471.0,
+    "liabilitas_jangka_pendek": 52394317584.0,
+    "utang_usaha": 8329716953.0,
+    "utang_bank": 45014976000.0,
+    "ekuitas": 181785520264.0,
+    "ekuitas_induk": 181785520264.0,
+    "modal_saham": null,
+    "saldo_laba": 1200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 23502405488.0,
+    "beban_pokok": 13750529546.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2961244788.0,
+    "beban_pajak": -815703471.0,
+    "laba_bersih": 2145541317.0,
+    "laba_induk": 2145541317.0,
+    "eps_basic": 620000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 646670759.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

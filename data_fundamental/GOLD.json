@@ -1,0 +1,128 @@
+{
+  "kode": "GOLD",
+  "nama": "PT Visi Telekomunikasi Infrastruktur Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 278.0,
+  "update": "2026-10-11 13:34",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 23.410526,
+    "pb": 0.7985637,
+    "ps": 5.9299064,
+    "roe": 0.022630596291778445,
+    "eps": 11.88,
+    "de": 0.12955878870539334,
+    "margin_net": 0.31838948169923814,
+    "current_ratio": 0.5916494607169964,
+    "roa": 0.020034830749728595,
+    "bv": 348.13,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 12338030.0,
+      "2024-Q2": 25229125.0,
+      "2024-Q3": 38527512.0,
+      "2024-Q4": 52041658.0,
+      "2025-Q1": 13503235.0,
+      "2025-Q2": 27229940.0,
+      "2025-Q3": 41198203.0,
+      "2025-Q4": 55504823.0,
+      "2026-Q1": 14800700.0,
+      "2026-Q2": 31605105.0
+    },
+    "eps": {
+      "2024-Q1": 3840.0,
+      "2024-Q2": 7540.0,
+      "2024-Q3": 10590.0,
+      "2024-Q4": 13.0,
+      "2025-Q1": 4.02,
+      "2025-Q2": 7.6,
+      "2025-Q3": 11.0,
+      "2025-Q4": 14910.0,
+      "2026-Q1": 4100.0,
+      "2026-Q2": 7800.0
+    },
+    "net_income": {
+      "2024-Q1": 4899787.0,
+      "2024-Q2": 9629178.0,
+      "2024-Q3": 13529268.0,
+      "2024-Q4": 16864119.0,
+      "2025-Q1": 5136898.0,
+      "2025-Q2": 9708063.0,
+      "2025-Q3": 14326302.0,
+      "2025-Q4": 19042757.0,
+      "2026-Q1": 5241749.0,
+      "2026-Q2": 10062733.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 12.53,
+      "2023": 12680.0,
+      "2024": 13.0,
+      "2025": 14910.0
+    },
+    "revenue_per_share": {
+      "2022": 47421904.0,
+      "2023": 47726683.0,
+      "2024": 52041658.0,
+      "2025": 55504823.0
+    }
+  },
+  "statistik": {
+    "market_cap": 355082731520,
+    "enterprise_value": 365664468992,
+    "shares_outstanding": 1277276000,
+    "free_float_pct": 18.506999974946684
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2275,
+    "vol_trend": 0.41,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 502261942.0,
+    "aset_lancar": 31410193.0,
+    "kas": 9419984.0,
+    "piutang_usaha": 8854530.0,
+    "persediaan": null,
+    "aset_tetap": 405381820.0,
+    "liabilitas": 57608535.0,
+    "liabilitas_jangka_pendek": 53089194.0,
+    "utang_usaha": 8854530.0,
+    "utang_bank": 20000000.0,
+    "ekuitas": 444651695.0,
+    "ekuitas_induk": 444651695.0,
+    "modal_saham": null,
+    "saldo_laba": 6033800.0
+  },
+  "laba_rugi": {
+    "pendapatan": 31605105.0,
+    "beban_pokok": 12577683.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10259714.0,
+    "beban_pajak": -196945.0,
+    "laba_bersih": 10062733.0,
+    "laba_induk": 10062733.0,
+    "eps_basic": 7800.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33596768.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,113 @@
+{
+  "kode": "NANO",
+  "nama": "PT Nanotech Indonesia Global Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Devices",
+  "harga": 29.0,
+  "update": "2026-10-11 11:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.119632,
+    "pb": 0.730074,
+    "ps": 0.52252805,
+    "roe": 0.014949199010990398,
+    "eps": 2.61,
+    "de": 0.23245229030247058,
+    "margin_net": 0.01166434270737001,
+    "current_ratio": 2.9216544454024582,
+    "roa": 0.011915618828189447,
+    "bv": 39.72,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 49062692066.0,
+      "2024-Q4": 114863286774.0,
+      "2025-Q2": 52492914168.0,
+      "2025-Q4": 72167413022.0,
+      "2026-Q2": 218153469410.0
+    },
+    "eps": {
+      "2024-Q2": 150000.0,
+      "2024-Q4": 250000.0,
+      "2025-Q2": 100000.0,
+      "2025-Q4": 480000.0,
+      "2026-Q2": 590000.0
+    },
+    "net_income": {
+      "2024-Q2": 651141148.0,
+      "2024-Q4": 1052087588.0,
+      "2025-Q2": 428887290.0,
+      "2025-Q4": 2054094889.0,
+      "2026-Q2": 2544616830.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 410000.0,
+      "2023": 320000.0,
+      "2024": 250000.0,
+      "2025": 480000.0
+    },
+    "revenue_per_share": {
+      "2022": 44703764.0,
+      "2023": 83820417360.0,
+      "2024": 114863286774.0,
+      "2025": 72167413022.0
+    }
+  },
+  "statistik": {
+    "market_cap": 124271779840,
+    "enterprise_value": 141895041024,
+    "shares_outstanding": 4285233928,
+    "free_float_pct": 49.64800000995418
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1974,
+    "vol_trend": 1.024,
+    "price_chg_20d": -21.62
+  },
+  "neraca": {
+    "aset": 213553057268.0,
+    "aset_lancar": 107499421727.0,
+    "kas": 4513850813.0,
+    "piutang_usaha": 24576956934.0,
+    "persediaan": 541786784.0,
+    "aset_tetap": 64990103907.0,
+    "liabilitas": 39567471785.0,
+    "liabilitas_jangka_pendek": 36794023296.0,
+    "utang_usaha": 24576956934.0,
+    "utang_bank": 15716264444.0,
+    "ekuitas": 170217603507.0,
+    "ekuitas_induk": 170217603507.0,
+    "modal_saham": null,
+    "saldo_laba": 348076916.0
+  },
+  "laba_rugi": {
+    "pendapatan": 218153469410.0,
+    "beban_pokok": 211575012086.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3025150684.0,
+    "beban_pajak": -542624644.0,
+    "laba_bersih": 2544616830.0,
+    "laba_induk": 2544616830.0,
+    "eps_basic": 590000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 64990103907.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

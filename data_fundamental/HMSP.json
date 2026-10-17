@@ -1,0 +1,125 @@
+{
+  "kode": "HMSP",
+  "nama": "PT Hanjaya Mandala Sampoerna Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Tobacco",
+  "harga": 635.0,
+  "update": "2026-10-11 13:41",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.466666,
+    "pb": 2.8367972,
+    "ps": 1.5024234,
+    "roe": 0.16108660463263466,
+    "eps": 75.0,
+    "de": 0.9163841403879525,
+    "margin_net": 0.0742401609588912,
+    "current_ratio": 1.6531545804465697,
+    "roa": 0.0840575755339033,
+    "bv": 223.84,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 57816980.0,
+      "2024-Q3": 88468081.0,
+      "2024-Q4": 117880017.0,
+      "2025-Q1": 28788883.0,
+      "2025-Q2": 55173339.0,
+      "2025-Q3": 83742922.0,
+      "2025-Q4": 112171993.0,
+      "2026-Q1": 27204127.0,
+      "2026-Q2": 56495419.0
+    },
+    "eps": {
+      "2024-Q2": 29.0,
+      "2024-Q3": 45.0,
+      "2024-Q4": 57.0,
+      "2025-Q1": 16.491495140941417,
+      "2025-Q2": 18.0,
+      "2025-Q3": 39.0,
+      "2025-Q4": 57.0,
+      "2026-Q1": 18.0,
+      "2026-Q2": 36.0
+    },
+    "net_income": {
+      "2024-Q2": 3316729.0,
+      "2024-Q3": 5224447.0,
+      "2024-Q4": 6645774.0,
+      "2025-Q1": 1918261.0,
+      "2025-Q2": 2128393.0,
+      "2025-Q3": 4511121.0,
+      "2025-Q4": 6609456.0,
+      "2026-Q1": 2056169.0,
+      "2026-Q2": 4194229.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 54.0,
+      "2023": 70.0,
+      "2024": 57.0,
+      "2025": 57.0
+    },
+    "revenue_per_share": {
+      "2022": 111211321.0,
+      "2023": 115983384.0,
+      "2024": 117880017.0,
+      "2025": 112171993.0
+    }
+  },
+  "statistik": {
+    "market_cap": 73861978652672,
+    "enterprise_value": 67580895166464,
+    "shares_outstanding": 116318076900,
+    "free_float_pct": 7.560999999648378
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3668,
+    "vol_trend": 1.68,
+    "price_chg_20d": -13.01
+  },
+  "neraca": {
+    "aset": 49897097.0,
+    "aset_lancar": 35102109.0,
+    "kas": 6605359.0,
+    "piutang_usaha": 2914232.0,
+    "persediaan": 21323164.0,
+    "aset_tetap": 100464.0,
+    "liabilitas": 23859991.0,
+    "liabilitas_jangka_pendek": 21233410.0,
+    "utang_usaha": 2914232.0,
+    "utang_bank": null,
+    "ekuitas": 26037106.0,
+    "ekuitas_induk": 26037106.0,
+    "modal_saham": null,
+    "saldo_laba": 95000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 56495419.0,
+    "beban_pokok": 45883303.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5406231.0,
+    "beban_pajak": -1212002.0,
+    "laba_bersih": 4194229.0,
+    "laba_induk": 4194229.0,
+    "eps_basic": 36.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 100464.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "BACA",
+  "nama": "PT Bank Capital Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 109.0,
+  "update": "2026-10-11 12:37",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 15.266107,
+    "pb": 0.3193484,
+    "ps": 1.740078,
+    "roe": 0.007948617159691982,
+    "eps": 7.14,
+    "de": 2.759826746488111,
+    "margin_net": 0.06179171194535509,
+    "current_ratio": null,
+    "roa": 0.00211409133868108,
+    "bv": 341.32,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 232769.0,
+      "2024-Q2": 468298.0,
+      "2024-Q3": 707476.0,
+      "2024-Q4": 979700.0,
+      "2025-Q1": 340743.0,
+      "2025-Q2": 708014.0,
+      "2025-Q3": 1070649.0,
+      "2025-Q4": 1491241.0,
+      "2026-Q1": 442118.0,
+      "2026-Q2": 876056.0
+    },
+    "eps": {
+      "2024-Q1": 630000.0,
+      "2024-Q2": 1.89,
+      "2024-Q3": 4.04,
+      "2024-Q4": 5.48,
+      "2025-Q1": 1.0,
+      "2025-Q2": 1.88,
+      "2025-Q3": 3.15,
+      "2025-Q4": 6.31,
+      "2026-Q1": 1.27,
+      "2026-Q2": 2.71
+    },
+    "net_income": {
+      "2024-Q1": 12610.0,
+      "2024-Q2": 37677.0,
+      "2024-Q3": 80663.0,
+      "2024-Q4": 109378.0,
+      "2025-Q1": 19890.0,
+      "2025-Q2": 37546.0,
+      "2025-Q3": 62777.0,
+      "2025-Q4": 125985.0,
+      "2026-Q1": 25297.0,
+      "2026-Q2": 54133.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.16,
+      "2023": 51000.0,
+      "2024": 5.48,
+      "2025": 6.31
+    },
+    "revenue_per_share": {
+      "2022": 625261.0,
+      "2023": 838840.0,
+      "2024": 979700.0,
+      "2025": 1491241.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2174879793152,
+    "enterprise_value": 5382347948032,
+    "shares_outstanding": 19953024885,
+    "free_float_pct": 49.333000002420434
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4771,
+    "vol_trend": 0.56,
+    "price_chg_20d": -7.63
+  },
+  "neraca": {
+    "aset": 25605800.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 755455.0,
+    "liabilitas": 18795433.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 6810367.0,
+    "ekuitas_induk": 6810367.0,
+    "modal_saham": null,
+    "saldo_laba": 1293469.0
+  },
+  "laba_rugi": {
+    "pendapatan": 876056.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 76568.0,
+    "laba_sebelum_pajak": 69639.0,
+    "beban_pajak": -15506.0,
+    "laba_bersih": 54133.0,
+    "laba_induk": 54133.0,
+    "eps_basic": 2.71,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "SUPA",
+  "nama": "PT Super Bank Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 490.0,
+  "update": "2026-10-11 12:09",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 58.12574,
+    "pb": 2.011965,
+    "ps": 10.508057,
+    "roe": 0.02211989694469287,
+    "eps": 8.43,
+    "de": 2.271273629913512,
+    "margin_net": 0.1217652926773321,
+    "current_ratio": null,
+    "roa": 0.0067618608062688075,
+    "bv": 243.54,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q4": 2163280.0,
+      "2026-Q1": 724646.0,
+      "2026-Q2": 1499672.0
+    },
+    "eps": {
+      "2025-Q4": 3.3,
+      "2026-Q1": 2.3,
+      "2026-Q2": 5.4
+    },
+    "net_income": {
+      "2025-Q4": 99684.0,
+      "2026-Q1": 78190.0,
+      "2026-Q2": 182608.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2025": 3.3
+    },
+    "revenue_per_share": {
+      "2025": 2163280.0
+    }
+  },
+  "statistik": {
+    "market_cap": 16609538211840,
+    "enterprise_value": 17590729572352,
+    "shares_outstanding": 33897017650,
+    "free_float_pct": 7.455000000567896
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3003,
+    "vol_trend": 0.673,
+    "price_chg_20d": -2.97
+  },
+  "neraca": {
+    "aset": 27005584.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 41186.0,
+    "liabilitas": 18750211.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 8255373.0,
+    "ekuitas_induk": 8255373.0,
+    "modal_saham": null,
+    "saldo_laba": -663695.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1499672.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 234401.0,
+    "laba_sebelum_pajak": 234401.0,
+    "beban_pajak": -51793.0,
+    "laba_bersih": 182608.0,
+    "laba_induk": 182608.0,
+    "eps_basic": 5.4,
+    "eps_diluted": 5.4
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,123 @@
+{
+  "kode": "DWGL",
+  "nama": "PT Dwi Guna Laksana Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 208.0,
+  "update": "2026-10-11 15:50",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.260524,
+    "pb": 3.2192163,
+    "ps": 0.5367621,
+    "roe": 0.16575183354561981,
+    "eps": 25.18,
+    "de": 2.2297938720732424,
+    "margin_net": 0.054294700787522104,
+    "current_ratio": 1.5556192049879445,
+    "roa": 0.05131963154633837,
+    "bv": 64.61,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 1660295583.0,
+      "2024-Q3": 2536033606.0,
+      "2024-Q4": 3337271882.0,
+      "2025-Q1": 801089686.0,
+      "2025-Q2": 1736346273.0,
+      "2025-Q3": 2545715201.0,
+      "2025-Q4": 3496796326.0,
+      "2026-Q1": 728224915.0,
+      "2026-Q2": 1825098869.0
+    },
+    "eps": {
+      "2024-Q2": 3.75,
+      "2024-Q3": 10020.0,
+      "2024-Q4": 12800.0,
+      "2025-Q1": 4.44,
+      "2025-Q2": 9.81,
+      "2025-Q3": 15.35,
+      "2025-Q4": 24.28,
+      "2026-Q1": 4.243330011267911,
+      "2026-Q2": 10.709511952774792
+    },
+    "net_income": {
+      "2024-Q2": 34660978.0,
+      "2024-Q3": 92704234.0,
+      "2024-Q4": 118414808.0,
+      "2025-Q1": 41073449.0,
+      "2025-Q2": 90743560.0,
+      "2025-Q3": 142019486.0,
+      "2025-Q4": 224674144.0,
+      "2026-Q1": 39262773.0,
+      "2026-Q2": 99093197.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 370000.0,
+      "2024": 12800.0,
+      "2025": 24.28
+    },
+    "revenue_per_share": {
+      "2022": 2784896376.0,
+      "2024": 3337271882.0,
+      "2025": 3496796326.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1924586799104,
+    "enterprise_value": 1502448451584,
+    "shares_outstanding": 9252820991,
+    "free_float_pct": 41.7619999971747
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1912,
+    "vol_trend": 0.246,
+    "price_chg_20d": -11.11
+  },
+  "neraca": {
+    "aset": 1930902347.0,
+    "aset_lancar": 1587519686.0,
+    "kas": 636163240.0,
+    "piutang_usaha": 585868971.0,
+    "persediaan": 35729257.0,
+    "aset_tetap": 13129198.0,
+    "liabilitas": 1333061594.0,
+    "liabilitas_jangka_pendek": 1020506613.0,
+    "utang_usaha": 585868971.0,
+    "utang_bank": null,
+    "ekuitas": 597840729.0,
+    "ekuitas_induk": 597840729.0,
+    "modal_saham": null,
+    "saldo_laba": -715527537.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1825098869.0,
+    "beban_pokok": 1658557696.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 125199696.0,
+    "beban_pajak": -26106493.0,
+    "laba_bersih": 99093197.0,
+    "laba_induk": 99093197.0,
+    "eps_basic": 10.709511952774792,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 40950.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

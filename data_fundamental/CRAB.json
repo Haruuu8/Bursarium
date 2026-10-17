@@ -1,0 +1,125 @@
+{
+  "kode": "CRAB",
+  "nama": "PT Toba Surimi Industries Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 224.0,
+  "update": "2026-10-11 11:24",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.8007878,
+    "ps": 0.68193036,
+    "roe": 0.016246909849511475,
+    "eps": 11.71,
+    "de": 0.516281183041908,
+    "margin_net": 0.012233409608222752,
+    "current_ratio": 2.6521989710669853,
+    "roa": 0.010714971623480493,
+    "bv": 124.39,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 281908851645.0,
+      "2024-Q3": 436638745174.0,
+      "2024-Q4": 589819644023.0,
+      "2025-Q1": 169898225327.0,
+      "2025-Q2": 298292549827.0,
+      "2025-Q3": 455329844984.0,
+      "2025-Q4": 616689254283.0,
+      "2026-Q1": 104656460351.0,
+      "2026-Q2": 322137888635.0
+    },
+    "eps": {
+      "2024-Q2": 4.02,
+      "2024-Q3": 6.96,
+      "2024-Q4": 14.88,
+      "2025-Q1": 1.3,
+      "2025-Q2": 4.32,
+      "2025-Q3": 7.31,
+      "2025-Q4": 11.71,
+      "2026-Q1": 310000.0,
+      "2026-Q2": 2.02
+    },
+    "net_income": {
+      "2024-Q2": 7829965924.0,
+      "2024-Q3": 13571139996.0,
+      "2024-Q4": 29014434707.0,
+      "2025-Q1": 2529707046.0,
+      "2025-Q2": 8427978590.0,
+      "2025-Q3": 14264088662.0,
+      "2025-Q4": 22839400888.0,
+      "2026-Q1": 614090597.0,
+      "2026-Q2": 3940844742.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 6.07,
+      "2023": 9.02,
+      "2024": 14.88,
+      "2025": 11.71
+    },
+    "revenue_per_share": {
+      "2022": 571159213866.0,
+      "2023": 598116062466.0,
+      "2024": 589819644023.0,
+      "2025": 616689254283.0
+    }
+  },
+  "statistik": {
+    "market_cap": 436799995904,
+    "enterprise_value": 319745490944,
+    "shares_outstanding": 1950000000,
+    "free_float_pct": 15.193000000000001
+  },
+  "akumulasi": {
+    "score": 4.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0521,
+    "vol_trend": 0.923,
+    "price_chg_20d": 3.7
+  },
+  "neraca": {
+    "aset": 367788630757.0,
+    "aset_lancar": 313462566398.0,
+    "kas": 128918339069.0,
+    "piutang_usaha": 80972631864.0,
+    "persediaan": 80748737320.0,
+    "aset_tetap": 52421154786.0,
+    "liabilitas": 125228982276.0,
+    "liabilitas_jangka_pendek": 118189687055.0,
+    "utang_usaha": 80972631864.0,
+    "utang_bank": 11158273758.0,
+    "ekuitas": 242559648481.0,
+    "ekuitas_induk": 242559648481.0,
+    "modal_saham": null,
+    "saldo_laba": 19500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 322137888635.0,
+    "beban_pokok": 302159877771.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4938179322.0,
+    "beban_pajak": -997334580.0,
+    "laba_bersih": 3940844742.0,
+    "laba_induk": 3940844742.0,
+    "eps_basic": 2.02,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3767150697.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

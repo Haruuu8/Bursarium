@@ -1,0 +1,122 @@
+{
+  "kode": "SSTM",
+  "nama": "PT Sunson Textile Manufacturer Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 416.0,
+  "update": "2026-10-11 15:09",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.4203494,
+    "ps": 1.6850379,
+    "roe": 0.04861417926242731,
+    "eps": 17.57,
+    "de": 0.6103820211850572,
+    "margin_net": 0.07407707364884943,
+    "current_ratio": 1.6222427154347985,
+    "roa": 0.030187979388054037,
+    "bv": 171.88,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2026-tw2"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 61739072767.0,
+      "2024-Q2": 107261185204.0,
+      "2025-Q1": 69303627152.0,
+      "2025-Q2": 124234102996.0,
+      "2025-Q3": 185920105028.0,
+      "2025-Q4": 274483465010.0,
+      "2026-Q1": 67791024674.0,
+      "2026-Q2": 138823220228.0
+    },
+    "eps": {
+      "2024-Q1": 5.0,
+      "2024-Q2": 8.0,
+      "2025-Q1": 2.0,
+      "2025-Q2": 1.0,
+      "2025-Q3": 3.5,
+      "2025-Q4": -16.0,
+      "2026-Q1": 5.0,
+      "2026-Q2": 8.8
+    },
+    "net_income": {
+      "2024-Q1": 5998635545.0,
+      "2024-Q2": 9515757636.0,
+      "2025-Q1": 2570517535.0,
+      "2025-Q2": 1324949001.0,
+      "2025-Q3": 4095510576.0,
+      "2025-Q4": -19074957275.0,
+      "2026-Q1": 5683356034.0,
+      "2026-Q2": 10283617909.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -5.0,
+      "2023": -5.0,
+      "2024": -15.0,
+      "2025": -16.0
+    },
+    "revenue_per_share": {
+      "2022": 260232693262.0,
+      "2023": 224458888000.0,
+      "2024": 235863387767.0,
+      "2025": 274483465010.0
+    }
+  },
+  "statistik": {
+    "market_cap": 487098220544,
+    "enterprise_value": 482649735168,
+    "shares_outstanding": 1170909181,
+    "free_float_pct": 15.398000026442698
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.258,
+    "vol_trend": 0.216,
+    "price_chg_20d": -11.86
+  },
+  "neraca": {
+    "aset": 340652740510.0,
+    "aset_lancar": 153168389325.0,
+    "kas": 4448478659.0,
+    "piutang_usaha": 5041697735.0,
+    "persediaan": 143508135644.0,
+    "aset_tetap": 186582911185.0,
+    "liabilitas": 129117380559.0,
+    "liabilitas_jangka_pendek": 94417677372.0,
+    "utang_usaha": 5041697735.0,
+    "utang_bank": null,
+    "ekuitas": 211535359951.0,
+    "ekuitas_induk": 211535359951.0,
+    "modal_saham": null,
+    "saldo_laba": -159927663700.0
+  },
+  "laba_rugi": {
+    "pendapatan": 138823220228.0,
+    "beban_pokok": 131269935719.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11010264186.0,
+    "beban_pajak": -726646277.0,
+    "laba_bersih": 10283617909.0,
+    "laba_induk": 10283617909.0,
+    "eps_basic": 8.8,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6742815792.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

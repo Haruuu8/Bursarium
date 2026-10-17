@@ -1,0 +1,125 @@
+{
+  "kode": "ADMF",
+  "nama": "PT Adira Dinamika Multi Finance Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 8450.0,
+  "update": "2026-10-11 12:14",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.4166665,
+    "pb": 0.66959256,
+    "ps": 1.3038368,
+    "roe": 0.07264035856422804,
+    "eps": 1560.0,
+    "de": 1.4960538363422458,
+    "margin_net": 128.67574994275247,
+    "current_ratio": null,
+    "roa": 0.029102080053960817,
+    "bv": 12619.61,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 25469.0,
+      "2024-Q3": 49190.0,
+      "2024-Q4": 76450.0,
+      "2025-Q1": 12179.0,
+      "2025-Q2": 21345.0,
+      "2025-Q3": 28021.0,
+      "2025-Q4": 43639.0,
+      "2026-Q1": 5215.0,
+      "2026-Q2": 8734.0
+    },
+    "eps": {
+      "2024-Q2": 765.0,
+      "2024-Q3": 1114.0,
+      "2024-Q4": 1407.0,
+      "2025-Q1": 279.0,
+      "2025-Q2": 602.0,
+      "2025-Q3": 939.0,
+      "2025-Q4": 1253.0,
+      "2026-Q1": 392.0,
+      "2026-Q2": 909.0
+    },
+    "net_income": {
+      "2024-Q2": 765198.0,
+      "2024-Q3": 1114429.0,
+      "2024-Q4": 1406682.0,
+      "2025-Q1": 278520.0,
+      "2025-Q2": 601653.0,
+      "2025-Q3": 938599.0,
+      "2025-Q4": 1544938.0,
+      "2026-Q1": 484131.0,
+      "2026-Q2": 1123854.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1606.0,
+      "2023": 1944.0,
+      "2024": 1407.0,
+      "2025": 1253.0
+    },
+    "revenue_per_share": {
+      "2022": 31362.0,
+      "2023": 32201.0,
+      "2024": 76450.0,
+      "2025": 43639.0
+    }
+  },
+  "statistik": {
+    "market_cap": 10359590092800,
+    "enterprise_value": 28154435469312,
+    "shares_outstanding": 1225986955,
+    "free_float_pct": 85.52200002813244
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1546,
+    "vol_trend": 1.278,
+    "price_chg_20d": -2.59
+  },
+  "neraca": {
+    "aset": 38617652.0,
+    "aset_lancar": null,
+    "kas": 95990.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 456605.0,
+    "liabilitas": 23146170.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 15471482.0,
+    "ekuitas_induk": 15471482.0,
+    "modal_saham": null,
+    "saldo_laba": 12251446.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8734.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1447696.0,
+    "beban_pajak": -323842.0,
+    "laba_bersih": 1123854.0,
+    "laba_induk": 1123854.0,
+    "eps_basic": 909.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32210.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

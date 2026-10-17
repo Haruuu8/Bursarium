@@ -1,0 +1,122 @@
+{
+  "kode": "IPCC",
+  "nama": "PT Indonesia Kendaraan Terminal Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 1055.0,
+  "update": "2026-10-11 15:58",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.8003697,
+    "pb": 1.4684063,
+    "ps": 2.0674362,
+    "roe": 0.07905601169006801,
+    "eps": 135.25,
+    "de": 0.5659594079880255,
+    "margin_net": 0.24977628912513467,
+    "current_ratio": 3.8259561329736833,
+    "roa": 0.05048407467447747,
+    "bv": 718.47,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 360261682.0,
+      "2024-Q3": 585823826.0,
+      "2024-Q4": 824595836.0,
+      "2025-Q2": 415550074.0,
+      "2025-Q3": 660240192.0,
+      "2025-Q4": 929960416.0,
+      "2026-Q1": 202206984.0,
+      "2026-Q2": 413500238.0
+    },
+    "eps": {
+      "2024-Q2": 44370.0,
+      "2024-Q3": 81400.0,
+      "2024-Q4": 116710.0,
+      "2025-Q2": 62609.0,
+      "2025-Q3": 104650.0,
+      "2025-Q4": 141070.0,
+      "2026-Q1": 29043.2089776244,
+      "2026-Q2": 56799.0
+    },
+    "net_income": {
+      "2024-Q2": 80687656.0,
+      "2024-Q3": 148024228.0,
+      "2024-Q4": 212216227.0,
+      "2025-Q2": 113846685.0,
+      "2025-Q3": 190296750.0,
+      "2025-Q4": 256512720.0,
+      "2026-Q1": 52811729.0,
+      "2026-Q2": 103282555.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 88.94,
+      "2023": 104958.4454846032,
+      "2024": 116710.0,
+      "2025": 141070.0
+    },
+    "revenue_per_share": {
+      "2022": 726573259.0,
+      "2023": 735204940.0,
+      "2024": 824595836.0,
+      "2025": 929960416.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1918395875328,
+    "enterprise_value": 1283136684032,
+    "shares_outstanding": 1818384820,
+    "free_float_pct": 27.98999999351072
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1883,
+    "vol_trend": 0.939,
+    "price_chg_20d": -6.22
+  },
+  "neraca": {
+    "aset": 2045844272.0,
+    "aset_lancar": 1218682863.0,
+    "kas": 1110986539.0,
+    "piutang_usaha": 60793692.0,
+    "persediaan": null,
+    "aset_tetap": 781164736.0,
+    "liabilitas": 739396441.0,
+    "liabilitas_jangka_pendek": 318530276.0,
+    "utang_usaha": 60793692.0,
+    "utang_bank": null,
+    "ekuitas": 1306447831.0,
+    "ekuitas_induk": 1306447831.0,
+    "modal_saham": null,
+    "saldo_laba": 14000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 413500238.0,
+    "beban_pokok": 253448557.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 128777959.0,
+    "beban_pajak": -25495404.0,
+    "laba_bersih": 103282555.0,
+    "laba_induk": 103282555.0,
+    "eps_basic": 56799.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1249140.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

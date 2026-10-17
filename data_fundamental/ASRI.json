@@ -1,0 +1,128 @@
+{
+  "kode": "ASRI",
+  "nama": "PT Alam Sutera Realty Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 116.0,
+  "update": "2026-10-11 12:40",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.016586,
+    "pb": 0.19799918,
+    "ps": 0.72632617,
+    "roe": 0.0011090303346729558,
+    "eps": 14.47,
+    "de": 1.010729324386095,
+    "margin_net": 0.009672028236446757,
+    "current_ratio": 0.7655599833531568,
+    "roa": 0.0005485396377031187,
+    "bv": 585.86,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 947275437.0,
+      "2024-Q2": 1881173685.0,
+      "2024-Q3": 2523103020.0,
+      "2024-Q4": 3433337156.0,
+      "2025-Q1": 567325694.0,
+      "2025-Q2": 1115768442.0,
+      "2025-Q3": 1657636593.0,
+      "2025-Q4": 2933946681.0,
+      "2026-Q1": 650886832.0,
+      "2026-Q2": 1319987048.0
+    },
+    "eps": {
+      "2024-Q1": 2.14,
+      "2024-Q2": 950000.0,
+      "2024-Q3": 640000.0,
+      "2024-Q4": 2.81,
+      "2025-Q1": 1.63,
+      "2025-Q2": 2.12,
+      "2025-Q3": 410000.0,
+      "2025-Q4": 15.94,
+      "2026-Q1": 940000.0,
+      "2026-Q2": 650000.0
+    },
+    "net_income": {
+      "2024-Q1": 42120202.0,
+      "2024-Q2": 18655704.0,
+      "2024-Q3": 12611139.0,
+      "2024-Q4": 55216151.0,
+      "2025-Q1": 31934366.0,
+      "2025-Q2": 41643603.0,
+      "2025-Q3": 7967110.0,
+      "2025-Q4": 313183580.0,
+      "2026-Q1": 18533260.0,
+      "2026-Q2": 12766952.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 55.27,
+      "2023": 32.18,
+      "2024": 2.81,
+      "2025": 15.94
+    },
+    "revenue_per_share": {
+      "2022": 4493531259.0,
+      "2023": 3956015546.0,
+      "2024": 3433337156.0,
+      "2025": 2933946681.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2279331594240,
+    "enterprise_value": 7509191426048,
+    "shares_outstanding": 19649411888,
+    "free_float_pct": 50.94399999886653
+  },
+  "akumulasi": {
+    "score": 4.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.006,
+    "vol_trend": 0.276,
+    "price_chg_20d": -7.2
+  },
+  "neraca": {
+    "aset": 23274438386.0,
+    "aset_lancar": 3869260384.0,
+    "kas": 880138005.0,
+    "piutang_usaha": 108266577.0,
+    "persediaan": 3955685.0,
+    "aset_tetap": 13586940.0,
+    "liabilitas": 11635328959.0,
+    "liabilitas_jangka_pendek": 5054157046.0,
+    "utang_usaha": 108266577.0,
+    "utang_bank": 480378680.0,
+    "ekuitas": 11511814962.0,
+    "ekuitas_induk": 11511814962.0,
+    "modal_saham": null,
+    "saldo_laba": 14000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1319987048.0,
+    "beban_pokok": 725977993.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17769892.0,
+    "beban_pajak": -4325580.0,
+    "laba_bersih": 12766952.0,
+    "laba_induk": 12766952.0,
+    "eps_basic": 650000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13586940.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,124 @@
+{
+  "kode": "LPPF",
+  "nama": "PT MDS Retailing Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 1595.0,
+  "update": "2026-10-11 14:13",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.596542,
+    "pb": 11.822784,
+    "ps": 0.31726134,
+    "roe": 2.167772123842265,
+    "eps": 347.0,
+    "de": 13.540303981309842,
+    "margin_net": 0.18612150802510957,
+    "current_ratio": 0.6063292942188085,
+    "roa": 0.14908712545684927,
+    "bv": 134.91,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1972884.0,
+      "2024-Q2": 3752589.0,
+      "2024-Q3": 4916677.0,
+      "2024-Q4": 6398770.0,
+      "2025-Q2": 3401248.0,
+      "2025-Q3": 4425816.0,
+      "2025-Q4": 5784718.0,
+      "2026-Q1": 2488328.0,
+      "2026-Q2": 3499703.0
+    },
+    "eps": {
+      "2024-Q1": 144.0,
+      "2024-Q2": 277.0,
+      "2024-Q3": 275.0,
+      "2024-Q4": 366.0,
+      "2025-Q2": 269.0,
+      "2025-Q3": 268.0,
+      "2025-Q4": 324.0,
+      "2026-Q1": 311.0,
+      "2026-Q2": 292.0
+    },
+    "net_income": {
+      "2024-Q1": 325971.0,
+      "2024-Q2": 626100.0,
+      "2024-Q3": 622267.0,
+      "2024-Q4": 827653.0,
+      "2025-Q2": 604037.0,
+      "2025-Q3": 601148.0,
+      "2025-Q4": 725379.0,
+      "2026-Q1": 692093.0,
+      "2026-Q2": 651370.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 582.0,
+      "2023": 298.0,
+      "2024": 366.0,
+      "2025": 324.0
+    },
+    "revenue_per_share": {
+      "2022": 6454583.0,
+      "2024": 6398770.0,
+      "2025": 5784718.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1866503421952,
+    "enterprise_value": 5802614587392,
+    "shares_outstanding": 1395970,
+    "free_float_pct": 75722.7408898472
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2112,
+    "vol_trend": 1.416,
+    "price_chg_20d": -2.15
+  },
+  "neraca": {
+    "aset": 4369056.0,
+    "aset_lancar": 1149376.0,
+    "kas": 240076.0,
+    "piutang_usaha": 23432.0,
+    "persediaan": 682161.0,
+    "aset_tetap": 12967.0,
+    "liabilitas": 4068577.0,
+    "liabilitas_jangka_pendek": 1895630.0,
+    "utang_usaha": 23432.0,
+    "utang_bank": 105000.0,
+    "ekuitas": 300479.0,
+    "ekuitas_induk": 300479.0,
+    "modal_saham": null,
+    "saldo_laba": 50857.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3499703.0,
+    "beban_pokok": 1223188.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 805175.0,
+    "beban_pajak": -153805.0,
+    "laba_bersih": 651370.0,
+    "laba_induk": 651370.0,
+    "eps_basic": 292.0,
+    "eps_diluted": 292.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12967.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,123 @@
+{
+  "kode": "MHKI",
+  "nama": "PT Multi Hanna Kreasindo Tbk",
+  "sektor": "Industrials",
+  "industri": "Waste Management",
+  "harga": 121.0,
+  "update": "2026-10-11 12:03",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 18.305597,
+    "pb": 0.9308766,
+    "ps": 2.3423185,
+    "roe": 0.009422948078171064,
+    "eps": 6.61,
+    "de": 0.04292731388810091,
+    "margin_net": 0.05635405981081449,
+    "current_ratio": 13.588508110389897,
+    "roa": 0.009035095689498916,
+    "bv": 129.99,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 77888092974.0,
+      "2024-Q3": 120161027259.0,
+      "2024-Q4": 172303629148.0,
+      "2025-Q1": 48609579777.0,
+      "2025-Q2": 100766850245.0,
+      "2025-Q3": 148805943100.0,
+      "2025-Q4": 212979880644.0,
+      "2026-Q1": 34802020232.0,
+      "2026-Q2": 81505314070.0
+    },
+    "eps": {
+      "2024-Q2": 9.57,
+      "2024-Q3": 9.57,
+      "2024-Q4": 9.12,
+      "2025-Q1": 10.73,
+      "2025-Q2": 6.01,
+      "2025-Q3": 7.48,
+      "2025-Q4": 11.32,
+      "2026-Q1": 980000.0,
+      "2026-Q2": 1.3
+    },
+    "net_income": {
+      "2024-Q2": 13804725359.0,
+      "2024-Q3": 22539421817.0,
+      "2024-Q4": 32196838682.0,
+      "2025-Q1": 10862543218.0,
+      "2025-Q2": 19900518036.0,
+      "2025-Q3": 27127560669.0,
+      "2025-Q4": 39974976689.0,
+      "2026-Q1": 3455954843.0,
+      "2026-Q2": 4593155344.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 9.57,
+      "2024": 9.12,
+      "2025": 11.32
+    },
+    "revenue_per_share": {
+      "2023": 148335976483.0,
+      "2024": 172303629148.0,
+      "2025": 212979880644.0
+    }
+  },
+  "statistik": {
+    "market_cap": 453750030336,
+    "enterprise_value": 352392052736,
+    "shares_outstanding": 3750000000,
+    "free_float_pct": 20.0
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2525,
+    "vol_trend": 0.288,
+    "price_chg_20d": -8.33
+  },
+  "neraca": {
+    "aset": 508368201273.0,
+    "aset_lancar": 203131315369.0,
+    "kas": 109571881208.0,
+    "piutang_usaha": 19147621272.0,
+    "persediaan": 11681536691.0,
+    "aset_tetap": 303940965989.0,
+    "liabilitas": 20924642644.0,
+    "liabilitas_jangka_pendek": 14948757709.0,
+    "utang_usaha": 19147621272.0,
+    "utang_bank": 2894109151.0,
+    "ekuitas": 487443558629.0,
+    "ekuitas_induk": 487443558629.0,
+    "modal_saham": null,
+    "saldo_laba": 14279899644.0
+  },
+  "laba_rugi": {
+    "pendapatan": 81505314070.0,
+    "beban_pokok": 50029532691.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5763857147.0,
+    "beban_pajak": -1170701803.0,
+    "laba_bersih": 4593155344.0,
+    "laba_induk": 4593155344.0,
+    "eps_basic": 1.3,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10114783724.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

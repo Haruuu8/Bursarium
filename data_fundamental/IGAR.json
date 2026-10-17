@@ -1,0 +1,125 @@
+{
+  "kode": "IGAR",
+  "nama": "PT Champion Pacific Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 482.0,
+  "update": "2026-10-11 13:40",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.5605006,
+    "pb": 0.62489706,
+    "ps": 0.46607444,
+    "roe": 0.05395351609244689,
+    "eps": 73.47,
+    "de": 0.24266198070191097,
+    "margin_net": 0.077456635809719,
+    "current_ratio": 6.16160090300453,
+    "roa": 0.03496917742970132,
+    "bv": 771.33,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 208064822465.0,
+      "2024-Q3": 676818671259.0,
+      "2024-Q4": 869134742614.0,
+      "2025-Q1": 222135107286.0,
+      "2025-Q2": 456311587204.0,
+      "2025-Q3": 707381172117.0,
+      "2025-Q4": 917317232890.0,
+      "2026-Q1": 209673230452.0,
+      "2026-Q2": 498476792716.0
+    },
+    "eps": {
+      "2024-Q1": 14.04,
+      "2024-Q3": 43.63,
+      "2024-Q4": 54.07,
+      "2025-Q1": 14.55,
+      "2025-Q2": 32.17,
+      "2025-Q3": 49.65,
+      "2025-Q4": 64.03,
+      "2026-Q1": 11.33,
+      "2026-Q2": 41.62
+    },
+    "net_income": {
+      "2024-Q1": 13482948765.0,
+      "2024-Q3": 41284398003.0,
+      "2024-Q4": 50021161727.0,
+      "2025-Q1": 13528571671.0,
+      "2025-Q2": 29843826736.0,
+      "2025-Q3": 46067126874.0,
+      "2025-Q4": 59462535097.0,
+      "2026-Q1": 10508608784.0,
+      "2026-Q2": 38610335393.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 73.52,
+      "2023": 39.79,
+      "2024": 54.07,
+      "2025": 64.03
+    },
+    "revenue_per_share": {
+      "2022": 1083672730660.0,
+      "2023": 857775074318.0,
+      "2024": 869134742614.0,
+      "2025": 917317232890.0
+    }
+  },
+  "statistik": {
+    "market_cap": 447190237184,
+    "enterprise_value": 233179725824,
+    "shares_outstanding": 927780600,
+    "free_float_pct": 11.119000009269433
+  },
+  "akumulasi": {
+    "score": 7.7,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1129,
+    "vol_trend": 1.212,
+    "price_chg_20d": 3.43
+  },
+  "neraca": {
+    "aset": 1104124781620.0,
+    "aset_lancar": 883293961156.0,
+    "kas": 429814335993.0,
+    "piutang_usaha": 221593728192.0,
+    "persediaan": 221506248030.0,
+    "aset_tetap": 1523136715.0,
+    "liabilitas": 173654307274.0,
+    "liabilitas_jangka_pendek": 143354620830.0,
+    "utang_usaha": 221593728192.0,
+    "utang_bank": null,
+    "ekuitas": 715622227972.0,
+    "ekuitas_induk": 715622227972.0,
+    "modal_saham": null,
+    "saldo_laba": 8980651104.0
+  },
+  "laba_rugi": {
+    "pendapatan": 498476792716.0,
+    "beban_pokok": 408174658714.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 70987785043.0,
+    "beban_pajak": -15451586109.0,
+    "laba_bersih": 38610335393.0,
+    "laba_induk": 38610335393.0,
+    "eps_basic": 41.62,
+    "eps_diluted": 41.62
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1523136715.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

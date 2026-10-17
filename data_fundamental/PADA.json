@@ -1,0 +1,125 @@
+{
+  "kode": "PADA",
+  "nama": "PT Personel Alih Daya Tbk",
+  "sektor": "Industrials",
+  "industri": "Staffing & Employment Services",
+  "harga": 149.0,
+  "update": "2026-10-11 11:30",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.8276777,
+    "ps": 0.34159747,
+    "roe": 0.014866330932352463,
+    "eps": null,
+    "de": 1.763147699237122,
+    "margin_net": 0.0019771442477207546,
+    "current_ratio": 1.330238213662742,
+    "roa": 0.00538021580839016,
+    "bv": 38.93,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 230044756733.0,
+      "2024-Q2": 448898874798.0,
+      "2024-Q3": 678757118264.0,
+      "2024-Q4": 910544339136.0,
+      "2025-Q2": 504363144116.0,
+      "2025-Q3": 794653734671.0,
+      "2025-Q4": 1163745843528.0,
+      "2026-Q1": 466274690735.0,
+      "2026-Q2": 915989878881.0
+    },
+    "eps": {
+      "2024-Q1": -730000.0,
+      "2024-Q2": -1.86,
+      "2024-Q3": -390000.0,
+      "2024-Q4": -5.24,
+      "2025-Q2": 40000.0,
+      "2025-Q3": 250000.0,
+      "2025-Q4": 740000.0,
+      "2026-Q1": 880000.0,
+      "2026-Q2": 570000.0
+    },
+    "net_income": {
+      "2024-Q1": -2293998767.0,
+      "2024-Q2": -5844086407.0,
+      "2024-Q3": -7945214762.0,
+      "2024-Q4": -16547709493.0,
+      "2025-Q2": 135210252.0,
+      "2025-Q3": 779483946.0,
+      "2025-Q4": 2483180597.0,
+      "2026-Q1": 2780740069.0,
+      "2026-Q2": 1811044120.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.42,
+      "2023": -1.75,
+      "2024": -5.24,
+      "2025": 740000.0
+    },
+    "revenue_per_share": {
+      "2022": 700938992980.0,
+      "2023": 815740188341.0,
+      "2024": 910544339136.0,
+      "2025": 1163745843528.0
+    }
+  },
+  "statistik": {
+    "market_cap": 469350023168,
+    "enterprise_value": 656552493056,
+    "shares_outstanding": 3150000000,
+    "free_float_pct": 28.561999999999998
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1392,
+    "vol_trend": 0.166,
+    "price_chg_20d": -26.96
+  },
+  "neraca": {
+    "aset": 336611798578.0,
+    "aset_lancar": 276078393094.0,
+    "kas": 17369226915.0,
+    "piutang_usaha": 223820613737.0,
+    "persediaan": null,
+    "aset_tetap": 51490654884.0,
+    "liabilitas": 214789936261.0,
+    "liabilitas_jangka_pendek": 207540566989.0,
+    "utang_usaha": 223820613737.0,
+    "utang_bank": 164499677236.0,
+    "ekuitas": 121821862317.0,
+    "ekuitas_induk": 121821862317.0,
+    "modal_saham": null,
+    "saldo_laba": 3951507095.0
+  },
+  "laba_rugi": {
+    "pendapatan": 915989878881.0,
+    "beban_pokok": 881979356745.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3191478881.0,
+    "beban_pajak": -1380434761.0,
+    "laba_bersih": 1811044120.0,
+    "laba_induk": 1811044120.0,
+    "eps_basic": 570000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1215000000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

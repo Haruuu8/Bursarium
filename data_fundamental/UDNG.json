@@ -1,0 +1,111 @@
+{
+  "kode": "UDNG",
+  "nama": "PT Agro Bahari Nusantara Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 510.0,
+  "update": "2026-10-11 11:53",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 18.519863,
+    "ps": 43.390453,
+    "roe": -0.07479735841632974,
+    "eps": null,
+    "de": 0.14430499747484152,
+    "margin_net": -0.30906975430264255,
+    "current_ratio": 1.557110599326444,
+    "roa": -0.06536487844150658,
+    "bv": 27.54,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2023-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 1204155183.0,
+      "2024-Q4": 3132558298.0,
+      "2025-Q2": 12716871901.0,
+      "2025-Q4": 21623836809.0,
+      "2026-Q2": 11662546842.0
+    },
+    "eps": {
+      "2024-Q2": -1.7,
+      "2024-Q4": -2.1,
+      "2025-Q2": 90000.0,
+      "2025-Q4": -1.96,
+      "2026-Q2": -2.06
+    },
+    "net_income": {
+      "2024-Q2": -2931091019.0,
+      "2024-Q4": -3672703469.0,
+      "2025-Q2": 153241178.0,
+      "2025-Q4": -3430893669.0,
+      "2026-Q2": -3604540487.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 150000.0,
+      "2024": -2.1,
+      "2025": -1.96
+    },
+    "revenue_per_share": {
+      "2023": 8348193858.0,
+      "2024": 3132558298.0,
+      "2025": 21623836809.0
+    }
+  },
+  "statistik": {
+    "market_cap": 892520431616,
+    "enterprise_value": 887229775872,
+    "shares_outstanding": 1750040072,
+    "free_float_pct": 48.99887800969165
+  },
+  "akumulasi": {
+    "score": 1.7,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1185,
+    "vol_trend": 1.8,
+    "price_chg_20d": -14.29
+  },
+  "neraca": {
+    "aset": 55144912267.0,
+    "aset_lancar": 9270764313.0,
+    "kas": 5793888244.0,
+    "piutang_usaha": 1220452793.0,
+    "persediaan": 558611900.0,
+    "aset_tetap": 10474593000.0,
+    "liabilitas": 6954165453.0,
+    "liabilitas_jangka_pendek": 5953825192.0,
+    "utang_usaha": 1220452793.0,
+    "utang_bank": null,
+    "ekuitas": 48190745814.0,
+    "ekuitas_induk": 48190745814.0,
+    "modal_saham": null,
+    "saldo_laba": -10647389306.0
+  },
+  "laba_rugi": {
+    "pendapatan": 11662546842.0,
+    "beban_pokok": 13696702080.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3587399818.0,
+    "beban_pajak": -17140669.0,
+    "laba_bersih": -3604540487.0,
+    "laba_induk": -3604540487.0,
+    "eps_basic": -2.06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10474593000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,122 @@
+{
+  "kode": "SURE",
+  "nama": "PT Super Energy Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Integrated",
+  "harga": 2900.0,
+  "update": "2026-10-11 16:04",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 1790.1234,
+    "pb": -13.504766,
+    "ps": 6.374121,
+    "roe": 0.039582492895515534,
+    "eps": 1.62,
+    "de": -4.555863371043975,
+    "margin_net": -0.03657473501831008,
+    "current_ratio": 0.628258277529588,
+    "roa": -0.0075646526893522305,
+    "bv": -214.74,
+    "bv_src": "ekuitas/penuh",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 78666083508.0,
+      "2024-Q3": 262381223109.0,
+      "2024-Q4": 372754928587.0,
+      "2025-Q1": 91294116314.0,
+      "2025-Q2": 180678122104.0,
+      "2025-Q4": 513988043649.0,
+      "2026-Q1": 174644061739.0,
+      "2026-Q2": 348034631765.0
+    },
+    "eps": {
+      "2024-Q1": -18.45,
+      "2024-Q3": -51.59342544516537,
+      "2024-Q4": -90.19,
+      "2025-Q1": -18.241072964666063,
+      "2025-Q2": -36.27,
+      "2025-Q4": -26.15,
+      "2026-Q1": -5.1,
+      "2026-Q2": -8.5
+    },
+    "net_income": {
+      "2024-Q1": -27630911228.0,
+      "2024-Q3": -77265115483.0,
+      "2024-Q4": -135062781726.0,
+      "2025-Q1": -27317407150.0,
+      "2025-Q2": -54319981884.0,
+      "2025-Q4": -39160849299.0,
+      "2026-Q1": -7630971319.0,
+      "2026-Q2": -12729274434.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -44.62,
+      "2023": -78.34087951942465,
+      "2024": -90.19,
+      "2025": -26.15
+    },
+    "revenue_per_share": {
+      "2022": 374131420451.0,
+      "2023": 304556595795.0,
+      "2024": 372754928587.0,
+      "2025": 513988043649.0
+    }
+  },
+  "statistik": {
+    "market_cap": 4342972940288,
+    "enterprise_value": 6128574922752,
+    "shares_outstanding": 1497576771,
+    "free_float_pct": 7.687999989684668
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.8474,
+    "vol_trend": 0.139,
+    "price_chg_20d": -4.61
+  },
+  "neraca": {
+    "aset": 1682730847897.0,
+    "aset_lancar": 173837265462.0,
+    "kas": 26462974761.0,
+    "piutang_usaha": 65901346274.0,
+    "persediaan": 4475410915.0,
+    "aset_tetap": 1469643734705.0,
+    "liabilitas": 1465113258200.0,
+    "liabilitas_jangka_pendek": 276697135047.0,
+    "utang_usaha": 65901346274.0,
+    "utang_bank": null,
+    "ekuitas": -321588497915.0,
+    "ekuitas_induk": -321588497915.0,
+    "modal_saham": null,
+    "saldo_laba": -513049225734.0
+  },
+  "laba_rugi": {
+    "pendapatan": 348034631765.0,
+    "beban_pokok": 247716567426.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -19841077201.0,
+    "beban_pajak": -651859465.0,
+    "laba_bersih": -12729274434.0,
+    "laba_induk": -12729274434.0,
+    "eps_basic": -8.5,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 136416467329.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

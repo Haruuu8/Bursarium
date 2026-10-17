@@ -1,0 +1,128 @@
+{
+  "kode": "LPLI",
+  "nama": "PT Star Pacific Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 206.0,
+  "update": "2026-10-11 14:11",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 0.43932608,
+    "pb": 0.1396576,
+    "ps": 273.3532,
+    "roe": -0.05988658677154591,
+    "eps": 468.9,
+    "de": 0.010720967545744687,
+    "margin_net": -21.03560528992879,
+    "current_ratio": 73.50763883275403,
+    "roa": -0.059251354918424086,
+    "bv": 1475.04,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 5146.0,
+      "2024-Q2": 10300.0,
+      "2024-Q3": 15450.0,
+      "2024-Q4": 20611.0,
+      "2025-Q1": 4515.0,
+      "2025-Q2": 8722.0,
+      "2025-Q3": 13240.0,
+      "2025-Q4": 16602.0,
+      "2026-Q1": 2458.0,
+      "2026-Q2": 4915.0
+    },
+    "eps": {
+      "2024-Q1": 57.05,
+      "2024-Q2": 54.7,
+      "2024-Q3": 27.64,
+      "2024-Q4": 34.84,
+      "2025-Q1": 22.08,
+      "2025-Q2": 173.59,
+      "2025-Q3": 278.73,
+      "2025-Q4": 730.83,
+      "2026-Q1": -3.96,
+      "2026-Q2": -88.34
+    },
+    "net_income": {
+      "2024-Q1": 66778.0,
+      "2024-Q2": 64029.0,
+      "2024-Q3": 32355.0,
+      "2024-Q4": 40776.0,
+      "2025-Q1": 25852.0,
+      "2025-Q2": 203178.0,
+      "2025-Q3": 326237.0,
+      "2025-Q4": 855385.0,
+      "2026-Q1": -4638.0,
+      "2026-Q2": -103390.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 33.04,
+      "2023": 271.83,
+      "2024": 34.84,
+      "2025": 730.83
+    },
+    "revenue_per_share": {
+      "2022": 25021.0,
+      "2023": 21040.0,
+      "2024": 20611.0,
+      "2025": 16602.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3497554345984,
+    "enterprise_value": -391161839616,
+    "shares_outstanding": 157927368,
+    "free_float_pct": 46.47569444708279
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2264,
+    "vol_trend": 1.018,
+    "price_chg_20d": -12.71
+  },
+  "neraca": {
+    "aset": 1744939.0,
+    "aset_lancar": 909363.0,
+    "kas": 73356.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 1162.0,
+    "liabilitas": 18509.0,
+    "liabilitas_jangka_pendek": 12371.0,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 1726430.0,
+    "ekuitas_induk": 1726430.0,
+    "modal_saham": null,
+    "saldo_laba": -388772.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4915.0,
+    "beban_pokok": 3774.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -102788.0,
+    "beban_pajak": null,
+    "laba_bersih": -103390.0,
+    "laba_induk": -103390.0,
+    "eps_basic": -88.34,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "BIKE",
+  "nama": "PT Bhineka Inovasi Ketahanan Energi Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Leisure",
+  "harga": 2140.0,
+  "update": "2026-10-11 11:12",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 82.12765,
+    "pb": 53.87036,
+    "ps": 9.374303,
+    "roe": -0.6476458976367386,
+    "eps": 26.06,
+    "de": 0.868744997772082,
+    "margin_net": -0.27474572988931223,
+    "current_ratio": 1.9849185830973768,
+    "roa": -0.34656729431188427,
+    "bv": 39.72,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 54586367398.0,
+      "2024-Q2": 160865047656.0,
+      "2024-Q3": 290628249228.0,
+      "2024-Q4": 386347822590.0,
+      "2025-Q1": 77316173569.0,
+      "2025-Q2": 173760465912.0,
+      "2025-Q3": 278423423341.0,
+      "2025-Q4": 347975944493.0,
+      "2026-Q1": 59833773016.0,
+      "2026-Q2": 121164495275.0
+    },
+    "eps": {
+      "2024-Q1": 2.0,
+      "2024-Q2": 3.61,
+      "2024-Q3": 3.69,
+      "2024-Q4": 9.75,
+      "2025-Q1": 2.19,
+      "2025-Q2": 5.05,
+      "2025-Q3": 5.71,
+      "2025-Q4": -18.89,
+      "2026-Q1": -7.37,
+      "2026-Q2": -25.73
+    },
+    "net_income": {
+      "2024-Q1": 1215373825.0,
+      "2024-Q2": 4670714607.0,
+      "2024-Q3": 4773220711.0,
+      "2024-Q4": 12616339212.0,
+      "2025-Q1": 2830429563.0,
+      "2025-Q2": 6538318375.0,
+      "2025-Q3": 7391113022.0,
+      "2025-Q4": -24446612487.0,
+      "2026-Q1": -9531132967.0,
+      "2026-Q2": -33289427691.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 17.2,
+      "2023": 14.89,
+      "2024": 9.75,
+      "2025": -18.89
+    },
+    "revenue_per_share": {
+      "2022": 225819967231.0,
+      "2023": 430280094321.0,
+      "2024": 386347822590.0,
+      "2025": 347975944493.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2768981196800,
+    "enterprise_value": 2768283369472,
+    "shares_outstanding": 1293916404,
+    "free_float_pct": 21.348999993047464
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1439,
+    "vol_trend": 0.909,
+    "price_chg_20d": 132.61
+  },
+  "neraca": {
+    "aset": 96054729449.0,
+    "aset_lancar": 88634688870.0,
+    "kas": 697735541.0,
+    "piutang_usaha": 60794991778.0,
+    "persediaan": 16435774487.0,
+    "aset_tetap": 2711271183.0,
+    "liabilitas": 44654067741.0,
+    "liabilitas_jangka_pendek": 44654067741.0,
+    "utang_usaha": 60794991778.0,
+    "utang_bank": 8682768622.0,
+    "ekuitas": 51400661708.0,
+    "ekuitas_induk": 51400661708.0,
+    "modal_saham": null,
+    "saldo_laba": 10360517302.0
+  },
+  "laba_rugi": {
+    "pendapatan": 121164495275.0,
+    "beban_pokok": 133977060445.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -33350685198.0,
+    "beban_pajak": 61257507.0,
+    "laba_bersih": -33289427691.0,
+    "laba_induk": -33289427691.0,
+    "eps_basic": -25.73,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 213666929.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

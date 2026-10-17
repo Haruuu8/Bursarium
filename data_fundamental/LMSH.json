@@ -1,0 +1,128 @@
+{
+  "kode": "LMSH",
+  "nama": "PT Lionmesh Prima Tbk",
+  "sektor": "Industrials",
+  "industri": "Metal Fabrication",
+  "harga": 256.0,
+  "update": "2026-10-11 14:13",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 12.194541,
+    "pb": 0.26389357,
+    "ps": 0.23028602,
+    "roe": 0.004467633215418067,
+    "eps": 20.99,
+    "de": 0.18823020917824673,
+    "margin_net": 0.008985390008621677,
+    "current_ratio": 6.22998978952602,
+    "roa": 0.0037599054298642874,
+    "bv": 970.09,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2026-tw2"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 20348961697.0,
+      "2024-Q2": 42597564701.0,
+      "2024-Q3": 66999774283.0,
+      "2024-Q4": 91618268915.0,
+      "2025-Q1": 18320677019.0,
+      "2025-Q2": 35822709991.0,
+      "2025-Q3": 68547208796.0,
+      "2025-Q4": 96237695507.0,
+      "2026-Q1": 17245399212.0,
+      "2026-Q2": 46304475443.0
+    },
+    "eps": {
+      "2024-Q1": 4.0,
+      "2024-Q2": -30.0,
+      "2024-Q3": -66.0,
+      "2024-Q4": -78.0,
+      "2025-Q1": 11.0,
+      "2025-Q2": -39.0,
+      "2025-Q3": 41.0,
+      "2025-Q4": -50.0,
+      "2026-Q1": 11.0,
+      "2026-Q2": 4.0
+    },
+    "net_income": {
+      "2024-Q1": -422030721.0,
+      "2024-Q2": -2904601247.0,
+      "2024-Q3": -6374530822.0,
+      "2024-Q4": -7475395272.0,
+      "2025-Q1": -1028424693.0,
+      "2025-Q2": -3754566104.0,
+      "2025-Q3": -3947803615.0,
+      "2025-Q4": -4814781222.0,
+      "2026-Q1": -1025735607.0,
+      "2026-Q2": 416063771.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -49.0,
+      "2023": -60.0,
+      "2024": -78.0,
+      "2025": -50.0
+    },
+    "revenue_per_share": {
+      "2022": 172869763600.0,
+      "2023": 112981196085.0,
+      "2024": 91618268915.0,
+      "2025": 96237695507.0
+    }
+  },
+  "statistik": {
+    "market_cap": 24576000000,
+    "enterprise_value": 1634055808,
+    "shares_outstanding": 96000000,
+    "free_float_pct": 36.841
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 110658041475.0,
+    "aset_lancar": 64986131492.0,
+    "kas": 20886793865.0,
+    "piutang_usaha": 9739411254.0,
+    "persediaan": 30662994425.0,
+    "aset_tetap": 34998666378.0,
+    "liabilitas": 17529588234.0,
+    "liabilitas_jangka_pendek": 10431177849.0,
+    "utang_usaha": 9739411254.0,
+    "utang_bank": null,
+    "ekuitas": 93128453241.0,
+    "ekuitas_induk": 93128453241.0,
+    "modal_saham": null,
+    "saldo_laba": 1132200000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 46304475443.0,
+    "beban_pokok": 42101669378.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 288648734.0,
+    "beban_pajak": 127415037.0,
+    "laba_bersih": 416063771.0,
+    "laba_induk": 416063771.0,
+    "eps_basic": 4.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 379457000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

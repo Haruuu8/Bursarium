@@ -1,0 +1,125 @@
+{
+  "kode": "AMRT",
+  "nama": "PT Sumber Alfaria Trijaya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Grocery Stores",
+  "harga": 1240.0,
+  "update": "2026-10-11 12:32",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 14.426993,
+    "pb": 2.8624523,
+    "ps": 0.38931698,
+    "roe": 0.11376588569992356,
+    "eps": 85.95,
+    "de": 1.3275156035490174,
+    "margin_net": 0.029800598767007563,
+    "current_ratio": 1.0360073606254334,
+    "roa": 0.0473280757930136,
+    "bv": 433.19,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 29325594.0,
+      "2024-Q2": 59219133.0,
+      "2024-Q3": 88217081.0,
+      "2024-Q4": 118227031.0,
+      "2025-Q2": 63812732.0,
+      "2025-Q3": 94475921.0,
+      "2025-Q4": 126737251.0,
+      "2026-Q1": 35240388.0,
+      "2026-Q2": 67955648.0
+    },
+    "eps": {
+      "2024-Q1": 214400.0,
+      "2024-Q2": 432100.0,
+      "2024-Q3": 57.77,
+      "2024-Q4": 75.81,
+      "2025-Q2": 45.37,
+      "2025-Q3": 55.75,
+      "2025-Q4": 82.16,
+      "2026-Q1": 26.12,
+      "2026-Q2": 49.230000000000004
+    },
+    "net_income": {
+      "2024-Q1": 890314.0,
+      "2024-Q2": 1794307.0,
+      "2024-Q3": 2398825.0,
+      "2024-Q4": 3148107.0,
+      "2025-Q2": 1883809.0,
+      "2025-Q3": 2314904.0,
+      "2025-Q4": 3410889.0,
+      "2026-Q1": 1075532.0,
+      "2026-Q2": 2025119.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 68.76,
+      "2023": 81.97,
+      "2024": 75.81,
+      "2025": 82.16
+    },
+    "revenue_per_share": {
+      "2022": 96924686.0,
+      "2023": 106944683.0,
+      "2024": 118227031.0,
+      "2025": 126737251.0
+    }
+  },
+  "statistik": {
+    "market_cap": 50953872998400,
+    "enterprise_value": 50916589830144,
+    "shares_outstanding": 41091832700,
+    "free_float_pct": 45.159999999221256
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1818,
+    "vol_trend": 1.026,
+    "price_chg_20d": -1.2
+  },
+  "neraca": {
+    "aset": 42788957.0,
+    "aset_lancar": 21676612.0,
+    "kas": 4097782.0,
+    "piutang_usaha": 2855710.0,
+    "persediaan": 13414040.0,
+    "aset_tetap": 275878.0,
+    "liabilitas": 23630784.0,
+    "liabilitas_jangka_pendek": 20923222.0,
+    "utang_usaha": 2855710.0,
+    "utang_bank": 77422.0,
+    "ekuitas": 17800758.0,
+    "ekuitas_induk": 17800758.0,
+    "modal_saham": null,
+    "saldo_laba": 18000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 67955648.0,
+    "beban_pokok": 52803709.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2672033.0,
+    "beban_pajak": -540082.0,
+    "laba_bersih": 2025119.0,
+    "laba_induk": 2025119.0,
+    "eps_basic": 49.230000000000004,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 275878.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

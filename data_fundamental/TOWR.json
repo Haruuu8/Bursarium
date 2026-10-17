@@ -1,0 +1,128 @@
+{
+  "kode": "TOWR",
+  "nama": "PT Sarana Menara Nusantara Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 458.0,
+  "update": "2026-10-11 15:19",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.3823857,
+    "pb": 0.9325338,
+    "ps": 1.885596,
+    "roe": 0.06506677139016022,
+    "eps": 71.76,
+    "de": 1.84878201114666,
+    "margin_net": 0.2576714285397071,
+    "current_ratio": 0.20405436772131783,
+    "roa": 0.022685887233996904,
+    "bv": 491.14,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 3046551.0,
+      "2024-Q2": 6153875.0,
+      "2024-Q3": 9449041.0,
+      "2024-Q4": 12735815.0,
+      "2025-Q1": 3208440.0,
+      "2025-Q2": 6394230.0,
+      "2025-Q3": 9686701.0,
+      "2025-Q4": 13327907.0,
+      "2026-Q1": 3555778.0,
+      "2026-Q2": 7205568.0
+    },
+    "eps": {
+      "2024-Q1": 16.0,
+      "2024-Q2": 32.0,
+      "2024-Q3": 50.0,
+      "2024-Q4": 67.0,
+      "2025-Q1": 16.0,
+      "2025-Q2": 33.0,
+      "2025-Q3": 49.0,
+      "2025-Q4": 69.0,
+      "2026-Q1": 16.0,
+      "2026-Q2": 32.0
+    },
+    "net_income": {
+      "2024-Q1": 797389.0,
+      "2024-Q2": 1605066.0,
+      "2024-Q3": 2447237.0,
+      "2024-Q4": 3335437.0,
+      "2025-Q1": 802870.0,
+      "2025-Q2": 1652056.0,
+      "2025-Q3": 2555244.0,
+      "2025-Q4": 3678316.0,
+      "2026-Q1": 940739.0,
+      "2026-Q2": 1856669.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 69.0,
+      "2023": 65.0,
+      "2024": 67.0,
+      "2025": 69.0
+    },
+    "revenue_per_share": {
+      "2022": 11035650.0,
+      "2023": 11740345.0,
+      "2024": 12735815.0,
+      "2025": 13327907.0
+    }
+  },
+  "statistik": {
+    "market_cap": 26660904632320,
+    "enterprise_value": 71737689505792,
+    "shares_outstanding": 58211582377,
+    "free_float_pct": 23.34508759955883
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1411,
+    "vol_trend": 0.745,
+    "price_chg_20d": 0.88
+  },
+  "neraca": {
+    "aset": 81842468.0,
+    "aset_lancar": 6456210.0,
+    "kas": 941560.0,
+    "piutang_usaha": 3154823.0,
+    "persediaan": 432049.0,
+    "aset_tetap": 49730125.0,
+    "liabilitas": 52754673.0,
+    "liabilitas_jangka_pendek": 31639656.0,
+    "utang_usaha": 3154823.0,
+    "utang_bank": 25020215.0,
+    "ekuitas": 28534826.0,
+    "ekuitas_induk": 28534826.0,
+    "modal_saham": null,
+    "saldo_laba": 13080.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7205568.0,
+    "beban_pokok": 2584770.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2412348.0,
+    "beban_pajak": -492492.0,
+    "laba_bersih": 1856669.0,
+    "laba_induk": 1856669.0,
+    "eps_basic": 32.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1947779.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

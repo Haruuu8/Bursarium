@@ -1,0 +1,126 @@
+{
+  "kode": "BABY",
+  "nama": "PT Multitrend Indo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Retail",
+  "harga": 188.0,
+  "update": "2026-10-11 11:51",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8903075,
+    "ps": 0.3654908,
+    "roe": 0.019546573863336716,
+    "eps": 8.26,
+    "de": 1.0504480967733307,
+    "margin_net": 0.012945569914343535,
+    "current_ratio": 2.4785758720094466,
+    "roa": 0.009532044196655716,
+    "bv": 211.16,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2026-tw2"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 267056369439.0,
+      "2024-Q2": 516861887345.0,
+      "2024-Q3": 791025843623.0,
+      "2024-Q4": 1044032751553.0,
+      "2025-Q1": 266813642248.0,
+      "2025-Q2": 543462823765.0,
+      "2025-Q3": 817314968665.0,
+      "2025-Q4": 1101696804256.0,
+      "2026-Q1": 304931996817.0,
+      "2026-Q2": 910222661263.0
+    },
+    "eps": {
+      "2024-Q1": -10.46,
+      "2024-Q2": -17.648910244543316,
+      "2024-Q3": -23.92097915674783,
+      "2024-Q4": -31.42,
+      "2025-Q1": -6.67,
+      "2025-Q2": -4.03,
+      "2025-Q3": -8.63,
+      "2025-Q4": -6.44,
+      "2026-Q1": 2.51,
+      "2026-Q2": 4.44
+    },
+    "net_income": {
+      "2024-Q1": -24643243250.0,
+      "2024-Q2": -53367163073.0,
+      "2024-Q3": -63626450461.0,
+      "2024-Q4": -83154239402.0,
+      "2025-Q1": -17563216115.0,
+      "2025-Q2": -10555411718.0,
+      "2025-Q3": -22573243310.0,
+      "2025-Q4": -16852038274.0,
+      "2026-Q1": 6571256235.0,
+      "2026-Q2": 11783351099.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": -17.98,
+      "2024": -31.42,
+      "2025": -6.44
+    },
+    "revenue_per_share": {
+      "2023": 1005682962532.0,
+      "2024": 1044032751553.0,
+      "2025": 1101696804256.0
+    }
+  },
+  "statistik": {
+    "market_cap": 536707366912,
+    "enterprise_value": 747299733504,
+    "shares_outstanding": 2854826582,
+    "free_float_pct": 7.569000000294938
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2387,
+    "vol_trend": 0.114,
+    "price_chg_20d": -11.32
+  },
+  "neraca": {
+    "aset": 1236183011314.0,
+    "aset_lancar": 936552142879.0,
+    "kas": 103198096161.0,
+    "piutang_usaha": 166189364332.0,
+    "persediaan": 624039932593.0,
+    "aset_tetap": 93134270437.0,
+    "liabilitas": 633246461610.0,
+    "liabilitas_jangka_pendek": 377858976784.0,
+    "utang_usaha": 166189364332.0,
+    "utang_bank": 71117945338.0,
+    "ekuitas": 602834603209.0,
+    "ekuitas_induk": 602834603209.0,
+    "modal_saham": null,
+    "saldo_laba": -73797555118.0
+  },
+  "laba_rugi": {
+    "pendapatan": 910222661263.0,
+    "beban_pokok": 525674911136.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 16514292305.0,
+    "beban_pajak": -4671002228.0,
+    "laba_bersih": 11783351099.0,
+    "laba_induk": 11783351099.0,
+    "eps_basic": 4.44,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7327694464.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

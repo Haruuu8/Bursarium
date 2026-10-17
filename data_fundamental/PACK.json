@@ -1,0 +1,113 @@
+{
+  "kode": "PACK",
+  "nama": "PT Abadi Nusantara Hijau Investama Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 488.0,
+  "update": "2026-10-11 11:34",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 32.707775,
+    "pb": 4.6624947,
+    "ps": 40.704453,
+    "roe": 0.036719736334571894,
+    "eps": 14.92,
+    "de": 0.01422946248473949,
+    "margin_net": 0.8954698380405646,
+    "current_ratio": 11.87610293692505,
+    "roa": 0.036203273299672364,
+    "bv": 104.66,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 29550869360.0,
+      "2024-Q4": 54702368426.0,
+      "2025-Q2": 20549802514.0,
+      "2025-Q4": 216588323439.0,
+      "2026-Q2": 213000183733.0
+    },
+    "eps": {
+      "2024-Q2": 840000.0,
+      "2024-Q4": 580000.0,
+      "2025-Q2": 4.98,
+      "2025-Q4": 19.9,
+      "2026-Q2": 10.9925417560583
+    },
+    "net_income": {
+      "2024-Q2": 1294365029.0,
+      "2024-Q4": 899757695.0,
+      "2025-Q2": -14419856188.0,
+      "2025-Q4": 28578766364.0,
+      "2026-Q2": 190735240030.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.67,
+      "2023": 1.49,
+      "2024": 580000.0,
+      "2025": 19.9
+    },
+    "revenue_per_share": {
+      "2022": 44150213935.0,
+      "2023": 52931736227.0,
+      "2024": 54702368426.0,
+      "2025": 216588323439.0
+    }
+  },
+  "statistik": {
+    "market_cap": 16649697624064,
+    "enterprise_value": 14996163526656,
+    "shares_outstanding": 34118231991,
+    "free_float_pct": 55.054226918777275
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1987,
+    "vol_trend": 1.313,
+    "price_chg_20d": -12.86
+  },
+  "neraca": {
+    "aset": 5268452895162.0,
+    "aset_lancar": 872820850279.0,
+    "kas": 805917199686.0,
+    "piutang_usaha": 8063679461.0,
+    "persediaan": 7838948507.0,
+    "aset_tetap": 564577628.0,
+    "liabilitas": 73912838529.0,
+    "liabilitas_jangka_pendek": 73493877151.0,
+    "utang_usaha": 8063679461.0,
+    "utang_bank": null,
+    "ekuitas": 5194352113319.0,
+    "ekuitas_induk": 5194352113319.0,
+    "modal_saham": null,
+    "saldo_laba": 216345186727.0
+  },
+  "laba_rugi": {
+    "pendapatan": 213000183733.0,
+    "beban_pokok": 206650325666.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 195828629007.0,
+    "beban_pajak": -5040760456.0,
+    "laba_bersih": 190735240030.0,
+    "laba_induk": 190735240030.0,
+    "eps_basic": 10.9925417560583,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 362346045.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

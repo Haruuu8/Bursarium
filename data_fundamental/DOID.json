@@ -1,0 +1,125 @@
+{
+  "kode": "DOID",
+  "nama": "PT Buma Internasional Grup Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 222.0,
+  "update": "2026-10-11 13:15",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 221999.98,
+    "ps": 1131.9141,
+    "roe": -11.59949900841598,
+    "eps": null,
+    "de": 323.19870207630225,
+    "margin_net": -0.07309048660557796,
+    "current_ratio": 0.976128638877099,
+    "roa": -0.035826279277746585,
+    "bv": 0.0,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2023-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 426226267.0,
+      "2024-Q2": 854978548.0,
+      "2024-Q3": 1349094283.0,
+      "2024-Q4": 1756310908.0,
+      "2025-Q1": 351883250.0,
+      "2025-Q2": 730208979.0,
+      "2025-Q3": 1130514218.0,
+      "2025-Q4": 1480310107.0,
+      "2026-Q2": 692845572.0
+    },
+    "eps": {
+      "2024-Q1": -2600.0,
+      "2024-Q2": -3503.4215393044897,
+      "2024-Q3": -1844.3287181507876,
+      "2024-Q4": -8140.0,
+      "2025-Q1": -9000.0,
+      "2025-Q2": -10003.276622111156,
+      "2025-Q3": -9822.923381444458,
+      "2025-Q4": -15740.0,
+      "2026-Q2": -6883.1390207950835
+    },
+    "net_income": {
+      "2024-Q1": -19082367.0,
+      "2024-Q2": -26585193.0,
+      "2024-Q3": -13961432.0,
+      "2024-Q4": -61332081.0,
+      "2025-Q1": -67020278.0,
+      "2025-Q2": -74207564.0,
+      "2025-Q3": -72667200.0,
+      "2025-Q4": -116259520.0,
+      "2026-Q2": -50640420.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 3734.8956548719807,
+      "2023": 4776.045259980006,
+      "2024": -8140.0,
+      "2025": -15740.0
+    },
+    "revenue_per_share": {
+      "2022": 1553709677.0,
+      "2023": 1833320502.0,
+      "2024": 1756310908.0,
+      "2025": 1480310107.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1633291599872,
+    "enterprise_value": 1634176860160,
+    "shares_outstanding": 7357169432,
+    "free_float_pct": 53.59300000418965
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2651,
+    "vol_trend": 0.976,
+    "price_chg_20d": -11.9
+  },
+  "neraca": {
+    "aset": 1413499281.0,
+    "aset_lancar": 493262018.0,
+    "kas": 158459180.0,
+    "piutang_usaha": 204716131.0,
+    "persediaan": 55040411.0,
+    "aset_tetap": 563538274.0,
+    "liabilitas": 1411002148.0,
+    "liabilitas_jangka_pendek": 505324809.0,
+    "utang_usaha": 204716131.0,
+    "utang_bank": 24500000.0,
+    "ekuitas": 4365742.0,
+    "ekuitas_induk": 4365742.0,
+    "modal_saham": null,
+    "saldo_laba": 100000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 692845572.0,
+    "beban_pokok": 680671465.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -55014884.0,
+    "beban_pajak": 5188625.0,
+    "laba_bersih": -50640420.0,
+    "laba_induk": -50640420.0,
+    "eps_basic": -6883.1390207950835,
+    "eps_diluted": -6883.1390207950835
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 49194896.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

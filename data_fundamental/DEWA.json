@@ -1,0 +1,128 @@
+{
+  "kode": "DEWA",
+  "nama": "PT Darma Henwa Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 366.0,
+  "update": "2026-10-11 13:13",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 3.3056357,
+    "pb": 1.7653017,
+    "ps": 2.2021108,
+    "roe": 0.04376054378144403,
+    "eps": 110.72,
+    "de": 1.1753469084113224,
+    "margin_net": 0.1105023485837486,
+    "current_ratio": 0.7103035655613286,
+    "roa": 0.020099217080461928,
+    "bv": 207.33,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1452395341.0,
+      "2024-Q2": 2920651466.0,
+      "2024-Q3": 4523488430.0,
+      "2024-Q4": 6031956702.0,
+      "2025-Q1": 1584388602.0,
+      "2025-Q2": 3108825999.0,
+      "2025-Q3": 4650366326.0,
+      "2025-Q4": 6392755815.0,
+      "2026-Q1": 1549301627.0,
+      "2026-Q2": 3206116454.0
+    },
+    "eps": {
+      "2024-Q1": 365200.0,
+      "2024-Q2": 650.0,
+      "2024-Q3": 430.0,
+      "2024-Q4": 747470.0,
+      "2025-Q1": 1.69321,
+      "2025-Q2": 4.12902,
+      "2025-Q3": 5.87686,
+      "2025-Q4": 112.0,
+      "2026-Q1": 2.27877,
+      "2026-Q2": 9.03
+    },
+    "net_income": {
+      "2024-Q1": 7981969.0,
+      "2024-Q2": 14237776.0,
+      "2024-Q3": 9449987.0,
+      "2024-Q4": 16335149.0,
+      "2025-Q1": 68892494.0,
+      "2025-Q2": 167999626.0,
+      "2025-Q3": 239144133.0,
+      "2025-Q4": 4306734797.0,
+      "2026-Q1": 92717138.0,
+      "2026-Q2": 354283398.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -770000.0,
+      "2023": 1.62,
+      "2024": 747470.0,
+      "2025": 112.0
+    },
+    "revenue_per_share": {
+      "2022": 406824600.0,
+      "2023": 7372668455.0,
+      "2024": 6031956702.0,
+      "2025": 6392755815.0
+    }
+  },
+  "statistik": {
+    "market_cap": 14291801473024,
+    "enterprise_value": 19069424107520,
+    "shares_outstanding": 39048640370,
+    "free_float_pct": 25.602000001210286
+  },
+  "akumulasi": {
+    "score": 1.7,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1195,
+    "vol_trend": 1.207,
+    "price_chg_20d": -12.44
+  },
+  "neraca": {
+    "aset": 17626726284.0,
+    "aset_lancar": 3151963746.0,
+    "kas": 644250375.0,
+    "piutang_usaha": 1570808226.0,
+    "persediaan": 303748062.0,
+    "aset_tetap": 5754190984.0,
+    "liabilitas": 9515555808.0,
+    "liabilitas_jangka_pendek": 4437488278.0,
+    "utang_usaha": 1570808226.0,
+    "utang_bank": 2161457220.0,
+    "ekuitas": 8095955109.0,
+    "ekuitas_induk": 8095955109.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3206116454.0,
+    "beban_pokok": 2593956166.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 464096340.0,
+    "beban_pajak": 2022429.0,
+    "laba_bersih": 354283398.0,
+    "laba_induk": 354283398.0,
+    "eps_basic": 9.03,
+    "eps_diluted": 9.03
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 207817761.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

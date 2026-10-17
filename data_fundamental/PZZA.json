@@ -1,0 +1,128 @@
+{
+  "kode": "PZZA",
+  "nama": "PT Sarimelati Kencana Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 193.0,
+  "update": "2026-10-11 15:58",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 32.935154,
+    "pb": 0.55929065,
+    "ps": 0.19428787,
+    "roe": 0.008106995762538097,
+    "eps": 5.86,
+    "de": 0.8027444325593731,
+    "margin_net": 0.005694852186500188,
+    "current_ratio": 0.7452121457880785,
+    "roa": 0.0044695902845232425,
+    "bv": 345.08,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 638171061556.0,
+      "2024-Q2": 1373096853722.0,
+      "2024-Q3": 2037872776885.0,
+      "2024-Q4": 2798983342354.0,
+      "2025-Q1": 707103303093.0,
+      "2025-Q2": 1543557772798.0,
+      "2025-Q3": 2265643996085.0,
+      "2025-Q4": 3052698947485.0,
+      "2026-Q1": 726868382007.0,
+      "2026-Q2": 1476427216308.0
+    },
+    "eps": {
+      "2024-Q1": -19.52,
+      "2024-Q2": -24.99118,
+      "2024-Q3": -32.18,
+      "2024-Q4": -24.23,
+      "2025-Q1": 140000.0,
+      "2025-Q2": 5.18,
+      "2025-Q3": 5.29,
+      "2025-Q4": 8.24,
+      "2026-Q1": 1.96,
+      "2026-Q2": 2.8
+    },
+    "net_income": {
+      "2024-Q1": -58671139637.0,
+      "2024-Q2": -75110744750.0,
+      "2024-Q3": -96715655267.0,
+      "2024-Q4": -72835122806.0,
+      "2025-Q1": 418570187.0,
+      "2025-Q2": 15568792880.0,
+      "2025-Q3": 15913442824.0,
+      "2025-Q4": 24750835101.0,
+      "2026-Q1": 5885814633.0,
+      "2026-Q2": 8408034761.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -7.8,
+      "2023": -32.02,
+      "2024": -24.23,
+      "2025": 8.24
+    },
+    "revenue_per_share": {
+      "2022": 3612319039640.0,
+      "2023": 3543982915761.0,
+      "2024": 2798983342354.0,
+      "2025": 3052698947485.0
+    }
+  },
+  "statistik": {
+    "market_cap": 580059725824,
+    "enterprise_value": 891317321728,
+    "shares_outstanding": 3005490700,
+    "free_float_pct": 34.592000001863255
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1657,
+    "vol_trend": 0.399,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 1881164542109.0,
+    "aset_lancar": 361427431740.0,
+    "kas": 52019547733.0,
+    "piutang_usaha": 10249015996.0,
+    "persediaan": 227018173195.0,
+    "aset_tetap": 14552882089.0,
+    "liabilitas": 832552932166.0,
+    "liabilitas_jangka_pendek": 484999384112.0,
+    "utang_usaha": 10249015996.0,
+    "utang_bank": 66616624167.0,
+    "ekuitas": 1037133237426.0,
+    "ekuitas_induk": 1037133237426.0,
+    "modal_saham": null,
+    "saldo_laba": 2850000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1476427216308.0,
+    "beban_pokok": 423869275431.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11178541487.0,
+    "beban_pajak": -2900094954.0,
+    "laba_bersih": 8408034761.0,
+    "laba_induk": 8408034761.0,
+    "eps_basic": 2.8,
+    "eps_diluted": 2.8
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14552882089.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "BABP",
+  "nama": "PT Bank MNC Internasional Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 31.0,
+  "update": "2026-10-11 12:37",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 16.666666,
+    "pb": 0.3635724,
+    "ps": 2.1158016,
+    "roe": 0.011046208415472922,
+    "eps": 1.86,
+    "de": 4.7195317192689785,
+    "margin_net": 0.0540346630156643,
+    "current_ratio": null,
+    "roa": 0.001931313428730273,
+    "bv": 85.26,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 335776.0,
+      "2024-Q2": 680528.0,
+      "2024-Q3": 1029717.0,
+      "2024-Q4": 1397432.0,
+      "2025-Q1": 394212.0,
+      "2025-Q2": 773367.0,
+      "2025-Q3": 1153099.0,
+      "2025-Q4": 1522313.0,
+      "2026-Q1": 376628.0,
+      "2026-Q2": 774947.0
+    },
+    "eps": {
+      "2024-Q1": 460000.0,
+      "2024-Q2": 840000.0,
+      "2024-Q3": 1.32,
+      "2024-Q4": 1.85,
+      "2025-Q1": 0.45999999999999996,
+      "2025-Q2": 0.9199999999999999,
+      "2025-Q3": 1.25,
+      "2025-Q4": 1.8399999999999999,
+      "2026-Q1": 0.41,
+      "2026-Q2": 0.94
+    },
+    "net_income": {
+      "2024-Q1": 14849.0,
+      "2024-Q2": 29478.0,
+      "2024-Q3": 49468.0,
+      "2024-Q4": 74850.0,
+      "2025-Q1": 19904.0,
+      "2025-Q2": 41713.0,
+      "2025-Q3": 60394.0,
+      "2025-Q4": 81775.0,
+      "2026-Q1": 18329.0,
+      "2026-Q2": 41874.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.87,
+      "2023": 2.63,
+      "2024": 1.85,
+      "2025": 1.8399999999999999
+    },
+    "revenue_per_share": {
+      "2022": 1154346.0,
+      "2023": 1313041.0,
+      "2024": 1397432.0,
+      "2025": 1522313.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1378228895744,
+    "enterprise_value": 2359940874240,
+    "shares_outstanding": 44458997354,
+    "free_float_pct": 5.152000000724083
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.7399,
+    "vol_trend": 70.093,
+    "price_chg_20d": -38.0
+  },
+  "neraca": {
+    "aset": 21681618.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 969405.0,
+    "liabilitas": 17890815.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 3790803.0,
+    "ekuitas_induk": 3790803.0,
+    "modal_saham": null,
+    "saldo_laba": -512395.0
+  },
+  "laba_rugi": {
+    "pendapatan": 774947.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 48279.0,
+    "laba_sebelum_pajak": 53107.0,
+    "beban_pajak": -11233.0,
+    "laba_bersih": 41874.0,
+    "laba_induk": 41874.0,
+    "eps_basic": 0.94,
+    "eps_diluted": 0.94
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

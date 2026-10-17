@@ -1,0 +1,113 @@
+{
+  "kode": "JAST",
+  "nama": null,
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 82.0,
+  "update": "2026-10-11 17:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": -5.501878690284488,
+    "pb": 1.5978799,
+    "ps": 0.35896572,
+    "roe": -0.05706,
+    "eps": null,
+    "de": 0.36585999999999996,
+    "margin_net": -0.044159997,
+    "current_ratio": 0.952,
+    "roa": -0.0050199996,
+    "bv": 51.32,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 36281638897.0,
+      "2024-Q3": 103717431267.0,
+      "2024-Q4": 143769288120.0,
+      "2025-Q1": 38912651709.0,
+      "2025-Q2": 97483984572.0,
+      "2025-Q3": 157438974453.0,
+      "2026-Q2": 117930912944.0
+    },
+    "eps": {
+      "2024-Q1": 490000.0,
+      "2024-Q3": 200000.0,
+      "2024-Q4": -6.85,
+      "2025-Q1": -1.36,
+      "2025-Q2": 10.71511,
+      "2025-Q3": 2.47,
+      "2026-Q2": -6.898
+    },
+    "net_income": {
+      "2024-Q1": 531133833.0,
+      "2024-Q3": -1349806735.0,
+      "2024-Q4": -7413219889.0,
+      "2025-Q1": -1469960739.0,
+      "2025-Q2": 4387951258.0,
+      "2025-Q3": 3177676459.0,
+      "2026-Q2": -4717422222.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": -6.85
+    },
+    "revenue_per_share": {
+      "2024": 143769288120.0
+    }
+  },
+  "statistik": {
+    "market_cap": 88771207168,
+    "enterprise_value": 134157082624,
+    "shares_outstanding": 1082575738,
+    "free_float_pct": 46.70499996001203
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3497,
+    "vol_trend": 0.219,
+    "price_chg_20d": -10.87
+  },
+  "neraca": {
+    "aset": 183312453803.0,
+    "aset_lancar": 75310816197.0,
+    "kas": 27180703374.0,
+    "piutang_usaha": 29160356930.0,
+    "persediaan": null,
+    "aset_tetap": 32987935643.0,
+    "liabilitas": 89509258388.0,
+    "liabilitas_jangka_pendek": 79147644422.0,
+    "utang_usaha": 29160356930.0,
+    "utang_bank": 28852482693.0,
+    "ekuitas": 55555307170.0,
+    "ekuitas_induk": 55555307170.0,
+    "modal_saham": null,
+    "saldo_laba": -90752962155.0
+  },
+  "laba_rugi": {
+    "pendapatan": 117930912944.0,
+    "beban_pokok": 86375525591.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 114109112.0,
+    "beban_pajak": -344507230.0,
+    "laba_bersih": -4717422222.0,
+    "laba_induk": -4717422222.0,
+    "eps_basic": -6.898,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3868303833.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

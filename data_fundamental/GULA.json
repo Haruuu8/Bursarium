@@ -1,0 +1,125 @@
+{
+  "kode": "GULA",
+  "nama": "PT Aman Agrindo Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 835.0,
+  "update": "2026-10-11 11:21",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 6.2331104,
+    "ps": 3.2000124,
+    "roe": 0.0002429576141333095,
+    "eps": 1.38,
+    "de": 0.5321642898928214,
+    "margin_net": 0.00024138647812518624,
+    "current_ratio": 1.261821055777007,
+    "roa": 0.0001585715159503587,
+    "bv": 133.96,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 122265371103.0,
+      "2024-Q3": 190309817653.0,
+      "2024-Q4": 299441484564.0,
+      "2025-Q1": 39334157140.0,
+      "2025-Q2": 65130343514.0,
+      "2025-Q3": 94526639493.0,
+      "2025-Q4": 200106131475.0,
+      "2026-Q1": 40920764640.0,
+      "2026-Q2": 144320842951.0
+    },
+    "eps": {
+      "2024-Q2": 730000.0,
+      "2024-Q3": 940000.0,
+      "2024-Q4": 1.38,
+      "2025-Q1": 920000.0,
+      "2025-Q2": -1.52,
+      "2025-Q3": 6.7,
+      "2025-Q4": -6.33,
+      "2026-Q1": 30000.0,
+      "2026-Q2": 30000.0
+    },
+    "net_income": {
+      "2024-Q2": 781999357.0,
+      "2024-Q3": 1003717977.0,
+      "2024-Q4": 1449120116.0,
+      "2025-Q1": -988120931.0,
+      "2025-Q2": -1624549921.0,
+      "2025-Q3": -7176182344.0,
+      "2025-Q4": -6779166776.0,
+      "2026-Q1": 36485706.0,
+      "2026-Q2": 34837100.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.65,
+      "2023": 3.0,
+      "2024": 1.38,
+      "2025": -6.33
+    },
+    "revenue_per_share": {
+      "2022": 180869381989.0,
+      "2023": 360878992832.0,
+      "2024": 299441484564.0,
+      "2025": 200106131475.0
+    }
+  },
+  "statistik": {
+    "market_cap": 893752705024,
+    "enterprise_value": 956631613440,
+    "shares_outstanding": 1070362500,
+    "free_float_pct": 24.58299996496514
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1974,
+    "vol_trend": 0.587,
+    "price_chg_20d": -1.18
+  },
+  "neraca": {
+    "aset": 219693302364.0,
+    "aset_lancar": 95152478332.0,
+    "kas": 12314134487.0,
+    "piutang_usaha": 462500000.0,
+    "persediaan": 64986597177.0,
+    "aset_tetap": 32280151941.0,
+    "liabilitas": 76305740199.0,
+    "liabilitas_jangka_pendek": 75408852861.0,
+    "utang_usaha": 462500000.0,
+    "utang_bank": 74993070967.0,
+    "ekuitas": 143387562165.0,
+    "ekuitas_induk": 143387562165.0,
+    "modal_saham": null,
+    "saldo_laba": 2146113167.0
+  },
+  "laba_rugi": {
+    "pendapatan": 144320842951.0,
+    "beban_pokok": 135968930507.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 422217262.0,
+    "beban_pajak": -387380162.0,
+    "laba_bersih": 34837100.0,
+    "laba_induk": 34837100.0,
+    "eps_basic": 30000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32280151941.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

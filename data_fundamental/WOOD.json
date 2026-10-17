@@ -1,0 +1,120 @@
+{
+  "kode": "WOOD",
+  "nama": "PT Integra Indocabinet Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 185.0,
+  "update": "2026-10-11 15:44",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 20.21858,
+    "pb": 0.2552629,
+    "ps": 0.44041103,
+    "roe": 0.014230958374442397,
+    "eps": 9.15,
+    "de": 0.777842594058328,
+    "margin_net": 0.044476360030502704,
+    "current_ratio": 1.7336837593409755,
+    "roa": 0.007926837866494573,
+    "bv": 724.74,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 641310882085.0,
+      "2024-Q2": 1441494449981.0,
+      "2025-Q1": 773507387650.0,
+      "2025-Q2": 1451410931567.0,
+      "2025-Q3": 2156212512902.0,
+      "2025-Q4": 2630090706713.0,
+      "2026-Q1": 722404256810.0,
+      "2026-Q2": 1452571543078.0
+    },
+    "eps": {
+      "2024-Q1": 6.62,
+      "2024-Q2": 13.22,
+      "2025-Q1": 7.75,
+      "2025-Q2": 13.56,
+      "2025-Q3": 17.65,
+      "2025-Q4": 12.4,
+      "2026-Q1": 4.57,
+      "2026-Q2": 10.31
+    },
+    "net_income": {
+      "2024-Q1": 42137197912.0,
+      "2024-Q2": 83832639594.0,
+      "2025-Q1": 49502606012.0,
+      "2025-Q2": 86598083416.0,
+      "2025-Q3": 112739188848.0,
+      "2025-Q4": 77680039237.0,
+      "2026-Q1": 28620251909.0,
+      "2026-Q2": 64605094920.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 27.99,
+      "2023": 15.19,
+      "2025": 12.4
+    },
+    "revenue_per_share": {
+      "2022": 4526699532441.0,
+      "2023": 2186033911377.0,
+      "2025": 2630090706713.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1158832062464,
+    "enterprise_value": 3950177681408,
+    "shares_outstanding": 6263956900,
+    "free_float_pct": 22.423999995913128
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2384,
+    "vol_trend": 0.611,
+    "price_chg_20d": -9.31
+  },
+  "neraca": {
+    "aset": 8150172364831.0,
+    "aset_lancar": 5326483423445.0,
+    "kas": 145660747658.0,
+    "piutang_usaha": 306261948334.0,
+    "persediaan": 3397477021983.0,
+    "aset_tetap": 2098329017868.0,
+    "liabilitas": 3531216471844.0,
+    "liabilitas_jangka_pendek": 3072350072351.0,
+    "utang_usaha": 306261948334.0,
+    "utang_bank": 2308412781441.0,
+    "ekuitas": 4539757142149.0,
+    "ekuitas_induk": 4539757142149.0,
+    "modal_saham": null,
+    "saldo_laba": 792735214664.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1452571543078.0,
+    "beban_pokok": 1134023799181.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 90854975946.0,
+    "beban_pajak": -24389445205.0,
+    "laba_bersih": 64605094920.0,
+    "laba_induk": 64605094920.0,
+    "eps_basic": 10.31,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 23209054596.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

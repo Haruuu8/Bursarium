@@ -1,0 +1,128 @@
+{
+  "kode": "LPPS",
+  "nama": "PT Lenox Pasifik Investama Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 60.0,
+  "update": "2026-10-11 14:13",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.22147006,
+    "ps": 74.33271,
+    "roe": -0.11409928001391272,
+    "eps": 20.7,
+    "de": 0.0008724655827548379,
+    "margin_net": -620.2059216201551,
+    "current_ratio": 261.21587171518263,
+    "roa": -0.11399981909531177,
+    "bv": 270.92,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 81000000.0,
+      "2024-Q2": 123000000.0,
+      "2024-Q3": 186000000.0,
+      "2024-Q4": 249000000.0,
+      "2025-Q1": 84000000.0,
+      "2025-Q2": 126000000.0,
+      "2025-Q3": 189000000.0,
+      "2025-Q4": 252000000.0,
+      "2026-Q1": 85000000.0,
+      "2026-Q2": 129000000.0
+    },
+    "eps": {
+      "2024-Q1": 2.38,
+      "2024-Q2": -25.2,
+      "2024-Q3": -57.49,
+      "2024-Q4": -13.94,
+      "2025-Q1": -11.59,
+      "2025-Q2": 1.51,
+      "2025-Q3": 7.83,
+      "2025-Q4": 20.7,
+      "2026-Q1": -27.01,
+      "2026-Q2": -30.91
+    },
+    "net_income": {
+      "2024-Q1": 6163718386.0,
+      "2024-Q2": -65224749565.0,
+      "2024-Q3": -148797336882.0,
+      "2024-Q4": -36085496431.0,
+      "2025-Q1": -30003407675.0,
+      "2025-Q2": 3910351736.0,
+      "2025-Q3": 20257123414.0,
+      "2025-Q4": 53578263003.0,
+      "2026-Q1": -69912145347.0,
+      "2026-Q2": -80006563889.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -104.51,
+      "2023": 9.01,
+      "2024": -13.94,
+      "2025": 20.7
+    },
+    "revenue_per_share": {
+      "2022": 225000000.0,
+      "2023": 240000000.0,
+      "2024": 249000000.0,
+      "2025": 252000000.0
+    }
+  },
+  "statistik": {
+    "market_cap": 155295006720,
+    "enterprise_value": 22722344960,
+    "shares_outstanding": 1109250000,
+    "free_float_pct": 45.76133333333333
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3055,
+    "vol_trend": 1.123,
+    "price_chg_20d": -26.83
+  },
+  "neraca": {
+    "aset": 701813077634.0,
+    "aset_lancar": 132727963350.0,
+    "kas": 121001362057.0,
+    "piutang_usaha": 23980000.0,
+    "persediaan": null,
+    "aset_tetap": 325980304.0,
+    "liabilitas": 611774004.0,
+    "liabilitas_jangka_pendek": 508115998.0,
+    "utang_usaha": 23980000.0,
+    "utang_bank": null,
+    "ekuitas": 701201303630.0,
+    "ekuitas_induk": 701201303630.0,
+    "modal_saham": null,
+    "saldo_laba": 2500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 129000000.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -80009714619.0,
+    "beban_pajak": 3150730.0,
+    "laba_bersih": -80006563889.0,
+    "laba_induk": -80006563889.0,
+    "eps_basic": -30.91,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

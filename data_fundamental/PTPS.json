@@ -1,0 +1,126 @@
+{
+  "kode": "PTPS",
+  "nama": "PT Pulau Subur Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 153.0,
+  "update": "2026-10-11 11:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.7744274,
+    "ps": 5.054693,
+    "roe": 0.08488311629654659,
+    "eps": 14.64,
+    "de": 0.012974321681411494,
+    "margin_net": 0.5087559788142905,
+    "current_ratio": 46.41137181880595,
+    "roa": 0.0837959210611096,
+    "bv": 86.22,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 11631170435.0,
+      "2024-Q2": 23496587880.0,
+      "2024-Q3": 35515343445.0,
+      "2024-Q4": 63579851245.0,
+      "2025-Q1": 19615375460.0,
+      "2025-Q2": 36208751565.0,
+      "2025-Q3": 51046259385.0,
+      "2025-Q4": 70634746935.0,
+      "2026-Q1": 10133512105.0,
+      "2026-Q2": 31182294840.0
+    },
+    "eps": {
+      "2024-Q1": 1.427,
+      "2024-Q2": 3.92,
+      "2024-Q3": 5.74,
+      "2024-Q4": 12.52,
+      "2025-Q1": 4.407,
+      "2025-Q2": 7.11,
+      "2025-Q3": 10.96,
+      "2025-Q4": 8.34,
+      "2026-Q1": -200000.0,
+      "2026-Q2": 7.32
+    },
+    "net_income": {
+      "2024-Q1": 3093993033.0,
+      "2024-Q2": 8491490180.0,
+      "2024-Q3": 12437799177.0,
+      "2024-Q4": 27131155198.0,
+      "2025-Q1": 9551922341.0,
+      "2025-Q2": 15401831788.0,
+      "2025-Q3": 23763581412.0,
+      "2025-Q4": 18082726166.0,
+      "2026-Q1": -431542433.0,
+      "2026-Q2": 15864178933.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 12.082,
+      "2024": 12.52,
+      "2025": 8.34
+    },
+    "revenue_per_share": {
+      "2023": 61656997875.0,
+      "2024": 63579851245.0,
+      "2025": 70634746935.0
+    }
+  },
+  "statistik": {
+    "market_cap": 331629789184,
+    "enterprise_value": 267295932416,
+    "shares_outstanding": 2167514856,
+    "free_float_pct": 20.761999981420196
+  },
+  "akumulasi": {
+    "score": 6.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1036,
+    "vol_trend": 0.438,
+    "price_chg_20d": -7.27
+  },
+  "neraca": {
+    "aset": 189319226188.0,
+    "aset_lancar": 81132801204.0,
+    "kas": 64745693232.0,
+    "piutang_usaha": 1416967437.0,
+    "persediaan": 1173829161.0,
+    "aset_tetap": 86751984711.0,
+    "liabilitas": 2424828042.0,
+    "liabilitas_jangka_pendek": 1748123316.0,
+    "utang_usaha": 1416967437.0,
+    "utang_bank": null,
+    "ekuitas": 186894398146.0,
+    "ekuitas_induk": 186894398146.0,
+    "modal_saham": null,
+    "saldo_laba": 8670000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 31182294840.0,
+    "beban_pokok": 15663892215.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17582802280.0,
+    "beban_pajak": -1718623347.0,
+    "laba_bersih": 15864178933.0,
+    "laba_induk": 15864178933.0,
+    "eps_basic": 7.32,
+    "eps_diluted": 7.32
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1200000000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

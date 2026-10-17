@@ -1,0 +1,112 @@
+{
+  "kode": "ASRM",
+  "nama": "PT Asuransi Ramayana Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Property & Casualty",
+  "harga": 270.0,
+  "update": "2026-10-11 12:33",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 67.669174,
+    "pb": 0.44470212,
+    "ps": 0.2724816,
+    "roe": 0.014490157939322384,
+    "eps": 3.99,
+    "de": 1.3432294185516405,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 0.006183764171194489,
+    "bv": 607.15,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2024-Q1": 74.20657573658787,
+      "2024-Q2": 32.78359329519641,
+      "2024-Q3": 36.06469073415138,
+      "2024-Q4": 26.646154115512672,
+      "2025-Q1": 49.45891008868562,
+      "2025-Q2": 21.7609314905375,
+      "2025-Q3": 19.50827799460169,
+      "2025-Q4": 16.938190263495507,
+      "2026-Q1": 7.199622317555352,
+      "2026-Q2": 8.093619012643348
+    },
+    "net_income": {
+      "2024-Q1": 22579861818.0,
+      "2024-Q2": 39902070628.0,
+      "2024-Q3": 43895610342.0,
+      "2024-Q4": 32431976382.0,
+      "2025-Q1": 15049547084.0,
+      "2025-Q2": 26485999184.0,
+      "2025-Q3": 23737992378.0,
+      "2025-Q4": 21646872261.0,
+      "2026-Q1": 9196993550.0,
+      "2026-Q2": 10343580640.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 284.2489657551318,
+      "2023": 291.7898482252623,
+      "2024": 26.646154115512672,
+      "2025": 16.938190263495507
+    },
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 345057853440,
+    "enterprise_value": 188956917760,
+    "shares_outstanding": 1277992036,
+    "free_float_pct": 27.105999978234607
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.687,
+    "vol_trend": 4.82,
+    "price_chg_20d": -5.59
+  },
+  "neraca": {
+    "aset": 1672699726840.0,
+    "aset_lancar": null,
+    "kas": 68545138944.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 75278911909.0,
+    "liabilitas": 958844055875.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 713834913554.0,
+    "ekuitas_induk": 713834913554.0,
+    "modal_saham": null,
+    "saldo_laba": 550751397927.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 13822151742.0,
+    "beban_pajak": -3474936910.0,
+    "laba_bersih": 10343580640.0,
+    "laba_induk": 10343580640.0,
+    "eps_basic": 8.093619012643348,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 337308110.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

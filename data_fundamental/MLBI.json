@@ -1,0 +1,125 @@
+{
+  "kode": "MLBI",
+  "nama": "PT Multi Bintang Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Beverages - Brewers",
+  "harga": 6850.0,
+  "update": "2026-10-11 14:24",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.218106,
+    "pb": 13.064416,
+    "ps": 3.8077211,
+    "roe": 0.47894731125175605,
+    "eps": 610.62,
+    "de": 2.6336417585123177,
+    "margin_net": 0.30766967483834956,
+    "current_ratio": 0.8624953474095127,
+    "roa": 0.1317909837709072,
+    "bv": 524.33,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 1388848.0,
+      "2024-Q3": 2326116.0,
+      "2024-Q4": 3383969.0,
+      "2025-Q1": 669966.0,
+      "2025-Q2": 1471845.0,
+      "2025-Q3": 2368511.0,
+      "2025-Q4": 3542528.0,
+      "2026-Q1": 758543.0,
+      "2026-Q2": 1719760.0
+    },
+    "eps": {
+      "2024-Q2": 211.0,
+      "2024-Q3": 362.0,
+      "2024-Q4": 542.0,
+      "2025-Q1": 92.0,
+      "2025-Q2": 202.0,
+      "2025-Q3": 344.0,
+      "2025-Q4": 560.0,
+      "2026-Q1": 110.0,
+      "2026-Q2": 250.99999999999997
+    },
+    "net_income": {
+      "2024-Q2": 444180.0,
+      "2024-Q3": 762567.0,
+      "2024-Q4": 1141948.0,
+      "2025-Q1": 194810.0,
+      "2025-Q2": 425750.0,
+      "2025-Q3": 724190.0,
+      "2025-Q4": 1183344.0,
+      "2026-Q1": 228989.0,
+      "2026-Q2": 529118.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 439.0,
+      "2023": 506.00000000000006,
+      "2024": 542.0,
+      "2025": 560.0
+    },
+    "revenue_per_share": {
+      "2022": 3114907.0,
+      "2023": 3322282.0,
+      "2024": 3383969.0,
+      "2025": 3542528.0
+    }
+  },
+  "statistik": {
+    "market_cap": 14432950288384,
+    "enterprise_value": 13245125492736,
+    "shares_outstanding": 2107000000,
+    "free_float_pct": 10.681000000000001
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2534,
+    "vol_trend": 0.857,
+    "price_chg_20d": 0.74
+  },
+  "neraca": {
+    "aset": 4014827.0,
+    "aset_lancar": 2412252.0,
+    "kas": 1290928.0,
+    "piutang_usaha": 659590.0,
+    "persediaan": 281411.0,
+    "aset_tetap": 1313216.0,
+    "liabilitas": 2909521.0,
+    "liabilitas_jangka_pendek": 2796829.0,
+    "utang_usaha": 659590.0,
+    "utang_bank": 75000.0,
+    "ekuitas": 1104752.0,
+    "ekuitas_induk": 1104752.0,
+    "modal_saham": null,
+    "saldo_laba": 1064087.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1719760.0,
+    "beban_pokok": 652509.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 680666.0,
+    "beban_pajak": -151443.0,
+    "laba_bersih": 529118.0,
+    "laba_induk": 529118.0,
+    "eps_basic": 250.99999999999997,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 90256.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

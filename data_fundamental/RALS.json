@@ -1,0 +1,127 @@
+{
+  "kode": "RALS",
+  "nama": "PT Ramayana Lestari Sentosa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 376.0,
+  "update": "2026-10-11 14:49",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.442492,
+    "pb": 0.6652312,
+    "ps": 1.0604409,
+    "roe": 0.05909473817175167,
+    "eps": 39.82,
+    "de": 0.30683899531735265,
+    "margin_net": 0.15607529027520922,
+    "current_ratio": 4.402658863026364,
+    "roa": 0.04521960117772665,
+    "bv": 565.22,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 1666024.0,
+      "2024-Q3": 2113813.0,
+      "2024-Q4": 2760507.0,
+      "2025-Q1": 829094.0,
+      "2025-Q2": 1503026.0,
+      "2025-Q3": 1878019.0,
+      "2025-Q4": 2365339.0,
+      "2026-Q1": 985162.0,
+      "2026-Q2": 1312892.0
+    },
+    "eps": {
+      "2024-Q1": 17.49,
+      "2024-Q2": 41.71,
+      "2024-Q3": 42.56,
+      "2024-Q4": 52.9,
+      "2025-Q1": 17.49,
+      "2025-Q2": 38.84,
+      "2025-Q3": 46.02,
+      "2025-Q4": 44.73,
+      "2026-Q1": 32.54,
+      "2026-Q2": 33.94
+    },
+    "net_income": {
+      "2024-Q1": 106817.0,
+      "2024-Q2": 247863.0,
+      "2024-Q3": 252742.0,
+      "2024-Q4": 314055.0,
+      "2025-Q1": 106817.0,
+      "2025-Q2": 230368.0,
+      "2025-Q3": 272976.0,
+      "2025-Q4": 265286.0,
+      "2026-Q1": 193294.0,
+      "2026-Q2": 204910.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 56.17,
+      "2023": 49.3,
+      "2024": 52.9,
+      "2025": 44.73
+    },
+    "revenue_per_share": {
+      "2022": 2996613.0,
+      "2023": 2744427.0,
+      "2024": 2760507.0,
+      "2025": 2365339.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2306676359168,
+    "enterprise_value": 646679232512,
+    "shares_outstanding": 6134777300,
+    "free_float_pct": 26.83400000518356
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1364,
+    "vol_trend": 0.629,
+    "price_chg_20d": -3.59
+  },
+  "neraca": {
+    "aset": 4531442.0,
+    "aset_lancar": 2452303.0,
+    "kas": 1121563.0,
+    "piutang_usaha": 5983.0,
+    "persediaan": 280312.0,
+    "aset_tetap": 36728.0,
+    "liabilitas": 1063959.0,
+    "liabilitas_jangka_pendek": 557005.0,
+    "utang_usaha": 5983.0,
+    "utang_bank": null,
+    "ekuitas": 3467483.0,
+    "ekuitas_induk": 3467483.0,
+    "modal_saham": null,
+    "saldo_laba": 70000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1312892.0,
+    "beban_pokok": 590167.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 238420.0,
+    "beban_pajak": -33510.0,
+    "laba_bersih": 204910.0,
+    "laba_induk": 204910.0,
+    "eps_basic": 33.94,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 36728.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

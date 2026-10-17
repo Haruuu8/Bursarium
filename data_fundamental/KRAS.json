@@ -1,0 +1,128 @@
+{
+  "kode": "KRAS",
+  "nama": "PT Krakatau Steel (Persero) Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Steel",
+  "harga": 230.0,
+  "update": "2026-10-11 14:03",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 0.5801781,
+    "pb": 6571.4287,
+    "ps": 3966.7302,
+    "roe": 0.0135214406362476,
+    "eps": 396.43,
+    "de": 3.061792718407966,
+    "margin_net": 0.014731740686678325,
+    "current_ratio": 0.8527052699547018,
+    "roa": 0.003265721669668729,
+    "bv": 0.03,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 231793.0,
+      "2024-Q2": 444673.0,
+      "2024-Q3": 657520.0,
+      "2024-Q4": 954597.0,
+      "2025-Q1": 234762.0,
+      "2025-Q2": 460828.0,
+      "2025-Q3": 706083.0,
+      "2025-Q4": 959839.0,
+      "2026-Q1": 262363.0,
+      "2026-Q2": 622737.0
+    },
+    "eps": {
+      "2024-Q1": -1500.0,
+      "2024-Q2": -3256.265955232486,
+      "2024-Q3": -9600.0,
+      "2024-Q4": -8025.2152792337265,
+      "2025-Q1": -2424.689742273453,
+      "2025-Q2": -5536.691077269199,
+      "2025-Q3": 1146.3722622954517,
+      "2025-Q4": 17600.0,
+      "2026-Q1": 130.0,
+      "2026-Q2": 500.0
+    },
+    "net_income": {
+      "2024-Q1": -29143.0,
+      "2024-Q2": -64155.0,
+      "2024-Q3": -185224.0,
+      "2024-Q4": -154712.0,
+      "2025-Q1": -46909.0,
+      "2025-Q2": -107115.0,
+      "2025-Q3": 22178.0,
+      "2025-Q4": 325459.0,
+      "2026-Q1": 2586.0,
+      "2026-Q2": 9174.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1000.0,
+      "2023": -6800.0,
+      "2024": -8025.2152792337265,
+      "2025": 17600.0
+    },
+    "revenue_per_share": {
+      "2022": 2238533.0,
+      "2023": 1453968.0,
+      "2024": 954597.0,
+      "2025": 959839.0
+    }
+  },
+  "statistik": {
+    "market_cap": 4449671577600,
+    "enterprise_value": 4450813476864,
+    "shares_outstanding": 19346396899,
+    "free_float_pct": 19.200000002026215
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1655,
+    "vol_trend": 0.499,
+    "price_chg_20d": -3.36
+  },
+  "neraca": {
+    "aset": 2809180.0,
+    "aset_lancar": 685390.0,
+    "kas": 89389.0,
+    "piutang_usaha": 125856.0,
+    "persediaan": 261244.0,
+    "aset_tetap": 1477908.0,
+    "liabilitas": 2077359.0,
+    "liabilitas_jangka_pendek": 803783.0,
+    "utang_usaha": 125856.0,
+    "utang_bank": 222935.0,
+    "ekuitas": 678478.0,
+    "ekuitas_induk": 678478.0,
+    "modal_saham": null,
+    "saldo_laba": 146834.0
+  },
+  "laba_rugi": {
+    "pendapatan": 622737.0,
+    "beban_pokok": 554882.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15232.0,
+    "beban_pajak": 1489.0,
+    "laba_bersih": 9174.0,
+    "laba_induk": 9174.0,
+    "eps_basic": 500.0,
+    "eps_diluted": 400.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7507.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

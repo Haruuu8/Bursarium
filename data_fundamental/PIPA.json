@@ -1,0 +1,126 @@
+{
+  "kode": "PIPA",
+  "nama": "PT Oxala Energy International Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 141.0,
+  "update": "2026-10-11 11:40",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 7.524414,
+    "ps": 2.0766437,
+    "roe": 0.003446761596178256,
+    "eps": null,
+    "de": 0.38428170858049904,
+    "margin_net": 0.02045063074699376,
+    "current_ratio": 2.311206288567441,
+    "roa": 0.0024837237484109046,
+    "bv": 18.74,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 6854772554.0,
+      "2024-Q2": 10879730536.0,
+      "2024-Q3": 19841864445.0,
+      "2024-Q4": 26997167871.0,
+      "2025-Q1": 7112214810.0,
+      "2025-Q2": 11385482084.0,
+      "2025-Q3": 25891818494.0,
+      "2025-Q4": 23860722908.0,
+      "2026-Q1": 5354307144.0,
+      "2026-Q2": 10779831719.0
+    },
+    "eps": {
+      "2024-Q1": 80000.0,
+      "2024-Q2": -482309.0310494197,
+      "2024-Q3": -236848.1092942288,
+      "2024-Q4": 100000.0,
+      "2025-Q1": 90000.0,
+      "2025-Q2": 130000.0,
+      "2025-Q3": 910000.0,
+      "2025-Q4": -5.12,
+      "2026-Q1": -240000.0,
+      "2026-Q2": 70000.0
+    },
+    "net_income": {
+      "2024-Q1": 222327079.0,
+      "2024-Q2": -1407889373.0,
+      "2024-Q3": -691374025.0,
+      "2024-Q4": 313278420.0,
+      "2025-Q1": 300240886.0,
+      "2025-Q2": 401259224.0,
+      "2025-Q3": 2664886117.0,
+      "2025-Q4": -17556780739.0,
+      "2026-Q1": -1183232150.0,
+      "2026-Q2": 220454358.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 170000.0,
+      "2024": 100000.0,
+      "2025": -5.12
+    },
+    "revenue_per_share": {
+      "2023": 32096104705.0,
+      "2024": 26997167871.0,
+      "2025": 23860722908.0
+    }
+  },
+  "statistik": {
+    "market_cap": 48292499456,
+    "enterprise_value": 497057366016,
+    "shares_outstanding": 342500000,
+    "free_float_pct": 483.4
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3742,
+    "vol_trend": 0.207,
+    "price_chg_20d": -29.5
+  },
+  "neraca": {
+    "aset": 88759612715.0,
+    "aset_lancar": 42087932295.0,
+    "kas": 714354214.0,
+    "piutang_usaha": 5099939709.0,
+    "persediaan": 34355020138.0,
+    "aset_tetap": 42548860372.0,
+    "liabilitas": 24578600809.0,
+    "liabilitas_jangka_pendek": 18210374601.0,
+    "utang_usaha": 5099939709.0,
+    "utang_bank": 784975275.0,
+    "ekuitas": 63959850964.0,
+    "ekuitas_induk": 63959850964.0,
+    "modal_saham": null,
+    "saldo_laba": 100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10779831719.0,
+    "beban_pokok": 6103618624.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 441615300.0,
+    "beban_pajak": null,
+    "laba_bersih": 220454358.0,
+    "laba_induk": 220454358.0,
+    "eps_basic": 70000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

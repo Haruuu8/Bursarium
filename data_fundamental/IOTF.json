@@ -1,0 +1,123 @@
+{
+  "kode": "IOTF",
+  "nama": "PT Sumber Sinergi Makmur Tbk",
+  "sektor": "Technology",
+  "industri": "Communication Equipment",
+  "harga": 50.0,
+  "update": "2026-10-11 11:51",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.6868526,
+    "ps": 3.822507,
+    "roe": 0.00033569956089770855,
+    "eps": null,
+    "de": 0.06274576923488703,
+    "margin_net": 0.0015761698026013529,
+    "current_ratio": 15.103340894435856,
+    "roa": 0.0003158759584779102,
+    "bv": 29.64,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 15136286772.0,
+      "2024-Q3": 45810556632.0,
+      "2024-Q4": 62955259038.0,
+      "2025-Q1": 16852938251.0,
+      "2025-Q2": 29811367444.0,
+      "2025-Q3": 45306332288.0,
+      "2025-Q4": 65612941838.0,
+      "2026-Q1": 16239277458.0,
+      "2026-Q2": 33397746812.0
+    },
+    "eps": {
+      "2024-Q1": 60000.0,
+      "2024-Q3": 80000.0,
+      "2024-Q4": 60000.0,
+      "2025-Q1": 100000.0,
+      "2025-Q2": 30000.0,
+      "2025-Q3": 1.38,
+      "2025-Q4": 160000.0,
+      "2026-Q1": 10000.0,
+      "2026-Q2": 10000.0
+    },
+    "net_income": {
+      "2024-Q1": 305699082.0,
+      "2024-Q3": 402095638.0,
+      "2024-Q4": 325652101.0,
+      "2025-Q1": 516488522.0,
+      "2025-Q2": 164941346.0,
+      "2025-Q3": 624198460.0,
+      "2025-Q4": 861516566.0,
+      "2026-Q1": 45825542.0,
+      "2026-Q2": 52640520.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 1.01,
+      "2024": 60000.0,
+      "2025": 160000.0
+    },
+    "revenue_per_share": {
+      "2023": 70532772272.0,
+      "2024": 62955259038.0,
+      "2025": 65612941838.0
+    }
+  },
+  "statistik": {
+    "market_cap": 264514895872,
+    "enterprise_value": 268533121024,
+    "shares_outstanding": 5290298067,
+    "free_float_pct": 31.95099999268151
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2259,
+    "vol_trend": 0.343,
+    "price_chg_20d": -19.35
+  },
+  "neraca": {
+    "aset": 166649339993.0,
+    "aset_lancar": 93767583799.0,
+    "kas": 4081850822.0,
+    "piutang_usaha": 2220098623.0,
+    "persediaan": 60758001796.0,
+    "aset_tetap": 33111102415.0,
+    "liabilitas": 9839065358.0,
+    "liabilitas_jangka_pendek": 6208400145.0,
+    "utang_usaha": 2220098623.0,
+    "utang_bank": 3232918735.0,
+    "ekuitas": 156808426735.0,
+    "ekuitas_induk": 156808426735.0,
+    "modal_saham": null,
+    "saldo_laba": 200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 33397746812.0,
+    "beban_pokok": 18791470356.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 128199029.0,
+    "beban_pajak": -75475081.0,
+    "laba_bersih": 52640520.0,
+    "laba_induk": 52640520.0,
+    "eps_basic": 10000.0,
+    "eps_diluted": 10000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 73529770.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

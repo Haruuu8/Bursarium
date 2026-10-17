@@ -1,0 +1,128 @@
+{
+  "kode": "AMFG",
+  "nama": "PT Asahimas Flat Glass Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 3180.0,
+  "update": "2026-10-11 12:30",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 12.246784,
+    "pb": 0.28850758,
+    "ps": 0.2564602,
+    "roe": 0.018023259217016623,
+    "eps": 259.66,
+    "de": 0.5337422120170949,
+    "margin_net": 0.03237799526593354,
+    "current_ratio": 1.7318465912006487,
+    "roa": 0.011751165923322543,
+    "bv": 11022.24,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1286300.0,
+      "2024-Q2": 2630890.0,
+      "2024-Q3": 4130852.0,
+      "2024-Q4": 5441260.0,
+      "2025-Q1": 1177680.0,
+      "2025-Q2": 2367398.0,
+      "2025-Q3": 3701857.0,
+      "2025-Q4": 5085991.0,
+      "2026-Q1": 1219178.0,
+      "2026-Q2": 2662827.0
+    },
+    "eps": {
+      "2024-Q1": 99.0,
+      "2024-Q2": 135.0,
+      "2024-Q3": 394.0,
+      "2024-Q4": 550.0,
+      "2025-Q1": 119.0,
+      "2025-Q2": 122.0,
+      "2025-Q3": 164.0,
+      "2025-Q4": 183.0,
+      "2026-Q1": -5.0,
+      "2026-Q2": 199.0
+    },
+    "net_income": {
+      "2024-Q1": 43115.0,
+      "2024-Q2": 58455.0,
+      "2024-Q3": 170934.0,
+      "2024-Q4": 238610.0,
+      "2025-Q1": 51777.0,
+      "2025-Q2": 52949.0,
+      "2025-Q3": 70965.0,
+      "2025-Q4": 79631.0,
+      "2026-Q1": -2260.0,
+      "2026-Q2": 86217.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1008.0,
+      "2023": 1344.0,
+      "2024": 550.0,
+      "2025": 183.0
+    },
+    "revenue_per_share": {
+      "2022": 5571767.0,
+      "2023": 5913565.0,
+      "2024": 5441260.0,
+      "2025": 5085991.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1380120002560,
+    "enterprise_value": 2610313035776,
+    "shares_outstanding": 434000000,
+    "free_float_pct": 13.844000000000001
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4913,
+    "vol_trend": 0.678,
+    "price_chg_20d": -3.05
+  },
+  "neraca": {
+    "aset": 7336889.0,
+    "aset_lancar": 2531241.0,
+    "kas": 31045.0,
+    "piutang_usaha": 307459.0,
+    "persediaan": 1754665.0,
+    "aset_tetap": 4551703.0,
+    "liabilitas": 2553237.0,
+    "liabilitas_jangka_pendek": 1461585.0,
+    "utang_usaha": 307459.0,
+    "utang_bank": 593000.0,
+    "ekuitas": 4783652.0,
+    "ekuitas_induk": 4783652.0,
+    "modal_saham": null,
+    "saldo_laba": 82500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2662827.0,
+    "beban_pokok": 2211211.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 85480.0,
+    "beban_pajak": -22464.0,
+    "laba_bersih": 86217.0,
+    "laba_induk": 86217.0,
+    "eps_basic": 199.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 328363.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

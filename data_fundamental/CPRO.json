@@ -1,0 +1,125 @@
+{
+  "kode": "CPRO",
+  "nama": "PT Central Proteina Prima Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 41.0,
+  "update": "2026-10-11 13:10",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.5925922,
+    "pb": 0.6135979,
+    "ps": 0.23821242,
+    "roe": 0.0483331248200631,
+    "eps": 5.4,
+    "de": 0.807742223334293,
+    "margin_net": 0.03801340712891914,
+    "current_ratio": 1.186840882062359,
+    "roa": 0.026726008714329414,
+    "bv": 66.82,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 2289408.0,
+      "2024-Q3": 6887109.0,
+      "2024-Q4": 9280242.0,
+      "2025-Q1": 2395307.0,
+      "2025-Q2": 4754992.0,
+      "2025-Q3": 7336307.0,
+      "2025-Q4": 9947122.0,
+      "2026-Q1": 2469646.0,
+      "2026-Q2": 5061188.0
+    },
+    "eps": {
+      "2024-Q1": 1.7,
+      "2024-Q3": 5.7,
+      "2024-Q4": 5.4,
+      "2025-Q1": 2.7,
+      "2025-Q2": 4.9,
+      "2025-Q3": 7.2,
+      "2025-Q4": 7.1,
+      "2026-Q1": 1.7,
+      "2026-Q2": 3.2
+    },
+    "net_income": {
+      "2024-Q1": 98885.0,
+      "2024-Q3": 342485.0,
+      "2024-Q4": 319976.0,
+      "2025-Q1": 159975.0,
+      "2025-Q2": 293226.0,
+      "2025-Q3": 426731.0,
+      "2025-Q4": 423655.0,
+      "2026-Q1": 99991.0,
+      "2026-Q2": 192393.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 6.2725,
+      "2023": 6.7,
+      "2024": 5.4,
+      "2025": 7.1
+    },
+    "revenue_per_share": {
+      "2022": 8242343.0,
+      "2023": 9027276.0,
+      "2024": 9280242.0,
+      "2025": 9947122.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2442467737600,
+    "enterprise_value": 3938839691264,
+    "shares_outstanding": 40470734746,
+    "free_float_pct": 33.21685159503726
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1662,
+    "vol_trend": 2.128,
+    "price_chg_20d": -18.0
+  },
+  "neraca": {
+    "aset": 7198718.0,
+    "aset_lancar": 3030832.0,
+    "kas": 83880.0,
+    "piutang_usaha": 972526.0,
+    "persediaan": 1793873.0,
+    "aset_tetap": 3452008.0,
+    "liabilitas": 3215268.0,
+    "liabilitas_jangka_pendek": 2553697.0,
+    "utang_usaha": 972526.0,
+    "utang_bank": 1349715.0,
+    "ekuitas": 3980562.0,
+    "ekuitas_induk": 3980562.0,
+    "modal_saham": null,
+    "saldo_laba": -2388166.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5061188.0,
+    "beban_pokok": 4110662.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 272296.0,
+    "beban_pajak": -79696.0,
+    "laba_bersih": 192393.0,
+    "laba_induk": 192393.0,
+    "eps_basic": 3.2,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 67823.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

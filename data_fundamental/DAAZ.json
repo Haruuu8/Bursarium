@@ -1,0 +1,115 @@
+{
+  "kode": "DAAZ",
+  "nama": "PT Daaz Bara Lestari Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 2420.0,
+  "update": "2026-10-11 12:06",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 17.682302,
+    "pb": 2.8786495,
+    "ps": 0.34236875,
+    "roe": 0.09736920132884676,
+    "eps": 136.86,
+    "de": 2.608326660736747,
+    "margin_net": 0.023662866435777412,
+    "current_ratio": 1.569802258974918,
+    "roa": 0.02470676894915192,
+    "bv": 840.67,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q4": 10134583276734.0,
+      "2025-Q1": 3076211307434.0,
+      "2025-Q2": 6205134617775.0,
+      "2025-Q3": 9855700367527.0,
+      "2025-Q4": 13412629633004.0,
+      "2026-Q1": 3557783645730.0,
+      "2026-Q2": 6908103651164.0
+    },
+    "eps": {
+      "2024-Q4": 530.0,
+      "2025-Q1": 49.0,
+      "2025-Q2": 77.17001519128694,
+      "2025-Q3": 92.33992514221332,
+      "2025-Q4": 132.0,
+      "2026-Q1": 42.039818700550825,
+      "2026-Q2": 81.85555
+    },
+    "net_income": {
+      "2024-Q4": 455402220751.0,
+      "2025-Q1": 96903655247.0,
+      "2025-Q2": 154108520337.0,
+      "2025-Q3": 184402830509.0,
+      "2025-Q4": 263732385425.0,
+      "2026-Q1": 83953517945.0,
+      "2026-Q2": 163465534022.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 530.0,
+      "2025": 132.0
+    },
+    "revenue_per_share": {
+      "2024": 10134583276734.0,
+      "2025": 13412629633004.0
+    }
+  },
+  "statistik": {
+    "market_cap": 4832739983360,
+    "enterprise_value": 8020750761984,
+    "shares_outstanding": 1997000000,
+    "free_float_pct": 17.041999999999998
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3399,
+    "vol_trend": 1.221,
+    "price_chg_20d": 44.91
+  },
+  "neraca": {
+    "aset": 6616224661283.0,
+    "aset_lancar": 3809837654928.0,
+    "kas": 494565942864.0,
+    "piutang_usaha": 1722329496197.0,
+    "persediaan": 819172223768.0,
+    "aset_tetap": 159586767514.0,
+    "liabilitas": 4378915557304.0,
+    "liabilitas_jangka_pendek": 2426953861957.0,
+    "utang_usaha": 1722329496197.0,
+    "utang_bank": 795832844373.0,
+    "ekuitas": 1678821760794.0,
+    "ekuitas_induk": 1678821760794.0,
+    "modal_saham": null,
+    "saldo_laba": 39940000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6908103651164.0,
+    "beban_pokok": 6467047314121.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 208921622036.0,
+    "beban_pajak": 7967290548.0,
+    "laba_bersih": 163465534022.0,
+    "laba_induk": 163465534022.0,
+    "eps_basic": 81.85555,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 159586767514.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

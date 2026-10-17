@@ -1,0 +1,125 @@
+{
+  "kode": "ALDO",
+  "nama": "PT Alkindo Naratama Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Paper & Paper Products",
+  "harga": 1200.0,
+  "update": "2026-10-11 12:26",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 35.98201,
+    "pb": 2.917252,
+    "ps": 1.3987892,
+    "roe": 0.05581629291987215,
+    "eps": 33.35,
+    "de": 0.9578625622752112,
+    "margin_net": 0.05180767505321775,
+    "current_ratio": 1.2409791416401832,
+    "roa": 0.028404566514344583,
+    "bv": 411.35,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 483848872547.0,
+      "2024-Q2": 879146511713.0,
+      "2024-Q3": 1361845885495.0,
+      "2024-Q4": 1856914462624.0,
+      "2025-Q2": 1001496536228.0,
+      "2025-Q3": 1556301890755.0,
+      "2025-Q4": 2119242447464.0,
+      "2026-Q1": 534445239933.0,
+      "2026-Q2": 1194462470540.0
+    },
+    "eps": {
+      "2024-Q1": 9.84,
+      "2024-Q2": 263446.8327347469,
+      "2024-Q3": 5.49,
+      "2024-Q4": 3.2,
+      "2025-Q2": 2.56,
+      "2025-Q3": 7.87,
+      "2025-Q4": 13.003304402778646,
+      "2026-Q1": 5.0,
+      "2026-Q2": 22.91
+    },
+    "net_income": {
+      "2024-Q1": 13056469840.0,
+      "2024-Q2": 355747241.0,
+      "2024-Q3": 9631812110.0,
+      "2024-Q4": -8642229912.0,
+      "2025-Q2": 6905343845.0,
+      "2025-Q3": 21256899796.0,
+      "2025-Q4": 35118202918.0,
+      "2026-Q1": 13494341147.0,
+      "2026-Q2": 61882323537.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 49.59,
+      "2023": 2.05,
+      "2024": 3.2,
+      "2025": 13.003304402778646
+    },
+    "revenue_per_share": {
+      "2022": 1401914243306.0,
+      "2023": 1652496343253.0,
+      "2024": 1856914462624.0,
+      "2025": 2119242447464.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3234292039680,
+    "enterprise_value": 3808701972480,
+    "shares_outstanding": 2695243344,
+    "free_float_pct": 25.285000017423286
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1413,
+    "vol_trend": 2.901,
+    "price_chg_20d": 26.32
+  },
+  "neraca": {
+    "aset": 2178604750252.0,
+    "aset_lancar": 1140892862317.0,
+    "kas": 64926602836.0,
+    "piutang_usaha": 528831718139.0,
+    "persediaan": 479289712039.0,
+    "aset_tetap": 4235530000.0,
+    "liabilitas": 1061961622349.0,
+    "liabilitas_jangka_pendek": 919348943133.0,
+    "utang_usaha": 528831718139.0,
+    "utang_bank": 443773573842.0,
+    "ekuitas": 1108678493318.0,
+    "ekuitas_induk": 1108678493318.0,
+    "modal_saham": null,
+    "saldo_laba": 900000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1194462470540.0,
+    "beban_pokok": 961763092122.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 81241024677.0,
+    "beban_pajak": -18795491815.0,
+    "laba_bersih": 61882323537.0,
+    "laba_induk": 61882323537.0,
+    "eps_basic": 22.91,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4235530000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,126 @@
+{
+  "kode": "CLAY",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-11 17:07",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": null,
+    "roe": 0.08266298174647578,
+    "eps": null,
+    "de": 27.305212143515043,
+    "margin_net": 0.04476692649415563,
+    "current_ratio": 0.34637944762024275,
+    "roa": 0.002920174177872007,
+    "bv": null,
+    "bv_src": "no_data",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 47026635105.0,
+      "2024-Q2": 107033216330.0,
+      "2024-Q3": 187525805268.0,
+      "2024-Q4": 230633180518.0,
+      "2025-Q1": 24911216733.0,
+      "2025-Q2": 53123049947.0,
+      "2025-Q3": 103575023423.0,
+      "2025-Q4": 142027766280.0,
+      "2026-Q1": 34049357782.0,
+      "2026-Q2": 86150649281.0
+    },
+    "eps": {
+      "2024-Q1": -470000.0,
+      "2024-Q2": -491803.5626459144,
+      "2024-Q3": 4.239173035019455,
+      "2024-Q4": 2.74,
+      "2025-Q1": -2.5276111639144965,
+      "2025-Q2": -3.783464985884616,
+      "2025-Q3": -1.2437913895434698,
+      "2025-Q4": 1.89,
+      "2026-Q1": 593107.041608201,
+      "2026-Q2": 4.58
+    },
+    "net_income": {
+      "2024-Q1": -1204639922.0,
+      "2024-Q2": -1263935156.0,
+      "2024-Q3": 10894674700.0,
+      "2024-Q4": 7051343501.0,
+      "2025-Q1": -6495960691.0,
+      "2025-Q2": -9723505014.0,
+      "2025-Q3": -3196543871.0,
+      "2025-Q4": 4859545958.0,
+      "2026-Q1": 1524285097.0,
+      "2026-Q2": 11787150002.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -15.927137387548639,
+      "2024": 2.74,
+      "2025": 1.89
+    },
+    "revenue_per_share": {
+      "2022": 126226524149.0,
+      "2024": 230633180518.0,
+      "2025": 142027766280.0
+    }
+  },
+  "statistik": {
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4301,
+    "vol_trend": 0.976,
+    "price_chg_20d": 5.22
+  },
+  "neraca": {
+    "aset": 521984307837.0,
+    "aset_lancar": 32753907293.0,
+    "kas": 28324665237.0,
+    "piutang_usaha": 823063771.0,
+    "persediaan": 665376936.0,
+    "aset_tetap": 426288934532.0,
+    "liabilitas": 503501410927.0,
+    "liabilitas_jangka_pendek": 94560770040.0,
+    "utang_usaha": 823063771.0,
+    "utang_bank": 21000000000.0,
+    "ekuitas": 18439754589.0,
+    "ekuitas_induk": 18439754589.0,
+    "modal_saham": null,
+    "saldo_laba": -415990413938.0
+  },
+  "laba_rugi": {
+    "pendapatan": 34049357782.0,
+    "beban_pokok": 16430091160.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1980184963.0,
+    "beban_pajak": -479705362.0,
+    "laba_bersih": 1524285097.0,
+    "laba_induk": 1524285097.0,
+    "eps_basic": 593107.041608201,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 49716889.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

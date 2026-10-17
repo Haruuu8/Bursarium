@@ -1,0 +1,125 @@
+{
+  "kode": "KBLM",
+  "nama": "PT Kabelindo Murni Tbk",
+  "sektor": "Industrials",
+  "industri": "Electrical Equipment & Parts",
+  "harga": 368.0,
+  "update": "2026-10-11 14:02",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 118.25193,
+    "pb": 0.28530228,
+    "ps": 0.18723208,
+    "roe": 0.02067531865920338,
+    "eps": 3.11,
+    "de": 0.35888161150677034,
+    "margin_net": 0.023156377175178242,
+    "current_ratio": 1.6008563408142893,
+    "roa": 0.01521495212248692,
+    "bv": 1289.86,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 877882210401.0,
+      "2024-Q3": 1378986150071.0,
+      "2024-Q4": 1988595338562.0,
+      "2025-Q1": 468861107527.0,
+      "2025-Q2": 875874242060.0,
+      "2025-Q3": 1296459949460.0,
+      "2025-Q4": 1787347809632.0,
+      "2026-Q1": 680499704491.0,
+      "2026-Q2": 1289858586818.0
+    },
+    "eps": {
+      "2024-Q2": 27.0,
+      "2024-Q3": 52.0,
+      "2024-Q4": 69.08,
+      "2025-Q1": 19.92,
+      "2025-Q2": 25.0,
+      "2025-Q3": 24.0,
+      "2025-Q4": 22.19,
+      "2026-Q1": 14.27,
+      "2026-Q2": 27.0
+    },
+    "net_income": {
+      "2024-Q2": 30112734510.0,
+      "2024-Q3": 57719078045.0,
+      "2024-Q4": 77374869238.0,
+      "2025-Q1": 22306108266.0,
+      "2025-Q2": 27853901112.0,
+      "2025-Q3": 26544471981.0,
+      "2025-Q4": 24854368725.0,
+      "2026-Q1": 15980533726.0,
+      "2026-Q2": 29868451939.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 27.23,
+      "2023": 27.47,
+      "2024": 69.08,
+      "2025": 22.19
+    },
+    "revenue_per_share": {
+      "2022": 1514907831143.0,
+      "2023": 1648518772825.0,
+      "2024": 1988595338562.0,
+      "2025": 1787347809632.0
+    }
+  },
+  "statistik": {
+    "market_cap": 412160000000,
+    "enterprise_value": 303189065728,
+    "shares_outstanding": 1120000000,
+    "free_float_pct": 5.0
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2167,
+    "vol_trend": 6.835,
+    "price_chg_20d": 4.55
+  },
+  "neraca": {
+    "aset": 1963098647866.0,
+    "aset_lancar": 796109829773.0,
+    "kas": 108970933482.0,
+    "piutang_usaha": 196126541297.0,
+    "persediaan": 229476386201.0,
+    "aset_tetap": 2837250000.0,
+    "liabilitas": 518455765629.0,
+    "liabilitas_jangka_pendek": 497302480851.0,
+    "utang_usaha": 196126541297.0,
+    "utang_bank": null,
+    "ekuitas": 1444642882237.0,
+    "ekuitas_induk": 1444642882237.0,
+    "modal_saham": null,
+    "saldo_laba": 4074142257.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1289858586818.0,
+    "beban_pokok": 1225574169081.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 38447148363.0,
+    "beban_pajak": -8578696424.0,
+    "laba_bersih": 29868451939.0,
+    "laba_induk": 29868451939.0,
+    "eps_basic": 27.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2837250000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,125 @@
+{
+  "kode": "BRNA",
+  "nama": "PT Berlina Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 640.0,
+  "update": "2026-10-11 12:59",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.65470934,
+    "ps": 0.5606642,
+    "roe": -0.00253871598373248,
+    "eps": 13.0,
+    "de": 1.1933785734868902,
+    "margin_net": -0.004047773622973063,
+    "current_ratio": 1.119632087557568,
+    "roa": -0.0011003918389568379,
+    "bv": 977.53,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 268855344.0,
+      "2024-Q3": 772281534.0,
+      "2024-Q4": 1029528087.0,
+      "2025-Q1": 276117073.0,
+      "2025-Q2": 518726321.0,
+      "2025-Q3": 790793491.0,
+      "2025-Q4": 1036093809.0,
+      "2026-Q1": 277601508.0,
+      "2026-Q2": 600289746.0
+    },
+    "eps": {
+      "2024-Q1": -8.0,
+      "2024-Q3": -21.0,
+      "2024-Q4": -21.0,
+      "2025-Q1": 9000.0,
+      "2025-Q2": 16.0,
+      "2025-Q3": 16000.0,
+      "2025-Q4": 13.0,
+      "2026-Q1": 2.0,
+      "2026-Q2": -2000.0
+    },
+    "net_income": {
+      "2024-Q1": -8047696.0,
+      "2024-Q3": -20901740.0,
+      "2024-Q4": -20616390.0,
+      "2025-Q1": 8585286.0,
+      "2025-Q2": 15276901.0,
+      "2025-Q3": 15419836.0,
+      "2025-Q4": 12566859.0,
+      "2026-Q1": 2222537.0,
+      "2026-Q2": -2429837.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 137.0,
+      "2023": -85.0,
+      "2024": -21.0,
+      "2025": 13.0
+    },
+    "revenue_per_share": {
+      "2022": 1053041832.0,
+      "2023": 1000204936.0,
+      "2024": 1029528087.0,
+      "2025": 1036093809.0
+    }
+  },
+  "statistik": {
+    "market_cap": 626630393856,
+    "enterprise_value": 1481949839360,
+    "shares_outstanding": 979110000,
+    "free_float_pct": 29.890999989786643
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3061,
+    "vol_trend": 1.405,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 2208156144.0,
+    "aset_lancar": 527030219.0,
+    "kas": 36601613.0,
+    "piutang_usaha": 172706071.0,
+    "persediaan": 182678600.0,
+    "aset_tetap": 32557344.0,
+    "liabilitas": 1142197643.0,
+    "liabilitas_jangka_pendek": 470717323.0,
+    "utang_usaha": 172706071.0,
+    "utang_bank": 160920579.0,
+    "ekuitas": 957112578.0,
+    "ekuitas_induk": 957112578.0,
+    "modal_saham": null,
+    "saldo_laba": 9791100.0
+  },
+  "laba_rugi": {
+    "pendapatan": 600289746.0,
+    "beban_pokok": 480938236.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4676941.0,
+    "beban_pajak": -3672847.0,
+    "laba_bersih": -2429837.0,
+    "laba_induk": -2429837.0,
+    "eps_basic": -2000.0,
+    "eps_diluted": -2000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32557344.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

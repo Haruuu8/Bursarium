@@ -1,0 +1,122 @@
+{
+  "kode": "MAPA",
+  "nama": "PT Map Aktif Adiperkasa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 625.0,
+  "update": "2026-10-11 15:58",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.282638,
+    "pb": 1.8618368,
+    "ps": 0.8644683,
+    "roe": 0.09033652153401925,
+    "eps": 67.33,
+    "de": 0.6325611163534222,
+    "margin_net": 0.08539038182882211,
+    "current_ratio": 2.1232167730759404,
+    "roa": 0.05490451896154843,
+    "bv": 335.69,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 3693122.0,
+      "2024-Q2": 7887002.0,
+      "2024-Q3": 12419881.0,
+      "2024-Q4": 17184426.0,
+      "2025-Q1": 4319434.0,
+      "2025-Q2": 8794636.0,
+      "2026-Q1": 4954727.0,
+      "2026-Q2": 10122756.0
+    },
+    "eps": {
+      "2024-Q1": 10.0,
+      "2024-Q2": 21.0,
+      "2024-Q3": 39.0,
+      "2024-Q4": 48.0,
+      "2025-Q1": 12.0,
+      "2025-Q2": 23.0,
+      "2026-Q1": 17.0,
+      "2026-Q2": 30.0
+    },
+    "net_income": {
+      "2024-Q1": 281409.0,
+      "2024-Q2": 586907.0,
+      "2024-Q3": 1101620.0,
+      "2024-Q4": 1353998.0,
+      "2025-Q1": 339980.0,
+      "2025-Q2": 662420.0,
+      "2026-Q1": 470572.0,
+      "2026-Q2": 864386.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 412.0,
+      "2023": 49.0,
+      "2024": 48.0,
+      "2025": 60.0
+    },
+    "revenue_per_share": {
+      "2022": 9801240.0,
+      "2023": 13558595.0,
+      "2024": 17184426.0,
+      "2025": 19279923.0
+    }
+  },
+  "statistik": {
+    "market_cap": 17815000055808,
+    "enterprise_value": 19322999144448,
+    "shares_outstanding": 28504000000,
+    "free_float_pct": 30.697000000000003
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1737,
+    "vol_trend": 0.666,
+    "price_chg_20d": -5.3
+  },
+  "neraca": {
+    "aset": 15743440.0,
+    "aset_lancar": 9165551.0,
+    "kas": 1160435.0,
+    "piutang_usaha": 326173.0,
+    "persediaan": 6377955.0,
+    "aset_tetap": 42403.0,
+    "liabilitas": 6052668.0,
+    "liabilitas_jangka_pendek": 4316823.0,
+    "utang_usaha": 326173.0,
+    "utang_bank": 538435.0,
+    "ekuitas": 9568511.0,
+    "ekuitas_induk": 9568511.0,
+    "modal_saham": null,
+    "saldo_laba": 25000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10122756.0,
+    "beban_pokok": 5339701.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1120391.0,
+    "beban_pajak": -255869.0,
+    "laba_bersih": 864386.0,
+    "laba_induk": 864386.0,
+    "eps_basic": 30.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 42403.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,122 @@
+{
+  "kode": "BTPN",
+  "nama": "PT Bank SMBC Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 2500.0,
+  "update": "2026-10-11 12:19",
+  "periode_terbaru": "2025-audit",
+  "rasio_kunci": {
+    "pe": 59.78001,
+    "pb": 0.5461886,
+    "ps": 2.4459972,
+    "roe": 0.010653674540660291,
+    "eps": 41.82,
+    "de": 3.8450624194900604,
+    "margin_net": 0.020860477091960605,
+    "current_ratio": null,
+    "roa": 0.0020563789849722897,
+    "bv": 4577.17,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 4837049.0,
+      "2024-Q2": 10990621.0,
+      "2024-Q3": 17219874.0,
+      "2024-Q4": 23588335.0,
+      "2025-Q1": 6171229.0,
+      "2025-Q2": 12226763.0,
+      "2025-Q3": 18192477.0,
+      "2025-Q4": 24235160.0
+    },
+    "eps": {
+      "2024-Q1": 65.0,
+      "2024-Q2": 130.0,
+      "2024-Q3": 201.0,
+      "2024-Q4": 279.0,
+      "2025-Q1": 48.0,
+      "2025-Q2": 94.0,
+      "2025-Q3": 138.0,
+      "2025-Q4": 47.0
+    },
+    "net_income": {
+      "2024-Q1": 543851.0,
+      "2024-Q2": 1240498.0,
+      "2024-Q3": 1994177.0,
+      "2024-Q4": 2812986.0,
+      "2025-Q1": 509582.0,
+      "2025-Q2": 1000097.0,
+      "2025-Q3": 1473596.0,
+      "2025-Q4": 505557.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 384.0,
+      "2023": 293.0,
+      "2024": 279.0,
+      "2025": 47.0
+    },
+    "revenue_per_share": {
+      "2022": 15899646.0,
+      "2023": 18815673.0,
+      "2024": 23588335.0,
+      "2025": 24235160.0
+    }
+  },
+  "statistik": {
+    "market_cap": 26614863757312,
+    "enterprise_value": 66574459338752,
+    "shares_outstanding": 10645945748,
+    "free_float_pct": 8.839999998842751
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4488,
+    "vol_trend": 0.609,
+    "price_chg_20d": 6.38
+  },
+  "neraca": {
+    "aset": 245848165.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 2305591.0,
+    "liabilitas": 182462700.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 47453768.0,
+    "ekuitas_induk": 47453768.0,
+    "modal_saham": null,
+    "saldo_laba": 28608134.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24235160.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 323918.0,
+    "laba_sebelum_pajak": 281327.0,
+    "beban_pajak": -383456.0,
+    "laba_bersih": 505557.0,
+    "laba_induk": 505557.0,
+    "eps_basic": 47.0,
+    "eps_diluted": 47.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

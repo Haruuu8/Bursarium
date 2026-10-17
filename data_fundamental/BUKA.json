@@ -1,0 +1,142 @@
+{
+  "kode": "BUKA",
+  "nama": "PT Bukalapak.com Tbk",
+  "periode_terbaru": "2025-audit",
+  "update": "2026-10-09 18:50",
+  "neraca": {
+    "aset": 26030762801.0,
+    "aset_lancar": 21966013753.0,
+    "aset_tidak_lancar": 4064749048.0,
+    "kas": 16211043356.0,
+    "piutang_usaha": 172351180.0,
+    "persediaan": 197205224.0,
+    "aset_tetap": 78577246.0,
+    "investasi": 830207573.0,
+    "properti_investasi": null,
+    "goodwill": 159327916.0,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 717295953.0,
+    "liabilitas_jangka_pendek": 592520366.0,
+    "liabilitas_jangka_panjang": 124775587.0,
+    "utang_usaha": 172351180.0,
+    "utang_bank": null,
+    "ekuitas": 25301150138.0,
+    "ekuitas_induk": 25301150138.0,
+    "ekuitas_non_pengendali": 12316710.0,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 27495431172.0,
+    "saldo_laba": -7114252581.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6510030453.0,
+    "beban_pokok": 5990751222.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "beban_bunga": 9923008.0,
+    "laba_sebelum_pajak": 3163709046.0,
+    "beban_pajak": 16136.0,
+    "laba_bersih": 3142054776.0,
+    "laba_induk": 3142054776.0,
+    "laba_komprehensif": null,
+    "eps_basic": 31.91,
+    "eps_diluted": 31.38
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 27568588.0,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": 0.12418624287284565,
+    "roa": 0.12070544378666055,
+    "der": 0.02835032988965539,
+    "dar": 0.02755570240040927,
+    "current_ratio": 37.07216665190543,
+    "margin_laba_bersih": 0.482648245455143,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": null,
+    "quick_ratio": 36.73934227097943
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1168786520.0,
+      "2024-Q2": 2412683822.0,
+      "2025-Q4": 6510030453.0,
+      "2026-Q1": 2369832294.0
+    },
+    "eps": {
+      "2024-Q1": -0.41,
+      "2024-Q2": -0.00729,
+      "2025-Q4": 31.91,
+      "2026-Q1": -4.39
+    },
+    "net_income": {
+      "2024-Q1": -41966990.0,
+      "2024-Q2": -751907319.0,
+      "2025-Q4": 3142054776.0,
+      "2026-Q1": -425780438.0
+    },
+    "aset": {
+      "2024-Q1": 25975762134.0,
+      "2024-Q2": 25118864328.0,
+      "2025-Q4": 26030762801.0,
+      "2026-Q1": 25428427369.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 19.25,
+      "2025": 31.91
+    },
+    "revenue": {
+      "2022": 3618366163.0,
+      "2025": 6510030453.0
+    },
+    "net_income": {
+      "2022": 1983630005.0,
+      "2025": 3142054776.0
+    },
+    "ekuitas": {
+      "2022": 26487418056.0,
+      "2025": 25301150138.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": 5.449591,
+    "pb": 0.37795177,
+    "ps": 1.2385408,
+    "roe": 0.078200005,
+    "eps": 18.35,
+    "de": 0.00436,
+    "margin_net": 0.25043,
+    "current_ratio": 42.869,
+    "roa": -0.06618,
+    "bv": 264.58,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "statistik": {
+    "market_cap": 9183365693440,
+    "enterprise_value": -9096181841920,
+    "shares_outstanding": 91833653260,
+    "free_float_pct": 45.450000000359346
+  },
+  "akumulasi": {
+    "score": 3.2,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0841,
+    "vol_trend": 0.398,
+    "price_chg_20d": -6.54
+  },
+  "harga": 100.0,
+  "sektor": "Consumer Cyclical",
+  "industri": "Internet Retail",
+  "update_bv": "2026-10-11 17:37"
+}

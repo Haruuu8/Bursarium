@@ -1,0 +1,128 @@
+{
+  "kode": "NETV",
+  "nama": "PT MDTV Media Technologies Tbk",
+  "sektor": "Communication Services",
+  "industri": "Broadcasting",
+  "harga": 37.0,
+  "update": "2026-10-11 11:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.114769,
+    "ps": 18.428411,
+    "roe": -0.13171155981272972,
+    "eps": null,
+    "de": 1.3102324187333692,
+    "margin_net": -1.016141715477206,
+    "current_ratio": 1.1159430740412855,
+    "roa": -0.059252655109472044,
+    "bv": 8.99,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 81788646207.0,
+      "2024-Q2": 118726730120.0,
+      "2024-Q3": 167421983879.0,
+      "2024-Q4": 209729710295.0,
+      "2025-Q1": 32692617084.0,
+      "2025-Q2": 48107166144.0,
+      "2025-Q3": 64879615990.0,
+      "2025-Q4": 82940382844.0,
+      "2026-Q1": 26365465376.0,
+      "2026-Q2": 48209168728.0
+    },
+    "eps": {
+      "2024-Q1": -3.0,
+      "2024-Q2": 2.0,
+      "2024-Q3": 2.0,
+      "2024-Q4": -3.0,
+      "2025-Q1": -1.0,
+      "2025-Q2": -2.0,
+      "2025-Q3": -3.31,
+      "2025-Q4": -6.92,
+      "2026-Q1": -620000.0,
+      "2026-Q2": -1.18
+    },
+    "net_income": {
+      "2024-Q1": -63777573608.0,
+      "2024-Q2": 49989963479.0,
+      "2024-Q3": 44778197717.0,
+      "2024-Q4": -78459863539.0,
+      "2025-Q1": -53707894699.0,
+      "2025-Q2": -100248003610.0,
+      "2025-Q3": -137074600320.0,
+      "2025-Q4": -286029093340.0,
+      "2026-Q1": -25500774255.0,
+      "2026-Q2": -48987347413.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -8.0,
+      "2023": -27.0,
+      "2024": -3.0,
+      "2025": -6.92
+    },
+    "revenue_per_share": {
+      "2022": 438679000808.0,
+      "2023": 235745414500.0,
+      "2024": 209729710295.0,
+      "2025": 82940382844.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1530339262464,
+    "enterprise_value": 1880169250816,
+    "shares_outstanding": 41360517722,
+    "free_float_pct": 3.4479999998680864
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3424,
+    "vol_trend": 1.117,
+    "price_chg_20d": -26.0
+  },
+  "neraca": {
+    "aset": 826753625175.0,
+    "aset_lancar": 522403686753.0,
+    "kas": 10257818373.0,
+    "piutang_usaha": 28464578197.0,
+    "persediaan": 453558913164.0,
+    "aset_tetap": 15246641880.0,
+    "liabilitas": 487313420170.0,
+    "liabilitas_jangka_pendek": 468127540647.0,
+    "utang_usaha": 28464578197.0,
+    "utang_bank": 389220000000.0,
+    "ekuitas": 371928990004.0,
+    "ekuitas_induk": 371928990004.0,
+    "modal_saham": null,
+    "saldo_laba": -4066772569109.0
+  },
+  "laba_rugi": {
+    "pendapatan": 48209168728.0,
+    "beban_pokok": 50086545059.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -49543503308.0,
+    "beban_pajak": 429726358.0,
+    "laba_bersih": -48987347413.0,
+    "laba_induk": -48987347413.0,
+    "eps_basic": -1.18,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 211850000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

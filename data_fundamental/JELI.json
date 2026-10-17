@@ -1,0 +1,91 @@
+{
+  "kode": "JELI",
+  "nama": "PT Niramas Utama Tbk.",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 400.0,
+  "update": "2026-10-11 12:09",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 31.948881,
+    "pb": 3.7956786,
+    "ps": 0.786926,
+    "roe": -0.3734573086253904,
+    "eps": 12.52,
+    "de": 2.521797926151061,
+    "margin_net": -0.18558654038510936,
+    "current_ratio": 1.0080644522929891,
+    "roa": -0.10586736649107999,
+    "bv": 105.38,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2026-Q2": 212063193367.0
+    },
+    "eps": {
+      "2026-Q2": -39.36
+    },
+    "net_income": {
+      "2026-Q2": -39356074400.0
+    }
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 506400014336,
+    "enterprise_value": 556952125440,
+    "shares_outstanding": 1266000000,
+    "free_float_pct": 16.596366508688785
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3127,
+    "vol_trend": 0.731,
+    "price_chg_20d": -22.33
+  },
+  "neraca": {
+    "aset": 371748875073.0,
+    "aset_lancar": 193813325889.0,
+    "kas": 17600617707.0,
+    "piutang_usaha": 64077515304.0,
+    "persediaan": 98084939578.0,
+    "aset_tetap": 1451562108.0,
+    "liabilitas": 265754785115.0,
+    "liabilitas_jangka_pendek": 192262831457.0,
+    "utang_usaha": 64077515304.0,
+    "utang_bank": 94000000000.0,
+    "ekuitas": 105383061172.0,
+    "ekuitas_induk": 105383061172.0,
+    "modal_saham": null,
+    "saldo_laba": 5000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 212063193367.0,
+    "beban_pokok": 139187277467.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -37404451644.0,
+    "beban_pajak": -2121603714.0,
+    "laba_bersih": -39356074400.0,
+    "laba_induk": -39356074400.0,
+    "eps_basic": -39.36,
+    "eps_diluted": -39.36
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1451562108.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

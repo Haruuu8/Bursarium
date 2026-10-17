@@ -1,0 +1,115 @@
+{
+  "kode": "TRUS",
+  "nama": "PT Trust Finance Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 450.0,
+  "update": "2026-10-11 15:18",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 16.719301,
+    "pb": 0.86222583,
+    "ps": 8.957221,
+    "roe": 0.010777098881842825,
+    "eps": 26.92,
+    "de": 0.036418553637009646,
+    "margin_net": 1.2736149863854958,
+    "current_ratio": null,
+    "roa": 0.010398404046341826,
+    "bv": 521.91,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2023-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 691438123.0,
+      "2024-Q2": 1022343781.0,
+      "2024-Q3": 1093192985.0,
+      "2025-Q1": 1889444323.0,
+      "2025-Q3": 3971857116.0,
+      "2026-Q1": 1749410660.0,
+      "2026-Q2": 3533011480.0
+    },
+    "eps": {
+      "2024-Q1": 6.38,
+      "2024-Q2": 15.66,
+      "2024-Q3": 27.18,
+      "2025-Q1": 3.96,
+      "2025-Q3": 16.89,
+      "2026-Q1": 50000.0,
+      "2026-Q2": 5.62
+    },
+    "net_income": {
+      "2024-Q1": 5101980336.0,
+      "2024-Q2": 12525989007.0,
+      "2024-Q3": 21745157164.0,
+      "2025-Q1": 3164104091.0,
+      "2025-Q3": 13512901836.0,
+      "2026-Q1": 41854243.0,
+      "2026-Q2": 4499696368.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 29.87,
+      "2023": 32.49
+    },
+    "revenue_per_share": {
+      "2022": 2940424371.0,
+      "2023": 1811338084.0
+    }
+  },
+  "statistik": {
+    "market_cap": 359999995904,
+    "enterprise_value": 250997440512,
+    "shares_outstanding": 800000000,
+    "free_float_pct": 20.723
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2291,
+    "vol_trend": 0.105,
+    "price_chg_20d": -2.17
+  },
+  "neraca": {
+    "aset": 432729517717.0,
+    "aset_lancar": null,
+    "kas": 10997900.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 52857628028.0,
+    "liabilitas": 15205616588.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 417523901129.0,
+    "ekuitas_induk": 417523901129.0,
+    "modal_saham": null,
+    "saldo_laba": 363014901129.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3533011480.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4715846445.0,
+    "beban_pajak": -216150077.0,
+    "laba_bersih": 4499696368.0,
+    "laba_induk": 4499696368.0,
+    "eps_basic": 5.62,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1151685752.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,126 @@
+{
+  "kode": "MAPB",
+  "nama": "PT Map Boga Adiperkasa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 1335.0,
+  "update": "2026-10-11 15:42",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.4989004,
+    "ps": 0.9413964,
+    "roe": -0.09524563537851803,
+    "eps": 46.0,
+    "de": 1.0552224953594542,
+    "margin_net": -0.07272207116595554,
+    "current_ratio": 0.6265286746549066,
+    "roa": -0.04634311741431142,
+    "bv": 534.23,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2023",
+    "eps_reliable": true,
+    "eps_period": "2023-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 787631.0,
+      "2024-Q2": 1625716.0,
+      "2024-Q3": 2421339.0,
+      "2024-Q4": 3228133.0,
+      "2025-Q1": 719612.0,
+      "2025-Q2": 1520542.0,
+      "2025-Q3": 2354383.0,
+      "2025-Q4": 3236043.0,
+      "2026-Q1": 805726.0,
+      "2026-Q2": 1670827.0
+    },
+    "eps": {
+      "2024-Q1": -9.0,
+      "2024-Q2": -21.0,
+      "2024-Q3": -33.0,
+      "2024-Q4": -61.0,
+      "2025-Q1": -22.0,
+      "2025-Q2": -34.0,
+      "2025-Q3": -46.0,
+      "2025-Q4": -63.0,
+      "2026-Q1": -22.0,
+      "2026-Q2": -51.0
+    },
+    "net_income": {
+      "2024-Q1": -22234.0,
+      "2024-Q2": -50116.0,
+      "2024-Q3": -79134.0,
+      "2024-Q4": -146148.0,
+      "2025-Q1": -53370.0,
+      "2025-Q2": -80206.0,
+      "2025-Q3": -108693.0,
+      "2025-Q4": -150767.0,
+      "2026-Q1": -51783.0,
+      "2026-Q2": -121506.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 46.0,
+      "2024": -61.0,
+      "2025": -63.0
+    },
+    "revenue_per_share": {
+      "2023": 3999453.0,
+      "2024": 3228133.0,
+      "2025": 3236043.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3187877085184,
+    "enterprise_value": 3329447165952,
+    "shares_outstanding": 2387922900,
+    "free_float_pct": 7.885000014028928
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.1006,
+    "vol_trend": 11.419,
+    "price_chg_20d": 5.95
+  },
+  "neraca": {
+    "aset": 2621878.0,
+    "aset_lancar": 598536.0,
+    "kas": 317241.0,
+    "piutang_usaha": 26295.0,
+    "persediaan": 168737.0,
+    "aset_tetap": 1124788.0,
+    "liabilitas": 1346160.0,
+    "liabilitas_jangka_pendek": 955321.0,
+    "utang_usaha": 26295.0,
+    "utang_bank": null,
+    "ekuitas": 1275712.0,
+    "ekuitas_induk": 1275712.0,
+    "modal_saham": null,
+    "saldo_laba": 4000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1670827.0,
+    "beban_pokok": 537402.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -120631.0,
+    "beban_pajak": 25359.0,
+    "laba_bersih": -121506.0,
+    "laba_induk": -121506.0,
+    "eps_basic": -51.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1737.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

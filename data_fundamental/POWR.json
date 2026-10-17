@@ -1,0 +1,125 @@
+{
+  "kode": "POWR",
+  "nama": "PT Cikarang Listrindo Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Independent Power Producers",
+  "harga": 955.0,
+  "update": "2026-10-11 15:35",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.010899,
+    "pb": 21222.22,
+    "ps": 27180.969,
+    "roe": 0.05264123062645079,
+    "eps": 73.4,
+    "de": 0.689200729590729,
+    "margin_net": 0.1351614393842279,
+    "current_ratio": 7.114134311639215,
+    "roa": 0.031163395625104343,
+    "bv": 0.05,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 137599011.0,
+      "2024-Q2": 268930876.0,
+      "2024-Q3": 409460766.0,
+      "2024-Q4": 547019675.0,
+      "2025-Q1": 135502454.0,
+      "2025-Q2": 271338755.0,
+      "2025-Q3": 412477252.0,
+      "2026-Q1": 128187874.0,
+      "2026-Q2": 274783475.0
+    },
+    "eps": {
+      "2024-Q1": 1200.0,
+      "2024-Q2": 2100.0,
+      "2024-Q3": 4600.0,
+      "2024-Q4": 4800.0,
+      "2025-Q1": 1100.0,
+      "2025-Q2": 2500.0,
+      "2025-Q3": 3600.0,
+      "2026-Q1": 1100.0,
+      "2026-Q2": 2300.0
+    },
+    "net_income": {
+      "2024-Q1": 18095744.0,
+      "2024-Q2": 33459294.0,
+      "2024-Q3": 72595154.0,
+      "2024-Q4": 75344585.0,
+      "2025-Q1": 16934380.0,
+      "2025-Q2": 39646418.0,
+      "2025-Q3": 57306369.0,
+      "2026-Q1": 17539679.0,
+      "2026-Q2": 37140130.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 4600.0,
+      "2023": 4900.0,
+      "2024": 4800.0,
+      "2025": 4600.0
+    },
+    "revenue_per_share": {
+      "2022": 550450870.0,
+      "2023": 546079025.0,
+      "2024": 547019675.0,
+      "2025": 553495788.0
+    }
+  },
+  "statistik": {
+    "market_cap": 15138181611520,
+    "enterprise_value": 15138227748864,
+    "shares_outstanding": 15851499100,
+    "free_float_pct": 14.678000000643474
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2662,
+    "vol_trend": 0.552,
+    "price_chg_20d": -4.02
+  },
+  "neraca": {
+    "aset": 1191787007.0,
+    "aset_lancar": 430732561.0,
+    "kas": 123951821.0,
+    "piutang_usaha": 57870260.0,
+    "persediaan": 66349478.0,
+    "aset_tetap": 718923128.0,
+    "liabilitas": 486253919.0,
+    "liabilitas_jangka_pendek": 60546026.0,
+    "utang_usaha": 57870260.0,
+    "utang_bank": null,
+    "ekuitas": 705533088.0,
+    "ekuitas_induk": 705533088.0,
+    "modal_saham": null,
+    "saldo_laba": 1800349.0
+  },
+  "laba_rugi": {
+    "pendapatan": 274783475.0,
+    "beban_pokok": 214289641.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 55582220.0,
+    "beban_pajak": -18442090.0,
+    "laba_bersih": 37140130.0,
+    "laba_induk": 37140130.0,
+    "eps_basic": 2300.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4320049.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,125 @@
+{
+  "kode": "TOOL",
+  "nama": "PT Rohartindo Nusantara Luas Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 56.0,
+  "update": "2026-10-11 11:22",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.64033663,
+    "ps": 2.1670065,
+    "roe": -0.03698365888455677,
+    "eps": null,
+    "de": 0.10396412556738936,
+    "margin_net": -0.26632506873482137,
+    "current_ratio": 14.368217584980894,
+    "roa": -0.033500216620529974,
+    "bv": 87.45,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 26108328848.0,
+      "2024-Q2": 51362205466.0,
+      "2024-Q3": 74360067642.0,
+      "2024-Q4": 93531080067.0,
+      "2025-Q2": 31178691457.0,
+      "2025-Q3": 44082252490.0,
+      "2025-Q4": 59259222002.0,
+      "2026-Q1": 10155126049.0,
+      "2026-Q2": 24896300613.0
+    },
+    "eps": {
+      "2024-Q1": -570000.0,
+      "2024-Q2": 530000.0,
+      "2024-Q3": 380000.0,
+      "2024-Q4": 460000.0,
+      "2025-Q2": -1.66,
+      "2025-Q3": 3.08,
+      "2025-Q4": -3.41,
+      "2026-Q1": -2.37,
+      "2026-Q2": -3.23
+    },
+    "net_income": {
+      "2024-Q1": -1166776467.0,
+      "2024-Q2": 1092793428.0,
+      "2024-Q3": 772866129.0,
+      "2024-Q4": 939378060.0,
+      "2025-Q2": -3407969034.0,
+      "2025-Q3": -6313153893.0,
+      "2025-Q4": -6985132464.0,
+      "2026-Q1": -4863467828.0,
+      "2026-Q2": -6630508972.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 7.81,
+      "2023": 14.58,
+      "2024": 460000.0,
+      "2025": -3.41
+    },
+    "revenue_per_share": {
+      "2022": 102309414904.0,
+      "2023": 148489514064.0,
+      "2024": 93531080067.0,
+      "2025": 59259222002.0
+    }
+  },
+  "statistik": {
+    "market_cap": 114801139712,
+    "enterprise_value": 131254484992,
+    "shares_outstanding": 2050020320,
+    "free_float_pct": 20.0009999900879
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5873,
+    "vol_trend": 1.483,
+    "price_chg_20d": -18.84
+  },
+  "neraca": {
+    "aset": 197924361120.0,
+    "aset_lancar": 77242784325.0,
+    "kas": 1289691920.0,
+    "piutang_usaha": 11063911364.0,
+    "persediaan": 58983432725.0,
+    "aset_tetap": 9852563646.0,
+    "liabilitas": 18638909403.0,
+    "liabilitas_jangka_pendek": 5375947564.0,
+    "utang_usaha": 11063911364.0,
+    "utang_bank": 2451799544.0,
+    "ekuitas": 179282125457.0,
+    "ekuitas_induk": 179282125457.0,
+    "modal_saham": null,
+    "saldo_laba": 450000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24896300613.0,
+    "beban_pokok": 15323916763.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -6634550383.0,
+    "beban_pajak": 2626172.0,
+    "laba_bersih": -6630508972.0,
+    "laba_induk": -6630508972.0,
+    "eps_basic": -3.23,
+    "eps_diluted": -3.23
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9852563646.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

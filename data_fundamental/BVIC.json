@@ -1,0 +1,128 @@
+{
+  "kode": "BVIC",
+  "nama": "PT Bank Victoria International Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 89.0,
+  "update": "2026-10-11 12:59",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 30.795847,
+    "pb": 0.37869924,
+    "ps": 2.1155846,
+    "roe": 0.014702596780949729,
+    "eps": 2.89,
+    "de": 7.068906223708288,
+    "margin_net": 0.05386350045452789,
+    "current_ratio": null,
+    "roa": 0.0018221300847133587,
+    "bv": 235.01,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 497078667.0,
+      "2024-Q2": 994590414.0,
+      "2024-Q3": 1500384794.0,
+      "2024-Q4": 2076267755.0,
+      "2025-Q1": 550770876.0,
+      "2025-Q2": 1096831058.0,
+      "2025-Q3": 1674391046.0,
+      "2025-Q4": 2302353975.0,
+      "2026-Q1": 577286949.0,
+      "2026-Q2": 1181601854.0
+    },
+    "eps": {
+      "2024-Q1": 2100.0,
+      "2024-Q2": 4.66,
+      "2024-Q3": 5.08,
+      "2024-Q4": 7440.0,
+      "2025-Q1": 2.25,
+      "2025-Q2": 7720.0,
+      "2025-Q3": 7520.0,
+      "2025-Q4": 7.15,
+      "2026-Q1": 2130.0,
+      "2026-Q2": 3.46
+    },
+    "net_income": {
+      "2024-Q1": 33345573.0,
+      "2024-Q2": 73904803.0,
+      "2024-Q3": 80585309.0,
+      "2024-Q4": 117859238.0,
+      "2025-Q1": 35624453.0,
+      "2025-Q2": 125581270.0,
+      "2025-Q3": 127789530.0,
+      "2025-Q4": 131744927.0,
+      "2026-Q1": 39144897.0,
+      "2026-Q2": 63645212.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 19.17,
+      "2023": 6420.0,
+      "2024": 7440.0,
+      "2025": 7.15
+    },
+    "revenue_per_share": {
+      "2022": 1705018411.0,
+      "2023": 1836391130.0,
+      "2024": 2076267755.0,
+      "2025": 2302353975.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1639328251904,
+    "enterprise_value": 8186274250752,
+    "shares_outstanding": 18419418828,
+    "free_float_pct": 23.95599999763467
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2616,
+    "vol_trend": 0.467,
+    "price_chg_20d": -6.32
+  },
+  "neraca": {
+    "aset": 34929016613.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 369188431.0,
+    "liabilitas": 30600175052.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4328841561.0,
+    "ekuitas_induk": 4328841561.0,
+    "modal_saham": null,
+    "saldo_laba": 1338561668.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1181601854.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 99674481.0,
+    "laba_sebelum_pajak": 80831414.0,
+    "beban_pajak": -17186202.0,
+    "laba_bersih": 63645212.0,
+    "laba_induk": 63645212.0,
+    "eps_basic": 3.46,
+    "eps_diluted": 3.46
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

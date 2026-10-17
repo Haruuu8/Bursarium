@@ -1,0 +1,117 @@
+{
+  "kode": "SAPX",
+  "nama": "PT Satria Antaran Prima Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 410.0,
+  "update": "2026-10-11 16:06",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 179.82457,
+    "pb": 1.6093262,
+    "ps": 0.70966285,
+    "roe": 0.011198058247705539,
+    "eps": 2.28,
+    "de": 0.9475890758418667,
+    "margin_net": 0.010434269141324165,
+    "current_ratio": 2.053170040355284,
+    "roa": 0.005749702740997896,
+    "bv": 254.77,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 189963260751.0,
+      "2024-Q2": 358366545052.0,
+      "2024-Q3": 523348929379.0,
+      "2025-Q1": 138160477242.0,
+      "2025-Q2": 269530329320.0,
+      "2025-Q3": 402304792738.0,
+      "2026-Q2": 227844923377.0
+    },
+    "eps": {
+      "2024-Q1": 2.73,
+      "2024-Q2": 5.77,
+      "2024-Q3": 1.16,
+      "2025-Q1": 120000.0,
+      "2025-Q2": 1.46,
+      "2025-Q3": 1.0936106201824471,
+      "2026-Q2": 2.852874417090977
+    },
+    "net_income": {
+      "2024-Q1": 2275558829.0,
+      "2024-Q2": 4807914371.0,
+      "2024-Q3": 967333700.0,
+      "2025-Q1": 102320624.0,
+      "2025-Q2": 1219306776.0,
+      "2025-Q3": 911342180.0,
+      "2026-Q2": 2377395253.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.0,
+      "2024": 1.18,
+      "2025": 890000.0
+    },
+    "revenue_per_share": {
+      "2022": 591902803145.0,
+      "2024": 682513129935.0,
+      "2025": 523134642547.0
+    }
+  },
+  "statistik": {
+    "market_cap": 341666660352,
+    "enterprise_value": 482552840192,
+    "shares_outstanding": 833333300,
+    "free_float_pct": 8.9399999976
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2356,
+    "vol_trend": 2.252,
+    "price_chg_20d": -18.81
+  },
+  "neraca": {
+    "aset": 413481419839.0,
+    "aset_lancar": 294825739933.0,
+    "kas": 29519403415.0,
+    "piutang_usaha": 165716378451.0,
+    "persediaan": 3937292286.0,
+    "aset_tetap": 20685000000.0,
+    "liabilitas": 201177179192.0,
+    "liabilitas_jangka_pendek": 143595383791.0,
+    "utang_usaha": 165716378451.0,
+    "utang_bank": 93000000000.0,
+    "ekuitas": 212304240647.0,
+    "ekuitas_induk": 212304240647.0,
+    "modal_saham": null,
+    "saldo_laba": 30211737571.0
+  },
+  "laba_rugi": {
+    "pendapatan": 227844923377.0,
+    "beban_pokok": 187214137225.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3047942632.0,
+    "beban_pajak": -670547379.0,
+    "laba_bersih": 2377395253.0,
+    "laba_induk": 2377395253.0,
+    "eps_basic": 2.852874417090977,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 20685000000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

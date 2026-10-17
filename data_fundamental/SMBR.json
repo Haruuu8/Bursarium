@@ -1,0 +1,125 @@
+{
+  "kode": "SMBR",
+  "nama": "PT Semen Baturaja (Persero) Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 151.0,
+  "update": "2026-10-11 15:01",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.727273,
+    "pb": 0.44104072,
+    "ps": 0.6730396,
+    "roe": 0.006237009693019113,
+    "eps": 11.0,
+    "de": 0.37623790631975873,
+    "margin_net": 0.022090686907914246,
+    "current_ratio": 1.2902130287648443,
+    "roa": 0.004531952536602647,
+    "bv": 342.37,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 432484142.0,
+      "2024-Q2": 835177481.0,
+      "2024-Q3": 1408089366.0,
+      "2024-Q4": 2091352268.0,
+      "2025-Q1": 527814767.0,
+      "2025-Q2": 1093609671.0,
+      "2025-Q4": 2361905786.0,
+      "2026-Q1": 439395028.0,
+      "2026-Q2": 960120529.0
+    },
+    "eps": {
+      "2024-Q1": 1.0,
+      "2024-Q2": 1.0,
+      "2024-Q3": 4.0,
+      "2024-Q4": 13.0,
+      "2025-Q1": 4.9,
+      "2025-Q2": 7.745509388088563,
+      "2025-Q4": 17.309132480405452,
+      "2026-Q1": 1.7442389679500594,
+      "2026-Q2": 21353.786710650013
+    },
+    "net_income": {
+      "2024-Q1": 5077949.0,
+      "2024-Q2": 7316498.0,
+      "2024-Q3": 35609291.0,
+      "2024-Q4": 129254004.0,
+      "2025-Q1": 48963623.0,
+      "2025-Q2": 76932537.0,
+      "2025-Q4": 171924896.0,
+      "2026-Q1": 17324713.0,
+      "2026-Q2": 21209722.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.0,
+      "2023": 12.0,
+      "2024": 13.0,
+      "2025": 17.309132480405452
+    },
+    "revenue_per_share": {
+      "2022": 1881767356.0,
+      "2023": 2040679390.0,
+      "2024": 2091352268.0,
+      "2025": 2361905786.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1499812724736,
+    "enterprise_value": 1856899907584,
+    "shares_outstanding": 9932534336,
+    "free_float_pct": 24.490000001143716
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2538,
+    "vol_trend": 0.493,
+    "price_chg_20d": -12.21
+  },
+  "neraca": {
+    "aset": 4680040629.0,
+    "aset_lancar": 998151967.0,
+    "kas": 58705680.0,
+    "piutang_usaha": 117432764.0,
+    "persediaan": 258528176.0,
+    "aset_tetap": 3597817328.0,
+    "liabilitas": 1279443482.0,
+    "liabilitas_jangka_pendek": 773633458.0,
+    "utang_usaha": 117432764.0,
+    "utang_bank": 230000000.0,
+    "ekuitas": 3400623543.0,
+    "ekuitas_induk": 3400623543.0,
+    "modal_saham": null,
+    "saldo_laba": 1193092426.0
+  },
+  "laba_rugi": {
+    "pendapatan": 960120529.0,
+    "beban_pokok": 695114079.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 38529507.0,
+    "beban_pajak": -17320737.0,
+    "laba_bersih": 21209722.0,
+    "laba_induk": 21209722.0,
+    "eps_basic": 21353.786710650013,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 21871181.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

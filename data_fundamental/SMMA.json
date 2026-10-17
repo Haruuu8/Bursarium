@@ -1,0 +1,123 @@
+{
+  "kode": "SMMA",
+  "nama": "PT Sinar Mas Multiartha Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Diversified",
+  "harga": 20150.0,
+  "update": "2026-10-11 15:00",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 42.331932,
+    "pb": 4.8713264,
+    "ps": 3.911463,
+    "roe": 0.08648488314558127,
+    "eps": 476.0,
+    "de": 3.78944926726916,
+    "margin_net": 1.076395145279206,
+    "current_ratio": null,
+    "roa": 0.017812391868813022,
+    "bv": 4136.45,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1285524.0,
+      "2024-Q2": 2682919.0,
+      "2024-Q3": 4004041.0,
+      "2024-Q4": 5244632.0,
+      "2025-Q1": 1186113.0,
+      "2025-Q2": 2330147.0,
+      "2025-Q3": 3465156.0,
+      "2025-Q4": 4488817.0,
+      "2026-Q2": 2146694.0
+    },
+    "eps": {
+      "2024-Q1": 18.0,
+      "2024-Q2": 51.0,
+      "2024-Q3": 91.0,
+      "2024-Q4": 132.0,
+      "2025-Q1": 68.0,
+      "2025-Q2": 208.0,
+      "2025-Q3": 430.0,
+      "2025-Q4": 321.0,
+      "2026-Q2": 363.0
+    },
+    "net_income": {
+      "2024-Q1": 113201.0,
+      "2024-Q2": 322175.0,
+      "2024-Q3": 581015.0,
+      "2024-Q4": 840797.0,
+      "2025-Q1": 435301.0,
+      "2025-Q2": 1324280.0,
+      "2025-Q3": 2740211.0,
+      "2025-Q4": 2045644.0,
+      "2026-Q2": 2310691.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 133.0,
+      "2024": 132.0,
+      "2025": 321.0
+    },
+    "revenue_per_share": {
+      "2022": 4610649.0,
+      "2024": 5244632.0,
+      "2025": 4488817.0
+    }
+  },
+  "statistik": {
+    "market_cap": 128308440203264,
+    "enterprise_value": 56154457636864,
+    "shares_outstanding": 142474368,
+    "free_float_pct": 47.330316285382644
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.8786,
+    "vol_trend": 0.068,
+    "price_chg_20d": 0.62
+  },
+  "neraca": {
+    "aset": 129723791.0,
+    "aset_lancar": null,
+    "kas": 10736405.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 2455207.0,
+    "liabilitas": 101245975.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 26717860.0,
+    "ekuitas_induk": 26717860.0,
+    "modal_saham": null,
+    "saldo_laba": 21754172.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2146694.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2333502.0,
+    "beban_pajak": -32086.0,
+    "laba_bersih": 2310691.0,
+    "laba_induk": 2310691.0,
+    "eps_basic": 363.0,
+    "eps_diluted": 363.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 145493.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

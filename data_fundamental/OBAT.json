@@ -1,0 +1,115 @@
+{
+  "kode": "OBAT",
+  "nama": "PT Brigit Biofarmaka Technologi Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 270.0,
+  "update": "2026-10-11 12:10",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3385288,
+    "ps": 1.0645722,
+    "roe": 0.053330497388467964,
+    "eps": 21.52,
+    "de": 0.16114654708393736,
+    "margin_net": 0.0822323003200536,
+    "current_ratio": 6.601057580609043,
+    "roa": 0.04456239196109809,
+    "bv": 201.71,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q4": 120626811471.0,
+      "2025-Q1": 29014103638.0,
+      "2025-Q2": 76564918438.0,
+      "2025-Q3": 114747226496.0,
+      "2025-Q4": 160118097369.0,
+      "2026-Q1": 43823271398.0,
+      "2026-Q2": 89005963174.0
+    },
+    "eps": {
+      "2024-Q4": 49.04,
+      "2025-Q1": 11.19,
+      "2025-Q2": 29.66,
+      "2025-Q3": 43.57,
+      "2025-Q4": 37.74,
+      "2026-Q1": 3.31,
+      "2026-Q2": 10.76
+    },
+    "net_income": {
+      "2024-Q4": 29425547989.0,
+      "2025-Q1": 6712466356.0,
+      "2025-Q2": 17797705156.0,
+      "2025-Q3": 20174075202.0,
+      "2025-Q4": 22641938844.0,
+      "2026-Q1": 1988579435.0,
+      "2026-Q2": 7319165094.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 49.04,
+      "2025": 37.74
+    },
+    "revenue_per_share": {
+      "2024": 120626811471.0,
+      "2025": 160118097369.0
+    }
+  },
+  "statistik": {
+    "market_cap": 183701667840,
+    "enterprise_value": 150143598592,
+    "shares_outstanding": 680376575,
+    "free_float_pct": 17.32000003086526
+  },
+  "akumulasi": {
+    "score": 4.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0472,
+    "vol_trend": 0.727,
+    "price_chg_20d": 12.5
+  },
+  "neraca": {
+    "aset": 164245337198.0,
+    "aset_lancar": 91566540155.0,
+    "kas": 26934415643.0,
+    "piutang_usaha": 10303512496.0,
+    "persediaan": 24022655856.0,
+    "aset_tetap": 4321190210.0,
+    "liabilitas": 22116016917.0,
+    "liabilitas_jangka_pendek": 13871495444.0,
+    "utang_usaha": 10303512496.0,
+    "utang_bank": 1749322390.0,
+    "ekuitas": 137241643195.0,
+    "ekuitas_induk": 137241643195.0,
+    "modal_saham": null,
+    "saldo_laba": 200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 89005963174.0,
+    "beban_pokok": 56028419007.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10706333039.0,
+    "beban_pajak": -1392528807.0,
+    "laba_bersih": 7319165094.0,
+    "laba_induk": 7319165094.0,
+    "eps_basic": 10.76,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4321190210.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

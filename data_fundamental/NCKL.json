@@ -1,0 +1,123 @@
+{
+  "kode": "NCKL",
+  "nama": "PT Trimegah Bangun Persada Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 860.0,
+  "update": "2026-10-11 11:41",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.0833435,
+    "pb": 1.234708,
+    "ps": 1.6598638,
+    "roe": 0.1325222260051651,
+    "eps": 169.18,
+    "de": 0.41351870011851877,
+    "margin_net": 0.34005787353986994,
+    "current_ratio": 1.6929238311045378,
+    "roa": 0.08190509318693774,
+    "bv": 696.52,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 6034165.0,
+      "2024-Q2": 12803885.0,
+      "2024-Q3": 20378405.0,
+      "2024-Q4": 26965262.0,
+      "2025-Q2": 14095131.0,
+      "2025-Q3": 22402580.0,
+      "2025-Q4": 29632799.0,
+      "2026-Q1": 6809824.0,
+      "2026-Q2": 17097278.0
+    },
+    "eps": {
+      "2024-Q1": 16.46,
+      "2024-Q2": 44.47,
+      "2024-Q3": 76.69,
+      "2024-Q4": 10.11,
+      "2025-Q2": 65.05,
+      "2025-Q3": 102.26,
+      "2025-Q4": 142.02,
+      "2026-Q1": 43.05,
+      "2026-Q2": 92.3
+    },
+    "net_income": {
+      "2024-Q1": 1001328.0,
+      "2024-Q2": 2806179.0,
+      "2024-Q3": 4838939.0,
+      "2024-Q4": 6379504.0,
+      "2025-Q2": 4102093.0,
+      "2025-Q3": 6446724.0,
+      "2025-Q4": 8951516.0,
+      "2026-Q1": 2711702.0,
+      "2026-Q2": 5814064.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 92.39,
+      "2024": 10.11,
+      "2025": 142.02
+    },
+    "revenue_per_share": {
+      "2023": 23857861.0,
+      "2024": 26965262.0,
+      "2025": 29632799.0
+    }
+  },
+  "statistik": {
+    "market_cap": 54169566183424,
+    "enterprise_value": 67170549628928,
+    "shares_outstanding": 62987866700,
+    "free_float_pct": 12.91300000004604
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1493,
+    "vol_trend": 0.623,
+    "price_chg_20d": -8.51
+  },
+  "neraca": {
+    "aset": 70985378.0,
+    "aset_lancar": 17833412.0,
+    "kas": 4885730.0,
+    "piutang_usaha": 1023700.0,
+    "persediaan": 8581214.0,
+    "aset_tetap": 23189225.0,
+    "liabilitas": 18142045.0,
+    "liabilitas_jangka_pendek": 10534090.0,
+    "utang_usaha": 1023700.0,
+    "utang_bank": 2259466.0,
+    "ekuitas": 43872369.0,
+    "ekuitas_induk": 43872369.0,
+    "modal_saham": null,
+    "saldo_laba": 50020.0
+  },
+  "laba_rugi": {
+    "pendapatan": 17097278.0,
+    "beban_pokok": 12872786.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 7058356.0,
+    "beban_pajak": -733704.0,
+    "laba_bersih": 5814064.0,
+    "laba_induk": 5814064.0,
+    "eps_basic": 92.3,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 280581.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

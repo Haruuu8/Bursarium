@@ -1,0 +1,125 @@
+{
+  "kode": "ISSP",
+  "nama": "PT Steel Pipe Industry of Indonesia Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Steel",
+  "harga": 426.0,
+  "update": "2026-10-11 13:53",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.286016,
+    "pb": 0.5200392,
+    "ps": 0.48804456,
+    "roe": 0.04171256308734701,
+    "eps": 80.59,
+    "de": 0.8123872820902687,
+    "margin_net": 0.0847992407763992,
+    "current_ratio": 2.0476931449925098,
+    "roa": 0.023015375924504516,
+    "bv": 819.17,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 2796811.0,
+      "2024-Q3": 4314440.0,
+      "2024-Q4": 6118364.0,
+      "2025-Q1": 1280458.0,
+      "2025-Q2": 2614347.0,
+      "2025-Q3": 4163247.0,
+      "2025-Q4": 5932797.0,
+      "2026-Q1": 1221490.0,
+      "2026-Q2": 2836582.0
+    },
+    "eps": {
+      "2024-Q2": 29.66,
+      "2024-Q3": 50.68,
+      "2024-Q4": 75.03,
+      "2025-Q1": 11.96,
+      "2025-Q2": 30.2,
+      "2025-Q3": 52.26,
+      "2025-Q4": 75.72,
+      "2026-Q1": 10.9,
+      "2026-Q2": 34.04
+    },
+    "net_income": {
+      "2024-Q2": 209588.0,
+      "2024-Q3": 358107.0,
+      "2024-Q4": 530082.0,
+      "2025-Q1": 84530.0,
+      "2025-Q2": 213360.0,
+      "2025-Q3": 369263.0,
+      "2025-Q4": 534247.0,
+      "2026-Q1": 77068.0,
+      "2026-Q2": 240540.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 43.29,
+      "2023": 70.5,
+      "2024": 75.03,
+      "2025": 75.72
+    },
+    "revenue_per_share": {
+      "2022": 6255945.0,
+      "2023": 6455329.0,
+      "2024": 6118364.0,
+      "2025": 5932797.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3003929853952,
+    "enterprise_value": 5894540099584,
+    "shares_outstanding": 7051478435,
+    "free_float_pct": 38.89427528257058
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.131,
+    "vol_trend": 2.455,
+    "price_chg_20d": -5.33
+  },
+  "neraca": {
+    "aset": 10451274.0,
+    "aset_lancar": 6354772.0,
+    "kas": 680732.0,
+    "piutang_usaha": 915291.0,
+    "persediaan": 4337813.0,
+    "aset_tetap": 3222255.0,
+    "liabilitas": 4684719.0,
+    "liabilitas_jangka_pendek": 3103381.0,
+    "utang_usaha": 915291.0,
+    "utang_bank": 2258913.0,
+    "ekuitas": 5766608.0,
+    "ekuitas_induk": 5766608.0,
+    "modal_saham": null,
+    "saldo_laba": 60000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2836582.0,
+    "beban_pokok": 2238942.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 303483.0,
+    "beban_pajak": -62979.0,
+    "laba_bersih": 240540.0,
+    "laba_induk": 240540.0,
+    "eps_basic": 34.04,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 106224.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

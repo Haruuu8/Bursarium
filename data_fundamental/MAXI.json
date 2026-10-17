@@ -1,0 +1,123 @@
+{
+  "kode": "MAXI",
+  "nama": "PT Maxindo Karya Anugerah Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 28.0,
+  "update": "2026-10-11 11:43",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.0748425,
+    "ps": 1.8716257,
+    "roe": -0.12625623455021473,
+    "eps": null,
+    "de": 1.3082336994332233,
+    "margin_net": -0.22091316633127597,
+    "current_ratio": 0.6264133472124017,
+    "roa": -0.05469820260453541,
+    "bv": 13.5,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 26552950833.0,
+      "2024-Q2": 58910243122.0,
+      "2024-Q3": 88494277005.0,
+      "2024-Q4": 104035904864.0,
+      "2025-Q1": 38849614473.0,
+      "2025-Q3": 102297121213.0,
+      "2025-Q4": 143849242644.0,
+      "2026-Q1": 36538874815.0,
+      "2026-Q2": 74120151107.0
+    },
+    "eps": {
+      "2024-Q1": 50000.0,
+      "2024-Q2": 230000.0,
+      "2024-Q3": 263280.0,
+      "2024-Q4": -290000.0,
+      "2025-Q1": 850000.0,
+      "2025-Q3": 370000.0,
+      "2025-Q4": 80000.0,
+      "2026-Q1": -3.57,
+      "2026-Q2": -1.7
+    },
+    "net_income": {
+      "2024-Q1": 502476498.0,
+      "2024-Q2": 2173226016.0,
+      "2024-Q3": 2530191118.0,
+      "2024-Q4": -2772668759.0,
+      "2025-Q1": 2001473864.0,
+      "2025-Q3": 3576038928.0,
+      "2025-Q4": 722076927.0,
+      "2026-Q1": -8417127920.0,
+      "2026-Q2": -16374117270.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": -314750.0,
+      "2024": -290000.0,
+      "2025": 80000.0
+    },
+    "revenue_per_share": {
+      "2023": 82780424379.0,
+      "2024": 104035904864.0,
+      "2025": 143849242644.0
+    }
+  },
+  "statistik": {
+    "market_cap": 269082787840,
+    "enterprise_value": 405714173952,
+    "shares_outstanding": 9610099981,
+    "free_float_pct": 32.29400000141372
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6361,
+    "vol_trend": 152.73,
+    "price_chg_20d": -44.0
+  },
+  "neraca": {
+    "aset": 299353845105.0,
+    "aset_lancar": 51759219243.0,
+    "kas": 2921998003.0,
+    "piutang_usaha": 23260095221.0,
+    "persediaan": 12640823771.0,
+    "aset_tetap": 243384482169.0,
+    "liabilitas": 169664271134.0,
+    "liabilitas_jangka_pendek": 82627899730.0,
+    "utang_usaha": 23260095221.0,
+    "utang_bank": 36635122276.0,
+    "ekuitas": 129689573971.0,
+    "ekuitas_induk": 129689573971.0,
+    "modal_saham": null,
+    "saldo_laba": 9000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 74120151107.0,
+    "beban_pokok": 68859506902.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -16374117270.0,
+    "beban_pajak": null,
+    "laba_bersih": -16374117270.0,
+    "laba_induk": -16374117270.0,
+    "eps_basic": -1.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": -9462710512.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

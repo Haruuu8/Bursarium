@@ -1,0 +1,128 @@
+{
+  "kode": "CTBN",
+  "nama": "PT Citra Tubindo Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 2850.0,
+  "update": "2026-10-11 13:12",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 33.78779,
+    "pb": 22265.623,
+    "ps": 12242.295,
+    "roe": -0.004728212519482507,
+    "eps": 84.35,
+    "de": 0.45687031725031363,
+    "margin_net": -0.010811584948250127,
+    "current_ratio": 2.8900647206999075,
+    "roa": -0.003244873041270843,
+    "bv": 0.13,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 46470026.0,
+      "2024-Q2": 115331609.0,
+      "2024-Q3": 168661128.0,
+      "2024-Q4": 253917160.0,
+      "2025-Q1": 96769318.0,
+      "2025-Q2": 125478401.0,
+      "2025-Q3": 218699795.0,
+      "2025-Q4": 266879156.0,
+      "2026-Q1": 19224718.0,
+      "2026-Q2": 44925328.0
+    },
+    "eps": {
+      "2024-Q1": 4000.0,
+      "2024-Q2": 14000.0,
+      "2024-Q3": 20000.0,
+      "2024-Q4": 30000.0,
+      "2025-Q1": 20000.0,
+      "2025-Q2": 21000.0,
+      "2025-Q3": 27000.0,
+      "2025-Q4": 27000.0,
+      "2026-Q1": -1000.0,
+      "2026-Q2": -1000.0
+    },
+    "net_income": {
+      "2024-Q1": 2877472.0,
+      "2024-Q2": 11107142.0,
+      "2024-Q3": 18464367.0,
+      "2024-Q4": 26209542.0,
+      "2025-Q1": 15611780.0,
+      "2025-Q2": 16418859.0,
+      "2025-Q3": 21333924.0,
+      "2025-Q4": 21779156.0,
+      "2026-Q1": -664362.0,
+      "2026-Q2": -485714.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -8000.0,
+      "2023": 20000.0,
+      "2024": 30000.0,
+      "2025": 27000.0
+    },
+    "revenue_per_share": {
+      "2022": 129215954.0,
+      "2023": 208240090.0,
+      "2024": 253917160.0,
+      "2025": 266879156.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2281058861056,
+    "enterprise_value": 2281000402944,
+    "shares_outstanding": 800371500,
+    "free_float_pct": 11.309000008121227
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2928,
+    "vol_trend": 0.118,
+    "price_chg_20d": -6.56
+  },
+  "neraca": {
+    "aset": 149686596.0,
+    "aset_lancar": 112567518.0,
+    "kas": 60808470.0,
+    "piutang_usaha": 10182960.0,
+    "persediaan": 31495817.0,
+    "aset_tetap": 25065952.0,
+    "liabilitas": 46932812.0,
+    "liabilitas_jangka_pendek": 38949826.0,
+    "utang_usaha": 10182960.0,
+    "utang_bank": null,
+    "ekuitas": 102726770.0,
+    "ekuitas_induk": 102726770.0,
+    "modal_saham": null,
+    "saldo_laba": 7613641.0
+  },
+  "laba_rugi": {
+    "pendapatan": 44925328.0,
+    "beban_pokok": 35416889.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -368858.0,
+    "beban_pajak": 1908.0,
+    "laba_bersih": -485714.0,
+    "laba_induk": -485714.0,
+    "eps_basic": -1000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 264320.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

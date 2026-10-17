@@ -1,0 +1,107 @@
+{
+  "kode": "COIN",
+  "nama": "PT Indokripto Koin Semesta Tbk",
+  "sektor": "Financial Services",
+  "industri": "Financial Data & Stock Exchanges",
+  "harga": 675.0,
+  "update": "2026-10-11 12:08",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 6.568576,
+    "ps": 40.311626,
+    "roe": -0.025950317444250474,
+    "eps": 3.6,
+    "de": 0.013993899707278927,
+    "margin_net": -0.5254004201633841,
+    "current_ratio": 20.857662472361618,
+    "roa": -0.025619399906532798,
+    "bv": 102.76,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q2": 113148943094.0,
+      "2025-Q3": 204633223863.0,
+      "2025-Q4": 284751460249.0,
+      "2026-Q1": 41489414545.0,
+      "2026-Q2": 74640842565.0
+    },
+    "eps": {
+      "2025-Q2": 2.04,
+      "2025-Q3": 3.1,
+      "2025-Q4": 3.6,
+      "2026-Q1": -1.38,
+      "2026-Q2": -2.67
+    },
+    "net_income": {
+      "2025-Q2": 25510085044.0,
+      "2025-Q3": 41080888943.0,
+      "2025-Q4": 49054841608.0,
+      "2026-Q1": -19574186013.0,
+      "2026-Q2": -39216330045.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2025": 3.6
+    },
+    "revenue_per_share": {
+      "2025": 284751460249.0
+    }
+  },
+  "statistik": {
+    "market_cap": 9926470533120,
+    "enterprise_value": 9639094648832,
+    "shares_outstanding": 14705882400,
+    "free_float_pct": 15.1409999987488
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1727,
+    "vol_trend": 0.547,
+    "price_chg_20d": -5.59
+  },
+  "neraca": {
+    "aset": 1530727893240.0,
+    "aset_lancar": 366627617568.0,
+    "kas": 290821556746.0,
+    "piutang_usaha": 40123210787.0,
+    "persediaan": null,
+    "aset_tetap": 23232529923.0,
+    "liabilitas": 21147694656.0,
+    "liabilitas_jangka_pendek": 17577598547.0,
+    "utang_usaha": 40123210787.0,
+    "utang_bank": null,
+    "ekuitas": 1511208104843.0,
+    "ekuitas_induk": 1511208104843.0,
+    "modal_saham": null,
+    "saldo_laba": 53035014367.0
+  },
+  "laba_rugi": {
+    "pendapatan": 74640842565.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -38466567203.0,
+    "beban_pajak": 48187537.0,
+    "laba_bersih": -39216330045.0,
+    "laba_induk": -39216330045.0,
+    "eps_basic": -2.67,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2521454577.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

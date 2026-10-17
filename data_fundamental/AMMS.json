@@ -1,0 +1,110 @@
+{
+  "kode": "AMMS",
+  "nama": "PT Agung Menjangan Mas Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 210.0,
+  "update": "2026-10-11 11:18",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.5727046,
+    "ps": 17.604624,
+    "roe": -0.021479904347250934,
+    "eps": null,
+    "de": 0.021964422762301043,
+    "margin_net": -0.44848194358469556,
+    "current_ratio": 20.998123660279372,
+    "roa": -0.021018250605233595,
+    "bv": 58.78,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q4": 11495526042.0,
+      "2025-Q2": 4702119709.0,
+      "2025-Q4": 15638309272.0,
+      "2026-Q2": 3378231170.0
+    },
+    "eps": {
+      "2024-Q4": 90000.0,
+      "2025-Q2": 560000.0,
+      "2025-Q4": -380000.0,
+      "2026-Q2": -1.26
+    },
+    "net_income": {
+      "2024-Q4": 120079068.0,
+      "2025-Q2": 677783785.0,
+      "2025-Q4": -457271899.0,
+      "2026-Q2": -1515075681.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.35,
+      "2023": 190000.0,
+      "2024": 90000.0,
+      "2025": -380000.0
+    },
+    "revenue_per_share": {
+      "2022": 9981424190.0,
+      "2023": 10309548266.0,
+      "2024": 11495526042.0,
+      "2025": 15638309272.0
+    }
+  },
+  "statistik": {
+    "market_cap": 251999993856,
+    "enterprise_value": 245374926848,
+    "shares_outstanding": 1200000000,
+    "free_float_pct": 24.9
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2052,
+    "vol_trend": 0.419,
+    "price_chg_20d": -6.25
+  },
+  "neraca": {
+    "aset": 72083814655.0,
+    "aset_lancar": 25380613135.0,
+    "kas": 6625066413.0,
+    "piutang_usaha": 2202916125.0,
+    "persediaan": 6676824746.0,
+    "aset_tetap": 7720955520.0,
+    "liabilitas": 1549250976.0,
+    "liabilitas_jangka_pendek": 1208708623.0,
+    "utang_usaha": 2202916125.0,
+    "utang_bank": null,
+    "ekuitas": 70534563679.0,
+    "ekuitas_induk": 70534563679.0,
+    "modal_saham": null,
+    "saldo_laba": -1886329584.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3378231170.0,
+    "beban_pokok": 3296041648.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1515075681.0,
+    "beban_pajak": -191169785.0,
+    "laba_bersih": -1515075681.0,
+    "laba_induk": -1515075681.0,
+    "eps_basic": -1.26,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

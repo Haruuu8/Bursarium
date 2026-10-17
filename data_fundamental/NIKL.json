@@ -1,0 +1,124 @@
+{
+  "kode": "NIKL",
+  "nama": "PT Pelat Timah Nusantara Tbk",
+  "sektor": "Industrials",
+  "industri": "Metal Fabrication",
+  "harga": 187.0,
+  "update": "2026-10-11 14:32",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 15.609349,
+    "pb": 8500.0,
+    "ps": 3221.6948,
+    "roe": 0.0010653725132655503,
+    "eps": 11.98,
+    "de": 1.018257171844853,
+    "margin_net": 0.000865819850948911,
+    "current_ratio": 1.5400067602862566,
+    "roa": 0.0005278675721447888,
+    "bv": 0.02,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 72046510.0,
+      "2024-Q3": 115315009.0,
+      "2024-Q4": 155728216.0,
+      "2025-Q1": 34261475.0,
+      "2025-Q2": 63044426.0,
+      "2025-Q3": 94756648.0,
+      "2025-Q4": 139826615.0,
+      "2026-Q1": 32844694.0,
+      "2026-Q2": 69683087.0
+    },
+    "eps": {
+      "2024-Q2": -1500.0,
+      "2024-Q3": -500.0,
+      "2024-Q4": -10.0,
+      "2025-Q1": -300.0,
+      "2025-Q2": -300.0,
+      "2025-Q3": 10.0,
+      "2025-Q4": 390.0,
+      "2026-Q1": -50.0,
+      "2026-Q2": 20.0
+    },
+    "net_income": {
+      "2024-Q2": -3846720.0,
+      "2024-Q3": -1283941.0,
+      "2024-Q4": -18852.0,
+      "2025-Q1": -853731.0,
+      "2025-Q2": -774823.0,
+      "2025-Q3": 21387.0,
+      "2025-Q4": 973386.0,
+      "2026-Q1": -124322.0,
+      "2026-Q2": 60333.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 2800.0,
+      "2023": -1500.0,
+      "2024": -10.0,
+      "2025": 390.0
+    },
+    "revenue_per_share": {
+      "2022": 255347224.0,
+      "2024": 155728216.0,
+      "2025": 139826615.0
+    }
+  },
+  "statistik": {
+    "market_cap": 471866441728,
+    "enterprise_value": 471902191616,
+    "shares_outstanding": 2523350000,
+    "free_float_pct": 24.904
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1883,
+    "vol_trend": 0.278,
+    "price_chg_20d": -16.52
+  },
+  "neraca": {
+    "aset": 114295712.0,
+    "aset_lancar": 85006596.0,
+    "kas": 8531534.0,
+    "piutang_usaha": 48997793.0,
+    "persediaan": 27046457.0,
+    "aset_tetap": 21659181.0,
+    "liabilitas": 57664816.0,
+    "liabilitas_jangka_pendek": 55198846.0,
+    "utang_usaha": 48997793.0,
+    "utang_bank": 43865226.0,
+    "ekuitas": 56630896.0,
+    "ekuitas_induk": 56630896.0,
+    "modal_saham": null,
+    "saldo_laba": 3219022.0
+  },
+  "laba_rugi": {
+    "pendapatan": 69683087.0,
+    "beban_pokok": 65792473.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 85843.0,
+    "beban_pajak": -25510.0,
+    "laba_bersih": 60333.0,
+    "laba_induk": 60333.0,
+    "eps_basic": 20.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 310320.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "LTLS",
+  "nama": "PT Lautan Luas Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 910.0,
+  "update": "2026-10-11 14:14",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.060284,
+    "pb": 0.40300903,
+    "ps": 0.13750249,
+    "roe": 0.037640205509771145,
+    "eps": 128.89,
+    "de": 1.2273977954142488,
+    "margin_net": 0.024360523299115453,
+    "current_ratio": 1.2262987533906011,
+    "roa": 0.016266510108568406,
+    "bv": 2258.01,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1917642.0,
+      "2024-Q2": 3706700.0,
+      "2024-Q3": 5733732.0,
+      "2024-Q4": 7722382.0,
+      "2025-Q1": 2119361.0,
+      "2025-Q2": 4215972.0,
+      "2025-Q3": 6424857.0,
+      "2025-Q4": 8799179.0,
+      "2026-Q1": 2251944.0,
+      "2026-Q2": 5110194.0
+    },
+    "eps": {
+      "2024-Q1": 58.0,
+      "2024-Q2": 90.0,
+      "2024-Q3": 121.0,
+      "2024-Q4": 146.0,
+      "2025-Q1": 26.0,
+      "2025-Q2": 53.0,
+      "2025-Q3": 80.0,
+      "2025-Q4": 99.0,
+      "2026-Q1": 25.0,
+      "2026-Q2": 83.0
+    },
+    "net_income": {
+      "2024-Q1": 87534.0,
+      "2024-Q2": 136568.0,
+      "2024-Q3": 182739.0,
+      "2024-Q4": 220360.0,
+      "2025-Q1": 39074.0,
+      "2025-Q2": 79603.0,
+      "2025-Q3": 119872.0,
+      "2025-Q4": 149451.0,
+      "2026-Q1": 37413.0,
+      "2026-Q2": 124487.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 206.0,
+      "2023": 104.0,
+      "2024": 146.0,
+      "2025": 99.0
+    },
+    "revenue_per_share": {
+      "2022": 7879115.0,
+      "2023": 7316902.0,
+      "2024": 7722382.0,
+      "2025": 8799179.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1332866842624,
+    "enterprise_value": 2785542930432,
+    "shares_outstanding": 1464688800,
+    "free_float_pct": 38.457000012562396
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2856,
+    "vol_trend": 0.442,
+    "price_chg_20d": -15.35
+  },
+  "neraca": {
+    "aset": 7652963.0,
+    "aset_lancar": 4073827.0,
+    "kas": 421123.0,
+    "piutang_usaha": 1666419.0,
+    "persediaan": 1467521.0,
+    "aset_tetap": 1838784.0,
+    "liabilitas": 4059358.0,
+    "liabilitas_jangka_pendek": 3322051.0,
+    "utang_usaha": 1666419.0,
+    "utang_bank": 920353.0,
+    "ekuitas": 3307288.0,
+    "ekuitas_induk": 3307288.0,
+    "modal_saham": null,
+    "saldo_laba": 5100.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5110194.0,
+    "beban_pokok": 4129477.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 259667.0,
+    "beban_pajak": -85907.0,
+    "laba_bersih": 124487.0,
+    "laba_induk": 124487.0,
+    "eps_basic": 83.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 71288.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,127 @@
+{
+  "kode": "LSIP",
+  "nama": "PT Perusahaan Perkebunan London Sumatra Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 1485.0,
+  "update": "2026-10-11 14:12",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.906172,
+    "pb": 0.7071011,
+    "ps": 1.7223375,
+    "roe": 0.06220779050312328,
+    "eps": 302.68,
+    "de": 0.1380147641811236,
+    "margin_net": 0.3312537062063504,
+    "current_ratio": 7.0827541783404735,
+    "roa": 0.05467873387139732,
+    "bv": 2100.12,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 879465.0,
+      "2024-Q2": 1800938.0,
+      "2024-Q3": 2924351.0,
+      "2024-Q4": 4562503.0,
+      "2025-Q1": 1289643.0,
+      "2025-Q2": 2321276.0,
+      "2025-Q3": 3956904.0,
+      "2025-Q4": 5511706.0,
+      "2026-Q1": 1326929.0,
+      "2026-Q2": 2689745.0
+    },
+    "eps": {
+      "2024-Q1": 39.0,
+      "2024-Q2": 88.0,
+      "2024-Q3": 118.0,
+      "2024-Q4": 217.0,
+      "2025-Q1": 57.0,
+      "2025-Q2": 105.0,
+      "2025-Q3": 183.0,
+      "2025-Q4": 277.0,
+      "2026-Q1": 58.0,
+      "2026-Q2": 131.0
+    },
+    "net_income": {
+      "2024-Q1": 269305.0,
+      "2024-Q2": 598324.0,
+      "2024-Q3": 803347.0,
+      "2024-Q4": 1476909.0,
+      "2025-Q1": 391800.0,
+      "2025-Q2": 714460.0,
+      "2025-Q3": 1247373.0,
+      "2025-Q4": 1887756.0,
+      "2026-Q1": 394437.0,
+      "2026-Q2": 890988.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 152.0,
+      "2023": 112.0,
+      "2024": 217.0,
+      "2025": 277.0
+    },
+    "revenue_per_share": {
+      "2022": 4585348.0,
+      "2024": 4562503.0,
+      "2025": 5511706.0
+    }
+  },
+  "statistik": {
+    "market_cap": 10127646130176,
+    "enterprise_value": 1751307517952,
+    "shares_outstanding": 6819963965,
+    "free_float_pct": 40.378000003112916
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3112,
+    "vol_trend": 0.9,
+    "price_chg_20d": -12.65
+  },
+  "neraca": {
+    "aset": 16294964.0,
+    "aset_lancar": 9500254.0,
+    "kas": 8371777.0,
+    "piutang_usaha": 16341.0,
+    "persediaan": 583886.0,
+    "aset_tetap": 1454.0,
+    "liabilitas": 1976754.0,
+    "liabilitas_jangka_pendek": 1341322.0,
+    "utang_usaha": 16341.0,
+    "utang_bank": null,
+    "ekuitas": 14322772.0,
+    "ekuitas_induk": 14322772.0,
+    "modal_saham": null,
+    "saldo_laba": 115000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2689745.0,
+    "beban_pokok": 1827092.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1062393.0,
+    "beban_pajak": -172134.0,
+    "laba_bersih": 890988.0,
+    "laba_induk": 890988.0,
+    "eps_basic": 131.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1454.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

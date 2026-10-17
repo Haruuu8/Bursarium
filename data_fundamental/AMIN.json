@@ -1,0 +1,128 @@
+{
+  "kode": "AMIN",
+  "nama": "PT Ateliers Mecaniques D'Indonesie Tbk",
+  "sektor": "Industrials",
+  "industri": "Specialty Industrial Machinery",
+  "harga": 248.0,
+  "update": "2026-10-11 12:28",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3101591,
+    "ps": 0.83954763,
+    "roe": 0.08966445565115319,
+    "eps": 33.95,
+    "de": 0.6416387312376939,
+    "margin_net": 0.13707965079549628,
+    "current_ratio": 2.0935284952252484,
+    "roa": 0.054618871950926594,
+    "bv": 189.29,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 76240835987.0,
+      "2024-Q2": 166662051378.0,
+      "2024-Q3": 262179055058.0,
+      "2024-Q4": 366852043305.0,
+      "2025-Q1": 90050384927.0,
+      "2025-Q2": 180592200347.0,
+      "2025-Q3": 271590330901.0,
+      "2025-Q4": 365900306624.0,
+      "2026-Q1": 55421898160.0,
+      "2026-Q2": 133720842719.0
+    },
+    "eps": {
+      "2024-Q1": 4.4,
+      "2024-Q2": 9.2,
+      "2024-Q3": 16.09,
+      "2024-Q4": 16.89,
+      "2025-Q1": 4.97,
+      "2025-Q2": 10.86,
+      "2025-Q3": 19.12,
+      "2025-Q4": 23.3,
+      "2026-Q1": 4.72,
+      "2026-Q2": 16.97
+    },
+    "net_income": {
+      "2024-Q1": 4755360207.0,
+      "2024-Q2": 9938716240.0,
+      "2024-Q3": 17375842809.0,
+      "2024-Q4": 18245267343.0,
+      "2025-Q1": 5372426543.0,
+      "2025-Q2": 11732735913.0,
+      "2025-Q3": 20644504241.0,
+      "2025-Q4": 25165338753.0,
+      "2026-Q1": 5101334556.0,
+      "2026-Q2": 18330406424.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 7.34,
+      "2023": 14.31,
+      "2024": 16.89,
+      "2025": 23.3
+    },
+    "revenue_per_share": {
+      "2022": 217836301363.0,
+      "2023": 336797741017.0,
+      "2024": 366852043305.0,
+      "2025": 365900306624.0
+    }
+  },
+  "statistik": {
+    "market_cap": 267839995904,
+    "enterprise_value": 245742305280,
+    "shares_outstanding": 1080000000,
+    "free_float_pct": 18.293
+  },
+  "akumulasi": {
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.2614,
+    "vol_trend": 1.442,
+    "price_chg_20d": 4.2
+  },
+  "neraca": {
+    "aset": 335605730570.0,
+    "aset_lancar": 223459526037.0,
+    "kas": 33361221315.0,
+    "piutang_usaha": 85198493812.0,
+    "persediaan": 83057662456.0,
+    "aset_tetap": 106806519956.0,
+    "liabilitas": 131172365187.0,
+    "liabilitas_jangka_pendek": 106738230001.0,
+    "utang_usaha": 85198493812.0,
+    "utang_bank": 3025467690.0,
+    "ekuitas": 204433365383.0,
+    "ekuitas_induk": 204433365383.0,
+    "modal_saham": null,
+    "saldo_laba": 92669932166.0
+  },
+  "laba_rugi": {
+    "pendapatan": 133720842719.0,
+    "beban_pokok": 103242294807.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 22596316204.0,
+    "beban_pajak": -4265909780.0,
+    "laba_bersih": 18330406424.0,
+    "laba_induk": 18330406424.0,
+    "eps_basic": 16.97,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12209421758.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

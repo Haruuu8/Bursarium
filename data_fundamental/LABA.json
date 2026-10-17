@@ -1,0 +1,146 @@
+{
+  "kode": "LABA",
+  "nama": "PT Green Power Group Tbk",
+  "periode_terbaru": "2025-tw3",
+  "update": "2026-10-09 18:48",
+  "neraca": {
+    "aset": 157491690330.0,
+    "aset_lancar": 58763500851.0,
+    "aset_tidak_lancar": 98728189479.0,
+    "kas": 975627705.0,
+    "piutang_usaha": 18757440146.0,
+    "persediaan": 16113129672.0,
+    "aset_tetap": 31988337471.0,
+    "investasi": 57141638800.0,
+    "properti_investasi": null,
+    "goodwill": 163716250.0,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 39894460065.0,
+    "liabilitas_jangka_pendek": 26089157430.0,
+    "liabilitas_jangka_panjang": 13805302635.0,
+    "utang_usaha": 18757440146.0,
+    "utang_bank": 854899866.0,
+    "ekuitas": 110610334581.0,
+    "ekuitas_induk": 110610334581.0,
+    "ekuitas_non_pengendali": 6986895684.0,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 30077819125.0,
+    "saldo_laba": 300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 31301224311.0,
+    "beban_pokok": 12191463084.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "beban_bunga": null,
+    "laba_sebelum_pajak": 6510777714.0,
+    "beban_pajak": null,
+    "laba_bersih": 3485936627.0,
+    "laba_induk": 3485936627.0,
+    "laba_komprehensif": null,
+    "eps_basic": 2.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 19039700.0,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": 0.031515469510195245,
+    "roa": 0.022134098755913708,
+    "der": 0.3606757019235419,
+    "dar": 0.25331152381060357,
+    "current_ratio": 2.252410834219877,
+    "margin_laba_bersih": 0.11136742104285545,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": null,
+    "quick_ratio": 1.634792970736426
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1558907865.0,
+      "2025-Q1": 8743412670.0,
+      "2025-Q3": 31301224311.0,
+      "2026-Q1": 3361698340.0
+    },
+    "eps": {
+      "2024-Q1": -1.32,
+      "2025-Q1": 2.0,
+      "2025-Q3": 2.0,
+      "2026-Q1": 6.0
+    },
+    "net_income": {
+      "2024-Q1": -1168442649.0,
+      "2025-Q1": -1040286452.0,
+      "2025-Q3": 3485936627.0,
+      "2026-Q1": 4531668048.0
+    },
+    "aset": {
+      "2024-Q1": 57983627929.0,
+      "2025-Q1": 93583117184.0,
+      "2025-Q3": 157491690330.0,
+      "2026-Q1": 156944532891.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -5.0,
+      "2024": -8.0,
+      "2025": 17.0
+    },
+    "revenue": {
+      "2022": 15642947889.0,
+      "2024": 21620176329.0,
+      "2025": 31194886294.0
+    },
+    "net_income": {
+      "2022": -4544715678.0,
+      "2024": -9181509334.0,
+      "2025": 19260030158.0
+    },
+    "ekuitas": {
+      "2022": 58648514927.0,
+      "2024": 59317779354.0,
+      "2025": 79025714958.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": 3.9854815,
+    "pb": 1.3302927,
+    "ps": 4.741247,
+    "roe": 0.26572,
+    "eps": 28.1,
+    "de": 0.006840000000000001,
+    "margin_net": 0.90085,
+    "current_ratio": 9.711,
+    "roa": -0.07108,
+    "bv": 84.19,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "statistik": {
+    "market_cap": 123581079552,
+    "enterprise_value": 68918689792,
+    "shares_outstanding": 1103402553,
+    "free_float_pct": 62.00899999186426
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3317,
+    "vol_trend": 0.309,
+    "price_chg_20d": -9.68
+  },
+  "harga": 112.0,
+  "sektor": "Basic Materials",
+  "industri": "Steel",
+  "update_bv": "2026-10-11 17:37"
+}

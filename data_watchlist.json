@@ -1,0 +1,250 @@
+{
+  "CSMI": {
+    "tanggal_tambah": "2026-10-01",
+    "harga_entry": 290.0,
+    "match": "A",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "AIMS": {
+    "tanggal_tambah": "2026-10-01",
+    "harga_entry": 705.0,
+    "match": "AB",
+    "strength": 2,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "CCSI": {
+    "tanggal_tambah": "2026-10-01",
+    "harga_entry": 470.0,
+    "match": "A",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "MBSS": {
+    "tanggal_tambah": "2026-10-02",
+    "harga_entry": 3630.0,
+    "match": "AB",
+    "strength": 2,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "SMAR": {
+    "tanggal_tambah": "2026-10-02",
+    "harga_entry": 8500.0,
+    "match": "AB",
+    "strength": 2,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "ROCK": {
+    "tanggal_tambah": "2026-10-02",
+    "harga_entry": 2960.0,
+    "match": "AB",
+    "strength": 2,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "PGLI": {
+    "tanggal_tambah": "2026-10-02",
+    "harga_entry": 266.0,
+    "match": "A",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "PKPK": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 6800.0,
+    "match": "A",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "MITI": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 350.0,
+    "match": "AB",
+    "strength": 2,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "KDTN": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 530.0,
+    "match": "AB",
+    "strength": 2,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "PPRI": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 186.0,
+    "match": "B",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "STRK": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 61.0,
+    "match": "B",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "SOTS": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 630.0,
+    "match": "B",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "IFSH": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 1655.0,
+    "match": "A",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "SEMA": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 470.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_union_2026-10-05.csv"
+  },
+  "SAMF": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 360.0,
+    "match": "",
+    "strength": 0,
+    "rating": 0.0,
+    "source": "csv_kandidat_final_2026-10-05.csv"
+  },
+  "UVCR": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 266.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_union_2026-10-05.csv"
+  },
+  "UNIQ": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 138.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_union_2026-10-05.csv"
+  },
+  "MPXL": {
+    "tanggal_tambah": "2026-10-05",
+    "harga_entry": 260.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_union_2026-10-05.csv"
+  },
+  "POLA": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 110.0,
+    "match": "A",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "IATA": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 115.0,
+    "match": "B",
+    "strength": 1,
+    "rating": 0,
+    "source": "excel_review_harian"
+  },
+  "SRSN": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 143.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_combined_2026-10-06.csv"
+  },
+  "MUTU": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 136.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_combined_2026-10-06.csv"
+  },
+  "SMLE": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 308.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_combined_2026-10-06.csv"
+  },
+  "MPIX": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 224.0,
+    "match": "T",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_combined_2026-10-06.csv"
+  },
+  "DEWI": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 260.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_combined_2026-10-06.csv"
+  },
+  "DEFI": {
+    "tanggal_tambah": "2026-10-06",
+    "harga_entry": 91.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 0.0,
+    "source": "csv_kandidat_combined_2026-10-06.csv"
+  },
+  "BDKR": {
+    "tanggal_tambah": "2026-10-07",
+    "harga_entry": 210.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 58.2,
+    "source": "csv_kandidat_rated_2026-10-07.csv"
+  },
+  "TRIN": {
+    "tanggal_tambah": "2026-10-07",
+    "harga_entry": 290.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 54.8,
+    "source": "csv_kandidat_rated_2026-10-07.csv"
+  },
+  "WAPO": {
+    "tanggal_tambah": "2026-10-07",
+    "harga_entry": 326.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 54.0,
+    "source": "csv_kandidat_rated_2026-10-07.csv"
+  },
+  "BRRC": {
+    "tanggal_tambah": "2026-10-07",
+    "harga_entry": 54.0,
+    "match": "V",
+    "strength": 1,
+    "rating": 52.8,
+    "source": "csv_kandidat_rated_2026-10-07.csv"
+  }
+}

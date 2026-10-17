@@ -1,0 +1,153 @@
+{
+  "kode": "ARCI",
+  "nama": "PT Archi Indonesia Tbk",
+  "periode_terbaru": "2025-tw3",
+  "update": "2026-10-09 18:48",
+  "neraca": {
+    "aset": 953183000.0,
+    "aset_lancar": 131084357.0,
+    "aset_tidak_lancar": 822098643.0,
+    "kas": 23423976.0,
+    "piutang_usaha": 655312.0,
+    "persediaan": 74982089.0,
+    "aset_tetap": 154186752.0,
+    "investasi": 7466316.0,
+    "properti_investasi": null,
+    "goodwill": null,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 609229110.0,
+    "liabilitas_jangka_pendek": 246104669.0,
+    "liabilitas_jangka_panjang": 363124441.0,
+    "utang_usaha": 655312.0,
+    "utang_bank": 45179856.0,
+    "ekuitas": 343298878.0,
+    "ekuitas_induk": 343298878.0,
+    "ekuitas_non_pengendali": 655012.0,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 95790451.0,
+    "saldo_laba": 300000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 328700461.0,
+    "beban_pokok": 185896628.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "beban_bunga": 26391649.0,
+    "laba_sebelum_pajak": 113532999.0,
+    "beban_pajak": -42440153.0,
+    "laba_bersih": 70477695.0,
+    "laba_induk": 70477695.0,
+    "laba_komprehensif": null,
+    "eps_basic": 0.0028,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 30431091.0,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": 0.20529544229969782,
+    "roa": 0.0739393117586025,
+    "der": 1.774631812225148,
+    "dar": 0.639152303387702,
+    "current_ratio": 0.532636611619912,
+    "margin_laba_bersih": 0.2144131309873642,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": null,
+    "quick_ratio": 0.22796100629850302
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 57011517.0,
+      "2024-Q2": 142851713.0,
+      "2024-Q4": 287618877.0,
+      "2025-Q1": 90777245.0,
+      "2025-Q2": 192550716.0,
+      "2025-Q3": 328700461.0,
+      "2025-Q4": 496229823.0,
+      "2026-Q2": 322288365.0
+    },
+    "eps": {
+      "2025-Q2": 0.0014,
+      "2025-Q3": 0.0028,
+      "2025-Q4": 0.0041,
+      "2026-Q2": 0.0032
+    },
+    "net_income": {
+      "2024-Q1": -4183763.0,
+      "2024-Q2": -3887553.0,
+      "2024-Q4": 10457653.0,
+      "2025-Q1": 10284956.0,
+      "2025-Q2": 34871935.0,
+      "2025-Q3": 70477695.0,
+      "2025-Q4": 101821019.0,
+      "2026-Q2": 80251426.0
+    },
+    "aset": {
+      "2024-Q1": 812873628.0,
+      "2024-Q2": 822344253.0,
+      "2024-Q4": 865399797.0,
+      "2025-Q1": 881580844.0,
+      "2025-Q2": 898178209.0,
+      "2025-Q3": 953183000.0,
+      "2025-Q4": 1026763377.0,
+      "2026-Q2": 1074611806.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 0.0031
+    },
+    "revenue": {
+      "2022": 216476272.0,
+      "2024": 287618877.0
+    },
+    "net_income": {
+      "2022": 14550684.0,
+      "2024": 10457653.0
+    },
+    "ekuitas": {
+      "2022": 247837925.0,
+      "2024": 272906015.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": 13.257384,
+    "pb": 82187.5,
+    "ps": 53002.293,
+    "roe": 0.41327998,
+    "eps": 99.19,
+    "de": 1.1882599999999999,
+    "margin_net": 0.23575,
+    "current_ratio": 1.008,
+    "roa": 0.17194,
+    "bv": 0.02,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2022-audit"
+  },
+  "statistik": {
+    "market_cap": 33184024625152,
+    "enterprise_value": 33184496484352,
+    "shares_outstanding": 25235000000,
+    "free_float_pct": 15.879999999999999
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1,
+    "vol_trend": 0.452,
+    "price_chg_20d": 0.0
+  },
+  "harga": 1315.0,
+  "sektor": "Basic Materials",
+  "industri": "Gold",
+  "update_bv": "2026-10-11 17:37"
+}

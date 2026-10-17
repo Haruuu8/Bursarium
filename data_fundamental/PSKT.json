@@ -1,0 +1,125 @@
+{
+  "kode": "PSKT",
+  "nama": "PT Red Planet Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 216.0,
+  "update": "2026-10-11 14:44",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 7.041335,
+    "ps": 43.199764,
+    "roe": -0.01407070281560594,
+    "eps": null,
+    "de": 0.1393699074976084,
+    "margin_net": -0.18288400637539878,
+    "current_ratio": 1.1119778465649288,
+    "roa": -0.012350095456456222,
+    "bv": 30.68,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 24112083417.0,
+      "2024-Q3": 39326972926.0,
+      "2024-Q4": 55102991673.0,
+      "2025-Q1": 11453863062.0,
+      "2025-Q2": 25020707003.0,
+      "2025-Q3": 37690808456.0,
+      "2025-Q4": 52346637376.0,
+      "2026-Q1": 11372863003.0,
+      "2026-Q2": 24430511916.0
+    },
+    "eps": {
+      "2024-Q2": -560000.0,
+      "2024-Q3": -540000.0,
+      "2024-Q4": -680000.0,
+      "2025-Q1": -280000.0,
+      "2025-Q2": -560000.0,
+      "2025-Q3": -770000.0,
+      "2025-Q4": -1.22,
+      "2026-Q1": -190000.0,
+      "2026-Q2": -430000.0
+    },
+    "net_income": {
+      "2024-Q2": -5778158689.0,
+      "2024-Q3": -5560120252.0,
+      "2024-Q4": -7013333058.0,
+      "2025-Q1": -2947687409.0,
+      "2025-Q2": -5768315448.0,
+      "2025-Q3": -7962470062.0,
+      "2025-Q4": -12639726289.0,
+      "2026-Q1": -2007149400.0,
+      "2026-Q2": -4467949897.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -720000.0,
+      "2023": -1.03,
+      "2024": -680000.0,
+      "2025": -1.22
+    },
+    "revenue_per_share": {
+      "2022": 58868549821.0,
+      "2023": 54335550562.0,
+      "2024": 55102991673.0,
+      "2025": 52346637376.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2235866021888,
+    "enterprise_value": 2216694906880,
+    "shares_outstanding": 10351231636,
+    "free_float_pct": 19.82200000108277
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1024,
+    "vol_trend": 0.347,
+    "price_chg_20d": -10.74
+  },
+  "neraca": {
+    "aset": 361774523343.0,
+    "aset_lancar": 23167718933.0,
+    "kas": 19155201199.0,
+    "piutang_usaha": 1637923144.0,
+    "persediaan": 67579535.0,
+    "aset_tetap": 337101266354.0,
+    "liabilitas": 44254915480.0,
+    "liabilitas_jangka_pendek": 20834694688.0,
+    "utang_usaha": 1637923144.0,
+    "utang_bank": 3973550657.0,
+    "ekuitas": 317535659416.0,
+    "ekuitas_induk": 317535659416.0,
+    "modal_saham": null,
+    "saldo_laba": -344090464718.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24430511916.0,
+    "beban_pokok": 11292909097.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4237065449.0,
+    "beban_pajak": -230388403.0,
+    "laba_bersih": -4467949897.0,
+    "laba_induk": -4467949897.0,
+    "eps_basic": -430000.0,
+    "eps_diluted": -430000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3398161727.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

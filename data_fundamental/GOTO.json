@@ -1,0 +1,119 @@
+{
+  "kode": "GOTO",
+  "nama": "PT GoTo Gojek Tokopedia Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Infrastructure",
+  "harga": 30.0,
+  "update": "2026-10-11 11:11",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.9871993,
+    "ps": 1.5407993,
+    "roe": 0.018751064312288276,
+    "eps": null,
+    "de": 0.5709016333607334,
+    "margin_net": 0.05525602656621776,
+    "current_ratio": 2.6097148869698725,
+    "roa": 0.01279552492475646,
+    "bv": 30.39,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2026-tw2"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 7737412.0,
+      "2024-Q3": 11662578.0,
+      "2025-Q1": 4230634.0,
+      "2025-Q2": 8558969.0,
+      "2025-Q3": 13295481.0,
+      "2026-Q1": 5341314.0,
+      "2026-Q2": 10994113.0
+    },
+    "eps": {
+      "2024-Q2": -3.0,
+      "2024-Q3": -4.0,
+      "2025-Q1": -270000.0,
+      "2025-Q2": 550000.0,
+      "2025-Q3": -730000.0,
+      "2026-Q1": 240000.0,
+      "2026-Q2": 570000.0
+    },
+    "net_income": {
+      "2024-Q2": -2699585.0,
+      "2024-Q3": -4313147.0,
+      "2025-Q1": -283328.0,
+      "2025-Q2": -580013.0,
+      "2025-Q3": -775550.0,
+      "2026-Q1": 257943.0,
+      "2026-Q2": 607491.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -39.0,
+      "2023": -85.0,
+      "2024": -5.0,
+      "2025": -1.12
+    },
+    "revenue_per_share": {
+      "2022": 11349167.0,
+      "2023": 14785492.0,
+      "2024": 15894462.0,
+      "2025": 18322117.0
+    }
+  },
+  "statistik": {
+    "market_cap": 31982771765248,
+    "enterprise_value": 13107051102208,
+    "shares_outstanding": 1066092420829,
+    "free_float_pct": 76.95199999996885
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.4467,
+    "vol_trend": 683.959,
+    "price_chg_20d": -40.0
+  },
+  "neraca": {
+    "aset": 47476833.0,
+    "aset_lancar": 31221418.0,
+    "kas": 23464625.0,
+    "piutang_usaha": 325496.0,
+    "persediaan": 11723.0,
+    "aset_tetap": 696469.0,
+    "liabilitas": 18495889.0,
+    "liabilitas_jangka_pendek": 11963536.0,
+    "utang_usaha": 325496.0,
+    "utang_bank": 1151389.0,
+    "ekuitas": 32397681.0,
+    "ekuitas_induk": 32397681.0,
+    "modal_saham": null,
+    "saldo_laba": -214737614.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10994113.0,
+    "beban_pokok": 4192326.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 691250.0,
+    "beban_pajak": -268000.0,
+    "laba_bersih": 607491.0,
+    "laba_induk": 607491.0,
+    "eps_basic": 570000.0,
+    "eps_diluted": 550000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 135733.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

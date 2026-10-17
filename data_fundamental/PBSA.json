@@ -1,0 +1,128 @@
+{
+  "kode": "PBSA",
+  "nama": "PT Paramita Bangun Sarana Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 855.0,
+  "update": "2026-10-11 15:37",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.248112,
+    "pb": 3.3689668,
+    "ps": 1.4056209,
+    "roe": 0.03575618828701193,
+    "eps": 83.43,
+    "de": 0.9414727386644381,
+    "margin_net": 0.029073534065222364,
+    "current_ratio": 1.7642853670088932,
+    "roa": 0.01840436264593892,
+    "bv": 253.79,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 138480347557.0,
+      "2024-Q2": 320325048404.0,
+      "2024-Q3": 710629416455.0,
+      "2024-Q4": 1154289864419.0,
+      "2025-Q1": 279640282283.0,
+      "2025-Q2": 707261801675.0,
+      "2025-Q3": 1022744563327.0,
+      "2025-Q4": 1591238558757.0,
+      "2026-Q1": 410568716250.0,
+      "2026-Q2": 931646197199.0
+    },
+    "eps": {
+      "2024-Q1": 8.94,
+      "2024-Q2": 14.95,
+      "2024-Q3": 46.42,
+      "2024-Q4": 71.53,
+      "2025-Q1": 8.58,
+      "2025-Q2": 32.23382,
+      "2025-Q3": 52.32295,
+      "2025-Q4": 106.61,
+      "2026-Q1": 470000.0,
+      "2026-Q2": 9.05
+    },
+    "net_income": {
+      "2024-Q1": 26824017068.0,
+      "2024-Q2": 44841618529.0,
+      "2024-Q3": 139265910525.0,
+      "2024-Q4": 214603231811.0,
+      "2025-Q1": 25738867284.0,
+      "2025-Q2": 96701458021.0,
+      "2025-Q3": 156968859853.0,
+      "2025-Q4": 319816195633.0,
+      "2026-Q1": 1405452677.0,
+      "2026-Q2": 27086247451.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 44.56,
+      "2023": 64.28,
+      "2024": 71.53,
+      "2025": 106.61
+    },
+    "revenue_per_share": {
+      "2022": 731846535897.0,
+      "2023": 572763446107.0,
+      "2024": 1154289864419.0,
+      "2025": 1591238558757.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2552077746176,
+    "enterprise_value": 2262861086720,
+    "shares_outstanding": 2984886300,
+    "free_float_pct": 15.281999987738226
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.191,
+    "vol_trend": 1.015,
+    "price_chg_20d": 14.0
+  },
+  "neraca": {
+    "aset": 1471729718224.0,
+    "aset_lancar": 1236869051732.0,
+    "kas": 192319687150.0,
+    "piutang_usaha": 232624126570.0,
+    "persediaan": 46921285834.0,
+    "aset_tetap": 128426673769.0,
+    "liabilitas": 713190213765.0,
+    "liabilitas_jangka_pendek": 701059519543.0,
+    "utang_usaha": 232624126570.0,
+    "utang_bank": null,
+    "ekuitas": 757526144386.0,
+    "ekuitas_induk": 757526144386.0,
+    "modal_saham": null,
+    "saldo_laba": 30000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 931646197199.0,
+    "beban_pokok": 753040252669.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 45444324444.0,
+    "beban_pajak": -18090383777.0,
+    "laba_bersih": 27086247451.0,
+    "laba_induk": 27086247451.0,
+    "eps_basic": 9.05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13753268944.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

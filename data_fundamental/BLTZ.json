@@ -1,0 +1,125 @@
+{
+  "kode": "BLTZ",
+  "nama": "PT Graha Layar Prima Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 3800.0,
+  "update": "2026-10-11 12:51",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 48.101265,
+    "pb": 7.7994156,
+    "ps": 2.5963895,
+    "roe": -0.0584644129618367,
+    "eps": 79.0,
+    "de": 3.1576172739841573,
+    "margin_net": -0.11630152382853082,
+    "current_ratio": null,
+    "roa": -0.014061635509900897,
+    "bv": 487.22,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 265101338.0,
+      "2024-Q2": 617607221.0,
+      "2024-Q3": 893977335.0,
+      "2024-Q4": 1173236505.0,
+      "2025-Q1": 192894630.0,
+      "2025-Q2": 614765592.0,
+      "2025-Q3": 922257694.0,
+      "2025-Q4": 1257917268.0,
+      "2026-Q1": 214046327.0
+    },
+    "eps": {
+      "2024-Q1": -10000.0,
+      "2024-Q2": 110000.0,
+      "2024-Q3": 13000.0,
+      "2024-Q4": -82.0,
+      "2025-Q1": -370.0,
+      "2025-Q2": 290.0,
+      "2025-Q3": 330000.0,
+      "2025-Q4": 70000.0,
+      "2026-Q1": -280.0
+    },
+    "net_income": {
+      "2024-Q1": -8848443.0,
+      "2024-Q2": 9869932.0,
+      "2024-Q3": 11500526.0,
+      "2024-Q4": -71273289.0,
+      "2025-Q1": -32607671.0,
+      "2025-Q2": 25214617.0,
+      "2025-Q3": 28735847.0,
+      "2025-Q4": 60837716.0,
+      "2026-Q1": -24893914.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -67.0,
+      "2023": -16.0,
+      "2024": -82.0,
+      "2025": 70000.0
+    },
+    "revenue_per_share": {
+      "2022": 1058368091.0,
+      "2023": 1061479214.0,
+      "2024": 1173236505.0,
+      "2025": 1257917268.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3320961302528,
+    "enterprise_value": 4308307279872,
+    "shares_outstanding": 546709542,
+    "free_float_pct": 14.254182342403674
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2902,
+    "vol_trend": 117.75,
+    "price_chg_20d": 90.0
+  },
+  "neraca": {
+    "aset": 1770342716.0,
+    "aset_lancar": null,
+    "kas": 133435592.0,
+    "piutang_usaha": 40373200.0,
+    "persediaan": 18941068.0,
+    "aset_tetap": 1405085944.0,
+    "liabilitas": 1344500849.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": 40373200.0,
+    "utang_bank": 404000000.0,
+    "ekuitas": 425796014.0,
+    "ekuitas_induk": 425796014.0,
+    "modal_saham": null,
+    "saldo_laba": -1294430575.0
+  },
+  "laba_rugi": {
+    "pendapatan": 214046327.0,
+    "beban_pokok": 134267704.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -29884203.0,
+    "beban_pajak": 4990624.0,
+    "laba_bersih": -24893914.0,
+    "laba_induk": -24893914.0,
+    "eps_basic": -280.0,
+    "eps_diluted": -280.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5323459.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

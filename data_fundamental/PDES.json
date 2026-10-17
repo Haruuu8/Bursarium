@@ -1,0 +1,125 @@
+{
+  "kode": "PDES",
+  "nama": "PT Destinasi Tirta Nusantara Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 374.0,
+  "update": "2026-10-11 14:39",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.4685493,
+    "ps": 0.4303666,
+    "roe": 0.09799266635591151,
+    "eps": 29.69,
+    "de": 1.8901013579878998,
+    "margin_net": 0.03685316701428388,
+    "current_ratio": 1.8695515629341615,
+    "roa": 0.031804588777887076,
+    "bv": 151.51,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 109678766068.0,
+      "2024-Q2": 183654996456.0,
+      "2024-Q4": 446794423246.0,
+      "2025-Q1": 152851664881.0,
+      "2025-Q2": 246380722068.0,
+      "2025-Q3": 383027739097.0,
+      "2025-Q4": 579692988148.0,
+      "2026-Q1": 205839213490.0,
+      "2026-Q2": 288041713861.0
+    },
+    "eps": {
+      "2024-Q1": 2.3111973804195802,
+      "2024-Q2": 4.8,
+      "2024-Q4": 13.65,
+      "2025-Q1": 5.05,
+      "2025-Q2": 14.01,
+      "2025-Q3": 28.81,
+      "2025-Q4": 39.75,
+      "2026-Q1": 10.0,
+      "2026-Q2": 15.0
+    },
+    "net_income": {
+      "2024-Q1": 1652506127.0,
+      "2024-Q2": 3435365568.0,
+      "2024-Q4": 9761009761.0,
+      "2025-Q1": 3609046246.0,
+      "2025-Q2": 10014235644.0,
+      "2025-Q3": 20599082821.0,
+      "2025-Q4": 28423779333.0,
+      "2026-Q1": 7015194235.0,
+      "2026-Q2": 10615249388.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -3.2051604209790208,
+      "2023": 33.42,
+      "2024": 13.65,
+      "2025": 39.75
+    },
+    "revenue_per_share": {
+      "2022": 150812404962.0,
+      "2023": 368511772648.0,
+      "2024": 446794423246.0,
+      "2025": 579692988148.0
+    }
+  },
+  "statistik": {
+    "market_cap": 267409997824,
+    "enterprise_value": 366926757888,
+    "shares_outstanding": 715000000,
+    "free_float_pct": 17.071
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.5762,
+    "vol_trend": 0.306,
+    "price_chg_20d": -2.6
+  },
+  "neraca": {
+    "aset": 333764711191.0,
+    "aset_lancar": 181733803831.0,
+    "kas": 77529424592.0,
+    "piutang_usaha": 17772494273.0,
+    "persediaan": null,
+    "aset_tetap": 213424317.0,
+    "liabilitas": 204748967752.0,
+    "liabilitas_jangka_pendek": 97207163169.0,
+    "utang_usaha": 17772494273.0,
+    "utang_bank": 47084545503.0,
+    "ekuitas": 108326977750.0,
+    "ekuitas_induk": 108326977750.0,
+    "modal_saham": null,
+    "saldo_laba": 200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 288041713861.0,
+    "beban_pokok": 236546139763.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 21814682937.0,
+    "beban_pajak": -4450748644.0,
+    "laba_bersih": 10615249388.0,
+    "laba_induk": 10615249388.0,
+    "eps_basic": 15.0,
+    "eps_diluted": 15.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 213424317.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

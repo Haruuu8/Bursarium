@@ -1,0 +1,125 @@
+{
+  "kode": "ARTA",
+  "nama": "PT Arthavest Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 1750.0,
+  "update": "2026-10-11 12:32",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 5.41628,
+    "ps": 11.257641,
+    "roe": -0.03678243915058558,
+    "eps": 28.97,
+    "de": 0.04453119133193236,
+    "margin_net": -0.2009845482885014,
+    "current_ratio": 2.7259229904563704,
+    "roa": -0.021036643153835622,
+    "bv": 323.1,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 40925434498.0,
+      "2024-Q3": 74236943797.0,
+      "2024-Q4": 105155474541.0,
+      "2025-Q1": 13524394764.0,
+      "2025-Q2": 28408637566.0,
+      "2025-Q3": 47376075390.0,
+      "2025-Q4": 71431887603.0,
+      "2026-Q1": 11203785846.0,
+      "2026-Q2": 26412239708.0
+    },
+    "eps": {
+      "2024-Q2": 2.0,
+      "2024-Q3": 10.0,
+      "2024-Q4": 28.97,
+      "2025-Q1": -12.64,
+      "2025-Q2": -16.07,
+      "2025-Q3": -17.68,
+      "2025-Q4": -13.01,
+      "2026-Q1": -7.3,
+      "2026-Q2": 11.88
+    },
+    "net_income": {
+      "2024-Q2": 1030216965.0,
+      "2024-Q3": 4483857196.0,
+      "2024-Q4": 12940816786.0,
+      "2025-Q1": -5644951632.0,
+      "2025-Q2": -7180083347.0,
+      "2025-Q3": -7898769834.0,
+      "2025-Q4": -5809944595.0,
+      "2026-Q1": -3262628463.0,
+      "2026-Q2": -5308452067.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 3.0,
+      "2023": 3.0,
+      "2024": 28.97,
+      "2025": -13.01
+    },
+    "revenue_per_share": {
+      "2022": 57846064984.0,
+      "2023": 77749462830.0,
+      "2024": 105155474541.0,
+      "2025": 71431887603.0
+    }
+  },
+  "statistik": {
+    "market_cap": 781679788032,
+    "enterprise_value": 874637885440,
+    "shares_outstanding": 446674175,
+    "free_float_pct": 15.782999990988959
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4066,
+    "vol_trend": 9.946,
+    "price_chg_20d": -21.88
+  },
+  "neraca": {
+    "aset": 252343115210.0,
+    "aset_lancar": 14377082115.0,
+    "kas": 8637989452.0,
+    "piutang_usaha": 1408542921.0,
+    "persediaan": 1383819234.0,
+    "aset_tetap": 809500549.0,
+    "liabilitas": 6426754183.0,
+    "liabilitas_jangka_pendek": 5274206999.0,
+    "utang_usaha": 1408542921.0,
+    "utang_bank": null,
+    "ekuitas": 144320284070.0,
+    "ekuitas_induk": 144320284070.0,
+    "modal_saham": null,
+    "saldo_laba": 900000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 26412239708.0,
+    "beban_pokok": 8542438150.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9951067169.0,
+    "beban_pajak": 29650778.0,
+    "laba_bersih": -5308452067.0,
+    "laba_induk": -5308452067.0,
+    "eps_basic": 11.88,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 809500549.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

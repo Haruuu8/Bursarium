@@ -1,0 +1,128 @@
+{
+  "kode": "PDPP",
+  "nama": "PT Primadaya Plastisindo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 322.0,
+  "update": "2026-10-11 11:30",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.867356,
+    "pb": 2.08363,
+    "ps": 1.43898,
+    "roe": 0.09812933130197847,
+    "eps": 23.22,
+    "de": 0.5144409103577554,
+    "margin_net": 0.12502931671292442,
+    "current_ratio": 1.482085179409115,
+    "roa": 0.06479574781085215,
+    "bv": 154.54,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 127843081441.0,
+      "2024-Q2": 221142324530.0,
+      "2024-Q3": 327099450519.0,
+      "2024-Q4": 420551076256.0,
+      "2025-Q1": 106075442240.0,
+      "2025-Q2": 232732924457.0,
+      "2025-Q3": 387298988556.0,
+      "2025-Q4": 546459899632.0,
+      "2026-Q1": 166038885841.0,
+      "2026-Q2": 371308233057.0
+    },
+    "eps": {
+      "2024-Q1": 2.69,
+      "2024-Q2": 4.51,
+      "2024-Q3": 5.93,
+      "2024-Q4": 7.79,
+      "2025-Q1": 160000.0,
+      "2025-Q2": 3.23,
+      "2025-Q3": 8.6,
+      "2025-Q4": 11.29,
+      "2026-Q1": 2.5,
+      "2026-Q2": 15.16
+    },
+    "net_income": {
+      "2024-Q1": 8248117153.0,
+      "2024-Q2": 13803339991.0,
+      "2024-Q3": 18164382042.0,
+      "2024-Q4": 23836978048.0,
+      "2025-Q1": 495115663.0,
+      "2025-Q2": 9886647324.0,
+      "2025-Q3": 26337783913.0,
+      "2025-Q4": 34562284733.0,
+      "2026-Q1": 7656889490.0,
+      "2026-Q2": 46424414669.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 9.94,
+      "2023": 11.1,
+      "2024": 7.79,
+      "2025": 11.29
+    },
+    "revenue_per_share": {
+      "2022": 339197903920.0,
+      "2023": 439902625251.0,
+      "2024": 420551076256.0,
+      "2025": 546459899632.0
+    }
+  },
+  "statistik": {
+    "market_cap": 985751945216,
+    "enterprise_value": 1116749299712,
+    "shares_outstanding": 3061341438,
+    "free_float_pct": 15.000000009799624
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3747,
+    "vol_trend": 0.626,
+    "price_chg_20d": -4.73
+  },
+  "neraca": {
+    "aset": 716473167414.0,
+    "aset_lancar": 288782876358.0,
+    "kas": 40663081107.0,
+    "piutang_usaha": 149457021937.0,
+    "persediaan": 88216420240.0,
+    "aset_tetap": 14356056925.0,
+    "liabilitas": 243378996150.0,
+    "liabilitas_jangka_pendek": 194849041317.0,
+    "utang_usaha": 149457021937.0,
+    "utang_bank": 100847113463.0,
+    "ekuitas": 473094171264.0,
+    "ekuitas_induk": 473094171264.0,
+    "modal_saham": null,
+    "saldo_laba": 35000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 371308233057.0,
+    "beban_pokok": 285045022443.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 59842519123.0,
+    "beban_pajak": -13418104454.0,
+    "laba_bersih": 46424414669.0,
+    "laba_induk": 46424414669.0,
+    "eps_basic": 15.16,
+    "eps_diluted": 15.16
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14356056925.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,123 @@
+{
+  "kode": "HALO",
+  "nama": "PT Haloni Jane Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 67.0,
+  "update": "2026-10-11 11:36",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.6535044,
+    "ps": 1.9270164,
+    "roe": 0.038002407698686715,
+    "eps": 3.08,
+    "de": 0.3349663969932194,
+    "margin_net": 0.0992501372296844,
+    "current_ratio": 4.885542915286272,
+    "roa": 0.02846693953067325,
+    "bv": 40.52,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 30565422800.0,
+      "2024-Q2": 68149539500.0,
+      "2024-Q4": 176596813732.0,
+      "2025-Q1": 51111075749.0,
+      "2025-Q2": 100459256754.0,
+      "2025-Q3": 157991001177.0,
+      "2025-Q4": 217498775850.0,
+      "2026-Q1": 41233332097.0,
+      "2026-Q2": 94310438789.0
+    },
+    "eps": {
+      "2024-Q1": 60000.0,
+      "2024-Q2": 210000.0,
+      "2024-Q4": 1.44,
+      "2025-Q1": 959599.7265058906,
+      "2025-Q2": 650000.0,
+      "2025-Q3": 1.4,
+      "2025-Q4": 1.89,
+      "2026-Q1": 100000.0,
+      "2026-Q2": 1.54
+    },
+    "net_income": {
+      "2024-Q1": 358273242.0,
+      "2024-Q2": 1134456916.0,
+      "2024-Q4": -8157541030.0,
+      "2025-Q1": 5421756287.0,
+      "2025-Q2": 3653125215.0,
+      "2025-Q3": 7884990245.0,
+      "2025-Q4": 10745410625.0,
+      "2026-Q1": 591005510.0,
+      "2026-Q2": 9360323992.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 3.07,
+      "2024": 1.44,
+      "2025": 1.89
+    },
+    "revenue_per_share": {
+      "2023": 231087960926.0,
+      "2024": 176596813732.0,
+      "2025": 217498775850.0
+    }
+  },
+  "statistik": {
+    "market_cap": 407274848256,
+    "enterprise_value": 345422954496,
+    "shares_outstanding": 6078729117,
+    "free_float_pct": 12.41199999996644
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2886,
+    "vol_trend": 0.315,
+    "price_chg_20d": -9.46
+  },
+  "neraca": {
+    "aset": 328813850253.0,
+    "aset_lancar": 203927247062.0,
+    "kas": 61974618385.0,
+    "piutang_usaha": 7504514219.0,
+    "persediaan": 83680118031.0,
+    "aset_tetap": 115817096112.0,
+    "liabilitas": 82505140915.0,
+    "liabilitas_jangka_pendek": 41740959111.0,
+    "utang_usaha": 7504514219.0,
+    "utang_bank": null,
+    "ekuitas": 246308709338.0,
+    "ekuitas_induk": 246308709338.0,
+    "modal_saham": null,
+    "saldo_laba": -26306891115.0
+  },
+  "laba_rugi": {
+    "pendapatan": 94310438789.0,
+    "beban_pokok": 75534583237.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 12261028172.0,
+    "beban_pajak": -2900704180.0,
+    "laba_bersih": 9360323992.0,
+    "laba_induk": 9360323992.0,
+    "eps_basic": 1.54,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 970696077.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

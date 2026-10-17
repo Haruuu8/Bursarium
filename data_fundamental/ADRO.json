@@ -1,0 +1,128 @@
+{
+  "kode": "ADRO",
+  "nama": "PT Alamtri Resources Indonesia Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 2580.0,
+  "update": "2026-10-11 12:21",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.746585,
+    "pb": 16125.0,
+    "ps": 36874.605,
+    "roe": 0.06712277408428115,
+    "eps": 333.05,
+    "de": 0.5809229416693679,
+    "margin_net": 0.30960367958912854,
+    "current_ratio": 2.9181791610902708,
+    "roa": 0.0396378830583217,
+    "bv": 0.16,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1442816.0,
+      "2024-Q2": 2972835.0,
+      "2024-Q3": 4451677.0,
+      "2024-Q4": 2078689.0,
+      "2025-Q1": 381619.0,
+      "2025-Q2": 857690.0,
+      "2025-Q3": 1348178.0,
+      "2025-Q4": 1873528.0,
+      "2026-Q1": 470905.0,
+      "2026-Q2": 999242.0
+    },
+    "eps": {
+      "2024-Q1": 12470.0,
+      "2024-Q2": 25300.0,
+      "2024-Q3": 38440.0,
+      "2024-Q4": 18550.0,
+      "2025-Q1": 2550.0,
+      "2025-Q2": 5870.0,
+      "2025-Q3": 10220.0,
+      "2025-Q4": 15260.0,
+      "2026-Q1": 4450.0,
+      "2026-Q2": 10740.0
+    },
+    "net_income": {
+      "2024-Q1": 374345.0,
+      "2024-Q2": 778773.0,
+      "2024-Q3": 1182928.0,
+      "2024-Q4": 1380013.0,
+      "2025-Q1": 76697.0,
+      "2025-Q2": 174943.0,
+      "2025-Q3": 301590.0,
+      "2025-Q4": 447694.0,
+      "2026-Q1": 128137.0,
+      "2026-Q2": 309369.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 80320.0,
+      "2023": 53090.0,
+      "2024": 18550.0,
+      "2025": 15260.0
+    },
+    "revenue_per_share": {
+      "2022": 8102399.0,
+      "2023": 140416000.0,
+      "2024": 2078689.0,
+      "2025": 1873528.0
+    }
+  },
+  "statistik": {
+    "market_cap": 74305274642432,
+    "enterprise_value": 74306147057664,
+    "shares_outstanding": 28800494200,
+    "free_float_pct": 36.79500000038194
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1515,
+    "vol_trend": 0.794,
+    "price_chg_20d": -2.27
+  },
+  "neraca": {
+    "aset": 7804882.0,
+    "aset_lancar": 2655794.0,
+    "kas": 978223.0,
+    "piutang_usaha": 68630.0,
+    "persediaan": 505126.0,
+    "aset_tetap": 2984332.0,
+    "liabilitas": 2677475.0,
+    "liabilitas_jangka_pendek": 910086.0,
+    "utang_usaha": 68630.0,
+    "utang_bank": 227307.0,
+    "ekuitas": 4609002.0,
+    "ekuitas_induk": 4609002.0,
+    "modal_saham": null,
+    "saldo_laba": 68588.0
+  },
+  "laba_rugi": {
+    "pendapatan": 999242.0,
+    "beban_pokok": 576558.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 415996.0,
+    "beban_pajak": -86801.0,
+    "laba_bersih": 309369.0,
+    "laba_induk": 309369.0,
+    "eps_basic": 10740.0,
+    "eps_diluted": 10740.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33385.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

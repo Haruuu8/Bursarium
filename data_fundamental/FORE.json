@@ -1,0 +1,107 @@
+{
+  "kode": "FORE",
+  "nama": "PT Fore Kopi Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 760.0,
+  "update": "2026-10-11 12:09",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 64.08095,
+    "pb": 9.188065,
+    "ps": 3.684277,
+    "roe": 0.07657492189317033,
+    "eps": 11.86,
+    "de": 0.707179150928853,
+    "margin_net": 0.056211428288455774,
+    "current_ratio": 1.2264354807675744,
+    "roa": 0.044854649174638155,
+    "bv": 82.72,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q2": 662372756900.0,
+      "2025-Q3": 1041752822393.0,
+      "2025-Q4": 1497134772364.0,
+      "2026-Q1": 444458712375.0,
+      "2026-Q2": 1004934782303.0
+    },
+    "eps": {
+      "2025-Q2": 5.58,
+      "2025-Q3": 7.51,
+      "2025-Q4": 10.95,
+      "2026-Q1": 1.06,
+      "2026-Q2": 6.33
+    },
+    "net_income": {
+      "2025-Q2": 42031093163.0,
+      "2025-Q3": 60107182020.0,
+      "2025-Q4": 90133042112.0,
+      "2026-Q1": 9431593245.0,
+      "2026-Q2": 56488819450.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2025": 10.95
+    },
+    "revenue_per_share": {
+      "2025": 1497134772364.0
+    }
+  },
+  "statistik": {
+    "market_cap": 6777952796672,
+    "enterprise_value": 6670186446848,
+    "shares_outstanding": 8918359270,
+    "free_float_pct": 15.078999996374895
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.035,
+    "vol_trend": 0.484,
+    "price_chg_20d": -1.94
+  },
+  "neraca": {
+    "aset": 1259374902924.0,
+    "aset_lancar": 462997911462.0,
+    "kas": 263964211784.0,
+    "piutang_usaha": 12301862580.0,
+    "persediaan": 145786220196.0,
+    "aset_tetap": 7737624982.0,
+    "liabilitas": 521681438100.0,
+    "liabilitas_jangka_pendek": 377515098611.0,
+    "utang_usaha": 12301862580.0,
+    "utang_bank": 9981999011.0,
+    "ekuitas": 737693464824.0,
+    "ekuitas_induk": 737693464824.0,
+    "modal_saham": null,
+    "saldo_laba": -121308031902.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1004934782303.0,
+    "beban_pokok": 382919773796.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 78106960365.0,
+    "beban_pajak": 175962134.0,
+    "laba_bersih": 56488819450.0,
+    "laba_induk": 56488819450.0,
+    "eps_basic": 6.33,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7737624982.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,126 @@
+{
+  "kode": "IKPM",
+  "nama": "PT Ikapharmindo Putramas Tbk",
+  "sektor": "Healthcare",
+  "industri": "Pharmaceutical Retailers",
+  "harga": 184.0,
+  "update": "2026-10-11 11:57",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3986546,
+    "ps": 0.77446246,
+    "roe": 0.013039512857285112,
+    "eps": 2.98,
+    "de": 1.1271913798563014,
+    "margin_net": 0.013623193066726652,
+    "current_ratio": 1.400787854138702,
+    "roa": 0.006129919940802869,
+    "bv": 131.55,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 97345074764.0,
+      "2024-Q2": 195226564265.0,
+      "2024-Q3": 289897049660.0,
+      "2024-Q4": 412069281686.0,
+      "2025-Q1": 90306587617.0,
+      "2025-Q2": 175446652142.0,
+      "2025-Q3": 257098994925.0,
+      "2025-Q4": 363565142222.0,
+      "2026-Q1": 103843218838.0,
+      "2026-Q2": 212130603218.0
+    },
+    "eps": {
+      "2024-Q1": 1.74,
+      "2024-Q2": 2.557516369599252,
+      "2024-Q3": 487061.31702937535,
+      "2024-Q4": 2.97682,
+      "2025-Q1": -842704.1677487331,
+      "2025-Q2": -5.42534402172542,
+      "2025-Q3": -18.967680999606745,
+      "2025-Q4": -17.086307271634528,
+      "2026-Q1": 520823.7845859334,
+      "2026-Q2": 1.71
+    },
+    "net_income": {
+      "2024-Q1": 2923787660.0,
+      "2024-Q2": 4308551921.0,
+      "2024-Q3": 820533936.0,
+      "2024-Q4": 5014949522.0,
+      "2025-Q1": -1419672251.0,
+      "2025-Q2": -9139873623.0,
+      "2025-Q3": -31954140892.0,
+      "2025-Q4": -28784661124.0,
+      "2026-Q1": 877412299.0,
+      "2026-Q2": 2889896163.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 17.22,
+      "2024": 2.97682,
+      "2025": -17.086307271634528
+    },
+    "revenue_per_share": {
+      "2023": 441136955186.0,
+      "2024": 412069281686.0,
+      "2025": 363565142222.0
+    }
+  },
+  "statistik": {
+    "market_cap": 309977907200,
+    "enterprise_value": 438711123968,
+    "shares_outstanding": 1684662500,
+    "free_float_pct": 20.0
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2573,
+    "vol_trend": 0.268,
+    "price_chg_20d": 0.55
+  },
+  "neraca": {
+    "aset": 471441093996.0,
+    "aset_lancar": 309782576913.0,
+    "kas": 41889326342.0,
+    "piutang_usaha": 27779639171.0,
+    "persediaan": 54846614040.0,
+    "aset_tetap": 105187244710.0,
+    "liabilitas": 249815010673.0,
+    "liabilitas_jangka_pendek": 221148817073.0,
+    "utang_usaha": 27779639171.0,
+    "utang_bank": 170622534002.0,
+    "ekuitas": 221626083323.0,
+    "ekuitas_induk": 221626083323.0,
+    "modal_saham": null,
+    "saldo_laba": 9000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 212130603218.0,
+    "beban_pokok": 115122471414.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2889896163.0,
+    "beban_pajak": null,
+    "laba_bersih": 2889896163.0,
+    "laba_induk": 2889896163.0,
+    "eps_basic": 1.71,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1150602907.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

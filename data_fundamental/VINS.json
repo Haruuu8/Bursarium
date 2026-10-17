@@ -1,0 +1,112 @@
+{
+  "kode": "VINS",
+  "nama": "PT Victoria Insurance Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Property & Casualty",
+  "harga": 139.0,
+  "update": "2026-10-11 15:19",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 17.612772,
+    "pb": 0.9381053,
+    "ps": 1.2927344,
+    "roe": 0.04992180314710431,
+    "eps": 7.89,
+    "de": 0.22011105825494137,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 0.04091578615679851,
+    "bv": 148.17,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2024-Q1": 800000.0,
+      "2024-Q2": 1.74,
+      "2024-Q3": 3.23,
+      "2024-Q4": 4.8,
+      "2025-Q1": 1.94,
+      "2025-Q2": 2.85,
+      "2025-Q3": 7.15,
+      "2025-Q4": 9.01,
+      "2026-Q1": 4.73,
+      "2026-Q2": 7.87
+    },
+    "net_income": {
+      "2024-Q1": 1170029334.0,
+      "2024-Q2": 2535977851.0,
+      "2024-Q3": 4719672916.0,
+      "2024-Q4": 7006375716.0,
+      "2025-Q1": 2836723054.0,
+      "2025-Q2": 4166724571.0,
+      "2025-Q3": 11445828298.0,
+      "2025-Q4": 13162351466.0,
+      "2026-Q1": 6909292581.0,
+      "2026-Q2": 11490701840.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 5.93,
+      "2023": 4.44,
+      "2024": 4.8,
+      "2025": 9.01
+    },
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 203019730944,
+    "enterprise_value": 200986017792,
+    "shares_outstanding": 1460573616,
+    "free_float_pct": 6.37613694919709
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3191,
+    "vol_trend": 0.287,
+    "price_chg_20d": -4.14
+  },
+  "neraca": {
+    "aset": 280837860379.0,
+    "aset_lancar": null,
+    "kas": 2475087586.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 3091793036.0,
+    "liabilitas": 50663845908.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 230174014471.0,
+    "ekuitas_induk": 230174014471.0,
+    "modal_saham": null,
+    "saldo_laba": 20000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11490701840.0,
+    "beban_pajak": null,
+    "laba_bersih": 11490701840.0,
+    "laba_induk": 11490701840.0,
+    "eps_basic": 7.87,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 706659969.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

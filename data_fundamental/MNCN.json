@@ -1,0 +1,128 @@
+{
+  "kode": "MNCN",
+  "nama": "PT. Media Nusantara Citra Tbk",
+  "sektor": "Communication Services",
+  "industri": "Advertising Agencies",
+  "harga": 122.0,
+  "update": "2026-10-11 14:29",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 1.433776,
+    "pb": 0.072584264,
+    "ps": 0.22729759,
+    "roe": 0.01976715101024459,
+    "eps": 85.09,
+    "de": 0.07986745069572654,
+    "margin_net": 0.1250244484876052,
+    "current_ratio": 8.661627019080269,
+    "roa": 0.01741834002054384,
+    "bv": 1680.81,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 2327658.0,
+      "2024-Q2": 4345886.0,
+      "2024-Q3": 5966509.0,
+      "2024-Q4": 7953812.0,
+      "2025-Q1": 2376147.0,
+      "2025-Q2": 4125323.0,
+      "2025-Q3": 5908793.0,
+      "2025-Q4": 7652724.0,
+      "2026-Q1": 1881642.0,
+      "2026-Q2": 3517600.0
+    },
+    "eps": {
+      "2024-Q1": 40.94,
+      "2024-Q2": 61.122556781739746,
+      "2024-Q3": 69.39,
+      "2024-Q4": 81.14,
+      "2025-Q1": 33.56,
+      "2025-Q2": 48.05,
+      "2025-Q3": 56.98,
+      "2025-Q4": 99.91,
+      "2026-Q1": 29.57,
+      "2026-Q2": 33.24
+    },
+    "net_income": {
+      "2024-Q1": 541582.0,
+      "2024-Q2": 808479.0,
+      "2024-Q3": 917864.0,
+      "2024-Q4": 1073222.0,
+      "2025-Q1": 443890.0,
+      "2025-Q2": 635523.0,
+      "2025-Q3": 753685.0,
+      "2025-Q4": 1321475.0,
+      "2026-Q1": 391125.0,
+      "2026-Q2": 439786.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 155.47,
+      "2023": 78.08,
+      "2024": 81.14,
+      "2025": 99.91
+    },
+    "revenue_per_share": {
+      "2022": 9065210.0,
+      "2023": 7783253.0,
+      "2024": 7953812.0,
+      "2025": 7652724.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1613713768448,
+    "enterprise_value": 3028250787840,
+    "shares_outstanding": 13227161510,
+    "free_float_pct": 36.92799999687915
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4529,
+    "vol_trend": 2.237,
+    "price_chg_20d": -39.6
+  },
+  "neraca": {
+    "aset": 25248445.0,
+    "aset_lancar": 10934923.0,
+    "kas": 812681.0,
+    "piutang_usaha": 3881895.0,
+    "persediaan": 3794062.0,
+    "aset_tetap": 7376214.0,
+    "liabilitas": 1776917.0,
+    "liabilitas_jangka_pendek": 1262456.0,
+    "utang_usaha": 3881895.0,
+    "utang_bank": 694886.0,
+    "ekuitas": 22248325.0,
+    "ekuitas_induk": 22248325.0,
+    "modal_saham": null,
+    "saldo_laba": 17000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3517600.0,
+    "beban_pokok": 2133396.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 403783.0,
+    "beban_pajak": 78209.0,
+    "laba_bersih": 439786.0,
+    "laba_induk": 439786.0,
+    "eps_basic": 33.24,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 173610.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

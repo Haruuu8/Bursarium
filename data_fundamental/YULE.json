@@ -1,0 +1,110 @@
+{
+  "kode": "YULE",
+  "nama": "PT Yulie Sekuritas Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 3590.0,
+  "update": "2026-10-11 15:28",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 81.16663,
+    "pb": 9.112993,
+    "ps": 56.7016,
+    "roe": -0.09091227070472593,
+    "eps": 44.23,
+    "de": 0.07605641708584487,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": -0.08436120578296107,
+    "bv": 393.94,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2024-Q2": -7.3,
+      "2024-Q3": 5.71,
+      "2024-Q4": 26.75,
+      "2025-Q1": -5.42,
+      "2025-Q2": 3.21,
+      "2025-Q3": 11.25,
+      "2025-Q4": 83.25,
+      "2026-Q1": -4.31095,
+      "2026-Q2": -35.81
+    },
+    "net_income": {
+      "2024-Q2": -11584805459.0,
+      "2024-Q3": 9068552717.0,
+      "2024-Q4": 42460339855.0,
+      "2025-Q1": -8599878014.0,
+      "2025-Q2": 5091452074.0,
+      "2025-Q3": 17860249523.0,
+      "2025-Q4": 132136474969.0,
+      "2026-Q1": -6842709642.0,
+      "2026-Q2": -56847418657.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 36.31,
+      "2023": 17.2,
+      "2024": 26.75,
+      "2025": 83.25
+    },
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 5698359394304,
+    "enterprise_value": 5665360707584,
+    "shares_outstanding": 1587286800,
+    "free_float_pct": 78.33899998412384
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2923,
+    "vol_trend": 1.069,
+    "price_chg_20d": 2.57
+  },
+  "neraca": {
+    "aset": 673857351011.0,
+    "aset_lancar": null,
+    "kas": 36024843684.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 3805658231.0,
+    "liabilitas": 47558057346.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 625299733648.0,
+    "ekuitas_induk": 625299733648.0,
+    "modal_saham": null,
+    "saldo_laba": 71400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -56153268686.0,
+    "beban_pajak": -694153413.0,
+    "laba_bersih": -56847418657.0,
+    "laba_induk": -56847418657.0,
+    "eps_basic": -35.81,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33074311.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

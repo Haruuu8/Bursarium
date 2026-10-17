@@ -1,0 +1,117 @@
+{
+  "kode": "BSML",
+  "nama": "PT Bintang Samudera Mandiri Lines Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 575.0,
+  "update": "2026-10-11 11:00",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 174.18964,
+    "pb": 8.012709,
+    "ps": 24.716469,
+    "roe": 0.010901911276293499,
+    "eps": 3.3,
+    "de": 0.5033726017034204,
+    "margin_net": 0.05865733546956771,
+    "current_ratio": 1.2428027348390065,
+    "roa": 0.007251532806122776,
+    "bv": 71.76,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 58143189516.0,
+      "2024-Q3": 191479215247.0,
+      "2024-Q4": 244611042471.0,
+      "2025-Q2": 45054554377.0,
+      "2025-Q3": 60369523161.0,
+      "2026-Q1": 10606164328.0,
+      "2026-Q2": 24697400511.0
+    },
+    "eps": {
+      "2024-Q1": 2.26,
+      "2024-Q3": 3.74,
+      "2024-Q4": 4.51,
+      "2025-Q2": 1.1,
+      "2025-Q3": 1.22,
+      "2026-Q1": 520000.0,
+      "2026-Q2": 780000.0
+    },
+    "net_income": {
+      "2024-Q1": 4186086236.0,
+      "2024-Q3": 6925608803.0,
+      "2024-Q4": 8339597471.0,
+      "2025-Q2": 2036567296.0,
+      "2025-Q3": 2253945150.0,
+      "2026-Q1": 964329474.0,
+      "2026-Q2": 1448683707.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 8.66,
+      "2023": 9.23,
+      "2024": 4.51
+    },
+    "revenue_per_share": {
+      "2022": 346765538330.0,
+      "2023": 317055920205.0,
+      "2024": 244611042471.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1063879376896,
+    "enterprise_value": 1053378281472,
+    "shares_outstanding": 1850225000,
+    "free_float_pct": 19.25800002702374
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2829,
+    "vol_trend": 0.925,
+    "price_chg_20d": 7.48
+  },
+  "neraca": {
+    "aset": 199776205353.0,
+    "aset_lancar": 52902001386.0,
+    "kas": 469741908.0,
+    "piutang_usaha": 11110695166.0,
+    "persediaan": 5458699044.0,
+    "aset_tetap": 146665103967.0,
+    "liabilitas": 66889893722.0,
+    "liabilitas_jangka_pendek": 42566692125.0,
+    "utang_usaha": 11110695166.0,
+    "utang_bank": 17167617506.0,
+    "ekuitas": 132883461467.0,
+    "ekuitas_induk": 132883461467.0,
+    "modal_saham": null,
+    "saldo_laba": 500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24697400511.0,
+    "beban_pokok": 14072830622.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1730080390.0,
+    "beban_pajak": -281659482.0,
+    "laba_bersih": 1448683707.0,
+    "laba_induk": 1448683707.0,
+    "eps_basic": 780000.0,
+    "eps_diluted": 780000.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11999000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

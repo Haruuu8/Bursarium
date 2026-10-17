@@ -1,0 +1,122 @@
+{
+  "kode": "LPKR",
+  "nama": "PT Lippo Karawaci Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 47.0,
+  "update": "2026-10-11 14:12",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.5498548,
+    "pb": 0.10946933,
+    "ps": 0.3990374,
+    "roe": 0.012669539132304128,
+    "eps": 10.33,
+    "de": 0.5870902742669987,
+    "margin_net": 0.10681340583274607,
+    "current_ratio": 3.794762678917661,
+    "roa": 0.007830647137714456,
+    "bv": 429.34,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 8001871.0,
+      "2024-Q3": 9250867.0,
+      "2024-Q4": 11505172.0,
+      "2025-Q2": 4117470.0,
+      "2025-Q3": 6508652.0,
+      "2025-Q4": 9033322.0,
+      "2026-Q1": 1800608.0,
+      "2026-Q2": 3608489.0
+    },
+    "eps": {
+      "2024-Q2": 280.16,
+      "2024-Q3": 264.1,
+      "2024-Q4": 264.49,
+      "2025-Q2": 1.95,
+      "2025-Q3": 5.19,
+      "2025-Q4": 6.62,
+      "2026-Q1": 1.51,
+      "2026-Q2": 5.44
+    },
+    "net_income": {
+      "2024-Q2": 19889106.0,
+      "2024-Q3": 18718397.0,
+      "2024-Q4": 18746045.0,
+      "2025-Q2": 137900.0,
+      "2025-Q3": 368195.0,
+      "2025-Q4": 469535.0,
+      "2026-Q1": 107107.0,
+      "2026-Q2": 385435.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -38.0,
+      "2023": 710000.0,
+      "2024": 264.49,
+      "2025": 6.62
+    },
+    "revenue_per_share": {
+      "2022": 14808570.477532078,
+      "2023": 16990094.0,
+      "2024": 11505172.0,
+      "2025": 9033322.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3330295463936,
+    "enterprise_value": 12590526758912,
+    "shares_outstanding": 70857354569,
+    "free_float_pct": 48.06799999967975
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3891,
+    "vol_trend": 1.232,
+    "price_chg_20d": -22.95
+  },
+  "neraca": {
+    "aset": 49221347.0,
+    "aset_lancar": 29105067.0,
+    "kas": 1411564.0,
+    "piutang_usaha": 559758.0,
+    "persediaan": null,
+    "aset_tetap": 39964.0,
+    "liabilitas": 17860566.0,
+    "liabilitas_jangka_pendek": 7669799.0,
+    "utang_usaha": 559758.0,
+    "utang_bank": 2340000.0,
+    "ekuitas": 30422180.0,
+    "ekuitas_induk": 30422180.0,
+    "modal_saham": null,
+    "saldo_laba": 15150.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3608489.0,
+    "beban_pokok": 2000196.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 558800.0,
+    "beban_pajak": -115685.0,
+    "laba_bersih": 385435.0,
+    "laba_induk": 385435.0,
+    "eps_basic": 5.44,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 39964.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

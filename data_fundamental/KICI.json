@@ -1,0 +1,125 @@
+{
+  "kode": "KICI",
+  "nama": "PT Kedaung Indah Can Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 292.0,
+  "update": "2026-10-11 14:01",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 3.949148,
+    "pb": 0.7317085,
+    "ps": 0.8402303,
+    "roe": -0.025448944679373656,
+    "eps": 73.94,
+    "de": 1.0388918387283088,
+    "margin_net": -0.0629505999159542,
+    "current_ratio": 5.326381969963882,
+    "roa": -0.012481753173943053,
+    "bv": 399.07,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2022-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 36708455809.0,
+      "2024-Q3": 52503536379.0,
+      "2024-Q4": 75017965714.0,
+      "2025-Q1": 22000414803.0,
+      "2025-Q2": 37698031935.0,
+      "2025-Q3": 57640773625.0,
+      "2025-Q4": 89087580060.0,
+      "2026-Q1": 21126802827.0,
+      "2026-Q2": 44527017848.0
+    },
+    "eps": {
+      "2024-Q2": -10.0,
+      "2024-Q3": -16.69,
+      "2024-Q4": -26.27886254347826,
+      "2025-Q1": -6.56,
+      "2025-Q2": -20.68,
+      "2025-Q3": -24.6,
+      "2025-Q4": -21.31,
+      "2026-Q1": -7.21,
+      "2026-Q2": -10.16
+    },
+    "net_income": {
+      "2024-Q2": -2760742996.0,
+      "2024-Q3": -4607568476.0,
+      "2024-Q4": -7252966062.0,
+      "2025-Q1": -1811537455.0,
+      "2025-Q2": -5707285977.0,
+      "2025-Q3": -6788654576.0,
+      "2025-Q4": -5882786529.0,
+      "2026-Q1": -1991276231.0,
+      "2026-Q2": -2803002486.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.56,
+      "2023": -16.64,
+      "2024": -26.27886254347826,
+      "2025": -21.31
+    },
+    "revenue_per_share": {
+      "2022": 82415191372.0,
+      "2023": 72118045200.0,
+      "2024": 75017965714.0,
+      "2025": 89087580060.0
+    }
+  },
+  "statistik": {
+    "market_cap": 80592003072,
+    "enterprise_value": 110458568704,
+    "shares_outstanding": 276000000,
+    "free_float_pct": 24.753
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4983,
+    "vol_trend": 0.72,
+    "price_chg_20d": 4.29
+  },
+  "neraca": {
+    "aset": 224568011155.0,
+    "aset_lancar": 159270873471.0,
+    "kas": 1960789133.0,
+    "piutang_usaha": 11197965441.0,
+    "persediaan": 139966946808.0,
+    "aset_tetap": 44469568438.0,
+    "liabilitas": 114425821712.0,
+    "liabilitas_jangka_pendek": 29902262806.0,
+    "utang_usaha": 11197965441.0,
+    "utang_bank": 6079213043.0,
+    "ekuitas": 110142189443.0,
+    "ekuitas_induk": 110142189443.0,
+    "modal_saham": null,
+    "saldo_laba": 2442585047.0
+  },
+  "laba_rugi": {
+    "pendapatan": 44527017848.0,
+    "beban_pokok": 35325393749.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3624241062.0,
+    "beban_pajak": 821238576.0,
+    "laba_bersih": -2803002486.0,
+    "laba_induk": -2803002486.0,
+    "eps_basic": -10.16,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 72525482.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

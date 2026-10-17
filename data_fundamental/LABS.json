@@ -1,0 +1,121 @@
+{
+  "kode": "LABS",
+  "nama": "PT UBC Medical Indonesia Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Devices",
+  "harga": 157.0,
+  "update": "2026-10-11 12:05",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.957451,
+    "ps": 2.9840581,
+    "roe": 0.02705938328416178,
+    "eps": 2.28,
+    "de": 0.4252668857145968,
+    "margin_net": 0.04453073125992802,
+    "current_ratio": 2.7998138081080026,
+    "roa": 0.01898547894130364,
+    "bv": 39.67,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 64534441378.0,
+      "2024-Q3": 106429260405.0,
+      "2024-Q4": 147637344655.0,
+      "2025-Q1": 33462750531.0,
+      "2025-Q2": 86696572334.0,
+      "2025-Q3": 135436065715.0,
+      "2025-Q4": 199295144000.0,
+      "2026-Q1": 40021863647.0,
+      "2026-Q2": 95222444389.0
+    },
+    "eps": {
+      "2024-Q2": 1.09077,
+      "2024-Q3": 1.42115,
+      "2024-Q4": 490828.5534078045,
+      "2025-Q1": 300000.0,
+      "2025-Q2": 1.41,
+      "2025-Q3": 17.09051848714286,
+      "2025-Q4": 2.28,
+      "2026-Q1": 60000.0,
+      "2026-Q2": 710000.0
+    },
+    "net_income": {
+      "2024-Q2": 1767639882.0,
+      "2024-Q3": 5613547216.0,
+      "2024-Q4": 2952279209.0,
+      "2025-Q1": 1848709822.0,
+      "2025-Q2": 7057204473.0,
+      "2025-Q3": 11963337265.0,
+      "2025-Q4": 13506777012.0,
+      "2026-Q1": 409631024.0,
+      "2026-Q2": 4240325081.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 490828.5534078045,
+      "2025": 2.28
+    },
+    "revenue_per_share": {
+      "2024": 147637344655.0,
+      "2025": 199295144000.0
+    }
+  },
+  "statistik": {
+    "market_cap": 620149997568,
+    "enterprise_value": 637040001024,
+    "shares_outstanding": 3950000000,
+    "free_float_pct": 17.736
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2824,
+    "vol_trend": 0.292,
+    "price_chg_20d": -9.77
+  },
+  "neraca": {
+    "aset": 223345699843.0,
+    "aset_lancar": 179602169134.0,
+    "kas": 6864929679.0,
+    "piutang_usaha": 48852284770.0,
+    "persediaan": 81461609310.0,
+    "aset_tetap": 31447013015.0,
+    "liabilitas": 66641202524.0,
+    "liabilitas_jangka_pendek": 64147897483.0,
+    "utang_usaha": 48852284770.0,
+    "utang_bank": 22511869175.0,
+    "ekuitas": 156704424357.0,
+    "ekuitas_induk": 156704424357.0,
+    "modal_saham": null,
+    "saldo_laba": 1275000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 95222444389.0,
+    "beban_pokok": 56047724948.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4240335041.0,
+    "beban_pajak": null,
+    "laba_bersih": 4240325081.0,
+    "laba_induk": 4240325081.0,
+    "eps_basic": 710000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4157651127.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

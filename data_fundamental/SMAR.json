@@ -1,0 +1,121 @@
+{
+  "kode": "SMAR",
+  "nama": "PT Sinar Mas Agro Resources and Technology Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 8425.0,
+  "update": "2026-10-11 14:57",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.895855,
+    "pb": 1.0032594,
+    "ps": 0.2768356,
+    "roe": 0.09718687466611718,
+    "eps": 1428.97,
+    "de": 1.0888650171240295,
+    "margin_net": 0.05360396209819753,
+    "current_ratio": 1.5911070897844402,
+    "roa": 0.04651134273889825,
+    "bv": 8397.63,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 17882988.0,
+      "2024-Q2": 35892400.0,
+      "2024-Q4": 78835443.0,
+      "2025-Q1": 21158050.0,
+      "2025-Q2": 43266133.0,
+      "2025-Q3": 65654355.0,
+      "2025-Q4": 86946068.0,
+      "2026-Q1": 20734239.0,
+      "2026-Q2": 43730163.0
+    },
+    "eps": {
+      "2024-Q1": 62.0,
+      "2024-Q2": 147.0,
+      "2024-Q4": 445.0,
+      "2025-Q1": 47.0,
+      "2025-Q2": 287.0,
+      "2025-Q3": 556.0,
+      "2025-Q4": 900.0,
+      "2026-Q1": 289.0,
+      "2026-Q2": 816.0
+    },
+    "net_income": {
+      "2024-Q1": 177869.0,
+      "2024-Q2": 423334.0,
+      "2024-Q4": 1278172.0,
+      "2025-Q1": 134235.0,
+      "2025-Q2": 825380.0,
+      "2025-Q3": 1598255.0,
+      "2025-Q4": 2584906.0,
+      "2026-Q1": 829521.0,
+      "2026-Q2": 2344110.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 445.0,
+      "2025": 900.0
+    },
+    "revenue_per_share": {
+      "2024": 78835443.0,
+      "2025": 86946068.0
+    }
+  },
+  "statistik": {
+    "market_cap": 24198227427328,
+    "enterprise_value": 39810332884992,
+    "shares_outstanding": 2872193366,
+    "free_float_pct": 7.600000006406255
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.159,
+    "vol_trend": 2.617,
+    "price_chg_20d": 33.73
+  },
+  "neraca": {
+    "aset": 50398674.0,
+    "aset_lancar": 25767607.0,
+    "kas": 1586141.0,
+    "piutang_usaha": 3424280.0,
+    "persediaan": 13041457.0,
+    "aset_tetap": 2432.0,
+    "liabilitas": 26263005.0,
+    "liabilitas_jangka_pendek": 16194766.0,
+    "utang_usaha": 3424280.0,
+    "utang_bank": 4425923.0,
+    "ekuitas": 24119615.0,
+    "ekuitas_induk": 24119615.0,
+    "modal_saham": null,
+    "saldo_laba": 114888.0
+  },
+  "laba_rugi": {
+    "pendapatan": 43730163.0,
+    "beban_pokok": 36802143.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2922682.0,
+    "beban_pajak": -577955.0,
+    "laba_bersih": 2344110.0,
+    "laba_induk": 2344110.0,
+    "eps_basic": 816.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2432.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

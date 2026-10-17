@@ -1,0 +1,125 @@
+{
+  "kode": "URBN",
+  "nama": "PT Urban Jakarta Propertindo Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 300.0,
+  "update": "2026-10-11 17:07",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.0855759,
+    "ps": 416.79663,
+    "roe": -0.013798523907086,
+    "eps": null,
+    "de": 2.7552736471871135,
+    "margin_net": -8.486832569398246,
+    "current_ratio": 1.00864524903054,
+    "roa": -0.002828516037887238,
+    "bv": 276.35,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 20012388603.0,
+      "2024-Q3": 47238870642.0,
+      "2024-Q4": 20332952261.0,
+      "2025-Q1": 17135316286.0,
+      "2025-Q2": 6504214195.0,
+      "2025-Q3": 10371980771.0,
+      "2025-Q4": 7347952171.0,
+      "2026-Q1": 672621554.0,
+      "2026-Q2": 1401672320.0
+    },
+    "eps": {
+      "2024-Q1": 1.18,
+      "2024-Q3": 2.58,
+      "2024-Q4": 920000.0,
+      "2025-Q1": 250000.0,
+      "2025-Q2": 300000.0,
+      "2025-Q3": 40000.0,
+      "2025-Q4": -53.91,
+      "2026-Q1": -1.75,
+      "2026-Q2": -3.68
+    },
+    "net_income": {
+      "2024-Q1": 3828241524.0,
+      "2024-Q3": 8335607387.0,
+      "2024-Q4": 2986747675.0,
+      "2025-Q1": 821329461.0,
+      "2025-Q2": -979601286.0,
+      "2025-Q3": 129762038.0,
+      "2025-Q4": -174250433784.0,
+      "2026-Q1": -5667430949.0,
+      "2026-Q2": -11895758297.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 3.74,
+      "2023": 7.88,
+      "2024": 920000.0,
+      "2025": -53.91
+    },
+    "revenue_per_share": {
+      "2022": 39804064636.0,
+      "2023": 221525651655.0,
+      "2024": 20332952261.0,
+      "2025": 7347952171.0
+    }
+  },
+  "statistik": {
+    "market_cap": 935879442432,
+    "enterprise_value": 2753132494848,
+    "shares_outstanding": 3119598140,
+    "free_float_pct": 11.62900000959739
+  },
+  "akumulasi": {
+    "score": 8.4,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1298,
+    "vol_trend": 4.769,
+    "price_chg_20d": 37.61
+  },
+  "neraca": {
+    "aset": 4205653472584.0,
+    "aset_lancar": 2379095918975.0,
+    "kas": 9036244731.0,
+    "piutang_usaha": 63586167.0,
+    "persediaan": 774415122818.0,
+    "aset_tetap": 19631885187.0,
+    "liabilitas": 2375331562255.0,
+    "liabilitas_jangka_pendek": 2358704332630.0,
+    "utang_usaha": 63586167.0,
+    "utang_bank": 492000000000.0,
+    "ekuitas": 862103684213.0,
+    "ekuitas_induk": 862103684213.0,
+    "modal_saham": null,
+    "saldo_laba": -35541555008.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1401672320.0,
+    "beban_pokok": 477243795.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -11895915017.0,
+    "beban_pajak": -1484039667.0,
+    "laba_bersih": -11895758297.0,
+    "laba_induk": -11895758297.0,
+    "eps_basic": -3.68,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 240890348.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

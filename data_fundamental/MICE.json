@@ -1,0 +1,125 @@
+{
+  "kode": "MICE",
+  "nama": "PT Multi Indocitra Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Household & Personal Products",
+  "harga": 490.0,
+  "update": "2026-10-11 14:22",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 6.834031,
+    "pb": 0.29604208,
+    "ps": 0.2219594,
+    "roe": 0.001084016595358887,
+    "eps": 71.7,
+    "de": 0.5343593675905203,
+    "margin_net": 0.003186907759504581,
+    "current_ratio": 1.6978893986408432,
+    "roa": 0.0007064872709479828,
+    "bv": 1655.17,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 260029079910.0,
+      "2024-Q2": 534562166291.0,
+      "2024-Q3": 820141643177.0,
+      "2024-Q4": 1117588738384.0,
+      "2025-Q1": 243528163462.0,
+      "2025-Q2": 571718055554.0,
+      "2025-Q3": 884967957112.0,
+      "2025-Q4": 1210505004443.0,
+      "2026-Q1": 329717042756.0
+    },
+    "eps": {
+      "2024-Q1": 9.73,
+      "2024-Q2": 37.85,
+      "2024-Q3": 58.63,
+      "2024-Q4": 71.17,
+      "2025-Q1": 6.86,
+      "2025-Q2": 43.14,
+      "2025-Q3": 68.12,
+      "2025-Q4": 73.35,
+      "2026-Q1": 1.75
+    },
+    "net_income": {
+      "2024-Q1": 5760663970.0,
+      "2024-Q2": 22404884239.0,
+      "2024-Q3": 34702635168.0,
+      "2024-Q4": 42125321338.0,
+      "2025-Q1": 4060173192.0,
+      "2025-Q2": 25535654760.0,
+      "2025-Q3": 40383244219.0,
+      "2025-Q4": 43613985246.0,
+      "2026-Q1": 1050777802.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 80.61,
+      "2023": 58.07,
+      "2024": 71.17,
+      "2025": 73.35
+    },
+    "revenue_per_share": {
+      "2022": 974636523540.0,
+      "2023": 1086594171978.0,
+      "2024": 1117588738384.0,
+      "2025": 1210505004443.0
+    }
+  },
+  "statistik": {
+    "market_cap": 294000001024,
+    "enterprise_value": 554508025856,
+    "shares_outstanding": 600000000,
+    "free_float_pct": 32.291
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3894,
+    "vol_trend": 4.447,
+    "price_chg_20d": -9.26
+  },
+  "neraca": {
+    "aset": 1487327295494.0,
+    "aset_lancar": 806605845635.0,
+    "kas": 72184823591.0,
+    "piutang_usaha": 268592118603.0,
+    "persediaan": 410878870173.0,
+    "aset_tetap": 529542460507.0,
+    "liabilitas": 517974507179.0,
+    "liabilitas_jangka_pendek": 475063832945.0,
+    "utang_usaha": 268592118603.0,
+    "utang_bank": 312029135627.0,
+    "ekuitas": 969337375921.0,
+    "ekuitas_induk": 969337375921.0,
+    "modal_saham": null,
+    "saldo_laba": 12000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 329717042756.0,
+    "beban_pokok": 179860679831.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3884241784.0,
+    "beban_pajak": -2833462720.0,
+    "laba_bersih": 1050777802.0,
+    "laba_induk": 1050777802.0,
+    "eps_basic": 1.75,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 499940481.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,127 @@
+{
+  "kode": "ELSA",
+  "nama": "PT Elnusa Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 630.0,
+  "update": "2026-10-11 13:21",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.63053,
+    "pb": 0.84772104,
+    "ps": 0.30412284,
+    "roe": 0.08014463076180227,
+    "eps": 111.89,
+    "de": 1.1016856688739476,
+    "margin_net": 0.05730280336946906,
+    "current_ratio": 1.445880814789728,
+    "roa": 0.03812815197582146,
+    "bv": 743.17,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 3107783.0,
+      "2024-Q2": 6317413.0,
+      "2024-Q3": 9652173.0,
+      "2024-Q4": 13393013.0,
+      "2025-Q1": 3727628.0,
+      "2025-Q2": 6965188.0,
+      "2025-Q3": 10477387.0,
+      "2025-Q4": 14498139.0,
+      "2026-Q1": 3616611.0,
+      "2026-Q2": 7586121.0
+    },
+    "eps": {
+      "2024-Q1": 25.1,
+      "2024-Q2": 60.699999999999996,
+      "2024-Q3": 75.53,
+      "2024-Q4": 97.78,
+      "2025-Q1": 25.57,
+      "2025-Q2": 46.1,
+      "2025-Q3": 72.15,
+      "2025-Q4": 98.43,
+      "2026-Q1": 25.97,
+      "2026-Q2": 59.56
+    },
+    "net_income": {
+      "2024-Q1": 183192.0,
+      "2024-Q2": 442984.0,
+      "2024-Q3": 551235.0,
+      "2024-Q4": 713668.0,
+      "2025-Q1": 186654.0,
+      "2025-Q2": 336482.0,
+      "2025-Q3": 526560.0,
+      "2025-Q4": 718406.0,
+      "2026-Q1": 189555.0,
+      "2026-Q2": 434706.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 51.8,
+      "2023": 68.94,
+      "2024": 97.78,
+      "2025": 98.43
+    },
+    "revenue_per_share": {
+      "2022": 12305690.0,
+      "2024": 13393013.0,
+      "2025": 14498139.0
+    }
+  },
+  "statistik": {
+    "market_cap": 4598055043072,
+    "enterprise_value": 2087088029696,
+    "shares_outstanding": 7298500000,
+    "free_float_pct": 43.091
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1661,
+    "vol_trend": 0.682,
+    "price_chg_20d": -13.1
+  },
+  "neraca": {
+    "aset": 11401182.0,
+    "aset_lancar": 8107327.0,
+    "kas": 2885629.0,
+    "piutang_usaha": 136365.0,
+    "persediaan": 494014.0,
+    "aset_tetap": 2123841.0,
+    "liabilitas": 5975564.0,
+    "liabilitas_jangka_pendek": 5607189.0,
+    "utang_usaha": 136365.0,
+    "utang_bank": 29612.0,
+    "ekuitas": 5424019.0,
+    "ekuitas_induk": 5424019.0,
+    "modal_saham": null,
+    "saldo_laba": 158109.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7586121.0,
+    "beban_pokok": 6864461.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 540106.0,
+    "beban_pajak": -105399.0,
+    "laba_bersih": 434706.0,
+    "laba_induk": 434706.0,
+    "eps_basic": 59.56,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 363754.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

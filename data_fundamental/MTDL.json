@@ -1,0 +1,128 @@
+{
+  "kode": "MTDL",
+  "nama": "PT Metrodata Electronics Tbk",
+  "sektor": "Technology",
+  "industri": "Electronics & Computer Distribution",
+  "harga": 505.0,
+  "update": "2026-10-11 14:27",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.4264708,
+    "pb": 1.3206482,
+    "ps": 0.2128158,
+    "roe": 0.06682546147344312,
+    "eps": 68.0,
+    "de": 1.8819321133029774,
+    "margin_net": 0.023015488725334834,
+    "current_ratio": 1.6607165536417763,
+    "roa": 0.02052551747087185,
+    "bv": 382.39,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 5061707.0,
+      "2024-Q2": 10497310.0,
+      "2024-Q3": 17247392.0,
+      "2024-Q4": 25148938.0,
+      "2025-Q1": 5527491.0,
+      "2025-Q2": 11675958.0,
+      "2025-Q3": 18805773.0,
+      "2025-Q4": 27177759.0,
+      "2026-Q1": 6711485.0,
+      "2026-Q2": 13630560.0
+    },
+    "eps": {
+      "2024-Q1": 12.0,
+      "2024-Q2": 22.0,
+      "2024-Q3": 37.0,
+      "2024-Q4": 60.0,
+      "2025-Q1": 13.0,
+      "2025-Q2": 24.0,
+      "2025-Q3": 38.0,
+      "2025-Q4": 66.0,
+      "2026-Q1": 13.0,
+      "2026-Q2": 26.0
+    },
+    "net_income": {
+      "2024-Q1": 147368.0,
+      "2024-Q2": 276054.0,
+      "2024-Q3": 455414.0,
+      "2024-Q4": 739805.0,
+      "2025-Q1": 153681.0,
+      "2025-Q2": 294297.0,
+      "2025-Q3": 469614.0,
+      "2025-Q4": 813992.0,
+      "2026-Q1": 158926.0,
+      "2026-Q2": 313714.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 47.0,
+      "2023": 53.0,
+      "2024": 60.0,
+      "2025": 66.0
+    },
+    "revenue_per_share": {
+      "2022": 20988297.0,
+      "2023": 22086390.0,
+      "2024": 25148938.0,
+      "2025": 27177759.0
+    }
+  },
+  "statistik": {
+    "market_cap": 6199826710528,
+    "enterprise_value": 9965426180096,
+    "shares_outstanding": 12276884585,
+    "free_float_pct": 44.30900000189258
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4934,
+    "vol_trend": 0.469,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 15284097.0,
+    "aset_lancar": 14135267.0,
+    "kas": 1269398.0,
+    "piutang_usaha": 4302558.0,
+    "persediaan": 6764880.0,
+    "aset_tetap": 383816.0,
+    "liabilitas": 8834783.0,
+    "liabilitas_jangka_pendek": 8511547.0,
+    "utang_usaha": 4302558.0,
+    "utang_bank": 3075100.0,
+    "ekuitas": 4694528.0,
+    "ekuitas_induk": 4694528.0,
+    "modal_saham": null,
+    "saldo_laba": 35000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13630560.0,
+    "beban_pokok": 12595463.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 594816.0,
+    "beban_pajak": -128830.0,
+    "laba_bersih": 313714.0,
+    "laba_induk": 313714.0,
+    "eps_basic": 26.0,
+    "eps_diluted": 26.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6353.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

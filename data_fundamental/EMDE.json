@@ -1,0 +1,125 @@
+{
+  "kode": "EMDE",
+  "nama": "PT Megapolitan Developments Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 67.0,
+  "update": "2026-10-11 13:23",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.12353783,
+    "ps": 1.0533155,
+    "roe": 0.005509146607263989,
+    "eps": 5.92,
+    "de": 0.5957329157702008,
+    "margin_net": 0.1032319345347287,
+    "current_ratio": 3.117450879941583,
+    "roa": 0.0030840956480443224,
+    "bv": 542.34,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 43598348031.0,
+      "2024-Q2": 84027975961.0,
+      "2024-Q3": 950250605237.0,
+      "2024-Q4": 1353932364676.0,
+      "2025-Q2": 89958329080.0,
+      "2025-Q3": 123070652563.0,
+      "2025-Q4": 206937767461.0,
+      "2026-Q1": 45358312686.0,
+      "2026-Q2": 96109605644.0
+    },
+    "eps": {
+      "2024-Q1": -2.35,
+      "2024-Q2": -5.76,
+      "2024-Q3": 136.18,
+      "2024-Q4": 156.0,
+      "2025-Q2": 1.09,
+      "2025-Q3": 1.29,
+      "2025-Q4": -23.0,
+      "2026-Q1": -780000.0,
+      "2026-Q2": 2.96
+    },
+    "net_income": {
+      "2024-Q1": -7885414252.0,
+      "2024-Q2": -19288661601.0,
+      "2024-Q3": 456197271156.0,
+      "2024-Q4": 523569624131.0,
+      "2025-Q2": 3654879800.0,
+      "2025-Q3": 4330351867.0,
+      "2025-Q4": -78017046205.0,
+      "2026-Q1": -2601134318.0,
+      "2026-Q2": 9921580518.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -20.0,
+      "2023": -79.0,
+      "2024": 156.0,
+      "2025": -23.0
+    },
+    "revenue_per_share": {
+      "2022": 153441610795.0,
+      "2023": 154587592125.0,
+      "2024": 1353932364676.0,
+      "2025": 206937767461.0
+    }
+  },
+  "statistik": {
+    "market_cap": 224450002944,
+    "enterprise_value": 915558760448,
+    "shares_outstanding": 3350000000,
+    "free_float_pct": 24.496402597014924
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3818,
+    "vol_trend": 0.723,
+    "price_chg_20d": -14.1
+  },
+  "neraca": {
+    "aset": 3217014532053.0,
+    "aset_lancar": 1433334592481.0,
+    "kas": 83376600937.0,
+    "piutang_usaha": 12773888436.0,
+    "persediaan": 265288540997.0,
+    "aset_tetap": 11851667017.0,
+    "liabilitas": 1072872535874.0,
+    "liabilitas_jangka_pendek": 459777763205.0,
+    "utang_usaha": 12773888436.0,
+    "utang_bank": null,
+    "ekuitas": 1800928750910.0,
+    "ekuitas_induk": 1800928750910.0,
+    "modal_saham": null,
+    "saldo_laba": 1342610449787.0
+  },
+  "laba_rugi": {
+    "pendapatan": 96109605644.0,
+    "beban_pokok": 48467491936.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 9373188599.0,
+    "beban_pajak": null,
+    "laba_bersih": 9921580518.0,
+    "laba_induk": 9921580518.0,
+    "eps_basic": 2.96,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 283312966.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

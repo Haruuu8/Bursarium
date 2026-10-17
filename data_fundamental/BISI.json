@@ -1,0 +1,125 @@
+{
+  "kode": "BISI",
+  "nama": "PT BISI International Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Agricultural Inputs",
+  "harga": 705.0,
+  "update": "2026-10-11 12:48",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 7.91157,
+    "pb": 0.6041949,
+    "ps": 1.0483562,
+    "roe": 0.013278933594879954,
+    "eps": 89.11,
+    "de": 0.06262147002458779,
+    "margin_net": 0.12143907120695045,
+    "current_ratio": 16.247531619993126,
+    "roa": 0.012484857724359987,
+    "bv": 1166.84,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 266828.0,
+      "2024-Q2": 713512.0,
+      "2024-Q3": 1014396.0,
+      "2024-Q4": 1367926.0,
+      "2025-Q1": 317393.0,
+      "2025-Q2": 626923.0,
+      "2025-Q3": 1075004.0,
+      "2025-Q4": 1696438.0,
+      "2026-Q1": 387083.0
+    },
+    "eps": {
+      "2024-Q1": 13.0,
+      "2024-Q2": 38.0,
+      "2024-Q3": 42.0,
+      "2024-Q4": 59.5,
+      "2025-Q1": 10.0,
+      "2025-Q2": 10.0,
+      "2025-Q3": 30.0,
+      "2025-Q4": 63.43,
+      "2026-Q1": 15.67
+    },
+    "net_income": {
+      "2024-Q1": 40333.0,
+      "2024-Q2": 113440.0,
+      "2024-Q3": 124769.0,
+      "2024-Q4": 178507.0,
+      "2025-Q1": 29671.0,
+      "2025-Q2": 30495.0,
+      "2025-Q3": 90803.0,
+      "2025-Q4": 190294.0,
+      "2026-Q1": 47007.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 174.36,
+      "2023": 198.54,
+      "2024": 59.5,
+      "2025": 63.43
+    },
+    "revenue_per_share": {
+      "2022": 2415592.0,
+      "2023": 2298131.0,
+      "2024": 1367926.0,
+      "2025": 1696438.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2114999943168,
+    "enterprise_value": 1781674016768,
+    "shares_outstanding": 3000000000,
+    "free_float_pct": 45.765
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.198,
+    "vol_trend": 1.32,
+    "price_chg_20d": -2.08
+  },
+  "neraca": {
+    "aset": 3765121.0,
+    "aset_lancar": 2693792.0,
+    "kas": 224180.0,
+    "piutang_usaha": 385634.0,
+    "persediaan": 2022859.0,
+    "aset_tetap": 10972.0,
+    "liabilitas": 221678.0,
+    "liabilitas_jangka_pendek": 165797.0,
+    "utang_usaha": 385634.0,
+    "utang_bank": 16806.0,
+    "ekuitas": 3539968.0,
+    "ekuitas_induk": 3539968.0,
+    "modal_saham": null,
+    "saldo_laba": 60000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 387083.0,
+    "beban_pokok": 235969.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 60541.0,
+    "beban_pajak": -13668.0,
+    "laba_bersih": 47007.0,
+    "laba_induk": 47007.0,
+    "eps_basic": 15.67,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10972.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,122 @@
+{
+  "kode": "SWAT",
+  "nama": "PT Sriwahana Adityakarta Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 16.0,
+  "update": "2026-10-11 15:59",
+  "periode_terbaru": "2025-audit",
+  "rasio_kunci": {
+    "pe": 5.082592,
+    "pb": 2.2219136,
+    "ps": 0.74059916,
+    "roe": -3.9390379416512706,
+    "eps": 3.15,
+    "de": 30.862484382389272,
+    "margin_net": -0.7478245260870301,
+    "current_ratio": 3.5521067763866014,
+    "roa": -0.12360105332029266,
+    "bv": 7.2,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2022-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 46281714172.0,
+      "2024-Q2": 94656566597.0,
+      "2024-Q3": 138822223855.0,
+      "2024-Q4": 176488964936.0,
+      "2025-Q1": 22750864883.0,
+      "2025-Q2": 44754281308.0,
+      "2025-Q3": 61077527832.0,
+      "2025-Q4": 65227184134.0
+    },
+    "eps": {
+      "2024-Q1": -960000.0,
+      "2024-Q2": -3.31,
+      "2024-Q3": -6.4,
+      "2024-Q4": -47.23,
+      "2025-Q1": -4.47,
+      "2025-Q2": -8.99,
+      "2025-Q3": -12.91,
+      "2025-Q4": -16.16
+    },
+    "net_income": {
+      "2024-Q1": -2910898207.0,
+      "2024-Q2": -10003259645.0,
+      "2024-Q3": -19322451601.0,
+      "2024-Q4": -142607776707.0,
+      "2025-Q1": -13497599998.0,
+      "2025-Q2": -27151778015.0,
+      "2025-Q3": -38981847548.0,
+      "2025-Q4": -48778488063.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 19.22,
+      "2023": -8.31,
+      "2024": -47.23,
+      "2025": -16.16
+    },
+    "revenue_per_share": {
+      "2022": 315679393887.0,
+      "2023": 245267967628.0,
+      "2024": 176488964936.0,
+      "2025": 65227184134.0
+    }
+  },
+  "statistik": {
+    "market_cap": 48307200000,
+    "enterprise_value": 419343990784,
+    "shares_outstanding": 3019200000,
+    "free_float_pct": 19.312
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 394644598510.0,
+    "aset_lancar": 116772962653.0,
+    "kas": 2373435764.0,
+    "piutang_usaha": 26735125581.0,
+    "persediaan": 44775663189.0,
+    "aset_tetap": 489982500.0,
+    "liabilitas": 382180966099.0,
+    "liabilitas_jangka_pendek": 32874282786.0,
+    "utang_usaha": 26735125581.0,
+    "utang_bank": 17479000000.0,
+    "ekuitas": 12383350652.0,
+    "ekuitas_induk": 12383350652.0,
+    "modal_saham": null,
+    "saldo_laba": 5000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 65227184134.0,
+    "beban_pokok": 104056960373.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -48938034892.0,
+    "beban_pajak": 109964531.0,
+    "laba_bersih": -48778488063.0,
+    "laba_induk": -48778488063.0,
+    "eps_basic": -16.16,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 489982500.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

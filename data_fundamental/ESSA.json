@@ -1,0 +1,127 @@
+{
+  "kode": "ESSA",
+  "nama": "PT ESSA Industries Indonesia Tbk.",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 585.0,
+  "update": "2026-10-11 13:24",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.739857,
+    "pb": 23400.0,
+    "ps": 29304.17,
+    "roe": 0.07077748757625053,
+    "eps": 54.47,
+    "de": 0.32635222397443625,
+    "margin_net": 0.16181021712020466,
+    "current_ratio": 3.158122737037123,
+    "roa": 0.043520076994978917,
+    "bv": 0.03,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 73820688.0,
+      "2024-Q2": 151611241.0,
+      "2024-Q3": 230116937.0,
+      "2024-Q4": 301401837.0,
+      "2025-Q1": 69622293.0,
+      "2025-Q2": 137587951.0,
+      "2025-Q3": 200359689.0,
+      "2025-Q4": 295014929.0,
+      "2026-Q1": 95213790.0,
+      "2026-Q2": 186475598.0
+    },
+    "eps": {
+      "2024-Q1": 593000.0,
+      "2024-Q2": 1200.0,
+      "2024-Q3": 1950.0,
+      "2024-Q4": 2623.0,
+      "2025-Q1": 470000.0,
+      "2025-Q2": 862000.0,
+      "2025-Q3": 1240.0,
+      "2025-Q4": 2.339,
+      "2026-Q1": 1.09,
+      "2026-Q2": 1.75
+    },
+    "net_income": {
+      "2024-Q1": 10210509.0,
+      "2024-Q2": 20590874.0,
+      "2024-Q3": 33565762.0,
+      "2024-Q4": 45181479.0,
+      "2025-Q1": 8128227.0,
+      "2025-Q2": 14843959.0,
+      "2025-Q3": 21304117.0,
+      "2025-Q4": 40291033.0,
+      "2026-Q1": 18755561.0,
+      "2026-Q2": 30173657.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 8865.0,
+      "2023": 2030.0000000000002,
+      "2024": 2623.0,
+      "2025": 2.339
+    },
+    "revenue_per_share": {
+      "2022": 731490734.0,
+      "2024": 301401837.0,
+      "2025": 295014929.0
+    }
+  },
+  "statistik": {
+    "market_cap": 10077780049920,
+    "enterprise_value": 10077708746752,
+    "shares_outstanding": 17226975700,
+    "free_float_pct": 30.177000000063853
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1805,
+    "vol_trend": 0.483,
+    "price_chg_20d": -10.69
+  },
+  "neraca": {
+    "aset": 693327289.0,
+    "aset_lancar": 275884968.0,
+    "kas": 189225543.0,
+    "piutang_usaha": 6933122.0,
+    "persediaan": 39768401.0,
+    "aset_tetap": 392455202.0,
+    "liabilitas": 139129551.0,
+    "liabilitas_jangka_pendek": 87357266.0,
+    "utang_usaha": 6933122.0,
+    "utang_bank": null,
+    "ekuitas": 426317153.0,
+    "ekuitas_induk": 426317153.0,
+    "modal_saham": null,
+    "saldo_laba": 3288249.0
+  },
+  "laba_rugi": {
+    "pendapatan": 186475598.0,
+    "beban_pokok": 120770463.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 51239075.0,
+    "beban_pajak": -9226578.0,
+    "laba_bersih": 30173657.0,
+    "laba_induk": 30173657.0,
+    "eps_basic": 1.75,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4670969.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

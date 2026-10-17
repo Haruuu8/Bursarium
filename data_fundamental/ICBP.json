@@ -1,0 +1,128 @@
+{
+  "kode": "ICBP",
+  "nama": "PT Indofood CBP Sukses Makmur Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 6950.0,
+  "update": "2026-10-11 13:42",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.979463,
+    "pb": 1.5360315,
+    "ps": 1.0244824,
+    "roe": 0.07016948713122378,
+    "eps": 633.0,
+    "de": 1.3022262891499172,
+    "margin_net": 0.08844396444931786,
+    "current_ratio": 3.581164382651838,
+    "roa": 0.025714763618143673,
+    "bv": 4524.65,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 19921905.0,
+      "2024-Q2": 36961357.0,
+      "2024-Q3": 55486221.0,
+      "2024-Q4": 72597188.0,
+      "2025-Q1": 20185790.0,
+      "2025-Q2": 37600928.0,
+      "2025-Q3": 56266782.0,
+      "2025-Q4": 74850923.0,
+      "2026-Q1": 21715724.0,
+      "2026-Q2": 41863388.0
+    },
+    "eps": {
+      "2024-Q1": 202.0,
+      "2024-Q2": 303.0,
+      "2024-Q3": 699.0,
+      "2024-Q4": 607.0,
+      "2025-Q1": 228.0,
+      "2025-Q2": 475.0,
+      "2025-Q3": 610.0,
+      "2025-Q4": 791.0,
+      "2026-Q1": 221.0,
+      "2026-Q2": 317.0
+    },
+    "net_income": {
+      "2024-Q1": 2352074.0,
+      "2024-Q2": 3537612.0,
+      "2024-Q3": 8149300.0,
+      "2024-Q4": 7079369.0,
+      "2025-Q1": 2656712.0,
+      "2025-Q2": 5536138.0,
+      "2025-Q3": 7108249.0,
+      "2025-Q4": 9224927.0,
+      "2026-Q1": 2573904.0,
+      "2026-Q2": 3702564.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 393.0,
+      "2023": 599.0,
+      "2024": 607.0,
+      "2025": 791.0
+    },
+    "revenue_per_share": {
+      "2022": 64797516.0,
+      "2023": 67909901.0,
+      "2024": 72597188.0,
+      "2025": 74850923.0
+    }
+  },
+  "statistik": {
+    "market_cap": 81050260733952,
+    "enterprise_value": 117611178229760,
+    "shares_outstanding": 11661908000,
+    "free_float_pct": 19.466999996913025
+  },
+  "akumulasi": {
+    "score": 3.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.077,
+    "vol_trend": 0.71,
+    "price_chg_20d": -2.46
+  },
+  "neraca": {
+    "aset": 143985924.0,
+    "aset_lancar": 57964365.0,
+    "kas": 33537992.0,
+    "piutang_usaha": 6192895.0,
+    "persediaan": 7751246.0,
+    "aset_tetap": 17706667.0,
+    "liabilitas": 68713288.0,
+    "liabilitas_jangka_pendek": 16185899.0,
+    "utang_usaha": 6192895.0,
+    "utang_bank": 431154.0,
+    "ekuitas": 52766012.0,
+    "ekuitas_induk": 52766012.0,
+    "modal_saham": null,
+    "saldo_laba": 80000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 41863388.0,
+    "beban_pokok": 27496156.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5643723.0,
+    "beban_pajak": -1106277.0,
+    "laba_bersih": 3702564.0,
+    "laba_induk": 3702564.0,
+    "eps_basic": 317.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 311706.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

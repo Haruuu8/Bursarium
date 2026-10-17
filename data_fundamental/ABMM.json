@@ -1,0 +1,125 @@
+{
+  "kode": "ABMM",
+  "nama": "PT ABM Investama Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 2700.0,
+  "update": "2026-10-11 12:21",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.3588443,
+    "pb": 8359.133,
+    "ps": 7164.985,
+    "roe": 0.044330018027046385,
+    "eps": 503.84,
+    "de": 1.3080315874974713,
+    "margin_net": 0.07780198157413469,
+    "current_ratio": 1.1380277590596588,
+    "roa": 0.01914839397444152,
+    "bv": 0.32,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 270703950.0,
+      "2024-Q3": 893520561.0,
+      "2024-Q4": 1200132454.0,
+      "2025-Q1": 250022267.0,
+      "2025-Q2": 506891274.0,
+      "2025-Q3": 781648619.0,
+      "2025-Q4": 1038170254.0,
+      "2026-Q1": 222655357.0,
+      "2026-Q2": 506203418.0
+    },
+    "eps": {
+      "2024-Q1": 18380.0,
+      "2024-Q3": 40660.0,
+      "2024-Q4": 50620.0,
+      "2025-Q1": 7790.0,
+      "2025-Q2": 10080.0,
+      "2025-Q3": 15390.0,
+      "2025-Q4": 25650.0,
+      "2026-Q1": 5240.0,
+      "2026-Q2": 14300.0
+    },
+    "net_income": {
+      "2024-Q1": 50604802.0,
+      "2024-Q3": 111945454.0,
+      "2024-Q4": 139368513.0,
+      "2025-Q1": 21452061.0,
+      "2025-Q2": 27746267.0,
+      "2025-Q3": 42383773.0,
+      "2025-Q4": 70616317.0,
+      "2026-Q1": 14426495.0,
+      "2026-Q2": 39383629.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 98036.23320796246,
+      "2023": 104970.30036339993,
+      "2024": 50620.0,
+      "2025": 25650.0
+    },
+    "revenue_per_share": {
+      "2022": 1445527371.0,
+      "2023": 1492998856.0,
+      "2024": 1200132454.0,
+      "2025": 1038170254.0
+    }
+  },
+  "statistik": {
+    "market_cap": 7433545580544,
+    "enterprise_value": 7434260185088,
+    "shares_outstanding": 2753165000,
+    "free_float_pct": 9.46
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3345,
+    "vol_trend": 0.958,
+    "price_chg_20d": -4.93
+  },
+  "neraca": {
+    "aset": 2056758862.0,
+    "aset_lancar": 558051389.0,
+    "kas": 214179641.0,
+    "piutang_usaha": 86510324.0,
+    "persediaan": 40641095.0,
+    "aset_tetap": 711096313.0,
+    "liabilitas": 1162080077.0,
+    "liabilitas_jangka_pendek": 490367115.0,
+    "utang_usaha": 86510324.0,
+    "utang_bank": 156391712.0,
+    "ekuitas": 888418971.0,
+    "ekuitas_induk": 888418971.0,
+    "modal_saham": null,
+    "saldo_laba": 1010278.0
+  },
+  "laba_rugi": {
+    "pendapatan": 506203418.0,
+    "beban_pokok": 467647637.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 42423494.0,
+    "beban_pajak": 400875.0,
+    "laba_bersih": 39383629.0,
+    "laba_induk": 39383629.0,
+    "eps_basic": 14300.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 608501.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

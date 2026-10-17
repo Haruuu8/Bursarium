@@ -1,0 +1,128 @@
+{
+  "kode": "INDY",
+  "nama": "PT. Indika Energy Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 2790.0,
+  "update": "2026-10-11 13:50",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 60.8506,
+    "pb": 12077.922,
+    "ps": 6535.489,
+    "roe": 0.00849474750534367,
+    "eps": 45.85,
+    "de": 1.5652301044323509,
+    "margin_net": 0.008889494858773737,
+    "current_ratio": 2.070939491578254,
+    "roa": 0.003158430237294878,
+    "bv": 0.23,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 567322754.0,
+      "2024-Q2": 1196726927.0,
+      "2024-Q3": 1784167627.0,
+      "2024-Q4": 2446679750.0,
+      "2025-Q1": 489598963.0,
+      "2025-Q2": 956817601.0,
+      "2025-Q3": 1442963864.0,
+      "2025-Q4": 2030903015.0,
+      "2026-Q1": 493216734.0,
+      "2026-Q2": 1146943686.0
+    },
+    "eps": {
+      "2024-Q1": 3866.107584304433,
+      "2024-Q2": 4038.442790770624,
+      "2024-Q3": 6613.607916824598,
+      "2024-Q4": 1900.0,
+      "2025-Q1": 557.2511307607678,
+      "2025-Q2": 430.0,
+      "2025-Q3": 92.0913634710646,
+      "2025-Q4": 1160.0,
+      "2026-Q1": 1350.0787669152814,
+      "2026-Q2": 1960.0
+    },
+    "net_income": {
+      "2024-Q1": 20114167.0,
+      "2024-Q2": 21010774.0,
+      "2024-Q3": 34408565.0,
+      "2024-Q4": 10083796.0,
+      "2025-Q1": 2899206.0,
+      "2025-Q2": 2244279.0,
+      "2025-Q3": 479123.0,
+      "2025-Q4": 6027195.0,
+      "2026-Q1": 7024044.0,
+      "2026-Q2": 10195750.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 86882.89384730891,
+      "2023": 23004.2062839776,
+      "2024": 1900.0,
+      "2025": 1160.0
+    },
+    "revenue_per_share": {
+      "2022": 4334910725.0,
+      "2023": 3026839190.0,
+      "2024": 2446679750.0,
+      "2025": 2030903015.0
+    }
+  },
+  "statistik": {
+    "market_cap": 14515510968320,
+    "enterprise_value": 14516283768832,
+    "shares_outstanding": 5202692000,
+    "free_float_pct": 28.59499999231167
+  },
+  "akumulasi": {
+    "score": 3.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.096,
+    "vol_trend": 0.468,
+    "price_chg_20d": -1.41
+  },
+  "neraca": {
+    "aset": 3228106760.0,
+    "aset_lancar": 1318319171.0,
+    "kas": 608083475.0,
+    "piutang_usaha": 326040938.0,
+    "persediaan": 56331036.0,
+    "aset_tetap": 515301810.0,
+    "liabilitas": 1878654407.0,
+    "liabilitas_jangka_pendek": 636580246.0,
+    "utang_usaha": 326040938.0,
+    "utang_bank": 20086565.0,
+    "ekuitas": 1200241678.0,
+    "ekuitas_induk": 1200241678.0,
+    "modal_saham": null,
+    "saldo_laba": 11378431.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1146943686.0,
+    "beban_pokok": 965759649.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 53872402.0,
+    "beban_pajak": 5795805.0,
+    "laba_bersih": 10195750.0,
+    "laba_induk": 10195750.0,
+    "eps_basic": 1960.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 78631648.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

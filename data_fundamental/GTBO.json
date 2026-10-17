@@ -1,0 +1,120 @@
+{
+  "kode": "GTBO",
+  "nama": "PT Garda Tujuh Buana Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 214.0,
+  "update": "2026-10-11 13:32",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 23777.78,
+    "ps": 212416.73,
+    "roe": -0.30775167414468135,
+    "eps": null,
+    "de": 0.9753819782459655,
+    "margin_net": -0.9427755217313197,
+    "current_ratio": 0.2226511461680833,
+    "roa": -0.15579350097035335,
+    "bv": 0.01,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2023-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 11641181.0,
+      "2024-Q3": 23628797.0,
+      "2024-Q4": 27251542.0,
+      "2025-Q1": 2106573.0,
+      "2025-Q2": 7492458.0,
+      "2025-Q3": 9991740.0,
+      "2026-Q1": 2106573.0,
+      "2026-Q2": 7492458.0
+    },
+    "eps": {
+      "2024-Q1": 1000.0,
+      "2024-Q3": 236.41840000000002,
+      "2024-Q4": -1274.1508,
+      "2025-Q1": -540.9576,
+      "2025-Q2": -338.3244,
+      "2025-Q3": -275.16159999999996,
+      "2026-Q1": -1831.52,
+      "2026-Q2": -2830.0
+    },
+    "net_income": {
+      "2024-Q1": 1909635.0,
+      "2024-Q3": 591046.0,
+      "2024-Q4": -3213677.0,
+      "2025-Q1": -1352394.0,
+      "2025-Q2": -845811.0,
+      "2025-Q3": -687904.0,
+      "2026-Q1": -4578800.0,
+      "2026-Q2": -7063706.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 2983.0,
+      "2023": 2000.0,
+      "2024": -1274.1508
+    },
+    "revenue_per_share": {
+      "2022": 49267169.0,
+      "2023": 58797005.0,
+      "2024": 27251542.0
+    }
+  },
+  "statistik": {
+    "market_cap": 534999990272,
+    "enterprise_value": 535000449024,
+    "shares_outstanding": 2500000000,
+    "free_float_pct": 7.62
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.541,
+    "vol_trend": 4.689,
+    "price_chg_20d": 37.18
+  },
+  "neraca": {
+    "aset": 45340184.0,
+    "aset_lancar": 4334825.0,
+    "kas": 39354.0,
+    "piutang_usaha": null,
+    "persediaan": 1752368.0,
+    "aset_tetap": 146283.0,
+    "liabilitas": 22387568.0,
+    "liabilitas_jangka_pendek": 19469134.0,
+    "utang_usaha": 1878216.0,
+    "utang_bank": null,
+    "ekuitas": 22952616.0,
+    "ekuitas_induk": 22952616.0,
+    "modal_saham": null,
+    "saldo_laba": -8300732.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7492458.0,
+    "beban_pokok": 1299512.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -7063706.0,
+    "beban_pajak": null,
+    "laba_bersih": -7063706.0,
+    "laba_induk": -7063706.0,
+    "eps_basic": -2830.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2886.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

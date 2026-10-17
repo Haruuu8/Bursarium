@@ -1,0 +1,111 @@
+{
+  "kode": "LMAX",
+  "nama": "PT Lupromax Pelumas Indonesia Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Refining & Marketing",
+  "harga": 101.0,
+  "update": "2026-10-11 11:49",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.2814819,
+    "ps": 0.9695518,
+    "roe": 0.015169632225996425,
+    "eps": 1.12,
+    "de": 0.29476594482800206,
+    "margin_net": 0.018407536458006194,
+    "current_ratio": 4.972044919851204,
+    "roa": 0.011716119262011925,
+    "bv": 78.82,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 37909133075.0,
+      "2024-Q4": 78252446798.0,
+      "2025-Q2": 32267828485.0,
+      "2025-Q4": 67712609415.0,
+      "2026-Q2": 42869373031.0
+    },
+    "eps": {
+      "2024-Q2": 1.48,
+      "2024-Q4": 1.47,
+      "2025-Q2": 800000.0,
+      "2025-Q4": 1.12,
+      "2026-Q2": 1.21
+    },
+    "net_income": {
+      "2024-Q2": 963504264.0,
+      "2024-Q4": 955296803.0,
+      "2025-Q2": 517003553.0,
+      "2025-Q4": 727087357.0,
+      "2026-Q2": 789119547.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 1.84,
+      "2024": 1.47,
+      "2025": 1.12
+    },
+    "revenue_per_share": {
+      "2023": 45552722939.0,
+      "2024": 78252446798.0,
+      "2025": 67712609415.0
+    }
+  },
+  "statistik": {
+    "market_cap": 65650884608,
+    "enterprise_value": 42606432256,
+    "shares_outstanding": 650008775,
+    "free_float_pct": 24.543000054114657
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3859,
+    "vol_trend": 0.791,
+    "price_chg_20d": -4.72
+  },
+  "neraca": {
+    "aset": 67353321467.0,
+    "aset_lancar": 63645651055.0,
+    "kas": 24963633782.0,
+    "piutang_usaha": 19878878696.0,
+    "persediaan": 17693566750.0,
+    "aset_tetap": 3291003745.0,
+    "liabilitas": 15333632707.0,
+    "liabilitas_jangka_pendek": 12800699125.0,
+    "utang_usaha": 19878878696.0,
+    "utang_bank": 586369766.0,
+    "ekuitas": 52019688760.0,
+    "ekuitas_induk": 52019688760.0,
+    "modal_saham": null,
+    "saldo_laba": 300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 42869373031.0,
+    "beban_pokok": 25514206265.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1174235419.0,
+    "beban_pajak": -385115872.0,
+    "laba_bersih": 789119547.0,
+    "laba_induk": 789119547.0,
+    "eps_basic": 1.21,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 217314454.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

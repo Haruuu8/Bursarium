@@ -1,0 +1,125 @@
+{
+  "kode": "HEXA",
+  "nama": "PT Hexindo Adiperkasa Tbk",
+  "sektor": "Industrials",
+  "industri": "Industrial Distribution",
+  "harga": 3520.0,
+  "update": "2026-10-11 13:39",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 12.382594,
+    "pb": 17425.742,
+    "ps": 5845.3657,
+    "roe": 0.02892656172419013,
+    "eps": 284.27,
+    "de": 1.4114977318507065,
+    "margin_net": 0.04319149276642134,
+    "current_ratio": 1.647565036824748,
+    "roa": 0.011995268061890487,
+    "bv": 0.2,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 91502359.0,
+      "2024-Q2": 228962731.0,
+      "2024-Q3": 369239026.0,
+      "2024-Q4": 522714838.0,
+      "2025-Q1": 123383601.0,
+      "2025-Q2": 264957043.0,
+      "2025-Q3": 401075931.0,
+      "2025-Q4": 515423217.0,
+      "2026-Q1": 113796993.0
+    },
+    "eps": {
+      "2024-Q1": 7000.0,
+      "2024-Q2": 13000.0,
+      "2024-Q3": 25000.0,
+      "2024-Q4": 37000.0,
+      "2025-Q1": 8000.0,
+      "2025-Q2": 15000.0,
+      "2025-Q3": 22000.0,
+      "2025-Q4": 19000.0,
+      "2026-Q1": 6000.0
+    },
+    "net_income": {
+      "2024-Q1": 5698346.0,
+      "2024-Q2": 11016957.0,
+      "2024-Q3": 21192111.0,
+      "2024-Q4": 31061735.0,
+      "2025-Q1": 6895739.0,
+      "2025-Q2": 12794531.0,
+      "2025-Q3": 18579826.0,
+      "2025-Q4": 15983119.0,
+      "2026-Q1": 4915062.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 61450.0,
+      "2023": 66000.0,
+      "2024": 37000.0,
+      "2025": 19000.0
+    },
+    "revenue_per_share": {
+      "2022": 630495198.0,
+      "2023": 612326209.0,
+      "2024": 522714838.0,
+      "2025": 515423217.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2956800032768,
+    "enterprise_value": 2956871335936,
+    "shares_outstanding": 840000000,
+    "free_float_pct": 18.6
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3251,
+    "vol_trend": 2.579,
+    "price_chg_20d": -21.08
+  },
+  "neraca": {
+    "aset": 409750076.0,
+    "aset_lancar": 360945380.0,
+    "kas": 17397181.0,
+    "piutang_usaha": 101470947.0,
+    "persediaan": 232588229.0,
+    "aset_tetap": 35060275.0,
+    "liabilitas": 239834894.0,
+    "liabilitas_jangka_pendek": 219078077.0,
+    "utang_usaha": 101470947.0,
+    "utang_bank": 88475806.0,
+    "ekuitas": 169915182.0,
+    "ekuitas_induk": 169915182.0,
+    "modal_saham": null,
+    "saldo_laba": 4646585.0
+  },
+  "laba_rugi": {
+    "pendapatan": 113796993.0,
+    "beban_pokok": 92619947.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6314815.0,
+    "beban_pajak": -1399753.0,
+    "laba_bersih": 4915062.0,
+    "laba_induk": 4915062.0,
+    "eps_basic": 6000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 464644.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,138 @@
+{
+  "kode": "FLMC",
+  "nama": "PT Falmaco Nonwoven Industri Tbk",
+  "periode_terbaru": "2025-audit",
+  "update": "2026-10-09 18:48",
+  "neraca": {
+    "aset": 55128637944.0,
+    "aset_lancar": 22640789146.0,
+    "aset_tidak_lancar": 32487848798.0,
+    "kas": 82916625.0,
+    "piutang_usaha": 7589200322.0,
+    "persediaan": 5855431969.0,
+    "aset_tetap": 20371663383.0,
+    "investasi": 1047933.0,
+    "properti_investasi": null,
+    "goodwill": 1875000000.0,
+    "aset_tidak_berwujud": null,
+    "liabilitas": 34467451695.0,
+    "liabilitas_jangka_pendek": 26414281656.0,
+    "liabilitas_jangka_panjang": 8053170039.0,
+    "utang_usaha": 7589200322.0,
+    "utang_bank": 1685329672.0,
+    "ekuitas": 20661186249.0,
+    "ekuitas_induk": 20661186249.0,
+    "ekuitas_non_pengendali": null,
+    "modal_saham": null,
+    "tambahan_modal_disetor": 16798020000.0,
+    "saldo_laba": -67404498076.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14381850279.0,
+    "beban_pokok": 22678118534.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "beban_bunga": 421897526.0,
+    "laba_sebelum_pajak": -17548495390.0,
+    "beban_pajak": -5414384736.0,
+    "laba_bersih": -22962880126.0,
+    "laba_induk": -22962880126.0,
+    "laba_komprehensif": null,
+    "eps_basic": -22991911126.0,
+    "eps_diluted": -29.39
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3448000.0,
+    "dividen_dibayar": null,
+    "kas_akhir_periode": null
+  },
+  "rasio": {
+    "roe": -1.1114018260743088,
+    "roa": -0.41653269484593164,
+    "der": 1.6682223024182952,
+    "dar": 0.6252186337346525,
+    "current_ratio": 0.8571419598252504,
+    "margin_laba_bersih": -1.596656875195662,
+    "margin_laba_kotor": null,
+    "margin_laba_operasi": null,
+    "quick_ratio": 0.6354652152044123
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q2": 9128944638.0,
+      "2025-Q4": 14381850279.0
+    },
+    "eps": {
+      "2025-Q2": -4.78,
+      "2025-Q4": -22991911126.0
+    },
+    "net_income": {
+      "2025-Q2": -2989337490.0,
+      "2025-Q4": -22962880126.0
+    },
+    "aset": {
+      "2025-Q2": 68084780545.0,
+      "2025-Q4": 55128637944.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 7308577209.0,
+      "2024": -42495681325.0,
+      "2025": -22991911126.0
+    },
+    "revenue": {
+      "2023": 46081970517.0,
+      "2024": 35472601407.0,
+      "2025": 14381850279.0
+    },
+    "net_income": {
+      "2023": 6878714529.0,
+      "2024": -42444666192.0,
+      "2025": -22962880126.0
+    },
+    "ekuitas": {
+      "2023": 84705546857.0,
+      "2024": 43481117893.0,
+      "2025": 20661186249.0
+    }
+  },
+  "rasio_kunci": {
+    "pe": 10.352736,
+    "pb": 9.787259,
+    "ps": 8.576096,
+    "roe": -1.8023599,
+    "eps": 16.13,
+    "de": 0.49506999999999995,
+    "margin_net": -2.85992,
+    "current_ratio": 0.317,
+    "roa": -0.31603,
+    "bv": 17.06,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2023-audit"
+  },
+  "statistik": {
+    "market_cap": 130468749312,
+    "enterprise_value": 136745541632,
+    "shares_outstanding": 781250000,
+    "free_float_pct": 38.865000064
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1569,
+    "vol_trend": 0.668,
+    "price_chg_20d": 22.79
+  },
+  "harga": 167.0,
+  "sektor": "Consumer Defensive",
+  "industri": "Household & Personal Products",
+  "update_bv": "2026-10-11 17:37"
+}

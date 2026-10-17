@@ -1,0 +1,125 @@
+{
+  "kode": "DART",
+  "nama": "PT Duta Anggada Realty Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 157.0,
+  "update": "2026-10-11 13:11",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.46423745,
+    "ps": 0.9459578,
+    "roe": -0.112314083741022,
+    "eps": 83.0,
+    "de": 4.704392396614234,
+    "margin_net": -0.4714061440045788,
+    "current_ratio": 0.07514979746754072,
+    "roa": -0.019689162366408743,
+    "bv": 338.19,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 115552660.0,
+      "2024-Q3": 373677862.0,
+      "2024-Q4": 511558731.0,
+      "2025-Q1": 112748494.0,
+      "2025-Q2": 238898120.0,
+      "2025-Q3": 370729103.0,
+      "2025-Q4": 507155984.0,
+      "2026-Q1": 118927469.0,
+      "2026-Q2": 253116771.0
+    },
+    "eps": {
+      "2024-Q1": -24000.0,
+      "2024-Q3": -69000.0,
+      "2024-Q4": -94.0,
+      "2025-Q1": -22.0,
+      "2025-Q2": -41.0,
+      "2025-Q3": -61000.0,
+      "2025-Q4": 83.0,
+      "2026-Q1": 20.0,
+      "2026-Q2": -38.0
+    },
+    "net_income": {
+      "2024-Q1": -76075630.0,
+      "2024-Q3": -217248767.0,
+      "2024-Q4": -296799024.0,
+      "2025-Q1": -70145796.0,
+      "2025-Q2": -127574720.0,
+      "2025-Q3": -191539869.0,
+      "2025-Q4": -259619237.0,
+      "2026-Q1": -63962118.0,
+      "2026-Q2": -119320801.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -132.0,
+      "2023": -109000.0,
+      "2024": -94.0,
+      "2025": 83.0
+    },
+    "revenue_per_share": {
+      "2022": 330155372.0,
+      "2023": 433200487.0,
+      "2024": 511558731.0,
+      "2025": 507155984.0
+    }
+  },
+  "statistik": {
+    "market_cap": 493198376960,
+    "enterprise_value": 3826425266176,
+    "shares_outstanding": 3141390962,
+    "free_float_pct": 8.406999994418396
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1838,
+    "vol_trend": 0.591,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 6060227387.0,
+    "aset_lancar": 132567876.0,
+    "kas": 34849252.0,
+    "piutang_usaha": 15807014.0,
+    "persediaan": 608389.0,
+    "aset_tetap": 3647419774.0,
+    "liabilitas": 4997876048.0,
+    "liabilitas_jangka_pendek": 1764048347.0,
+    "utang_usaha": 15807014.0,
+    "utang_bank": 200000000.0,
+    "ekuitas": 1062385028.0,
+    "ekuitas_induk": 1062385028.0,
+    "modal_saham": null,
+    "saldo_laba": 7500000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 253116771.0,
+    "beban_pokok": 134479297.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -107802974.0,
+    "beban_pajak": -11519188.0,
+    "laba_bersih": -119320801.0,
+    "laba_induk": -119320801.0,
+    "eps_basic": -38.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 556806.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,125 @@
+{
+  "kode": "DLTA",
+  "nama": "PT Delta Djakarta Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Beverages - Brewers",
+  "harga": 1765.0,
+  "update": "2026-10-11 13:15",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.670173,
+    "pb": 2.0983226,
+    "ps": 1.976414,
+    "roe": 0.09335099714264736,
+    "eps": 182.52,
+    "de": 0.8257606178034546,
+    "margin_net": 0.17909207727374285,
+    "current_ratio": 1.9747913035120344,
+    "roa": 0.051090829991167826,
+    "bv": 841.15,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 316286583.0,
+      "2024-Q3": 482700694.0,
+      "2024-Q4": 646763576.0,
+      "2025-Q1": 156198745.0,
+      "2025-Q2": 310558849.0,
+      "2025-Q3": 484192661.0,
+      "2025-Q4": 674527814.0,
+      "2026-Q1": 168963106.0,
+      "2026-Q2": 351044831.0
+    },
+    "eps": {
+      "2024-Q2": 91000.0,
+      "2024-Q3": 127000.0,
+      "2024-Q4": 180.0,
+      "2025-Q1": 41.0,
+      "2025-Q2": 80.0,
+      "2025-Q3": 130.0,
+      "2025-Q4": 1.87,
+      "2026-Q1": 4.4,
+      "2026-Q2": 7.9
+    },
+    "net_income": {
+      "2024-Q2": 73244151.0,
+      "2024-Q3": 101766504.0,
+      "2024-Q4": 142274769.0,
+      "2025-Q1": 32960101.0,
+      "2025-Q2": 66904270.0,
+      "2025-Q3": 101233786.0,
+      "2025-Q4": 149915527.0,
+      "2026-Q1": 35022026.0,
+      "2026-Q2": 62869348.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 288.0,
+      "2023": 249000.0,
+      "2024": 180.0,
+      "2025": 1.87
+    },
+    "revenue_per_share": {
+      "2022": 778744315.0,
+      "2023": 736838613.0,
+      "2024": 646763576.0,
+      "2025": 674527814.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1413163253760,
+    "enterprise_value": 682169925632,
+    "shares_outstanding": 800659050,
+    "free_float_pct": 15.412000026727982
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4846,
+    "vol_trend": 0.525,
+    "price_chg_20d": -1.4
+  },
+  "neraca": {
+    "aset": 1230540745.0,
+    "aset_lancar": 980471285.0,
+    "kas": 736626650.0,
+    "piutang_usaha": 137043901.0,
+    "persediaan": 33821048.0,
+    "aset_tetap": 230472043.0,
+    "liabilitas": 556127232.0,
+    "liabilitas_jangka_pendek": 496493621.0,
+    "utang_usaha": 137043901.0,
+    "utang_bank": null,
+    "ekuitas": 673472699.0,
+    "ekuitas_induk": 673472699.0,
+    "modal_saham": null,
+    "saldo_laba": 18000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 351044831.0,
+    "beban_pokok": 112449010.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 78649379.0,
+    "beban_pajak": -15773353.0,
+    "laba_bersih": 62869348.0,
+    "laba_induk": 62869348.0,
+    "eps_basic": 7.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 26741456.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

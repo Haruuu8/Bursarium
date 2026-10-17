@@ -1,0 +1,128 @@
+{
+  "kode": "DVLA",
+  "nama": "PT Darya-Varia Laboratoria Tbk",
+  "sektor": "Healthcare",
+  "industri": "Drug Manufacturers - Specialty & Generic",
+  "harga": 1585.0,
+  "update": "2026-10-11 13:21",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.072165,
+    "pb": 1.183402,
+    "ps": 0.7540413,
+    "roe": 0.06247493044614771,
+    "eps": 121.25,
+    "de": 0.7375250211564832,
+    "margin_net": 0.07754227868309962,
+    "current_ratio": 2.153656664323216,
+    "roa": 0.03595625713164961,
+    "bv": 1339.36,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 532286781.0,
+      "2024-Q2": 1087215882.0,
+      "2024-Q3": 1592661892.0,
+      "2024-Q4": 2087601399.0,
+      "2025-Q1": 544293044.0,
+      "2025-Q2": 1086099898.0,
+      "2025-Q3": 1628193562.0,
+      "2025-Q4": 2231748811.0,
+      "2026-Q1": 594799409.0,
+      "2026-Q2": 1208598607.0
+    },
+    "eps": {
+      "2024-Q1": 60.0,
+      "2024-Q2": 107.0,
+      "2024-Q3": 132.0,
+      "2024-Q4": 138.0,
+      "2025-Q1": 70000.0,
+      "2025-Q2": 108.0,
+      "2025-Q3": 147.0,
+      "2025-Q4": 146.0,
+      "2026-Q1": 49.0,
+      "2026-Q2": 84.0
+    },
+    "net_income": {
+      "2024-Q1": 67489107.0,
+      "2024-Q2": 119357583.0,
+      "2024-Q3": 147388101.0,
+      "2024-Q4": 156147303.0,
+      "2025-Q1": 78867034.0,
+      "2025-Q2": 121439056.0,
+      "2025-Q3": 164330406.0,
+      "2025-Q4": 163947127.0,
+      "2026-Q1": 55308109.0,
+      "2026-Q2": 93717490.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 133.0,
+      "2023": 131.0,
+      "2024": 138.0,
+      "2025": 146.0
+    },
+    "revenue_per_share": {
+      "2022": 1917041442.0,
+      "2023": 1890887506.0,
+      "2024": 2087601399.0,
+      "2025": 2231748811.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1775199977472,
+    "enterprise_value": 1304299569152,
+    "shares_outstanding": 1120000000,
+    "free_float_pct": 7.881
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.6002,
+    "vol_trend": 0.694,
+    "price_chg_20d": -0.63
+  },
+  "neraca": {
+    "aset": 2606430632.0,
+    "aset_lancar": 1927122647.0,
+    "kas": 471021298.0,
+    "piutang_usaha": 794057541.0,
+    "persediaan": 542951987.0,
+    "aset_tetap": 516192983.0,
+    "liabilitas": 1106347671.0,
+    "liabilitas_jangka_pendek": 894814238.0,
+    "utang_usaha": 794057541.0,
+    "utang_bank": null,
+    "ekuitas": 1500081542.0,
+    "ekuitas_induk": 1500081542.0,
+    "modal_saham": null,
+    "saldo_laba": 56000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1208598607.0,
+    "beban_pokok": 600789482.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 125715392.0,
+    "beban_pajak": -31997590.0,
+    "laba_bersih": 93717490.0,
+    "laba_induk": 93717490.0,
+    "eps_basic": 84.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 48251536.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

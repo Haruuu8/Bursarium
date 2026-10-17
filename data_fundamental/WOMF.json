@@ -1,0 +1,125 @@
+{
+  "kode": "WOMF",
+  "nama": "PT Wahana Ottomitra Multiartha Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 278.0,
+  "update": "2026-10-11 15:26",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.264083,
+    "pb": 0.4880318,
+    "ps": 0.82927567,
+    "roe": 0.04748005649126786,
+    "eps": 44.38,
+    "de": 3.1138356971993426,
+    "margin_net": 6.968515850144092,
+    "current_ratio": null,
+    "roa": 0.011541553913684933,
+    "bv": 569.64,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 2348.0,
+      "2024-Q2": 5250.0,
+      "2024-Q4": 16916.0,
+      "2025-Q1": 3499.0,
+      "2025-Q2": 7714.0,
+      "2025-Q3": 15899.0,
+      "2025-Q4": 18995.0,
+      "2026-Q1": 6531.0,
+      "2026-Q2": 13880.0
+    },
+    "eps": {
+      "2024-Q1": 18.04,
+      "2024-Q2": 27.94,
+      "2024-Q4": 75.52,
+      "2025-Q1": 18.08,
+      "2025-Q2": 24.35,
+      "2025-Q3": 29.72,
+      "2025-Q4": 40.95,
+      "2026-Q1": 7.79,
+      "2026-Q2": 27.78
+    },
+    "net_income": {
+      "2024-Q1": 62808.0,
+      "2024-Q2": 97278.0,
+      "2024-Q4": 262915.0,
+      "2025-Q1": 62959.0,
+      "2025-Q2": 84772.0,
+      "2025-Q3": 103459.0,
+      "2025-Q4": 142553.0,
+      "2026-Q1": 27110.0,
+      "2026-Q2": 96723.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 56.76,
+      "2023": 67.9,
+      "2024": 75.52,
+      "2025": 40.95
+    },
+    "revenue_per_share": {
+      "2022": 8875.0,
+      "2023": 10219.0,
+      "2024": 16916.0,
+      "2025": 18995.0
+    }
+  },
+  "statistik": {
+    "market_cap": 967851835392,
+    "enterprise_value": 5409582088192,
+    "shares_outstanding": 3481481480,
+    "free_float_pct": 7.503999992554894
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3532,
+    "vol_trend": 0.312,
+    "price_chg_20d": -6.08
+  },
+  "neraca": {
+    "aset": 8380414.0,
+    "aset_lancar": null,
+    "kas": 6086.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 71476.0,
+    "liabilitas": 6343285.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": 1901609.0,
+    "ekuitas": 2037129.0,
+    "ekuitas_induk": 2037129.0,
+    "modal_saham": null,
+    "saldo_laba": 1421616.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13880.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 120858.0,
+    "beban_pajak": -24135.0,
+    "laba_bersih": 96723.0,
+    "laba_induk": 96723.0,
+    "eps_basic": 27.78,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14355.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,125 @@
+{
+  "kode": "CAMP",
+  "nama": "PT Campina Ice Cream Industry, Tbk.",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 162.0,
+  "update": "2026-10-11 15:50",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 12.57764,
+    "pb": 0.93354,
+    "ps": 0.8137926,
+    "roe": 0.014278522436017932,
+    "eps": 12.88,
+    "de": 0.15142184156455074,
+    "margin_net": 0.02567320566892877,
+    "current_ratio": 5.628867629252537,
+    "roa": 0.012400774347493957,
+    "bv": 173.53,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 256840768041.0,
+      "2024-Q2": 554973962835.0,
+      "2024-Q3": 851241639082.0,
+      "2024-Q4": 1158489850210.0,
+      "2025-Q1": 274890243061.0,
+      "2025-Q2": 570400704517.0,
+      "2025-Q4": 1173936757679.0,
+      "2026-Q1": 275309419229.0,
+      "2026-Q2": 567978615411.0
+    },
+    "eps": {
+      "2024-Q1": 3.34,
+      "2024-Q2": 6.75,
+      "2024-Q3": 10.05,
+      "2024-Q4": 16.5,
+      "2025-Q1": 750000.0,
+      "2025-Q2": 2.27,
+      "2025-Q4": 12.71,
+      "2026-Q1": 980000.0,
+      "2026-Q2": 2.48
+    },
+    "net_income": {
+      "2024-Q1": 19664119400.0,
+      "2024-Q2": 39698341848.0,
+      "2024-Q3": 59134705945.0,
+      "2024-Q4": 97110136525.0,
+      "2025-Q1": 4384636776.0,
+      "2025-Q2": 13388049410.0,
+      "2025-Q4": 74768974166.0,
+      "2026-Q1": 5778904266.0,
+      "2026-Q2": 14581831809.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 20.6,
+      "2023": 21.65,
+      "2024": 16.5,
+      "2025": 12.71
+    },
+    "revenue_per_share": {
+      "2022": 1129360552136.0,
+      "2023": 1135790489555.0,
+      "2024": 1158489850210.0,
+      "2025": 1173936757679.0
+    }
+  },
+  "statistik": {
+    "market_cap": 953370017792,
+    "enterprise_value": 771197566976,
+    "shares_outstanding": 5885000000,
+    "free_float_pct": 7.965
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1439,
+    "vol_trend": 10.318,
+    "price_chg_20d": -5.26
+  },
+  "neraca": {
+    "aset": 1175880747475.0,
+    "aset_lancar": 512254629783.0,
+    "kas": 182172413107.0,
+    "piutang_usaha": 184293000526.0,
+    "persediaan": 127139414751.0,
+    "aset_tetap": 380447603982.0,
+    "liabilitas": 154638397341.0,
+    "liabilitas_jangka_pendek": 91004916712.0,
+    "utang_usaha": 184293000526.0,
+    "utang_bank": null,
+    "ekuitas": 1021242350134.0,
+    "ekuitas_induk": 1021242350134.0,
+    "modal_saham": null,
+    "saldo_laba": 49063993646.0
+  },
+  "laba_rugi": {
+    "pendapatan": 567978615411.0,
+    "beban_pokok": 255294164356.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17982047347.0,
+    "beban_pajak": -3400215538.0,
+    "laba_bersih": 14581831809.0,
+    "laba_induk": 14581831809.0,
+    "eps_basic": 2.48,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 44588442889.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

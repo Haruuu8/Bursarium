@@ -1,0 +1,124 @@
+{
+  "kode": "AUTO",
+  "nama": "PT Astra Otoparts Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 3370.0,
+  "update": "2026-10-11 12:40",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.726547,
+    "pb": 1.0157453,
+    "ps": 0.7670188,
+    "roe": 0.07200644223569141,
+    "eps": 501.0,
+    "de": 0.418150037252852,
+    "margin_net": 0.10609661021774944,
+    "current_ratio": 2.025255328393455,
+    "roa": 0.04821369987025742,
+    "bv": 3317.76,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 9194914.0,
+      "2024-Q3": 14167008.0,
+      "2024-Q4": 19073703.0,
+      "2025-Q1": 4894437.0,
+      "2025-Q2": 9583334.0,
+      "2025-Q3": 14807300.0,
+      "2025-Q4": 19906774.0,
+      "2026-Q1": 5256848.0,
+      "2026-Q2": 10852703.0
+    },
+    "eps": {
+      "2024-Q2": 210.0,
+      "2024-Q3": 317.0,
+      "2024-Q4": 422.0,
+      "2025-Q1": 105.0,
+      "2025-Q2": 195.0,
+      "2025-Q3": 325.0,
+      "2025-Q4": 457.0,
+      "2026-Q1": 116.0,
+      "2026-Q2": 239.0
+    },
+    "net_income": {
+      "2024-Q2": 1013820.0,
+      "2024-Q3": 1528375.0,
+      "2024-Q4": 2033641.0,
+      "2025-Q1": 505575.0,
+      "2025-Q2": 938968.0,
+      "2025-Q3": 1568567.0,
+      "2025-Q4": 2205022.0,
+      "2026-Q1": 558949.0,
+      "2026-Q2": 1151435.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 275.0,
+      "2023": 382.0,
+      "2024": 422.0,
+      "2025": 457.0
+    },
+    "revenue_per_share": {
+      "2022": 18579927.0,
+      "2024": 19073703.0,
+      "2025": 19906774.0
+    }
+  },
+  "statistik": {
+    "market_cap": 16242499911680,
+    "enterprise_value": 13741151223808,
+    "shares_outstanding": 4819733000,
+    "free_float_pct": 20.0
+  },
+  "akumulasi": {
+    "score": 3.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1027,
+    "vol_trend": 0.511,
+    "price_chg_20d": 2.12
+  },
+  "neraca": {
+    "aset": 23881905.0,
+    "aset_lancar": 11056363.0,
+    "kas": 4296374.0,
+    "piutang_usaha": 2024372.0,
+    "persediaan": 2883050.0,
+    "aset_tetap": 93029.0,
+    "liabilitas": 6686521.0,
+    "liabilitas_jangka_pendek": 5459244.0,
+    "utang_usaha": 2024372.0,
+    "utang_bank": 371499.0,
+    "ekuitas": 15990722.0,
+    "ekuitas_induk": 15990722.0,
+    "modal_saham": null,
+    "saldo_laba": 96395.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10852703.0,
+    "beban_pokok": 9164736.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1339848.0,
+    "beban_pajak": 19117.0,
+    "laba_bersih": 1151435.0,
+    "laba_induk": 1151435.0,
+    "eps_basic": 239.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 93029.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

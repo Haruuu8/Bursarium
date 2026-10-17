@@ -1,0 +1,128 @@
+{
+  "kode": "IRSX",
+  "nama": "PT Folago Global Nusantara Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Application",
+  "harga": 302.0,
+  "update": "2026-10-11 11:37",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 67.41071,
+    "pb": 6.1887784,
+    "ps": 3.5324144,
+    "roe": 0.024433701447167194,
+    "eps": 4.48,
+    "de": 0.6348801430947427,
+    "margin_net": 0.028049457748185572,
+    "current_ratio": 2.1989379127776565,
+    "roa": 0.014902464146840268,
+    "bv": 48.8,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 195569915829.0,
+      "2024-Q2": 480696666885.0,
+      "2024-Q3": 723001954574.0,
+      "2024-Q4": 841598245742.0,
+      "2025-Q1": 51205643534.0,
+      "2025-Q2": 100428391477.0,
+      "2025-Q3": 207301769727.0,
+      "2025-Q4": 410110515167.0,
+      "2026-Q1": 170734078319.0,
+      "2026-Q2": 275088421433.0
+    },
+    "eps": {
+      "2024-Q1": 120000.0,
+      "2024-Q2": 260000.0,
+      "2024-Q3": 360000.0,
+      "2024-Q4": -80000.0,
+      "2025-Q1": -130000.0,
+      "2025-Q2": -320000.0,
+      "2025-Q3": 4.45,
+      "2025-Q4": 4.6,
+      "2026-Q1": 530000.0,
+      "2026-Q2": 1.25
+    },
+    "net_income": {
+      "2024-Q1": 601145948.0,
+      "2024-Q2": 1294271736.0,
+      "2024-Q3": 1819521287.0,
+      "2024-Q4": -541067228.0,
+      "2025-Q1": -629788906.0,
+      "2025-Q2": -1586698213.0,
+      "2025-Q3": 23596162635.0,
+      "2025-Q4": 25256540651.0,
+      "2026-Q1": 3303653945.0,
+      "2026-Q2": 7716081054.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 2.27,
+      "2023": -470000.0,
+      "2024": -80000.0,
+      "2025": 4.6
+    },
+    "revenue_per_share": {
+      "2022": 161800639510.0,
+      "2023": 248810884330.0,
+      "2024": 841598245742.0,
+      "2025": 410110515167.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1870904295424,
+    "enterprise_value": 1760294993920,
+    "shares_outstanding": 6195047377,
+    "free_float_pct": 31.432000007447243
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1746,
+    "vol_trend": 1.071,
+    "price_chg_20d": -27.05
+  },
+  "neraca": {
+    "aset": 517772160226.0,
+    "aset_lancar": 439206864930.0,
+    "kas": 57376392479.0,
+    "piutang_usaha": 219842713155.0,
+    "persediaan": 116661285204.0,
+    "aset_tetap": 44200000000.0,
+    "liabilitas": 200493022078.0,
+    "liabilitas_jangka_pendek": 199735909949.0,
+    "utang_usaha": 219842713155.0,
+    "utang_bank": null,
+    "ekuitas": 315796649586.0,
+    "ekuitas_induk": 315796649586.0,
+    "modal_saham": null,
+    "saldo_laba": 3800000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 275088421433.0,
+    "beban_pokok": 230865019397.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 16063671726.0,
+    "beban_pajak": -8091212239.0,
+    "laba_bersih": 7716081054.0,
+    "laba_induk": 7716081054.0,
+    "eps_basic": 1.25,
+    "eps_diluted": 1.25
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 44200000000.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

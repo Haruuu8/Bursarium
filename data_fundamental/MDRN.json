@@ -1,0 +1,128 @@
+{
+  "kode": "MDRN",
+  "nama": "PT Modern Internasional Tbk",
+  "sektor": "Industrials",
+  "industri": "Business Equipment & Supplies",
+  "harga": 26.0,
+  "update": "2026-10-11 14:22",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 2.8230186,
+    "pb": -0.8300345,
+    "ps": 6.7956676,
+    "roe": -0.16786496654519042,
+    "eps": 9.21,
+    "de": -1.8548960534922045,
+    "margin_net": 2.238491570216465,
+    "current_ratio": 0.2820774927393179,
+    "roa": 0.19635716630047717,
+    "bv": -40.68,
+    "bv_src": "ekuitas/penuh",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 11847825395.0,
+      "2024-Q2": 20272955235.0,
+      "2024-Q3": 29300817839.0,
+      "2024-Q4": 37122146788.0,
+      "2025-Q1": 11170224000.0,
+      "2025-Q2": 19886391269.0,
+      "2025-Q3": 28338542538.0,
+      "2025-Q4": 33735755845.0,
+      "2026-Q1": 7920658367.0,
+      "2026-Q2": 15351058122.0
+    },
+    "eps": {
+      "2024-Q1": 10000.0,
+      "2024-Q2": 370000.0,
+      "2024-Q3": 330000.0,
+      "2024-Q4": 1.0,
+      "2025-Q1": 30000.0,
+      "2025-Q2": 2.34,
+      "2025-Q3": 3.89,
+      "2025-Q4": 9.0,
+      "2026-Q1": 4.6,
+      "2026-Q2": 4.5
+    },
+    "net_income": {
+      "2024-Q1": 82666441.0,
+      "2024-Q2": 2837633303.0,
+      "2024-Q3": 2481691403.0,
+      "2024-Q4": 8769447135.0,
+      "2025-Q1": 212230321.0,
+      "2025-Q2": 17861666857.0,
+      "2025-Q3": 29710620319.0,
+      "2025-Q4": 70270078986.0,
+      "2026-Q1": 35140787548.0,
+      "2026-Q2": 34363214200.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10.0,
+      "2023": 2.0,
+      "2024": 1.0,
+      "2025": 9.0
+    },
+    "revenue_per_share": {
+      "2022": 65015524242.0,
+      "2023": 49215810145.0,
+      "2024": 37122146788.0,
+      "2025": 33735755845.0
+    }
+  },
+  "statistik": {
+    "market_cap": 198436372480,
+    "enterprise_value": 435689324544,
+    "shares_outstanding": 5032167798,
+    "free_float_pct": 29.57477718830234
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 175003616356.0,
+    "aset_lancar": 40585949303.0,
+    "kas": 482636964.0,
+    "piutang_usaha": 4357995236.0,
+    "persediaan": 19848610710.0,
+    "aset_tetap": 3312190639.0,
+    "liabilitas": 379711095869.0,
+    "liabilitas_jangka_pendek": 143882267631.0,
+    "utang_usaha": 4357995236.0,
+    "utang_bank": 14580612755.0,
+    "ekuitas": -204707479513.0,
+    "ekuitas_induk": -204707479513.0,
+    "modal_saham": null,
+    "saldo_laba": 5000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 15351058122.0,
+    "beban_pokok": 3654734972.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 34363214200.0,
+    "beban_pajak": null,
+    "laba_bersih": 34363214200.0,
+    "laba_induk": 34363214200.0,
+    "eps_basic": 4.5,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3312190639.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,125 @@
+{
+  "kode": "RISE",
+  "nama": "PT Jaya Sukses Makmur Sentosa Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 600.0,
+  "update": "2026-10-11 16:00",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 54.744526,
+    "pb": 3.47377,
+    "ps": 20.068895,
+    "roe": 0.04414187475860651,
+    "eps": 10.96,
+    "de": 0.2878621305969554,
+    "margin_net": 0.42957908053960814,
+    "current_ratio": 2.30787579943825,
+    "roa": 0.02887955601084342,
+    "bv": 172.72,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 59500469175.0,
+      "2024-Q2": 140927867343.0,
+      "2024-Q3": 224916462470.0,
+      "2024-Q4": 365587667602.0,
+      "2025-Q2": 213927754618.0,
+      "2025-Q3": 294148059026.0,
+      "2025-Q4": 410719479745.0,
+      "2026-Q1": 173106436459.0,
+      "2026-Q2": 287497988540.0
+    },
+    "eps": {
+      "2024-Q1": 80000.0,
+      "2024-Q2": 790000.0,
+      "2024-Q3": 2.34,
+      "2024-Q4": 3.0,
+      "2025-Q2": 3.02,
+      "2025-Q3": 4.74,
+      "2025-Q4": 5.38,
+      "2026-Q1": 6.0,
+      "2026-Q2": 7.62
+    },
+    "net_income": {
+      "2024-Q1": 849091652.0,
+      "2024-Q2": 8640471807.0,
+      "2024-Q3": 25646744130.0,
+      "2024-Q4": 37349059658.0,
+      "2025-Q2": 33092639343.0,
+      "2025-Q3": 51921690356.0,
+      "2025-Q4": 87194578466.0,
+      "2026-Q1": 97161354304.0,
+      "2026-Q2": 123503121574.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 3.0,
+      "2023": 1.0,
+      "2024": 3.0,
+      "2025": 5.38
+    },
+    "revenue_per_share": {
+      "2022": 319782354630.0,
+      "2023": 279072020902.0,
+      "2024": 365587667602.0,
+      "2025": 410719479745.0
+    }
+  },
+  "statistik": {
+    "market_cap": 9719159717888,
+    "enterprise_value": 10618782351360,
+    "shares_outstanding": 16198599990,
+    "free_float_pct": 19.704999999817886
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3302,
+    "vol_trend": 1.616,
+    "price_chg_20d": -25.0
+  },
+  "neraca": {
+    "aset": 4276489622196.0,
+    "aset_lancar": 1583672609107.0,
+    "kas": 258576605054.0,
+    "piutang_usaha": 8789874237.0,
+    "persediaan": 3873923733.0,
+    "aset_tetap": 382514156773.0,
+    "liabilitas": 805400130966.0,
+    "liabilitas_jangka_pendek": 686203568447.0,
+    "utang_usaha": 8789874237.0,
+    "utang_bank": 499885302987.0,
+    "ekuitas": 2797867608691.0,
+    "ekuitas_induk": 2797867608691.0,
+    "modal_saham": null,
+    "saldo_laba": 12200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 287497988540.0,
+    "beban_pokok": 107972101614.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 118148596932.0,
+    "beban_pajak": -5518586236.0,
+    "laba_bersih": 123503121574.0,
+    "laba_induk": 123503121574.0,
+    "eps_basic": 7.62,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4272103632.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,122 @@
+{
+  "kode": "VTNY",
+  "nama": "PT Venteny Fortuna International Tbk",
+  "sektor": "Industrials",
+  "industri": "Staffing & Employment Services",
+  "harga": 55.0,
+  "update": "2026-10-11 11:28",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 91.666664,
+    "pb": 0.8223807,
+    "ps": 1.0468822,
+    "roe": 0.005447144958012303,
+    "eps": 0.6,
+    "de": 3.2108620816956766,
+    "margin_net": 0.07526335276611869,
+    "current_ratio": null,
+    "roa": 0.0012932069035378267,
+    "bv": 66.88,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 87940630373.0,
+      "2024-Q3": 186039266955.0,
+      "2024-Q4": 303538111695.0,
+      "2025-Q1": 81282026051.0,
+      "2025-Q2": 104012575741.0,
+      "2025-Q3": 136621262145.0,
+      "2025-Q4": 327314571307.0,
+      "2026-Q1": 30163800981.0
+    },
+    "eps": {
+      "2024-Q2": 590000.0,
+      "2024-Q3": 420000.0,
+      "2024-Q4": 1.68,
+      "2025-Q1": 830000.0,
+      "2025-Q2": 1.18,
+      "2025-Q3": 1.601811400573602,
+      "2025-Q4": 1.01,
+      "2026-Q1": 360000.0
+    },
+    "net_income": {
+      "2024-Q2": 3703118314.0,
+      "2024-Q3": 3475891219.0,
+      "2024-Q4": 10541237725.0,
+      "2025-Q1": 5228967685.0,
+      "2025-Q2": 7395678187.0,
+      "2025-Q3": 10035658287.0,
+      "2025-Q4": 6358730813.0,
+      "2026-Q1": 2270228794.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 260000.0,
+      "2023": 260000.0,
+      "2024": 1.68,
+      "2025": 1.01
+    },
+    "revenue_per_share": {
+      "2022": 50101480644.0,
+      "2023": 181967665791.0,
+      "2024": 303538111695.0,
+      "2025": 327314571307.0
+    }
+  },
+  "statistik": {
+    "market_cap": 344585633792,
+    "enterprise_value": 1241013288960,
+    "shares_outstanding": 6265193445,
+    "free_float_pct": 21.789000004292763
+  },
+  "akumulasi": {
+    "score": 5.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0389,
+    "vol_trend": 0.819,
+    "price_chg_20d": -23.61
+  },
+  "neraca": {
+    "aset": 1755503150957.0,
+    "aset_lancar": null,
+    "kas": 139830970977.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 91153693692.0,
+    "liabilitas": 1338204069768.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": 116928523.0,
+    "utang_bank": 104240000000.0,
+    "ekuitas": 416774073666.0,
+    "ekuitas_induk": 416774073666.0,
+    "modal_saham": null,
+    "saldo_laba": 17530341767.0
+  },
+  "laba_rugi": {
+    "pendapatan": 30163800981.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5094033104.0,
+    "beban_pajak": -2863200834.0,
+    "laba_bersih": 2270228794.0,
+    "laba_induk": 2270228794.0,
+    "eps_basic": 360000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 233460293.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

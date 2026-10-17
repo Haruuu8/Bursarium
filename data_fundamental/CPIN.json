@@ -1,0 +1,128 @@
+{
+  "kode": "CPIN",
+  "nama": "PT Charoen Pokphand Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 2960.0,
+  "update": "2026-10-11 13:10",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.5198236,
+    "pb": 1.3908886,
+    "ps": 0.62985915,
+    "roe": 0.10626446033748285,
+    "eps": 454.0,
+    "de": 0.5006027994239076,
+    "margin_net": 0.0940758923971068,
+    "current_ratio": 2.6814595034963373,
+    "roa": 0.07079541710339524,
+    "bv": 2128.14,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 15912620.0,
+      "2024-Q2": 32961973.0,
+      "2024-Q3": 49718726.0,
+      "2024-Q4": 67477992.0,
+      "2025-Q1": 17704697.0,
+      "2025-Q2": 33061683.0,
+      "2025-Q3": 50604542.0,
+      "2025-Q4": 70704988.0,
+      "2026-Q1": 19952120.0,
+      "2026-Q2": 39418494.0
+    },
+    "eps": {
+      "2024-Q1": 43.0,
+      "2024-Q2": 108.0,
+      "2024-Q3": 146.0,
+      "2024-Q4": 226.0,
+      "2025-Q1": 94.0,
+      "2025-Q2": 116.0,
+      "2025-Q3": 205.0,
+      "2025-Q4": 344.0,
+      "2026-Q1": 157.0,
+      "2026-Q2": 226.0
+    },
+    "net_income": {
+      "2024-Q1": 711038.0,
+      "2024-Q2": 1768080.0,
+      "2024-Q3": 2386802.0,
+      "2024-Q4": 3712926.0,
+      "2025-Q1": 1537031.0,
+      "2025-Q2": 1900390.0,
+      "2025-Q3": 3365043.0,
+      "2025-Q4": 5643863.0,
+      "2026-Q1": 2577936.0,
+      "2026-Q2": 3708330.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 179.0,
+      "2023": 141.0,
+      "2024": 226.0,
+      "2025": 344.0
+    },
+    "revenue_per_share": {
+      "2022": 56867544.0,
+      "2023": 61615850.0,
+      "2024": 67477992.0,
+      "2025": 70704988.0
+    }
+  },
+  "statistik": {
+    "market_cap": 48538079723520,
+    "enterprise_value": 52578830254080,
+    "shares_outstanding": 16398000000,
+    "free_float_pct": 38.902
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1948,
+    "vol_trend": 0.33,
+    "price_chg_20d": -6.33
+  },
+  "neraca": {
+    "aset": 52380933.0,
+    "aset_lancar": 30932743.0,
+    "kas": 5368132.0,
+    "piutang_usaha": 2451876.0,
+    "persediaan": 17160669.0,
+    "aset_tetap": 247048.0,
+    "liabilitas": 17469626.0,
+    "liabilitas_jangka_pendek": 11535786.0,
+    "utang_usaha": 2451876.0,
+    "utang_bank": 4832090.0,
+    "ekuitas": 34897180.0,
+    "ekuitas_induk": 34897180.0,
+    "modal_saham": null,
+    "saldo_laba": 33000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 39418494.0,
+    "beban_pokok": 32469647.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4754305.0,
+    "beban_pajak": -1046572.0,
+    "laba_bersih": 3708330.0,
+    "laba_induk": 3708330.0,
+    "eps_basic": 226.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 247048.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

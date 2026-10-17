@@ -1,0 +1,113 @@
+{
+  "kode": "NAYZ",
+  "nama": "PT Hassana Boga Sejahtera Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 115.0,
+  "update": "2026-10-11 11:33",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.6613436,
+    "ps": 30.226227,
+    "roe": -0.04726678334224861,
+    "eps": null,
+    "de": 0.027246460491034952,
+    "margin_net": -0.8152865524043306,
+    "current_ratio": 5.852999694609032,
+    "roa": -0.04601345402583671,
+    "bv": 24.67,
+    "bv_src": "harga/pb",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 25395148558.0,
+      "2024-Q4": 35026119215.0,
+      "2025-Q2": 17809179118.0,
+      "2025-Q4": 23863696726.0,
+      "2026-Q2": 3647365418.0
+    },
+    "eps": {
+      "2024-Q2": 50000.0,
+      "2024-Q4": 10000.0,
+      "2025-Q2": -45831.341256412925,
+      "2025-Q4": -170000.0,
+      "2026-Q2": -120000.0
+    },
+    "net_income": {
+      "2024-Q2": 1189202974.0,
+      "2024-Q4": 134371998.0,
+      "2025-Q2": -1168704460.0,
+      "2025-Q4": -4290647080.0,
+      "2026-Q2": -2973647977.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.1,
+      "2023": 10000.0,
+      "2024": 10000.0,
+      "2025": -170000.0
+    },
+    "revenue_per_share": {
+      "2022": 42236350827.0,
+      "2023": 48004920268.0,
+      "2024": 35026119215.0,
+      "2025": 23863696726.0
+    }
+  },
+  "statistik": {
+    "market_cap": 293251317760,
+    "enterprise_value": 287158435840,
+    "shares_outstanding": 2550011472,
+    "free_float_pct": 32.88000000025098
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.6534,
+    "vol_trend": 1.628,
+    "price_chg_20d": 57.53
+  },
+  "neraca": {
+    "aset": 64625619614.0,
+    "aset_lancar": 9376096708.0,
+    "kas": 6092356281.0,
+    "piutang_usaha": 382510827.0,
+    "persediaan": 2449312222.0,
+    "aset_tetap": 55141518473.0,
+    "liabilitas": 1714129382.0,
+    "liabilitas_jangka_pendek": 1601930155.0,
+    "utang_usaha": 382510827.0,
+    "utang_bank": null,
+    "ekuitas": 62912002187.0,
+    "ekuitas_induk": 62912002187.0,
+    "modal_saham": null,
+    "saldo_laba": 260000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3647365418.0,
+    "beban_pokok": 2419415562.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2973672416.0,
+    "beban_pajak": null,
+    "laba_bersih": -2973647977.0,
+    "laba_induk": -2973647977.0,
+    "eps_basic": -120000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9181689995.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

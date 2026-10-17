@@ -1,0 +1,115 @@
+{
+  "kode": "NAIK",
+  "nama": "PT Adiwarna Anugerah Abadi Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 82.0,
+  "update": "2026-10-11 12:05",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.512761,
+    "pb": 1.2808297,
+    "ps": 1.2704076,
+    "roe": 0.05654669614758666,
+    "eps": 8.62,
+    "de": 0.262745934280249,
+    "margin_net": 0.11803926152479996,
+    "current_ratio": 4.354040413276305,
+    "roa": 0.04478073903268407,
+    "bv": 64.02,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q4": 207168060758.0,
+      "2025-Q1": 58895496326.0,
+      "2025-Q2": 102913454792.0,
+      "2025-Q3": 170024480684.0,
+      "2025-Q4": 215703608729.0,
+      "2026-Q1": 67119697442.0,
+      "2026-Q2": 102111435774.0
+    },
+    "eps": {
+      "2024-Q4": 12.0,
+      "2025-Q1": 4.0,
+      "2025-Q2": 4.0,
+      "2025-Q3": 7.0,
+      "2025-Q4": 9.0,
+      "2026-Q1": 3.0,
+      "2026-Q2": 4.0
+    },
+    "net_income": {
+      "2024-Q4": 30901926976.0,
+      "2025-Q1": 9302393496.0,
+      "2025-Q2": 14247825905.0,
+      "2025-Q3": 24271568657.0,
+      "2025-Q4": 30706934366.0,
+      "2026-Q1": 10470520787.0,
+      "2026-Q2": 12053158472.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 12.0,
+      "2025": 9.0
+    },
+    "revenue_per_share": {
+      "2024": 207168060758.0,
+      "2025": 215703608729.0
+    }
+  },
+  "statistik": {
+    "market_cap": 273012604928,
+    "enterprise_value": 258072199168,
+    "shares_outstanding": 3329422047,
+    "free_float_pct": 27.46499999373615
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.318,
+    "vol_trend": 0.74,
+    "price_chg_20d": -11.83
+  },
+  "neraca": {
+    "aset": 269159436230.0,
+    "aset_lancar": 203503731122.0,
+    "kas": 23612704719.0,
+    "piutang_usaha": 56343949393.0,
+    "persediaan": 41004280033.0,
+    "aset_tetap": 39454811196.0,
+    "liabilitas": 56005365468.0,
+    "liabilitas_jangka_pendek": 46739054259.0,
+    "utang_usaha": 56343949393.0,
+    "utang_bank": 7038800000.0,
+    "ekuitas": 213154070762.0,
+    "ekuitas_induk": 213154070762.0,
+    "modal_saham": null,
+    "saldo_laba": 2102000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 102111435774.0,
+    "beban_pokok": 69392634431.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 13429651031.0,
+    "beban_pajak": -1376492559.0,
+    "laba_bersih": 12053158472.0,
+    "laba_induk": 12053158472.0,
+    "eps_basic": 4.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6103280394.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

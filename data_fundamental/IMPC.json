@@ -1,0 +1,125 @@
+{
+  "kode": "IMPC",
+  "nama": "PT Impack Pratama Industri Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 1330.0,
+  "update": "2026-10-11 13:44",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 94.46023,
+    "pb": 23.045868,
+    "ps": 15.038192,
+    "roe": 0.14148101091122572,
+    "eps": 14.08,
+    "de": 0.6057312573285001,
+    "margin_net": 0.18109528343374998,
+    "current_ratio": 2.4400650167276723,
+    "roa": 0.08385605900699818,
+    "bv": 57.71,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 1434176317746.0,
+      "2024-Q3": 2415233577303.0,
+      "2024-Q4": 3877933381099.0,
+      "2025-Q1": 937245752338.0,
+      "2025-Q2": 1900589834513.0,
+      "2025-Q3": 3023806539609.0,
+      "2025-Q4": 4271459779365.0,
+      "2026-Q1": 1175611319712.0,
+      "2026-Q2": 2465577035977.0
+    },
+    "eps": {
+      "2024-Q2": 4.92,
+      "2024-Q3": 7.32,
+      "2024-Q4": 9.94,
+      "2025-Q1": 2.81,
+      "2025-Q2": 5.45,
+      "2025-Q3": 8.58,
+      "2025-Q4": 11.39,
+      "2026-Q1": 3.69,
+      "2026-Q2": 8.15
+    },
+    "net_income": {
+      "2024-Q2": 266983706742.0,
+      "2024-Q3": 397377649905.0,
+      "2024-Q4": 539386235478.0,
+      "2025-Q1": 152455221600.0,
+      "2025-Q2": 295636799426.0,
+      "2025-Q3": 465762711915.0,
+      "2025-Q4": 620044943361.0,
+      "2026-Q1": 202606320902.0,
+      "2026-Q2": 446504372158.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 63.43,
+      "2023": 14.85,
+      "2024": 9.94,
+      "2025": 11.39
+    },
+    "revenue_per_share": {
+      "2022": 2808698656787.0,
+      "2023": 2860388195952.0,
+      "2024": 3877933381099.0,
+      "2025": 4271459779365.0
+    }
+  },
+  "statistik": {
+    "market_cap": 72731420786688,
+    "enterprise_value": 73570214477824,
+    "shares_outstanding": 54685279100,
+    "free_float_pct": 20.92400000021212
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3211,
+    "vol_trend": 0.689,
+    "price_chg_20d": -22.67
+  },
+  "neraca": {
+    "aset": 5324652475270.0,
+    "aset_lancar": 2765196208974.0,
+    "kas": 479224105745.0,
+    "piutang_usaha": 819526405761.0,
+    "persediaan": 1105739368117.0,
+    "aset_tetap": 87656762396.0,
+    "liabilitas": 1911646326302.0,
+    "liabilitas_jangka_pendek": 1133246938101.0,
+    "utang_usaha": 819526405761.0,
+    "utang_bank": 205791425948.0,
+    "ekuitas": 3155931451735.0,
+    "ekuitas_induk": 3155931451735.0,
+    "modal_saham": null,
+    "saldo_laba": 108537000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2465577035977.0,
+    "beban_pokok": 1463156498143.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 560353351858.0,
+    "beban_pajak": 1283227403.0,
+    "laba_bersih": 446504372158.0,
+    "laba_induk": 446504372158.0,
+    "eps_basic": 8.15,
+    "eps_diluted": 8.15
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 87656762396.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

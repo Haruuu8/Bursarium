@@ -1,0 +1,125 @@
+{
+  "kode": "ESTI",
+  "nama": "PT Ever Shine Tex Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 159.0,
+  "update": "2026-10-11 13:23",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 159000.0,
+    "pb": 1.7871193,
+    "ps": 0.6384182,
+    "roe": 0.007607206494490579,
+    "eps": 0.0,
+    "de": 2.951588505705469,
+    "margin_net": 0.005944760487859482,
+    "current_ratio": 1.223985596808962,
+    "roa": 0.001925085031237539,
+    "bv": 88.97,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 12228431.0,
+      "2024-Q3": 18876791.0,
+      "2024-Q4": 25845724.0,
+      "2025-Q1": 6610493.0,
+      "2025-Q2": 13199211.0,
+      "2025-Q3": 19907072.0,
+      "2025-Q4": 27182148.0,
+      "2026-Q1": 100947324056.0,
+      "2026-Q2": 229433270152.0
+    },
+    "eps": {
+      "2024-Q2": 120.0,
+      "2024-Q3": 60.0,
+      "2024-Q4": 330.0,
+      "2025-Q1": 200.0,
+      "2025-Q2": 300.0,
+      "2025-Q3": 240.0,
+      "2025-Q4": 560.0,
+      "2026-Q1": 1.33,
+      "2026-Q2": 680000.0
+    },
+    "net_income": {
+      "2024-Q2": 237258.0,
+      "2024-Q3": 123099.0,
+      "2024-Q4": 674620.0,
+      "2025-Q1": 403521.0,
+      "2025-Q2": 595311.0,
+      "2025-Q3": 487822.0,
+      "2025-Q4": 1136327.0,
+      "2026-Q1": 2689371988.0,
+      "2026-Q2": 1363925839.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 30.0,
+      "2023": 640.0,
+      "2024": 330.0,
+      "2025": 560.0
+    },
+    "revenue_per_share": {
+      "2022": 28555758.0,
+      "2023": 22330314.0,
+      "2024": 25845724.0,
+      "2025": 27182148.0
+    }
+  },
+  "statistik": {
+    "market_cap": 320418185216,
+    "enterprise_value": 751511339008,
+    "shares_outstanding": 2015208720,
+    "free_float_pct": 8.791000021079702
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5443,
+    "vol_trend": 0.559,
+    "price_chg_20d": -6.47
+  },
+  "neraca": {
+    "aset": 708501607393.0,
+    "aset_lancar": 402421684919.0,
+    "kas": 1830464284.0,
+    "piutang_usaha": 53338278244.0,
+    "persediaan": 333164195931.0,
+    "aset_tetap": 3440136422.0,
+    "liabilitas": 529201860360.0,
+    "liabilitas_jangka_pendek": 328779755226.0,
+    "utang_usaha": 53338278244.0,
+    "utang_bank": 237309785951.0,
+    "ekuitas": 179293915577.0,
+    "ekuitas_induk": 179293915577.0,
+    "modal_saham": null,
+    "saldo_laba": 14606270612.0
+  },
+  "laba_rugi": {
+    "pendapatan": 229433270152.0,
+    "beban_pokok": 185713862887.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1409176079.0,
+    "beban_pajak": -40413344.0,
+    "laba_bersih": 1363925839.0,
+    "laba_induk": 1363925839.0,
+    "eps_basic": 680000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3440136422.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

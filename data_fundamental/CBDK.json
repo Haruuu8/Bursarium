@@ -1,0 +1,112 @@
+{
+  "kode": "CBDK",
+  "nama": "PT Bangun Kosambi Sukses Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 3440.0,
+  "update": "2026-10-11 12:09",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.6960936,
+    "pb": 1.8372074,
+    "ps": 5.544867,
+    "roe": 0.1592637093004093,
+    "eps": 446.98,
+    "de": 0.8281995638659524,
+    "margin_net": 0.7642740319839956,
+    "current_ratio": 1.5057535627153777,
+    "roa": 0.07573015232078098,
+    "bv": 1872.41,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q4": 2248978321.0,
+      "2025-Q2": 1195472355.0,
+      "2025-Q3": 2298139383.0,
+      "2025-Q4": 2503637505.0,
+      "2026-Q1": 742591511.0,
+      "2026-Q2": 2201827594.0
+    },
+    "eps": {
+      "2024-Q4": 181.25251653747023,
+      "2025-Q2": 91.19782509777615,
+      "2025-Q3": 232.3774750607725,
+      "2025-Q4": 241.44733244827427,
+      "2026-Q1": 95.57940216458016,
+      "2026-Q2": 297.3393972133738
+    },
+    "net_income": {
+      "2024-Q4": 924759402.0,
+      "2025-Q2": 516995409.0,
+      "2025-Q3": 1311544524.0,
+      "2025-Q4": 1364251522.0,
+      "2026-Q1": 541437397.0,
+      "2026-Q2": 1682799653.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2024": 181.25251653747023,
+      "2025": 241.44733244827427
+    },
+    "revenue_per_share": {
+      "2024": 2248978321.0,
+      "2025": 2503637505.0
+    }
+  },
+  "statistik": {
+    "market_cap": 19462442975232,
+    "enterprise_value": 19164165046272,
+    "shares_outstanding": 5657686900,
+    "free_float_pct": 10.939662108201851
+  },
+  "akumulasi": {
+    "score": 3.2,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0875,
+    "vol_trend": 0.625,
+    "price_chg_20d": -9.47
+  },
+  "neraca": {
+    "aset": 22220999185.0,
+    "aset_lancar": 11377101934.0,
+    "kas": 3425899867.0,
+    "piutang_usaha": 6706610.0,
+    "persediaan": 5359218273.0,
+    "aset_tetap": 568089463.0,
+    "liabilitas": 8750856958.0,
+    "liabilitas_jangka_pendek": 7555752957.0,
+    "utang_usaha": 6706610.0,
+    "utang_bank": 44995311.0,
+    "ekuitas": 10566121186.0,
+    "ekuitas_induk": 10566121186.0,
+    "modal_saham": null,
+    "saldo_laba": 12100000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2201827594.0,
+    "beban_pokok": 352574965.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1691997857.0,
+    "beban_pajak": -563718.0,
+    "laba_bersih": 1682799653.0,
+    "laba_induk": 1682799653.0,
+    "eps_basic": 297.3393972133738,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 153447848.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

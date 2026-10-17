@@ -1,0 +1,128 @@
+{
+  "kode": "WICO",
+  "nama": "Pt Wicaksana Overseas International Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Food Distribution",
+  "harga": 123.0,
+  "update": "2026-10-11 15:29",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": -1.3363609,
+    "ps": 1.056991,
+    "roe": 0.040850492949175456,
+    "eps": null,
+    "de": -1.7860271097461629,
+    "margin_net": -0.0926738411339043,
+    "current_ratio": 0.7952675509067184,
+    "roa": -0.051964463579177306,
+    "bv": -95.8,
+    "bv_src": "ekuitas/penuh",
+    "eps_src": "none",
+    "eps_reliable": false,
+    "eps_period": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 366062103780.0,
+      "2024-Q2": 686136032360.0,
+      "2024-Q3": 1027801354244.0,
+      "2024-Q4": 1315263858724.0,
+      "2025-Q1": 208812466744.0,
+      "2025-Q2": 407464359425.0,
+      "2025-Q3": 532573565916.0,
+      "2025-Q4": 584928864006.0,
+      "2026-Q1": 52159864922.0,
+      "2026-Q2": 101086954424.0
+    },
+    "eps": {
+      "2024-Q1": -7.96,
+      "2024-Q2": -22.04,
+      "2024-Q3": -35.82,
+      "2024-Q4": -67.04,
+      "2025-Q1": -16.06,
+      "2025-Q2": -29.06,
+      "2025-Q3": -42.1,
+      "2025-Q4": -27.73,
+      "2026-Q1": -150000.0,
+      "2026-Q2": -3.91
+    },
+    "net_income": {
+      "2024-Q1": -19059637097.0,
+      "2024-Q2": -52752276133.0,
+      "2024-Q3": -85753525257.0,
+      "2024-Q4": -160468651250.0,
+      "2025-Q1": -38453218654.0,
+      "2025-Q2": -69559557158.0,
+      "2025-Q3": -100781314199.0,
+      "2025-Q4": -66385215277.0,
+      "2026-Q1": -361189401.0,
+      "2026-Q2": -9368116355.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -106.07,
+      "2023": -60.37,
+      "2024": -67.04,
+      "2025": -27.73
+    },
+    "revenue_per_share": {
+      "2022": 1619163790020.0,
+      "2023": 1423095952132.0,
+      "2024": 1315263858724.0,
+      "2025": 584928864006.0
+    }
+  },
+  "statistik": {
+    "market_cap": 294426378240,
+    "enterprise_value": 546165850112,
+    "shares_outstanding": 2393710348,
+    "free_float_pct": 58.12300001804562
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 180279285299.0,
+    "aset_lancar": 115981536070.0,
+    "kas": 3291558098.0,
+    "piutang_usaha": 58513612038.0,
+    "persediaan": 50323569935.0,
+    "aset_tetap": 44370171401.0,
+    "liabilitas": 409584036063.0,
+    "liabilitas_jangka_pendek": 145839643448.0,
+    "utang_usaha": 58513612038.0,
+    "utang_bank": null,
+    "ekuitas": -229326886377.0,
+    "ekuitas_induk": -229326886377.0,
+    "modal_saham": null,
+    "saldo_laba": -1039511821287.0
+  },
+  "laba_rugi": {
+    "pendapatan": 101086954424.0,
+    "beban_pokok": 75464872319.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9366386399.0,
+    "beban_pajak": -1729956.0,
+    "laba_bersih": -9368116355.0,
+    "laba_induk": -9368116355.0,
+    "eps_basic": -3.91,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 53701734.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

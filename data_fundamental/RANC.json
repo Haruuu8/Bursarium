@@ -1,0 +1,128 @@
+{
+  "kode": "RANC",
+  "nama": "PT Supra Boga Lestari Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Grocery Stores",
+  "harga": 535.0,
+  "update": "2026-10-11 14:47",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.374138,
+    "ps": 0.2729467,
+    "roe": -0.06162681120571561,
+    "eps": 18.0,
+    "de": 3.8792176266780465,
+    "margin_net": -0.009532382518930495,
+    "current_ratio": 0.8693636345569297,
+    "roa": -0.01261268618236323,
+    "bv": 158.56,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 734392432.0,
+      "2024-Q2": 1431372594.0,
+      "2024-Q3": 2168087539.0,
+      "2024-Q4": 2874068978.0,
+      "2025-Q1": 753191772.0,
+      "2025-Q2": 1451740627.0,
+      "2025-Q3": 2186274714.0,
+      "2025-Q4": 2914546197.0,
+      "2026-Q1": 823453026.0,
+      "2026-Q2": 1603730229.0
+    },
+    "eps": {
+      "2024-Q1": -80000.0,
+      "2024-Q2": 38.0,
+      "2024-Q3": 29.0,
+      "2024-Q4": 18.0,
+      "2025-Q1": -3.33,
+      "2025-Q2": -23.0,
+      "2025-Q3": -26.0,
+      "2025-Q4": -34000.0,
+      "2026-Q1": 5.0,
+      "2026-Q2": -10.0
+    },
+    "net_income": {
+      "2024-Q1": -13129853.0,
+      "2024-Q2": 60066581.0,
+      "2024-Q3": 45802205.0,
+      "2024-Q4": 27384408.0,
+      "2025-Q1": -5210962.0,
+      "2025-Q2": -35893074.0,
+      "2025-Q3": -40251641.0,
+      "2025-Q4": -53085162.0,
+      "2026-Q1": 7170494.0,
+      "2026-Q2": -15287370.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -53.0,
+      "2023": -77.0,
+      "2024": 18.0,
+      "2025": -34000.0
+    },
+    "revenue_per_share": {
+      "2022": 2898831241312.0,
+      "2023": 2804214846.0,
+      "2024": 2874068978.0,
+      "2025": 2914546197.0
+    }
+  },
+  "statistik": {
+    "market_cap": 837000822784,
+    "enterprise_value": 1182777868288,
+    "shares_outstanding": 1564487500,
+    "free_float_pct": 11.750999992010163
+  },
+  "akumulasi": {
+    "score": 4.4,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0428,
+    "vol_trend": 0.33,
+    "price_chg_20d": -1.83
+  },
+  "neraca": {
+    "aset": 1212062980.0,
+    "aset_lancar": 565482122.0,
+    "kas": 84763749.0,
+    "piutang_usaha": 5740500.0,
+    "persediaan": 460614595.0,
+    "aset_tetap": 227779529.0,
+    "liabilitas": 962292775.0,
+    "liabilitas_jangka_pendek": 650455229.0,
+    "utang_usaha": 5740500.0,
+    "utang_bank": 100000000.0,
+    "ekuitas": 248063622.0,
+    "ekuitas_induk": 248063622.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1603730229.0,
+    "beban_pokok": 1204785100.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -14581321.0,
+    "beban_pajak": -939654.0,
+    "laba_bersih": -15287370.0,
+    "laba_induk": -15287370.0,
+    "eps_basic": -10.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 26447065.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

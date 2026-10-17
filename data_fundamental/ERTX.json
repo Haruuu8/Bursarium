@@ -1,0 +1,128 @@
+{
+  "kode": "ERTX",
+  "nama": "PT Eratex Djaja Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 167.0,
+  "update": "2026-10-11 13:26",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 166999.98,
+    "pb": 7260.8696,
+    "ps": 1989.8429,
+    "roe": 0.04477517484410624,
+    "eps": 0.0,
+    "de": 1.6876510402255127,
+    "margin_net": 0.02482422931717326,
+    "current_ratio": 1.3578950242653671,
+    "roa": 0.016659375564901994,
+    "bv": 0.02,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 29925192.0,
+      "2024-Q2": 53145877.0,
+      "2024-Q3": 78224798.0,
+      "2024-Q4": 109066101.0,
+      "2025-Q1": 33830252.0,
+      "2025-Q2": 62518115.0,
+      "2025-Q3": 86794210.0,
+      "2025-Q4": 116825455.0,
+      "2026-Q1": 28306544.0,
+      "2026-Q2": 53667084.0
+    },
+    "eps": {
+      "2024-Q1": 400.0,
+      "2024-Q2": 200.0,
+      "2024-Q3": 500.0,
+      "2024-Q4": 1200.0,
+      "2025-Q1": 900.0,
+      "2025-Q2": 1100.0,
+      "2025-Q3": 1400.0,
+      "2025-Q4": 1600.0,
+      "2026-Q1": 600.0,
+      "2026-Q2": 1000.0
+    },
+    "net_income": {
+      "2024-Q1": 503627.0,
+      "2024-Q2": 278975.0,
+      "2024-Q3": 657845.0,
+      "2024-Q4": 1499328.0,
+      "2025-Q1": 1215291.0,
+      "2025-Q2": 1442519.0,
+      "2025-Q3": 1777856.0,
+      "2025-Q4": 2103229.0,
+      "2026-Q1": 812624.0,
+      "2026-Q2": 1332244.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 3000.0,
+      "2023": 2100.0,
+      "2024": 1200.0,
+      "2025": 1600.0
+    },
+    "revenue_per_share": {
+      "2022": 110083991.0,
+      "2023": 120703132.0,
+      "2024": 109066101.0,
+      "2025": 116825455.0
+    }
+  },
+  "statistik": {
+    "market_cap": 214852141056,
+    "enterprise_value": 214881222656,
+    "shares_outstanding": 1286539792,
+    "free_float_pct": 7.808000003158861
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3917,
+    "vol_trend": 1.156,
+    "price_chg_20d": -7.73
+  },
+  "neraca": {
+    "aset": 79969624.0,
+    "aset_lancar": 42867479.0,
+    "kas": 8647358.0,
+    "piutang_usaha": 15304821.0,
+    "persediaan": 16187384.0,
+    "aset_tetap": 36282639.0,
+    "liabilitas": 50214499.0,
+    "liabilitas_jangka_pendek": 31569067.0,
+    "utang_usaha": 15304821.0,
+    "utang_bank": 23276387.0,
+    "ekuitas": 29754077.0,
+    "ekuitas_induk": 29754077.0,
+    "modal_saham": null,
+    "saldo_laba": 2418541.0
+  },
+  "laba_rugi": {
+    "pendapatan": 53667084.0,
+    "beban_pokok": 48676944.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1689765.0,
+    "beban_pajak": -357521.0,
+    "laba_bersih": 1332244.0,
+    "laba_induk": 1332244.0,
+    "eps_basic": 1000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2676300.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

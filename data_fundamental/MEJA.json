@@ -1,0 +1,111 @@
+{
+  "kode": "MEJA",
+  "nama": "PT Harta Djaya Karya Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 159.0,
+  "update": "2026-10-11 11:58",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.57041,
+    "ps": 122.98604,
+    "roe": -0.09791953247017433,
+    "eps": 1.35,
+    "de": 0.30217834614238803,
+    "margin_net": -1.3946639998937713,
+    "current_ratio": 3.42817492517586,
+    "roa": -0.07519671384511506,
+    "bv": 34.79,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 22692102641.0,
+      "2024-Q4": 47153308372.0,
+      "2025-Q2": 31072926112.0,
+      "2025-Q4": 28074319453.0,
+      "2026-Q2": 6370411230.0
+    },
+    "eps": {
+      "2024-Q2": 1.49,
+      "2024-Q4": 1.35,
+      "2025-Q2": 520000.0,
+      "2025-Q4": -10.88,
+      "2026-Q2": -3.41
+    },
+    "net_income": {
+      "2024-Q2": 2382646030.0,
+      "2024-Q4": 2504965432.0,
+      "2025-Q2": 988781385.0,
+      "2025-Q4": -21609675210.0,
+      "2026-Q2": -8884583207.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2023": 6.51,
+      "2024": 1.35,
+      "2025": -10.88
+    },
+    "revenue_per_share": {
+      "2023": 45539143133.0,
+      "2024": 47153308372.0,
+      "2025": 28074319453.0
+    }
+  },
+  "statistik": {
+    "market_cap": 414684905472,
+    "enterprise_value": 399302524928,
+    "shares_outstanding": 2608081058,
+    "free_float_pct": 60.37400000165179
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4085,
+    "vol_trend": 2.439,
+    "price_chg_20d": 41.96
+  },
+  "neraca": {
+    "aset": 118151216359.0,
+    "aset_lancar": 83564424466.0,
+    "kas": 30297648254.0,
+    "piutang_usaha": 18874072901.0,
+    "persediaan": null,
+    "aset_tetap": 7959727270.0,
+    "liabilitas": 27417703005.0,
+    "liabilitas_jangka_pendek": 24375776117.0,
+    "utang_usaha": 18874072901.0,
+    "utang_bank": 8401776175.0,
+    "ekuitas": 90733513354.0,
+    "ekuitas_induk": 90733513354.0,
+    "modal_saham": null,
+    "saldo_laba": 400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6370411230.0,
+    "beban_pokok": 8929069100.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -8792739552.0,
+    "beban_pajak": -91843655.0,
+    "laba_bersih": -8884583207.0,
+    "laba_induk": -8884583207.0,
+    "eps_basic": -3.41,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

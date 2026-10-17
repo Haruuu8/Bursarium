@@ -1,0 +1,112 @@
+{
+  "kode": "AHAP",
+  "nama": "PT Asuransi Harta Aman Pratama Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Property & Casualty",
+  "harga": 78.0,
+  "update": "2026-10-11 12:13",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.2179885,
+    "ps": 0.5608314,
+    "roe": 0.0012378140051025333,
+    "eps": 1.39,
+    "de": 4.141008528964927,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 0.00024077260291022128,
+    "bv": 35.17,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2024",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2024-Q1": -1.63,
+      "2024-Q2": 100000.0,
+      "2024-Q3": 320000.0,
+      "2024-Q4": 1.39,
+      "2025-Q1": -1.13,
+      "2025-Q2": -2.32,
+      "2025-Q3": -1.55,
+      "2025-Q4": -6.23,
+      "2026-Q1": 370000.0,
+      "2026-Q2": 40000.0
+    },
+    "net_income": {
+      "2024-Q1": -7977240976.0,
+      "2024-Q2": 68680622.0,
+      "2024-Q3": 1584355992.0,
+      "2024-Q4": 6811452597.0,
+      "2025-Q1": -5520835593.0,
+      "2025-Q2": -11362169679.0,
+      "2025-Q3": -7581171013.0,
+      "2025-Q4": -30505548108.0,
+      "2026-Q1": 1810834424.0,
+      "2026-Q2": 213295356.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -1.52,
+      "2023": 1.02,
+      "2024": 1.39,
+      "2025": -6.23
+    },
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 466054512640,
+    "enterprise_value": 292660936704,
+    "shares_outstanding": 5975057737,
+    "free_float_pct": 21.20305871112957
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3118,
+    "vol_trend": 5.3,
+    "price_chg_20d": -20.41
+  },
+  "neraca": {
+    "aset": 885878847601.0,
+    "aset_lancar": null,
+    "kas": 16256708355.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 5495908932.0,
+    "liabilitas": 713562687725.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 172316159876.0,
+    "ekuitas_induk": 172316159876.0,
+    "modal_saham": null,
+    "saldo_laba": 775991100.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 213295356.0,
+    "beban_pajak": null,
+    "laba_bersih": 213295356.0,
+    "laba_induk": 213295356.0,
+    "eps_basic": 40000.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 69466044.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

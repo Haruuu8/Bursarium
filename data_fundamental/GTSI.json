@@ -1,0 +1,122 @@
+{
+  "kode": "GTSI",
+  "nama": "PT GTS Internasional Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 128.0,
+  "update": "2026-10-11 11:01",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 42666.668,
+    "ps": 57221.25,
+    "roe": -0.038165651373159366,
+    "eps": 110.0,
+    "de": 1.6196855822945635,
+    "margin_net": -0.10752925253687402,
+    "current_ratio": 1.28401186364787,
+    "roa": -0.013295252674142584,
+    "bv": 0.0,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 15277673.0,
+      "2024-Q3": 23712192.0,
+      "2024-Q4": 32153797.0,
+      "2025-Q1": 8016224.0,
+      "2025-Q3": 26874681.0,
+      "2025-Q4": 34700976.0,
+      "2026-Q1": 7460323.0,
+      "2026-Q2": 17692739.0
+    },
+    "eps": {
+      "2024-Q2": 174.66053886079072,
+      "2024-Q3": 384.0986891322112,
+      "2024-Q4": 430.0,
+      "2025-Q1": 100.6364785531241,
+      "2025-Q3": 293.98230160116,
+      "2025-Q4": 110.0,
+      "2026-Q1": -55.941463645303735,
+      "2026-Q2": -120.0
+    },
+    "net_income": {
+      "2024-Q2": 2762980.0,
+      "2024-Q3": 6076113.0,
+      "2024-Q4": 6766322.0,
+      "2025-Q1": 1591983.0,
+      "2025-Q3": 4650548.0,
+      "2025-Q4": 1754635.0,
+      "2026-Q1": -884946.0,
+      "2026-Q2": -1902487.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 168.200896798949,
+      "2023": 252.23029204361183,
+      "2024": 430.0,
+      "2025": 110.0
+    },
+    "revenue_per_share": {
+      "2022": 41226395.0,
+      "2023": 32160145.0,
+      "2024": 32153797.0,
+      "2025": 34700976.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2024850325504,
+    "enterprise_value": 2024892661760,
+    "shares_outstanding": 15819142767,
+    "free_float_pct": 15.201999997222732
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1576,
+    "vol_trend": 0.565,
+    "price_chg_20d": -22.42
+  },
+  "neraca": {
+    "aset": 143095212.0,
+    "aset_lancar": 41406066.0,
+    "kas": 18956242.0,
+    "piutang_usaha": 11740660.0,
+    "persediaan": 6101132.0,
+    "aset_tetap": 62580398.0,
+    "liabilitas": 80738325.0,
+    "liabilitas_jangka_pendek": 32247417.0,
+    "utang_usaha": 11740660.0,
+    "utang_bank": 983989.0,
+    "ekuitas": 49848147.0,
+    "ekuitas_induk": 49848147.0,
+    "modal_saham": null,
+    "saldo_laba": 130000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 17692739.0,
+    "beban_pokok": 16829448.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1018147.0,
+    "beban_pajak": -268275.0,
+    "laba_bersih": -1902487.0,
+    "laba_induk": -1902487.0,
+    "eps_basic": -120.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5699324.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

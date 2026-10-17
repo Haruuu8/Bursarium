@@ -1,0 +1,122 @@
+{
+  "kode": "ZONE",
+  "nama": null,
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Retail",
+  "harga": 650.0,
+  "update": "2026-10-11 17:07",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.518492,
+    "pb": 1.4103454,
+    "ps": 0.6509073,
+    "roe": 0.0766,
+    "eps": 56.43,
+    "de": 0.39878,
+    "margin_net": 0.03463,
+    "current_ratio": 2.144,
+    "roa": 0.056939997,
+    "bv": 460.88,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 214866901302.0,
+      "2024-Q2": 405019510871.0,
+      "2024-Q3": 545588694777.0,
+      "2024-Q4": 708360249417.0,
+      "2025-Q2": 403137402591.0,
+      "2025-Q3": 536807422963.0,
+      "2025-Q4": 726559968958.0,
+      "2026-Q2": 545536023494.0
+    },
+    "eps": {
+      "2024-Q1": 20.0,
+      "2024-Q2": 17.0,
+      "2024-Q3": 12.0,
+      "2024-Q4": 8.0,
+      "2025-Q2": 14.0,
+      "2025-Q3": 13.0,
+      "2025-Q4": 16.0,
+      "2026-Q2": 32.0
+    },
+    "net_income": {
+      "2024-Q1": 17080418535.0,
+      "2024-Q2": 15009021624.0,
+      "2024-Q3": 10477618701.0,
+      "2024-Q4": 7134915495.0,
+      "2025-Q2": 11657797537.0,
+      "2025-Q3": 11432059799.0,
+      "2025-Q4": 13962129168.0,
+      "2026-Q2": 27784069479.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 84.0,
+      "2023": 54.0,
+      "2024": 8.0,
+      "2025": 16.0
+    },
+    "revenue_per_share": {
+      "2022": 672881397294.0,
+      "2023": 735452173943.0,
+      "2024": 708360249417.0,
+      "2025": 726559968958.0
+    }
+  },
+  "statistik": {
+    "market_cap": 565611462656,
+    "enterprise_value": 719910469632,
+    "shares_outstanding": 870171478,
+    "free_float_pct": 15.070000030499736
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2009,
+    "vol_trend": 0.214,
+    "price_chg_20d": -8.45
+  },
+  "neraca": {
+    "aset": 670088701640.0,
+    "aset_lancar": 400417827094.0,
+    "kas": 6701446127.0,
+    "piutang_usaha": 16526680726.0,
+    "persediaan": 354750210474.0,
+    "aset_tetap": 96922146170.0,
+    "liabilitas": 268276754614.0,
+    "liabilitas_jangka_pendek": 186764866527.0,
+    "utang_usaha": 16526680726.0,
+    "utang_bank": 81147864682.0,
+    "ekuitas": 401044701101.0,
+    "ekuitas_induk": 401044701101.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 545536023494.0,
+    "beban_pokok": 257524380525.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 36833692980.0,
+    "beban_pajak": -9050546292.0,
+    "laba_bersih": 27784069479.0,
+    "laba_induk": 27784069479.0,
+    "eps_basic": 32.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6411836070.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

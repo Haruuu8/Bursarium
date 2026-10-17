@@ -1,0 +1,128 @@
+{
+  "kode": "NSSS",
+  "nama": "PT Nusantara Sawit Sejahtera Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 735.0,
+  "update": "2026-10-11 11:40",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 26.18454,
+    "pb": 7.6911,
+    "ps": 8.261394,
+    "roe": 0.14708785264001076,
+    "eps": 28.07,
+    "de": 0.8894971539963413,
+    "margin_net": 0.3185138148161547,
+    "current_ratio": 1.6461214241879931,
+    "roa": 0.077844790659137,
+    "bv": 95.57,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 277969552453.0,
+      "2024-Q2": 569568087440.0,
+      "2024-Q3": 954808195690.0,
+      "2024-Q4": 1489898814745.0,
+      "2025-Q1": 476415137341.0,
+      "2025-Q2": 946616391710.0,
+      "2025-Q3": 1491521162430.0,
+      "2025-Q4": 2013801.0,
+      "2026-Q1": 517129.0,
+      "2026-Q2": 1050394.0
+    },
+    "eps": {
+      "2024-Q1": 241315.08856066474,
+      "2024-Q2": 928125.006106801,
+      "2024-Q3": 5.688266029787131,
+      "2024-Q4": 12.798474257661685,
+      "2025-Q1": 6.813094539214981,
+      "2025-Q2": 13.203463772923106,
+      "2025-Q3": 23.281173013334392,
+      "2025-Q4": 27.217701894454276,
+      "2026-Q1": 5.9566242088747,
+      "2026-Q2": 14.056426489784409
+    },
+    "net_income": {
+      "2024-Q1": 5740615530.0,
+      "2024-Q2": 22090611987.0,
+      "2024-Q3": 135389654379.0,
+      "2024-Q4": 304623763595.0,
+      "2025-Q1": 162162337360.0,
+      "2025-Q2": 314263149343.0,
+      "2025-Q3": 554128437613.0,
+      "2025-Q4": 647824.0,
+      "2026-Q1": 141777.0,
+      "2026-Q2": 334565.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 3.47,
+      "2023": 90000.0,
+      "2024": 12.798474257661685,
+      "2025": 27.217701894454276
+    },
+    "revenue_per_share": {
+      "2022": 1134094562861.0,
+      "2023": 1184580702742.0,
+      "2024": 1489898814745.0,
+      "2025": 2013801.0
+    }
+  },
+  "statistik": {
+    "market_cap": 17494153625600,
+    "enterprise_value": 18293003911168,
+    "shares_outstanding": 23801568645,
+    "free_float_pct": 48.00200000011386
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1318,
+    "vol_trend": 0.413,
+    "price_chg_20d": -8.12
+  },
+  "neraca": {
+    "aset": 4297847.0,
+    "aset_lancar": 1322410.0,
+    "kas": 402311.0,
+    "piutang_usaha": 34035.0,
+    "persediaan": 299528.0,
+    "aset_tetap": 925907.0,
+    "liabilitas": 2023244.0,
+    "liabilitas_jangka_pendek": 803349.0,
+    "utang_usaha": 34035.0,
+    "utang_bank": 153401.0,
+    "ekuitas": 2274593.0,
+    "ekuitas_induk": 2274593.0,
+    "modal_saham": null,
+    "saldo_laba": 829050.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1050394.0,
+    "beban_pokok": 554470.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 419517.0,
+    "beban_pajak": -84951.0,
+    "laba_bersih": 334565.0,
+    "laba_induk": 334565.0,
+    "eps_basic": 14.056426489784409,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33216.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "BUKK",
+  "nama": "PT Bukaka Teknik Utama Tbk.",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 960.0,
+  "update": "2026-10-11 13:01",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.875527,
+    "pb": 0.3441837,
+    "ps": 0.50212216,
+    "roe": 0.030041307688476376,
+    "eps": 97.21,
+    "de": 2.323703497942502,
+    "margin_net": 0.09770307898163783,
+    "current_ratio": 1.5607754365678772,
+    "roa": 0.00849422386467481,
+    "bv": 2789.21,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 915577065.0,
+      "2024-Q2": 1828963476.0,
+      "2024-Q3": 2557847298.0,
+      "2024-Q4": 3646418392.0,
+      "2025-Q1": 678864360.0,
+      "2025-Q2": 1156821247.0,
+      "2025-Q3": 1849870112.0,
+      "2025-Q4": 3940576336.0,
+      "2026-Q1": 867802155.0,
+      "2026-Q2": 2264486353.0
+    },
+    "eps": {
+      "2024-Q1": 65.0,
+      "2024-Q2": 132.0,
+      "2024-Q3": 219.0,
+      "2024-Q4": 197.0,
+      "2025-Q1": 62.0,
+      "2025-Q2": 136.0,
+      "2025-Q3": 235.0,
+      "2025-Q4": 150.0,
+      "2026-Q1": 31.0,
+      "2026-Q2": 84.0
+    },
+    "net_income": {
+      "2024-Q1": 172264929.0,
+      "2024-Q2": 349370415.0,
+      "2024-Q3": 578691633.0,
+      "2024-Q4": 519845313.0,
+      "2025-Q1": 162429301.0,
+      "2025-Q2": 359887968.0,
+      "2025-Q3": 619429564.0,
+      "2025-Q4": 394847376.0,
+      "2026-Q1": 81176919.0,
+      "2026-Q2": 221247289.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 171.0,
+      "2023": 262.0,
+      "2024": 197.0,
+      "2025": 150.0
+    },
+    "revenue_per_share": {
+      "2022": 4146850937.0,
+      "2023": 5128345025.0,
+      "2024": 3646418392.0,
+      "2025": 3940576336.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2534833913856,
+    "enterprise_value": 18715781365760,
+    "shares_outstanding": 2640452000,
+    "free_float_pct": 10.080999995455324
+  },
+  "akumulasi": {
+    "score": 5.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1133,
+    "vol_trend": 1.285,
+    "price_chg_20d": -1.03
+  },
+  "neraca": {
+    "aset": 26046792800.0,
+    "aset_lancar": 5258151974.0,
+    "kas": 847934264.0,
+    "piutang_usaha": 894934798.0,
+    "persediaan": 595932016.0,
+    "aset_tetap": 2773585050.0,
+    "liabilitas": 17113539287.0,
+    "liabilitas_jangka_pendek": 3368935627.0,
+    "utang_usaha": 894934798.0,
+    "utang_bank": 507607160.0,
+    "ekuitas": 7364768914.0,
+    "ekuitas_induk": 7364768914.0,
+    "modal_saham": null,
+    "saldo_laba": 207170440.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2264486353.0,
+    "beban_pokok": 670157112.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 266639957.0,
+    "beban_pajak": -20440560.0,
+    "laba_bersih": 221247289.0,
+    "laba_induk": 221247289.0,
+    "eps_basic": 84.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9787163.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

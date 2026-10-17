@@ -1,0 +1,122 @@
+{
+  "kode": "KRYA",
+  "nama": "PT Bangun Karya Perkasa Jaya Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 54.0,
+  "update": "2026-10-11 11:19",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.4242232,
+    "ps": 1.7059082,
+    "roe": 0.16410916502149353,
+    "eps": 5.18,
+    "de": 3.17868222525689,
+    "margin_net": 0.2164776174676712,
+    "current_ratio": 1.2228196557665103,
+    "roa": 0.03818820612698362,
+    "bv": 15.77,
+    "bv_src": "harga/pb",
+    "eps_src": "laba_penuh_x2.0",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 154944643473.0,
+      "2024-Q4": 216248735873.0,
+      "2025-Q1": 31119740068.0,
+      "2025-Q2": 57989200324.0,
+      "2025-Q3": 81794400347.0,
+      "2025-Q4": 90768892226.0,
+      "2026-Q1": 10074240253.0,
+      "2026-Q2": 19891926211.0
+    },
+    "eps": {
+      "2024-Q3": 910000.0,
+      "2024-Q4": 1.28,
+      "2025-Q1": -16.58,
+      "2025-Q2": -36.14,
+      "2025-Q3": -44.18,
+      "2025-Q4": -51.08,
+      "2026-Q1": 640000.0,
+      "2026-Q2": 2.59
+    },
+    "net_income": {
+      "2024-Q3": 1518091418.0,
+      "2024-Q4": 2141103413.0,
+      "2025-Q1": -27587184730.0,
+      "2025-Q2": -60139130326.0,
+      "2025-Q3": -73504985610.0,
+      "2025-Q4": -84995844479.0,
+      "2026-Q1": 1068366435.0,
+      "2026-Q2": 4306156793.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 7.69,
+      "2023": 1.16,
+      "2024": 1.28,
+      "2025": -51.08
+    },
+    "revenue_per_share": {
+      "2022": 198114461203.0,
+      "2023": 141769263046.0,
+      "2024": 216248735873.0,
+      "2025": 90768892226.0
+    }
+  },
+  "statistik": {
+    "market_cap": 89852944384,
+    "enterprise_value": 134476193792,
+    "shares_outstanding": 1663943474,
+    "free_float_pct": 63.1629999709954
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.355,
+    "vol_trend": 0.537,
+    "price_chg_20d": -19.4
+  },
+  "neraca": {
+    "aset": 112761431597.0,
+    "aset_lancar": 65719341332.0,
+    "kas": 42860283.0,
+    "piutang_usaha": 42813985594.0,
+    "persediaan": 3806581295.0,
+    "aset_tetap": 31323006890.0,
+    "liabilitas": 83407310343.0,
+    "liabilitas_jangka_pendek": 53744099567.0,
+    "utang_usaha": 42813985594.0,
+    "utang_bank": null,
+    "ekuitas": 26239587487.0,
+    "ekuitas_induk": 26239587487.0,
+    "modal_saham": null,
+    "saldo_laba": 2500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 19891926211.0,
+    "beban_pokok": 8537792953.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8960437504.0,
+    "beban_pajak": -1541945633.0,
+    "laba_bersih": 4306156793.0,
+    "laba_induk": 4306156793.0,
+    "eps_basic": 2.59,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3708587966.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

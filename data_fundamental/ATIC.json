@@ -1,0 +1,128 @@
+{
+  "kode": "ATIC",
+  "nama": "PT Anabatic Technologies Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 442.0,
+  "update": "2026-10-11 12:41",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.403685,
+    "pb": 1.6414752,
+    "ps": 0.13188781,
+    "roe": 0.0833483847957611,
+    "eps": 59.7,
+    "de": 8.719677839984843,
+    "margin_net": 0.011093603436480439,
+    "current_ratio": 1.0019300397338327,
+    "roa": 0.008380418478244915,
+    "bv": 269.27,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 2130472572283.0,
+      "2024-Q2": 4523882919292.0,
+      "2024-Q3": 6318003787775.0,
+      "2024-Q4": 8954849845355.0,
+      "2025-Q1": 1606122627524.0,
+      "2025-Q2": 3457112852799.0,
+      "2025-Q3": 6452672355430.0,
+      "2025-Q4": 8472399835440.0,
+      "2026-Q1": 2031914016727.0,
+      "2026-Q2": 4684147575721.0
+    },
+    "eps": {
+      "2024-Q1": 10.22,
+      "2024-Q2": 33.95,
+      "2024-Q3": 49.21,
+      "2024-Q4": 79.19,
+      "2025-Q1": 18.66,
+      "2025-Q2": 47.47,
+      "2025-Q3": 71.45,
+      "2025-Q4": 89.94,
+      "2026-Q1": 16.11,
+      "2026-Q2": 22.44
+    },
+    "net_income": {
+      "2024-Q1": 23663942314.0,
+      "2024-Q2": 78611083037.0,
+      "2024-Q3": 113949024345.0,
+      "2024-Q4": 183358086640.0,
+      "2025-Q1": 43206601066.0,
+      "2025-Q2": 109919563510.0,
+      "2025-Q3": 165433610693.0,
+      "2025-Q4": 208235056602.0,
+      "2026-Q1": 37302321109.0,
+      "2026-Q2": 51964075643.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 31.7,
+      "2023": 101.56,
+      "2024": 79.19,
+      "2025": 89.94
+    },
+    "revenue_per_share": {
+      "2022": 7809976522248.0,
+      "2023": 10207024936502.0,
+      "2024": 8954849845355.0,
+      "2025": 8472399835440.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1279237160960,
+    "enterprise_value": 2654945935360,
+    "shares_outstanding": 2894201693,
+    "free_float_pct": 5.229600009082712
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2477,
+    "vol_trend": 1.292,
+    "price_chg_20d": -5.15
+  },
+  "neraca": {
+    "aset": 6200654033912.0,
+    "aset_lancar": 5313826364754.0,
+    "kas": 678897754394.0,
+    "piutang_usaha": 1970377315952.0,
+    "persediaan": 1793964267243.0,
+    "aset_tetap": 425667725558.0,
+    "liabilitas": 5436338088253.0,
+    "liabilitas_jangka_pendek": 5303590224888.0,
+    "utang_usaha": 1970377315952.0,
+    "utang_bank": 1501238239871.0,
+    "ekuitas": 623456300567.0,
+    "ekuitas_induk": 623456300567.0,
+    "modal_saham": null,
+    "saldo_laba": 35806031813.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4684147575721.0,
+    "beban_pokok": 4113671820985.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 137192347842.0,
+    "beban_pajak": 1321470686.0,
+    "laba_bersih": 51964075643.0,
+    "laba_induk": 51964075643.0,
+    "eps_basic": 22.44,
+    "eps_diluted": 22.44
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13065830721.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

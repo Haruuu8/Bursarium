@@ -1,0 +1,125 @@
+{
+  "kode": "GEMA",
+  "nama": "PT Gema Grahasarana Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 89.0,
+  "update": "2026-10-11 13:31",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.32824007,
+    "ps": 0.096329525,
+    "roe": -0.021929370812711135,
+    "eps": 13.27,
+    "de": 1.8396271627741358,
+    "margin_net": -0.013309705953066497,
+    "current_ratio": 1.1096224946091482,
+    "roa": -0.007772313202448951,
+    "bv": 271.14,
+    "bv_src": "harga/pb",
+    "eps_src": "audit_2025",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 671635649893.0,
+      "2024-Q3": 999259626011.0,
+      "2024-Q4": 1434109952734.0,
+      "2025-Q1": 379386670191.0,
+      "2025-Q2": 734463158882.0,
+      "2025-Q3": 1039714618473.0,
+      "2025-Q4": 1496503517434.0,
+      "2026-Q1": 336757756640.0,
+      "2026-Q2": 713447134481.0
+    },
+    "eps": {
+      "2024-Q2": 2.47,
+      "2024-Q3": 3.01,
+      "2024-Q4": 11.46,
+      "2025-Q1": 1.64,
+      "2025-Q2": 8.7,
+      "2025-Q3": 3.1693431775,
+      "2025-Q4": 13.27,
+      "2026-Q1": -4.5,
+      "2026-Q2": -5.94
+    },
+    "net_income": {
+      "2024-Q2": 3949329224.0,
+      "2024-Q3": 4816591104.0,
+      "2024-Q4": 18330954245.0,
+      "2025-Q1": 2623834073.0,
+      "2025-Q2": 13921618205.0,
+      "2025-Q3": 5070949084.0,
+      "2025-Q4": 21235336170.0,
+      "2026-Q1": -7193924433.0,
+      "2026-Q2": -9495771573.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 130000.0,
+      "2023": 8.52,
+      "2024": 11.46,
+      "2025": 13.27
+    },
+    "revenue_per_share": {
+      "2022": 1109283319347.0,
+      "2023": 1267990712443.0,
+      "2024": 1434109952734.0,
+      "2025": 1496503517434.0
+    }
+  },
+  "statistik": {
+    "market_cap": 142133002240,
+    "enterprise_value": 567024549888,
+    "shares_outstanding": 1597000000,
+    "free_float_pct": 20.922
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1309,
+    "vol_trend": 0.337,
+    "price_chg_20d": -4.3
+  },
+  "neraca": {
+    "aset": 1221743299023.0,
+    "aset_lancar": 761338932498.0,
+    "kas": 75884997188.0,
+    "piutang_usaha": 181341382798.0,
+    "persediaan": 211767920160.0,
+    "aset_tetap": 356200321075.0,
+    "liabilitas": 796588259024.0,
+    "liabilitas_jangka_pendek": 686124277578.0,
+    "utang_usaha": 181341382798.0,
+    "utang_bank": 389230815546.0,
+    "ekuitas": 433016143240.0,
+    "ekuitas_induk": 433016143240.0,
+    "modal_saham": null,
+    "saldo_laba": 282426225431.0
+  },
+  "laba_rugi": {
+    "pendapatan": 713447134481.0,
+    "beban_pokok": 547728765303.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 828092650.0,
+    "beban_pajak": -10283690761.0,
+    "laba_bersih": -9495771573.0,
+    "laba_induk": -9495771573.0,
+    "eps_basic": -5.94,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8226249686.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

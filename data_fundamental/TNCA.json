@@ -1,0 +1,125 @@
+{
+  "kode": "TNCA",
+  "nama": "PT Trimuda Nuansa Citra Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 175.0,
+  "update": "2026-10-11 15:59",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 54.500156,
+    "pb": 1.7689453,
+    "ps": 0.8910914,
+    "roe": -0.02580092051352793,
+    "eps": 3.21,
+    "de": 0.41225666677230866,
+    "margin_net": -0.024995382416638685,
+    "current_ratio": 1.9662508577345672,
+    "roa": -0.018270881877009825,
+    "bv": 98.93,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2024-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 16697853905.0,
+      "2024-Q2": 35872175315.0,
+      "2024-Q3": 52989266517.0,
+      "2024-Q4": 72944336594.0,
+      "2025-Q2": 34038085698.0,
+      "2025-Q3": 53355462655.0,
+      "2025-Q4": 73786658379.0,
+      "2026-Q1": 18122013900.0,
+      "2026-Q2": 43056618461.0
+    },
+    "eps": {
+      "2024-Q1": 2.52,
+      "2024-Q2": 1.24,
+      "2024-Q3": 1.14,
+      "2024-Q4": 940000.0,
+      "2025-Q2": 680000.0,
+      "2025-Q3": 1.31,
+      "2025-Q4": -2.17,
+      "2026-Q1": -7.47,
+      "2026-Q2": -2.55
+    },
+    "net_income": {
+      "2024-Q1": 1060640415.0,
+      "2024-Q2": 790276140.0,
+      "2024-Q3": 480025074.0,
+      "2024-Q4": 396660223.0,
+      "2025-Q2": 287005684.0,
+      "2025-Q3": 552071301.0,
+      "2025-Q4": -914906126.0,
+      "2026-Q1": -3145422329.0,
+      "2026-Q2": -1076216644.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 1.75,
+      "2023": 1.04,
+      "2024": 940000.0,
+      "2025": -2.17
+    },
+    "revenue_per_share": {
+      "2022": 73083784552.0,
+      "2023": 67912989559.0,
+      "2024": 72944336594.0,
+      "2025": 73786658379.0
+    }
+  },
+  "statistik": {
+    "market_cap": 73786998784,
+    "enterprise_value": 72307597312,
+    "shares_outstanding": 421640000,
+    "free_float_pct": 35.132999952566166
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4883,
+    "vol_trend": 0.28,
+    "price_chg_20d": -2.78
+  },
+  "neraca": {
+    "aset": 58903377037.0,
+    "aset_lancar": 29587939996.0,
+    "kas": 2390757259.0,
+    "piutang_usaha": 23826407048.0,
+    "persediaan": 442011288.0,
+    "aset_tetap": 27074152179.0,
+    "liabilitas": 17196188258.0,
+    "liabilitas_jangka_pendek": 15047896803.0,
+    "utang_usaha": 23826407048.0,
+    "utang_bank": null,
+    "ekuitas": 41712335164.0,
+    "ekuitas_induk": 41712335164.0,
+    "modal_saham": null,
+    "saldo_laba": -7391016382.0
+  },
+  "laba_rugi": {
+    "pendapatan": 43056618461.0,
+    "beban_pokok": 35088293334.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1148568914.0,
+    "beban_pajak": 71170854.0,
+    "laba_bersih": -1076216644.0,
+    "laba_induk": -1076216644.0,
+    "eps_basic": -2.55,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 56589419.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}

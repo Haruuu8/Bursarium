@@ -1,0 +1,125 @@
+{
+  "kode": "DSFI",
+  "nama": "PT Dharma Samudera Fishing Industries Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 82.0,
+  "update": "2026-10-11 13:19",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 8.735485,
+    "pb": 0.5317872,
+    "ps": 0.22400956,
+    "roe": 0.014953575632267258,
+    "eps": 9.39,
+    "de": 0.684344462956542,
+    "margin_net": 0.02375589423212445,
+    "current_ratio": 1.9874161683844365,
+    "roa": 0.008874964386912784,
+    "bv": 154.2,
+    "bv_src": "harga/pb",
+    "eps_src": "harga/pe",
+    "eps_reliable": true,
+    "eps_period": "2025-audit"
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 146099176464.0,
+      "2024-Q2": 284344963104.0,
+      "2024-Q3": 438203831661.0,
+      "2024-Q4": 575976306359.0,
+      "2025-Q1": 157532758387.0,
+      "2025-Q2": 329315446538.0,
+      "2025-Q3": 489077368786.0,
+      "2025-Q4": 654353707872.0,
+      "2026-Q1": 182994264940.0
+    },
+    "eps": {
+      "2024-Q1": 1.61,
+      "2024-Q2": 4.07,
+      "2024-Q3": 5.66,
+      "2024-Q4": 6.7,
+      "2025-Q1": 1.95,
+      "2025-Q2": 4.7,
+      "2025-Q3": 7.13,
+      "2025-Q4": 10.6,
+      "2026-Q1": 2.34
+    },
+    "net_income": {
+      "2024-Q1": 2999270571.0,
+      "2024-Q2": 7555708985.0,
+      "2024-Q3": 10514522269.0,
+      "2024-Q4": 12451027155.0,
+      "2025-Q1": 3615280582.0,
+      "2025-Q2": 8728156316.0,
+      "2025-Q3": 13242607432.0,
+      "2025-Q4": 19685208709.0,
+      "2026-Q1": 4347192403.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 11.5,
+      "2023": 6.5,
+      "2024": 6.7,
+      "2025": 10.6
+    },
+    "revenue_per_share": {
+      "2022": 552366215890.0,
+      "2023": 559596238807.0,
+      "2024": 575976306359.0,
+      "2025": 654353707872.0
+    }
+  },
+  "statistik": {
+    "market_cap": 152285102080,
+    "enterprise_value": 219365048320,
+    "shares_outstanding": 1857135500,
+    "free_float_pct": 30.403999977384526
+  },
+  "akumulasi": {
+    "score": 2.1,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0964,
+    "vol_trend": 4.452,
+    "price_chg_20d": -5.75
+  },
+  "neraca": {
+    "aset": 489826461660.0,
+    "aset_lancar": 332107603326.0,
+    "kas": 57649471679.0,
+    "piutang_usaha": 118741693651.0,
+    "persediaan": 132456674428.0,
+    "aset_tetap": 157368843978.0,
+    "liabilitas": 198947537603.0,
+    "liabilitas_jangka_pendek": 167105213598.0,
+    "utang_usaha": 118741693651.0,
+    "utang_bank": 118991647520.0,
+    "ekuitas": 290712570017.0,
+    "ekuitas_induk": 290712570017.0,
+    "modal_saham": null,
+    "saldo_laba": -12755371492.0
+  },
+  "laba_rugi": {
+    "pendapatan": 182994264940.0,
+    "beban_pokok": 157417209217.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5528053299.0,
+    "beban_pajak": -1180296450.0,
+    "laba_bersih": 4347192403.0,
+    "laba_induk": 4347192403.0,
+    "eps_basic": 2.34,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1855848321.0,
+    "dividen_dibayar": null
+  },
+  "update_bv": "2026-10-11 17:37"
+}
