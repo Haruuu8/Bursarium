@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quant.theme import load_theme, hero, section_title, info_banner
 from quant.auth import submit_registration
 
-st.set_page_config(page_title="Daytrade Platform", layout="wide")
+st.set_page_config(page_title="Bursarium", layout="wide")
 load_theme()
 
 try:
@@ -77,13 +77,14 @@ if st.session_state.get("authentication_status"):
 # ============ KONFIGURASI LANDING ============
 HARGA = 200000
 
+# Fitur tanpa icon/emoji
 FITUR = [
-    (":material/dashboard:", "Dashboard",    "Ringkasan market & watchlist harian"),
-    (":material/analytics:", "Fundamental",  "Analisis rasio keuangan & valuasi emiten IDX"),
-    (":material/trending_up:", "Technical",  "Chart, RSI, support-resistance, pre-cross setup"),
-    (":material/star:", "Watchlist",         "Pantau saham favorit Anda"),
-    (":material/payments:", "Valuation",     "Hitung valuasi & risk/reward otomatis"),
-    (":material/newspaper:", "News",         "Berita terkini seputar pasar IDX"),
+    ("Dashboard",    "Ringkasan market & watchlist harian"),
+    ("Fundamental",  "Analisis rasio keuangan & valuasi emiten IDX"),
+    ("Technical",    "Chart, RSI, support-resistance, pre-cross setup"),
+    ("Watchlist",    "Pantau saham favorit Anda"),
+    ("Valuation",    "Hitung valuasi & risk/reward otomatis"),
+    ("News",         "Berita terkini seputar pasar IDX"),
 ]
 
 
@@ -121,7 +122,7 @@ with st.sidebar:
 # ============ HERO ============
 st.markdown(
     hero(
-        "📊 Daytrade Platform",
+        "📊 Bursarium",
         "Platform analisis saham IDX — fundamental, teknikal, "
         "screening, dan valuasi dalam satu tempat. "
         "Semua yang Anda butuhkan untuk ambil keputusan trading.",
@@ -136,17 +137,14 @@ st.markdown(
 st.markdown(section_title("✨ Yang Anda Dapatkan"), unsafe_allow_html=True)
 
 cols = st.columns(2)
-for i, (icon, nama, desk) in enumerate(FITUR):
+for i, (nama, desk) in enumerate(FITUR):
     with cols[i % 2]:
         st.markdown(
             f'<div style="background:#0d1424; border:1px solid #1e2942; '
             f'border-left:3px solid #6366f1; border-radius:12px; '
             f'padding:18px 22px; margin-bottom:12px;">'
-            f'<div style="display:flex; align-items:center; gap:12px; '
-            f'margin-bottom:8px;">'
-            f'<div style="font-size:24px;">{icon}</div>'
             f'<div style="font-size:16px; font-weight:800; '
-            f'color:#ffffff;">{nama}</div></div>'
+            f'color:#ffffff; margin-bottom:8px;">{nama}</div>'
             f'<div style="font-size:13px; color:#94a3b8; '
             f'line-height:1.5;">{desk}</div></div>',
             unsafe_allow_html=True
@@ -284,7 +282,7 @@ with st.form("form_daftar", clear_on_submit=False):
 st.markdown(
     '<div style="text-align:center; padding:40px 20px 20px; '
     'font-size:12px; color:#64748b;">'
-    '© 2026 Daytrade Platform · IDX Analysis'
+    '© 2026 Bursarium · IDX Analysis'
     '</div>',
     unsafe_allow_html=True
 )
