@@ -5,8 +5,8 @@ AUTO SCREENER - filter otomatis per bulan + RATING.
 - Minggu dikelompokkan per kalender (Senin-Jumat).
 - Sinyal akhir bulan lalu yang entry-nya masuk bulan ini tetap ke-capture.
 - Saham suspended (gap > 7 hari) otomatis di-skip.
-- STEP 3: auto-regenerate JSON untuk Watchlist (Pre-Cross, Emerging,
-  Bottom Fishing, Buy Support, Breakout Buy).
+- STEP 3: auto-regenerate JSON untuk Watchlist.
+- STEP 4: auto-push ke GitHub.
 """
 
 import os
@@ -197,6 +197,63 @@ def jalankan_scan_json():
         return False
 
 
+def jalankan_git_push():
+    """STEP 4: Auto push ke GitHub."""
+    print(f"\n{'#'*100}")
+    print(f"#  STEP 4: Auto Push ke GitHub")
+    print(f"{'#'*100}\n")
+
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    env = _subprocess_env()
+
+    # 1. Git Add
+    print("Menjalankan: git add .")
+    try:
+        subprocess.run(["git", "add", "."], cwd=root, check=True, env=env)
+    except Exception as e:
+        print(f"[!] Git add gagal: {e}")
+        return False
+
+    # 2. Git Commit
+    commit_msg = f"Auto-update data: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+    print(f"Menjalankan: git commit -m \"{commit_msg}\"")
+    try:
+        result_commit = subprocess.run(
+            ["git", "commit", "-m", commit_msg],
+            cwd=root, capture_output=True, text=True, env=env
+        )
+        
+        # Kalau tidak ada perubahan (misal script dijalankan 2x di hari yang sama)
+        if result_commit.returncode != 0:
+            if "nothing to commit" in result_commit.stdout or "nothing to commit" in result_commit.stderr:
+                print("  [i] Tidak ada perubahan data baru untuk di-commit.")
+                return True # Tetap lanjut ke push (siapa tahu ada commit sebelumnya yang belum di-push)
+            else:
+                print(f"  [!] Git commit gagal: {result_commit.stderr}")
+                return False
+    except Exception as e:
+        print(f"[!] Git commit error: {e}")
+        return False
+
+    # 3. Git Push
+    print("Menjalankan: git push origin main")
+    try:
+        result_push = subprocess.run(
+            ["git", "push", "origin", "main"],
+            cwd=root, capture_output=True, text=True, env=env
+        )
+        if result_push.returncode != 0:
+            print(f"  [!] Git push gagal:")
+            print(result_push.stderr)
+            return False
+        
+        print("  [OK] Push ke GitHub berhasil! Streamlit akan otomatis me-reboot.")
+        return True
+    except Exception as e:
+        print(f"[!] Git push error: {e}")
+        return False
+
+
 # ============================================================
 # RULES
 # ============================================================
@@ -287,11 +344,6 @@ def _load_ohlcv(kode):
 
 
 def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
-    """
-    TP: High >= entry x 1.01 -> exit di High x 0.99
-    SL: Low <= entry x 0.97 -> exit -3% (incl. fee)
-    Semua kondisi tidak terproses -> SUSPENDED.
-    """
     df = _load_ohlcv(kode)
     if df is None:
         return None, "SUSPENDED"
@@ -895,6 +947,11 @@ def main():
     # STEP 3: Regenerate JSON untuk Watchlist
     # ============================================================
     jalankan_scan_json()
+
+    # ============================================================
+    # STEP 4: Auto Push ke GitHub
+    # ============================================================
+    jalankan_git_push()
 
     print(f"\n{'='*100}")
     print(f"SELESAI - {datetime.now().strftime('%H:%M:%S')}")

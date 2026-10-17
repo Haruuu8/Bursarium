@@ -82,7 +82,7 @@ def list_approved():
     return items
 
 
-def approve_registration(reg_id):
+def approve_registration(reg_id, custom_username=None, custom_password=None):
     if not supabase: return {"error": "DB Error"}
     
     res = supabase.table("users").select("*").eq("reg_id", reg_id).execute()
@@ -90,9 +90,22 @@ def approve_registration(reg_id):
     
     data = res.data[0]
     tele = data.get("telegram", "")
-    username = generate_username(tele)
-    password = generate_password()
+    
+    if custom_username and custom_username.strip():
+        username = custom_username.strip().lower().replace(" ", "")
+    else:
+        username = generate_username(tele)
+        
+    if custom_password and custom_password.strip():
+        password = custom_password.strip()
+    else:
+        password = generate_password()
+
     pw_hash = hash_password(password)
+
+    check = supabase.table("users").select("reg_id").eq("username", username).execute()
+    if check.data:
+        return {"error": f"Username '{username}' sudah dipakai user lain."}
 
     update_data = {
         "username": username,
@@ -160,11 +173,9 @@ def update_username(reg_id, new_username):
     """Ubah username user di database dengan validasi keunikan."""
     if not supabase: return {"error": "DB Error"}
     
-    # Validasi format (hanya huruf, angka, underscore)
     if not new_username.isalnum() and "_" not in new_username:
         return {"error": "Username hanya boleh huruf, angka, dan underscore."}
         
-    # Cek apakah username sudah dipakai user lain
     check = supabase.table("users").select("reg_id").eq("username", new_username).execute()
     if check.data and check.data[0]["reg_id"] != reg_id:
         return {"error": "Username sudah dipakai oleh user lain."}
@@ -195,3 +206,50 @@ def list_all_users():
         if u.get("username"):
             users[u["username"]] = u
     return users
+
+
+# ==========================================
+# FUNGSI BARU: GABUNGAN UPDATE USERNAME & PASSWORD
+# ==========================================
+def update_user_credentials(reg_id, new_username=None, new_password=None):
+    """Ubah username dan/atau password user di database dengan validasi."""
+    if not supabase: return {"error": "DB Error"}
+    
+    # Ambil data user saat ini
+    res = supabase.table("users").select("*").eq("reg_id", reg_id).execute()
+    if not res.data: return {"error": "Data tidak ditemukan"}
+    
+    current_data = res.data[0]
+    update_data = {}
+    
+    result = {
+        "success": True, 
+        "username": current_data.get("username"), 
+        "password": "*** (Tidak diubah)"
+    }
+    
+    # 1. Cek & Siapkan Update Username
+    if new_username and new_username.strip():
+        clean_username = new_username.strip().lower().replace(" ", "")
+        if clean_username != current_data.get("username"):
+            # Cek apakah username sudah dipakai user lain
+            check = supabase.table("users").select("reg_id").eq("username", clean_username).execute()
+            if check.data and check.data[0]["reg_id"] != reg_id:
+                return {"error": f"Username '{clean_username}' sudah dipakai user lain."}
+            update_data["username"] = clean_username
+            result["username"] = clean_username
+            
+    # 2. Cek & Siapkan Update Password
+    if new_password and new_password.strip():
+        pw_hash = hash_password(new_password.strip())
+        update_data["password_hash"] = pw_hash
+        result["password"] = new_password.strip()
+        
+    # 3. Eksekusi ke Database
+    if update_data:
+        try:
+            supabase.table("users").update(update_data).eq("reg_id", reg_id).execute()
+        except Exception as e:
+            return {"error": str(e)}
+            
+    return result
