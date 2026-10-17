@@ -430,88 +430,34 @@ footer { visibility: hidden; }
     p, li, .stMarkdown { font-size: 13px !important; line-height: 1.5 !important; }
 
     /* ========================================================
-       FIX GAMBAR 1: WATCHLIST (Tulisan TRUK berantakan)
+       FIX VALUASI: Paksa Flex Column jadi Grid 2 Kolom Menyamping
        ======================================================== */
-    /* Pastikan container flex tidak memaksa text jadi vertikal */
-    div[style*="display: flex; align-items: center; gap: 20px;"] {
-        flex-direction: row !important;
-        align-items: flex-start !important;
+    div[style*="display: flex; flex-direction: column"],
+    div[style*="display:flex; flex-direction:column"] {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px !important;
+        align-items: start !important;
     }
-    /* Paksa kode saham agar tidak turun ke bawah */
-    div[style*="flex: 1; min-width: 0;"] {
-        flex: 1 !important;
-        min-width: 50px !important;
-    }
-    /* Pastikan harga tetap di kanan */
-    div[style*="text-align:right; flex-shrink:0;"] {
-        min-width: 80px !important;
-        text-align: right !important;
-    }
-
-    /* ========================================================
-       FIX GAMBAR 2: VALUASI (Teks berantakan)
-       ======================================================== */
-    /* Jangan ubah flex-direction di valuation, cukup atur grid metric-nya */
-    div[style*="grid-template-columns: repeat(4, 1fr)"],
-    div[style*="grid-template-columns:repeat(4, 1fr)"],
-    div[style*="grid-template-columns: repeat(3, 1fr)"],
-    div[style*="grid-template-columns:repeat(3, 1fr)"] {
-        grid-template-columns: 1fr 1fr !important; /* Jadi 2 kolom */
-        gap: 8px !important;
-    }
-    /* Rapikan teks tengah di valuasi */
-    div[style*="text-align: center;"] {
+    
+    /* Paksa semua text rata kiri (termasuk Harga ke Fair Value) */
+    div[style*="text-align: center;"],
+    div[style*="text-align:center;"] {
         text-align: left !important;
     }
 
     /* ========================================================
-       FIX GAMBAR 3: PERFORMA (Tabel kepotong)
+       FIX BUY ON SUPPORT: Grid 4 Kolom jadi 2x2 rapi
        ======================================================== */
-    /* Ubah layout baris performa jadi wrap */
-    div[style*="display:flex; justify-content:space-between; align-items:center; padding:11px 18px;"] {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 8px !important;
-        padding: 12px !important;
-    }
-    /* Hilangkan min-width yang memaksa tabel melebar */
-    div[style*="display:flex; justify-content:space-between; align-items:center; padding:11px 18px;"] span {
-        min-width: 0 !important;
-        width: 100% !important;
-    }
-    div[style*="display:flex; gap:20px; align-items:center; flex:1;"] {
-        flex-wrap: wrap !important;
-        gap: 5px !important;
-    }
-    div[style*="display:flex; gap:24px; align-items:center;"] {
-        width: 100% !important;
-        justify-content: space-between !important;
-        margin-top: 5px !important;
-    }
-
-    /* ========================================================
-       FIX GAMBAR 4: BUY ON SUPPORT (Kotak bolong)
-       ======================================================== */
-    /* Paksa grid 4 kolom (ENTRY, SL, TP1, TP2) jadi 2x2 yang rapi */
     div[style*="display:grid; grid-template-columns:repeat(4, 1fr);"] {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 8px !important;
     }
-    /* Perkecil padding kotak di dalamnya */
-    div[style*="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;"] {
-        padding: 10px !important;
-    }
 
-    /* ========================================================
-       PENYESUAIAN UKURAN LAINNYA
-       ======================================================== */
+    /* Penyesuaian ukuran font */
     span[style*="font-size: 30px"], span[style*="font-size:30px"],
     span[style*="font-size: 26px"], span[style*="font-size:26px"] {
         font-size: 20px !important;
-    }
-
-    div[style*="padding: 20px 24px"], div[style*="padding:20px 24px"] {
-        padding: 14px 16px !important;
     }
 }
 </style>

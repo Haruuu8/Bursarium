@@ -1145,43 +1145,34 @@ with tab6:
                         df_daily = df_daily.sort_values("Tanggal").reset_index(drop=True)
                         for _, r in df_daily.iterrows():
                             tgl_str = pd.Timestamp(r["Tanggal"]).strftime("%d %b (%a)")
-                            port = r["Portofolio"]; ihsg_r = r["IHSG"]; alpha = r["Alpha"]
+                            port = r["Portofolio"]; ihsg_r = r["IHSG"]
                             port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
                             ihsg_str = f"{ihsg_r:+.2f}%" if not pd.isna(ihsg_r) else "—"
-                            alpha_str = f"{alpha:+.2f}%" if not pd.isna(alpha) else "—"
                             port_col = ("#10b981" if (not pd.isna(port) and port >= 0)
                                         else "#f43f5e" if not pd.isna(port) else "#64748b")
                             ihsg_col = ("#10b981" if (not pd.isna(ihsg_r) and ihsg_r >= 0)
                                         else "#f43f5e" if not pd.isna(ihsg_r) else "#64748b")
-                            alpha_col = ("#10b981" if (not pd.isna(alpha) and alpha >= 0)
-                                         else "#f43f5e" if not pd.isna(alpha) else "#64748b")
 
+                            # ALPHA DIHAPUS & TATA LETAK RAPI KE KIRI BAWAH
                             st.markdown(
-                                '<div style="display:flex; justify-content:space-between; '
-                                'align-items:center; padding:11px 18px; '
-                                'background:linear-gradient(135deg, #131a2a, #0f1628); '
-                                'border-radius:10px; margin-bottom:6px; '
-                                'border:1px solid #1a2338;">'
-                                f'<div style="display:flex; gap:20px; align-items:center; flex:1;">'
-                                f'<span style="font-size:13px; color:#e6ebf5; '
-                                f'font-weight:700; min-width:170px;">{tgl_str}</span>'
-                                f'<span style="font-size:11px; color:#7d8ba3; '
-                                f'min-width:80px;">{r["N_exec"]} trade</span>'
+                                '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
+                                'border-radius:10px; margin-bottom:8px; padding:12px 16px; '
+                                'border:1px solid #1a2338; display:flex; flex-direction:column; gap:6px;">'
+                                f'<div style="display:flex; justify-content:space-between; align-items:center;">'
+                                f'<span style="font-size:13px; color:#e6ebf5; font-weight:700;">{tgl_str}</span>'
+                                f'<span style="font-size:11px; color:#7d8ba3;">{r["N_exec"]} trade</span>'
                                 f'</div>'
-                                f'<div style="display:flex; gap:24px; align-items:center;">'
-                                f'<div style="text-align:right; min-width:90px;">'
-                                f'<div style="font-size:10px; color:#64748b;">Porto</div>'
-                                f'<div style="font-size:13px; font-weight:800; '
-                                f'color:{port_col};">{port_str}</div></div>'
-                                f'<div style="text-align:right; min-width:90px;">'
-                                f'<div style="font-size:10px; color:#64748b;">IHSG</div>'
-                                f'<div style="font-size:13px; font-weight:800; '
-                                f'color:{ihsg_col};">{ihsg_str}</div></div>'
-                                f'<div style="text-align:right; min-width:90px;">'
-                                f'<div style="font-size:10px; color:#64748b;">Alpha</div>'
-                                f'<div style="font-size:13px; font-weight:800; '
-                                f'color:{alpha_col};">{alpha_str}</div></div>'
-                                f'</div></div>',
+                                f'<div style="display:flex; gap:30px; margin-top:4px;">'
+                                f'<div style="text-align:left;">'
+                                f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">Porto</div>'
+                                f'<div style="font-size:13px; font-weight:800; color:{port_col};">{port_str}</div>'
+                                f'</div>'
+                                f'<div style="text-align:left;">'
+                                f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">IHSG</div>'
+                                f'<div style="font-size:13px; font-weight:800; color:{ihsg_col};">{ihsg_str}</div>'
+                                f'</div>'
+                                f'</div>'
+                                '</div>',
                                 unsafe_allow_html=True
                             )
 
