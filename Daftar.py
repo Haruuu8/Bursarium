@@ -61,10 +61,10 @@ if st.session_state.get("authentication_status"):
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
     ]
     
-    # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) muncul
+    # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) bisa membuka sidebar
     pg = st.navigation(pages) 
     
-    # Tampilkan info user di sidebar (jika ada)
+    # Tampilkan info user di sidebar
     from quant.nav import render_user_sidebar
     render_user_sidebar() 
     

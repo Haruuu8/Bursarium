@@ -364,13 +364,12 @@ span[class*="material-symbols"] {
 ::-webkit-scrollbar-thumb:hover { background: #3a4d75; }
 
 /* ============================================================
-   HIDE STREAMLIT BRANDING
+   HIDE STREAMLIT BRANDING (PERBAIKAN: JANGAN SEMBUNYIKAN TOOLBAR)
    ============================================================ */
 #MainMenu { visibility: hidden; }
 footer { visibility: hidden; }
-[data-testid="stToolbar"] { display: none !important; }
-[data-testid="stStatusWidget"] { display: none !important; }
-[data-testid="stDecoration"] { display: none !important; }
+[data-testid="stAppDeployButton"] { display: none !important; } /* Hanya sembunyikan tombol deploy */
+/* [data-testid="stToolbar"] { display: none !important; } <-- DIHAPUS KARENA MEMBUAT TOMBOL SIDEBAR HILANG */
 
 /* Sembunyikan stray text node */
 [data-testid="stMarkdown"] > div > p:empty {
@@ -382,8 +381,9 @@ footer { visibility: hidden; }
 /* 🔥 TAMBAHAN CSS UNTUK MOBILE (TOMBOL 3 GARIS & RESPONSIVE) 🔥 */
 /* ============================================================ */
 
-/* 1. Memaksa Tombol Sidebar (Hamburger) Muncul di HP */
-[data-testid="collapsedControl"] {
+/* 1. Memaksa Tombol Sidebar (Hamburger) Muncul di HP dengan Selector Terbaru */
+[data-testid="stExpandSidebarButton"],
+[data-testid="stSidebarCollapsedControl"] {
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -399,13 +399,15 @@ footer { visibility: hidden; }
     justify-content: center;
 }
 
-/* Sembunyikan panah bawaan Streamlit */
-[data-testid="collapsedControl"] svg {
+/* Sembunyikan ikon panah bawaan Streamlit */
+[data-testid="stExpandSidebarButton"] svg,
+[data-testid="stSidebarCollapsedControl"] svg {
     display: none !important;
 }
 
 /* Ganti ikon dengan 3 garis (Hamburger) */
-[data-testid="collapsedControl"]::after {
+[data-testid="stExpandSidebarButton"]::after,
+[data-testid="stSidebarCollapsedControl"]::after {
     content: "☰";
     font-size: 24px;
     font-weight: bold;
@@ -415,7 +417,7 @@ footer { visibility: hidden; }
 
 /* 2. Perbaikan Desain Khusus Layar HP */
 @media (max-width: 768px) {
-    /* Beri jarak atas agar tidak tertutup tombol hamburger */
+    /* Beri jarak atas agar konten tidak tertutup tombol hamburger */
     .block-container {
         padding-top: 4rem !important; 
         padding-left: 1rem !important;
