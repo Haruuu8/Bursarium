@@ -127,7 +127,8 @@ def compute_akumulasi(kode):
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown(page_header("📉", "Technical", "Indikator & Sinyal Trading"),
+# HANYA BARIS INI YANG DIUBAH (Emoji 📉 dihapus)
+st.markdown(page_header("", "Technical", "Indikator & Sinyal Trading"),
             unsafe_allow_html=True)
 
 saham_list = list_available()

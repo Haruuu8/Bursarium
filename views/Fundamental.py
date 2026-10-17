@@ -83,7 +83,8 @@ def fmt_pct(v, dec=2, plus=False):
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown(page_header("📈", "Fundamental", "Analisis Rasio Keuangan"),
+# HANYA BARIS INI YANG DIUBAH (Emoji 📈 dihapus)
+st.markdown(page_header("", "Fundamental", "Analisis Rasio Keuangan"),
             unsafe_allow_html=True)
 
 saham_list = list_available()
