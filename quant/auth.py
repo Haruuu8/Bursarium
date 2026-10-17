@@ -16,7 +16,6 @@ SUPABASE_URL = st.secrets.get("SUPABASE_URL", os.environ.get("SUPABASE_URL", "")
 SUPABASE_KEY = st.secrets.get("SUPABASE_KEY", os.environ.get("SUPABASE_KEY", ""))
 
 if not SUPABASE_URL or not SUPABASE_KEY:
-    # Fallback dummy untuk mencegah crash saat lokal jika env belum diset
     supabase = None
 else:
     supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
@@ -51,7 +50,6 @@ def submit_registration(telegram, bukti_bytes, bukti_filename):
     bukti_path = UPLOAD_DIR / f"{reg_id}{ext}"
     bukti_path.write_bytes(bukti_bytes)
 
-    # Simpan ke Supabase
     data = {
         "reg_id": reg_id,
         "telegram": telegram,
@@ -65,13 +63,29 @@ def submit_registration(telegram, bukti_bytes, bukti_filename):
 def list_pending():
     if not supabase: return []
     res = supabase.table("users").select("*").eq("status", "pending").order("created_at", desc=True).execute()
-    return res.data
+    
+    # Penyesuaian format untuk admin_panel.py
+    items = []
+    for row in res.data:
+        row["submitted_at"] = row.get("created_at", "")
+        items.append(row)
+    return items
+
+
+def list_approved():
+    if not supabase: return []
+    res = supabase.table("users").select("*").eq("status", "approved").order("approved_at", desc=True).execute()
+    
+    items = []
+    for row in res.data:
+        row["password"] = row.get("password_hash", "-") # Hash tidak bisa dibaca, tapi ditampilkan di UI
+        items.append(row)
+    return items
 
 
 def approve_registration(reg_id):
     if not supabase: return {"error": "DB Error"}
     
-    # Cari data
     res = supabase.table("users").select("*").eq("reg_id", reg_id).execute()
     if not res.data: return {"error": "Data tidak ditemukan"}
     
@@ -81,7 +95,6 @@ def approve_registration(reg_id):
     password = generate_password()
     pw_hash = hash_password(password)
 
-    # Update status di Supabase
     update_data = {
         "username": username,
         "password_hash": pw_hash,
@@ -105,17 +118,26 @@ def reject_registration(reg_id, alasan=""):
 
 
 def get_all_approved_users_for_auth():
-    """Mengambil semua user approved untuk form login Streamlit Authenticator."""
     if not supabase: return {}
-    
     res = supabase.table("users").select("username, telegram, password_hash").eq("status", "approved").execute()
     
     users = {}
     for u in res.data:
-        users[u["username"]] = {
-            "email": "",
-            "name": u["telegram"],
-            "password": u["password_hash"],
-            "paket": "premium"
-        }
+        if u.get("username"):
+            users[u["username"]] = {
+                "email": "",
+                "name": u["telegram"],
+                "password": u["password_hash"],
+                "paket": "premium"
+            }
+    return users
+
+
+def list_all_users():
+    if not supabase: return {}
+    res = supabase.table("users").select("username, telegram").eq("status", "approved").execute()
+    users = {}
+    for u in res.data:
+        if u.get("username"):
+            users[u["username"]] = u
     return users
