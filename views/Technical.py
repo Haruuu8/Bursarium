@@ -7,6 +7,7 @@ import pandas as pd
 import streamlit as st
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from quant.parquet_loader import load_parquet_safe
 from quant.technical import (
     hitung_indikator_teknikal,
     hitung_sinyal_trading,

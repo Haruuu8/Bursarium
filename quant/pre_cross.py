@@ -30,8 +30,9 @@ def _get_parquet():
         return None
     df = pd.read_parquet(PARQUET_FILE)
     df.columns = [str(c).strip().title() for c in df.columns]
+    df = df.loc[:, ~df.columns.duplicated(keep="first")]
     if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
+        df["Date"] = pd.to_datetime(df["Date"], errors="coerce").dt.tz_localize(None)
     return df
 
 def ema(s, p):
