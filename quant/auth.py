@@ -64,7 +64,6 @@ def list_pending():
     if not supabase: return []
     res = supabase.table("users").select("*").eq("status", "pending").order("created_at", desc=True).execute()
     
-    # Penyesuaian format untuk admin_panel.py
     items = []
     for row in res.data:
         row["submitted_at"] = row.get("created_at", "")
@@ -78,7 +77,7 @@ def list_approved():
     
     items = []
     for row in res.data:
-        row["password"] = row.get("password_hash", "-") # Hash tidak bisa dibaca, tapi ditampilkan di UI
+        row["password"] = row.get("password_hash", "-") 
         items.append(row)
     return items
 
@@ -131,6 +130,61 @@ def get_all_approved_users_for_auth():
                 "paket": "premium"
             }
     return users
+
+
+def reset_user_password(reg_id):
+    """Generate password baru untuk user yang sudah approved."""
+    if not supabase: return {"error": "DB Error"}
+    
+    res = supabase.table("users").select("*").eq("reg_id", reg_id).execute()
+    if not res.data: return {"error": "Data tidak ditemukan"}
+    
+    data = res.data[0]
+    username = data.get("username")
+    tele = data.get("telegram", "")
+    
+    new_password = generate_password()
+    new_hash = hash_password(new_password)
+    
+    supabase.table("users").update({"password_hash": new_hash}).eq("reg_id", reg_id).execute()
+    
+    return {
+        "success": True,
+        "username": username,
+        "password": new_password,
+        "telegram": tele,
+    }
+
+
+def update_username(reg_id, new_username):
+    """Ubah username user di database dengan validasi keunikan."""
+    if not supabase: return {"error": "DB Error"}
+    
+    # Validasi format (hanya huruf, angka, underscore)
+    if not new_username.isalnum() and "_" not in new_username:
+        return {"error": "Username hanya boleh huruf, angka, dan underscore."}
+        
+    # Cek apakah username sudah dipakai user lain
+    check = supabase.table("users").select("reg_id").eq("username", new_username).execute()
+    if check.data and check.data[0]["reg_id"] != reg_id:
+        return {"error": "Username sudah dipakai oleh user lain."}
+        
+    try:
+        supabase.table("users").update({"username": new_username}).eq("reg_id", reg_id).execute()
+        return {"success": True, "new_username": new_username}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def delete_user(reg_id):
+    """Hapus user dari database secara permanen."""
+    if not supabase: return False
+    try:
+        supabase.table("users").delete().eq("reg_id", reg_id).execute()
+        return True
+    except Exception as e:
+        print(f"Error delete: {e}")
+        return False
 
 
 def list_all_users():

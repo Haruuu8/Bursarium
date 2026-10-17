@@ -9,7 +9,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quant.theme import load_theme, page_header
 from quant.auth import (
     list_pending, list_approved, approve_registration,
-    reject_registration, list_all_users,
+    reject_registration, list_all_users, reset_user_password, 
+    update_username, delete_user
 )
 
 load_theme()
@@ -120,15 +121,73 @@ with tab2:
     if not approved:
         st.info("Belum ada user yang di-approve.")
     else:
-        import pandas as pd
-        rows = [{
-            "Reg ID": r.get("reg_id", "?"),
-            "Telegram": r.get("telegram", "?"),
-            "Username": r.get("username", "?"),
-            "Password": r.get("password", "?"),
-            "Approved": r.get("approved_at", "?")[:19],
-        } for r in approved]
-        st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+        st.markdown(
+            f'<div style="font-size:13px; color:#94a3b8; margin-bottom:16px;">'
+            f'Total: <b style="color:#10b981;">{len(approved)}</b> user aktif</div>', 
+            unsafe_allow_html=True
+        )
+        
+        for r in approved:
+            reg_id = r.get("reg_id", "?")
+            tele = r.get("telegram", "?")
+            uname = r.get("username", "?")
+            approved_at = r.get("approved_at", "?")[:19]
+
+            with st.container():
+                # Card Informasi User
+                st.markdown(
+                    f'<div style="background:#0d1424; border:1px solid #1e2942; '
+                    f'border-left:3px solid #10b981; border-radius:12px; '
+                    f'padding:16px 20px; margin-bottom:10px;">'
+                    f'<div style="display:flex; justify-content:space-between; align-items:center;">'
+                    f'<div>'
+                    f'<div style="font-size:16px; font-weight:800; color:#ffffff;">{uname}</div>'
+                    f'<div style="font-size:12px; color:#94a3b8; margin-top:2px;">{tele}</div>'
+                    f'<div style="font-size:10px; color:#7d8ba3; margin-top:4px;">Approved: {approved_at}</div>'
+                    f'</div>'
+                    f'</div></div>',
+                    unsafe_allow_html=True
+                )
+                
+                # Tombol Aksi (Reset & Hapus)
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button(f"🔄 Reset Password", key=f"reset_{reg_id}", use_container_width=True):
+                        res = reset_user_password(reg_id)
+                        if res.get("success"):
+                            st.success(
+                                f"✅ Password Baru untuk **{res['username']}**:\n\n"
+                                f"Password: `{res['password']}`\n\n"
+                                f"Kirim ke: **{res['telegram']}**"
+                            )
+                        else:
+                            st.error(f"Gagal: {res.get('error')}")
+                with col2:
+                    if st.button(f"🗑️ Hapus User", key=f"del_{reg_id}", type="primary", use_container_width=True):
+                        if delete_user(reg_id):
+                            st.success(f"User {uname} berhasil dihapus.")
+                            st.rerun()
+                        else:
+                            st.error("Gagal menghapus user.")
+                
+                # Form Ubah Username (disembunyikan dalam expander)
+                with st.expander("✏️ Ubah Username"):
+                    with st.form(key=f"form_uname_{reg_id}"):
+                        new_uname = st.text_input("Username Baru", value=uname)
+                        if st.form_submit_button("Simpan Username"):
+                            if new_uname.strip() and new_uname != uname:
+                                res = update_username(reg_id, new_uname.strip())
+                                if res.get("success"):
+                                    st.success(f"Username berhasil diubah menjadi: {res['new_username']}")
+                                    st.rerun()
+                                else:
+                                    st.error(f"Gagal: {res.get('error')}")
+                            elif new_uname == uname:
+                                st.info("Username tidak berubah.")
+                            else:
+                                st.error("Username tidak boleh kosong.")
+                
+                st.markdown("<hr style='margin: 10px 0; border-color: #1e2942;'>", unsafe_allow_html=True)
 
 
 with tab3:
