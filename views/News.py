@@ -177,9 +177,13 @@ need_fetch = (
 
 if need_fetch:
     with st.spinner(f"Ambil pengumuman dari IDX ({days} hari)..."):
-        df_fetch = scan_news(days=days, force_refresh=refresh)
+        try:
+            df_fetch = scan_news(days=days, force_refresh=refresh)
+        except Exception as e:
+            st.error(f"Gagal mengambil data: {e}")
+            df_fetch = pd.DataFrame()
 
-    if not df_fetch.empty:
+    if not df_fetch.empty and "tanggal" in df_fetch.columns:
         df_fetch["tanggal_dt"] = pd.to_datetime(
             df_fetch["tanggal"], errors="coerce")
         df_fetch = df_fetch.sort_values(
@@ -193,11 +197,13 @@ if need_fetch:
 df = st.session_state.news_df
 last_refresh = st.session_state.news_last_refresh
 
-if df is None or df.empty:
-    st.markdown(empty_state("", "Belum ada pengumuman",
-                            "Klik Refresh untuk ambil data terbaru"),
-                unsafe_allow_html=True)
-    st.stop()
+if df is None:
+    df = pd.DataFrame()
+
+if df.empty:
+    st.warning("Data pengumuman IDX belum tersedia atau gagal diambil dari server IDX. Silakan klik tombol Refresh.")
+    # Buat dummy dataframe kosong dengan kolom yang diperlukan agar tab tetap muncul
+    df = pd.DataFrame(columns=["kode", "judul", "tanggal", "tipe", "kategori", "bobot", "lampiran"])
 
 # Info bar
 st.markdown(
@@ -212,24 +218,30 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-stats = get_stats(df)
+try:
+    stats = get_stats(df)
+except Exception:
+    stats = {}
 
 
 # ============================================================
 # TABS
 # ============================================================
-terbaru = df.head(10)
-katalis_all = df[df["bobot"] >= 7].copy()
+if not df.empty:
+    terbaru = df.head(10)
+    katalis_all = df[df["bobot"] >= 7].copy()
 
-good_kat = ["DIVIDEN", "BUYBACK", "LABA_NAIK", "KONTRAK"]
-good = df[df["kategori"].apply(
-    lambda x: any(k in x for k in good_kat))].copy()
+    good_kat = ["DIVIDEN", "BUYBACK", "LABA_NAIK", "KONTRAK"]
+    good = df[df["kategori"].apply(
+        lambda x: any(k in x for k in good_kat))].copy()
 
-pengendali = df[df["kategori"].apply(lambda x: "PENGENDALI" in x)].copy()
-pmt = df[df["kategori"].apply(lambda x: "PMTHMETD" in x)].copy()
-investor = df[df["kategori"].apply(
-    lambda x: "INVESTOR_BARU" in x or "TENDER" in x)].copy()
-warn = df[df["tipe"] == "warning"].copy()
+    pengendali = df[df["kategori"].apply(lambda x: "PENGENDALI" in x)].copy()
+    pmt = df[df["kategori"].apply(lambda x: "PMTHMETD" in x)].copy()
+    investor = df[df["kategori"].apply(
+        lambda x: "INVESTOR_BARU" in x or "TENDER" in x)].copy()
+    warn = df[df["tipe"] == "warning"].copy()
+else:
+    terbaru, katalis_all, good, pengendali, pmt, investor, warn = [pd.DataFrame()] * 7
 
 tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "Terbaru",

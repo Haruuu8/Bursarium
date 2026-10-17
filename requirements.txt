@@ -11,3 +11,5 @@ requests>=2.31.0
 pyyaml>=6.0
 pyarrow>=14.0
 supabase
+beautifulsoup4
+lxml
