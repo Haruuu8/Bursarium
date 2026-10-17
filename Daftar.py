@@ -59,19 +59,14 @@ db_users = get_all_approved_users_for_auth()
 if db_users:
     config["credentials"]["usernames"].update(db_users)
 
-# ============ FIX STREAMLIT DUPLICATE KEY ============
-# Membungkus Authenticate dengan cache_resource agar tidak inisialisasi ganda
-@st.cache_resource
-def init_authenticator(creds, cookie_name, cookie_key, expiry):
-    return stauth.Authenticate(creds, cookie_name, cookie_key, expiry)
-
-authenticator = init_authenticator(
+# ============ INISIALISASI AUTHENTICATOR (LANGSUNG) ============
+authenticator = stauth.Authenticate(
     config["credentials"],
     config["cookie"]["name"],
     config["cookie"]["key"],
     config["cookie"]["expiry_days"],
 )
-# ========================================================
+# =============================================================
 
 
 # ============ KALAU SUDAH LOGIN → REDIRECT ============
@@ -106,7 +101,13 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    authenticator.login(location="main")
+    try:
+        authenticator.login(location="main")
+    except Exception as e:
+        # Fallback jika terjadi KeyError 'logout' pada sesi pertama
+        if "logout" not in st.session_state:
+            st.session_state["logout"] = False
+        authenticator.login(location="main")
 
     auth_status = st.session_state.get("authentication_status")
     if auth_status is False:
