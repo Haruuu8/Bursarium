@@ -430,35 +430,36 @@ footer { visibility: hidden; }
     p, li, .stMarkdown { font-size: 13px !important; line-height: 1.5 !important; }
 
     /* ========================================================
-       FIX VALUASI: Paksa Flex Column jadi Grid 2 Kolom Menyamping
+       FIX VALUASI: Khusus div yang ada background & flex-column
        ======================================================== */
-    /* Menargetkan container yang membungkus metrik ROE, DER, dll */
-    div[style*="display: flex"][style*="flex-direction: column"] {
+    div[style*="flex-direction: column"][style*="background"] {
         display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 16px 8px !important;
+        grid-template-columns: 1fr 1fr !important; /* 2 Kolom */
+        gap: 12px !important;
         align-items: start !important;
     }
     
-    /* Teks rata kiri */
-    div[style*="text-align: center;"] {
+    /* Pastikan konten di dalamnya rata kiri */
+    div[style*="flex-direction: column"][style*="background"] > div {
         text-align: left !important;
+        width: auto !important;
+        min-width: 0 !important;
     }
 
     /* ========================================================
-       FIX BUY ON SUPPORT: Grid 4 Kolom jadi 2x2 rapi
+       FIX BUY ON SUPPORT / BREAKOUT: Grid 4 kolom jadi 2x2
        ======================================================== */
-    div[style*="display:grid; grid-template-columns:repeat(4, 1fr);"] {
+    div[style*="grid-template-columns:repeat(4, 1fr)"] {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 8px !important;
     }
     
-    /* Perkecil padding kotak Entry/SL/TP agar muat */
-    div[style*="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;"] {
+    /* Perkecil padding kotak di dalam grid */
+    div[style*="grid-template-columns:repeat(4, 1fr)"] > div {
         padding: 10px !important;
     }
 
-    /* Penyesuaian ukuran font */
+    /* Penyesuaian ukuran font harga */
     span[style*="font-size: 30px"], span[style*="font-size:30px"],
     span[style*="font-size: 26px"], span[style*="font-size:26px"] {
         font-size: 20px !important;
