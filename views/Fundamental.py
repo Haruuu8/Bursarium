@@ -57,8 +57,12 @@ def load_parquet_all():
         return None
     df = pd.read_parquet(PARQUET_FILE)
     df.columns = [str(c).strip().title() for c in df.columns]
+    
+    # Hapus kolom duplikat
+    df = df.loc[:, ~df.columns.duplicated(keep="first")]
+    
     if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
+        df["Date"] = pd.to_datetime(df["Date"], errors="coerce").dt.tz_localize(None)
     return df
 
 @st.cache_data(ttl=1800)
