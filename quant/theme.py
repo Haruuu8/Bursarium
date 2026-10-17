@@ -442,40 +442,50 @@ footer { visibility: hidden; }
     }
 
     /* ========================================================
-       FIX: Paksa semua elemen flexbox yang berjejer ke samping
-       agar turun ke bawah (stacking) di HP
+       FIX GAMBAR 1: BUY ON SUPPORT / BREAKOUT
        ======================================================== */
-    div[style*="display: flex"], 
-    div[style*="display:flex"] {
+    /* Paksa isi card jadi turun ke bawah (Kode di atas, Harga di bawah) */
+    div[style*="justify-content:space-between"][style*="align-items:flex-start"] {
         flex-direction: column !important;
         align-items: flex-start !important;
         gap: 10px !important;
     }
+    
+    /* Paksa kotak Harga Saat Ini agar RATA KIRI */
+    div[style*="text-align:right"],
+    div[style*="text-align: right"] {
+        text-align: left !important;
+        align-items: flex-start !important;
+        min-width: 100% !important;
+    }
 
-    /* Paksa semua grid (baik 3 kolom maupun 4 kolom) jadi 1 kolom penuh */
-    div[style*="grid-template-columns:repeat(4, 1fr)"],
-    div[style*="grid-template-columns: repeat(4, 1fr)"],
-    div[style*="grid-template-columns:repeat(3, 1fr)"],
-    div[style*="grid-template-columns: repeat(3, 1fr)"] {
-        grid-template-columns: 1fr !important; /* Ubah jadi 1 kolom full */
+    /* ========================================================
+       FIX GAMBAR 2: VALUASI
+       ======================================================== */
+    /* Paksa Grid (yang tadinya 3 atau 4 kolom) jadi 2 KOLOM MENYAMPING */
+    div[style*="grid-template-columns:repeat"],
+    div[style*="grid-template-columns: repeat"] {
+        grid-template-columns: 1fr 1fr !important;
         gap: 12px !important;
     }
-
-    /* Perkecil ukuran teks harga / angka raksasa di dalam Card Custom */
-    span[style*="font-size: 30px"], div[style*="font-size: 30px"],
-    span[style*="font-size:30px"], div[style*="font-size:30px"],
-    span[style*="font-size: 26px"], div[style*="font-size: 26px"],
-    span[style*="font-size: 24px"], div[style*="font-size: 24px"],
-    span[style*="font-size: 22px"], div[style*="font-size: 22px"] {
-        font-size: 18px !important;
+    
+    /* Paksa semua teks di dalam Valuasi agar RATA KIRI (bukan center) */
+    div[style*="text-align:center"],
+    div[style*="text-align: center"] {
+        text-align: left !important;
     }
 
-    /* Perkecil padding di dalam Card Custom */
+    /* ========================================================
+       PENYESUAIAN UKURAN LAINNYA
+       ======================================================== */
+    span[style*="font-size: 30px"], span[style*="font-size:30px"],
+    span[style*="font-size: 26px"], span[style*="font-size: 24px"] {
+        font-size: 20px !important;
+    }
+
     div[style*="padding: 20px 24px"], div[style*="padding:20px 24px"],
-    div[style*="padding: 22px 26px"], div[style*="padding:22px 26px"],
-    div[style*="padding: 18px 22px"], div[style*="padding:18px 22px"],
-    div[style*="padding: 16px 20px"], div[style*="padding:16px 20px"] {
-        padding: 12px 14px !important;
+    div[style*="padding: 22px 26px"], div[style*="padding:22px 26px"] {
+        padding: 14px 16px !important;
     }
 }
 </style>
