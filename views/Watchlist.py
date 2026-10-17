@@ -29,7 +29,7 @@ load_theme()
 
 WATCHLIST_FILE = "data_watchlist.json"
 OUTPUT_DIR = "quant/output"
-OHLCV_DIR = "data_ohlcv_idx"
+PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 FUND_DIR = "data_fundamental"
 SEKTOR_CSV = "data_sektor.csv"
 SETUPS_FILE = "data_setups.json"
@@ -40,7 +40,6 @@ SCANS_DIR = "data_scans"
 # LOAD JSON HELPERS
 # ============================================================
 def load_json_safe(path):
-    """Baca file JSON, return None kalau tidak ada / error."""
     if not os.path.exists(path):
         return None
     try:
@@ -55,7 +54,6 @@ def load_setups():
 
 
 def load_scan(name):
-    """Baca data_scans/{name}.json -> return list items + generated."""
     d = load_json_safe(os.path.join(SCANS_DIR, f"{name}.json"))
     if not d:
         return [], "?"
@@ -178,9 +176,9 @@ def fmt_num(v, dec=2):
 @st.cache_data(ttl=3600)
 def get_ihsg_daily(start_date_str, end_date_str):
     candidates = [
-        os.path.join(OHLCV_DIR, "^JKSE.csv"),
-        os.path.join(OHLCV_DIR, "JKSE.csv"),
-        os.path.join(OHLCV_DIR, "IHSG.csv"),
+        os.path.join("data_ohlcv_idx", "^JKSE.csv"),
+        os.path.join("data_ohlcv_idx", "JKSE.csv"),
+        os.path.join("data_ohlcv_idx", "IHSG.csv"),
         "data_ihsg.csv",
         os.path.join(OUTPUT_DIR, "IHSG.csv"),
     ]
@@ -205,29 +203,6 @@ def get_ihsg_daily(start_date_str, end_date_str):
             return out
         except Exception:
             continue
-    try:
-        import yfinance as yf
-        df = yf.download("^JKSE", start=start_date_str,
-                         end=end_date_str, progress=False)
-        if df is not None and not df.empty:
-            if isinstance(df.columns, pd.MultiIndex):
-                df.columns = df.columns.get_level_values(0)
-            df = df.reset_index()
-            df.columns = [str(c).strip() for c in df.columns]
-            close_col = None
-            for c in df.columns:
-                if str(c).lower() == "close":
-                    close_col = c
-                    break
-            if "Date" in df.columns and close_col:
-                out = pd.DataFrame()
-                out["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
-                out["Close"] = pd.to_numeric(df[close_col], errors="coerce")
-                out = out.dropna().sort_values("Date").reset_index(drop=True)
-                out["ret"] = out["Close"].pct_change() * 100
-                return out
-    except Exception:
-        pass
     return None
 
 
@@ -608,7 +583,7 @@ with tab1:
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.8;">'
         '<b style="color:#e6ebf5;">Entry:</b> Open T+1 (hari bursa berikutnya '
         'setelah sinyal)<br>'
-        '<b style="color:#e6ebf5;">Exit:</b> TP High-1% (kalau High naik >= 1%) '
+        '<b style="color:#e6ebf5;">Exit:</b> TP High-1% (kalau High naik &gt;= 1%) '
         '| SL -3% (sudah termasuk fee)<br>'
         '<b style="color:#e6ebf5;">Rule A:</b> Ret1d &gt; 15% - Ret5d &gt; 15% - '
         'Price &gt; SMA20 + 20%<br>'
@@ -676,7 +651,7 @@ with tab2:
         '<div style="font-size: 13px; color: #06b6d4; font-weight: 700; '
         'margin-bottom: 8px;">BOTTOM FISHING - SAHAM SEHAT</div>'
         '<div style="font-size: 12px; color: #94a3b8; line-height: 1.6;">'
-        'Q1 dan Q2 ada, se-tahun, Q2 standalone >= 0<br>'
+        'Q1 dan Q2 ada, se-tahun, Q2 standalone &gt;= 0<br>'
         'Laba tidak turun drastis (&gt; 50%) - kecuali premium ekspansi<br>'
         'Revenue YoY tidak turun &gt; 30%<br>'
         'DER &lt; 2.0x - ROE &gt; 10%<br>'
@@ -688,7 +663,7 @@ with tab2:
     items_bf, gen_bf = load_scan("bottom")
 
     if not items_bf:
-        st.warning("Belum ada data scan. Jalankan `py scan_all.py` dulu.")
+        st.warning("Data Bottom Fishing belum tersedia. Silakan hubungi admin.")
     else:
         c1, c2, c3 = st.columns([3, 2, 1])
         with c1:
@@ -709,7 +684,7 @@ with tab2:
                 st.rerun()
 
         filtered = [x for x in items_bf if x["rsi"] <= max_rsi]
-        st.caption(f"{len(filtered)} saham RSI <= {max_rsi}")
+        st.caption(f"{len(filtered)} saham RSI &lt;= {max_rsi}")
 
         if not filtered:
             st.info("Tidak ada saham lolos filter RSI.")
@@ -738,7 +713,7 @@ with tab3:
         '<div style="font-size: 14px; color: #10b981; font-weight: 800; '
         'letter-spacing:0.5px; margin-bottom:10px;">PRE-GOLDEN-CROSS</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.8;">'
-        'Setup skor >= <b>85</b> - Winrate backtest 91.2% - Gap EMA20-EMA50 &lt;= 4%'
+        'Setup skor &gt;= <b>85</b> - Winrate backtest 91.2% - Gap EMA20-EMA50 &lt;= 4%'
         '</div></div>',
         unsafe_allow_html=True
     )
@@ -749,7 +724,7 @@ with tab3:
     with c1:
         st.markdown(
             f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-            f'<b style="color:#10b981;">{len(items_pc)}</b> setup skor >=85 - '
+            f'<b style="color:#10b981;">{len(items_pc)}</b> setup skor &gt;=85 - '
             f'generated {gen_pc}</div>',
             unsafe_allow_html=True
         )
@@ -765,7 +740,7 @@ with tab3:
             'border:1px dashed #334155; border-radius:14px; '
             'padding:40px 32px; text-align:center;">'
             '<div style="font-size:15px; font-weight:700; color:#cbd5e1; '
-            'margin-bottom:8px;">Tidak ada setup skor >= 85</div>'
+            'margin-bottom:8px;">Tidak ada setup skor &gt;= 85</div>'
             '<div style="font-size:12px; color:#7d8ba3; max-width:480px; '
             'margin:0 auto;">Setup presisi tinggi jarang muncul. '
             'Cek kandidat emerging di bawah.</div>'
@@ -830,7 +805,7 @@ with tab3:
     items_emg, gen_emg = load_scan("emerging")
 
     if not items_emg:
-        st.info("Belum ada kandidat emerging. Jalankan `py scan_all.py` dulu.")
+        st.info("Data kandidat emerging belum tersedia. Silakan hubungi admin.")
     else:
         st.markdown(
             f'<div style="font-size:12px; color:#7d8ba3; margin:4px 0 16px;">'
@@ -906,7 +881,7 @@ with tab4:
 
     setups = load_setups()
     if not setups:
-        st.warning("Belum ada data. Jalankan `py scan_all.py` dulu.")
+        st.warning("Data setup belum tersedia. Silakan hubungi admin.")
     else:
         items = setups.get("buy_support", [])
         generated = setups.get("generated", "?")
@@ -936,10 +911,10 @@ with tab4:
                 st.rerun()
 
         filtered = [x for x in items if x["rr_tp1"] >= min_rr]
-        st.caption(f"{len(filtered)} saham setelah filter RR >= {min_rr}")
+        st.caption(f"{len(filtered)} saham setelah filter RR &gt;= {min_rr}")
 
         if not filtered:
-            st.info(f"Tidak ada saham dengan RR >= {min_rr}")
+            st.info(f"Tidak ada saham dengan RR &gt;= {min_rr}")
         elif view_mode == "Table":
             setup_table(filtered, nama_map)
         else:
@@ -977,7 +952,7 @@ with tab5:
 
     setups = load_setups()
     if not setups:
-        st.warning("Belum ada data. Jalankan `py scan_all.py` dulu.")
+        st.warning("Data setup belum tersedia. Silakan hubungi admin.")
     else:
         items = setups.get("breakout_buy", [])
         generated = setups.get("generated", "?")
@@ -1007,10 +982,10 @@ with tab5:
                 st.rerun()
 
         filtered = [x for x in items if x["rr_tp1"] >= min_rr]
-        st.caption(f"{len(filtered)} saham setelah filter RR >= {min_rr}")
+        st.caption(f"{len(filtered)} saham setelah filter RR &gt;= {min_rr}")
 
         if not filtered:
-            st.info(f"Tidak ada saham dengan RR >= {min_rr}")
+            st.info(f"Tidak ada saham dengan RR &gt;= {min_rr}")
         elif view_mode == "Table":
             setup_table(filtered, nama_map)
         else:
@@ -1035,8 +1010,7 @@ with tab6:
     rekap_files = list_rekap_files()
 
     if not rekap_files:
-        st.warning("Tidak ada file Rekap_Trading_*.xlsx di quant/output/. "
-                   "Jalankan screen.py dulu.")
+        st.warning("Belum ada data performa. Silakan hubungi admin.")
     else:
         fname = st.selectbox("Pilih file", rekap_files,
                              label_visibility="collapsed")
@@ -1044,7 +1018,7 @@ with tab6:
         df_rev = load_rekap_sheet(fname, "Review Harian")
 
         if df_rev is None or df_rev.empty:
-            st.warning(f"Tidak ada data di {fname}.")
+            st.warning(f"Belum ada data performa di {fname}.")
         else:
             if "P/L %" in df_rev.columns:
                 df_rev["P/L %"] = pd.to_numeric(df_rev["P/L %"], errors="coerce")
@@ -1142,7 +1116,6 @@ with tab6:
 
                         ihsg_row = df_ihsg[df_ihsg["Date"] == tgl]
                         if ihsg_row.empty:
-                            # JANGAN FALLBACK KE TANGGAL LAMA
                             ihsg_ret = np.nan
                         else:
                             ihsg_ret = ihsg_row.iloc[0]["ret"]

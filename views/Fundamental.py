@@ -1,28 +1,18 @@
-"""Halaman FUNDAMENTAL — baca data_fundamental/, tanpa grafik, dengan Quarterly."""
+"""Halaman FUNDAMENTAL - baca data_fundamental/, tanpa grafik, dengan Quarterly."""
 
 import os
 import sys
 import json
-
 import numpy as np
 import pandas as pd
 import streamlit as st
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-st.set_page_config(page_title="Fundamental", page_icon="", layout="wide")
-
+st.set_page_config(page_title="Fundamental", layout="wide")
 
 # ============================================================
 # GUARD LOGIN
-# ============================================================
-if not st.session_state.get("authentication_status"):
-    st.error("Silakan login dulu di halaman utama.")
-    st.stop()
-
-
-# ============================================================
-# GUARD
 # ============================================================
 if not st.session_state.get("authentication_status"):
     st.error("Silakan login dulu di halaman utama.")
@@ -33,7 +23,7 @@ from quant.theme import load_theme, page_header, section_title, empty_state
 load_theme()
 
 DETAIL_DIR = "data_fundamental"
-OHLCV_DIR = "data_ohlcv_idx"
+PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 
 
 # ============================================================
@@ -62,40 +52,47 @@ def load_detail(kode):
 
 
 @st.cache_data(ttl=1800)
+def load_parquet_all():
+    if not os.path.exists(PARQUET_FILE):
+        return None
+    df = pd.read_parquet(PARQUET_FILE)
+    df.columns = [str(c).strip().title() for c in df.columns]
+    if "Date" in df.columns:
+        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
+    return df
+
+@st.cache_data(ttl=1800)
 def load_ohlcv(kode):
-    path = os.path.join(OHLCV_DIR, f"{kode}.csv")
-    if not os.path.exists(path):
+    df_all = load_parquet_all()
+    if df_all is None or "Kode" not in df_all.columns:
         return None
-    try:
-        df = pd.read_csv(path)
-        df.columns = [str(c).strip().title() for c in df.columns]
-        df["Date"] = pd.to_datetime(df["Date"])
-        return df.sort_values("Date").reset_index(drop=True)
-    except Exception:
+    df = df_all[df_all["Kode"] == kode].copy()
+    if df.empty:
         return None
+    return df.sort_values("Date").reset_index(drop=True)
 
 
 def fmt_num(v, dec=2, suffix=""):
     if v is None or (isinstance(v, float) and np.isnan(v)):
-        return "—"
+        return "-"
     try:
         if abs(v) >= 1e12: return f"{v/1e12:.{dec}f}T{suffix}"
         if abs(v) >= 1e9: return f"{v/1e9:.{dec}f}B{suffix}"
         if abs(v) >= 1e6: return f"{v/1e6:.{dec}f}M{suffix}"
         return f"{v:,.{dec}f}{suffix}"
     except Exception:
-        return "—"
+        return "-"
 
 
 def fmt_pct(v, dec=2, plus=False):
     if v is None or (isinstance(v, float) and np.isnan(v)):
-        return "—"
+        return "-"
     try:
         if abs(v) < 1:
             v *= 100
         return f"{v:+.{dec}f}%" if plus else f"{v:.{dec}f}%"
     except Exception:
-        return "—"
+        return "-"
 
 
 # ============================================================
@@ -107,7 +104,7 @@ st.markdown(page_header("", "Fundamental", "Analisis Rasio Keuangan"),
 saham_list = list_available()
 if not saham_list:
     st.markdown(empty_state("", "Belum ada data",
-                            "Jalankan: python -m quant.fundamental"),
+                            "Data fundamental belum tersedia. Silakan hubungi admin."),
                 unsafe_allow_html=True)
     st.stop()
 
@@ -170,7 +167,7 @@ st.markdown(
     '<div style="flex-grow: 1;">'
     f'<div style="font-size: 12px; color: #7d8ba3; margin-bottom: 5px; '
     f'font-weight: 600; letter-spacing: 0.5px;">'
-    f'{data.get("sektor", "")} · {data.get("industri", "")}</div>'
+    f'{data.get("sektor", "")} - {data.get("industri", "")}</div>'
     f'<div style="font-size: 19px; font-weight: 700; color: #ffffff; '
     f'margin-bottom: 8px;">{data.get("nama", kode_pilih)}</div>'
     '<div style="display: flex; align-items: baseline; gap: 12px;">'
@@ -287,7 +284,7 @@ if rev_4q or eps_4q:
         cols = st.columns(4)
         for i, (q, v) in enumerate(eps_4q[:4]):
             with cols[i]:
-                val_str = f"{v:.2f}" if v is not None else "—"
+                val_str = f"{v:.2f}" if v is not None else "-"
                 st.markdown(
                     '<div style="background: #0f172a; border: 1px solid #1a2338; '
                     'border-radius: 10px; padding: 14px; text-align: center;">'
@@ -310,7 +307,7 @@ if rev_4q or eps_4q:
         cols = st.columns(4)
         for i, (q, v) in enumerate(ni_4q[:4]):
             with cols[i]:
-                val_str = fmt_num(v, 0) if v is not None else "—"
+                val_str = fmt_num(v, 0) if v is not None else "-"
                 color = "#10b981" if (v is not None and v >= 0) else "#f43f5e"
                 st.markdown(
                     '<div style="background: #0f172a; border: 1px solid #1a2338; '
@@ -347,10 +344,10 @@ if tahun_list:
             f'border-bottom: 1px solid #1a2338; font-size: 13px;">{y}</td>'
             f'<td style="padding: 12px 14px; color: #e6ebf5; '
             f'border-bottom: 1px solid #1a2338; font-size: 13px;">'
-            f'{fmt_num(e, 0) if e else "—"}</td>'
+            f'{fmt_num(e, 0) if e else "-"}</td>'
             f'<td style="padding: 12px 14px; color: #e6ebf5; '
             f'border-bottom: 1px solid #1a2338; font-size: 13px;">'
-            f'{fmt_num(r, 0) if r else "—"}</td>'
+            f'{fmt_num(r, 0) if r else "-"}</td>'
             '</tr>'
         )
 
@@ -439,7 +436,7 @@ for col, label, val, color in [
 st.markdown(
     '<div style="text-align: center; color: #475569; font-size: 11px; '
     'margin-top: 30px; padding-top: 20px; border-top: 1px solid #1a2338;">'
-    f'Sumber: yfinance + IDX XBRL · Update: {data.get("update", "")}'
+    f'Sumber: yfinance + IDX XBRL - Update: {data.get("update", "")}'
     '</div>',
     unsafe_allow_html=True
 )

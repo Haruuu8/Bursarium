@@ -1,11 +1,7 @@
-import streamlit as st
-if not st.session_state.get("authentication_status"):
-    st.error("Silakan login dulu di halaman utama.")
-    st.info("Buka tab baru → http://localhost:8501")
-    st.stop()
-# Halaman TECHNICAL — multi-scale S/R + indikator + sinyal + R:R long-only.
+"""Halaman TECHNICAL — multi-scale S/R + indikator + sinyal + R:R long-only."""
 
-import os, sys
+import os
+import sys
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -21,9 +17,7 @@ from quant.theme import (
     load_theme, page_header, section_title, empty_state,
 )
 
-st.set_page_config(page_title="Technical", page_icon="", layout="wide")
-load_theme()
-
+st.set_page_config(page_title="Technical", layout="wide")
 
 # ============================================================
 # GUARD LOGIN
@@ -32,39 +26,45 @@ if not st.session_state.get("authentication_status"):
     st.error("Silakan login dulu di halaman utama.")
     st.stop()
 
+load_theme()
 
-OHLCV_DIR = "data_ohlcv_idx"
-
-
-@st.cache_data(ttl=1800)
-def list_available():
-    if not os.path.exists(OHLCV_DIR):
-        return []
-    return sorted(f.replace(".csv", "") for f in os.listdir(OHLCV_DIR)
-                  if f.endswith(".csv"))
+PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 
 
 @st.cache_data(ttl=1800)
-def load_ohlcv(kode):
-    path = os.path.join(OHLCV_DIR, f"{kode}.csv")
-    if not os.path.exists(path):
+def load_parquet_all():
+    if not os.path.exists(PARQUET_FILE):
         return None
-    df = pd.read_csv(path)
+    df = pd.read_parquet(PARQUET_FILE)
     df.columns = [str(c).strip().title() for c in df.columns]
     df = df.loc[:, ~df.columns.duplicated(keep="first")]
     if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"])
-        df = df.sort_values("Date").reset_index(drop=True)
+        df["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
     return df
+
+@st.cache_data(ttl=1800)
+def list_available():
+    df = load_parquet_all()
+    if df is None or "Kode" not in df.columns:
+        return []
+    return sorted(df["Kode"].unique())
+
+@st.cache_data(ttl=1800)
+def load_ohlcv(kode):
+    df_all = load_parquet_all()
+    if df_all is None or "Kode" not in df_all.columns:
+        return None
+    df = df_all[df_all["Kode"] == kode].copy()
+    if df.empty:
+        return None
+    return df.sort_values("Date").reset_index(drop=True)
 
 
 def _rgb(hex_color):
     h = hex_color.lstrip("#")
     return f"{int(h[0:2],16)}, {int(h[2:4],16)}, {int(h[4:6],16)}"
 
-
-def _fmt(v, default="—"):
-    """Format angka atau kembalikan default kalau None/0."""
+def _fmt(v, default="-"):
     if v is None:
         return default
     try:
@@ -76,18 +76,8 @@ def _fmt(v, default="—"):
 @st.cache_data(ttl=1800)
 def compute_akumulasi(kode):
     """Hitung Chaikin Money Flow + akumulasi/distribusi dari OHLCV 20 hari."""
-    path = os.path.join(OHLCV_DIR, f"{kode}.csv")
-    if not os.path.exists(path):
-        return {}
-    try:
-        df = pd.read_csv(path)
-        df.columns = [str(c).strip().title() for c in df.columns]
-        df = df.loc[:, ~df.columns.duplicated(keep="first")]
-        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-        df = df.dropna(subset=["Date"]).sort_values("Date").reset_index(drop=True)
-    except Exception:
-        return {}
-    if len(df) < 20:
+    df = load_ohlcv(kode)
+    if df is None or len(df) < 20:
         return {}
 
     d = df.tail(20)
@@ -154,8 +144,7 @@ st.markdown(page_header("", "Technical", "Indikator & Sinyal Trading"),
 
 saham_list = list_available()
 if not saham_list:
-    st.markdown(empty_state("", "Belum ada data",
-                            "Jalankan scraper OHLCV dulu"), unsafe_allow_html=True)
+    st.markdown(empty_state("", "Belum ada data", "Data teknikal belum tersedia. Silakan hubungi admin."), unsafe_allow_html=True)
     st.stop()
 
 if "tech_kode" not in st.session_state:
@@ -173,7 +162,7 @@ if not kode_input:
     st.stop()
 
 if kode_input not in saham_list:
-    st.warning(f"âš ï¸ Saham **{kode_input}** tidak ditemukan.")
+    st.warning(f"Saham **{kode_input}** tidak ditemukan.")
     st.caption(f"Tersedia {len(saham_list)} saham. Contoh: BBCA, BBRI, TLKM, ASII, ANTM")
     st.stop()
 
@@ -203,13 +192,13 @@ st.markdown(
     'background: #0f172a; border: 1px solid #1e293b; '
     'border-radius: 14px; padding: 22px 26px; margin-bottom: 24px; '
     'display: flex; align-items: center; gap: 20px;">'
-    f'<div style="width:64px; height:64px; background: linear-gradient(135deg, #6366f1, #06b6d4); '
+    f'<div style="width:64px; height:64px; background: #1e293b; '
     f'border-radius: 16px; display: flex; align-items: center; '
     f'justify-content: center; font-size: 24px; font-weight: 800; '
-    f'color: #ffffff; letter-spacing: -0.5px;">{kode_pilih[:2]}</div>'
+    f'color: #06b6d4; letter-spacing: -0.5px;">{kode_pilih[:2]}</div>'
     '<div style="flex-grow: 1;">'
     f'<div style="font-size:12px; color:#7d8ba3; margin-bottom:5px; '
-    f'font-weight: 600;">Technical Analysis · {len(df)} hari</div>'
+    f'font-weight: 600;">Technical Analysis - {len(df)} hari</div>'
     f'<div style="font-size:19px; font-weight:700; color:#ffffff; '
     f'margin-bottom:8px;">{kode_pilih}</div>'
     '<div style="display:flex; align-items:baseline; gap:12px;">'
@@ -264,7 +253,7 @@ if ind:
 # SUPPORT & RESISTANCE
 # ============================================================
 st.markdown(section_title("Support & Resistance",
-                          "Multi-scale pivot · SHORT=3 · MEDIUM=7 · LONG=15"),
+                          "Multi-scale pivot - SHORT=3 - MEDIUM=7 - LONG=15"),
             unsafe_allow_html=True)
 
 sr = get_support_resistance(kode_pilih, timeframe="daily")
@@ -275,8 +264,8 @@ if sr:
         f'border:1px solid rgba(99,102,241,0.2); '
         f'border-radius:10px; padding:12px 18px; margin-bottom:16px; '
         f'font-size:12px; color:#94a3b8;">'
-        f'ATR: <b style="color:#a5b4fc;">{sr["atr"]:,.0f}</b> · '
-        f'Tolerance: <b style="color:#a5b4fc;">{sr["tolerance"]:,.0f}</b> · '
+        f'ATR: <b style="color:#a5b4fc;">{sr["atr"]:,.0f}</b> - '
+        f'Tolerance: <b style="color:#a5b4fc;">{sr["tolerance"]:,.0f}</b> - '
         f'Bars: <b style="color:#a5b4fc;">{sr["n_bars"]}</b>'
         f'</div>',
         unsafe_allow_html=True
@@ -295,7 +284,7 @@ if sr:
             for z in sr["resistances"]:
                 flip = " [FLIP]" if z.get("flip") else ""
                 scales = z.get("scales", [])
-                scales_str = " · ".join(f"S{s}" for s in scales) if scales else "fallback"
+                scales_str = " - ".join(f"S{s}" for s in scales) if scales else "fallback"
                 strength = z["strength"]
                 color = "#f43f5e" if strength == "STRONG" else (
                         "#f59e0b" if strength == "MODERATE" else "#94a3b8")
@@ -309,7 +298,7 @@ if sr:
                     f'align-items:center; margin-bottom:4px;">'
                     f'<span style="color:#e6ebf5; font-weight:700; '
                     f'font-size:14px;">'
-                    f'{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
+                    f'{z["lower"]:,.0f} - {z["upper"]:,.0f}</span>'
                     f'<span style="font-size:10px; color:{color}; '
                     f'font-weight:700;">{strength}{flip}</span>'
                     f'</div>'
@@ -334,14 +323,14 @@ if sr:
         st.markdown(
             '<div style="font-size:11px; color:#64748b; font-weight:700; '
             'letter-spacing:0.08em; text-transform:uppercase; '
-            'margin-bottom:12px;">🟢 SUPPORT</div>',
+            'margin-bottom:12px;">SUPPORT</div>',
             unsafe_allow_html=True
         )
         if sr["supports"]:
             for z in sr["supports"]:
                 flip = " [FLIP]" if z.get("flip") else ""
                 scales = z.get("scales", [])
-                scales_str = " · ".join(f"S{s}" for s in scales) if scales else "fallback"
+                scales_str = " - ".join(f"S{s}" for s in scales) if scales else "fallback"
                 strength = z["strength"]
                 color = "#10b981" if strength == "STRONG" else (
                         "#f59e0b" if strength == "MODERATE" else "#94a3b8")
@@ -355,7 +344,7 @@ if sr:
                     f'align-items:center; margin-bottom:4px;">'
                     f'<span style="color:#e6ebf5; font-weight:700; '
                     f'font-size:14px;">'
-                    f'{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
+                    f'{z["lower"]:,.0f} - {z["upper"]:,.0f}</span>'
                     f'<span style="font-size:10px; color:{color}; '
                     f'font-weight:700;">{strength}{flip}</span>'
                     f'</div>'
@@ -392,7 +381,7 @@ STRATEGI_INFO = {
                  "di atas batas atas zona).",
         "cara_entry": "Limit buy di zona. 50% di tengah zona, "
                       "50% setelah candle konfirmasi muncul.",
-        "cara_konfirmasi": "Tidak perlu — limit order sudah menunggu di zona.",
+        "cara_konfirmasi": "Tidak perlu - limit order sudah menunggu di zona.",
         "invalidasi": "Setup batal kalau candle close tembus ke bawah zona.",
     },
     "BREAKOUT BUY": {
@@ -412,8 +401,8 @@ STRATEGI_INFO = {
 if rr_multi and rr_multi.get("scenarios"):
     st.markdown(
         section_title(
-            "Risk/Reward — Skenario LONG",
-            "Buy Support · Breakout Buy · RR net setelah fee · "
+            "Risk/Reward - Skenario LONG",
+            "Buy Support - Breakout Buy - RR net setelah fee - "
             "IDX tidak bisa short"
         ),
         unsafe_allow_html=True,
@@ -428,9 +417,9 @@ if rr_multi and rr_multi.get("scenarios"):
         f'border:1px solid rgba(99,102,241,0.2); '
         f'border-radius:10px; padding:12px 18px; margin-bottom:20px; '
         f'font-size:12px; color:#94a3b8;">'
-        f'Harga: <b style="color:#a5b4fc;">{rr_multi["current_price"]:,.0f}</b> · '
-        f'ATR: <b style="color:#a5b4fc;">{rr_multi["atr"]:,.0f}</b> · '
-        f'Lolos filter: <b style="color:{info_color};">{n_lolos}</b> · '
+        f'Harga: <b style="color:#a5b4fc;">{rr_multi["current_price"]:,.0f}</b> - '
+        f'ATR: <b style="color:#a5b4fc;">{rr_multi["atr"]:,.0f}</b> - '
+        f'Lolos filter: <b style="color:{info_color};">{n_lolos}</b> - '
         f'Gugur: <b style="color:#94a3b8;">{n_gugur}</b>'
         f'</div>',
         unsafe_allow_html=True,
@@ -559,7 +548,7 @@ if rr_multi and rr_multi.get("scenarios"):
             f'display:flex; gap:18px; flex-wrap:wrap;">'
             f'<span><span style="color:#64748b;">Zona entry</span> '
             f'<b style="color:#cbd5e1;">'
-            f'{s["zona_entry"][0]:,.0f}–{s["zona_entry"][1]:,.0f}</b></span>'
+            f'{s["zona_entry"][0]:,.0f}-{s["zona_entry"][1]:,.0f}</b></span>'
             f'<span><span style="color:#64748b;">Risk</span> '
             f'<b style="color:#cbd5e1;">{s.get("risk_pct", 0):.2f}%</b></span>'
             f'{tp2_html}'
@@ -577,7 +566,7 @@ if rr_multi and rr_multi.get("scenarios"):
         )
 
 else:
-    st.markdown(section_title("Risk/Reward — Skenario LONG"),
+    st.markdown(section_title("Risk/Reward - Skenario LONG"),
                 unsafe_allow_html=True)
     st.markdown(
         '<div style="color:#475569; font-size:13px; padding:8px;">'
@@ -595,8 +584,8 @@ if sig:
     st.markdown(section_title("Sinyal Trading"), unsafe_allow_html=True)
     sig_color = "#10b981" if sig['sinyal'] == 'BUY' else (
                 "#f43f5e" if sig['sinyal'] == 'SELL' else "#f59e0b")
-    sig_icon = "↗" if sig['sinyal'] == 'BUY' else (
-               "↘" if sig['sinyal'] == 'SELL' else "—")
+    sig_icon = "^" if sig['sinyal'] == 'BUY' else (
+               "v" if sig['sinyal'] == 'SELL' else "-")
 
     st.markdown(
         '<div style="background:#0f172a; border:1px solid #1e293b; '
@@ -642,7 +631,7 @@ if sig:
 
 
 # ============================================================
-# AKUMULASI VS DISTRIBUSI (dipindah dari Fundamental)
+# AKUMULASI VS DISTRIBUSI
 # ============================================================
 akum = compute_akumulasi(kode_pilih)
 
@@ -673,7 +662,7 @@ if akum:
         f'<div style="font-size:14px; font-weight:700; color:{color}; '
         f'margin-bottom:4px;">{label}</div>'
         f'<div style="font-size:12px; color:#94a3b8;">'
-        f'CMF: <b style="color:#e6ebf5;">{cmf:+.3f}</b> · '
+        f'CMF: <b style="color:#e6ebf5;">{cmf:+.3f}</b> - '
         f'Vol trend: <b style="color:#e6ebf5;">{vol_trend:.2f}x</b>'
         f'</div></div>'
         f'<div style="font-size:30px; font-weight:800; color:{color}; '
