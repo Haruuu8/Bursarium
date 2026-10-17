@@ -9,7 +9,7 @@ import yaml
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quant.theme import load_theme, hero, section_title, info_banner
-from quant.auth import submit_registration
+from quant.auth import submit_registration, get_all_approved_users_for_auth
 
 st.set_page_config(page_title="Bursarium", layout="wide")
 load_theme()
@@ -21,8 +21,7 @@ except ImportError:
     st.stop()
 
 
-# ============ ADMIN ROUTING (rahasia) ============
-# Baca dari Secrets Cloud dulu, kalau tidak ada baru baca dari Env Lokal
+# ============ ADMIN ROUTING ============
 ADMIN_SECRET = st.secrets.get("ADMIN_SECRET", os.environ.get("ADMIN_SECRET", ""))
 
 admin_key = st.query_params.get("admin", "")
@@ -45,37 +44,34 @@ if admin_key:
 
 
 # ============ CONFIG ============
-# Baca dari Secrets Cloud dulu, kalau tidak ada baru baca dari config.yaml lokal
-from quant.auth import get_all_approved_users_for_auth # Tambahkan import ini di atas
-
-# ... kode sebelumnya ...
-
-# 1. Load base config (untuk cookie & admin)
 if "CONFIG_YAML" in st.secrets:
     config = yaml.safe_load(st.secrets["CONFIG_YAML"])
 else:
-    with open("config.yaml", "r") as f:
+    CONFIG_FILE = "config.yaml"
+    if not os.path.exists(CONFIG_FILE):
+        st.error("config.yaml tidak ditemukan (lokal).")
+        st.stop()
+    with open(CONFIG_FILE, encoding="utf-8") as f:
         config = yaml.safe_load(f)
 
-# 2. Timpa daftar usernames dengan data terbaru dari Supabase
-# (Termasuk admin yg ada di config.yaml, digabung dengan user dari DB)
+# Ambil user dari Database Supabase dan gabungkan dengan admin
 db_users = get_all_approved_users_for_auth()
 if db_users:
     config["credentials"]["usernames"].update(db_users)
 
-authenticator = stauth.Authenticate(
-    config["credentials"],
-    config["cookie"]["name"],
-    config["cookie"]["key"],
-    config["cookie"]["expiry_days"],
-)
+# ============ FIX STREAMLIT DUPLICATE KEY ============
+# Membungkus Authenticate dengan cache_resource agar tidak inisialisasi ganda
+@st.cache_resource
+def init_authenticator(creds, cookie_name, cookie_key, expiry):
+    return stauth.Authenticate(creds, cookie_name, cookie_key, expiry)
 
-authenticator = stauth.Authenticate(
+authenticator = init_authenticator(
     config["credentials"],
     config["cookie"]["name"],
     config["cookie"]["key"],
     config["cookie"]["expiry_days"],
 )
+# ========================================================
 
 
 # ============ KALAU SUDAH LOGIN → REDIRECT ============
@@ -87,7 +83,6 @@ if st.session_state.get("authentication_status"):
 # ============ KONFIGURASI LANDING ============
 HARGA = 200000
 
-# Fitur tanpa icon/emoji
 FITUR = [
     ("Dashboard",    "Ringkasan market & watchlist harian"),
     ("Fundamental",  "Analisis rasio keuangan & valuasi emiten IDX"),
