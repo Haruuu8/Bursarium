@@ -10,8 +10,8 @@ Rumus:
 
 Fitur:
   - Search bar: ketik kode -> detail card (dengan red flag warning)
-  - Top 10 Undervalued (auto-sorted)
-  - Tabel semua saham undervalued
+  - Top 10 Undervalued (auto-sorted by Skor)
+  - Tabel semua saham undervalued (auto-sorted by Skor)
   - Panel red flag (saham di-skip)
   - Median PE/PB per sektor (referensi)
 """
@@ -587,22 +587,17 @@ if search_kode:
                 '</div>'
             )
 
-        # ==========================================
-        # DESAIN BARU UNTUK SEARCH RESULT (RATA KIRI)
-        # ==========================================
         st.markdown(
             f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
             f'border:1px solid #1a2338; border-left:4px solid {accent}; '
             f'border-radius:16px; padding:24px 28px; margin:16px 0 20px;">'
 
-            # Header
             f'<div style="margin-bottom:20px;">'
             f'<div style="font-size:26px; font-weight:900; color:#ffffff; letter-spacing:-0.03em;">{kode}</div>'
             f'<div style="font-size:13px; color:#94a3b8; margin-top:4px;">{nama} - <span style="color:#64748b;">{sektor}</span></div>'
             f'<div style="margin-top:10px;">{status_badge}</div>'
             f'</div>'
 
-            # Harga Rata Kiri
             f'<div style="margin-bottom:20px;">'
             f'<div style="font-size:11px; color:#64748b; letter-spacing:0.8px; font-weight:700;">HARGA SAAT INI</div>'
             f'<div style="font-size:32px; font-weight:900; color:#ffffff; letter-spacing:-0.03em; margin-top:4px;">{fmt(harga, 0)}</div>'
@@ -610,7 +605,6 @@ if search_kode:
 
             f'{warning_banner}'
 
-            # Grid 3 Kolom (FV, Potential, Skor)
             f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
             f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:14px 18px;">'
             f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">FAIR VALUE</div>'
@@ -626,7 +620,6 @@ if search_kode:
             f'<div style="font-size:22px; font-weight:800; color:#ffffff; margin-top:4px;">{skor:.0f}<span style="font-size:12px; color:#64748b;">/100</span></div></div>'
             f'</div>'
 
-            # Grid 3 Kolom (Metrik)
             f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
             f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
             f'<div style="font-size:10px; color:#64748b;">EPS</div>'
@@ -653,7 +646,6 @@ if search_kode:
             f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(de_val, 2)}</div></div>'
             f'</div>'
 
-            # Footer FV
             f'<div style="border-top:1px solid #1a2338; padding-top:14px; display:flex; gap:20px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
             f'<span>FV Graham: <b style="color:#cbd5e1;">{fmt(fv_graham, 0)}</b></span>'
             f'<span>FV-PE: <b style="color:#cbd5e1;">{fmt(fv_pe, 0)}</b></span>'
@@ -672,13 +664,14 @@ st.markdown(
 
 
 # ============================================================
-# TOP 10 UNDERVALUED (auto) - DESAIN BARU
+# TOP 10 UNDERVALUED (auto) - SORTED BY SKOR
 # ============================================================
 st.markdown(section_title("Top 10 Undervalued",
-                          "Auto-sorted by potential - Conservative FV"),
+                          "Auto-sorted by Skor - Conservative FV"),
             unsafe_allow_html=True)
 
-top = val_underval.sort_values("potential", ascending=False).head(10).reset_index(drop=True)
+# PERUBAHAN DI SINI: sort_values berdasarkan "skor", bukan "potential"
+top = val_underval.sort_values(by=["skor", "potential"], ascending=[False, False]).head(10).reset_index(drop=True)
 
 if top.empty:
     st.markdown(empty_state("", "Tidak ada saham undervalued saat ini",
@@ -704,16 +697,11 @@ else:
         elif pot >= 0: pot_color = "#f59e0b"
         else: pot_color = "#f43f5e"
         
-        # Warna dinamis untuk Score Circle
         score_color = "#10b981" if skor >= 80 else "#818cf8" if skor >= 60 else "#94a3b8"
 
-        # ==========================================
-        # DESAIN BARU UNTUK TOP 10 CARD (SEPERTI GAMBAR)
-        # ==========================================
         st.markdown(
-            f'<div style="background: #131a2a; border-radius: 12px; border: 1px solid #1e293b; padding: 20px; margin-bottom: 16px; border-left: 4px solid {pot_color};">'
+            f'<div style="background: #131a2a; border-radius: 12px; border: 1px solid #1e293b; padding: 20px; margin-bottom: 16px; border-left: 4px solid {score_color};">'
             
-            # 1. Header (Kode & Target Range)
             f'<div style="display: flex; justify-content: space-between; align-items: stretch; border-bottom: 1px solid #1e293b; padding-bottom: 12px; margin-bottom: 16px;">'
             f'<div style="flex: 1;">'
             f'<div style="font-size: 24px; font-weight: 800; color: #fff; line-height: 1.2;">{kode}</div>'
@@ -726,7 +714,6 @@ else:
             f'</div>'
             f'</div>'
 
-            # 2. Metrik (6 Kolom Menyamping)
             f'<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; text-align: center; border-bottom: 1px solid #1e293b; padding-bottom: 16px; margin-bottom: 16px;">'
             f'<div>'
             f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">Rank:</div>'
@@ -754,17 +741,14 @@ else:
             f'</div>'
             f'</div>'
 
-            # 3. Footer (Score & Potential)
             f'<div style="display: flex; justify-content: space-between; align-items: center;">'
             
-            # Score Circle (CSS Conic Gradient)
             f'<div style="position: relative; width: 65px; height: 65px; border-radius: 50%; background: conic-gradient({score_color} {skor}%, #1e293b 0); display: flex; align-items: center; justify-content: center;">'
             f'<div style="width: 57px; height: 57px; background: #131a2a; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">'
             f'<span style="font-size: 10px; color: #94a3b8; line-height: 1;">Score:</span>'
             f'<span style="font-size: 18px; font-weight: 800; color: #fff; line-height: 1.2;">{skor:.0f}</span>'
             f'</div></div>'
 
-            # Potential Text
             f'<div style="text-align: right;">'
             f'<div style="font-size: 11px; color: #94a3b8;">Potential:</div>'
             f'<div style="font-size: 24px; font-weight: 900; color: {pot_color};">{pot:+.1f}%</div>'
@@ -776,11 +760,12 @@ else:
 
 
 # ============================================================
-# TABEL SEMUA UNDERVALUED
+# TABEL SEMUA UNDERVALUED (SORTED BY SKOR)
 # ============================================================
-st.markdown(section_title("Semua Saham Undervalued"), unsafe_allow_html=True)
+st.markdown(section_title("Semua Saham Undervalued", "Auto-sorted by Skor"), unsafe_allow_html=True)
 
-tampil = val_underval.sort_values("potential", ascending=False).reset_index(drop=True)
+# PERUBAHAN DI SINI: sort_values berdasarkan "skor", bukan "potential"
+tampil = val_underval.sort_values(by=["skor", "potential"], ascending=[False, False]).reset_index(drop=True)
 
 if tampil.empty:
     st.info("Tidak ada saham undervalued saat ini.")
@@ -818,7 +803,7 @@ else:
                  height=min(600, 40 + len(df_show) * 35))
 
     st.caption(f"{len(df_show)} saham undervalued - "
-               f"FV sudah dikurangi margin of safety 15%")
+               f"Diurutkan berdasarkan Skor (Kualitas Fundamental & Valuasi)")
 
 
 # ============================================================
