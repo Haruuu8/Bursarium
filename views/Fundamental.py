@@ -83,7 +83,6 @@ def fmt_pct(v, dec=2, plus=False):
 # ============================================================
 # HEADER
 # ============================================================
-# HANYA BARIS INI YANG DIUBAH (Emoji 📈 dihapus)
 st.markdown(page_header("", "Fundamental", "Analisis Rasio Keuangan"),
             unsafe_allow_html=True)
 
@@ -123,7 +122,7 @@ if not data:
 
 
 # ============================================================
-# HEADER SAHAM
+# HEADER SAHAM (Kotak "BB" DIHAPUS)
 # ============================================================
 harga = data.get("harga") or 0
 chg = 0
@@ -144,12 +143,6 @@ st.markdown(
     'border: 1px solid #1a2338; border-radius: 14px; '
     'padding: 22px 26px; margin-bottom: 24px; '
     'display: flex; align-items: center; gap: 20px;">'
-    f'<div style="width: 64px; height: 64px; '
-    f'background: linear-gradient(135deg, #6366f1, #06b6d4); '
-    f'border-radius: 16px; display: flex; align-items: center; '
-    f'justify-content: center; font-size: 28px; font-weight: 800; '
-    f'color: white; box-shadow: 0 8px 24px rgba(99,102,241,0.3); '
-    f'letter-spacing: -0.5px;">{kode_pilih[:2]}</div>'
     '<div style="flex-grow: 1;">'
     f'<div style="font-size: 12px; color: #7d8ba3; margin-bottom: 5px; '
     f'font-weight: 600; letter-spacing: 0.5px;">'

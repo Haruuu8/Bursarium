@@ -127,7 +127,6 @@ def compute_akumulasi(kode):
 # ============================================================
 # HEADER
 # ============================================================
-# HANYA BARIS INI YANG DIUBAH (Emoji 📉 dihapus)
 st.markdown(page_header("", "Technical", "Indikator & Sinyal Trading"),
             unsafe_allow_html=True)
 
@@ -177,15 +176,12 @@ chg_sign = "+" if chg >= 0 else ""
 
 ind = hitung_indikator_teknikal(kode_pilih)
 
+# Kotak "BB" DIHAPUS
 st.markdown(
     '<div style="'
     'background: #0f172a; border: 1px solid #1e293b; '
     'border-radius: 14px; padding: 22px 26px; margin-bottom: 24px; '
     'display: flex; align-items: center; gap: 20px;">'
-    f'<div style="width:64px; height:64px; background: #1e293b; '
-    f'border-radius: 16px; display: flex; align-items: center; '
-    f'justify-content: center; font-size: 24px; font-weight: 800; '
-    f'color: #06b6d4; letter-spacing: -0.5px;">{kode_pilih[:2]}</div>'
     '<div style="flex-grow: 1;">'
     f'<div style="font-size:12px; color:#7d8ba3; margin-bottom:5px; '
     f'font-weight: 600;">Technical Analysis · {len(df)} hari</div>'

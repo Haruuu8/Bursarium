@@ -48,13 +48,7 @@ SEKTOR_ID = {
     "Technology": "Teknologi", "Infrastructures": "Infrastruktur",
     "Transportation & Logistic": "Transportasi & Logistik",
 }
-SEKTOR_ICON = {
-    "Energy": "⚡", "Basic Materials": "📦", "Industrials": "🏭",
-    "Consumer Non-Cyclicals": "🛒", "Consumer Cyclicals": "🛍️",
-    "Healthcare": "💊", "Financials": "🏦",
-    "Properties & Real Estate": "🏢", "Technology": "💻",
-    "Infrastructures": "🏗️", "Transportation & Logistic": "🚚",
-}
+
 STATUS_STYLE = {
     "Leading":   {"bg": "rgba(16,185,129,0.08)",
                    "border": "rgba(16,185,129,0.3)",
@@ -196,7 +190,7 @@ phase, phase_desc = detect_market_phase(status_counts)
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown(page_header("📊", "Rotasi Sektor", phase_desc),
+st.markdown(page_header("", "Rotasi Sektor", phase_desc),
             unsafe_allow_html=True)
 
 st.markdown(
@@ -239,7 +233,6 @@ st.markdown(
 for _, r in df_sorted.iterrows():
     sektor = r["sektor"]; status = r["status"]; ret = r["ret_1d"]
     spread = r.get("spread_20d")
-    icon = SEKTOR_ICON.get(sektor, "📁")
     nama_id = SEKTOR_ID.get(sektor, sektor)
     style = STATUS_STYLE[status]
     color_ret = "#10b981" if ret >= 0 else "#f43f5e"
@@ -265,10 +258,6 @@ for _, r in df_sorted.iterrows():
         'border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; '
         'display: flex; align-items: center; gap: 16px; '
         'box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">'
-        f'<div style="font-size: 24px; width: 44px; height: 44px; '
-        f'display: flex; align-items: center; justify-content: center; '
-        f'border-radius: 10px; background: #0a0e1a; flex-shrink: 0; '
-        f'border: 1px solid #1f2a3d;">{icon}</div>'
         '<div style="flex-grow: 1;">'
         f'<div style="font-size: 15px; font-weight: 700; color: #ffffff; '
         f'margin-bottom: 8px;">{nama_id}</div>'
@@ -348,11 +337,11 @@ def render_market_list(items, title):
 
 
 with col1:
-    render_market_list(global_data["indeks"], "🌎 Indeks Global")
+    render_market_list(global_data["indeks"], "Indeks Global")
 with col2:
-    render_market_list(global_data["mata_uang"], "💵 Mata Uang")
+    render_market_list(global_data["mata_uang"], "Mata Uang")
 with col3:
-    render_market_list(global_data["komoditas"], "🛢️ Komoditas")
+    render_market_list(global_data["komoditas"], "Komoditas")
 
 
 # ============================================================
@@ -366,6 +355,7 @@ for nama, nilai, status, ket in dampak_ihsg:
         "#f43f5e" if status == "NEGATIF" else
         "#f59e0b"
     )
+    # Emoji status DIKEMBALIKAN
     badge_icon = (
         "🟢" if status == "POSITIF" else
         "🔴" if status == "NEGATIF" else "🟡"
