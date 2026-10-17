@@ -573,7 +573,6 @@ def setup_table(items, nama_map):
 # ============================================================
 # HEADER
 # ============================================================
-# Kotak biru dan emoji bintang (⭐) dihapus
 st.markdown(page_header("", "Watchlist",
                         "Haka Pagi · Bottom Fishing · Pre-Cross · Setups · Performa"),
             unsafe_allow_html=True)
@@ -612,15 +611,10 @@ with tab1:
         st.markdown(empty_state("📭", "Belum ada kandidat",
                                 "Jalankan screener dulu"), unsafe_allow_html=True)
     else:
-        c1, c2, c3 = st.columns([3, 2, 2])
-        with c1:
-            selected = st.selectbox("File", files, label_visibility="collapsed")
-        with c2:
-            min_str = st.selectbox("Min Strength", [1, 2, 3, 4], index=1,
-                                    label_visibility="collapsed")
-        with c3:
-            min_rating = st.slider("Min Rating", 0, 100, 0, 5,
-                                    label_visibility="collapsed")
+        # OTOMATISASI: Ambil file terbaru, hilangkan dropdown, dan set filter secara default
+        selected = files[0]
+        min_str = 2
+        min_rating = 0
 
         df = load_csv(os.path.join(OUTPUT_DIR, selected))
 
@@ -634,7 +628,7 @@ with tab1:
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; '
                 f'margin:8px 0 16px; font-weight:500;">'
-                f'{len(df)} kandidat ditampilkan · {selected}</div>',
+                f'{len(df)} kandidat ditampilkan</div>',
                 unsafe_allow_html=True
             )
 
@@ -1027,13 +1021,13 @@ with tab6:
     if not rekap_files:
         st.warning("Belum ada data performa. Silakan hubungi admin.")
     else:
-        fname = st.selectbox("Pilih file", rekap_files,
-                             label_visibility="collapsed")
+        # OTOMATISASI: Langsung ambil file rekap terbaru tanpa dropdown
+        fname = rekap_files[0]
         bulan_label = fname.replace("Rekap_Trading_", "").replace(".xlsx", "")
         df_rev = load_rekap_sheet(fname, "Review Harian")
 
         if df_rev is None or df_rev.empty:
-            st.warning(f"Belum ada data performa di {fname}.")
+            st.warning(f"Belum ada data performa.")
         else:
             if "P/L %" in df_rev.columns:
                 df_rev["P/L %"] = pd.to_numeric(df_rev["P/L %"], errors="coerce")
