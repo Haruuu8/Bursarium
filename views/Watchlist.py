@@ -734,13 +734,15 @@ with tab3:
             st.cache_data.clear()
             st.rerun()
 
-    if not items_pc:
+    if gen_pc == "?":
+        st.warning("Data scan belum tersedia. Silakan hubungi admin untuk update data terbaru.")
+    elif not items_pc:
         st.markdown(
             '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
             'border:1px dashed #334155; border-radius:14px; '
             'padding:40px 32px; text-align:center;">'
             '<div style="font-size:15px; font-weight:700; color:#cbd5e1; '
-            'margin-bottom:8px;">Tidak ada setup skor &gt;= 85</div>'
+            'margin-bottom:8px;">Tidak ada setup skor &gt;= 85 hari ini</div>'
             '<div style="font-size:12px; color:#7d8ba3; max-width:480px; '
             'margin:0 auto;">Setup presisi tinggi jarang muncul. '
             'Cek kandidat emerging di bawah.</div>'
@@ -804,8 +806,10 @@ with tab3:
 
     items_emg, gen_emg = load_scan("emerging")
 
-    if not items_emg:
-        st.info("Data kandidat emerging belum tersedia. Silakan hubungi admin.")
+    if gen_emg == "?":
+        st.warning("Data scan emerging belum tersedia. Silakan hubungi admin untuk update data terbaru.")
+    elif not items_emg:
+        st.info("Belum ada kandidat emerging hari ini.")
     else:
         st.markdown(
             f'<div style="font-size:12px; color:#7d8ba3; margin:4px 0 16px;">'
