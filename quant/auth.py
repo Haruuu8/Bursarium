@@ -21,8 +21,9 @@ for d in [PENDING_DIR, APPROVED_DIR, UPLOAD_DIR, REJECTED_DIR]:
     d.mkdir(parents=True, exist_ok=True)
 
 
-def generate_username(nama: str) -> str:
-    base = "".join(c.lower() for c in nama if c.isalnum())[:12]
+def generate_username(telegram: str) -> str:
+    """Generate username dari username Telegram."""
+    base = "".join(c.lower() for c in telegram if c.isalnum())[:12]
     if not base:
         base = "user"
     suffix = "".join(secrets.choice(string.digits) for _ in range(3))
@@ -45,7 +46,8 @@ def verify_password(password: str, hashed: str) -> bool:
         return False
 
 
-def submit_registration(nama, email, whatsapp, bukti_bytes, bukti_filename, paket="basic"):
+def submit_registration(telegram, bukti_bytes, bukti_filename):
+    """Menyimpan pendaftaran baru ke folder pending."""
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     reg_id = f"REG_{ts}_{secrets.token_hex(3)}"
 
@@ -54,8 +56,8 @@ def submit_registration(nama, email, whatsapp, bukti_bytes, bukti_filename, pake
     bukti_path.write_bytes(bukti_bytes)
 
     data = {
-        "reg_id": reg_id, "nama": nama, "email": email,
-        "whatsapp": whatsapp, "paket": paket,
+        "reg_id": reg_id,
+        "telegram": telegram,
         "bukti_file": str(bukti_path),
         "submitted_at": datetime.now().isoformat(),
         "status": "pending",
@@ -90,6 +92,7 @@ def list_approved():
 
 
 def approve_registration(reg_id):
+    """Mengubah status dari pending ke approved, dan membuat akun login."""
     pending_path = PENDING_DIR / f"{reg_id}.json"
     if not pending_path.exists():
         return {"error": f"Registration {reg_id} tidak ditemukan"}
@@ -97,12 +100,14 @@ def approve_registration(reg_id):
     with open(pending_path, encoding="utf-8") as f:
         data = json.load(f)
 
-    username = generate_username(data.get("nama", ""))
+    tele = data.get("telegram", "")
+    username = generate_username(tele)
     password = generate_password()
 
+    # Pastikan username unik
     existing = _load_config()
     while username in existing.get("credentials", {}).get("usernames", {}):
-        username = generate_username(data.get("nama", ""))
+        username = generate_username(tele)
 
     data["username"] = username
     data["password"] = password
@@ -112,14 +117,14 @@ def approve_registration(reg_id):
     with open(APPROVED_DIR / f"{reg_id}.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    _add_user_to_config(username, data.get("email", ""), data.get("nama", ""),
-                        password, data.get("paket", "basic"))
+    _add_user_to_config(username, tele, password)
     pending_path.unlink()
 
     return {
-        "success": True, "username": username, "password": password,
-        "email": data.get("email"), "whatsapp": data.get("whatsapp"),
-        "nama": data.get("nama"),
+        "success": True,
+        "username": username,
+        "password": password,
+        "telegram": tele,
     }
 
 
@@ -153,13 +158,15 @@ def _save_config(config):
         yaml.dump(config, f, default_flow_style=False, allow_unicode=True)
 
 
-def _add_user_to_config(username, email, nama, password, paket="basic"):
+def _add_user_to_config(username, telegram, password):
+    """Menambahkan user baru ke config.yaml setelah di-approve."""
     config = _load_config()
     config.setdefault("credentials", {}).setdefault("usernames", {})
     config["credentials"]["usernames"][username] = {
-        "email": email, "name": nama,
+        "email": "",
+        "name": telegram,
         "password": hash_password(password),
-        "paket": paket,
+        "telegram": telegram,
         "registered_at": datetime.now().isoformat(),
     }
     _save_config(config)
