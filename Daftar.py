@@ -1,4 +1,4 @@
-"""Entry point — Landing page + admin routing + link ke Daftar."""
+"""Entry point — Landing page + admin routing + navigasi halaman."""
 
 import os
 import re
@@ -19,6 +19,10 @@ try:
 except ImportError:
     st.error("Install: py -m pip install streamlit-authenticator bcrypt")
     st.stop()
+
+# PENGAMAN BUG STREAMLIT-AUTHENTICATOR
+if "logout" not in st.session_state:
+    st.session_state["logout"] = False
 
 
 # ============ ADMIN ROUTING ============
@@ -59,36 +63,41 @@ db_users = get_all_approved_users_for_auth()
 if db_users:
     config["credentials"]["usernames"].update(db_users)
 
-# ============ INISIALISASI AUTHENTICATOR (LANGSUNG) ============
+# ============ INISIALISASI AUTHENTICATOR ============
 authenticator = stauth.Authenticate(
     config["credentials"],
     config["cookie"]["name"],
     config["cookie"]["key"],
     config["cookie"]["expiry_days"],
 )
-# =============================================================
 
 
-# ============ KALAU SUDAH LOGIN → REDIRECT ============
+# ============ KALAU SUDAH LOGIN → NAVIGASI HALAMAN ============
 if st.session_state.get("authentication_status"):
-    st.switch_page("views/Dashboard.py")
-    st.stop()
+    
+    # 1. Definisikan halaman (wajib sebelum st.page_link dipanggil)
+    pages = [
+        st.Page("views/Dashboard.py", title="Dashboard", icon=":material/dashboard:", default=True),
+        st.Page("views/Fundamental.py", title="Fundamental", icon=":material/analytics:"),
+        st.Page("views/Technical.py", title="Technical", icon=":material/trending_up:"),
+        st.Page("views/Watchlist.py", title="Watchlist", icon=":material/star:"),
+        st.Page("views/Valuation.py", title="Valuation", icon=":material/payments:"),
+        st.Page("views/News.py", title="News", icon=":material/newspaper:"),
+    ]
+    pg = st.navigation(pages, position="hidden")
+    
+    # 2. Render sidebar custom (user card + logout + menu)
+    from quant.nav import render_user_sidebar
+    render_user_sidebar()
+    
+    # 3. Jalankan halaman yang dipilih
+    pg.run()
+    st.stop() # Hentikan eksekusi sisa script (landing page tidak perlu dirender)
 
 
-# ============ KONFIGURASI LANDING ============
-HARGA = 200000
+# ============ KALAU BELUM LOGIN → LANDING PAGE ============
 
-FITUR = [
-    ("Dashboard",    "Ringkasan market & watchlist harian"),
-    ("Fundamental",  "Analisis rasio keuangan & valuasi emiten IDX"),
-    ("Technical",    "Chart, RSI, support-resistance, pre-cross setup"),
-    ("Watchlist",    "Pantau saham favorit Anda"),
-    ("Valuation",    "Hitung valuasi & risk/reward otomatis"),
-    ("News",         "Berita terkini seputar pasar IDX"),
-]
-
-
-# ============ LOGIN DI SIDEBAR ============
+# Sidebar Login
 with st.sidebar:
     st.markdown(
         '<div style="text-align:center; padding:8px 0 20px;">'
@@ -101,13 +110,7 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    try:
-        authenticator.login(location="main")
-    except Exception as e:
-        # Fallback jika terjadi KeyError 'logout' pada sesi pertama
-        if "logout" not in st.session_state:
-            st.session_state["logout"] = False
-        authenticator.login(location="main")
+    authenticator.login(location="main")
 
     auth_status = st.session_state.get("authentication_status")
     if auth_status is False:
@@ -124,8 +127,7 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-
-# ============ HERO ============
+# Main Content Landing Page
 st.markdown(
     hero(
         "📊 Bursarium",
@@ -141,6 +143,15 @@ st.markdown(
 
 # ============ FITUR ============
 st.markdown(section_title("✨ Yang Anda Dapatkan"), unsafe_allow_html=True)
+
+FITUR = [
+    ("Dashboard",    "Ringkasan market & watchlist harian"),
+    ("Fundamental",  "Analisis rasio keuangan & valuasi emiten IDX"),
+    ("Technical",    "Chart, RSI, support-resistance, pre-cross setup"),
+    ("Watchlist",    "Pantau saham favorit Anda"),
+    ("Valuation",    "Hitung valuasi & risk/reward otomatis"),
+    ("News",         "Berita terkini seputar pasar IDX"),
+]
 
 cols = st.columns(2)
 for i, (nama, desk) in enumerate(FITUR):
