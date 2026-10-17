@@ -377,7 +377,7 @@ footer { visibility: hidden; }
 
 
 /* ============================================================ */
-/* 🔥 TAMBAHAN CSS UNTUK MOBILE (TOMBOL 3 GARIS & RESPONSIVE) 🔥 */
+/* 🔥 TAMBAHAN CSS UNTUK MOBILE (RESPONSIVE & STACKING) 🔥 */
 /* ============================================================ */
 
 /* 1. Memaksa Tombol Sidebar (Hamburger) Muncul di HP */
@@ -412,7 +412,7 @@ footer { visibility: hidden; }
     line-height: 1;
 }
 
-/* 2. PERBAIKAN DESAIN KHUSUS LAYAR HP (AGAR TIDAK TERLALU ZOOM) */
+/* 2. PERBAIKAN DESAIN KHUSUS LAYAR HP */
 @media (max-width: 768px) {
     /* Perkecil padding halaman */
     .block-container {
@@ -441,44 +441,41 @@ footer { visibility: hidden; }
         padding: 8px 10px !important;
     }
 
-    /* Ubah Grid 4 Kolom (seperti di Card Setup) jadi 2 Kolom */
-    div[style*="grid-template-columns:repeat(4, 1fr)"],
-    div[style*="grid-template-columns: repeat(4, 1fr)"] {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 8px !important;
+    /* ========================================================
+       FIX: Paksa semua elemen flexbox yang berjejer ke samping
+       agar turun ke bawah (stacking) di HP
+       ======================================================== */
+    div[style*="display: flex"], 
+    div[style*="display:flex"] {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
     }
-    
-    /* Ubah Grid 3 Kolom jadi 1 Kolom */
+
+    /* Paksa semua grid (baik 3 kolom maupun 4 kolom) jadi 1 kolom penuh */
+    div[style*="grid-template-columns:repeat(4, 1fr)"],
+    div[style*="grid-template-columns: repeat(4, 1fr)"],
     div[style*="grid-template-columns:repeat(3, 1fr)"],
     div[style*="grid-template-columns: repeat(3, 1fr)"] {
-        grid-template-columns: 1fr !important;
-        gap: 8px !important;
+        grid-template-columns: 1fr !important; /* Ubah jadi 1 kolom full */
+        gap: 12px !important;
     }
 
     /* Perkecil ukuran teks harga / angka raksasa di dalam Card Custom */
     span[style*="font-size: 30px"], div[style*="font-size: 30px"],
     span[style*="font-size:30px"], div[style*="font-size:30px"],
     span[style*="font-size: 26px"], div[style*="font-size: 26px"],
-    span[style*="font-size: 22px"], div[style*="font-size: 22px"] {
-        font-size: 20px !important;
-    }
-
     span[style*="font-size: 24px"], div[style*="font-size: 24px"],
-    span[style*="font-size: 20px"], div[style*="font-size: 20px"] {
-        font-size: 16px !important;
+    span[style*="font-size: 22px"], div[style*="font-size: 22px"] {
+        font-size: 18px !important;
     }
 
     /* Perkecil padding di dalam Card Custom */
     div[style*="padding: 20px 24px"], div[style*="padding:20px 24px"],
     div[style*="padding: 22px 26px"], div[style*="padding:22px 26px"],
-    div[style*="padding: 18px 22px"], div[style*="padding:18px 22px"] {
+    div[style*="padding: 18px 22px"], div[style*="padding:18px 22px"],
+    div[style*="padding: 16px 20px"], div[style*="padding:16px 20px"] {
         padding: 12px 14px !important;
-    }
-
-    /* Pastikan elemen flexbox menumpuk ke bawah jika tidak muat */
-    div[style*="display:flex; justify-content:space-between;"] {
-        flex-wrap: wrap !important;
-        gap: 10px !important;
     }
 }
 </style>
