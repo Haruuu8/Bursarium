@@ -65,7 +65,7 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    st.caption("ℹ️ **Navigasi:** Geser 1 jari (Pan), Cubit 2 jari (Zoom X), atau Scroll mouse.")
+    st.caption("ℹ️ **Cara Zoom:** Di HP, tarik kotak (1 jari) untuk zoom in. Di Laptop, scroll mouse di atas grafik.")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -132,20 +132,19 @@ fig1.add_trace(go.Scatter(
 fig1.update_layout(
     template="plotly_dark", 
     height=400,
-    # KUNCI SUMBU Y AGAR TIDAK BISA DI-ZOOM (Fokus Zoom hanya di Sumbu X)
-    yaxis=dict(title="Volume", showgrid=False, fixedrange=True),
-    yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=True),
+    # fixedrange=False agar bisa di zoom/stretch
+    yaxis=dict(title="Volume", showgrid=False, fixedrange=False),
+    yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=False),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    dragmode='pan',
+    dragmode='zoom', # Mode Zoom Box (tarik kotak) untuk HP
     margin=dict(l=40, r=40, t=40, b=40)
 )
 
-# scrollZoom: True, displayModeBar: False (Sembunyikan toolbar agar layar HP lebih lega)
+# scrollZoom: True (bisa scroll), displayModeBar: True (munculkan tombol Reset Zoom)
 config_chart = {
     'scrollZoom': True, 
-    'displayModeBar': False, 
-    'displaylogo': False,
-    'modeBarButtonsToRemove': ['lasso2d', 'select2d']
+    'displayModeBar': True, 
+    'displaylogo': False
 }
 
 st.plotly_chart(fig1, use_container_width=True, config=config_chart)
@@ -157,9 +156,8 @@ fig2.add_hline(y=0, line_dash="dash", line_color="#64748b")
 fig2.update_layout(
     template="plotly_dark", 
     height=300, 
-    # KUNCI SUMBU Y JUGA DI SINI
-    yaxis=dict(title="CMF", fixedrange=True),
-    dragmode='pan',
+    yaxis=dict(title="CMF", fixedrange=False),
+    dragmode='zoom',
     margin=dict(l=40, r=40, t=20, b=40)
 )
 st.plotly_chart(fig2, use_container_width=True, config=config_chart)
