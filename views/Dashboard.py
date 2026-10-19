@@ -73,20 +73,35 @@ STATUS_STYLE = {
 }
 
 # ============================================================
-# LOAD DATA GLOBAL (YFINANCE)
+# LOAD DATA GLOBAL (YFINANCE) - DENGAN PENGAMAN
 # ============================================================
 @st.cache_data(ttl=3600)
 def load_global_data():
     tickers = list(SEKTOR_ID.keys()) + [BENCHMARK]
     
-    # Ambil data 1 tahun terakhir
-    df = yf.download(tickers, period="1y", progress=False)["Close"]
-    
-    if df.empty:
-        raise ValueError("Gagal mengambil data dari Yahoo Finance.")
-    
-    df = df.dropna()
-    return df
+    try:
+        # Ambil data 1 tahun terakhir
+        raw = yf.download(tickers, period="1y", progress=False)
+        # Ambil hanya kolom 'Close'
+        df = raw["Close"] if "Close" in raw.columns else raw
+        
+        if df is None or df.empty:
+            raise ValueError("Data kosong dari Yahoo Finance.")
+        
+        # Isi data yang bolong (jika ada beda hari libur antar negara)
+        df = df.ffill().bfill()
+        
+        # Buang baris yang masih NaN
+        df = df.dropna()
+        
+        # Pastikan data minimal 35 hari (RS_WINDOW 20 + MOMENTUM 10)
+        if len(df) < 35:
+            raise ValueError(f"Data terlalu sedikit ({len(df)} hari). Silakan coba lagi nanti.")
+            
+        return df
+        
+    except Exception as e:
+        raise ValueError(f"Gagal mengambil data: {str(e)}")
 
 def build_sector_index(df):
     # Hitung return harian
@@ -136,7 +151,8 @@ with st.spinner("Memuat data Global Sector (MSCI World)..."):
     try:
         df_all = load_global_data()
     except Exception as e:
-        st.error(f"Error mengambil data: {e}")
+        st.error(f"⚠ {e}")
+        st.info("Yahoo Finance terkadang membatasi pengambilan data dari server cloud. Silakan tunggu 5-10 menit lalu refresh halaman ini.")
         st.stop()
 
 # Pisahkan benchmark dan sektor
@@ -147,6 +163,14 @@ sector_index = build_sector_index(sector_df)
 benchmark_index = build_sector_index(benchmark_series.to_frame())[BENCHMARK]
 
 rs_ratio, rs_mom = calc_rrg(sector_index, benchmark_index)
+
+# ============================================================
+# PENGAMAN UTAMA: CEK JIKA DATA KOSONG SETELAH RRG
+# ============================================================
+if rs_ratio.empty:
+    st.error("Data rotasi sektor tidak dapat dihitung saat ini karena data dari Yahoo Finance tidak lengkap.")
+    st.info("Silakan tunggu beberapa saat dan coba refresh kembali halaman ini.")
+    st.stop()
 
 bm_20d = None
 if len(benchmark_index) >= REL_WINDOW + 1:
