@@ -33,7 +33,6 @@ def list_available():
     df = load_parquet_safe()
     if df is None or "Kode" not in df.columns:
         return []
-    # Paksa jadi string, hapus spasi, dan jadikan huruf besar semua
     kodes = df["Kode"].astype(str).str.strip().str.upper().unique()
     return sorted(kodes)
 
@@ -43,7 +42,6 @@ def load_ohlcv(kode):
     if df_all is None or "Kode" not in df_all.columns:
         return None
     
-    # Bersihkan kolom Kode di dataframe utama (antisipasi spasi di Cloud)
     df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
     kode = str(kode).strip().upper()
     
@@ -282,14 +280,12 @@ if sr:
             unsafe_allow_html=True
         )
         if sr["resistances"]:
-            # Urutkan berdasarkan jarak terdekat
             for z in sorted(sr["resistances"], key=lambda x: abs(x["distance_pct"])):
                 score = z["score"]
                 strength = z["strength"]
                 n_touch = z["n_touches"]
                 dist = z["distance_pct"]
                 
-                # Tentukan warna dan visual berdasarkan skor
                 color = "#f43f5e" if score >= 80 else ("#f59e0b" if score >= 50 else "#94a3b8")
                 bg_meter = "rgba(244,63,94,0.2)" if score >= 80 else "rgba(245,158,11,0.2)" if score >= 50 else "rgba(148,163,184,0.2)"
                 badge_icon = "🔥" if score >= 80 else ("⚡" if score >= 50 else "")
@@ -322,14 +318,12 @@ if sr:
             unsafe_allow_html=True
         )
         if sr["supports"]:
-            # Urutkan berdasarkan jarak terdekat
             for z in sorted(sr["supports"], key=lambda x: abs(x["distance_pct"])):
                 score = z["score"]
                 strength = z["strength"]
                 n_touch = z["n_touches"]
                 dist = z["distance_pct"]
                 
-                # Tentukan warna dan visual berdasarkan skor
                 color = "#10b981" if score >= 80 else ("#f59e0b" if score >= 50 else "#94a3b8")
                 bg_meter = "rgba(16,185,129,0.2)" if score >= 80 else "rgba(245,158,11,0.2)" if score >= 50 else "rgba(148,163,184,0.2)"
                 badge_icon = "🛡️" if score >= 80 else ("⚡" if score >= 50 else "")
@@ -355,6 +349,92 @@ if sr:
             st.markdown('<div style="color:#475569; font-size:13px; padding:8px;">Tidak ada support terdeteksi</div>', unsafe_allow_html=True)
 else:
     st.info("Data OHLCV tidak cukup untuk analisa S/R.")
+
+
+# ============================================================
+# FIBONACCI RETRACEMENT & EXTENSION
+# ============================================================
+st.markdown(section_title("Fibonacci Retracement & Extension", "Berdasarkan Swing High & Swing Low 150 hari terakhir"), unsafe_allow_html=True)
+
+recent_df = df.tail(150)
+swing_high = float(recent_df["High"].max())
+swing_low = float(recent_df["Low"].min())
+diff = swing_high - swing_low
+
+# Tentukan arah tren: jika harga sekarang lebih dekat ke Low, berarti downtrend
+if abs(harga - swing_low) < abs(harga - swing_high):
+    trend_fibo = "downtrend" # Fokus pada Fibonacci Extension ke bawah
+else:
+    trend_fibo = "uptrend"   # Fokus pada Fibonacci Retracement ke bawah
+
+# Level Fibonacci standar
+fibo_levels = [
+    ("0.0% (High)", swing_high),
+    ("23.6%", swing_high - diff * 0.236),
+    ("38.2%", swing_high - diff * 0.382),
+    ("50.0%", swing_high - diff * 0.5),
+    ("61.8%", swing_high - diff * 0.618),
+    ("78.6%", swing_high - diff * 0.786),
+    ("100.0% (Low)", swing_low)
+]
+
+# Fibonacci Extension (jika harga sudah tembus Low)
+if harga < swing_low:
+    fibo_levels.extend([
+        ("127.2% (Ext)", swing_low - diff * 0.272),
+        ("161.8% (Ext)", swing_low - diff * 0.618),
+        ("200.0% (Ext)", swing_low - diff * 1.0),
+    ])
+
+st.markdown(
+    f'<div style="background:rgba(99,102,241,0.08); border:1px solid rgba(99,102,241,0.2); '
+    f'border-radius:10px; padding:12px 18px; margin-bottom:16px; font-size:12px; color:#94a3b8;">'
+    f'Swing High: <b style="color:#a5b4fc;">{swing_high:,.0f}</b> · '
+    f'Swing Low: <b style="color:#a5b4fc;">{swing_low:,.0f}</b> · '
+    f'Tren saat ini: <b style="color:{"#f43f5e" if trend_fibo == "downtrend" else "#10b981"};">{trend_fibo.upper()}</b>'
+    f'</div>',
+    unsafe_allow_html=True
+)
+
+# Render Card Fibonacci
+c_fib1, c_fib2 = st.columns(2)
+for i, (label, level) in enumerate(fibo_levels):
+    # Tentukan apakah ini Support atau Resistance
+    if level < harga:
+        is_support = True
+        color = "#10b981"
+        bg_color = "rgba(16,185,129,0.1)"
+        border_color = "rgba(16,185,129,0.3)"
+    elif level > harga:
+        is_support = False
+        color = "#f43f5e"
+        bg_color = "rgba(244,63,94,0.1)"
+        border_color = "rgba(244,63,94,0.3)"
+    else:
+        is_support = True
+        color = "#f59e0b"
+        bg_color = "rgba(245,158,11,0.1)"
+        border_color = "rgba(245,158,11,0.3)"
+        
+    dist_pct = (level / harga - 1) * 100
+    
+    card_html = (
+        f'<div style="background:{bg_color}; border:1px solid {border_color}; border-left:4px solid {color}; '
+        f'border-radius:8px; padding:12px 16px; margin-bottom:10px;">'
+        f'<div style="display:flex; justify-content:space-between; align-items:center;">'
+        f'<span style="font-size:12px; color:#94a3b8; font-weight:700;">{label}</span>'
+        f'<span style="font-size:10px; color:{color}; font-weight:800;">'
+        f'{"SUPPORT" if is_support else "RESISTANCE"}</span>'
+        f'</div>'
+        f'<div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:6px;">'
+        f'<span style="font-size:18px; font-weight:800; color:#ffffff;">{level:,.0f}</span>'
+        f'<span style="font-size:12px; font-weight:700; color:{color};">({dist_pct:+.2f}%)</span>'
+        f'</div>'
+        f'</div>'
+    )
+    
+    with (c_fib1 if i % 2 == 0 else c_fib2):
+        st.markdown(card_html, unsafe_allow_html=True)
 
 
 # ============================================================
