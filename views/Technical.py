@@ -52,7 +52,6 @@ def _rgb(hex_color):
 
 
 def _fmt(v, default="—"):
-    """Format angka atau kembalikan default kalau None/0."""
     if v is None:
         return default
     try:
@@ -63,7 +62,6 @@ def _fmt(v, default="—"):
 
 @st.cache_data(ttl=1800)
 def compute_akumulasi(kode):
-    """Hitung Chaikin Money Flow + akumulasi/distribusi dari OHLCV 20 hari."""
     df = load_ohlcv(kode)
     if df is None or len(df) < 20:
         return {}
@@ -176,7 +174,6 @@ chg_sign = "+" if chg >= 0 else ""
 
 ind = hitung_indikator_teknikal(kode_pilih)
 
-# Kotak "BB" DIHAPUS
 st.markdown(
     '<div style="'
     'background: #0f172a; border: 1px solid #1e293b; '
@@ -236,11 +233,9 @@ if ind:
 
 
 # ============================================================
-# SUPPORT & RESISTANCE
+# SUPPORT & RESISTANCE (UPGRADED WITH STRENGTH METER)
 # ============================================================
-st.markdown(section_title("Support & Resistance",
-                          "Multi-scale pivot · SHORT=3 · MEDIUM=7 · LONG=15"),
-            unsafe_allow_html=True)
+st.markdown(section_title("Support & Resistance Strength", "Multi-scale pivot · SHORT=3 · MEDIUM=7 · LONG=15"), unsafe_allow_html=True)
 
 sr = get_support_resistance(kode_pilih, timeframe="daily")
 
@@ -257,6 +252,15 @@ if sr:
         unsafe_allow_html=True
     )
 
+    # ACTIONABLE ALERT
+    for z in sr["resistances"]:
+        if z["lower"] <= harga <= z["upper"] and z["score"] >= 70:
+            st.warning(f"⚠️ **PERINGATAN:** Harga saat ini ({harga:,.0f}) sedang berada di Zona Resistance Kuat ({z['lower']:,.0f} - {z['upper']:,.0f}). Risiko tertahan dan berbalik turun sangat tinggi. Hati-hati beli di sini!")
+            
+    for z in sr["supports"]:
+        if z["lower"] <= harga <= z["upper"] and z["score"] >= 70:
+            st.success(f"✅ **PELUANG:** Harga saat ini ({harga:,.0f}) sedang berada di Zona Support Kuat ({z['lower']:,.0f} - {z['upper']:,.0f}). Ini adalah area yang bagus untuk mencoba Entry Buy / Limit Order (selama tidak break).")
+
     c1, c2 = st.columns(2)
 
     with c1:
@@ -268,42 +272,38 @@ if sr:
         )
         if sr["resistances"]:
             for z in sr["resistances"]:
-                flip = " [FLIP]" if z.get("flip") else ""
-                scales = z.get("scales", [])
-                scales_str = " · ".join(f"S{s}" for s in scales) if scales else "fallback"
+                score = z["score"]
                 strength = z["strength"]
-                color = "#f43f5e" if strength == "STRONG" else (
-                        "#f59e0b" if strength == "MODERATE" else "#94a3b8")
-
+                n_touch = z["n_touches"]
+                dist = z["distance_pct"]
+                
+                # Tentukan warna dan visual berdasarkan skor
+                color = "#f43f5e" if score >= 80 else ("#f59e0b" if score >= 50 else "#94a3b8")
+                bg_meter = "rgba(244,63,94,0.2)" if score >= 80 else "rgba(245,158,11,0.2)" if score >= 50 else "rgba(148,163,184,0.2)"
+                badge_icon = "🔥" if score >= 80 else ("⚡" if score >= 50 else "")
+                
                 st.markdown(
-                    f'<div style="background:#0f172a; '
-                    f'border-left:3px solid {color}; '
-                    f'border-radius:8px; padding:12px 16px; '
-                    f'margin-bottom:8px;">'
-                    f'<div style="display:flex; justify-content:space-between; '
-                    f'align-items:center; margin-bottom:4px;">'
-                    f'<span style="color:#e6ebf5; font-weight:700; '
-                    f'font-size:14px;">'
-                    f'{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
-                    f'<span style="font-size:10px; color:{color}; '
-                    f'font-weight:700;">{strength}{flip}</span>'
+                    f'<div style="background:#0f172a; border:1px solid #1e293b; border-radius:10px; padding:14px 18px; margin-bottom:10px;">'
+                    # Header: Harga & Badge
+                    f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
+                    f'<span style="color:#e6ebf5; font-weight:700; font-size:15px;">{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
+                    f'<span style="font-size:11px; font-weight:800; color:{color};">{badge_icon} {strength}</span>'
                     f'</div>'
-                    f'<div style="display:flex; gap:12px; '
-                    f'font-size:10px; color:#7d8ba3;">'
-                    f'<span>Skor <b style="color:#cbd5e1;">{z["score"]}</b></span>'
-                    f'<span>{z["n_touches"]}x touch</span>'
-                    f'<span>{scales_str}</span>'
-                    f'<span style="color:{color};">'
-                    f'{z["distance_pct"]:+.2f}%</span>'
-                    f'</div></div>',
+                    # Meter Bar
+                    f'<div style="width:100%; height:6px; background:{bg_meter}; border-radius:3px; margin-bottom:8px; overflow:hidden;">'
+                    f'<div style="width:{score}%; height:100%; background:{color}; border-radius:3px;"></div>'
+                    f'</div>'
+                    # Footer: Detail
+                    f'<div style="display:flex; justify-content:space-between; font-size:11px; color:#7d8ba3;">'
+                    f'<span>Skor: <b style="color:#cbd5e1;">{score}</b> / 100</span>'
+                    f'<span>{n_touch}x Touch</span>'
+                    f'<span>Jarak: <b style="color:{color};">{dist:+.2f}%</b></span>'
+                    f'</div>'
+                    f'</div>',
                     unsafe_allow_html=True
                 )
         else:
-            st.markdown(
-                '<div style="color:#475569; font-size:13px; padding:8px;">'
-                'Tidak ada resistance terdeteksi</div>',
-                unsafe_allow_html=True
-            )
+            st.markdown('<div style="color:#475569; font-size:13px; padding:8px;">Tidak ada resistance terdeteksi</div>', unsafe_allow_html=True)
 
     with c2:
         st.markdown(
@@ -314,42 +314,38 @@ if sr:
         )
         if sr["supports"]:
             for z in sr["supports"]:
-                flip = " [FLIP]" if z.get("flip") else ""
-                scales = z.get("scales", [])
-                scales_str = " · ".join(f"S{s}" for s in scales) if scales else "fallback"
+                score = z["score"]
                 strength = z["strength"]
-                color = "#10b981" if strength == "STRONG" else (
-                        "#f59e0b" if strength == "MODERATE" else "#94a3b8")
-
+                n_touch = z["n_touches"]
+                dist = z["distance_pct"]
+                
+                # Tentukan warna dan visual berdasarkan skor
+                color = "#10b981" if score >= 80 else ("#f59e0b" if score >= 50 else "#94a3b8")
+                bg_meter = "rgba(16,185,129,0.2)" if score >= 80 else "rgba(245,158,11,0.2)" if score >= 50 else "rgba(148,163,184,0.2)"
+                badge_icon = "🛡️" if score >= 80 else ("⚡" if score >= 50 else "")
+                
                 st.markdown(
-                    f'<div style="background:#0f172a; '
-                    f'border-left:3px solid {color}; '
-                    f'border-radius:8px; padding:12px 16px; '
-                    f'margin-bottom:8px;">'
-                    f'<div style="display:flex; justify-content:space-between; '
-                    f'align-items:center; margin-bottom:4px;">'
-                    f'<span style="color:#e6ebf5; font-weight:700; '
-                    f'font-size:14px;">'
-                    f'{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
-                    f'<span style="font-size:10px; color:{color}; '
-                    f'font-weight:700;">{strength}{flip}</span>'
+                    f'<div style="background:#0f172a; border:1px solid #1e293b; border-radius:10px; padding:14px 18px; margin-bottom:10px;">'
+                    # Header: Harga & Badge
+                    f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
+                    f'<span style="color:#e6ebf5; font-weight:700; font-size:15px;">{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
+                    f'<span style="font-size:11px; font-weight:800; color:{color};">{badge_icon} {strength}</span>'
                     f'</div>'
-                    f'<div style="display:flex; gap:12px; '
-                    f'font-size:10px; color:#7d8ba3;">'
-                    f'<span>Skor <b style="color:#cbd5e1;">{z["score"]}</b></span>'
-                    f'<span>{z["n_touches"]}x touch</span>'
-                    f'<span>{scales_str}</span>'
-                    f'<span style="color:{color};">'
-                    f'{z["distance_pct"]:+.2f}%</span>'
-                    f'</div></div>',
+                    # Meter Bar
+                    f'<div style="width:100%; height:6px; background:{bg_meter}; border-radius:3px; margin-bottom:8px; overflow:hidden;">'
+                    f'<div style="width:{score}%; height:100%; background:{color}; border-radius:3px;"></div>'
+                    f'</div>'
+                    # Footer: Detail
+                    f'<div style="display:flex; justify-content:space-between; font-size:11px; color:#7d8ba3;">'
+                    f'<span>Skor: <b style="color:#cbd5e1;">{score}</b> / 100</span>'
+                    f'<span>{n_touch}x Touch</span>'
+                    f'<span>Jarak: <b style="color:{color};">{dist:+.2f}%</b></span>'
+                    f'</div>'
+                    f'</div>',
                     unsafe_allow_html=True
                 )
         else:
-            st.markdown(
-                '<div style="color:#475569; font-size:13px; padding:8px;">'
-                'Tidak ada support terdeteksi</div>',
-                unsafe_allow_html=True
-            )
+            st.markdown('<div style="color:#475569; font-size:13px; padding:8px;">Tidak ada support terdeteksi</div>', unsafe_allow_html=True)
 else:
     st.info("Data OHLCV tidak cukup untuk analisa S/R.")
 
