@@ -59,6 +59,8 @@ if st.session_state.get("authentication_status"):
         st.Page("views/Watchlist.py", title="Watchlist", icon=":material/star:"),
         st.Page("views/Valuation.py", title="Valuation", icon=":material/payments:"),
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
+        # TAMBAHAN BARU: Halaman Money Flow
+        st.Page("views/MoneyFlow.py", title="Money Flow", icon=":material/water_drop:"),
     ]
     
     # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) bisa membuka sidebar
@@ -105,7 +107,8 @@ with tab_daftar:
         ("Technical", "Chart, RSI, support-resistance, pre-cross setup"), 
         ("Watchlist", "Pantau saham favorit Anda"), 
         ("Valuation", "Hitung valuasi & risk/reward otomatis"), 
-        ("News", "Berita terkini seputar pasar IDX")
+        ("News", "Berita terkini seputar pasar IDX"),
+        ("Money Flow", "Lacak aliran uang besar dan akumulasi bandar")
     ]
     cols = st.columns(2)
     for i, (nama, desk) in enumerate(FITUR):
