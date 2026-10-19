@@ -43,18 +43,18 @@ def load_ohlcv(kode):
     if df_all is None or "Kode" not in df_all.columns:
         return None
     
-    # Bersihkan kolom Kode di dataframe utama
+    # Bersihkan kolom Kode di dataframe utama (antisipasi spasi di Cloud)
     df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
+    kode = str(kode).strip().upper()
     
-    # Filter berdasarkan kode yang sudah dibersihkan
     df = df_all[df_all["Kode"] == kode].copy()
     if df.empty:
         return None
     
-    # Urutkan berdasarkan tanggal
     if "Date" not in df.columns:
         return None
     return df.sort_values("Date").reset_index(drop=True)
+
 
 def _rgb(hex_color):
     h = hex_color.lstrip("#")
@@ -167,6 +167,14 @@ st.session_state.tech_kode = kode_input
 kode_pilih = kode_input
 
 df = load_ohlcv(kode_pilih)
+
+# --- CCTV DEBUG ---
+df_all = load_parquet_safe()
+st.warning(f"DEBUG 1: Total semua baris di Cloud = {len(df_all) if df_all is not None else 'FILE KOSONG'}")
+st.warning(f"DEBUG 2: Apakah 'BBCA' ada di dalam file? = {'YA' if df_all is not None and 'BBCA' in df_all['Kode'].values else 'TIDAK ADA'}")
+st.warning(f"DEBUG 3: Total baris untuk {kode_pilih} = {len(df) if df is not None else '0'}")
+# ------------------
+
 if df is None or len(df) < 30:
     st.error(f"Data {kode_pilih} tidak cukup.")
     st.stop()
@@ -281,7 +289,8 @@ if sr:
             unsafe_allow_html=True
         )
         if sr["resistances"]:
-            for z in sr["resistances"]:
+            # Urutkan berdasarkan jarak terdekat
+            for z in sorted(sr["resistances"], key=lambda x: abs(x["distance_pct"])):
                 score = z["score"]
                 strength = z["strength"]
                 n_touch = z["n_touches"]
@@ -294,16 +303,13 @@ if sr:
                 
                 st.markdown(
                     f'<div style="background:#0f172a; border:1px solid #1e293b; border-radius:10px; padding:14px 18px; margin-bottom:10px;">'
-                    # Header: Harga & Badge
                     f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
                     f'<span style="color:#e6ebf5; font-weight:700; font-size:15px;">{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
                     f'<span style="font-size:11px; font-weight:800; color:{color};">{badge_icon} {strength}</span>'
                     f'</div>'
-                    # Meter Bar
                     f'<div style="width:100%; height:6px; background:{bg_meter}; border-radius:3px; margin-bottom:8px; overflow:hidden;">'
                     f'<div style="width:{score}%; height:100%; background:{color}; border-radius:3px;"></div>'
                     f'</div>'
-                    # Footer: Detail
                     f'<div style="display:flex; justify-content:space-between; font-size:11px; color:#7d8ba3;">'
                     f'<span>Skor: <b style="color:#cbd5e1;">{score}</b> / 100</span>'
                     f'<span>{n_touch}x Touch</span>'
@@ -323,7 +329,8 @@ if sr:
             unsafe_allow_html=True
         )
         if sr["supports"]:
-            for z in sr["supports"]:
+            # Urutkan berdasarkan jarak terdekat
+            for z in sorted(sr["supports"], key=lambda x: abs(x["distance_pct"])):
                 score = z["score"]
                 strength = z["strength"]
                 n_touch = z["n_touches"]
@@ -336,16 +343,13 @@ if sr:
                 
                 st.markdown(
                     f'<div style="background:#0f172a; border:1px solid #1e293b; border-radius:10px; padding:14px 18px; margin-bottom:10px;">'
-                    # Header: Harga & Badge
                     f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
                     f'<span style="color:#e6ebf5; font-weight:700; font-size:15px;">{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
                     f'<span style="font-size:11px; font-weight:800; color:{color};">{badge_icon} {strength}</span>'
                     f'</div>'
-                    # Meter Bar
                     f'<div style="width:100%; height:6px; background:{bg_meter}; border-radius:3px; margin-bottom:8px; overflow:hidden;">'
                     f'<div style="width:{score}%; height:100%; background:{color}; border-radius:3px;"></div>'
                     f'</div>'
-                    # Footer: Detail
                     f'<div style="display:flex; justify-content:space-between; font-size:11px; color:#7d8ba3;">'
                     f'<span>Skor: <b style="color:#cbd5e1;">{score}</b> / 100</span>'
                     f'<span>{n_touch}x Touch</span>'
@@ -623,7 +627,7 @@ if sig:
 
 
 # ============================================================
-# AKUMULASI VS DISTRIBUSI (dipindah dari Fundamental)
+# AKUMULASI VS DISTRIBUSI
 # ============================================================
 akum = compute_akumulasi(kode_pilih)
 
