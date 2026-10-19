@@ -142,59 +142,26 @@ fig2.update_layout(
 )
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
-# PERSIAPAN DATA UNTUK TABEL
-df_all = load_parquet_safe()
-last_date = df_all['Date'].max()
-vol_ma = df_all.groupby('Kode')['Volume'].transform(lambda x: x.rolling(20).mean())
-df_all['Vol_MA20'] = vol_ma
-df_all['Vol_Ratio'] = df_all['Volume'] / vol_ma
-df_all['Value'] = df_all['Close'] * df_all['Volume']
-df_all['Value_MA20'] = df_all.groupby('Kode')['Value'].transform(lambda x: x.rolling(20).mean())
-df_all['Ret_1d'] = df_all.groupby('Kode')['Close'].pct_change()
-
-df_today = df_all[df_all['Date'] == last_date].copy()
-
 # ============================================================
-# TABEL 1: VOLUME MELEDAK (TETAP)
+# TABEL: VOLUME MELEDAK (MURNI BERDASARKAN VOLUME)
 # ============================================================
 st.markdown(section_title("Saham dengan Volume Meledak Hari Ini"), unsafe_allow_html=True)
 st.caption("Saham di bawah ini memiliki Volume > 2x lipat dari rata-rata 20 harinya.")
 
-# Tambahkan filter likuiditas minimal (transaksi > 5 Miliar) agar tidak menampilkan saham gocap
-df_vol_spike = df_today[
-    (df_today['Vol_Ratio'] > 2) & 
-    (df_today['Value_MA20'] > 5_000_000_000)
-].sort_values('Vol_Ratio', ascending=False)
+df_all = load_parquet_safe()
+last_date = df_all['Date'].max()
+vol_ma = df_all.groupby('Kode')['Volume'].transform(lambda x: x.rolling(20).mean())
+df_all['Vol_Ratio'] = df_all['Volume'] / vol_ma
+
+df_today = df_all[df_all['Date'] == last_date].copy()
+
+# Filter murni hanya Volume Ratio > 2 (Tanpa filter harga/likuiditas)
+df_vol_spike = df_today[df_today['Vol_Ratio'] > 2].sort_values('Vol_Ratio', ascending=False)
 
 if df_vol_spike.empty:
-    st.info("Tidak ada saham likuid dengan volume meledak hari ini.")
+    st.info("Tidak ada saham dengan volume meledak hari ini.")
 else:
-    cols_show = ['Kode', 'Close', 'Ret_1d', 'Value_MA20', 'Vol_Ratio']
-    df_show1 = df_vol_spike[cols_show].head(10).reset_index(drop=True)
-    df_show1['Value_MA20'] = (df_show1['Value_MA20'] / 1e9).round(1).astype(str) + ' M'
-    df_show1['Ret_1d'] = (df_show1['Ret_1d'] * 100).round(2).astype(str) + '%'
-    df_show1['Vol_Ratio'] = df_show1['Vol_Ratio'].round(2)
-    st.dataframe(df_show1, use_container_width=True, hide_index=True)
-
-# ============================================================
-# TABEL 2: WHALE TRACKER (DIPERBAIKI DENGAN FILTER LIKUIDITAS)
-# ============================================================
-st.markdown(section_title("Whale Tracker (Akumulasi Diam-diam)"), unsafe_allow_html=True)
-st.caption("Saham likuid dengan harga sangat flat (< 1.5%), tapi Volume > 2.5x. Syarat: Harga > 100 & Rata-rata transaksi > 5 Miliar/hari.")
-
-df_whale = df_today[
-    (df_today['Vol_Ratio'] > 2.5) & 
-    (df_today['Ret_1d'].abs() < 0.015) & 
-    (df_today['Close'] > 100) & # Minimal harga 100 (bukan gocap)
-    (df_today['Value_MA20'] > 5_000_000_000) # Rata-rata transaksi 20 hari > 5 Miliar
-].sort_values('Vol_Ratio', ascending=False)
-
-if df_whale.empty:
-    st.info("Tidak ada indikasi akumulasi tersembunyi pada saham likuid hari ini.")
-else:
-    cols_show_whale = ['Kode', 'Close', 'Ret_1d', 'Value_MA20', 'Vol_Ratio']
-    df_show2 = df_whale[cols_show_whale].head(10).reset_index(drop=True)
-    df_show2['Value_MA20'] = (df_show2['Value_MA20'] / 1e9).round(1).astype(str) + ' M'
-    df_show2['Ret_1d'] = (df_show2['Ret_1d'] * 100).round(2).astype(str) + '%'
-    df_show2['Vol_Ratio'] = df_show2['Vol_Ratio'].round(2)
-    st.dataframe(df_show2, use_container_width=True, hide_index=True)
+    cols_show = ['Kode', 'Close', 'Volume', 'Vol_Ratio']
+    df_vol_spike = df_vol_spike[cols_show].head(10).reset_index(drop=True)
+    df_vol_spike['Vol_Ratio'] = df_vol_spike['Vol_Ratio'].round(2)
+    st.dataframe(df_vol_spike, use_container_width=True, hide_index=True)
