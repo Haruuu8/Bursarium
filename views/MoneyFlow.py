@@ -53,7 +53,7 @@ def calculate_money_flow(df):
     return d
 
 # HEADER
-st.markdown(page_header("", "Smart Money Flow", "Lacak aliran uang besar (tanpa broksum)"), unsafe_allow_html=True)
+st.markdown(page_header("", "Smart Money Flow", "Bandarmology & Aliran Uang Besar"), unsafe_allow_html=True)
 
 saham_list = list_available()
 if not saham_list:
@@ -65,7 +65,7 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    st.caption("ℹ️ **Grafik dikunci (statis)** untuk kenyamanan visual di HP.")
+    st.caption("ℹ️ **Grafik Statis** (Anti Rusak). Data saat ini menggunakan Daily (1 Hari).")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -115,79 +115,92 @@ c4.metric("OBV Trend (10d)", obv_trend)
 st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe_allow_html=True)
 
 fig1 = go.Figure()
-
-# Warna Volume: Solid Sky Blue (Sangat kontras dengan background gelap)
 fig1.add_trace(go.Bar(
-    x=df['Date'], 
-    y=df['Volume'], 
-    name='Volume', 
-    marker=dict(color='#38bdf8', opacity=0.7), 
-    marker_line_width=0
+    x=df['Date'], y=df['Volume'], name='Volume', 
+    marker=dict(color='#38bdf8', opacity=0.7), marker_line_width=0
 ))
-
-# Garis Harga: Cyan terang
 fig1.add_trace(go.Scatter(
-    x=df['Date'], 
-    y=df['Close'], 
-    name='Harga', 
-    yaxis='y2', 
+    x=df['Date'], y=df['Close'], name='Harga', yaxis='y2', 
     line=dict(color='#06b6d4', width=2)
 ))
-
 fig1.update_layout(
-    template="plotly_dark", 
-    height=400,
-    # KUNCI SEMUA SUMBU
+    template="plotly_dark", height=400,
     xaxis=dict(fixedrange=True),
     yaxis=dict(title="Volume", showgrid=False, fixedrange=True),
     yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=True),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    dragmode=False, # Matikan mode drag
-    margin=dict(l=40, r=40, t=40, b=40)
+    dragmode=False, margin=dict(l=40, r=40, t=40, b=40)
 )
-
-# staticPlot: True = Tidak ada zoom, tidak ada geser, murni gambar statis.
-# Tapi hover masih bisa untuk lihat tooltip.
-config_chart = {
-    'staticPlot': False, 
-    'displayModeBar': False, 
-    'scrollZoom': False
-}
-
-st.plotly_chart(fig1, use_container_width=True, config=config_chart, theme=None)
+st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
 # ============================================================
-# GRAFIK STATIS: CMF & MFI
+# FITUR BARU 1: NET FOREIGN FLOW (ASING)
 # ============================================================
-st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
+st.markdown(section_title("Net Foreign Flow (Asing)", "Arah uang asing (Beli - Jual)"), unsafe_allow_html=True)
 
-fig2 = go.Figure()
-fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='CMF', line=dict(color='#10b981', width=2)))
-fig2.add_hline(y=0, line_dash="dash", line_color="#64748b")
-fig2.update_layout(
-    template="plotly_dark", 
-    height=300, 
-    xaxis=dict(fixedrange=True),
-    yaxis=dict(title="CMF", fixedrange=True),
-    dragmode=False,
-    margin=dict(l=40, r=40, t=20, b=40)
-)
-st.plotly_chart(fig2, use_container_width=True, config=config_chart, theme=None)
+# Cek apakah data foreign_buy dan foreign_sell tersedia dan tidak kosong semua
+if 'foreign_buy' in df.columns and 'foreign_sell' in df.columns:
+    # Pastikan tipenya numerik
+    df['foreign_buy'] = pd.to_numeric(df['foreign_buy'], errors='coerce').fillna(0)
+    df['foreign_sell'] = pd.to_numeric(df['foreign_sell'], errors='coerce').fillna(0)
+    
+    # Jika datanya ada (tidak semua nol)
+    if df['foreign_buy'].sum() > 0 or df['foreign_sell'].sum() > 0:
+        df['net_foreign'] = df['foreign_buy'] - df['foreign_sell']
+        
+        # Warna bar: Hijau jika Net Buy, Merah jika Net Sell
+        colors_foreign = ['#10b981' if val >= 0 else '#f43f5e' for val in df['net_foreign']]
+        
+        fig_for = go.Figure()
+        fig_for.add_trace(go.Bar(
+            x=df['Date'], y=df['net_foreign'], name='Net Foreign',
+            marker_color=colors_foreign
+        ))
+        fig_for.update_layout(
+            template="plotly_dark", height=300,
+            xaxis=dict(fixedrange=True), yaxis=dict(title="Net (Lembar)", fixedrange=True),
+            dragmode=False, margin=dict(l=40, r=40, t=20, b=40)
+        )
+        st.plotly_chart(fig_for, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
+    else:
+        st.info("Data Foreign Buy/Sell bernilai 0 atau tidak tersedia di database untuk saham ini.")
+else:
+    st.info("Kolom data Foreign Buy/Sell tidak ditemukan di database Anda.")
 
 # ============================================================
-# TABEL VOLUME SPIKE
+# FITUR BARU 2: WHALE TRACKER (SILENT ACCUMULATION)
 # ============================================================
-st.markdown(section_title("Saham dengan Volume Meledak Hari Ini"), unsafe_allow_html=True)
+st.markdown(section_title("Whale Tracker (Akumulasi Diam-diam)", "Harga flat tapi Volume meledak"), unsafe_allow_html=True)
+st.caption("Saham di bawah ini harganya bergerak sangat tipis (< 1.5%), tetapi volumenya > 2.5x lipat dari biasanya. Seringkali ini adalah tanda 'Bandar' sedang menyerap barang tanpa membuat harga naik.")
+
 df_all = load_parquet_safe()
 last_date = df_all['Date'].max()
+
+# Hitung Vol MA 20
 vol_ma = df_all.groupby('Kode')['Volume'].transform(lambda x: x.rolling(20).mean())
 df_all['Vol_Ratio'] = df_all['Volume'] / vol_ma
-df_vol_spike = df_all[(df_all['Date'] == last_date) & (df_all['Vol_Ratio'] > 2)].sort_values('Vol_Ratio', ascending=False)
 
-if df_vol_spike.empty:
-    st.info("Tidak ada saham dengan volume meledak hari ini.")
+# Hitung Perubahan Harga Harian (Close / Prev Close - 1)
+df_all['Ret_1d'] = df_all.groupby('Kode')['Close'].pct_change()
+
+# Filter data hari terakhir
+df_today = df_all[df_all['Date'] == last_date].copy()
+
+# LOGIKA WHALE TRACKER:
+# 1. Volume Ratio > 2.5
+# 2. Return harian antara -1.5% sampai +1.5% (Harga Flat)
+df_whale = df_today[
+    (df_today['Vol_Ratio'] > 2.5) & 
+    (df_today['Ret_1d'].abs() < 0.015)
+].sort_values('Vol_Ratio', ascending=False)
+
+if df_whale.empty:
+    st.info("Tidak ada indikasi akumulasi tersembunyi (harga flat + volume meledak) hari ini.")
 else:
-    cols_show = ['Kode', 'Close', 'Volume', 'Vol_Ratio']
-    df_vol_spike = df_vol_spike[cols_show].head(10).reset_index(drop=True)
-    df_vol_spike['Vol_Ratio'] = df_vol_spike['Vol_Ratio'].round(2)
-    st.dataframe(df_vol_spike, use_container_width=True, hide_index=True)
+    cols_show = ['Kode', 'Close', 'Ret_1d', 'Volume', 'Vol_Ratio']
+    df_whale = df_whale[cols_show].head(10).reset_index(drop=True)
+    # Format persentase
+    df_whale['Ret_1d'] = (df_whale['Ret_1d'] * 100).round(2).astype(str) + '%'
+    df_whale['Vol_Ratio'] = df_whale['Vol_Ratio'].round(2)
+    
+    st.dataframe(df_whale, use_container_width=True, hide_index=True)
