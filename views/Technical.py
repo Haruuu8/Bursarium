@@ -33,18 +33,28 @@ def list_available():
     df = load_parquet_safe()
     if df is None or "Kode" not in df.columns:
         return []
-    return sorted(df["Kode"].unique())
+    # Paksa jadi string, hapus spasi, dan jadikan huruf besar semua
+    kodes = df["Kode"].astype(str).str.strip().str.upper().unique()
+    return sorted(kodes)
 
 @st.cache_data(ttl=1800)
 def load_ohlcv(kode):
     df_all = load_parquet_safe()
     if df_all is None or "Kode" not in df_all.columns:
         return None
+    
+    # Bersihkan kolom Kode di dataframe utama
+    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
+    
+    # Filter berdasarkan kode yang sudah dibersihkan
     df = df_all[df_all["Kode"] == kode].copy()
     if df.empty:
         return None
+    
+    # Urutkan berdasarkan tanggal
+    if "Date" not in df.columns:
+        return None
     return df.sort_values("Date").reset_index(drop=True)
-
 
 def _rgb(hex_color):
     h = hex_color.lstrip("#")
