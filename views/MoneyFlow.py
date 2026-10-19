@@ -16,16 +16,6 @@ from quant.parquet_loader import load_parquet_safe
 st.set_page_config(page_title="Money Flow", layout="wide")
 load_theme()
 
-# CSS Khusus: Memastikan gesture sentuh pada grafik tidak 'bentrok' dengan scroll halaman
-st.markdown("""
-<style>
-/* Izinkan pinch-zoom dan scroll vertikal di area grafik, tapi cegah panning horizontal halaman */
-.js-plotly-plot, .plot-container {
-    touch-action: pan-y pinch-zoom !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
 @st.cache_data(ttl=1800)
 def load_ohlcv(kode):
     df_all = load_parquet_safe()
@@ -75,7 +65,7 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    st.caption("ℹ️ **Navigasi:** Cubit 2 jari untuk zoom, Tarik kotak (1 jari) untuk zoom area tertentu.")
+    st.caption("ℹ️ **Grafik dikunci (statis)** untuk kenyamanan visual di HP.")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -119,18 +109,23 @@ obv_prev = df['OBV'].iloc[-10]
 obv_trend = "Naik" if obv_now > obv_prev else "Turun"
 c4.metric("OBV Trend (10d)", obv_trend)
 
+# ============================================================
+# GRAFIK STATIS: HARGA VS VOLUME
+# ============================================================
 st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe_allow_html=True)
 
 fig1 = go.Figure()
 
+# Warna Volume: Solid Sky Blue (Sangat kontras dengan background gelap)
 fig1.add_trace(go.Bar(
     x=df['Date'], 
     y=df['Volume'], 
     name='Volume', 
-    marker=dict(color='rgba(56, 189, 248, 0.6)'), 
+    marker=dict(color='#38bdf8', opacity=0.7), 
     marker_line_width=0
 ))
 
+# Garis Harga: Cyan terang
 fig1.add_trace(go.Scatter(
     x=df['Date'], 
     y=df['Close'], 
@@ -142,37 +137,46 @@ fig1.add_trace(go.Scatter(
 fig1.update_layout(
     template="plotly_dark", 
     height=400,
-    # fixedrange=False agar sumbu Y bisa di-zoom / candle bisa ditarik panjang
-    yaxis=dict(title="Volume", showgrid=False, fixedrange=False),
-    yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=False),
+    # KUNCI SEMUA SUMBU
+    xaxis=dict(fixedrange=True),
+    yaxis=dict(title="Volume", showgrid=False, fixedrange=True),
+    yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=True),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    dragmode='zoom', # Mode Zoom Box
+    dragmode=False, # Matikan mode drag
     margin=dict(l=40, r=40, t=40, b=40)
 )
 
-# Konfigurasi: scrollZoom untuk pinch, displayModeBar untuk tombol reset
+# staticPlot: True = Tidak ada zoom, tidak ada geser, murni gambar statis.
+# Tapi hover masih bisa untuk lihat tooltip.
 config_chart = {
-    'scrollZoom': True, 
-    'displayModeBar': True, 
-    'displaylogo': False
+    'staticPlot': False, 
+    'displayModeBar': False, 
+    'scrollZoom': False
 }
 
-# Menggunakan theme=None untuk menghindari bug interaksi mobile dari theme Streamlit
 st.plotly_chart(fig1, use_container_width=True, config=config_chart, theme=None)
 
+# ============================================================
+# GRAFIK STATIS: CMF & MFI
+# ============================================================
 st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
+
 fig2 = go.Figure()
-fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='Chaikin Money Flow', line=dict(color='#10b981', width=2)))
+fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='CMF', line=dict(color='#10b981', width=2)))
 fig2.add_hline(y=0, line_dash="dash", line_color="#64748b")
 fig2.update_layout(
     template="plotly_dark", 
     height=300, 
-    yaxis=dict(title="CMF", fixedrange=False),
-    dragmode='zoom',
+    xaxis=dict(fixedrange=True),
+    yaxis=dict(title="CMF", fixedrange=True),
+    dragmode=False,
     margin=dict(l=40, r=40, t=20, b=40)
 )
 st.plotly_chart(fig2, use_container_width=True, config=config_chart, theme=None)
 
+# ============================================================
+# TABEL VOLUME SPIKE
+# ============================================================
 st.markdown(section_title("Saham dengan Volume Meledak Hari Ini"), unsafe_allow_html=True)
 df_all = load_parquet_safe()
 last_date = df_all['Date'].max()
