@@ -60,8 +60,8 @@ if st.session_state.get("authentication_status"):
         st.Page("views/Valuation.py", title="Valuation", icon=":material/payments:"),
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
         
-        # PERHATIKAN BARIS INI: Ada garis bawah (_) di Money_Flow
-        st.Page("views/Money_Flow.py", title="Money Flow", icon=":material/water_drop:"),
+        # PASTIKAN NAMA FILE DI FOLDER VIEWS ANDA JUGA 'MoneyFlow.py' (TANPA GARIS BAWAH)
+        st.Page("views/MoneyFlow.py", title="Money Flow", icon=":material/water_drop:"),
     ]
     
     # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) bisa membuka sidebar
