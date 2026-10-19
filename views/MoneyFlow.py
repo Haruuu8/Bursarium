@@ -52,7 +52,7 @@ def calculate_money_flow(df):
     d['Vol_Ratio'] = d['Volume'] / d['Vol_MA20']
     return d
 
-# 1. HAPUS EMOJI DI HEADER
+# HEADER (Tanpa Emoji)
 st.markdown(page_header("", "Smart Money Flow", "Lacak aliran uang besar (tanpa broksum)"), unsafe_allow_html=True)
 
 saham_list = list_available()
@@ -65,7 +65,7 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    # 3. INFO TIMEFRAME
+    # Info Timeframe
     st.caption("ℹ️ **Timeframe:** Data saat ini menggunakan **Daily (1 Hari)**. Data intraday (5m, 15m, 1H) belum tersedia dari database lokal.")
 
 df = load_ohlcv(kode)
@@ -111,15 +111,19 @@ obv_trend = "Naik" if obv_now > obv_prev else "Turun"
 c4.metric("OBV Trend (10d)", obv_trend)
 
 st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe_allow_html=True)
+
 fig1 = go.Figure()
 
-# 2. PERBAIKI WARNA VOLUME (Lebih terang & solid)
+# Bar Volume dengan warna Sky Blue transparan (Elegan & Jelas)
 fig1.add_trace(go.Bar(
     x=df['Date'], 
     y=df['Volume'], 
     name='Volume', 
-    marker_color='rgba(99,102,241,0.7)' # Warna ungu lebih solid
+    marker=dict(color='rgba(56, 189, 248, 0.6)'), # Warna Sky Blue transparan
+    marker_line_width=0
 ))
+
+# Garis Harga
 fig1.add_trace(go.Scatter(
     x=df['Date'], 
     y=df['Close'], 
@@ -134,10 +138,11 @@ fig1.update_layout(
     yaxis=dict(title="Volume", showgrid=False),
     yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    dragmode='pan' # 4. Default mode geser (bukan zoom) untuk HP
+    dragmode='pan', # Default mode geser untuk HP
+    margin=dict(l=40, r=40, t=40, b=40)
 )
 
-# 4. MATIKAN ZOOM SCROLL AGAR DI HP BISA DIGESER
+# Matikan zoom scroll agar di HP bisa digeser
 st.plotly_chart(
     fig1, 
     use_container_width=True, 
@@ -146,13 +151,14 @@ st.plotly_chart(
 
 st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
 fig2 = go.Figure()
-fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='Chaikin Money Flow', line=dict(color='#10b981')))
+fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='Chaikin Money Flow', line=dict(color='#10b981', width=2)))
 fig2.add_hline(y=0, line_dash="dash", line_color="#64748b")
 fig2.update_layout(
     template="plotly_dark", 
     height=300, 
     yaxis_title="CMF",
-    dragmode='pan'
+    dragmode='pan',
+    margin=dict(l=40, r=40, t=20, b=40)
 )
 st.plotly_chart(
     fig2, 
