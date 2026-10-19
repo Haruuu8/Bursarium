@@ -29,12 +29,19 @@ def _load_ohlcv(kode, timeframe="daily"):
     if df_all is None or "Kode" not in df_all.columns:
         return None
         
+    # PERBAIKAN 1: Bersihkan kolom Kode (antisipasi spasi di Cloud)
+    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
+    kode = str(kode).strip().upper()
+        
     df = df_all[df_all["Kode"] == kode].copy()
     if df.empty:
         return None
         
     if "Volume" not in df.columns:
         df["Volume"] = 0
+        
+    # PERBAIKAN 2: Pastikan Date adalah datetime
+    df["Date"] = pd.to_datetime(df["Date"])
 
     if timeframe == "weekly":
         df = df.set_index("Date").resample("W").agg({
@@ -386,11 +393,9 @@ def get_support_resistance(kode, timeframe="daily",
         result_scales[name] = zones
         all_zones.extend(zones)
 
-    if not all_zones:
-        return None
-
-    # Combine semua skala
-    combined = dedup_zones(all_zones, tolerance)
+    # PERBAIKAN 3: Jangan langsung return None jika all_zones kosong.
+    # Biarkan kosong agar blok FALLBACK di bawah bisa berjalan.
+    combined = dedup_zones(all_zones, tolerance) if all_zones else []
 
     # Split
     supports = [z for z in combined if z["level"] < current]

@@ -168,13 +168,6 @@ kode_pilih = kode_input
 
 df = load_ohlcv(kode_pilih)
 
-# --- CCTV DEBUG ---
-df_all = load_parquet_safe()
-st.warning(f"DEBUG 1: Total semua baris di Cloud = {len(df_all) if df_all is not None else 'FILE KOSONG'}")
-st.warning(f"DEBUG 2: Apakah 'BBCA' ada di dalam file? = {'YA' if df_all is not None and 'BBCA' in df_all['Kode'].values else 'TIDAK ADA'}")
-st.warning(f"DEBUG 3: Total baris untuk {kode_pilih} = {len(df) if df is not None else '0'}")
-# ------------------
-
 if df is None or len(df) < 30:
     st.error(f"Data {kode_pilih} tidak cukup.")
     st.stop()
