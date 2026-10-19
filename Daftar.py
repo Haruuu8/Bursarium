@@ -59,8 +59,8 @@ if st.session_state.get("authentication_status"):
         st.Page("views/Watchlist.py", title="Watchlist", icon=":material/star:"),
         st.Page("views/Valuation.py", title="Valuation", icon=":material/payments:"),
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
-        st.Page("views/Money_Flow.py", title="Money Flow", icon=":material/water_drop:"),
-        st.Page("views/Kalkulator_Right_Issue.py", title="Kalkulator Right Issue", icon=":material/calculate:"),
+        st.Page("views/MoneyFlow.py", title="Money Flow", icon=":material/water_drop:"),
+        st.Page("views/KalkulatorRightIssue.py", title="Kalkulator Right Issue", icon=":material/calculate:"),
     ]
     
     # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) bisa membuka sidebar
