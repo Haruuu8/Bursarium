@@ -16,6 +16,16 @@ from quant.parquet_loader import load_parquet_safe
 st.set_page_config(page_title="Money Flow", layout="wide")
 load_theme()
 
+# CSS Khusus: Memastikan gesture sentuh pada grafik tidak 'bentrok' dengan scroll halaman
+st.markdown("""
+<style>
+/* Izinkan pinch-zoom dan scroll vertikal di area grafik, tapi cegah panning horizontal halaman */
+.js-plotly-plot, .plot-container {
+    touch-action: pan-y pinch-zoom !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 @st.cache_data(ttl=1800)
 def load_ohlcv(kode):
     df_all = load_parquet_safe()
@@ -65,7 +75,7 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    st.caption("ℹ️ **Cara Zoom:** Di HP, tarik kotak (1 jari) untuk zoom in. Di Laptop, scroll mouse di atas grafik.")
+    st.caption("ℹ️ **Navigasi:** Cubit 2 jari untuk zoom, Tarik kotak (1 jari) untuk zoom area tertentu.")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -132,22 +142,23 @@ fig1.add_trace(go.Scatter(
 fig1.update_layout(
     template="plotly_dark", 
     height=400,
-    # fixedrange=False agar bisa di zoom/stretch
+    # fixedrange=False agar sumbu Y bisa di-zoom / candle bisa ditarik panjang
     yaxis=dict(title="Volume", showgrid=False, fixedrange=False),
     yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=False),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    dragmode='zoom', # Mode Zoom Box (tarik kotak) untuk HP
+    dragmode='zoom', # Mode Zoom Box
     margin=dict(l=40, r=40, t=40, b=40)
 )
 
-# scrollZoom: True (bisa scroll), displayModeBar: True (munculkan tombol Reset Zoom)
+# Konfigurasi: scrollZoom untuk pinch, displayModeBar untuk tombol reset
 config_chart = {
     'scrollZoom': True, 
     'displayModeBar': True, 
     'displaylogo': False
 }
 
-st.plotly_chart(fig1, use_container_width=True, config=config_chart)
+# Menggunakan theme=None untuk menghindari bug interaksi mobile dari theme Streamlit
+st.plotly_chart(fig1, use_container_width=True, config=config_chart, theme=None)
 
 st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
 fig2 = go.Figure()
@@ -160,7 +171,7 @@ fig2.update_layout(
     dragmode='zoom',
     margin=dict(l=40, r=40, t=20, b=40)
 )
-st.plotly_chart(fig2, use_container_width=True, config=config_chart)
+st.plotly_chart(fig2, use_container_width=True, config=config_chart, theme=None)
 
 st.markdown(section_title("Saham dengan Volume Meledak Hari Ini"), unsafe_allow_html=True)
 df_all = load_parquet_safe()
