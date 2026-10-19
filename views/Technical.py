@@ -352,7 +352,7 @@ else:
 
 
 # ============================================================
-# FIBONACCI RETRACEMENT & EXTENSION
+# FIBONACCI RETRACEMENT & EXTENSION (DIURUTKAN DARI ATAS KE BAWAH)
 # ============================================================
 st.markdown(section_title("Fibonacci Retracement & Extension", "Berdasarkan Swing High & Swing Low 150 hari terakhir"), unsafe_allow_html=True)
 
@@ -361,13 +361,11 @@ swing_high = float(recent_df["High"].max())
 swing_low = float(recent_df["Low"].min())
 diff = swing_high - swing_low
 
-# Tentukan arah tren: jika harga sekarang lebih dekat ke Low, berarti downtrend
 if abs(harga - swing_low) < abs(harga - swing_high):
-    trend_fibo = "downtrend" # Fokus pada Fibonacci Extension ke bawah
+    trend_fibo = "downtrend"
 else:
-    trend_fibo = "uptrend"   # Fokus pada Fibonacci Retracement ke bawah
+    trend_fibo = "uptrend"
 
-# Level Fibonacci standar
 fibo_levels = [
     ("0.0% (High)", swing_high),
     ("23.6%", swing_high - diff * 0.236),
@@ -378,13 +376,15 @@ fibo_levels = [
     ("100.0% (Low)", swing_low)
 ]
 
-# Fibonacci Extension (jika harga sudah tembus Low)
 if harga < swing_low:
     fibo_levels.extend([
         ("127.2% (Ext)", swing_low - diff * 0.272),
         ("161.8% (Ext)", swing_low - diff * 0.618),
         ("200.0% (Ext)", swing_low - diff * 1.0),
     ])
+
+# KUNCI PERBAIKAN: Urutkan dari harga tertinggi ke terendah
+fibo_levels = sorted(fibo_levels, key=lambda x: x[1], reverse=True)
 
 st.markdown(
     f'<div style="background:rgba(99,102,241,0.08); border:1px solid rgba(99,102,241,0.2); '
@@ -396,10 +396,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Render Card Fibonacci
-c_fib1, c_fib2 = st.columns(2)
-for i, (label, level) in enumerate(fibo_levels):
-    # Tentukan apakah ini Support atau Resistance
+# Render Card Fibonacci dalam satu kolom penuh (tidak pakai st.columns agar tidak melompat)
+for label, level in fibo_levels:
     if level < harga:
         is_support = True
         color = "#10b981"
@@ -433,8 +431,7 @@ for i, (label, level) in enumerate(fibo_levels):
         f'</div>'
     )
     
-    with (c_fib1 if i % 2 == 0 else c_fib2):
-        st.markdown(card_html, unsafe_allow_html=True)
+    st.markdown(card_html, unsafe_allow_html=True)
 
 
 # ============================================================
