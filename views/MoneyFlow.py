@@ -65,8 +65,8 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    # Info Timeframe
-    st.caption("ℹ️ **Timeframe:** Data saat ini menggunakan **Daily (1 Hari)**. Data intraday (5m, 15m, 1H) belum tersedia dari database lokal.")
+    # Info Timeframe & Cara Pakai
+    st.caption("ℹ️ **Timeframe:** Daily (1 Hari) · **Navigasi:** Geser dengan 1 jari, Cubit (2 jari) untuk Zoom, Scroll mouse untuk melebarkan candle.")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -114,12 +114,12 @@ st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe
 
 fig1 = go.Figure()
 
-# Bar Volume dengan warna Sky Blue transparan (Elegan & Jelas)
+# Bar Volume dengan warna Sky Blue transparan
 fig1.add_trace(go.Bar(
     x=df['Date'], 
     y=df['Volume'], 
     name='Volume', 
-    marker=dict(color='rgba(56, 189, 248, 0.6)'), # Warna Sky Blue transparan
+    marker=dict(color='rgba(56, 189, 248, 0.6)'), 
     marker_line_width=0
 ))
 
@@ -138,16 +138,14 @@ fig1.update_layout(
     yaxis=dict(title="Volume", showgrid=False),
     yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    dragmode='pan', # Default mode geser untuk HP
+    dragmode='pan', # Mode 1 jari = Geser
     margin=dict(l=40, r=40, t=40, b=40)
 )
 
-# Matikan zoom scroll agar di HP bisa digeser
-st.plotly_chart(
-    fig1, 
-    use_container_width=True, 
-    config={'scrollZoom': False, 'displayModeBar': True}
-)
+# Config: scrollZoom=True agar bisa scroll untuk zoom, displayModeBar untuk toolbar
+config_chart = {'scrollZoom': True, 'displayModeBar': True, 'displaylogo': False}
+
+st.plotly_chart(fig1, use_container_width=True, config=config_chart)
 
 st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
 fig2 = go.Figure()
@@ -160,11 +158,7 @@ fig2.update_layout(
     dragmode='pan',
     margin=dict(l=40, r=40, t=20, b=40)
 )
-st.plotly_chart(
-    fig2, 
-    use_container_width=True,
-    config={'scrollZoom': False, 'displayModeBar': True}
-)
+st.plotly_chart(fig2, use_container_width=True, config=config_chart)
 
 st.markdown(section_title("Saham dengan Volume Meledak Hari Ini"), unsafe_allow_html=True)
 df_all = load_parquet_safe()
