@@ -65,7 +65,7 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    st.caption("ℹ️ **Grafik Statis** (Anti Rusak). Data saat ini menggunakan Daily (1 Hari).")
+    st.caption("ℹ️ **Grafik Statis** (Anti Rusak). Data menggunakan Daily (1 Hari).")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -109,11 +109,8 @@ obv_prev = df['OBV'].iloc[-10]
 obv_trend = "Naik" if obv_now > obv_prev else "Turun"
 c4.metric("OBV Trend (10d)", obv_trend)
 
-# ============================================================
-# GRAFIK STATIS: HARGA VS VOLUME
-# ============================================================
+# GRAFIK 1: HARGA VS VOLUME
 st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe_allow_html=True)
-
 fig1 = go.Figure()
 fig1.add_trace(go.Bar(
     x=df['Date'], y=df['Volume'], name='Volume', 
@@ -133,74 +130,71 @@ fig1.update_layout(
 )
 st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
-# ============================================================
-# FITUR BARU 1: NET FOREIGN FLOW (ASING)
-# ============================================================
-st.markdown(section_title("Net Foreign Flow (Asing)", "Arah uang asing (Beli - Jual)"), unsafe_allow_html=True)
+# GRAFIK 2: CMF
+st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
+fig2 = go.Figure()
+fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='CMF', line=dict(color='#10b981', width=2)))
+fig2.add_hline(y=0, line_dash="dash", line_color="#64748b")
+fig2.update_layout(
+    template="plotly_dark", height=300, 
+    xaxis=dict(fixedrange=True), yaxis=dict(title="CMF", fixedrange=True),
+    dragmode=False, margin=dict(l=40, r=40, t=20, b=40)
+)
+st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
-# Cek apakah data foreign_buy dan foreign_sell tersedia dan tidak kosong semua
-if 'foreign_buy' in df.columns and 'foreign_sell' in df.columns:
-    # Pastikan tipenya numerik
-    df['foreign_buy'] = pd.to_numeric(df['foreign_buy'], errors='coerce').fillna(0)
-    df['foreign_sell'] = pd.to_numeric(df['foreign_sell'], errors='coerce').fillna(0)
-    
-    # Jika datanya ada (tidak semua nol)
-    if df['foreign_buy'].sum() > 0 or df['foreign_sell'].sum() > 0:
-        df['net_foreign'] = df['foreign_buy'] - df['foreign_sell']
-        
-        # Warna bar: Hijau jika Net Buy, Merah jika Net Sell
-        colors_foreign = ['#10b981' if val >= 0 else '#f43f5e' for val in df['net_foreign']]
-        
-        fig_for = go.Figure()
-        fig_for.add_trace(go.Bar(
-            x=df['Date'], y=df['net_foreign'], name='Net Foreign',
-            marker_color=colors_foreign
-        ))
-        fig_for.update_layout(
-            template="plotly_dark", height=300,
-            xaxis=dict(fixedrange=True), yaxis=dict(title="Net (Lembar)", fixedrange=True),
-            dragmode=False, margin=dict(l=40, r=40, t=20, b=40)
-        )
-        st.plotly_chart(fig_for, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
-    else:
-        st.info("Data Foreign Buy/Sell bernilai 0 atau tidak tersedia di database untuk saham ini.")
-else:
-    st.info("Kolom data Foreign Buy/Sell tidak ditemukan di database Anda.")
-
-# ============================================================
-# FITUR BARU 2: WHALE TRACKER (SILENT ACCUMULATION)
-# ============================================================
-st.markdown(section_title("Whale Tracker (Akumulasi Diam-diam)", "Harga flat tapi Volume meledak"), unsafe_allow_html=True)
-st.caption("Saham di bawah ini harganya bergerak sangat tipis (< 1.5%), tetapi volumenya > 2.5x lipat dari biasanya. Seringkali ini adalah tanda 'Bandar' sedang menyerap barang tanpa membuat harga naik.")
-
+# PERSIAPAN DATA UNTUK TABEL
 df_all = load_parquet_safe()
 last_date = df_all['Date'].max()
-
-# Hitung Vol MA 20
 vol_ma = df_all.groupby('Kode')['Volume'].transform(lambda x: x.rolling(20).mean())
+df_all['Vol_MA20'] = vol_ma
 df_all['Vol_Ratio'] = df_all['Volume'] / vol_ma
-
-# Hitung Perubahan Harga Harian (Close / Prev Close - 1)
+df_all['Value'] = df_all['Close'] * df_all['Volume']
+df_all['Value_MA20'] = df_all.groupby('Kode')['Value'].transform(lambda x: x.rolling(20).mean())
 df_all['Ret_1d'] = df_all.groupby('Kode')['Close'].pct_change()
 
-# Filter data hari terakhir
 df_today = df_all[df_all['Date'] == last_date].copy()
 
-# LOGIKA WHALE TRACKER:
-# 1. Volume Ratio > 2.5
-# 2. Return harian antara -1.5% sampai +1.5% (Harga Flat)
+# ============================================================
+# TABEL 1: VOLUME MELEDAK (TETAP)
+# ============================================================
+st.markdown(section_title("Saham dengan Volume Meledak Hari Ini"), unsafe_allow_html=True)
+st.caption("Saham di bawah ini memiliki Volume > 2x lipat dari rata-rata 20 harinya.")
+
+# Tambahkan filter likuiditas minimal (transaksi > 5 Miliar) agar tidak menampilkan saham gocap
+df_vol_spike = df_today[
+    (df_today['Vol_Ratio'] > 2) & 
+    (df_today['Value_MA20'] > 5_000_000_000)
+].sort_values('Vol_Ratio', ascending=False)
+
+if df_vol_spike.empty:
+    st.info("Tidak ada saham likuid dengan volume meledak hari ini.")
+else:
+    cols_show = ['Kode', 'Close', 'Ret_1d', 'Value_MA20', 'Vol_Ratio']
+    df_show1 = df_vol_spike[cols_show].head(10).reset_index(drop=True)
+    df_show1['Value_MA20'] = (df_show1['Value_MA20'] / 1e9).round(1).astype(str) + ' M'
+    df_show1['Ret_1d'] = (df_show1['Ret_1d'] * 100).round(2).astype(str) + '%'
+    df_show1['Vol_Ratio'] = df_show1['Vol_Ratio'].round(2)
+    st.dataframe(df_show1, use_container_width=True, hide_index=True)
+
+# ============================================================
+# TABEL 2: WHALE TRACKER (DIPERBAIKI DENGAN FILTER LIKUIDITAS)
+# ============================================================
+st.markdown(section_title("Whale Tracker (Akumulasi Diam-diam)"), unsafe_allow_html=True)
+st.caption("Saham likuid dengan harga sangat flat (< 1.5%), tapi Volume > 2.5x. Syarat: Harga > 100 & Rata-rata transaksi > 5 Miliar/hari.")
+
 df_whale = df_today[
     (df_today['Vol_Ratio'] > 2.5) & 
-    (df_today['Ret_1d'].abs() < 0.015)
+    (df_today['Ret_1d'].abs() < 0.015) & 
+    (df_today['Close'] > 100) & # Minimal harga 100 (bukan gocap)
+    (df_today['Value_MA20'] > 5_000_000_000) # Rata-rata transaksi 20 hari > 5 Miliar
 ].sort_values('Vol_Ratio', ascending=False)
 
 if df_whale.empty:
-    st.info("Tidak ada indikasi akumulasi tersembunyi (harga flat + volume meledak) hari ini.")
+    st.info("Tidak ada indikasi akumulasi tersembunyi pada saham likuid hari ini.")
 else:
-    cols_show = ['Kode', 'Close', 'Ret_1d', 'Volume', 'Vol_Ratio']
-    df_whale = df_whale[cols_show].head(10).reset_index(drop=True)
-    # Format persentase
-    df_whale['Ret_1d'] = (df_whale['Ret_1d'] * 100).round(2).astype(str) + '%'
-    df_whale['Vol_Ratio'] = df_whale['Vol_Ratio'].round(2)
-    
-    st.dataframe(df_whale, use_container_width=True, hide_index=True)
+    cols_show_whale = ['Kode', 'Close', 'Ret_1d', 'Value_MA20', 'Vol_Ratio']
+    df_show2 = df_whale[cols_show_whale].head(10).reset_index(drop=True)
+    df_show2['Value_MA20'] = (df_show2['Value_MA20'] / 1e9).round(1).astype(str) + ' M'
+    df_show2['Ret_1d'] = (df_show2['Ret_1d'] * 100).round(2).astype(str) + '%'
+    df_show2['Vol_Ratio'] = df_show2['Vol_Ratio'].round(2)
+    st.dataframe(df_show2, use_container_width=True, hide_index=True)
