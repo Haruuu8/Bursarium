@@ -52,7 +52,7 @@ def calculate_money_flow(df):
     d['Vol_Ratio'] = d['Volume'] / d['Vol_MA20']
     return d
 
-# HEADER (Tanpa Emoji)
+# HEADER
 st.markdown(page_header("", "Smart Money Flow", "Lacak aliran uang besar (tanpa broksum)"), unsafe_allow_html=True)
 
 saham_list = list_available()
@@ -65,8 +65,7 @@ with col1:
     kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
-    # Info Timeframe & Cara Pakai
-    st.caption("ℹ️ **Timeframe:** Daily (1 Hari) · **Navigasi:** Geser dengan 1 jari, Cubit (2 jari) untuk Zoom, Scroll mouse untuk melebarkan candle.")
+    st.caption("ℹ️ **Navigasi:** Geser 1 jari (Pan), Cubit 2 jari (Zoom X), atau Scroll mouse.")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -114,7 +113,6 @@ st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe
 
 fig1 = go.Figure()
 
-# Bar Volume dengan warna Sky Blue transparan
 fig1.add_trace(go.Bar(
     x=df['Date'], 
     y=df['Volume'], 
@@ -123,7 +121,6 @@ fig1.add_trace(go.Bar(
     marker_line_width=0
 ))
 
-# Garis Harga
 fig1.add_trace(go.Scatter(
     x=df['Date'], 
     y=df['Close'], 
@@ -135,15 +132,21 @@ fig1.add_trace(go.Scatter(
 fig1.update_layout(
     template="plotly_dark", 
     height=400,
-    yaxis=dict(title="Volume", showgrid=False),
-    yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False),
+    # KUNCI SUMBU Y AGAR TIDAK BISA DI-ZOOM (Fokus Zoom hanya di Sumbu X)
+    yaxis=dict(title="Volume", showgrid=False, fixedrange=True),
+    yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=True),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    dragmode='pan', # Mode 1 jari = Geser
+    dragmode='pan',
     margin=dict(l=40, r=40, t=40, b=40)
 )
 
-# Config: scrollZoom=True agar bisa scroll untuk zoom, displayModeBar untuk toolbar
-config_chart = {'scrollZoom': True, 'displayModeBar': True, 'displaylogo': False}
+# scrollZoom: True, displayModeBar: False (Sembunyikan toolbar agar layar HP lebih lega)
+config_chart = {
+    'scrollZoom': True, 
+    'displayModeBar': False, 
+    'displaylogo': False,
+    'modeBarButtonsToRemove': ['lasso2d', 'select2d']
+}
 
 st.plotly_chart(fig1, use_container_width=True, config=config_chart)
 
@@ -154,7 +157,8 @@ fig2.add_hline(y=0, line_dash="dash", line_color="#64748b")
 fig2.update_layout(
     template="plotly_dark", 
     height=300, 
-    yaxis_title="CMF",
+    # KUNCI SUMBU Y JUGA DI SINI
+    yaxis=dict(title="CMF", fixedrange=True),
     dragmode='pan',
     margin=dict(l=40, r=40, t=20, b=40)
 )
