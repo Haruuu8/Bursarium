@@ -1,4 +1,4 @@
-# Dashboard Rotasi Sektor IDX - Halaman Utama.
+# Dashboard Rotasi Sektor GLOBAL (MSCI WORLD) - Halaman Utama.
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -9,16 +9,15 @@ from quant.global_data import (
     get_dampak_ihsg,
 )
 from quant.theme import load_theme, page_header, section_title
-from quant.parquet_loader import load_parquet_safe
 
 import numpy as np
 import pandas as pd
 import streamlit as st
 from datetime import datetime
-
+import yfinance as yf
 
 st.set_page_config(
-    page_title="Dashboard",
+    page_title="Global Sector Rotation",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -29,24 +28,33 @@ if not st.session_state.get("authentication_status"):
 
 load_theme()
 
-BENCHMARK = "IHSG"
+# Menggunakan MSCI World ETF sebagai benchmark (bukan S&P 500)
+BENCHMARK = "URTH" 
 RS_WINDOW = 20
 MOMENTUM_WINDOW = 10
-REL_WINDOW = 20  # ← untuk hitung 20d spread vs IHSG
-
+REL_WINDOW = 20
 
 # ============================================================
-# MAPPING
+# MAPPING SEKTOR GLOBAL (iShares Global Sector ETFs)
 # ============================================================
 SEKTOR_ID = {
-    "Energy": "Energi", "Basic Materials": "Barang Baku",
-    "Industrials": "Perindustrian",
-    "Consumer Non-Cyclicals": "Barang Konsumen Primer",
-    "Consumer Cyclicals": "Barang Konsumen Non-Primer",
-    "Healthcare": "Kesehatan", "Financials": "Keuangan",
-    "Properties & Real Estate": "Properti & Real Estat",
-    "Technology": "Teknologi", "Infrastructures": "Infrastruktur",
-    "Transportation & Logistic": "Transportasi & Logistik",
+    "IXN": "Teknologi",
+    "IXG": "Keuangan",
+    "IXJ": "Kesehatan",
+    "RXI": "Konsumen Non-Primer",
+    "KXI": "Konsumen Primer",
+    "IXC": "Energi",
+    "EXI": "Perindustrian",
+    "MXI": "Barang Baku",
+    "RWO": "Properti & Real Estat",
+    "JXI": "Utilitas",
+    "IXP": "Komunikasi"
+}
+
+SEKTOR_ICON = {
+    "IXN": "💻", "IXG": "🏦", "IXJ": "💊", "RXI": "🛍️",
+    "KXI": "🛒", "IXC": "⚡", "EXI": "🏭", "MXI": "📦",
+    "RWO": "🏢", "JXI": "🔌", "IXP": "📱"
 }
 
 STATUS_STYLE = {
@@ -64,40 +72,27 @@ STATUS_STYLE = {
                    "text": "#818cf8", "arrow": "↗"},
 }
 
-
 # ============================================================
-# LOAD DATA
+# LOAD DATA GLOBAL (YFINANCE)
 # ============================================================
-@st.cache_data(ttl=1800)
-def load_data():
-    df = load_parquet_safe()
-    if df is None:
-        raise FileNotFoundError("ohlcv_idx_2026_all.parquet tidak ditemukan.")
-    df = df.dropna(subset=["Date"])
-    sektor = pd.read_csv("data_sektor.csv")
-    sektor["kode"] = sektor["kode"].str.upper()
-    df = df.merge(sektor, left_on="Kode", right_on="kode", how="left")
-    df = df.drop(columns=["kode"], errors="ignore")
-    return df[df["sektor"].notna()].copy()
-
+@st.cache_data(ttl=3600)
+def load_global_data():
+    tickers = list(SEKTOR_ID.keys()) + [BENCHMARK]
+    
+    # Ambil data 1 tahun terakhir
+    df = yf.download(tickers, period="1y", progress=False)["Close"]
+    
+    if df.empty:
+        raise ValueError("Gagal mengambil data dari Yahoo Finance.")
+    
+    df = df.dropna()
+    return df
 
 def build_sector_index(df):
-    df = df.sort_values(["Kode", "Date"]).copy()
-    df["ret_1d"] = df.groupby("Kode")["Close"].pct_change()
-    df = df[df["ret_1d"].notna()]
-    sector_ret = df.groupby(["Date", "sektor"])["ret_1d"].mean().reset_index()
-    sector_ret = sector_ret.pivot(index="Date", columns="sektor",
-                                   values="ret_1d").fillna(0)
-    return (1 + sector_ret).cumprod() * 100
-
-
-def build_benchmark(df):
-    df = df.sort_values(["Kode", "Date"]).copy()
-    df["ret_1d"] = df.groupby("Kode")["Close"].pct_change()
-    df = df[df["ret_1d"].notna()]
-    bench = df.groupby("Date")["ret_1d"].mean()
-    return (1 + bench).cumprod() * 100
-
+    # Hitung return harian
+    ret_df = df.pct_change().dropna()
+    # Buat index kumulatif (mulai dari 100)
+    return (1 + ret_df).cumprod() * 100
 
 def calc_rrg(sector_index, benchmark):
     common = sector_index.index.intersection(benchmark.index)
@@ -111,13 +106,11 @@ def calc_rrg(sector_index, benchmark):
     valid = rs_ratio.notna().all(axis=1) & rs_mom.notna().all(axis=1)
     return rs_ratio[valid], rs_mom[valid]
 
-
 def classify_quadrant(x, y):
     if x >= 100 and y >= 100: return "Leading"
     if x >= 100 and y < 100: return "Weakening"
     if x < 100 and y < 100: return "Lagging"
     return "Improving"
-
 
 def detect_market_phase(sc):
     n_lead = sc.get("Leading", 0)
@@ -125,6 +118,7 @@ def detect_market_phase(sc):
     n_weak = sc.get("Weakening", 0)
     n_lag = sc.get("Lagging", 0)
     total = n_lead + n_imp + n_weak + n_lag
+    if total == 0: return "UNKNOWN", "Data tidak cukup"
     if n_lead >= total * 0.5:
         return "MARKUP", "Pasar bull kuat, mayoritas sektor memimpin"
     elif n_lead + n_imp >= total * 0.7:
@@ -135,28 +129,28 @@ def detect_market_phase(sc):
         return "LATE CYCLE", "Siklus akhir, ambil untung"
     return "MIXED", "Pasar campuran, rotasi sedang berlangsung"
 
-
 # ============================================================
 # LOAD & HITUNG
 # ============================================================
-with st.spinner("Memuat data..."):
+with st.spinner("Memuat data Global Sector (MSCI World)..."):
     try:
-        df = load_data()
-    except FileNotFoundError as e:
-        st.error(f"File tidak ditemukan: {e}")
-        st.stop()
+        df_all = load_global_data()
     except Exception as e:
-        st.error(f"Error memuat data: {e}")
+        st.error(f"Error mengambil data: {e}")
         st.stop()
 
-sector_index = build_sector_index(df)
-benchmark = build_benchmark(df)
-rs_ratio, rs_mom = calc_rrg(sector_index, benchmark)
+# Pisahkan benchmark dan sektor
+benchmark_series = df_all[BENCHMARK]
+sector_df = df_all.drop(columns=[BENCHMARK])
 
-# 20d spread IHSG (untuk semua sektor)
+sector_index = build_sector_index(sector_df)
+benchmark_index = build_sector_index(benchmark_series.to_frame())[BENCHMARK]
+
+rs_ratio, rs_mom = calc_rrg(sector_index, benchmark_index)
+
 bm_20d = None
-if len(benchmark) >= REL_WINDOW + 1:
-    bm_20d = (benchmark.iloc[-1] / benchmark.iloc[-(REL_WINDOW + 1)] - 1) * 100
+if len(benchmark_index) >= REL_WINDOW + 1:
+    bm_20d = (benchmark_index.iloc[-1] / benchmark_index.iloc[-(REL_WINDOW + 1)] - 1) * 100
 
 sector_data = []
 for sektor in rs_ratio.columns:
@@ -166,32 +160,26 @@ for sektor in rs_ratio.columns:
 
     ret_1d = 0
     if len(sector_index) >= 2:
-        ret_1d = (sector_index[sektor].iloc[-1] /
-                  sector_index[sektor].iloc[-2] - 1) * 100
+        ret_1d = (sector_index[sektor].iloc[-1] / sector_index[sektor].iloc[-2] - 1) * 100
 
-    # 20d relative vs IHSG
     spread_20d = None
     if bm_20d is not None and len(sector_index) >= REL_WINDOW + 1:
-        sec_20d = (sector_index[sektor].iloc[-1] /
-                   sector_index[sektor].iloc[-(REL_WINDOW + 1)] - 1) * 100
+        sec_20d = (sector_index[sektor].iloc[-1] / sector_index[sektor].iloc[-(REL_WINDOW + 1)] - 1) * 100
         spread_20d = sec_20d - bm_20d
 
     sector_data.append({
         "sektor": sektor, "status": status, "ret_1d": ret_1d,
-        "spread_20d": spread_20d,
-        "rs_ratio": x, "rs_mom": y,
+        "spread_20d": spread_20d, "rs_ratio": x, "rs_mom": y,
     })
 
 df_status = pd.DataFrame(sector_data)
 status_counts = df_status["status"].value_counts().to_dict()
 phase, phase_desc = detect_market_phase(status_counts)
 
-
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown(page_header("", "Rotasi Sektor", phase_desc),
-            unsafe_allow_html=True)
+st.markdown(page_header("🌍", "Global Sector Rotation", phase_desc), unsafe_allow_html=True)
 
 st.markdown(
     '<div style="margin-bottom: 24px;">'
@@ -206,17 +194,13 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 # ============================================================
 # SECTOR CARDS
 # ============================================================
 STATUS_ORDER = {"Leading": 0, "Improving": 1, "Weakening": 2, "Lagging": 3}
 df_status["order"] = df_status["status"].map(STATUS_ORDER)
-df_sorted = df_status.sort_values(
-    ["order", "ret_1d"], ascending=[True, False]
-).reset_index(drop=True)
+df_sorted = df_status.sort_values(["order", "ret_1d"], ascending=[True, False]).reset_index(drop=True)
 
-# Keterangan kolom
 st.markdown(
     '<div style="font-size: 11px; color: #64748b; '
     'margin-bottom: 12px; padding: 8px 12px; '
@@ -224,7 +208,7 @@ st.markdown(
     'border-left: 2px solid #475569;">'
     '<b style="color:#94a3b8;">Keterangan:</b> '
     'Angka pertama = return <b>1 hari</b> · '
-    'Angka kedua = selisih return <b>20 hari</b> vs IHSG · '
+    'Angka kedua = selisih return <b>20 hari</b> vs MSCI World · '
     'Label = kuadran RRG (kumulatif)'
     '</div>',
     unsafe_allow_html=True
@@ -233,12 +217,12 @@ st.markdown(
 for _, r in df_sorted.iterrows():
     sektor = r["sektor"]; status = r["status"]; ret = r["ret_1d"]
     spread = r.get("spread_20d")
+    icon = SEKTOR_ICON.get(sektor, "📁")
     nama_id = SEKTOR_ID.get(sektor, sektor)
     style = STATUS_STYLE[status]
     color_ret = "#10b981" if ret >= 0 else "#f43f5e"
     sign = "+" if ret >= 0 else ""
 
-    # Badge 20d spread
     if spread is not None and not pd.isna(spread):
         sp_color = "#10b981" if spread >= 0 else "#f43f5e"
         sp_sign = "+" if spread >= 0 else ""
@@ -246,7 +230,7 @@ for _, r in df_sorted.iterrows():
             f'<span style="font-size: 11px; color: {sp_color}; '
             f'font-weight: 600; background: rgba(15,23,42,0.6); '
             f'padding: 3px 8px; border-radius: 5px;">'
-            f'20d: {sp_sign}{spread:.2f}% vs IHSG</span>'
+            f'20d: {sp_sign}{spread:.2f}% vs MSCI World</span>'
         )
     else:
         spread_html = ""
@@ -258,6 +242,10 @@ for _, r in df_sorted.iterrows():
         'border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; '
         'display: flex; align-items: center; gap: 16px; '
         'box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">'
+        f'<div style="font-size: 24px; width: 44px; height: 44px; '
+        f'display: flex; align-items: center; justify-content: center; '
+        f'border-radius: 10px; background: #0a0e1a; flex-shrink: 0; '
+        f'border: 1px solid #1f2a3d;">{icon}</div>'
         '<div style="flex-grow: 1;">'
         f'<div style="font-size: 15px; font-weight: 700; color: #ffffff; '
         f'margin-bottom: 8px;">{nama_id}</div>'
@@ -274,12 +262,10 @@ for _, r in df_sorted.iterrows():
         unsafe_allow_html=True
     )
 
-
 # ============================================================
-# RINGKASAN PAGI
+# RINGKASAN PAGI (Tetap pakai data global_data Anda)
 # ============================================================
-st.markdown(section_title("Ringkasan Pagi", "Global market update"),
-            unsafe_allow_html=True)
+st.markdown(section_title("Ringkasan Pagi", "Global market update"), unsafe_allow_html=True)
 
 with st.spinner("Mengambil data global..."):
     global_data = get_all_global_data()
@@ -311,7 +297,6 @@ st.markdown(
 
 col1, col2, col3 = st.columns(3)
 
-
 def render_market_list(items, title):
     st.markdown(
         f'<div style="font-size: 11px; color: #64748b; letter-spacing: 0.08em; '
@@ -335,14 +320,12 @@ def render_market_list(items, title):
             unsafe_allow_html=True
         )
 
-
 with col1:
-    render_market_list(global_data["indeks"], "Indeks Global")
+    render_market_list(global_data["indeks"], "🌎 Indeks Global")
 with col2:
-    render_market_list(global_data["mata_uang"], "Mata Uang")
+    render_market_list(global_data["mata_uang"], "💵 Mata Uang")
 with col3:
-    render_market_list(global_data["komoditas"], "Komoditas")
-
+    render_market_list(global_data["komoditas"], "🛢️ Komoditas")
 
 # ============================================================
 # DAMPAK KE IHSG
@@ -355,7 +338,6 @@ for nama, nilai, status, ket in dampak_ihsg:
         "#f43f5e" if status == "NEGATIF" else
         "#f59e0b"
     )
-    # Emoji status DIKEMBALIKAN
     badge_icon = (
         "🟢" if status == "POSITIF" else
         "🔴" if status == "NEGATIF" else "🟡"
@@ -377,7 +359,6 @@ for nama, nilai, status, ket in dampak_ihsg:
         unsafe_allow_html=True
     )
 
-
 # ============================================================
 # FOOTER
 # ============================================================
@@ -385,7 +366,7 @@ st.markdown(
     '<div style="text-align: center; color: #475569; font-size: 11px; '
     'margin-top: 30px; padding-top: 20px; border-top: 1px solid #1a2332;">'
     f'Update: {datetime.now().strftime("%d %B %Y, %H:%M")} · '
-    f'Data dari {len(df):,} baris · {df["sektor"].nunique()} sektor'
+    f'Data dari Yahoo Finance (Global MSCI World Sectors)'
     '</div>',
     unsafe_allow_html=True
 )
