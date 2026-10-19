@@ -10,8 +10,8 @@ MENU = [
     ("Watchlist",   "views/Watchlist.py",   "⭐"),
     ("Valuation",   "views/Valuation.py",   "💰"),
     ("News",        "views/News.py",        "📰"),
-    ("MoneyFlow",   "views/MoneyFlow.py",   "💸"),
-    ("Kalkulator Right Issue", "views/Kalkulator_Right_Issue.py", "🧮"),
+    ("Money Flow",  "views/Money_Flow.py",  "💸"),
+    ("Right Issue", "views/Kalkulator_Right_Issue.py", "🧮"),
 ]
 
 
