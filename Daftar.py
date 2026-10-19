@@ -59,9 +59,8 @@ if st.session_state.get("authentication_status"):
         st.Page("views/Watchlist.py", title="Watchlist", icon=":material/star:"),
         st.Page("views/Valuation.py", title="Valuation", icon=":material/payments:"),
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
-        
-        # PASTIKAN NAMA FILE DI FOLDER VIEWS ANDA JUGA 'MoneyFlow.py' (TANPA GARIS BAWAH)
-        st.Page("views/MoneyFlow.py", title="Money Flow", icon=":material/water_drop:"),
+        st.Page("views/Money_Flow.py", title="Money Flow", icon=":material/water_drop:"),
+        st.Page("views/Kalkulator_Right_Issue.py", title="Kalkulator Right Issue", icon=":material/calculate:"),
     ]
     
     # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) bisa membuka sidebar
@@ -109,7 +108,8 @@ with tab_daftar:
         ("Watchlist", "Pantau saham favorit Anda"), 
         ("Valuation", "Hitung valuasi & risk/reward otomatis"), 
         ("News", "Berita terkini seputar pasar IDX"),
-        ("Money Flow", "Lacak aliran uang besar dan akumulasi bandar")
+        ("Money Flow", "Lacak aliran uang besar dan akumulasi bandar"),
+        ("Kalkulator Right Issue", "Simulasi risiko delusi aksi korporasi")
     ]
     cols = st.columns(2)
     for i, (nama, desk) in enumerate(FITUR):
