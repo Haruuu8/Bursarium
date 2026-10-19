@@ -10,6 +10,8 @@ MENU = [
     ("Watchlist",   "views/Watchlist.py",   "⭐"),
     ("Valuation",   "views/Valuation.py",   "💰"),
     ("News",        "views/News.py",        "📰"),
+    # TAMBAHKAN BARIS INI UNTUK MONEY FLOW:
+    ("Money Flow",  "views/MoneyFlow.py",   "💸"),
 ]
 
 
