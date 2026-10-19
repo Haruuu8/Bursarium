@@ -13,4 +13,4 @@ pyarrow>=14.0
 supabase
 beautifulsoup4
 lxml
-plotly
+plotly==5.24.1
