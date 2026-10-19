@@ -19,7 +19,8 @@ st.markdown(section_title("Data Right Issue", "Masukkan parameter aksi korporasi
 # Form Input
 c1, c2 = st.columns(2)
 with c1:
-    lembar_lama = st.number_input("Jumlah Saham Dimiliki (Lembar)", min_value=1, value=1000, step=100)
+    # Diubah menjadi Lot
+    lot_lama = st.number_input("Jumlah Lot Dimiliki", min_value=1, value=10, step=1)
     harga_cum = st.number_input("Harga Saham Saat Ini (Cum-Date) - Rp", min_value=1.0, value=1000.0, step=50.0)
 with c2:
     st.markdown("**Rasio Right Issue (Lama : Baru)**")
@@ -32,20 +33,24 @@ with c2:
     harga_tebus = st.number_input("Harga Tebus (Exercise Price) - Rp", min_value=1.0, value=500.0, step=50.0)
 
 # ============================================================
-# KALKULASI
+# KALKULASI (MENGGUNAKAN LOT)
 # ============================================================
 if st.button("Hitung Risiko", type="primary", use_container_width=True):
     
-    # 1. Lembar Baru yang berhak didapat
-    lembar_baru = (lembar_lama / rasio_lama) * rasio_baru
+    # 1. Lot Baru yang berhak didapat
+    lot_baru = (lot_lama / rasio_lama) * rasio_baru
+    
+    # Konversi ke Lembar untuk perhitungan uang (1 Lot = 100 Lembar)
+    lembar_lama = lot_lama * 100
+    lembar_baru = lot_baru * 100
     
     # 2. Biaya Penebusan
     biaya_tebus = lembar_baru * harga_tebus
     
     # 3. TERP (Theoretical Ex-Rights Price)
-    total_lembar_baru_tebus = lembar_lama + lembar_baru
+    total_lembar_akhir = lembar_lama + lembar_baru
     nilai_total_baru = (lembar_lama * harga_cum) + (lembar_baru * harga_tebus)
-    terp = nilai_total_baru / total_lembar_baru_tebus
+    terp = nilai_total_baru / total_lembar_akhir
     
     # 4. Nilai Portofolio Sebelum Right Issue
     nilai_awal = lembar_lama * harga_cum
@@ -53,7 +58,7 @@ if st.button("Hitung Risiko", type="primary", use_container_width=True):
     # ============================================================
     # SKENARIO 1: IKUT MENEBUS
     # ============================================================
-    nilai_akhir_tebus = total_lembar_baru_tebus * terp
+    nilai_akhir_tebus = total_lembar_akhir * terp
     modal_total_tebus = nilai_awal + biaya_tebus
     pnl_tebus = nilai_akhir_tebus - modal_total_tebus
     pnl_tebus_pct = (pnl_tebus / modal_total_tebus) * 100
@@ -87,9 +92,9 @@ if st.button("Hitung Risiko", type="primary", use_container_width=True):
         st.markdown(
             f'<div style="background:#131a2a; border:1px solid #1e293b; border-top:4px solid #10b981; border-radius:12px; padding:20px; height:100%;">'
             f'<div style="font-size:16px; font-weight:800; color:#10b981; margin-bottom:12px;">✅ Skenario: Ikut Menebus</div>'
-            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Lembar Baru Didapat</span> <b style="color:#fff;">{lembar_baru:,.0f} lembar</b></div>'
+            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Lot Baru Didapat</span> <b style="color:#fff;">{lot_baru:,.2f} Lot</b></div>'
+            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Total Lot Akhir</span> <b style="color:#fff;">{lot_lama + lot_baru:,.2f} Lot</b></div>'
             f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Biaya Tebus</span> <b style="color:#f43f5e;">Rp {biaya_tebus:,.0f}</b></div>'
-            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Total Lembar Akhir</span> <b style="color:#fff;">{total_lembar_baru_tebus:,.0f} lembar</b></div>'
             f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Total Modal Akhir</span> <b style="color:#fff;">Rp {modal_total_tebus:,.0f}</b></div>'
             f'<div style="border-top:1px solid #1e293b; margin:10px 0;"></div>'
             f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Nilai Portofolio (TERP)</span> <b style="color:#fff;">Rp {nilai_akhir_tebus:,.0f}</b></div>'
@@ -106,9 +111,9 @@ if st.button("Hitung Risiko", type="primary", use_container_width=True):
         st.markdown(
             f'<div style="background:#131a2a; border:1px solid #1e293b; border-top:4px solid {color_dilusi}; border-radius:12px; padding:20px; height:100%;">'
             f'<div style="font-size:16px; font-weight:800; color:{color_dilusi}; margin-bottom:12px;">❌ Skenario: Tidak Menebus (Dilusi)</div>'
-            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Lembar Baru Didapat</span> <b style="color:#fff;">0 lembar</b></div>'
+            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Lot Baru Didapat</span> <b style="color:#fff;">0 Lot</b></div>'
+            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Total Lot Akhir</span> <b style="color:#fff;">{lot_lama:,.2f} Lot</b></div>'
             f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Biaya Tebus</span> <b style="color:#fff;">Rp 0</b></div>'
-            f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Total Lembar Akhir</span> <b style="color:#fff;">{lembar_lama:,.0f} lembar</b></div>'
             f'<div style="font-size:13px; color:#94a3b8; display:flex; justify-content:space-between; margin-bottom:6px;"><span>Nilai Portofolio (TERP)</span> <b style="color:#fff;">Rp {nilai_akhir_dilusi:,.0f}</b></div>'
             f'<div style="border-top:1px solid #1e293b; margin:10px 0;"></div>'
             f'<div style="background:{bg_alert}; padding:12px; border-radius:8px;">'
@@ -120,4 +125,4 @@ if st.button("Hitung Risiko", type="primary", use_container_width=True):
         )
         
     # Edukasi Tambahan
-    st.info("💡 **Apa itu Delusi?** Jika Anda tidak menebus HMETD (Right Issue), jumlah lembar saham Anda tetap. Namun, karena jumlah saham beredar perusahaan bertambah banyak, porsi kepemilikan Anda mengecil. Harga saham akan turun ke TERP, sehingga nilai portofolio Anda berkurang secara otomatis (seperti pada skenario merah di atas).")
+    st.info("💡 **Apa itu Delusi?** Jika Anda tidak menebus HMETD (Right Issue), jumlah lot saham Anda tetap. Namun, karena jumlah saham beredar perusahaan bertambah banyak, porsi kepemilikan Anda mengecil. Harga saham akan turun ke TERP, sehingga nilai portofolio Anda berkurang secara otomatis (seperti pada skenario merah di atas).")
