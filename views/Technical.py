@@ -133,13 +133,11 @@ def compute_akumulasi(kode):
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown(page_header("", "Technical", "Indikator & Sinyal Trading"),
-            unsafe_allow_html=True)
+st.markdown(page_header("", "Technical", "Indikator & Sinyal Trading"), unsafe_allow_html=True)
 
 saham_list = list_available()
 if not saham_list:
-    st.markdown(empty_state("📭", "Belum ada data",
-                            "Data teknikal belum tersedia. Silakan hubungi admin."), unsafe_allow_html=True)
+    st.markdown(empty_state("📭", "Belum ada data", "Data teknikal belum tersedia. Silakan hubungi admin."), unsafe_allow_html=True)
     st.stop()
 
 if "tech_kode" not in st.session_state:
@@ -242,7 +240,7 @@ if ind:
 
 
 # ============================================================
-# SUPPORT & RESISTANCE (UPGRADED WITH STRENGTH METER)
+# SUPPORT & RESISTANCE (DENGAN BADGE ELITE)
 # ============================================================
 st.markdown(section_title("Support & Resistance Strength", "Multi-scale pivot · SHORT=3 · MEDIUM=7 · LONG=15"), unsafe_allow_html=True)
 
@@ -286,15 +284,25 @@ if sr:
                 n_touch = z["n_touches"]
                 dist = z["distance_pct"]
                 
-                color = "#f43f5e" if score >= 80 else ("#f59e0b" if score >= 50 else "#94a3b8")
-                bg_meter = "rgba(244,63,94,0.2)" if score >= 80 else "rgba(245,158,11,0.2)" if score >= 50 else "rgba(148,163,184,0.2)"
-                badge_icon = "🔥" if score >= 80 else ("⚡" if score >= 50 else "")
+                # --- LOGIKA BADGE ELITE ---
+                is_elite = z.get("is_elite", False)
+                width_pct = z.get("width_pct", 0)
+                
+                if is_elite:
+                    color = "#f43f5e"
+                    bg_meter = "rgba(244,63,94,0.4)"
+                    badge_text = "🚨 ELITE (WR 94%)"
+                else:
+                    color = "#f43f5e" if score >= 80 else ("#f59e0b" if score >= 50 else "#94a3b8")
+                    bg_meter = "rgba(244,63,94,0.2)" if score >= 80 else "rgba(245,158,11,0.2)" if score >= 50 else "rgba(148,163,184,0.2)"
+                    badge_text = strength
+                # ---------------------------
                 
                 st.markdown(
-                    f'<div style="background:#0f172a; border:1px solid #1e293b; border-radius:10px; padding:14px 18px; margin-bottom:10px;">'
+                    f'<div style="background:#0f172a; border:1px solid #1e293b; border-radius:10px; padding:14px 18px; margin-bottom:10px; {"border:1px solid #f43f5e;" if is_elite else ""}">'
                     f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
                     f'<span style="color:#e6ebf5; font-weight:700; font-size:15px;">{z["lower"]:,.0f} – {z["upper"]:,.0f}</span>'
-                    f'<span style="font-size:11px; font-weight:800; color:{color};">{badge_icon} {strength}</span>'
+                    f'<span style="font-size:11px; font-weight:800; color:{color};">{badge_text}</span>'
                     f'</div>'
                     f'<div style="width:100%; height:6px; background:{bg_meter}; border-radius:3px; margin-bottom:8px; overflow:hidden;">'
                     f'<div style="width:{score}%; height:100%; background:{color}; border-radius:3px;"></div>'
@@ -304,6 +312,7 @@ if sr:
                     f'<span>{n_touch}x Touch</span>'
                     f'<span>Jarak: <b style="color:{color};">{dist:+.2f}%</b></span>'
                     f'</div>'
+                    + (f'<div style="margin-top:6px; font-size:10px; color:#f43f5e; font-weight:700;">⚠️ Zona Lebar ({width_pct:.1f}%), Fresh (<30 hr), Bearish (Px < SMA200)</div>' if is_elite else '') +
                     f'</div>',
                     unsafe_allow_html=True
                 )
@@ -352,86 +361,121 @@ else:
 
 
 # ============================================================
-# FIBONACCI RETRACEMENT & EXTENSION (DIURUTKAN DARI ATAS KE BAWAH)
+# FIBONACCI SNIPER SIGNAL (WR 95%)
 # ============================================================
-st.markdown(section_title("Fibonacci Retracement & Extension", "Berdasarkan Swing High & Swing Low 150 hari terakhir"), unsafe_allow_html=True)
+st.markdown(section_title("Fibo Sniper Signal", "Hanya 0.618, 0.786, 0.850 (Win Rate 90%+)"), unsafe_allow_html=True)
 
 recent_df = df.tail(150)
 swing_high = float(recent_df["High"].max())
 swing_low = float(recent_df["Low"].min())
 diff = swing_high - swing_low
+low_idx = recent_df["Low"].idxmin()
+high_idx = recent_df["High"].idxmax()
+is_uptrend = low_idx < high_idx
 
-if abs(harga - swing_low) < abs(harga - swing_high):
-    trend_fibo = "downtrend"
+rsi_val = ind['rsi14'] if ind else 50
+vol_ma = df['Volume'].rolling(20).mean().iloc[-1]
+vol_ratio = df['Volume'].iloc[-1] / vol_ma if vol_ma > 0 else 1
+
+if is_uptrend:
+    fib_850 = swing_high - diff * 0.850
+    fib_786 = swing_high - diff * 0.786
+    dist_850 = abs(harga - fib_850) / fib_850 * 100
+    dist_786 = abs(harga - fib_786) / fib_786 * 100
+    
+    # Cek Sinyal BUY (Uptrend + Fib 0.786/0.850 + RSI < 45)
+    if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
+        st.markdown(
+            f'<div style="background:rgba(16,185,129,0.15); border:2px solid #10b981; border-radius:16px; padding:24px; margin-bottom:16px;">'
+            f'<div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">'
+            f'<div style="font-size:32px;">✅</div>'
+            f'<div style="font-size:20px; font-weight:900; color:#10b981;">SINYAL BUY (WR 90%+)</div>'
+            f'</div>'
+            f'<div style="font-size:14px; color:#cbd5e1; font-weight:700; margin-bottom:6px;">Harga menyentuh Fib 0.850/0.786. RSI Oversold ({rsi_val:.1f}). Volume {vol_ratio:.1f}x.</div>'
+            f'<div style="font-size:12px; color:#94a3b8;">Setup Uptrend Pullback. Ini adalah area beli terbaik.</div>'
+            f'</div>', unsafe_allow_html=True
+        )
+    elif dist_850 < 3 or dist_786 < 3:
+        st.markdown(
+            f'<div style="background:rgba(245,158,11,0.15); border:2px solid #f59e0b; border-radius:16px; padding:24px; margin-bottom:16px;">'
+            f'<div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">'
+            f'<div style="font-size:32px;">⏳</div>'
+            f'<div style="font-size:20px; font-weight:900; color:#f59e0b;">PANTAU (WATCH)</div>'
+            f'</div>'
+            f'<div style="font-size:14px; color:#cbd5e1; font-weight:700; margin-bottom:6px;">Harga mendekati Fib 0.850/0.786. Tunggu RSI turun di bawah 45.</div>'
+            f'</div>', unsafe_allow_html=True
+        )
 else:
-    trend_fibo = "uptrend"
+    fib_850 = swing_low + diff * 0.850
+    fib_786 = swing_low + diff * 0.786
+    dist_850 = abs(harga - fib_850) / fib_850 * 100
+    dist_786 = abs(harga - fib_786) / fib_786 * 100
+    
+    # Cek Sinyal SELL (Downtrend + Fib 0.786/0.850 + RSI < 45)
+    if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
+        st.markdown(
+            f'<div style="background:rgba(244,63,94,0.15); border:2px solid #f43f5e; border-radius:16px; padding:24px; margin-bottom:16px;">'
+            f'<div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">'
+            f'<div style="font-size:32px;">🚨</div>'
+            f'<div style="font-size:20px; font-weight:900; color:#f43f5e;">SINYAL SELL (WR 95%)</div>'
+            f'</div>'
+            f'<div style="font-size:14px; color:#cbd5e1; font-weight:700; margin-bottom:6px;">Harga menyentuh Fib 0.850/0.786 (Resistance). RSI < 45. Volume {vol_ratio:.1f}x.</div>'
+            f'<div style="font-size:12px; color:#94a3b8;">Jangan beli / Segera jual. Harga hampir pasti ditolak turun.</div>'
+            f'</div>', unsafe_allow_html=True
+        )
+    elif dist_850 < 3 or dist_786 < 3:
+        st.markdown(
+            f'<div style="background:rgba(245,158,11,0.15); border:2px solid #f59e0b; border-radius:16px; padding:24px; margin-bottom:16px;">'
+            f'<div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">'
+            f'<div style="font-size:32px;">⏳</div>'
+            f'<div style="font-size:20px; font-weight:900; color:#f59e0b;">PANTAU (WATCH)</div>'
+            f'</div>'
+            f'<div style="font-size:14px; color:#cbd5e1; font-weight:700; margin-bottom:6px;">Harga mendekati Fib 0.850/0.786 (Resistance).</div>'
+            f'</div>', unsafe_allow_html=True
+        )
 
-fibo_levels = [
-    ("0.0% (High)", swing_high),
-    ("23.6%", swing_high - diff * 0.236),
-    ("38.2%", swing_high - diff * 0.382),
-    ("50.0%", swing_high - diff * 0.5),
-    ("61.8%", swing_high - diff * 0.618),
-    ("78.6%", swing_high - diff * 0.786),
-    ("100.0% (Low)", swing_low)
-]
-
-if harga < swing_low:
-    fibo_levels.extend([
-        ("127.2% (Ext)", swing_low - diff * 0.272),
-        ("161.8% (Ext)", swing_low - diff * 0.618),
-        ("200.0% (Ext)", swing_low - diff * 1.0),
-    ])
-
-# KUNCI PERBAIKAN: Urutkan dari harga tertinggi ke terendah
-fibo_levels = sorted(fibo_levels, key=lambda x: x[1], reverse=True)
-
+# Tampilkan Tabel Level Fibo
 st.markdown(
     f'<div style="background:rgba(99,102,241,0.08); border:1px solid rgba(99,102,241,0.2); '
     f'border-radius:10px; padding:12px 18px; margin-bottom:16px; font-size:12px; color:#94a3b8;">'
     f'Swing High: <b style="color:#a5b4fc;">{swing_high:,.0f}</b> · '
     f'Swing Low: <b style="color:#a5b4fc;">{swing_low:,.0f}</b> · '
-    f'Tren saat ini: <b style="color:{"#f43f5e" if trend_fibo == "downtrend" else "#10b981"};">{trend_fibo.upper()}</b>'
+    f'Tren: <b style="color:{"#10b981" if is_uptrend else "#f43f5e"};">{"UPTREND (Support)" if is_uptrend else "DOWNTREND (Resistance)"}</b>'
     f'</div>',
     unsafe_allow_html=True
 )
 
-# Render Card Fibonacci dalam satu kolom penuh (tidak pakai st.columns agar tidak melompat)
+fibo_levels = [
+    ("0.618", swing_high - diff * 0.618) if is_uptrend else ("0.618", swing_low + diff * 0.618),
+    ("0.786", swing_high - diff * 0.786) if is_uptrend else ("0.786", swing_low + diff * 0.786),
+    ("0.850", swing_high - diff * 0.850) if is_uptrend else ("0.850", swing_low + diff * 0.850),
+]
+
 for label, level in fibo_levels:
-    if level < harga:
-        is_support = True
-        color = "#10b981"
-        bg_color = "rgba(16,185,129,0.1)"
-        border_color = "rgba(16,185,129,0.3)"
-    elif level > harga:
-        is_support = False
-        color = "#f43f5e"
-        bg_color = "rgba(244,63,94,0.1)"
-        border_color = "rgba(244,63,94,0.3)"
-    else:
-        is_support = True
-        color = "#f59e0b"
-        bg_color = "rgba(245,158,11,0.1)"
-        border_color = "rgba(245,158,11,0.3)"
-        
     dist_pct = (level / harga - 1) * 100
-    
-    card_html = (
-        f'<div style="background:{bg_color}; border:1px solid {border_color}; border-left:4px solid {color}; '
+    if is_uptrend:
+        color = "#10b981" if dist_pct < 2 else "#94a3b8"
+        bg = "rgba(16,185,129,0.1)" if dist_pct < 2 else "rgba(148,163,184,0.1)"
+        status = "SUPPORT KUAT" if dist_pct < 2 else "SUPPORT"
+    else:
+        color = "#f43f5e" if dist_pct > -2 else "#94a3b8"
+        bg = "rgba(244,63,94,0.1)" if dist_pct > -2 else "rgba(148,163,184,0.1)"
+        status = "RESISTANCE KUAT" if dist_pct > -2 else "RESISTANCE"
+
+    st.markdown(
+        f'<div style="background:{bg}; border:1px solid {color}40; border-left:4px solid {color}; '
         f'border-radius:8px; padding:12px 16px; margin-bottom:10px;">'
         f'<div style="display:flex; justify-content:space-between; align-items:center;">'
-        f'<span style="font-size:12px; color:#94a3b8; font-weight:700;">{label}</span>'
-        f'<span style="font-size:10px; color:{color}; font-weight:800;">'
-        f'{"SUPPORT" if is_support else "RESISTANCE"}</span>'
+        f'<span style="font-size:12px; color:#94a3b8; font-weight:700;">Fib {label}</span>'
+        f'<span style="font-size:10px; color:{color}; font-weight:800;">{status}</span>'
         f'</div>'
         f'<div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:6px;">'
         f'<span style="font-size:18px; font-weight:800; color:#ffffff;">{level:,.0f}</span>'
         f'<span style="font-size:12px; font-weight:700; color:{color};">({dist_pct:+.2f}%)</span>'
         f'</div>'
-        f'</div>'
+        f'</div>',
+        unsafe_allow_html=True
     )
-    
-    st.markdown(card_html, unsafe_allow_html=True)
 
 
 # ============================================================

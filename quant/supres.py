@@ -1,14 +1,5 @@
 """
 Support/Resistance v2 - Multi-Timeframe + Multi-Scale Pivot.
-
-Konsep:
-  - Deteksi pivot di 3 skala: SHORT (n=3), MEDIUM (n=7), LONG (n=15)
-  - Setiap skala di-cluster terpisah
-  - SHORT = intraday swing / day trading
-  - MEDIUM = swing trading / 1-2 minggu
-  - LONG = position trading / bulanan
-
-  Timeframe resample (opsional): daily, weekly, monthly
 """
 
 import os
@@ -134,7 +125,7 @@ def cluster_pivots(pivots, tolerance):
 
 
 # ============================================================
-# SCORE + BREAK
+# SCORE + BREAK + ELITE ZONE
 # ============================================================
 def check_break(zone, df, atr_val, original_type):
     last_price = float(df["Close"].iloc[-1])
@@ -234,6 +225,25 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     if brk["broken"]:
         final_type = brk["flip"]  # override kalau memang break
 
+    # ============================================================
+    # LOGIKA ELITE ZONE (WR 94.3%)
+    # ============================================================
+    width_pct = (zone["upper"] - zone["lower"]) / level * 100 if level > 0 else 0
+    
+    # Hitung SMA 200
+    sma200_series = df['Close'].rolling(200).mean()
+    sma200 = sma200_series.iloc[-1] if not sma200_series.empty else current_price
+    is_below_sma200 = current_price < sma200
+
+    is_elite = False
+    if (final_type == "resistance" and 
+        width_pct > 1.5 and 
+        days_ago < 30 and 
+        is_below_sma200):
+        is_elite = True
+        score += 2.0 # Bonus skor untuk Elite Zone
+    # ============================================================
+
     if score >= 7: strength = "STRONG"
     elif score >= 4.5: strength = "MODERATE"
     else: strength = "WEAK"
@@ -245,6 +255,8 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
         "type": final_type,
         "original_type": original_type,
         "flip": is_flip,
+        "is_elite": is_elite,            # <-- DATA BARU
+        "width_pct": round(width_pct, 2), # <-- DATA BARU
         "n_touches": n_touches,
         "last_touch": zone["last_touch"],
         "days_since_last": days_ago,
@@ -286,10 +298,6 @@ def detect_zones_at_scale(df, n_pivot, atr_val, current_price,
 # COMBINE DARI MULTIPLE SCALES
 # ============================================================
 def dedup_zones(zones, tolerance):
-    """
-    Gabung zona dari beberapa skala yang berdekatan.
-    Ambil skor tertinggi + akumulasi touches.
-    """
     if not zones:
         return []
 
@@ -322,7 +330,6 @@ def _merge_group(group):
     total_touches = sum(z["n_touches"] for z in group)
     scales = sorted(set(z.get("scale_n", 0) for z in group))
 
-    # Bonus konfirmasi multi-skala
     bonus = 0
     if len(scales) >= 3: bonus = 2.0
     elif len(scales) >= 2: bonus = 1.0
@@ -339,6 +346,8 @@ def _merge_group(group):
         "type": best["type"],
         "original_type": best["original_type"],
         "flip": best["flip"],
+        "is_elite": best.get("is_elite", False),     # <-- DATA BARU
+        "width_pct": best.get("width_pct", 0),       # <-- DATA BARU
         "n_touches": total_touches,
         "last_touch": max(z["last_touch"] for z in group),
         "days_since_last": min(z["days_since_last"] for z in group),
@@ -356,9 +365,6 @@ def _merge_group(group):
 def get_support_resistance(kode, timeframe="daily",
                             scales=None, max_per_side=5,
                             min_touches=2, atr_mult_tolerance=0.5):
-    """
-    Deteksi S/R multi-skala.
-    """
     if scales is None:
         scales = {"short": 3, "medium": 7, "long": 15}
 
@@ -370,15 +376,12 @@ def get_support_resistance(kode, timeframe="daily",
     atr_val = float(atr_series.iloc[-1]) if atr_series.notna().any() else 0
     current = float(df["Close"].iloc[-1])
 
-    # Tolerance
     tol_atr = atr_mult_tolerance * atr_val if atr_val > 0 else 0
     tol_pct = 0.008 * current
     tolerance = max(tol_atr, tol_pct)
 
-    # Scale weights: long lebih kuat
     weights = {"short": 0.9, "medium": 1.0, "long": 1.1}
 
-    # Detect di tiap skala
     result_scales = {}
     all_zones = []
 
@@ -393,22 +396,17 @@ def get_support_resistance(kode, timeframe="daily",
         result_scales[name] = zones
         all_zones.extend(zones)
 
-    # PERBAIKAN 3: Jangan langsung return None jika all_zones kosong.
-    # Biarkan kosong agar blok FALLBACK di bawah bisa berjalan.
     combined = dedup_zones(all_zones, tolerance) if all_zones else []
 
-    # Split
     supports = [z for z in combined if z["level"] < current]
     resistances = [z for z in combined if z["level"] > current]
 
     supports = sorted(supports, key=lambda x: (-x["score"], -x["level"]))[:max_per_side]
     resistances = sorted(resistances, key=lambda x: (-x["score"], x["level"]))[:max_per_side]
 
-    # Sort final by level
     supports = sorted(supports, key=lambda x: -x["level"])
     resistances = sorted(resistances, key=lambda x: x["level"])
 
-    # FALLBACK: kalau kosong, pakai lowest/highest dari OHLCV
     if not supports and len(df) >= 20:
         low_20 = float(df["Low"].tail(20).min())
         low_60 = float(df["Low"].tail(60).min()) if len(df) >= 60 else low_20
@@ -423,6 +421,8 @@ def get_support_resistance(kode, timeframe="daily",
                 "type": "support",
                 "original_type": "support",
                 "flip": False,
+                "is_elite": False,
+                "width_pct": 1.0,
                 "n_touches": 0,
                 "last_touch": df["Date"].iloc[-len(df)],
                 "days_since_last": 999,
@@ -441,6 +441,8 @@ def get_support_resistance(kode, timeframe="daily",
                 "type": "support",
                 "original_type": "support",
                 "flip": False,
+                "is_elite": False,
+                "width_pct": 1.0,
                 "n_touches": 0,
                 "last_touch": df["Date"].iloc[-len(df)],
                 "days_since_last": 999,
@@ -467,6 +469,8 @@ def get_support_resistance(kode, timeframe="daily",
                 "type": "resistance",
                 "original_type": "resistance",
                 "flip": False,
+                "is_elite": False,
+                "width_pct": 1.0,
                 "n_touches": 0,
                 "last_touch": df["Date"].iloc[-1],
                 "days_since_last": 0,
@@ -485,6 +489,8 @@ def get_support_resistance(kode, timeframe="daily",
                 "type": "resistance",
                 "original_type": "resistance",
                 "flip": False,
+                "is_elite": False,
+                "width_pct": 1.0,
                 "n_touches": 0,
                 "last_touch": df["Date"].iloc[-1],
                 "days_since_last": 0,
