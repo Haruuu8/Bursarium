@@ -188,7 +188,7 @@ st.markdown(
     'display: flex; align-items: center; gap: 20px;">'
     '<div style="flex-grow: 1;">'
     f'<div style="font-size:12px; color:#7d8ba3; margin-bottom:5px; '
-    f'font-weight: 600;">Technical Analysis · {len(df)} hari</div>'
+    f'font-weight: 600;">Technical Analysis · Daily · {len(df)} hari</div>'
     f'<div style="font-size:19px; font-weight:700; color:#ffffff; '
     f'margin-bottom:8px;">{kode_pilih}</div>'
     '<div style="display:flex; align-items:baseline; gap:12px;">'
@@ -202,12 +202,25 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Banner timeframe
+st.markdown(
+    '<div style="background:rgba(245,158,11,0.08); '
+    'border:1px solid rgba(245,158,11,0.25); '
+    'border-left:4px solid #f59e0b; '
+    'border-radius:10px; padding:10px 16px; margin-bottom:20px; '
+    'font-size:12px; color:#cbd5e1;">'
+    '📅 <b style="color:#f59e0b;">Timeframe: Daily</b>'
+    '</div>',
+    unsafe_allow_html=True,
+)
+st.caption("Semua analisis berbasis candle harian.")
+
 
 # ============================================================
 # INDIKATOR
 # ============================================================
 if ind:
-    st.markdown(section_title("Indikator Teknikal"), unsafe_allow_html=True)
+    st.markdown(section_title("Indikator Teknikal (Daily)"), unsafe_allow_html=True)
 
     ind_items = [
         ("RSI (14)", f"{ind['rsi14']:.1f}", ind['rsi_label']),
@@ -238,11 +251,44 @@ if ind:
                 unsafe_allow_html=True
             )
 
+    # ------------------------------------------------------------
+    # SUPERTREND — kartu khusus
+    # ------------------------------------------------------------
+    st_val = ind.get("supertrend")
+    st_lbl = ind.get("supertrend_label", "NEUTRAL")
+    st_dist = ind.get("supertrend_dist_pct", 0)
+    st_color = "#10b981" if st_lbl == "BULLISH" else ("#f43f5e" if st_lbl == "BEARISH" else "#f59e0b")
+    st_icon = "↗" if st_lbl == "BULLISH" else ("↘" if st_lbl == "BEARISH" else "—")
+
+    st_val_html = f"{st_val:,.0f}" if st_val is not None else "—"
+
+    st.markdown(
+        '<div style="background:#0f172a; border:1px solid #1e293b; '
+        f'border-left:4px solid {st_color}; border-radius:12px; '
+        'padding:18px 22px; margin-bottom:12px;">'
+        '<div style="display:flex; justify-content:space-between; '
+        'align-items:center;">'
+        '<div>'
+        '<div style="font-size:11px; color:#64748b; font-weight:600; '
+        'letter-spacing:0.06em; text-transform:uppercase; '
+        'margin-bottom:6px;">SUPERTREND (10, 3.0)</div>'
+        f'<div style="font-size:24px; font-weight:800; color:#ffffff; '
+        f'letter-spacing:-0.02em;">{st_val_html}</div>'
+        '</div>'
+        f'<div style="text-align:right;">'
+        f'<div style="font-size:18px; font-weight:800; color:{st_color};">'
+        f'{st_icon} {st_lbl}</div>'
+        f'<div style="font-size:11px; color:#94a3b8; margin-top:4px;">'
+        f'Jarak: {st_dist:+.2f}%</div>'
+        '</div></div></div>',
+        unsafe_allow_html=True
+    )
+
 
 # ============================================================
-# SUPPORT & RESISTANCE (DENGAN BADGE ELITE)
+# SUPPORT & RESISTANCE (DENGAN BADGE AREA PENTING)
 # ============================================================
-st.markdown(section_title("Support & Resistance Strength", "Multi-scale pivot · SHORT=3 · MEDIUM=7 · LONG=15"), unsafe_allow_html=True)
+st.markdown(section_title("Support & Resistance (Daily)", "Multi-scale pivot · SHORT=3 · MEDIUM=7 · LONG=15"), unsafe_allow_html=True)
 
 sr = get_support_resistance(kode_pilih, timeframe="daily")
 
@@ -284,14 +330,13 @@ if sr:
                 n_touch = z["n_touches"]
                 dist = z["distance_pct"]
                 
-                # --- LOGIKA BADGE ELITE ---
+                # --- LOGIKA BADGE AREA PENTING ---
                 is_elite = z.get("is_elite", False)
-                width_pct = z.get("width_pct", 0)
                 
                 if is_elite:
                     color = "#f43f5e"
                     bg_meter = "rgba(244,63,94,0.4)"
-                    badge_text = "🚨 ELITE (WR 94%)"
+                    badge_text = "🚨 AREA PENTING"
                 else:
                     color = "#f43f5e" if score >= 80 else ("#f59e0b" if score >= 50 else "#94a3b8")
                     bg_meter = "rgba(244,63,94,0.2)" if score >= 80 else "rgba(245,158,11,0.2)" if score >= 50 else "rgba(148,163,184,0.2)"
@@ -312,7 +357,6 @@ if sr:
                     f'<span>{n_touch}x Touch</span>'
                     f'<span>Jarak: <b style="color:{color};">{dist:+.2f}%</b></span>'
                     f'</div>'
-                    + (f'<div style="margin-top:6px; font-size:10px; color:#f43f5e; font-weight:700;">⚠️ Zona Lebar ({width_pct:.1f}%), Fresh (<30 hr), Bearish (Px < SMA200)</div>' if is_elite else '') +
                     f'</div>',
                     unsafe_allow_html=True
                 )
@@ -363,7 +407,7 @@ else:
 # ============================================================
 # FIBONACCI SNIPER SIGNAL (WR 95%)
 # ============================================================
-st.markdown(section_title("Fibo Sniper Signal", "Hanya 0.618, 0.786, 0.850 (Win Rate 90%+)"), unsafe_allow_html=True)
+st.markdown(section_title("Fibo Sniper Signal (Daily)", "Hanya 0.618, 0.786, 0.850 (Win Rate 90%+)"), unsafe_allow_html=True)
 
 recent_df = df.tail(150)
 swing_high = float(recent_df["High"].max())
@@ -511,7 +555,7 @@ STRATEGI_INFO = {
 if rr_multi and rr_multi.get("scenarios"):
     st.markdown(
         section_title(
-            "Risk/Reward — Skenario LONG",
+            "Risk/Reward — Skenario LONG (Daily)",
             "Buy Support · Breakout Buy · RR net setelah fee · "
             "IDX tidak bisa short"
         ),
@@ -676,7 +720,7 @@ if rr_multi and rr_multi.get("scenarios"):
         )
 
 else:
-    st.markdown(section_title("Risk/Reward — Skenario LONG"),
+    st.markdown(section_title("Risk/Reward — Skenario LONG (Daily)"),
                 unsafe_allow_html=True)
     st.markdown(
         '<div style="color:#475569; font-size:13px; padding:8px;">'
@@ -691,7 +735,7 @@ else:
 sig = hitung_sinyal_trading(kode_pilih)
 
 if sig:
-    st.markdown(section_title("Sinyal Trading"), unsafe_allow_html=True)
+    st.markdown(section_title("Sinyal Trading (Daily)"), unsafe_allow_html=True)
     sig_color = "#10b981" if sig['sinyal'] == 'BUY' else (
                 "#f43f5e" if sig['sinyal'] == 'SELL' else "#f59e0b")
     sig_icon = "↗" if sig['sinyal'] == 'BUY' else (
@@ -746,7 +790,7 @@ if sig:
 akum = compute_akumulasi(kode_pilih)
 
 if akum:
-    st.markdown(section_title("Akumulasi vs Distribusi", "20 hari terakhir"),
+    st.markdown(section_title("Akumulasi vs Distribusi (Daily)", "20 hari terakhir"),
                 unsafe_allow_html=True)
 
     score = akum.get("score", 5)

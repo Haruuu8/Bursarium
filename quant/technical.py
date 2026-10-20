@@ -67,6 +67,83 @@ def _bollinger(series, n=20, k=2):
     return upper, ma, lower, width, pct_b
 
 
+def _supertrend(df, period=10, multiplier=3.0):
+    """
+    Supertrend klasik (ATR-based).
+    Return (st_line, direction):
+      - st_line: Series harga supertrend
+      - direction: 1 = BULLISH, -1 = BEARISH
+    """
+    high = df["High"]
+    low = df["Low"]
+    close = df["Close"]
+    n = len(df)
+
+    hl2 = (high + low) / 2
+    atr = _atr(df, period)
+
+    upper_basic = hl2 + multiplier * atr
+    lower_basic = hl2 - multiplier * atr
+
+    final_upper = np.full(n, np.nan)
+    final_lower = np.full(n, np.nan)
+    st = np.full(n, np.nan)
+    direction = np.zeros(n, dtype=int)
+
+    start = None
+    for i in range(n):
+        if pd.notna(atr.iloc[i]) and pd.notna(upper_basic.iloc[i]):
+            start = i
+            final_upper[i] = upper_basic.iloc[i]
+            final_lower[i] = lower_basic.iloc[i]
+            st[i] = upper_basic.iloc[i]
+            direction[i] = -1
+            break
+
+    if start is None:
+        return pd.Series(st, index=df.index), pd.Series(direction, index=df.index)
+
+    for i in range(start + 1, n):
+        ub = upper_basic.iloc[i]
+        lb = lower_basic.iloc[i]
+        c = close.iloc[i]
+        prev_c = close.iloc[i - 1]
+
+        if pd.isna(ub) or pd.isna(lb) or pd.isna(final_upper[i - 1]) or pd.isna(final_lower[i - 1]):
+            final_upper[i] = final_upper[i - 1]
+            final_lower[i] = final_lower[i - 1]
+            st[i] = st[i - 1]
+            direction[i] = direction[i - 1]
+            continue
+
+        if ub < final_upper[i - 1] or prev_c > final_upper[i - 1]:
+            final_upper[i] = ub
+        else:
+            final_upper[i] = final_upper[i - 1]
+
+        if lb > final_lower[i - 1] or prev_c < final_lower[i - 1]:
+            final_lower[i] = lb
+        else:
+            final_lower[i] = final_lower[i - 1]
+
+        if st[i - 1] == final_upper[i - 1]:
+            if c <= final_upper[i]:
+                st[i] = final_upper[i]
+                direction[i] = -1
+            else:
+                st[i] = final_lower[i]
+                direction[i] = 1
+        else:
+            if c >= final_lower[i]:
+                st[i] = final_lower[i]
+                direction[i] = 1
+            else:
+                st[i] = final_upper[i]
+                direction[i] = -1
+
+    return pd.Series(st, index=df.index), pd.Series(direction, index=df.index)
+
+
 def _find_swing_levels(df, lookback=5, num_levels=3):
     """Cari support & resistance dari swing high/low."""
     highs = df["High"].values
@@ -74,7 +151,6 @@ def _find_swing_levels(df, lookback=5, num_levels=3):
     closes = df["Close"].values
     current_price = closes[-1]
 
-    # Swing high: high lebih tinggi dari lookback kiri dan kanan
     swing_highs = []
     swing_lows = []
     for i in range(lookback, len(df) - lookback):
@@ -85,16 +161,13 @@ def _find_swing_levels(df, lookback=5, num_levels=3):
         if lows[i] == window_low.min():
             swing_lows.append(lows[i])
 
-    # Ambil resistance = swing high > current price, terdekat dulu
     resistances = sorted(set([round(x) for x in swing_highs if x > current_price * 1.005]))
     resistances = resistances[:num_levels]
 
-    # Support = swing low < current price, terdekat dulu
     supports = sorted(set([round(x) for x in swing_lows if x < current_price * 0.995]),
                       reverse=True)
     supports = supports[:num_levels]
 
-    # Klasifikasi strength berdasarkan jarak
     def _strength(level, price):
         dist = abs(level / price - 1)
         if dist < 0.02: return "WEAK"
@@ -128,6 +201,18 @@ def hitung_indikator_teknikal(kode):
 
     atr14 = _atr(df, 14).iloc[-1]
     atr_pct = atr14 / last * 100 if last else 0
+
+    # Supertrend
+    st_line, st_dir = _supertrend(df, period=10, multiplier=3.0)
+    st_last = st_line.iloc[-1] if len(st_line) else np.nan
+    st_dir_last = int(st_dir.iloc[-1]) if len(st_dir) and pd.notna(st_dir.iloc[-1]) else 0
+    if st_dir_last == 1:
+        st_label = "BULLISH"
+    elif st_dir_last == -1:
+        st_label = "BEARISH"
+    else:
+        st_label = "NEUTRAL"
+    st_dist_pct = (last - st_last) / st_last * 100 if pd.notna(st_last) and st_last > 0 else 0
 
     # Klasifikasi RSI
     if rsi14 >= 70: rsi_label = "OVERBOUGHT"
@@ -163,6 +248,12 @@ def hitung_indikator_teknikal(kode):
         "atr_label": atr_label,
         "sma20": float(sma20) if pd.notna(sma20) else None,
         "ema20": float(ema20) if pd.notna(ema20) else None,
+        # --- Supertrend ---
+        "supertrend": float(st_last) if pd.notna(st_last) else None,
+        "supertrend_dir": st_dir_last,
+        "supertrend_label": st_label,
+        "supertrend_dist_pct": float(st_dist_pct),
+        # --- S/R swing ---
         "supports": supports,
         "resistances": resistances,
         "harga": float(last),
@@ -183,7 +274,6 @@ def hitung_risk_reward(kode, indikator=None):
     supports = indikator.get("supports", [])
     resistances = indikator.get("resistances", [])
 
-    # Stop loss: di bawah support terdekat, atau 2x ATR
     if supports:
         sl = supports[0][0] * 0.99
     else:
@@ -194,12 +284,10 @@ def hitung_risk_reward(kode, indikator=None):
         risk_per_share = 2 * atr
         sl = entry - risk_per_share
 
-    # Target: pakai resistance, atau 1:2 R:R
     targets = []
     for r, strength in resistances[:3]:
         if r > entry:
             gain_pct = (r / entry - 1) * 100
-            # Probabilitas sederhana berdasarkan jarak
             if gain_pct < 3: prob = 75
             elif gain_pct < 8: prob = 55
             else: prob = 35
@@ -210,7 +298,6 @@ def hitung_risk_reward(kode, indikator=None):
                 "strength": strength,
             })
 
-    # Kalau tidak ada resistance, pakai R:R
     if not targets:
         for rr, prob in [(1.5, 70), (2.0, 55), (3.0, 40)]:
             t = entry + risk_per_share * rr
@@ -221,17 +308,14 @@ def hitung_risk_reward(kode, indikator=None):
                 "strength": "MODERATE",
             })
 
-    # Risk/Reward ratio berdasarkan target pertama
     reward = targets[0]["harga"] - entry if targets else risk_per_share
     rr_ratio = reward / risk_per_share if risk_per_share > 0 else 0
 
-    # Verdict
     if rr_ratio >= 2: setup = "GOOD SETUP"
     elif rr_ratio >= 1.5: setup = "FAIR SETUP"
     elif rr_ratio >= 1: setup = "POOR SETUP"
     else: setup = "BAD SETUP"
 
-    # Lot disarankan (asumsi modal 10 juta, risiko 1% per trade = 100k)
     modal = 10_000_000
     risk_per_trade = modal * 0.01
     lot = int(risk_per_trade / (risk_per_share * 100)) if risk_per_share > 0 else 0
@@ -285,6 +369,11 @@ def hitung_sinyal_trading(kode):
     vwap = (typical * vol).rolling(20).sum() / vol.rolling(20).sum()
     vwap_last = vwap.iloc[-1]
     above_vwap = last > vwap_last if pd.notna(vwap_last) else False
+
+    # Supertrend
+    st_line, st_dir = _supertrend(df, period=10, multiplier=3.0)
+    st_dir_last = int(st_dir.iloc[-1]) if len(st_dir) and pd.notna(st_dir.iloc[-1]) else 0
+    st_prev = int(st_dir.iloc[-2]) if len(st_dir) > 1 and pd.notna(st_dir.iloc[-2]) else 0
 
     # --- Skor per sinyal ---
     score = 0
@@ -357,12 +446,27 @@ def hitung_sinyal_trading(kode):
         score -= 10
         factors.append(("Below VWAP", "BEARISH"))
 
-    # 6. Volume (weight 10)
+    # 6. Volume (weight 10, netral)
     max_score += 10
     if vol_ratio > 1.5:
         factors.append(("Volume tinggi", "NEUTRAL"))
     elif vol_ratio < 0.7:
         factors.append(("Volume rendah", "NEUTRAL"))
+
+    # 7. Supertrend (weight 15)
+    max_score += 15
+    if st_dir_last == 1:
+        score += 15
+        if st_prev != 1:
+            factors.append(("Supertrend flip BULLISH", "BULLISH"))
+        else:
+            factors.append(("Supertrend bullish", "BULLISH"))
+    elif st_dir_last == -1:
+        score -= 15
+        if st_prev != -1:
+            factors.append(("Supertrend flip BEARISH", "BEARISH"))
+        else:
+            factors.append(("Supertrend bearish", "BEARISH"))
 
     # --- Konversi ke sinyal ---
     normalized = score / max_score * 100 if max_score > 0 else 0
@@ -393,7 +497,6 @@ def hitung_sinyal_trading(kode):
     trend_mid = _trend(close.tail(30))
     trend_long = _trend(close.tail(100))
 
-    # Description
     desc = f"{sinyal} dengan confidence {confidence}%."
     if sinyal == "BUY":
         desc += " Sinyal bullish dari beberapa indikator."
@@ -410,5 +513,6 @@ def hitung_sinyal_trading(kode):
         "trend_short": trend_short,
         "trend_mid": trend_mid,
         "trend_long": trend_long,
+        "supertrend_dir": st_dir_last,
         "harga": float(last),
     }
