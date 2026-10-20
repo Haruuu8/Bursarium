@@ -3,24 +3,20 @@
   "nama": "PT Adaro Andalan Indonesia Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 11800.0,
-  "update": "2026-10-11 12:05",
+  "harga": 10950.0,
+  "update": "2026-10-21 00:02",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 6.76431,
-    "pb": 25596.53,
-    "ps": 18168.834,
+    "pe": 89.98814261500955,
+    "pb": 23.763628288780605,
+    "ps": 16.741262605454498,
     "roe": 0.13203755293876326,
-    "eps": 1744.45,
+    "eps": 121.68269820665903,
     "de": 0.6653085693072783,
     "margin_net": 0.18603853928931013,
     "current_ratio": 2.5928718536158404,
     "roa": 0.07494528969332805,
-    "bv": 0.46,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 460.7882208446159
   },
   "quarterly": {
     "revenue": {
@@ -33,13 +29,13 @@
       "2026-Q2": 2546596.0
     },
     "eps": {
-      "2024-Q4": 171260.0,
-      "2025-Q1": 25170.0,
-      "2025-Q2": 55050.0,
-      "2025-Q3": 75420.0,
-      "2025-Q4": 97620.0,
-      "2026-Q1": 18370.0,
-      "2026-Q2": 60840.0
+      "2024-Q4": 0.17126,
+      "2025-Q1": 0.02517,
+      "2025-Q2": 0.05505,
+      "2025-Q3": 0.07542,
+      "2025-Q4": 0.09762,
+      "2026-Q1": 0.01837,
+      "2026-Q2": 0.06084
     },
     "net_income": {
       "2024-Q4": 1210798.0,
@@ -53,8 +49,8 @@
   },
   "riwayat": {
     "eps": {
-      "2024": 171260.0,
-      "2025": 97620.0
+      "2024": 0.17126,
+      "2025": 0.09762
     },
     "revenue_per_share": {
       "2024": 5319582.0,
@@ -62,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 91885322371072,
-    "enterprise_value": 91885448200192,
+    "market_cap": 85266467389440,
+    "enterprise_value": 85266593218560,
     "shares_outstanding": 7786891760,
     "free_float_pct": 37.19099999407209
   },
   "akumulasi": {
-    "score": 4.4,
+    "score": 6.4,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0418,
-    "vol_trend": 0.621,
-    "price_chg_20d": -3.48
+    "cmf": 0.0927,
+    "vol_trend": 0.915,
+    "price_chg_20d": -1.79
   },
   "neraca": {
     "aset": 6321478.0,
@@ -101,8 +97,8 @@
     "beban_pajak": -140232.0,
     "laba_bersih": 473765.0,
     "laba_induk": 473765.0,
-    "eps_basic": 60840.0,
-    "eps_diluted": 60840.0
+    "eps_basic": 0.06084,
+    "eps_diluted": 0.06084
   },
   "arus_kas": {
     "arus_kas_operasi": null,
@@ -110,6 +106,5 @@
     "arus_kas_pendanaan": null,
     "capex": 124999.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

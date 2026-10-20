@@ -1,0 +1,114 @@
+{
+  "kode": "PAMG",
+  "nama": "PT Bima Sakti Pertiwi Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Diversified",
+  "harga": 44.0,
+  "update": "2026-10-21 00:13",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.32025825264829194,
+    "ps": 3.014694263031257,
+    "roe": -0.0009001304246374534,
+    "eps": -494672.51328,
+    "de": 0.377046895869414,
+    "margin_net": -0.03389287245146522,
+    "current_ratio": 0.31753227694880726,
+    "roa": -0.0006536672261035424,
+    "bv": 137.38912154848
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q2": 26094228004.0,
+      "2024-Q4": 52440667650.0,
+      "2025-Q1": 12714064301.0,
+      "2025-Q2": 25575542305.0,
+      "2025-Q3": 37770343359.0,
+      "2025-Q4": 49844328064.0,
+      "2026-Q1": 11402482972.0
+    },
+    "eps": {
+      "2024-Q2": 110000.0,
+      "2024-Q4": 1460000.0,
+      "2025-Q1": 340000.0,
+      "2025-Q2": 460000.0,
+      "2025-Q3": 310000.0,
+      "2025-Q4": 310000.0,
+      "2026-Q1": -12000.0
+    },
+    "net_income": {
+      "2024-Q2": 341462465.0,
+      "2024-Q4": 4548567990.0,
+      "2025-Q1": 1070962077.0,
+      "2025-Q2": 1435555128.0,
+      "2025-Q3": 965132554.0,
+      "2025-Q4": 977919001.0,
+      "2026-Q1": -386462901.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": -1030000.0,
+      "2023": 140000.0,
+      "2024": 1460000.0,
+      "2025": 310000.0
+    },
+    "revenue_per_share": {
+      "2022": 54825067000.0,
+      "2023": 51476967511.0,
+      "2024": 52440667650.0,
+      "2025": 49844328064.0
+    }
+  },
+  "statistik": {
+    "market_cap": 137500000256,
+    "enterprise_value": 259114352640,
+    "shares_outstanding": 3125000000,
+    "free_float_pct": 28.563
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1752,
+    "vol_trend": 0.514,
+    "price_chg_20d": -18.52
+  },
+  "neraca": {
+    "aset": 591222697983.0,
+    "aset_lancar": 5043467906.0,
+    "kas": 382894680.0,
+    "piutang_usaha": 1175467065.0,
+    "persediaan": 826446252.0,
+    "aset_tetap": 3052335001.0,
+    "liabilitas": 161881693144.0,
+    "liabilitas_jangka_pendek": 15883323593.0,
+    "utang_usaha": 1175467065.0,
+    "utang_bank": 6525000000.0,
+    "ekuitas": 429341004839.0,
+    "ekuitas_induk": 429341004839.0,
+    "modal_saham": null,
+    "saldo_laba": 1050000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 11402482972.0,
+    "beban_pokok": 6478683651.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -378375347.0,
+    "beban_pajak": -8087554.0,
+    "laba_bersih": -386462901.0,
+    "laba_induk": -386462901.0,
+    "eps_basic": -0.012,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 23500000.0,
+    "dividen_dibayar": null
+  }
+}

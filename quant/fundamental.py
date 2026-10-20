@@ -6,7 +6,7 @@ Fitur:
 - Report list asc+desc (cover ~876 saham)
 - Cache XLSX lokal (~10x lebih cepat di run ke-2)
 - Session per-thread (thread-safe untuk batch parallel)
-- Normalisasi EPS (handle skala juta rupiah)
+- Perhitungan rasio (PE, PB, EPS, BV) murni dari XLSX IDX
 - Batch runner dengan workers
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
@@ -288,12 +288,7 @@ def parse_xlsx(content_bytes):
     if "laba_induk" in hasil and "laba_bersih" not in hasil:
         hasil["laba_bersih"] = hasil["laba_induk"]
 
-    # Normalisasi EPS: kalau < 1, kemungkinan dalam satuan juta rupiah
-    for eps_field in ["eps_basic", "eps_diluted"]:
-        v = hasil.get(eps_field)
-        if v is not None and 0 < abs(v) < 1:
-            hasil[eps_field] = v * 1_000_000
-
+    # Catatan: Normalisasi EPS dihapus karena kita hitung manual di compute_ratios
     return hasil
 
 
@@ -314,10 +309,38 @@ def fetch_one_period(kode, year, periode, verbose=False):
     return parse_xlsx(content)
 
 
-def compute_ratios(d):
+def compute_ratios(d, harga=None, shares=None, periode=None):
     def sd(a, b): return a / b if a and b and b != 0 else None
+    
     laba = d.get("laba_induk") or d.get("laba_bersih")
     ek = d.get("ekuitas_induk") or d.get("ekuitas")
+    pendapatan = d.get("pendapatan")
+    
+    # Deteksi skala Juta Rupiah (IDX menyajikan neraca/laba rugi dalam jutaan)
+    def nz(v): 
+        if v is None: return None
+        return v * 1_000_000 if abs(v) < 1_000_000_000 else v
+        
+    laba_rp = nz(laba)
+    ek_rp = nz(ek)
+    pend_rp = nz(pendapatan)
+    
+    # Annualization factor
+    p_key = str(periode).split("-")[-1] if periode else "audit"
+    factor = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
+    
+    eps_calc, pe_calc, pb_calc, ps_calc, bv_calc = None, None, None, None, None
+    
+    if shares and shares > 0 and harga:
+        if ek_rp:
+            bv_calc = ek_rp / shares
+            if bv_calc > 0: pb_calc = harga / bv_calc
+        if laba_rp:
+            eps_calc = (laba_rp * factor) / shares
+            if eps_calc > 0: pe_calc = harga / eps_calc
+        if pend_rp:
+            ps_calc = (harga * shares) / (pend_rp * factor)
+    
     return {
         "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")),
         "der": sd(d.get("liabilitas"), d.get("ekuitas")),
@@ -326,6 +349,11 @@ def compute_ratios(d):
         "margin_laba_bersih": sd(laba, d.get("pendapatan")),
         "margin_laba_kotor": sd(d.get("laba_kotor"), d.get("pendapatan")),
         "margin_laba_operasi": sd(d.get("laba_operasi"), d.get("pendapatan")),
+        "eps_calc": eps_calc,
+        "pe_calc": pe_calc,
+        "pb_calc": pb_calc,
+        "ps_calc": ps_calc,
+        "bv_calc": bv_calc
     }
 
 
@@ -345,9 +373,6 @@ def fetch_yfinance(kode):
         "shares_outstanding": info.get("sharesOutstanding"),
         "free_float_pct": (info.get("floatShares") / info.get("sharesOutstanding") * 100
                             if info.get("floatShares") and info.get("sharesOutstanding") else None),
-        "pe": info.get("trailingPE"),
-        "pb": info.get("priceToBook"),
-        "ps": info.get("priceToSalesTrailing12Months"),
         "sektor": info.get("sector"),
         "industri": info.get("industry"),
         "nama": info.get("longName") or info.get("shortName"),
@@ -427,7 +452,8 @@ def build_one(kode, verbose=False):
         else: d = fetch_one_period(kode, y, p, verbose=False)
         if d:
             if d.get("pendapatan") is not None: q_rev[lbl] = d["pendapatan"]
-            if d.get("eps_basic") is not None: q_eps[lbl] = d["eps_basic"]
+            # PERBAIKAN: Kalikan 1 juta agar tampil dalam Rupiah utuh
+            if d.get("eps_basic") is not None: q_eps[lbl] = d["eps_basic"] * 1_000_000 
             if d.get("laba_induk") is not None: q_ni[lbl] = d["laba_induk"]
 
     r_eps, r_rev = {}, {}
@@ -435,33 +461,50 @@ def build_one(kode, verbose=False):
         if f"{y}-audit" == snap_periode: d = snap
         else: d = fetch_one_period(kode, y, "audit", verbose=False)
         if d:
-            if d.get("eps_basic") is not None: r_eps[str(y)] = d["eps_basic"]
+            # PERBAIKAN: Kalikan 1 juta agar tampil dalam Rupiah utuh
+            if d.get("eps_basic") is not None: r_eps[str(y)] = d["eps_basic"] * 1_000_000
             if d.get("pendapatan") is not None: r_rev[str(y)] = d["pendapatan"]
 
-    ratios = compute_ratios(snap)
+    # 1. Ambil data yfinance (HANYA untuk harga, shares, market cap, nama)
     yfd = fetch_yfinance(kode)
+    harga = yfd.get("harga")
+    shares = yfd.get("shares_outstanding")
+    
+    # Fallback shares jika yfinance kosong
+    if not shares and yfd.get("market_cap") and harga:
+        shares = yfd.get("market_cap") / harga
+
+    # 2. Hitung rasio manual dari XLSX IDX
+    ratios = compute_ratios(snap, harga=harga, shares=shares, periode=snap_periode)
     akum = compute_akumulasi(kode)
 
+    # 3. Susun JSON (Gunakan hasil hitungan sendiri)
     data = {
         "kode": kode,
         "nama": yfd.get("nama"),
         "sektor": yfd.get("sektor"),
         "industri": yfd.get("industri"),
-        "harga": yfd.get("harga"),
+        "harga": harga,
         "update": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "periode_terbaru": snap_periode,
         "rasio_kunci": {
-            "pe": yfd.get("pe"), "pb": yfd.get("pb"), "ps": yfd.get("ps"),
-            "roe": ratios.get("roe"), "eps": snap.get("eps_basic"),
-            "de": ratios.get("der"), "margin_net": ratios.get("margin_laba_bersih"),
-            "current_ratio": ratios.get("current_ratio"), "roa": ratios.get("roa"),
+            "pe": ratios.get("pe_calc"), 
+            "pb": ratios.get("pb_calc"), 
+            "ps": ratios.get("ps_calc"),
+            "roe": ratios.get("roe"), 
+            "eps": ratios.get("eps_calc"), 
+            "de": ratios.get("der"), 
+            "margin_net": ratios.get("margin_laba_bersih"),
+            "current_ratio": ratios.get("current_ratio"), 
+            "roa": ratios.get("roa"),
+            "bv": ratios.get("bv_calc")
         },
         "quarterly": {"revenue": q_rev, "eps": q_eps, "net_income": q_ni},
         "riwayat": {"eps": r_eps, "revenue_per_share": r_rev},
         "statistik": {
             "market_cap": yfd.get("market_cap"),
             "enterprise_value": yfd.get("enterprise_value"),
-            "shares_outstanding": yfd.get("shares_outstanding"),
+            "shares_outstanding": shares,
             "free_float_pct": yfd.get("free_float_pct"),
         },
         "akumulasi": akum,

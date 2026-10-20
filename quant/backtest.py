@@ -1,287 +1,309 @@
-import os
-os.environ["OPENBLAS_NUM_THREADS"] = "1"
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
+#!/usr/bin/env python3
+"""
+Pencarian kombinasi fitur untuk Buy on Support & Buy on Breakout
+dengan validasi anti-overfitting (train/val/test + permutation test).
 
-import sys
-import logging
-import itertools
-import json
-import pandas as pd
+Data : folder berisi CSV per ticker, kolom: Date,Open,High,Low,Close,Volume
+Pakai: python combo_search.py --data ./data --mode both --depth 4
+"""
+import argparse, glob, heapq, os, time
 import numpy as np
-import warnings
-from multiprocessing import Pool
+import pandas as pd
 
-logging.getLogger('streamlit').setLevel(logging.ERROR)
-warnings.filterwarnings("ignore")
+# ----------------------------------------------------------------------------
+# 1. INDIKATOR & FITUR BINER (semua hanya memakai data s/d candle sinyal)
+# ----------------------------------------------------------------------------
+def load_csv(path):
+    df = pd.read_csv(path)
+    df.columns = [c.strip().capitalize() for c in df.columns]
+    df["Date"] = pd.to_datetime(df["Date"])
+    df = df.sort_values("Date").dropna(subset=["Open", "High", "Low", "Close"])
+    return df.reset_index(drop=True)
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from quant.parquet_loader import load_parquet_safe
+def rsi(c, n=14):
+    d = c.diff()
+    up = d.clip(lower=0).ewm(alpha=1 / n, adjust=False).mean()
+    dn = (-d.clip(upper=0)).ewm(alpha=1 / n, adjust=False).mean()
+    return 100 - 100 / (1 + up / dn.replace(0, np.nan))
 
-GLOBAL_DF = None
+def atr(df, n=14):
+    pc = df.Close.shift()
+    tr = pd.concat([df.High - df.Low, (df.High - pc).abs(), (df.Low - pc).abs()], axis=1).max(axis=1)
+    return tr.ewm(alpha=1 / n, adjust=False).mean()
 
-def init_worker():
-    global GLOBAL_DF
-    df = load_parquet_safe()
-    if df is not None:
-        df = df.dropna(subset=["Date"]).sort_values(["Kode", "Date"]).reset_index(drop=True)
-        df["Kode"] = df["Kode"].astype(str).str.strip().str.upper()
-    GLOBAL_DF = df
+def adx(df, n=14):
+    up, dn = df.High.diff(), -df.Low.diff()
+    pdm = np.where((up > dn) & (up > 0), up, 0.0)
+    ndm = np.where((dn > up) & (dn > 0), dn, 0.0)
+    a = atr(df, n)
+    pdi = 100 * pd.Series(pdm, index=df.index).ewm(alpha=1 / n, adjust=False).mean() / a
+    ndi = 100 * pd.Series(ndm, index=df.index).ewm(alpha=1 / n, adjust=False).mean() / a
+    dx = 100 * (pdi - ndi).abs() / (pdi + ndi).replace(0, np.nan)
+    return dx.ewm(alpha=1 / n, adjust=False).mean()
 
-def calc_rsi(close, period=14):
-    delta = close.diff()
-    gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
-    loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
+def add_indicators(df):
+    c, v = df.Close, df.Volume.replace(0, np.nan)
+    df["ATR"] = atr(df)
+    df["RSI"] = rsi(c)
+    df["SMA20"], df["SMA50"], df["SMA200"] = c.rolling(20).mean(), c.rolling(50).mean(), c.rolling(200).mean()
+    df["EMA20"] = c.ewm(span=20, adjust=False).mean()
+    macd = c.ewm(span=12, adjust=False).mean() - c.ewm(span=26, adjust=False).mean()
+    df["MACDH"] = macd - macd.ewm(span=9, adjust=False).mean()
+    bbw = (4 * c.rolling(20).std()) / df.SMA20
+    df["BBW"] = bbw
+    df["BBW_Q20"] = bbw.rolling(120).quantile(0.2)
+    atrp = df.ATR / c
+    df["ATRP"] = atrp
+    df["ATRP_Q30"], df["ATRP_Q70"] = atrp.rolling(120).quantile(0.3), atrp.rolling(120).quantile(0.7)
+    df["VOLR"] = v / v.rolling(20).mean()
+    df["ADX"] = adx(df)
+    rng = (df.High - df.Low).replace(0, np.nan)
+    df["CLOC"] = (c - df.Low) / rng                     # posisi close dalam candle
+    df["LWICK"] = (np.minimum(df.Open, c) - df.Low) / rng
+    df["BODY"] = (c - df.Open).abs() / rng
+    df["RANGE_ATR"] = rng / df.ATR
+    df["ROC5"] = c.pct_change(5)
+    df["ROC20"] = c.pct_change(20)
+    hi252, lo252 = df.High.rolling(252, min_periods=60).max(), df.Low.rolling(252, min_periods=60).min()
+    df["POS52"] = (c - lo252) / (hi252 - lo252)
+    return df
 
-def process_chunk(kode):
-    global GLOBAL_DF
-    if GLOBAL_DF is None: return []
-        
-    df = GLOBAL_DF[GLOBAL_DF["Kode"] == kode].copy()
-    if len(df) < 250: return [] 
+def binary_features(df, i):
+    """Dict fitur biner pada candle sinyal i (vektor untuk banyak i sekaligus)."""
+    g = lambda col: df[col].values[i]
+    c = g("Close")
+    f = {}
+    for t in (30, 40, 45, 50):  f[f"RSI<{t}"] = g("RSI") < t
+    for t in (50, 55, 60, 70):  f[f"RSI>{t}"] = g("RSI") > t
+    for t in (1.2, 1.5, 2.0):   f[f"Vol>{t}x"] = g("VOLR") > t
+    f["Vol<0.8x"] = g("VOLR") < 0.8
+    for t in (20, 25, 30):      f[f"ADX>{t}"] = g("ADX") > t
+    f["ADX<20"] = g("ADX") < 20
+    f["C>SMA20"], f["C<SMA20"] = c > g("SMA20"), c < g("SMA20")
+    f["C>SMA50"], f["C<SMA50"] = c > g("SMA50"), c < g("SMA50")
+    f["C>SMA200"], f["C<SMA200"] = c > g("SMA200"), c < g("SMA200")
+    f["C>EMA20"] = c > g("EMA20")
+    f["SMA50>SMA200"] = g("SMA50") > g("SMA200")
+    f["MACDH>0"] = g("MACDH") > 0
+    prev = df["MACDH"].shift(1).values[i]
+    f["MACDH_naik"] = g("MACDH") > prev
+    f["BB_Squeeze"] = g("BBW") < g("BBW_Q20")
+    f["ATR_Low"], f["ATR_High"] = g("ATRP") < g("ATRP_Q30"), g("ATRP") > g("ATRP_Q70")
+    f["Bullish"] = c > g("Open")
+    f["CloseTop30%"] = g("CLOC") > 0.7
+    f["LowerWick>40%"] = g("LWICK") > 0.4
+    f["Body>60%"] = g("BODY") > 0.6
+    f["Range>1.2ATR"] = g("RANGE_ATR") > 1.2
+    f["Range<0.8ATR"] = g("RANGE_ATR") < 0.8
+    for t in (-0.05, -0.03): f[f"ROC5<{t:.0%}"] = g("ROC5") < t
+    for t in (0.03, 0.06):   f[f"ROC5>{t:.0%}"] = g("ROC5") > t
+    f["ROC20>0"], f["ROC20<0"] = g("ROC20") > 0, g("ROC20") < 0
+    f["Pos52>0.8"], f["Pos52<0.3"] = g("POS52") > 0.8, g("POS52") < 0.3
+    f["Dekat_SMA50(<3%)"] = np.abs(c / g("SMA50") - 1) < 0.03
+    return {k: np.asarray(v, dtype=bool) for k, v in f.items()}
 
-    df = df.reset_index(drop=True)
-    closes = df['Close'].values
-    highs = df['High'].values
-    lows = df['Low'].values
-    opens = df['Open'].values
-    volumes = df['Volume'].values
-    n = len(closes)
-    
-    # Precompute
-    rsi14 = calc_rsi(df['Close'], 14).values
-    ema20 = df['Close'].ewm(span=20, adjust=False).mean().values
-    sma50 = df['Close'].rolling(50).mean().values
-    macd_line = df['Close'].ewm(span=12, adjust=False).mean() - df['Close'].ewm(span=26, adjust=False).mean()
-    macd_signal = macd_line.ewm(span=9, adjust=False).mean()
-    macd_hist = (macd_line - macd_signal).values
-    vol_ma = df['Volume'].rolling(20).mean().values
-    
-    tr = pd.concat([df['High']-df['Low'], (df['High']-df['Close'].shift()).abs(), (df['Low']-df['Close'].shift()).abs()], axis=1).max(axis=1)
-    atr = tr.rolling(14).mean().values
-    atr_ma = pd.Series(atr).rolling(20).mean().values
-    
-    sma20 = df['Close'].rolling(20).mean().values
-    std20 = df['Close'].rolling(20).std().values
-    bb_width = ((sma20 + 2*std20) - (sma20 - 2*std20)) / sma20
-    bb_width_ma = pd.Series(bb_width).rolling(20).mean().values
-    
-    candle_range = np.maximum(highs - lows, 1e-9)
-    candle_body = np.abs(closes - opens)
-    
+# ----------------------------------------------------------------------------
+# 2. DETEKSI EVENT (tanpa look-ahead) + SIMULASI TRADE
+# ----------------------------------------------------------------------------
+def simulate(df, sig_idx, sl_price, sl_atr, rr, max_hold, cost):
+    """Entry open candle berikutnya. SL & TP dicek per candle, SL dulu bila bersamaan.
+    Return R-multiple bersih (sudah dikurangi fee) atau nan bila tidak valid."""
+    O, H, L, C, A = (df[k].values for k in ("Open", "High", "Low", "Close", "ATR"))
+    out = np.full(len(sig_idx), np.nan)
+    for n, (i, lvl) in enumerate(zip(sig_idx, sl_price)):
+        if i + 2 >= len(df) or np.isnan(A[i]):
+            continue
+        entry = O[i + 1]
+        sl = min(lvl, entry) - sl_atr * A[i]
+        risk = entry - sl
+        if risk <= 0 or risk / entry < 0.003:
+            continue
+        tp = entry + rr * risk
+        res = None
+        for k in range(i + 1, min(i + 1 + max_hold, len(df))):
+            if O[k] <= sl: res = (O[k] - entry) / risk; break        # gap down
+            if L[k] <= sl: res = -1.0; break
+            if H[k] >= tp: res = rr; break
+        if res is None:
+            res = (C[min(i + max_hold, len(df) - 1)] - entry) / risk  # timeout
+        out[n] = res - cost * entry / risk
+    return out
+
+def support_events(df, pivot_w=5, tol_atr=0.3, min_age=10, max_age=120):
+    """Support = swing low yang baru 'diketahui' setelah pivot_w candle (tanpa look-ahead).
+    Event = candle pertama yang menyentuh zona lalu close di atas level."""
+    L, C, A = df.Low.values, df.Close.values, df.ATR.values
+    n = len(df)
+    pivots = []
+    for p in range(pivot_w, n - pivot_w):
+        if L[p] == L[p - pivot_w: p + pivot_w + 1].min():
+            pivots.append((p + pivot_w, L[p]))                      # (baru diketahui di, level)
+    idx, lvl = [], []
+    for known, level in pivots:
+        for t in range(known + min_age, min(known + max_age, n - 2)):
+            if np.isnan(A[t]): continue
+            if L[t] < level - 1.0 * A[t]: break                     # support sudah jebol
+            if L[t] <= level + tol_atr * A[t] and C[t] > level:
+                idx.append(t); lvl.append(min(level, L[t])); break
+    return np.array(idx, dtype=int), np.array(lvl)
+
+def breakout_events(df, lookback):
+    """Breakout = close pertama di atas high tertinggi N candle sebelumnya."""
+    hh = df.High.shift(1).rolling(lookback).max().values
+    C = df.Close.values
+    prev_c = np.r_[np.nan, C[:-1]]
+    prev_hh = np.r_[np.nan, hh[:-1]]
+    ok = (C > hh) & ~(prev_c > prev_hh)
+    idx = np.where(ok & ~np.isnan(hh))[0]
+    return idx, hh[idx]
+
+def build_events(data_dir, mode, scenarios, max_hold, cost):
+    frames = {"support": [], "breakout": []}
+    files = sorted(glob.glob(os.path.join(data_dir, "*.csv")))
+    for fp in files:
+        tk = os.path.splitext(os.path.basename(fp))[0]
+        try:
+            df = add_indicators(load_csv(fp))
+        except Exception as e:
+            print(f"skip {tk}: {e}"); continue
+        if len(df) < 300: continue
+        jobs = []
+        if mode in ("support", "both"):
+            jobs.append(("support", "", *support_events(df)))
+        if mode in ("breakout", "both"):
+            for lb in (20, 50):
+                jobs.append(("breakout", f"LB{lb}", *breakout_events(df, lb)))
+        for kind, tag, idx, lvl in jobs:
+            if len(idx) == 0: continue
+            feats = binary_features(df, idx)
+            for (sl_atr, rr) in scenarios:
+                R = simulate(df, idx, lvl, sl_atr, rr, max_hold, cost)
+                ok = ~np.isnan(R)
+                part = pd.DataFrame({"ticker": tk, "date": df.Date.values[idx][ok],
+                                     "scenario": f"{tag}|SL{sl_atr}ATR|RR{rr}", "R": R[ok]})
+                for k, v in feats.items(): part[k] = v[ok]
+                frames[kind].append(part)
+    out = {}
+    for k, v in frames.items():
+        if v: out[k] = pd.concat(v, ignore_index=True)
+    return out
+
+# ----------------------------------------------------------------------------
+# 3. PENCARIAN KOMBINASI (DFS + pruning) & STATISTIK
+# ----------------------------------------------------------------------------
+def tstat(r):
+    n = len(r)
+    sd = r.std(ddof=1)
+    return 0.0 if sd == 0 else r.mean() / (sd / np.sqrt(n))
+
+def search(Ft, R, names, depth, min_n, top_k):
+    """Ft: matriks fitur (F, N) bool. Mengembalikan top_k kombinasi menurut t-stat (mean>0)."""
+    heap, counter = [], [0]
+    def rec(idx, start, combo):
+        for j in range(start, Ft.shape[0]):
+            sub = idx[Ft[j][idx]]
+            if len(sub) < min_n or len(sub) == len(idx):
+                continue
+            counter[0] += 1
+            r = R[sub]
+            if r.mean() > 0:
+                t = tstat(r)
+                item = (t, len(sub), r.mean(), tuple(combo + [j]))
+                if len(heap) < top_k: heapq.heappush(heap, item)
+                elif t > heap[0][0]: heapq.heapreplace(heap, item)
+            if len(combo) + 1 < depth:
+                rec(sub, j + 1, combo + [j])
+    rec(np.arange(Ft.shape[1]), 0, [])
+    return sorted(heap, reverse=True), counter[0]
+
+def stats(R, mask):
+    r = R[mask]
+    if len(r) < 2: return dict(N=len(r), WR=np.nan, ExpR=np.nan, PF=np.nan, t=np.nan)
+    w, l = r[r > 0].sum(), -r[r < 0].sum()
+    return dict(N=len(r), WR=100 * (r > 0).mean(), ExpR=r.mean(), PF=(w / l if l > 0 else np.inf), t=tstat(r))
+
+def mask_of(F, combo):
+    m = np.ones(F.shape[1], dtype=bool)
+    for j in combo: m &= F[j]
+    return m
+
+# ----------------------------------------------------------------------------
+# 4. PIPELINE
+# ----------------------------------------------------------------------------
+def run_kind(kind, ev, args):
+    print("\n" + "=" * 90 + f"\n  {kind.upper()}  | total event: {len(ev)}\n" + "=" * 90)
+    names = [c for c in ev.columns if c not in ("ticker", "date", "scenario", "R")]
     results = []
-    
-    for start in range(0, n - 160, 20):
-        setup_end = start + 100
-        test_start = setup_end
-        test_end = min(test_start + 50, n)
-        
-        sh_arr = highs[start:setup_end]
-        sl_arr = lows[start:setup_end]
-        
-        hi_idx = int(np.argmax(sh_arr))
-        lo_idx = int(np.argmin(sl_arr))
-        sh = float(sh_arr[hi_idx])
-        sl = float(sl_arr[lo_idx])
-        rg = sh - sl
-        
-        if sl <= 0 or rg <= 0 or rg / sl < 0.10: continue
-        
-        is_up = lo_idx < hi_idx
-        
-        if is_up:
-            fib_levels = {
-                "0.618": sh - rg * 0.618,
-                "0.786": sh - rg * 0.786,
-                "0.850": sh - rg * 0.850,
-            }
-        else:
-            fib_levels = {
-                "0.618": sl + rg * 0.618,
-                "0.786": sl + rg * 0.786,
-                "0.850": sl + rg * 0.850,
-            }
-        
-        tol = sh * 0.005
-        
-        for level_name, level_price in fib_levels.items():
-            touch_idx = -1
-            for i in range(test_start, test_end):
-                if lows[i] <= level_price + tol and highs[i] >= level_price - tol:
-                    touch_idx = i
-                    break
-            
-            if touch_idx < 0: continue
-            
-            out_end = min(touch_idx + 15, test_end)
-            if out_end <= touch_idx + 2: continue
-            
-            broke = False
-            bounced = False
-            
-            if is_up:
-                for j in range(touch_idx + 1, out_end):
-                    if closes[j] < level_price - tol * 3:
-                        broke = True; break
-                    if closes[j] > level_price + tol * 4:
-                        bounced = True; break
-            else:
-                for j in range(touch_idx + 1, out_end):
-                    if closes[j] > level_price + tol * 3:
-                        broke = True; break
-                    if closes[j] < level_price - tol * 4:
-                        bounced = True; break
-            
-            if not (broke or bounced): continue
-            
-            t = touch_idx
-            rsi_val = rsi14[t] if not np.isnan(rsi14[t]) else 50
-            vol_r = volumes[t] / vol_ma[t] if (vol_ma[t] > 0 and not np.isnan(vol_ma[t])) else 1
-            
-            # Bitmask filters
-            mask = 0
-            if rsi_val < 30: mask |= 1
-            if rsi_val < 35: mask |= 2
-            if rsi_val < 45: mask |= 4
-            if vol_r > 1.2: mask |= 8
-            if vol_r > 1.5: mask |= 16
-            if not np.isnan(ema20[t]) and closes[t] > ema20[t]: mask |= 32
-            if not np.isnan(sma50[t]) and closes[t] > sma50[t]: mask |= 64
-            if not np.isnan(macd_hist[t]) and macd_hist[t] > 0: mask |= 128
-            if closes[t] > opens[t] and candle_body[t]/candle_range[t] > 0.5: mask |= 256
-            if not np.isnan(atr[t]) and not np.isnan(atr_ma[t]) and atr[t] < atr_ma[t]: mask |= 512
-            if not np.isnan(bb_width[t]) and not np.isnan(bb_width_ma[t]) and bb_width[t] < bb_width_ma[t]: mask |= 1024
-            
-            results.append((level_name, "UP" if is_up else "DOWN", mask, int(bounced)))
-    
-    return results
+    for scen, g in ev.groupby("scenario"):
+        g = g.sort_values("date").reset_index(drop=True)
+        n = len(g)
+        c1, c2 = int(n * args.train), int(n * (args.train + args.val))
+        tr, va, te = g.iloc[:c1], g.iloc[c1:c2], g.iloc[c2:]
+        if len(tr) < 3 * args.min_n:
+            print(f"[{scen}] data terlalu sedikit, dilewati"); continue
+        F = lambda d: d[names].values.T.astype(bool)
+        Ftr, Fva, Fte = F(tr), F(va), F(te)
+        Rtr, Rva, Rte = tr.R.values, va.R.values, te.R.values
 
-FILTER_NAMES = ["RSI<30", "RSI<35", "RSI<45", "Vol>1.2x", "Vol>1.5x", "EMA20", "SMA50", "MACD", "StrongCandle", "ATR_Low", "BB_Squeeze"]
-FILTER_BITS = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+        t0 = time.time()
+        top, n_tested = search(Ftr, Rtr, names, args.depth, args.min_n, args.top_k)
+        # permutation test: acak R (putus hubungan fitur-hasil), cari max t-stat lagi
+        null_max = []
+        rng = np.random.default_rng(42)
+        for _ in range(args.perms):
+            h, _ = search(Ftr, rng.permutation(Rtr), names, args.depth, args.min_n, 1)
+            null_max.append(h[0][0] if h else 0.0)
+        null_p95 = np.percentile(null_max, 95) if null_max else 0.0
+        real_max = top[0][0] if top else 0.0
+        print(f"\n[{scen}] train={len(tr)} val={len(va)} test={len(te)} | kombinasi diuji={n_tested:,} "
+              f"({time.time()-t0:.0f}s)")
+        print(f"  t-stat tertinggi di TRAIN (nyata) : {real_max:.2f}")
+        print(f"  t-stat tertinggi pada DATA ACAK   : p95={null_p95:.2f}  <- jika nyata <= ini, itu NOISE")
 
-def mask_matches(mask, required_filters):
-    for f in required_filters:
-        idx = FILTER_NAMES.index(f)
-        bit = FILTER_BITS[idx]
-        if not (mask & bit):
-            return False
-    return True
+        for t, nn, mean, combo in top:
+            if t <= null_p95: continue                                   # lolos permutation test
+            mv = stats(Rva, mask_of(Fva, combo))
+            if mv["N"] < args.min_n_val or not (mv["ExpR"] > 0) or mv["t"] < 1.65: continue
+            mt = stats(Rte, mask_of(Fte, combo))                         # test: dilihat sekali
+            results.append(dict(scenario=scen, combo=" & ".join(names[j] for j in combo),
+                                tr_N=nn, tr_ExpR=mean, tr_t=t,
+                                va_N=mv["N"], va_WR=mv["WR"], va_ExpR=mv["ExpR"],
+                                te_N=mt["N"], te_WR=mt["WR"], te_ExpR=mt["ExpR"], te_PF=mt["PF"]))
+    if not results:
+        print("\n>> TIDAK ADA kombinasi yang lolos semua uji. Itu hasil yang jujur: "
+              "kemungkinan tidak ada edge yang kuat pada data/aturan ini.")
+        return None
+    res = pd.DataFrame(results).sort_values("va_ExpR", ascending=False)
+    pd.set_option("display.width", 250, "display.max_colwidth", 70)
+    print(f"\n>> {len(res)} kombinasi lolos TRAIN + permutation + VALIDATION. Kolom te_* = TEST (data belum pernah dilihat):")
+    print(res.head(25).round(2).to_string(index=False))
+    good = res[(res.te_N >= args.min_n_val) & (res.te_ExpR > 0)]
+    print(f"\n>> Yang tetap profit di TEST: {len(good)} dari {len(res)}")
+    return res
 
 def main():
-    print("=== 🌀 COMPREHENSIVE FIBONACCI + FILTER SEARCH ===\n")
-    
-    df_all = load_parquet_safe()
-    if df_all is None or df_all.empty:
-        print("❌ Gagal memuat data.")
-        sys.exit()
-        
-    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
-    tickers = df_all["Kode"].unique()
-    del df_all 
-    
-    print(f"Menguji {len(tickers)} saham dengan Fibonacci Deep Zone (0.618, 0.786, 0.850)")
-    print("Dan 11 filter tambahan (RSI, Volume, Trend, dll)\n")
-    
-    all_results = []
-    with Pool(processes=10, initializer=init_worker) as pool:
-        for i, res in enumerate(pool.imap_unordered(process_chunk, tickers, chunksize=2), 1):
-            all_results.extend(res)
-            if i % 20 == 0 or i == len(tickers):
-                print(f"\rProgress: {i}/{len(tickers)} saham selesai.", flush=True)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data", required=True, help="folder CSV per ticker")
+    ap.add_argument("--mode", default="both", choices=["support", "breakout", "both"])
+    ap.add_argument("--depth", type=int, default=4, help="maks fitur per kombinasi")
+    ap.add_argument("--min_n", type=int, default=100, help="min sample di train")
+    ap.add_argument("--min_n_val", type=int, default=30, help="min sample di val/test")
+    ap.add_argument("--top_k", type=int, default=300)
+    ap.add_argument("--perms", type=int, default=20, help="jumlah shuffle permutation test")
+    ap.add_argument("--train", type=float, default=0.5)
+    ap.add_argument("--val", type=float, default=0.25)
+    ap.add_argument("--max_hold", type=int, default=20)
+    ap.add_argument("--cost", type=float, default=0.003, help="fee+slippage round trip (0.003 = 0.3 persen)")
+    ap.add_argument("--out", default="hasil_kombinasi")
+    args = ap.parse_args()
 
-    print(f"\n\n✅ Selesai! Total touch events: {len(all_results):,}")
-    
-    if not all_results:
-        print("❌ Tidak ada touch.")
-        return
-    
-    df = pd.DataFrame(all_results, columns=["Fib", "Direction", "Mask", "Win"])
-    
-    # Test combinations
-    combo_data = []
-    
-    for fib in ["0.618", "0.786", "0.850"]:
-        for direction in ["UP", "DOWN"]:
-            subset = df[(df["Fib"] == fib) & (df["Direction"] == direction)]
-            if len(subset) < 50: continue
-            
-            # Baseline
-            wr = subset["Win"].mean() * 100
-            combo_data.append({
-                "Combo": f"Fib {fib} ({direction}) - BASE",
-                "N": len(subset),
-                "WR": wr,
-            })
-            
-            # Test filter combinations up to 3 filters
-            for size in [1, 2, 3]:
-                for filters in itertools.combinations(FILTER_NAMES, size):
-                    # Apply filter mask
-                    req_mask = 0
-                    for f in filters:
-                        req_mask |= FILTER_BITS[FILTER_NAMES.index(f)]
-                    
-                    # Subset where mask has ALL required bits
-                    filtered = subset[(subset["Mask"] & req_mask) == req_mask]
-                    
-                    if len(filtered) < 30: continue
-                    
-                    wr = filtered["Win"].mean() * 100
-                    combo_data.append({
-                        "Combo": f"Fib {fib} ({direction}) + {' + '.join(filters)}",
-                        "N": len(filtered),
-                        "WR": wr,
-                    })
-    
-    df_combo = pd.DataFrame(combo_data).sort_values("WR", ascending=False)
-    
-    pd.set_option('display.max_columns', None)
-    pd.set_option('display.width', 200)
-    
-    print("\n" + "="*110)
-    print("👑 TOP 30 KOMBINASI FIBONACCI + FILTER (Win Rate Tertinggi)")
-    print("(Minimal 30 touch, sudah diverifikasi)")
-    print("="*110)
-    
-    top = df_combo.head(30).reset_index(drop=True)
-    top.index = top.index + 1
-    print(top.to_string(float_format=lambda x: f"{x:.1f}"))
-    
-    # Save best
-    if not df_combo.empty:
-        best = df_combo.iloc[0]
-        # Parse best
-        best_info = {
-            "Combo": best["Combo"],
-            "N": int(best["N"]),
-            "WR": float(best["WR"]),
-        }
-        
-        print("\n" + "="*110)
-        print(f"🏆 STRATEGI TERBAIK DITEMUKAN!")
-        print(f"   {best['Combo']}")
-        print(f"   Sample: {best['N']} touch")
-        print(f"   Win Rate: {best['WR']:.1f}%")
-        print("="*110)
-        
-        # Also show best with min sample 100
-        strict = df_combo[df_combo["N"] >= 100]
-        if not strict.empty:
-            best_strict = strict.iloc[0]
-            print(f"\n💎 STRATEGI PALING STABIL (Minimal 100 touch):")
-            print(f"   {best_strict['Combo']}")
-            print(f"   Sample: {best_strict['N']} touch")
-            print(f"   Win Rate: {best_strict['WR']:.1f}%")
-            
-            with open("quant/output/best_fibo_strategy.json", "w") as f:
-                json.dump({
-                    "Combo": best_strict["Combo"],
-                    "N": int(best_strict["N"]),
-                    "WR": float(best_strict["WR"]),
-                }, f, indent=4)
-            print(f"\n💾 Disimpan ke: quant/output/best_fibo_strategy.json")
+    scenarios = [(0.5, 2.0), (1.0, 2.0), (1.0, 3.0)]   # (SL buffer x ATR di bawah level, RR)
+    events = build_events(args.data, args.mode, scenarios, args.max_hold, args.cost)
+    for kind, ev in events.items():
+        res = run_kind(kind, ev, args)
+        if res is not None:
+            res.to_csv(f"{args.out}_{kind}.csv", index=False)
+            print(f"tersimpan: {args.out}_{kind}.csv")
 
 if __name__ == "__main__":
     main()

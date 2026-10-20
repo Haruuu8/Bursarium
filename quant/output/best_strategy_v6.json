@@ -1,0 +1,30 @@
+{
+  "strategy": {
+    "activate_pct": 3.0,
+    "trail_pct": 1.5,
+    "sl_pct": 3.0,
+    "max_hold": 30,
+    "fee_pct": 0.6
+  },
+  "best": {
+    "Fib": "0.618",
+    "Dir": "UP",
+    "Filters": "MACD + CloseNearLow + ATR_Low",
+    "N_train": 289,
+    "WR_train": 56.747404844290664,
+    "Ret_train": 1.347647983490194,
+    "N_val": 162,
+    "WR_val": 53.70370370370371,
+    "Ret_val": 1.7009308638186147,
+    "N_test": 158,
+    "WR_test": 55.06329113924051,
+    "Ret_test": 1.5112147346546931,
+    "Pval": 4.108413061255561e-05,
+    "Pval_adj": 0.07870038808113153,
+    "Min_Ret": 1.347647983490194,
+    "Avg_Ret": 1.5199311939878342,
+    "Range_Ret": 0.3532828803284207,
+    "Robust": true,
+    "Score": 2.966708395451568
+  }
+}

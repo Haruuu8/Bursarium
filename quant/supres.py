@@ -13,6 +13,22 @@ OHLCV_DIR = "data_ohlcv_idx"
 
 
 # ============================================================
+# SAFE DIVISION HELPER
+# ============================================================
+def _safe_div(a, b, default=0.0):
+    """Pembagian aman: handle 0, NaN, inf, None."""
+    try:
+        if b is None or b == 0:
+            return default
+        r = a / b
+        if isinstance(r, float) and (np.isnan(r) or np.isinf(r)):
+            return default
+        return r
+    except (TypeError, ZeroDivisionError, ValueError):
+        return default
+
+
+# ============================================================
 # LOAD & RESAMPLE
 # ============================================================
 def _load_ohlcv(kode, timeframe="daily"):
@@ -20,7 +36,6 @@ def _load_ohlcv(kode, timeframe="daily"):
     if df_all is None or "Kode" not in df_all.columns:
         return None
         
-    # PERBAIKAN 1: Bersihkan kolom Kode (antisipasi spasi di Cloud)
     df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
     kode = str(kode).strip().upper()
         
@@ -31,7 +46,6 @@ def _load_ohlcv(kode, timeframe="daily"):
     if "Volume" not in df.columns:
         df["Volume"] = 0
         
-    # PERBAIKAN 2: Pastikan Date adalah datetime
     df["Date"] = pd.to_datetime(df["Date"])
 
     if timeframe == "weekly":
@@ -75,7 +89,8 @@ def find_pivots(df, n=5):
     for i in range(n, len(df) - n):
         left_h = highs[i - n:i]
         right_h = highs[i + 1:i + 1 + n]
-        if highs[i] > left_h.max() and highs[i] > right_h.max():
+        # 🔧 FIX: skip kalau harga 0
+        if highs[i] > 0 and highs[i] > left_h.max() and highs[i] > right_h.max():
             pivots.append({
                 "date": dates[i], "price": float(highs[i]),
                 "type": "high", "idx": i,
@@ -83,7 +98,7 @@ def find_pivots(df, n=5):
 
         left_l = lows[i - n:i]
         right_l = lows[i + 1:i + 1 + n]
-        if lows[i] < left_l.min() and lows[i] < right_l.min():
+        if lows[i] > 0 and lows[i] < left_l.min() and lows[i] < right_l.min():
             pivots.append({
                 "date": dates[i], "price": float(lows[i]),
                 "type": "low", "idx": i,
@@ -150,7 +165,6 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     n_low = types.count("low")
     n_high = types.count("high")
 
-    # Tipe asli dari pivot (untuk deteksi flip)
     if n_low > n_high:
         original_type = "support"
     elif n_high > n_low:
@@ -167,15 +181,23 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     # --- Bounce ---
     bounces = 0
     for p in zone["pivots"]:
+        # 🔧 FIX: skip pivot harga 0 / negatif
+        if p["price"] <= 0:
+            continue
         idx = p["idx"]
-        if idx + 5 >= len(df): continue
+        if idx + 5 >= len(df):
+            continue
         future = df.iloc[idx + 1:idx + 6]
+        if len(future) == 0:
+            continue
         if p["type"] == "low":
-            move = (future["High"].max() - p["price"]) / p["price"]
-            if move >= atr_val / p["price"]: bounces += 1
+            move = _safe_div(future["High"].max() - p["price"], p["price"], default=0.0)
+            threshold = _safe_div(atr_val, p["price"], default=float("inf"))
+            if move >= threshold: bounces += 1
         else:
-            move = (p["price"] - future["Low"].min()) / p["price"]
-            if move >= atr_val / p["price"]: bounces += 1
+            move = _safe_div(p["price"] - future["Low"].min(), p["price"], default=0.0)
+            threshold = _safe_div(atr_val, p["price"], default=float("inf"))
+            if move >= threshold: bounces += 1
     if bounces >= 2: score += 2
     elif bounces >= 1: score += 1
 
@@ -186,7 +208,10 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
         for p in zone["pivots"]:
             idx = p["idx"]
             if idx < 20: continue
-            if df["Volume"].iloc[idx] > vma.iloc[idx] * 1.2:
+            vma_val = vma.iloc[idx]
+            if pd.isna(vma_val) or vma_val <= 0:
+                continue  # 🔧 FIX: hindari NaN / 0
+            if df["Volume"].iloc[idx] > vma_val * 1.2:
                 high_vol += 1
         if high_vol >= 2: score += 1.5
         elif high_vol >= 1: score += 0.75
@@ -198,11 +223,12 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
 
     # --- Round number ---
     level = zone["level"]
-    for step in [1000, 500, 100]:
-        nearest = round(level / step) * step
-        if abs(level - nearest) / level < 0.003:
-            score += 1
-            break
+    if level > 0:  # 🔧 FIX: cegah /0
+        for step in [1000, 500, 100]:
+            nearest = round(level / step) * step
+            if abs(level - nearest) / level < 0.003:
+                score += 1
+                break
 
     # --- Scale weight ---
     score *= scale_weight
@@ -210,39 +236,36 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
     # --- Break + flip ---
     brk = check_break(zone, df, atr_val, original_type)
 
-    # Tipe FINAL ditentukan oleh POSISI RELATIF (bukan pivot)
     if level < current_price:
         final_type = "support"
     elif level > current_price:
         final_type = "resistance"
     else:
-        final_type = original_type  # hanya kalau exact sama
+        final_type = original_type
 
-    # FLIP hanya valid kalau:
-    # - original support, sekarang resistance (dan sebaliknya)
     is_flip = (final_type != original_type) and brk["broken"]
 
     if brk["broken"]:
-        final_type = brk["flip"]  # override kalau memang break
+        final_type = brk["flip"]
 
     # ============================================================
-    # LOGIKA ELITE ZONE (WR 94.3%)
+    # ELITE ZONE
     # ============================================================
-    width_pct = (zone["upper"] - zone["lower"]) / level * 100 if level > 0 else 0
-    
-    # Hitung SMA 200
+    width_pct = _safe_div(zone["upper"] - zone["lower"], level, default=0.0) * 100
+
     sma200_series = df['Close'].rolling(200).mean()
     sma200 = sma200_series.iloc[-1] if not sma200_series.empty else current_price
+    if pd.isna(sma200):
+        sma200 = current_price
     is_below_sma200 = current_price < sma200
 
     is_elite = False
-    if (final_type == "resistance" and 
-        width_pct > 1.5 and 
-        days_ago < 30 and 
-        is_below_sma200):
+    if (final_type == "resistance"
+            and width_pct > 1.5
+            and days_ago < 30
+            and is_below_sma200):
         is_elite = True
-        score += 2.0 # Bonus skor untuk Elite Zone
-    # ============================================================
+        score += 2.0
 
     if score >= 7: strength = "STRONG"
     elif score >= 4.5: strength = "MODERATE"
@@ -255,8 +278,8 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
         "type": final_type,
         "original_type": original_type,
         "flip": is_flip,
-        "is_elite": is_elite,            # <-- DATA BARU
-        "width_pct": round(width_pct, 2), # <-- DATA BARU
+        "is_elite": is_elite,
+        "width_pct": round(width_pct, 2),
         "n_touches": n_touches,
         "last_touch": zone["last_touch"],
         "days_since_last": days_ago,
@@ -271,6 +294,10 @@ def score_zone(zone, df, atr_val, current_price, scale_weight=1.0):
 # ============================================================
 def detect_zones_at_scale(df, n_pivot, atr_val, current_price,
                            tolerance, min_touches=2, scale_weight=1.0):
+    # 🔧 FIX: kalau current_price 0/NaN, skip total
+    if current_price is None or current_price <= 0 or pd.isna(current_price):
+        return []
+
     pivots = find_pivots(df, n=n_pivot)
     if not pivots:
         return []
@@ -283,11 +310,13 @@ def detect_zones_at_scale(df, n_pivot, atr_val, current_price,
             continue
         z = score_zone(c, df, atr_val, current_price, scale_weight)
 
-        dist = abs(z["level"] - current_price) / current_price
+        dist = _safe_div(abs(z["level"] - current_price), current_price, default=1.0)
         if dist > 0.25:
             continue
 
-        z["distance_pct"] = round((z["level"] - current_price) / current_price * 100, 2)
+        z["distance_pct"] = round(
+            _safe_div(z["level"] - current_price, current_price, default=0.0) * 100, 2
+        )
         z["scale_n"] = n_pivot
         zones.append(z)
 
@@ -346,8 +375,8 @@ def _merge_group(group):
         "type": best["type"],
         "original_type": best["original_type"],
         "flip": best["flip"],
-        "is_elite": best.get("is_elite", False),     # <-- DATA BARU
-        "width_pct": best.get("width_pct", 0),       # <-- DATA BARU
+        "is_elite": best.get("is_elite", False),
+        "width_pct": best.get("width_pct", 0),
         "n_touches": total_touches,
         "last_touch": max(z["last_touch"] for z in group),
         "days_since_last": min(z["days_since_last"] for z in group),
@@ -365,6 +394,20 @@ def _merge_group(group):
 def get_support_resistance(kode, timeframe="daily",
                             scales=None, max_per_side=5,
                             min_touches=2, atr_mult_tolerance=0.5):
+    try:
+        return _get_support_resistance_impl(
+            kode, timeframe, scales, max_per_side,
+            min_touches, atr_mult_tolerance
+        )
+    except Exception as e:
+        # 🔧 FIX: last-resort — jangan crash halaman
+        print(f"[supres] gagal hitung S/R {kode}: {e}")
+        return None
+
+
+def _get_support_resistance_impl(kode, timeframe, scales,
+                                  max_per_side, min_touches,
+                                  atr_mult_tolerance):
     if scales is None:
         scales = {"short": 3, "medium": 7, "long": 15}
 
@@ -375,6 +418,10 @@ def get_support_resistance(kode, timeframe="daily",
     atr_series = _atr(df, 14)
     atr_val = float(atr_series.iloc[-1]) if atr_series.notna().any() else 0
     current = float(df["Close"].iloc[-1])
+
+    # 🔧 FIX: saham dengan harga 0 / NaN — tolak dari awal
+    if current is None or current <= 0 or pd.isna(current):
+        return None
 
     tol_atr = atr_mult_tolerance * atr_val if atr_val > 0 else 0
     tol_pct = 0.008 * current
@@ -413,7 +460,7 @@ def get_support_resistance(kode, timeframe="daily",
         low_120 = float(df["Low"].tail(120).min()) if len(df) >= 120 else low_60
 
         fallbacks = []
-        if low_60 < current:
+        if 0 < low_60 < current:
             fallbacks.append({
                 "level": low_60,
                 "lower": low_60 * 0.995,
@@ -433,7 +480,7 @@ def get_support_resistance(kode, timeframe="daily",
                 "note": "60d low",
                 "distance_pct": round((low_60 / current - 1) * 100, 2),
             })
-        if low_120 < low_60 and low_120 < current:
+        if 0 < low_120 < low_60 and low_120 < current:
             fallbacks.append({
                 "level": low_120,
                 "lower": low_120 * 0.995,

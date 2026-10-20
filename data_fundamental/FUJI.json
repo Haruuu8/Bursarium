@@ -1,0 +1,117 @@
+{
+  "kode": "FUJI",
+  "nama": "PT Fuji Finance Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 228.0,
+  "update": "2026-10-21 00:10",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 44.534937902344225,
+    "pb": 1.6080548466388858,
+    "ps": 87.3976399298181,
+    "roe": 0.018053857514801222,
+    "eps": 5.119576016923077,
+    "de": 0.021678108341118052,
+    "margin_net": 1.9624511461419971,
+    "current_ratio": null,
+    "roa": 0.017670788252588648,
+    "bv": 141.78620864615385
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 718451173.0,
+      "2024-Q4": 1457099751.0,
+      "2025-Q1": 910152334.0,
+      "2025-Q2": 1753974240.0,
+      "2025-Q3": 2155244132.0,
+      "2025-Q4": 3147193158.0,
+      "2026-Q1": 840492069.0,
+      "2026-Q2": 1695697963.0
+    },
+    "eps": {
+      "2024-Q3": 3610000.0,
+      "2024-Q4": 8490000.0,
+      "2025-Q1": 2960000.0,
+      "2025-Q2": 3290000.0,
+      "2025-Q3": 4890000.0,
+      "2025-Q4": 6420000.0,
+      "2026-Q1": 1020000.0,
+      "2026-Q2": 2560000.0
+    },
+    "net_income": {
+      "2024-Q3": 4690392149.0,
+      "2024-Q4": 11035225606.0,
+      "2025-Q1": 3849782636.0,
+      "2025-Q2": 4279297969.0,
+      "2025-Q3": 6355500755.0,
+      "2025-Q4": 8351301374.0,
+      "2026-Q1": 1321881155.0,
+      "2026-Q2": 3327724411.0
+    }
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 6390000.0,
+      "2023": 2980000.0,
+      "2024": 8490000.0,
+      "2025": 6420000.0
+    },
+    "revenue_per_share": {
+      "2022": 541270154.0,
+      "2023": 2792424421.0,
+      "2024": 1457099751.0,
+      "2025": 3147193158.0
+    }
+  },
+  "statistik": {
+    "market_cap": 296399994880,
+    "enterprise_value": 213675819008,
+    "shares_outstanding": 1300000000,
+    "free_float_pct": 3.4410000000000003
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4992,
+    "vol_trend": 0.594,
+    "price_chg_20d": -21.38
+  },
+  "neraca": {
+    "aset": 188317825070.0,
+    "aset_lancar": null,
+    "kas": 84775039137.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 257377085.0,
+    "liabilitas": 3995753830.0,
+    "liabilitas_jangka_pendek": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 184322071240.0,
+    "ekuitas_induk": 184322071240.0,
+    "modal_saham": null,
+    "saldo_laba": 31748736573.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1695697963.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3665549896.0,
+    "beban_pajak": -337825485.0,
+    "laba_bersih": 3327724411.0,
+    "laba_induk": 3327724411.0,
+    "eps_basic": 2.56,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}
