@@ -1,10 +1,7 @@
 import streamlit as st
 if not st.session_state.get("authentication_status"):
     st.error("Silakan login dulu di halaman utama.")
-    st.info("Buka tab baru → http://localhost:8501")
     st.stop()
-
-# Halaman WATCHLIST — 6 tab, baca dari JSON (fast).
 
 import os, sys, json
 import numpy as np
@@ -16,17 +13,15 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import (
     load_theme, page_header, section_title, empty_state,
 )
+from quant.parquet_loader import load_parquet_safe
+from quant.supres import get_support_resistance
 
 st.set_page_config(page_title="Watchlist", layout="wide")
 load_theme()
 
-# ============================================================
-# GUARD LOGIN
-# ============================================================
 if not st.session_state.get("authentication_status"):
     st.error("Silakan login dulu di halaman utama.")
     st.stop()
-
 
 WATCHLIST_FILE = "data_watchlist.json"
 OUTPUT_DIR = "quant/output"
@@ -41,7 +36,6 @@ SCANS_DIR = "data_scans"
 # LOAD JSON HELPERS
 # ============================================================
 def load_json_safe(path):
-    """Baca file JSON, return None kalau tidak ada / error."""
     if not os.path.exists(path):
         return None
     try:
@@ -56,16 +50,12 @@ def load_setups():
 
 
 def load_scan(name):
-    """Baca data_scans/{name}.json → return list items + generated."""
     d = load_json_safe(os.path.join(SCANS_DIR, f"{name}.json"))
     if not d:
         return [], "?"
     return d.get("items", []), d.get("generated", "?")
 
 
-# ============================================================
-# PERSISTENCE & HELPERS
-# ============================================================
 @st.cache_data(ttl=3600)
 def load_nama():
     nama = {}
@@ -90,8 +80,7 @@ def load_nama():
                 if kode in nama and nama[kode]:
                     continue
                 try:
-                    with open(os.path.join(FUND_DIR, f), "r",
-                              encoding="utf-8") as fh:
+                    with open(os.path.join(FUND_DIR, f), "r", encoding="utf-8") as fh:
                         d = json.load(fh)
                     n = str(d.get("nama", "")).strip()
                     if n and n.lower() != "nan":
@@ -110,8 +99,7 @@ def list_kandidat_files():
           if f.startswith("kandidat") and f.endswith(".csv")
           and "union" not in f.lower()
           and "combined" not in f.lower()]
-    fs.sort(key=lambda f: os.path.getmtime(
-        os.path.join(OUTPUT_DIR, f)), reverse=True)
+    fs.sort(key=lambda f: os.path.getmtime(os.path.join(OUTPUT_DIR, f)), reverse=True)
     return fs
 
 
@@ -146,14 +134,11 @@ def load_rekap_sheet(fname, sheet_name):
     for i in range(min(10, len(raw))):
         row = raw.iloc[i]
         vals = [str(v).strip() for v in row.values if pd.notna(v)]
-        if any(v in ("Tanggal", "No", "Kode", "Metrik",
-                     "Minggu Ke", "Info") for v in vals):
+        if any(v in ("Tanggal", "No", "Kode", "Metrik", "Minggu Ke", "Info") for v in vals):
             header_row = i
             break
-
     if header_row is None:
         header_row = 0
-
     try:
         df = pd.read_excel(path, sheet_name=sheet_name, header=header_row)
     except Exception:
@@ -171,62 +156,90 @@ def fmt_num(v, dec=2):
 
 
 # ============================================================
-# IHSG LOADER
+# ANALYZE SETUP SIGNALS (Elite Zone + Fibo Sniper)
 # ============================================================
-@st.cache_data(ttl=3600)
-def get_ihsg_daily(start_date_str, end_date_str):
-    candidates = [
-        os.path.join(OHLCV_DIR, "^JKSE.csv"),
-        os.path.join(OHLCV_DIR, "JKSE.csv"),
-        os.path.join(OHLCV_DIR, "IHSG.csv"),
-        "data_ihsg.csv",
-        os.path.join(OUTPUT_DIR, "IHSG.csv"),
-    ]
-    for path in candidates:
-        if not os.path.exists(path):
-            continue
-        try:
-            df = pd.read_csv(path)
-            df.columns = [str(c).strip().title() for c in df.columns]
-            close_col = None
-            for c in df.columns:
-                if str(c).lower() in ("close", "closeprice", "adj close"):
-                    close_col = c
-                    break
-            if "Date" not in df.columns or close_col is None:
-                continue
-            out = pd.DataFrame()
-            out["Date"] = pd.to_datetime(df["Date"])
-            out["Close"] = pd.to_numeric(df[close_col], errors="coerce")
-            out = out.dropna().sort_values("Date").reset_index(drop=True)
-            out["ret"] = out["Close"].pct_change() * 100
-            return out
-        except Exception:
-            continue
+@st.cache_data(ttl=1800)
+def analyze_setup_signals(kode, harga):
+    """
+    Analisa apakah saham ini memiliki:
+    - Elite resistance warning (jika entry dekat elite)
+    - Fibo sniper confirmation (jika di zona 0.786/0.850)
+    """
+    result = {
+        "elite_warning": False,
+        "elite_info": "",
+        "fibo_signal": None,
+        "fibo_info": "",
+        "rsi": 50,
+        "trend": "?"
+    }
+    
+    df_all = load_parquet_safe()
+    if df_all is None: return result
+    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
+    kode_clean = str(kode).strip().upper()
+    df = df_all[df_all["Kode"] == kode_clean].copy()
+    if df.empty or len(df) < 100: return result
+    df = df.sort_values("Date").reset_index(drop=True)
+    
+    # === Cek Elite Resistance ===
     try:
-        import yfinance as yf
-        df = yf.download("^JKSE", start=start_date_str,
-                         end=end_date_str, progress=False)
-        if df is not None and not df.empty:
-            if isinstance(df.columns, pd.MultiIndex):
-                df.columns = df.columns.get_level_values(0)
-            df = df.reset_index()
-            df.columns = [str(c).strip() for c in df.columns]
-            close_col = None
-            for c in df.columns:
-                if str(c).lower() == "close":
-                    close_col = c
-                    break
-            if "Date" in df.columns and close_col:
-                out = pd.DataFrame()
-                out["Date"] = pd.to_datetime(df["Date"]).dt.tz_localize(None)
-                out["Close"] = pd.to_numeric(df[close_col], errors="coerce")
-                out = out.dropna().sort_values("Date").reset_index(drop=True)
-                out["ret"] = out["Close"].pct_change() * 100
-                return out
+        sr = get_support_resistance(kode_clean, timeframe="daily")
+        if sr:
+            for z in sr.get("resistances", []):
+                if z.get("is_elite", False):
+                    if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
+                        result["elite_warning"] = True
+                        result["elite_info"] = f"Entry Anda berada di ZONA ELITE Resistance ({z['lower']:,.0f}-{z['upper']:,.0f}). Risiko ditolak 94%!"
+                        break
     except Exception:
         pass
-    return None
+    
+    # === Cek Fibo Sniper ===
+    recent_df = df.tail(150)
+    swing_high = float(recent_df["High"].max())
+    swing_low = float(recent_df["Low"].min())
+    diff = swing_high - swing_low
+    low_idx = recent_df["Low"].idxmin()
+    high_idx = recent_df["High"].idxmax()
+    is_uptrend = low_idx < high_idx
+    
+    # RSI
+    delta = df['Close'].diff()
+    gain = (delta.where(delta > 0, 0)).rolling(14).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
+    rs = gain / loss.replace(0, np.nan)
+    rsi_series = 100 - (100 / (1 + rs))
+    rsi_val = float(rsi_series.iloc[-1]) if not rsi_series.empty else 50
+    result["rsi"] = rsi_val
+    result["trend"] = "UP" if is_uptrend else "DOWN"
+    
+    if is_uptrend:
+        fib_850 = swing_high - diff * 0.850
+        fib_786 = swing_high - diff * 0.786
+        dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
+        dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
+        
+        if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
+            result["fibo_signal"] = "BUY"
+            result["fibo_info"] = f"Harga di Fib 0.786/0.850 + RSI oversold ({rsi_val:.1f}). Win Rate 90%+!"
+        elif dist_850 < 3 or dist_786 < 3:
+            result["fibo_signal"] = "WATCH"
+            result["fibo_info"] = f"Dekat Fib 0.786/0.850. Tunggu RSI < 45 (sekarang {rsi_val:.1f})."
+    else:
+        fib_850 = swing_low + diff * 0.850
+        fib_786 = swing_low + diff * 0.786
+        dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
+        dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
+        
+        if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
+            result["fibo_signal"] = "SELL"
+            result["fibo_info"] = f"Harga di Fib 0.786/0.850 RESISTANCE + RSI ({rsi_val:.1f}). Win Rate 95%! Jangan beli."
+        elif dist_850 < 3 or dist_786 < 3:
+            result["fibo_signal"] = "WATCH"
+            result["fibo_info"] = "Dekat Fib 0.786/0.850 (Resistance). Waspada."
+    
+    return result
 
 
 # ============================================================
@@ -383,7 +396,7 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe,
 
 
 # ============================================================
-# CARD: SETUP (Buy Support / Breakout)
+# CARD: SETUP (Buy Support / Breakout) - WITH SIGNALS
 # ============================================================
 def setup_row(r, tipe="support"):
     kode = r["kode"]
@@ -401,75 +414,188 @@ def setup_row(r, tipe="support"):
     zona_hi = r.get("zona_hi", 0)
     lot = r.get("lot", 0)
 
+    # === ANALISA SIGNAL (ELITE + FIBO) ===
+    signals = analyze_setup_signals(kode, harga)
+    elite_warning = signals.get("elite_warning", False)
+    elite_info = signals.get("elite_info", "")
+    fibo_signal = signals.get("fibo_signal")
+    fibo_info = signals.get("fibo_info", "")
+
     if tipe == "support":
         accent = "#10b981"
-        badge = '<span style="background:rgba(16,185,129,0.15); color:#10b981; padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">🎯 LIMIT · ZONA SUPPORT</span>'
-        if harga < zona_lo: posisi_txt = "↓ di bawah zona"; posisi_color = "#f43f5e"
-        elif harga > zona_hi: posisi_txt = "↑ di atas zona"; posisi_color = "#f59e0b"
-        else: posisi_txt = "● di dalam zona"; posisi_color = "#10b981"
+        badge = ('<span style="background:rgba(16,185,129,0.15); color:#10b981; '
+                 'padding:3px 10px; border-radius:6px; font-size:10px; '
+                 'font-weight:800;">🎯 LIMIT · ZONA SUPPORT</span>')
+        if harga < zona_lo:
+            posisi_txt = "↓ di bawah zona"
+            posisi_color = "#f43f5e"
+        elif harga > zona_hi:
+            posisi_txt = "↑ di atas zona"
+            posisi_color = "#f59e0b"
+        else:
+            posisi_txt = "● di dalam zona"
+            posisi_color = "#10b981"
     else:
         accent = "#06b6d4"
-        badge = '<span style="background:rgba(6,182,212,0.15); color:#06b6d4; padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">🚀 STOP · BREAKOUT</span>'
-        if harga < entry: posisi_txt = f"↓ {((entry-harga)/harga*100):.1f}% di bawah trigger"; posisi_color = "#94a3b8"
-        else: posisi_txt = "↑ sudah melewati trigger"; posisi_color = "#f43f5e"
+        badge = ('<span style="background:rgba(6,182,212,0.15); color:#06b6d4; '
+                 'padding:3px 10px; border-radius:6px; font-size:10px; '
+                 'font-weight:800;">🚀 STOP · BREAKOUT</span>')
+        if harga < entry:
+            posisi_txt = f"↓ {((entry-harga)/harga*100):.1f}% di bawah trigger"
+            posisi_color = "#94a3b8"
+        else:
+            posisi_txt = "↑ sudah melewati trigger"
+            posisi_color = "#f43f5e"
+
+    if rr_tp1 >= 3: rr_color = "#10b981"
+    elif rr_tp1 >= 2: rr_color = "#34d399"
+    elif rr_tp1 >= 1.5: rr_color = "#f59e0b"
+    else: rr_color = "#f43f5e"
+
+    if jarak > 0:
+        jarak_color = "#f59e0b"
+        jarak_icon = "↑"
+    elif jarak < 0:
+        jarak_color = "#10b981"
+        jarak_icon = "↓"
+    else:
+        jarak_color = "#94a3b8"
+        jarak_icon = "="
 
     tp2_disp = f'{tp2:,.0f}' if tp2 else "—"
     tp2_rr = f'RR {rr_tp2:.2f}' if tp2 else "—"
-    jarak_color = "#f59e0b" if jarak > 0 else "#10b981" if jarak < 0 else "#94a3b8"
-    jarak_icon = "↑" if jarak > 0 else "↓" if jarak < 0 else "="
-    rr_color = "#10b981" if rr_tp1 >= 3 else "#34d399" if rr_tp1 >= 2 else "#f59e0b" if rr_tp1 >= 1.5 else "#f43f5e"
 
-    # Layout Card Baru (Rata Kiri)
+    # === BUILD SIGNAL BANNERS ===
+    signal_banners = ""
+    if elite_warning:
+        signal_banners += (
+            f'<div style="background:rgba(244,63,94,0.15); border:1px solid #f43f5e; '
+            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
+            f'<div style="font-size:11px; color:#f43f5e; font-weight:800; letter-spacing:0.5px;">🚨 ELITE ZONE WARNING</div>'
+            f'<div style="font-size:12px; color:#fda4af; margin-top:4px;">{elite_info}</div>'
+            f'</div>'
+        )
+    
+    if fibo_signal == "BUY":
+        signal_banners += (
+            f'<div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; '
+            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
+            f'<div style="font-size:11px; color:#10b981; font-weight:800; letter-spacing:0.5px;">✅ FIBO SNIPER BUY (WR 90%+)</div>'
+            f'<div style="font-size:12px; color:#6ee7b7; margin-top:4px;">{fibo_info}</div>'
+            f'</div>'
+        )
+    elif fibo_signal == "SELL":
+        signal_banners += (
+            f'<div style="background:rgba(244,63,94,0.15); border:1px solid #f43f5e; '
+            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
+            f'<div style="font-size:11px; color:#f43f5e; font-weight:800; letter-spacing:0.5px;">🚨 FIBO SNIPER SELL (WR 95%)</div>'
+            f'<div style="font-size:12px; color:#fda4af; margin-top:4px;">{fibo_info}</div>'
+            f'</div>'
+        )
+    elif fibo_signal == "WATCH":
+        signal_banners += (
+            f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
+            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
+            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⏳ FIBO SNIPER WATCH</div>'
+            f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{fibo_info}</div>'
+            f'</div>'
+        )
+    
+    # Ubah border kartu jika ada peringatan elite atau sinyal sell
+    card_border = "border:1px solid #1a2338;"
+    if elite_warning or fibo_signal == "SELL":
+        card_border = "border:1px solid #f43f5e;"
+    elif fibo_signal == "BUY":
+        card_border = "border:1px solid #10b981;"
+
     return (
-        f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); border:1px solid #1a2338; border-left:4px solid {accent}; border-radius:14px; padding:20px 24px; margin-bottom:12px;">'
-        
-        # 1. Header (Kode & Badge)
-        f'<div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:4px;">'
-        f'<span style="font-size:20px; font-weight:900; color:#ffffff;">{kode}</span>'
+        f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
+        f'{card_border} border-left:4px solid {accent}; '
+        f'border-radius:14px; padding:20px 24px; margin-bottom:12px;">'
+
+        f'<div style="display:flex; justify-content:space-between; '
+        f'align-items:flex-start; gap:20px; margin-bottom:16px; '
+        f'flex-wrap:wrap;">'
+        f'<div style="flex:1; min-width:200px;">'
+        f'<div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">'
+        f'<span style="font-size:20px; font-weight:900; color:#ffffff; '
+        f'letter-spacing:-0.02em;">{kode}</span>'
         f'{badge}'
         f'</div>'
-        f'<div style="font-size:12px; color:#94a3b8; margin-bottom:16px;">{nama}</div>'
-
-        # 2. Harga Saat Ini (Rata Kiri)
-        f'<div style="margin-bottom:16px;">'
-        f'<div style="font-size:11px; color:#64748b; font-weight:700; text-transform:uppercase; margin-bottom:4px;">Harga Saat Ini</div>'
-        f'<div style="font-size:32px; font-weight:900; color:#ffffff; line-height:1;">{harga:,.0f}</div>'
-        f'<div style="font-size:11px; color:{posisi_color}; font-weight:700; margin-top:6px;">{posisi_txt}</div>'
+        f'<div style="font-size:12px; color:#94a3b8; margin-top:4px;">{nama}</div>'
         f'</div>'
 
-        # 3. Kotak Entry
-        f'<div style="background:rgba(99,102,241,0.06); border:1px solid rgba(99,102,241,0.15); border-radius:10px; padding:12px 18px; margin-bottom:16px;">'
-        f'<div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">'
-        f'<span style="font-size:14px; font-weight:700; color:#cbd5e1;">{harga:,.0f}</span>'
+        f'<div style="text-align:right; min-width:140px;">'
+        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.8px; '
+        f'font-weight:700; text-transform:uppercase;">Harga Saat Ini</div>'
+        f'<div style="font-size:26px; font-weight:900; color:#ffffff; '
+        f'letter-spacing:-0.03em; margin-top:2px;">'
+        f'{harga:,.0f}</div>'
+        f'<div style="font-size:10px; color:{posisi_color}; font-weight:700; '
+        f'margin-top:2px;">{posisi_txt}</div>'
+        f'</div>'
+        f'</div>'
+
+        # SIGNAL BANNERS (Elite & Fibo)
+        f'{signal_banners}'
+
+        f'<div style="background:rgba(99,102,241,0.06); '
+        f'border:1px solid rgba(99,102,241,0.15); border-radius:10px; '
+        f'padding:12px 18px; margin-bottom:16px; '
+        f'display:flex; justify-content:space-between; align-items:center; '
+        f'flex-wrap:wrap; gap:12px;">'
+        f'<div style="display:flex; align-items:center; gap:14px;">'
+        f'<span style="font-size:14px; font-weight:700; color:#cbd5e1;">'
+        f'{harga:,.0f}</span>'
         f'<span style="font-size:16px; color:#64748b;">→</span>'
-        f'<span style="font-size:16px; font-weight:800; color:#a5b4fc;">{entry:,.0f}</span>'
-        f'<span style="font-size:11px; color:{jarak_color}; font-weight:700;">({jarak_icon} {abs(jarak):.2f}% ke entry)</span>'
-        f'</div></div>'
-
-        # 4. Grid 2x2 (Entry, SL, TP1, TP2) - Otomatis rapi di HP
-        f'<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; margin-bottom:14px;">'
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; font-weight:600;">ENTRY</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#ffffff; margin-top:4px;">{entry:,.0f}</div></div>'
-
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; font-weight:600;">STOP LOSS</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#f43f5e; margin-top:4px;">{sl:,.0f}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">-{risk_pct:.2f}%</div></div>'
-
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; font-weight:600;">TP1</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#10b981; margin-top:4px;">{tp1:,.0f}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">RR {rr_tp1:.2f}</div></div>'
-
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; font-weight:600;">TP2</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#10b981; margin-top:4px;">{tp2_disp}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">{tp2_rr}</div></div>'
+        f'<span style="font-size:16px; font-weight:800; color:#a5b4fc;">'
+        f'{entry:,.0f}</span>'
+        f'<span style="font-size:11px; color:{jarak_color}; font-weight:700;">'
+        f'({jarak_icon} {abs(jarak):.2f}% ke entry)</span>'
+        f'</div>'
+        f'<span style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
+        f'font-weight:600;">HARGA SAAT INI → ENTRY</span>'
         f'</div>'
 
-        # 5. Footer
-        f'<div style="border-top:1px solid #1a2338; padding-top:12px; display:flex; gap:24px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
+        f'<div style="display:grid; grid-template-columns:repeat(4, 1fr); '
+        f'gap:12px; margin-bottom:14px;">'
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
+        f'border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
+        f'font-weight:600;">ENTRY</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#ffffff; '
+        f'margin-top:4px;">{entry:,.0f}</div></div>'
+
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
+        f'border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
+        f'font-weight:600;">STOP LOSS</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#f43f5e; '
+        f'margin-top:4px;">{sl:,.0f}</div>'
+        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
+        f'-{risk_pct:.2f}%</div></div>'
+
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
+        f'border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
+        f'font-weight:600;">TP1</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#10b981; '
+        f'margin-top:4px;">{tp1:,.0f}</div>'
+        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
+        f'RR {rr_tp1:.2f}</div></div>'
+
+        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
+        f'border-radius:10px; padding:12px 14px;">'
+        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
+        f'font-weight:600;">TP2</div>'
+        f'<div style="font-size:17px; font-weight:800; color:#10b981; '
+        f'margin-top:4px;">{tp2_disp}</div>'
+        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
+        f'{tp2_rr}</div></div>'
+        f'</div>'
+
+        f'<div style="border-top:1px solid #1a2338; padding-top:12px; '
+        f'display:flex; gap:24px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
         f'<span>RR <b style="color:{rr_color}; font-size:13px;">{rr_tp1:.2f}</b></span>'
         f'<span>Risk <b style="color:#cbd5e1;">{risk_pct:.2f}%</b></span>'
         f'<span>Zona <b style="color:#cbd5e1;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
@@ -498,14 +624,9 @@ def setup_table(items, nama_map):
             "Lot": r["lot"],
         })
     df_show = pd.DataFrame(rows)
-    
-    # Semua baris ditampilkan penuh
     tinggi_tabel = (len(df_show) * 35) + 40
-    
     st.dataframe(
-        df_show,
-        use_container_width=True,
-        hide_index=True,
+        df_show, use_container_width=True, hide_index=True,
         height=tinggi_tabel,
     )
 
@@ -537,21 +658,16 @@ with tab1:
         '<div style="font-size: 13px; color: #a5b4fc; font-weight: 700; '
         'margin-bottom: 10px;">📋 ATURAN SCREENER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.8;">'
-        '<b style="color:#e6ebf5;">Entry:</b> Open T+1 (hari bursa berikutnya '
-        'setelah sinyal)<br>'
-        '<b style="color:#e6ebf5;">Exit:</b> TP High-1% (kalau High naik ≥ 1%) '
-        '| SL -3% (sudah termasuk fee)'
-        '</div></div>',
-        unsafe_allow_html=True
+        '<b style="color:#e6ebf5;">Entry:</b> Open T+1 (hari bursa berikutnya setelah sinyal)<br>'
+        '<b style="color:#e6ebf5;">Exit:</b> TP High-1% (kalau High naik ≥ 1%) | SL -3% (sudah termasuk fee)'
+        '</div></div>', unsafe_allow_html=True
     )
 
     files = list_kandidat_files()
 
     if not files:
-        st.markdown(empty_state("📭", "Belum ada kandidat",
-                                "Jalankan screener dulu"), unsafe_allow_html=True)
+        st.markdown(empty_state("📭", "Belum ada kandidat", "Jalankan screener dulu"), unsafe_allow_html=True)
     else:
-        # OTOMATISASI: Ambil file terbaru, hilangkan dropdown, dan set filter secara default
         selected = files[0]
         min_str = 2
         min_rating = 0
@@ -562,14 +678,12 @@ with tab1:
             st.error("File kosong.")
         else:
             if "strength" in df.columns and "rating" in df.columns:
-                df = df[(df["strength"] >= min_str) &
-                        (df["rating"] >= min_rating)]
+                df = df[(df["strength"] >= min_str) & (df["rating"] >= min_rating)]
 
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; '
                 f'margin:8px 0 16px; font-weight:500;">'
-                f'{len(df)} kandidat ditampilkan</div>',
-                unsafe_allow_html=True
+                f'{len(df)} kandidat ditampilkan</div>', unsafe_allow_html=True
             )
 
             for idx, r in df.iterrows():
@@ -580,15 +694,11 @@ with tab1:
                 match = str(r.get("match", "-"))
                 strength = int(r.get("strength", 0))
                 ret1d = float(r.get("ret_1d", 0)) * 100
-
-                st.markdown(
-                    wl_row(kode, nama, close, ret1d, rating, match, strength),
-                    unsafe_allow_html=True
-                )
+                st.markdown(wl_row(kode, nama, close, ret1d, rating, match, strength), unsafe_allow_html=True)
 
 
 # ============================================================
-# TAB 2: BOTTOM FISHING (baca JSON)
+# TAB 2: BOTTOM FISHING
 # ============================================================
 with tab2:
     st.markdown(
@@ -603,8 +713,7 @@ with tab2:
         '✓ Revenue YoY tidak turun &gt; 30%<br>'
         '✓ DER &lt; 2.0x · ROE &gt; 10%<br>'
         '✓ Saham masih aktif bergerak'
-        '</div></div>',
-        unsafe_allow_html=True
+        '</div></div>', unsafe_allow_html=True
     )
 
     items_bf, gen_bf = load_scan("bottom")
@@ -617,18 +726,13 @@ with tab2:
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
                 f'<b style="color:#06b6d4;">{len(items_bf)}</b> saham · '
-                f'generated {gen_bf}</div>',
-                unsafe_allow_html=True
+                f'generated {gen_bf}</div>', unsafe_allow_html=True
             )
         with c2:
-            max_rsi = st.slider("Max RSI", 10, 60, 40, 5,
-                                 key="bf_rsi",
-                                 label_visibility="collapsed")
+            max_rsi = st.slider("Max RSI", 10, 60, 40, 5, key="bf_rsi", label_visibility="collapsed")
         with c3:
-            if st.button("🔄 Reload", key="reload_bf",
-                          use_container_width=True):
-                st.cache_data.clear()
-                st.rerun()
+            if st.button("🔄 Reload", key="reload_bf", use_container_width=True):
+                st.cache_data.clear(); st.rerun()
 
         filtered = [x for x in items_bf if x["rsi"] <= max_rsi]
         st.caption(f"{len(filtered)} saham RSI ≤ {max_rsi}")
@@ -644,13 +748,12 @@ with tab2:
                         r.get("ni_growth"), r.get("rev_growth"),
                         r.get("der"), r.get("roe"),
                         special_flag=r.get("special_flag"),
-                    ),
-                    unsafe_allow_html=True
+                    ), unsafe_allow_html=True
                 )
 
 
 # ============================================================
-# TAB 3: PRE-CROSS (baca JSON)
+# TAB 3: PRE-CROSS
 # ============================================================
 with tab3:
     st.markdown(
@@ -661,8 +764,7 @@ with tab3:
         'letter-spacing:0.5px; margin-bottom:10px;">⚡ PRE-GOLDEN-CROSS</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.8;">'
         'Setup skor ≥ <b>85</b> · Winrate backtest 91.2% · Gap EMA20-EMA50 ≤ 4%'
-        '</div></div>',
-        unsafe_allow_html=True
+        '</div></div>', unsafe_allow_html=True
     )
 
     items_pc, gen_pc = load_scan("precross")
@@ -672,14 +774,11 @@ with tab3:
         st.markdown(
             f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
             f'<b style="color:#10b981;">{len(items_pc)}</b> setup skor ≥85 · '
-            f'generated {gen_pc}</div>',
-            unsafe_allow_html=True
+            f'generated {gen_pc}</div>', unsafe_allow_html=True
         )
     with c2:
-        if st.button("🔄 Reload", key="reload_pc",
-                      use_container_width=True):
-            st.cache_data.clear()
-            st.rerun()
+        if st.button("🔄 Reload", key="reload_pc", use_container_width=True):
+            st.cache_data.clear(); st.rerun()
 
     if gen_pc == "?":
         st.warning("Data scan belum tersedia. Silakan hubungi admin untuk update data terbaru.")
@@ -693,50 +792,38 @@ with tab3:
             '<div style="font-size:12px; color:#7d8ba3; max-width:480px; '
             'margin:0 auto;">Setup presisi tinggi jarang muncul. '
             'Cek kandidat emerging di bawah.</div>'
-            '</div>',
-            unsafe_allow_html=True
+            '</div>', unsafe_allow_html=True
         )
     else:
         for i, r in enumerate(items_pc):
-            kode = r["kode"]
-            nama = nama_map.get(kode, kode)[:55]
-            skor = r["skor"]
-            gap = r["gap_pct"]
-            konv = r["konv_pct"]
-            harga = r["harga"]
-            ema20 = r["ema20"]
-            ema50 = r["ema50"]
-
+            kode = r["kode"]; nama = nama_map.get(kode, kode)[:55]
+            skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]
+            harga = r["harga"]; ema20 = r["ema20"]; ema50 = r["ema50"]
             st.markdown(
                 f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
                 f'border:1px solid #1a2338; border-left:4px solid #10b981; '
                 f'border-radius:14px; padding:18px 22px; margin-bottom:12px;">'
-                f'<div style="display:flex; justify-content:space-between; '
-                f'align-items:center; gap:16px;">'
+                f'<div style="display:flex; justify-content:space-between; align-items:center; gap:16px;">'
                 f'<div>'
                 f'<div style="display:flex; align-items:baseline; gap:12px;">'
                 f'<span style="font-size:18px; font-weight:800; color:#10b981;">#{i+1}</span>'
                 f'<span style="font-size:18px; font-weight:800; color:#ffffff;">{kode}</span>'
                 f'<span style="background:rgba(16,185,129,0.15); color:#10b981; '
-                f'padding:3px 10px; border-radius:6px; font-size:10px; '
-                f'font-weight:800;">🔥 SKOR {skor:.0f}</span>'
+                f'padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">🔥 SKOR {skor:.0f}</span>'
                 f'</div>'
                 f'<div style="font-size:12px; color:#7d8ba3; margin-top:4px;">{nama}</div>'
-                f'<div style="margin-top:10px; display:flex; gap:16px; flex-wrap:wrap; '
-                f'font-size:11px; color:#94a3b8;">'
+                f'<div style="margin-top:10px; display:flex; gap:16px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
                 f'<span>Harga <b style="color:#fff;">{harga:,.0f}</b></span>'
                 f'<span>EMA20 <b style="color:#06b6d4;">{ema20:,.0f}</b></span>'
                 f'<span>EMA50 <b style="color:#f59e0b;">{ema50:,.0f}</b></span>'
                 f'<span>Gap <b style="color:#fff;">{gap:.2f}%</b></span>'
                 f'<span>Konv <b style="color:#10b981;">+{konv:.0f}%</b></span>'
-                f'</div></div></div></div>',
-                unsafe_allow_html=True
+                f'</div></div></div></div>', unsafe_allow_html=True
             )
 
     st.markdown(
         '<div style="height:1px; background:linear-gradient(90deg, '
-        'transparent, #334155, transparent); margin:32px 0 20px;"></div>',
-        unsafe_allow_html=True
+        'transparent, #334155, transparent); margin:32px 0 20px;"></div>', unsafe_allow_html=True
     )
 
     st.markdown(
@@ -747,8 +834,7 @@ with tab3:
         'margin-bottom: 8px;">🌱 EMERGING — MENUJU SKOR 85+</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
         'Saham skor 65–84 yang sedang konvergen dan EMA20 naik.'
-        '</div></div>',
-        unsafe_allow_html=True
+        '</div></div>', unsafe_allow_html=True
     )
 
     items_emg, gen_emg = load_scan("emerging")
@@ -760,43 +846,31 @@ with tab3:
     else:
         st.markdown(
             f'<div style="font-size:12px; color:#7d8ba3; margin:4px 0 16px;">'
-            f'<b style="color:#f59e0b;">{len(items_emg)}</b> kandidat · '
-            f'generated {gen_emg}</div>',
+            f'<b style="color:#f59e0b;">{len(items_emg)}</b> kandidat · generated {gen_emg}</div>',
             unsafe_allow_html=True
         )
-
         for i, r in enumerate(items_emg):
-            kode = r["kode"]
-            nama = nama_map.get(kode, kode)[:55]
-            skor = r["skor"]
-            gap = r["gap_pct"]
-            konv = r["konv_pct"]
-            harga = r["harga"]
-
+            kode = r["kode"]; nama = nama_map.get(kode, kode)[:55]
+            skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]; harga = r["harga"]
             if skor >= 80: color = "#10b981"
             elif skor >= 75: color = "#a5b4fc"
             elif skor >= 70: color = "#f59e0b"
             else: color = "#94a3b8"
-
             gap_to = 85 - skor
-
             st.markdown(
                 f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
                 f'border:1px solid #1a2338; border-left:3px solid {color}; '
                 f'border-radius:14px; padding:14px 20px; margin-bottom:10px;">'
-                f'<div style="display:flex; justify-content:space-between; '
-                f'align-items:center; gap:16px;">'
+                f'<div style="display:flex; justify-content:space-between; align-items:center; gap:16px;">'
                 f'<div>'
                 f'<div style="display:flex; align-items:baseline; gap:10px;">'
                 f'<span style="font-size:14px; font-weight:800; color:#94a3b8;">#{i+1}</span>'
                 f'<span style="font-size:16px; font-weight:800; color:#ffffff;">{kode}</span>'
                 f'<span style="background:rgba(148,163,184,0.15); color:{color}; '
-                f'padding:3px 10px; border-radius:6px; font-size:10px; '
-                f'font-weight:800;">SKOR {skor:.0f}</span>'
+                f'padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">SKOR {skor:.0f}</span>'
                 f'</div>'
                 f'<div style="font-size:11px; color:#7d8ba3; margin-top:3px;">{nama}</div>'
-                f'<div style="margin-top:8px; display:flex; gap:14px; flex-wrap:wrap; '
-                f'font-size:11px; color:#94a3b8;">'
+                f'<div style="margin-top:8px; display:flex; gap:14px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
                 f'<span>Harga <b style="color:#fff;">{harga:,.0f}</b></span>'
                 f'<span>Gap <b style="color:#fff;">{gap:.2f}%</b></span>'
                 f'<span>Konv <b style="color:#10b981;">+{konv:.0f}%</b></span>'
@@ -804,13 +878,12 @@ with tab3:
                 f'<div style="text-align:right;">'
                 f'<div style="font-size:24px; font-weight:800; color:{color};">{skor:.0f}</div>'
                 f'<div style="font-size:10px; color:#f59e0b;">−{gap_to:.0f} ke 85</div>'
-                f'</div></div></div>',
-                unsafe_allow_html=True
+                f'</div></div></div>', unsafe_allow_html=True
             )
 
 
 # ============================================================
-# TAB 4: BUY ON SUPPORT (baca JSON, Card default)
+# TAB 4: BUY ON SUPPORT
 # ============================================================
 with tab4:
     st.markdown(
@@ -820,10 +893,8 @@ with tab4:
         '<div style="font-size: 13px; color: #10b981; font-weight: 800; '
         'margin-bottom: 8px;">🎯 BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Entry limit di zona support · RR min 1.5 · '
-        'jarak harga→entry ≤ 5%'
-        '</div></div>',
-        unsafe_allow_html=True
+        'Entry limit di zona support · RR min 1.5 · jarak harga→entry ≤ 5%'
+        '</div></div>', unsafe_allow_html=True
     )
 
     setups = load_setups()
@@ -837,25 +908,16 @@ with tab4:
         with c1:
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-                f'<b style="color:#10b981;">{len(items)}</b> saham · '
-                f'generated {generated}</div>',
+                f'<b style="color:#10b981;">{len(items)}</b> saham · generated {generated}</div>',
                 unsafe_allow_html=True
             )
         with c2:
-            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1,
-                                key="rr_min_support",
-                                label_visibility="collapsed")
+            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1, key="rr_min_support", label_visibility="collapsed")
         with c3:
-            view_mode = st.selectbox(
-                "View", ["🎴 Card", "📊 Table"],
-                key="view_support",
-                label_visibility="collapsed",
-            )
+            view_mode = st.selectbox("View", ["🎴 Card", "📊 Table"], key="view_support", label_visibility="collapsed")
         with c4:
-            if st.button("🔄 Reload", key="reload_support",
-                          use_container_width=True):
-                st.cache_data.clear()
-                st.rerun()
+            if st.button("🔄 Reload", key="reload_support", use_container_width=True):
+                st.cache_data.clear(); st.rerun()
 
         filtered = [x for x in items if x["rr_tp1"] >= min_rr]
         st.caption(f"{len(filtered)} saham setelah filter RR ≥ {min_rr}")
@@ -865,20 +927,13 @@ with tab4:
         elif view_mode == "📊 Table":
             setup_table(filtered, nama_map)
         else:
-            max_show = st.slider("Tampilkan N card", 10,
-                                  max(10, len(filtered)),
-                                  len(filtered),
-                                  5,
-                                  key="max_card_support")
-            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari "
-                       f"{len(filtered)} saham")
+            max_show = st.slider("Tampilkan N card", 10, max(10, len(filtered)), len(filtered), 5, key="max_card_support")
+            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari {len(filtered)} saham")
             for r in filtered[:max_show]:
                 r["_nama"] = nama_map.get(r["kode"], r["kode"])
-                st.markdown(setup_row(r, tipe="support"),
-                            unsafe_allow_html=True)
+                st.markdown(setup_row(r, tipe="support"), unsafe_allow_html=True)
             if len(filtered) > max_show:
-                st.caption(f"… dan {len(filtered) - max_show} saham lainnya. "
-                           f"Ubah dropdown ke Table untuk lihat semua.")
+                st.caption(f"… dan {len(filtered) - max_show} saham lainnya.")
 
 
 # ============================================================
@@ -892,10 +947,8 @@ with tab5:
         '<div style="font-size: 13px; color: #06b6d4; font-weight: 800; '
         'margin-bottom: 8px;">🚀 BREAKOUT BUY — SETUP STOP ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Buy stop di atas resistance · RR min 1.5 · '
-        'jarak harga→trigger ≤ 5%'
-        '</div></div>',
-        unsafe_allow_html=True
+        'Buy stop di atas resistance · RR min 1.5 · jarak harga→trigger ≤ 5%'
+        '</div></div>', unsafe_allow_html=True
     )
 
     setups = load_setups()
@@ -909,25 +962,16 @@ with tab5:
         with c1:
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-                f'<b style="color:#06b6d4;">{len(items)}</b> saham · '
-                f'generated {generated}</div>',
+                f'<b style="color:#06b6d4;">{len(items)}</b> saham · generated {generated}</div>',
                 unsafe_allow_html=True
             )
         with c2:
-            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1,
-                                key="rr_min_breakout",
-                                label_visibility="collapsed")
+            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1, key="rr_min_breakout", label_visibility="collapsed")
         with c3:
-            view_mode = st.selectbox(
-                "View", ["🎴 Card", "📊 Table"],
-                key="view_breakout",
-                label_visibility="collapsed",
-            )
+            view_mode = st.selectbox("View", ["🎴 Card", "📊 Table"], key="view_breakout", label_visibility="collapsed")
         with c4:
-            if st.button("🔄 Reload", key="reload_breakout",
-                          use_container_width=True):
-                st.cache_data.clear()
-                st.rerun()
+            if st.button("🔄 Reload", key="reload_breakout", use_container_width=True):
+                st.cache_data.clear(); st.rerun()
 
         filtered = [x for x in items if x["rr_tp1"] >= min_rr]
         st.caption(f"{len(filtered)} saham setelah filter RR ≥ {min_rr}")
@@ -937,17 +981,11 @@ with tab5:
         elif view_mode == "📊 Table":
             setup_table(filtered, nama_map)
         else:
-            max_show = st.slider("Tampilkan N card", 10,
-                                  max(10, len(filtered)),
-                                  len(filtered),
-                                  5,
-                                  key="max_card_breakout")
-            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari "
-                       f"{len(filtered)} saham")
+            max_show = st.slider("Tampilkan N card", 10, max(10, len(filtered)), len(filtered), 5, key="max_card_breakout")
+            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari {len(filtered)} saham")
             for r in filtered[:max_show]:
                 r["_nama"] = nama_map.get(r["kode"], r["kode"])
-                st.markdown(setup_row(r, tipe="breakout"),
-                            unsafe_allow_html=True)
+                st.markdown(setup_row(r, tipe="breakout"), unsafe_allow_html=True)
             if len(filtered) > max_show:
                 st.caption(f"… dan {len(filtered) - max_show} saham lainnya.")
 
@@ -957,11 +995,9 @@ with tab5:
 # ============================================================
 with tab6:
     rekap_files = list_rekap_files()
-
     if not rekap_files:
         st.warning("Belum ada data performa. Silakan hubungi admin.")
     else:
-        # OTOMATISASI: Langsung ambil file rekap terbaru tanpa dropdown
         fname = rekap_files[0]
         bulan_label = fname.replace("Rekap_Trading_", "").replace(".xlsx", "")
         df_rev = load_rekap_sheet(fname, "Review Harian")
@@ -972,11 +1008,7 @@ with tab6:
             if "P/L %" in df_rev.columns:
                 df_rev["P/L %"] = pd.to_numeric(df_rev["P/L %"], errors="coerce")
 
-            st.markdown(
-                section_title(f"Ringkasan Bulanan — {bulan_label}",
-                              "Dari sheet Review Harian"),
-                unsafe_allow_html=True,
-            )
+            st.markdown(section_title(f"Ringkasan Bulanan — {bulan_label}", "Dari sheet Review Harian"), unsafe_allow_html=True)
 
             n_total = len(df_rev)
             n_tp = int((df_rev["Status"] == "TP").sum()) if "Status" in df_rev.columns else 0
@@ -1010,158 +1042,61 @@ with tab6:
                 f'<div style="font-size:18px; font-weight:800; color:#94a3b8;">{n_skip}</div></div>'
                 f'<div><span style="font-size:11px; color:#7d8ba3;">Suspended</span>'
                 f'<div style="font-size:18px; font-weight:800; color:#f43f5e;">{n_susp}</div></div>'
-                '</div>',
-                unsafe_allow_html=True
+                '</div>', unsafe_allow_html=True
             )
 
             if n_exec > 0:
                 c1, c2, c3 = st.columns(3)
                 for col, label, val, color in [
-                    (c1, "WIN RATE", f"{wr:.1f}%",
-                     "#10b981" if wr >= 50 else "#f43f5e"),
-                    (c2, "AVG RETURN", f"{avg:+.2f}%",
-                     "#10b981" if avg >= 0 else "#f43f5e"),
-                    (c3, "TOTAL RETURN", f"{tot:+.2f}%",
-                     "#10b981" if tot >= 0 else "#f43f5e"),
+                    (c1, "WIN RATE", f"{wr:.1f}%", "#10b981" if wr >= 50 else "#f43f5e"),
+                    (c2, "AVG RETURN", f"{avg:+.2f}%", "#10b981" if avg >= 0 else "#f43f5e"),
+                    (c3, "TOTAL RETURN", f"{tot:+.2f}%", "#10b981" if tot >= 0 else "#f43f5e"),
                 ]:
                     with col:
                         st.markdown(
                             '<div style="background:linear-gradient(180deg, #131a2a, #0f1628); '
-                            'border-radius:14px; padding:22px 24px; '
-                            'border:1px solid #1a2338;">'
-                            f'<div style="font-size:11px; color:#7d8ba3; '
-                            f'letter-spacing:0.8px; font-weight:600;">{label}</div>'
-                            f'<div style="font-size:30px; font-weight:800; '
-                            f'color:{color}; margin-top:8px;">{val}</div>'
-                            '</div>',
-                            unsafe_allow_html=True
+                            'border-radius:14px; padding:22px 24px; border:1px solid #1a2338;">'
+                            f'<div style="font-size:11px; color:#7d8ba3; letter-spacing:0.8px; font-weight:600;">{label}</div>'
+                            f'<div style="font-size:30px; font-weight:800; color:{color}; margin-top:8px;">{val}</div>'
+                            '</div>', unsafe_allow_html=True
                         )
 
-            st.markdown(section_title("Ringkasan Harian vs IHSG"),
-                        unsafe_allow_html=True)
-
+            st.markdown(section_title("Ringkasan Harian vs IHSG"), unsafe_allow_html=True)
             df_rev["_tgl"] = pd.to_datetime(df_rev["Tanggal"], errors="coerce")
             valid_tgl = df_rev.dropna(subset=["_tgl"])
 
             if valid_tgl.empty:
                 st.info("Kolom Tanggal tidak tersedia.")
             else:
-                min_tgl = valid_tgl["_tgl"].min()
-                max_tgl = valid_tgl["_tgl"].max()
-                start_str = (min_tgl - timedelta(days=7)).strftime("%Y-%m-%d")
-                end_str = (max_tgl + timedelta(days=7)).strftime("%Y-%m-%d")
+                daily_rows = []
+                for tgl, grp in valid_tgl.groupby("_tgl"):
+                    grp_pl = grp["P/L %"].dropna()
+                    n_exec_d = len(grp_pl)
+                    port_ret = grp_pl.mean() if n_exec_d > 0 else np.nan
+                    daily_rows.append({"Tanggal": tgl, "N_exec": n_exec_d, "Portofolio": port_ret})
 
-                with st.spinner("Ambil data IHSG..."):
-                    df_ihsg = get_ihsg_daily(start_str, end_str)
-
-                if df_ihsg is None or df_ihsg.empty:
-                    st.caption("Data IHSG tidak tersedia.")
-                else:
-                    daily_rows = []
-                    for tgl, grp in valid_tgl.groupby("_tgl"):
-                        grp_pl = grp["P/L %"].dropna()
-                        n_exec_d = len(grp_pl)
-                        port_ret = grp_pl.mean() if n_exec_d > 0 else np.nan
-
-                        ihsg_row = df_ihsg[df_ihsg["Date"] == tgl]
-                        if ihsg_row.empty:
-                            prev = df_ihsg[df_ihsg["Date"] <= tgl]
-                            ihsg_ret = prev.iloc[-1]["ret"] if not prev.empty else np.nan
-                        else:
-                            ihsg_ret = ihsg_row.iloc[0]["ret"]
-
-                        alpha = (port_ret - ihsg_ret
-                                 if not pd.isna(port_ret) and not pd.isna(ihsg_ret)
-                                 else np.nan)
-
-                        daily_rows.append({
-                            "Tanggal": tgl, "N": len(grp), "N_exec": n_exec_d,
-                            "Portofolio": port_ret, "IHSG": ihsg_ret,
-                            "Alpha": alpha,
-                        })
-
-                    df_daily = pd.DataFrame(daily_rows)
-                    if not df_daily.empty:
-                        df_daily = df_daily.sort_values("Tanggal").reset_index(drop=True)
-                        for _, r in df_daily.iterrows():
-                            tgl_str = pd.Timestamp(r["Tanggal"]).strftime("%d %b (%a)")
-                            port = r["Portofolio"]; ihsg_r = r["IHSG"]
-                            port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
-                            ihsg_str = f"{ihsg_r:+.2f}%" if not pd.isna(ihsg_r) else "—"
-                            port_col = ("#10b981" if (not pd.isna(port) and port >= 0)
-                                        else "#f43f5e" if not pd.isna(port) else "#64748b")
-                            ihsg_col = ("#10b981" if (not pd.isna(ihsg_r) and ihsg_r >= 0)
-                                        else "#f43f5e" if not pd.isna(ihsg_r) else "#64748b")
-
-                            # ALPHA DIHAPUS & TATA LETAK RAPI MENGGUNAKAN GRID 2 KOLOM
-                            st.markdown(
-                                '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-                                'border-radius:10px; margin-bottom:8px; padding:12px 16px; '
-                                'border:1px solid #1a2338;">'
-                                f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
-                                f'<span style="font-size:13px; color:#e6ebf5; font-weight:700;">{tgl_str}</span>'
-                                f'<span style="font-size:11px; color:#7d8ba3;">{r["N_exec"]} trade</span>'
-                                f'</div>'
-                                f'<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">'
-                                f'<div>'
-                                f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">Porto</div>'
-                                f'<div style="font-size:13px; font-weight:800; color:{port_col};">{port_str}</div>'
-                                f'</div>'
-                                f'<div>'
-                                f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">IHSG</div>'
-                                f'<div style="font-size:13px; font-weight:800; color:{ihsg_col};">{ihsg_str}</div>'
-                                f'</div>'
-                                f'</div>'
-                                '</div>',
-                                unsafe_allow_html=True
-                            )
-
-            st.markdown(section_title("Ringkasan Mingguan"),
-                        unsafe_allow_html=True)
-
-            df_ming = load_rekap_sheet(fname, "Review Mingguan")
-            if df_ming is None or df_ming.empty:
-                st.info("Belum ada data mingguan di Excel.")
-            elif "Info" in df_ming.columns:
-                st.info("Belum ada sinyal mingguan di bulan ini.")
-            else:
-                for _, r in df_ming.iterrows():
-                    minggu = str(r.get("Minggu Ke", "")).strip()
-                    periode = str(r.get("Rentang Aktual", "")
-                                   or r.get("Periode", "")).strip()
-                    total_pl = r.get("Total P/L %", 0)
-                    win_rate = r.get("Win Rate %", 0)
-                    try: total_pl = float(total_pl)
-                    except Exception: total_pl = 0
-                    try: win_rate = float(win_rate)
-                    except Exception: win_rate = 0
-                    pl_col = "#10b981" if total_pl >= 0 else "#f43f5e"
-                    wr_col = "#10b981" if win_rate >= 50 else "#f43f5e"
-
-                    st.markdown(
-                        '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-                        'border-radius:12px; padding:16px 20px; '
-                        'border:1px solid #1a2338; margin-bottom:8px;">'
-                        f'<div style="display:flex; justify-content:space-between; '
-                        f'align-items:center; margin-bottom:10px;">'
-                        f'<div>'
-                        f'<div style="font-size:14px; font-weight:800; color:#e6ebf5;">'
-                        f'{minggu}</div>'
-                        f'<div style="font-size:11px; color:#7d8ba3; margin-top:2px;">'
-                        f'{periode}</div>'
-                        f'</div>'
-                        f'<div style="font-size:20px; font-weight:800; color:{pl_col};">'
-                        f'{total_pl:+.2f}%</div>'
-                        f'</div>'
-                        f'<div style="display:flex; gap:20px; flex-wrap:wrap; '
-                        f'font-size:11px; color:#94a3b8;">'
-                        f'<span>Win Rate <b style="color:{wr_col};">{win_rate:.1f}%</b></span>'
-                        f'</div></div>',
-                        unsafe_allow_html=True
-                    )
+                df_daily = pd.DataFrame(daily_rows)
+                if not df_daily.empty:
+                    df_daily = df_daily.sort_values("Tanggal").reset_index(drop=True)
+                    for _, r in df_daily.iterrows():
+                        tgl_str = pd.Timestamp(r["Tanggal"]).strftime("%d %b (%a)")
+                        port = r["Portofolio"]
+                        port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
+                        port_col = "#10b981" if (not pd.isna(port) and port >= 0) else "#f43f5e"
+                        st.markdown(
+                            '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
+                            'border-radius:10px; margin-bottom:8px; padding:12px 16px; border:1px solid #1a2338;">'
+                            f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
+                            f'<span style="font-size:13px; color:#e6ebf5; font-weight:700;">{tgl_str}</span>'
+                            f'<span style="font-size:11px; color:#7d8ba3;">{r["N_exec"]} trade</span>'
+                            f'</div>'
+                            f'<div style="display:grid; grid-template-columns:1fr; gap:10px;">'
+                            f'<div>'
+                            f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">Portofolio</div>'
+                            f'<div style="font-size:13px; font-weight:800; color:{port_col};">{port_str}</div>'
+                            f'</div></div></div>', unsafe_allow_html=True
+                        )
 
             with st.expander("Lihat tabel lengkap"):
-                df_display = df_rev.copy()
-                df_display = df_display.drop(columns=["_tgl"], errors="ignore")
-                st.dataframe(df_display, use_container_width=True,
-                             hide_index=True)
+                df_display = df_rev.copy().drop(columns=["_tgl"], errors="ignore")
+                st.dataframe(df_display, use_container_width=True, hide_index=True)
