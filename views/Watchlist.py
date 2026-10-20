@@ -386,7 +386,6 @@ def setup_row(r, tipe="support"):
     jarak = r.get("jarak_entry_pct", 0)
     zona_lo = r.get("zona_lo", 0)
     zona_hi = r.get("zona_hi", 0)
-    lot = r.get("lot", 0)
 
     if tipe == "support":
         accent = "#10b981"
@@ -516,7 +515,6 @@ def setup_row(r, tipe="support"):
         f'<span>RR <b style="color:{rr_color}; font-size:13px;">{rr_tp1:.2f}</b></span>'
         f'<span>Risk <b style="color:#cbd5e1;">{risk_pct:.2f}%</b></span>'
         f'<span>Zona <b style="color:#cbd5e1;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
-        f'<span>Lot <b style="color:#cbd5e1;">{lot}</b></span>'
         f'</div>'
         f'</div>'
     )
