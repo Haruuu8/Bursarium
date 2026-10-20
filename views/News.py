@@ -160,19 +160,36 @@ with c2:
 
 
 # ============================================================
-# LOAD DATA - session state per days
+# LOAD DATA - session state per days (retry-friendly)
 # ============================================================
+RETRY_COOLDOWN_SEC = 60   # auto-retry kalau kosong, tiap 60 detik
+
 if "news_df" not in st.session_state:
     st.session_state.news_df = None
 if "news_days_loaded" not in st.session_state:
     st.session_state.news_days_loaded = None
 if "news_last_refresh" not in st.session_state:
     st.session_state.news_last_refresh = None
+if "news_last_attempt" not in st.session_state:
+    st.session_state.news_last_attempt = None
+
+now = pd.Timestamp.now()
+last_attempt = st.session_state.news_last_attempt
+
+cooldown_ok = (
+    last_attempt is None
+    or (now - last_attempt).total_seconds() > RETRY_COOLDOWN_SEC
+)
+
+has_data = (
+    st.session_state.news_df is not None
+    and not st.session_state.news_df.empty
+)
 
 need_fetch = (
-    st.session_state.news_df is None
-    or refresh
+    refresh
     or st.session_state.news_days_loaded != days
+    or (not has_data and cooldown_ok)   # auto-retry kalau kosong
 )
 
 if need_fetch:
@@ -189,10 +206,17 @@ if need_fetch:
         df_fetch = df_fetch.sort_values(
             "tanggal_dt", ascending=False, na_position="last"
         ).reset_index(drop=True)
+        # Sukses → simpan
+        st.session_state.news_df = df_fetch
+        st.session_state.news_days_loaded = days
+    else:
+        # GAGAL → JANGAN timpa data lama yang bagus
+        if not has_data:
+            st.session_state.news_df = None
+            st.session_state.news_days_loaded = None
 
-    st.session_state.news_df = df_fetch
-    st.session_state.news_days_loaded = days
     st.session_state.news_last_refresh = pd.Timestamp.now()
+    st.session_state.news_last_attempt = pd.Timestamp.now()
 
 df = st.session_state.news_df
 last_refresh = st.session_state.news_last_refresh
@@ -201,9 +225,25 @@ if df is None:
     df = pd.DataFrame()
 
 if df.empty:
-    st.warning("Data pengumuman IDX belum tersedia atau gagal diambil dari server IDX. Silakan klik tombol Refresh.")
-    # Buat dummy dataframe kosong dengan kolom yang diperlukan agar tab tetap muncul
-    df = pd.DataFrame(columns=["kode", "judul", "tanggal", "tipe", "kategori", "bobot", "lampiran"])
+    st.warning(
+        "Data pengumuman IDX belum tersedia atau gagal diambil dari server IDX."
+    )
+    retry_cols = st.columns([1, 1, 3])
+    with retry_cols[0]:
+        if st.button("🔄 Coba lagi", type="primary", use_container_width=True):
+            st.session_state.news_last_attempt = None  # bypass cooldown
+            st.session_state.news_df = None
+            st.rerun()
+    with retry_cols[1]:
+        if st.button("Bersihkan cache", use_container_width=True):
+            import shutil
+            shutil.rmtree("data_idx_news", ignore_errors=True)
+            st.session_state.news_df = None
+            st.session_state.news_last_attempt = None
+            st.rerun()
+    df = pd.DataFrame(columns=[
+        "kode", "judul", "tanggal", "tipe", "kategori", "bobot", "lampiran"
+    ])
 
 # Info bar
 st.markdown(

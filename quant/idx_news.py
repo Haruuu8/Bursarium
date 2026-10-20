@@ -35,6 +35,7 @@ CACHE_DIR = "data_idx_news"
 BASE = "https://www.idx.co.id"
 ENDPOINT = f"{BASE}/primary/NewsAnnouncement/GetAllAnnouncement"
 CACHE_TTL_HOURS = 3
+FAILED_CACHE_TTL_SEC = 300   # ⚠️ BARU: 5 menit cooldown kalau IDX gagal
 
 
 # ============================================================
@@ -323,6 +324,7 @@ def _fetch_page(page_number, page_size, date_from, date_to):
                 continue
 
             if r.status_code != 200:
+                print(f"    HTTP {r.status_code} page {page_number}")
                 return None
 
             ct = r.headers.get("Content-Type", "")
@@ -332,7 +334,8 @@ def _fetch_page(page_number, page_size, date_from, date_to):
 
             return r.json()
 
-        except Exception:
+        except Exception as e:
+            print(f"    Exception page {page_number}: {e}")
             if attempt < 2:
                 time.sleep(5)
                 continue
@@ -359,7 +362,6 @@ def _parse_item(item, seen_ids):
     no_peng = item.get("AnnouncementNo") or ""
     isi = item.get("Perihal") or ""
 
-    # Attachment pertama
     lamp_url = ""
     attachments = item.get("Attachments") or []
     if attachments and isinstance(attachments, list):
@@ -398,7 +400,7 @@ def fetch_announcements(days=90, max_items=20000, page_size=500):
     seen_ids = set()
 
     page = 1
-    max_pages = 40  # safety limit
+    max_pages = 40
 
     while page <= max_pages and len(all_items) < max_items:
         data = _fetch_page(page, page_size, date_from_str, date_to_str)
@@ -432,7 +434,7 @@ def fetch_announcements(days=90, max_items=20000, page_size=500):
 
 
 # ============================================================
-# CACHE
+# CACHE — success
 # ============================================================
 def _cache_path(days):
     return os.path.join(CACHE_DIR, f"news_cache_{days}d.json")
@@ -467,6 +469,41 @@ def save_cache(data, days):
 
 
 # ============================================================
+# CACHE — failure (⚠️ BARU)
+# ============================================================
+def _failed_path(days):
+    return os.path.join(CACHE_DIR, f"news_failed_{days}d.json")
+
+
+def _mark_failed(days):
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    try:
+        with open(_failed_path(days), "w", encoding="utf-8") as f:
+            json.dump({"ts": time.time()}, f)
+    except Exception:
+        pass
+
+
+def _is_recently_failed(days):
+    path = _failed_path(days)
+    if not os.path.exists(path):
+        return False
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return (time.time() - data.get("ts", 0)) < FAILED_CACHE_TTL_SEC
+    except Exception:
+        return False
+
+
+def _clear_failed(days):
+    try:
+        os.remove(_failed_path(days))
+    except Exception:
+        pass
+
+
+# ============================================================
 # SCAN
 # ============================================================
 def _apply_filter(df, good_only):
@@ -484,21 +521,34 @@ def _apply_filter(df, good_only):
 
 
 def scan_news(days=30, force_refresh=False, filter_good_only=False):
+    # 1. Cache sukses
     if not force_refresh:
         cached = load_cache(days)
         if cached is not None:
             df = pd.DataFrame(cached)
             return _apply_filter(df, filter_good_only)
 
+        # 2. Kalau baru saja gagal, jangan hammer IDX
+        if _is_recently_failed(days):
+            print(f"    [cache] skip fetch (gagal <{FAILED_CACHE_TTL_SEC}s lalu)")
+            return pd.DataFrame()
+
+    # 3. Fetch fresh
     hasil = fetch_announcements(days=days, max_items=20000)
 
     if not hasil:
+        # Fallback: pakai cache lama kalau ada (meski kedaluwarsa)
         cached = load_cache(days)
         if cached is not None:
             df = pd.DataFrame(cached)
             return _apply_filter(df, filter_good_only)
+
+        # Tidak ada fallback → tandai gagal
+        _mark_failed(days)
         return pd.DataFrame()
 
+    # Sukses → hapus tanda gagal, simpan cache
+    _clear_failed(days)
     save_cache(hasil, days)
     df = pd.DataFrame(hasil)
     return _apply_filter(df, filter_good_only)
