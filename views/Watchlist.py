@@ -146,100 +146,74 @@ def load_rekap_sheet(fname, sheet_name):
     return df
 
 
-def fmt_num(v, dec=2):
-    if v is None or (isinstance(v, float) and np.isnan(v)):
-        return "—"
-    try:
-        return f"{v:,.{dec}f}"
-    except Exception:
-        return "—"
-
-
 # ============================================================
-# ANALYZE SETUP SIGNALS (Strong Zone + Fibo Sniper)
+# HIGH WR FILTER LOGIC
 # ============================================================
 @st.cache_data(ttl=1800)
-def analyze_setup_signals(kode, harga):
+def check_high_wr_filter(kode, harga, tipe):
     """
-    Analisa apakah saham ini memiliki:
-    - Strong Zone warning (jika entry dekat zona kuat)
-    - Fibo sniper confirmation (jika di zona 0.786/0.850)
+    Menyaring setup berdasarkan kriteria backtest WR tinggi:
+    - SUPPORT: Harus di area Fibo 0.786/0.850 (Uptrend) + RSI < 45.
+    - BREAKOUT: Harus RSI > 50 + Vol > 1.2x MA20 + Harga > EMA20.
     """
-    result = {
-        "strong_zone": False,
-        "strong_zone_info": "",
-        "fibo_signal": None,
-        "fibo_info": "",
-        "rsi": 50,
-        "trend": "?"
-    }
-    
     df_all = load_parquet_safe()
-    if df_all is None: return result
+    if df_all is None: return False, "No Data"
     df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
-    kode_clean = str(kode).strip().upper()
-    df = df_all[df_all["Kode"] == kode_clean].copy()
-    if df.empty or len(df) < 100: return result
+    df = df_all[df_all["Kode"] == kode.strip().upper()].copy()
+    if df.empty or len(df) < 50: return False, "Data < 50 hari"
     df = df.sort_values("Date").reset_index(drop=True)
-    
-    # === Cek Strong Zone (Tanpa label Elite) ===
-    try:
-        sr = get_support_resistance(kode_clean, timeframe="daily")
-        if sr:
-            for z in sr.get("resistances", []):
-                if z.get("is_elite", False):
-                    if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
-                        result["strong_zone"] = True
-                        result["strong_zone_info"] = f"Harga di zona resistance kuat ({z['lower']:,.0f}-{z['upper']:,.0f}). Waspada tertahan."
-                        break
-    except Exception:
-        pass
-    
-    # === Cek Fibo Sniper ===
-    recent_df = df.tail(150)
-    swing_high = float(recent_df["High"].max())
-    swing_low = float(recent_df["Low"].min())
-    diff = swing_high - swing_low
-    low_idx = recent_df["Low"].idxmin()
-    high_idx = recent_df["High"].idxmax()
-    is_uptrend = low_idx < high_idx
-    
-    # RSI
+
+    closes = df['Close'].values
+    vols = df['Volume'].values
+
+    # Hitung RSI 14
     delta = df['Close'].diff()
     gain = (delta.where(delta > 0, 0)).rolling(14).mean()
     loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
     rs = gain / loss.replace(0, np.nan)
-    rsi_series = 100 - (100 / (1 + rs))
-    rsi_val = float(rsi_series.iloc[-1]) if not rsi_series.empty else 50
-    result["rsi"] = rsi_val
-    result["trend"] = "UP" if is_uptrend else "DOWN"
-    
-    if is_uptrend:
+    rsi_val = float((100 - (100 / (1 + rs))).iloc[-1]) if not rs.empty else 50
+
+    if tipe == "support":
+        # Cek Fibo Uptrend
+        recent = df.tail(150)
+        swing_high = float(recent["High"].max())
+        swing_low = float(recent["Low"].min())
+        diff = swing_high - swing_low
+
+        # Pastikan Uptrend (Low terjadi dulu)
+        low_idx = recent["Low"].idxmin()
+        high_idx = recent["High"].idxmax()
+        is_uptrend = low_idx < high_idx
+
+        if not is_uptrend:
+            return False, "Bukan Uptrend"
+
         fib_850 = swing_high - diff * 0.850
         fib_786 = swing_high - diff * 0.786
         dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
         dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
-        
+
         if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
-            result["fibo_signal"] = "BUY"
-            result["fibo_info"] = f"Harga di Fib 0.786/0.850 + RSI oversold ({rsi_val:.1f}). Timing terbaik."
-        elif dist_850 < 3 or dist_786 < 3:
-            result["fibo_signal"] = "WATCH"
-            result["fibo_info"] = f"Dekat Fib 0.786/0.850. Tunggu RSI < 45 (sekarang {rsi_val:.1f})."
-    else:
-        fib_850 = swing_low + diff * 0.850
-        fib_786 = swing_low + diff * 0.786
-        dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
-        dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
-        
-        if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
-            result["fibo_signal"] = "SELL"
-            result["fibo_info"] = f"Harga di Fib 0.786/0.850 RESISTANCE + RSI ({rsi_val:.1f}). Jangan beli."
-        elif dist_850 < 3 or dist_786 < 3:
-            result["fibo_signal"] = "WATCH"
-            result["fibo_info"] = "Dekat Fib 0.786/0.850 (Resistance). Waspada."
-    
-    return result
+            return True, f"Fibo Sniper (RSI {rsi_val:.1f})"
+        return False, "Bukan area Fibo / RSI belum OS"
+
+    elif tipe == "breakout":
+        # Cek Kriteria Breakout Kuat
+        if rsi_val <= 50:
+            return False, "RSI < 50"
+
+        ema20 = df['Close'].ewm(span=20, adjust=False).mean().iloc[-1]
+        if harga < ema20:
+            return False, "Harga < EMA20"
+
+        vol_ma = df['Volume'].rolling(20).mean().iloc[-1]
+        vol_ratio = vols[-1] / vol_ma if vol_ma > 0 else 1
+        if vol_ratio < 1.2:
+            return False, "Volume < 1.2x"
+
+        return True, f"Breakout Kuat (Vol {vol_ratio:.1f}x, RSI {rsi_val:.1f})"
+
+    return False, "Unknown Error"
 
 
 # ============================================================
@@ -414,13 +388,6 @@ def setup_row(r, tipe="support"):
     zona_hi = r.get("zona_hi", 0)
     lot = r.get("lot", 0)
 
-    # === ANALISA SIGNAL (STRONG ZONE + FIBO) ===
-    signals = analyze_setup_signals(kode, harga)
-    strong_zone = signals.get("strong_zone", False)
-    strong_info = signals.get("strong_zone_info", "")
-    fibo_signal = signals.get("fibo_signal")
-    fibo_info = signals.get("fibo_info", "")
-
     if tipe == "support":
         accent = "#10b981"
         badge = ('<span style="background:rgba(16,185,129,0.15); color:#10b981; '
@@ -465,72 +432,20 @@ def setup_row(r, tipe="support"):
     tp2_disp = f'{tp2:,.0f}' if tp2 else "—"
     tp2_rr = f'RR {rr_tp2:.2f}' if tp2 else "—"
 
-    # === BUILD SIGNAL BANNERS ===
-    signal_banners = ""
-    
-    # Strong Zone (Tanpa label Elite)
-    if strong_zone:
-        signal_banners += (
-            f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⚠️ ZONA KUAT TERDETEKSI</div>'
-            f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{strong_info}</div>'
-            f'</div>'
-        )
-    
-    # Fibo Sniper (Tetap dibedakan)
-    if fibo_signal == "BUY":
-        signal_banners += (
-            f'<div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#10b981; font-weight:800; letter-spacing:0.5px;">✅ FIBO CONFIRMATION</div>'
-            f'<div style="font-size:12px; color:#6ee7b7; margin-top:4px;">{fibo_info}</div>'
-            f'</div>'
-        )
-    elif fibo_signal == "SELL":
-        signal_banners += (
-            f'<div style="background:rgba(244,63,94,0.15); border:1px solid #f43f5e; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f43f5e; font-weight:800; letter-spacing:0.5px;">🚨 FIBO WARNING</div>'
-            f'<div style="font-size:12px; color:#fda4af; margin-top:4px;">{fibo_info}</div>'
-            f'</div>'
-        )
-    elif fibo_signal == "WATCH":
-        signal_banners += (
-            f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⏳ FIBO WATCH</div>'
-            f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{fibo_info}</div>'
-            f'</div>'
-        )
-    
-    # Ubah border kartu sesuai signal
-    card_border = "border:1px solid #1a2338;"
-    if strong_zone or fibo_signal == "SELL":
-        card_border = "border:1px solid #f59e0b;" # Orange untuk warning
-    elif fibo_signal == "BUY":
-        card_border = "border:1px solid #10b981;" # Green untuk buy
-    elif fibo_signal == "WATCH":
-        card_border = "border:1px solid #f59e0b;" # Yellow untuk watch
-
     return (
         f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-        f'{card_border} border-left:4px solid {accent}; '
+        f'border:1px solid #1a2338; border-left:4px solid {accent}; '
         f'border-radius:14px; padding:20px 24px; margin-bottom:12px;">'
 
-        f'<div style="display:flex; justify-content:space-between; '
-        f'align-items:flex-start; gap:20px; margin-bottom:16px; '
-        f'flex-wrap:wrap;">'
-        f'<div style="flex:1; min-width:200px;">'
+        f'<div style="display:flex; flex-direction:column; gap:8px; margin-bottom:16px;">'
         f'<div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">'
         f'<span style="font-size:20px; font-weight:900; color:#ffffff; '
         f'letter-spacing:-0.02em;">{kode}</span>'
         f'{badge}'
         f'</div>'
-        f'<div style="font-size:12px; color:#94a3b8; margin-top:4px;">{nama}</div>'
-        f'</div>'
+        f'<div style="font-size:12px; color:#94a3b8;">{nama}</div>'
 
-        f'<div style="text-align:right; min-width:140px;">'
+        f'<div style="text-align:left; margin-top:8px;">'
         f'<div style="font-size:10px; color:#64748b; letter-spacing:0.8px; '
         f'font-weight:700; text-transform:uppercase;">Harga Saat Ini</div>'
         f'<div style="font-size:26px; font-weight:900; color:#ffffff; '
@@ -540,9 +455,6 @@ def setup_row(r, tipe="support"):
         f'margin-top:2px;">{posisi_txt}</div>'
         f'</div>'
         f'</div>'
-
-        # SIGNAL BANNERS
-        f'{signal_banners}'
 
         f'<div style="background:rgba(99,102,241,0.06); '
         f'border:1px solid rgba(99,102,241,0.15); border-radius:10px; '
@@ -607,32 +519,6 @@ def setup_row(r, tipe="support"):
         f'<span>Lot <b style="color:#cbd5e1;">{lot}</b></span>'
         f'</div>'
         f'</div>'
-    )
-
-
-def setup_table(items, nama_map):
-    rows = []
-    for r in items:
-        rows.append({
-            "Kode": r["kode"],
-            "Nama": nama_map.get(r["kode"], r["kode"])[:30],
-            "Harga": r["harga"],
-            "Entry": r["entry"],
-            "SL": r["sl"],
-            "TP1": r["tp1"],
-            "TP2": r.get("tp2"),
-            "RR": r["rr_tp1"],
-            "Risk %": r["risk_pct"],
-            "Jarak %": r["jarak_entry_pct"],
-            "Zona Lo": r["zona_lo"],
-            "Zona Hi": r["zona_hi"],
-            "Lot": r["lot"],
-        })
-    df_show = pd.DataFrame(rows)
-    tinggi_tabel = (len(df_show) * 35) + 40
-    st.dataframe(
-        df_show, use_container_width=True, hide_index=True,
-        height=tinggi_tabel,
     )
 
 
@@ -909,7 +795,7 @@ with tab4:
         items = setups.get("buy_support", [])
         generated = setups.get("generated", "?")
 
-        c1, c2, c3, c4 = st.columns([2, 1, 1, 1])
+        c1, c2 = st.columns([4, 1])
         with c1:
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
@@ -917,28 +803,25 @@ with tab4:
                 unsafe_allow_html=True
             )
         with c2:
-            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1, key="rr_min_support", label_visibility="collapsed")
-        with c3:
-            view_mode = st.selectbox("View", ["🎴 Card", "📊 Table"], key="view_support", label_visibility="collapsed")
-        with c4:
             if st.button("🔄 Reload", key="reload_support", use_container_width=True):
                 st.cache_data.clear(); st.rerun()
 
-        filtered = [x for x in items if x["rr_tp1"] >= min_rr]
-        st.caption(f"{len(filtered)} saham setelah filter RR ≥ {min_rr}")
+        # === APPLY HIGH WR FILTER ===
+        final_items = []
+        for x in items:
+            passes, reason = check_high_wr_filter(x["kode"], x["harga"], "support")
+            if passes:
+                x["_reason"] = reason
+                final_items.append(x)
 
-        if not filtered:
-            st.info(f"Tidak ada saham dengan RR ≥ {min_rr}")
-        elif view_mode == "📊 Table":
-            setup_table(filtered, nama_map)
+        st.caption(f"{len(final_items)} saham lolos filter High WR (dari {len(items)} setup)")
+
+        if not final_items:
+            st.info("Tidak ada saham yang memenuhi kriteria High WR hari ini.")
         else:
-            max_show = st.slider("Tampilkan N card", 10, max(10, len(filtered)), len(filtered), 5, key="max_card_support")
-            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari {len(filtered)} saham")
-            for r in filtered[:max_show]:
+            for r in final_items:
                 r["_nama"] = nama_map.get(r["kode"], r["kode"])
                 st.markdown(setup_row(r, tipe="support"), unsafe_allow_html=True)
-            if len(filtered) > max_show:
-                st.caption(f"… dan {len(filtered) - max_show} saham lainnya.")
 
 
 # ============================================================
@@ -963,7 +846,7 @@ with tab5:
         items = setups.get("breakout_buy", [])
         generated = setups.get("generated", "?")
 
-        c1, c2, c3, c4 = st.columns([2, 1, 1, 1])
+        c1, c2 = st.columns([4, 1])
         with c1:
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
@@ -971,28 +854,25 @@ with tab5:
                 unsafe_allow_html=True
             )
         with c2:
-            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1, key="rr_min_breakout", label_visibility="collapsed")
-        with c3:
-            view_mode = st.selectbox("View", ["🎴 Card", "📊 Table"], key="view_breakout", label_visibility="collapsed")
-        with c4:
             if st.button("🔄 Reload", key="reload_breakout", use_container_width=True):
                 st.cache_data.clear(); st.rerun()
 
-        filtered = [x for x in items if x["rr_tp1"] >= min_rr]
-        st.caption(f"{len(filtered)} saham setelah filter RR ≥ {min_rr}")
+        # === APPLY HIGH WR FILTER ===
+        final_items = []
+        for x in items:
+            passes, reason = check_high_wr_filter(x["kode"], x["harga"], "breakout")
+            if passes:
+                x["_reason"] = reason
+                final_items.append(x)
 
-        if not filtered:
-            st.info(f"Tidak ada saham dengan RR ≥ {min_rr}")
-        elif view_mode == "📊 Table":
-            setup_table(filtered, nama_map)
+        st.caption(f"{len(final_items)} saham lolos filter High WR (dari {len(items)} setup)")
+
+        if not final_items:
+            st.info("Tidak ada saham yang memenuhi kriteria High WR hari ini.")
         else:
-            max_show = st.slider("Tampilkan N card", 10, max(10, len(filtered)), len(filtered), 5, key="max_card_breakout")
-            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari {len(filtered)} saham")
-            for r in filtered[:max_show]:
+            for r in final_items:
                 r["_nama"] = nama_map.get(r["kode"], r["kode"])
                 st.markdown(setup_row(r, tipe="breakout"), unsafe_allow_html=True)
-            if len(filtered) > max_show:
-                st.caption(f"… dan {len(filtered) - max_show} saham lainnya.")
 
 
 # ============================================================
