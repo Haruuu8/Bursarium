@@ -156,18 +156,18 @@ def fmt_num(v, dec=2):
 
 
 # ============================================================
-# ANALYZE SETUP SIGNALS (Elite Zone + Fibo Sniper)
+# ANALYZE SETUP SIGNALS (Strong Zone + Fibo Sniper)
 # ============================================================
 @st.cache_data(ttl=1800)
 def analyze_setup_signals(kode, harga):
     """
     Analisa apakah saham ini memiliki:
-    - Elite resistance warning (jika entry dekat elite)
+    - Strong Zone warning (jika entry dekat zona kuat)
     - Fibo sniper confirmation (jika di zona 0.786/0.850)
     """
     result = {
-        "elite_warning": False,
-        "elite_info": "",
+        "strong_zone": False,
+        "strong_zone_info": "",
         "fibo_signal": None,
         "fibo_info": "",
         "rsi": 50,
@@ -182,15 +182,15 @@ def analyze_setup_signals(kode, harga):
     if df.empty or len(df) < 100: return result
     df = df.sort_values("Date").reset_index(drop=True)
     
-    # === Cek Elite Resistance ===
+    # === Cek Strong Zone (Tanpa label Elite) ===
     try:
         sr = get_support_resistance(kode_clean, timeframe="daily")
         if sr:
             for z in sr.get("resistances", []):
                 if z.get("is_elite", False):
                     if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
-                        result["elite_warning"] = True
-                        result["elite_info"] = f"Entry Anda berada di ZONA ELITE Resistance ({z['lower']:,.0f}-{z['upper']:,.0f}). Risiko ditolak 94%!"
+                        result["strong_zone"] = True
+                        result["strong_zone_info"] = f"Harga di zona resistance kuat ({z['lower']:,.0f}-{z['upper']:,.0f}). Waspada tertahan."
                         break
     except Exception:
         pass
@@ -222,7 +222,7 @@ def analyze_setup_signals(kode, harga):
         
         if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
             result["fibo_signal"] = "BUY"
-            result["fibo_info"] = f"Harga di Fib 0.786/0.850 + RSI oversold ({rsi_val:.1f}). Win Rate 90%+!"
+            result["fibo_info"] = f"Harga di Fib 0.786/0.850 + RSI oversold ({rsi_val:.1f}). Timing terbaik."
         elif dist_850 < 3 or dist_786 < 3:
             result["fibo_signal"] = "WATCH"
             result["fibo_info"] = f"Dekat Fib 0.786/0.850. Tunggu RSI < 45 (sekarang {rsi_val:.1f})."
@@ -234,7 +234,7 @@ def analyze_setup_signals(kode, harga):
         
         if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
             result["fibo_signal"] = "SELL"
-            result["fibo_info"] = f"Harga di Fib 0.786/0.850 RESISTANCE + RSI ({rsi_val:.1f}). Win Rate 95%! Jangan beli."
+            result["fibo_info"] = f"Harga di Fib 0.786/0.850 RESISTANCE + RSI ({rsi_val:.1f}). Jangan beli."
         elif dist_850 < 3 or dist_786 < 3:
             result["fibo_signal"] = "WATCH"
             result["fibo_info"] = "Dekat Fib 0.786/0.850 (Resistance). Waspada."
@@ -414,10 +414,10 @@ def setup_row(r, tipe="support"):
     zona_hi = r.get("zona_hi", 0)
     lot = r.get("lot", 0)
 
-    # === ANALISA SIGNAL (ELITE + FIBO) ===
+    # === ANALISA SIGNAL (STRONG ZONE + FIBO) ===
     signals = analyze_setup_signals(kode, harga)
-    elite_warning = signals.get("elite_warning", False)
-    elite_info = signals.get("elite_info", "")
+    strong_zone = signals.get("strong_zone", False)
+    strong_info = signals.get("strong_zone_info", "")
     fibo_signal = signals.get("fibo_signal")
     fibo_info = signals.get("fibo_info", "")
 
@@ -467,20 +467,23 @@ def setup_row(r, tipe="support"):
 
     # === BUILD SIGNAL BANNERS ===
     signal_banners = ""
-    if elite_warning:
+    
+    # Strong Zone (Tanpa label Elite)
+    if strong_zone:
         signal_banners += (
-            f'<div style="background:rgba(244,63,94,0.15); border:1px solid #f43f5e; '
+            f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
             f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f43f5e; font-weight:800; letter-spacing:0.5px;">🚨 ELITE ZONE WARNING</div>'
-            f'<div style="font-size:12px; color:#fda4af; margin-top:4px;">{elite_info}</div>'
+            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⚠️ ZONA KUAT TERDETEKSI</div>'
+            f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{strong_info}</div>'
             f'</div>'
         )
     
+    # Fibo Sniper (Tetap dibedakan)
     if fibo_signal == "BUY":
         signal_banners += (
             f'<div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; '
             f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#10b981; font-weight:800; letter-spacing:0.5px;">✅ FIBO SNIPER BUY (WR 90%+)</div>'
+            f'<div style="font-size:11px; color:#10b981; font-weight:800; letter-spacing:0.5px;">✅ FIBO CONFIRMATION</div>'
             f'<div style="font-size:12px; color:#6ee7b7; margin-top:4px;">{fibo_info}</div>'
             f'</div>'
         )
@@ -488,7 +491,7 @@ def setup_row(r, tipe="support"):
         signal_banners += (
             f'<div style="background:rgba(244,63,94,0.15); border:1px solid #f43f5e; '
             f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f43f5e; font-weight:800; letter-spacing:0.5px;">🚨 FIBO SNIPER SELL (WR 95%)</div>'
+            f'<div style="font-size:11px; color:#f43f5e; font-weight:800; letter-spacing:0.5px;">🚨 FIBO WARNING</div>'
             f'<div style="font-size:12px; color:#fda4af; margin-top:4px;">{fibo_info}</div>'
             f'</div>'
         )
@@ -496,17 +499,19 @@ def setup_row(r, tipe="support"):
         signal_banners += (
             f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
             f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⏳ FIBO SNIPER WATCH</div>'
+            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⏳ FIBO WATCH</div>'
             f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{fibo_info}</div>'
             f'</div>'
         )
     
-    # Ubah border kartu jika ada peringatan elite atau sinyal sell
+    # Ubah border kartu sesuai signal
     card_border = "border:1px solid #1a2338;"
-    if elite_warning or fibo_signal == "SELL":
-        card_border = "border:1px solid #f43f5e;"
+    if strong_zone or fibo_signal == "SELL":
+        card_border = "border:1px solid #f59e0b;" # Orange untuk warning
     elif fibo_signal == "BUY":
-        card_border = "border:1px solid #10b981;"
+        card_border = "border:1px solid #10b981;" # Green untuk buy
+    elif fibo_signal == "WATCH":
+        card_border = "border:1px solid #f59e0b;" # Yellow untuk watch
 
     return (
         f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
@@ -536,7 +541,7 @@ def setup_row(r, tipe="support"):
         f'</div>'
         f'</div>'
 
-        # SIGNAL BANNERS (Elite & Fibo)
+        # SIGNAL BANNERS
         f'{signal_banners}'
 
         f'<div style="background:rgba(99,102,241,0.06); '
