@@ -1,0 +1,128 @@
+{
+  "kode": "DADA",
+  "nama": "PT Diamond Citra Propertindo Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 19.0,
+  "update": "2026-10-21 08:25",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 11.684575618098194,
+    "pb": 0.38894922872406174,
+    "ps": 3.435296032730814,
+    "roe": 0.016643703692653576,
+    "eps": 1.6260753168109052,
+    "de": 0.7608916283395772,
+    "margin_net": 0.2940026360401055,
+    "current_ratio": 0.8953954570727594,
+    "roa": 0.009440553446897877,
+    "bv": 48.84956337959334
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 3435282600.0,
+      "2024-Q2": 381143955.0,
+      "2024-Q3": 3385324694.0,
+      "2024-Q4": 29825194913.0,
+      "2025-Q1": 2264843750.0,
+      "2025-Q2": 3129894025.0,
+      "2025-Q3": 3655849144.0,
+      "2025-Q4": 34076327248.0,
+      "2026-Q1": 6764661439.0,
+      "2026-Q2": 13786563820.0
+    },
+    "eps": {
+      "2024-Q1": 30000.0,
+      "2024-Q2": -20000.0,
+      "2024-Q3": 10000.0,
+      "2024-Q4": 130000.0,
+      "2025-Q1": 27610.58,
+      "2025-Q2": 1949.56,
+      "2025-Q3": 89439.85,
+      "2025-Q4": 351000.0,
+      "2026-Q1": 270000.0,
+      "2026-Q2": 550000.0
+    },
+    "net_income": {
+      "2024-Q1": 243619202.0,
+      "2024-Q2": -174465590.0,
+      "2024-Q3": 96602195.0,
+      "2024-Q4": 940228721.0,
+      "2025-Q1": 204777028.0,
+      "2025-Q2": 7233540.0,
+      "2025-Q3": 642995394.0,
+      "2025-Q4": 2648189850.0,
+      "2026-Q1": 2043471931.0,
+      "2026-Q2": 3998642469.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 710000.0,
+      "2022": 170000.0,
+      "2023": 170000.0,
+      "2024": 150000.0,
+      "2025": 470000.0
+    },
+    "revenue_per_share": {
+      "2021": 80469806499.0,
+      "2022": 30007170203.0,
+      "2023": 23589866267.0,
+      "2024": 37026946162.0,
+      "2025": 43126914167.0
+    }
+  },
+  "statistik": {
+    "market_cap": 141199081472,
+    "enterprise_value": 240533340160,
+    "shares_outstanding": 7431530800,
+    "free_float_pct": 77.9990000041445
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2058,
+    "vol_trend": 838.526,
+    "price_chg_20d": -62.0
+  },
+  "neraca": {
+    "aset": 640016968707.0,
+    "aset_lancar": 169829172799.0,
+    "kas": 2841754109.0,
+    "piutang_usaha": 23541216076.0,
+    "persediaan": 143244932418.0,
+    "aset_tetap": 974562848.0,
+    "liabilitas": 276224231657.0,
+    "liabilitas_jangka_pendek": 189669459966.0,
+    "liabilitas_jangka_panjang": 86554771691.0,
+    "utang_usaha": 23541216076.0,
+    "utang_bank": 16096070365.0,
+    "ekuitas": 363027034822.0,
+    "ekuitas_induk": 363027034822.0,
+    "modal_saham": null,
+    "saldo_laba": 532475586.0
+  },
+  "laba_rugi": {
+    "pendapatan": 20551225259.0,
+    "beban_pokok": 11271314209.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6557947362.0,
+    "beban_pajak": -513780631.0,
+    "laba_bersih": 6042114400.0,
+    "laba_induk": 6042114400.0,
+    "eps_basic": 0.82,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

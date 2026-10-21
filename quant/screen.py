@@ -104,7 +104,7 @@ def jalankan_update():
             return False
         print("[OK] update.py selesai")
     except subprocess.TimeoutExpired:
-        print("[!] update.py timeout. Lanjut.")
+        print("[!] update.py timeout (>30 menit). Proses dibatalkan.")
         return False
     except Exception as e:
         print(f"[!] Gagal jalankan update.py: {e}")
@@ -132,7 +132,7 @@ def jalankan_update():
             return False
         print("[OK] gabung.py selesai")
     except subprocess.TimeoutExpired:
-        print("[!] gabung.py timeout. Stop.")
+        print("[!] gabung.py timeout (>15 menit). Proses dibatalkan.")
         return False
     except Exception as e:
         print(f"[!] Gagal jalankan gabung.py: {e}")
@@ -165,9 +165,9 @@ def jalankan_scan_json():
     scan_script = os.path.join(root, "scan_all.py")
 
     if not os.path.exists(scan_script):
-        print(f"[!] File {scan_script} tidak ditemukan.")
-        print(f"    Buat scan_all.py dulu di root folder.")
-        print(f"    Tanpa scan_all.py, Watchlist tetap pakai JSON lama.")
+        print(f"\n[!] ERROR FATAL: File 'scan_all.py' TIDAK DITEMUKAN di folder utama.")
+        print(f"    Script ini wajib ada untuk meng-update data_setups.json & data_scans/")
+        print(f"    Tanpa file ini, Tab Buy Support, Breakout, Bottom Fishing, & Pre-Cross akan STUCK.\n")
         return False
 
     env = _subprocess_env()
@@ -190,7 +190,7 @@ def jalankan_scan_json():
         print("\n[OK] Scan JSON selesai.")
         return True
     except subprocess.TimeoutExpired:
-        print("[!] scan_all.py timeout (>30 menit). Skip.")
+        print("[!] scan_all.py timeout (>30 menit). Proses dibatalkan.")
         return False
     except Exception as e:
         print(f"[!] Gagal jalankan scan_all.py: {e}")
@@ -223,13 +223,12 @@ def jalankan_git_push():
             cwd=root, capture_output=True, text=True, env=env
         )
         
-        # Kalau tidak ada perubahan (misal script dijalankan 2x di hari yang sama)
         if result_commit.returncode != 0:
             if "nothing to commit" in result_commit.stdout or "nothing to commit" in result_commit.stderr:
                 print("  [i] Tidak ada perubahan data baru untuk di-commit.")
-                return True # Tetap lanjut ke push (siapa tahu ada commit sebelumnya yang belum di-push)
             else:
-                print(f"  [!] Git commit gagal: {result_commit.stderr}")
+                print(f"  [!] Git commit gagal (bukan karena kosong):")
+                print(f"      {result_commit.stderr}")
                 return False
     except Exception as e:
         print(f"[!] Git commit error: {e}")
@@ -792,7 +791,7 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
 
 
 # ============================================================
-# MAIN
+# MAIN (DENGAN ERROR HANDLING BARU)
 # ============================================================
 def main():
     print("=" * 100)
@@ -803,7 +802,13 @@ def main():
     print(f"\nBulan berjalan : {bulan_label}")
     print(f"Periode        : {bulan_start.date()} s/d {bulan_end.date()}")
 
-    jalankan_update()
+    # ✅ FIX #1: Cek apakah update berhasil. Kalau gagal, STOP.
+    if not jalankan_update():
+        print("\n" + "=" * 100)
+        print("[!] STOP: Data OHLCV gagal diupdate.")
+        print("    Screener dibatalkan agar tidak memproses data lama.")
+        print("=" * 100)
+        return
 
     print(f"\n{'='*100}")
     print("STEP 2: Proses screening")
@@ -946,7 +951,15 @@ def main():
     # ============================================================
     # STEP 3: Regenerate JSON untuk Watchlist
     # ============================================================
-    jalankan_scan_json()
+    scan_ok = jalankan_scan_json()
+    
+    # ✅ FIX #2: Peringatan keras kalau scan_all.py gagal
+    if not scan_ok:
+        print("\n" + "!" * 100)
+        print("[!] PERINGATAN BESAR: Gagal regenerate data_setups.json!")
+        print("    Watchlist Anda (Buy Support, Breakout, Bottom Fishing, Pre-Cross) TIDAK AKAN UPDATE.")
+        print("    Pastikan file 'scan_all.py' ada di folder utama dan tidak error.")
+        print("!" * 100 + "\n")
 
     # ============================================================
     # STEP 4: Auto Push ke GitHub

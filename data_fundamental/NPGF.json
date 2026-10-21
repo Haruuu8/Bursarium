@@ -1,0 +1,117 @@
+{
+  "kode": "NPGF",
+  "nama": "PT Nusa Palapa Gemilang Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Agricultural Inputs",
+  "harga": 35.0,
+  "update": "2026-10-21 08:50",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 26.852467799190382,
+    "pb": 0.47031779796204914,
+    "ps": 0.36369132250888164,
+    "roe": 0.00875744087059718,
+    "eps": 1.3034183771018346,
+    "de": 0.8386553185221556,
+    "margin_net": 0.013544055810015613,
+    "current_ratio": 1.7758134474393303,
+    "roa": 0.004762959529378292,
+    "bv": 74.4177663521554
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 48789179299.0,
+      "2024-Q4": 67241975360.0,
+      "2025-Q1": 40633268724.0,
+      "2025-Q2": 30934345408.0,
+      "2025-Q3": 60324467436.0,
+      "2026-Q1": 85258010734.0,
+      "2026-Q2": 70654774891.0
+    },
+    "eps": {
+      "2024-Q3": 710185.7,
+      "2024-Q4": -120185.7,
+      "2025-Q1": 280000.0,
+      "2025-Q2": 160000.0,
+      "2025-Q3": 810000.0,
+      "2026-Q1": 490000.0,
+      "2026-Q2": 160000.0
+    },
+    "net_income": {
+      "2024-Q3": 2307628426.0,
+      "2024-Q4": -385156510.0,
+      "2025-Q1": 896562822.0,
+      "2025-Q2": 525709528.0,
+      "2025-Q3": 2616792985.0,
+      "2026-Q1": 1602910008.0,
+      "2026-Q2": 508781462.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 1320000.0,
+      "2022": -11805120.0,
+      "2023": -18560000.0,
+      "2024": 920000.0
+    },
+    "revenue_per_share": {
+      "2021": 352351492551.0,
+      "2022": 154393059177.0,
+      "2023": 52286426282.0,
+      "2024": 168007044537.0
+    }
+  },
+  "statistik": {
+    "market_cap": 113408253952,
+    "enterprise_value": 290884616192,
+    "shares_outstanding": 3240235840,
+    "free_float_pct": 19.905000001481373
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3968,
+    "vol_trend": 1.223,
+    "price_chg_20d": -36.36
+  },
+  "neraca": {
+    "aset": 443357004605.0,
+    "aset_lancar": 354276834040.0,
+    "kas": 6646820970.0,
+    "piutang_usaha": 206298451294.0,
+    "persediaan": 139372097766.0,
+    "aset_tetap": 85781547621.0,
+    "liabilitas": 202225890938.0,
+    "liabilitas_jangka_pendek": 199501155119.0,
+    "liabilitas_jangka_panjang": 2724735819.0,
+    "utang_usaha": 206298451294.0,
+    "utang_bank": 183649870374.0,
+    "ekuitas": 241131113667.0,
+    "ekuitas_induk": 241131113667.0,
+    "modal_saham": null,
+    "saldo_laba": 4853526629.0
+  },
+  "laba_rugi": {
+    "pendapatan": 155912785625.0,
+    "beban_pokok": 120288300760.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2394487893.0,
+    "beban_pajak": -282796423.0,
+    "laba_bersih": 2111691470.0,
+    "laba_induk": 2111691470.0,
+    "eps_basic": 0.65,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 238182860.0,
+    "dividen_dibayar": null
+  }
+}

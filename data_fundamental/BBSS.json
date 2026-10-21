@@ -1,0 +1,122 @@
+{
+  "kode": "BBSS",
+  "nama": "PT Bumi Benowo Sukses Sejahtera Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 69.0,
+  "update": "2026-10-21 08:31",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3492511972567092,
+    "ps": 0.0005459278886456405,
+    "roe": -0.002553927894980478,
+    "eps": -261213.0715347071,
+    "de": 0.014156702188916055,
+    "margin_net": -2.066717400428772,
+    "current_ratio": 103.57744895354573,
+    "roa": -0.00251827739191407,
+    "bv": 51.13947657803859
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 126666668.0,
+      "2024-Q4": 101111110.0,
+      "2025-Q1": 165555553.0,
+      "2025-Q2": 176666668.0,
+      "2025-Q3": 181856666.0,
+      "2025-Q4": 2674446666.0,
+      "2026-Q1": 152224445.0,
+      "2026-Q2": 151113333.0
+    },
+    "eps": {
+      "2024-Q3": -20000.0,
+      "2024-Q4": -59000.0,
+      "2025-Q1": -100000.0,
+      "2025-Q2": -30000.0,
+      "2025-Q3": -30000.0,
+      "2025-Q4": 40000.0,
+      "2026-Q1": -100000.0,
+      "2026-Q2": -30000.0
+    },
+    "net_income": {
+      "2024-Q3": -106986701.0,
+      "2024-Q4": -267762983.0,
+      "2025-Q1": -492832050.0,
+      "2025-Q2": -131436441.0,
+      "2025-Q3": -146325811.0,
+      "2025-Q4": 201808081.0,
+      "2026-Q1": -472091519.0,
+      "2026-Q2": -154821945.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": -228000.0,
+      "2022": -377000.0,
+      "2023": -250000.0,
+      "2024": -189000.0,
+      "2025": -120000.0
+    },
+    "revenue_per_share": {
+      "2021": 8974592074.0,
+      "2022": 482000000.0,
+      "2023": 450555555.0,
+      "2024": 493333331.0,
+      "2025": 3198525553.0
+    }
+  },
+  "statistik": {
+    "market_cap": 331201085440,
+    "enterprise_value": 330653728768,
+    "shares_outstanding": 4800016020,
+    "free_float_pct": 10.482999992154193
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1564,
+    "vol_trend": 0.601,
+    "price_chg_20d": -20.69
+  },
+  "neraca": {
+    "aset": 248945356859.0,
+    "aset_lancar": 84600972017.0,
+    "kas": 547361143.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": null,
+    "liabilitas": 3475050030.0,
+    "liabilitas_jangka_pendek": 816789493.0,
+    "liabilitas_jangka_panjang": 2658260537.0,
+    "utang_usaha": 1210909.0,
+    "utang_bank": null,
+    "ekuitas": 245470306829.0,
+    "ekuitas_induk": 245470306829.0,
+    "modal_saham": null,
+    "saldo_laba": 960000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 303337778.0,
+    "beban_pokok": 38333318.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -596579687.0,
+    "beban_pajak": -30333777.0,
+    "laba_bersih": -626913464.0,
+    "laba_induk": -626913464.0,
+    "eps_basic": -0.13,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "kode": "ROCK",
+  "nama": "PT Rockfields Properti Indonesia Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 2380.0,
+  "update": "2026-10-21 08:39",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 109.13926477266372,
+    "pb": 4.085155250248733,
+    "ps": 24.68578952641812,
+    "roe": 0.01871533246425144,
+    "eps": 21.80700048655745,
+    "de": 0.12390549840883093,
+    "margin_net": 0.226186144627586,
+    "current_ratio": 2.6104253280845033,
+    "roa": 0.01665357139825563,
+    "bv": 582.5971974639369
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 30735846153.0,
+      "2024-Q2": 29826120752.0,
+      "2024-Q3": 27854289438.0,
+      "2024-Q4": 30936568301.0,
+      "2025-Q1": 29985260498.0,
+      "2025-Q2": 37088807811.0,
+      "2025-Q3": 32582617701.0,
+      "2025-Q4": 36462750337.0,
+      "2026-Q1": 34607818355.0,
+      "2026-Q2": 34576530283.0
+    },
+    "eps": {
+      "2024-Q1": 7470000.0,
+      "2024-Q2": 5330000.0,
+      "2024-Q3": -160000.0,
+      "2024-Q4": -5100000.0,
+      "2025-Q1": 3400000.0,
+      "2025-Q2": 4640000.0,
+      "2025-Q3": 4080000.0,
+      "2025-Q4": 6080000.0,
+      "2026-Q1": 7320000.0,
+      "2026-Q2": 3580000.0
+    },
+    "net_income": {
+      "2024-Q1": 10716991207.0,
+      "2024-Q2": 7649999710.0,
+      "2024-Q3": -230890218.0,
+      "2024-Q4": -7317219799.0,
+      "2025-Q1": 4885601098.0,
+      "2025-Q2": 6658314106.0,
+      "2025-Q3": 5853848738.0,
+      "2025-Q4": 8719553732.0,
+      "2026-Q1": 10510316099.0,
+      "2026-Q2": 5138224988.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": -3700000.0,
+      "2022": -4000000.0,
+      "2023": 8160000.0,
+      "2024": 7540000.0,
+      "2025": 18200000.0
+    },
+    "revenue_per_share": {
+      "2021": 83747116116.0,
+      "2022": 97965210524.0,
+      "2023": 106928671183.0,
+      "2024": 119352824644.0,
+      "2025": 136119436347.0
+    }
+  },
+  "statistik": {
+    "market_cap": 3415740776448,
+    "enterprise_value": 3356790620160,
+    "shares_outstanding": 1435185100,
+    "free_float_pct": 20.0
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1944,
+    "vol_trend": 5.577,
+    "price_chg_20d": 24.28
+  },
+  "neraca": {
+    "aset": 939650763958.0,
+    "aset_lancar": 76593519184.0,
+    "kas": 60602818489.0,
+    "piutang_usaha": 10590009571.0,
+    "persediaan": null,
+    "aset_tetap": 5066330231.0,
+    "liabilitas": 103601701250.0,
+    "liabilitas_jangka_pendek": 29341394431.0,
+    "liabilitas_jangka_panjang": 74260306819.0,
+    "utang_usaha": 10590009571.0,
+    "utang_bank": 12630000000.0,
+    "ekuitas": 836134817102.0,
+    "ekuitas_induk": 836134817102.0,
+    "modal_saham": null,
+    "saldo_laba": -83879620538.0
+  },
+  "laba_rugi": {
+    "pendapatan": 69184348638.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 22212739740.0,
+    "beban_pajak": -6564179500.0,
+    "laba_bersih": 15648541087.0,
+    "laba_induk": 15648541087.0,
+    "eps_basic": 10.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 473456049.0,
+    "dividen_dibayar": null
+  }
+}

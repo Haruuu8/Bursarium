@@ -1,0 +1,128 @@
+{
+  "kode": "AGAR",
+  "nama": "PT Asia Sejahtera Mina Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 1590.0,
+  "update": "2026-10-21 08:19",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 778.3816338474289,
+    "pb": 14.066229104052226,
+    "ps": 5.6017166459844265,
+    "roe": 0.009035560766333136,
+    "eps": 2.04269979,
+    "de": 0.9002801537268638,
+    "margin_net": 0.007196619758737039,
+    "current_ratio": 1.6607797418338794,
+    "roa": 0.004754857303328503,
+    "bv": 113.036691514
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 75341257384.0,
+      "2024-Q2": 82366661096.0,
+      "2024-Q3": 63859005945.0,
+      "2024-Q4": 115100218803.0,
+      "2025-Q1": 43068225521.0,
+      "2025-Q2": 45912759052.0,
+      "2025-Q3": 79547308300.0,
+      "2025-Q4": 66041413163.0,
+      "2026-Q1": 46210698056.0,
+      "2026-Q2": 95710082705.0
+    },
+    "eps": {
+      "2024-Q1": -1484830.0,
+      "2024-Q2": 485470.0,
+      "2024-Q3": 3084730.0,
+      "2024-Q4": 1184630.0,
+      "2025-Q1": -1454530.0,
+      "2025-Q2": -1822190.0,
+      "2025-Q3": 4417840.0,
+      "2025-Q4": 638880.0,
+      "2026-Q1": 880000.0,
+      "2026-Q2": -56910.0
+    },
+    "net_income": {
+      "2024-Q1": -1842526273.0,
+      "2024-Q2": 602447935.0,
+      "2024-Q3": 3827936714.0,
+      "2024-Q4": 745784824.0,
+      "2025-Q1": -1804929984.0,
+      "2025-Q2": -2261185850.0,
+      "2025-Q3": 5481993996.0,
+      "2025-Q4": 620327001.0,
+      "2026-Q1": 1100958879.0,
+      "2026-Q2": -79608984.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 1990000.0,
+      "2022": -1402520.0,
+      "2023": 165616.52,
+      "2024": 3270000.0,
+      "2025": 1780000.0
+    },
+    "revenue_per_share": {
+      "2021": 392655804739.0,
+      "2022": 540850470104.0,
+      "2023": 437698250180.0,
+      "2024": 336667143228.0,
+      "2025": 234569706036.0
+    }
+  },
+  "statistik": {
+    "market_cap": 1589999960064,
+    "enterprise_value": 1631587926016,
+    "shares_outstanding": 1000000000,
+    "free_float_pct": 25.007
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2284,
+    "vol_trend": 0.839,
+    "price_chg_20d": -43.21
+  },
+  "neraca": {
+    "aset": 214801376749.0,
+    "aset_lancar": 153448499297.0,
+    "kas": 7439065694.0,
+    "piutang_usaha": 41941709807.0,
+    "persediaan": 78584160240.0,
+    "aset_tetap": 54723964221.0,
+    "liabilitas": 101764690013.0,
+    "liabilitas_jangka_pendek": 92395454636.0,
+    "liabilitas_jangka_panjang": 9369235377.0,
+    "utang_usaha": 41941709807.0,
+    "utang_bank": 7049108104.0,
+    "ekuitas": 113036691514.0,
+    "ekuitas_induk": 113036691514.0,
+    "modal_saham": null,
+    "saldo_laba": 7449235127.0
+  },
+  "laba_rugi": {
+    "pendapatan": 141920780761.0,
+    "beban_pokok": 131083518268.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1188599061.0,
+    "beban_pajak": -167209900.0,
+    "laba_bersih": 1021349895.0,
+    "laba_induk": 1021349895.0,
+    "eps_basic": 0.82309,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3028200.0,
+    "dividen_dibayar": null
+  }
+}

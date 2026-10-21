@@ -1,0 +1,128 @@
+{
+  "kode": "WOWS",
+  "nama": "PT Ginting Jaya Energi Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 47.0,
+  "update": "2026-10-21 08:17",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 20.202896272190532,
+    "pb": 0.2149321878853565,
+    "ps": 0.4927445771030699,
+    "roe": 0.0053193409744228745,
+    "eps": 2.326399114601005,
+    "de": 0.19139339863674876,
+    "margin_net": 0.024389798891426135,
+    "current_ratio": 3.8209097572833777,
+    "roa": 0.004464806486681501,
+    "bv": 218.67362195684487
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 40907077993.0,
+      "2024-Q2": 36500472522.0,
+      "2024-Q3": 50351533233.0,
+      "2024-Q4": 53902995399.0,
+      "2025-Q1": 60044897344.0,
+      "2025-Q2": 50456897024.0,
+      "2025-Q3": 56430020057.0,
+      "2025-Q4": 60449442450.0,
+      "2026-Q1": 63535363650.0,
+      "2026-Q2": 54536803358.0
+    },
+    "eps": {
+      "2024-Q1": -380000.0,
+      "2024-Q2": -840000.0,
+      "2024-Q3": 30000.0,
+      "2024-Q4": 1390000.0,
+      "2025-Q1": 811460.44,
+      "2025-Q2": 478539.56,
+      "2025-Q3": 610000.0,
+      "2025-Q4": 4130000.0,
+      "2026-Q1": 1312700.0,
+      "2026-Q2": -149600.0
+    },
+    "net_income": {
+      "2024-Q1": -946611709.0,
+      "2024-Q2": -2074879679.0,
+      "2024-Q3": 66312916.0,
+      "2024-Q4": 3445422615.0,
+      "2025-Q1": 2008948836.0,
+      "2025-Q2": 1174328146.0,
+      "2025-Q3": 1532515960.0,
+      "2025-Q4": 10200917334.0,
+      "2026-Q1": 3249947299.0,
+      "2026-Q2": -370190891.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": -13680000.0,
+      "2022": -11170000.0,
+      "2023": -4020000.0,
+      "2024": 200000.0,
+      "2025": 6030000.0
+    },
+    "revenue_per_share": {
+      "2021": 95542840629.0,
+      "2022": 98694773171.0,
+      "2023": 122458371892.0,
+      "2024": 181662079147.0,
+      "2025": 227381256875.0
+    }
+  },
+  "statistik": {
+    "market_cap": 116358840320,
+    "enterprise_value": 179980615680,
+    "shares_outstanding": 2475720000,
+    "free_float_pct": 43.86099999192154
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2761,
+    "vol_trend": 0.361,
+    "price_chg_20d": -7.84
+  },
+  "neraca": {
+    "aset": 644990195340.0,
+    "aset_lancar": 292142836193.0,
+    "kas": 1888332254.0,
+    "piutang_usaha": 25044793796.0,
+    "persediaan": 99488084527.0,
+    "aset_tetap": 261461157335.0,
+    "liabilitas": 103615535989.0,
+    "liabilitas_jangka_pendek": 76458973059.0,
+    "liabilitas_jangka_panjang": 27156562930.0,
+    "utang_usaha": 25044793796.0,
+    "utang_bank": 41104437152.0,
+    "ekuitas": 541374659351.0,
+    "ekuitas_induk": 541374659351.0,
+    "modal_saham": null,
+    "saldo_laba": 1517765365.0
+  },
+  "laba_rugi": {
+    "pendapatan": 118072167008.0,
+    "beban_pokok": 92106907591.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2879756408.0,
+    "beban_pajak": null,
+    "laba_bersih": 2879756408.0,
+    "laba_induk": 2879756408.0,
+    "eps_basic": 1.1631,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 123683000.0,
+    "dividen_dibayar": null
+  }
+}

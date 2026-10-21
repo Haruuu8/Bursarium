@@ -1,0 +1,128 @@
+{
+  "kode": "ASPI",
+  "nama": "PT Andalan Sakti Primaindo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Residential Construction",
+  "harga": 825.0,
+  "update": "2026-10-21 08:25",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 11.608494884853302,
+    "ps": 92.11099211077853,
+    "roe": -0.033965661884975996,
+    "eps": -4.827787121940797,
+    "de": 0.7032315818529913,
+    "margin_net": -0.5390209230322508,
+    "current_ratio": 2.5175127197135287,
+    "roa": -0.01766015556039901,
+    "bv": 71.06864483150656
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 909893677.0,
+      "2024-Q2": 24228091531.0,
+      "2024-Q3": 922644144.0,
+      "2024-Q4": 13293356933.0,
+      "2025-Q1": 2953108118.0,
+      "2025-Q2": 682360360.0,
+      "2025-Q3": 400000000.0,
+      "2025-Q4": 390243600.0,
+      "2026-Q1": 2641687900.0,
+      "2026-Q2": 420616800.0
+    },
+    "eps": {
+      "2024-Q1": -1930000.0,
+      "2024-Q2": 2000000.0,
+      "2024-Q3": 1000000.0,
+      "2024-Q4": 190000.0,
+      "2025-Q1": 10000.0,
+      "2025-Q2": 1150000.0,
+      "2025-Q3": -3740000.0,
+      "2025-Q4": 19460000.0,
+      "2026-Q1": 1140000.0,
+      "2026-Q2": 1710000.0
+    },
+    "net_income": {
+      "2024-Q1": -1316954232.0,
+      "2024-Q2": 1363568133.0,
+      "2024-Q3": -777918404.0,
+      "2024-Q4": 1590580643.0,
+      "2025-Q1": 4404598.0,
+      "2025-Q2": -798618593.0,
+      "2025-Q3": -966652127.0,
+      "2025-Q4": -9785039974.0,
+      "2026-Q1": -638928559.0,
+      "2026-Q2": -1011717747.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": -1030000.0,
+      "2022": -4030000.0,
+      "2023": -3100000.0,
+      "2024": 1260000.0,
+      "2025": 16880000.0
+    },
+    "revenue_per_share": {
+      "2021": 6107732728.0,
+      "2022": 9813812959.0,
+      "2023": 8395978746.0,
+      "2024": 39353986285.0,
+      "2025": 4425712078.0
+    }
+  },
+  "statistik": {
+    "market_cap": 564143849472,
+    "enterprise_value": 600693997568,
+    "shares_outstanding": 683810725,
+    "free_float_pct": 48.817000055095654
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2444,
+    "vol_trend": 1.002,
+    "price_chg_20d": 21.32
+  },
+  "neraca": {
+    "aset": 93467257429.0,
+    "aset_lancar": 79725793596.0,
+    "kas": 1920943211.0,
+    "piutang_usaha": null,
+    "persediaan": 47269994031.0,
+    "aset_tetap": 1163279981.0,
+    "liabilitas": 34175297887.0,
+    "liabilitas_jangka_pendek": 31668476974.0,
+    "liabilitas_jangka_panjang": 2506820913.0,
+    "utang_usaha": 1157942325.0,
+    "utang_bank": 2964153924.0,
+    "ekuitas": 48597501547.0,
+    "ekuitas_induk": 48597501547.0,
+    "modal_saham": null,
+    "saldo_laba": -21818337127.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3062304700.0,
+    "beban_pokok": 1780250651.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1950158683.0,
+    "beban_pajak": null,
+    "laba_bersih": -1650646306.0,
+    "laba_induk": -1650646306.0,
+    "eps_basic": 2.85,
+    "eps_diluted": 2.85
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4112000.0,
+    "dividen_dibayar": null
+  }
+}

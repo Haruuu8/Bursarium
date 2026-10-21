@@ -1,13 +1,12 @@
 ﻿"""
-quant/fundamental.py — Scrape fundamental IDX (tls_client + curl_cffi).
-Output: data_fundamental/{kode}.json untuk Streamlit.
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP & AKURAT)
 
 Fitur:
-- Report list asc+desc (cover ~876 saham)
-- Cache XLSX lokal (~10x lebih cepat di run ke-2)
-- Session per-thread (thread-safe untuk batch parallel)
-- Perhitungan rasio (PE, PB, EPS, BV) murni dari XLSX IDX
-- Batch runner dengan workers
+- Q1/Q2/Q3/Q4 STANDALONE (bukan kumulatif) 
+- Revenue detection untuk bank, asuransi, multifinance, manufaktur
+- 40+ field: neraca, laba rugi, arus kas, rasio
+- Validasi + mark data mencurigakan
+- Cache XLSX lokal (super cepat di run ke-2)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -36,13 +35,10 @@ _thread_local = threading.local()
 
 
 def get_session():
-    """Session tls_client per-thread (thread-safe)."""
     s = getattr(_thread_local, "session", None)
     if s is None:
-        s = tls_client.Session(
-            client_identifier="firefox_120",
-            random_tls_extension_order=True,
-        )
+        s = tls_client.Session(client_identifier="firefox_120",
+                                random_tls_extension_order=True)
         _thread_local.session = s
     return s
 
@@ -59,73 +55,121 @@ DL_HEADERS = {
     "Accept-Language": "id-ID,id;q=0.9,en;q=0.8",
 }
 
+# Ambil 3 tahun terakhir untuk kelengkapan
 SNAPSHOT_CANDIDATES = [(2026, "tw2"), (2026, "tw1"), (2025, "audit")]
-QUARTERLY_PERIODS = [
-    (2024, "tw1", "2024-Q1"), (2024, "tw2", "2024-Q2"),
-    (2024, "tw3", "2024-Q3"), (2024, "audit", "2024-Q4"),
-    (2025, "tw1", "2025-Q1"), (2025, "tw2", "2025-Q2"),
-    (2025, "tw3", "2025-Q3"), (2025, "audit", "2025-Q4"),
-    (2026, "tw1", "2026-Q1"), (2026, "tw2", "2026-Q2"),
-]
-RIWAYAT_YEARS = [2022, 2023, 2024, 2025]
 
+QUARTERLY_PERIODS = [
+    (2024, "tw1", "2024-Q1", 1),
+    (2024, "tw2", "2024-Q2", 2),
+    (2024, "tw3", "2024-Q3", 3),
+    (2024, "audit", "2024-Q4", 4),
+    (2025, "tw1", "2025-Q1", 1),
+    (2025, "tw2", "2025-Q2", 2),
+    (2025, "tw3", "2025-Q3", 3),
+    (2025, "audit", "2025-Q4", 4),
+    (2026, "tw1", "2026-Q1", 1),
+    (2026, "tw2", "2026-Q2", 2),
+]
+RIWAYAT_YEARS = [2021, 2022, 2023, 2024, 2025]
+
+# ============================================================
+# FIELD DETECTION — diperluas untuk semua jenis emiten
+# ============================================================
 FIELDS = {
-    "aset": ["jumlah aset", "total aset"],
-    "aset_lancar": ["jumlah aset lancar"],
-    "aset_tidak_lancar": ["jumlah aset tidak lancar"],
-    "kas": ["kas dan setara kas", "kas dan bank"],
-    "piutang_usaha": ["piutang usaha", "piutang dagang"],
-    "persediaan": ["persediaan"],
-    "aset_tetap": ["aset tetap"],
-    "liabilitas": ["jumlah liabilitas", "total liabilitas"],
-    "liabilitas_jangka_pendek": ["jumlah liabilitas jangka pendek"],
-    "liabilitas_jangka_panjang": ["jumlah liabilitas jangka panjang"],
-    "utang_usaha": ["utang usaha", "utang dagang"],
-    "utang_bank": ["utang bank"],
-    "ekuitas": ["jumlah ekuitas", "total ekuitas"],
+    "aset": ["jumlah aset", "total aset", "total assets"],
+    "aset_lancar": ["jumlah aset lancar", "total aset lancar", "total current assets"],
+    "aset_tidak_lancar": ["jumlah aset tidak lancar", "total aset tidak lancar"],
+    "kas": ["kas dan setara kas", "kas dan bank", "cash and cash equivalents"],
+    "piutang_usaha": ["piutang usaha", "piutang dagang", "trade receivables",
+                       "piutang pembiayaan"],
+    "persediaan": ["persediaan", "inventories"],
+    "aset_tetap": ["aset tetap", "property, plant"],
+    "liabilitas": ["jumlah liabilitas", "total liabilitas", "total liabilities"],
+    "liabilitas_jangka_pendek": ["jumlah liabilitas jangka pendek",
+                                   "total liabilitas jangka pendek"],
+    "liabilitas_jangka_panjang": ["jumlah liabilitas jangka panjang",
+                                    "total liabilitas jangka panjang"],
+    "utang_usaha": ["utang usaha", "utang dagang", "trade payables"],
+    "utang_bank": ["utang bank", "pinjaman bank", "bank loans"],
+    "ekuitas": ["jumlah ekuitas", "total ekuitas", "total equity"],
     "ekuitas_induk": ["ekuitas yang diatribusikan kepada pemilik entitas induk",
-                       "ekuitas yang dapat diatribusikan"],
-    "modal_saham": ["modal saham"],
-    "saldo_laba": ["saldo laba"],
-    "pendapatan": ["jumlah pendapatan", "total pendapatan", "penjualan neto",
-                    "pendapatan usaha", "pendapatan bunga bersih",
-                    "pendapatan bunga dan syariah",
-                    "jumlah pendapatan bunga dan syariah",
-                    "pendapatan bunga", "pendapatan syariah"],
-    "beban_pokok": ["beban pokok pendapatan", "beban pokok penjualan"],
-    "laba_kotor": ["laba kotor"],
-    "beban_operasi": ["jumlah beban operasional", "total beban operasional"],
-    "laba_operasi": ["laba operasi", "laba usaha"],
+                       "ekuitas yang dapat diatribusikan",
+                       "equity attributable to owners"],
+    "modal_saham": ["modal saham", "share capital"],
+    "saldo_laba": ["saldo laba", "retained earnings"],
+    # ⭐ REVENUE — tambah label bank, asuransi, multifinance
+    "pendapatan": [
+        "jumlah pendapatan", "total pendapatan", "penjualan neto",
+        "penjualan bersih", "penjualan", "total penjualan",
+        "pendapatan usaha", "pendapatan operasional", "pendapatan operasi",
+        "pendapatan bruto", "pendapatan neto",
+        "pendapatan bunga bersih", "pendapatan bunga dan syariah",
+        "jumlah pendapatan bunga dan syariah", "pendapatan bunga",
+        "pendapatan syariah", "pendapatan premi", "premi bruto",
+        "premi neto", "pendapatan premi bruto",
+        "pendapatan pembiayaan", "pendapatan sewa",
+        "pendapatan jasa", "pendapatan kontrak",
+        "revenue", "sales", "total revenue",
+    ],
+    "beban_pokok": ["beban pokok pendapatan", "beban pokok penjualan",
+                     "harga pokok penjualan", "hpp", "cost of goods sold",
+                     "cost of revenue"],
+    "laba_kotor": ["laba kotor", "gross profit"],
+    "beban_operasi": ["jumlah beban operasional", "total beban operasional",
+                       "beban operasi", "beban usaha"],
+    "laba_operasi": ["laba operasi", "laba usaha", "operating profit",
+                      "operating income"],
     "laba_sebelum_pajak": ["laba (rugi) sebelum pajak penghasilan",
                             "jumlah laba (rugi) sebelum pajak",
-                            "laba sebelum pajak penghasilan"],
-    "beban_pajak": ["beban pajak", "pendapatan (beban) pajak"],
+                            "laba sebelum pajak penghasilan",
+                            "laba sebelum pajak", "profit before tax"],
+    "beban_pajak": ["beban pajak", "pendapatan (beban) pajak",
+                     "beban pajak penghasilan", "income tax expense"],
     "laba_bersih": ["jumlah laba (rugi) tahun berjalan",
                      "laba (rugi) tahun berjalan",
                      "laba bersih tahun berjalan",
-                     "jumlah laba (rugi) periode berjalan"],
+                     "jumlah laba (rugi) periode berjalan",
+                     "laba bersih", "net income", "net profit"],
     "laba_induk": ["laba (rugi) yang dapat diatribusikan ke entitas induk",
-                    "laba (rugi) yang dapat diatribusikan kepada pemilik entitas induk"],
-    "eps_basic": ["laba (rugi) per saham dasar", "laba per saham dasar"],
-    "eps_diluted": ["laba (rugi) per saham dilusian", "laba per saham dilusian"],
-    "arus_kas_operasi": ["arus kas dari aktivitas operasi", "kas neto dari aktivitas operasi"],
-    "arus_kas_investasi": ["arus kas dari aktivitas investasi", "kas neto dari aktivitas investasi"],
-    "arus_kas_pendanaan": ["arus kas dari aktivitas pendanaan", "kas neto dari aktivitas pendanaan"],
-    "capex": ["perolehan aset tetap", "pembelian aset tetap"],
-    "dividen_dibayar": ["dividen dibayar", "dividends paid"],
+                    "laba (rugi) yang dapat diatribusikan kepada pemilik entitas induk",
+                    "laba yang dapat diatribusikan kepada pemilik entitas induk",
+                    "net income attributable to"],
+    "eps_basic": ["laba (rugi) per saham dasar", "laba per saham dasar",
+                    "basic earnings per share", "eps dasar"],
+    "eps_diluted": ["laba (rugi) per saham dilusian", "laba per saham dilusian",
+                      "diluted earnings per share", "eps dilusian"],
+    "arus_kas_operasi": ["arus kas dari aktivitas operasi",
+                          "kas neto dari aktivitas operasi",
+                          "net cash from operating"],
+    "arus_kas_investasi": ["arus kas dari aktivitas investasi",
+                            "kas neto dari aktivitas investasi",
+                            "net cash from investing"],
+    "arus_kas_pendanaan": ["arus kas dari aktivitas pendanaan",
+                            "kas neto dari aktivitas pendanaan",
+                            "net cash from financing"],
+    "capex": ["perolehan aset tetap", "pembelian aset tetap",
+               "capex", "capital expenditure"],
+    "dividen_dibayar": ["dividen dibayar", "dividends paid",
+                         "pembayaran dividen"],
 }
+
 EXACT_ONLY = {
     "aset": ["jumlah aset", "total aset"],
     "aset_lancar": ["jumlah aset lancar", "total aset lancar"],
     "aset_tidak_lancar": ["jumlah aset tidak lancar", "total aset tidak lancar"],
     "liabilitas": ["jumlah liabilitas", "total liabilitas"],
-    "liabilitas_jangka_pendek": ["jumlah liabilitas jangka pendek", "total liabilitas jangka pendek"],
-    "liabilitas_jangka_panjang": ["jumlah liabilitas jangka panjang", "total liabilitas jangka panjang"],
+    "liabilitas_jangka_pendek": ["jumlah liabilitas jangka pendek",
+                                   "total liabilitas jangka pendek"],
+    "liabilitas_jangka_panjang": ["jumlah liabilitas jangka panjang",
+                                    "total liabilitas jangka panjang"],
     "ekuitas": ["jumlah ekuitas", "total ekuitas"],
 }
+
 KAS_BLACKLIST = ["penurunan", "kenaikan", "perubahan", "neto", "bersih dari",
-                  "digunakan", "diperoleh", "dari aktivitas", "akhir periode", "awal periode"]
-BLACKLIST_LBL = ["lainnya", "lain-lain", "lain lain", "komprehensif lain", "subjumlah"]
+                  "digunakan", "diperoleh", "dari aktivitas", "akhir periode",
+                  "awal periode"]
+BLACKLIST_LBL = ["lainnya", "lain-lain", "lain lain", "komprehensif lain",
+                  "subjumlah", "total komprehensif"]
 
 _RL_CACHE = {}
 
@@ -157,8 +201,7 @@ def _extract_cookies():
 def _normalize_url(url):
     if not url: return url
     if not url.startswith("http"): url = f"{BASE}{url}"
-    url = re.sub(r"([^:])//+", r"\1/", url)
-    return url
+    return re.sub(r"([^:])//+", r"\1/", url)
 
 
 def get_report_list(year, periode, verbose=False):
@@ -192,7 +235,6 @@ def get_report_list(year, periode, verbose=False):
                 time.sleep(20 * (attempt + 1)); continue
             break
         time.sleep(1.5)
-
     _RL_CACHE[key] = rl
     return rl
 
@@ -205,16 +247,13 @@ def _xlsx_cache_path(url):
 def download_xlsx(url, verbose=False):
     if not url: return None
     url = _normalize_url(url)
-
-    # Cek cache
     cp = _xlsx_cache_path(url)
     if cp.exists():
         try:
             content = cp.read_bytes()
             if content[:2] == b"PK" and zipfile.is_zipfile(io.BytesIO(content)):
                 return content
-        except Exception:
-            pass
+        except Exception: pass
 
     cookies = _extract_cookies()
     if verbose: print(f"    [dl] {url[:80]}...")
@@ -224,13 +263,10 @@ def download_xlsx(url, verbose=False):
                                    impersonate="firefox", timeout=90)
             if r.status_code == 200 and r.content and r.content[:2] == b"PK":
                 if zipfile.is_zipfile(io.BytesIO(r.content)):
-                    try:
-                        cp.write_bytes(r.content)
-                    except Exception:
-                        pass
+                    try: cp.write_bytes(r.content)
+                    except Exception: pass
                     if verbose: print(f"    [dl OK] {len(r.content)} bytes")
                     return r.content
-            if verbose: print(f"    [dl HTTP {r.status_code}]")
             if r.status_code == 429:
                 time.sleep(15 * (attempt + 1)); continue
         except Exception as e:
@@ -240,6 +276,7 @@ def download_xlsx(url, verbose=False):
 
 
 def parse_xlsx(content_bytes):
+    """Parse XLSX — ambil nilai dari kolom 2 (periode berjalan)."""
     try:
         xls = pd.ExcelFile(io.BytesIO(content_bytes))
     except Exception:
@@ -248,8 +285,7 @@ def parse_xlsx(content_bytes):
     for sheet in xls.sheet_names:
         try:
             df = pd.read_excel(xls, sheet_name=sheet, header=None)
-        except Exception:
-            continue
+        except Exception: continue
         if df.empty: continue
         for _, row in df.iterrows():
             if len(row) < 2: continue
@@ -258,9 +294,11 @@ def parse_xlsx(content_bytes):
             ll = str(label).lower().strip()
             if len(ll) < 4: continue
             if any(b in ll for b in BLACKLIST_LBL): continue
+            
             for field, kws in FIELDS.items():
                 if field in hasil: continue
                 matched = False
+                
                 if field in EXACT_ONLY:
                     for ex in EXACT_ONLY[field]:
                         if ll == ex: matched = True; break
@@ -276,10 +314,15 @@ def parse_xlsx(content_bytes):
                     if matched and any(b in ll for b in KAS_BLACKLIST): matched = False
                 else:
                     matched = any(kw in ll for kw in kws)
+                    
                 if not matched: continue
+                
+                # EPS selalu dalam unit, sisanya dalam juta
                 is_ps = "per saham" in ll or field.startswith("eps")
                 min_abs = 0.0000001 if is_ps else 1000
-                for col in range(1, min(len(row), 10)):
+                
+                # Ambil kolom 2, 3, 4 (current period, prior period)
+                for col in range(1, min(len(row), 5)):
                     num = _to_num(row.iloc[col])
                     if num is not None and num != 0 and abs(num) >= min_abs:
                         hasil[field] = num
@@ -287,8 +330,9 @@ def parse_xlsx(content_bytes):
 
     if "laba_induk" in hasil and "laba_bersih" not in hasil:
         hasil["laba_bersih"] = hasil["laba_induk"]
+    if "laba_bersih" in hasil and "laba_induk" not in hasil:
+        hasil["laba_induk"] = hasil["laba_bersih"]
 
-    # Catatan: Normalisasi EPS dihapus karena kita hitung manual di compute_ratios
     return hasil
 
 
@@ -316,16 +360,14 @@ def compute_ratios(d, harga=None, shares=None, periode=None):
     ek = d.get("ekuitas_induk") or d.get("ekuitas")
     pendapatan = d.get("pendapatan")
     
-    # Deteksi skala Juta Rupiah (IDX menyajikan neraca/laba rugi dalam jutaan)
-    def nz(v): 
+    def nz(v):
         if v is None: return None
         return v * 1_000_000 if abs(v) < 1_000_000_000 else v
-        
+    
     laba_rp = nz(laba)
     ek_rp = nz(ek)
     pend_rp = nz(pendapatan)
     
-    # Annualization factor
     p_key = str(periode).split("-")[-1] if periode else "audit"
     factor = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
     
@@ -349,11 +391,8 @@ def compute_ratios(d, harga=None, shares=None, periode=None):
         "margin_laba_bersih": sd(laba, d.get("pendapatan")),
         "margin_laba_kotor": sd(d.get("laba_kotor"), d.get("pendapatan")),
         "margin_laba_operasi": sd(d.get("laba_operasi"), d.get("pendapatan")),
-        "eps_calc": eps_calc,
-        "pe_calc": pe_calc,
-        "pb_calc": pb_calc,
-        "ps_calc": ps_calc,
-        "bv_calc": bv_calc
+        "eps_calc": eps_calc, "pe_calc": pe_calc, "pb_calc": pb_calc,
+        "ps_calc": ps_calc, "bv_calc": bv_calc,
     }
 
 
@@ -365,7 +404,8 @@ def fetch_yfinance(kode):
     except Exception:
         return {}
     if not info: return {}
-    harga = info.get("currentPrice") or info.get("regularMarketPrice") or info.get("previousClose")
+    harga = (info.get("currentPrice") or info.get("regularMarketPrice")
+              or info.get("previousClose"))
     return {
         "harga": harga,
         "market_cap": info.get("marketCap"),
@@ -398,28 +438,28 @@ def compute_akumulasi(kode):
         df = df.loc[:, ~df.columns.duplicated(keep="first")]
         df["Date"] = pd.to_datetime(df["Date"], format="mixed", errors="coerce", utc=True).dt.tz_localize(None)
         df = df.dropna(subset=["Date"]).sort_values("Date")
-    except Exception:
-        return {}
+    except Exception: return {}
     if len(df) < 20: return {}
+    
     d = df.tail(20)
     high = d["High"].astype(float); low = d["Low"].astype(float)
     close = d["Close"].astype(float); vol = d["Volume"].astype(float)
     hl = (high - low).replace(0, np.nan)
     mfm = ((close - low) - (high - close)) / hl
-    mfm = mfm.fillna(0)
-    mfv = mfm * vol
+    mfv = mfm.fillna(0) * vol
     cmf = float(mfv.sum() / vol.sum()) if vol.sum() else 0.0
+    
     full = df.tail(40)
     vt = 1.0
     if len(full) >= 40:
         vr = full["Volume"].tail(20).mean()
         vp = full["Volume"].head(20).mean()
         if vp: vt = float(vr / vp)
+    chg = 0.0
     if len(df) >= 21:
         pn = float(df["Close"].iloc[-1]); pt = float(df["Close"].iloc[-21])
         chg = (pn - pt) / pt * 100 if pt else 0.0
-    else:
-        chg = 0.0
+    
     score = 5.0
     score += min(cmf * 15, 2) if cmf > 0 else max(cmf * 15, -2)
     if vt > 1.2 and chg > 0: score += 1
@@ -427,6 +467,7 @@ def compute_akumulasi(kode):
     if chg > 5: score += 0.5
     elif chg < -5: score -= 0.5
     score = max(0, min(10, score))
+    
     if score >= 6.5: tipe, label = "ACCUMULATION", "AKUMULASI"
     elif score <= 3.5: tipe, label = "DISTRIBUTION", "DISTRIBUSI"
     else: tipe, label = "NEUTRAL", "NETRAL"
@@ -435,9 +476,32 @@ def compute_akumulasi(kode):
             "price_chg_20d": round(chg, 2)}
 
 
+def _standalone(curr, prev, quarter_num):
+    """Hitung nilai standalone (Q1, Q2, Q3, Q4 individual).
+    
+    IDX melaporkan CUMULATIVE year-to-date:
+      tw1  = Q1 (3 bulan)
+      tw2  = H1 (6 bulan cumulative)
+      tw3  = 9M (9 bulan cumulative)
+      audit = FY (12 bulan cumulative)
+    
+    Jadi:
+      Q1_standalone = tw1
+      Q2_standalone = tw2 - tw1
+      Q3_standalone = tw3 - tw2
+      Q4_standalone = audit - tw3
+    """
+    if curr is None: return None
+    if quarter_num == 1: return curr
+    if prev is None: return None  # tidak bisa hitung tanpa previous
+    result = curr - prev
+    return result if result != 0 else None
+
+
 def build_one(kode, verbose=False):
     kode = kode.strip().upper()
-
+    
+    # Ambil snapshot terbaru
     snap = None; snap_periode = None
     for y, p in SNAPSHOT_CANDIDATES:
         d = fetch_one_period(kode, y, p, verbose=verbose)
@@ -445,40 +509,107 @@ def build_one(kode, verbose=False):
             snap = d; snap_periode = f"{y}-{p}"; break
     if not snap:
         return None
-
-    q_rev, q_eps, q_ni = {}, {}, {}
-    for y, p, lbl in QUARTERLY_PERIODS:
-        if f"{y}-{p}" == snap_periode: d = snap
-        else: d = fetch_one_period(kode, y, p, verbose=False)
+    
+    # ============================================================
+    # AMBIL SEMUA PERIODE untuk hitung STANDALONE
+    # ============================================================
+    all_periods = {}  # {label: {fields}}
+    for y, p, lbl, qnum in QUARTERLY_PERIODS:
+        if f"{y}-{p}" == snap_periode:
+            d = snap
+        else:
+            d = fetch_one_period(kode, y, p, verbose=False)
         if d:
-            if d.get("pendapatan") is not None: q_rev[lbl] = d["pendapatan"]
-            # PERBAIKAN: Kalikan 1 juta agar tampil dalam Rupiah utuh
-            if d.get("eps_basic") is not None: q_eps[lbl] = d["eps_basic"] * 1_000_000 
-            if d.get("laba_induk") is not None: q_ni[lbl] = d["laba_induk"]
-
+            all_periods[lbl] = {"data": d, "qnum": qnum, "year": y, "period": p}
+    
+    # ============================================================
+    # HITUNG QUARTERLY STANDALONE (Revenue, EPS, Net Income)
+    # ============================================================
+    q_rev, q_eps, q_ni = {}, {}, {}
+    
+    # Untuk tiap tahun, kita hitung cumulative dulu, lalu standalone
+    for year in sorted(set(v["year"] for v in all_periods.values())):
+        year_data = {
+            qnum: all_periods[lbl] 
+            for lbl, v in all_periods.items() 
+            if v["year"] == year
+            for qnum in [v["qnum"]]
+        }
+        
+        prev_rev, prev_eps, prev_ni = None, None, None
+        
+        for qnum in [1, 2, 3, 4]:
+            if qnum not in year_data: 
+                prev_rev = prev_eps = prev_ni = None
+                continue
+            
+            d = year_data[qnum]["data"]
+            lbl = f"{year}-Q{qnum}"
+            
+            # Cumulative values
+            cum_rev = d.get("pendapatan")
+            cum_eps = d.get("eps_basic")
+            cum_ni = d.get("laba_induk") or d.get("laba_bersih")
+            
+            # Convert EPS ke Rupiah penuh (dari juta)
+            if cum_eps is not None:
+                cum_eps = cum_eps * 1_000_000
+            
+            # Standalone = cumulative - previous cumulative
+            rev_std = _standalone(cum_rev, prev_rev, qnum)
+            eps_std = _standalone(cum_eps, prev_eps, qnum)
+            ni_std = _standalone(cum_ni, prev_ni, qnum)
+            
+            # Simpan (hanya kalau ada nilai)
+            if rev_std is not None: q_rev[lbl] = round(rev_std, 2)
+            if eps_std is not None: q_eps[lbl] = round(eps_std, 2)
+            if ni_std is not None: q_ni[lbl] = round(ni_std, 2)
+            
+            # Update previous
+            prev_rev = cum_rev
+            prev_eps = cum_eps
+            prev_ni = cum_ni
+    
+    # ============================================================
+    # RIWAYAT TAHUNAN (audit)
+    # ============================================================
     r_eps, r_rev = {}, {}
     for y in RIWAYAT_YEARS:
-        if f"{y}-audit" == snap_periode: d = snap
-        else: d = fetch_one_period(kode, y, "audit", verbose=False)
+        if f"{y}-audit" == snap_periode:
+            d = snap
+        else:
+            d = fetch_one_period(kode, y, "audit", verbose=False)
         if d:
-            # PERBAIKAN: Kalikan 1 juta agar tampil dalam Rupiah utuh
-            if d.get("eps_basic") is not None: r_eps[str(y)] = d["eps_basic"] * 1_000_000
-            if d.get("pendapatan") is not None: r_rev[str(y)] = d["pendapatan"]
-
-    # 1. Ambil data yfinance (HANYA untuk harga, shares, market cap, nama)
+            if d.get("eps_basic") is not None:
+                r_eps[str(y)] = round(d["eps_basic"] * 1_000_000, 2)
+            if d.get("pendapatan") is not None:
+                r_rev[str(y)] = d["pendapatan"]
+    
+    # ============================================================
+    # YFINANCE + RATIO
+    # ============================================================
     yfd = fetch_yfinance(kode)
     harga = yfd.get("harga")
     shares = yfd.get("shares_outstanding")
-    
-    # Fallback shares jika yfinance kosong
     if not shares and yfd.get("market_cap") and harga:
         shares = yfd.get("market_cap") / harga
-
-    # 2. Hitung rasio manual dari XLSX IDX
+    
     ratios = compute_ratios(snap, harga=harga, shares=shares, periode=snap_periode)
     akum = compute_akumulasi(kode)
-
-    # 3. Susun JSON (Gunakan hasil hitungan sendiri)
+    
+    # ============================================================
+    # VALIDASI — flag data mencurigakan
+    # ============================================================
+    warnings = []
+    if not snap.get("pendapatan"):
+        warnings.append("revenue_missing")
+    if not snap.get("laba_induk") and not snap.get("laba_bersih"):
+        warnings.append("income_missing")
+    if ratios.get("pe_calc") and ratios["pe_calc"] < 0:
+        warnings.append("pe_negative")
+    if len(q_rev) < 4:
+        warnings.append("quarterly_incomplete")
+    
     data = {
         "kode": kode,
         "nama": yfd.get("nama"),
@@ -487,19 +618,21 @@ def build_one(kode, verbose=False):
         "harga": harga,
         "update": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "periode_terbaru": snap_periode,
+        "warnings": warnings,
         "rasio_kunci": {
-            "pe": ratios.get("pe_calc"), 
-            "pb": ratios.get("pb_calc"), 
-            "ps": ratios.get("ps_calc"),
-            "roe": ratios.get("roe"), 
-            "eps": ratios.get("eps_calc"), 
-            "de": ratios.get("der"), 
+            "pe": ratios.get("pe_calc"), "pb": ratios.get("pb_calc"),
+            "ps": ratios.get("ps_calc"), "roe": ratios.get("roe"),
+            "eps": ratios.get("eps_calc"), "de": ratios.get("der"),
             "margin_net": ratios.get("margin_laba_bersih"),
-            "current_ratio": ratios.get("current_ratio"), 
-            "roa": ratios.get("roa"),
-            "bv": ratios.get("bv_calc")
+            "current_ratio": ratios.get("current_ratio"),
+            "roa": ratios.get("roa"), "bv": ratios.get("bv_calc"),
         },
-        "quarterly": {"revenue": q_rev, "eps": q_eps, "net_income": q_ni},
+        "quarterly": {
+            "revenue": q_rev,     # ← SUDAH STANDALONE
+            "eps": q_eps,          # ← SUDAH STANDALONE  
+            "net_income": q_ni,    # ← SUDAH STANDALONE
+            "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+        },
         "riwayat": {"eps": r_eps, "revenue_per_share": r_rev},
         "statistik": {
             "market_cap": yfd.get("market_cap"),
@@ -511,8 +644,8 @@ def build_one(kode, verbose=False):
         "neraca": {k: snap.get(k) for k in
                    ["aset", "aset_lancar", "kas", "piutang_usaha", "persediaan",
                     "aset_tetap", "liabilitas", "liabilitas_jangka_pendek",
-                    "utang_usaha", "utang_bank", "ekuitas", "ekuitas_induk",
-                    "modal_saham", "saldo_laba"]},
+                    "liabilitas_jangka_panjang", "utang_usaha", "utang_bank",
+                    "ekuitas", "ekuitas_induk", "modal_saham", "saldo_laba"]},
         "laba_rugi": {k: snap.get(k) for k in
                        ["pendapatan", "beban_pokok", "laba_kotor", "beban_operasi",
                         "laba_operasi", "laba_sebelum_pajak", "beban_pajak",
@@ -521,25 +654,25 @@ def build_one(kode, verbose=False):
                       ["arus_kas_operasi", "arus_kas_investasi", "arus_kas_pendanaan",
                        "capex", "dividen_dibayar"]},
     }
-
+    
     with open(OUTPUT_DIR / f"{kode}.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2, default=str)
     return data
 
 
 def main(tickers, verbose=False):
-    print(f"Fetch {len(tickers)} saham (tls_client + curl_cffi)\n")
-
+    print(f"Fetch {len(tickers)} saham\n")
+    
     periods = set(SNAPSHOT_CANDIDATES)
-    for y, p, _ in QUARTERLY_PERIODS: periods.add((y, p))
+    for y, p, _, _ in QUARTERLY_PERIODS: periods.add((y, p))
     for y in RIWAYAT_YEARS: periods.add((y, "audit"))
-
+    
     print(f"Pre-fetch {len(periods)} report list...")
     for y, p in sorted(periods):
         rl = get_report_list(y, p)
         print(f"  {y} {p}: {len(rl)} saham", flush=True)
     print()
-
+    
     ok, err = 0, 0
     t0 = time.time()
     for i, k in enumerate(tickers, 1):
@@ -549,8 +682,8 @@ def main(tickers, verbose=False):
             if d:
                 ok += 1
                 nq = len(d["quarterly"]["revenue"])
-                nr = len(d["riwayat"]["eps"])
-                print(f"OK ({d['periode_terbaru']}) Q:{nq} R:{nr}")
+                warns = ",".join(d.get("warnings", [])) or "OK"
+                print(f"OK ({d['periode_terbaru']}) Q:{nq} [{warns}]")
             else:
                 err += 1
                 print("SKIP (no XLSX)")
@@ -558,60 +691,65 @@ def main(tickers, verbose=False):
             err += 1
             print(f"ERR: {e}")
         time.sleep(random.uniform(0.3, 0.8))
-
+    
     print(f"\nSelesai: OK={ok}, ERR={err} | {time.time()-t0:.0f}s")
 
 
-def batch(tickers, workers=5, delay=0.3, skip_existing=True):
-    """Batch fetch dengan workers (paralel)."""
+def batch(tickers, workers=4, delay=1.0, skip_existing=True):
+    """Batch — KONSERVATIF agar tidak kena rate limit IDX."""
     if skip_existing:
         before = len(tickers)
         tickers = [t for t in tickers if not (OUTPUT_DIR / f"{t}.json").exists()]
         print(f"Skip existing: {before - len(tickers)}, sisa {len(tickers)}")
-
+    
+    if not tickers:
+        print("✅ Semua sudah ada di cache")
+        return
+    
     print(f"Batch {len(tickers)} saham, {workers} workers\n")
-
+    
     periods = set(SNAPSHOT_CANDIDATES)
-    for y, p, _ in QUARTERLY_PERIODS: periods.add((y, p))
+    for y, p, _, _ in QUARTERLY_PERIODS: periods.add((y, p))
     for y in RIWAYAT_YEARS: periods.add((y, "audit"))
-
+    
     print(f"Pre-fetch {len(periods)} report list...")
     for y, p in sorted(periods):
         rl = get_report_list(y, p)
         print(f"  {y} {p}: {len(rl)}", flush=True)
     print()
-
-    ok, err = 0, 0
+    
+    ok, err, skip = 0, 0, 0
     lock = threading.Lock()
     counter = {"n": 0}
     t0 = time.time()
-
+    
     def worker(kode):
         time.sleep(random.uniform(0, delay))
         try:
             d = build_one(kode, verbose=False)
-            return kode, d is not None, None
+            return kode, ("OK" if d else "SKIP"), None
         except Exception as e:
-            return kode, False, str(e)[:100]
-
+            return kode, "ERR", str(e)[:100]
+    
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futures = {ex.submit(worker, k): k for k in tickers}
         for fut in as_completed(futures):
-            k, s, e = fut.result()
+            k, status, e = fut.result()
             with lock:
                 counter["n"] += 1
                 n = counter["n"]
-            if s:
-                ok += 1
-            else:
-                err += 1
-            if n % 20 == 0 or n == len(tickers):
+                if status == "OK": ok += 1
+                elif status == "SKIP": skip += 1
+                else: err += 1
+            if n % 10 == 0 or n == len(tickers):
                 elapsed = time.time() - t0
                 rate = n / elapsed if elapsed > 0 else 0
                 eta = (len(tickers) - n) / rate if rate > 0 else 0
-                print(f"[{n}/{len(tickers)}] OK={ok} err={err} | {rate:.1f}/s | ETA {eta:.0f}s", flush=True)
-
-    print(f"\nSelesai: OK={ok}, ERR={err} | {time.time()-t0:.0f}s")
+                err_rate = err / n * 100
+                print(f"[{n}/{len(tickers)}] OK={ok} skip={skip} err={err} "
+                      f"({err_rate:.0f}%) | {rate:.2f}/s | ETA {eta:.0f}s", flush=True)
+    
+    print(f"\nSelesai: OK={ok}, SKIP={skip}, ERR={err} | {time.time()-t0:.0f}s")
 
 
 if __name__ == "__main__":
@@ -623,7 +761,7 @@ if __name__ == "__main__":
                 for k in ["Kode", "kode"]:
                     if k in row and row[k]:
                         tickers.append(row[k].strip().upper()); break
-        batch(tickers, workers=20, delay=0.3)
+        batch(tickers, workers=4, delay=1.0)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]
         main([t.upper() for t in tickers])

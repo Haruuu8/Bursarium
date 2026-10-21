@@ -1,0 +1,122 @@
+{
+  "kode": "PNGO",
+  "nama": "PT AEP Pinago Plantations Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 3170.0,
+  "update": "2026-10-21 08:34",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 7.773050717535561,
+    "pb": 1.960026973502898,
+    "ps": 1.1090167375376017,
+    "roe": 0.126078360011288,
+    "eps": 407.81928681472,
+    "de": 0.3541653724273604,
+    "margin_net": 0.142674578854313,
+    "current_ratio": 1.5773667501116253,
+    "roa": 0.09289062392730599,
+    "bv": 1617.32468116736
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 426877838396.0,
+      "2024-Q4": 692707207257.0,
+      "2025-Q1": 723499620570.0,
+      "2025-Q2": 487931229267.0,
+      "2025-Q3": 416282741134.0,
+      "2025-Q4": 676205662646.0,
+      "2026-Q1": 571633377535.0,
+      "2026-Q2": 544924387634.0
+    },
+    "eps": {
+      "2024-Q3": 36000000.0,
+      "2024-Q4": 105000000.0,
+      "2025-Q1": 112000000.0,
+      "2025-Q2": 81000000.0,
+      "2025-Q3": 79000000.0,
+      "2025-Q4": 140000000.0,
+      "2026-Q1": 51000000.0,
+      "2026-Q2": 153000000.0
+    },
+    "net_income": {
+      "2024-Q3": 27864768340.0,
+      "2024-Q4": 81948180953.0,
+      "2025-Q1": 87384585360.0,
+      "2025-Q2": 63653376690.0,
+      "2025-Q3": 61688077974.0,
+      "2025-Q4": 108904047053.0,
+      "2026-Q1": 39600883805.0,
+      "2026-Q2": 119703525107.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 240000000.0,
+      "2022": 222000000.0,
+      "2023": 245000000.0,
+      "2024": 282000000.0,
+      "2025": 412000000.0
+    },
+    "revenue_per_share": {
+      "2021": 2088922704953.0,
+      "2022": 2034457645981.0,
+      "2023": 2037284494747.0,
+      "2024": 2042868724833.0,
+      "2025": 2303919253617.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2476562448384,
+    "enterprise_value": 2694258884608,
+    "shares_outstanding": 781250000,
+    "free_float_pct": 0.524
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4635,
+    "vol_trend": 2.069,
+    "price_chg_20d": -9.94
+  },
+  "neraca": {
+    "aset": 1714967584206.0,
+    "aset_lancar": 410323104852.0,
+    "kas": 23206649839.0,
+    "piutang_usaha": 24673208942.0,
+    "persediaan": 209561984276.0,
+    "aset_tetap": 16666298445.0,
+    "liabilitas": 447500310970.0,
+    "liabilitas_jangka_pendek": 260131706734.0,
+    "liabilitas_jangka_panjang": 187368604236.0,
+    "utang_usaha": 24673208942.0,
+    "utang_bank": 83600000000.0,
+    "ekuitas": 1263534907162.0,
+    "ekuitas_induk": 1263534907162.0,
+    "modal_saham": null,
+    "saldo_laba": 12500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1116557765169.0,
+    "beban_pokok": 792869236893.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 202393798313.0,
+    "beban_pajak": -42491058357.0,
+    "laba_bersih": 159304408912.0,
+    "laba_induk": 159304408912.0,
+    "eps_basic": 204.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 16666298445.0,
+    "dividen_dibayar": 70642500000.0
+  }
+}
