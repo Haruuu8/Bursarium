@@ -156,58 +156,53 @@ def fmt_num(v, dec=2):
 
 
 # ============================================================
-# ⭐ BUILD SETUPS DARI SWING_W5 (91% WR) — ON-THE-FLY
+# BUILD SETUPS ON-THE-FLY DARI SUPRES.PY
 # ============================================================
 @st.cache_data(ttl=1800, show_spinner=False)
 def build_all_setups():
     """
-    Scan semua saham di parquet, build setup dari supres.py (swing_w5).
-    
-    - SUPPORT (swing low W=5, 91.1% WR) → BUY LIMIT
-    - RESISTANCE (swing high W=5, 87.3% breakout) → BUY STOP
+    Scan semua saham di parquet, build setup dari supres.py.
+    Support: swing low → buy limit
+    Resistance: swing high → buy stop (breakout)
     """
     df_all = load_parquet_safe()
     if df_all is None:
         return {"buy_support": [], "breakout_buy": [], "generated": "?"}
-    
+
     df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
     kodes = sorted(df_all["Kode"].unique())
-    
+
     buy_support = []
     breakout_buy = []
-    
+
     for kode in kodes:
         try:
             sr = get_support_resistance(kode, timeframe="daily")
             if not sr:
                 continue
-            
+
             current = sr["current_price"]
             if current <= 0:
                 continue
-            
+
             # ============================================================
-            # BUY SUPPORT — swing_w5 low (91% WR)
+            # BUY SUPPORT
             # ============================================================
             for z in sr["supports"]:
                 if z.get("role") != "buy_limit":
                     continue
-                
+
                 zona_lo = z["lower"]
                 zona_hi = z["upper"]
-                
-                # Entry: limit buy di zona atas (paling cepat fill)
+
                 entry = zona_hi
-                
-                # SL: di bawah zona_lo (1% buffer)
                 sl = zona_lo * 0.99
-                
+
                 risk = entry - sl
                 if risk <= 0:
                     continue
                 risk_pct = risk / entry * 100
-                
-                # TP1: next resistance (breakout_trigger) atau fallback 2R
+
                 tp1 = None
                 for r in sr["resistances"]:
                     if r["level"] > entry * 1.02 and r.get("role") == "breakout_trigger":
@@ -215,18 +210,15 @@ def build_all_setups():
                         break
                 if tp1 is None:
                     tp1 = entry + 2 * risk
-                
+
                 rr_tp1 = (tp1 - entry) / risk if risk > 0 else 0
-                
-                # Jarak dari harga saat ini ke entry
                 jarak = (entry - current) / current * 100
-                
-                # Filter: RR minimal 1.5, jarak support -15% s/d +3%
+
                 if rr_tp1 < 1.5:
                     continue
                 if jarak < -15 or jarak > 3:
                     continue
-                
+
                 buy_support.append({
                     "kode": kode,
                     "harga": current,
@@ -240,33 +232,29 @@ def build_all_setups():
                     "jarak_entry_pct": round(jarak, 2),
                     "zona_lo": zona_lo,
                     "zona_hi": zona_hi,
-                    "_source": "swing_w5",
+                    "_source": "swing",
                     "_strength": z.get("strength", "MODERATE"),
                     "_score": z.get("score", 8.0),
                 })
-            
+
             # ============================================================
-            # BREAKOUT BUY — swing_w5 high (87.3% breakout)
+            # BREAKOUT BUY
             # ============================================================
             for z in sr["resistances"]:
                 if z.get("role") != "breakout_trigger":
                     continue
-                
+
                 zona_lo = z["lower"]
                 zona_hi = z["upper"]
-                
-                # Entry: stop buy di atas zona (0.1% di atas zona_hi)
+
                 entry = zona_hi * 1.001
-                
-                # SL: di bawah zona_lo (0.5% buffer)
                 sl = zona_lo * 0.995
-                
+
                 risk = entry - sl
                 if risk <= 0:
                     continue
                 risk_pct = risk / entry * 100
-                
-                # TP1: next resistance lebih tinggi, atau fallback 2R
+
                 tp1 = None
                 for r in sr["resistances"]:
                     if r["level"] > entry * 1.02 and r.get("role") in ("breakout_trigger", "reversal_warning"):
@@ -275,17 +263,15 @@ def build_all_setups():
                             break
                 if tp1 is None:
                     tp1 = entry + 2 * risk
-                
+
                 rr_tp1 = (tp1 - entry) / risk if risk > 0 else 0
-                
-                # Jarak: breakout 0.5% s/d 15% di atas harga
                 jarak = (entry - current) / current * 100
-                
+
                 if rr_tp1 < 1.5:
                     continue
                 if jarak < 0.5 or jarak > 15:
                     continue
-                
+
                 breakout_buy.append({
                     "kode": kode,
                     "harga": current,
@@ -299,17 +285,16 @@ def build_all_setups():
                     "jarak_entry_pct": round(jarak, 2),
                     "zona_lo": zona_lo,
                     "zona_hi": zona_hi,
-                    "_source": "swing_w5",
+                    "_source": "swing",
                     "_strength": z.get("strength", "MODERATE"),
                     "_score": z.get("score", 8.0),
                 })
         except Exception:
             continue
-    
-    # Sort: score tertinggi, RR tertinggi
+
     buy_support.sort(key=lambda x: (-x["_score"], -x["rr_tp1"]))
     breakout_buy.sort(key=lambda x: (-x["_score"], -x["rr_tp1"]))
-    
+
     return {
         "buy_support": buy_support,
         "breakout_buy": breakout_buy,
@@ -318,7 +303,7 @@ def build_all_setups():
 
 
 # ============================================================
-# ANALYZE SETUP SIGNALS (Banner di card)
+# ANALYZE SETUP SIGNALS
 # ============================================================
 @st.cache_data(ttl=1800)
 def analyze_setup_signals(kode, harga):
@@ -332,16 +317,17 @@ def analyze_setup_signals(kode, harga):
         "rsi": 50,
         "trend": "?"
     }
-    
+
     df_all = load_parquet_safe()
-    if df_all is None: return result
+    if df_all is None:
+        return result
     df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
     kode_clean = str(kode).strip().upper()
     df = df_all[df_all["Kode"] == kode_clean].copy()
-    if df.empty or len(df) < 100: return result
+    if df.empty or len(df) < 100:
+        return result
     df = df.sort_values("Date").reset_index(drop=True)
-    
-    # Cek zona dari supres
+
     try:
         sr = get_support_resistance(kode_clean, timeframe="daily")
         if sr:
@@ -354,7 +340,7 @@ def analyze_setup_signals(kode, harga):
                             f"Waspada tertahan dan berbalik turun."
                         )
                         break
-            
+
             for z in sr.get("resistances", []):
                 if z.get("role") == "breakout_trigger":
                     if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
@@ -366,8 +352,7 @@ def analyze_setup_signals(kode, harga):
                         break
     except Exception:
         pass
-    
-    # Cek Fibo Sniper
+
     recent_df = df.tail(150)
     swing_high = float(recent_df["High"].max())
     swing_low = float(recent_df["Low"].min())
@@ -375,7 +360,7 @@ def analyze_setup_signals(kode, harga):
     low_idx = recent_df["Low"].idxmin()
     high_idx = recent_df["High"].idxmax()
     is_uptrend = low_idx < high_idx
-    
+
     delta = df['Close'].diff()
     gain = (delta.where(delta > 0, 0)).rolling(14).mean()
     loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
@@ -384,13 +369,13 @@ def analyze_setup_signals(kode, harga):
     rsi_val = float(rsi_series.iloc[-1]) if not rsi_series.empty else 50
     result["rsi"] = rsi_val
     result["trend"] = "UP" if is_uptrend else "DOWN"
-    
+
     if is_uptrend:
         fib_850 = swing_high - diff * 0.850
         fib_786 = swing_high - diff * 0.786
         dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
         dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
-        
+
         if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
             result["fibo_signal"] = "BUY"
             result["fibo_info"] = f"Harga di Fib 0.786/0.850 + RSI oversold ({rsi_val:.1f}). Timing terbaik."
@@ -402,14 +387,14 @@ def analyze_setup_signals(kode, harga):
         fib_786 = swing_low + diff * 0.786
         dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
         dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
-        
+
         if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
             result["fibo_signal"] = "SELL"
             result["fibo_info"] = f"Harga di Fib 0.786/0.850 RESISTANCE + RSI ({rsi_val:.1f}). Jangan beli."
         elif dist_850 < 3 or dist_786 < 3:
             result["fibo_signal"] = "WATCH"
             result["fibo_info"] = "Dekat Fib 0.786/0.850 (Resistance). Waspada."
-    
+
     return result
 
 
@@ -567,7 +552,7 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe,
 
 
 # ============================================================
-# CARD: SETUP (Buy Support / Breakout)
+# CARD: SETUP
 # ============================================================
 def setup_row(r, tipe="support"):
     kode = r["kode"]
@@ -637,7 +622,7 @@ def setup_row(r, tipe="support"):
     tp2_rr = f'RR {rr_tp2:.2f}' if tp2 else "—"
 
     signal_banners = ""
-    
+
     if breakout_zone:
         signal_banners += (
             f'<div style="background:rgba(6,182,212,0.15); border:1px solid #06b6d4; '
@@ -832,7 +817,7 @@ with tab1:
                 file_map[tgl_str] = f
             except Exception:
                 continue
-        
+
         col1, col2 = st.columns([3, 1])
         with col1:
             selected_date = st.selectbox(
@@ -845,9 +830,9 @@ with tab1:
             if st.button("🔄 Refresh", key="refresh_kandidat", use_container_width=True):
                 st.cache_data.clear()
                 st.rerun()
-        
+
         selected = file_map[selected_date]
-        
+
         min_str = 2
         min_rating = 0
 
@@ -1063,7 +1048,7 @@ with tab3:
 
 
 # ============================================================
-# TAB 4: BUY ON SUPPORT (dari supres.py — swing_w5 91% WR)
+# TAB 4: BUY ON SUPPORT
 # ============================================================
 with tab4:
     st.markdown(
@@ -1073,12 +1058,11 @@ with tab4:
         '<div style="font-size: 13px; color: #10b981; font-weight: 800; '
         'margin-bottom: 8px;">🎯 BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Swing Low W=5 (winrate 91.1%) · Entry limit di zona support · '
-        'RR min 1.5'
+        'Entry limit di zona support · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
 
-    with st.spinner("Memindai semua saham dengan metode swing_w5 (91% WR)..."):
+    with st.spinner("Memindai semua saham..."):
         setups_data = build_all_setups()
 
     items_support = setups_data.get("buy_support", [])
@@ -1106,7 +1090,7 @@ with tab4:
 
 
 # ============================================================
-# TAB 5: BREAKOUT BUY (dari supres.py — swing_w5 87.3% breakout)
+# TAB 5: BREAKOUT BUY
 # ============================================================
 with tab5:
     st.markdown(
@@ -1116,12 +1100,11 @@ with tab5:
         '<div style="font-size: 13px; color: #06b6d4; font-weight: 800; '
         'margin-bottom: 8px;">🚀 BREAKOUT BUY — SETUP STOP ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Swing High W=5 (breakout 87.3%) · Buy stop di atas resistance · '
-        'RR min 1.5'
+        'Buy stop di atas resistance · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
 
-    with st.spinner("Memindai semua saham dengan metode swing_w5 (87% breakout)..."):
+    with st.spinner("Memindai semua saham..."):
         setups_data2 = build_all_setups()
 
     items_breakout = setups_data2.get("breakout_buy", [])
@@ -1165,7 +1148,7 @@ with tab6:
                 file_map[bulan_str] = f
             except Exception:
                 continue
-        
+
         col1, col2 = st.columns([3, 1])
         with col1:
             selected_bulan = st.selectbox(
@@ -1178,7 +1161,7 @@ with tab6:
             if st.button("🔄 Refresh", key="refresh_rekap", use_container_width=True):
                 st.cache_data.clear()
                 st.rerun()
-        
+
         fname = file_map[selected_bulan]
         bulan_label = selected_bulan
         df_rev = load_rekap_sheet(fname, "Review Harian")
@@ -1189,7 +1172,7 @@ with tab6:
             if "P/L %" in df_rev.columns:
                 df_rev["P/L %"] = pd.to_numeric(df_rev["P/L %"], errors="coerce")
 
-            st.markdown(section_title(f"Ringkasan Bulanan — {bulan_label}", 
+            st.markdown(section_title(f"Ringkasan Bulanan — {bulan_label}",
                                        f"Dari file {fname}"), unsafe_allow_html=True)
 
             n_total = len(df_rev)
