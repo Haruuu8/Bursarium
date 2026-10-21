@@ -45,10 +45,6 @@ def load_json_safe(path):
         return None
 
 
-def load_setups():
-    return load_json_safe(SETUPS_FILE)
-
-
 def load_scan(name):
     d = load_json_safe(os.path.join(SCANS_DIR, f"{name}.json"))
     if not d:
@@ -93,7 +89,6 @@ def load_nama():
 
 
 def list_kandidat_files():
-    """Return list file kandidat, sorted by tanggal di filename (DESC = terbaru dulu)."""
     if not os.path.exists(OUTPUT_DIR):
         return []
     fs = [f for f in os.listdir(OUTPUT_DIR)
@@ -105,7 +100,6 @@ def list_kandidat_files():
 
 
 def list_rekap_files():
-    """Return list file rekap bulanan, sorted by nama (DESC = terbaru dulu)."""
     if not os.path.exists(OUTPUT_DIR):
         return []
     fs = [f for f in os.listdir(OUTPUT_DIR)
@@ -115,7 +109,6 @@ def list_rekap_files():
 
 
 def extract_date_label(filename, prefix, suffix):
-    """Extract tanggal/bulan dari nama file."""
     return filename.replace(prefix, "").replace(suffix, "")
 
 
@@ -163,16 +156,172 @@ def fmt_num(v, dec=2):
 
 
 # ============================================================
-# ANALYZE SETUP SIGNALS (Strong Zone + Breakout + Fibo)
+# ⭐ BUILD SETUPS DARI SWING_W5 (91% WR) — ON-THE-FLY
+# ============================================================
+@st.cache_data(ttl=1800, show_spinner=False)
+def build_all_setups():
+    """
+    Scan semua saham di parquet, build setup dari supres.py (swing_w5).
+    
+    - SUPPORT (swing low W=5, 91.1% WR) → BUY LIMIT
+    - RESISTANCE (swing high W=5, 87.3% breakout) → BUY STOP
+    """
+    df_all = load_parquet_safe()
+    if df_all is None:
+        return {"buy_support": [], "breakout_buy": [], "generated": "?"}
+    
+    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
+    kodes = sorted(df_all["Kode"].unique())
+    
+    buy_support = []
+    breakout_buy = []
+    
+    for kode in kodes:
+        try:
+            sr = get_support_resistance(kode, timeframe="daily")
+            if not sr:
+                continue
+            
+            current = sr["current_price"]
+            if current <= 0:
+                continue
+            
+            # ============================================================
+            # BUY SUPPORT — swing_w5 low (91% WR)
+            # ============================================================
+            for z in sr["supports"]:
+                if z.get("role") != "buy_limit":
+                    continue
+                
+                zona_lo = z["lower"]
+                zona_hi = z["upper"]
+                
+                # Entry: limit buy di zona atas (paling cepat fill)
+                entry = zona_hi
+                
+                # SL: di bawah zona_lo (1% buffer)
+                sl = zona_lo * 0.99
+                
+                risk = entry - sl
+                if risk <= 0:
+                    continue
+                risk_pct = risk / entry * 100
+                
+                # TP1: next resistance (breakout_trigger) atau fallback 2R
+                tp1 = None
+                for r in sr["resistances"]:
+                    if r["level"] > entry * 1.02 and r.get("role") == "breakout_trigger":
+                        tp1 = r["level"]
+                        break
+                if tp1 is None:
+                    tp1 = entry + 2 * risk
+                
+                rr_tp1 = (tp1 - entry) / risk if risk > 0 else 0
+                
+                # Jarak dari harga saat ini ke entry
+                jarak = (entry - current) / current * 100
+                
+                # Filter: RR minimal 1.5, jarak support -15% s/d +3%
+                if rr_tp1 < 1.5:
+                    continue
+                if jarak < -15 or jarak > 3:
+                    continue
+                
+                buy_support.append({
+                    "kode": kode,
+                    "harga": current,
+                    "entry": round(entry, 2),
+                    "sl": round(sl, 2),
+                    "tp1": round(tp1, 2),
+                    "tp2": None,
+                    "rr_tp1": round(rr_tp1, 2),
+                    "rr_tp2": None,
+                    "risk_pct": round(risk_pct, 2),
+                    "jarak_entry_pct": round(jarak, 2),
+                    "zona_lo": zona_lo,
+                    "zona_hi": zona_hi,
+                    "_source": "swing_w5",
+                    "_strength": z.get("strength", "MODERATE"),
+                    "_score": z.get("score", 8.0),
+                })
+            
+            # ============================================================
+            # BREAKOUT BUY — swing_w5 high (87.3% breakout)
+            # ============================================================
+            for z in sr["resistances"]:
+                if z.get("role") != "breakout_trigger":
+                    continue
+                
+                zona_lo = z["lower"]
+                zona_hi = z["upper"]
+                
+                # Entry: stop buy di atas zona (0.1% di atas zona_hi)
+                entry = zona_hi * 1.001
+                
+                # SL: di bawah zona_lo (0.5% buffer)
+                sl = zona_lo * 0.995
+                
+                risk = entry - sl
+                if risk <= 0:
+                    continue
+                risk_pct = risk / entry * 100
+                
+                # TP1: next resistance lebih tinggi, atau fallback 2R
+                tp1 = None
+                for r in sr["resistances"]:
+                    if r["level"] > entry * 1.02 and r.get("role") in ("breakout_trigger", "reversal_warning"):
+                        if r["level"] != z["level"]:
+                            tp1 = r["level"]
+                            break
+                if tp1 is None:
+                    tp1 = entry + 2 * risk
+                
+                rr_tp1 = (tp1 - entry) / risk if risk > 0 else 0
+                
+                # Jarak: breakout 0.5% s/d 15% di atas harga
+                jarak = (entry - current) / current * 100
+                
+                if rr_tp1 < 1.5:
+                    continue
+                if jarak < 0.5 or jarak > 15:
+                    continue
+                
+                breakout_buy.append({
+                    "kode": kode,
+                    "harga": current,
+                    "entry": round(entry, 2),
+                    "sl": round(sl, 2),
+                    "tp1": round(tp1, 2),
+                    "tp2": None,
+                    "rr_tp1": round(rr_tp1, 2),
+                    "rr_tp2": None,
+                    "risk_pct": round(risk_pct, 2),
+                    "jarak_entry_pct": round(jarak, 2),
+                    "zona_lo": zona_lo,
+                    "zona_hi": zona_hi,
+                    "_source": "swing_w5",
+                    "_strength": z.get("strength", "MODERATE"),
+                    "_score": z.get("score", 8.0),
+                })
+        except Exception:
+            continue
+    
+    # Sort: score tertinggi, RR tertinggi
+    buy_support.sort(key=lambda x: (-x["_score"], -x["rr_tp1"]))
+    breakout_buy.sort(key=lambda x: (-x["_score"], -x["rr_tp1"]))
+    
+    return {
+        "buy_support": buy_support,
+        "breakout_buy": breakout_buy,
+        "generated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+    }
+
+
+# ============================================================
+# ANALYZE SETUP SIGNALS (Banner di card)
 # ============================================================
 @st.cache_data(ttl=1800)
 def analyze_setup_signals(kode, harga):
-    """
-    Analisa apakah saham ini memiliki:
-    - Breakout Trigger (dari swing high/donchian) → sinyal beli stop
-    - Reversal Warning (dari round_100) → sinyal avoid beli
-    - Fibo sniper confirmation (jika di zona 0.786/0.850)
-    """
     result = {
         "strong_zone": False,
         "strong_zone_info": "",
@@ -192,38 +341,33 @@ def analyze_setup_signals(kode, harga):
     if df.empty or len(df) < 100: return result
     df = df.sort_values("Date").reset_index(drop=True)
     
-    # === Cek Strong Zone & Breakout Zone (metode baru) ===
+    # Cek zona dari supres
     try:
         sr = get_support_resistance(kode_clean, timeframe="daily")
         if sr:
-            # 1. Cek Reversal Warning (Round Number, WR ~64%)
             for z in sr.get("resistances", []):
-                if z.get("role") == "reversal_warning" and z.get("backtest_wr", 0) >= 60:
+                if z.get("role") == "reversal_warning":
                     if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
                         result["strong_zone"] = True
-                        wr = z.get("backtest_wr", 0)
                         result["strong_zone_info"] = (
-                            f"Harga di resistance psikologis {z['level']:,.0f} "
-                            f"(historis {wr:.0f}% mantul). Waspada tertahan."
+                            f"Harga di resistance psikologis {z['level']:,.0f}. "
+                            f"Waspada tertahan dan berbalik turun."
                         )
                         break
             
-            # 2. Cek Breakout Trigger (Swing High, WR ~87%)
             for z in sr.get("resistances", []):
-                if z.get("role") == "breakout_trigger" and z.get("backtest_wr", 0) >= 65:
+                if z.get("role") == "breakout_trigger":
                     if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
-                        wr = z.get("backtest_wr", 0)
                         result["breakout_zone"] = True
                         result["breakout_info"] = (
-                            f"Harga di breakout trigger {z['level']:,.0f} "
-                            f"(historis {wr:.0f}% breakout). "
-                            f"Beli stop di atas {z['upper']:,.0f}."
+                            f"Harga di breakout trigger {z['level']:,.0f}. "
+                            f"Beli stop di atas {z['upper']:,.0f} untuk konfirmasi tembus."
                         )
                         break
     except Exception:
         pass
     
-    # === Cek Fibo Sniper ===
+    # Cek Fibo Sniper
     recent_df = df.tail(150)
     swing_high = float(recent_df["High"].max())
     swing_low = float(recent_df["Low"].min())
@@ -232,7 +376,6 @@ def analyze_setup_signals(kode, harga):
     high_idx = recent_df["High"].idxmax()
     is_uptrend = low_idx < high_idx
     
-    # RSI
     delta = df['Close'].diff()
     gain = (delta.where(delta > 0, 0)).rolling(14).mean()
     loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
@@ -495,7 +638,6 @@ def setup_row(r, tipe="support"):
 
     signal_banners = ""
     
-    # 1. Breakout Trigger (Cyan)
     if breakout_zone:
         signal_banners += (
             f'<div style="background:rgba(6,182,212,0.15); border:1px solid #06b6d4; '
@@ -505,7 +647,6 @@ def setup_row(r, tipe="support"):
             f'</div>'
         )
 
-    # 2. Reversal Warning (Kuning)
     if strong_zone:
         signal_banners += (
             f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
@@ -515,7 +656,6 @@ def setup_row(r, tipe="support"):
             f'</div>'
         )
 
-    # 3. Fibo Signal
     if fibo_signal == "BUY":
         signal_banners += (
             f'<div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; '
@@ -646,31 +786,6 @@ def setup_row(r, tipe="support"):
     )
 
 
-def setup_table(items, nama_map):
-    rows = []
-    for r in items:
-        rows.append({
-            "Kode": r["kode"],
-            "Nama": nama_map.get(r["kode"], r["kode"])[:30],
-            "Harga": r["harga"],
-            "Entry": r["entry"],
-            "SL": r["sl"],
-            "TP1": r["tp1"],
-            "TP2": r.get("tp2"),
-            "RR": r["rr_tp1"],
-            "Risk %": r["risk_pct"],
-            "Jarak %": r["jarak_entry_pct"],
-            "Zona Lo": r["zona_lo"],
-            "Zona Hi": r["zona_hi"],
-        })
-    df_show = pd.DataFrame(rows)
-    tinggi_tabel = (len(df_show) * 35) + 40
-    st.dataframe(
-        df_show, use_container_width=True, hide_index=True,
-        height=tinggi_tabel,
-    )
-
-
 # ============================================================
 # HEADER
 # ============================================================
@@ -687,7 +802,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 
 
 # ============================================================
-# TAB 1: HAKA PAGI (dengan date picker)
+# TAB 1: HAKA PAGI
 # ============================================================
 with tab1:
     st.markdown(
@@ -708,7 +823,6 @@ with tab1:
     if not files:
         st.markdown(empty_state("📭", "Belum ada kandidat", "Jalankan screener dulu"), unsafe_allow_html=True)
     else:
-        # === DATE PICKER ===
         date_options = []
         file_map = {}
         for f in files:
@@ -949,7 +1063,7 @@ with tab3:
 
 
 # ============================================================
-# TAB 4: BUY ON SUPPORT
+# TAB 4: BUY ON SUPPORT (dari supres.py — swing_w5 91% WR)
 # ============================================================
 with tab4:
     st.markdown(
@@ -959,51 +1073,40 @@ with tab4:
         '<div style="font-size: 13px; color: #10b981; font-weight: 800; '
         'margin-bottom: 8px;">🎯 BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Entry limit di zona support · RR min 1.5 · jarak harga→entry ≤ 5%'
+        'Swing Low W=5 (winrate 91.1%) · Entry limit di zona support · '
+        'RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
 
-    setups = load_setups()
-    if not setups:
-        st.warning("Data setup belum tersedia. Silakan hubungi admin.")
+    with st.spinner("Memindai semua saham dengan metode swing_w5 (91% WR)..."):
+        setups_data = build_all_setups()
+
+    items_support = setups_data.get("buy_support", [])
+    generated_support = setups_data.get("generated", "?")
+
+    c1, c2 = st.columns([4, 1])
+    with c1:
+        st.markdown(
+            f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
+            f'<b style="color:#10b981;">{len(items_support)}</b> saham · '
+            f'scan {generated_support}</div>',
+            unsafe_allow_html=True
+        )
+    with c2:
+        if st.button("🔄 Rescan", key="reload_support", use_container_width=True):
+            st.cache_data.clear()
+            st.rerun()
+
+    if not items_support:
+        st.info("Tidak ada saham dengan setup Buy Support saat ini.")
     else:
-        items = setups.get("buy_support", [])
-        generated = setups.get("generated", "?")
-
-        c1, c2, c3, c4 = st.columns([2, 1, 1, 1])
-        with c1:
-            st.markdown(
-                f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-                f'<b style="color:#10b981;">{len(items)}</b> saham · generated {generated}</div>',
-                unsafe_allow_html=True
-            )
-        with c2:
-            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1, key="rr_min_support", label_visibility="collapsed")
-        with c3:
-            view_mode = st.selectbox("View", ["🎴 Card", "📊 Table"], key="view_support", label_visibility="collapsed")
-        with c4:
-            if st.button("🔄 Reload", key="reload_support", use_container_width=True):
-                st.cache_data.clear(); st.rerun()
-
-        filtered = [x for x in items if x["rr_tp1"] >= min_rr]
-        st.caption(f"{len(filtered)} saham setelah filter RR ≥ {min_rr}")
-
-        if not filtered:
-            st.info(f"Tidak ada saham dengan RR ≥ {min_rr}")
-        elif view_mode == "📊 Table":
-            setup_table(filtered, nama_map)
-        else:
-            max_show = st.slider("Tampilkan N card", 10, max(10, len(filtered)), len(filtered), 5, key="max_card_support")
-            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari {len(filtered)} saham")
-            for r in filtered[:max_show]:
-                r["_nama"] = nama_map.get(r["kode"], r["kode"])
-                st.markdown(setup_row(r, tipe="support"), unsafe_allow_html=True)
-            if len(filtered) > max_show:
-                st.caption(f"… dan {len(filtered) - max_show} saham lainnya.")
+        for r in items_support:
+            r["_nama"] = nama_map.get(r["kode"], r["kode"])
+            st.markdown(setup_row(r, tipe="support"), unsafe_allow_html=True)
 
 
 # ============================================================
-# TAB 5: BREAKOUT BUY
+# TAB 5: BREAKOUT BUY (dari supres.py — swing_w5 87.3% breakout)
 # ============================================================
 with tab5:
     st.markdown(
@@ -1013,58 +1116,46 @@ with tab5:
         '<div style="font-size: 13px; color: #06b6d4; font-weight: 800; '
         'margin-bottom: 8px;">🚀 BREAKOUT BUY — SETUP STOP ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Buy stop di atas resistance · RR min 1.5 · jarak harga→trigger ≤ 5%'
+        'Swing High W=5 (breakout 87.3%) · Buy stop di atas resistance · '
+        'RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
 
-    setups = load_setups()
-    if not setups:
-        st.warning("Data setup belum tersedia. Silakan hubungi admin.")
+    with st.spinner("Memindai semua saham dengan metode swing_w5 (87% breakout)..."):
+        setups_data2 = build_all_setups()
+
+    items_breakout = setups_data2.get("breakout_buy", [])
+    generated_breakout = setups_data2.get("generated", "?")
+
+    c1, c2 = st.columns([4, 1])
+    with c1:
+        st.markdown(
+            f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
+            f'<b style="color:#06b6d4;">{len(items_breakout)}</b> saham · '
+            f'scan {generated_breakout}</div>',
+            unsafe_allow_html=True
+        )
+    with c2:
+        if st.button("🔄 Rescan", key="reload_breakout", use_container_width=True):
+            st.cache_data.clear()
+            st.rerun()
+
+    if not items_breakout:
+        st.info("Tidak ada saham dengan setup Breakout Buy saat ini.")
     else:
-        items = setups.get("breakout_buy", [])
-        generated = setups.get("generated", "?")
-
-        c1, c2, c3, c4 = st.columns([2, 1, 1, 1])
-        with c1:
-            st.markdown(
-                f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-                f'<b style="color:#06b6d4;">{len(items)}</b> saham · generated {generated}</div>',
-                unsafe_allow_html=True
-            )
-        with c2:
-            min_rr = st.slider("Min RR", 1.5, 5.0, 2.0, 0.1, key="rr_min_breakout", label_visibility="collapsed")
-        with c3:
-            view_mode = st.selectbox("View", ["🎴 Card", "📊 Table"], key="view_breakout", label_visibility="collapsed")
-        with c4:
-            if st.button("🔄 Reload", key="reload_breakout", use_container_width=True):
-                st.cache_data.clear(); st.rerun()
-
-        filtered = [x for x in items if x["rr_tp1"] >= min_rr]
-        st.caption(f"{len(filtered)} saham setelah filter RR ≥ {min_rr}")
-
-        if not filtered:
-            st.info(f"Tidak ada saham dengan RR ≥ {min_rr}")
-        elif view_mode == "📊 Table":
-            setup_table(filtered, nama_map)
-        else:
-            max_show = st.slider("Tampilkan N card", 10, max(10, len(filtered)), len(filtered), 5, key="max_card_breakout")
-            st.caption(f"Menampilkan {min(max_show, len(filtered))} dari {len(filtered)} saham")
-            for r in filtered[:max_show]:
-                r["_nama"] = nama_map.get(r["kode"], r["kode"])
-                st.markdown(setup_row(r, tipe="breakout"), unsafe_allow_html=True)
-            if len(filtered) > max_show:
-                st.caption(f"… dan {len(filtered) - max_show} saham lainnya.")
+        for r in items_breakout:
+            r["_nama"] = nama_map.get(r["kode"], r["kode"])
+            st.markdown(setup_row(r, tipe="breakout"), unsafe_allow_html=True)
 
 
 # ============================================================
-# TAB 6: PERFORMA (dengan month picker)
+# TAB 6: PERFORMA
 # ============================================================
 with tab6:
     rekap_files = list_rekap_files()
     if not rekap_files:
         st.warning("Belum ada data performa. Silakan hubungi admin.")
     else:
-        # === MONTH PICKER ===
         bulan_options = []
         file_map = {}
         for f in rekap_files:
