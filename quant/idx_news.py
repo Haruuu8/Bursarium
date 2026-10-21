@@ -1,5 +1,7 @@
 """
 IDX NEWS — Scraper keterbukaan informasi dari IDX.
+
+Endpoint: /primary/NewsAnnouncement/GetAllAnnouncement
 """
 
 import os
@@ -35,112 +37,215 @@ FAILED_CACHE_TTL_SEC = 300   # 5 menit cooldown kalau IDX gagal
 
 
 # ============================================================
-# KATEGORI
+# KATEGORI (Lengkap)
 # ============================================================
 KATEGORI = {
     "PENGENDALI": {
         "warna": "#10b981", "icon": "👑", "tipe": "good", "bobot": 10,
-        "kata": ["perubahan pengendali", "pengambilalihan", "akuisisi", "takeover", "pengendali baru", "change of control", "calon pengendali", "pemegang saham pengendali baru", "penawaran tender", "tender wajib", "pengambilalihan saham", "peralihan pengendali", "pihak pengendali baru"],
+        "kata": [
+            "perubahan pengendali", "pengambilalihan", "akuisisi",
+            "takeover", "pengendali baru", "change of control",
+            "calon pengendali", "pemegang saham pengendali baru",
+            "penawaran tender", "tender wajib",
+            "pengambilalihan saham", "peralihan pengendali",
+            "pihak pengendali baru",
+        ],
     },
     "PMTHMETD": {
         "warna": "#10b981", "icon": "💎", "tipe": "good", "bobot": 9,
-        "kata": ["penambahan modal tanpa hak memesan efek terlebih dahulu", "pmthmetd", "private placement", "penempatan saham baru", "tanpa hmetd", "tanpa hak memesan", "penerbitan saham baru", "penambahan modal tanpa hmetd", "suntikan modal"],
+        "kata": [
+            "penambahan modal tanpa hak memesan efek terlebih dahulu",
+            "pmthmetd", "private placement", "penempatan saham baru",
+            "tanpa hmetd", "tanpa hak memesan", "penerbitan saham baru",
+            "penambahan modal tanpa hmetd", "suntikan modal",
+        ],
     },
     "INVESTOR_BARU": {
         "warna": "#10b981", "icon": "🎯", "tipe": "good", "bobot": 8,
-        "kata": ["investor strategis", "investor baru", "masuknya investor", "pemegang saham baru", "strategic investor", "pengungkapan kepemilikan saham", "kepemilikan saham ≥ 5%", "kepemilikan saham 5%", "kepemilikan ≥5%", "pemilik manfaat baru", "beneficial owner baru"],
+        "kata": [
+            "investor strategis", "investor baru", "masuknya investor",
+            "pemegang saham baru", "strategic investor",
+            "pengungkapan kepemilikan saham", "kepemilikan saham ≥ 5%",
+            "kepemilikan saham 5%", "kepemilikan ≥5%",
+            "pemilik manfaat baru", "beneficial owner baru",
+        ],
     },
     "TENDER": {
         "warna": "#10b981", "icon": "📢", "tipe": "good", "bobot": 8,
-        "kata": ["tender offer", "penawaran tender", "tender wajib", "penawaran pembelian saham"],
+        "kata": [
+            "tender offer", "penawaran tender", "tender wajib",
+            "penawaran pembelian saham",
+        ],
     },
     "GO_PRIVATE": {
         "warna": "#10b981", "icon": "🚪", "tipe": "good", "bobot": 7,
-        "kata": ["go private", "privatisasi", "delisting sukarela", "penghapusan pencatatan saham secara sukarela", "voluntary delisting"],
+        "kata": [
+            "go private", "privatisasi", "delisting sukarela",
+            "penghapusan pencatatan saham secara sukarela",
+            "voluntary delisting",
+        ],
     },
     "DIVIDEN": {
         "warna": "#10b981", "icon": "💰", "tipe": "good", "bobot": 6,
-        "kata": ["dividen", "dividend", "pembagian dividen", "cash dividend", "dividen tunai", "dividen interim", "dividen final"],
+        "kata": [
+            "dividen", "dividend", "pembagian dividen",
+            "cash dividend", "dividen tunai", "dividen interim",
+            "dividen final",
+        ],
     },
     "BUYBACK": {
         "warna": "#10b981", "icon": "🔁", "tipe": "good", "bobot": 6,
-        "kata": ["buyback", "pembelian kembali saham", "pembelian kembali saham yang telah dikeluarkan", "share buyback", "repurchase"],
+        "kata": [
+            "buyback", "pembelian kembali saham",
+            "pembelian kembali saham yang telah dikeluarkan",
+            "share buyback", "repurchase",
+        ],
     },
     "LABA_NAIK": {
         "warna": "#10b981", "icon": "📈", "tipe": "good", "bobot": 5,
-        "kata": ["laba bersih naik", "profit naik", "pertumbuhan laba", "kenaikan laba", "rekor laba", "laba meningkat", "net profit naik", "laba bersih meningkat"],
+        "kata": [
+            "laba bersih naik", "profit naik", "pertumbuhan laba",
+            "kenaikan laba", "rekor laba", "laba meningkat",
+            "net profit naik", "laba bersih meningkat",
+        ],
     },
     "KONTRAK": {
         "warna": "#10b981", "icon": "🤝", "tipe": "good", "bobot": 5,
-        "kata": ["kontrak baru", "perjanjian kerjasama", "penandatanganan kontrak", "perolehan kontrak", "kontrak signifikan", "proyek baru", "memenangkan tender", "kerjasama strategis"],
+        "kata": [
+            "kontrak baru", "perjanjian kerjasama", "penandatanganan kontrak",
+            "perolehan kontrak", "kontrak signifikan", "proyek baru",
+            "memenangkan tender", "kerjasama strategis",
+        ],
     },
     "SUSPENSI": {
         "warna": "#f43f5e", "icon": "🛑", "tipe": "warning", "bobot": 10,
-        "kata": ["suspensi", "penghentian sementara perdagangan", "suspensi saham", "freeze", "pembekuan"],
+        "kata": [
+            "suspensi", "penghentian sementara perdagangan",
+            "suspensi saham", "freeze", "pembekuan",
+        ],
     },
     "DELISTING": {
         "warna": "#f43f5e", "icon": "❌", "tipe": "warning", "bobot": 10,
-        "kata": ["delisting", "penghapusan pencatatan saham", "delisting paksa", "force delisting", "pencatatan saham dicabut"],
+        "kata": [
+            "delisting", "penghapusan pencatatan saham",
+            "delisting paksa", "force delisting", "pencatatan saham dicabut",
+        ],
     },
     "PKPU": {
         "warna": "#f43f5e", "icon": "⚖️", "tipe": "warning", "bobot": 10,
-        "kata": ["pailit", "pkpu", "penundaan kewajiban pembayaran utang", "gagal bayar", "default", "kepailitan"],
+        "kata": [
+            "pailit", "pkpu", "penundaan kewajiban pembayaran utang",
+            "gagal bayar", "default", "kepailitan",
+        ],
     },
     "RUGI": {
         "warna": "#f43f5e", "icon": "📉", "tipe": "warning", "bobot": 6,
-        "kata": ["rugi bersih", "mengalami kerugian", "penurunan laba", "laba turun", "penurunan pendapatan", "revenue turun", "merugi", "laba bersih negatif"],
+        "kata": [
+            "rugi bersih", "mengalami kerugian", "penurunan laba",
+            "laba turun", "penurunan pendapatan", "revenue turun",
+            "merugi", "laba bersih negatif",
+        ],
     },
     "OPINI_AUDIT": {
         "warna": "#f43f5e", "icon": "📋", "tipe": "warning", "bobot": 8,
-        "kata": ["opini disclaimer", "opini tidak menyatakan pendapat", "opini adverse", "wajar dengan pengecualian", "qualified opinion"],
+        "kata": [
+            "opini disclaimer", "opini tidak menyatakan pendapat",
+            "opini adverse", "wajar dengan pengecualian",
+            "qualified opinion",
+        ],
     },
     "SANKSI": {
         "warna": "#f43f5e", "icon": "⚠️", "tipe": "warning", "bobot": 7,
-        "kata": ["sanksi", "denda", "peringatan tertulis", "teguran", "pelanggaran", "penalti"],
+        "kata": [
+            "sanksi", "denda", "peringatan tertulis", "teguran",
+            "pelanggaran", "penalti",
+        ],
     },
     "RESIGN": {
         "warna": "#f59e0b", "icon": "🚶", "tipe": "warning", "bobot": 5,
-        "kata": ["pengunduran diri", "resign", "mengundurkan diri", "berhenti dari jabatan", "pemberhentian direksi", "pemberhentian komisaris", "pergantian direksi", "pergantian komisaris"],
+        "kata": [
+            "pengunduran diri", "resign", "mengundurkan diri",
+            "berhenti dari jabatan", "pemberhentian direksi",
+            "pemberhentian komisaris", "pergantian direksi",
+            "pergantian komisaris",
+        ],
     },
     "GANTI_AUDITOR": {
         "warna": "#f59e0b", "icon": "🔍", "tipe": "warning", "bobot": 5,
-        "kata": ["pergantian auditor", "penggantian akuntan publik", "pergantian kantor akuntan", "resignasi auditor"],
+        "kata": [
+            "pergantian auditor", "penggantian akuntan publik",
+            "pergantian kantor akuntan", "resignasi auditor",
+        ],
     },
     "RUPSLB": {
         "warna": "#a5b4fc", "icon": "🏛️", "tipe": "neutral", "bobot": 4,
-        "kata": ["rupslb", "rapat umum pemegang saham luar biasa", "luar biasa", "egms"],
+        "kata": [
+            "rupslb", "rapat umum pemegang saham luar biasa",
+            "luar biasa", "egms",
+        ],
     },
     "RUPS": {
         "warna": "#a5b4fc", "icon": "🏛️", "tipe": "neutral", "bobot": 4,
-        "kata": ["rups tahunan", "rapat umum pemegang saham tahunan", "agms", "rups"],
+        "kata": [
+            "rups tahunan", "rapat umum pemegang saham tahunan",
+            "agms", "rups",
+        ],
     },
     "TRANSAKSI_MATERIAL": {
         "warna": "#a5b4fc", "icon": "📑", "tipe": "neutral", "bobot": 6,
-        "kata": ["transaksi material", "transaksi afiliasi", "perjanjian pengikatan jual beli", "ppjb", "conditional sale and purchase agreement", "cspa", "sale and purchase agreement", "perjanjian jual beli saham", "pengalihan saham", "divestasi"],
+        "kata": [
+            "transaksi material", "transaksi afiliasi",
+            "perjanjian pengikatan jual beli", "ppjb",
+            "conditional sale and purchase agreement", "cspa",
+            "sale and purchase agreement",
+            "perjanjian jual beli saham", "pengalihan saham",
+            "divestasi",
+        ],
     },
     "PERUBAHAN_USAHA": {
         "warna": "#a5b4fc", "icon": "🏭", "tipe": "neutral", "bobot": 6,
-        "kata": ["perubahan kegiatan usaha utama", "perubahan bidang usaha", "perubahan maksud dan tujuan", "perubahan anggaran dasar", "diversifikasi usaha", "masuk ke sektor baru"],
+        "kata": [
+            "perubahan kegiatan usaha utama", "perubahan bidang usaha",
+            "perubahan maksud dan tujuan", "perubahan anggaran dasar",
+            "diversifikasi usaha", "masuk ke sektor baru",
+        ],
     },
     "PUBLIKASI": {
         "warna": "#a5b4fc", "icon": "📄", "tipe": "neutral", "bobot": 2,
-        "kata": ["laporan keuangan", "public expose", "laporan tahunan", "laporan bulanan", "annual report", "laporan keberlanjutan"],
+        "kata": [
+            "laporan keuangan", "public expose", "laporan tahunan",
+            "laporan bulanan", "annual report", "laporan keberlanjutan",
+        ],
     },
     "AKSI_KORPORASI": {
         "warna": "#a5b4fc", "icon": "⚙️", "tipe": "neutral", "bobot": 4,
-        "kata": ["stock split", "pemecahan saham", "right issue", "penawaran umum terbatas", "waran", "obligasi", "sukuk", "medium term notes", "mtn", "convertible bond", "hmetd", "hak memesan efek terlebih dahulu"],
+        "kata": [
+            "stock split", "pemecahan saham", "right issue",
+            "penawaran umum terbatas", "waran", "obligasi",
+            "sukuk", "medium term notes", "mtn", "convertible bond",
+            "hmetd", "hak memesan efek terlebih dahulu",
+        ],
     },
     "RESTRUKTURISASI": {
         "warna": "#a5b4fc", "icon": "🔄", "tipe": "neutral", "bobot": 5,
-        "kata": ["restrukturisasi", "restrukturisasi utang", "penjadwalan ulang", "rescheduling", "refinancing", "kredit sindikasi"],
+        "kata": [
+            "restrukturisasi", "restrukturisasi utang",
+            "penjadwalan ulang", "rescheduling", "refinancing",
+            "kredit sindikasi",
+        ],
     },
     "BACKDOOR_LISTING": {
         "warna": "#a5b4fc", "icon": "🚪", "tipe": "neutral", "bobot": 8,
-        "kata": ["backdoor listing", "back door listing", "perubahan pengendali dan kegiatan usaha"],
+        "kata": [
+            "backdoor listing", "back door listing",
+            "perubahan pengendali dan kegiatan usaha",
+        ],
     },
     "PENGHARGAAN": {
         "warna": "#a5b4fc", "icon": "🏆", "tipe": "neutral", "bobot": 2,
-        "kata": ["penghargaan", "award", "sertifikasi", "iso", "rating"],
+        "kata": [
+            "penghargaan", "award", "sertifikasi", "iso", "rating",
+        ],
     },
 }
 
@@ -173,7 +278,7 @@ def get_bobot(kategori_list):
 
 
 # ============================================================
-# SESSION (Warmup Cookie Cloudflare)
+# SESSION (Warmup Cloudflare)
 # ============================================================
 _session = None
 
@@ -183,7 +288,7 @@ def get_session():
         if HAS_CURL_CFFI:
             _session = curl_requests.Session(impersonate="chrome")
             try:
-                # Kunjungi halaman utama untuk dapat cookie __cf_bm
+                # Kunjungi homepage dulu untuk ambil cookie CF
                 _session.get(f"{BASE}/id", timeout=10)
             except Exception:
                 pass
@@ -198,9 +303,10 @@ def get_session():
 # HTTP
 # ============================================================
 def _fetch_page(index_from, page_size, date_from, date_to):
-    """Fetch 1 halaman berdasarkan indexFrom."""
+    # Menggunakan 'keywords' (plural) sesuai kode asli Anda
+    # Menggunakan 'indexFrom' (bukan pageNumber) standar API IDX
     params = {
-        "keyword": "",
+        "keywords": "",
         "indexFrom": index_from,
         "pageSize": page_size,
         "dateFrom": date_from,
@@ -290,11 +396,10 @@ def _parse_item(item, seen_ids):
 
 
 def fetch_announcements(days=90, max_items=20000, page_size=100):
-    """Fetch pengumuman menggunakan indexFrom."""
     date_to = datetime.now()
     date_from = date_to - timedelta(days=days)
 
-    # Format IDX terbaru menggunakan YYYY-MM-DD
+    # Format API IDX: YYYY-MM-DD
     date_to_str = date_to.strftime("%Y-%m-%d")
     date_from_str = date_from.strftime("%Y-%m-%d")
 
@@ -325,7 +430,6 @@ def fetch_announcements(days=90, max_items=20000, page_size=100):
 
         print(f"    Index {index_from}/{item_count}: {len(items)} items, total terkumpul {len(all_items)}")
 
-        # Kalau sudah sampai akhir data
         if index_from + page_size >= item_count:
             break
 
