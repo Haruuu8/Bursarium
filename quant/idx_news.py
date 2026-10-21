@@ -1,7 +1,9 @@
 """
-IDX NEWS — Scraper keterbukaan informasi dari IDX.
+IDX NEWS — Scraper keterbukaan informasi IDX.
 
-Endpoint: /primary/NewsAnnouncement/GetAllAnnouncement
+Strategi: pakai cookie browser langsung (cf_clearance valid dari DevTools).
+Cookie ini terikat ke (IP + User-Agent) dan valid ~30 menit - 6 jam.
+Kalau expired, ambil ulang dari DevTools.
 """
 
 import os
@@ -9,35 +11,74 @@ import json
 import time
 from datetime import datetime, timedelta
 
-try:
-    from curl_cffi import requests as curl_requests
-    HAS_CURL_CFFI = True
-except ImportError:
-    curl_requests = None
-    HAS_CURL_CFFI = False
-
-try:
-    import cloudscraper
-except ImportError:
-    cloudscraper = None
-
-try:
-    import requests as std_requests
-except ImportError:
-    std_requests = None
-
 import pandas as pd
+import requests
+
+try:
+    import tls_client
+    HAS_TLS_CLIENT = True
+except ImportError:
+    tls_client = None
+    HAS_TLS_CLIENT = False
 
 
+# ============================================================
+# CONFIG
+# ============================================================
 CACHE_DIR = "data_idx_news"
 BASE = "https://www.idx.co.id"
 ENDPOINT = f"{BASE}/primary/NewsAnnouncement/GetAllAnnouncement"
 CACHE_TTL_HOURS = 3
-FAILED_CACHE_TTL_SEC = 300   # 5 menit cooldown kalau IDX gagal
+FAILED_CACHE_TTL_SEC = 300
 
 
 # ============================================================
-# KATEGORI (Lengkap)
+# COOKIE — dari DevTools browser Anda
+# ============================================================
+COOKIE_STR = (
+    "_ga=GA1.1.92256144.1789315483; "
+    "auth.strategy=local; "
+    "_cfuvid=nC8kR7OZJQzPJGRiNwvW9QfoTxBkUjV.6el4HjSovxM-1792514665.7373624-1.0.1.1-ehvWLOtTgJuh2lozkPeGT7liMeTBgpWrK4ssP5wYFWg; "
+    "cf_clearance=.NQ22jhyf4dHBDJj1BNqqTwGznYeTFxj26pAmXCBJX8-1792550198-1.2.1.1-_2cLfGJDGBflpR4pJlZPOafTQO_W8cS0vbf8vDgAl75PJ2mCsT80uhCU0LPG94yezoGKG7UJZkg7NxMYXolUFmgFKMydltDEiAvlLfa16BNQuvg1nGCNaldsFgv_9x6_8qMoryiddcK.vlDW4Xw3nHlG0DsaM30FxoMCyIqqK1cuXb9qQk47G.Jz2K6tDOcd8xqiUBAfsAz77Qct2u15N4ckU4yY7YnRbf4SOxgHeH9.zwNmkwggXOZcyKo.OSTgguiQnS2taJPfFPqcC7McYc.MUlLblP9t3uZ31oMuyWucSk.KyCKY.EcKTQceN7cr2orgyllCPgcSHHfAvjZRGGdNx0B7QTDcYZ0Q3f2q.WGY3nMw5bRAlrRYDxJLmaD10Gq6ZE70l9bKuOkz8jDVWraO7gCl6AN1hcxvUlLl5t0QGPZY1SfOy6wCFknvdM1AUmnJ4NGDDZLli6iWOZPPAZE7nYY8jhqjKwF8FCFlbi8; "
+    "__cf_bm=DgICy6PgbcTb6EiUx_kF.tKsTMAurx0Kdux2JphwuBw-1792550198.3689036-1.0.1.1-aO8O48zY1W_GP4ixT8NpyEEeTPsMPjdhGmP.V_8xwnov.LivuLWW2ZZfK6A8jfOX5xNp6JEYKrlNbWeophxinb7vCPzxbmtTU_YLxE4hUIYQwBKbqAh3hrh7j_VABPAw; "
+    "_ga_VDBWS0BLZR=GS2.1.s1792550198$o12$g0$t1792550198$j60$l0$h0"
+)
+
+
+def parse_cookie(s):
+    out = {}
+    for part in s.split("; "):
+        if "=" in part:
+            k, v = part.split("=", 1)
+            out[k.strip()] = v.strip()
+    return out
+
+
+COOKIES = parse_cookie(COOKIE_STR)
+
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/155.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": f"{BASE}/id/perusahaan-tercatat/keterbukaan-informasi",
+    "sec-ch-ua": '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "dnt": "1",
+    "priority": "u=1, i",
+}
+
+
+# ============================================================
+# KATEGORI (Lengkap, tidak diubah)
 # ============================================================
 KATEGORI = {
     "PENGENDALI": {
@@ -249,6 +290,7 @@ KATEGORI = {
     },
 }
 
+
 def klasifikasi(judul, isi=""):
     teks = (str(judul) + " " + str(isi)).lower()
     hasil = []
@@ -261,6 +303,7 @@ def klasifikasi(judul, isi=""):
         hasil.append("PUBLIKASI")
     return hasil
 
+
 def get_tipe(kategori_list):
     tipe_set = set()
     for k in kategori_list:
@@ -271,6 +314,7 @@ def get_tipe(kategori_list):
         return "good"
     return "neutral"
 
+
 def get_bobot(kategori_list):
     if not kategori_list:
         return 0
@@ -278,79 +322,63 @@ def get_bobot(kategori_list):
 
 
 # ============================================================
-# SESSION (Warmup Cloudflare)
+# FETCH — dengan cookie browser
 # ============================================================
-_session = None
-
-def get_session():
-    global _session
-    if _session is None:
-        if HAS_CURL_CFFI:
-            _session = curl_requests.Session(impersonate="chrome")
-            try:
-                # Kunjungi homepage dulu untuk ambil cookie CF
-                _session.get(f"{BASE}/id", timeout=10)
-            except Exception:
-                pass
-        elif cloudscraper is not None:
-            _session = cloudscraper.create_scraper()
-        elif std_requests is not None:
-            _session = std_requests.Session()
-    return _session
-
-
-# ============================================================
-# HTTP
-# ============================================================
-def _fetch_page(index_from, page_size, date_from, date_to):
-    # Menggunakan 'keywords' (plural) sesuai kode asli Anda
-    # Menggunakan 'indexFrom' (bukan pageNumber) standar API IDX
+def _fetch_page(page_number, page_size, date_from_yyyymmdd, date_to_yyyymmdd):
     params = {
         "keywords": "",
-        "indexFrom": index_from,
+        "pageNumber": page_number,
         "pageSize": page_size,
-        "dateFrom": date_from,
-        "dateTo": date_to,
+        "dateFrom": date_from_yyyymmdd,
+        "dateTo": date_to_yyyymmdd,
         "lang": "id",
     }
 
-    headers = {
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Referer": f"{BASE}/id/perusahaan-tercatat/keterbukaan-informasi",
-    }
-
     for attempt in range(3):
+        # === 1. requests dengan cookie browser ===
         try:
-            session = get_session()
-            if session is None:
-                return None
-                
-            r = session.get(ENDPOINT, params=params, headers=headers, timeout=30)
-
-            if r.status_code == 429:
-                wait = 20 * (attempt + 1)
-                print(f"    429, tunggu {wait}s...")
-                time.sleep(wait)
+            r = requests.get(
+                ENDPOINT, params=params, headers=HEADERS,
+                cookies=COOKIES, timeout=30,
+            )
+            if r.status_code == 200:
+                try:
+                    return r.json()
+                except Exception as e:
+                    print(f"    JSON parse error: {e}")
+            elif r.status_code == 429:
+                time.sleep(15 * (attempt + 1))
                 continue
-
-            if r.status_code != 200:
-                print(f"    HTTP {r.status_code} index {index_from}")
-                return None
-
-            ct = r.headers.get("Content-Type", "")
-            if "json" not in ct.lower():
-                time.sleep(3)
-                continue
-
-            return r.json()
-
+            else:
+                print(f"    requests HTTP {r.status_code}")
         except Exception as e:
-            print(f"    Exception index {index_from}: {e}")
-            if attempt < 2:
-                time.sleep(3)
-                continue
-            return None
+            print(f"    requests exception: {e}")
+
+        # === 2. tls_client dengan cookie yang sama ===
+        if HAS_TLS_CLIENT:
+            try:
+                sess = tls_client.Session(
+                    client_identifier="chrome_120",
+                    random_tls_extension_order=True,
+                )
+                r = sess.get(ENDPOINT, params=params,
+                             headers=HEADERS, cookies=COOKIES,
+                             timeout_seconds=30)
+                if r.status_code == 200:
+                    try:
+                        return r.json()
+                    except Exception:
+                        pass
+                elif r.status_code == 429:
+                    time.sleep(15 * (attempt + 1))
+                    continue
+                else:
+                    print(f"    tls_client HTTP {r.status_code}")
+            except Exception as e:
+                print(f"    tls_client exception: {e}")
+
+        if attempt < 2:
+            time.sleep(3)
 
     return None
 
@@ -395,29 +423,28 @@ def _parse_item(item, seen_ids):
     }
 
 
-def fetch_announcements(days=90, max_items=20000, page_size=100):
+def fetch_announcements(days=30, max_items=20000, page_size=100):
     date_to = datetime.now()
     date_from = date_to - timedelta(days=days)
 
-    # Format API IDX: YYYY-MM-DD
-    date_to_str = date_to.strftime("%Y-%m-%d")
-    date_from_str = date_from.strftime("%Y-%m-%d")
+    # Format YYYYMMDD sesuai API IDX
+    date_to_str = date_to.strftime("%Y%m%d")
+    date_from_str = date_from.strftime("%Y%m%d")
 
     all_items = []
     seen_ids = set()
+    page_number = 1
+    max_pages = 100
 
-    index_from = 0
-    max_pages = 50
-    page = 1
-
-    while page <= max_pages and len(all_items) < max_items:
-        data = _fetch_page(index_from, page_size, date_from_str, date_to_str)
-        
+    while page_number <= max_pages and len(all_items) < max_items:
+        data = _fetch_page(page_number, page_size,
+                            date_from_str, date_to_str)
         if data is None:
-            print(f"    Gagal fetch di index {index_from}")
+            print(f"    Gagal fetch page {page_number}")
             break
 
         items = data.get("Items", []) or []
+        page_count = data.get("PageCount", 1)
         item_count = data.get("ItemCount", 0)
 
         if not items:
@@ -428,13 +455,13 @@ def fetch_announcements(days=90, max_items=20000, page_size=100):
             if parsed:
                 all_items.append(parsed)
 
-        print(f"    Index {index_from}/{item_count}: {len(items)} items, total terkumpul {len(all_items)}")
+        print(f"    Page {page_number}/{page_count}: "
+              f"{len(items)} items, total {len(all_items)}/{item_count}")
 
-        if index_from + page_size >= item_count:
+        if page_number >= page_count:
             break
 
-        index_from += page_size
-        page += 1
+        page_number += 1
         time.sleep(1.5)
 
     all_items.sort(key=lambda x: x.get("tanggal", ""), reverse=True)
@@ -524,7 +551,8 @@ def _apply_filter(df, good_only):
         df = df[df["tipe"] == "good"].copy()
     try:
         df["tanggal_dt"] = pd.to_datetime(df["tanggal"], errors="coerce")
-        df = df.sort_values("tanggal_dt", ascending=False, na_position="last").reset_index(drop=True)
+        df = df.sort_values("tanggal_dt", ascending=False,
+                             na_position="last").reset_index(drop=True)
     except Exception:
         pass
     return df
@@ -576,7 +604,8 @@ def scan_news(days=30, force_refresh=False, filter_good_only=False):
 
 def get_stats(df):
     if df.empty:
-        return {"total": 0, "good": 0, "warning": 0, "neutral": 0, "by_kategori": {}, "katalis_tinggi": 0}
+        return {"total": 0, "good": 0, "warning": 0, "neutral": 0,
+                "by_kategori": {}, "katalis_tinggi": 0}
     by_kat = {}
     for kat_list in df["kategori"]:
         for k in kat_list:
