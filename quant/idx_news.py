@@ -35,7 +35,7 @@ CACHE_DIR = "data_idx_news"
 BASE = "https://www.idx.co.id"
 ENDPOINT = f"{BASE}/primary/NewsAnnouncement/GetAllAnnouncement"
 CACHE_TTL_HOURS = 3
-FAILED_CACHE_TTL_SEC = 300   # ⚠️ BARU: 5 menit cooldown kalau IDX gagal
+FAILED_CACHE_TTL_SEC = 300   # 5 menit cooldown kalau IDX gagal
 
 
 # ============================================================
@@ -440,20 +440,24 @@ def _cache_path(days):
     return os.path.join(CACHE_DIR, f"news_cache_{days}d.json")
 
 
-def _cache_valid(path):
-    if not os.path.exists(path):
-        return False
-    age = time.time() - os.path.getmtime(path)
-    return age < CACHE_TTL_HOURS * 3600
-
-
 def load_cache(days):
     path = _cache_path(days)
-    if not _cache_valid(path):
+    if not os.path.exists(path):
         return None
     try:
         with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+            payload = json.load(f)
+        # Support format lama (list) & baru (dict)
+        if isinstance(payload, dict) and "cached_at" in payload:
+            age = time.time() - payload["cached_at"]
+            if age >= CACHE_TTL_HOURS * 3600:
+                return None
+            return payload.get("data", [])
+        # Format lama: fallback ke mtime
+        age = time.time() - os.path.getmtime(path)
+        if age >= CACHE_TTL_HOURS * 3600:
+            return None
+        return payload
     except Exception:
         return None
 
@@ -461,15 +465,20 @@ def load_cache(days):
 def save_cache(data, days):
     os.makedirs(CACHE_DIR, exist_ok=True)
     path = _cache_path(days)
+    # ✅ FIX: simpan timestamp DI DALAM JSON, bukan pakai mtime
+    payload = {
+        "cached_at": time.time(),
+        "data": data,
+    }
     try:
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, default=str)
+            json.dump(payload, f, ensure_ascii=False, default=str)
     except Exception:
         pass
 
 
 # ============================================================
-# CACHE — failure (⚠️ BARU)
+# CACHE — failure
 # ============================================================
 def _failed_path(days):
     return os.path.join(CACHE_DIR, f"news_failed_{days}d.json")
@@ -521,14 +530,28 @@ def _apply_filter(df, good_only):
 
 
 def scan_news(days=30, force_refresh=False, filter_good_only=False):
-    # 1. Cache sukses
+    # 1. Coba cache
     if not force_refresh:
         cached = load_cache(days)
         if cached is not None:
             df = pd.DataFrame(cached)
-            return _apply_filter(df, filter_good_only)
+            # ✅ FIX: validate tanggal terbaru harus < 3 hari
+            if not df.empty and "tanggal" in df.columns:
+                try:
+                    newest = pd.to_datetime(df["tanggal"], errors="coerce").max()
+                    if pd.notna(newest):
+                        age_days = (pd.Timestamp.now() - newest).days
+                        if age_days > 3:
+                            # Cache valid secara timestamp tapi data terlalu tua
+                            # → force fetch fresh
+                            cached = None
+                            df = None
+                except Exception:
+                    pass
+            if cached is not None and df is not None:
+                return _apply_filter(df, filter_good_only)
 
-        # 2. Kalau baru saja gagal, jangan hammer IDX
+        # 2. Cooldown kalau baru gagal
         if _is_recently_failed(days):
             print(f"    [cache] skip fetch (gagal <{FAILED_CACHE_TTL_SEC}s lalu)")
             return pd.DataFrame()
@@ -537,17 +560,21 @@ def scan_news(days=30, force_refresh=False, filter_good_only=False):
     hasil = fetch_announcements(days=days, max_items=20000)
 
     if not hasil:
-        # Fallback: pakai cache lama kalau ada (meski kedaluwarsa)
+        # Fallback cache lama (meski stale) — tapi hanya kalau
+        # cache-nya < 7 hari (jangan terlalu tua)
         cached = load_cache(days)
         if cached is not None:
             df = pd.DataFrame(cached)
-            return _apply_filter(df, filter_good_only)
-
-        # Tidak ada fallback → tandai gagal
+            try:
+                newest = pd.to_datetime(df["tanggal"], errors="coerce").max()
+                age_days = (pd.Timestamp.now() - newest).days if pd.notna(newest) else 999
+                if age_days <= 7:
+                    return _apply_filter(df, filter_good_only)
+            except Exception:
+                pass
         _mark_failed(days)
         return pd.DataFrame()
 
-    # Sukses → hapus tanda gagal, simpan cache
     _clear_failed(days)
     save_cache(hasil, days)
     df = pd.DataFrame(hasil)

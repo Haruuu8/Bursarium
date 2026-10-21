@@ -156,13 +156,14 @@ with c1:
         label_visibility="collapsed",
     )
 with c2:
-    refresh = st.button("Refresh", use_container_width=True)
+    refresh = st.button("🔄 Refresh", use_container_width=True)
 
 
 # ============================================================
 # LOAD DATA - session state per days (retry-friendly)
 # ============================================================
-RETRY_COOLDOWN_SEC = 60   # auto-retry kalau kosong, tiap 60 detik
+RETRY_COOLDOWN_SEC = 60      # auto-retry kalau kosong, tiap 60 detik
+SESSION_DATA_TTL_SEC = 3600  # ✅ FIX: force refetch tiap 1 jam (bukan 4 hari)
 
 if "news_df" not in st.session_state:
     st.session_state.news_df = None
@@ -186,9 +187,18 @@ has_data = (
     and not st.session_state.news_df.empty
 )
 
+# ✅ FIX: cek umur data di session_state
+data_age_sec = (
+    (now - st.session_state.news_last_refresh).total_seconds()
+    if st.session_state.news_last_refresh
+    else float("inf")
+)
+data_stale = data_age_sec > SESSION_DATA_TTL_SEC
+
 need_fetch = (
     refresh
     or st.session_state.news_days_loaded != days
+    or data_stale                        # ← FIX UTAMA: refetch setiap 1 jam
     or (not has_data and cooldown_ok)   # auto-retry kalau kosong
 )
 
@@ -246,14 +256,24 @@ if df.empty:
     ])
 
 # Info bar
+_data_age_min = (
+    (pd.Timestamp.now() - last_refresh).total_seconds() / 60
+    if last_refresh else 0
+)
+
+if _data_age_min < 60:
+    _age_str = f"{int(_data_age_min)} menit lalu"
+else:
+    _age_str = f"{int(_data_age_min / 60)} jam lalu"
+
 st.markdown(
     f'<div style="font-size:11px; color:#7d8ba3; '
     f'padding:6px 12px; margin-bottom:12px; '
     f'background:rgba(99,102,241,0.08); border-radius:8px; '
     f'display:inline-block;">'
-    f'<b style="color:#a5b4fc;">{len(df)}</b> pengumuman - '
-    f'{days} hari terakhir - '
-    f'terakhir refresh: {last_refresh.strftime("%H:%M:%S") if last_refresh else "-"}'
+    f'<b style="color:#a5b4fc;">{len(df)}</b> pengumuman · '
+    f'{days} hari terakhir · '
+    f'Diperbarui: <b style="color:#f59e0b;">{_age_str}</b>'
     f'</div>',
     unsafe_allow_html=True
 )
