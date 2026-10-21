@@ -163,10 +163,10 @@ def build_all_setups():
     """
     Scan semua saham, tapi HANYA simpan yang harga dekat support/resistance.
     
-    BUY SUPPORT: harga dalam 5% di atas zona atau sudah di dalam zona
-    BREAKOUT: harga dalam 3% di bawah resistance (mau break)
+    BUY SUPPORT: harga 0-5% di atas zona_hi atau sudah di dalam zona
+    BREAKOUT: harga 0-3% di bawah resistance (mau break)
     
-    Sort by imminence (kedekatan) × score, limit top 30 per kategori.
+    Sort by imminence × score, limit top 30 per kategori.
     """
     df_all = load_parquet_safe()
     if df_all is None:
@@ -198,9 +198,6 @@ def build_all_setups():
                 zona_lo = z["lower"]
                 zona_hi = z["upper"]
 
-                # FILTER KEDEKATAN: harga harus dalam range zona
-                # - current >= zona_lo * 0.99 (belum break support)
-                # - current <= zona_hi * 1.05 (maksimal 5% di atas zona)
                 if current < zona_lo * 0.99:
                     continue
                 if current > zona_hi * 1.05:
@@ -228,10 +225,6 @@ def build_all_setups():
                 if rr_tp1 < 1.5:
                     continue
 
-                # Imminence score: semakin dekat harga ke zona_hi, semakin tinggi
-                # jarak < 0 → harga di atas zona_hi (0-5%)
-                # jarak = 0 → harga tepat di zona_hi
-                # jarak > 0 → harga di dalam zona
                 if jarak < 0:
                     imminence = max(0, 1 - abs(jarak) / 5)
                 else:
@@ -266,9 +259,6 @@ def build_all_setups():
                 zona_lo = z["lower"]
                 zona_hi = z["upper"]
 
-                # FILTER KEDEKATAN
-                # - current <= zona_hi * 1.005 (belum break resistance)
-                # - current >= zona_lo * 0.97 (maksimal 3% di bawah zona_lo)
                 if current > zona_hi * 1.005:
                     continue
                 if current < zona_lo * 0.97:
@@ -299,7 +289,6 @@ def build_all_setups():
                 if jarak < 0 or jarak > 3:
                     continue
 
-                # Imminence score: jarak 0-3%, semakin dekat ke trigger makin tinggi
                 imminence = max(0, 1 - jarak / 3)
 
                 breakout_buy.append({
@@ -323,11 +312,9 @@ def build_all_setups():
         except Exception:
             continue
 
-    # Sort: imminence (kedekatan) × score tertinggi, lalu RR
     buy_support.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
     breakout_buy.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
 
-    # Limit top N (yang benar-benar dekat)
     buy_support = buy_support[:30]
     breakout_buy = breakout_buy[:20]
 
@@ -339,97 +326,49 @@ def build_all_setups():
 
 
 # ============================================================
-# ANALYZE SETUP SIGNALS
+# ANALYZE SETUP SIGNALS (TANPA FIBO)
 # ============================================================
 @st.cache_data(ttl=1800)
 def analyze_setup_signals(kode, harga):
+    """
+    Analisa apakah saham sedang di zona resistance/breakout.
+    Hanya pakai supres.py (swing_w5), tanpa Fibo.
+    """
     result = {
         "strong_zone": False,
         "strong_zone_info": "",
         "breakout_zone": False,
         "breakout_info": "",
-        "fibo_signal": None,
-        "fibo_info": "",
-        "rsi": 50,
-        "trend": "?"
     }
 
-    df_all = load_parquet_safe()
-    if df_all is None:
-        return result
-    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
-    kode_clean = str(kode).strip().upper()
-    df = df_all[df_all["Kode"] == kode_clean].copy()
-    if df.empty or len(df) < 100:
-        return result
-    df = df.sort_values("Date").reset_index(drop=True)
-
     try:
-        sr = get_support_resistance(kode_clean, timeframe="daily")
-        if sr:
-            for z in sr.get("resistances", []):
-                if z.get("role") == "reversal_warning":
-                    if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
-                        result["strong_zone"] = True
-                        result["strong_zone_info"] = (
-                            f"Harga di resistance psikologis {z['level']:,.0f}. "
-                            f"Waspada tertahan dan berbalik turun."
-                        )
-                        break
+        sr = get_support_resistance(kode, timeframe="daily")
+        if not sr:
+            return result
 
-            for z in sr.get("resistances", []):
-                if z.get("role") == "breakout_trigger":
-                    if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
-                        result["breakout_zone"] = True
-                        result["breakout_info"] = (
-                            f"Harga di breakout trigger {z['level']:,.0f}. "
-                            f"Beli stop di atas {z['upper']:,.0f} untuk konfirmasi tembus."
-                        )
-                        break
+        # Cek Reversal Warning (resistance psikologis)
+        for z in sr.get("resistances", []):
+            if z.get("role") == "reversal_warning":
+                if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
+                    result["strong_zone"] = True
+                    result["strong_zone_info"] = (
+                        f"Harga di resistance psikologis {z['level']:,.0f}. "
+                        f"Waspada tertahan dan berbalik turun."
+                    )
+                    break
+
+        # Cek Breakout Trigger
+        for z in sr.get("resistances", []):
+            if z.get("role") == "breakout_trigger":
+                if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
+                    result["breakout_zone"] = True
+                    result["breakout_info"] = (
+                        f"Harga di breakout trigger {z['level']:,.0f}. "
+                        f"Beli stop di atas {z['upper']:,.0f} untuk konfirmasi tembus."
+                    )
+                    break
     except Exception:
         pass
-
-    recent_df = df.tail(150)
-    swing_high = float(recent_df["High"].max())
-    swing_low = float(recent_df["Low"].min())
-    diff = swing_high - swing_low
-    low_idx = recent_df["Low"].idxmin()
-    high_idx = recent_df["High"].idxmax()
-    is_uptrend = low_idx < high_idx
-
-    delta = df['Close'].diff()
-    gain = (delta.where(delta > 0, 0)).rolling(14).mean()
-    loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
-    rs = gain / loss.replace(0, np.nan)
-    rsi_series = 100 - (100 / (1 + rs))
-    rsi_val = float(rsi_series.iloc[-1]) if not rsi_series.empty else 50
-    result["rsi"] = rsi_val
-    result["trend"] = "UP" if is_uptrend else "DOWN"
-
-    if is_uptrend:
-        fib_850 = swing_high - diff * 0.850
-        fib_786 = swing_high - diff * 0.786
-        dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
-        dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
-
-        if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
-            result["fibo_signal"] = "BUY"
-            result["fibo_info"] = f"Harga di Fib 0.786/0.850 + RSI oversold ({rsi_val:.1f}). Timing terbaik."
-        elif dist_850 < 3 or dist_786 < 3:
-            result["fibo_signal"] = "WATCH"
-            result["fibo_info"] = f"Dekat Fib 0.786/0.850. Tunggu RSI < 45 (sekarang {rsi_val:.1f})."
-    else:
-        fib_850 = swing_low + diff * 0.850
-        fib_786 = swing_low + diff * 0.786
-        dist_850 = abs(harga - fib_850) / fib_850 * 100 if fib_850 > 0 else 999
-        dist_786 = abs(harga - fib_786) / fib_786 * 100 if fib_786 > 0 else 999
-
-        if (dist_850 < 2 or dist_786 < 2) and rsi_val < 45:
-            result["fibo_signal"] = "SELL"
-            result["fibo_info"] = f"Harga di Fib 0.786/0.850 RESISTANCE + RSI ({rsi_val:.1f}). Jangan beli."
-        elif dist_850 < 3 or dist_786 < 3:
-            result["fibo_signal"] = "WATCH"
-            result["fibo_info"] = "Dekat Fib 0.786/0.850 (Resistance). Waspada."
 
     return result
 
@@ -610,8 +549,6 @@ def setup_row(r, tipe="support"):
     strong_info = signals.get("strong_zone_info", "")
     breakout_zone = signals.get("breakout_zone", False)
     breakout_info = signals.get("breakout_info", "")
-    fibo_signal = signals.get("fibo_signal")
-    fibo_info = signals.get("fibo_info", "")
 
     if tipe == "support":
         accent = "#10b981"
@@ -677,39 +614,10 @@ def setup_row(r, tipe="support"):
             f'</div>'
         )
 
-    if fibo_signal == "BUY":
-        signal_banners += (
-            f'<div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#10b981; font-weight:800; letter-spacing:0.5px;">✅ FIBO CONFIRMATION</div>'
-            f'<div style="font-size:12px; color:#6ee7b7; margin-top:4px;">{fibo_info}</div>'
-            f'</div>'
-        )
-    elif fibo_signal == "SELL":
-        signal_banners += (
-            f'<div style="background:rgba(244,63,94,0.15); border:1px solid #f43f5e; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f43f5e; font-weight:800; letter-spacing:0.5px;">🚨 FIBO WARNING</div>'
-            f'<div style="font-size:12px; color:#fda4af; margin-top:4px;">{fibo_info}</div>'
-            f'</div>'
-        )
-    elif fibo_signal == "WATCH":
-        signal_banners += (
-            f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⏳ FIBO WATCH</div>'
-            f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{fibo_info}</div>'
-            f'</div>'
-        )
-
     card_border = "border:1px solid #1a2338;"
     if breakout_zone:
         card_border = "border:1px solid #06b6d4;"
-    elif strong_zone or fibo_signal == "SELL":
-        card_border = "border:1px solid #f59e0b;"
-    elif fibo_signal == "BUY":
-        card_border = "border:1px solid #10b981;"
-    elif fibo_signal == "WATCH":
+    elif strong_zone:
         card_border = "border:1px solid #f59e0b;"
 
     return (
@@ -1094,7 +1002,7 @@ with tab4:
         '<div style="font-size: 13px; color: #10b981; font-weight: 800; '
         'margin-bottom: 8px;">🎯 BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Hanya menampilkan saham yang <b>harganya dekat zona support</b> '
+        'Hanya saham yang <b>harganya dekat zona support</b> '
         '(0-5% di atas zona atau sudah di dalam zona) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
@@ -1137,7 +1045,7 @@ with tab5:
         '<div style="font-size: 13px; color: #06b6d4; font-weight: 800; '
         'margin-bottom: 8px;">🚀 BREAKOUT BUY — SETUP STOP ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Hanya menampilkan saham yang <b>harganya 0-3% di bawah resistance</b> '
+        'Hanya saham yang <b>harganya 0-3% di bawah resistance</b> '
         '(sedang mendekati trigger breakout) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
