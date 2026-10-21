@@ -1,9 +1,5 @@
 """
 IDX NEWS — Scraper keterbukaan informasi dari IDX.
-
-Endpoint: /primary/NewsAnnouncement/GetAllAnnouncement
-- Pagination via pageNumber + pageSize
-- Response: {Items, ItemCount, PageSize, PageNumber, PageCount}
 """
 
 import os
@@ -44,213 +40,109 @@ FAILED_CACHE_TTL_SEC = 300   # 5 menit cooldown kalau IDX gagal
 KATEGORI = {
     "PENGENDALI": {
         "warna": "#10b981", "icon": "👑", "tipe": "good", "bobot": 10,
-        "kata": [
-            "perubahan pengendali", "pengambilalihan", "akuisisi",
-            "takeover", "pengendali baru", "change of control",
-            "calon pengendali", "pemegang saham pengendali baru",
-            "penawaran tender", "tender wajib",
-            "pengambilalihan saham", "peralihan pengendali",
-            "pihak pengendali baru",
-        ],
+        "kata": ["perubahan pengendali", "pengambilalihan", "akuisisi", "takeover", "pengendali baru", "change of control", "calon pengendali", "pemegang saham pengendali baru", "penawaran tender", "tender wajib", "pengambilalihan saham", "peralihan pengendali", "pihak pengendali baru"],
     },
     "PMTHMETD": {
         "warna": "#10b981", "icon": "💎", "tipe": "good", "bobot": 9,
-        "kata": [
-            "penambahan modal tanpa hak memesan efek terlebih dahulu",
-            "pmthmetd", "private placement", "penempatan saham baru",
-            "tanpa hmetd", "tanpa hak memesan", "penerbitan saham baru",
-            "penambahan modal tanpa hmetd", "suntikan modal",
-        ],
+        "kata": ["penambahan modal tanpa hak memesan efek terlebih dahulu", "pmthmetd", "private placement", "penempatan saham baru", "tanpa hmetd", "tanpa hak memesan", "penerbitan saham baru", "penambahan modal tanpa hmetd", "suntikan modal"],
     },
     "INVESTOR_BARU": {
         "warna": "#10b981", "icon": "🎯", "tipe": "good", "bobot": 8,
-        "kata": [
-            "investor strategis", "investor baru", "masuknya investor",
-            "pemegang saham baru", "strategic investor",
-            "pengungkapan kepemilikan saham", "kepemilikan saham ≥ 5%",
-            "kepemilikan saham 5%", "kepemilikan ≥5%",
-            "pemilik manfaat baru", "beneficial owner baru",
-        ],
+        "kata": ["investor strategis", "investor baru", "masuknya investor", "pemegang saham baru", "strategic investor", "pengungkapan kepemilikan saham", "kepemilikan saham ≥ 5%", "kepemilikan saham 5%", "kepemilikan ≥5%", "pemilik manfaat baru", "beneficial owner baru"],
     },
     "TENDER": {
         "warna": "#10b981", "icon": "📢", "tipe": "good", "bobot": 8,
-        "kata": [
-            "tender offer", "penawaran tender", "tender wajib",
-            "penawaran pembelian saham",
-        ],
+        "kata": ["tender offer", "penawaran tender", "tender wajib", "penawaran pembelian saham"],
     },
     "GO_PRIVATE": {
         "warna": "#10b981", "icon": "🚪", "tipe": "good", "bobot": 7,
-        "kata": [
-            "go private", "privatisasi", "delisting sukarela",
-            "penghapusan pencatatan saham secara sukarela",
-            "voluntary delisting",
-        ],
+        "kata": ["go private", "privatisasi", "delisting sukarela", "penghapusan pencatatan saham secara sukarela", "voluntary delisting"],
     },
     "DIVIDEN": {
         "warna": "#10b981", "icon": "💰", "tipe": "good", "bobot": 6,
-        "kata": [
-            "dividen", "dividend", "pembagian dividen",
-            "cash dividend", "dividen tunai", "dividen interim",
-            "dividen final",
-        ],
+        "kata": ["dividen", "dividend", "pembagian dividen", "cash dividend", "dividen tunai", "dividen interim", "dividen final"],
     },
     "BUYBACK": {
         "warna": "#10b981", "icon": "🔁", "tipe": "good", "bobot": 6,
-        "kata": [
-            "buyback", "pembelian kembali saham",
-            "pembelian kembali saham yang telah dikeluarkan",
-            "share buyback", "repurchase",
-        ],
+        "kata": ["buyback", "pembelian kembali saham", "pembelian kembali saham yang telah dikeluarkan", "share buyback", "repurchase"],
     },
     "LABA_NAIK": {
         "warna": "#10b981", "icon": "📈", "tipe": "good", "bobot": 5,
-        "kata": [
-            "laba bersih naik", "profit naik", "pertumbuhan laba",
-            "kenaikan laba", "rekor laba", "laba meningkat",
-            "net profit naik", "laba bersih meningkat",
-        ],
+        "kata": ["laba bersih naik", "profit naik", "pertumbuhan laba", "kenaikan laba", "rekor laba", "laba meningkat", "net profit naik", "laba bersih meningkat"],
     },
     "KONTRAK": {
         "warna": "#10b981", "icon": "🤝", "tipe": "good", "bobot": 5,
-        "kata": [
-            "kontrak baru", "perjanjian kerjasama", "penandatanganan kontrak",
-            "perolehan kontrak", "kontrak signifikan", "proyek baru",
-            "memenangkan tender", "kerjasama strategis",
-        ],
+        "kata": ["kontrak baru", "perjanjian kerjasama", "penandatanganan kontrak", "perolehan kontrak", "kontrak signifikan", "proyek baru", "memenangkan tender", "kerjasama strategis"],
     },
     "SUSPENSI": {
         "warna": "#f43f5e", "icon": "🛑", "tipe": "warning", "bobot": 10,
-        "kata": [
-            "suspensi", "penghentian sementara perdagangan",
-            "suspensi saham", "freeze", "pembekuan",
-        ],
+        "kata": ["suspensi", "penghentian sementara perdagangan", "suspensi saham", "freeze", "pembekuan"],
     },
     "DELISTING": {
         "warna": "#f43f5e", "icon": "❌", "tipe": "warning", "bobot": 10,
-        "kata": [
-            "delisting", "penghapusan pencatatan saham",
-            "delisting paksa", "force delisting", "pencatatan saham dicabut",
-        ],
+        "kata": ["delisting", "penghapusan pencatatan saham", "delisting paksa", "force delisting", "pencatatan saham dicabut"],
     },
     "PKPU": {
         "warna": "#f43f5e", "icon": "⚖️", "tipe": "warning", "bobot": 10,
-        "kata": [
-            "pailit", "pkpu", "penundaan kewajiban pembayaran utang",
-            "gagal bayar", "default", "kepailitan",
-        ],
+        "kata": ["pailit", "pkpu", "penundaan kewajiban pembayaran utang", "gagal bayar", "default", "kepailitan"],
     },
     "RUGI": {
         "warna": "#f43f5e", "icon": "📉", "tipe": "warning", "bobot": 6,
-        "kata": [
-            "rugi bersih", "mengalami kerugian", "penurunan laba",
-            "laba turun", "penurunan pendapatan", "revenue turun",
-            "merugi", "laba bersih negatif",
-        ],
+        "kata": ["rugi bersih", "mengalami kerugian", "penurunan laba", "laba turun", "penurunan pendapatan", "revenue turun", "merugi", "laba bersih negatif"],
     },
     "OPINI_AUDIT": {
         "warna": "#f43f5e", "icon": "📋", "tipe": "warning", "bobot": 8,
-        "kata": [
-            "opini disclaimer", "opini tidak menyatakan pendapat",
-            "opini adverse", "wajar dengan pengecualian",
-            "qualified opinion",
-        ],
+        "kata": ["opini disclaimer", "opini tidak menyatakan pendapat", "opini adverse", "wajar dengan pengecualian", "qualified opinion"],
     },
     "SANKSI": {
         "warna": "#f43f5e", "icon": "⚠️", "tipe": "warning", "bobot": 7,
-        "kata": [
-            "sanksi", "denda", "peringatan tertulis", "teguran",
-            "pelanggaran", "penalti",
-        ],
+        "kata": ["sanksi", "denda", "peringatan tertulis", "teguran", "pelanggaran", "penalti"],
     },
     "RESIGN": {
         "warna": "#f59e0b", "icon": "🚶", "tipe": "warning", "bobot": 5,
-        "kata": [
-            "pengunduran diri", "resign", "mengundurkan diri",
-            "berhenti dari jabatan", "pemberhentian direksi",
-            "pemberhentian komisaris", "pergantian direksi",
-            "pergantian komisaris",
-        ],
+        "kata": ["pengunduran diri", "resign", "mengundurkan diri", "berhenti dari jabatan", "pemberhentian direksi", "pemberhentian komisaris", "pergantian direksi", "pergantian komisaris"],
     },
     "GANTI_AUDITOR": {
         "warna": "#f59e0b", "icon": "🔍", "tipe": "warning", "bobot": 5,
-        "kata": [
-            "pergantian auditor", "penggantian akuntan publik",
-            "pergantian kantor akuntan", "resignasi auditor",
-        ],
+        "kata": ["pergantian auditor", "penggantian akuntan publik", "pergantian kantor akuntan", "resignasi auditor"],
     },
     "RUPSLB": {
         "warna": "#a5b4fc", "icon": "🏛️", "tipe": "neutral", "bobot": 4,
-        "kata": [
-            "rupslb", "rapat umum pemegang saham luar biasa",
-            "luar biasa", "egms",
-        ],
+        "kata": ["rupslb", "rapat umum pemegang saham luar biasa", "luar biasa", "egms"],
     },
     "RUPS": {
         "warna": "#a5b4fc", "icon": "🏛️", "tipe": "neutral", "bobot": 4,
-        "kata": [
-            "rups tahunan", "rapat umum pemegang saham tahunan",
-            "agms", "rups",
-        ],
+        "kata": ["rups tahunan", "rapat umum pemegang saham tahunan", "agms", "rups"],
     },
     "TRANSAKSI_MATERIAL": {
         "warna": "#a5b4fc", "icon": "📑", "tipe": "neutral", "bobot": 6,
-        "kata": [
-            "transaksi material", "transaksi afiliasi",
-            "perjanjian pengikatan jual beli", "ppjb",
-            "conditional sale and purchase agreement", "cspa",
-            "sale and purchase agreement",
-            "perjanjian jual beli saham", "pengalihan saham",
-            "divestasi",
-        ],
+        "kata": ["transaksi material", "transaksi afiliasi", "perjanjian pengikatan jual beli", "ppjb", "conditional sale and purchase agreement", "cspa", "sale and purchase agreement", "perjanjian jual beli saham", "pengalihan saham", "divestasi"],
     },
     "PERUBAHAN_USAHA": {
         "warna": "#a5b4fc", "icon": "🏭", "tipe": "neutral", "bobot": 6,
-        "kata": [
-            "perubahan kegiatan usaha utama", "perubahan bidang usaha",
-            "perubahan maksud dan tujuan", "perubahan anggaran dasar",
-            "diversifikasi usaha", "masuk ke sektor baru",
-        ],
+        "kata": ["perubahan kegiatan usaha utama", "perubahan bidang usaha", "perubahan maksud dan tujuan", "perubahan anggaran dasar", "diversifikasi usaha", "masuk ke sektor baru"],
     },
     "PUBLIKASI": {
         "warna": "#a5b4fc", "icon": "📄", "tipe": "neutral", "bobot": 2,
-        "kata": [
-            "laporan keuangan", "public expose", "laporan tahunan",
-            "laporan bulanan", "annual report", "laporan keberlanjutan",
-        ],
+        "kata": ["laporan keuangan", "public expose", "laporan tahunan", "laporan bulanan", "annual report", "laporan keberlanjutan"],
     },
     "AKSI_KORPORASI": {
         "warna": "#a5b4fc", "icon": "⚙️", "tipe": "neutral", "bobot": 4,
-        "kata": [
-            "stock split", "pemecahan saham", "right issue",
-            "penawaran umum terbatas", "waran", "obligasi",
-            "sukuk", "medium term notes", "mtn", "convertible bond",
-            "hmetd", "hak memesan efek terlebih dahulu",
-        ],
+        "kata": ["stock split", "pemecahan saham", "right issue", "penawaran umum terbatas", "waran", "obligasi", "sukuk", "medium term notes", "mtn", "convertible bond", "hmetd", "hak memesan efek terlebih dahulu"],
     },
     "RESTRUKTURISASI": {
         "warna": "#a5b4fc", "icon": "🔄", "tipe": "neutral", "bobot": 5,
-        "kata": [
-            "restrukturisasi", "restrukturisasi utang",
-            "penjadwalan ulang", "rescheduling", "refinancing",
-            "kredit sindikasi",
-        ],
+        "kata": ["restrukturisasi", "restrukturisasi utang", "penjadwalan ulang", "rescheduling", "refinancing", "kredit sindikasi"],
     },
     "BACKDOOR_LISTING": {
         "warna": "#a5b4fc", "icon": "🚪", "tipe": "neutral", "bobot": 8,
-        "kata": [
-            "backdoor listing", "back door listing",
-            "perubahan pengendali dan kegiatan usaha",
-        ],
+        "kata": ["backdoor listing", "back door listing", "perubahan pengendali dan kegiatan usaha"],
     },
     "PENGHARGAAN": {
         "warna": "#a5b4fc", "icon": "🏆", "tipe": "neutral", "bobot": 2,
-        "kata": [
-            "penghargaan", "award", "sertifikasi", "iso", "rating",
-        ],
+        "kata": ["penghargaan", "award", "sertifikasi", "iso", "rating"],
     },
 }
-
 
 def klasifikasi(judul, isi=""):
     teks = (str(judul) + " " + str(isi)).lower()
@@ -264,7 +156,6 @@ def klasifikasi(judul, isi=""):
         hasil.append("PUBLIKASI")
     return hasil
 
-
 def get_tipe(kategori_list):
     tipe_set = set()
     for k in kategori_list:
@@ -275,7 +166,6 @@ def get_tipe(kategori_list):
         return "good"
     return "neutral"
 
-
 def get_bobot(kategori_list):
     if not kategori_list:
         return 0
@@ -283,13 +173,35 @@ def get_bobot(kategori_list):
 
 
 # ============================================================
+# SESSION (Warmup Cookie Cloudflare)
+# ============================================================
+_session = None
+
+def get_session():
+    global _session
+    if _session is None:
+        if HAS_CURL_CFFI:
+            _session = curl_requests.Session(impersonate="chrome")
+            try:
+                # Kunjungi halaman utama untuk dapat cookie __cf_bm
+                _session.get(f"{BASE}/id", timeout=10)
+            except Exception:
+                pass
+        elif cloudscraper is not None:
+            _session = cloudscraper.create_scraper()
+        elif std_requests is not None:
+            _session = std_requests.Session()
+    return _session
+
+
+# ============================================================
 # HTTP
 # ============================================================
-def _fetch_page(page_number, page_size, date_from, date_to):
-    """Fetch 1 halaman. Return dict response atau None."""
+def _fetch_page(index_from, page_size, date_from, date_to):
+    """Fetch 1 halaman berdasarkan indexFrom."""
     params = {
-        "keywords": "",
-        "pageNumber": page_number,
+        "keyword": "",
+        "indexFrom": index_from,
         "pageSize": page_size,
         "dateFrom": date_from,
         "dateTo": date_to,
@@ -299,23 +211,16 @@ def _fetch_page(page_number, page_size, date_from, date_to):
     headers = {
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "en-US,en;q=0.9",
-        "Referer": "https://www.idx.co.id/id/perusahaan-tercatat/keterbukaan-informasi",
+        "Referer": f"{BASE}/id/perusahaan-tercatat/keterbukaan-informasi",
     }
 
     for attempt in range(3):
         try:
-            if HAS_CURL_CFFI:
-                r = curl_requests.get(ENDPOINT, params=params,
-                                       headers=headers,
-                                       impersonate="chrome", timeout=30)
-            elif cloudscraper is not None:
-                s = cloudscraper.create_scraper()
-                r = s.get(ENDPOINT, params=params, headers=headers, timeout=30)
-            elif std_requests is not None:
-                r = std_requests.get(ENDPOINT, params=params,
-                                      headers=headers, timeout=30)
-            else:
+            session = get_session()
+            if session is None:
                 return None
+                
+            r = session.get(ENDPOINT, params=params, headers=headers, timeout=30)
 
             if r.status_code == 429:
                 wait = 20 * (attempt + 1)
@@ -324,20 +229,20 @@ def _fetch_page(page_number, page_size, date_from, date_to):
                 continue
 
             if r.status_code != 200:
-                print(f"    HTTP {r.status_code} page {page_number}")
+                print(f"    HTTP {r.status_code} index {index_from}")
                 return None
 
             ct = r.headers.get("Content-Type", "")
             if "json" not in ct.lower():
-                time.sleep(5)
+                time.sleep(3)
                 continue
 
             return r.json()
 
         except Exception as e:
-            print(f"    Exception page {page_number}: {e}")
+            print(f"    Exception index {index_from}: {e}")
             if attempt < 2:
-                time.sleep(5)
+                time.sleep(3)
                 continue
             return None
 
@@ -345,7 +250,6 @@ def _fetch_page(page_number, page_size, date_from, date_to):
 
 
 def _parse_item(item, seen_ids):
-    """Parse 1 item. Return dict atau None."""
     ann_id = item.get("Id") or item.get("AnnouncementNo")
     if not ann_id:
         return None
@@ -385,31 +289,30 @@ def _parse_item(item, seen_ids):
     }
 
 
-def fetch_announcements(days=90, max_items=20000, page_size=500):
-    """
-    Fetch semua pengumuman dengan pagination.
-    Endpoint ini support pageNumber → tidak perlu loop per hari.
-    """
+def fetch_announcements(days=90, max_items=20000, page_size=100):
+    """Fetch pengumuman menggunakan indexFrom."""
     date_to = datetime.now()
     date_from = date_to - timedelta(days=days)
 
-    date_to_str = date_to.strftime("%Y%m%d")
-    date_from_str = date_from.strftime("%Y%m%d")
+    # Format IDX terbaru menggunakan YYYY-MM-DD
+    date_to_str = date_to.strftime("%Y-%m-%d")
+    date_from_str = date_from.strftime("%Y-%m-%d")
 
     all_items = []
     seen_ids = set()
 
+    index_from = 0
+    max_pages = 50
     page = 1
-    max_pages = 40
 
     while page <= max_pages and len(all_items) < max_items:
-        data = _fetch_page(page, page_size, date_from_str, date_to_str)
+        data = _fetch_page(index_from, page_size, date_from_str, date_to_str)
+        
         if data is None:
-            print(f"    Halaman {page}: gagal")
+            print(f"    Gagal fetch di index {index_from}")
             break
 
         items = data.get("Items", []) or []
-        page_count = data.get("PageCount", 1)
         item_count = data.get("ItemCount", 0)
 
         if not items:
@@ -420,12 +323,13 @@ def fetch_announcements(days=90, max_items=20000, page_size=500):
             if parsed:
                 all_items.append(parsed)
 
-        print(f"    Halaman {page}/{page_count}: "
-              f"{len(items)} items, total {len(all_items)}/{item_count}")
+        print(f"    Index {index_from}/{item_count}: {len(items)} items, total terkumpul {len(all_items)}")
 
-        if page >= page_count:
+        # Kalau sudah sampai akhir data
+        if index_from + page_size >= item_count:
             break
 
+        index_from += page_size
         page += 1
         time.sleep(1.5)
 
@@ -434,7 +338,7 @@ def fetch_announcements(days=90, max_items=20000, page_size=500):
 
 
 # ============================================================
-# CACHE — success
+# CACHE
 # ============================================================
 def _cache_path(days):
     return os.path.join(CACHE_DIR, f"news_cache_{days}d.json")
@@ -447,13 +351,11 @@ def load_cache(days):
     try:
         with open(path, "r", encoding="utf-8") as f:
             payload = json.load(f)
-        # Support format lama (list) & baru (dict)
         if isinstance(payload, dict) and "cached_at" in payload:
             age = time.time() - payload["cached_at"]
             if age >= CACHE_TTL_HOURS * 3600:
                 return None
             return payload.get("data", [])
-        # Format lama: fallback ke mtime
         age = time.time() - os.path.getmtime(path)
         if age >= CACHE_TTL_HOURS * 3600:
             return None
@@ -465,7 +367,6 @@ def load_cache(days):
 def save_cache(data, days):
     os.makedirs(CACHE_DIR, exist_ok=True)
     path = _cache_path(days)
-    # ✅ FIX: simpan timestamp DI DALAM JSON, bukan pakai mtime
     payload = {
         "cached_at": time.time(),
         "data": data,
@@ -477,9 +378,6 @@ def save_cache(data, days):
         pass
 
 
-# ============================================================
-# CACHE — failure
-# ============================================================
 def _failed_path(days):
     return os.path.join(CACHE_DIR, f"news_failed_{days}d.json")
 
@@ -522,28 +420,23 @@ def _apply_filter(df, good_only):
         df = df[df["tipe"] == "good"].copy()
     try:
         df["tanggal_dt"] = pd.to_datetime(df["tanggal"], errors="coerce")
-        df = df.sort_values("tanggal_dt", ascending=False,
-                             na_position="last").reset_index(drop=True)
+        df = df.sort_values("tanggal_dt", ascending=False, na_position="last").reset_index(drop=True)
     except Exception:
         pass
     return df
 
 
 def scan_news(days=30, force_refresh=False, filter_good_only=False):
-    # 1. Coba cache
     if not force_refresh:
         cached = load_cache(days)
         if cached is not None:
             df = pd.DataFrame(cached)
-            # ✅ FIX: validate tanggal terbaru harus < 3 hari
             if not df.empty and "tanggal" in df.columns:
                 try:
                     newest = pd.to_datetime(df["tanggal"], errors="coerce").max()
                     if pd.notna(newest):
                         age_days = (pd.Timestamp.now() - newest).days
                         if age_days > 3:
-                            # Cache valid secara timestamp tapi data terlalu tua
-                            # → force fetch fresh
                             cached = None
                             df = None
                 except Exception:
@@ -551,17 +444,13 @@ def scan_news(days=30, force_refresh=False, filter_good_only=False):
             if cached is not None and df is not None:
                 return _apply_filter(df, filter_good_only)
 
-        # 2. Cooldown kalau baru gagal
         if _is_recently_failed(days):
             print(f"    [cache] skip fetch (gagal <{FAILED_CACHE_TTL_SEC}s lalu)")
             return pd.DataFrame()
 
-    # 3. Fetch fresh
     hasil = fetch_announcements(days=days, max_items=20000)
 
     if not hasil:
-        # Fallback cache lama (meski stale) — tapi hanya kalau
-        # cache-nya < 7 hari (jangan terlalu tua)
         cached = load_cache(days)
         if cached is not None:
             df = pd.DataFrame(cached)
@@ -583,8 +472,7 @@ def scan_news(days=30, force_refresh=False, filter_good_only=False):
 
 def get_stats(df):
     if df.empty:
-        return {"total": 0, "good": 0, "warning": 0, "neutral": 0,
-                "by_kategori": {}, "katalis_tinggi": 0}
+        return {"total": 0, "good": 0, "warning": 0, "neutral": 0, "by_kategori": {}, "katalis_tinggi": 0}
     by_kat = {}
     for kat_list in df["kategori"]:
         for k in kat_list:
