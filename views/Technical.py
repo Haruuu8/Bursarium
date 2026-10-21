@@ -14,7 +14,7 @@ from quant.technical import (
     hitung_indikator_teknikal,
     hitung_sinyal_trading,
 )
-from quant.supres import get_support_resistance
+from quant.supres_technical import get_support_resistance
 from quant.theme import (
     load_theme, page_header, section_title, empty_state,
 )
