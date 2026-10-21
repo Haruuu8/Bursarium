@@ -1,0 +1,108 @@
+{
+  "kode": "UANG",
+  "nama": "PT Pakuan Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 2020.0,
+  "update": "2026-10-21 14:31",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 3.2957523810978685e-05,
+    "pb": 7.132997335559051,
+    "ps": 9.652367377751538e-06,
+    "roe": -0.05821497048102935,
+    "eps": 61291012.38264463,
+    "de": 3.68425645171175,
+    "margin_net": -2.1619161157472635,
+    "current_ratio": 1.494340686490916,
+    "roa": -0.01106540894807057,
+    "bv": 283.1909090909091
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 2.13878669739e+17,
+      "2024-Q2": 1.5662326404e+16,
+      "2024-Q3": 2.368184705e+16,
+      "2026-Q1": 9227000000.0
+    },
+    "eps": {
+      "2024-Q1": 98980000.0,
+      "2024-Q2": -22800000.0,
+      "2024-Q3": -14890000.0,
+      "2026-Q1": 16.49
+    },
+    "net_income": {
+      "2024-Q1": 1.19763920765e+17,
+      "2024-Q2": -2.7583290771e+16,
+      "2024-Q3": -1.8018485063e+16,
+      "2026-Q1": -19948000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": -62910000.0,
+      "2022": -48840000.0,
+      "2023": 250900000.0,
+      "2025": 68.68
+    },
+    "revenue_per_share": {
+      "2021": 7460135157000000.0,
+      "2022": 7460135157000000.0,
+      "2023": 5.17875326957e+17,
+      "2025": 343766000000.0
+    }
+  },
+  "statistik": {
+    "market_cap": 2444199985152,
+    "enterprise_value": 3595976048640,
+    "shares_outstanding": 1210000000,
+    "free_float_pct": 13.930000000000001
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3035,
+    "vol_trend": 0.308,
+    "price_chg_20d": -46.53
+  },
+  "neraca": {
+    "aset": 1802735.0,
+    "aset_lancar": 964706.0,
+    "kas": 49808.0,
+    "piutang_usaha": 77337.0,
+    "persediaan": 353368.0,
+    "aset_tetap": 12976.0,
+    "liabilitas": 1262451.0,
+    "liabilitas_jangka_pendek": 645573.0,
+    "liabilitas_jangka_panjang": 616878.0,
+    "utang_usaha": 77337.0,
+    "utang_bank": 139910.0,
+    "ekuitas": 342661.0,
+    "ekuitas_induk": 342661.0,
+    "modal_saham": null,
+    "saldo_laba": 255930.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9227.0,
+    "beban_pokok": 4401.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -23057.0,
+    "beban_pajak": null,
+    "laba_bersih": -19948.0,
+    "laba_induk": -19948.0,
+    "eps_basic": 1.649e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

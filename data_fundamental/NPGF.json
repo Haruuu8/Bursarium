@@ -1,0 +1,103 @@
+{
+  "kode": "NPGF",
+  "nama": "PT Nusa Palapa Gemilang Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Agricultural Inputs",
+  "harga": 37.0,
+  "update": "2026-10-21 14:39",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 18.698605268175477,
+    "pb": 0.49823658851900454,
+    "ps": 0.3515468078830909,
+    "roe": 0.006661413797624117,
+    "eps": 1.978757210462804,
+    "de": 0.8202563038956375,
+    "margin_net": 0.018800696781455357,
+    "current_ratio": 1.7847523013102733,
+    "roa": 0.0036596021029388186,
+    "bv": 74.26190860446751
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 4.8789179299e+16,
+      "2026-Q1": 8.5258010734e+16
+    },
+    "eps": {
+      "2024-Q3": 710185.7,
+      "2026-Q1": 490000.0
+    },
+    "net_income": {
+      "2024-Q3": 2307628426000000.0,
+      "2026-Q1": 1602910008000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 1320000.0,
+      "2022": -11805120.0,
+      "2023": -18560000.0
+    },
+    "revenue_per_share": {
+      "2021": 3.52351492551e+17,
+      "2022": 1.54393059177e+17,
+      "2023": 5.2286426282e+16
+    }
+  },
+  "statistik": {
+    "market_cap": 119888723968,
+    "enterprise_value": 290884616192,
+    "shares_outstanding": 3240235840,
+    "free_float_pct": 19.905000001481373
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3968,
+    "vol_trend": 1.223,
+    "price_chg_20d": -36.36
+  },
+  "neraca": {
+    "aset": 438001171415.0,
+    "aset_lancar": 347594748970.0,
+    "kas": 11224152870.0,
+    "piutang_usaha": 199673647749.0,
+    "persediaan": 129812896071.0,
+    "aset_tetap": 87125029472.0,
+    "liabilitas": 197375073608.0,
+    "liabilitas_jangka_pendek": 194757977740.0,
+    "liabilitas_jangka_panjang": 2617095868.0,
+    "utang_usaha": 199673647749.0,
+    "utang_bank": 176077723603.0,
+    "ekuitas": 240626097807.0,
+    "ekuitas_induk": 240626097807.0,
+    "modal_saham": null,
+    "saldo_laba": 4853526629.0
+  },
+  "laba_rugi": {
+    "pendapatan": 85258010734.0,
+    "beban_pokok": 64276833708.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2053124773.0,
+    "beban_pajak": -450214765.0,
+    "laba_bersih": 1602910008.0,
+    "laba_induk": 1602910008.0,
+    "eps_basic": 0.49,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 238182860.0,
+    "dividen_dibayar": null
+  }
+}

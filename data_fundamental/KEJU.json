@@ -1,0 +1,108 @@
+{
+  "kode": "KEJU",
+  "nama": "PT Mulia Boga Raya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 595.0,
+  "update": "2026-10-21 14:21",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 15.861703705628358,
+    "pb": 3.922849398411075,
+    "ps": 1.7429875585350174,
+    "roe": 0.12365788288615849,
+    "eps": 37.511733357424305,
+    "de": 0.5683575434650013,
+    "margin_net": 0.10988652864045978,
+    "current_ratio": 1.7721248373456853,
+    "roa": 0.07884546696728276,
+    "bv": 151.67546331016453
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 3.3182701496899994e+17,
+      "2026-Q1": 4.75537441996e+17,
+      "2026-Q2": 4.8455977241500006e+17
+    },
+    "eps": {
+      "2024-Q3": 31400000.0,
+      "2026-Q1": 9900000.0,
+      "2026-Q2": 8880000.0
+    },
+    "net_income": {
+      "2024-Q3": 4.6973654363e+16,
+      "2026-Q1": 5.5657979124e+16,
+      "2026-Q2": 4.9843770925e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 96470000.0,
+      "2022": 78250000.0,
+      "2023": 53560000.0,
+      "2025": 31900000.0
+    },
+    "revenue_per_share": {
+      "2021": 1.042307144847e+18,
+      "2022": 1.044368857579e+18,
+      "2023": 1.0778734697e+17,
+      "2025": 1.50630032989e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 3346875023360,
+    "enterprise_value": 3215718350848,
+    "shares_outstanding": 5624999999,
+    "free_float_pct": 10.003905921778472
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0365,
+    "vol_trend": 0.527,
+    "price_chg_20d": -1.68
+  },
+  "neraca": {
+    "aset": 1338082633118.0,
+    "aset_lancar": 713052263827.0,
+    "kas": 166673078923.0,
+    "piutang_usaha": 36648182819.0,
+    "persediaan": 316426225845.0,
+    "aset_tetap": 525570724551.0,
+    "liabilitas": 484908152150.0,
+    "liabilitas_jangka_pendek": 402371350370.0,
+    "liabilitas_jangka_panjang": 82536801780.0,
+    "utang_usaha": 36648182819.0,
+    "utang_bank": 20000000000.0,
+    "ekuitas": 853174480968.0,
+    "ekuitas_induk": 853174480968.0,
+    "modal_saham": null,
+    "saldo_laba": 18200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 960097214411.0,
+    "beban_pokok": 708470940719.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 134312030218.0,
+    "beban_pajak": -28810280169.0,
+    "laba_bersih": 105501750049.0,
+    "laba_induk": 105501750049.0,
+    "eps_basic": 18.78,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 75356037391.0,
+    "dividen_dibayar": 89873988784.0
+  }
+}

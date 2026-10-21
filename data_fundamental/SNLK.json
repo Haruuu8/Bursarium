@@ -1,0 +1,105 @@
+{
+  "kode": "SNLK",
+  "nama": "PT Sunter Lakeside Hotel Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 222.0,
+  "update": "2026-10-21 14:38",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.6199206524541018,
+    "ps": 2.7203486546622364,
+    "roe": -0.015266652243414051,
+    "eps": -21.868584533333333,
+    "de": 0.2650351905007403,
+    "margin_net": -0.26797375907486815,
+    "current_ratio": 2.0688349798417933,
+    "roa": -0.012068164078005636,
+    "bv": 358.11034706
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 1.5908198875e+16,
+      "2026-Q1": 9180808481000000.0
+    },
+    "eps": {
+      "2024-Q3": 4000000.0,
+      "2026-Q1": -5500000.0
+    },
+    "net_income": {
+      "2024-Q3": 2175058253000000.0,
+      "2026-Q1": -2460215760000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": -18000000.0,
+      "2022": -11000000.0,
+      "2023": 6000000.0,
+      "2025": -9900000.0
+    },
+    "revenue_per_share": {
+      "2021": 2.0726401378e+16,
+      "2022": 3.5992452398e+16,
+      "2023": 4.7248001713e+16,
+      "2025": 4.6011509549e+16
+    }
+  },
+  "statistik": {
+    "market_cap": 99899998208,
+    "enterprise_value": 103437033472,
+    "shares_outstanding": 450000000,
+    "free_float_pct": 20.612
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2726,
+    "vol_trend": 0.728,
+    "price_chg_20d": -12.6
+  },
+  "neraca": {
+    "aset": 203859986001.0,
+    "aset_lancar": 27791201448.0,
+    "kas": 24086711061.0,
+    "piutang_usaha": 721247862.0,
+    "persediaan": 1377733033.0,
+    "aset_tetap": 96664905801.0,
+    "liabilitas": 42710329824.0,
+    "liabilitas_jangka_pendek": 13433261579.0,
+    "liabilitas_jangka_panjang": 29277068245.0,
+    "utang_usaha": 721247862.0,
+    "utang_bank": null,
+    "ekuitas": 161149656177.0,
+    "ekuitas_induk": 161149656177.0,
+    "modal_saham": null,
+    "saldo_laba": 500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9180808481.0,
+    "beban_pokok": 4650551284.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2460215760.0,
+    "beban_pajak": null,
+    "laba_bersih": -2460215760.0,
+    "laba_induk": -2460215760.0,
+    "eps_basic": -5.5,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 527049087.0,
+    "dividen_dibayar": null
+  }
+}

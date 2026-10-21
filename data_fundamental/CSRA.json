@@ -1,0 +1,109 @@
+{
+  "kode": "CSRA",
+  "nama": "PT Cisadane Sawit Raya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 620.0,
+  "update": "2026-10-21 14:25",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 5.412891587026167e-06,
+    "pb": 0.7951428941716522,
+    "ps": 7.06829257271826e-07,
+    "roe": 0.08235554598744387,
+    "eps": 114541366.66731708,
+    "de": 0.650713154887903,
+    "margin_net": 0.10699660215172432,
+    "current_ratio": 1.5958751520297543,
+    "roa": 0.049890604898270706,
+    "bv": 779.7340635809757
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1.90945593121e+17,
+      "2024-Q2": 2.429019336e+17,
+      "2024-Q3": 3.2493466023400006e+17,
+      "2026-Q1": 5.41322948604e+17,
+      "2026-Q2": 6.890116381179999e+17
+    },
+    "eps": {
+      "2024-Q1": 11000000.0,
+      "2024-Q2": 22000000.0,
+      "2024-Q3": 28000000.0,
+      "2026-Q1": 43000000.0,
+      "2026-Q2": 21000000.0
+    },
+    "net_income": {
+      "2024-Q1": 2.2231700181e+16,
+      "2024-Q2": 4.4403528435e+16,
+      "2024-Q3": 5.8764652944e+16,
+      "2026-Q1": 8.3677482695e+16,
+      "2026-Q2": 4.7964137594e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 123000000.0,
+      "2023": 71000000.0,
+      "2025": 133000000.0
+    },
+    "revenue_per_share": {
+      "2022": 9.70572083452e+17,
+      "2023": 8.75512425564e+17,
+      "2025": 1.889269586412e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 1270999941120,
+    "enterprise_value": 1935988490240,
+    "shares_outstanding": 2050000000,
+    "free_float_pct": 15.360690146341463
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2021,
+    "vol_trend": 0.889,
+    "price_chg_20d": -14.29
+  },
+  "neraca": {
+    "aset": 2638605415938.0,
+    "aset_lancar": 611275751364.0,
+    "kas": 46322682596.0,
+    "piutang_usaha": 47677409671.0,
+    "persediaan": 115508422054.0,
+    "aset_tetap": 69330167238.0,
+    "liabilitas": 1040135585597.0,
+    "liabilitas_jangka_pendek": 383034819852.0,
+    "liabilitas_jangka_panjang": 657100765745.0,
+    "utang_usaha": 47677409671.0,
+    "utang_bank": 74999790000.0,
+    "ekuitas": 1598454830341.0,
+    "ekuitas_induk": 1598454830341.0,
+    "modal_saham": null,
+    "saldo_laba": 11600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1230334586722.0,
+    "beban_pokok": 991451753125.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 175720031935.0,
+    "beban_pajak": -44078411646.0,
+    "laba_bersih": 131641620289.0,
+    "laba_induk": 131641620289.0,
+    "eps_basic": 64.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 69330167238.0,
+    "dividen_dibayar": null
+  }
+}

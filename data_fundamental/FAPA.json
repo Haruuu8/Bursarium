@@ -1,0 +1,111 @@
+{
+  "kode": "FAPA",
+  "nama": "PT FAP Agri Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 7100.0,
+  "update": "2026-10-21 14:36",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 2.4327940475950426e-05,
+    "pb": 5.957232203164237,
+    "ps": 3.50627596464158e-06,
+    "roe": 0.16671891323084917,
+    "eps": 291845501.96588814,
+    "de": 1.5947141828419265,
+    "margin_net": 0.16408297358086696,
+    "current_ratio": 0.8410875819058887,
+    "roa": 0.06302790252912271,
+    "bv": 1191.8286475771033
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1.198430547489e+18,
+      "2024-Q2": 1.288610490735e+18,
+      "2024-Q3": 1.548050814136e+18,
+      "2026-Q1": 2.005842883905e+18,
+      "2026-Q2": 2.2143925955960003e+18
+    },
+    "eps": {
+      "2024-Q1": -11200000.0,
+      "2024-Q2": 34200000.0,
+      "2024-Q3": 55570089.93,
+      "2026-Q1": 69574465.22,
+      "2026-Q2": 123195534.78
+    },
+    "net_income": {
+      "2024-Q1": -4.0667368984e+16,
+      "2024-Q2": 1.23717056461e+17,
+      "2024-Q3": 2.00892754378e+17,
+      "2026-Q1": 2.49920185142e+17,
+      "2026-Q2": 4.42548601546e+17
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 105920000.0,
+      "2022": 195390000.0,
+      "2023": 42310000.0,
+      "2025": 296591866.26
+    },
+    "revenue_per_share": {
+      "2021": 3.390496525189e+18,
+      "2022": 4.828633601246e+18,
+      "2023": 5.062243740223e+18,
+      "2025": 7.580783474655e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 24743426129920,
+    "enterprise_value": 29040385720320,
+    "shares_outstanding": 3484989800,
+    "free_float_pct": 10.282999996154938
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1349,
+    "vol_trend": 0.054,
+    "price_chg_20d": -4.04
+  },
+  "neraca": {
+    "aset": 10986702062123.0,
+    "aset_lancar": 3010929932663.0,
+    "kas": 963658959391.0,
+    "piutang_usaha": 461267087155.0,
+    "persediaan": 932427138758.0,
+    "aset_tetap": 4298615053260.0,
+    "liabilitas": 6623662390227.0,
+    "liabilitas_jangka_pendek": 3579805477380.0,
+    "liabilitas_jangka_panjang": 3043856912847.0,
+    "utang_usaha": 461267087155.0,
+    "utang_bank": 1681218508151.0,
+    "ekuitas": 4153510680154.0,
+    "ekuitas_induk": 4153510680154.0,
+    "modal_saham": null,
+    "saldo_laba": 1775989092258.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4220235479501.0,
+    "beban_pokok": 2804082770367.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 939744233082.0,
+    "beban_pajak": -210599409682.0,
+    "laba_bersih": 692468786688.0,
+    "laba_induk": 692468786688.0,
+    "eps_basic": 192.77,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 831127534439.0,
+    "dividen_dibayar": 5600000000.0
+  }
+}

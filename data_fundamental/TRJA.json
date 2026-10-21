@@ -1,0 +1,108 @@
+{
+  "kode": "TRJA",
+  "nama": "PT Transkon Jaya Tbk",
+  "sektor": "Industrials",
+  "industri": "Rental & Leasing Services",
+  "harga": 109.0,
+  "update": "2026-10-21 14:32",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 4.4060600011866e-06,
+    "pb": 0.42303881741628585,
+    "ps": 2.89756130658338e-07,
+    "roe": 0.0031897307806809058,
+    "eps": 24738655.390676733,
+    "de": 0.918954581366946,
+    "margin_net": 0.011018418368219918,
+    "current_ratio": 0.9098105438847579,
+    "roa": 0.0016622444510653981,
+    "bv": 257.65957049927164
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1.4442710769e+17,
+      "2024-Q2": 1.4990624816e+17,
+      "2024-Q3": 1.61125343525e+17,
+      "2026-Q1": 1.12645932703e+17
+    },
+    "eps": {
+      "2024-Q1": 1653950.0,
+      "2024-Q2": 7709823.89,
+      "2024-Q3": -0.0,
+      "2026-Q1": 821860.0
+    },
+    "net_income": {
+      "2024-Q1": 2497802001000000.0,
+      "2024-Q2": 1.164336933e+16,
+      "2024-Q3": 2.1977966026e+16,
+      "2026-Q1": 1241180014000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 30450000.0,
+      "2022": 24130000.0,
+      "2023": 9920720.0,
+      "2025": 2151238.7
+    },
+    "revenue_per_share": {
+      "2021": 4.02584918991e+17,
+      "2022": 4.8300133611e+17,
+      "2023": 6.06369668837e+17,
+      "2025": 5.08455142119e+17
+    }
+  },
+  "statistik": {
+    "market_cap": 164611801088,
+    "enterprise_value": 436566425600,
+    "shares_outstanding": 1510200000,
+    "free_float_pct": 11.551
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3469,
+    "vol_trend": 0.349,
+    "price_chg_20d": -15.45
+  },
+  "neraca": {
+    "aset": 746689220833.0,
+    "aset_lancar": 169478301041.0,
+    "kas": 23139773478.0,
+    "piutang_usaha": 119183139976.0,
+    "persediaan": 19793971386.0,
+    "aset_tetap": 488311325687.0,
+    "liabilitas": 357581294031.0,
+    "liabilitas_jangka_pendek": 186278673269.0,
+    "liabilitas_jangka_panjang": 171302620762.0,
+    "utang_usaha": 119183139976.0,
+    "utang_bank": 5880233340.0,
+    "ekuitas": 389117483368.0,
+    "ekuitas_induk": 389117483368.0,
+    "modal_saham": null,
+    "saldo_laba": 30204000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 112645932703.0,
+    "beban_pokok": 100727361544.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1843591416.0,
+    "beban_pajak": -600105448.0,
+    "laba_bersih": 1241180014.0,
+    "laba_induk": 1241180014.0,
+    "eps_basic": 0.82186,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 44595784854.0,
+    "dividen_dibayar": null
+  }
+}

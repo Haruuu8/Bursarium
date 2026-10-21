@@ -1,0 +1,105 @@
+{
+  "kode": "SOHO",
+  "nama": "PT Soho Global Health Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 1225.0,
+  "update": "2026-10-21 14:34",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 20.472288404689294,
+    "pb": 5.60695849330655,
+    "ps": 1.4747204307488095,
+    "roe": 0.06847009946409123,
+    "eps": 59.83698430701117,
+    "de": 1.0906865113997821,
+    "margin_net": 0.07203495777301654,
+    "current_ratio": 1.827924986120694,
+    "roa": 0.0327500555873622,
+    "bv": 218.4785211915471
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q3": 2589575000000.0,
+      "2026-Q1": 2635637000000.0
+    },
+    "eps": {
+      "2024-Q3": 9000000.0,
+      "2026-Q1": 15000000.0
+    },
+    "net_income": {
+      "2024-Q3": 115858000000.0,
+      "2026-Q1": 189858000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 433000000.0,
+      "2022": 281000000.0,
+      "2023": 29000000.0,
+      "2025": 47000000.0
+    },
+    "revenue_per_share": {
+      "2021": 7076164000000.0,
+      "2022": 7290121000000.0,
+      "2023": 8197755000000.0,
+      "2025": 10779187000000.0
+    }
+  },
+  "statistik": {
+    "market_cap": 15547310800896,
+    "enterprise_value": 12546735079424,
+    "shares_outstanding": 12691682390,
+    "free_float_pct": 9.241999996188055
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.459,
+    "vol_trend": 0.191,
+    "price_chg_20d": -26.92
+  },
+  "neraca": {
+    "aset": 5797181.0,
+    "aset_lancar": 5152820.0,
+    "kas": 818826.0,
+    "piutang_usaha": 2146728.0,
+    "persediaan": 1503919.0,
+    "aset_tetap": 1917.0,
+    "liabilitas": 3024321.0,
+    "liabilitas_jangka_pendek": 2818945.0,
+    "liabilitas_jangka_panjang": 205376.0,
+    "utang_usaha": 2146728.0,
+    "utang_bank": null,
+    "ekuitas": 2772860.0,
+    "ekuitas_induk": 2772860.0,
+    "modal_saham": null,
+    "saldo_laba": 126917.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2635637.0,
+    "beban_pokok": 2103343.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 241353.0,
+    "beban_pajak": -51495.0,
+    "laba_bersih": 189858.0,
+    "laba_induk": 189858.0,
+    "eps_basic": 15.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1917.0,
+    "dividen_dibayar": 420095.0
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "kode": "BBSI",
+  "nama": "PT Krom Bank Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 3590.0,
+  "update": "2026-10-21 14:33",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 6.59794908456972e-05,
+    "pb": 3.700106406687955,
+    "ps": 5.828926610114412e-06,
+    "roe": 0.03393980202770179,
+    "eps": 54410847.27973645,
+    "de": 3.471611850361278,
+    "margin_net": 0.07031203969405171,
+    "current_ratio": null,
+    "roa": 0.007590059952309963,
+    "bv": 970.2423674927463
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 2.01584797554e+17,
+      "2024-Q2": 2.34728437053e+17,
+      "2024-Q3": 3.07496683001e+17,
+      "2026-Q1": 8.12882404967e+17,
+      "2026-Q2": 9.081319241939999e+17
+    },
+    "eps": {
+      "2024-Q1": 8000000.0,
+      "2024-Q2": 10000000.0,
+      "2024-Q3": 11000000.0,
+      "2026-Q1": 19000000.0,
+      "2026-Q2": 14000000.0
+    },
+    "net_income": {
+      "2024-Q1": 2.8191120048e+16,
+      "2024-Q2": 3.6949067586e+16,
+      "2024-Q3": 4.1987712914e+16,
+      "2026-Q1": 7.0167395921e+16,
+      "2026-Q2": 5.0840631905e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 22000000.0,
+      "2023": 36000000.0,
+      "2025": 39000000.0
+    },
+    "revenue_per_share": {
+      "2022": 1.62926517309e+17,
+      "2023": 4.36896647068e+17,
+      "2025": 2.280328111081e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 13192256290816,
+    "enterprise_value": 12176941121536,
+    "shares_outstanding": 3674723301,
+    "free_float_pct": 10.251000011279489
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1717,
+    "vol_trend": 6.753,
+    "price_chg_20d": -19.25
+  },
+  "neraca": {
+    "aset": 15942960738956.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 176414144242.0,
+    "liabilitas": 12377588503513.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 3565372235443.0,
+    "ekuitas_induk": 3565372235443.0,
+    "modal_saham": null,
+    "saldo_laba": 788943122081.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1721014329161.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 156032470202.0,
+    "laba_sebelum_pajak": 155138497166.0,
+    "beban_pajak": -34130469340.0,
+    "laba_bersih": 121008027826.0,
+    "laba_induk": 121008027826.0,
+    "eps_basic": 33.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

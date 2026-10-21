@@ -1,0 +1,105 @@
+{
+  "kode": "DGNS",
+  "nama": "PT Diagnos Laboratorium Utama Tbk",
+  "sektor": "Healthcare",
+  "industri": "Diagnostics & Research",
+  "harga": 264.0,
+  "update": "2026-10-21 14:37",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.5767610074731533,
+    "ps": 2.1634044178113756e-06,
+    "roe": -0.013128134318436853,
+    "eps": -1355967.8952727274,
+    "de": 0.4741204046667686,
+    "margin_net": -0.034841497632139534,
+    "current_ratio": 4.71542794166072,
+    "roa": -0.008905740858667868,
+    "bv": 167.43184207927274
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 4.1745483316e+16,
+      "2024-Q2": 3.9300114272e+16,
+      "2026-Q1": 4.1632490801e+16,
+      "2026-Q2": 4.5113008371e+16
+    },
+    "eps": {
+      "2024-Q1": 170000.0,
+      "2024-Q2": 760000.0,
+      "2026-Q1": -1703014.22
+    },
+    "net_income": {
+      "2024-Q1": 217842888000000.0,
+      "2024-Q2": 940044360000000.0,
+      "2026-Q1": -1316146979000000.0,
+      "2026-Q2": -1706196125000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 10000000.0,
+      "2023": -10924644.63,
+      "2025": 2349675.86
+    },
+    "revenue_per_share": {
+      "2022": 1.92886350752e+17,
+      "2023": 1.45696015882e+17,
+      "2025": 1.66623563742e+17
+    }
+  },
+  "statistik": {
+    "market_cap": 363000004608,
+    "enterprise_value": 428858638336,
+    "shares_outstanding": 1375000000,
+    "free_float_pct": 29.976000000000003
+  },
+  "akumulasi": {
+    "score": 7.2,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1126,
+    "vol_trend": 1.039,
+    "price_chg_20d": 5.43
+  },
+  "neraca": {
+    "aset": 339370205350.0,
+    "aset_lancar": 114577557443.0,
+    "kas": 16742627956.0,
+    "piutang_usaha": 16701254532.0,
+    "persediaan": 5484116966.0,
+    "aset_tetap": 183313506177.0,
+    "liabilitas": 109151422491.0,
+    "liabilitas_jangka_pendek": 24298443081.0,
+    "liabilitas_jangka_panjang": 84852979410.0,
+    "utang_usaha": 16701254532.0,
+    "utang_bank": 1952615985.0,
+    "ekuitas": 230218782859.0,
+    "ekuitas_induk": 230218782859.0,
+    "modal_saham": null,
+    "saldo_laba": 132179838506.0
+  },
+  "laba_rugi": {
+    "pendapatan": 86745499172.0,
+    "beban_pokok": 47629937565.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3022343104.0,
+    "beban_pajak": null,
+    "laba_bersih": -3022343104.0,
+    "laba_induk": -3022343104.0,
+    "eps_basic": -1.7030142248,
+    "eps_diluted": -1.7030142248
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 999820661.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "kode": "SAMF",
+  "nama": "PT Saraswanti Anugerah Makmur, Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Agricultural Inputs",
+  "harga": 286.0,
+  "update": "2026-10-21 14:29",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 8.664874867631626e-06,
+    "pb": 1.5685184469014768,
+    "ps": 6.874739519394139e-07,
+    "roe": 0.02012985403598024,
+    "eps": 33006824.030243903,
+    "de": 0.840766719643192,
+    "margin_net": 0.06253010421525998,
+    "current_ratio": 1.802959141056162,
+    "roa": 0.010753650556896564,
+    "bv": 182.3376706630244
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1.331930142713e+18,
+      "2024-Q2": 1.0870943037160003e+18,
+      "2024-Q3": 1.24347628084e+18,
+      "2026-Q1": 6.0166083366e+17
+    },
+    "eps": {
+      "2024-Q1": 23930000.0,
+      "2024-Q2": 16580000.0,
+      "2024-Q3": 18160000.0,
+      "2026-Q1": 3670000.0
+    },
+    "net_income": {
+      "2024-Q1": 1.22659421374e+17,
+      "2024-Q2": 8.4947015767e+16,
+      "2024-Q3": 9.3091594538e+16,
+      "2026-Q1": 3.7621914631e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 32340000.0,
+      "2022": 65200000.0,
+      "2023": 79290000.0,
+      "2025": 24920000.0
+    },
+    "revenue_per_share": {
+      "2021": 1.852362345299e+18,
+      "2022": 3.689403867254e+18,
+      "2023": 4.463507984781e+18,
+      "2025": 4.074971418788e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 2931499991040,
+    "enterprise_value": 4286565842944,
+    "shares_outstanding": 10250000000,
+    "free_float_pct": 15.043999999999999
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.3508,
+    "vol_trend": 2.946,
+    "price_chg_20d": -10.26
+  },
+  "neraca": {
+    "aset": 3498524936434.0,
+    "aset_lancar": 2640756839710.0,
+    "kas": 72178506928.0,
+    "piutang_usaha": 988203783460.0,
+    "persediaan": 1352093649440.0,
+    "aset_tetap": 845501093342.0,
+    "liabilitas": 1571360313615.0,
+    "liabilitas_jangka_pendek": 1464679248451.0,
+    "liabilitas_jangka_panjang": 106681065164.0,
+    "utang_usaha": 988203783460.0,
+    "utang_bank": 798263260013.0,
+    "ekuitas": 1868961124296.0,
+    "ekuitas_induk": 1868961124296.0,
+    "modal_saham": null,
+    "saldo_laba": 82000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 601660833660.0,
+    "beban_pokok": 462816252599.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 49850543727.0,
+    "beban_pajak": -11039957848.0,
+    "laba_bersih": 37621914631.0,
+    "laba_induk": 37621914631.0,
+    "eps_basic": 3.67,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9870484969.0,
+    "dividen_dibayar": null
+  }
+}

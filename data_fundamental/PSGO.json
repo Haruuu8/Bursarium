@@ -1,0 +1,108 @@
+{
+  "kode": "PSGO",
+  "nama": "PT Palma Serasih Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 186.0,
+  "update": "2026-10-21 14:21",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 1.0735222868448263e-05,
+    "pb": 1.249049927055697,
+    "ps": 1.698107168329149e-06,
+    "roe": 0.02777322148574381,
+    "eps": 17326142.38933687,
+    "de": 0.15866680380749176,
+    "margin_net": 0.14766624980849508,
+    "current_ratio": 2.783659612149034,
+    "roa": 0.023967683537222652,
+    "bv": 148.9131827087533
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 4.14859124391e+17,
+      "2024-Q2": 5.33780349837e+17,
+      "2024-Q3": 5.88125191519e+17,
+      "2026-Q1": 5.27946010582e+17
+    },
+    "eps": {
+      "2024-Q1": 3460000.0,
+      "2024-Q2": 4320000.0,
+      "2024-Q3": 5410000.0,
+      "2026-Q1": 4140000.0
+    },
+    "net_income": {
+      "2024-Q1": 6.5136889573e+16,
+      "2024-Q2": 8.1457794448e+16,
+      "2024-Q3": 1.02043292534e+17,
+      "2026-Q1": 7.7959807484e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 11340000.0,
+      "2022": 13670000.0,
+      "2023": 29140000.0,
+      "2025": 23490000.0
+    },
+    "revenue_per_share": {
+      "2021": 1.766254650794e+18,
+      "2022": 1.972824875264e+18,
+      "2023": 2.049487832334e+18,
+      "2025": 2.552818121689e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 3506100240384,
+    "enterprise_value": 3049184559104,
+    "shares_outstanding": 18850000000,
+    "free_float_pct": 13.114999999999998
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3171,
+    "vol_trend": 0.386,
+    "price_chg_20d": -4.17
+  },
+  "neraca": {
+    "aset": 3252705142027.0,
+    "aset_lancar": 939345774094.0,
+    "kas": 441805661675.0,
+    "piutang_usaha": 133751579980.0,
+    "persediaan": 171503603072.0,
+    "aset_tetap": 150432260342.0,
+    "liabilitas": 445379859347.0,
+    "liabilitas_jangka_pendek": 337449941794.0,
+    "liabilitas_jangka_panjang": 107929917553.0,
+    "utang_usaha": 133751579980.0,
+    "utang_bank": 124550000000.0,
+    "ekuitas": 2807013494060.0,
+    "ekuitas_induk": 2807013494060.0,
+    "modal_saham": null,
+    "saldo_laba": 177000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 527946010582.0,
+    "beban_pokok": 336737373031.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 97048044585.0,
+    "beban_pajak": 51115189.0,
+    "laba_bersih": 77959807484.0,
+    "laba_induk": 77959807484.0,
+    "eps_basic": 4.14,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 150432260342.0,
+    "dividen_dibayar": null
+  }
+}

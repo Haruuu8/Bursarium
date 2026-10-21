@@ -1,0 +1,109 @@
+{
+  "kode": "AMAN",
+  "nama": "PT Makmur Berkah Amanda Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 165.0,
+  "update": "2026-10-21 14:28",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 0.009359257179622292,
+    "pb": 0.0007521218446626192,
+    "ps": 0.0025779328072393208,
+    "roe": 0.034388528450079434,
+    "eps": 17629.604233896993,
+    "de": 0.7616632406544953,
+    "margin_net": 0.22109278606056323,
+    "current_ratio": 2.188397441250298,
+    "roa": 0.01943991352180564,
+    "bv": 219379.34813476185
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 36946704000000.0,
+      "2024-Q2": 51995794000000.0,
+      "2024-Q3": 63755035000000.0,
+      "2026-Q1": 73715397000000.0,
+      "2026-Q2": 58456256000000.0
+    },
+    "eps": {
+      "2024-Q1": 3330000.0,
+      "2024-Q2": 3630000.0,
+      "2024-Q3": 5410000.0,
+      "2026-Q1": 4780.0,
+      "2026-Q2": 7897953.28
+    },
+    "net_income": {
+      "2024-Q1": 11077821000000.0,
+      "2024-Q2": 17269252000000.0,
+      "2024-Q3": 21796821000000.0,
+      "2026-Q1": 16658951000000.0,
+      "2026-Q2": 12563248000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2022": 8910000.0,
+      "2023": 147200.0,
+      "2025": 15550.0
+    },
+    "revenue_per_share": {
+      "2022": 137940281000000.0,
+      "2023": 178268259000000.0,
+      "2025": 234766510000000.0
+    }
+  },
+  "statistik": {
+    "market_cap": 639127453696,
+    "enterprise_value": 944155066368,
+    "shares_outstanding": 3873500000,
+    "free_float_pct": 10.972999999999999
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2141,
+    "vol_trend": 1.059,
+    "price_chg_20d": -21.76
+  },
+  "neraca": {
+    "aset": 1503206224.0,
+    "aset_lancar": 782511661.0,
+    "kas": 34634885.0,
+    "piutang_usaha": 12682323.0,
+    "persediaan": 95056138.0,
+    "aset_tetap": 386075216.0,
+    "liabilitas": 647235453.0,
+    "liabilitas_jangka_pendek": 357572919.0,
+    "liabilitas_jangka_panjang": 289662534.0,
+    "utang_usaha": 12682323.0,
+    "utang_bank": 13622616.0,
+    "ekuitas": 849765905.0,
+    "ekuitas_induk": 849765905.0,
+    "modal_saham": null,
+    "saldo_laba": 25510981.0
+  },
+  "laba_rugi": {
+    "pendapatan": 132171653.0,
+    "beban_pokok": 53745006.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 35366221.0,
+    "beban_pajak": -4754984.0,
+    "laba_bersih": 29222199.0,
+    "laba_induk": 29222199.0,
+    "eps_basic": 7.90273327839422,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}
