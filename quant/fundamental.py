@@ -5,7 +5,8 @@ Fitur:
 - Q1/Q2/Q3/Q4 STANDALONE (bukan kumulatif) 
 - Revenue detection untuk bank, asuransi, multifinance, manufaktur
 - 40+ field: neraca, laba rugi, arus kas, rasio
-- Validasi + mark data mencurigakan
+- Perhitungan TTM (Trailing Twelve Months) untuk P/E dan EPS
+- Prioritas Net Interest Income untuk Bank
 - Cache XLSX lokal (super cepat di run ke-2)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
@@ -97,15 +98,15 @@ FIELDS = {
                        "equity attributable to owners"],
     "modal_saham": ["modal saham", "share capital"],
     "saldo_laba": ["saldo laba", "retained earnings"],
-    # ⭐ REVENUE — tambah label bank, asuransi, multifinance
+    # Prioritas PENDAPATAN: Taruh yang paling spesifik di atas (Pendapatan Bunga Bersih)
     "pendapatan": [
+        "pendapatan bunga bersih", "jumlah pendapatan bunga dan syariah", 
+        "pendapatan bunga dan syariah",
         "jumlah pendapatan", "total pendapatan", "penjualan neto",
         "penjualan bersih", "penjualan", "total penjualan",
         "pendapatan usaha", "pendapatan operasional", "pendapatan operasi",
         "pendapatan bruto", "pendapatan neto",
-        "pendapatan bunga bersih", "pendapatan bunga dan syariah",
-        "jumlah pendapatan bunga dan syariah", "pendapatan bunga",
-        "pendapatan syariah", "pendapatan premi", "premi bruto",
+        "pendapatan bunga", "pendapatan syariah", "pendapatan premi", "premi bruto",
         "premi neto", "pendapatan premi bruto",
         "pendapatan pembiayaan", "pendapatan sewa",
         "pendapatan jasa", "pendapatan kontrak",
@@ -296,7 +297,13 @@ def parse_xlsx(content_bytes):
             if any(b in ll for b in BLACKLIST_LBL): continue
             
             for field, kws in FIELDS.items():
-                if field in hasil: continue
+                # PERBAIKAN BANK: Izinkan "bunga bersih" menimpa "bunga" (kotor)
+                if field in hasil:
+                    if field == "pendapatan" and "bunga bersih" in ll and "bunga bersih" not in str(hasil.get("pendapatan", "")):
+                        pass # Lanjut untuk menimpa
+                    else:
+                        continue
+                
                 matched = False
                 
                 if field in EXACT_ONLY:
@@ -353,7 +360,7 @@ def fetch_one_period(kode, year, periode, verbose=False):
     return parse_xlsx(content)
 
 
-def compute_ratios(d, harga=None, shares=None, periode=None):
+def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_rev=None):
     def sd(a, b): return a / b if a and b and b != 0 else None
     
     laba = d.get("laba_induk") or d.get("laba_bersih")
@@ -364,12 +371,24 @@ def compute_ratios(d, harga=None, shares=None, periode=None):
         if v is None: return None
         return v * 1_000_000 if abs(v) < 1_000_000_000 else v
     
-    laba_rp = nz(laba)
+    # Gunakan TTM jika tersedia, jika tidak pakai Annualized
+    if ttm_ni is not None:
+        laba_rp = ttm_ni
+        factor = 1
+    else:
+        laba_rp = nz(laba)
+        p_key = str(periode).split("-")[-1] if periode else "audit"
+        factor = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
+        
+    if ttm_rev is not None:
+        pend_rp = ttm_rev
+        factor_rev = 1
+    else:
+        pend_rp = nz(pendapatan)
+        p_key = str(periode).split("-")[-1] if periode else "audit"
+        factor_rev = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
+        
     ek_rp = nz(ek)
-    pend_rp = nz(pendapatan)
-    
-    p_key = str(periode).split("-")[-1] if periode else "audit"
-    factor = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
     
     eps_calc, pe_calc, pb_calc, ps_calc, bv_calc = None, None, None, None, None
     
@@ -381,7 +400,7 @@ def compute_ratios(d, harga=None, shares=None, periode=None):
             eps_calc = (laba_rp * factor) / shares
             if eps_calc > 0: pe_calc = harga / eps_calc
         if pend_rp:
-            ps_calc = (harga * shares) / (pend_rp * factor)
+            ps_calc = (harga * shares) / (pend_rp * factor_rev)
     
     return {
         "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")),
@@ -477,23 +496,9 @@ def compute_akumulasi(kode):
 
 
 def _standalone(curr, prev, quarter_num):
-    """Hitung nilai standalone (Q1, Q2, Q3, Q4 individual).
-    
-    IDX melaporkan CUMULATIVE year-to-date:
-      tw1  = Q1 (3 bulan)
-      tw2  = H1 (6 bulan cumulative)
-      tw3  = 9M (9 bulan cumulative)
-      audit = FY (12 bulan cumulative)
-    
-    Jadi:
-      Q1_standalone = tw1
-      Q2_standalone = tw2 - tw1
-      Q3_standalone = tw3 - tw2
-      Q4_standalone = audit - tw3
-    """
     if curr is None: return None
     if quarter_num == 1: return curr
-    if prev is None: return None  # tidak bisa hitung tanpa previous
+    if prev is None: return None
     result = curr - prev
     return result if result != 0 else None
 
@@ -501,7 +506,6 @@ def _standalone(curr, prev, quarter_num):
 def build_one(kode, verbose=False):
     kode = kode.strip().upper()
     
-    # Ambil snapshot terbaru
     snap = None; snap_periode = None
     for y, p in SNAPSHOT_CANDIDATES:
         d = fetch_one_period(kode, y, p, verbose=verbose)
@@ -510,10 +514,7 @@ def build_one(kode, verbose=False):
     if not snap:
         return None
     
-    # ============================================================
-    # AMBIL SEMUA PERIODE untuk hitung STANDALONE
-    # ============================================================
-    all_periods = {}  # {label: {fields}}
+    all_periods = {}
     for y, p, lbl, qnum in QUARTERLY_PERIODS:
         if f"{y}-{p}" == snap_periode:
             d = snap
@@ -522,12 +523,9 @@ def build_one(kode, verbose=False):
         if d:
             all_periods[lbl] = {"data": d, "qnum": qnum, "year": y, "period": p}
     
-    # ============================================================
-    # HITUNG QUARTERLY STANDALONE (Revenue, EPS, Net Income)
-    # ============================================================
     q_rev, q_eps, q_ni = {}, {}, {}
+    standalone_data = []
     
-    # Untuk tiap tahun, kita hitung cumulative dulu, lalu standalone
     for year in sorted(set(v["year"] for v in all_periods.values())):
         year_data = {
             qnum: all_periods[lbl] 
@@ -546,30 +544,42 @@ def build_one(kode, verbose=False):
             d = year_data[qnum]["data"]
             lbl = f"{year}-Q{qnum}"
             
-            # Cumulative values
+            # PERBAIKAN SKALA: Ubah Juta Rupiah menjadi Rupiah penuh (x1.000.000)
             cum_rev = d.get("pendapatan")
-            cum_eps = d.get("eps_basic")
+            cum_rev = cum_rev * 1_000_000 if cum_rev is not None else None
+            
             cum_ni = d.get("laba_induk") or d.get("laba_bersih")
+            cum_ni = cum_ni * 1_000_000 if cum_ni is not None else None
             
-            # Convert EPS ke Rupiah penuh (dari juta)
-            if cum_eps is not None:
-                cum_eps = cum_eps * 1_000_000
+            cum_eps = d.get("eps_basic")
+            cum_eps = cum_eps * 1_000_000 if cum_eps is not None else None
             
-            # Standalone = cumulative - previous cumulative
             rev_std = _standalone(cum_rev, prev_rev, qnum)
             eps_std = _standalone(cum_eps, prev_eps, qnum)
             ni_std = _standalone(cum_ni, prev_ni, qnum)
             
-            # Simpan (hanya kalau ada nilai)
             if rev_std is not None: q_rev[lbl] = round(rev_std, 2)
             if eps_std is not None: q_eps[lbl] = round(eps_std, 2)
             if ni_std is not None: q_ni[lbl] = round(ni_std, 2)
             
-            # Update previous
+            if rev_std is not None and ni_std is not None:
+                standalone_data.append({"lbl": lbl, "rev": rev_std, "ni": ni_std})
+            
             prev_rev = cum_rev
             prev_eps = cum_eps
             prev_ni = cum_ni
+
+    # ============================================================
+    # HITUNG TTM (4 KUARTAL TERAKHIR)
+    # ============================================================
+    ttm_ni, ttm_rev = None, None
+    standalone_data.sort(key=lambda x: (x["lbl"].split("-")[0], x["lbl"].split("-")[1]), reverse=True)
     
+    if len(standalone_data) >= 4:
+        recent_4 = standalone_data[:4]
+        ttm_ni = sum(item["ni"] for item in recent_4)
+        ttm_rev = sum(item["rev"] for item in recent_4)
+
     # ============================================================
     # RIWAYAT TAHUNAN (audit)
     # ============================================================
@@ -583,7 +593,7 @@ def build_one(kode, verbose=False):
             if d.get("eps_basic") is not None:
                 r_eps[str(y)] = round(d["eps_basic"] * 1_000_000, 2)
             if d.get("pendapatan") is not None:
-                r_rev[str(y)] = d["pendapatan"]
+                r_rev[str(y)] = d["pendapatan"] * 1_000_000
     
     # ============================================================
     # YFINANCE + RATIO
@@ -594,7 +604,7 @@ def build_one(kode, verbose=False):
     if not shares and yfd.get("market_cap") and harga:
         shares = yfd.get("market_cap") / harga
     
-    ratios = compute_ratios(snap, harga=harga, shares=shares, periode=snap_periode)
+    ratios = compute_ratios(snap, harga=harga, shares=shares, periode=snap_periode, ttm_ni=ttm_ni, ttm_rev=ttm_rev)
     akum = compute_akumulasi(kode)
     
     # ============================================================
@@ -609,6 +619,8 @@ def build_one(kode, verbose=False):
         warnings.append("pe_negative")
     if len(q_rev) < 4:
         warnings.append("quarterly_incomplete")
+    if ttm_ni is None:
+        warnings.append("ttm_fallback")
     
     data = {
         "kode": kode,
@@ -628,9 +640,9 @@ def build_one(kode, verbose=False):
             "roa": ratios.get("roa"), "bv": ratios.get("bv_calc"),
         },
         "quarterly": {
-            "revenue": q_rev,     # ← SUDAH STANDALONE
-            "eps": q_eps,          # ← SUDAH STANDALONE  
-            "net_income": q_ni,    # ← SUDAH STANDALONE
+            "revenue": q_rev,     
+            "eps": q_eps,          
+            "net_income": q_ni,    
             "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
         },
         "riwayat": {"eps": r_eps, "revenue_per_share": r_rev},
@@ -696,7 +708,6 @@ def main(tickers, verbose=False):
 
 
 def batch(tickers, workers=4, delay=1.0, skip_existing=True):
-    """Batch — KONSERVATIF agar tidak kena rate limit IDX."""
     if skip_existing:
         before = len(tickers)
         tickers = [t for t in tickers if not (OUTPUT_DIR / f"{t}.json").exists()]
