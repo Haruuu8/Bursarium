@@ -52,7 +52,7 @@ def scan_bottom():
         """Cek fundamental dengan SEMUA rule:
         - Q1 + Q2 ada, se-tahun, Q2 standalone >= 0
         - Laba tidak turun drastis (> 50%)
-        - Revenue YoY tidak turun > 30%    ← FIX
+        - Revenue YoY tidak turun > 30%
         - DER < 2.0
         - ROE > 10%
         - Pengecualian: premium ekspansi (ROE>15 + Rev>10 + DER<1)
@@ -81,7 +81,6 @@ def scan_bottom():
 
         standalone = cl - cp
 
-        # ROE
         roe = rk.get("roe")
         roe_val = None
         if roe:
@@ -93,7 +92,6 @@ def scan_bottom():
             except Exception:
                 pass
 
-        # Revenue YoY
         rev_yoy = None
         rev_q = q.get("revenue", {}) or {}
         if rev_q:
@@ -109,7 +107,6 @@ def scan_bottom():
             except Exception:
                 pass
 
-        # DER
         de = rk.get("de")
         de_val = None
         if de:
@@ -121,14 +118,12 @@ def scan_bottom():
             except Exception:
                 pass
 
-        # Premium ekspansi
         is_premium = (
             roe_val is not None and roe_val > 15 and
             rev_yoy is not None and rev_yoy > 10 and
             de_val is not None and de_val < 1.0
         )
 
-        # === RULES ===
         if standalone < 0 and not is_premium:
             return False, f"Q2 standalone negatif ({standalone/1e9:.1f}B)", m
 
@@ -209,50 +204,202 @@ def scan_bottom():
     print(f"      → {len(rows)} saham")
 
 
+# ============================================================
+# SCAN SETUPS — SWING_W5 (91% WR)
+# ============================================================
 def scan_setups():
-    print("  [4/4] Setups (Buy Support + Breakout)...")
-    from quant.riskreward import hitung_rr_skenario
-    files = sorted(Path("data_ohlcv_idx").glob("*.csv"))
-    sup, brk = [], []
-    for f in files:
-        kode = f.stem
-        try:
-            rr = hitung_rr_skenario(kode)
-        except Exception:
-            continue
-        if not rr:
-            continue
-        for s in rr.get("scenarios", []):
-            if not s.get("lolos"):
+    """
+    Generate data_setups.json dari supres.py (swing_w5, 91% WR support).
+
+    BUY SUPPORT:
+    - role='buy_limit'
+    - Harga 0-5% di atas zona atau di dalam zona
+    - RR >= 1.5
+    - Entry = zona_hi, SL = zona_lo × 0.99, TP1 = next resistance atau 2R
+
+    BREAKOUT:
+    - role='breakout_trigger'
+    - Harga 0-3% di bawah resistance
+    - RR >= 1.5
+    - Entry = zona_hi × 1.001, SL = zona_lo × 0.995, TP1 = next resistance atau 2R
+
+    Sort: imminence × score, limit top 30 support & top 20 breakout.
+    """
+    print("  [4/4] Setups (Buy Support + Breakout) — swing_w5 91% WR...")
+
+    from quant.supres import get_support_resistance
+    from quant.parquet_loader import load_parquet_safe
+
+    df_all = load_parquet_safe()
+    if df_all is None or df_all.empty:
+        print("      ⚠️  Gagal load parquet")
+        sup, brk = [], []
+    else:
+        df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
+        kodes = sorted(df_all["Kode"].unique())
+
+        sup = []
+        brk = []
+
+        for i, kode in enumerate(kodes, 1):
+            try:
+                sr = get_support_resistance(kode, timeframe="daily")
+                if not sr:
+                    continue
+
+                current = sr["current_price"]
+                if current <= 0:
+                    continue
+
+                # ============================================================
+                # BUY SUPPORT
+                # ============================================================
+                for z in sr["supports"]:
+                    if z.get("role") != "buy_limit":
+                        continue
+
+                    zona_lo = z["lower"]
+                    zona_hi = z["upper"]
+
+                    # Filter kedekatan: harga 0-5% di atas zona atau di dalam zona
+                    if current < zona_lo * 0.99:
+                        continue
+                    if current > zona_hi * 1.05:
+                        continue
+
+                    entry = zona_hi
+                    sl = zona_lo * 0.99
+
+                    risk = entry - sl
+                    if risk <= 0:
+                        continue
+                    risk_pct = risk / entry * 100
+
+                    # TP1: next resistance, fallback 2R
+                    tp1 = None
+                    for r in sr["resistances"]:
+                        if r["level"] > entry * 1.02 and r.get("role") == "breakout_trigger":
+                            tp1 = r["level"]
+                            break
+                    if tp1 is None:
+                        tp1 = entry + 2 * risk
+
+                    rr_tp1 = (tp1 - entry) / risk
+                    jarak = (entry - current) / current * 100
+
+                    if rr_tp1 < 1.5:
+                        continue
+
+                    if jarak < 0:
+                        imminence = max(0, 1 - abs(jarak) / 5)
+                    else:
+                        imminence = 1.0
+
+                    sup.append({
+                        "kode": kode,
+                        "harga": current,
+                        "entry": round(entry, 2),
+                        "sl": round(sl, 2),
+                        "tp1": round(tp1, 2),
+                        "tp2": None,
+                        "rr_tp1": round(rr_tp1, 2),
+                        "rr_tp2": None,
+                        "risk_pct": round(risk_pct, 2),
+                        "jarak_entry_pct": round(jarak, 2),
+                        "zona_lo": zona_lo,
+                        "zona_hi": zona_hi,
+                        "lot": 0,
+                        "_source": "swing_w5",
+                        "_score": z.get("score", 8.0),
+                        "_strength": z.get("strength", "MODERATE"),
+                        "_imminence": round(imminence, 3),
+                    })
+
+                # ============================================================
+                # BREAKOUT
+                # ============================================================
+                for z in sr["resistances"]:
+                    if z.get("role") != "breakout_trigger":
+                        continue
+
+                    zona_lo = z["lower"]
+                    zona_hi = z["upper"]
+
+                    # Filter kedekatan: harga 0-3% di bawah resistance
+                    if current > zona_hi * 1.005:
+                        continue
+                    if current < zona_lo * 0.97:
+                        continue
+
+                    entry = zona_hi * 1.001
+                    sl = zona_lo * 0.995
+
+                    risk = entry - sl
+                    if risk <= 0:
+                        continue
+                    risk_pct = risk / entry * 100
+
+                    tp1 = None
+                    for r in sr["resistances"]:
+                        if r["level"] > entry * 1.02 and r.get("role") in ("breakout_trigger", "reversal_warning"):
+                            if r["level"] != z["level"]:
+                                tp1 = r["level"]
+                                break
+                    if tp1 is None:
+                        tp1 = entry + 2 * risk
+
+                    rr_tp1 = (tp1 - entry) / risk
+                    jarak = (entry - current) / current * 100
+
+                    if rr_tp1 < 1.5:
+                        continue
+                    if jarak < 0 or jarak > 3:
+                        continue
+
+                    imminence = max(0, 1 - jarak / 3)
+
+                    brk.append({
+                        "kode": kode,
+                        "harga": current,
+                        "entry": round(entry, 2),
+                        "sl": round(sl, 2),
+                        "tp1": round(tp1, 2),
+                        "tp2": None,
+                        "rr_tp1": round(rr_tp1, 2),
+                        "rr_tp2": None,
+                        "risk_pct": round(risk_pct, 2),
+                        "jarak_entry_pct": round(jarak, 2),
+                        "zona_lo": zona_lo,
+                        "zona_hi": zona_hi,
+                        "lot": 0,
+                        "_source": "swing_w5",
+                        "_score": z.get("score", 8.0),
+                        "_strength": z.get("strength", "MODERATE"),
+                        "_imminence": round(imminence, 3),
+                    })
+            except Exception:
                 continue
-            e = {
-                "kode": kode,
-                "harga": rr["current_price"],
-                "entry": s["entry"],
-                "sl": s["sl"],
-                "tp1": s["tp1"],
-                "tp2": s.get("tp2"),
-                "rr_tp1": s["rr_tp1"],
-                "rr_tp2": s.get("rr_tp2"),
-                "risk_pct": s["risk_pct"],
-                "jarak_entry_pct": s["jarak_entry_pct"],
-                "zona_lo": s["zona_entry"][0],
-                "zona_hi": s["zona_entry"][1],
-                "lot": s.get("lot", 0),
-            }
-            if s["tipe"] == "BUY at Support":
-                sup.append(e)
-                break
-            elif s["tipe"] == "BREAKOUT BUY":
-                brk.append(e)
-                break
-    sup.sort(key=lambda x: -x["rr_tp1"])
-    brk.sort(key=lambda x: -x["rr_tp1"])
+
+            if i % 100 == 0 or i == len(kodes):
+                print(f"      [{i}/{len(kodes)}] S={len(sup)} B={len(brk)}", flush=True)
+
+        # Sort: imminence × score × RR
+        sup.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
+        brk.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
+
+        # Limit top N (buang yang kurang imminent)
+        sup = sup[:30]
+        brk = brk[:20]
+
+    # Save
     with open(Path("data_setups.json"), "w") as f:
-        json.dump({"generated": time.strftime("%Y-%m-%d %H:%M"),
-                    "buy_support": sup,
-                    "breakout_buy": brk},
-                   f, ensure_ascii=False, default=str)
+        json.dump({
+            "generated": time.strftime("%Y-%m-%d %H:%M"),
+            "method": "swing_w5",
+            "buy_support": sup,
+            "breakout_buy": brk,
+        }, f, ensure_ascii=False, default=str)
+
     print(f"      → {len(sup)} Buy Support · {len(brk)} Breakout Buy")
 
 
@@ -261,22 +408,27 @@ def main():
     print(f"SCAN ALL — {time.strftime('%Y-%m-%d %H:%M')}")
     print("=" * 55)
     t0 = time.time()
+
     try:
         scan_precross()
     except Exception as e:
         print(f"      ERROR: {e}")
+
     try:
         scan_emerging()
     except Exception as e:
         print(f"      ERROR: {e}")
+
     try:
         scan_bottom()
     except Exception as e:
         print(f"      ERROR: {e}")
+
     try:
         scan_setups()
     except Exception as e:
         print(f"      ERROR: {e}")
+
     print("=" * 55)
     print(f"Selesai: {time.time()-t0:.0f} detik")
     print(f"Output: data_scans/ + data_setups.json")
