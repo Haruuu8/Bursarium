@@ -3,73 +3,54 @@
   "nama": "PT Lupromax Pelumas Indonesia Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Refining & Marketing",
-  "harga": 101.0,
-  "update": "2026-10-11 11:49",
+  "harga": 87.0,
+  "update": "2026-10-21 11:00",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 1.2814819,
-    "ps": 0.9695518,
+    "pe": 3.583155660000398e-05,
+    "pb": 1.0871030714140706,
+    "ps": 0.6595706844616857,
     "roe": 0.015169632225996425,
-    "eps": 1.12,
+    "eps": 2428027.3662459403,
     "de": 0.29476594482800206,
     "margin_net": 0.018407536458006194,
     "current_ratio": 4.972044919851204,
     "roa": 0.011716119262011925,
-    "bv": 78.82,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 80.02921000566492
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 37909133075.0,
-      "2024-Q4": 78252446798.0,
-      "2025-Q2": 32267828485.0,
-      "2025-Q4": 67712609415.0,
-      "2026-Q2": 42869373031.0
-    },
-    "eps": {
-      "2024-Q2": 1.48,
-      "2024-Q4": 1.47,
-      "2025-Q2": 800000.0,
-      "2025-Q4": 1.12,
-      "2026-Q2": 1.21
-    },
-    "net_income": {
-      "2024-Q2": 963504264.0,
-      "2024-Q4": 955296803.0,
-      "2025-Q2": 517003553.0,
-      "2025-Q4": 727087357.0,
-      "2026-Q2": 789119547.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2023": 1.84,
-      "2024": 1.47,
-      "2025": 1.12
+      "2023": 1840000.0,
+      "2025": 1120000.0
     },
     "revenue_per_share": {
-      "2023": 45552722939.0,
-      "2024": 78252446798.0,
-      "2025": 67712609415.0
+      "2023": 4.5552722939e+16,
+      "2025": 6.7712609415e+16
     }
   },
   "statistik": {
-    "market_cap": 65650884608,
-    "enterprise_value": 42606432256,
+    "market_cap": 56550764544,
+    "enterprise_value": 29606256640,
     "shares_outstanding": 650008775,
     "free_float_pct": 24.543000054114657
   },
   "akumulasi": {
-    "score": 3.0,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3859,
-    "vol_trend": 0.791,
-    "price_chg_20d": -4.72
+    "cmf": -0.4603,
+    "vol_trend": 0.892,
+    "price_chg_20d": -22.86
   },
   "neraca": {
     "aset": 67353321467.0,
@@ -80,6 +61,7 @@
     "aset_tetap": 3291003745.0,
     "liabilitas": 15333632707.0,
     "liabilitas_jangka_pendek": 12800699125.0,
+    "liabilitas_jangka_panjang": 2532933582.0,
     "utang_usaha": 19878878696.0,
     "utang_bank": 586369766.0,
     "ekuitas": 52019688760.0,
@@ -106,6 +88,5 @@
     "arus_kas_pendanaan": null,
     "capex": 217314454.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

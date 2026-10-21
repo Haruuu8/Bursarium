@@ -3,72 +3,68 @@
   "nama": "PT Asuransi Multi Artha Guna Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 386.0,
-  "update": "2026-10-11 12:22",
+  "harga": 374.0,
+  "update": "2026-10-21 11:19",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 7.663292,
-    "pb": 0.8935351,
-    "ps": 0.6147848,
+    "pe": 0.005587281211868739,
+    "pb": 851.5217251019754,
+    "ps": 0.07650222332152753,
     "roe": 0.07620179590147862,
-    "eps": 50.37,
+    "eps": 66937.74410450889,
     "de": 1.6183754507195718,
-    "margin_net": null,
+    "margin_net": 13.692209219578615,
     "current_ratio": null,
     "roa": 0.029102700256579756,
-    "bv": 431.99,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 0.43921369117765136
   },
   "quarterly": {
-    "revenue": {},
+    "revenue": {
+      "2024-Q3": 1805455000000.0,
+      "2026-Q1": -11842000000.0,
+      "2026-Q2": 12101093000000.0
+    },
     "eps": {
-      "2024-Q2": 24.1,
-      "2024-Q3": 29.04,
-      "2024-Q4": 46.15,
-      "2025-Q1": 4.23,
-      "2025-Q2": 14.7,
-      "2025-Q3": 23.25,
-      "2025-Q4": 31.61,
-      "2026-Q1": 14.4,
-      "2026-Q2": 33.47
+      "2024-Q3": 4940000.0,
+      "2026-Q1": 14400000.0,
+      "2026-Q2": 19070000.0
     },
     "net_income": {
-      "2024-Q2": 119360769.0,
-      "2024-Q3": 143816235.0,
-      "2024-Q4": 228593443.0,
-      "2025-Q1": 20956522.0,
-      "2025-Q2": 72805383.0,
-      "2025-Q3": 115126438.0,
-      "2025-Q4": 156487381.0,
-      "2026-Q1": 71234788.0,
-      "2026-Q2": 165528554.0
-    }
+      "2024-Q3": 24455466000000.0,
+      "2026-Q1": 71234788000000.0,
+      "2026-Q2": 94293766000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 34.05,
-      "2023": 29.72,
-      "2024": 46.15,
-      "2025": 31.61
+      "2022": 34050000.0,
+      "2023": 29720000.0,
+      "2025": 31610000.0
     },
-    "revenue_per_share": {}
+    "revenue_per_share": {
+      "2022": 274325076000000.0,
+      "2023": 350295836000000.0,
+      "2025": 351696184000000.0
+    }
   },
   "statistik": {
-    "market_cap": 1909058174976,
-    "enterprise_value": 999857455104,
+    "market_cap": 1849709166592,
+    "enterprise_value": 1060878024704,
     "shares_outstanding": 4945746416,
     "free_float_pct": 11.28241695115652
   },
   "akumulasi": {
-    "score": 4.4,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0385,
-    "vol_trend": 0.505,
-    "price_chg_20d": -0.52
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2983,
+    "vol_trend": 0.726,
+    "price_chg_20d": -2.59
   },
   "neraca": {
     "aset": 5687738682.0,
@@ -79,6 +75,7 @@
     "aset_tetap": 130048837.0,
     "liabilitas": 3515499143.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 2172239539.0,
@@ -87,7 +84,7 @@
     "saldo_laba": 63000000.0
   },
   "laba_rugi": {
-    "pendapatan": null,
+    "pendapatan": 12089251.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
@@ -104,7 +101,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 1683231.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 148372380.0
+  }
 }

@@ -3,72 +3,61 @@
   "nama": "PT Jantra Grupo Indonesia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 85.0,
-  "update": "2026-10-11 12:10",
+  "harga": 68.0,
+  "update": "2026-10-21 11:09",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 1.3774551,
-    "ps": 2.2836125,
+    "pe": 8.505069415527005,
+    "pb": 1.1019599886260745,
+    "ps": 2.1003701966604194,
     "roe": 0.06478253937671084,
-    "eps": 8.0,
+    "eps": 7.995231629251373,
     "de": 0.17296293425445544,
     "margin_net": 0.24695509160994572,
     "current_ratio": 5.955802161454283,
     "roa": 0.0552202346208049,
-    "bv": 61.71,
-    "bv_src": "harga/pb",
-    "eps_src": "laba_penuh_x2.0",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 61.70822961075248
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": 15983909873.0,
-      "2025-Q2": 33177338019.0,
-      "2025-Q3": 53231698912.0,
-      "2025-Q4": 76839931752.0,
-      "2026-Q1": 18526653607.0,
-      "2026-Q2": 33602266930.0
+      "2026-Q1": 1.8526653607e+16,
+      "2026-Q2": 1.5075613323e+16
     },
     "eps": {
-      "2025-Q1": 1.050786622086976,
-      "2025-Q2": 2.82,
-      "2025-Q3": 3.42,
-      "2025-Q4": 4.9,
-      "2026-Q1": 2.03,
-      "2026-Q2": 4.0
+      "2026-Q1": 2030000.0,
+      "2026-Q2": 1970000.0
     },
     "net_income": {
-      "2025-Q1": 1310721746.0,
-      "2025-Q2": 4941963555.0,
-      "2025-Q3": 6380737407.0,
-      "2025-Q4": 9395021568.0,
-      "2026-Q1": 4222612607.0,
-      "2026-Q2": 8298250908.0
-    }
+      "2026-Q1": 4222612607000000.0,
+      "2026-Q2": 4075638301000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 4.9
+      "2025": 4900000.0
     },
     "revenue_per_share": {
-      "2025": 76839931752.0
+      "2025": 7.6839931752e+16
     }
   },
   "statistik": {
-    "market_cap": 176442998784,
-    "enterprise_value": 168854454272,
+    "market_cap": 141154402304,
+    "enterprise_value": 137717448704,
     "shares_outstanding": 2075800000,
     "free_float_pct": 21.678
   },
   "akumulasi": {
-    "score": 5.7,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.077,
-    "vol_trend": 0.658,
-    "price_chg_20d": -13.27
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1345,
+    "vol_trend": 0.524,
+    "price_chg_20d": -25.53
   },
   "neraca": {
     "aset": 150275546002.0,
@@ -79,6 +68,7 @@
     "aset_tetap": 114270048018.0,
     "liabilitas": 22155504246.0,
     "liabilitas_jangka_pendek": 5936491232.0,
+    "liabilitas_jangka_panjang": 16219013014.0,
     "utang_usaha": 232397945.0,
     "utang_bank": 2513553306.0,
     "ekuitas": 128093943026.0,
@@ -105,6 +95,5 @@
     "arus_kas_pendanaan": null,
     "capex": 106600000.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

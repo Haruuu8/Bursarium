@@ -1,162 +1,108 @@
 {
   "kode": "NICL",
   "nama": "PT PAM Mineral Tbk",
-  "periode_terbaru": "2026-tw2",
-  "update": "2026-10-09 18:50",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 262.0,
+  "update": "2026-10-21 10:25",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 9.547074034281788e-06,
+    "pb": 3.122176688282083,
+    "ps": 2.4957441169713008e-06,
+    "roe": 0.13285992226721255,
+    "eps": 27442963.05435636,
+    "de": 0.1948781698257771,
+    "margin_net": 0.40184126969588746,
+    "current_ratio": 3.0121891768693945,
+    "roa": 0.1108882344745079,
+    "bv": 83.9158145608218
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1.16799610236e+17,
+      "2024-Q2": 3.02394844524e+17,
+      "2024-Q3": 4.0215962546099994e+17,
+      "2026-Q1": 2.95057232416e+17
+    },
+    "eps": {
+      "2024-Q1": 1150000.0,
+      "2024-Q2": 5750000.0,
+      "2024-Q3": 9390000.0,
+      "2026-Q1": 11140000.0
+    },
+    "net_income": {
+      "2024-Q1": 1.2197055831e+16,
+      "2024-Q2": 6.1277442168e+16,
+      "2024-Q3": 9.9805496373e+16,
+      "2026-Q1": 1.18566172907e+17
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 4.5497455782e+16,
+      "2022": 15500000.0,
+      "2023": 2650000.0,
+      "2025": 32390000.0
+    },
+    "revenue_per_share": {
+      "2021": 4.19446938854e+17,
+      "2022": 1.132267113854e+18,
+      "2023": 1.141462895855e+18,
+      "2025": 1.473081323094e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 2786276933632,
+    "enterprise_value": 2630630506496,
+    "shares_outstanding": 10634644907,
+    "free_float_pct": 27.280000003482957
+  },
+  "akumulasi": {
+    "score": 2.8,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1124,
+    "vol_trend": 0.481,
+    "price_chg_20d": -37.21
+  },
   "neraca": {
-    "aset": 962049457755.0,
-    "aset_lancar": 312899620637.0,
-    "aset_tidak_lancar": 649149837118.0,
-    "kas": 245102648898.0,
-    "piutang_usaha": 3318280195.0,
-    "persediaan": 20512706272.0,
-    "aset_tetap": 30667018250.0,
-    "investasi": 350000000000.0,
-    "properti_investasi": null,
-    "goodwill": 3124279786.0,
-    "aset_tidak_berwujud": null,
-    "liabilitas": 127824547891.0,
-    "liabilitas_jangka_pendek": 105071935345.0,
+    "aset": 1069240334368.0,
+    "aset_lancar": 455321214499.0,
+    "kas": 297629918596.0,
+    "piutang_usaha": 76055928851.0,
+    "persediaan": 27896326601.0,
+    "aset_tetap": 31610043648.0,
+    "liabilitas": 173912180476.0,
+    "liabilitas_jangka_pendek": 151159567930.0,
     "liabilitas_jangka_panjang": 22752612546.0,
-    "utang_usaha": 3318280195.0,
+    "utang_usaha": 76055928851.0,
     "utang_bank": null,
-    "ekuitas": 831244696896.0,
-    "ekuitas_induk": 831244696896.0,
-    "ekuitas_non_pengendali": 2980212968.0,
+    "ekuitas": 892414889936.0,
+    "ekuitas_induk": 892414889936.0,
     "modal_saham": null,
-    "tambahan_modal_disetor": 426117142473.0,
     "saldo_laba": 42542579628.0
   },
   "laba_rugi": {
-    "pendapatan": 474413564785.0,
-    "beban_pokok": 263961593879.0,
+    "pendapatan": 295057232416.0,
+    "beban_pokok": 114403960889.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "beban_bunga": 171949027.0,
-    "laba_sebelum_pajak": 160686983143.0,
-    "beban_pajak": -39090421205.0,
-    "laba_bersih": 121196973151.0,
-    "laba_induk": 121196973151.0,
-    "laba_komprehensif": null,
-    "eps_basic": 11.39,
+    "laba_sebelum_pajak": 153818446308.0,
+    "beban_pajak": -34919633626.0,
+    "laba_bersih": 118566172907.0,
+    "laba_induk": 118566172907.0,
+    "eps_basic": 11.14,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 134530058.0,
-    "dividen_dibayar": null,
-    "kas_akhir_periode": null
-  },
-  "rasio": {
-    "roe": 0.14580180012404143,
-    "roa": 0.12597790287603342,
-    "der": 0.15377487323325756,
-    "dar": 0.13286691953372776,
-    "current_ratio": 2.9779561936268246,
-    "margin_laba_bersih": 0.2554669220006923,
-    "margin_laba_kotor": null,
-    "margin_laba_operasi": null,
-    "quick_ratio": 2.7827308348795317
-  },
-  "quarterly": {
-    "revenue": {
-      "2024-Q1": 116799610236.0,
-      "2024-Q2": 419194454760.0,
-      "2024-Q4": 1442490354916.0,
-      "2025-Q2": 1056652092533.0,
-      "2025-Q3": 1353714836713.0,
-      "2025-Q4": 1473081323094.0,
-      "2026-Q1": 295057232416.0,
-      "2026-Q2": 474413564785.0
-    },
-    "eps": {
-      "2024-Q1": 1.15,
-      "2024-Q2": 6.9,
-      "2024-Q4": 29.9,
-      "2025-Q2": 33.61,
-      "2025-Q3": 37.69,
-      "2025-Q4": 32.39,
-      "2026-Q1": 11.14,
-      "2026-Q2": 11.39
-    },
-    "net_income": {
-      "2024-Q1": 12197055831.0,
-      "2024-Q2": 73474497999.0,
-      "2024-Q4": 318044538125.0,
-      "2025-Q2": 357521767112.0,
-      "2025-Q3": 400932440751.0,
-      "2025-Q4": 344454664133.0,
-      "2026-Q1": 118566172907.0,
-      "2026-Q2": 121196973151.0
-    },
-    "aset": {
-      "2024-Q1": 881704425985.0,
-      "2024-Q2": 918715742923.0,
-      "2024-Q4": 1050106851230.0,
-      "2025-Q2": 1099826782392.0,
-      "2025-Q3": 971889124714.0,
-      "2025-Q4": 873053950742.0,
-      "2026-Q1": 1069240334368.0,
-      "2026-Q2": 962049457755.0
-    }
-  },
-  "riwayat": {
-    "eps": {
-      "2022": 15.5,
-      "2023": 2.65,
-      "2024": 29.9
-    },
-    "revenue": {
-      "2022": 1132267113854.0,
-      "2023": 1141462895855.0,
-      "2024": 1442490354916.0
-    },
-    "net_income": {
-      "2022": 149729881728.0,
-      "2023": 26924380566.0,
-      "2024": 318044538125.0
-    },
-    "ekuitas": {
-      "2022": 496344266972.0,
-      "2023": 744286058350.0,
-      "2024": 876288224251.0
-    }
-  },
-  "rasio_kunci": {
-    "pe": 35.594887,
-    "pb": 4.631288,
-    "ps": 4.32146,
-    "roe": 0.12186,
-    "eps": 10.17,
-    "de": 0.00168,
-    "margin_net": 0.121379994,
-    "current_ratio": 2.978,
-    "roa": 0.095240004,
-    "bv": 78.16,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2024-audit"
-  },
-  "statistik": {
-    "market_cap": 3849741402112,
-    "enterprise_value": 3609017974784,
-    "shares_outstanding": 10634644907,
-    "free_float_pct": 27.280000003482957
-  },
-  "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1595,
-    "vol_trend": 0.661,
-    "price_chg_20d": -22.65
-  },
-  "harga": 362.0,
-  "sektor": "Basic Materials",
-  "industri": "Other Industrial Metals & Mining",
-  "update_bv": "2026-10-11 17:37"
+    "capex": 38850000.0,
+    "dividen_dibayar": null
+  }
 }

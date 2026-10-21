@@ -3,69 +3,61 @@
   "nama": "PT Indokripto Koin Semesta Tbk",
   "sektor": "Financial Services",
   "industri": "Financial Data & Stock Exchanges",
-  "harga": 675.0,
-  "update": "2026-10-11 12:08",
+  "harga": 420.0,
+  "update": "2026-10-21 11:10",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 6.568576,
-    "ps": 40.311626,
+    "pb": 4.0871079159820125,
+    "ps": 41.37460400866524,
     "roe": -0.025950317444250474,
-    "eps": 3.6,
+    "eps": -5.333420869053053,
     "de": 0.013993899707278927,
     "margin_net": -0.5254004201633841,
     "current_ratio": 20.857662472361618,
     "roa": -0.025619399906532798,
-    "bv": 102.76,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 102.76215080048512
   },
   "quarterly": {
     "revenue": {
-      "2025-Q2": 113148943094.0,
-      "2025-Q3": 204633223863.0,
-      "2025-Q4": 284751460249.0,
-      "2026-Q1": 41489414545.0,
-      "2026-Q2": 74640842565.0
+      "2026-Q1": 4.1489414545e+16,
+      "2026-Q2": 3.315142802e+16
     },
     "eps": {
-      "2025-Q2": 2.04,
-      "2025-Q3": 3.1,
-      "2025-Q4": 3.6,
-      "2026-Q1": -1.38,
-      "2026-Q2": -2.67
+      "2026-Q1": -1380000.0,
+      "2026-Q2": -1290000.0
     },
     "net_income": {
-      "2025-Q2": 25510085044.0,
-      "2025-Q3": 41080888943.0,
-      "2025-Q4": 49054841608.0,
-      "2026-Q1": -19574186013.0,
-      "2026-Q2": -39216330045.0
-    }
+      "2026-Q1": -1.9574186013e+16,
+      "2026-Q2": -1.9642144032e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 3.6
+      "2025": 3600000.0
     },
     "revenue_per_share": {
-      "2025": 284751460249.0
+      "2025": 2.84751460249e+17
     }
   },
   "statistik": {
-    "market_cap": 9926470533120,
-    "enterprise_value": 9639094648832,
+    "market_cap": 6176470728704,
+    "enterprise_value": 6330271137792,
     "shares_outstanding": 14705882400,
     "free_float_pct": 15.1409999987488
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1727,
-    "vol_trend": 0.547,
-    "price_chg_20d": -5.59
+    "score": 6.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1121,
+    "vol_trend": 0.439,
+    "price_chg_20d": -46.43
   },
   "neraca": {
     "aset": 1530727893240.0,
@@ -76,8 +68,9 @@
     "aset_tetap": 23232529923.0,
     "liabilitas": 21147694656.0,
     "liabilitas_jangka_pendek": 17577598547.0,
+    "liabilitas_jangka_panjang": 3570096109.0,
     "utang_usaha": 40123210787.0,
-    "utang_bank": null,
+    "utang_bank": 179750000000.0,
     "ekuitas": 1511208104843.0,
     "ekuitas_induk": 1511208104843.0,
     "modal_saham": null,
@@ -101,7 +94,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 2521454577.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 12386830.0
+  }
 }

@@ -3,69 +3,61 @@
   "nama": "PT Cipta Sarana Medika Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 81.0,
-  "update": "2026-10-11 12:10",
+  "harga": 95.0,
+  "update": "2026-10-21 11:09",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 0.9781073,
-    "ps": 1.5187408,
+    "pe": 23.056660379439613,
+    "pb": 1.1471600156183064,
+    "ps": 1.5722842578734508,
     "roe": 0.02487697690688255,
-    "eps": 4.12,
+    "eps": 4.120284483381411,
     "de": 0.5066113351750859,
     "margin_net": 0.06819219401242985,
     "current_ratio": 2.449070569188687,
     "roa": 0.0165116744059301,
-    "bv": 82.81,
-    "bv_src": "harga/pb",
-    "eps_src": "laba_penuh_x2.0",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 82.81320714337839
   },
   "quarterly": {
     "revenue": {
-      "2025-Q2": 85908204810.0,
-      "2025-Q3": 110909317904.0,
-      "2025-Q4": 144873268389.0,
-      "2026-Q1": 37569206729.0,
-      "2026-Q2": 77039981219.0
+      "2026-Q1": 3.7569206729e+16,
+      "2026-Q2": 3.947077449e+16
     },
     "eps": {
-      "2025-Q2": 8.9,
-      "2025-Q3": 992.99,
-      "2025-Q4": 3.0,
-      "2026-Q1": 1.0,
-      "2026-Q2": 2.0
+      "2026-Q1": 1000000.0,
+      "2026-Q2": 1000000.0
     },
     "net_income": {
-      "2025-Q2": 6336472079.0,
-      "2025-Q3": 6820303730.0,
-      "2025-Q4": 6021897517.0,
-      "2026-Q1": 898607002.0,
-      "2026-Q2": 5253525346.0
-    }
+      "2026-Q1": 898607002000000.0,
+      "2026-Q2": 4354918344000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 3.0
+      "2025": 3000000.0
     },
     "revenue_per_share": {
-      "2025": 144873268389.0
+      "2025": 1.44873268389e+17
     }
   },
   "statistik": {
-    "market_cap": 206556397568,
-    "enterprise_value": 201229975552,
+    "market_cap": 242257510400,
+    "enterprise_value": 247131389952,
     "shares_outstanding": 2550078941,
     "free_float_pct": 20.786999981738997
   },
   "akumulasi": {
-    "score": 3.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1986,
-    "vol_trend": 0.52,
-    "price_chg_20d": 15.71
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2348,
+    "vol_trend": 1.518,
+    "price_chg_20d": 45.59
   },
   "neraca": {
     "aset": 318170357339.0,
@@ -76,6 +68,7 @@
     "aset_tetap": 5000000.0,
     "liabilitas": 106986290974.0,
     "liabilitas_jangka_pendek": 27067599324.0,
+    "liabilitas_jangka_panjang": 79918691650.0,
     "utang_usaha": 19111265590.0,
     "utang_bank": 9015379630.0,
     "ekuitas": 211180215573.0,
@@ -102,6 +95,5 @@
     "arus_kas_pendanaan": null,
     "capex": 5000000.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

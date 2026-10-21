@@ -3,72 +3,56 @@
   "nama": "PT Techno9 Indonesia Tbk",
   "sektor": "Technology",
   "industri": "Information Technology Services",
-  "harga": 86.0,
-  "update": "2026-10-11 11:26",
+  "harga": 72.0,
+  "update": "2026-10-21 10:47",
   "periode_terbaru": "2025-audit",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 7.234186,
-    "ps": 78.798485,
+    "pb": 6.056372631518958,
+    "ps": 65.97082539901314,
     "roe": -0.38785964024531744,
-    "eps": 1.03,
+    "eps": -4.610993377839592,
     "de": 0.1893183962035448,
     "margin_net": -4.224875542298077,
     "current_ratio": 2.8167178667075503,
     "roa": -0.3261192641797307,
-    "bv": 11.89,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2022",
-    "eps_reliable": true,
-    "eps_period": "2022-audit"
+    "bv": 11.88830416828929
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 1371211000.0,
-      "2024-Q4": 9016469130.0,
-      "2025-Q2": 1186079028.0,
-      "2025-Q4": 2354131528.0
-    },
-    "eps": {
-      "2024-Q2": -1.01,
-      "2024-Q4": -2.802,
-      "2025-Q2": -1.29190991284191,
-      "2025-Q4": -4.61
-    },
-    "net_income": {
-      "2024-Q2": -2187350738.0,
-      "2024-Q4": -6044442780.0,
-      "2025-Q2": -2786649682.0,
-      "2025-Q4": -9945912716.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 1.03,
-      "2023": -1.88,
-      "2024": -2.802,
-      "2025": -4.61
+      "2022": 1030000.0,
+      "2023": -1880000.0,
+      "2025": -4610000.0
     },
     "revenue_per_share": {
-      "2022": 19848779617.0,
-      "2023": 14775328996.0,
-      "2024": 9016469130.0,
-      "2025": 2354131528.0
+      "2022": 1.9848779617e+16,
+      "2023": 1.4775328996e+16,
+      "2025": 2354131528000000.0
     }
   },
   "statistik": {
-    "market_cap": 185501990912,
-    "enterprise_value": 178954682368,
+    "market_cap": 155304001536,
+    "enterprise_value": 159541673984,
     "shares_outstanding": 2157000000,
     "free_float_pct": 55.545
   },
   "akumulasi": {
-    "score": 3.1,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0917,
-    "vol_trend": 0.716,
-    "price_chg_20d": -8.51
+    "cmf": -0.2246,
+    "vol_trend": 1.229,
+    "price_chg_20d": -9.88
   },
   "neraca": {
     "aset": 30497777373.0,
@@ -79,6 +63,7 @@
     "aset_tetap": 5525706926.0,
     "liabilitas": 4854705282.0,
     "liabilitas_jangka_pendek": 4519209282.0,
+    "liabilitas_jangka_panjang": 335496000.0,
     "utang_usaha": 4274865571.0,
     "utang_bank": 1419294865.0,
     "ekuitas": 25643072091.0,
@@ -105,6 +90,5 @@
     "arus_kas_pendanaan": null,
     "capex": 28000000.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

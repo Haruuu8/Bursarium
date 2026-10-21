@@ -3,107 +3,102 @@
   "nama": "PT Wilton Makmur Indonesia Tbk.",
   "sektor": "Basic Materials",
   "industri": "Gold",
-  "harga": 95.0,
-  "update": "2026-10-11 15:06",
-  "periode_terbaru": "2026-tw2",
+  "harga": 73.0,
+  "update": "2026-10-21 13:06",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 15.11295,
-    "ps": 1071.7639,
-    "roe": -0.20855453260719323,
-    "eps": 1.76,
-    "de": 4.324018233368911,
-    "margin_net": -34.46206572929899,
-    "current_ratio": 0.020708055401647274,
-    "roa": -0.03975693759741436,
-    "bv": 6.29,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "pb": 10.685144513599205,
+    "ps": 0.0009375473357967567,
+    "roe": -0.11194310676032593,
+    "eps": -3.059143199459142,
+    "de": 3.926648190960445,
+    "margin_net": -39.28892543114637,
+    "current_ratio": 0.02840799400843269,
+    "roa": -0.0230543200922358,
+    "bv": 6.831915086135838
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 136115391.0,
-      "2024-Q3": 626252818.0,
-      "2024-Q4": 1340846802.0,
-      "2025-Q2": 925582073.0,
-      "2025-Q4": 1711772107.0,
-      "2026-Q2": 591045342.0
+      "2024-Q1": 136115391000000.0,
+      "2024-Q3": 490137427000000.0,
+      "2026-Q1": 302449842000000.0
     },
     "eps": {
-      "2024-Q2": -1.78,
-      "2024-Q3": 3.0,
-      "2024-Q4": 4.96,
-      "2025-Q2": -2.62,
-      "2025-Q4": 1.76,
-      "2026-Q2": -1.31
+      "2024-Q1": -870000.0,
+      "2024-Q2": -910000.0,
+      "2024-Q3": 4780000.0,
+      "2026-Q1": -760000.0
     },
     "net_income": {
-      "2024-Q2": -27654473159.0,
-      "2024-Q3": -46654328612.0,
-      "2024-Q4": -77126895111.0,
-      "2025-Q2": -41485773332.0,
-      "2025-Q4": -27422814037.0,
-      "2026-Q2": -20368643425.0
-    }
+      "2024-Q1": -1.3566444421e+16,
+      "2024-Q2": -1.4088028738e+16,
+      "2024-Q3": -1.8999855453e+16,
+      "2026-Q1": -1.1882929289e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 2.02,
-      "2023": 3.53,
-      "2024": 4.96,
-      "2025": 1.76
+      "2021": 1140000.0,
+      "2022": 2020000.0,
+      "2023": 3530000.0,
+      "2025": 1760000.0
     },
     "revenue_per_share": {
-      "2022": 5395684820.0,
-      "2023": 3989576891.0,
-      "2024": 1340846802.0,
-      "2025": 1711772107.0
+      "2021": 4829300202000000.0,
+      "2022": 5395684820000000.0,
+      "2023": 3989576891000000.0,
+      "2025": 1711772107000000.0
     }
   },
   "statistik": {
-    "market_cap": 1476071129088,
-    "enterprise_value": 1653737652224,
+    "market_cap": 1134244134912,
+    "enterprise_value": 1389598605312,
     "shares_outstanding": 15537591429,
     "free_float_pct": 46.47200000074091
   },
   "akumulasi": {
-    "score": 2.0,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1483,
-    "vol_trend": 1.242,
-    "price_chg_20d": -4.04
+    "cmf": -0.1617,
+    "vol_trend": 0.796,
+    "price_chg_20d": -27.1
   },
   "neraca": {
-    "aset": 512329285300.0,
-    "aset_lancar": 7802059020.0,
-    "kas": 1858340266.0,
+    "aset": 515431782046.0,
+    "aset_lancar": 10599382514.0,
+    "kas": 4517853063.0,
     "piutang_usaha": null,
-    "persediaan": 4720949807.0,
-    "aset_tetap": 338790600563.0,
-    "liabilitas": 422308661709.0,
-    "liabilitas_jangka_pendek": 376764445945.0,
-    "utang_usaha": 1095199458.0,
-    "utang_bank": null,
-    "ekuitas": 97665791150.0,
-    "ekuitas_induk": 97665791150.0,
+    "persediaan": 4784663700.0,
+    "aset_tetap": 338989109439.0,
+    "liabilitas": 416819616199.0,
+    "liabilitas_jangka_pendek": 373112670710.0,
+    "liabilitas_jangka_panjang": 43706945489.0,
+    "utang_usaha": 1096178922.0,
+    "utang_bank": 31156945.0,
+    "ekuitas": 106151505286.0,
+    "ekuitas_induk": 106151505286.0,
     "modal_saham": null,
-    "saldo_laba": -561819703050.0
+    "saldo_laba": -553333988914.0
   },
   "laba_rugi": {
-    "pendapatan": 591045342.0,
-    "beban_pokok": 184998747.0,
+    "pendapatan": 302449842.0,
+    "beban_pokok": 114781542.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -17086566009.0,
-    "beban_pajak": 2974327.0,
-    "laba_bersih": -20368643425.0,
-    "laba_induk": -20368643425.0,
-    "eps_basic": -1.31,
-    "eps_diluted": -1.31
+    "laba_sebelum_pajak": -10288349527.0,
+    "beban_pajak": 1473115.0,
+    "laba_bersih": -11882929289.0,
+    "laba_induk": -11882929289.0,
+    "eps_basic": -0.76,
+    "eps_diluted": -0.76
   },
   "arus_kas": {
     "arus_kas_operasi": null,
@@ -111,6 +106,5 @@
     "arus_kas_pendanaan": null,
     "capex": null,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

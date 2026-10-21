@@ -3,87 +3,70 @@
   "nama": "PT Indocement Tunggal Prakarsa Tbk",
   "sektor": "Basic Materials",
   "industri": "Building Materials",
-  "harga": 5050.0,
-  "update": "2026-10-11 13:52",
+  "harga": 5375.0,
+  "update": "2026-10-21 12:15",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 7.150341,
-    "pb": 0.7500592,
-    "ps": 0.9546748,
+    "pe": 15.638319115348805,
+    "pb": 0.8341534651515594,
+    "ps": 1.0910913931323791,
     "roe": 0.026670176602703058,
-    "eps": 706.26,
+    "eps": 343.7070161028053,
     "de": 0.3674075300340387,
     "margin_net": 0.06977037526120612,
     "current_ratio": 1.4650393704057725,
     "roa": 0.019504190240958494,
-    "bv": 6732.8,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 6443.658420843943
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 4082568.0,
-      "2024-Q3": 13320674.0,
-      "2024-Q4": 18548734.0,
-      "2025-Q1": 3975728.0,
-      "2025-Q2": 8032816.0,
-      "2025-Q3": 12916181.0,
-      "2025-Q4": 17731188.0,
-      "2026-Q1": 3844318.0,
-      "2026-Q2": 8451180.0
+      "2024-Q1": 4082568000000.0,
+      "2026-Q1": 3844318000000.0,
+      "2026-Q2": 4606862000000.0
     },
     "eps": {
       "2024-Q1": 69.37,
-      "2024-Q3": 309.86,
-      "2024-Q4": 591.49,
-      "2025-Q1": 62.89,
-      "2025-Q2": 147.69,
-      "2025-Q3": 317.94,
-      "2025-Q4": 674.5,
       "2026-Q1": 65.45,
-      "2026-Q2": 179.45
+      "2026-Q2": 114.0
     },
     "net_income": {
-      "2024-Q1": 238029.0,
-      "2024-Q3": 1055929.0,
-      "2024-Q4": 2007947.0,
-      "2025-Q1": 210675.0,
-      "2025-Q2": 494757.0,
-      "2025-Q3": 1063102.0,
-      "2025-Q4": 2248781.0,
-      "2026-Q1": 215193.0,
-      "2026-Q2": 589642.0
-    }
+      "2024-Q1": 238029000000.0,
+      "2026-Q1": 215193000000.0,
+      "2026-Q2": 374449000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
+      "2021": 486.79,
       "2022": 529.44,
       "2023": 568.41,
-      "2024": 591.49,
       "2025": 674.5
     },
     "revenue_per_share": {
-      "2022": 16328278.0,
-      "2023": 17949756.0,
-      "2024": 18548734.0,
-      "2025": 17731188.0
+      "2021": 14771906000000.0,
+      "2022": 16328278000000.0,
+      "2023": 17949756000000.0,
+      "2025": 17731188000000.0
     }
   },
   "statistik": {
-    "market_cap": 17326920433664,
-    "enterprise_value": 15372592873472,
+    "market_cap": 18442019143680,
+    "enterprise_value": 16686083211264,
     "shares_outstanding": 3431073399,
     "free_float_pct": 40.98585848993667
   },
   "akumulasi": {
-    "score": 3.0,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.2964,
-    "vol_trend": 0.672,
-    "price_chg_20d": -2.88
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1415,
+    "vol_trend": 1.12,
+    "price_chg_20d": 5.83
   },
   "neraca": {
     "aset": 30231555.0,
@@ -94,6 +77,7 @@
     "aset_tetap": 18487435.0,
     "liabilitas": 8122890.0,
     "liabilitas_jangka_pendek": 6741612.0,
+    "liabilitas_jangka_panjang": 1381278.0,
     "utang_usaha": 3010939.0,
     "utang_bank": 2000000.0,
     "ekuitas": 22108665.0,
@@ -111,7 +95,7 @@
     "beban_pajak": 22445.0,
     "laba_bersih": 589642.0,
     "laba_induk": 589642.0,
-    "eps_basic": 179.45,
+    "eps_basic": 0.00017945,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -119,7 +103,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 382084.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 1536227.0
+  }
 }

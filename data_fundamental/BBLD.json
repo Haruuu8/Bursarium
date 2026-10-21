@@ -3,80 +3,61 @@
   "nama": "PT Buana Finance Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 670.0,
-  "update": "2026-10-11 12:39",
+  "harga": 680.0,
+  "update": "2026-10-21 11:29",
   "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 94.63277,
-    "pb": 0.7723067,
-    "ps": 2.7047107,
+    "pe": 53.892965266300685,
+    "pb": 0.783833714265303,
+    "ps": 26.52810858131652,
     "roe": 0.002564122318650155,
-    "eps": 7.08,
+    "eps": 12.617602253650803,
     "de": 4.362626148724698,
     "margin_net": 0.19284660766961653,
     "current_ratio": null,
     "roa": 0.0004781467601018462,
-    "bv": 867.53,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 867.5309413519835
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 11251.0,
-      "2024-Q2": 22929.0,
-      "2024-Q3": 34454.0,
-      "2024-Q4": 43940.0,
-      "2025-Q1": 9345.0,
-      "2025-Q2": 18576.0,
-      "2025-Q3": 27924.0,
-      "2025-Q4": 40277.0,
-      "2026-Q1": 8858.0,
-      "2026-Q2": 18984.0
+      "2024-Q1": 11251000000.0,
+      "2024-Q2": 11678000000.0,
+      "2024-Q3": 11525000000.0,
+      "2026-Q1": 8858000000.0,
+      "2026-Q2": 10126000000.0
     },
     "eps": {
-      "2024-Q1": 14.81,
-      "2024-Q2": 18.2,
-      "2024-Q3": 25.2,
-      "2024-Q4": 40.14,
-      "2025-Q1": 5.92,
-      "2025-Q2": 8.379999999999999,
-      "2025-Q3": 11.38662613981763,
-      "2025-Q4": 8.19,
+      "2024-Q1": 14810000.0,
+      "2024-Q2": 3390000.0,
+      "2024-Q3": -18199974.8,
       "2026-Q1": 1.01,
-      "2026-Q2": 2.2199999999999998
+      "2026-Q2": 1.21
     },
     "net_income": {
-      "2024-Q1": 24368.0,
-      "2024-Q2": 29955.0,
-      "2024-Q3": 41473.0,
-      "2024-Q4": 66067.0,
-      "2025-Q1": 9743.0,
-      "2025-Q2": 13786.0,
-      "2025-Q3": 18731.0,
-      "2025-Q4": 13480.0,
-      "2026-Q1": 1665.0,
-      "2026-Q2": 3661.0
-    }
+      "2024-Q1": 24368000000.0,
+      "2024-Q2": 5587000000.0,
+      "2024-Q3": 11518000000.0,
+      "2026-Q1": 1665000000.0,
+      "2026-Q2": 1996000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 53.14,
-      "2023": 63.81,
-      "2024": 40.14,
+      "2022": 53140000.0,
+      "2023": 63810000.0,
       "2025": 8.19
     },
     "revenue_per_share": {
-      "2022": 44470.0,
-      "2023": 52473.0,
-      "2024": 43940.0,
-      "2025": 40277.0
+      "2022": 44470000000.0,
+      "2023": 52473000000.0,
+      "2025": 40277000000.0
     }
   },
   "statistik": {
-    "market_cap": 1102683439104,
-    "enterprise_value": 6509981335552,
+    "market_cap": 1119141363712,
+    "enterprise_value": 6493523410944,
     "shares_outstanding": 1645796054,
     "free_float_pct": 32.39800002582823
   },
@@ -84,21 +65,22 @@
     "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.6453,
-    "vol_trend": 0.173,
-    "price_chg_20d": 0.75
+    "cmf": -0.469,
+    "vol_trend": 0.198,
+    "price_chg_20d": -1.49
   },
   "neraca": {
     "aset": 7656645.0,
     "aset_lancar": null,
     "kas": 580173.0,
-    "piutang_usaha": null,
+    "piutang_usaha": 5533756.0,
     "persediaan": null,
     "aset_tetap": 75075.0,
     "liabilitas": 6228866.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
-    "utang_bank": null,
+    "utang_bank": 1958113.0,
     "ekuitas": 1427779.0,
     "ekuitas_induk": 1427779.0,
     "modal_saham": null,
@@ -114,15 +96,14 @@
     "beban_pajak": -1388.0,
     "laba_bersih": 3661.0,
     "laba_induk": 3661.0,
-    "eps_basic": 2.2199999999999998,
-    "eps_diluted": 2.2199999999999998
+    "eps_basic": 2.22e-06,
+    "eps_diluted": 2.22e-06
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 3691.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 4110.0
+  }
 }

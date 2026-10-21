@@ -3,118 +3,99 @@
   "nama": "PT Bank OCBC NISP Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 1225.0,
-  "update": "2026-10-11 14:29",
-  "periode_terbaru": "2026-tw2",
+  "harga": 1140.0,
+  "update": "2026-10-21 12:44",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 5.427318,
-    "pb": 0.6334485,
-    "ps": 2.2158957,
-    "roe": 0.06152613421257741,
-    "eps": 225.71,
-    "de": 6.425561375039959,
-    "margin_net": 0.3044438298788178,
+    "pe": 5.05155299995481,
+    "pb": 0.5864986220652494,
+    "ps": 1.4990572192442453,
+    "roe": 0.030492295916432904,
+    "eps": 225.6731741724175,
+    "de": 6.015270385811694,
+    "margin_net": 0.30598850022556295,
     "current_ratio": null,
-    "roa": 0.008285714751362715,
-    "bv": 1933.86,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "roa": 0.00434655664191541,
+    "bv": 1943.7385820033046
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 4127352.0,
-      "2024-Q2": 8376362.0,
-      "2024-Q3": 13004958.0,
-      "2024-Q4": 17819661.0,
-      "2025-Q1": 4545996.0,
-      "2025-Q2": 8941644.0,
-      "2025-Q3": 13345840.0,
-      "2025-Q4": 17854831.0,
-      "2026-Q1": 4444435.0,
-      "2026-Q2": 8967490.0
+      "2024-Q1": 4127352000000.0,
+      "2024-Q2": 4249010000000.0,
+      "2024-Q3": 4628596000000.0,
+      "2026-Q1": 4444435000000.0
     },
     "eps": {
-      "2024-Q1": 50.86,
-      "2024-Q2": 104.2,
-      "2024-Q3": 166.4,
-      "2024-Q4": 212.1,
-      "2025-Q1": 56.27,
-      "2025-Q2": 111.84,
-      "2025-Q3": 166.68,
-      "2025-Q4": 220.41,
-      "2026-Q1": 59.27,
-      "2026-Q2": 118.98
+      "2024-Q1": 50860000.0,
+      "2024-Q2": 53340000.0,
+      "2024-Q3": 62200000.0,
+      "2026-Q1": 59270000.0
     },
     "net_income": {
-      "2024-Q1": 1167083.0,
-      "2024-Q2": 2390919.0,
-      "2024-Q3": 3818192.0,
-      "2024-Q4": 4866750.0,
-      "2025-Q1": 1291021.0,
-      "2025-Q2": 2566115.0,
-      "2025-Q3": 3824573.0,
-      "2025-Q4": 5057473.0,
-      "2026-Q1": 1359946.0,
-      "2026-Q2": 2730097.0
-    }
+      "2024-Q1": 1167083000000.0,
+      "2024-Q2": 1223836000000.0,
+      "2024-Q3": 1427273000000.0,
+      "2026-Q1": 1359946000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 144.99,
-      "2023": 178.3,
-      "2024": 212.1,
-      "2025": 220.41
+      "2021": 109810000.0,
+      "2022": 144990000.0,
+      "2023": 178300000.0,
+      "2025": 220410000.0
     },
     "revenue_per_share": {
-      "2022": 12227225.0,
-      "2023": 15532562000000.0,
-      "2024": 17819661.0,
-      "2025": 17854831.0
+      "2021": 11216156000000.0,
+      "2022": 12227225000000.0,
+      "2023": 1.5532562e+19,
+      "2025": 17854831000000.0
     }
   },
   "statistik": {
-    "market_cap": 28107987746816,
-    "enterprise_value": 48912836591616,
+    "market_cap": 26157638483968,
+    "enterprise_value": 47077212028928,
     "shares_outstanding": 22945296972,
     "free_float_pct": 14.898000000485675
   },
   "akumulasi": {
-    "score": 3.0,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2129,
-    "vol_trend": 0.741,
-    "price_chg_20d": -3.16
+    "cmf": -0.3126,
+    "vol_trend": 0.888,
+    "price_chg_20d": -9.13
   },
   "neraca": {
-    "aset": 329494447.0,
+    "aset": 312878932.0,
     "aset_lancar": null,
     "kas": null,
     "piutang_usaha": null,
     "persediaan": null,
-    "aset_tetap": 3831394.0,
-    "liabilitas": 285121210.0,
+    "aset_tetap": 3784263.0,
+    "liabilitas": 268279008.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
-    "ekuitas": 44372965.0,
-    "ekuitas_induk": 44372965.0,
+    "ekuitas": 44599659.0,
+    "ekuitas_induk": 44599659.0,
     "modal_saham": null,
-    "saldo_laba": 35313662.0
+    "saldo_laba": 34974130.0
   },
   "laba_rugi": {
-    "pendapatan": 8967490.0,
+    "pendapatan": 4444435.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
-    "laba_operasi": 3368663.0,
-    "laba_sebelum_pajak": 3406885.0,
-    "beban_pajak": -676766.0,
-    "laba_bersih": 2730097.0,
-    "laba_induk": 2730097.0,
-    "eps_basic": 118.98,
+    "laba_operasi": 1679074.0,
+    "laba_sebelum_pajak": 1700726.0,
+    "beban_pajak": -340765.0,
+    "laba_bersih": 1359946.0,
+    "laba_induk": 1359946.0,
+    "eps_basic": 59.27,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -122,7 +103,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 2432201.0
+  }
 }

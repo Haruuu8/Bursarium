@@ -3,77 +3,60 @@
   "nama": "PT Kentanix Supra International Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 398.0,
-  "update": "2026-10-11 12:07",
+  "harga": 364.0,
+  "update": "2026-10-21 11:08",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.67570204,
-    "ps": 9.525093,
+    "pb": 0.6179787755761805,
+    "ps": 13.58389126697376,
     "roe": -0.001898421553623742,
-    "eps": 9.0,
+    "eps": -2.2364051091390817,
     "de": 0.014796561240311474,
     "margin_net": -0.08345902151497217,
     "current_ratio": 54.1450246745697,
     "roa": -0.0017567643878777536,
-    "bv": 589.02,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 589.0169927933526
   },
   "quarterly": {
     "revenue": {
-      "2024-Q4": 227087763000.0,
-      "2025-Q1": 37901546000.0,
-      "2025-Q2": 71409037000.0,
-      "2025-Q3": 84169724000.0,
-      "2025-Q4": 132093841000.0,
-      "2026-Q1": 11112051500.0,
-      "2026-Q2": 28643146500.0
+      "2026-Q1": 1.11120515e+16,
+      "2026-Q2": 1.7531095e+16
     },
     "eps": {
-      "2024-Q4": 32.0,
-      "2025-Q1": 2.0,
-      "2025-Q2": 5.0,
-      "2025-Q3": 4.0,
-      "2025-Q4": 9.0,
-      "2026-Q1": -1.0,
-      "2026-Q2": -1.0
+      "2026-Q1": -1000000.0
     },
     "net_income": {
-      "2024-Q4": 58703576674.0,
-      "2025-Q1": 3440747629.0,
-      "2025-Q2": 9600328595.0,
-      "2025-Q3": 7455715750.0,
-      "2025-Q4": 18200611215.0,
-      "2026-Q1": -3062455771.0,
-      "2026-Q2": -2390528980.0
-    }
+      "2026-Q1": -3062455771000000.0,
+      "2026-Q2": 671926791000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2024": 32.0,
-      "2025": 9.0
+      "2025": 9000000.0
     },
     "revenue_per_share": {
-      "2024": 227087763000.0,
-      "2025": 132093841000.0
+      "2025": 1.32093841e+17
     }
   },
   "statistik": {
-    "market_cap": 850857033728,
-    "enterprise_value": 744693825536,
+    "market_cap": 778170793984,
+    "enterprise_value": 642077884416,
     "shares_outstanding": 2137831800,
     "free_float_pct": 15.0
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2214,
-    "vol_trend": 0.546,
-    "price_chg_20d": -1.97
+    "cmf": 0.141,
+    "vol_trend": 0.957,
+    "price_chg_20d": -14.49
   },
   "neraca": {
     "aset": 1360756739205.0,
@@ -84,8 +67,9 @@
     "aset_tetap": 8016651321.0,
     "liabilitas": 18632114865.0,
     "liabilitas_jangka_pendek": 11699255489.0,
+    "liabilitas_jangka_panjang": 6932859376.0,
     "utang_usaha": 29509350.0,
-    "utang_bank": null,
+    "utang_bank": 4500000000.0,
     "ekuitas": 1259219257934.0,
     "ekuitas_induk": 1259219257934.0,
     "modal_saham": null,
@@ -110,6 +94,5 @@
     "arus_kas_pendanaan": null,
     "capex": 104616300.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

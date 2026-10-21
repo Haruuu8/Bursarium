@@ -3,75 +3,65 @@
   "nama": "PT Alsok Indonesia Services Tbk",
   "sektor": "Industrials",
   "industri": "Staffing & Employment Services",
-  "harga": 1200.0,
-  "update": "2026-10-11 16:07",
+  "harga": 760.0,
+  "update": "2026-10-21 14:05",
   "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 27.130295,
-    "pb": 7.113893,
-    "ps": 0.45521566,
+    "pe": null,
+    "pb": 2.4862457166188525,
+    "ps": 0.2763553867130337,
     "roe": -0.0011368391709045105,
-    "eps": 44.23,
+    "eps": -1390044.0557619769,
     "de": 1.3671060842586016,
     "margin_net": -0.0005054554770766512,
     "current_ratio": 1.710484748740652,
     "roa": -0.0004582548176256533,
-    "bv": 168.68,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2024-audit"
+    "bv": 305.6817734948399
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 1399168647469.0,
-      "2024-Q4": 1870248720441.0,
-      "2025-Q1": 477821756939.0,
-      "2025-Q4": 2036355387409.0,
-      "2026-Q1": 549896261106.0
+      "2024-Q1": 4.71992852215e+17,
+      "2026-Q1": 5.49896261106e+17
     },
     "eps": {
-      "2024-Q3": 18.12,
-      "2024-Q4": 7.11,
-      "2025-Q1": 2.64,
-      "2025-Q4": -20.19,
+      "2024-Q1": 8090000.0,
       "2026-Q1": -340000.0
     },
     "net_income": {
-      "2024-Q3": 9375550769.0,
-      "2024-Q4": 5686943161.0,
-      "2025-Q1": 2113930335.0,
-      "2025-Q4": -16140226079.0,
-      "2026-Q1": -277948077.0
-    }
+      "2024-Q1": 2578058860000000.0,
+      "2026-Q1": -277948077000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 30.06,
-      "2023": 47.0,
-      "2024": 7.11,
-      "2025": -20.19
+      "2021": 36750000.0,
+      "2023": 47000000.0,
+      "2025": -20190000.0
     },
     "revenue_per_share": {
-      "2022": 1529120178492.0,
-      "2023": 1780352921109.0,
-      "2024": 1870248720441.0,
-      "2025": 2036355387409.0
+      "2021": 1.389331929729e+18,
+      "2023": 1.780352921109e+18,
+      "2025": 2.036355387409e+18
     }
   },
   "statistik": {
-    "market_cap": 959790252032,
-    "enterprise_value": 1050098663424,
+    "market_cap": 607867174912,
+    "enterprise_value": 686365212672,
     "shares_outstanding": 799825231,
     "free_float_pct": 1.1424126979060005
   },
   "akumulasi": {
-    "score": 8.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.2448,
-    "vol_trend": 41.852,
-    "price_chg_20d": 26.98
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3215,
+    "vol_trend": 102.261,
+    "price_chg_20d": -20.32
   },
   "neraca": {
     "aset": 606536071874.0,
@@ -82,6 +72,7 @@
     "aset_tetap": 22866782661.0,
     "liabilitas": 334246494051.0,
     "liabilitas_jangka_pendek": 314225244495.0,
+    "liabilitas_jangka_panjang": 20021249556.0,
     "utang_usaha": 207083444207.0,
     "utang_bank": 115000000000.0,
     "ekuitas": 244491995098.0,
@@ -99,7 +90,7 @@
     "beban_pajak": -1038788826.0,
     "laba_bersih": -277948077.0,
     "laba_induk": -277948077.0,
-    "eps_basic": -340000.0,
+    "eps_basic": -0.34,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -108,6 +99,5 @@
     "arus_kas_pendanaan": null,
     "capex": 2939024757.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

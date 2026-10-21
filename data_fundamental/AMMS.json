@@ -3,62 +3,46 @@
   "nama": "PT Agung Menjangan Mas Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 210.0,
-  "update": "2026-10-11 11:18",
+  "harga": 106.0,
+  "update": "2026-10-21 10:41",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 3.5727046,
-    "ps": 17.604624,
+    "pb": 1.8033711894622637,
+    "ps": 18.826420336415286,
     "roe": -0.021479904347250934,
-    "eps": null,
+    "eps": -2.525126135,
     "de": 0.021964422762301043,
     "margin_net": -0.44848194358469556,
     "current_ratio": 20.998123660279372,
     "roa": -0.021018250605233595,
-    "bv": 58.78,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2024-audit"
+    "bv": 58.77880306583333
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q4": 11495526042.0,
-      "2025-Q2": 4702119709.0,
-      "2025-Q4": 15638309272.0,
-      "2026-Q2": 3378231170.0
-    },
-    "eps": {
-      "2024-Q4": 90000.0,
-      "2025-Q2": 560000.0,
-      "2025-Q4": -380000.0,
-      "2026-Q2": -1.26
-    },
-    "net_income": {
-      "2024-Q4": 120079068.0,
-      "2025-Q2": 677783785.0,
-      "2025-Q4": -457271899.0,
-      "2026-Q2": -1515075681.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 1.35,
+      "2022": 1350000.0,
       "2023": 190000.0,
-      "2024": 90000.0,
       "2025": -380000.0
     },
     "revenue_per_share": {
-      "2022": 9981424190.0,
-      "2023": 10309548266.0,
-      "2024": 11495526042.0,
-      "2025": 15638309272.0
+      "2022": 9981424190000000.0,
+      "2023": 1.0309548266e+16,
+      "2025": 1.5638309272e+16
     }
   },
   "statistik": {
-    "market_cap": 251999993856,
-    "enterprise_value": 245374926848,
+    "market_cap": 127200002048,
+    "enterprise_value": 133774934016,
     "shares_outstanding": 1200000000,
     "free_float_pct": 24.9
   },
@@ -66,9 +50,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2052,
-    "vol_trend": 0.419,
-    "price_chg_20d": -6.25
+    "cmf": -0.57,
+    "vol_trend": 0.902,
+    "price_chg_20d": -45.83
   },
   "neraca": {
     "aset": 72083814655.0,
@@ -79,6 +63,7 @@
     "aset_tetap": 7720955520.0,
     "liabilitas": 1549250976.0,
     "liabilitas_jangka_pendek": 1208708623.0,
+    "liabilitas_jangka_panjang": 340542353.0,
     "utang_usaha": 2202916125.0,
     "utang_bank": null,
     "ekuitas": 70534563679.0,
@@ -105,6 +90,5 @@
     "arus_kas_pendanaan": null,
     "capex": null,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

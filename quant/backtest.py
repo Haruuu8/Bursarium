@@ -1,309 +1,550 @@
-#!/usr/bin/env python3
 """
-Pencarian kombinasi fitur untuk Buy on Support & Buy on Breakout
-dengan validasi anti-overfitting (train/val/test + permutation test).
+quant/backtest_sr_methods.py
+Bandingkan 12 metode deteksi Support/Resistance IDX secara jujur.
+Output: winrate, expectancy, stabilitas train/val/test per metode.
+"""
+import os, sys, math, time, warnings
+from datetime import datetime
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
-Data : folder berisi CSV per ticker, kolom: Date,Open,High,Low,Close,Volume
-Pakai: python combo_search.py --data ./data --mode both --depth 4
-"""
-import argparse, glob, heapq, os, time
 import numpy as np
 import pandas as pd
 
-# ----------------------------------------------------------------------------
-# 1. INDIKATOR & FITUR BINER (semua hanya memakai data s/d candle sinyal)
-# ----------------------------------------------------------------------------
-def load_csv(path):
-    df = pd.read_csv(path)
-    df.columns = [c.strip().capitalize() for c in df.columns]
-    df["Date"] = pd.to_datetime(df["Date"])
-    df = df.sort_values("Date").dropna(subset=["Open", "High", "Low", "Close"])
-    return df.reset_index(drop=True)
+warnings.filterwarnings("ignore")
 
-def rsi(c, n=14):
-    d = c.diff()
-    up = d.clip(lower=0).ewm(alpha=1 / n, adjust=False).mean()
-    dn = (-d.clip(upper=0)).ewm(alpha=1 / n, adjust=False).mean()
-    return 100 - 100 / (1 + up / dn.replace(0, np.nan))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from quant.parquet_loader import load_parquet_safe
 
-def atr(df, n=14):
-    pc = df.Close.shift()
-    tr = pd.concat([df.High - df.Low, (df.High - pc).abs(), (df.Low - pc).abs()], axis=1).max(axis=1)
-    return tr.ewm(alpha=1 / n, adjust=False).mean()
 
-def adx(df, n=14):
-    up, dn = df.High.diff(), -df.Low.diff()
-    pdm = np.where((up > dn) & (up > 0), up, 0.0)
-    ndm = np.where((dn > up) & (dn > 0), dn, 0.0)
-    a = atr(df, n)
-    pdi = 100 * pd.Series(pdm, index=df.index).ewm(alpha=1 / n, adjust=False).mean() / a
-    ndi = 100 * pd.Series(ndm, index=df.index).ewm(alpha=1 / n, adjust=False).mean() / a
-    dx = 100 * (pdi - ndi).abs() / (pdi + ndi).replace(0, np.nan)
-    return dx.ewm(alpha=1 / n, adjust=False).mean()
+# ============================================================
+# KONFIGURASI
+# ============================================================
+TOUCH_ATR    = 0.3      # toleransi sentuh level (dalam ATR)
+BOUNCE_ATR   = 1.5      # target profit (memantul)
+BREAK_ATR    = 0.5      # stop loss (tembus)
+MAX_BARS     = 10       # maksimum bar sebelum timeout
+DEBOUNCE     = 5        # minimal jarak antar-touch di level yang sama
+ATR_PERIOD   = 14
+LOOKBACK     = 250      # level dianggap valid selama 250 bar (1 tahun)
+FEE_PCT      = 0.6      # fee round-trip (%)
 
-def add_indicators(df):
-    c, v = df.Close, df.Volume.replace(0, np.nan)
-    df["ATR"] = atr(df)
-    df["RSI"] = rsi(c)
-    df["SMA20"], df["SMA50"], df["SMA200"] = c.rolling(20).mean(), c.rolling(50).mean(), c.rolling(200).mean()
-    df["EMA20"] = c.ewm(span=20, adjust=False).mean()
-    macd = c.ewm(span=12, adjust=False).mean() - c.ewm(span=26, adjust=False).mean()
-    df["MACDH"] = macd - macd.ewm(span=9, adjust=False).mean()
-    bbw = (4 * c.rolling(20).std()) / df.SMA20
-    df["BBW"] = bbw
-    df["BBW_Q20"] = bbw.rolling(120).quantile(0.2)
-    atrp = df.ATR / c
-    df["ATRP"] = atrp
-    df["ATRP_Q30"], df["ATRP_Q70"] = atrp.rolling(120).quantile(0.3), atrp.rolling(120).quantile(0.7)
-    df["VOLR"] = v / v.rolling(20).mean()
-    df["ADX"] = adx(df)
-    rng = (df.High - df.Low).replace(0, np.nan)
-    df["CLOC"] = (c - df.Low) / rng                     # posisi close dalam candle
-    df["LWICK"] = (np.minimum(df.Open, c) - df.Low) / rng
-    df["BODY"] = (c - df.Open).abs() / rng
-    df["RANGE_ATR"] = rng / df.ATR
-    df["ROC5"] = c.pct_change(5)
-    df["ROC20"] = c.pct_change(20)
-    hi252, lo252 = df.High.rolling(252, min_periods=60).max(), df.Low.rolling(252, min_periods=60).min()
-    df["POS52"] = (c - lo252) / (hi252 - lo252)
-    return df
+# Split train/val/test
+SPLIT_TRAIN = 0.6
+SPLIT_VAL   = 0.8
 
-def binary_features(df, i):
-    """Dict fitur biner pada candle sinyal i (vektor untuk banyak i sekaligus)."""
-    g = lambda col: df[col].values[i]
-    c = g("Close")
-    f = {}
-    for t in (30, 40, 45, 50):  f[f"RSI<{t}"] = g("RSI") < t
-    for t in (50, 55, 60, 70):  f[f"RSI>{t}"] = g("RSI") > t
-    for t in (1.2, 1.5, 2.0):   f[f"Vol>{t}x"] = g("VOLR") > t
-    f["Vol<0.8x"] = g("VOLR") < 0.8
-    for t in (20, 25, 30):      f[f"ADX>{t}"] = g("ADX") > t
-    f["ADX<20"] = g("ADX") < 20
-    f["C>SMA20"], f["C<SMA20"] = c > g("SMA20"), c < g("SMA20")
-    f["C>SMA50"], f["C<SMA50"] = c > g("SMA50"), c < g("SMA50")
-    f["C>SMA200"], f["C<SMA200"] = c > g("SMA200"), c < g("SMA200")
-    f["C>EMA20"] = c > g("EMA20")
-    f["SMA50>SMA200"] = g("SMA50") > g("SMA200")
-    f["MACDH>0"] = g("MACDH") > 0
-    prev = df["MACDH"].shift(1).values[i]
-    f["MACDH_naik"] = g("MACDH") > prev
-    f["BB_Squeeze"] = g("BBW") < g("BBW_Q20")
-    f["ATR_Low"], f["ATR_High"] = g("ATRP") < g("ATRP_Q30"), g("ATRP") > g("ATRP_Q70")
-    f["Bullish"] = c > g("Open")
-    f["CloseTop30%"] = g("CLOC") > 0.7
-    f["LowerWick>40%"] = g("LWICK") > 0.4
-    f["Body>60%"] = g("BODY") > 0.6
-    f["Range>1.2ATR"] = g("RANGE_ATR") > 1.2
-    f["Range<0.8ATR"] = g("RANGE_ATR") < 0.8
-    for t in (-0.05, -0.03): f[f"ROC5<{t:.0%}"] = g("ROC5") < t
-    for t in (0.03, 0.06):   f[f"ROC5>{t:.0%}"] = g("ROC5") > t
-    f["ROC20>0"], f["ROC20<0"] = g("ROC20") > 0, g("ROC20") < 0
-    f["Pos52>0.8"], f["Pos52<0.3"] = g("POS52") > 0.8, g("POS52") < 0.3
-    f["Dekat_SMA50(<3%)"] = np.abs(c / g("SMA50") - 1) < 0.03
-    return {k: np.asarray(v, dtype=bool) for k, v in f.items()}
+# Metode yang diuji
+METHODS = [
+    "swing_w3",
+    "swing_w5",
+    "swing_w7",
+    "donchian_20",
+    "donchian_55",
+    "pivot_classic",
+    "pivot_fib",
+    "round_50",
+    "round_100",
+    "kijun",       # Ichimoku 26 midpoint
+    "weekly_hl",   # prev week high/low
+    "monthly_hl",  # prev month high/low
+]
 
-# ----------------------------------------------------------------------------
-# 2. DETEKSI EVENT (tanpa look-ahead) + SIMULASI TRADE
-# ----------------------------------------------------------------------------
-def simulate(df, sig_idx, sl_price, sl_atr, rr, max_hold, cost):
-    """Entry open candle berikutnya. SL & TP dicek per candle, SL dulu bila bersamaan.
-    Return R-multiple bersih (sudah dikurangi fee) atau nan bila tidak valid."""
-    O, H, L, C, A = (df[k].values for k in ("Open", "High", "Low", "Close", "ATR"))
-    out = np.full(len(sig_idx), np.nan)
-    for n, (i, lvl) in enumerate(zip(sig_idx, sl_price)):
-        if i + 2 >= len(df) or np.isnan(A[i]):
-            continue
-        entry = O[i + 1]
-        sl = min(lvl, entry) - sl_atr * A[i]
-        risk = entry - sl
-        if risk <= 0 or risk / entry < 0.003:
-            continue
-        tp = entry + rr * risk
-        res = None
-        for k in range(i + 1, min(i + 1 + max_hold, len(df))):
-            if O[k] <= sl: res = (O[k] - entry) / risk; break        # gap down
-            if L[k] <= sl: res = -1.0; break
-            if H[k] >= tp: res = rr; break
-        if res is None:
-            res = (C[min(i + max_hold, len(df) - 1)] - entry) / risk  # timeout
-        out[n] = res - cost * entry / risk
+
+# ============================================================
+# ATR
+# ============================================================
+def compute_atr(highs, lows, closes, period=ATR_PERIOD):
+    prev_close = np.roll(closes, 1)
+    prev_close[0] = closes[0]
+    tr = np.maximum(highs - lows,
+                    np.maximum(np.abs(highs - prev_close),
+                               np.abs(lows - prev_close)))
+    return pd.Series(tr).rolling(period).mean().values
+
+
+# ============================================================
+# DETEKSI LEVEL PER METODE
+# ============================================================
+def detect_swings(highs, lows, i, w):
+    """Return list of (price, side, detected_at_bar)."""
+    out = []
+    k = i - w   # baru tahu swing setelah w bar berikutnya
+    if k - w < 0: return out
+    window_h = highs[k-w:k+w+1]
+    window_l = lows[k-w:k+w+1]
+    if len(window_h) != 2*w+1: return out
+    
+    if highs[k] == window_h.max():
+        out.append((float(highs[k]), "resistance", k))
+    if lows[k] == window_l.min():
+        out.append((float(lows[k]), "support", k))
     return out
 
-def support_events(df, pivot_w=5, tol_atr=0.3, min_age=10, max_age=120):
-    """Support = swing low yang baru 'diketahui' setelah pivot_w candle (tanpa look-ahead).
-    Event = candle pertama yang menyentuh zona lalu close di atas level."""
-    L, C, A = df.Low.values, df.Close.values, df.ATR.values
+
+def detect_donchian(highs, lows, i, period):
+    if i < period: return []
+    hh = float(np.max(highs[i-period:i]))
+    ll = float(np.min(lows[i-period:i]))
+    return [(hh, "resistance", i-period), (ll, "support", i-period)]
+
+
+def detect_pivot_classic(highs, lows, closes, i):
+    if i < 2: return []
+    h, l, c = highs[i-1], lows[i-1], closes[i-1]
+    p = (h + l + c) / 3
+    r1 = 2*p - l
+    s1 = 2*p - h
+    r2 = p + (h - l)
+    s2 = p - (h - l)
+    return [(r1, "resistance", i-1), (r2, "resistance", i-1),
+            (s1, "support", i-1), (s2, "support", i-1)]
+
+
+def detect_pivot_fib(highs, lows, closes, i):
+    if i < 2: return []
+    h, l, c = highs[i-1], lows[i-1], closes[i-1]
+    p = (h + l + c) / 3
+    rng = h - l
+    r1 = p + 0.382 * rng
+    r2 = p + 0.618 * rng
+    r3 = p + 1.000 * rng
+    s1 = p - 0.382 * rng
+    s2 = p - 0.618 * rng
+    s3 = p - 1.000 * rng
+    return [(r1, "resistance", i-1), (r2, "resistance", i-1), (r3, "resistance", i-1),
+            (s1, "support", i-1), (s2, "support", i-1), (s3, "support", i-1)]
+
+
+def detect_round(closes, i, increment):
+    c = closes[i]
+    if c < increment: return []
+    r_up = math.ceil(c / increment) * increment
+    r_dn = math.floor(c / increment) * increment
+    out = []
+    if r_up > c: out.append((r_up, "resistance", i))
+    if r_dn < c: out.append((r_dn, "support", i))
+    return out
+
+
+def detect_kijun(highs, lows, i, period=26):
+    """Ichimoku Kijun-sen (26-bar midpoint) — dipakai sebagai level dinamis."""
+    if i < period: return []
+    mid = (float(np.max(highs[i-period:i])) + float(np.min(lows[i-period:i]))) / 2
+    c = closes[i]
+    if mid > c: return [(mid, "resistance", i)]
+    if mid < c: return [(mid, "support", i)]
+    return []
+
+
+def detect_weekly_hl(dates, highs, lows, i):
+    if i < 10: return []
+    # find start of current week (Monday)
+    dt = pd.Timestamp(dates[i])
+    days_since_monday = dt.weekday()
+    week_start_idx = max(0, i - days_since_monday - 7)  # start of prev week
+    week_end_idx = max(0, i - days_since_monday)
+    if week_end_idx <= week_start_idx or week_start_idx < 0: return []
+    h = float(np.max(highs[week_start_idx:week_end_idx]))
+    l = float(np.min(lows[week_start_idx:week_end_idx]))
+    return [(h, "resistance", week_end_idx), (l, "support", week_end_idx)]
+
+
+def detect_monthly_hl(dates, highs, lows, i):
+    if i < 25: return []
+    dt = pd.Timestamp(dates[i])
+    # start of current month
+    cur_month_start = dt.replace(day=1)
+    prev_month_end = cur_month_start - pd.Timedelta(days=1)
+    prev_month_start = prev_month_end.replace(day=1)
+    mask = (pd.to_datetime(dates) >= prev_month_start) & (pd.to_datetime(dates) <= prev_month_end)
+    idxs = np.where(mask)[0]
+    if len(idxs) == 0: return []
+    h = float(np.max(highs[idxs]))
+    l = float(np.min(lows[idxs]))
+    return [(h, "resistance", int(idxs[0])), (l, "support", int(idxs[0]))]
+
+
+def detect_all(method, highs, lows, closes, dates, i, atr):
+    try:
+        if method == "swing_w3": return detect_swings(highs, lows, i, 3)
+        if method == "swing_w5": return detect_swings(highs, lows, i, 5)
+        if method == "swing_w7": return detect_swings(highs, lows, i, 7)
+        if method == "donchian_20": return detect_donchian(highs, lows, i, 20)
+        if method == "donchian_55": return detect_donchian(highs, lows, i, 55)
+        if method == "pivot_classic": return detect_pivot_classic(highs, lows, closes, i)
+        if method == "pivot_fib": return detect_pivot_fib(highs, lows, closes, i)
+        if method == "round_50": return detect_round(closes, i, 50)
+        if method == "round_100": return detect_round(closes, i, 100)
+        if method == "kijun": return detect_kijun(highs, lows, i)
+        if method == "weekly_hl": return detect_weekly_hl(dates, highs, lows, i)
+        if method == "monthly_hl": return detect_monthly_hl(dates, highs, lows, i)
+    except Exception:
+        return []
+    return []
+
+
+# ============================================================
+# TRADE SIMULATION
+# ============================================================
+def simulate_support(level, touch_bar, highs, lows, closes, atr_touch, n):
+    tp = level + BOUNCE_ATR * atr_touch
+    sl = level - BREAK_ATR * atr_touch
+    entry = level
+    end = min(touch_bar + MAX_BARS, n - 1)
+    
+    # Same bar
+    if lows[touch_bar] <= sl:
+        return "SL", (sl - entry) / entry * 100
+    if highs[touch_bar] >= tp:
+        return "TP", (tp - entry) / entry * 100
+    
+    for j in range(touch_bar + 1, end + 1):
+        hit_sl = lows[j] <= sl
+        hit_tp = highs[j] >= tp
+        if hit_sl and hit_tp:
+            return "SL", (sl - entry) / entry * 100
+        if hit_sl:
+            return "SL", (sl - entry) / entry * 100
+        if hit_tp:
+            return "TP", (tp - entry) / entry * 100
+    
+    return "TIMEOUT", (closes[end] - entry) / entry * 100
+
+
+def simulate_resistance(level, touch_bar, highs, lows, closes, atr_touch, n):
+    tp = level - BOUNCE_ATR * atr_touch
+    sl = level + BREAK_ATR * atr_touch
+    entry = level
+    end = min(touch_bar + MAX_BARS, n - 1)
+    
+    if highs[touch_bar] >= sl:
+        return "SL", (entry - sl) / entry * 100
+    if lows[touch_bar] <= tp:
+        return "TP", (entry - tp) / entry * 100
+    
+    for j in range(touch_bar + 1, end + 1):
+        hit_sl = highs[j] >= sl
+        hit_tp = lows[j] <= tp
+        if hit_sl and hit_tp:
+            return "SL", (entry - sl) / entry * 100
+        if hit_sl:
+            return "SL", (entry - sl) / entry * 100
+        if hit_tp:
+            return "TP", (entry - tp) / entry * 100
+    
+    return "TIMEOUT", (entry - closes[end]) / entry * 100
+
+
+# ============================================================
+# BACKTEST PER METHOD PER STOCK
+# ============================================================
+def backtest_stock(kode, method, df):
+    if df is None or len(df) < 150: return []
+    df = df.sort_values("Date").reset_index(drop=True)
+    dates  = df["Date"].values
+    highs  = df["High"].astype(float).values
+    lows   = df["Low"].astype(float).values
+    closes = df["Close"].astype(float).values
     n = len(df)
-    pivots = []
-    for p in range(pivot_w, n - pivot_w):
-        if L[p] == L[p - pivot_w: p + pivot_w + 1].min():
-            pivots.append((p + pivot_w, L[p]))                      # (baru diketahui di, level)
-    idx, lvl = [], []
-    for known, level in pivots:
-        for t in range(known + min_age, min(known + max_age, n - 2)):
-            if np.isnan(A[t]): continue
-            if L[t] < level - 1.0 * A[t]: break                     # support sudah jebol
-            if L[t] <= level + tol_atr * A[t] and C[t] > level:
-                idx.append(t); lvl.append(min(level, L[t])); break
-    return np.array(idx, dtype=int), np.array(lvl)
-
-def breakout_events(df, lookback):
-    """Breakout = close pertama di atas high tertinggi N candle sebelumnya."""
-    hh = df.High.shift(1).rolling(lookback).max().values
-    C = df.Close.values
-    prev_c = np.r_[np.nan, C[:-1]]
-    prev_hh = np.r_[np.nan, hh[:-1]]
-    ok = (C > hh) & ~(prev_c > prev_hh)
-    idx = np.where(ok & ~np.isnan(hh))[0]
-    return idx, hh[idx]
-
-def build_events(data_dir, mode, scenarios, max_hold, cost):
-    frames = {"support": [], "breakout": []}
-    files = sorted(glob.glob(os.path.join(data_dir, "*.csv")))
-    for fp in files:
-        tk = os.path.splitext(os.path.basename(fp))[0]
-        try:
-            df = add_indicators(load_csv(fp))
-        except Exception as e:
-            print(f"skip {tk}: {e}"); continue
-        if len(df) < 300: continue
-        jobs = []
-        if mode in ("support", "both"):
-            jobs.append(("support", "", *support_events(df)))
-        if mode in ("breakout", "both"):
-            for lb in (20, 50):
-                jobs.append(("breakout", f"LB{lb}", *breakout_events(df, lb)))
-        for kind, tag, idx, lvl in jobs:
-            if len(idx) == 0: continue
-            feats = binary_features(df, idx)
-            for (sl_atr, rr) in scenarios:
-                R = simulate(df, idx, lvl, sl_atr, rr, max_hold, cost)
-                ok = ~np.isnan(R)
-                part = pd.DataFrame({"ticker": tk, "date": df.Date.values[idx][ok],
-                                     "scenario": f"{tag}|SL{sl_atr}ATR|RR{rr}", "R": R[ok]})
-                for k, v in feats.items(): part[k] = v[ok]
-                frames[kind].append(part)
-    out = {}
-    for k, v in frames.items():
-        if v: out[k] = pd.concat(v, ignore_index=True)
-    return out
-
-# ----------------------------------------------------------------------------
-# 3. PENCARIAN KOMBINASI (DFS + pruning) & STATISTIK
-# ----------------------------------------------------------------------------
-def tstat(r):
-    n = len(r)
-    sd = r.std(ddof=1)
-    return 0.0 if sd == 0 else r.mean() / (sd / np.sqrt(n))
-
-def search(Ft, R, names, depth, min_n, top_k):
-    """Ft: matriks fitur (F, N) bool. Mengembalikan top_k kombinasi menurut t-stat (mean>0)."""
-    heap, counter = [], [0]
-    def rec(idx, start, combo):
-        for j in range(start, Ft.shape[0]):
-            sub = idx[Ft[j][idx]]
-            if len(sub) < min_n or len(sub) == len(idx):
-                continue
-            counter[0] += 1
-            r = R[sub]
-            if r.mean() > 0:
-                t = tstat(r)
-                item = (t, len(sub), r.mean(), tuple(combo + [j]))
-                if len(heap) < top_k: heapq.heappush(heap, item)
-                elif t > heap[0][0]: heapq.heapreplace(heap, item)
-            if len(combo) + 1 < depth:
-                rec(sub, j + 1, combo + [j])
-    rec(np.arange(Ft.shape[1]), 0, [])
-    return sorted(heap, reverse=True), counter[0]
-
-def stats(R, mask):
-    r = R[mask]
-    if len(r) < 2: return dict(N=len(r), WR=np.nan, ExpR=np.nan, PF=np.nan, t=np.nan)
-    w, l = r[r > 0].sum(), -r[r < 0].sum()
-    return dict(N=len(r), WR=100 * (r > 0).mean(), ExpR=r.mean(), PF=(w / l if l > 0 else np.inf), t=tstat(r))
-
-def mask_of(F, combo):
-    m = np.ones(F.shape[1], dtype=bool)
-    for j in combo: m &= F[j]
-    return m
-
-# ----------------------------------------------------------------------------
-# 4. PIPELINE
-# ----------------------------------------------------------------------------
-def run_kind(kind, ev, args):
-    print("\n" + "=" * 90 + f"\n  {kind.upper()}  | total event: {len(ev)}\n" + "=" * 90)
-    names = [c for c in ev.columns if c not in ("ticker", "date", "scenario", "R")]
+    
+    atr = compute_atr(highs, lows, closes)
+    
     results = []
-    for scen, g in ev.groupby("scenario"):
-        g = g.sort_values("date").reset_index(drop=True)
-        n = len(g)
-        c1, c2 = int(n * args.train), int(n * (args.train + args.val))
-        tr, va, te = g.iloc[:c1], g.iloc[c1:c2], g.iloc[c2:]
-        if len(tr) < 3 * args.min_n:
-            print(f"[{scen}] data terlalu sedikit, dilewati"); continue
-        F = lambda d: d[names].values.T.astype(bool)
-        Ftr, Fva, Fte = F(tr), F(va), F(te)
-        Rtr, Rva, Rte = tr.R.values, va.R.values, te.R.values
+    active_levels = []  # list of dict {price, side, bar, last_touch}
+    last_detect = -100
+    
+    # Detect ulang tiap 3 bar (cukup cepat)
+    for i in range(60, n - MAX_BARS - 1):
+        if np.isnan(atr[i]) or atr[i] <= 0:
+            continue
+        
+        # Deteksi level baru
+        if i - last_detect >= 3:
+            new_lv = detect_all(method, highs, lows, closes, dates, i, atr)
+            for price, side, bar in new_lv:
+                active_levels.append({
+                    "price": price, "side": side, "bar": bar, "last_touch": -999
+                })
+            last_detect = i
+        
+        # Expire level lama
+        active_levels = [lv for lv in active_levels if i - lv["bar"] <= LOOKBACK]
+        
+        # Cek touch di bar i
+        for lv in active_levels:
+            if i - lv["last_touch"] < DEBOUNCE:
+                continue
+            
+            price = lv["price"]
+            side = lv["side"]
+            tol = TOUCH_ATR * atr[i]
+            
+            touched = False
+            if side == "support":
+                if lows[i] <= price + tol and lows[i] >= price - tol:
+                    touched = True
+            else:
+                if highs[i] >= price - tol and highs[i] <= price + tol:
+                    touched = True
+            
+            if not touched:
+                continue
+            
+            lv["last_touch"] = i
+            
+            # Simulate
+            if side == "support":
+                result, ret_pct = simulate_support(price, i, highs, lows, closes, atr[i], n)
+            else:
+                result, ret_pct = simulate_resistance(price, i, highs, lows, closes, atr[i], n)
+            
+            if result is None:
+                continue
+            
+            results.append({
+                "kode": kode,
+                "method": method,
+                "date": pd.Timestamp(dates[i]),
+                "side": side,
+                "result": result,
+                "ret_pct": ret_pct,
+                "net_ret": ret_pct - FEE_PCT,
+            })
+    
+    return results
 
-        t0 = time.time()
-        top, n_tested = search(Ftr, Rtr, names, args.depth, args.min_n, args.top_k)
-        # permutation test: acak R (putus hubungan fitur-hasil), cari max t-stat lagi
-        null_max = []
-        rng = np.random.default_rng(42)
-        for _ in range(args.perms):
-            h, _ = search(Ftr, rng.permutation(Rtr), names, args.depth, args.min_n, 1)
-            null_max.append(h[0][0] if h else 0.0)
-        null_p95 = np.percentile(null_max, 95) if null_max else 0.0
-        real_max = top[0][0] if top else 0.0
-        print(f"\n[{scen}] train={len(tr)} val={len(va)} test={len(te)} | kombinasi diuji={n_tested:,} "
-              f"({time.time()-t0:.0f}s)")
-        print(f"  t-stat tertinggi di TRAIN (nyata) : {real_max:.2f}")
-        print(f"  t-stat tertinggi pada DATA ACAK   : p95={null_p95:.2f}  <- jika nyata <= ini, itu NOISE")
 
-        for t, nn, mean, combo in top:
-            if t <= null_p95: continue                                   # lolos permutation test
-            mv = stats(Rva, mask_of(Fva, combo))
-            if mv["N"] < args.min_n_val or not (mv["ExpR"] > 0) or mv["t"] < 1.65: continue
-            mt = stats(Rte, mask_of(Fte, combo))                         # test: dilihat sekali
-            results.append(dict(scenario=scen, combo=" & ".join(names[j] for j in combo),
-                                tr_N=nn, tr_ExpR=mean, tr_t=t,
-                                va_N=mv["N"], va_WR=mv["WR"], va_ExpR=mv["ExpR"],
-                                te_N=mt["N"], te_WR=mt["WR"], te_ExpR=mt["ExpR"], te_PF=mt["PF"]))
-    if not results:
-        print("\n>> TIDAK ADA kombinasi yang lolos semua uji. Itu hasil yang jujur: "
-              "kemungkinan tidak ada edge yang kuat pada data/aturan ini.")
+# ============================================================
+# WRAPPER UNTUK MULTIPROCESSING
+# ============================================================
+def _worker(args):
+    kode, method, df = args
+    try:
+        return backtest_stock(kode, method, df)
+    except Exception:
+        return []
+
+
+# ============================================================
+# ANALISIS PER METODE
+# ============================================================
+def analyze_method(df_res, method):
+    if df_res.empty:
         return None
-    res = pd.DataFrame(results).sort_values("va_ExpR", ascending=False)
-    pd.set_option("display.width", 250, "display.max_colwidth", 70)
-    print(f"\n>> {len(res)} kombinasi lolos TRAIN + permutation + VALIDATION. Kolom te_* = TEST (data belum pernah dilihat):")
-    print(res.head(25).round(2).to_string(index=False))
-    good = res[(res.te_N >= args.min_n_val) & (res.te_ExpR > 0)]
-    print(f"\n>> Yang tetap profit di TEST: {len(good)} dari {len(res)}")
-    return res
+    
+    df_res = df_res.copy()
+    df_res["win"] = (df_res["net_ret"] > 0).astype(int)
+    
+    # Split by date
+    dates_sorted = sorted(df_res["date"].unique())
+    if len(dates_sorted) < 10:
+        return None
+    n_dates = len(dates_sorted)
+    split_train = dates_sorted[int(n_dates * SPLIT_TRAIN)]
+    split_val   = dates_sorted[int(n_dates * SPLIT_VAL)]
+    
+    tr = df_res[df_res["date"] < split_train]
+    va = df_res[(df_res["date"] >= split_train) & (df_res["date"] < split_val)]
+    te = df_res[df_res["date"] >= split_val]
+    
+    def _stats(sub):
+        if len(sub) < 20:
+            return None
+        wr = sub["win"].mean() * 100
+        avg = sub["net_ret"].mean()
+        return {"n": len(sub), "wr": wr, "avg": avg}
+    
+    stats_all = _stats(df_res)
+    stats_tr = _stats(tr)
+    stats_va = _stats(va)
+    stats_te = _stats(te)
+    
+    if stats_all is None:
+        return None
+    
+    # Per-side breakdown
+    sup = df_res[df_res["side"] == "support"]
+    res = df_res[df_res["side"] == "resistance"]
+    
+    sup_wr = (sup["win"].mean() * 100) if len(sup) >= 20 else None
+    res_wr = (res["win"].mean() * 100) if len(res) >= 20 else None
+    
+    return {
+        "method": method,
+        "n": stats_all["n"],
+        "wr": stats_all["wr"],
+        "avg_ret": stats_all["avg"],
+        "sup_n": len(sup),
+        "sup_wr": sup_wr,
+        "res_n": len(res),
+        "res_wr": res_wr,
+        "n_tr": stats_tr["n"] if stats_tr else 0,
+        "wr_tr": stats_tr["wr"] if stats_tr else None,
+        "n_va": stats_va["n"] if stats_va else 0,
+        "wr_va": stats_va["wr"] if stats_va else None,
+        "n_te": stats_te["n"] if stats_te else 0,
+        "wr_te": stats_te["wr"] if stats_te else None,
+        "stable": (
+            stats_tr and stats_va and stats_te
+            and abs(stats_tr["wr"] - stats_te["wr"]) < 5
+            and abs(stats_va["wr"] - stats_te["wr"]) < 5
+        ),
+    }
 
+
+# ============================================================
+# MAIN
+# ============================================================
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--data", required=True, help="folder CSV per ticker")
-    ap.add_argument("--mode", default="both", choices=["support", "breakout", "both"])
-    ap.add_argument("--depth", type=int, default=4, help="maks fitur per kombinasi")
-    ap.add_argument("--min_n", type=int, default=100, help="min sample di train")
-    ap.add_argument("--min_n_val", type=int, default=30, help="min sample di val/test")
-    ap.add_argument("--top_k", type=int, default=300)
-    ap.add_argument("--perms", type=int, default=20, help="jumlah shuffle permutation test")
-    ap.add_argument("--train", type=float, default=0.5)
-    ap.add_argument("--val", type=float, default=0.25)
-    ap.add_argument("--max_hold", type=int, default=20)
-    ap.add_argument("--cost", type=float, default=0.003, help="fee+slippage round trip (0.003 = 0.3 persen)")
-    ap.add_argument("--out", default="hasil_kombinasi")
-    args = ap.parse_args()
+    print("=" * 120)
+    print("BACKTEST: 12 METODE DETEKSI S/R — JUJUR, FORWARD-LOOKING")
+    print("=" * 120)
+    print(f"Touch toleransi : {TOUCH_ATR} ATR")
+    print(f"Bounce (TP)     : {BOUNCE_ATR} ATR")
+    print(f"Break (SL)      : {BREAK_ATR} ATR")
+    print(f"Max bars        : {MAX_BARS}")
+    print(f"Fee round-trip  : {FEE_PCT}%")
+    print(f"Split           : {SPLIT_TRAIN*100:.0f}% train, "
+          f"{(SPLIT_VAL-SPLIT_TRAIN)*100:.0f}% val, "
+          f"{(1-SPLIT_VAL)*100:.0f}% test")
+    print()
+    
+    print("Loading data...")
+    df_all = load_parquet_safe()
+    if df_all is None or df_all.empty:
+        print("❌ Gagal load data."); return
+    
+    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
+    df_all["Date"] = pd.to_datetime(df_all["Date"], errors="coerce")
+    df_all = df_all.dropna(subset=["Date"])
+    
+    tickers = df_all["Kode"].unique()
+    print(f"📊 Total {len(tickers)} saham.")
+    
+    # Group by ticker untuk multiprocessing
+    groups = {k: v for k, v in df_all.groupby("Kode")}
+    del df_all
+    
+    # Prepare jobs: (kode, method, df) untuk semua kombinasi
+    jobs = []
+    for method in METHODS:
+        for kode, df in groups.items():
+            jobs.append((kode, method, df))
+    
+    print(f"🔬 {len(jobs):,} job (saham × metode). Jalankan paralel...\n")
+    
+    # Run parallel
+    all_results = {m: [] for m in METHODS}
+    t0 = time.time()
+    
+    with ProcessPoolExecutor(max_workers=8) as ex:
+        futures = {ex.submit(_worker, job): job for job in jobs}
+        done = 0
+        for fut in as_completed(futures):
+            done += 1
+            try:
+                res = fut.result()
+                if res:
+                    for r in res:
+                        all_results[r["method"]].append(r)
+            except Exception:
+                pass
+            if done % max(1, len(jobs) // 40) == 0:
+                print(f"\r  Progress: {done}/{len(jobs)} ({done*100//len(jobs)}%) "
+                      f"· {time.time()-t0:.0f}s", end="", flush=True)
+    
+    print(f"\n\n✅ Selesai dalam {time.time()-t0:.0f} detik")
+    
+    # Analyze each method
+    print("\n" + "=" * 120)
+    print("HASIL — RANKING METODE DETEKSI S/R")
+    print("=" * 120)
+    
+    summary = []
+    for method in METHODS:
+        res_list = all_results.get(method, [])
+        if not res_list:
+            continue
+        df_res = pd.DataFrame(res_list)
+        analysis = analyze_method(df_res, method)
+        if analysis:
+            summary.append(analysis)
+    
+    if not summary:
+        print("❌ Tidak ada hasil.")
+        return
+    
+    df_sum = pd.DataFrame(summary).sort_values("wr", ascending=False).reset_index(drop=True)
+    
+    # Format columns
+    df_sum["wr_str"] = df_sum["wr"].apply(lambda x: f"{x:.1f}%" if pd.notna(x) else "—")
+    df_sum["avg_str"] = df_sum["avg_ret"].apply(lambda x: f"{x:+.2f}%" if pd.notna(x) else "—")
+    df_sum["sup_str"] = df_sum.apply(
+        lambda r: f"{r['sup_wr']:.1f}% ({r['sup_n']:,})" if pd.notna(r['sup_wr']) else "—", axis=1
+    )
+    df_sum["res_str"] = df_sum.apply(
+        lambda r: f"{r['res_wr']:.1f}% ({r['res_n']:,})" if pd.notna(r['res_wr']) else "—", axis=1
+    )
+    df_sum["split_str"] = df_sum.apply(
+        lambda r: (f"{r['wr_tr']:.1f}/{r['wr_va']:.1f}/{r['wr_te']:.1f}"
+                   if r['wr_tr'] is not None and r['wr_va'] is not None and r['wr_te'] is not None
+                   else "—"), axis=1
+    )
+    df_sum["stable_str"] = df_sum["stable"].apply(lambda x: "✅" if x else "⚠️")
+    
+    show = df_sum[["method", "n", "wr_str", "avg_str",
+                   "sup_str", "res_str", "split_str", "stable_str"]].copy()
+    show.columns = ["Metode", "N Touch", "WR Total", "Avg Ret",
+                    "Support (WR, N)", "Resistance (WR, N)",
+                    "WR Train/Val/Test", "Stabil?"]
+    show.index = range(1, len(show) + 1)
+    
+    print(f"\n{show.to_string()}")
+    
+    # Detail per side — metode TOP 3
+    print("\n" + "=" * 120)
+    print("DETAIL BREAKDOWN PER SIDE — METODE TERBAIK")
+    print("=" * 120)
+    
+    for _, r in df_sum.head(3).iterrows():
+        print(f"\n▶ {r['method']}  (N total: {r['n']:,}, WR: {r['wr']:.1f}%)")
+        if pd.notna(r['sup_wr']):
+            print(f"   Support   : {r['sup_wr']:.1f}% win dari {r['sup_n']:,} touch")
+        if pd.notna(r['res_wr']):
+            print(f"   Resistance: {r['res_wr']:.1f}% win dari {r['res_n']:,} touch")
+    
+    # Save
+    os.makedirs("quant/output", exist_ok=True)
+    df_sum.to_csv("quant/output/sr_methods_ranking.csv", index=False)
+    print(f"\n💾 Saved: quant/output/sr_methods_ranking.csv")
+    
+    # Honest verdict
+    print("\n" + "=" * 120)
+    print("VERDICT JUJUR")
+    print("=" * 120)
+    
+    best = df_sum.iloc[0]
+    top3 = df_sum.head(3)
+    
+    print(f"\n🏆 METODE TERBAIK (by total WR):")
+    for _, r in top3.iterrows():
+        marker = "✅" if r["stable"] else "⚠️"
+        print(f"   {marker} {r['method']:<15} WR {r['wr_str']:>7} | "
+              f"N {r['n']:>6,} | Avg {r['avg_str']:>7} | "
+              f"Stabil: {'YA' if r['stable'] else 'TIDAK'}")
+    
+    print(f"\n💡 INTERPRETASI:")
+    print(f"   • Metode dengan WR > 55% + stabil di 3 split = layak dipakai")
+    print(f"   • Metode dengan WR < 50% = lebih sering tembus dari pada memantul")
+    print(f"   • Cek juga 'Avg Ret' — kalau negatif, WR tinggi pun rugi karena fee")
+    print(f"   • Support WR lebih tinggi dari Resistance WR = trader-friendly")
+    print(f"   • Metode dengan N kecil (<500) = hasil belum reliable")
+    
+    best_stable = df_sum[df_sum["stable"]].head(1)
+    if not best_stable.empty:
+        r = best_stable.iloc[0]
+        print(f"\n   ✅ REKOMENDASI: '{r['method']}' — WR {r['wr_str']} konsisten "
+              f"di train/val/test, N {r['n']:,}, avg return {r['avg_str']}")
 
-    scenarios = [(0.5, 2.0), (1.0, 2.0), (1.0, 3.0)]   # (SL buffer x ATR di bawah level, RR)
-    events = build_events(args.data, args.mode, scenarios, args.max_hold, args.cost)
-    for kind, ev in events.items():
-        res = run_kind(kind, ev, args)
-        if res is not None:
-            res.to_csv(f"{args.out}_{kind}.csv", index=False)
-            print(f"tersimpan: {args.out}_{kind}.csv")
 
 if __name__ == "__main__":
     main()

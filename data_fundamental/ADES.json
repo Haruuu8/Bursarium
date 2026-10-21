@@ -3,82 +3,66 @@
   "nama": "PT Akasha Wira International Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Beverages - Non-Alcoholic",
-  "harga": 34825.0,
-  "update": "2026-10-11 12:19",
+  "harga": 32500.0,
+  "update": "2026-10-21 11:13",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 21.498905,
-    "pb": 5.8180604,
-    "ps": 5.7579226,
+    "pe": 18.0787494389185,
+    "pb": 5.429632258252715,
+    "ps": 4.728686480225576,
     "roe": 0.15016614607657078,
-    "eps": 1619.85,
+    "eps": 1797.690714714845,
     "de": 0.232600259025316,
     "margin_net": 0.2615604854861274,
     "current_ratio": 3.3847094521844108,
     "roa": 0.12182874778504048,
-    "bv": 5985.67,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2024-audit"
+    "bv": 5985.672409140039
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 867396.0,
-      "2024-Q3": 1336389.0,
-      "2024-Q4": 1956431.0,
-      "2025-Q1": 568923.0,
-      "2025-Q2": 1186331.0,
-      "2025-Q3": 1848380.0,
-      "2026-Q1": 942040.0,
-      "2026-Q2": 2027164.0
+      "2024-Q3": 468993000000.0,
+      "2026-Q1": 942040000000.0,
+      "2026-Q2": 1085124000000.0
     },
     "eps": {
-      "2024-Q2": 397.0,
-      "2024-Q3": 593.0,
-      "2024-Q4": 894.0,
-      "2025-Q1": 248.0,
-      "2025-Q2": 536.0,
-      "2025-Q3": 828.0,
+      "2024-Q3": 196.0,
       "2026-Q1": 433.0,
-      "2026-Q2": 900.0
+      "2026-Q2": 467.0
     },
     "net_income": {
-      "2024-Q2": 234033.0,
-      "2024-Q3": 350101.0,
-      "2024-Q4": 527368.0,
-      "2025-Q1": 146210.0,
-      "2025-Q2": 316479.0,
-      "2025-Q3": 488464.0,
-      "2026-Q1": 255528.0,
-      "2026-Q2": 530226.0
-    }
+      "2024-Q3": 116068000000.0,
+      "2026-Q1": 255528000000.0,
+      "2026-Q2": 274698000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 619.0,
-      "2023": 671.0,
-      "2024": 894.0
+      "2022": 619000000.0,
+      "2023": 671.0
     },
     "revenue_per_share": {
-      "2022": 1290992.0,
-      "2023": 1525445.0,
-      "2024": 1956431.0
+      "2022": 1290992000000.0,
+      "2023": 1525445000000.0
     }
   },
   "statistik": {
-    "market_cap": 20543157829632,
-    "enterprise_value": 19517027647488,
+    "market_cap": 19171647684608,
+    "enterprise_value": 18366729289728,
     "shares_outstanding": 589896800,
     "free_float_pct": 8.643999933547699
   },
   "akumulasi": {
-    "score": 8.5,
+    "score": 8.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4046,
-    "vol_trend": 1.836,
-    "price_chg_20d": 8.83
+    "cmf": 0.3699,
+    "vol_trend": 5.326,
+    "price_chg_20d": 2.9
   },
   "neraca": {
     "aset": 4352224.0,
@@ -89,6 +73,7 @@
     "aset_tetap": 1382206.0,
     "liabilitas": 821295.0,
     "liabilitas_jangka_pendek": 766225.0,
+    "liabilitas_jangka_panjang": 55070.0,
     "utang_usaha": 738015.0,
     "utang_bank": null,
     "ekuitas": 3530929.0,
@@ -106,7 +91,7 @@
     "beban_pajak": -141810.0,
     "laba_bersih": 530226.0,
     "laba_induk": 530226.0,
-    "eps_basic": 900.0,
+    "eps_basic": 0.0009,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -115,6 +100,5 @@
     "arus_kas_pendanaan": null,
     "capex": 206139.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

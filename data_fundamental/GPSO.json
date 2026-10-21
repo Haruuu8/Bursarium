@@ -1,146 +1,108 @@
 {
   "kode": "GPSO",
   "nama": "PT Geoprima Solusi Tbk",
-  "periode_terbaru": "2025-audit",
-  "update": "2026-10-09 18:51",
+  "sektor": "Technology",
+  "industri": "Scientific & Technical Instruments",
+  "harga": 224.0,
+  "update": "2026-10-21 10:26",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.9005008214082824,
+    "ps": 3.0370693896979825e-05,
+    "roe": -0.0131769036277414,
+    "eps": -5561589.9826922435,
+    "de": 0.1267186634234699,
+    "margin_net": -1.1887302896471792,
+    "current_ratio": 12.787541097061725,
+    "roa": -0.011694936860018042,
+    "bv": 57.4285227093285
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 924340536000000.0,
+      "2024-Q2": 1964781808000000.0,
+      "2024-Q3": 2053321187000000.0,
+      "2026-Q1": 466882434000000.0
+    },
+    "eps": {
+      "2024-Q1": -8590000.0,
+      "2024-Q2": 4940000.0,
+      "2024-Q3": -1640000.0,
+      "2026-Q1": -840000.0
+    },
+    "net_income": {
+      "2024-Q1": -1411428824000000.0,
+      "2024-Q2": -1025356157000000.0,
+      "2024-Q3": -1087171818000000.0,
+      "2026-Q1": -554997291000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": -6860000.0,
+      "2022": 130000.0,
+      "2023": 40000.0,
+      "2025": -4760000.0
+    },
+    "revenue_per_share": {
+      "2021": 1.129172478e+16,
+      "2022": 1.5209318316e+16,
+      "2023": 1.6156261887e+16,
+      "2025": 5491334475000000.0
+    }
+  },
+  "statistik": {
+    "market_cap": 164284989440,
+    "enterprise_value": 154701496320,
+    "shares_outstanding": 733415103,
+    "free_float_pct": 52.51182603475784
+  },
+  "akumulasi": {
+    "score": 6.4,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1267,
+    "vol_trend": 0.386,
+    "price_chg_20d": -10.08
+  },
   "neraca": {
-    "aset": 48891335391.0,
-    "aset_lancar": 26227063540.0,
-    "aset_tidak_lancar": 22664271851.0,
-    "kas": 833687279.0,
-    "piutang_usaha": 1987899427.0,
-    "persediaan": 16425635918.0,
-    "aset_tetap": 19733589208.0,
-    "investasi": -181420690.0,
-    "properti_investasi": null,
-    "goodwill": 6386892.0,
-    "aset_tidak_berwujud": null,
-    "liabilitas": 6217392202.0,
-    "liabilitas_jangka_pendek": 2496603075.0,
-    "liabilitas_jangka_panjang": 3720789127.0,
-    "utang_usaha": 1987899427.0,
+    "aset": 47456202427.0,
+    "aset_lancar": 25258661753.0,
+    "kas": 127958491.0,
+    "piutang_usaha": 84993912.0,
+    "persediaan": 16270104594.0,
+    "aset_tetap": 19267311728.0,
+    "liabilitas": 5337256529.0,
+    "liabilitas_jangka_pendek": 1975255568.0,
+    "liabilitas_jangka_panjang": 3362000961.0,
+    "utang_usaha": 84993912.0,
     "utang_bank": null,
-    "ekuitas": 42673943189.0,
-    "ekuitas_induk": 42673943189.0,
-    "ekuitas_non_pengendali": null,
+    "ekuitas": 42118945898.0,
+    "ekuitas_induk": 42118945898.0,
     "modal_saham": null,
-    "tambahan_modal_disetor": 15898758600.0,
     "saldo_laba": 5000000000.0
   },
   "laba_rugi": {
-    "pendapatan": 5491334475.0,
-    "beban_pokok": 2131805556.0,
+    "pendapatan": 466882434.0,
+    "beban_pokok": 155531324.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "beban_bunga": null,
-    "laba_sebelum_pajak": -2259562186.0,
-    "beban_pajak": -915950348.0,
-    "laba_bersih": -3175512534.0,
-    "laba_induk": -3175512534.0,
-    "laba_komprehensif": null,
-    "eps_basic": -4.76,
+    "laba_sebelum_pajak": -554997291.0,
+    "beban_pajak": null,
+    "laba_bersih": -554997291.0,
+    "laba_induk": -554997291.0,
+    "eps_basic": -0.84,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 181420690.0,
-    "dividen_dibayar": null,
-    "kas_akhir_periode": null
-  },
-  "rasio": {
-    "roe": -0.07441338429720147,
-    "roa": -0.06495041521374673,
-    "der": 0.14569528235212742,
-    "dar": 0.12716756767385226,
-    "current_ratio": 10.505099429952436,
-    "margin_laba_bersih": -0.5782770196310069,
-    "margin_laba_kotor": null,
-    "margin_laba_operasi": null,
-    "quick_ratio": 3.925905451350131
-  },
-  "quarterly": {
-    "revenue": {
-      "2024-Q1": 924340536.0,
-      "2024-Q2": 2889122344.0,
-      "2024-Q4": 10185970833.0,
-      "2025-Q4": 5491334475.0
-    },
-    "eps": {
-      "2024-Q1": -8.59,
-      "2024-Q2": -3.65,
-      "2024-Q4": -8.73,
-      "2025-Q4": -4.76
-    },
-    "net_income": {
-      "2024-Q1": -1411428824.0,
-      "2024-Q2": -2436784981.0,
-      "2024-Q4": -5818402956.0,
-      "2025-Q4": -3175512534.0
-    },
-    "aset": {
-      "2024-Q1": 59398562000.0,
-      "2024-Q2": 59289869326.0,
-      "2024-Q4": 55699398593.0,
-      "2025-Q4": 48891335391.0
-    }
-  },
-  "riwayat": {
-    "eps": {
-      "2023": 0.04,
-      "2024": -8.73,
-      "2025": -4.76
-    },
-    "revenue": {
-      "2023": 16156261887.0,
-      "2024": 10185970833.0,
-      "2025": 5491334475.0
-    },
-    "net_income": {
-      "2023": 28782267.0,
-      "2024": -5818402956.0,
-      "2025": -3175512534.0
-    },
-    "ekuitas": {
-      "2023": 51153519453.0,
-      "2024": 45559224932.0,
-      "2025": 42673943189.0
-    }
-  },
-  "rasio_kunci": {
-    "pe": -59.20344456404736,
-    "pb": 3.4826107,
-    "ps": 31.930136,
-    "roe": -0.044770002,
-    "eps": 0.04,
-    "de": 0.02834,
-    "margin_net": -0.41568002,
-    "current_ratio": 18.395,
-    "roa": -0.04079,
-    "bv": 63.17,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2023",
-    "eps_reliable": true,
-    "eps_period": "2023-audit"
-  },
-  "statistik": {
-    "market_cap": 161351319552,
-    "enterprise_value": 146700615680,
-    "shares_outstanding": 733415103,
-    "free_float_pct": 52.51182603475784
-  },
-  "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.189,
-    "vol_trend": 0.555,
-    "price_chg_20d": -23.61
-  },
-  "harga": 220.0,
-  "sektor": "Technology",
-  "industri": "Scientific & Technical Instruments",
-  "update_bv": "2026-10-11 17:37"
+    "capex": null,
+    "dividen_dibayar": null
+  }
 }

@@ -3,113 +3,94 @@
   "nama": "PT Raharja Energi Cepu Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas E&P",
-  "harga": 4040.0,
-  "update": "2026-10-11 12:07",
-  "periode_terbaru": "2026-tw2",
+  "harga": 2510.0,
+  "update": "2026-10-21 11:08",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 29.351933,
-    "pb": 192380.95,
-    "ps": 220217.19,
-    "roe": 0.25684310193779725,
-    "eps": 137.64,
-    "de": 2.9438594228789148,
-    "margin_net": 0.5673445511673313,
-    "current_ratio": 2.3854214477050326,
-    "roa": 0.062774915259306,
-    "bv": 0.02,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "pe": 0.4198236080267631,
+    "pb": 0.12811851116142012,
+    "ps": 0.15464002881863997,
+    "roe": 0.07629306017567548,
+    "eps": 5978.701416524416,
+    "de": 1.3202896114888047,
+    "margin_net": 0.3683452427686771,
+    "current_ratio": 6.291462140223058,
+    "roa": 0.030996308305831825,
+    "bv": 19591.236092632862
   },
   "quarterly": {
     "revenue": {
-      "2024-Q4": 57743447.0,
-      "2025-Q1": 13246815.0,
-      "2025-Q2": 25152598.0,
-      "2025-Q3": 37611591.0,
-      "2025-Q4": 49313956.0,
-      "2026-Q1": 11017175.0,
-      "2026-Q2": 25647732.0
+      "2026-Q1": 11017175000000.0
     },
     "eps": {
-      "2024-Q4": 5500.0,
-      "2025-Q1": 2200.0,
-      "2025-Q2": 3000.0,
-      "2025-Q3": 4300.0,
-      "2025-Q4": 5600.0,
-      "2026-Q1": 1494.6753541311,
-      "2026-Q2": 5359.41526168516
+      "2026-Q1": 1494.68
     },
     "net_income": {
-      "2024-Q4": 13870363.0,
-      "2025-Q1": 5924233.0,
-      "2025-Q2": 7648514.0,
-      "2025-Q3": 11766263.0,
-      "2025-Q4": 15264750.0,
-      "2026-Q1": 4058124.0,
-      "2026-Q2": 14551101.0
-    }
+      "2026-Q1": 4058124000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2024": 5500.0,
       "2025": 5600.0
     },
     "revenue_per_share": {
-      "2024": 57743447.0,
-      "2025": 49313956.0
+      "2025": 49313956000000.0
     }
   },
   "statistik": {
-    "market_cap": 10968816943104,
-    "enterprise_value": 10968922849280,
+    "market_cap": 6814785077248,
+    "enterprise_value": 7249299243008,
     "shares_outstanding": 2715053800,
     "free_float_pct": 31.315999999705348
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.8,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2356,
-    "vol_trend": 0.392,
-    "price_chg_20d": -11.79
+    "cmf": -0.1165,
+    "vol_trend": 0.5,
+    "price_chg_20d": -34.56
   },
   "neraca": {
-    "aset": 231798019.0,
-    "aset_lancar": 74221594.0,
-    "kas": 59494868.0,
-    "piutang_usaha": 5756248.0,
+    "aset": 130922817.0,
+    "aset_lancar": 89704548.0,
+    "kas": 82848162.0,
+    "piutang_usaha": 3532477.0,
     "persediaan": null,
-    "aset_tetap": 1166502.0,
-    "liabilitas": 166780402.0,
-    "liabilitas_jangka_pendek": 31114667.0,
-    "utang_usaha": 5756248.0,
-    "utang_bank": 21337680.0,
-    "ekuitas": 56653657.0,
-    "ekuitas_induk": 56653657.0,
+    "aset_tetap": 125001.0,
+    "liabilitas": 70227868.0,
+    "liabilitas_jangka_pendek": 14258140.0,
+    "liabilitas_jangka_panjang": 55969728.0,
+    "utang_usaha": 3532477.0,
+    "utang_bank": 4500000.0,
+    "ekuitas": 53191260.0,
+    "ekuitas_induk": 53191260.0,
     "modal_saham": null,
-    "saldo_laba": 36184.0
+    "saldo_laba": 24865.0
   },
   "laba_rugi": {
-    "pendapatan": 25647732.0,
-    "beban_pokok": 9709263.0,
+    "pendapatan": 11017175.0,
+    "beban_pokok": 4743527.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 22142643.0,
-    "beban_pajak": -6598628.0,
-    "laba_bersih": 14551101.0,
-    "laba_induk": 14551101.0,
-    "eps_basic": 5359.41526168516,
+    "laba_sebelum_pajak": 6772510.0,
+    "beban_pajak": -2681743.0,
+    "laba_bersih": 4058124.0,
+    "laba_induk": 4058124.0,
+    "eps_basic": 0.0014946753541311,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 1047994.0,
+    "capex": 3061.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

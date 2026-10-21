@@ -3,84 +3,82 @@
   "nama": "PT Woori Finance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 240.0,
-  "update": "2026-10-11 12:53",
+  "harga": 226.0,
+  "update": "2026-10-21 11:38",
   "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 6.263048,
-    "pb": 0.52012223,
-    "ps": 1.7452931,
+    "pe": 5.651866006376414e-06,
+    "pb": 0.48978167649352244,
+    "ps": 1.3700852302162361e-05,
     "roe": 0.0548296372639636,
-    "eps": 38.32,
+    "eps": 39986793.696989216,
     "de": 1.587830732099294,
-    "margin_net": null,
+    "margin_net": 1.9880371260965108,
     "current_ratio": null,
     "roa": 0.021187489809074506,
-    "bv": 461.43,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 461.430083742606
   },
   "quarterly": {
-    "revenue": {},
+    "revenue": {
+      "2024-Q1": 6334406224000000.0,
+      "2024-Q2": 4981781144000000.0,
+      "2024-Q3": 5096992661000000.0,
+      "2026-Q1": 1.8997060662e+16,
+      "2026-Q2": 1.5032585833e+16
+    },
     "eps": {
-      "2024-Q1": 8.42,
-      "2024-Q2": 15.406783820636546,
-      "2024-Q3": 23.106420626992847,
-      "2024-Q4": 33.98,
-      "2025-Q1": 7.85,
-      "2025-Q2": 13.528,
-      "2025-Q3": 19.38,
-      "2025-Q4": 26.55,
-      "2026-Q1": 12.37,
-      "2026-Q2": 25.3
+      "2024-Q1": 8420000.0,
+      "2024-Q2": 6986783.82,
+      "2024-Q3": 7699636.81,
+      "2026-Q1": 12370000.0,
+      "2026-Q2": 12930000.0
     },
     "net_income": {
-      "2024-Q1": 22514161322.0,
-      "2024-Q2": 41197668480.0,
-      "2024-Q3": 61786461589.0,
-      "2024-Q4": 88188127071.0,
-      "2025-Q1": 20996364403.0,
-      "2025-Q2": 36172814366.0,
-      "2025-Q3": 51813451349.0,
-      "2025-Q4": 70994805769.0,
-      "2026-Q1": 33092919847.0,
-      "2026-Q2": 67652200620.0
-    }
+      "2024-Q1": 2.2514161322e+16,
+      "2024-Q2": 1.8683507158e+16,
+      "2024-Q3": 2.0588793109e+16,
+      "2026-Q1": 3.3092919847e+16,
+      "2026-Q2": 3.4559280773e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 19.41,
-      "2023": 32.41,
-      "2024": 33.98,
-      "2025": 26.55
+      "2022": 19410000.0,
+      "2023": 32410000.0,
+      "2025": 26550000.0
     },
-    "revenue_per_share": {}
+    "revenue_per_share": {
+      "2022": 8084631367000000.0,
+      "2023": 1.7976127322e+16,
+      "2025": 3.9405072306e+16
+    }
   },
   "statistik": {
-    "market_cap": 641758855168,
-    "enterprise_value": 2496460488704,
+    "market_cap": 604322922496,
+    "enterprise_value": 2459024490496,
     "shares_outstanding": 2673995362,
     "free_float_pct": 10.185000014222164
   },
   "akumulasi": {
-    "score": 4.1,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.063,
-    "vol_trend": 0.33,
-    "price_chg_20d": -2.44
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0777,
+    "vol_trend": 1.101,
+    "price_chg_20d": -8.87
   },
   "neraca": {
     "aset": 3193025753859.0,
     "aset_lancar": null,
     "kas": 21413673248.0,
-    "piutang_usaha": null,
+    "piutang_usaha": 2398786463561.0,
     "persediaan": null,
     "aset_tetap": 113642895761.0,
     "liabilitas": 1959163850044.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": 1874282539590.0,
     "ekuitas": 1233861903815.0,
@@ -89,7 +87,7 @@
     "saldo_laba": 687590321558.0
   },
   "laba_rugi": {
-    "pendapatan": null,
+    "pendapatan": 34029646495.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
@@ -107,6 +105,5 @@
     "arus_kas_pendanaan": null,
     "capex": 5457134897.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

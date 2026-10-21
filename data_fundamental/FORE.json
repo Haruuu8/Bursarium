@@ -3,69 +3,61 @@
   "nama": "PT Fore Kopi Indonesia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 760.0,
-  "update": "2026-10-11 12:09",
+  "harga": 575.0,
+  "update": "2026-10-21 11:09",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 64.08095,
-    "pb": 9.188065,
-    "ps": 3.684277,
+    "pe": 45.39001372465397,
+    "pb": 6.951473511390615,
+    "ps": 2.55143750149541,
     "roe": 0.07657492189317033,
-    "eps": 11.86,
+    "eps": 12.667984713291327,
     "de": 0.707179150928853,
     "margin_net": 0.056211428288455774,
     "current_ratio": 1.2264354807675744,
     "roa": 0.044854649174638155,
-    "bv": 82.72,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 82.71627577344728
   },
   "quarterly": {
     "revenue": {
-      "2025-Q2": 662372756900.0,
-      "2025-Q3": 1041752822393.0,
-      "2025-Q4": 1497134772364.0,
-      "2026-Q1": 444458712375.0,
-      "2026-Q2": 1004934782303.0
+      "2026-Q1": 4.44458712375e+17,
+      "2026-Q2": 5.6047606992800006e+17
     },
     "eps": {
-      "2025-Q2": 5.58,
-      "2025-Q3": 7.51,
-      "2025-Q4": 10.95,
-      "2026-Q1": 1.06,
-      "2026-Q2": 6.33
+      "2026-Q1": 1060000.0,
+      "2026-Q2": 5270000.0
     },
     "net_income": {
-      "2025-Q2": 42031093163.0,
-      "2025-Q3": 60107182020.0,
-      "2025-Q4": 90133042112.0,
-      "2026-Q1": 9431593245.0,
-      "2026-Q2": 56488819450.0
-    }
+      "2026-Q1": 9431593245000000.0,
+      "2026-Q2": 4.7057226205e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 10.95
+      "2025": 10950000.0
     },
     "revenue_per_share": {
-      "2025": 1497134772364.0
+      "2025": 1.497134772364e+18
     }
   },
   "statistik": {
-    "market_cap": 6777952796672,
-    "enterprise_value": 6670186446848,
+    "market_cap": 5128056209408,
+    "enterprise_value": 5332432584704,
     "shares_outstanding": 8918359270,
     "free_float_pct": 15.078999996374895
   },
   "akumulasi": {
-    "score": 5.5,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.035,
-    "vol_trend": 0.484,
-    "price_chg_20d": -1.94
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2215,
+    "vol_trend": 0.622,
+    "price_chg_20d": -25.47
   },
   "neraca": {
     "aset": 1259374902924.0,
@@ -76,6 +68,7 @@
     "aset_tetap": 7737624982.0,
     "liabilitas": 521681438100.0,
     "liabilitas_jangka_pendek": 377515098611.0,
+    "liabilitas_jangka_panjang": 144166339489.0,
     "utang_usaha": 12301862580.0,
     "utang_bank": 9981999011.0,
     "ekuitas": 737693464824.0,
@@ -102,6 +95,5 @@
     "arus_kas_pendanaan": null,
     "capex": 7737624982.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

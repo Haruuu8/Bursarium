@@ -1,77 +1,58 @@
 {
   "kode": "CASH",
-  "nama": "PT Cashlez Worldwide Indonesia Tbk",
-  "sektor": "Industrials",
-  "industri": "Business Equipment & Supplies",
-  "harga": 284.0,
-  "update": "2026-10-11 12:19",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-21 11:15",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": -7.9314103,
-    "ps": 5.057237,
+    "pb": null,
+    "ps": null,
     "roe": 0.7672987840308725,
     "eps": null,
     "de": -4.497738947333108,
     "margin_net": -0.46431925791761414,
     "current_ratio": 1.0003814589451645,
     "roa": -0.2038631150583964,
-    "bv": -21.11,
-    "bv_src": "ekuitas/penuh",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": null
+    "bv": null
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 55912506952.0,
-      "2024-Q4": 138343800644.0,
-      "2025-Q2": 58530698028.0,
-      "2025-Q4": 110185952915.0,
-      "2026-Q2": 84683181379.0
-    },
-    "eps": {
-      "2024-Q2": -11.177907826375511,
-      "2024-Q4": -23.57,
-      "2025-Q2": -14.14,
-      "2025-Q4": -41.31,
-      "2026-Q2": -27.47
-    },
-    "net_income": {
-      "2024-Q2": -15996989117.0,
-      "2024-Q4": -33730013022.0,
-      "2025-Q2": -20229929999.0,
-      "2025-Q4": -59116823046.0,
-      "2026-Q2": -39320031936.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": -7.01,
-      "2023": -19.78,
-      "2024": -23.57,
-      "2025": -41.31
+      "2022": -7010000.0,
+      "2023": -19780000.0,
+      "2025": -41310000.0
     },
     "revenue_per_share": {
-      "2022": 128979803706.0,
-      "2023": 194879027696.0,
-      "2024": 138343800644.0,
-      "2025": 110185952915.0
+      "2022": 1.28979803706e+17,
+      "2023": 1.94879027696e+17,
+      "2025": 1.10185952915e+17
     }
   },
   "statistik": {
-    "market_cap": 689495801856,
-    "enterprise_value": 412987654144,
-    "shares_outstanding": 2427802216,
-    "free_float_pct": 5.898273675519209
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.3904,
-    "vol_trend": 0.995,
-    "price_chg_20d": 24.56
+    "score": 2.6,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.13,
+    "vol_trend": 0.419,
+    "price_chg_20d": -14.29
   },
   "neraca": {
     "aset": 192874674385.0,
@@ -82,6 +63,7 @@
     "aset_tetap": 21333019639.0,
     "liabilitas": 230485493695.0,
     "liabilitas_jangka_pendek": 105573203907.0,
+    "liabilitas_jangka_panjang": 124912289788.0,
     "utang_usaha": 44786571515.0,
     "utang_bank": 7916933516.0,
     "ekuitas": -51244746837.0,
@@ -108,6 +90,5 @@
     "arus_kas_pendanaan": null,
     "capex": 1800021802.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

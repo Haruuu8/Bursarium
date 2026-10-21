@@ -3,122 +3,107 @@
   "nama": "PT Mitra Komunikasi Nusantara Tbk",
   "sektor": "Technology",
   "industri": "Communication Equipment",
-  "harga": 1.0,
-  "update": "2026-10-11 15:39",
-  "periode_terbaru": "2026-tw2",
+  "harga": 4.0,
+  "update": "2026-10-21 13:25",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": -0.4032258,
-    "ps": 0.0701308,
-    "roe": 0.3037992238445315,
-    "eps": null,
-    "de": -107.4697172397966,
-    "margin_net": -0.05461790625790958,
-    "current_ratio": 0.5878041470553019,
-    "roa": -0.002853411259749935,
-    "bv": -2.48,
-    "bv_src": "ekuitas/penuh",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2025-audit"
+    "pb": null,
+    "ps": 0.025314716595309605,
+    "roe": 0.19621674580866996,
+    "eps": -0.006945038126583754,
+    "de": -91.64188931597695,
+    "margin_net": -43.952917979521914,
+    "current_ratio": 0.0029801590057873194,
+    "roa": -0.002164805826288655,
+    "bv": -0.008848681719239993
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 237875930.0,
-      "2024-Q2": 237875930.0,
-      "2024-Q3": 237875930.0,
-      "2024-Q4": 237875930.0,
-      "2025-Q2": 1145773874.0,
-      "2025-Q3": 3688737835.0,
-      "2025-Q4": 3688737835.0,
-      "2026-Q2": 75881920838.0
+      "2024-Q1": 237875930000000.0,
+      "2026-Q1": 40687400000000.0
     },
     "eps": {
-      "2024-Q1": -1.2537970847272728,
-      "2024-Q2": 1.39,
-      "2024-Q3": -1.48,
-      "2024-Q4": 1.67,
-      "2025-Q2": -480000.0,
-      "2025-Q3": 490000.0,
-      "2025-Q4": 280000.0,
-      "2026-Q1": -330000.0,
-      "2026-Q2": -750000.0
+      "2024-Q1": -1253797.08,
+      "2024-Q2": 2643797.08,
+      "2024-Q3": -2870000.0,
+      "2026-Q1": -330000.0
     },
     "net_income": {
-      "2024-Q1": -6895883966.0,
-      "2024-Q2": -7631852927.0,
-      "2024-Q3": -8113046341.0,
-      "2024-Q4": -9193342902.0,
-      "2025-Q2": -2658329457.0,
-      "2025-Q3": 2685599737.0,
-      "2025-Q4": -1535289178.0,
-      "2026-Q1": -1788329955.0,
-      "2026-Q2": -4144511639.0
-    }
+      "2024-Q1": -6895883966000000.0,
+      "2024-Q2": -735968961000000.0,
+      "2024-Q3": -481193414000000.0,
+      "2026-Q1": -1788329955000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": -5.1,
-      "2023": 2.38,
-      "2024": 1.67,
+      "2021": -4760000.0,
+      "2022": -5100000.0,
+      "2023": 2380000.0,
       "2025": 280000.0
     },
     "revenue_per_share": {
-      "2022": 2044320576210.0,
-      "2023": 1595288685747.0,
-      "2024": 237875930.0,
-      "2025": 3688737835.0
+      "2021": 2.016805522469e+18,
+      "2022": 2.04432057621e+18,
+      "2023": 1.595288685747e+18,
+      "2025": 3688737835000000.0
     }
   },
   "statistik": {
-    "market_cap": 5500000256,
-    "enterprise_value": 358719160320,
-    "shares_outstanding": 5500000000,
-    "free_float_pct": 71.11699999999999
+    "market_cap": 4119959961600,
+    "enterprise_value": 369719181312,
+    "shares_outstanding": 1029990000000,
+    "free_float_pct": 0.37975465781221174
   },
   "akumulasi": {
-    "score": 5.0,
+    "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
     "cmf": 0.0,
     "vol_trend": 1.0,
-    "price_chg_20d": 0.0
+    "price_chg_20d": 200.0
   },
   "neraca": {
-    "aset": 1452476093251.0,
-    "aset_lancar": 822572201061.0,
-    "kas": 22114114814.0,
-    "piutang_usaha": 107186364809.0,
-    "persediaan": 649257267698.0,
-    "aset_tetap": 125863803014.0,
-    "liabilitas": 1466131112199.0,
-    "liabilitas_jangka_pendek": 1399398430892.0,
-    "utang_usaha": 107186364809.0,
-    "utang_bank": 281563865252.0,
-    "ekuitas": -13642271980.0,
-    "ekuitas_induk": -13642271980.0,
+    "aset": 826092545245.0,
+    "aset_lancar": 2486670003.0,
+    "kas": 1130003.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 1243273.0,
+    "liabilitas": 835229098929.0,
+    "liabilitas_jangka_pendek": 834408499067.0,
+    "liabilitas_jangka_panjang": 820599862.0,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": -9114053684.0,
+    "ekuitas_induk": -9114053684.0,
     "modal_saham": null,
     "saldo_laba": 1500000000.0
   },
   "laba_rugi": {
-    "pendapatan": 75881920838.0,
-    "beban_pokok": 60165058510.0,
+    "pendapatan": 40687400.0,
+    "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -4522552796.0,
-    "beban_pajak": 377991232.0,
-    "laba_bersih": -4144511639.0,
-    "laba_induk": -4144511639.0,
-    "eps_basic": -750000.0,
+    "laba_sebelum_pajak": -1795116462.0,
+    "beban_pajak": 6786507.0,
+    "laba_bersih": -1788329955.0,
+    "laba_induk": -1788329955.0,
+    "eps_basic": -0.33,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 125863803014.0,
+    "capex": null,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

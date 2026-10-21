@@ -3,43 +3,38 @@
   "nama": "PT Esa Medika Mandiri Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 402.0,
-  "update": "2026-10-11 12:09",
+  "harga": 406.0,
+  "update": "2026-10-21 11:10",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.6561193,
-    "ps": 0.07805831,
+    "pb": 0.3776506593714434,
+    "ps": 0.30437691080689466,
     "roe": -0.28434613158762123,
-    "eps": null,
+    "eps": -611.3826445674345,
     "de": 3.5205445342696122,
     "margin_net": -0.45835162727681134,
     "current_ratio": 0.8440252346724849,
     "roa": -0.06198669369085997,
-    "bv": 86.34,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": null
+    "bv": 1075.0676317518971
   },
   "quarterly": {
-    "revenue": {
-      "2026-Q2": 65345044009.0
-    },
-    "eps": {
-      "2026-Q2": -26.77
-    },
-    "net_income": {
-      "2026-Q2": -29951007256.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {},
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 39387131904,
-    "enterprise_value": 745573974016,
+    "market_cap": 39779045376,
+    "enterprise_value": 769973944320,
     "shares_outstanding": 97977944,
     "free_float_pct": 373.55346015425675
   },
@@ -47,9 +42,9 @@
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4305,
-    "vol_trend": 1.572,
-    "price_chg_20d": 15.52
+    "cmf": 0.481,
+    "vol_trend": 1.911,
+    "price_chg_20d": 15.93
   },
   "neraca": {
     "aset": 483184462223.0,
@@ -60,6 +55,7 @@
     "aset_tetap": 243925136912.0,
     "liabilitas": 370829222477.0,
     "liabilitas_jangka_pendek": 267733148034.0,
+    "liabilitas_jangka_panjang": 103096074443.0,
     "utang_usaha": 50010716386.0,
     "utang_bank": 132843629166.0,
     "ekuitas": 105332916220.0,
@@ -86,6 +82,5 @@
     "arus_kas_pendanaan": null,
     "capex": 3751233414.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

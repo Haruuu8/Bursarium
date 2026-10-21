@@ -3,43 +3,38 @@
   "nama": "PT Bach Multi Global Tbk.",
   "sektor": "Industrials",
   "industri": "Electrical Equipment & Parts",
-  "harga": 348.0,
-  "update": "2026-10-11 12:09",
+  "harga": 234.0,
+  "update": "2026-10-21 11:10",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 8.927655,
-    "pb": 1.9695735,
-    "ps": 0.74960077,
+    "pe": 6.151285685026519,
+    "pb": 1.559133615935437,
+    "ps": 0.5325048939216916,
     "roe": 0.1267323366016543,
-    "eps": 38.98,
+    "eps": 38.04082788247075,
     "de": 2.1469948265695096,
     "margin_net": 0.08656806417200177,
     "current_ratio": 1.046686663606451,
     "roa": 0.04027090712862557,
-    "bv": 176.69,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2026-tw2"
+    "bv": 150.08335245187212
   },
   "quarterly": {
-    "revenue": {
-      "2026-Q2": 897415808671.0
-    },
-    "eps": {
-      "2026-Q2": 22.0
-    },
-    "net_income": {
-      "2026-Q2": 77687549314.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {},
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 1421381730304,
-    "enterprise_value": 1873309335552,
+    "market_cap": 955756642304,
+    "enterprise_value": 1498610925568,
     "shares_outstanding": 4084430000,
     "free_float_pct": 12.729530925979878
   },
@@ -47,9 +42,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3226,
-    "vol_trend": 0.374,
-    "price_chg_20d": -19.82
+    "cmf": -0.3033,
+    "vol_trend": 0.618,
+    "price_chg_20d": -35.83
   },
   "neraca": {
     "aset": 1929123400818.0,
@@ -60,6 +55,7 @@
     "aset_tetap": 93972824.0,
     "liabilitas": 1316118450418.0,
     "liabilitas_jangka_pendek": 1228837732090.0,
+    "liabilitas_jangka_panjang": 87280718328.0,
     "utang_usaha": 354479211698.0,
     "utang_bank": 581901459674.0,
     "ekuitas": 613004947255.0,
@@ -71,7 +67,7 @@
     "pendapatan": 897415808671.0,
     "beban_pokok": 701409589047.0,
     "laba_kotor": null,
-    "beban_operasi": null,
+    "beban_operasi": 437911895.0,
     "laba_operasi": null,
     "laba_sebelum_pajak": 93056017978.0,
     "beban_pajak": 8618820931.0,
@@ -85,7 +81,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 93972824.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 50000000000.0
+  }
 }

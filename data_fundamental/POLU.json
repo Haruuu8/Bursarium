@@ -1,54 +1,62 @@
 {
   "kode": "POLU",
-  "nama": null,
+  "nama": "PT Golden Flower Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Apparel Manufacturing",
-  "harga": 14650.0,
-  "update": "2026-10-11 17:08",
-  "periode_terbaru": "2026-tw2",
+  "harga": 12000.0,
+  "update": "2026-10-21 14:13",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": -708.0715321411309,
-    "pb": 89.9115,
-    "ps": 66.2559,
-    "roe": -0.12219,
-    "eps": null,
-    "de": 0.39121,
-    "margin_net": -0.093760006,
-    "current_ratio": 1.299,
-    "roa": -0.06574,
-    "bv": 162.94,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": null
+    "pe": null,
+    "pb": 76.53813922874595,
+    "ps": 6.047681979161596e-05,
+    "roe": -0.0022703956497791664,
+    "eps": -708998.976,
+    "de": 1.0587760431496904,
+    "margin_net": -0.005884752165119869,
+    "current_ratio": 1.2853365478359808,
+    "roa": -0.0011027890368812152,
+    "bv": 156.78457983066667
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 39891357024.0,
-      "2024-Q2": 76580583865.0,
-      "2024-Q3": 103450566636.0,
-      "2026-Q2": 86944924326.0
+      "2024-Q1": 3.9891357024e+16,
+      "2024-Q2": 3.6689226841e+16,
+      "2024-Q3": 2.6869982771e+16,
+      "2026-Q1": 4.5366782408e+16
     },
     "eps": {
-      "2024-Q1": 5.0,
-      "2024-Q2": 8.0,
-      "2024-Q3": -350000.0,
-      "2026-Q2": 5.8
+      "2024-Q1": 5000000.0,
+      "2024-Q2": 3000000.0,
+      "2024-Q3": -8350000.0,
+      "2026-Q1": -360000.0
     },
     "net_income": {
-      "2024-Q1": 3924425903.0,
-      "2024-Q2": 5965450186.0,
-      "2024-Q3": -264776961.0,
-      "2026-Q2": 4348400385.0
-    }
+      "2024-Q1": 3924425903000000.0,
+      "2024-Q2": 2041024283000000.0,
+      "2024-Q3": -6230227147000000.0,
+      "2026-Q1": -266972271000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {},
-    "revenue_per_share": {}
+    "eps": {
+      "2021": 69000000.0,
+      "2022": 8000000.0,
+      "2023": -20000000.0,
+      "2025": -9250000.0
+    },
+    "revenue_per_share": {
+      "2021": 1.0478248186e+17,
+      "2022": 1.26547485872e+17,
+      "2023": 8.7603006966e+16,
+      "2025": 1.56480922291e+17
+    }
   },
   "statistik": {
-    "market_cap": 10987500470272,
-    "enterprise_value": 10928561061888,
+    "market_cap": 9000000159744,
+    "enterprise_value": 9034810785792,
     "shares_outstanding": 750000000,
     "free_float_pct": 11.453000000000001
   },
@@ -56,38 +64,39 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1917,
-    "vol_trend": 0.669,
-    "price_chg_20d": -15.56
+    "cmf": -0.3476,
+    "vol_trend": 0.387,
+    "price_chg_20d": -24.1
   },
   "neraca": {
-    "aset": 261801097552.0,
-    "aset_lancar": 141662939928.0,
-    "kas": 106746415244.0,
-    "piutang_usaha": 9384396572.0,
-    "persediaan": 21359725395.0,
-    "aset_tetap": 24822058612.0,
-    "liabilitas": 139597290023.0,
-    "liabilitas_jangka_pendek": 109035590182.0,
-    "utang_usaha": 9384396572.0,
-    "utang_bank": 43751873690.0,
-    "ekuitas": 122203807529.0,
-    "ekuitas_induk": 122203807529.0,
+    "aset": 242088252668.0,
+    "aset_lancar": 120719463007.0,
+    "kas": 84095859152.0,
+    "piutang_usaha": 19163524764.0,
+    "persediaan": 11213051238.0,
+    "aset_tetap": 25835132048.0,
+    "liabilitas": 124499817795.0,
+    "liabilitas_jangka_pendek": 93920509154.0,
+    "liabilitas_jangka_panjang": 30579308641.0,
+    "utang_usaha": 19163524764.0,
+    "utang_bank": 38658747000.0,
+    "ekuitas": 117588434873.0,
+    "ekuitas_induk": 117588434873.0,
     "modal_saham": null,
     "saldo_laba": 1798295075.0
   },
   "laba_rugi": {
-    "pendapatan": 86944924326.0,
-    "beban_pokok": 77800104115.0,
+    "pendapatan": 45366782408.0,
+    "beban_pokok": 41538914268.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 5463935905.0,
-    "beban_pajak": -1115535520.0,
-    "laba_bersih": 4348400385.0,
-    "laba_induk": 4348400385.0,
-    "eps_basic": 5.8,
-    "eps_diluted": 5.8
+    "laba_sebelum_pajak": -266972271.0,
+    "beban_pajak": -2413457860.0,
+    "laba_bersih": -266972271.0,
+    "laba_induk": -266972271.0,
+    "eps_basic": -0.36,
+    "eps_diluted": -0.36
   },
   "arus_kas": {
     "arus_kas_operasi": null,
@@ -95,6 +104,5 @@
     "arus_kas_pendanaan": null,
     "capex": 23400000.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

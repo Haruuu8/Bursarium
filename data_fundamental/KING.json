@@ -3,75 +3,56 @@
   "nama": "PT Hoffmen Cleanindo Tbk",
   "sektor": "Industrials",
   "industri": "Specialty Business Services",
-  "harga": 382.0,
-  "update": "2026-10-11 11:37",
+  "harga": 304.0,
+  "update": "2026-10-21 10:52",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 14.244696,
-    "ps": 8.102371,
+    "pe": 0.0006020395368446101,
+    "pb": 11.336168523847345,
+    "ps": 5.884914957426864,
     "roe": 0.009414804037009016,
-    "eps": 2.16,
+    "eps": 504950.22568337433,
     "de": 1.9459603867622237,
     "margin_net": 0.009774964262763685,
     "current_ratio": 0.766447362758894,
     "roa": 0.0031954807518961978,
-    "bv": 26.82,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 26.816820812119193
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 140646077913.0,
-      "2024-Q4": 215116835834.0,
-      "2025-Q2": 66924472262.0,
-      "2025-Q4": 122383599397.0,
-      "2026-Q2": 67194106837.0
-    },
-    "eps": {
-      "2024-Q2": 7659397606.0,
-      "2024-Q4": 4.46,
-      "2025-Q2": 1906962818.0,
-      "2025-Q4": 2.16,
-      "2026-Q2": 659650100.0
-    },
-    "net_income": {
-      "2024-Q2": 7669137671.0,
-      "2024-Q4": 11600195596.0,
-      "2025-Q2": 1906337796.0,
-      "2025-Q4": 5610037647.0,
-      "2026-Q2": 656819993.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
       "2022": 680000.0,
-      "2023": 1.0,
-      "2024": 4.46,
-      "2025": 2.16
+      "2023": 1000000.0,
+      "2025": 2160000.0
     },
     "revenue_per_share": {
-      "2022": 161856738362.0,
-      "2023": 213107450464.0,
-      "2024": 215116835834.0,
-      "2025": 122383599397.0
+      "2022": 1.61856738362e+17,
+      "2023": 2.13107450464e+17,
+      "2025": 1.22383599397e+17
     }
   },
   "statistik": {
-    "market_cap": 993782071296,
-    "enterprise_value": 1076414447616,
+    "market_cap": 790863216640,
+    "enterprise_value": 805856018432,
     "shares_outstanding": 2601523713,
     "free_float_pct": 20.087999982032066
   },
   "akumulasi": {
-    "score": 2.2,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1233,
-    "vol_trend": 7.585,
-    "price_chg_20d": -1.55
+    "cmf": -0.1372,
+    "vol_trend": 2.889,
+    "price_chg_20d": -33.49
   },
   "neraca": {
     "aset": 205546533995.0,
@@ -82,6 +63,7 @@
     "aset_tetap": 20908380156.0,
     "liabilitas": 135759138755.0,
     "liabilitas_jangka_pendek": 99861370107.0,
+    "liabilitas_jangka_panjang": 35897768648.0,
     "utang_usaha": 13151309618.0,
     "utang_bank": 66132080814.0,
     "ekuitas": 69764595250.0,
@@ -108,6 +90,5 @@
     "arus_kas_pendanaan": null,
     "capex": 2305084475.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

@@ -3,109 +3,90 @@
   "nama": "PT Graha Mitra Asia Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 45.0,
-  "update": "2026-10-11 11:42",
-  "periode_terbaru": "2026-tw2",
+  "harga": 34.0,
+  "update": "2026-10-21 10:57",
+  "periode_terbaru": "2025-audit",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 1.0458549,
-    "ps": 7.206852,
-    "roe": 0.007051147396729044,
-    "eps": 1.49,
-    "de": 0.17765504264420187,
-    "margin_net": 0.12564879694834183,
-    "current_ratio": 8.469720812978906,
-    "roa": 0.0059874472077129015,
-    "bv": 43.03,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "pe": 22.767709213146187,
+    "pb": 0.795813300853704,
+    "ps": 4.923060507920672,
+    "roe": 0.03495359561225411,
+    "eps": 1.493343036038436,
+    "de": 0.17541030720369552,
+    "margin_net": 0.216229944867623,
+    "current_ratio": 8.734879705952142,
+    "roa": 0.02973735673239825,
+    "bv": 42.723588514450185
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 16374630192.0,
-      "2024-Q4": 48056288137.0,
-      "2025-Q2": 17623388446.0,
-      "2025-Q4": 39557972996.0,
-      "2026-Q2": 13830331505.0
-    },
-    "eps": {
-      "2024-Q2": 372961.4144186708,
-      "2024-Q4": 1.84,
-      "2025-Q2": 620000.0,
-      "2025-Q4": 1.49,
-      "2026-Q2": 300000.0
-    },
-    "net_income": {
-      "2024-Q2": 2136260397.0,
-      "2024-Q4": 10544941994.0,
-      "2025-Q2": 3529037834.0,
-      "2025-Q4": 8553618320.0,
-      "2026-Q2": 1737764515.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2023": 1.82472274741063,
-      "2024": 1.84,
-      "2025": 1.49
+      "2023": 1824722.75,
+      "2025": 1490000.0
     },
     "revenue_per_share": {
-      "2023": 45420658133.0,
-      "2024": 48056288137.0,
-      "2025": 39557972996.0
+      "2023": 4.5420658133e+16,
+      "2025": 3.9557972996e+16
     }
   },
   "statistik": {
-    "market_cap": 257752449024,
-    "enterprise_value": 278044835840,
+    "market_cap": 194746286080,
+    "enterprise_value": 220766519296,
     "shares_outstanding": 5727832195,
     "free_float_pct": 23.09999999921436
   },
   "akumulasi": {
-    "score": 8.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.2438,
-    "vol_trend": 1.937,
-    "price_chg_20d": 21.62
+    "score": 4.4,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0085,
+    "vol_trend": 1.12,
+    "price_chg_20d": -10.26
   },
   "neraca": {
-    "aset": 290234628334.0,
-    "aset_lancar": 197068878522.0,
-    "kas": 2441410489.0,
-    "piutang_usaha": 1922561264.0,
-    "persediaan": 121853296866.0,
-    "aset_tetap": 3953590091.0,
-    "liabilitas": 43783318040.0,
-    "liabilitas_jangka_pendek": 23267458618.0,
-    "utang_usaha": 1922561264.0,
-    "utang_bank": 2302065909.0,
-    "ekuitas": 246451310294.0,
-    "ekuitas_induk": 246451310294.0,
+    "aset": 287638824021.0,
+    "aset_lancar": 195743577673.0,
+    "kas": 6480060912.0,
+    "piutang_usaha": 2186587954.0,
+    "persediaan": 122874339686.0,
+    "aset_tetap": 4176659029.0,
+    "liabilitas": 42925278242.0,
+    "liabilitas_jangka_pendek": 22409418820.0,
+    "liabilitas_jangka_panjang": 20515859422.0,
+    "utang_usaha": 2186587954.0,
+    "utang_bank": 8414843880.0,
+    "ekuitas": 244713545779.0,
+    "ekuitas_induk": 244713545779.0,
     "modal_saham": null,
-    "saldo_laba": 500000000.0
+    "saldo_laba": 450000000.0
   },
   "laba_rugi": {
-    "pendapatan": 13830331505.0,
-    "beban_pokok": 6916967674.0,
+    "pendapatan": 39557972996.0,
+    "beban_pokok": 19918082665.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 2082602803.0,
-    "beban_pajak": -344838288.0,
-    "laba_bersih": 1737764515.0,
-    "laba_induk": 1737764515.0,
-    "eps_basic": 300000.0,
+    "laba_sebelum_pajak": 9541116898.0,
+    "beban_pajak": -987498578.0,
+    "laba_bersih": 8553618320.0,
+    "laba_induk": 8553618320.0,
+    "eps_basic": 1.49,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 69846000.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "capex": 770679375.0,
+    "dividen_dibayar": 1259755637.0
+  }
 }

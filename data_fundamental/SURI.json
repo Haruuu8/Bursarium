@@ -3,124 +3,102 @@
   "nama": "PT Maja Agung Latexindo Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Instruments & Supplies",
-  "harga": 84.0,
-  "update": "2026-10-11 11:55",
-  "periode_terbaru": "2026-tw2",
+  "harga": 71.0,
+  "update": "2026-10-21 11:03",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 560.0,
-    "pb": 1.5371383,
-    "ps": 3.3778758,
-    "roe": 0.016456480681473307,
-    "eps": 0.15,
-    "de": 0.12402691710455702,
-    "margin_net": 0.07344351974969397,
-    "current_ratio": 5.318645275857139,
-    "roa": 0.014640646439201353,
-    "bv": 54.65,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2023-audit"
+    "pe": 0.00010376641480351221,
+    "pb": 1.3070954542979092,
+    "ps": 4.024568746945956e-06,
+    "roe": 0.010518505824390418,
+    "eps": 684229.0941095215,
+    "de": 0.13205430588556596,
+    "margin_net": 0.10053228444067813,
+    "current_ratio": 4.996695026319368,
+    "roa": 0.00929152053015881,
+    "bv": 54.3189097372669
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 26798365671.0,
-      "2024-Q2": 38438655633.0,
-      "2024-Q3": 75748706898.0,
-      "2024-Q4": 116670413489.0,
-      "2025-Q1": 34061191867.0,
-      "2025-Q2": 70279383227.0,
-      "2025-Q3": 113048857035.0,
-      "2025-Q4": 150238100225.0,
-      "2026-Q1": 36000067512.0,
-      "2026-Q2": 77562605951.0
+      "2024-Q1": 2.6798365671e+16,
+      "2024-Q2": 1.1640289962e+16,
+      "2024-Q3": 3.7310051265e+16,
+      "2026-Q1": 3.6000067512e+16
     },
     "eps": {
       "2024-Q1": 20000.0,
-      "2024-Q2": 80000.0,
-      "2024-Q3": 150000.0,
-      "2024-Q4": -610000.0,
-      "2025-Q1": 90000.0,
-      "2025-Q2": 90000.0,
-      "2025-Q3": 860000.0,
-      "2025-Q4": -530000.0,
-      "2026-Q1": 90000.0,
-      "2026-Q2": 900000.0
+      "2024-Q2": 60000.0,
+      "2024-Q3": 70000.0,
+      "2026-Q1": 90000.0
     },
     "net_income": {
-      "2024-Q1": 129594511.0,
-      "2024-Q2": 397134167.0,
-      "2024-Q3": 714994641.0,
-      "2024-Q4": -3873514639.0,
-      "2025-Q1": 420320322.0,
-      "2025-Q2": 1379617705.0,
-      "2025-Q3": -5438358584.0,
-      "2025-Q4": -3379066778.0,
-      "2026-Q1": 3619169027.0,
-      "2026-Q2": 5696470782.0
-    }
+      "2024-Q1": 129594511000000.0,
+      "2024-Q2": 267539656000000.0,
+      "2024-Q3": 317860474000000.0,
+      "2026-Q1": 3619169027000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2023": 1.17,
-      "2024": -610000.0,
+      "2023": 1170000.0,
       "2025": -530000.0
     },
     "revenue_per_share": {
-      "2023": 81718159248.0,
-      "2024": 116670413489.0,
-      "2025": 150238100225.0
+      "2023": 8.1718159248e+16,
+      "2025": 1.50238100225e+17
     }
   },
   "statistik": {
-    "market_cap": 532087504896,
-    "enterprise_value": 482949922816,
+    "market_cap": 449740603392,
+    "enterprise_value": 400603054080,
     "shares_outstanding": 6334375000,
     "free_float_pct": 13.86500000394672
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2167,
-    "vol_trend": 0.173,
-    "price_chg_20d": -1.18
+    "cmf": 0.3044,
+    "vol_trend": 0.269,
+    "price_chg_20d": -16.47
   },
   "neraca": {
-    "aset": 389086015133.0,
-    "aset_lancar": 203166561954.0,
-    "kas": 50444034281.0,
-    "piutang_usaha": 58152645576.0,
-    "persediaan": 51443574304.0,
-    "aset_tetap": 178641253825.0,
-    "liabilitas": 42932369511.0,
-    "liabilitas_jangka_pendek": 38198930633.0,
-    "utang_usaha": 58152645576.0,
+    "aset": 389513106628.0,
+    "aset_lancar": 202644385711.0,
+    "kas": 4813743709.0,
+    "piutang_usaha": 47628751869.0,
+    "persediaan": 56206993200.0,
+    "aset_tetap": 179450730167.0,
+    "liabilitas": 45436762761.0,
+    "liabilitas_jangka_pendek": 40555684236.0,
+    "liabilitas_jangka_panjang": 4881078525.0,
+    "utang_usaha": 47628751869.0,
     "utang_bank": null,
-    "ekuitas": 346153645622.0,
-    "ekuitas_induk": 346153645622.0,
-    "modal_saham": null,
+    "ekuitas": 344076343867.0,
+    "ekuitas_induk": 344076343867.0,
+    "modal_saham": 1920.0,
     "saldo_laba": 21270000000.0
   },
   "laba_rugi": {
-    "pendapatan": 77562605951.0,
-    "beban_pokok": 64474092362.0,
+    "pendapatan": 36000067512.0,
+    "beban_pokok": 27922577477.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 7320315862.0,
-    "beban_pajak": -1623845080.0,
-    "laba_bersih": 5696470782.0,
-    "laba_induk": 5696470782.0,
-    "eps_basic": 900000.0,
+    "laba_sebelum_pajak": 4650678627.0,
+    "beban_pajak": -1031509600.0,
+    "laba_bersih": 3619169027.0,
+    "laba_induk": 3619169027.0,
+    "eps_basic": 0.09,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 510437190.0,
+    "capex": 289437190.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

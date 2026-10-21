@@ -3,73 +3,68 @@
   "nama": "PT Cisarua Mountain Dairy Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 4440.0,
-  "update": "2026-10-11 11:00",
+  "harga": 4190.0,
+  "update": "2026-10-21 10:30",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 15.936827,
-    "pb": 4.9185615,
-    "ps": 2.9268596,
+    "pe": 14.188838601495776,
+    "pb": 4.6416159818257485,
+    "ps": 2.5728456491733014,
     "roe": 0.16356574742264082,
-    "eps": 278.6,
+    "eps": 295.3025344553777,
     "de": 0.2910557961629065,
     "margin_net": 0.18132884032538607,
     "current_ratio": 2.0304257955772314,
     "roa": 0.12668801047444825,
-    "bv": 902.7,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 902.7028552999534
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 6636658.0,
-      "2024-Q4": 9025658.0,
-      "2025-Q2": 5148216.0,
-      "2025-Q4": 10724003.0,
-      "2026-Q2": 6461002.0
+      "2024-Q3": 2221228000000.0,
+      "2026-Q1": 3116600000000.0,
+      "2026-Q2": 3344402000000.0
     },
     "eps": {
-      "2024-Q3": 145.67,
-      "2024-Q4": 191.48,
-      "2025-Q2": 125.24,
-      "2025-Q4": 256.2,
-      "2026-Q2": 147.65
+      "2024-Q3": 44540000.0,
+      "2026-Q1": 69940000.0,
+      "2026-Q2": 77710000.0
     },
     "net_income": {
-      "2024-Q3": 1155826.0,
-      "2024-Q4": 1519337.0,
-      "2025-Q2": 993808.0,
-      "2025-Q4": 2032840.0,
-      "2026-Q2": 1171566.0
-    }
+      "2024-Q3": 353435000000.0,
+      "2026-Q1": 555002000000.0,
+      "2026-Q2": 616564000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 133.66,
-      "2024": 191.48,
-      "2025": 256.2
+      "2022": 133660000.0,
+      "2023": 156.49,
+      "2025": 256200000.0
     },
     "revenue_per_share": {
-      "2022": 6378348.0,
-      "2024": 9025658.0,
-      "2025": 10724003.0
+      "2022": 6378348000000.0,
+      "2023": 7772910000000.0,
+      "2025": 10724003000000.0
     }
   },
   "statistik": {
-    "market_cap": 35229993533440,
-    "enterprise_value": 33913279873024,
+    "market_cap": 33246322622464,
+    "enterprise_value": 31691567529984,
     "shares_outstanding": 7934683000,
     "free_float_pct": 19.274999996849278
   },
   "akumulasi": {
-    "score": 3.0,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2062,
-    "vol_trend": 0.768,
-    "price_chg_20d": 0.68
+    "cmf": -0.1469,
+    "vol_trend": 0.599,
+    "price_chg_20d": -7.37
   },
   "neraca": {
     "aset": 9247647.0,
@@ -80,6 +75,7 @@
     "aset_tetap": 234522.0,
     "liabilitas": 2084734.0,
     "liabilitas_jangka_pendek": 2005305.0,
+    "liabilitas_jangka_panjang": 79429.0,
     "utang_usaha": 1171817.0,
     "utang_bank": null,
     "ekuitas": 7162661.0,
@@ -105,7 +101,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 234522.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 793520.0
+  }
 }

@@ -3,69 +3,61 @@
   "nama": "PT Trimitra Trans Persada Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 360.0,
-  "update": "2026-10-11 12:09",
+  "harga": 320.0,
+  "update": "2026-10-21 11:10",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 16.965128,
-    "pb": 1.939791,
-    "ps": 0.848312,
+    "pe": 6.97277187790169,
+    "pb": 1.7242602983006368,
+    "ps": 0.7378035507556987,
     "roe": 0.1236423855888081,
-    "eps": 21.22,
+    "eps": 45.89279638046861,
     "de": 0.8152119120343451,
     "margin_net": 0.1058120878863063,
     "current_ratio": 1.4294677768043769,
     "roa": 0.06811356929962141,
-    "bv": 185.59,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 185.58682834336523
   },
   "quarterly": {
     "revenue": {
-      "2025-Q2": 626477326224.0,
-      "2025-Q3": 954520339381.0,
-      "2025-Q4": 1327762434000.0,
-      "2026-Q1": 357517651214.0,
-      "2026-Q2": 732875236838.0
+      "2026-Q1": 3.57517651214e+17,
+      "2026-Q2": 3.75357585624e+17
     },
     "eps": {
-      "2025-Q2": 252.0,
-      "2025-Q3": 83.0,
-      "2025-Q4": 47.0,
-      "2026-Q1": 47.0,
-      "2026-Q2": 46.0
+      "2026-Q1": 47000000.0,
+      "2026-Q2": -1000000.0
     },
     "net_income": {
-      "2025-Q2": 71080907879.0,
-      "2025-Q3": 108991053695.0,
-      "2025-Q4": 144461144438.0,
-      "2026-Q1": 36553972627.0,
-      "2026-Q2": 77547058970.0
-    }
+      "2026-Q1": 3.6553972627e+16,
+      "2026-Q2": 4.0993086343e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 47.0
+      "2025": 47000000.0
     },
     "revenue_per_share": {
-      "2025": 1327762434000.0
+      "2025": 1.327762434e+18
     }
   },
   "statistik": {
-    "market_cap": 1216615415808,
-    "enterprise_value": 1445028691968,
+    "market_cap": 1081435881472,
+    "enterprise_value": 1323367137280,
     "shares_outstanding": 3379487200,
     "free_float_pct": 16.66700001112595
   },
   "akumulasi": {
-    "score": 3.7,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0893,
-    "vol_trend": 0.536,
-    "price_chg_20d": -1.1
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2004,
+    "vol_trend": 0.728,
+    "price_chg_20d": -10.0
   },
   "neraca": {
     "aset": 1138496481206.0,
@@ -76,6 +68,7 @@
     "aset_tetap": 786690013475.0,
     "liabilitas": 511291382114.0,
     "liabilitas_jangka_pendek": 217887763092.0,
+    "liabilitas_jangka_panjang": 293403619022.0,
     "utang_usaha": 19970258246.0,
     "utang_bank": 43160097045.0,
     "ekuitas": 627188310875.0,
@@ -101,7 +94,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 148838832912.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 49997433330.0
+  }
 }

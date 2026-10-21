@@ -3,75 +3,56 @@
   "nama": "PT Lavender Bina Cendikia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Education & Training Services",
-  "harga": 31.0,
-  "update": "2026-10-11 11:32",
+  "harga": 26.0,
+  "update": "2026-10-21 10:50",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.47712126,
-    "ps": 2.2116504,
+    "pb": 0.400164990717382,
+    "ps": 1.7682466883433479,
     "roe": -0.01615728143074283,
-    "eps": 2.13,
+    "eps": -2.0995805577405107,
     "de": 0.07277891044071495,
     "margin_net": -0.14279139877441296,
     "current_ratio": 4.487099008637329,
     "roa": -0.015061147523962004,
-    "bv": 64.97,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 64.9732000627776
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 7917235800.0,
-      "2024-Q4": 11468835800.0,
-      "2025-Q2": 8031566900.0,
-      "2025-Q4": 14896818050.0,
-      "2026-Q2": 7573068296.0
-    },
-    "eps": {
-      "2024-Q2": 140000.0,
-      "2024-Q4": 8.6,
-      "2025-Q2": 80000.0,
-      "2025-Q4": 2.13,
-      "2026-Q2": 1.05
-    },
-    "net_income": {
-      "2024-Q2": 144087191.0,
-      "2024-Q4": -8857535111.0,
-      "2025-Q2": -79250522.0,
-      "2025-Q4": -2197124924.0,
-      "2026-Q2": -1081369015.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 9.0,
+      "2022": 9000000.0,
       "2023": 90000.0,
-      "2024": 8.6,
-      "2025": 2.13
+      "2025": 2130000.0
     },
     "revenue_per_share": {
-      "2022": 12525312378.0,
-      "2023": 17267332513.0,
-      "2024": 11468835800.0,
-      "2025": 14896818050.0
+      "2022": 1.2525312378e+16,
+      "2023": 1.7267332513e+16,
+      "2025": 1.489681805e+16
     }
   },
   "statistik": {
-    "market_cap": 31932512256,
-    "enterprise_value": 33196806144,
+    "market_cap": 26782105600,
+    "enterprise_value": 29076482048,
     "shares_outstanding": 1030080995,
     "free_float_pct": 58.63099998267612
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1584,
-    "vol_trend": 0.644,
-    "price_chg_20d": 3.33
+    "cmf": 0.1553,
+    "vol_trend": 0.61,
+    "price_chg_20d": -6.9
   },
   "neraca": {
     "aset": 71798580638.0,
@@ -82,6 +63,7 @@
     "aset_tetap": 1335428925.0,
     "liabilitas": 4870922069.0,
     "liabilitas_jangka_pendek": 3755470230.0,
+    "liabilitas_jangka_panjang": 1115451839.0,
     "utang_usaha": 10454310325.0,
     "utang_bank": 423084247.0,
     "ekuitas": 66927658569.0,
@@ -108,6 +90,5 @@
     "arus_kas_pendanaan": null,
     "capex": 1335428925.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

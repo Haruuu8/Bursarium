@@ -3,84 +3,65 @@
   "nama": "PT Bank Pembangunan Daerah Jawa Timur Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 515.0,
-  "update": "2026-10-11 12:47",
+  "harga": 498.0,
+  "update": "2026-10-21 11:34",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 4.9348407,
-    "pb": 0.5933891,
-    "ps": 0.9805868,
+    "pe": 1.0522120272798088,
+    "pb": 0.11747093353081867,
+    "ps": 0.11687948156655176,
     "roe": 0.055820942208057604,
-    "eps": 104.36,
+    "eps": 473.28864058647537,
     "de": 9.554786295336468,
     "margin_net": 0.11107978101021143,
     "current_ratio": null,
     "roa": 0.004499548433996596,
-    "bv": 867.9,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 4239.346577333098
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 5672014.0,
-      "2024-Q4": 8105761.0,
-      "2025-Q1": 2420984.0,
-      "2025-Q2": 4768348.0,
-      "2025-Q3": 7280311.0,
-      "2025-Q4": 9956684.0,
-      "2026-Q1": 3316374.0,
-      "2026-Q2": 6564507.0
+      "2026-Q1": 3316374000000.0,
+      "2026-Q2": 3248133000000.0
     },
     "eps": {
-      "2024-Q3": 61.94,
-      "2024-Q4": 85.36,
-      "2025-Q1": 23.17,
-      "2025-Q2": 47.13,
-      "2025-Q3": 70.62,
-      "2025-Q4": 102.93,
-      "2026-Q1": 25.8264493047271,
-      "2026-Q2": 48.56209204769022
+      "2026-Q1": 25826449.3,
+      "2026-Q2": 22735642.74
     },
     "net_income": {
-      "2024-Q3": 930062.0,
-      "2024-Q4": 1295818.0,
-      "2025-Q1": 347264.0,
-      "2025-Q2": 707612.0,
-      "2025-Q3": 1060391.0,
-      "2025-Q4": 1545518.0,
-      "2026-Q1": 387797.0,
-      "2026-Q2": 729184.0
-    }
+      "2026-Q1": 387797000000.0,
+      "2026-Q2": 341387000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 102.75,
-      "2023": 97.91,
-      "2024": 85.36,
-      "2025": 102.93
+      "2022": 102750000.0,
+      "2023": 97910000.0,
+      "2025": 102930000.0
     },
     "revenue_per_share": {
-      "2022": 6685773.0,
-      "2023": 7126520000000.0,
-      "2024": 8105761.0,
-      "2025": 9956684.0
+      "2022": 6685773000000.0,
+      "2023": 7.12652e+18,
+      "2025": 9956684000000.0
     }
   },
   "statistik": {
-    "market_cap": 7732981137408,
-    "enterprise_value": 15654820249600,
+    "market_cap": 7477717893120,
+    "enterprise_value": 15504665214976,
     "shares_outstanding": 3081350100,
     "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.0,
+    "score": 2.1,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2126,
-    "vol_trend": 1.008,
-    "price_chg_20d": -0.96
+    "cmf": -0.1293,
+    "vol_trend": 1.622,
+    "price_chg_20d": -2.91
   },
   "neraca": {
     "aset": 162057151.0,
@@ -91,6 +72,7 @@
     "aset_tetap": 2958907.0,
     "liabilitas": 124813323.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 13062911.0,
@@ -116,7 +98,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 1598272.0
+  }
 }

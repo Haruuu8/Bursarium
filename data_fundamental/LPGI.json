@@ -3,72 +3,70 @@
   "nama": "PT Lippo General Insurance Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 640.0,
-  "update": "2026-10-11 14:05",
+  "harga": 610.0,
+  "update": "2026-10-21 12:29",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 12.084593,
-    "pb": 1.7198384,
-    "ps": 0.38712132,
+    "pe": 7.711954356543908,
+    "pb": 1.6392224803747446,
+    "ps": 0.3351515830582418,
     "roe": 0.10627802010937716,
-    "eps": 52.96,
+    "eps": 79.09797851466666,
     "de": 2.180643231056031,
-    "margin_net": null,
+    "margin_net": 0.04345870937032349,
     "current_ratio": null,
     "roa": 0.033414002259565256,
-    "bv": 372.13,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 372.12764423566665
   },
   "quarterly": {
-    "revenue": {},
+    "revenue": {
+      "2024-Q3": -1.340079657652e+18,
+      "2026-Q1": 5087834312000000.0,
+      "2026-Q2": 2.725020111623e+18
+    },
     "eps": {
-      "2024-Q2": 93.0,
-      "2024-Q3": 19.0,
-      "2024-Q4": 21.0,
-      "2025-Q1": 14.0,
-      "2025-Q2": 35.0,
-      "2025-Q3": 39.0,
-      "2025-Q4": 48.0,
-      "2026-Q1": 16.0,
-      "2026-Q2": 40.0
+      "2024-Q3": -74000000.0,
+      "2026-Q1": 16000000.0,
+      "2026-Q2": 24000000.0
     },
     "net_income": {
-      "2024-Q2": 27941023110.0,
-      "2024-Q3": 55814007095.0,
-      "2024-Q4": 62274344673.0,
-      "2025-Q1": 43446565734.0,
-      "2025-Q2": 105706522181.0,
-      "2025-Q3": 117936453305.0,
-      "2025-Q4": 144731453092.0,
-      "2026-Q1": 48836221743.0,
-      "2026-Q2": 118646967772.0
-    }
+      "2024-Q3": 2.7872983985e+16,
+      "2026-Q1": 4.8836221743e+16,
+      "2026-Q2": 6.9810746029e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 246.0,
-      "2023": 83.0,
-      "2024": 21.0,
-      "2025": 48.0
+      "2021": 656000000.0,
+      "2022": 246000000.0,
+      "2023": 83000000.0,
+      "2025": 48000000.0
     },
-    "revenue_per_share": {}
+    "revenue_per_share": {
+      "2021": -4783593095000000.0,
+      "2022": 1.2335634784e+16,
+      "2023": 2.7333450183e+16,
+      "2025": 6504051515000000.0
+    }
   },
   "statistik": {
-    "market_cap": 1920000065536,
-    "enterprise_value": 1827737698304,
+    "market_cap": 1830000001024,
+    "enterprise_value": 1857737588736,
     "shares_outstanding": 3000000000,
     "free_float_pct": 7.534000000000001
   },
   "akumulasi": {
-    "score": 3.3,
+    "score": 2.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1111,
-    "vol_trend": 0.436,
-    "price_chg_20d": -0.78
+    "cmf": -0.2867,
+    "vol_trend": 1.53,
+    "price_chg_20d": -4.65
   },
   "neraca": {
     "aset": 3550815818181.0,
@@ -79,6 +77,7 @@
     "aset_tetap": 44162393238.0,
     "liabilitas": 2434432885474.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 1116382932707.0,
@@ -87,7 +86,7 @@
     "saldo_laba": 25000000000.0
   },
   "laba_rugi": {
-    "pendapatan": null,
+    "pendapatan": 2730107945935.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
@@ -104,7 +103,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 6501250664.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 29994500000.0
+  }
 }

@@ -3,64 +3,61 @@
   "nama": "PT Asuransi Bina Dana Arta Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 4880.0,
-  "update": "2026-10-11 12:13",
+  "harga": 4840.0,
+  "update": "2026-10-21 11:11",
   "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 22.360703,
-    "pb": 1.683874,
-    "ps": 2.9640102,
+    "pe": 0.0015429254310219203,
+    "pb": 95.16077833173148,
+    "ps": 0.044110278644024475,
     "roe": 0.04745380862161026,
-    "eps": 218.24,
+    "eps": 3136898.195264265,
     "de": 0.580232934047012,
-    "margin_net": null,
+    "margin_net": 39.18738266924316,
     "current_ratio": null,
     "roa": 0.030029111311586625,
-    "bv": 2898.08,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 50.861290595246174
   },
   "quarterly": {
-    "revenue": {},
+    "revenue": {
+      "2024-Q1": -904875000000.0,
+      "2024-Q2": -3303462000000.0,
+      "2024-Q3": 5006160000000.0,
+      "2026-Q1": 2559302000000.0,
+      "2026-Q2": -380632000000.0
+    },
     "eps": {
-      "2024-Q1": 19.0,
-      "2024-Q2": 63.0,
-      "2024-Q3": 61.0,
-      "2024-Q4": 129.0,
-      "2025-Q1": 30.0,
-      "2025-Q2": 80000.0,
-      "2025-Q3": 101000.0,
-      "2025-Q4": 161000.0,
+      "2024-Q1": 19000000.0,
+      "2024-Q2": 44000000.0,
+      "2024-Q3": -2000000.0,
       "2026-Q1": 48000.0,
-      "2026-Q2": 138000.0
+      "2026-Q2": 90000.0
     },
     "net_income": {
-      "2024-Q1": 12045914.0,
-      "2024-Q2": 38887304.0,
-      "2024-Q3": 37632921.0,
-      "2024-Q4": 80057224.0,
-      "2025-Q1": 18613221.0,
-      "2025-Q2": 49405960.0,
-      "2025-Q3": 62932296.0,
-      "2025-Q4": 99772165.0,
-      "2026-Q1": 29632680.0,
-      "2026-Q2": 85376375.0
-    }
+      "2024-Q1": 12045914000000.0,
+      "2024-Q2": 26841390000000.0,
+      "2024-Q3": -1254383000000.0,
+      "2026-Q1": 29632680000000.0,
+      "2026-Q2": 55743695000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 147.0,
-      "2023": 136.0,
-      "2024": 129.0,
+      "2022": 147000000.0,
+      "2023": 136000000.0,
       "2025": 161000.0
     },
-    "revenue_per_share": {}
+    "revenue_per_share": {
+      "2022": -1776009000000.0,
+      "2023": -4518442000000.0,
+      "2025": 3664293000000.0
+    }
   },
   "statistik": {
-    "market_cap": 3029536604160,
-    "enterprise_value": 870659325952,
+    "market_cap": 3004704227328,
+    "enterprise_value": 1069317423104,
     "shares_outstanding": 35373600,
     "free_float_pct": 5.212350453445507
   },
@@ -68,9 +65,9 @@
     "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2048,
-    "vol_trend": 0.199,
-    "price_chg_20d": -1.81
+    "cmf": -0.1834,
+    "vol_trend": 0.681,
+    "price_chg_20d": 4.63
   },
   "neraca": {
     "aset": 2843120268.0,
@@ -81,6 +78,7 @@
     "aset_tetap": 68170254.0,
     "liabilitas": 1043924313.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 1799146949.0,
@@ -89,7 +87,7 @@
     "saldo_laba": 8250000.0
   },
   "laba_rugi": {
-    "pendapatan": null,
+    "pendapatan": 2178670.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
@@ -98,7 +96,7 @@
     "beban_pajak": -18943263.0,
     "laba_bersih": 85376375.0,
     "laba_induk": 85376375.0,
-    "eps_basic": 138000.0,
+    "eps_basic": 0.138,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -107,6 +105,5 @@
     "arus_kas_pendanaan": null,
     "capex": 960911.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

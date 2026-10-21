@@ -3,84 +3,68 @@
   "nama": "PT Bank Negara Indonesia (Persero) Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 3430.0,
-  "update": "2026-10-11 12:39",
+  "harga": 3160.0,
+  "update": "2026-10-21 11:29",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 6.18018,
-    "pb": 0.7774499,
-    "ps": 2.4605894,
+    "pe": 0.0850069021264363,
+    "pb": 0.011159532064832842,
+    "ps": 0.023668531583883785,
     "roe": 0.06563897628121153,
-    "eps": 555.0,
+    "eps": 37173.45204863396,
     "de": 7.8893106645953095,
     "margin_net": 0.27843070376426654,
     "current_ratio": null,
     "roa": 0.007361962684605868,
-    "bv": 4411.86,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 283165.99492178916
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 32173473.0,
-      "2024-Q3": 48836365.0,
-      "2024-Q4": 66583110.0,
-      "2025-Q2": 33614022.0,
-      "2025-Q3": 51166706.0,
-      "2025-Q4": 69394154.0,
-      "2026-Q1": 18998562.0,
-      "2026-Q2": 38630208.0
+      "2024-Q3": 16662892000000.0,
+      "2026-Q1": 18998562000000.0,
+      "2026-Q2": 19631646000000.0
     },
     "eps": {
-      "2024-Q2": 286.0,
-      "2024-Q3": 432.0,
-      "2024-Q4": 570.0,
-      "2025-Q2": 271.0,
-      "2025-Q3": 405.0,
-      "2025-Q4": 537.0,
-      "2026-Q1": 152.0,
-      "2026-Q2": 289.0
+      "2024-Q3": 146.0,
+      "2026-Q1": 152000000.0,
+      "2026-Q2": -151999711.0
     },
     "net_income": {
-      "2024-Q2": 10691602.0,
-      "2024-Q3": 16308385.0,
-      "2024-Q4": 21463599.0,
-      "2025-Q2": 10094039.0,
-      "2025-Q3": 15115133.0,
-      "2025-Q4": 20040703.0,
-      "2026-Q1": 5660764.0,
-      "2026-Q2": 10755836.0
-    }
+      "2024-Q3": 5616783000000.0,
+      "2026-Q1": 5660764000000.0,
+      "2026-Q2": 5095072000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 983.0,
-      "2023": 561.0,
-      "2024": 570.0,
-      "2025": 537.0
+      "2022": 983000000.0,
+      "2023": 561000000.0,
+      "2025": 537000000.0
     },
     "revenue_per_share": {
-      "2022": 54658681.0,
-      "2023": 61471696000000.0,
-      "2024": 66583110.0,
-      "2025": 69394154.0
+      "2022": 54658681000000.0,
+      "2023": 6.1471696e+19,
+      "2025": 69394154000000.0
     }
   },
   "statistik": {
-    "market_cap": 127790821146624,
-    "enterprise_value": -43572808122368,
+    "market_cap": 117731479257088,
+    "enterprise_value": -43694333886464,
     "shares_outstanding": 578683733,
     "free_float_pct": 39.04799998931368
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2796,
-    "vol_trend": 0.851,
-    "price_chg_20d": -8.53
+    "cmf": -0.1366,
+    "vol_trend": 1.221,
+    "price_chg_20d": -9.8
   },
   "neraca": {
     "aset": 1461001157.0,
@@ -91,6 +75,7 @@
     "aset_tetap": 30361530.0,
     "liabilitas": 1292770492.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 163863555.0,
@@ -108,7 +93,7 @@
     "beban_pajak": -2261713.0,
     "laba_bersih": 10755836.0,
     "laba_induk": 10755836.0,
-    "eps_basic": 289.0,
+    "eps_basic": 0.000289,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -116,7 +101,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 13026457.0
+  }
 }

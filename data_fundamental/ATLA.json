@@ -3,70 +3,51 @@
   "nama": "PT Atlantis Subsea Indonesia Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Equipment & Services",
-  "harga": 33.0,
-  "update": "2026-10-11 12:01",
+  "harga": 26.0,
+  "update": "2026-10-21 11:06",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 109.99999,
-    "pb": 1.2295998,
-    "ps": 3.382561,
+    "pe": 9.532370882175106e-05,
+    "pb": 0.968792584868917,
+    "ps": 2.772124171494031,
     "roe": 0.00508159300998503,
-    "eps": 0.3,
+    "eps": 272754.80907502514,
     "de": 0.015041119920293408,
     "margin_net": 0.029081161504927563,
     "current_ratio": 39.99587134463512,
     "roa": 0.005006292760222427,
-    "bv": 26.84,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 26.837529937863785
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 31266444597.0,
-      "2024-Q4": 84913637786.0,
-      "2025-Q1": 24051657288.0,
-      "2025-Q2": 50734242224.0,
-      "2025-Q3": 63401902986.0,
-      "2025-Q4": 82143640546.0,
-      "2026-Q1": 16445107830.0,
-      "2026-Q2": 29073196229.0
+      "2026-Q1": 1.644510783e+16,
+      "2026-Q2": 1.2628088399e+16
     },
     "eps": {
-      "2024-Q2": 320000.0,
-      "2024-Q4": 610000.0,
-      "2025-Q1": 170000.0,
-      "2025-Q2": 440000.0,
-      "2025-Q3": 420000.0,
-      "2025-Q4": 600000.0,
       "2026-Q1": 100000.0,
-      "2026-Q2": 140000.0
+      "2026-Q2": 40000.0
     },
     "net_income": {
-      "2024-Q2": 2013104954.0,
-      "2024-Q4": 3776606383.0,
-      "2025-Q1": 1051866700.0,
-      "2025-Q2": 2716447960.0,
-      "2025-Q3": 2595912388.0,
-      "2025-Q4": 3727878673.0,
-      "2026-Q1": 621138542.0,
-      "2026-Q2": 845482315.0
-    }
+      "2026-Q1": 621138542000000.0,
+      "2026-Q2": 224343773000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2024": 610000.0,
       "2025": 600000.0
     },
     "revenue_per_share": {
-      "2024": 84913637786.0,
-      "2025": 82143640546.0
+      "2025": 8.2143640546e+16
     }
   },
   "statistik": {
-    "market_cap": 204586057728,
-    "enterprise_value": 200318812160,
+    "market_cap": 161189019648,
+    "enterprise_value": 144522608640,
     "shares_outstanding": 6199577693,
     "free_float_pct": 39.81599999605005
   },
@@ -74,9 +55,9 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3481,
-    "vol_trend": 22.278,
-    "price_chg_20d": -34.0
+    "cmf": -0.4361,
+    "vol_trend": 117.296,
+    "price_chg_20d": -52.0
   },
   "neraca": {
     "aset": 168883913805.0,
@@ -87,6 +68,7 @@
     "aset_tetap": 69189553915.0,
     "liabilitas": 2502561867.0,
     "liabilitas_jangka_pendek": 1812550174.0,
+    "liabilitas_jangka_panjang": 690011693.0,
     "utang_usaha": 13166297339.0,
     "utang_bank": null,
     "ekuitas": 166381351938.0,
@@ -104,7 +86,7 @@
     "beban_pajak": -277728000.0,
     "laba_bersih": 845482315.0,
     "laba_induk": 845482315.0,
-    "eps_basic": 140000.0,
+    "eps_basic": 0.14,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -112,7 +94,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 15768995.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 3500000000.0
+  }
 }

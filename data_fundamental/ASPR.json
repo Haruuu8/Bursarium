@@ -3,69 +3,61 @@
   "nama": "PT Asia Pramulia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
-  "harga": 157.0,
-  "update": "2026-10-11 12:10",
+  "harga": 132.0,
+  "update": "2026-10-21 11:10",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 2.4021175,
-    "ps": 1.4132408,
+    "pe": 77.12831831967324,
+    "pb": 2.019602150230419,
+    "ps": 1.0663818710684463,
     "roe": 0.01309248142724821,
-    "eps": 4.17,
+    "eps": 1.7114336585545722,
     "de": 1.0333507707744982,
     "margin_net": 0.013826074447113191,
     "current_ratio": 1.2623354017556516,
     "roa": 0.006370085141699204,
-    "bv": 65.36,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 65.35940753724189
   },
   "quarterly": {
     "revenue": {
-      "2025-Q2": 116446828496.0,
-      "2025-Q3": 176170306896.0,
-      "2025-Q4": 249878985263.0,
-      "2026-Q1": 78293741764.0,
-      "2026-Q2": 167849815208.0
+      "2026-Q1": 7.8293741764e+16,
+      "2026-Q2": 8.9556073444e+16
     },
     "eps": {
-      "2025-Q2": 1.7,
-      "2025-Q3": 2.11,
-      "2025-Q4": 4.17,
-      "2026-Q1": 1.01,
-      "2026-Q2": 860000.0
+      "2026-Q1": 1010000.0,
+      "2026-Q2": -150000.0
     },
     "net_income": {
-      "2025-Q2": 3222628887.0,
-      "2025-Q3": 4588886153.0,
-      "2025-Q4": 8745029074.0,
-      "2026-Q1": 2733150934.0,
-      "2026-Q2": 2320704041.0
-    }
+      "2026-Q1": 2733150934000000.0,
+      "2026-Q2": -412446893000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 4.17
+      "2025": 4170000.0
     },
     "revenue_per_share": {
-      "2025": 249878985263.0
+      "2025": 2.49878985263e+17
     }
   },
   "statistik": {
-    "market_cap": 425783984128,
-    "enterprise_value": 499672154112,
+    "market_cap": 357984010240,
+    "enterprise_value": 429160169472,
     "shares_outstanding": 2712000000,
     "free_float_pct": 29.941000000000003
   },
   "akumulasi": {
-    "score": 7.4,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1255,
-    "vol_trend": 0.907,
-    "price_chg_20d": 12.14
+    "score": 2.4,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1087,
+    "vol_trend": 1.589,
+    "price_chg_20d": -2.24
   },
   "neraca": {
     "aset": 364312876418.0,
@@ -76,6 +68,7 @@
     "aset_tetap": 33226819611.0,
     "liabilitas": 183166294551.0,
     "liabilitas_jangka_pendek": 131335181220.0,
+    "liabilitas_jangka_panjang": 51831113331.0,
     "utang_usaha": 31252346974.0,
     "utang_bank": 46189864000.0,
     "ekuitas": 177254713241.0,
@@ -93,7 +86,7 @@
     "beban_pajak": -850256237.0,
     "laba_bersih": 2320704041.0,
     "laba_induk": 2320704041.0,
-    "eps_basic": 860000.0,
+    "eps_basic": 0.86,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -102,6 +95,5 @@
     "arus_kas_pendanaan": null,
     "capex": 33226819611.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

@@ -3,83 +3,64 @@
   "nama": "PT Dunia Virtual Online Tbk",
   "sektor": "Technology",
   "industri": "Information Technology Services",
-  "harga": 348.0,
-  "update": "2026-10-11 12:01",
+  "harga": 254.0,
+  "update": "2026-10-21 11:06",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 3.6189306,
-    "ps": 11.825481,
+    "pe": 168.63206847189633,
+    "pb": 2.6413983738341558,
+    "ps": 8.074194168914323,
     "roe": 0.00783183886009903,
-    "eps": 3.92,
+    "eps": 1.5062378247606611,
     "de": 0.12659512545498675,
     "margin_net": 0.04788053803811308,
     "current_ratio": 3.2667920780551425,
     "roa": 0.0069517776911524115,
-    "bv": 96.16,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 96.1611858764428
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 25322380630.0,
-      "2024-Q3": 38825834239.0,
-      "2024-Q4": 56338316353.0,
-      "2025-Q1": 14567561590.0,
-      "2025-Q2": 29391385358.0,
-      "2025-Q3": 46361685632.0,
-      "2025-Q4": 64181006411.0,
-      "2026-Q1": 19078263979.0,
-      "2026-Q2": 39945698636.0
+      "2024-Q3": 1.3503453609e+16,
+      "2026-Q1": 1.9078263979e+16,
+      "2026-Q2": 2.0867434657e+16
     },
     "eps": {
-      "2024-Q2": 370000.0,
-      "2024-Q3": 2.03,
-      "2024-Q4": 2.97,
-      "2025-Q1": 790000.0,
-      "2025-Q2": 1.49,
-      "2025-Q3": 2.5,
-      "2025-Q4": 3.92,
+      "2024-Q3": 1660000.0,
       "2026-Q1": 280000.0,
-      "2026-Q2": 750000.0
+      "2026-Q2": 470000.0
     },
     "net_income": {
-      "2024-Q2": 949252483.0,
-      "2024-Q3": 5143899326.0,
-      "2024-Q4": 7651757306.0,
-      "2025-Q1": 2005169438.0,
-      "2025-Q2": 3776290800.0,
-      "2025-Q3": 6344590271.0,
-      "2025-Q4": 9962151958.0,
-      "2026-Q1": 713021115.0,
-      "2026-Q2": 1912621543.0
-    }
+      "2024-Q3": 4194646843000000.0,
+      "2026-Q1": 713021115000000.0,
+      "2026-Q2": 1199600428000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2024": 2.97,
-      "2025": 3.92
+      "2025": 3920000.0
     },
     "revenue_per_share": {
-      "2024": 56338316353.0,
-      "2025": 64181006411.0
+      "2025": 6.4181006411e+16
     }
   },
   "statistik": {
-    "market_cap": 883781140480,
-    "enterprise_value": 861341483008,
+    "market_cap": 645058658304,
+    "enterprise_value": 658173394944,
     "shares_outstanding": 2539601000,
     "free_float_pct": 20.073000010631592
   },
   "akumulasi": {
-    "score": 4.2,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0835,
-    "vol_trend": 0.665,
-    "price_chg_20d": 5.45
+    "score": 3.1,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.093,
+    "vol_trend": 0.649,
+    "price_chg_20d": -16.25
   },
   "neraca": {
     "aset": 275126971542.0,
@@ -90,6 +71,7 @@
     "aset_tetap": 2407430345.0,
     "liabilitas": 30915927729.0,
     "liabilitas_jangka_pendek": 20446757118.0,
+    "liabilitas_jangka_panjang": 10469170611.0,
     "utang_usaha": 4052910441.0,
     "utang_bank": 5500000000.0,
     "ekuitas": 244211043813.0,
@@ -101,13 +83,13 @@
     "pendapatan": 39945698636.0,
     "beban_pokok": 25835594818.0,
     "laba_kotor": null,
-    "beban_operasi": null,
+    "beban_operasi": 17532627966.0,
     "laba_operasi": null,
     "laba_sebelum_pajak": 2150624413.0,
     "beban_pajak": 53713514.0,
     "laba_bersih": 1912621543.0,
     "laba_induk": 1912621543.0,
-    "eps_basic": 750000.0,
+    "eps_basic": 0.75,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -116,6 +98,5 @@
     "arus_kas_pendanaan": null,
     "capex": 2407430345.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

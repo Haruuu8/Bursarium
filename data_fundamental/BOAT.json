@@ -3,77 +3,61 @@
   "nama": "PT Newport Marine Services TBK",
   "sektor": "Energy",
   "industri": "Oil & Gas Drilling",
-  "harga": 127.0,
-  "update": "2026-10-11 12:05",
+  "harga": 104.0,
+  "update": "2026-10-21 11:08",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 18142.857,
-    "ps": 25541.547,
+    "pe": 0.5076582255541832,
+    "pb": 0.015274620416949748,
+    "ps": 0.025033563939486886,
     "roe": 0.015044196713522433,
-    "eps": null,
+    "eps": 204.86223755454526,
     "de": 0.492143887685075,
     "margin_net": 0.049311845409692884,
     "current_ratio": 1.0445728144159325,
     "roa": 0.010082269436402766,
-    "bv": 0.01,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2025-audit"
+    "bv": 6808.679833679834
   },
   "quarterly": {
     "revenue": {
-      "2024-Q4": 11457306.0,
-      "2025-Q1": 3181450.0,
-      "2025-Q2": 7569198.0,
-      "2025-Q3": 12843609.0,
-      "2025-Q4": 17706842.0,
-      "2026-Q1": 3153212.0,
-      "2026-Q2": 7273729.0
+      "2026-Q1": 3153212000000.0,
+      "2026-Q2": 4120517000000.0
     },
     "eps": {
-      "2024-Q4": 450.0,
-      "2025-Q1": 4.8,
-      "2025-Q2": 91.10655456809303,
-      "2025-Q3": 37.594326152018496,
-      "2025-Q4": 580.0,
       "2026-Q1": 3.1,
-      "2026-Q2": 102.39999999999999
+      "2026-Q2": 99.3
     },
     "net_income": {
-      "2024-Q4": 1174207.0,
-      "2025-Q1": 16703.0,
-      "2025-Q2": 319026.0,
-      "2025-Q3": 1316433.0,
-      "2025-Q4": 2036718.0,
-      "2026-Q1": 10727.0,
-      "2026-Q2": 358681.0
-    }
+      "2026-Q1": 10727000000.0,
+      "2026-Q2": 347954000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2024": 450.0,
       "2025": 580.0
     },
     "revenue_per_share": {
-      "2024": 11457306.0,
-      "2025": 17706842.0
+      "2025": 17706842000000.0
     }
   },
   "statistik": {
-    "market_cap": 444713369600,
-    "enterprise_value": 444721397760,
+    "market_cap": 364174737408,
+    "enterprise_value": 367684419584,
     "shares_outstanding": 3501680000,
     "free_float_pct": 18.007999988576913
   },
   "akumulasi": {
-    "score": 3.3,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.0771,
-    "vol_trend": 0.487,
-    "price_chg_20d": -7.3
+    "score": 4.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0176,
+    "vol_trend": 0.345,
+    "price_chg_20d": -24.46
   },
   "neraca": {
     "aset": 35575423.0,
@@ -84,6 +68,7 @@
     "aset_tetap": 28540476.0,
     "liabilitas": 11733605.0,
     "liabilitas_jangka_pendek": 5079935.0,
+    "liabilitas_jangka_panjang": 6653670.0,
     "utang_usaha": 3346926.0,
     "utang_bank": 280018.0,
     "ekuitas": 23841818.0,
@@ -101,7 +86,7 @@
     "beban_pajak": -95770.0,
     "laba_bersih": 358681.0,
     "laba_induk": 358681.0,
-    "eps_basic": 102.39999999999999,
+    "eps_basic": 0.0001024,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -110,6 +95,5 @@
     "arus_kas_pendanaan": null,
     "capex": 48659.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

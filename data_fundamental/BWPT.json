@@ -3,80 +3,61 @@
   "nama": "PT Eagle High Plantations Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 105.0,
-  "update": "2026-10-11 13:01",
-  "periode_terbaru": "2026-tw2",
+  "harga": 83.0,
+  "update": "2026-10-21 11:42",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 8.145849,
-    "pb": 1.0893698,
-    "ps": 0.52386767,
-    "roe": 0.07040356188138863,
-    "eps": 12.89,
-    "de": 2.300530075209275,
-    "margin_net": 0.06487940137221375,
-    "current_ratio": 0.7667799335151574,
-    "roa": 0.021239972954470644,
-    "bv": 96.39,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "pe": 7.537771372795051,
+    "pb": 0.9016319353824234,
+    "ps": 0.49256413587691794,
+    "roe": 0.026670352557558015,
+    "eps": 11.011212186609887,
+    "de": 2.5249253135886858,
+    "margin_net": 0.055465464201147785,
+    "current_ratio": 0.7046105476994791,
+    "roa": 0.007531100161562353,
+    "bv": 92.05530188412847
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 943361.0,
-      "2024-Q2": 2012405.0,
-      "2024-Q3": 2932488.0,
-      "2024-Q4": 4302676.0,
-      "2025-Q1": 1279607.0,
-      "2025-Q2": 2778546.0,
-      "2025-Q3": 4197208.0,
-      "2025-Q4": 5761296.0,
-      "2026-Q1": 1377614.0,
-      "2026-Q2": 3255178.0
+      "2024-Q1": 943361000000.0,
+      "2024-Q2": 1069044000000.0,
+      "2024-Q3": 920083000000.0,
+      "2026-Q1": 1377614000000.0,
+      "2026-Q2": 1877564000000.0
     },
     "eps": {
-      "2024-Q1": 1.53,
-      "2024-Q2": 3.85,
-      "2024-Q3": 5.751297550679322,
-      "2024-Q4": 8.360788601574699,
-      "2025-Q1": 2.21,
-      "2025-Q2": 5.52,
-      "2025-Q3": 8.72,
-      "2025-Q4": 11.62,
-      "2026-Q1": 2.46,
-      "2026-Q2": 6.7859231869122345
+      "2024-Q1": 1530000.0,
+      "2024-Q2": 2320000.0,
+      "2024-Q3": 1901297.55,
+      "2026-Q1": 2460000.0,
+      "2026-Q2": 4325923.19
     },
     "net_income": {
-      "2024-Q1": 47493.0,
-      "2024-Q2": 119708.0,
-      "2024-Q3": 178994.0,
-      "2024-Q4": 260210.0,
-      "2025-Q1": 68744.0,
-      "2025-Q2": 171888.0,
-      "2025-Q3": 271447.0,
-      "2025-Q4": 361720.0,
-      "2026-Q1": 76410.0,
-      "2026-Q2": 211194.0
-    }
+      "2024-Q1": 47493000000.0,
+      "2024-Q2": 72215000000.0,
+      "2024-Q3": 59286000000.0,
+      "2026-Q1": 76410000000.0,
+      "2026-Q2": 134784000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
       "2022": 550000.0,
-      "2023": 5.68,
-      "2024": 8.360788601574699,
-      "2025": 11.62
+      "2023": 5680000.0,
+      "2025": 11620000.0
     },
     "revenue_per_share": {
-      "2022": 4574124.0,
-      "2023": 4204612.0,
-      "2024": 4302676.0,
-      "2025": 5761296.0
+      "2022": 4574124000000.0,
+      "2023": 4204612000000.0,
+      "2025": 5761296000000.0
     }
   },
   "statistik": {
-    "market_cap": 3267848568832,
-    "enterprise_value": 7776827867136,
+    "market_cap": 2583156490240,
+    "enterprise_value": 7154380046336,
     "shares_outstanding": 31122368200,
     "free_float_pct": 24.288999999685114
   },
@@ -84,45 +65,45 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2861,
-    "vol_trend": 0.228,
-    "price_chg_20d": -16.0
+    "cmf": -0.175,
+    "vol_trend": 0.188,
+    "price_chg_20d": -24.78
   },
   "neraca": {
-    "aset": 9943233.0,
-    "aset_lancar": 2037447.0,
-    "kas": 199759.0,
-    "piutang_usaha": 163363.0,
-    "persediaan": 452923.0,
-    "aset_tetap": 3395579.0,
-    "liabilitas": 6901045.0,
-    "liabilitas_jangka_pendek": 2657147.0,
-    "utang_usaha": 163363.0,
-    "utang_bank": 136701.0,
-    "ekuitas": 2999763.0,
-    "ekuitas_induk": 2999763.0,
+    "aset": 10145928.0,
+    "aset_lancar": 2001330.0,
+    "kas": 297161.0,
+    "piutang_usaha": 23905.0,
+    "persediaan": 409911.0,
+    "aset_tetap": 3383652.0,
+    "liabilitas": 7233858.0,
+    "liabilitas_jangka_pendek": 2840335.0,
+    "liabilitas_jangka_panjang": 4393523.0,
+    "utang_usaha": 23905.0,
+    "utang_bank": 91923.0,
+    "ekuitas": 2864979.0,
+    "ekuitas_induk": 2864979.0,
     "modal_saham": null,
-    "saldo_laba": 211194.0
+    "saldo_laba": -3631543.0
   },
   "laba_rugi": {
-    "pendapatan": 3255178.0,
-    "beban_pokok": 2455848.0,
+    "pendapatan": 1377614.0,
+    "beban_pokok": 1001392.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 408201.0,
-    "beban_pajak": -193126.0,
-    "laba_bersih": 211194.0,
-    "laba_induk": 211194.0,
-    "eps_basic": 6.7859231869122345,
+    "laba_sebelum_pajak": 182934.0,
+    "beban_pajak": -97977.0,
+    "laba_bersih": 76410.0,
+    "laba_induk": 76410.0,
+    "eps_basic": 2.46,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 149789.0,
+    "capex": 58412.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

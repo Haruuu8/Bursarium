@@ -3,64 +3,61 @@
   "nama": "PT Asuransi Harta Aman Pratama Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 78.0,
-  "update": "2026-10-11 12:13",
+  "harga": 50.0,
+  "update": "2026-10-21 11:14",
   "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 2.2179885,
-    "ps": 0.5608314,
+    "pe": 3.056329184480948e-05,
+    "pb": 1.73374851821782,
+    "ps": 2.661354666809073e-06,
     "roe": 0.0012378140051025333,
-    "eps": 1.39,
+    "eps": 1635949.4341736434,
     "de": 4.141008528964927,
-    "margin_net": null,
+    "margin_net": 0.0012803853646064574,
     "current_ratio": null,
     "roa": 0.00024077260291022128,
-    "bv": 35.17,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2024",
-    "eps_reliable": true,
-    "eps_period": "2024-audit"
+    "bv": 28.839245989030015
   },
   "quarterly": {
-    "revenue": {},
+    "revenue": {
+      "2024-Q1": 5.4440524852e+16,
+      "2024-Q2": 2.7013813637e+16,
+      "2024-Q3": -8.1344710453e+16,
+      "2026-Q1": 9.5945251003e+16,
+      "2026-Q2": 7.0641592221e+16
+    },
     "eps": {
-      "2024-Q1": -1.63,
-      "2024-Q2": 100000.0,
-      "2024-Q3": 320000.0,
-      "2024-Q4": 1.39,
-      "2025-Q1": -1.13,
-      "2025-Q2": -2.32,
-      "2025-Q3": -1.55,
-      "2025-Q4": -6.23,
+      "2024-Q1": -1630000.0,
+      "2024-Q2": 1730000.0,
+      "2024-Q3": 220000.0,
       "2026-Q1": 370000.0,
-      "2026-Q2": 40000.0
+      "2026-Q2": -330000.0
     },
     "net_income": {
-      "2024-Q1": -7977240976.0,
-      "2024-Q2": 68680622.0,
-      "2024-Q3": 1584355992.0,
-      "2024-Q4": 6811452597.0,
-      "2025-Q1": -5520835593.0,
-      "2025-Q2": -11362169679.0,
-      "2025-Q3": -7581171013.0,
-      "2025-Q4": -30505548108.0,
-      "2026-Q1": 1810834424.0,
-      "2026-Q2": 213295356.0
-    }
+      "2024-Q1": -7977240976000000.0,
+      "2024-Q2": 8045921598000000.0,
+      "2024-Q3": 1515675370000000.0,
+      "2026-Q1": 1810834424000000.0,
+      "2026-Q2": -1597539068000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": -1.52,
-      "2023": 1.02,
-      "2024": 1.39,
-      "2025": -6.23
+      "2022": -1520000.0,
+      "2023": 1020000.0,
+      "2025": -6230000.0
     },
-    "revenue_per_share": {}
+    "revenue_per_share": {
+      "2022": 2.36523577605e+17,
+      "2023": 2.17294807638e+17,
+      "2025": 2.30542039582e+17
+    }
   },
   "statistik": {
-    "market_cap": 466054512640,
-    "enterprise_value": 292660936704,
+    "market_cap": 298752901120,
+    "enterprise_value": 258360934400,
     "shares_outstanding": 5975057737,
     "free_float_pct": 21.20305871112957
   },
@@ -68,9 +65,9 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3118,
-    "vol_trend": 5.3,
-    "price_chg_20d": -20.41
+    "cmf": -0.4539,
+    "vol_trend": 1.297,
+    "price_chg_20d": -47.0
   },
   "neraca": {
     "aset": 885878847601.0,
@@ -81,6 +78,7 @@
     "aset_tetap": 5495908932.0,
     "liabilitas": 713562687725.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 172316159876.0,
@@ -89,7 +87,7 @@
     "saldo_laba": 775991100.0
   },
   "laba_rugi": {
-    "pendapatan": null,
+    "pendapatan": 166586843224.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
@@ -98,7 +96,7 @@
     "beban_pajak": null,
     "laba_bersih": 213295356.0,
     "laba_induk": 213295356.0,
-    "eps_basic": 40000.0,
+    "eps_basic": 0.04,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -107,6 +105,5 @@
     "arus_kas_pendanaan": null,
     "capex": 69466044.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

@@ -3,70 +3,58 @@
   "nama": "PT Idea Indonesia Akademi Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Education & Training Services",
-  "harga": 214.0,
-  "update": "2026-10-11 10:56",
+  "harga": 190.0,
+  "update": "2026-10-21 10:28",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 97.716896,
-    "pb": 3.5658348,
-    "ps": 9.996887,
+    "pe": 0.00010558852662221165,
+    "pb": 3.1659202014734102,
+    "ps": 9.857967175882123,
     "roe": 0.014991781317305672,
-    "eps": 2.19,
+    "eps": 1799437.9321136537,
     "de": 0.1894843026443926,
     "margin_net": 0.09336210563059791,
     "current_ratio": 3.4982197760092784,
     "roa": 0.012603088311641709,
-    "bv": 60.01,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 60.014146885816814
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q4": 22345047806.0,
-      "2025-Q2": 12799249315.0,
-      "2025-Q4": 25303912553.0,
-      "2026-Q2": 10238577660.0
-    },
-    "eps": {
-      "2024-Q4": 790000.0,
-      "2025-Q2": 1.95,
-      "2025-Q4": 2.60778,
-      "2026-Q2": 900000.0
-    },
-    "net_income": {
-      "2024-Q4": 836025380.0,
-      "2025-Q2": 2070034744.0,
-      "2025-Q4": 2768931185.0,
-      "2026-Q2": 955895169.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
+      "2021": 2000000.0,
+      "2022": 1000000.0,
       "2023": 890000.0,
-      "2024": 790000.0,
-      "2025": 2.60778
+      "2025": 2607780.0
     },
     "revenue_per_share": {
-      "2023": 20280739163.0,
-      "2024": 22345047806.0,
-      "2025": 25303912553.0
+      "2021": 1.5358970719e+16,
+      "2022": 1.8272772862e+16,
+      "2023": 2.0280739163e+16,
+      "2025": 2.5303912553e+16
     }
   },
   "statistik": {
-    "market_cap": 227361619968,
-    "enterprise_value": 231275970560,
+    "market_cap": 201863118848,
+    "enterprise_value": 194090663936,
     "shares_outstanding": 1062437500,
     "free_float_pct": 33.42499996470381
   },
   "akumulasi": {
-    "score": 8.5,
+    "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.9906,
-    "vol_trend": 3.181,
-    "price_chg_20d": 174.36
+    "cmf": 0.4163,
+    "vol_trend": 1.188,
+    "price_chg_20d": 32.59
   },
   "neraca": {
     "aset": 75846105761.0,
@@ -77,6 +65,7 @@
     "aset_tetap": 61499233072.0,
     "liabilitas": 12081761711.0,
     "liabilitas_jangka_pendek": 3951302778.0,
+    "liabilitas_jangka_panjang": 8130458933.0,
     "utang_usaha": 6055206365.0,
     "utang_bank": 2358388237.0,
     "ekuitas": 63761280182.0,
@@ -94,7 +83,7 @@
     "beban_pajak": null,
     "laba_bersih": 955895169.0,
     "laba_induk": 955895169.0,
-    "eps_basic": 900000.0,
+    "eps_basic": 0.9,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -103,6 +92,5 @@
     "arus_kas_pendanaan": null,
     "capex": 266983747.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

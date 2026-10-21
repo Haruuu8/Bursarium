@@ -3,73 +3,54 @@
   "nama": "PT Minahasa Membangun Hebat Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 398.0,
-  "update": "2026-10-11 11:46",
+  "harga": 270.0,
+  "update": "2026-10-21 10:59",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 5.0358715,
-    "ps": 18.01632,
+    "pe": 127.92723200809091,
+    "pb": 3.416286639031472,
+    "ps": 13.025086275802595,
     "roe": 0.013352460556699162,
-    "eps": 2.63,
+    "eps": 2.1105748616754525,
     "de": 0.01958187823843977,
     "margin_net": 0.10181636912912184,
     "current_ratio": 90.17050932783185,
     "roa": 0.013096015966631912,
-    "bv": 79.03,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 79.03318091497903
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 17821310986.0,
-      "2024-Q4": 39474192963.0,
-      "2025-Q2": 12327113386.0,
-      "2025-Q4": 24531327922.0,
-      "2026-Q2": 10786877340.0
-    },
-    "eps": {
-      "2024-Q2": 4.08,
-      "2024-Q4": 8.14,
-      "2025-Q2": 2.03,
-      "2025-Q4": 2.63,
-      "2026-Q2": 1.06
-    },
-    "net_income": {
-      "2024-Q2": 4245815574.0,
-      "2024-Q4": 8470095828.0,
-      "2025-Q2": 2111611300.0,
-      "2025-Q4": 2741459295.0,
-      "2026-Q2": 1098280685.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2023": 10.75,
-      "2024": 8.14,
-      "2025": 2.63
+      "2023": 10750000.0,
+      "2025": 2630000.0
     },
     "revenue_per_share": {
-      "2023": 37502740938.0,
-      "2024": 39474192963.0,
-      "2025": 24531327922.0
+      "2023": 3.7502740938e+16,
+      "2025": 2.4531327922e+16
     }
   },
   "statistik": {
-    "market_cap": 414214848512,
-    "enterprise_value": 408470388736,
+    "market_cap": 281000017920,
+    "enterprise_value": 298151870464,
     "shares_outstanding": 1040740800,
     "free_float_pct": 23.132000013836297
   },
   "akumulasi": {
-    "score": 8.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.4344,
-    "vol_trend": 1.564,
-    "price_chg_20d": 17.06
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1863,
+    "vol_trend": 1.418,
+    "price_chg_20d": -27.72
   },
   "neraca": {
     "aset": 83863725258.0,
@@ -80,6 +61,7 @@
     "aset_tetap": 2141993662.0,
     "liabilitas": 1610669326.0,
     "liabilitas_jangka_pendek": 689946078.0,
+    "liabilitas_jangka_panjang": 920723248.0,
     "utang_usaha": 8324905692.0,
     "utang_bank": 2000000000.0,
     "ekuitas": 82253055932.0,
@@ -106,6 +88,5 @@
     "arus_kas_pendanaan": null,
     "capex": 2141993662.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

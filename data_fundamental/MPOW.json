@@ -3,77 +3,57 @@
   "nama": "PT Megapower Makmur Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Independent Power Producers",
-  "harga": 101.0,
-  "update": "2026-10-11 15:45",
-  "periode_terbaru": "2026-tw2",
+  "harga": 83.0,
+  "update": "2026-10-21 13:31",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 15.35888,
-    "pb": 0.8581284,
-    "ps": 3.154275,
-    "roe": -0.08200436693665716,
-    "eps": 6.58,
-    "de": 0.35520065009036084,
-    "margin_net": -0.9433745770311716,
-    "current_ratio": 0.3643303005752433,
-    "roa": -0.06051086747279036,
-    "bv": 117.7,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": null
+    "pe": null,
+    "pb": 0.0006807287818519749,
+    "ps": 0.004902817805410117,
+    "roe": -0.04446577078630516,
+    "eps": -21686.516413909267,
+    "de": 0.34758727651870847,
+    "margin_net": -1.28102456399317,
+    "current_ratio": 0.3665813164075066,
+    "roa": -0.03299657956193819,
+    "bv": 121928.14849725045
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 18655237.0,
-      "2024-Q3": 26682666.0,
-      "2024-Q4": 32692056.0,
-      "2025-Q1": 7974017.0,
-      "2025-Q2": 16199167.0,
-      "2025-Q3": 25084762.0,
-      "2025-Q4": 34000673.0,
-      "2026-Q1": 3457744.0,
-      "2026-Q2": 8358772.0
+      "2024-Q3": 8027429000000.0,
+      "2026-Q1": 3457744000000.0
     },
     "eps": {
-      "2024-Q2": -2020.0,
-      "2024-Q3": 1210.0,
-      "2024-Q4": -4110.0,
-      "2025-Q1": -2070.0,
-      "2025-Q2": -1950.0,
-      "2025-Q3": -4810.0,
-      "2025-Q4": -14000.0,
-      "2026-Q1": 5420.0,
-      "2026-Q2": -9650.0
+      "2024-Q3": 3230.0,
+      "2026-Q1": 5420.0
     },
     "net_income": {
-      "2024-Q2": -1646541.0,
-      "2024-Q3": 981346.0,
-      "2024-Q4": -3361044.0,
-      "2025-Q1": -1689366.0,
-      "2025-Q2": -1596397.0,
-      "2025-Q3": -3925825.0,
-      "2025-Q4": -11203124.0,
-      "2026-Q1": -4429455.0,
-      "2026-Q2": -7885453.0
-    }
+      "2024-Q3": 2627887000000.0,
+      "2026-Q1": -4429455000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": -13.36,
+      "2021": 3070000.0,
+      "2022": -13360000.0,
       "2023": -4100.0,
-      "2024": -4110.0,
       "2025": -14000.0
     },
     "revenue_per_share": {
-      "2022": 40081965.0,
-      "2023": 28816886.0,
-      "2024": 32692056.0,
-      "2025": 34000673.0
+      "2021": 41965285000000.0,
+      "2022": 40081965000000.0,
+      "2023": 28816886000000.0,
+      "2025": 34000673000000.0
     }
   },
   "statistik": {
-    "market_cap": 82516705280,
-    "enterprise_value": 112722575360,
+    "market_cap": 67810754560,
+    "enterprise_value": 98833620992,
     "shares_outstanding": 816997053,
     "free_float_pct": 67.21499997870862
   },
@@ -81,45 +61,45 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2978,
-    "vol_trend": 0.311,
-    "price_chg_20d": -10.62
+    "cmf": -0.2801,
+    "vol_trend": 0.236,
+    "price_chg_20d": -24.32
   },
   "neraca": {
-    "aset": 130314658.0,
-    "aset_lancar": 11363375.0,
-    "kas": 397108.0,
-    "piutang_usaha": 9420813.0,
-    "persediaan": 549152.0,
-    "aset_tetap": 115244001.0,
-    "liabilitas": 34155718.0,
-    "liabilitas_jangka_pendek": 31189761.0,
-    "utang_usaha": 9420813.0,
-    "utang_bank": 1103528.0,
-    "ekuitas": 96158940.0,
-    "ekuitas_induk": 96158940.0,
+    "aset": 134239823.0,
+    "aset_lancar": 11447954.0,
+    "kas": 721302.0,
+    "piutang_usaha": 7602634.0,
+    "persediaan": 562003.0,
+    "aset_tetap": 119819778.0,
+    "liabilitas": 34624885.0,
+    "liabilitas_jangka_pendek": 31228962.0,
+    "liabilitas_jangka_panjang": 3395923.0,
+    "utang_usaha": 7602634.0,
+    "utang_bank": 1090526.0,
+    "ekuitas": 99614938.0,
+    "ekuitas_induk": 99614938.0,
     "modal_saham": null,
-    "saldo_laba": -7174939.0
+    "saldo_laba": -3718941.0
   },
   "laba_rugi": {
-    "pendapatan": 8358772.0,
-    "beban_pokok": 13024732.0,
+    "pendapatan": 3457744.0,
+    "beban_pokok": 6493080.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -9981307.0,
-    "beban_pajak": 2095854.0,
-    "laba_bersih": -7885453.0,
-    "laba_induk": -7885453.0,
-    "eps_basic": -9650.0,
+    "laba_sebelum_pajak": -5604815.0,
+    "beban_pajak": 1175360.0,
+    "laba_bersih": -4429455.0,
+    "laba_induk": -4429455.0,
+    "eps_basic": 0.00542,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 13850.0,
+    "capex": 9878.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

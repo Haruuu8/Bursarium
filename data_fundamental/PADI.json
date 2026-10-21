@@ -3,58 +3,57 @@
   "nama": "PT Minna Padi Investama Sekuritas Tbk",
   "sektor": "Financial Services",
   "industri": "Capital Markets",
-  "harga": 41.0,
-  "update": "2026-10-11 14:31",
-  "periode_terbaru": "2026-tw2",
+  "harga": 35.0,
+  "update": "2026-10-21 12:46",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 3.2892098,
-    "ps": 12.276013,
-    "roe": -0.10115139484889654,
-    "eps": null,
-    "de": 0.11547820794299618,
-    "margin_net": null,
+    "pe": 16.40788603556339,
+    "pb": 2.877357791442192,
+    "ps": 0.0007915072566916666,
+    "roe": 0.043841080216026035,
+    "eps": 2.133120617984486,
+    "de": 0.2904508445047838,
+    "margin_net": 48.23944138666667,
     "current_ratio": null,
-    "roa": -0.09067984845300146,
-    "bv": 12.46,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2025-audit"
+    "roa": 0.03397346005290906,
+    "bv": 12.163937381752328
   },
   "quarterly": {
-    "revenue": {},
+    "revenue": {
+      "2024-Q3": 1.0499792037e+16,
+      "2026-Q1": 150000000000000.0
+    },
     "eps": {
-      "2024-Q2": -2.74,
-      "2025-Q1": -30000.0,
-      "2025-Q2": 270000.0,
-      "2025-Q3": 2.19,
-      "2025-Q4": 160000.0,
-      "2026-Q1": 640000.0,
-      "2026-Q2": -1.26
+      "2024-Q3": 180000.0,
+      "2026-Q1": 640000.0
     },
     "net_income": {
-      "2024-Q2": -30962926003.0,
-      "2025-Q1": -392469702.0,
-      "2025-Q2": 2996498297.0,
-      "2025-Q3": 24740733289.0,
-      "2025-Q4": 1812542233.0,
-      "2026-Q1": 7235916208.0,
-      "2026-Q2": -14256712945.0
-    }
+      "2024-Q3": 1963292587000000.0,
+      "2026-Q1": 7235916208000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": -4.16,
-      "2023": -2.15,
-      "2024": -930000.0,
+      "2021": -4980000.0,
+      "2022": -4160000.0,
+      "2023": -2150000.0,
       "2025": 160000.0
     },
-    "revenue_per_share": {}
+    "revenue_per_share": {
+      "2021": 78620000000.0,
+      "2022": 3.610968715e+16,
+      "2023": 3.3705735088e+16,
+      "2025": 1150000000000000.0
+    }
   },
   "statistik": {
-    "market_cap": 556316557312,
-    "enterprise_value": 378123288576,
+    "market_cap": 474904363008,
+    "enterprise_value": 321587085312,
     "shares_outstanding": 13568695829,
     "free_float_pct": 79.22833333048696
   },
@@ -62,45 +61,45 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2764,
-    "vol_trend": 0.695,
-    "price_chg_20d": -43.06
+    "cmf": -0.2018,
+    "vol_trend": 0.794,
+    "price_chg_20d": -37.93
   },
   "neraca": {
-    "aset": 157220299639.0,
+    "aset": 212987320006.0,
     "aset_lancar": null,
-    "kas": 6436401365.0,
+    "kas": 10107040143.0,
     "piutang_usaha": null,
     "persediaan": null,
-    "aset_tetap": 6638974616.0,
-    "liabilitas": 16275995645.0,
+    "aset_tetap": 6868089108.0,
+    "liabilitas": 47938553590.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": 6765756302.0,
-    "ekuitas": 140944303994.0,
-    "ekuitas_induk": 140944303994.0,
+    "ekuitas": 165048766416.0,
+    "ekuitas_induk": 165048766416.0,
     "modal_saham": null,
     "saldo_laba": 1100000000.0
   },
   "laba_rugi": {
-    "pendapatan": null,
+    "pendapatan": 150000000.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -14256712945.0,
-    "beban_pajak": 108565157.0,
-    "laba_bersih": -14256712945.0,
-    "laba_induk": -14256712945.0,
-    "eps_basic": -1.26,
+    "laba_sebelum_pajak": 7235916208.0,
+    "beban_pajak": 54335882.0,
+    "laba_bersih": 7235916208.0,
+    "laba_induk": 7235916208.0,
+    "eps_basic": 0.64,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 195437539.0,
+    "capex": null,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

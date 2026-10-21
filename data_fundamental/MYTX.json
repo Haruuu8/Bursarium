@@ -4,71 +4,51 @@
   "sektor": "Consumer Cyclical",
   "industri": "Textile Manufacturing",
   "harga": 41.0,
-  "update": "2026-10-11 14:32",
-  "periode_terbaru": "2026-tw2",
+  "update": "2026-10-21 12:44",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 3.5344827,
-    "pb": -0.5943063,
-    "ps": 0.30424362,
-    "roe": -0.10842390643388647,
-    "eps": 11.6,
-    "de": -7.577790583890119,
-    "margin_net": 0.11402524930540799,
-    "current_ratio": 0.28169571537925975,
-    "roa": 0.016542082699851503,
-    "bv": -0.0,
-    "bv_src": "ekuitas/penuh",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "pe": null,
+    "pb": null,
+    "ps": 0.025100567541850825,
+    "roe": 0.021198925355992916,
+    "eps": -92.79802055029148,
+    "de": -6.775042555082342,
+    "margin_net": -0.05681178006274761,
+    "current_ratio": 0.2803055323087644,
+    "roa": -0.0036872496488581387,
+    "bv": -1094.3717546047394
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 670585.0,
-      "2024-Q3": 974363.0,
-      "2024-Q4": 1263144.0,
-      "2025-Q1": 243878.0,
-      "2025-Q2": 490548.0,
-      "2025-Q3": 762652.0,
-      "2025-Q4": 1026363.0,
-      "2026-Q1": 218335.0,
-      "2026-Q2": 508212.0
+      "2024-Q3": 303778000000.0,
+      "2026-Q1": 218335000000.0
     },
     "eps": {
-      "2024-Q2": 1.9929999999999999,
-      "2024-Q3": -6.57,
-      "2024-Q4": -9.41,
-      "2025-Q1": 1.85,
-      "2025-Q2": -1.91,
-      "2025-Q3": 1.44,
-      "2025-Q4": 2.21,
-      "2026-Q1": -1.5999999999999999,
-      "2026-Q2": 7.48
+      "2024-Q3": -6570001.99,
+      "2026-Q1": -1.6
     },
     "net_income": {
-      "2024-Q2": 154397.0,
-      "2024-Q3": -50870.0,
-      "2024-Q4": -72885.0,
-      "2025-Q1": 14325.0,
-      "2025-Q2": -14820.0,
-      "2025-Q3": 11139.0,
-      "2025-Q4": 17140.0,
-      "2026-Q1": -12404.0,
-      "2026-Q2": 57949.0
-    }
+      "2024-Q3": -205267000000.0,
+      "2026-Q1": -12404000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": -2.65,
-      "2023": -43.84,
-      "2024": -9.41,
-      "2025": 2.21
+      "2021": -17390000.0,
+      "2022": -2650000.0,
+      "2023": -43840000.0,
+      "2025": 2210000.0
     },
     "revenue_per_share": {
-      "2022": 1623733.0,
-      "2023": 1207058.0,
-      "2024": 1263144.0,
-      "2025": 1026363.0
+      "2021": 1702852000000.0,
+      "2022": 1623733000000.0,
+      "2023": 1207058000000.0,
+      "2025": 1026363000000.0
     }
   },
   "statistik": {
@@ -86,40 +66,40 @@
     "price_chg_20d": 0.0
   },
   "neraca": {
-    "aset": 3503126.0,
-    "aset_lancar": 528813.0,
-    "kas": 11620.0,
-    "piutang_usaha": 58576.0,
-    "persediaan": 436274.0,
-    "aset_tetap": 2950608.0,
-    "liabilitas": 4050079.0,
-    "liabilitas_jangka_pendek": 1877249.0,
-    "utang_usaha": 58576.0,
-    "utang_bank": 39487.0,
-    "ekuitas": -534467.0,
-    "ekuitas_induk": -534467.0,
+    "aset": 3364025.0,
+    "aset_lancar": 524515.0,
+    "kas": 16101.0,
+    "piutang_usaha": 63706.0,
+    "persediaan": 401095.0,
+    "aset_tetap": 2816801.0,
+    "liabilitas": 3964240.0,
+    "liabilitas_jangka_pendek": 1871226.0,
+    "liabilitas_jangka_panjang": 2093014.0,
+    "utang_usaha": 63706.0,
+    "utang_bank": 45745.0,
+    "ekuitas": -585124.0,
+    "ekuitas_induk": -585124.0,
     "modal_saham": null,
     "saldo_laba": 2000.0
   },
   "laba_rugi": {
-    "pendapatan": 508212.0,
-    "beban_pokok": 510190.0,
+    "pendapatan": 218335.0,
+    "beban_pokok": 229154.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 60112.0,
+    "laba_sebelum_pajak": -12846.0,
     "beban_pajak": null,
-    "laba_bersih": 57949.0,
-    "laba_induk": 57949.0,
-    "eps_basic": 7.48,
+    "laba_bersih": -12404.0,
+    "laba_induk": -12404.0,
+    "eps_basic": -1.6e-06,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 2255.0,
+    "capex": 1502.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

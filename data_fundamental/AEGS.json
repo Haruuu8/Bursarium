@@ -3,73 +3,54 @@
   "nama": "PT. Anugerah Spareparts Sejahtera Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 47.0,
-  "update": "2026-10-11 11:49",
+  "harga": 40.0,
+  "update": "2026-10-21 11:01",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 0.6815941,
-    "ps": 1.677947,
+    "pe": 0.00016402924338280496,
+    "pb": 0.5800796876764764,
+    "ps": 1.2861331882356737,
     "roe": 0.0017682203359394562,
-    "eps": null,
+    "eps": 243858.95572687354,
     "de": 0.058306861361323764,
     "margin_net": 0.007840877405220647,
     "current_ratio": 10.005345128453547,
     "roa": 0.0016708011641018324,
-    "bv": 68.96,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2025-audit"
+    "bv": 68.95604319506685
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 13172179187.0,
-      "2024-Q4": 28718255655.0,
-      "2025-Q2": 13343350591.0,
-      "2025-Q4": 25879044954.0,
-      "2026-Q2": 15645047188.0
-    },
-    "eps": {
-      "2024-Q2": 3.46,
-      "2024-Q4": 1.03,
-      "2025-Q2": -160000.0,
-      "2025-Q4": 257848.9733330254,
-      "2026-Q2": 121929.47786343675
-    },
-    "net_income": {
-      "2024-Q2": 276579162.0,
-      "2024-Q4": 1031985790.0,
-      "2025-Q2": -157788012.0,
-      "2025-Q4": 259416881.0,
-      "2026-Q2": 122670897.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2023": 12.06739,
-      "2024": 1.03,
-      "2025": 257848.9733330254
+      "2023": 12067390.0,
+      "2025": 257848.97
     },
     "revenue_per_share": {
-      "2023": 30252091493.0,
-      "2024": 28718255655.0,
-      "2025": 25879044954.0
+      "2023": 3.0252091493e+16,
+      "2025": 2.5879044954e+16
     }
   },
   "statistik": {
-    "market_cap": 47285792768,
-    "enterprise_value": 35726794752,
+    "market_cap": 40243228672,
+    "enterprise_value": 27678150656,
     "shares_outstanding": 1006080721,
     "free_float_pct": 39.76600004841958
   },
   "akumulasi": {
-    "score": 4.7,
+    "score": 3.7,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0131,
-    "vol_trend": 0.407,
-    "price_chg_20d": -6.0
+    "cmf": -0.0503,
+    "vol_trend": 0.561,
+    "price_chg_20d": -20.41
   },
   "neraca": {
     "aset": 73420404316.0,
@@ -80,6 +61,7 @@
     "aset_tetap": 30015691539.0,
     "liabilitas": 4045058661.0,
     "liabilitas_jangka_pendek": 3392476375.0,
+    "liabilitas_jangka_panjang": 652582286.0,
     "utang_usaha": 6083604010.0,
     "utang_bank": null,
     "ekuitas": 69375345655.0,
@@ -97,7 +79,7 @@
     "beban_pajak": -228256671.0,
     "laba_bersih": 122670897.0,
     "laba_induk": 122670897.0,
-    "eps_basic": 121929.47786343675,
+    "eps_basic": 0.12192947786343676,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -106,6 +88,5 @@
     "arus_kas_pendanaan": null,
     "capex": 610850000.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

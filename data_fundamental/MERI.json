@@ -3,56 +3,48 @@
   "nama": "PT Merry Riana Edukasi Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Education & Training Services",
-  "harga": 107.0,
-  "update": "2026-10-11 12:08",
+  "harga": 83.0,
+  "update": "2026-10-21 11:10",
   "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 2.5097928,
-    "ps": 2.9096718,
+    "pe": 3.954256010290735e-05,
+    "pb": 1.9468623995681686,
+    "ps": 2.143694610195504,
     "roe": 0.012308651706550903,
-    "eps": 4.81,
+    "eps": 2099004.206707837,
     "de": 0.2529531950049616,
     "margin_net": 0.05421233740599132,
     "current_ratio": 7.109432088492442,
     "roa": 0.009750344279912108,
-    "bv": 42.63,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 42.63269968047569
   },
   "quarterly": {
     "revenue": {
-      "2025-Q2": 19714413699.0,
-      "2025-Q3": 28894879175.0,
-      "2025-Q4": 36373600013.0,
-      "2026-Q1": 10019617194.0
+      "2026-Q1": 1.0019617194e+16
     },
     "eps": {
-      "2025-Q2": 5.0,
-      "2025-Q3": 5.0,
-      "2025-Q4": 4.81,
       "2026-Q1": 520000.0
     },
     "net_income": {
-      "2025-Q2": 4361024794.0,
-      "2025-Q3": 4437468641.0,
-      "2025-Q4": 4393670139.0,
-      "2026-Q1": 543186868.0
-    }
+      "2026-Q1": 543186868000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 4.81
+      "2025": 4810000.0
     },
     "revenue_per_share": {
-      "2025": 36373600013.0
+      "2025": 3.6373600013e+16
     }
   },
   "statistik": {
-    "market_cap": 110759174144,
-    "enterprise_value": 68748533760,
+    "market_cap": 85915992064,
+    "enterprise_value": 45975621632,
     "shares_outstanding": 1035132500,
     "free_float_pct": 22.714999963772755
   },
@@ -60,9 +52,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4701,
-    "vol_trend": 0.333,
-    "price_chg_20d": -10.83
+    "cmf": -0.4209,
+    "vol_trend": 0.39,
+    "price_chg_20d": -27.35
   },
   "neraca": {
     "aset": 55709506496.0,
@@ -73,6 +65,7 @@
     "aset_tetap": 6891638766.0,
     "liabilitas": 11162949202.0,
     "liabilitas_jangka_pendek": 6464916349.0,
+    "liabilitas_jangka_panjang": 4698032853.0,
     "utang_usaha": 545128472.0,
     "utang_bank": null,
     "ekuitas": 44130493002.0,
@@ -90,7 +83,7 @@
     "beban_pajak": -72029674.0,
     "laba_bersih": 543186868.0,
     "laba_induk": 543186868.0,
-    "eps_basic": 520000.0,
+    "eps_basic": 0.52,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -99,6 +92,5 @@
     "arus_kas_pendanaan": null,
     "capex": 1283516033.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

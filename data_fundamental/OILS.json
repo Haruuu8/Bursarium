@@ -1,20 +1,80 @@
 {
   "kode": "OILS",
   "nama": "PT Indo Oil Perkasa Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 292.0,
+  "update": "2026-10-21 10:26",
   "periode_terbaru": "2026-tw1",
-  "update": "2026-10-09 18:51",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 1.6921838245634623e-05,
+    "pb": 1.3059844653052752,
+    "ps": 1.7155261966716693e-07,
+    "roe": 0.031357279327686206,
+    "eps": 17255808.48613348,
+    "de": 2.028095896644748,
+    "margin_net": 0.010614354307259875,
+    "current_ratio": 1.1625321872348213,
+    "roa": 0.010355444608749455,
+    "bv": 223.58612047636012
+  },
+  "quarterly": {
+    "revenue": {
+      "2024-Q1": 1.5735934946e+17,
+      "2024-Q2": 1.53038008783e+17,
+      "2024-Q3": 1.62537104496e+17,
+      "2026-Q1": 2.99915970284e+17
+    },
+    "eps": {
+      "2024-Q1": 900000.0,
+      "2024-Q2": 5060000.0,
+      "2024-Q3": 4280000.0,
+      "2026-Q1": 7010000.0
+    },
+    "net_income": {
+      "2024-Q1": -364764780000000.0,
+      "2024-Q2": 3072816801000000.0,
+      "2024-Q3": 1943646701000000.0,
+      "2026-Q1": 3183414371000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 20000000.0,
+      "2022": 15100000.0,
+      "2023": 6890000.0,
+      "2025": 16660000.0
+    },
+    "revenue_per_share": {
+      "2021": 3.75300332846e+17,
+      "2022": 5.14201823992e+17,
+      "2023": 6.00351628985e+17,
+      "2025": 1.035606692811e+18
+    }
+  },
+  "statistik": {
+    "market_cap": 132584521728,
+    "enterprise_value": 249845055488,
+    "shares_outstanding": 454056563,
+    "free_float_pct": 36.86899995320627
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1466,
+    "vol_trend": 0.446,
+    "price_chg_20d": 1.31
+  },
   "neraca": {
     "aset": 307414552564.0,
     "aset_lancar": 220931352600.0,
-    "aset_tidak_lancar": 86483199964.0,
     "kas": 4091062749.0,
     "piutang_usaha": 44997134306.0,
     "persediaan": 158398567433.0,
     "aset_tetap": 22785561912.0,
-    "investasi": 6426000000.0,
-    "properti_investasi": null,
-    "goodwill": null,
-    "aset_tidak_berwujud": null,
     "liabilitas": 205893807166.0,
     "liabilitas_jangka_pendek": 190043213449.0,
     "liabilitas_jangka_panjang": 15850593717.0,
@@ -22,9 +82,7 @@
     "utang_bank": 111590277344.0,
     "ekuitas": 101520745398.0,
     "ekuitas_induk": 101520745398.0,
-    "ekuitas_non_pengendali": null,
     "modal_saham": null,
-    "tambahan_modal_disetor": 23618650160.0,
     "saldo_laba": 2600000000.0
   },
   "laba_rugi": {
@@ -33,12 +91,10 @@
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "beban_bunga": 2418043805.0,
     "laba_sebelum_pajak": 3972794660.0,
     "beban_pajak": -789380289.0,
     "laba_bersih": 3183414371.0,
     "laba_induk": 3183414371.0,
-    "laba_komprehensif": null,
     "eps_basic": 7.01,
     "eps_diluted": null
   },
@@ -47,92 +103,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 22785561912.0,
-    "dividen_dibayar": null,
-    "kas_akhir_periode": null
-  },
-  "rasio": {
-    "roe": 0.031357279327686206,
-    "roa": 0.010355444608749455,
-    "der": 2.028095896644748,
-    "dar": 0.6697594679521081,
-    "current_ratio": 1.1625321872348213,
-    "margin_laba_bersih": 0.010614354307259875,
-    "margin_laba_kotor": null,
-    "margin_laba_operasi": null,
-    "quick_ratio": 0.32904508417913747
-  },
-  "quarterly": {
-    "revenue": {
-      "2024-Q1": 157359349460.0,
-      "2025-Q1": 201788831768.0,
-      "2026-Q1": 299915970284.0
-    },
-    "eps": {
-      "2024-Q1": 0.9,
-      "2025-Q1": 0.89,
-      "2026-Q1": 7.01
-    },
-    "net_income": {
-      "2024-Q1": -364764780.0,
-      "2025-Q1": 405702405.0,
-      "2026-Q1": 3183414371.0
-    },
-    "aset": {
-      "2024-Q1": 209532787020.0,
-      "2025-Q1": 259440715052.0,
-      "2026-Q1": 307414552564.0
-    }
-  },
-  "riwayat": {
-    "eps": {
-      "2022": 15.1,
-      "2023": 6.89
-    },
-    "revenue": {
-      "2022": 514201823992.0,
-      "2023": 600351628985.0
-    },
-    "net_income": {
-      "2022": 6817792930.0,
-      "2023": 3130446618.0
-    },
-    "ekuitas": {
-      "2022": 82788715624.0,
-      "2023": 84486179238.0
-    }
-  },
-  "rasio_kunci": {
-    "pe": null,
-    "pb": 1.4938763,
-    "ps": 0.13557522,
-    "roe": 0.23851,
-    "eps": 6.89,
-    "de": 0.9586199999999999,
-    "margin_net": 0.01906,
-    "current_ratio": 1.406,
-    "roa": 0.09847,
-    "bv": 259.73,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2023",
-    "eps_reliable": true,
-    "eps_period": "2023-audit"
-  },
-  "statistik": {
-    "market_cap": 176173957120,
-    "enterprise_value": 285261463552,
-    "shares_outstanding": 454056563,
-    "free_float_pct": 36.86899995320627
-  },
-  "akumulasi": {
-    "score": 7.1,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1034,
-    "vol_trend": 0.645,
-    "price_chg_20d": 24.36
-  },
-  "harga": 388.0,
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": null
+  }
 }

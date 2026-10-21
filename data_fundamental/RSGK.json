@@ -3,123 +3,103 @@
   "nama": "PT Kedoya Adyaraya Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 1050.0,
-  "update": "2026-10-11 11:00",
-  "periode_terbaru": "2026-tw2",
+  "harga": 1000.0,
+  "update": "2026-10-21 10:27",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 28.563658,
-    "pb": 1.1514256,
-    "ps": 1.9079771,
-    "roe": 0.02231229827727322,
-    "eps": 36.76,
-    "de": 0.25612375367477386,
-    "margin_net": 0.07236881683680785,
-    "current_ratio": 1.2765258576384722,
-    "roa": 0.017746538965002022,
-    "bv": 911.91,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "pe": 24.81037406880625,
+    "pb": 1.1091355511999095,
+    "ps": 1.8198675417614034,
+    "roe": 0.0111761268504453,
+    "eps": 40.30572039045903,
+    "de": 0.28154141509970654,
+    "margin_net": 0.07335107228590715,
+    "current_ratio": 1.2234813583444137,
+    "roa": 0.008712918977345335,
+    "bv": 901.6030537639498
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 224831926447.0,
-      "2024-Q3": 334485651980.0,
-      "2024-Q4": 441072473575.0,
-      "2025-Q1": 106953822706.0,
-      "2025-Q2": 219355918367.0,
-      "2025-Q3": 342061834526.0,
-      "2025-Q4": 469592692612.0,
-      "2026-Q1": 127711904667.0,
-      "2026-Q2": 261382969873.0
+      "2024-Q3": 1.09653725533e+17,
+      "2026-Q1": 1.27711904667e+17
     },
     "eps": {
-      "2024-Q2": 27.24,
-      "2024-Q3": 36.11,
-      "2024-Q4": 42.69,
-      "2025-Q1": 8.88,
-      "2025-Q2": 20.71,
-      "2025-Q3": 29.81,
-      "2025-Q4": 37.12,
-      "2026-Q1": 10.08,
-      "2026-Q2": 20.35
+      "2024-Q3": 8870000.0,
+      "2026-Q1": 10080000.0
     },
     "net_income": {
-      "2024-Q2": 25321064279.0,
-      "2024-Q3": 33569682500.0,
-      "2024-Q4": 39692367036.0,
-      "2025-Q1": 8257949612.0,
-      "2025-Q2": 19250013903.0,
-      "2025-Q3": 27710474801.0,
-      "2025-Q4": 34507058537.0,
-      "2026-Q1": 9367805151.0,
-      "2026-Q2": 18915976271.0
-    }
+      "2024-Q3": 8248618221000000.0,
+      "2026-Q1": 9367805151000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 52.79,
-      "2023": 50.8,
-      "2024": 42.69,
-      "2025": 37.12
+      "2021": 106440000.0,
+      "2022": 52790000.0,
+      "2023": 50800000.0,
+      "2025": 37120000.0
     },
     "revenue_per_share": {
-      "2022": 359156149470.0,
-      "2023": 373399870743.0,
-      "2024": 441072473575.0,
-      "2025": 469592692612.0
+      "2021": 4.35196072386e+17,
+      "2022": 3.5915614947e+17,
+      "2023": 3.73399870743e+17,
+      "2025": 4.69592692612e+17
     }
   },
   "statistik": {
-    "market_cap": 976158785536,
-    "enterprise_value": 1048394989568,
+    "market_cap": 929675018240,
+    "enterprise_value": 1001911222272,
     "shares_outstanding": 929675000,
     "free_float_pct": 9.558000053782235
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1672,
-    "vol_trend": 0.816,
-    "price_chg_20d": 1.94
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5223,
+    "vol_trend": 0.412,
+    "price_chg_20d": -4.31
   },
   "neraca": {
-    "aset": 1065896640934.0,
-    "aset_lancar": 122820314839.0,
-    "kas": 41963646938.0,
-    "piutang_usaha": 59071640309.0,
-    "persediaan": 14385562598.0,
-    "aset_tetap": 3748142040.0,
-    "liabilitas": 217137239147.0,
-    "liabilitas_jangka_pendek": 96214513873.0,
-    "utang_usaha": 59071640309.0,
+    "aset": 1075162660798.0,
+    "aset_lancar": 126560343658.0,
+    "kas": 50447326731.0,
+    "piutang_usaha": 52149509079.0,
+    "persediaan": 15311519489.0,
+    "aset_tetap": 3592021424.0,
+    "liabilitas": 235987400097.0,
+    "liabilitas_jangka_pendek": 103442805070.0,
+    "liabilitas_jangka_panjang": 132544595027.0,
+    "utang_usaha": 52149509079.0,
     "utang_bank": 21000000000.0,
-    "ekuitas": 847782511507.0,
-    "ekuitas_induk": 847782511507.0,
+    "ekuitas": 838197819008.0,
+    "ekuitas_induk": 838197819008.0,
     "modal_saham": null,
     "saldo_laba": 37187000000.0
   },
   "laba_rugi": {
-    "pendapatan": 261382969873.0,
-    "beban_pokok": 179806222430.0,
+    "pendapatan": 127711904667.0,
+    "beban_pokok": 87901593609.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 24721937136.0,
-    "beban_pajak": -5804659508.0,
-    "laba_bersih": 18915976271.0,
-    "laba_induk": 18915976271.0,
-    "eps_basic": 20.35,
+    "laba_sebelum_pajak": 11981381815.0,
+    "beban_pajak": -2611723894.0,
+    "laba_bersih": 9367805151.0,
+    "laba_induk": 9367805151.0,
+    "eps_basic": 10.08,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 3748142040.0,
+    "capex": 3592021424.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

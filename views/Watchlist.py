@@ -93,41 +93,29 @@ def load_nama():
 
 
 def list_kandidat_files():
-    """Return list file kandidat, sorted by tanggal di filename (DESC = terbaru dulu).
-    
-    ⚠️ JANGAN pakai os.path.getmtime() — di Streamlit Cloud, mtime di-reset
-    oleh git clone/pull sehingga tidak reliable. Selalu pakai nama file.
-    Format: kandidat_YYYY-MM-DD.csv → sort alfabet = sort tanggal
-    """
+    """Return list file kandidat, sorted by tanggal di filename (DESC = terbaru dulu)."""
     if not os.path.exists(OUTPUT_DIR):
         return []
     fs = [f for f in os.listdir(OUTPUT_DIR)
           if f.startswith("kandidat") and f.endswith(".csv")
           and "union" not in f.lower()
           and "combined" not in f.lower()]
-    fs.sort(reverse=True)  # kandidat_2026-10-21 > kandidat_2026-10-20
+    fs.sort(reverse=True)
     return fs
 
 
 def list_rekap_files():
-    """Return list file rekap bulanan, sorted by nama (DESC = terbaru dulu).
-    
-    ⚠️ Sama seperti kandidat — pakai nama file, bukan mtime.
-    Format: Rekap_Trading_YYYY-MM.xlsx → sort alfabet = sort bulan
-    """
+    """Return list file rekap bulanan, sorted by nama (DESC = terbaru dulu)."""
     if not os.path.exists(OUTPUT_DIR):
         return []
     fs = [f for f in os.listdir(OUTPUT_DIR)
           if f.startswith("Rekap_Trading_") and f.endswith(".xlsx")]
-    fs.sort(reverse=True)  # Rekap_Trading_2026-10 > 2026-09
+    fs.sort(reverse=True)
     return fs
 
 
 def extract_date_label(filename, prefix, suffix):
-    """Extract tanggal/bulan dari nama file.
-    kandidat_2026-10-21.csv → '2026-10-21'
-    Rekap_Trading_2026-10.xlsx → '2026-10'
-    """
+    """Extract tanggal/bulan dari nama file."""
     return filename.replace(prefix, "").replace(suffix, "")
 
 
@@ -175,18 +163,21 @@ def fmt_num(v, dec=2):
 
 
 # ============================================================
-# ANALYZE SETUP SIGNALS (Strong Zone + Fibo Sniper)
+# ANALYZE SETUP SIGNALS (Strong Zone + Breakout + Fibo)
 # ============================================================
 @st.cache_data(ttl=1800)
 def analyze_setup_signals(kode, harga):
     """
     Analisa apakah saham ini memiliki:
-    - Strong Zone warning (jika entry dekat zona kuat)
+    - Breakout Trigger (dari swing high/donchian) → sinyal beli stop
+    - Reversal Warning (dari round_100) → sinyal avoid beli
     - Fibo sniper confirmation (jika di zona 0.786/0.850)
     """
     result = {
         "strong_zone": False,
         "strong_zone_info": "",
+        "breakout_zone": False,
+        "breakout_info": "",
         "fibo_signal": None,
         "fibo_info": "",
         "rsi": 50,
@@ -201,15 +192,33 @@ def analyze_setup_signals(kode, harga):
     if df.empty or len(df) < 100: return result
     df = df.sort_values("Date").reset_index(drop=True)
     
-    # === Cek Strong Zone (Tanpa label Elite) ===
+    # === Cek Strong Zone & Breakout Zone (metode baru) ===
     try:
         sr = get_support_resistance(kode_clean, timeframe="daily")
         if sr:
+            # 1. Cek Reversal Warning (Round Number, WR ~64%)
             for z in sr.get("resistances", []):
-                if z.get("is_elite", False):
+                if z.get("role") == "reversal_warning" and z.get("backtest_wr", 0) >= 60:
                     if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
                         result["strong_zone"] = True
-                        result["strong_zone_info"] = f"Harga di zona resistance kuat ({z['lower']:,.0f}-{z['upper']:,.0f}). Waspada tertahan."
+                        wr = z.get("backtest_wr", 0)
+                        result["strong_zone_info"] = (
+                            f"Harga di resistance psikologis {z['level']:,.0f} "
+                            f"(historis {wr:.0f}% mantul). Waspada tertahan."
+                        )
+                        break
+            
+            # 2. Cek Breakout Trigger (Swing High, WR ~87%)
+            for z in sr.get("resistances", []):
+                if z.get("role") == "breakout_trigger" and z.get("backtest_wr", 0) >= 65:
+                    if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
+                        wr = z.get("backtest_wr", 0)
+                        result["breakout_zone"] = True
+                        result["breakout_info"] = (
+                            f"Harga di breakout trigger {z['level']:,.0f} "
+                            f"(historis {wr:.0f}% breakout). "
+                            f"Beli stop di atas {z['upper']:,.0f}."
+                        )
                         break
     except Exception:
         pass
@@ -415,7 +424,7 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe,
 
 
 # ============================================================
-# CARD: SETUP (Buy Support / Breakout) - WITH SIGNALS
+# CARD: SETUP (Buy Support / Breakout)
 # ============================================================
 def setup_row(r, tipe="support"):
     kode = r["kode"]
@@ -435,6 +444,8 @@ def setup_row(r, tipe="support"):
     signals = analyze_setup_signals(kode, harga)
     strong_zone = signals.get("strong_zone", False)
     strong_info = signals.get("strong_zone_info", "")
+    breakout_zone = signals.get("breakout_zone", False)
+    breakout_info = signals.get("breakout_info", "")
     fibo_signal = signals.get("fibo_signal")
     fibo_info = signals.get("fibo_info", "")
 
@@ -483,14 +494,28 @@ def setup_row(r, tipe="support"):
     tp2_rr = f'RR {rr_tp2:.2f}' if tp2 else "—"
 
     signal_banners = ""
+    
+    # 1. Breakout Trigger (Cyan)
+    if breakout_zone:
+        signal_banners += (
+            f'<div style="background:rgba(6,182,212,0.15); border:1px solid #06b6d4; '
+            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
+            f'<div style="font-size:11px; color:#06b6d4; font-weight:800; letter-spacing:0.5px;">🚀 BREAKOUT TRIGGER</div>'
+            f'<div style="font-size:12px; color:#67e8f9; margin-top:4px;">{breakout_info}</div>'
+            f'</div>'
+        )
+
+    # 2. Reversal Warning (Kuning)
     if strong_zone:
         signal_banners += (
             f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
             f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⚠️ ZONA KUAT TERDETEKSI</div>'
+            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⚠️ RESISTANCE PSIKOLOGIS</div>'
             f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{strong_info}</div>'
             f'</div>'
         )
+
+    # 3. Fibo Signal
     if fibo_signal == "BUY":
         signal_banners += (
             f'<div style="background:rgba(16,185,129,0.15); border:1px solid #10b981; '
@@ -517,7 +542,9 @@ def setup_row(r, tipe="support"):
         )
 
     card_border = "border:1px solid #1a2338;"
-    if strong_zone or fibo_signal == "SELL":
+    if breakout_zone:
+        card_border = "border:1px solid #06b6d4;"
+    elif strong_zone or fibo_signal == "SELL":
         card_border = "border:1px solid #f59e0b;"
     elif fibo_signal == "BUY":
         card_border = "border:1px solid #10b981;"

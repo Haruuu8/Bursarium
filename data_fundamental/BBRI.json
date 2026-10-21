@@ -3,97 +3,79 @@
   "nama": "PT Bank Rakyat Indonesia (Persero) Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 3100.0,
-  "update": "2026-10-11 10:50",
+  "harga": 2770.0,
+  "update": "2026-10-21 11:29",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 7.616708,
-    "pb": 1.4510324,
-    "ps": 3.1810977,
+    "pe": 6.7253664849715875,
+    "pb": 1.2896314930926365,
+    "ps": 1.9234108292714112,
     "roe": 0.09587815741896218,
-    "eps": 407.0,
+    "eps": 411.87346536278795,
     "de": 6.286299939618826,
     "margin_net": 0.2859934597719602,
     "current_ratio": null,
     "roa": 0.013120921905379657,
-    "bv": 2136.41,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 2147.9004001036956
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 98647310.0,
-      "2024-Q3": 148791961.0,
-      "2024-Q4": 199266252.0,
-      "2025-Q1": 49838339.0,
-      "2025-Q2": 102376278.0,
-      "2025-Q3": 155160406.0,
-      "2025-Q4": 207783368.0,
-      "2026-Q1": 52838024.0,
-      "2026-Q2": 107923454.0
+      "2024-Q3": 50144651000000.0,
+      "2026-Q1": 52838024000000.0,
+      "2026-Q2": 55085430000000.0
     },
     "eps": {
-      "2024-Q2": 197.0,
-      "2024-Q3": 299.0,
-      "2024-Q4": 399.0,
-      "2025-Q1": 91.0,
-      "2025-Q2": 174.0,
-      "2025-Q3": 271.0,
-      "2025-Q4": 376.0,
+      "2024-Q3": 102000000.0,
       "2026-Q1": 103.0,
-      "2026-Q2": 205.0
+      "2026-Q2": 102.0
     },
     "net_income": {
-      "2024-Q2": 29701853.0,
-      "2024-Q3": 45064753.0,
-      "2024-Q4": 60154887.0,
-      "2025-Q1": 13673245.0,
-      "2025-Q2": 26276701.0,
-      "2025-Q3": 40778810.0,
-      "2025-Q4": 56652384.0,
-      "2026-Q1": 15492710.0,
-      "2026-Q2": 30865402.0
-    }
+      "2024-Q3": 15362900000000.0,
+      "2026-Q1": 15492710000000.0,
+      "2026-Q2": 15372692000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 338.0,
-      "2023": 398.0,
-      "2024": 399.0,
-      "2025": 376.0
+      "2022": 338000000.0,
+      "2023": 398000000.0,
+      "2025": 376000000.0
     },
     "revenue_per_share": {
-      "2022": 151874816.0,
-      "2023": 178995994000000.0,
-      "2024": 199266252.0,
-      "2025": 207783368.0
+      "2022": 151874816000000.0,
+      "2023": 1.78995994e+20,
+      "2025": 207783368000000.0
     }
   },
   "statistik": {
-    "market_cap": 467120978657280,
-    "enterprise_value": 689614041907200,
+    "market_cap": 417395189481472,
+    "enterprise_value": 642901910487040,
     "shares_outstanding": 149878079535,
     "free_float_pct": 46.20317143897543
   },
   "akumulasi": {
-    "score": 2.7,
+    "score": 2.4,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1229,
-    "vol_trend": 0.807,
-    "price_chg_20d": -5.2
+    "cmf": -0.0734,
+    "vol_trend": 1.385,
+    "price_chg_20d": -12.26
   },
   "neraca": {
     "aset": 2352380589.0,
     "aset_lancar": null,
     "kas": null,
-    "piutang_usaha": null,
+    "piutang_usaha": 504731.0,
     "persediaan": null,
     "aset_tetap": 62393770.0,
     "liabilitas": 2023705711.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 321923187.0,
@@ -111,7 +93,7 @@
     "beban_pajak": -8818623.0,
     "laba_bersih": 30865402.0,
     "laba_induk": 30865402.0,
-    "eps_basic": 205.0,
+    "eps_basic": 0.000205,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -119,7 +101,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 52248379.0
+  }
 }

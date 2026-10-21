@@ -3,75 +3,56 @@
   "nama": "PT Klinko Karya Imaji Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Home Improvement Retail",
-  "harga": 116.0,
-  "update": "2026-10-11 11:20",
+  "harga": 103.0,
+  "update": "2026-10-21 10:43",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.227109,
-    "ps": 35.444214,
+    "pb": 4.908037074764113,
+    "ps": 60.88109393883096,
     "roe": -0.05747718571381074,
-    "eps": null,
+    "eps": -2.4124308917560633,
     "de": 0.04503494699702338,
     "margin_net": -1.4259362305042587,
     "current_ratio": 14.83136733414948,
     "roa": -0.0550002522680942,
-    "bv": 22.19,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2023-audit"
+    "bv": 20.98598654227776
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 10199913847.0,
-      "2024-Q4": 19113702394.0,
-      "2025-Q2": 4747658674.0,
-      "2025-Q4": 7920822376.0,
-      "2026-Q2": 1106054567.0
-    },
-    "eps": {
-      "2024-Q2": 289000.0,
-      "2024-Q4": -410000.0,
-      "2025-Q2": -1.32,
-      "2025-Q4": -3.33,
-      "2026-Q2": -1.21
-    },
-    "net_income": {
-      "2024-Q2": 377502569.0,
-      "2024-Q4": -479677499.0,
-      "2025-Q2": -1729606645.0,
-      "2025-Q4": -4339065883.0,
-      "2026-Q2": -1577163280.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
       "2022": -920000.0,
       "2023": 360000.0,
-      "2024": -410000.0,
-      "2025": -3.33
+      "2025": -3330000.0
     },
     "revenue_per_share": {
-      "2022": 7514581488.0,
-      "2023": 16960809889.0,
-      "2024": 19113702394.0,
-      "2025": 7920822376.0
+      "2022": 7514581488000000.0,
+      "2023": 1.6960809889e+16,
+      "2025": 7920822376000000.0
     }
   },
   "statistik": {
-    "market_cap": 151673520128,
-    "enterprise_value": 152073912320,
+    "market_cap": 134675628032,
+    "enterprise_value": 124615770112,
     "shares_outstanding": 1307530330,
     "free_float_pct": 9.247000029437176
   },
   "akumulasi": {
-    "score": 6.0,
+    "score": 5.3,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0976,
-    "vol_trend": 0.466,
-    "price_chg_20d": -7.2
+    "cmf": 0.0552,
+    "vol_trend": 0.533,
+    "price_chg_20d": -20.83
   },
   "neraca": {
     "aset": 28675564474.0,
@@ -82,6 +63,7 @@
     "aset_tetap": 3698683033.0,
     "liabilitas": 1235750565.0,
     "liabilitas_jangka_pendek": 1096781398.0,
+    "liabilitas_jangka_panjang": 138969167.0,
     "utang_usaha": 2147156432.0,
     "utang_bank": null,
     "ekuitas": 27439813909.0,
@@ -108,6 +90,5 @@
     "arus_kas_pendanaan": null,
     "capex": 3698683033.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

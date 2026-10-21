@@ -3,86 +3,70 @@
   "nama": "PT XLSMART Telecom Sejahtera Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 2340.0,
-  "update": "2026-10-11 13:26",
+  "harga": 1760.0,
+  "update": "2026-10-21 11:57",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.4748528,
-    "ps": 0.8995432,
+    "pb": 1.1092908350995128,
+    "ps": 0.6675339737756696,
     "roe": -0.03442837844501959,
-    "eps": 141.0,
+    "eps": -109.24807840461189,
     "de": 2.9262979202578983,
     "margin_net": -0.041435684036810506,
     "current_ratio": 0.3176100804638474,
     "roa": -0.00875548852834166,
-    "bv": 1586.6,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2024",
-    "eps_reliable": true,
-    "eps_period": "2024-audit"
+    "bv": 1586.5992436889765
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 17051597.0,
-      "2024-Q3": 25361411.0,
-      "2024-Q4": 34391597.0,
-      "2025-Q1": 8601177.0,
-      "2025-Q2": 19094894.0,
-      "2025-Q3": 30547463.0,
-      "2025-Q4": 42445960.0,
-      "2026-Q1": 11819341.0,
-      "2026-Q2": 23992605.0
+      "2024-Q3": 8309814000000.0,
+      "2026-Q1": 11819341000000.0,
+      "2026-Q2": 12173264000000.0
     },
     "eps": {
-      "2024-Q2": 77.0,
-      "2024-Q3": 100.0,
-      "2024-Q4": 141.0,
-      "2025-Q1": 29.0,
-      "2025-Q2": -82.0,
-      "2025-Q3": -167.0,
-      "2025-Q4": -280.0,
+      "2024-Q3": 23.0,
       "2026-Q1": -39.0,
-      "2026-Q2": -55.0
+      "2026-Q2": -16.0
     },
     "net_income": {
-      "2024-Q2": 1024923.0,
-      "2024-Q3": 1316695.0,
-      "2024-Q4": 1819019.0,
-      "2025-Q1": 384565.0,
-      "2025-Q2": -1225528.0,
-      "2025-Q3": -2605088.0,
-      "2025-Q4": -4426618.0,
-      "2026-Q1": -716930.0,
-      "2026-Q2": -994150.0
-    }
+      "2024-Q3": 291772000000.0,
+      "2026-Q1": -716930000000.0,
+      "2026-Q2": -277220000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 105.0,
-      "2023": 98.0,
-      "2024": 141.0,
+      "2021": 121000000.0,
+      "2022": 105000000.0,
+      "2023": 98000000.0,
       "2025": -280.0
     },
     "revenue_per_share": {
-      "2022": 29141994.0,
-      "2024": 34391597.0,
-      "2025": 42445960.0
+      "2021": 26754050000000.0,
+      "2022": 29141994000000.0,
+      "2023": 2.454775e+18,
+      "2025": 42445960000000.0
     }
   },
   "statistik": {
-    "market_cap": 42587679358976,
-    "enterprise_value": 100090614120448,
+    "market_cap": 32031759138816,
+    "enterprise_value": 90080689520640,
     "shares_outstanding": 18199862451,
     "free_float_pct": 33.18499999799806
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.3442,
-    "vol_trend": 1.114,
-    "price_chg_20d": -11.03
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0357,
+    "vol_trend": 1.361,
+    "price_chg_20d": -25.73
   },
   "neraca": {
     "aset": 113545920.0,
@@ -93,6 +77,7 @@
     "aset_tetap": 64013612.0,
     "liabilitas": 84499451.0,
     "liabilitas_jangka_pendek": 36867986.0,
+    "liabilitas_jangka_panjang": 47631465.0,
     "utang_usaha": 1715100.0,
     "utang_bank": 2632725.0,
     "ekuitas": 28875888.0,
@@ -104,21 +89,20 @@
     "pendapatan": 23992605.0,
     "beban_pokok": null,
     "laba_kotor": null,
-    "beban_operasi": null,
+    "beban_operasi": 6712742.0,
     "laba_operasi": null,
     "laba_sebelum_pajak": -1313268.0,
     "beban_pajak": 315203.0,
     "laba_bersih": -994150.0,
     "laba_induk": -994150.0,
-    "eps_basic": -55.0,
-    "eps_diluted": -55.0
+    "eps_basic": -5.5e-05,
+    "eps_diluted": -5.5e-05
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 7793080.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 1120266.0
+  }
 }

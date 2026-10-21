@@ -3,85 +3,73 @@
   "nama": "PT. Garuda Indonesia (Persero) Tbk",
   "sektor": "Industrials",
   "industri": "Airlines",
-  "harga": 52.0,
-  "update": "2026-10-11 13:33",
+  "harga": 41.0,
+  "update": "2026-10-21 12:01",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "income_missing",
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 5126.636,
+    "ps": 252.8533476908078,
     "roe": null,
     "eps": null,
     "de": null,
     "margin_net": null,
     "current_ratio": 0.7696108709079679,
     "roa": null,
-    "bv": null,
-    "bv_src": "no_data",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2023-audit"
+    "bv": null
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 711980989.0,
-      "2024-Q2": 1620733383.0,
-      "2024-Q3": 2562021353.0,
-      "2024-Q4": 3416526383.0,
-      "2025-Q1": 723563972.0,
-      "2025-Q2": 1548201466.0,
-      "2025-Q3": 3838580.0,
-      "2025-Q4": 3216604484.0,
-      "2026-Q2": 1795.0
+      "2024-Q1": 711980989000000.0,
+      "2024-Q2": 908752394000000.0,
+      "2024-Q3": 941287970000000.0
     },
     "eps": {
       "2024-Q1": 3290.0,
-      "2024-Q2": 1110.0,
-      "2024-Q3": 4970.0,
-      "2024-Q4": -790.0,
-      "2025-Q1": 2890.0,
-      "2025-Q2": -1570.0,
-      "2025-Q4": -2850.0,
+      "2024-Q2": -2180.0,
+      "2024-Q3": 3860.0,
       "2026-Q1": -100.0,
-      "2026-Q2": -300.0
+      "2026-Q2": -200.0
     },
     "net_income": {
-      "2024-Q1": -87038498.0,
-      "2024-Q2": -101655627.0,
-      "2024-Q3": -131224831.0,
-      "2024-Q4": -72709450.0,
-      "2025-Q1": -76486250.0,
-      "2025-Q2": -143708267.0,
-      "2025-Q4": -322487626.0
-    }
+      "2024-Q1": -87038498000000.0,
+      "2024-Q2": -14617129000000.0,
+      "2024-Q3": -29569204000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
+      "2021": -160675.65,
       "2022": 141450.0,
       "2023": 2730.0,
-      "2024": -790.0,
       "2025": -2850.0
     },
     "revenue_per_share": {
-      "2022": 2100079558.0,
-      "2023": 2936631094.0,
-      "2024": 3416526383.0,
-      "2025": 3216604484.0
+      "2021": 1336678470000000.0,
+      "2022": 2100079558000000.0,
+      "2023": 2936631094000000.0,
+      "2025": 3216604484000000.0
     }
   },
   "statistik": {
-    "market_cap": 17757871538176,
-    "enterprise_value": 21171984662528,
+    "market_cap": 14001398349824,
+    "enterprise_value": 17915250212864,
     "shares_outstanding": 22140085810,
     "free_float_pct": 29.217082668569837
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.6,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2308,
-    "vol_trend": 0.249,
-    "price_chg_20d": -18.75
+    "cmf": -0.1292,
+    "vol_trend": 0.386,
+    "price_chg_20d": -27.87
   },
   "neraca": {
     "aset": 7375.0,
@@ -92,6 +80,7 @@
     "aset_tetap": 4975.0,
     "liabilitas": 7427.0,
     "liabilitas_jangka_pendek": 1619.0,
+    "liabilitas_jangka_panjang": 5808.0,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": null,
@@ -109,7 +98,7 @@
     "beban_pajak": null,
     "laba_bersih": null,
     "laba_induk": null,
-    "eps_basic": -300.0,
+    "eps_basic": -0.0003,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -118,6 +107,5 @@
     "arus_kas_pendanaan": null,
     "capex": null,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

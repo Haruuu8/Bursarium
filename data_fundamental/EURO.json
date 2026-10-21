@@ -3,75 +3,56 @@
   "nama": "PT Estee Gold Feet Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Household & Personal Products",
-  "harga": 1370.0,
-  "update": "2026-10-11 11:19",
+  "harga": 1195.0,
+  "update": "2026-10-21 10:42",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 1902.7777,
-    "pb": 67.70447,
-    "ps": 151.63406,
+    "pe": 2.541281268217877,
+    "pb": 0.05905466512661868,
+    "ps": 0.16013219513531268,
     "roe": 0.011619072997777992,
-    "eps": 0.72,
+    "eps": 470.2352372187503,
     "de": 0.15706087169357788,
     "margin_net": 0.06301238557808618,
     "current_ratio": 3.2398376808312963,
     "roa": 0.010041852362279436,
-    "bv": 20.24,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 20235.488550105383
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 13774118.0,
-      "2024-Q4": 27533752.0,
-      "2025-Q2": 9440678.0,
-      "2025-Q4": 22958676.0,
-      "2026-Q2": 9510416.0
-    },
-    "eps": {
-      "2024-Q2": 1310.0,
-      "2024-Q4": 1430.0,
-      "2025-Q2": 300000.0,
-      "2025-Q4": 780000.0,
-      "2026-Q2": 240.0
-    },
-    "net_income": {
-      "2024-Q2": 2879378.0,
-      "2024-Q4": 3634506.0,
-      "2025-Q2": 760956.0,
-      "2025-Q4": 1988619.0,
-      "2026-Q2": 599274.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 2.9,
-      "2023": 2.02,
-      "2024": 1430.0,
+      "2022": 2900000.0,
+      "2023": 2020000.0,
       "2025": 780000.0
     },
     "revenue_per_share": {
-      "2022": 30319967.0,
-      "2023": 23780277.0,
-      "2024": 27533752.0,
-      "2025": 22958676.0
+      "2022": 30319967000000.0,
+      "2023": 23780277000000.0,
+      "2025": 22958676000000.0
     }
   },
   "statistik": {
-    "market_cap": 3491892035584,
-    "enterprise_value": 3490131476480,
+    "market_cap": 3045847465984,
+    "enterprise_value": 3082319298560,
     "shares_outstanding": 2548826428,
     "free_float_pct": 43.80400001878825
   },
   "akumulasi": {
-    "score": 6.0,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.2035,
-    "vol_trend": 1.632,
-    "price_chg_20d": -2.14
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4057,
+    "vol_trend": 1.141,
+    "price_chg_20d": -18.79
   },
   "neraca": {
     "aset": 59677635.0,
@@ -82,6 +63,7 @@
     "aset_tetap": 15566959.0,
     "liabilitas": 8100689.0,
     "liabilitas_jangka_pendek": 4734869.0,
+    "liabilitas_jangka_panjang": 3365820.0,
     "utang_usaha": 3618969.0,
     "utang_bank": null,
     "ekuitas": 51576748.0,
@@ -99,7 +81,7 @@
     "beban_pajak": -132920.0,
     "laba_bersih": 599274.0,
     "laba_induk": 599274.0,
-    "eps_basic": 240.0,
+    "eps_basic": 0.00024,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -107,7 +89,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 15566959.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 2023194.0
+  }
 }

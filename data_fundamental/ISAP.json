@@ -3,75 +3,56 @@
   "nama": "PT Isra Presisi Indonesia Tbk",
   "sektor": "Industrials",
   "industri": "Metal Fabrication",
-  "harga": 25.0,
-  "update": "2026-10-11 11:29",
+  "harga": 21.0,
+  "update": "2026-10-21 10:48",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5851786,
-    "ps": 3.3662117,
+    "pb": 0.4915558039841871,
+    "ps": 3.639382344103467,
     "roe": -0.005605813524735383,
-    "eps": null,
+    "eps": -478977.49580118904,
     "de": 0.016389138851739298,
     "margin_net": -0.08300867816389237,
     "current_ratio": 106.26925785416823,
     "roa": -0.005515420531813754,
-    "bv": 42.72,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2025-audit"
+    "bv": 42.721497396205194
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 24228775938.0,
-      "2024-Q4": 35724253459.0,
-      "2025-Q2": 5957811443.0,
-      "2025-Q4": 24216924364.0,
-      "2026-Q2": 11599212604.0
-    },
-    "eps": {
-      "2024-Q2": 140000.0,
-      "2024-Q4": 350000.0,
-      "2025-Q2": -630000.0,
-      "2025-Q4": 400000.0,
-      "2026-Q2": -240000.0
-    },
-    "net_income": {
-      "2024-Q2": 547312778.0,
-      "2024-Q4": 1423412705.0,
-      "2025-Q2": -2539707418.0,
-      "2025-Q4": 1621028941.0,
-      "2026-Q2": -962835306.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
       "2022": 360000.0,
       "2023": 490000.0,
-      "2024": 350000.0,
       "2025": 400000.0
     },
     "revenue_per_share": {
-      "2022": 20933090413.0,
-      "2023": 76847618135.0,
-      "2024": 35724253459.0,
-      "2025": 24216924364.0
+      "2022": 2.0933090413e+16,
+      "2023": 7.6847618135e+16,
+      "2025": 2.4216924364e+16
     }
   },
   "statistik": {
-    "market_cap": 100509450240,
-    "enterprise_value": 100852989952,
-    "shares_outstanding": 4020378024,
-    "free_float_pct": 48.980699855700934
+    "market_cap": 84427939840,
+    "enterprise_value": 80751222784,
+    "shares_outstanding": 4020378053,
+    "free_float_pct": 48.9806995023908
   },
   "akumulasi": {
-    "score": 5.5,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.2184,
-    "vol_trend": 1.267,
-    "price_chg_20d": -7.41
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1917,
+    "vol_trend": 0.753,
+    "price_chg_20d": -16.67
   },
   "neraca": {
     "aset": 174571512806.0,
@@ -82,6 +63,7 @@
     "aset_tetap": 15663082266.0,
     "liabilitas": 2814942283.0,
     "liabilitas_jangka_pendek": 1492160614.0,
+    "liabilitas_jangka_panjang": 1322781669.0,
     "utang_usaha": 2322331460.0,
     "utang_bank": 390239871.0,
     "ekuitas": 171756570523.0,
@@ -99,7 +81,7 @@
     "beban_pajak": -35470182.0,
     "laba_bersih": -962835306.0,
     "laba_induk": -962835306.0,
-    "eps_basic": -240000.0,
+    "eps_basic": -0.24,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -108,6 +90,5 @@
     "arus_kas_pendanaan": null,
     "capex": 1500000.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

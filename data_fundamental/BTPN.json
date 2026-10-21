@@ -3,94 +3,79 @@
   "nama": "PT Bank SMBC Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 2500.0,
-  "update": "2026-10-11 12:19",
+  "harga": 2240.0,
+  "update": "2026-10-21 11:16",
   "periode_terbaru": "2025-audit",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 59.78001,
-    "pb": 0.5461886,
-    "ps": 2.4459972,
+    "pe": 47.16959408240812,
+    "pb": 0.5025295035690317,
+    "ps": 0.983980236793155,
     "roe": 0.010653674540660291,
-    "eps": 41.82,
+    "eps": 47.488218704756825,
     "de": 3.8450624194900604,
     "margin_net": 0.020860477091960605,
     "current_ratio": null,
     "roa": 0.0020563789849722897,
-    "bv": 4577.17,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 4457.44972999838
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 4837049.0,
-      "2024-Q2": 10990621.0,
-      "2024-Q3": 17219874.0,
-      "2024-Q4": 23588335.0,
-      "2025-Q1": 6171229.0,
-      "2025-Q2": 12226763.0,
-      "2025-Q3": 18192477.0,
-      "2025-Q4": 24235160.0
+      "2024-Q1": 4837049000000.0,
+      "2024-Q2": 6153572000000.0,
+      "2024-Q3": 6229253000000.0
     },
     "eps": {
-      "2024-Q1": 65.0,
-      "2024-Q2": 130.0,
-      "2024-Q3": 201.0,
-      "2024-Q4": 279.0,
-      "2025-Q1": 48.0,
-      "2025-Q2": 94.0,
-      "2025-Q3": 138.0,
-      "2025-Q4": 47.0
+      "2024-Q1": 65000000.0,
+      "2024-Q2": 65000000.0,
+      "2024-Q3": 71000000.0
     },
     "net_income": {
-      "2024-Q1": 543851.0,
-      "2024-Q2": 1240498.0,
-      "2024-Q3": 1994177.0,
-      "2024-Q4": 2812986.0,
-      "2025-Q1": 509582.0,
-      "2025-Q2": 1000097.0,
-      "2025-Q3": 1473596.0,
-      "2025-Q4": 505557.0
-    }
+      "2024-Q1": 543851000000.0,
+      "2024-Q2": 696647000000.0,
+      "2024-Q3": 753679000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 384.0,
-      "2023": 293.0,
-      "2024": 279.0,
-      "2025": 47.0
+      "2022": 384000000.0,
+      "2023": 293000000.0,
+      "2025": 47000000.0
     },
     "revenue_per_share": {
-      "2022": 15899646.0,
-      "2023": 18815673.0,
-      "2024": 23588335.0,
-      "2025": 24235160.0
+      "2022": 15899646000000.0,
+      "2023": 18815673000000.0,
+      "2025": 24235160000000.0
     }
   },
   "statistik": {
-    "market_cap": 26614863757312,
-    "enterprise_value": 66574459338752,
+    "market_cap": 23846916718592,
+    "enterprise_value": 63806516494336,
     "shares_outstanding": 10645945748,
     "free_float_pct": 8.839999998842751
   },
   "akumulasi": {
-    "score": 7.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.4488,
-    "vol_trend": 0.609,
-    "price_chg_20d": 6.38
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1873,
+    "vol_trend": 1.237,
+    "price_chg_20d": -4.27
   },
   "neraca": {
     "aset": 245848165.0,
     "aset_lancar": null,
     "kas": null,
-    "piutang_usaha": null,
+    "piutang_usaha": 30377030.0,
     "persediaan": null,
     "aset_tetap": 2305591.0,
     "liabilitas": 182462700.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 47453768.0,
@@ -116,7 +101,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 811190.0
+  }
 }

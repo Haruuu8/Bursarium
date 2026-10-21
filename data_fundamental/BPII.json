@@ -3,82 +3,66 @@
   "nama": "PT Batavia Prosperindo Internasional Tbk",
   "sektor": "Financial Services",
   "industri": "Asset Management",
-  "harga": 444.0,
-  "update": "2026-10-11 12:56",
+  "harga": 422.0,
+  "update": "2026-10-21 11:38",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": 44.71299,
-    "pb": 3.1036363,
-    "ps": 3.5057473,
+    "pe": 48.69815950415715,
+    "pb": 2.8280231464750893,
+    "ps": 1.3579688317675491,
     "roe": 0.02903624259386716,
-    "eps": 9.93,
+    "eps": 8.665625237109335,
     "de": 2.698566334068138,
     "margin_net": 0.027885424122684254,
     "current_ratio": null,
     "roa": 0.00734240418655908,
-    "bv": 143.06,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 149.22084372823826
   },
   "quarterly": {
     "revenue": {
-      "2024-Q2": 523698599218.0,
-      "2024-Q3": 788130597526.0,
-      "2024-Q4": 1074412741533.0,
-      "2025-Q2": 582308604264.0,
-      "2025-Q3": 839538606642.0,
-      "2025-Q4": 1157672378568.0,
-      "2026-Q1": 312542927630.0,
-      "2026-Q2": 1535791017328.0
+      "2024-Q3": 2.64431998308e+17,
+      "2026-Q1": 3.1254292763e+17,
+      "2026-Q2": 1.223248089698e+18
     },
     "eps": {
-      "2024-Q2": 7.36,
-      "2024-Q3": 12.27,
-      "2024-Q4": 15.2,
-      "2025-Q2": 8.04,
-      "2025-Q3": 9.88,
-      "2025-Q4": 13.64,
-      "2026-Q1": 1.82,
-      "2026-Q2": 4.33
+      "2024-Q3": 4910000.0,
+      "2026-Q1": 1820000.0,
+      "2026-Q2": 2510000.0
     },
     "net_income": {
-      "2024-Q2": 72736213714.0,
-      "2024-Q3": 121299662248.0,
-      "2024-Q4": 150273199706.0,
-      "2025-Q2": 79453761931.0,
-      "2025-Q3": 97661535130.0,
-      "2025-Q4": 134804173013.0,
-      "2026-Q1": 17965310441.0,
-      "2026-Q2": 42826183882.0
-    }
+      "2024-Q3": 4.8563448534e+16,
+      "2026-Q1": 1.7965310441e+16,
+      "2026-Q2": 2.4860873441e+16
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 55.63,
-      "2024": 15.2,
-      "2025": 13.64
+      "2022": 55630000.0,
+      "2025": 13640000.0
     },
     "revenue_per_share": {
-      "2022": 801129029171.0,
-      "2024": 1074412741533.0,
-      "2025": 1157672378568.0
+      "2022": 8.01129029171e+17,
+      "2025": 1.157672378568e+18
     }
   },
   "statistik": {
-    "market_cap": 4388563976192,
-    "enterprise_value": 6059549786112,
+    "market_cap": 4171112382464,
+    "enterprise_value": 5709010829312,
     "shares_outstanding": 9884153240,
     "free_float_pct": 14.431026749237247
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.2265,
-    "vol_trend": 0.181,
-    "price_chg_20d": -7.11
+    "score": 5.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0911,
+    "vol_trend": 0.603,
+    "price_chg_20d": -7.66
   },
   "neraca": {
     "aset": 5832719473602.0,
@@ -89,6 +73,7 @@
     "aset_tetap": 2311126106171.0,
     "liabilitas": 3980174007259.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": 1351099578601.0,
     "ekuitas": 1474921686012.0,
@@ -114,7 +99,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 125077519054.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 6272456779.0
+  }
 }

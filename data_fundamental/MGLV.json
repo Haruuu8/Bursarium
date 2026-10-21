@@ -1,45 +1,89 @@
 {
   "kode": "MGLV",
   "nama": "PT NexAI Digital Infrastruktur Tbk",
-  "periode_terbaru": "2026-tw2",
-  "update": "2026-10-09 18:47",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 10975.0,
+  "update": "2026-10-21 10:23",
+  "periode_terbaru": "2025-audit",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 164.35953607508768,
+    "ps": 163.49942289293185,
+    "roe": -0.07090942590366633,
+    "eps": -4.734930311175879,
+    "de": 0.4696638260137398,
+    "margin_net": -0.07053834836587758,
+    "current_ratio": 3.054586111991363,
+    "roa": -0.04799821862501845,
+    "bv": 66.77434277367435
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+  },
+  "riwayat": {
+    "eps": {
+      "2021": 6000000.0,
+      "2022": 8000000.0,
+      "2023": 8000000.0,
+      "2025": -4000000.0
+    },
+    "revenue_per_share": {
+      "2021": 1.09849125348e+17,
+      "2022": 1.66545619384e+17,
+      "2023": 2.0689497527e+17,
+      "2025": 1.27866478461e+17
+    }
+  },
+  "statistik": {
+    "market_cap": 20906095149056,
+    "enterprise_value": 20883158597632,
+    "shares_outstanding": 1904883411,
+    "free_float_pct": 37.292999975629485
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1468,
+    "vol_trend": 0.577,
+    "price_chg_20d": -31.56
+  },
   "neraca": {
-    "aset": 184043766370.0,
-    "aset_lancar": 174520465112.0,
-    "aset_tidak_lancar": 9523301258.0,
-    "kas": 1291685076.0,
-    "piutang_usaha": 1247167856.0,
-    "persediaan": 128685799414.0,
+    "aset": 187913019699.0,
+    "aset_lancar": 178578927403.0,
+    "kas": 3156869509.0,
+    "piutang_usaha": 871864345.0,
+    "persediaan": 133118270785.0,
     "aset_tetap": null,
-    "investasi": -354265798.0,
-    "properti_investasi": null,
-    "goodwill": 53537961.0,
-    "aset_tidak_berwujud": null,
-    "liabilitas": 69809832851.0,
-    "liabilitas_jangka_pendek": 64613729022.0,
-    "liabilitas_jangka_panjang": 5196103829.0,
-    "utang_usaha": 1247167856.0,
-    "utang_bank": 7625053.0,
-    "ekuitas": 113257351147.0,
-    "ekuitas_induk": 113257351147.0,
-    "ekuitas_non_pengendali": 976582372.0,
+    "liabilitas": 59739988344.0,
+    "liabilitas_jangka_pendek": 58462561164.0,
+    "liabilitas_jangka_panjang": 1277427180.0,
+    "utang_usaha": 871864345.0,
+    "utang_bank": 16361068.0,
+    "ekuitas": 127197337830.0,
+    "ekuitas_induk": 127197337830.0,
     "modal_saham": null,
-    "tambahan_modal_disetor": 97668220.0,
-    "saldo_laba": 30536311459.0
+    "saldo_laba": 44642158717.0
   },
   "laba_rugi": {
-    "pendapatan": 26140538468.0,
-    "beban_pokok": 21273949326.0,
+    "pendapatan": 127866478461.0,
+    "beban_pokok": 80826152124.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "beban_bunga": 1421194614.0,
-    "laba_sebelum_pajak": -13958443459.0,
-    "beban_pajak": -146514952.0,
-    "laba_bersih": -14105847258.0,
-    "laba_induk": -14105847258.0,
-    "laba_komprehensif": null,
-    "eps_basic": -7.41,
+    "laba_sebelum_pajak": -8379248414.0,
+    "beban_pajak": -607990909.0,
+    "laba_bersih": -9019490202.0,
+    "laba_induk": -9019490202.0,
+    "eps_basic": -4.0,
     "eps_diluted": null
   },
   "arus_kas": {
@@ -47,88 +91,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,
-    "dividen_dibayar": null,
-    "kas_akhir_periode": null
-  },
-  "rasio": {
-    "roe": -0.12454685824050053,
-    "roa": -0.0766439827668041,
-    "der": 0.6163823552644436,
-    "dar": 0.37931104230205176,
-    "current_ratio": 2.7009811653585016,
-    "margin_laba_bersih": -0.5396157877645751,
-    "margin_laba_kotor": null,
-    "margin_laba_operasi": null,
-    "quick_ratio": 0.7093641922817051
-  },
-  "quarterly": {
-    "revenue": {
-      "2024-Q4": 208808125380.0,
-      "2026-Q2": 26140538468.0
-    },
-    "eps": {
-      "2024-Q4": 3.0,
-      "2026-Q2": -7.41
-    },
-    "net_income": {
-      "2024-Q4": 6600646057.0,
-      "2026-Q2": -14105847258.0
-    },
-    "aset": {
-      "2024-Q4": 268081066174.0,
-      "2026-Q2": 184043766370.0
-    }
-  },
-  "riwayat": {
-    "eps": {
-      "2022": 8.0,
-      "2024": 3.0
-    },
-    "revenue": {
-      "2022": 166545619384.0,
-      "2024": 208808125380.0
-    },
-    "net_income": {
-      "2022": 15464570449.0,
-      "2024": 6600646057.0
-    },
-    "ekuitas": {
-      "2022": 108934384430.0,
-      "2024": 136155777335.0
-    }
-  },
-  "rasio_kunci": {
-    "pe": -778.6170830912259,
-    "pb": 225.37674,
-    "ps": 497.95,
-    "roe": -0.25129998,
-    "eps": 3.0,
-    "de": 0.21886,
-    "margin_net": -0.63695997,
-    "current_ratio": 2.497,
-    "roa": -0.106400006,
-    "bv": 59.46,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2024",
-    "eps_reliable": true,
-    "eps_period": "2024-audit"
-  },
-  "statistik": {
-    "market_cap": 25525437333504,
-    "enterprise_value": 25550122909696,
-    "shares_outstanding": 1904883411,
-    "free_float_pct": 37.292999975629485
-  },
-  "akumulasi": {
-    "score": 3.9,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0384,
-    "vol_trend": 0.535,
-    "price_chg_20d": -12.13
-  },
-  "harga": 13400.0,
-  "sektor": "Consumer Cyclical",
-  "industri": "Furnishings, Fixtures & Appliances",
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": null
+  }
 }

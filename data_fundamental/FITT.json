@@ -1,74 +1,70 @@
 {
   "kode": "FITT",
-  "nama": null,
+  "nama": "PT Fortune Resources Investment Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 408.0,
-  "update": "2026-10-11 17:08",
+  "harga": 276.0,
+  "update": "2026-10-21 14:12",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": -100.74074074074075,
-    "pb": 7.25927,
-    "ps": 56.244225,
-    "roe": -0.07218,
-    "eps": null,
-    "de": 0.63173,
-    "margin_net": -0.55866003,
-    "current_ratio": 9.376,
-    "roa": -0.03068,
-    "bv": 56.2,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": null
+    "pe": null,
+    "pb": 4.910702202274846,
+    "ps": 38.77112277801591,
+    "roe": -0.05667231411813231,
+    "eps": -6.370395944335082,
+    "de": 0.6574509500270879,
+    "margin_net": -0.8948818960231524,
+    "current_ratio": 9.376297635240771,
+    "roa": -0.03418697766853581,
+    "bv": 56.20377466019932
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 4068749164.0,
-      "2024-Q3": 9889793180.0,
-      "2024-Q4": 13341819400.0,
-      "2025-Q1": 1919489811.0,
-      "2025-Q2": 4117258212.0,
-      "2026-Q2": 4642360864.0
+      "2024-Q1": 4068749164000000.0,
+      "2026-Q1": 2146003302000000.0,
+      "2026-Q2": 2496357562000000.0
     },
     "eps": {
-      "2024-Q1": -3.38,
-      "2024-Q3": -7.52,
-      "2024-Q4": -7.6,
-      "2025-Q1": -2.06,
-      "2025-Q2": -3.38,
-      "2026-Q2": -3.19
+      "2024-Q1": -3380000.0,
+      "2026-Q1": -1870000.0,
+      "2026-Q2": -1320000.0
     },
     "net_income": {
-      "2024-Q1": -2454177471.0,
-      "2024-Q3": -6955815128.0,
-      "2024-Q4": -7780888249.0,
-      "2025-Q1": -2691102686.0,
-      "2025-Q2": -4404001473.0,
-      "2026-Q2": -4154364692.0
-    }
+      "2024-Q1": -2454177471000000.0,
+      "2026-Q1": -2443956880000000.0,
+      "2026-Q2": -1710407812000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2024": -7.6
+      "2021": -7770000.0,
+      "2022": -8070000.0,
+      "2023": -9910000.0
     },
     "revenue_per_share": {
-      "2024": 13341819400.0
+      "2021": 8759873774000000.0,
+      "2022": 1.0495281006e+16,
+      "2023": 1.1833525237e+16
     }
   },
   "statistik": {
-    "market_cap": 532142981120,
-    "enterprise_value": 555598479360,
+    "market_cap": 359979057152,
+    "enterprise_value": 409520013312,
     "shares_outstanding": 1304272051,
-    "free_float_pct": 20.844999997627028
+    "free_float_pct": 20.825999973835213
   },
   "akumulasi": {
-    "score": 3.1,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0915,
-    "vol_trend": 0.715,
-    "price_chg_20d": -10.13
+    "cmf": -0.2446,
+    "vol_trend": 0.444,
+    "price_chg_20d": -33.93
   },
   "neraca": {
     "aset": 121518922564.0,
@@ -79,6 +75,7 @@
     "aset_tetap": 25019381192.0,
     "liabilitas": 48194450077.0,
     "liabilitas_jangka_pendek": 2476079775.0,
+    "liabilitas_jangka_panjang": 45718370302.0,
     "utang_usaha": 250741534.0,
     "utang_bank": 1200000000.0,
     "ekuitas": 73305012450.0,
@@ -105,6 +102,5 @@
     "arus_kas_pendanaan": null,
     "capex": 25019381192.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

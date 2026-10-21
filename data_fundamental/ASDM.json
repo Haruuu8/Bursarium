@@ -3,74 +3,71 @@
   "nama": "PT Asuransi Dayin Mitra Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 510.0,
-  "update": "2026-10-11 12:30",
+  "harga": 484.0,
+  "update": "2026-10-21 11:24",
   "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 12.439024,
-    "pb": 0.5420163,
-    "ps": 0.5910948,
+    "pe": 0.008951329601589833,
+    "pb": 0.0005143842731326023,
+    "ps": -0.0004260666433510169,
     "roe": 0.03002089384435801,
-    "eps": 41.0,
+    "eps": 54070.1796875,
     "de": 2.252573571576702,
-    "margin_net": null,
+    "margin_net": -0.035380342468417106,
     "current_ratio": null,
     "roa": 0.00922988925037758,
-    "bv": 940.93,
-    "bv_src": "harga/pb",
-    "eps_src": "harga/pe",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 940930.7890625
   },
   "quarterly": {
-    "revenue": {},
+    "revenue": {
+      "2024-Q1": -27442011000000.0,
+      "2024-Q2": -245114823000000.0,
+      "2024-Q3": 115486083000000.0,
+      "2026-Q1": -45976863000000.0,
+      "2026-Q2": -260607846000000.0
+    },
     "eps": {
-      "2024-Q1": 12.0,
-      "2024-Q2": 29.0,
-      "2024-Q3": 38.0,
-      "2024-Q4": 78.0,
-      "2025-Q1": 14.0,
-      "2025-Q2": 31.0,
-      "2025-Q3": 42.0,
-      "2025-Q4": 47.0,
-      "2026-Q1": 10.0,
-      "2026-Q2": 28.0
+      "2024-Q1": 12000000.0,
+      "2024-Q2": 17000000.0,
+      "2024-Q3": 9000000.0,
+      "2026-Q1": 10000000.0,
+      "2026-Q2": 18000000.0
     },
     "net_income": {
-      "2024-Q1": 4587806.0,
-      "2024-Q2": 11055642.0,
-      "2024-Q3": 14503683.0,
-      "2024-Q4": 30125811.0,
-      "2025-Q1": 5519324.0,
-      "2025-Q2": 12070728.0,
-      "2025-Q3": 16214569.0,
-      "2025-Q4": 18050607.0,
-      "2026-Q1": 3779975.0,
-      "2026-Q2": 10847072.0
-    }
+      "2024-Q1": 4587806000000.0,
+      "2024-Q2": 6467836000000.0,
+      "2024-Q3": 3448041000000.0,
+      "2026-Q1": 3779975000000.0,
+      "2026-Q2": 7067097000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 97.0,
-      "2023": 55.0,
-      "2024": 78.0,
-      "2025": 47.0
+      "2022": 97000000.0,
+      "2023": 55000000.0,
+      "2025": 47000000.0
     },
-    "revenue_per_share": {}
+    "revenue_per_share": {
+      "2022": -16354418000000.0,
+      "2023": -21647703000000.0,
+      "2025": 7344044000000.0
+    }
   },
   "statistik": {
-    "market_cap": 195840000000,
-    "enterprise_value": 19347017728,
+    "market_cap": 185856000000,
+    "enterprise_value": 36900499456,
     "shares_outstanding": 384000000,
     "free_float_pct": 21.363
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.3114,
-    "vol_trend": 0.184,
-    "price_chg_20d": -1.92
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.8126,
+    "vol_trend": 0.513,
+    "price_chg_20d": -6.02
   },
   "neraca": {
     "aset": 1175211501.0,
@@ -81,6 +78,7 @@
     "aset_tetap": 36322121.0,
     "liabilitas": 813894078.0,
     "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
     "ekuitas": 361317423.0,
@@ -89,7 +87,7 @@
     "saldo_laba": 9600000.0
   },
   "laba_rugi": {
-    "pendapatan": null,
+    "pendapatan": -306584709.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
@@ -107,6 +105,5 @@
     "arus_kas_pendanaan": null,
     "capex": 2209405.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

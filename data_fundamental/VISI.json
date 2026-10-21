@@ -3,121 +3,99 @@
   "nama": "PT Satu Visi Putra Tbk",
   "sektor": "Industrials",
   "industri": "Industrial Distribution",
-  "harga": 1090.0,
-  "update": "2026-10-11 12:04",
-  "periode_terbaru": "2026-tw2",
+  "harga": 790.0,
+  "update": "2026-10-21 11:05",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 18.75301,
-    "ps": 10.766693,
-    "roe": -0.02095327615243019,
-    "eps": null,
-    "de": 0.1091864310052537,
-    "margin_net": -0.026937213634761592,
-    "current_ratio": 8.309510869565218,
-    "roa": -0.018980284830976635,
-    "bv": 58.12,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2025-audit"
+    "pb": 13.558806456654239,
+    "ps": 6.180071130920581,
+    "roe": -0.01848585653367864,
+    "eps": -0.3105691056910569,
+    "de": 0.5603860150476658,
+    "margin_net": -0.04552952820851204,
+    "current_ratio": 1.8583030512776144,
+    "roa": -0.011871861322895272,
+    "bv": 58.26471544715447
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 96668.0,
-      "2024-Q2": 191411.0,
-      "2024-Q3": 320334.0,
-      "2024-Q4": 449828.0,
-      "2025-Q1": 75372.0,
-      "2025-Q2": 156288.0,
-      "2025-Q3": 250079.0,
-      "2025-Q4": 328569.0,
-      "2026-Q1": 72744.0,
-      "2026-Q2": 139027.0
+      "2024-Q1": 96668000000.0,
+      "2024-Q2": 94743000000.0,
+      "2024-Q3": 128923000000.0,
+      "2026-Q1": 72744000000.0
     },
     "eps": {
       "2024-Q1": -350000.0,
-      "2024-Q2": 1.0,
-      "2024-Q3": 1.0,
-      "2024-Q4": 1.4,
-      "2025-Q1": -65000.0,
-      "2025-Q2": 87000.0,
-      "2025-Q3": 799700.0,
-      "2025-Q4": 350000.0,
-      "2026-Q1": -0.11,
-      "2026-Q2": -1.36
+      "2024-Q2": 1350000.0,
+      "2026-Q1": -0.11
     },
     "net_income": {
-      "2024-Q1": 8961.0,
-      "2024-Q2": 2240.0,
-      "2024-Q3": 2357.0,
-      "2024-Q4": 4189.0,
-      "2025-Q2": 2240.0,
-      "2025-Q3": 2459.0,
-      "2025-Q4": 4189.0,
-      "2026-Q1": -3312.0,
-      "2026-Q2": -3745.0
-    }
+      "2024-Q1": 8961000000.0,
+      "2024-Q2": -6721000000.0,
+      "2024-Q3": 117000000.0,
+      "2026-Q1": -3312000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2024": 1.4,
       "2025": 350000.0
     },
     "revenue_per_share": {
-      "2024": 449828.0,
-      "2025": 328569.0
+      "2025": 328569000000.0
     }
   },
   "statistik": {
-    "market_cap": 3351750115328,
-    "enterprise_value": 3349458714624,
+    "market_cap": 2429250174976,
+    "enterprise_value": 2565333581824,
     "shares_outstanding": 3075000000,
     "free_float_pct": 27.997
   },
   "akumulasi": {
-    "score": 5.9,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.038,
-    "vol_trend": 1.641,
-    "price_chg_20d": 5.31
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2235,
+    "vol_trend": 0.511,
+    "price_chg_20d": -35.77
   },
   "neraca": {
-    "aset": 197310.0,
-    "aset_lancar": 152895.0,
-    "kas": 1986.0,
-    "piutang_usaha": 61006.0,
-    "persediaan": 50372.0,
-    "aset_tetap": 3976.0,
-    "liabilitas": 19515.0,
-    "liabilitas_jangka_pendek": 18400.0,
-    "utang_usaha": 61006.0,
-    "utang_bank": 62197.0,
-    "ekuitas": 178731.0,
-    "ekuitas_induk": 178731.0,
+    "aset": 278979.0,
+    "aset_lancar": 161087.0,
+    "kas": 5730.0,
+    "piutang_usaha": 62205.0,
+    "persediaan": 64143.0,
+    "aset_tetap": 4399.0,
+    "liabilitas": 100401.0,
+    "liabilitas_jangka_pendek": 86685.0,
+    "liabilitas_jangka_panjang": 13716.0,
+    "utang_usaha": 62205.0,
+    "utang_bank": 65894.0,
+    "ekuitas": 179164.0,
+    "ekuitas_induk": 179164.0,
     "modal_saham": null,
     "saldo_laba": 2500.0
   },
   "laba_rugi": {
-    "pendapatan": 139027.0,
-    "beban_pokok": 117267.0,
+    "pendapatan": 72744.0,
+    "beban_pokok": 63492.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -4169.0,
+    "laba_sebelum_pajak": -3386.0,
     "beban_pajak": null,
-    "laba_bersih": -3745.0,
-    "laba_induk": -3745.0,
-    "eps_basic": -1.36,
+    "laba_bersih": -3312.0,
+    "laba_induk": -3312.0,
+    "eps_basic": -1.1e-07,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 3976.0,
+    "capex": 4399.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

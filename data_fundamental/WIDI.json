@@ -3,109 +3,90 @@
   "nama": "PT Widiant Jaya Krenindo Tbk",
   "sektor": "Industrials",
   "industri": "Rental & Leasing Services",
-  "harga": 33.0,
-  "update": "2026-10-11 11:45",
-  "periode_terbaru": "2026-tw2",
+  "harga": 22.0,
+  "update": "2026-10-21 10:58",
+  "periode_terbaru": "2025-audit",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.2003492,
-    "ps": 3.3480082,
-    "roe": -0.05223948989454877,
-    "eps": null,
-    "de": 0.040081027263087175,
-    "margin_net": -0.3836642945350015,
-    "current_ratio": 15.258151564934957,
-    "roa": -0.05022636556693468,
-    "bv": 27.49,
-    "bv_src": "harga/pb",
-    "eps_src": "none",
-    "eps_reliable": false,
-    "eps_period": "2024-audit"
+    "pb": 0.7605093398484056,
+    "ps": 2.202021701738653,
+    "roe": -0.029751246434818853,
+    "eps": -0.8606435020199534,
+    "de": 0.03897572340750559,
+    "margin_net": -0.08614343949583145,
+    "current_ratio": 16.941038447498965,
+    "roa": -0.028635169970328424,
+    "bv": 28.927981350479296
   },
   "quarterly": {
-    "revenue": {
-      "2024-Q2": 6156093437.0,
-      "2024-Q4": 15119420877.0,
-      "2025-Q2": 6204092245.0,
-      "2025-Q4": 15985626753.0,
-      "2026-Q2": 5989349527.0
-    },
-    "eps": {
-      "2024-Q2": 200000.0,
-      "2024-Q4": 310000.0,
-      "2025-Q2": -1.19,
-      "2025-Q4": -860000.0,
-      "2026-Q2": -1.44
-    },
-    "net_income": {
-      "2024-Q2": 323678887.0,
-      "2024-Q4": 500277155.0,
-      "2025-Q2": -1900503529.0,
-      "2025-Q4": -1377056871.0,
-      "2026-Q2": -2297899561.0
-    }
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
       "2023": -890000.0,
-      "2024": 310000.0,
       "2025": -860000.0
     },
     "revenue_per_share": {
-      "2023": 7444494310.0,
-      "2024": 15119420877.0,
-      "2025": 15985626753.0
+      "2023": 7444494310000000.0,
+      "2025": 1.5985626753e+16
     }
   },
   "statistik": {
-    "market_cap": 52801048576,
-    "enterprise_value": 49105305600,
+    "market_cap": 35200696320,
+    "enterprise_value": 33104988160,
     "shares_outstanding": 1600031683,
     "free_float_pct": 41.914000024210765
   },
   "akumulasi": {
-    "score": 7.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.2599,
-    "vol_trend": 0.936,
-    "price_chg_20d": 17.86
+    "score": 6.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1105,
+    "vol_trend": 0.873,
+    "price_chg_20d": -14.81
   },
   "neraca": {
-    "aset": 45750862820.0,
-    "aset_lancar": 13093116030.0,
-    "kas": 755391466.0,
-    "piutang_usaha": 8242042312.0,
+    "aset": 48089704808.0,
+    "aset_lancar": 12123971092.0,
+    "kas": 630611991.0,
+    "piutang_usaha": 8066168668.0,
     "persediaan": null,
-    "aset_tetap": 32518546595.0,
-    "liabilitas": 1763075695.0,
-    "liabilitas_jangka_pendek": 858106303.0,
-    "utang_usaha": 8242042312.0,
+    "aset_tetap": 35540978749.0,
+    "liabilitas": 1804018122.0,
+    "liabilitas_jangka_pendek": 715656902.0,
+    "liabilitas_jangka_panjang": 1088361220.0,
+    "utang_usaha": 8066168668.0,
     "utang_bank": null,
-    "ekuitas": 43987787125.0,
-    "ekuitas_induk": 43987787125.0,
+    "ekuitas": 46285686686.0,
+    "ekuitas_induk": 46285686686.0,
     "modal_saham": null,
     "saldo_laba": 50000000.0
   },
   "laba_rugi": {
-    "pendapatan": 5989349527.0,
-    "beban_pokok": 5768174239.0,
+    "pendapatan": 15985626753.0,
+    "beban_pokok": 13166839784.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -2297899561.0,
-    "beban_pajak": null,
-    "laba_bersih": -2297899561.0,
-    "laba_induk": -2297899561.0,
-    "eps_basic": -1.44,
-    "eps_diluted": -1.44
+    "laba_sebelum_pajak": -1377928629.0,
+    "beban_pajak": 871758.0,
+    "laba_bersih": -1377056871.0,
+    "laba_induk": -1377056871.0,
+    "eps_basic": -0.86,
+    "eps_diluted": -0.86
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 342297297.0,
+    "capex": 1672150001.0,
     "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+  }
 }

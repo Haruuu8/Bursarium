@@ -3,69 +3,61 @@
   "nama": "PT Diastika Biotekindo Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 121.0,
-  "update": "2026-10-11 12:10",
+  "harga": 102.0,
+  "update": "2026-10-21 11:10",
   "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 2.408919,
-    "ps": 2.4246454,
+    "pe": 59.933299543008815,
+    "pb": 2.0709416627270003,
+    "ps": 2.5494711006710338,
     "roe": 0.017277053645618736,
-    "eps": 2.62,
+    "eps": 1.7018919495130356,
     "de": 0.24400579356449434,
     "margin_net": 0.042538473938707556,
     "current_ratio": 4.091880913278582,
     "roa": 0.013888242108675536,
-    "bv": 50.23,
-    "bv_src": "harga/pb",
-    "eps_src": "audit_2025",
-    "eps_reliable": true,
-    "eps_period": "2025-audit"
+    "bv": 49.25295667946878
   },
   "quarterly": {
     "revenue": {
-      "2025-Q2": 78317342302.0,
-      "2025-Q3": 131742897454.0,
-      "2025-Q4": 201306181384.0,
-      "2026-Q1": 37273939501.0,
-      "2026-Q2": 82283696285.0
+      "2026-Q1": 3.7273939501e+16,
+      "2026-Q2": 4.5009756784e+16
     },
     "eps": {
-      "2025-Q2": 1.05,
-      "2025-Q3": 4.54,
-      "2025-Q4": 2.6234007765405463,
-      "2026-Q1": 684547.3523961003,
-      "2026-Q2": 1.7374345040069739
+      "2026-Q1": 684547.35,
+      "2026-Q2": 1052887.15
     },
     "net_income": {
-      "2025-Q2": 5256735706.0,
-      "2025-Q3": 14232233921.0,
-      "2025-Q4": 14023055375.0,
-      "2026-Q1": 686585057.0,
-      "2026-Q2": 3500222870.0
-    }
+      "2026-Q1": 686585057000000.0,
+      "2026-Q2": 2813637813000000.0
+    },
+    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 2.6234007765405463
+      "2025": 2623400.78
     },
     "revenue_per_share": {
-      "2025": 201306181384.0
+      "2025": 2.01306181384e+17
     }
   },
   "statistik": {
-    "market_cap": 497713119232,
-    "enterprise_value": 462659715072,
+    "market_cap": 419559800832,
+    "enterprise_value": 394093068288,
     "shares_outstanding": 4113331485,
     "free_float_pct": 19.021709722478153
   },
   "akumulasi": {
-    "score": 2.8,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1138,
-    "vol_trend": 0.321,
-    "price_chg_20d": -5.47
+    "cmf": -0.2321,
+    "vol_trend": 0.307,
+    "price_chg_20d": -21.21
   },
   "neraca": {
     "aset": 252027783114.0,
@@ -76,6 +68,7 @@
     "aset_tetap": 52458210132.0,
     "liabilitas": 49434045675.0,
     "liabilitas_jangka_pendek": 48612087251.0,
+    "liabilitas_jangka_panjang": 821958424.0,
     "utang_usaha": 23162996254.0,
     "utang_bank": 20464885100.0,
     "ekuitas": 202593737439.0,
@@ -101,7 +94,6 @@
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 17937050.0,
-    "dividen_dibayar": null
-  },
-  "update_bv": "2026-10-11 17:37"
+    "dividen_dibayar": 3296649988.0
+  }
 }
