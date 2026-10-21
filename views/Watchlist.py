@@ -156,14 +156,17 @@ def fmt_num(v, dec=2):
 
 
 # ============================================================
-# BUILD SETUPS ON-THE-FLY DARI SUPRES.PY
+# BUILD SETUPS — FILTER KEDEKATAN KE ZONA
 # ============================================================
 @st.cache_data(ttl=1800, show_spinner=False)
 def build_all_setups():
     """
-    Scan semua saham di parquet, build setup dari supres.py.
-    Support: swing low → buy limit
-    Resistance: swing high → buy stop (breakout)
+    Scan semua saham, tapi HANYA simpan yang harga dekat support/resistance.
+    
+    BUY SUPPORT: harga dalam 5% di atas zona atau sudah di dalam zona
+    BREAKOUT: harga dalam 3% di bawah resistance (mau break)
+    
+    Sort by imminence (kedekatan) × score, limit top 30 per kategori.
     """
     df_all = load_parquet_safe()
     if df_all is None:
@@ -186,7 +189,7 @@ def build_all_setups():
                 continue
 
             # ============================================================
-            # BUY SUPPORT
+            # BUY SUPPORT — hanya kalau harga dekat zona
             # ============================================================
             for z in sr["supports"]:
                 if z.get("role") != "buy_limit":
@@ -194,6 +197,14 @@ def build_all_setups():
 
                 zona_lo = z["lower"]
                 zona_hi = z["upper"]
+
+                # FILTER KEDEKATAN: harga harus dalam range zona
+                # - current >= zona_lo * 0.99 (belum break support)
+                # - current <= zona_hi * 1.05 (maksimal 5% di atas zona)
+                if current < zona_lo * 0.99:
+                    continue
+                if current > zona_hi * 1.05:
+                    continue
 
                 entry = zona_hi
                 sl = zona_lo * 0.99
@@ -216,8 +227,15 @@ def build_all_setups():
 
                 if rr_tp1 < 1.5:
                     continue
-                if jarak < -15 or jarak > 3:
-                    continue
+
+                # Imminence score: semakin dekat harga ke zona_hi, semakin tinggi
+                # jarak < 0 → harga di atas zona_hi (0-5%)
+                # jarak = 0 → harga tepat di zona_hi
+                # jarak > 0 → harga di dalam zona
+                if jarak < 0:
+                    imminence = max(0, 1 - abs(jarak) / 5)
+                else:
+                    imminence = 1.0
 
                 buy_support.append({
                     "kode": kode,
@@ -235,10 +253,11 @@ def build_all_setups():
                     "_source": "swing",
                     "_strength": z.get("strength", "MODERATE"),
                     "_score": z.get("score", 8.0),
+                    "_imminence": round(imminence, 3),
                 })
 
             # ============================================================
-            # BREAKOUT BUY
+            # BREAKOUT — hanya kalau harga dekat resistance
             # ============================================================
             for z in sr["resistances"]:
                 if z.get("role") != "breakout_trigger":
@@ -246,6 +265,14 @@ def build_all_setups():
 
                 zona_lo = z["lower"]
                 zona_hi = z["upper"]
+
+                # FILTER KEDEKATAN
+                # - current <= zona_hi * 1.005 (belum break resistance)
+                # - current >= zona_lo * 0.97 (maksimal 3% di bawah zona_lo)
+                if current > zona_hi * 1.005:
+                    continue
+                if current < zona_lo * 0.97:
+                    continue
 
                 entry = zona_hi * 1.001
                 sl = zona_lo * 0.995
@@ -269,8 +296,11 @@ def build_all_setups():
 
                 if rr_tp1 < 1.5:
                     continue
-                if jarak < 0.5 or jarak > 15:
+                if jarak < 0 or jarak > 3:
                     continue
+
+                # Imminence score: jarak 0-3%, semakin dekat ke trigger makin tinggi
+                imminence = max(0, 1 - jarak / 3)
 
                 breakout_buy.append({
                     "kode": kode,
@@ -288,12 +318,18 @@ def build_all_setups():
                     "_source": "swing",
                     "_strength": z.get("strength", "MODERATE"),
                     "_score": z.get("score", 8.0),
+                    "_imminence": round(imminence, 3),
                 })
         except Exception:
             continue
 
-    buy_support.sort(key=lambda x: (-x["_score"], -x["rr_tp1"]))
-    breakout_buy.sort(key=lambda x: (-x["_score"], -x["rr_tp1"]))
+    # Sort: imminence (kedekatan) × score tertinggi, lalu RR
+    buy_support.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
+    breakout_buy.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
+
+    # Limit top N (yang benar-benar dekat)
+    buy_support = buy_support[:30]
+    breakout_buy = breakout_buy[:20]
 
     return {
         "buy_support": buy_support,
@@ -1058,11 +1094,12 @@ with tab4:
         '<div style="font-size: 13px; color: #10b981; font-weight: 800; '
         'margin-bottom: 8px;">🎯 BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Entry limit di zona support · RR min 1.5'
+        'Hanya menampilkan saham yang <b>harganya dekat zona support</b> '
+        '(0-5% di atas zona atau sudah di dalam zona) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
 
-    with st.spinner("Memindai semua saham..."):
+    with st.spinner("Memindai saham yang dekat support..."):
         setups_data = build_all_setups()
 
     items_support = setups_data.get("buy_support", [])
@@ -1072,7 +1109,7 @@ with tab4:
     with c1:
         st.markdown(
             f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-            f'<b style="color:#10b981;">{len(items_support)}</b> saham · '
+            f'<b style="color:#10b981;">{len(items_support)}</b> saham dekat support · '
             f'scan {generated_support}</div>',
             unsafe_allow_html=True
         )
@@ -1082,7 +1119,7 @@ with tab4:
             st.rerun()
 
     if not items_support:
-        st.info("Tidak ada saham dengan setup Buy Support saat ini.")
+        st.info("Tidak ada saham yang sedang dekat dengan support saat ini.")
     else:
         for r in items_support:
             r["_nama"] = nama_map.get(r["kode"], r["kode"])
@@ -1100,11 +1137,12 @@ with tab5:
         '<div style="font-size: 13px; color: #06b6d4; font-weight: 800; '
         'margin-bottom: 8px;">🚀 BREAKOUT BUY — SETUP STOP ORDER</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
-        'Buy stop di atas resistance · RR min 1.5'
+        'Hanya menampilkan saham yang <b>harganya 0-3% di bawah resistance</b> '
+        '(sedang mendekati trigger breakout) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
     )
 
-    with st.spinner("Memindai semua saham..."):
+    with st.spinner("Memindai saham yang hampir breakout..."):
         setups_data2 = build_all_setups()
 
     items_breakout = setups_data2.get("breakout_buy", [])
@@ -1114,7 +1152,7 @@ with tab5:
     with c1:
         st.markdown(
             f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-            f'<b style="color:#06b6d4;">{len(items_breakout)}</b> saham · '
+            f'<b style="color:#06b6d4;">{len(items_breakout)}</b> saham dekat resistance · '
             f'scan {generated_breakout}</div>',
             unsafe_allow_html=True
         )
@@ -1124,7 +1162,7 @@ with tab5:
             st.rerun()
 
     if not items_breakout:
-        st.info("Tidak ada saham dengan setup Breakout Buy saat ini.")
+        st.info("Tidak ada saham yang sedang dekat dengan resistance saat ini.")
     else:
         for r in items_breakout:
             r["_nama"] = nama_map.get(r["kode"], r["kode"])
