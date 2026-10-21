@@ -16,6 +16,7 @@ from quant.parquet_loader import load_parquet_safe
 st.set_page_config(page_title="Money Flow", layout="wide")
 load_theme()
 
+
 @st.cache_data(ttl=1800)
 def load_ohlcv(kode):
     df_all = load_parquet_safe()
@@ -26,12 +27,14 @@ def load_ohlcv(kode):
         return None
     return df.sort_values("Date").reset_index(drop=True)
 
+
 @st.cache_data(ttl=1800)
 def list_available():
     df = load_parquet_safe()
     if df is None or "Kode" not in df.columns:
         return []
     return sorted(df["Kode"].unique())
+
 
 def calculate_money_flow(df):
     d = df.copy()
@@ -41,18 +44,69 @@ def calculate_money_flow(df):
     neg_mf = mf.where(tp < tp.shift(1), 0)
     mfr = pos_mf.rolling(14).sum() / neg_mf.rolling(14).sum()
     d['MFI'] = 100 - (100 / (1 + mfr))
-    
+
     mfm = ((d['Close'] - d['Low']) - (d['High'] - d['Close'])) / (d['High'] - d['Low'])
     mfv = mfm * d['Volume']
     d['CMF'] = mfv.rolling(20).sum() / d['Volume'].rolling(20).sum()
-    
+
     d['OBV'] = (np.sign(d['Close'].diff()) * d['Volume']).fillna(0).cumsum()
-    
+
     d['Vol_MA20'] = d['Volume'].rolling(20).mean()
     d['Vol_Ratio'] = d['Volume'] / d['Vol_MA20']
     return d
 
+
+# ============================================================
+# COMPUTE INDICATORS FOR ALL STOCKS
+# ============================================================
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_all_indicators():
+    d = load_parquet_safe()
+    if d is None or d.empty:
+        return None
+
+    d = d.copy()
+    d["Kode"] = d["Kode"].astype(str).str.strip().str.upper()
+
+    d["Date"] = pd.to_datetime(d["Date"], errors="coerce")
+    d = d.dropna(subset=["Date"])
+
+    for c in ["Open", "High", "Low", "Close", "Volume"]:
+        if c in d.columns:
+            d[c] = pd.to_numeric(d[c], errors="coerce")
+
+    d = d.dropna(subset=["Open", "High", "Low", "Close"])
+    d = d[d["Close"] > 0]
+    d = d.sort_values(["Kode", "Date"]).reset_index(drop=True)
+
+    # Volume ratio
+    d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
+        lambda x: x.rolling(20, min_periods=10).mean()
+    )
+    d["Vol_Ratio"] = d["Volume"] / d["Vol_MA20"]
+
+    # % change dari close sebelumnya
+    d["Pct_Change"] = d.groupby("Kode")["Close"].pct_change() * 100
+
+    # Close position dalam range (0 = low, 1 = high)
+    rng = (d["High"] - d["Low"]).replace(0, np.nan)
+    d["Close_Pct"] = (d["Close"] - d["Low"]) / rng
+
+    # CMF (20)
+    d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng
+    d["MFV"] = d["MFM"] * d["Volume"]
+    d["CMF_20"] = d.groupby("Kode")["MFV"].transform(
+        lambda x: x.rolling(20, min_periods=10).sum()
+    ) / d.groupby("Kode")["Volume"].transform(
+        lambda x: x.rolling(20, min_periods=10).sum()
+    )
+
+    return d
+
+
+# ============================================================
 # HEADER
+# ============================================================
 st.markdown(page_header("", "Smart Money Flow", "Bandarmology & Aliran Uang Besar"), unsafe_allow_html=True)
 
 saham_list = list_available()
@@ -109,15 +163,17 @@ obv_prev = df['OBV'].iloc[-10]
 obv_trend = "Naik" if obv_now > obv_prev else "Turun"
 c4.metric("OBV Trend (10d)", obv_trend)
 
+# ============================================================
 # GRAFIK 1: HARGA VS VOLUME
+# ============================================================
 st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe_allow_html=True)
 fig1 = go.Figure()
 fig1.add_trace(go.Bar(
-    x=df['Date'], y=df['Volume'], name='Volume', 
+    x=df['Date'], y=df['Volume'], name='Volume',
     marker=dict(color='#38bdf8', opacity=0.7), marker_line_width=0
 ))
 fig1.add_trace(go.Scatter(
-    x=df['Date'], y=df['Close'], name='Harga', yaxis='y2', 
+    x=df['Date'], y=df['Close'], name='Harga', yaxis='y2',
     line=dict(color='#06b6d4', width=2)
 ))
 fig1.update_layout(
@@ -130,38 +186,87 @@ fig1.update_layout(
 )
 st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
+# ============================================================
 # GRAFIK 2: CMF
+# ============================================================
 st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
 fig2 = go.Figure()
 fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='CMF', line=dict(color='#10b981', width=2)))
 fig2.add_hline(y=0, line_dash="dash", line_color="#64748b")
 fig2.update_layout(
-    template="plotly_dark", height=300, 
+    template="plotly_dark", height=300,
     xaxis=dict(fixedrange=True), yaxis=dict(title="CMF", fixedrange=True),
     dragmode=False, margin=dict(l=40, r=40, t=20, b=40)
 )
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
 # ============================================================
-# TABEL: VOLUME MELEDAK (MURNI BERDASARKAN VOLUME)
+# TABEL: VOLUME MELEDAK NAIK (hanya harga naik)
 # ============================================================
-st.markdown(section_title("Saham dengan Volume Meledak Hari Ini"), unsafe_allow_html=True)
-st.caption("Saham di bawah ini memiliki Volume > 2x lipat dari rata-rata 20 harinya.")
+st.markdown(
+    section_title("Saham dengan Volume Meledak + Harga Naik",
+                  "Volume > 2x MA20 dan Close > Open (bullish)"),
+    unsafe_allow_html=True
+)
 
-df_all = load_parquet_safe()
-last_date = df_all['Date'].max()
-vol_ma = df_all.groupby('Kode')['Volume'].transform(lambda x: x.rolling(20).mean())
-df_all['Vol_Ratio'] = df_all['Volume'] / vol_ma
+with st.spinner("Scanning volume spike bullish..."):
+    df_ind = compute_all_indicators()
 
-df_today = df_all[df_all['Date'] == last_date].copy()
-
-# Filter murni hanya Volume Ratio > 2 (Tanpa filter harga/likuiditas)
-df_vol_spike = df_today[df_today['Vol_Ratio'] > 2].sort_values('Vol_Ratio', ascending=False)
-
-if df_vol_spike.empty:
-    st.info("Tidak ada saham dengan volume meledak hari ini.")
+if df_ind is None or df_ind.empty:
+    st.info("Data tidak tersedia untuk analisa volume spike.")
 else:
-    cols_show = ['Kode', 'Close', 'Volume', 'Vol_Ratio']
-    df_vol_spike = df_vol_spike[cols_show].head(10).reset_index(drop=True)
-    df_vol_spike['Vol_Ratio'] = df_vol_spike['Vol_Ratio'].round(2)
-    st.dataframe(df_vol_spike, use_container_width=True, hide_index=True)
+    last_date = df_ind["Date"].max()
+    df_today = df_ind[df_ind["Date"] == last_date].copy()
+
+    # FILTER: volume meledak NAIK saja
+    df_spike = df_today[
+        (df_today["Vol_Ratio"] > 2) &           # volume minimal 2x MA20
+        (df_today["Vol_Ratio"] < 50) &          # buang outlier aneh
+        (df_today["Close"] > df_today["Open"]) & # candle bullish
+        (df_today["Close"] > 0) &
+        (df_today["Volume"] > 0)
+    ].copy()
+
+    # Optional: close dekat high (buyer dominan)
+    # Kalau mau lebih ketat, uncomment baris berikut:
+    # df_spike = df_spike[df_spike["Close_Pct"] > 0.5]
+
+    if df_spike.empty:
+        st.info("Tidak ada saham dengan volume meledak + harga naik hari ini.")
+    else:
+        df_spike = df_spike.sort_values("Vol_Ratio", ascending=False)
+
+        st.markdown(
+            f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
+            f'border:1px solid #1a2338; border-radius:10px; '
+            f'padding:12px 18px; margin-bottom:16px; '
+            f'display:flex; gap:20px; flex-wrap:wrap; font-size:12px;">'
+            f'<span style="color:#7d8ba3;">Saham bullish spike: '
+            f'<b style="color:#10b981;">{len(df_spike)}</b></span>'
+            f'<span style="color:#7d8ba3;">Tanggal: '
+            f'<b style="color:#ffffff;">{last_date.strftime("%d %b %Y")}</b></span>'
+            f'</div>',
+            unsafe_allow_html=True
+        )
+
+        # Format tabel
+        cols_show = ["Kode", "Close", "Pct_Change", "Vol_Ratio", "CMF_20", "Close_Pct"]
+        cols_existing = [c for c in cols_show if c in df_spike.columns]
+        df_show = df_spike[cols_existing].head(30).reset_index(drop=True).copy()
+
+        df_show["Close"] = df_show["Close"].round(0)
+        df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
+        df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
+        df_show["CMF_20"] = df_show["CMF_20"].round(3)
+        df_show["Close_Pct"] = (df_show["Close_Pct"] * 100).round(0)
+
+        df_show.columns = ["Kode", "Harga", "Chg %", "Vol Ratio", "CMF (20)", "Close%"]
+
+        st.dataframe(df_show, use_container_width=True, hide_index=True)
+
+        st.caption(
+            "**Close%** = posisi close dalam range hari itu "
+            "(0% = di low, 100% = di high). "
+            "Semakin tinggi, semakin menunjukkan buyer dominan. "
+            "Vol Ratio = Volume / rata-rata 20 hari."
+        )
