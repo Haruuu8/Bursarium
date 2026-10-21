@@ -45,6 +45,18 @@ def load_json_safe(path):
         return None
 
 
+def load_setups_json():
+    """Baca data_setups.json dari scan_all.py (instant, tanpa scan ulang)."""
+    data = load_json_safe(SETUPS_FILE)
+    if not data:
+        return {"buy_support": [], "breakout_buy": [], "generated": "?"}
+    return {
+        "buy_support": data.get("buy_support", []),
+        "breakout_buy": data.get("breakout_buy", []),
+        "generated": data.get("generated", "?"),
+    }
+
+
 def load_scan(name):
     d = load_json_safe(os.path.join(SCANS_DIR, f"{name}.json"))
     if not d:
@@ -153,176 +165,6 @@ def fmt_num(v, dec=2):
         return f"{v:,.{dec}f}"
     except Exception:
         return "—"
-
-
-# ============================================================
-# BUILD SETUPS — FILTER KEDEKATAN KE ZONA
-# ============================================================
-@st.cache_data(ttl=1800, show_spinner=False)
-def build_all_setups():
-    """
-    Scan semua saham, tapi HANYA simpan yang harga dekat support/resistance.
-    
-    BUY SUPPORT: harga 0-5% di atas zona_hi atau sudah di dalam zona
-    BREAKOUT: harga 0-3% di bawah resistance (mau break)
-    
-    Sort by imminence × score, limit top 30 per kategori.
-    """
-    df_all = load_parquet_safe()
-    if df_all is None:
-        return {"buy_support": [], "breakout_buy": [], "generated": "?"}
-
-    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
-    kodes = sorted(df_all["Kode"].unique())
-
-    buy_support = []
-    breakout_buy = []
-
-    for kode in kodes:
-        try:
-            sr = get_support_resistance(kode, timeframe="daily")
-            if not sr:
-                continue
-
-            current = sr["current_price"]
-            if current <= 0:
-                continue
-
-            # ============================================================
-            # BUY SUPPORT — hanya kalau harga dekat zona
-            # ============================================================
-            for z in sr["supports"]:
-                if z.get("role") != "buy_limit":
-                    continue
-
-                zona_lo = z["lower"]
-                zona_hi = z["upper"]
-
-                if current < zona_lo * 0.99:
-                    continue
-                if current > zona_hi * 1.05:
-                    continue
-
-                entry = zona_hi
-                sl = zona_lo * 0.99
-
-                risk = entry - sl
-                if risk <= 0:
-                    continue
-                risk_pct = risk / entry * 100
-
-                tp1 = None
-                for r in sr["resistances"]:
-                    if r["level"] > entry * 1.02 and r.get("role") == "breakout_trigger":
-                        tp1 = r["level"]
-                        break
-                if tp1 is None:
-                    tp1 = entry + 2 * risk
-
-                rr_tp1 = (tp1 - entry) / risk if risk > 0 else 0
-                jarak = (entry - current) / current * 100
-
-                if rr_tp1 < 1.5:
-                    continue
-
-                if jarak < 0:
-                    imminence = max(0, 1 - abs(jarak) / 5)
-                else:
-                    imminence = 1.0
-
-                buy_support.append({
-                    "kode": kode,
-                    "harga": current,
-                    "entry": round(entry, 2),
-                    "sl": round(sl, 2),
-                    "tp1": round(tp1, 2),
-                    "tp2": None,
-                    "rr_tp1": round(rr_tp1, 2),
-                    "rr_tp2": None,
-                    "risk_pct": round(risk_pct, 2),
-                    "jarak_entry_pct": round(jarak, 2),
-                    "zona_lo": zona_lo,
-                    "zona_hi": zona_hi,
-                    "_source": "swing",
-                    "_strength": z.get("strength", "MODERATE"),
-                    "_score": z.get("score", 8.0),
-                    "_imminence": round(imminence, 3),
-                })
-
-            # ============================================================
-            # BREAKOUT — hanya kalau harga dekat resistance
-            # ============================================================
-            for z in sr["resistances"]:
-                if z.get("role") != "breakout_trigger":
-                    continue
-
-                zona_lo = z["lower"]
-                zona_hi = z["upper"]
-
-                if current > zona_hi * 1.005:
-                    continue
-                if current < zona_lo * 0.97:
-                    continue
-
-                entry = zona_hi * 1.001
-                sl = zona_lo * 0.995
-
-                risk = entry - sl
-                if risk <= 0:
-                    continue
-                risk_pct = risk / entry * 100
-
-                tp1 = None
-                for r in sr["resistances"]:
-                    if r["level"] > entry * 1.02 and r.get("role") in ("breakout_trigger", "reversal_warning"):
-                        if r["level"] != z["level"]:
-                            tp1 = r["level"]
-                            break
-                if tp1 is None:
-                    tp1 = entry + 2 * risk
-
-                rr_tp1 = (tp1 - entry) / risk if risk > 0 else 0
-                jarak = (entry - current) / current * 100
-
-                if rr_tp1 < 1.5:
-                    continue
-                if jarak < 0 or jarak > 3:
-                    continue
-
-                imminence = max(0, 1 - jarak / 3)
-
-                breakout_buy.append({
-                    "kode": kode,
-                    "harga": current,
-                    "entry": round(entry, 2),
-                    "sl": round(sl, 2),
-                    "tp1": round(tp1, 2),
-                    "tp2": None,
-                    "rr_tp1": round(rr_tp1, 2),
-                    "rr_tp2": None,
-                    "risk_pct": round(risk_pct, 2),
-                    "jarak_entry_pct": round(jarak, 2),
-                    "zona_lo": zona_lo,
-                    "zona_hi": zona_hi,
-                    "_source": "swing",
-                    "_strength": z.get("strength", "MODERATE"),
-                    "_score": z.get("score", 8.0),
-                    "_imminence": round(imminence, 3),
-                })
-        except Exception:
-            continue
-
-    buy_support.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
-    breakout_buy.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
-
-    buy_support = buy_support[:30]
-    breakout_buy = breakout_buy[:20]
-
-    return {
-        "buy_support": buy_support,
-        "breakout_buy": breakout_buy,
-        "generated": datetime.now().strftime("%Y-%m-%d %H:%M"),
-    }
 
 
 # ============================================================
@@ -527,7 +369,7 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe,
 
 
 # ============================================================
-# CARD: SETUP
+# CARD: SETUP (Buy Support / Breakout) — BANNER PER TIPE
 # ============================================================
 def setup_row(r, tipe="support"):
     kode = r["kode"]
@@ -596,7 +438,8 @@ def setup_row(r, tipe="support"):
 
     signal_banners = ""
 
-    if breakout_zone:
+    # ⭐ BANNER BREAKOUT — HANYA UNTUK TAB BREAKOUT
+    if tipe == "breakout" and breakout_zone:
         signal_banners += (
             f'<div style="background:rgba(6,182,212,0.15); border:1px solid #06b6d4; '
             f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
@@ -605,7 +448,8 @@ def setup_row(r, tipe="support"):
             f'</div>'
         )
 
-    if strong_zone:
+    # ⭐ BANNER WARNING — HANYA UNTUK TAB SUPPORT
+    if tipe == "support" and strong_zone:
         signal_banners += (
             f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
             f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
@@ -614,10 +458,11 @@ def setup_row(r, tipe="support"):
             f'</div>'
         )
 
+    # ⭐ BORDER CARD — SESUAI TIPE
     card_border = "border:1px solid #1a2338;"
-    if breakout_zone:
+    if tipe == "breakout" and breakout_zone:
         card_border = "border:1px solid #06b6d4;"
-    elif strong_zone:
+    elif tipe == "support" and strong_zone:
         card_border = "border:1px solid #f59e0b;"
 
     return (
@@ -1007,8 +852,7 @@ with tab4:
         '</div></div>', unsafe_allow_html=True
     )
 
-    with st.spinner("Memindai saham yang dekat support..."):
-        setups_data = build_all_setups()
+    setups_data = load_setups_json()
 
     items_support = setups_data.get("buy_support", [])
     generated_support = setups_data.get("generated", "?")
@@ -1022,7 +866,7 @@ with tab4:
             unsafe_allow_html=True
         )
     with c2:
-        if st.button("🔄 Rescan", key="reload_support", use_container_width=True):
+        if st.button("🔄 Reload", key="reload_support", use_container_width=True):
             st.cache_data.clear()
             st.rerun()
 
@@ -1050,8 +894,7 @@ with tab5:
         '</div></div>', unsafe_allow_html=True
     )
 
-    with st.spinner("Memindai saham yang hampir breakout..."):
-        setups_data2 = build_all_setups()
+    setups_data2 = load_setups_json()
 
     items_breakout = setups_data2.get("breakout_buy", [])
     generated_breakout = setups_data2.get("generated", "?")
@@ -1065,7 +908,7 @@ with tab5:
             unsafe_allow_html=True
         )
     with c2:
-        if st.button("🔄 Rescan", key="reload_breakout", use_container_width=True):
+        if st.button("🔄 Reload", key="reload_breakout", use_container_width=True):
             st.cache_data.clear()
             st.rerun()
 
