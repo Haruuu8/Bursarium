@@ -1,0 +1,40 @@
+name: Update IDX News
+
+on:
+  schedule:
+    - cron: '0 22 * * *'   # 05:00 WIB tiap hari
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install curl_cffi==0.7.1 cloudscraper pandas requests
+
+      - name: Fetch news from IDX
+        run: python -m quant.fetch_news_auto     # ← ganti path di sini
+
+      - name: Commit & push jika ada perubahan
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data_news_static.json
+          if git diff --staged --quiet; then
+            echo "📭 Tidak ada perubahan, skip commit."
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+            git commit -m "data(news): update otomatis $TIMESTAMP"
+            git push
+            echo "✅ Berhasil commit & push."
+          fi
