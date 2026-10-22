@@ -8,6 +8,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quant.theme import load_theme, hero, section_title, info_banner
 from quant.auth import submit_registration, get_all_approved_users_for_auth
 
+# 1. SET PAGE CONFIG (Wajib paling atas)
+st.set_page_config(page_title="Bursarium", layout="wide")
+
+# 2. LOAD TEMA
+# CATATAN: Jika form login tetap kosong, coba beri tanda '#' di depan load_theme() di bawah ini.
 load_theme()
 
 try:
@@ -33,8 +38,11 @@ if admin_key:
 if "CONFIG_YAML" in st.secrets:
     config = yaml.safe_load(st.secrets["CONFIG_YAML"])
 else:
-    with open("config.yaml", encoding="utf-8") as f:
-        config = yaml.safe_load(f)
+    try:
+        with open("config.yaml", encoding="utf-8") as f:
+            config = yaml.safe_load(f)
+    except FileNotFoundError:
+        config = {"credentials": {"usernames": {}}, "cookie": {"name": "app_cookie", "key": "secret", "expiry_days": 30}}
 
 # Ambil user dari Database Supabase
 db_users = get_all_approved_users_for_auth()
@@ -42,12 +50,18 @@ if db_users:
     config["credentials"]["usernames"].update(db_users)
 
 # ============ INISIALISASI AUTHENTICATOR ============
-authenticator = stauth.Authenticate(
-    config["credentials"],
-    config["cookie"]["name"],
-    config["cookie"]["key"],
-    config["cookie"]["expiry_days"],
-)
+# Mencegah error jika format YAML di secrets salah
+try:
+    authenticator = stauth.Authenticate(
+        config["credentials"],
+        config["cookie"]["name"],
+        config["cookie"]["key"],
+        config["cookie"]["expiry_days"],
+    )
+except Exception as e:
+    st.error(f"❌ Gagal memuat Authenticator: {e}")
+    st.info("Periksa kembali format CONFIG_YAML di Streamlit Secrets Anda (pastikan indentasi/spasi benar).")
+    st.stop()
 
 # ============ KALAU SUDAH LOGIN → NAVIGASI HALAMAN ============
 if st.session_state.get("authentication_status"):
@@ -62,10 +76,8 @@ if st.session_state.get("authentication_status"):
         st.Page("views/Kalkulator_Right_Issue.py", title="Kalkulator Right Issue", icon=":material/calculate:"),
     ]
     
-    # PENTING: Tidak pakai position="hidden" agar tombol ☰ (3 garis) bisa membuka sidebar
     pg = st.navigation(pages) 
     
-    # Tampilkan info user di sidebar
     from quant.nav import render_user_sidebar
     render_user_sidebar() 
     
@@ -73,10 +85,8 @@ if st.session_state.get("authentication_status"):
     st.stop()
 
 # ============ KALAU BELUM LOGIN → LANDING PAGE ============
-# HERO SECTION
 st.markdown(hero("📊 Bursarium", "Platform analisis saham IDX — fundamental, teknikal, screening, dan valuasi dalam satu tempat. Semua yang Anda butuhkan untuk ambil keputusan trading.", badge_text="PLATFORM ANALISIS SAHAM", badge_color="#06b6d4"), unsafe_allow_html=True)
 
-# MEMBUAT TAB UNTUK LOGIN DAN DAFTAR
 tab_login, tab_daftar = st.tabs(["🔐 Login", "📝 Daftar Sekarang"])
 
 # ==========================================
@@ -88,10 +98,23 @@ with tab_login:
     with col2:
         st.markdown('<div style="text-align:center; margin-bottom:20px;"><div style="font-size:24px; font-weight:800; color:#ffffff;">Masuk ke Akun Anda</div><div style="font-size:13px; color:#94a3b8;">Silakan login untuk mengakses dashboard</div></div>', unsafe_allow_html=True)
         
-        authenticator.login(location="main")
+        # --- DEBUG (Akan dihapus jika login sudah berhasil) ---
+        st.write(f"DEBUG - Jumlah User Terdeteksi: {len(config['credentials']['usernames'])}")
+        # -----------------------------------------------------
         
-        if st.session_state.get("authentication_status") is False:
-            st.error("❌ Username atau password salah")
+        try:
+            # Render form login
+            authenticator.login(location="main")
+            
+            # Cek status autentikasi
+            if st.session_state.get("authentication_status") is False:
+                st.error("❌ Username atau password salah")
+            elif st.session_state.get("authentication_status") is None:
+                st.info("Silakan masukkan username dan password.")
+                
+        except Exception as e:
+            st.error(f"Error pada library Login: {e}")
+            st.info("Pastikan versi streamlit-authenticator di requirements.txt adalah 0.4.2")
         
         st.markdown('<div style="text-align:center; margin-top:20px; font-size:13px; color:#94a3b8;">Belum punya akun? Silakan klik tab <b>Daftar Sekarang</b> di atas.</div>', unsafe_allow_html=True)
 
