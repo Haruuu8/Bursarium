@@ -15,7 +15,7 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
 import yfinance as yf
-
+from curl_cffi import requests as curl_requests # TAMBAHAN: Untuk bypass blokir Yahoo
 
 if not st.session_state.get("authentication_status"):
     st.error("⚠ Silakan login dulu di halaman utama.")
@@ -75,8 +75,17 @@ def load_global_data():
     tickers = list(SEKTOR_ID.keys()) + [BENCHMARK]
     
     try:
+        # FIX: Gunakan sesi curl_cffi untuk menyamar sebagai browser Chrome
+        session = curl_requests.Session(impersonate="chrome")
+        
         # Ambil data 1 tahun terakhir
-        raw = yf.download(tickers, period="1y", progress=False)
+        raw = yf.download(
+            tickers, 
+            period="1y", 
+            progress=False, 
+            session=session
+        )
+        
         # Ambil hanya kolom 'Close'
         df = raw["Close"] if "Close" in raw.columns else raw
         
