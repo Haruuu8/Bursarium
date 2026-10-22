@@ -1,9 +1,8 @@
 """
 IDX NEWS — Scraper keterbukaan informasi IDX.
 
-Strategi: pakai cookie browser langsung (cf_clearance valid dari DevTools).
-Cookie ini terikat ke (IP + User-Agent) dan valid ~30 menit - 6 jam.
-Kalau expired, ambil ulang dari DevTools.
+Strategi: gunakan sesi HTTP yang meniru TLS fingerprint Firefox
+(terbukti tembus Cloudflare IDX) tanpa cookie hardcoded.
 """
 
 import os
@@ -12,14 +11,26 @@ import time
 from datetime import datetime, timedelta
 
 import pandas as pd
-import requests
 
+# Prioritas 1: curl_cffi (profil Firefox)
 try:
-    import tls_client
-    HAS_TLS_CLIENT = True
+    from curl_cffi import requests as curl_requests
+    HAS_CURL_CFFI = True
 except ImportError:
-    tls_client = None
-    HAS_TLS_CLIENT = False
+    curl_requests = None
+    HAS_CURL_CFFI = False
+
+# Prioritas 2: cloudscraper (profil Firefox)
+try:
+    import cloudscraper
+except ImportError:
+    cloudscraper = None
+
+# Prioritas 3: requests biasa (fallback terakhir)
+try:
+    import requests as std_requests
+except ImportError:
+    std_requests = None
 
 
 # ============================================================
@@ -32,43 +43,14 @@ CACHE_TTL_HOURS = 3
 FAILED_CACHE_TTL_SEC = 300
 
 
-# ============================================================
-# COOKIE — dari DevTools browser Anda
-# ============================================================
-COOKIE_STR = (
-    "_ga=GA1.1.92256144.1789315483; "
-    "auth.strategy=local; "
-    "_cfuvid=nC8kR7OZJQzPJGRiNwvW9QfoTxBkUjV.6el4HjSovxM-1792514665.7373624-1.0.1.1-ehvWLOtTgJuh2lozkPeGT7liMeTBgpWrK4ssP5wYFWg; "
-    "cf_clearance=.NQ22jhyf4dHBDJj1BNqqTwGznYeTFxj26pAmXCBJX8-1792550198-1.2.1.1-_2cLfGJDGBflpR4pJlZPOafTQO_W8cS0vbf8vDgAl75PJ2mCsT80uhCU0LPG94yezoGKG7UJZkg7NxMYXolUFmgFKMydltDEiAvlLfa16BNQuvg1nGCNaldsFgv_9x6_8qMoryiddcK.vlDW4Xw3nHlG0DsaM30FxoMCyIqqK1cuXb9qQk47G.Jz2K6tDOcd8xqiUBAfsAz77Qct2u15N4ckU4yY7YnRbf4SOxgHeH9.zwNmkwggXOZcyKo.OSTgguiQnS2taJPfFPqcC7McYc.MUlLblP9t3uZ31oMuyWucSk.KyCKY.EcKTQceN7cr2orgyllCPgcSHHfAvjZRGGdNx0B7QTDcYZ0Q3f2q.WGY3nMw5bRAlrRYDxJLmaD10Gq6ZE70l9bKuOkz8jDVWraO7gCl6AN1hcxvUlLl5t0QGPZY1SfOy6wCFknvdM1AUmnJ4NGDDZLli6iWOZPPAZE7nYY8jhqjKwF8FCFlbi8; "
-    "__cf_bm=DgICy6PgbcTb6EiUx_kF.tKsTMAurx0Kdux2JphwuBw-1792550198.3689036-1.0.1.1-aO8O48zY1W_GP4ixT8NpyEEeTPsMPjdhGmP.V_8xwnov.LivuLWW2ZZfK6A8jfOX5xNp6JEYKrlNbWeophxinb7vCPzxbmtTU_YLxE4hUIYQwBKbqAh3hrh7j_VABPAw; "
-    "_ga_VDBWS0BLZR=GS2.1.s1792550198$o12$g0$t1792550198$j60$l0$h0"
-)
-
-
-def parse_cookie(s):
-    out = {}
-    for part in s.split("; "):
-        if "=" in part:
-            k, v = part.split("=", 1)
-            out[k.strip()] = v.strip()
-    return out
-
-
-COOKIES = parse_cookie(COOKIE_STR)
-
-
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/155.0.0.0 Safari/537.36"
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) "
+        "Gecko/20100101 Firefox/128.0"
     ),
     "Accept": "application/json, text/plain, */*",
     "Accept-Language": "en-US,en;q=0.9",
     "Referer": f"{BASE}/id/perusahaan-tercatat/keterbukaan-informasi",
-    "sec-ch-ua": '"Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"',
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": '"Windows"',
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-origin",
@@ -322,7 +304,7 @@ def get_bobot(kategori_list):
 
 
 # ============================================================
-# FETCH — dengan cookie browser
+# FETCH — dengan sesi Firefox (tanpa cookie hardcoded)
 # ============================================================
 def _fetch_page(page_number, page_size, date_from_yyyymmdd, date_to_yyyymmdd):
     params = {
@@ -335,47 +317,63 @@ def _fetch_page(page_number, page_size, date_from_yyyymmdd, date_to_yyyymmdd):
     }
 
     for attempt in range(3):
-        # === 1. requests dengan cookie browser ===
-        try:
-            r = requests.get(
-                ENDPOINT, params=params, headers=HEADERS,
-                cookies=COOKIES, timeout=30,
-            )
-            if r.status_code == 200:
-                try:
-                    return r.json()
-                except Exception as e:
-                    print(f"    JSON parse error: {e}")
-            elif r.status_code == 429:
-                time.sleep(15 * (attempt + 1))
-                continue
-            else:
-                print(f"    requests HTTP {r.status_code}")
-        except Exception as e:
-            print(f"    requests exception: {e}")
-
-        # === 2. tls_client dengan cookie yang sama ===
-        if HAS_TLS_CLIENT:
+        # === 1. curl_cffi dengan profil Firefox ===
+        if HAS_CURL_CFFI:
             try:
-                sess = tls_client.Session(
-                    client_identifier="chrome_120",
-                    random_tls_extension_order=True,
+                r = curl_requests.get(
+                    ENDPOINT, params=params,
+                    headers=HEADERS,
+                    impersonate="firefox",
+                    timeout=30,
                 )
-                r = sess.get(ENDPOINT, params=params,
-                             headers=HEADERS, cookies=COOKIES,
-                             timeout_seconds=30)
                 if r.status_code == 200:
-                    try:
-                        return r.json()
-                    except Exception:
-                        pass
+                    return r.json()
                 elif r.status_code == 429:
                     time.sleep(15 * (attempt + 1))
                     continue
                 else:
-                    print(f"    tls_client HTTP {r.status_code}")
+                    print(f"    curl_cffi HTTP {r.status_code}")
             except Exception as e:
-                print(f"    tls_client exception: {e}")
+                print(f"    curl_cffi exception: {e}")
+
+        # === 2. cloudscraper dengan profil Firefox ===
+        if cloudscraper is not None:
+            try:
+                scraper = cloudscraper.create_scraper(
+                    browser={'browser': 'firefox', 'platform': 'windows'}
+                )
+                r = scraper.get(
+                    ENDPOINT, params=params,
+                    headers=HEADERS,
+                    timeout=30,
+                )
+                if r.status_code == 200:
+                    return r.json()
+                elif r.status_code == 429:
+                    time.sleep(15 * (attempt + 1))
+                    continue
+                else:
+                    print(f"    cloudscraper HTTP {r.status_code}")
+            except Exception as e:
+                print(f"    cloudscraper exception: {e}")
+
+        # === 3. requests biasa (fallback terakhir) ===
+        if std_requests is not None:
+            try:
+                r = std_requests.get(
+                    ENDPOINT, params=params,
+                    headers=HEADERS,
+                    timeout=30,
+                )
+                if r.status_code == 200:
+                    return r.json()
+                elif r.status_code == 429:
+                    time.sleep(15 * (attempt + 1))
+                    continue
+                else:
+                    print(f"    requests HTTP {r.status_code}")
+            except Exception as e:
+                print(f"    requests exception: {e}")
 
         if attempt < 2:
             time.sleep(3)
@@ -427,7 +425,6 @@ def fetch_announcements(days=30, max_items=20000, page_size=100):
     date_to = datetime.now()
     date_from = date_to - timedelta(days=days)
 
-    # Format YYYYMMDD sesuai API IDX
     date_to_str = date_to.strftime("%Y%m%d")
     date_from_str = date_from.strftime("%Y%m%d")
 
