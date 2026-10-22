@@ -15,7 +15,8 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
 import yfinance as yf
-from curl_cffi import requests as curl_requests # TAMBAHAN: Untuk bypass blokir Yahoo
+from curl_cffi import requests as curl_requests
+import time # TAMBAHAN: Untuk jeda waktu antar request
 
 if not st.session_state.get("authentication_status"):
     st.error("⚠ Silakan login dulu di halaman utama.")
@@ -23,27 +24,16 @@ if not st.session_state.get("authentication_status"):
 
 load_theme()
 
-# Menggunakan MSCI World ETF sebagai benchmark (bukan S&P 500)
 BENCHMARK = "URTH" 
 RS_WINDOW = 20
 MOMENTUM_WINDOW = 10
 REL_WINDOW = 20
 
-# ============================================================
-# MAPPING SEKTOR GLOBAL (iShares Global Sector ETFs)
-# ============================================================
 SEKTOR_ID = {
-    "IXN": "Teknologi",
-    "IXG": "Keuangan",
-    "IXJ": "Kesehatan",
-    "RXI": "Konsumen Non-Primer",
-    "KXI": "Konsumen Primer",
-    "IXC": "Energi",
-    "EXI": "Perindustrian",
-    "MXI": "Barang Baku",
-    "RWO": "Properti & Real Estat",
-    "JXI": "Utilitas",
-    "IXP": "Komunikasi"
+    "IXN": "Teknologi", "IXG": "Keuangan", "IXJ": "Kesehatan",
+    "RXI": "Konsumen Non-Primer", "KXI": "Konsumen Primer", "IXC": "Energi",
+    "EXI": "Perindustrian", "MXI": "Barang Baku", "RWO": "Properti & Real Estat",
+    "JXI": "Utilitas", "IXP": "Komunikasi"
 }
 
 SEKTOR_ICON = {
@@ -53,64 +43,53 @@ SEKTOR_ICON = {
 }
 
 STATUS_STYLE = {
-    "Leading":   {"bg": "rgba(16,185,129,0.08)",
-                   "border": "rgba(16,185,129,0.3)",
-                   "text": "#10b981", "arrow": "↗"},
-    "Weakening": {"bg": "rgba(245,158,11,0.08)",
-                   "border": "rgba(245,158,11,0.3)",
-                   "text": "#f59e0b", "arrow": "↘"},
-    "Lagging":   {"bg": "rgba(244,63,94,0.08)",
-                   "border": "rgba(244,63,94,0.3)",
-                   "text": "#f43f5e", "arrow": "↙"},
-    "Improving": {"bg": "rgba(99,102,241,0.08)",
-                   "border": "rgba(99,102,241,0.3)",
-                   "text": "#818cf8", "arrow": "↗"},
+    "Leading":   {"bg": "rgba(16,185,129,0.08)", "border": "rgba(16,185,129,0.3)", "text": "#10b981", "arrow": "↗"},
+    "Weakening": {"bg": "rgba(245,158,11,0.08)", "border": "rgba(245,158,11,0.3)", "text": "#f59e0b", "arrow": "↘"},
+    "Lagging":   {"bg": "rgba(244,63,94,0.08)", "border": "rgba(244,63,94,0.3)", "text": "#f43f5e", "arrow": "↙"},
+    "Improving": {"bg": "rgba(99,102,241,0.08)", "border": "rgba(99,102,241,0.3)", "text": "#818cf8", "arrow": "↗"},
 }
 
 # ============================================================
-# LOAD DATA GLOBAL (YFINANCE) - DENGAN PENGAMAN
+# LOAD DATA GLOBAL (YFINANCE) - FIX BLOKIR CLOUD
 # ============================================================
 @st.cache_data(ttl=3600)
 def load_global_data():
     tickers = list(SEKTOR_ID.keys()) + [BENCHMARK]
+    data = {}
     
-    try:
-        # FIX: Gunakan sesi curl_cffi untuk menyamar sebagai browser Chrome
-        session = curl_requests.Session(impersonate="chrome")
-        
-        # Ambil data 1 tahun terakhir
-        raw = yf.download(
-            tickers, 
-            period="1y", 
-            progress=False, 
-            session=session
-        )
-        
-        # Ambil hanya kolom 'Close'
-        df = raw["Close"] if "Close" in raw.columns else raw
-        
-        if df is None or df.empty:
-            raise ValueError("Data kosong dari Yahoo Finance.")
-        
-        # Isi data yang bolong (jika ada beda hari libur antar negara)
-        df = df.ffill().bfill()
-        
-        # Buang baris yang masih NaN
-        df = df.dropna()
-        
-        # Pastikan data minimal 35 hari (RS_WINDOW 20 + MOMENTUM 10)
-        if len(df) < 35:
-            raise ValueError(f"Data terlalu sedikit ({len(df)} hari). Silakan coba lagi nanti.")
+    # Gunakan sesi curl_cffi untuk menyamar sebagai browser
+    session = curl_requests.Session(impersonate="chrome")
+    
+    for t in tickers:
+        try:
+            # Ambil data satu per satu (jauh lebih stabil di cloud daripada yf.download massal)
+            ticker = yf.Ticker(t, session=session)
+            hist = ticker.history(period="1y", auto_adjust=False)
             
-        return df
+            if not hist.empty and "Close" in hist.columns:
+                data[t] = hist["Close"]
+            
+            # Jeda sedikit agar tidak dianggap bot/rate-limit
+            time.sleep(0.3) 
+        except Exception as e:
+            print(f"Gagal mengambil {t}: {e}")
+            
+    if not data:
+        raise ValueError("Semua data sektor gagal diunduh dari Yahoo Finance. Silakan coba lagi nanti.")
         
-    except Exception as e:
-        raise ValueError(f"Gagal mengambil data: {str(e)}")
+    # Gabungkan menjadi satu DataFrame
+    df = pd.DataFrame(data)
+    
+    # Isi data yang bolong & buang baris yang masih NaN
+    df = df.ffill().bfill().dropna()
+    
+    if len(df) < 35:
+        raise ValueError(f"Data terlalu sedikit ({len(df)} hari). Silakan coba lagi nanti.")
+        
+    return df
 
 def build_sector_index(df):
-    # Hitung return harian
     ret_df = df.pct_change().dropna()
-    # Buat index kumulatif (mulai dari 100)
     return (1 + ret_df).cumprod() * 100
 
 def calc_rrg(sector_index, benchmark):
@@ -159,7 +138,6 @@ with st.spinner("Memuat data Global Sector (MSCI World)..."):
         st.info("Yahoo Finance terkadang membatasi pengambilan data dari server cloud. Silakan tunggu 5-10 menit lalu refresh halaman ini.")
         st.stop()
 
-# Pisahkan benchmark dan sektor
 benchmark_series = df_all[BENCHMARK]
 sector_df = df_all.drop(columns=[BENCHMARK])
 
@@ -168,9 +146,6 @@ benchmark_index = build_sector_index(benchmark_series.to_frame())[BENCHMARK]
 
 rs_ratio, rs_mom = calc_rrg(sector_index, benchmark_index)
 
-# ============================================================
-# PENGAMAN UTAMA: CEK JIKA DATA KOSONG SETELAH RRG
-# ============================================================
 if rs_ratio.empty:
     st.error("Data rotasi sektor tidak dapat dihitung saat ini karena data dari Yahoo Finance tidak lengkap.")
     st.info("Silakan tunggu beberapa saat dan coba refresh kembali halaman ini.")
@@ -291,7 +266,7 @@ for _, r in df_sorted.iterrows():
     )
 
 # ============================================================
-# RINGKASAN PAGI (Tetap pakai data global_data Anda)
+# RINGKASAN PAGI
 # ============================================================
 st.markdown(section_title("Ringkasan Pagi", "Global market update"), unsafe_allow_html=True)
 
