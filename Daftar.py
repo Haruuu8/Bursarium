@@ -12,7 +12,6 @@ from quant.auth import submit_registration, get_all_approved_users_for_auth
 st.set_page_config(page_title="Bursarium", layout="wide")
 
 # 2. LOAD TEMA
-# CATATAN: Jika form login tetap kosong, coba beri tanda '#' di depan load_theme() di bawah ini.
 load_theme()
 
 try:
@@ -97,10 +96,6 @@ with tab_login:
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         st.markdown('<div style="text-align:center; margin-bottom:20px;"><div style="font-size:24px; font-weight:800; color:#ffffff;">Masuk ke Akun Anda</div><div style="font-size:13px; color:#94a3b8;">Silakan login untuk mengakses dashboard</div></div>', unsafe_allow_html=True)
-        
-        # --- DEBUG (Akan dihapus jika login sudah berhasil) ---
-        st.write(f"DEBUG - Jumlah User Terdeteksi: {len(config['credentials']['usernames'])}")
-        # -----------------------------------------------------
         
         try:
             # Render form login
