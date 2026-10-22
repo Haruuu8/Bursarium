@@ -8,7 +8,8 @@ Ambil data global dari Yahoo Finance untuk Ringkasan Pagi.
 import yfinance as yf
 import pandas as pd
 from datetime import datetime, timedelta
-
+from curl_cffi import requests as curl_requests # TAMBAHAN: Untuk bypass blokir cloud
+import time
 
 # ============================================================
 # DAFTAR TICKER
@@ -46,9 +47,13 @@ KOMODITAS = {
 # FETCH DATA
 # ============================================================
 def fetch_ticker(ticker, days=5):
-    """Ambil harga terakhir + perubahan % dari yfinance."""
+    """Ambil harga terakhir + perubahan % dari yfinance dengan pengaman cloud."""
     try:
-        t = yf.Ticker(ticker.strip())
+        # 1. Buat sesi browser Chrome tiruan
+        session = curl_requests.Session(impersonate="chrome")
+        
+        # 2. Masukkan sesi ke dalam objek Ticker
+        t = yf.Ticker(ticker.strip(), session=session)
         hist = t.history(period=f"{days}d")
 
         if hist.empty or len(hist) < 2:
@@ -82,18 +87,21 @@ def get_all_global_data():
         result = fetch_ticker(ticker)
         if result and "error" not in result:
             data["indeks"][nama] = result
+        time.sleep(0.2) # Jeda sedikit agar tidak dicurigai bot
 
     # Mata uang
     for nama, ticker in MATA_UANG.items():
         result = fetch_ticker(ticker)
         if result and "error" not in result:
             data["mata_uang"][nama] = result
+        time.sleep(0.2)
 
     # Komoditas
     for nama, ticker in KOMODITAS.items():
         result = fetch_ticker(ticker)
         if result and "error" not in result:
             data["komoditas"][nama] = result
+        time.sleep(0.2)
 
     return data
 
