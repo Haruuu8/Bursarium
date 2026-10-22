@@ -13,7 +13,6 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
 from quant.parquet_loader import load_parquet_safe
 
-st.set_page_config(page_title="Money Flow", layout="wide")
 load_theme()
 
 

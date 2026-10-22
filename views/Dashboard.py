@@ -16,11 +16,6 @@ import streamlit as st
 from datetime import datetime
 import yfinance as yf
 
-st.set_page_config(
-    page_title="Global Sector Rotation",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
 
 if not st.session_state.get("authentication_status"):
     st.error("⚠ Silakan login dulu di halaman utama.")

@@ -26,7 +26,6 @@ import streamlit as st
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-st.set_page_config(page_title="Valuation", layout="wide")
 
 # ============================================================
 # GUARD LOGIN

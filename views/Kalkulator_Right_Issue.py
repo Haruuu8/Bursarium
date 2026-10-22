@@ -9,7 +9,6 @@ import streamlit as st
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
 
-st.set_page_config(page_title="Kalkulator Right Issue", layout="wide")
 load_theme()
 
 st.markdown(page_header("", "Kalkulator Right Issue", "Simulasi Risiko Dilusi (HMETD)"), unsafe_allow_html=True)

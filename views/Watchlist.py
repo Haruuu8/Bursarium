@@ -16,7 +16,6 @@ from quant.theme import (
 from quant.parquet_loader import load_parquet_safe
 from quant.supres import get_support_resistance
 
-st.set_page_config(page_title="Watchlist", layout="wide")
 load_theme()
 
 if not st.session_state.get("authentication_status"):

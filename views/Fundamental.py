@@ -15,7 +15,6 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title, empty_state
 from quant.parquet_loader import load_parquet_safe
 
-st.set_page_config(page_title="Fundamental", page_icon="📈", layout="wide")
 load_theme()
 
 DETAIL_DIR = "data_fundamental"

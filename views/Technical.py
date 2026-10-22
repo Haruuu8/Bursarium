@@ -20,7 +20,6 @@ from quant.theme import (
 )
 from quant.parquet_loader import load_parquet_safe
 
-st.set_page_config(page_title="Technical", page_icon="📉", layout="wide")
 load_theme()
 
 OHLCV_DIR = "data_ohlcv_idx"
