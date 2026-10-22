@@ -167,6 +167,31 @@ def fmt_num(v, dec=2):
         return "—"
 
 
+def dedup_by_kode(items, key="kode", score_key="rr_tp1"):
+    """
+    Ambil satu entri terbaik per kode.
+    Prioritas: RR tertinggi, kalau sama pilih jarak ke entry terkecil.
+    """
+    best = {}
+    for x in items:
+        k = x.get(key)
+        if k is None:
+            continue
+        if k not in best:
+            best[k] = x
+            continue
+        cur_rr = best[k].get(score_key, 0) or 0
+        new_rr = x.get(score_key, 0) or 0
+        if new_rr > cur_rr:
+            best[k] = x
+        elif new_rr == cur_rr:
+            cur_dist = abs(best[k].get("jarak_entry_pct", 999) or 999)
+            new_dist = abs(x.get("jarak_entry_pct", 999) or 999)
+            if new_dist < cur_dist:
+                best[k] = x
+    return list(best.values())
+
+
 # ============================================================
 # ANALYZE SETUP SIGNALS (TANPA FIBO)
 # ============================================================
@@ -854,8 +879,11 @@ with tab4:
 
     setups_data = load_setups_json()
 
-    items_support = setups_data.get("buy_support", [])
+    items_support_raw = setups_data.get("buy_support", [])
     generated_support = setups_data.get("generated", "?")
+
+    # ⭐ DEDUPE: 1 kode = 1 baris (RR tertinggi)
+    items_support = dedup_by_kode(items_support_raw)
 
     c1, c2 = st.columns([4, 1])
     with c1:
@@ -896,8 +924,11 @@ with tab5:
 
     setups_data2 = load_setups_json()
 
-    items_breakout = setups_data2.get("breakout_buy", [])
+    items_breakout_raw = setups_data2.get("breakout_buy", [])
     generated_breakout = setups_data2.get("generated", "?")
+
+    # ⭐ DEDUPE: 1 kode = 1 baris (RR tertinggi)
+    items_breakout = dedup_by_kode(items_breakout_raw)
 
     c1, c2 = st.columns([4, 1])
     with c1:
