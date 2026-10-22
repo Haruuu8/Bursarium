@@ -18,20 +18,31 @@ SUPABASE_URL = st.secrets.get("SUPABASE_URL", os.environ.get("SUPABASE_URL", "")
 SUPABASE_KEY = st.secrets.get("SUPABASE_KEY", os.environ.get("SUPABASE_KEY", ""))
 
 
-# ============================================================
-# SAFE CLIENT — handle API key format lama (JWT) & baru (sb_...)
-# ============================================================
+def _clean_url(url: str) -> str:
+    """
+    Normalisasi URL Supabase:
+    - Buang trailing slash
+    - Buang path '/rest/v1' kalau user tidak sengaja menambahkannya
+    """
+    if not url:
+        return ""
+    url = url.strip().rstrip("/")
+    for suffix in ("/rest/v1", "/rest", "/auth/v1", "/storage/v1"):
+        if url.endswith(suffix):
+            url = url[: -len(suffix)]
+            break
+    return url
+
+
 def _make_supabase_client(url: str, key: str):
     """
     Buat client Supabase, kompatibel dengan:
-    - Key LAMA (JWT anon/service): "eyJhbGciOi..."
-    - Key BARU: "sb_publishable_..." atau "sb_secret_..."
-
-    Library `supabase` versi lama (<2.15.0) memvalidasi key sebagai JWT
-    secara lokal. Kalau key format baru, validasi ini gagal sebelum
-    request ke server. Fungsi ini mem-bypass validasi JWT secara aman
-    agar tetap bisa dipakai tanpa upgrade library.
+    - Key LAMA (JWT): "eyJhbGciOi..."
+    - Key BARU: "sb_publishable_..." / "sb_secret_..."
     """
+    url = _clean_url(url)
+    key = (key or "").strip()
+
     if not url or not key:
         return None
 
@@ -39,52 +50,22 @@ def _make_supabase_client(url: str, key: str):
         return create_client(url, key)
     except Exception as e:
         msg = str(e)
-        is_new_format = str(key).startswith(("sb_publishable_", "sb_secret_"))
+        is_new_key = key.startswith(("sb_publishable_", "sb_secret_"))
 
-        if "Invalid API key" not in msg or not is_new_format:
-            # Error lain (URL salah, network, dll.) → biarkan naik
-            raise
-
-        # ─── FALLBACK: bypass validasi JWT saat init ───
-        try:
-            import jwt as _jwt
-            import supabase._sync.client as _sc
-
-            _orig_decode = _jwt.decode
-            _orig_init = _sc.SyncClient.__init__
-
-            def _safe_decode(*args, **kwargs):
-                try:
-                    return _orig_decode(*args, **kwargs)
-                except Exception:
-                    # Payload dummy → validasi JWT lolos, server tetap
-                    # yang akan memvalidasi key sebenarnya.
-                    return {"role": "anon", "iss": "supabase"}
-
-            def _patched_init(self, supabase_url, supabase_key, options):
-                _jwt.decode = _safe_decode
-                try:
-                    _orig_init(self, supabase_url, supabase_key, options)
-                finally:
-                    _jwt.decode = _orig_decode
-
-            _sc.SyncClient.__init__ = _patched_init
-            try:
-                return create_client(url, key)
-            finally:
-                _sc.SyncClient.__init__ = _orig_init
-        except Exception:
+        if "Invalid API key" in msg and is_new_key:
             raise RuntimeError(
-                "Supabase API key baru (`sb_publishable_` / `sb_secret_`) "
-                "tidak bisa dipakai karena library `supabase` di environment "
-                "masih versi lama.\n\n"
-                "SOLUSI (pilih salah satu):\n"
-                "1. Tambah `supabase>=2.15.0` di requirements.txt, "
-                "lalu Reboot app.\n"
-                "2. Atau pakai key legacy `anon` (format JWT, diawali `eyJ`) "
-                "dari Supabase Dashboard → Project Settings → API → "
-                "Legacy API Keys."
+                "SUPABASE_KEY kamu pakai format baru (`sb_publishable_` / `sb_secret_`), "
+                "tapi library `supabase` di environment masih versi lama.\n\n"
+                "FIX:\n"
+                "1. Pastikan requirements.txt berisi `supabase>=2.15.0`\n"
+                "2. Push ke GitHub\n"
+                "3. Streamlit Cloud → ⋮ → Reboot app\n"
+                "4. Cek log: harus muncul `+ supabase==2.15.0` atau lebih baru\n\n"
+                "Alternatif cepat (tanpa upgrade):\n"
+                "Pakai `anon` key LAMA dari Supabase Dashboard → Project Settings "
+                "→ API → Legacy API Keys (format: eyJhbGciOi...)."
             ) from e
+        raise
 
 
 supabase = _make_supabase_client(SUPABASE_URL, SUPABASE_KEY)
@@ -128,7 +109,7 @@ def submit_registration(telegram, bukti_bytes, bukti_filename):
     try:
         bukti_path.write_bytes(bukti_bytes)
     except Exception as e:
-        print(f"[auth] gagal simpan file bukti lokal: {e}")
+        print(f"[auth] gagal simpan bukti lokal: {e}")
 
     data = {
         "reg_id": reg_id,
@@ -153,7 +134,6 @@ def list_pending():
         .order("created_at", desc=True)
         .execute()
     )
-
     items = []
     for row in res.data:
         row["submitted_at"] = row.get("created_at", "")
@@ -171,7 +151,6 @@ def list_approved():
         .order("approved_at", desc=True)
         .execute()
     )
-
     items = []
     for row in res.data:
         row["password"] = row.get("password_hash", "-")
@@ -261,7 +240,6 @@ def get_all_approved_users_for_auth():
 # RESET / UPDATE / DELETE
 # ============================================================
 def reset_user_password(reg_id):
-    """Generate password baru untuk user yang sudah approved."""
     if not supabase:
         return {"error": "DB Error"}
 
@@ -287,7 +265,6 @@ def reset_user_password(reg_id):
 
 
 def update_username(reg_id, new_username):
-    """Ubah username user di database dengan validasi keunikan."""
     if not supabase:
         return {"error": "DB Error"}
 
@@ -306,7 +283,6 @@ def update_username(reg_id, new_username):
 
 
 def delete_user(reg_id):
-    """Hapus user dari database secara permanen."""
     if not supabase:
         return False
     try:
@@ -332,7 +308,6 @@ def list_all_users():
 # GABUNGAN UPDATE USERNAME & PASSWORD
 # ============================================================
 def update_user_credentials(reg_id, new_username=None, new_password=None):
-    """Ubah username dan/atau password user di database dengan validasi."""
     if not supabase:
         return {"error": "DB Error"}
 
@@ -349,7 +324,6 @@ def update_user_credentials(reg_id, new_username=None, new_password=None):
         "password": "*** (Tidak diubah)",
     }
 
-    # 1. Cek & Siapkan Update Username
     if new_username and new_username.strip():
         clean_username = new_username.strip().lower().replace(" ", "")
         if clean_username != current_data.get("username"):
@@ -359,13 +333,11 @@ def update_user_credentials(reg_id, new_username=None, new_password=None):
             update_data["username"] = clean_username
             result["username"] = clean_username
 
-    # 2. Cek & Siapkan Update Password
     if new_password and new_password.strip():
         pw_hash = hash_password(new_password.strip())
         update_data["password_hash"] = pw_hash
         result["password"] = new_password.strip()
 
-    # 3. Eksekusi ke Database
     if update_data:
         try:
             supabase.table("users").update(update_data).eq("reg_id", reg_id).execute()
