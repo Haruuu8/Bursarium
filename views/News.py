@@ -25,52 +25,12 @@ load_theme()
 
 
 # ============================================================
-# CACHE READER — untuk Streamlit Cloud (tidak hit IDX)
+# CACHE WRAPPER UNTUK STREAMLIT
 # ============================================================
-def scan_news_from_cache(days=30):
-    """
-    Baca news dari cache lokal (data_idx_news/news_cache_{days}d.json).
-    
-    TIDAK hit IDX — karena Streamlit Cloud diblokir Cloudflare.
-    File cache di-update manual dari laptop setiap hari, lalu commit ke git.
-    
-    Return: DataFrame dengan kolom tanggal, kode, judul, kategori, dll.
-    """
-    cache_file = f"data_idx_news/news_cache_{days}d.json"
-    
-    if not os.path.exists(cache_file):
-        return pd.DataFrame()
-    
-    try:
-        with open(cache_file, "r", encoding="utf-8") as f:
-            payload = json.load(f)
-        
-        # Support format baru (dict dengan cached_at) atau lama (list)
-        if isinstance(payload, dict):
-            data = payload.get("data", [])
-        else:
-            data = payload
-        
-        if not data:
-            return pd.DataFrame()
-        
-        df = pd.DataFrame(data)
-        return df
-    except Exception as e:
-        print(f"[cache] Error loading {cache_file}: {e}")
-        return pd.DataFrame()
-
-
-def get_cache_mtime(days=30):
-    """Ambil timestamp kapan file cache terakhir di-update."""
-    cache_file = f"data_idx_news/news_cache_{days}d.json"
-    if not os.path.exists(cache_file):
-        return None
-    try:
-        mtime = os.path.getmtime(cache_file)
-        return pd.Timestamp.fromtimestamp(mtime)
-    except Exception:
-        return None
+@st.cache_data(ttl=1800, show_spinner=False)
+def load_news_data(days, force=False):
+    """Wrapper agar scan_news tidak dijalankan berulang kali saat tab diklik."""
+    return scan_news(days=days, force_refresh=force)
 
 
 def _rgb(hex_color):
@@ -209,148 +169,27 @@ with c2:
 
 
 # ============================================================
-# LOAD DATA — dari CACHE (tidak hit IDX)
+# LOAD DATA (SIMPEL & PASTI BACA FILE STATIS)
 # ============================================================
-RETRY_COOLDOWN_SEC = 60
-SESSION_DATA_TTL_SEC = 3600
-
-if "news_df" not in st.session_state:
-    st.session_state.news_df = None
-if "news_days_loaded" not in st.session_state:
-    st.session_state.news_days_loaded = None
-if "news_last_refresh" not in st.session_state:
-    st.session_state.news_last_refresh = None
-if "news_last_attempt" not in st.session_state:
-    st.session_state.news_last_attempt = None
-
-now = pd.Timestamp.now()
-last_attempt = st.session_state.news_last_attempt
-
-cooldown_ok = (
-    last_attempt is None
-    or (now - last_attempt).total_seconds() > RETRY_COOLDOWN_SEC
-)
-
-has_data = (
-    st.session_state.news_df is not None
-    and not st.session_state.news_df.empty
-)
-
-# Force refetch tiap 1 jam
-data_age_sec = (
-    (now - st.session_state.news_last_refresh).total_seconds()
-    if st.session_state.news_last_refresh
-    else float("inf")
-)
-data_stale = data_age_sec > SESSION_DATA_TTL_SEC
-
-need_fetch = (
-    refresh
-    or st.session_state.news_days_loaded != days
-    or data_stale
-    or (not has_data and cooldown_ok)
-)
-
-if need_fetch:
-    with st.spinner(f"Memuat pengumuman ({days} hari)..."):
-        try:
-            # === BACA DARI CACHE LOKAL (aman di Streamlit Cloud) ===
-            df_fetch = scan_news_from_cache(days=days)
-
-            # Fallback: coba hit IDX hanya kalau user klik Refresh DAN cache kosong
-            # (kemungkinan besar gagal di cloud karena IP diblokir, tapi tidak apa-apa)
-            if refresh and df_fetch.empty:
-                try:
-                    df_fetch = scan_news(days=days, force_refresh=True)
-                except Exception as e:
-                    print(f"[fallback] IDX hit failed: {e}")
-                    pass
-        except Exception as e:
-            st.error(f"Gagal memuat data: {e}")
-            df_fetch = pd.DataFrame()
-
-    if not df_fetch.empty and "tanggal" in df_fetch.columns:
-        df_fetch["tanggal_dt"] = pd.to_datetime(
-            df_fetch["tanggal"], errors="coerce")
-        df_fetch = df_fetch.sort_values(
-            "tanggal_dt", ascending=False, na_position="last"
-        ).reset_index(drop=True)
-        st.session_state.news_df = df_fetch
-        st.session_state.news_days_loaded = days
-    else:
-        # Gagal load → jangan timpa data lama yang bagus
-        if not has_data:
-            st.session_state.news_df = None
-            st.session_state.news_days_loaded = None
-
-    st.session_state.news_last_refresh = pd.Timestamp.now()
-    st.session_state.news_last_attempt = pd.Timestamp.now()
-
-df = st.session_state.news_df
-last_refresh = st.session_state.news_last_refresh
-
-if df is None:
-    df = pd.DataFrame()
+with st.spinner(f"Memuat pengumuman ({days} hari)..."):
+    try:
+        # Langsung panggil scan_news dari quant/idx_news
+        # Di dalamnya sudah ada logika baca data_news_static.json
+        df = load_news_data(days=days, force=refresh)
+    except Exception as e:
+        st.error(f"Gagal memuat data: {e}")
+        df = pd.DataFrame()
 
 if df.empty:
     st.warning(
-        "Data pengumuman IDX belum tersedia. "
-        "Silakan update cache dari laptop (lihat panduan di bawah)."
+        "Data pengumuman IDX belum tersedia atau gagal diambil. "
+        "Pastikan file `data_news_static.json` sudah ada di folder utama."
     )
-    
-    st.markdown(
-        '<div style="background:rgba(99,102,241,0.08); '
-        'border:1px solid rgba(99,102,241,0.20); border-radius:10px; '
-        'padding:16px 20px; margin:16px 0;">'
-        '<div style="font-size:13px; color:#a5b4fc; font-weight:700; '
-        'margin-bottom:8px;">📌 Cara Update Cache dari Laptop</div>'
-        '<div style="font-size:12px; color:#cbd5e1; line-height:1.8; '
-        'font-family:monospace; background:#0a0f1e; padding:10px 14px; '
-        'border-radius:8px; margin-top:8px;">'
-        'cd C:\\Users\\dharm\\daytrade<br>'
-        'py -c "from quant.idx_news import scan_news; scan_news(30, force_refresh=True)"<br>'
-        'git add data_idx_news/<br>'
-        'git commit -m "Update news cache"<br>'
-        'git push origin main'
-        '</div>'
-        '<div style="font-size:11px; color:#7d8ba3; margin-top:10px;">'
-        'Setelah push, Streamlit akan otomatis reload cache baru.</div>'
-        '</div>',
-        unsafe_allow_html=True
-    )
-    
-    retry_cols = st.columns([1, 1, 3])
-    with retry_cols[0]:
-        if st.button("🔄 Coba Lagi", type="primary", use_container_width=True):
-            st.session_state.news_df = None
-            st.session_state.news_days_loaded = None
-            st.rerun()
-    
     df = pd.DataFrame(columns=[
         "kode", "judul", "tanggal", "tipe", "kategori", "bobot", "lampiran"
     ])
 
-# Info bar — tampilkan timestamp cache
-_cache_ts_obj = get_cache_mtime(days=days)
-if _cache_ts_obj is not None:
-    _cache_ts = _cache_ts_obj.strftime("%d %b %Y, %H:%M")
-    # Hitung age
-    _age_sec = (pd.Timestamp.now() - _cache_ts_obj).total_seconds()
-    _age_hours = _age_sec / 3600
-    if _age_hours < 1:
-        _age_str = f"{int(_age_sec / 60)} menit lalu"
-        _age_color = "#10b981"
-    elif _age_hours < 24:
-        _age_str = f"{int(_age_hours)} jam lalu"
-        _age_color = "#f59e0b"
-    else:
-        _age_str = f"{int(_age_hours / 24)} hari lalu"
-        _age_color = "#f43f5e"
-else:
-    _cache_ts = "belum ada"
-    _age_str = "—"
-    _age_color = "#7d8ba3"
-
+# Info bar
 st.markdown(
     f'<div style="font-size:11px; color:#7d8ba3; '
     f'padding:6px 12px; margin-bottom:12px; '
@@ -358,7 +197,6 @@ st.markdown(
     f'display:inline-flex; align-items:center; gap:14px;">'
     f'<span><b style="color:#a5b4fc;">{len(df)}</b> pengumuman</span>'
     f'<span>{days} hari terakhir</span>'
-    f'<span>Cache: <b style="color:{_age_color};">{_age_str}</b></span>'
     f'</div>',
     unsafe_allow_html=True
 )
@@ -483,7 +321,7 @@ with st.expander("Statistik per Kategori", expanded=False):
 st.markdown(
     '<div style="text-align:center; color:#475569; font-size:11px; '
     'margin-top:20px; padding-top:16px; border-top:1px solid #1a2338;">'
-    'Sumber: IDX Keterbukaan Informasi - Cache lokal (auto-update dari laptop)'
+    'Sumber: IDX Keterbukaan Informasi - Auto-update via GitHub'
     '</div>',
     unsafe_allow_html=True
 )
