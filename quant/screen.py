@@ -6,6 +6,7 @@ AUTO SCREENER - filter otomatis per bulan + RATING.
 - Sinyal akhir bulan lalu yang entry-nya masuk bulan ini tetap ke-capture.
 - Saham suspended (gap > 7 hari) otomatis di-skip.
 - STEP 3: auto-regenerate JSON untuk Watchlist.
+- STEP 3.5: auto-update berita IDX.
 - STEP 4: auto-push ke GitHub.
 """
 
@@ -194,6 +195,44 @@ def jalankan_scan_json():
         return False
     except Exception as e:
         print(f"[!] Gagal jalankan scan_all.py: {e}")
+        return False
+
+
+# ============================================================
+# STEP 3.5: UPDATE BERITA IDX (BARU)
+# ============================================================
+def jalankan_update_berita():
+    """STEP 3.5: Ambil berita IDX terbaru dan simpan ke data_news_static.json."""
+    print(f"\n{'#'*100}")
+    print(f"#  STEP 3.5: Update Berita IDX")
+    print(f"{'#'*100}\n")
+
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    env = _subprocess_env()
+
+    print("Menjalankan quant.fetch_news_auto...")
+    try:
+        result = subprocess.run(
+            [sys.executable, "-m", "quant.fetch_news_auto"],
+            cwd=root, capture_output=True, text=True,
+            encoding="utf-8", errors="replace",
+            env=env, timeout=600,  # Maksimal 10 menit
+        )
+        if result.stdout:
+            print(result.stdout[-1500:])
+            
+        if result.returncode != 0:
+            print(f"[!] Update berita GAGAL (exit {result.returncode}):")
+            if result.stderr:
+                print(result.stderr[-800:])
+            return False
+        print("\n[OK] Update berita selesai.")
+        return True
+    except subprocess.TimeoutExpired:
+        print("[!] Update berita timeout (>10 menit). Proses dibatalkan.")
+        return False
+    except Exception as e:
+        print(f"[!] Gagal jalankan update berita: {e}")
         return False
 
 
@@ -959,6 +998,16 @@ def main():
         print("[!] PERINGATAN BESAR: Gagal regenerate data_setups.json!")
         print("    Watchlist Anda (Buy Support, Breakout, Bottom Fishing, Pre-Cross) TIDAK AKAN UPDATE.")
         print("    Pastikan file 'scan_all.py' ada di folder utama dan tidak error.")
+        print("!" * 100 + "\n")
+
+    # ============================================================
+    # STEP 3.5: Update Berita IDX (BARU)
+    # ============================================================
+    berita_ok = jalankan_update_berita()
+    if not berita_ok:
+        print("\n" + "!" * 100)
+        print("[!] PERINGATAN: Gagal update berita IDX.")
+        print("    Web akan tetap menggunakan data berita dari update sebelumnya.")
         print("!" * 100 + "\n")
 
     # ============================================================
