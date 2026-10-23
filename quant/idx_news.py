@@ -1,8 +1,10 @@
 """
 IDX NEWS — Scraper keterbukaan informasi IDX.
 
-Strategi: gunakan sesi HTTP yang meniru TLS fingerprint Firefox
-(terbukti tembus Cloudflare IDX) tanpa cookie hardcoded.
+Strategi: 
+- PRIORITAS 1: Baca data statis dari `data_news_static.json` (hasil auto-fetch).
+- PRIORITAS 2: Baca cache lokal.
+- PRIORITAS 3: Fetch langsung (hanya jika force_refresh=True).
 """
 
 import os
@@ -41,6 +43,8 @@ BASE = "https://www.idx.co.id"
 ENDPOINT = f"{BASE}/primary/NewsAnnouncement/GetAllAnnouncement"
 CACHE_TTL_HOURS = 3
 FAILED_CACHE_TTL_SEC = 300
+
+STATIC_NEWS_FILE = "data_news_static.json"
 
 
 HEADERS = {
@@ -539,6 +543,23 @@ def _clear_failed(days):
 
 
 # ============================================================
+# STATIC FILE READER (BARU)
+# ============================================================
+def load_static_news():
+    """Baca data berita dari file JSON statis (hasil auto-fetch)."""
+    if not os.path.exists(STATIC_NEWS_FILE):
+        return None, None
+    try:
+        with open(STATIC_NEWS_FILE, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        if isinstance(payload, dict):
+            return payload.get("data", []), payload.get("generated_at")
+        return payload, None
+    except Exception:
+        return None, None
+
+
+# ============================================================
 # SCAN
 # ============================================================
 def _apply_filter(df, good_only):
@@ -556,6 +577,13 @@ def _apply_filter(df, good_only):
 
 
 def scan_news(days=30, force_refresh=False, filter_good_only=False):
+    # ─── PRIORITAS 1: File statis dari GitHub (PALING CEPAT & PASTI) ───
+    static_data, generated_at = load_static_news()
+    if static_data and not force_refresh:
+        print(f"[news] pakai data statis (update: {generated_at})")
+        return _apply_filter(pd.DataFrame(static_data), filter_good_only)
+
+    # ─── PRIORITAS 2: Cache lokal ───
     if not force_refresh:
         cached = load_cache(days)
         if cached is not None:
@@ -577,6 +605,7 @@ def scan_news(days=30, force_refresh=False, filter_good_only=False):
             print(f"    [cache] skip fetch (gagal <{FAILED_CACHE_TTL_SEC}s lalu)")
             return pd.DataFrame()
 
+    # ─── PRIORITAS 3: Fetch langsung (hanya kalau force_refresh / tidak ada data) ───
     hasil = fetch_announcements(days=days, max_items=20000)
 
     if not hasil:
@@ -590,6 +619,8 @@ def scan_news(days=30, force_refresh=False, filter_good_only=False):
                     return _apply_filter(df, filter_good_only)
             except Exception:
                 pass
+        if static_data:
+            return _apply_filter(pd.DataFrame(static_data), filter_good_only)
         _mark_failed(days)
         return pd.DataFrame()
 
