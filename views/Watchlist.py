@@ -240,19 +240,10 @@ def analyze_setup_signals(kode, harga):
 
 
 # ============================================================
-# CARD: HAKA PAGI — Enhanced (baca semua output screen.py)
+# CARD: HAKA PAGI (Score/Class Dihapus)
 # ============================================================
-_CLASS_STYLE = {
-    "ELITE":   ("rgba(168,85,247,0.18)",  "#c4b5fd", "rgba(168,85,247,0.45)"),
-    "KUAT":    ("rgba(16,185,129,0.18)",  "#6ee7b7", "rgba(16,185,129,0.45)"),
-    "SEDANG":  ("rgba(245,158,11,0.15)",  "#fbbf24", "rgba(245,158,11,0.35)"),
-    "LEMAH":   ("rgba(148,163,184,0.15)", "#cbd5e1", "rgba(148,163,184,0.35)"),
-    "HINDARI": ("rgba(244,63,94,0.15)",   "#fda4af", "rgba(244,63,94,0.35)"),
-}
-
-
-def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None,
-           cls="", ret5d=None, vol_z=None, value_m=None):
+def wl_row(kode, nama, harga, chg_pct, match="-", atr_pct=None,
+           ret5d=None, vol_z=None, value_m=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
     if chg_pct > 0:
@@ -274,20 +265,7 @@ def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None,
 
     badges = ""
 
-    # 1) Class (ELITE/KUAT/SEDANG/LEMAH/HINDARI) — dari screen.py
-    if cls:
-        bg, col, brd = _CLASS_STYLE.get(cls.upper(), _CLASS_STYLE["LEMAH"])
-        badges += badge(f"◈ {cls.upper()}", bg, col, brd)
-
-    # 2) Rating
-    if rating and rating > 0:
-        badges += badge(
-            f"★ {rating:.0f}",
-            "rgba(99,102,241,0.15)", "#a5b4fc",
-            "rgba(99,102,241,0.35)",
-        )
-
-    # 3) Match (A / B / C / AB / ABC)
+    # 1) Match (A / B / C / AB / ABC)
     if match and match != "-":
         if len(match) >= 3:
             bg, col, brd = ("rgba(16,185,129,0.18)", "#6ee7b7",
@@ -300,7 +278,7 @@ def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None,
                             "rgba(99,102,241,0.30)")
         badges += badge(match, bg, col, brd)
 
-    # 4) ATR
+    # 2) ATR
     if atr_pct is not None and not pd.isna(atr_pct) and atr_pct > 0:
         badges += badge(
             f"ATR {atr_pct:.1f}%",
@@ -308,7 +286,7 @@ def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None,
             "rgba(245,158,11,0.35)",
         )
 
-    # 5) Vol Z
+    # 3) Vol Z
     if vol_z is not None and not pd.isna(vol_z) and vol_z > 0:
         badges += badge(
             f"VolZ {vol_z:.1f}×",
@@ -316,7 +294,7 @@ def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None,
             "rgba(6,182,212,0.35)",
         )
 
-    # 6) Ret 5D
+    # 4) Ret 5D
     if ret5d is not None and not pd.isna(ret5d):
         col = "#10b981" if ret5d >= 0 else "#f43f5e"
         rgb = "16,185,129" if ret5d >= 0 else "244,63,94"
@@ -326,7 +304,7 @@ def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None,
             f"rgba({rgb},0.30)",
         )
 
-    # 7) Value / market cap
+    # 5) Value / market cap
     if value_m is not None and not pd.isna(value_m) and value_m > 0:
         badges += badge(
             f"Rp {value_m:.1f} M",
@@ -661,7 +639,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 
 
 # ============================================================
-# TAB 1: HAKA PAGI
+# TAB 1: HAKA PAGI (Hanya Selectbox & Refresh, Filter Dihapus)
 # ============================================================
 with tab1:
     files = list_kandidat_files()
@@ -680,7 +658,7 @@ with tab1:
             except Exception:
                 continue
 
-        col1, col2 = st.columns([3, 1])
+        col1, col2 = st.columns([4, 1])
         with col1:
             selected_date = st.selectbox(
                 "📅 Pilih tanggal kandidat",
@@ -707,40 +685,11 @@ with tab1:
                 df["value"] = pd.to_numeric(df["value"], errors="coerce")
             if "vol_z_20" in df.columns:
                 df["vol_z_20"] = pd.to_numeric(df["vol_z_20"], errors="coerce")
+            
+            # Urutkan berdasarkan rating secara background (tanpa filter UI)
             if "rating" in df.columns:
                 df["rating"] = pd.to_numeric(df["rating"], errors="coerce").fillna(0)
-
-            # Filter & sort
-            c1, c2, c3 = st.columns([2, 2, 2])
-            with c1:
-                min_rating = st.slider("Min Rating", 0, 100, 0, 5,
-                                       key="haka_min_rating")
-            with c2:
-                sort_by = st.selectbox(
-                    "Urut berdasarkan",
-                    ["Rating", "Ret 1D", "Ret 5D", "ATR", "Vol Z", "Value"],
-                    index=0, key="haka_sort_by",
-                )
-            with c3:
-                view_mode = st.radio(
-                    "Tampilan", ["Card", "Tabel"],
-                    index=0, horizontal=True, key="haka_view",
-                )
-
-            if min_rating > 0 and "rating" in df.columns:
-                df = df[df["rating"] >= min_rating]
-
-            sort_map = {
-                "Rating": ("rating", False),
-                "Ret 1D": ("ret_1d", False),
-                "Ret 5D": ("ret_5d", False),
-                "ATR":    ("atr_pct", False),
-                "Vol Z":  ("vol_z_20", False),
-                "Value":  ("value", False),
-            }
-            sc, asc = sort_map[sort_by]
-            if sc in df.columns:
-                df = df.sort_values(sc, ascending=asc, na_position="last")
+                df = df.sort_values("rating", ascending=False, na_position="last")
 
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; '
@@ -751,39 +700,15 @@ with tab1:
             )
 
             if df.empty:
-                st.info("Tidak ada kandidat yang lolos filter.")
-            elif view_mode == "Tabel":
-                show_cols = [c for c in
-                             ["kode", "class", "rating", "match", "close",
-                              "ret_1d", "ret_5d", "atr_pct", "vol_z_20",
-                              "value", "px_vs_sma20"]
-                             if c in df.columns]
-                tbl = df[show_cols].copy()
-                for c in ["ret_1d", "ret_5d", "atr_pct", "px_vs_sma20"]:
-                    if c in tbl.columns:
-                        tbl[c] = (tbl[c] * 100).round(2)
-                if "value" in tbl.columns:
-                    tbl["value"] = (tbl["value"] / 1e9).round(2)
-                if "vol_z_20" in tbl.columns:
-                    tbl["vol_z_20"] = tbl["vol_z_20"].round(2)
-                tbl = tbl.rename(columns={
-                    "kode": "Kode", "class": "Class", "rating": "Rating",
-                    "match": "Match", "close": "Close",
-                    "ret_1d": "Ret1D %", "ret_5d": "Ret5D %",
-                    "atr_pct": "ATR %", "vol_z_20": "VolZ",
-                    "value": "Value (M)", "px_vs_sma20": "Px>SMA20 %",
-                })
-                st.dataframe(tbl, use_container_width=True, hide_index=True)
+                st.info("Tidak ada kandidat.")
             else:
+                # LANGSUNG TAMPILKAN CARD (Tanpa Tabel & Filter)
                 for _, r in df.iterrows():
                     kode = str(r["kode"]).upper()
                     nama = nama_map.get(kode, kode)
                     close = float(r["close"])
-
-                    rating = (float(r.get("rating", 0))
-                              if pd.notna(r.get("rating")) else 0)
+                    
                     match = str(r.get("match", "") or "-")
-                    cls = str(r.get("class", "") or "")
 
                     ret1d_raw = r.get("ret_1d", 0)
                     ret1d = (float(ret1d_raw) * 100
@@ -807,8 +732,8 @@ with tab1:
                         value_m = float(r["value"]) / 1e9
 
                     st.markdown(
-                        wl_row(kode, nama, close, ret1d, rating, match,
-                               atr_pct, cls=cls, ret5d=ret5d,
+                        wl_row(kode, nama, close, ret1d, match=match,
+                               atr_pct=atr_pct, ret5d=ret5d,
                                vol_z=vol_z, value_m=value_m),
                         unsafe_allow_html=True,
                     )

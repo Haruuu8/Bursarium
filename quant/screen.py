@@ -1,17 +1,5 @@
 """
 AUTO SCREENER v3 — Union_ABC + Gap 2-20% + ATR>3% + Trailing Stop 0.5%.
-
-Exit rule:
-- Trailing stop 0.5% di bawah peak (harga turun 0.5% dari puncak → EXIT)
-- Fixed SL -3% (kalau harga crash dari entry)
-- Hold max 30 hari bursa
-- Gap filter T+1: 2% <= gap <= 20% (skip kalau di luar range)
-
-Expected (backtest 2022-2026):
-- N total: 2.037 (≈510/tahun)
-- WR: 91.0%
-- Avg return: +7.99% per trade
-- SL rate: 8.9%
 """
 import os
 import subprocess
@@ -29,13 +17,13 @@ from .event_detector import detect_events
 # ============================================================
 # PARAMETER
 # ============================================================
-TRAIL_PCT = 0.005        # 0.5% trailing stop dari peak
-SL_PCT = -0.03           # Fixed SL -3%
-MAX_HOLD_DAYS = 30       # Max hold 30 hari bursa
-GAP_MIN_PCT = 0.02       # Min gap up 2%
-GAP_MAX_PCT = 0.20       # Max gap up 20%
-ATR_MIN_PCT = 0.03       # ATR minimal 3%
-MAX_GAP_DAYS = 7         # Max gap hari (suspensi)
+TRAIL_PCT = 0.005
+SL_PCT = -0.03
+MAX_HOLD_DAYS = 30
+GAP_MIN_PCT = 0.02
+GAP_MAX_PCT = 0.20
+ATR_MIN_PCT = 0.03
+MAX_GAP_DAYS = 7
 OHLCV_DIR = "data_ohlcv_idx"
 PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 
@@ -285,16 +273,13 @@ def jalankan_git_push():
 # RULES — Union_ABC (A_Loose | B_Loose | New_C)
 # ============================================================
 def rule_a(d):
-    """A_Loose: ret1>10, ret5>10, px_sma20>10"""
     return (
         (d["ret_1d"] > 0.10) &
         (d["ret_5d"] > 0.10) &
         (d["px_vs_sma20"] > 0.10)
     )
 
-
 def rule_b(d):
-    """B_Loose: ret1>10, ret5>15, range>8%, vol_z>1.5"""
     return (
         (d["ret_1d"] > 0.10) &
         (d["ret_5d"] > 0.15) &
@@ -302,26 +287,20 @@ def rule_b(d):
         (d["vol_z_20"] > 1.5)
     )
 
-
 def rule_c(d):
-    """New_C: ret3>12, px_sma20>15"""
     return (
         (d["ret_3d"] > 0.12) &
         (d["px_vs_sma20"] > 0.15)
     )
 
-
 def rule_quality(d):
-    """Quality filter: ATR >= 3%"""
     return d["atr_pct"] >= ATR_MIN_PCT
-
 
 def next_trading_day(ts):
     nxt = pd.Timestamp(ts) + pd.Timedelta(days=1)
     while nxt.weekday() >= 5:
         nxt += pd.Timedelta(days=1)
     return nxt
-
 
 def add_forward(df):
     df = df.copy()
@@ -336,10 +315,9 @@ def add_forward(df):
 
 
 # ============================================================
-# SIMULASI TRADE — TRAILING STOP + GAP FILTER
+# SIMULASI TRADE
 # ============================================================
 _OHLCV_CACHE = {}
-
 
 def _load_ohlcv(kode):
     if kode in _OHLCV_CACHE:
@@ -386,13 +364,6 @@ def _load_ohlcv(kode):
 
 
 def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
-    """
-    Simulasi trade dengan:
-    - Gap filter T+1: 2% <= gap <= 20%
-    - Trailing stop 0.5% dari peak
-    - Fixed SL -3%
-    - Max hold 30 hari bursa
-    """
     df = _load_ohlcv(kode)
     if df is None:
         return None, "SUSPENDED"
@@ -431,7 +402,6 @@ def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
     if pd.isna(open_t1) or open_t1 <= 0:
         return None, "SUSPENDED"
 
-    # === GAP FILTER (2% - 20%) ===
     if not pd.isna(signal_close) and signal_close > 0:
         gap_pct = (open_t1 / signal_close) - 1
         if gap_pct < GAP_MIN_PCT:
@@ -439,8 +409,7 @@ def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
         if gap_pct > GAP_MAX_PCT:
             return None, "SKIP_GAP_HIGH"
 
-    # === TRAILING STOP + SL + MAX HOLD ===
-    sl_price = entry * (1 + SL_PCT)  # SL_PCT = -0.03
+    sl_price = entry * (1 + SL_PCT)
     peak = entry
 
     end_idx = min(entry_idx + MAX_HOLD_DAYS, len(df))
@@ -452,21 +421,17 @@ def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
         if pd.isna(high) or pd.isna(low):
             continue
 
-        # Update peak dengan high hari ini
         if high > peak:
             peak = high
 
         trail_price = peak * (1 - TRAIL_PCT)
 
-        # Cek trailing stop (hanya kalau sudah profit)
         if trail_price > entry and low <= trail_price:
             return (trail_price / entry - 1), "TRAIL"
 
-        # Cek SL
         if low <= sl_price:
             return SL_PCT, "SL"
 
-    # Max hold tercapai
     last_close = float(df.iloc[end_idx - 1]["Close"])
     if pd.isna(last_close):
         return None, "SUSPENDED"
@@ -480,7 +445,7 @@ def hitung_rating_kandidat(row):
     score = 0
     match = str(row.get("match", "") or "")
     n_match = len(match)
-    if n_match >= 3: score += 50      # A+B+C = strongest
+    if n_match >= 3: score += 50
     elif n_match >= 2: score += 40
     elif n_match == 1: score += 25
 
@@ -526,24 +491,21 @@ def klasifikasi_rating(score):
 def excel_style(ws, title_text, subtitle_text, header_row=4):
     from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
-    ws.merge_cells(start_row=1, start_column=1, end_row=1,
-                   end_column=ws.max_column)
+    ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=ws.max_column)
     tc = ws.cell(row=1, column=1)
     tc.value = title_text
     tc.font = Font(bold=True, size=16, color="1F4E78")
     tc.alignment = Alignment(horizontal="left", vertical="center")
     ws.row_dimensions[1].height = 25
 
-    ws.merge_cells(start_row=2, start_column=1, end_row=2,
-                   end_column=ws.max_column)
+    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=ws.max_column)
     sc = ws.cell(row=2, column=1)
     sc.value = subtitle_text
     sc.font = Font(italic=True, size=10, color="666666")
     sc.alignment = Alignment(horizontal="left", vertical="center")
     ws.row_dimensions[2].height = 15
 
-    header_fill = PatternFill(start_color="1F4E78", end_color="1F4E78",
-                               fill_type="solid")
+    header_fill = PatternFill(start_color="1F4E78", end_color="1F4E78", fill_type="solid")
     header_font = Font(color="FFFFFF", bold=True, size=11)
     thin_border = Border(
         left=Side(style="thin", color="D0D0D0"),
@@ -554,8 +516,7 @@ def excel_style(ws, title_text, subtitle_text, header_row=4):
     for cell in ws[header_row]:
         cell.fill = header_fill
         cell.font = header_font
-        cell.alignment = Alignment(horizontal="center", vertical="center",
-                                    wrap_text=True)
+        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
         cell.border = thin_border
     ws.row_dimensions[header_row].height = 30
     ws.freeze_panes = ws.cell(row=header_row + 1, column=1).coordinate
@@ -564,8 +525,7 @@ def excel_style(ws, title_text, subtitle_text, header_row=4):
 
 def autofit_columns(ws, skip_rows=3):
     from openpyxl.utils import get_column_letter
-    for col_idx, col in enumerate(ws.iter_cols(min_row=skip_rows + 1,
-                                                 max_row=ws.max_row), 1):
+    for col_idx, col in enumerate(ws.iter_cols(min_row=skip_rows + 1, max_row=ws.max_row), 1):
         max_len = 0
         col_letter = get_column_letter(col_idx)
         for cell in col:
@@ -577,8 +537,7 @@ def autofit_columns(ws, skip_rows=3):
 # ============================================================
 # SIMPAN EXCEL
 # ============================================================
-def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
-                 bulan_label, bulan_file, bulan_start):
+def simpan_excel(kandidat, signals_bulan, pred_date, path_dir, bulan_label, bulan_file, bulan_start):
     try:
         from openpyxl import load_workbook
         from openpyxl.styles import Font, PatternFill, Alignment
@@ -627,9 +586,7 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
             else:
                 tgl_entry = pd.Timestamp(row["date"])
 
-            ret, status = simulate_trade(
-                row["kode"], row["open_T1"], row["date"]
-            )
+            ret, status = simulate_trade(row["kode"], row["open_T1"], row["date"])
 
             match = ""
             if row.get("sig_a", False): match += "A"
@@ -643,8 +600,7 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
 
             review_rows.append({
                 "Tanggal": tgl_entry.date(),
-                "Hari": ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat',
-                         'Sabtu', 'Minggu'][tgl_entry.weekday()],
+                "Hari": ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu'][tgl_entry.weekday()],
                 "Kode": row["kode"],
                 "Close T": round(signal_close, 0),
                 "Gap T+1 %": round(gap_pct, 2) if pd.notna(gap_pct) else "",
@@ -676,9 +632,7 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
             pl_total = 0
 
             for _, row in wk_data.iterrows():
-                ret, status = simulate_trade(
-                    row["kode"], row["open_T1"], row["date"]
-                )
+                ret, status = simulate_trade(row["kode"], row["open_T1"], row["date"])
                 if status in ("SKIP_GAP_LOW", "SKIP_GAP_HIGH"):
                     n_skip_gap += 1
                 elif status == "SUSPENDED":
@@ -720,18 +674,14 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
     if minggu_rows:
         df_minggu = pd.DataFrame(minggu_rows)
     else:
-        df_minggu = pd.DataFrame({
-            "Info": [f"Belum ada sinyal mingguan di {bulan_label}"]
-        })
+        df_minggu = pd.DataFrame({"Info": [f"Belum ada sinyal mingguan di {bulan_label}"]})
 
     if not signals_bulan.empty:
         total_pl = n_exec = n_win = 0
         n_skip_gap = n_pending = n_trail = n_sl = n_hold = n_susp = 0
 
         for _, row in signals_bulan.iterrows():
-            ret, status = simulate_trade(
-                row["kode"], row["open_T1"], row["date"]
-            )
+            ret, status = simulate_trade(row["kode"], row["open_T1"], row["date"])
             if status in ("SKIP_GAP_LOW", "SKIP_GAP_HIGH"):
                 n_skip_gap += 1
             elif status == "SUSPENDED":
@@ -772,8 +722,7 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
             ["Avg P/L per Trade", f"{avg_pl:+.2f}%"],
             ["", ""],
             ["VERDICT", ""],
-            ["Status", "[OK] LAYAK" if win_rate >= 70 and avg_pl > 3
-             else ("[!] MARGINAL" if win_rate >= 50 else "[X] EVALUASI")],
+            ["Status", "[OK] LAYAK" if win_rate >= 70 and avg_pl > 3 else ("[!] MARGINAL" if win_rate >= 50 else "[X] EVALUASI")],
         ]
     else:
         ringkasan_rows = [
@@ -784,14 +733,10 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
     df_ringkasan = pd.DataFrame(ringkasan_rows, columns=["Metrik", "Nilai"])
 
     with pd.ExcelWriter(filepath, engine="openpyxl") as writer:
-        df_ringkasan.to_excel(writer, sheet_name="Ringkasan",
-                               index=False, startrow=3)
-        df_kand.to_excel(writer, sheet_name="Kandidat Besok",
-                          index=False, startrow=3)
-        df_minggu.to_excel(writer, sheet_name="Review Mingguan",
-                            index=False, startrow=3)
-        df_review.to_excel(writer, sheet_name="Review Harian",
-                            index=False, startrow=3)
+        df_ringkasan.to_excel(writer, sheet_name="Ringkasan", index=False, startrow=3)
+        df_kand.to_excel(writer, sheet_name="Kandidat Besok", index=False, startrow=3)
+        df_minggu.to_excel(writer, sheet_name="Review Mingguan", index=False, startrow=3)
+        df_review.to_excel(writer, sheet_name="Review Harian", index=False, startrow=3)
 
     wb = load_workbook(filepath)
 
@@ -803,8 +748,7 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
     SECTION_FONT = Font(bold=True, size=11, color="1F4E78")
 
     ws = wb["Ringkasan"]
-    excel_style(ws, f"RINGKASAN TRADING - {bulan_label.upper()}",
-                f"Dibuat: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    excel_style(ws, f"RINGKASAN TRADING - {bulan_label.upper()}", f"Dibuat: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     for row in ws.iter_rows(min_row=5, max_row=ws.max_row, min_col=1, max_col=2):
         c = row[0]
         if c.value and isinstance(c.value, str):
@@ -818,43 +762,31 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
     excel_style(ws, "KANDIDAT BESOK", f"Prediksi untuk: {pred_date}")
     autofit_columns(ws)
     if not kandidat.empty:
-        for row in ws.iter_rows(min_row=5, max_row=ws.max_row,
-                                 min_col=1, max_col=ws.max_column):
+        for row in ws.iter_rows(min_row=5, max_row=ws.max_row, min_col=1, max_col=ws.max_column):
             for cell in row:
                 cell.alignment = Alignment(horizontal="center")
 
     ws = wb["Review Mingguan"]
-    excel_style(ws, f"REVIEW MINGGUAN - {bulan_label.upper()}",
-                f"Minggu kalender Senin-Jumat - Bulan {bulan_label}")
+    excel_style(ws, f"REVIEW MINGGUAN - {bulan_label.upper()}", f"Minggu kalender Senin-Jumat - Bulan {bulan_label}")
     autofit_columns(ws)
     if minggu_rows:
         for i, cell in enumerate(ws[4], 1):
             if cell.value in ("Total P/L %", "Avg P/L %"):
                 cl = get_column_letter(i)
                 rng = f"{cl}5:{cl}{ws.max_row}"
-                ws.conditional_formatting.add(rng,
-                    CellIsRule(operator="greaterThan", formula=["0"],
-                               fill=GREEN_FILL, font=GREEN_FONT))
-                ws.conditional_formatting.add(rng,
-                    CellIsRule(operator="lessThan", formula=["0"],
-                               fill=RED_FILL, font=RED_FONT))
+                ws.conditional_formatting.add(rng, CellIsRule(operator="greaterThan", formula=["0"], fill=GREEN_FILL, font=GREEN_FONT))
+                ws.conditional_formatting.add(rng, CellIsRule(operator="lessThan", formula=["0"], fill=RED_FILL, font=RED_FONT))
 
     ws = wb["Review Harian"]
-    excel_style(ws, f"REVIEW HARIAN - {bulan_label.upper()}",
-                f"TRAIL {TRAIL_PCT*100:.1f}% | SL {SL_PCT*100:.0f}% | "
-                f"Gap {GAP_MIN_PCT*100:.0f}-{GAP_MAX_PCT*100:.0f}% - Bulan {bulan_label}")
+    excel_style(ws, f"REVIEW HARIAN - {bulan_label.upper()}", f"TRAIL {TRAIL_PCT*100:.1f}% | SL {SL_PCT*100:.0f}% | Gap {GAP_MIN_PCT*100:.0f}-{GAP_MAX_PCT*100:.0f}% - Bulan {bulan_label}")
     autofit_columns(ws)
     if not df_review.empty and "P/L %" in df_review.columns:
         for i, cell in enumerate(ws[4], 1):
             if cell.value == "P/L %":
                 cl = get_column_letter(i)
                 rng = f"{cl}5:{cl}{ws.max_row}"
-                ws.conditional_formatting.add(rng,
-                    CellIsRule(operator="greaterThan", formula=["0"],
-                               fill=GREEN_FILL, font=GREEN_FONT))
-                ws.conditional_formatting.add(rng,
-                    CellIsRule(operator="lessThan", formula=["0"],
-                               fill=RED_FILL, font=RED_FONT))
+                ws.conditional_formatting.add(rng, CellIsRule(operator="greaterThan", formula=["0"], fill=GREEN_FILL, font=GREEN_FONT))
+                ws.conditional_formatting.add(rng, CellIsRule(operator="lessThan", formula=["0"], fill=RED_FILL, font=RED_FONT))
 
     wb.active = wb.sheetnames.index("Kandidat Besok")
     wb.save(filepath)
@@ -900,7 +832,6 @@ def main():
     panel = add_forward(panel)
     panel = panel[(panel["open"] > 0) & (panel["close"] > 0)].copy()
 
-    # === SAFETY: Tambah ret_3d dan atr_pct kalau belum ada ===
     if "ret_3d" not in panel.columns:
         panel["ret_3d"] = panel.groupby("kode")["close"].pct_change(3)
 
@@ -917,12 +848,9 @@ def main():
     last_date = pd.Timestamp(panel["date"].max())
     pred_date = next_trading_day(last_date)
 
-    print(f"\nData terakhir  : {last_date.date()} "
-          f"({['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'][last_date.weekday()]})")
-    print(f"Prediksi untuk : {pred_date.date()} "
-          f"({['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'][pred_date.weekday()]})")
+    print(f"\nData terakhir  : {last_date.date()} ({['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'][last_date.weekday()]})")
+    print(f"Prediksi untuk : {pred_date.date()} ({['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'][pred_date.weekday()]})")
 
-    # Kandidat besok
     today_data = panel[panel["date"] == last_date].copy()
     m_a = rule_a(today_data).fillna(False).values
     m_b = rule_b(today_data).fillna(False).values
@@ -943,20 +871,13 @@ def main():
         kandidat.loc[m_c[m_union], "match"] += "C"
         kandidat["rating"] = kandidat.apply(hitung_rating_kandidat, axis=1)
         kandidat["class"] = kandidat["rating"].apply(klasifikasi_rating)
-        kandidat = kandidat.sort_values(
-            ["rating", "value"], ascending=[False, False]
-        ).reset_index(drop=True)
+        kandidat = kandidat.sort_values(["rating", "value"], ascending=[False, False]).reset_index(drop=True)
 
         print(f"\n  {len(kandidat)} KANDIDAT:\n")
-        print(f"  {'No':>3} {'Kode':<7} {'Rating':>7} {'Class':<12} "
-              f"{'Close':>8} {'Ret1d%':>8} {'Ret5d%':>8} "
-              f"{'Match':>6} {'ATR%':>7} {'Value(M)':>10}")
+        print(f"  {'No':>3} {'Kode':<7} {'Rating':>7} {'Class':<12} {'Close':>8} {'Ret1d%':>8} {'Ret5d%':>8} {'Match':>6} {'ATR%':>7} {'Value(M)':>10}")
         print("  " + "-" * 110)
         for i, (_, r) in enumerate(kandidat.iterrows(), 1):
-            print(f"  {i:>3} {r['kode']:<7} {r['rating']:>6.1f} "
-                  f"{r['class']:<12} {r['close']:>8.0f} "
-                  f"{r['ret_1d']*100:>+7.1f}% {r['ret_5d']*100:>+7.1f}% "
-                  f"{r['match']:>6} {r['atr_pct']*100:>5.1f}% {r['value']/1e9:>9.2f}")
+            print(f"  {i:>3} {r['kode']:<7} {r['rating']:>6.1f} {r['class']:<12} {r['close']:>8.0f} {r['ret_1d']*100:>+7.1f}% {r['ret_5d']*100:>+7.1f}% {r['match']:>6} {r['atr_pct']*100:>5.1f}% {r['value']/1e9:>9.2f}")
 
         print(f"\n  ⚠️  BESOK PAGI: cek gap T+1 saat open.")
         print(f"      ✓ EXECUTE kalau gap 2% – 20%")
@@ -964,14 +885,12 @@ def main():
     else:
         print(f"\n  Tidak ada kandidat untuk {pred_date.date()}.")
 
-    # Review bulan
     print(f"\n{'#'*100}")
     print(f"#  REVIEW BULAN {bulan_label.upper()} (tanggal entry)")
     print(f"{'#'*100}")
 
     _awal = bulan_start - pd.Timedelta(days=10)
-    sub_bulan = panel[(panel["date"] >= _awal) &
-                       (panel["date"] <= bulan_end)].copy()
+    sub_bulan = panel[(panel["date"] >= _awal) & (panel["date"] <= bulan_end)].copy()
 
     m_a_sub = rule_a(sub_bulan).fillna(False).values
     m_b_sub = rule_b(sub_bulan).fillna(False).values
@@ -987,8 +906,7 @@ def main():
 
     if "date_T1" in signals_bulan.columns:
         signals_bulan = signals_bulan[
-            (signals_bulan["date_T1"] >= bulan_start) &
-            (signals_bulan["date_T1"] <= bulan_end)
+            (signals_bulan["date_T1"] >= bulan_start) & (signals_bulan["date_T1"] <= bulan_end)
         ].copy()
 
     if not signals_bulan.empty:
@@ -996,9 +914,7 @@ def main():
         n_skip_gap = n_pending = n_trail = n_sl = n_hold = n_susp = 0
 
         for _, row in signals_bulan.iterrows():
-            ret, status = simulate_trade(
-                row["kode"], row["open_T1"], row["date"]
-            )
+            ret, status = simulate_trade(row["kode"], row["open_T1"], row["date"])
             if status in ("SKIP_GAP_LOW", "SKIP_GAP_HIGH"):
                 n_skip_gap += 1
             elif status == "SUSPENDED":
@@ -1036,15 +952,14 @@ def main():
     os.makedirs("quant/output", exist_ok=True)
 
     if not kandidat.empty:
-        csv_path = f"quant/output/kandidat_{pred_date.date()}.csv"
+        csv_path = f"quant/output/kandidat_{last_date.date()}.csv"  # <--- DIUBAH KE last_date
         cols_csv = ["kode", "class", "close", "value", "ret_1d", "ret_5d",
                     "range", "vol_z_20", "px_vs_sma20", "atr_pct", "match", "rating"]
         cols_csv = [c for c in cols_csv if c in kandidat.columns]
         kandidat[cols_csv].to_csv(csv_path, index=False)
         print(f"  -> CSV: {csv_path}")
 
-    simpan_excel(kandidat, signals_bulan, pred_date.date(),
-                 "quant/output", bulan_label, bulan_file, bulan_start)
+    simpan_excel(kandidat, signals_bulan, pred_date.date(), "quant/output", bulan_label, bulan_file, bulan_start)
 
     scan_ok = jalankan_scan_json()
     if not scan_ok:
@@ -1063,7 +978,6 @@ def main():
     print(f"\n{'='*100}")
     print(f"SELESAI - {datetime.now().strftime('%H:%M:%S')}")
     print(f"{'='*100}")
-
 
 if __name__ == "__main__":
     main()
