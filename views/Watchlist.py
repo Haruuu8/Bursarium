@@ -163,13 +163,44 @@ def load_rekap_sheet(fname, sheet_name):
     return df
 
 
-def fmt_num(v, dec=2):
-    if v is None or (isinstance(v, float) and np.isnan(v)):
-        return "—"
+# ============================================================
+# IHSG DATA LOADER
+# ============================================================
+@st.cache_data(ttl=3600)
+def load_ihsg_history():
+    """Mengambil data return harian IHSG dari CSV atau Parquet."""
+    # 1. Coba cari dari file CSV
+    for fname in ["^JKSE.csv", "JKSE.csv", "IHSG.csv"]:
+        path = os.path.join(OHLCV_DIR, fname)
+        if os.path.exists(path):
+            try:
+                df = pd.read_csv(path)
+                close_col = next((c for c in df.columns if str(c).lower() == 'close'), None)
+                date_col = next((c for c in df.columns if str(c).lower() in ['date', 'tanggal']), None)
+                if close_col and date_col:
+                    df[date_col] = pd.to_datetime(df[date_col])
+                    df = df.sort_values(date_col)
+                    df['IHSG_Return'] = df[close_col].pct_change() * 100
+                    return df[[date_col, 'IHSG_Return']].rename(columns={date_col: 'Date'})
+            except Exception:
+                pass
+            
+    # 2. Fallback ke Parquet
     try:
-        return f"{v:,.{dec}f}"
+        df = load_parquet_safe()
+        if df is not None and "Kode" in df.columns:
+            for code in ["^JKSE", "JKSE", "IHSG"]:
+                sub = df[df["Kode"] == code]
+                if not sub.empty:
+                    sub = sub.copy()
+                    sub["Date"] = pd.to_datetime(sub["Date"])
+                    sub = sub.sort_values("Date")
+                    sub['IHSG_Return'] = sub['Close'].pct_change() * 100
+                    return sub[['Date', 'IHSG_Return']]
     except Exception:
-        return "—"
+        pass
+        
+    return None
 
 
 def dedup_by_kode(items, key="kode", score_key="rr_tp1"):
@@ -246,10 +277,9 @@ def analyze_setup_signals(kode, harga):
 
 
 # ============================================================
-# CARD: HAKA PAGI (Score/Class Dihapus)
+# CARD: HAKA PAGI (Bersih + Rencana Trading)
 # ============================================================
-def wl_row(kode, nama, harga, chg_pct, match="-", atr_pct=None,
-           ret5d=None, vol_z=None, value_m=None):
+def wl_row(kode, nama, harga, chg_pct):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
     if chg_pct > 0:
@@ -259,89 +289,40 @@ def wl_row(kode, nama, harga, chg_pct, match="-", atr_pct=None,
     else:
         chg_color, chg_sign = "#94a3b8", ""
 
-    def badge(text, bg, color, border, bold=True):
-        w = "800" if bold else "600"
-        return (
-            f'<span style="display:inline-block; font-size:11px; '
-            f'font-weight:{w}; padding:4px 10px; border-radius:6px; '
-            f'letter-spacing:0.3px; margin-right:6px; margin-bottom:4px; '
-            f'background:{bg}; color:{color}; '
-            f'border:1px solid {border};">{text}</span>'
-        )
-
-    badges = ""
-
-    # 1) Match (A / B / C / AB / ABC)
-    if match and match != "-":
-        if len(match) >= 3:
-            bg, col, brd = ("rgba(16,185,129,0.18)", "#6ee7b7",
-                            "rgba(16,185,129,0.45)")
-        elif len(match) == 2:
-            bg, col, brd = ("rgba(168,85,247,0.15)", "#c4b5fd",
-                            "rgba(168,85,247,0.35)")
-        else:
-            bg, col, brd = ("rgba(99,102,241,0.12)", "#a5b4fc",
-                            "rgba(99,102,241,0.30)")
-        badges += badge(match, bg, col, brd)
-
-    # 2) ATR
-    if atr_pct is not None and not pd.isna(atr_pct) and atr_pct > 0:
-        badges += badge(
-            f"ATR {atr_pct:.1f}%",
-            "rgba(245,158,11,0.15)", "#fbbf24",
-            "rgba(245,158,11,0.35)",
-        )
-
-    # 3) Vol Z
-    if vol_z is not None and not pd.isna(vol_z) and vol_z > 0:
-        badges += badge(
-            f"VolZ {vol_z:.1f}×",
-            "rgba(6,182,212,0.15)", "#67e8f9",
-            "rgba(6,182,212,0.35)",
-        )
-
-    # 4) Ret 5D
-    if ret5d is not None and not pd.isna(ret5d):
-        col = "#10b981" if ret5d >= 0 else "#f43f5e"
-        rgb = "16,185,129" if ret5d >= 0 else "244,63,94"
-        badges += badge(
-            f"5D {ret5d:+.1f}%",
-            f"rgba({rgb},0.10)", col,
-            f"rgba({rgb},0.30)",
-        )
-
-    # 5) Value / market cap
-    if value_m is not None and not pd.isna(value_m) and value_m > 0:
-        badges += badge(
-            f"Rp {value_m:.1f} M",
-            "rgba(148,163,184,0.10)", "#cbd5e1",
-            "rgba(148,163,184,0.30)",
-        )
-
+    # Kalkulasi SL (Asumsi entry di harga saat ini -3%)
+    sl_price = harga * 0.97
+    
     return (
         '<div style="'
         'background: linear-gradient(135deg, #131a2a 0%, #0f1628 100%); '
         'border: 1px solid #1a2338; border-radius: 14px; '
         'padding: 18px 22px; margin-bottom: 10px; '
-        'display: flex; align-items: center; gap: 20px; '
         'position: relative; overflow: hidden;">'
+        
+        # Garis aksen kiri
         '<div style="position:absolute; left:0; top:0; bottom:0; width:3px; '
         'background: linear-gradient(180deg, #06b6d4, rgba(6,182,212,0.3));"></div>'
-        '<div style="flex: 1; min-width: 0; padding-left: 8px;">'
-        f'<div style="font-size:17px; font-weight:800; color:#ffffff; '
-        f'letter-spacing:-0.02em; line-height:1.2;">{kode}</div>'
-        f'<div style="font-size:12px; color:#7d8ba3; margin-top:3px; '
-        f'white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">'
-        f'{nama_disp}</div>'
-        f'<div style="margin-top:10px; display:flex; flex-wrap:wrap;">'
-        f'{badges}</div>'
+        
+        # Bagian Atas: Kode, Nama, Harga
+        '<div style="display: flex; justify-content: space-between; align-items: center; padding-left: 8px; margin-bottom: 12px;">'
+        '<div style="flex: 1; min-width: 0;">'
+        f'<div style="font-size:17px; font-weight:800; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}</div>'
+        f'<div style="font-size:12px; color:#7d8ba3; margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{nama_disp}</div>'
         '</div>'
         '<div style="text-align:right; flex-shrink:0; min-width:110px;">'
-        f'<div style="font-size:22px; font-weight:800; color:#ffffff; '
-        f'letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
-        f'<div style="font-size:13px; font-weight:700; color:{chg_color}; '
-        f'margin-top:5px;">{chg_sign}{chg_pct:.2f}%</div>'
-        '</div></div>'
+        f'<div style="font-size:22px; font-weight:800; color:#ffffff; letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
+        f'<div style="font-size:13px; font-weight:700; color:{chg_color}; margin-top:5px;">{chg_sign}{chg_pct:.2f}%</div>'
+        '</div>'
+        '</div>'
+
+        # Bagian Bawah: Rencana Trading (Entry, SL, TP)
+        '<div style="background: rgba(15, 23, 42, 0.6); border: 1px solid #1e293b; border-radius: 8px; padding: 10px 14px; display: flex; gap: 16px; flex-wrap: wrap; margin-left: 8px; font-size: 11px;">'
+        f'<span style="color:#94a3b8;">Entry: <b style="color:#cbd5e1;">T+1 Open (Gap 2-20%)</b></span>'
+        f'<span style="color:#94a3b8;">SL: <b style="color:#f43f5e;">{sl_price:,.0f} (-3%)</b></span>'
+        f'<span style="color:#94a3b8;">TP: <b style="color:#10b981;">Trailing 0.5%</b></span>'
+        '</div>'
+
+        '</div>'
     )
 
 
@@ -645,7 +626,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 
 
 # ============================================================
-# TAB 1: HAKA PAGI (Hanya Selectbox & Refresh, Filter Dihapus)
+# TAB 1: HAKA PAGI (Bersih & Rencana Trading)
 # ============================================================
 with tab1:
     files = list_kandidat_files()
@@ -683,14 +664,10 @@ with tab1:
         if df.empty:
             st.error(f"File `{selected}` kosong atau tidak terbaca.")
         else:
-            # Normalisasi kolom (screen.py menyimpan decimal)
-            for col in ["ret_1d", "ret_5d", "range", "px_vs_sma20", "atr_pct"]:
+            # Normalisasi kolom dasar
+            for col in ["ret_1d"]:
                 if col in df.columns:
                     df[col] = pd.to_numeric(df[col], errors="coerce")
-            if "value" in df.columns:
-                df["value"] = pd.to_numeric(df["value"], errors="coerce")
-            if "vol_z_20" in df.columns:
-                df["vol_z_20"] = pd.to_numeric(df["vol_z_20"], errors="coerce")
             
             # Urutkan berdasarkan rating secara background (tanpa filter UI)
             if "rating" in df.columns:
@@ -708,39 +685,17 @@ with tab1:
             if df.empty:
                 st.info("Tidak ada kandidat.")
             else:
-                # LANGSUNG TAMPILKAN CARD (Tanpa Tabel & Filter)
                 for _, r in df.iterrows():
                     kode = str(r["kode"]).upper()
                     nama = nama_map.get(kode, kode)
                     close = float(r["close"])
-                    
-                    match = str(r.get("match", "") or "-")
 
                     ret1d_raw = r.get("ret_1d", 0)
                     ret1d = (float(ret1d_raw) * 100
                              if pd.notna(ret1d_raw) else 0)
 
-                    ret5d_raw = r.get("ret_5d")
-                    ret5d = (float(ret5d_raw) * 100
-                             if pd.notna(ret5d_raw) else None)
-
-                    atr_pct = None
-                    if "atr_pct" in r and pd.notna(r["atr_pct"]):
-                        v = float(r["atr_pct"])
-                        atr_pct = v * 100 if v < 1 else v
-
-                    vol_z = (float(r["vol_z_20"])
-                             if "vol_z_20" in r and pd.notna(r["vol_z_20"])
-                             else None)
-
-                    value_m = None
-                    if "value" in r and pd.notna(r["value"]):
-                        value_m = float(r["value"]) / 1e9
-
                     st.markdown(
-                        wl_row(kode, nama, close, ret1d, match=match,
-                               atr_pct=atr_pct, ret5d=ret5d,
-                               vol_z=vol_z, value_m=value_m),
+                        wl_row(kode, nama, close, ret1d),
                         unsafe_allow_html=True,
                     )
 
@@ -1144,6 +1099,14 @@ with tab6:
             df_rev["_tgl"] = pd.to_datetime(df_rev["Tanggal"], errors="coerce")
             valid_tgl = df_rev.dropna(subset=["_tgl"])
 
+            # LOAD IHSG DATA
+            df_ihsg = load_ihsg_history()
+            ihsg_dict = {}
+            if df_ihsg is not None and not df_ihsg.empty:
+                df_ihsg['Date'] = pd.to_datetime(df_ihsg['Date'])
+                # Map date to return
+                ihsg_dict = dict(zip(df_ihsg['Date'].dt.date, df_ihsg['IHSG_Return']))
+
             if valid_tgl.empty:
                 st.info("Kolom Tanggal tidak tersedia.")
             else:
@@ -1152,7 +1115,12 @@ with tab6:
                     grp_pl = grp["P/L %"].dropna()
                     n_exec_d = len(grp_pl)
                     port_ret = grp_pl.mean() if n_exec_d > 0 else np.nan
-                    daily_rows.append({"Tanggal": tgl, "N_exec": n_exec_d, "Portofolio": port_ret})
+                    
+                    # Get IHSG Return for that date
+                    tgl_date = pd.Timestamp(tgl).date()
+                    ihsg_ret = ihsg_dict.get(tgl_date, np.nan)
+                    
+                    daily_rows.append({"Tanggal": tgl, "N_exec": n_exec_d, "Portofolio": port_ret, "IHSG": ihsg_ret})
 
                 df_daily = pd.DataFrame(daily_rows)
                 if not df_daily.empty:
@@ -1162,6 +1130,11 @@ with tab6:
                         port = r["Portofolio"]
                         port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
                         port_col = "#10b981" if (not pd.isna(port) and port >= 0) else "#f43f5e"
+                        
+                        ihsg = r["IHSG"]
+                        ihsg_str = f"{ihsg:+.2f}%" if not pd.isna(ihsg) else "—"
+                        ihsg_col = "#10b981" if (not pd.isna(ihsg) and ihsg >= 0) else "#f43f5e"
+                        
                         st.markdown(
                             '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
                             'border-radius:10px; margin-bottom:8px; padding:12px 16px; border:1px solid #1a2338;">'
@@ -1169,11 +1142,16 @@ with tab6:
                             f'<span style="font-size:13px; color:#e6ebf5; font-weight:700;">{tgl_str}</span>'
                             f'<span style="font-size:11px; color:#7d8ba3;">{r["N_exec"]} trade</span>'
                             f'</div>'
-                            f'<div style="display:grid; grid-template-columns:1fr; gap:10px;">'
+                            f'<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">'
                             f'<div>'
                             f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">Portofolio</div>'
                             f'<div style="font-size:13px; font-weight:800; color:{port_col};">{port_str}</div>'
-                            f'</div></div></div>', unsafe_allow_html=True
+                            f'</div>'
+                            f'<div>'
+                            f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">IHSG</div>'
+                            f'<div style="font-size:13px; font-weight:800; color:{ihsg_col};">{ihsg_str}</div>'
+                            f'</div>'
+                            f'</div></div>', unsafe_allow_html=True
                         )
 
             with st.expander("Lihat tabel lengkap"):
