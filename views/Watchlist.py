@@ -240,9 +240,9 @@ def analyze_setup_signals(kode, harga):
 
 
 # ============================================================
-# CARD: HAKA PAGI
+# CARD: HAKA PAGI (v3 — ATR + match warna)
 # ============================================================
-def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", strength=0):
+def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
     if chg_pct > 0: chg_color, chg_sign = "#10b981", "+"
@@ -260,22 +260,35 @@ def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", strength=0):
             f'★ {rating:.0f}</span>'
         )
     if match and match != "-":
+        # Warna berbeda untuk ABC (terkuat), AB/AC, dan single
+        if len(match) >= 3:
+            bg = "rgba(16,185,129,0.18)"
+            col = "#6ee7b7"
+            border = "rgba(16,185,129,0.45)"
+        elif len(match) == 2:
+            bg = "rgba(168,85,247,0.15)"
+            col = "#c4b5fd"
+            border = "rgba(168,85,247,0.35)"
+        else:
+            bg = "rgba(99,102,241,0.12)"
+            col = "#a5b4fc"
+            border = "rgba(99,102,241,0.30)"
         badges += (
             '<span style="display:inline-block; '
             'font-size:11px; font-weight:800; padding:4px 10px; '
             'border-radius:6px; letter-spacing:0.3px; margin-right:6px; '
-            'background:rgba(168,85,247,0.15); color:#c4b5fd; '
-            'border:1px solid rgba(168,85,247,0.35);">'
+            f'background:{bg}; color:{col}; '
+            f'border:1px solid {border};">'
             f'{match}</span>'
         )
-    if strength and strength > 0:
+    if atr_pct is not None and not pd.isna(atr_pct) and atr_pct > 0:
         badges += (
             '<span style="display:inline-block; '
             'font-size:11px; font-weight:800; padding:4px 10px; '
             'border-radius:6px; letter-spacing:0.3px; margin-right:6px; '
             'background:rgba(245,158,11,0.15); color:#fbbf24; '
             'border:1px solid rgba(245,158,11,0.35);">'
-            f'S{strength}</span>'
+            f'ATR {atr_pct:.1f}%</span>'
         )
 
     return (
@@ -462,7 +475,6 @@ def setup_row(r, tipe="support"):
 
     signal_banners = ""
 
-    # ⭐ BANNER BREAKOUT — HANYA UNTUK TAB BREAKOUT
     if tipe == "breakout" and breakout_zone:
         signal_banners += (
             f'<div style="background:rgba(6,182,212,0.15); border:1px solid #06b6d4; '
@@ -472,7 +484,6 @@ def setup_row(r, tipe="support"):
             f'</div>'
         )
 
-    # ⭐ BANNER WARNING — HANYA UNTUK TAB SUPPORT
     if tipe == "support" and strong_zone:
         signal_banners += (
             f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
@@ -482,7 +493,6 @@ def setup_row(r, tipe="support"):
             f'</div>'
         )
 
-    # ⭐ BORDER CARD — SESUAI TIPE
     card_border = "border:1px solid #1a2338;"
     if tipe == "breakout" and breakout_zone:
         card_border = "border:1px solid #06b6d4;"
@@ -609,10 +619,16 @@ with tab1:
         'border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; '
         'padding: 16px 20px; margin-bottom: 20px;">'
         '<div style="font-size: 13px; color: #a5b4fc; font-weight: 700; '
-        'margin-bottom: 10px;">📋 ATURAN SCREENER</div>'
+        'margin-bottom: 10px;">📋 ATURAN SCREENER v3</div>'
         '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.8;">'
-        '<b style="color:#e6ebf5;">Entry:</b> Open T+1 (hari bursa berikutnya setelah sinyal)<br>'
-        '<b style="color:#e6ebf5;">Exit:</b> TP High-1% (kalau High naik ≥ 1%) | SL -3% (sudah termasuk fee)'
+        '<b style="color:#e6ebf5;">Rule:</b> Union ABC '
+        '(A_Loose | B_Loose | New_C) + ATR ≥ 3%<br>'
+        '<b style="color:#e6ebf5;">Entry:</b> Open T+1 — '
+        '<b style="color:#fbbf24;">wajib cek gap 2%–20%</b><br>'
+        '<b style="color:#e6ebf5;">Exit:</b> Trailing 0.5% dari peak | '
+        'SL -3% | Hold max 30 hari<br>'
+        '<b style="color:#94a3b8; font-size:11px;">'
+        'Expected: WR 91% · Avg +8% (backtest 2022-2026)</b>'
         '</div></div>', unsafe_allow_html=True
     )
 
@@ -646,16 +662,20 @@ with tab1:
 
         selected = file_map[selected_date]
 
-        min_str = 2
+        # Filter minimal rating & minimal match length (default 0 = tampil semua)
         min_rating = 0
+        min_match_len = 0
 
         df = load_csv(os.path.join(OUTPUT_DIR, selected))
 
         if df.empty:
             st.error(f"File `{selected}` kosong atau tidak terbaca.")
         else:
-            if "strength" in df.columns and "rating" in df.columns:
-                df = df[(df["strength"] >= min_str) & (df["rating"] >= min_rating)]
+            if "rating" in df.columns:
+                df = df[df["rating"].fillna(0) >= min_rating]
+
+            if min_match_len > 0 and "match" in df.columns:
+                df = df[df["match"].fillna("").astype(str).str.len() >= min_match_len]
 
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; '
@@ -664,15 +684,42 @@ with tab1:
                 f'{len(date_options)} hari tersedia</div>', unsafe_allow_html=True
             )
 
-            for idx, r in df.iterrows():
-                kode = str(r["kode"]).upper()
-                nama = nama_map.get(kode, kode)
-                close = float(r["close"])
-                rating = float(r.get("rating", 0))
-                match = str(r.get("match", "-"))
-                strength = int(r.get("strength", 0))
-                ret1d = float(r.get("ret_1d", 0)) * 100
-                st.markdown(wl_row(kode, nama, close, ret1d, rating, match, strength), unsafe_allow_html=True)
+            if df.empty:
+                st.info("Tidak ada kandidat yang lolos filter.")
+            else:
+                for idx, r in df.iterrows():
+                    kode = str(r["kode"]).upper()
+                    nama = nama_map.get(kode, kode)
+                    close = float(r["close"])
+                    rating = float(r.get("rating", 0)) if pd.notna(r.get("rating")) else 0
+                    match = str(r.get("match", "") or "-")
+                    ret1d = float(r.get("ret_1d", 0) or 0) * 100
+
+                    # ATR — handle format 0.055 (desimal) atau 5.5 (persen)
+                    atr_pct = None
+                    if "atr_pct" in r and pd.notna(r["atr_pct"]):
+                        v = float(r["atr_pct"])
+                        atr_pct = v * 100 if v < 1 else v  # kalau <1, anggap desimal
+
+                    st.markdown(
+                        wl_row(kode, nama, close, ret1d, rating, match, atr_pct),
+                        unsafe_allow_html=True
+                    )
+
+                # === REMINDER GAP FILTER ===
+                st.markdown(
+                    '<div style="background:rgba(245,158,11,0.08); '
+                    'border:1px solid rgba(245,158,11,0.25); '
+                    'border-left:4px solid #f59e0b; '
+                    'border-radius:10px; padding:12px 18px; margin-top:20px; '
+                    'font-size:12px; color:#cbd5e1; line-height:1.6;">'
+                    '<b style="color:#f59e0b;">⚠️ Besok pagi saat open (T+1):</b> '
+                    'cek gap untuk setiap kandidat di atas. '
+                    '<b style="color:#6ee7b7;">Execute</b> jika gap 2%–20%. '
+                    '<b style="color:#fda4af;">Skip</b> jika gap &lt; 2% atau &gt; 20%.'
+                    '</div>',
+                    unsafe_allow_html=True
+                )
 
 
 # ============================================================
@@ -881,7 +928,6 @@ with tab4:
     items_support_raw = setups_data.get("buy_support", [])
     generated_support = setups_data.get("generated", "?")
 
-    # ⭐ DEDUPE: 1 kode = 1 baris (RR tertinggi)
     items_support = dedup_by_kode(items_support_raw)
 
     c1, c2 = st.columns([4, 1])
@@ -926,7 +972,6 @@ with tab5:
     items_breakout_raw = setups_data2.get("breakout_buy", [])
     generated_breakout = setups_data2.get("generated", "?")
 
-    # ⭐ DEDUPE: 1 kode = 1 baris (RR tertinggi)
     items_breakout = dedup_by_kode(items_breakout_raw)
 
     c1, c2 = st.columns([4, 1])
@@ -997,7 +1042,12 @@ with tab6:
             n_total = len(df_rev)
             n_tp = int((df_rev["Status"] == "TP").sum()) if "Status" in df_rev.columns else 0
             n_sl = int((df_rev["Status"] == "SL").sum()) if "Status" in df_rev.columns else 0
+            n_trail = int((df_rev["Status"] == "TRAIL").sum()) if "Status" in df_rev.columns else 0
+            n_hold = int((df_rev["Status"] == "HOLD").sum()) if "Status" in df_rev.columns else 0
             n_skip = int((df_rev["Status"] == "SKIP_GAP_DOWN").sum()) if "Status" in df_rev.columns else 0
+            if "Status" in df_rev.columns:
+                n_skip += int((df_rev["Status"] == "SKIP_GAP_LOW").sum())
+                n_skip += int((df_rev["Status"] == "SKIP_GAP_HIGH").sum())
             n_susp = int((df_rev["Status"] == "SUSPENDED").sum()) if "Status" in df_rev.columns else 0
 
             eksekusi = df_rev[df_rev["P/L %"].notna()]
@@ -1018,10 +1068,12 @@ with tab6:
                 f'<div style="font-size:18px; font-weight:800; color:#ffffff;">{n_total}</div></div>'
                 f'<div><span style="font-size:11px; color:#7d8ba3;">Tereksekusi</span>'
                 f'<div style="font-size:18px; font-weight:800; color:#10b981;">{n_exec}</div></div>'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">TP</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#10b981;">{n_tp}</div></div>'
+                f'<div><span style="font-size:11px; color:#7d8ba3;">TRAIL</span>'
+                f'<div style="font-size:18px; font-weight:800; color:#10b981;">{n_trail}</div></div>'
                 f'<div><span style="font-size:11px; color:#7d8ba3;">SL</span>'
                 f'<div style="font-size:18px; font-weight:800; color:#f43f5e;">{n_sl}</div></div>'
+                f'<div><span style="font-size:11px; color:#7d8ba3;">HOLD</span>'
+                f'<div style="font-size:18px; font-weight:800; color:#f59e0b;">{n_hold}</div></div>'
                 f'<div><span style="font-size:11px; color:#7d8ba3;">Skip</span>'
                 f'<div style="font-size:18px; font-weight:800; color:#94a3b8;">{n_skip}</div></div>'
                 f'<div><span style="font-size:11px; color:#7d8ba3;">Suspended</span>'
