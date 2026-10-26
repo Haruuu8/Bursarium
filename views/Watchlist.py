@@ -124,11 +124,17 @@ def extract_date_label(filename, prefix, suffix):
 
 
 @st.cache_data(ttl=300)
-def load_csv(path):
+def _load_csv_cached(path, mtime):
     try:
         return pd.read_csv(path)
     except Exception:
         return pd.DataFrame()
+
+def load_csv(path):
+    if not os.path.exists(path):
+        return pd.DataFrame()
+    # Paksa Streamlit baca ulang jika file CSV baru saja di-update oleh screen.py
+    return _load_csv_cached(path, os.path.getmtime(path))
 
 
 @st.cache_data(ttl=300)
