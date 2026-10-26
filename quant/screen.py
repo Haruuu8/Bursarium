@@ -952,7 +952,7 @@ def main():
     os.makedirs("quant/output", exist_ok=True)
 
     if not kandidat.empty:
-        csv_path = f"quant/output/kandidat_{last_date.date()}.csv"  # <--- DIUBAH KE last_date
+        csv_path = f"quant/output/kandidat_{pred_date.date()}.csv"  # <--- DIUBAH KE last_date
         cols_csv = ["kode", "class", "close", "value", "ret_1d", "ret_5d",
                     "range", "vol_z_20", "px_vs_sma20", "atr_pct", "match", "rating"]
         cols_csv = [c for c in cols_csv if c in kandidat.columns]
