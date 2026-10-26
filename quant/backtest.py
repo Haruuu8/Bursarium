@@ -1,531 +1,461 @@
 """
-Test suite untuk views/smart_money.py
+backtest_accumulation.py
+
+Verifikasi statistik: apakah "akumulasi signal" (CLV>60% + CMF>0 + Vol>2× + hijau)
+benar-benar precede kenaikan harga, dan distribusi tersamar (CLV<30% + Vol>2×)
+benar-benar precede penurunan?
 
 Jalankan:
-    python test_smart_money.py
-
-Atau dengan pytest:
-    pytest test_smart_money.py -v
-
-Test ini TIDAK butuh parquet asli — semua pakai data sintetis.
+    python backtest_accumulation.py
 """
-import sys
 import os
-import unittest
+import sys
+import warnings
 import numpy as np
 import pandas as pd
 
+warnings.filterwarnings("ignore")
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from quant.parquet_loader import load_parquet_safe
+
 
 # ============================================================
-# COPY FUNGSI DARI smart_money.py (untuk testable tanpa streamlit)
+# KONFIGURASI
 # ============================================================
-def classify_verdict(close_pct, cmf, close_gt_open):
-    """Copy dari smart_money.py — logika klasifikasi kualitas bar."""
-    if pd.isna(close_pct) or pd.isna(cmf):
-        return "—"
-    if not close_gt_open:
-        if close_pct < 0.3 and cmf < 0:
-            return "🔴 DISTRIBUSI"
-        return "🟠 BEARISH"
-    if close_pct >= 0.7 and cmf >= 0.1:
-        return "🟢🟢 AKUMULASI KUAT"
-    elif close_pct >= 0.6 and cmf > 0:
-        return "🟢 AKUMULASI"
-    elif close_pct >= 0.5:
-        return "🟡 CAMPURAN"
-    elif close_pct >= 0.3:
-        return "🟠 BUYER LEMAH"
-    else:
-        return "🔴 DISTRIBUSI TERSAMAR"
+HORIZONS = [1, 3, 5, 10, 20]
+COOLDOWN_DAYS = 5     # skip signal kalau saham sama sudah signal dalam N hari
+GAP_MIN = 0.02        # gap T+1 minimal (sama dengan production)
+GAP_MAX = 0.20        # gap T+1 maksimal
+OUTPUT_CSV = "backtest_accumulation.csv"
 
 
-def calc_close_pct(high, low, close):
-    """CLV = (close - low) / (high - low)."""
-    rng = high - low
-    if rng == 0:
-        return np.nan
-    return (close - low) / rng
+# ============================================================
+# LOAD & PREPARE
+# ============================================================
+def prepare_data():
+    print("📥 Loading parquet...")
+    df = load_parquet_safe()
+    if df is None or df.empty:
+        print("❌ Data tidak tersedia.")
+        sys.exit(1)
 
+    df = df.copy()
+    df["Kode"] = df["Kode"].astype(str).str.strip().str.upper()
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+    df = df.dropna(subset=["Date"])
 
-def calc_cmf(df, period=20):
-    """Chaikin Money Flow."""
+    for c in ["Open", "High", "Low", "Close", "Volume"]:
+        df[c] = pd.to_numeric(df[c], errors="coerce")
+
+    df = df.dropna(subset=["Open", "High", "Low", "Close"])
+    df = df[df["Close"] > 0]
+    df = df.sort_values(["Kode", "Date"]).reset_index(drop=True)
+
+    print(f"   {df['Kode'].nunique()} saham · {len(df):,} bar · "
+          f"{df['Date'].min().date()} → {df['Date'].max().date()}")
+
+    print("🔧 Computing indicators (Vol_Ratio, CLV, CMF)...")
+    g = df.groupby("Kode", group_keys=False)
+
+    df["Vol_MA20"] = g["Volume"].transform(
+        lambda x: x.rolling(20, min_periods=10).mean()
+    )
+    df["Vol_Ratio"] = df["Volume"] / df["Vol_MA20"]
+
     rng = (df["High"] - df["Low"]).replace(0, np.nan)
-    mfm = ((df["Close"] - df["Low"]) - (df["High"] - df["Close"])) / rng
-    mfv = mfm * df["Volume"]
-    cmf = mfv.rolling(period).sum() / df["Volume"].rolling(period).sum()
-    return cmf
+    df["Close_Pct"] = (df["Close"] - df["Low"]) / rng
+    df["MFM"] = ((df["Close"] - df["Low"]) - (df["High"] - df["Close"])) / rng
+    df["MFV"] = df["MFM"] * df["Volume"]
+    df["CMF_20"] = (
+        g["MFV"].transform(lambda x: x.rolling(20, min_periods=10).sum())
+        / g["Volume"].transform(lambda x: x.rolling(20, min_periods=10).sum())
+    )
 
+    print("📊 Computing forward returns & forward max/min...")
 
-def calc_mfi(df, period=14):
-    """Money Flow Index."""
-    tp = (df["High"] + df["Low"] + df["Close"]) / 3
-    mf = tp * df["Volume"]
-    pos_mf = mf.where(tp > tp.shift(1), 0)
-    neg_mf = mf.where(tp < tp.shift(1), 0)
-    mfr = pos_mf.rolling(period).sum() / neg_mf.rolling(period).sum()
-    return 100 - (100 / (1 + mfr))
+    # Entry = T+1 open
+    df["entry_T1"] = g["Open"].shift(-1)
+    # Gap T+1 = (open_T1 / close_T) - 1
+    df["gap_T1"] = (df["entry_T1"] / df["Close"]) - 1
 
+    def fwd_roll_max(s, h):
+        return s.iloc[::-1].rolling(h, min_periods=1).max().iloc[::-1].shift(-1)
 
-def filter_accumulation(df_today, vol_min=2.0, vol_max=50.0,
-                        close_pct_min=0.6, cmf_min=0.0):
-    """Filter akumulasi — sama dengan di smart_money.py."""
-    return df_today[
-        (df_today["Vol_Ratio"] > vol_min) &
-        (df_today["Vol_Ratio"] < vol_max) &
-        (df_today["Close"] > df_today["Open"]) &
-        (df_today["Close_Pct"] > close_pct_min) &
-        (df_today["CMF_20"] > cmf_min) &
-        (df_today["Close"] > 0) &
-        (df_today["Volume"] > 0)
-    ].copy()
+    def fwd_roll_min(s, h):
+        return s.iloc[::-1].rolling(h, min_periods=1).min().iloc[::-1].shift(-1)
 
+    for h in HORIZONS:
+        # Exit = T+h close
+        df[f"close_T{h}"] = g["Close"].shift(-h)
+        df[f"ret_T{h}"] = (df[f"close_T{h}"] / df["entry_T1"]) - 1
 
-def filter_distribution(df_today, vol_min=2.0, vol_max=50.0,
-                        close_pct_max=0.3):
-    """Filter distribusi tersamar — sama dengan di smart_money.py."""
-    return df_today[
-        (df_today["Vol_Ratio"] > vol_min) &
-        (df_today["Vol_Ratio"] < vol_max) &
-        (df_today["Close_Pct"] < close_pct_max) &
-        (df_today["Close"] > 0) &
-        (df_today["Volume"] > 0)
-    ].copy()
+        # Forward max high & min low dari T+1 s/d T+h
+        df[f"maxhigh_T{h}"] = g["High"].transform(lambda s, hh=h: fwd_roll_max(s, hh))
+        df[f"minlow_T{h}"] = g["Low"].transform(lambda s, hh=h: fwd_roll_min(s, hh))
+
+        df[f"maxgain_T{h}"] = (df[f"maxhigh_T{h}"] / df["entry_T1"]) - 1
+        df[f"maxdd_T{h}"] = (df[f"minlow_T{h}"] / df["entry_T1"]) - 1
+
+    return df
 
 
 # ============================================================
-# TEST 1: CLV CALCULATION
+# SIGNAL MASKS
 # ============================================================
-class TestCLV(unittest.TestCase):
-    """Test Close Location Value."""
+def build_masks(df):
+    """Definisikan mask untuk tiap kelompok signal."""
+    base_valid = (
+        df["entry_T1"].notna()
+        & (df["entry_T1"] > 0)
+        & df["Vol_Ratio"].notna()
+        & df["Close_Pct"].notna()
+        & df["CMF_20"].notna()
+    )
 
-    def test_close_at_high(self):
-        """Close = high → CLV = 1.0 (buyer dominan penuh)."""
-        self.assertAlmostEqual(calc_close_pct(120, 100, 120), 1.0)
+    vol_spike = (
+        base_valid
+        & (df["Vol_Ratio"] > 2)
+        & (df["Vol_Ratio"] < 50)
+        & (df["Volume"] > 0)
+    )
 
-    def test_close_at_low(self):
-        """Close = low → CLV = 0.0 (seller dominan penuh)."""
-        self.assertAlmostEqual(calc_close_pct(120, 100, 100), 0.0)
+    accum = (
+        vol_spike
+        & (df["Close"] > df["Open"])
+        & (df["Close_Pct"] > 0.6)
+        & (df["CMF_20"] > 0)
+    )
 
-    def test_close_at_mid(self):
-        """Close = midpoint → CLV = 0.5."""
-        self.assertAlmostEqual(calc_close_pct(120, 100, 110), 0.5)
+    dist = (
+        vol_spike
+        & (df["Close_Pct"] < 0.3)
+    )
 
-    def test_close_at_70pct(self):
-        """Close di 70% range → CLV = 0.7 (batas akumulasi kuat)."""
-        self.assertAlmostEqual(calc_close_pct(120, 100, 114), 0.7)
+    old_filter = (
+        vol_spike
+        & (df["Close"] > df["Open"])
+    )
 
-    def test_close_at_30pct(self):
-        """Close di 30% range → CLV = 0.3 (batas buyer lemah)."""
-        self.assertAlmostEqual(calc_close_pct(120, 100, 106), 0.3)
+    return {
+        "Akumulasi (baru)": accum,
+        "Distribusi tersamar": dist,
+        "Filter lama (close>open saja)": old_filter,
+        "Baseline (semua bar)": base_valid,
+    }
 
-    def test_zero_range(self):
-        """High = low (doji sempurna) → NaN (hindari div by zero)."""
-        self.assertTrue(pd.isna(calc_close_pct(100, 100, 100)))
 
-
-# ============================================================
-# TEST 2: VERDICT CLASSIFICATION
-# ============================================================
-class TestClassifyVerdict(unittest.TestCase):
-    """Test klasifikasi verdict berdasarkan CLV + CMF + candle."""
-
-    # --- Kasus BULLISH (close > open) ---
-    def test_strong_accumulation(self):
-        """CLV 80% + CMF 0.15 + bullish → AKUMULASI KUAT."""
-        self.assertEqual(
-            classify_verdict(0.80, 0.15, True),
-            "🟢🟢 AKUMULASI KUAT"
-        )
-
-    def test_accumulation(self):
-        """CLV 65% + CMF 0.05 + bullish → AKUMULASI."""
-        self.assertEqual(
-            classify_verdict(0.65, 0.05, True),
-            "🟢 AKUMULASI"
-        )
-
-    def test_mixed(self):
-        """CLV 55% + CMF 0.02 + bullish → CAMPURAN."""
-        self.assertEqual(
-            classify_verdict(0.55, 0.02, True),
-            "🟡 CAMPURAN"
-        )
-
-    def test_weak_buyer(self):
-        """CLV 40% + CMF 0.01 + bullish → BUYER LEMAH."""
-        self.assertEqual(
-            classify_verdict(0.40, 0.01, True),
-            "🟠 BUYER LEMAH"
-        )
-
-    def test_hidden_distribution(self):
-        """Candle hijau tapi CLV 20% + CMF -0.05 → DISTRIBUSI TERSAMAR."""
-        self.assertEqual(
-            classify_verdict(0.20, -0.05, True),
-            "🔴 DISTRIBUSI TERSAMAR"
-        )
-
-    # --- Kasus BEARISH (close < open) ---
-    def test_distribution_bearish(self):
-        """Candle merah + CLV 20% + CMF -0.05 → DISTRIBUSI."""
-        self.assertEqual(
-            classify_verdict(0.20, -0.05, False),
-            "🔴 DISTRIBUSI"
-        )
-
-    def test_bearish_but_not_distribution(self):
-        """Candle merah tapi CLV 40% + CMF positif → BEARISH (bukan distribusi)."""
-        self.assertEqual(
-            classify_verdict(0.40, 0.02, False),
-            "🟠 BEARISH"
-        )
-
-    # --- Edge case ---
-    def test_nan_input(self):
-        """NaN input → '—'."""
-        self.assertEqual(classify_verdict(np.nan, 0.1, True), "—")
-        self.assertEqual(classify_verdict(0.8, np.nan, True), "—")
-
-    def test_boundary_70_0_1(self):
-        """CLV = 0.7 tepat + CMF = 0.1 tepat → AKUMULASI KUAT (batas inklusif)."""
-        self.assertEqual(
-            classify_verdict(0.7, 0.1, True),
-            "🟢🟢 AKUMULASI KUAT"
-        )
+def apply_cooldown(df, mask, cooldown=COOLDOWN_DAYS):
+    """Skip signal kalau saham sama sudah signal dalam N hari terakhir."""
+    idx = df.index[mask]
+    sub = df.loc[idx, ["Kode", "Date"]].sort_values(["Kode", "Date"])
+    keep = []
+    last = {}
+    for i, row in sub.iterrows():
+        k = row["Kode"]
+        d = row["Date"]
+        if k in last and (d - last[k]).days < cooldown:
+            continue
+        keep.append(i)
+        last[k] = d
+    return pd.Series(df.index.isin(keep), index=df.index) & mask
 
 
 # ============================================================
-# TEST 3: CMF CALCULATION
+# STATS PER SIGNAL
 # ============================================================
-class TestCMF(unittest.TestCase):
-    """Test Chaikin Money Flow."""
-
-    def test_cmf_all_buying(self):
-        """Semua hari close di HIGH → CMF = 1.0 (buying penuh)."""
-        df = pd.DataFrame({
-            "High": [110] * 25,
-            "Low": [100] * 25,
-            "Close": [110] * 25,  # close = high
-            "Volume": [1000] * 25,
+def compute_stats(df, mask, label, horizons):
+    sub = df[mask].copy()
+    rows = []
+    for h in horizons:
+        ret = sub[f"ret_T{h}"].dropna()
+        dd = sub[f"maxdd_T{h}"].dropna()
+        mg = sub[f"maxgain_T{h}"].dropna()
+        n = len(ret)
+        if n == 0:
+            rows.append({
+                "signal": label, "horizon": f"T+{h}", "n": 0,
+                "wr": np.nan, "wr_3": np.nan, "wr_neg3": np.nan,
+                "avg": np.nan, "median": np.nan,
+                "best": np.nan, "worst": np.nan,
+                "avg_maxdd": np.nan, "avg_maxgain": np.nan,
+            })
+            continue
+        rows.append({
+            "signal": label,
+            "horizon": f"T+{h}",
+            "n": n,
+            "wr": (ret > 0).mean() * 100,
+            "wr_3": (ret > 0.03).mean() * 100,
+            "wr_neg3": (ret < -0.03).mean() * 100,
+            "avg": ret.mean() * 100,
+            "median": ret.median() * 100,
+            "best": ret.max() * 100,
+            "worst": ret.min() * 100,
+            "avg_maxdd": dd.mean() * 100 if len(dd) else np.nan,
+            "avg_maxgain": mg.mean() * 100 if len(mg) else np.nan,
         })
-        cmf = calc_cmf(df, 20)
-        self.assertAlmostEqual(cmf.iloc[-1], 1.0, places=4)
-
-    def test_cmf_all_selling(self):
-        """Semua hari close di LOW → CMF = -1.0 (selling penuh)."""
-        df = pd.DataFrame({
-            "High": [110] * 25,
-            "Low": [100] * 25,
-            "Close": [100] * 25,  # close = low
-            "Volume": [1000] * 25,
-        })
-        cmf = calc_cmf(df, 20)
-        self.assertAlmostEqual(cmf.iloc[-1], -1.0, places=4)
-
-    def test_cmf_neutral(self):
-        """Close di midpoint → CMF = 0 (neutral)."""
-        df = pd.DataFrame({
-            "High": [110] * 25,
-            "Low": [100] * 25,
-            "Close": [105] * 25,  # midpoint
-            "Volume": [1000] * 25,
-        })
-        cmf = calc_cmf(df, 20)
-        self.assertAlmostEqual(cmf.iloc[-1], 0.0, places=4)
-
-    def test_cmf_zero_range_handled(self):
-        """High = low (doji) → NaN tidak crash, CMF tetap bisa dihitung."""
-        df = pd.DataFrame({
-            "High": [110, 110, 100, 110] * 10,
-            "Low": [100, 100, 100, 100] * 10,  # baris 3 doji
-            "Close": [110, 105, 100, 110] * 10,
-            "Volume": [1000] * 40,
-        })
-        cmf = calc_cmf(df, 20)
-        self.assertFalse(cmf.iloc[-1] is None)
+    return pd.DataFrame(rows)
 
 
-# ============================================================
-# TEST 4: MFI CALCULATION
-# ============================================================
-class TestMFI(unittest.TestCase):
-    """Test Money Flow Index."""
-
-    def test_mfi_all_up(self):
-        """Harga terus naik → MFI = 100 (overbought ekstrem)."""
-        n = 20
-        df = pd.DataFrame({
-            "High": np.arange(100, 100 + n),
-            "Low": np.arange(99, 99 + n),
-            "Close": np.arange(100, 100 + n),
-            "Volume": [1000] * n,
-        })
-        mfi = calc_mfi(df, 14)
-        self.assertAlmostEqual(mfi.iloc[-1], 100.0, places=2)
-
-    def test_mfi_all_down(self):
-        """Harga terus turun → MFI = 0 (oversold ekstrem)."""
-        n = 20
-        df = pd.DataFrame({
-            "High": np.arange(120, 120 - n, -1),
-            "Low": np.arange(119, 119 - n, -1),
-            "Close": np.arange(119, 119 - n, -1),
-            "Volume": [1000] * n,
-        })
-        mfi = calc_mfi(df, 14)
-        self.assertAlmostEqual(mfi.iloc[-1], 0.0, places=2)
-
-
-# ============================================================
-# TEST 5: FILTER AKUMULASI (INTEGRASI)
-# ============================================================
-class TestAccumulationFilter(unittest.TestCase):
-    """Test filter akumulasi pada df_today sintetis."""
-
-    def _make_today(self, rows):
-        """Helper: bikin df_today dari list of dict."""
-        return pd.DataFrame(rows)
-
-    def test_strong_accumulation_passes(self):
-        """Saham dengan semua syarat akumulasi → lolos filter."""
-        df = self._make_today([{
-            "Kode": "BBCA",
-            "Open": 9000, "High": 9200, "Low": 9000, "Close": 9150,
-            "Volume": 5_000_000,
-            "Vol_Ratio": 2.5,
-            "Close_Pct": 0.75,  # close 75% range
-            "CMF_20": 0.15,
-        }])
-        result = filter_accumulation(df)
-        self.assertEqual(len(result), 1)
-        self.assertEqual(result.iloc[0]["Kode"], "BBCA")
-
-    def test_hidden_distribution_rejected(self):
-        """Volume spike + candle hijau TAPI close di low → ditolak."""
-        df = self._make_today([{
-            "Kode": "TRAP",
-            "Open": 100, "High": 130, "Low": 99, "Close": 105,  # hijau tapi dekat low
-            "Volume": 10_000_000,
-            "Vol_Ratio": 5.0,
-            "Close_Pct": 0.19,  # close 19% range
-            "CMF_20": -0.10,
-        }])
-        result = filter_accumulation(df)
-        self.assertEqual(len(result), 0, "Distribusi tersamar harus ditolak")
-
-    def test_low_volume_rejected(self):
-        """Close bagus tapi volume normal → ditolak."""
-        df = self._make_today([{
-            "Kode": "QUIET",
-            "Open": 100, "High": 105, "Low": 99, "Close": 104,
-            "Volume": 1_000_000,
-            "Vol_Ratio": 1.2,  # di bawah 2x
-            "Close_Pct": 0.83,
-            "CMF_20": 0.10,
-        }])
-        result = filter_accumulation(df)
-        self.assertEqual(len(result), 0)
-
-    def test_negative_cmf_rejected(self):
-        """Close bagus tapi CMF negatif (20 hari distribusi) → ditolak."""
-        df = self._make_today([{
-            "Kode": "WEAK",
-            "Open": 100, "High": 110, "Low": 100, "Close": 108,
-            "Volume": 5_000_000,
-            "Vol_Ratio": 3.0,
-            "Close_Pct": 0.80,
-            "CMF_20": -0.05,  # negatif!
-        }])
-        result = filter_accumulation(df)
-        self.assertEqual(len(result), 0)
-
-    def test_red_candle_rejected(self):
-        """Volume besar tapi close < open → ditolak."""
-        df = self._make_today([{
-            "Kode": "RED",
-            "Open": 110, "High": 115, "Low": 100, "Close": 105,  # merah
-            "Volume": 5_000_000,
-            "Vol_Ratio": 3.0,
-            "Close_Pct": 0.33,  # di bawah 60%
-            "CMF_20": 0.05,
-        }])
-        result = filter_accumulation(df)
-        self.assertEqual(len(result), 0)
-
-    def test_outlier_volume_rejected(self):
-        """Volume ratio >50x (mungkin data error) → ditolak."""
-        df = self._make_today([{
-            "Kode": "OUTLIER",
-            "Open": 100, "High": 110, "Low": 100, "Close": 109,
-            "Volume": 100_000_000,
-            "Vol_Ratio": 80.0,  # di atas 50x → outlier
-            "Close_Pct": 0.90,
-            "CMF_20": 0.15,
-        }])
-        result = filter_accumulation(df)
-        self.assertEqual(len(result), 0)
-
-    def test_mixed_batch(self):
-        """Batch dengan 3 saham: 1 akumulasi asli + 1 distribusi + 1 normal."""
-        df = self._make_today([
-            {  # akumulasi asli
-                "Kode": "GOOD", "Open": 100, "High": 110, "Low": 100,
-                "Close": 108, "Volume": 5_000_000, "Vol_Ratio": 3.0,
-                "Close_Pct": 0.80, "CMF_20": 0.15,
-            },
-            {  # distribusi tersamar
-                "Kode": "TRAP", "Open": 100, "High": 130, "Low": 99,
-                "Close": 105, "Volume": 8_000_000, "Vol_Ratio": 4.5,
-                "Close_Pct": 0.20, "CMF_20": -0.10,
-            },
-            {  # normal (volume rata)
-                "Kode": "NORMAL", "Open": 100, "High": 102, "Low": 99,
-                "Close": 101, "Volume": 1_000_000, "Vol_Ratio": 1.0,
-                "Close_Pct": 0.67, "CMF_20": 0.02,
-            },
-        ])
-        result = filter_accumulation(df)
-        self.assertEqual(len(result), 1)
-        self.assertEqual(result.iloc[0]["Kode"], "GOOD")
-
-
-# ============================================================
-# TEST 6: FILTER DISTRIBUSI (INTEGRASI)
-# ============================================================
-class TestDistributionFilter(unittest.TestCase):
-    """Test filter distribusi tersamar."""
-
-    def test_hidden_distribution_caught(self):
-        """Candle hijau + volume besar + close rendah → tertangkap."""
-        df = pd.DataFrame([{
-            "Kode": "TRAP",
-            "Open": 100, "High": 130, "Low": 99, "Close": 105,
-            "Volume": 10_000_000,
-            "Vol_Ratio": 5.0,
-            "Close_Pct": 0.19,
-            "CMF_20": -0.10,
-        }])
-        result = filter_distribution(df)
-        self.assertEqual(len(result), 1)
-        self.assertEqual(result.iloc[0]["Kode"], "TRAP")
-
-    def test_strong_close_not_distribution(self):
-        """Close di 80% range bukan distribusi."""
-        df = pd.DataFrame([{
-            "Kode": "GOOD",
-            "Open": 100, "High": 110, "Low": 100, "Close": 108,
-            "Volume": 5_000_000,
-            "Vol_Ratio": 3.0,
-            "Close_Pct": 0.80,
-            "CMF_20": 0.10,
-        }])
-        result = filter_distribution(df)
-        self.assertEqual(len(result), 0)
-
-    def test_no_volume_spike_not_caught(self):
-        """Close rendah tapi volume normal → bukan distribusi (cuma red day biasa)."""
-        df = pd.DataFrame([{
-            "Kode": "WEAK",
-            "Open": 100, "High": 102, "Low": 95, "Close": 96,
-            "Volume": 500_000,
-            "Vol_Ratio": 0.8,  # bukan spike
-            "Close_Pct": 0.14,
-            "CMF_20": -0.02,
-        }])
-        result = filter_distribution(df)
-        self.assertEqual(len(result), 0)
-
-
-# ============================================================
-# TEST 7: INTEGRASI — END-TO-END SAMPLE
-# ============================================================
-class TestEndToEnd(unittest.TestCase):
-    """Simulasi satu hari penuh: hitung CMF/CLV lalu filter."""
-
-    def test_full_pipeline(self):
-        """Bangun 30 bar OHLCV untuk 2 saham, hitung, filter, cek hasil."""
-        np.random.seed(42)
-
-        # Saham A: akumulasi asli (uptrend + close di atas)
-        n = 30
-        a_prices = np.cumsum(np.random.randn(n) * 0.5) + 100
-        a_df = pd.DataFrame({
-            "High": a_prices + 2,
-            "Low": a_prices - 2,
-            "Close": a_prices + 1.5,  # close dekat high
-            "Open": a_prices - 1,
-            "Volume": [1_000_000] * (n - 1) + [5_000_000],
-        })
-
-        # Saham B: distribusi (uptrend tapi hari terakhir close di low)
-        b_prices = np.cumsum(np.random.randn(n) * 0.5) + 100
-        b_df = pd.DataFrame({
-            "High": b_prices + 2,
-            "Low": b_prices - 2,
-            "Close": b_prices - 1.5,  # close dekat low
-            "Open": b_prices + 1,
-            "Volume": [1_000_000] * (n - 1) + [8_000_000],
-        })
-
-        for name, df in [("A", a_df), ("B", b_df)]:
-            df["CMF_20"] = calc_cmf(df, 20)
-            df["Close_Pct"] = (df["Close"] - df["Low"]) / (df["High"] - df["Low"])
-            df["Vol_Ratio"] = df["Volume"] / df["Volume"].rolling(20).mean()
-
-        # Hari terakhir saja
-        today = pd.DataFrame([
-            {
-                "Kode": "ACCUM",
-                **a_df.iloc[-1][["Open", "High", "Low", "Close", "Volume",
-                                 "Vol_Ratio", "Close_Pct", "CMF_20"]].to_dict(),
-            },
-            {
-                "Kode": "DIST",
-                **b_df.iloc[-1][["Open", "High", "Low", "Close", "Volume",
-                                 "Vol_Ratio", "Close_Pct", "CMF_20"]].to_dict(),
-            },
-        ])
-
-        # Filter
-        accum = filter_accumulation(today)
-        dist = filter_distribution(today)
-
-        # Saham A harus muncul di akumulasi
-        self.assertIn("ACCUM", accum["Kode"].values,
-                      f"ACCUM tidak lolos filter akumulasi. "
-                      f"CLV={a_df.iloc[-1]['Close_Pct']:.2f}, "
-                      f"CMF={a_df.iloc[-1]['CMF_20']:.3f}")
-
-        # Saham B harus muncul di distribusi
-        self.assertIn("DIST", dist["Kode"].values,
-                      f"DIST tidak muncul di filter distribusi. "
-                      f"CLV={b_df.iloc[-1]['Close_Pct']:.2f}")
-
-
-# ============================================================
-# RUNNER
-# ============================================================
-if __name__ == "__main__":
-    print("=" * 70)
-    print("TEST SUITE: views/smart_money.py")
-    print("=" * 70)
+def print_table(df_stats, title):
     print()
+    print("=" * 110)
+    print(f"  {title}")
+    print("=" * 110)
+    if df_stats.empty:
+        print("  (no data)")
+        return
+    fmt = df_stats.copy()
+    for c in ["wr", "wr_3", "wr_neg3", "avg", "median", "best", "worst",
+              "avg_maxdd", "avg_maxgain"]:
+        if c in fmt.columns:
+            fmt[c] = fmt[c].apply(lambda v: f"{v:+.2f}" if pd.notna(v) else "—")
+    fmt = fmt.rename(columns={
+        "signal": "Signal", "horizon": "Horizon", "n": "N",
+        "wr": "WR%", "wr_3": "WR>3%", "wr_neg3": "WR<-3%",
+        "avg": "Avg%", "median": "Med%", "best": "Best%", "worst": "Worst%",
+        "avg_maxdd": "AvgMaxDD%", "avg_maxgain": "AvgMaxGain%",
+    })
+    print(fmt.to_string(index=False))
 
-    # Jalankan semua test
-    loader = unittest.TestLoader()
-    suite = loader.loadTestsFromModule(sys.modules[__name__])
 
-    runner = unittest.TextTestRunner(verbosity=2)
-    result = runner.run(suite)
-
-    # Summary
+# ============================================================
+# EDGE VS BASELINE
+# ============================================================
+def print_edge(df_all, horizons):
     print()
-    print("=" * 70)
-    if result.wasSuccessful():
-        print(f"✅ SEMUA TEST LULUS ({result.testsRun} test)")
+    print("=" * 110)
+    print("  EDGE vs BASELINE (selisih avg return T+h)")
+    print("=" * 110)
+
+    base = df_all[df_all["signal"] == "Baseline (semua bar)"].set_index("horizon")
+    for sig in ["Akumulasi (baru)", "Distribusi tersamar", "Filter lama (close>open saja)"]:
+        sub = df_all[df_all["signal"] == sig].set_index("horizon")
+        if sub.empty:
+            continue
+        print(f"\n  {sig}:")
+        for h in horizons:
+            tag = f"T+{h}"
+            if tag not in sub.index or tag not in base.index:
+                continue
+            a = sub.loc[tag, "avg"]
+            b = base.loc[tag, "avg"]
+            a_wr = sub.loc[tag, "wr"]
+            b_wr = base.loc[tag, "wr"]
+            if pd.isna(a) or pd.isna(b):
+                continue
+            edge = a - b
+            edge_wr = a_wr - b_wr
+            mark = "✅" if edge > 0 else "❌"
+            print(f"    {tag:>4}  AvgRet: {a:+.2f}%  vs base {b:+.2f}%  "
+                  f"→ edge {edge:+.2f}% {mark}   "
+                  f"|  WR: {a_wr:.1f}% vs {b_wr:.1f}%  edge {edge_wr:+.1f}%")
+
+
+# ============================================================
+# VERDICT
+# ============================================================
+def print_verdict(df_all, horizons):
+    print()
+    print("=" * 110)
+    print("  VERDICT")
+    print("=" * 110)
+
+    base = df_all[df_all["signal"] == "Baseline (semua bar)"].set_index("horizon")
+    accum = df_all[df_all["signal"] == "Akumulasi (baru)"].set_index("horizon")
+    dist = df_all[df_all["signal"] == "Distribusi tersamar"].set_index("horizon")
+    old = df_all[df_all["signal"] == "Filter lama (close>open saja)"].set_index("horizon")
+
+    checks = []
+
+    # Check 1: akumulasi WR > baseline WR (di T+5)
+    if "T+5" in accum.index and "T+5" in base.index:
+        a_wr = accum.loc["T+5", "wr"]
+        b_wr = base.loc["T+5", "wr"]
+        checks.append((
+            f"Akumulasi WR(T+5) > Baseline  ({a_wr:.1f}% vs {b_wr:.1f}%)",
+            a_wr > b_wr,
+        ))
+
+    # Check 2: akumulasi avg return > baseline avg return (T+5)
+    if "T+5" in accum.index and "T+5" in base.index:
+        a_ret = accum.loc["T+5", "avg"]
+        b_ret = base.loc["T+5", "avg"]
+        checks.append((
+            f"Akumulasi AvgRet(T+5) > Baseline  ({a_ret:+.2f}% vs {b_ret:+.2f}%)",
+            a_ret > b_ret,
+        ))
+
+    # Check 3: distribusi avg return < baseline
+    if "T+5" in dist.index and "T+5" in base.index:
+        d_ret = dist.loc["T+5", "avg"]
+        b_ret = base.loc["T+5", "avg"]
+        checks.append((
+            f"Distribusi AvgRet(T+5) < Baseline  ({d_ret:+.2f}% vs {b_ret:+.2f}%)",
+            d_ret < b_ret,
+        ))
+
+    # Check 4: akumulasi > filter lama
+    if "T+5" in accum.index and "T+5" in old.index:
+        a_ret = accum.loc["T+5", "avg"]
+        o_ret = old.loc["T+5", "avg"]
+        checks.append((
+            f"Akumulasi AvgRet(T+5) > Filter Lama  ({a_ret:+.2f}% vs {o_ret:+.2f}%)",
+            a_ret > o_ret,
+        ))
+
+    if not checks:
+        print("  ⚠️ Tidak cukup data untuk verdict.")
+        return
+
+    for desc, ok in checks:
+        print(f"  {'✅' if ok else '❌'}  {desc}")
+
+    n_pass = sum(1 for _, ok in checks if ok)
+    print()
+    if n_pass == len(checks):
+        print("  🏆 SEMUA CHECK LULUS — filter akumulasi valid dan lebih baik dari filter lama.")
+    elif n_pass >= len(checks) * 0.75:
+        print(f"  ✅ {n_pass}/{len(checks)} check lulus — filter akumulasi cukup valid.")
     else:
-        print(f"❌ ADA {len(result.failures) + len(result.errors)} TEST GAGAL")
-        print(f"   Lulus: {result.testsRun - len(result.failures) - len(result.errors)}/{result.testsRun}")
-    print("=" * 70)
+        print(f"  ⚠️  {n_pass}/{len(checks)} check lulus — perlu review threshold.")
 
-    sys.exit(0 if result.wasSuccessful() else 1)
+
+# ============================================================
+# SPOT-CHECK: SAMPLE SIGNALS
+# ============================================================
+def print_samples(df, mask, label, n=5):
+    sub = df[mask].copy()
+    sub = sub.dropna(subset=["ret_T5"])
+    if sub.empty:
+        return
+
+    sub = sub.sort_values("ret_T5", ascending=False)
+
+    print()
+    print("=" * 110)
+    print(f"  SAMPLE — {label}")
+    print("=" * 110)
+
+    print(f"\n  Top {n} (gain terbesar di T+5):")
+    cols = ["Date", "Kode", "Close", "Close_Pct", "CMF_20", "Vol_Ratio",
+            "gap_T1", "ret_T5", "maxgain_T5", "maxdd_T5"]
+    cols = [c for c in cols if c in sub.columns]
+    top = sub[cols].head(n).copy()
+    for c in ["Close_Pct"]:
+        if c in top.columns:
+            top[c] = top[c] * 100
+    for c in ["gap_T1", "ret_T5", "maxgain_T5", "maxdd_T5"]:
+        if c in top.columns:
+            top[c] = top[c] * 100
+    top["Date"] = top["Date"].dt.strftime("%Y-%m-%d")
+    print(top.round(2).to_string(index=False))
+
+    print(f"\n  Bottom {n} (loss terbesar di T+5) — cek apakah false positive:")
+    bot = sub[cols].tail(n).copy()
+    for c in ["Close_Pct"]:
+        if c in bot.columns:
+            bot[c] = bot[c] * 100
+    for c in ["gap_T1", "ret_T5", "maxgain_T5", "maxdd_T5"]:
+        if c in bot.columns:
+            bot[c] = bot[c] * 100
+    bot["Date"] = bot["Date"].dt.strftime("%Y-%m-%d")
+    print(bot.round(2).to_string(index=False))
+
+
+# ============================================================
+# WITH GAP FILTER (PRODUCTION REALISTIC)
+# ============================================================
+def compute_with_gap(df, mask, label, horizons):
+    """Backtest yang lebih realistis: filter gap T+1 2-20% (sesuai production)."""
+    gap_mask = mask & (df["gap_T1"] >= GAP_MIN) & (df["gap_T1"] <= GAP_MAX)
+    return compute_stats(df, gap_mask, label, horizons)
+
+
+# ============================================================
+# MAIN
+# ============================================================
+def main():
+    print()
+    print("=" * 110)
+    print("  BACKTEST: APAKAH AKUMULASI SIGNAL BENAR-BENAR PRECEDE KENAIKAN?")
+    print("=" * 110)
+
+    df = prepare_data()
+
+    print("\n🎯 Building signal masks...")
+    masks = build_masks(df)
+
+    # Counts
+    print()
+    print("=" * 110)
+    print("  DISTRIBUSI SIGNAL")
+    print("=" * 110)
+    for label, m in masks.items():
+        print(f"  {label:<35} : {m.sum():>7,} bar  ({m.sum()/len(df)*100:5.2f}%)")
+
+    # Apply cooldown untuk signal (bukan baseline)
+    print(f"\n🔁 Apply cooldown {COOLDOWN_DAYS} hari (hindari overlap sinyal beruntun)...")
+    masks_clean = {}
+    for label, m in masks.items():
+        if label == "Baseline (semua bar)":
+            masks_clean[label] = m
+        else:
+            masks_clean[label] = apply_cooldown(df, m, COOLDOWN_DAYS)
+            print(f"  {label:<35} : {m.sum():>7,} → {masks_clean[label].sum():>7,} "
+                  f"setelah dedup")
+
+    # Stats per signal
+    print("\n📊 Computing stats per signal...")
+    all_stats = []
+    for label, m in masks_clean.items():
+        s = compute_stats(df, m, label, HORIZONS)
+        all_stats.append(s)
+    df_all = pd.concat(all_stats, ignore_index=True)
+
+    # Print
+    for label, m in masks_clean.items():
+        sub_stats = df_all[df_all["signal"] == label].reset_index(drop=True)
+        print_table(sub_stats, f"SIGNAL: {label}  (N={m.sum():,} bar)")
+
+    # Edge
+    print_edge(df_all, HORIZONS)
+
+    # Verdict
+    print_verdict(df_all, HORIZONS)
+
+    # Spot check
+    print_samples(df, masks_clean["Akumulasi (baru)"],
+                  "Akumulasi — top vs bottom performer T+5", n=5)
+    print_samples(df, masks_clean["Distribusi tersamar"],
+                  "Distribusi — top vs bottom performer T+5", n=5)
+
+    # Realistic (with gap filter)
+    print()
+    print("=" * 110)
+    print(f"  PRODUCTION-REALISTIC: + GAP FILTER T+1 {GAP_MIN*100:.0f}%–{GAP_MAX*100:.0f}%")
+    print("=" * 110)
+    gap_stats = []
+    for label in ["Akumulasi (baru)", "Filter lama (close>open saja)"]:
+        s = compute_with_gap(df, masks_clean[label], label + " [gap filtered]", HORIZONS)
+        gap_stats.append(s)
+    df_gap = pd.concat(gap_stats, ignore_index=True)
+    for label in ["Akumulasi (baru) [gap filtered]",
+                  "Filter lama (close>open saja) [gap filtered]"]:
+        sub_stats = df_gap[df_gap["signal"] == label].reset_index(drop=True)
+        print_table(sub_stats, label)
+
+    # Save CSV
+    df_all.to_csv(OUTPUT_CSV, index=False)
+    print()
+    print(f"💾 Hasil lengkap tersimpan di: {OUTPUT_CSV}")
+
+    print()
+    print("=" * 110)
+    print("  SELESAI")
+    print("=" * 110)
+
+
+if __name__ == "__main__":
+    main()
