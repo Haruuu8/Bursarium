@@ -1,347 +1,531 @@
 """
-WR90 HUNTER — Target WR ≥ 90% dengan N ≥ 1500.
-Strategi:
-1. Loosen rule_a (dapat lebih banyak sinyal)
-2. Gap filter (2-20%, 2-10%, 5-15%)
-3. Quality filter (HL, 52w, ATR) untuk boost WR
-4. Tighter trailing (0.5% vs 1%)
-5. Test 100+ kombinasi
+Test suite untuk views/smart_money.py
 
-Find Pareto: N ≥ 1500, WR ≥ 90%.
+Jalankan:
+    python test_smart_money.py
+
+Atau dengan pytest:
+    pytest test_smart_money.py -v
+
+Test ini TIDAK butuh parquet asli — semua pakai data sintetis.
 """
+import sys
 import os
+import unittest
 import numpy as np
 import pandas as pd
-import concurrent.futures
-import itertools
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FIXED_PARQUET = os.path.join(BASE_DIR, "ohlcv_idx_fixed.parquet")
-
-MIN_PRICE = 50
-MIN_VOLUME = 100000
-MAX_DAYS = 30
 
 
-def _process(args):
-    kode, sub = args
-    sub = sub.sort_values("Date").reset_index(drop=True).copy()
-    n = len(sub)
-    if n < 100: return None
-
-    o = sub["Open"].values.astype(np.float64)
-    h = sub["High"].values.astype(np.float64)
-    l = sub["Low"].values.astype(np.float64)
-    c = sub["Close"].values.astype(np.float64)
-    v = sub["Volume"].values.astype(np.float64)
-    dates = sub["Date"].values
-
-    s_c = pd.Series(c); s_h = pd.Series(h); s_l = pd.Series(l); s_v = pd.Series(v)
-    prev_c = s_c.shift(1)
-
-    for n_ in [20, 50, 200]:
-        sub[f"sma{n_}"] = s_c.rolling(n_).mean()
-    sub["ret_1d"] = s_c.pct_change(1)
-    sub["ret_3d"] = s_c.pct_change(3)
-    sub["ret_5d"] = s_c.pct_change(5)
-    sub["ret_10d"] = s_c.pct_change(10)
-    sub["px_vs_sma20"] = s_c / sub["sma20"] - 1
-    sub["px_vs_sma50"] = s_c / sub["sma50"] - 1
-    sub["range"] = (s_h - s_l) / s_c
-    vol_ma = s_v.rolling(20).mean()
-    vol_std = s_v.rolling(20).std()
-    sub["vol_z_20"] = (s_v - vol_ma) / vol_std.replace(0, np.nan)
-    tr = np.maximum(s_h - s_l, np.maximum((s_h - prev_c).abs(), (s_l - prev_c).abs()))
-    sub["atr_pct"] = tr.rolling(14).mean() / s_c
-
-    up_day = (s_c > prev_c).astype(int)
-    sub["consec_up"] = up_day.groupby((up_day != up_day.shift()).cumsum()).cumsum()
-    sub["hl"] = (s_l > prev_c).astype(int)
-    sub["hl5"] = sub["hl"].rolling(5).sum()
-
-    sub["high_252"] = s_h.rolling(252, min_periods=200).max()
-    sub["low_252"] = s_l.rolling(252, min_periods=200).min()
-    den = sub["high_252"] - sub["low_252"]
-    sub["pos_52w"] = np.where(den > 0, (s_c - sub["low_252"]) / den, np.nan)
-
-    # For each candidate, simulate with 4 trailing configs
-    # Trail 0.5% (tight), 0.75%, 1.0%, 1.25%
-    TRAIL_CONFIGS = [0.005, 0.0075, 0.01, 0.0125]
-    SL_PCT = 0.03
-
-    ret1 = sub["ret_1d"].values
-    ret3 = sub["ret_3d"].values
-    ret5 = sub["ret_5d"].values
-    ret10 = sub["ret_10d"].values
-    px20 = sub["px_vs_sma20"].values
-    px50 = sub["px_vs_sma50"].values
-    rng = sub["range"].values
-    vz = sub["vol_z_20"].values
-    atr = sub["atr_pct"].values
-    cu = sub["consec_up"].values
-    hl5 = sub["hl5"].values
-    p52 = sub["pos_52w"].values
-
-    base_superset = ((ret1 > 0.05) | (ret3 > 0.08) | (ret5 > 0.08) | (ret10 > 0.10))
-    cand_idx = np.where(base_superset)[0]
-    cand_idx = cand_idx[cand_idx < n - 5]
-
-    rows = []
-    for i in cand_idx:
-        if i + 1 >= n: continue
-        signal_close = c[i]
-        entry = o[i + 1]
-        if np.isnan(entry) or entry <= 0 or signal_close <= 0:
-            continue
-
-        gap_pct = (entry / signal_close - 1) * 100
-        if gap_pct < 2 or gap_pct > 20:
-            continue
-
-        sl_price = entry * (1 - SL_PCT)
-
-        # For each trail config, simulate
-        for trail in TRAIL_CONFIGS:
-            key = f"trail{int(trail*1000)}"
-            peak = entry
-            exit_ret = np.nan
-            exit_reason = "PENDING"
-
-            for j in range(i + 1, min(i + 1 + MAX_DAYS, n)):
-                hj = h[j]; lj = l[j]
-                if np.isnan(hj) or np.isnan(lj): continue
-                if hj > peak:
-                    peak = hj
-                trail_stop = peak * (1 - trail)
-
-                if trail_stop > entry and lj <= trail_stop:
-                    exit_ret = (trail_stop / entry) - 1
-                    exit_reason = "TRAIL"
-                    break
-                if lj <= sl_price:
-                    exit_ret = -SL_PCT
-                    exit_reason = "SL"
-                    break
-
-            if exit_reason == "PENDING":
-                last_idx = min(i + 1 + MAX_DAYS, n) - 1
-                if not np.isnan(c[last_idx]):
-                    exit_ret = (c[last_idx] / entry) - 1
-                    exit_reason = "HOLD"
-
-            rows.append({
-                "Date": dates[i],
-                "Kode": kode,
-                "gap_pct": gap_pct,
-                "ret1": ret1[i], "ret3": ret3[i], "ret5": ret5[i],
-                "ret10": ret10[i], "px20": px20[i], "px50": px50[i],
-                "range": rng[i], "vol_z": vz[i], "atr": atr[i],
-                "consec_up": cu[i], "hl5": hl5[i], "pos_52w": p52[i],
-                "trail_cfg": key,
-                "exit_ret": exit_ret * 100 if not np.isnan(exit_ret) else np.nan,
-                "exit_reason": exit_reason,
-            })
-
-    return pd.DataFrame(rows) if rows else None
-
-
-def main():
-    print("="*95)
-    print("WR90 HUNTER — Target WR ≥ 90%, N ≥ 1500")
-    print("="*95)
-
-    df = pd.read_parquet(FIXED_PARQUET)
-    df = df.sort_values(["Kode", "Date"]).reset_index(drop=True)
-    df = df[(df["Close"] >= MIN_PRICE) & (df["Volume"] >= MIN_VOLUME)].reset_index(drop=True)
-    print(f"Data: {len(df):,}")
-
-    print("Proses (20 workers)...")
-    with concurrent.futures.ProcessPoolExecutor(max_workers=20) as ex:
-        futures = [ex.submit(_process, (k, g)) for k, g in df.groupby("Kode")]
-        results = [f.result() for f in concurrent.futures.as_completed(futures)]
-    sig_df = pd.concat([r for r in results if r is not None], ignore_index=True)
-    sig_df = sig_df.dropna(subset=["exit_ret"]).reset_index(drop=True)
-    print(f"Kandidat gap 2-20% × 4 trail configs: {len(sig_df):,}\n")
-
-    # ============================================================
-    # DEFINE BASE RULES (longgar)
-    # ============================================================
-    base_rules = {
-        "A_Orig": (sig_df["ret1"] > 0.15) & (sig_df["ret5"] > 0.15) & (sig_df["px20"] > 0.20),
-        "A_Loose": (sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.10) & (sig_df["px20"] > 0.10),
-        "A_Mid": (sig_df["ret1"] > 0.12) & (sig_df["ret5"] > 0.12) & (sig_df["px20"] > 0.15),
-        "B_Loose": (sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.15) & (sig_df["range"] > 0.08) & (sig_df["vol_z"] > 1.5),
-        "New_C": (sig_df["ret3"] > 0.12) & (sig_df["px20"] > 0.15),
-        "New_C2": (sig_df["ret3"] > 0.10) & (sig_df["px20"] > 0.10),
-        "Union_AC": (
-            ((sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.10) & (sig_df["px20"] > 0.10)) |
-            ((sig_df["ret3"] > 0.12) & (sig_df["px20"] > 0.15))
-        ),
-        "Union_ABC": (
-            ((sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.10) & (sig_df["px20"] > 0.10)) |
-            ((sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.15) & (sig_df["range"] > 0.08) & (sig_df["vol_z"] > 1.5)) |
-            ((sig_df["ret3"] > 0.12) & (sig_df["px20"] > 0.15))
-        ),
-    }
-
-    # ============================================================
-    # GAP FILTERS
-    # ============================================================
-    gap_filters = {
-        "Gap 2-20%": (sig_df["gap_pct"] >= 2) & (sig_df["gap_pct"] <= 20),
-        "Gap 2-10%": (sig_df["gap_pct"] >= 2) & (sig_df["gap_pct"] <= 10),
-        "Gap 2-15%": (sig_df["gap_pct"] >= 2) & (sig_df["gap_pct"] <= 15),
-        "Gap 5-15%": (sig_df["gap_pct"] >= 5) & (sig_df["gap_pct"] <= 15),
-        "Gap 3-20%": (sig_df["gap_pct"] >= 3) & (sig_df["gap_pct"] <= 20),
-    }
-
-    # ============================================================
-    # QUALITY FILTERS
-    # ============================================================
-    quality_filters = {
-        "none": pd.Series(True, index=sig_df.index),
-        "ATR>3%": sig_df["atr"] > 0.03,
-        "ATR>4%": sig_df["atr"] > 0.04,
-        "52w>0.7": sig_df["pos_52w"] > 0.7,
-        "52w>0.8": sig_df["pos_52w"] > 0.8,
-        "HL3": sig_df["hl5"] >= 3,
-        "HL4": sig_df["hl5"] >= 4,
-        "CU3": sig_df["consec_up"] >= 3,
-    }
-
-    # ============================================================
-    # TRAIL CONFIGS
-    # ============================================================
-    trail_configs = ["trail5", "trail7", "trail10", "trail12"]
-
-    # ============================================================
-    # GRID SEARCH
-    # ============================================================
-    print(f"{'='*95}")
-    print(f"GRID SEARCH: {len(base_rules)} base × {len(gap_filters)} gap × {len(quality_filters)} quality × {len(trail_configs)} trail")
-    print(f"Total: {len(base_rules) * len(gap_filters) * len(quality_filters) * len(trail_configs)}")
-    print(f"{'='*95}\n")
-
-    all_results = []
-    for bname, bmask in base_rules.items():
-        for gname, gmask in gap_filters.items():
-            for qname, qmask in quality_filters.items():
-                for tcfg in trail_configs:
-                    mask = bmask.fillna(False) & gmask.fillna(False) & qmask.fillna(False)
-                    sub = sig_df[mask & (sig_df["trail_cfg"] == tcfg)]
-                    n = len(sub)
-                    if n < 100: continue
-                    wr = (sub["exit_ret"] > 0).mean() * 100
-                    avg = sub["exit_ret"].mean()
-                    sl_rate = (sub["exit_reason"] == "SL").mean() * 100
-                    all_results.append({
-                        "Base": bname, "Gap": gname, "Quality": qname, "Trail": tcfg,
-                        "N": n, "WR": wr, "Avg": avg, "SL_rate": sl_rate,
-                    })
-
-    res_df = pd.DataFrame(all_results)
-    print(f"Valid combos: {len(res_df):,}\n")
-
-    # ============================================================
-    # FILTER: WR ≥ 90% AND N ≥ 1500
-    # ============================================================
-    print(f"{'='*95}")
-    print("🎯 TARGET: WR ≥ 90% AND N ≥ 1500")
-    print(f"{'='*95}\n")
-
-    hit_target = res_df[(res_df["WR"] >= 90) & (res_df["N"] >= 1500)].sort_values("WR", ascending=False)
-
-    if len(hit_target) > 0:
-        print(f"✅ FOUND {len(hit_target)} COMBOS!\n")
-        print(f"{'#':<3} {'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%':<8} {'SL%'}")
-        print(f"{'-'*95}")
-        for i, (_, r) in enumerate(hit_target.head(15).iterrows(), 1):
-            m = " 🥇" if i == 1 else (" 🥈" if i == 2 else (" 🥉" if i == 3 else ""))
-            print(f"{i:<3} {r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
-                  f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}  {r['SL_rate']:>4.1f}{m}")
+# ============================================================
+# COPY FUNGSI DARI smart_money.py (untuk testable tanpa streamlit)
+# ============================================================
+def classify_verdict(close_pct, cmf, close_gt_open):
+    """Copy dari smart_money.py — logika klasifikasi kualitas bar."""
+    if pd.isna(close_pct) or pd.isna(cmf):
+        return "—"
+    if not close_gt_open:
+        if close_pct < 0.3 and cmf < 0:
+            return "🔴 DISTRIBUSI"
+        return "🟠 BEARISH"
+    if close_pct >= 0.7 and cmf >= 0.1:
+        return "🟢🟢 AKUMULASI KUAT"
+    elif close_pct >= 0.6 and cmf > 0:
+        return "🟢 AKUMULASI"
+    elif close_pct >= 0.5:
+        return "🟡 CAMPURAN"
+    elif close_pct >= 0.3:
+        return "🟠 BUYER LEMAH"
     else:
-        print("⚠️ Tidak ada yang WR ≥ 90% dengan N ≥ 1500.")
-        print("Coba turunkan ke N ≥ 1200:\n")
-        hit_target = res_df[(res_df["WR"] >= 90) & (res_df["N"] >= 1200)].sort_values("WR", ascending=False)
-        if len(hit_target) > 0:
-            print(f"{'#':<3} {'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%':<8} {'SL%'}")
-            print(f"{'-'*95}")
-            for i, (_, r) in enumerate(hit_target.head(15).iterrows(), 1):
-                print(f"{i:<3} {r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
-                      f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}  {r['SL_rate']:>4.1f}")
-
-    # ============================================================
-    # TOP WR OVERALL (any N ≥ 1000)
-    # ============================================================
-    print(f"\n{'='*95}")
-    print("🏆 TOP 15 WR (N ≥ 1000)")
-    print(f"{'='*95}\n")
-
-    top_wr = res_df[res_df["N"] >= 1000].sort_values("WR", ascending=False).head(15)
-    print(f"{'#':<3} {'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%':<8} {'SL%'}")
-    print(f"{'-'*95}")
-    for i, (_, r) in enumerate(top_wr.iterrows(), 1):
-        m = " 🥇" if i == 1 else (" 🥈" if i == 2 else (" 🥉" if i == 3 else ""))
-        print(f"{i:<3} {r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
-              f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}  {r['SL_rate']:>4.1f}{m}")
-
-    # ============================================================
-    # PARETO (N vs WR) with N ≥ 1000
-    # ============================================================
-    print(f"\n{'='*95}")
-    print("⚖️ PARETO OPTIMAL (N ≥ 1000)")
-    print(f"{'='*95}\n")
-
-    viable = res_df[res_df["N"] >= 1000].copy()
-    viable_sorted = viable.sort_values("N", ascending=False)
-
-    pareto = []
-    for _, r in viable_sorted.iterrows():
-        dominated = False
-        for _, other in viable.iterrows():
-            if other.name == r.name: continue
-            if other["N"] >= r["N"] and other["WR"] >= r["WR"] and (other["N"] > r["N"] or other["WR"] > r["WR"]):
-                dominated = True
-                break
-        if not dominated:
-            pareto.append(r)
-
-    print(f"{'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%'}")
-    print(f"{'-'*80}")
-    for r in sorted(pareto, key=lambda x: x["N"], reverse=True):
-        marker = ""
-        if r["WR"] >= 90 and r["N"] >= 1500:
-            marker = " ⭐ (TARGET HIT)"
-        elif r["WR"] >= 90:
-            marker = " 🟡 (WR ok, N < 1500)"
-        print(f"{r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
-              f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}{marker}")
-
-    # ============================================================
-    # EFEKTIVITAS FILTER
-    # ============================================================
-    print(f"\n{'='*95}")
-    print("📊 EFEKTIVITAS FILTER (dari TOP 30 WR tertinggi, N ≥ 1000)")
-    print(f"{'='*95}\n")
-
-    top30 = res_df[res_df["N"] >= 1000].sort_values("WR", ascending=False).head(30)
-
-    print("Quality filter yang sering muncul:")
-    for q, cnt in top30["Quality"].value_counts().items():
-        print(f"  {q:<10} {cnt}x")
-
-    print("\nGap filter yang sering muncul:")
-    for g, cnt in top30["Gap"].value_counts().items():
-        print(f"  {g:<10} {cnt}x")
-
-    print("\nTrail config yang sering muncul:")
-    for t, cnt in top30["Trail"].value_counts().items():
-        print(f"  {t:<10} {cnt}x")
-
-    print("\nBase rule yang sering muncul:")
-    for b, cnt in top30["Base"].value_counts().items():
-        print(f"  {b:<12} {cnt}x")
+        return "🔴 DISTRIBUSI TERSAMAR"
 
 
+def calc_close_pct(high, low, close):
+    """CLV = (close - low) / (high - low)."""
+    rng = high - low
+    if rng == 0:
+        return np.nan
+    return (close - low) / rng
+
+
+def calc_cmf(df, period=20):
+    """Chaikin Money Flow."""
+    rng = (df["High"] - df["Low"]).replace(0, np.nan)
+    mfm = ((df["Close"] - df["Low"]) - (df["High"] - df["Close"])) / rng
+    mfv = mfm * df["Volume"]
+    cmf = mfv.rolling(period).sum() / df["Volume"].rolling(period).sum()
+    return cmf
+
+
+def calc_mfi(df, period=14):
+    """Money Flow Index."""
+    tp = (df["High"] + df["Low"] + df["Close"]) / 3
+    mf = tp * df["Volume"]
+    pos_mf = mf.where(tp > tp.shift(1), 0)
+    neg_mf = mf.where(tp < tp.shift(1), 0)
+    mfr = pos_mf.rolling(period).sum() / neg_mf.rolling(period).sum()
+    return 100 - (100 / (1 + mfr))
+
+
+def filter_accumulation(df_today, vol_min=2.0, vol_max=50.0,
+                        close_pct_min=0.6, cmf_min=0.0):
+    """Filter akumulasi — sama dengan di smart_money.py."""
+    return df_today[
+        (df_today["Vol_Ratio"] > vol_min) &
+        (df_today["Vol_Ratio"] < vol_max) &
+        (df_today["Close"] > df_today["Open"]) &
+        (df_today["Close_Pct"] > close_pct_min) &
+        (df_today["CMF_20"] > cmf_min) &
+        (df_today["Close"] > 0) &
+        (df_today["Volume"] > 0)
+    ].copy()
+
+
+def filter_distribution(df_today, vol_min=2.0, vol_max=50.0,
+                        close_pct_max=0.3):
+    """Filter distribusi tersamar — sama dengan di smart_money.py."""
+    return df_today[
+        (df_today["Vol_Ratio"] > vol_min) &
+        (df_today["Vol_Ratio"] < vol_max) &
+        (df_today["Close_Pct"] < close_pct_max) &
+        (df_today["Close"] > 0) &
+        (df_today["Volume"] > 0)
+    ].copy()
+
+
+# ============================================================
+# TEST 1: CLV CALCULATION
+# ============================================================
+class TestCLV(unittest.TestCase):
+    """Test Close Location Value."""
+
+    def test_close_at_high(self):
+        """Close = high → CLV = 1.0 (buyer dominan penuh)."""
+        self.assertAlmostEqual(calc_close_pct(120, 100, 120), 1.0)
+
+    def test_close_at_low(self):
+        """Close = low → CLV = 0.0 (seller dominan penuh)."""
+        self.assertAlmostEqual(calc_close_pct(120, 100, 100), 0.0)
+
+    def test_close_at_mid(self):
+        """Close = midpoint → CLV = 0.5."""
+        self.assertAlmostEqual(calc_close_pct(120, 100, 110), 0.5)
+
+    def test_close_at_70pct(self):
+        """Close di 70% range → CLV = 0.7 (batas akumulasi kuat)."""
+        self.assertAlmostEqual(calc_close_pct(120, 100, 114), 0.7)
+
+    def test_close_at_30pct(self):
+        """Close di 30% range → CLV = 0.3 (batas buyer lemah)."""
+        self.assertAlmostEqual(calc_close_pct(120, 100, 106), 0.3)
+
+    def test_zero_range(self):
+        """High = low (doji sempurna) → NaN (hindari div by zero)."""
+        self.assertTrue(pd.isna(calc_close_pct(100, 100, 100)))
+
+
+# ============================================================
+# TEST 2: VERDICT CLASSIFICATION
+# ============================================================
+class TestClassifyVerdict(unittest.TestCase):
+    """Test klasifikasi verdict berdasarkan CLV + CMF + candle."""
+
+    # --- Kasus BULLISH (close > open) ---
+    def test_strong_accumulation(self):
+        """CLV 80% + CMF 0.15 + bullish → AKUMULASI KUAT."""
+        self.assertEqual(
+            classify_verdict(0.80, 0.15, True),
+            "🟢🟢 AKUMULASI KUAT"
+        )
+
+    def test_accumulation(self):
+        """CLV 65% + CMF 0.05 + bullish → AKUMULASI."""
+        self.assertEqual(
+            classify_verdict(0.65, 0.05, True),
+            "🟢 AKUMULASI"
+        )
+
+    def test_mixed(self):
+        """CLV 55% + CMF 0.02 + bullish → CAMPURAN."""
+        self.assertEqual(
+            classify_verdict(0.55, 0.02, True),
+            "🟡 CAMPURAN"
+        )
+
+    def test_weak_buyer(self):
+        """CLV 40% + CMF 0.01 + bullish → BUYER LEMAH."""
+        self.assertEqual(
+            classify_verdict(0.40, 0.01, True),
+            "🟠 BUYER LEMAH"
+        )
+
+    def test_hidden_distribution(self):
+        """Candle hijau tapi CLV 20% + CMF -0.05 → DISTRIBUSI TERSAMAR."""
+        self.assertEqual(
+            classify_verdict(0.20, -0.05, True),
+            "🔴 DISTRIBUSI TERSAMAR"
+        )
+
+    # --- Kasus BEARISH (close < open) ---
+    def test_distribution_bearish(self):
+        """Candle merah + CLV 20% + CMF -0.05 → DISTRIBUSI."""
+        self.assertEqual(
+            classify_verdict(0.20, -0.05, False),
+            "🔴 DISTRIBUSI"
+        )
+
+    def test_bearish_but_not_distribution(self):
+        """Candle merah tapi CLV 40% + CMF positif → BEARISH (bukan distribusi)."""
+        self.assertEqual(
+            classify_verdict(0.40, 0.02, False),
+            "🟠 BEARISH"
+        )
+
+    # --- Edge case ---
+    def test_nan_input(self):
+        """NaN input → '—'."""
+        self.assertEqual(classify_verdict(np.nan, 0.1, True), "—")
+        self.assertEqual(classify_verdict(0.8, np.nan, True), "—")
+
+    def test_boundary_70_0_1(self):
+        """CLV = 0.7 tepat + CMF = 0.1 tepat → AKUMULASI KUAT (batas inklusif)."""
+        self.assertEqual(
+            classify_verdict(0.7, 0.1, True),
+            "🟢🟢 AKUMULASI KUAT"
+        )
+
+
+# ============================================================
+# TEST 3: CMF CALCULATION
+# ============================================================
+class TestCMF(unittest.TestCase):
+    """Test Chaikin Money Flow."""
+
+    def test_cmf_all_buying(self):
+        """Semua hari close di HIGH → CMF = 1.0 (buying penuh)."""
+        df = pd.DataFrame({
+            "High": [110] * 25,
+            "Low": [100] * 25,
+            "Close": [110] * 25,  # close = high
+            "Volume": [1000] * 25,
+        })
+        cmf = calc_cmf(df, 20)
+        self.assertAlmostEqual(cmf.iloc[-1], 1.0, places=4)
+
+    def test_cmf_all_selling(self):
+        """Semua hari close di LOW → CMF = -1.0 (selling penuh)."""
+        df = pd.DataFrame({
+            "High": [110] * 25,
+            "Low": [100] * 25,
+            "Close": [100] * 25,  # close = low
+            "Volume": [1000] * 25,
+        })
+        cmf = calc_cmf(df, 20)
+        self.assertAlmostEqual(cmf.iloc[-1], -1.0, places=4)
+
+    def test_cmf_neutral(self):
+        """Close di midpoint → CMF = 0 (neutral)."""
+        df = pd.DataFrame({
+            "High": [110] * 25,
+            "Low": [100] * 25,
+            "Close": [105] * 25,  # midpoint
+            "Volume": [1000] * 25,
+        })
+        cmf = calc_cmf(df, 20)
+        self.assertAlmostEqual(cmf.iloc[-1], 0.0, places=4)
+
+    def test_cmf_zero_range_handled(self):
+        """High = low (doji) → NaN tidak crash, CMF tetap bisa dihitung."""
+        df = pd.DataFrame({
+            "High": [110, 110, 100, 110] * 10,
+            "Low": [100, 100, 100, 100] * 10,  # baris 3 doji
+            "Close": [110, 105, 100, 110] * 10,
+            "Volume": [1000] * 40,
+        })
+        cmf = calc_cmf(df, 20)
+        self.assertFalse(cmf.iloc[-1] is None)
+
+
+# ============================================================
+# TEST 4: MFI CALCULATION
+# ============================================================
+class TestMFI(unittest.TestCase):
+    """Test Money Flow Index."""
+
+    def test_mfi_all_up(self):
+        """Harga terus naik → MFI = 100 (overbought ekstrem)."""
+        n = 20
+        df = pd.DataFrame({
+            "High": np.arange(100, 100 + n),
+            "Low": np.arange(99, 99 + n),
+            "Close": np.arange(100, 100 + n),
+            "Volume": [1000] * n,
+        })
+        mfi = calc_mfi(df, 14)
+        self.assertAlmostEqual(mfi.iloc[-1], 100.0, places=2)
+
+    def test_mfi_all_down(self):
+        """Harga terus turun → MFI = 0 (oversold ekstrem)."""
+        n = 20
+        df = pd.DataFrame({
+            "High": np.arange(120, 120 - n, -1),
+            "Low": np.arange(119, 119 - n, -1),
+            "Close": np.arange(119, 119 - n, -1),
+            "Volume": [1000] * n,
+        })
+        mfi = calc_mfi(df, 14)
+        self.assertAlmostEqual(mfi.iloc[-1], 0.0, places=2)
+
+
+# ============================================================
+# TEST 5: FILTER AKUMULASI (INTEGRASI)
+# ============================================================
+class TestAccumulationFilter(unittest.TestCase):
+    """Test filter akumulasi pada df_today sintetis."""
+
+    def _make_today(self, rows):
+        """Helper: bikin df_today dari list of dict."""
+        return pd.DataFrame(rows)
+
+    def test_strong_accumulation_passes(self):
+        """Saham dengan semua syarat akumulasi → lolos filter."""
+        df = self._make_today([{
+            "Kode": "BBCA",
+            "Open": 9000, "High": 9200, "Low": 9000, "Close": 9150,
+            "Volume": 5_000_000,
+            "Vol_Ratio": 2.5,
+            "Close_Pct": 0.75,  # close 75% range
+            "CMF_20": 0.15,
+        }])
+        result = filter_accumulation(df)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result.iloc[0]["Kode"], "BBCA")
+
+    def test_hidden_distribution_rejected(self):
+        """Volume spike + candle hijau TAPI close di low → ditolak."""
+        df = self._make_today([{
+            "Kode": "TRAP",
+            "Open": 100, "High": 130, "Low": 99, "Close": 105,  # hijau tapi dekat low
+            "Volume": 10_000_000,
+            "Vol_Ratio": 5.0,
+            "Close_Pct": 0.19,  # close 19% range
+            "CMF_20": -0.10,
+        }])
+        result = filter_accumulation(df)
+        self.assertEqual(len(result), 0, "Distribusi tersamar harus ditolak")
+
+    def test_low_volume_rejected(self):
+        """Close bagus tapi volume normal → ditolak."""
+        df = self._make_today([{
+            "Kode": "QUIET",
+            "Open": 100, "High": 105, "Low": 99, "Close": 104,
+            "Volume": 1_000_000,
+            "Vol_Ratio": 1.2,  # di bawah 2x
+            "Close_Pct": 0.83,
+            "CMF_20": 0.10,
+        }])
+        result = filter_accumulation(df)
+        self.assertEqual(len(result), 0)
+
+    def test_negative_cmf_rejected(self):
+        """Close bagus tapi CMF negatif (20 hari distribusi) → ditolak."""
+        df = self._make_today([{
+            "Kode": "WEAK",
+            "Open": 100, "High": 110, "Low": 100, "Close": 108,
+            "Volume": 5_000_000,
+            "Vol_Ratio": 3.0,
+            "Close_Pct": 0.80,
+            "CMF_20": -0.05,  # negatif!
+        }])
+        result = filter_accumulation(df)
+        self.assertEqual(len(result), 0)
+
+    def test_red_candle_rejected(self):
+        """Volume besar tapi close < open → ditolak."""
+        df = self._make_today([{
+            "Kode": "RED",
+            "Open": 110, "High": 115, "Low": 100, "Close": 105,  # merah
+            "Volume": 5_000_000,
+            "Vol_Ratio": 3.0,
+            "Close_Pct": 0.33,  # di bawah 60%
+            "CMF_20": 0.05,
+        }])
+        result = filter_accumulation(df)
+        self.assertEqual(len(result), 0)
+
+    def test_outlier_volume_rejected(self):
+        """Volume ratio >50x (mungkin data error) → ditolak."""
+        df = self._make_today([{
+            "Kode": "OUTLIER",
+            "Open": 100, "High": 110, "Low": 100, "Close": 109,
+            "Volume": 100_000_000,
+            "Vol_Ratio": 80.0,  # di atas 50x → outlier
+            "Close_Pct": 0.90,
+            "CMF_20": 0.15,
+        }])
+        result = filter_accumulation(df)
+        self.assertEqual(len(result), 0)
+
+    def test_mixed_batch(self):
+        """Batch dengan 3 saham: 1 akumulasi asli + 1 distribusi + 1 normal."""
+        df = self._make_today([
+            {  # akumulasi asli
+                "Kode": "GOOD", "Open": 100, "High": 110, "Low": 100,
+                "Close": 108, "Volume": 5_000_000, "Vol_Ratio": 3.0,
+                "Close_Pct": 0.80, "CMF_20": 0.15,
+            },
+            {  # distribusi tersamar
+                "Kode": "TRAP", "Open": 100, "High": 130, "Low": 99,
+                "Close": 105, "Volume": 8_000_000, "Vol_Ratio": 4.5,
+                "Close_Pct": 0.20, "CMF_20": -0.10,
+            },
+            {  # normal (volume rata)
+                "Kode": "NORMAL", "Open": 100, "High": 102, "Low": 99,
+                "Close": 101, "Volume": 1_000_000, "Vol_Ratio": 1.0,
+                "Close_Pct": 0.67, "CMF_20": 0.02,
+            },
+        ])
+        result = filter_accumulation(df)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result.iloc[0]["Kode"], "GOOD")
+
+
+# ============================================================
+# TEST 6: FILTER DISTRIBUSI (INTEGRASI)
+# ============================================================
+class TestDistributionFilter(unittest.TestCase):
+    """Test filter distribusi tersamar."""
+
+    def test_hidden_distribution_caught(self):
+        """Candle hijau + volume besar + close rendah → tertangkap."""
+        df = pd.DataFrame([{
+            "Kode": "TRAP",
+            "Open": 100, "High": 130, "Low": 99, "Close": 105,
+            "Volume": 10_000_000,
+            "Vol_Ratio": 5.0,
+            "Close_Pct": 0.19,
+            "CMF_20": -0.10,
+        }])
+        result = filter_distribution(df)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result.iloc[0]["Kode"], "TRAP")
+
+    def test_strong_close_not_distribution(self):
+        """Close di 80% range bukan distribusi."""
+        df = pd.DataFrame([{
+            "Kode": "GOOD",
+            "Open": 100, "High": 110, "Low": 100, "Close": 108,
+            "Volume": 5_000_000,
+            "Vol_Ratio": 3.0,
+            "Close_Pct": 0.80,
+            "CMF_20": 0.10,
+        }])
+        result = filter_distribution(df)
+        self.assertEqual(len(result), 0)
+
+    def test_no_volume_spike_not_caught(self):
+        """Close rendah tapi volume normal → bukan distribusi (cuma red day biasa)."""
+        df = pd.DataFrame([{
+            "Kode": "WEAK",
+            "Open": 100, "High": 102, "Low": 95, "Close": 96,
+            "Volume": 500_000,
+            "Vol_Ratio": 0.8,  # bukan spike
+            "Close_Pct": 0.14,
+            "CMF_20": -0.02,
+        }])
+        result = filter_distribution(df)
+        self.assertEqual(len(result), 0)
+
+
+# ============================================================
+# TEST 7: INTEGRASI — END-TO-END SAMPLE
+# ============================================================
+class TestEndToEnd(unittest.TestCase):
+    """Simulasi satu hari penuh: hitung CMF/CLV lalu filter."""
+
+    def test_full_pipeline(self):
+        """Bangun 30 bar OHLCV untuk 2 saham, hitung, filter, cek hasil."""
+        np.random.seed(42)
+
+        # Saham A: akumulasi asli (uptrend + close di atas)
+        n = 30
+        a_prices = np.cumsum(np.random.randn(n) * 0.5) + 100
+        a_df = pd.DataFrame({
+            "High": a_prices + 2,
+            "Low": a_prices - 2,
+            "Close": a_prices + 1.5,  # close dekat high
+            "Open": a_prices - 1,
+            "Volume": [1_000_000] * (n - 1) + [5_000_000],
+        })
+
+        # Saham B: distribusi (uptrend tapi hari terakhir close di low)
+        b_prices = np.cumsum(np.random.randn(n) * 0.5) + 100
+        b_df = pd.DataFrame({
+            "High": b_prices + 2,
+            "Low": b_prices - 2,
+            "Close": b_prices - 1.5,  # close dekat low
+            "Open": b_prices + 1,
+            "Volume": [1_000_000] * (n - 1) + [8_000_000],
+        })
+
+        for name, df in [("A", a_df), ("B", b_df)]:
+            df["CMF_20"] = calc_cmf(df, 20)
+            df["Close_Pct"] = (df["Close"] - df["Low"]) / (df["High"] - df["Low"])
+            df["Vol_Ratio"] = df["Volume"] / df["Volume"].rolling(20).mean()
+
+        # Hari terakhir saja
+        today = pd.DataFrame([
+            {
+                "Kode": "ACCUM",
+                **a_df.iloc[-1][["Open", "High", "Low", "Close", "Volume",
+                                 "Vol_Ratio", "Close_Pct", "CMF_20"]].to_dict(),
+            },
+            {
+                "Kode": "DIST",
+                **b_df.iloc[-1][["Open", "High", "Low", "Close", "Volume",
+                                 "Vol_Ratio", "Close_Pct", "CMF_20"]].to_dict(),
+            },
+        ])
+
+        # Filter
+        accum = filter_accumulation(today)
+        dist = filter_distribution(today)
+
+        # Saham A harus muncul di akumulasi
+        self.assertIn("ACCUM", accum["Kode"].values,
+                      f"ACCUM tidak lolos filter akumulasi. "
+                      f"CLV={a_df.iloc[-1]['Close_Pct']:.2f}, "
+                      f"CMF={a_df.iloc[-1]['CMF_20']:.3f}")
+
+        # Saham B harus muncul di distribusi
+        self.assertIn("DIST", dist["Kode"].values,
+                      f"DIST tidak muncul di filter distribusi. "
+                      f"CLV={b_df.iloc[-1]['Close_Pct']:.2f}")
+
+
+# ============================================================
+# RUNNER
+# ============================================================
 if __name__ == "__main__":
-    main()
+    print("=" * 70)
+    print("TEST SUITE: views/smart_money.py")
+    print("=" * 70)
+    print()
+
+    # Jalankan semua test
+    loader = unittest.TestLoader()
+    suite = loader.loadTestsFromModule(sys.modules[__name__])
+
+    runner = unittest.TextTestRunner(verbosity=2)
+    result = runner.run(suite)
+
+    # Summary
+    print()
+    print("=" * 70)
+    if result.wasSuccessful():
+        print(f"✅ SEMUA TEST LULUS ({result.testsRun} test)")
+    else:
+        print(f"❌ ADA {len(result.failures) + len(result.errors)} TEST GAGAL")
+        print(f"   Lulus: {result.testsRun - len(result.failures) - len(result.errors)}/{result.testsRun}")
+    print("=" * 70)
+
+    sys.exit(0 if result.wasSuccessful() else 1)

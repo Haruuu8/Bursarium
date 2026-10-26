@@ -87,11 +87,12 @@ def compute_all_indicators():
     # % change dari close sebelumnya
     d["Pct_Change"] = d.groupby("Kode")["Close"].pct_change() * 100
 
-    # Close position dalam range (0 = low, 1 = high)
+    # Close position dalam range (CLV / Close Location Value)
+    # 0 = close di low (seller dominan), 1 = close di high (buyer dominan)
     rng = (d["High"] - d["Low"]).replace(0, np.nan)
     d["Close_Pct"] = (d["Close"] - d["Low"]) / rng
 
-    # CMF (20)
+    # CMF (20) — Chaikin Money Flow
     d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng
     d["MFV"] = d["MFM"] * d["Volume"]
     d["CMF_20"] = d.groupby("Kode")["MFV"].transform(
@@ -100,7 +101,35 @@ def compute_all_indicators():
         lambda x: x.rolling(20, min_periods=10).sum()
     )
 
+    # Konsistensi akumulasi: hitung berapa kali volume spike dalam 20 hari
+    d["Spike_Flag"] = (d["Vol_Ratio"] > 1.5).astype(int)
+    d["Spike_Count_20"] = d.groupby("Kode")["Spike_Flag"].transform(
+        lambda x: x.rolling(20, min_periods=5).sum()
+    )
+
     return d
+
+
+def classify_verdict(close_pct, cmf, close_gt_open):
+    """Klasifikasi kualitas bar berdasarkan CLV + CMF + candle direction."""
+    if pd.isna(close_pct) or pd.isna(cmf):
+        return "—"
+    if not close_gt_open:
+        # Candle merah
+        if close_pct < 0.3 and cmf < 0:
+            return "🔴 DISTRIBUSI"
+        return "🟠 BEARISH"
+    # Candle hijau
+    if close_pct >= 0.7 and cmf >= 0.1:
+        return "🟢🟢 AKUMULASI KUAT"
+    elif close_pct >= 0.6 and cmf > 0:
+        return "🟢 AKUMULASI"
+    elif close_pct >= 0.5:
+        return "🟡 CAMPURAN"
+    elif close_pct >= 0.3:
+        return "🟠 BUYER LEMAH"
+    else:
+        return "🔴 DISTRIBUSI TERSAMAR"
 
 
 # ============================================================
@@ -200,72 +229,220 @@ fig2.update_layout(
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
 # ============================================================
-# TABEL: VOLUME MELEDAK NAIK (hanya harga naik)
+# SCAN: VOLUME SPIKE HARI INI — AKUMULASI vs DISTRIBUSI
 # ============================================================
-st.markdown(
-    section_title("Saham dengan Volume Meledak + Harga Naik",
-                  "Volume > 2x MA20 dan Close > Open (bullish)"),
-    unsafe_allow_html=True
-)
-
-with st.spinner("Scanning volume spike bullish..."):
+with st.spinner("Scanning volume spike hari ini..."):
     df_ind = compute_all_indicators()
 
 if df_ind is None or df_ind.empty:
     st.info("Data tidak tersedia untuk analisa volume spike.")
+    st.stop()
+
+last_date = df_ind["Date"].max()
+df_today = df_ind[df_ind["Date"] == last_date].copy()
+
+# --- Info box: apa yang dicari ---
+st.markdown(
+    '<div style="background:linear-gradient(135deg, rgba(6,182,212,0.08), rgba(16,185,129,0.05)); '
+    'border:1px solid rgba(6,182,212,0.25); border-left:4px solid #06b6d4; '
+    'border-radius:10px; padding:14px 20px; margin:24px 0 20px; '
+    'font-size:12px; color:#cbd5e1; line-height:1.7;">'
+    '<b style="color:#06b6d4;">📌 CIRI AKUMULASI ASLI:</b><br>'
+    '✓ Volume spike >2× MA20 <b>DAN</b> close di atas open (candle hijau)<br>'
+    '✓ Close di <b>60%+ range</b> hari itu (CLV) — buyer dominan sampai tutup<br>'
+    '✓ CMF(20) <b>positif</b> — tekanan beli konsisten 20 hari<br>'
+    '🚨 <b>Distribusi tersamar:</b> candle hijau + volume besar, '
+    'tapi close &lt;30% range = big player jual di puncak, retail kejebak.'
+    '</div>', unsafe_allow_html=True
+)
+
+# ============================================================
+# SECTION 1: AKUMULASI KUAT (STRICT FILTER)
+# ============================================================
+st.markdown(
+    section_title("🟢 Akumulasi Kuat — Volume Meledak + Buyer Dominan",
+                  "Vol >2× MA20 · Close > Open · Close% >60% · CMF >0"),
+    unsafe_allow_html=True
+)
+
+df_accum = df_today[
+    (df_today["Vol_Ratio"] > 2) &
+    (df_today["Vol_Ratio"] < 50) &
+    (df_today["Close"] > df_today["Open"]) &
+    (df_today["Close_Pct"] > 0.6) &
+    (df_today["CMF_20"] > 0) &
+    (df_today["Close"] > 0) &
+    (df_today["Volume"] > 0)
+].copy()
+
+if df_accum.empty:
+    st.info("Tidak ada saham dengan akumulasi asli hari ini. "
+            "(Volume spike + close di atas + buyer dominan + CMF positif)")
 else:
-    last_date = df_ind["Date"].max()
-    df_today = df_ind[df_ind["Date"] == last_date].copy()
+    df_accum = df_accum.sort_values("Vol_Ratio", ascending=False)
 
-    # FILTER: volume meledak NAIK saja
-    df_spike = df_today[
-        (df_today["Vol_Ratio"] > 2) &           # volume minimal 2x MA20
-        (df_today["Vol_Ratio"] < 50) &          # buang outlier aneh
-        (df_today["Close"] > df_today["Open"]) & # candle bullish
-        (df_today["Close"] > 0) &
-        (df_today["Volume"] > 0)
-    ].copy()
+    st.markdown(
+        f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
+        f'border:1px solid #1a2338; border-radius:10px; '
+        f'padding:12px 18px; margin-bottom:16px; '
+        f'display:flex; gap:20px; flex-wrap:wrap; font-size:12px;">'
+        f'<span style="color:#7d8ba3;">Saham akumulasi: '
+        f'<b style="color:#10b981;">{len(df_accum)}</b></span>'
+        f'<span style="color:#7d8ba3;">Tanggal: '
+        f'<b style="color:#ffffff;">{last_date.strftime("%d %b %Y")}</b></span>'
+        f'</div>',
+        unsafe_allow_html=True
+    )
 
-    # Optional: close dekat high (buyer dominan)
-    # Kalau mau lebih ketat, uncomment baris berikut:
-    # df_spike = df_spike[df_spike["Close_Pct"] > 0.5]
+    df_show = df_accum.head(30).reset_index(drop=True).copy()
 
-    if df_spike.empty:
-        st.info("Tidak ada saham dengan volume meledak + harga naik hari ini.")
-    else:
-        df_spike = df_spike.sort_values("Vol_Ratio", ascending=False)
+    # Verdict per baris
+    df_show["Verdict"] = df_show.apply(
+        lambda r: classify_verdict(r["Close_Pct"], r["CMF_20"], True),
+        axis=1
+    )
 
-        st.markdown(
-            f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-            f'border:1px solid #1a2338; border-radius:10px; '
-            f'padding:12px 18px; margin-bottom:16px; '
-            f'display:flex; gap:20px; flex-wrap:wrap; font-size:12px;">'
-            f'<span style="color:#7d8ba3;">Saham bullish spike: '
-            f'<b style="color:#10b981;">{len(df_spike)}</b></span>'
-            f'<span style="color:#7d8ba3;">Tanggal: '
-            f'<b style="color:#ffffff;">{last_date.strftime("%d %b %Y")}</b></span>'
-            f'</div>',
-            unsafe_allow_html=True
-        )
+    # Format angka
+    df_show["Close"] = df_show["Close"].round(0)
+    df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
+    df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
+    df_show["CMF_20"] = df_show["CMF_20"].round(3)
+    df_show["Close_Pct"] = (df_show["Close_Pct"] * 100).round(0)
+    df_show["Spike_Count_20"] = df_show["Spike_Count_20"].fillna(0).astype(int)
 
-        # Format tabel
-        cols_show = ["Kode", "Close", "Pct_Change", "Vol_Ratio", "CMF_20", "Close_Pct"]
-        cols_existing = [c for c in cols_show if c in df_spike.columns]
-        df_show = df_spike[cols_existing].head(30).reset_index(drop=True).copy()
+    df_show = df_show[[
+        "Kode", "Close", "Pct_Change", "Vol_Ratio",
+        "Close_Pct", "CMF_20", "Spike_Count_20", "Verdict"
+    ]].rename(columns={
+        "Close": "Harga",
+        "Pct_Change": "Chg %",
+        "Vol_Ratio": "Vol Ratio",
+        "Close_Pct": "Close %",
+        "CMF_20": "CMF (20)",
+        "Spike_Count_20": "Spike 20d",
+    })
 
-        df_show["Close"] = df_show["Close"].round(0)
-        df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
-        df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
-        df_show["CMF_20"] = df_show["CMF_20"].round(3)
-        df_show["Close_Pct"] = (df_show["Close_Pct"] * 100).round(0)
+    st.dataframe(
+        df_show,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "Harga": st.column_config.NumberColumn(format="%.0f"),
+            "Chg %": st.column_config.NumberColumn(format="%+.2f%%"),
+            "Vol Ratio": st.column_config.NumberColumn(format="%.2fx"),
+            "Close %": st.column_config.ProgressColumn(
+                "Close % (CLV)",
+                help="0% = close di low, 100% = close di high. >60% = buyer dominan.",
+                min_value=0, max_value=100, format="%d%%",
+            ),
+            "CMF (20)": st.column_config.NumberColumn(format="%+.3f"),
+            "Spike 20d": st.column_config.NumberColumn(
+                help="Jumlah spike volume >1.5× MA20 dalam 20 hari terakhir. "
+                     "Lebih tinggi = akumulasi lebih konsisten.",
+            ),
+        },
+    )
 
-        df_show.columns = ["Kode", "Harga", "Chg %", "Vol Ratio", "CMF (20)", "Close%"]
+    st.caption(
+        "**Verdict** = klasifikasi berdasarkan **CLV** (Close%) dan **CMF**: "
+        "🟢🟢 = akumulasi kuat (CLV>70% + CMF>0.1), "
+        "🟢 = akumulasi (CLV>60% + CMF>0), "
+        "🟡 = campuran. "
+        "**Spike 20d** = berapa kali volume spike >1.5× dalam 20 hari — "
+        "angka tinggi = akumulasi multi-hari, bukan one-off."
+    )
 
-        st.dataframe(df_show, use_container_width=True, hide_index=True)
+# ============================================================
+# SECTION 2: PERINGATAN DISTRIBUSI TERSAMAR
+# ============================================================
+st.markdown(
+    section_title("🔴 Distribusi Tersamar — Volume Meledak, Close Lemah",
+                  "Vol >2× MA20 tapi close <30% range → big player jual di puncak"),
+    unsafe_allow_html=True
+)
 
-        st.caption(
-            "**Close%** = posisi close dalam range hari itu "
-            "(0% = di low, 100% = di high). "
-            "Semakin tinggi, semakin menunjukkan buyer dominan. "
-            "Vol Ratio = Volume / rata-rata 20 hari."
-        )
+df_dist = df_today[
+    (df_today["Vol_Ratio"] > 2) &
+    (df_today["Vol_Ratio"] < 50) &
+    (df_today["Close_Pct"] < 0.3) &     # close di bottom 30% range
+    (df_today["Close"] > 0) &
+    (df_today["Volume"] > 0)
+].copy()
+
+if df_dist.empty:
+    st.markdown(
+        '<div style="background:rgba(16,185,129,0.06); '
+        'border:1px solid rgba(16,185,129,0.25); '
+        'border-radius:10px; padding:14px 20px; '
+        'font-size:12px; color:#cbd5e1;">'
+        '✅ Tidak ada saham dengan pola distribusi tersamar hari ini. '
+        'Market sehat — tidak ada big player yang jual di puncak dengan volume besar.'
+        '</div>',
+        unsafe_allow_html=True
+    )
+else:
+    df_dist = df_dist.sort_values("Vol_Ratio", ascending=False)
+
+    st.markdown(
+        f'<div style="background:rgba(244,63,94,0.08); '
+        f'border:1px solid rgba(244,63,94,0.3); '
+        f'border-left:4px solid #f43f5e; border-radius:10px; '
+        f'padding:12px 18px; margin-bottom:16px; '
+        f'display:flex; gap:20px; flex-wrap:wrap; font-size:12px;">'
+        f'<span style="color:#cbd5e1;">⚠️ Saham distribusi: '
+        f'<b style="color:#f43f5e;">{len(df_dist)}</b></span>'
+        f'<span style="color:#cbd5e1;">Tanggal: '
+        f'<b style="color:#ffffff;">{last_date.strftime("%d %b %Y")}</b></span>'
+        f'</div>',
+        unsafe_allow_html=True
+    )
+
+    df_show_d = df_dist.head(15).reset_index(drop=True).copy()
+
+    # Verdict
+    df_show_d["Verdict"] = df_show_d.apply(
+        lambda r: classify_verdict(r["Close_Pct"], r["CMF_20"],
+                                    r["Close"] > r["Open"]),
+        axis=1
+    )
+
+    df_show_d["Close"] = df_show_d["Close"].round(0)
+    df_show_d["Pct_Change"] = df_show_d["Pct_Change"].round(2)
+    df_show_d["Vol_Ratio"] = df_show_d["Vol_Ratio"].round(2)
+    df_show_d["CMF_20"] = df_show_d["CMF_20"].round(3)
+    df_show_d["Close_Pct"] = (df_show_d["Close_Pct"] * 100).round(0)
+
+    df_show_d = df_show_d[[
+        "Kode", "Close", "Pct_Change", "Vol_Ratio",
+        "Close_Pct", "CMF_20", "Verdict"
+    ]].rename(columns={
+        "Close": "Harga",
+        "Pct_Change": "Chg %",
+        "Vol_Ratio": "Vol Ratio",
+        "Close_Pct": "Close %",
+        "CMF_20": "CMF (20)",
+    })
+
+    st.dataframe(
+        df_show_d,
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "Harga": st.column_config.NumberColumn(format="%.0f"),
+            "Chg %": st.column_config.NumberColumn(format="%+.2f%%"),
+            "Vol Ratio": st.column_config.NumberColumn(format="%.2fx"),
+            "Close %": st.column_config.ProgressColumn(
+                "Close % (CLV)",
+                help="0% = close di low, 100% = close di high. <30% = distribusi.",
+                min_value=0, max_value=100, format="%d%%",
+            ),
+            "CMF (20)": st.column_config.NumberColumn(format="%+.3f"),
+        },
+    )
+
+    st.caption(
+        "🚨 **HINDARI** saham di tabel ini. Volume besar tapi close di bawah "
+        "range = big player jual ke retail. Candle mungkin hijau, tapi "
+        "top-heavy — harga gagal ditahan di atas. "
+        "Cek besok: kalau gap down atau follow-through lemah, konfirmasi distribusi."
+    )

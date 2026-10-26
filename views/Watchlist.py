@@ -240,55 +240,98 @@ def analyze_setup_signals(kode, harga):
 
 
 # ============================================================
-# CARD: HAKA PAGI (v3 — ATR + match warna)
+# CARD: HAKA PAGI — Enhanced (baca semua output screen.py)
 # ============================================================
-def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None):
+_CLASS_STYLE = {
+    "ELITE":   ("rgba(168,85,247,0.18)",  "#c4b5fd", "rgba(168,85,247,0.45)"),
+    "KUAT":    ("rgba(16,185,129,0.18)",  "#6ee7b7", "rgba(16,185,129,0.45)"),
+    "SEDANG":  ("rgba(245,158,11,0.15)",  "#fbbf24", "rgba(245,158,11,0.35)"),
+    "LEMAH":   ("rgba(148,163,184,0.15)", "#cbd5e1", "rgba(148,163,184,0.35)"),
+    "HINDARI": ("rgba(244,63,94,0.15)",   "#fda4af", "rgba(244,63,94,0.35)"),
+}
+
+
+def wl_row(kode, nama, harga, chg_pct, rating=0, match="-", atr_pct=None,
+           cls="", ret5d=None, vol_z=None, value_m=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    if chg_pct > 0: chg_color, chg_sign = "#10b981", "+"
-    elif chg_pct < 0: chg_color, chg_sign = "#f43f5e", ""
-    else: chg_color, chg_sign = "#94a3b8", ""
+    if chg_pct > 0:
+        chg_color, chg_sign = "#10b981", "+"
+    elif chg_pct < 0:
+        chg_color, chg_sign = "#f43f5e", ""
+    else:
+        chg_color, chg_sign = "#94a3b8", ""
+
+    def badge(text, bg, color, border, bold=True):
+        w = "800" if bold else "600"
+        return (
+            f'<span style="display:inline-block; font-size:11px; '
+            f'font-weight:{w}; padding:4px 10px; border-radius:6px; '
+            f'letter-spacing:0.3px; margin-right:6px; margin-bottom:4px; '
+            f'background:{bg}; color:{color}; '
+            f'border:1px solid {border};">{text}</span>'
+        )
 
     badges = ""
+
+    # 1) Class (ELITE/KUAT/SEDANG/LEMAH/HINDARI) — dari screen.py
+    if cls:
+        bg, col, brd = _CLASS_STYLE.get(cls.upper(), _CLASS_STYLE["LEMAH"])
+        badges += badge(f"◈ {cls.upper()}", bg, col, brd)
+
+    # 2) Rating
     if rating and rating > 0:
-        badges += (
-            '<span style="display:inline-flex; align-items:center; '
-            'font-size:11px; font-weight:800; padding:4px 10px; '
-            'border-radius:6px; letter-spacing:0.3px; margin-right:6px; '
-            'background:rgba(99,102,241,0.15); color:#a5b4fc; '
-            'border:1px solid rgba(99,102,241,0.35);">'
-            f'★ {rating:.0f}</span>'
+        badges += badge(
+            f"★ {rating:.0f}",
+            "rgba(99,102,241,0.15)", "#a5b4fc",
+            "rgba(99,102,241,0.35)",
         )
+
+    # 3) Match (A / B / C / AB / ABC)
     if match and match != "-":
-        # Warna berbeda untuk ABC (terkuat), AB/AC, dan single
         if len(match) >= 3:
-            bg = "rgba(16,185,129,0.18)"
-            col = "#6ee7b7"
-            border = "rgba(16,185,129,0.45)"
+            bg, col, brd = ("rgba(16,185,129,0.18)", "#6ee7b7",
+                            "rgba(16,185,129,0.45)")
         elif len(match) == 2:
-            bg = "rgba(168,85,247,0.15)"
-            col = "#c4b5fd"
-            border = "rgba(168,85,247,0.35)"
+            bg, col, brd = ("rgba(168,85,247,0.15)", "#c4b5fd",
+                            "rgba(168,85,247,0.35)")
         else:
-            bg = "rgba(99,102,241,0.12)"
-            col = "#a5b4fc"
-            border = "rgba(99,102,241,0.30)"
-        badges += (
-            '<span style="display:inline-block; '
-            'font-size:11px; font-weight:800; padding:4px 10px; '
-            'border-radius:6px; letter-spacing:0.3px; margin-right:6px; '
-            f'background:{bg}; color:{col}; '
-            f'border:1px solid {border};">'
-            f'{match}</span>'
-        )
+            bg, col, brd = ("rgba(99,102,241,0.12)", "#a5b4fc",
+                            "rgba(99,102,241,0.30)")
+        badges += badge(match, bg, col, brd)
+
+    # 4) ATR
     if atr_pct is not None and not pd.isna(atr_pct) and atr_pct > 0:
-        badges += (
-            '<span style="display:inline-block; '
-            'font-size:11px; font-weight:800; padding:4px 10px; '
-            'border-radius:6px; letter-spacing:0.3px; margin-right:6px; '
-            'background:rgba(245,158,11,0.15); color:#fbbf24; '
-            'border:1px solid rgba(245,158,11,0.35);">'
-            f'ATR {atr_pct:.1f}%</span>'
+        badges += badge(
+            f"ATR {atr_pct:.1f}%",
+            "rgba(245,158,11,0.15)", "#fbbf24",
+            "rgba(245,158,11,0.35)",
+        )
+
+    # 5) Vol Z
+    if vol_z is not None and not pd.isna(vol_z) and vol_z > 0:
+        badges += badge(
+            f"VolZ {vol_z:.1f}×",
+            "rgba(6,182,212,0.15)", "#67e8f9",
+            "rgba(6,182,212,0.35)",
+        )
+
+    # 6) Ret 5D
+    if ret5d is not None and not pd.isna(ret5d):
+        col = "#10b981" if ret5d >= 0 else "#f43f5e"
+        rgb = "16,185,129" if ret5d >= 0 else "244,63,94"
+        badges += badge(
+            f"5D {ret5d:+.1f}%",
+            f"rgba({rgb},0.10)", col,
+            f"rgba({rgb},0.30)",
+        )
+
+    # 7) Value / market cap
+    if value_m is not None and not pd.isna(value_m) and value_m > 0:
+        badges += badge(
+            f"Rp {value_m:.1f} M",
+            "rgba(148,163,184,0.10)", "#cbd5e1",
+            "rgba(148,163,184,0.30)",
         )
 
     return (
@@ -325,10 +368,14 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe,
            special_flag=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    if rsi < 20: rsi_color, rsi_bg, rsi_label = "#ff5252", "rgba(255,82,82,0.15)", "EXTREME"
-    elif rsi < 30: rsi_color, rsi_bg, rsi_label = "#f43f5e", "rgba(244,63,94,0.12)", "OVERSOLD"
-    elif rsi < 40: rsi_color, rsi_bg, rsi_label = "#f59e0b", "rgba(245,158,11,0.12)", "WEAK"
-    else: rsi_color, rsi_bg, rsi_label = "#94a3b8", "rgba(148,163,184,0.12)", "NORMAL"
+    if rsi < 20:
+        rsi_color, rsi_bg, rsi_label = "#ff5252", "rgba(255,82,82,0.15)", "EXTREME"
+    elif rsi < 30:
+        rsi_color, rsi_bg, rsi_label = "#f43f5e", "rgba(244,63,94,0.12)", "OVERSOLD"
+    elif rsi < 40:
+        rsi_color, rsi_bg, rsi_label = "#f59e0b", "rgba(245,158,11,0.12)", "WEAK"
+    else:
+        rsi_color, rsi_bg, rsi_label = "#94a3b8", "rgba(148,163,184,0.12)", "NORMAL"
 
     rsi_arrow = "▲" if rsi_chg > 0 else ("▼" if rsi_chg < 0 else "—")
     rsi_arrow_color = "#10b981" if rsi_chg > 0 else ("#f43f5e" if rsi_chg < 0 else "#94a3b8")
@@ -455,10 +502,14 @@ def setup_row(r, tipe="support"):
             posisi_txt = "↑ sudah melewati trigger"
             posisi_color = "#f43f5e"
 
-    if rr_tp1 >= 3: rr_color = "#10b981"
-    elif rr_tp1 >= 2: rr_color = "#34d399"
-    elif rr_tp1 >= 1.5: rr_color = "#f59e0b"
-    else: rr_color = "#f43f5e"
+    if rr_tp1 >= 3:
+        rr_color = "#10b981"
+    elif rr_tp1 >= 2:
+        rr_color = "#34d399"
+    elif rr_tp1 >= 1.5:
+        rr_color = "#f59e0b"
+    else:
+        rr_color = "#f43f5e"
 
     if jarak > 0:
         jarak_color = "#f59e0b"
@@ -613,32 +664,14 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
 # TAB 1: HAKA PAGI
 # ============================================================
 with tab1:
-    st.markdown(
-        '<div style="background: linear-gradient(135deg, rgba(99,102,241,0.10), '
-        'rgba(6,182,212,0.05)); '
-        'border: 1px solid rgba(99,102,241,0.25); border-radius: 12px; '
-        'padding: 16px 20px; margin-bottom: 20px;">'
-        '<div style="font-size: 13px; color: #a5b4fc; font-weight: 700; '
-        'margin-bottom: 10px;">📋 ATURAN SCREENER v3</div>'
-        '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.8;">'
-        '<b style="color:#e6ebf5;">Rule:</b> Union ABC '
-        '(A_Loose | B_Loose | New_C) + ATR ≥ 3%<br>'
-        '<b style="color:#e6ebf5;">Entry:</b> Open T+1 — '
-        '<b style="color:#fbbf24;">wajib cek gap 2%–20%</b><br>'
-        '<b style="color:#e6ebf5;">Exit:</b> Trailing 0.5% dari peak | '
-        'SL -3% | Hold max 30 hari<br>'
-        '<b style="color:#94a3b8; font-size:11px;">'
-        'Expected: WR 91% · Avg +8% (backtest 2022-2026)</b>'
-        '</div></div>', unsafe_allow_html=True
-    )
-
     files = list_kandidat_files()
 
     if not files:
-        st.markdown(empty_state("📭", "Belum ada kandidat", "Jalankan screener dulu"), unsafe_allow_html=True)
+        st.markdown(empty_state("📭", "Belum ada kandidat",
+                                "Jalankan screener dulu"),
+                    unsafe_allow_html=True)
     else:
-        date_options = []
-        file_map = {}
+        date_options, file_map = [], {}
         for f in files:
             try:
                 tgl_str = extract_date_label(f, "kandidat_", ".csv")
@@ -651,75 +684,150 @@ with tab1:
         with col1:
             selected_date = st.selectbox(
                 "📅 Pilih tanggal kandidat",
-                date_options,
-                index=0,
-                key="kandidat_date_picker"
+                date_options, index=0,
+                key="kandidat_date_picker",
             )
         with col2:
-            if st.button("🔄 Refresh", key="refresh_kandidat", use_container_width=True):
+            if st.button("🔄 Refresh", key="refresh_kandidat",
+                         use_container_width=True):
                 st.cache_data.clear()
                 st.rerun()
 
         selected = file_map[selected_date]
-
-        # Filter minimal rating & minimal match length (default 0 = tampil semua)
-        min_rating = 0
-        min_match_len = 0
-
         df = load_csv(os.path.join(OUTPUT_DIR, selected))
 
         if df.empty:
             st.error(f"File `{selected}` kosong atau tidak terbaca.")
         else:
+            # Normalisasi kolom (screen.py menyimpan decimal)
+            for col in ["ret_1d", "ret_5d", "range", "px_vs_sma20", "atr_pct"]:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors="coerce")
+            if "value" in df.columns:
+                df["value"] = pd.to_numeric(df["value"], errors="coerce")
+            if "vol_z_20" in df.columns:
+                df["vol_z_20"] = pd.to_numeric(df["vol_z_20"], errors="coerce")
             if "rating" in df.columns:
-                df = df[df["rating"].fillna(0) >= min_rating]
+                df["rating"] = pd.to_numeric(df["rating"], errors="coerce").fillna(0)
 
-            if min_match_len > 0 and "match" in df.columns:
-                df = df[df["match"].fillna("").astype(str).str.len() >= min_match_len]
+            # Filter & sort
+            c1, c2, c3 = st.columns([2, 2, 2])
+            with c1:
+                min_rating = st.slider("Min Rating", 0, 100, 0, 5,
+                                       key="haka_min_rating")
+            with c2:
+                sort_by = st.selectbox(
+                    "Urut berdasarkan",
+                    ["Rating", "Ret 1D", "Ret 5D", "ATR", "Vol Z", "Value"],
+                    index=0, key="haka_sort_by",
+                )
+            with c3:
+                view_mode = st.radio(
+                    "Tampilan", ["Card", "Tabel"],
+                    index=0, horizontal=True, key="haka_view",
+                )
+
+            if min_rating > 0 and "rating" in df.columns:
+                df = df[df["rating"] >= min_rating]
+
+            sort_map = {
+                "Rating": ("rating", False),
+                "Ret 1D": ("ret_1d", False),
+                "Ret 5D": ("ret_5d", False),
+                "ATR":    ("atr_pct", False),
+                "Vol Z":  ("vol_z_20", False),
+                "Value":  ("value", False),
+            }
+            sc, asc = sort_map[sort_by]
+            if sc in df.columns:
+                df = df.sort_values(sc, ascending=asc, na_position="last")
 
             st.markdown(
                 f'<div style="font-size:12px; color:#7d8ba3; '
                 f'margin:8px 0 16px; font-weight:500;">'
                 f'📁 <code>{selected}</code> · {len(df)} kandidat · '
-                f'{len(date_options)} hari tersedia</div>', unsafe_allow_html=True
+                f'{len(date_options)} hari tersedia</div>',
+                unsafe_allow_html=True,
             )
 
             if df.empty:
                 st.info("Tidak ada kandidat yang lolos filter.")
+            elif view_mode == "Tabel":
+                show_cols = [c for c in
+                             ["kode", "class", "rating", "match", "close",
+                              "ret_1d", "ret_5d", "atr_pct", "vol_z_20",
+                              "value", "px_vs_sma20"]
+                             if c in df.columns]
+                tbl = df[show_cols].copy()
+                for c in ["ret_1d", "ret_5d", "atr_pct", "px_vs_sma20"]:
+                    if c in tbl.columns:
+                        tbl[c] = (tbl[c] * 100).round(2)
+                if "value" in tbl.columns:
+                    tbl["value"] = (tbl["value"] / 1e9).round(2)
+                if "vol_z_20" in tbl.columns:
+                    tbl["vol_z_20"] = tbl["vol_z_20"].round(2)
+                tbl = tbl.rename(columns={
+                    "kode": "Kode", "class": "Class", "rating": "Rating",
+                    "match": "Match", "close": "Close",
+                    "ret_1d": "Ret1D %", "ret_5d": "Ret5D %",
+                    "atr_pct": "ATR %", "vol_z_20": "VolZ",
+                    "value": "Value (M)", "px_vs_sma20": "Px>SMA20 %",
+                })
+                st.dataframe(tbl, use_container_width=True, hide_index=True)
             else:
-                for idx, r in df.iterrows():
+                for _, r in df.iterrows():
                     kode = str(r["kode"]).upper()
                     nama = nama_map.get(kode, kode)
                     close = float(r["close"])
-                    rating = float(r.get("rating", 0)) if pd.notna(r.get("rating")) else 0
-                    match = str(r.get("match", "") or "-")
-                    ret1d = float(r.get("ret_1d", 0) or 0) * 100
 
-                    # ATR — handle format 0.055 (desimal) atau 5.5 (persen)
+                    rating = (float(r.get("rating", 0))
+                              if pd.notna(r.get("rating")) else 0)
+                    match = str(r.get("match", "") or "-")
+                    cls = str(r.get("class", "") or "")
+
+                    ret1d_raw = r.get("ret_1d", 0)
+                    ret1d = (float(ret1d_raw) * 100
+                             if pd.notna(ret1d_raw) else 0)
+
+                    ret5d_raw = r.get("ret_5d")
+                    ret5d = (float(ret5d_raw) * 100
+                             if pd.notna(ret5d_raw) else None)
+
                     atr_pct = None
                     if "atr_pct" in r and pd.notna(r["atr_pct"]):
                         v = float(r["atr_pct"])
-                        atr_pct = v * 100 if v < 1 else v  # kalau <1, anggap desimal
+                        atr_pct = v * 100 if v < 1 else v
+
+                    vol_z = (float(r["vol_z_20"])
+                             if "vol_z_20" in r and pd.notna(r["vol_z_20"])
+                             else None)
+
+                    value_m = None
+                    if "value" in r and pd.notna(r["value"]):
+                        value_m = float(r["value"]) / 1e9
 
                     st.markdown(
-                        wl_row(kode, nama, close, ret1d, rating, match, atr_pct),
-                        unsafe_allow_html=True
+                        wl_row(kode, nama, close, ret1d, rating, match,
+                               atr_pct, cls=cls, ret5d=ret5d,
+                               vol_z=vol_z, value_m=value_m),
+                        unsafe_allow_html=True,
                     )
 
-                # === REMINDER GAP FILTER ===
-                st.markdown(
-                    '<div style="background:rgba(245,158,11,0.08); '
-                    'border:1px solid rgba(245,158,11,0.25); '
-                    'border-left:4px solid #f59e0b; '
-                    'border-radius:10px; padding:12px 18px; margin-top:20px; '
-                    'font-size:12px; color:#cbd5e1; line-height:1.6;">'
-                    '<b style="color:#f59e0b;">⚠️ Besok pagi saat open (T+1):</b> '
-                    'cek gap untuk setiap kandidat di atas. '
-                    '<b style="color:#6ee7b7;">Execute</b> jika gap 2%–20%. '
-                    '<b style="color:#fda4af;">Skip</b> jika gap &lt; 2% atau &gt; 20%.'
-                    '</div>',
-                    unsafe_allow_html=True
-                )
+            # Reminder gap
+            st.markdown(
+                '<div style="background:rgba(245,158,11,0.08); '
+                'border:1px solid rgba(245,158,11,0.25); '
+                'border-left:4px solid #f59e0b; '
+                'border-radius:10px; padding:12px 18px; margin-top:20px; '
+                'font-size:12px; color:#cbd5e1; line-height:1.6;">'
+                '<b style="color:#f59e0b;">⚠️ Besok pagi saat open (T+1):</b> '
+                'cek gap untuk setiap kandidat di atas. '
+                '<b style="color:#6ee7b7;">Execute</b> jika gap 2%–20%. '
+                '<b style="color:#fda4af;">Skip</b> jika gap &lt; 2% '
+                'atau &gt; 20%.'
+                '</div>',
+                unsafe_allow_html=True,
+            )
 
 
 # ============================================================
@@ -877,10 +985,14 @@ with tab3:
         for i, r in enumerate(items_emg):
             kode = r["kode"]; nama = nama_map.get(kode, kode)[:55]
             skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]; harga = r["harga"]
-            if skor >= 80: color = "#10b981"
-            elif skor >= 75: color = "#a5b4fc"
-            elif skor >= 70: color = "#f59e0b"
-            else: color = "#94a3b8"
+            if skor >= 80:
+                color = "#10b981"
+            elif skor >= 75:
+                color = "#a5b4fc"
+            elif skor >= 70:
+                color = "#f59e0b"
+            else:
+                color = "#94a3b8"
             gap_to = 85 - skor
             st.markdown(
                 f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
