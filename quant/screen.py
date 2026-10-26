@@ -1,15 +1,18 @@
 """
-AUTO SCREENER - filter otomatis per bulan + RATING.
-- Exit: TP High-1% | SL -3% (sudah termasuk fee)
-- Tanggal = entry (T+1).
-- Minggu dikelompokkan per kalender (Senin-Jumat).
-- Sinyal akhir bulan lalu yang entry-nya masuk bulan ini tetap ke-capture.
-- Saham suspended (gap > 7 hari) otomatis di-skip.
-- STEP 3: auto-regenerate JSON untuk Watchlist.
-- STEP 3.5: auto-update berita IDX.
-- STEP 4: auto-push ke GitHub.
-"""
+AUTO SCREENER v3 — Union_ABC + Gap 2-20% + ATR>3% + Trailing Stop 0.5%.
 
+Exit rule:
+- Trailing stop 0.5% di bawah peak (harga turun 0.5% dari puncak → EXIT)
+- Fixed SL -3% (kalau harga crash dari entry)
+- Hold max 30 hari bursa
+- Gap filter T+1: 2% <= gap <= 20% (skip kalau di luar range)
+
+Expected (backtest 2022-2026):
+- N total: 2.037 (≈510/tahun)
+- WR: 91.0%
+- Avg return: +7.99% per trade
+- SL rate: 8.9%
+"""
 import os
 import subprocess
 import sys
@@ -23,10 +26,16 @@ from .feature_engineering import build_features
 from .event_detector import detect_events
 
 
-MIN_GAIN_FOR_TP = 0.01
-EXIT_BELOW_HIGH_PCT = 0.01
-SL_PCT = -0.03
-MAX_GAP_DAYS = 7
+# ============================================================
+# PARAMETER
+# ============================================================
+TRAIL_PCT = 0.005        # 0.5% trailing stop dari peak
+SL_PCT = -0.03           # Fixed SL -3%
+MAX_HOLD_DAYS = 30       # Max hold 30 hari bursa
+GAP_MIN_PCT = 0.02       # Min gap up 2%
+GAP_MAX_PCT = 0.20       # Max gap up 20%
+ATR_MIN_PCT = 0.03       # ATR minimal 3%
+MAX_GAP_DAYS = 7         # Max gap hari (suspensi)
 OHLCV_DIR = "data_ohlcv_idx"
 PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
 
@@ -45,7 +54,6 @@ def get_bulan_berjalan():
 
 
 def _week_of_month(dt):
-    """Minggu kalender: minggu 1 = minggu yang mengandung tanggal 1 (mulai Senin)."""
     dt = pd.Timestamp(dt)
     first = dt.replace(day=1)
     monday_week1 = first - pd.Timedelta(days=first.weekday())
@@ -63,7 +71,6 @@ def _periode_minggu(tanggal_list, minggu_ke):
 
 
 def _subprocess_env():
-    """Environment untuk subprocess - paksa UTF-8 biar emoji tidak crash di Windows."""
     env = os.environ.copy()
     env["PYTHONIOENCODING"] = "utf-8"
     env["PYTHONUTF8"] = "1"
@@ -87,7 +94,6 @@ def jalankan_update():
 
     env = _subprocess_env()
 
-    # ---------- Step 1a: update.py ----------
     print("Menjalankan update.py...")
     try:
         result = subprocess.run(
@@ -111,7 +117,6 @@ def jalankan_update():
         print(f"[!] Gagal jalankan update.py: {e}")
         return False
 
-    # ---------- Step 1b: gabung.py ----------
     if not os.path.exists(gabung_script):
         print(f"[!] File {gabung_script} tidak ditemukan.")
         return False
@@ -139,7 +144,6 @@ def jalankan_update():
         print(f"[!] Gagal jalankan gabung.py: {e}")
         return False
 
-    # ---------- Step 1c: verifikasi parquet ----------
     if not os.path.exists(parquet_path):
         print(f"[!] Parquet {PARQUET_FILE} tidak ditemukan setelah gabung.py.")
         return False
@@ -157,7 +161,6 @@ def jalankan_update():
 
 
 def jalankan_scan_json():
-    """STEP 3: regenerate JSON untuk Watchlist."""
     print(f"\n{'#'*100}")
     print(f"#  STEP 3: Regenerate JSON untuk Watchlist")
     print(f"{'#'*100}\n")
@@ -166,13 +169,10 @@ def jalankan_scan_json():
     scan_script = os.path.join(root, "scan_all.py")
 
     if not os.path.exists(scan_script):
-        print(f"\n[!] ERROR FATAL: File 'scan_all.py' TIDAK DITEMUKAN di folder utama.")
-        print(f"    Script ini wajib ada untuk meng-update data_setups.json & data_scans/")
-        print(f"    Tanpa file ini, Tab Buy Support, Breakout, Bottom Fishing, & Pre-Cross akan STUCK.\n")
+        print(f"\n[!] ERROR: File 'scan_all.py' TIDAK DITEMUKAN.")
         return False
 
     env = _subprocess_env()
-
     print("Menjalankan scan_all.py (5-10 menit)...")
     try:
         result = subprocess.run(
@@ -191,18 +191,14 @@ def jalankan_scan_json():
         print("\n[OK] Scan JSON selesai.")
         return True
     except subprocess.TimeoutExpired:
-        print("[!] scan_all.py timeout (>30 menit). Proses dibatalkan.")
+        print("[!] scan_all.py timeout (>30 menit).")
         return False
     except Exception as e:
         print(f"[!] Gagal jalankan scan_all.py: {e}")
         return False
 
 
-# ============================================================
-# STEP 3.5: UPDATE BERITA IDX (BARU)
-# ============================================================
 def jalankan_update_berita():
-    """STEP 3.5: Ambil berita IDX terbaru dan simpan ke data_news_static.json."""
     print(f"\n{'#'*100}")
     print(f"#  STEP 3.5: Update Berita IDX")
     print(f"{'#'*100}\n")
@@ -216,11 +212,10 @@ def jalankan_update_berita():
             [sys.executable, "-m", "quant.fetch_news_auto"],
             cwd=root, capture_output=True, text=True,
             encoding="utf-8", errors="replace",
-            env=env, timeout=600,  # Maksimal 10 menit
+            env=env, timeout=600,
         )
         if result.stdout:
             print(result.stdout[-1500:])
-            
         if result.returncode != 0:
             print(f"[!] Update berita GAGAL (exit {result.returncode}):")
             if result.stderr:
@@ -229,7 +224,7 @@ def jalankan_update_berita():
         print("\n[OK] Update berita selesai.")
         return True
     except subprocess.TimeoutExpired:
-        print("[!] Update berita timeout (>10 menit). Proses dibatalkan.")
+        print("[!] Update berita timeout (>10 menit).")
         return False
     except Exception as e:
         print(f"[!] Gagal jalankan update berita: {e}")
@@ -237,7 +232,6 @@ def jalankan_update_berita():
 
 
 def jalankan_git_push():
-    """STEP 4: Auto push ke GitHub."""
     print(f"\n{'#'*100}")
     print(f"#  STEP 4: Auto Push ke GitHub")
     print(f"{'#'*100}\n")
@@ -245,7 +239,6 @@ def jalankan_git_push():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     env = _subprocess_env()
 
-    # 1. Git Add
     print("Menjalankan: git add .")
     try:
         subprocess.run(["git", "add", "."], cwd=root, check=True, env=env)
@@ -253,7 +246,6 @@ def jalankan_git_push():
         print(f"[!] Git add gagal: {e}")
         return False
 
-    # 2. Git Commit
     commit_msg = f"Auto-update data: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
     print(f"Menjalankan: git commit -m \"{commit_msg}\"")
     try:
@@ -261,19 +253,17 @@ def jalankan_git_push():
             ["git", "commit", "-m", commit_msg],
             cwd=root, capture_output=True, text=True, env=env
         )
-        
         if result_commit.returncode != 0:
             if "nothing to commit" in result_commit.stdout or "nothing to commit" in result_commit.stderr:
                 print("  [i] Tidak ada perubahan data baru untuk di-commit.")
             else:
-                print(f"  [!] Git commit gagal (bukan karena kosong):")
+                print(f"  [!] Git commit gagal:")
                 print(f"      {result_commit.stderr}")
                 return False
     except Exception as e:
         print(f"[!] Git commit error: {e}")
         return False
 
-    # 3. Git Push
     print("Menjalankan: git push origin main")
     try:
         result_push = subprocess.run(
@@ -284,8 +274,7 @@ def jalankan_git_push():
             print(f"  [!] Git push gagal:")
             print(result_push.stderr)
             return False
-        
-        print("  [OK] Push ke GitHub berhasil! Streamlit akan otomatis me-reboot.")
+        print("  [OK] Push ke GitHub berhasil!")
         return True
     except Exception as e:
         print(f"[!] Git push error: {e}")
@@ -293,23 +282,38 @@ def jalankan_git_push():
 
 
 # ============================================================
-# RULES
+# RULES — Union_ABC (A_Loose | B_Loose | New_C)
 # ============================================================
 def rule_a(d):
+    """A_Loose: ret1>10, ret5>10, px_sma20>10"""
     return (
-        (d["ret_1d"] > 0.15) &
-        (d["ret_5d"] > 0.15) &
-        (d["px_vs_sma20"] > 0.20)
+        (d["ret_1d"] > 0.10) &
+        (d["ret_5d"] > 0.10) &
+        (d["px_vs_sma20"] > 0.10)
     )
 
 
 def rule_b(d):
+    """B_Loose: ret1>10, ret5>15, range>8%, vol_z>1.5"""
     return (
-        (d["ret_1d"] > 0.15) &
-        (d["ret_5d"] > 0.20) &
-        (d["range"] > 0.10) &
-        (d["vol_z_20"] > 2)
+        (d["ret_1d"] > 0.10) &
+        (d["ret_5d"] > 0.15) &
+        (d["range"] > 0.08) &
+        (d["vol_z_20"] > 1.5)
     )
+
+
+def rule_c(d):
+    """New_C: ret3>12, px_sma20>15"""
+    return (
+        (d["ret_3d"] > 0.12) &
+        (d["px_vs_sma20"] > 0.15)
+    )
+
+
+def rule_quality(d):
+    """Quality filter: ATR >= 3%"""
+    return d["atr_pct"] >= ATR_MIN_PCT
 
 
 def next_trading_day(ts):
@@ -332,7 +336,7 @@ def add_forward(df):
 
 
 # ============================================================
-# SIMULASI TRADE
+# SIMULASI TRADE — TRAILING STOP + GAP FILTER
 # ============================================================
 _OHLCV_CACHE = {}
 
@@ -382,6 +386,13 @@ def _load_ohlcv(kode):
 
 
 def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
+    """
+    Simulasi trade dengan:
+    - Gap filter T+1: 2% <= gap <= 20%
+    - Trailing stop 0.5% dari peak
+    - Fixed SL -3%
+    - Max hold 30 hari bursa
+    """
     df = _load_ohlcv(kode)
     if df is None:
         return None, "SUSPENDED"
@@ -416,32 +427,50 @@ def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
 
     signal_close = df.iloc[sig_idx]["Close"]
     open_t1 = df.iloc[entry_idx]["Open"]
+
     if pd.isna(open_t1) or open_t1 <= 0:
         return None, "SUSPENDED"
-    if not pd.isna(signal_close) and open_t1 < signal_close:
-        return None, "SKIP_GAP_DOWN"
 
-    sl_price = entry * (1 + SL_PCT)
+    # === GAP FILTER (2% - 20%) ===
+    if not pd.isna(signal_close) and signal_close > 0:
+        gap_pct = (open_t1 / signal_close) - 1
+        if gap_pct < GAP_MIN_PCT:
+            return None, "SKIP_GAP_LOW"
+        if gap_pct > GAP_MAX_PCT:
+            return None, "SKIP_GAP_HIGH"
 
-    for i in range(entry_idx, len(df)):
+    # === TRAILING STOP + SL + MAX HOLD ===
+    sl_price = entry * (1 + SL_PCT)  # SL_PCT = -0.03
+    peak = entry
+
+    end_idx = min(entry_idx + MAX_HOLD_DAYS, len(df))
+
+    for i in range(entry_idx, end_idx):
         row = df.iloc[i]
         high = row["High"]
         low = row["Low"]
         if pd.isna(high) or pd.isna(low):
             continue
 
-        high_gain = high / entry - 1
-        if high_gain >= MIN_GAIN_FOR_TP:
-            exit_price = high * (1 - EXIT_BELOW_HIGH_PCT)
-            return exit_price / entry - 1, "TP"
+        # Update peak dengan high hari ini
+        if high > peak:
+            peak = high
 
+        trail_price = peak * (1 - TRAIL_PCT)
+
+        # Cek trailing stop (hanya kalau sudah profit)
+        if trail_price > entry and low <= trail_price:
+            return (trail_price / entry - 1), "TRAIL"
+
+        # Cek SL
         if low <= sl_price:
             return SL_PCT, "SL"
 
-    last_close = float(df.iloc[-1]["Close"])
+    # Max hold tercapai
+    last_close = float(df.iloc[end_idx - 1]["Close"])
     if pd.isna(last_close):
         return None, "SUSPENDED"
-    return last_close / entry - 1, "CLOSE"
+    return last_close / entry - 1, "HOLD"
 
 
 # ============================================================
@@ -451,7 +480,8 @@ def hitung_rating_kandidat(row):
     score = 0
     match = str(row.get("match", "") or "")
     n_match = len(match)
-    if n_match >= 2: score += 40
+    if n_match >= 3: score += 50      # A+B+C = strongest
+    elif n_match >= 2: score += 40
     elif n_match == 1: score += 25
 
     ret1d = row.get("ret_1d")
@@ -560,15 +590,14 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
 
     filepath = os.path.join(path_dir, f"Rekap_Trading_{bulan_file}.xlsx")
 
-    # SHEET 1: KANDIDAT
     if not kandidat.empty:
         cols = ["rating", "class", "kode", "close", "value",
                 "ret_1d", "ret_5d", "range", "vol_z_20",
-                "px_vs_sma20", "match"]
+                "px_vs_sma20", "atr_pct", "match"]
         cols = [c for c in cols if c in kandidat.columns]
         df_kand = kandidat[cols].copy()
 
-        for c in ["ret_1d", "ret_5d", "range", "px_vs_sma20"]:
+        for c in ["ret_1d", "ret_5d", "range", "px_vs_sma20", "atr_pct"]:
             if c in df_kand.columns:
                 df_kand[c] = (df_kand[c] * 100).round(2)
         if "vol_z_20" in df_kand.columns:
@@ -583,13 +612,13 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
             "kode": "Kode", "close": "Close", "value": "Value (M)",
             "ret_1d": "Ret1d%", "ret_5d": "Ret5d%",
             "range": "Range%", "vol_z_20": "VolZ",
-            "px_vs_sma20": "Px>sma20%", "match": "Match",
+            "px_vs_sma20": "Px>sma20%", "atr_pct": "ATR%",
+            "match": "Match",
         })
         df_kand.insert(0, "No", range(1, len(df_kand) + 1))
     else:
         df_kand = pd.DataFrame({"Info": ["Tidak ada kandidat"]})
 
-    # SHEET 2: REVIEW HARIAN (kolom Tanggal = entry T+1)
     if not signals_bulan.empty:
         review_rows = []
         for _, row in signals_bulan.sort_values("date_T1").iterrows():
@@ -605,16 +634,20 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
             match = ""
             if row.get("sig_a", False): match += "A"
             if row.get("sig_b", False): match += "B"
+            if row.get("sig_c", False): match += "C"
 
             entry = row["open_T1"]
             high = row["high_T1"]
+            signal_close = row["close"]
+            gap_pct = ((entry / signal_close - 1) * 100) if (not pd.isna(entry) and signal_close > 0) else np.nan
 
             review_rows.append({
                 "Tanggal": tgl_entry.date(),
                 "Hari": ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat',
                          'Sabtu', 'Minggu'][tgl_entry.weekday()],
                 "Kode": row["kode"],
-                "Close T": round(row["close"], 0),
+                "Close T": round(signal_close, 0),
+                "Gap T+1 %": round(gap_pct, 2) if pd.notna(gap_pct) else "",
                 "Entry": round(entry, 0) if not pd.isna(entry) else "",
                 "High T+1": round(high, 0) if not pd.isna(high) else "",
                 "Match": match,
@@ -625,7 +658,6 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
     else:
         df_review = pd.DataFrame({"Info": [f"Belum ada sinyal di {bulan_label}"]})
 
-    # SHEET 3: REVIEW MINGGUAN
     minggu_rows = []
     if not signals_bulan.empty:
         sr = signals_bulan.copy()
@@ -639,15 +671,16 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
         for wk in sorted(sr["minggu_ke"].unique()):
             wk_data = sr[sr["minggu_ke"] == wk]
             n_sig = len(wk_data)
-            n_exec = n_win = n_skip = n_pending = n_tp = n_sl = n_close = n_susp = 0
+            n_exec = n_win = 0
+            n_skip_gap = n_pending = n_trail = n_sl = n_hold = n_susp = 0
             pl_total = 0
 
             for _, row in wk_data.iterrows():
                 ret, status = simulate_trade(
                     row["kode"], row["open_T1"], row["date"]
                 )
-                if status == "SKIP_GAP_DOWN":
-                    n_skip += 1
+                if status in ("SKIP_GAP_LOW", "SKIP_GAP_HIGH"):
+                    n_skip_gap += 1
                 elif status == "SUSPENDED":
                     n_susp += 1
                 elif status == "PENDING":
@@ -656,9 +689,9 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
                     n_exec += 1
                     pl_total += ret
                     if ret > 0: n_win += 1
-                    if status == "TP": n_tp += 1
+                    if status == "TRAIL": n_trail += 1
                     elif status == "SL": n_sl += 1
-                    elif status == "CLOSE": n_close += 1
+                    elif status == "HOLD": n_hold += 1
 
             tgl_sample = wk_data["tanggal"].min()
             senin, jumat = _periode_minggu([tgl_sample], wk)
@@ -673,10 +706,10 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
                 "Sinyal": n_sig,
                 "Eksekusi": n_exec,
                 "Profit": n_win,
-                "TP": n_tp,
+                "TRAIL": n_trail,
                 "SL": n_sl,
-                "Close": n_close,
-                "Skip": n_skip,
+                "HOLD": n_hold,
+                "Skip Gap": n_skip_gap,
                 "Suspended": n_susp,
                 "Pending": n_pending,
                 "Win Rate %": round(n_win / n_exec * 100, 1) if n_exec > 0 else 0,
@@ -691,17 +724,16 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
             "Info": [f"Belum ada sinyal mingguan di {bulan_label}"]
         })
 
-    # SHEET 4: RINGKASAN
     if not signals_bulan.empty:
         total_pl = n_exec = n_win = 0
-        n_skip = n_pending = n_tp = n_sl = n_close = n_susp = 0
+        n_skip_gap = n_pending = n_trail = n_sl = n_hold = n_susp = 0
 
         for _, row in signals_bulan.iterrows():
             ret, status = simulate_trade(
                 row["kode"], row["open_T1"], row["date"]
             )
-            if status == "SKIP_GAP_DOWN":
-                n_skip += 1
+            if status in ("SKIP_GAP_LOW", "SKIP_GAP_HIGH"):
+                n_skip_gap += 1
             elif status == "SUSPENDED":
                 n_susp += 1
             elif status == "PENDING":
@@ -710,25 +742,27 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
                 n_exec += 1
                 total_pl += ret
                 if ret > 0: n_win += 1
-                if status == "TP": n_tp += 1
+                if status == "TRAIL": n_trail += 1
                 elif status == "SL": n_sl += 1
-                elif status == "CLOSE": n_close += 1
+                elif status == "HOLD": n_hold += 1
 
         win_rate = (n_win / n_exec * 100) if n_exec > 0 else 0
         avg_pl = (total_pl / n_exec * 100) if n_exec > 0 else 0
 
         ringkasan_rows = [
             ["PERIODE", f"Bulan {bulan_label}"],
-            ["Exit Rule", f"TP High-1% | SL {SL_PCT*100:.0f}% (incl. fee)"],
+            ["Exit Rule", f"TRAIL {TRAIL_PCT*100:.1f}% (dari peak) | SL {SL_PCT*100:.0f}% | Max hold {MAX_HOLD_DAYS}d"],
+            ["Gap Filter T+1", f"{GAP_MIN_PCT*100:.0f}% – {GAP_MAX_PCT*100:.0f}%"],
+            ["Quality Filter", f"ATR >= {ATR_MIN_PCT*100:.0f}%"],
             ["Tanggal", "Entry (T+1)"],
             ["", ""],
             ["RINGKASAN SINYAL", ""],
             ["Total Sinyal", len(signals_bulan)],
             ["Tereksekusi", n_exec],
-            ["  TP (high -1%)", n_tp],
+            ["  TRAIL (profit)", n_trail],
             ["  SL", n_sl],
-            ["  Close (fallback)", n_close],
-            ["Skip (gap down)", n_skip],
+            ["  HOLD (max days)", n_hold],
+            ["Skip Gap (out of range)", n_skip_gap],
             ["Suspended", n_susp],
             ["Pending", n_pending],
             ["", ""],
@@ -738,7 +772,7 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
             ["Avg P/L per Trade", f"{avg_pl:+.2f}%"],
             ["", ""],
             ["VERDICT", ""],
-            ["Status", "[OK] LAYAK" if win_rate >= 60 and avg_pl > 2
+            ["Status", "[OK] LAYAK" if win_rate >= 70 and avg_pl > 3
              else ("[!] MARGINAL" if win_rate >= 50 else "[X] EVALUASI")],
         ]
     else:
@@ -749,7 +783,6 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
 
     df_ringkasan = pd.DataFrame(ringkasan_rows, columns=["Metrik", "Nilai"])
 
-    # TULIS EXCEL
     with pd.ExcelWriter(filepath, engine="openpyxl") as writer:
         df_ringkasan.to_excel(writer, sheet_name="Ringkasan",
                                index=False, startrow=3)
@@ -760,7 +793,6 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
         df_review.to_excel(writer, sheet_name="Review Harian",
                             index=False, startrow=3)
 
-    # FORMATTING
     wb = load_workbook(filepath)
 
     GREEN_FILL = PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid")
@@ -809,8 +841,8 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
 
     ws = wb["Review Harian"]
     excel_style(ws, f"REVIEW HARIAN - {bulan_label.upper()}",
-                f"TP High-1% | SL {SL_PCT*100:.0f}% - "
-                f"Tanggal = entry (T+1) - Bulan {bulan_label}")
+                f"TRAIL {TRAIL_PCT*100:.1f}% | SL {SL_PCT*100:.0f}% | "
+                f"Gap {GAP_MIN_PCT*100:.0f}-{GAP_MAX_PCT*100:.0f}% - Bulan {bulan_label}")
     autofit_columns(ws)
     if not df_review.empty and "P/L %" in df_review.columns:
         for i, cell in enumerate(ws[4], 1):
@@ -830,22 +862,24 @@ def simpan_excel(kandidat, signals_bulan, pred_date, path_dir,
 
 
 # ============================================================
-# MAIN (DENGAN ERROR HANDLING BARU)
+# MAIN
 # ============================================================
 def main():
     print("=" * 100)
-    print(f"AUTO SCREENER - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"AUTO SCREENER v3 (Union_ABC + Trail 0.5% + Gap Filter)")
+    print(f"Waktu: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 100)
 
     bulan_start, bulan_end, bulan_label, bulan_file = get_bulan_berjalan()
     print(f"\nBulan berjalan : {bulan_label}")
     print(f"Periode        : {bulan_start.date()} s/d {bulan_end.date()}")
+    print(f"Rules          : Union_ABC (A_Loose | B_Loose | New_C) + ATR>={ATR_MIN_PCT*100:.0f}%")
+    print(f"Exit           : TRAIL {TRAIL_PCT*100:.1f}% | SL {SL_PCT*100:.0f}% | Hold {MAX_HOLD_DAYS}d")
+    print(f"Gap filter     : {GAP_MIN_PCT*100:.0f}% – {GAP_MAX_PCT*100:.0f}%")
 
-    # ✅ FIX #1: Cek apakah update berhasil. Kalau gagal, STOP.
     if not jalankan_update():
         print("\n" + "=" * 100)
         print("[!] STOP: Data OHLCV gagal diupdate.")
-        print("    Screener dibatalkan agar tidak memproses data lama.")
         print("=" * 100)
         return
 
@@ -866,6 +900,20 @@ def main():
     panel = add_forward(panel)
     panel = panel[(panel["open"] > 0) & (panel["close"] > 0)].copy()
 
+    # === SAFETY: Tambah ret_3d dan atr_pct kalau belum ada ===
+    if "ret_3d" not in panel.columns:
+        panel["ret_3d"] = panel.groupby("kode")["close"].pct_change(3)
+
+    if "atr_pct" not in panel.columns:
+        g = panel.groupby("kode", group_keys=False)
+        prev_c = g["close"].shift(1)
+        tr = np.maximum(
+            panel["high"] - panel["low"],
+            np.maximum((panel["high"] - prev_c).abs(), (panel["low"] - prev_c).abs())
+        )
+        atr = tr.groupby(panel["kode"]).transform(lambda s: s.rolling(14).mean())
+        panel["atr_pct"] = atr / panel["close"]
+
     last_date = pd.Timestamp(panel["date"].max())
     pred_date = next_trading_day(last_date)
 
@@ -878,7 +926,10 @@ def main():
     today_data = panel[panel["date"] == last_date].copy()
     m_a = rule_a(today_data).fillna(False).values
     m_b = rule_b(today_data).fillna(False).values
-    m_union = m_a | m_b
+    m_c = rule_c(today_data).fillna(False).values
+    m_q = rule_quality(today_data).fillna(False).values
+
+    m_union = (m_a | m_b | m_c) & m_q
     kandidat = today_data[m_union].copy()
 
     print(f"\n{'#'*100}")
@@ -889,6 +940,7 @@ def main():
         kandidat["match"] = ""
         kandidat.loc[m_a[m_union], "match"] += "A"
         kandidat.loc[m_b[m_union], "match"] += "B"
+        kandidat.loc[m_c[m_union], "match"] += "C"
         kandidat["rating"] = kandidat.apply(hitung_rating_kandidat, axis=1)
         kandidat["class"] = kandidat["rating"].apply(klasifikasi_rating)
         kandidat = kandidat.sort_values(
@@ -898,13 +950,17 @@ def main():
         print(f"\n  {len(kandidat)} KANDIDAT:\n")
         print(f"  {'No':>3} {'Kode':<7} {'Rating':>7} {'Class':<12} "
               f"{'Close':>8} {'Ret1d%':>8} {'Ret5d%':>8} "
-              f"{'Match':>6} {'Value(M)':>10}")
-        print("  " + "-" * 100)
+              f"{'Match':>6} {'ATR%':>7} {'Value(M)':>10}")
+        print("  " + "-" * 110)
         for i, (_, r) in enumerate(kandidat.iterrows(), 1):
             print(f"  {i:>3} {r['kode']:<7} {r['rating']:>6.1f} "
                   f"{r['class']:<12} {r['close']:>8.0f} "
                   f"{r['ret_1d']*100:>+7.1f}% {r['ret_5d']*100:>+7.1f}% "
-                  f"{r['match']:>6} {r['value']/1e9:>9.2f}")
+                  f"{r['match']:>6} {r['atr_pct']*100:>5.1f}% {r['value']/1e9:>9.2f}")
+
+        print(f"\n  ⚠️  BESOK PAGI: cek gap T+1 saat open.")
+        print(f"      ✓ EXECUTE kalau gap 2% – 20%")
+        print(f"      ✗ SKIP kalau gap < 2% atau > 20%")
     else:
         print(f"\n  Tidak ada kandidat untuk {pred_date.date()}.")
 
@@ -919,11 +975,15 @@ def main():
 
     m_a_sub = rule_a(sub_bulan).fillna(False).values
     m_b_sub = rule_b(sub_bulan).fillna(False).values
-    m_union_sub = m_a_sub | m_b_sub
+    m_c_sub = rule_c(sub_bulan).fillna(False).values
+    m_q_sub = rule_quality(sub_bulan).fillna(False).values
+
+    m_union_sub = (m_a_sub | m_b_sub | m_c_sub) & m_q_sub
 
     signals_bulan = sub_bulan[m_union_sub].copy()
     signals_bulan["sig_a"] = m_a_sub[m_union_sub]
     signals_bulan["sig_b"] = m_b_sub[m_union_sub]
+    signals_bulan["sig_c"] = m_c_sub[m_union_sub]
 
     if "date_T1" in signals_bulan.columns:
         signals_bulan = signals_bulan[
@@ -933,14 +993,14 @@ def main():
 
     if not signals_bulan.empty:
         total_pl = n_exec = n_win = 0
-        n_skip = n_pending = n_tp = n_sl = n_close = n_susp = 0
+        n_skip_gap = n_pending = n_trail = n_sl = n_hold = n_susp = 0
 
         for _, row in signals_bulan.iterrows():
             ret, status = simulate_trade(
                 row["kode"], row["open_T1"], row["date"]
             )
-            if status == "SKIP_GAP_DOWN":
-                n_skip += 1
+            if status in ("SKIP_GAP_LOW", "SKIP_GAP_HIGH"):
+                n_skip_gap += 1
             elif status == "SUSPENDED":
                 n_susp += 1
             elif status == "PENDING":
@@ -949,19 +1009,19 @@ def main():
                 n_exec += 1
                 total_pl += ret
                 if ret > 0: n_win += 1
-                if status == "TP": n_tp += 1
+                if status == "TRAIL": n_trail += 1
                 elif status == "SL": n_sl += 1
-                elif status == "CLOSE": n_close += 1
+                elif status == "HOLD": n_hold += 1
 
         print(f"\n  Periode        : {bulan_label}")
         print(f"  Total sinyal   : {len(signals_bulan)}")
-        print(f"  Skip           : {n_skip}")
+        print(f"  Skip gap       : {n_skip_gap}")
         print(f"  Suspended      : {n_susp}")
         print(f"  Pending        : {n_pending}")
         print(f"  Tereksekusi    : {n_exec}")
-        print(f"  |- TP          : {n_tp}")
+        print(f"  |- TRAIL       : {n_trail}")
         print(f"  |- SL          : {n_sl}")
-        print(f"  - Close        : {n_close}")
+        print(f"  - HOLD (30d)   : {n_hold}")
         if n_exec > 0:
             print(f"\n  Win rate       : {n_win}/{n_exec} ({n_win/n_exec*100:.1f}%)")
             print(f"  Total P/L      : {total_pl*100:+.2f}%")
@@ -969,7 +1029,6 @@ def main():
     else:
         print(f"\n  Belum ada sinyal di bulan {bulan_label}.")
 
-    # Simpan
     print(f"\n{'#'*100}")
     print(f"#  MENYIMPAN EXCEL")
     print(f"{'#'*100}\n")
@@ -979,7 +1038,7 @@ def main():
     if not kandidat.empty:
         csv_path = f"quant/output/kandidat_{pred_date.date()}.csv"
         cols_csv = ["kode", "close", "value", "ret_1d", "ret_5d",
-                    "range", "vol_z_20", "px_vs_sma20", "match", "rating"]
+                    "range", "vol_z_20", "px_vs_sma20", "atr_pct", "match", "rating"]
         cols_csv = [c for c in cols_csv if c in kandidat.columns]
         kandidat[cols_csv].to_csv(csv_path, index=False)
         print(f"  -> CSV: {csv_path}")
@@ -987,32 +1046,18 @@ def main():
     simpan_excel(kandidat, signals_bulan, pred_date.date(),
                  "quant/output", bulan_label, bulan_file, bulan_start)
 
-    # ============================================================
-    # STEP 3: Regenerate JSON untuk Watchlist
-    # ============================================================
     scan_ok = jalankan_scan_json()
-    
-    # ✅ FIX #2: Peringatan keras kalau scan_all.py gagal
     if not scan_ok:
         print("\n" + "!" * 100)
-        print("[!] PERINGATAN BESAR: Gagal regenerate data_setups.json!")
-        print("    Watchlist Anda (Buy Support, Breakout, Bottom Fishing, Pre-Cross) TIDAK AKAN UPDATE.")
-        print("    Pastikan file 'scan_all.py' ada di folder utama dan tidak error.")
+        print("[!] PERINGATAN: Gagal regenerate data_setups.json!")
         print("!" * 100 + "\n")
 
-    # ============================================================
-    # STEP 3.5: Update Berita IDX (BARU)
-    # ============================================================
     berita_ok = jalankan_update_berita()
     if not berita_ok:
         print("\n" + "!" * 100)
         print("[!] PERINGATAN: Gagal update berita IDX.")
-        print("    Web akan tetap menggunakan data berita dari update sebelumnya.")
         print("!" * 100 + "\n")
 
-    # ============================================================
-    # STEP 4: Auto Push ke GitHub
-    # ============================================================
     jalankan_git_push()
 
     print(f"\n{'='*100}")

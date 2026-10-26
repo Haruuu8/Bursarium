@@ -577,57 +577,27 @@ def _apply_filter(df, good_only):
 
 
 def scan_news(days=30, force_refresh=False, filter_good_only=False):
-    # ─── PRIORITAS 1: File statis dari GitHub (PALING CEPAT & PASTI) ───
+    # ─── 1. SELALU BACA FILE STATIS DULU (Paling Prioritas) ───
     static_data, generated_at = load_static_news()
-    if static_data and not force_refresh:
+    if static_data:
         print(f"[news] pakai data statis (update: {generated_at})")
         return _apply_filter(pd.DataFrame(static_data), filter_good_only)
 
-    # ─── PRIORITAS 2: Cache lokal ───
+    # ─── 2. Kalau file statis hilang, baru pakai cache lokal ───
     if not force_refresh:
         cached = load_cache(days)
         if cached is not None:
-            df = pd.DataFrame(cached)
-            if not df.empty and "tanggal" in df.columns:
-                try:
-                    newest = pd.to_datetime(df["tanggal"], errors="coerce").max()
-                    if pd.notna(newest):
-                        age_days = (pd.Timestamp.now() - newest).days
-                        if age_days > 3:
-                            cached = None
-                            df = None
-                except Exception:
-                    pass
-            if cached is not None and df is not None:
-                return _apply_filter(df, filter_good_only)
+            return _apply_filter(pd.DataFrame(cached), filter_good_only)
 
-        if _is_recently_failed(days):
-            print(f"    [cache] skip fetch (gagal <{FAILED_CACHE_TTL_SEC}s lalu)")
-            return pd.DataFrame()
-
-    # ─── PRIORITAS 3: Fetch langsung (hanya kalau force_refresh / tidak ada data) ───
+    # ─── 3. Kalau benar-benar tidak ada data, baru tembak IDX ───
     hasil = fetch_announcements(days=days, max_items=20000)
-
     if not hasil:
-        cached = load_cache(days)
-        if cached is not None:
-            df = pd.DataFrame(cached)
-            try:
-                newest = pd.to_datetime(df["tanggal"], errors="coerce").max()
-                age_days = (pd.Timestamp.now() - newest).days if pd.notna(newest) else 999
-                if age_days <= 7:
-                    return _apply_filter(df, filter_good_only)
-            except Exception:
-                pass
-        if static_data:
-            return _apply_filter(pd.DataFrame(static_data), filter_good_only)
         _mark_failed(days)
         return pd.DataFrame()
 
     _clear_failed(days)
     save_cache(hasil, days)
-    df = pd.DataFrame(hasil)
-    return _apply_filter(df, filter_good_only)
+    return _apply_filter(pd.DataFrame(hasil), filter_good_only)
 
 
 def get_stats(df):

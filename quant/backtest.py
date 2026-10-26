@@ -1,549 +1,346 @@
 """
-quant/backtest_sr_methods.py
-Bandingkan 12 metode deteksi Support/Resistance IDX secara jujur.
-Output: winrate, expectancy, stabilitas train/val/test per metode.
-"""
-import os, sys, math, time, warnings
-from datetime import datetime
-from concurrent.futures import ProcessPoolExecutor, as_completed
+WR90 HUNTER — Target WR ≥ 90% dengan N ≥ 1500.
+Strategi:
+1. Loosen rule_a (dapat lebih banyak sinyal)
+2. Gap filter (2-20%, 2-10%, 5-15%)
+3. Quality filter (HL, 52w, ATR) untuk boost WR
+4. Tighter trailing (0.5% vs 1%)
+5. Test 100+ kombinasi
 
+Find Pareto: N ≥ 1500, WR ≥ 90%.
+"""
+import os
 import numpy as np
 import pandas as pd
+import concurrent.futures
+import itertools
 
-warnings.filterwarnings("ignore")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FIXED_PARQUET = os.path.join(BASE_DIR, "ohlcv_idx_fixed.parquet")
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from quant.parquet_loader import load_parquet_safe
-
-
-# ============================================================
-# KONFIGURASI
-# ============================================================
-TOUCH_ATR    = 0.3      # toleransi sentuh level (dalam ATR)
-BOUNCE_ATR   = 1.5      # target profit (memantul)
-BREAK_ATR    = 0.5      # stop loss (tembus)
-MAX_BARS     = 10       # maksimum bar sebelum timeout
-DEBOUNCE     = 5        # minimal jarak antar-touch di level yang sama
-ATR_PERIOD   = 14
-LOOKBACK     = 250      # level dianggap valid selama 250 bar (1 tahun)
-FEE_PCT      = 0.6      # fee round-trip (%)
-
-# Split train/val/test
-SPLIT_TRAIN = 0.6
-SPLIT_VAL   = 0.8
-
-# Metode yang diuji
-METHODS = [
-    "swing_w3",
-    "swing_w5",
-    "swing_w7",
-    "donchian_20",
-    "donchian_55",
-    "pivot_classic",
-    "pivot_fib",
-    "round_50",
-    "round_100",
-    "kijun",       # Ichimoku 26 midpoint
-    "weekly_hl",   # prev week high/low
-    "monthly_hl",  # prev month high/low
-]
+MIN_PRICE = 50
+MIN_VOLUME = 100000
+MAX_DAYS = 30
 
 
-# ============================================================
-# ATR
-# ============================================================
-def compute_atr(highs, lows, closes, period=ATR_PERIOD):
-    prev_close = np.roll(closes, 1)
-    prev_close[0] = closes[0]
-    tr = np.maximum(highs - lows,
-                    np.maximum(np.abs(highs - prev_close),
-                               np.abs(lows - prev_close)))
-    return pd.Series(tr).rolling(period).mean().values
+def _process(args):
+    kode, sub = args
+    sub = sub.sort_values("Date").reset_index(drop=True).copy()
+    n = len(sub)
+    if n < 100: return None
 
+    o = sub["Open"].values.astype(np.float64)
+    h = sub["High"].values.astype(np.float64)
+    l = sub["Low"].values.astype(np.float64)
+    c = sub["Close"].values.astype(np.float64)
+    v = sub["Volume"].values.astype(np.float64)
+    dates = sub["Date"].values
 
-# ============================================================
-# DETEKSI LEVEL PER METODE
-# ============================================================
-def detect_swings(highs, lows, i, w):
-    """Return list of (price, side, detected_at_bar)."""
-    out = []
-    k = i - w   # baru tahu swing setelah w bar berikutnya
-    if k - w < 0: return out
-    window_h = highs[k-w:k+w+1]
-    window_l = lows[k-w:k+w+1]
-    if len(window_h) != 2*w+1: return out
-    
-    if highs[k] == window_h.max():
-        out.append((float(highs[k]), "resistance", k))
-    if lows[k] == window_l.min():
-        out.append((float(lows[k]), "support", k))
-    return out
+    s_c = pd.Series(c); s_h = pd.Series(h); s_l = pd.Series(l); s_v = pd.Series(v)
+    prev_c = s_c.shift(1)
 
+    for n_ in [20, 50, 200]:
+        sub[f"sma{n_}"] = s_c.rolling(n_).mean()
+    sub["ret_1d"] = s_c.pct_change(1)
+    sub["ret_3d"] = s_c.pct_change(3)
+    sub["ret_5d"] = s_c.pct_change(5)
+    sub["ret_10d"] = s_c.pct_change(10)
+    sub["px_vs_sma20"] = s_c / sub["sma20"] - 1
+    sub["px_vs_sma50"] = s_c / sub["sma50"] - 1
+    sub["range"] = (s_h - s_l) / s_c
+    vol_ma = s_v.rolling(20).mean()
+    vol_std = s_v.rolling(20).std()
+    sub["vol_z_20"] = (s_v - vol_ma) / vol_std.replace(0, np.nan)
+    tr = np.maximum(s_h - s_l, np.maximum((s_h - prev_c).abs(), (s_l - prev_c).abs()))
+    sub["atr_pct"] = tr.rolling(14).mean() / s_c
 
-def detect_donchian(highs, lows, i, period):
-    if i < period: return []
-    hh = float(np.max(highs[i-period:i]))
-    ll = float(np.min(lows[i-period:i]))
-    return [(hh, "resistance", i-period), (ll, "support", i-period)]
+    up_day = (s_c > prev_c).astype(int)
+    sub["consec_up"] = up_day.groupby((up_day != up_day.shift()).cumsum()).cumsum()
+    sub["hl"] = (s_l > prev_c).astype(int)
+    sub["hl5"] = sub["hl"].rolling(5).sum()
 
+    sub["high_252"] = s_h.rolling(252, min_periods=200).max()
+    sub["low_252"] = s_l.rolling(252, min_periods=200).min()
+    den = sub["high_252"] - sub["low_252"]
+    sub["pos_52w"] = np.where(den > 0, (s_c - sub["low_252"]) / den, np.nan)
 
-def detect_pivot_classic(highs, lows, closes, i):
-    if i < 2: return []
-    h, l, c = highs[i-1], lows[i-1], closes[i-1]
-    p = (h + l + c) / 3
-    r1 = 2*p - l
-    s1 = 2*p - h
-    r2 = p + (h - l)
-    s2 = p - (h - l)
-    return [(r1, "resistance", i-1), (r2, "resistance", i-1),
-            (s1, "support", i-1), (s2, "support", i-1)]
+    # For each candidate, simulate with 4 trailing configs
+    # Trail 0.5% (tight), 0.75%, 1.0%, 1.25%
+    TRAIL_CONFIGS = [0.005, 0.0075, 0.01, 0.0125]
+    SL_PCT = 0.03
 
+    ret1 = sub["ret_1d"].values
+    ret3 = sub["ret_3d"].values
+    ret5 = sub["ret_5d"].values
+    ret10 = sub["ret_10d"].values
+    px20 = sub["px_vs_sma20"].values
+    px50 = sub["px_vs_sma50"].values
+    rng = sub["range"].values
+    vz = sub["vol_z_20"].values
+    atr = sub["atr_pct"].values
+    cu = sub["consec_up"].values
+    hl5 = sub["hl5"].values
+    p52 = sub["pos_52w"].values
 
-def detect_pivot_fib(highs, lows, closes, i):
-    if i < 2: return []
-    h, l, c = highs[i-1], lows[i-1], closes[i-1]
-    p = (h + l + c) / 3
-    rng = h - l
-    r1 = p + 0.382 * rng
-    r2 = p + 0.618 * rng
-    r3 = p + 1.000 * rng
-    s1 = p - 0.382 * rng
-    s2 = p - 0.618 * rng
-    s3 = p - 1.000 * rng
-    return [(r1, "resistance", i-1), (r2, "resistance", i-1), (r3, "resistance", i-1),
-            (s1, "support", i-1), (s2, "support", i-1), (s3, "support", i-1)]
+    base_superset = ((ret1 > 0.05) | (ret3 > 0.08) | (ret5 > 0.08) | (ret10 > 0.10))
+    cand_idx = np.where(base_superset)[0]
+    cand_idx = cand_idx[cand_idx < n - 5]
 
-
-def detect_round(closes, i, increment):
-    c = closes[i]
-    if c < increment: return []
-    r_up = math.ceil(c / increment) * increment
-    r_dn = math.floor(c / increment) * increment
-    out = []
-    if r_up > c: out.append((r_up, "resistance", i))
-    if r_dn < c: out.append((r_dn, "support", i))
-    return out
-
-
-def detect_kijun(highs, lows, i, period=26):
-    """Ichimoku Kijun-sen (26-bar midpoint) — dipakai sebagai level dinamis."""
-    if i < period: return []
-    mid = (float(np.max(highs[i-period:i])) + float(np.min(lows[i-period:i]))) / 2
-    c = closes[i]
-    if mid > c: return [(mid, "resistance", i)]
-    if mid < c: return [(mid, "support", i)]
-    return []
-
-
-def detect_weekly_hl(dates, highs, lows, i):
-    if i < 10: return []
-    # find start of current week (Monday)
-    dt = pd.Timestamp(dates[i])
-    days_since_monday = dt.weekday()
-    week_start_idx = max(0, i - days_since_monday - 7)  # start of prev week
-    week_end_idx = max(0, i - days_since_monday)
-    if week_end_idx <= week_start_idx or week_start_idx < 0: return []
-    h = float(np.max(highs[week_start_idx:week_end_idx]))
-    l = float(np.min(lows[week_start_idx:week_end_idx]))
-    return [(h, "resistance", week_end_idx), (l, "support", week_end_idx)]
-
-
-def detect_monthly_hl(dates, highs, lows, i):
-    if i < 25: return []
-    dt = pd.Timestamp(dates[i])
-    # start of current month
-    cur_month_start = dt.replace(day=1)
-    prev_month_end = cur_month_start - pd.Timedelta(days=1)
-    prev_month_start = prev_month_end.replace(day=1)
-    mask = (pd.to_datetime(dates) >= prev_month_start) & (pd.to_datetime(dates) <= prev_month_end)
-    idxs = np.where(mask)[0]
-    if len(idxs) == 0: return []
-    h = float(np.max(highs[idxs]))
-    l = float(np.min(lows[idxs]))
-    return [(h, "resistance", int(idxs[0])), (l, "support", int(idxs[0]))]
-
-
-def detect_all(method, highs, lows, closes, dates, i, atr):
-    try:
-        if method == "swing_w3": return detect_swings(highs, lows, i, 3)
-        if method == "swing_w5": return detect_swings(highs, lows, i, 5)
-        if method == "swing_w7": return detect_swings(highs, lows, i, 7)
-        if method == "donchian_20": return detect_donchian(highs, lows, i, 20)
-        if method == "donchian_55": return detect_donchian(highs, lows, i, 55)
-        if method == "pivot_classic": return detect_pivot_classic(highs, lows, closes, i)
-        if method == "pivot_fib": return detect_pivot_fib(highs, lows, closes, i)
-        if method == "round_50": return detect_round(closes, i, 50)
-        if method == "round_100": return detect_round(closes, i, 100)
-        if method == "kijun": return detect_kijun(highs, lows, i)
-        if method == "weekly_hl": return detect_weekly_hl(dates, highs, lows, i)
-        if method == "monthly_hl": return detect_monthly_hl(dates, highs, lows, i)
-    except Exception:
-        return []
-    return []
-
-
-# ============================================================
-# TRADE SIMULATION
-# ============================================================
-def simulate_support(level, touch_bar, highs, lows, closes, atr_touch, n):
-    tp = level + BOUNCE_ATR * atr_touch
-    sl = level - BREAK_ATR * atr_touch
-    entry = level
-    end = min(touch_bar + MAX_BARS, n - 1)
-    
-    # Same bar
-    if lows[touch_bar] <= sl:
-        return "SL", (sl - entry) / entry * 100
-    if highs[touch_bar] >= tp:
-        return "TP", (tp - entry) / entry * 100
-    
-    for j in range(touch_bar + 1, end + 1):
-        hit_sl = lows[j] <= sl
-        hit_tp = highs[j] >= tp
-        if hit_sl and hit_tp:
-            return "SL", (sl - entry) / entry * 100
-        if hit_sl:
-            return "SL", (sl - entry) / entry * 100
-        if hit_tp:
-            return "TP", (tp - entry) / entry * 100
-    
-    return "TIMEOUT", (closes[end] - entry) / entry * 100
-
-
-def simulate_resistance(level, touch_bar, highs, lows, closes, atr_touch, n):
-    tp = level - BOUNCE_ATR * atr_touch
-    sl = level + BREAK_ATR * atr_touch
-    entry = level
-    end = min(touch_bar + MAX_BARS, n - 1)
-    
-    if highs[touch_bar] >= sl:
-        return "SL", (entry - sl) / entry * 100
-    if lows[touch_bar] <= tp:
-        return "TP", (entry - tp) / entry * 100
-    
-    for j in range(touch_bar + 1, end + 1):
-        hit_sl = highs[j] >= sl
-        hit_tp = lows[j] <= tp
-        if hit_sl and hit_tp:
-            return "SL", (entry - sl) / entry * 100
-        if hit_sl:
-            return "SL", (entry - sl) / entry * 100
-        if hit_tp:
-            return "TP", (entry - tp) / entry * 100
-    
-    return "TIMEOUT", (entry - closes[end]) / entry * 100
-
-
-# ============================================================
-# BACKTEST PER METHOD PER STOCK
-# ============================================================
-def backtest_stock(kode, method, df):
-    if df is None or len(df) < 150: return []
-    df = df.sort_values("Date").reset_index(drop=True)
-    dates  = df["Date"].values
-    highs  = df["High"].astype(float).values
-    lows   = df["Low"].astype(float).values
-    closes = df["Close"].astype(float).values
-    n = len(df)
-    
-    atr = compute_atr(highs, lows, closes)
-    
-    results = []
-    active_levels = []  # list of dict {price, side, bar, last_touch}
-    last_detect = -100
-    
-    # Detect ulang tiap 3 bar (cukup cepat)
-    for i in range(60, n - MAX_BARS - 1):
-        if np.isnan(atr[i]) or atr[i] <= 0:
+    rows = []
+    for i in cand_idx:
+        if i + 1 >= n: continue
+        signal_close = c[i]
+        entry = o[i + 1]
+        if np.isnan(entry) or entry <= 0 or signal_close <= 0:
             continue
-        
-        # Deteksi level baru
-        if i - last_detect >= 3:
-            new_lv = detect_all(method, highs, lows, closes, dates, i, atr)
-            for price, side, bar in new_lv:
-                active_levels.append({
-                    "price": price, "side": side, "bar": bar, "last_touch": -999
-                })
-            last_detect = i
-        
-        # Expire level lama
-        active_levels = [lv for lv in active_levels if i - lv["bar"] <= LOOKBACK]
-        
-        # Cek touch di bar i
-        for lv in active_levels:
-            if i - lv["last_touch"] < DEBOUNCE:
-                continue
-            
-            price = lv["price"]
-            side = lv["side"]
-            tol = TOUCH_ATR * atr[i]
-            
-            touched = False
-            if side == "support":
-                if lows[i] <= price + tol and lows[i] >= price - tol:
-                    touched = True
-            else:
-                if highs[i] >= price - tol and highs[i] <= price + tol:
-                    touched = True
-            
-            if not touched:
-                continue
-            
-            lv["last_touch"] = i
-            
-            # Simulate
-            if side == "support":
-                result, ret_pct = simulate_support(price, i, highs, lows, closes, atr[i], n)
-            else:
-                result, ret_pct = simulate_resistance(price, i, highs, lows, closes, atr[i], n)
-            
-            if result is None:
-                continue
-            
-            results.append({
-                "kode": kode,
-                "method": method,
-                "date": pd.Timestamp(dates[i]),
-                "side": side,
-                "result": result,
-                "ret_pct": ret_pct,
-                "net_ret": ret_pct - FEE_PCT,
+
+        gap_pct = (entry / signal_close - 1) * 100
+        if gap_pct < 2 or gap_pct > 20:
+            continue
+
+        sl_price = entry * (1 - SL_PCT)
+
+        # For each trail config, simulate
+        for trail in TRAIL_CONFIGS:
+            key = f"trail{int(trail*1000)}"
+            peak = entry
+            exit_ret = np.nan
+            exit_reason = "PENDING"
+
+            for j in range(i + 1, min(i + 1 + MAX_DAYS, n)):
+                hj = h[j]; lj = l[j]
+                if np.isnan(hj) or np.isnan(lj): continue
+                if hj > peak:
+                    peak = hj
+                trail_stop = peak * (1 - trail)
+
+                if trail_stop > entry and lj <= trail_stop:
+                    exit_ret = (trail_stop / entry) - 1
+                    exit_reason = "TRAIL"
+                    break
+                if lj <= sl_price:
+                    exit_ret = -SL_PCT
+                    exit_reason = "SL"
+                    break
+
+            if exit_reason == "PENDING":
+                last_idx = min(i + 1 + MAX_DAYS, n) - 1
+                if not np.isnan(c[last_idx]):
+                    exit_ret = (c[last_idx] / entry) - 1
+                    exit_reason = "HOLD"
+
+            rows.append({
+                "Date": dates[i],
+                "Kode": kode,
+                "gap_pct": gap_pct,
+                "ret1": ret1[i], "ret3": ret3[i], "ret5": ret5[i],
+                "ret10": ret10[i], "px20": px20[i], "px50": px50[i],
+                "range": rng[i], "vol_z": vz[i], "atr": atr[i],
+                "consec_up": cu[i], "hl5": hl5[i], "pos_52w": p52[i],
+                "trail_cfg": key,
+                "exit_ret": exit_ret * 100 if not np.isnan(exit_ret) else np.nan,
+                "exit_reason": exit_reason,
             })
-    
-    return results
+
+    return pd.DataFrame(rows) if rows else None
 
 
-# ============================================================
-# WRAPPER UNTUK MULTIPROCESSING
-# ============================================================
-def _worker(args):
-    kode, method, df = args
-    try:
-        return backtest_stock(kode, method, df)
-    except Exception:
-        return []
+def main():
+    print("="*95)
+    print("WR90 HUNTER — Target WR ≥ 90%, N ≥ 1500")
+    print("="*95)
 
+    df = pd.read_parquet(FIXED_PARQUET)
+    df = df.sort_values(["Kode", "Date"]).reset_index(drop=True)
+    df = df[(df["Close"] >= MIN_PRICE) & (df["Volume"] >= MIN_VOLUME)].reset_index(drop=True)
+    print(f"Data: {len(df):,}")
 
-# ============================================================
-# ANALISIS PER METODE
-# ============================================================
-def analyze_method(df_res, method):
-    if df_res.empty:
-        return None
-    
-    df_res = df_res.copy()
-    df_res["win"] = (df_res["net_ret"] > 0).astype(int)
-    
-    # Split by date
-    dates_sorted = sorted(df_res["date"].unique())
-    if len(dates_sorted) < 10:
-        return None
-    n_dates = len(dates_sorted)
-    split_train = dates_sorted[int(n_dates * SPLIT_TRAIN)]
-    split_val   = dates_sorted[int(n_dates * SPLIT_VAL)]
-    
-    tr = df_res[df_res["date"] < split_train]
-    va = df_res[(df_res["date"] >= split_train) & (df_res["date"] < split_val)]
-    te = df_res[df_res["date"] >= split_val]
-    
-    def _stats(sub):
-        if len(sub) < 20:
-            return None
-        wr = sub["win"].mean() * 100
-        avg = sub["net_ret"].mean()
-        return {"n": len(sub), "wr": wr, "avg": avg}
-    
-    stats_all = _stats(df_res)
-    stats_tr = _stats(tr)
-    stats_va = _stats(va)
-    stats_te = _stats(te)
-    
-    if stats_all is None:
-        return None
-    
-    # Per-side breakdown
-    sup = df_res[df_res["side"] == "support"]
-    res = df_res[df_res["side"] == "resistance"]
-    
-    sup_wr = (sup["win"].mean() * 100) if len(sup) >= 20 else None
-    res_wr = (res["win"].mean() * 100) if len(res) >= 20 else None
-    
-    return {
-        "method": method,
-        "n": stats_all["n"],
-        "wr": stats_all["wr"],
-        "avg_ret": stats_all["avg"],
-        "sup_n": len(sup),
-        "sup_wr": sup_wr,
-        "res_n": len(res),
-        "res_wr": res_wr,
-        "n_tr": stats_tr["n"] if stats_tr else 0,
-        "wr_tr": stats_tr["wr"] if stats_tr else None,
-        "n_va": stats_va["n"] if stats_va else 0,
-        "wr_va": stats_va["wr"] if stats_va else None,
-        "n_te": stats_te["n"] if stats_te else 0,
-        "wr_te": stats_te["wr"] if stats_te else None,
-        "stable": (
-            stats_tr and stats_va and stats_te
-            and abs(stats_tr["wr"] - stats_te["wr"]) < 5
-            and abs(stats_va["wr"] - stats_te["wr"]) < 5
+    print("Proses (20 workers)...")
+    with concurrent.futures.ProcessPoolExecutor(max_workers=20) as ex:
+        futures = [ex.submit(_process, (k, g)) for k, g in df.groupby("Kode")]
+        results = [f.result() for f in concurrent.futures.as_completed(futures)]
+    sig_df = pd.concat([r for r in results if r is not None], ignore_index=True)
+    sig_df = sig_df.dropna(subset=["exit_ret"]).reset_index(drop=True)
+    print(f"Kandidat gap 2-20% × 4 trail configs: {len(sig_df):,}\n")
+
+    # ============================================================
+    # DEFINE BASE RULES (longgar)
+    # ============================================================
+    base_rules = {
+        "A_Orig": (sig_df["ret1"] > 0.15) & (sig_df["ret5"] > 0.15) & (sig_df["px20"] > 0.20),
+        "A_Loose": (sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.10) & (sig_df["px20"] > 0.10),
+        "A_Mid": (sig_df["ret1"] > 0.12) & (sig_df["ret5"] > 0.12) & (sig_df["px20"] > 0.15),
+        "B_Loose": (sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.15) & (sig_df["range"] > 0.08) & (sig_df["vol_z"] > 1.5),
+        "New_C": (sig_df["ret3"] > 0.12) & (sig_df["px20"] > 0.15),
+        "New_C2": (sig_df["ret3"] > 0.10) & (sig_df["px20"] > 0.10),
+        "Union_AC": (
+            ((sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.10) & (sig_df["px20"] > 0.10)) |
+            ((sig_df["ret3"] > 0.12) & (sig_df["px20"] > 0.15))
+        ),
+        "Union_ABC": (
+            ((sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.10) & (sig_df["px20"] > 0.10)) |
+            ((sig_df["ret1"] > 0.10) & (sig_df["ret5"] > 0.15) & (sig_df["range"] > 0.08) & (sig_df["vol_z"] > 1.5)) |
+            ((sig_df["ret3"] > 0.12) & (sig_df["px20"] > 0.15))
         ),
     }
 
+    # ============================================================
+    # GAP FILTERS
+    # ============================================================
+    gap_filters = {
+        "Gap 2-20%": (sig_df["gap_pct"] >= 2) & (sig_df["gap_pct"] <= 20),
+        "Gap 2-10%": (sig_df["gap_pct"] >= 2) & (sig_df["gap_pct"] <= 10),
+        "Gap 2-15%": (sig_df["gap_pct"] >= 2) & (sig_df["gap_pct"] <= 15),
+        "Gap 5-15%": (sig_df["gap_pct"] >= 5) & (sig_df["gap_pct"] <= 15),
+        "Gap 3-20%": (sig_df["gap_pct"] >= 3) & (sig_df["gap_pct"] <= 20),
+    }
 
-# ============================================================
-# MAIN
-# ============================================================
-def main():
-    print("=" * 120)
-    print("BACKTEST: 12 METODE DETEKSI S/R — JUJUR, FORWARD-LOOKING")
-    print("=" * 120)
-    print(f"Touch toleransi : {TOUCH_ATR} ATR")
-    print(f"Bounce (TP)     : {BOUNCE_ATR} ATR")
-    print(f"Break (SL)      : {BREAK_ATR} ATR")
-    print(f"Max bars        : {MAX_BARS}")
-    print(f"Fee round-trip  : {FEE_PCT}%")
-    print(f"Split           : {SPLIT_TRAIN*100:.0f}% train, "
-          f"{(SPLIT_VAL-SPLIT_TRAIN)*100:.0f}% val, "
-          f"{(1-SPLIT_VAL)*100:.0f}% test")
-    print()
-    
-    print("Loading data...")
-    df_all = load_parquet_safe()
-    if df_all is None or df_all.empty:
-        print("❌ Gagal load data."); return
-    
-    df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
-    df_all["Date"] = pd.to_datetime(df_all["Date"], errors="coerce")
-    df_all = df_all.dropna(subset=["Date"])
-    
-    tickers = df_all["Kode"].unique()
-    print(f"📊 Total {len(tickers)} saham.")
-    
-    # Group by ticker untuk multiprocessing
-    groups = {k: v for k, v in df_all.groupby("Kode")}
-    del df_all
-    
-    # Prepare jobs: (kode, method, df) untuk semua kombinasi
-    jobs = []
-    for method in METHODS:
-        for kode, df in groups.items():
-            jobs.append((kode, method, df))
-    
-    print(f"🔬 {len(jobs):,} job (saham × metode). Jalankan paralel...\n")
-    
-    # Run parallel
-    all_results = {m: [] for m in METHODS}
-    t0 = time.time()
-    
-    with ProcessPoolExecutor(max_workers=8) as ex:
-        futures = {ex.submit(_worker, job): job for job in jobs}
-        done = 0
-        for fut in as_completed(futures):
-            done += 1
-            try:
-                res = fut.result()
-                if res:
-                    for r in res:
-                        all_results[r["method"]].append(r)
-            except Exception:
-                pass
-            if done % max(1, len(jobs) // 40) == 0:
-                print(f"\r  Progress: {done}/{len(jobs)} ({done*100//len(jobs)}%) "
-                      f"· {time.time()-t0:.0f}s", end="", flush=True)
-    
-    print(f"\n\n✅ Selesai dalam {time.time()-t0:.0f} detik")
-    
-    # Analyze each method
-    print("\n" + "=" * 120)
-    print("HASIL — RANKING METODE DETEKSI S/R")
-    print("=" * 120)
-    
-    summary = []
-    for method in METHODS:
-        res_list = all_results.get(method, [])
-        if not res_list:
-            continue
-        df_res = pd.DataFrame(res_list)
-        analysis = analyze_method(df_res, method)
-        if analysis:
-            summary.append(analysis)
-    
-    if not summary:
-        print("❌ Tidak ada hasil.")
-        return
-    
-    df_sum = pd.DataFrame(summary).sort_values("wr", ascending=False).reset_index(drop=True)
-    
-    # Format columns
-    df_sum["wr_str"] = df_sum["wr"].apply(lambda x: f"{x:.1f}%" if pd.notna(x) else "—")
-    df_sum["avg_str"] = df_sum["avg_ret"].apply(lambda x: f"{x:+.2f}%" if pd.notna(x) else "—")
-    df_sum["sup_str"] = df_sum.apply(
-        lambda r: f"{r['sup_wr']:.1f}% ({r['sup_n']:,})" if pd.notna(r['sup_wr']) else "—", axis=1
-    )
-    df_sum["res_str"] = df_sum.apply(
-        lambda r: f"{r['res_wr']:.1f}% ({r['res_n']:,})" if pd.notna(r['res_wr']) else "—", axis=1
-    )
-    df_sum["split_str"] = df_sum.apply(
-        lambda r: (f"{r['wr_tr']:.1f}/{r['wr_va']:.1f}/{r['wr_te']:.1f}"
-                   if r['wr_tr'] is not None and r['wr_va'] is not None and r['wr_te'] is not None
-                   else "—"), axis=1
-    )
-    df_sum["stable_str"] = df_sum["stable"].apply(lambda x: "✅" if x else "⚠️")
-    
-    show = df_sum[["method", "n", "wr_str", "avg_str",
-                   "sup_str", "res_str", "split_str", "stable_str"]].copy()
-    show.columns = ["Metode", "N Touch", "WR Total", "Avg Ret",
-                    "Support (WR, N)", "Resistance (WR, N)",
-                    "WR Train/Val/Test", "Stabil?"]
-    show.index = range(1, len(show) + 1)
-    
-    print(f"\n{show.to_string()}")
-    
-    # Detail per side — metode TOP 3
-    print("\n" + "=" * 120)
-    print("DETAIL BREAKDOWN PER SIDE — METODE TERBAIK")
-    print("=" * 120)
-    
-    for _, r in df_sum.head(3).iterrows():
-        print(f"\n▶ {r['method']}  (N total: {r['n']:,}, WR: {r['wr']:.1f}%)")
-        if pd.notna(r['sup_wr']):
-            print(f"   Support   : {r['sup_wr']:.1f}% win dari {r['sup_n']:,} touch")
-        if pd.notna(r['res_wr']):
-            print(f"   Resistance: {r['res_wr']:.1f}% win dari {r['res_n']:,} touch")
-    
-    # Save
-    os.makedirs("quant/output", exist_ok=True)
-    df_sum.to_csv("quant/output/sr_methods_ranking.csv", index=False)
-    print(f"\n💾 Saved: quant/output/sr_methods_ranking.csv")
-    
-    # Honest verdict
-    print("\n" + "=" * 120)
-    print("VERDICT JUJUR")
-    print("=" * 120)
-    
-    best = df_sum.iloc[0]
-    top3 = df_sum.head(3)
-    
-    print(f"\n🏆 METODE TERBAIK (by total WR):")
-    for _, r in top3.iterrows():
-        marker = "✅" if r["stable"] else "⚠️"
-        print(f"   {marker} {r['method']:<15} WR {r['wr_str']:>7} | "
-              f"N {r['n']:>6,} | Avg {r['avg_str']:>7} | "
-              f"Stabil: {'YA' if r['stable'] else 'TIDAK'}")
-    
-    print(f"\n💡 INTERPRETASI:")
-    print(f"   • Metode dengan WR > 55% + stabil di 3 split = layak dipakai")
-    print(f"   • Metode dengan WR < 50% = lebih sering tembus dari pada memantul")
-    print(f"   • Cek juga 'Avg Ret' — kalau negatif, WR tinggi pun rugi karena fee")
-    print(f"   • Support WR lebih tinggi dari Resistance WR = trader-friendly")
-    print(f"   • Metode dengan N kecil (<500) = hasil belum reliable")
-    
-    best_stable = df_sum[df_sum["stable"]].head(1)
-    if not best_stable.empty:
-        r = best_stable.iloc[0]
-        print(f"\n   ✅ REKOMENDASI: '{r['method']}' — WR {r['wr_str']} konsisten "
-              f"di train/val/test, N {r['n']:,}, avg return {r['avg_str']}")
+    # ============================================================
+    # QUALITY FILTERS
+    # ============================================================
+    quality_filters = {
+        "none": pd.Series(True, index=sig_df.index),
+        "ATR>3%": sig_df["atr"] > 0.03,
+        "ATR>4%": sig_df["atr"] > 0.04,
+        "52w>0.7": sig_df["pos_52w"] > 0.7,
+        "52w>0.8": sig_df["pos_52w"] > 0.8,
+        "HL3": sig_df["hl5"] >= 3,
+        "HL4": sig_df["hl5"] >= 4,
+        "CU3": sig_df["consec_up"] >= 3,
+    }
+
+    # ============================================================
+    # TRAIL CONFIGS
+    # ============================================================
+    trail_configs = ["trail5", "trail7", "trail10", "trail12"]
+
+    # ============================================================
+    # GRID SEARCH
+    # ============================================================
+    print(f"{'='*95}")
+    print(f"GRID SEARCH: {len(base_rules)} base × {len(gap_filters)} gap × {len(quality_filters)} quality × {len(trail_configs)} trail")
+    print(f"Total: {len(base_rules) * len(gap_filters) * len(quality_filters) * len(trail_configs)}")
+    print(f"{'='*95}\n")
+
+    all_results = []
+    for bname, bmask in base_rules.items():
+        for gname, gmask in gap_filters.items():
+            for qname, qmask in quality_filters.items():
+                for tcfg in trail_configs:
+                    mask = bmask.fillna(False) & gmask.fillna(False) & qmask.fillna(False)
+                    sub = sig_df[mask & (sig_df["trail_cfg"] == tcfg)]
+                    n = len(sub)
+                    if n < 100: continue
+                    wr = (sub["exit_ret"] > 0).mean() * 100
+                    avg = sub["exit_ret"].mean()
+                    sl_rate = (sub["exit_reason"] == "SL").mean() * 100
+                    all_results.append({
+                        "Base": bname, "Gap": gname, "Quality": qname, "Trail": tcfg,
+                        "N": n, "WR": wr, "Avg": avg, "SL_rate": sl_rate,
+                    })
+
+    res_df = pd.DataFrame(all_results)
+    print(f"Valid combos: {len(res_df):,}\n")
+
+    # ============================================================
+    # FILTER: WR ≥ 90% AND N ≥ 1500
+    # ============================================================
+    print(f"{'='*95}")
+    print("🎯 TARGET: WR ≥ 90% AND N ≥ 1500")
+    print(f"{'='*95}\n")
+
+    hit_target = res_df[(res_df["WR"] >= 90) & (res_df["N"] >= 1500)].sort_values("WR", ascending=False)
+
+    if len(hit_target) > 0:
+        print(f"✅ FOUND {len(hit_target)} COMBOS!\n")
+        print(f"{'#':<3} {'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%':<8} {'SL%'}")
+        print(f"{'-'*95}")
+        for i, (_, r) in enumerate(hit_target.head(15).iterrows(), 1):
+            m = " 🥇" if i == 1 else (" 🥈" if i == 2 else (" 🥉" if i == 3 else ""))
+            print(f"{i:<3} {r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
+                  f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}  {r['SL_rate']:>4.1f}{m}")
+    else:
+        print("⚠️ Tidak ada yang WR ≥ 90% dengan N ≥ 1500.")
+        print("Coba turunkan ke N ≥ 1200:\n")
+        hit_target = res_df[(res_df["WR"] >= 90) & (res_df["N"] >= 1200)].sort_values("WR", ascending=False)
+        if len(hit_target) > 0:
+            print(f"{'#':<3} {'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%':<8} {'SL%'}")
+            print(f"{'-'*95}")
+            for i, (_, r) in enumerate(hit_target.head(15).iterrows(), 1):
+                print(f"{i:<3} {r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
+                      f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}  {r['SL_rate']:>4.1f}")
+
+    # ============================================================
+    # TOP WR OVERALL (any N ≥ 1000)
+    # ============================================================
+    print(f"\n{'='*95}")
+    print("🏆 TOP 15 WR (N ≥ 1000)")
+    print(f"{'='*95}\n")
+
+    top_wr = res_df[res_df["N"] >= 1000].sort_values("WR", ascending=False).head(15)
+    print(f"{'#':<3} {'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%':<8} {'SL%'}")
+    print(f"{'-'*95}")
+    for i, (_, r) in enumerate(top_wr.iterrows(), 1):
+        m = " 🥇" if i == 1 else (" 🥈" if i == 2 else (" 🥉" if i == 3 else ""))
+        print(f"{i:<3} {r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
+              f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}  {r['SL_rate']:>4.1f}{m}")
+
+    # ============================================================
+    # PARETO (N vs WR) with N ≥ 1000
+    # ============================================================
+    print(f"\n{'='*95}")
+    print("⚖️ PARETO OPTIMAL (N ≥ 1000)")
+    print(f"{'='*95}\n")
+
+    viable = res_df[res_df["N"] >= 1000].copy()
+    viable_sorted = viable.sort_values("N", ascending=False)
+
+    pareto = []
+    for _, r in viable_sorted.iterrows():
+        dominated = False
+        for _, other in viable.iterrows():
+            if other.name == r.name: continue
+            if other["N"] >= r["N"] and other["WR"] >= r["WR"] and (other["N"] > r["N"] or other["WR"] > r["WR"]):
+                dominated = True
+                break
+        if not dominated:
+            pareto.append(r)
+
+    print(f"{'Base':<12} {'Gap':<10} {'Quality':<8} {'Trail':<8} {'N':<7} {'WR%':<7} {'Avg%'}")
+    print(f"{'-'*80}")
+    for r in sorted(pareto, key=lambda x: x["N"], reverse=True):
+        marker = ""
+        if r["WR"] >= 90 and r["N"] >= 1500:
+            marker = " ⭐ (TARGET HIT)"
+        elif r["WR"] >= 90:
+            marker = " 🟡 (WR ok, N < 1500)"
+        print(f"{r['Base']:<12} {r['Gap']:<10} {r['Quality']:<8} {r['Trail']:<8} "
+              f"{r['N']:<7,} {r['WR']:>5.1f}  {r['Avg']:>+6.2f}{marker}")
+
+    # ============================================================
+    # EFEKTIVITAS FILTER
+    # ============================================================
+    print(f"\n{'='*95}")
+    print("📊 EFEKTIVITAS FILTER (dari TOP 30 WR tertinggi, N ≥ 1000)")
+    print(f"{'='*95}\n")
+
+    top30 = res_df[res_df["N"] >= 1000].sort_values("WR", ascending=False).head(30)
+
+    print("Quality filter yang sering muncul:")
+    for q, cnt in top30["Quality"].value_counts().items():
+        print(f"  {q:<10} {cnt}x")
+
+    print("\nGap filter yang sering muncul:")
+    for g, cnt in top30["Gap"].value_counts().items():
+        print(f"  {g:<10} {cnt}x")
+
+    print("\nTrail config yang sering muncul:")
+    for t, cnt in top30["Trail"].value_counts().items():
+        print(f"  {t:<10} {cnt}x")
+
+    print("\nBase rule yang sering muncul:")
+    for b, cnt in top30["Base"].value_counts().items():
+        print(f"  {b:<12} {cnt}x")
 
 
 if __name__ == "__main__":
