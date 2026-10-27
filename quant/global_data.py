@@ -1,28 +1,21 @@
-"""
-Ambil data global dari Yahoo Finance untuk Ringkasan Pagi.
-- Indeks global (Wall Street, Asia, Eropa)
-- Mata uang (USD/IDR, DXY)
-- Komoditas (Brent, Gold, Coal, CPO)
-"""
-
-import yfinance as yf
 import pandas as pd
-from datetime import datetime, timedelta
-from curl_cffi import requests as curl_requests # TAMBAHAN: Untuk bypass blokir cloud
+from datetime import datetime
 import time
+import random
+from curl_cffi import requests as curl_requests
 
 # ============================================================
 # DAFTAR TICKER
 # ============================================================
 INDEKS_GLOBAL = {
-    "Dow Jones": "    ^DJI",
-    "S&P 500": "      ^GSPC",
-    "Nasdaq": "       ^IXIC",
-    "Nikkei 225": "   ^N225",
-    "Hang Seng": "    ^HSI",
-    "Shanghai": "    000001.SS",
+    "Dow Jones": "^DJI",
+    "S&P 500": "^GSPC",
+    "Nasdaq": "^IXIC",
+    "Nikkei 225": "^N225",
+    "Hang Seng": "^HSI",
+    "Shanghai": "000001.SS",
     "STI Singapore": "^STI",
-    "DAX Jerman": "  ^GDAXI",
+    "DAX Jerman": "^GDAXI",
 }
 
 MATA_UANG = {
@@ -34,44 +27,89 @@ MATA_UANG = {
 
 KOMODITAS = {
     "Minyak Brent": "BZ=F",
-    "Minyak WTI": "  CL=F",
-    "Emas": "        GC=F",
-    "Perak": "       SI=F",
-    "Batu Bara": "   MTF=F",
+    "Minyak WTI": "CL=F",
+    "Emas": "GC=F",
+    "Perak": "SI=F",
+    "Batu Bara": "MTF=F",
     "CPO (Malaysia)": "FCPO.KL",
-    "Tembaga": "     HG=F",
+    "Tembaga": "HG=F",
 }
 
+# ============================================================
+# FUNGSI AMBIL DATA LANGSUNG DARI API YAHOO (BYPASS BLOCK)
+# ============================================================
+def fetch_yahoo_chart_direct(ticker, range_period="5d", interval="1d", max_retries=3):
+    """
+    Mengambil data historis langsung dari query1.finance.yahoo.com
+    menggunakan curl_cffi untuk menyamar sebagai browser.
+    """
+    ticker = ticker.strip()
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range={range_period}&interval={interval}"
+    
+    # Header lengkap untuk menipu Yahoo
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
 
-# ============================================================
-# FETCH DATA
-# ============================================================
+    session = curl_requests.Session(impersonate="chrome120")
+    
+    for attempt in range(max_retries):
+        try:
+            response = session.get(url, headers=headers, timeout=15)
+            
+            if response.status_code == 429:
+                # Rate limit, tunggu dan coba lagi
+                time.sleep((2 ** attempt) + random.uniform(0.5, 1.5))
+                continue
+                
+            response.raise_for_status()
+            data = response.json()
+            
+            result = data.get("chart", {}).get("result")
+            if not result:
+                return None
+                
+            timestamps = result[0].get("timestamp", [])
+            closes = result[0].get("indicators", {}).get("quote", [{}])[0].get("close", [])
+            
+            # Filter nilai None
+            valid_data = [(ts, c) for ts, c in zip(timestamps, closes) if c is not None]
+            if not valid_data:
+                return None
+                
+            df = pd.DataFrame(valid_data, columns=["Date", "Close"])
+            df["Date"] = pd.to_datetime(df["Date"], unit="s")
+            df.set_index("Date", inplace=True)
+            return df
+            
+        except Exception as e:
+            if attempt == max_retries - 1:
+                print(f"Gagal mengambil {ticker}: {e}")
+                return None
+            time.sleep((2 ** attempt) + random.uniform(0.5, 1.5))
+
+    return None
+
+
 def fetch_ticker(ticker, days=5):
-    """Ambil harga terakhir + perubahan % dari yfinance dengan pengaman cloud."""
-    try:
-        # 1. Buat sesi browser Chrome tiruan
-        session = curl_requests.Session(impersonate="chrome")
-        
-        # 2. Masukkan sesi ke dalam objek Ticker
-        t = yf.Ticker(ticker.strip(), session=session)
-        hist = t.history(period=f"{days}d")
+    """Ambil harga terakhir + perubahan %."""
+    df = fetch_yahoo_chart_direct(ticker, range_period=f"{days}d")
+    
+    if df is None or len(df) < 2:
+        return None
 
-        if hist.empty or len(hist) < 2:
-            return None
+    close_now = df["Close"].iloc[-1]
+    close_prev = df["Close"].iloc[-2]
+    change_pct = (close_now / close_prev - 1) * 100
 
-        close_now = hist["Close"].iloc[-1]
-        close_prev = hist["Close"].iloc[-2]
-        change_pct = (close_now / close_prev - 1) * 100
-
-        return {
-            "harga": float(close_now),
-            "prev": float(close_prev),
-            "change_pct": float(change_pct),
-            "tanggal": hist.index[-1].strftime("%d %b %Y"),
-        }
-    except Exception as e:
-        return {"error": str(e)}
-
+    return {
+        "harga": float(close_now),
+        "prev": float(close_prev),
+        "change_pct": float(change_pct),
+        "tanggal": df.index[-1].strftime("%d %b %Y"),
+    }
 
 def get_all_global_data():
     """Ambil semua data global sekaligus."""
@@ -87,128 +125,22 @@ def get_all_global_data():
         result = fetch_ticker(ticker)
         if result and "error" not in result:
             data["indeks"][nama] = result
-        time.sleep(0.2) # Jeda sedikit agar tidak dicurigai bot
+        time.sleep(0.5)
 
     # Mata uang
     for nama, ticker in MATA_UANG.items():
         result = fetch_ticker(ticker)
         if result and "error" not in result:
             data["mata_uang"][nama] = result
-        time.sleep(0.2)
+        time.sleep(0.5)
 
     # Komoditas
     for nama, ticker in KOMODITAS.items():
         result = fetch_ticker(ticker)
         if result and "error" not in result:
             data["komoditas"][nama] = result
-        time.sleep(0.2)
+        time.sleep(0.5)
 
     return data
 
-
-# ============================================================
-# ANALISIS SENTIMEN
-# ============================================================
-def hitung_sentimen(data):
-    """Hitung sentimen global dari data."""
-    positif = 0
-    negatif = 0
-    netral = 0
-    detail = []
-
-    # Indeks global (bobot 1)
-    for nama, d in data.get("indeks", {}).items():
-        chg = d["change_pct"]
-        if chg > 0.3:
-            positif += 1
-            detail.append(f"✅ {nama}: {chg:+.2f}%")
-        elif chg < -0.3:
-            negatif += 1
-            detail.append(f"❌ {nama}: {chg:+.2f}%")
-        else:
-            netral += 1
-            detail.append(f"➖ {nama}: {chg:+.2f}%")
-
-    # Komoditas (bobot 1)
-    for nama, d in data.get("komoditas", {}).items():
-        chg = d["change_pct"]
-        if chg > 0.5:
-            positif += 1
-        elif chg < -0.5:
-            negatif += 1
-        else:
-            netral += 1
-
-    # USD/IDR (khusus: naik = negatif untuk IDX)
-    usd_idr = data.get("mata_uang", {}).get("USD/IDR", {})
-    if usd_idr:
-        chg = usd_idr["change_pct"]
-        if chg > 0.2:
-            negatif += 2  # rupiah melemah = negatif untuk IHSG
-        elif chg < -0.2:
-            positif += 2  # rupiah menguat = positif
-        else:
-            netral += 1
-
-    total = positif + negatif + netral
-    if total == 0:
-        return "NETRAL", "Data tidak cukup", detail
-
-    skor_positif = positif / total
-
-    if skor_positif >= 0.65:
-        status = "BULLISH KUAT"
-        emoji = "🟢🟢"
-    elif skor_positif >= 0.55:
-        status = "BULLISH"
-        emoji = "🟢"
-    elif skor_positif <= 0.30:
-        status = "BEARISH KUAT"
-        emoji = "🔴🔴"
-    elif skor_positif <= 0.45:
-        status = "BEARISH"
-        emoji = "🔴"
-    else:
-        status = "NETRAL"
-        emoji = "🟡"
-
-    return f"{emoji} {status}", f"Positif: {positif}, Negatif: {negatif}, Netral: {netral}", detail
-
-
-def get_dampak_ihsg(data):
-    """Analisis dampak spesifik ke IHSG."""
-    dampak = []
-
-    # Wall Street
-    dj = data["indeks"].get("Dow Jones", {}).get("change_pct", 0)
-    sp = data["indeks"].get("S&P 500", {}).get("change_pct", 0)
-    ns = data["indeks"].get("Nasdaq", {}).get("change_pct", 0)
-    ws_avg = (dj + sp + ns) / 3 if any([dj, sp, ns]) else 0
-
-    if ws_avg > 0.5:
-        dampak.append(("Wall Street", f"{ws_avg:+.2f}%", "POSITIF", "Bursa AS naik, sentimen global positif"))
-    elif ws_avg < -0.5:
-        dampak.append(("Wall Street", f"{ws_avg:+.2f}%", "NEGATIF", "Bursa AS turun, waspada"))
-    else:
-        dampak.append(("Wall Street", f"{ws_avg:+.2f}%", "NETRAL", "Bursa AS mixed"))
-
-    # USD/IDR
-    usd_idr = data["mata_uang"].get("USD/IDR", {})
-    if usd_idr:
-        chg = usd_idr["change_pct"]
-        harga = usd_idr["harga"]
-        if chg > 0.2:
-            dampak.append(("USD/IDR", f"{harga:,.0f} ({chg:+.2f}%)", "NEGATIF", "Rupiah melemah, tekanan jual asing"))
-        elif chg < -0.2:
-            dampak.append(("USD/IDR", f"{harga:,.0f} ({chg:+.2f}%)", "POSITIF", "Rupiah menguat, asing masuk"))
-        else:
-            dampak.append(("USD/IDR", f"{harga:,.0f} ({chg:+.2f}%)", "NETRAL", "Rupiah stabil"))
-
-    # Minyak
-    brent = data["komoditas"].get("Minyak Brent", {}).get("change_pct", 0)
-    if brent > 1:
-        dampak.append(("Minyak Brent", f"{brent:+.2f}%", "POSITIF", "Minyak naik, positif untuk energi"))
-    elif brent < -1:
-        dampak.append(("Minyak Brent", f"{brent:+.2f}%", "NEGATIF", "Minyak turun, tekanan ke energi"))
-
-    return dampak
+# ... (Bagian hitung_sentimen dan get_dampak_ihsg biarkan sama persis) ...
