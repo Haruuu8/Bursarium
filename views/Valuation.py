@@ -38,6 +38,51 @@ PE_SUSPECT_HIGH = 3.0
 
 
 # ============================================================
+# HELPER: RENDER TABEL MONOKROM (HTML)
+# ============================================================
+def render_monochrome_table(df):
+    """Mengubah DataFrame pandas menjadi tabel HTML dengan desain monokrom."""
+    html_table = df.to_html(index=False, border=0, classes="mono-table")
+    css = """
+    <style>
+    .mono-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #171717;
+        border-radius: 8px;
+        overflow: hidden;
+        font-size: 13px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+        margin-bottom: 24px;
+        border: 1px solid #27272a;
+    }
+    .mono-table th {
+        background-color: #262626;
+        color: #a3a3a3;
+        padding: 14px 16px;
+        text-align: left;
+        border-bottom: 1px solid #27272a;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .mono-table td {
+        padding: 14px 16px;
+        color: #ffffff;
+        border-bottom: 1px solid #27272a;
+        font-weight: 500;
+    }
+    .mono-table tr:last-child td {
+        border-bottom: none;
+    }
+    .mono-table tr:hover td {
+        background-color: #262626;
+    }
+    </style>
+    """
+    st.markdown(css + html_table, unsafe_allow_html=True)
+
+
+# ============================================================
 # HELPERS
 # ============================================================
 @st.cache_data(ttl=3600)
@@ -763,8 +808,7 @@ else:
     })
     df_show.insert(0, "No", range(1, len(df_show) + 1))
 
-    st.dataframe(df_show, use_container_width=True, hide_index=True,
-                 height=min(600, 40 + len(df_show) * 35))
+    render_monochrome_table(df_show)
 
     st.caption(f"{len(df_show)} saham undervalued - "
                f"Diurutkan berdasarkan Skor (Kualitas Fundamental & Valuasi)")
@@ -801,8 +845,7 @@ if not val_redflag.empty:
             "red_flag": "Alasan",
         })
 
-        st.dataframe(df_rf, use_container_width=True, hide_index=True,
-                     height=min(500, 40 + len(df_rf) * 35))
+        render_monochrome_table(df_rf)
 
 
 # ============================================================
@@ -821,7 +864,7 @@ with st.expander("Median PE & PB per Sektor (referensi)"):
     if rows:
         df_med = pd.DataFrame(rows).sort_values("Median PE (capped 15)").reset_index(drop=True)
         df_med.insert(0, "No", range(1, len(df_med) + 1))
-        st.dataframe(df_med, use_container_width=True, hide_index=True)
+        render_monochrome_table(df_med)
         st.caption(f"Target PE dipakai = median x {TARGET_DISCOUNT} (diskon 10%) - "
                    f"Target PB dipakai = median x {TARGET_DISCOUNT} - "
                    f"FV final x {MARGIN_OF_SAFETY} (margin of safety 15%)")
