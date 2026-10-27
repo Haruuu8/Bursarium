@@ -52,39 +52,33 @@ STATUS_STYLE = {
 # ============================================================
 # LOAD DATA GLOBAL (YFINANCE) - FIX BLOKIR CLOUD
 # ============================================================
+# Pastikan di bagian atas file kamu ada: from quant.global_data import fetch_yahoo_chart_direct
+
 @st.cache_data(ttl=3600)
 def load_global_data():
     tickers = list(SEKTOR_ID.keys()) + [BENCHMARK]
     data = {}
     
-    # Gunakan sesi curl_cffi untuk menyamar sebagai browser
-    session = curl_requests.Session(impersonate="chrome")
-    
     for t in tickers:
-        try:
-            # Ambil data satu per satu (jauh lebih stabil di cloud daripada yf.download massal)
-            ticker = yf.Ticker(t, session=session)
-            hist = ticker.history(period="1y", auto_adjust=False)
+        # GUNAKAN FUNGSI BARU INI (Bypass Yahoo)
+        df = fetch_yahoo_chart_direct(t, range_period="1y", interval="1d")
+        
+        if df is not None and not df.empty:
+            data[t] = df["Close"]
+        else:
+            print(f"Gagal total mengambil {t}")
             
-            if not hist.empty and "Close" in hist.columns:
-                data[t] = hist["Close"]
-            
-            # Jeda sedikit agar tidak dianggap bot/rate-limit
-            time.sleep(0.3) 
-        except Exception as e:
-            print(f"Gagal mengambil {t}: {e}")
+        # Jeda sedikit antar ticker
+        time.sleep(0.8) 
             
     if not data:
-        raise ValueError("Semua data sektor gagal diunduh dari Yahoo Finance. Silakan coba lagi nanti.")
+        raise ValueError("Semua data sektor gagal diunduh. Silakan coba refresh.")
         
-    # Gabungkan menjadi satu DataFrame
     df = pd.DataFrame(data)
-    
-    # Isi data yang bolong & buang baris yang masih NaN
     df = df.ffill().bfill().dropna()
     
     if len(df) < 35:
-        raise ValueError(f"Data terlalu sedikit ({len(df)} hari). Silakan coba lagi nanti.")
+        raise ValueError(f"Data terlalu sedikit ({len(df)} hari).")
         
     return df
 
