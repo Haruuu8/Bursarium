@@ -16,7 +16,7 @@ COLORS = {
 THEME_CSS = """
 <style>
 /* ============================================================
-   BUNUH WARNA BIRU/MERAH BAWAAN STREAMLIT (SLIDER, CHECKBOX, DLL)
+   BUNUH WARNA BIRU/MERAH BAWAAN STREAMLIT
    ============================================================ */
 :root, .stApp {
     --primary-color: #ffffff !important;
@@ -118,52 +118,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   INPUTS & TOMBOL PLUS MINUS
+   INPUTS & TOMBOL PLUS MINUS (DIPAKSA ABU-ABU)
    ============================================================ */
-div[data-baseweb="input"], 
+/* Text Input & Number Input Wrapper */
+div[data-testid="stTextInput"] div[data-baseweb="input"],
+div[data-testid="stNumberInput"] div[data-baseweb="input"],
 div[data-testid="stNumberInput"] > div > div {
     background-color: #262626 !important;
     border: 1px solid #404040 !important;
     border-radius: 8px !important;
-    transition: border-color 0.2s ease !important;
+    overflow: hidden !important;
 }
 
-div[data-baseweb="input"]:focus-within,
-div[data-testid="stNumberInput"] > div > div:focus-within {
-    border-color: #ffffff !important;
-    box-shadow: 0 0 0 1px #ffffff !important;
-}
-
+/* Inner div bawaan Streamlit harus transparan */
 div[data-baseweb="input"] > div {
     background-color: transparent !important;
     border: none !important;
 }
 
-.stTextInput > div > div > input,
-.stNumberInput > div > div > input {
-    background: transparent !important;
+/* Teks di dalam input */
+div[data-baseweb="input"] input {
+    background-color: transparent !important;
     color: #ffffff !important;
-    padding: 10px 14px !important;
     font-weight: 600 !important;
+    padding: 10px 14px !important;
 }
 
-button[data-testid="stNumberInputStepUp"], 
-button[data-testid="stNumberInputStepDown"] {
+/* Efek Fokus */
+div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within,
+div[data-testid="stNumberInput"] div[data-baseweb="input"]:focus-within {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 1px #ffffff !important;
+}
+
+/* Tombol Plus (+) dan Minus (-) */
+div[data-testid="stNumberInput"] button {
     background-color: #404040 !important;
     color: #ffffff !important;
-    border: none !important;
-    transition: background-color 0.2s ease !important;
+    border-left: 1px solid #525252 !important;
+    border-radius: 0 !important;
 }
-button[data-testid="stNumberInputStepUp"]:hover, 
-button[data-testid="stNumberInputStepDown"]:hover {
+div[data-testid="stNumberInput"] button:hover {
     background-color: #525252 !important;
 }
-button[data-testid="stNumberInputStepUp"] svg, 
-button[data-testid="stNumberInputStepDown"] svg {
+div[data-testid="stNumberInput"] button svg {
     fill: #ffffff !important;
     color: #ffffff !important;
 }
 
+/* Selectbox */
 .stSelectbox > div > div {
     background: #262626 !important;
     border: 1px solid #404040 !important;
@@ -197,10 +200,10 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     box-shadow: none !important;
 }
 [data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:first-child {
-    background: #ffffff !important; /* Track kiri (aktif) */
+    background: #ffffff !important;
 }
 [data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:last-child {
-    background: #404040 !important; /* Track kanan (tidak aktif) */
+    background: #404040 !important;
 }
 [data-testid="stSlider"] [data-testid="stThumbValue"],
 [data-testid="stSlider"] [data-testid="stTickBarMin"],
@@ -209,9 +212,7 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     font-weight: 700 !important;
 }
 
-/* ============================================================
-   CHECKBOX
-   ============================================================ */
+/* CHECKBOX */
 [data-testid="stCheckbox"] input:checked + div {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
