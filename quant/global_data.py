@@ -1,3 +1,7 @@
+"""
+Ambil data global dari Yahoo Finance untuk Ringkasan Pagi.
+"""
+import yfinance as yf
 import pandas as pd
 from datetime import datetime
 import time
@@ -46,7 +50,6 @@ def fetch_yahoo_chart_direct(ticker, range_period="5d", interval="1d", max_retri
     ticker = ticker.strip()
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range={range_period}&interval={interval}"
     
-    # Header lengkap untuk menipu Yahoo
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "application/json",
@@ -60,7 +63,6 @@ def fetch_yahoo_chart_direct(ticker, range_period="5d", interval="1d", max_retri
             response = session.get(url, headers=headers, timeout=15)
             
             if response.status_code == 429:
-                # Rate limit, tunggu dan coba lagi
                 time.sleep((2 ** attempt) + random.uniform(0.5, 1.5))
                 continue
                 
@@ -74,7 +76,6 @@ def fetch_yahoo_chart_direct(ticker, range_period="5d", interval="1d", max_retri
             timestamps = result[0].get("timestamp", [])
             closes = result[0].get("indicators", {}).get("quote", [{}])[0].get("close", [])
             
-            # Filter nilai None
             valid_data = [(ts, c) for ts, c in zip(timestamps, closes) if c is not None]
             if not valid_data:
                 return None
@@ -111,6 +112,7 @@ def fetch_ticker(ticker, days=5):
         "tanggal": df.index[-1].strftime("%d %b %Y"),
     }
 
+
 def get_all_global_data():
     """Ambil semua data global sekaligus."""
     data = {
@@ -143,4 +145,110 @@ def get_all_global_data():
 
     return data
 
-# ... (Bagian hitung_sentimen dan get_dampak_ihsg biarkan sama persis) ...
+
+# ============================================================
+# ANALISIS SENTIMEN
+# ============================================================
+def hitung_sentimen(data):
+    """Hitung sentimen global dari data."""
+    positif = 0
+    negatif = 0
+    netral = 0
+    detail = []
+
+    # Indeks global (bobot 1)
+    for nama, d in data.get("indeks", {}).items():
+        chg = d["change_pct"]
+        if chg > 0.3:
+            positif += 1
+            detail.append(f"✅ {nama}: {chg:+.2f}%")
+        elif chg < -0.3:
+            negatif += 1
+            detail.append(f"❌ {nama}: {chg:+.2f}%")
+        else:
+            netral += 1
+            detail.append(f"➖ {nama}: {chg:+.2f}%")
+
+    # Komoditas (bobot 1)
+    for nama, d in data.get("komoditas", {}).items():
+        chg = d["change_pct"]
+        if chg > 0.5:
+            positif += 1
+        elif chg < -0.5:
+            negatif += 1
+        else:
+            netral += 1
+
+    # USD/IDR (khusus: naik = negatif untuk IDX)
+    usd_idr = data.get("mata_uang", {}).get("USD/IDR", {})
+    if usd_idr:
+        chg = usd_idr["change_pct"]
+        if chg > 0.2:
+            negatif += 2
+        elif chg < -0.2:
+            positif += 2
+        else:
+            netral += 1
+
+    total = positif + negatif + netral
+    if total == 0:
+        return "NETRAL", "Data tidak cukup", detail
+
+    skor_positif = positif / total
+
+    if skor_positif >= 0.65:
+        status = "BULLISH KUAT"
+        emoji = "🟢🟢"
+    elif skor_positif >= 0.55:
+        status = "BULLISH"
+        emoji = "🟢"
+    elif skor_positif <= 0.30:
+        status = "BEARISH KUAT"
+        emoji = "🔴🔴"
+    elif skor_positif <= 0.45:
+        status = "BEARISH"
+        emoji = "🔴"
+    else:
+        status = "NETRAL"
+        emoji = "🟡"
+
+    return f"{emoji} {status}", f"Positif: {positif}, Negatif: {negatif}, Netral: {netral}", detail
+
+
+def get_dampak_ihsg(data):
+    """Analisis dampak spesifik ke IHSG."""
+    dampak = []
+
+    # Wall Street
+    dj = data["indeks"].get("Dow Jones", {}).get("change_pct", 0)
+    sp = data["indeks"].get("S&P 500", {}).get("change_pct", 0)
+    ns = data["indeks"].get("Nasdaq", {}).get("change_pct", 0)
+    ws_avg = (dj + sp + ns) / 3 if any([dj, sp, ns]) else 0
+
+    if ws_avg > 0.5:
+        dampak.append(("Wall Street", f"{ws_avg:+.2f}%", "POSITIF", "Bursa AS naik, sentimen global positif"))
+    elif ws_avg < -0.5:
+        dampak.append(("Wall Street", f"{ws_avg:+.2f}%", "NEGATIF", "Bursa AS turun, waspada"))
+    else:
+        dampak.append(("Wall Street", f"{ws_avg:+.2f}%", "NETRAL", "Bursa AS mixed"))
+
+    # USD/IDR
+    usd_idr = data["mata_uang"].get("USD/IDR", {})
+    if usd_idr:
+        chg = usd_idr["change_pct"]
+        harga = usd_idr["harga"]
+        if chg > 0.2:
+            dampak.append(("USD/IDR", f"{harga:,.0f} ({chg:+.2f}%)", "NEGATIF", "Rupiah melemah, tekanan jual asing"))
+        elif chg < -0.2:
+            dampak.append(("USD/IDR", f"{harga:,.0f} ({chg:+.2f}%)", "POSITIF", "Rupiah menguat, asing masuk"))
+        else:
+            dampak.append(("USD/IDR", f"{harga:,.0f} ({chg:+.2f}%)", "NETRAL", "Rupiah stabil"))
+
+    # Minyak
+    brent = data["komoditas"].get("Minyak Brent", {}).get("change_pct", 0)
+    if brent > 1:
+        dampak.append(("Minyak Brent", f"{brent:+.2f}%", "POSITIF", "Minyak naik, positif untuk energi"))
+    elif brent < -1:
+        dampak.append(("Minyak Brent", f"{brent:+.2f}%", "NEGATIF", "Minyak turun, tekanan ke energi"))
+
+    return dampak
