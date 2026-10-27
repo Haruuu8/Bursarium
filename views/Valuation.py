@@ -1,20 +1,4 @@
-"""Halaman VALUATION - Fair Value (Conservative), Search, Top 10 Undervalued.
-
-Rumus:
-  FV = [ 0.40 x Graham + 0.30 x (EPS x PE_target) + 0.30 x (BVPS x PB_target) ]
-       x Margin of Safety (0.85)
-       capped max 2x harga
-
-  PE_target = min(median_sektor, 15) x 0.90
-  PB_target = min(median_sektor, 2.0) x 0.90
-
-Fitur:
-  - Search bar: ketik kode -> detail card (dengan red flag warning)
-  - Top 10 Undervalued (auto-sorted by Skor)
-  - Tabel semua saham undervalued (auto-sorted by Skor)
-  - Panel red flag (saham di-skip)
-  - Median PE/PB per sektor (referensi)
-"""
+"""Halaman VALUATION - Fair Value (Conservative), Search, Top 10 Undervalued."""
 
 import os
 import sys
@@ -431,24 +415,23 @@ st.markdown(section_title("Ringkasan Pasar"), unsafe_allow_html=True)
 c1, c2, c3, c4 = st.columns(4)
 for col, label, val_show, color in [
     (c1, "TOTAL SAHAM", f"{len(val_all)}", "#ffffff"),
-    (c2, "UNDERVALUED", f"{len(val_underval)}",
-     "#10b981" if len(val_underval) > 0 else "#94a3b8"),
-    (c3, "RED FLAG SKIP", f"{len(val_redflag)}", "#f59e0b"),
+    (c2, "UNDERVALUED", f"{len(val_underval)}", "#ffffff"),
+    (c3, "RED FLAG SKIP", f"{len(val_redflag)}", "#737373"),
     (c4, "AVG POTENTIAL",
      fmt_pct(val_underval["potential"].mean()
              if len(val_underval) > 0 else 0, 1, True),
-     "#10b981"),
+     "#ffffff"),
 ]:
     with col:
         st.markdown(
-            '<div style="background:linear-gradient(180deg, #131a2a, #0f1628); '
-            'border-radius:14px; padding:22px 24px; '
-            'border:1px solid #1a2338;">'
-            f'<div style="font-size:11px; color:#7d8ba3; '
-            f'letter-spacing:0.8px; font-weight:600;">{label}</div>'
-            f'<div style="font-size:28px; font-weight:800; '
-            f'color:{color}; margin-top:8px; '
-            f'letter-spacing:-0.03em;">{val_show}</div>'
+            '<div style="background: #0a0a0a; '
+            'border-radius: 8px; padding: 22px 24px; '
+            'border: 1px solid #262626;">'
+            f'<div style="font-size: 11px; color: #a3a3a3; '
+            f'letter-spacing: 0.8px; font-weight: 500;">{label}</div>'
+            f'<div style="font-size: 28px; font-weight: 600; '
+            f'color: {color}; margin-top: 8px; '
+            f'letter-spacing: -0.03em;">{val_show}</div>'
             '</div>',
             unsafe_allow_html=True
         )
@@ -501,85 +484,76 @@ if search_kode:
         is_suspect = suspect and not is_red
 
         if is_red:
-            pot_color = "#94a3b8"
+            pot_color = "#737373"
             pot_label = "TIDAK VALID"
-            accent = "#f43f5e"
+            accent = "#737373"
             status_badge = (
-                f'<span style="background:rgba(244,63,94,0.15); color:#f43f5e; '
-                f'padding:4px 10px; border-radius:6px; font-size:11px; '
-                f'font-weight:700;">RED FLAG - {red_flag}</span>'
+                f'<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+                f'padding:4px 10px; border-radius:4px; font-size:11px; '
+                f'font-weight:500;">RED FLAG - {red_flag}</span>'
             )
         elif is_suspect:
-            pot_color = "#f59e0b"
+            pot_color = "#a3a3a3"
             pot_label = "SUSPECT"
-            accent = "#f59e0b"
+            accent = "#a3a3a3"
             status_badge = (
-                '<span style="background:rgba(245,158,11,0.15); color:#f59e0b; '
-                'padding:4px 10px; border-radius:6px; font-size:11px; '
-                'font-weight:700;">Suspect - data perlu dicek</span>'
+                '<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+                'padding:4px 10px; border-radius:4px; font-size:11px; '
+                'font-weight:500;">Suspect - data perlu dicek</span>'
             )
         elif pd.isna(pot):
-            pot_color = "#94a3b8"
+            pot_color = "#737373"
             pot_label = "N/A"
-            accent = "#64748b"
+            accent = "#737373"
             status_badge = ""
         elif pot >= 40:
-            pot_color = "#10b981"
+            pot_color = "#ffffff"
             pot_label = "SANGAT MURAH"
-            accent = "#10b981"
+            accent = "#ffffff"
             status_badge = (
-                '<span style="background:rgba(16,185,129,0.15); color:#10b981; '
-                'padding:4px 10px; border-radius:6px; font-size:11px; '
-                'font-weight:700;">VALID</span>'
+                '<span style="background:#171717; color:#ffffff; border: 1px solid #262626; '
+                'padding:4px 10px; border-radius:4px; font-size:11px; '
+                'font-weight:500;">VALID</span>'
             )
         elif pot >= 20:
-            pot_color = "#34d399"
+            pot_color = "#ffffff"
             pot_label = "MURAH"
-            accent = "#34d399"
+            accent = "#ffffff"
             status_badge = (
-                '<span style="background:rgba(16,185,129,0.15); color:#10b981; '
-                'padding:4px 10px; border-radius:6px; font-size:11px; '
-                'font-weight:700;">VALID</span>'
+                '<span style="background:#171717; color:#ffffff; border: 1px solid #262626; '
+                'padding:4px 10px; border-radius:4px; font-size:11px; '
+                'font-weight:500;">VALID</span>'
             )
         elif pot >= 0:
-            pot_color = "#f59e0b"
+            pot_color = "#e5e5e5"
             pot_label = "WAJAR"
-            accent = "#f59e0b"
+            accent = "#e5e5e5"
             status_badge = (
-                '<span style="background:rgba(245,158,11,0.15); color:#f59e0b; '
-                'padding:4px 10px; border-radius:6px; font-size:11px; '
-                'font-weight:700;">WAJAR</span>'
-            )
-        elif pot >= -20:
-            pot_color = "#fb923c"
-            pot_label = "MAHAL"
-            accent = "#fb923c"
-            status_badge = (
-                '<span style="background:rgba(251,146,60,0.15); color:#fb923c; '
-                'padding:4px 10px; border-radius:6px; font-size:11px; '
-                'font-weight:700;">MAHAL</span>'
+                '<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+                'padding:4px 10px; border-radius:4px; font-size:11px; '
+                'font-weight:500;">WAJAR</span>'
             )
         else:
-            pot_color = "#f43f5e"
-            pot_label = "SANGAT MAHAL"
-            accent = "#f43f5e"
+            pot_color = "#737373"
+            pot_label = "MAHAL"
+            accent = "#737373"
             status_badge = (
-                '<span style="background:rgba(244,63,94,0.15); color:#f43f5e; '
-                'padding:4px 10px; border-radius:6px; font-size:11px; '
-                'font-weight:700;">SANGAT MAHAL</span>'
+                '<span style="background:#171717; color:#737373; border: 1px solid #262626; '
+                'padding:4px 10px; border-radius:4px; font-size:11px; '
+                'font-weight:500;">MAHAL</span>'
             )
 
         warning_banner = ""
         if is_red:
             warning_banner = (
-                '<div style="background:rgba(244,63,94,0.08); '
-                'border:1px solid rgba(244,63,94,0.3); '
-                'border-left:3px solid #f43f5e; border-radius:10px; '
+                '<div style="background:#171717; '
+                'border:1px solid #262626; '
+                'border-left:3px solid #737373; border-radius:4px; '
                 'padding:14px 18px; margin-bottom:20px;">'
-                '<div style="font-size:13px; font-weight:800; color:#f43f5e; '
+                '<div style="font-size:13px; font-weight:600; color:#a3a3a3; '
                 'margin-bottom:6px;">SAHAM INI TIDAK MASUK REKOMENDASI</div>'
-                f'<div style="font-size:12px; color:#cbd5e1; line-height:1.6;">'
-                f'Alasan: <b style="color:#f43f5e;">{red_flag}</b><br>'
+                f'<div style="font-size:12px; color:#a3a3a3; line-height:1.6;">'
+                f'Alasan: <b style="color:#ffffff;">{red_flag}</b><br>'
                 'Nilai potential di bawah tetap dihitung secara matematis, '
                 'tetapi <b>tidak bisa dijadikan dasar pembelian</b> karena '
                 'fundamental tidak memenuhi kriteria kelayakan.</div>'
@@ -587,68 +561,68 @@ if search_kode:
             )
 
         st.markdown(
-            f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-            f'border:1px solid #1a2338; border-left:4px solid {accent}; '
-            f'border-radius:16px; padding:24px 28px; margin:16px 0 20px;">'
+            f'<div style="background:#0a0a0a; '
+            f'border:1px solid #262626; border-left:3px solid {accent}; '
+            f'border-radius:8px; padding:24px 28px; margin:16px 0 20px;">'
 
             f'<div style="margin-bottom:20px;">'
-            f'<div style="font-size:26px; font-weight:900; color:#ffffff; letter-spacing:-0.03em;">{kode}</div>'
-            f'<div style="font-size:13px; color:#94a3b8; margin-top:4px;">{nama} - <span style="color:#64748b;">{sektor}</span></div>'
-            f'<div style="margin-top:10px;">{status_badge}</div>'
+            f'<div style="font-size:26px; font-weight:600; color:#ffffff; letter-spacing:-0.03em;">{kode}</div>'
+            f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px;">{nama} - <span style="color:#737373;">{sektor}</span></div>'
+            f'<div style="margin-top:12px;">{status_badge}</div>'
             f'</div>'
 
-            f'<div style="margin-bottom:20px;">'
-            f'<div style="font-size:11px; color:#64748b; letter-spacing:0.8px; font-weight:700;">HARGA SAAT INI</div>'
-            f'<div style="font-size:32px; font-weight:900; color:#ffffff; letter-spacing:-0.03em; margin-top:4px;">{fmt(harga, 0)}</div>'
+            f'<div style="margin-bottom:24px;">'
+            f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; font-weight:500;">HARGA SAAT INI</div>'
+            f'<div style="font-size:32px; font-weight:600; color:#ffffff; letter-spacing:-0.03em; margin-top:4px;">{fmt(harga, 0)}</div>'
             f'</div>'
 
             f'{warning_banner}'
 
             f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:14px 18px;">'
-            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">FAIR VALUE</div>'
-            f'<div style="font-size:22px; font-weight:800; color:#a5b4fc; margin-top:4px;">{fmt(fv, 0)}</div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:16px 18px;">'
+            f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px;">FAIR VALUE</div>'
+            f'<div style="font-size:22px; font-weight:600; color:#ffffff; margin-top:6px;">{fmt(fv, 0)}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:14px 18px;">'
-            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">POTENTIAL</div>'
-            f'<div style="font-size:22px; font-weight:800; color:{pot_color}; margin-top:4px;">{fmt_pct(pot, 1, True)}</div>'
-            f'<div style="font-size:10px; color:{pot_color}; font-weight:700; margin-top:2px;">{pot_label}</div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:16px 18px;">'
+            f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px;">POTENTIAL</div>'
+            f'<div style="font-size:22px; font-weight:600; color:{pot_color}; margin-top:6px;">{fmt_pct(pot, 1, True)}</div>'
+            f'<div style="font-size:11px; color:{pot_color}; font-weight:500; margin-top:4px;">{pot_label}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:14px 18px;">'
-            f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px;">SKOR</div>'
-            f'<div style="font-size:22px; font-weight:800; color:#ffffff; margin-top:4px;">{skor:.0f}<span style="font-size:12px; color:#64748b;">/100</span></div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:16px 18px;">'
+            f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px;">SKOR</div>'
+            f'<div style="font-size:22px; font-weight:600; color:#ffffff; margin-top:6px;">{skor:.0f}<span style="font-size:12px; color:#737373;">/100</span></div></div>'
             f'</div>'
 
             f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
-            f'<div style="font-size:10px; color:#64748b;">EPS</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(eps_val, 1)} <span style="font-size:10px; color:#64748b;">({eps_src})</span></div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
+            f'<div style="font-size:11px; color:#a3a3a3;">EPS</div>'
+            f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(eps_val, 1)} <span style="font-size:11px; color:#737373;">({eps_src})</span></div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
-            f'<div style="font-size:10px; color:#64748b;">BV</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(bv_val, 0)}</div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
+            f'<div style="font-size:11px; color:#a3a3a3;">BV</div>'
+            f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(bv_val, 0)}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
-            f'<div style="font-size:10px; color:#64748b;">ROE</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt_pct(roe, 1)}</div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
+            f'<div style="font-size:11px; color:#a3a3a3;">ROE</div>'
+            f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt_pct(roe, 1)}</div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
-            f'<div style="font-size:10px; color:#64748b;">PE</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(pe, 1)} <span style="font-size:10px; color:#64748b;">(tgt {fmt(target_pe, 1)})</span></div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
+            f'<div style="font-size:11px; color:#a3a3a3;">PE</div>'
+            f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(pe, 1)} <span style="font-size:11px; color:#737373;">(tgt {fmt(target_pe, 1)})</span></div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
-            f'<div style="font-size:10px; color:#64748b;">PB</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(pb, 2)} <span style="font-size:10px; color:#64748b;">(tgt {fmt(target_pb, 2)})</span></div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
+            f'<div style="font-size:11px; color:#a3a3a3;">PB</div>'
+            f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(pb, 2)} <span style="font-size:11px; color:#737373;">(tgt {fmt(target_pb, 2)})</span></div></div>'
 
-            f'<div style="background:#0a0f1e; border:1px solid #1a2338; border-radius:10px; padding:12px 16px;">'
-            f'<div style="font-size:10px; color:#64748b;">DER</div>'
-            f'<div style="font-size:15px; font-weight:700; color:#e6ebf5; margin-top:2px;">{fmt(de_val, 2)}</div></div>'
+            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
+            f'<div style="font-size:11px; color:#a3a3a3;">DER</div>'
+            f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(de_val, 2)}</div></div>'
             f'</div>'
 
-            f'<div style="border-top:1px solid #1a2338; padding-top:14px; display:flex; gap:20px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
-            f'<span>FV Graham: <b style="color:#cbd5e1;">{fmt(fv_graham, 0)}</b></span>'
-            f'<span>FV-PE: <b style="color:#cbd5e1;">{fmt(fv_pe, 0)}</b></span>'
-            f'<span>FV-PB: <b style="color:#cbd5e1;">{fmt(fv_pb, 0)}</b></span>'
+            f'<div style="border-top:1px solid #262626; padding-top:14px; display:flex; gap:20px; flex-wrap:wrap; font-size:12px; color:#a3a3a3;">'
+            f'<span>FV Graham: <b style="color:#ffffff; font-weight:500;">{fmt(fv_graham, 0)}</b></span>'
+            f'<span>FV-PE: <b style="color:#ffffff; font-weight:500;">{fmt(fv_pe, 0)}</b></span>'
+            f'<span>FV-PB: <b style="color:#ffffff; font-weight:500;">{fmt(fv_pb, 0)}</b></span>'
             f'</div>'
 
             f'</div>',
@@ -656,8 +630,7 @@ if search_kode:
         )
 
 st.markdown(
-    '<div style="height:1px; background:linear-gradient(90deg, transparent, '
-    '#334155, transparent); margin:28px 0 20px;"></div>',
+    '<div style="height:1px; background:#262626; margin:28px 0 20px;"></div>',
     unsafe_allow_html=True
 )
 
@@ -669,7 +642,6 @@ st.markdown(section_title("Top 10 Undervalued",
                           "Auto-sorted by Skor - Conservative FV"),
             unsafe_allow_html=True)
 
-# PERUBAHAN DI SINI: sort_values berdasarkan "skor", bukan "potential"
 top = val_underval.sort_values(by=["skor", "potential"], ascending=[False, False]).head(10).reset_index(drop=True)
 
 if top.empty:
@@ -691,66 +663,60 @@ else:
         sektor = r.get("sektor", "")
         eps_val = r.get("eps", np.nan)
 
-        if pot >= 40: pot_color = "#10b981"
-        elif pot >= 20: pot_color = "#34d399"
-        elif pot >= 0: pot_color = "#f59e0b"
-        else: pot_color = "#f43f5e"
-        
-        score_color = "#10b981" if skor >= 80 else "#818cf8" if skor >= 60 else "#94a3b8"
+        pot_color = "#ffffff" if pot >= 0 else "#737373"
 
         st.markdown(
-            f'<div style="background: #131a2a; border-radius: 12px; border: 1px solid #1e293b; padding: 20px; margin-bottom: 16px; border-left: 4px solid {score_color};">'
+            f'<div style="background: #0a0a0a; border-radius: 8px; border: 1px solid #262626; padding: 20px; margin-bottom: 16px; border-left: 3px solid #ffffff;">'
             
-            f'<div style="display: flex; justify-content: space-between; align-items: stretch; border-bottom: 1px solid #1e293b; padding-bottom: 12px; margin-bottom: 16px;">'
+            f'<div style="display: flex; justify-content: space-between; align-items: stretch; border-bottom: 1px solid #262626; padding-bottom: 12px; margin-bottom: 16px;">'
             f'<div style="flex: 1;">'
-            f'<div style="font-size: 24px; font-weight: 800; color: #fff; line-height: 1.2;">{kode}</div>'
-            f'<div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Last: {harga:,.2f}</div>'
+            f'<div style="font-size: 24px; font-weight: 600; color: #ffffff; line-height: 1.2;">{kode}</div>'
+            f'<div style="font-size: 12px; color: #a3a3a3; margin-top: 4px;">Last: {harga:,.2f}</div>'
             f'</div>'
-            f'<div style="width: 1px; background: #1e293b; margin: 0 16px;"></div>'
+            f'<div style="width: 1px; background: #262626; margin: 0 16px;"></div>'
             f'<div style="flex: 1; text-align: right; display: flex; flex-direction: column; justify-content: center;">'
-            f'<div style="font-size: 11px; color: #94a3b8;">Target Range:</div>'
-            f'<div style="font-size: 18px; font-weight: 800; color: #fff;">{fv:,.0f}</div>'
+            f'<div style="font-size: 11px; color: #737373;">Target Range:</div>'
+            f'<div style="font-size: 18px; font-weight: 600; color: #ffffff;">{fv:,.0f}</div>'
             f'</div>'
             f'</div>'
 
-            f'<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; text-align: center; border-bottom: 1px solid #1e293b; padding-bottom: 16px; margin-bottom: 16px;">'
+            f'<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; text-align: center; border-bottom: 1px solid #262626; padding-bottom: 16px; margin-bottom: 16px;">'
             f'<div>'
-            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">Rank:</div>'
-            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">#{i+1}</div>'
+            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">Rank:</div>'
+            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">#{i+1}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">ROE</div>'
-            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt_pct(roe, 1)}</div>'
+            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">ROE</div>'
+            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt_pct(roe, 1)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">DER</div>'
-            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(de_val, 2)}</div>'
+            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">DER</div>'
+            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(de_val, 2)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">EPS</div>'
-            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(eps_val, 1)}</div>'
+            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">EPS</div>'
+            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(eps_val, 1)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">PE</div>'
-            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(pe, 1)}</div>'
+            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">PE</div>'
+            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(pe, 1)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #94a3b8; margin-bottom: 4px;">PB</div>'
-            f'<div style="font-size: 14px; font-weight: 800; color: #fff;">{fmt(pb, 2)}</div>'
+            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">PB</div>'
+            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(pb, 2)}</div>'
             f'</div>'
             f'</div>'
 
             f'<div style="display: flex; justify-content: space-between; align-items: center;">'
             
-            f'<div style="position: relative; width: 65px; height: 65px; border-radius: 50%; background: conic-gradient({score_color} {skor}%, #1e293b 0); display: flex; align-items: center; justify-content: center;">'
-            f'<div style="width: 57px; height: 57px; background: #131a2a; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;">'
-            f'<span style="font-size: 10px; color: #94a3b8; line-height: 1;">Score:</span>'
-            f'<span style="font-size: 18px; font-weight: 800; color: #fff; line-height: 1.2;">{skor:.0f}</span>'
-            f'</div></div>'
+            f'<div style="background: #171717; border: 1px solid #262626; border-radius: 6px; padding: 8px 16px; display: flex; align-items: center; gap: 12px;">'
+            f'<span style="font-size: 11px; color: #a3a3a3;">Score:</span>'
+            f'<span style="font-size: 18px; font-weight: 600; color: #ffffff;">{skor:.0f}</span>'
+            f'</div>'
 
             f'<div style="text-align: right;">'
-            f'<div style="font-size: 11px; color: #94a3b8;">Potential:</div>'
-            f'<div style="font-size: 24px; font-weight: 900; color: {pot_color};">{pot:+.1f}%</div>'
+            f'<div style="font-size: 11px; color: #737373;">Potential:</div>'
+            f'<div style="font-size: 24px; font-weight: 600; color: {pot_color};">{pot:+.1f}%</div>'
             f'</div>'
             f'</div>'
             f'</div>',
@@ -763,7 +729,6 @@ else:
 # ============================================================
 st.markdown(section_title("Semua Saham Undervalued", "Auto-sorted by Skor"), unsafe_allow_html=True)
 
-# PERUBAHAN DI SINI: sort_values berdasarkan "skor", bukan "potential"
 tampil = val_underval.sort_values(by=["skor", "potential"], ascending=[False, False]).reset_index(drop=True)
 
 if tampil.empty:

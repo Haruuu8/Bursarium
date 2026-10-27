@@ -7,7 +7,7 @@ from quant.global_data import (
     get_all_global_data,
     hitung_sentimen,
     get_dampak_ihsg,
-    fetch_yahoo_chart_direct,  # <--- TAMBAHKAN BARIS INI
+    fetch_yahoo_chart_direct,
 )
 from quant.theme import load_theme, page_header, section_title
 
@@ -15,12 +15,10 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from datetime import datetime
-import yfinance as yf
-from curl_cffi import requests as curl_requests
-import time # TAMBAHAN: Untuk jeda waktu antar request
+import time 
 
 if not st.session_state.get("authentication_status"):
-    st.error("⚠ Silakan login dulu di halaman utama.")
+    st.error("Silakan login dulu di halaman utama.")
     st.stop()
 
 load_theme()
@@ -37,39 +35,26 @@ SEKTOR_ID = {
     "JXI": "Utilitas", "IXP": "Komunikasi"
 }
 
-SEKTOR_ICON = {
-    "IXN": "💻", "IXG": "🏦", "IXJ": "💊", "RXI": "🛍️",
-    "KXI": "🛒", "IXC": "⚡", "EXI": "🏭", "MXI": "📦",
-    "RWO": "🏢", "JXI": "🔌", "IXP": "📱"
-}
-
+# Warna Monokrom (Putih untuk kuat, Abu untuk lemah)
 STATUS_STYLE = {
-    "Leading":   {"bg": "rgba(16,185,129,0.08)", "border": "rgba(16,185,129,0.3)", "text": "#10b981", "arrow": "↗"},
-    "Weakening": {"bg": "rgba(245,158,11,0.08)", "border": "rgba(245,158,11,0.3)", "text": "#f59e0b", "arrow": "↘"},
-    "Lagging":   {"bg": "rgba(244,63,94,0.08)", "border": "rgba(244,63,94,0.3)", "text": "#f43f5e", "arrow": "↙"},
-    "Improving": {"bg": "rgba(99,102,241,0.08)", "border": "rgba(99,102,241,0.3)", "text": "#818cf8", "arrow": "↗"},
+    "Leading":   {"bg": "#171717", "border": "#404040", "text": "#ffffff", "label": "LEADING"},
+    "Weakening": {"bg": "#0a0a0a", "border": "#262626", "text": "#a3a3a3", "label": "WEAKENING"},
+    "Lagging":   {"bg": "#0a0a0a", "border": "#262626", "text": "#737373", "label": "LAGGING"},
+    "Improving": {"bg": "#0a0a0a", "border": "#262626", "text": "#d4d4d4", "label": "IMPROVING"},
 }
 
 # ============================================================
-# LOAD DATA GLOBAL (YFINANCE) - FIX BLOKIR CLOUD
+# LOAD DATA GLOBAL
 # ============================================================
-# Pastikan di bagian atas file kamu ada: from quant.global_data import fetch_yahoo_chart_direct
-
 @st.cache_data(ttl=3600)
 def load_global_data():
     tickers = list(SEKTOR_ID.keys()) + [BENCHMARK]
     data = {}
     
     for t in tickers:
-        # GUNAKAN FUNGSI BARU INI (Bypass Yahoo)
         df = fetch_yahoo_chart_direct(t, range_period="1y", interval="1d")
-        
         if df is not None and not df.empty:
             data[t] = df["Close"]
-        else:
-            print(f"Gagal total mengambil {t}")
-            
-        # Jeda sedikit antar ticker
         time.sleep(0.8) 
             
     if not data:
@@ -77,10 +62,8 @@ def load_global_data():
         
     df = pd.DataFrame(data)
     df = df.ffill().bfill().dropna()
-    
     if len(df) < 35:
         raise ValueError(f"Data terlalu sedikit ({len(df)} hari).")
-        
     return df
 
 def build_sector_index(df):
@@ -112,38 +95,31 @@ def detect_market_phase(sc):
     n_lag = sc.get("Lagging", 0)
     total = n_lead + n_imp + n_weak + n_lag
     if total == 0: return "UNKNOWN", "Data tidak cukup"
-    if n_lead >= total * 0.5:
-        return "MARKUP", "Pasar bull kuat, mayoritas sektor memimpin"
-    elif n_lead + n_imp >= total * 0.7:
-        return "EARLY EXPANSION", "Awal ekspansi, rotasi ke sektor baru"
-    elif n_lag >= total * 0.5:
-        return "MARKDOWN", "Pasar bear, mayoritas sektor tertinggal"
-    elif n_weak + n_lag >= total * 0.7:
-        return "LATE CYCLE", "Siklus akhir, ambil untung"
+    if n_lead >= total * 0.5: return "MARKUP", "Pasar bull kuat, mayoritas sektor memimpin"
+    elif n_lead + n_imp >= total * 0.7: return "EARLY EXPANSION", "Awal ekspansi, rotasi ke sektor baru"
+    elif n_lag >= total * 0.5: return "MARKDOWN", "Pasar bear, mayoritas sektor tertinggal"
+    elif n_weak + n_lag >= total * 0.7: return "LATE CYCLE", "Siklus akhir, ambil untung"
     return "MIXED", "Pasar campuran, rotasi sedang berlangsung"
 
 # ============================================================
 # LOAD & HITUNG
 # ============================================================
-with st.spinner("Memuat data Global Sector (MSCI World)..."):
+with st.spinner("Memuat data Global Sector..."):
     try:
         df_all = load_global_data()
     except Exception as e:
-        st.error(f"⚠ {e}")
-        st.info("Yahoo Finance terkadang membatasi pengambilan data dari server cloud. Silakan tunggu 5-10 menit lalu refresh halaman ini.")
+        st.error(f"{e}")
+        st.info("Yahoo Finance terkadang membatasi pengambilan data. Tunggu 5-10 menit lalu refresh.")
         st.stop()
 
 benchmark_series = df_all[BENCHMARK]
 sector_df = df_all.drop(columns=[BENCHMARK])
-
 sector_index = build_sector_index(sector_df)
 benchmark_index = build_sector_index(benchmark_series.to_frame())[BENCHMARK]
-
 rs_ratio, rs_mom = calc_rrg(sector_index, benchmark_index)
 
 if rs_ratio.empty:
-    st.error("Data rotasi sektor tidak dapat dihitung saat ini karena data dari Yahoo Finance tidak lengkap.")
-    st.info("Silakan tunggu beberapa saat dan coba refresh kembali halaman ini.")
+    st.error("Data rotasi sektor tidak dapat dihitung saat ini.")
     st.stop()
 
 bm_20d = None
@@ -177,15 +153,14 @@ phase, phase_desc = detect_market_phase(status_counts)
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown(page_header("🌍", "Global Sector Rotation", phase_desc), unsafe_allow_html=True)
+st.markdown(page_header("", "Global Sector Rotation", phase_desc), unsafe_allow_html=True)
 
 st.markdown(
     '<div style="margin-bottom: 24px;">'
-    '<span style="display: inline-block; padding: 8px 16px; '
-    'background: linear-gradient(135deg, #131a2a, #0f1420); '
-    'color: #06b6d4; border: 1px solid #1f2a3d; '
-    'border-radius: 8px; font-size: 12px; font-weight: 700; '
-    'letter-spacing: 1px;">'
+    '<span style="display: inline-block; padding: 6px 14px; '
+    'background: #0a0a0a; color: #ffffff; border: 1px solid #262626; '
+    'border-radius: 4px; font-size: 12px; font-weight: 600; '
+    'letter-spacing: 0.5px;">'
     f'PHASE: {phase}'
     '</span>'
     '</div>',
@@ -200,14 +175,13 @@ df_status["order"] = df_status["status"].map(STATUS_ORDER)
 df_sorted = df_status.sort_values(["order", "ret_1d"], ascending=[True, False]).reset_index(drop=True)
 
 st.markdown(
-    '<div style="font-size: 11px; color: #64748b; '
-    'margin-bottom: 12px; padding: 8px 12px; '
-    'background: rgba(30,41,59,0.3); border-radius: 8px; '
-    'border-left: 2px solid #475569;">'
-    '<b style="color:#94a3b8;">Keterangan:</b> '
+    '<div style="font-size: 12px; color: #a3a3a3; '
+    'margin-bottom: 16px; padding: 10px 14px; '
+    'background: #0a0a0a; border-radius: 4px; border: 1px solid #262626;">'
+    '<b style="color:#ffffff;">Keterangan:</b> '
     'Angka pertama = return <b>1 hari</b> · '
     'Angka kedua = selisih return <b>20 hari</b> vs MSCI World · '
-    'Label = kuadran RRG (kumulatif)'
+    'Label = kuadran RRG'
     '</div>',
     unsafe_allow_html=True
 )
@@ -215,19 +189,20 @@ st.markdown(
 for _, r in df_sorted.iterrows():
     sektor = r["sektor"]; status = r["status"]; ret = r["ret_1d"]
     spread = r.get("spread_20d")
-    icon = SEKTOR_ICON.get(sektor, "📁")
     nama_id = SEKTOR_ID.get(sektor, sektor)
     style = STATUS_STYLE[status]
-    color_ret = "#10b981" if ret >= 0 else "#f43f5e"
+    
+    # Positif = Putih, Negatif = Abu
+    color_ret = "#ffffff" if ret >= 0 else "#737373"
     sign = "+" if ret >= 0 else ""
 
     if spread is not None and not pd.isna(spread):
-        sp_color = "#10b981" if spread >= 0 else "#f43f5e"
+        sp_color = "#ffffff" if spread >= 0 else "#737373"
         sp_sign = "+" if spread >= 0 else ""
         spread_html = (
             f'<span style="font-size: 11px; color: {sp_color}; '
-            f'font-weight: 600; background: rgba(15,23,42,0.6); '
-            f'padding: 3px 8px; border-radius: 5px;">'
+            f'font-weight: 500; background: #171717; '
+            f'padding: 3px 8px; border-radius: 4px; border: 1px solid #262626;">'
             f'20d: {sp_sign}{spread:.2f}% vs MSCI World</span>'
         )
     else:
@@ -235,25 +210,20 @@ for _, r in df_sorted.iterrows():
 
     st.markdown(
         '<div style="'
-        f'background: linear-gradient(135deg, {style["bg"]}, #0f1420); '
+        f'background: {style["bg"]}; '
         f'border: 1px solid {style["border"]}; '
-        'border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; '
-        'display: flex; align-items: center; gap: 16px; '
-        'box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">'
-        f'<div style="font-size: 24px; width: 44px; height: 44px; '
-        f'display: flex; align-items: center; justify-content: center; '
-        f'border-radius: 10px; background: #0a0e1a; flex-shrink: 0; '
-        f'border: 1px solid #1f2a3d;">{icon}</div>'
-        '<div style="flex-grow: 1;">'
-        f'<div style="font-size: 15px; font-weight: 700; color: #ffffff; '
-        f'margin-bottom: 8px;">{nama_id}</div>'
+        'border-radius: 6px; padding: 16px 20px; margin-bottom: 10px; '
+        'display: flex; align-items: center; justify-content: space-between;">'
+        '<div>'
+        f'<div style="font-size: 15px; font-weight: 600; color: #ffffff; '
+        f'margin-bottom: 10px;">{nama_id}</div>'
         '<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">'
-        f'<span style="font-size: 10px; font-weight: 700; '
-        f'letter-spacing: 0.8px; padding: 4px 10px; border-radius: 6px; '
-        f'background: {style["bg"]}; color: {style["text"]}; '
+        f'<span style="font-size: 11px; font-weight: 600; '
+        f'padding: 4px 10px; border-radius: 4px; '
+        f'background: transparent; color: {style["text"]}; '
         f'border: 1px solid {style["border"]};">'
-        f'{style["arrow"]} {status.upper()}</span>'
-        f'<span style="font-size: 13px; font-weight: 700; color: {color_ret};">'
+        f'{style["label"]}</span>'
+        f'<span style="font-size: 13px; font-weight: 600; color: {color_ret};">'
         f'{sign}{ret:.2f}%</span>'
         f'{spread_html}'
         '</div></div></div>',
@@ -270,25 +240,19 @@ with st.spinner("Mengambil data global..."):
     sentimen_status, sentimen_detail, _ = hitung_sentimen(global_data)
     dampak_ihsg = get_dampak_ihsg(global_data)
 
-warna_sentimen = (
-    "#10b981" if "BULLISH" in sentimen_status else
-    "#f43f5e" if "BEARISH" in sentimen_status else
-    "#f59e0b"
-)
-
+# Status sentimen dibuat seragam (putih semua)
 st.markdown(
     '<div style="'
-    'background: linear-gradient(135deg, #131a2a 0%, #0f1420 100%); '
-    'border: 1px solid #1f2a3d; '
-    f'border-left: 4px solid {warna_sentimen}; '
-    'border-radius: 12px; padding: 20px 24px; margin-bottom: 20px; '
-    'box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">'
-    '<div style="font-size: 11px; color: #64748b; letter-spacing: 1px; '
-    'margin-bottom: 8px; font-weight: 700; text-transform: uppercase;">'
+    'background: #0a0a0a; '
+    'border: 1px solid #262626; '
+    'border-left: 3px solid #ffffff; '
+    'border-radius: 6px; padding: 20px 24px; margin-bottom: 24px;">'
+    '<div style="font-size: 11px; color: #737373; letter-spacing: 1px; '
+    'margin-bottom: 8px; font-weight: 600; text-transform: uppercase;">'
     'Sentimen Global</div>'
-    f'<div style="font-size: 22px; font-weight: 800; color: {warna_sentimen}; '
+    f'<div style="font-size: 20px; font-weight: 600; color: #ffffff; '
     f'margin-bottom: 6px;">{sentimen_status}</div>'
-    f'<div style="font-size: 13px; color: #94a3b8;">{sentimen_detail}</div>'
+    f'<div style="font-size: 13px; color: #a3a3a3;">{sentimen_detail}</div>'
     '</div>',
     unsafe_allow_html=True
 )
@@ -297,33 +261,33 @@ col1, col2, col3 = st.columns(3)
 
 def render_market_list(items, title):
     st.markdown(
-        f'<div style="font-size: 11px; color: #64748b; letter-spacing: 0.08em; '
-        f'font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">'
+        f'<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; '
+        f'font-weight: 600; text-transform: uppercase; margin-bottom: 12px;">'
         f'{title}</div>',
         unsafe_allow_html=True
     )
     for nama, d in items.items():
         chg = d["change_pct"]
-        warna = "#10b981" if chg >= 0 else "#f43f5e"
+        warna = "#ffffff" if chg >= 0 else "#737373" # Putih naik, Abu turun
         sign = "+" if chg >= 0 else ""
-        harga_str = (f"{d['harga']:,.2f}" if d['harga'] < 10000
-                     else f"{d['harga']:,.0f}")
+        harga_str = (f"{d['harga']:,.2f}" if d['harga'] < 10000 else f"{d['harga']:,.0f}")
+        
         st.markdown(
             '<div style="display: flex; justify-content: space-between; '
-            'padding: 8px 0; font-size: 12px; '
-            'border-bottom: 1px solid #1a2332;">'
-            f'<span style="color: #94a3b8;">{nama.strip()}</span>'
-            f'<span style="color: {warna}; font-weight: 600;">'
+            'padding: 8px 0; font-size: 13px; '
+            'border-bottom: 1px solid #262626;">'
+            f'<span style="color: #a3a3a3;">{nama.strip()}</span>'
+            f'<span style="color: {warna}; font-weight: 500;">'
             f'{harga_str} ({sign}{chg:.2f}%)</span></div>',
             unsafe_allow_html=True
         )
 
 with col1:
-    render_market_list(global_data["indeks"], "🌎 Indeks Global")
+    render_market_list(global_data["indeks"], "Indeks Global")
 with col2:
-    render_market_list(global_data["mata_uang"], "💵 Mata Uang")
+    render_market_list(global_data["mata_uang"], "Mata Uang")
 with col3:
-    render_market_list(global_data["komoditas"], "🛢️ Komoditas")
+    render_market_list(global_data["komoditas"], "Komoditas")
 
 # ============================================================
 # DAMPAK KE IHSG
@@ -331,28 +295,29 @@ with col3:
 st.markdown(section_title("Dampak ke IHSG"), unsafe_allow_html=True)
 
 for nama, nilai, status, ket in dampak_ihsg:
-    warna = (
-        "#10b981" if status == "POSITIF" else
-        "#f43f5e" if status == "NEGATIF" else
-        "#f59e0b"
-    )
-    badge_icon = (
-        "🟢" if status == "POSITIF" else
-        "🔴" if status == "NEGATIF" else "🟡"
-    )
+    # Teks pengganti emoji
+    if status == "POSITIF":
+        badge_text = "[POSITIF]"
+        warna = "#ffffff"
+    elif status == "NEGATIF":
+        badge_text = "[NEGATIF]"
+        warna = "#737373"
+    else:
+        badge_text = "[NETRAL]"
+        warna = "#a3a3a3"
+
     st.markdown(
         '<div style="'
-        'background: linear-gradient(135deg, #131a2a 0%, #0f1420 100%); '
-        'border: 1px solid #1f2a3d; '
-        f'border-left: 3px solid {warna}; '
-        'padding: 12px 16px; border-radius: 10px; margin-bottom: 8px;">'
+        'background: #0a0a0a; '
+        'border: 1px solid #262626; '
+        'padding: 14px 16px; border-radius: 6px; margin-bottom: 10px;">'
         '<div style="display: flex; justify-content: space-between; '
-        'align-items: center; margin-bottom: 4px;">'
-        f'<span style="color: #e2e8f0; font-weight: 600; font-size: 13px;">'
-        f'{badge_icon} {nama}</span>'
-        f'<span style="color: {warna}; font-weight: 700; font-size: 14px;">'
+        'align-items: center; margin-bottom: 6px;">'
+        f'<span style="color: #ffffff; font-weight: 500; font-size: 13px;">'
+        f'{badge_text} {nama}</span>'
+        f'<span style="color: {warna}; font-weight: 600; font-size: 14px;">'
         f'{nilai}</span></div>'
-        f'<div style="color: #64748b; font-size: 11px;">{ket}</div>'
+        f'<div style="color: #737373; font-size: 12px;">{ket}</div>'
         '</div>',
         unsafe_allow_html=True
     )
@@ -361,10 +326,10 @@ for nama, nilai, status, ket in dampak_ihsg:
 # FOOTER
 # ============================================================
 st.markdown(
-    '<div style="text-align: center; color: #475569; font-size: 11px; '
-    'margin-top: 30px; padding-top: 20px; border-top: 1px solid #1a2332;">'
+    '<div style="text-align: center; color: #404040; font-size: 11px; '
+    'margin-top: 32px; padding-top: 20px; border-top: 1px solid #262626;">'
     f'Update: {datetime.now().strftime("%d %B %Y, %H:%M")} · '
-    f'Data dari Yahoo Finance (Global MSCI World Sectors)'
+    f'Data dari Yahoo Finance'
     '</div>',
     unsafe_allow_html=True
 )

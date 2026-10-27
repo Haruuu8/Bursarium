@@ -1,26 +1,18 @@
-"""Theme minimalis premium — Monokrom (Hitam, Abu, Putih)."""
+"""Theme minimalis premium — Strict Monokrom (Hitam, Putih, Abu)."""
 
 import streamlit as st
 
-
 COLORS = {
-    "bg": "#0a0a0a",         # Hampir hitam (Background Utama)
-    "surface": "#171717",    # Abu gelap (Card/Kotak)
-    "elevated": "#262626",   # Abu sedang (Hover)
-    "sidebar": "#000000",    # Hitam pekat
+    "bg": "#000000",         # Hitam pekat
+    "surface": "#0a0a0a",    # Hitam keabu-abuan (Card)
+    "elevated": "#171717",   # Abu sangat gelap (Hover)
     "border": "#262626",     # Garis tepi halus
     "border_hi": "#404040",  # Garis tepi saat fokus
-    "text": "#fafafa",       # Putih bersih (Judul)
-    "body": "#d4d4d4",       # Abu terang (Paragraf)
+    "text": "#ffffff",       # Putih bersih
+    "body": "#d4d4d4",       # Abu terang
     "muted": "#a3a3a3",      # Abu standard
     "dim": "#737373",        # Abu gelap
-    "primary": "#ffffff",    # Putih untuk tombol utama
-    "cyan": "#a3a3a3",       
-    "success": "#10b981",    # Hijau (untuk market)
-    "warning": "#f59e0b",    # Oranye (untuk market)
-    "danger": "#ef4444",     # Merah (untuk market)
 }
-
 
 THEME_CSS = """
 <style>
@@ -31,11 +23,8 @@ html, body, [class*="css"] {
 }
 html { scroll-behavior: smooth; }
 
-/* Animasi minimalis */
-@keyframes fadeIn { from { opacity:0;} to { opacity:1;} }
-
 .stApp {
-    background: #0a0a0a;
+    background: #000000;
     color: #d4d4d4;
 }
 [data-testid="stAppViewContainer"] { background: transparent; }
@@ -47,19 +36,8 @@ html { scroll-behavior: smooth; }
     max-width: 1200px !important;
 }
 
-/* ============================================================
-   HIDE NAV DEFAULT STREAMLIT (pakai nav custom di sidebar)
-   ============================================================ */
-[data-testid="stSidebarNav"] { display: none !important; }
-[data-testid="stSidebarNavSeparator"] { display: none !important; }
-[data-testid="stSidebarNavItems"] { display: none !important; }
-[data-testid="stSidebarNavLink"] { display: none !important; }
-nav[data-testid="stSidebarNav"] { display: none !important; }
-section[data-testid="stSidebar"] > div:first-child > div:first-child > div:first-child {
-    padding-top: 1rem !important;
-}
-
 /* ============ SIDEBAR ============ */
+[data-testid="stSidebarNav"] { display: none !important; }
 [data-testid="stSidebar"] {
     background: #000000 !important;
     border-right: 1px solid #262626 !important;
@@ -67,20 +45,16 @@ section[data-testid="stSidebar"] > div:first-child > div:first-child > div:first
 [data-testid="stSidebarContent"] { background: transparent !important; }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #fafafa !important;
+    color: #ffffff !important;
     font-weight: 600 !important;
     letter-spacing: -0.02em !important;
 }
 
-[data-testid="stMarkdownContainer"] { animation: fadeIn 200ms ease-out; }
-
-/* ============================================================
-   BUTTONS (Putih Bersih)
-   ============================================================ */
+/* ============ BUTTONS ============ */
 .stButton > button, .stDownloadButton > button {
-    background: #171717 !important;
+    background: #0a0a0a !important;
     border: 1px solid #262626 !important;
-    color: #fafafa !important;
+    color: #ffffff !important;
     border-radius: 6px !important;
     font-weight: 500 !important;
     font-size: 14px !important;
@@ -88,11 +62,11 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 150ms ease !important;
 }
 .stButton > button:hover, .stDownloadButton > button:hover {
-    background: #262626 !important;
+    background: #171717 !important;
     border-color: #404040 !important;
 }
 
-/* Tombol Utama (Primary) - Putih dengan teks hitam */
+/* Tombol Utama (Primary) - Putih Teks Hitam */
 .stButton > button[kind="primary"],
 .stButton > button[data-testid="baseButton-primary"] {
     background: #ffffff !important;
@@ -102,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 .stButton > button[kind="primary"]:hover {
     background: #e5e5e5 !important;
     border-color: #e5e5e5 !important;
-    color: #000000 !important;
 }
 
 .stFormSubmitButton > button {
@@ -113,220 +86,99 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600 !important;
     font-size: 14px !important;
     padding: 10px 16px !important;
-    transition: all 150ms ease !important;
 }
 .stFormSubmitButton > button:hover {
     background: #e5e5e5 !important;
 }
 
-/* ============================================================
-   INPUTS
-   ============================================================ */
+/* ============ INPUTS ============ */
 .stTextInput > div > div > input,
 .stNumberInput > div > div > input,
 .stDateInput > div > div > input {
-    background: #171717 !important;
+    background: #0a0a0a !important;
     border: 1px solid #262626 !important;
     border-radius: 6px !important;
-    color: #fafafa !important;
+    color: #ffffff !important;
     font-size: 14px !important;
     padding: 10px 14px !important;
-    transition: border-color 150ms ease !important;
 }
 .stSelectbox > div > div, .stMultiSelect > div > div {
-    background: #171717 !important;
+    background: #0a0a0a !important;
     border: 1px solid #262626 !important;
     border-radius: 6px !important;
-    color: #fafafa !important;
-    transition: border-color 150ms ease !important;
+    color: #ffffff !important;
 }
 .stTextInput > div > div > input:focus,
-.stNumberInput > div > div > input:focus,
-.stDateInput > div > div > input:focus,
 .stSelectbox > div > div:focus-within {
-    border-color: #737373 !important;
+    border-color: #a3a3a3 !important;
     box-shadow: none !important;
-    outline: none !important;
 }
 
-/* ============================================================
-   TABS
-   ============================================================ */
+/* ============ TABS ============ */
 .stTabs [data-baseweb="tab-list"] {
     gap: 8px !important;
     background: transparent !important;
-    border: none !important;
     border-bottom: 1px solid #262626 !important;
-    padding: 0 !important;
-    margin-bottom: 24px !important;
 }
 .stTabs [data-baseweb="tab"] {
-    background: transparent !important;
-    border-radius: 0 !important;
     color: #737373 !important;
     font-weight: 500 !important;
     font-size: 14px !important;
     padding: 10px 16px !important;
-    border: none !important;
     border-bottom: 2px solid transparent !important;
-    transition: color 150ms ease !important;
 }
-.stTabs [data-baseweb="tab"]:hover { color: #d4d4d4 !important; }
+.stTabs [data-baseweb="tab"]:hover { color: #ffffff !important; }
 .stTabs [aria-selected="true"] {
-    background: transparent !important;
     color: #ffffff !important;
     border-bottom: 2px solid #ffffff !important;
 }
-.stTabs [data-baseweb="tab-highlight"],
-.stTabs [data-baseweb="tab-border"] {
+.stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] {
     display: none !important;
 }
 
-/* ============================================================
-   EXPANDER
-   ============================================================ */
+/* ============ EXPANDER, POPOVER, METRIC ============ */
 [data-testid="stExpander"] {
-    background: #171717 !important;
+    background: #0a0a0a !important;
     border: 1px solid #262626 !important;
-    border-radius: 8px !important;
-    transition: border-color 150ms ease !important;
+    border-radius: 6px !important;
 }
-[data-testid="stExpander"]:hover {
-    border-color: #404040 !important;
-}
-
-/* ============================================================
-   POPOVER LOGIN
-   ============================================================ */
 [data-testid="stPopover"] > button {
     background: #ffffff !important;
     border: 1px solid #ffffff !important;
     color: #000000 !important;
     font-weight: 600 !important;
-    font-size: 14px !important;
-    padding: 10px 18px !important;
     border-radius: 6px !important;
-    transition: all 150ms ease !important;
     width: 100% !important;
 }
-[data-testid="stPopover"] > button:hover {
-    background: #e5e5e5 !important;
-}
 [data-testid="stPopoverBody"] {
-    background: #171717 !important;
+    background: #0a0a0a !important;
     border: 1px solid #404040 !important;
-    border-radius: 8px !important;
-    padding: 20px !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8) !important;
+    border-radius: 6px !important;
 }
-
-/* ============================================================
-   DATAFRAME & METRIC
-   ============================================================ */
-[data-testid="stDataFrame"] {
-    border-radius: 8px !important;
-    overflow: hidden !important;
+[data-testid="stDataFrame"], [data-testid="stMetric"] {
+    background: #0a0a0a !important;
     border: 1px solid #262626 !important;
+    border-radius: 6px !important;
 }
 
-[data-testid="stMetric"] {
-    background: #171717 !important;
-    border: 1px solid #262626 !important;
-    border-radius: 8px !important;
-    padding: 16px 20px !important;
-}
-
-/* ============================================================
-   ICON & PAGE LINK
-   ============================================================ */
-[data-testid="stIconMaterial"] {
-    color: #737373 !important;
-    font-size: 18px !important;
-    transition: color 150ms ease !important;
-}
+/* ============ ICON & PAGE LINK (Hapus Emoji di Sidebar) ============ */
+[data-testid="stIconMaterial"] { color: #737373 !important; }
 [data-testid="stPageLink"] {
     padding: 8px 12px !important;
     border-radius: 6px !important;
-    margin-bottom: 2px !important;
-    transition: all 150ms ease !important;
     color: #a3a3a3 !important;
-    text-decoration: none !important;
 }
-[data-testid="stPageLink"]:hover {
-    background: #171717 !important;
-    color: #ffffff !important;
-}
+[data-testid="stPageLink"]:hover { background: #171717 !important; color: #ffffff !important; }
 [data-testid="stPageLink"][aria-current="page"] {
-    background: #262626 !important;
-    color: #ffffff !important;
-    font-weight: 600 !important;
+    background: #262626 !important; color: #ffffff !important;
 }
 
-/* ============================================================
-   SCROLLBAR
-   ============================================================ */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #0a0a0a; }
-::-webkit-scrollbar-thumb {
-    background: #262626; border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover { background: #404040; }
-
-/* ============================================================
-   HIDE STREAMLIT BRANDING
-   ============================================================ */
+/* Hapus branding */
 #MainMenu { visibility: hidden; }
 footer { visibility: hidden; }
 [data-testid="stAppDeployButton"] { display: none !important; }
-[data-testid="stMarkdown"] > div > p:empty { display: none; }
-
-/* ============================================================ */
-/* 🔥 MOBILE RESPONSIVE 🔥 */
-/* ============================================================ */
-[data-testid="stExpandSidebarButton"],
-[data-testid="stSidebarCollapsedControl"] {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 999999 !important;
-    position: fixed !important;
-    top: 15px !important;
-    left: 15px !important;
-    background-color: #171717 !important;
-    border: 1px solid #262626 !important;
-    border-radius: 6px !important;
-    padding: 8px 12px !important;
-    align-items: center;
-    justify-content: center;
-}
-[data-testid="stExpandSidebarButton"] svg,
-[data-testid="stSidebarCollapsedControl"] svg {
-    display: none !important;
-}
-[data-testid="stExpandSidebarButton"]::after,
-[data-testid="stSidebarCollapsedControl"]::after {
-    content: "☰";
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 1;
-}
-@media (max-width: 991px) {
-    .block-container {
-        padding-top: 4rem !important;
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-        padding-bottom: 2rem !important;
-        max-width: 100% !important;
-    }
-    h1 { font-size: 1.5rem !important; }
-    h2 { font-size: 1.25rem !important; }
-    h3 { font-size: 1.1rem !important; }
-    p, li, .stMarkdown { font-size: 13px !important; line-height: 1.5 !important; }
-    span[style*="font-size: 30px"], span[style*="font-size:30px"] { font-size: 24px !important; }
-}
 </style>
 """
-
 
 def load_theme():
     st.markdown(THEME_CSS, unsafe_allow_html=True)
@@ -337,27 +189,21 @@ def _rgb(hex_color):
     return f"{int(h[0:2],16)},{int(h[2:4],16)},{int(h[4:6],16)}"
 
 
-def hero(title, subtitle, badge_text="", badge_color="#737373"):
-    badge_html = ""
-    if badge_text:
-        rgb = _rgb(badge_color)
-        badge_html = (
-            f'<div style="display: inline-block; padding: 4px 12px; '
-            f'background: #262626; color: #d4d4d4; '
-            f'border: 1px solid #404040; '
-            f'border-radius: 6px; font-size: 11px; font-weight: 500; '
-            f'letter-spacing: 0.5px; margin-bottom: 16px;">'
-            f'{badge_text}</div>'
-        )
+def hero(title, subtitle, badge_text=""):
+    badge_html = (
+        f'<div style="display: inline-block; padding: 4px 12px; '
+        f'background: #171717; color: #a3a3a3; '
+        f'border: 1px solid #262626; border-radius: 6px; '
+        f'font-size: 11px; font-weight: 500; margin-bottom: 16px;">'
+        f'{badge_text}</div>'
+    ) if badge_text else ""
+    
     return (
-        '<div class="hero-title" style="'
-        'background: #171717; '
-        'border: 1px solid #262626; border-radius: 12px; '
+        '<div style="background: #0a0a0a; border: 1px solid #262626; border-radius: 8px; '
         'padding: 32px 40px; margin-bottom: 24px;">'
         f'{badge_html}'
-        f'<div style="font-size: 32px; font-weight: 600; color: #fafafa; '
-        f'letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 8px;">'
-        f'{title}</div>'
+        f'<div style="font-size: 32px; font-weight: 600; color: #ffffff; '
+        f'letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 8px;">{title}</div>'
         f'<div style="font-size: 14px; color: #a3a3a3; line-height: 1.6; '
         f'max-width: 640px;">{subtitle}</div>'
         '</div>'
@@ -365,195 +211,116 @@ def hero(title, subtitle, badge_text="", badge_color="#737373"):
 
 
 def page_header(icon, title, subtitle=""):
-    icon = (icon or "").strip()
-    if icon:
-        icon_html = (
-            f'<div style="width: 48px; height: 48px; '
-            f'background: #262626; border: 1px solid #404040; '
-            f'border-radius: 10px; display: flex; align-items: center; '
-            f'justify-content: center; font-size: 22px; color: #ffffff;">{icon}</div>'
-        )
-    else:
-        icon_html = ""
-
+    # Ikon dibiarkan kosong (tidak pakai emoji)
     return (
-        '<div style="'
-        'background: #171717; '
-        'border: 1px solid #262626; border-radius: 12px; '
-        'padding: 20px 24px; margin-bottom: 24px; '
-        'display: flex; align-items: center; gap: 16px;">'
-        f'{icon_html}'
-        '<div>'
-        f'<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.5px; '
-        f'font-weight: 500; margin-bottom: 4px; text-transform: uppercase;">'
-        f'{subtitle}</div>'
-        f'<div style="font-size: 22px; font-weight: 600; color: #fafafa; '
+        '<div style="background: #0a0a0a; border: 1px solid #262626; border-radius: 8px; '
+        'padding: 20px 24px; margin-bottom: 24px;">'
+        f'<div style="font-size: 11px; color: #737373; letter-spacing: 0.5px; '
+        f'font-weight: 500; margin-bottom: 4px; text-transform: uppercase;">{subtitle}</div>'
+        f'<div style="font-size: 22px; font-weight: 600; color: #ffffff; '
         f'letter-spacing: -0.02em; line-height: 1;">{title}</div>'
-        '</div></div>'
+        '</div>'
     )
 
 
 def section_title(title, subtitle=""):
-    sub_html = (
-        f'<div style="font-size: 13px; color: #a3a3a3; margin-left: 0; '
-        f'margin-top: 6px;">{subtitle}</div>'
-    ) if subtitle else ''
+    sub_html = f'<div style="font-size: 13px; color: #a3a3a3; margin-top: 6px;">{subtitle}</div>' if subtitle else ''
     return (
         '<div style="margin: 28px 0 16px;">'
         '<div style="display: flex; align-items: center; gap: 10px;">'
-        '<div style="width: 3px; height: 18px; '
-        'background: #ffffff; border-radius: 2px;"></div>'
-        f'<div style="font-size: 18px; font-weight: 600; color: #fafafa; '
-        f'letter-spacing: -0.01em;">{title}</div>'
+        '<div style="width: 3px; height: 18px; background: #ffffff; border-radius: 2px;"></div>'
+        f'<div style="font-size: 18px; font-weight: 600; color: #ffffff;">{title}</div>'
         '</div>'
         f'{sub_html}'
         '</div>'
     )
 
 
-def card(content, padding="20px 24px", accent=None):
-    border_style = f'border-left: 3px solid {accent}; ' if accent else ''
+def card(content, padding="20px 24px"):
     return (
-        '<div style="'
-        'background: #171717; '
-        'border: 1px solid #262626; border-radius: 10px; '
-        f'{border_style}'
-        f'padding: {padding}; margin-bottom: 16px;">'
-        f'{content}'
-        '</div>'
+        f'<div style="background: #0a0a0a; border: 1px solid #262626; '
+        f'border-radius: 8px; padding: {padding}; margin-bottom: 16px;">'
+        f'{content}</div>'
     )
 
 
-def metric_box(label, value, sub="", accent="#ffffff"):
-    sub_html = (
-        f'<div style="font-size: 12px; color: #a3a3a3; margin-top: 6px;">{sub}</div>'
-    ) if sub else ''
+def metric_box(label, value, sub=""):
+    sub_html = f'<div style="font-size: 12px; color: #737373; margin-top: 6px;">{sub}</div>' if sub else ''
     return (
-        '<div style="'
-        'background: #171717; '
-        'border: 1px solid #262626; border-radius: 10px; '
-        'padding: 16px 20px;">'
-        f'<div style="font-size: 12px; color: #a3a3a3; '
-        f'font-weight: 500; margin-bottom: 8px;">'
-        f'{label}</div>'
-        f'<div style="font-size: 22px; font-weight: 600; color: #fafafa; '
-        f'letter-spacing: -0.02em;">{value}</div>'
-        f'{sub_html}'
-        '</div>'
+        '<div style="background: #0a0a0a; border: 1px solid #262626; border-radius: 8px; padding: 16px 20px;">'
+        f'<div style="font-size: 12px; color: #a3a3a3; font-weight: 500; margin-bottom: 8px;">{label}</div>'
+        f'<div style="font-size: 22px; font-weight: 600; color: #ffffff;">{value}</div>'
+        f'{sub_html}</div>'
     )
 
 
-def stat_card(label, value, delta=None, sub="", accent="#ffffff"):
+def stat_card(label, value, delta=None, sub=""):
+    # Mengubah angka positif/negatif menjadi putih/abu (strict monokrom)
     delta_html = ""
     if delta is not None:
         try:
             v = float(delta)
-            color = "#10b981" if v >= 0 else "#ef4444"
+            # Positif = Putih, Negatif = Abu Gelap
+            color = "#ffffff" if v >= 0 else "#737373" 
             sign = "+" if v >= 0 else ""
             delta_html = (
                 f'<div style="display: inline-block; padding: 2px 8px; '
-                f'background: #262626; color: {color}; '
-                f'border-radius: 4px; font-size: 12px; font-weight: 600; '
-                f'margin-left: 8px; border: 1px solid #404040;">'
+                f'background: #171717; color: {color}; border: 1px solid #262626; '
+                f'border-radius: 4px; font-size: 12px; font-weight: 600; margin-left: 8px;">'
                 f'{sign}{v:.2f}%</div>'
             )
         except Exception:
             pass
-    sub_html = (
-        f'<div style="font-size: 12px; color: #a3a3a3; margin-top: 6px;">{sub}</div>'
-    ) if sub else ''
+    sub_html = f'<div style="font-size: 12px; color: #737373; margin-top: 6px;">{sub}</div>' if sub else ''
     return (
-        '<div style="'
-        'background: #171717; '
-        'border: 1px solid #262626; border-radius: 10px; '
-        'padding: 16px 20px;">'
-        f'<div style="font-size: 12px; color: #a3a3a3; '
-        f'font-weight: 500; margin-bottom: 8px;">'
-        f'{label}</div>'
+        '<div style="background: #0a0a0a; border: 1px solid #262626; border-radius: 8px; padding: 16px 20px;">'
+        f'<div style="font-size: 12px; color: #a3a3a3; font-weight: 500; margin-bottom: 8px;">{label}</div>'
         f'<div style="display: flex; align-items: baseline;">'
-        f'<span style="font-size: 22px; font-weight: 600; color: #fafafa; '
-        f'letter-spacing: -0.02em;">{value}</span>'
-        f'{delta_html}'
-        '</div>'
-        f'{sub_html}'
-        '</div>'
+        f'<span style="font-size: 22px; font-weight: 600; color: #ffffff;">{value}</span>'
+        f'{delta_html}</div>'
+        f'{sub_html}</div>'
     )
 
 
 def info_banner(text, type="info"):
-    # Warna disesuaikan agar tetap monokrom namun jelas
-    colors = {
-        "info":    ("#a3a3a3", "ℹ"),
-        "success": ("#10b981", "✓"),
-        "warning": ("#f59e0b", "⚠"),
-        "error":   ("#ef4444", "✕"),
+    # Mengganti emoji dengan teks kurung siku
+    labels = {
+        "info":    "[INFO]",
+        "success": "[OK]",
+        "warning": "[WARN]",
+        "error":   "[ERR]",
     }
-    color, icon = colors.get(type, colors["info"])
+    label = labels.get(type, "[INFO]")
     
-    # Untuk info, kita pakai abu-abu. Untuk error/warning/success, pakai warnanya.
-    bg_color = "#171717"
-    border_color = "#262626"
-    text_color = "#d4d4d4"
-    
-    if type == "success":
-        bg_color = "rgba(16, 185, 129, 0.05)"
-        border_color = "rgba(16, 185, 129, 0.2)"
-    elif type == "warning":
-        bg_color = "rgba(245, 158, 11, 0.05)"
-        border_color = "rgba(245, 158, 11, 0.2)"
-    elif type == "error":
-        bg_color = "rgba(239, 68, 68, 0.05)"
-        border_color = "rgba(239, 68, 68, 0.2)"
-
     return (
-        f'<div style="background: {bg_color}; '
-        f'border: 1px solid {border_color}; '
-        f'border-radius: 8px; padding: 12px 16px; margin-bottom: 16px;">'
+        f'<div style="background: #0a0a0a; border: 1px solid #262626; '
+        f'border-left: 3px solid #ffffff; border-radius: 4px; padding: 12px 16px; margin-bottom: 16px;">'
         f'<div style="display: flex; gap: 12px; align-items: flex-start;">'
-        f'<span style="color: {color}; font-weight: bold; font-size: 14px; '
-        f'flex-shrink: 0;">{icon}</span>'
-        f'<div style="font-size: 13px; color: {text_color}; line-height: 1.5;">'
-        f'{text}</div>'
-        '</div></div>'
+        f'<span style="color: #ffffff; font-weight: 600; font-size: 12px; '
+        f'flex-shrink: 0; letter-spacing: 0.5px;">{label}</span>'
+        f'<div style="font-size: 13px; color: #d4d4d4; line-height: 1.5;">{text}</div>'
+        f'</div></div>'
     )
 
 
-def badge(text, color="#ffffff"):
-    rgb = _rgb(color)
-    if color == "#ffffff":
-        return (
-            f'<span style="display: inline-block; padding: 2px 8px; '
-            f'background: #262626; color: #ffffff; '
-            f'border: 1px solid #404040; border-radius: 4px; '
-            f'font-size: 11px; font-weight: 500; letter-spacing: 0.5px; '
-            f'text-transform: uppercase;">{text}</span>'
-        )
-    else:
-        return (
-            f'<span style="display: inline-block; padding: 2px 8px; '
-            f'background: rgba({rgb}, 0.1); color: {color}; '
-            f'border: 1px solid rgba({rgb}, 0.2); border-radius: 4px; '
-            f'font-size: 11px; font-weight: 600; letter-spacing: 0.5px; '
-            f'text-transform: uppercase;">{text}</span>'
-        )
+def badge(text):
+    return (
+        f'<span style="display: inline-block; padding: 2px 8px; '
+        f'background: #171717; color: #ffffff; border: 1px solid #262626; '
+        f'border-radius: 4px; font-size: 11px; font-weight: 500; text-transform: uppercase;">{text}</span>'
+    )
 
 
 def divider():
-    return (
-        '<div style="height: 1px; '
-        'background: #262626; '
-        'margin: 24px 0;"></div>'
-    )
+    return '<div style="height: 1px; background: #262626; margin: 24px 0;"></div>'
 
 
-def kv_row(label, value, accent="#fafafa"):
+def kv_row(label, value):
     return (
         '<div style="display: flex; justify-content: space-between; '
-        'align-items: center; padding: 10px 0; '
-        'border-bottom: 1px solid #262626;">'
+        'align-items: center; padding: 10px 0; border-bottom: 1px solid #262626;">'
         f'<span style="font-size: 13px; color: #a3a3a3;">{label}</span>'
-        f'<span style="font-size: 14px; font-weight: 500; color: {accent};">'
-        f'{value}</span>'
+        f'<span style="font-size: 14px; font-weight: 500; color: #ffffff;">{value}</span>'
         '</div>'
     )
 
@@ -563,13 +330,11 @@ def spacer(height="16px"):
 
 
 def empty_state(icon, title, subtitle=""):
+    # Ikon emoji sengaja dihapus
     return (
         '<div style="text-align: center; padding: 48px 24px; '
-        'background: #171717; border: 1px dashed #404040; '
-        'border-radius: 12px;">'
-        f'<div style="font-size: 32px; margin-bottom: 12px; opacity: 0.8;">{icon}</div>'
-        f'<div style="font-size: 16px; font-weight: 500; color: #fafafa; '
-        f'margin-bottom: 8px;">{title}</div>'
+        'background: #0a0a0a; border: 1px dashed #262626; border-radius: 8px;">'
+        f'<div style="font-size: 16px; font-weight: 500; color: #ffffff; margin-bottom: 8px;">{title}</div>'
         f'<div style="font-size: 13px; color: #a3a3a3;">{subtitle}</div>'
         '</div>'
     )

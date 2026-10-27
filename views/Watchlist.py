@@ -45,7 +45,6 @@ def load_json_safe(path):
 
 
 def load_setups_json():
-    """Baca data_setups.json dari scan_all.py (instant, tanpa scan ulang)."""
     data = load_json_safe(SETUPS_FILE)
     if not data:
         return {"buy_support": [], "breakout_buy": [], "generated": "?"}
@@ -133,7 +132,6 @@ def _load_csv_cached(path, mtime):
 def load_csv(path):
     if not os.path.exists(path):
         return pd.DataFrame()
-    # Paksa Streamlit baca ulang jika file CSV baru saja di-update oleh screen.py
     return _load_csv_cached(path, os.path.getmtime(path))
 
 
@@ -168,8 +166,6 @@ def load_rekap_sheet(fname, sheet_name):
 # ============================================================
 @st.cache_data(ttl=3600)
 def load_ihsg_history():
-    """Mengambil data return harian IHSG dari CSV atau Parquet."""
-    # 1. Coba cari dari file CSV
     for fname in ["^JKSE.csv", "JKSE.csv", "IHSG.csv"]:
         path = os.path.join(OHLCV_DIR, fname)
         if os.path.exists(path):
@@ -185,7 +181,6 @@ def load_ihsg_history():
             except Exception:
                 pass
             
-    # 2. Fallback ke Parquet
     try:
         df = load_parquet_safe()
         if df is not None and "Kode" in df.columns:
@@ -199,15 +194,10 @@ def load_ihsg_history():
                     return sub[['Date', 'IHSG_Return']]
     except Exception:
         pass
-        
     return None
 
 
 def dedup_by_kode(items, key="kode", score_key="rr_tp1"):
-    """
-    Ambil satu entri terbaik per kode.
-    Prioritas: RR tertinggi, kalau sama pilih jarak ke entry terkecil.
-    """
     best = {}
     for x in items:
         k = x.get(key)
@@ -233,10 +223,6 @@ def dedup_by_kode(items, key="kode", score_key="rr_tp1"):
 # ============================================================
 @st.cache_data(ttl=1800)
 def analyze_setup_signals(kode, harga):
-    """
-    Analisa apakah saham sedang di zona resistance/breakout.
-    Hanya pakai supres.py (swing_w5), tanpa Fibo.
-    """
     result = {
         "strong_zone": False,
         "strong_zone_info": "",
@@ -249,7 +235,6 @@ def analyze_setup_signals(kode, harga):
         if not sr:
             return result
 
-        # Cek Reversal Warning (resistance psikologis)
         for z in sr.get("resistances", []):
             if z.get("role") == "reversal_warning":
                 if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
@@ -260,7 +245,6 @@ def analyze_setup_signals(kode, harga):
                     )
                     break
 
-        # Cek Breakout Trigger
         for z in sr.get("resistances", []):
             if z.get("role") == "breakout_trigger":
                 if harga >= z["lower"] * 0.98 and harga <= z["upper"] * 1.02:
@@ -272,54 +256,46 @@ def analyze_setup_signals(kode, harga):
                     break
     except Exception:
         pass
-
     return result
 
 
 # ============================================================
-# CARD: HAKA PAGI (Bersih + Rencana Trading)
+# CARD: HAKA PAGI
 # ============================================================
 def wl_row(kode, nama, harga, chg_pct):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    if chg_pct > 0:
-        chg_color, chg_sign = "#10b981", "+"
-    elif chg_pct < 0:
-        chg_color, chg_sign = "#f43f5e", ""
-    else:
-        chg_color, chg_sign = "#94a3b8", ""
+    # Monokrom: Putih untuk positif, Abu untuk negatif
+    chg_color = "#ffffff" if chg_pct >= 0 else "#737373"
+    chg_sign = "+" if chg_pct >= 0 else ""
 
-    # Kalkulasi SL (Asumsi entry di harga saat ini -3%)
     sl_price = harga * 0.97
     
     return (
         '<div style="'
-        'background: linear-gradient(135deg, #131a2a 0%, #0f1628 100%); '
-        'border: 1px solid #1a2338; border-radius: 14px; '
+        'background: #0a0a0a; '
+        'border: 1px solid #262626; border-radius: 8px; '
         'padding: 18px 22px; margin-bottom: 10px; '
         'position: relative; overflow: hidden;">'
         
-        # Garis aksen kiri
-        '<div style="position:absolute; left:0; top:0; bottom:0; width:3px; '
-        'background: linear-gradient(180deg, #06b6d4, rgba(6,182,212,0.3));"></div>'
+        '<div style="position:absolute; left:0; top:0; bottom:0; width:2px; '
+        'background: #404040;"></div>'
         
-        # Bagian Atas: Kode, Nama, Harga
-        '<div style="display: flex; justify-content: space-between; align-items: center; padding-left: 8px; margin-bottom: 12px;">'
+        '<div style="display: flex; justify-content: space-between; align-items: center; padding-left: 8px; margin-bottom: 14px;">'
         '<div style="flex: 1; min-width: 0;">'
-        f'<div style="font-size:17px; font-weight:800; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}</div>'
-        f'<div style="font-size:12px; color:#7d8ba3; margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{nama_disp}</div>'
+        f'<div style="font-size:17px; font-weight:600; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}</div>'
+        f'<div style="font-size:12px; color:#a3a3a3; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{nama_disp}</div>'
         '</div>'
         '<div style="text-align:right; flex-shrink:0; min-width:110px;">'
-        f'<div style="font-size:22px; font-weight:800; color:#ffffff; letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
-        f'<div style="font-size:13px; font-weight:700; color:{chg_color}; margin-top:5px;">{chg_sign}{chg_pct:.2f}%</div>'
+        f'<div style="font-size:22px; font-weight:600; color:#ffffff; letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
+        f'<div style="font-size:13px; font-weight:500; color:{chg_color}; margin-top:6px;">{chg_sign}{chg_pct:.2f}%</div>'
         '</div>'
         '</div>'
 
-        # Bagian Bawah: Rencana Trading (Entry, SL, TP)
-        '<div style="background: rgba(15, 23, 42, 0.6); border: 1px solid #1e293b; border-radius: 8px; padding: 10px 14px; display: flex; gap: 16px; flex-wrap: wrap; margin-left: 8px; font-size: 11px;">'
-        f'<span style="color:#94a3b8;">Entry: <b style="color:#cbd5e1;">T+1 Open (Gap 2-20%)</b></span>'
-        f'<span style="color:#94a3b8;">SL: <b style="color:#f43f5e;">{sl_price:,.0f} (-3%)</b></span>'
-        f'<span style="color:#94a3b8;">TP: <b style="color:#10b981;">Trailing 0.5%</b></span>'
+        '<div style="background: #171717; border: 1px solid #262626; border-radius: 4px; padding: 10px 14px; display: flex; gap: 16px; flex-wrap: wrap; margin-left: 8px; font-size: 12px;">'
+        f'<span style="color:#737373;">Entry: <b style="color:#ffffff; font-weight:500;">T+1 Open (Gap 2-20%)</b></span>'
+        f'<span style="color:#737373;">SL: <b style="color:#ffffff; font-weight:500;">{sl_price:,.0f} (-3%)</b></span>'
+        f'<span style="color:#737373;">TP: <b style="color:#ffffff; font-weight:500;">Trailing 0.5%</b></span>'
         '</div>'
 
         '</div>'
@@ -329,88 +305,72 @@ def wl_row(kode, nama, harga, chg_pct):
 # ============================================================
 # CARD: BOTTOM FISHING
 # ============================================================
-def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe,
-           special_flag=None):
+def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe, special_flag=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    if rsi < 20:
-        rsi_color, rsi_bg, rsi_label = "#ff5252", "rgba(255,82,82,0.15)", "EXTREME"
-    elif rsi < 30:
-        rsi_color, rsi_bg, rsi_label = "#f43f5e", "rgba(244,63,94,0.12)", "OVERSOLD"
+    # Monokrom untuk RSI
+    if rsi < 30:
+        rsi_color, rsi_bg, rsi_label = "#ffffff", "#171717", "OVERSOLD"
     elif rsi < 40:
-        rsi_color, rsi_bg, rsi_label = "#f59e0b", "rgba(245,158,11,0.12)", "WEAK"
+        rsi_color, rsi_bg, rsi_label = "#a3a3a3", "#171717", "WEAK"
     else:
-        rsi_color, rsi_bg, rsi_label = "#94a3b8", "rgba(148,163,184,0.12)", "NORMAL"
+        rsi_color, rsi_bg, rsi_label = "#737373", "#171717", "NORMAL"
 
-    rsi_arrow = "▲" if rsi_chg > 0 else ("▼" if rsi_chg < 0 else "—")
-    rsi_arrow_color = "#10b981" if rsi_chg > 0 else ("#f43f5e" if rsi_chg < 0 else "#94a3b8")
+    rsi_arrow = "+" if rsi_chg > 0 else ("-" if rsi_chg < 0 else "=")
+    rsi_arrow_color = "#ffffff" if rsi_chg > 0 else ("#737373" if rsi_chg < 0 else "#a3a3a3")
 
     def growth_badge(v, label):
         if v is None or pd.isna(v):
-            return (f'<span style="font-size:10px; color:#7d8ba3; '
-                    f'padding:3px 8px; background:#0f172a; '
-                    f'border-radius:5px; margin-right:4px;">{label} —</span>')
-        color = "#10b981" if v >= 0 else "#f43f5e"
+            return (f'<span style="font-size:11px; color:#737373; '
+                    f'padding:4px 8px; background:#171717; '
+                    f'border: 1px solid #262626; border-radius:4px; margin-right:6px;">{label} —</span>')
+        color = "#ffffff" if v >= 0 else "#737373"
         sign = "+" if v >= 0 else ""
-        rgb = "16,185,129" if v >= 0 else "244,63,94"
-        return (f'<span style="font-size:10px; color:{color}; '
-                f'padding:3px 8px; background:rgba({rgb},0.1); '
-                f'border-radius:5px; margin-right:4px; font-weight:700;">'
+        return (f'<span style="font-size:11px; color:{color}; '
+                f'padding:4px 8px; background:#171717; '
+                f'border: 1px solid #262626; border-radius:4px; margin-right:6px; font-weight:500;">'
                 f'{label} {sign}{v:.1f}%</span>')
 
     der_str = f"{der:.2f}x" if der is not None and not pd.isna(der) else "—"
-    der_color = ("#10b981" if (der is not None and der < 0.5) else
-                 "#f59e0b" if (der is not None and der < 1.0) else
-                 "#f43f5e" if der is not None else "#7d8ba3")
-
     roe_str = f"{roe:.1f}%" if roe is not None and not pd.isna(roe) else "—"
-    roe_color = ("#10b981" if (roe is not None and roe > 15) else
-                 "#f59e0b" if (roe is not None and roe > 5) else
-                 "#f43f5e" if roe is not None else "#7d8ba3")
 
     eksp_badge = ""
     if special_flag:
         eksp_badge = (
-            f'<span style="font-size:10px; padding:3px 8px; '
-            f'background:rgba(99,102,241,0.15); color:#a5b4fc; '
-            f'border-radius:5px; font-weight:700; margin-left:6px;">'
-            f'🚀 {special_flag}</span>'
+            f'<span style="font-size:11px; padding:4px 8px; '
+            f'background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+            f'border-radius:4px; font-weight:500; margin-left:8px;">'
+            f'{special_flag}</span>'
         )
 
     return (
-        '<div style="'
-        'background: linear-gradient(135deg, #131a2a 0%, #0f1628 100%); '
-        'border: 1px solid #1a2338; border-radius: 14px; '
-        'padding: 18px 22px; margin-bottom: 10px; '
-        'position: relative; overflow: hidden;">'
-        f'<div style="position:absolute; left:0; top:0; bottom:0; width:3px; '
-        f'background: {rsi_color};"></div>'
-        '<div style="display:flex; justify-content:space-between; align-items:flex-start; '
-        'padding-left: 8px; gap: 16px;">'
+        '<div style="background: #0a0a0a; border: 1px solid #262626; border-radius: 8px; '
+        'padding: 18px 22px; margin-bottom: 10px; position: relative;">'
+        f'<div style="position:absolute; left:0; top:0; bottom:0; width:2px; background: {rsi_color}; border-radius: 8px 0 0 8px;"></div>'
+        '<div style="display:flex; justify-content:space-between; align-items:flex-start; padding-left: 8px; gap: 16px;">'
         '<div style="flex: 1; min-width: 0;">'
-        f'<div style="font-size:17px; font-weight:800; color:#ffffff; '
-        f'letter-spacing:-0.02em; line-height:1.2;">{kode}{eksp_badge}</div>'
-        f'<div style="font-size:12px; color:#7d8ba3; margin-top:3px;">{nama_disp}</div>'
-        '<div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:4px; align-items:center;">'
-        f'<span style="font-size:11px; font-weight:800; padding:4px 10px; '
-        f'border-radius:6px; background:{rsi_bg}; color:{rsi_color}; '
-        f'border:1px solid {rsi_color}40;">RSI {rsi:.1f}</span>'
-        f'<span style="font-size:11px; color:{rsi_color}; font-weight:700; '
+        f'<div style="font-size:17px; font-weight:600; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}{eksp_badge}</div>'
+        f'<div style="font-size:12px; color:#a3a3a3; margin-top:4px;">{nama_disp}</div>'
+        '<div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;">'
+        f'<span style="font-size:11px; font-weight:600; padding:4px 10px; '
+        f'border-radius:4px; background:{rsi_bg}; color:{rsi_color}; '
+        f'border:1px solid #262626;">RSI {rsi:.1f}</span>'
+        f'<span style="font-size:11px; color:{rsi_color}; font-weight:500; '
         f'margin-right:8px;">{rsi_label}</span>'
         f'<span style="font-size:11px; color:{rsi_arrow_color}; '
-        f'font-weight:700; margin-right:8px;">{rsi_arrow} {abs(rsi_chg):.1f}</span>'
+        f'font-weight:500; margin-right:8px;">{rsi_arrow} {abs(rsi_chg):.1f}</span>'
         f'{growth_badge(ni_g, "NI")}'
         f'{growth_badge(rev_g, "Rev")}'
         '</div>'
-        '<div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:14px;">'
-        f'<span style="font-size:11px; color:#7d8ba3;">DER <b style="color:{der_color};">{der_str}</b></span>'
-        f'<span style="font-size:11px; color:#7d8ba3;">ROE <b style="color:{roe_color};">{roe_str}</b></span>'
+        '<div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:14px;">'
+        f'<span style="font-size:12px; color:#737373;">DER <b style="color:#a3a3a3; font-weight:500;">{der_str}</b></span>'
+        f'<span style="font-size:12px; color:#737373;">ROE <b style="color:#a3a3a3; font-weight:500;">{roe_str}</b></span>'
         '</div>'
         '</div>'
         '<div style="text-align:right; flex-shrink:0;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'margin-bottom:2px;">HARGA</div>'
-        f'<div style="font-size:22px; font-weight:800; color:#ffffff; '
+        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
+        f'margin-bottom:4px;">HARGA</div>'
+        f'<div style="font-size:22px; font-weight:600; color:#ffffff; '
         f'letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
         '</div>'
         '</div></div>'
@@ -418,7 +378,7 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe,
 
 
 # ============================================================
-# CARD: SETUP (Buy Support / Breakout) — BANNER PER TIPE
+# CARD: SETUP (Buy Support / Breakout)
 # ============================================================
 def setup_row(r, tipe="support"):
     kode = r["kode"]
@@ -442,169 +402,147 @@ def setup_row(r, tipe="support"):
     breakout_info = signals.get("breakout_info", "")
 
     if tipe == "support":
-        accent = "#10b981"
-        badge = ('<span style="background:rgba(16,185,129,0.15); color:#10b981; '
-                 'padding:3px 10px; border-radius:6px; font-size:10px; '
-                 'font-weight:800;">🎯 LIMIT · ZONA SUPPORT</span>')
+        badge = ('<span style="background:#171717; color:#a3a3a3; '
+                 'padding:4px 10px; border: 1px solid #262626; border-radius:4px; font-size:11px; '
+                 'font-weight:500; text-transform:uppercase;">LIMIT · ZONA SUPPORT</span>')
         if harga < zona_lo:
-            posisi_txt = "↓ di bawah zona"
-            posisi_color = "#f43f5e"
+            posisi_txt, posisi_color = "Di bawah zona", "#737373"
         elif harga > zona_hi:
-            posisi_txt = "↑ di atas zona"
-            posisi_color = "#f59e0b"
+            posisi_txt, posisi_color = "Di atas zona", "#a3a3a3"
         else:
-            posisi_txt = "● di dalam zona"
-            posisi_color = "#10b981"
+            posisi_txt, posisi_color = "Di dalam zona", "#ffffff"
     else:
-        accent = "#06b6d4"
-        badge = ('<span style="background:rgba(6,182,212,0.15); color:#06b6d4; '
-                 'padding:3px 10px; border-radius:6px; font-size:10px; '
-                 'font-weight:800;">🚀 STOP · BREAKOUT</span>')
+        badge = ('<span style="background:#171717; color:#a3a3a3; '
+                 'padding:4px 10px; border: 1px solid #262626; border-radius:4px; font-size:11px; '
+                 'font-weight:500; text-transform:uppercase;">STOP · BREAKOUT</span>')
         if harga < entry:
-            posisi_txt = f"↓ {((entry-harga)/harga*100):.1f}% di bawah trigger"
-            posisi_color = "#94a3b8"
+            posisi_txt, posisi_color = f"{((entry-harga)/harga*100):.1f}% di bawah trigger", "#a3a3a3"
         else:
-            posisi_txt = "↑ sudah melewati trigger"
-            posisi_color = "#f43f5e"
+            posisi_txt, posisi_color = "Sudah melewati trigger", "#ffffff"
 
-    if rr_tp1 >= 3:
-        rr_color = "#10b981"
-    elif rr_tp1 >= 2:
-        rr_color = "#34d399"
-    elif rr_tp1 >= 1.5:
-        rr_color = "#f59e0b"
-    else:
-        rr_color = "#f43f5e"
+    if rr_tp1 >= 1.5: rr_color = "#ffffff"
+    else: rr_color = "#737373"
 
     if jarak > 0:
-        jarak_color = "#f59e0b"
-        jarak_icon = "↑"
+        jarak_color, jarak_icon = "#a3a3a3", "+"
     elif jarak < 0:
-        jarak_color = "#10b981"
-        jarak_icon = "↓"
+        jarak_color, jarak_icon = "#ffffff", "-"
     else:
-        jarak_color = "#94a3b8"
-        jarak_icon = "="
+        jarak_color, jarak_icon = "#737373", "="
 
     tp2_disp = f'{tp2:,.0f}' if tp2 else "—"
     tp2_rr = f'RR {rr_tp2:.2f}' if tp2 else "—"
 
     signal_banners = ""
-
     if tipe == "breakout" and breakout_zone:
         signal_banners += (
-            f'<div style="background:rgba(6,182,212,0.15); border:1px solid #06b6d4; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#06b6d4; font-weight:800; letter-spacing:0.5px;">🚀 BREAKOUT TRIGGER</div>'
-            f'<div style="font-size:12px; color:#67e8f9; margin-top:4px;">{breakout_info}</div>'
+            f'<div style="background:#171717; border:1px solid #262626; '
+            f'border-left:3px solid #ffffff; border-radius:4px; padding:12px 14px; margin-bottom:16px;">'
+            f'<div style="font-size:11px; color:#ffffff; font-weight:600; letter-spacing:0.5px; text-transform:uppercase;">BREAKOUT TRIGGER</div>'
+            f'<div style="font-size:12px; color:#a3a3a3; margin-top:6px; line-height:1.5;">{breakout_info}</div>'
             f'</div>'
         )
 
     if tipe == "support" and strong_zone:
         signal_banners += (
-            f'<div style="background:rgba(245,158,11,0.12); border:1px solid #f59e0b; '
-            f'border-radius:8px; padding:10px 14px; margin-bottom:12px;">'
-            f'<div style="font-size:11px; color:#f59e0b; font-weight:800; letter-spacing:0.5px;">⚠️ RESISTANCE PSIKOLOGIS</div>'
-            f'<div style="font-size:12px; color:#fcd34d; margin-top:4px;">{strong_info}</div>'
+            f'<div style="background:#171717; border:1px solid #262626; '
+            f'border-left:3px solid #737373; border-radius:4px; padding:12px 14px; margin-bottom:16px;">'
+            f'<div style="font-size:11px; color:#a3a3a3; font-weight:600; letter-spacing:0.5px; text-transform:uppercase;">RESISTANCE PSIKOLOGIS</div>'
+            f'<div style="font-size:12px; color:#a3a3a3; margin-top:6px; line-height:1.5;">{strong_info}</div>'
             f'</div>'
         )
 
-    card_border = "border:1px solid #1a2338;"
-    if tipe == "breakout" and breakout_zone:
-        card_border = "border:1px solid #06b6d4;"
-    elif tipe == "support" and strong_zone:
-        card_border = "border:1px solid #f59e0b;"
-
     return (
-        f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-        f'{card_border} border-left:4px solid {accent}; '
-        f'border-radius:14px; padding:20px 24px; margin-bottom:12px;">'
+        f'<div style="background:#0a0a0a; '
+        f'border: 1px solid #262626; '
+        f'border-radius:8px; padding:20px 24px; margin-bottom:16px;">'
 
         f'<div style="display:flex; justify-content:space-between; '
-        f'align-items:flex-start; gap:20px; margin-bottom:16px; '
+        f'align-items:flex-start; gap:20px; margin-bottom:20px; '
         f'flex-wrap:wrap;">'
         f'<div style="flex:1; min-width:200px;">'
-        f'<div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">'
-        f'<span style="font-size:20px; font-weight:900; color:#ffffff; '
+        f'<div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">'
+        f'<span style="font-size:20px; font-weight:600; color:#ffffff; '
         f'letter-spacing:-0.02em;">{kode}</span>'
         f'{badge}'
         f'</div>'
-        f'<div style="font-size:12px; color:#94a3b8; margin-top:4px;">{nama}</div>'
+        f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px;">{nama}</div>'
         f'</div>'
 
         f'<div style="text-align:right; min-width:140px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.8px; '
-        f'font-weight:700; text-transform:uppercase;">Harga Saat Ini</div>'
-        f'<div style="font-size:26px; font-weight:900; color:#ffffff; '
-        f'letter-spacing:-0.03em; margin-top:2px;">'
+        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
+        f'font-weight:500; text-transform:uppercase;">Harga Saat Ini</div>'
+        f'<div style="font-size:26px; font-weight:600; color:#ffffff; '
+        f'letter-spacing:-0.03em; margin-top:4px;">'
         f'{harga:,.0f}</div>'
-        f'<div style="font-size:10px; color:{posisi_color}; font-weight:700; '
-        f'margin-top:2px;">{posisi_txt}</div>'
+        f'<div style="font-size:11px; color:{posisi_color}; font-weight:500; '
+        f'margin-top:4px;">{posisi_txt}</div>'
         f'</div>'
         f'</div>'
 
         f'{signal_banners}'
 
-        f'<div style="background:rgba(99,102,241,0.06); '
-        f'border:1px solid rgba(99,102,241,0.15); border-radius:10px; '
-        f'padding:12px 18px; margin-bottom:16px; '
+        f'<div style="background:#171717; '
+        f'border:1px solid #262626; border-radius:6px; '
+        f'padding:14px 18px; margin-bottom:20px; '
         f'display:flex; justify-content:space-between; align-items:center; '
         f'flex-wrap:wrap; gap:12px;">'
         f'<div style="display:flex; align-items:center; gap:14px;">'
-        f'<span style="font-size:14px; font-weight:700; color:#cbd5e1;">'
+        f'<span style="font-size:14px; font-weight:500; color:#a3a3a3;">'
         f'{harga:,.0f}</span>'
-        f'<span style="font-size:16px; color:#64748b;">→</span>'
-        f'<span style="font-size:16px; font-weight:800; color:#a5b4fc;">'
+        f'<span style="font-size:14px; color:#737373;">→</span>'
+        f'<span style="font-size:16px; font-weight:600; color:#ffffff;">'
         f'{entry:,.0f}</span>'
-        f'<span style="font-size:11px; color:{jarak_color}; font-weight:700;">'
+        f'<span style="font-size:11px; color:{jarak_color}; font-weight:500;">'
         f'({jarak_icon} {abs(jarak):.2f}% ke entry)</span>'
         f'</div>'
-        f'<span style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">HARGA SAAT INI → ENTRY</span>'
+        f'<span style="font-size:11px; color:#737373; letter-spacing:0.5px; '
+        f'font-weight:500;">HARGA → ENTRY</span>'
         f'</div>'
 
         f'<div style="display:grid; grid-template-columns:repeat(4, 1fr); '
-        f'gap:12px; margin-bottom:14px;">'
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">ENTRY</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#ffffff; '
-        f'margin-top:4px;">{entry:,.0f}</div></div>'
+        f'gap:12px; margin-bottom:16px;">'
+        
+        f'<div style="background:#171717; border:1px solid #262626; '
+        f'border-radius:6px; padding:14px;">'
+        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
+        f'font-weight:500;">ENTRY</div>'
+        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
+        f'margin-top:6px;">{entry:,.0f}</div></div>'
 
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">STOP LOSS</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#f43f5e; '
-        f'margin-top:4px;">{sl:,.0f}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
+        f'<div style="background:#171717; border:1px solid #262626; '
+        f'border-radius:6px; padding:14px;">'
+        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
+        f'font-weight:500;">STOP LOSS</div>'
+        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
+        f'margin-top:6px;">{sl:,.0f}</div>'
+        f'<div style="font-size:11px; color:#737373; margin-top:4px;">'
         f'-{risk_pct:.2f}%</div></div>'
 
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">TP1</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#10b981; '
-        f'margin-top:4px;">{tp1:,.0f}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
+        f'<div style="background:#171717; border:1px solid #262626; '
+        f'border-radius:6px; padding:14px;">'
+        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
+        f'font-weight:500;">TP1</div>'
+        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
+        f'margin-top:6px;">{tp1:,.0f}</div>'
+        f'<div style="font-size:11px; color:#737373; margin-top:4px;">'
         f'RR {rr_tp1:.2f}</div></div>'
 
-        f'<div style="background:#0a0f1e; border:1px solid #1a2338; '
-        f'border-radius:10px; padding:12px 14px;">'
-        f'<div style="font-size:10px; color:#64748b; letter-spacing:0.6px; '
-        f'font-weight:600;">TP2</div>'
-        f'<div style="font-size:17px; font-weight:800; color:#10b981; '
-        f'margin-top:4px;">{tp2_disp}</div>'
-        f'<div style="font-size:10px; color:#64748b; margin-top:2px;">'
+        f'<div style="background:#171717; border:1px solid #262626; '
+        f'border-radius:6px; padding:14px;">'
+        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
+        f'font-weight:500;">TP2</div>'
+        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
+        f'margin-top:6px;">{tp2_disp}</div>'
+        f'<div style="font-size:11px; color:#737373; margin-top:4px;">'
         f'{tp2_rr}</div></div>'
         f'</div>'
 
-        f'<div style="border-top:1px solid #1a2338; padding-top:12px; '
-        f'display:flex; gap:24px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
-        f'<span>RR <b style="color:{rr_color}; font-size:13px;">{rr_tp1:.2f}</b></span>'
-        f'<span>Risk <b style="color:#cbd5e1;">{risk_pct:.2f}%</b></span>'
-        f'<span>Zona <b style="color:#cbd5e1;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
+        f'<div style="border-top:1px solid #262626; padding-top:14px; '
+        f'display:flex; gap:24px; flex-wrap:wrap; font-size:12px; color:#a3a3a3;">'
+        f'<span>RR <b style="color:{rr_color}; font-size:13px; font-weight:600;">{rr_tp1:.2f}</b></span>'
+        f'<span>Risk <b style="color:#a3a3a3; font-weight:500;">{risk_pct:.2f}%</b></span>'
+        f'<span>Zona <b style="color:#a3a3a3; font-weight:500;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
         f'</div>'
         f'</div>'
     )
@@ -620,21 +558,19 @@ st.markdown(page_header("", "Watchlist",
 nama_map = load_nama()
 
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "🌅 Haka Pagi", "🎣 Bottom Fishing", "⚡ Pre-Cross",
-    "🎯 Buy on Support", "🚀 Breakout Buy", "📊 Performa"
+    "Haka Pagi", "Bottom Fishing", "Pre-Cross",
+    "Buy on Support", "Breakout Buy", "Performa"
 ])
 
 
 # ============================================================
-# TAB 1: HAKA PAGI (Bersih & Rencana Trading)
+# TAB 1: HAKA PAGI
 # ============================================================
 with tab1:
     files = list_kandidat_files()
 
     if not files:
-        st.markdown(empty_state("📭", "Belum ada kandidat",
-                                "Jalankan screener dulu"),
-                    unsafe_allow_html=True)
+        st.markdown(empty_state("", "Belum ada kandidat", "Jalankan screener dulu"), unsafe_allow_html=True)
     else:
         date_options, file_map = [], {}
         for f in files:
@@ -648,13 +584,12 @@ with tab1:
         col1, col2 = st.columns([4, 1])
         with col1:
             selected_date = st.selectbox(
-                "📅 Pilih tanggal kandidat",
+                "Pilih tanggal kandidat",
                 date_options, index=0,
                 key="kandidat_date_picker",
             )
         with col2:
-            if st.button("🔄 Refresh", key="refresh_kandidat",
-                         use_container_width=True):
+            if st.button("Refresh", key="refresh_kandidat", use_container_width=True):
                 st.cache_data.clear()
                 st.rerun()
 
@@ -664,20 +599,18 @@ with tab1:
         if df.empty:
             st.error(f"File `{selected}` kosong atau tidak terbaca.")
         else:
-            # Normalisasi kolom dasar
             for col in ["ret_1d"]:
                 if col in df.columns:
                     df[col] = pd.to_numeric(df[col], errors="coerce")
             
-            # Urutkan berdasarkan rating secara background (tanpa filter UI)
             if "rating" in df.columns:
                 df["rating"] = pd.to_numeric(df["rating"], errors="coerce").fillna(0)
                 df = df.sort_values("rating", ascending=False, na_position="last")
 
             st.markdown(
-                f'<div style="font-size:12px; color:#7d8ba3; '
-                f'margin:8px 0 16px; font-weight:500;">'
-                f'📁 <code>{selected}</code> · {len(df)} kandidat · '
+                f'<div style="font-size:13px; color:#a3a3a3; '
+                f'margin:12px 0 20px; font-weight:500;">'
+                f'Kandidat: <code>{selected}</code> · {len(df)} saham · '
                 f'{len(date_options)} hari tersedia</div>',
                 unsafe_allow_html=True,
             )
@@ -699,17 +632,16 @@ with tab1:
                         unsafe_allow_html=True,
                     )
 
-            # Reminder gap
             st.markdown(
-                '<div style="background:rgba(245,158,11,0.08); '
-                'border:1px solid rgba(245,158,11,0.25); '
-                'border-left:4px solid #f59e0b; '
-                'border-radius:10px; padding:12px 18px; margin-top:20px; '
-                'font-size:12px; color:#cbd5e1; line-height:1.6;">'
-                '<b style="color:#f59e0b;">⚠️ Besok pagi saat open (T+1):</b> '
+                '<div style="background:#171717; '
+                'border:1px solid #262626; '
+                'border-left:3px solid #ffffff; '
+                'border-radius:6px; padding:16px 20px; margin-top:24px; '
+                'font-size:13px; color:#d4d4d4; line-height:1.6;">'
+                '<b style="color:#ffffff;">Besok pagi saat open (T+1):</b> '
                 'cek gap untuk setiap kandidat di atas. '
-                '<b style="color:#6ee7b7;">Execute</b> jika gap 2%–20%. '
-                '<b style="color:#fda4af;">Skip</b> jika gap &lt; 2% '
+                '<b style="color:#ffffff;">Execute</b> jika gap 2%–20%. '
+                '<b style="color:#737373;">Skip</b> jika gap &lt; 2% '
                 'atau &gt; 20%.'
                 '</div>',
                 unsafe_allow_html=True,
@@ -721,17 +653,17 @@ with tab1:
 # ============================================================
 with tab2:
     st.markdown(
-        '<div style="background: linear-gradient(135deg, rgba(6,182,212,0.10), rgba(16,185,129,0.05)); '
-        'border: 1px solid rgba(6,182,212,0.25); border-radius: 12px; '
-        'padding: 16px 20px; margin-bottom: 20px;">'
-        '<div style="font-size: 13px; color: #06b6d4; font-weight: 700; '
-        'margin-bottom: 8px;">🎣 BOTTOM FISHING — SAHAM SEHAT</div>'
-        '<div style="font-size: 12px; color: #94a3b8; line-height: 1.6;">'
-        '✓ Q1 dan Q2 ada, se-tahun, Q2 standalone ≥ 0<br>'
-        '✓ Laba tidak turun drastis (&gt; 50%) — kecuali premium ekspansi<br>'
-        '✓ Revenue YoY tidak turun &gt; 30%<br>'
-        '✓ DER &lt; 2.0x · ROE &gt; 10%<br>'
-        '✓ Saham masih aktif bergerak'
+        '<div style="background: #0a0a0a; '
+        'border: 1px solid #262626; border-radius: 8px; '
+        'padding: 20px 24px; margin-bottom: 24px;">'
+        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
+        'margin-bottom: 10px;">BOTTOM FISHING — SAHAM SEHAT</div>'
+        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
+        '- Q1 dan Q2 ada, se-tahun, Q2 standalone ≥ 0<br>'
+        '- Laba tidak turun drastis (&gt; 50%) — kecuali premium ekspansi<br>'
+        '- Revenue YoY tidak turun &gt; 30%<br>'
+        '- DER &lt; 2.0x · ROE &gt; 10%<br>'
+        '- Saham masih aktif bergerak'
         '</div></div>', unsafe_allow_html=True
     )
 
@@ -743,14 +675,14 @@ with tab2:
         c1, c2, c3 = st.columns([3, 2, 1])
         with c1:
             st.markdown(
-                f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-                f'<b style="color:#06b6d4;">{len(items_bf)}</b> saham · '
+                f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+                f'<b style="color:#ffffff;">{len(items_bf)}</b> saham · '
                 f'generated {gen_bf}</div>', unsafe_allow_html=True
             )
         with c2:
             max_rsi = st.slider("Max RSI", 10, 60, 40, 5, key="bf_rsi", label_visibility="collapsed")
         with c3:
-            if st.button("🔄 Reload", key="reload_bf", use_container_width=True):
+            if st.button("Reload", key="reload_bf", use_container_width=True):
                 st.cache_data.clear(); st.rerun()
 
         filtered = [x for x in items_bf if x["rsi"] <= max_rsi]
@@ -776,12 +708,12 @@ with tab2:
 # ============================================================
 with tab3:
     st.markdown(
-        '<div style="background: linear-gradient(135deg, rgba(16,185,129,0.12), '
-        'rgba(6,182,212,0.05)); border: 1px solid rgba(16,185,129,0.30); '
-        'border-radius: 12px; padding: 18px 22px; margin-bottom: 20px;">'
-        '<div style="font-size: 14px; color: #10b981; font-weight: 800; '
-        'letter-spacing:0.5px; margin-bottom:10px;">⚡ PRE-GOLDEN-CROSS</div>'
-        '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.8;">'
+        '<div style="background: #0a0a0a; '
+        'border: 1px solid #262626; '
+        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
+        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
+        'letter-spacing:0.5px; margin-bottom:10px;">PRE-GOLDEN-CROSS</div>'
+        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
         'Setup skor ≥ <b>85</b> · Winrate backtest 91.2% · Gap EMA20-EMA50 ≤ 4%'
         '</div></div>', unsafe_allow_html=True
     )
@@ -791,24 +723,24 @@ with tab3:
     c1, c2 = st.columns([3, 1])
     with c1:
         st.markdown(
-            f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-            f'<b style="color:#10b981;">{len(items_pc)}</b> setup skor ≥85 · '
+            f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+            f'<b style="color:#ffffff;">{len(items_pc)}</b> setup skor ≥85 · '
             f'generated {gen_pc}</div>', unsafe_allow_html=True
         )
     with c2:
-        if st.button("🔄 Reload", key="reload_pc", use_container_width=True):
+        if st.button("Reload", key="reload_pc", use_container_width=True):
             st.cache_data.clear(); st.rerun()
 
     if gen_pc == "?":
         st.warning("Data scan belum tersedia. Silakan hubungi admin untuk update data terbaru.")
     elif not items_pc:
         st.markdown(
-            '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-            'border:1px dashed #334155; border-radius:14px; '
+            '<div style="background:#0a0a0a; '
+            'border:1px dashed #404040; border-radius:8px; '
             'padding:40px 32px; text-align:center;">'
-            '<div style="font-size:15px; font-weight:700; color:#cbd5e1; '
+            '<div style="font-size:15px; font-weight:600; color:#ffffff; '
             'margin-bottom:8px;">Tidak ada setup skor ≥ 85 hari ini</div>'
-            '<div style="font-size:12px; color:#7d8ba3; max-width:480px; '
+            '<div style="font-size:13px; color:#a3a3a3; max-width:480px; '
             'margin:0 auto;">Setup presisi tinggi jarang muncul. '
             'Cek kandidat emerging di bawah.</div>'
             '</div>', unsafe_allow_html=True
@@ -819,39 +751,36 @@ with tab3:
             skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]
             harga = r["harga"]; ema20 = r["ema20"]; ema50 = r["ema50"]
             st.markdown(
-                f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-                f'border:1px solid #1a2338; border-left:4px solid #10b981; '
-                f'border-radius:14px; padding:18px 22px; margin-bottom:12px;">'
+                f'<div style="background:#0a0a0a; '
+                f'border:1px solid #262626; border-left:3px solid #ffffff; '
+                f'border-radius:8px; padding:20px 24px; margin-bottom:12px;">'
                 f'<div style="display:flex; justify-content:space-between; align-items:center; gap:16px;">'
                 f'<div>'
                 f'<div style="display:flex; align-items:baseline; gap:12px;">'
-                f'<span style="font-size:18px; font-weight:800; color:#10b981;">#{i+1}</span>'
-                f'<span style="font-size:18px; font-weight:800; color:#ffffff;">{kode}</span>'
-                f'<span style="background:rgba(16,185,129,0.15); color:#10b981; '
-                f'padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">🔥 SKOR {skor:.0f}</span>'
+                f'<span style="font-size:16px; font-weight:600; color:#737373;">#{i+1}</span>'
+                f'<span style="font-size:18px; font-weight:600; color:#ffffff;">{kode}</span>'
+                f'<span style="background:#171717; color:#ffffff; border:1px solid #262626; '
+                f'padding:3px 10px; border-radius:4px; font-size:11px; font-weight:600;">SKOR {skor:.0f}</span>'
                 f'</div>'
-                f'<div style="font-size:12px; color:#7d8ba3; margin-top:4px;">{nama}</div>'
-                f'<div style="margin-top:10px; display:flex; gap:16px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
-                f'<span>Harga <b style="color:#fff;">{harga:,.0f}</b></span>'
-                f'<span>EMA20 <b style="color:#06b6d4;">{ema20:,.0f}</b></span>'
-                f'<span>EMA50 <b style="color:#f59e0b;">{ema50:,.0f}</b></span>'
-                f'<span>Gap <b style="color:#fff;">{gap:.2f}%</b></span>'
-                f'<span>Konv <b style="color:#10b981;">+{konv:.0f}%</b></span>'
+                f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px;">{nama}</div>'
+                f'<div style="margin-top:12px; display:flex; gap:16px; flex-wrap:wrap; font-size:12px; color:#737373;">'
+                f'<span>Harga <b style="color:#ffffff; font-weight:500;">{harga:,.0f}</b></span>'
+                f'<span>EMA20 <b style="color:#ffffff; font-weight:500;">{ema20:,.0f}</b></span>'
+                f'<span>EMA50 <b style="color:#ffffff; font-weight:500;">{ema50:,.0f}</b></span>'
+                f'<span>Gap <b style="color:#ffffff; font-weight:500;">{gap:.2f}%</b></span>'
+                f'<span>Konv <b style="color:#ffffff; font-weight:500;">+{konv:.0f}%</b></span>'
                 f'</div></div></div></div>', unsafe_allow_html=True
             )
 
-    st.markdown(
-        '<div style="height:1px; background:linear-gradient(90deg, '
-        'transparent, #334155, transparent); margin:32px 0 20px;"></div>', unsafe_allow_html=True
-    )
+    st.markdown('<div style="height:1px; background:#262626; margin:32px 0;"></div>', unsafe_allow_html=True)
 
     st.markdown(
-        '<div style="background: linear-gradient(135deg, rgba(245,158,11,0.10), '
-        'rgba(99,102,241,0.05)); border: 1px solid rgba(245,158,11,0.30); '
-        'border-radius: 12px; padding: 16px 20px; margin-bottom: 20px;">'
-        '<div style="font-size: 13px; color: #f59e0b; font-weight: 800; '
-        'margin-bottom: 8px;">🌱 EMERGING — MENUJU SKOR 85+</div>'
-        '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
+        '<div style="background: #0a0a0a; '
+        'border: 1px solid #262626; '
+        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
+        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
+        'margin-bottom: 10px;">EMERGING — MENUJU SKOR 85+</div>'
+        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
         'Saham skor 65–84 yang sedang konvergen dan EMA20 naik.'
         '</div></div>', unsafe_allow_html=True
     )
@@ -864,43 +793,35 @@ with tab3:
         st.info("Belum ada kandidat emerging hari ini.")
     else:
         st.markdown(
-            f'<div style="font-size:12px; color:#7d8ba3; margin:4px 0 16px;">'
-            f'<b style="color:#f59e0b;">{len(items_emg)}</b> kandidat · generated {gen_emg}</div>',
+            f'<div style="font-size:13px; color:#a3a3a3; margin:4px 0 16px;">'
+            f'<b style="color:#ffffff;">{len(items_emg)}</b> kandidat · generated {gen_emg}</div>',
             unsafe_allow_html=True
         )
         for i, r in enumerate(items_emg):
             kode = r["kode"]; nama = nama_map.get(kode, kode)[:55]
             skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]; harga = r["harga"]
-            if skor >= 80:
-                color = "#10b981"
-            elif skor >= 75:
-                color = "#a5b4fc"
-            elif skor >= 70:
-                color = "#f59e0b"
-            else:
-                color = "#94a3b8"
-            gap_to = 85 - skor
+            
             st.markdown(
-                f'<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-                f'border:1px solid #1a2338; border-left:3px solid {color}; '
-                f'border-radius:14px; padding:14px 20px; margin-bottom:10px;">'
+                f'<div style="background:#0a0a0a; '
+                f'border:1px solid #262626; border-left:3px solid #404040; '
+                f'border-radius:8px; padding:16px 20px; margin-bottom:12px;">'
                 f'<div style="display:flex; justify-content:space-between; align-items:center; gap:16px;">'
                 f'<div>'
                 f'<div style="display:flex; align-items:baseline; gap:10px;">'
-                f'<span style="font-size:14px; font-weight:800; color:#94a3b8;">#{i+1}</span>'
-                f'<span style="font-size:16px; font-weight:800; color:#ffffff;">{kode}</span>'
-                f'<span style="background:rgba(148,163,184,0.15); color:{color}; '
-                f'padding:3px 10px; border-radius:6px; font-size:10px; font-weight:800;">SKOR {skor:.0f}</span>'
+                f'<span style="font-size:14px; font-weight:600; color:#737373;">#{i+1}</span>'
+                f'<span style="font-size:16px; font-weight:600; color:#ffffff;">{kode}</span>'
+                f'<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+                f'padding:3px 10px; border-radius:4px; font-size:11px; font-weight:600;">SKOR {skor:.0f}</span>'
                 f'</div>'
-                f'<div style="font-size:11px; color:#7d8ba3; margin-top:3px;">{nama}</div>'
-                f'<div style="margin-top:8px; display:flex; gap:14px; flex-wrap:wrap; font-size:11px; color:#94a3b8;">'
-                f'<span>Harga <b style="color:#fff;">{harga:,.0f}</b></span>'
-                f'<span>Gap <b style="color:#fff;">{gap:.2f}%</b></span>'
-                f'<span>Konv <b style="color:#10b981;">+{konv:.0f}%</b></span>'
+                f'<div style="font-size:12px; color:#a3a3a3; margin-top:4px;">{nama}</div>'
+                f'<div style="margin-top:10px; display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:#737373;">'
+                f'<span>Harga <b style="color:#ffffff; font-weight:500;">{harga:,.0f}</b></span>'
+                f'<span>Gap <b style="color:#ffffff; font-weight:500;">{gap:.2f}%</b></span>'
+                f'<span>Konv <b style="color:#ffffff; font-weight:500;">+{konv:.0f}%</b></span>'
                 f'</div></div>'
                 f'<div style="text-align:right;">'
-                f'<div style="font-size:24px; font-weight:800; color:{color};">{skor:.0f}</div>'
-                f'<div style="font-size:10px; color:#f59e0b;">−{gap_to:.0f} ke 85</div>'
+                f'<div style="font-size:22px; font-weight:600; color:#ffffff;">{skor:.0f}</div>'
+                f'<div style="font-size:11px; color:#737373;">{85 - skor:.0f} ke 85</div>'
                 f'</div></div></div>', unsafe_allow_html=True
             )
 
@@ -910,12 +831,12 @@ with tab3:
 # ============================================================
 with tab4:
     st.markdown(
-        '<div style="background: linear-gradient(135deg, rgba(16,185,129,0.10), '
-        'rgba(6,182,212,0.05)); border: 1px solid rgba(16,185,129,0.30); '
-        'border-radius: 12px; padding: 16px 20px; margin-bottom: 20px;">'
-        '<div style="font-size: 13px; color: #10b981; font-weight: 800; '
-        'margin-bottom: 8px;">🎯 BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
-        '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
+        '<div style="background: #0a0a0a; '
+        'border: 1px solid #262626; '
+        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
+        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
+        'margin-bottom: 10px;">BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
+        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
         'Hanya saham yang <b>harganya dekat zona support</b> '
         '(0-5% di atas zona atau sudah di dalam zona) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
@@ -931,13 +852,13 @@ with tab4:
     c1, c2 = st.columns([4, 1])
     with c1:
         st.markdown(
-            f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-            f'<b style="color:#10b981;">{len(items_support)}</b> saham dekat support · '
+            f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+            f'<b style="color:#ffffff;">{len(items_support)}</b> saham dekat support · '
             f'scan {generated_support}</div>',
             unsafe_allow_html=True
         )
     with c2:
-        if st.button("🔄 Reload", key="reload_support", use_container_width=True):
+        if st.button("Reload", key="reload_support", use_container_width=True):
             st.cache_data.clear()
             st.rerun()
 
@@ -954,12 +875,12 @@ with tab4:
 # ============================================================
 with tab5:
     st.markdown(
-        '<div style="background: linear-gradient(135deg, rgba(6,182,212,0.10), '
-        'rgba(99,102,241,0.05)); border: 1px solid rgba(6,182,212,0.30); '
-        'border-radius: 12px; padding: 16px 20px; margin-bottom: 20px;">'
-        '<div style="font-size: 13px; color: #06b6d4; font-weight: 800; '
-        'margin-bottom: 8px;">🚀 BREAKOUT BUY — SETUP STOP ORDER</div>'
-        '<div style="font-size: 12px; color: #cbd5e1; line-height: 1.7;">'
+        '<div style="background: #0a0a0a; '
+        'border: 1px solid #262626; '
+        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
+        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
+        'margin-bottom: 10px;">BREAKOUT BUY — SETUP STOP ORDER</div>'
+        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
         'Hanya saham yang <b>harganya 0-3% di bawah resistance</b> '
         '(sedang mendekati trigger breakout) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
@@ -975,13 +896,13 @@ with tab5:
     c1, c2 = st.columns([4, 1])
     with c1:
         st.markdown(
-            f'<div style="font-size:12px; color:#7d8ba3; padding:6px 0;">'
-            f'<b style="color:#06b6d4;">{len(items_breakout)}</b> saham dekat resistance · '
+            f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+            f'<b style="color:#ffffff;">{len(items_breakout)}</b> saham dekat resistance · '
             f'scan {generated_breakout}</div>',
             unsafe_allow_html=True
         )
     with c2:
-        if st.button("🔄 Reload", key="reload_breakout", use_container_width=True):
+        if st.button("Reload", key="reload_breakout", use_container_width=True):
             st.cache_data.clear()
             st.rerun()
 
@@ -1014,13 +935,13 @@ with tab6:
         col1, col2 = st.columns([3, 1])
         with col1:
             selected_bulan = st.selectbox(
-                "📅 Pilih bulan laporan",
+                "Pilih bulan laporan",
                 bulan_options,
                 index=0,
                 key="rekap_bulan_picker"
             )
         with col2:
-            if st.button("🔄 Refresh", key="refresh_rekap", use_container_width=True):
+            if st.button("Refresh", key="refresh_rekap", use_container_width=True):
                 st.cache_data.clear()
                 st.rerun()
 
@@ -1058,40 +979,40 @@ with tab6:
                 wr = avg = tot = 0
 
             st.markdown(
-                '<div style="background: linear-gradient(135deg, #131a2a, #0f1628); '
-                'border: 1px solid #1a2338; border-radius: 12px; '
-                'padding: 14px 20px; margin: 16px 0 20px; '
-                'display: flex; gap: 24px; flex-wrap: wrap;">'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">Total</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#ffffff;">{n_total}</div></div>'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">Tereksekusi</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#10b981;">{n_exec}</div></div>'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">TRAIL</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#10b981;">{n_trail}</div></div>'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">SL</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#f43f5e;">{n_sl}</div></div>'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">HOLD</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#f59e0b;">{n_hold}</div></div>'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">Skip</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#94a3b8;">{n_skip}</div></div>'
-                f'<div><span style="font-size:11px; color:#7d8ba3;">Suspended</span>'
-                f'<div style="font-size:18px; font-weight:800; color:#f43f5e;">{n_susp}</div></div>'
+                '<div style="background: #0a0a0a; '
+                'border: 1px solid #262626; border-radius: 8px; '
+                'padding: 16px 20px; margin: 16px 0 24px; '
+                'display: flex; gap: 32px; flex-wrap: wrap;">'
+                f'<div><span style="font-size:12px; color:#737373;">Total</span>'
+                f'<div style="font-size:18px; font-weight:600; color:#ffffff;">{n_total}</div></div>'
+                f'<div><span style="font-size:12px; color:#737373;">Tereksekusi</span>'
+                f'<div style="font-size:18px; font-weight:600; color:#ffffff;">{n_exec}</div></div>'
+                f'<div><span style="font-size:12px; color:#737373;">TRAIL</span>'
+                f'<div style="font-size:18px; font-weight:600; color:#ffffff;">{n_trail}</div></div>'
+                f'<div><span style="font-size:12px; color:#737373;">SL</span>'
+                f'<div style="font-size:18px; font-weight:600; color:#737373;">{n_sl}</div></div>'
+                f'<div><span style="font-size:12px; color:#737373;">HOLD</span>'
+                f'<div style="font-size:18px; font-weight:600; color:#a3a3a3;">{n_hold}</div></div>'
+                f'<div><span style="font-size:12px; color:#737373;">Skip</span>'
+                f'<div style="font-size:18px; font-weight:600; color:#a3a3a3;">{n_skip}</div></div>'
+                f'<div><span style="font-size:12px; color:#737373;">Suspended</span>'
+                f'<div style="font-size:18px; font-weight:600; color:#737373;">{n_susp}</div></div>'
                 '</div>', unsafe_allow_html=True
             )
 
             if n_exec > 0:
                 c1, c2, c3 = st.columns(3)
-                for col, label, val, color in [
-                    (c1, "WIN RATE", f"{wr:.1f}%", "#10b981" if wr >= 50 else "#f43f5e"),
-                    (c2, "AVG RETURN", f"{avg:+.2f}%", "#10b981" if avg >= 0 else "#f43f5e"),
-                    (c3, "TOTAL RETURN", f"{tot:+.2f}%", "#10b981" if tot >= 0 else "#f43f5e"),
+                for col, label, val in [
+                    (c1, "WIN RATE", f"{wr:.1f}%"),
+                    (c2, "AVG RETURN", f"{avg:+.2f}%"),
+                    (c3, "TOTAL RETURN", f"{tot:+.2f}%"),
                 ]:
                     with col:
                         st.markdown(
-                            '<div style="background:linear-gradient(180deg, #131a2a, #0f1628); '
-                            'border-radius:14px; padding:22px 24px; border:1px solid #1a2338;">'
-                            f'<div style="font-size:11px; color:#7d8ba3; letter-spacing:0.8px; font-weight:600;">{label}</div>'
-                            f'<div style="font-size:30px; font-weight:800; color:{color}; margin-top:8px;">{val}</div>'
+                            '<div style="background:#0a0a0a; '
+                            'border-radius:8px; padding:24px; border:1px solid #262626;">'
+                            f'<div style="font-size:12px; color:#737373; letter-spacing:0.5px; font-weight:500;">{label}</div>'
+                            f'<div style="font-size:28px; font-weight:600; color:#ffffff; margin-top:8px;">{val}</div>'
                             '</div>', unsafe_allow_html=True
                         )
 
@@ -1099,12 +1020,10 @@ with tab6:
             df_rev["_tgl"] = pd.to_datetime(df_rev["Tanggal"], errors="coerce")
             valid_tgl = df_rev.dropna(subset=["_tgl"])
 
-            # LOAD IHSG DATA
             df_ihsg = load_ihsg_history()
             ihsg_dict = {}
             if df_ihsg is not None and not df_ihsg.empty:
                 df_ihsg['Date'] = pd.to_datetime(df_ihsg['Date'])
-                # Map date to return
                 ihsg_dict = dict(zip(df_ihsg['Date'].dt.date, df_ihsg['IHSG_Return']))
 
             if valid_tgl.empty:
@@ -1116,7 +1035,6 @@ with tab6:
                     n_exec_d = len(grp_pl)
                     port_ret = grp_pl.mean() if n_exec_d > 0 else np.nan
                     
-                    # Get IHSG Return for that date
                     tgl_date = pd.Timestamp(tgl).date()
                     ihsg_ret = ihsg_dict.get(tgl_date, np.nan)
                     
@@ -1129,27 +1047,27 @@ with tab6:
                         tgl_str = pd.Timestamp(r["Tanggal"]).strftime("%d %b (%a)")
                         port = r["Portofolio"]
                         port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
-                        port_col = "#10b981" if (not pd.isna(port) and port >= 0) else "#f43f5e"
+                        port_col = "#ffffff" if (not pd.isna(port) and port >= 0) else "#737373"
                         
                         ihsg = r["IHSG"]
                         ihsg_str = f"{ihsg:+.2f}%" if not pd.isna(ihsg) else "—"
-                        ihsg_col = "#10b981" if (not pd.isna(ihsg) and ihsg >= 0) else "#f43f5e"
+                        ihsg_col = "#ffffff" if (not pd.isna(ihsg) and ihsg >= 0) else "#737373"
                         
                         st.markdown(
-                            '<div style="background:linear-gradient(135deg, #131a2a, #0f1628); '
-                            'border-radius:10px; margin-bottom:8px; padding:12px 16px; border:1px solid #1a2338;">'
-                            f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
-                            f'<span style="font-size:13px; color:#e6ebf5; font-weight:700;">{tgl_str}</span>'
-                            f'<span style="font-size:11px; color:#7d8ba3;">{r["N_exec"]} trade</span>'
+                            '<div style="background:#0a0a0a; '
+                            'border-radius:6px; margin-bottom:8px; padding:14px 18px; border:1px solid #262626;">'
+                            f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">'
+                            f'<span style="font-size:13px; color:#ffffff; font-weight:500;">{tgl_str}</span>'
+                            f'<span style="font-size:12px; color:#737373;">{r["N_exec"]} trade</span>'
                             f'</div>'
-                            f'<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">'
+                            f'<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">'
                             f'<div>'
-                            f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">Portofolio</div>'
-                            f'<div style="font-size:13px; font-weight:800; color:{port_col};">{port_str}</div>'
+                            f'<div style="font-size:11px; color:#737373; margin-bottom:4px; text-transform:uppercase;">Portofolio</div>'
+                            f'<div style="font-size:14px; font-weight:600; color:{port_col};">{port_str}</div>'
                             f'</div>'
                             f'<div>'
-                            f'<div style="font-size:10px; color:#64748b; margin-bottom:2px;">IHSG</div>'
-                            f'<div style="font-size:13px; font-weight:800; color:{ihsg_col};">{ihsg_str}</div>'
+                            f'<div style="font-size:11px; color:#737373; margin-bottom:4px; text-transform:uppercase;">IHSG</div>'
+                            f'<div style="font-size:14px; font-weight:600; color:{ihsg_col};">{ihsg_str}</div>'
                             f'</div>'
                             f'</div></div>', unsafe_allow_html=True
                         )
