@@ -341,11 +341,14 @@ def empty_state(icon, title, subtitle=""):
 # ============================================================
 def render_table(df, hide_index=True):
     """Mengubah DataFrame menjadi tabel HTML Monokrom (tanpa warna biru)."""
+    # Menghapus semua baris baru (newline) agar Streamlit tidak salah mengira ini Code Block
     html_table = df.to_html(index=not hide_index, border=0, classes="mono-table")
+    html_table = html_table.replace('\n', '').replace('\r', '')
+    
     css = """
     <style>
     .mono-table {
-        width: 100%;
+        width: 100% !important;
         border-collapse: collapse;
         background-color: #171717;
         border-radius: 8px;
@@ -356,8 +359,8 @@ def render_table(df, hide_index=True):
         border: 1px solid #27272a;
     }
     .mono-table th {
-        background-color: #262626;
-        color: #a3a3a3;
+        background-color: #262626 !important;
+        color: #a3a3a3 !important;
         padding: 14px 16px;
         text-align: left;
         border-bottom: 1px solid #27272a;
@@ -366,7 +369,7 @@ def render_table(df, hide_index=True):
     }
     .mono-table td {
         padding: 14px 16px;
-        color: #ffffff;
+        color: #ffffff !important;
         border-bottom: 1px solid #27272a;
         font-weight: 500;
     }
@@ -378,4 +381,6 @@ def render_table(df, hide_index=True):
     }
     </style>
     """
+    
+    # Render sebagai HTML murni
     st.markdown(css + html_table, unsafe_allow_html=True)
