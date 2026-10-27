@@ -1,0 +1,7 @@
+rule,matches,true_pos,precision_%,recall_%,lift_x
+R1 Vol >= 5x + Breakout 20d high,6858,18,0.262,3.37,4.71
+R4 Vol >= 5x + RSI 55-75 + ATR > 3%,6298,14,0.222,2.62,3.99
+R6 Vol >= 2x + Breakout 20d + ATR > 2%,17917,27,0.151,5.06,2.7
+R5 Prior run-up > 30% + RSI 55-75,30774,45,0.146,8.43,2.62
+R3 Breakout 20d + RSI > 60,51480,48,0.093,8.99,1.67
+R2 Vol >= 3x + Tight (<20%),23986,16,0.067,3.0,1.2

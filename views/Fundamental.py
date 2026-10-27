@@ -133,28 +133,28 @@ if df_ohlcv is not None and len(df_ohlcv) >= 2:
     chg = (last / prev - 1) * 100
     harga = last
 
-# Notion palette: Putih tulang jika naik, Abu jika turun
-chg_color = "#e0e0e0" if chg >= 0 else "#9a9a9a"
+# High-Contrast palette: Putih jika naik, Abu gelap jika turun
+chg_color = "#ffffff" if chg >= 0 else "#737373"
 chg_sign = "+" if chg >= 0 else ""
 
 st.markdown(
     '<div style="'
-    'background: #202020; '
-    'border: 1px solid #2c2c2c; border-radius: 8px; '
+    'background: #171717; '
+    'border: 1px solid #27272a; border-radius: 8px; '
     'padding: 22px 26px; margin-bottom: 24px; '
     'display: flex; align-items: center; gap: 20px;">'
     '<div style="flex-grow: 1;">'
-    f'<div style="font-size: 12px; color: #9a9a9a; margin-bottom: 5px; '
+    f'<div style="font-size: 12px; color: #a3a3a3; margin-bottom: 5px; '
     f'font-weight: 500; letter-spacing: 0.5px;">'
     f'{data.get("sektor", "")} · {data.get("industri", "")}</div>'
-    f'<div style="font-size: 19px; font-weight: 600; color: #e0e0e0; '
+    f'<div style="font-size: 19px; font-weight: 600; color: #ffffff; '
     f'margin-bottom: 8px;">{data.get("nama", kode_pilih)}</div>'
     '<div style="display: flex; align-items: baseline; gap: 12px;">'
-    f'<span style="font-size: 30px; font-weight: 600; color: #e0e0e0; '
+    f'<span style="font-size: 30px; font-weight: 600; color: #ffffff; '
     f'letter-spacing: -0.03em; line-height: 1;">{harga:,.0f}</span>'
     f'<span style="font-size: 14px; font-weight: 500; padding: 4px 12px; '
-    f'border-radius: 4px; background: #2c2c2c; '
-    f'color: {chg_color}; border: 1px solid #3a3a3a;">'
+    f'border-radius: 4px; background: #262626; '
+    f'color: {chg_color}; border: 1px solid #404040;">'
     f'{chg_sign}{chg:.2f}%</span>'
     '</div></div></div>',
     unsafe_allow_html=True
@@ -185,11 +185,11 @@ cols = st.columns(2)
 for i, (label, val) in enumerate(metrics):
     with cols[i % 2]:
         st.markdown(
-            '<div style="background: #202020; border: 1px solid #2c2c2c; '
+            '<div style="background: #171717; border: 1px solid #27272a; '
             'border-radius: 6px; padding: 14px 18px; margin-bottom: 10px; '
             'display: flex; justify-content: space-between; align-items: center;">'
-            f'<div style="font-size: 13px; color: #9a9a9a;">{label}</div>'
-            f'<div style="font-size: 18px; font-weight: 600; color: #e0e0e0; '
+            f'<div style="font-size: 13px; color: #a3a3a3;">{label}</div>'
+            f'<div style="font-size: 18px; font-weight: 600; color: #ffffff; '
             f'letter-spacing: -0.02em;">{val}</div>'
             '</div>',
             unsafe_allow_html=True
@@ -223,7 +223,7 @@ if rev_4q or eps_4q:
 
     if rev_4q:
         st.markdown(
-            '<div style="font-size: 11px; color: #9a9a9a; letter-spacing: 0.08em; '
+            '<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; '
             'font-weight: 600; text-transform: uppercase; '
             'margin: 0 0 12px 4px;">REVENUE</div>',
             unsafe_allow_html=True
@@ -239,21 +239,21 @@ if rev_4q or eps_4q:
                 '<div style="margin-bottom: 12px;">'
                 '<div style="display: flex; justify-content: space-between; '
                 'margin-bottom: 6px;">'
-                f'<span style="font-size: 13px; color: #9a9a9a; '
+                f'<span style="font-size: 13px; color: #a3a3a3; '
                 f'font-weight: 500;">{q}</span>'
-                f'<span style="font-size: 13px; color: #e0e0e0; '
+                f'<span style="font-size: 13px; color: #ffffff; '
                 f'font-weight: 600;">{fmt_num(v, 0)}</span>'
                 '</div>'
-                '<div style="width: 100%; height: 4px; background: #2c2c2c; '
+                '<div style="width: 100%; height: 4px; background: #27272a; '
                 'border-radius: 2px; overflow: hidden;">'
                 f'<div style="width: {bar_pct}%; height: 100%; '
-                f'background: #e0e0e0;"></div></div></div>',
+                f'background: #ffffff;"></div></div></div>',
                 unsafe_allow_html=True
             )
 
     if eps_4q:
         st.markdown(
-            '<div style="font-size: 11px; color: #9a9a9a; letter-spacing: 0.08em; '
+            '<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; '
             'font-weight: 600; text-transform: uppercase; '
             'margin: 24px 0 12px 4px;">EPS</div>',
             unsafe_allow_html=True
@@ -264,19 +264,19 @@ if rev_4q or eps_4q:
             with cols[i]:
                 val_str = f"{v:.2f}" if v is not None else "—"
                 st.markdown(
-                    '<div style="background: #202020; border: 1px solid #2c2c2c; '
+                    '<div style="background: #171717; border: 1px solid #27272a; '
                     'border-radius: 6px; padding: 14px; text-align: center;">'
-                    f'<div style="font-size: 11px; color: #9a9a9a; '
+                    f'<div style="font-size: 11px; color: #a3a3a3; '
                     f'font-weight: 500; margin-bottom: 6px;">{q}</div>'
                     f'<div style="font-size: 16px; font-weight: 600; '
-                    f'color: #e0e0e0;">{val_str}</div>'
+                    f'color: #ffffff;">{val_str}</div>'
                     '</div>',
                     unsafe_allow_html=True
                 )
 
     if ni_4q:
         st.markdown(
-            '<div style="font-size: 11px; color: #9a9a9a; letter-spacing: 0.08em; '
+            '<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; '
             'font-weight: 600; text-transform: uppercase; '
             'margin: 24px 0 12px 4px;">NET INCOME</div>',
             unsafe_allow_html=True
@@ -286,11 +286,11 @@ if rev_4q or eps_4q:
         for i, (q, v) in enumerate(ni_4q[:4]):
             with cols[i]:
                 val_str = fmt_num(v, 0) if v is not None else "—"
-                color = "#e0e0e0" if (v is not None and v >= 0) else "#9a9a9a"
+                color = "#ffffff" if (v is not None and v >= 0) else "#737373"
                 st.markdown(
-                    '<div style="background: #202020; border: 1px solid #2c2c2c; '
+                    '<div style="background: #171717; border: 1px solid #27272a; '
                     'border-radius: 6px; padding: 14px; text-align: center;">'
-                    f'<div style="font-size: 11px; color: #9a9a9a; '
+                    f'<div style="font-size: 11px; color: #a3a3a3; '
                     f'font-weight: 500; margin-bottom: 6px;">{q}</div>'
                     f'<div style="font-size: 15px; font-weight: 600; '
                     f'color: {color};">{val_str}</div>'
@@ -318,31 +318,31 @@ if tahun_list:
         r = rev_hist.get(y)
         rows += (
             '<tr>'
-            f'<td style="padding: 12px 14px; color: #e0e0e0; font-weight: 500; '
-            f'border-bottom: 1px solid #2c2c2c; font-size: 13px;">{y}</td>'
-            f'<td style="padding: 12px 14px; color: #9a9a9a; '
-            f'border-bottom: 1px solid #2c2c2c; font-size: 13px;">'
+            f'<td style="padding: 12px 14px; color: #ffffff; font-weight: 500; '
+            f'border-bottom: 1px solid #27272a; font-size: 13px;">{y}</td>'
+            f'<td style="padding: 12px 14px; color: #a3a3a3; '
+            f'border-bottom: 1px solid #27272a; font-size: 13px;">'
             f'{fmt_num(e, 0) if e else "—"}</td>'
-            f'<td style="padding: 12px 14px; color: #9a9a9a; '
-            f'border-bottom: 1px solid #2c2c2c; font-size: 13px;">'
+            f'<td style="padding: 12px 14px; color: #a3a3a3; '
+            f'border-bottom: 1px solid #27272a; font-size: 13px;">'
             f'{fmt_num(r, 0) if r else "—"}</td>'
             '</tr>'
         )
 
     st.markdown(
-        '<div style="background: #202020; border: 1px solid #2c2c2c; '
+        '<div style="background: #171717; border: 1px solid #27272a; '
         'border-radius: 8px; padding: 4px; margin-bottom: 12px; overflow: hidden;">'
         '<table style="width: 100%; border-collapse: collapse;">'
         '<thead><tr>'
         '<th style="text-align: left; padding: 12px 14px; font-size: 11px; '
-        'color: #9a9a9a; font-weight: 500; letter-spacing: 0.06em; '
-        'text-transform: uppercase; border-bottom: 1px solid #2c2c2c;">Tahun</th>'
+        'color: #a3a3a3; font-weight: 500; letter-spacing: 0.06em; '
+        'text-transform: uppercase; border-bottom: 1px solid #27272a;">Tahun</th>'
         '<th style="text-align: left; padding: 12px 14px; font-size: 11px; '
-        'color: #9a9a9a; font-weight: 500; letter-spacing: 0.06em; '
-        'text-transform: uppercase; border-bottom: 1px solid #2c2c2c;">EPS</th>'
+        'color: #a3a3a3; font-weight: 500; letter-spacing: 0.06em; '
+        'text-transform: uppercase; border-bottom: 1px solid #27272a;">EPS</th>'
         '<th style="text-align: left; padding: 12px 14px; font-size: 11px; '
-        'color: #9a9a9a; font-weight: 500; letter-spacing: 0.06em; '
-        'text-transform: uppercase; border-bottom: 1px solid #2c2c2c;">'
+        'color: #a3a3a3; font-weight: 500; letter-spacing: 0.06em; '
+        'text-transform: uppercase; border-bottom: 1px solid #27272a;">'
         'Pendapatan/Saham</th>'
         '</tr></thead>'
         f'<tbody>{rows}</tbody>'
@@ -369,18 +369,18 @@ cols = st.columns(2)
 for i, (label, val) in enumerate(stat_items):
     with cols[i % 2]:
         st.markdown(
-            '<div style="background: #202020; border: 1px solid #2c2c2c; '
+            '<div style="background: #171717; border: 1px solid #27272a; '
             'border-radius: 6px; padding: 14px 18px; margin-bottom: 10px; '
             'display: flex; justify-content: space-between; align-items: center;">'
-            f'<div style="font-size: 13px; color: #9a9a9a;">{label}</div>'
-            f'<div style="font-size: 17px; font-weight: 600; color: #e0e0e0; '
+            f'<div style="font-size: 13px; color: #a3a3a3;">{label}</div>'
+            f'<div style="font-size: 17px; font-weight: 600; color: #ffffff; '
             f'letter-spacing: -0.02em;">{val}</div>'
             '</div>',
             unsafe_allow_html=True
         )
 
 st.markdown(
-    f'<div style="font-size: 11px; color: #9a9a9a; letter-spacing: 0.08em; '
+    f'<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; '
     f'font-weight: 500; text-transform: uppercase; margin: 24px 0 12px 2px;">'
     f'RASIO EKUITAS {tahun}</div>',
     unsafe_allow_html=True
@@ -396,12 +396,12 @@ for col, label, val in [
 ]:
     with col:
         st.markdown(
-            '<div style="background: #202020; border: 1px solid #2c2c2c; '
+            '<div style="background: #171717; border: 1px solid #27272a; '
             'border-radius: 6px; padding: 16px 18px;">'
-            f'<div style="font-size: 11px; color: #9a9a9a; font-weight: 500; '
+            f'<div style="font-size: 11px; color: #a3a3a3; font-weight: 500; '
             f'letter-spacing: 0.06em; text-transform: uppercase; '
             f'margin-bottom: 6px;">{label}</div>'
-            f'<div style="font-size: 24px; font-weight: 600; color: #e0e0e0; '
+            f'<div style="font-size: 24px; font-weight: 600; color: #ffffff; '
             f'letter-spacing: -0.02em;">{val}</div>'
             '</div>',
             unsafe_allow_html=True
@@ -412,8 +412,8 @@ for col, label, val in [
 # FOOTER
 # ============================================================
 st.markdown(
-    '<div style="text-align: center; color: #6b6b6b; font-size: 11px; '
-    'margin-top: 32px; padding-top: 20px; border-top: 1px solid #2c2c2c;">'
+    '<div style="text-align: center; color: #737373; font-size: 11px; '
+    'margin-top: 32px; padding-top: 20px; border-top: 1px solid #27272a;">'
     f'Sumber: yfinance + IDX XBRL · Update: {data.get("update", "")}'
     '</div>',
     unsafe_allow_html=True
