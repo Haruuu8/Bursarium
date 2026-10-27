@@ -544,15 +544,17 @@ def build_one(kode, verbose=False):
             d = year_data[qnum]["data"]
             lbl = f"{year}-Q{qnum}"
             
-            # PERBAIKAN SKALA: Ubah Juta Rupiah menjadi Rupiah penuh (x1.000.000)
+            # PERBAIKAN SKALA: Cek dulu apakah angkanya sudah dalam Rupiah penuh
             cum_rev = d.get("pendapatan")
-            cum_rev = cum_rev * 1_000_000 if cum_rev is not None else None
+            if cum_rev is not None:
+                cum_rev = cum_rev * 1_000_000 if abs(cum_rev) < 1_000_000_000_000 else cum_rev
             
             cum_ni = d.get("laba_induk") or d.get("laba_bersih")
-            cum_ni = cum_ni * 1_000_000 if cum_ni is not None else None
+            if cum_ni is not None:
+                cum_ni = cum_ni * 1_000_000 if abs(cum_ni) < 1_000_000_000_000 else cum_ni
             
             cum_eps = d.get("eps_basic")
-            cum_eps = cum_eps * 1_000_000 if cum_eps is not None else None
+            # EPS tidak perlu dikali 1.000.000, karena satuannya sudah Rupiah per saham
             
             rev_std = _standalone(cum_rev, prev_rev, qnum)
             eps_std = _standalone(cum_eps, prev_eps, qnum)
@@ -591,9 +593,12 @@ def build_one(kode, verbose=False):
             d = fetch_one_period(kode, y, "audit", verbose=False)
         if d:
             if d.get("eps_basic") is not None:
-                r_eps[str(y)] = round(d["eps_basic"] * 1_000_000, 2)
+                r_eps[str(y)] = round(d["eps_basic"], 2) # Hapus perkalian 1jt
+            
             if d.get("pendapatan") is not None:
-                r_rev[str(y)] = d["pendapatan"] * 1_000_000
+                raw_rev = d["pendapatan"]
+                # Cek pengaman untuk Revenue
+                r_rev[str(y)] = raw_rev if abs(raw_rev) > 1_000_000_000_000 else raw_rev * 1_000_000
     
     # ============================================================
     # YFINANCE + RATIO
@@ -772,7 +777,7 @@ if __name__ == "__main__":
                 for k in ["Kode", "kode"]:
                     if k in row and row[k]:
                         tickers.append(row[k].strip().upper()); break
-        batch(tickers, workers=4, delay=1.0)
+        batch(tickers, workers=20, delay=1.0)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]
         main([t.upper() for t in tickers])
