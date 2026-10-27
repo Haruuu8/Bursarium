@@ -35,12 +35,12 @@ SEKTOR_ID = {
     "JXI": "Utilitas", "IXP": "Komunikasi"
 }
 
-# High-Contrast Monokrom
+# High-Contrast Monokrom (Border Kiri sebagai indikator)
 STATUS_STYLE = {
-    "Leading":   {"bg": "#171717", "border": "#ffffff", "text": "#ffffff", "label": "LEADING"},
-    "Weakening": {"bg": "#0a0a0a", "border": "#737373", "text": "#a3a3a3", "label": "WEAKENING"},
-    "Lagging":   {"bg": "#0a0a0a", "border": "#404040", "text": "#737373", "label": "LAGGING"},
-    "Improving": {"bg": "#0a0a0a", "border": "#a3a3a3", "text": "#d4d4d4", "label": "IMPROVING"},
+    "Leading":   {"border": "#ffffff", "text": "#ffffff", "label": "LEADING"},
+    "Improving": {"border": "#a3a3a3", "text": "#a3a3a3", "label": "IMPROVING"},
+    "Weakening": {"border": "#737373", "text": "#737373", "label": "WEAKENING"},
+    "Lagging":   {"border": "#404040", "text": "#404040", "label": "LAGGING"},
 }
 
 # ============================================================
@@ -155,12 +155,13 @@ phase, phase_desc = detect_market_phase(status_counts)
 # ============================================================
 st.markdown(page_header("", "Global Sector Rotation", phase_desc), unsafe_allow_html=True)
 
+# Badge Phase di Tengah
 st.markdown(
-    '<div style="margin-bottom: 32px;">'
-    '<span style="display: inline-block; padding: 8px 18px; '
+    '<div style="display: flex; justify-content: center; margin-bottom: 28px;">'
+    '<span style="padding: 8px 20px; '
     'background: #171717; color: #ffffff; '
     'border: 1px solid #404040; border-radius: 8px; font-size: 14px; '
-    'font-weight: 800; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">'
+    'font-weight: 800; letter-spacing: 1px;">'
     f'PHASE: {phase}'
     '</span>'
     '</div>',
@@ -168,16 +169,17 @@ st.markdown(
 )
 
 # ============================================================
-# SECTOR CARDS (Grid Layout for more space)
+# SECTOR CARDS (List Layout)
 # ============================================================
 STATUS_ORDER = {"Leading": 0, "Improving": 1, "Weakening": 2, "Lagging": 3}
 df_status["order"] = df_status["status"].map(STATUS_ORDER)
 df_sorted = df_status.sort_values(["order", "ret_1d"], ascending=[True, False]).reset_index(drop=True)
 
+# Keterangan
 st.markdown(
-    '<div style="font-size: 14px; color: #a3a3a3; '
+    '<div style="font-size: 13px; color: #a3a3a3; '
     'margin-bottom: 20px; padding: 14px 20px; '
-    'background: #171717; border-radius: 8px; border-left: 4px solid #ffffff;">'
+    'background: #171717; border-radius: 6px;">'
     '<b style="color:#ffffff;">Keterangan:</b> '
     'Angka pertama = return <b>1 hari</b> · '
     'Angka kedua = selisih return <b>20 hari</b> vs MSCI World · '
@@ -186,57 +188,55 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Tampilkan 2 kolom agar lebih lega
-cols = st.columns(2)
-for i, (_, r) in enumerate(df_sorted.iterrows()):
-    sektor = r["sektor"]; status = r["status"]; ret = r["ret_1d"]
+for _, r in df_sorted.iterrows():
+    sektor = r["sektor"]
+    status = r["status"]
+    ret = r["ret_1d"]
     spread = r.get("spread_20d")
     nama_id = SEKTOR_ID.get(sektor, sektor)
     style = STATUS_STYLE[status]
     
-    # Monokrom: Putih untuk positif, Abu untuk negatif
+    # Warna Angka
     color_ret = "#ffffff" if ret >= 0 else "#737373"
     sign = "+" if ret >= 0 else ""
 
+    # Format Spread 20D
     if spread is not None and not pd.isna(spread):
         sp_color = "#ffffff" if spread >= 0 else "#737373"
         sp_sign = "+" if spread >= 0 else ""
         spread_html = (
-            f'<span style="font-size: 12px; color: {sp_color}; '
-            f'font-weight: 700; background: #262626; '
-            f'padding: 6px 12px; border-radius: 6px; border: 1px solid #404040;">'
-            f'20d: {sp_sign}{spread:.2f}%</span>'
+            f'<div style="font-size: 13px; color: {sp_color}; font-weight: 600;">'
+            f'20d: {sp_sign}{spread:.2f}%</div>'
         )
     else:
         spread_html = ""
 
-    with cols[i % 2]:
-        st.markdown(
-            '<div style="'
-            f'background: {style["bg"]}; '
-            f'border: 1px solid {style["border"]}; '
-            'border-radius: 10px; padding: 20px; margin-bottom: 16px; '
-            'display: flex; flex-direction: column; justify-content: space-between; height: 100%;'
-            'box-shadow: 0 4px 15px rgba(0,0,0,0.3);">'
-            
-            '<div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">'
-            f'<div style="font-size: 24px; background: #0a0a0a; padding: 10px; border-radius: 8px; border: 1px solid #27272a; filter: grayscale(1);">•</div>'
-            f'<div>'
-            f'<div style="font-size: 16px; font-weight: 700; color: #ffffff; margin-bottom: 4px;">{nama_id}</div>'
-            f'<span style="font-size: 11px; font-weight: 800; '
-            f'padding: 4px 10px; border-radius: 4px; '
-            f'background: rgba(255,255,255,0.05); color: {style["text"]}; '
-            f'border: 1px solid {style["border"]};">'
-            f'{style["label"]}</span>'
-            '</div></div>'
-            
-            '<div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">'
-            f'<span style="font-size: 18px; font-weight: 800; color: {color_ret};">'
-            f'{sign}{ret:.2f}%</span>'
-            f'{spread_html}'
-            '</div></div>',
-            unsafe_allow_html=True
-        )
+    # Layout Horizontal (Kiri: Info, Kanan: Angka)
+    st.markdown(
+        '<div style="'
+        'background: #171717; '
+        'border: 1px solid #27272a; '
+        f'border-left: 4px solid {style["border"]}; '
+        'border-radius: 8px; padding: 16px 20px; margin-bottom: 10px; '
+        'display: flex; align-items: center; justify-content: space-between;">'
+        
+        # KIRI
+        '<div style="display: flex; align-items: center; gap: 16px;">'
+        f'<span style="font-size: 11px; font-weight: 800; letter-spacing: 0.5px; color: {style["text"]}; width: 80px;">'
+        f'{style["label"]}</span>'
+        f'<span style="font-size: 16px; font-weight: 700; color: #ffffff;">{nama_id}</span>'
+        '</div>'
+
+        # KANAN
+        '<div style="display: flex; align-items: center; gap: 32px; text-align: right;">'
+        f'<span style="font-size: 18px; font-weight: 800; color: {color_ret}; min-width: 70px;">'
+        f'{sign}{ret:.2f}%</span>'
+        f'<div style="min-width: 100px;">{spread_html}</div>'
+        '</div>'
+
+        '</div>',
+        unsafe_allow_html=True
+    )
 
 # ============================================================
 # RINGKASAN PAGI
@@ -248,20 +248,19 @@ with st.spinner("Mengambil data global..."):
     sentimen_status, sentimen_detail, _ = hitung_sentimen(global_data)
     dampak_ihsg = get_dampak_ihsg(global_data)
 
-# Monokrom Sentimen
+# Sentimen
 st.markdown(
     '<div style="'
     'background: #171717; '
     'border: 1px solid #27272a; '
     'border-left: 4px solid #ffffff; '
-    'border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; '
-    'box-shadow: 0 4px 15px rgba(0,0,0,0.3);">'
-    '<div style="font-size: 12px; color: #a3a3a3; letter-spacing: 1px; '
-    'margin-bottom: 8px; font-weight: 700; text-transform: uppercase;">'
+    'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
+    '<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 1px; '
+    'margin-bottom: 6px; font-weight: 700; text-transform: uppercase;">'
     'Sentimen Global</div>'
-    f'<div style="font-size: 24px; font-weight: 800; color: #ffffff; '
-    f'margin-bottom: 6px;">{sentimen_status}</div>'
-    f'<div style="font-size: 14px; color: #a3a3a3;">{sentimen_detail}</div>'
+    f'<div style="font-size: 20px; font-weight: 800; color: #ffffff; '
+    f'margin-bottom: 4px;">{sentimen_status}</div>'
+    f'<div style="font-size: 13px; color: #a3a3a3;">{sentimen_detail}</div>'
     '</div>',
     unsafe_allow_html=True
 )
@@ -270,8 +269,8 @@ col1, col2, col3 = st.columns(3)
 
 def render_market_list(items, title):
     st.markdown(
-        f'<div style="font-size: 12px; color: #ffffff; letter-spacing: 0.08em; '
-        f'font-weight: 800; text-transform: uppercase; margin-bottom: 16px;">'
+        f'<div style="font-size: 12px; color: #ffffff; letter-spacing: 0.05em; '
+        f'font-weight: 700; text-transform: uppercase; margin-bottom: 12px;">'
         f'{title}</div>',
         unsafe_allow_html=True
     )
@@ -283,10 +282,10 @@ def render_market_list(items, title):
         
         st.markdown(
             '<div style="display: flex; justify-content: space-between; '
-            'padding: 10px 0; font-size: 14px; '
+            'padding: 10px 0; font-size: 13px; '
             'border-bottom: 1px solid #27272a;">'
-            f'<span style="color: #a3a3a3; font-weight: 500;">{nama.strip()}</span>'
-            f'<span style="color: {warna}; font-weight: 700;">'
+            f'<span style="color: #a3a3a3;">{nama.strip()}</span>'
+            f'<span style="color: {warna}; font-weight: 600;">'
             f'{harga_str} ({sign}{chg:.2f}%)</span></div>',
             unsafe_allow_html=True
         )
@@ -304,33 +303,29 @@ with col3:
 st.markdown(section_title("Dampak ke IHSG"), unsafe_allow_html=True)
 
 for nama, nilai, status, ket in dampak_ihsg:
-    # Teks & Warna Monokrom
     if status == "POSITIF":
         badge_text = "POSITIF"
         warna = "#ffffff"
-        bg = "#171717"
         border = "#ffffff"
     elif status == "NEGATIF":
         badge_text = "NEGATIF"
         warna = "#737373"
-        bg = "#0a0a0a"
-        border = "#404040"
+        border = "#737373"
     else:
         badge_text = "NETRAL"
         warna = "#a3a3a3"
-        bg = "#0a0a0a"
-        border = "#27272a"
+        border = "#404040"
 
     st.markdown(
         '<div style="'
-        f'background: {bg}; '
+        'background: #171717; '
         'border: 1px solid #27272a; '
         f'border-left: 4px solid {border}; '
-        'padding: 16px 20px; border-radius: 10px; margin-bottom: 12px;">'
+        'padding: 16px 20px; border-radius: 8px; margin-bottom: 10px;">'
         '<div style="display: flex; justify-content: space-between; '
         'align-items: center; margin-bottom: 6px;">'
         f'<span style="color: #ffffff; font-weight: 700; font-size: 14px;">'
-        f'{nama} <span style="font-size: 11px; color: {warna}; margin-left: 8px;">[{badge_text}]</span></span>'
+        f'{nama} <span style="font-size: 10px; color: {warna}; margin-left: 8px;">[{badge_text}]</span></span>'
         f'<span style="color: {warna}; font-weight: 800; font-size: 16px;">'
         f'{nilai}</span></div>'
         f'<div style="color: #a3a3a3; font-size: 13px;">{ket}</div>'
