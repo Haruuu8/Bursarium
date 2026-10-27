@@ -15,6 +15,14 @@ COLORS = {
 
 THEME_CSS = """
 <style>
+/* ============================================================
+   BUNUH WARNA BIRU/MERAH BAWAAN STREAMLIT (SLIDER, CHECKBOX, DLL)
+   ============================================================ */
+:root, .stApp {
+    --primary-color: #ffffff !important;
+    --primary-color-rgb: 255, 255, 255 !important;
+}
+
 html, body, [class*="css"] {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif !important;
     -webkit-font-smoothing: antialiased;
@@ -110,30 +118,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   INPUTS & TOMBOL PLUS MINUS (DIBUAT TIMBUL / TIDAK NYATU)
+   INPUTS & TOMBOL PLUS MINUS
    ============================================================ */
 div[data-baseweb="input"], 
 div[data-testid="stNumberInput"] > div > div {
-    background-color: #262626 !important; /* Abu-abu lebih terang */
-    border: 1px solid #404040 !important; /* Garis tepi tegas */
+    background-color: #262626 !important;
+    border: 1px solid #404040 !important;
     border-radius: 8px !important;
     transition: border-color 0.2s ease !important;
 }
 
-/* Saat input diklik/fokus */
 div[data-baseweb="input"]:focus-within,
 div[data-testid="stNumberInput"] > div > div:focus-within {
-    border-color: #ffffff !important; /* Berubah putih saat diklik */
+    border-color: #ffffff !important;
     box-shadow: 0 0 0 1px #ffffff !important;
 }
 
-/* Menghilangkan border dalam bawaan Streamlit */
 div[data-baseweb="input"] > div {
     background-color: transparent !important;
     border: none !important;
 }
 
-/* Teks di dalam input */
 .stTextInput > div > div > input,
 .stNumberInput > div > div > input {
     background: transparent !important;
@@ -142,7 +147,6 @@ div[data-baseweb="input"] > div {
     font-weight: 600 !important;
 }
 
-/* Tombol Plus (+) dan Minus (-) */
 button[data-testid="stNumberInputStepUp"], 
 button[data-testid="stNumberInputStepDown"] {
     background-color: #404040 !important;
@@ -160,7 +164,6 @@ button[data-testid="stNumberInputStepDown"] svg {
     color: #ffffff !important;
 }
 
-/* Selectbox */
 .stSelectbox > div > div {
     background: #262626 !important;
     border: 1px solid #404040 !important;
@@ -185,24 +188,30 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     color: #ffffff !important;
 }
 
-/* SLIDER */
+/* ============================================================
+   SLIDER (PAKSA JADI MONOKROM)
+   ============================================================ */
 [data-testid="stSlider"] [role="slider"] {
     background-color: #ffffff !important;
-    border-color: #ffffff !important;
+    border: 2px solid #0a0a0a !important;
     box-shadow: none !important;
 }
-[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div[data-testid="stTickBar"] ~ div {
-    background: #ffffff !important;
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:first-child {
+    background: #ffffff !important; /* Track kiri (aktif) */
 }
-[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(2) {
-    background: #404040 !important;
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:last-child {
+    background: #404040 !important; /* Track kanan (tidak aktif) */
 }
-[data-testid="stSlider"] [data-testid="stThumbValue"] {
+[data-testid="stSlider"] [data-testid="stThumbValue"],
+[data-testid="stSlider"] [data-testid="stTickBarMin"],
+[data-testid="stSlider"] [data-testid="stTickBarMax"] {
     color: #ffffff !important;
     font-weight: 700 !important;
 }
 
-/* CHECKBOX */
+/* ============================================================
+   CHECKBOX
+   ============================================================ */
 [data-testid="stCheckbox"] input:checked + div {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
