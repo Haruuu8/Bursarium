@@ -140,7 +140,9 @@ if not saham_list:
 
 col1, col2 = st.columns([1, 3])
 with col1:
-    kode = st.selectbox("Pilih Saham", saham_list, index=saham_list.index("BBCA") if "BBCA" in saham_list else 0)
+    if "mf_kode" not in st.session_state:
+    st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
+kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
     st.caption("Grafik Statis. Data menggunakan Daily (1 Hari).")

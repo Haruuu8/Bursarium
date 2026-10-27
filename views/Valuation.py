@@ -444,13 +444,17 @@ st.markdown(section_title("Cari Saham",
                           "Ketik kode untuk lihat detail valuasi"),
             unsafe_allow_html=True)
 
-search_kode = st.text_input(
+if "val_search" not in st.session_state:
+    st.session_state.val_search = ""
+
+search_kode_raw = st.text_input(
     "Cari saham",
     placeholder="Ketik kode saham, mis. BBCA / TLKM / ASII",
     max_chars=6,
     key="val_search",
     label_visibility="collapsed",
-).upper().strip()
+)
+search_kode = search_kode_raw.upper().strip() if search_kode_raw else ""
 
 if search_kode:
     found = val_all[val_all["kode"] == search_kode]

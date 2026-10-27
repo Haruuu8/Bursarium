@@ -92,27 +92,28 @@ if not saham_list:
                 unsafe_allow_html=True)
     st.stop()
 
+# INISIALISASI STATE KHUSUS UNTUK INPUT
 if "fund_kode" not in st.session_state:
     st.session_state.fund_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
+# GUNAKAN KEY, JANGAN GUNAKAN VALUE
 kode_input = st.text_input(
     "Kode Saham",
-    value=st.session_state.fund_kode,
+    key="fund_kode",
     placeholder="Ketik kode saham, mis. BBCA",
     max_chars=6,
-).upper().strip()
+)
 
-if not kode_input:
+kode_pilih = kode_input.upper().strip()
+
+if not kode_pilih:
     st.info("Ketik kode saham di atas untuk mulai.")
     st.stop()
 
-if kode_input not in saham_list:
-    st.warning(f"Saham **{kode_input}** tidak ditemukan.")
+if kode_pilih not in saham_list:
+    st.warning(f"Saham **{kode_pilih}** tidak ditemukan.")
     st.caption(f"Tersedia {len(saham_list)} saham. Contoh: BBCA, BBRI, TLKM, ASII, ANTM")
     st.stop()
-
-st.session_state.fund_kode = kode_input
-kode_pilih = kode_input
 
 data = load_detail(kode_pilih)
 if not data:
@@ -133,7 +134,6 @@ if df_ohlcv is not None and len(df_ohlcv) >= 2:
     chg = (last / prev - 1) * 100
     harga = last
 
-# High-Contrast palette: Putih jika naik, Abu gelap jika turun
 chg_color = "#ffffff" if chg >= 0 else "#737373"
 chg_sign = "+" if chg >= 0 else ""
 
@@ -242,7 +242,7 @@ if rev_4q or eps_4q:
                 f'<span style="font-size: 13px; color: #a3a3a3; '
                 f'font-weight: 500;">{q}</span>'
                 f'<span style="font-size: 13px; color: #ffffff; '
-                f'<span style="font-size: 13px; color: #ffffff; font-weight: 600;">{fmt_num(v, 1)}</span>'
+                f'font-weight: 600;">{fmt_num(v, 1)}</span>'
                 '</div>'
                 '<div style="width: 100%; height: 4px; background: #27272a; '
                 'border-radius: 2px; overflow: hidden;">'

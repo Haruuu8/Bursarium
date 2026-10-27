@@ -138,24 +138,24 @@ if not saham_list:
 if "tech_kode" not in st.session_state:
     st.session_state.tech_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
+# GUNAKAN KEY, JANGAN GUNAKAN VALUE
 kode_input = st.text_input(
     "Kode Saham",
-    value=st.session_state.tech_kode,
+    key="tech_kode",
     placeholder="Ketik kode saham, mis. BBCA",
     max_chars=6,
-).upper().strip()
+)
 
-if not kode_input:
+kode_pilih = kode_input.upper().strip()
+
+if not kode_pilih:
     st.info("Ketik kode saham di atas untuk mulai.")
     st.stop()
 
-if kode_input not in saham_list:
-    st.warning(f"Saham **{kode_input}** tidak ditemukan.")
+if kode_pilih not in saham_list:
+    st.warning(f"Saham **{kode_pilih}** tidak ditemukan.")
     st.caption(f"Tersedia {len(saham_list)} saham. Contoh: BBCA, BBRI, TLKM, ASII, ANTM")
     st.stop()
-
-st.session_state.tech_kode = kode_input
-kode_pilih = kode_input
 
 df = load_ohlcv(kode_pilih)
 

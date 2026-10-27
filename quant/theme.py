@@ -110,41 +110,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   INPUTS & TOMBOL PLUS MINUS (BUNUH BIRU)
+   INPUTS & TOMBOL PLUS MINUS (DIBUAT TIMBUL / TIDAK NYATU)
    ============================================================ */
-div[data-baseweb="input"] {
-    background-color: #0a0a0a !important;
-    border: 1px solid #27272a !important;
+div[data-baseweb="input"], 
+div[data-testid="stNumberInput"] > div > div {
+    background-color: #262626 !important; /* Abu-abu lebih terang */
+    border: 1px solid #404040 !important; /* Garis tepi tegas */
     border-radius: 8px !important;
+    transition: border-color 0.2s ease !important;
 }
+
+/* Saat input diklik/fokus */
+div[data-baseweb="input"]:focus-within,
+div[data-testid="stNumberInput"] > div > div:focus-within {
+    border-color: #ffffff !important; /* Berubah putih saat diklik */
+    box-shadow: 0 0 0 1px #ffffff !important;
+}
+
+/* Menghilangkan border dalam bawaan Streamlit */
 div[data-baseweb="input"] > div {
     background-color: transparent !important;
     border: none !important;
 }
+
+/* Teks di dalam input */
 .stTextInput > div > div > input,
-.stNumberInput > div > div > input,
-.stDateInput > div > div > input {
+.stNumberInput > div > div > input {
     background: transparent !important;
     color: #ffffff !important;
     padding: 10px 14px !important;
-}
-div[data-baseweb="input"]:focus-within {
-    border-color: #737373 !important;
-    box-shadow: none !important;
-    outline: none !important;
+    font-weight: 600 !important;
 }
 
-/* Tombol Plus Minus Number Input */
+/* Tombol Plus (+) dan Minus (-) */
 button[data-testid="stNumberInputStepUp"], 
 button[data-testid="stNumberInputStepDown"] {
-    background-color: #171717 !important;
+    background-color: #404040 !important;
     color: #ffffff !important;
-    border: 1px solid #27272a !important;
+    border: none !important;
+    transition: background-color 0.2s ease !important;
 }
 button[data-testid="stNumberInputStepUp"]:hover, 
 button[data-testid="stNumberInputStepDown"]:hover {
-    background-color: #262626 !important;
-    color: #ffffff !important;
+    background-color: #525252 !important;
 }
 button[data-testid="stNumberInputStepUp"] svg, 
 button[data-testid="stNumberInputStepDown"] svg {
@@ -152,16 +160,17 @@ button[data-testid="stNumberInputStepDown"] svg {
     color: #ffffff !important;
 }
 
+/* Selectbox */
 .stSelectbox > div > div {
-    background: #0a0a0a !important;
-    border: 1px solid #27272a !important;
+    background: #262626 !important;
+    border: 1px solid #404040 !important;
     border-radius: 8px !important;
     color: #ffffff !important;
     padding: 10px 14px !important;
 }
 .stSelectbox > div > div:focus-within {
-    border-color: #737373 !important;
-    box-shadow: none !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 1px #ffffff !important;
 }
 ul[data-testid="stSelectboxVirtualDropdown"] {
     background-color: #171717 !important;
