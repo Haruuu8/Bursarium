@@ -224,12 +224,15 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     border: 2px solid #0a0a0a !important;
     box-shadow: none !important;
 }
-[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:first-child {
+/* Track aktif (kiri) */
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(1) {
     background: #ffffff !important;
 }
-[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:last-child {
+/* Track tidak aktif (kanan) */
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(2) {
     background: #404040 !important;
 }
+/* Teks nilai slider */
 [data-testid="stSlider"] [data-testid="stThumbValue"],
 [data-testid="stSlider"] [data-testid="stTickBarMin"],
 [data-testid="stSlider"] [data-testid="stTickBarMax"] {
@@ -237,7 +240,9 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     font-weight: 700 !important;
 }
 
-/* CHECKBOX */
+/* ============================================================
+   CHECKBOX (PAKSA JADI MONOKROM)
+   ============================================================ */
 [data-testid="stCheckbox"] input:checked + div {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
@@ -248,6 +253,7 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
 }
 [data-testid="stCheckbox"] label span {
     color: #ffffff !important;
+    background-color: transparent !important; /* Hilangkan highlight putih */
 }
 
 /* TABS & EXPANDER */
