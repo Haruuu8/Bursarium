@@ -242,7 +242,7 @@ if rev_4q or eps_4q:
                 f'<span style="font-size: 13px; color: #a3a3a3; '
                 f'font-weight: 500;">{q}</span>'
                 f'<span style="font-size: 13px; color: #ffffff; '
-                f'font-weight: 600;">{fmt_num(v, 0)}</span>'
+                f'<span style="font-size: 13px; color: #ffffff; font-weight: 600;">{fmt_num(v, 1)}</span>'
                 '</div>'
                 '<div style="width: 100%; height: 4px; background: #27272a; '
                 'border-radius: 2px; overflow: hidden;">'

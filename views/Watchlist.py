@@ -497,8 +497,7 @@ def setup_row(r, tipe="support"):
         f'font-weight:600;">HARGA → ENTRY</span>'
         f'</div>'
 
-        f'<div style="display:grid; grid-template-columns:repeat(4, 1fr); '
-        f'gap:16px; margin-bottom:20px;">'
+                f'<div class="grid-4-col" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; margin-bottom:20px;">'
         
         f'<div style="background:#262626; border:1px solid #404040; '
         f'border-radius:6px; padding:16px;">'

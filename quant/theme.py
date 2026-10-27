@@ -1,4 +1,4 @@
-"""Theme High-Contrast Monokrom — Premium & Clean."""
+"""Theme High-Contrast Monokrom — Premium & Clean (Mobile Ready)."""
 
 import streamlit as st
 
@@ -20,6 +20,22 @@ html, body, [class*="css"] {
     -webkit-font-smoothing: antialiased;
 }
 html { scroll-behavior: smooth; }
+
+/* SEMBUNYIKAN RUNNING SPINNER */
+[data-testid="stStatusWidget"] { display: none !important; }
+.stSpinner { display: none !important; }
+
+/* FIX NOTIFIKASI (INFO, SUCCESS, WARNING) JADI HITAM */
+div[data-testid="stAlert"] {
+    background-color: #171717 !important;
+    border: 1px solid #27272a !important;
+    border-radius: 8px !important;
+}
+div[data-testid="stAlert"] p, div[data-testid="stAlert"] span {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+div[data-testid="stAlert"] svg { display: none !important; }
 
 @keyframes fadeInUp { from { opacity:0; transform:translateY(10px);} to { opacity:1; transform:translateY(0);} }
 
@@ -50,9 +66,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.02em !important;
 }
 
-/* ============================================================
-   BUTTONS
-   ============================================================ */
+/* BUTTONS */
 .stButton > button, .stDownloadButton > button {
     background: #171717 !important;
     border: 1px solid #27272a !important;
@@ -78,9 +92,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* ============================================================
-   INPUTS & FOCUS (HILANGKAN BIRU)
-   ============================================================ */
+/* INPUTS & FIX BIRU */
 div[data-baseweb="input"] {
     background-color: #0a0a0a !important;
     border: 1px solid #27272a !important;
@@ -101,6 +113,14 @@ div[data-baseweb="input"]:focus-within {
     border-color: #737373 !important;
     box-shadow: none !important;
     outline: none !important;
+}
+div[data-testid="stNumberInput"] button {
+    background-color: #171717 !important;
+    color: #ffffff !important;
+    border: 1px solid #27272a !important;
+}
+div[data-testid="stNumberInput"] button:hover {
+    background-color: #262626 !important;
 }
 
 .stSelectbox > div > div {
@@ -127,31 +147,24 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     color: #ffffff !important;
 }
 
-/* ============================================================
-   SLIDER (HILANGKAN BIRU)
-   ============================================================ */
+/* SLIDER */
 [data-testid="stSlider"] [role="slider"] {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
     box-shadow: none !important;
 }
-/* Garis aktif (kiri) */
 [data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div[data-testid="stTickBar"] ~ div {
     background: #ffffff !important;
 }
-/* Garis tidak aktif (kanan) */
 [data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(2) {
     background: #404040 !important;
 }
-/* Angka value di atas thumb */
 [data-testid="stSlider"] [data-testid="stThumbValue"] {
     color: #ffffff !important;
     font-weight: 700 !important;
 }
 
-/* ============================================================
-   CHECKBOX (HILANGKAN BIRU)
-   ============================================================ */
+/* CHECKBOX */
 [data-testid="stCheckbox"] input:checked + div {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
@@ -164,9 +177,7 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     color: #ffffff !important;
 }
 
-/* ============================================================
-   TABS, EXPANDER, POPOVER
-   ============================================================ */
+/* TABS & EXPANDER */
 .stTabs [data-baseweb="tab-list"] {
     gap: 8px !important;
     border-bottom: 1px solid #27272a !important;
@@ -203,36 +214,13 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     fill: #ffffff !important;
     color: #ffffff !important;
 }
-[data-testid="stExpander"] summary:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
 
-[data-testid="stPopover"] > button {
-    background: #ffffff !important;
-    color: #0a0a0a !important;
-    border: none !important;
-}
-[data-testid="stPopoverBody"] {
-    background: #171717 !important;
-    border: 1px solid #404040 !important;
-}
-[data-testid="stDataFrame"], [data-testid="stMetric"] {
-    background: #171717 !important;
-    border: 1px solid #27272a !important;
-    border-radius: 10px !important;
-}
-
-[data-testid="stPageLink"] {
-    padding: 10px 14px !important;
-    border-radius: 8px !important;
-    color: #a3a3a3 !important;
-}
-[data-testid="stPageLink"]:hover { background: #171717 !important; color: #ffffff !important; }
-[data-testid="stPageLink"][aria-current="page"] {
-    background: #262626 !important;
-    color: #ffffff !important;
-    font-weight: 700 !important;
+/* MEDIA QUERY: PERBAIKAN MOBILE (HP) */
+@media (max-width: 768px) {
+    .block-container { padding-left: 1rem !important; padding-right: 1rem !important; }
+    .grid-4-col { grid-template-columns: repeat(2, 1fr) !important; gap: 12px !important; }
+    .sector-card { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
+    .sector-card-right { text-align: left !important; width: 100% !important; gap: 12px !important; justify-content: flex-start !important; }
 }
 
 #MainMenu { visibility: hidden; }

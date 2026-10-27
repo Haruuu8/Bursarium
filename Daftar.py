@@ -101,15 +101,15 @@ with tab_login:
             # Render form login
             authenticator.login(location="main")
             
-            # Cek status autentikasi
+            # Cek status autentikasi (Ganti st.error & st.info dengan HTML kustom)
             if st.session_state.get("authentication_status") is False:
-                st.error("Username atau password salah")
+                st.markdown('<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:16px;">Username atau password salah</div>', unsafe_allow_html=True)
             elif st.session_state.get("authentication_status") is None:
-                st.info("Silakan masukkan username dan password.")
+                st.markdown('<div style="background:#171717; border:1px solid #27272a; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:16px;">Silakan masukkan username dan password.</div>', unsafe_allow_html=True)
                 
         except Exception as e:
-            st.error(f"Error pada library Login: {e}")
-            st.info("Pastikan versi streamlit-authenticator di requirements.txt adalah 0.4.2")
+            st.markdown(f'<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:16px;">Error: {e}</div>', unsafe_allow_html=True)
+            st.markdown('<div style="background:#171717; border:1px solid #27272a; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:16px;">Pastikan versi streamlit-authenticator di requirements.txt adalah 0.4.2</div>', unsafe_allow_html=True)
         
         st.markdown('<div style="text-align:center; margin-top:24px; font-size:13px; color:#a3a3a3;">Belum punya akun? Silakan klik tab <b>Daftar Sekarang</b> di atas.</div>', unsafe_allow_html=True)
 
@@ -159,15 +159,18 @@ with tab_daftar:
             if bukti is None: errors.append("Bukti transfer wajib diupload")
             if not setuju: errors.append("Centang persetujuan")
             if errors:
-                for e in errors: st.error(f"{e}")
+                for e in errors: 
+                    st.markdown(f'<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:8px;">{e}</div>', unsafe_allow_html=True)
             else:
                 file_bytes = bukti.getvalue()
-                if len(file_bytes) > 5 * 1024 * 1024: st.error("File terlalu besar (max 5 MB)")
+                if len(file_bytes) > 5 * 1024 * 1024: 
+                    st.markdown('<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:8px;">File terlalu besar (max 5 MB)</div>', unsafe_allow_html=True)
                 else:
                     try:
                         reg_id = submit_registration(telegram="@" + tele_clean, bukti_bytes=file_bytes, bukti_filename=bukti.name)
-                        st.success(f"Pendaftaran BERHASIL!\n\nID Registrasi: **{reg_id}**\n\nAkun di-approve 1x24 jam. Username & password dikirim via Telegram.")
+                        st.markdown(f'<div style="background:#ffffff; border:none; border-radius:8px; padding:16px 20px; color:#0a0a0a; font-size:14px; font-weight:600; margin-bottom:16px;">Pendaftaran BERHASIL!<br><br>ID Registrasi: {reg_id}<br><br>Akun di-approve 1x24 jam. Username & password dikirim via Telegram.</div>', unsafe_allow_html=True)
                         st.balloons()
-                    except Exception as e: st.error(f"Gagal submit: {e}")
+                    except Exception as e: 
+                        st.markdown(f'<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:8px;">Gagal submit: {e}</div>', unsafe_allow_html=True)
 
 st.markdown('<div style="text-align:center; padding:40px 20px 20px; font-size:12px; color:#737373;">© 2026 Bursarium · IDX Analysis</div>', unsafe_allow_html=True)
