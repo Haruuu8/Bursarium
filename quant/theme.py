@@ -3,14 +3,14 @@
 import streamlit as st
 
 COLORS = {
-    "bg": "#0a0a0a",         # Hitam pekat
-    "surface": "#171717",    # Abu sangat gelap (Card)
-    "elevated": "#262626",   # Abu gelap (Hover)
-    "border": "#27272a",     # Garis tepi
-    "border_hi": "#404040",  # Garis tepi fokus
-    "text": "#ffffff",       # Putih bersih
-    "muted": "#a3a3a3",      # Abu terang
-    "dim": "#737373",        # Abu gelap
+    "bg": "#0a0a0a",
+    "surface": "#171717",
+    "elevated": "#262626",
+    "border": "#27272a",
+    "border_hi": "#404040",
+    "text": "#ffffff",
+    "muted": "#a3a3a3",
+    "dim": "#737373",
 }
 
 THEME_CSS = """
@@ -113,12 +113,44 @@ h1, h2, h3, h4, h5, h6 {
     display: none !important;
 }
 
-/* EXPANDER, POPOVER, DATAFRAME */
+/* ============================================================
+   EXPANDER (FIX WARNA BIRU)
+   ============================================================ */
 [data-testid="stExpander"] {
     background: #171717 !important;
     border: 1px solid #27272a !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
+    transition: border-color 0.2s ease !important;
 }
+[data-testid="stExpander"] summary {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+[data-testid="stExpander"] summary:hover {
+    background-color: #262626 !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+}
+[data-testid="stExpander"] summary p {
+    color: #ffffff !important;
+}
+[data-testid="stExpander"] summary svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}
+[data-testid="stExpander"] summary:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+[data-testid="stExpander"]:focus-within {
+    border-color: #404040 !important;
+    box-shadow: none !important;
+}
+[data-testid="stExpander"] details[open] summary {
+    border-bottom: 1px solid #27272a !important;
+}
+
+/* POPOVER & DATAFRAME */
 [data-testid="stPopover"] > button {
     background: #ffffff !important;
     color: #0a0a0a !important;
@@ -336,13 +368,9 @@ def empty_state(icon, title, subtitle=""):
         '</div>'
     )
 
-# ============================================================
-# TABEL MONOKROM (HTML)
-# ============================================================
 def render_table(df, hide_index=True):
-    """Mengubah DataFrame menjadi tabel HTML Monokrom (bebas border kaku, bisa di-scroll)."""
+    """Mengubah DataFrame menjadi tabel HTML Monokrom (tanpa warna biru)."""
     html_table = df.to_html(index=not hide_index, border=0, classes="mono-table")
-    # Hapus newline agar Streamlit tidak menganggapnya Code Block
     html_table = html_table.replace('\n', '').replace('\r', '')
     
     css = """
@@ -380,6 +408,7 @@ def render_table(df, hide_index=True):
         border-bottom: 1px solid #27272a !important;
         font-weight: 500 !important;
         background-color: transparent !important;
+        white-space: nowrap;
     }
     .mono-table tr:last-child td {
         border-bottom: none !important;
@@ -388,7 +417,6 @@ def render_table(df, hide_index=True):
         background-color: #262626 !important;
     }
     
-    /* Paksa hapus semua border bawaan Streamlit pada tabel markdown */
     [data-testid="stMarkdownContainer"] table {
         border: none !important;
     }
@@ -399,6 +427,5 @@ def render_table(df, hide_index=True):
     </style>
     """
     
-    # Bungkus tabel dengan div container agar bisa di-scroll
     html = f'<div class="table-container">{html_table}</div>'
     st.markdown(css + html, unsafe_allow_html=True)
