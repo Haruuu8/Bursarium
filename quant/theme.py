@@ -175,6 +175,33 @@ def _rgb(hex_color):
     h = hex_color.lstrip("#")
     return f"{int(h[0:2],16)},{int(h[2:4],16)},{int(h[4:6],16)}"
 
+
+def hero(title, subtitle, badge_text="", badge_color="#fafafa"):
+    badge_html = ""
+    if badge_text:
+        badge_html = (
+            f'<div style="display: inline-block; padding: 4px 12px; '
+            f'background: #27272a; color: #fafafa; '
+            f'border: 1px solid #3f3f46; '
+            f'border-radius: 4px; font-size: 11px; font-weight: 600; '
+            f'letter-spacing: 0.5px; margin-bottom: 16px;">'
+            f'{badge_text}</div>'
+        )
+    return (
+        '<div class="hero-title" style="'
+        'background: #18181b; '
+        'border: 1px solid #27272a; border-radius: 8px; '
+        'padding: 32px 40px; margin-bottom: 24px;">'
+        f'{badge_html}'
+        f'<div style="font-size: 32px; font-weight: 700; color: #fafafa; '
+        f'letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 8px;">'
+        f'{title}</div>'
+        f'<div style="font-size: 14px; color: #a1a1aa; line-height: 1.6; '
+        f'max-width: 640px;">{subtitle}</div>'
+        '</div>'
+    )
+
+
 def page_header(icon, title, subtitle=""):
     return (
         '<div style="background: #18181b; border: 1px solid #27272a; border-radius: 8px; '
@@ -185,6 +212,7 @@ def page_header(icon, title, subtitle=""):
         f'letter-spacing: -0.02em; line-height: 1;">{title}</div>'
         '</div>'
     )
+
 
 def section_title(title, subtitle=""):
     sub_html = f'<div style="font-size: 13px; color: #a1a1aa; margin-top: 6px;">{subtitle}</div>' if subtitle else ''
@@ -197,6 +225,117 @@ def section_title(title, subtitle=""):
         f'{sub_html}'
         '</div>'
     )
+
+
+def card(content, padding="20px 24px", accent=None):
+    border_style = f'border-left: 3px solid {accent}; ' if accent else ''
+    return (
+        '<div style="'
+        'background: #18181b; '
+        'border: 1px solid #27272a; border-radius: 8px; '
+        f'{border_style}'
+        f'padding: {padding}; margin-bottom: 16px;">'
+        f'{content}'
+        '</div>'
+    )
+
+
+def metric_box(label, value, sub="", accent="#fafafa"):
+    sub_html = f'<div style="font-size: 12px; color: #a1a1aa; margin-top: 6px;">{sub}</div>' if sub else ''
+    return (
+        '<div style="'
+        'background: #18181b; '
+        'border: 1px solid #27272a; border-radius: 8px; '
+        'padding: 16px 20px;">'
+        f'<div style="font-size: 12px; color: #a1a1aa; '
+        f'font-weight: 500; margin-bottom: 8px;">'
+        f'{label}</div>'
+        f'<div style="font-size: 22px; font-weight: 600; color: #fafafa; '
+        f'letter-spacing: -0.02em;">{value}</div>'
+        f'{sub_html}'
+        '</div>'
+    )
+
+
+def stat_card(label, value, delta=None, sub="", accent="#fafafa"):
+    delta_html = ""
+    if delta is not None:
+        try:
+            v = float(delta)
+            color = "#fafafa" if v >= 0 else "#71717a"
+            sign = "+" if v >= 0 else ""
+            delta_html = (
+                f'<div style="display: inline-block; padding: 2px 8px; '
+                f'background: #27272a; color: {color}; border: 1px solid #3f3f46; '
+                f'border-radius: 4px; font-size: 12px; font-weight: 500; margin-left: 8px;">'
+                f'{sign}{v:.2f}%</div>'
+            )
+        except Exception:
+            pass
+    sub_html = f'<div style="font-size: 12px; color: #a1a1aa; margin-top: 6px;">{sub}</div>' if sub else ''
+    return (
+        '<div style="'
+        'background: #18181b; '
+        'border: 1px solid #27272a; border-radius: 8px; '
+        'padding: 16px 20px;">'
+        f'<div style="font-size: 12px; color: #a1a1aa; '
+        f'font-weight: 500; margin-bottom: 8px;">'
+        f'{label}</div>'
+        f'<div style="display: flex; align-items: baseline;">'
+        f'<span style="font-size: 22px; font-weight: 600; color: #fafafa; '
+        f'letter-spacing: -0.02em;">{value}</span>'
+        f'{delta_html}'
+        '</div>'
+        f'{sub_html}'
+        '</div>'
+    )
+
+
+def info_banner(text, type="info"):
+    return (
+        f'<div style="background: #18181b; '
+        f'border: 1px solid #27272a; '
+        f'border-left: 3px solid #fafafa; '
+        f'border-radius: 6px; padding: 14px 18px; margin-bottom: 16px;">'
+        f'<div style="font-size: 13px; color: #d4d4d8; line-height: 1.5;">'
+        f'{text}</div>'
+        '</div>'
+    )
+
+
+def badge(text, color="#fafafa"):
+    return (
+        f'<span style="display: inline-block; padding: 3px 10px; '
+        f'background: #27272a; color: #fafafa; '
+        f'border: 1px solid #3f3f46; border-radius: 4px; '
+        f'font-size: 11px; font-weight: 600; letter-spacing: 0.5px; '
+        f'text-transform: uppercase;">{text}</span>'
+    )
+
+
+def divider():
+    return (
+        '<div style="height: 1px; '
+        'background: #27272a; '
+        'margin: 24px 0;"></div>'
+    )
+
+
+def kv_row(label, value, accent="#fafafa"):
+    return (
+        '<div style="display: flex; justify-content: space-between; '
+        'align-items: center; padding: 10px 0; '
+        'border-bottom: 1px solid #27272a;">'
+        f'<span style="font-size: 13px; color: #a1a1aa;">{label}</span>'
+        f'<span style="font-size: 14px; font-weight: 500; color: {accent};">'
+        f'{value}</span>'
+        '</div>'
+    )
+
+
+def spacer(height="16px"):
+    return f'<div style="height: {height};"></div>'
+
 
 def empty_state(icon, title, subtitle=""):
     return (
