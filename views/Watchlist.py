@@ -1073,4 +1073,5 @@ with tab6:
 
             with st.expander("Lihat tabel lengkap"):
                 df_display = df_rev.copy().drop(columns=["_tgl"], errors="ignore")
-                st.dataframe(df_display, use_container_width=True, hide_index=True)
+                from quant.theme import render_table
+render_table(df_display)

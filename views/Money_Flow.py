@@ -329,25 +329,8 @@ else:
         "Spike_Count_20": "Spike 20d",
     })
 
-    st.dataframe(
-        df_show,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "Harga": st.column_config.NumberColumn(format="%.0f"),
-            "Chg %": st.column_config.NumberColumn(format="%+.2f%%"),
-            "Vol Ratio": st.column_config.NumberColumn(format="%.2fx"),
-            "Close %": st.column_config.ProgressColumn(
-                "Close % (CLV)",
-                help="0% = close di low, 100% = close di high. >60% = buyer dominan.",
-                min_value=0, max_value=100, format="%d%%",
-            ),
-            "CMF (20)": st.column_config.NumberColumn(format="%+.3f"),
-            "Spike 20d": st.column_config.NumberColumn(
-                help="Jumlah spike volume >1.5x MA20 dalam 20 hari terakhir.",
-            ),
-        },
-    )
+    from quant.theme import render_table
+    render_table(df_show)
 
     st.caption(
         "**Verdict** = klasifikasi berdasarkan **CLV** (Close%) dan **CMF**: "
@@ -427,22 +410,7 @@ else:
         "CMF_20": "CMF (20)",
     })
 
-    st.dataframe(
-        df_show_d,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "Harga": st.column_config.NumberColumn(format="%.0f"),
-            "Chg %": st.column_config.NumberColumn(format="%+.2f%%"),
-            "Vol Ratio": st.column_config.NumberColumn(format="%.2fx"),
-            "Close %": st.column_config.ProgressColumn(
-                "Close % (CLV)",
-                help="0% = close di low, 100% = close di high. <30% = distribusi.",
-                min_value=0, max_value=100, format="%d%%",
-            ),
-            "CMF (20)": st.column_config.NumberColumn(format="%+.3f"),
-        },
-    )
+    render_table(df_show_d)
 
     st.caption(
         "[WARN] HINDARI saham di tabel ini. Volume besar tapi close di bawah "

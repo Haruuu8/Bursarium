@@ -19,7 +19,7 @@ if not st.session_state.get("authentication_status"):
     st.stop()
 
 from quant.theme import (
-    load_theme, page_header, section_title, empty_state,
+    load_theme, page_header, section_title, empty_state, render_table,
 )
 
 load_theme()
@@ -35,51 +35,6 @@ MARGIN_OF_SAFETY = 0.85
 FV_CAP_RATIO = 2.0
 PE_SUSPECT_LOW = 0.5
 PE_SUSPECT_HIGH = 3.0
-
-
-# ============================================================
-# HELPER: RENDER TABEL MONOKROM (HTML)
-# ============================================================
-def render_monochrome_table(df):
-    """Mengubah DataFrame pandas menjadi tabel HTML dengan desain monokrom."""
-    html_table = df.to_html(index=False, border=0, classes="mono-table")
-    css = """
-    <style>
-    .mono-table {
-        width: 100%;
-        border-collapse: collapse;
-        background-color: #171717;
-        border-radius: 8px;
-        overflow: hidden;
-        font-size: 13px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-        margin-bottom: 24px;
-        border: 1px solid #27272a;
-    }
-    .mono-table th {
-        background-color: #262626;
-        color: #a3a3a3;
-        padding: 14px 16px;
-        text-align: left;
-        border-bottom: 1px solid #27272a;
-        font-weight: 600;
-        white-space: nowrap;
-    }
-    .mono-table td {
-        padding: 14px 16px;
-        color: #ffffff;
-        border-bottom: 1px solid #27272a;
-        font-weight: 500;
-    }
-    .mono-table tr:last-child td {
-        border-bottom: none;
-    }
-    .mono-table tr:hover td {
-        background-color: #262626;
-    }
-    </style>
-    """
-    st.markdown(css + html_table, unsafe_allow_html=True)
 
 
 # ============================================================
@@ -808,7 +763,7 @@ else:
     })
     df_show.insert(0, "No", range(1, len(df_show) + 1))
 
-    render_monochrome_table(df_show)
+    render_table(df_show)
 
     st.caption(f"{len(df_show)} saham undervalued - "
                f"Diurutkan berdasarkan Skor (Kualitas Fundamental & Valuasi)")
@@ -845,7 +800,7 @@ if not val_redflag.empty:
             "red_flag": "Alasan",
         })
 
-        render_monochrome_table(df_rf)
+        render_table(df_rf)
 
 
 # ============================================================
@@ -864,7 +819,7 @@ with st.expander("Median PE & PB per Sektor (referensi)"):
     if rows:
         df_med = pd.DataFrame(rows).sort_values("Median PE (capped 15)").reset_index(drop=True)
         df_med.insert(0, "No", range(1, len(df_med) + 1))
-        render_monochrome_table(df_med)
+        render_table(df_med)
         st.caption(f"Target PE dipakai = median x {TARGET_DISCOUNT} (diskon 10%) - "
                    f"Target PB dipakai = median x {TARGET_DISCOUNT} - "
                    f"FV final x {MARGIN_OF_SAFETY} (margin of safety 15%)")

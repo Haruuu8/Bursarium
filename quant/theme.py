@@ -335,3 +335,44 @@ def empty_state(icon, title, subtitle=""):
         f'<div style="font-size: 14px; color: #a3a3a3;">{subtitle}</div>'
         '</div>'
     )
+
+def render_table(df, hide_index=True):
+    """Mengubah DataFrame menjadi tabel HTML Monokrom (tanpa warna biru)."""
+    html_table = df.to_html(index=not hide_index, border=0, classes="mono-table")
+    css = """
+    <style>
+    .mono-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #171717;
+        border-radius: 8px;
+        overflow: hidden;
+        font-size: 13px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+        margin-bottom: 24px;
+        border: 1px solid #27272a;
+    }
+    .mono-table th {
+        background-color: #262626;
+        color: #a3a3a3;
+        padding: 14px 16px;
+        text-align: left;
+        border-bottom: 1px solid #27272a;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .mono-table td {
+        padding: 14px 16px;
+        color: #ffffff;
+        border-bottom: 1px solid #27272a;
+        font-weight: 500;
+    }
+    .mono-table tr:last-child td {
+        border-bottom: none;
+    }
+    .mono-table tr:hover td {
+        background-color: #262626;
+    }
+    </style>
+    """
+    st.markdown(css + html_table, unsafe_allow_html=True)

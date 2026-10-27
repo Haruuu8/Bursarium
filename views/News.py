@@ -306,8 +306,8 @@ with st.expander("Statistik per Kategori", expanded=False):
             for k, v in by_kat.items()
         ]).sort_values("Jumlah", ascending=False).reset_index(drop=True)
         df_kat.insert(0, "No", range(1, len(df_kat) + 1))
-        st.dataframe(df_kat, use_container_width=True, hide_index=True,
-                     height=min(500, 40 + len(df_kat) * 35))
+        from quant.theme import render_table
+        render_table(df_kat)
     else:
         st.info("Belum ada data kategori.")
 
