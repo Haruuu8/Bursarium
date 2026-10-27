@@ -336,6 +336,9 @@ def empty_state(icon, title, subtitle=""):
         '</div>'
     )
 
+# ============================================================
+# TABEL MONOKROM (HTML)
+# ============================================================
 def render_table(df, hide_index=True):
     """Mengubah DataFrame menjadi tabel HTML Monokrom (tanpa warna biru)."""
     html_table = df.to_html(index=not hide_index, border=0, classes="mono-table")
