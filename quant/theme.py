@@ -50,7 +50,9 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.02em !important;
 }
 
-/* BUTTONS */
+/* ============================================================
+   BUTTONS
+   ============================================================ */
 .stButton > button, .stDownloadButton > button {
     background: #171717 !important;
     border: 1px solid #27272a !important;
@@ -76,26 +78,42 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* INPUTS (FIX BIRU) */
+/* ============================================================
+   INPUTS & FOCUS (HILANGKAN BIRU)
+   ============================================================ */
+div[data-baseweb="input"] {
+    background-color: #0a0a0a !important;
+    border: 1px solid #27272a !important;
+    border-radius: 8px !important;
+}
+div[data-baseweb="input"] > div {
+    background-color: transparent !important;
+    border: none !important;
+}
 .stTextInput > div > div > input,
 .stNumberInput > div > div > input,
-.stDateInput > div > div > input,
+.stDateInput > div > div > input {
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 10px 14px !important;
+}
+div[data-baseweb="input"]:focus-within {
+    border-color: #737373 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
 .stSelectbox > div > div {
     background: #0a0a0a !important;
     border: 1px solid #27272a !important;
     border-radius: 8px !important;
     color: #ffffff !important;
     padding: 10px 14px !important;
-    box-shadow: none !important;
 }
-.stTextInput > div > div > input:focus,
 .stSelectbox > div > div:focus-within {
     border-color: #737373 !important;
     box-shadow: none !important;
-    outline: none !important;
 }
-
-/* FIX DROPDOWN SELECTBOX (HILANGKAN BIRU) */
 ul[data-testid="stSelectboxVirtualDropdown"] {
     background-color: #171717 !important;
     border: 1px solid #27272a !important;
@@ -109,7 +127,46 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     color: #ffffff !important;
 }
 
-/* TABS */
+/* ============================================================
+   SLIDER (HILANGKAN BIRU)
+   ============================================================ */
+[data-testid="stSlider"] [role="slider"] {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: none !important;
+}
+/* Garis aktif (kiri) */
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div[data-testid="stTickBar"] ~ div {
+    background: #ffffff !important;
+}
+/* Garis tidak aktif (kanan) */
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(2) {
+    background: #404040 !important;
+}
+/* Angka value di atas thumb */
+[data-testid="stSlider"] [data-testid="stThumbValue"] {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* ============================================================
+   CHECKBOX (HILANGKAN BIRU)
+   ============================================================ */
+[data-testid="stCheckbox"] input:checked + div {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+[data-testid="stCheckbox"] input:checked + div svg {
+    fill: #0a0a0a !important;
+    color: #0a0a0a !important;
+}
+[data-testid="stCheckbox"] label span {
+    color: #ffffff !important;
+}
+
+/* ============================================================
+   TABS, EXPANDER, POPOVER
+   ============================================================ */
 .stTabs [data-baseweb="tab-list"] {
     gap: 8px !important;
     border-bottom: 1px solid #27272a !important;
@@ -129,12 +186,10 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     display: none !important;
 }
 
-/* EXPANDER (FIX WARNA BIRU) */
 [data-testid="stExpander"] {
     background: #171717 !important;
     border: 1px solid #27272a !important;
     border-radius: 8px !important;
-    transition: border-color 0.2s ease !important;
 }
 [data-testid="stExpander"] summary {
     color: #ffffff !important;
@@ -143,10 +198,6 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
 [data-testid="stExpander"] summary:hover {
     background-color: #262626 !important;
     border-radius: 8px !important;
-    color: #ffffff !important;
-}
-[data-testid="stExpander"] summary p {
-    color: #ffffff !important;
 }
 [data-testid="stExpander"] summary svg {
     fill: #ffffff !important;
@@ -157,7 +208,6 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     box-shadow: none !important;
 }
 
-/* POPOVER & DATAFRAME */
 [data-testid="stPopover"] > button {
     background: #ffffff !important;
     color: #0a0a0a !important;
@@ -173,7 +223,6 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     border-radius: 10px !important;
 }
 
-/* PAGE LINK */
 [data-testid="stPageLink"] {
     padding: 10px 14px !important;
     border-radius: 8px !important;
