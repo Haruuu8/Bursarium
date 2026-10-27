@@ -1,24 +1,24 @@
-"""Theme minimalis premium — Clean & Professional (Dark Mode)."""
+"""Theme minimalis premium — Monokrom (Hitam, Abu, Putih)."""
 
 import streamlit as st
 
 
 COLORS = {
-    "bg": "#0f172a",         # Slate 900 (Background Utama)
-    "surface": "#1e293b",    # Slate 800 (Card/Kotak)
-    "elevated": "#334155",   # Slate 700 (Hover)
-    "sidebar": "#0b1120",    # Lebih gelap dari bg
-    "border": "#334155",     # Garis tepi standar
-    "border_hi": "#475569",  # Garis tepi saat fokus
-    "text": "#f8fafc",       # Putih tulang (Judul)
-    "body": "#cbd5e1",       # Abu terang (Paragraf)
-    "muted": "#94a3b8",      # Abu standard
-    "dim": "#64748b",        # Abu gelap
-    "primary": "#3b82f6",    # Biru profesional
-    "cyan": "#0ea5e9",       # Cyan solid
-    "success": "#10b981",    # Hijau
-    "warning": "#f59e0b",    # Oranye
-    "danger": "#ef4444",     # Merah
+    "bg": "#0a0a0a",         # Hampir hitam (Background Utama)
+    "surface": "#171717",    # Abu gelap (Card/Kotak)
+    "elevated": "#262626",   # Abu sedang (Hover)
+    "sidebar": "#000000",    # Hitam pekat
+    "border": "#262626",     # Garis tepi halus
+    "border_hi": "#404040",  # Garis tepi saat fokus
+    "text": "#fafafa",       # Putih bersih (Judul)
+    "body": "#d4d4d4",       # Abu terang (Paragraf)
+    "muted": "#a3a3a3",      # Abu standard
+    "dim": "#737373",        # Abu gelap
+    "primary": "#ffffff",    # Putih untuk tombol utama
+    "cyan": "#a3a3a3",       
+    "success": "#10b981",    # Hijau (untuk market)
+    "warning": "#f59e0b",    # Oranye (untuk market)
+    "danger": "#ef4444",     # Merah (untuk market)
 }
 
 
@@ -35,8 +35,8 @@ html { scroll-behavior: smooth; }
 @keyframes fadeIn { from { opacity:0;} to { opacity:1;} }
 
 .stApp {
-    background: #0f172a;
-    color: #cbd5e1;
+    background: #0a0a0a;
+    color: #d4d4d4;
 }
 [data-testid="stAppViewContainer"] { background: transparent; }
 [data-testid="stHeader"] { background: transparent !important; }
@@ -61,13 +61,13 @@ section[data-testid="stSidebar"] > div:first-child > div:first-child > div:first
 
 /* ============ SIDEBAR ============ */
 [data-testid="stSidebar"] {
-    background: #0b1120 !important;
-    border-right: 1px solid #334155 !important;
+    background: #000000 !important;
+    border-right: 1px solid #262626 !important;
 }
 [data-testid="stSidebarContent"] { background: transparent !important; }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #f8fafc !important;
+    color: #fafafa !important;
     font-weight: 600 !important;
     letter-spacing: -0.02em !important;
 }
@@ -75,46 +75,48 @@ h1, h2, h3, h4, h5, h6 {
 [data-testid="stMarkdownContainer"] { animation: fadeIn 200ms ease-out; }
 
 /* ============================================================
-   BUTTONS
+   BUTTONS (Putih Bersih)
    ============================================================ */
 .stButton > button, .stDownloadButton > button {
-    background: #1e293b !important;
-    border: 1px solid #334155 !important;
-    color: #f8fafc !important;
+    background: #171717 !important;
+    border: 1px solid #262626 !important;
+    color: #fafafa !important;
     border-radius: 6px !important;
     font-weight: 500 !important;
     font-size: 14px !important;
     padding: 8px 16px !important;
-    transition: background 150ms ease, border-color 150ms ease !important;
+    transition: all 150ms ease !important;
 }
 .stButton > button:hover, .stDownloadButton > button:hover {
-    background: #334155 !important;
-    border-color: #475569 !important;
-    color: #ffffff !important;
+    background: #262626 !important;
+    border-color: #404040 !important;
 }
+
+/* Tombol Utama (Primary) - Putih dengan teks hitam */
 .stButton > button[kind="primary"],
 .stButton > button[data-testid="baseButton-primary"] {
-    background: #3b82f6 !important;
-    border: 1px solid #3b82f6 !important;
-    color: #ffffff !important;
+    background: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    color: #000000 !important;
 }
 .stButton > button[kind="primary"]:hover {
-    background: #2563eb !important;
-    border-color: #2563eb !important;
+    background: #e5e5e5 !important;
+    border-color: #e5e5e5 !important;
+    color: #000000 !important;
 }
 
 .stFormSubmitButton > button {
-    background: #3b82f6 !important;
-    border: 1px solid #3b82f6 !important;
-    color: #ffffff !important;
+    background: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    color: #000000 !important;
     border-radius: 6px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     font-size: 14px !important;
     padding: 10px 16px !important;
-    transition: background 150ms ease !important;
+    transition: all 150ms ease !important;
 }
 .stFormSubmitButton > button:hover {
-    background: #2563eb !important;
+    background: #e5e5e5 !important;
 }
 
 /* ============================================================
@@ -123,27 +125,27 @@ h1, h2, h3, h4, h5, h6 {
 .stTextInput > div > div > input,
 .stNumberInput > div > div > input,
 .stDateInput > div > div > input {
-    background: #1e293b !important;
-    border: 1px solid #334155 !important;
+    background: #171717 !important;
+    border: 1px solid #262626 !important;
     border-radius: 6px !important;
-    color: #f8fafc !important;
+    color: #fafafa !important;
     font-size: 14px !important;
     padding: 10px 14px !important;
     transition: border-color 150ms ease !important;
 }
 .stSelectbox > div > div, .stMultiSelect > div > div {
-    background: #1e293b !important;
-    border: 1px solid #334155 !important;
+    background: #171717 !important;
+    border: 1px solid #262626 !important;
     border-radius: 6px !important;
-    color: #f8fafc !important;
+    color: #fafafa !important;
     transition: border-color 150ms ease !important;
 }
 .stTextInput > div > div > input:focus,
 .stNumberInput > div > div > input:focus,
 .stDateInput > div > div > input:focus,
 .stSelectbox > div > div:focus-within {
-    border-color: #3b82f6 !important;
-    box-shadow: 0 0 0 1px #3b82f6 !important;
+    border-color: #737373 !important;
+    box-shadow: none !important;
     outline: none !important;
 }
 
@@ -154,14 +156,14 @@ h1, h2, h3, h4, h5, h6 {
     gap: 8px !important;
     background: transparent !important;
     border: none !important;
-    border-bottom: 1px solid #334155 !important;
+    border-bottom: 1px solid #262626 !important;
     padding: 0 !important;
     margin-bottom: 24px !important;
 }
 .stTabs [data-baseweb="tab"] {
     background: transparent !important;
     border-radius: 0 !important;
-    color: #94a3b8 !important;
+    color: #737373 !important;
     font-weight: 500 !important;
     font-size: 14px !important;
     padding: 10px 16px !important;
@@ -169,11 +171,11 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 2px solid transparent !important;
     transition: color 150ms ease !important;
 }
-.stTabs [data-baseweb="tab"]:hover { color: #cbd5e1 !important; }
+.stTabs [data-baseweb="tab"]:hover { color: #d4d4d4 !important; }
 .stTabs [aria-selected="true"] {
     background: transparent !important;
-    color: #3b82f6 !important;
-    border-bottom: 2px solid #3b82f6 !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffffff !important;
 }
 .stTabs [data-baseweb="tab-highlight"],
 .stTabs [data-baseweb="tab-border"] {
@@ -184,38 +186,38 @@ h1, h2, h3, h4, h5, h6 {
    EXPANDER
    ============================================================ */
 [data-testid="stExpander"] {
-    background: #1e293b !important;
-    border: 1px solid #334155 !important;
+    background: #171717 !important;
+    border: 1px solid #262626 !important;
     border-radius: 8px !important;
     transition: border-color 150ms ease !important;
 }
 [data-testid="stExpander"]:hover {
-    border-color: #475569 !important;
+    border-color: #404040 !important;
 }
 
 /* ============================================================
    POPOVER LOGIN
    ============================================================ */
 [data-testid="stPopover"] > button {
-    background: #1e293b !important;
-    border: 1px solid #334155 !important;
-    color: #f8fafc !important;
-    font-weight: 500 !important;
+    background: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
     font-size: 14px !important;
     padding: 10px 18px !important;
     border-radius: 6px !important;
-    transition: background 150ms ease !important;
+    transition: all 150ms ease !important;
     width: 100% !important;
 }
 [data-testid="stPopover"] > button:hover {
-    background: #334155 !important;
+    background: #e5e5e5 !important;
 }
 [data-testid="stPopoverBody"] {
-    background: #1e293b !important;
-    border: 1px solid #475569 !important;
+    background: #171717 !important;
+    border: 1px solid #404040 !important;
     border-radius: 8px !important;
     padding: 20px !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8) !important;
 }
 
 /* ============================================================
@@ -224,12 +226,12 @@ h1, h2, h3, h4, h5, h6 {
 [data-testid="stDataFrame"] {
     border-radius: 8px !important;
     overflow: hidden !important;
-    border: 1px solid #334155 !important;
+    border: 1px solid #262626 !important;
 }
 
 [data-testid="stMetric"] {
-    background: #1e293b !important;
-    border: 1px solid #334155 !important;
+    background: #171717 !important;
+    border: 1px solid #262626 !important;
     border-radius: 8px !important;
     padding: 16px 20px !important;
 }
@@ -238,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
    ICON & PAGE LINK
    ============================================================ */
 [data-testid="stIconMaterial"] {
-    color: #94a3b8 !important;
+    color: #737373 !important;
     font-size: 18px !important;
     transition: color 150ms ease !important;
 }
@@ -246,17 +248,17 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px 12px !important;
     border-radius: 6px !important;
     margin-bottom: 2px !important;
-    transition: background 150ms ease !important;
-    color: #94a3b8 !important;
+    transition: all 150ms ease !important;
+    color: #a3a3a3 !important;
     text-decoration: none !important;
 }
 [data-testid="stPageLink"]:hover {
-    background: #1e293b !important;
-    color: #f8fafc !important;
+    background: #171717 !important;
+    color: #ffffff !important;
 }
 [data-testid="stPageLink"][aria-current="page"] {
-    background: #1e293b !important;
-    color: #3b82f6 !important;
+    background: #262626 !important;
+    color: #ffffff !important;
     font-weight: 600 !important;
 }
 
@@ -264,11 +266,11 @@ h1, h2, h3, h4, h5, h6 {
    SCROLLBAR
    ============================================================ */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
 ::-webkit-scrollbar-thumb {
-    background: #334155; border-radius: 3px;
+    background: #262626; border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover { background: #475569; }
+::-webkit-scrollbar-thumb:hover { background: #404040; }
 
 /* ============================================================
    HIDE STREAMLIT BRANDING
@@ -290,8 +292,8 @@ footer { visibility: hidden; }
     position: fixed !important;
     top: 15px !important;
     left: 15px !important;
-    background-color: #1e293b !important;
-    border: 1px solid #334155 !important;
+    background-color: #171717 !important;
+    border: 1px solid #262626 !important;
     border-radius: 6px !important;
     padding: 8px 12px !important;
     align-items: center;
@@ -305,7 +307,7 @@ footer { visibility: hidden; }
 [data-testid="stSidebarCollapsedControl"]::after {
     content: "☰";
     font-size: 20px;
-    color: #f8fafc;
+    color: #ffffff;
     line-height: 1;
 }
 @media (max-width: 991px) {
@@ -335,28 +337,28 @@ def _rgb(hex_color):
     return f"{int(h[0:2],16)},{int(h[2:4],16)},{int(h[4:6],16)}"
 
 
-def hero(title, subtitle, badge_text="", badge_color="#3b82f6"):
+def hero(title, subtitle, badge_text="", badge_color="#737373"):
     badge_html = ""
     if badge_text:
         rgb = _rgb(badge_color)
         badge_html = (
             f'<div style="display: inline-block; padding: 4px 12px; '
-            f'background: rgba({rgb}, 0.1); color: {badge_color}; '
-            f'border: 1px solid rgba({rgb}, 0.2); '
-            f'border-radius: 6px; font-size: 11px; font-weight: 600; '
+            f'background: #262626; color: #d4d4d4; '
+            f'border: 1px solid #404040; '
+            f'border-radius: 6px; font-size: 11px; font-weight: 500; '
             f'letter-spacing: 0.5px; margin-bottom: 16px;">'
             f'{badge_text}</div>'
         )
     return (
         '<div class="hero-title" style="'
-        'background: #1e293b; '
-        'border: 1px solid #334155; border-radius: 12px; '
+        'background: #171717; '
+        'border: 1px solid #262626; border-radius: 12px; '
         'padding: 32px 40px; margin-bottom: 24px;">'
         f'{badge_html}'
-        f'<div style="font-size: 32px; font-weight: 700; color: #f8fafc; '
+        f'<div style="font-size: 32px; font-weight: 600; color: #fafafa; '
         f'letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 8px;">'
         f'{title}</div>'
-        f'<div style="font-size: 14px; color: #94a3b8; line-height: 1.6; '
+        f'<div style="font-size: 14px; color: #a3a3a3; line-height: 1.6; '
         f'max-width: 640px;">{subtitle}</div>'
         '</div>'
     )
@@ -367,25 +369,25 @@ def page_header(icon, title, subtitle=""):
     if icon:
         icon_html = (
             f'<div style="width: 48px; height: 48px; '
-            f'background: #1e293b; border: 1px solid #334155; '
+            f'background: #262626; border: 1px solid #404040; '
             f'border-radius: 10px; display: flex; align-items: center; '
-            f'justify-content: center; font-size: 22px; color: #cbd5e1;">{icon}</div>'
+            f'justify-content: center; font-size: 22px; color: #ffffff;">{icon}</div>'
         )
     else:
         icon_html = ""
 
     return (
         '<div style="'
-        'background: #1e293b; '
-        'border: 1px solid #334155; border-radius: 12px; '
+        'background: #171717; '
+        'border: 1px solid #262626; border-radius: 12px; '
         'padding: 20px 24px; margin-bottom: 24px; '
         'display: flex; align-items: center; gap: 16px;">'
         f'{icon_html}'
         '<div>'
-        f'<div style="font-size: 11px; color: #94a3b8; letter-spacing: 0.5px; '
-        f'font-weight: 600; margin-bottom: 4px; text-transform: uppercase;">'
+        f'<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.5px; '
+        f'font-weight: 500; margin-bottom: 4px; text-transform: uppercase;">'
         f'{subtitle}</div>'
-        f'<div style="font-size: 22px; font-weight: 600; color: #f8fafc; '
+        f'<div style="font-size: 22px; font-weight: 600; color: #fafafa; '
         f'letter-spacing: -0.02em; line-height: 1;">{title}</div>'
         '</div></div>'
     )
@@ -393,15 +395,15 @@ def page_header(icon, title, subtitle=""):
 
 def section_title(title, subtitle=""):
     sub_html = (
-        f'<div style="font-size: 13px; color: #94a3b8; margin-left: 0; '
+        f'<div style="font-size: 13px; color: #a3a3a3; margin-left: 0; '
         f'margin-top: 6px;">{subtitle}</div>'
     ) if subtitle else ''
     return (
         '<div style="margin: 28px 0 16px;">'
         '<div style="display: flex; align-items: center; gap: 10px;">'
         '<div style="width: 3px; height: 18px; '
-        'background: #3b82f6; border-radius: 2px;"></div>'
-        f'<div style="font-size: 18px; font-weight: 600; color: #f8fafc; '
+        'background: #ffffff; border-radius: 2px;"></div>'
+        f'<div style="font-size: 18px; font-weight: 600; color: #fafafa; '
         f'letter-spacing: -0.01em;">{title}</div>'
         '</div>'
         f'{sub_html}'
@@ -413,8 +415,8 @@ def card(content, padding="20px 24px", accent=None):
     border_style = f'border-left: 3px solid {accent}; ' if accent else ''
     return (
         '<div style="'
-        'background: #1e293b; '
-        'border: 1px solid #334155; border-radius: 10px; '
+        'background: #171717; '
+        'border: 1px solid #262626; border-radius: 10px; '
         f'{border_style}'
         f'padding: {padding}; margin-bottom: 16px;">'
         f'{content}'
@@ -422,26 +424,26 @@ def card(content, padding="20px 24px", accent=None):
     )
 
 
-def metric_box(label, value, sub="", accent="#3b82f6"):
+def metric_box(label, value, sub="", accent="#ffffff"):
     sub_html = (
-        f'<div style="font-size: 12px; color: #94a3b8; margin-top: 6px;">{sub}</div>'
+        f'<div style="font-size: 12px; color: #a3a3a3; margin-top: 6px;">{sub}</div>'
     ) if sub else ''
     return (
         '<div style="'
-        'background: #1e293b; '
-        'border: 1px solid #334155; border-radius: 10px; '
+        'background: #171717; '
+        'border: 1px solid #262626; border-radius: 10px; '
         'padding: 16px 20px;">'
-        f'<div style="font-size: 12px; color: #94a3b8; '
+        f'<div style="font-size: 12px; color: #a3a3a3; '
         f'font-weight: 500; margin-bottom: 8px;">'
         f'{label}</div>'
-        f'<div style="font-size: 22px; font-weight: 600; color: #f8fafc; '
+        f'<div style="font-size: 22px; font-weight: 600; color: #fafafa; '
         f'letter-spacing: -0.02em;">{value}</div>'
         f'{sub_html}'
         '</div>'
     )
 
 
-def stat_card(label, value, delta=None, sub="", accent="#3b82f6"):
+def stat_card(label, value, delta=None, sub="", accent="#ffffff"):
     delta_html = ""
     if delta is not None:
         try:
@@ -450,26 +452,26 @@ def stat_card(label, value, delta=None, sub="", accent="#3b82f6"):
             sign = "+" if v >= 0 else ""
             delta_html = (
                 f'<div style="display: inline-block; padding: 2px 8px; '
-                f'background: rgba({_rgb(color)}, 0.1); '
-                f'color: {color}; border-radius: 4px; '
-                f'font-size: 12px; font-weight: 600; margin-left: 8px;">'
+                f'background: #262626; color: {color}; '
+                f'border-radius: 4px; font-size: 12px; font-weight: 600; '
+                f'margin-left: 8px; border: 1px solid #404040;">'
                 f'{sign}{v:.2f}%</div>'
             )
         except Exception:
             pass
     sub_html = (
-        f'<div style="font-size: 12px; color: #94a3b8; margin-top: 6px;">{sub}</div>'
+        f'<div style="font-size: 12px; color: #a3a3a3; margin-top: 6px;">{sub}</div>'
     ) if sub else ''
     return (
         '<div style="'
-        'background: #1e293b; '
-        'border: 1px solid #334155; border-radius: 10px; '
+        'background: #171717; '
+        'border: 1px solid #262626; border-radius: 10px; '
         'padding: 16px 20px;">'
-        f'<div style="font-size: 12px; color: #94a3b8; '
+        f'<div style="font-size: 12px; color: #a3a3a3; '
         f'font-weight: 500; margin-bottom: 8px;">'
         f'{label}</div>'
         f'<div style="display: flex; align-items: baseline;">'
-        f'<span style="font-size: 22px; font-weight: 600; color: #f8fafc; '
+        f'<span style="font-size: 22px; font-weight: 600; color: #fafafa; '
         f'letter-spacing: -0.02em;">{value}</span>'
         f'{delta_html}'
         '</div>'
@@ -479,52 +481,77 @@ def stat_card(label, value, delta=None, sub="", accent="#3b82f6"):
 
 
 def info_banner(text, type="info"):
+    # Warna disesuaikan agar tetap monokrom namun jelas
     colors = {
-        "info":    ("#3b82f6", "ℹ"),
+        "info":    ("#a3a3a3", "ℹ"),
         "success": ("#10b981", "✓"),
         "warning": ("#f59e0b", "⚠"),
         "error":   ("#ef4444", "✕"),
     }
     color, icon = colors.get(type, colors["info"])
-    rgb = _rgb(color)
+    
+    # Untuk info, kita pakai abu-abu. Untuk error/warning/success, pakai warnanya.
+    bg_color = "#171717"
+    border_color = "#262626"
+    text_color = "#d4d4d4"
+    
+    if type == "success":
+        bg_color = "rgba(16, 185, 129, 0.05)"
+        border_color = "rgba(16, 185, 129, 0.2)"
+    elif type == "warning":
+        bg_color = "rgba(245, 158, 11, 0.05)"
+        border_color = "rgba(245, 158, 11, 0.2)"
+    elif type == "error":
+        bg_color = "rgba(239, 68, 68, 0.05)"
+        border_color = "rgba(239, 68, 68, 0.2)"
+
     return (
-        f'<div style="background: rgba({rgb}, 0.05); '
-        f'border: 1px solid rgba({rgb}, 0.2); '
+        f'<div style="background: {bg_color}; '
+        f'border: 1px solid {border_color}; '
         f'border-radius: 8px; padding: 12px 16px; margin-bottom: 16px;">'
         f'<div style="display: flex; gap: 12px; align-items: flex-start;">'
         f'<span style="color: {color}; font-weight: bold; font-size: 14px; '
         f'flex-shrink: 0;">{icon}</span>'
-        f'<div style="font-size: 13px; color: #cbd5e1; line-height: 1.5;">'
+        f'<div style="font-size: 13px; color: {text_color}; line-height: 1.5;">'
         f'{text}</div>'
         '</div></div>'
     )
 
 
-def badge(text, color="#3b82f6"):
+def badge(text, color="#ffffff"):
     rgb = _rgb(color)
-    return (
-        f'<span style="display: inline-block; padding: 2px 8px; '
-        f'background: rgba({rgb}, 0.1); color: {color}; '
-        f'border: 1px solid rgba({rgb}, 0.2); border-radius: 4px; '
-        f'font-size: 11px; font-weight: 600; letter-spacing: 0.5px; '
-        f'text-transform: uppercase;">{text}</span>'
-    )
+    if color == "#ffffff":
+        return (
+            f'<span style="display: inline-block; padding: 2px 8px; '
+            f'background: #262626; color: #ffffff; '
+            f'border: 1px solid #404040; border-radius: 4px; '
+            f'font-size: 11px; font-weight: 500; letter-spacing: 0.5px; '
+            f'text-transform: uppercase;">{text}</span>'
+        )
+    else:
+        return (
+            f'<span style="display: inline-block; padding: 2px 8px; '
+            f'background: rgba({rgb}, 0.1); color: {color}; '
+            f'border: 1px solid rgba({rgb}, 0.2); border-radius: 4px; '
+            f'font-size: 11px; font-weight: 600; letter-spacing: 0.5px; '
+            f'text-transform: uppercase;">{text}</span>'
+        )
 
 
 def divider():
     return (
         '<div style="height: 1px; '
-        'background: #334155; '
+        'background: #262626; '
         'margin: 24px 0;"></div>'
     )
 
 
-def kv_row(label, value, accent="#f8fafc"):
+def kv_row(label, value, accent="#fafafa"):
     return (
         '<div style="display: flex; justify-content: space-between; '
         'align-items: center; padding: 10px 0; '
-        'border-bottom: 1px solid #334155;">'
-        f'<span style="font-size: 13px; color: #94a3b8;">{label}</span>'
+        'border-bottom: 1px solid #262626;">'
+        f'<span style="font-size: 13px; color: #a3a3a3;">{label}</span>'
         f'<span style="font-size: 14px; font-weight: 500; color: {accent};">'
         f'{value}</span>'
         '</div>'
@@ -538,11 +565,11 @@ def spacer(height="16px"):
 def empty_state(icon, title, subtitle=""):
     return (
         '<div style="text-align: center; padding: 48px 24px; '
-        'background: #1e293b; border: 1px dashed #334155; '
+        'background: #171717; border: 1px dashed #404040; '
         'border-radius: 12px;">'
         f'<div style="font-size: 32px; margin-bottom: 12px; opacity: 0.8;">{icon}</div>'
-        f'<div style="font-size: 16px; font-weight: 600; color: #f8fafc; '
+        f'<div style="font-size: 16px; font-weight: 500; color: #fafafa; '
         f'margin-bottom: 8px;">{title}</div>'
-        f'<div style="font-size: 13px; color: #94a3b8;">{subtitle}</div>'
+        f'<div style="font-size: 13px; color: #a3a3a3;">{subtitle}</div>'
         '</div>'
     )
