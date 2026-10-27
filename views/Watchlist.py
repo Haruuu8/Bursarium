@@ -569,28 +569,17 @@ with tab1:
     if not files:
         st.markdown(empty_state("", "Belum ada kandidat", "Jalankan screener dulu"), unsafe_allow_html=True)
     else:
-        date_options, file_map = [], {}
-        for f in files:
-            try:
-                tgl_str = extract_date_label(f, "kandidat_", ".csv")
-                date_options.append(tgl_str)
-                file_map[tgl_str] = f
-            except Exception:
-                continue
-
+        selected = files[0] # Ambil yang paling baru
+        tgl_str = extract_date_label(selected, "kandidat_", ".csv")
+        
         col1, col2 = st.columns([4, 1])
         with col1:
-            selected_date = st.selectbox(
-                "Pilih tanggal kandidat",
-                date_options, index=0,
-                key="kandidat_date_picker",
-            )
+            st.markdown(f'<div style="font-size:20px; font-weight:700; color:#ffffff; margin-bottom:20px;">Kandidat: {tgl_str}</div>', unsafe_allow_html=True)
         with col2:
             if st.button("Refresh", key="refresh_kandidat", use_container_width=True):
                 st.cache_data.clear()
                 st.rerun()
 
-        selected = file_map[selected_date]
         df = load_csv(os.path.join(OUTPUT_DIR, selected))
 
         if df.empty:
@@ -603,14 +592,6 @@ with tab1:
             if "rating" in df.columns:
                 df["rating"] = pd.to_numeric(df["rating"], errors="coerce").fillna(0)
                 df = df.sort_values("rating", ascending=False, na_position="last")
-
-            st.markdown(
-                f'<div style="font-size:14px; color:#a3a3a3; '
-                f'margin:12px 0 24px; font-weight:500;">'
-                f'Kandidat: <code>{selected}</code> · {len(df)} saham · '
-                f'{len(date_options)} hari tersedia</div>',
-                unsafe_allow_html=True,
-            )
 
             if df.empty:
                 st.info("Tidak ada kandidat.")

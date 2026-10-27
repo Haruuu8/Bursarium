@@ -104,13 +104,12 @@ def detect_market_phase(sc):
 # ============================================================
 # LOAD & HITUNG
 # ============================================================
-with st.spinner("Memuat data Global Sector..."):
-    try:
-        df_all = load_global_data()
-    except Exception as e:
-        st.error(f"{e}")
-        st.info("Yahoo Finance terkadang membatasi pengambilan data. Tunggu 5-10 menit lalu refresh.")
-        st.stop()
+try:
+    df_all = load_global_data()
+except Exception as e:
+    st.error(f"{e}")
+    st.info("Yahoo Finance terkadang membatasi pengambilan data. Tunggu 5-10 menit lalu refresh.")
+    st.stop()
 
 benchmark_series = df_all[BENCHMARK]
 sector_df = df_all.drop(columns=[BENCHMARK])
@@ -243,10 +242,9 @@ for _, r in df_sorted.iterrows():
 # ============================================================
 st.markdown(section_title("Ringkasan Pagi", "Global market update"), unsafe_allow_html=True)
 
-with st.spinner("Mengambil data global..."):
-    global_data = get_all_global_data()
-    sentimen_status, sentimen_detail, _ = hitung_sentimen(global_data)
-    dampak_ihsg = get_dampak_ihsg(global_data)
+global_data = get_all_global_data()
+sentimen_status, sentimen_detail, _ = hitung_sentimen(global_data)
+dampak_ihsg = get_dampak_ihsg(global_data)
 
 # Sentimen
 st.markdown(

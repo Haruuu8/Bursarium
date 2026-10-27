@@ -240,8 +240,7 @@ st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'di
 # ============================================================
 # SCAN: VOLUME SPIKE HARI INI
 # ============================================================
-with st.spinner("Scanning volume spike hari ini..."):
-    df_ind = compute_all_indicators()
+df_ind = compute_all_indicators()
 
 if df_ind is None or df_ind.empty:
     st.info("Data tidak tersedia untuk analisa volume spike.")

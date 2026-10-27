@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* INPUTS */
+/* INPUTS (FIX BIRU) */
 .stTextInput > div > div > input,
 .stNumberInput > div > div > input,
 .stDateInput > div > div > input,
@@ -86,11 +86,27 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px !important;
     color: #ffffff !important;
     padding: 10px 14px !important;
+    box-shadow: none !important;
 }
 .stTextInput > div > div > input:focus,
 .stSelectbox > div > div:focus-within {
-    border-color: #a3a3a3 !important;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1) !important;
+    border-color: #737373 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* FIX DROPDOWN SELECTBOX (HILANGKAN BIRU) */
+ul[data-testid="stSelectboxVirtualDropdown"] {
+    background-color: #171717 !important;
+    border: 1px solid #27272a !important;
+}
+ul[data-testid="stSelectboxVirtualDropdown"] li {
+    color: #ffffff !important;
+}
+ul[data-testid="stSelectboxVirtualDropdown"] li:hover,
+ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
+    background-color: #262626 !important;
+    color: #ffffff !important;
 }
 
 /* TABS */
@@ -113,9 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none !important;
 }
 
-/* ============================================================
-   EXPANDER (FIX WARNA BIRU)
-   ============================================================ */
+/* EXPANDER (FIX WARNA BIRU) */
 [data-testid="stExpander"] {
     background: #171717 !important;
     border: 1px solid #27272a !important;
@@ -141,13 +155,6 @@ h1, h2, h3, h4, h5, h6 {
 [data-testid="stExpander"] summary:focus {
     outline: none !important;
     box-shadow: none !important;
-}
-[data-testid="stExpander"]:focus-within {
-    border-color: #404040 !important;
-    box-shadow: none !important;
-}
-[data-testid="stExpander"] details[open] summary {
-    border-bottom: 1px solid #27272a !important;
 }
 
 /* POPOVER & DATAFRAME */
@@ -369,7 +376,6 @@ def empty_state(icon, title, subtitle=""):
     )
 
 def render_table(df, hide_index=True):
-    """Mengubah DataFrame menjadi tabel HTML Monokrom (tanpa warna biru)."""
     html_table = df.to_html(index=not hide_index, border=0, classes="mono-table")
     html_table = html_table.replace('\n', '').replace('\r', '')
     
