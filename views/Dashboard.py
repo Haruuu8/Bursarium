@@ -35,12 +35,12 @@ SEKTOR_ID = {
     "JXI": "Utilitas", "IXP": "Komunikasi"
 }
 
-# High-Contrast Monokrom (Border Kiri sebagai indikator)
+# High-Contrast Monokrom
 STATUS_STYLE = {
-    "Leading":   {"border": "#ffffff", "text": "#ffffff", "label": "LEADING"},
-    "Improving": {"border": "#a3a3a3", "text": "#a3a3a3", "label": "IMPROVING"},
-    "Weakening": {"border": "#737373", "text": "#737373", "label": "WEAKENING"},
-    "Lagging":   {"border": "#404040", "text": "#404040", "label": "LAGGING"},
+    "Leading":   {"bg": "#171717", "border": "#ffffff", "text": "#ffffff", "label": "LEADING"},
+    "Weakening": {"bg": "#0a0a0a", "border": "#737373", "text": "#a3a3a3", "label": "WEAKENING"},
+    "Lagging":   {"bg": "#0a0a0a", "border": "#404040", "text": "#737373", "label": "LAGGING"},
+    "Improving": {"bg": "#0a0a0a", "border": "#a3a3a3", "text": "#d4d4d4", "label": "IMPROVING"},
 }
 
 # ============================================================
@@ -154,13 +154,12 @@ phase, phase_desc = detect_market_phase(status_counts)
 # ============================================================
 st.markdown(page_header("", "Global Sector Rotation", phase_desc), unsafe_allow_html=True)
 
-# Badge Phase di Tengah
 st.markdown(
-    '<div style="display: flex; justify-content: center; margin-bottom: 28px;">'
-    '<span style="padding: 8px 20px; '
+    '<div style="margin-bottom: 32px;">'
+    '<span style="display: inline-block; padding: 8px 18px; '
     'background: #171717; color: #ffffff; '
     'border: 1px solid #404040; border-radius: 8px; font-size: 14px; '
-    'font-weight: 800; letter-spacing: 1px;">'
+    'font-weight: 800; letter-spacing: 1px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">'
     f'PHASE: {phase}'
     '</span>'
     '</div>',
@@ -168,17 +167,16 @@ st.markdown(
 )
 
 # ============================================================
-# SECTOR CARDS (List Layout)
+# SECTOR CARDS (Layout Vertikal untuk Mobile)
 # ============================================================
 STATUS_ORDER = {"Leading": 0, "Improving": 1, "Weakening": 2, "Lagging": 3}
 df_status["order"] = df_status["status"].map(STATUS_ORDER)
 df_sorted = df_status.sort_values(["order", "ret_1d"], ascending=[True, False]).reset_index(drop=True)
 
-# Keterangan
 st.markdown(
-    '<div style="font-size: 13px; color: #a3a3a3; '
+    '<div style="font-size: 14px; color: #a3a3a3; '
     'margin-bottom: 20px; padding: 14px 20px; '
-    'background: #171717; border-radius: 6px;">'
+    'background: #171717; border-radius: 8px; border-left: 4px solid #ffffff;">'
     '<b style="color:#ffffff;">Keterangan:</b> '
     'Angka pertama = return <b>1 hari</b> · '
     'Angka kedua = selisih return <b>20 hari</b> vs MSCI World · '
@@ -195,44 +193,45 @@ for _, r in df_sorted.iterrows():
     nama_id = SEKTOR_ID.get(sektor, sektor)
     style = STATUS_STYLE[status]
     
-    # Warna Angka
+    # Monokrom: Putih untuk positif, Abu untuk negatif
     color_ret = "#ffffff" if ret >= 0 else "#737373"
     sign = "+" if ret >= 0 else ""
 
-    # Format Spread 20D
     if spread is not None and not pd.isna(spread):
         sp_color = "#ffffff" if spread >= 0 else "#737373"
         sp_sign = "+" if spread >= 0 else ""
         spread_html = (
-            f'<div style="font-size: 13px; color: {sp_color}; font-weight: 600;">'
-            f'20d: {sp_sign}{spread:.2f}%</div>'
+            f'<span style="font-size: 12px; color: {sp_color}; '
+            f'font-weight: 600; background: #262626; '
+            f'padding: 4px 10px; border-radius: 4px; border: 1px solid #404040; '
+            f'white-space: nowrap;">'
+            f'20d: {sp_sign}{spread:.2f}%</span>'
         )
     else:
         spread_html = ""
 
-    # Layout Horizontal (Kiri: Info, Kanan: Angka)
     st.markdown(
         '<div style="'
-        'background: #171717; '
-        'border: 1px solid #27272a; '
+        f'background: #171717; '
+        f'border: 1px solid #27272a; '
         f'border-left: 4px solid {style["border"]}; '
-        'border-radius: 8px; padding: 16px 20px; margin-bottom: 10px; '
-        'display: flex; align-items: center; justify-content: space-between;">'
+        'border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; '
+        'display: flex; flex-direction: column; gap: 12px;">'
         
-        # KIRI
-        '<div style="display: flex; align-items: center; gap: 16px;">'
-        f'<span style="font-size: 11px; font-weight: 800; letter-spacing: 0.5px; color: {style["text"]}; width: 80px;">'
+        # Bagian Atas: Label & Nama Sektor
+        '<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">'
+        f'<span style="font-size: 11px; font-weight: 800; letter-spacing: 0.5px; color: {style["text"]}; '
+        f'padding: 4px 10px; border: 1px solid {style["border"]}; border-radius: 4px; background: #262626;">'
         f'{style["label"]}</span>'
         f'<span style="font-size: 16px; font-weight: 700; color: #ffffff;">{nama_id}</span>'
         '</div>'
-
-        # KANAN
-        '<div style="display: flex; align-items: center; gap: 32px; text-align: right;">'
-        f'<span style="font-size: 18px; font-weight: 800; color: {color_ret}; min-width: 70px;">'
+        
+        # Bagian Bawah: Return & Spread (Sejajar Kiri-Kanan)
+        '<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">'
+        f'<span style="font-size: 20px; font-weight: 800; color: {color_ret};">'
         f'{sign}{ret:.2f}%</span>'
-        f'<div style="min-width: 100px;">{spread_html}</div>'
+        f'<div>{spread_html}</div>'
         '</div>'
-
         '</div>',
         unsafe_allow_html=True
     )
@@ -246,19 +245,19 @@ global_data = get_all_global_data()
 sentimen_status, sentimen_detail, _ = hitung_sentimen(global_data)
 dampak_ihsg = get_dampak_ihsg(global_data)
 
-# Sentimen
+# Monokrom Sentimen
 st.markdown(
     '<div style="'
     'background: #171717; '
     'border: 1px solid #27272a; '
     'border-left: 4px solid #ffffff; '
     'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
-    '<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 1px; '
-    'margin-bottom: 6px; font-weight: 700; text-transform: uppercase;">'
+    '<div style="font-size: 12px; color: #a3a3a3; letter-spacing: 1px; '
+    'margin-bottom: 8px; font-weight: 700; text-transform: uppercase;">'
     'Sentimen Global</div>'
     f'<div style="font-size: 20px; font-weight: 800; color: #ffffff; '
-    f'margin-bottom: 4px;">{sentimen_status}</div>'
-    f'<div style="font-size: 13px; color: #a3a3a3;">{sentimen_detail}</div>'
+    f'margin-bottom: 6px;">{sentimen_status}</div>'
+    f'<div style="font-size: 14px; color: #a3a3a3;">{sentimen_detail}</div>'
     '</div>',
     unsafe_allow_html=True
 )
@@ -319,7 +318,7 @@ for nama, nilai, status, ket in dampak_ihsg:
         'background: #171717; '
         'border: 1px solid #27272a; '
         f'border-left: 4px solid {border}; '
-        'padding: 16px 20px; border-radius: 8px; margin-bottom: 10px;">'
+        'padding: 16px 20px; border-radius: 8px; margin-bottom: 12px;">'
         '<div style="display: flex; justify-content: space-between; '
         'align-items: center; margin-bottom: 6px;">'
         f'<span style="color: #ffffff; font-weight: 700; font-size: 14px;">'
