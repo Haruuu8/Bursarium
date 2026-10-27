@@ -7,6 +7,7 @@ from quant.global_data import (
     get_all_global_data,
     hitung_sentimen,
     get_dampak_ihsg,
+    fetch_yahoo_chart_direct,  # <--- TAMBAHKAN BARIS INI
 )
 from quant.theme import load_theme, page_header, section_title
 
