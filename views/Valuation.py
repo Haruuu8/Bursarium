@@ -424,9 +424,9 @@ for col, label, val_show, color in [
 ]:
     with col:
         st.markdown(
-            '<div style="background: #0a0a0a; '
+            '<div style="background: #171717; '
             'border-radius: 8px; padding: 22px 24px; '
-            'border: 1px solid #262626;">'
+            'border: 1px solid #27272a;">'
             f'<div style="font-size: 11px; color: #a3a3a3; '
             f'letter-spacing: 0.8px; font-weight: 500;">{label}</div>'
             f'<div style="font-size: 28px; font-weight: 600; '
@@ -488,7 +488,7 @@ if search_kode:
             pot_label = "TIDAK VALID"
             accent = "#737373"
             status_badge = (
-                f'<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+                f'<span style="background:#262626; color:#a3a3a3; border: 1px solid #404040; '
                 f'padding:4px 10px; border-radius:4px; font-size:11px; '
                 f'font-weight:500;">RED FLAG - {red_flag}</span>'
             )
@@ -497,7 +497,7 @@ if search_kode:
             pot_label = "SUSPECT"
             accent = "#a3a3a3"
             status_badge = (
-                '<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+                '<span style="background:#262626; color:#a3a3a3; border: 1px solid #404040; '
                 'padding:4px 10px; border-radius:4px; font-size:11px; '
                 'font-weight:500;">Suspect - data perlu dicek</span>'
             )
@@ -511,16 +511,16 @@ if search_kode:
             pot_label = "SANGAT MURAH"
             accent = "#ffffff"
             status_badge = (
-                '<span style="background:#171717; color:#ffffff; border: 1px solid #262626; '
+                '<span style="background:#ffffff; color:#0a0a0a; '
                 'padding:4px 10px; border-radius:4px; font-size:11px; '
-                'font-weight:500;">VALID</span>'
+                'font-weight:700;">VALID</span>'
             )
         elif pot >= 20:
             pot_color = "#ffffff"
             pot_label = "MURAH"
             accent = "#ffffff"
             status_badge = (
-                '<span style="background:#171717; color:#ffffff; border: 1px solid #262626; '
+                '<span style="background:#262626; color:#ffffff; border: 1px solid #ffffff; '
                 'padding:4px 10px; border-radius:4px; font-size:11px; '
                 'font-weight:500;">VALID</span>'
             )
@@ -529,7 +529,7 @@ if search_kode:
             pot_label = "WAJAR"
             accent = "#e5e5e5"
             status_badge = (
-                '<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
+                '<span style="background:#262626; color:#a3a3a3; border: 1px solid #404040; '
                 'padding:4px 10px; border-radius:4px; font-size:11px; '
                 'font-weight:500;">WAJAR</span>'
             )
@@ -538,7 +538,7 @@ if search_kode:
             pot_label = "MAHAL"
             accent = "#737373"
             status_badge = (
-                '<span style="background:#171717; color:#737373; border: 1px solid #262626; '
+                '<span style="background:#262626; color:#737373; border: 1px solid #404040; '
                 'padding:4px 10px; border-radius:4px; font-size:11px; '
                 'font-weight:500;">MAHAL</span>'
             )
@@ -546,13 +546,13 @@ if search_kode:
         warning_banner = ""
         if is_red:
             warning_banner = (
-                '<div style="background:#171717; '
-                'border:1px solid #262626; '
-                'border-left:3px solid #737373; border-radius:4px; '
-                'padding:14px 18px; margin-bottom:20px;">'
-                '<div style="font-size:13px; font-weight:600; color:#a3a3a3; '
-                'margin-bottom:6px;">SAHAM INI TIDAK MASUK REKOMENDASI</div>'
-                f'<div style="font-size:12px; color:#a3a3a3; line-height:1.6;">'
+                '<div style="background:#262626; '
+                'border:1px solid #404040; '
+                'border-left:4px solid #737373; border-radius:6px; '
+                'padding:16px 20px; margin-bottom:24px;">'
+                '<div style="font-size:14px; font-weight:600; color:#a3a3a3; '
+                'margin-bottom:8px;">SAHAM INI TIDAK MASUK REKOMENDASI</div>'
+                f'<div style="font-size:13px; color:#a3a3a3; line-height:1.6;">'
                 f'Alasan: <b style="color:#ffffff;">{red_flag}</b><br>'
                 'Nilai potential di bawah tetap dihitung secara matematis, '
                 'tetapi <b>tidak bisa dijadikan dasar pembelian</b> karena '
@@ -561,65 +561,65 @@ if search_kode:
             )
 
         st.markdown(
-            f'<div style="background:#0a0a0a; '
-            f'border:1px solid #262626; border-left:3px solid {accent}; '
-            f'border-radius:8px; padding:24px 28px; margin:16px 0 20px;">'
+            f'<div style="background:#171717; '
+            f'border:1px solid #27272a; border-left:4px solid {accent}; '
+            f'border-radius:8px; padding:24px 28px; margin:16px 0 24px;">'
 
             f'<div style="margin-bottom:20px;">'
-            f'<div style="font-size:26px; font-weight:600; color:#ffffff; letter-spacing:-0.03em;">{kode}</div>'
-            f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px;">{nama} - <span style="color:#737373;">{sektor}</span></div>'
+            f'<div style="font-size:26px; font-weight:700; color:#ffffff; letter-spacing:-0.03em;">{kode}</div>'
+            f'<div style="font-size:14px; color:#a3a3a3; margin-top:6px;">{nama} - <span style="color:#737373;">{sektor}</span></div>'
             f'<div style="margin-top:12px;">{status_badge}</div>'
             f'</div>'
 
             f'<div style="margin-bottom:24px;">'
             f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; font-weight:500;">HARGA SAAT INI</div>'
-            f'<div style="font-size:32px; font-weight:600; color:#ffffff; letter-spacing:-0.03em; margin-top:4px;">{fmt(harga, 0)}</div>'
+            f'<div style="font-size:32px; font-weight:700; color:#ffffff; letter-spacing:-0.03em; margin-top:4px;">{fmt(harga, 0)}</div>'
             f'</div>'
 
             f'{warning_banner}'
 
-            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:16px 18px;">'
+            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-bottom:20px;">'
+            f'<div style="background:#262626; border:1px solid #404040; border-radius:6px; padding:16px 20px;">'
             f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px;">FAIR VALUE</div>'
             f'<div style="font-size:22px; font-weight:600; color:#ffffff; margin-top:6px;">{fmt(fv, 0)}</div></div>'
 
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:16px 18px;">'
+            f'<div style="background:#262626; border:1px solid #404040; border-radius:6px; padding:16px 20px;">'
             f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px;">POTENTIAL</div>'
             f'<div style="font-size:22px; font-weight:600; color:{pot_color}; margin-top:6px;">{fmt_pct(pot, 1, True)}</div>'
-            f'<div style="font-size:11px; color:{pot_color}; font-weight:500; margin-top:4px;">{pot_label}</div></div>'
+            f'<div style="font-size:11px; color:{pot_color}; font-weight:600; margin-top:4px;">{pot_label}</div></div>'
 
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:16px 18px;">'
+            f'<div style="background:#262626; border:1px solid #404040; border-radius:6px; padding:16px 20px;">'
             f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px;">SKOR</div>'
             f'<div style="font-size:22px; font-weight:600; color:#ffffff; margin-top:6px;">{skor:.0f}<span style="font-size:12px; color:#737373;">/100</span></div></div>'
             f'</div>'
 
-            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:20px;">'
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
-            f'<div style="font-size:11px; color:#a3a3a3;">EPS</div>'
+            f'<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin-bottom:20px;">'
+            f'<div style="background:#0a0a0a; border:1px solid #27272a; border-radius:6px; padding:14px 16px;">'
+            f'<div style="font-size:11px; color:#737373;">EPS</div>'
             f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(eps_val, 1)} <span style="font-size:11px; color:#737373;">({eps_src})</span></div></div>'
 
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
-            f'<div style="font-size:11px; color:#a3a3a3;">BV</div>'
+            f'<div style="background:#0a0a0a; border:1px solid #27272a; border-radius:6px; padding:14px 16px;">'
+            f'<div style="font-size:11px; color:#737373;">BV</div>'
             f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(bv_val, 0)}</div></div>'
 
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
-            f'<div style="font-size:11px; color:#a3a3a3;">ROE</div>'
+            f'<div style="background:#0a0a0a; border:1px solid #27272a; border-radius:6px; padding:14px 16px;">'
+            f'<div style="font-size:11px; color:#737373;">ROE</div>'
             f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt_pct(roe, 1)}</div></div>'
 
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
-            f'<div style="font-size:11px; color:#a3a3a3;">PE</div>'
+            f'<div style="background:#0a0a0a; border:1px solid #27272a; border-radius:6px; padding:14px 16px;">'
+            f'<div style="font-size:11px; color:#737373;">PE</div>'
             f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(pe, 1)} <span style="font-size:11px; color:#737373;">(tgt {fmt(target_pe, 1)})</span></div></div>'
 
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
-            f'<div style="font-size:11px; color:#a3a3a3;">PB</div>'
+            f'<div style="background:#0a0a0a; border:1px solid #27272a; border-radius:6px; padding:14px 16px;">'
+            f'<div style="font-size:11px; color:#737373;">PB</div>'
             f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(pb, 2)} <span style="font-size:11px; color:#737373;">(tgt {fmt(target_pb, 2)})</span></div></div>'
 
-            f'<div style="background:#171717; border:1px solid #262626; border-radius:6px; padding:12px 16px;">'
-            f'<div style="font-size:11px; color:#a3a3a3;">DER</div>'
+            f'<div style="background:#0a0a0a; border:1px solid #27272a; border-radius:6px; padding:14px 16px;">'
+            f'<div style="font-size:11px; color:#737373;">DER</div>'
             f'<div style="font-size:15px; font-weight:600; color:#ffffff; margin-top:4px;">{fmt(de_val, 2)}</div></div>'
             f'</div>'
 
-            f'<div style="border-top:1px solid #262626; padding-top:14px; display:flex; gap:20px; flex-wrap:wrap; font-size:12px; color:#a3a3a3;">'
+            f'<div style="border-top:1px solid #27272a; padding-top:16px; display:flex; gap:24px; flex-wrap:wrap; font-size:12px; color:#a3a3a3;">'
             f'<span>FV Graham: <b style="color:#ffffff; font-weight:500;">{fmt(fv_graham, 0)}</b></span>'
             f'<span>FV-PE: <b style="color:#ffffff; font-weight:500;">{fmt(fv_pe, 0)}</b></span>'
             f'<span>FV-PB: <b style="color:#ffffff; font-weight:500;">{fmt(fv_pb, 0)}</b></span>'
@@ -630,7 +630,7 @@ if search_kode:
         )
 
 st.markdown(
-    '<div style="height:1px; background:#262626; margin:28px 0 20px;"></div>',
+    '<div style="height:1px; background:#27272a; margin:32px 0 24px;"></div>',
     unsafe_allow_html=True
 )
 
@@ -666,57 +666,57 @@ else:
         pot_color = "#ffffff" if pot >= 0 else "#737373"
 
         st.markdown(
-            f'<div style="background: #0a0a0a; border-radius: 8px; border: 1px solid #262626; padding: 20px; margin-bottom: 16px; border-left: 3px solid #ffffff;">'
+            f'<div style="background: #171717; border-radius: 8px; border: 1px solid #27272a; padding: 24px; margin-bottom: 16px; border-left: 4px solid #ffffff;">'
             
-            f'<div style="display: flex; justify-content: space-between; align-items: stretch; border-bottom: 1px solid #262626; padding-bottom: 12px; margin-bottom: 16px;">'
+            f'<div style="display: flex; justify-content: space-between; align-items: stretch; border-bottom: 1px solid #27272a; padding-bottom: 16px; margin-bottom: 16px;">'
             f'<div style="flex: 1;">'
-            f'<div style="font-size: 24px; font-weight: 600; color: #ffffff; line-height: 1.2;">{kode}</div>'
-            f'<div style="font-size: 12px; color: #a3a3a3; margin-top: 4px;">Last: {harga:,.2f}</div>'
+            f'<div style="font-size: 24px; font-weight: 700; color: #ffffff; line-height: 1.2;">{kode}</div>'
+            f'<div style="font-size: 13px; color: #a3a3a3; margin-top: 4px;">Last: {harga:,.2f}</div>'
             f'</div>'
-            f'<div style="width: 1px; background: #262626; margin: 0 16px;"></div>'
+            f'<div style="width: 1px; background: #27272a; margin: 0 16px;"></div>'
             f'<div style="flex: 1; text-align: right; display: flex; flex-direction: column; justify-content: center;">'
-            f'<div style="font-size: 11px; color: #737373;">Target Range:</div>'
-            f'<div style="font-size: 18px; font-weight: 600; color: #ffffff;">{fv:,.0f}</div>'
+            f'<div style="font-size: 11px; color: #737373; text-transform:uppercase;">Target Range:</div>'
+            f'<div style="font-size: 20px; font-weight: 600; color: #ffffff;">{fv:,.0f}</div>'
             f'</div>'
             f'</div>'
 
-            f'<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; text-align: center; border-bottom: 1px solid #262626; padding-bottom: 16px; margin-bottom: 16px;">'
+            f'<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; text-align: center; border-bottom: 1px solid #27272a; padding-bottom: 16px; margin-bottom: 16px;">'
             f'<div>'
-            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">Rank:</div>'
-            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">#{i+1}</div>'
+            f'<div style="font-size: 11px; color: #737373; margin-bottom: 4px;">Rank</div>'
+            f'<div style="font-size: 15px; font-weight: 600; color: #ffffff;">#{i+1}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">ROE</div>'
-            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt_pct(roe, 1)}</div>'
+            f'<div style="font-size: 11px; color: #737373; margin-bottom: 4px;">ROE</div>'
+            f'<div style="font-size: 15px; font-weight: 600; color: #ffffff;">{fmt_pct(roe, 1)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">DER</div>'
-            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(de_val, 2)}</div>'
+            f'<div style="font-size: 11px; color: #737373; margin-bottom: 4px;">DER</div>'
+            f'<div style="font-size: 15px; font-weight: 600; color: #ffffff;">{fmt(de_val, 2)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">EPS</div>'
-            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(eps_val, 1)}</div>'
+            f'<div style="font-size: 11px; color: #737373; margin-bottom: 4px;">EPS</div>'
+            f'<div style="font-size: 15px; font-weight: 600; color: #ffffff;">{fmt(eps_val, 1)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">PE</div>'
-            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(pe, 1)}</div>'
+            f'<div style="font-size: 11px; color: #737373; margin-bottom: 4px;">PE</div>'
+            f'<div style="font-size: 15px; font-weight: 600; color: #ffffff;">{fmt(pe, 1)}</div>'
             f'</div>'
             f'<div>'
-            f'<div style="font-size: 10px; color: #737373; margin-bottom: 4px;">PB</div>'
-            f'<div style="font-size: 14px; font-weight: 600; color: #ffffff;">{fmt(pb, 2)}</div>'
+            f'<div style="font-size: 11px; color: #737373; margin-bottom: 4px;">PB</div>'
+            f'<div style="font-size: 15px; font-weight: 600; color: #ffffff;">{fmt(pb, 2)}</div>'
             f'</div>'
             f'</div>'
 
             f'<div style="display: flex; justify-content: space-between; align-items: center;">'
             
-            f'<div style="background: #171717; border: 1px solid #262626; border-radius: 6px; padding: 8px 16px; display: flex; align-items: center; gap: 12px;">'
-            f'<span style="font-size: 11px; color: #a3a3a3;">Score:</span>'
+            f'<div style="background: #262626; border: 1px solid #404040; border-radius: 6px; padding: 10px 16px; display: flex; align-items: center; gap: 12px;">'
+            f'<span style="font-size: 12px; color: #a3a3a3;">Score:</span>'
             f'<span style="font-size: 18px; font-weight: 600; color: #ffffff;">{skor:.0f}</span>'
             f'</div>'
 
             f'<div style="text-align: right;">'
-            f'<div style="font-size: 11px; color: #737373;">Potential:</div>'
-            f'<div style="font-size: 24px; font-weight: 600; color: {pot_color};">{pot:+.1f}%</div>'
+            f'<div style="font-size: 11px; color: #737373; text-transform:uppercase;">Potential:</div>'
+            f'<div style="font-size: 24px; font-weight: 700; color: {pot_color};">{pot:+.1f}%</div>'
             f'</div>'
             f'</div>'
             f'</div>',

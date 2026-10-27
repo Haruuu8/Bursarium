@@ -46,7 +46,7 @@ def render_card(r, highlight=False):
     kategori_list = r["kategori"]
     bobot = r.get("bobot", 0)
 
-    # Monokrom: Good = Putih, Warning = Abu Gelap, Neutral = Abu Terang
+    # High-Contrast Monokrom: Good = Putih, Warning = Abu Gelap, Neutral = Abu Terang
     if tipe == "good":
         accent = "#ffffff"
     elif tipe == "warning":
@@ -57,23 +57,23 @@ def render_card(r, highlight=False):
     bobot_badge = ""
     if bobot >= 9:
         bobot_badge = (
-            '<span style="background:#ffffff; color:#000000; '
-            'padding:3px 8px; border-radius:4px; font-size:11px; '
-            'font-weight:600; letter-spacing:0.5px; margin-left:8px;">HOT</span>'
+            '<span style="background:#ffffff; color:#0a0a0a; '
+            'padding:4px 10px; border-radius:4px; font-size:11px; '
+            'font-weight:700; letter-spacing:0.5px; margin-left:10px;">HOT</span>'
         )
     elif bobot >= 7:
         bobot_badge = (
-            '<span style="background:#171717; color:#ffffff; border: 1px solid #262626; '
-            'padding:3px 8px; border-radius:4px; font-size:11px; '
-            'font-weight:500; letter-spacing:0.5px; margin-left:8px;">PENTING</span>'
+            '<span style="background:#262626; color:#ffffff; border: 1px solid #404040; '
+            'padding:4px 10px; border-radius:4px; font-size:11px; '
+            'font-weight:600; letter-spacing:0.5px; margin-left:10px;">PENTING</span>'
         )
 
     kat_html = ""
     for k in kategori_list:
         kat_html += (
-            f'<span style="font-size:11px; padding:3px 8px; '
-            f'background:#171717; color:#a3a3a3; border: 1px solid #262626; '
-            f'border-radius:4px; font-weight:500; margin-right:6px;">'
+            f'<span style="font-size:11px; padding:4px 10px; '
+            f'background:#262626; color:#a3a3a3; border: 1px solid #404040; '
+            f'border-radius:4px; font-weight:500; margin-right:8px;">'
             f'{k}</span>'
         )
 
@@ -82,35 +82,37 @@ def render_card(r, highlight=False):
         lamp_html = (
             f'<a href="{r["lampiran"]}" target="_blank" '
             f'style="font-size:12px; color:#ffffff; text-decoration:none; '
-            f'margin-left:8px; font-weight:500; padding: 2px 6px; border-bottom: 1px solid #404040;">Dokumen</a>'
+            f'margin-left:10px; font-weight:600; padding: 4px 0; border-bottom: 1px solid #737373;">'
+            f'Lihat Dokumen</a>'
         )
 
     if highlight:
-        border_style = f"border:1px solid #404040; border-left:3px solid {accent};"
+        border_style = f"border:1px solid #404040; border-left:4px solid {accent};"
     else:
-        border_style = f"border:1px solid #262626; border-left:2px solid {accent};"
+        border_style = f"border:1px solid #27272a; border-left:4px solid {accent};"
 
     st.markdown(
         '<div style="'
-        'background: #0a0a0a; '
+        'background: #171717; '
         f'{border_style} '
         'border-radius: 8px; '
-        'padding: 16px 20px; margin-bottom: 12px; '
-        'position: relative; overflow: hidden;">'
+        'padding: 20px 24px; margin-bottom: 16px; '
+        'position: relative; overflow: hidden; '
+        'box-shadow: 0 4px 15px rgba(0,0,0,0.2);">'
         '<div style="padding-left:4px;">'
         '<div style="display:flex; justify-content:space-between; '
-        'align-items:center; margin-bottom:8px; gap:10px; flex-wrap:wrap;">'
-        '<div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">'
-        f'<span style="font-size:16px; font-weight:600; color:#ffffff; '
+        'align-items:center; margin-bottom:12px; gap:12px; flex-wrap:wrap;">'
+        '<div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">'
+        f'<span style="font-size:18px; font-weight:700; color:#ffffff; '
         f'letter-spacing:-0.02em;">{r["kode"] or "-"}</span>'
         f'{bobot_badge}'
         '</div>'
-        f'<div style="font-size:12px; color:#737373; font-weight:500;">'
+        f'<div style="font-size:13px; color:#737373; font-weight:500;">'
         f'{fmt_date(r["tanggal"])}</div>'
         '</div>'
-        f'<div style="font-size:14px; color:#d4d4d4; font-weight:500; '
-        f'line-height:1.5; margin-bottom:10px;">{r["judul"]}</div>'
-        '<div style="display:flex; gap:4px; flex-wrap:wrap; align-items:center;">'
+        f'<div style="font-size:15px; color:#e5e5e5; font-weight:500; '
+        f'line-height:1.6; margin-bottom:16px;">{r["judul"]}</div>'
+        '<div style="display:flex; gap:6px; flex-wrap:wrap; align-items:center;">'
         f'{kat_html}{lamp_html}'
         '</div>'
         '</div></div>',
@@ -121,7 +123,7 @@ def render_card(r, highlight=False):
 def render_list(df_section, max_items=None):
     if df_section.empty:
         st.markdown(
-            '<div style="text-align:center; color:#737373; font-size:13px; '
+            '<div style="text-align:center; color:#737373; font-size:14px; '
             'padding:40px 20px;">Belum ada berita di kategori ini</div>',
             unsafe_allow_html=True
         )
@@ -133,8 +135,8 @@ def render_list(df_section, max_items=None):
 
     if max_items and len(df_section) > max_items:
         st.markdown(
-            f'<div style="font-size:12px; color:#737373; '
-            f'text-align:center; padding:12px;">'
+            f'<div style="font-size:13px; color:#737373; '
+            f'text-align:center; padding:16px;">'
             f'... dan {len(df_section) - max_items} berita lainnya</div>',
             unsafe_allow_html=True
         )
@@ -162,7 +164,7 @@ with c2:
 
 
 # ============================================================
-# LOAD DATA (SIMPEL & PASTI BACA FILE STATIS)
+# LOAD DATA
 # ============================================================
 with st.spinner(f"Memuat pengumuman ({days} hari)..."):
     try:
@@ -182,10 +184,10 @@ if df.empty:
 
 # Info bar
 st.markdown(
-    f'<div style="font-size:12px; color:#a3a3a3; '
-    f'padding:8px 14px; margin-bottom:16px; '
-    f'background:#171717; border: 1px solid #262626; border-radius:6px; '
-    f'display:inline-flex; align-items:center; gap:14px;">'
+    f'<div style="font-size:13px; color:#a3a3a3; '
+    f'padding:10px 16px; margin-bottom:20px; '
+    f'background:#171717; border: 1px solid #27272a; border-radius:8px; '
+    f'display:inline-flex; align-items:center; gap:16px;">'
     f'<span><b style="color:#ffffff;">{len(df)}</b> pengumuman</span>'
     f'<span>{days} hari terakhir</span>'
     f'</div>',
@@ -229,7 +231,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
 
 with tab1:
     st.markdown(
-        '<div style="font-size:13px; color:#a3a3a3; '
+        '<div style="font-size:14px; color:#a3a3a3; '
         'margin:8px 0 16px 0; font-weight:500;">'
         '10 pengumuman terbaru dari IDX</div>',
         unsafe_allow_html=True
@@ -238,7 +240,7 @@ with tab1:
 
 with tab2:
     st.markdown(
-        '<div style="font-size:13px; color:#a3a3a3; '
+        '<div style="font-size:14px; color:#a3a3a3; '
         'margin:8px 0 16px 0; font-weight:500;">'
         'Bobot >= 7 - katalis penting</div>',
         unsafe_allow_html=True
@@ -247,7 +249,7 @@ with tab2:
 
 with tab3:
     st.markdown(
-        '<div style="font-size:13px; color:#a3a3a3; '
+        '<div style="font-size:14px; color:#a3a3a3; '
         'margin:8px 0 16px 0; font-weight:500;">'
         'Dividen - buyback - laba naik - kontrak baru</div>',
         unsafe_allow_html=True
@@ -256,7 +258,7 @@ with tab3:
 
 with tab4:
     st.markdown(
-        '<div style="font-size:13px; color:#a3a3a3; '
+        '<div style="font-size:14px; color:#a3a3a3; '
         'margin:8px 0 16px 0; font-weight:500;">'
         'Akuisisi - takeover - pengendali baru</div>',
         unsafe_allow_html=True
@@ -265,7 +267,7 @@ with tab4:
 
 with tab5:
     st.markdown(
-        '<div style="font-size:13px; color:#a3a3a3; '
+        '<div style="font-size:14px; color:#a3a3a3; '
         'margin:8px 0 16px 0; font-weight:500;">'
         'Penambahan modal tanpa HMETD</div>',
         unsafe_allow_html=True
@@ -274,7 +276,7 @@ with tab5:
 
 with tab6:
     st.markdown(
-        '<div style="font-size:13px; color:#a3a3a3; '
+        '<div style="font-size:14px; color:#a3a3a3; '
         'margin:8px 0 16px 0; font-weight:500;">'
         'Investor baru - tender offer</div>',
         unsafe_allow_html=True
@@ -283,7 +285,7 @@ with tab6:
 
 with tab7:
     st.markdown(
-        '<div style="font-size:13px; color:#a3a3a3; '
+        '<div style="font-size:14px; color:#a3a3a3; '
         'margin:8px 0 16px 0; font-weight:500;">'
         'Rugi - sanksi - pengunduran diri</div>',
         unsafe_allow_html=True
@@ -311,7 +313,7 @@ with st.expander("Statistik per Kategori", expanded=False):
 
 st.markdown(
     '<div style="text-align:center; color:#737373; font-size:12px; '
-    'margin-top:32px; padding-top:20px; border-top:1px solid #262626;">'
+    'margin-top:32px; padding-top:20px; border-top:1px solid #27272a;">'
     'Sumber: IDX Keterbukaan Informasi - Auto-update via GitHub'
     '</div>',
     unsafe_allow_html=True

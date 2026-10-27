@@ -172,7 +172,7 @@ harga = float(df[close_col].iloc[-1])
 prev = float(df[close_col].iloc[-2]) if len(df) >= 2 else harga
 chg = (harga / prev - 1) * 100 if prev else 0
 
-# Monokrom: Putih untuk positif, Abu untuk negatif
+# High-Contrast Monokrom: Putih untuk positif, Abu untuk negatif
 chg_color = "#ffffff" if chg >= 0 else "#737373"
 chg_sign = "+" if chg >= 0 else ""
 
@@ -180,7 +180,7 @@ ind = hitung_indikator_teknikal(kode_pilih)
 
 st.markdown(
     '<div style="'
-    'background: #0a0a0a; border: 1px solid #262626; '
+    'background: #171717; border: 1px solid #27272a; '
     'border-radius: 8px; padding: 22px 26px; margin-bottom: 24px; '
     'display: flex; align-items: center; gap: 20px;">'
     '<div style="flex-grow: 1;">'
@@ -192,8 +192,8 @@ st.markdown(
     f'<span style="font-size:30px; font-weight:600; color:#ffffff; '
     f'letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</span>'
     f'<span style="font-size:14px; font-weight:500; padding:4px 12px; '
-    f'border-radius:4px; background:#171717; '
-    f'color:{chg_color}; border:1px solid #262626;">'
+    f'border-radius:4px; background:#262626; '
+    f'color:{chg_color}; border:1px solid #404040;">'
     f'{chg_sign}{chg:.2f}%</span>'
     '</div></div></div>',
     unsafe_allow_html=True
@@ -201,10 +201,10 @@ st.markdown(
 
 st.markdown(
     '<div style="background:#171717; '
-    'border:1px solid #262626; '
+    'border:1px solid #27272a; '
     'border-left:3px solid #ffffff; '
     'border-radius:4px; padding:12px 16px; margin-bottom:20px; '
-    'font-size:13px; color:#d4d4d4;">'
+    'font-size:13px; color:#e5e5e5;">'
     'Timeframe: <b style="color:#ffffff;">Daily</b>'
     '</div>',
     unsafe_allow_html=True,
@@ -235,7 +235,7 @@ if ind:
                 f'{sub}</div>'
             ) if sub else ''
             st.markdown(
-                '<div style="background:#0a0a0a; border:1px solid #262626; '
+                '<div style="background:#171717; border:1px solid #27272a; '
                 'border-radius:8px; padding:16px 20px; margin-bottom:12px;">'
                 f'<div style="font-size:11px; color:#a3a3a3; font-weight:500; '
                 f'letter-spacing:0.06em; text-transform:uppercase; '
@@ -254,14 +254,14 @@ if ind:
     st_lbl = ind.get("supertrend_label", "NEUTRAL")
     st_dist = ind.get("supertrend_dist_pct", 0)
     
-    # Monokrom: Bullish = Putih, Bearish = Abu, Neutral = Abu terang
+    # High-Contrast Monokrom: Bullish = Putih, Bearish = Abu, Neutral = Abu terang
     st_color = "#ffffff" if st_lbl == "BULLISH" else ("#737373" if st_lbl == "BEARISH" else "#a3a3a3")
     st_icon = "[BULL]" if st_lbl == "BULLISH" else ("[BEAR]" if st_lbl == "BEARISH" else "[NEUT]")
 
     st_val_html = f"{st_val:,.0f}" if st_val is not None else "—"
 
     st.markdown(
-        '<div style="background:#0a0a0a; border:1px solid #262626; '
+        '<div style="background:#171717; border:1px solid #27272a; '
         f'border-left:3px solid {st_color}; border-radius:8px; '
         'padding:18px 22px; margin-bottom:12px;">'
         '<div style="display:flex; justify-content:space-between; '
@@ -296,8 +296,8 @@ sr = get_support_resistance(kode_pilih, timeframe="daily")
 
 if sr:
     st.markdown(
-        f'<div style="background:#0a0a0a; '
-        f'border:1px solid #262626; '
+        f'<div style="background:#171717; '
+        f'border:1px solid #27272a; '
         f'border-radius:6px; padding:12px 18px; margin-bottom:16px; '
         f'font-size:12px; color:#a3a3a3;">'
         f'ATR: <b style="color:#ffffff; font-weight:500;">{sr["atr"]:,.0f}</b> · '
@@ -311,7 +311,7 @@ if sr:
     for z in sr["resistances"]:
         if z["lower"] <= harga <= z["upper"] and z["score"] >= 7:
             st.markdown(
-                f'<div style="background:#171717; border:1px solid #262626; border-left:3px solid #a3a3a3; border-radius:6px; padding:14px 18px; margin-bottom:16px; font-size:13px; color:#d4d4d4;">'
+                f'<div style="background:#262626; border:1px solid #404040; border-left:4px solid #737373; border-radius:6px; padding:14px 18px; margin-bottom:16px; font-size:13px; color:#e5e5e5;">'
                 f'<b style="color:#ffffff;">PERINGATAN:</b> Harga saat ini ({harga:,.0f}) sedang berada '
                 f'di Zona Resistance ({z["lower"]:,.0f} - {z["upper"]:,.0f}). '
                 f'Risiko tertahan dan berbalik turun.'
@@ -321,7 +321,7 @@ if sr:
     for z in sr["supports"]:
         if z["lower"] <= harga <= z["upper"] and z["score"] >= 7:
             st.markdown(
-                f'<div style="background:#171717; border:1px solid #262626; border-left:3px solid #ffffff; border-radius:6px; padding:14px 18px; margin-bottom:16px; font-size:13px; color:#d4d4d4;">'
+                f'<div style="background:#262626; border:1px solid #404040; border-left:4px solid #ffffff; border-radius:6px; padding:14px 18px; margin-bottom:16px; font-size:13px; color:#e5e5e5;">'
                 f'<b style="color:#ffffff;">PELUANG:</b> Harga saat ini ({harga:,.0f}) sedang berada '
                 f'di Zona Support ({z["lower"]:,.0f} - {z["upper"]:,.0f}). '
                 f'Area yang bagus untuk Entry Buy / Limit Order.'
@@ -361,7 +361,7 @@ if sr:
                     border_extra = ""
 
                 st.markdown(
-                    f'<div style="background:#0a0a0a; border:1px solid #262626; '
+                    f'<div style="background:#171717; border:1px solid #27272a; '
                     f'border-radius:6px; padding:14px 18px; margin-bottom:10px; '
                     f'{border_extra}">'
                     f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
@@ -370,7 +370,7 @@ if sr:
                     f'<span style="font-size:11px; font-weight:600; color:{color};">'
                     f'{badge_text}</span>'
                     f'</div>'
-                    f'<div style="width:100%; height:4px; background:#171717; '
+                    f'<div style="width:100%; height:4px; background:#262626; '
                     f'border-radius:2px; margin-bottom:10px; overflow:hidden;">'
                     f'<div style="width:{score * 10}%; height:100%; '
                     f'background:{color}; border-radius:2px;"></div>'
@@ -417,7 +417,7 @@ if sr:
                     border_extra = ""
 
                 st.markdown(
-                    f'<div style="background:#0a0a0a; border:1px solid #262626; '
+                    f'<div style="background:#171717; border:1px solid #27272a; '
                     f'border-radius:6px; padding:14px 18px; margin-bottom:10px; '
                     f'{border_extra}">'
                     f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">'
@@ -426,7 +426,7 @@ if sr:
                     f'<span style="font-size:11px; font-weight:600; color:{color};">'
                     f'{badge_text}</span>'
                     f'</div>'
-                    f'<div style="width:100%; height:4px; background:#171717; '
+                    f'<div style="width:100%; height:4px; background:#262626; '
                     f'border-radius:2px; margin-bottom:10px; overflow:hidden;">'
                     f'<div style="width:{score * 10}%; height:100%; '
                     f'background:{color}; border-radius:2px;"></div>'
@@ -458,14 +458,14 @@ sig = hitung_sinyal_trading(kode_pilih)
 if sig:
     st.markdown(section_title("Sinyal Trading (Daily)"), unsafe_allow_html=True)
     
-    # Monokrom: BUY = Putih, SELL = Abu, NEUTRAL = Abu terang
+    # High-Contrast Monokrom: BUY = Putih, SELL = Abu, NEUTRAL = Abu terang
     sig_color = "#ffffff" if sig['sinyal'] == 'BUY' else (
                 "#737373" if sig['sinyal'] == 'SELL' else "#a3a3a3")
     sig_icon = "[BUY]" if sig['sinyal'] == 'BUY' else (
                "[SELL]" if sig['sinyal'] == 'SELL' else "[NEUT]")
 
     st.markdown(
-        '<div style="background:#0a0a0a; border:1px solid #262626; '
+        '<div style="background:#171717; border:1px solid #27272a; '
         f'border-left:3px solid {sig_color}; border-radius:8px; '
         'padding:22px 26px;">'
         '<div style="display:flex; align-items:center; gap:16px; '
@@ -494,7 +494,7 @@ if sig:
                 "#737373" if trend == "BEARISH" else "#a3a3a3")
         with col:
             st.markdown(
-                '<div style="background:#0a0a0a; border:1px solid #262626; '
+                '<div style="background:#171717; border:1px solid #27272a; '
                 'border-radius:6px; padding:16px; text-align:center; '
                 'margin-top:12px;">'
                 f'<div style="font-size:11px; color:#a3a3a3; '
@@ -532,7 +532,7 @@ if akum:
     price_chg = akum.get("price_chg_20d", 0)
 
     st.markdown(
-        '<div style="background:#0a0a0a; border:1px solid #262626; '
+        '<div style="background:#171717; border:1px solid #27272a; '
         f'border-left:3px solid {color}; border-radius:8px; '
         'padding:20px 22px;">'
         '<div style="display:flex; justify-content:space-between; '
@@ -550,16 +550,16 @@ if akum:
         '<span style="font-size:13px; color:#737373; font-weight:500;">/10</span>'
         '</div></div>'
         '<div style="display:flex; gap:12px;">'
-        '<div style="flex:1; background:#171717; border-radius:6px; '
-        'padding:12px 16px; border:1px solid #262626;">'
-        '<div style="font-size:11px; color:#737373; font-weight:500; '
+        '<div style="flex:1; background:#262626; border-radius:6px; '
+        'padding:12px 16px; border:1px solid #404040;">'
+        '<div style="font-size:11px; color:#a3a3a3; font-weight:500; '
         'text-transform:uppercase; letter-spacing:0.05em; '
         'margin-bottom:4px;">Chaikin MF</div>'
         f'<div style="font-size:15px; font-weight:600; color:#ffffff;">'
         f'{cmf:+.3f}</div></div>'
-        '<div style="flex:1; background:#171717; border-radius:6px; '
-        'padding:12px 16px; border:1px solid #262626;">'
-        '<div style="font-size:11px; color:#737373; font-weight:500; '
+        '<div style="flex:1; background:#262626; border-radius:6px; '
+        'padding:12px 16px; border:1px solid #404040;">'
+        '<div style="font-size:11px; color:#a3a3a3; font-weight:500; '
         'text-transform:uppercase; letter-spacing:0.05em; '
         'margin-bottom:4px;">Perubahan 20H</div>'
         f'<div style="font-size:15px; font-weight:600; color:#ffffff;">'

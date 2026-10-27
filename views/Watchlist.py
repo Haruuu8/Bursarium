@@ -219,7 +219,7 @@ def dedup_by_kode(items, key="kode", score_key="rr_tp1"):
 
 
 # ============================================================
-# ANALYZE SETUP SIGNALS (TANPA FIBO)
+# ANALYZE SETUP SIGNALS
 # ============================================================
 @st.cache_data(ttl=1800)
 def analyze_setup_signals(kode, harga):
@@ -265,7 +265,7 @@ def analyze_setup_signals(kode, harga):
 def wl_row(kode, nama, harga, chg_pct):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    # Monokrom: Putih untuk positif, Abu untuk negatif
+    # High-Contrast Monokrom
     chg_color = "#ffffff" if chg_pct >= 0 else "#737373"
     chg_sign = "+" if chg_pct >= 0 else ""
 
@@ -273,31 +273,30 @@ def wl_row(kode, nama, harga, chg_pct):
     
     return (
         '<div style="'
-        'background: #0a0a0a; '
-        'border: 1px solid #262626; border-radius: 8px; '
-        'padding: 18px 22px; margin-bottom: 10px; '
+        'background: #171717; '
+        'border: 1px solid #27272a; border-radius: 8px; '
+        'padding: 20px 24px; margin-bottom: 12px; '
         'position: relative; overflow: hidden;">'
         
-        '<div style="position:absolute; left:0; top:0; bottom:0; width:2px; '
-        'background: #404040;"></div>'
+        '<div style="position:absolute; left:0; top:0; bottom:0; width:3px; '
+        'background: #ffffff;"></div>'
         
-        '<div style="display: flex; justify-content: space-between; align-items: center; padding-left: 8px; margin-bottom: 14px;">'
+        '<div style="display: flex; justify-content: space-between; align-items: center; padding-left: 12px; margin-bottom: 16px;">'
         '<div style="flex: 1; min-width: 0;">'
-        f'<div style="font-size:17px; font-weight:600; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}</div>'
-        f'<div style="font-size:12px; color:#a3a3a3; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{nama_disp}</div>'
+        f'<div style="font-size:18px; font-weight:700; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}</div>'
+        f'<div style="font-size:13px; color:#a3a3a3; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{nama_disp}</div>'
         '</div>'
         '<div style="text-align:right; flex-shrink:0; min-width:110px;">'
-        f'<div style="font-size:22px; font-weight:600; color:#ffffff; letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
-        f'<div style="font-size:13px; font-weight:500; color:{chg_color}; margin-top:6px;">{chg_sign}{chg_pct:.2f}%</div>'
+        f'<div style="font-size:24px; font-weight:700; color:#ffffff; letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
+        f'<div style="font-size:14px; font-weight:600; color:{chg_color}; margin-top:6px;">{chg_sign}{chg_pct:.2f}%</div>'
         '</div>'
         '</div>'
 
-        '<div style="background: #171717; border: 1px solid #262626; border-radius: 4px; padding: 10px 14px; display: flex; gap: 16px; flex-wrap: wrap; margin-left: 8px; font-size: 12px;">'
-        f'<span style="color:#737373;">Entry: <b style="color:#ffffff; font-weight:500;">T+1 Open (Gap 2-20%)</b></span>'
-        f'<span style="color:#737373;">SL: <b style="color:#ffffff; font-weight:500;">{sl_price:,.0f} (-3%)</b></span>'
-        f'<span style="color:#737373;">TP: <b style="color:#ffffff; font-weight:500;">Trailing 0.5%</b></span>'
+        '<div style="background: #262626; border: 1px solid #404040; border-radius: 6px; padding: 12px 16px; display: flex; gap: 20px; flex-wrap: wrap; margin-left: 12px; font-size: 13px;">'
+        f'<span style="color:#a3a3a3;">Entry: <b style="color:#ffffff; font-weight:600;">T+1 Open (Gap 2-20%)</b></span>'
+        f'<span style="color:#a3a3a3;">SL: <b style="color:#ffffff; font-weight:600;">{sl_price:,.0f} (-3%)</b></span>'
+        f'<span style="color:#a3a3a3;">TP: <b style="color:#ffffff; font-weight:600;">Trailing 0.5%</b></span>'
         '</div>'
-
         '</div>'
     )
 
@@ -308,27 +307,27 @@ def wl_row(kode, nama, harga, chg_pct):
 def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe, special_flag=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    # Monokrom untuk RSI
+    # High-Contrast Monokrom
     if rsi < 30:
-        rsi_color, rsi_bg, rsi_label = "#ffffff", "#171717", "OVERSOLD"
+        rsi_color, rsi_bg, rsi_label = "#ffffff", "#262626", "OVERSOLD"
     elif rsi < 40:
-        rsi_color, rsi_bg, rsi_label = "#a3a3a3", "#171717", "WEAK"
+        rsi_color, rsi_bg, rsi_label = "#a3a3a3", "#262626", "WEAK"
     else:
-        rsi_color, rsi_bg, rsi_label = "#737373", "#171717", "NORMAL"
+        rsi_color, rsi_bg, rsi_label = "#737373", "#262626", "NORMAL"
 
     rsi_arrow = "+" if rsi_chg > 0 else ("-" if rsi_chg < 0 else "=")
     rsi_arrow_color = "#ffffff" if rsi_chg > 0 else ("#737373" if rsi_chg < 0 else "#a3a3a3")
 
     def growth_badge(v, label):
         if v is None or pd.isna(v):
-            return (f'<span style="font-size:11px; color:#737373; '
-                    f'padding:4px 8px; background:#171717; '
-                    f'border: 1px solid #262626; border-radius:4px; margin-right:6px;">{label} —</span>')
+            return (f'<span style="font-size:12px; color:#737373; '
+                    f'padding:4px 10px; background:#262626; '
+                    f'border: 1px solid #404040; border-radius:6px; margin-right:8px;">{label} —</span>')
         color = "#ffffff" if v >= 0 else "#737373"
         sign = "+" if v >= 0 else ""
-        return (f'<span style="font-size:11px; color:{color}; '
-                f'padding:4px 8px; background:#171717; '
-                f'border: 1px solid #262626; border-radius:4px; margin-right:6px; font-weight:500;">'
+        return (f'<span style="font-size:12px; color:{color}; '
+                f'padding:4px 10px; background:#262626; '
+                f'border: 1px solid #404040; border-radius:6px; margin-right:8px; font-weight:600;">'
                 f'{label} {sign}{v:.1f}%</span>')
 
     der_str = f"{der:.2f}x" if der is not None and not pd.isna(der) else "—"
@@ -337,40 +336,40 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe, special_flag=
     eksp_badge = ""
     if special_flag:
         eksp_badge = (
-            f'<span style="font-size:11px; padding:4px 8px; '
-            f'background:#171717; color:#a3a3a3; border: 1px solid #262626; '
-            f'border-radius:4px; font-weight:500; margin-left:8px;">'
+            f'<span style="font-size:11px; padding:4px 10px; '
+            f'background:#262626; color:#ffffff; border: 1px solid #404040; '
+            f'border-radius:6px; font-weight:600; margin-left:10px;">'
             f'{special_flag}</span>'
         )
 
     return (
-        '<div style="background: #0a0a0a; border: 1px solid #262626; border-radius: 8px; '
-        'padding: 18px 22px; margin-bottom: 10px; position: relative;">'
-        f'<div style="position:absolute; left:0; top:0; bottom:0; width:2px; background: {rsi_color}; border-radius: 8px 0 0 8px;"></div>'
-        '<div style="display:flex; justify-content:space-between; align-items:flex-start; padding-left: 8px; gap: 16px;">'
+        '<div style="background: #171717; border: 1px solid #27272a; border-radius: 8px; '
+        'padding: 20px 24px; margin-bottom: 12px; position: relative;">'
+        f'<div style="position:absolute; left:0; top:0; bottom:0; width:3px; background: {rsi_color}; border-radius: 8px 0 0 8px;"></div>'
+        '<div style="display:flex; justify-content:space-between; align-items:flex-start; padding-left: 12px; gap: 16px;">'
         '<div style="flex: 1; min-width: 0;">'
-        f'<div style="font-size:17px; font-weight:600; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}{eksp_badge}</div>'
-        f'<div style="font-size:12px; color:#a3a3a3; margin-top:4px;">{nama_disp}</div>'
-        '<div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;">'
-        f'<span style="font-size:11px; font-weight:600; padding:4px 10px; '
-        f'border-radius:4px; background:{rsi_bg}; color:{rsi_color}; '
-        f'border:1px solid #262626;">RSI {rsi:.1f}</span>'
-        f'<span style="font-size:11px; color:{rsi_color}; font-weight:500; '
-        f'margin-right:8px;">{rsi_label}</span>'
-        f'<span style="font-size:11px; color:{rsi_arrow_color}; '
-        f'font-weight:500; margin-right:8px;">{rsi_arrow} {abs(rsi_chg):.1f}</span>'
+        f'<div style="font-size:18px; font-weight:700; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}{eksp_badge}</div>'
+        f'<div style="font-size:13px; color:#a3a3a3; margin-top:4px;">{nama_disp}</div>'
+        '<div style="margin-top:16px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;">'
+        f'<span style="font-size:12px; font-weight:700; padding:4px 12px; '
+        f'border-radius:6px; background:{rsi_bg}; color:{rsi_color}; '
+        f'border:1px solid #404040;">RSI {rsi:.1f}</span>'
+        f'<span style="font-size:12px; color:{rsi_color}; font-weight:600; '
+        f'margin-right:10px;">{rsi_label}</span>'
+        f'<span style="font-size:12px; color:{rsi_arrow_color}; '
+        f'font-weight:600; margin-right:10px;">{rsi_arrow} {abs(rsi_chg):.1f}</span>'
         f'{growth_badge(ni_g, "NI")}'
         f'{growth_badge(rev_g, "Rev")}'
         '</div>'
-        '<div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:14px;">'
-        f'<span style="font-size:12px; color:#737373;">DER <b style="color:#a3a3a3; font-weight:500;">{der_str}</b></span>'
-        f'<span style="font-size:12px; color:#737373;">ROE <b style="color:#a3a3a3; font-weight:500;">{roe_str}</b></span>'
+        '<div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:16px;">'
+        f'<span style="font-size:13px; color:#737373;">DER <b style="color:#a3a3a3; font-weight:600;">{der_str}</b></span>'
+        f'<span style="font-size:13px; color:#737373;">ROE <b style="color:#a3a3a3; font-weight:600;">{roe_str}</b></span>'
         '</div>'
         '</div>'
         '<div style="text-align:right; flex-shrink:0;">'
         f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
         f'margin-bottom:4px;">HARGA</div>'
-        f'<div style="font-size:22px; font-weight:600; color:#ffffff; '
+        f'<div style="font-size:24px; font-weight:700; color:#ffffff; '
         f'letter-spacing:-0.03em; line-height:1;">{harga:,.0f}</div>'
         '</div>'
         '</div></div>'
@@ -402,9 +401,9 @@ def setup_row(r, tipe="support"):
     breakout_info = signals.get("breakout_info", "")
 
     if tipe == "support":
-        badge = ('<span style="background:#171717; color:#a3a3a3; '
-                 'padding:4px 10px; border: 1px solid #262626; border-radius:4px; font-size:11px; '
-                 'font-weight:500; text-transform:uppercase;">LIMIT · ZONA SUPPORT</span>')
+        badge = ('<span style="background:#262626; color:#ffffff; '
+                 'padding:4px 12px; border: 1px solid #404040; border-radius:6px; font-size:11px; '
+                 'font-weight:600; text-transform:uppercase;">LIMIT · ZONA SUPPORT</span>')
         if harga < zona_lo:
             posisi_txt, posisi_color = "Di bawah zona", "#737373"
         elif harga > zona_hi:
@@ -412,9 +411,9 @@ def setup_row(r, tipe="support"):
         else:
             posisi_txt, posisi_color = "Di dalam zona", "#ffffff"
     else:
-        badge = ('<span style="background:#171717; color:#a3a3a3; '
-                 'padding:4px 10px; border: 1px solid #262626; border-radius:4px; font-size:11px; '
-                 'font-weight:500; text-transform:uppercase;">STOP · BREAKOUT</span>')
+        badge = ('<span style="background:#262626; color:#ffffff; '
+                 'padding:4px 12px; border: 1px solid #404040; border-radius:6px; font-size:11px; '
+                 'font-weight:600; text-transform:uppercase;">STOP · BREAKOUT</span>')
         if harga < entry:
             posisi_txt, posisi_color = f"{((entry-harga)/harga*100):.1f}% di bawah trigger", "#a3a3a3"
         else:
@@ -436,113 +435,113 @@ def setup_row(r, tipe="support"):
     signal_banners = ""
     if tipe == "breakout" and breakout_zone:
         signal_banners += (
-            f'<div style="background:#171717; border:1px solid #262626; '
-            f'border-left:3px solid #ffffff; border-radius:4px; padding:12px 14px; margin-bottom:16px;">'
-            f'<div style="font-size:11px; color:#ffffff; font-weight:600; letter-spacing:0.5px; text-transform:uppercase;">BREAKOUT TRIGGER</div>'
-            f'<div style="font-size:12px; color:#a3a3a3; margin-top:6px; line-height:1.5;">{breakout_info}</div>'
+            f'<div style="background:#262626; border:1px solid #404040; '
+            f'border-left:4px solid #ffffff; border-radius:6px; padding:14px 18px; margin-bottom:20px;">'
+            f'<div style="font-size:12px; color:#ffffff; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;">BREAKOUT TRIGGER</div>'
+            f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px; line-height:1.5;">{breakout_info}</div>'
             f'</div>'
         )
 
     if tipe == "support" and strong_zone:
         signal_banners += (
-            f'<div style="background:#171717; border:1px solid #262626; '
-            f'border-left:3px solid #737373; border-radius:4px; padding:12px 14px; margin-bottom:16px;">'
-            f'<div style="font-size:11px; color:#a3a3a3; font-weight:600; letter-spacing:0.5px; text-transform:uppercase;">RESISTANCE PSIKOLOGIS</div>'
-            f'<div style="font-size:12px; color:#a3a3a3; margin-top:6px; line-height:1.5;">{strong_info}</div>'
+            f'<div style="background:#262626; border:1px solid #404040; '
+            f'border-left:4px solid #737373; border-radius:6px; padding:14px 18px; margin-bottom:20px;">'
+            f'<div style="font-size:12px; color:#a3a3a3; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;">RESISTANCE PSIKOLOGIS</div>'
+            f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px; line-height:1.5;">{strong_info}</div>'
             f'</div>'
         )
 
     return (
-        f'<div style="background:#0a0a0a; '
-        f'border: 1px solid #262626; '
-        f'border-radius:8px; padding:20px 24px; margin-bottom:16px;">'
+        f'<div style="background:#171717; '
+        f'border: 1px solid #27272a; '
+        f'border-radius:8px; padding:24px 28px; margin-bottom:16px;">'
 
         f'<div style="display:flex; justify-content:space-between; '
-        f'align-items:flex-start; gap:20px; margin-bottom:20px; '
+        f'align-items:flex-start; gap:20px; margin-bottom:24px; '
         f'flex-wrap:wrap;">'
         f'<div style="flex:1; min-width:200px;">'
         f'<div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">'
-        f'<span style="font-size:20px; font-weight:600; color:#ffffff; '
+        f'<span style="font-size:22px; font-weight:700; color:#ffffff; '
         f'letter-spacing:-0.02em;">{kode}</span>'
         f'{badge}'
         f'</div>'
-        f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px;">{nama}</div>'
+        f'<div style="font-size:14px; color:#a3a3a3; margin-top:6px;">{nama}</div>'
         f'</div>'
 
         f'<div style="text-align:right; min-width:140px;">'
         f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
-        f'font-weight:500; text-transform:uppercase;">Harga Saat Ini</div>'
-        f'<div style="font-size:26px; font-weight:600; color:#ffffff; '
+        f'font-weight:600; text-transform:uppercase;">Harga Saat Ini</div>'
+        f'<div style="font-size:28px; font-weight:700; color:#ffffff; '
         f'letter-spacing:-0.03em; margin-top:4px;">'
         f'{harga:,.0f}</div>'
-        f'<div style="font-size:11px; color:{posisi_color}; font-weight:500; '
+        f'<div style="font-size:12px; color:{posisi_color}; font-weight:500; '
         f'margin-top:4px;">{posisi_txt}</div>'
         f'</div>'
         f'</div>'
 
         f'{signal_banners}'
 
-        f'<div style="background:#171717; '
-        f'border:1px solid #262626; border-radius:6px; '
-        f'padding:14px 18px; margin-bottom:20px; '
+        f'<div style="background:#262626; '
+        f'border:1px solid #404040; border-radius:6px; '
+        f'padding:16px 20px; margin-bottom:24px; '
         f'display:flex; justify-content:space-between; align-items:center; '
         f'flex-wrap:wrap; gap:12px;">'
-        f'<div style="display:flex; align-items:center; gap:14px;">'
-        f'<span style="font-size:14px; font-weight:500; color:#a3a3a3;">'
+        f'<div style="display:flex; align-items:center; gap:16px;">'
+        f'<span style="font-size:15px; font-weight:600; color:#a3a3a3;">'
         f'{harga:,.0f}</span>'
-        f'<span style="font-size:14px; color:#737373;">→</span>'
-        f'<span style="font-size:16px; font-weight:600; color:#ffffff;">'
+        f'<span style="font-size:16px; color:#737373;">→</span>'
+        f'<span style="font-size:18px; font-weight:700; color:#ffffff;">'
         f'{entry:,.0f}</span>'
-        f'<span style="font-size:11px; color:{jarak_color}; font-weight:500;">'
+        f'<span style="font-size:12px; color:{jarak_color}; font-weight:500;">'
         f'({jarak_icon} {abs(jarak):.2f}% ke entry)</span>'
         f'</div>'
         f'<span style="font-size:11px; color:#737373; letter-spacing:0.5px; '
-        f'font-weight:500;">HARGA → ENTRY</span>'
+        f'font-weight:600;">HARGA → ENTRY</span>'
         f'</div>'
 
         f'<div style="display:grid; grid-template-columns:repeat(4, 1fr); '
-        f'gap:12px; margin-bottom:16px;">'
+        f'gap:16px; margin-bottom:20px;">'
         
-        f'<div style="background:#171717; border:1px solid #262626; '
-        f'border-radius:6px; padding:14px;">'
-        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
-        f'font-weight:500;">ENTRY</div>'
-        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
-        f'margin-top:6px;">{entry:,.0f}</div></div>'
+        f'<div style="background:#262626; border:1px solid #404040; '
+        f'border-radius:6px; padding:16px;">'
+        f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px; '
+        f'font-weight:600;">ENTRY</div>'
+        f'<div style="font-size:20px; font-weight:700; color:#ffffff; '
+        f'margin-top:8px;">{entry:,.0f}</div></div>'
 
-        f'<div style="background:#171717; border:1px solid #262626; '
-        f'border-radius:6px; padding:14px;">'
-        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
-        f'font-weight:500;">STOP LOSS</div>'
-        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
-        f'margin-top:6px;">{sl:,.0f}</div>'
-        f'<div style="font-size:11px; color:#737373; margin-top:4px;">'
+        f'<div style="background:#262626; border:1px solid #404040; '
+        f'border-radius:6px; padding:16px;">'
+        f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px; '
+        f'font-weight:600;">STOP LOSS</div>'
+        f'<div style="font-size:20px; font-weight:700; color:#ffffff; '
+        f'margin-top:8px;">{sl:,.0f}</div>'
+        f'<div style="font-size:12px; color:#737373; margin-top:4px;">'
         f'-{risk_pct:.2f}%</div></div>'
 
-        f'<div style="background:#171717; border:1px solid #262626; '
-        f'border-radius:6px; padding:14px;">'
-        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
-        f'font-weight:500;">TP1</div>'
-        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
-        f'margin-top:6px;">{tp1:,.0f}</div>'
-        f'<div style="font-size:11px; color:#737373; margin-top:4px;">'
+        f'<div style="background:#262626; border:1px solid #404040; '
+        f'border-radius:6px; padding:16px;">'
+        f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px; '
+        f'font-weight:600;">TP1</div>'
+        f'<div style="font-size:20px; font-weight:700; color:#ffffff; '
+        f'margin-top:8px;">{tp1:,.0f}</div>'
+        f'<div style="font-size:12px; color:#737373; margin-top:4px;">'
         f'RR {rr_tp1:.2f}</div></div>'
 
-        f'<div style="background:#171717; border:1px solid #262626; '
-        f'border-radius:6px; padding:14px;">'
-        f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
-        f'font-weight:500;">TP2</div>'
-        f'<div style="font-size:18px; font-weight:600; color:#ffffff; '
-        f'margin-top:6px;">{tp2_disp}</div>'
-        f'<div style="font-size:11px; color:#737373; margin-top:4px;">'
+        f'<div style="background:#262626; border:1px solid #404040; '
+        f'border-radius:6px; padding:16px;">'
+        f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px; '
+        f'font-weight:600;">TP2</div>'
+        f'<div style="font-size:20px; font-weight:700; color:#ffffff; '
+        f'margin-top:8px;">{tp2_disp}</div>'
+        f'<div style="font-size:12px; color:#737373; margin-top:4px;">'
         f'{tp2_rr}</div></div>'
         f'</div>'
 
-        f'<div style="border-top:1px solid #262626; padding-top:14px; '
-        f'display:flex; gap:24px; flex-wrap:wrap; font-size:12px; color:#a3a3a3;">'
-        f'<span>RR <b style="color:{rr_color}; font-size:13px; font-weight:600;">{rr_tp1:.2f}</b></span>'
-        f'<span>Risk <b style="color:#a3a3a3; font-weight:500;">{risk_pct:.2f}%</b></span>'
-        f'<span>Zona <b style="color:#a3a3a3; font-weight:500;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
+        f'<div style="border-top:1px solid #404040; padding-top:16px; '
+        f'display:flex; gap:24px; flex-wrap:wrap; font-size:13px; color:#a3a3a3;">'
+        f'<span>RR <b style="color:{rr_color}; font-size:14px; font-weight:700;">{rr_tp1:.2f}</b></span>'
+        f'<span>Risk <b style="color:#ffffff; font-weight:600;">{risk_pct:.2f}%</b></span>'
+        f'<span>Zona <b style="color:#ffffff; font-weight:600;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
         f'</div>'
         f'</div>'
     )
@@ -608,8 +607,8 @@ with tab1:
                 df = df.sort_values("rating", ascending=False, na_position="last")
 
             st.markdown(
-                f'<div style="font-size:13px; color:#a3a3a3; '
-                f'margin:12px 0 20px; font-weight:500;">'
+                f'<div style="font-size:14px; color:#a3a3a3; '
+                f'margin:12px 0 24px; font-weight:500;">'
                 f'Kandidat: <code>{selected}</code> · {len(df)} saham · '
                 f'{len(date_options)} hari tersedia</div>',
                 unsafe_allow_html=True,
@@ -633,11 +632,11 @@ with tab1:
                     )
 
             st.markdown(
-                '<div style="background:#171717; '
-                'border:1px solid #262626; '
-                'border-left:3px solid #ffffff; '
-                'border-radius:6px; padding:16px 20px; margin-top:24px; '
-                'font-size:13px; color:#d4d4d4; line-height:1.6;">'
+                '<div style="background:#262626; '
+                'border:1px solid #404040; '
+                'border-left:4px solid #ffffff; '
+                'border-radius:6px; padding:20px 24px; margin-top:32px; '
+                'font-size:14px; color:#e5e5e5; line-height:1.6;">'
                 '<b style="color:#ffffff;">Besok pagi saat open (T+1):</b> '
                 'cek gap untuk setiap kandidat di atas. '
                 '<b style="color:#ffffff;">Execute</b> jika gap 2%–20%. '
@@ -653,12 +652,12 @@ with tab1:
 # ============================================================
 with tab2:
     st.markdown(
-        '<div style="background: #0a0a0a; '
-        'border: 1px solid #262626; border-radius: 8px; '
-        'padding: 20px 24px; margin-bottom: 24px;">'
-        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
-        'margin-bottom: 10px;">BOTTOM FISHING — SAHAM SEHAT</div>'
-        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
+        '<div style="background: #171717; '
+        'border: 1px solid #27272a; border-radius: 8px; '
+        'padding: 24px 28px; margin-bottom: 24px;">'
+        '<div style="font-size: 16px; color: #ffffff; font-weight: 700; '
+        'margin-bottom: 12px;">BOTTOM FISHING — SAHAM SEHAT</div>'
+        '<div style="font-size: 14px; color: #a3a3a3; line-height: 1.6;">'
         '- Q1 dan Q2 ada, se-tahun, Q2 standalone ≥ 0<br>'
         '- Laba tidak turun drastis (&gt; 50%) — kecuali premium ekspansi<br>'
         '- Revenue YoY tidak turun &gt; 30%<br>'
@@ -675,7 +674,7 @@ with tab2:
         c1, c2, c3 = st.columns([3, 2, 1])
         with c1:
             st.markdown(
-                f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+                f'<div style="font-size:14px; color:#a3a3a3; padding:6px 0;">'
                 f'<b style="color:#ffffff;">{len(items_bf)}</b> saham · '
                 f'generated {gen_bf}</div>', unsafe_allow_html=True
             )
@@ -708,12 +707,12 @@ with tab2:
 # ============================================================
 with tab3:
     st.markdown(
-        '<div style="background: #0a0a0a; '
-        'border: 1px solid #262626; '
-        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
-        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
-        'letter-spacing:0.5px; margin-bottom:10px;">PRE-GOLDEN-CROSS</div>'
-        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
+        '<div style="background: #171717; '
+        'border: 1px solid #27272a; '
+        'border-radius: 8px; padding: 24px 28px; margin-bottom: 24px;">'
+        '<div style="font-size: 16px; color: #ffffff; font-weight: 700; '
+        'letter-spacing:0.5px; margin-bottom:12px;">PRE-GOLDEN-CROSS</div>'
+        '<div style="font-size: 14px; color: #a3a3a3; line-height: 1.6;">'
         'Setup skor ≥ <b>85</b> · Winrate backtest 91.2% · Gap EMA20-EMA50 ≤ 4%'
         '</div></div>', unsafe_allow_html=True
     )
@@ -723,7 +722,7 @@ with tab3:
     c1, c2 = st.columns([3, 1])
     with c1:
         st.markdown(
-            f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+            f'<div style="font-size:14px; color:#a3a3a3; padding:6px 0;">'
             f'<b style="color:#ffffff;">{len(items_pc)}</b> setup skor ≥85 · '
             f'generated {gen_pc}</div>', unsafe_allow_html=True
         )
@@ -735,12 +734,12 @@ with tab3:
         st.warning("Data scan belum tersedia. Silakan hubungi admin untuk update data terbaru.")
     elif not items_pc:
         st.markdown(
-            '<div style="background:#0a0a0a; '
+            '<div style="background:#171717; '
             'border:1px dashed #404040; border-radius:8px; '
             'padding:40px 32px; text-align:center;">'
-            '<div style="font-size:15px; font-weight:600; color:#ffffff; '
+            '<div style="font-size:16px; font-weight:600; color:#ffffff; '
             'margin-bottom:8px;">Tidak ada setup skor ≥ 85 hari ini</div>'
-            '<div style="font-size:13px; color:#a3a3a3; max-width:480px; '
+            '<div style="font-size:14px; color:#a3a3a3; max-width:480px; '
             'margin:0 auto;">Setup presisi tinggi jarang muncul. '
             'Cek kandidat emerging di bawah.</div>'
             '</div>', unsafe_allow_html=True
@@ -751,36 +750,36 @@ with tab3:
             skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]
             harga = r["harga"]; ema20 = r["ema20"]; ema50 = r["ema50"]
             st.markdown(
-                f'<div style="background:#0a0a0a; '
-                f'border:1px solid #262626; border-left:3px solid #ffffff; '
-                f'border-radius:8px; padding:20px 24px; margin-bottom:12px;">'
+                f'<div style="background:#171717; '
+                f'border:1px solid #27272a; border-left:4px solid #ffffff; '
+                f'border-radius:8px; padding:24px 28px; margin-bottom:16px;">'
                 f'<div style="display:flex; justify-content:space-between; align-items:center; gap:16px;">'
                 f'<div>'
                 f'<div style="display:flex; align-items:baseline; gap:12px;">'
-                f'<span style="font-size:16px; font-weight:600; color:#737373;">#{i+1}</span>'
-                f'<span style="font-size:18px; font-weight:600; color:#ffffff;">{kode}</span>'
-                f'<span style="background:#171717; color:#ffffff; border:1px solid #262626; '
-                f'padding:3px 10px; border-radius:4px; font-size:11px; font-weight:600;">SKOR {skor:.0f}</span>'
+                f'<span style="font-size:16px; font-weight:600; color:#a3a3a3;">#{i+1}</span>'
+                f'<span style="font-size:20px; font-weight:700; color:#ffffff;">{kode}</span>'
+                f'<span style="background:#262626; color:#ffffff; border:1px solid #404040; '
+                f'padding:4px 12px; border-radius:6px; font-size:12px; font-weight:600;">SKOR {skor:.0f}</span>'
                 f'</div>'
-                f'<div style="font-size:13px; color:#a3a3a3; margin-top:6px;">{nama}</div>'
-                f'<div style="margin-top:12px; display:flex; gap:16px; flex-wrap:wrap; font-size:12px; color:#737373;">'
-                f'<span>Harga <b style="color:#ffffff; font-weight:500;">{harga:,.0f}</b></span>'
-                f'<span>EMA20 <b style="color:#ffffff; font-weight:500;">{ema20:,.0f}</b></span>'
-                f'<span>EMA50 <b style="color:#ffffff; font-weight:500;">{ema50:,.0f}</b></span>'
-                f'<span>Gap <b style="color:#ffffff; font-weight:500;">{gap:.2f}%</b></span>'
-                f'<span>Konv <b style="color:#ffffff; font-weight:500;">+{konv:.0f}%</b></span>'
+                f'<div style="font-size:14px; color:#a3a3a3; margin-top:6px;">{nama}</div>'
+                f'<div style="margin-top:14px; display:flex; gap:16px; flex-wrap:wrap; font-size:13px; color:#737373;">'
+                f'<span>Harga <b style="color:#ffffff; font-weight:600;">{harga:,.0f}</b></span>'
+                f'<span>EMA20 <b style="color:#ffffff; font-weight:600;">{ema20:,.0f}</b></span>'
+                f'<span>EMA50 <b style="color:#ffffff; font-weight:600;">{ema50:,.0f}</b></span>'
+                f'<span>Gap <b style="color:#ffffff; font-weight:600;">{gap:.2f}%</b></span>'
+                f'<span>Konv <b style="color:#ffffff; font-weight:600;">+{konv:.0f}%</b></span>'
                 f'</div></div></div></div>', unsafe_allow_html=True
             )
 
-    st.markdown('<div style="height:1px; background:#262626; margin:32px 0;"></div>', unsafe_allow_html=True)
+    st.markdown('<div style="height:1px; background:#27272a; margin:32px 0;"></div>', unsafe_allow_html=True)
 
     st.markdown(
-        '<div style="background: #0a0a0a; '
-        'border: 1px solid #262626; '
-        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
-        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
-        'margin-bottom: 10px;">EMERGING — MENUJU SKOR 85+</div>'
-        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
+        '<div style="background: #171717; '
+        'border: 1px solid #27272a; '
+        'border-radius: 8px; padding: 24px 28px; margin-bottom: 24px;">'
+        '<div style="font-size: 16px; color: #ffffff; font-weight: 700; '
+        'margin-bottom: 12px;">EMERGING — MENUJU SKOR 85+</div>'
+        '<div style="font-size: 14px; color: #a3a3a3; line-height: 1.6;">'
         'Saham skor 65–84 yang sedang konvergen dan EMA20 naik.'
         '</div></div>', unsafe_allow_html=True
     )
@@ -793,7 +792,7 @@ with tab3:
         st.info("Belum ada kandidat emerging hari ini.")
     else:
         st.markdown(
-            f'<div style="font-size:13px; color:#a3a3a3; margin:4px 0 16px;">'
+            f'<div style="font-size:14px; color:#a3a3a3; margin:4px 0 16px;">'
             f'<b style="color:#ffffff;">{len(items_emg)}</b> kandidat · generated {gen_emg}</div>',
             unsafe_allow_html=True
         )
@@ -802,26 +801,26 @@ with tab3:
             skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]; harga = r["harga"]
             
             st.markdown(
-                f'<div style="background:#0a0a0a; '
-                f'border:1px solid #262626; border-left:3px solid #404040; '
-                f'border-radius:8px; padding:16px 20px; margin-bottom:12px;">'
+                f'<div style="background:#171717; '
+                f'border:1px solid #27272a; border-left:4px solid #737373; '
+                f'border-radius:8px; padding:20px 24px; margin-bottom:12px;">'
                 f'<div style="display:flex; justify-content:space-between; align-items:center; gap:16px;">'
                 f'<div>'
                 f'<div style="display:flex; align-items:baseline; gap:10px;">'
                 f'<span style="font-size:14px; font-weight:600; color:#737373;">#{i+1}</span>'
-                f'<span style="font-size:16px; font-weight:600; color:#ffffff;">{kode}</span>'
-                f'<span style="background:#171717; color:#a3a3a3; border: 1px solid #262626; '
-                f'padding:3px 10px; border-radius:4px; font-size:11px; font-weight:600;">SKOR {skor:.0f}</span>'
+                f'<span style="font-size:18px; font-weight:700; color:#ffffff;">{kode}</span>'
+                f'<span style="background:#262626; color:#a3a3a3; border: 1px solid #404040; '
+                f'padding:4px 10px; border-radius:6px; font-size:11px; font-weight:600;">SKOR {skor:.0f}</span>'
                 f'</div>'
-                f'<div style="font-size:12px; color:#a3a3a3; margin-top:4px;">{nama}</div>'
-                f'<div style="margin-top:10px; display:flex; gap:14px; flex-wrap:wrap; font-size:12px; color:#737373;">'
-                f'<span>Harga <b style="color:#ffffff; font-weight:500;">{harga:,.0f}</b></span>'
-                f'<span>Gap <b style="color:#ffffff; font-weight:500;">{gap:.2f}%</b></span>'
-                f'<span>Konv <b style="color:#ffffff; font-weight:500;">+{konv:.0f}%</b></span>'
+                f'<div style="font-size:13px; color:#a3a3a3; margin-top:4px;">{nama}</div>'
+                f'<div style="margin-top:12px; display:flex; gap:16px; flex-wrap:wrap; font-size:13px; color:#737373;">'
+                f'<span>Harga <b style="color:#ffffff; font-weight:600;">{harga:,.0f}</b></span>'
+                f'<span>Gap <b style="color:#ffffff; font-weight:600;">{gap:.2f}%</b></span>'
+                f'<span>Konv <b style="color:#ffffff; font-weight:600;">+{konv:.0f}%</b></span>'
                 f'</div></div>'
                 f'<div style="text-align:right;">'
-                f'<div style="font-size:22px; font-weight:600; color:#ffffff;">{skor:.0f}</div>'
-                f'<div style="font-size:11px; color:#737373;">{85 - skor:.0f} ke 85</div>'
+                f'<div style="font-size:24px; font-weight:700; color:#ffffff;">{skor:.0f}</div>'
+                f'<div style="font-size:12px; color:#737373;">{85 - skor:.0f} ke 85</div>'
                 f'</div></div></div>', unsafe_allow_html=True
             )
 
@@ -831,12 +830,12 @@ with tab3:
 # ============================================================
 with tab4:
     st.markdown(
-        '<div style="background: #0a0a0a; '
-        'border: 1px solid #262626; '
-        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
-        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
-        'margin-bottom: 10px;">BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
-        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
+        '<div style="background: #171717; '
+        'border: 1px solid #27272a; '
+        'border-radius: 8px; padding: 24px 28px; margin-bottom: 24px;">'
+        '<div style="font-size: 16px; color: #ffffff; font-weight: 700; '
+        'margin-bottom: 12px;">BUY ON SUPPORT — SETUP LIMIT ORDER</div>'
+        '<div style="font-size: 14px; color: #a3a3a3; line-height: 1.6;">'
         'Hanya saham yang <b>harganya dekat zona support</b> '
         '(0-5% di atas zona atau sudah di dalam zona) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
@@ -852,7 +851,7 @@ with tab4:
     c1, c2 = st.columns([4, 1])
     with c1:
         st.markdown(
-            f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+            f'<div style="font-size:14px; color:#a3a3a3; padding:6px 0;">'
             f'<b style="color:#ffffff;">{len(items_support)}</b> saham dekat support · '
             f'scan {generated_support}</div>',
             unsafe_allow_html=True
@@ -875,12 +874,12 @@ with tab4:
 # ============================================================
 with tab5:
     st.markdown(
-        '<div style="background: #0a0a0a; '
-        'border: 1px solid #262626; '
-        'border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">'
-        '<div style="font-size: 14px; color: #ffffff; font-weight: 600; '
-        'margin-bottom: 10px;">BREAKOUT BUY — SETUP STOP ORDER</div>'
-        '<div style="font-size: 13px; color: #a3a3a3; line-height: 1.6;">'
+        '<div style="background: #171717; '
+        'border: 1px solid #27272a; '
+        'border-radius: 8px; padding: 24px 28px; margin-bottom: 24px;">'
+        '<div style="font-size: 16px; color: #ffffff; font-weight: 700; '
+        'margin-bottom: 12px;">BREAKOUT BUY — SETUP STOP ORDER</div>'
+        '<div style="font-size: 14px; color: #a3a3a3; line-height: 1.6;">'
         'Hanya saham yang <b>harganya 0-3% di bawah resistance</b> '
         '(sedang mendekati trigger breakout) · RR min 1.5'
         '</div></div>', unsafe_allow_html=True
@@ -896,7 +895,7 @@ with tab5:
     c1, c2 = st.columns([4, 1])
     with c1:
         st.markdown(
-            f'<div style="font-size:13px; color:#a3a3a3; padding:6px 0;">'
+            f'<div style="font-size:14px; color:#a3a3a3; padding:6px 0;">'
             f'<b style="color:#ffffff;">{len(items_breakout)}</b> saham dekat resistance · '
             f'scan {generated_breakout}</div>',
             unsafe_allow_html=True
@@ -979,24 +978,24 @@ with tab6:
                 wr = avg = tot = 0
 
             st.markdown(
-                '<div style="background: #0a0a0a; '
-                'border: 1px solid #262626; border-radius: 8px; '
-                'padding: 16px 20px; margin: 16px 0 24px; '
+                '<div style="background: #171717; '
+                'border: 1px solid #27272a; border-radius: 8px; '
+                'padding: 20px 24px; margin: 16px 0 24px; '
                 'display: flex; gap: 32px; flex-wrap: wrap;">'
-                f'<div><span style="font-size:12px; color:#737373;">Total</span>'
-                f'<div style="font-size:18px; font-weight:600; color:#ffffff;">{n_total}</div></div>'
-                f'<div><span style="font-size:12px; color:#737373;">Tereksekusi</span>'
-                f'<div style="font-size:18px; font-weight:600; color:#ffffff;">{n_exec}</div></div>'
-                f'<div><span style="font-size:12px; color:#737373;">TRAIL</span>'
-                f'<div style="font-size:18px; font-weight:600; color:#ffffff;">{n_trail}</div></div>'
-                f'<div><span style="font-size:12px; color:#737373;">SL</span>'
-                f'<div style="font-size:18px; font-weight:600; color:#737373;">{n_sl}</div></div>'
-                f'<div><span style="font-size:12px; color:#737373;">HOLD</span>'
-                f'<div style="font-size:18px; font-weight:600; color:#a3a3a3;">{n_hold}</div></div>'
-                f'<div><span style="font-size:12px; color:#737373;">Skip</span>'
-                f'<div style="font-size:18px; font-weight:600; color:#a3a3a3;">{n_skip}</div></div>'
-                f'<div><span style="font-size:12px; color:#737373;">Suspended</span>'
-                f'<div style="font-size:18px; font-weight:600; color:#737373;">{n_susp}</div></div>'
+                f'<div><span style="font-size:12px; color:#a3a3a3;">Total</span>'
+                f'<div style="font-size:20px; font-weight:700; color:#ffffff;">{n_total}</div></div>'
+                f'<div><span style="font-size:12px; color:#a3a3a3;">Tereksekusi</span>'
+                f'<div style="font-size:20px; font-weight:700; color:#ffffff;">{n_exec}</div></div>'
+                f'<div><span style="font-size:12px; color:#a3a3a3;">TRAIL</span>'
+                f'<div style="font-size:20px; font-weight:700; color:#ffffff;">{n_trail}</div></div>'
+                f'<div><span style="font-size:12px; color:#a3a3a3;">SL</span>'
+                f'<div style="font-size:20px; font-weight:700; color:#737373;">{n_sl}</div></div>'
+                f'<div><span style="font-size:12px; color:#a3a3a3;">HOLD</span>'
+                f'<div style="font-size:20px; font-weight:700; color:#a3a3a3;">{n_hold}</div></div>'
+                f'<div><span style="font-size:12px; color:#a3a3a3;">Skip</span>'
+                f'<div style="font-size:20px; font-weight:700; color:#a3a3a3;">{n_skip}</div></div>'
+                f'<div><span style="font-size:12px; color:#a3a3a3;">Suspended</span>'
+                f'<div style="font-size:20px; font-weight:700; color:#737373;">{n_susp}</div></div>'
                 '</div>', unsafe_allow_html=True
             )
 
@@ -1009,10 +1008,10 @@ with tab6:
                 ]:
                     with col:
                         st.markdown(
-                            '<div style="background:#0a0a0a; '
-                            'border-radius:8px; padding:24px; border:1px solid #262626;">'
-                            f'<div style="font-size:12px; color:#737373; letter-spacing:0.5px; font-weight:500;">{label}</div>'
-                            f'<div style="font-size:28px; font-weight:600; color:#ffffff; margin-top:8px;">{val}</div>'
+                            '<div style="background:#171717; '
+                            'border-radius:8px; padding:24px; border:1px solid #27272a;">'
+                            f'<div style="font-size:12px; color:#a3a3a3; letter-spacing:0.5px; font-weight:600;">{label}</div>'
+                            f'<div style="font-size:32px; font-weight:700; color:#ffffff; margin-top:8px;">{val}</div>'
                             '</div>', unsafe_allow_html=True
                         )
 
@@ -1054,20 +1053,20 @@ with tab6:
                         ihsg_col = "#ffffff" if (not pd.isna(ihsg) and ihsg >= 0) else "#737373"
                         
                         st.markdown(
-                            '<div style="background:#0a0a0a; '
-                            'border-radius:6px; margin-bottom:8px; padding:14px 18px; border:1px solid #262626;">'
+                            '<div style="background:#171717; '
+                            'border-radius:8px; margin-bottom:12px; padding:16px 20px; border:1px solid #27272a;">'
                             f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">'
-                            f'<span style="font-size:13px; color:#ffffff; font-weight:500;">{tgl_str}</span>'
-                            f'<span style="font-size:12px; color:#737373;">{r["N_exec"]} trade</span>'
+                            f'<span style="font-size:14px; color:#ffffff; font-weight:600;">{tgl_str}</span>'
+                            f'<span style="font-size:12px; color:#a3a3a3;">{r["N_exec"]} trade</span>'
                             f'</div>'
                             f'<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">'
                             f'<div>'
-                            f'<div style="font-size:11px; color:#737373; margin-bottom:4px; text-transform:uppercase;">Portofolio</div>'
-                            f'<div style="font-size:14px; font-weight:600; color:{port_col};">{port_str}</div>'
+                            f'<div style="font-size:11px; color:#a3a3a3; margin-bottom:4px; text-transform:uppercase;">Portofolio</div>'
+                            f'<div style="font-size:15px; font-weight:700; color:{port_col};">{port_str}</div>'
                             f'</div>'
                             f'<div>'
-                            f'<div style="font-size:11px; color:#737373; margin-bottom:4px; text-transform:uppercase;">IHSG</div>'
-                            f'<div style="font-size:14px; font-weight:600; color:{ihsg_col};">{ihsg_str}</div>'
+                            f'<div style="font-size:11px; color:#a3a3a3; margin-bottom:4px; text-transform:uppercase;">IHSG</div>'
+                            f'<div style="font-size:15px; font-weight:700; color:{ihsg_col};">{ihsg_str}</div>'
                             f'</div>'
                             f'</div></div>', unsafe_allow_html=True
                         )

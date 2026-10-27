@@ -157,11 +157,11 @@ harga = last['Close']
 chg = (harga / prev['Close'] - 1) * 100
 
 st.markdown(
-    f'<div style="background:#0a0a0a; border:1px solid #262626; border-radius:8px; padding:20px; margin-bottom:20px;">'
-    f'<div style="font-size:12px; color:#a3a3a3; font-weight:500; text-transform:uppercase; letter-spacing:0.5px;">{kode} - Money Flow Analysis</div>'
+    f'<div style="background:#171717; border:1px solid #27272a; border-radius:8px; padding:24px; margin-bottom:24px;">'
+    f'<div style="font-size:12px; color:#a3a3a3; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">{kode} - Money Flow Analysis</div>'
     f'<div style="display:flex; align-items:baseline; gap:16px; margin-top:8px;">'
-    f'<div style="font-size:36px; font-weight:600; color:#ffffff;">{harga:,.0f}</div>'
-    f'<div style="font-size:16px; font-weight:500; color:{"#ffffff" if chg>=0 else "#737373"};">'
+    f'<div style="font-size:36px; font-weight:800; color:#ffffff;">{harga:,.0f}</div>'
+    f'<div style="font-size:16px; font-weight:600; color:{"#ffffff" if chg>=0 else "#737373"};">'
     f'{"+" if chg>=0 else ""}{chg:.2f}%</div>'
     f'</div></div>',
     unsafe_allow_html=True
@@ -172,10 +172,10 @@ c1, c2, c3, c4 = st.columns(4)
 
 def render_metric(col, title, value, desc):
     col.markdown(
-        f'<div style="background: #0a0a0a; border: 1px solid #262626; border-radius: 6px; padding: 16px;">'
+        f'<div style="background: #171717; border: 1px solid #27272a; border-radius: 8px; padding: 20px;">'
         f'<div style="font-size: 11px; color: #a3a3a3; text-transform: uppercase; letter-spacing: 0.5px;">{title}</div>'
-        f'<div style="font-size: 22px; font-weight: 600; color: #ffffff; margin: 8px 0;">{value}</div>'
-        f'<div style="font-size: 12px; color: #737373;">{desc}</div>'
+        f'<div style="font-size: 24px; font-weight: 700; color: #ffffff; margin: 10px 0;">{value}</div>'
+        f'<div style="font-size: 13px; color: #737373;">{desc}</div>'
         f'</div>',
         unsafe_allow_html=True
     )
@@ -213,7 +213,7 @@ fig1.add_trace(go.Scatter(
 fig1.update_layout(
     template="plotly_dark", height=400,
     paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
-    xaxis=dict(fixedrange=True, gridcolor='#262626'),
+    xaxis=dict(fixedrange=True, gridcolor='#27272a'),
     yaxis=dict(title="Volume", showgrid=False, fixedrange=True),
     yaxis2=dict(title="Harga", overlaying='y', side='right', showgrid=False, fixedrange=True),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(color="#ffffff")),
@@ -231,8 +231,8 @@ fig2.add_hline(y=0, line_dash="dash", line_color="#404040")
 fig2.update_layout(
     template="plotly_dark", height=300,
     paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
-    xaxis=dict(fixedrange=True, gridcolor='#262626'), 
-    yaxis=dict(title="CMF", fixedrange=True, gridcolor='#262626'),
+    xaxis=dict(fixedrange=True, gridcolor='#27272a'), 
+    yaxis=dict(title="CMF", fixedrange=True, gridcolor='#27272a'),
     dragmode=False, margin=dict(l=40, r=40, t=20, b=40)
 )
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
@@ -252,10 +252,10 @@ df_today = df_ind[df_ind["Date"] == last_date].copy()
 
 # --- Info box ---
 st.markdown(
-    '<div style="background:#0a0a0a; '
-    'border:1px solid #262626; border-left:3px solid #ffffff; '
-    'border-radius:6px; padding:16px 20px; margin:24px 0 20px; '
-    'font-size:13px; color:#d4d4d4; line-height:1.7;">'
+    '<div style="background:#171717; '
+    'border:1px solid #27272a; border-left:4px solid #ffffff; '
+    'border-radius:8px; padding:20px 24px; margin:32px 0 24px; '
+    'font-size:14px; color:#e5e5e5; line-height:1.7;">'
     '<b style="color:#ffffff;">CIRI AKUMULASI ASLI:</b><br>'
     '- Volume spike >2x MA20 <b>DAN</b> close di atas open (candle hijau)<br>'
     '- Close di <b>60%+ range</b> hari itu (CLV) — buyer dominan sampai tutup<br>'
@@ -291,10 +291,10 @@ else:
     df_accum = df_accum.sort_values("Vol_Ratio", ascending=False)
 
     st.markdown(
-        f'<div style="background:#0a0a0a; '
-        f'border:1px solid #262626; border-radius:6px; '
-        f'padding:12px 18px; margin-bottom:16px; '
-        f'display:flex; gap:20px; flex-wrap:wrap; font-size:13px;">'
+        f'<div style="background:#171717; '
+        f'border:1px solid #27272a; border-radius:8px; '
+        f'padding:14px 20px; margin-bottom:20px; '
+        f'display:flex; gap:24px; flex-wrap:wrap; font-size:14px;">'
         f'<span style="color:#a3a3a3;">Saham akumulasi: '
         f'<b style="color:#ffffff;">{len(df_accum)}</b></span>'
         f'<span style="color:#a3a3a3;">Tanggal: '
@@ -376,10 +376,10 @@ df_dist = df_today[
 
 if df_dist.empty:
     st.markdown(
-        '<div style="background:#0a0a0a; '
-        'border:1px solid #262626; border-left:3px solid #737373; '
-        'border-radius:6px; padding:14px 20px; '
-        'font-size:13px; color:#d4d4d4;">'
+        '<div style="background:#171717; '
+        'border:1px solid #27272a; border-left:4px solid #737373; '
+        'border-radius:8px; padding:16px 20px; '
+        'font-size:14px; color:#e5e5e5;">'
         '[OK] Tidak ada saham dengan pola distribusi tersamar hari ini. '
         'Market sehat.'
         '</div>',
@@ -389,11 +389,11 @@ else:
     df_dist = df_dist.sort_values("Vol_Ratio", ascending=False)
 
     st.markdown(
-        f'<div style="background:#0a0a0a; '
-        f'border:1px solid #262626; border-left:3px solid #ffffff; '
-        f'border-radius:6px; '
-        f'padding:12px 18px; margin-bottom:16px; '
-        f'display:flex; gap:20px; flex-wrap:wrap; font-size:13px;">'
+        f'<div style="background:#171717; '
+        f'border:1px solid #27272a; border-left:4px solid #ffffff; '
+        f'border-radius:8px; '
+        f'padding:14px 20px; margin-bottom:20px; '
+        f'display:flex; gap:24px; flex-wrap:wrap; font-size:14px;">'
         f'<span style="color:#a3a3a3;">Saham distribusi: '
         f'<b style="color:#ffffff;">{len(df_dist)}</b></span>'
         f'<span style="color:#a3a3a3;">Tanggal: '
