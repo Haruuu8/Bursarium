@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import (
-    load_theme, page_header, section_title, empty_state,
+    load_theme, page_header, section_title, empty_state, render_table,
 )
 from quant.parquet_loader import load_parquet_safe
 from quant.supres import get_support_resistance
@@ -265,7 +265,6 @@ def analyze_setup_signals(kode, harga):
 def wl_row(kode, nama, harga, chg_pct):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    # High-Contrast Monokrom
     chg_color = "#ffffff" if chg_pct >= 0 else "#737373"
     chg_sign = "+" if chg_pct >= 0 else ""
 
@@ -307,7 +306,6 @@ def wl_row(kode, nama, harga, chg_pct):
 def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe, special_flag=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
-    # High-Contrast Monokrom
     if rsi < 30:
         rsi_color, rsi_bg, rsi_label = "#ffffff", "#262626", "OVERSOLD"
     elif rsi < 40:
@@ -1073,5 +1071,4 @@ with tab6:
 
             with st.expander("Lihat tabel lengkap"):
                 df_display = df_rev.copy().drop(columns=["_tgl"], errors="ignore")
-                from quant.theme import render_table
-render_table(df_display)
+                render_table(df_display)
