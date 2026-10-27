@@ -340,47 +340,65 @@ def empty_state(icon, title, subtitle=""):
 # TABEL MONOKROM (HTML)
 # ============================================================
 def render_table(df, hide_index=True):
-    """Mengubah DataFrame menjadi tabel HTML Monokrom (tanpa warna biru)."""
-    # Menghapus semua baris baru (newline) agar Streamlit tidak salah mengira ini Code Block
+    """Mengubah DataFrame menjadi tabel HTML Monokrom (bebas border kaku, bisa di-scroll)."""
     html_table = df.to_html(index=not hide_index, border=0, classes="mono-table")
+    # Hapus newline agar Streamlit tidak menganggapnya Code Block
     html_table = html_table.replace('\n', '').replace('\r', '')
     
     css = """
     <style>
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 24px;
+        border-radius: 8px;
+        border: 1px solid #27272a;
+        background-color: #171717;
+    }
     .mono-table {
         width: 100% !important;
-        border-collapse: collapse;
-        background-color: #171717;
-        border-radius: 8px;
-        overflow: hidden;
+        border-collapse: collapse !important;
         font-size: 13px;
         font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-        margin-bottom: 24px;
-        border: 1px solid #27272a;
+        margin: 0 !important;
+        border: none !important;
     }
     .mono-table th {
         background-color: #262626 !important;
         color: #a3a3a3 !important;
-        padding: 14px 16px;
-        text-align: left;
-        border-bottom: 1px solid #27272a;
-        font-weight: 600;
+        padding: 14px 16px !important;
+        text-align: left !important;
+        border: none !important;
+        border-bottom: 1px solid #27272a !important;
+        font-weight: 600 !important;
         white-space: nowrap;
     }
     .mono-table td {
-        padding: 14px 16px;
+        padding: 14px 16px !important;
         color: #ffffff !important;
-        border-bottom: 1px solid #27272a;
-        font-weight: 500;
+        border: none !important;
+        border-bottom: 1px solid #27272a !important;
+        font-weight: 500 !important;
+        background-color: transparent !important;
     }
     .mono-table tr:last-child td {
-        border-bottom: none;
+        border-bottom: none !important;
     }
     .mono-table tr:hover td {
-        background-color: #262626;
+        background-color: #262626 !important;
+    }
+    
+    /* Paksa hapus semua border bawaan Streamlit pada tabel markdown */
+    [data-testid="stMarkdownContainer"] table {
+        border: none !important;
+    }
+    [data-testid="stMarkdownContainer"] th, 
+    [data-testid="stMarkdownContainer"] td {
+        border: none !important;
     }
     </style>
     """
     
-    # Render sebagai HTML murni
-    st.markdown(css + html_table, unsafe_allow_html=True)
+    # Bungkus tabel dengan div container agar bisa di-scroll
+    html = f'<div class="table-container">{html_table}</div>'
+    st.markdown(css + html, unsafe_allow_html=True)
