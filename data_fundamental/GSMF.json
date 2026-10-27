@@ -1,10 +1,10 @@
 {
   "kode": "GSMF",
-  "nama": "PT Equity Development Investment Tbk",
-  "sektor": "Financial Services",
-  "industri": "Insurance - Diversified",
-  "harga": 75.0,
-  "update": "2026-10-21 12:04",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:23",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.04290492044524154,
-    "ps": 0.13738222982435183,
+    "pb": null,
+    "ps": null,
     "roe": -0.008460097209560938,
-    "eps": -29.57736707736708,
+    "eps": null,
     "de": 1.3019116081169626,
     "margin_net": -0.05417872855229415,
     "current_ratio": null,
     "roa": -0.003603326751096448,
-    "bv": 1748.0512543012544
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 61856000000.0
     },
     "eps": {
-      "2024-Q3": 2090000.0,
-      "2026-Q1": -20000.0,
-      "2026-Q2": 6209.16
+      "2024-Q3": 2.09,
+      "2026-Q1": -0.02,
+      "2026-Q2": 0.01
     },
     "net_income": {
       "2024-Q3": 29712000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 430000.0,
-      "2022": 1280000.0,
-      "2023": -4160000.0,
-      "2025": 3790000.0
+      "2021": 0.43,
+      "2022": 1.28,
+      "2023": -4.16,
+      "2025": 3.79
     },
     "revenue_per_share": {
       "2021": 1206221000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1159261192192,
-    "enterprise_value": 562201100288,
-    "shares_outstanding": 1441440000,
-    "free_float_pct": 31.451075174825178
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3042,
-    "vol_trend": 0.102,
-    "price_chg_20d": -23.47
+    "cmf": -0.1673,
+    "vol_trend": 0.072,
+    "price_chg_20d": -11.63
   },
   "neraca": {
     "aset": 5915922.0,

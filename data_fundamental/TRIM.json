@@ -1,26 +1,26 @@
 {
   "kode": "TRIM",
-  "nama": "PT Trimegah Sekuritas Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Capital Markets",
-  "harga": 650.0,
-  "update": "2026-10-21 13:15",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:33",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.008433977698772481,
-    "pb": 2089.5173015330724,
-    "ps": 0.052122282262837126,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.061937480040918,
-    "eps": 77069.21018947013,
+    "eps": null,
     "de": 2.990244795280132,
     "margin_net": 6.180035580414593,
     "current_ratio": null,
     "roa": 0.015486591323702344,
-    "bv": 0.3110766297666437
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 22164441000000.0
     },
     "eps": {
-      "2024-Q3": 9607843.39,
-      "2026-Q1": 19267300.0
+      "2024-Q3": 9.61,
+      "2026-Q1": 19.27
     },
     "net_income": {
       "2024-Q3": 68305041000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 7300000.0,
-      "2022": 24970000.0,
-      "2023": 22852123.7,
-      "2025": 83476160.0
+      "2021": 7.3,
+      "2022": 24.97,
+      "2023": 22.85,
+      "2025": 83.48
     },
     "revenue_per_share": {
       "2021": 3.139885363e+16,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 4621045071872,
-    "enterprise_value": 2418625478656,
-    "shares_outstanding": 7109300000,
-    "free_float_pct": 51.392
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3778,
-    "vol_trend": 0.388,
-    "price_chg_20d": -20.99
+    "cmf": -0.405,
+    "vol_trend": 0.289,
+    "price_chg_20d": -10.32
   },
   "neraca": {
     "aset": 8844879492.0,

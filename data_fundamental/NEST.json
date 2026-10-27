@@ -3,94 +3,105 @@
   "nama": "PT Esta Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 670.0,
-  "update": "2026-10-21 11:07",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 715.0,
+  "update": "2026-10-26 23:18",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 0.11258088313409954,
-    "pb": 0.007366824935594096,
-    "ps": 0.007361267288044647,
-    "roe": 0.01635896062126991,
-    "eps": 5951.2768184802435,
-    "de": 0.09097868900968173,
-    "margin_net": 0.06538647666563736,
-    "current_ratio": 9.256133211472415,
-    "roa": 0.01499472163758532,
-    "bv": 90948.27226893617
+    "pe": 1.3926130196693499e-07,
+    "pb": 0.0077355936783621935,
+    "ps": 8.19530324173756e-09,
+    "roe": 0.019595978178900256,
+    "eps": 5134233199.756839,
+    "de": 0.12301543816863929,
+    "margin_net": 0.04242957497194437,
+    "current_ratio": 6.883375929598889,
+    "roa": 0.017449389602162683,
+    "bv": 92429.88059209727
   },
   "quarterly": {
     "revenue": {
-      "2026-Q1": 9.3576788214e+16
+      "2024-Q4": 1.83324057623e+17,
+      "2025-Q1": 8.3671128071e+16,
+      "2025-Q4": 9.9567959674e+16,
+      "2026-Q1": 9.3576788214e+16,
+      "2026-Q2": 8.1979572271e+16
     },
     "eps": {
-      "2026-Q1": 1487818.98
+      "2024-Q4": 2.33,
+      "2025-Q1": 1.08,
+      "2025-Q4": 2.25,
+      "2026-Q1": 1.49,
+      "2026-Q2": 0.32
     },
     "net_income": {
-      "2026-Q1": 6118656479000000.0
+      "2024-Q4": 9564283791000000.0,
+      "2025-Q1": 4425941370000000.0,
+      "2025-Q4": 9239810905000000.0,
+      "2026-Q1": 6118656479000000.0,
+      "2026-Q2": 1330125280000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 5579046.02
+      "2024": 6.58,
+      "2025": 5.58
     },
     "revenue_per_share": {
+      "2024": 5.41183464172e+17,
       "2025": 3.60839166938e+17
     }
   },
   "statistik": {
-    "market_cap": 2755375104,
-    "enterprise_value": 2857445883904,
+    "market_cap": 2940437504,
+    "enterprise_value": 2898571034624,
     "shares_outstanding": 4112500,
     "free_float_pct": 14416.999999999998
   },
   "akumulasi": {
-    "score": 5.5,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.1499,
-    "vol_trend": 1.228,
-    "price_chg_20d": -7.84
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1915,
+    "vol_trend": 1.155,
+    "price_chg_20d": -5.92
   },
   "neraca": {
-    "aset": 408054022401.0,
-    "aset_lancar": 264229018169.0,
-    "kas": 22137493523.0,
-    "piutang_usaha": 8845630037.0,
-    "persediaan": 86760171165.0,
-    "aset_tetap": 112639977387.0,
-    "liabilitas": 34028283205.0,
-    "liabilitas_jangka_pendek": 28546371593.0,
-    "liabilitas_jangka_panjang": 5481911612.0,
-    "utang_usaha": 8845630037.0,
+    "aset": 426879216341.0,
+    "aset_lancar": 276563419920.0,
+    "kas": 12649140425.0,
+    "piutang_usaha": 80437522838.0,
+    "persediaan": 93948868691.0,
+    "aset_tetap": 111818223030.0,
+    "liabilitas": 46760368048.0,
+    "liabilitas_jangka_pendek": 40178456436.0,
+    "liabilitas_jangka_panjang": 6581911612.0,
+    "utang_usaha": 80437522838.0,
     "utang_bank": null,
-    "ekuitas": 374024769706.0,
-    "ekuitas_induk": 374024769706.0,
+    "ekuitas": 380117883935.0,
+    "ekuitas_induk": 380117883935.0,
     "modal_saham": null,
     "saldo_laba": 9870000000.0
   },
   "laba_rugi": {
-    "pendapatan": 93576788214.0,
-    "beban_pokok": 82718716402.0,
+    "pendapatan": 175556360485.0,
+    "beban_pokok": 164952643374.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 7894699695.0,
-    "beban_pajak": -1776044160.0,
-    "laba_bersih": 6118656479.0,
-    "laba_induk": 6118656479.0,
-    "eps_basic": 1.4878189750759878,
+    "laba_sebelum_pajak": 9545763543.0,
+    "beban_pajak": -2096987860.0,
+    "laba_bersih": 7448781759.0,
+    "laba_induk": 7448781759.0,
+    "eps_basic": 1.81,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 31202647232.0,
+    "capex": 30748703182.0,
     "dividen_dibayar": null
   }
 }

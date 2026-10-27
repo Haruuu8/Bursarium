@@ -1,23 +1,23 @@
 {
   "kode": "SKRN",
-  "nama": "PT Superkrane Mitra Utama Tbk",
-  "sektor": "Industrials",
-  "industri": "Rental & Leasing Services",
-  "harga": 314.0,
-  "update": "2026-10-21 14:04",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:08",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.606081564727878e-06,
-    "pb": 3.2701629363237767,
-    "ps": 1.9837484871639284e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.08367986038015805,
-    "eps": 32687625.842462335,
+    "eps": null,
     "de": 1.1385813237538018,
     "margin_net": 0.2613536557311286,
     "current_ratio": 1.325656798934229,
     "roa": 0.0391286781805785,
-    "bv": 96.01968039946956
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2.18831882707e+17
     },
     "eps": {
-      "2024-Q1": 9320000.0,
-      "2024-Q2": 6220000.0,
-      "2024-Q3": 10580000.0,
-      "2026-Q1": 8030000.0
+      "2024-Q1": 9.32,
+      "2024-Q2": 6.22,
+      "2024-Q3": 10.58,
+      "2026-Q1": 8.03
     },
     "net_income": {
       "2024-Q1": 6.3518926058e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2900000.0,
-      "2022": 67173930.0,
-      "2023": 44030000.0,
-      "2025": 28620000.0
+      "2021": 2.9,
+      "2022": 67.17,
+      "2023": 44.03,
+      "2025": 28.62
     },
     "revenue_per_share": {
       "2021": 4.19487164471e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2235051802624,
-    "enterprise_value": 2376022097920,
-    "shares_outstanding": 7117999826,
-    "free_float_pct": 9.527999994081483
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.2,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.0891,
-    "vol_trend": 0.586,
-    "price_chg_20d": -24.15
+    "score": 4.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.024,
+    "vol_trend": 0.479,
+    "price_chg_20d": -22.33
   },
   "neraca": {
     "aset": 1461652046411.0,

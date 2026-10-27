@@ -1,26 +1,26 @@
 {
   "kode": "MFMI",
-  "nama": "PT Multifiling Mitra Indonesia Tbk",
-  "sektor": "Industrials",
-  "industri": "Specialty Business Services",
-  "harga": 1300.0,
-  "update": "2026-10-21 12:37",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:54",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 52.885886244039504,
-    "pb": 7.651154500935524,
-    "ps": 5.674491712370328,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03616822485317549,
-    "eps": 24.58122747534587,
+    "eps": null,
     "de": 2.4538891961350284,
     "margin_net": 0.10729690122210764,
     "current_ratio": 3.4741280227893747,
     "roa": 0.010471738610968893,
-    "bv": 169.90899868000915
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 4.3389582271e+16
     },
     "eps": {
-      "2024-Q1": 8000000.0,
-      "2026-Q1": 6000000.0
+      "2024-Q1": 8.0,
+      "2026-Q1": 6.0
     },
     "net_income": {
       "2024-Q1": 6359415648000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 33000000.0,
-      "2022": 32000000.0,
-      "2023": 37000000.0,
-      "2025": 30000000.0
+      "2021": 33.0,
+      "2022": 32.0,
+      "2023": 37.0,
+      "2025": 30.0
     },
     "revenue_per_share": {
       "2021": 1.44516730115e+17,
@@ -52,10 +52,10 @@
     }
   },
   "statistik": {
-    "market_cap": 984855281664,
-    "enterprise_value": 1176293867520,
-    "shares_outstanding": 757581000,
-    "free_float_pct": 0.6530000092399361
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

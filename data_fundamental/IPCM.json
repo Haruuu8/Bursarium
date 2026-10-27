@@ -1,23 +1,23 @@
 {
   "kode": "IPCM",
-  "nama": "PT Jasa Armada Indonesia Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 258.0,
-  "update": "2026-10-21 13:40",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:57",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.00905241679479758,
-    "pb": 1028.6026529347891,
-    "ps": 0.000985934553182985,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.05132406313960199,
-    "eps": 28500.676211492213,
+    "eps": null,
     "de": 0.3234754256139404,
     "margin_net": 0.09323712821981307,
     "current_ratio": 2.492768767607411,
     "roa": 0.03877976284734832,
-    "bv": 0.25082571901198136
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 382459809000000.0
     },
     "eps": {
-      "2024-Q1": 7290000.0,
-      "2024-Q2": 7540000.0,
-      "2024-Q3": 8120000.0,
-      "2026-Q1": 8620000.0,
-      "2026-Q2": 4250000.0
+      "2024-Q1": 7.29,
+      "2024-Q2": 7.54,
+      "2024-Q3": 8.12,
+      "2026-Q1": 8.62,
+      "2026-Q2": 4.25
     },
     "net_income": {
       "2024-Q1": 38514736000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 25880000.0,
-      "2022": 28550000.0,
-      "2023": 29880000.0,
-      "2025": 37220000.0
+      "2021": 25.88,
+      "2022": 28.55,
+      "2023": 29.88,
+      "2025": 37.22
     },
     "revenue_per_share": {
       "2021": 820160995000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1363481329664,
-    "enterprise_value": 847599042560,
-    "shares_outstanding": 5284811100,
-    "free_float_pct": 22.95400000200575
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.8,
+    "score": 5.6,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0858,
-    "vol_trend": 0.788,
-    "price_chg_20d": -11.11
+    "cmf": 0.0737,
+    "vol_trend": 0.763,
+    "price_chg_20d": -6.34
   },
   "neraca": {
     "aset": 1754354746.0,

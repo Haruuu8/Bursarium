@@ -1,26 +1,26 @@
 {
   "kode": "MARK",
-  "nama": "PT Mark Dynamics Indonesia Tbk",
-  "sektor": "Healthcare",
-  "industri": "Medical Instruments & Supplies",
-  "harga": 1105.0,
-  "update": "2026-10-21 13:31",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:53",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 11.417005358722818,
-    "pb": 4.708702384886586,
-    "ps": 3.6691883495529116,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.20621442475232984,
-    "eps": 96.78544988645014,
+    "eps": null,
     "de": 0.14565702481080187,
     "margin_net": 0.32137922636162897,
     "current_ratio": 4.19957118418272,
     "roa": 0.1794903683421245,
-    "bv": 234.6718712880842
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 3.21359771585e+17
     },
     "eps": {
-      "2024-Q3": 19450000.0,
-      "2026-Q1": 21950000.0,
-      "2026-Q2": 26440000.0
+      "2024-Q3": 19.45,
+      "2026-Q1": 21.95,
+      "2026-Q2": 26.44
     },
     "net_income": {
       "2024-Q3": 7.3927388019e+16,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 103200000.0,
-      "2022": 63970000.0,
-      "2023": 41060000.0,
-      "2025": 74700000.0
+      "2021": 103.2,
+      "2022": 63.97,
+      "2023": 41.06,
+      "2025": 74.7
     },
     "revenue_per_share": {
-      "2021": 1.193506756539e+18,
+      "2021": 1193506756539.0,
       "2022": 8.23656040401e+17,
       "2023": 5.59468977416e+17,
       "2025": 8.37311837328e+17
     }
   },
   "statistik": {
-    "market_cap": 4199000309760,
-    "enterprise_value": 4200037875712,
-    "shares_outstanding": 3800000310,
-    "free_float_pct": 19.73199999554737
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.9,
+    "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.127,
-    "vol_trend": 0.991,
-    "price_chg_20d": -2.19
+    "cmf": 0.2651,
+    "vol_trend": 0.845,
+    "price_chg_20d": -4.68
   },
   "neraca": {
     "aset": 1024525000893.0,

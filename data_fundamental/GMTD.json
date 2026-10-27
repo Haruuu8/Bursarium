@@ -1,23 +1,23 @@
 {
   "kode": "GMTD",
-  "nama": "PT Gowa Makassar Tourism Development Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 880.0,
-  "update": "2026-10-21 12:03",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:22",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0015045481387482601,
-    "pb": 1.020360186379986,
-    "ps": 4.005798856769478e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.022287868607522493,
-    "eps": 584893.2163328015,
+    "eps": null,
     "de": 0.6792409743277424,
     "margin_net": 0.15838362891905752,
     "current_ratio": 2.325165173548886,
     "roa": 0.013272585011573433,
-    "bv": 862.4405496671197
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.00961337769e+17
     },
     "eps": {
-      "2024-Q1": 118270000.0,
-      "2024-Q2": 14630000.0,
-      "2024-Q3": -33270000.0,
-      "2026-Q1": -13790000.0,
-      "2026-Q2": 33010000.0
+      "2024-Q1": 118.27,
+      "2024-Q2": 14.63,
+      "2024-Q3": -33.27,
+      "2026-Q1": -13.79,
+      "2026-Q2": 33.01
     },
     "net_income": {
       "2024-Q1": 1.20084989526e+17,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -269620000.0,
-      "2022": 88620000.0,
-      "2023": 1270600000.0,
-      "2025": 31690000.0
+      "2021": -269.62,
+      "2022": 88.62,
+      "2023": 1270.6,
+      "2025": 31.69
     },
     "revenue_per_share": {
       "2021": 1.38807742936e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 893534339072,
-    "enterprise_value": 861308059648,
-    "shares_outstanding": 1015380000,
-    "free_float_pct": 41.5
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.7,
+    "score": 1.8,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1203,
-    "vol_trend": 1.266,
-    "price_chg_20d": -25.52
+    "cmf": -0.1146,
+    "vol_trend": 1.399,
+    "price_chg_20d": -18.57
   },
   "neraca": {
     "aset": 1470519526225.0,

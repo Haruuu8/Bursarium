@@ -1,26 +1,26 @@
 {
   "kode": "LPCK",
-  "nama": "PT Lippo Cikarang Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 496.0,
-  "update": "2026-10-21 12:29",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:46",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 5.576511824410666,
-    "pb": 0.3704456880386294,
-    "ps": 0.783660002397624,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03321482135275295,
-    "eps": 88.94448996392435,
+    "eps": null,
     "de": 0.5754173870937384,
     "margin_net": 0.14052870810158147,
     "current_ratio": 2.953990319343604,
     "roa": 0.021192689848685692,
-    "bv": 1338.9277187328958
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 864772000000.0
     },
     "eps": {
-      "2024-Q3": -626000000.0,
-      "2026-Q1": 15.0,
-      "2026-Q2": 29.0
+      "2024-Q3": -626.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q3": -1675434000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 69000000.0,
-      "2022": 115000000.0,
-      "2023": 60000000.0,
-      "2025": 42000000.0
+      "2021": 69.0,
+      "2022": 115.0,
+      "2023": 60.0,
+      "2025": 42.0
     },
     "revenue_per_share": {
       "2021": 1844739000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2546804195328,
-    "enterprise_value": 2951437877248,
-    "shares_outstanding": 5134685692,
-    "free_float_pct": 10.999999997662952
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.3504,
-    "vol_trend": 0.797,
-    "price_chg_20d": -15.25
+    "score": 6.8,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1211,
+    "vol_trend": 0.428,
+    "price_chg_20d": -0.8
   },
   "neraca": {
     "aset": 10774989.0,

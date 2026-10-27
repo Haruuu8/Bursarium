@@ -1,10 +1,10 @@
 {
   "kode": "NELY",
-  "nama": "PT Pelayaran Nelly Dwi Putri Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 177.0,
-  "update": "2026-10-21 12:44",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:01",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.46305403231290976,
-    "ps": 2.285752381175946,
+    "pb": null,
+    "ps": null,
     "roe": -0.021484363957634724,
-    "eps": -32.84914636425532,
+    "eps": null,
     "de": 0.282885565468609,
     "margin_net": -0.4242091215914902,
     "current_ratio": 3.5854502700915436,
     "roa": -0.016615169656875456,
-    "bv": 382.24480870170214
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 4.5493773016e+16
     },
     "eps": {
-      "2024-Q1": 21860000.0,
-      "2026-Q1": -8210000.0
+      "2024-Q1": 21.86,
+      "2026-Q1": -8.21
     },
     "net_income": {
       "2024-Q1": 5.137608756e+16,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 21860000.0,
-      "2022": 53760000.0,
-      "2023": 97400000.0,
-      "2025": 18900000.0
+      "2021": 21.86,
+      "2022": 53.76,
+      "2023": 97.4,
+      "2025": 18.9
     },
     "revenue_per_share": {
       "2021": 1.99312722588e+17,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 415950012416,
-    "enterprise_value": 497839636480,
-    "shares_outstanding": 2350000000,
-    "free_float_pct": 2.129
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.1,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1655,
-    "vol_trend": 0.474,
-    "price_chg_20d": -11.0
+    "cmf": -0.1269,
+    "vol_trend": 0.604,
+    "price_chg_20d": -4.66
   },
   "neraca": {
     "aset": 1161521301771.0,

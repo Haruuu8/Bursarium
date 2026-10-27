@@ -1,23 +1,23 @@
 {
   "kode": "VRNA",
-  "nama": "PT Mizuho Leasing Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Credit Services",
-  "harga": 69.0,
-  "update": "2026-10-21 13:19",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:38",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.08608418809199309,
-    "pb": 0.0005302637021986004,
-    "ps": 1.168112593519869,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.005026114831008492,
-    "eps": 801.5409278910057,
+    "eps": null,
     "de": 3.1915735684596447,
     "margin_net": -133.46361679224972,
     "current_ratio": null,
     "roa": -0.0011990997530923768,
-    "bv": 130123.93590945311
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 27870000000.0
     },
     "eps": {
-      "2024-Q1": 1430000.0,
-      "2024-Q2": 1360000.0,
-      "2024-Q3": -1330000.0,
-      "2026-Q1": -650000.0
+      "2024-Q1": 1.43,
+      "2024-Q2": 1.36,
+      "2024-Q3": -1.33,
+      "2026-Q1": -0.65
     },
     "net_income": {
       "2024-Q1": 8152090000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -1370000.0,
-      "2022": 10910000.0,
-      "2023": 10750000.0,
-      "2025": 510000.0
+      "2021": -1.37,
+      "2022": 10.91,
+      "2023": 10.75,
+      "2025": 0.51
     },
     "revenue_per_share": {
       "2021": 439011000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 392427405312,
-    "enterprise_value": 2641451810816,
-    "shares_outstanding": 5687353997,
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
     "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.9,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1078,
-    "vol_trend": 0.154,
-    "price_chg_20d": -14.63
+    "score": 4.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.02,
+    "vol_trend": 0.143,
+    "price_chg_20d": 0.0
   },
   "neraca": {
     "aset": 3102019653.0,

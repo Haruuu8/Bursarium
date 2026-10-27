@@ -1,23 +1,23 @@
 {
   "kode": "SMBR",
-  "nama": "PT Semen Baturaja (Persero) Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Building Materials",
-  "harga": 123.0,
-  "update": "2026-10-21 13:02",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:21",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0230797149470877,
-    "pb": 356.18147747734344,
-    "ps": 0.0006612785078432441,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.005050939812380236,
-    "eps": 5329.355249056951,
+    "eps": null,
     "de": 0.3778656876790925,
     "margin_net": 0.03942855948747786,
     "current_ratio": 1.484420034202238,
     "roa": 0.003665790339168066,
-    "bv": 0.34532957994095576
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,9 +27,9 @@
       "2026-Q1": 439395028000000.0
     },
     "eps": {
-      "2024-Q1": 1000000.0,
-      "2024-Q3": 3000000.0,
-      "2026-Q1": 1744238.97
+      "2024-Q1": 1.0,
+      "2024-Q3": 3.0,
+      "2026-Q1": 1.74
     },
     "net_income": {
       "2024-Q1": 5077949000000.0,
@@ -41,10 +41,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 5000000.0,
-      "2022": 10000000.0,
-      "2023": 12000000.0,
-      "2025": 17309132.48
+      "2021": 5.0,
+      "2022": 10.0,
+      "2023": 12.0,
+      "2025": 17.31
     },
     "revenue_per_share": {
       "2021": 1751585770000000.0,
@@ -54,18 +54,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1221701795840,
-    "enterprise_value": 1618519130112,
-    "shares_outstanding": 9932534336,
-    "free_float_pct": 24.490000001143716
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2248,
-    "vol_trend": 0.176,
-    "price_chg_20d": -23.95
+    "cmf": -0.2581,
+    "vol_trend": 0.153,
+    "price_chg_20d": -10.88
   },
   "neraca": {
     "aset": 4726051246.0,

@@ -1,23 +1,23 @@
 {
   "kode": "GMFI",
-  "nama": "PT Garuda Maintenance Facility Aero Asia Tbk",
-  "sektor": "Industrials",
-  "industri": "Aerospace & Defense",
-  "harga": 41.0,
-  "update": "2026-10-21 13:33",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:53",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.21223896578459858,
-    "pb": 0.03543714737502684,
-    "ps": 0.010514766376397302,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.07487260686799059,
-    "eps": 193.17847619749014,
+    "eps": null,
     "de": 4.721101174446199,
     "margin_net": 0.04000893784209569,
     "current_ratio": 1.0846060978561516,
     "roa": 0.013084113278043558,
-    "bv": 1156.9780029442607
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,9 +27,9 @@
       "2026-Q2": 155349587000000.0
     },
     "eps": {
-      "2024-Q1": 87.15,
-      "2024-Q2": 412.85,
-      "2026-Q1": 900.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 2460533000000.0,
@@ -41,10 +41,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -10000.0,
-      "2022": 100.0,
-      "2023": 700.0,
-      "2025": 900.0
+      "2021": -0.01,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 210593315000000.0,
@@ -54,18 +54,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5118245732352,
-    "enterprise_value": 5243402190848,
-    "shares_outstanding": 124835258434,
-    "free_float_pct": 1.9429999997015106
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
+    "score": 6.2,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.1315,
-    "vol_trend": 0.931,
-    "price_chg_20d": -25.0
+    "cmf": 0.1108,
+    "vol_trend": 0.715,
+    "price_chg_20d": -21.57
   },
   "neraca": {
     "aset": 826496513.0,

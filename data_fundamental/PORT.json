@@ -1,23 +1,23 @@
 {
   "kode": "PORT",
-  "nama": "PT Nusantara Pelabuhan Handal Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 880.0,
-  "update": "2026-10-21 13:28",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:47",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2097.8452627500187,
-    "ps": 0.0022015286524519153,
+    "pb": null,
+    "ps": null,
     "roe": 0.02157294970797976,
-    "eps": -30616.345844813142,
+    "eps": null,
     "de": 0.8990573220071041,
     "margin_net": 0.09541246562118451,
     "current_ratio": 3.951949148010362,
     "roa": 0.010997047329232814,
-    "bv": 0.41947803092322816
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 266887831000000.0
     },
     "eps": {
-      "2024-Q1": 9880.0,
-      "2024-Q2": -61170.0,
-      "2024-Q3": 90960.0,
-      "2026-Q1": 9049.38
+      "2024-Q1": 0.01,
+      "2024-Q2": -0.06,
+      "2024-Q3": 0.09,
+      "2026-Q1": 0.01
     },
     "net_income": {
       "2024-Q1": 27792983000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -20740000.0,
-      "2022": 7270000.0,
-      "2023": 22270.0,
-      "2025": 45.63
+      "2021": -20.74,
+      "2022": 7.27,
+      "2023": 0.02,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 1321828564000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2476268847104,
-    "enterprise_value": 2729383034880,
-    "shares_outstanding": 2813941985,
-    "free_float_pct": 19.411999995444113
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1487,
-    "vol_trend": 0.659,
-    "price_chg_20d": -14.66
+    "score": 5.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0181,
+    "vol_trend": 0.611,
+    "price_chg_20d": -2.11
   },
   "neraca": {
     "aset": 2315569374.0,

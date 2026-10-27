@@ -3,57 +3,71 @@
   "nama": "PT MDTV Media Technologies Tbk",
   "sektor": "Communication Services",
   "industri": "Broadcasting",
-  "harga": 29.0,
-  "update": "2026-10-21 10:34",
-  "periode_terbaru": "2026-tw1",
+  "harga": 27.0,
+  "update": "2026-10-26 22:31",
+  "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 6.222071203148009e-05,
-    "pb": 3.0334036534788305,
-    "ps": 6.18953920157991e-06,
-    "roe": -0.06449107377332147,
-    "eps": 466082.74082957575,
-    "de": 1.2107385222160827,
-    "margin_net": -0.9672036465630865,
-    "current_ratio": 1.1601935221674302,
-    "roa": -0.03029565271540262,
-    "bv": 9.560217931016739
+    "pe": null,
+    "pb": 3.0025462077639866,
+    "ps": 1.159444013290257e-05,
+    "roe": -0.13171155981272972,
+    "eps": -3608159.6469867323,
+    "de": 1.3102324187333692,
+    "margin_net": -1.016141715477206,
+    "current_ratio": 1.1159430740412855,
+    "roa": -0.059252655109472044,
+    "bv": 8.992367854384181
   },
   "quarterly": {
     "revenue": {
       "2024-Q1": 8.1788646207e+16,
       "2024-Q2": 3.6938083913e+16,
       "2024-Q3": 4.8695253759e+16,
-      "2026-Q1": 2.6365465376e+16
+      "2024-Q4": 4.2307726416e+16,
+      "2025-Q1": 3.2692617084e+16,
+      "2025-Q2": 1.541454906e+16,
+      "2026-Q1": 2.6365465376e+16,
+      "2026-Q2": 2.1843703352e+16
     },
     "eps": {
-      "2024-Q1": -3000000.0,
-      "2024-Q2": 5000000.0,
-      "2026-Q1": -620000.0
+      "2024-Q1": -3.0,
+      "2024-Q2": 5.0,
+      "2024-Q4": -5.0,
+      "2025-Q1": -1.0,
+      "2025-Q2": -1.0,
+      "2026-Q1": -0.62,
+      "2026-Q2": -0.56
     },
     "net_income": {
       "2024-Q1": -6.3777573608e+16,
       "2024-Q2": 1.13767537087e+17,
       "2024-Q3": -5211765762000000.0,
-      "2026-Q1": -2.5500774255e+16
+      "2024-Q4": -1.23238061256e+17,
+      "2025-Q1": -5.3707894699e+16,
+      "2025-Q2": -4.6540108911e+16,
+      "2026-Q1": -2.5500774255e+16,
+      "2026-Q2": -2.3486573158e+16
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": -8000000.0,
-      "2023": -27000000.0,
-      "2025": -6920000.0
+      "2022": -8.0,
+      "2023": -27.0,
+      "2024": -3.0,
+      "2025": -6.92
     },
     "revenue_per_share": {
       "2022": 4.38679000808e+17,
       "2023": 2.357454145e+17,
+      "2024": 2.09729710295e+17,
       "2025": 8.2940382844e+16
     }
   },
   "statistik": {
-    "market_cap": 1199455076352,
-    "enterprise_value": 1590645620736,
+    "market_cap": 1116733964288,
+    "enterprise_value": 1549285064704,
     "shares_outstanding": 41360517722,
     "free_float_pct": 3.4479999998680864
   },
@@ -61,45 +75,45 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2437,
-    "vol_trend": 24.706,
-    "price_chg_20d": -40.0
+    "cmf": -0.2582,
+    "vol_trend": 27.502,
+    "price_chg_20d": -37.21
   },
   "neraca": {
-    "aset": 841730478447.0,
-    "aset_lancar": 534359103960.0,
-    "kas": 15328050557.0,
-    "piutang_usaha": 26912239026.0,
-    "persediaan": 462164408637.0,
-    "aset_tetap": 16194360548.0,
-    "liabilitas": 478744854604.0,
-    "liabilitas_jangka_pendek": 460577562062.0,
-    "liabilitas_jangka_panjang": 18167292542.0,
-    "utang_usaha": 26912239026.0,
+    "aset": 826753625175.0,
+    "aset_lancar": 522403686753.0,
+    "kas": 10257818373.0,
+    "piutang_usaha": 28464578197.0,
+    "persediaan": 453558913164.0,
+    "aset_tetap": 15246641880.0,
+    "liabilitas": 487313420170.0,
+    "liabilitas_jangka_pendek": 468127540647.0,
+    "liabilitas_jangka_panjang": 19185879523.0,
+    "utang_usaha": 28464578197.0,
     "utang_bank": 389220000000.0,
-    "ekuitas": 395415563162.0,
-    "ekuitas_induk": 395415563162.0,
+    "ekuitas": 371928990004.0,
+    "ekuitas_induk": 371928990004.0,
     "modal_saham": null,
-    "saldo_laba": -4043285995951.0
+    "saldo_laba": -4066772569109.0
   },
   "laba_rugi": {
-    "pendapatan": 26365465376.0,
-    "beban_pokok": 25041105764.0,
+    "pendapatan": 48209168728.0,
+    "beban_pokok": 50086545059.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -25785106867.0,
-    "beban_pajak": 216748755.0,
-    "laba_bersih": -25500774255.0,
-    "laba_induk": -25500774255.0,
-    "eps_basic": -0.62,
+    "laba_sebelum_pajak": -49543503308.0,
+    "beban_pajak": 429726358.0,
+    "laba_bersih": -48987347413.0,
+    "laba_induk": -48987347413.0,
+    "eps_basic": -1.18,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 2667153865.0,
+    "capex": 211850000.0,
     "dividen_dibayar": null
   }
 }

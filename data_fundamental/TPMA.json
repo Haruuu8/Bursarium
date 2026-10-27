@@ -1,26 +1,26 @@
 {
   "kode": "TPMA",
-  "nama": "PT Trans Power Marine Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 388.0,
-  "update": "2026-10-21 13:16",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:34",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.4367903999953637,
-    "pb": 0.010282084908184008,
-    "ps": 0.012857084916217254,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.005885022260272402,
-    "eps": 888.297911318835,
+    "eps": null,
     "de": 1.0158085977414986,
     "margin_net": 0.029435365146197642,
     "current_ratio": 1.1302640376297493,
     "roa": 0.0027285448644610247,
-    "bv": 37735.53743863485
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 26379119000000.0
     },
     "eps": {
-      "2024-Q3": 1900.0,
-      "2026-Q1": 200.0
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q3": 6973247000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1500.0,
-      "2022": 5400.0,
-      "2023": 7500.0,
-      "2025": 5100.0
+      "2021": 0.0,
+      "2022": 0.01,
+      "2023": 0.01,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 42016186000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1356634390528,
-    "enterprise_value": 1342776934400,
-    "shares_outstanding": 3496480134,
-    "free_float_pct": 30.896999999943368
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 1.6,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1672,
-    "vol_trend": 1.126,
-    "price_chg_20d": -17.24
+    "cmf": -0.125,
+    "vol_trend": 1.236,
+    "price_chg_20d": -14.85
   },
   "neraca": {
     "aset": 284576226.0,

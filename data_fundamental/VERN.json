@@ -3,48 +3,62 @@
   "nama": "PT Verona Indah Pictures Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 186.0,
-  "update": "2026-10-21 11:08",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 190.0,
+  "update": "2026-10-26 23:19",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 197.48986449443427,
-    "pb": 1.6741462659898327,
-    "ps": 30.548268047175085,
-    "roe": 0.002119281248021989,
-    "eps": 0.9418204851988337,
-    "de": 0.0416640439188977,
-    "margin_net": 0.1546827130869595,
-    "current_ratio": 17.6956534621791,
-    "roa": 0.0020345151206803036,
-    "bv": 111.10140361005327
+    "pe": null,
+    "pb": 1.7120972181201597,
+    "ps": 1.970322796340516e-05,
+    "roe": 0.0009827263586953481,
+    "eps": -59368.98070010134,
+    "de": 0.05165410622226675,
+    "margin_net": 0.0554653692319354,
+    "current_ratio": 14.07321323078521,
+    "roa": 0.000934457777401241,
+    "bv": 110.97500655284944
   },
   "quarterly": {
     "revenue": {
-      "2026-Q1": 7254180177000000.0
+      "2025-Q1": 1.488e+16,
+      "2025-Q2": 2.458e+16,
+      "2025-Q3": 2.277e+16,
+      "2025-Q4": 1.3815180171e+16,
+      "2026-Q1": 7254180177000000.0,
+      "2026-Q2": 2116213858000000.0
     },
     "eps": {
-      "2026-Q1": 240000.0
+      "2025-Q1": 0.59,
+      "2025-Q2": 0.63,
+      "2025-Q3": 0.56,
+      "2025-Q4": -0.73,
+      "2026-Q1": 0.24,
+      "2026-Q2": -0.13
     },
     "net_income": {
-      "2026-Q1": 1122096271000000.0
+      "2025-Q1": 2159116982000000.0,
+      "2025-Q2": 3656177538000000.0,
+      "2025-Q3": 2670734199000000.0,
+      "2025-Q4": -3473398239000000.0,
+      "2026-Q1": 1122096271000000.0,
+      "2026-Q2": -602363906000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 1050000.0
+      "2024": 1.45,
+      "2025": 1.05
     },
     "revenue_per_share": {
+      "2024": 1.40695003286e+17,
       "2025": 7.6045180171e+16
     }
   },
   "statistik": {
-    "market_cap": 886410575872,
-    "enterprise_value": 887871307776,
+    "market_cap": 905473163264,
+    "enterprise_value": 873574367232,
     "shares_outstanding": 4765648183,
     "free_float_pct": 18.39800000612005
   },
@@ -52,45 +66,45 @@
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.3023,
-    "vol_trend": 1.27,
-    "price_chg_20d": -16.24
+    "cmf": 0.3824,
+    "vol_trend": 1.418,
+    "price_chg_20d": -16.67
   },
   "neraca": {
-    "aset": 551530072003.0,
-    "aset_lancar": 337591456163.0,
-    "kas": 60530544695.0,
-    "piutang_usaha": 117387259960.0,
+    "aset": 556186033836.0,
+    "aset_lancar": 342485354194.0,
+    "kas": 60425008577.0,
+    "piutang_usaha": 116314669881.0,
     "persediaan": null,
-    "aset_tetap": 16838428173.0,
-    "liabilitas": 22059869760.0,
-    "liabilitas_jangka_pendek": 19077648468.0,
+    "aset_tetap": 16579709297.0,
+    "liabilitas": 27318195499.0,
+    "liabilitas_jangka_pendek": 24335974207.0,
     "liabilitas_jangka_panjang": 2982221292.0,
-    "utang_usaha": 117387259960.0,
-    "utang_bank": 9856108487.0,
-    "ekuitas": 529470202243.0,
-    "ekuitas_induk": 529470202243.0,
+    "utang_usaha": 116314669881.0,
+    "utang_bank": 13998438116.0,
+    "ekuitas": 528867838337.0,
+    "ekuitas_induk": 528867838337.0,
     "modal_saham": null,
     "saldo_laba": 2915100000.0
   },
   "laba_rugi": {
-    "pendapatan": 7254180177.0,
-    "beban_pokok": 2296826534.0,
+    "pendapatan": 9370394035.0,
+    "beban_pokok": 2300918668.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 1539808262.0,
-    "beban_pajak": -417711991.0,
-    "laba_bersih": 1122096271.0,
-    "laba_induk": 1122096271.0,
-    "eps_basic": 0.24,
-    "eps_diluted": 0.24
+    "laba_sebelum_pajak": 1157337164.0,
+    "beban_pajak": -637604799.0,
+    "laba_bersih": 519732365.0,
+    "laba_induk": 519732365.0,
+    "eps_basic": 0.11,
+    "eps_diluted": 0.11
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 13333333.0,
+    "capex": 28315315.0,
     "dividen_dibayar": null
   }
 }

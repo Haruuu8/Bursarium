@@ -1,23 +1,23 @@
 {
   "kode": "MAPI",
-  "nama": "PT. Mitra Adiperkasa Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Department Stores",
-  "harga": 1235.0,
-  "update": "2026-10-21 12:33",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:50",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.749409595043547,
-    "pb": 1.3377703379623802,
-    "ps": 0.4769416031872848,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.07940206279344274,
-    "eps": 126.67433734939759,
+    "eps": null,
     "de": 1.0890208801407761,
     "margin_net": 0.05037220807719988,
     "current_ratio": 1.634855307160022,
     "roa": 0.03434481172952642,
-    "bv": 923.1778915662651
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 11864170000000.0
     },
     "eps": {
-      "2024-Q1": 25000000.0,
-      "2024-Q2": 29000000.0,
-      "2024-Q3": 25000000.0,
-      "2026-Q1": 38000000.0,
-      "2026-Q2": 35223012.05
+      "2024-Q1": 25.0,
+      "2024-Q2": 29.0,
+      "2024-Q3": 25.0,
+      "2026-Q1": 38.0,
+      "2026-Q2": 35.22
     },
     "net_income": {
       "2024-Q1": 413991000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 27000000.0,
-      "2022": 128000000.0,
-      "2023": 114000000.0,
-      "2025": 134000000.0
+      "2021": 27.0,
+      "2022": 128.0,
+      "2023": 114.0,
+      "2025": 134.0
     },
     "revenue_per_share": {
       "2021": 18423803000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 20501000880128,
-    "enterprise_value": 28764476014592,
-    "shares_outstanding": 16600000000,
-    "free_float_pct": 49.0
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.4439,
-    "vol_trend": 1.475,
-    "price_chg_20d": -11.37
+    "cmf": 0.3237,
+    "vol_trend": 1.537,
+    "price_chg_20d": -14.52
   },
   "neraca": {
     "aset": 35429427.0,

@@ -1,23 +1,23 @@
 {
   "kode": "RBMS",
-  "nama": "PT Ristia Bintang Mahkotasejati Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 39.0,
-  "update": "2026-10-21 12:55",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:13",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.02068169564680296,
-    "ps": 6.895836330856988e-08,
+    "pb": null,
+    "ps": null,
     "roe": -0.015446292064441421,
-    "eps": -118299204.66153847,
+    "eps": null,
     "de": 0.5649403174660739,
     "margin_net": -0.1827683961148544,
     "current_ratio": 1.53805779381523,
     "roa": -0.009831736185868429,
-    "bv": 1885.725458203846
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 4.1435726132e+16
     },
     "eps": {
-      "2024-Q1": -4770000.0,
-      "2024-Q2": -5700000.0,
-      "2024-Q3": -3630000.0,
-      "2026-Q1": -4610000.0
+      "2024-Q1": -4.77,
+      "2024-Q2": -5.7,
+      "2024-Q3": -3.63,
+      "2026-Q1": -4.61
     },
     "net_income": {
       "2024-Q1": -7846471392000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -14330000.0,
-      "2022": -24040000.0,
-      "2023": -12460000.0,
-      "2025": 1020000.0
+      "2021": -14.33,
+      "2022": -24.04,
+      "2023": -12.46,
+      "2025": 1.02
     },
     "revenue_per_share": {
       "2021": 4.4538508242e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 103592296448,
-    "enterprise_value": 174234058752,
-    "shares_outstanding": 260000000,
-    "free_float_pct": 72.80066384615384
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4181,
-    "vol_trend": 0.908,
-    "price_chg_20d": -28.57
+    "cmf": -0.2741,
+    "vol_trend": 0.816,
+    "price_chg_20d": -2.33
   },
   "neraca": {
     "aset": 770275062698.0,

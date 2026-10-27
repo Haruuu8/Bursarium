@@ -1,10 +1,10 @@
 {
   "kode": "DIGI",
-  "nama": "PT Arkadia Digital Media Tbk",
-  "sektor": "Communication Services",
-  "industri": "Internet Content & Information",
-  "harga": 29.0,
-  "update": "2026-10-21 14:00",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:06",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -13,14 +13,14 @@
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.406002128202155,
+    "ps": null,
     "roe": 0.34449939328821555,
-    "eps": -2.560483643076923,
+    "eps": null,
     "de": -3.546689944174006,
     "margin_net": -0.12413949832389522,
     "current_ratio": 0.8521988014642949,
     "roa": -0.13513382372792238,
-    "bv": -3.716238247384615
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 8965425412000000.0
     },
     "eps": {
-      "2024-Q3": 220000.0,
-      "2026-Q1": -1900000.0,
-      "2026-Q2": 620000.0
+      "2024-Q3": 0.22,
+      "2026-Q1": -1.9,
+      "2026-Q2": 0.62
     },
     "net_income": {
       "2024-Q3": 346669806000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -11450000.0,
-      "2023": -2530000.0,
-      "2025": 1080000.0
+      "2022": -11.45,
+      "2023": -2.53,
+      "2025": 1.08
     },
     "revenue_per_share": {
       "2022": 4.1539134578e+16,
@@ -53,10 +53,10 @@
     }
   },
   "statistik": {
-    "market_cap": 47124996096,
-    "enterprise_value": 54630780928,
-    "shares_outstanding": 1625000000,
-    "free_float_pct": 30.576999999999998
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

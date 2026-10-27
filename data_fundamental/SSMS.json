@@ -1,23 +1,23 @@
 {
   "kode": "SSMS",
-  "nama": "PT Sawit Sumbermas Sarana Tbk.",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 850.0,
-  "update": "2026-10-21 13:07",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:26",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.008730258388151413,
-    "pb": 3104.738202624789,
-    "ps": 0.0007428434005737242,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.12198761805210252,
-    "eps": 97362.5249343832,
+    "eps": null,
     "de": 4.017614064796112,
     "margin_net": 0.0904014509148701,
     "current_ratio": 1.3636747200121844,
     "roa": 0.023068416985415757,
-    "bv": 0.273775096167979
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3518838014000000.0
     },
     "eps": {
-      "2024-Q1": 29070000.0,
-      "2024-Q2": 11070000.0,
-      "2024-Q3": 23830000.0,
-      "2026-Q1": 33400.0
+      "2024-Q1": 29.07,
+      "2024-Q2": 11.07,
+      "2024-Q3": 23.83,
+      "2026-Q1": 0.03
     },
     "net_income": {
       "2024-Q1": 276907336000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 159110000.0,
-      "2022": 192900000.0,
-      "2023": 53780000.0,
-      "2025": 121860000.0
+      "2021": 159.11,
+      "2022": 192.9,
+      "2023": 53.78,
+      "2025": 121.86
     },
     "revenue_per_share": {
       "2021": 5203100578000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 8096250331136,
-    "enterprise_value": 17908231045120,
-    "shares_outstanding": 9525000000,
-    "free_float_pct": 29.163
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.3,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.1197,
-    "vol_trend": 0.669,
-    "price_chg_20d": -15.87
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.139,
+    "vol_trend": 0.679,
+    "price_chg_20d": -13.08
   },
   "neraca": {
     "aset": 13789765557.0,

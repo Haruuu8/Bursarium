@@ -1,23 +1,23 @@
 {
   "kode": "TRUS",
-  "nama": "PT Trust Finance Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Credit Services",
-  "harga": 418.0,
-  "update": "2026-10-21 13:16",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:34",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.5348594341514866e-05,
-    "pb": 0.8095557422634216,
-    "ps": -1.0741075337586031e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.00010132578576177818,
-    "eps": 27233764.25875,
+    "eps": null,
     "de": 0.040360657446025884,
     "margin_net": -0.003471713598386812,
     "current_ratio": null,
     "roa": 9.739486497934489e-05,
-    "bv": 516.33257375375
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": -1.205578796e+16
     },
     "eps": {
-      "2024-Q1": 6380000.0,
-      "2024-Q2": 9280000.0,
-      "2024-Q3": 11520000.0,
-      "2026-Q1": 50000.0
+      "2024-Q1": 6.38,
+      "2024-Q2": 9.28,
+      "2024-Q3": 11.52,
+      "2026-Q1": 0.05
     },
     "net_income": {
       "2024-Q1": 5101980336000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 29880000.0,
-      "2022": 29870000.0,
-      "2023": 32490000.0
+      "2021": 29.88,
+      "2022": 29.87,
+      "2023": 32.49
     },
     "revenue_per_share": {
       "2021": -1.5069137348e+16,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 334399995904,
-    "enterprise_value": 225397440512,
-    "shares_outstanding": 800000000,
-    "free_float_pct": 20.723
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.2423,
-    "vol_trend": 0.2,
-    "price_chg_20d": -8.73
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.173,
+    "vol_trend": 0.332,
+    "price_chg_20d": -6.36
   },
   "neraca": {
     "aset": 429737676713.0,

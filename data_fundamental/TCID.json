@@ -1,35 +1,35 @@
 {
   "kode": "TCID",
-  "nama": "PT. Mandom Indonesia Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Household & Personal Products",
-  "harga": 2510.0,
-  "update": "2026-10-21 13:11",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:30",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 9.64013982124096,
-    "pb": 0.5502682575738783,
-    "ps": 0.4912582120948919,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.014270235385005112,
-    "eps": 260.3696675093341,
+    "eps": null,
     "de": 0.2486997722548108,
     "margin_net": 0.05095965631250077,
     "current_ratio": 6.561380568503424,
     "roa": 0.011428086248282978,
-    "bv": 4561.411575994842
+    "bv": null
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 4.9086541818100006e+17,
+      "2024-Q3": -8.537164767787604e+17,
       "2026-Q1": 5.13657911201e+17
     },
     "eps": {
-      "2024-Q3": -112000000.0,
-      "2026-Q1": 65000000.0
+      "2024-Q3": -112.0,
+      "2026-Q1": 65.0
     },
     "net_income": {
       "2024-Q3": -4.5164516254e+16,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -376000000.0,
-      "2022": 92000000.0,
-      "2023": 95000000.0,
-      "2025": 38000000.0
+      "2021": -376.0,
+      "2022": 92.0,
+      "2023": 95.0,
+      "2025": 38.0
     },
     "revenue_per_share": {
-      "2021": 1.850311080131e+18,
-      "2022": 2.044821803111e+18,
-      "2023": 2.050460062443e+18,
-      "2025": 2.146553443744e+18
+      "2021": 1850311080131.0,
+      "2022": 2044821803111.0,
+      "2023": 2050460062443.0,
+      "2025": 2146553443744.0
     }
   },
   "statistik": {
-    "market_cap": 1009354670080,
-    "enterprise_value": 219233501184,
-    "shares_outstanding": 402133334,
-    "free_float_pct": 18.98000005142573
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5367,
-    "vol_trend": 0.597,
-    "price_chg_20d": -12.16
+    "cmf": -0.5727,
+    "vol_trend": 0.472,
+    "price_chg_20d": -0.41
   },
   "neraca": {
     "aset": 2290482417468.0,

@@ -1,23 +1,23 @@
 {
   "kode": "LPPF",
-  "nama": "PT MDS Retailing Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Department Stores",
-  "harga": 1545.0,
-  "update": "2026-10-21 12:30",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:48",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.002275879529285634,
-    "pb": 0.007177784969997903,
-    "ps": 0.0003347210349785272,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 2.167772123842265,
-    "eps": 678858.4281897176,
+    "eps": null,
     "de": 13.540303981309842,
     "margin_net": 0.18612150802510957,
     "current_ratio": 0.6063292942188085,
     "roa": 0.14908712545684927,
-    "bv": 215247.46233801587
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1011375000000.0
     },
     "eps": {
-      "2024-Q1": 144000000.0,
-      "2024-Q2": 133000000.0,
-      "2024-Q3": -2000000.0,
-      "2026-Q1": 311000000.0,
-      "2026-Q2": -19000000.0
+      "2024-Q1": 144.0,
+      "2024-Q2": 133.0,
+      "2024-Q3": -2.0,
+      "2026-Q1": 311.0,
+      "2026-Q2": -19.0
     },
     "net_income": {
       "2024-Q1": 325971000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 351000000.0,
-      "2022": 582000000.0,
-      "2023": 298000000.0,
-      "2025": 324000000.0
+      "2021": 351.0,
+      "2022": 582.0,
+      "2023": 298.0,
+      "2025": 324.0
     },
     "revenue_per_share": {
       "2021": 5585975000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1807992356864,
-    "enterprise_value": 5724659777536,
-    "shares_outstanding": 1395970,
-    "free_float_pct": 75722.7408898472
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1454,
-    "vol_trend": 0.778,
-    "price_chg_20d": -1.27
+    "cmf": 0.2302,
+    "vol_trend": 0.815,
+    "price_chg_20d": 0.0
   },
   "neraca": {
     "aset": 4369056.0,

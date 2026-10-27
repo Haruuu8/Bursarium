@@ -1,26 +1,26 @@
 {
   "kode": "WAPO",
-  "nama": "PT Wahana Pronatural Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 169.0,
-  "update": "2026-10-21 13:20",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:40",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 8.510090606410675e-05,
-    "pb": 3.4427712764030036,
-    "ps": 0.2538369972470721,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.010113791484809674,
-    "eps": 1985877.7986769238,
+    "eps": null,
     "de": 1.3489800563680363,
     "margin_net": 0.0029827766705075496,
     "current_ratio": 1.212587005421041,
     "roa": 0.0043056097719482095,
-    "bv": 49.08836121595933
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 2.06545940932e+17
     },
     "eps": {
-      "2024-Q1": 22500.0,
-      "2026-Q1": 5000.0
+      "2024-Q1": 0.02,
+      "2026-Q1": 0.01
     },
     "net_income": {
       "2024-Q1": 2795535566000000.0,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -12600.0,
-      "2022": 32600.0,
-      "2023": 190450.0,
-      "2025": -9459090.0
+      "2021": -0.01,
+      "2022": 0.03,
+      "2023": 0.19,
+      "2025": -9.46
     },
     "revenue_per_share": {
       "2021": 3.17186703933e+17,
       "2022": 3.3002047537e+17,
       "2023": 4.20953775283e+17,
-      "2025": 1.436059286479e+18
+      "2025": 1436059286479.0
     }
   },
   "statistik": {
-    "market_cap": 209716002816,
-    "enterprise_value": 199178371072,
-    "shares_outstanding": 1240923111,
-    "free_float_pct": 23.43400001355926
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1427,
-    "vol_trend": 0.738,
-    "price_chg_20d": -35.66
+    "cmf": -0.4004,
+    "vol_trend": 0.511,
+    "price_chg_20d": -43.75
   },
   "neraca": {
     "aset": 143087842752.0,

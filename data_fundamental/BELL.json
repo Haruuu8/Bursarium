@@ -1,26 +1,26 @@
 {
   "kode": "BELL",
-  "nama": "PT Trisula Textile Industries Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Textile Manufacturing",
-  "harga": 75.0,
-  "update": "2026-10-21 13:32",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:53",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 29.270641672005162,
-    "pb": 2.2482004285137234,
-    "ps": 0.8195634762872845,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03840367515181487,
-    "eps": 2.5622943576167314,
+    "eps": null,
     "de": 1.287524683654181,
     "margin_net": 0.027999504946662174,
     "current_ratio": 1.3346780984688835,
     "roa": 0.015646113244076866,
-    "bv": 33.360014991893856
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 1.76731025638e+17
     },
     "eps": {
-      "2024-Q1": 772730.48,
-      "2026-Q1": 430864.91,
-      "2026-Q2": 843643.45
+      "2024-Q1": 0.77,
+      "2026-Q1": 0.43,
+      "2026-Q2": 0.84
     },
     "net_income": {
       "2024-Q1": 5602295958000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 370000.0,
-      "2023": 1208700.59,
-      "2025": 1333499.99
+      "2022": 0.37,
+      "2023": 1.21,
+      "2025": 1.33
     },
     "revenue_per_share": {
       "2022": 4.61846092519e+17,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 540932308992,
-    "enterprise_value": 757170503680,
-    "shares_outstanding": 7212431000,
-    "free_float_pct": 8.857901032259443
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.6208,
-    "vol_trend": 0.702,
-    "price_chg_20d": -23.3
+    "cmf": -0.3359,
+    "vol_trend": 0.168,
+    "price_chg_20d": -9.89
   },
   "neraca": {
     "aset": 590573868657.0,

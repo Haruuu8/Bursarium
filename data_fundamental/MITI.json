@@ -1,23 +1,23 @@
 {
   "kode": "MITI",
-  "nama": "PT Mitra Investindo Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 254.0,
-  "update": "2026-10-21 12:39",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:55",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.00014491358447021082,
-    "pb": 2.042686913958312,
-    "ps": 3.634836834614831e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0027867099680892,
-    "eps": 1752768.7340603566,
+    "eps": null,
     "de": 0.17311044130086503,
     "margin_net": 0.031036671862068294,
     "current_ratio": 5.509963573486002,
     "roa": 0.002182894893869713,
-    "bv": 124.34602594471986
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 4.1873646916e+16
     },
     "eps": {
-      "2024-Q1": 810000.0,
-      "2024-Q2": 890000.0,
-      "2024-Q3": -210000.0,
-      "2026-Q1": 350000.0
+      "2024-Q1": 0.81,
+      "2024-Q2": 0.89,
+      "2024-Q3": -0.21,
+      "2026-Q1": 0.35
     },
     "net_income": {
       "2024-Q1": 2876156124000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 6770000.0,
-      "2022": 5570000.0,
-      "2023": 10880000.0,
-      "2025": 3490000.0
+      "2021": 6.77,
+      "2022": 5.57,
+      "2023": 10.88,
+      "2025": 3.49
     },
     "revenue_per_share": {
       "2021": 4.6303564507e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 952633786368,
-    "enterprise_value": 844647038976,
-    "shares_outstanding": 3750526603,
-    "free_float_pct": 14.799999993494248
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1505,
-    "vol_trend": 1.277,
-    "price_chg_20d": 0.0
+    "cmf": 0.1614,
+    "vol_trend": 1.433,
+    "price_chg_20d": 5.34
   },
   "neraca": {
     "aset": 595364734532.0,

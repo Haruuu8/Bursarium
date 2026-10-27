@@ -1,23 +1,23 @@
 {
   "kode": "TIRT",
-  "nama": "PT Tirta Mahakam Resources Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Lumber & Wood Production",
-  "harga": 590.0,
-  "update": "2026-10-21 13:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:32",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.2371359444082222e-05,
+    "ps": null,
     "roe": -0.012359299841894487,
-    "eps": -14353020.093652269,
+    "eps": null,
     "de": -1.630881329084386,
     "margin_net": 0.2802061163119072,
     "current_ratio": 24.89979483514148,
     "roa": 0.019590530377292747,
-    "bv": -596.4639828420308
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2.661854537e+16
     },
     "eps": {
-      "2024-Q1": -6830000.0,
-      "2024-Q2": -7040000.0,
-      "2024-Q3": -7850000.0,
-      "2026-Q1": 7370000.0
+      "2024-Q1": -6.83,
+      "2024-Q2": -7.04,
+      "2024-Q3": -7.85,
+      "2026-Q1": 7.37
     },
     "net_income": {
       "2024-Q1": -6913304954000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -125050000.0,
-      "2022": -85340000.0,
-      "2023": -32970000.0,
-      "2025": -8140000.0
+      "2021": -125.05,
+      "2022": -85.34,
+      "2023": -32.97,
+      "2025": -8.14
     },
     "revenue_per_share": {
       "2021": 1.5676233957e+16,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 596947107840,
-    "enterprise_value": 1532008988672,
-    "shares_outstanding": 1011774750,
-    "free_float_pct": 20.390999973067128
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

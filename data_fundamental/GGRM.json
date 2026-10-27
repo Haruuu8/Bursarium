@@ -1,23 +1,23 @@
 {
   "kode": "GGRM",
-  "nama": "PT Gudang Garam Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Tobacco",
-  "harga": 15850.0,
-  "update": "2026-10-21 12:01",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:19",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.041967976209712,
-    "pb": 0.4764780378815791,
-    "ps": 0.3434096539221082,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.046499363530300264,
-    "eps": 1752.9369758555742,
+    "eps": null,
     "de": 0.21528579390943323,
     "margin_net": 0.07227682737849352,
     "current_ratio": 3.644119620193322,
     "roa": 0.03826054341270702,
-    "bv": 33264.91199986695
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 21063287000000.0
     },
     "eps": {
-      "2024-Q1": 310000000.0,
-      "2024-Q2": 171000000.0,
-      "2024-Q3": 35000000.0,
-      "2026-Q1": 799000000.0,
-      "2026-Q2": 748000000.0
+      "2024-Q1": 310.0,
+      "2024-Q2": 171.0,
+      "2024-Q3": 35.0,
+      "2026-Q1": 799.0,
+      "2026-Q2": 748.0
     },
     "net_income": {
       "2024-Q1": 595572000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2913000000.0,
-      "2022": 1445000000.0,
-      "2025": 809000000.0
+      "2021": 2913.0,
+      "2022": 1445.0,
+      "2025": 809.0
     },
     "revenue_per_share": {
       "2021": 124881266000000.0,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 30496794869760,
-    "enterprise_value": 21326016282624,
-    "shares_outstanding": 1924088000,
-    "free_float_pct": 23.779000024946882
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.152,
-    "vol_trend": 0.926,
-    "price_chg_20d": -11.72
+    "score": 4.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0127,
+    "vol_trend": 1.103,
+    "price_chg_20d": -4.91
   },
   "neraca": {
     "aset": 77787029.0,

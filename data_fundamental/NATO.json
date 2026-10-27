@@ -1,23 +1,23 @@
 {
   "kode": "NATO",
-  "nama": "PT Olympus Strategic Indonesia Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 755.0,
-  "update": "2026-10-21 14:10",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:12",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.8861443989065996,
-    "ps": 1.7013576063270685e-05,
+    "pb": null,
+    "ps": null,
     "roe": -0.04064884646882025,
-    "eps": -10519081.399868466,
+    "eps": null,
     "de": 1.111766008484796,
     "margin_net": -0.2494012172414553,
     "current_ratio": 0.6901282368535427,
     "roa": -0.019690693255225537,
-    "bv": 261.5946729089604
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3.41137038993e+17
     },
     "eps": {
-      "2024-Q1": -71279.68,
-      "2024-Q2": 112320.15,
-      "2024-Q3": 73399.83,
-      "2026-Q1": -10633521.7
+      "2024-Q1": -0.07,
+      "2024-Q2": 0.11,
+      "2024-Q3": 0.07,
+      "2026-Q1": -10.63
     },
     "net_income": {
       "2024-Q1": -570316697000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -750000.0,
-      "2022": -170000.0,
-      "2023": 83696.85,
-      "2025": 16536.49
+      "2021": -0.75,
+      "2022": -0.17,
+      "2023": 0.08,
+      "2025": 0.02
     },
     "revenue_per_share": {
       "2021": 1806154116000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 6040838995968,
-    "enterprise_value": 4928859275264,
-    "shares_outstanding": 8001111504,
-    "free_float_pct": 65.58400000270763
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.2356,
-    "vol_trend": 0.255,
-    "price_chg_20d": -44.49
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1348,
+    "vol_trend": 10.835,
+    "price_chg_20d": -14.5
   },
   "neraca": {
     "aset": 4320822617478.0,

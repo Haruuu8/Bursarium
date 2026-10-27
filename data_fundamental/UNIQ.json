@@ -3,103 +3,120 @@
   "nama": "PT Ulima Nitra Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 114.0,
-  "update": "2026-10-21 14:38",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 125.0,
+  "update": "2026-10-27 14:28",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 0.7834059416877778,
-    "ps": 1.5639258794623956,
-    "roe": -0.05455295521515387,
-    "eps": -31.753840830612972,
-    "de": 0.6040312846499297,
-    "margin_net": -0.43561976708180106,
-    "current_ratio": 1.6989676550329391,
-    "roa": -0.03400990724882259,
-    "bv": 145.5184265700069
+    "pe": 1.455308128442466e-05,
+    "pb": 0.8028635342487049,
+    "ps": 7.894953623247081e-07,
+    "roe": 0.014360492215075292,
+    "eps": 8589246.32914546,
+    "de": 0.46829614956170074,
+    "margin_net": 0.033029158159779255,
+    "current_ratio": 2.0903130364347766,
+    "roa": 0.00978037858327288,
+    "bv": 155.69271073815946
   },
   "quarterly": {
     "revenue": {
       "2024-Q3": 2.23067090735e+17,
-      "2026-Q1": 5.7202848725e+16
+      "2024-Q4": 1.63527310787e+17,
+      "2025-Q1": 1.35177434906e+17,
+      "2025-Q2": 1.5299232455e+17,
+      "2025-Q3": 1.49528012708e+17,
+      "2025-Q4": 1.34978596623e+17,
+      "2026-Q1": 5.7202848725e+16,
+      "2026-Q2": 1.55282536735e+17
     },
     "eps": {
-      "2024-Q3": 10600000.0,
-      "2026-Q1": -7940000.0
+      "2024-Q3": 10.6,
+      "2024-Q4": 3.96,
+      "2025-Q1": 1.74,
+      "2025-Q2": 3.91,
+      "2025-Q3": 7.64,
+      "2025-Q4": -1.29,
+      "2026-Q1": -7.94,
+      "2026-Q2": 10.18
     },
     "net_income": {
       "2024-Q3": 3.3290385565e+16,
-      "2026-Q1": -2.4918691638e+16
+      "2024-Q4": 1.2441790619e+16,
+      "2025-Q1": 5468854336000000.0,
+      "2025-Q2": 1.2265338861e+16,
+      "2025-Q3": 2.3977714359e+16,
+      "2025-Q4": -4034429552000000.0,
+      "2026-Q1": -2.4918691638e+16,
+      "2026-Q2": 3.1936905041e+16
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2021": -3120000.0,
-      "2022": 7310000.0,
-      "2023": 13530000.0,
-      "2025": 12000000.0
+      "2021": -3.12,
+      "2022": 7.31,
+      "2023": 13.53,
+      "2024": 21.53,
+      "2025": 12.0
     },
     "revenue_per_share": {
       "2021": 3.18296247836e+17,
       "2022": 4.24781798011e+17,
       "2023": 5.71540783292e+17,
+      "2024": 6.70148711332e+17,
       "2025": 5.72676368787e+17
     }
   },
   "statistik": {
-    "market_cap": 357844058112,
-    "enterprise_value": 476584476672,
+    "market_cap": 392372879360,
+    "enterprise_value": 486001442816,
     "shares_outstanding": 3138983000,
     "free_float_pct": 19.959000000955722
   },
   "akumulasi": {
-    "score": 1.8,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1106,
-    "vol_trend": 5.383,
-    "price_chg_20d": -9.52
+    "score": 4.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0909,
+    "vol_trend": 5.696,
+    "price_chg_20d": 0.86
   },
   "neraca": {
-    "aset": 732689197171.0,
-    "aset_lancar": 361765079501.0,
-    "kas": 6771869812.0,
-    "piutang_usaha": 312036206315.0,
-    "persediaan": 6990151063.0,
-    "aset_tetap": 370001907370.0,
-    "liabilitas": 275909329981.0,
-    "liabilitas_jangka_pendek": 212932293578.0,
-    "liabilitas_jangka_panjang": 62977036403.0,
-    "utang_usaha": 312036206315.0,
-    "utang_bank": 55348918901.0,
-    "ekuitas": 456779867190.0,
-    "ekuitas_induk": 456779867190.0,
+    "aset": 717580954893.0,
+    "aset_lancar": 366476874179.0,
+    "kas": 5875443432.0,
+    "piutang_usaha": 317649621640.0,
+    "persediaan": 7173149853.0,
+    "aset_tetap": 350481298126.0,
+    "liabilitas": 228864182662.0,
+    "liabilitas_jangka_pendek": 175321527346.0,
+    "liabilitas_jangka_panjang": 53542655316.0,
+    "utang_usaha": 317649621640.0,
+    "utang_bank": 22274102339.0,
+    "ekuitas": 488716772231.0,
+    "ekuitas_induk": 488716772231.0,
     "modal_saham": null,
-    "saldo_laba": 377813738190.0
+    "saldo_laba": 409750643231.0
   },
   "laba_rugi": {
-    "pendapatan": 57202848725.0,
-    "beban_pokok": 76220795105.0,
+    "pendapatan": 212485385460.0,
+    "beban_pokok": 189524773940.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -27139624446.0,
-    "beban_pajak": 2220932808.0,
-    "laba_bersih": -24918691638.0,
-    "laba_induk": -24918691638.0,
-    "eps_basic": -7.94,
+    "laba_sebelum_pajak": 7491068820.0,
+    "beban_pajak": -472855417.0,
+    "laba_bersih": 7018213403.0,
+    "laba_induk": 7018213403.0,
+    "eps_basic": 2.24,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 493062759.0,
+    "capex": 2290366429.0,
     "dividen_dibayar": null
   }
 }

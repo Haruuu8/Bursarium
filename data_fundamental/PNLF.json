@@ -1,23 +1,23 @@
 {
   "kode": "PNLF",
-  "nama": "PT Panin Financial Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 164.0,
-  "update": "2026-10-21 12:49",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:04",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 2.488105794812123,
-    "pb": 0.16665223914219549,
-    "ps": -715.3821032627708,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.025831601530925175,
-    "eps": 65.91359593388337,
+    "eps": null,
     "de": 4.947034200580037,
     "margin_net": -270.52741774675974,
     "current_ratio": null,
     "roa": 0.0034020142337219308,
-    "bv": 984.0851874787444
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": -3009000000.0
     },
     "eps": {
-      "2024-Q1": 13080000.0,
-      "2024-Q2": 11820000.0,
-      "2024-Q3": 15590000.0,
-      "2026-Q1": 25420000.0
+      "2024-Q1": 13.08,
+      "2024-Q2": 11.82,
+      "2024-Q3": 15.59,
+      "2026-Q1": 25.42
     },
     "net_income": {
       "2024-Q1": 418858000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 41470000.0,
-      "2022": 56160000.0,
-      "2023": 47170000.0,
-      "2025": 54470000.0
+      "2021": 41.47,
+      "2022": 56.16,
+      "2023": 47.17,
+      "2025": 54.47
     },
     "revenue_per_share": {
       "2021": 148000000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5251619880960,
-    "enterprise_value": 38854698467328,
-    "shares_outstanding": 32022073293,
-    "free_float_pct": 32.09518329734966
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1422,
-    "vol_trend": 0.632,
-    "price_chg_20d": -17.65
+    "score": 3.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0415,
+    "vol_trend": 0.685,
+    "price_chg_20d": -14.29
   },
   "neraca": {
     "aset": 239275013.0,

@@ -1,10 +1,10 @@
 {
   "kode": "CASH",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-21 11:15",
+  "nama": "PT Cashlez Worldwide Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Business Equipment & Supplies",
+  "harga": 220.0,
+  "update": "2026-10-26 23:29",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -13,14 +13,14 @@
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": null,
+    "ps": 3.1536160948509893,
     "roe": 0.7672987840308725,
-    "eps": null,
+    "eps": -32.391462267287096,
     "de": -4.497738947333108,
     "margin_net": -0.46431925791761414,
     "current_ratio": 1.0003814589451645,
     "roa": -0.2038631150583964,
-    "bv": null
+    "bv": -21.10746357313647
   },
   "quarterly": {
     "revenue": {},
@@ -30,29 +30,33 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -7010000.0,
-      "2023": -19780000.0,
-      "2025": -41310000.0
+      "2021": -7.2,
+      "2022": -7.01,
+      "2023": -19.78,
+      "2024": -23.57,
+      "2025": -41.31
     },
     "revenue_per_share": {
+      "2021": 1.40851108806e+17,
       "2022": 1.28979803706e+17,
       "2023": 1.94879027696e+17,
+      "2024": 1.38343800644e+17,
       "2025": 1.10185952915e+17
     }
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 534116466688,
+    "enterprise_value": 321395621888,
+    "shares_outstanding": 2427802216,
+    "free_float_pct": 5.898273675519209
   },
   "akumulasi": {
-    "score": 2.6,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.13,
-    "vol_trend": 0.419,
-    "price_chg_20d": -14.29
+    "cmf": -0.131,
+    "vol_trend": 0.596,
+    "price_chg_20d": -6.78
   },
   "neraca": {
     "aset": 192874674385.0,

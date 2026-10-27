@@ -1,23 +1,23 @@
 {
   "kode": "MTDL",
-  "nama": "PT Metrodata Electronics Tbk",
-  "sektor": "Technology",
-  "industri": "Electronics & Computer Distribution",
-  "harga": 458.0,
-  "update": "2026-10-21 12:42",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:59",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.152607904303805,
-    "pb": 1.1542935357270134,
-    "ps": 0.23468600552229554,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03262552923130487,
-    "eps": 50.04038245587205,
+    "eps": null,
     "de": 1.6621192737090698,
     "margin_net": 0.02367970724809785,
     "current_ratio": 1.7402167364412495,
     "roa": 0.010853165802618744,
-    "bv": 396.7794896395534
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 6711485000000.0
     },
     "eps": {
-      "2024-Q1": 12000000.0,
-      "2024-Q2": 10000000.0,
-      "2024-Q3": 15000000.0,
-      "2026-Q1": 13000000.0
+      "2024-Q1": 12.0,
+      "2024-Q2": 10.0,
+      "2024-Q3": 15.0,
+      "2026-Q1": 13.0
     },
     "net_income": {
       "2024-Q1": 147368000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 41000000.0,
-      "2022": 47000000.0,
-      "2023": 53000000.0,
-      "2025": 66000000.0
+      "2021": 41.0,
+      "2022": 47.0,
+      "2023": 53.0,
+      "2025": 66.0
     },
     "revenue_per_share": {
       "2021": 18500587000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5622813163520,
-    "enterprise_value": 9449797320704,
-    "shares_outstanding": 12276884585,
-    "free_float_pct": 44.30900000189258
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3441,
-    "vol_trend": 0.549,
-    "price_chg_20d": -8.4
+    "cmf": -0.21,
+    "vol_trend": 0.667,
+    "price_chg_20d": -5.22
   },
   "neraca": {
     "aset": 14643285.0,

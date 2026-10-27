@@ -3,19 +3,16 @@
   "nama": "PT Diastika Biotekindo Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 102.0,
-  "update": "2026-10-21 11:10",
+  "harga": 103.0,
+  "update": "2026-10-26 23:23",
   "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 59.933299543008815,
-    "pb": 2.0709416627270003,
-    "ps": 2.5494711006710338,
+    "pe": 3.453892093945642e-05,
+    "pb": 2.0912450123615787,
+    "ps": 2.06395435316044e-06,
     "roe": 0.017277053645618736,
-    "eps": 1.7018919495130356,
+    "eps": 2982142.9621541915,
     "de": 0.24400579356449434,
     "margin_net": 0.042538473938707556,
     "current_ratio": 4.091880913278582,
@@ -24,14 +21,20 @@
   },
   "quarterly": {
     "revenue": {
+      "2025-Q3": 5.3425555152e+16,
+      "2025-Q4": 6.956328393e+16,
       "2026-Q1": 3.7273939501e+16,
       "2026-Q2": 4.5009756784e+16
     },
     "eps": {
-      "2026-Q1": 684547.35,
-      "2026-Q2": 1052887.15
+      "2025-Q3": 3.49,
+      "2025-Q4": -1.92,
+      "2026-Q1": 0.68,
+      "2026-Q2": 1.05
     },
     "net_income": {
+      "2025-Q3": 8975498215000000.0,
+      "2025-Q4": -209178546000000.0,
       "2026-Q1": 686585057000000.0,
       "2026-Q2": 2813637813000000.0
     },
@@ -39,25 +42,25 @@
   },
   "riwayat": {
     "eps": {
-      "2025": 2623400.78
+      "2025": 2.62
     },
     "revenue_per_share": {
       "2025": 2.01306181384e+17
     }
   },
   "statistik": {
-    "market_cap": 419559800832,
-    "enterprise_value": 394093068288,
+    "market_cap": 423673135104,
+    "enterprise_value": 390059720704,
     "shares_outstanding": 4113331485,
     "free_float_pct": 19.021709722478153
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.2321,
-    "vol_trend": 0.307,
-    "price_chg_20d": -21.21
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2266,
+    "vol_trend": 0.5,
+    "price_chg_20d": -17.6
   },
   "neraca": {
     "aset": 252027783114.0,

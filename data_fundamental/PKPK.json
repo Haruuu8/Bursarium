@@ -1,33 +1,33 @@
 {
   "kode": "PKPK",
-  "nama": "PT Paragon Karya Perkasa Tbk",
-  "sektor": "Industrials",
-  "industri": "Engineering & Construction",
-  "harga": 6550.0,
-  "update": "2026-10-21 12:49",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:07",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.11368855965042012,
-    "pb": 0.028462024625119195,
-    "ps": 0.009998315093099272,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.06258770608194177,
-    "eps": 57613.53666666667,
+    "eps": null,
     "de": 1.322431274666522,
     "margin_net": 0.08794477759101706,
     "current_ratio": 0.4991621799324314,
     "roa": 0.024586803608629016,
-    "bv": 230131.20416666666
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2026-Q1": 196533114000000.0
     },
     "eps": {
-      "2026-Q1": 14400000.0
+      "2026-Q1": 14.4
     },
     "net_income": {
       "2026-Q1": 17284061000000.0
@@ -36,10 +36,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -1000000.0,
-      "2022": -49020000.0,
-      "2023": -6950000.0,
-      "2025": 32160.0
+      "2021": -1.0,
+      "2022": -49.02,
+      "2023": -6.95,
+      "2025": 0.03
     },
     "revenue_per_share": {
       "2021": 3078120000000.0,
@@ -49,18 +49,18 @@
     }
   },
   "statistik": {
-    "market_cap": 7859999866880,
-    "enterprise_value": 7851646910464,
-    "shares_outstanding": 1200000000,
-    "free_float_pct": 24.11
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1835,
-    "vol_trend": 2.472,
-    "price_chg_20d": 39.61
+    "cmf": 0.1994,
+    "vol_trend": 1.327,
+    "price_chg_20d": 22.88
   },
   "neraca": {
     "aset": 702981212.0,

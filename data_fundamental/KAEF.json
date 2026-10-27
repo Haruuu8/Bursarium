@@ -1,23 +1,23 @@
 {
   "kode": "KAEF",
-  "nama": "PT Kimia Farma Tbk",
-  "sektor": "Healthcare",
-  "industri": "Medical Distribution",
-  "harga": 360.0,
-  "update": "2026-10-21 12:20",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:39",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 691.9796592454269,
-    "ps": 0.00019979428856547633,
+    "pb": null,
+    "ps": null,
     "roe": 0.0035655661355495838,
-    "eps": -55469.276598065764,
+    "eps": null,
     "de": 4.112000326682527,
     "margin_net": 0.002196204277836746,
     "current_ratio": 1.0340952827740821,
     "roa": 0.0007025325073829337,
-    "bv": 0.5202465060787539
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 2671041110000000.0
     },
     "eps": {
-      "2024-Q1": -18470000.0,
-      "2024-Q2": -22300000.0,
-      "2024-Q3": -58260000.0,
-      "2026-Q1": 22230.0,
-      "2026-Q2": -3680.27
+      "2024-Q1": -18.47,
+      "2024-Q2": -22.3,
+      "2024-Q3": -58.26,
+      "2026-Q1": 0.02,
+      "2026-Q2": -0.0
     },
     "net_income": {
       "2024-Q1": -102733390000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 54420000.0,
-      "2022": -30620000.0,
-      "2023": -353140000.0,
-      "2025": -30.0
+      "2021": 54.42,
+      "2022": -30.62,
+      "2023": -353.14,
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2021": 1.2857626593e+16,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2003971866624,
-    "enterprise_value": 8834571567104,
-    "shares_outstanding": 5566588406,
-    "free_float_pct": 10.178000000670428
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.8,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2198,
-    "vol_trend": 0.217,
-    "price_chg_20d": -18.89
+    "cmf": -0.1136,
+    "vol_trend": 0.205,
+    "price_chg_20d": -9.8
   },
   "neraca": {
     "aset": 14698071465.0,

@@ -1,26 +1,26 @@
 {
   "kode": "PNBN",
-  "nama": "PT Bank Pan Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 735.0,
-  "update": "2026-10-21 12:49",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:05",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 6.332164233114541,
-    "pb": 0.3258662107471998,
-    "ps": 1.1525589709110367,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.012865514804679944,
-    "eps": 116.07405824319288,
+    "eps": null,
     "de": 2.8072795868669234,
     "margin_net": 0.18201659471869677,
     "current_ratio": null,
     "roa": 0.003099597633595895,
-    "bv": 2255.52688729117
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 3837727000000.0
     },
     "eps": {
-      "2024-Q3": 37852748.49,
-      "2026-Q1": 29020000.0
+      "2024-Q3": 37.85,
+      "2026-Q1": 29.02
     },
     "net_income": {
       "2024-Q3": 911730000000.0,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 85670000.0,
-      "2022": 126280000.0,
-      "2023": 105110000.0,
-      "2025": 114240000.0
+      "2021": 85.67,
+      "2022": 126.28,
+      "2023": 105.11,
+      "2025": 114.24
     },
     "revenue_per_share": {
       "2021": 14347292000000.0,
       "2022": 13906210000000.0,
-      "2023": 1.4588381e+19,
+      "2023": 14588381000000.0,
       "2025": 15600135000000.0
     }
   },
   "statistik": {
-    "market_cap": 17692826271744,
-    "enterprise_value": 30619776057344,
-    "shares_outstanding": 24071873098,
-    "free_float_pct": 15.092000000207046
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.2,
+    "score": 3.7,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0184,
-    "vol_trend": 0.864,
-    "price_chg_20d": -13.95
+    "cmf": -0.055,
+    "vol_trend": 0.927,
+    "price_chg_20d": -10.12
   },
   "neraca": {
     "aset": 225361509.0,

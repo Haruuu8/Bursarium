@@ -1,10 +1,10 @@
 {
   "kode": "SWAT",
-  "nama": "PT Sriwahana Adityakarta Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 16.0,
-  "update": "2026-10-21 13:51",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:01",
   "periode_terbaru": "2025-audit",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 3.900979739453477,
-    "ps": 0.7405991940531989,
+    "pb": null,
+    "ps": null,
     "roe": -3.9390379416512706,
-    "eps": -16.156097000198727,
+    "eps": null,
     "de": 30.862484382389272,
     "margin_net": -0.7478245260870301,
     "current_ratio": 3.5521067763866014,
     "roa": -0.12360105332029266,
-    "bv": 4.101533734764176
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2024-Q3": 4.4165657258e+16
     },
     "eps": {
-      "2024-Q1": -960000.0,
-      "2024-Q2": -2350000.0,
-      "2024-Q3": -3090000.0
+      "2024-Q1": -0.96,
+      "2024-Q2": -2.35,
+      "2024-Q3": -3.09
     },
     "net_income": {
       "2024-Q1": -2910898207000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -23270000.0,
-      "2022": 19220000.0,
-      "2025": -16160000.0
+      "2021": -23.27,
+      "2022": 19.22,
+      "2025": -16.16
     },
     "revenue_per_share": {
       "2021": 2.83466831736e+17,
@@ -53,10 +53,10 @@
     }
   },
   "statistik": {
-    "market_cap": 48307200000,
-    "enterprise_value": 419343990784,
-    "shares_outstanding": 3019200000,
-    "free_float_pct": 19.312
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

@@ -1,23 +1,23 @@
 {
   "kode": "HRME",
-  "nama": "PT Menteng Heritage Realty Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 37.0,
-  "update": "2026-10-21 14:11",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:14",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4172985712084749,
-    "ps": 2.1192845894044854e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.024645722189392472,
-    "eps": -14352042.822068388,
+    "eps": null,
     "de": 0.5527993269282933,
     "margin_net": -0.2966561156074143,
     "current_ratio": 0.3470473196328993,
     "roa": -0.015871776277336398,
-    "bv": 88.665532433648
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.9986661018e+16
     },
     "eps": {
-      "2024-Q1": -490000.0,
-      "2024-Q2": -12670000.0,
-      "2024-Q3": 500000.0,
-      "2026-Q1": 95982.74,
-      "2026-Q2": -2285982.74
+      "2024-Q1": -0.49,
+      "2024-Q2": -12.67,
+      "2024-Q3": 0.5,
+      "2026-Q1": 0.1,
+      "2026-Q2": -2.29
     },
     "net_income": {
       "2024-Q1": -2940505839000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -4950000.0,
-      "2022": -3820000.0,
-      "2023": -3980000.0,
-      "2025": -1020000.0
+      "2021": -4.95,
+      "2022": -3.82,
+      "2023": -3.98,
+      "2025": -1.02
     },
     "revenue_per_share": {
       "2021": 6.6395265475e+16,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 220473753600,
-    "enterprise_value": 356823400448,
-    "shares_outstanding": 5958750000,
-    "free_float_pct": 14.605000008391023
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3859,
-    "vol_trend": 5.584,
-    "price_chg_20d": -20.45
+    "cmf": -0.3247,
+    "vol_trend": 1.422,
+    "price_chg_20d": -11.9
   },
   "neraca": {
     "aset": 820400670818.0,

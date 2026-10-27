@@ -1,37 +1,37 @@
 {
   "kode": "SKBM",
-  "nama": "PT Sekar Bumi Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 515.0,
-  "update": "2026-10-21 13:01",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:20",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 4.544108629155849,
-    "pb": 0.850849216521915,
-    "ps": 0.22296125015431784,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.046810567591997455,
-    "eps": 113.33355824631127,
+    "eps": null,
     "de": 1.0060469793647269,
     "margin_net": 0.04906600355540729,
     "current_ratio": 1.5089897679678157,
     "roa": 0.022684142541479668,
-    "bv": 605.2776332159146
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2024-Q1": 5.67136830572e+17,
-      "2024-Q2": 5.7578183256899994e+17,
+      "2024-Q2": -5.671356876533368e+17,
       "2026-Q1": 9.9905606483e+17
     },
     "eps": {
-      "2024-Q1": 1380000.0,
-      "2024-Q2": -4260000.0,
-      "2026-Q1": 28333389.56
+      "2024-Q1": 1.38,
+      "2024-Q2": -4.26,
+      "2026-Q1": 28.33
     },
     "net_income": {
       "2024-Q1": 2379163637000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 17110000.0,
-      "2022": 49840000.0,
-      "2023": 860000.0,
-      "2025": 40200000.0
+      "2021": 17.11,
+      "2022": 49.84,
+      "2023": 0.86,
+      "2025": 40.2
     },
     "revenue_per_share": {
-      "2021": 3.84788747857e+18,
-      "2022": 3.802296289773e+18,
-      "2023": 2.839561359367e+18,
-      "2025": 3.013683622195e+18
+      "2021": 3847887478570.0,
+      "2022": 3802296289773.0,
+      "2023": 2839561359367.0,
+      "2025": 3013683622195.0
     }
   },
   "statistik": {
-    "market_cap": 891003142144,
-    "enterprise_value": 1038928248832,
-    "shares_outstanding": 1730103217,
-    "free_float_pct": 30.813999983447232
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.9,
+    "score": 4.3,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0733,
-    "vol_trend": 0.498,
-    "price_chg_20d": -4.72
+    "cmf": -0.0445,
+    "vol_trend": 0.481,
+    "price_chg_20d": -0.4
   },
   "neraca": {
     "aset": 2160967219253.0,

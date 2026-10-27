@@ -1,23 +1,23 @@
 {
   "kode": "PYFA",
-  "nama": "PT Pyridam Farma Tbk",
-  "sektor": "Healthcare",
-  "industri": "Drug Manufacturers - Specialty & Generic",
-  "harga": 170.0,
-  "update": "2026-10-21 12:54",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:12",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.6552968254108054,
-    "ps": 2.492056258913266e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.11241972791092845,
-    "eps": -7197464.398523558,
+    "eps": null,
     "de": 8.519110798760964,
     "margin_net": -0.10550862280847904,
     "current_ratio": 0.8560599170486259,
     "roa": -0.01144523376627621,
-    "bv": 64.02297414478286
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 7.66533599124e+17
     },
     "eps": {
-      "2024-Q1": -84690000.0,
-      "2024-Q2": 76340000.0,
-      "2024-Q3": -10720000.0,
-      "2026-Q1": -7200000.0
+      "2024-Q1": -84.69,
+      "2024-Q2": 76.34,
+      "2024-Q3": -10.72,
+      "2026-Q1": -7.2
     },
     "net_income": {
       "2024-Q1": -4.531664021e+16,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 10240000.0,
-      "2022": 514390000.0,
-      "2023": 159270000.0,
-      "2025": -33790000.0
+      "2021": 10.24,
+      "2022": 514.39,
+      "2023": 159.27,
+      "2025": -33.79
     },
     "revenue_per_share": {
       "2021": 6.30530235961e+17,
       "2022": 7.15425027099e+17,
       "2023": 7.02067615605e+17,
-      "2025": 2.760422051315e+18
+      "2025": 2760422051315.0
     }
   },
   "statistik": {
-    "market_cap": 1910247784448,
-    "enterprise_value": 7516004548608,
-    "shares_outstanding": 11236751463,
-    "free_float_pct": 29.931994723518073
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.9,
+    "score": 2.7,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1087,
-    "vol_trend": 0.468,
-    "price_chg_20d": -19.47
+    "cmf": -0.1205,
+    "vol_trend": 0.58,
+    "price_chg_20d": -19.23
   },
   "neraca": {
     "aset": 7066339231821.0,

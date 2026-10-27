@@ -1,26 +1,26 @@
 {
   "kode": "ISSP",
-  "nama": "PT Steel Pipe Industry of Indonesia Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Steel",
-  "harga": 394.0,
-  "update": "2026-10-21 12:16",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:35",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 5.775094585910867,
-    "pb": 0.48178799450040644,
-    "ps": 0.48972363629713506,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.04171256308734701,
-    "eps": 68.22399081760788,
+    "eps": null,
     "de": 0.8123872820902687,
     "margin_net": 0.0847992407763992,
     "current_ratio": 2.0476931449925098,
     "roa": 0.023015375924504516,
-    "bv": 817.7870858084813
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 1615092000000.0
     },
     "eps": {
-      "2024-Q3": 21020000.0,
-      "2026-Q1": 10900000.0,
-      "2026-Q2": 23140000.0
+      "2024-Q3": 21.02,
+      "2026-Q1": 10.9,
+      "2026-Q2": 23.14
     },
     "net_income": {
       "2024-Q3": 148519000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 68800000.0,
-      "2022": 43290000.0,
-      "2023": 70500000.0,
-      "2025": 75720000.0
+      "2021": 68.8,
+      "2022": 43.29,
+      "2023": 70.5,
+      "2025": 75.72
     },
     "revenue_per_share": {
       "2021": 5378808000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2778282590208,
-    "enterprise_value": 5725590388736,
-    "shares_outstanding": 7051478435,
-    "free_float_pct": 38.89427528257058
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 8.0,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2525,
-    "vol_trend": 1.312,
-    "price_chg_20d": 0.5
+    "cmf": 0.2865,
+    "vol_trend": 1.342,
+    "price_chg_20d": 12.18
   },
   "neraca": {
     "aset": 10451274.0,

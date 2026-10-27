@@ -1,23 +1,23 @@
 {
   "kode": "OASA",
-  "nama": "PT Maharaksa Biru Energi Tbk",
-  "sektor": "Industrials",
-  "industri": "Engineering & Construction",
-  "harga": 156.0,
-  "update": "2026-10-21 13:25",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:46",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.8399591413575975,
-    "ps": 1.8692366159474357e-05,
+    "pb": null,
+    "ps": null,
     "roe": -0.044049696079334226,
-    "eps": -3624826.0706261955,
+    "eps": null,
     "de": 0.13964819504261758,
     "margin_net": -9.947513798924602,
     "current_ratio": 1.899184309287816,
     "roa": -0.038937052161321886,
-    "bv": 84.78449140174753
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2383023565000000.0
     },
     "eps": {
-      "2024-Q1": 210000.0,
-      "2024-Q2": -30000.0,
-      "2024-Q3": -70094.99,
-      "2026-Q1": -3730000.0
+      "2024-Q1": 0.21,
+      "2024-Q2": -0.03,
+      "2024-Q3": -0.07,
+      "2026-Q1": -3.73
     },
     "net_income": {
       "2024-Q1": 1312186587000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 3630000.0,
-      "2022": 740000.0,
-      "2023": 470000.0,
-      "2025": -6740000.0
+      "2021": 3.63,
+      "2022": 0.74,
+      "2023": 0.47,
+      "2025": -6.74
     },
     "revenue_per_share": {
       "2021": 3410781850000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 990166319104,
-    "enterprise_value": 1096223948800,
-    "shares_outstanding": 6347220000,
-    "free_float_pct": 58.46900000315098
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.2,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1956,
-    "vol_trend": 0.3,
-    "price_chg_20d": -39.93
+    "cmf": -0.086,
+    "vol_trend": 0.765,
+    "price_chg_20d": -19.11
   },
   "neraca": {
     "aset": 608807253764.0,

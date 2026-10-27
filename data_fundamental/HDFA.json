@@ -1,23 +1,23 @@
 {
   "kode": "HDFA",
-  "nama": "PT Radana Bhaskara Finance Tbk",
-  "sektor": "Financial Services",
-  "industri": "Credit Services",
-  "harga": 87.0,
-  "update": "2026-10-21 12:04",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:22",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.06921578844324884,
-    "pb": 0.001155555381252113,
-    "ps": 0.5208029022603792,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0031043398208101484,
-    "eps": 1256.9386545575903,
+    "eps": null,
     "de": 5.07609001315612,
     "margin_net": 3.964200254582881,
     "current_ratio": null,
     "roa": 0.0005109107689465667,
-    "bv": 75288.47289493847
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 122422000000.0
     },
     "eps": {
-      "2024-Q1": 740000.0,
-      "2024-Q2": 870000.0,
-      "2024-Q3": 150000.0,
-      "2026-Q1": 270.0,
-      "2026-Q2": -40.0
+      "2024-Q1": 0.74,
+      "2024-Q2": 0.87,
+      "2024-Q3": 0.15,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0
     },
     "net_income": {
       "2024-Q1": 4817012000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 5420000.0,
-      "2022": 6390000.0,
-      "2023": -8730000.0,
-      "2025": -12460.0
+      "2021": 5.42,
+      "2022": 6.39,
+      "2023": -8.73,
+      "2025": -0.01
     },
     "revenue_per_share": {
       "2021": 3656445000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 569192742912,
-    "enterprise_value": 2930170134528,
-    "shares_outstanding": 6542445783,
-    "free_float_pct": 7.620999998128681
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4116,
-    "vol_trend": 0.211,
-    "price_chg_20d": -17.48
+    "cmf": -0.3651,
+    "vol_trend": 0.186,
+    "price_chg_20d": 1.16
   },
   "neraca": {
     "aset": 2992904227.0,

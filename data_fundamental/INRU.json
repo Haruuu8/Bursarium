@@ -1,23 +1,23 @@
 {
   "kode": "INRU",
-  "nama": "PT Toba Pulp Lestari Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Paper & Paper Products",
-  "harga": 590.0,
-  "update": "2026-10-21 12:14",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:33",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 99.21796064535658,
-    "ps": 8.732415487910144,
+    "pb": null,
+    "ps": null,
     "roe": -1.387092868386003,
-    "eps": -9.774759453275095,
+    "eps": null,
     "de": 47.35718610001211,
     "margin_net": -1.128447596532703,
     "current_ratio": 0.8855086208992972,
     "roa": -0.028684317270182433,
-    "bv": 5.946504001517311
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 10152000000.0
     },
     "eps": {
-      "2024-Q1": -2030.0,
-      "2024-Q2": 990.0,
-      "2024-Q3": -490.0,
-      "2026-Q1": -8250.0
+      "2024-Q1": -0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": -0.0,
+      "2026-Q1": -0.01
     },
     "net_income": {
       "2024-Q1": -2817000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 502.0,
-      "2022": -14752.0,
-      "2023": -18544.0,
-      "2025": -49981.0
+      "2021": 0.0,
+      "2022": -0.01,
+      "2023": -0.02,
+      "2025": -0.05
     },
     "revenue_per_share": {
       "2021": 146859000000.0,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 819441172480,
-    "enterprise_value": 819785236480,
-    "shares_outstanding": 1388883283,
-    "free_float_pct": 7.461000018386714
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

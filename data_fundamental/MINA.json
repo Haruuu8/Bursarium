@@ -1,10 +1,10 @@
 {
   "kode": "MINA",
-  "nama": "PT Sanurhasta Mitra Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 141.0,
-  "update": "2026-10-21 13:28",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:48",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.547128921936472,
-    "ps": 185.22044285536364,
+    "pb": null,
+    "ps": null,
     "roe": -0.000255746577323518,
-    "eps": -26002.83347301587,
+    "eps": null,
     "de": 0.011896242384469865,
     "margin_net": -0.03415784632174662,
     "current_ratio": 136.80776580925857,
     "roa": -0.00025265597488623756,
-    "bv": 25.418554712584125
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1873401133000000.0
     },
     "eps": {
-      "2024-Q3": -70000.0,
-      "2026-Q1": -1000.0
+      "2024-Q3": -0.07,
+      "2026-Q1": -0.0
     },
     "net_income": {
       "2024-Q3": -419437032000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -730000.0,
-      "2022": -530000.0,
-      "2023": -440000.0,
-      "2025": -380000.0
+      "2021": -0.73,
+      "2022": -0.53,
+      "2023": -0.44,
+      "2025": -0.38
     },
     "revenue_per_share": {
       "2021": 4009201299000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1387968724992,
-    "enterprise_value": 1284098490368,
-    "shares_outstanding": 9843750000,
-    "free_float_pct": 44.51100000507937
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.6,
+    "score": 2.1,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.129,
-    "vol_trend": 0.819,
-    "price_chg_20d": -38.66
+    "cmf": -0.0949,
+    "vol_trend": 1.218,
+    "price_chg_20d": -19.71
   },
   "neraca": {
     "aset": 253274627797.0,

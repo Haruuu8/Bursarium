@@ -3,17 +3,17 @@
   "nama": "PT Idea Indonesia Akademi Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Education & Training Services",
-  "harga": 190.0,
-  "update": "2026-10-21 10:28",
+  "harga": 254.0,
+  "update": "2026-10-26 22:25",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.00010558852662221165,
-    "pb": 3.1659202014734102,
-    "ps": 9.857967175882123,
+    "pe": 0.0001411551882212724,
+    "pb": 4.232335427232875,
+    "ps": 13.178545593021365,
     "roe": 0.014991781317305672,
     "eps": 1799437.9321136537,
     "de": 0.1894843026443926,
@@ -30,10 +30,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2000000.0,
-      "2022": 1000000.0,
-      "2023": 890000.0,
-      "2025": 2607780.0
+      "2021": 2.0,
+      "2022": 1.0,
+      "2023": 0.89,
+      "2025": 2.61
     },
     "revenue_per_share": {
       "2021": 1.5358970719e+16,
@@ -43,18 +43,18 @@
     }
   },
   "statistik": {
-    "market_cap": 201863118848,
-    "enterprise_value": 194090663936,
+    "market_cap": 269859127296,
+    "enterprise_value": 252524724224,
     "shares_outstanding": 1062437500,
     "free_float_pct": 33.42499996470381
   },
   "akumulasi": {
-    "score": 7.5,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4163,
-    "vol_trend": 1.188,
-    "price_chg_20d": 32.59
+    "cmf": 0.5027,
+    "vol_trend": 1.431,
+    "price_chg_20d": 71.62
   },
   "neraca": {
     "aset": 75846105761.0,

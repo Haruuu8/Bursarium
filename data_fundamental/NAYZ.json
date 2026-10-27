@@ -3,24 +3,24 @@
   "nama": "PT Hassana Boga Sejahtera Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 76.0,
-  "update": "2026-10-21 10:51",
-  "periode_terbaru": "2025-audit",
+  "harga": 75.0,
+  "update": "2026-10-26 22:53",
+  "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.9414731643770664,
-    "ps": 8.121158850499883,
-    "roe": -0.06512263397849169,
-    "eps": -1.6825991283226667,
-    "de": 0.03701020549948792,
-    "margin_net": -0.1797980895108028,
-    "current_ratio": 9.915495323766647,
-    "roa": -0.06279889851419591,
-    "bv": 25.837393629968737
+    "pb": 3.039974150425619,
+    "ps": 26.21767200184602,
+    "roe": -0.04726678334224861,
+    "eps": -2.3322624307001547,
+    "de": 0.027246460491034952,
+    "margin_net": -0.8152865524043306,
+    "current_ratio": 5.852999694609032,
+    "roa": -0.04601345402583671,
+    "bv": 24.671262415010812
   },
   "quarterly": {
     "revenue": {},
@@ -30,65 +30,67 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 1100000.0,
-      "2023": 10000.0,
-      "2025": -170000.0
+      "2022": 1.1,
+      "2023": 0.01,
+      "2024": 0.01,
+      "2025": -0.17
     },
     "revenue_per_share": {
       "2022": 4.2236350827e+16,
       "2023": 4.8004920268e+16,
+      "2024": 3.5026119215e+16,
       "2025": 2.3863696726e+16
     }
   },
   "statistik": {
-    "market_cap": 193800863744,
-    "enterprise_value": 197908054016,
+    "market_cap": 191250857984,
+    "enterprise_value": 195358031872,
     "shares_outstanding": 2550011472,
     "free_float_pct": 38.351000014638366
   },
   "akumulasi": {
-    "score": 8.3,
+    "score": 7.8,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1169,
-    "vol_trend": 4.191,
-    "price_chg_20d": 8.11
+    "cmf": 0.0858,
+    "vol_trend": 4.626,
+    "price_chg_20d": 19.05
   },
   "neraca": {
-    "aset": 68323604100.0,
-    "aset_lancar": 22373096901.0,
-    "kas": 19703801064.0,
-    "piutang_usaha": 267727149.0,
-    "persediaan": 2335078540.0,
-    "aset_tetap": 45638799066.0,
-    "liabilitas": 2438441452.0,
-    "liabilitas_jangka_pendek": 2256377132.0,
-    "liabilitas_jangka_panjang": 182064320.0,
-    "utang_usaha": 267727149.0,
+    "aset": 64625619614.0,
+    "aset_lancar": 9376096708.0,
+    "kas": 6092356281.0,
+    "piutang_usaha": 382510827.0,
+    "persediaan": 2449312222.0,
+    "aset_tetap": 55141518473.0,
+    "liabilitas": 1714129382.0,
+    "liabilitas_jangka_pendek": 1601930155.0,
+    "liabilitas_jangka_panjang": 112199227.0,
+    "utang_usaha": 382510827.0,
     "utang_bank": null,
-    "ekuitas": 65885650163.0,
-    "ekuitas_induk": 65885650163.0,
+    "ekuitas": 62912002187.0,
+    "ekuitas_induk": 62912002187.0,
     "modal_saham": null,
     "saldo_laba": 260000000.0
   },
   "laba_rugi": {
-    "pendapatan": 23863696726.0,
-    "beban_pokok": 17180542346.0,
+    "pendapatan": 3647365418.0,
+    "beban_pokok": 2419415562.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -4377984577.0,
-    "beban_pajak": 87276662.0,
-    "laba_bersih": -4290647080.0,
-    "laba_induk": -4290647080.0,
-    "eps_basic": -0.17,
+    "laba_sebelum_pajak": -2973672416.0,
+    "beban_pajak": null,
+    "laba_bersih": -2973647977.0,
+    "laba_induk": -2973647977.0,
+    "eps_basic": -0.12,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 6116581917.0,
-    "dividen_dibayar": 306001363.0
+    "capex": 9181689995.0,
+    "dividen_dibayar": null
   }
 }

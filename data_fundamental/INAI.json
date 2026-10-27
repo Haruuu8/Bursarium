@@ -1,23 +1,23 @@
 {
   "kode": "INAI",
-  "nama": "PT Indal Aluminium Industry Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Aluminum",
-  "harga": 123.0,
-  "update": "2026-10-21 12:11",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:30",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.2095685165138776,
-    "ps": 8.190478348955357e-08,
+    "pb": null,
+    "ps": null,
     "roe": -0.3810254137306646,
-    "eps": -133107775.90435606,
+    "eps": null,
     "de": 17.97478822956865,
     "margin_net": -0.05760122732843561,
     "current_ratio": 0.7485393593019487,
     "roa": -0.02008061482008574,
-    "bv": 101.68915470328282
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 2.47926297531e+17
     },
     "eps": {
-      "2024-Q1": -24670000.0,
-      "2024-Q2": -42330000.0,
-      "2024-Q3": -52030000.0,
-      "2026-Q1": -30520000.0,
-      "2026-Q2": -8480000.0
+      "2024-Q1": -24.67,
+      "2024-Q2": -42.33,
+      "2024-Q3": -52.03,
+      "2026-Q1": -30.52,
+      "2026-Q2": -8.48
     },
     "net_income": {
       "2024-Q1": -1.562897037e+16,
@@ -45,31 +45,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 6820000.0,
-      "2022": -180000000.0,
-      "2023": -91000000.0,
-      "2025": -171000000.0
+      "2021": 6.82,
+      "2022": -180.0,
+      "2023": -91.0,
+      "2025": -171.0
     },
     "revenue_per_share": {
-      "2021": 1.436934034909e+18,
-      "2022": 1.439149115038e+18,
-      "2023": 1.263343722079e+18,
+      "2021": 1436934034909.0,
+      "2022": 1439149115038.0,
+      "2023": 1263343722079.0,
       "2025": 8.13265224722e+17
     }
   },
   "statistik": {
-    "market_cap": 77932797952,
-    "enterprise_value": 751335833600,
-    "shares_outstanding": 633600000,
-    "free_float_pct": 22.649
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4665,
-    "vol_trend": 0.265,
-    "price_chg_20d": -32.43
+    "cmf": -0.3263,
+    "vol_trend": 0.165,
+    "price_chg_20d": -5.52
   },
   "neraca": {
     "aset": 1222550319348.0,

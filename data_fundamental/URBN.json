@@ -1,23 +1,23 @@
 {
   "kode": "URBN",
-  "nama": "PT Urban Jakarta Propertindo Tbk.",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 228.0,
-  "update": "2026-10-21 14:07",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:10",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0002665747158959058,
-    "pb": 0.8191202978240468,
-    "ps": 1.484546490454292e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.006526801814909095,
-    "eps": 855294.9188513107,
+    "eps": null,
     "de": 2.6795761885401204,
     "margin_net": -8.425883641843567,
     "current_ratio": 1.016070591832087,
     "roa": -0.0013612794080085518,
-    "bv": 278.3473936681473
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 672621554000000.0
     },
     "eps": {
-      "2024-Q1": 1180000.0,
-      "2024-Q2": 330000.0,
-      "2024-Q3": 1070000.0,
-      "2026-Q1": -1750000.0
+      "2024-Q1": 1.18,
+      "2024-Q2": 0.33,
+      "2024-Q3": 1.07,
+      "2026-Q1": -1.75
     },
     "net_income": {
       "2024-Q1": 3828241524000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 19780000.0,
-      "2022": 3740000.0,
-      "2023": 7880000.0,
-      "2025": -53910000.0
+      "2021": 19.78,
+      "2022": 3.74,
+      "2023": 7.88,
+      "2025": -53.91
     },
     "revenue_per_share": {
       "2021": 7.1126409759e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 711268368384,
-    "enterprise_value": 2528521486336,
-    "shares_outstanding": 3119598140,
-    "free_float_pct": 11.62900000959739
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1564,
-    "vol_trend": 4.07,
-    "price_chg_20d": -8.8
+    "cmf": -0.3908,
+    "vol_trend": 1.801,
+    "price_chg_20d": -28.76
   },
   "neraca": {
     "aset": 4163312039878.0,

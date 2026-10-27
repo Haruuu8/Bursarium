@@ -1,26 +1,26 @@
 {
   "kode": "STAR",
-  "nama": "PT Calculus Global Ventures Tbk",
-  "sektor": "Financial Services",
-  "industri": "Asset Management",
-  "harga": 314.0,
-  "update": "2026-10-21 13:07",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:27",
   "periode_terbaru": "2025-audit",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 65.68612564763198,
-    "pb": 2.8013951836927258,
-    "ps": 227.7373554625021,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.042648202433503056,
-    "eps": 4.780309340886204,
+    "eps": null,
     "de": 0.005178493888409813,
     "margin_net": 3.4670541642870076,
     "current_ratio": 285.70842892554913,
     "roa": 0.042428399552529916,
-    "bv": 112.08700644158795
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2024-Q3": 952920381000000.0
     },
     "eps": {
-      "2024-Q1": 165000.0,
-      "2024-Q2": -138000.0,
-      "2024-Q3": 705638.18
+      "2024-Q1": 0.17,
+      "2024-Q2": -0.14,
+      "2024-Q3": 0.71
     },
     "net_income": {
       "2024-Q1": 793489578000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2190000.0,
-      "2022": 365000.0,
-      "2023": 569000.0,
-      "2025": 4780000.0
+      "2021": 2.19,
+      "2022": 0.36,
+      "2023": 0.57,
+      "2025": 4.78
     },
     "revenue_per_share": {
       "2021": 3896547467000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1507200204800,
-    "enterprise_value": 934594543616,
-    "shares_outstanding": 4800000602,
-    "free_float_pct": 67.81399999499416
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.4,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0745,
-    "vol_trend": 0.809,
-    "price_chg_20d": -30.94
+    "cmf": -0.2643,
+    "vol_trend": 0.717,
+    "price_chg_20d": -1.82
   },
   "neraca": {
     "aset": 540804931508.0,

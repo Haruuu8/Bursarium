@@ -3,8 +3,8 @@
   "nama": "PT Merdeka Gold Resources Tbk",
   "sektor": "Basic Materials",
   "industri": "Gold",
-  "harga": 6525.0,
-  "update": "2026-10-21 11:10",
+  "harga": 6400.0,
+  "update": "2026-10-26 23:23",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.2658781451446412,
-    "ps": 1.557522582783249,
+    "pb": 0.26078469408823046,
+    "ps": 1.5276849854119223,
     "roe": -0.04115147562105664,
     "eps": -2019.8228649543178,
     "de": 1.667268780072449,
@@ -24,14 +24,17 @@
   },
   "quarterly": {
     "revenue": {
+      "2025-Q4": 18527000000.0,
       "2026-Q1": 2644694000000.0,
       "2026-Q2": 28212696000000.0
     },
     "eps": {
-      "2026-Q1": -700.0,
-      "2026-Q2": -300.0
+      "2025-Q4": -0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": -0.0
     },
     "net_income": {
+      "2025-Q4": -5213206000000.0,
       "2026-Q1": -10930348000000.0,
       "2026-Q2": -3947027000000.0
     },
@@ -39,25 +42,25 @@
   },
   "riwayat": {
     "eps": {
-      "2025": -1900.0
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2025": 131964000000.0
     }
   },
   "statistik": {
-    "market_cap": 96122165002240,
-    "enterprise_value": 100910248230912,
+    "market_cap": 94280748105728,
+    "enterprise_value": 98332261220352,
     "shares_outstanding": 14731366060,
     "free_float_pct": 18.071999997534512
   },
   "akumulasi": {
-    "score": 6.2,
+    "score": 4.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.1112,
-    "vol_trend": 0.394,
-    "price_chg_20d": -9.87
+    "cmf": -0.0341,
+    "vol_trend": 0.68,
+    "price_chg_20d": -14.67
   },
   "neraca": {
     "aset": 964329526.0,

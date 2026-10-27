@@ -1,23 +1,23 @@
 {
   "kode": "RISE",
-  "nama": "PT Jaya Sukses Makmur Sentosa Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 575.0,
-  "update": "2026-10-21 13:54",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:03",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 7.584349169982198e-05,
-    "pb": 3.3606644712335245,
-    "ps": 2.340115360023917e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.035056890218420636,
-    "eps": 7581402.004482734,
+    "eps": null,
     "de": 0.27988786237131685,
     "margin_net": 0.5612810031301899,
     "current_ratio": 2.4926485910899197,
     "roa": 0.02333256865107247,
-    "bv": 171.09711633573093
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.73106436459e+17
     },
     "eps": {
-      "2024-Q1": 80000.0,
-      "2024-Q2": 710000.0,
-      "2024-Q3": 1550000.0,
-      "2026-Q1": 6000000.0
+      "2024-Q1": 0.08,
+      "2024-Q2": 0.71,
+      "2024-Q3": 1.55,
+      "2026-Q1": 6.0
     },
     "net_income": {
       "2024-Q1": 849091652000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 5000000.0,
-      "2022": 3000000.0,
-      "2023": 1000000.0,
-      "2025": 5380000.0
+      "2021": 5.0,
+      "2022": 3.0,
+      "2023": 1.0,
+      "2025": 5.38
     },
     "revenue_per_share": {
       "2021": 2.49103324854e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 9314194423808,
-    "enterprise_value": 10213818105856,
-    "shares_outstanding": 16198599990,
-    "free_float_pct": 19.704999999817886
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1322,
-    "vol_trend": 1.247,
-    "price_chg_20d": -21.77
+    "cmf": -0.1637,
+    "vol_trend": 1.238,
+    "price_chg_20d": -25.35
   },
   "neraca": {
     "aset": 4164194510986.0,

@@ -1,23 +1,23 @@
 {
   "kode": "INTA",
-  "nama": "PT Intraco Penta Tbk",
-  "sektor": "Industrials",
-  "industri": "Industrial Distribution",
-  "harga": 61.0,
-  "update": "2026-10-21 12:14",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:34",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.2549062207478981,
+    "ps": null,
     "roe": 0.021661972094784914,
-    "eps": -31.740748340414374,
+    "eps": null,
     "de": -2.3156599263921653,
     "margin_net": -0.09846261537479219,
     "current_ratio": 0.7951980369697034,
     "roa": -0.01818519319256362,
-    "bv": -574.7952598822957
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 205891000000.0
     },
     "eps": {
-      "2024-Q1": -2000000.0,
-      "2024-Q2": -7000000.0,
-      "2024-Q3": 8999978.0,
-      "2026-Q1": -10.0,
-      "2026-Q2": -2.0
+      "2024-Q1": -2.0,
+      "2024-Q2": -7.0,
+      "2024-Q3": 9.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": -0.0
     },
     "net_income": {
       "2024-Q1": -7991000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -123000000.0,
-      "2022": -26000000.0,
-      "2023": -12.0,
-      "2025": -21.0
+      "2021": -123.0,
+      "2022": -26.0,
+      "2023": -0.0,
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2021": 611377000000.0,
@@ -58,10 +58,10 @@
     }
   },
   "statistik": {
-    "market_cap": 203980029952,
-    "enterprise_value": 2668134924288,
-    "shares_outstanding": 3343935022,
-    "free_float_pct": 39.238000002022765
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

@@ -1,23 +1,23 @@
 {
   "kode": "NISP",
-  "nama": "PT Bank OCBC NISP Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 1140.0,
-  "update": "2026-10-21 12:44",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:00",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 5.05155299995481,
-    "pb": 0.5864986220652494,
-    "ps": 1.4990572192442453,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.030492295916432904,
-    "eps": 225.6731741724175,
+    "eps": null,
     "de": 6.015270385811694,
     "margin_net": 0.30598850022556295,
     "current_ratio": null,
     "roa": 0.00434655664191541,
-    "bv": 1943.7385820033046
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 4444435000000.0
     },
     "eps": {
-      "2024-Q1": 50860000.0,
-      "2024-Q2": 53340000.0,
-      "2024-Q3": 62200000.0,
-      "2026-Q1": 59270000.0
+      "2024-Q1": 50.86,
+      "2024-Q2": 53.34,
+      "2024-Q3": 62.2,
+      "2026-Q1": 59.27
     },
     "net_income": {
       "2024-Q1": 1167083000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 109810000.0,
-      "2022": 144990000.0,
-      "2023": 178300000.0,
-      "2025": 220410000.0
+      "2021": 109.81,
+      "2022": 144.99,
+      "2023": 178.3,
+      "2025": 220.41
     },
     "revenue_per_share": {
       "2021": 11216156000000.0,
       "2022": 12227225000000.0,
-      "2023": 1.5532562e+19,
+      "2023": 15532562000000.0,
       "2025": 17854831000000.0
     }
   },
   "statistik": {
-    "market_cap": 26157638483968,
-    "enterprise_value": 47077212028928,
-    "shares_outstanding": 22945296972,
-    "free_float_pct": 14.898000000485675
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3126,
-    "vol_trend": 0.888,
-    "price_chg_20d": -9.13
+    "cmf": -0.1635,
+    "vol_trend": 0.98,
+    "price_chg_20d": -5.62
   },
   "neraca": {
     "aset": 312878932.0,

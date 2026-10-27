@@ -1,23 +1,23 @@
 {
   "kode": "KIOS",
-  "nama": "PT Kioson Komersial Indonesia Tbk",
-  "sektor": "Technology",
-  "industri": "Software - Application",
-  "harga": 65.0,
-  "update": "2026-10-21 13:33",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:53",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5081077131803351,
-    "ps": 9.53357652554741e-07,
+    "pb": null,
+    "ps": null,
     "roe": -0.004446331506716549,
-    "eps": -6492707.990430306,
+    "eps": null,
     "de": 0.014205591798494828,
     "margin_net": -0.3019899332174998,
     "current_ratio": 32.30075598570703,
     "roa": -0.004380539235995431,
-    "bv": 127.9256313452784
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 163054202000000.0
     },
     "eps": {
-      "2024-Q1": -4250000.0,
-      "2024-Q2": -3650000.0,
-      "2024-Q3": 8000000.0,
-      "2026-Q1": -350000.0,
-      "2026-Q2": -210000.0
+      "2024-Q1": -4.25,
+      "2024-Q2": -3.65,
+      "2024-Q3": 8.0,
+      "2026-Q1": -0.35,
+      "2026-Q2": -0.21
     },
     "net_income": {
       "2024-Q1": -4568527537000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 3480000.0,
-      "2022": 860000.0,
-      "2023": 15940000.0,
-      "2025": 600000.0
+      "2021": 3.48,
+      "2022": 0.86,
+      "2023": 15.94,
+      "2025": 0.6
     },
     "revenue_per_share": {
       "2021": 3.39032343268e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 69931089920,
-    "enterprise_value": 72133763072,
-    "shares_outstanding": 1075862960,
-    "free_float_pct": 59.690977278370106
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4517,
-    "vol_trend": 0.594,
-    "price_chg_20d": -28.72
+    "cmf": -0.3752,
+    "vol_trend": 0.602,
+    "price_chg_20d": 0.0
   },
   "neraca": {
     "aset": 139697550012.0,

@@ -1,26 +1,26 @@
 {
   "kode": "PTSP",
-  "nama": "PT Pioneerindo Gourmet International Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Restaurants",
-  "harga": 1440.0,
-  "update": "2026-10-21 12:53",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:11",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.004565019189063096,
-    "pb": 0.0016992685220596612,
-    "ps": 0.0003886481764295533,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.09305922120386594,
-    "eps": 315442.26658454404,
+    "eps": null,
     "de": 1.0057281592301939,
     "margin_net": 0.08513615394228338,
     "current_ratio": 1.1320448291070047,
     "roa": 0.044467455997555,
-    "bv": 847423.4538603674
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 204531720000000.0
     },
     "eps": {
-      "2024-Q3": 19160.0,
-      "2026-Q1": 78.5
+      "2024-Q3": 0.02,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q3": 4228827000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -79720000.0,
-      "2022": 39490000.0,
-      "2023": 72710.0,
-      "2025": 87.77
+      "2021": -79.72,
+      "2022": 39.49,
+      "2023": 0.07,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 423068585000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 317963534336,
-    "enterprise_value": 380992028672,
-    "shares_outstanding": 220808000,
-    "free_float_pct": 63.47400003623057
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.5,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.1581,
-    "vol_trend": 1.238,
-    "price_chg_20d": 28.75
+    "score": 7.2,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.05,
+    "vol_trend": 2.114,
+    "price_chg_20d": 81.51
   },
   "neraca": {
     "aset": 391590740.0,

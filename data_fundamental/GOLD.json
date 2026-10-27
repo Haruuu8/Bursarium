@@ -1,23 +1,23 @@
 {
   "kode": "GOLD",
-  "nama": "PT Visi Telekomunikasi Infrastruktur Tbk",
-  "sektor": "Communication Services",
-  "industri": "Telecom Services",
-  "harga": 256.0,
-  "update": "2026-10-21 12:03",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:22",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.017492986973078738,
-    "pb": 0.0007353680637605576,
-    "ps": 0.005657669220821666,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.022630596291778445,
-    "eps": 14634.436096818543,
+    "eps": null,
     "de": 0.12955878870539334,
     "margin_net": 0.31838948169923814,
     "current_ratio": 0.5916494607169964,
     "roa": 0.020034830749728595,
-    "bv": 348124.9902135482
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 16804405000000.0
     },
     "eps": {
-      "2024-Q1": 3840.0,
-      "2024-Q2": 3700.0,
-      "2024-Q3": 3050.0,
-      "2026-Q1": 4100.0,
-      "2026-Q2": 3700.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 4899787000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 11430000.0,
-      "2022": 12530000.0,
-      "2023": 12680.0,
-      "2025": 14910.0
+      "2021": 11.43,
+      "2022": 12.53,
+      "2023": 0.01,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 44260335000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 326982664192,
-    "enterprise_value": 322237071360,
-    "shares_outstanding": 1277276000,
-    "free_float_pct": 18.506999974946684
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.715,
-    "vol_trend": 1.97,
-    "price_chg_20d": -12.23
+    "cmf": -0.7549,
+    "vol_trend": 1.933,
+    "price_chg_20d": -8.09
   },
   "neraca": {
     "aset": 502261942.0,

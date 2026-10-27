@@ -3,55 +3,66 @@
   "nama": "PT Menthobi Karyatama Raya Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 117.0,
-  "update": "2026-10-21 10:45",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 115.0,
+  "update": "2026-10-26 22:47",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 0.040391195887733745,
-    "pb": 0.002088432305416363,
-    "ps": 0.0010928327630991878,
-    "roe": 0.01292628417849465,
-    "eps": 2896.6708568173717,
-    "de": 1.255188509483247,
-    "margin_net": 0.02705621210465487,
-    "current_ratio": 3.4984717650779014,
-    "roa": 0.0057244463922545945,
-    "bv": 56022.88362259084
+    "pe": 0.018724117209429417,
+    "pb": 0.002049328837198562,
+    "ps": 0.000958946652464583,
+    "roe": 0.04779501117024052,
+    "eps": 6141.811585225834,
+    "de": 1.2530108873843853,
+    "margin_net": 0.04662056204115551,
+    "current_ratio": 1.7207692512756951,
+    "roa": 0.021185700670616675,
+    "bv": 56115.93313506743
   },
   "quarterly": {
     "revenue": {
       "2024-Q1": 247639985000000.0,
-      "2026-Q1": 322801025000000.0
+      "2024-Q4": 313094367000000.0,
+      "2025-Q3": 385557084000000.0,
+      "2025-Q4": 366937251000000.0,
+      "2026-Q1": 322801025000000.0,
+      "2026-Q2": 371030443000000.0
     },
     "eps": {
-      "2024-Q1": 390000.0,
-      "2026-Q1": 70000.0
+      "2024-Q1": 0.39,
+      "2024-Q4": 4.18,
+      "2025-Q3": 0.19,
+      "2025-Q4": 4.25,
+      "2026-Q1": 0.07,
+      "2026-Q2": 0.2
     },
     "net_income": {
       "2024-Q1": 4675007000000.0,
-      "2026-Q1": 8733773000000.0
+      "2024-Q4": 34240568000000.0,
+      "2025-Q3": 23474867000000.0,
+      "2025-Q4": 18251200000000.0,
+      "2026-Q1": 8733773000000.0,
+      "2026-Q2": 23613040000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 6200000.0,
-      "2023": 4270000.0,
-      "2025": 4550000.0
+      "2022": 6.2,
+      "2023": 4.27,
+      "2024": 4.33,
+      "2025": 4.55
     },
     "revenue_per_share": {
       "2022": 627880911000000.0,
       "2023": 710983008000000.0,
+      "2024": 1006858372000000.0,
       "2025": 1246050864000000.0
     }
   },
   "statistik": {
-    "market_cap": 1411070164992,
-    "enterprise_value": 1892387389440,
+    "market_cap": 1386949246976,
+    "enterprise_value": 1916508307456,
     "shares_outstanding": 12060428584,
     "free_float_pct": 91.90300000370203
   },
@@ -59,45 +70,45 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4582,
-    "vol_trend": 0.785,
-    "price_chg_20d": -5.74
+    "cmf": 0.3184,
+    "vol_trend": 0.765,
+    "price_chg_20d": -6.5
   },
   "neraca": {
-    "aset": 1525697404.0,
-    "aset_lancar": 681204328.0,
-    "kas": 183305709.0,
-    "piutang_usaha": 26834869.0,
-    "persediaan": 83969279.0,
-    "aset_tetap": 604818825.0,
-    "liabilitas": 848080652.0,
-    "liabilitas_jangka_pendek": 194714828.0,
-    "liabilitas_jangka_panjang": 653365824.0,
-    "utang_usaha": 26834869.0,
+    "aset": 1526822903.0,
+    "aset_lancar": 691382710.0,
+    "kas": 196781272.0,
+    "piutang_usaha": 24680867.0,
+    "persediaan": 64634180.0,
+    "aset_tetap": 600150045.0,
+    "liabilitas": 848015470.0,
+    "liabilitas_jangka_pendek": 401786997.0,
+    "liabilitas_jangka_panjang": 446228473.0,
+    "utang_usaha": 24680867.0,
     "utang_bank": 20000000.0,
-    "ekuitas": 675659987.0,
-    "ekuitas_induk": 675659987.0,
+    "ekuitas": 676782204.0,
+    "ekuitas_induk": 676782204.0,
     "modal_saham": null,
     "saldo_laba": 32960390.0
   },
   "laba_rugi": {
-    "pendapatan": 322801025.0,
-    "beban_pokok": 278947833.0,
+    "pendapatan": 693831468.0,
+    "beban_pokok": 583692996.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 15018390.0,
-    "beban_pajak": -6237246.0,
-    "laba_bersih": 8733773.0,
-    "laba_induk": 8733773.0,
-    "eps_basic": 0.07,
+    "laba_sebelum_pajak": 49799227.0,
+    "beban_pajak": -17336579.0,
+    "laba_bersih": 32346813.0,
+    "laba_induk": 32346813.0,
+    "eps_basic": 0.27,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 8634827.0,
-    "dividen_dibayar": null
+    "capex": 12178288.0,
+    "dividen_dibayar": 18199066.0
   }
 }

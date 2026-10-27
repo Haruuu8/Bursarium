@@ -1,23 +1,23 @@
 {
   "kode": "PLIN",
-  "nama": "PT Plaza Indonesia Realty Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 2510.0,
-  "update": "2026-10-21 12:49",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:07",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.016237973221374335,
-    "pb": 770.0043217534848,
-    "ps": 0.006445860746896614,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.012607953827502238,
-    "eps": 154575.94157724327,
+    "eps": null,
     "de": 0.13106337001620105,
     "margin_net": 0.39981381519708886,
     "current_ratio": 1.7643002027935946,
     "roa": 0.011146991549484665,
-    "bv": 3.259721964006809
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 363453939000000.0
     },
     "eps": {
-      "2024-Q1": 38120.0,
-      "2024-Q2": 38410.0,
-      "2024-Q3": 36950.0,
-      "2026-Q1": 40000.0
+      "2024-Q1": 0.04,
+      "2024-Q2": 0.04,
+      "2024-Q3": 0.04,
+      "2026-Q1": 0.04
     },
     "net_income": {
       "2024-Q1": 134771359000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 126640000.0,
-      "2022": 157640000.0,
-      "2023": 173450.0,
-      "2025": 180820.0
+      "2021": 126.64,
+      "2022": 157.64,
+      "2023": 0.17,
+      "2025": 0.18
     },
     "revenue_per_share": {
       "2021": 871499152000000.0,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 8874741465088,
-    "enterprise_value": 8618228842496,
-    "shares_outstanding": 3535753730,
-    "free_float_pct": 3.0000000028282514
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

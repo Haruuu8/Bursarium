@@ -1,10 +1,10 @@
 {
   "kode": "TGRA",
-  "nama": "PT. Terregra Asia Energy Tbk",
-  "sektor": "Utilities",
-  "industri": "Utilities - Renewable",
-  "harga": 27.0,
-  "update": "2026-10-21 13:29",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:50",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "revenue_missing",
@@ -13,21 +13,21 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.0500032590579083,
+    "pb": null,
     "ps": null,
     "roe": -0.06410116123345998,
-    "eps": -3.377031418181818,
+    "eps": null,
     "de": 4.347550190143788,
     "margin_net": null,
     "current_ratio": 0.0012231628794963773,
     "roa": -0.01124465549806274,
-    "bv": 13.170710768727274
+    "bv": null
   },
   "quarterly": {
     "revenue": {},
     "eps": {
-      "2024-Q3": -1260000.0,
-      "2026-Q1": -840000.0
+      "2024-Q3": -1.26,
+      "2026-Q1": -0.84
     },
     "net_income": {
       "2024-Q3": -3459917445000000.0,
@@ -37,10 +37,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2240000.0,
-      "2022": 2150000.0,
-      "2023": -3060000.0,
-      "2025": -94000000.0
+      "2021": 2.24,
+      "2022": 2.15,
+      "2023": -3.06,
+      "2025": -94.0
     },
     "revenue_per_share": {
       "2021": 3.8690158854e+16,
@@ -50,10 +50,10 @@
     }
   },
   "statistik": {
-    "market_cap": 74250002432,
-    "enterprise_value": 198054772736,
-    "shares_outstanding": 2750000000,
-    "free_float_pct": 1.035
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

@@ -1,23 +1,23 @@
 {
   "kode": "SATU",
-  "nama": "PT Kota Satu Properti Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 218.0,
-  "update": "2026-10-21 14:06",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:09",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 6.9601577364755975,
-    "ps": 1.1355045920130915e-05,
+    "pb": null,
+    "ps": null,
     "roe": -0.021614619850228046,
-    "eps": -1941502.7934545456,
+    "eps": null,
     "de": 3.789314274352498,
     "margin_net": -0.12908161570413593,
     "current_ratio": 1.0646096227592219,
     "roa": -0.004477882871364009,
-    "bv": 31.321129240727274
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 7211461988000000.0
     },
     "eps": {
-      "2024-Q1": -1179000.0,
-      "2024-Q2": -661000.0,
-      "2024-Q3": 575000.0,
-      "2026-Q1": -677000.0
+      "2024-Q1": -1.18,
+      "2024-Q2": -0.66,
+      "2024-Q3": 0.58,
+      "2026-Q1": -0.68
     },
     "net_income": {
       "2024-Q1": -1473266550000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -13430000.0,
-      "2022": -6490000.0,
-      "2023": -3112000.0,
-      "2025": -2312000.0
+      "2021": -13.43,
+      "2022": -6.49,
+      "2023": -3.11,
+      "2025": -2.31
     },
     "revenue_per_share": {
       "2021": 2.1472858707e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 299749998592,
-    "enterprise_value": 432928686080,
-    "shares_outstanding": 1375000000,
-    "free_float_pct": 17.971999999999998
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.3703,
-    "vol_trend": 2.885,
-    "price_chg_20d": -9.09
+    "cmf": 0.2693,
+    "vol_trend": 1.406,
+    "price_chg_20d": -11.48
   },
   "neraca": {
     "aset": 207881088394.0,

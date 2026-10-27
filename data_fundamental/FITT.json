@@ -1,10 +1,10 @@
 {
   "kode": "FITT",
-  "nama": "PT Fortune Resources Investment Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Other Industrial Metals & Mining",
-  "harga": 276.0,
-  "update": "2026-10-21 14:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:13",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.910702202274846,
-    "ps": 38.77112277801591,
+    "pb": null,
+    "ps": null,
     "roe": -0.05667231411813231,
-    "eps": -6.370395944335082,
+    "eps": null,
     "de": 0.6574509500270879,
     "margin_net": -0.8948818960231524,
     "current_ratio": 9.376297635240771,
     "roa": -0.03418697766853581,
-    "bv": 56.20377466019932
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 2496357562000000.0
     },
     "eps": {
-      "2024-Q1": -3380000.0,
-      "2026-Q1": -1870000.0,
-      "2026-Q2": -1320000.0
+      "2024-Q1": -3.38,
+      "2026-Q1": -1.87,
+      "2026-Q2": -1.32
     },
     "net_income": {
       "2024-Q1": -2454177471000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -7770000.0,
-      "2022": -8070000.0,
-      "2023": -9910000.0
+      "2021": -7.77,
+      "2022": -8.07,
+      "2023": -9.91
     },
     "revenue_per_share": {
       "2021": 8759873774000000.0,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 359979057152,
-    "enterprise_value": 409520013312,
-    "shares_outstanding": 1304272051,
-    "free_float_pct": 20.825999973835213
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2446,
-    "vol_trend": 0.444,
-    "price_chg_20d": -33.93
+    "cmf": -0.3489,
+    "vol_trend": 0.553,
+    "price_chg_20d": -34.6
   },
   "neraca": {
     "aset": 121518922564.0,

@@ -3,56 +3,70 @@
   "nama": "PT Multi Spunindo Jaya Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Textile Manufacturing",
-  "harga": 670.0,
-  "update": "2026-10-21 11:03",
-  "periode_terbaru": "2026-tw1",
+  "harga": 655.0,
+  "update": "2026-10-26 23:12",
+  "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.745549105303883,
-    "pb": 0.04537502337222454,
-    "ps": 0.05856285615210327,
-    "roe": 0.013004408521981517,
-    "eps": 898.6664932377735,
-    "de": 0.2468370731531193,
-    "margin_net": 0.07217436092131065,
-    "current_ratio": 3.0892251920223393,
-    "roa": 0.010154950532733879,
-    "bv": 14765.832614647814
+    "pe": 0.7174540312238868,
+    "pb": 0.04675296646871178,
+    "ps": 0.05494747213780085,
+    "roe": 0.02200332764049638,
+    "eps": 912.9504769562056,
+    "de": 0.29960343730915895,
+    "margin_net": 0.04959003855471012,
+    "current_ratio": 2.2137034224480923,
+    "roa": 0.016488689565127234,
+    "bv": 14009.80621065707
   },
   "quarterly": {
     "revenue": {
       "2024-Q1": 17357013000000.0,
       "2024-Q2": 15278093000000.0,
       "2024-Q3": 17694882000000.0,
-      "2026-Q1": 15250665000000.0
+      "2024-Q4": 18182158000000.0,
+      "2025-Q3": 15954153000000.0,
+      "2025-Q4": 16743947000000.0,
+      "2026-Q1": 15250665000000.0,
+      "2026-Q2": 20382076000000.0
     },
     "eps": {
-      "2024-Q1": 60.0,
-      "2024-Q2": -90.0,
-      "2024-Q3": 720.0,
-      "2026-Q1": 190.0
+      "2024-Q1": 0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": 0.0,
+      "2024-Q4": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 345340000000.0,
       "2024-Q2": -507907000000.0,
       "2024-Q3": 4213218000000.0,
-      "2026-Q1": 1100707000000.0
+      "2024-Q4": 1453931000000.0,
+      "2025-Q3": 1215871000000.0,
+      "2025-Q4": 2250337000000.0,
+      "2026-Q1": 1100707000000.0,
+      "2026-Q2": 666322000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2023": 36150000.0,
-      "2025": 980.0
+      "2023": 36.15,
+      "2024": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2023": 70288813000000.0,
+      "2024": 68512146000000.0,
       "2025": 64200896000000.0
     }
   },
   "statistik": {
-    "market_cap": 3840590479360,
-    "enterprise_value": 3955239682048,
+    "market_cap": 3754606985216,
+    "enterprise_value": 3897917440000,
     "shares_outstanding": 5732224400,
     "free_float_pct": 7.849999993021905
   },
@@ -60,45 +74,45 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2714,
-    "vol_trend": 1.032,
-    "price_chg_20d": -18.34
+    "cmf": -0.3222,
+    "vol_trend": 0.98,
+    "price_chg_20d": -22.02
   },
   "neraca": {
-    "aset": 108391173.0,
-    "aset_lancar": 40039423.0,
-    "kas": 18986421.0,
-    "piutang_usaha": 10823736.0,
-    "persediaan": 7674531.0,
-    "aset_tetap": 381484.0,
-    "liabilitas": 20892553.0,
-    "liabilitas_jangka_pendek": 12960992.0,
-    "liabilitas_jangka_panjang": 7931561.0,
-    "utang_usaha": 10823736.0,
-    "utang_bank": 7256470.0,
-    "ekuitas": 84641066.0,
-    "ekuitas_induk": 84641066.0,
+    "aset": 107166127.0,
+    "aset_lancar": 36835290.0,
+    "kas": 11304852.0,
+    "piutang_usaha": 14528034.0,
+    "persediaan": 9424597.0,
+    "aset_tetap": 297445.0,
+    "liabilitas": 24060359.0,
+    "liabilitas_jangka_pendek": 16639668.0,
+    "liabilitas_jangka_panjang": 7420691.0,
+    "utang_usaha": 14528034.0,
+    "utang_bank": 8665274.0,
+    "ekuitas": 80307353.0,
+    "ekuitas_induk": 80307353.0,
     "modal_saham": null,
     "saldo_laba": 2499029.0
   },
   "laba_rugi": {
-    "pendapatan": 15250665.0,
-    "beban_pokok": 12798492.0,
+    "pendapatan": 35632741.0,
+    "beban_pokok": 29550983.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 1370297.0,
-    "beban_pajak": -162327.0,
-    "laba_bersih": 1100707.0,
-    "laba_induk": 1100707.0,
-    "eps_basic": 0.00019,
+    "laba_sebelum_pajak": 2301822.0,
+    "beban_pajak": -344409.0,
+    "laba_bersih": 1767029.0,
+    "laba_induk": 1767029.0,
+    "eps_basic": 0.0003,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 381484.0,
-    "dividen_dibayar": null
+    "capex": 297445.0,
+    "dividen_dibayar": 4798006.0
   }
 }

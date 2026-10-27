@@ -1,23 +1,23 @@
 {
   "kode": "MEDC",
-  "nama": "PT Medco Energi Internasional Tbk",
-  "sektor": "Energy",
-  "industri": "Oil & Gas E&P",
-  "harga": 1395.0,
-  "update": "2026-10-21 12:35",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:53",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.10125672093241861,
-    "pb": 15705.04130845741,
-    "ps": 0.014071343481741914,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.030680844454121788,
-    "eps": 13776.863275387514,
+    "eps": null,
     "de": 2.671038911366319,
     "margin_net": 0.10083118134632137,
     "current_ratio": 1.1183781189134503,
     "roa": 0.008145468651183183,
-    "bv": 0.08882498126565071
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 668309873000000.0
     },
     "eps": {
-      "2024-Q1": 11810.0,
-      "2024-Q2": -3730.0,
-      "2024-Q3": 2830.0,
-      "2026-Q1": 2730.0
+      "2024-Q1": 0.01,
+      "2024-Q2": -0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 72659043000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1524.0,
-      "2022": 21503.0,
-      "2023": 14900.0,
-      "2025": 4080.0
+      "2021": 0.0,
+      "2022": 0.02,
+      "2023": 0.01,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 1323241584000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 34494075633664,
-    "enterprise_value": 34620936552448,
-    "shares_outstanding": 24726935674,
-    "free_float_pct": 25.01299999944344
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1332,
-    "vol_trend": 0.753,
-    "price_chg_20d": -4.44
+    "cmf": 0.1469,
+    "vol_trend": 0.718,
+    "price_chg_20d": -3.01
   },
   "neraca": {
     "aset": 8272878687.0,

@@ -1,23 +1,23 @@
 {
   "kode": "MNCN",
-  "nama": "PT. Media Nusantara Citra Tbk",
-  "sektor": "Communication Services",
-  "industri": "Advertising Agencies",
-  "harga": 90.0,
-  "update": "2026-10-21 12:40",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:57",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.9094381510463418,
-    "pb": 0.05359869227955571,
-    "ps": 0.1516847134949366,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.01761005060348501,
-    "eps": 98.9621997894543,
+    "eps": null,
     "de": 0.08906923841917148,
     "margin_net": 0.20786366375750542,
     "current_ratio": 8.015725691670402,
     "roa": 0.015396076239361995,
-    "bv": 1679.1454450154363
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1881642000000.0
     },
     "eps": {
-      "2024-Q1": 40940000.0,
-      "2024-Q2": 20182556.78,
-      "2024-Q3": 8267443.22,
-      "2026-Q1": 29570000.0
+      "2024-Q1": 40.94,
+      "2024-Q2": 20.18,
+      "2024-Q3": 8.27,
+      "2026-Q1": 29.57
     },
     "net_income": {
       "2024-Q1": 541582000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 179720000.0,
-      "2022": 155470000.0,
-      "2023": 78080000.0,
-      "2025": 99910000.0
+      "2021": 179.72,
+      "2022": 155.47,
+      "2023": 78.08,
+      "2025": 99.91
     },
     "revenue_per_share": {
       "2021": 9621841000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1190444531712,
-    "enterprise_value": 2538845765632,
-    "shares_outstanding": 13227161510,
-    "free_float_pct": 36.92799999687915
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4642,
-    "vol_trend": 1.588,
-    "price_chg_20d": -48.48
+    "cmf": -0.169,
+    "vol_trend": 1.045,
+    "price_chg_20d": -27.12
   },
   "neraca": {
     "aset": 25404200.0,

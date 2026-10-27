@@ -1,23 +1,23 @@
 {
   "kode": "IPOL",
-  "nama": "PT Indopoly Swakarsa Industry Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 108.0,
-  "update": "2026-10-21 12:15",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:35",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.35256640184621313,
-    "pb": 0.003955906246967206,
-    "ps": 0.0028204937295553617,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.00865876115647613,
-    "eps": 306.3252749963078,
+    "eps": null,
     "de": 1.2281497435648825,
     "margin_net": 0.010754406773377117,
     "current_ratio": 1.1953786531881212,
     "roa": 0.003801725429836311,
-    "bv": 27300.9503404683
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 79633585000000.0
     },
     "eps": {
-      "2024-Q1": 23.3,
-      "2024-Q2": 31.15,
-      "2024-Q3": 38.78,
-      "2026-Q1": 56.4,
-      "2026-Q2": 179.99
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 150119000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1370.46,
-      "2022": 493.32,
-      "2023": 44.33,
-      "2025": 163.32
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 239407318000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 695885037568,
-    "enterprise_value": 702502535168,
-    "shares_outstanding": 6443379509,
-    "free_float_pct": 13.436000002650161
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2312,
-    "vol_trend": 1.337,
-    "price_chg_20d": -6.03
+    "cmf": -0.2088,
+    "vol_trend": 0.432,
+    "price_chg_20d": -3.54
   },
   "neraca": {
     "aset": 400651238.0,

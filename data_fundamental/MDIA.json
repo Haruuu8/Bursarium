@@ -1,23 +1,23 @@
 {
   "kode": "MDIA",
-  "nama": "PT Intermedia Capital Tbk",
-  "sektor": "Communication Services",
-  "industri": "Broadcasting",
-  "harga": 85.0,
-  "update": "2026-10-21 12:34",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:51",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.03609936869546967,
-    "pb": 0.003630419094829901,
-    "ps": 0.005331731029084427,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.009018084345259655,
-    "eps": 2354.6118137702274,
+    "eps": null,
     "de": 2.389792780610964,
     "margin_net": -0.05842711556951062,
     "current_ratio": 0.8694018713559237,
     "roa": -0.0026456324964688233,
-    "bv": 23413.274825776713
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 141716426000000.0
     },
     "eps": {
-      "2024-Q1": -1805514.67,
-      "2024-Q2": -4190693.76,
-      "2024-Q3": 8561963.13,
-      "2026-Q1": -211142.89
+      "2024-Q1": -1.81,
+      "2024-Q2": -4.19,
+      "2024-Q3": 8.56,
+      "2026-Q1": -0.21
     },
     "net_income": {
       "2024-Q1": -70804230000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1850000.0,
-      "2022": 810000.0,
-      "2023": -24467896.2,
-      "2025": -1208303.29
+      "2021": 1.85,
+      "2022": 0.81,
+      "2023": -24.47,
+      "2025": -1.21
     },
     "revenue_per_share": {
       "2021": 1354248158000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3333320867840,
-    "enterprise_value": 4919052992512,
-    "shares_outstanding": 39215538400,
-    "free_float_pct": 12.543000001244407
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3127,
-    "vol_trend": 0.729,
-    "price_chg_20d": -50.85
+    "cmf": -0.2812,
+    "vol_trend": 0.674,
+    "price_chg_20d": -44.3
   },
   "neraca": {
     "aset": 3129717378.0,

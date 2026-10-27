@@ -1,10 +1,10 @@
 {
   "kode": "OMRE",
-  "nama": "PT Indonesia Prima Property Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 820.0,
-  "update": "2026-10-21 12:45",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:03",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.7466557958335269,
-    "ps": 61.64647041171649,
+    "pb": null,
+    "ps": null,
     "roe": -0.010899356830994956,
-    "eps": -47.88001459997263,
+    "eps": null,
     "de": 0.22383046848681334,
     "margin_net": -3.5995535406704473,
     "current_ratio": 0.1035276853976821,
     "roa": -0.008865328138091983,
-    "bv": 1098.2302750152705
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 9794044184000000.0
     },
     "eps": {
-      "2024-Q3": -11210000.0,
-      "2026-Q1": -11970000.0
+      "2024-Q3": -11.21,
+      "2026-Q1": -11.97
     },
     "net_income": {
       "2024-Q3": -3.3981382119e+16,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -97210000.0,
-      "2022": -135000000.0,
-      "2023": -56570000.0,
-      "2025": -62320000.0
+      "2021": -97.21,
+      "2022": -135.0,
+      "2023": -56.57,
+      "2025": -62.32
     },
     "revenue_per_share": {
       "2021": 8.5195697693e+16,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2415072903168,
-    "enterprise_value": 2755190587392,
-    "shares_outstanding": 2945211000,
-    "free_float_pct": 10.282999995586055
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3887,
-    "vol_trend": 0.209,
-    "price_chg_20d": -12.18
+    "cmf": -0.383,
+    "vol_trend": 0.205,
+    "price_chg_20d": -3.31
   },
   "neraca": {
     "aset": 3976636382868.0,

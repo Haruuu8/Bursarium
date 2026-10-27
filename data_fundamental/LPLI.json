@@ -1,23 +1,23 @@
 {
   "kode": "LPLI",
-  "nama": "PT Star Pacific Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 190.0,
-  "update": "2026-10-21 12:30",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:48",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.01738049032975562,
-    "ps": 1.971627565543071,
+    "pb": null,
+    "ps": null,
     "roe": -0.05988658677154591,
-    "eps": -872.6353243599931,
+    "eps": null,
     "de": 0.010720967545744687,
     "margin_net": -21.03560528992879,
     "current_ratio": 73.50763883275403,
     "roa": -0.059251354918424086,
-    "bv": 10931.797457676874
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 2457000000.0
     },
     "eps": {
-      "2024-Q1": 57050000.0,
-      "2024-Q2": -2350000.0,
-      "2024-Q3": -27060000.0,
-      "2026-Q1": -3960000.0,
-      "2026-Q2": -84380000.0
+      "2024-Q1": 57.05,
+      "2024-Q2": -2.35,
+      "2024-Q3": -27.06,
+      "2026-Q1": -3.96,
+      "2026-Q2": -84.38
     },
     "net_income": {
       "2024-Q1": 66778000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 212110000.0,
-      "2022": 33040000.0,
-      "2023": 271830000.0,
-      "2025": 730830000.0
+      "2021": 212.11,
+      "2022": 33.04,
+      "2023": 271.83,
+      "2025": 730.83
     },
     "revenue_per_share": {
       "2021": 6210000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3225899499520,
-    "enterprise_value": -407547904000,
-    "shares_outstanding": 157927368,
-    "free_float_pct": 46.47569444708279
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1526,
-    "vol_trend": 1.508,
-    "price_chg_20d": -17.24
+    "cmf": -0.1985,
+    "vol_trend": 1.265,
+    "price_chg_20d": -12.15
   },
   "neraca": {
     "aset": 1744939.0,

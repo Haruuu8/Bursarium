@@ -1,10 +1,10 @@
 {
   "kode": "RODA",
-  "nama": "PT Pikko Land Development Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 32.0,
-  "update": "2026-10-21 12:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:14",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.23314122590625166,
-    "ps": 9.579228412252045,
+    "pb": null,
+    "ps": null,
     "roe": -0.005366829350155687,
-    "eps": -2.9465151611416793,
+    "eps": null,
     "de": 0.6280507756567536,
     "margin_net": -0.8820419296481182,
     "current_ratio": 5.89434434696054,
     "roa": -0.003119448385099588,
-    "bv": 137.2558623023948
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1.135133447e+16
     },
     "eps": {
-      "2024-Q3": -470000.0,
-      "2026-Q1": -740000.0
+      "2024-Q3": -0.47,
+      "2026-Q1": -0.74
     },
     "net_income": {
       "2024-Q3": -6397640495000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 550000.0,
-      "2022": -2650000.0,
-      "2023": -2600000.0,
-      "2025": -5210000.0
+      "2021": 0.55,
+      "2022": -2.65,
+      "2023": -2.6,
+      "2025": -5.21
     },
     "revenue_per_share": {
       "2021": 5.08916464751e+17,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 434948112384,
-    "enterprise_value": 1524538277888,
-    "shares_outstanding": 13592128209,
-    "free_float_pct": 17.95199999941378
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4593,
-    "vol_trend": 1.57,
-    "price_chg_20d": -46.55
+    "cmf": -0.3955,
+    "vol_trend": 0.795,
+    "price_chg_20d": -26.67
   },
   "neraca": {
     "aset": 3209654953044.0,

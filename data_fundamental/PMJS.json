@@ -3,103 +3,114 @@
   "nama": "PT Putra Mandiri Jembar Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto & Truck Dealerships",
-  "harga": 125.0,
-  "update": "2026-10-21 14:23",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 146.0,
+  "update": "2026-10-27 13:54",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 14.003596015953063,
-    "pb": 0.6251830610023696,
-    "ps": 0.177393574330957,
-    "roe": 0.011161116406995634,
-    "eps": 8.926278639972084,
-    "de": 1.7457634604760297,
-    "margin_net": 0.012667715787349775,
-    "current_ratio": 1.2592881013615764,
-    "roa": 0.0037960795759674993,
-    "bv": 199.94143763201896
+    "pe": 1.0227457363168628e-05,
+    "pb": 0.7176960370669464,
+    "ps": 0.15975275391778496,
+    "roe": 0.045473118054826234,
+    "eps": 14275297.839498095,
+    "de": 1.9274953792767875,
+    "margin_net": 0.020822027944029965,
+    "current_ratio": 1.2389612445712963,
+    "roa": 0.014499986486049934,
+    "bv": 203.42873927055163
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 2.390391151929e+18,
-      "2026-Q1": 2.423213476707e+18
+      "2024-Q3": 2390391151929.0,
+      "2024-Q4": 2705130144104.0,
+      "2025-Q3": 2406217870083.0,
+      "2025-Q4": 4054034972590.0,
+      "2026-Q1": 2423213476707.0,
+      "2026-Q2": 3687945132053.0
     },
     "eps": {
-      "2024-Q3": 2300000.0,
-      "2026-Q1": 2230000.0
+      "2024-Q3": 2.3,
+      "2024-Q4": 1.51,
+      "2025-Q3": 1.88,
+      "2025-Q4": 3.15,
+      "2026-Q1": 2.23,
+      "2026-Q2": 7.02
     },
     "net_income": {
       "2024-Q3": 3.1533238344e+16,
-      "2026-Q1": 3.0696579615e+16
+      "2024-Q4": 2.084277528e+16,
+      "2025-Q3": 2.5760290807e+16,
+      "2025-Q4": 4.3358280832e+16,
+      "2026-Q1": 3.0696579615e+16,
+      "2026-Q2": 9.6550135707e+16
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2021": 11200000.0,
-      "2022": 20270000.0,
-      "2023": 16150000.0,
-      "2025": 8570000.0
+      "2021": 11.2,
+      "2022": 20.27,
+      "2023": 16.15,
+      "2024": 7.96,
+      "2025": 8.57
     },
     "revenue_per_share": {
-      "2021": 9.778583412146e+18,
-      "2022": 1.1509464649302e+19,
-      "2023": 1.0494240419892e+19,
-      "2025": 1.0328867086736e+19
+      "2021": 9778583412146.0,
+      "2022": 11509464649302.0,
+      "2023": 10494240419892.0,
+      "2024": 9646022913989.0,
+      "2025": 10328867086736.0
     }
   },
   "statistik": {
-    "market_cap": 1719449944064,
-    "enterprise_value": 627283001344,
+    "market_cap": 2008317558784,
+    "enterprise_value": 819861389312,
     "shares_outstanding": 13755600000,
     "free_float_pct": 8.953999999999999
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3222,
-    "vol_trend": 0.337,
-    "price_chg_20d": -9.79
+    "cmf": -0.3463,
+    "vol_trend": 0.561,
+    "price_chg_20d": 8.33
   },
   "neraca": {
-    "aset": 8086389919046.0,
-    "aset_lancar": 5845789719931.0,
-    "kas": 1513236143457.0,
-    "piutang_usaha": 397279363829.0,
-    "persediaan": 3382207214805.0,
-    "aset_tetap": 2055680966236.0,
-    "liabilitas": 4801398453283.0,
-    "liabilitas_jangka_pendek": 4642138453949.0,
-    "liabilitas_jangka_panjang": 159259999334.0,
-    "utang_usaha": 397279363829.0,
-    "utang_bank": 391275464953.0,
-    "ekuitas": 2750314439491.0,
-    "ekuitas_induk": 2750314439491.0,
+    "aset": 8775643718318.0,
+    "aset_lancar": 6483827625108.0,
+    "kas": 1857130003186.0,
+    "piutang_usaha": 464691057339.0,
+    "persediaan": 3422680695417.0,
+    "aset_tetap": 2113382804455.0,
+    "liabilitas": 5393680185194.0,
+    "liabilitas_jangka_pendek": 5233277193712.0,
+    "liabilitas_jangka_panjang": 160402991482.0,
+    "utang_usaha": 464691057339.0,
+    "utang_bank": 2700000000.0,
+    "ekuitas": 2798284365910.0,
+    "ekuitas_induk": 2798284365910.0,
     "modal_saham": null,
-    "saldo_laba": 73100000000.0
+    "saldo_laba": 79000000000.0
   },
   "laba_rugi": {
-    "pendapatan": 2423213476707.0,
-    "beban_pokok": 2245431394924.0,
+    "pendapatan": 6111158608760.0,
+    "beban_pokok": 5670292271157.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 49462676548.0,
-    "beban_pajak": -11521919401.0,
-    "laba_bersih": 30696579615.0,
-    "laba_induk": 30696579615.0,
-    "eps_basic": 2.23,
+    "laba_sebelum_pajak": 196779400473.0,
+    "beban_pajak": -40793281862.0,
+    "laba_bersih": 127246715322.0,
+    "laba_induk": 127246715322.0,
+    "eps_basic": 9.25,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 25088700248.0,
+    "capex": 75814973047.0,
     "dividen_dibayar": null
   }
 }

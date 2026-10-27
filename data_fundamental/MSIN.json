@@ -1,23 +1,23 @@
 {
   "kode": "MSIN",
-  "nama": "PT MNC Digital Entertainment Tbk",
-  "sektor": "Communication Services",
-  "industri": "Entertainment",
-  "harga": 119.0,
-  "update": "2026-10-21 13:51",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:02",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 14.148148625141324,
-    "pb": 1.0692987105851086,
-    "ps": 2.1438677771290173,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.024061669384662684,
-    "eps": 8.410994480828146,
+    "eps": null,
     "de": 0.20903191162297238,
     "margin_net": 0.15255469038281155,
     "current_ratio": 3.07790172249543,
     "roa": 0.0193100246763568,
-    "bv": 111.28789254303365
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1065041000000.0
     },
     "eps": {
-      "2024-Q1": 9.58,
-      "2024-Q2": 15.45,
-      "2024-Q3": 3.64,
-      "2026-Q1": 26.78
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 116282000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 26582511.69,
-      "2022": 29690000.0,
-      "2023": 21.75,
-      "2025": 16.07
+      "2021": 26.58,
+      "2022": 29.69,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 1813220000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 7220464975872,
-    "enterprise_value": 6928415064064,
-    "shares_outstanding": 60676178205,
-    "free_float_pct": 28.62200000027177
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1941,
-    "vol_trend": 0.683,
-    "price_chg_20d": -52.4
+    "cmf": -0.431,
+    "vol_trend": 0.743,
+    "price_chg_20d": -40.34
   },
   "neraca": {
     "aset": 8414127.0,

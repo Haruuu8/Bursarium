@@ -1,33 +1,33 @@
 {
   "kode": "MKPI",
-  "nama": "PT Metropolitan Kentjana Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 19800.0,
-  "update": "2026-10-21 12:39",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:55",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 15.992376297228578,
-    "pb": 2.3304628136797927,
-    "ps": 6.972312146769214,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.036430840082278045,
-    "eps": 1238.0899268504124,
+    "eps": null,
     "de": 0.22548544972286913,
     "margin_net": 0.4359772442308959,
     "current_ratio": 2.5142977133377205,
     "roa": 0.029728710923241742,
-    "bv": 8496.166462633175
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2026-Q1": 6.7317128109e+17
     },
     "eps": {
-      "2026-Q1": 309520000.0
+      "2026-Q1": 309.52
     },
     "net_income": {
       "2026-Q1": 2.93487360025e+17
@@ -36,31 +36,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 342500000.0,
-      "2022": 739680000.0,
-      "2023": 890580000.0,
-      "2025": 1183490000.0
+      "2021": 342.5,
+      "2022": 739.68,
+      "2023": 890.58,
+      "2025": 1183.49
     },
     "revenue_per_share": {
-      "2021": 1.318001428423e+18,
-      "2022": 1.950931780269e+18,
-      "2023": 2.327212740306e+18,
-      "2025": 2.603313036403e+18
+      "2021": 1318001428423.0,
+      "2022": 1950931780269.0,
+      "2023": 2327212740306.0,
+      "2025": 2603313036403.0
     }
   },
   "statistik": {
-    "market_cap": 18774241574912,
-    "enterprise_value": 15905111146496,
-    "shares_outstanding": 948194000,
-    "free_float_pct": 15.758999951486722
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2781,
-    "vol_trend": 1.019,
-    "price_chg_20d": -5.0
+    "cmf": 0.1825,
+    "vol_trend": 1.03,
+    "price_chg_20d": -10.83
   },
   "neraca": {
     "aset": 9872185873877.0,

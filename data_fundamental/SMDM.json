@@ -1,23 +1,23 @@
 {
   "kode": "SMDM",
-  "nama": "PT Suryamas Dutamakmur Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 390.0,
-  "update": "2026-10-21 13:02",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:21",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.9100032307979554e-05,
-    "pb": 0.8057239075637578,
-    "ps": 2.9031275549082074e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.002058080961814949,
-    "eps": 20418813.628763705,
+    "eps": null,
     "de": 0.10783458068788374,
     "margin_net": 0.056189927973321584,
     "current_ratio": 7.563316169709871,
     "roa": 0.00132394246111759,
-    "bv": 484.036772818658
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 8.4604867998e+16
     },
     "eps": {
-      "2024-Q1": 3710000.0,
-      "2024-Q2": 19230000.0,
-      "2024-Q3": -3570000.0,
-      "2026-Q1": 1000000.0
+      "2024-Q1": 3.71,
+      "2024-Q2": 19.23,
+      "2024-Q3": -3.57,
+      "2026-Q1": 1.0
     },
     "net_income": {
       "2024-Q1": 1.7750037762e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 21170000.0,
-      "2022": 34230000.0,
-      "2023": 21785905.5,
-      "2025": 4630000.0
+      "2021": 21.17,
+      "2022": 34.23,
+      "2023": 21.79,
+      "2025": 4.63
     },
     "revenue_per_share": {
       "2021": 5.67052209003e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1861133795328,
-    "enterprise_value": 2558825594880,
-    "shares_outstanding": 4772138237,
-    "free_float_pct": 1.0270000064124296
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2677,
-    "vol_trend": 1.313,
-    "price_chg_20d": -29.9
+    "cmf": -0.1313,
+    "vol_trend": 1.169,
+    "price_chg_20d": -11.07
   },
   "neraca": {
     "aset": 3590746258706.0,

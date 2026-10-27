@@ -1,23 +1,23 @@
 {
   "kode": "MPRO",
-  "nama": "PT Maha Properti Indonesia Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 11600.0,
-  "update": "2026-10-21 14:02",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:06",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.14485231019440062,
-    "ps": 16.948298234089982,
+    "pb": null,
+    "ps": null,
     "roe": -0.010947526733495277,
-    "eps": -3638.6595926577825,
+    "eps": null,
     "de": 0.6224923315896845,
     "margin_net": -7.939039140786241,
     "current_ratio": 0.02106708320850794,
     "roa": -0.00521174460263858,
-    "bv": 80081.5671108876
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1097934000000.0
     },
     "eps": {
-      "2024-Q1": -1041.0,
-      "2024-Q2": -663.5,
-      "2024-Q3": -1055.5,
-      "2026-Q1": -880.0
+      "2024-Q1": -0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": -0.0,
+      "2026-Q1": -0.0
     },
     "net_income": {
       "2024-Q1": -10353568000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -100.0,
-      "2022": -2900.0,
-      "2023": -3900.0,
-      "2025": -6230.0
+      "2021": -0.0,
+      "2022": -0.0,
+      "2023": -0.0,
+      "2025": -0.01
     },
     "revenue_per_share": {
       "2021": 66958886000000.0,
@@ -55,17 +55,17 @@
     }
   },
   "statistik": {
-    "market_cap": 115333000069120,
-    "enterprise_value": 116068093788160,
-    "shares_outstanding": 9942500000,
-    "free_float_pct": 19.820999999999998
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.8709,
-    "vol_trend": 0.34,
+    "cmf": 0.8935,
+    "vol_trend": 0.459,
     "price_chg_20d": -3.33
   },
   "neraca": {

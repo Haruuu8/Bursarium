@@ -1,26 +1,26 @@
 {
   "kode": "PTRO",
-  "nama": "PT Petrosea Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Other Industrial Metals & Mining",
-  "harga": 3030.0,
-  "update": "2026-10-21 12:52",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:10",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 5516.377527075812,
-    "pb": 116.74159507374485,
-    "ps": 26.889554414849435,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.005290681905867882,
-    "eps": 0.5492735015194253,
+    "eps": null,
     "de": 4.960975013465454,
     "margin_net": 0.0048744949530499905,
     "current_ratio": 1.293569348652358,
     "roa": 0.0008627950322940755,
-    "bv": 25.95475929625572
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 284132000000.0
     },
     "eps": {
-      "2024-Q3": 1600.0,
-      "2026-Q1": 100.0
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q3": 1546000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 34000.0,
-      "2022": 41300.0,
-      "2023": 12300.0,
-      "2025": 2900.0
+      "2021": 0.03,
+      "2022": 0.04,
+      "2023": 0.01,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 415737000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 30560730742784,
-    "enterprise_value": 31771844411392,
-    "shares_outstanding": 10086050000,
-    "free_float_pct": 30.06700000495734
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.6,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.061,
-    "vol_trend": 1.005,
-    "price_chg_20d": -41.4
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1025,
+    "vol_trend": 1.167,
+    "price_chg_20d": -42.45
   },
   "neraca": {
     "aset": 1605248.0,

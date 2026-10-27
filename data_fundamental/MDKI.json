@@ -1,23 +1,23 @@
 {
   "kode": "MDKI",
-  "nama": "PT Emdeki Utama Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Specialty Chemicals",
-  "harga": 188.0,
-  "update": "2026-10-21 13:32",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:52",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 18.610595108415822,
-    "pb": 0.48503618933685194,
-    "ps": 1.509933149568607,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.006421015493236367,
-    "eps": 10.101772614191432,
+    "eps": null,
     "de": 0.06852652123105663,
     "margin_net": 0.08797395847886222,
     "current_ratio": 9.264647674600281,
     "roa": 0.005915514392351636,
-    "bv": 387.5999443609273
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 71578000000.0
     },
     "eps": {
-      "2024-Q1": 3.6,
-      "2024-Q2": 4999996.4,
-      "2024-Q3": 3000000.0,
-      "2026-Q1": 2.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 5.0,
+      "2024-Q3": 3.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 8854000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 15000000.0,
-      "2022": 15000000.0,
-      "2023": 19.0,
-      "2025": 14.0
+      "2021": 15.0,
+      "2022": 15.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 397308000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 475668185088,
-    "enterprise_value": 283322056704,
-    "shares_outstanding": 2530150002,
-    "free_float_pct": 16.67300000658222
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4876,
-    "vol_trend": 2.576,
-    "price_chg_20d": -2.6
+    "cmf": -0.403,
+    "vol_trend": 1.74,
+    "price_chg_20d": -0.53
   },
   "neraca": {
     "aset": 1064489.0,

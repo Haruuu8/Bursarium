@@ -1,26 +1,26 @@
 {
   "kode": "TUGU",
-  "nama": "PT Asuransi Tugu Pratama Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Insurance - Diversified",
-  "harga": 1340.0,
-  "update": "2026-10-21 13:48",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:56",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.004484330614436263,
-    "pb": 509.3921537237203,
-    "ps": 0.022745996842763103,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.02839844993162694,
-    "eps": 298818.28866189765,
+    "eps": null,
     "de": 2.0866539399593975,
     "margin_net": 5.072328246614476,
     "current_ratio": null,
     "roa": 0.008947623332553747,
-    "bv": 2.630586258944965
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 52366042000000.0
     },
     "eps": {
-      "2024-Q3": 159877.0,
-      "2026-Q1": 75000000.0
+      "2024-Q3": 0.16,
+      "2026-Q1": 75.0
     },
     "net_income": {
       "2024-Q3": 112904248000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 178000000.0,
-      "2022": 195000000.0,
-      "2023": 372000.0,
-      "2025": 200000000.0
+      "2021": 178.0,
+      "2022": 195.0,
+      "2023": 0.37,
+      "2025": 200.0
     },
     "revenue_per_share": {
       "2021": 19154437000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 4764471394304,
-    "enterprise_value": -1749312208896,
-    "shares_outstanding": 3555575600,
-    "free_float_pct": 41.46100001361243
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1918,
-    "vol_trend": 0.881,
-    "price_chg_20d": -14.24
+    "cmf": -0.1595,
+    "vol_trend": 0.928,
+    "price_chg_20d": -13.38
   },
   "neraca": {
     "aset": 29685844400.0,

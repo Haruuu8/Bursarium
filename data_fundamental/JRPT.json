@@ -1,23 +1,23 @@
 {
   "kode": "JRPT",
-  "nama": "PT Jaya Real Property, Tbk.",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 1130.0,
-  "update": "2026-10-21 12:18",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:38",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.011795447593323011,
-    "pb": 1322.7835959647155,
-    "ps": 0.004607782958615054,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.06088520291224924,
-    "eps": 95799.67110698312,
+    "eps": null,
     "de": 0.4093078499195243,
     "margin_net": 0.4004505738569996,
     "current_ratio": 1.25864350650468,
     "roa": 0.04227347122153065,
-    "bv": 0.8542591573158139
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 931743945000000.0
     },
     "eps": {
-      "2024-Q1": 17350000.0,
-      "2024-Q2": -17310670.0,
-      "2024-Q3": 21510.0,
-      "2026-Q1": 22.0,
-      "2026-Q2": 51999978.0
+      "2024-Q1": 17.35,
+      "2024-Q2": -17.31,
+      "2024-Q3": 0.02,
+      "2026-Q1": 0.0,
+      "2026-Q2": 52.0
     },
     "net_income": {
       "2024-Q1": 224025774000000.0,
@@ -45,31 +45,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 70890000.0,
-      "2022": 64930000.0,
-      "2023": 77400000.0,
-      "2025": 101140000.0
+      "2021": 70.89,
+      "2022": 64.93,
+      "2023": 77.4,
+      "2025": 101.14
     },
     "revenue_per_share": {
       "2021": 2174343050000000.0,
       "2022": 2258974450000000.0,
-      "2023": 2.503645371e+18,
+      "2023": 2503645371000.0,
       "2025": 3275283177000000.0
     }
   },
   "statistik": {
-    "market_cap": 14489799884800,
-    "enterprise_value": 13321630646272,
-    "shares_outstanding": 12822832300,
-    "free_float_pct": 31.808999997605834
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4465,
-    "vol_trend": 1.155,
-    "price_chg_20d": 0.0
+    "cmf": 0.3077,
+    "vol_trend": 1.01,
+    "price_chg_20d": -0.87
   },
   "neraca": {
     "aset": 15776746686.0,

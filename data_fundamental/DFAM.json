@@ -1,10 +1,10 @@
 {
   "kode": "DFAM",
-  "nama": "PT Dafam Property Indonesia Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 55.0,
-  "update": "2026-10-21 13:43",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:58",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 16.792588492883734,
-    "ps": 1.7965673667737914,
+    "pb": null,
+    "ps": null,
     "roe": -1.0816245520603718,
-    "eps": -7.085191230468191,
+    "eps": null,
     "de": 34.7697607642835,
     "margin_net": -0.23143678821838176,
     "current_ratio": 0.3059980365049622,
     "roa": -0.030566971765089476,
-    "bv": 3.2752544387845615
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 1.5561312102e+16
     },
     "eps": {
-      "2024-Q3": -1390000.0,
-      "2026-Q1": -1641000.0,
-      "2026-Q2": -1902000.0
+      "2024-Q3": -1.39,
+      "2026-Q1": -1.64,
+      "2026-Q2": -1.9
     },
     "net_income": {
       "2024-Q3": -2641487830000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -9520000.0,
-      "2023": -8600000.0,
-      "2025": -4800000.0
+      "2022": -9.52,
+      "2023": -8.6,
+      "2025": -4.8
     },
     "revenue_per_share": {
       "2022": 7.0533393491e+16,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 104491900928,
-    "enterprise_value": 252315336704,
-    "shares_outstanding": 1899852850,
-    "free_float_pct": 83.53200001779085
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5914,
-    "vol_trend": 0.64,
-    "price_chg_20d": -49.09
+    "cmf": -0.2359,
+    "vol_trend": 0.284,
+    "price_chg_20d": -15.79
   },
   "neraca": {
     "aset": 220185709848.0,

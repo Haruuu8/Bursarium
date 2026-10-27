@@ -1,23 +1,23 @@
 {
   "kode": "HEXA",
-  "nama": "PT Hexindo Adiperkasa Tbk",
-  "sektor": "Industrials",
-  "industri": "Industrial Distribution",
-  "harga": 3090.0,
-  "update": "2026-10-21 12:05",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:26",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.09942095224174598,
-    "pb": 0.015275856868399199,
-    "ps": 0.005373512321862689,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.02892656172419013,
-    "eps": 31079.967857142856,
+    "eps": null,
     "de": 1.4114977318507065,
     "margin_net": 0.04319149276642134,
     "current_ratio": 1.647565036824748,
     "roa": 0.011995268061890487,
-    "bv": 202279.97857142857
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 113796993000000.0
     },
     "eps": {
-      "2024-Q1": 7000.0,
-      "2024-Q2": 6000.0,
-      "2024-Q3": 12000.0,
-      "2026-Q1": 6000.0
+      "2024-Q1": 0.01,
+      "2024-Q2": 0.01,
+      "2024-Q3": 0.01,
+      "2026-Q1": 0.01
     },
     "net_income": {
       "2024-Q1": 5698346000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 66000.0,
-      "2022": 61450.0,
-      "2023": 66000.0,
-      "2025": 19000.0
+      "2021": 0.07,
+      "2022": 0.06,
+      "2023": 0.07,
+      "2025": 0.02
     },
     "revenue_per_share": {
       "2021": 463262626000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2595599941632,
-    "enterprise_value": 2562071199744,
-    "shares_outstanding": 840000000,
-    "free_float_pct": 18.6
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2553,
-    "vol_trend": 1.127,
-    "price_chg_20d": -24.5
+    "cmf": -0.2244,
+    "vol_trend": 0.482,
+    "price_chg_20d": -11.29
   },
   "neraca": {
     "aset": 409750076.0,

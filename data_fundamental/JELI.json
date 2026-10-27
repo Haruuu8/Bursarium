@@ -3,8 +3,8 @@
   "nama": "PT Niramas Utama Tbk.",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 282.0,
-  "update": "2026-10-21 11:10",
+  "harga": 288.0,
+  "update": "2026-10-26 23:22",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 3.387755072110746,
-    "ps": 0.841758520966317,
+    "pb": 3.4598349672620383,
+    "ps": 0.8596682767315578,
     "roe": -0.3734573086253904,
     "eps": -62.17389320695103,
     "de": 2.521797926151061,
@@ -33,8 +33,8 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 357012013056,
-    "enterprise_value": 448952139776,
+    "market_cap": 364607995904,
+    "enterprise_value": 444952117248,
     "shares_outstanding": 1266000000,
     "free_float_pct": 16.596366508688785
   },
@@ -42,9 +42,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2728,
-    "vol_trend": 0.71,
-    "price_chg_20d": -38.14
+    "cmf": -0.1444,
+    "vol_trend": 0.703,
+    "price_chg_20d": -29.76
   },
   "neraca": {
     "aset": 371748875073.0,

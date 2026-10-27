@@ -1,23 +1,23 @@
 {
   "kode": "INDF",
-  "nama": "PT Indofood Sukses Makmur Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 6600.0,
-  "update": "2026-10-21 12:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:31",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 5.251427461996783,
-    "pb": 0.7559313643278749,
-    "ps": 0.47626462711790135,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.061624823638605344,
-    "eps": 1256.8011360268206,
+    "eps": null,
     "de": 1.3896539587934107,
     "margin_net": 0.07209786134935331,
     "current_ratio": 2.0294554754820653,
     "roa": 0.0204296256985106,
-    "bv": 8730.951395128699
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 31634826000000.0
     },
     "eps": {
-      "2024-Q1": 279000000.0,
-      "2024-Q2": 160000000.0,
-      "2024-Q3": 559000000.0,
-      "2026-Q1": 337000000.0,
-      "2026-Q2": 201000000.0
+      "2024-Q1": 279.0,
+      "2024-Q2": 160.0,
+      "2024-Q3": 559.0,
+      "2026-Q1": 337.0,
+      "2026-Q2": 201.0
     },
     "net_income": {
       "2024-Q1": 2449754000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 870000000.0,
-      "2022": 724000000.0,
-      "2023": 928000000.0,
-      "2025": 1217000000.0
+      "2021": 870.0,
+      "2022": 724.0,
+      "2023": 928.0,
+      "2025": 1217.0
     },
     "revenue_per_share": {
       "2021": 99345618000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 57950815125504,
-    "enterprise_value": 121082803650560,
-    "shares_outstanding": 8780426500,
-    "free_float_pct": 49.66799999977222
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.0,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0359,
-    "vol_trend": 1.121,
-    "price_chg_20d": -5.05
+    "score": 7.6,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1054,
+    "vol_trend": 1.345,
+    "price_chg_20d": 0.38
   },
   "neraca": {
     "aset": 231245059.0,

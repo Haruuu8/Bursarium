@@ -3,98 +3,115 @@
   "nama": "PT Pertamina Geothermal Energy Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Renewable",
-  "harga": 970.0,
-  "update": "2026-10-21 10:53",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 1010.0,
+  "update": "2026-10-26 22:57",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 231.63570406264944,
-    "pb": 19.4541615796836,
-    "ps": 87.28247168055853,
-    "roe": 0.02099650576150161,
-    "eps": 4.187610040193323,
-    "de": 0.46121510004403055,
-    "margin_net": 0.3768092316931921,
-    "current_ratio": 4.767802970027668,
-    "roa": 0.01437140052356021,
-    "bv": 49.86079693164427
+    "pe": 285.6108445343821,
+    "pb": 21.121916482347057,
+    "ps": 91.5392557767178,
+    "roe": 0.03968839864157918,
+    "eps": 3.536280289519662,
+    "de": 0.4791179934930187,
+    "margin_net": 0.33877384300527175,
+    "current_ratio": 4.363431492656956,
+    "roa": 0.026836654729302717,
+    "bv": 47.81763060393321
   },
   "quarterly": {
     "revenue": {
-      "2026-Q1": 116555000000.0
+      "2024-Q4": 101099000000.0,
+      "2025-Q1": 101507000000.0,
+      "2025-Q2": 103343000000.0,
+      "2025-Q3": 114011000000.0,
+      "2025-Q4": 113865000000.0,
+      "2026-Q1": 116555000000.0,
+      "2026-Q2": 118472000000.0
     },
     "eps": {
-      "2026-Q1": 1000.0
+      "2024-Q4": 0.0,
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
-      "2026-Q1": 43919000000.0
+      "2024-Q4": 26501000000.0,
+      "2025-Q1": 31373000000.0,
+      "2025-Q2": 37583000000.0,
+      "2025-Q3": 35321000000.0,
+      "2025-Q4": 33420000000.0,
+      "2026-Q1": 43919000000.0,
+      "2026-Q2": 35702000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 4100.0,
-      "2023": 4000.0,
-      "2025": 3300.0
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2022": 386068000000.0,
       "2023": 178977000000000.0,
+      "2024": 407120000000.0,
       "2025": 432726000000.0
     }
   },
   "statistik": {
-    "market_cap": 40692835418112,
-    "enterprise_value": 41480626372608,
-    "shares_outstanding": 41951375203,
-    "free_float_pct": 11.8083902447273
+    "market_cap": 42373799215104,
+    "enterprise_value": 42947110240256,
+    "shares_outstanding": 41954253581,
+    "free_float_pct": 11.807580100158045
   },
   "akumulasi": {
-    "score": 5.5,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.209,
-    "vol_trend": 1.208,
-    "price_chg_20d": -7.04
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3127,
+    "vol_trend": 1.252,
+    "price_chg_20d": 0.0
   },
   "neraca": {
-    "aset": 3056000.0,
-    "aset_lancar": 928830.0,
-    "kas": 745213.0,
-    "piutang_usaha": 4743.0,
-    "persediaan": 28186.0,
-    "aset_tetap": 1973538.0,
-    "liabilitas": 964737.0,
-    "liabilitas_jangka_pendek": 194813.0,
-    "liabilitas_jangka_panjang": 769924.0,
-    "utang_usaha": 4743.0,
+    "aset": 2966875.0,
+    "aset_lancar": 865491.0,
+    "kas": 656634.0,
+    "piutang_usaha": 4583.0,
+    "persediaan": 28309.0,
+    "aset_tetap": 1954537.0,
+    "liabilitas": 961184.0,
+    "liabilitas_jangka_pendek": 198351.0,
+    "liabilitas_jangka_panjang": 762833.0,
+    "utang_usaha": 4583.0,
     "utang_bank": null,
-    "ekuitas": 2091729.0,
-    "ekuitas_induk": 2091729.0,
+    "ekuitas": 2006153.0,
+    "ekuitas_induk": 2006153.0,
     "modal_saham": null,
-    "saldo_laba": 191533.0
+    "saldo_laba": 205330.0
   },
   "laba_rugi": {
-    "pendapatan": 116555.0,
-    "beban_pokok": 48985.0,
+    "pendapatan": 235027.0,
+    "beban_pokok": 104587.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 63720.0,
-    "beban_pajak": -19821.0,
-    "laba_bersih": 43919.0,
-    "laba_induk": 43919.0,
-    "eps_basic": 0.001,
-    "eps_diluted": 0.001
+    "laba_sebelum_pajak": 115831.0,
+    "beban_pajak": -36226.0,
+    "laba_bersih": 79621.0,
+    "laba_induk": 79621.0,
+    "eps_basic": 0.0019,
+    "eps_diluted": 0.0019
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 28614.0,
-    "dividen_dibayar": null
+    "capex": 58429.0,
+    "dividen_dibayar": 123900.0
   }
 }

@@ -1,23 +1,23 @@
 {
   "kode": "SMMA",
-  "nama": "PT Sinar Mas Multiartha Tbk",
-  "sektor": "Financial Services",
-  "industri": "Insurance - Diversified",
-  "harga": 20050.0,
-  "update": "2026-10-21 13:03",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:21",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 2.504812646948702,
-    "pb": 0.11463041678985998,
-    "ps": -9.859834870669124,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.022449031676491635,
-    "eps": 8004.590692411423,
+    "eps": null,
     "de": 3.909666317070532,
     "margin_net": -2.060333080441652,
     "current_ratio": null,
     "roa": 0.004506543572413683,
-    "bv": 174909.94590690164
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": -271526000000.0
     },
     "eps": {
-      "2024-Q1": 18.0,
-      "2024-Q2": 50999982.0,
-      "2024-Q3": 40000000.0,
-      "2026-Q1": 88000000.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 51.0,
+      "2024-Q3": 40.0,
+      "2026-Q1": 88.0
     },
     "net_income": {
       "2024-Q1": 113201000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 150000000.0,
-      "2022": 133000000.0,
-      "2023": 184000000.0,
-      "2025": 321000000.0
+      "2021": 150.0,
+      "2022": 133.0,
+      "2023": 184.0,
+      "2025": 321.0
     },
     "revenue_per_share": {
       "2021": -35204000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 127671677747200,
-    "enterprise_value": 56154457636864,
-    "shares_outstanding": 142474368,
-    "free_float_pct": 47.330316285382644
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.9156,
-    "vol_trend": 0.095,
-    "price_chg_20d": 0.62
+    "cmf": 0.864,
+    "vol_trend": 0.565,
+    "price_chg_20d": 0.25
   },
   "neraca": {
     "aset": 124138154.0,

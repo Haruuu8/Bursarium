@@ -1,23 +1,23 @@
 {
   "kode": "JECC",
-  "nama": "PT Jembo Cable Company Tbk",
-  "sektor": "Industrials",
-  "industri": "Electrical Equipment & Parts",
-  "harga": 665.0,
-  "update": "2026-10-21 12:17",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:37",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.011163522173183414,
-    "pb": 0.0005542682678525912,
-    "ps": 0.00014350211484493434,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.022222812571471986,
-    "eps": 59569.01322751323,
+    "eps": null,
     "de": 1.9987232646428759,
     "margin_net": 0.01114728923165403,
     "current_ratio": 1.2391533259729874,
     "roa": 0.007410736094667065,
-    "bv": 1199780.0317460317
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 951665034000000.0
     },
     "eps": {
-      "2024-Q1": 135090000.0,
-      "2024-Q2": -96970000.0,
-      "2024-Q3": -38060070.0,
-      "2026-Q1": -21526461.64,
-      "2026-Q2": 48186461.64
+      "2024-Q1": 135.09,
+      "2024-Q2": -96.97,
+      "2024-Q3": -38.06,
+      "2026-Q1": -21.53,
+      "2026-Q2": 48.19
     },
     "net_income": {
       "2024-Q1": 20426194000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -312000000.0,
-      "2022": 381000000.0,
-      "2023": 426000000.0,
-      "2025": 153000000.0
+      "2021": -312.0,
+      "2022": 381.0,
+      "2023": 426.0,
+      "2025": 153.0
     },
     "revenue_per_share": {
       "2021": 1721401131000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 502739992576,
-    "enterprise_value": 1555869466624,
-    "shares_outstanding": 756000000,
-    "free_float_pct": 33.934999999999995
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3861,
-    "vol_trend": 0.571,
-    "price_chg_20d": -14.74
+    "cmf": -0.4295,
+    "vol_trend": 0.557,
+    "price_chg_20d": -8.45
   },
   "neraca": {
     "aset": 2719951128.0,

@@ -1,10 +1,10 @@
 {
   "kode": "YPAS",
-  "nama": "PT Yanaprima Hastapersada Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 1000.0,
-  "update": "2026-10-21 13:22",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:43",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.165693564007397,
-    "ps": 1.9324498005370874,
+    "pb": null,
+    "ps": null,
     "roe": -0.005530775435852157,
-    "eps": -4282697.273712489,
+    "eps": null,
     "de": 1.0893129013636373,
     "margin_net": -0.008276097492346427,
     "current_ratio": 1.9468308595343207,
     "roa": -0.0026471743089521785,
-    "bv": 193.5848473412404
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q1": 8.6418815228e+16
     },
     "eps": {
-      "2024-Q1": 1200000.0,
-      "2024-Q2": -7460000.0,
-      "2026-Q1": -1070000.0
+      "2024-Q1": 1.2,
+      "2024-Q2": -7.46,
+      "2026-Q1": -1.07
     },
     "net_income": {
       "2024-Q1": 788512190000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -14000000.0,
-      "2022": -2000000.0,
-      "2023": 12000000.0,
-      "2025": 8000000.0
+      "2021": -14.0,
+      "2022": -2.0,
+      "2023": 12.0,
+      "2025": 8.0
     },
     "revenue_per_share": {
       "2021": 3.39039023365e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 668000059392,
-    "enterprise_value": 711870906368,
-    "shares_outstanding": 668000089,
-    "free_float_pct": 10.179999990988026
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3347,
-    "vol_trend": 0.187,
-    "price_chg_20d": -29.57
+    "cmf": -0.3638,
+    "vol_trend": 0.306,
+    "price_chg_20d": -16.37
   },
   "neraca": {
     "aset": 270178861128.0,

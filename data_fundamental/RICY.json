@@ -1,23 +1,23 @@
 {
   "kode": "RICY",
-  "nama": "PT Ricky Putra Globalindo Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Apparel Manufacturing",
-  "harga": 60.0,
-  "update": "2026-10-21 12:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:15",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.16025002651497564,
-    "ps": 4.8624531505783384e-08,
+    "pb": null,
+    "ps": null,
     "roe": -0.07421341246077376,
-    "eps": -81936256.9582993,
+    "eps": null,
     "de": 6.4864245931716855,
     "margin_net": -0.15381467190892875,
     "current_ratio": 3.515659488365272,
     "roa": -0.009848368453217219,
-    "bv": 374.41491464834735
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.15926218167e+17
     },
     "eps": {
-      "2024-Q1": -29380000.0,
-      "2024-Q2": -69810000.0,
-      "2024-Q3": 45040000.0,
-      "2026-Q1": -27790000.0
+      "2024-Q1": -29.38,
+      "2024-Q2": -69.81,
+      "2024-Q3": 45.04,
+      "2026-Q1": -27.79
     },
     "net_income": {
       "2024-Q1": -1.8854943853e+16,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -103240000.0,
-      "2022": -101270000.0,
-      "2023": -93220000.0,
-      "2025": -564140000.0
+      "2021": -103.24,
+      "2022": -101.27,
+      "2023": -93.22,
+      "2025": -564.14
     },
     "revenue_per_share": {
-      "2021": 1.375931426011e+18,
-      "2022": 1.21449453843e+18,
+      "2021": 1375931426011.0,
+      "2022": 1214494538430.0,
       "2023": 8.68483140503e+17,
       "2025": 5.65585284251e+17
     }
   },
   "statistik": {
-    "market_cap": 38503051264,
-    "enterprise_value": 1324267864064,
-    "shares_outstanding": 641717510,
-    "free_float_pct": 51.706000043539404
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.6154,
-    "vol_trend": 1.189,
-    "price_chg_20d": -22.08
+    "cmf": -0.3486,
+    "vol_trend": 0.406,
+    "price_chg_20d": -7.58
   },
   "neraca": {
     "aset": 1810569263092.0,

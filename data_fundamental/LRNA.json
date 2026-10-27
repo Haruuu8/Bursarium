@@ -1,23 +1,23 @@
 {
   "kode": "LRNA",
-  "nama": "PT Eka Sari Lorena Transport Tbk",
-  "sektor": "Industrials",
-  "industri": "Railroads",
-  "harga": 197.0,
-  "update": "2026-10-21 12:32",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:49",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.27479164483987867,
-    "ps": 9.439530316197788e-07,
+    "pb": null,
+    "ps": null,
     "roe": -0.06306362191202856,
-    "eps": -86765175.80904609,
+    "eps": null,
     "de": 0.13993711997746167,
     "margin_net": -0.5941554247353814,
     "current_ratio": 0.8536681027401277,
     "roa": -0.05532201803663997,
-    "bv": 716.9068044801437
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.224817104e+16
     },
     "eps": {
-      "2024-Q1": -26970000.0,
-      "2024-Q2": -10830000.0,
-      "2024-Q3": -30720000.0,
-      "2026-Q1": -19070000.0,
-      "2026-Q2": -26140000.0
+      "2024-Q1": -26.97,
+      "2024-Q2": -10.83,
+      "2024-Q3": -30.72,
+      "2026-Q1": -19.07,
+      "2026-Q2": -26.14
     },
     "net_income": {
       "2024-Q1": -9438306057000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -74640000.0,
-      "2022": -60920000.0,
-      "2023": 388200000.0,
-      "2025": -66060000.0
+      "2021": -74.64,
+      "2022": -60.92,
+      "2023": 388.2,
+      "2025": -66.06
     },
     "revenue_per_share": {
       "2021": 7.0200908124e+16,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 68950007808,
-    "enterprise_value": 72021164032,
-    "shares_outstanding": 350000022,
-    "free_float_pct": 22.34600002396571
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.309,
-    "vol_trend": 0.171,
-    "price_chg_20d": -12.73
+    "cmf": -0.2124,
+    "vol_trend": 0.135,
+    "price_chg_20d": -5.29
   },
   "neraca": {
     "aset": 286030055276.0,

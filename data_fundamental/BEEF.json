@@ -1,35 +1,35 @@
 {
   "kode": "BEEF",
-  "nama": "PT Estika Tata Tiara Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 318.0,
-  "update": "2026-10-21 14:08",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:12",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 57.87532974531155,
-    "pb": 6.9828780349910335,
-    "ps": 0.5433943968561651,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.060326896328022336,
-    "eps": 5.494569126420589,
+    "eps": null,
     "de": 4.846986052112828,
     "margin_net": 0.00938905055482963,
     "current_ratio": 1.000339386876069,
     "roa": 0.01031339383616008,
-    "bv": 45.5399619478544
+    "bv": null
   },
   "quarterly": {
     "revenue": {
-      "2026-Q1": 1.270515396063e+18,
-      "2026-Q2": 1.1055114705219999e+18
+      "2026-Q1": 1270515396063.0,
+      "2026-Q2": 1105511470522.0
     },
     "eps": {
-      "2026-Q1": 2600000.0,
-      "2026-Q2": 140000.0
+      "2026-Q1": 2.6,
+      "2026-Q2": 0.14
     },
     "net_income": {
       "2026-Q1": 2.1184151415e+16,
@@ -39,29 +39,29 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -49720000.0,
-      "2023": 8120000.0,
-      "2025": 15900000.0
+      "2022": -49.72,
+      "2023": 8.12,
+      "2025": 15.9
     },
     "revenue_per_share": {
       "2022": 3.9116821863e+16,
       "2023": 6.11771423767e+17,
-      "2025": 6.474280326569e+18
+      "2025": 6474280326569.0
     }
   },
   "statistik": {
-    "market_cap": 2582239248384,
-    "enterprise_value": 4027718303744,
-    "shares_outstanding": 8120249598,
-    "free_float_pct": 25.286750846990408
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3146,
-    "vol_trend": 0.47,
-    "price_chg_20d": -24.66
+    "cmf": -0.3584,
+    "vol_trend": 0.471,
+    "price_chg_20d": -6.12
   },
   "neraca": {
     "aset": 2163074224101.0,

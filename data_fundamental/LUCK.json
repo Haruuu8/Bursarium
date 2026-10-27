@@ -1,23 +1,23 @@
 {
   "kode": "LUCK",
-  "nama": "PT Sentral Mitra Informatika Tbk",
-  "sektor": "Technology",
-  "industri": "Computer Hardware",
-  "harga": 86.0,
-  "update": "2026-10-21 14:07",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:11",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5185912932462095,
-    "ps": 5.109526509193495e-07,
+    "pb": null,
+    "ps": null,
     "roe": 0.02113827698588775,
-    "eps": -316683.1100327204,
+    "eps": null,
     "de": 0.2128999945609612,
     "margin_net": 0.03401498039439558,
     "current_ratio": 4.397726479441399,
     "roa": 0.017441608847521405,
-    "bv": 165.83386786474668
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.6992640083e+16
     },
     "eps": {
-      "2024-Q1": 610000.0,
-      "2024-Q2": -497000.0,
-      "2024-Q3": -3323000.0,
-      "2026-Q1": 1250000.0,
-      "2026-Q2": 2260000.0
+      "2024-Q1": 0.61,
+      "2024-Q2": -0.5,
+      "2024-Q3": -3.32,
+      "2026-Q1": 1.25,
+      "2026-Q2": 2.26
     },
     "net_income": {
       "2024-Q1": 438329255000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 420000.0,
-      "2022": 1810000.0,
-      "2023": 260000.0,
-      "2025": -21750000.0
+      "2021": 0.42,
+      "2022": 1.81,
+      "2023": 0.26,
+      "2025": -21.75
     },
     "revenue_per_share": {
       "2021": 1.02316904804e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 61554466816,
-    "enterprise_value": 42184212480,
-    "shares_outstanding": 715749640,
-    "free_float_pct": 26.665999999664685
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2633,
-    "vol_trend": 0.568,
-    "price_chg_20d": -28.45
+    "cmf": -0.2206,
+    "vol_trend": 0.409,
+    "price_chg_20d": -16.82
   },
   "neraca": {
     "aset": 143852498811.0,

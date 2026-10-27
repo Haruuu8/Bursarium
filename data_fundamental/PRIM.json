@@ -1,23 +1,23 @@
 {
   "kode": "PRIM",
-  "nama": "PT Royal Prima Tbk",
-  "sektor": "Healthcare",
-  "industri": "Medical Care Facilities",
-  "harga": 126.0,
-  "update": "2026-10-21 13:47",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:59",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4541827366257807,
-    "ps": 1.4703178489435764e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.0023607638024537624,
-    "eps": -5975319.440153542,
+    "eps": null,
     "de": 0.10591012273210199,
     "margin_net": -0.030791289099524548,
     "current_ratio": 2.169846070074744,
     "roa": -0.0021327309644865733,
-    "bv": 277.42137655006565
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 7.185639071e+16
     },
     "eps": {
-      "2024-Q1": 1150000.0,
-      "2024-Q2": -5100000.0,
-      "2024-Q3": -1350000.0,
-      "2026-Q1": -650000.0
+      "2024-Q1": 1.15,
+      "2024-Q2": -5.1,
+      "2024-Q3": -1.35,
+      "2026-Q1": -0.65
     },
     "net_income": {
       "2024-Q1": -3904235336000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 22240000.0,
-      "2022": 6370000.0,
-      "2025": -6430000.0
+      "2021": 22.24,
+      "2022": 6.37,
+      "2025": -6.43
     },
     "revenue_per_share": {
       "2021": 5.99963836758e+17,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 425668345856,
-    "enterprise_value": 388018372608,
-    "shares_outstanding": 3378320205,
-    "free_float_pct": 21.589999992318667
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1566,
-    "vol_trend": 0.426,
-    "price_chg_20d": -0.82
+    "cmf": 0.1456,
+    "vol_trend": 0.397,
+    "price_chg_20d": 2.5
   },
   "neraca": {
     "aset": 1037426162438.0,

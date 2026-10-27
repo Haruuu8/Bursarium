@@ -1,23 +1,23 @@
 {
   "kode": "SDRA",
-  "nama": "PT Bank Woori Saudara Indonesia 1906 Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 171.0,
-  "update": "2026-10-21 12:59",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:17",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.480324689069201,
-    "pb": 0.1938721273946332,
-    "ps": 0.632486901721716,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.008243385960848141,
-    "eps": 38.16687670364482,
+    "eps": null,
     "de": 3.1815672411044353,
     "margin_net": 0.11781372142472715,
     "current_ratio": null,
     "roa": 0.0019713627655718142,
-    "bv": 882.0246741911682
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 906728000000.0
     },
     "eps": {
-      "2024-Q1": 17640000.0,
-      "2024-Q2": 4740000.0,
-      "2024-Q3": 8520000.0,
-      "2026-Q1": 7.27
+      "2024-Q1": 17.64,
+      "2024-Q2": 4.74,
+      "2024-Q3": 8.52,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 151151000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 88890000.0,
-      "2022": 100440000.0,
-      "2023": 81450000.0,
-      "2025": -72240000.0
+      "2021": 88.89,
+      "2022": 100.44,
+      "2023": 81.45,
+      "2025": -72.24
     },
     "revenue_per_share": {
       "2021": 2465956000000.0,
       "2022": 2958461000000.0,
-      "2023": 3.715555e+18,
+      "2023": 3715555000000.0,
       "2025": 3890650000000.0
     }
   },
   "statistik": {
-    "market_cap": 2512364503040,
-    "enterprise_value": 7799048241152,
-    "shares_outstanding": 14692189889,
-    "free_float_pct": 9.229000000981406
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.8,
+    "score": 5.6,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0865,
-    "vol_trend": 0.634,
-    "price_chg_20d": -15.87
+    "cmf": 0.0765,
+    "vol_trend": 0.67,
+    "price_chg_20d": -14.36
   },
   "neraca": {
     "aset": 54188403.0,

@@ -1,23 +1,23 @@
 {
   "kode": "SMSM",
-  "nama": "PT Selamat Sempurna Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Auto Parts",
-  "harga": 1610.0,
-  "update": "2026-10-21 13:05",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:24",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.580307842312632,
-    "pb": 2.281830486189235,
-    "ps": 1.8360879452674947,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.061131810598175663,
-    "eps": 168.0530549226438,
+    "eps": null,
     "de": 0.2208009458622342,
     "margin_net": 0.201640144076802,
     "current_ratio": 5.93672653189987,
     "roa": 0.04532274636621927,
-    "bv": 705.5738845389766
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1231843000000.0
     },
     "eps": {
-      "2024-Q1": 37000000.0,
-      "2024-Q2": 40000000.0,
-      "2024-Q3": 48000000.0,
-      "2026-Q1": 43000000.0
+      "2024-Q1": 37.0,
+      "2024-Q2": 40.0,
+      "2024-Q3": 48.0,
+      "2026-Q1": 43.0
     },
     "net_income": {
       "2024-Q1": 215019000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 115000000.0,
-      "2022": 147000000.0,
-      "2023": 164000000.0,
-      "2025": 195000000.0
+      "2021": 115.0,
+      "2022": 147.0,
+      "2023": 164.0,
+      "2025": 195.0
     },
     "revenue_per_share": {
       "2021": 4162931000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 9271467048960,
-    "enterprise_value": 8595363594240,
-    "shares_outstanding": 5758675440,
-    "free_float_pct": 41.426000003917565
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.5,
+    "score": 6.2,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0307,
-    "vol_trend": 0.882,
-    "price_chg_20d": -4.17
+    "cmf": 0.0776,
+    "vol_trend": 1.072,
+    "price_chg_20d": -1.2
   },
   "neraca": {
     "aset": 5480449.0,

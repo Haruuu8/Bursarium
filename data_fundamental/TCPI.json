@@ -1,33 +1,33 @@
 {
   "kode": "TCPI",
-  "nama": "PT Transcoal Pacific Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 1265.0,
-  "update": "2026-10-21 13:54",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:02",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 25.277351493062216,
-    "pb": 2.972858390416915,
-    "ps": 3.097162264860503,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.029402392011212728,
-    "eps": 50.0448,
+    "eps": null,
     "de": 0.8161151955600301,
     "margin_net": 0.12252716688734458,
     "current_ratio": 1.0579526104269694,
     "roa": 0.015577123770104204,
-    "bv": 425.5164
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2026-Q1": 510548000000.0
     },
     "eps": {
-      "2026-Q1": 13.0
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2026-Q1": 62556000000.0
@@ -36,10 +36,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 16000000.0,
-      "2022": 22000000.0,
-      "2023": 36.0,
-      "2025": 23.0
+      "2021": 16.0,
+      "2022": 22.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 1670829000000.0,
@@ -49,18 +49,18 @@
     }
   },
   "statistik": {
-    "market_cap": 6324999946240,
+    "market_cap": null,
     "enterprise_value": null,
-    "shares_outstanding": 5000000000,
-    "free_float_pct": 20.0
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.9,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1088,
-    "vol_trend": 0.992,
-    "price_chg_20d": -9.76
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.0031,
+    "vol_trend": 1.578,
+    "price_chg_20d": 8.95
   },
   "neraca": {
     "aset": 4015889.0,

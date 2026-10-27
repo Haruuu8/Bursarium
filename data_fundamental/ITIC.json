@@ -1,26 +1,26 @@
 {
   "kode": "ITIC",
-  "nama": "PT Indonesian Tobacco Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Tobacco",
-  "harga": 176.0,
-  "update": "2026-10-21 14:14",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:18",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 9.197894336560882,
-    "pb": 0.34428896613951093,
-    "ps": 0.5090700400011346,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.01871564042494978,
-    "eps": 19.134814291181222,
+    "eps": null,
     "de": 0.3203039854783403,
     "margin_net": 0.05534636748082902,
     "current_ratio": 1.4661202977972856,
     "roa": 0.014175251026125763,
-    "bv": 511.198491120631
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 9.5708204584e+16
     },
     "eps": {
-      "2024-Q3": 9070000.0,
-      "2026-Q1": 3300000.0,
-      "2026-Q2": 6260000.0
+      "2024-Q3": 9.07,
+      "2026-Q1": 3.3,
+      "2026-Q2": 6.26
     },
     "net_income": {
       "2024-Q3": 8526315088000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 19530000.0,
-      "2022": 25460000.0,
-      "2023": 28660000.0,
-      "2025": 21620000.0
+      "2021": 19.53,
+      "2022": 25.46,
+      "2023": 28.66,
+      "2025": 21.62
     },
     "revenue_per_share": {
       "2021": 2.38398863725e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 165566726144,
-    "enterprise_value": 272945463296,
-    "shares_outstanding": 940720000,
-    "free_float_pct": 24.50099997873969
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.617,
-    "vol_trend": 0.723,
-    "price_chg_20d": -17.16
+    "cmf": -0.491,
+    "vol_trend": 0.772,
+    "price_chg_20d": -12.56
   },
   "neraca": {
     "aset": 634927115817.0,

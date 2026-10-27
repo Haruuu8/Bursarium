@@ -1,23 +1,23 @@
 {
   "kode": "TBIG",
-  "nama": "PT Tower Bersama Infrastructure Tbk",
-  "sektor": "Communication Services",
-  "industri": "Telecom Services",
-  "harga": 1165.0,
-  "update": "2026-10-21 13:10",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:29",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 16.867898854706603,
-    "pb": 2.0881819953691365,
-    "ps": 3.838203924790156,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03100693798906496,
-    "eps": 69.06610064684692,
+    "eps": null,
     "de": 2.6431720218618153,
     "margin_net": 0.2270817676914381,
     "current_ratio": 0.29861254873291465,
     "roa": 0.008386048846527303,
-    "bv": 557.9015634573835
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1717879000000.0
     },
     "eps": {
-      "2024-Q1": 15450000.0,
-      "2024-Q2": -15449967.71,
-      "2024-Q3": 51629967.71,
-      "2026-Q1": 17.43
+      "2024-Q1": 15.45,
+      "2024-Q2": -15.45,
+      "2024-Q3": 51.63,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 349842000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 74250000.0,
-      "2022": 73439714.17,
-      "2023": 69000000.0,
-      "2025": 63710000.0
+      "2021": 74.25,
+      "2022": 73.44,
+      "2023": 69.0,
+      "2025": 63.71
     },
     "revenue_per_share": {
       "2021": 6179584000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 26271465603072,
-    "enterprise_value": 56241824989184,
-    "shares_outstanding": 22550614345,
-    "free_float_pct": 8.237000001784208
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1789,
-    "vol_trend": 0.988,
-    "price_chg_20d": -19.31
+    "score": 4.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.016,
+    "vol_trend": 1.123,
+    "price_chg_20d": -25.61
   },
   "neraca": {
     "aset": 46517616.0,

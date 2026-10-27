@@ -1,23 +1,23 @@
 {
   "kode": "RDTX",
-  "nama": "PT Roda Vivatex Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 12800.0,
-  "update": "2026-10-21 12:55",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:14",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.120859718208915e-05,
-    "pb": 1.032641846312186,
-    "ps": 6.383545670632889e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.031020428697756147,
-    "eps": 1141980552.2544644,
+    "eps": null,
     "de": 0.11819623747023272,
     "margin_net": 0.7274470499337459,
     "current_ratio": 4.815885340477958,
     "roa": 0.027741489068086704,
-    "bv": 12395.391534549852
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.42080972881e+17
     },
     "eps": {
-      "2024-Q1": 235750000.0,
-      "2024-Q2": 334780000.0,
-      "2024-Q3": 232620000.0,
-      "2026-Q1": 384510000.0
+      "2024-Q1": 235.75,
+      "2024-Q2": 334.78,
+      "2024-Q3": 232.62,
+      "2026-Q1": 384.51
     },
     "net_income": {
       "2024-Q1": 6.3368973747e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 728450000.0,
-      "2022": 1007500000.0,
-      "2023": 1126496500.0,
-      "2025": 1306070000.0
+      "2021": 728.45,
+      "2022": 1007.5,
+      "2023": 1126.5,
+      "2025": 1306.07
     },
     "revenue_per_share": {
       "2021": 4.13584008445e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3440640000000,
-    "enterprise_value": 2669733740544,
-    "shares_outstanding": 268800000,
-    "free_float_pct": 21.175
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3228,
-    "vol_trend": 0.69,
-    "price_chg_20d": -5.01
+    "cmf": -0.258,
+    "vol_trend": 0.626,
+    "price_chg_20d": -7.98
   },
   "neraca": {
     "aset": 3725697071283.0,

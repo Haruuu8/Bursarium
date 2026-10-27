@@ -1,23 +1,23 @@
 {
   "kode": "FIRE",
-  "nama": "PT Alfa Energi Investama Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 76.0,
-  "update": "2026-10-21 13:29",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:50",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 5.518612198176421e-06,
-    "pb": 0.4638179578600237,
-    "ps": 3.3940065652779034e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.007740100435902578,
-    "eps": 13771578.300992694,
+    "eps": null,
     "de": 0.4368829348059673,
     "margin_net": 0.017647244569544012,
     "current_ratio": 0.8748013956303408,
     "roa": 0.005386462681538836,
-    "bv": 163.85738997828142
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q2": 5.7632731945e+16
     },
     "eps": {
-      "2024-Q1": 10740000.0,
-      "2024-Q2": 1800000.0,
-      "2026-Q1": 330000.0,
-      "2026-Q2": 940000.0
+      "2024-Q1": 10.74,
+      "2024-Q2": 1.8,
+      "2026-Q1": 0.33,
+      "2026-Q2": 0.94
     },
     "net_income": {
       "2024-Q1": 1.5803634241e+16,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -31160000.0,
-      "2022": -64310000.0,
-      "2025": 40000.0
+      "2021": -31.16,
+      "2022": -64.31,
+      "2025": 0.04
     },
     "revenue_per_share": {
       "2021": 8.41151184815e+17,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 112127606784,
-    "enterprise_value": 123879890944,
-    "shares_outstanding": 1475363179,
-    "free_float_pct": 63.89199997785766
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3433,
-    "vol_trend": 0.228,
-    "price_chg_20d": -33.61
+    "cmf": -0.1374,
+    "vol_trend": 0.381,
+    "price_chg_20d": -14.15
   },
   "neraca": {
     "aset": 347382482276.0,

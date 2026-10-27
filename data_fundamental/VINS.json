@@ -1,23 +1,23 @@
 {
   "kode": "VINS",
-  "nama": "PT Victoria Insurance Tbk",
-  "sektor": "Financial Services",
-  "industri": "Insurance - Property & Casualty",
-  "harga": 122.0,
-  "update": "2026-10-21 13:18",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:36",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.532294348951064e-05,
-    "pb": 0.7701658758348251,
-    "ps": -1.2429014680525373e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.029863078370863827,
-    "eps": 7961916.722039432,
+    "eps": null,
     "de": 0.3678626241107655,
     "margin_net": -0.9254138661570639,
     "current_ratio": null,
     "roa": 0.021831928034642754,
-    "bv": 158.407433811265
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": -7466164960000000.0
     },
     "eps": {
-      "2024-Q1": 800000.0,
-      "2024-Q2": 940000.0,
-      "2024-Q3": 1490000.0,
-      "2026-Q1": 4730000.0
+      "2024-Q1": 0.8,
+      "2024-Q2": 0.94,
+      "2024-Q3": 1.49,
+      "2026-Q1": 4.73
     },
     "net_income": {
       "2024-Q1": 1170029334000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 8430000.0,
-      "2022": 5930000.0,
-      "2023": 4440000.0,
-      "2025": 9010000.0
+      "2021": 8.43,
+      "2022": 5.93,
+      "2023": 4.44,
+      "2025": 9.01
     },
     "revenue_per_share": {
       "2021": 336347812000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 178189975552,
-    "enterprise_value": 200986017792,
-    "shares_outstanding": 1460573616,
-    "free_float_pct": 6.37613694919709
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4164,
-    "vol_trend": 0.214,
-    "price_chg_20d": -20.41
+    "cmf": -0.3943,
+    "vol_trend": 0.164,
+    "price_chg_20d": -14.79
   },
   "neraca": {
     "aset": 316476518704.0,

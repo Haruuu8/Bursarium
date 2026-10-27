@@ -3,17 +3,17 @@
   "nama": "PT Pelita Teknologi Global Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 464.0,
-  "update": "2026-10-21 10:52",
+  "harga": 460.0,
+  "update": "2026-10-26 22:55",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 42.881106276917954,
-    "pb": 5.135279191033839,
-    "ps": 2.450012827416672,
+    "pe": 42.51144156763418,
+    "pb": 5.0910095428352715,
+    "ps": 2.4288920271803214,
     "roe": 0.059878109928778324,
     "eps": 10.8206163573201,
     "de": 0.6946901940194816,
@@ -23,36 +23,44 @@
     "bv": 90.35535999875931
   },
   "quarterly": {
-    "revenue": {},
-    "eps": {},
-    "net_income": {},
+    "revenue": {
+      "2025-Q4": 3.8255305609e+16
+    },
+    "eps": {
+      "2025-Q4": -4.28
+    },
+    "net_income": {
+      "2025-Q4": -3453267674000000.0
+    },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 24710000.0,
-      "2023": 15270000.0,
-      "2025": 5740000.0
+      "2022": 24.71,
+      "2023": 15.27,
+      "2024": 10.07,
+      "2025": 5.74
     },
     "revenue_per_share": {
       "2022": 1.4738306242e+17,
       "2023": 3.27048654911e+17,
+      "2024": 1.97222283012e+17,
       "2025": 1.36849260166e+17
     }
   },
   "statistik": {
-    "market_cap": 373984002048,
-    "enterprise_value": 406684205056,
+    "market_cap": 370759991296,
+    "enterprise_value": 411520204800,
     "shares_outstanding": 806000000,
     "free_float_pct": 24.799
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.3,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1616,
-    "vol_trend": 0.908,
-    "price_chg_20d": -34.44
+    "cmf": -0.0775,
+    "vol_trend": 0.92,
+    "price_chg_20d": -33.33
   },
   "neraca": {
     "aset": 123418220109.0,

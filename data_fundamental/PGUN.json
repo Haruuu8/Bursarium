@@ -3,57 +3,74 @@
   "nama": "PT Pradiksi Gunatama Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 7700.0,
-  "update": "2026-10-21 14:31",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 8125.0,
+  "update": "2026-10-27 14:12",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 340.0770214308306,
-    "pb": 22.646445806315256,
-    "ps": 66.32139522731886,
-    "roe": 0.01664802704916171,
-    "eps": 22.64192966523652,
-    "de": 0.28557543835296095,
-    "margin_net": 0.19501874883601386,
-    "current_ratio": 1.719771919661433,
-    "roa": 0.012949863969469297,
-    "bv": 340.00920346859704
+    "pe": 0.00038758226410169454,
+    "pb": 24.245829235545067,
+    "ps": 6.542890998887848e-05,
+    "roe": 0.023148711824055226,
+    "eps": 20963291.54490967,
+    "de": 0.2613679056389423,
+    "margin_net": 0.14594598090147906,
+    "current_ratio": 1.8365058597423762,
+    "roa": 0.018352069781202584,
+    "bv": 335.1091819160601
   },
   "quarterly": {
     "revenue": {
       "2024-Q3": 1.29185690802e+17,
-      "2026-Q1": 1.66542924195e+17
+      "2024-Q4": 3.50741875322e+17,
+      "2025-Q1": 1.75693946759e+17,
+      "2025-Q2": 2.09480050837e+17,
+      "2025-Q3": 1.52657053458e+17,
+      "2025-Q4": 2.54893218662e+17,
+      "2026-Q1": 1.66542924195e+17,
+      "2026-Q2": 1.38436206577e+17
     },
     "eps": {
-      "2024-Q3": 1380000.0,
-      "2026-Q1": 5660000.0
+      "2024-Q3": 1.38,
+      "2024-Q4": 10.58,
+      "2025-Q1": 7.92,
+      "2025-Q2": 6.64,
+      "2025-Q3": 3.12,
+      "2025-Q4": 10.08,
+      "2026-Q1": 5.66,
+      "2026-Q2": 2.1
     },
     "net_income": {
       "2024-Q3": 7903588142000000.0,
-      "2026-Q1": 3.2478992704e+16
+      "2024-Q4": 6.0704831087e+16,
+      "2025-Q1": 4.5452050692e+16,
+      "2025-Q2": 3.8082320657e+16,
+      "2025-Q3": 1.7899621591e+16,
+      "2025-Q4": 5.7874098968e+16,
+      "2026-Q1": 3.2478992704e+16,
+      "2026-Q2": 1.2031485691e+16
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2021": 7690000.0,
-      "2022": 30000000.0,
-      "2023": 18830000.0,
-      "2025": 27760000.0
+      "2021": 7.69,
+      "2022": 30.0,
+      "2023": 18.83,
+      "2024": 13.8,
+      "2025": 27.76
     },
     "revenue_per_share": {
       "2021": 7.8668600807e+17,
-      "2022": 1.007305060864e+18,
+      "2022": 1007305060864.0,
       "2023": 8.68456776538e+17,
+      "2024": 7.38565449724e+17,
       "2025": 7.92724269716e+17
     }
   },
   "statistik": {
-    "market_cap": 44181435187200,
-    "enterprise_value": 45055561695232,
+    "market_cap": 46620020310016,
+    "enterprise_value": 48023736418304,
     "shares_outstanding": 5737848882,
     "free_float_pct": 7.624000004118617
   },
@@ -61,45 +78,45 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4514,
-    "vol_trend": 0.492,
-    "price_chg_20d": -12.36
+    "cmf": -0.4174,
+    "vol_trend": 0.571,
+    "price_chg_20d": -9.76
   },
   "neraca": {
-    "aset": 2508056669983.0,
-    "aset_lancar": 325831239348.0,
-    "kas": 17711132420.0,
-    "piutang_usaha": 1777052751.0,
-    "persediaan": 44656724617.0,
-    "aset_tetap": 1159456429644.0,
-    "liabilitas": 557135241991.0,
-    "liabilitas_jangka_pendek": 189461890628.0,
-    "liabilitas_jangka_panjang": 367673351363.0,
-    "utang_usaha": 1777052751.0,
-    "utang_bank": 122189833311.0,
-    "ekuitas": 1950921427992.0,
-    "ekuitas_induk": 1950921427992.0,
+    "aset": 2425365581412.0,
+    "aset_lancar": 297701108595.0,
+    "kas": 399112079.0,
+    "piutang_usaha": 157608783.0,
+    "persediaan": 72562297614.0,
+    "aset_tetap": 1143643751026.0,
+    "liabilitas": 502559736607.0,
+    "liabilitas_jangka_pendek": 162101910547.0,
+    "liabilitas_jangka_panjang": 340457826060.0,
+    "utang_usaha": 157608783.0,
+    "utang_bank": 118279000000.0,
+    "ekuitas": 1922805844805.0,
+    "ekuitas_induk": 1922805844805.0,
     "modal_saham": null,
-    "saldo_laba": 433000488893.0
+    "saldo_laba": 420766826938.0
   },
   "laba_rugi": {
-    "pendapatan": 166542924195.0,
-    "beban_pokok": 87531766828.0,
+    "pendapatan": 304979130772.0,
+    "beban_pokok": 155643865567.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 41715826768.0,
-    "beban_pajak": -9236834064.0,
-    "laba_bersih": 32478992704.0,
-    "laba_induk": 32478992704.0,
-    "eps_basic": 5.66,
+    "laba_sebelum_pajak": 57195246369.0,
+    "beban_pajak": -12684767974.0,
+    "laba_bersih": 44510478395.0,
+    "laba_induk": 44510478395.0,
+    "eps_basic": 7.76,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 2138802118.0,
-    "dividen_dibayar": null
+    "capex": 3237648289.0,
+    "dividen_dibayar": 39992806707.0
   }
 }

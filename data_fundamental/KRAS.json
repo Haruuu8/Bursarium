@@ -1,23 +1,23 @@
 {
   "kode": "KRAS",
-  "nama": "PT Krakatau Steel (Persero) Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Steel",
-  "harga": 184.0,
-  "update": "2026-10-21 12:26",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:44",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.246650634826774,
-    "ps": 3.3951924237894673,
+    "pb": null,
+    "ps": null,
     "roe": 0.0135214406362476,
-    "eps": -7.593506985664783,
+    "eps": null,
     "de": 3.061792718407966,
     "margin_net": 0.014731740686678325,
     "current_ratio": 0.8527052699547018,
     "roa": 0.003265721669668729,
-    "bv": 35.069992802384306
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 360374000000.0
     },
     "eps": {
-      "2024-Q1": -1500.0,
-      "2024-Q2": -1756.27,
-      "2024-Q3": -6343.73,
-      "2026-Q1": 130.0,
-      "2026-Q2": 370.0
+      "2024-Q1": -0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": -0.01,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": -29143000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 3200.0,
-      "2022": 1000.0,
-      "2023": -6800.0,
-      "2025": 17600.0
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": -0.01,
+      "2025": 0.02
     },
     "revenue_per_share": {
       "2021": 2156070000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3559736999936,
-    "enterprise_value": 3599572140032,
-    "shares_outstanding": 19346396899,
-    "free_float_pct": 19.200000002026215
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1645,
-    "vol_trend": 0.618,
-    "price_chg_20d": -16.22
+    "score": 3.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0563,
+    "vol_trend": 0.667,
+    "price_chg_20d": -11.68
   },
   "neraca": {
     "aset": 2809180.0,

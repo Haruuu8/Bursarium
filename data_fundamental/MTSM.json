@@ -1,23 +1,23 @@
 {
   "kode": "MTSM",
-  "nama": "PT Metro Realty Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 500.0,
-  "update": "2026-10-21 12:43",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:01",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.00014885715292904892,
-    "pb": 4.228259987162637,
-    "ps": 3.936510479248999e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.00874909574319838,
-    "eps": 3358924.916683845,
+    "eps": null,
     "de": 0.6012743102957945,
     "margin_net": -0.031293561268304675,
     "current_ratio": 1.7954701169109815,
     "roa": -0.005462905249186579,
-    "bv": 118.25195269875627
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 7698196857000000.0
     },
     "eps": {
-      "2024-Q1": 3620000.0,
-      "2024-Q2": -1620000.0,
-      "2024-Q3": 2000000.0,
-      "2026-Q1": -1030000.0
+      "2024-Q1": 3.62,
+      "2024-Q2": -1.62,
+      "2024-Q3": 2.0,
+      "2026-Q1": -1.03
     },
     "net_income": {
       "2024-Q1": 841777272000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -13390000.0,
-      "2022": -29810000.0,
-      "2023": -31190000.0,
-      "2025": 250000.0
+      "2021": -13.39,
+      "2022": -29.81,
+      "2023": -31.19,
+      "2025": 0.25
     },
     "revenue_per_share": {
       "2021": 2.7015774778e+16,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 116423999488,
-    "enterprise_value": 116984872960,
-    "shares_outstanding": 232848000,
-    "free_float_pct": 30.222999982821413
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

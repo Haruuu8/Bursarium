@@ -1,23 +1,23 @@
 {
   "kode": "MCOR",
-  "nama": "PT Bank China Construction Bank Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 58.0,
-  "update": "2026-10-21 12:34",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:49",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 7.351732751076347,
-    "pb": 0.3048651816709208,
-    "ps": 1.030919638738697,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.010835366142724427,
-    "eps": 7.889296573179755,
+    "eps": null,
     "de": 4.139709382416843,
     "margin_net": 0.13925845691197114,
     "current_ratio": null,
     "roa": 0.002108167084269912,
-    "bv": 190.24802925053825
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 561316000000.0
     },
     "eps": {
-      "2024-Q1": 1940000.0,
-      "2024-Q2": 1960000.0,
-      "2024-Q3": -3899994.17,
-      "2026-Q1": 2060000.0
+      "2024-Q1": 1.94,
+      "2024-Q2": 1.96,
+      "2024-Q3": -3.9,
+      "2026-Q1": 2.06
     },
     "net_income": {
       "2024-Q1": 73571000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2090000.0,
-      "2022": 3590000.0,
-      "2023": 6360000.0,
-      "2025": 7960000.0
+      "2021": 2.09,
+      "2022": 3.59,
+      "2023": 6.36,
+      "2025": 7.96
     },
     "revenue_per_share": {
       "2021": 1248020000000.0,
       "2022": 1322606000000.0,
-      "2023": 1.690178e+18,
+      "2023": 1690178000000.0,
       "2025": 2180379000000.0
     }
   },
   "statistik": {
-    "market_cap": 2199344381952,
-    "enterprise_value": 3925954789376,
-    "shares_outstanding": 37919730514,
-    "free_float_pct": 33.04799999929662
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.522,
-    "vol_trend": 1.032,
-    "price_chg_20d": -16.42
+    "cmf": -0.3769,
+    "vol_trend": 1.021,
+    "price_chg_20d": -9.23
   },
   "neraca": {
     "aset": 37078655.0,

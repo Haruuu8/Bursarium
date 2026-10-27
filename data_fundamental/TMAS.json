@@ -1,26 +1,26 @@
 {
   "kode": "TMAS",
-  "nama": "PT Temas Tbk.",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 116.0,
-  "update": "2026-10-21 13:13",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:33",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 10.520319361073723,
-    "pb": 2.0817810345115957,
-    "ps": 1.4474510909441978,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.04947048095836335,
-    "eps": 11.02628123906695,
+    "eps": null,
     "de": 0.7248687918117128,
     "margin_net": 0.13758623110814652,
     "current_ratio": 1.279942755529267,
     "roa": 0.028144705831871456,
-    "bv": 55.72151829465323
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1139380000000.0
     },
     "eps": {
-      "2024-Q3": 2.0,
-      "2026-Q1": 3.0
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q3": 124462000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 122000000.0,
-      "2022": 239000000.0,
-      "2023": 140.0,
-      "2025": 9.0
+      "2021": 122.0,
+      "2022": 239.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 3370324000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 6596787175424,
-    "enterprise_value": 8154042597376,
-    "shares_outstanding": 56868856000,
-    "free_float_pct": 15.482999999155952
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.202,
-    "vol_trend": 0.764,
-    "price_chg_20d": -21.38
+    "score": 3.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0494,
+    "vol_trend": 0.775,
+    "price_chg_20d": -9.52
   },
   "neraca": {
     "aset": 5569893.0,

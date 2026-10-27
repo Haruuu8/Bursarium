@@ -1,10 +1,10 @@
 {
   "kode": "MTPS",
-  "nama": "PT Meta Epsi Tbk.",
-  "sektor": "Industrials",
-  "industri": "Engineering & Construction",
-  "harga": 81.0,
-  "update": "2026-10-21 14:11",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:14",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "revenue_missing",
@@ -13,15 +13,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.259114579742091,
+    "pb": null,
     "ps": null,
     "roe": -0.03695310422373909,
-    "eps": -2.811102059906656,
+    "eps": null,
     "de": 0.9910913026393992,
     "margin_net": null,
     "current_ratio": 2.8178818725107164,
     "roa": -0.01855922135501968,
-    "bv": 19.018037313498365
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,10 +29,10 @@
       "2024-Q2": 66400304000000.0
     },
     "eps": {
-      "2024-Q1": -830000.0,
-      "2024-Q2": -1120000.0,
-      "2024-Q3": 2020000.0,
-      "2026-Q1": -700000.0
+      "2024-Q1": -0.83,
+      "2024-Q2": -1.12,
+      "2024-Q3": 2.02,
+      "2026-Q1": -0.7
     },
     "net_income": {
       "2024-Q1": -1735512228000000.0,
@@ -44,10 +44,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -111090000.0,
-      "2022": -20720000.0,
-      "2023": -7620000.0,
-      "2025": -1240000.0
+      "2021": -111.09,
+      "2022": -20.72,
+      "2023": -7.62,
+      "2025": -1.24
     },
     "revenue_per_share": {
       "2021": 5.4902595928e+16,
@@ -57,10 +57,10 @@
     }
   },
   "statistik": {
-    "market_cap": 168872919040,
-    "enterprise_value": 198778306560,
-    "shares_outstanding": 2084850829,
-    "free_float_pct": 30.07599998416961
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

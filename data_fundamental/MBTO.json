@@ -1,23 +1,23 @@
 {
   "kode": "MBTO",
-  "nama": "PT Martina Berto Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Household & Personal Products",
-  "harga": 109.0,
-  "update": "2026-10-21 12:34",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:51",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.2373669556311124e-05,
-    "pb": 0.33495447530340583,
-    "ps": 2.6506950435174984e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.02476523474122898,
-    "eps": 8809027.871962616,
+    "eps": null,
     "de": 0.8970341006155018,
     "margin_net": 0.07626825782211402,
     "current_ratio": 0.6379711399024819,
     "roa": 0.013054480352278425,
-    "bv": 325.4173567953271
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.13063679206e+17
     },
     "eps": {
-      "2024-Q1": -2130000.0,
-      "2024-Q2": 2840000.0,
-      "2024-Q3": 40000.0,
-      "2026-Q1": 8060000.0
+      "2024-Q1": -2.13,
+      "2024-Q2": 2.84,
+      "2024-Q3": 0.04,
+      "2026-Q1": 8.06
     },
     "net_income": {
       "2024-Q1": -2283758002000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -139030000.0,
-      "2022": -39650000.0,
-      "2023": -29840000.0,
-      "2025": -25980000.0
+      "2021": -139.03,
+      "2022": -39.65,
+      "2023": -29.84,
+      "2025": -25.98
     },
     "revenue_per_share": {
       "2021": 2.1052808982e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 116630003712,
-    "enterprise_value": 273767284736,
-    "shares_outstanding": 1070000000,
-    "free_float_pct": 32.643
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3415,
-    "vol_trend": 1.612,
-    "price_chg_20d": -27.45
+    "cmf": -0.3147,
+    "vol_trend": 0.289,
+    "price_chg_20d": -29.55
   },
   "neraca": {
     "aset": 660552515558.0,

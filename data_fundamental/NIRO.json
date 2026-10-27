@@ -1,10 +1,10 @@
 {
   "kode": "NIRO",
-  "nama": "PT City Retail Developments Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 135.0,
-  "update": "2026-10-21 12:44",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:01",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.7919083636685595,
-    "ps": 1.8210760759086941,
+    "pb": null,
+    "ps": null,
     "roe": -0.01427014534423971,
-    "eps": -4.300375310550624,
+    "eps": null,
     "de": 5.76067869139266,
     "margin_net": -0.058009708114608614,
     "current_ratio": 0.9537463817156476,
     "roa": -0.001664352561645409,
-    "bv": 75.33867397304603
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q1": 4.11411655612e+17
     },
     "eps": {
-      "2024-Q1": 10000.0,
-      "2024-Q2": 1470000.0,
-      "2026-Q1": -1075093.83
+      "2024-Q1": 0.01,
+      "2024-Q2": 1.47,
+      "2026-Q1": -1.08
     },
     "net_income": {
       "2024-Q1": -321067381000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -2650000.0,
-      "2022": -7600000.0,
-      "2023": -3160000.0,
-      "2025": -9010000.0
+      "2021": -2.65,
+      "2022": -7.6,
+      "2023": -3.16,
+      "2025": -9.01
     },
     "revenue_per_share": {
       "2021": 7.32650579963e+17,
       "2022": 9.08453615821e+17,
-      "2023": 1.145464858602e+18,
-      "2025": 1.517184559948e+18
+      "2023": 1145464858602.0,
+      "2025": 1517184559948.0
     }
   },
   "statistik": {
-    "market_cap": 2996847771648,
-    "enterprise_value": 12492363268096,
-    "shares_outstanding": 22198871804,
-    "free_float_pct": 24.75499999963872
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5146,
-    "vol_trend": 0.428,
-    "price_chg_20d": -17.5
+    "cmf": -0.3489,
+    "vol_trend": 0.274,
+    "price_chg_20d": -16.77
   },
   "neraca": {
     "aset": 14339431804885.0,

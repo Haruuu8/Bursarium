@@ -1,23 +1,23 @@
 {
   "kode": "MGNA",
-  "nama": "PT Magna Investama Mandiri Tbk",
-  "sektor": "Financial Services",
-  "industri": "Credit Services",
-  "harga": 135.0,
-  "update": "2026-10-21 12:37",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:54",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 16.756891949140442,
-    "ps": 1.0412131335270753e-05,
+    "pb": null,
+    "ps": null,
     "roe": -0.17105098110664244,
-    "eps": -758473.4786620551,
+    "eps": null,
     "de": 3.154818603225747,
     "margin_net": -0.5966410228759592,
     "current_ratio": 0.3352579948248561,
     "roa": -0.03794700190270881,
-    "bv": 8.056386614519223
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 7878746125000000.0
     },
     "eps": {
-      "2024-Q1": -480000.0,
-      "2024-Q2": 570000.0,
-      "2024-Q3": -710000.0,
-      "2026-Q1": -1380000.0
+      "2024-Q1": -0.48,
+      "2024-Q2": 0.57,
+      "2024-Q3": -0.71,
+      "2026-Q1": -1.38
     },
     "net_income": {
       "2024-Q1": -1653845511000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -1790000.0,
-      "2023": -590000.0,
-      "2025": 430000.0
+      "2022": -1.79,
+      "2023": -0.59,
+      "2025": 0.43
     },
     "revenue_per_share": {
       "2022": 2.9267884881e+16,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 460508987392,
-    "enterprise_value": 559729934336,
-    "shares_outstanding": 3411177735,
-    "free_float_pct": 24.12939371510057
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2501,
-    "vol_trend": 0.46,
-    "price_chg_20d": -31.43
+    "cmf": -0.2294,
+    "vol_trend": 0.44,
+    "price_chg_20d": -6.02
   },
   "neraca": {
     "aset": 123877590094.0,

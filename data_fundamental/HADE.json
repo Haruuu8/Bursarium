@@ -1,10 +1,10 @@
 {
   "kode": "HADE",
-  "nama": "PT Himalaya Energi Perkasa Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Specialty Retail",
-  "harga": 19.0,
-  "update": "2026-10-21 12:05",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:24",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 9.615275336285722,
-    "ps": 9.163611598638909,
+    "pb": null,
+    "ps": null,
     "roe": -0.08012231599394039,
-    "eps": -316646.99150943395,
+    "eps": null,
     "de": 0.3415858178088033,
     "margin_net": -0.15271737074052447,
     "current_ratio": 3.4152351431815458,
     "roa": -0.034498343240661866,
-    "bv": 1.9760224575471699
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 1075431000000000.0
     },
     "eps": {
-      "2024-Q3": -60000.0,
-      "2026-Q1": -130000.0,
-      "2026-Q2": -30000.0
+      "2024-Q3": -0.06,
+      "2026-Q1": -0.13,
+      "2026-Q2": -0.03
     },
     "net_income": {
       "2024-Q3": -118940059000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -70000.0,
-      "2022": -80000.0,
-      "2023": -210000.0,
-      "2025": -1360000.0
+      "2021": -0.07,
+      "2022": -0.08,
+      "2023": -0.21,
+      "2025": -1.36
     },
     "revenue_per_share": {
       "2021": 3817867200000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 40279998464,
-    "enterprise_value": 46181449728,
-    "shares_outstanding": 2120000000,
-    "free_float_pct": 56.736
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1582,
-    "vol_trend": 2.617,
-    "price_chg_20d": -28.57
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1857,
+    "vol_trend": 0.813,
+    "price_chg_20d": -22.22
   },
   "neraca": {
     "aset": 9729331309.0,

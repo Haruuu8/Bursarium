@@ -1,23 +1,23 @@
 {
   "kode": "IDPR",
-  "nama": "PT Indonesia Pondasi Raya Tbk",
-  "sektor": "Industrials",
-  "industri": "Engineering & Construction",
-  "harga": 236.0,
-  "update": "2026-10-21 13:24",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:44",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.802865072210652e-05,
-    "pb": 0.6791783074834866,
-    "ps": 3.332036368179172e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.012291966077844186,
-    "eps": 4913733.707938093,
+    "eps": null,
     "de": 1.6271724623470414,
     "margin_net": 0.009577375876152079,
     "current_ratio": 1.2004301262134376,
     "roa": 0.004656040648688217,
-    "bv": 347.4787068427359
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 4.9234155334800006e+17
     },
     "eps": {
-      "2024-Q1": 230000.0,
-      "2024-Q2": 170000.0,
-      "2024-Q3": 470000.0,
-      "2026-Q1": 2460000.0,
-      "2026-Q2": 1810000.0
+      "2024-Q1": 0.23,
+      "2024-Q2": 0.17,
+      "2024-Q3": 0.47,
+      "2026-Q1": 2.46,
+      "2026-Q2": 1.81
     },
     "net_income": {
       "2024-Q1": 460455542000000.0,
@@ -45,31 +45,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -69000000.0,
-      "2022": -4000000.0,
-      "2023": 19000000.0,
-      "2025": 13000000.0
+      "2021": -69.0,
+      "2022": -4.0,
+      "2023": 19.0,
+      "2025": 13.0
     },
     "revenue_per_share": {
       "2021": 8.72574156089e+17,
-      "2022": 1.060124902677e+18,
-      "2023": 1.289582924477e+18,
-      "2025": 1.221164136092e+18
+      "2022": 1060124902677.0,
+      "2023": 1289582924477.0,
+      "2025": 1221164136092.0
     }
   },
   "statistik": {
-    "market_cap": 472708022272,
-    "enterprise_value": 948948566016,
-    "shares_outstanding": 2003000000,
-    "free_float_pct": 9.26
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.6221,
-    "vol_trend": 0.35,
-    "price_chg_20d": -15.91
+    "cmf": -0.5536,
+    "vol_trend": 0.403,
+    "price_chg_20d": -6.45
   },
   "neraca": {
     "aset": 1837442408586.0,

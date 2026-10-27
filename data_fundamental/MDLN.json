@@ -1,23 +1,23 @@
 {
   "kode": "MDLN",
-  "nama": "PT Modernland Realty Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 35.0,
-  "update": "2026-10-21 12:35",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:52",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.05498084568647122,
-    "ps": 2.264312460244062e-07,
+    "pb": null,
+    "ps": null,
     "roe": -0.06834700937347385,
-    "eps": -73454898.38628285,
+    "eps": null,
     "de": 2.8049047943025807,
     "margin_net": -1.6911637294773199,
     "current_ratio": 0.6100577145440448,
     "roa": -0.01796513013271235,
-    "bv": 636.5853337285465
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.42217764279e+17
     },
     "eps": {
-      "2024-Q1": -21840000.0,
-      "2024-Q2": -27610000.0,
-      "2024-Q3": 36060000.0,
-      "2026-Q1": -20130000.0
+      "2024-Q1": -21.84,
+      "2024-Q2": -27.61,
+      "2024-Q3": 36.06,
+      "2026-Q1": -20.13
     },
     "net_income": {
       "2024-Q1": -2.70063108643e+17,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -3400000.0,
-      "2022": 1630000.0,
-      "2023": -8250000.0,
-      "2025": 20230000.0
+      "2021": -3.4,
+      "2022": 1.63,
+      "2023": -8.25,
+      "2025": 20.23
     },
     "revenue_per_share": {
-      "2021": 2.00864564883e+18,
-      "2022": 1.098860308931e+18,
-      "2023": 1.152307658513e+18,
-      "2025": 1.013159445954e+18
+      "2021": 2008645648830.0,
+      "2022": 1098860308931.0,
+      "2023": 1152307658513.0,
+      "2025": 1013159445954.0
     }
   },
   "statistik": {
-    "market_cap": 418156052480,
-    "enterprise_value": 7054147190784,
-    "shares_outstanding": 5527940476,
-    "free_float_pct": 16.3801892573056
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1778,
-    "vol_trend": 42.35,
-    "price_chg_20d": -30.0
+    "cmf": -0.1672,
+    "vol_trend": 42.8,
+    "price_chg_20d": -16.28
   },
   "neraca": {
     "aset": 13387797519933.0,

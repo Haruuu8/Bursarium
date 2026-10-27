@@ -3,17 +3,17 @@
   "nama": "PT Hoffmen Cleanindo Tbk",
   "sektor": "Industrials",
   "industri": "Specialty Business Services",
-  "harga": 304.0,
-  "update": "2026-10-21 10:52",
+  "harga": 316.0,
+  "update": "2026-10-26 22:56",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.0006020395368446101,
-    "pb": 11.336168523847345,
-    "ps": 5.884914957426864,
+    "pe": 0.0006258042554042658,
+    "pb": 11.783648860315004,
+    "ps": 6.1172142320621345,
     "roe": 0.009414804037009016,
     "eps": 504950.22568337433,
     "de": 1.9459603867622237,
@@ -30,29 +30,31 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 680000.0,
-      "2023": 1000000.0,
-      "2025": 2160000.0
+      "2022": 0.68,
+      "2023": 1.0,
+      "2024": 4.46,
+      "2025": 2.16
     },
     "revenue_per_share": {
       "2022": 1.61856738362e+17,
       "2023": 2.13107450464e+17,
+      "2024": 2.15116835834e+17,
       "2025": 1.22383599397e+17
     }
   },
   "statistik": {
-    "market_cap": 790863216640,
-    "enterprise_value": 805856018432,
+    "market_cap": 822081486848,
+    "enterprise_value": 935932198912,
     "shares_outstanding": 2601523713,
     "free_float_pct": 20.087999982032066
   },
   "akumulasi": {
-    "score": 1.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1372,
-    "vol_trend": 2.889,
-    "price_chg_20d": -33.49
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1983,
+    "vol_trend": 1.031,
+    "price_chg_20d": -5.95
   },
   "neraca": {
     "aset": 205546533995.0,

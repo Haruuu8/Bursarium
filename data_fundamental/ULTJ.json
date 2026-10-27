@@ -1,23 +1,23 @@
 {
   "kode": "ULTJ",
-  "nama": "PT Ultrajaya Milk Industry & Trading Company Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Beverages - Non-Alcoholic",
-  "harga": 2040.0,
-  "update": "2026-10-21 13:17",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:37",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 15.407199138277294,
-    "pb": 2.4322201673958337,
-    "ps": 2.264827787788027,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.056825514907989164,
-    "eps": 132.40563594273735,
+    "eps": null,
     "de": 0.1353088805833583,
     "margin_net": 0.17807714654581086,
     "current_ratio": 5.78139676040969,
     "roa": 0.049538521359161675,
-    "bv": 838.7398588937028
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2783041000000.0
     },
     "eps": {
-      "2024-Q1": 39000000.0,
-      "2024-Q2": 34000000.0,
-      "2024-Q3": 12000000.0,
-      "2026-Q1": 48000000.0
+      "2024-Q1": 39.0,
+      "2024-Q2": 34.0,
+      "2024-Q3": 12.0,
+      "2026-Q1": 48.0
     },
     "net_income": {
       "2024-Q1": 405090000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 122000000.0,
-      "2022": 92000000.0,
-      "2023": 112000000.0,
-      "2025": 130000000.0
+      "2021": 122.0,
+      "2022": 92.0,
+      "2023": 112.0,
+      "2025": 130.0
     },
     "revenue_per_share": {
       "2021": 6616642000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 21212277243904,
-    "enterprise_value": 18910699061248,
-    "shares_outstanding": 10398175200,
-    "free_float_pct": 17.934999998845953
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.1,
+    "score": 6.1,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0069,
-    "vol_trend": 1.186,
-    "price_chg_20d": -1.45
+    "cmf": 0.0755,
+    "vol_trend": 0.951,
+    "price_chg_20d": 1.95
   },
   "neraca": {
     "aset": 10004255.0,

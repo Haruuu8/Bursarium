@@ -1,23 +1,23 @@
 {
   "kode": "TAMU",
-  "nama": "PT Pelayaran Tamarin Samudra Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 22.0,
-  "update": "2026-10-21 13:29",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:49",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.12089844691656937,
-    "pb": 0.04829331992749797,
-    "ps": 0.04647122577743685,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.008300070455563472,
-    "eps": 181.97090666666668,
+    "eps": null,
     "de": 1.1729073538609016,
     "margin_net": 0.17197961342156845,
     "current_ratio": 1.075663998225519,
     "roa": 0.0038197850051907116,
-    "bv": 455.5495466666667
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 824464000000.0
     },
     "eps": {
-      "2024-Q1": 1.0,
-      "2024-Q2": 209.0,
-      "2024-Q3": -40.0,
-      "2026-Q1": 3.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": -0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 37958000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1180.0,
-      "2022": 1300.0,
-      "2023": 900.0,
-      "2025": 43.0
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 11377720000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 824999936000,
-    "enterprise_value": 825011929088,
-    "shares_outstanding": 37500000000,
-    "free_float_pct": 20.0
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.5,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0021,
-    "vol_trend": 6.842,
-    "price_chg_20d": -12.0
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1997,
+    "vol_trend": 2.578,
+    "price_chg_20d": -31.43
   },
   "neraca": {
     "aset": 37120152.0,

@@ -1,23 +1,23 @@
 {
   "kode": "PWON",
-  "nama": "PT Pakuwon Jati Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Diversified",
-  "harga": 272.0,
-  "update": "2026-10-21 12:54",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:12",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.006382131819729922,
-    "pb": 573.3983688387992,
-    "ps": 0.0020366313482050222,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.017071093380665148,
-    "eps": 42618.988087825244,
+    "eps": null,
     "de": 0.43757810201123987,
     "margin_net": 0.23695470691561227,
     "current_ratio": 3.5271345678869426,
     "roa": 0.01055433096963385,
-    "bv": 0.47436479554490674
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1645854130000000.0
     },
     "eps": {
-      "2024-Q1": 6871190.59,
-      "2024-Q2": 10702354.95,
-      "2024-Q3": -17539024.48,
-      "2026-Q1": 8097.93
+      "2024-Q1": 6.87,
+      "2024-Q2": 10.7,
+      "2024-Q3": -17.54,
+      "2026-Q1": 0.01
     },
     "net_income": {
       "2024-Q1": 330913807000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 28707630.44,
-      "2022": 31952818.41,
-      "2023": 43713200.01,
-      "2025": 48720000.0
+      "2021": 28.71,
+      "2022": 31.95,
+      "2023": 43.71,
+      "2025": 48.72
     },
     "revenue_per_share": {
       "2021": 5713272952000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 13099411177472,
-    "enterprise_value": 17773327548416,
-    "shares_outstanding": 48159602400,
-    "free_float_pct": 30.403000000681068
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 8.0,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1917,
-    "vol_trend": 1.309,
-    "price_chg_20d": 0.75
+    "cmf": 0.3307,
+    "vol_trend": 1.878,
+    "price_chg_20d": 10.08
   },
   "neraca": {
     "aset": 36950980988.0,

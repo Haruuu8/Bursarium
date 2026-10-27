@@ -1,26 +1,26 @@
 {
   "kode": "LMSH",
-  "nama": "PT Lionmesh Prima Tbk",
-  "sektor": "Industrials",
-  "industri": "Metal Fabrication",
-  "harga": 256.0,
-  "update": "2026-10-21 12:28",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:45",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 2.95339341141529e-05,
-    "pb": 0.26389357006071656,
-    "ps": 0.26537391650460035,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.004467633215418067,
-    "eps": 8667995.229166666,
+    "eps": null,
     "de": 0.18823020917824673,
     "margin_net": 0.008985390008621677,
     "current_ratio": 6.22998978952602,
     "roa": 0.0037599054298642874,
-    "bv": 970.08805459375
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2024-Q3": 2.4402209582e+16
     },
     "eps": {
-      "2024-Q1": 4000000.0,
-      "2024-Q2": -34000000.0,
-      "2024-Q3": -36000000.0
+      "2024-Q1": 4.0,
+      "2024-Q2": -34.0,
+      "2024-Q3": -36.0
     },
     "net_income": {
       "2024-Q1": -422030721000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 68000000.0,
-      "2023": -60000000.0,
-      "2025": -50000000.0
+      "2021": 68.0,
+      "2023": -60.0,
+      "2025": -50.0
     },
     "revenue_per_share": {
       "2021": 1.68551904708e+17,
@@ -53,10 +53,10 @@
     }
   },
   "statistik": {
-    "market_cap": 24576000000,
-    "enterprise_value": 1634055808,
-    "shares_outstanding": 96000000,
-    "free_float_pct": 36.841
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

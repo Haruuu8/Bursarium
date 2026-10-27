@@ -1,26 +1,26 @@
 {
   "kode": "PADI",
-  "nama": "PT Minna Padi Investama Sekuritas Tbk",
-  "sektor": "Financial Services",
-  "industri": "Capital Markets",
-  "harga": 35.0,
-  "update": "2026-10-21 12:46",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:01",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 16.40788603556339,
-    "pb": 2.877357791442192,
-    "ps": 0.0007915072566916666,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.043841080216026035,
-    "eps": 2.133120617984486,
+    "eps": null,
     "de": 0.2904508445047838,
     "margin_net": 48.23944138666667,
     "current_ratio": null,
     "roa": 0.03397346005290906,
-    "bv": 12.163937381752328
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 150000000000000.0
     },
     "eps": {
-      "2024-Q3": 180000.0,
-      "2026-Q1": 640000.0
+      "2024-Q3": 0.18,
+      "2026-Q1": 0.64
     },
     "net_income": {
       "2024-Q3": 1963292587000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -4980000.0,
-      "2022": -4160000.0,
-      "2023": -2150000.0,
-      "2025": 160000.0
+      "2021": -4.98,
+      "2022": -4.16,
+      "2023": -2.15,
+      "2025": 0.16
     },
     "revenue_per_share": {
       "2021": 78620000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 474904363008,
-    "enterprise_value": 321587085312,
-    "shares_outstanding": 13568695829,
-    "free_float_pct": 79.22833333048696
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.7,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2018,
-    "vol_trend": 0.794,
-    "price_chg_20d": -37.93
+    "cmf": -0.1227,
+    "vol_trend": 0.822,
+    "price_chg_20d": -23.26
   },
   "neraca": {
     "aset": 212987320006.0,

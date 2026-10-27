@@ -3,24 +3,24 @@
   "nama": "PT NexAI Digital Infrastruktur Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 10975.0,
-  "update": "2026-10-21 10:23",
-  "periode_terbaru": "2025-audit",
+  "harga": 11350.0,
+  "update": "2026-10-26 22:20",
+  "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 164.35953607508768,
-    "ps": 163.49942289293185,
-    "roe": -0.07090942590366633,
-    "eps": -4.734930311175879,
-    "de": 0.4696638260137398,
-    "margin_net": -0.07053834836587758,
-    "current_ratio": 3.054586111991363,
-    "roa": -0.04799821862501845,
-    "bv": 66.77434277367435
+    "pb": 190.8964539245512,
+    "ps": 413.54210704796105,
+    "roe": -0.12454685824050053,
+    "eps": -14.810194867091527,
+    "de": 0.6163823552644436,
+    "margin_net": -0.5396157877645751,
+    "current_ratio": 2.7009811653585016,
+    "roa": -0.0766439827668041,
+    "bv": 59.45631658766123
   },
   "quarterly": {
     "revenue": {},
@@ -30,21 +30,23 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 6000000.0,
-      "2022": 8000000.0,
-      "2023": 8000000.0,
-      "2025": -4000000.0
+      "2021": 6.0,
+      "2022": 8.0,
+      "2023": 8.0,
+      "2024": 3.0,
+      "2025": -4.0
     },
     "revenue_per_share": {
       "2021": 1.09849125348e+17,
       "2022": 1.66545619384e+17,
       "2023": 2.0689497527e+17,
+      "2024": 2.0880812538e+17,
       "2025": 1.27866478461e+17
     }
   },
   "statistik": {
-    "market_cap": 20906095149056,
-    "enterprise_value": 20883158597632,
+    "market_cap": 21620427063296,
+    "enterprise_value": 23454751391744,
     "shares_outstanding": 1904883411,
     "free_float_pct": 37.292999975629485
   },
@@ -52,38 +54,38 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1468,
-    "vol_trend": 0.577,
-    "price_chg_20d": -31.56
+    "cmf": 0.2015,
+    "vol_trend": 0.609,
+    "price_chg_20d": -24.33
   },
   "neraca": {
-    "aset": 187913019699.0,
-    "aset_lancar": 178578927403.0,
-    "kas": 3156869509.0,
-    "piutang_usaha": 871864345.0,
-    "persediaan": 133118270785.0,
+    "aset": 184043766370.0,
+    "aset_lancar": 174520465112.0,
+    "kas": 1291685076.0,
+    "piutang_usaha": 1247167856.0,
+    "persediaan": 128685799414.0,
     "aset_tetap": null,
-    "liabilitas": 59739988344.0,
-    "liabilitas_jangka_pendek": 58462561164.0,
-    "liabilitas_jangka_panjang": 1277427180.0,
-    "utang_usaha": 871864345.0,
-    "utang_bank": 16361068.0,
-    "ekuitas": 127197337830.0,
-    "ekuitas_induk": 127197337830.0,
+    "liabilitas": 69809832851.0,
+    "liabilitas_jangka_pendek": 64613729022.0,
+    "liabilitas_jangka_panjang": 5196103829.0,
+    "utang_usaha": 1247167856.0,
+    "utang_bank": 7625053.0,
+    "ekuitas": 113257351147.0,
+    "ekuitas_induk": 113257351147.0,
     "modal_saham": null,
-    "saldo_laba": 44642158717.0
+    "saldo_laba": 30536311459.0
   },
   "laba_rugi": {
-    "pendapatan": 127866478461.0,
-    "beban_pokok": 80826152124.0,
+    "pendapatan": 26140538468.0,
+    "beban_pokok": 21273949326.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -8379248414.0,
-    "beban_pajak": -607990909.0,
-    "laba_bersih": -9019490202.0,
-    "laba_induk": -9019490202.0,
-    "eps_basic": -4.0,
+    "laba_sebelum_pajak": -13958443459.0,
+    "beban_pajak": -146514952.0,
+    "laba_bersih": -14105847258.0,
+    "laba_induk": -14105847258.0,
+    "eps_basic": -7.41,
     "eps_diluted": null
   },
   "arus_kas": {

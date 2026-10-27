@@ -3,24 +3,24 @@
   "nama": "PT Global Sukses Solusi Tbk",
   "sektor": "Technology",
   "industri": "Software - Application",
-  "harga": 66.0,
-  "update": "2026-10-21 10:27",
-  "periode_terbaru": "2025-audit",
+  "harga": 63.0,
+  "update": "2026-10-26 22:20",
+  "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.181083644206284,
-    "ps": 3.770173742458428,
-    "roe": -0.13863830551541212,
-    "eps": -7.7472312895894015,
-    "de": 0.4429301859661567,
-    "margin_net": -0.4425516361327622,
-    "current_ratio": 1.2562099244442941,
-    "roa": -0.09141707855210583,
-    "bv": 55.88088559498557
+    "pb": 1.1771368824272868,
+    "ps": 3.645370626060379,
+    "roe": -0.04411827710725849,
+    "eps": -4.722392950641363,
+    "de": 0.5475587424467124,
+    "margin_net": -0.2732519451902004,
+    "current_ratio": 1.0251685274585356,
+    "roa": -0.027205979994519434,
+    "bv": 53.51968912068439
   },
   "quarterly": {
     "revenue": {},
@@ -30,21 +30,23 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -12860000.0,
-      "2022": 4100000.0,
-      "2023": -8076338.56,
-      "2025": -7660000.0
+      "2021": -12.86,
+      "2022": 4.1,
+      "2023": -8.08,
+      "2024": -3.26,
+      "2025": -7.66
     },
     "revenue_per_share": {
       "2021": 4936138283000000.0,
       "2022": 3.1286996762e+16,
       "2023": 2.7716318804e+16,
+      "2024": 2.1074099438e+16,
       "2025": 1.717092717e+16
     }
   },
   "statistik": {
-    "market_cap": 64737378304,
-    "enterprise_value": 80841187328,
+    "market_cap": 61794770944,
+    "enterprise_value": 77898579968,
     "shares_outstanding": 980869375,
     "free_float_pct": 20.76599995794547
   },
@@ -52,45 +54,45 @@
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4377,
-    "vol_trend": 0.695,
-    "price_chg_20d": -1.47
+    "cmf": 0.4401,
+    "vol_trend": 0.664,
+    "price_chg_20d": 1.61
   },
   "neraca": {
-    "aset": 83124751232.0,
-    "aset_lancar": 16702663312.0,
-    "kas": 2030370056.0,
-    "piutang_usaha": 836612160.0,
+    "aset": 85129273471.0,
+    "aset_lancar": 18746021633.0,
+    "kas": 1253020265.0,
+    "piutang_usaha": 1046998967.0,
     "persediaan": null,
-    "aset_tetap": 21599112530.0,
-    "liabilitas": 24277822616.0,
-    "liabilitas_jangka_pendek": 13296076545.0,
-    "liabilitas_jangka_panjang": 10981746071.0,
-    "utang_usaha": 836612160.0,
-    "utang_bank": 1314726602.0,
-    "ekuitas": 54811849328.0,
-    "ekuitas_induk": 54811849328.0,
+    "aset_tetap": 21365316660.0,
+    "liabilitas": 28744547383.0,
+    "liabilitas_jangka_pendek": 18285795097.0,
+    "liabilitas_jangka_panjang": 10458752286.0,
+    "utang_usaha": 1046998967.0,
+    "utang_bank": 1680361665.0,
+    "ekuitas": 52495824018.0,
+    "ekuitas_induk": 52495824018.0,
     "modal_saham": null,
     "saldo_laba": 1466278577.0
   },
   "laba_rugi": {
-    "pendapatan": 17170927170.0,
-    "beban_pokok": 6254757676.0,
+    "pendapatan": 8475787096.0,
+    "beban_pokok": 2794343077.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -8275253013.0,
-    "beban_pajak": 737332456.0,
-    "laba_bersih": -7599021913.0,
-    "laba_induk": -7599021913.0,
-    "eps_basic": -7.66,
+    "laba_sebelum_pajak": -2427202529.0,
+    "beban_pajak": null,
+    "laba_bersih": -2316025311.0,
+    "laba_induk": -2316025311.0,
+    "eps_basic": -2.47,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 63998417.0,
-    "dividen_dibayar": 261751152.0
+    "capex": 17290000.0,
+    "dividen_dibayar": 36866359.0
   }
 }

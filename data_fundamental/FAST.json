@@ -1,23 +1,23 @@
 {
   "kode": "FAST",
-  "nama": "PT Fast Food Indonesia Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Restaurants",
-  "harga": 278.0,
-  "update": "2026-10-21 11:58",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:18",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.0051872401867568765,
-    "ps": 0.00024159747823513218,
+    "pb": null,
+    "ps": null,
     "roe": -0.2342167195528371,
-    "eps": -92383.6014025452,
+    "eps": null,
     "de": 19.63534514681508,
     "margin_net": -0.020338560284547877,
     "current_ratio": 0.31623768550447695,
     "roa": -0.010984040781267338,
-    "bv": 53593.045625637176
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1366747372000000.0
     },
     "eps": {
-      "2024-Q1": -49000000.0,
-      "2024-Q2": -38000000.0,
-      "2024-Q3": -53000000.0,
-      "2026-Q1": 3000000.0,
-      "2026-Q2": -16000000.0
+      "2024-Q1": -49.0,
+      "2024-Q2": -38.0,
+      "2024-Q3": -53.0,
+      "2026-Q1": 3.0,
+      "2026-Q2": -16.0
     },
     "net_income": {
       "2024-Q1": -196211779000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -74000000.0,
-      "2022": -19000000.0,
-      "2023": -104000000.0,
-      "2025": -85000000.0
+      "2021": -74.0,
+      "2022": -19.0,
+      "2023": -104.0,
+      "2025": -85.0
     },
     "revenue_per_share": {
       "2021": 4840596018000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1256671936512,
-    "enterprise_value": 3682349350912,
-    "shares_outstanding": 4520402492,
-    "free_float_pct": 21.256000006647195
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1675,
-    "vol_trend": 0.286,
-    "price_chg_20d": -32.08
+    "score": 4.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0607,
+    "vol_trend": 0.31,
+    "price_chg_20d": -0.99
   },
   "neraca": {
     "aset": 5165844167.0,

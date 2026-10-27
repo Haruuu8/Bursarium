@@ -3,17 +3,17 @@
   "nama": "PT. Anugerah Spareparts Sejahtera Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 40.0,
-  "update": "2026-10-21 11:01",
+  "harga": 44.0,
+  "update": "2026-10-26 23:06",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.00016402924338280496,
-    "pb": 0.5800796876764764,
-    "ps": 1.2861331882356737,
+    "pe": 0.00018043216772108546,
+    "pb": 0.6380876564441241,
+    "ps": 1.4147465070592409,
     "roe": 0.0017682203359394562,
     "eps": 243858.95572687354,
     "de": 0.058306861361323764,
@@ -30,27 +30,29 @@
   },
   "riwayat": {
     "eps": {
-      "2023": 12067390.0,
-      "2025": 257848.97
+      "2023": 12.07,
+      "2024": 1.03,
+      "2025": 0.26
     },
     "revenue_per_share": {
       "2023": 3.0252091493e+16,
+      "2024": 2.8718255655e+16,
       "2025": 2.5879044954e+16
     }
   },
   "statistik": {
-    "market_cap": 40243228672,
-    "enterprise_value": 27678150656,
+    "market_cap": 44267552768,
+    "enterprise_value": 32708552704,
     "shares_outstanding": 1006080721,
     "free_float_pct": 39.76600004841958
   },
   "akumulasi": {
-    "score": 3.7,
+    "score": 5.3,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0503,
-    "vol_trend": 0.561,
-    "price_chg_20d": -20.41
+    "cmf": 0.0231,
+    "vol_trend": 0.921,
+    "price_chg_20d": -2.22
   },
   "neraca": {
     "aset": 73420404316.0,

@@ -1,23 +1,23 @@
 {
   "kode": "MBAP",
-  "nama": "PT Mitrabara Adiperdana Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 1575.0,
-  "update": "2026-10-21 12:33",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:51",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.10773520223773592,
-    "pb": 0.010476724505074737,
-    "ps": 0.00917876074079241,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.009500895003796644,
-    "eps": 14619.177086840164,
+    "eps": null,
     "de": 0.36853731464692946,
     "margin_net": 0.03788676542685493,
     "current_ratio": 5.2022455267087935,
     "roa": 0.006909404204471944,
-    "bv": 150333.24578088298
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 46267159000000.0
     },
     "eps": {
-      "2024-Q1": 4000.0,
-      "2024-Q2": 5000.0,
-      "2024-Q3": 4000.0,
-      "2026-Q1": 1000.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 4296204000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 82000.0,
-      "2022": 146000.0,
-      "2023": 18000.0,
-      "2025": 1000.0
+      "2021": 0.08,
+      "2022": 0.15,
+      "2023": 0.02,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 309840126000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1932953255936,
-    "enterprise_value": 1951290097664,
-    "shares_outstanding": 1227271952,
-    "free_float_pct": 9.702000017678234
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.5,
+    "score": 5.2,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.003,
-    "vol_trend": 0.376,
-    "price_chg_20d": -8.36
+    "cmf": 0.0134,
+    "vol_trend": 0.76,
+    "price_chg_20d": -0.3
   },
   "neraca": {
     "aset": 253699588.0,

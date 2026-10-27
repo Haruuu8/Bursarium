@@ -1,23 +1,23 @@
 {
   "kode": "SRSN",
-  "nama": "PT Indo Acidatama Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Chemicals",
-  "harga": 107.0,
-  "update": "2026-10-21 13:06",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:25",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.01326460466663512,
-    "pb": 0.0007679999343765076,
-    "ps": 0.0006149960734590669,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03446591604153752,
-    "eps": 8066.580398671096,
+    "eps": null,
     "de": 0.20574912584774757,
     "margin_net": 0.12067987045268606,
     "current_ratio": 4.083726057144244,
     "roa": 0.028584649412293755,
-    "bv": 139322.92857142858
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 239537811000000.0
     },
     "eps": {
-      "2024-Q1": 1430000.0,
-      "2024-Q2": 2120000.0,
-      "2024-Q3": -290000.0,
-      "2026-Q1": 4800.0
+      "2024-Q1": 1.43,
+      "2024-Q2": 2.12,
+      "2024-Q3": -0.29,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 8593526000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 4410000.0,
-      "2022": 5590000.0,
-      "2023": 9640000.0,
-      "2025": 12850.0
+      "2021": 4.41,
+      "2022": 5.59,
+      "2023": 9.64,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 907832649000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 644139974656,
-    "enterprise_value": 644296343552,
-    "shares_outstanding": 6020000000,
-    "free_float_pct": 34.131
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.3,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.0769,
-    "vol_trend": 0.759,
-    "price_chg_20d": -14.73
+    "score": 5.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0298,
+    "vol_trend": 0.606,
+    "price_chg_20d": 5.17
   },
   "neraca": {
     "aset": 1011290766.0,

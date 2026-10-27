@@ -1,23 +1,23 @@
 {
   "kode": "INCO",
-  "nama": "PT Vale Indonesia Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Other Industrial Metals & Mining",
-  "harga": 3660.0,
-  "update": "2026-10-21 12:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:31",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 258.3920758414104,
-    "pb": 13.624468413787357,
-    "ps": 37.75633664556782,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03686477253944058,
-    "eps": 14.164521060027962,
+    "eps": null,
     "de": 0.1949601391280761,
     "margin_net": 0.19219876700523691,
     "current_ratio": 1.5840430385008868,
     "roa": 0.030850211092680976,
-    "bv": 268.63433411436756
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 290405000000.0
     },
     "eps": {
-      "2024-Q1": 600.0,
-      "2024-Q2": 3000.0,
-      "2024-Q3": 1300.0,
-      "2026-Q1": 4141.89,
-      "2026-Q2": 5770.93
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.01
     },
     "net_income": {
       "2024-Q1": 6194000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 16700.0,
-      "2022": 20200.0,
-      "2023": 27600.0,
-      "2025": 7200.0
+      "2021": 0.02,
+      "2022": 0.02,
+      "2023": 0.03,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 953174000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 38575609479168,
-    "enterprise_value": 39629478690816,
-    "shares_outstanding": 10539784534,
-    "free_float_pct": 15.90499999874096
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3487,
-    "vol_trend": 1.052,
-    "price_chg_20d": -19.66
+    "cmf": -0.2563,
+    "vol_trend": 0.978,
+    "price_chg_20d": -15.45
   },
   "neraca": {
     "aset": 3383348.0,

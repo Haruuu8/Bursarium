@@ -3,8 +3,8 @@
   "nama": "PT Lima Dua Lima Tiga Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 91.0,
-  "update": "2026-10-21 14:39",
+  "harga": 119.0,
+  "update": "2026-10-27 14:29",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 7.826242732807831,
-    "ps": 2.4480839426228225,
+    "pb": 10.234317419825626,
+    "ps": 3.2013405403529216,
     "roe": -0.25783247610253784,
     "eps": -5.995918124791711,
     "de": 2.7201189189937423,
@@ -30,21 +30,23 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 280000.0,
-      "2022": 5180000.0,
-      "2023": 540000.0,
-      "2025": -28520000.0
+      "2021": 0.28,
+      "2022": 5.18,
+      "2023": 0.54,
+      "2024": -8.66,
+      "2025": -28.52
     },
     "revenue_per_share": {
       "2021": 1.4441000709e+16,
       "2022": 6.6140071647e+16,
       "2023": 1.00890452475e+17,
+      "2024": 1.00679408022e+17,
       "2025": 8.2505825734e+16
     }
   },
   "statistik": {
-    "market_cap": 137844424704,
-    "enterprise_value": 141396115456,
+    "market_cap": 180258095104,
+    "enterprise_value": 159573409792,
     "shares_outstanding": 1514773893,
     "free_float_pct": 33.065000018454896
   },
@@ -52,9 +54,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5512,
-    "vol_trend": 0.634,
-    "price_chg_20d": -69.7
+    "cmf": -0.5013,
+    "vol_trend": 0.761,
+    "price_chg_20d": -56.59
   },
   "neraca": {
     "aset": 68981668368.0,

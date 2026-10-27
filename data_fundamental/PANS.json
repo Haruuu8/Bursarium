@@ -1,26 +1,26 @@
 {
   "kode": "PANS",
-  "nama": "PT Panin Sekuritas Tbk",
-  "sektor": "Financial Services",
-  "industri": "Capital Markets",
-  "harga": 1570.0,
-  "update": "2026-10-21 12:46",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:02",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 24.110625715407593,
-    "pb": 0.6964198035912254,
-    "ps": 253.52513641262766,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.007221088036157716,
-    "eps": 65.11651827421099,
+    "eps": null,
     "de": 0.46732126570381827,
     "margin_net": 10.515079094385163,
     "current_ratio": null,
     "roa": 0.004810484813138626,
-    "bv": 2254.3873564536607
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1101412696000000.0
     },
     "eps": {
-      "2024-Q3": 118910000.0,
-      "2026-Q1": 16280000.0
+      "2024-Q3": 118.91,
+      "2026-Q1": 16.28
     },
     "net_income": {
       "2024-Q3": 8.0326192824e+16,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 212250000.0,
-      "2022": 347860000.0,
-      "2023": 183320000.0,
-      "2025": 268550000.0
+      "2021": 212.25,
+      "2022": 347.86,
+      "2023": 183.32,
+      "2025": 268.55
     },
     "revenue_per_share": {
       "2021": 750095810000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1116943155200,
-    "enterprise_value": 60974333952,
-    "shares_outstanding": 711428800,
-    "free_float_pct": 40.21699993028115
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.316,
-    "vol_trend": 0.898,
-    "price_chg_20d": -2.15
+    "cmf": 0.3504,
+    "vol_trend": 0.736,
+    "price_chg_20d": -4.22
   },
   "neraca": {
     "aset": 2407541456605.0,

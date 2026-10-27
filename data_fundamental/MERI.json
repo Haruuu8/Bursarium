@@ -3,17 +3,17 @@
   "nama": "PT Merry Riana Edukasi Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Education & Training Services",
-  "harga": 83.0,
-  "update": "2026-10-21 11:10",
+  "harga": 90.0,
+  "update": "2026-10-26 23:23",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 3.954256010290735e-05,
-    "pb": 1.9468623995681686,
-    "ps": 2.143694610195504,
+    "pe": 4.287747481038146e-05,
+    "pb": 2.1110556139895804,
+    "ps": 2.3244881315372936,
     "roe": 0.012308651706550903,
     "eps": 2099004.206707837,
     "de": 0.2529531950049616,
@@ -24,27 +24,32 @@
   },
   "quarterly": {
     "revenue": {
+      "2025-Q3": 9180465476000000.0,
+      "2025-Q4": 7478720838000000.0,
       "2026-Q1": 1.0019617194e+16
     },
     "eps": {
-      "2026-Q1": 520000.0
+      "2025-Q4": -0.19,
+      "2026-Q1": 0.52
     },
     "net_income": {
+      "2025-Q3": 76443847000000.0,
+      "2025-Q4": -43798502000000.0,
       "2026-Q1": 543186868000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 4810000.0
+      "2025": 4.81
     },
     "revenue_per_share": {
       "2025": 3.6373600013e+16
     }
   },
   "statistik": {
-    "market_cap": 85915992064,
-    "enterprise_value": 45975621632,
+    "market_cap": 93161922560,
+    "enterprise_value": 52186419200,
     "shares_outstanding": 1035132500,
     "free_float_pct": 22.714999963772755
   },
@@ -52,9 +57,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4209,
-    "vol_trend": 0.39,
-    "price_chg_20d": -27.35
+    "cmf": -0.4724,
+    "vol_trend": 0.596,
+    "price_chg_20d": -13.46
   },
   "neraca": {
     "aset": 55709506496.0,

@@ -1,23 +1,23 @@
 {
   "kode": "SDMU",
-  "nama": "PT Sidomulyo Selaras Tbk",
-  "sektor": "Industrials",
-  "industri": "Trucking",
-  "harga": 55.0,
-  "update": "2026-10-21 12:59",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:18",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0001807100321199106,
-    "pb": 1.6022571916777684,
-    "ps": 1.3248406661815521e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.008939697770993313,
-    "eps": 304354.98989621457,
+    "eps": null,
     "de": 0.6651081705696448,
     "margin_net": -0.03786404988948762,
     "current_ratio": 0.835020054291899,
     "roa": -0.005364872201430261,
-    "bv": 34.32657396432589
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.8240726283e+16
     },
     "eps": {
-      "2024-Q1": 2200000.0,
-      "2024-Q2": 660000.0,
-      "2024-Q3": -1650000.0,
-      "2026-Q1": -410000.0
+      "2024-Q1": 2.2,
+      "2024-Q2": 0.66,
+      "2024-Q3": -1.65,
+      "2026-Q1": -0.41
     },
     "net_income": {
       "2024-Q1": 2491970990000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -8310000.0,
-      "2022": 2700000.0,
-      "2023": 28510000.0,
-      "2025": 13910000.0
+      "2021": -8.31,
+      "2022": 2.7,
+      "2023": 28.51,
+      "2025": 13.91
     },
     "revenue_per_share": {
       "2021": 8.2622335649e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 123788009472,
-    "enterprise_value": 155197554688,
-    "shares_outstanding": 2250691100,
-    "free_float_pct": 30.28699997969513
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.8268,
-    "vol_trend": 2.114,
-    "price_chg_20d": -36.78
+    "cmf": -0.5093,
+    "vol_trend": 0.309,
+    "price_chg_20d": -1.56
   },
   "neraca": {
     "aset": 128738904501.0,

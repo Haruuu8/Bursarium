@@ -1,10 +1,10 @@
 {
   "kode": "SAME",
-  "nama": "PT Sarana Meditama Metropolitan Tbk",
-  "sektor": "Healthcare",
-  "industri": "Medical Care Facilities",
-  "harga": 258.0,
-  "update": "2026-10-21 12:57",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:16",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,24 +12,24 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.1595969367542684,
-    "ps": 2.310861331980006,
+    "pb": null,
+    "ps": null,
     "roe": -0.00021960645696598687,
-    "eps": -195441.9302134848,
+    "eps": null,
     "de": 0.4131675724311873,
     "margin_net": -0.0017505395316971973,
     "current_ratio": 0.5419251463921154,
     "roa": -0.00014539048703021668,
-    "bv": 222.49110171172615
+    "bv": null
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 4.33644485242e+17,
+      "2024-Q3": -8.47665194495039e+17,
       "2026-Q1": 4.79093567334e+17
     },
     "eps": {
-      "2024-Q3": 90000.0,
-      "2026-Q1": -50000.0
+      "2024-Q3": 0.09,
+      "2026-Q1": -0.05
     },
     "net_income": {
       "2024-Q3": 1603534504000000.0,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 10230000.0,
-      "2022": 250000.0,
-      "2023": 710000.0,
-      "2025": 1750000.0
+      "2021": 10.23,
+      "2022": 0.25,
+      "2023": 0.71,
+      "2025": 1.75
     },
     "revenue_per_share": {
-      "2021": 1.271584061675e+18,
-      "2022": 1.393542157498e+18,
-      "2023": 1.535639515741e+18,
-      "2025": 1.861971853309e+18
+      "2021": 1271584061675.0,
+      "2022": 1393542157498.0,
+      "2023": 1535639515741.0,
+      "2025": 1861971853309.0
     }
   },
   "statistik": {
-    "market_cap": 4428475138048,
-    "enterprise_value": 5548230049792,
-    "shares_outstanding": 17164632545,
-    "free_float_pct": 15.102000000315183
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.3013,
-    "vol_trend": 0.294,
-    "price_chg_20d": -14.38
+    "score": 3.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0517,
+    "vol_trend": 0.877,
+    "price_chg_20d": -10.42
   },
   "neraca": {
     "aset": 5768411992634.0,

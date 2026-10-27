@@ -1,26 +1,26 @@
 {
   "kode": "PRDA",
-  "nama": "PT Prodia Widyahusada Tbk",
-  "sektor": "Healthcare",
-  "industri": "Diagnostics & Research",
-  "harga": 3240.0,
-  "update": "2026-10-21 13:27",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:47",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 41.831688142086016,
-    "pb": 1.1964912247207753,
-    "ps": 1.4374602948245154,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.007150627179189845,
-    "eps": 77.45324522871219,
+    "eps": null,
     "de": 0.10935533126175845,
     "margin_net": 0.03436295207456176,
     "current_ratio": 6.441878211324211,
     "roa": 0.006440593570845408,
-    "bv": 2707.9178961434654
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 501383000000.0
     },
     "eps": {
-      "2024-Q1": 41650000.0,
-      "2026-Q1": 19360000.0
+      "2024-Q1": 41.65,
+      "2026-Q1": 19.36
     },
     "net_income": {
       "2024-Q1": 39049000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 663060000.0,
-      "2022": 396420000.0,
-      "2023": 277200000.0,
-      "2025": 227250000.0
+      "2021": 663.06,
+      "2022": 396.42,
+      "2023": 277.2,
+      "2025": 227.25
     },
     "revenue_per_share": {
       "2021": 2652257000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2882872541184,
-    "enterprise_value": 2056905031680,
-    "shares_outstanding": 889775500,
-    "free_float_pct": 27.299000028658917
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.5,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.3563,
-    "vol_trend": 1.108,
-    "price_chg_20d": 9.29
+    "cmf": 0.3789,
+    "vol_trend": 1.635,
+    "price_chg_20d": 32.62
   },
   "neraca": {
     "aset": 2675064.0,

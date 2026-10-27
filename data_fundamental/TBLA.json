@@ -1,26 +1,26 @@
 {
   "kode": "TBLA",
-  "nama": "PT Tunas Baru Lampung Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 555.0,
-  "update": "2026-10-21 13:10",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:30",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 3.0241986527208047,
-    "pb": 0.3502374041346735,
-    "ps": 0.13678009669372082,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.028952909874122582,
-    "eps": 183.5196902494083,
+    "eps": null,
     "de": 2.2335803094567557,
     "margin_net": 0.04522854230183021,
     "current_ratio": 1.1954128641564379,
     "roa": 0.008949702813141076,
-    "bv": 1584.6394287075946
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 6090623000000.0
     },
     "eps": {
-      "2024-Q1": 36560000.0,
-      "2026-Q1": 45880000.0
+      "2024-Q1": 36.56,
+      "2026-Q1": 45.88
     },
     "net_income": {
       "2024-Q1": 220305000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 150650000.0,
-      "2022": 151740000.0,
-      "2023": 104860000.0,
-      "2025": 149710000.0
+      "2021": 150.65,
+      "2022": 151.74,
+      "2023": 104.86,
+      "2025": 149.71
     },
     "revenue_per_share": {
       "2021": 15972216000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3332304011264,
-    "enterprise_value": 21872211132416,
-    "shares_outstanding": 6004151372,
-    "free_float_pct": 40.459000006704024
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.2488,
-    "vol_trend": 0.637,
-    "price_chg_20d": -12.1
+    "score": 3.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0393,
+    "vol_trend": 0.638,
+    "price_chg_20d": -6.72
   },
   "neraca": {
     "aset": 30779793.0,

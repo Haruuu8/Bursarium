@@ -1,23 +1,23 @@
 {
   "kode": "INDY",
-  "nama": "PT. Indika Energy Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 2070.0,
-  "update": "2026-10-21 12:13",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:32",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.4397512191433061,
-    "pb": 8972.836585666375,
-    "ps": 0.004556064204218022,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.00849474750534367,
-    "eps": 4707.206961319255,
+    "eps": null,
     "de": 1.5652301044323509,
     "margin_net": 0.008889494858773737,
     "current_ratio": 2.070939491578254,
     "roa": 0.003158430237294878,
-    "bv": 0.23069627761935552
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 653726952000000.0
     },
     "eps": {
-      "2024-Q1": 3866.11,
-      "2024-Q2": 172.34,
-      "2024-Q3": 2575.17,
-      "2026-Q1": 1350.08,
-      "2026-Q2": 609.92
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 20114167000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 31700.0,
-      "2022": 86882.89,
-      "2023": 23004.21,
-      "2025": 1160.0
+      "2021": 0.03,
+      "2022": 0.09,
+      "2023": 0.02,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 3069161119000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 10769572823040,
-    "enterprise_value": 11030480551936,
-    "shares_outstanding": 5202692000,
-    "free_float_pct": 28.59499999231167
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1361,
-    "vol_trend": 0.674,
-    "price_chg_20d": -18.15
+    "cmf": -0.1656,
+    "vol_trend": 0.687,
+    "price_chg_20d": -20.08
   },
   "neraca": {
     "aset": 3228106760.0,

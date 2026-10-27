@@ -1,26 +1,26 @@
 {
   "kode": "FASW",
-  "nama": "PT Fajar Surya Wisesa Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 5450.0,
-  "update": "2026-10-21 11:58",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:18",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 100.13370705294199,
-    "pb": 3.013093766885088,
-    "ps": 2.016736218655644,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.015045352137477673,
-    "eps": 54.4272269588353,
+    "eps": null,
     "de": 1.1327214869535265,
     "margin_net": 0.02014043300713285,
     "current_ratio": 0.79863962443256,
     "roa": 0.007054532075338688,
-    "bv": 1808.7721198381976
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 2399428000000.0
     },
     "eps": {
-      "2024-Q3": -134520000.0,
-      "2026-Q1": -6000000.0,
-      "2026-Q2": 33210000.0
+      "2024-Q3": -134.52,
+      "2026-Q1": -6.0,
+      "2026-Q2": 33.21
     },
     "net_income": {
       "2024-Q3": -333311000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 248170000.0,
-      "2022": 48400000.0,
-      "2023": -252580000.0,
-      "2025": -400210000.0
+      "2021": 248.17,
+      "2022": 48.4,
+      "2023": -252.58,
+      "2025": -400.21
     },
     "revenue_per_share": {
       "2021": 11932773000000.0,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 17555842400256,
-    "enterprise_value": 21977641254912,
-    "shares_outstanding": 3221255423,
-    "free_float_pct": 0.22300001262582275
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

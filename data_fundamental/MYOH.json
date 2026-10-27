@@ -1,23 +1,23 @@
 {
   "kode": "MYOH",
-  "nama": "PT Samindo Resources Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 895.0,
-  "update": "2026-10-21 12:43",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:00",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.08998149595280289,
-    "pb": 0.010962208708673316,
-    "ps": 0.011182393307200778,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.020704424265196038,
-    "eps": 9946.489447890994,
+    "eps": null,
     "de": 0.21310889065383692,
     "margin_net": 0.0910594385704118,
     "current_ratio": 5.77551057827313,
     "roa": 0.01673830627229233,
-    "bv": 81644.130647857
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 40957193000000.0
     },
     "eps": {
-      "2024-Q1": 300.0,
-      "2024-Q2": 4219700.0,
-      "2024-Q3": -4211700.0,
-      "2026-Q1": 1700.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 4.22,
+      "2024-Q3": -4.21,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 596737000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 12200.0,
-      "2022": 6400.0,
-      "2023": 8400.0,
-      "2025": 6800.0
+      "2021": 0.01,
+      "2022": 0.01,
+      "2023": 0.01,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 160661605000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1974649618432,
-    "enterprise_value": 1974572679168,
-    "shares_outstanding": 2206312500,
-    "free_float_pct": 31.24700000566556
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1989,
-    "vol_trend": 0.417,
-    "price_chg_20d": -12.68
+    "cmf": -0.1704,
+    "vol_trend": 0.316,
+    "price_chg_20d": -7.39
   },
   "neraca": {
     "aset": 222814599.0,

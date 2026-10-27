@@ -1,23 +1,23 @@
 {
   "kode": "ZINC",
-  "nama": "PT Kapuas Prima Coal Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Other Industrial Metals & Mining",
-  "harga": 30.0,
-  "update": "2026-10-21 13:34",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:54",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.1411973210015165,
-    "ps": 3.324436843795182e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.07025676318047615,
-    "eps": -4524766.872871287,
+    "eps": null,
     "de": 5.618100210512905,
     "margin_net": -0.4645934595585807,
     "current_ratio": 0.11150009964279126,
     "roa": -0.010665605820623737,
-    "bv": 14.010852575683169
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 5.3498424398e+16
     },
     "eps": {
-      "2024-Q1": -790000.0,
-      "2024-Q2": 270000.0,
-      "2024-Q3": -3020000.0,
-      "2026-Q1": -980000.0
+      "2024-Q1": -0.79,
+      "2024-Q2": 0.27,
+      "2024-Q3": -3.02,
+      "2026-Q1": -0.98
     },
     "net_income": {
       "2024-Q1": -1.9881853802e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 3170000.0,
-      "2022": -4080000.0,
-      "2023": -820000.0,
-      "2025": -9640000.0
+      "2021": 3.17,
+      "2022": -4.08,
+      "2023": -0.82,
+      "2025": -9.64
     },
     "revenue_per_share": {
       "2021": 8.38765098953e+17,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 757500018688,
-    "enterprise_value": 2222086422528,
-    "shares_outstanding": 25250000000,
-    "free_float_pct": 34.588
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

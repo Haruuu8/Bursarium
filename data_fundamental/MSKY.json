@@ -1,23 +1,23 @@
 {
   "kode": "MSKY",
-  "nama": "PT MNC Sky Vision Tbk",
-  "sektor": "Communication Services",
-  "industri": "Entertainment",
-  "harga": 38.0,
-  "update": "2026-10-21 12:41",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:59",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4969709255009968,
-    "ps": 0.6601689772922873,
+    "pb": null,
+    "ps": null,
     "roe": -0.02219468051621026,
-    "eps": -19.7120847838237,
+    "eps": null,
     "de": 0.637585248137656,
     "margin_net": -0.25990201649440203,
     "current_ratio": 0.7632253274301328,
     "roa": -0.013553286930364313,
-    "bv": 76.46322561363559
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 65113000000.0
     },
     "eps": {
-      "2024-Q1": -7.29,
-      "2024-Q2": -6.11,
-      "2024-Q3": -166.6,
-      "2026-Q1": -1.7
+      "2024-Q1": -0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": -0.0,
+      "2026-Q1": -0.0
     },
     "net_income": {
       "2024-Q1": -72650000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -18200000.0,
-      "2022": -24600000.0,
-      "2023": -27600000.0,
-      "2025": -9070000.0
+      "2021": -18.2,
+      "2022": -24.6,
+      "2023": -27.6,
+      "2025": -9.07
     },
     "revenue_per_share": {
       "2021": 1460559000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 378930397184,
-    "enterprise_value": 487170670592,
-    "shares_outstanding": 9971852402,
-    "free_float_pct": 8.104000003428851
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2372,
-    "vol_trend": 0.177,
-    "price_chg_20d": -44.62
+    "cmf": -0.1007,
+    "vol_trend": 0.133,
+    "price_chg_20d": -21.74
   },
   "neraca": {
     "aset": 1248627.0,

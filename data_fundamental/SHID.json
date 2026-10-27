@@ -1,23 +1,23 @@
 {
   "kode": "SHID",
-  "nama": "PT Hotel Sahid Jaya International Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 705.0,
-  "update": "2026-10-21 12:59",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:17",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.1190012295643474,
-    "ps": 6.446568074607287e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.021605591320290756,
-    "eps": -28136435.753371935,
+    "eps": null,
     "de": 0.7775341730164295,
     "margin_net": -0.8543630017445059,
     "current_ratio": 2.2296975493511897,
     "roa": -0.01215481066314839,
-    "bv": 630.0261173747525
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.7833596422e+16
     },
     "eps": {
-      "2024-Q1": -7610000.0,
-      "2024-Q2": -3800000.0,
-      "2024-Q3": -3114322.99,
-      "2026-Q1": -13612062.49
+      "2024-Q1": -7.61,
+      "2024-Q2": -3.8,
+      "2024-Q3": -3.11,
+      "2026-Q1": -13.61
     },
     "net_income": {
       "2024-Q1": -8519049277000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -33030000.0,
-      "2023": -20160000.0,
-      "2025": -23650000.0
+      "2021": -33.03,
+      "2023": -20.16,
+      "2025": -23.65
     },
     "revenue_per_share": {
       "2021": 6.9422735722e+16,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 789125005312,
-    "enterprise_value": 1227167498240,
-    "shares_outstanding": 1119326168,
-    "free_float_pct": 14.925000038058611
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.3,
+    "score": 5.1,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0211,
-    "vol_trend": 1.165,
-    "price_chg_20d": 2.04
+    "cmf": 0.0055,
+    "vol_trend": 0.82,
+    "price_chg_20d": -3.9
   },
   "neraca": {
     "aset": 1253525488241.0,

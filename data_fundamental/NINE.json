@@ -3,8 +3,8 @@
   "nama": "PT Techno9 Indonesia Tbk",
   "sektor": "Technology",
   "industri": "Information Technology Services",
-  "harga": 72.0,
-  "update": "2026-10-21 10:47",
+  "harga": 79.0,
+  "update": "2026-10-26 22:47",
   "periode_terbaru": "2025-audit",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 6.056372631518958,
-    "ps": 65.97082539901314,
+    "pb": 6.645186637361078,
+    "ps": 72.38465564613941,
     "roe": -0.38785964024531744,
     "eps": -4.610993377839592,
     "de": 0.1893183962035448,
@@ -30,19 +30,21 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 1030000.0,
-      "2023": -1880000.0,
-      "2025": -4610000.0
+      "2022": 1.03,
+      "2023": -1.88,
+      "2024": -2.8,
+      "2025": -4.61
     },
     "revenue_per_share": {
       "2022": 1.9848779617e+16,
       "2023": 1.4775328996e+16,
+      "2024": 9016469130000000.0,
       "2025": 2354131528000000.0
     }
   },
   "statistik": {
-    "market_cap": 155304001536,
-    "enterprise_value": 159541673984,
+    "market_cap": 170402988032,
+    "enterprise_value": 172483674112,
     "shares_outstanding": 2157000000,
     "free_float_pct": 55.545
   },
@@ -50,9 +52,9 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2246,
-    "vol_trend": 1.229,
-    "price_chg_20d": -9.88
+    "cmf": -0.2713,
+    "vol_trend": 1.3,
+    "price_chg_20d": -5.95
   },
   "neraca": {
     "aset": 30497777373.0,

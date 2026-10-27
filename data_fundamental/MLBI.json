@@ -1,26 +1,26 @@
 {
   "kode": "MLBI",
-  "nama": "PT Multi Bintang Indonesia Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Beverages - Brewers",
-  "harga": 6675.0,
-  "update": "2026-10-21 12:39",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:55",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 15.35469498534864,
-    "pb": 8.865944450047909,
-    "ps": 4.635276114867581,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.14435233748550103,
-    "eps": 434.7204556241101,
+    "eps": null,
     "de": 1.2856390892127691,
     "margin_net": 0.3018800516252869,
     "current_ratio": 1.0511167007458553,
     "roa": 0.06314406942541376,
-    "bv": 752.8808732795444
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 758543000000.0
     },
     "eps": {
-      "2024-Q3": 151000000.0,
-      "2026-Q1": 110.0
+      "2024-Q3": 151.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q3": 318387000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 316000000.0,
-      "2022": 439000000.0,
-      "2023": 506.0,
-      "2025": 560.0
+      "2021": 316.0,
+      "2022": 439.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 2473681000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 14064225878016,
-    "enterprise_value": 12981750464512,
-    "shares_outstanding": 2107000000,
-    "free_float_pct": 10.681000000000001
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2666,
-    "vol_trend": 0.913,
-    "price_chg_20d": -1.47
+    "cmf": -0.1475,
+    "vol_trend": 1.044,
+    "price_chg_20d": -4.76
   },
   "neraca": {
     "aset": 3626453.0,

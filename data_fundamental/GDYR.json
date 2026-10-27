@@ -1,23 +1,23 @@
 {
   "kode": "GDYR",
-  "nama": "PT Goodyear Indonesia Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Auto Parts",
-  "harga": 1010.0,
-  "update": "2026-10-21 12:00",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:20",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.09549334152440674,
-    "pb": 0.006786104620757125,
-    "ps": 0.0025245979423837855,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.02085874196370596,
-    "eps": 10576.653658536585,
+    "eps": null,
     "de": 0.8464334677504266,
     "margin_net": 0.017120616591143827,
     "current_ratio": 1.1887301814303168,
     "roa": 0.011296774201736541,
-    "bv": 148833.54390243904
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 39216286000000.0
     },
     "eps": {
-      "2024-Q1": 6000.0,
-      "2024-Q2": 5000.0,
-      "2024-Q3": 2000.0,
-      "2026-Q1": 2000.0,
-      "2026-Q2": 1000.0
+      "2024-Q1": 0.01,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 2284996000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 6000.0,
-      "2022": -8000.0,
-      "2023": 14000.0,
-      "2025": 6000.0
+      "2021": 0.01,
+      "2022": -0.01,
+      "2023": 0.01,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 150216504000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 414099996672,
-    "enterprise_value": 414083612672,
-    "shares_outstanding": 410000000,
-    "free_float_pct": 15.0
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.5,
+    "score": 6.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.2389,
-    "vol_trend": 2.55,
-    "price_chg_20d": -6.91
+    "cmf": 0.1899,
+    "vol_trend": 2.229,
+    "price_chg_20d": -2.25
   },
   "neraca": {
     "aset": 112672607.0,

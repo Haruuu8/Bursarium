@@ -1,23 +1,23 @@
 {
   "kode": "KARW",
-  "nama": "PT Meratus Jasa Prima Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 212.0,
-  "update": "2026-10-21 12:21",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:40",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.724099778365958,
+    "pe": null,
     "pb": null,
-    "ps": 0.02312121594986889,
+    "ps": null,
     "roe": -0.00465381061717351,
-    "eps": 292.7773303265062,
+    "eps": null,
     "de": -1.389050017940286,
     "margin_net": 0.05232527451630843,
     "current_ratio": 0.12424564027094834,
     "roa": 0.011959217701463763,
-    "bv": -54781.386511549725
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1539334000000.0
     },
     "eps": {
-      "2024-Q1": 30.0,
-      "2024-Q2": -130.0,
-      "2024-Q3": 200.0,
-      "2026-Q1": 30.0,
-      "2026-Q2": 220.0
+      "2024-Q1": 0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 21026000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -1002.0,
-      "2022": 163000000.0,
-      "2023": 2050.0,
-      "2025": -140.0
+      "2021": -0.0,
+      "2022": 163.0,
+      "2023": 0.0,
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2021": 2933937000000.0,
@@ -58,10 +58,10 @@
     }
   },
   "statistik": {
-    "market_cap": 124476375040,
-    "enterprise_value": 124473712640,
-    "shares_outstanding": 587152700,
-    "free_float_pct": 22.97300003900178
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

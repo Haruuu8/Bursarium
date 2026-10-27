@@ -1,23 +1,23 @@
 {
   "kode": "ZONE",
-  "nama": "PT Mega Perintis Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Apparel Retail",
-  "harga": 720.0,
-  "update": "2026-10-21 14:07",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:10",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.6608157211439217e-05,
-    "pb": 1.5245775034823612,
-    "ps": 6.634267396386126e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.06630075059487993,
-    "eps": 43352190.78394109,
+    "eps": null,
     "de": 0.577112657889303,
     "margin_net": 0.06832290293462631,
     "current_ratio": 2.424121569692648,
     "roa": 0.04198960309452115,
-    "bv": 472.261986258759
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3.98786059399e+17
     },
     "eps": {
-      "2024-Q1": 20000000.0,
-      "2024-Q2": -3000000.0,
-      "2024-Q3": -5000000.0,
-      "2026-Q1": 31000000.0
+      "2024-Q1": 20.0,
+      "2024-Q2": -3.0,
+      "2024-Q3": -5.0,
+      "2026-Q1": 31.0
     },
     "net_income": {
       "2024-Q1": 1.7080418535e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 36000000.0,
-      "2022": 84000000.0,
-      "2023": 54000000.0,
-      "2025": 16000000.0
+      "2021": 36.0,
+      "2022": 84.0,
+      "2023": 54.0,
+      "2025": 16.0
     },
     "revenue_per_share": {
       "2021": 4.63875808021e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 626523439104,
-    "enterprise_value": 711208730624,
-    "shares_outstanding": 870171478,
-    "free_float_pct": 15.070000030499736
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.2,
-    "vol_trend": 1.631,
-    "price_chg_20d": -6.57
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.1797,
+    "vol_trend": 2.563,
+    "price_chg_20d": 11.19
   },
   "neraca": {
     "aset": 648880180331.0,

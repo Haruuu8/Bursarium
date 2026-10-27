@@ -3,17 +3,17 @@
   "nama": "PT Lupromax Pelumas Indonesia Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Refining & Marketing",
-  "harga": 87.0,
-  "update": "2026-10-21 11:00",
+  "harga": 88.0,
+  "update": "2026-10-26 23:06",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 3.583155660000398e-05,
-    "pb": 1.0871030714140706,
-    "ps": 0.6595706844616857,
+    "pe": 3.624341357241782e-05,
+    "pb": 1.099598509016531,
+    "ps": 0.6671519566968775,
     "roe": 0.015169632225996425,
     "eps": 2428027.3662459403,
     "de": 0.29476594482800206,
@@ -30,17 +30,19 @@
   },
   "riwayat": {
     "eps": {
-      "2023": 1840000.0,
-      "2025": 1120000.0
+      "2023": 1.84,
+      "2024": 1.47,
+      "2025": 1.12
     },
     "revenue_per_share": {
       "2023": 4.5552722939e+16,
+      "2024": 7.8252446798e+16,
       "2025": 6.7712609415e+16
     }
   },
   "statistik": {
-    "market_cap": 56550764544,
-    "enterprise_value": 29606256640,
+    "market_cap": 57200771072,
+    "enterprise_value": 35456335872,
     "shares_outstanding": 650008775,
     "free_float_pct": 24.543000054114657
   },
@@ -48,9 +50,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4603,
-    "vol_trend": 0.892,
-    "price_chg_20d": -22.86
+    "cmf": -0.2761,
+    "vol_trend": 0.935,
+    "price_chg_20d": -11.11
   },
   "neraca": {
     "aset": 67353321467.0,

@@ -1,23 +1,23 @@
 {
   "kode": "NICK",
-  "nama": "PT Charnic Capital Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 2600.0,
-  "update": "2026-10-21 13:44",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:58",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.737924256551584,
-    "ps": -5.089278038404733e-05,
+    "pb": null,
+    "ps": null,
     "roe": -0.05595254995089939,
-    "eps": -55181712.525531754,
+    "eps": null,
     "de": 0.012013078994799765,
     "margin_net": 0.9752900155933042,
     "current_ratio": 75.05924818693067,
     "roa": -0.05434980109760774,
-    "bv": 453.1255352545496
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": -1.6927221892e+16
     },
     "eps": {
-      "2024-Q1": -13020000.0,
-      "2024-Q2": 560000.0,
-      "2024-Q3": -17370000.0,
-      "2026-Q1": -25360000.0
+      "2024-Q1": -13.02,
+      "2024-Q2": 0.56,
+      "2024-Q3": -17.37,
+      "2026-Q1": -25.36
     },
     "net_income": {
       "2024-Q1": -8479124218000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 332190000.0,
-      "2022": -78160000.0,
-      "2023": -105110000.0,
-      "2025": 166270000.0
+      "2021": 332.19,
+      "2022": -78.16,
+      "2023": -105.11,
+      "2025": 166.27
     },
     "revenue_per_share": {
       "2021": 2.18407927988e+17,
@@ -54,18 +54,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1692990046208,
-    "enterprise_value": 1481625436160,
-    "shares_outstanding": 651150000,
-    "free_float_pct": 21.567000076787224
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4844,
-    "vol_trend": 0.714,
-    "price_chg_20d": -7.8
+    "cmf": -0.4649,
+    "vol_trend": 1.044,
+    "price_chg_20d": -10.64
   },
   "neraca": {
     "aset": 303753650788.0,

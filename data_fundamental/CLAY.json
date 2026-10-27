@@ -1,23 +1,23 @@
 {
   "kode": "CLAY",
-  "nama": "PT Citra Putra Realty Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 2700.0,
-  "update": "2026-10-21 14:10",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:12",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.00029049924755411555,
-    "pb": 242.96604110913074,
-    "ps": 3.0615510822034734e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.4127218867193288,
-    "eps": 9294344.211673152,
+    "eps": null,
     "de": 17.02269116564,
     "margin_net": 0.1368202108791255,
     "current_ratio": 0.411745240851579,
     "roa": 0.022901808529955762,
-    "bv": 11.112664089494164
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 5.2101291499e+16
     },
     "eps": {
-      "2024-Q1": -470000.0,
-      "2024-Q2": -21803.56,
-      "2024-Q3": 4730976.6,
-      "2026-Q1": 593107.04,
-      "2026-Q2": 3986892.96
+      "2024-Q1": -0.47,
+      "2024-Q2": -0.02,
+      "2024-Q3": 4.73,
+      "2026-Q1": 0.59,
+      "2026-Q2": 3.99
     },
     "net_income": {
       "2024-Q1": -1204639922000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -15927137.39,
-      "2023": 2600000.0,
-      "2025": 1890000.0
+      "2022": -15.93,
+      "2023": 2.6,
+      "2025": 1.89
     },
     "revenue_per_share": {
       "2022": 1.26226524149e+17,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 6938999914496,
-    "enterprise_value": 7571974389760,
-    "shares_outstanding": 2570000000,
-    "free_float_pct": 18.597
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4669,
-    "vol_trend": 0.802,
-    "price_chg_20d": 3.27
+    "cmf": 0.4372,
+    "vol_trend": 0.816,
+    "price_chg_20d": 6.14
   },
   "neraca": {
     "aset": 514682060440.0,

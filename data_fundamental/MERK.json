@@ -1,23 +1,23 @@
 {
   "kode": "MERK",
-  "nama": "PT Merck Tbk",
-  "sektor": "Healthcare",
-  "industri": "Drug Manufacturers - Specialty & Generic",
-  "harga": 3580.0,
-  "update": "2026-10-21 12:36",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:55",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.011275858178411209,
-    "pb": 1540.8301278803888,
-    "ps": 0.001546849280372024,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.06261845868955399,
-    "eps": 317492.46428571426,
+    "eps": null,
     "de": 0.2720548657728234,
     "margin_net": 0.23022940075476886,
     "current_ratio": 4.911956003147498,
     "roa": 0.04922622472853072,
-    "bv": 2.3234228973214286
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 283105215000000.0
     },
     "eps": {
-      "2024-Q1": 53000000.0,
-      "2024-Q2": -52895000.0,
-      "2024-Q3": 66000.0,
-      "2026-Q1": 150.0
+      "2024-Q1": 53.0,
+      "2024-Q2": -52.9,
+      "2024-Q3": 0.07,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 23654553000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 294000000.0,
-      "2022": 401000000.0,
-      "2023": 398000000.0,
-      "2025": 540.0
+      "2021": 294.0,
+      "2022": 401.0,
+      "2023": 398.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 1064394815000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1603839983616,
-    "enterprise_value": 1279860408320,
-    "shares_outstanding": 448000000,
-    "free_float_pct": 13.349
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
+    "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1343,
-    "vol_trend": 0.619,
-    "price_chg_20d": -7.07
+    "cmf": 0.2994,
+    "vol_trend": 0.654,
+    "price_chg_20d": -1.58
   },
   "neraca": {
     "aset": 1324073588.0,

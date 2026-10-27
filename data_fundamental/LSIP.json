@@ -1,23 +1,23 @@
 {
   "kode": "LSIP",
-  "nama": "PT Perusahaan Perkebunan London Sumatra Indonesia Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Farm Products",
-  "harga": 1390.0,
-  "update": "2026-10-21 12:32",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:49",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 6.652316029381837,
-    "pb": 0.6618655879846443,
-    "ps": 2.002215148625099,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.06220779050312328,
-    "eps": 208.94978438496778,
+    "eps": null,
     "de": 0.1380147641811236,
     "margin_net": 0.3312537062063504,
     "current_ratio": 7.0827541783404735,
     "roa": 0.05467873387139732,
-    "bv": 2100.1242929587825
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1362816000000.0
     },
     "eps": {
-      "2024-Q1": 39000000.0,
-      "2024-Q2": 49000000.0,
-      "2024-Q3": 30000000.0,
-      "2026-Q1": 58000000.0,
-      "2026-Q2": 73000000.0
+      "2024-Q1": 39.0,
+      "2024-Q2": 49.0,
+      "2024-Q3": 30.0,
+      "2026-Q1": 58.0,
+      "2026-Q2": 73.0
     },
     "net_income": {
       "2024-Q1": 269305000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 145000000.0,
-      "2022": 152000000.0,
-      "2023": 112000000.0,
-      "2025": 277000000.0
+      "2021": 145.0,
+      "2022": 152.0,
+      "2023": 112.0,
+      "2025": 277.0
     },
     "revenue_per_share": {
       "2021": 4525473000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 9479749894144,
-    "enterprise_value": 1069311066112,
-    "shares_outstanding": 6819963965,
-    "free_float_pct": 40.378000003112916
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.6,
+    "score": 5.4,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0629,
-    "vol_trend": 0.585,
-    "price_chg_20d": -12.34
+    "cmf": 0.0263,
+    "vol_trend": 0.53,
+    "price_chg_20d": -3.0
   },
   "neraca": {
     "aset": 16294964.0,

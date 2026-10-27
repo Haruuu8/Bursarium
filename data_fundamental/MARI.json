@@ -1,10 +1,10 @@
 {
   "kode": "MARI",
-  "nama": "PT Mahaka Radio Integra Tbk",
-  "sektor": "Communication Services",
-  "industri": "Broadcasting",
-  "harga": 23.0,
-  "update": "2026-10-21 13:25",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:46",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -13,14 +13,14 @@
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.0976918194418375,
+    "ps": null,
     "roe": 0.48538288209693575,
-    "eps": -0.9295111627591742,
+    "eps": null,
     "de": -89.687373371559,
     "margin_net": -0.044361599975678956,
     "current_ratio": null,
     "roa": -0.007969439848391732,
-    "bv": -0.9575030321872184
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,11 +29,11 @@
       "2026-Q2": 1.7665044635e+16
     },
     "eps": {
-      "2024-Q1": -890000.0,
-      "2024-Q2": -900000.0,
-      "2024-Q3": -2250000.0,
-      "2026-Q1": 540000.0,
-      "2026-Q2": -1000000.0
+      "2024-Q1": -0.89,
+      "2024-Q2": -0.9,
+      "2024-Q3": -2.25,
+      "2026-Q1": 0.54,
+      "2026-Q2": -1.0
     },
     "net_income": {
       "2024-Q1": -4660980303000000.0,
@@ -46,10 +46,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -3760000.0,
-      "2022": -7906312.93,
-      "2023": -9010000.0,
-      "2025": -6870000.0
+      "2021": -3.76,
+      "2022": -7.91,
+      "2023": -9.01,
+      "2025": -6.87
     },
     "revenue_per_share": {
       "2021": 6.9662826371e+16,
@@ -59,10 +59,10 @@
     }
   },
   "statistik": {
-    "market_cap": 120810807296,
-    "enterprise_value": 367762604032,
-    "shares_outstanding": 5252644000,
-    "free_float_pct": 43.27700000228457
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

@@ -1,23 +1,23 @@
 {
   "kode": "PGLI",
-  "nama": "PT Pembangunan Graha Lestari Indah Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 268.0,
-  "update": "2026-10-21 12:48",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:06",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 10.164984244826258,
-    "ps": 6.333260621479868e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.02043646470036908,
-    "eps": -6890298.37909836,
+    "eps": null,
     "de": 1.7193998847892802,
     "margin_net": -0.0487332746350903,
     "current_ratio": 0.6460507428272088,
     "roa": -0.007574763639274343,
-    "bv": 26.365018729508197
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 5395455076000000.0
     },
     "eps": {
-      "2024-Q1": -8190000.0,
-      "2024-Q2": 19440000.0,
-      "2024-Q3": -17550000.0,
-      "2026-Q1": -540000.0
+      "2024-Q1": -8.19,
+      "2024-Q2": 19.44,
+      "2024-Q3": -17.55,
+      "2026-Q1": -0.54
     },
     "net_income": {
       "2024-Q1": -3983809831000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 19500000.0,
-      "2022": 12880000.0,
-      "2023": 105250000.0,
-      "2025": -6670000.0
+      "2021": 19.5,
+      "2022": 12.88,
+      "2023": 105.25,
+      "2025": -6.67
     },
     "revenue_per_share": {
       "2021": 1.4488426208e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 130784002048,
-    "enterprise_value": 153422725120,
-    "shares_outstanding": 488000000,
-    "free_float_pct": 17.593
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.5233,
-    "vol_trend": 2.003,
-    "price_chg_20d": 34.91
+    "cmf": 0.3051,
+    "vol_trend": 1.566,
+    "price_chg_20d": 42.86
   },
   "neraca": {
     "aset": 34712395861.0,

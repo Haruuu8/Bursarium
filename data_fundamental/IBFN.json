@@ -1,26 +1,26 @@
 {
   "kode": "IBFN",
-  "nama": "PT Intan Baru Prana Tbk",
-  "sektor": "Financial Services",
-  "industri": "Credit Services",
-  "harga": 63.0,
-  "update": "2026-10-21 12:07",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:26",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 6.84630649756589,
+    "pe": null,
     "pb": null,
-    "ps": 0.3780405343665643,
+    "ps": null,
     "roe": -0.007926783752684212,
-    "eps": 9.202042009424904,
+    "eps": null,
     "de": -1.6415529327079865,
     "margin_net": 0.05521817267470736,
     "current_ratio": 0.2754602085292823,
     "roa": 0.012355619230396723,
-    "bv": -580.4398288466527
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 5.6206661629e+16
     },
     "eps": {
-      "2024-Q3": 1130000.0,
-      "2026-Q1": -40680000.0,
-      "2026-Q2": 65610000.0
+      "2024-Q3": 1.13,
+      "2026-Q1": -40.68,
+      "2026-Q2": 65.61
     },
     "net_income": {
       "2024-Q3": -2.8580902248e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -132330000.0,
-      "2022": -27350000.0,
-      "2023": -44680000.0,
-      "2025": -27430000.0
+      "2021": -132.33,
+      "2022": -27.35,
+      "2023": -44.68,
+      "2025": -27.43
     },
     "revenue_per_share": {
       "2021": -1.97937219151e+17,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 95591940096,
-    "enterprise_value": 932825006080,
-    "shares_outstanding": 1322899281,
-    "free_float_pct": 17.07501623473934
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

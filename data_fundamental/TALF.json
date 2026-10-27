@@ -1,23 +1,23 @@
 {
   "kode": "TALF",
-  "nama": "PT Tunas Alfin Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 565.0,
-  "update": "2026-10-21 13:09",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:28",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.352409820166542e-05,
-    "pb": 0.5904364377294333,
-    "ps": 5.949783544350419e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0025699686460065817,
-    "eps": 12981314.337223435,
+    "eps": null,
     "de": 0.394074202880649,
     "margin_net": 0.011283456456227118,
     "current_ratio": 2.211627235912503,
     "roa": 0.001801933372409254,
-    "bv": 956.919261576655
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2.94983936785e+17
     },
     "eps": {
-      "2024-Q1": 5440000.0,
-      "2024-Q2": -140000.0,
-      "2024-Q3": 5220000.0,
-      "2026-Q1": 2460000.0
+      "2024-Q1": 5.44,
+      "2024-Q2": -0.14,
+      "2024-Q3": 5.22,
+      "2026-Q1": 2.46
     },
     "net_income": {
       "2024-Q1": 7359584687000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 15210000.0,
-      "2022": 31150000.0,
-      "2023": 28140000.0,
-      "2025": 38300000.0
+      "2021": 15.21,
+      "2022": 31.15,
+      "2023": 28.14,
+      "2025": 38.3
     },
     "revenue_per_share": {
-      "2021": 1.047891188545e+18,
-      "2022": 1.318100566433e+18,
-      "2023": 1.262896271398e+18,
-      "2025": 1.432930961074e+18
+      "2021": 1047891188545.0,
+      "2022": 1318100566433.0,
+      "2023": 1262896271398.0,
+      "2025": 1432930961074.0
     }
   },
   "statistik": {
-    "market_cap": 764690759680,
-    "enterprise_value": 1054261313536,
-    "shares_outstanding": 1353435000,
-    "free_float_pct": 8.16399997044557
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.3,
+    "score": 4.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0528,
-    "vol_trend": 0.264,
-    "price_chg_20d": -15.94
+    "cmf": -0.0308,
+    "vol_trend": 0.683,
+    "price_chg_20d": -2.33
   },
   "neraca": {
     "aset": 1847148433435.0,

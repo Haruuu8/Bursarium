@@ -1,26 +1,26 @@
 {
   "kode": "IGAR",
-  "nama": "PT Champion Pacific Indonesia Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 510.0,
-  "update": "2026-10-21 12:08",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:27",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 6.127479872730977,
-    "pb": 0.6611981678390705,
-    "ps": 0.47461397693350665,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.05395351609244689,
-    "eps": 83.2316075438525,
+    "eps": null,
     "de": 0.24266198070191097,
     "margin_net": 0.077456635809719,
     "current_ratio": 6.16160090300453,
     "roa": 0.03496917742970132,
-    "bv": 771.327001202655
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 2.88803562264e+17
     },
     "eps": {
-      "2024-Q1": 14040000.0,
-      "2026-Q1": 11330000.0,
-      "2026-Q2": 30290000.0
+      "2024-Q1": 14.04,
+      "2026-Q1": 11.33,
+      "2026-Q2": 30.29
     },
     "net_income": {
       "2024-Q1": 1.3482948765e+16,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 75360000.0,
-      "2022": 73520000.0,
-      "2023": 39790000.0,
-      "2025": 64030000.0
+      "2021": 75.36,
+      "2022": 73.52,
+      "2023": 39.79,
+      "2025": 64.03
     },
     "revenue_per_share": {
       "2021": 9.70111806482e+17,
-      "2022": 1.08367273066e+18,
+      "2022": 1083672730660.0,
       "2023": 8.57775074318e+17,
       "2025": 9.1731723289e+17
     }
   },
   "statistik": {
-    "market_cap": 473168117760,
-    "enterprise_value": 259157590016,
-    "shares_outstanding": 927780600,
-    "free_float_pct": 11.119000009269433
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 8.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.16,
-    "vol_trend": 1.628,
-    "price_chg_20d": 9.44
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0336,
+    "vol_trend": 0.355,
+    "price_chg_20d": 8.05
   },
   "neraca": {
     "aset": 1104124781620.0,

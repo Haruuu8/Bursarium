@@ -1,23 +1,23 @@
 {
   "kode": "SUPR",
-  "nama": "PT Solusi Tunas Pratama Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 43850.0,
-  "update": "2026-10-21 13:09",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:28",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 50.30188445480855,
-    "pb": 6.028971937801703,
-    "ps": 27.29999023501378,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03003459086810751,
-    "eps": 871.7367246826517,
+    "eps": null,
     "de": 0.2609850783068604,
     "margin_net": 0.5405613526759203,
     "current_ratio": 0.26686999426438607,
     "roa": 0.023818323533234393,
-    "bv": 7273.213485214642
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 459711000000.0
     },
     "eps": {
-      "2024-Q1": 191000000.0,
-      "2024-Q2": 226000000.0,
-      "2024-Q3": 236000000.0,
-      "2026-Q1": 218.0
+      "2024-Q1": 191.0,
+      "2024-Q2": 226.0,
+      "2024-Q3": 236.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 217754000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -61000000.0,
-      "2022": 823000000.0,
-      "2023": 992000000.0,
-      "2025": 1160.0
+      "2021": -61.0,
+      "2022": 823.0,
+      "2023": 992.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 2075965000000.0,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 49882865860608,
-    "enterprise_value": 50929541840896,
-    "shares_outstanding": 1137579698,
-    "free_float_pct": 2.672000041266559
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

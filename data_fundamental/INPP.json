@@ -1,23 +1,23 @@
 {
   "kode": "INPP",
-  "nama": "PT Indonesian Paradise Property Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 675.0,
-  "update": "2026-10-21 12:14",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:33",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.6094961595990323e-05,
-    "pb": 1.3160258892396781,
-    "ps": 1.2263127191726077e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.00983275391211756,
-    "eps": 14643682.88048897,
+    "eps": null,
     "de": 0.5994135289027415,
     "margin_net": 0.06571632000727151,
     "current_ratio": 2.8356478490023016,
     "roa": 0.005528983436285657,
-    "bv": 512.9078428616439
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 531237000000.0
     },
     "eps": {
-      "2024-Q1": 10540000.0,
-      "2024-Q2": 14570000.0,
-      "2024-Q3": 80000.0,
-      "2026-Q1": 550000.0,
-      "2026-Q2": 4490000.0
+      "2024-Q1": 10.54,
+      "2024-Q2": 14.57,
+      "2024-Q3": 0.08,
+      "2026-Q1": 0.55,
+      "2026-Q2": 4.49
     },
     "net_income": {
       "2024-Q1": 1.17885875158e+17,
@@ -45,31 +45,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -460000.0,
-      "2022": 2510000.0,
-      "2023": 9390000.0,
-      "2025": -8820000.0
+      "2021": -0.46,
+      "2022": 2.51,
+      "2023": 9.39,
+      "2025": -8.82
     },
     "revenue_per_share": {
       "2021": 4.27677089386e+17,
       "2022": 9.55541184718e+17,
-      "2023": 1.104710911002e+18,
+      "2023": 1104710911002.0,
       "2025": 1740629000000.0
     }
   },
   "statistik": {
-    "market_cap": 7547830927360,
-    "enterprise_value": 10374120210432,
-    "shares_outstanding": 11181971732,
-    "free_float_pct": 8.923000003162592
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.7769,
-    "vol_trend": 0.758,
-    "price_chg_20d": -1.41
+    "cmf": 0.7662,
+    "vol_trend": 1.149,
+    "price_chg_20d": -1.44
   },
   "neraca": {
     "aset": 10199705.0,

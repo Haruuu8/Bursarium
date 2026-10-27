@@ -1,10 +1,10 @@
 {
   "kode": "INTD",
-  "nama": "PT Inter Delta Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Paper & Paper Products",
-  "harga": 272.0,
-  "update": "2026-10-21 12:14",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:33",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.7034542650271165,
-    "ps": 4.761647094560126,
+    "pb": null,
+    "ps": null,
     "roe": -0.0404941858106805,
-    "eps": -4.683544441966247,
+    "eps": null,
     "de": 0.06300831564829851,
     "margin_net": -0.08199038891298457,
     "current_ratio": 53.4275949895686,
     "roa": -0.03809760027560888,
-    "bv": 57.82983838547686
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 8219541035000000.0
     },
     "eps": {
-      "2024-Q3": 2000000.0,
-      "2026-Q1": 1000000.0,
-      "2026-Q2": 1000000.0
+      "2024-Q3": 2.0,
+      "2026-Q1": 1.0,
+      "2026-Q2": 1.0
     },
     "net_income": {
       "2024-Q3": -755970073000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 5000000.0,
-      "2022": 1000000.0,
-      "2023": 1000000.0,
-      "2025": 4000000.0
+      "2021": 5.0,
+      "2022": 1.0,
+      "2023": 1.0,
+      "2025": 4.0
     },
     "revenue_per_share": {
       "2021": 5.9273878447e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 160977207296,
-    "enterprise_value": 157961584640,
-    "shares_outstanding": 591828000,
-    "free_float_pct": 12.754999932412794
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2237,
-    "vol_trend": 0.589,
-    "price_chg_20d": -21.39
+    "cmf": -0.3678,
+    "vol_trend": 0.31,
+    "price_chg_20d": -34.63
   },
   "neraca": {
     "aset": 36378311494.0,

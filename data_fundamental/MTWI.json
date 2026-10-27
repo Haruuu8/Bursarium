@@ -1,34 +1,34 @@
 {
   "kode": "MTWI",
-  "nama": "PT Malacca Trust Wuwungan Insurance Tbk",
-  "sektor": "Financial Services",
-  "industri": "Insurance - Diversified",
-  "harga": 224.0,
-  "update": "2026-10-21 13:32",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:49",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 33.79649014359479,
-    "pb": 1.5863059219015103,
-    "ps": 22.016703876319152,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.011734250473655707,
-    "eps": 6.6279071894231345,
+    "eps": null,
     "de": 6.974392030261755,
     "margin_net": 0.6514494192377496,
     "current_ratio": null,
     "roa": 0.0014714915179907585,
-    "bv": 141.2085757906586
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2026-Q1": 7438500000000000.0
     },
     "eps": {
-      "2024-Q3": 4680000.0,
-      "2026-Q1": 1656976.85
+      "2024-Q3": 4.68,
+      "2026-Q1": 1.66
     },
     "net_income": {
       "2024-Q3": 1.3680382329e+16,
@@ -38,9 +38,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2160000.0,
-      "2022": -5170000.0,
-      "2025": 24400000.0
+      "2021": 2.16,
+      "2022": -5.17,
+      "2025": 24.4
     },
     "revenue_per_share": {
       "2021": 1.5901675001e+16,
@@ -49,18 +49,18 @@
     }
   },
   "statistik": {
-    "market_cap": 655085010944,
-    "enterprise_value": 348124774400,
-    "shares_outstanding": 2924486639,
-    "free_float_pct": 5.998999983805363
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.4,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2848,
-    "vol_trend": 0.183,
-    "price_chg_20d": -15.0
+    "cmf": -0.105,
+    "vol_trend": 0.418,
+    "price_chg_20d": -1.54
   },
   "neraca": {
     "aset": 3293125679458.0,

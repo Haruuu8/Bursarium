@@ -1,23 +1,23 @@
 {
   "kode": "MTFN",
-  "nama": "PT Capitalinc Investment Tbk",
-  "sektor": "Energy",
-  "industri": "Oil & Gas E&P",
-  "harga": 13.0,
-  "update": "2026-10-21 12:42",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:58",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.246247455484222e-09,
+    "ps": null,
     "roe": 0.02645998150736263,
-    "eps": -263644175.60747662,
+    "eps": null,
     "de": -1.7056051656970517,
     "margin_net": -0.09672791302864897,
     "current_ratio": null,
     "roa": -0.03843495538923391,
-    "bv": -5678.890379491173
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.49598586922e+17
     },
     "eps": {
-      "2024-Q1": -440610.0,
-      "2024-Q2": -129557.0,
-      "2024-Q3": 217347.0,
-      "2026-Q1": -453469.61
+      "2024-Q1": -0.44,
+      "2024-Q2": -0.13,
+      "2024-Q3": 0.22,
+      "2026-Q1": -0.45
     },
     "net_income": {
       "2024-Q1": -1.4106201197e+16,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -170000.0,
-      "2023": -929958.18,
-      "2025": -988088.49
+      "2021": -0.17,
+      "2023": -0.93,
+      "2025": -0.99
     },
     "revenue_per_share": {
       "2021": 3.54237898291e+17,
@@ -53,10 +53,10 @@
     }
   },
   "statistik": {
-    "market_cap": 413947068416,
-    "enterprise_value": 501333032960,
-    "shares_outstanding": 96300000,
-    "free_float_pct": 4062.0974849428867
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

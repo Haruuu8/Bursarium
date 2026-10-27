@@ -1,26 +1,26 @@
 {
   "kode": "SCMA",
-  "nama": "PT Surya Citra Media Tbk",
-  "sektor": "Communication Services",
-  "industri": "Broadcasting",
-  "harga": 151.0,
-  "update": "2026-10-21 12:58",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:17",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.007800173790001262,
-    "pb": 1402.441114395119,
-    "ps": 1287.351640827125,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.04494903421872643,
-    "eps": 19358.543035741204,
+    "eps": null,
     "de": 0.3493875585670969,
     "margin_net": 0.16504140490784075,
     "current_ratio": 3.096225807308136,
     "roa": 0.029866861560162716,
-    "bv": 0.10766940476151626
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1863956570000000.0
     },
     "eps": {
-      "2024-Q1": 3010000.0,
-      "2026-Q1": 4840000.0
+      "2024-Q1": 3.01,
+      "2026-Q1": 4.84
     },
     "net_income": {
       "2024-Q1": 190506467000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 21320000.0,
-      "2022": 13390000.0,
-      "2023": 5290000.0,
-      "2025": 12150000.0
+      "2021": 21.32,
+      "2022": 13.39,
+      "2023": 5.29,
+      "2025": 12.15
     },
     "revenue_per_share": {
       "2021": 5930261093000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 9598270439424,
-    "enterprise_value": 9833920069632,
-    "shares_outstanding": 63564703280,
-    "free_float_pct": 6.564797501875478
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2924,
-    "vol_trend": 0.738,
-    "price_chg_20d": -12.99
+    "cmf": -0.1021,
+    "vol_trend": 0.78,
+    "price_chg_20d": -7.19
   },
   "neraca": {
     "aset": 10300044763.0,

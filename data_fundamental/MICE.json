@@ -1,23 +1,23 @@
 {
   "kode": "MICE",
-  "nama": "PT Multi Indocitra Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Household & Personal Products",
-  "harga": 470.0,
-  "update": "2026-10-21 12:37",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:54",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 7.887358900159288e-06,
-    "pb": 0.290920382319997,
-    "ps": 2.452475277613649e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.001084016595358887,
-    "eps": 59589021.61666667,
+    "eps": null,
     "de": 0.5343593675905203,
     "margin_net": 0.003186907759504581,
     "current_ratio": 1.6978893986408432,
     "roa": 0.0007064872709479828,
-    "bv": 1615.5622932016668
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3.29717042756e+17
     },
     "eps": {
-      "2024-Q1": 9730000.0,
-      "2024-Q2": 28120000.0,
-      "2024-Q3": 20780000.0,
-      "2026-Q1": 1750000.0
+      "2024-Q1": 9.73,
+      "2024-Q2": 28.12,
+      "2024-Q3": 20.78,
+      "2026-Q1": 1.75
     },
     "net_income": {
       "2024-Q1": 5760663970000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 50885445.37,
-      "2022": 80610000.0,
-      "2023": 58070000.0,
-      "2025": 73350000.0
+      "2021": 50.89,
+      "2022": 80.61,
+      "2023": 58.07,
+      "2025": 73.35
     },
     "revenue_per_share": {
       "2021": 7.70708092995e+17,
       "2022": 9.7463652354e+17,
-      "2023": 1.086594171978e+18,
-      "2025": 1.210505004443e+18
+      "2023": 1086594171978.0,
+      "2025": 1210505004443.0
     }
   },
   "statistik": {
-    "market_cap": 281999998976,
-    "enterprise_value": 540108062720,
-    "shares_outstanding": 600000000,
-    "free_float_pct": 32.275
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.3596,
-    "vol_trend": 4.259,
-    "price_chg_20d": -8.63
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1418,
+    "vol_trend": 0.442,
+    "price_chg_20d": -8.12
   },
   "neraca": {
     "aset": 1487327295494.0,

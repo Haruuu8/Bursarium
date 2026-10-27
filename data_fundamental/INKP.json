@@ -1,23 +1,23 @@
 {
   "kode": "INKP",
-  "nama": "PT Indah Kiat Pulp & Paper Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Paper & Paper Products",
-  "harga": 6950.0,
-  "update": "2026-10-21 12:13",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:32",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 81.30758912675773,
-    "pb": 5.2867595295432634,
-    "ps": 11.467362481350582,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0517687193912389,
-    "eps": 85.47787573881963,
+    "eps": null,
     "de": 0.8421140958493676,
     "margin_net": 0.21896741335811196,
     "current_ratio": 2.733353609741652,
     "roa": 0.028101904405371463,
-    "bv": 1314.6049032800302
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 884098000000.0
     },
     "eps": {
-      "2024-Q1": 23910.0,
-      "2024-Q2": 27040.0,
-      "2024-Q3": -9621.78,
-      "2026-Q1": 28534.73,
-      "2026-Q2": 39525.27
+      "2024-Q1": 0.02,
+      "2024-Q2": 0.03,
+      "2024-Q3": -0.01,
+      "2026-Q1": 0.03,
+      "2026-Q2": 0.04
     },
     "net_income": {
       "2024-Q1": 130788000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 90000.0,
-      "2022": 156740.0,
-      "2023": 75210.0,
-      "2025": 82860.0
+      "2021": 0.09,
+      "2022": 0.16,
+      "2023": 0.08,
+      "2025": 0.08
     },
     "revenue_per_share": {
       "2021": 3516586000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 38023332888576,
-    "enterprise_value": 38708514390016,
-    "shares_outstanding": 5470982941,
-    "free_float_pct": 41.29300000315976
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3109,
-    "vol_trend": 0.934,
-    "price_chg_20d": -15.27
+    "cmf": -0.2271,
+    "vol_trend": 1.056,
+    "price_chg_20d": -12.85
   },
   "neraca": {
     "aset": 13249280.0,

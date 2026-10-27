@@ -1,26 +1,26 @@
 {
   "kode": "RIGS",
-  "nama": "PT Rig Tenders Indonesia Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 570.0,
-  "update": "2026-10-21 12:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:13",
   "periode_terbaru": "2025-audit",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 6.27264598339793,
-    "pb": 0.3814678106502747,
-    "ps": 1.1926012191503714,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.06081449704955791,
-    "eps": 90.8707428266544,
+    "eps": null,
     "de": 0.01883828788075978,
     "margin_net": 0.19012729593011915,
     "current_ratio": 43.626926399905265,
     "roa": 0.05969003891290289,
-    "bv": 1494.2283046853709
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2024-Q3": 8.9389958392e+16
     },
     "eps": {
-      "2024-Q1": 33771600.0,
-      "2024-Q2": 44526900.0,
-      "2024-Q3": 27459900.0
+      "2024-Q1": 33.77,
+      "2024-Q2": 44.53,
+      "2024-Q3": 27.46
     },
     "net_income": {
       "2024-Q1": 2.0571300228e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 4000.0,
-      "2022": 102625500.0,
-      "2023": 129656200.0,
-      "2025": 90870000.0
+      "2021": 0.0,
+      "2022": 102.63,
+      "2023": 129.66,
+      "2025": 90.87
     },
     "revenue_per_share": {
       "2021": 20851903000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 347204091904,
-    "enterprise_value": -157280649216,
-    "shares_outstanding": 609130000,
-    "free_float_pct": 19.459000049250573
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
+    "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.3727,
-    "vol_trend": 0.114,
-    "price_chg_20d": -5.79
+    "cmf": 0.4494,
+    "vol_trend": 0.096,
+    "price_chg_20d": -1.6
   },
   "neraca": {
     "aset": 927325506669.0,

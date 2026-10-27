@@ -1,33 +1,33 @@
 {
   "kode": "ROTI",
-  "nama": "PT Nippon Indosari Corpindo Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 510.0,
-  "update": "2026-10-21 12:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:15",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 323.51057574680283,
-    "pb": 1.4031461992043173,
-    "ps": 0.8230406778755974,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0010843124648747932,
-    "eps": 1.5764554182585797,
+    "eps": null,
     "de": 0.7774410477872992,
     "margin_net": 0.002544092031537647,
     "current_ratio": 1.350545781352011,
     "roa": 0.0006100353349477763,
-    "bv": 363.4688960346441
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2026-Q1": 8.70965608371e+17
     },
     "eps": {
-      "2026-Q1": 390000.0
+      "2026-Q1": 0.39
     },
     "net_income": {
       "2026-Q1": 2215816664000000.0
@@ -36,31 +36,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 46110000.0,
-      "2022": 74980000.0,
-      "2023": 58440000.0,
-      "2025": 45810000.0
+      "2021": 46.11,
+      "2022": 74.98,
+      "2023": 58.44,
+      "2025": 45.81
     },
     "revenue_per_share": {
-      "2021": 3.287623237457e+18,
-      "2022": 3.935182048668e+18,
-      "2023": 1.312217777527e+18,
-      "2025": 3.757615147215e+18
+      "2021": 3287623237457.0,
+      "2022": 3935182048668.0,
+      "2023": 1312217777527.0,
+      "2025": 3757615147215.0
     }
   },
   "statistik": {
-    "market_cap": 2867360432128,
-    "enterprise_value": 3693724303360,
-    "shares_outstanding": 5622275488,
-    "free_float_pct": 8.361999994547404
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.6042,
-    "vol_trend": 1.432,
-    "price_chg_20d": -12.07
+    "cmf": -0.4794,
+    "vol_trend": 1.175,
+    "price_chg_20d": -9.65
   },
   "neraca": {
     "aset": 3632275930688.0,

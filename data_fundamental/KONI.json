@@ -1,23 +1,23 @@
 {
   "kode": "KONI",
-  "nama": "PT Perdana Bangun Pusaka Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Specialty Retail",
-  "harga": 1355.0,
-  "update": "2026-10-21 12:26",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:43",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 2.7865983597505434e-05,
-    "pb": 2.3182936469164783,
-    "ps": 1.387854223023242e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03529659575236532,
-    "eps": 48625593.82692308,
+    "eps": null,
     "de": 0.08479949391277235,
     "margin_net": 0.04114954020155657,
     "current_ratio": 47.616370872095054,
     "roa": 0.03253738511957519,
-    "bv": 584.4816086185897
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 9.0048711786e+16
     },
     "eps": {
-      "2024-Q1": 5990000.0,
-      "2024-Q2": 11970000.0,
-      "2024-Q3": 22700000.0,
-      "2026-Q1": 8100000.0,
-      "2026-Q2": 17440000.0
+      "2024-Q1": 5.99,
+      "2024-Q2": 11.97,
+      "2024-Q3": 22.7,
+      "2026-Q1": 8.1,
+      "2026-Q2": 17.44
     },
     "net_income": {
       "2024-Q1": 1510566357000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 31000000.0,
-      "2022": 37000000.0,
-      "2023": 63000000.0,
-      "2025": 59000000.0
+      "2021": 31.0,
+      "2022": 37.0,
+      "2023": 63.0,
+      "2025": 59.0
     },
     "revenue_per_share": {
       "2021": 1.25324455512e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 422759989248,
-    "enterprise_value": 371559432192,
-    "shares_outstanding": 312000000,
-    "free_float_pct": 21.387
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1888,
-    "vol_trend": 0.257,
-    "price_chg_20d": -32.02
+    "cmf": -0.6255,
+    "vol_trend": 1.732,
+    "price_chg_20d": -12.08
   },
   "neraca": {
     "aset": 197822468780.0,

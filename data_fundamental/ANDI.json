@@ -1,23 +1,23 @@
 {
   "kode": "ANDI",
-  "nama": "PT Andira Agro, Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Farm Products",
-  "harga": 19.0,
-  "update": "2026-10-21 13:58",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:04",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.6950088530551881,
-    "ps": 1.4404340042999044e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.13187114300632918,
-    "eps": -4958069.331122994,
+    "eps": null,
     "de": 1.546400368104774,
     "margin_net": -0.3100984833535883,
     "current_ratio": 0.4567344863658355,
     "roa": -0.051787277703104394,
-    "bv": 11.209380980962568
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.9828989989e+16
     },
     "eps": {
-      "2024-Q1": -3350000.0,
-      "2024-Q2": -4430000.0,
-      "2024-Q3": -9524000.0,
-      "2026-Q1": 770000.0,
-      "2026-Q2": -2250000.0
+      "2024-Q1": -3.35,
+      "2024-Q2": -4.43,
+      "2024-Q3": -9.52,
+      "2026-Q1": 0.77,
+      "2026-Q2": -2.25
     },
     "net_income": {
       "2024-Q1": -7802035063000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -1150000.0,
-      "2023": -5980000.0,
-      "2025": -4380000.0
+      "2022": -1.15,
+      "2023": -5.98,
+      "2025": -4.38
     },
     "revenue_per_share": {
       "2022": 3.17855645702e+17,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 177649991680,
-    "enterprise_value": 325408030720,
-    "shares_outstanding": 9350000000,
-    "free_float_pct": 41.010000000000005
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1866,
-    "vol_trend": 4.707,
-    "price_chg_20d": 0.0
+    "cmf": 0.351,
+    "vol_trend": 3.848,
+    "price_chg_20d": 20.69
   },
   "neraca": {
     "aset": 266882396855.0,

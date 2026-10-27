@@ -1,26 +1,26 @@
 {
   "kode": "WINS",
-  "nama": "PT Wintermar Offshore Marine Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 550.0,
-  "update": "2026-10-21 13:21",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:40",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.1272615093877339,
-    "pb": 0.013885401112455236,
-    "ps": 0.024846469100382844,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.027277299277800295,
-    "eps": 4321.809497986449,
+    "eps": null,
     "de": 0.28551798849082843,
     "margin_net": 0.19523946572629344,
     "current_ratio": 5.245924037785936,
     "roa": 0.01697053323260436,
-    "bv": 39609.94684601864
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 24735711000000.0
     },
     "eps": {
-      "2024-Q3": 1510.0,
-      "2026-Q1": 1090.0
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q3": 6305868000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 40.0,
-      "2022": 250.0,
-      "2023": 1530.0,
-      "2025": 4520.0
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 42253131000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2458380402688,
-    "enterprise_value": 2391424106496,
-    "shares_outstanding": 4469782393,
-    "free_float_pct": 37.06000000344984
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.7,
+    "score": 4.2,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0555,
-    "vol_trend": 0.551,
-    "price_chg_20d": -7.76
+    "cmf": -0.0509,
+    "vol_trend": 0.556,
+    "price_chg_20d": -1.8
   },
   "neraca": {
     "aset": 284574853.0,

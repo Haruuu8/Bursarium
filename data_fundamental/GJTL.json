@@ -1,23 +1,23 @@
 {
   "kode": "GJTL",
-  "nama": "PT. Gajah Tunggal Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Auto Parts",
-  "harga": 1170.0,
-  "update": "2026-10-21 12:02",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:20",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 2.819238738097049,
-    "pb": 0.3703542781114225,
-    "ps": 0.2268763180162204,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.07234497314333738,
-    "eps": 415.0056482232276,
+    "eps": null,
     "de": 1.1431348788863398,
     "margin_net": 0.08849186303559987,
     "current_ratio": 1.466155531051788,
     "roa": 0.03375661226741397,
-    "bv": 3159.1372616681397
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 4801461000000.0
     },
     "eps": {
-      "2024-Q1": 97200000.0,
-      "2024-Q2": 68400000.0,
-      "2024-Q3": 118100000.0,
-      "2026-Q1": 109300000.0,
-      "2026-Q2": 119700000.0
+      "2024-Q1": 97.2,
+      "2024-Q2": 68.4,
+      "2024-Q3": 118.1,
+      "2026-Q1": 109.3,
+      "2026-Q2": 119.7
     },
     "net_income": {
       "2024-Q1": 338848000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 24790000.0,
-      "2022": -52000000.0,
-      "2023": 339000000.0,
-      "2025": 357000000.0
+      "2021": 24.79,
+      "2022": -52.0,
+      "2023": 339.0,
+      "2025": 357.0
     },
     "revenue_per_share": {
       "2021": 15344138000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 4076816564224,
-    "enterprise_value": 8571905900544,
-    "shares_outstanding": 3484458600,
-    "free_float_pct": 33.44099998777428
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.7,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0156,
-    "vol_trend": 0.622,
-    "price_chg_20d": -10.77
+    "score": 6.6,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1036,
+    "vol_trend": 0.959,
+    "price_chg_20d": -4.82
   },
   "neraca": {
     "aset": 23591378.0,

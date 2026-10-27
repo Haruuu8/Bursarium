@@ -1,23 +1,23 @@
 {
   "kode": "IKAI",
-  "nama": "PT Intikeramik Alamasri Industri Tbk",
-  "sektor": "Industrials",
-  "industri": "Building Products & Equipment",
-  "harga": 19.0,
-  "update": "2026-10-21 12:09",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:27",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4101477610149725,
-    "ps": 8.550849259201745e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.001914872390172574,
-    "eps": -88841.61947871701,
+    "eps": null,
     "de": 0.7716924628854877,
     "margin_net": -0.0401205608197273,
     "current_ratio": 0.4662571930314959,
     "roa": -0.0010882134331919864,
-    "bv": 46.32476830540689
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2.9418943302e+16
     },
     "eps": {
-      "2024-Q1": 100000.0,
-      "2024-Q2": 240000.0,
-      "2024-Q3": -480000.0,
-      "2026-Q1": -90000.0
+      "2024-Q1": 0.1,
+      "2024-Q2": 0.24,
+      "2024-Q3": -0.48,
+      "2026-Q1": -0.09
     },
     "net_income": {
       "2024-Q1": 1281837000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -4210000.0,
-      "2022": -2810000.0,
-      "2023": 680000.0,
-      "2025": -4850000.0
+      "2021": -4.21,
+      "2022": -2.81,
+      "2023": 0.68,
+      "2025": -4.85
     },
     "revenue_per_share": {
       "2021": 186298319000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 252810199040,
-    "enterprise_value": 519109017600,
-    "shares_outstanding": 13305799387,
-    "free_float_pct": 80.60800000095477
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.1,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0608,
-    "vol_trend": 6.452,
-    "price_chg_20d": 0.0
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1717,
+    "vol_trend": 3.591,
+    "price_chg_20d": -16.67
   },
   "neraca": {
     "aset": 1084625927230.0,

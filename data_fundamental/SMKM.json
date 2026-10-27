@@ -3,24 +3,24 @@
   "nama": "PT Sumber Mas Konstruksi Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 79.0,
-  "update": "2026-10-21 10:34",
-  "periode_terbaru": "2025-audit",
+  "harga": 81.0,
+  "update": "2026-10-26 22:33",
+  "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.47896229882869745,
-    "ps": 1.4242030378782025,
-    "roe": -5.3411561534950206e-05,
-    "eps": -8809.698324022347,
-    "de": 0.02224182962820719,
-    "margin_net": -0.00015882024197295106,
-    "current_ratio": 50.918106931964275,
-    "roa": -5.2249438427281114e-05,
-    "bv": 164.93991321069433
+    "pb": 0.5045584832384716,
+    "ps": 0.9354193548387096,
+    "roe": -0.027430030062630763,
+    "eps": -8.807036285714286,
+    "de": 0.10807009524945707,
+    "margin_net": -0.10170706420276497,
+    "current_ratio": 9.959462951373904,
+    "roa": -0.024754778763752764,
+    "bv": 160.5363950678372
   },
   "quarterly": {
     "revenue": {},
@@ -30,19 +30,21 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 7690000.0,
-      "2023": 7740000.0,
-      "2025": -10000.0
+      "2022": 7.69,
+      "2023": 7.74,
+      "2024": 2.01,
+      "2025": -0.01
     },
     "revenue_per_share": {
       "2022": 1.43045583951e+17,
       "2023": 1.30026556493e+17,
+      "2024": 8.5299498625e+16,
       "2025": 6.9503432704e+16
     }
   },
   "statistik": {
-    "market_cap": 98986991616,
-    "enterprise_value": 73219309568,
+    "market_cap": 101492998144,
+    "enterprise_value": 75725307904,
     "shares_outstanding": 1253000000,
     "free_float_pct": 69.987
   },
@@ -50,45 +52,45 @@
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.3727,
-    "vol_trend": 1.422,
-    "price_chg_20d": -12.09
+    "cmf": 0.3408,
+    "vol_trend": 1.57,
+    "price_chg_20d": -7.95
   },
   "neraca": {
-    "aset": 211266423760.0,
-    "aset_lancar": 194987610046.0,
-    "kas": 11094166937.0,
-    "piutang_usaha": 74948779151.0,
+    "aset": 222890629953.0,
+    "aset_lancar": 208862387419.0,
+    "kas": 27020688532.0,
+    "piutang_usaha": 95276937899.0,
     "persediaan": null,
-    "aset_tetap": 15849274989.0,
-    "liabilitas": 4596712507.0,
-    "liabilitas_jangka_pendek": 3829435574.0,
+    "aset_tetap": 13724358556.0,
+    "liabilitas": 21738526933.0,
+    "liabilitas_jangka_pendek": 20971250000.0,
     "liabilitas_jangka_panjang": 767276933.0,
-    "utang_usaha": 74948779151.0,
+    "utang_usaha": 95276937899.0,
     "utang_bank": null,
-    "ekuitas": 206669711253.0,
-    "ekuitas_induk": 206669711253.0,
+    "ekuitas": 201152103020.0,
+    "ekuitas_induk": 201152103020.0,
     "modal_saham": null,
     "saldo_laba": 400000000.0
   },
   "laba_rugi": {
-    "pendapatan": 69503432704.0,
-    "beban_pokok": 59790883603.0,
+    "pendapatan": 54250000000.0,
+    "beban_pokok": 48470463000.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -11038552.0,
+    "laba_sebelum_pajak": -5517608233.0,
     "beban_pajak": null,
-    "laba_bersih": -11038552.0,
-    "laba_induk": -11038552.0,
-    "eps_basic": -0.01,
-    "eps_diluted": -0.01
+    "laba_bersih": -5517608233.0,
+    "laba_induk": -5517608233.0,
+    "eps_basic": 4.4,
+    "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 11495211037.0,
-    "dividen_dibayar": 626500000.0
+    "capex": 88550000.0,
+    "dividen_dibayar": null
   }
 }

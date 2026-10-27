@@ -1,26 +1,26 @@
 {
   "kode": "TIRA",
-  "nama": "PT Tira Austenite Tbk",
-  "sektor": "Industrials",
-  "industri": "Industrial Distribution",
-  "harga": 274.0,
-  "update": "2026-10-21 13:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:32",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 24.863645500727817,
-    "pb": 0.929751068028006,
-    "ps": 0.5975632842037123,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.009348499076702066,
-    "eps": 11.020105639455782,
+    "eps": null,
     "de": 1.3697338669308212,
     "margin_net": 0.02403361502987244,
     "current_ratio": 1.1532411113684276,
     "roa": 0.003944957367221091,
-    "bv": 294.702538585034
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q1": 6.7403739595e+16
     },
     "eps": {
-      "2024-Q1": 110000.0,
-      "2024-Q2": 1580000.0,
-      "2026-Q1": 2700000.0
+      "2024-Q1": 0.11,
+      "2024-Q2": 1.58,
+      "2026-Q1": 2.7
     },
     "net_income": {
       "2024-Q1": 62137773000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -5770000.0,
-      "2022": 3780000.0,
-      "2023": 2140000.0,
-      "2025": 7730000.0
+      "2021": -5.77,
+      "2022": 3.78,
+      "2023": 2.14,
+      "2025": 7.73
     },
     "revenue_per_share": {
       "2021": 2.39463882155e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 161111998464,
-    "enterprise_value": 290290991104,
-    "shares_outstanding": 588000000,
-    "free_float_pct": 12.283
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2097,
-    "vol_trend": 1.251,
-    "price_chg_20d": -27.75
+    "cmf": -0.1997,
+    "vol_trend": 1.212,
+    "price_chg_20d": -23.53
   },
   "neraca": {
     "aset": 410639552777.0,

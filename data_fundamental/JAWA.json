@@ -1,23 +1,23 @@
 {
   "kode": "JAWA",
-  "nama": "PT Jaya Agra Wattie Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Farm Products",
-  "harga": 105.0,
-  "update": "2026-10-21 12:17",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:36",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.2481937725231775,
-    "ps": 1.3795464355059803e-06,
+    "pb": null,
+    "ps": null,
     "roe": 0.008541088760650269,
-    "eps": -8285371.037017088,
+    "eps": null,
     "de": 1.9705911391938835,
     "margin_net": 0.014602084306399617,
     "current_ratio": 0.8757244671147623,
     "roa": 0.0028697558475055717,
-    "bv": 84.12155412997005
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 4.4416405235599994e+17
     },
     "eps": {
-      "2024-Q1": -2210000.0,
-      "2024-Q2": -5290000.0,
-      "2024-Q3": -3720000.0,
-      "2026-Q1": -1430000.0,
-      "2026-Q2": 2150000.0
+      "2024-Q1": -2.21,
+      "2024-Q2": -5.29,
+      "2024-Q3": -3.72,
+      "2026-Q1": -1.43,
+      "2026-Q2": 2.15
     },
     "net_income": {
       "2024-Q1": -3.5904824163e+16,
@@ -45,29 +45,29 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -47020000.0,
-      "2022": -79530000.0,
-      "2025": -1840000.0
+      "2021": -47.02,
+      "2022": -79.53,
+      "2025": -1.84
     },
     "revenue_per_share": {
       "2021": 8.43195153685e+17,
       "2022": 9.71541518082e+17,
-      "2025": 1.741937139009e+18
+      "2025": 1741937139009.0
     }
   },
   "statistik": {
-    "market_cap": 1704459894784,
-    "enterprise_value": 4145024598016,
-    "shares_outstanding": 16232951842,
-    "free_float_pct": 7.501000002042635
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5962,
-    "vol_trend": 1.291,
-    "price_chg_20d": -37.85
+    "cmf": -0.3597,
+    "vol_trend": 0.28,
+    "price_chg_20d": -32.54
   },
   "neraca": {
     "aset": 4064181302440.0,

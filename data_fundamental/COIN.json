@@ -3,19 +3,16 @@
   "nama": "PT Indokripto Koin Semesta Tbk",
   "sektor": "Financial Services",
   "industri": "Financial Data & Stock Exchanges",
-  "harga": 420.0,
-  "update": "2026-10-21 11:10",
+  "harga": 384.0,
+  "update": "2026-10-26 23:22",
   "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.0871079159820125,
-    "ps": 41.37460400866524,
+    "pb": 3.7367843803264114,
+    "ps": 2.293283704389509e-05,
     "roe": -0.025950317444250474,
-    "eps": -5.333420869053053,
+    "eps": -1065666.9932978656,
     "de": 0.013993899707278927,
     "margin_net": -0.5254004201633841,
     "current_ratio": 20.857662472361618,
@@ -24,14 +21,20 @@
   },
   "quarterly": {
     "revenue": {
+      "2025-Q3": 9.1484280769e+16,
+      "2025-Q4": 8.0118236386e+16,
       "2026-Q1": 4.1489414545e+16,
       "2026-Q2": 3.315142802e+16
     },
     "eps": {
-      "2026-Q1": -1380000.0,
-      "2026-Q2": -1290000.0
+      "2025-Q3": 1.06,
+      "2025-Q4": 0.5,
+      "2026-Q1": -1.38,
+      "2026-Q2": -1.29
     },
     "net_income": {
+      "2025-Q3": 1.5570803899e+16,
+      "2025-Q4": 7973952665000000.0,
       "2026-Q1": -1.9574186013e+16,
       "2026-Q2": -1.9642144032e+16
     },
@@ -39,25 +42,25 @@
   },
   "riwayat": {
     "eps": {
-      "2025": 3600000.0
+      "2025": 3.6
     },
     "revenue_per_share": {
       "2025": 2.84751460249e+17
     }
   },
   "statistik": {
-    "market_cap": 6176470728704,
-    "enterprise_value": 6330271137792,
+    "market_cap": 5647058862080,
+    "enterprise_value": 5359682977792,
     "shares_outstanding": 14705882400,
     "free_float_pct": 15.1409999987488
   },
   "akumulasi": {
-    "score": 6.2,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.1121,
-    "vol_trend": 0.439,
-    "price_chg_20d": -46.43
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2402,
+    "vol_trend": 0.414,
+    "price_chg_20d": -48.8
   },
   "neraca": {
     "aset": 1530727893240.0,

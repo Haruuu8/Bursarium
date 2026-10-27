@@ -1,26 +1,26 @@
 {
   "kode": "GHON",
-  "nama": "PT Gihon Telekomunikasi Indonesia Tbk",
-  "sektor": "Communication Services",
-  "industri": "Telecom Services",
-  "harga": 1575.0,
-  "update": "2026-10-21 13:43",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:58",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.013620340841069608,
-    "pb": 0.0012393664912473891,
-    "ps": 0.004175056220234681,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.04549689709343799,
-    "eps": 115635.87272727273,
+    "eps": null,
     "de": 1.1061069274875401,
     "margin_net": 0.30653096489667675,
     "current_ratio": 0.16628624475273437,
     "roa": 0.021357063445468033,
-    "bv": 1270810.54
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 52518893000000.0
     },
     "eps": {
-      "2024-Q1": 30000.0,
-      "2026-Q1": 30000.0,
-      "2026-Q2": 58210000.0
+      "2024-Q1": 0.03,
+      "2026-Q1": 0.03,
+      "2026-Q2": 58.21
     },
     "net_income": {
       "2024-Q1": 16110654000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 160000.0,
-      "2022": 160000.0,
-      "2023": 180000.0,
-      "2025": 140000.0
+      "2021": 0.16,
+      "2022": 0.16,
+      "2023": 0.18,
+      "2025": 0.14
     },
     "revenue_per_share": {
       "2021": 164920511000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 866249998336,
-    "enterprise_value": 1553845059584,
-    "shares_outstanding": 550000000,
-    "free_float_pct": 13.267999999999999
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.4,
+    "score": 5.6,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0901,
-    "vol_trend": 0.614,
-    "price_chg_20d": -4.53
+    "cmf": 0.0368,
+    "vol_trend": 0.625,
+    "price_chg_20d": -2.77
   },
   "neraca": {
     "aset": 1488962426.0,

@@ -1,23 +1,23 @@
 {
   "kode": "POLU",
-  "nama": "PT Golden Flower Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Apparel Manufacturing",
-  "harga": 12000.0,
-  "update": "2026-10-21 14:13",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:16",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 76.53813922874595,
-    "ps": 6.047681979161596e-05,
+    "pb": null,
+    "ps": null,
     "roe": -0.0022703956497791664,
-    "eps": -708998.976,
+    "eps": null,
     "de": 1.0587760431496904,
     "margin_net": -0.005884752165119869,
     "current_ratio": 1.2853365478359808,
     "roa": -0.0011027890368812152,
-    "bv": 156.78457983066667
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 4.5366782408e+16
     },
     "eps": {
-      "2024-Q1": 5000000.0,
-      "2024-Q2": 3000000.0,
-      "2024-Q3": -8350000.0,
-      "2026-Q1": -360000.0
+      "2024-Q1": 5.0,
+      "2024-Q2": 3.0,
+      "2024-Q3": -8.35,
+      "2026-Q1": -0.36
     },
     "net_income": {
       "2024-Q1": 3924425903000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 69000000.0,
-      "2022": 8000000.0,
-      "2023": -20000000.0,
-      "2025": -9250000.0
+      "2021": 69.0,
+      "2022": 8.0,
+      "2023": -20.0,
+      "2025": -9.25
     },
     "revenue_per_share": {
       "2021": 1.0478248186e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 9000000159744,
-    "enterprise_value": 9034810785792,
-    "shares_outstanding": 750000000,
-    "free_float_pct": 11.453000000000001
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3476,
-    "vol_trend": 0.387,
-    "price_chg_20d": -24.1
+    "cmf": -0.5063,
+    "vol_trend": 0.448,
+    "price_chg_20d": -31.46
   },
   "neraca": {
     "aset": 242088252668.0,

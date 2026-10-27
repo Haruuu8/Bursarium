@@ -3,17 +3,17 @@
   "nama": "PT Logisticsplus International Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 56.0,
-  "update": "2026-10-21 11:02",
+  "harga": 52.0,
+  "update": "2026-10-26 23:08",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 5.05593635928402e-05,
-    "pb": 0.9841350860180957,
-    "ps": 0.5341647347426338,
+    "pe": 4.69479804790659e-05,
+    "pb": 0.9138397227310888,
+    "ps": 0.49601011083244567,
     "roe": 0.009732471060587685,
     "eps": 1107608.878366702,
     "de": 0.8264009893975572,
@@ -30,27 +30,29 @@
   },
   "riwayat": {
     "eps": {
-      "2023": 2180000.0,
-      "2025": 3170000.0
+      "2023": 2.18,
+      "2024": 2.43,
+      "2025": 3.17
     },
     "revenue_per_share": {
       "2023": 8.2557863238e+16,
+      "2024": 8.6386331661e+16,
       "2025": 1.3006845909e+17
     }
   },
   "statistik": {
-    "market_cap": 61600628736,
-    "enterprise_value": 98864930816,
+    "market_cap": 57200586752,
+    "enterprise_value": 95564898304,
     "shares_outstanding": 1100011289,
     "free_float_pct": 44.04200000896537
   },
   "akumulasi": {
-    "score": 2.9,
+    "score": 1.6,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1075,
-    "vol_trend": 1.065,
-    "price_chg_20d": -9.52
+    "cmf": -0.1262,
+    "vol_trend": 1.221,
+    "price_chg_20d": -14.75
   },
   "neraca": {
     "aset": 114321150792.0,

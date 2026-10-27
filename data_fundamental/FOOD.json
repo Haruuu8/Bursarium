@@ -1,23 +1,23 @@
 {
   "kode": "FOOD",
-  "nama": "PT Sentra Food Indonesia Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 176.0,
-  "update": "2026-10-21 14:08",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:11",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.340841718073262e-06,
+    "ps": null,
     "roe": 0.30497233678649405,
-    "eps": -25167062.827692308,
+    "eps": null,
     "de": -3.0584450132461534,
     "margin_net": -0.16116476618129233,
     "current_ratio": 0.2403564105167421,
     "roa": -0.18282871562369482,
-    "bv": -38.59740828461538
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 2.343765486e+16
     },
     "eps": {
-      "2024-Q1": 5080000.0,
-      "2024-Q2": -18290000.0,
-      "2024-Q3": -5270000.0,
-      "2026-Q1": 7770000.0,
-      "2026-Q2": -19540000.0
+      "2024-Q1": 5.08,
+      "2024-Q2": -18.29,
+      "2024-Q3": -5.27,
+      "2026-Q1": 7.77,
+      "2026-Q2": -19.54
     },
     "net_income": {
       "2024-Q1": -3302906677000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -19620000.0,
-      "2022": -29240000.0,
-      "2023": -21810000.0,
-      "2025": -22810000.0
+      "2021": -19.62,
+      "2022": -29.24,
+      "2023": -21.81,
+      "2025": -22.81
     },
     "revenue_per_share": {
       "2021": 9.1560431563e+16,
@@ -58,10 +58,10 @@
     }
   },
   "statistik": {
-    "market_cap": 114400002048,
-    "enterprise_value": 121417244672,
-    "shares_outstanding": 650000000,
-    "free_float_pct": 23.077
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

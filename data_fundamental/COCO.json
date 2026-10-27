@@ -1,10 +1,10 @@
 {
   "kode": "COCO",
-  "nama": "PT Wahana Interfood Nusantara Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Confectioners",
-  "harga": 99.0,
-  "update": "2026-10-21 14:10",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:13",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 17.144045801451664,
-    "ps": 8.614837955482152,
+    "pb": null,
+    "ps": null,
     "roe": -0.3677653646401808,
-    "eps": -4.2473954539126355,
+    "eps": null,
     "de": 4.759270217251286,
     "margin_net": -0.3696022582657466,
     "current_ratio": 1.6298654908922914,
     "roa": -0.06385624406692682,
-    "bv": 5.774599598399185
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 3.8366976537e+16
     },
     "eps": {
-      "2024-Q3": -8410000.0,
-      "2026-Q1": -40000.0,
-      "2026-Q2": -8450000.0
+      "2024-Q3": -8.41,
+      "2026-Q1": -0.04,
+      "2026-Q2": -8.45
     },
     "net_income": {
       "2024-Q3": -7485393934000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 7430000.0,
-      "2023": -56680000.0,
-      "2025": -70000000.0
+      "2022": 7.43,
+      "2023": -56.68,
+      "2025": -70.0
     },
     "revenue_per_share": {
       "2022": 2.89795165323e+17,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1409544617984,
-    "enterprise_value": 686710587392,
-    "shares_outstanding": 14237823696,
-    "free_float_pct": 11.813499997703582
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
+    "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1602,
-    "vol_trend": 0.342,
-    "price_chg_20d": -12.71
+    "cmf": 0.1756,
+    "vol_trend": 0.314,
+    "price_chg_20d": -3.92
   },
   "neraca": {
     "aset": 473514129461.0,

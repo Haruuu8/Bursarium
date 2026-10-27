@@ -1,10 +1,10 @@
 {
   "kode": "LION",
-  "nama": "PT Lion Metal Works Tbk",
-  "sektor": "Industrials",
-  "industri": "Business Equipment & Supplies",
-  "harga": 254.0,
-  "update": "2026-10-21 12:29",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:47",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.29609849170918257,
-    "ps": 0.5334524344445861,
+    "pb": null,
+    "ps": null,
     "roe": -0.058063576756093235,
-    "eps": -99.61650537911412,
+    "eps": null,
     "de": 0.31352973329706657,
     "margin_net": -0.20921522561161668,
     "current_ratio": 5.330015080871276,
     "roa": -0.04420423480658403,
-    "bv": 857.8226742521532
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2024-Q3": 7.5249528994e+16
     },
     "eps": {
-      "2024-Q1": 9000000.0,
-      "2024-Q2": -12000000.0,
-      "2024-Q3": 7000000.0
+      "2024-Q1": 9.0,
+      "2024-Q2": -12.0,
+      "2024-Q3": 7.0
     },
     "net_income": {
       "2024-Q1": 4593274580000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -8000000.0,
-      "2022": 4000000.0,
-      "2023": 13000000.0,
-      "2025": 50000000.0
+      "2021": -8.0,
+      "2022": 4.0,
+      "2023": 13.0,
+      "2025": 50.0
     },
     "revenue_per_share": {
       "2021": 3.00280285514e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 132120641536,
-    "enterprise_value": 2927250688,
-    "shares_outstanding": 520160000,
-    "free_float_pct": 42.04600007689942
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.606,
-    "vol_trend": 1.485,
-    "price_chg_20d": -35.14
+    "cmf": -0.5875,
+    "vol_trend": 1.508,
+    "price_chg_20d": -19.77
   },
   "neraca": {
     "aset": 586103590128.0,

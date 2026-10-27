@@ -1,23 +1,23 @@
 {
   "kode": "POLI",
-  "nama": "PT Pollux Hotels Group Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 640.0,
-  "update": "2026-10-21 14:09",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:12",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.11029875282662e-05,
-    "pb": 0.6118717754543764,
-    "ps": 3.3018038686665386e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.009419041123963887,
-    "eps": 15570644.337224321,
+    "eps": null,
     "de": 0.989276353689056,
     "margin_net": 0.17493774923107985,
     "current_ratio": 1.7288546505083289,
     "roa": 0.004711102603137328,
-    "bv": 1045.970782889496
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.1322764959e+17
     },
     "eps": {
-      "2024-Q1": 5220000.0,
-      "2024-Q2": 4780000.0,
-      "2024-Q3": -4870000.0,
-      "2026-Q1": 9700000.0
+      "2024-Q1": 5.22,
+      "2024-Q2": 4.78,
+      "2024-Q3": -4.87,
+      "2026-Q1": 9.7
     },
     "net_income": {
       "2024-Q1": 8571032798000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 17830000.0,
-      "2022": 77120000.0,
-      "2023": 45950000.0,
-      "2025": 33120000.0
+      "2021": 17.83,
+      "2022": 77.12,
+      "2023": 45.95,
+      "2025": 33.12
     },
     "revenue_per_share": {
       "2021": 2.03197973528e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1286736969728,
-    "enterprise_value": 2753902149632,
-    "shares_outstanding": 2010526400,
-    "free_float_pct": 20.0
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1778,
-    "vol_trend": 0.355,
-    "price_chg_20d": -30.61
+    "cmf": 0.2111,
+    "vol_trend": 0.572,
+    "price_chg_20d": -11.43
   },
   "neraca": {
     "aset": 4204491355550.0,

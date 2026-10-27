@@ -1,23 +1,23 @@
 {
   "kode": "GWSA",
-  "nama": "PT Greenwood Sejahtera Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 124.0,
-  "update": "2026-10-21 12:04",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:23",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 6.899467777305853e-06,
-    "pb": 0.1326641088159578,
-    "ps": 1.4116927894875764e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.00995527486062675,
-    "eps": 17972400.770950522,
+    "eps": null,
     "de": 0.04689356352581448,
     "margin_net": 2.172418492993906,
     "current_ratio": 33.318387835310105,
     "roa": 0.0094320542710139,
-    "bv": 934.6913879474564
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 2.1184225563e+16
     },
     "eps": {
-      "2024-Q1": 3745059.85,
-      "2024-Q2": 4984940.15,
-      "2024-Q3": 3680000.0,
-      "2026-Q1": 4410000.0,
-      "2026-Q2": 4900000.0
+      "2024-Q1": 3.75,
+      "2024-Q2": 4.98,
+      "2024-Q3": 3.68,
+      "2026-Q1": 4.41,
+      "2026-Q2": 4.9
     },
     "net_income": {
       "2024-Q1": 2.9214313037e+16,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2780928.18,
-      "2022": 3986371.11,
-      "2023": 7851062.51,
-      "2025": 15530000.0
+      "2021": 2.78,
+      "2022": 3.99,
+      "2023": 7.85,
+      "2025": 15.53
     },
     "revenue_per_share": {
       "2021": 4.7833682344e+16,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 967294189568,
-    "enterprise_value": 1116866478080,
-    "shares_outstanding": 7800760000,
-    "free_float_pct": 20.498000002563852
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.0,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0306,
-    "vol_trend": 2.12,
-    "price_chg_20d": -21.82
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1395,
+    "vol_trend": 0.28,
+    "price_chg_20d": -9.8
   },
   "neraca": {
     "aset": 7695770749122.0,

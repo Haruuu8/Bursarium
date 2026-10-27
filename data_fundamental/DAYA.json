@@ -1,26 +1,26 @@
 {
   "kode": "DAYA",
-  "nama": "PT Duta Intidaya Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Specialty Retail",
-  "harga": 1225.0,
-  "update": "2026-10-21 13:23",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:44",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.02721493459671855,
-    "pb": 0.015520052545658683,
-    "ps": 897.8651217500816,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.2851385236753429,
-    "eps": 45012.0501170598,
+    "eps": null,
     "de": 5.448001092130289,
     "margin_net": 0.032991632537611976,
     "current_ratio": 0.8559322366526612,
     "roa": 0.04422122398171385,
-    "bv": 78930.14513940294
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 849758361000000.0
     },
     "eps": {
-      "2024-Q3": 3660000.0,
-      "2026-Q1": 10070000.0,
-      "2026-Q2": 12440000.0
+      "2024-Q3": 3.66,
+      "2026-Q1": 10.07,
+      "2026-Q2": 12.44
     },
     "net_income": {
       "2024-Q3": 8855126000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -16530000.0,
-      "2023": -6690000.0,
-      "2025": 30470000.0
+      "2022": -16.53,
+      "2023": -6.69,
+      "2025": 30.47
     },
     "revenue_per_share": {
       "2022": 1161587724000000.0,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2965170290688,
-    "enterprise_value": 3233195229184,
-    "shares_outstanding": 2420547025,
-    "free_float_pct": 7.664000000165252
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 4.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.2038,
-    "vol_trend": 3.271,
-    "price_chg_20d": 9.09
+    "cmf": -0.2044,
+    "vol_trend": 3.877,
+    "price_chg_20d": 10.96
   },
   "neraca": {
     "aset": 1231917326.0,

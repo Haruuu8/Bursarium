@@ -1,23 +1,23 @@
 {
   "kode": "BRIS",
-  "nama": "PT Bank Syariah Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 1030.0,
-  "update": "2026-10-21 13:27",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:45",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 6.288332564005134,
-    "pb": 0.9308887119954908,
-    "ps": -29.608311180272235,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0814196402508504,
-    "eps": 163.79540832426608,
+    "eps": null,
     "de": 1.9665903947367724,
     "margin_net": -5.625089167155084,
     "current_ratio": null,
     "roa": 0.008946477688814538,
-    "bv": 1106.4695346794465
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": -511043000000.0
     },
     "eps": {
-      "2024-Q1": 37010000.0,
-      "2024-Q2": 36580000.0,
-      "2024-Q3": 37130000.0,
-      "2026-Q1": 47690000.0,
-      "2026-Q2": 42400000.0
+      "2024-Q1": 37.01,
+      "2024-Q2": 36.58,
+      "2024-Q3": 37.13,
+      "2026-Q1": 47.69,
+      "2026-Q2": 42.4
     },
     "net_income": {
       "2024-Q1": 1707184000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 102540000.0,
-      "2023": 123650000.0,
-      "2025": 164050000.0
+      "2022": 102.54,
+      "2023": 123.65,
+      "2025": 164.05
     },
     "revenue_per_share": {
       "2022": -2041797000000.0,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 47513134432256,
-    "enterprise_value": 30906114899968,
-    "shares_outstanding": 46129260138,
-    "free_float_pct": 9.902999998989493
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4836,
-    "vol_trend": 2.479,
-    "price_chg_20d": -33.65
+    "cmf": -0.4881,
+    "vol_trend": 3.659,
+    "price_chg_20d": -30.13
   },
   "neraca": {
     "aset": 464507837.0,

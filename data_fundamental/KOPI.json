@@ -1,23 +1,23 @@
 {
   "kode": "KOPI",
-  "nama": "PT Mitra Energi Persada Tbk",
-  "sektor": "Energy",
-  "industri": "Oil & Gas Refining & Marketing",
-  "harga": 154.0,
-  "update": "2026-10-21 12:26",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:44",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.456901122853592,
-    "ps": 4.015517243636258e-07,
+    "pb": null,
+    "ps": null,
     "roe": 0.06459185662344769,
-    "eps": -2581952.6038207235,
+    "eps": null,
     "de": 2.6267447054215842,
     "margin_net": 0.034699211838574086,
     "current_ratio": 1.0869874778505393,
     "roa": 0.017748009049898532,
-    "bv": 105.7038103576751
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 6.858718676e+16
     },
     "eps": {
-      "2024-Q1": 2110000.0,
-      "2024-Q2": -5200000.0,
-      "2024-Q3": -8510000.0,
-      "2026-Q1": 820000.0,
-      "2026-Q2": 6010000.0
+      "2024-Q1": 2.11,
+      "2024-Q2": -5.2,
+      "2024-Q3": -8.51,
+      "2026-Q1": 0.82,
+      "2026-Q2": 6.01
     },
     "net_income": {
       "2024-Q1": -1529622364000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2600000.0,
-      "2022": 9850000.0,
-      "2023": 3410000.0,
-      "2025": 3840000.0
+      "2021": 2.6,
+      "2022": 9.85,
+      "2023": 3.41,
+      "2025": 3.84
     },
     "revenue_per_share": {
       "2021": 1.88475526582e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 107379073024,
-    "enterprise_value": 225470185472,
-    "shares_outstanding": 697266668,
-    "free_float_pct": 6.87499993904771
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4581,
-    "vol_trend": 0.206,
-    "price_chg_20d": -22.11
+    "cmf": -0.3818,
+    "vol_trend": 0.179,
+    "price_chg_20d": -18.78
   },
   "neraca": {
     "aset": 268236376746.0,

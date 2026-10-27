@@ -1,23 +1,23 @@
 {
   "kode": "JIHD",
-  "nama": "PT Jakarta International Hotels & Development Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 312.0,
-  "update": "2026-10-21 12:18",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:37",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.009957145238045256,
-    "pb": 206.37838716203424,
-    "ps": 0.00045682403618727213,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.004469349491315434,
-    "eps": 31334.28232098887,
+    "eps": null,
     "de": 0.7014579898736513,
     "margin_net": 0.019986375314201603,
     "current_ratio": 0.8594662150578184,
     "roa": 0.0022158084560663428,
-    "bv": 1.5117862111939022
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 400577345000000.0
     },
     "eps": {
-      "2024-Q1": 4885.06,
-      "2024-Q2": 13034.94,
-      "2024-Q3": 11540.0,
-      "2026-Q1": 1250.0,
-      "2026-Q2": 5510.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.01,
+      "2024-Q3": 0.01,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.01
     },
     "net_income": {
       "2024-Q1": 11377496000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -44760000.0,
-      "2022": 1660.0,
-      "2023": 22580.0,
-      "2025": -86750.0
+      "2021": -44.76,
+      "2022": 0.0,
+      "2023": 0.02,
+      "2025": -0.09
     },
     "revenue_per_share": {
       "2021": 902939268000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 726660612096,
-    "enterprise_value": 1914837270528,
-    "shares_outstanding": 2329040482,
-    "free_float_pct": 32.98500000052812
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4002,
-    "vol_trend": 0.904,
-    "price_chg_20d": -23.92
+    "cmf": -0.1858,
+    "vol_trend": 0.822,
+    "price_chg_20d": -17.5
   },
   "neraca": {
     "aset": 7101981201.0,

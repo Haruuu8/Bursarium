@@ -1,23 +1,23 @@
 {
   "kode": "TOWR",
-  "nama": "PT Sarana Menara Nusantara Tbk.",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 402.0,
-  "update": "2026-10-21 13:14",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:34",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 6.907090285041571,
-    "pb": 0.8376050557404229,
-    "ps": 1.7994142106517592,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03367231541351035,
-    "eps": 58.20106345947099,
+    "eps": null,
     "de": 1.8799908225536817,
     "margin_net": 0.2645662918213679,
     "current_ratio": 0.2695087951627511,
     "roa": 0.011616975868304544,
-    "bv": 479.93979650068087
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3555778000000.0
     },
     "eps": {
-      "2024-Q1": 16.0,
-      "2024-Q2": 31999984.0,
-      "2024-Q3": 18000000.0,
-      "2026-Q1": 16000000.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 32.0,
+      "2024-Q3": 18.0,
+      "2026-Q1": 16.0
     },
     "net_income": {
       "2024-Q1": 797389000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 69000000.0,
-      "2022": 69000000.0,
-      "2023": 65000000.0,
-      "2025": 69000000.0
+      "2021": 69.0,
+      "2022": 69.0,
+      "2023": 65.0,
+      "2025": 69.0
     },
     "revenue_per_share": {
       "2021": 8635346000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 23401055911936,
-    "enterprise_value": 67670703603712,
-    "shares_outstanding": 58211582377,
-    "free_float_pct": 23.34009719922718
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.6,
+    "score": 8.4,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1057,
-    "vol_trend": 1.155,
-    "price_chg_20d": -3.96
+    "cmf": 0.1286,
+    "vol_trend": 1.662,
+    "price_chg_20d": 5.76
   },
   "neraca": {
     "aset": 80979681.0,

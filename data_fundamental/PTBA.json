@@ -1,23 +1,23 @@
 {
   "kode": "PTBA",
-  "nama": "PT Bukit Asam (Persero) Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 3080.0,
-  "update": "2026-10-21 12:51",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:11",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 8.795397258622854,
-    "pb": 1.5069887242980322,
-    "ps": 0.8738117034208269,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.03407080448876222,
-    "eps": 350.18315937695957,
+    "eps": null,
     "de": 0.831068310434519,
     "margin_net": 0.08074687287317812,
     "current_ratio": 1.2678916791194372,
     "roa": 0.018547920164138986,
-    "bv": 2043.8109126759985
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 9929722000000.0
     },
     "eps": {
-      "2024-Q1": 69000000.0,
-      "2024-Q2": 108000000.0,
-      "2024-Q3": 104000000.0,
-      "2026-Q1": 70000000.0
+      "2024-Q1": 69.0,
+      "2024-Q2": 108.0,
+      "2024-Q3": 104.0,
+      "2026-Q1": 70.0
     },
     "net_income": {
       "2024-Q1": 790940000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 702000000.0,
-      "2022": 1094000000.0,
-      "2023": 532000000.0,
-      "2025": 254000000.0
+      "2021": 702.0,
+      "2022": 1094.0,
+      "2023": 532.0,
+      "2025": 254.0
     },
     "revenue_per_share": {
       "2021": 29261468000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 35464220246016,
-    "enterprise_value": 30914247655424,
-    "shares_outstanding": 11514357250,
-    "free_float_pct": 34.02999999848016
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1958,
-    "vol_trend": 0.863,
-    "price_chg_20d": 1.33
+    "cmf": 0.1718,
+    "vol_trend": 0.9,
+    "price_chg_20d": 1.26
   },
   "neraca": {
     "aset": 43228243.0,

@@ -1,23 +1,23 @@
 {
   "kode": "DPUM",
-  "nama": "PT Dua Putra Utama Makmur Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 112.0,
-  "update": "2026-10-21 13:23",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:45",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.385906207713047,
-    "ps": 4.848081503908567e-07,
+    "pb": null,
+    "ps": null,
     "roe": -0.09204007380845623,
-    "eps": -6973005.976890605,
+    "eps": null,
     "de": 2.3553287758119557,
     "margin_net": -0.07600984047312574,
     "current_ratio": 2.534491939047199,
     "roa": -0.027431014949103896,
-    "bv": 80.81354955817449
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.87859461143e+17
     },
     "eps": {
-      "2024-Q1": -450000.0,
-      "2024-Q2": -180000.0,
-      "2024-Q3": 640000.0,
-      "2026-Q1": -4050000.0,
-      "2026-Q2": -3370000.0
+      "2024-Q1": -0.45,
+      "2024-Q2": -0.18,
+      "2024-Q3": 0.64,
+      "2026-Q1": -4.05,
+      "2026-Q2": -3.37
     },
     "net_income": {
       "2024-Q1": -1886087071000000.0,
@@ -45,29 +45,29 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -10950000.0,
-      "2023": -34080000.0,
-      "2025": -6470000.0
+      "2022": -10.95,
+      "2023": -34.08,
+      "2025": -6.47
     },
     "revenue_per_share": {
       "2022": 7.23804994492e+17,
       "2023": 9.20006985202e+17,
-      "2025": 1.258918814869e+18
+      "2025": 1258918814869.0
     }
   },
   "statistik": {
-    "market_cap": 466428461056,
-    "enterprise_value": 1034850402304,
-    "shares_outstanding": 4164540000,
-    "free_float_pct": 31.014000009604903
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.8,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1709,
-    "vol_trend": 0.433,
-    "price_chg_20d": -29.25
+    "cmf": -0.1157,
+    "vol_trend": 0.413,
+    "price_chg_20d": -12.5
   },
   "neraca": {
     "aset": 1129240126130.0,

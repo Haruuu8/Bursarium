@@ -1,23 +1,23 @@
 {
   "kode": "PNSE",
-  "nama": "PT Pudjiadi and Sons Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Resorts & Casinos",
-  "harga": 560.0,
-  "update": "2026-10-21 12:50",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:08",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.105611308592143,
-    "ps": 2.107539246990481e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.07423728097526658,
-    "eps": -178608.43883242607,
+    "eps": null,
     "de": 1.7976451545792314,
     "margin_net": -0.19415857684684384,
     "current_ratio": 0.4888994701384645,
     "roa": -0.021357788631674302,
-    "bv": 136.3986889913429
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 4.1608020208e+16
     },
     "eps": {
-      "2024-Q1": -5000000.0,
-      "2024-Q2": 7000000.0,
-      "2024-Q3": 8000000.0,
-      "2026-Q1": -10000000.0
+      "2024-Q1": -5.0,
+      "2024-Q2": 7.0,
+      "2024-Q3": 8.0,
+      "2026-Q1": -10.0
     },
     "net_income": {
       "2024-Q1": -3620563896000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -38000000.0,
-      "2022": -13000000.0,
-      "2023": 15000000.0,
-      "2025": -13000000.0
+      "2021": -38.0,
+      "2022": -13.0,
+      "2023": 15.0,
+      "2025": -13.0
     },
     "revenue_per_share": {
       "2021": 6.9060494053e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 446775558144,
-    "enterprise_value": 544679755776,
-    "shares_outstanding": 797813496,
-    "free_float_pct": 8.270999968142931
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.7578,
-    "vol_trend": 1.652,
-    "price_chg_20d": 25.0
+    "cmf": 0.1695,
+    "vol_trend": 11.558,
+    "price_chg_20d": 27.08
   },
   "neraca": {
     "aset": 378248615918.0,

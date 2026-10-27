@@ -1,23 +1,23 @@
 {
   "kode": "SGRO",
-  "nama": "PT Prime Agri Resources Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Farm Products",
-  "harga": 4170.0,
-  "update": "2026-10-21 13:00",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:19",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 21.350256304863148,
-    "pb": 1.4735882112223995,
-    "ps": 1.5992457516513536,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.020971998602514464,
-    "eps": 195.31381452550337,
+    "eps": null,
     "de": 0.6882534656358851,
     "margin_net": 0.08589521468232778,
     "current_ratio": 1.234912608287021,
     "roa": 0.012422304487682664,
-    "bv": 2829.827198835162
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1256531000000.0
     },
     "eps": {
-      "2024-Q1": 55000000.0,
-      "2024-Q2": 33000000.0,
-      "2024-Q3": 48000000.0,
-      "2026-Q1": 60.0
+      "2024-Q1": 55.0,
+      "2024-Q2": 33.0,
+      "2024-Q3": 48.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 100326000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 441000000.0,
-      "2022": 577000000.0,
-      "2023": 266000000.0,
-      "2025": 278.0
+      "2021": 441.0,
+      "2022": 577.0,
+      "2023": 266.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 5222298000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 7583653429248,
-    "enterprise_value": 6883224059904,
-    "shares_outstanding": 1818622000,
-    "free_float_pct": 1.3009443963616407
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.6503,
-    "vol_trend": 0.545,
-    "price_chg_20d": -12.47
+    "cmf": -0.5388,
+    "vol_trend": 0.781,
+    "price_chg_20d": -1.43
   },
   "neraca": {
     "aset": 8688404.0,

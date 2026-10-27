@@ -1,23 +1,23 @@
 {
   "kode": "LTLS",
-  "nama": "PT Lautan Luas Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Specialty Chemicals",
-  "harga": 825.0,
-  "update": "2026-10-21 12:32",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:49",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 5.500283396755457,
-    "pb": 0.3653652962790056,
-    "ps": 0.13537192632454895,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.037640205509771145,
-    "eps": 149.99227139580776,
+    "eps": null,
     "de": 1.2273977954142488,
     "margin_net": 0.024360523299115453,
     "current_ratio": 1.2262987533906011,
     "roa": 0.016266510108568406,
-    "bv": 2258.014125594461
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 2858250000000.0
     },
     "eps": {
-      "2024-Q1": 58000000.0,
-      "2024-Q2": 32000000.0,
-      "2024-Q3": 31000000.0,
-      "2026-Q1": 25.0,
-      "2026-Q2": 58.0
+      "2024-Q1": 58.0,
+      "2024-Q2": 32.0,
+      "2024-Q3": 31.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 87534000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 182000000.0,
-      "2022": 206000000.0,
-      "2023": 104000000.0,
-      "2025": 99.0
+      "2021": 182.0,
+      "2022": 206.0,
+      "2023": 104.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 6635544000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1208368234496,
-    "enterprise_value": 2653720936448,
-    "shares_outstanding": 1464688800,
-    "free_float_pct": 38.457000012562396
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1642,
-    "vol_trend": 0.207,
-    "price_chg_20d": -16.75
+    "cmf": -0.2333,
+    "vol_trend": 0.181,
+    "price_chg_20d": -9.68
   },
   "neraca": {
     "aset": 7652963.0,

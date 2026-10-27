@@ -1,23 +1,23 @@
 {
   "kode": "PGAS",
-  "nama": "PT Perusahaan Gas Negara (Persero) Tbk",
-  "sektor": "Utilities",
-  "industri": "Utilities - Regulated Gas",
-  "harga": 1325.0,
-  "update": "2026-10-21 12:48",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:06",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0907765563957214,
-    "pb": 11351.654778220907,
-    "ps": 0.00857419970183721,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.031965568444525375,
-    "eps": 14596.279618979375,
+    "eps": null,
     "de": 0.8743386789588403,
     "margin_net": 0.0973017428514532,
     "current_ratio": 2.0063837014897725,
     "roa": 0.014582891387117608,
-    "bv": 0.11672307041455512
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 929561551000000.0
     },
     "eps": {
-      "2024-Q1": 4997.15,
-      "2024-Q2": 2700.5,
-      "2024-Q3": 3332.86,
-      "2026-Q1": 5026.13
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.01
     },
     "net_income": {
       "2024-Q1": 121138427000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 13000.0,
-      "2022": 13271.13,
-      "2023": 11000.0,
-      "2025": 8884.13
+      "2021": 0.01,
+      "2022": 0.01,
+      "2023": 0.01,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 3036100956000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 32119998906368,
-    "enterprise_value": 31635787481088,
-    "shares_outstanding": 24241508195,
-    "free_float_pct": 43.015000003798235
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.8,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.112,
-    "vol_trend": 0.774,
-    "price_chg_20d": -10.31
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0343,
+    "vol_trend": 1.114,
+    "price_chg_20d": -8.68
   },
   "neraca": {
     "aset": 6202333721.0,

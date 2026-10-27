@@ -1,26 +1,26 @@
 {
   "kode": "TBMS",
-  "nama": "PT Tembaga Mulia Semanan Tbk",
-  "sektor": "Industrials",
-  "industri": "Metal Fabrication",
-  "harga": 1105.0,
-  "update": "2026-10-21 13:10",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:30",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.056401663186872585,
-    "pb": 0.010349359438324294,
-    "ps": 0.0007633687488480187,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.04587346743674172,
-    "eps": 19591.62084172701,
+    "eps": null,
     "de": 1.7513142912944077,
     "margin_net": 0.013534507773623453,
     "current_ratio": 1.5215389789232945,
     "roa": 0.016673292317745232,
-    "bv": 106769.89301464583
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 265868036000000.0
     },
     "eps": {
-      "2024-Q3": 10000.0,
-      "2026-Q1": 5000.0
+      "2024-Q3": 0.01,
+      "2026-Q1": 0.01
     },
     "net_income": {
       "2024-Q3": 3688139000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 20000.0,
-      "2022": 10000.0,
-      "2023": 20000.0,
-      "2025": 6000.0
+      "2021": 0.02,
+      "2022": 0.01,
+      "2023": 0.02,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 720730364000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 811821367296,
-    "enterprise_value": 855948918784,
-    "shares_outstanding": 734680000,
-    "free_float_pct": 13.716000027222735
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.2,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0531,
-    "vol_trend": 0.476,
-    "price_chg_20d": -4.12
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0816,
+    "vol_trend": 0.519,
+    "price_chg_20d": -8.68
   },
   "neraca": {
     "aset": 215817784.0,

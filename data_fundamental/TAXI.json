@@ -1,23 +1,23 @@
 {
   "kode": "TAXI",
-  "nama": "PT Express Transindo Utama Tbk",
-  "sektor": "Industrials",
-  "industri": "Railroads",
-  "harga": 10.0,
-  "update": "2026-10-21 13:10",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:29",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.0027989508489020313,
-    "ps": 0.01978839229828702,
+    "pb": null,
+    "ps": null,
     "roe": -0.008831865293541888,
-    "eps": -299.5403649276724,
+    "eps": null,
     "de": 0.09522409243952755,
     "margin_net": -0.1421556163760605,
     "current_ratio": null,
     "roa": -0.008303652702175522,
-    "bv": 3572.767275967989
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2269337000000.0
     },
     "eps": {
-      "2024-Q1": -80000.0,
-      "2024-Q2": -90000.0,
-      "2024-Q3": -100000.0,
-      "2026-Q1": -30000.0
+      "2024-Q1": -0.08,
+      "2024-Q2": -0.09,
+      "2024-Q3": -0.1,
+      "2026-Q1": -0.03
     },
     "net_income": {
       "2024-Q1": -849916000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 18450000.0,
-      "2022": -1460000.0,
-      "2023": -400000.0,
-      "2025": -1910000.0
+      "2021": 18.45,
+      "2022": -1.46,
+      "2023": -0.4,
+      "2025": -1.91
     },
     "revenue_per_share": {
       "2021": 7263061000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 102236471296,
-    "enterprise_value": 98467766272,
-    "shares_outstanding": 10223647156,
-    "free_float_pct": 94.25799999704137
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.2571,
-    "vol_trend": 4.747,
-    "price_chg_20d": -28.57
+    "cmf": 0.1593,
+    "vol_trend": 1.876,
+    "price_chg_20d": -27.78
   },
   "neraca": {
     "aset": 38850252.0,

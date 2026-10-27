@@ -1,23 +1,23 @@
 {
   "kode": "MBSS",
-  "nama": "PT Mitrabahtera Segara Sejati Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 3000.0,
-  "update": "2026-10-21 12:34",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:51",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 2.1485298524097354e-05,
-    "pb": 1.3289472014097607,
-    "ps": 6.695069519767131e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0119265241857311,
-    "eps": 139630361.50674275,
+    "eps": null,
     "de": 0.09139885741566654,
     "margin_net": 0.26304671932138823,
     "current_ratio": 7.965638993561719,
     "roa": 0.010880252672911168,
-    "bv": 2257.4260262691923
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.79117983317e+17
     },
     "eps": {
-      "2024-Q1": 24000000.0,
-      "2024-Q2": 50290815.23,
-      "2024-Q3": 38416304.77,
-      "2026-Q1": 26920000.0
+      "2024-Q1": 24.0,
+      "2024-Q2": 50.29,
+      "2024-Q3": 38.42,
+      "2026-Q1": 26.92
     },
     "net_income": {
       "2024-Q1": 4.2146764542e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 6600.0,
-      "2022": 14400.0,
-      "2023": 14070.0,
-      "2025": 211520000.0
+      "2021": 0.01,
+      "2022": 0.01,
+      "2023": 0.01,
+      "2025": 211.52
     },
     "revenue_per_share": {
       "2021": 73405133000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5250080047104,
-    "enterprise_value": 3837069623296,
-    "shares_outstanding": 1750026639,
-    "free_float_pct": 17.500000009999848
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.3807,
-    "vol_trend": 3.068,
-    "price_chg_20d": 6.53
+    "cmf": 0.4135,
+    "vol_trend": 3.788,
+    "price_chg_20d": 48.1
   },
   "neraca": {
     "aset": 4330450707299.0,

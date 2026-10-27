@@ -3,100 +3,117 @@
   "nama": "PT Surya Biru Murni Acetylene Tbk",
   "sektor": "Basic Materials",
   "industri": "Chemicals",
-  "harga": 125.0,
-  "update": "2026-10-21 10:27",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "harga": 150.0,
+  "update": "2026-10-26 22:22",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 0.00012041814263877678,
-    "pb": 0.48556602035001695,
-    "ps": 0.9250978335905216,
-    "roe": 0.0010080831876941275,
-    "eps": 1038049.5601478226,
-    "de": 0.2136488302753302,
-    "margin_net": 0.0076823791940187555,
-    "current_ratio": 1.233904898293987,
-    "roa": 0.0008306218096592507,
-    "bv": 257.4315227204214
+    "pe": 2.0033125418285142e-05,
+    "pb": 0.5786394812760591,
+    "ps": 1.0380397272463552e-06,
+    "roe": 0.007818984163565077,
+    "eps": 7487598.508372947,
+    "de": 0.237991836243724,
+    "margin_net": 0.029274195081609722,
+    "current_ratio": 1.358963905300988,
+    "roa": 0.006315860843872116,
+    "bv": 259.22876826380525
   },
   "quarterly": {
     "revenue": {
-      "2026-Q1": 3.1413106006e+16
+      "2024-Q4": 3.5058361062e+16,
+      "2025-Q1": 3.2483103401e+16,
+      "2025-Q2": 3.4690793006e+16,
+      "2025-Q3": 3.5580246475e+16,
+      "2025-Q4": 3.4410184454e+16,
+      "2026-Q1": 3.1413106006e+16,
+      "2026-Q2": 3.2973730754e+16
     },
     "eps": {
-      "2026-Q1": 260000.0
+      "2024-Q4": 7.4,
+      "2025-Q1": 2.13,
+      "2025-Q2": 5.09,
+      "2025-Q3": 3.72,
+      "2025-Q4": 1.74,
+      "2026-Q1": 0.26,
+      "2026-Q2": 1.77
     },
     "net_income": {
-      "2026-Q1": 241327392000000.0
+      "2024-Q4": 3635136346000000.0,
+      "2025-Q1": 1976492231000000.0,
+      "2025-Q2": 4737655940000000.0,
+      "2025-Q3": 3317198527000000.0,
+      "2025-Q4": 1760843295000000.0,
+      "2026-Q1": 241327392000000.0,
+      "2026-Q2": 1643545428000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2021": 10650000.0,
-      "2022": 4825601.49,
-      "2023": 5091663.75,
-      "2025": 12680800.0
+      "2021": 10.65,
+      "2022": 4.83,
+      "2023": 5.09,
+      "2024": 14.37,
+      "2025": 12.68
     },
     "revenue_per_share": {
       "2021": 8.8261234963e+16,
       "2022": 1.03643140314e+17,
       "2023": 1.13369718012e+17,
+      "2024": 1.3167748328e+17,
       "2025": 1.37164327336e+17
     }
   },
   "statistik": {
-    "market_cap": 116240785408,
-    "enterprise_value": 136367259648,
+    "market_cap": 139488935936,
+    "enterprise_value": 152176001024,
     "shares_outstanding": 929926282,
     "free_float_pct": 21.98800001224183
   },
   "akumulasi": {
-    "score": 8.0,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1754,
-    "vol_trend": 7.056,
-    "price_chg_20d": 2.7
+    "cmf": 0.2033,
+    "vol_trend": 10.184,
+    "price_chg_20d": 40.19
   },
   "neraca": {
-    "aset": 290538231953.0,
-    "aset_lancar": 29373533647.0,
-    "kas": 3382974884.0,
-    "piutang_usaha": 19520565351.0,
-    "persediaan": 5143431660.0,
-    "aset_tetap": 3957812800.0,
-    "liabilitas": 51145893160.0,
-    "liabilitas_jangka_pendek": 23805346496.0,
-    "liabilitas_jangka_panjang": 27340546664.0,
-    "utang_usaha": 19520565351.0,
-    "utang_bank": 11509699224.0,
-    "ekuitas": 239392338793.0,
-    "ekuitas_induk": 239392338793.0,
+    "aset": 298434824103.0,
+    "aset_lancar": 31021528797.0,
+    "kas": 3572663978.0,
+    "piutang_usaha": 19939979128.0,
+    "persediaan": 5033890533.0,
+    "aset_tetap": 11098680800.0,
+    "liabilitas": 57371179444.0,
+    "liabilitas_jangka_pendek": 22827338295.0,
+    "liabilitas_jangka_panjang": 34543841149.0,
+    "utang_usaha": 19939979128.0,
+    "utang_bank": 11529135665.0,
+    "ekuitas": 241063644659.0,
+    "ekuitas_induk": 241063644659.0,
     "modal_saham": null,
     "saldo_laba": 3500000000.0
   },
   "laba_rugi": {
-    "pendapatan": 31413106006.0,
-    "beban_pokok": 16986654112.0,
+    "pendapatan": 64386836760.0,
+    "beban_pokok": 33973150843.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 590585381.0,
-    "beban_pajak": -349257989.0,
-    "laba_bersih": 241327392.0,
-    "laba_induk": 241327392.0,
-    "eps_basic": 0.26,
+    "laba_sebelum_pajak": 3191355868.0,
+    "beban_pajak": -1306483048.0,
+    "laba_bersih": 1884872820.0,
+    "laba_induk": 1884872820.0,
+    "eps_basic": 2.03,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 3957812800.0,
+    "capex": 11098680800.0,
     "dividen_dibayar": null
   }
 }

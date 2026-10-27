@@ -3,8 +3,8 @@
   "nama": "PT Isra Presisi Indonesia Tbk",
   "sektor": "Industrials",
   "industri": "Metal Fabrication",
-  "harga": 21.0,
-  "update": "2026-10-21 10:48",
+  "harga": 22.0,
+  "update": "2026-10-26 22:49",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4915558039841871,
-    "ps": 3.639382344103467,
+    "pb": 0.514963806791635,
+    "ps": 3.812690585889359,
     "roe": -0.005605813524735383,
-    "eps": -478977.49580118904,
+    "eps": -478976.95301168784,
     "de": 0.016389138851739298,
     "margin_net": -0.08300867816389237,
     "current_ratio": 106.26925785416823,
     "roa": -0.005515420531813754,
-    "bv": 42.721497396205194
+    "bv": 42.72144898311593
   },
   "quarterly": {
     "revenue": {},
@@ -30,29 +30,31 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 360000.0,
-      "2023": 490000.0,
-      "2025": 400000.0
+      "2022": 0.36,
+      "2023": 0.49,
+      "2024": 0.35,
+      "2025": 0.4
     },
     "revenue_per_share": {
       "2022": 2.0933090413e+16,
       "2023": 7.6847618135e+16,
+      "2024": 3.5724253459e+16,
       "2025": 2.4216924364e+16
     }
   },
   "statistik": {
-    "market_cap": 84427939840,
-    "enterprise_value": 80751222784,
-    "shares_outstanding": 4020378053,
-    "free_float_pct": 48.9806995023908
+    "market_cap": 88448417792,
+    "enterprise_value": 88791932928,
+    "shares_outstanding": 4020382609,
+    "free_float_pct": 48.98064399621424
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1917,
-    "vol_trend": 0.753,
-    "price_chg_20d": -16.67
+    "score": 5.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0938,
+    "vol_trend": 0.63,
+    "price_chg_20d": -12.0
   },
   "neraca": {
     "aset": 174571512806.0,

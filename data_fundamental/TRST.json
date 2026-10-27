@@ -1,23 +1,23 @@
 {
   "kode": "TRST",
-  "nama": "PT Trias Sentosa Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 462.0,
-  "update": "2026-10-21 13:16",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:37",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4987451559328289,
-    "ps": 0.36670418614485384,
+    "pb": null,
+    "ps": null,
     "roe": 0.010706926247155071,
-    "eps": -2.4245014245014245,
+    "eps": null,
     "de": 1.0059812696069386,
     "margin_net": 0.028697612688363506,
     "current_ratio": 1.1502457432220223,
     "roa": 0.0051644310336131215,
-    "bv": 926.3247863247864
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 970464000000.0
     },
     "eps": {
-      "2024-Q1": 4.9,
-      "2024-Q2": -2.03,
-      "2024-Q3": -10.87,
-      "2026-Q1": 13.0
+      "2024-Q1": 0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": -0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 6182000000.0,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 61000000.0,
-      "2022": 49000000.0,
-      "2023": -87.0,
-      "2025": -13.0
+      "2021": 61.0,
+      "2022": 49.0,
+      "2023": -0.0,
+      "2025": -0.0
     },
     "revenue_per_share": {
-      "2021": 3.652442192823e+18,
+      "2021": 3652442192823.0,
       "2022": 3819385000000.0,
       "2023": 2997464000000.0,
       "2025": 3741011000000.0
     }
   },
   "statistik": {
-    "market_cap": 1297295998976,
-    "enterprise_value": 3622512885760,
-    "shares_outstanding": 2808000000,
-    "free_float_pct": 36.975
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.397,
-    "vol_trend": 0.574,
-    "price_chg_20d": 1.28
+    "cmf": 0.2602,
+    "vol_trend": 0.764,
+    "price_chg_20d": 4.64
   },
   "neraca": {
     "aset": 5392656.0,

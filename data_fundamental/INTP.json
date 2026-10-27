@@ -1,26 +1,26 @@
 {
   "kode": "INTP",
-  "nama": "PT Indocement Tunggal Prakarsa Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Building Materials",
-  "harga": 5375.0,
-  "update": "2026-10-21 12:15",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:34",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 15.638319115348805,
-    "pb": 0.8341534651515594,
-    "ps": 1.0910913931323791,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.026670176602703058,
-    "eps": 343.7070161028053,
+    "eps": null,
     "de": 0.3674075300340387,
     "margin_net": 0.06977037526120612,
     "current_ratio": 1.4650393704057725,
     "roa": 0.019504190240958494,
-    "bv": 6443.658420843943
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 4606862000000.0
     },
     "eps": {
-      "2024-Q1": 69.37,
-      "2026-Q1": 65.45,
-      "2026-Q2": 114.0
+      "2024-Q1": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 238029000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 486.79,
-      "2022": 529.44,
-      "2023": 568.41,
-      "2025": 674.5
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 14771906000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 18442019143680,
-    "enterprise_value": 16686083211264,
-    "shares_outstanding": 3431073399,
-    "free_float_pct": 40.98585848993667
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.5,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1415,
-    "vol_trend": 1.12,
-    "price_chg_20d": 5.83
+    "cmf": 0.2502,
+    "vol_trend": 1.425,
+    "price_chg_20d": 13.41
   },
   "neraca": {
     "aset": 30231555.0,

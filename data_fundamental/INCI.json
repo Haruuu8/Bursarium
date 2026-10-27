@@ -1,23 +1,23 @@
 {
   "kode": "INCI",
-  "nama": "PT Intanwijaya Internasional Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Specialty Chemicals",
-  "harga": 760.0,
-  "update": "2026-10-21 12:11",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:30",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 3.922433819349412e-06,
-    "pb": 0.31466632673617156,
-    "ps": 3.6420219255396516e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.055394755926233594,
-    "eps": 193757252.51269022,
+    "eps": null,
     "de": 0.1993481464090319,
     "margin_net": 0.11812710698841214,
     "current_ratio": 4.249403033906785,
     "roa": 0.04603173447630198,
-    "bv": 2415.2568464601345
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.4406788431e+17
     },
     "eps": {
-      "2024-Q1": 20000000.0,
-      "2024-Q2": 36000000.0,
-      "2024-Q3": 24000000.0,
-      "2026-Q1": 35000000.0,
-      "2026-Q2": 99000000.0
+      "2024-Q1": 20.0,
+      "2024-Q2": 36.0,
+      "2024-Q3": 24.0,
+      "2026-Q1": 35.0,
+      "2026-Q2": 99.0
     },
     "net_income": {
       "2024-Q1": 4200119538000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 56000000.0,
-      "2022": 125000000.0,
-      "2023": 84000000.0,
-      "2025": 125000000.0
+      "2021": 56.0,
+      "2022": 125.0,
+      "2023": 84.0,
+      "2025": 125.0
     },
     "revenue_per_share": {
       "2021": 5.20716778853e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 157819027456,
-    "enterprise_value": -39182565376,
-    "shares_outstanding": 207656617,
-    "free_float_pct": 30.09699999109588
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.5,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.1656,
-    "vol_trend": 1.227,
-    "price_chg_20d": -6.21
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1858,
+    "vol_trend": 1.37,
+    "price_chg_20d": 14.84
   },
   "neraca": {
     "aset": 603559944766.0,

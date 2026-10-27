@@ -1,23 +1,23 @@
 {
   "kode": "BOGA",
-  "nama": "PT Apollo Global Interactive Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Auto & Truck Dealerships",
-  "harga": 1570.0,
-  "update": "2026-10-21 13:27",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:47",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 12.872878104006627,
-    "ps": 1.2932376679016165e-05,
+    "pb": null,
+    "ps": null,
     "roe": 0.005466304340441614,
-    "eps": -124384.09383275946,
+    "eps": null,
     "de": 0.5893513605372329,
     "margin_net": 0.0169193884698372,
     "current_ratio": 1.364097975389903,
     "roa": 0.003438567389899707,
-    "bv": 121.96184779465474
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 6.0948215794e+16
     },
     "eps": {
-      "2024-Q1": 1360000.0,
-      "2024-Q2": -630000.0,
-      "2024-Q3": -160000.0,
-      "2026-Q1": -2120000.0,
-      "2026-Q2": 2760000.0
+      "2024-Q1": 1.36,
+      "2024-Q2": -0.63,
+      "2024-Q3": -0.16,
+      "2026-Q1": -2.12,
+      "2026-Q2": 2.76
     },
     "net_income": {
       "2024-Q1": 5164476622000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 3880000.0,
-      "2023": 1980000.0,
-      "2025": 630000.0
+      "2022": 3.88,
+      "2023": 1.98,
+      "2025": 0.63
     },
     "revenue_per_share": {
       "2022": 7.33735486344e+17,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5971535986688,
-    "enterprise_value": 5410169290752,
-    "shares_outstanding": 3803526210,
-    "free_float_pct": 70.49699999306695
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.513,
-    "vol_trend": 0.927,
-    "price_chg_20d": -7.07
+    "cmf": -0.6629,
+    "vol_trend": 1.025,
+    "price_chg_20d": -1.29
   },
   "neraca": {
     "aset": 737439975569.0,

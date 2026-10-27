@@ -1,23 +1,23 @@
 {
   "kode": "INPC",
-  "nama": "PT Bank Artha Graha Internasional Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 125.0,
-  "update": "2026-10-21 12:13",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:31",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 15.27595787734766,
-    "pb": 0.6529231851217525,
-    "ps": 1.531301803859865,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.019445433098484233,
-    "eps": 8.18279292229258,
+    "eps": null,
     "de": 6.314357288492463,
     "margin_net": 0.09523430038770722,
     "current_ratio": null,
     "roa": 0.0026585292912990944,
-    "bv": 191.44671662515842
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 393100000000.0
     },
     "eps": {
-      "2024-Q1": 1820000.0,
-      "2024-Q2": 1670000.0,
-      "2024-Q3": 2790000.0,
-      "2026-Q1": 2900000.0,
-      "2026-Q2": 820000.0
+      "2024-Q1": 1.82,
+      "2024-Q2": 1.67,
+      "2024-Q3": 2.79,
+      "2026-Q1": 2.9,
+      "2026-Q2": 0.82
     },
     "net_income": {
       "2024-Q1": 36809000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -97008000000.0,
-      "2022": 2720000.0,
-      "2023": 7260000.0,
-      "2025": -28060000.0
+      "2021": -97008.0,
+      "2022": 2.72,
+      "2023": 7.26,
+      "2025": -28.06
     },
     "revenue_per_share": {
       "2021": 1534022000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2527926419456,
-    "enterprise_value": 1325247234048,
-    "shares_outstanding": 20223412907,
-    "free_float_pct": 51.422999999176156
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.1,
+    "score": 3.2,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0914,
-    "vol_trend": 0.229,
-    "price_chg_20d": -17.88
+    "cmf": -0.0884,
+    "vol_trend": 0.259,
+    "price_chg_20d": -10.64
   },
   "neraca": {
     "aset": 28319041.0,

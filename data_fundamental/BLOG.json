@@ -3,19 +3,16 @@
   "nama": "PT Trimitra Trans Persada Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 320.0,
-  "update": "2026-10-21 11:10",
+  "harga": 324.0,
+  "update": "2026-10-26 23:23",
   "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 6.97277187790169,
-    "pb": 1.7242602983006368,
-    "ps": 0.7378035507556987,
+    "pe": 7.254843128025238e-06,
+    "pb": 1.7458135520293947,
+    "ps": 1.0290993333299245e-05,
     "roe": 0.1236423855888081,
-    "eps": 45.89279638046861,
+    "eps": 44659821.62293735,
     "de": 0.8152119120343451,
     "margin_net": 0.1058120878863063,
     "current_ratio": 1.4294677768043769,
@@ -24,14 +21,20 @@
   },
   "quarterly": {
     "revenue": {
+      "2025-Q3": 3.2804301315699994e+17,
+      "2025-Q4": -9.545190116185659e+17,
       "2026-Q1": 3.57517651214e+17,
       "2026-Q2": 3.75357585624e+17
     },
     "eps": {
-      "2026-Q1": 47000000.0,
-      "2026-Q2": -1000000.0
+      "2025-Q3": -169.0,
+      "2025-Q4": -36.0,
+      "2026-Q1": 47.0,
+      "2026-Q2": -1.0
     },
     "net_income": {
+      "2025-Q3": 3.7910145816e+16,
+      "2025-Q4": 3.5470090743e+16,
       "2026-Q1": 3.6553972627e+16,
       "2026-Q2": 4.0993086343e+16
     },
@@ -39,25 +42,25 @@
   },
   "riwayat": {
     "eps": {
-      "2025": 47000000.0
+      "2025": 47.0
     },
     "revenue_per_share": {
-      "2025": 1.327762434e+18
+      "2025": 1327762434000.0
     }
   },
   "statistik": {
-    "market_cap": 1081435881472,
-    "enterprise_value": 1323367137280,
+    "market_cap": 1094953861120,
+    "enterprise_value": 1343644106752,
     "shares_outstanding": 3379487200,
     "free_float_pct": 16.66700001112595
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.2004,
-    "vol_trend": 0.728,
-    "price_chg_20d": -10.0
+    "score": 4.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.029,
+    "vol_trend": 0.607,
+    "price_chg_20d": -8.99
   },
   "neraca": {
     "aset": 1138496481206.0,

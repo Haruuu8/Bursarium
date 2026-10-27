@@ -1,26 +1,26 @@
 {
   "kode": "IPCC",
-  "nama": "PT Indonesia Kendaraan Terminal Tbk",
-  "sektor": "Industrials",
-  "industri": "Integrated Freight & Logistics",
-  "harga": 995.0,
-  "update": "2026-10-21 13:54",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:02",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.008758947219595798,
-    "pb": 1384.894867570108,
-    "ps": 0.0021877773331535543,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.07905601169006801,
-    "eps": 113598.12715550496,
+    "eps": null,
     "de": 0.5659594079880255,
     "margin_net": 0.24977628912513467,
     "current_ratio": 3.8259561329736833,
     "roa": 0.05048407467447747,
-    "bv": 0.7184660895926309
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 211293254000000.0
     },
     "eps": {
-      "2024-Q3": 37030.0,
-      "2026-Q1": 29043.21,
-      "2026-Q2": 27755.79
+      "2024-Q3": 0.04,
+      "2026-Q1": 0.03,
+      "2026-Q2": 0.03
     },
     "net_income": {
       "2024-Q3": 67336572000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 33030000.0,
-      "2022": 88940000.0,
-      "2023": 104958.45,
-      "2025": 141070.0
+      "2021": 33.03,
+      "2022": 88.94,
+      "2023": 0.1,
+      "2025": 0.14
     },
     "revenue_per_share": {
       "2021": 5.16836949817e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1809292853248,
-    "enterprise_value": 1210401292288,
-    "shares_outstanding": 1818384820,
-    "free_float_pct": 27.98999999351072
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.2,
+    "score": 2.4,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0853,
-    "vol_trend": 1.098,
-    "price_chg_20d": -6.02
+    "cmf": -0.0731,
+    "vol_trend": 1.215,
+    "price_chg_20d": -7.37
   },
   "neraca": {
     "aset": 2045844272.0,

@@ -1,26 +1,26 @@
 {
   "kode": "TLKM",
-  "nama": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
-  "sektor": "Communication Services",
-  "industri": "Telecom Services",
-  "harga": 2080.0,
-  "update": "2026-10-21 13:13",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:33",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 11800.665104852671,
-    "pb": 1524.6137826927995,
-    "ps": 1378.4207484869182,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.032299318918597386,
-    "eps": 0.17626125150731226,
+    "eps": null,
     "de": 0.9974199208874878,
     "margin_net": 0.11680873376536073,
     "current_ratio": 0.9206663966819814,
     "roa": 0.01498163508130572,
-    "bv": 1.3642799400161971
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,7 +28,7 @@
       "2026-Q1": 37189000000.0
     },
     "eps": {
-      "2024-Q3": 59696630.0
+      "2024-Q3": 59.7
     },
     "net_income": {
       "2024-Q3": 5914000000.0,
@@ -38,10 +38,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 249940000.0,
-      "2022": 209490000.0,
-      "2023": 247920000.0,
-      "2025": 0.18
+      "2021": 249.94,
+      "2022": 209.49,
+      "2023": 247.92,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 143210000000.0,
@@ -51,18 +51,18 @@
     }
   },
   "statistik": {
-    "market_cap": 205048348934144,
-    "enterprise_value": 243993736642560,
-    "shares_outstanding": 98580940799,
-    "free_float_pct": 47.12200000070523
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3099,
-    "vol_trend": 2.563,
-    "price_chg_20d": -16.6
+    "cmf": -0.1484,
+    "vol_trend": 2.756,
+    "price_chg_20d": -5.06
   },
   "neraca": {
     "aset": 289955.0,

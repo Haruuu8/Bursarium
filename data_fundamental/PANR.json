@@ -1,23 +1,23 @@
 {
   "kode": "PANR",
-  "nama": "PT Panorama Sentrawisata Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Travel Services",
-  "harga": 360.0,
-  "update": "2026-10-21 12:47",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:04",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.01005596188083812,
-    "pb": 0.000527021686446501,
-    "ps": 0.0001539541989432775,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.016274624870685154,
-    "eps": 35799.65837837838,
+    "eps": null,
     "de": 0.8011502947309432,
     "margin_net": 0.015395699888274678,
     "current_ratio": 1.5686286536351217,
     "roa": 0.007535402439627286,
-    "bv": 683083.845045045
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1001886573000000.0
     },
     "eps": {
-      "2024-Q1": 45500.0,
-      "2024-Q2": -24670.0,
-      "2024-Q3": 24979170.0,
-      "2026-Q1": 11120000.0
+      "2024-Q1": 0.05,
+      "2024-Q2": -0.02,
+      "2024-Q3": 24.98,
+      "2026-Q1": 11.12
     },
     "net_income": {
       "2024-Q1": 6314783000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -86060000.0,
-      "2022": 10200000.0,
-      "2023": 53000000.0,
-      "2025": 64000000.0
+      "2021": -86.06,
+      "2022": 10.2,
+      "2023": 53.0,
+      "2025": 64.0
     },
     "revenue_per_share": {
       "2021": 101573748000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 499500023808,
-    "enterprise_value": 732788686848,
-    "shares_outstanding": 1387500000,
-    "free_float_pct": 21.119
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4407,
-    "vol_trend": 0.635,
-    "price_chg_20d": -15.61
+    "cmf": -0.4573,
+    "vol_trend": 0.986,
+    "price_chg_20d": -13.93
   },
   "neraca": {
     "aset": 2046970301.0,

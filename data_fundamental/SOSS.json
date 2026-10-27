@@ -1,10 +1,10 @@
 {
   "kode": "SOSS",
-  "nama": "PT Alsok Indonesia Services Tbk",
-  "sektor": "Industrials",
-  "industri": "Staffing & Employment Services",
-  "harga": 760.0,
-  "update": "2026-10-21 14:05",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:08",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.4862457166188525,
-    "ps": 0.2763553867130337,
+    "pb": null,
+    "ps": null,
     "roe": -0.0011368391709045105,
-    "eps": -1390044.0557619769,
+    "eps": null,
     "de": 1.3671060842586016,
     "margin_net": -0.0005054554770766512,
     "current_ratio": 1.710484748740652,
     "roa": -0.0004582548176256533,
-    "bv": 305.6817734948399
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 5.49896261106e+17
     },
     "eps": {
-      "2024-Q1": 8090000.0,
-      "2026-Q1": -340000.0
+      "2024-Q1": 8.09,
+      "2026-Q1": -0.34
     },
     "net_income": {
       "2024-Q1": 2578058860000000.0,
@@ -39,29 +39,29 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 36750000.0,
-      "2023": 47000000.0,
-      "2025": -20190000.0
+      "2021": 36.75,
+      "2023": 47.0,
+      "2025": -20.19
     },
     "revenue_per_share": {
-      "2021": 1.389331929729e+18,
-      "2023": 1.780352921109e+18,
-      "2025": 2.036355387409e+18
+      "2021": 1389331929729.0,
+      "2023": 1780352921109.0,
+      "2025": 2036355387409.0
     }
   },
   "statistik": {
-    "market_cap": 607867174912,
-    "enterprise_value": 686365212672,
-    "shares_outstanding": 799825231,
-    "free_float_pct": 1.1424126979060005
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3215,
-    "vol_trend": 102.261,
-    "price_chg_20d": -20.32
+    "cmf": -0.3621,
+    "vol_trend": 23.408,
+    "price_chg_20d": -31.53
   },
   "neraca": {
     "aset": 606536071874.0,

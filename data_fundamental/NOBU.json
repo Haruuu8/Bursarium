@@ -1,26 +1,26 @@
 {
   "kode": "NOBU",
-  "nama": "PT Bank Nationalnobu Tbk",
-  "sektor": "Financial Services",
-  "industri": "Banks - Regional",
-  "harga": 390.0,
-  "update": "2026-10-21 12:44",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:00",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 4.736205311736775,
-    "pb": 0.6794105054289374,
-    "ps": 1.1039154232896955,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.035862597834668004,
-    "eps": 82.34440323639312,
+    "eps": null,
     "de": 8.77405086482597,
     "margin_net": 0.23308014552369302,
     "current_ratio": null,
     "roa": 0.0036691642319692953,
-    "bv": 574.0270379743073
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 660511000000.0
     },
     "eps": {
-      "2024-Q3": 13170000.0,
-      "2026-Q1": 20590000.0
+      "2024-Q3": 13.17,
+      "2026-Q1": 20.59
     },
     "net_income": {
       "2024-Q3": 98507000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 14460000.0,
-      "2022": 22560000.0,
-      "2023": 23050000.0,
-      "2025": 64360000.0
+      "2021": 14.46,
+      "2022": 22.56,
+      "2023": 23.05,
+      "2025": 64.36
     },
     "revenue_per_share": {
       "2021": 956776000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2916593172480,
-    "enterprise_value": 7170932342784,
-    "shares_outstanding": 7478443899,
-    "free_float_pct": 16.508557190154033
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.164,
-    "vol_trend": 1.779,
-    "price_chg_20d": -29.2
+    "cmf": -0.1314,
+    "vol_trend": 1.504,
+    "price_chg_20d": -22.29
   },
   "neraca": {
     "aset": 41958329.0,

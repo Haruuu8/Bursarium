@@ -1,26 +1,26 @@
 {
   "kode": "UNTR",
-  "nama": "PT United Tractors Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Other Industrial Metals & Mining",
-  "harga": 23875.0,
-  "update": "2026-10-21 13:18",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:38",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 32.4375571454131,
-    "pb": 0.8684932697964035,
-    "ps": 0.730172329919601,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.006693577955817293,
-    "eps": 736.0295318470396,
+    "eps": null,
     "de": 0.8460822290516956,
     "margin_net": 0.022510089975220356,
     "current_ratio": 1.159772612429901,
     "roa": 0.0035223131086711094,
-    "bv": 27490.138185638323
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 28554084000000.0
     },
     "eps": {
-      "2024-Q3": 1668000000.0,
-      "2026-Q1": 181000000.0
+      "2024-Q3": 1668.0,
+      "2026-Q1": 181.0
     },
     "net_income": {
       "2024-Q3": 6059486000000.0,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2756000000.0,
-      "2022": 5679000000.0,
-      "2023": 5675000000.0,
-      "2025": 4082000000.0
+      "2021": 2756.0,
+      "2022": 5679.0,
+      "2023": 5675.0,
+      "2025": 4082.0
     },
     "revenue_per_share": {
       "2021": 79460503000000.0,
       "2022": 123607460000000.0,
-      "2023": 1.321419e+18,
+      "2023": 1321419000000.0,
       "2025": 131300810000000.0
     }
   },
   "statistik": {
-    "market_cap": 83397611356160,
-    "enterprise_value": 99744332382208,
-    "shares_outstanding": 3493093536,
-    "free_float_pct": 36.43700000823568
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1351,
-    "vol_trend": 0.883,
-    "price_chg_20d": 0.21
+    "cmf": 0.242,
+    "vol_trend": 1.088,
+    "price_chg_20d": 2.56
   },
   "neraca": {
     "aset": 182480938.0,

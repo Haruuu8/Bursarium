@@ -1,23 +1,23 @@
 {
   "kode": "GLOB",
-  "nama": "PT Globe Kita Terang Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Specialty Retail",
-  "harga": 155.0,
-  "update": "2026-10-21 12:03",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:21",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 7.848818707287367e-05,
+    "pe": null,
     "pb": null,
-    "ps": 1.4039319240451636e-06,
+    "ps": null,
     "roe": 0.0004168156727000046,
-    "eps": 1974819.470044424,
+    "eps": null,
     "de": -1.0025297454409232,
     "margin_net": -0.03074454940042987,
     "current_ratio": 0.0013782418835140654,
     "roa": -0.16490208084157304,
-    "bv": -1083.3748371811303
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 9958179337000000.0
     },
     "eps": {
-      "2024-Q1": 750000.0,
-      "2024-Q2": 1430000.0,
-      "2024-Q3": 1000000.0,
-      "2026-Q1": -100000.0,
-      "2026-Q2": -350000.0
+      "2024-Q1": 0.75,
+      "2024-Q2": 1.43,
+      "2024-Q3": 1.0,
+      "2026-Q1": -0.1,
+      "2026-Q2": -0.35
     },
     "net_income": {
       "2024-Q1": 834902072000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -53000000.0,
-      "2022": -63000000.0,
-      "2023": -74000000.0,
-      "2025": -97000000.0
+      "2021": -53.0,
+      "2022": -63.0,
+      "2023": -74.0,
+      "2025": -97.0
     },
     "revenue_per_share": {
       "2021": 4.6270783199e+16,
@@ -58,10 +58,10 @@
     }
   },
   "statistik": {
-    "market_cap": 172222349312,
-    "enterprise_value": 624714579968,
-    "shares_outstanding": 1111112000,
-    "free_float_pct": 10.313000039599968
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

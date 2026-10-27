@@ -1,23 +1,23 @@
 {
   "kode": "PBSA",
-  "nama": "PT Paramita Bangun Sarana Tbk",
-  "sektor": "Industrials",
-  "industri": "Engineering & Construction",
-  "harga": 318.0,
-  "update": "2026-10-21 13:27",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:47",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.3495196489096151e-05,
-    "pb": 2.084521653620969,
-    "ps": 1.6931777100091615e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0015432551310341006,
-    "eps": 23563939.97352596,
+    "eps": null,
     "de": 0.5404948438177047,
     "margin_net": 0.0034231850147691326,
     "current_ratio": 2.441405083928764,
     "roa": 0.001001213941684592,
-    "bv": 152.5529847327853
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 4.1056871625e+17
     },
     "eps": {
-      "2024-Q1": 8940000.0,
-      "2024-Q2": 6010000.0,
-      "2024-Q3": 31470000.0,
-      "2026-Q1": 470000.0
+      "2024-Q1": 8.94,
+      "2024-Q2": 6.01,
+      "2024-Q3": 31.47,
+      "2026-Q1": 0.47
     },
     "net_income": {
       "2024-Q1": 2.6824017068e+16,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 55730000.0,
-      "2022": 44560000.0,
-      "2023": 64280000.0,
-      "2025": 106610000.0
+      "2021": 55.73,
+      "2022": 44.56,
+      "2023": 64.28,
+      "2025": 106.61
     },
     "revenue_per_share": {
       "2021": 2.79155322925e+17,
       "2022": 7.31846535897e+17,
       "2023": 5.72763446107e+17,
-      "2025": 1.591238558757e+18
+      "2025": 1591238558757.0
     }
   },
   "statistik": {
-    "market_cap": 1898387603456,
-    "enterprise_value": 1644989513728,
-    "shares_outstanding": 5969772600,
-    "free_float_pct": 15.282000004489282
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1364,
-    "vol_trend": 2.946,
-    "price_chg_20d": -55.92
+    "cmf": -0.3391,
+    "vol_trend": 2.719,
+    "price_chg_20d": -61.3
   },
   "neraca": {
     "aset": 1403748608050.0,

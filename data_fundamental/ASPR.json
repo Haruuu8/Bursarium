@@ -3,19 +3,16 @@
   "nama": "PT Asia Pramulia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
-  "harga": 132.0,
-  "update": "2026-10-21 11:10",
+  "harga": 151.0,
+  "update": "2026-10-26 23:22",
   "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 77.12831831967324,
-    "pb": 2.019602150230419,
-    "ps": 1.0663818710684463,
+    "pe": 5.221299986528752e-05,
+    "pb": 2.3103024597332826,
+    "ps": 1.3592316769420933e-06,
     "roe": 0.01309248142724821,
-    "eps": 1.7114336585545722,
+    "eps": 2892000.0840707966,
     "de": 1.0333507707744982,
     "margin_net": 0.013826074447113191,
     "current_ratio": 1.2623354017556516,
@@ -24,14 +21,20 @@
   },
   "quarterly": {
     "revenue": {
+      "2025-Q3": 5.97234784e+16,
+      "2025-Q4": 7.3708678367e+16,
       "2026-Q1": 7.8293741764e+16,
       "2026-Q2": 8.9556073444e+16
     },
     "eps": {
-      "2026-Q1": 1010000.0,
-      "2026-Q2": -150000.0
+      "2025-Q3": 0.41,
+      "2025-Q4": 2.06,
+      "2026-Q1": 1.01,
+      "2026-Q2": -0.15
     },
     "net_income": {
+      "2025-Q3": 1366257266000000.0,
+      "2025-Q4": 4156142921000000.0,
       "2026-Q1": 2733150934000000.0,
       "2026-Q2": -412446893000000.0
     },
@@ -39,25 +42,25 @@
   },
   "riwayat": {
     "eps": {
-      "2025": 4170000.0
+      "2025": 4.17
     },
     "revenue_per_share": {
       "2025": 2.49878985263e+17
     }
   },
   "statistik": {
-    "market_cap": 357984010240,
-    "enterprise_value": 429160169472,
+    "market_cap": 409511985152,
+    "enterprise_value": 483400155136,
     "shares_outstanding": 2712000000,
     "free_float_pct": 29.941000000000003
   },
   "akumulasi": {
-    "score": 2.4,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1087,
-    "vol_trend": 1.589,
-    "price_chg_20d": -2.24
+    "score": 5.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0797,
+    "vol_trend": 1.603,
+    "price_chg_20d": 17.97
   },
   "neraca": {
     "aset": 364312876418.0,

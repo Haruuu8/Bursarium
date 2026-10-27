@@ -1,23 +1,23 @@
 {
   "kode": "TNCA",
-  "nama": "PT Trimuda Nuansa Citra Tbk",
-  "sektor": "Industrials",
-  "industri": "Integrated Freight & Logistics",
-  "harga": 136.0,
-  "update": "2026-10-21 13:51",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:03",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.4464811621488183,
-    "ps": 8.063845801079326e-07,
+    "pb": null,
+    "ps": null,
     "roe": -0.07934344160862003,
-    "eps": -6321499.988141542,
+    "eps": null,
     "de": 0.3508145873137262,
     "margin_net": -0.17356913786496986,
     "current_ratio": 2.025844126042672,
     "roa": -0.05874463700359535,
-    "bv": 94.02127283701736
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.81220139e+16
     },
     "eps": {
-      "2024-Q1": 2520000.0,
-      "2024-Q2": -1280000.0,
-      "2024-Q3": -100000.0,
-      "2026-Q1": -7470000.0
+      "2024-Q1": 2.52,
+      "2024-Q2": -1.28,
+      "2024-Q3": -0.1,
+      "2026-Q1": -7.47
     },
     "net_income": {
       "2024-Q1": 1060640415000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2770000.0,
-      "2022": 1750000.0,
-      "2025": -2170000.0
+      "2021": 2.77,
+      "2022": 1.75,
+      "2025": -2.17
     },
     "revenue_per_share": {
       "2021": 7.6363244394e+16,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 57343041536,
-    "enterprise_value": 55863640064,
-    "shares_outstanding": 421640000,
-    "free_float_pct": 35.132999952566166
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3237,
-    "vol_trend": 0.139,
-    "price_chg_20d": -24.44
+    "cmf": -0.3335,
+    "vol_trend": 0.179,
+    "price_chg_20d": -10.3
   },
   "neraca": {
     "aset": 53543991238.0,

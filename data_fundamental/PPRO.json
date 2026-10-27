@@ -1,10 +1,10 @@
 {
   "kode": "PPRO",
-  "nama": "PT Pembangunan Perumahan Properti Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 15.0,
-  "update": "2026-10-21 12:50",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:08",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.16838406462965186,
-    "ps": 2.937847378296402,
+    "pb": null,
+    "ps": null,
     "roe": -0.014239803356565522,
-    "eps": -5.0740442884134795,
+    "eps": null,
     "de": 0.8221373560872233,
     "margin_net": -0.9937845140050249,
     "current_ratio": 3.0005792600050705,
     "roa": -0.0073940591160961975,
-    "bv": 89.08206386982863
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 7.8725590468e+16
     },
     "eps": {
-      "2024-Q3": -4420000.0,
-      "2026-Q1": -1330000.0
+      "2024-Q3": -4.42,
+      "2026-Q1": -1.33
     },
     "net_income": {
       "2024-Q3": -2.6066221219100006e+17,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 350000.0,
-      "2022": 340000.0,
-      "2023": -21720000.0,
-      "2025": -82000000.0
+      "2021": 0.35,
+      "2022": 0.34,
+      "2023": -21.72,
+      "2025": -82.0
     },
     "revenue_per_share": {
       "2021": 8.6246458783e+17,
-      "2022": 1.704677634556e+18,
+      "2022": 1704677634556.0,
       "2023": 9.83511392626e+17,
       "2025": 3.23221982612e+17
     }
   },
   "statistik": {
-    "market_cap": 925135077376,
-    "enterprise_value": 2472569208832,
-    "shares_outstanding": 61675671883,
-    "free_float_pct": 35.04199999960947
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.8,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0826,
-    "vol_trend": 11.844,
-    "price_chg_20d": 0.0
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1936,
+    "vol_trend": 3.84,
+    "price_chg_20d": -25.0
   },
   "neraca": {
     "aset": 10580963910971.0,

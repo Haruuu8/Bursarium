@@ -1,23 +1,23 @@
 {
   "kode": "PALM",
-  "nama": "PT Provident Investasi Bersama Tbk",
-  "sektor": "Financial Services",
-  "industri": "Asset Management",
-  "harga": 246.0,
-  "update": "2026-10-21 12:46",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:02",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0013877301668760672,
-    "pb": 468.32608167935814,
-    "ps": 0.6082457414433874,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.28125289777576384,
-    "eps": 177267.89102940162,
+    "eps": null,
     "de": 0.39710169047477645,
     "margin_net": 583.1821693600673,
     "current_ratio": null,
     "roa": 0.20131249072757265,
-    "bv": 0.5252750372515558
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3985544000000.0
     },
     "eps": {
-      "2024-Q1": -148454762.0,
-      "2024-Q2": 146891015.15,
-      "2024-Q3": 36905336.84,
-      "2026-Q1": 147735130.0
+      "2024-Q1": -148.45,
+      "2024-Q2": 146.89,
+      "2024-Q3": 36.91,
+      "2026-Q1": 147.74
     },
     "net_income": {
       "2024-Q1": -1183374726000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 284683647.03,
-      "2022": 33854666.25,
-      "2023": -466848086.58,
-      "2025": 117402720.0
+      "2021": 284.68,
+      "2022": 33.85,
+      "2023": -466.85,
+      "2025": 117.4
     },
     "revenue_per_share": {
       "2021": 316685911000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3870286938112,
-    "enterprise_value": 6849114406912,
-    "shares_outstanding": 15732874458,
-    "free_float_pct": 8.552000002236335
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.8,
+    "score": 6.2,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0849,
-    "vol_trend": 1.361,
-    "price_chg_20d": -17.81
+    "cmf": 0.1101,
+    "vol_trend": 1.032,
+    "price_chg_20d": -14.49
   },
   "neraca": {
     "aset": 11545722710.0,

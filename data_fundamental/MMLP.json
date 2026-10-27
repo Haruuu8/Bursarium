@@ -1,23 +1,23 @@
 {
   "kode": "MMLP",
-  "nama": "PT Mega Manunggal Property Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 238.0,
-  "update": "2026-10-21 12:40",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:57",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.006066737802236335,
-    "pb": 348.9242866685225,
-    "ps": 0.004685162147081702,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.009288696353007308,
-    "eps": 39230.30923015461,
+    "eps": null,
     "de": 0.3902301170849791,
     "margin_net": 0.4701469595231594,
     "current_ratio": 1.7802294468766597,
     "roa": 0.006543617290444603,
-    "bv": 0.6820964005469176
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 92839237000000.0
     },
     "eps": {
-      "2024-Q1": 4000000.0,
-      "2024-Q2": 1000000.0,
-      "2024-Q3": 28000000.0,
-      "2026-Q1": 6000000.0
+      "2024-Q1": 4.0,
+      "2024-Q2": 1.0,
+      "2024-Q3": 28.0,
+      "2026-Q1": 6.0
     },
     "net_income": {
       "2024-Q1": 29666678000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 29000000.0,
-      "2022": 16000000.0,
-      "2023": 13000000.0,
-      "2025": 9000000.0
+      "2021": 29.0,
+      "2022": 16.0,
+      "2023": 13.0,
+      "2025": 9.0
     },
     "revenue_per_share": {
       "2021": 316572333000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1639613988864,
-    "enterprise_value": 3249951473664,
-    "shares_outstanding": 6889134608,
-    "free_float_pct": 8.549000005255811
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4848,
-    "vol_trend": 0.723,
-    "price_chg_20d": -20.65
+    "cmf": -0.404,
+    "vol_trend": 0.692,
+    "price_chg_20d": -18.24
   },
   "neraca": {
     "aset": 6670329737.0,

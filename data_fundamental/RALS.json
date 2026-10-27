@@ -1,23 +1,23 @@
 {
   "kode": "RALS",
-  "nama": "PT Ramayana Lestari Sentosa Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Department Stores",
-  "harga": 364.0,
-  "update": "2026-10-21 12:55",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:13",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 5.006454495152858,
-    "pb": 0.5920652981207395,
-    "ps": 0.7205798488855186,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.051249283137348896,
-    "eps": 72.70614370956872,
+    "eps": null,
     "de": 0.4679750973249589,
     "margin_net": 0.19620529415466695,
     "current_ratio": 2.6731628957334936,
     "roa": 0.03491154804379088,
-    "bv": 614.7970522092138
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 985162000000.0
     },
     "eps": {
-      "2024-Q1": 17490000.0,
-      "2024-Q2": 24220000.0,
-      "2024-Q3": 850000.0,
-      "2026-Q1": 32540000.0
+      "2024-Q1": 17.49,
+      "2024-Q2": 24.22,
+      "2024-Q3": 0.85,
+      "2026-Q1": 32.54
     },
     "net_income": {
       "2024-Q1": 106817000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 26120000.0,
-      "2022": 56170000.0,
-      "2023": 49300000.0,
-      "2025": 44730000.0
+      "2021": 26.12,
+      "2022": 56.17,
+      "2023": 49.3,
+      "2025": 44.73
     },
     "revenue_per_share": {
       "2021": 2592682000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2233058983936,
-    "enterprise_value": 585331507200,
-    "shares_outstanding": 6134777300,
-    "free_float_pct": 26.83400000518356
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1416,
-    "vol_trend": 0.914,
-    "price_chg_20d": -4.69
+    "cmf": 0.2374,
+    "vol_trend": 0.953,
+    "price_chg_20d": -2.11
   },
   "neraca": {
     "aset": 5536678.0,

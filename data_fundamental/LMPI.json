@@ -1,23 +1,23 @@
 {
   "kode": "LMPI",
-  "nama": "PT Langgeng Makmur Industri Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 129.0,
-  "update": "2026-10-21 12:28",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:45",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 3.5078992182959207e-07,
+    "ps": null,
     "roe": 2.6034571537050955,
-    "eps": -108555092.76754178,
+    "eps": null,
     "de": -15.701653834602707,
     "margin_net": -0.9176640101802007,
     "current_ratio": 0.7117681951871475,
     "roa": -0.17708600562866203,
-    "bv": -37.68990751316227
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 3.8995025357e+16
     },
     "eps": {
-      "2024-Q1": -5610000.0,
-      "2024-Q2": -5970000.0,
-      "2024-Q3": -4460000.0,
-      "2026-Q1": -23190000.0,
-      "2026-Q2": -74930000.0
+      "2024-Q1": -5.61,
+      "2024-Q2": -5.97,
+      "2024-Q3": -4.46,
+      "2026-Q1": -23.19,
+      "2026-Q2": -74.93
     },
     "net_income": {
       "2024-Q1": -5659773328000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -14240000.0,
-      "2023": -27700000.0,
-      "2025": -76650000.0
+      "2021": -14.24,
+      "2023": -27.7,
+      "2025": -76.65
     },
     "revenue_per_share": {
       "2021": 5.68644535159e+17,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 130098782208,
-    "enterprise_value": 382620434432,
-    "shares_outstanding": 1008517669,
-    "free_float_pct": 12.863000023453234
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5713,
-    "vol_trend": 0.389,
-    "price_chg_20d": -17.28
+    "cmf": -0.3713,
+    "vol_trend": 0.149,
+    "price_chg_20d": -6.83
   },
   "neraca": {
     "aset": 558823647553.0,

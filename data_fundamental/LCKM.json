@@ -1,23 +1,23 @@
 {
   "kode": "LCKM",
-  "nama": "PT LCK Global Kedaton Tbk",
-  "sektor": "Communication Services",
-  "industri": "Telecom Services",
-  "harga": 109.0,
-  "update": "2026-10-21 13:40",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:58",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.7971055422231402,
-    "ps": 2.2237095261976303e-05,
+    "pb": null,
+    "ps": null,
     "roe": 0.002851459541847213,
-    "eps": -3655536.896,
+    "eps": null,
     "de": 0.05531350007807053,
     "margin_net": 0.11851736443768997,
     "current_ratio": 14.694179307941305,
     "roa": 0.0027020023354541248,
-    "bv": 136.74475239
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,11 +27,11 @@
       "2026-Q1": 3290000000000000.0
     },
     "eps": {
-      "2024-Q1": -1840000.0,
-      "2024-Q2": -960000.0,
-      "2024-Q3": -1640000.0,
-      "2026-Q1": 790000.0,
-      "2026-Q2": -400000.0
+      "2024-Q1": -1.84,
+      "2024-Q2": -0.96,
+      "2024-Q3": -1.64,
+      "2026-Q1": 0.79,
+      "2026-Q2": -0.4
     },
     "net_income": {
       "2024-Q1": -1847603373000000.0,
@@ -44,10 +44,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1650000.0,
-      "2022": 710000.0,
-      "2023": 70000.0,
-      "2025": 170000.0
+      "2021": 1.65,
+      "2022": 0.71,
+      "2023": 0.07,
+      "2025": 0.17
     },
     "revenue_per_share": {
       "2021": 4.5700880268e+16,
@@ -57,10 +57,10 @@
     }
   },
   "statistik": {
-    "market_cap": 108999999488,
-    "enterprise_value": 107163836416,
-    "shares_outstanding": 1000000000,
-    "free_float_pct": 24.975
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

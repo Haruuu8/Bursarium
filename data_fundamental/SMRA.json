@@ -1,23 +1,23 @@
 {
   "kode": "SMRA",
-  "nama": "PT Summarecon Agung Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 242.0,
-  "update": "2026-10-21 13:04",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:23",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0035560030215375576,
-    "pb": 337.36983961215327,
-    "ps": 0.00040872219093701564,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.016024861984532963,
-    "eps": 68053.93542533132,
+    "eps": null,
     "de": 1.983712841129402,
     "margin_net": 0.08497245531363133,
     "current_ratio": 1.1066733767152577,
     "roa": 0.004773334942940627,
-    "bv": 0.7173136765225006
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2233236174000000.0
     },
     "eps": {
-      "2024-Q1": 26740000.0,
-      "2024-Q2": -26694350.0,
-      "2024-Q3": 10910.0,
-      "2026-Q1": 11490.0
+      "2024-Q1": 26.74,
+      "2024-Q2": -26.69,
+      "2024-Q3": 0.01,
+      "2026-Q1": 0.01
     },
     "net_income": {
       "2024-Q1": 441391604000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 20820000.0,
-      "2022": 37880000.0,
-      "2023": 46400000.0,
-      "2025": 50.0
+      "2021": 20.82,
+      "2022": 37.88,
+      "2023": 46.4,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 5567912577000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3995073511424,
-    "enterprise_value": 18762747084800,
-    "shares_outstanding": 16508568358,
-    "free_float_pct": 57.34500000063542
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.0,
+    "score": 5.9,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0305,
-    "vol_trend": 0.796,
-    "price_chg_20d": -5.43
+    "cmf": 0.0617,
+    "vol_trend": 0.703,
+    "price_chg_20d": 4.0
   },
   "neraca": {
     "aset": 39754922558.0,

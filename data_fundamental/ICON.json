@@ -1,23 +1,23 @@
 {
   "kode": "ICON",
-  "nama": "PT Island Concepts Indonesia Tbk",
-  "sektor": "Energy",
-  "industri": "Oil & Gas Equipment & Services",
-  "harga": 88.0,
-  "update": "2026-10-21 12:08",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:27",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.7840586863174778e-05,
-    "pb": 0.6214223134609018,
-    "ps": 4.153687825009426e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0072820819111993835,
-    "eps": 4932573.164487268,
+    "eps": null,
     "de": 1.0451216093733482,
     "margin_net": 0.008665967383279991,
     "current_ratio": 0.9899428443550665,
     "roa": 0.002909053188021517,
-    "bv": 141.61062146272081
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 7.0640006939e+16
     },
     "eps": {
-      "2024-Q1": -20000.0,
-      "2024-Q2": 3190000.0,
-      "2024-Q3": -3130000.0,
-      "2026-Q1": -160000.0,
-      "2026-Q2": 1190000.0
+      "2024-Q1": -0.02,
+      "2024-Q2": 3.19,
+      "2024-Q3": -3.13,
+      "2026-Q1": -0.16,
+      "2026-Q2": 1.19
     },
     "net_income": {
       "2024-Q1": -1528948318000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -2290000.0,
-      "2022": -16950000.0,
-      "2023": -4520000.0,
-      "2025": 3040000.0
+      "2021": -2.29,
+      "2022": -16.95,
+      "2023": -4.52,
+      "2025": 3.04
     },
     "revenue_per_share": {
       "2021": 1.40656758698e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 95898001408,
-    "enterprise_value": 179101499392,
-    "shares_outstanding": 1089750000,
-    "free_float_pct": 34.967999999999996
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.383,
-    "vol_trend": 0.139,
-    "price_chg_20d": -40.82
+    "cmf": -0.3498,
+    "vol_trend": 0.128,
+    "price_chg_20d": -34.29
   },
   "neraca": {
     "aset": 386301686620.0,

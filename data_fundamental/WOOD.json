@@ -1,37 +1,37 @@
 {
   "kode": "WOOD",
-  "nama": "PT Integra Indocabinet Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 159.0,
-  "update": "2026-10-21 13:30",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:51",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 8.699863563978667,
-    "pb": 0.22129189007237976,
-    "ps": 0.34467167714999725,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.006359062083129307,
-    "eps": 18.276148681035785,
+    "eps": null,
     "de": 0.742758386944041,
     "margin_net": 0.0396180554574548,
     "current_ratio": 1.829765134364059,
     "roa": 0.003615019924401616,
-    "bv": 718.5080300412029
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2024-Q1": 6.41310882085e+17,
-      "2024-Q2": 8.00183567896e+17,
+      "2024-Q2": -6.4130944059055e+17,
       "2026-Q1": 7.2240425681e+17
     },
     "eps": {
-      "2024-Q1": 6620000.0,
-      "2024-Q2": 6600000.0,
-      "2026-Q1": 4570000.0
+      "2024-Q1": 6.62,
+      "2024-Q2": 6.6,
+      "2026-Q1": 4.57
     },
     "net_income": {
       "2024-Q1": 4.2137197912e+16,
@@ -42,31 +42,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 84590000.0,
-      "2022": 27990000.0,
-      "2023": 15190000.0,
-      "2025": 12400000.0
+      "2021": 84.59,
+      "2022": 27.99,
+      "2023": 15.19,
+      "2025": 12.4
     },
     "revenue_per_share": {
-      "2021": 5.41633155625e+18,
-      "2022": 4.526699532441e+18,
-      "2023": 2.186033911377e+18,
-      "2025": 2.630090706713e+18
+      "2021": 5416331556250.0,
+      "2022": 4526699532441.0,
+      "2023": 2186033911377.0,
+      "2025": 2630090706713.0
     }
   },
   "statistik": {
-    "market_cap": 995969138688,
-    "enterprise_value": 3799842553856,
-    "shares_outstanding": 6263956900,
-    "free_float_pct": 22.423999995913128
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2041,
-    "vol_trend": 0.661,
-    "price_chg_20d": -16.58
+    "cmf": -0.1783,
+    "vol_trend": 0.782,
+    "price_chg_20d": -12.37
   },
   "neraca": {
     "aset": 7917038497025.0,

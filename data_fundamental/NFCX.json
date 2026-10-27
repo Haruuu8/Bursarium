@@ -1,10 +1,10 @@
 {
   "kode": "NFCX",
-  "nama": "PT NFC Indonesia Tbk",
-  "sektor": "Communication Services",
-  "industri": "Internet Content & Information",
-  "harga": 1680.0,
-  "update": "2026-10-21 13:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:04",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,24 +12,24 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.069956322585139,
-    "ps": 0.403333648174974,
+    "pb": null,
+    "ps": null,
     "roe": -0.03307989452584849,
-    "eps": -54.61898693608195,
+    "eps": null,
     "de": 2.5109154459045637,
     "margin_net": -0.013112901940804274,
     "current_ratio": 1.4555647597223775,
     "roa": -0.006364858295042177,
-    "bv": 412.7808425553088
+    "bv": null
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 1.930383039799e+18,
+      "2024-Q1": 1930383039799.0,
       "2026-Q1": 6.89784170646e+17
     },
     "eps": {
-      "2024-Q1": -58020000.0,
-      "2026-Q1": -13650000.0
+      "2024-Q1": -58.02,
+      "2026-Q1": -13.65
     },
     "net_income": {
       "2024-Q1": -3.8433249694e+16,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 244680000.0,
-      "2022": 35470000.0,
-      "2023": -418520000.0,
-      "2025": 8520000.0
+      "2021": 244.68,
+      "2022": 35.47,
+      "2023": -418.52,
+      "2025": 8.52
     },
     "revenue_per_share": {
-      "2021": 8.885891410028e+18,
-      "2022": 9.836622374855e+18,
-      "2023": 9.526101865748e+18,
-      "2025": 4.069974238531e+18
+      "2021": 8885891410028.0,
+      "2022": 9836622374855.0,
+      "2023": 9526101865748.0,
+      "2025": 4069974238531.0
     }
   },
   "statistik": {
-    "market_cap": 1112852660224,
-    "enterprise_value": 1774837563392,
-    "shares_outstanding": 662412300,
-    "free_float_pct": 36.4969999802238
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.0,
+    "score": 2.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3608,
-    "vol_trend": 0.681,
-    "price_chg_20d": -3.72
+    "cmf": -0.3998,
+    "vol_trend": 1.971,
+    "price_chg_20d": -2.33
   },
   "neraca": {
     "aset": 1421095611358.0,

@@ -1,23 +1,23 @@
 {
   "kode": "LPPS",
-  "nama": "PT Lenox Pasifik Investama Tbk",
-  "sektor": "Financial Services",
-  "industri": "Capital Markets",
-  "harga": 55.0,
-  "update": "2026-10-21 12:31",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:49",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.08700604189434342,
-    "ps": 0.00026072115384615386,
+    "pb": null,
+    "ps": null,
     "roe": -0.11409928001391272,
-    "eps": -211825665.2305612,
+    "eps": null,
     "de": 0.0008724655827548379,
     "margin_net": -620.2059216201551,
     "current_ratio": 261.21587171518263,
     "roa": -0.11399981909531177,
-    "bv": 632.1400077800315
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 44000000000000.0
     },
     "eps": {
-      "2024-Q1": 2380000.0,
-      "2024-Q2": -27580000.0,
-      "2024-Q3": -32290000.0,
-      "2026-Q1": -27010000.0,
-      "2026-Q2": -3900000.0
+      "2024-Q1": 2.38,
+      "2024-Q2": -27.58,
+      "2024-Q3": -32.29,
+      "2026-Q1": -27.01,
+      "2026-Q2": -3.9
     },
     "net_income": {
       "2024-Q1": 6163718386000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 45210000.0,
-      "2022": -104510000.0,
-      "2023": 9010000.0,
-      "2025": 20700000.0
+      "2021": 45.21,
+      "2022": -104.51,
+      "2023": 9.01,
+      "2025": 20.7
     },
     "revenue_per_share": {
       "2021": 180000000000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 142353760256,
-    "enterprise_value": 12369344512,
-    "shares_outstanding": 1109250000,
-    "free_float_pct": 45.76133333333333
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2595,
-    "vol_trend": 1.342,
-    "price_chg_20d": -30.0
+    "cmf": -0.2044,
+    "vol_trend": 1.234,
+    "price_chg_20d": -1.72
   },
   "neraca": {
     "aset": 701813077634.0,

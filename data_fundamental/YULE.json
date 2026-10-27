@@ -1,10 +1,10 @@
 {
   "kode": "YULE",
-  "nama": "PT Yulie Sekuritas Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Capital Markets",
-  "harga": 3540.0,
-  "update": "2026-10-21 13:22",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:41",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,23 +12,23 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 8.12960029982766,
-    "ps": 0.0019295710732076476,
+    "pb": null,
+    "ps": null,
     "roe": -0.009900078513046454,
-    "eps": -17.243788940977772,
+    "eps": null,
     "de": 0.11673361452881839,
     "margin_net": -9.399185404804703,
     "current_ratio": null,
     "roa": -0.008853744832780508,
-    "bv": 435.44576233041187
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2026-Q1": 728010923000000.0
     },
     "eps": {
-      "2024-Q3": 13010000.0,
-      "2026-Q1": -4310950.0
+      "2024-Q3": 13.01,
+      "2026-Q1": -4.31
     },
     "net_income": {
       "2024-Q3": 2.0653358176e+16,
@@ -38,10 +38,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 53830000.0,
-      "2022": 36310000.0,
-      "2023": 17200000.0,
-      "2025": 83250000.0
+      "2021": 53.83,
+      "2022": 36.31,
+      "2023": 17.2,
+      "2025": 83.25
     },
     "revenue_per_share": {
       "2021": 11538636000000.0,
@@ -51,18 +51,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5618995298304,
-    "enterprise_value": 5554250448896,
-    "shares_outstanding": 1587286800,
-    "free_float_pct": 78.33899998412384
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4596,
-    "vol_trend": 1.017,
-    "price_chg_20d": -1.95
+    "cmf": -0.3716,
+    "vol_trend": 0.688,
+    "price_chg_20d": 2.51
   },
   "neraca": {
     "aset": 772860498155.0,

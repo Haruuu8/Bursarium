@@ -1,23 +1,23 @@
 {
   "kode": "CASA",
-  "nama": "PT Capital Financial Indonesia Tbk",
-  "sektor": "Financial Services",
-  "industri": "Insurance - Life",
-  "harga": 1800.0,
-  "update": "2026-10-21 13:23",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:41",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1625.5372850388742,
-    "pb": 11.974316863824216,
-    "ps": 72.59399735216319,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0037750793231918016,
-    "eps": 1.1073261847432516,
+    "eps": null,
     "de": 2.6191884763975724,
     "margin_net": 0.035287698503292025,
     "current_ratio": null,
     "roa": 0.0009215144195514394,
-    "bv": 150.3217277837374
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,9 +28,9 @@
       "2026-Q2": 433938000000.0
     },
     "eps": {
-      "2024-Q3": -219999.39,
-      "2026-Q1": 180000.0,
-      "2026-Q2": 387477.6
+      "2024-Q3": -0.22,
+      "2026-Q1": 0.18,
+      "2026-Q2": 0.39
     },
     "net_income": {
       "2024-Q1": 3806000000.0,
@@ -43,9 +43,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 510000.0,
-      "2023": 1000000.51,
-      "2025": 2390000.0
+      "2022": 0.51,
+      "2023": 1.0,
+      "2025": 2.39
     },
     "revenue_per_share": {
       "2022": 625261000000.0,
@@ -54,18 +54,18 @@
     }
   },
   "statistik": {
-    "market_cap": 98057291038720,
-    "enterprise_value": 91551950700544,
-    "shares_outstanding": 54476269803,
-    "free_float_pct": 47.330999999159395
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.0,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.5489,
-    "vol_trend": 1.768,
-    "price_chg_20d": -0.28
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.5299,
+    "vol_trend": 1.824,
+    "price_chg_20d": 0.28
   },
   "neraca": {
     "aset": 33546952.0,

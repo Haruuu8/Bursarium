@@ -1,23 +1,23 @@
 {
   "kode": "HITS",
-  "nama": "PT Humpuss Intermoda Transportasi Tbk.",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 116.0,
-  "update": "2026-10-21 12:06",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:25",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.11929663348652991,
-    "pb": 0.014093136110599504,
-    "ps": 0.005918127022458448,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.019899886610015873,
-    "eps": 972.3660811694058,
+    "eps": null,
     "de": 3.9907181037738635,
     "margin_net": 0.016407507653934745,
     "current_ratio": 1.054619072752712,
     "roa": 0.0034418577165458214,
-    "bv": 8230.957190057643
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 36607877000000.0
     },
     "eps": {
-      "2024-Q1": 310.0,
-      "2024-Q2": 390.0,
-      "2024-Q3": 400.0,
-      "2026-Q1": -20.0,
-      "2026-Q2": 180.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 2156808000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -2040.0,
-      "2022": 1150.0,
-      "2023": 780.0,
-      "2025": -1000.0
+      "2021": -0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2021": 84986938000000.0,
@@ -58,10 +58,10 @@
     }
   },
   "statistik": {
-    "market_cap": 823725850624,
-    "enterprise_value": 823862689792,
-    "shares_outstanding": 7101084801,
-    "free_float_pct": 6.188999995298042
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

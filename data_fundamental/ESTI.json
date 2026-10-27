@@ -1,40 +1,43 @@
 {
   "kode": "ESTI",
-  "nama": "PT Ever Shine Tex Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Textile Manufacturing",
-  "harga": 119.0,
-  "update": "2026-10-21 11:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:17",
   "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 87.9116117690912,
-    "pb": 1.3375235679819302,
-    "ps": 0.522613476068936,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.007607206494490579,
-    "eps": 1.3536323314440601,
+    "eps": null,
     "de": 2.951588505705469,
     "margin_net": 0.005944760487859482,
     "current_ratio": 1.223985596808962,
     "roa": 0.001925085031237539,
-    "bv": 88.9703948765168
+    "bv": null
   },
   "quarterly": {
     "revenue": {
       "2024-Q3": 6648360000000.0,
+      "2024-Q4": 6968933000000.0,
+      "2025-Q1": 6610493000000.0,
       "2026-Q1": 1.00947324056e+17,
       "2026-Q2": 1.28485946096e+17
     },
     "eps": {
-      "2024-Q3": -60.0,
-      "2026-Q1": 1330000.0,
-      "2026-Q2": -650000.0
+      "2024-Q3": -0.0,
+      "2024-Q4": 0.0,
+      "2025-Q1": 0.0,
+      "2026-Q1": 1.33,
+      "2026-Q2": -0.65
     },
     "net_income": {
       "2024-Q3": -114159000000.0,
+      "2024-Q4": 551521000000.0,
+      "2025-Q1": 403521000000.0,
       "2026-Q1": 2689371988000000.0,
       "2026-Q2": -1325446149000000.0
     },
@@ -42,31 +45,33 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 800.0,
-      "2022": 30.0,
-      "2023": 640.0,
-      "2025": 560.0
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 30725639000000.0,
       "2022": 28555758000000.0,
       "2023": 22330314000000.0,
+      "2024": 25845724000000.0,
       "2025": 27182148000000.0
     }
   },
   "statistik": {
-    "market_cap": 239809839104,
-    "enterprise_value": 680979005440,
-    "shares_outstanding": 2015208720,
-    "free_float_pct": 8.791000021079702
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5262,
-    "vol_trend": 0.501,
-    "price_chg_20d": -21.52
+    "cmf": -0.3798,
+    "vol_trend": 0.316,
+    "price_chg_20d": -11.11
   },
   "neraca": {
     "aset": 708501607393.0,

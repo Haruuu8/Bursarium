@@ -1,26 +1,26 @@
 {
   "kode": "SHIP",
-  "nama": "PT Sillo Maritime Perdana Tbk",
-  "sektor": "Energy",
-  "industri": "Oil & Gas Equipment & Services",
-  "harga": 2130.0,
-  "update": "2026-10-21 13:23",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:42",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.2473296825878516,
-    "pb": 0.0376927895841399,
-    "ps": 0.023636287443494726,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.038099743214961075,
-    "eps": 8611.986954875192,
+    "eps": null,
     "de": 2.075888296507338,
     "margin_net": 0.09556591508218634,
     "current_ratio": 1.4611187184790821,
     "roa": 0.010504102903438258,
-    "bv": 56509.48161438935
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q1": 61273928000000.0
     },
     "eps": {
-      "2024-Q1": 2400.0,
-      "2024-Q2": 1000.0,
-      "2026-Q1": 2200.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 6493032000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 5500.0,
-      "2022": 6900.0,
-      "2023": 6800.0,
-      "2025": 6600.0
+      "2021": 0.01,
+      "2022": 0.01,
+      "2023": 0.01,
+      "2025": 0.01
     },
     "revenue_per_share": {
       "2021": 101413948000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5793152761856,
-    "enterprise_value": 6228714979328,
-    "shares_outstanding": 2719790000,
-    "free_float_pct": 18.306999988969736
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.3312,
-    "vol_trend": 0.272,
-    "price_chg_20d": -10.55
+    "score": 3.1,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0901,
+    "vol_trend": 0.404,
+    "price_chg_20d": -17.51
   },
   "neraca": {
     "aset": 557467787.0,

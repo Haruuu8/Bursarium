@@ -1,10 +1,10 @@
 {
   "kode": "CAKK",
-  "nama": "PT Cahayaputra Asa Keramik Tbk",
-  "sektor": "Industrials",
-  "industri": "Building Products & Equipment",
-  "harga": 150.0,
-  "update": "2026-10-21 14:04",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:08",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.3447481209875085,
-    "ps": 0.3574145020527059,
+    "pb": null,
+    "ps": null,
     "roe": -0.08344998630265606,
-    "eps": -18.616866236937003,
+    "eps": null,
     "de": 3.0694191443187826,
     "margin_net": -0.044359586505711146,
     "current_ratio": 0.5317924940402845,
     "roa": -0.020506921319142005,
-    "bv": 111.54505268231817
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 1.4498635674e+17
     },
     "eps": {
-      "2024-Q3": -7550000.0,
-      "2026-Q1": -7720000.0,
-      "2026-Q2": -1590000.0
+      "2024-Q3": -7.55,
+      "2026-Q1": -7.72,
+      "2026-Q2": -1.59
     },
     "net_income": {
       "2024-Q3": -9093068596000000.0,
@@ -42,9 +42,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 8770000.0,
-      "2023": -28330000.0,
-      "2025": -32550000.0
+      "2022": 8.77,
+      "2023": -28.33,
+      "2025": -32.55
     },
     "revenue_per_share": {
       "2022": 2.5032065534e+17,
@@ -53,18 +53,18 @@
     }
   },
   "statistik": {
-    "market_cap": 180495040512,
-    "enterprise_value": 458426712064,
-    "shares_outstanding": 1203300219,
-    "free_float_pct": 11.35700001065154
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1762,
-    "vol_trend": 1.015,
-    "price_chg_20d": -3.82
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1441,
+    "vol_trend": 1.54,
+    "price_chg_20d": -2.55
   },
   "neraca": {
     "aset": 546198009720.0,

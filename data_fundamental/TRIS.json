@@ -1,26 +1,26 @@
 {
   "kode": "TRIS",
-  "nama": "PT Trisula International Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Apparel Manufacturing",
-  "harga": 164.0,
-  "update": "2026-10-21 13:16",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:36",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 7.359849948320392,
-    "pb": 0.9050822930103455,
-    "ps": 0.27852387732223644,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.030743911199470054,
-    "eps": 22.28306299062888,
+    "eps": null,
     "de": 0.9609825333330985,
     "margin_net": 0.03784368965100967,
     "current_ratio": 1.9941670909428506,
     "roa": 0.01210243834819134,
-    "bv": 181.19899291646556
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 4.55334981655e+17
     },
     "eps": {
-      "2024-Q1": 4690000.0,
-      "2026-Q1": 5570000.0
+      "2024-Q1": 4.69,
+      "2026-Q1": 5.57
     },
     "net_income": {
       "2024-Q1": 1.4613612643e+16,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1490000.0,
-      "2022": 10910000.0,
-      "2023": 12230000.0,
-      "2025": 19800000.0
+      "2021": 1.49,
+      "2022": 10.91,
+      "2023": 12.23,
+      "2025": 19.8
     },
     "revenue_per_share": {
-      "2021": 1.098352842355e+18,
-      "2022": 1.498011822265e+18,
-      "2023": 1.472856196208e+18,
-      "2025": 1.733311160699e+18
+      "2021": 1098352842355.0,
+      "2022": 1498011822265.0,
+      "2023": 1472856196208.0,
+      "2025": 1733311160699.0
     }
   },
   "statistik": {
-    "market_cap": 507286683648,
-    "enterprise_value": 800664846336,
-    "shares_outstanding": 3093211331,
-    "free_float_pct": 33.963999985101566
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3934,
-    "vol_trend": 0.589,
-    "price_chg_20d": -8.72
+    "cmf": -0.2417,
+    "vol_trend": 0.407,
+    "price_chg_20d": -6.51
   },
   "neraca": {
     "aset": 1423808594371.0,

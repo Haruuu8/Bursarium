@@ -1,10 +1,10 @@
 {
   "kode": "PSKT",
-  "nama": "PT Red Planet Indonesia Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 155.0,
-  "update": "2026-10-21 12:51",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:09",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.013933291687702,
-    "ps": 35.269063365064085,
+    "pb": null,
+    "ps": null,
     "roe": -0.006272411265254934,
-    "eps": -0.7756176155963669,
+    "eps": null,
     "de": 0.14285432737733514,
     "margin_net": -0.17648585052598825,
     "current_ratio": 1.2438989175639867,
     "roa": -0.005488618731193955,
-    "bv": 30.913853651975217
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1.1372863003e+16
     },
     "eps": {
-      "2024-Q3": 20000.0,
-      "2026-Q1": -190000.0
+      "2024-Q3": 0.02,
+      "2026-Q1": -0.19
     },
     "net_income": {
       "2024-Q3": 218038437000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -1170000.0,
-      "2022": -720000.0,
-      "2023": -1030000.0,
-      "2025": -1220000.0
+      "2021": -1.17,
+      "2022": -0.72,
+      "2023": -1.03,
+      "2025": -1.22
     },
     "revenue_per_share": {
       "2021": 4.726928896e+16,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1604440948736,
-    "enterprise_value": 1637025841152,
-    "shares_outstanding": 10351231636,
-    "free_float_pct": 19.82200000108277
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2612,
-    "vol_trend": 0.643,
-    "price_chg_20d": -31.03
+    "cmf": -0.2801,
+    "vol_trend": 1.02,
+    "price_chg_20d": -21.3
   },
   "neraca": {
     "aset": 365692990951.0,

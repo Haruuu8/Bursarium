@@ -1,23 +1,23 @@
 {
   "kode": "INDR",
-  "nama": "PT. Indo-Rama Synthetics Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Textile Manufacturing",
-  "harga": 2810.0,
-  "update": "2026-10-21 12:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:32",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.004858929870685986,
-    "ps": 0.0022135980414469732,
+    "pb": null,
+    "ps": null,
     "roe": 0.009417339558111507,
-    "eps": -4425.633751727953,
+    "eps": null,
     "de": 1.0549904644803594,
     "margin_net": 0.008599279335088654,
     "current_ratio": 1.0123456948333267,
     "roa": 0.004533524298394094,
-    "bv": 578316.640656368
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 221240526000000.0
     },
     "eps": {
-      "2024-Q1": -46400.0,
-      "2024-Q2": 16800.0,
-      "2024-Q3": 1000.0,
-      "2026-Q1": -35900.0,
-      "2026-Q2": 46800.0
+      "2024-Q1": -0.05,
+      "2024-Q2": 0.02,
+      "2024-Q3": 0.0,
+      "2026-Q1": -0.04,
+      "2026-Q2": 0.05
     },
     "net_income": {
       "2024-Q1": -7587102000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 129200.0,
-      "2022": 65000.0,
-      "2023": -62400.0,
-      "2025": -24700.0
+      "2021": 0.13,
+      "2022": 0.07,
+      "2023": -0.06,
+      "2025": -0.02
     },
     "revenue_per_share": {
       "2021": 884101773000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1838728216576,
-    "enterprise_value": 1838839365632,
-    "shares_outstanding": 654351707,
-    "free_float_pct": 7.718999959757116
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2656,
-    "vol_trend": 0.708,
-    "price_chg_20d": 1.08
+    "cmf": 0.2739,
+    "vol_trend": 0.536,
+    "price_chg_20d": -7.12
   },
   "neraca": {
     "aset": 786084460.0,

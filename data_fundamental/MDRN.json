@@ -1,23 +1,23 @@
 {
   "kode": "MDRN",
-  "nama": "PT Modern Internasional Tbk",
-  "sektor": "Industrials",
-  "industri": "Business Equipment & Supplies",
-  "harga": 26.0,
-  "update": "2026-10-21 12:35",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:52",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 3.4776114279551584e-06,
+    "pe": null,
     "pb": null,
-    "ps": 3.5150772103689304e-06,
+    "ps": null,
     "roe": -0.17231797046759553,
-    "eps": 7476395.951254406,
+    "eps": null,
     "de": -1.8723390835283573,
     "margin_net": 4.436599322905755,
     "current_ratio": 0.27831997085242133,
     "roa": 0.19753553832601375,
-    "bv": -40.52525956031325
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 7920658367000000.0
     },
     "eps": {
-      "2024-Q1": 10000.0,
-      "2024-Q2": 360000.0,
-      "2024-Q3": -40000.0,
-      "2026-Q1": 4600000.0
+      "2024-Q1": 0.01,
+      "2024-Q2": 0.36,
+      "2024-Q3": -0.04,
+      "2026-Q1": 4.6
     },
     "net_income": {
       "2024-Q1": 82666441000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 17000000.0,
-      "2022": 10000000.0,
-      "2023": 2000000.0,
-      "2025": 9000000.0
+      "2021": 17.0,
+      "2022": 10.0,
+      "2023": 2.0,
+      "2025": 9.0
     },
     "revenue_per_share": {
       "2021": 7.8132730608e+16,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 198436372480,
-    "enterprise_value": 435689324544,
-    "shares_outstanding": 5032167798,
-    "free_float_pct": 29.57477718830234
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

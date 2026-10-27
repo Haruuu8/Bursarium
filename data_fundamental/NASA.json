@@ -1,23 +1,23 @@
 {
   "kode": "NASA",
-  "nama": "PT Andalan Perkasa Abadi Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 31.0,
-  "update": "2026-10-21 13:32",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:53",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 6.538022520436845e-05,
-    "pb": 0.3125610294167074,
-    "ps": 2.8527040564035973e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.0007296688540151111,
-    "eps": 474149.4833200529,
+    "eps": null,
     "de": 0.023264648097571002,
     "margin_net": -1.0519214802380192,
     "current_ratio": 2.5745970098786324,
     "roa": -0.0007147822966856831,
-    "bv": 99.18063060468968
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 757105861000000.0
     },
     "eps": {
-      "2024-Q1": 170000.0,
-      "2024-Q2": 190000.0,
-      "2024-Q3": 190000.0,
-      "2026-Q1": 70000.0
+      "2024-Q1": 0.17,
+      "2024-Q2": 0.19,
+      "2024-Q3": 0.19,
+      "2026-Q1": 0.07
     },
     "net_income": {
       "2024-Q1": 1901453928000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -450000.0,
-      "2022": -30000.0,
-      "2023": 580000.0,
-      "2025": 350000.0
+      "2021": -0.45,
+      "2022": -0.03,
+      "2023": 0.58,
+      "2025": 0.35
     },
     "revenue_per_share": {
       "2021": 4235194746000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 341152792576,
-    "enterprise_value": 278696689664,
-    "shares_outstanding": 11004929322,
-    "free_float_pct": 57.28599999635691
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3258,
-    "vol_trend": 36.476,
-    "price_chg_20d": -6.06
+    "cmf": -0.3268,
+    "vol_trend": 13.756,
+    "price_chg_20d": -15.0
   },
   "neraca": {
     "aset": 1114207670913.0,

@@ -1,23 +1,23 @@
 {
   "kode": "MIDI",
-  "nama": "PT Midi Utama Indonesia Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Grocery Stores",
-  "harga": 246.0,
-  "update": "2026-10-21 12:38",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:56",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 11.230130747175087,
-    "pb": 1.7108994791221397,
-    "ps": 0.39992808275087854,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.05524080174545358,
-    "eps": 21.905354936484663,
+    "eps": null,
     "de": 1.0108458498155264,
     "margin_net": 0.04516465657459631,
     "current_ratio": 1.0612503037399708,
     "roa": 0.02747142539569671,
-    "bv": 143.78401712193067
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 5879996000000.0
     },
     "eps": {
-      "2024-Q1": 4.74,
-      "2024-Q2": 4.97,
-      "2024-Q3": 4.25,
-      "2026-Q1": 7940000.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 7.94
     },
     "net_income": {
       "2024-Q1": 158565000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 95480000.0,
-      "2022": 138400000.0,
-      "2023": 16730000.0,
-      "2025": 23700000.0
+      "2021": 95.48,
+      "2022": 138.4,
+      "2023": 16.73,
+      "2025": 23.7
     },
     "revenue_per_share": {
       "2021": 13584036000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 8225082572800,
-    "enterprise_value": 8648773337088,
-    "shares_outstanding": 33435294800,
-    "free_float_pct": 22.23800000112456
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.5,
+    "score": 5.6,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.035,
-    "vol_trend": 0.596,
-    "price_chg_20d": -2.29
+    "cmf": 0.0394,
+    "vol_trend": 0.668,
+    "price_chg_20d": -0.78
   },
   "neraca": {
     "aset": 9667063.0,

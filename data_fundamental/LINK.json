@@ -1,23 +1,23 @@
 {
   "kode": "LINK",
-  "nama": "PT Link Net Tbk",
-  "sektor": "Communication Services",
-  "industri": "Telecom Services",
-  "harga": 1275.0,
-  "update": "2026-10-21 12:27",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:46",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.2891802294484411,
-    "ps": 1.672214632498089,
+    "pb": null,
+    "ps": null,
     "roe": -0.31266067522328395,
-    "eps": -560.4669014130811,
+    "eps": null,
     "de": 3.9678495349276086,
     "margin_net": -0.6226416473884471,
     "current_ratio": 0.23288950555784488,
     "roa": -0.06293678281887068,
-    "bv": 989.0005841506677
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 706335000000.0
     },
     "eps": {
-      "2024-Q1": -40000000.0,
-      "2024-Q2": -62000000.0,
-      "2024-Q3": 101999502.0,
-      "2026-Q1": -159000000.0,
-      "2026-Q2": -150000000.0
+      "2024-Q1": -40.0,
+      "2024-Q2": -62.0,
+      "2024-Q3": 102.0,
+      "2026-Q1": -159.0,
+      "2026-Q2": -150.0
     },
     "net_income": {
       "2024-Q1": -109622000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 322000000.0,
-      "2022": 87000000.0,
-      "2023": -194000000.0,
-      "2025": -527.0
+      "2021": 322.0,
+      "2022": 87.0,
+      "2023": -194.0,
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2021": 4464900000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3511290953728,
-    "enterprise_value": 11658999103488,
-    "shares_outstanding": 2753953884,
-    "free_float_pct": 7.88399999220902
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3467,
-    "vol_trend": 0.373,
-    "price_chg_20d": -26.2
+    "cmf": -0.4989,
+    "vol_trend": 0.849,
+    "price_chg_20d": -17.52
   },
   "neraca": {
     "aset": 13530752.0,

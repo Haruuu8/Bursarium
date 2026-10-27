@@ -1,23 +1,23 @@
 {
   "kode": "SFAN",
-  "nama": "PT Surya Fajar Capital Tbk",
-  "sektor": "Financial Services",
-  "industri": "Asset Management",
-  "harga": 1960.0,
-  "update": "2026-10-21 14:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:16",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 26.906150556964448,
-    "ps": -0.001204059911691617,
+    "pb": null,
+    "ps": null,
     "roe": -0.09501381240695422,
-    "eps": -31939239.336082466,
+    "eps": null,
     "de": 0.21410860540020887,
     "margin_net": 7.409756782682326,
     "current_ratio": 7.710158930065301,
     "roa": -0.06392183623183043,
-    "bv": 72.84579768668057
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": -1270296593000000.0
     },
     "eps": {
-      "2024-Q1": -13830000.0,
-      "2024-Q2": -9880000.0,
-      "2024-Q3": -1310000.0,
-      "2026-Q1": -6920000.0
+      "2024-Q1": -13.83,
+      "2024-Q2": -9.88,
+      "2024-Q3": -1.31,
+      "2026-Q1": -6.92
     },
     "net_income": {
       "2024-Q1": -1.8807438694e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -12000000.0,
-      "2022": -15230000.0,
-      "2023": 10410000.0,
-      "2025": 8850000.0
+      "2021": -12.0,
+      "2022": -15.23,
+      "2023": 10.41,
+      "2025": 8.85
     },
     "revenue_per_share": {
       "2021": 1.1782784714e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2665470754816,
-    "enterprise_value": 2676667187200,
-    "shares_outstanding": 1359934021,
-    "free_float_pct": 26.210000007051814
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.7,
+    "score": 4.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0852,
-    "vol_trend": 0.702,
-    "price_chg_20d": -2.24
+    "cmf": -0.0679,
+    "vol_trend": 0.697,
+    "price_chg_20d": -2.0
   },
   "neraca": {
     "aset": 147251539550.0,

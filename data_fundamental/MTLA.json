@@ -1,23 +1,23 @@
 {
   "kode": "MTLA",
-  "nama": "PT Metropolitan Land Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 700.0,
-  "update": "2026-10-21 12:43",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:00",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 14.251602879262977,
-    "pb": 0.9659484554182982,
-    "ps": 3.2140320042369224,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.01120597084554832,
-    "eps": 49.11728217031266,
+    "eps": null,
     "de": 0.38220283086636136,
     "margin_net": 0.17165728739237765,
     "current_ratio": 3.262869309133613,
     "roa": 0.007594379389612981,
-    "bv": 724.6763490054644
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 362146000000.0
     },
     "eps": {
-      "2024-Q1": 9114580.75,
-      "2024-Q2": 15077312.63,
-      "2024-Q3": 16804664.49,
-      "2026-Q1": 8120702.03
+      "2024-Q1": 9.11,
+      "2024-Q2": 15.08,
+      "2024-Q3": 16.8,
+      "2026-Q1": 8.12
     },
     "net_income": {
       "2024-Q1": 69773000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 48597107.87,
-      "2022": 51640000.0,
-      "2023": 54550000.0,
-      "2025": 53941631.03
+      "2021": 48.6,
+      "2022": 51.64,
+      "2023": 54.55,
+      "2025": 53.94
     },
     "revenue_per_share": {
       "2021": 1199074000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5358588788736,
-    "enterprise_value": 6335164317696,
-    "shares_outstanding": 7655126330,
-    "free_float_pct": 35.734000003106416
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 8.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1948,
-    "vol_trend": 69.499,
-    "price_chg_20d": 31.07
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.2883,
+    "vol_trend": 12.929,
+    "price_chg_20d": 13.82
   },
   "neraca": {
     "aset": 8185659.0,

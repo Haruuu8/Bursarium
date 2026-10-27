@@ -1,23 +1,23 @@
 {
   "kode": "GZCO",
-  "nama": "PT Gozco Plantations Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Farm Products",
-  "harga": 121.0,
-  "update": "2026-10-21 12:04",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:25",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 15.717601946329841,
-    "pb": 0.5798224903534125,
-    "ps": 1.1399540017604486,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.020071700634925374,
-    "eps": 7.698375389144796,
+    "eps": null,
     "de": 0.7447231881246238,
     "margin_net": 0.07390188135525959,
     "current_ratio": 0.49547931669636364,
     "roa": 0.011240775659488401,
-    "bv": 208.6845577967289
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 188157000000.0
     },
     "eps": {
-      "2024-Q1": -2310000.0,
-      "2024-Q2": 310000.0,
-      "2024-Q3": 3070000.0,
-      "2026-Q1": -820000.0,
-      "2026-Q2": 5010000.0
+      "2024-Q1": -2.31,
+      "2024-Q2": 0.31,
+      "2024-Q3": 3.07,
+      "2026-Q1": -0.82,
+      "2026-Q2": 5.01
     },
     "net_income": {
       "2024-Q1": -13842000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2000000.0,
-      "2022": 13000000.0,
-      "2023": 360000.0,
-      "2025": 17780000.0
+      "2021": 2.0,
+      "2022": 13.0,
+      "2023": 0.36,
+      "2025": 17.78
     },
     "revenue_per_share": {
       "2021": 707102000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 699338981376,
-    "enterprise_value": 1004022988800,
-    "shares_outstanding": 5779661000,
-    "free_float_pct": 32.724000006228735
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.6,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1285,
-    "vol_trend": 0.169,
-    "price_chg_20d": -30.34
+    "score": 4.4,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0035,
+    "vol_trend": 0.148,
+    "price_chg_20d": -23.08
   },
   "neraca": {
     "aset": 2153677.0,

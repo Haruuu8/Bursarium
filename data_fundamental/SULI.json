@@ -1,23 +1,23 @@
 {
   "kode": "SULI",
-  "nama": "PT SLJ Global Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Lumber & Wood Production",
-  "harga": 64.0,
-  "update": "2026-10-21 13:08",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:28",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.006008185450768312,
-    "ps": 0.018500104165044218,
+    "pb": null,
+    "ps": null,
     "roe": -0.02593535180334971,
-    "eps": -5704.869513475958,
+    "eps": null,
     "de": 2.203955849019115,
     "margin_net": -0.1121710105974984,
     "current_ratio": 0.3152380658622041,
     "roa": -0.008095232586212881,
-    "bv": 10652.134579470387
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3044209000000.0
     },
     "eps": {
-      "2024-Q1": 84.0,
-      "2024-Q2": 466.0,
-      "2024-Q3": -1683.28,
-      "2026-Q1": -54.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": -0.0,
+      "2026-Q1": -0.0
     },
     "net_income": {
       "2024-Q1": -483742000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 863.0,
-      "2022": 9257.0,
-      "2023": 3465.0,
-      "2025": 574.0
+      "2021": 0.0,
+      "2022": 0.01,
+      "2023": 0.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 71396229000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 404529709056,
-    "enterprise_value": 398215708672,
-    "shares_outstanding": 1236022311,
-    "free_float_pct": 27.926488051881126
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1639,
-    "vol_trend": 0.272,
-    "price_chg_20d": -25.88
+    "cmf": -0.1368,
+    "vol_trend": 0.384,
+    "price_chg_20d": -8.45
   },
   "neraca": {
     "aset": 42181864.0,

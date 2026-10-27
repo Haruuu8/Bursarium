@@ -1,37 +1,37 @@
 {
   "kode": "CARS",
-  "nama": "PT Industri dan Perdagangan Bintraco Dharma Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Auto & Truck Dealerships",
-  "harga": 88.0,
-  "update": "2026-10-21 13:27",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:46",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 7.928970684434952,
-    "pb": 1.198462352315899,
-    "ps": 0.2774151800593857,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.07557490120808197,
-    "eps": 11.0985402144,
+    "eps": null,
     "de": 1.5496916828728262,
     "margin_net": 0.034987540136069424,
     "current_ratio": 0.964750258722181,
     "roa": 0.026576631516927036,
-    "bv": 73.42742125353334
+    "bv": null
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 1.5456432012749998e+18,
-      "2026-Q1": 1.130897942724e+18,
-      "2026-Q2": 1.248207626981e+18
+      "2024-Q3": 1545643201275.0,
+      "2026-Q1": 1130897942724.0,
+      "2026-Q2": 1248207626981.0
     },
     "eps": {
-      "2024-Q3": 3970000.0,
-      "2026-Q1": 3280000.0,
-      "2026-Q2": 2270000.0
+      "2024-Q3": 3.97,
+      "2026-Q1": 3.28,
+      "2026-Q2": 2.27
     },
     "net_income": {
       "2024-Q3": 5.9485219787e+16,
@@ -42,27 +42,27 @@
   },
   "riwayat": {
     "eps": {
-      "2023": 11000000.0,
-      "2025": 9880000.0
+      "2023": 11.0,
+      "2025": 9.88
     },
     "revenue_per_share": {
-      "2023": 6.485021029869e+18,
-      "2025": 4.731990735351e+18
+      "2023": 6485021029869.0,
+      "2025": 4731990735351.0
     }
   },
   "statistik": {
-    "market_cap": 1320000028672,
-    "enterprise_value": 2447045820416,
-    "shares_outstanding": 15000000000,
-    "free_float_pct": 92.247
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2486,
-    "vol_trend": 1.23,
-    "price_chg_20d": -24.59
+    "cmf": -0.3344,
+    "vol_trend": 0.704,
+    "price_chg_20d": -23.01
   },
   "neraca": {
     "aset": 3132039195975.0,

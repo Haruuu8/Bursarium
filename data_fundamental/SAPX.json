@@ -1,26 +1,26 @@
 {
   "kode": "SAPX",
-  "nama": "PT Satria Antaran Prima Tbk",
-  "sektor": "Industrials",
-  "industri": "Integrated Freight & Logistics",
-  "harga": 294.0,
-  "update": "2026-10-21 14:02",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:07",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.00012954715897273757,
-    "pb": 1.164450580870818,
-    "ps": 0.5434995323956242,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.002247155765715923,
-    "eps": 2269443.825177753,
+    "eps": null,
     "de": 0.9966557296563855,
     "margin_net": 0.004195379788374985,
     "current_ratio": 1.9880882790176422,
     "roa": 0.001125459803780318,
-    "bv": 252.47958550558343
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1.12695584631e+17
     },
     "eps": {
-      "2024-Q3": -4610000.0,
-      "2026-Q1": 890000.0
+      "2024-Q3": -4.61,
+      "2026-Q1": 0.89
     },
     "net_income": {
       "2024-Q3": -3840580671000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 53700000.0,
-      "2022": 1000000.0,
-      "2023": 1390000.0,
-      "2025": 890000.0
+      "2021": 53.7,
+      "2022": 1.0,
+      "2023": 1.39,
+      "2025": 0.89
     },
     "revenue_per_share": {
       "2021": 5.89409749578e+17,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 244999995392,
-    "enterprise_value": 390886195200,
-    "shares_outstanding": 833333300,
-    "free_float_pct": 8.9399999976
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.2,
+    "score": 5.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0167,
-    "vol_trend": 0.739,
-    "price_chg_20d": -20.21
+    "cmf": -0.0005,
+    "vol_trend": 0.425,
+    "price_chg_20d": -3.64
   },
   "neraca": {
     "aset": 420095659047.0,

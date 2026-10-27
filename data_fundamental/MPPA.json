@@ -1,23 +1,23 @@
 {
   "kode": "MPPA",
-  "nama": "PT Matahari Putra Prima Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Department Stores",
-  "harga": 34.0,
-  "update": "2026-10-21 12:41",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:58",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.15047462167130754,
+    "ps": null,
     "roe": -0.7806341045415596,
-    "eps": -2.6784516760473633,
+    "eps": null,
     "de": -1374.1375321336761,
     "margin_net": 0.0008271373692673524,
     "current_ratio": 0.7824101369657166,
     "roa": 0.0005681958161203577,
-    "bv": -0.0689943185764609
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2202778000000.0
     },
     "eps": {
-      "2024-Q1": -2.0,
-      "2024-Q2": -2.0,
-      "2024-Q3": -3.1,
-      "2026-Q1": 140514.43
+      "2024-Q1": -0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": -0.0,
+      "2026-Q1": 0.14
     },
     "net_income": {
       "2024-Q1": -30071000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -45000000.0,
-      "2022": -51000000.0,
-      "2023": -20.0,
-      "2025": -12.0
+      "2021": -45.0,
+      "2022": -51.0,
+      "2023": -0.0,
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2021": 6655222000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1150181703680,
-    "enterprise_value": 1502311743488,
-    "shares_outstanding": 33828872408,
-    "free_float_pct": 15.71725685051985
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.7,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0102,
-    "vol_trend": 1.274,
-    "price_chg_20d": -12.82
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1954,
+    "vol_trend": 1.158,
+    "price_chg_20d": 11.43
   },
   "neraca": {
     "aset": 3206641.0,

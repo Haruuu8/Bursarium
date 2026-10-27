@@ -1,23 +1,23 @@
 {
   "kode": "MIRA",
-  "nama": "PT Mitra International Resources Tbk",
-  "sektor": "Energy",
-  "industri": "Oil & Gas Equipment & Services",
-  "harga": 19.0,
-  "update": "2026-10-21 12:38",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:55",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5214642973662588,
-    "ps": 1.253377711397627e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.01080330271697851,
-    "eps": -2069141.689285513,
+    "eps": null,
     "de": 0.5988872214025411,
     "margin_net": -0.11631392908289583,
     "current_ratio": 0.6368532948107012,
     "roa": -0.006780859362734949,
-    "bv": 36.435859743347
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.3406278683e+16
     },
     "eps": {
-      "2024-Q1": -330000.0,
-      "2024-Q2": -1270000.0,
-      "2024-Q3": -80000.0,
-      "2026-Q1": -393627.62
+      "2024-Q1": -0.33,
+      "2024-Q2": -1.27,
+      "2024-Q3": -0.08,
+      "2026-Q1": -0.39
     },
     "net_income": {
       "2024-Q1": -1315469185000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -3310000.0,
-      "2022": -7980000.0,
-      "2023": -2640000.0,
-      "2025": -2070000.0
+      "2021": -3.31,
+      "2022": -7.98,
+      "2023": -2.64,
+      "2025": -2.07
     },
     "revenue_per_share": {
       "2021": 8.5604008684e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 75267588096,
-    "enterprise_value": 118033309696,
-    "shares_outstanding": 3961452039,
-    "free_float_pct": 73.1140000051885
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1596,
-    "vol_trend": 10.031,
-    "price_chg_20d": -16.67
+    "cmf": -0.3389,
+    "vol_trend": 3.471,
+    "price_chg_20d": -34.38
   },
   "neraca": {
     "aset": 229961552745.0,

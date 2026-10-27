@@ -1,23 +1,23 @@
 {
   "kode": "BOLA",
-  "nama": "PT Bali Bintang Sejahtera Tbk",
-  "sektor": "Communication Services",
-  "industri": "Entertainment",
-  "harga": 153.0,
-  "update": "2026-10-21 14:12",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:14",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.5789108671085714,
-    "ps": 3.3912758307370006e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.27284619049428016,
-    "eps": -34526251.258,
+    "eps": null,
     "de": 0.21001442697634942,
     "margin_net": -1.0722927868251904,
     "current_ratio": 4.814214347924434,
     "roa": -0.20605810341155356,
-    "bv": 96.90224013733334
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 7.0079230427e+16
     },
     "eps": {
-      "2024-Q1": 2800.0,
-      "2024-Q2": -11642800.0,
-      "2024-Q3": 4440000.0,
-      "2026-Q1": -17140000.0,
-      "2026-Q2": -9300000.0
+      "2024-Q1": 0.0,
+      "2024-Q2": -11.64,
+      "2024-Q3": 4.44,
+      "2026-Q1": -17.14,
+      "2026-Q2": -9.3
     },
     "net_income": {
       "2024-Q1": 16595953000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 2730000.0,
-      "2023": -620000.0,
-      "2025": 19390000.0
+      "2022": 2.73,
+      "2023": -0.62,
+      "2025": 19.39
     },
     "revenue_per_share": {
       "2022": 3.53135773784e+17,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 917999976448,
-    "enterprise_value": 831574573056,
-    "shares_outstanding": 6000000000,
-    "free_float_pct": 53.010000000000005
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.0,
+    "score": 3.8,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0326,
-    "vol_trend": 0.494,
-    "price_chg_20d": -7.02
+    "cmf": -0.0483,
+    "vol_trend": 0.477,
+    "price_chg_20d": -6.63
   },
   "neraca": {
     "aset": 769862673705.0,

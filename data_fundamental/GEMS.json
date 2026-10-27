@@ -1,23 +1,23 @@
 {
   "kode": "GEMS",
-  "nama": "PT Golden Energy Mines Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 7175.0,
-  "update": "2026-10-21 12:01",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:20",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0947082904521093,
-    "pb": 0.050031054077969275,
-    "ps": 0.015115706914103957,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.2607458318961042,
-    "eps": 75758.94323241057,
+    "eps": null,
     "de": 0.6880389750177311,
     "margin_net": 0.14710495113178182,
     "current_ratio": 1.6568646275748469,
     "roa": 0.15348461143435632,
-    "bv": 143410.9301158907
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 912686597000000.0
     },
     "eps": {
-      "2024-Q1": 29000.0,
-      "2024-Q2": 25000.0,
-      "2024-Q3": 13557.26,
-      "2026-Q1": 14000.0,
-      "2026-Q2": 23000.0
+      "2024-Q1": 0.03,
+      "2024-Q2": 0.02,
+      "2024-Q3": 0.01,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.02
     },
     "net_income": {
       "2024-Q1": 171718367000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 59160.74,
-      "2022": 115660.0,
-      "2023": 88000.0,
-      "2025": 43900.0
+      "2021": 0.06,
+      "2022": 0.12,
+      "2023": 0.09,
+      "2025": 0.04
     },
     "revenue_per_share": {
       "2021": 1585953591000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 42205884448768,
-    "enterprise_value": 43235158261760,
-    "shares_outstanding": 5882353000,
-    "free_float_pct": 10.390000005100001
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 8.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.3923,
-    "vol_trend": 3.011,
-    "price_chg_20d": 2.08
+    "cmf": 0.3726,
+    "vol_trend": 3.29,
+    "price_chg_20d": 1.37
   },
   "neraca": {
     "aset": 1433130937.0,

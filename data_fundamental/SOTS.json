@@ -1,26 +1,26 @@
 {
   "kode": "SOTS",
-  "nama": "PT Satria Mega Kencana Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
-  "harga": 615.0,
-  "update": "2026-10-21 14:07",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:10",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.00022800137558243554,
-    "pb": 3.53572840939625,
-    "ps": 31.249781066175306,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.003876871795580332,
-    "eps": 2697352.147235806,
+    "eps": null,
     "de": 1.3527568120085343,
     "margin_net": 0.13705961635690536,
     "current_ratio": 1.744879571192707,
     "roa": 0.0016096954869302866,
-    "bv": 173.93869912791618
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 4920054046000000.0
     },
     "eps": {
-      "2024-Q1": -4236874.5,
-      "2026-Q1": 630000.0
+      "2024-Q1": -4.24,
+      "2026-Q1": 0.63
     },
     "net_income": {
       "2024-Q1": -4236874496000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -23220740.8,
-      "2022": -16518924.0,
-      "2023": -13675733.63,
-      "2025": -15630000.0
+      "2021": -23.22,
+      "2022": -16.52,
+      "2023": -13.68,
+      "2025": -15.63
     },
     "revenue_per_share": {
       "2021": 1.2383996473e+16,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 615002472448,
-    "enterprise_value": 796787867648,
-    "shares_outstanding": 1000003979,
-    "free_float_pct": 25.11399997139411
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 8.2,
+    "score": 7.7,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1107,
-    "vol_trend": 4.469,
-    "price_chg_20d": 14.04
+    "cmf": 0.0783,
+    "vol_trend": 3.648,
+    "price_chg_20d": 26.51
   },
   "neraca": {
     "aset": 418924402457.0,

@@ -3,19 +3,16 @@
   "nama": "PT Daya Intiguna Yasa Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
-  "harga": 790.0,
-  "update": "2026-10-21 11:08",
+  "harga": 745.0,
+  "update": "2026-10-26 23:19",
   "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "warnings": [],
   "rasio_kunci": {
-    "pe": 16.264138623183193,
-    "pb": 4.448259465433042,
-    "ps": 2.103259422725303,
+    "pe": 15.727568135630152,
+    "pb": 4.194877597148881,
+    "ps": 2.124007936094744,
     "roe": 0.0683752697959118,
-    "eps": 48.57312264136263,
+    "eps": 47.36905245460253,
     "de": 0.7122634424080727,
     "margin_net": 0.12931883276789582,
     "current_ratio": 1.6821148118832179,
@@ -24,37 +21,52 @@
   },
   "quarterly": {
     "revenue": {
-      "2026-Q1": 2365425000000.0
+      "2025-Q1": 1806198000000.0,
+      "2025-Q2": 1928391000000.0,
+      "2025-Q3": 2037534000000.0,
+      "2025-Q4": 2150123000000.0,
+      "2026-Q1": 2365425000000.0,
+      "2026-Q2": 2282498000000.0
     },
     "eps": {
-      "2026-Q1": 12.14
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
-      "2026-Q1": 305894000000.0
+      "2025-Q1": 225204000000.0,
+      "2025-Q2": 280482000000.0,
+      "2025-Q3": 284593000000.0,
+      "2025-Q4": 318972000000.0,
+      "2026-Q1": 305894000000.0,
+      "2026-Q2": 283786000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2025": 44.0
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2025": 7922246000000.0
     }
   },
   "statistik": {
-    "market_cap": 19900410101760,
-    "enterprise_value": 21759730384896,
+    "market_cap": 18766842822656,
+    "enterprise_value": 20626163105792,
     "shares_outstanding": 25190392000,
     "free_float_pct": 17.903000000952744
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.3043,
-    "vol_trend": 0.394,
-    "price_chg_20d": -15.71
+    "score": 5.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0729,
+    "vol_trend": 0.544,
+    "price_chg_20d": -21.16
   },
   "neraca": {
     "aset": 7708161.0,

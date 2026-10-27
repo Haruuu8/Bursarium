@@ -1,23 +1,23 @@
 {
   "kode": "WEHA",
-  "nama": "PT WEHA Transportasi Indonesia Tbk",
-  "sektor": "Industrials",
-  "industri": "Railroads",
-  "harga": 92.0,
-  "update": "2026-10-21 13:20",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:40",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.775032274182591e-06,
-    "pb": 0.5077951122289242,
-    "ps": 4.41855618776323e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.018554818247089957,
-    "eps": 19266885.48209843,
+    "eps": null,
     "de": 0.5836299768252602,
     "margin_net": 0.0594421122643061,
     "current_ratio": 0.8165122490456964,
     "roa": 0.011707641682821906,
-    "bv": 181.17543431281507
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 8.2599923303e+16
     },
     "eps": {
-      "2024-Q1": 3000000.0,
-      "2024-Q2": 7000000.0,
-      "2024-Q3": 6000000.0,
-      "2026-Q1": 3000000.0
+      "2024-Q1": 3.0,
+      "2024-Q2": 7.0,
+      "2024-Q3": 6.0,
+      "2026-Q1": 3.0
     },
     "net_income": {
       "2024-Q1": 4014203987000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -11000000.0,
-      "2022": 18000000.0,
-      "2023": 22000000.0,
-      "2025": 15000000.0
+      "2021": -11.0,
+      "2022": 18.0,
+      "2023": 22.0,
+      "2025": 15.0
     },
     "revenue_per_share": {
       "2021": 9.3434910443e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 134371049472,
-    "enterprise_value": 228954767360,
-    "shares_outstanding": 1460554819,
-    "free_float_pct": 31.627000027035617
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.7,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.121,
-    "vol_trend": 0.303,
-    "price_chg_20d": -17.86
+    "score": 4.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0466,
+    "vol_trend": 0.199,
+    "price_chg_20d": -3.96
   },
   "neraca": {
     "aset": 419376852061.0,

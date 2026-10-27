@@ -3,24 +3,24 @@
   "nama": "PT Solusi Environment Asia Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Renewable",
-  "harga": 161.0,
-  "update": "2026-10-21 14:31",
-  "periode_terbaru": "2025-audit",
+  "harga": 171.0,
+  "update": "2026-10-27 14:12",
+  "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 6.8373111338266,
-    "ps": 5.898908471032267,
-    "roe": -0.13341351169774315,
-    "eps": -3.1415237602790342,
-    "de": 0.3329243245356211,
-    "margin_net": -0.11510286410844182,
-    "current_ratio": 1.9745812168366885,
-    "roa": -0.09990047805821073,
-    "bv": 23.547268341128426
+    "pb": 8.504843118864983,
+    "ps": 6.611269952088362,
+    "roe": -0.17115978331501153,
+    "eps": -6.882742582739842,
+    "de": 0.3990891729396695,
+    "margin_net": -0.2661033288024969,
+    "current_ratio": 1.5880045790449673,
+    "roa": -0.12205695795262399,
+    "bv": 20.106190979666287
   },
   "quarterly": {
     "revenue": {},
@@ -30,67 +30,69 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -2270000.0,
-      "2022": 690000.0,
-      "2023": 70000.0,
-      "2025": -3140000.0
+      "2021": -2.27,
+      "2022": 0.69,
+      "2023": 0.07,
+      "2024": -0.55,
+      "2025": -3.14
     },
     "revenue_per_share": {
       "2021": 3.7446026309e+16,
       "2022": 4.7025953448e+16,
       "2023": 4.6642931257e+16,
+      "2024": 5.0252347233e+16,
       "2025": 4.5131314657e+16
     }
   },
   "statistik": {
-    "market_cap": 266225500160,
-    "enterprise_value": 271134507008,
+    "market_cap": 282761232384,
+    "enterprise_value": 292630986752,
     "shares_outstanding": 1653574499,
     "free_float_pct": 29.03299998217982
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3914,
-    "vol_trend": 1.272,
-    "price_chg_20d": -49.39
+    "cmf": -0.315,
+    "vol_trend": 1.184,
+    "price_chg_20d": -39.46
   },
   "neraca": {
-    "aset": 51999186380.0,
-    "aset_lancar": 25161527827.0,
-    "kas": 3023318426.0,
+    "aset": 46622199213.0,
+    "aset_lancar": 21067556813.0,
+    "kas": 2177820487.0,
     "piutang_usaha": 288058109.0,
-    "persediaan": 18958674855.0,
-    "aset_tetap": 23931129755.0,
-    "liabilitas": 12963128508.0,
-    "liabilitas_jangka_pendek": 12742716082.0,
-    "liabilitas_jangka_panjang": 220412426.0,
+    "persediaan": 13423049166.0,
+    "aset_tetap": 21884655673.0,
+    "liabilitas": 13268551526.0,
+    "liabilitas_jangka_pendek": 13266685179.0,
+    "liabilitas_jangka_panjang": 1866347.0,
     "utang_usaha": 288058109.0,
-    "utang_bank": 24286505.0,
-    "ekuitas": 38937162450.0,
-    "ekuitas_induk": 38937162450.0,
+    "utang_bank": 1585447.0,
+    "ekuitas": 33247084676.0,
+    "ekuitas_induk": 33247084676.0,
     "modal_saham": null,
-    "saldo_laba": -10322661928.0
+    "saldo_laba": -16013225737.0
   },
   "laba_rugi": {
-    "pendapatan": 45131314657.0,
-    "beban_pokok": 30882027116.0,
+    "pendapatan": 21384790016.0,
+    "beban_pokok": 16439893597.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -5255236015.0,
-    "beban_pajak": -43465929.0,
-    "laba_bersih": -5194743578.0,
-    "laba_induk": -5194743578.0,
-    "eps_basic": -3.14,
+    "laba_sebelum_pajak": -7144957122.0,
+    "beban_pajak": 1452060902.0,
+    "laba_bersih": -5690563809.0,
+    "laba_induk": -5690563809.0,
+    "eps_basic": -3.44,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 106055580.0,
+    "capex": 2796906.0,
     "dividen_dibayar": null
   }
 }

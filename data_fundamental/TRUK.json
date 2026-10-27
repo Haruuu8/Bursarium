@@ -1,23 +1,23 @@
 {
   "kode": "TRUK",
-  "nama": "PT Guna Timur Raya Tbk",
-  "sektor": "Industrials",
-  "industri": "Trucking",
-  "harga": 6025.0,
-  "update": "2026-10-21 13:48",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:00",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 68.58557010753215,
-    "ps": 5.202479058525236e-05,
+    "pb": null,
+    "ps": null,
     "roe": -0.06272282614157697,
-    "eps": -11077812.310344828,
+    "eps": null,
     "de": 0.40026880800620046,
     "margin_net": -0.244670248631204,
     "current_ratio": 0.940257638674951,
     "roa": -0.04479306484968312,
-    "bv": 87.84646669195402
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 9796208282000000.0
     },
     "eps": {
-      "2024-Q1": -1170000.0,
-      "2024-Q2": -2047400.0,
-      "2024-Q3": -2352600.0,
-      "2026-Q1": -5510000.0
+      "2024-Q1": -1.17,
+      "2024-Q2": -2.05,
+      "2024-Q3": -2.35,
+      "2026-Q1": -5.51
     },
     "net_income": {
       "2024-Q1": -506945260000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -11330000.0,
-      "2022": -9810000.0,
-      "2023": -7960000.0,
-      "2025": -14100000.0
+      "2021": -11.33,
+      "2022": -9.81,
+      "2023": -7.96,
+      "2025": -14.1
     },
     "revenue_per_share": {
       "2021": 3.9606222648e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2620875079680,
-    "enterprise_value": 2194321965056,
-    "shares_outstanding": 435000000,
-    "free_float_pct": 29.831000000000003
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.8381,
-    "vol_trend": 0.421,
-    "price_chg_20d": 193.0
+    "cmf": 0.9119,
+    "vol_trend": 0.784,
+    "price_chg_20d": 133.53
   },
   "neraca": {
     "aset": 53509192194.0,

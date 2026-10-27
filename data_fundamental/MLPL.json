@@ -1,23 +1,23 @@
 {
   "kode": "MLPL",
-  "nama": "PT Multipolar Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Department Stores",
-  "harga": 66.0,
-  "update": "2026-10-21 12:40",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:57",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.11167339943158397,
-    "pb": 0.006161889353561871,
-    "ps": 0.0026799876223512014,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.023903025601705624,
-    "eps": 591.0091421586436,
+    "eps": null,
     "de": 1.8224304771207913,
     "margin_net": 0.037896113311608824,
     "current_ratio": 1.1388299627021372,
     "roa": 0.00832126753592269,
-    "bv": 10711.000508610041
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 3161406000000.0
     },
     "eps": {
-      "2024-Q1": 2000000.0,
-      "2024-Q2": 7000000.0,
-      "2024-Q3": 1000000.0,
-      "2026-Q1": 8000000.0
+      "2024-Q1": 2.0,
+      "2024-Q2": 7.0,
+      "2024-Q3": 1.0,
+      "2026-Q1": 8.0
     },
     "net_income": {
       "2024-Q1": 31245000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 16000000.0,
-      "2022": 10000000.0,
-      "2023": 11000000.0,
-      "2025": -10000000.0
+      "2021": 16.0,
+      "2022": 10.0,
+      "2023": 11.0,
+      "2025": -10.0
     },
     "revenue_per_share": {
       "2021": 10310153000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1030481838080,
-    "enterprise_value": 1402749190144,
-    "shares_outstanding": 467942000,
-    "free_float_pct": 246.5081424621
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4615,
-    "vol_trend": 1.005,
-    "price_chg_20d": -19.28
+    "cmf": -0.466,
+    "vol_trend": 0.79,
+    "price_chg_20d": -6.94
   },
   "neraca": {
     "aset": 14397446.0,

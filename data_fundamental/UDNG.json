@@ -3,24 +3,24 @@
   "nama": "PT Agro Bahari Nusantara Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 340.0,
-  "update": "2026-10-21 11:02",
-  "periode_terbaru": "2025-audit",
+  "harga": 372.0,
+  "update": "2026-10-26 23:09",
+  "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 11.487794652478204,
-    "ps": 27.51656099403927,
-    "roe": -0.06623949489964043,
-    "eps": -1.9604657766945122,
-    "de": 0.08098360166676817,
-    "margin_net": -0.15866257682688564,
-    "current_ratio": 2.69562362743678,
-    "roa": -0.06127705804001631,
-    "bv": 29.596629317068576
+    "pb": 13.509127028178764,
+    "ps": 27.910494834606727,
+    "roe": -0.07479735841632974,
+    "eps": -4.119380515533703,
+    "de": 0.14430499747484152,
+    "margin_net": -0.30906975430264255,
+    "current_ratio": 1.557110599326444,
+    "roa": -0.06536487844150658,
+    "bv": 27.536938487886236
   },
   "quarterly": {
     "revenue": {},
@@ -30,17 +30,19 @@
   },
   "riwayat": {
     "eps": {
-      "2023": 150000.0,
-      "2025": -1960000.0
+      "2023": 0.15,
+      "2024": -2.1,
+      "2025": -1.96
     },
     "revenue_per_share": {
       "2023": 8348193858000000.0,
+      "2024": 3132558298000000.0,
       "2025": 2.1623836809e+16
     }
   },
   "statistik": {
-    "market_cap": 595013599232,
-    "enterprise_value": 649229762560,
+    "market_cap": 651014897664,
+    "enterprise_value": 663229759488,
     "shares_outstanding": 1750040072,
     "free_float_pct": 48.99887800969165
   },
@@ -48,38 +50,38 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1973,
-    "vol_trend": 0.592,
-    "price_chg_20d": -20.76
+    "cmf": -0.1517,
+    "vol_trend": 0.349,
+    "price_chg_20d": -21.85
   },
   "neraca": {
-    "aset": 55989856216.0,
-    "aset_lancar": 8398972585.0,
-    "kas": 2700274197.0,
+    "aset": 55144912267.0,
+    "aset_lancar": 9270764313.0,
+    "kas": 5793888244.0,
     "piutang_usaha": 1220452793.0,
-    "persediaan": 315531500.0,
+    "persediaan": 558611900.0,
     "aset_tetap": 10474593000.0,
-    "liabilitas": 4194568915.0,
-    "liabilitas_jangka_pendek": 3115780890.0,
-    "liabilitas_jangka_panjang": 1078788025.0,
+    "liabilitas": 6954165453.0,
+    "liabilitas_jangka_pendek": 5953825192.0,
+    "liabilitas_jangka_panjang": 1000340261.0,
     "utang_usaha": 1220452793.0,
     "utang_bank": null,
-    "ekuitas": 51795287301.0,
-    "ekuitas_induk": 51795287301.0,
+    "ekuitas": 48190745814.0,
+    "ekuitas_induk": 48190745814.0,
     "modal_saham": null,
-    "saldo_laba": -7042848819.0
+    "saldo_laba": -10647389306.0
   },
   "laba_rugi": {
-    "pendapatan": 21623836809.0,
-    "beban_pokok": 22607728235.0,
+    "pendapatan": 11662546842.0,
+    "beban_pokok": 13696702080.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -4052288658.0,
-    "beban_pajak": 621394989.0,
-    "laba_bersih": -3430893669.0,
-    "laba_induk": -3430893669.0,
-    "eps_basic": -1.96,
+    "laba_sebelum_pajak": -3587399818.0,
+    "beban_pajak": -17140669.0,
+    "laba_bersih": -3604540487.0,
+    "laba_induk": -3604540487.0,
+    "eps_basic": -2.06,
     "eps_diluted": null
   },
   "arus_kas": {

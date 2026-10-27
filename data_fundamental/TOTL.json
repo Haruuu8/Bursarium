@@ -1,23 +1,23 @@
 {
   "kode": "TOTL",
-  "nama": "PT Total Bangun Persada Tbk",
-  "sektor": "Industrials",
-  "industri": "Engineering & Construction",
-  "harga": 1360.0,
-  "update": "2026-10-21 13:15",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:34",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.01630577625619286,
-    "pb": 3228.8917288381963,
-    "ps": 0.0015165289084127663,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.07246155290609557,
-    "eps": 83406.02609970674,
+    "eps": null,
     "de": 2.0134658459284713,
     "margin_net": 0.12423682242733525,
     "current_ratio": 1.2071303655492642,
     "roa": 0.024058167782734098,
-    "bv": 0.42119715190615836
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 837716572000000.0
     },
     "eps": {
-      "2024-Q1": 15460000.0,
-      "2024-Q2": 17580000.0,
-      "2024-Q3": 19850000.0,
-      "2026-Q1": 30520000.0
+      "2024-Q1": 15.46,
+      "2024-Q2": 17.58,
+      "2024-Q3": 19.85,
+      "2026-Q1": 30.52
     },
     "net_income": {
       "2024-Q1": 52719130000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 29820000.0,
-      "2022": 26890000.0,
-      "2023": 50640000.0,
-      "2025": 121500000.0
+      "2021": 29.82,
+      "2022": 26.89,
+      "2023": 50.64,
+      "2025": 121.5
     },
     "revenue_per_share": {
       "2021": 1745129628000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 4637599989760,
-    "enterprise_value": 3441374003200,
-    "shares_outstanding": 3410000000,
-    "free_float_pct": 30.263
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.141,
-    "vol_trend": 0.672,
-    "price_chg_20d": -14.98
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0028,
+    "vol_trend": 0.641,
+    "price_chg_20d": -5.32
   },
   "neraca": {
     "aset": 4325983838.0,

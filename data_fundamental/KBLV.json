@@ -1,10 +1,10 @@
 {
   "kode": "KBLV",
-  "nama": "PT First Media Tbk",
-  "sektor": "Communication Services",
-  "industri": "Entertainment",
-  "harga": 86.0,
-  "update": "2026-10-21 12:22",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:40",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "revenue_missing",
@@ -13,15 +13,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.09916869205281358,
+    "pb": null,
     "ps": null,
     "roe": -0.003470291708365766,
-    "eps": -6.0189376453712855,
+    "eps": null,
     "de": 0.9341200563401164,
     "margin_net": null,
     "current_ratio": 0.19792611600318752,
     "roa": -0.002577154895709526,
-    "bv": 867.2091788222798
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -30,11 +30,11 @@
       "2024-Q3": 14129000000.0
     },
     "eps": {
-      "2024-Q1": -5000000.0,
-      "2024-Q2": -6000000.0,
-      "2024-Q3": 22000000.0,
-      "2026-Q1": -1000000.0,
-      "2026-Q2": -2000000.0
+      "2024-Q1": -5.0,
+      "2024-Q2": -6.0,
+      "2024-Q3": 22.0,
+      "2026-Q1": -1.0,
+      "2026-Q2": -2.0
     },
     "net_income": {
       "2024-Q1": -8462000000.0,
@@ -47,10 +47,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -799000000.0,
-      "2022": -156000000.0,
-      "2023": -46000000.0,
-      "2025": -1000000.0
+      "2021": -799.0,
+      "2022": -156.0,
+      "2023": -46.0,
+      "2025": -1.0
     },
     "revenue_per_share": {
       "2021": 151800000000.0,
@@ -60,18 +60,18 @@
     }
   },
   "statistik": {
-    "market_cap": 149826437120,
-    "enterprise_value": -994547204096,
-    "shares_outstanding": 1742167907,
-    "free_float_pct": 54.21299997578247
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2363,
-    "vol_trend": 1.309,
-    "price_chg_20d": -26.05
+    "cmf": -0.2143,
+    "vol_trend": 1.973,
+    "price_chg_20d": -11.0
   },
   "neraca": {
     "aset": 2034414.0,

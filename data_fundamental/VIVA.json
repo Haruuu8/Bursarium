@@ -1,23 +1,23 @@
 {
   "kode": "VIVA",
-  "nama": "PT Visi Media Asia Tbk",
-  "sektor": "Communication Services",
-  "industri": "Broadcasting",
-  "harga": 32.0,
-  "update": "2026-10-21 13:19",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:40",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.004160457661251452,
-    "pb": 0.005075046446253969,
-    "ps": 0.0004511599440554169,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 1.4411075005919265,
-    "eps": 7691.461518292317,
+    "eps": null,
     "de": 60.13729400326895,
     "margin_net": 0.5989046443428604,
     "current_ratio": 1.1757074396551335,
     "roa": 0.02193069774990981,
-    "bv": 6305.361012729268
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 234098759000000.0
     },
     "eps": {
-      "2024-Q1": -21375813.65,
-      "2024-Q2": -20989262.72,
-      "2024-Q3": 41057529.22,
-      "2026-Q1": 8515581.35
+      "2024-Q1": -21.38,
+      "2024-Q2": -20.99,
+      "2024-Q3": 41.06,
+      "2026-Q1": 8.52
     },
     "net_income": {
       "2024-Q1": -351937176000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -54064000.0,
-      "2022": -104558000.0,
-      "2023": -199568251.14,
-      "2025": 68422052.46
+      "2021": -54.06,
+      "2022": -104.56,
+      "2023": -199.57,
+      "2025": 68.42
     },
     "revenue_per_share": {
       "2021": 1812198622000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 526856650752,
-    "enterprise_value": 3389267640320,
-    "shares_outstanding": 15429450400,
-    "free_float_pct": 57.4872131219917
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1597,
-    "vol_trend": 5.205,
-    "price_chg_20d": -13.16
+    "cmf": -0.2651,
+    "vol_trend": 3.842,
+    "price_chg_20d": -31.25
   },
   "neraca": {
     "aset": 6392994678.0,

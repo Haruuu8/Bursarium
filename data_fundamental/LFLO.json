@@ -3,17 +3,17 @@
   "nama": "PT Imago Mulia Persada Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 590.0,
-  "update": "2026-10-21 14:39",
+  "harga": 635.0,
+  "update": "2026-10-27 14:28",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 31.57367190468735,
-    "pb": 8.542856498657233,
-    "ps": 4.301236823881648,
+    "pe": 33.98183332114656,
+    "pb": 9.194430299402278,
+    "ps": 4.629297259601435,
     "roe": 0.13528449469618042,
     "eps": 18.686455024333423,
     "de": 1.0998526410358302,
@@ -30,21 +30,23 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 1721233751000000.0,
-      "2022": 2570000.0,
-      "2023": 6760000.0,
-      "2025": 15640000.0
+      "2021": 1721233751.0,
+      "2022": 2.57,
+      "2023": 6.76,
+      "2024": 11.57,
+      "2025": 15.64
     },
     "revenue_per_share": {
       "2021": 4.6863360737e+16,
       "2022": 6.467012672e+16,
       "2023": 8.0742024721e+16,
+      "2024": 1.20118076634e+17,
       "2025": 1.68100355806e+17
     }
   },
   "statistik": {
-    "market_cap": 771563585536,
-    "enterprise_value": 811323621376,
+    "market_cap": 830411636736,
+    "enterprise_value": 844017041408,
     "shares_outstanding": 1307734937,
     "free_float_pct": 15.567000027315167
   },
@@ -52,9 +54,9 @@
     "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.6573,
-    "vol_trend": 0.104,
-    "price_chg_20d": 5.04
+    "cmf": 0.7464,
+    "vol_trend": 0.11,
+    "price_chg_20d": 18.18
   },
   "neraca": {
     "aset": 189810549554.0,

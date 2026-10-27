@@ -1,23 +1,23 @@
 {
   "kode": "JSPT",
-  "nama": "PT Jakarta Setiabudi Internasional Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 1490.0,
-  "update": "2026-10-21 12:19",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:38",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.006575390482657144,
-    "pb": 1302.424935342221,
-    "ps": 0.0012950049357352276,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.10492058633676578,
-    "eps": 226602.51188578605,
+    "eps": null,
     "de": 1.2651791657008762,
     "margin_net": 0.20082783998169498,
     "current_ratio": 1.8231013410478831,
     "roa": 0.04099031623399874,
-    "bv": 1.1440198659959564
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 706221022000000.0
     },
     "eps": {
-      "2024-Q1": -5000000.0,
-      "2024-Q2": 5009000.0,
-      "2024-Q3": 93000.0,
-      "2026-Q1": 55000000.0,
-      "2026-Q2": -54880000.0
+      "2024-Q1": -5.0,
+      "2024-Q2": 5.01,
+      "2024-Q3": 0.09,
+      "2026-Q1": 55.0,
+      "2026-Q2": -54.88
     },
     "net_income": {
       "2024-Q1": -10577585000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -91000000.0,
-      "2022": -19000000.0,
-      "2023": 82000000.0,
-      "2025": 130.0
+      "2021": -91.0,
+      "2022": -19.0,
+      "2023": 82.0,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 552780814000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3454916362240,
-    "enterprise_value": 4006667616256,
-    "shares_outstanding": 2318736000,
-    "free_float_pct": 18.441000010350468
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.3,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0555,
-    "vol_trend": 0.807,
-    "price_chg_20d": -15.92
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3311,
+    "vol_trend": 1.155,
+    "price_chg_20d": -1.49
   },
   "neraca": {
     "aset": 6789914584.0,

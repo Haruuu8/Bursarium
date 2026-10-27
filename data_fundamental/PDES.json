@@ -1,26 +1,26 @@
 {
   "kode": "PDES",
-  "nama": "PT Destinasi Tirta Nusantara Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Travel Services",
-  "harga": 358.0,
-  "update": "2026-10-21 12:47",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:05",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 9.121985486977753,
-    "pb": 2.478883190726444,
-    "ps": 0.31088585559091664,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0679370514858091,
-    "eps": 39.24584187412587,
+    "eps": null,
     "de": 2.215250292549888,
     "margin_net": 0.034080941702300124,
     "current_ratio": 1.661940359916816,
     "roa": 0.01990310301382704,
-    "bv": 144.41987478041958
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q1": 2.0583921349e+17
     },
     "eps": {
-      "2024-Q1": 2311197.38,
-      "2024-Q2": 2488802.62,
-      "2026-Q1": 10000000.0
+      "2024-Q1": 2.31,
+      "2024-Q2": 2.49,
+      "2026-Q1": 10.0
     },
     "net_income": {
       "2024-Q1": 1652506127000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -84740000.0,
-      "2022": -3205160.42,
-      "2023": 33420000.0,
-      "2025": 39750000.0
+      "2021": -84.74,
+      "2022": -3.21,
+      "2023": 33.42,
+      "2025": 39.75
     },
     "revenue_per_share": {
       "2021": 9280503778000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 255970000896,
-    "enterprise_value": 356916756480,
-    "shares_outstanding": 715000000,
-    "free_float_pct": 17.071
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.6469,
-    "vol_trend": 0.069,
-    "price_chg_20d": -5.26
+    "cmf": 0.6252,
+    "vol_trend": 0.103,
+    "price_chg_20d": -5.76
   },
   "neraca": {
     "aset": 352467363010.0,

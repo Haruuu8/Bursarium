@@ -1,23 +1,23 @@
 {
   "kode": "SMDR",
-  "nama": "PT Samudera Indonesia Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
-  "harga": 364.0,
-  "update": "2026-10-21 13:03",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:21",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.11577884159321311,
-    "pb": 0.010759249269278258,
-    "ps": 0.008350278128950731,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.01829558057623872,
-    "eps": 3143.9250470211778,
+    "eps": null,
     "de": 1.2259095774414328,
     "margin_net": 0.05498511588921716,
     "current_ratio": 2.188816243475808,
     "roa": 0.006921370264274776,
-    "bv": 33831.35671364713
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,9 +27,9 @@
       "2026-Q1": 184339195000000.0
     },
     "eps": {
-      "2024-Q1": 1000.0,
-      "2024-Q3": 2000.0,
-      "2026-Q1": 1000.0
+      "2024-Q1": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": 0.0
     },
     "net_income": {
       "2024-Q1": 10157333000000.0,
@@ -41,10 +41,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 28000.0,
-      "2022": 65000.0,
-      "2023": 5000.0,
-      "2025": 3000.0
+      "2021": 0.03,
+      "2022": 0.07,
+      "2023": 0.01,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 672918136000000.0,
@@ -54,18 +54,18 @@
     }
   },
   "statistik": {
-    "market_cap": 5960718352384,
-    "enterprise_value": 6059233116160,
-    "shares_outstanding": 16375600000,
-    "free_float_pct": 25.159
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.5,
+    "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1452,
-    "vol_trend": 0.992,
-    "price_chg_20d": -7.5
+    "cmf": 0.2015,
+    "vol_trend": 0.892,
+    "price_chg_20d": -0.52
   },
   "neraca": {
     "aset": 1464437187.0,

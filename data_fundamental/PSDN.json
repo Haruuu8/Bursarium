@@ -1,23 +1,23 @@
 {
   "kode": "PSDN",
-  "nama": "PT Prasidha Aneka Niaga Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 93.0,
-  "update": "2026-10-21 12:51",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:09",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 9.6522463202898,
-    "ps": 4.099832237509894e-06,
+    "pb": null,
+    "ps": null,
     "roe": -0.46509787029323546,
-    "eps": -14804434.434027778,
+    "eps": null,
     "de": 8.702042676224647,
     "margin_net": -1.6091920631396186,
     "current_ratio": 0.11738244533163307,
     "roa": -0.04793813898932661,
-    "bv": 9.63506285625
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 4010084400000000.0
     },
     "eps": {
-      "2024-Q1": -3520000.0,
-      "2024-Q2": -2000000.0,
-      "2024-Q3": -4800000.0,
-      "2026-Q1": -4480000.0
+      "2024-Q1": -3.52,
+      "2024-Q2": -2.0,
+      "2024-Q3": -4.8,
+      "2026-Q1": -4.48
     },
     "net_income": {
       "2024-Q1": -5074828883000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -60330000.0,
-      "2022": -28670000.0,
-      "2023": 99580000.0,
-      "2025": -18180000.0
+      "2021": -60.33,
+      "2022": -28.67,
+      "2023": 99.58,
+      "2025": -18.18
     },
     "revenue_per_share": {
       "2021": 8.68091474069e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 133919997952,
-    "enterprise_value": 108307587072,
-    "shares_outstanding": 1440000000,
-    "free_float_pct": 52.72
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4381,
-    "vol_trend": 0.898,
-    "price_chg_20d": -31.43
+    "cmf": -0.4203,
+    "vol_trend": 0.81,
+    "price_chg_20d": -11.61
   },
   "neraca": {
     "aset": 134610899068.0,

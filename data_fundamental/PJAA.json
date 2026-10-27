@@ -1,10 +1,10 @@
 {
   "kode": "PJAA",
-  "nama": "PT Pembangunan Jaya Ancol Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Leisure",
-  "harga": 420.0,
-  "update": "2026-10-21 12:48",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:06",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.37294008779631255,
-    "ps": 0.8093460174876551,
+    "pb": null,
+    "ps": null,
     "roe": -0.02153507024259975,
-    "eps": -97.010000242525,
+    "eps": null,
     "de": 0.9461245864083316,
     "margin_net": -0.18693966036372395,
     "current_ratio": 2.406741775630623,
     "roa": -0.01100368812410427,
-    "bv": 1126.1862528154657
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 207575000000.0
     },
     "eps": {
-      "2024-Q3": 26000000.0,
-      "2026-Q1": -2.4
+      "2024-Q3": 26.0,
+      "2026-Q1": -0.0
     },
     "net_income": {
       "2024-Q3": 40768000000.0,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -172000000.0,
-      "2022": 96000000.0,
-      "2023": 147000000.0,
-      "2025": 113000000.0
+      "2021": -172.0,
+      "2022": 96.0,
+      "2023": 147.0,
+      "2025": 113.0
     },
     "revenue_per_share": {
       "2021": 389342000000.0,
       "2022": 957879000000.0,
-      "2023": 1.273834e+18,
+      "2023": 1273834000000.0,
       "2025": 1121209000000.0
     }
   },
   "statistik": {
-    "market_cap": 671999983616,
-    "enterprise_value": 1141393063936,
-    "shares_outstanding": 1599999996,
-    "free_float_pct": 9.9910000249775
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5763,
-    "vol_trend": 0.903,
-    "price_chg_20d": -10.87
+    "cmf": -0.5113,
+    "vol_trend": 0.701,
+    "price_chg_20d": -6.64
   },
   "neraca": {
     "aset": 3526454.0,

@@ -3,17 +3,17 @@
   "nama": "PT Bach Multi Global Tbk.",
   "sektor": "Industrials",
   "industri": "Electrical Equipment & Parts",
-  "harga": 234.0,
-  "update": "2026-10-21 11:10",
+  "harga": 260.0,
+  "update": "2026-10-26 23:22",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 6.151285685026519,
-    "pb": 1.559133615935437,
-    "ps": 0.5325048939216916,
+    "pe": 6.834761872251688,
+    "pb": 1.7323706843727078,
+    "ps": 0.5916721043574352,
     "roe": 0.1267323366016543,
     "eps": 38.04082788247075,
     "de": 2.1469948265695096,
@@ -33,8 +33,8 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 955756642304,
-    "enterprise_value": 1498610925568,
+    "market_cap": 1061951832064,
+    "enterprise_value": 1630449172480,
     "shares_outstanding": 4084430000,
     "free_float_pct": 12.729530925979878
   },
@@ -42,9 +42,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3033,
-    "vol_trend": 0.618,
-    "price_chg_20d": -35.83
+    "cmf": -0.2286,
+    "vol_trend": 0.582,
+    "price_chg_20d": -24.86
   },
   "neraca": {
     "aset": 1929123400818.0,

@@ -1,23 +1,23 @@
 {
   "kode": "POLL",
-  "nama": "PT Pollux Properties Indonesia Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 112.0,
-  "update": "2026-10-21 13:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:03",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 2.9113110923575694e-05,
-    "pb": 0.5767820345365301,
-    "ps": 6.066588069230445e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0004549198478331293,
-    "eps": 3847063.966953212,
+    "eps": null,
     "de": 0.3747719898482554,
     "margin_net": 0.041674657290795045,
     "current_ratio": 1.4473344759536306,
     "roa": 0.0002920092763254774,
-    "bv": 194.1808053886369
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.7633197074e+16
     },
     "eps": {
-      "2024-Q1": 3800000.0,
-      "2024-Q2": -3430000.0,
-      "2024-Q3": 3390000.0,
-      "2026-Q1": 90000.0
+      "2024-Q1": 3.8,
+      "2024-Q2": -3.43,
+      "2024-Q3": 3.39,
+      "2026-Q1": 0.09
     },
     "net_income": {
       "2024-Q1": 3.2770544224e+16,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -13290000.0,
-      "2022": 57510000.0,
-      "2023": 1670000.0,
-      "2025": 2860000.0
+      "2021": -13.29,
+      "2022": 57.51,
+      "2023": 1.67,
+      "2025": 2.86
     },
     "revenue_per_share": {
       "2021": 4.05660306162e+17,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 931708207104,
-    "enterprise_value": 1734772391936,
-    "shares_outstanding": 8318823600,
-    "free_float_pct": 15.0
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

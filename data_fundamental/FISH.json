@@ -1,26 +1,26 @@
 {
   "kode": "FISH",
-  "nama": "PT FKS Multi Agro Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Food Distribution",
-  "harga": 494.0,
-  "update": "2026-10-21 11:58",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:19",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.13950048800461706,
-    "pb": 0.013959205833982573,
-    "ps": 0.0020717205939911614,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0500328207938619,
-    "eps": 3541.20625,
+    "eps": null,
     "de": 1.8891794414171275,
     "margin_net": 0.014850991732176544,
     "current_ratio": 1.372490386643252,
     "roa": 0.017042622458981575,
-    "bv": 35388.832708333335
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 297805272000000.0
     },
     "eps": {
-      "2024-Q1": 20814.76,
-      "2026-Q1": 1596.48,
-      "2026-Q2": 174.13
+      "2024-Q1": 0.02,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 9991085000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 60000.0,
-      "2022": 67000.0,
-      "2023": 50000.0,
-      "2025": 2000.0
+      "2021": 0.06,
+      "2022": 0.07,
+      "2023": 0.05,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 1235758502000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2371199959040,
-    "enterprise_value": 2342439092224,
-    "shares_outstanding": 4800000000,
-    "free_float_pct": 10.536
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.1,
+    "score": 3.6,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0295,
-    "vol_trend": 0.222,
-    "price_chg_20d": -27.16
+    "cmf": -0.0589,
+    "vol_trend": 0.242,
+    "price_chg_20d": -16.0
   },
   "neraca": {
     "aset": 498684696.0,

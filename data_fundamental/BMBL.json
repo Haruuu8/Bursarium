@@ -3,8 +3,8 @@
   "nama": "PT Lavender Bina Cendikia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Education & Training Services",
-  "harga": 26.0,
-  "update": "2026-10-21 10:50",
+  "harga": 28.0,
+  "update": "2026-10-26 22:52",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.400164990717382,
-    "ps": 1.7682466883433479,
+    "pb": 0.43094691308025757,
+    "ps": 1.904265664369759,
     "roe": -0.01615728143074283,
     "eps": -2.0995805577405107,
     "de": 0.07277891044071495,
@@ -30,19 +30,21 @@
   },
   "riwayat": {
     "eps": {
-      "2022": 9000000.0,
-      "2023": 90000.0,
-      "2025": 2130000.0
+      "2022": 9.0,
+      "2023": 0.09,
+      "2024": 8.6,
+      "2025": 2.13
     },
     "revenue_per_share": {
       "2022": 1.2525312378e+16,
       "2023": 1.7267332513e+16,
+      "2024": 1.14688358e+16,
       "2025": 1.489681805e+16
     }
   },
   "statistik": {
-    "market_cap": 26782105600,
-    "enterprise_value": 29076482048,
+    "market_cap": 28842268672,
+    "enterprise_value": 30106562560,
     "shares_outstanding": 1030080995,
     "free_float_pct": 58.63099998267612
   },
@@ -50,9 +52,9 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1553,
-    "vol_trend": 0.61,
-    "price_chg_20d": -6.9
+    "cmf": 0.2418,
+    "vol_trend": 0.422,
+    "price_chg_20d": -9.68
   },
   "neraca": {
     "aset": 71798580638.0,

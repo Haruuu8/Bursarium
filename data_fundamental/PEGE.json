@@ -1,10 +1,10 @@
 {
   "kode": "PEGE",
-  "nama": "PT Panca Global Kapital Tbk",
-  "sektor": "Financial Services",
-  "industri": "Capital Markets",
-  "harga": 112.0,
-  "update": "2026-10-21 12:47",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:05",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "revenue_missing",
@@ -13,21 +13,21 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.9512642951355814,
+    "pb": null,
     "ps": null,
     "roe": -0.11363692797400149,
-    "eps": -17.250011737770805,
+    "eps": null,
     "de": 0.1657606217919224,
     "margin_net": null,
     "current_ratio": 7.146932633076445,
     "roa": -0.09747321955503481,
-    "bv": 37.949837357705945
+    "bv": null
   },
   "quarterly": {
     "revenue": {},
     "eps": {
-      "2024-Q3": 1860000.0,
-      "2026-Q1": -5750000.0
+      "2024-Q3": 1.86,
+      "2026-Q1": -5.75
     },
     "net_income": {
       "2024-Q3": 5275090855000000.0,
@@ -37,28 +37,28 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -34320000.0,
-      "2022": -39950000.0,
-      "2023": -25820000.0,
-      "2025": -6680000.0
+      "2021": -34.32,
+      "2022": -39.95,
+      "2023": -25.82,
+      "2025": -6.68
     },
     "revenue_per_share": {
       "2023": 515000000000000.0
     }
   },
   "statistik": {
-    "market_cap": 423123615744,
-    "enterprise_value": 217108611072,
-    "shares_outstanding": 3777889408,
-    "free_float_pct": 23.15624999894121
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.3123,
-    "vol_trend": 0.74,
-    "price_chg_20d": -13.53
+    "cmf": 0.2975,
+    "vol_trend": 0.518,
+    "price_chg_20d": -17.39
   },
   "neraca": {
     "aset": 167144978204.0,

@@ -1,23 +1,23 @@
 {
   "kode": "CITY",
-  "nama": "PT Natura City Developments Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 144.0,
-  "update": "2026-10-21 14:02",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:06",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.7588781918111245e-05,
-    "pb": 0.8665071425364772,
-    "ps": 5.54710603452821e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.014743525376865919,
-    "eps": 3025923.2154289866,
+    "eps": null,
     "de": 0.2957312304380073,
     "margin_net": 0.1583865203362256,
     "current_ratio": 5.365528007618699,
     "roa": 0.01137915012189556,
-    "bv": 166.18443510860968
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 4.124754127e+16
     },
     "eps": {
-      "2024-Q1": 87000.0,
-      "2024-Q2": 263000.0,
-      "2024-Q3": 310000.0,
-      "2026-Q1": 1200000.0,
-      "2026-Q2": 1250000.0
+      "2024-Q1": 0.09,
+      "2024-Q2": 0.26,
+      "2024-Q3": 0.31,
+      "2026-Q1": 1.2,
+      "2026-Q2": 1.25
     },
     "net_income": {
       "2024-Q1": 470599400000000.0,
@@ -45,9 +45,9 @@
   },
   "riwayat": {
     "eps": {
-      "2022": -3940000.0,
-      "2023": 370000.0,
-      "2025": 3330000.0
+      "2022": -3.94,
+      "2023": 0.37,
+      "2025": 3.33
     },
     "revenue_per_share": {
       "2022": 3.6275071414e+16,
@@ -56,18 +56,18 @@
     }
   },
   "statistik": {
-    "market_cap": 778347216896,
-    "enterprise_value": 806937034752,
-    "shares_outstanding": 5405188966,
-    "free_float_pct": 54.15899999822504
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1501,
-    "vol_trend": 0.344,
-    "price_chg_20d": -16.96
+    "cmf": -0.1451,
+    "vol_trend": 0.23,
+    "price_chg_20d": -9.09
   },
   "neraca": {
     "aset": 1163838558252.0,

@@ -1,26 +1,26 @@
 {
   "kode": "PBID",
-  "nama": "PT Panca Budi Idaman Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 510.0,
-  "update": "2026-10-21 13:37",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:56",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.007585103673395312,
-    "pb": 1298.8850658556664,
-    "ps": 737.6222138669692,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.04281039263878143,
-    "eps": 67237.05066666666,
+    "eps": null,
     "de": 0.20089642398312132,
     "margin_net": 0.09724616111104362,
     "current_ratio": 4.883358954285308,
     "roa": 0.03441655625797466,
-    "bv": 0.39264444053333336
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 1296395339000000.0
     },
     "eps": {
-      "2024-Q3": 17540000.0,
-      "2026-Q1": 16810.0
+      "2024-Q3": 17.54,
+      "2026-Q1": 0.02
     },
     "net_income": {
       "2024-Q3": 131582996000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 218800000.0,
-      "2022": 188190000.0,
-      "2023": 199550000.0,
-      "2025": 53410000.0
+      "2021": 218.8,
+      "2022": 188.19,
+      "2023": 199.55,
+      "2025": 53.41
     },
     "revenue_per_share": {
       "2021": 4441512773000000.0,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 3825000251392,
-    "enterprise_value": 3878748422144,
-    "shares_outstanding": 7500000000,
-    "free_float_pct": 12.565999999999999
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 6.0,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.2133,
-    "vol_trend": 1.311,
-    "price_chg_20d": -0.96
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1789,
+    "vol_trend": 1.323,
+    "price_chg_20d": 0.96
   },
   "neraca": {
     "aset": 3663047199.0,

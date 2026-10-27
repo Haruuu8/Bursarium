@@ -1,23 +1,23 @@
 {
   "kode": "FILM",
-  "nama": "PT.MD Entertainment Tbk",
-  "sektor": "Communication Services",
-  "industri": "Entertainment",
-  "harga": 410.0,
-  "update": "2026-10-21 13:57",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:04",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.093655451572518e-05,
-    "pb": 1.4333302970441844,
-    "ps": 7.666910704302485e-06,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0034166990578079893,
-    "eps": 10015498.49151336,
+    "eps": null,
     "de": 0.188966617350226,
     "margin_net": 0.03689806169795637,
     "current_ratio": 1.535542769630673,
     "roa": 0.002819171079099547,
-    "bv": 286.04711757332035
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1.37718985015e+17
     },
     "eps": {
-      "2024-Q1": 480000.0,
-      "2024-Q2": 7640000.0,
-      "2024-Q3": 2710000.0,
-      "2026-Q1": 1160000.0,
-      "2026-Q2": -180000.0
+      "2024-Q1": 0.48,
+      "2024-Q2": 7.64,
+      "2024-Q3": 2.71,
+      "2026-Q1": 1.16,
+      "2026-Q2": -0.18
     },
     "net_income": {
       "2024-Q1": 4594647601000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 3600000.0,
-      "2022": 16890000.0,
-      "2023": 10160000.0,
-      "2025": -24960000.0
+      "2021": 3.6,
+      "2022": 16.89,
+      "2023": 10.16,
+      "2025": -24.96
     },
     "revenue_per_share": {
       "2021": 2.55041469597e+17,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 4463902326784,
-    "enterprise_value": 4701099130880,
-    "shares_outstanding": 10887566758,
-    "free_float_pct": 32.57299999923454
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2994,
-    "vol_trend": 0.276,
-    "price_chg_20d": -42.5
+    "cmf": -0.2496,
+    "vol_trend": 0.369,
+    "price_chg_20d": -36.32
   },
   "neraca": {
     "aset": 3774450230739.0,

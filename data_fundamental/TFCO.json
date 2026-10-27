@@ -1,23 +1,23 @@
 {
   "kode": "TFCO",
-  "nama": "PT Tifico Fiber Indonesia Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Textile Manufacturing",
-  "harga": 2000.0,
-  "update": "2026-10-21 13:11",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:31",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 35.52989310997665,
-    "pb": 0.03108944614916221,
-    "ps": 0.051764482718597085,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.00551046385982297,
-    "eps": 56.29062811445409,
+    "eps": null,
     "de": 0.10102467657174612,
     "margin_net": -0.0350172539755254,
     "current_ratio": 5.447909798190937,
     "roa": -0.005004850460737054,
-    "bv": 64330.51236758348
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 48825559000000.0
     },
     "eps": {
-      "2024-Q1": 40.0,
-      "2024-Q2": -70.0,
-      "2024-Q3": 430.0,
-      "2026-Q1": -400.0
+      "2024-Q1": 0.0,
+      "2024-Q2": -0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": -0.0
     },
     "net_income": {
       "2024-Q1": 201626000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 2800.0,
-      "2022": 700.0,
-      "2023": 700.0,
-      "2025": -300.0
+      "2021": 0.0,
+      "2022": 0.0,
+      "2023": 0.0,
+      "2025": -0.0
     },
     "revenue_per_share": {
       "2021": 214250936000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 9646152613888,
-    "enterprise_value": 9646105427968,
-    "shares_outstanding": 4823076400,
-    "free_float_pct": 14.160999999917065
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.6246,
-    "vol_trend": 43.587,
-    "price_chg_20d": 135.29
+    "cmf": 0.6334,
+    "vol_trend": 36.093,
+    "price_chg_20d": 125.99
   },
   "neraca": {
     "aset": 341616001.0,

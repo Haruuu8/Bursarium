@@ -1,23 +1,23 @@
 {
   "kode": "MAIN",
-  "nama": "PT Malindo Feedmill Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 540.0,
-  "update": "2026-10-21 12:33",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:50",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.00325340772469152,
-    "pb": 420.49223639447536,
-    "ps": 8.920328905908524e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.034524471951184174,
-    "eps": 165979.8112304542,
+    "eps": null,
     "de": 1.304164755530039,
     "margin_net": 0.013537813901855777,
     "current_ratio": 1.449181714894272,
     "roa": 0.014989398688682258,
-    "bv": 1.2842092035521224
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 3606970241000000.0
     },
     "eps": {
-      "2024-Q1": 39000.0,
-      "2024-Q2": 130961000.0,
-      "2024-Q3": -130840000.0,
-      "2026-Q1": 60.0,
-      "2026-Q2": 4340.0
+      "2024-Q1": 0.04,
+      "2024-Q2": 130.96,
+      "2024-Q3": -130.84,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
     },
     "net_income": {
       "2024-Q1": 87653203000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 27000000.0,
-      "2022": 12000000.0,
-      "2023": 28000.0,
-      "2025": 176.0
+      "2021": 27.0,
+      "2022": 12.0,
+      "2023": 0.03,
+      "2025": 0.0
     },
     "revenue_per_share": {
       "2021": 9130618395000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 1204468711424,
-    "enterprise_value": 3150875721728,
-    "shares_outstanding": 2230497500,
-    "free_float_pct": 35.057000019054044
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 3.2,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.0896,
-    "vol_trend": 1.006,
-    "price_chg_20d": -18.18
+    "score": 4.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0291,
+    "vol_trend": 0.995,
+    "price_chg_20d": -7.2
   },
   "neraca": {
     "aset": 6597514487.0,

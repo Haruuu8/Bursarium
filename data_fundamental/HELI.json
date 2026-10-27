@@ -1,26 +1,26 @@
 {
   "kode": "HELI",
-  "nama": "PT Jaya Trishindo Tbk",
-  "sektor": "Industrials",
-  "industri": "Airports & Air Services",
-  "harga": 200.0,
-  "update": "2026-10-21 13:40",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:58",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 33.285944208382084,
-    "pb": 1.8281238108960693,
-    "ps": 1.335214308868949,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.02746089760067119,
-    "eps": 6.008542186693803,
+    "eps": null,
     "de": 1.092575067787297,
     "margin_net": 0.040113457515581444,
     "current_ratio": 0.6502545742537488,
     "roa": 0.013080627199312458,
-    "bv": 109.40178056209903
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 3.2544707698e+16
     },
     "eps": {
-      "2024-Q3": 1660000.0,
-      "2026-Q1": 2500000.0,
-      "2026-Q2": 500000.0
+      "2024-Q3": 1.66,
+      "2026-Q1": 2.5,
+      "2026-Q2": 0.5
     },
     "net_income": {
       "2024-Q3": 1380778526000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 4000000.0,
-      "2022": -103000000.0,
-      "2023": 790000.0,
-      "2025": 31640000.0
+      "2021": 4.0,
+      "2022": -103.0,
+      "2023": 0.79,
+      "2025": 31.64
     },
     "revenue_per_share": {
       "2021": 6.3398642323e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 166572474368,
-    "enterprise_value": 244960002048,
-    "shares_outstanding": 832862387,
-    "free_float_pct": 10.505000029494669
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1953,
-    "vol_trend": 2.112,
-    "price_chg_20d": -18.75
+    "cmf": -0.2046,
+    "vol_trend": 1.736,
+    "price_chg_20d": -26.0
   },
   "neraca": {
     "aset": 191286270595.0,

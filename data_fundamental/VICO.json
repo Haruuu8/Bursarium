@@ -1,26 +1,26 @@
 {
   "kode": "VICO",
-  "nama": "PT Victoria Investama Tbk",
-  "sektor": "Financial Services",
-  "industri": "Asset Management",
-  "harga": 139.0,
-  "update": "2026-10-21 13:18",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:37",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.01845855066642381,
-    "pb": 567.5207981910991,
-    "ps": 0.003176056195249058,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.007686421437510559,
-    "eps": 7530.38537596788,
+    "eps": null,
     "de": 7.98006793195784,
     "margin_net": 0.17206422392773876,
     "current_ratio": null,
     "roa": 0.0008107724159043032,
-    "bv": 0.2449249445007918
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q1": 166493710000000.0
     },
     "eps": {
-      "2024-Q1": 15500.0,
-      "2024-Q2": 13900.0,
-      "2026-Q1": 18800.0
+      "2024-Q1": 0.02,
+      "2024-Q2": 0.01,
+      "2026-Q1": 0.02
     },
     "net_income": {
       "2024-Q1": 23658503000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -3170000.0,
-      "2022": 10720000.0,
-      "2023": 34400.0,
-      "2025": 311500.0
+      "2021": -3.17,
+      "2022": 10.72,
+      "2023": 0.03,
+      "2025": 0.31
     },
     "revenue_per_share": {
       "2021": 1626098545000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2115173482496,
-    "enterprise_value": 8964503764992,
-    "shares_outstanding": 15217075658,
-    "free_float_pct": 28.319000002700783
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.3,
+    "score": 3.7,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0546,
-    "vol_trend": 0.315,
-    "price_chg_20d": -19.65
+    "cmf": -0.0524,
+    "vol_trend": 0.187,
+    "price_chg_20d": -15.29
   },
   "neraca": {
     "aset": 35333726750.0,

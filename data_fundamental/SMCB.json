@@ -1,23 +1,23 @@
 {
   "kode": "SMCB",
-  "nama": "PT Solusi Bangun Indonesia Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Building Materials",
-  "harga": 775.0,
-  "update": "2026-10-21 13:02",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:21",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 13.329025780956522,
-    "pb": 0.5253085636743082,
-    "ps": 0.6184305579399123,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.00765685655249068,
-    "eps": 58.143784304720896,
+    "eps": null,
     "de": 0.5263932941069048,
     "margin_net": 0.039827595912087364,
     "current_ratio": 1.0633063918888976,
     "roa": 0.005016306467050302,
-    "bv": 1475.3233691436653
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 2558176000000.0
     },
     "eps": {
-      "2024-Q1": 8000000.0,
-      "2024-Q2": 10000000.0,
-      "2024-Q3": 29000000.0,
-      "2026-Q1": 11000000.0
+      "2024-Q1": 8.0,
+      "2024-Q2": 10.0,
+      "2024-Q3": 29.0,
+      "2026-Q1": 11.0
     },
     "net_income": {
       "2024-Q1": 73937000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 88000000.0,
-      "2022": 93000000.0,
-      "2023": 99000000.0,
-      "2025": 73000000.0
+      "2021": 88.0,
+      "2022": 93.0,
+      "2023": 99.0,
+      "2025": 73.0
     },
     "revenue_per_share": {
       "2021": 11218181000000.0,
@@ -55,10 +55,10 @@
     }
   },
   "statistik": {
-    "market_cap": 6990021001216,
-    "enterprise_value": 8131280109568,
-    "shares_outstanding": 9019381973,
-    "free_float_pct": 1.3170000046077437
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.0,

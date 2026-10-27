@@ -1,26 +1,26 @@
 {
   "kode": "LAND",
-  "nama": "PT Trimitra Propertindo Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate Services",
-  "harga": 43.0,
-  "update": "2026-10-21 14:00",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:05",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 0.00019748573663398104,
-    "pb": 0.2615274912390917,
-    "ps": 3.0885060240506426,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0006621427341960531,
-    "eps": 217737.24387850837,
+    "eps": null,
     "de": 0.7560974882749064,
     "margin_net": 0.01563913463671993,
     "current_ratio": 1.0995405282094715,
     "roa": 0.0003770535170268399,
-    "bv": 164.41866128975659
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -29,9 +29,9 @@
       "2026-Q2": 9666065456000000.0
     },
     "eps": {
-      "2024-Q3": 160000.0,
-      "2026-Q1": 130000.0,
-      "2026-Q2": -20000.0
+      "2024-Q3": 0.16,
+      "2026-Q1": 0.13,
+      "2026-Q2": -0.02
     },
     "net_income": {
       "2024-Q3": 437476367000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -4150000.0,
-      "2022": -2840000.0,
-      "2023": -4200000.0,
-      "2025": 660000.0
+      "2021": -4.15,
+      "2022": -2.84,
+      "2023": -4.2,
+      "2025": 0.66
     },
     "revenue_per_share": {
       "2021": 4.2588345942e+16,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 120082661376,
-    "enterprise_value": 300219498496,
-    "shares_outstanding": 2792620000,
-    "free_float_pct": 27.690999992838268
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 4.9,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0909,
-    "vol_trend": 2.682,
-    "price_chg_20d": -33.85
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1016,
+    "vol_trend": 0.354,
+    "price_chg_20d": -17.86
   },
   "neraca": {
     "aset": 806327688964.0,

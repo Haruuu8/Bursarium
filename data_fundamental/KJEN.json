@@ -1,23 +1,23 @@
 {
   "kode": "KJEN",
-  "nama": "PT Krida Jaringan Nusantara Tbk",
-  "sektor": "Industrials",
-  "industri": "Integrated Freight & Logistics",
-  "harga": 110.0,
-  "update": "2026-10-21 14:14",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 13:17",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0002879498143891203,
-    "pb": 0.879082274113036,
-    "ps": 1.005116627882807e-05,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.002525605003824788,
-    "eps": 382011.012,
+    "eps": null,
     "de": 0.07331021745576269,
     "margin_net": 0.07174925690607391,
     "current_ratio": 2.7105660372232228,
     "roa": 0.0023530988177971786,
-    "bv": 125.13049488
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 1217591962000000.0
     },
     "eps": {
-      "2024-Q1": 310000.0,
-      "2024-Q2": -1510000.0,
-      "2024-Q3": 1570000.0,
-      "2026-Q1": 20000.0,
-      "2026-Q2": 296030.0
+      "2024-Q1": 0.31,
+      "2024-Q2": -1.51,
+      "2024-Q3": 1.57,
+      "2026-Q1": 0.02,
+      "2026-Q2": 0.3
     },
     "net_income": {
       "2024-Q1": 154291617000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": -3680000.0,
-      "2022": -190000.0,
-      "2023": 50000.0,
-      "2025": 60000.0
+      "2021": -3.68,
+      "2022": -0.19,
+      "2023": 0.05,
+      "2025": 0.06
     },
     "revenue_per_share": {
       "2021": 8447187923000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 54999998464,
-    "enterprise_value": 56555954176,
-    "shares_outstanding": 500000000,
-    "free_float_pct": 34.168
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5744,
-    "vol_trend": 0.983,
-    "price_chg_20d": -28.66
+    "cmf": -0.7049,
+    "vol_trend": 0.775,
+    "price_chg_20d": -29.76
   },
   "neraca": {
     "aset": 67151919335.0,

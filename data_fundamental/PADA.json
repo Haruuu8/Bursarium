@@ -3,104 +3,118 @@
   "nama": "PT Personel Alih Daya Tbk",
   "sektor": "Industrials",
   "industri": "Staffing & Employment Services",
-  "harga": 104.0,
-  "update": "2026-10-21 10:48",
-  "periode_terbaru": "2026-tw1",
+  "harga": 119.0,
+  "update": "2026-10-26 22:51",
+  "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 2.67164387770975,
-    "ps": 2.861055888800082e-07,
-    "roe": 0.022677494447026977,
-    "eps": -1639515.7755555555,
-    "de": 1.8929943930117459,
-    "margin_net": 0.005963737951585261,
-    "current_ratio": 1.5560817577752375,
-    "roa": 0.007838761976796858,
-    "bv": 38.927343897777774
+    "pe": 9.012952543313648e-05,
+    "pb": 3.077033899092597,
+    "ps": 9.106525611021608e-07,
+    "roe": 0.014866330932352463,
+    "eps": 1320322.0523809523,
+    "de": 1.763147699237122,
+    "margin_net": 0.0019771442477207546,
+    "current_ratio": 1.330238213662742,
+    "roa": 0.00538021580839016,
+    "bv": 38.673607084761905
   },
   "quarterly": {
     "revenue": {
       "2024-Q1": 2.30044756733e+17,
       "2024-Q2": 2.18854118065e+17,
       "2024-Q3": 2.29858243466e+17,
-      "2026-Q1": 4.66274690735e+17
+      "2024-Q4": 2.31787220872e+17,
+      "2025-Q3": 2.9029059055500006e+17,
+      "2025-Q4": -7.946525709251565e+17,
+      "2026-Q1": 4.66274690735e+17,
+      "2026-Q2": 4.4971518814599994e+17
     },
     "eps": {
-      "2024-Q1": -730000.0,
-      "2024-Q2": -1130000.0,
-      "2024-Q3": 1470000.0,
-      "2026-Q1": 880000.0
+      "2024-Q1": -0.73,
+      "2024-Q2": -1.13,
+      "2024-Q3": 1.47,
+      "2024-Q4": -4.85,
+      "2025-Q3": 0.21,
+      "2025-Q4": 0.49,
+      "2026-Q1": 0.88,
+      "2026-Q2": -0.31
     },
     "net_income": {
       "2024-Q1": -2293998767000000.0,
       "2024-Q2": -3550087640000000.0,
       "2024-Q3": -2101128355000000.0,
-      "2026-Q1": 2780740069000000.0
+      "2024-Q4": -8602494731000000.0,
+      "2025-Q3": 644273694000000.0,
+      "2025-Q4": 1703696651000000.0,
+      "2026-Q1": 2780740069000000.0,
+      "2026-Q2": -969695949000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
     "eps": {
-      "2022": 1420000.0,
-      "2023": -1750000.0,
-      "2025": 740000.0
+      "2022": 1.42,
+      "2023": -1.75,
+      "2024": -5.24,
+      "2025": 0.74
     },
     "revenue_per_share": {
       "2022": 7.0093899298e+17,
       "2023": 8.15740188341e+17,
-      "2025": 1.163745843528e+18
+      "2024": 9.10544339136e+17,
+      "2025": 1163745843528.0
     }
   },
   "statistik": {
-    "market_cap": 327600013312,
-    "enterprise_value": 498293735424,
+    "market_cap": 374850027520,
+    "enterprise_value": 548693737472,
     "shares_outstanding": 3150000000,
     "free_float_pct": 28.561999999999998
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.6,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1466,
-    "vol_trend": 0.312,
-    "price_chg_20d": -38.67
+    "cmf": -0.126,
+    "vol_trend": 0.474,
+    "price_chg_20d": -26.54
   },
   "neraca": {
-    "aset": 354742251038.0,
-    "aset_lancar": 298249280580.0,
-    "kas": 20077544845.0,
-    "piutang_usaha": 209678841010.0,
+    "aset": 336611798578.0,
+    "aset_lancar": 276078393094.0,
+    "kas": 17369226915.0,
+    "piutang_usaha": 223820613737.0,
     "persediaan": null,
-    "aset_tetap": 50805083646.0,
-    "liabilitas": 232121117760.0,
-    "liabilitas_jangka_pendek": 191666844682.0,
-    "liabilitas_jangka_panjang": 40454273078.0,
-    "utang_usaha": 209678841010.0,
-    "utang_bank": 172396904477.0,
-    "ekuitas": 122621133278.0,
-    "ekuitas_induk": 122621133278.0,
+    "aset_tetap": 51490654884.0,
+    "liabilitas": 214789936261.0,
+    "liabilitas_jangka_pendek": 207540566989.0,
+    "liabilitas_jangka_panjang": 7249369272.0,
+    "utang_usaha": 223820613737.0,
+    "utang_bank": 164499677236.0,
+    "ekuitas": 121821862317.0,
+    "ekuitas_induk": 121821862317.0,
     "modal_saham": null,
     "saldo_laba": 3951507095.0
   },
   "laba_rugi": {
-    "pendapatan": 466274690735.0,
-    "beban_pokok": 450017285139.0,
+    "pendapatan": 915989878881.0,
+    "beban_pokok": 881979356745.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 3667003713.0,
-    "beban_pajak": -886263644.0,
-    "laba_bersih": 2780740069.0,
-    "laba_induk": 2780740069.0,
-    "eps_basic": 0.88,
+    "laba_sebelum_pajak": 3191478881.0,
+    "beban_pajak": -1380434761.0,
+    "laba_bersih": 1811044120.0,
+    "laba_induk": 1811044120.0,
+    "eps_basic": 0.57,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 556759140.0,
+    "capex": 1215000000.0,
     "dividen_dibayar": null
   }
 }

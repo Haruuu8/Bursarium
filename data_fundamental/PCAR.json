@@ -1,10 +1,10 @@
 {
   "kode": "PCAR",
-  "nama": "PT Prima Cakrawala Abadi Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 68.0,
-  "update": "2026-10-21 13:40",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:57",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
@@ -12,15 +12,15 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.2069803603572817,
-    "ps": 0.3191139601161007,
+    "pb": null,
+    "ps": null,
     "roe": -0.03945649790883247,
-    "eps": -8.891749844235719,
+    "eps": null,
     "de": 0.4686704360212618,
     "margin_net": -0.04172766919346738,
     "current_ratio": 3.6983791154827688,
     "roa": -0.02756140581940069,
-    "bv": 56.338944885458716
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,8 +28,8 @@
       "2026-Q1": 6.2151257478e+16
     },
     "eps": {
-      "2024-Q1": 2220000.0,
-      "2026-Q1": -2260000.0
+      "2024-Q1": 2.22,
+      "2026-Q1": -2.26
     },
     "net_income": {
       "2024-Q1": 2618003146000000.0,
@@ -39,10 +39,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 480000.0,
-      "2022": 4190000.0,
-      "2023": 7804000.0,
-      "2025": 420440.0
+      "2021": 0.48,
+      "2022": 4.19,
+      "2023": 7.8,
+      "2025": 0.42
     },
     "revenue_per_share": {
       "2021": 1.61842458341e+17,
@@ -52,18 +52,18 @@
     }
   },
   "statistik": {
-    "market_cap": 79333343232,
-    "enterprise_value": 104669863936,
-    "shares_outstanding": 1166666700,
-    "free_float_pct": 87.25099996425715
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 7.4,
+    "score": 8.1,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.0608,
-    "vol_trend": 23.82,
-    "price_chg_20d": 60.0
+    "cmf": 0.1086,
+    "vol_trend": 7.308,
+    "price_chg_20d": 55.17
   },
   "neraca": {
     "aset": 94096329084.0,

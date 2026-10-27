@@ -1,23 +1,23 @@
 {
   "kode": "TOBA",
-  "nama": "PT TBS Energi Utama Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 346.0,
-  "update": "2026-10-21 13:13",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:34",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.11156359030793757,
-    "pb": 0.01563407903449154,
-    "ps": 0.006798047098114045,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": -0.049294376883978704,
-    "eps": 3101.370250320661,
+    "eps": null,
     "de": 3.139273305528531,
     "margin_net": -0.10506063660001644,
     "current_ratio": 1.2652058025903938,
     "roa": -0.011592477255471195,
-    "bv": 22131.140519160923
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 86285923000000.0
     },
     "eps": {
-      "2024-Q1": 1400.0,
-      "2024-Q2": 1900.0,
-      "2024-Q3": 1000.0,
-      "2026-Q1": -1100.0
+      "2024-Q1": 0.0,
+      "2024-Q2": 0.0,
+      "2024-Q3": 0.0,
+      "2026-Q1": -0.0
     },
     "net_income": {
       "2024-Q1": 11528846000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 6000.0,
-      "2022": 7182.65,
-      "2023": 1000.0,
-      "2025": -19500.0
+      "2021": 0.01,
+      "2022": 0.01,
+      "2023": 0.0,
+      "2025": -0.02
     },
     "revenue_per_share": {
       "2021": 462666313000000.0,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 2875112816640,
-    "enterprise_value": 2808977555456,
-    "shares_outstanding": 8309574775,
-    "free_float_pct": 25.726999995616502
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.9,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1043,
-    "vol_trend": 0.42,
-    "price_chg_20d": -32.4
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.166,
+    "vol_trend": 3.196,
+    "price_chg_20d": 4.77
   },
   "neraca": {
     "aset": 781994547.0,

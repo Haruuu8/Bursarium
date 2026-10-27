@@ -1,23 +1,23 @@
 {
   "kode": "ICBP",
-  "nama": "PT Indofood CBP Sukses Makmur Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 6050.0,
-  "update": "2026-10-21 12:08",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 11:26",
   "periode_terbaru": "2026-tw2",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 7.426958216971111,
-    "pb": 1.33712101267005,
-    "ps": 0.9112312487013692,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.07016948713122378,
-    "eps": 814.5999779795897,
+    "eps": null,
     "de": 1.3022262891499172,
     "margin_net": 0.08844396444931786,
     "current_ratio": 3.581164382651838,
     "roa": 0.025714763618143673,
-    "bv": 4524.646567268409
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -28,11 +28,11 @@
       "2026-Q2": 20147664000000.0
     },
     "eps": {
-      "2024-Q1": 202000000.0,
-      "2024-Q2": 101000000.0,
-      "2024-Q3": 396000000.0,
-      "2026-Q1": 221000000.0,
-      "2026-Q2": 96000000.0
+      "2024-Q1": 202.0,
+      "2024-Q2": 101.0,
+      "2024-Q3": 396.0,
+      "2026-Q1": 221.0,
+      "2026-Q2": 96.0
     },
     "net_income": {
       "2024-Q1": 2352074000000.0,
@@ -45,10 +45,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 548000000.0,
-      "2022": 393000000.0,
-      "2023": 599000000.0,
-      "2025": 791000000.0
+      "2021": 548.0,
+      "2022": 393.0,
+      "2023": 599.0,
+      "2025": 791.0
     },
     "revenue_per_share": {
       "2021": 56803733000000.0,
@@ -58,18 +58,18 @@
     }
   },
   "statistik": {
-    "market_cap": 70554543456256,
-    "enterprise_value": 103908437393408,
-    "shares_outstanding": 11661908000,
-    "free_float_pct": 19.466999996913025
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 5.3,
+    "score": 4.2,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0502,
-    "vol_trend": 1.069,
-    "price_chg_20d": -13.16
+    "cmf": 0.0444,
+    "vol_trend": 1.312,
+    "price_chg_20d": -10.15
   },
   "neraca": {
     "aset": 143985924.0,

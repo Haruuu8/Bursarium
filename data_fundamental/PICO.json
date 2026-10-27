@@ -1,23 +1,23 @@
 {
   "kode": "PICO",
-  "nama": "PT Pelangi Indah Canindo Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Packaging & Containers",
-  "harga": 136.0,
-  "update": "2026-10-21 12:48",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:06",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 1.415353226965112e-05,
-    "pb": 0.3659389718530784,
-    "ps": 1.3040086460306518e-07,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.0071349319608169405,
-    "eps": 9608908.745106664,
+    "eps": null,
     "de": 2.1870402157991573,
     "margin_net": 0.011095227346359355,
     "current_ratio": 0.8314430236199687,
     "roa": 0.002238732955250093,
-    "bv": 371.64666914625025
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -27,10 +27,10 @@
       "2026-Q1": 1.35837238026e+17
     },
     "eps": {
-      "2024-Q1": 4300000.0,
-      "2024-Q2": 2010000.0,
-      "2024-Q3": 650000.0,
-      "2026-Q1": 4200000.0
+      "2024-Q1": 4.3,
+      "2024-Q2": 2.01,
+      "2024-Q3": 0.65,
+      "2026-Q1": 4.2
     },
     "net_income": {
       "2024-Q1": 2430561027000000.0,
@@ -42,10 +42,10 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 82740000.0,
-      "2022": 16460000.0,
-      "2023": 9270000.0,
-      "2025": 2200000.0
+      "2021": 82.74,
+      "2022": 16.46,
+      "2023": 9.27,
+      "2025": 2.2
     },
     "revenue_per_share": {
       "2021": 4.55740836133e+17,
@@ -55,18 +55,18 @@
     }
   },
   "statistik": {
-    "market_cap": 77298999296,
-    "enterprise_value": 179658194944,
-    "shares_outstanding": 568375000,
-    "free_float_pct": 44.422999956014955
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2045,
-    "vol_trend": 1.073,
-    "price_chg_20d": -20.96
+    "cmf": -0.2058,
+    "vol_trend": 2.891,
+    "price_chg_20d": -12.82
   },
   "neraca": {
     "aset": 673213406032.0,

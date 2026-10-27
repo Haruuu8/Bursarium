@@ -1,35 +1,35 @@
 {
   "kode": "STTP",
-  "nama": "PT Siantar Top Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Packaged Foods",
-  "harga": 8550.0,
-  "update": "2026-10-21 13:08",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-27 12:28",
   "periode_terbaru": "2026-tw1",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 11.588440010159353,
-    "pb": 1.487431396150309,
-    "ps": 2.305117127894587,
+    "pe": null,
+    "pb": null,
+    "ps": null,
     "roe": 0.032088689134307714,
-    "eps": 737.8042249435115,
+    "eps": null,
     "de": 0.08245687926105134,
     "margin_net": 0.1989152229181613,
     "current_ratio": 12.622719691578464,
     "roa": 0.029540663696159097,
-    "bv": 5748.164266351145
+    "bv": null
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 1.214202956133e+18,
-      "2026-Q1": 1.214743045425e+18
+      "2024-Q1": 1214202956133.0,
+      "2026-Q1": 1214743045425.0
     },
     "eps": {
-      "2024-Q1": 385313563.43,
-      "2026-Q1": 184000000.0
+      "2024-Q1": 385.31,
+      "2026-Q1": 184.0
     },
     "net_income": {
       "2024-Q1": 5.0476076809e+17,
@@ -39,31 +39,31 @@
   },
   "riwayat": {
     "eps": {
-      "2021": 471380000.0,
-      "2022": 476700000.0,
-      "2023": 700530000.0,
-      "2025": 900950000.0
+      "2021": 471.38,
+      "2022": 476.7,
+      "2023": 700.53,
+      "2025": 900.95
     },
     "revenue_per_share": {
-      "2021": 4.241856914012e+18,
-      "2022": 4.93155377147e+18,
-      "2023": 4.767207433046e+18,
-      "2025": 5.235956036238e+18
+      "2021": 4241856914012.0,
+      "2022": 4931553771470.0,
+      "2023": 4767207433046.0,
+      "2025": 5235956036238.0
     }
   },
   "statistik": {
-    "market_cap": 11200499810304,
-    "enterprise_value": 5592694390784,
-    "shares_outstanding": 1310000000,
-    "free_float_pct": 20.659
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5805,
-    "vol_trend": 3.403,
-    "price_chg_20d": -10.4
+    "cmf": -0.5167,
+    "vol_trend": 1.077,
+    "price_chg_20d": -8.12
   },
   "neraca": {
     "aset": 8179602400078.0,

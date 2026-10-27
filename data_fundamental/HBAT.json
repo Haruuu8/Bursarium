@@ -3,17 +3,17 @@
   "nama": "PT Minahasa Membangun Hebat Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 270.0,
-  "update": "2026-10-21 10:59",
+  "harga": 318.0,
+  "update": "2026-10-26 23:03",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 127.92723200809091,
-    "pb": 3.416286639031472,
-    "ps": 13.025086275802595,
+    "pe": 150.66985103175153,
+    "pb": 4.023626485970401,
+    "ps": 15.340657169278611,
     "roe": 0.013352460556699162,
     "eps": 2.1105748616754525,
     "de": 0.01958187823843977,
@@ -30,27 +30,29 @@
   },
   "riwayat": {
     "eps": {
-      "2023": 10750000.0,
-      "2025": 2630000.0
+      "2023": 10.75,
+      "2024": 8.14,
+      "2025": 2.63
     },
     "revenue_per_share": {
       "2023": 3.7502740938e+16,
+      "2024": 3.9474192963e+16,
       "2025": 2.4531327922e+16
     }
   },
   "statistik": {
-    "market_cap": 281000017920,
-    "enterprise_value": 298151870464,
+    "market_cap": 330955587584,
+    "enterprise_value": 321048182784,
     "shares_outstanding": 1040740800,
     "free_float_pct": 23.132000013836297
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.1,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1863,
-    "vol_trend": 1.418,
-    "price_chg_20d": -27.72
+    "cmf": -0.0961,
+    "vol_trend": 1.542,
+    "price_chg_20d": -14.97
   },
   "neraca": {
     "aset": 83863725258.0,
