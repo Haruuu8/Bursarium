@@ -10,7 +10,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from quant.theme import load_theme, page_header, section_title
+from quant.theme import load_theme, page_header, section_title, render_table
 from quant.parquet_loader import load_parquet_safe
 
 load_theme()
@@ -135,7 +135,7 @@ st.markdown(page_header("", "Smart Money Flow", "Bandarmology & Aliran Uang Besa
 
 saham_list = list_available()
 if not saham_list:
-    st.warning("Data tidak tersedia.")
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data tidak tersedia.</div>', unsafe_allow_html=True)
     st.stop()
 
 col1, col2 = st.columns([1, 3])
@@ -147,7 +147,7 @@ with col2:
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
-    st.error("Data saham tidak cukup.")
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data saham tidak cukup.</div>', unsafe_allow_html=True)
     st.stop()
 
 df = calculate_money_flow(df)
@@ -243,7 +243,7 @@ st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'di
 df_ind = compute_all_indicators()
 
 if df_ind is None or df_ind.empty:
-    st.info("Data tidak tersedia untuk analisa volume spike.")
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data tidak tersedia untuk analisa volume spike.</div>', unsafe_allow_html=True)
     st.stop()
 
 last_date = df_ind["Date"].max()
@@ -284,8 +284,7 @@ df_accum = df_today[
 ].copy()
 
 if df_accum.empty:
-    st.info("Tidak ada saham dengan akumulasi asli hari ini. "
-            "(Volume spike + close di atas + buyer dominan + CMF positif)")
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Tidak ada saham dengan akumulasi asli hari ini. (Volume spike + close di atas + buyer dominan + CMF positif)</div>', unsafe_allow_html=True)
 else:
     df_accum = df_accum.sort_values("Vol_Ratio", ascending=False)
 
@@ -328,7 +327,6 @@ else:
         "Spike_Count_20": "Spike 20d",
     })
 
-    from quant.theme import render_table
     render_table(df_show)
 
     st.caption(

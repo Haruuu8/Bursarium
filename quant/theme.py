@@ -21,21 +21,38 @@ html, body, [class*="css"] {
 }
 html { scroll-behavior: smooth; }
 
-/* SEMBUNYIKAN RUNNING SPINNER */
-[data-testid="stStatusWidget"] { display: none !important; }
-.stSpinner { display: none !important; }
+/* ============================================================
+   BUNUH SPINNER (RUNNING) TOTAL
+   ============================================================ */
+.stSpinner, [data-testid="stSpinner"], [data-testid="stStatusWidget"], 
+[data-testid="stSpinnerContainer"], [data-testid="stLoadingIndicator"],
+[data-testid="stStatusWidgetContainer"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    z-index: -9999 !important;
+}
 
-/* FIX NOTIFIKASI (INFO, SUCCESS, WARNING) JADI HITAM */
-div[data-testid="stAlert"] {
+/* ============================================================
+   ALERTS (INFO, SUCCESS, WARNING) JADI HITAM
+   ============================================================ */
+[data-testid="stNotification"], [data-testid="stAlert"] {
     background-color: #171717 !important;
+    color: #ffffff !important;
     border: 1px solid #27272a !important;
     border-radius: 8px !important;
 }
-div[data-testid="stAlert"] p, div[data-testid="stAlert"] span {
+[data-testid="stNotification"] p, [data-testid="stAlert"] p,
+[data-testid="stNotification"] span, [data-testid="stAlert"] span {
     color: #ffffff !important;
     font-weight: 500 !important;
 }
-div[data-testid="stAlert"] svg { display: none !important; }
+[data-testid="stNotification"] svg, [data-testid="stAlert"] svg {
+    display: none !important;
+}
 
 @keyframes fadeInUp { from { opacity:0; transform:translateY(10px);} to { opacity:1; transform:translateY(0);} }
 
@@ -92,7 +109,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* INPUTS & FIX BIRU */
+/* ============================================================
+   INPUTS & TOMBOL PLUS MINUS (BUNUH BIRU)
+   ============================================================ */
 div[data-baseweb="input"] {
     background-color: #0a0a0a !important;
     border: 1px solid #27272a !important;
@@ -114,13 +133,23 @@ div[data-baseweb="input"]:focus-within {
     box-shadow: none !important;
     outline: none !important;
 }
-div[data-testid="stNumberInput"] button {
+
+/* Tombol Plus Minus Number Input */
+button[data-testid="stNumberInputStepUp"], 
+button[data-testid="stNumberInputStepDown"] {
     background-color: #171717 !important;
     color: #ffffff !important;
     border: 1px solid #27272a !important;
 }
-div[data-testid="stNumberInput"] button:hover {
+button[data-testid="stNumberInputStepUp"]:hover, 
+button[data-testid="stNumberInputStepDown"]:hover {
     background-color: #262626 !important;
+    color: #ffffff !important;
+}
+button[data-testid="stNumberInputStepUp"] svg, 
+button[data-testid="stNumberInputStepDown"] svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
 }
 
 .stSelectbox > div > div {
