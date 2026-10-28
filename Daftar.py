@@ -8,10 +8,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quant.theme import load_theme, hero, section_title, info_banner
 from quant.auth import submit_registration, get_all_approved_users_for_auth
 
-# 1. SET PAGE CONFIG (Wajib paling atas)
+# 1. SET PAGE CONFIG (Wajib paling atas, TANPA toolbar_mode)
 st.set_page_config(page_title="Bursarium", layout="wide")
 
-# 2. SEMBUNYIKAN MENU DEVELOPER (Cara Python)
+# 2. SEMBUNYIKAN MENU DEVELOPER (Cara Python yang aman)
 st.set_option("client.toolbarMode", "viewer")
 
 # 3. LOAD TEMA
