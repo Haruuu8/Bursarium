@@ -54,9 +54,6 @@ def calculate_money_flow(df):
     return d
 
 
-# ============================================================
-# COMPUTE INDICATORS FOR ALL STOCKS
-# ============================================================
 @st.cache_data(ttl=1800, show_spinner=False)
 def compute_all_indicators():
     d = load_parquet_safe()
@@ -77,20 +74,15 @@ def compute_all_indicators():
     d = d[d["Close"] > 0]
     d = d.sort_values(["Kode", "Date"]).reset_index(drop=True)
 
-    # Volume ratio
     d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
         lambda x: x.rolling(20, min_periods=10).mean()
     )
     d["Vol_Ratio"] = d["Volume"] / d["Vol_MA20"]
-
-    # % change dari close sebelumnya
     d["Pct_Change"] = d.groupby("Kode")["Close"].pct_change() * 100
 
-    # Close position dalam range (CLV / Close Location Value)
     rng = (d["High"] - d["Low"]).replace(0, np.nan)
     d["Close_Pct"] = (d["Close"] - d["Low"]) / rng
 
-    # CMF (20)
     d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng
     d["MFV"] = d["MFM"] * d["Volume"]
     d["CMF_20"] = d.groupby("Kode")["MFV"].transform(
@@ -108,7 +100,6 @@ def compute_all_indicators():
 
 
 def classify_verdict(close_pct, cmf, close_gt_open):
-    """Klasifikasi kualitas bar tanpa emoji."""
     if pd.isna(close_pct) or pd.isna(cmf):
         return "—"
     if not close_gt_open:
@@ -138,16 +129,16 @@ if not saham_list:
     st.stop()
 
 # ============================================================
-# PERBAIKAN INI DIA (Indentasi col1 & selectbox)
+# PERBAIKAN LAYOUT: Selectbox dibuat lebih lega
 # ============================================================
-col1, col2 = st.columns([1, 3])
-with col1:
-    if "mf_kode" not in st.session_state:
-        st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
-    kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
+if "mf_kode" not in st.session_state:
+    st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
-with col2:
-    st.markdown("<br>", unsafe_allow_html=True)
+col_sel, col_cap = st.columns([2, 3])
+with col_sel:
+    kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
+with col_cap:
+    st.markdown("<br><br>", unsafe_allow_html=True)
     st.caption("Grafik Statis. Data menggunakan Daily (1 Hari).")
 
 df = load_ohlcv(kode)
@@ -289,7 +280,13 @@ df_accum = df_today[
 ].copy()
 
 if df_accum.empty:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Tidak ada saham dengan akumulasi asli hari ini. (Volume spike + close di atas + buyer dominan + CMF positif)</div>', unsafe_allow_html=True)
+    # PERUBAHAN TEKS DI SINI
+    st.markdown(
+        '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
+        'Tidak ada saham yang memenuhi kriteria <b>Akumulasi Kuat</b> hari ini. '
+        'Belum terdeteksi adanya volume meledak yang diiringi dengan dominasi pembeli.'
+        '</div>', unsafe_allow_html=True
+    )
 else:
     df_accum = df_accum.sort_values("Vol_Ratio", ascending=False)
 
@@ -360,13 +357,14 @@ df_dist = df_today[
 ].copy()
 
 if df_dist.empty:
+    # PERUBAHAN TEKS DI SINI
     st.markdown(
         '<div style="background:#171717; '
-        'border:1px solid #27272a; border-left:4px solid #737373; '
+        'border:1px solid #27272a; border-left:4px solid #ffffff; '
         'border-radius:8px; padding:16px 20px; '
         'font-size:14px; color:#e5e5e5;">'
-        '[OK] Tidak ada saham dengan pola distribusi tersamar hari ini. '
-        'Market sehat.'
+        'Tidak ada saham yang terindikasi <b>Distribusi Tersamar</b> hari ini. '
+        'Kondisi pasar terpantau relatif sehat dan aman dari aksi jual besar-besaran di puncak.'
         '</div>',
         unsafe_allow_html=True
     )

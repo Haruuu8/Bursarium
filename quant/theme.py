@@ -135,9 +135,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
+   STYLING UNTUK ST.FORM (KOTAK INPUT)
+   ============================================================ */
+[data-testid="stForm"] {
+    background-color: #171717 !important;
+    border: 1px solid #27272a !important;
+    border-radius: 12px !important;
+    padding: 28px !important;
+}
+
+/* ============================================================
    INPUTS & TOMBOL PLUS MINUS (NUMBER INPUT) - FIX TOTAL
    ============================================================ */
-/* 1. Container Paling Luar */
+/* Container Paling Luar */
 div[data-testid="stNumberInput"] > div {
     background-color: #171717 !important; 
     border: 1px solid #404040 !important;
@@ -148,7 +158,7 @@ div[data-testid="stNumberInput"] > div {
     box-shadow: none !important;
 }
 
-/* 2. Bunuh Semua Warna Background Biru di Layer Dalam BaseWeb */
+/* Bunuh Semua Warna Background Biru di Layer Dalam BaseWeb */
 div[data-testid="stNumberInput"] div[data-baseweb="input"],
 div[data-testid="stNumberInput"] div[data-baseweb="base-input"],
 div[data-testid="stNumberInput"] > div > div {
@@ -158,7 +168,7 @@ div[data-testid="stNumberInput"] > div > div {
     box-shadow: none !important;
 }
 
-/* 3. Elemen Input Teks Asli */
+/* Elemen Input Teks Asli */
 div[data-testid="stNumberInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
@@ -171,7 +181,7 @@ div[data-testid="stNumberInput"] input {
     font-weight: 600 !important;
 }
 
-/* 4. Tombol Plus & Minus */
+/* Tombol Plus & Minus */
 div[data-testid="stNumberInput"] button {
     background-color: #262626 !important;
     color: #ffffff !important;
@@ -235,15 +245,15 @@ div[data-testid="stTextInput"] input::placeholder {
 
 /* Area Kanan (Counter max_chars seperti "4/6") */
 div[data-testid="stTextInput"] > div[data-baseweb="input"] > div:last-child {
-    background-color: #262626 !important; /* Background counter abu gelap */
-    color: #a3a3a3 !important; /* Teks counter abu terang */
+    background-color: #262626 !important;
+    color: #a3a3a3 !important;
     border-left: 1px solid #404040 !important;
     padding: 0 16px !important;
     display: flex !important;
     align-items: center !important;
     font-size: 13px !important;
     font-weight: 600 !important;
-    border-radius: 0 50px 50px 0 !important; /* Ujung kanan membulat */
+    border-radius: 0 50px 50px 0 !important;
 }
 
 /* Efek saat diklik (Focus) */
@@ -257,31 +267,42 @@ div[data-testid="stTextInput"] input:focus {
     box-shadow: none !important;
 }
 
-/* Selectbox */
-.stSelectbox > div > div {
-    background: #262626 !important;
+
+/* ============================================================
+   SELECTBOX FIX (Warna Teks Putih)
+   ============================================================ */
+div[data-testid="stSelectbox"] > div[data-baseweb="select"] {
+    background-color: #171717 !important;
     border: 1px solid #404040 !important;
     border-radius: 8px !important;
-    color: #ffffff !important;
-    padding: 10px 14px !important;
     box-shadow: none !important;
 }
-.stSelectbox > div > div:focus-within {
+div[data-testid="stSelectbox"] > div[data-baseweb="select"] * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important; /* Memaksa teks jadi putih */
+    font-weight: 600 !important;
+}
+div[data-testid="stSelectbox"] > div[data-baseweb="select"]:focus-within {
     border-color: #737373 !important;
     box-shadow: 0 0 0 1px #737373 !important;
 }
+
+/* Dropdown List */
 ul[data-testid="stSelectboxVirtualDropdown"] {
     background-color: #171717 !important;
     border: 1px solid #27272a !important;
 }
 ul[data-testid="stSelectboxVirtualDropdown"] li {
     color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 ul[data-testid="stSelectboxVirtualDropdown"] li:hover,
 ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     background-color: #262626 !important;
     color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
+
 
 /* ============================================================
    SLIDER & CHECKBOX
