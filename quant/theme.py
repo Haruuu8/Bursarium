@@ -147,7 +147,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================================
    INPUTS & TOMBOL PLUS MINUS (NUMBER INPUT) - FIX TOTAL
    ============================================================ */
-/* Container Paling Luar */
 div[data-testid="stNumberInput"] > div {
     background-color: #171717 !important; 
     border: 1px solid #404040 !important;
@@ -157,8 +156,6 @@ div[data-testid="stNumberInput"] > div {
     flex-wrap: nowrap !important;
     box-shadow: none !important;
 }
-
-/* Bunuh Semua Warna Background Biru di Layer Dalam BaseWeb */
 div[data-testid="stNumberInput"] div[data-baseweb="input"],
 div[data-testid="stNumberInput"] div[data-baseweb="base-input"],
 div[data-testid="stNumberInput"] > div > div {
@@ -167,8 +164,6 @@ div[data-testid="stNumberInput"] > div > div {
     border: none !important;
     box-shadow: none !important;
 }
-
-/* Elemen Input Teks Asli */
 div[data-testid="stNumberInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
@@ -180,8 +175,6 @@ div[data-testid="stNumberInput"] input {
     min-width: 0 !important;
     font-weight: 600 !important;
 }
-
-/* Tombol Plus & Minus */
 div[data-testid="stNumberInput"] button {
     background-color: #262626 !important;
     color: #ffffff !important;
@@ -195,11 +188,9 @@ div[data-testid="stNumberInput"] button {
     justify-content: center !important;
     height: 100% !important;
 }
-
 div[data-testid="stNumberInput"] button:hover {
     background-color: #404040 !important;
 }
-
 div[data-testid="stNumberInput"] button svg {
     fill: #ffffff !important;
     color: #ffffff !important;
@@ -208,25 +199,20 @@ div[data-testid="stNumberInput"] button svg {
 /* ============================================================
    CUSTOM SEARCH BAR / TEXT INPUT (FIX TOTAL WARNA BIRU)
    ============================================================ */
-/* Container Luar */
 div[data-testid="stTextInput"] > div[data-baseweb="input"] {
     background-color: #171717 !important; 
     border: 1px solid #404040 !important;
-    border-radius: 50px !important; /* Membulat seperti searchbar */
+    border-radius: 50px !important; 
     padding: 0 !important;
     overflow: hidden !important;
     transition: all 0.3s ease !important;
     box-shadow: none !important;
 }
-
-/* Layer Dalam BaseWeb (Tempat warna biru gelap bersembunyi) */
 div[data-testid="stTextInput"] > div[data-baseweb="input"] > div {
     background-color: transparent !important; 
     border: none !important;
     box-shadow: none !important;
 }
-
-/* Elemen Input Asli */
 div[data-testid="stTextInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
@@ -236,14 +222,10 @@ div[data-testid="stTextInput"] input {
     border: none !important;
     box-shadow: none !important;
 }
-
-/* Placeholder */
 div[data-testid="stTextInput"] input::placeholder {
     color: #737373 !important; 
     font-weight: 400 !important;
 }
-
-/* Area Kanan (Counter max_chars seperti "4/6") */
 div[data-testid="stTextInput"] > div[data-baseweb="input"] > div:last-child {
     background-color: #262626 !important;
     color: #a3a3a3 !important;
@@ -255,8 +237,6 @@ div[data-testid="stTextInput"] > div[data-baseweb="input"] > div:last-child {
     font-weight: 600 !important;
     border-radius: 0 50px 50px 0 !important;
 }
-
-/* Efek saat diklik (Focus) */
 div[data-testid="stTextInput"] > div[data-baseweb="input"]:focus-within {
     border-color: #ffffff !important; 
     box-shadow: 0 0 0 1px #ffffff !important; 
@@ -269,38 +249,53 @@ div[data-testid="stTextInput"] input:focus {
 
 
 /* ============================================================
-   SELECTBOX FIX (Warna Teks Putih)
+   SELECTBOX FIX (BUNUH WARNA BIRU TOTAL)
    ============================================================ */
-div[data-testid="stSelectbox"] > div[data-baseweb="select"] {
+/* 1. Kotak Luar */
+div[data-testid="stSelectbox"] > div {
     background-color: #171717 !important;
     border: 1px solid #404040 !important;
     border-radius: 8px !important;
     box-shadow: none !important;
+    transition: all 0.2s ease !important;
 }
-div[data-testid="stSelectbox"] > div[data-baseweb="select"] * {
+
+/* 2. Bunuh semua background di layer dalam (biang kerok birunya) */
+div[data-testid="stSelectbox"] div[data-baseweb="select"],
+div[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+div[data-testid="stSelectbox"] div[data-baseweb="select"] > div > div {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. Paksa teks dan panah jadi putih */
+div[data-testid="stSelectbox"] * {
     color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important; /* Memaksa teks jadi putih */
+    -webkit-text-fill-color: #ffffff !important; 
     font-weight: 600 !important;
 }
-div[data-testid="stSelectbox"] > div[data-baseweb="select"]:focus-within {
+
+/* 4. Efek saat kotak diklik (Focus) */
+div[data-testid="stSelectbox"] > div:focus-within {
     border-color: #737373 !important;
     box-shadow: 0 0 0 1px #737373 !important;
 }
 
-/* Dropdown List */
+/* 5. List Dropdown saat diklik */
 ul[data-testid="stSelectboxVirtualDropdown"] {
     background-color: #171717 !important;
     border: 1px solid #27272a !important;
 }
 ul[data-testid="stSelectboxVirtualDropdown"] li {
+    background-color: #171717 !important;
     color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
 }
 ul[data-testid="stSelectboxVirtualDropdown"] li:hover,
 ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     background-color: #262626 !important;
     color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff !important;
 }
 
 
