@@ -9,87 +9,125 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
+# Pastikan fungsi loader ini sesuai dengan yang ada di proyek Anda
+from quant.parquet_loader import load_parquet_safe 
 
 load_theme()
 
 # ============================================================
-# 1. LOAD DATA DARI DATABASE ASLI ANDA
+# 1. LOAD DATA ASLI & AUTO-MAPPING KOLOM
 # ============================================================
 @st.cache_data(ttl=1800)
 def load_financial_data():
     # ------------------------------------------------------------------
-    # BAGIAN 1: SILAKAN UBAH QUERY INI SESUAI DATABASE ANDA
+    # GANTI BAGIAN INI DENGAN QUERY DATABASE/FILE ANDA YANG SEBENARNYA
     # ------------------------------------------------------------------
     try:
-        # CONTOH A: Jika file Parquet ada di folder 'data'
-        # df = pd.read_parquet("data/laporan_keuangan.parquet")
+        # Jika file laporan keuangan Anda terpisah dari OHLCV, ubah path-nya di sini.
+        # Contoh: df = pd.read_parquet("data/laporan_keuangan.parquet")
+        # Jika menggunakan loader proyek:
+        df = load_parquet_safe() 
         
-        # CONTOH B: Jika dari Supabase (sesuaikan dengan fungsi Anda)
+        # Jika menggunakan Supabase:
         # from quant.auth import supabase
         # res = supabase.table("laporan_keuangan").select("*").execute()
         # df = pd.DataFrame(res.data)
-        
-        # UNTUK TESTING: Saya asumsikan Anda punya file parquet dengan nama ini
-        df = pd.read_parquet("laporan_keuangan.parquet") 
-        
-    except FileNotFoundError:
-        st.error("⚠️ File data laporan keuangan tidak ditemukan! Silakan sesuaikan path/query di dalam fungsi `load_financial_data()`.")
+
+        if df is None or df.empty:
+            st.error("⚠️ Data laporan keuangan kosong. Pastikan file/query database Anda benar.")
+            st.stop()
+            
+    except Exception as e:
+        st.error(f"⚠️ Gagal memuat data: {e}")
         st.stop()
 
     # ------------------------------------------------------------------
-    # BAGIAN 2: MAPPING KOLOM (INI DIA "KEYWORD" YANG ANDA MAKSUD)
+    # AUTO-MAPPING KOLOM (Mencari nama kolom yang mirip)
     # ------------------------------------------------------------------
-    # Ubah nama kolom di SEBELAH KANAN agar sesuai dengan nama di database Anda.
-    # (Kiri = nama yang dibutuhkan kode, Kanan = nama kolom di database Anda)
-    kolom_mapping = {
-        'Kode': 'ticker',                 # misal di DB namanya 'ticker'
-        'Sektor': 'sector',               # misal 'sector'
-        'Tipe': 'type',                   # 'Bank' atau 'Non-Bank'
-        'Currency': 'currency',           # 'IDR' atau 'USD'
+    # Kode akan mencari nama kolom di database Anda yang mirip dengan target di bawah.
+    # Misal target 'NI_9M', kode akan mencari 'laba_9m', 'net_income_9m', dll.
+    
+    aliases = {
+        'Kode': ['kode', 'ticker', 'symbol', 'stock_code', 'stock'],
+        'Sektor': ['sektor', 'sector', 'industri', 'industry'],
+        'Tipe': ['tipe', 'type', 'is_bank', 'bank_status'],
+        'Currency': ['currency', 'mata_uang', 'curr'],
         
-        'NI_9M': 'net_income_9m',         # misal 'net_income_9m'
-        'NI_6M': 'net_income_6m', 
-        'NI_Q3_LY': 'net_income_q3_ly', 
+        'NI_9M': ['ni_9m', 'laba_bersih_9m', 'net_income_9m', 'laba_9m', 'profit_9m'],
+        'NI_6M': ['ni_6m', 'laba_bersih_6m', 'net_income_6m', 'laba_6m', 'profit_6m'],
+        'NI_Q3_LY': ['ni_q3_ly', 'laba_q3_ly', 'net_income_q3_ly', 'laba_bersih_q3_ly'],
         
-        'Rev_9M': 'revenue_9m', 
-        'Rev_6M': 'revenue_6m', 
-        'Rev_Q3_LY': 'revenue_q3_ly', 
+        'Rev_9M': ['rev_9m', 'revenue_9m', 'pendapatan_9m', 'sales_9m'],
+        'Rev_6M': ['rev_6m', 'revenue_6m', 'pendapatan_6m', 'sales_6m'],
+        'Rev_Q3_LY': ['rev_q3_ly', 'revenue_q3_ly', 'pendapatan_q3_ly', 'sales_q3_ly'],
         
-        'CFO_9M': 'cfo_9m', 
-        'ROE': 'roe', 
-        'DER': 'der', 
-        'PER': 'per', 
-        'PBV': 'pbv',
-        'Avg_Value_Daily': 'avg_value_daily'
+        'CFO_9M': ['cfo_9m', 'operating_cashflow_9m', 'arus_kas_operasi_9m', 'cashflow_9m'],
+        'ROE': ['roe', 'return_on_equity'],
+        'DER': ['der', 'debt_to_equity'],
+        'PER': ['per', 'pe_ratio', 'price_earning'],
+        'PBV': ['pbv', 'pb_ratio', 'price_to_book'],
+        'Avg_Value_Daily': ['avg_value_daily', 'nilai_transaksi', 'liquidity', 'avg_val']
     }
+
+    # Proses Rename
+    df_clean = df.copy()
+    rename_dict = {}
     
-    # Lakukan rename
-    df = df.rename(columns={v: k for k, v in kolom_mapping.items() if v in df.columns})
-    
-    # Pastikan kolom wajib ada
+    for target_col, alias_list in aliases.items():
+        # Cek apakah target_col sudah ada
+        if target_col in df_clean.columns:
+            continue
+            
+        # Jika belum, cari di alias_list (case-insensitive)
+        for col in df_clean.columns:
+            if str(col).lower() in alias_list:
+                rename_dict[col] = target_col
+                break
+                
+    df_clean = df_clean.rename(columns=rename_dict)
+
+    # Validasi Kolom Wajib
     wajib = ['Kode', 'Sektor', 'NI_9M', 'NI_6M', 'NI_Q3_LY', 'Rev_9M', 'Rev_6M', 'Rev_Q3_LY', 'CFO_9M', 'ROE', 'DER']
-    missing = [c for c in wajib if c not in df.columns]
+    missing = [c for c in wajib if c not in df_clean.columns]
+    
     if missing:
-        st.error(f"⚠️ Kolom berikut tidak ditemukan di database: {', '.join(missing)}. Silakan periksa kembali 'kolom_mapping' di kode Anda.")
+        st.error(f"⚠️ Kolom berikut tidak ditemukan di database Anda: **{', '.join(missing)}**")
+        st.info("Silakan buka file database Anda, lihat nama kolom aslinya, lalu tambahkan ke dalam daftar `aliases` di dalam kode.")
+        
+        with st.expander("Lihat Daftar Kolom yang Tersedia di Database Anda"):
+            st.write(df.columns.tolist())
         st.stop()
 
-    # ------------------------------------------------------------------
-    # BAGIAN 3: AUTO-KONVERSI USD KE IDR (JIKA ADA)
-    # ------------------------------------------------------------------
-    if 'Currency' in df.columns:
-        KURS_USD = 15500
-        cols_to_convert = ['NI_9M', 'NI_6M', 'NI_Q3_LY', 'Rev_9M', 'Rev_6M', 'Rev_Q3_LY', 'CFO_9M']
-        for col in cols_to_convert:
-            df[col] = np.where(df['Currency'] == 'USD', df[col] * KURS_USD, df[col])
+    # Isi Default jika kolom opsional tidak ada
+    if 'Tipe' not in df_clean.columns:
+        df_clean['Tipe'] = 'Non-Bank'
     else:
-        # Jika tidak ada kolom currency, anggap semua IDR
-        df['Currency'] = 'IDR'
+        df_clean['Tipe'] = df_clean['Tipe'].fillna('Non-Bank').astype(str).str.title()
+        
+    if 'Currency' not in df_clean.columns:
+        df_clean['Currency'] = 'IDR'
+        
+    if 'Avg_Value_Daily' not in df_clean.columns:
+        df_clean['Avg_Value_Daily'] = 2_000_000_000 # Asumsi likuid jika data tidak ada
+    if 'PER' not in df_clean.columns:
+        df_clean['PER'] = 10.0
+    if 'PBV' not in df_clean.columns:
+        df_clean['PBV'] = 1.0
 
-    # Pastikan tipe data Bank terisi
-    if 'Tipe' not in df.columns:
-        df['Tipe'] = 'Non-Bank' # Default jika tidak ada info bank
+    # ------------------------------------------------------------------
+    # AUTO-KONVERSI USD KE IDR (JIKA ADA)
+    # ------------------------------------------------------------------
+    KURS_USD = 15500 
+    cols_to_convert = ['NI_9M', 'NI_6M', 'NI_Q3_LY', 'Rev_9M', 'Rev_6M', 'Rev_Q3_LY', 'CFO_9M']
+    
+    for col in cols_to_convert:
+        if col in df_clean.columns:
+            # Paksa jadi numerik, jika error (ada teks) jadikan NaN
+            df_clean[col] = pd.to_numeric(df_clean[col], errors='coerce')
+            # Konversi mata uang
+            df_clean[col] = np.where(df_clean['Currency'].astype(str).str.upper() == 'USD', df_clean[col] * KURS_USD, df_clean[col])
 
-    return df
+    return df_clean
 
 # ============================================================
 # 2. LOGIKA SCREENER
@@ -97,26 +135,31 @@ def load_financial_data():
 def run_screener(df):
     d = df.copy()
     
+    # Hitung Q3 Standalone
     d['NI_Q3'] = d['NI_9M'] - d['NI_6M']
     d['Rev_Q3'] = d['Rev_9M'] - d['Rev_6M']
     
-    d['NI_YoY_Raw'] = (d['NI_Q3'] - d['NI_Q3_LY']) / d['NI_Q3_LY'].abs()
-    d['Rev_YoY_Raw'] = (d['Rev_Q3'] - d['Rev_Q3_LY']) / d['Rev_Q3_LY'].abs()
+    # YoY Growth (Raw)
+    d['NI_YoY_Raw'] = (d['NI_Q3'] - d['NI_Q3_LY']) / d['NI_Q3_LY'].abs().replace(0, np.nan)
+    d['Rev_YoY_Raw'] = (d['Rev_Q3'] - d['Rev_Q3_LY']) / d['Rev_Q3_LY'].abs().replace(0, np.nan)
     
-    d['NI_YoY'] = np.clip(d['NI_YoY_Raw'], -1.0, 2.0)
-    d['Rev_YoY'] = np.clip(d['Rev_YoY_Raw'], -1.0, 2.0)
+    # Winsorization
+    d['NI_YoY'] = np.clip(d['NI_YoY_Raw'], -1.0, 2.0).fillna(-1)
+    d['Rev_YoY'] = np.clip(d['Rev_YoY_Raw'], -1.0, 2.0).fillna(-1)
     
+    # Margin & Kualitas
     d['NPM_Q3'] = d['NI_Q3'] / d['Rev_Q3'].replace(0, np.nan)
     d['NPM_LY'] = d['NI_Q3_LY'] / d['Rev_Q3_LY'].replace(0, np.nan)
     d['NPM_Change'] = (d['NPM_Q3'] - d['NPM_LY']).fillna(-1)
     d['CFO_to_NI'] = d['CFO_9M'] / d['NI_9M'].replace(0, np.nan)
     
+    # FLAGS ANOMALI
     d['Flag_Anomali'] = ""
     d.loc[d['Rev_YoY_Raw'] > 3.0, 'Flag_Anomali'] += "CEK REV, "
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
     d.loc[d['NI_Q3_LY'] <= 0, 'Flag_Anomali'] += "RUGI THN LALU, "
     
-    # HARD FILTERS
+    # HARD FILTERS (Syarat Gugur)
     d = d[
         (d['NI_YoY_Raw'] >= 0) & 
         (d['Rev_YoY_Raw'] >= -0.20) & 
@@ -127,6 +170,7 @@ def run_screener(df):
     
     if d.empty: return d
     
+    # BLENDED RANKING
     def blended_rank(series, sector_series, ascending=True):
         global_rank = series.rank(method='min', pct=True, ascending=ascending) * 100
         sector_ranked = series.groupby(sector_series).rank(method='min', pct=True, ascending=ascending) * 100
@@ -150,6 +194,7 @@ def run_screener(df):
     
     d = d.fillna({'Rank_NI': 0, 'Rank_Rev': 0, 'Rank_Margin': 0, 'Rank_Quality': 0, 'Rank_ROE': 0, 'Rank_DER': 0, 'Rank_PER': 0})
     
+    # Skor Akhir
     d['Score_Raw'] = (
         (d['Rank_NI'] * 0.20) + (d['Rank_Rev'] * 0.15) + 
         (d['Rank_Margin'] * 0.20) + (d['Rank_Quality'] * 0.20) + 
@@ -230,17 +275,14 @@ def render_card(row, rank):
 # ============================================================
 st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental Q3 Berdasarkan Sektor (IDR)"), unsafe_allow_html=True)
 
-# LOAD DATA ASLI
+# LOAD DATA
 df_raw = load_financial_data()
-
-if df_raw.empty:
-    st.stop()
 
 # JALANKAN SCREENER
 df_result = run_screener(df_raw)
 
 if df_result.empty:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada saham yang lolos syarat gugur (Hard Filters).</div>', unsafe_allow_html=True)
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada saham yang lolos syarat gugur (Hard Filters) berdasarkan data asli Anda.</div>', unsafe_allow_html=True)
     st.stop()
 
 sectors = df_result['Sektor'].unique().tolist()
@@ -269,8 +311,8 @@ st.markdown(section_title("Saham yang Gugur (Hard Filters)", "Gagal memenuhi sya
 df_raw['NI_Q3'] = df_raw['NI_9M'] - df_raw['NI_6M']
 df_raw['Rev_Q3'] = df_raw['Rev_9M'] - df_raw['Rev_6M']
 df_raw['CFO_to_NI'] = df_raw['CFO_9M'] / df_raw['NI_9M'].replace(0, np.nan)
-df_raw['NI_YoY'] = (df_raw['NI_Q3'] - df_raw['NI_Q3_LY']) / df_raw['NI_Q3_LY'].abs()
-df_raw['Rev_YoY'] = (df_raw['Rev_Q3'] - df_raw['Rev_Q3_LY']) / df_raw['Rev_Q3_LY'].abs()
+df_raw['NI_YoY'] = (df_raw['NI_Q3'] - df_raw['NI_Q3_LY']) / df_raw['NI_Q3_LY'].abs().replace(0, np.nan)
+df_raw['Rev_YoY'] = (df_raw['Rev_Q3'] - df_raw['Rev_Q3_LY']) / df_raw['Rev_Q3_LY'].abs().replace(0, np.nan)
 
 failed = df_raw[
     (df_raw['NI_YoY'] < 0) | 
