@@ -6,6 +6,8 @@ if not st.session_state.get("authentication_status"):
 import os, sys
 import pandas as pd
 import numpy as np
+import json
+import glob
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
@@ -13,130 +15,103 @@ from quant.theme import load_theme, page_header, section_title
 load_theme()
 
 # ============================================================
-# 1. LOAD DATA FUNDAMENTAL & AUTO-MAPPING KOLOM
+# 1. LOAD DATA DARI FILE JSON HASIL SCRAPER
 # ============================================================
 @st.cache_data(ttl=1800)
-def load_financial_data():
-    try:
-        # ------------------------------------------------------------------
-        # GANTI BAGIAN INI SESUAI CARA ANDA MEMANGGIL DATA "FUNDAMENTAL"
-        # ------------------------------------------------------------------
-        
-        # CONTOH 1: Jika file parquet terpisah
-        # df = pd.read_parquet("data/fundamental.parquet")
-        
-        # CONTOH 2: Jika menggunakan Supabase
-        # from quant.auth import supabase
-        # res = supabase.table("fundamental").select("*").execute()
-        # df = pd.DataFrame(res.data)
-        
-        # CONTOH 3: SEMENTARA KITA GUNAKAN INI (Asumsi file fundamental.parquet ada di root)
-        # Jika error "File not found", ganti path di bawah ini.
-        try:
-            df = pd.read_parquet("fundamental.parquet")
-        except FileNotFoundError:
+def load_fundamental_data():
+    folder_path = "data_fundamental"
+    json_files = glob.glob(os.path.join(folder_path, "*.json"))
+    
+    if not json_files:
+        st.error(f"⚠️ Tidak ada file JSON di folder `{folder_path}`. Pastikan scraper fundamental sudah dijalankan.")
+        st.stop()
+
+    data_list = []
+    
+    for file in json_files:
+        with open(file, 'r', encoding='utf-8') as f:
             try:
-                df = pd.read_parquet("data/fundamental.parquet")
-            except FileNotFoundError:
-                st.error("⚠️ File data fundamental tidak ditemukan. Silakan sesuaikan path di fungsi `load_financial_data()`.")
-                st.stop()
-
-        if df is None or df.empty:
-            st.error("⚠️ Data fundamental kosong.")
-            st.stop()
-            
-    except Exception as e:
-        st.error(f"⚠️ Gagal memuat data fundamental: {e}")
-        st.stop()
-
-    # ------------------------------------------------------------------
-    # AUTO-MAPPING KOLOM (Mencari nama kolom yang mirip)
-    # ------------------------------------------------------------------
-    aliases = {
-        'Kode': ['kode', 'ticker', 'symbol', 'stock_code', 'stock', 'stockcode'],
-        'Sektor': ['sektor', 'sector', 'industri', 'industry', 'sector_name'],
-        'Tipe': ['tipe', 'type', 'is_bank', 'bank_status', 'kategori'],
-        'Currency': ['currency', 'mata_uang', 'curr', 'matauang'],
-        
-        # LABA BERSIH (Net Income)
-        'NI_9M': ['ni_9m', 'laba_bersih_9m', 'net_income_9m', 'laba_9m', 'profit_9m', 'netprofit_9m', 'laba_bersih'],
-        'NI_6M': ['ni_6m', 'laba_bersih_6m', 'net_income_6m', 'laba_6m', 'profit_6m'],
-        'NI_Q3_LY': ['ni_q3_ly', 'laba_q3_ly', 'net_income_q3_ly', 'laba_bersih_q3_ly', 'laba_q3_tahun_lalu'],
-        
-        # PENDAPATAN (Revenue)
-        'Rev_9M': ['rev_9m', 'revenue_9m', 'pendapatan_9m', 'sales_9m', 'penjualan_9m', 'revenue'],
-        'Rev_6M': ['rev_6m', 'revenue_6m', 'pendapatan_6m', 'sales_6m', 'penjualan_6m'],
-        'Rev_Q3_LY': ['rev_q3_ly', 'revenue_q3_ly', 'pendapatan_q3_ly', 'sales_q3_ly', 'pendapatan_q3_tahun_lalu'],
-        
-        # ARUS KAS OPERASI
-        'CFO_9M': ['cfo_9m', 'operating_cashflow_9m', 'arus_kas_operasi_9m', 'cashflow_9m', 'cfo'],
-        
-        # RASIO
-        'ROE': ['roe', 'return_on_equity', 'returnonequity'],
-        'DER': ['der', 'debt_to_equity', 'debttoequity'],
-        'PER': ['per', 'pe_ratio', 'price_earning', 'peratio'],
-        'PBV': ['pbv', 'pb_ratio', 'price_to_book', 'pbvratio'],
-        'Avg_Value_Daily': ['avg_value_daily', 'nilai_transaksi', 'liquidity', 'avg_val', 'value', 'nilai']
-    }
-
-    # Proses Rename
-    df_clean = df.copy()
-    rename_dict = {}
-    
-    for target_col, alias_list in aliases.items():
-        if target_col in df_clean.columns:
-            continue
-            
-        for col in df_clean.columns:
-            if str(col).lower() in alias_list:
-                rename_dict[col] = target_col
-                break
+                d = json.load(f)
+            except Exception:
+                continue
                 
-    df_clean = df_clean.rename(columns=rename_dict)
-
-    # Validasi Kolom Wajib
-    wajib = ['Kode', 'Sektor', 'NI_9M', 'NI_6M', 'NI_Q3_LY', 'Rev_9M', 'Rev_6M', 'Rev_Q3_LY', 'CFO_9M', 'ROE', 'DER']
-    missing = [c for c in wajib if c not in df_clean.columns]
+        kode = d.get("kode")
+        sektor = d.get("sektor") or "Unknown"
+        
+        # Ekstrak Rasio Kunci
+        rasio = d.get("rasio_kunci", {})
+        roe = rasio.get("roe")
+        der = rasio.get("de")
+        per = rasio.get("pe")
+        pbv = rasio.get("pb")
+        
+        # Ekstrak Arus Kas (CFO)
+        arus_kas = d.get("arus_kas", {})
+        cfo = arus_kas.get("arus_kas_operasi")
+        
+        # Ekstrak Data Kuartalan
+        q_rev = d.get("quarterly", {}).get("revenue", {})
+        q_ni = d.get("quarterly", {}).get("net_income", {})
+        
+        # Cari tahun terbaru yang ada di data (misal 2026 atau 2025)
+        years = [int(k.split("-")[0]) for k in q_rev.keys() if "-" in k]
+        if not years:
+            continue
+        latest_year = max(years)
+        prev_year = latest_year - 1
+        
+        # Fungsi bantu ambil nilai, default 0
+        def get_q(data, year, q):
+            return data.get(f"{year}-Q{q}", 0)
+            
+        # Hitung Kumulatif 9 Bulan (Q1 + Q2 + Q3)
+        rev_9m = get_q(q_rev, latest_year, 1) + get_q(q_rev, latest_year, 2) + get_q(q_rev, latest_year, 3)
+        ni_9m = get_q(q_ni, latest_year, 1) + get_q(q_ni, latest_year, 2) + get_q(q_ni, latest_year, 3)
+        
+        # Hitung Kumulatif 6 Bulan (Q1 + Q2)
+        rev_6m = get_q(q_rev, latest_year, 1) + get_q(q_rev, latest_year, 2)
+        ni_6m = get_q(q_ni, latest_year, 1) + get_q(q_ni, latest_year, 2)
+        
+        # Ambil data Q3 Tahun Lalu
+        rev_q3_ly = get_q(q_rev, prev_year, 3)
+        ni_q3_ly = get_q(q_ni, prev_year, 3)
+        
+        # Tentukan Tipe (Bank / Non-Bank)
+        industri = str(d.get("industri", "")).lower()
+        sektor_str = str(sektor).lower()
+        is_bank = "bank" in sektor_str or "bank" in industri
+        tipe = "Bank" if is_bank else "Non-Bank"
+        
+        # Coba ambil nilai transaksi harian dari file OHLCV jika ada (opsional)
+        # Jika tidak ada, kita beri nilai default besar agar tidak gugur di filter likuiditas
+        avg_val = 2_000_000_000 
+        
+        data_list.append({
+            'Kode': kode,
+            'Sektor': sektor,
+            'Tipe': tipe,
+            'NI_9M': ni_9m,
+            'NI_6M': ni_6m,
+            'NI_Q3_LY': ni_q3_ly,
+            'Rev_9M': rev_9m,
+            'Rev_6M': rev_6m,
+            'Rev_Q3_LY': rev_q3_ly,
+            'CFO_9M': cfo if cfo else 0,
+            'ROE': roe if roe else 0,
+            'DER': der if der else 0,
+            'PER': per if per else 0,
+            'PBV': pbv if pbv else 0,
+            'Avg_Value_Daily': avg_val
+        })
+        
+    df = pd.DataFrame(data_list)
     
-    if missing:
-        st.error(f"⚠️ Kolom berikut tidak ditemukan di data fundamental Anda: **{', '.join(missing)}**")
-        st.info("Silakan buka file/tabel fundamental Anda, lihat nama kolom aslinya, lalu tambahkan ke dalam daftar `aliases` di dalam kode.")
-        
-        with st.expander("Lihat Daftar Kolom yang Tersedia di Database Fundamental Anda"):
-            st.write(df.columns.tolist())
-        st.stop()
-
-    # Isi Default jika kolom opsional tidak ada
-    if 'Tipe' not in df_clean.columns:
-        df_clean['Tipe'] = 'Non-Bank'
-    else:
-        df_clean['Tipe'] = df_clean['Tipe'].fillna('Non-Bank').astype(str).str.title()
-        
-    if 'Currency' not in df_clean.columns:
-        df_clean['Currency'] = 'IDR'
-        
-    if 'Avg_Value_Daily' not in df_clean.columns:
-        df_clean['Avg_Value_Daily'] = 2_000_000_000 
-    if 'PER' not in df_clean.columns:
-        df_clean['PER'] = 10.0
-    if 'PBV' not in df_clean.columns:
-        df_clean['PBV'] = 1.0
-
-    # ------------------------------------------------------------------
-    # AUTO-KONVERSI USD KE IDR
-    # ------------------------------------------------------------------
-    KURS_USD = 15500 
-    cols_to_convert = ['NI_9M', 'NI_6M', 'NI_Q3_LY', 'Rev_9M', 'Rev_6M', 'Rev_Q3_LY', 'CFO_9M']
-    
-    for col in cols_to_convert:
-        if col in df_clean.columns:
-            df_clean[col] = pd.to_numeric(df_clean[col], errors='coerce')
-            df_clean[col] = np.where(df_clean['Currency'].astype(str).str.upper() == 'USD', df_clean[col] * KURS_USD, df_clean[col])
-
-    return df_clean
+    # Bersihkan data NaN / Inf
+    df = df.replace([np.inf, -np.inf], np.nan).fillna(0)
+    return df
 
 # ============================================================
-# 2. LOGIKA SCREENER
+# 2. LOGIKA SCREENER (SAMA SEPERTI SEBELUMNYA)
 # ============================================================
 def run_screener(df):
     d = df.copy()
@@ -201,6 +176,7 @@ def run_screener(df):
         (d['Rank_PER'] * 0.10)
     )
     
+    # Penalti Skor Bank
     d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] = d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] - 10
     
     d = d.sort_values(by=['Score_Raw', 'CFO_to_NI', 'ROE', 'NI_Q3'], ascending=[False, False, False, False]).reset_index(drop=True)
@@ -219,14 +195,15 @@ def format_idr(val):
 
 def render_card(row, rank):
     ni_q3_rp = format_idr(row['NI_Q3'])
-    ni_yoy = f"{row['NI_YoY']*100:+.1f}%"
-    rev_yoy = f"{row['Rev_YoY']*100:+.1f}%"
-    npm_chg = f"{row['NPM_Change']*100:+.2f}%"
+    ni_yoy = f"{row['NI_YoY']*100:+.1f}%" if row['NI_YoY'] != -1 else "N/A"
+    rev_yoy = f"{row['Rev_YoY']*100:+.1f}%" if row['Rev_YoY'] != -1 else "N/A"
+    npm_chg = f"{row['NPM_Change']*100:+.2f}%" if row['NPM_Change'] != -1 else "N/A"
+    
     cfo_ni = f"{row['CFO_to_NI']:.2f}x" if row['Tipe'] != 'Bank' else "N/A (Bank)"
-    roe = f"{row['ROE']:.1f}%"
+    roe = f"{row['ROE']:.1f}%" if row['ROE'] else "N/A"
     der = f"{row['DER']:.2f}x" if row['Tipe'] != 'Bank' else "N/A (Bank)"
     per = f"{row['PER']:.1f}x" if row['PER'] > 0 else "N/A"
-    pbv = f"{row['PBV']:.2f}x"
+    pbv = f"{row['PBV']:.2f}x" if row['PBV'] > 0 else "N/A"
     
     flag_html = ""
     if row['Tipe'] == 'Bank': 
@@ -271,10 +248,10 @@ def render_card(row, rank):
 # ============================================================
 # 4. UI RENDERING UTAMA
 # ============================================================
-st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental Q3 Berdasarkan Sektor (IDR)"), unsafe_allow_html=True)
+st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental Q3 Berdasarkan Sektor (Data IDX)"), unsafe_allow_html=True)
 
 # LOAD DATA
-df_raw = load_financial_data()
+df_raw = load_fundamental_data()
 
 # JALANKAN SCREENER
 df_result = run_screener(df_raw)
@@ -319,7 +296,8 @@ failed = df_raw[
     ((df_raw['CFO_to_NI'] < 0.5) & (df_raw['Tipe'] != 'Bank'))
 ].copy()
 
-for _, t in failed.head(10).iterrows():
+# Tampilkan 10 teratas yang gugur
+for _, t in failed.sort_values('Kode').head(10).iterrows():
     reason = []
     if t['NI_YoY'] < 0: reason.append(f"Laba Q3 Turun ({t['NI_YoY']*100:.1f}%)")
     if t['Rev_YoY'] < -0.20: reason.append(f"Rev Q3 Anjlok ({t['Rev_YoY']*100:.1f}%)")
