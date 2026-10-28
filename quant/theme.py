@@ -139,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================================
    SEMUA INPUT (Number, Text, Select) DISERAGAMKAN (8px)
    ============================================================ */
-
 /* NUMBER INPUT */
 div[data-testid="stNumberInput"] > div {
     background-color: #171717 !important; 
@@ -182,19 +181,14 @@ div[data-testid="stNumberInput"] button {
     justify-content: center !important;
     height: 100% !important;
 }
-div[data-testid="stNumberInput"] button:hover {
-    background-color: #404040 !important;
-}
-div[data-testid="stNumberInput"] button svg {
-    fill: #ffffff !important;
-    color: #ffffff !important;
-}
+div[data-testid="stNumberInput"] button:hover { background-color: #404040 !important; }
+div[data-testid="stNumberInput"] button svg { fill: #ffffff !important; color: #ffffff !important; }
 
-/* TEXT INPUT (Searchbar & Kode Saham) - DISERAGAMKAN JADI 8px */
+/* TEXT INPUT */
 div[data-testid="stTextInput"] > div[data-baseweb="input"] {
     background-color: #171717 !important; 
     border: 1px solid #404040 !important;
-    border-radius: 8px !important; /* Ganti dari 50px ke 8px agar sama */
+    border-radius: 8px !important;
     padding: 0 !important;
     overflow: hidden !important;
     transition: all 0.3s ease !important;
@@ -209,16 +203,12 @@ div[data-testid="stTextInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
     font-weight: 600 !important;
-    padding: 10px 14px !important; /* Samakan padding dengan number input */
+    padding: 10px 14px !important;
     font-size: 15px !important;
     border: none !important;
     box-shadow: none !important;
 }
-div[data-testid="stTextInput"] input::placeholder {
-    color: #737373 !important; 
-    font-weight: 400 !important;
-}
-/* Counter 4/6 */
+div[data-testid="stTextInput"] input::placeholder { color: #737373 !important; font-weight: 400 !important; }
 div[data-testid="stTextInput"] > div[data-baseweb="input"] > div:last-child {
     background-color: #262626 !important;
     color: #a3a3a3 !important;
@@ -228,23 +218,20 @@ div[data-testid="stTextInput"] > div[data-baseweb="input"] > div:last-child {
     align-items: center !important;
     font-size: 13px !important;
     font-weight: 600 !important;
-    border-radius: 0 8px 8px 0 !important; /* Ujung kanan ikut 8px */
+    border-radius: 0 8px 8px 0 !important;
 }
 div[data-testid="stTextInput"] > div[data-baseweb="input"]:focus-within {
     border-color: #737373 !important; 
     box-shadow: 0 0 0 1px #737373 !important; 
     background-color: #262626 !important; 
 }
-div[data-testid="stTextInput"] input:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
+div[data-testid="stTextInput"] input:focus { outline: none !important; box-shadow: none !important; }
 
-/* SELECTBOX - DISERAGAMKAN JADI 8px */
+/* SELECTBOX */
 div[data-testid="stSelectbox"] > div {
     background-color: #171717 !important;
     border: 1px solid #404040 !important;
-    border-radius: 8px !important; /* Sama dengan input lain */
+    border-radius: 8px !important;
     box-shadow: none !important;
     transition: all 0.2s ease !important;
 }
@@ -283,67 +270,27 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     border: 2px solid #0a0a0a !important;
     box-shadow: none !important;
 }
-[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(1) {
-    background: #ffffff !important;
-}
-[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(2) {
-    background: #404040 !important;
-}
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(1) { background: #ffffff !important; }
+[data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(2) { background: #404040 !important; }
 [data-testid="stSlider"] [data-testid="stThumbValue"],
 [data-testid="stSlider"] [data-testid="stTickBarMin"],
-[data-testid="stSlider"] [data-testid="stTickBarMax"] {
-    color: #ffffff !important;
-    font-weight: 700 !important;
-}
-[data-testid="stCheckbox"] input:checked + div {
-    background-color: #ffffff !important;
-    border-color: #ffffff !important;
-}
-[data-testid="stCheckbox"] input:checked + div svg {
-    fill: #0a0a0a !important;
-    color: #0a0a0a !important;
-}
-[data-testid="stCheckbox"] label span {
-    color: #ffffff !important;
-    background-color: transparent !important;
-}
+[data-testid="stSlider"] [data-testid="stTickBarMax"] { color: #ffffff !important; font-weight: 700 !important; }
+
+[data-testid="stCheckbox"] input:checked + div { background-color: #ffffff !important; border-color: #ffffff !important; }
+[data-testid="stCheckbox"] input:checked + div svg { fill: #0a0a0a !important; color: #0a0a0a !important; }
+[data-testid="stCheckbox"] label span { color: #ffffff !important; background-color: transparent !important; }
 
 /* TABS & EXPANDER */
-.stTabs [data-baseweb="tab-list"] {
-    gap: 8px !important;
-    border-bottom: 1px solid #27272a !important;
-}
-.stTabs [data-baseweb="tab"] {
-    color: #a3a3a3 !important;
-    font-weight: 600 !important;
-    padding: 10px 16px !important;
-    transition: all 0.2s ease !important;
-}
+.stTabs [data-baseweb="tab-list"] { gap: 8px !important; border-bottom: 1px solid #27272a !important; }
+.stTabs [data-baseweb="tab"] { color: #a3a3a3 !important; font-weight: 600 !important; padding: 10px 16px !important; transition: all 0.2s ease !important; }
 .stTabs [data-baseweb="tab"]:hover { color: #ffffff !important; }
-.stTabs [aria-selected="true"] {
-    color: #ffffff !important;
-    border-bottom: 2px solid #ffffff !important;
-}
-.stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] {
-    display: none !important;
-}
-[data-testid="stExpander"] {
-    background: #171717 !important;
-    border: 1px solid #27272a !important;
-    border-radius: 8px !important;
-}
-[data-testid="stExpander"] summary {
-    color: #ffffff !important;
-    font-weight: 600 !important;
-}
-[data-testid="stExpander"] summary:hover {
-    background-color: #262626 !important;
-    border-radius: 8px !important;
-}
-[data-testid="stExpander"] summary svg {
-    fill: #ffffff !important;
-    color: #ffffff !important;
-}
+.stTabs [aria-selected="true"] { color: #ffffff !important; border-bottom: 2px solid #ffffff !important; }
+.stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] { display: none !important; }
+
+[data-testid="stExpander"] { background: #171717 !important; border: 1px solid #27272a !important; border-radius: 8px !important; }
+[data-testid="stExpander"] summary { color: #ffffff !important; font-weight: 600 !important; }
+[data-testid="stExpander"] summary:hover { background-color: #262626 !important; border-radius: 8px !important; }
+[data-testid="stExpander"] summary svg { fill: #ffffff !important; color: #ffffff !important; }
 
 /* MEDIA QUERY: PERBAIKAN MOBILE (HP) */
 @media (max-width: 768px) {
