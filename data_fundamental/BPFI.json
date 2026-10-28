@@ -4,20 +4,20 @@
   "sektor": "Financial Services",
   "industri": "Credit Services",
   "harga": 242.0,
-  "update": "2026-10-28 15:34",
+  "update": "2026-10-28 16:20",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 6.61563696008748,
-    "pb": 0.5207083630298524,
-    "ps": 1.0062445401965933e-05,
+    "pb": null,
+    "ps": 10.061590788991714,
     "roe": 0.0787020421342475,
     "eps": null,
     "de": 1.7966522878956988,
     "margin_net": 1.7811485644095677,
     "current_ratio": null,
     "roa": 0.028141518513002464,
-    "bv": 464.75151386444327
+    "bv": 0.0004647909890013143
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 647106854912,
     "enterprise_value": 2491112488960,
-    "shares_outstanding": 2673995362,
+    "shares_outstanding": 2673768257053034,
     "free_float_pct": 10.185000014222164
   },
   "akumulasi": {

@@ -3,21 +3,21 @@
   "nama": "PT Data Sinergitama Jaya Tbk",
   "sektor": "Technology",
   "industri": "Information Technology Services",
-  "harga": 198.0,
-  "update": "2026-10-28 15:37",
+  "harga": 199.0,
+  "update": "2026-10-28 16:22",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 11.422420133919221,
-    "pb": 2.1386907848882584,
-    "ps": 1.0873741577632778e-06,
+    "pe": 11.480109124494572,
+    "pb": null,
+    "ps": 0.8174037290886925,
     "roe": 0.1400424142367001,
     "eps": null,
     "de": 0.9688034012803826,
     "margin_net": 0.09906491200413028,
     "current_ratio": 1.4852608671296854,
     "roa": 0.0711307254678784,
-    "bv": 92.58000333617422
+    "bv": 0.00012377914287239766
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 399952183296,
+    "market_cap": 401972133888,
     "enterprise_value": 411422261248,
-    "shares_outstanding": 2019960457,
+    "shares_outstanding": 1510819525069616,
     "free_float_pct": 26.916000019499393
   },
   "akumulasi": {

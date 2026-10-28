@@ -3,21 +3,21 @@
   "nama": "PT Lautan Luas Tbk",
   "sektor": "Basic Materials",
   "industri": "Specialty Chemicals",
-  "harga": 960.0,
-  "update": "2026-10-28 15:41",
+  "harga": 950.0,
+  "update": "2026-10-28 16:26",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.40618924513749066,
-    "ps": 0.13507634414820516,
+    "pb": null,
+    "ps": 137287.7757084838,
     "roe": 0.056493793493929266,
     "eps": null,
     "de": 1.1608405143152623,
     "margin_net": 0.02384696211695625,
     "current_ratio": 1.1532880500170501,
     "roa": 0.0250892525875168,
-    "bv": 2363.4303751076677
+    "bv": 0.002301137734961446
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 1406101225472,
+    "market_cap": 1391454322688,
     "enterprise_value": 2704985030656,
-    "shares_outstanding": 1464688800,
+    "shares_outstanding": 1504338461538461,
     "free_float_pct": 38.457000012562396
   },
   "akumulasi": {

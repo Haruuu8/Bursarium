@@ -3,24 +3,24 @@
   "nama": "PT Pelayaran Jaya Hidup Baru TBK",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 124.0,
-  "update": "2026-10-28 15:44",
+  "harga": 126.0,
+  "update": "2026-10-28 16:29",
   "periode_terbaru": "2026-tw3",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 11.639549436795996,
-    "pb": 0.7107207535129896,
-    "ps": 3.4819594226313377,
+    "pe": 11.827284105131415,
+    "pb": null,
+    "ps": 3538473.764605424,
     "roe": 0.045800213842847666,
     "eps": null,
     "de": 0.03864241146394746,
     "margin_net": 0.29917889290155925,
     "current_ratio": 53.92368622438693,
     "roa": 0.0440724413777079,
-    "bv": 174.47077405167357
+    "bv": 0.0001744533339389146
   },
   "quarterly": {
     "revenue": {
@@ -45,9 +45,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 238163394560,
+    "market_cap": 242004738048,
     "enterprise_value": 108050489344,
-    "shares_outstanding": 1920672509,
+    "shares_outstanding": 1920864518773466,
     "free_float_pct": 14.857545920130624
   },
   "akumulasi": {

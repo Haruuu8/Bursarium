@@ -4,20 +4,20 @@
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
   "harga": 161.0,
-  "update": "2026-10-28 15:45",
+  "update": "2026-10-28 16:30",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 3.8333333333333335,
-    "pb": 0.28798807387595454,
-    "ps": 0.07691144774158727,
+    "pb": null,
+    "ps": 77360.708471886,
     "roe": 0.0755661627948123,
     "eps": null,
     "de": 11.254913309618168,
     "margin_net": 0.027733049406968597,
     "current_ratio": 0.8058074385912434,
     "roa": 0.006033440726290237,
-    "bv": 559.0509281622118
+    "bv": 0.0005558043236103467
   },
   "quarterly": {
     "revenue": {
@@ -47,7 +47,7 @@
   "statistik": {
     "market_cap": 995839967232,
     "enterprise_value": 23465937600512,
-    "shares_outstanding": 6153721976,
+    "shares_outstanding": 6189667543404762,
     "free_float_pct": 49.091958196715254
   },
   "akumulasi": {

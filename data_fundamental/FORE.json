@@ -4,20 +4,20 @@
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
   "harga": 590.0,
-  "update": "2026-10-28 15:37",
+  "update": "2026-10-28 16:22",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 58.47373637264619,
-    "pb": 6.820443738707528,
-    "ps": -7.94394527539612e-06,
+    "pb": null,
+    "ps": -7.94576805166835,
     "roe": 0.11666791187581979,
     "eps": null,
     "de": 0.7814555602939809,
     "margin_net": 0.056354124599552,
     "current_ratio": 1.0714161100998678,
     "roa": 0.06549021736841244,
-    "bv": 86.50463556375657
+    "bv": 8.648479121439749e-05
   },
   "quarterly": {
     "revenue": {
@@ -47,7 +47,7 @@
   "statistik": {
     "market_cap": 5261831962624,
     "enterprise_value": 5377024327680,
-    "shares_outstanding": 8918359270,
+    "shares_outstanding": 8920405630227949,
     "free_float_pct": 15.078999996374895
   },
   "akumulasi": {

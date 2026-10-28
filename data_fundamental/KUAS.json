@@ -3,21 +3,21 @@
   "nama": "PT Ace Oldfields Tbk",
   "sektor": "Industrials",
   "industri": "Building Products & Equipment",
-  "harga": 73.0,
-  "update": "2026-10-28 15:41",
+  "harga": 72.0,
+  "update": "2026-10-28 16:26",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 19.72972972972973,
-    "pb": 0.5432262343215417,
-    "ps": 5.427923886799808e-07,
+    "pe": 19.45945945945946,
+    "pb": null,
+    "ps": 0.5354746705945568,
     "roe": 0.02753944262494093,
     "eps": null,
     "de": 0.8113778840711208,
     "margin_net": 0.035237179054669276,
     "current_ratio": 1.909129643503157,
     "roa": 0.015203587758864146,
-    "bv": 134.3823169570829
+    "bv": 0.0001343527554420843
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 94375002112,
+    "market_cap": 93082189824,
     "enterprise_value": 170014949376,
-    "shares_outstanding": 1292808150,
+    "shares_outstanding": 1293092605405405,
     "free_float_pct": 47.27799998785589
   },
   "akumulasi": {

@@ -3,21 +3,21 @@
   "nama": "PT Pradiksi Gunatama Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 7975.0,
-  "update": "2026-10-28 15:44",
+  "harga": 8000.0,
+  "update": "2026-10-28 16:29",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 337.78060144006776,
-    "pb": 22.72600962304857,
-    "ps": 6.366454498430869e-05,
+    "pe": 338.8394747988141,
+    "pb": null,
+    "ps": 63.85090355304355,
     "roe": 0.06726646329911465,
     "eps": null,
     "de": 0.2548317804807124,
     "margin_net": 0.23925553946272302,
     "current_ratio": 2.12513257609792,
     "roa": 0.053605960851059724,
-    "bv": 350.91950290788435
+    "bv": 0.00035099214143328913
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 45759344934912,
+    "market_cap": 45902790131712,
     "enterprise_value": 46445826670592,
-    "shares_outstanding": 5737848882,
+    "shares_outstanding": 5736661422702245,
     "free_float_pct": 7.624000004118617
   },
   "akumulasi": {

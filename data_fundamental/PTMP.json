@@ -4,20 +4,20 @@
   "sektor": "Industrials",
   "industri": "Specialty Industrial Machinery",
   "harga": 40.0,
-  "update": "2026-10-28 15:45",
+  "update": "2026-10-28 16:30",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 9.615384615384615,
-    "pb": 0.7279853821905684,
-    "ps": 6.601289579600508e-07,
+    "pb": null,
+    "ps": 0.5459090419861042,
     "roe": 0.0626105474832715,
     "eps": null,
     "de": 0.6780021705859388,
     "margin_net": 0.076912372827857,
     "current_ratio": 2.5990196574826725,
     "roa": 0.03616790142066071,
-    "bv": 54.94615823141487
+    "bv": 6.644247921824171e-05
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 126768005120,
     "enterprise_value": 180839120896,
-    "shares_outstanding": 3169200000,
+    "shares_outstanding": 2620843874519230,
     "free_float_pct": 23.49
   },
   "akumulasi": {

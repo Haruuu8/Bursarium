@@ -3,21 +3,21 @@
   "nama": "PT Eastparc Hotel Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Lodging",
-  "harga": 87.0,
-  "update": "2026-10-28 15:37",
+  "harga": 86.0,
+  "update": "2026-10-28 16:22",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 15.760869565217392,
-    "pb": 0.7867180030014188,
-    "ps": 4.1006802084841214e-06,
+    "pe": 15.579710144927537,
+    "pb": null,
+    "ps": 4.056639072041257,
     "roe": 0.04995398995433866,
     "eps": null,
     "de": 0.05202238658472543,
     "margin_net": 0.35101319721105056,
     "current_ratio": 1.0943673373831309,
     "roa": 0.04748377086965685,
-    "bv": 110.58600371173037
+    "bv": 0.00011050168375030012
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 358997262336,
+    "market_cap": 354870853632,
     "enterprise_value": 359547600896,
-    "shares_outstanding": 4126405336,
+    "shares_outstanding": 4129554051268116,
     "free_float_pct": 38.47400000066305
   },
   "akumulasi": {

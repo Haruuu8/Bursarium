@@ -3,21 +3,21 @@
   "nama": "PT Puri Global Sukses Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 118.0,
-  "update": "2026-10-28 15:45",
+  "harga": 117.0,
+  "update": "2026-10-28 16:30",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 41.25874125874126,
-    "pb": 1.3117691841277048,
-    "ps": 1.6830157344387935e-06,
+    "pe": 40.909090909090914,
+    "pb": null,
+    "ps": 1.6712842199058795,
     "roe": 0.03184195557750102,
     "eps": null,
     "de": 6.648376796540836,
     "margin_net": 0.04518685411876678,
     "current_ratio": 1.1233460497102363,
     "roa": 0.004034247508682593,
-    "bv": 89.954849853
+    "bv": 8.981860404393092e-05
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 118000001024,
+    "market_cap": 117000003584,
     "enterprise_value": 335681912832,
-    "shares_outstanding": 1000000000,
+    "shares_outstanding": 1001516899650349,
     "free_float_pct": 14.735000000000001
   },
   "akumulasi": {

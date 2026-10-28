@@ -4,20 +4,20 @@
   "sektor": "Industrials",
   "industri": "Specialty Business Services",
   "harga": 104.0,
-  "update": "2026-10-28 15:43",
+  "update": "2026-10-28 16:28",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 24.074074074074073,
-    "pb": 1.3323617219977708,
-    "ps": 1.2189997178794136e-06,
+    "pb": null,
+    "ps": 1.1457767297463073,
     "roe": 0.052019832232468324,
     "eps": null,
     "de": 0.2853371142084589,
     "margin_net": 0.06257874154250395,
     "current_ratio": 5.691008924209522,
     "roa": 0.04043926917506894,
-    "bv": 78.05688071258925
+    "bv": 8.30452505247347e-05
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 359031799808,
     "enterprise_value": 364598394880,
-    "shares_outstanding": 3452228885,
+    "shares_outstanding": 3244860080092592,
     "free_float_pct": 39.16999999262795
   },
   "akumulasi": {

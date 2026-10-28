@@ -9,8 +9,7 @@ Fitur:
 - Prioritas Net Interest Income untuk Bank
 - Cache XLSX lokal (super cepat di run ke-2)
 - CACHE INCREMENTAL: Tidak mendownload ulang data yang sudah ada.
-- Sanity Check: PER & PBV yang tidak wajar otomatis dibuang.
-- EPS Priority: Menggunakan EPS asli dari IDX untuk menghindari bug shares Yahoo.
+- PERBAIKAN FATAL: Menghitung Shares Outstanding dari Laba Bersih / EPS IDX untuk menghindari bug Yahoo Finance.
 """
 import os
 import io
@@ -228,7 +227,7 @@ def _normalize_url(url):
 
 
 # ============================================================
-# CACHE DAFTAR LAPORAN (TIDAK PERLU API CALL LAGI)
+# CACHE DAFTAR LAPORAN
 # ============================================================
 def get_report_list(year, periode, verbose=False):
     cache_file = REPORT_LIST_CACHE_DIR / f"{year}_{periode}.json"
@@ -420,7 +419,7 @@ def parse_xlsx(content_bytes):
 
 
 # ============================================================
-# CACHE HASIL PARSING (HANYA PROSES DATA BARU)
+# CACHE HASIL PARSING
 # ============================================================
 def fetch_one_period(kode, year, periode, verbose=False):
     cache_file = PARSED_CACHE_DIR / f"{kode}_{year}_{periode}.json"
@@ -748,16 +747,32 @@ def build_one(kode, verbose=False):
                 raw_rev = d["pendapatan"]
                 r_rev[str(y)] = raw_rev if abs(raw_rev) > 1_000_000_000_000 else raw_rev * 1_000_000
 
-    # YFINANCE + RATIO
+    # ============================================================
+    # YFINANCE + RATIO (PERBAIKAN: HITUNG SHARES DARI IDX)
+    # ============================================================
     yfd = fetch_yfinance(kode)
     harga = yfd.get("harga")
-    shares = yfd.get("shares_outstanding")
     
-    if shares is not None and shares < 10_000_000:
-        shares = shares * 1_000_000
-        
-    if not shares and yfd.get("market_cap") and harga:
-        shares = yfd.get("market_cap") / harga
+    # 1. Prioritas Utama: Hitung Shares dari EPS IDX
+    # Rumus: Shares = Laba Bersih (Rp) / EPS (Rp per lembar)
+    shares = None
+    eps_idx = snap.get("eps_basic")
+    laba_bersih_idx = snap.get("laba_induk") or snap.get("laba_bersih")
+    
+    if eps_idx and eps_idx > 0 and laba_bersih_idx:
+        # Konversi laba ke Rupiah penuh jika masih dalam jutaan
+        laba_rp = laba_bersih_idx * 1_000_000 if abs(laba_bersih_idx) < 1_000_000_000_000 else laba_bersih_idx
+        shares = laba_rp / eps_idx
+        # Bulatkan ke bawah untuk menghindari angka desimal saham
+        shares = int(shares)
+    
+    # 2. Fallback: Jika EPS IDX kosong, baru pakai Yahoo Finance
+    if not shares:
+        shares = yfd.get("shares_outstanding")
+        if shares is not None and shares < 10_000_000:
+            shares = shares * 1_000_000
+        if not shares and yfd.get("market_cap") and harga:
+            shares = yfd.get("market_cap") / harga
 
     ratios = compute_ratios(snap, harga=harga, shares=shares, periode=snap_periode, ttm_ni=ttm_ni, ttm_rev=ttm_rev)
     akum = compute_akumulasi(kode)

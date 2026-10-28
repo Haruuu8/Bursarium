@@ -3,21 +3,21 @@
   "nama": "PT Diastika Biotekindo Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 99.0,
-  "update": "2026-10-28 15:35",
+  "harga": 100.0,
+  "update": "2026-10-28 16:21",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 37.21804511278195,
-    "pb": 1.9657305163963719,
-    "ps": 1.9501428363582714e-06,
+    "pe": 37.59398496240601,
+    "pb": null,
+    "ps": 1.4521621899612216,
     "roe": 0.03893626770508323,
     "eps": null,
     "de": 0.09862229014614163,
     "margin_net": 0.05190828342778953,
     "current_ratio": 9.070430740746474,
     "roa": 0.035440995558085595,
-    "bv": 50.36295625174979
+    "bv": 6.831676883228153e-05
   },
   "quarterly": {
     "revenue": {
@@ -45,9 +45,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 407219798016,
+    "market_cap": 411333132288,
     "enterprise_value": 390059720704,
-    "shares_outstanding": 4113331485,
+    "shares_outstanding": 3032337992105263,
     "free_float_pct": 19.021709722478153
   },
   "akumulasi": {

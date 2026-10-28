@@ -4,20 +4,20 @@
   "sektor": "Energy",
   "industri": "Oil & Gas E&P",
   "harga": 2230.0,
-  "update": "2026-10-28 15:45",
+  "update": "2026-10-28 16:30",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.11474562015372608,
+    "ps": 114745.62015372608,
     "roe": 0.373455514637017,
     "eps": null,
     "de": 2.3191975939865563,
     "margin_net": 0.6224173983538694,
     "current_ratio": 3.268802340926778,
     "roa": 0.10568427704922442,
-    "bv": 24742.057413374278
+    "bv": 0.024742057413374277
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 6054570098688,
     "enterprise_value": 6299030388736,
-    "shares_outstanding": 2715053800,
+    "shares_outstanding": 2715053800000000,
     "free_float_pct": 31.315999999705348
   },
   "akumulasi": {

@@ -3,21 +3,21 @@
   "nama": "PT Dharma Polimetal Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 975.0,
-  "update": "2026-10-28 15:36",
+  "harga": 980.0,
+  "update": "2026-10-28 16:22",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.558823529411764,
-    "pb": 1.568179383840232,
-    "ps": 0.6832017950073526,
+    "pe": 9.607843137254902,
+    "pb": null,
+    "ps": 685970.9870544071,
     "roe": 0.16388023768377077,
     "eps": null,
     "de": 0.5803949796570373,
     "margin_net": 0.09407458275915981,
     "current_ratio": 1.8486254087820821,
     "roa": 0.1003343602003796,
-    "bv": 621.7400955829261
+    "bv": 0.000622405736296422
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 4588235128832,
+    "market_cap": 4611764649984,
     "enterprise_value": 4375162650624,
-    "shares_outstanding": 4705882300,
+    "shares_outstanding": 4700849526892157,
     "free_float_pct": 21.380000005524998
   },
   "akumulasi": {

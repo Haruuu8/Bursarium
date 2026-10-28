@@ -3,21 +3,21 @@
   "nama": "PT Indonesian Tobacco Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Tobacco",
-  "harga": 172.0,
-  "update": "2026-10-28 15:40",
+  "harga": 171.0,
+  "update": "2026-10-28 16:25",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 10.035005834305718,
-    "pb": 0.33154401583862547,
-    "ps": 4.950781678459253e-07,
+    "pe": 9.97666277712952,
+    "pb": null,
+    "ps": 0.4923331496036991,
     "roe": 0.03304769731204717,
     "eps": null,
     "de": 0.3124159115488318,
     "margin_net": 0.06540855762518592,
     "current_ratio": 1.4709155066466115,
     "roa": 0.025180811220923346,
-    "bv": 518.7848122214899
+    "bv": 0.000518644304871184
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 161803845632,
+    "market_cap": 160863125504,
     "enterprise_value": 271064023040,
-    "shares_outstanding": 940720000,
+    "shares_outstanding": 940974853033839,
     "free_float_pct": 24.50099997873969
   },
   "akumulasi": {

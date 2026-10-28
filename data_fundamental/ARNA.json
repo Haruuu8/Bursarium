@@ -3,21 +3,21 @@
   "nama": "PT Arwana Citramulia Tbk",
   "sektor": "Industrials",
   "industri": "Building Products & Equipment",
-  "harga": 505.0,
-  "update": "2026-10-28 15:32",
+  "harga": 500.0,
+  "update": "2026-10-28 16:18",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.501411100658514,
-    "pb": 1.8545244772574707,
-    "ps": 1.0880747222049272,
+    "pe": 9.407337723424272,
+    "pb": null,
+    "ps": 1065715.4631872599,
     "roe": 0.1930849306919239,
     "eps": null,
     "de": 0.5408543329105227,
     "margin_net": 0.14712010187688782,
     "current_ratio": 1.7182292495598175,
     "roa": 0.12352797893298231,
-    "bv": 272.3070017101149
+    "bv": 0.0002752674681008811
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 3550138335232,
+    "market_cap": 3514988494848,
     "enterprise_value": 3261849927680,
-    "shares_outstanding": 7029976876,
+    "shares_outstanding": 6954370374393227,
     "free_float_pct": 43.74808081516654
   },
   "akumulasi": {

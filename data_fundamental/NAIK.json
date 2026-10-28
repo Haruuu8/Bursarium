@@ -4,20 +4,20 @@
   "sektor": "Basic Materials",
   "industri": "Building Materials",
   "harga": 68.0,
-  "update": "2026-10-28 15:43",
+  "update": "2026-10-28 16:28",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 11.333333333333334,
-    "pb": 1.0289729772894645,
-    "ps": 9.258399599930661e-07,
+    "pb": null,
+    "ps": 0.8770144313317356,
     "roe": 0.0860036980276427,
     "eps": null,
     "de": 0.32153451473130085,
     "margin_net": 0.10665408509673999,
     "current_ratio": 3.6055443752947336,
     "roa": 0.06507866201673082,
-    "bv": 66.08531176311995
+    "bv": 6.976444196703638e-05
   },
   "quarterly": {
     "revenue": {
@@ -52,7 +52,7 @@
   "statistik": {
     "market_cap": 226400698368,
     "enterprise_value": 211460276224,
-    "shares_outstanding": 3329422047,
+    "shares_outstanding": 3153840090500000,
     "free_float_pct": 27.46499999373615
   },
   "akumulasi": {

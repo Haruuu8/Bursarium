@@ -3,21 +3,21 @@
   "nama": "PT DMS Propertindo Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate Services",
-  "harga": 83.0,
-  "update": "2026-10-28 15:41",
+  "harga": 84.0,
+  "update": "2026-10-28 16:26",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 16.973415132924337,
-    "pb": 0.6798113932560951,
-    "ps": 1.0112760668410993e-05,
+    "pe": 17.177914110429448,
+    "pb": null,
+    "ps": 10.237428166562989,
     "roe": 0.040062601773116255,
     "eps": null,
     "de": 0.514157058711536,
     "margin_net": 0.4125026768068882,
     "current_ratio": 1.5729616031818947,
     "roa": 0.0264369448392854,
-    "bv": 122.09268750624288
+    "bv": 0.00012205897229773534
   },
   "quarterly": {
     "revenue": {
@@ -45,9 +45,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 875333353472,
+    "market_cap": 885879537664,
     "enterprise_value": 1486810251264,
-    "shares_outstanding": 10546185701,
+    "shares_outstanding": 10549098775255624,
     "free_float_pct": 47.52599999756064
   },
   "akumulasi": {

@@ -4,20 +4,20 @@
   "sektor": "Consumer Cyclical",
   "industri": "Auto & Truck Dealerships",
   "harga": 44.0,
-  "update": "2026-10-28 15:33",
+  "update": "2026-10-28 16:19",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 72.1311475409836,
-    "pb": 0.7431360655261985,
-    "ps": 4.5570209521055234e-07,
+    "pb": null,
+    "ps": 0.45423839936592275,
     "roe": 0.010269476768162618,
     "eps": null,
     "de": 0.19659998142988763,
     "margin_net": 0.008032748209604989,
     "current_ratio": 4.668128352507894,
     "roa": 0.008438043994497763,
-    "bv": 59.20853803380483
+    "bv": 5.939932615565372e-05
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 560839589888,
     "enterprise_value": 264496136192,
-    "shares_outstanding": 12746354780,
+    "shares_outstanding": 12705414027868852,
     "free_float_pct": 19.236415895525543
   },
   "akumulasi": {

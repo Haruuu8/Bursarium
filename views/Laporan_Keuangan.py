@@ -40,7 +40,11 @@ def run_screener(df):
     
     d['CFO_to_NI'] = d['CFO_YTD'] / d['NI_YTD'].replace(0, np.nan)
     
-    # HARD FILTERS
+    d['Flag_Anomali'] = ""
+    d.loc[d['Rev_YoY_Raw'] > 3.0, 'Flag_Anomali'] += "CEK REV, "
+    d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
+    d.loc[(d['NI_YoY_Raw'] > 0.5) & (d['ROE'] < 10), 'Flag_Anomali'] += "GROWTH LOW ROE, "
+    
     d['is_failed'] = False
     d['fail_reason'] = ""
     
@@ -68,51 +72,48 @@ def run_screener(df):
     
     if df_pass.empty: return df_pass, df_fail
     
-    # ABSOLUTE SCORING SYSTEM (0-100)
+    # ABSOLUTE SCORING (DENGAN NORMALISASI CFO)
     d = df_pass
     
-    # 1. ROE Score (Max 25% = 100 Poin)
-    d['S_ROE'] = d['ROE'].apply(lambda x: min(max(x, 0), 25) / 25 * 100)
-    
-    # 2. Growth Score (Max 30% = 100 Poin, di-cap agar tidak ekstrem)
-    d['S_Growth'] = d['NI_YoY_Raw'].apply(lambda x: min(max(x*100, 0), 30) / 30 * 100)
-    
-    # 3. Valuation Score (PER)
-    def score_per(per):
-        if per <= 0: return 0
-        if per < 10: return 100
-        if per < 15: return 80
-        if per < 20: return 60
-        if per < 30: return 40
-        return 20
-    d['S_PER'] = d['PER'].apply(score_per)
-    
-    # 4. Quality Score (CFO/NI). Bank dapat nilai netral 50.
-    def score_qual(cfo, tipe):
-        if tipe == 'Bank': return 50
-        if cfo <= 0: return 0
-        return min(cfo, 1.5) / 1.5 * 100
-    d['S_Quality'] = d.apply(lambda r: score_qual(r['CFO_to_NI'], r['Tipe']), axis=1)
-    
-    # 5. Margin Score
-    d['S_Margin'] = d['NPM_Change'].apply(lambda x: min(max(x*100, 0), 10) / 10 * 100)
+    def calc_score(row):
+        w_roe, w_growth, w_per, w_qual, w_margin = 0.35, 0.20, 0.20, 0.15, 0.10
+        
+        s_roe = min(max(row['ROE'], 0), 25) / 25 * 100
+        s_growth = min(max(row['NI_YoY_Raw']*100, 0), 30) / 30 * 100 if not pd.isna(row['NI_YoY_Raw']) else 0
+        
+        if row['PER'] <= 0: s_per = 0
+        elif row['PER'] < 10: s_per = 100
+        elif row['PER'] < 15: s_per = 80
+        elif row['PER'] < 20: s_per = 60
+        elif row['PER'] < 30: s_per = 40
+        else: s_per = 20
+        
+        s_margin = min(max(row['NPM_Change']*100, 0), 10) / 10 * 100 if not pd.isna(row['NPM_Change']) else 0
+        
+        cfo_valid = not pd.isna(row['CFO_to_NI']) and row['CFO_to_NI'] > 0 and row['Tipe'] != 'Bank'
+        
+        if cfo_valid:
+            s_qual = min(row['CFO_to_NI'], 1.5) / 1.5 * 100
+            total_w = w_roe + w_growth + w_per + w_qual + w_margin
+            score = (s_roe*w_roe + s_growth*w_growth + s_per*w_per + s_qual*w_qual + s_margin*w_margin) / total_w
+        else:
+            # Normalisasi ulang jika CFO kosong
+            total_w = w_roe + w_growth + w_per + w_margin
+            score = (s_roe*w_roe + s_growth*w_growth + s_per*w_per + s_margin*w_margin) / total_w
+            
+        return score
 
-    # TOTAL SKOR AKHIR
-    d['Score_Raw'] = (
-        (d['S_ROE'] * 0.35) +
-        (d['S_Growth'] * 0.20) +
-        (d['S_PER'] * 0.20) +
-        (d['S_Quality'] * 0.15) +
-        (d['S_Margin'] * 0.10)
-    )
-    
+    d['Score_Raw'] = d.apply(calc_score, axis=1)
     d = d.sort_values(by=['Score_Raw', 'NI_YTD'], ascending=[False, False]).reset_index(drop=True)
     d['Score'] = d['Score_Raw'].round(2)
     return d, df_fail
 
 def render_card(row, rank):
     ni_ytd_rp = format_idr(row['NI_YTD'])
+    ni_q3_rp = format_idr(row['NI_Q3'])
+    
     ni_yoy = f"{row['NI_YoY_Raw']*100:+.1f}%" if not pd.isna(row['NI_YoY_Raw']) else "N/A"
+    ni_q3_yoy = f"{row['NI_Q3_YoY']*100:+.1f}%" if not pd.isna(row['NI_Q3_YoY']) else "N/A"
     rev_yoy = f"{row['Rev_YoY_Raw']*100:+.1f}%" if not pd.isna(row['Rev_YoY_Raw']) else "N/A"
     npm_chg = f"{row['NPM_Change']*100:+.2f}%" if row['NPM_Change'] != -1 else "N/A"
     
@@ -127,6 +128,8 @@ def render_card(row, rank):
         flag_html += '<span style="background:#e5e5e5; color:#0a0a0a; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">BANK</span>'
     if row['Tipe'] != 'Bank' and row['CFO_to_NI'] < 0.8 and row['CFO_to_NI'] > 0:
         flag_html += '<span style="background:#737373; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ CFO LEMAH</span>'
+    if row['Flag_Anomali']:
+        flag_html += f'<span style="background:#525252; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ {row["Flag_Anomali"].strip(", ")}</span>'
     
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
@@ -141,14 +144,20 @@ def render_card(row, rank):
         f'</div>'
         
         f'<div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:16px 24px; flex:1; max-width:700px;">'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba YTD (Q3)</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_ytd_rp}</div></div>'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_yoy}</div></div>'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Rev YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{rev_yoy}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba YTD (9M)</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_ytd_rp}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba YTD YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_yoy}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba Q3</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_q3_rp}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba Q3 YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_q3_yoy}</div></div>'
+        
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Rev YTD YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{rev_yoy}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Δ Margin</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{npm_chg}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Kualitas Laba</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{cfo_ni}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">ROE</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{roe}</div></div>'
+        
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">DER</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{der}</div></div>'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">PER / PBV</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{per} / {pbv}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">PER</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{per}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">PBV</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{pbv}</div></div>'
+        f'<div></div>'
         f'</div>'
         
         f'<div style="text-align:center; background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 24px; min-width:110px;">'
@@ -192,17 +201,17 @@ with tab2:
     st.markdown("Tabel ini menampilkan angka asli untuk membandingkan siapa yang paling unggul secara absolut.")
     
     if not df_pass.empty:
-        df_compare = df_pass[['Kode', 'Sektor', 'Score', 'NI_YTD', 'NI_YoY_Raw', 'ROE', 'PER', 'PBV', 'CFO_to_NI']].copy()
+        df_compare = df_pass[['Kode', 'Sektor', 'Score', 'NI_YTD', 'NI_Q3', 'NI_Q3_YoY', 'ROE', 'PER', 'PBV', 'CFO_to_NI']].copy()
         
-        # Format
         df_compare['Laba YTD'] = df_compare['NI_YTD'].apply(format_idr)
-        df_compare['Laba YoY'] = df_compare['NI_YoY_Raw'].apply(lambda x: f"{x*100:+.1f}%" if not pd.isna(x) else "N/A")
+        df_compare['Laba Q3'] = df_compare['NI_Q3'].apply(format_idr)
+        df_compare['Q3 YoY'] = df_compare['NI_Q3_YoY'].apply(lambda x: f"{x*100:+.1f}%" if not pd.isna(x) else "N/A")
         df_compare['ROE'] = df_compare['ROE'].apply(lambda x: f"{x:.1f}%")
         df_compare['PER'] = df_compare['PER'].apply(lambda x: f"{x:.1f}x" if x > 0 else "N/A")
         df_compare['PBV'] = df_compare['PBV'].apply(lambda x: f"{x:.2f}x" if x > 0 else "N/A")
         df_compare['Kualitas Laba'] = df_compare['CFO_to_NI'].apply(lambda x: f"{x:.2f}x" if x > 0 else "N/A")
         
-        df_compare = df_compare[['Kode', 'Sektor', 'Score', 'Laba YTD', 'Laba YoY', 'ROE', 'PER', 'PBV', 'Kualitas Laba']]
+        df_compare = df_compare[['Kode', 'Sektor', 'Score', 'Laba YTD', 'Laba Q3', 'Q3 YoY', 'ROE', 'PER', 'PBV', 'Kualitas Laba']]
         st.dataframe(df_compare, use_container_width=True, hide_index=True)
         
 with tab3:

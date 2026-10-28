@@ -4,20 +4,20 @@
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
   "harga": 72.0,
-  "update": "2026-10-28 15:46",
+  "update": "2026-10-28 16:32",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 86.74698795180723,
-    "pb": 1.1442821643656185,
-    "ps": 1.3059418722214594e-06,
+    "pb": null,
+    "ps": 1.3051008613899877,
     "roe": 0.013182535641163727,
     "eps": null,
     "de": 0.09037103642858778,
     "margin_net": 0.021529007261918535,
     "current_ratio": 16.908672835986522,
     "roa": 0.012089953970477733,
-    "bv": 62.92154351625
+    "bv": 6.296209034385205e-05
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 57600000000,
     "enterprise_value": 61445328896,
-    "shares_outstanding": 800000000,
+    "shares_outstanding": 799484809638554,
     "free_float_pct": 24.48
   },
   "akumulasi": {

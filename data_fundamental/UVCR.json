@@ -4,20 +4,20 @@
   "sektor": "Technology",
   "industri": "Software - Application",
   "harga": 200.0,
-  "update": "2026-10-28 15:47",
+  "update": "2026-10-28 16:32",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 38.98635477582846,
-    "pb": 3.5798139761048633,
-    "ps": 3.502700282876405e-07,
+    "pb": null,
+    "ps": 0.3627163306206251,
     "roe": 0.0950849889985321,
     "eps": null,
     "de": 1.1994084689864215,
     "margin_net": 0.011574621153191198,
     "current_ratio": 1.631973366095352,
     "roa": 0.04323207368677233,
-    "bv": 55.86882484257372
+    "bv": 5.395173364408967e-05
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 400028991488,
     "enterprise_value": 480355909632,
-    "shares_outstanding": 2000144838,
+    "shares_outstanding": 2071216883430799,
     "free_float_pct": 69.98399997870554
   },
   "akumulasi": {

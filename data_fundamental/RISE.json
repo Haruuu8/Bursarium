@@ -4,20 +4,20 @@
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
   "harga": 505.0,
-  "update": "2026-10-28 15:45",
+  "update": "2026-10-28 16:31",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 55.678059536934946,
-    "pb": 2.899505276042314,
-    "ps": 1.8394936912775634e-05,
+    "pb": null,
+    "ps": 18.393208149675033,
     "roe": 0.05207136892981964,
     "eps": null,
     "de": 0.28226639670028475,
     "margin_net": 0.403056964752365,
     "current_ratio": 2.29072047889977,
     "roa": 0.03400876291348116,
-    "bv": 174.16764307092444
+    "bv": 0.00017418401295007816
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 8180292648960,
     "enterprise_value": 9484880576512,
-    "shares_outstanding": 16198599990,
+    "shares_outstanding": 16197077639470782,
     "free_float_pct": 19.704999999817886
   },
   "akumulasi": {

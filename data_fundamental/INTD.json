@@ -3,21 +3,21 @@
   "nama": "PT Inter Delta Tbk",
   "sektor": "Basic Materials",
   "industri": "Paper & Paper Products",
-  "harga": 272.0,
-  "update": "2026-10-28 15:39",
+  "harga": 278.0,
+  "update": "2026-10-28 16:24",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 68.0,
-    "pb": 4.821234713819641,
-    "ps": 5.227443061428321e-06,
+    "pe": 69.5,
+    "pb": null,
+    "ps": null,
     "roe": -0.0677602354351203,
     "eps": null,
     "de": 0.10732409675529582,
     "margin_net": -0.09563441895652561,
     "current_ratio": 14.64449705530817,
     "roa": -0.06119854570059053,
-    "bv": 56.417083204917645
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -50,9 +50,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 160977207296,
+    "market_cap": 164528177152,
     "enterprise_value": 149675982848,
-    "shares_outstanding": 591828000,
+    "shares_outstanding": -565615174500000,
     "free_float_pct": 12.754999932412794
   },
   "akumulasi": {

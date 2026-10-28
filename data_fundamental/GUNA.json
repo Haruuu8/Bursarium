@@ -3,21 +3,21 @@
   "nama": "PT Gunanusa Eramandiri Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 210.0,
-  "update": "2026-10-28 15:37",
+  "harga": 212.0,
+  "update": "2026-10-28 16:22",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.206488382288471,
-    "pb": 0.8242435659285299,
-    "ps": -6.628018397711948e-07,
+    "pe": 9.294169224024552,
+    "pb": null,
+    "ps": -0.6691764555085059,
     "roe": 0.0895368759062412,
     "eps": null,
     "de": 0.9263396447877037,
     "margin_net": 0.03818917608294445,
     "current_ratio": 1.86185553295878,
     "roa": 0.0416649640320643,
-    "bv": 254.7790588616
+    "bv": 0.00025475537055688163
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 525000015872,
+    "market_cap": 529999986688,
     "enterprise_value": 823562928128,
-    "shares_outstanding": 2500000000,
+    "shares_outstanding": 2500232461288908,
     "free_float_pct": 20.0
   },
   "akumulasi": {

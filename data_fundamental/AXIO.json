@@ -3,21 +3,21 @@
   "nama": "PT Tera Data Indonusa Tbk",
   "sektor": "Technology",
   "industri": "Computer Hardware",
-  "harga": 135.0,
-  "update": "2026-10-28 15:33",
+  "harga": 136.0,
+  "update": "2026-10-28 16:19",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 12.906309751434033,
-    "pb": 1.4331992203744828,
-    "ps": -1.2767799122323606e-06,
+    "pe": 13.0019120458891,
+    "pb": null,
+    "ps": -1.2850305444399928,
     "roe": 0.11094219364905489,
     "eps": null,
     "de": 1.532995013504496,
     "margin_net": 0.04492087091146334,
     "current_ratio": 1.3778099650208682,
     "roa": 0.04305653672722144,
-    "bv": 94.19486005911003
+    "bv": 9.428333491483209e-05
   },
   "quarterly": {
     "revenue": {
@@ -51,9 +51,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 788417085440,
+    "market_cap": 794257195008,
     "enterprise_value": 1216008683520,
-    "shares_outstanding": 5840126500,
+    "shares_outstanding": 5834646164053537,
     "free_float_pct": 20.35199999520558
   },
   "akumulasi": {

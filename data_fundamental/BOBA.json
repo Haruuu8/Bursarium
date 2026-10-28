@@ -4,20 +4,20 @@
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
   "harga": 166.0,
-  "update": "2026-10-28 15:34",
+  "update": "2026-10-28 16:20",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": 11.066666666666666,
-    "pb": 1.093228417341869,
-    "ps": 9.173733036749892e-07,
+    "pb": null,
+    "ps": 0.9101160271149108,
     "roe": 0.09800421354018107,
     "eps": null,
     "de": 0.24891810400839315,
     "margin_net": 0.10746398805769897,
     "current_ratio": 1.6979927072645165,
     "roa": 0.07847128905060892,
-    "bv": 151.84383918927102
+    "bv": 0.000153054643858247
   },
   "quarterly": {
     "revenue": {
@@ -53,7 +53,7 @@
   "statistik": {
     "market_cap": 191854510080,
     "enterprise_value": 196198465536,
-    "shares_outstanding": 1155750000,
+    "shares_outstanding": 1146606941933333,
     "free_float_pct": 11.113000043261952
   },
   "akumulasi": {

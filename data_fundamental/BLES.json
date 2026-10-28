@@ -3,21 +3,21 @@
   "nama": "PT Superior Prima Sukses Tbk",
   "sektor": "Basic Materials",
   "industri": "Building Materials",
-  "harga": 212.0,
-  "update": "2026-10-28 15:34",
+  "harga": 214.0,
+  "update": "2026-10-28 16:19",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 6.628768040332927,
-    "pb": 1.3581360912368259,
-    "ps": -2.962673237698705e-06,
+    "pe": 6.691303587883238,
+    "pb": null,
+    "ps": -2.990623198761154,
     "roe": 0.20488515813905087,
     "eps": null,
     "de": 0.6074164325737551,
     "margin_net": 0.20203968788886945,
     "current_ratio": 1.4687918943587204,
     "roa": 0.1274316681402198,
-    "bv": 156.09628620275902
+    "bv": 0.00015609627505714532
   },
   "quarterly": {
     "revenue": {
@@ -45,9 +45,9 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 1884723740672,
+    "market_cap": 1902504181760,
     "enterprise_value": 2158502477824,
-    "shares_outstanding": 8890206400,
+    "shares_outstanding": 8890207034780083,
     "free_float_pct": 7.7059999979303075
   },
   "akumulasi": {
