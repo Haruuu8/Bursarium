@@ -129,12 +129,12 @@ if not saham_list:
     st.stop()
 
 # ============================================================
-# PERBAIKAN LAYOUT: Selectbox dibuat lebih lega
+# PERBAIKAN LAYOUT: Selectbox & Teks Sejajar
 # ============================================================
 if "mf_kode" not in st.session_state:
     st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
-ccol_sel, col_cap = st.columns([1, 2])
+col_sel, col_cap = st.columns([1, 2]) # <-- INI BARIS YANG TADI HILANG
 with col_sel:
     kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
 with col_cap:
@@ -285,7 +285,6 @@ df_accum = df_today[
 ].copy()
 
 if df_accum.empty:
-    # PERUBAHAN TEKS DI SINI
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
         'Tidak ada saham yang memenuhi kriteria <b>Akumulasi Kuat</b> hari ini. '
@@ -362,7 +361,6 @@ df_dist = df_today[
 ].copy()
 
 if df_dist.empty:
-    # PERUBAHAN TEKS DI SINI
     st.markdown(
         '<div style="background:#171717; '
         'border:1px solid #27272a; border-left:4px solid #ffffff; '
