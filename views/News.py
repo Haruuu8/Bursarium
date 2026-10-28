@@ -310,11 +310,3 @@ with st.expander("Statistik per Kategori", expanded=False):
         render_table(df_kat)
     else:
         st.info("Belum ada data kategori.")
-
-st.markdown(
-    '<div style="text-align:center; color:#737373; font-size:12px; '
-    'margin-top:32px; padding-top:20px; border-top:1px solid #27272a;">'
-    'Sumber: IDX Keterbukaan Informasi - Auto-update via GitHub'
-    '</div>',
-    unsafe_allow_html=True
-)

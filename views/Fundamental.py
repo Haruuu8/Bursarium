@@ -407,14 +407,3 @@ for col, label, val in [
             unsafe_allow_html=True
         )
 
-
-# ============================================================
-# FOOTER
-# ============================================================
-st.markdown(
-    '<div style="text-align: center; color: #737373; font-size: 11px; '
-    'margin-top: 32px; padding-top: 20px; border-top: 1px solid #27272a;">'
-    f'Sumber: yfinance + IDX XBRL · Update: {data.get("update", "")}'
-    '</div>',
-    unsafe_allow_html=True
-)

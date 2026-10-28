@@ -74,8 +74,29 @@ html { scroll-behavior: smooth; }
 
 .block-container {
     padding-top: 3rem !important;
-    padding-bottom: 5rem !important;
+    /* Beri jarak ekstra di bawah agar konten tidak tertutup footer */
+    padding-bottom: 6rem !important; 
     max-width: 1250px !important;
+}
+
+/* ============================================================
+   GLOBAL FOOTER (Muncul di semua halaman)
+   ============================================================ */
+[data-testid="stAppViewContainer"]::after {
+    content: "© 2026 Bursarium · @bursarium · Data by Yahoo Finance";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    background: #0a0a0a;
+    border-top: 1px solid #27272a;
+    color: #737373;
+    text-align: center;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    z-index: 9999;
+    pointer-events: none; /* Biarkan klik tembus ke elemen di belakangnya */
 }
 
 /* SIDEBAR */
@@ -118,9 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   INPUTS & TOMBOL PLUS MINUS (DISATUKAN)
+   INPUTS & TOMBOL PLUS MINUS (BUNUH BIRU TOTAL)
    ============================================================ */
-/* Wadah Utama Input Angka */
 div[data-testid="stNumberInput"] > div {
     background-color: #262626 !important;
     border: 1px solid #404040 !important;
@@ -128,10 +148,8 @@ div[data-testid="stNumberInput"] > div {
     overflow: hidden !important;
     display: flex !important;
     flex-wrap: nowrap !important;
-    transition: border-color 0.2s ease !important;
+    box-shadow: none !important;
 }
-
-/* Kolom teks di dalam input */
 div[data-testid="stNumberInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
@@ -143,14 +161,10 @@ div[data-testid="stNumberInput"] input {
     min-width: 0 !important;
     font-weight: 600 !important;
 }
-
-/* Wadah tombol +/- */
 div[data-testid="stNumberInput"] > div > div {
     background-color: transparent !important;
     display: flex !important;
 }
-
-/* Tombol +/- */
 div[data-testid="stNumberInput"] button {
     background-color: #404040 !important;
     color: #ffffff !important;
@@ -172,23 +186,24 @@ div[data-testid="stNumberInput"] button svg {
     color: #ffffff !important;
 }
 
-/* Efek saat input diklik */
-div[data-testid="stNumberInput"] > div:focus-within {
-    border-color: #ffffff !important;
-    box-shadow: 0 0 0 1px #ffffff !important;
-}
-
-/* Text Input */
+/* Teks Input & Fokus (Hilangkan Biru) */
 div[data-testid="stTextInput"] div[data-baseweb="input"] {
     background-color: #262626 !important;
     border: 1px solid #404040 !important;
     border-radius: 8px !important;
+    box-shadow: none !important;
 }
 div[data-testid="stTextInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
     font-weight: 600 !important;
     padding: 10px 14px !important;
+}
+div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within,
+div[data-testid="stNumberInput"] > div:focus-within {
+    border-color: #737373 !important;
+    box-shadow: 0 0 0 1px #737373 !important;
+    outline: none !important;
 }
 
 /* Selectbox */
@@ -198,10 +213,11 @@ div[data-testid="stTextInput"] input {
     border-radius: 8px !important;
     color: #ffffff !important;
     padding: 10px 14px !important;
+    box-shadow: none !important;
 }
 .stSelectbox > div > div:focus-within {
-    border-color: #ffffff !important;
-    box-shadow: 0 0 0 1px #ffffff !important;
+    border-color: #737373 !important;
+    box-shadow: 0 0 0 1px #737373 !important;
 }
 ul[data-testid="stSelectboxVirtualDropdown"] {
     background-color: #171717 !important;
@@ -217,22 +233,19 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
 }
 
 /* ============================================================
-   SLIDER (PAKSA JADI MONOKROM)
+   SLIDER & CHECKBOX
    ============================================================ */
 [data-testid="stSlider"] [role="slider"] {
     background-color: #ffffff !important;
     border: 2px solid #0a0a0a !important;
     box-shadow: none !important;
 }
-/* Track aktif (kiri) */
 [data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(1) {
     background: #ffffff !important;
 }
-/* Track tidak aktif (kanan) */
 [data-testid="stSlider"] div[data-baseweb="slider"] > div > div > div:nth-child(2) {
     background: #404040 !important;
 }
-/* Teks nilai slider */
 [data-testid="stSlider"] [data-testid="stThumbValue"],
 [data-testid="stSlider"] [data-testid="stTickBarMin"],
 [data-testid="stSlider"] [data-testid="stTickBarMax"] {
@@ -240,9 +253,6 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     font-weight: 700 !important;
 }
 
-/* ============================================================
-   CHECKBOX (PAKSA JADI MONOKROM)
-   ============================================================ */
 [data-testid="stCheckbox"] input:checked + div {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
@@ -253,7 +263,7 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
 }
 [data-testid="stCheckbox"] label span {
     color: #ffffff !important;
-    background-color: transparent !important; /* Hilangkan highlight putih */
+    background-color: transparent !important;
 }
 
 /* TABS & EXPANDER */

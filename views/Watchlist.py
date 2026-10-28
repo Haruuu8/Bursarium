@@ -466,12 +466,11 @@ def setup_row(r, tipe="support"):
         f'<div style="font-size:14px; color:#a3a3a3; margin-top:6px;">{nama}</div>'
         f'</div>'
 
-        f'<div style="text-align:right; min-width:140px;">'
+        f'<div style="display: flex; flex-direction: column; align-items: flex-start; min-width:140px;">'
         f'<div style="font-size:11px; color:#737373; letter-spacing:0.5px; '
-        f'font-weight:600; text-transform:uppercase;">Harga Saat Ini</div>'
+        f'font-weight:600; text-transform:uppercase; margin-bottom:4px;">Harga Saat Ini</div>'
         f'<div style="font-size:28px; font-weight:700; color:#ffffff; '
-        f'letter-spacing:-0.03em; margin-top:4px;">'
-        f'{harga:,.0f}</div>'
+        f'letter-spacing:-0.03em;">{harga:,.0f}</div>'
         f'<div style="font-size:12px; color:{posisi_color}; font-weight:500; '
         f'margin-top:4px;">{posisi_txt}</div>'
         f'</div>'
@@ -497,7 +496,7 @@ def setup_row(r, tipe="support"):
         f'font-weight:600;">HARGA → ENTRY</span>'
         f'</div>'
 
-                f'<div class="grid-4-col" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; margin-bottom:20px;">'
+        f'<div class="grid-4-col" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; margin-bottom:20px;">'
         
         f'<div style="background:#262626; border:1px solid #404040; '
         f'border-radius:6px; padding:16px;">'

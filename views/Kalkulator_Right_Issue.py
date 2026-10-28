@@ -15,19 +15,27 @@ st.markdown(page_header("", "Kalkulator Right Issue", "Simulasi Risiko Dilusi (H
 
 st.markdown(section_title("Data Right Issue", "Masukkan parameter saat ini (Cum-Date)"), unsafe_allow_html=True)
 
-c1, c2 = st.columns(2)
+# Bungkus input dalam kotak abu-abu agar terlihat rapi
+st.markdown('<div style="background:#171717; border:1px solid #27272a; border-radius:12px; padding:24px 28px; margin-bottom:24px;">', unsafe_allow_html=True)
+
+c1, c2 = st.columns([1, 1.2])
 with c1:
     lot_lama = st.number_input("Jumlah Lot Dimiliki", min_value=1, value=10, step=1)
     harga_cum = st.number_input("Harga Saham Saat Ini (Cum-Date) - Rp", min_value=1.0, value=1000.0, step=50.0)
 with c2:
     st.markdown('<div style="font-size: 14px; font-weight: 600; color: #ffffff; margin-bottom: 8px;">Rasio Right Issue (Lama : Baru)</div>', unsafe_allow_html=True)
+    
+    # Beri sedikit jarak antar kolom
     r1, r2 = st.columns(2)
     with r1:
         rasio_lama = st.number_input("Saham Lama", min_value=1, value=1, step=1)
     with r2:
         rasio_baru = st.number_input("Saham Baru", min_value=1, value=1, step=1)
     
+    # Harga tebus dipindah ke bawah agar lebih lega
     harga_tebus = st.number_input("Harga Tebus (Exercise Price) - Rp", min_value=1.0, value=500.0, step=50.0)
+
+st.markdown('</div>', unsafe_allow_html=True)
 
 # ============================================================
 # KALKULASI
@@ -84,8 +92,8 @@ if st.button("Hitung Harga Teoritis (TERP)", type="primary", use_container_width
             f'<div style="font-size:14px; color:#a3a3a3; line-height:1.6; margin-bottom:20px;">'
             f'Pasar tidak suka right issue ini. Jika Anda tetap menebus, Anda membayar Rp {harga_tebus:,.0f} per lembar, padahal harga pasar sudah jatuh lebih rendah. Anda <b>langsung rugi</b> di hari pertama.'
             f'</div>'
-            f'<div style="background:#262626; border: 1px solid #404040; padding:14px; border-radius:6px; font-size:13px; font-weight:600; color:#ffffff;">'
-            f'REKOMENDASI: JUAL SAHAM / HMETD ANDA. Jangan tebus!'
+            f'<div style="background:#262626; border: 1px solid #404040; padding:14px; border-radius:6px; font-size:13px; font-weight:600; color:#ffffff; line-height:1.5;">'
+            f'<b>PERTIMBANGAN:</b> Menebus saham berisiko langsung rugi karena harga pasar < harga tebus. Sebaiknya jual HMETD atau sahamnya di pasar.'
             f'</div>'
             f'</div>',
             unsafe_allow_html=True
@@ -99,8 +107,8 @@ if st.button("Hitung Harga Teoritis (TERP)", type="primary", use_container_width
             f'<div style="font-size:14px; color:#a3a3a3; line-height:1.6; margin-bottom:20px;">'
             f'Pasar menerima right issue ini dengan baik. Anda bisa menebus saham baru seharga Rp {harga_tebus:,.0f} (yang lebih murah dari harga pasar). Ini adalah kesempatan Anda mendapat "diskon".'
             f'</div>'
-            f'<div style="background:#ffffff; padding:14px; border-radius:6px; font-size:13px; font-weight:700; color:#0a0a0a;">'
-            f'REKOMENDASI: TEBUS RIGHT ISSUE ANDA.'
+            f'<div style="background:#ffffff; padding:14px; border-radius:6px; font-size:13px; font-weight:700; color:#0a0a0a; line-height:1.5;">'
+            f'<b>PERTIMBANGAN:</b> Anda berpeluang mendapat harga rata-rata lebih murah. Pastikan fundamental saham tetap baik sebelum menebus.'
             f'</div>'
             f'</div>',
             unsafe_allow_html=True

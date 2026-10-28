@@ -329,15 +329,3 @@ for nama, nilai, status, ket in dampak_ihsg:
         '</div>',
         unsafe_allow_html=True
     )
-
-# ============================================================
-# FOOTER
-# ============================================================
-st.markdown(
-    '<div style="text-align: center; color: #737373; font-size: 12px; '
-    'margin-top: 40px; padding-top: 24px; border-top: 1px solid #27272a;">'
-    f'Update: {datetime.now().strftime("%d %B %Y, %H:%M")} · '
-    f'Data dari Yahoo Finance'
-    '</div>',
-    unsafe_allow_html=True
-)
