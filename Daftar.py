@@ -68,6 +68,7 @@ if st.session_state.get("authentication_status"):
         st.Page("views/Dashboard.py", title="Dashboard", icon=":material/dashboard:", default=True),
         st.Page("views/Fundamental.py", title="Fundamental", icon=":material/analytics:"),
         st.Page("views/Technical.py", title="Technical", icon=":material/trending_up:"),
+        st.Page("views/Financial_News.py", title="Financial News", icon=":material/newspaper:"),
         st.Page("views/Watchlist.py", title="Watchlist", icon=":material/star:"),
         st.Page("views/Valuation.py", title="Valuation", icon=":material/payments:"),
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
