@@ -134,17 +134,10 @@ if not saham_list:
 if "mf_kode" not in st.session_state:
     st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
-col_sel, col_cap = st.columns([1, 2]) # <-- INI BARIS YANG TADI HILANG
+# Gunakan kolom agar selectbox tidak terlalu lebar
+col_sel, _ = st.columns([1, 2])
 with col_sel:
     kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
-with col_cap:
-    # Menggunakan flexbox HTML agar teks sejajar persis di tengah kotak input
-    st.markdown(
-        '<div style="display: flex; align-items: center; height: 100%; padding-top: 28px; color: #a3a3a3; font-size: 14px; font-weight: 500;">'
-        'Grafik Statis. Data menggunakan Daily (1 Hari).'
-        '</div>',
-        unsafe_allow_html=True
-    )
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
@@ -221,6 +214,14 @@ fig1.update_layout(
     dragmode=False, margin=dict(l=40, r=40, t=40, b=40)
 )
 st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
+
+# PINDAHKAN TEKS KE SINI (Bawah Grafik 1)
+st.markdown(
+    '<div style="text-align: right; margin-top: -10px; margin-bottom: 24px; font-size: 13px; color: #737373; font-weight: 500;">'
+    'Grafik Statis. Data menggunakan Daily (1 Hari).'
+    '</div>', 
+    unsafe_allow_html=True
+)
 
 # ============================================================
 # GRAFIK 2: CMF
