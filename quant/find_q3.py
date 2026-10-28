@@ -40,7 +40,7 @@ def extract_all_q3():
         rev_ytd_ly = sum([get_q(q_rev, f"2025-Q{q}") for q in [1, 2, 3]])
         ni_ytd_ly = sum([get_q(q_ni, f"2025-Q{q}") for q in [1, 2, 3]])
         
-        # Q3 Standalone
+        # Q3 Standalone (BARU)
         ni_q3_2026 = get_q(q_ni, "2026-Q3")
         ni_q3_2025 = get_q(q_ni, "2025-Q3")
         ni_q3_yoy = (ni_q3_2026 - ni_q3_2025) / abs(ni_q3_2025) if ni_q3_2025 != 0 else np.nan

@@ -72,7 +72,6 @@ def run_screener(df):
     
     if df_pass.empty: return df_pass, df_fail
     
-    # ABSOLUTE SCORING (DENGAN NORMALISASI CFO)
     d = df_pass
     
     def calc_score(row):
@@ -97,7 +96,6 @@ def run_screener(df):
             total_w = w_roe + w_growth + w_per + w_qual + w_margin
             score = (s_roe*w_roe + s_growth*w_growth + s_per*w_per + s_qual*w_qual + s_margin*w_margin) / total_w
         else:
-            # Normalisasi ulang jika CFO kosong
             total_w = w_roe + w_growth + w_per + w_margin
             score = (s_roe*w_roe + s_growth*w_growth + s_per*w_per + s_margin*w_margin) / total_w
             
@@ -169,9 +167,6 @@ def render_card(row, rank):
         unsafe_allow_html=True
     )
 
-# ============================================================
-# UI UTAMA
-# ============================================================
 st.markdown(page_header("", "Q3 Fundamental Screener", "Peringkat Fundamental Q3 (Absolute Scoring)"), unsafe_allow_html=True)
 
 df_raw = load_clean_q3_data()
@@ -198,8 +193,6 @@ with tab1:
 
 with tab2:
     st.markdown("### Perbandingan Metrik Fundamental")
-    st.markdown("Tabel ini menampilkan angka asli untuk membandingkan siapa yang paling unggul secara absolut.")
-    
     if not df_pass.empty:
         df_compare = df_pass[['Kode', 'Sektor', 'Score', 'NI_YTD', 'NI_Q3', 'NI_Q3_YoY', 'ROE', 'PER', 'PBV', 'CFO_to_NI']].copy()
         
