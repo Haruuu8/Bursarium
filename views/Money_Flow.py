@@ -6,7 +6,6 @@ if not st.session_state.get("authentication_status"):
 import os, sys
 import numpy as np
 import pandas as pd
-import streamlit as st
 import plotly.graph_objects as go
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -138,11 +137,15 @@ if not saham_list:
     st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data tidak tersedia.</div>', unsafe_allow_html=True)
     st.stop()
 
+# ============================================================
+# PERBAIKAN INI DIA (Indentasi col1 & selectbox)
+# ============================================================
 col1, col2 = st.columns([1, 3])
 with col1:
     if "mf_kode" not in st.session_state:
-    st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
-kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
+        st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
+    kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
+
 with col2:
     st.markdown("<br>", unsafe_allow_html=True)
     st.caption("Grafik Statis. Data menggunakan Daily (1 Hari).")
