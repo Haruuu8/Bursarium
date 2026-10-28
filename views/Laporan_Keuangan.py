@@ -6,8 +6,7 @@ if not st.session_state.get("authentication_status"):
 import os, sys
 import pandas as pd
 import numpy as np
-import random
-import string
+import re
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
@@ -15,86 +14,95 @@ from quant.theme import load_theme, page_header, section_title
 load_theme()
 
 # ============================================================
-# 1. SIMULASI DATABASE (900+ SAHAM & NEWS)
+# 1. FUNGSI LOAD DATA (SILAKAN SESUAIKAN DENGAN DATABASE ANDA)
 # ============================================================
-@st.cache_data(ttl=3600)
-def load_simulated_database():
-    np.random.seed(42)
-    random.seed(42)
+@st.cache_data(ttl=1800)
+def load_news_data():
+    """
+    [GANTI BAGIAN INI]
+    Ambil data berita dari database/file Anda (misal: Supabase, Parquet, atau API).
+    Pastikan ada kolom 'Kode' (ticker IDX) dan 'Headline' atau 'Title'.
+    """
+    # CONTOH: Jika Anda menyimpannya di file CSV/Parquet
+    # df_news = pd.read_parquet("data/news.parquet")
     
-    # Generate 900 Kode Saham IDX Acak
-    def generate_ticker():
-        return ''.join(random.choices(string.ascii_uppercase, k=4))
+    # --- SIMULASI DATA BERITA ASLI (Hapus ini jika sudah pakai database asli) ---
+    data = {
+        'Kode': ['BBCA', 'BBRI', 'ADRO', 'AMMN', 'GOTO', 'ASII', 'TLKM', 'ANTM', 'BRMS', 'NCKL'],
+        'Headline': [
+            'Laba Bersih Q3 BBCA Naik 25.5% YoY, Kinerja Solid',
+            'Pendapatan BBRI Tumbuh 12%, Laba Melonjak 18%',
+            'Laba Bersih ADRO Meroket 45% Didorong Harga Batu Bara',
+            'Cetak Rekor Baru! Laba AMMN Naik 300%',
+            'GOTO Masih Merugi, Pendapatan Naik 40%',
+            'Penjualan Mobil ASII Naik 20%, Laba Bersih +15%',
+            'TLKM: EBITDA Margin Meningkat, Laba Tumbuh 10%',
+            'Lonjakan Laba ANTM 30% Berkat Efisiensi Biaya',
+            'Kinerja Cemerlang, Laba BRMS Melonjak 150%',
+            'NCKL Cetak Rekor Baru! Laba Naik 85%'
+        ],
+        'Date': pd.to_datetime(['2026-10-28'] * 10)
+    }
+    return pd.DataFrame(data)
+
+@st.cache_data(ttl=1800)
+def load_financial_data():
+    """
+    [GANTI BAGIAN INI]
+    Ambil data laporan keuangan dari database/file Anda (Parquet/Supabase).
+    Pastikan kolom sesuai dengan standar Q3 kumulatif (9M).
+    """
+    # CONTOH: df_fin = pd.read_parquet("data/laporan_keuangan.parquet")
     
-    all_tickers = list(set([generate_ticker() for _ in range(950)]))[:900]
-    sectors = ['Keuangan', 'Konsumer', 'Energi', 'Teknologi', 'Infrastruktur', 'Industri', 'Basic Material', 'Kesehatan', 'Properti']
-    
-    df_fin = pd.DataFrame({
-        'Kode': all_tickers,
-        'Sektor': np.random.choice(sectors, len(all_tickers)),
-        'NI_9M': np.random.uniform(-500, 35000, len(all_tickers)),
-        'NI_6M': np.random.uniform(-400, 25000, len(all_tickers)),
-        'NI_Q3_LY': np.random.uniform(-200, 15000, len(all_tickers)),
-        'Rev_9M': np.random.uniform(500, 120000, len(all_tickers)),
-        'Rev_6M': np.random.uniform(400, 80000, len(all_tickers)),
-        'Rev_Q3_LY': np.random.uniform(300, 40000, len(all_tickers)),
-        'CFO_9M': np.random.uniform(-200, 30000, len(all_tickers)),
-        'ROE': np.random.uniform(-15, 35, len(all_tickers)),
-        'DER': np.random.uniform(0.1, 4.0, len(all_tickers)),
-        'PER': np.random.uniform(4, 60, len(all_tickers)),
-        'Avg_Value_Daily': np.random.uniform(1e8, 1.5e12, len(all_tickers))
-    })
-    
-    # Simulasi Berita (Hanya 150 saham)
-    news_tickers = random.sample(all_tickers, 150)
-    headlines_pos = [
-        "Laba Bersih Q3 Naik {}% YoY, Kinerja Sangat Solid",
-        "Lonjakan Laba {}% Didorong Penjualan Ekspor",
-        "Pendapatan Tumbuh {}%, Laba Meroket",
-        "Cetak Rekor Baru! Laba Naik {}%",
-        "Kinerja Cemerlang, Laba Bersih Melonjak {}%"
-    ]
-    
-    news_data = []
-    for t in news_tickers:
-        if random.random() < 0.7:
-            h = random.choice(headlines_pos).format(round(random.uniform(10, 500), 1))
-            sentiment = "POSITIVE"
-        else:
-            h = "Laba Anjlok, Kinerja Memburuk"
-            sentiment = "NEGATIVE"
-        news_data.append({'Kode': t, 'Headline': h, 'Sentiment': sentiment, 'Date': pd.Timestamp('2026-10-28')})
-        
-    df_news = pd.DataFrame(news_data)
-    return df_fin, df_news
+    # --- SIMULASI DATA KEUANGAN ASLI IDX (Hapus ini jika sudah pakai database asli) ---
+    data = {
+        'Kode': ['BBCA', 'BBRI', 'ADRO', 'AMMN', 'GOTO', 'ASII', 'TLKM', 'ANTM', 'BRMS', 'NCKL'],
+        'Sektor': ['Keuangan', 'Keuangan', 'Energi', 'Basic Material', 'Teknologi', 'Industri', 'Infrastruktur', 'Basic Material', 'Basic Material', 'Basic Material'],
+        'NI_9M': [42000, 35000, 12000, 8000, -15000, 21000, 18000, 3500, 1500, 2500],
+        'NI_6M': [27000, 22000, 7000, 4000, -9000, 13500, 11000, 2000, 700, 1200],
+        'NI_Q3_LY': [12000, 10500, 4000, 1500, -6000, 6000, 5500, 1000, 300, 800],
+        'Rev_9M': [75000, 105000, 45000, 20000, 8000, 150000, 110000, 15000, 8000, 12000],
+        'Rev_6M': [49000, 70000, 28000, 12000, 5000, 95000, 72000, 9500, 5000, 7500],
+        'Rev_Q3_LY': [25000, 35000, 15000, 5000, 3000, 45000, 36000, 5000, 2500, 4000],
+        'CFO_9M': [40000, 15000, 11000, 6000, -12000, 18000, 22000, 800, 1000, 1800],
+        'ROE': [22.5, 18.2, 25.0, 15.0, -10.0, 12.0, 15.4, 8.5, 12.0, 14.0],
+        'DER': [0.2, 0.8, 0.3, 0.5, 0.1, 0.5, 0.4, 0.4, 0.6, 0.4],
+        'PER': [22.0, 12.5, 6.0, 15.0, -5.0, 9.0, 15.0, 12.0, 10.0, 11.0],
+        'Avg_Value_Daily': [1.5e12, 1.2e12, 5e11, 8e11, 1.5e12, 7e11, 8e11, 4e11, 2e11, 3e11]
+    }
+    return pd.DataFrame(data)
 
 # ============================================================
 # 2. LOGIKA SCREENER
 # ============================================================
 def run_screener(df_fin, df_news):
-    # Filter Berita Positif
-    df_news_pos = df_news[df_news['Sentiment'] == 'POSITIVE'].copy()
-    if df_news_pos.empty: return pd.DataFrame()
-        
-    # Ambil data keuangan hanya untuk saham yang ada berita positif
-    target_tickers = df_news_pos['Kode'].unique()
-    d = df_fin[df_fin['Kode'].isin(target_tickers)].copy()
+    # 1. Filter Berita yang Mengandung Kata Kunci Kenaikan
+    keywords = r"naik|tumbuh|melonjak|rekor|laba bersih|positif|meroket"
+    df_news_pos = df_news[df_news['Headline'].str.contains(keywords, case=False, na=False)].copy()
     
-    # Hitung Q3 Standalone
+    if df_news_pos.empty:
+        return pd.DataFrame()
+        
+    # 2. Ambil Kode Saham Unik dari Berita Positif
+    target_tickers = df_news_pos['Kode'].unique()
+    
+    # 3. Filter Data Keuangan HANYA untuk saham yang ada di berita
+    d = df_fin[df_fin['Kode'].isin(target_tickers)].copy()
+    if d.empty: return pd.DataFrame()
+    
+    # 4. Hitung Q3 Standalone & Metrik
     d['NI_Q3'] = d['NI_9M'] - d['NI_6M']
     d['Rev_Q3'] = d['Rev_9M'] - d['Rev_6M']
     
-    # Pertumbuhan
     d['NI_YoY'] = (d['NI_Q3'] - d['NI_Q3_LY']) / d['NI_Q3_LY'].abs()
     d['Rev_YoY'] = (d['Rev_Q3'] - d['Rev_Q3_LY']) / d['Rev_Q3_LY'].abs()
     
-    # Margin & Kualitas
     d['NPM_Q3'] = d['NI_Q3'] / d['Rev_Q3'].replace(0, np.nan)
     d['NPM_LY'] = d['NI_Q3_LY'] / d['Rev_Q3_LY'].replace(0, np.nan)
     d['NPM_Change'] = d['NPM_Q3'] - d['NPM_LY']
     d['CFO_to_NI'] = d['CFO_9M'] / d['NI_9M'].replace(0, np.nan)
     
-    # Filter Awal
+    # 5. Filter Awal (Buang Sampah)
     d = d[
         (d['NI_9M'] > 0) & 
         (d['CFO_9M'] > 0) & 
@@ -103,7 +111,7 @@ def run_screener(df_fin, df_news):
     
     if d.empty: return d
     
-    # Percentile Ranking
+    # 6. Percentile Ranking per Sektor
     def sector_rank(series, sector_series, ascending=True):
         global_rank = series.rank(pct=True, ascending=ascending) * 100
         sector_ranked = series.groupby(sector_series).rank(pct=True, ascending=ascending) * 100
@@ -120,7 +128,7 @@ def run_screener(df_fin, df_news):
     d['PER_Fixed'] = d['PER'].apply(lambda x: x if x > 0 else np.nan)
     d['Rank_PER'] = sector_rank(d['PER_Fixed'], d['Sektor'], False)
     
-    # Skor Akhir
+    # 7. Skor Akhir
     d = d.fillna({'Rank_NI': 0, 'Rank_Rev': 0, 'Rank_Margin': 0, 'Rank_Quality': 0, 'Rank_ROE': 0, 'Rank_DER': 0, 'Rank_PER': 0})
     d['Score'] = (
         (d['Rank_NI'] * 0.25) + (d['Rank_Rev'] * 0.15) + 
@@ -134,20 +142,23 @@ def run_screener(df_fin, df_news):
 # ============================================================
 # 3. UI RENDERING (CARD TOP 10)
 # ============================================================
-st.markdown(page_header("", "Financial News Screener", "Top 10 Saham Berdasarkan Skor Fundamental Q3"), unsafe_allow_html=True)
+st.markdown(page_header("", "Financial News Screener", "Screening Berita Positif & Fundamental Q3"), unsafe_allow_html=True)
 
-df_fin_all, df_news_all = load_simulated_database()
+# Load Data
+df_fin_all = load_financial_data()
+df_news_all = load_news_data()
+
+# Jalankan Screener
 df_result = run_screener(df_fin_all, df_news_all)
 
 if df_result.empty:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada saham yang lolos kriteria.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada saham yang memenuhi kriteria (Berita positif + Fundamental bagus).</div>', unsafe_allow_html=True)
     st.stop()
 
-# Tampilkan Top 10 dalam bentuk Card
+# Tampilkan Top 10 Card
 top_10 = df_result.head(10)
 
 for idx, row in top_10.iterrows():
-    # Format angka
     ni_yoy = f"{row['NI_YoY']*100:+.1f}%"
     rev_yoy = f"{row['Rev_YoY']*100:+.1f}%"
     npm_chg = f"{row['NPM_Change']*100:+.2f}%"
@@ -155,8 +166,6 @@ for idx, row in top_10.iterrows():
     roe = f"{row['ROE']:.1f}%"
     der = f"{row['DER']:.2f}x"
     per = f"{row['PER']:.1f}x" if row['PER'] > 0 else "N/A"
-    
-    # Rank Badge (1, 2, 3, dst)
     rank = idx + 1
     
     st.markdown(
@@ -164,29 +173,21 @@ for idx, row in top_10.iterrows():
         f'border-radius:12px; padding:20px 24px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; '
         f'box-shadow: 0 4px 15px rgba(0,0,0,0.2);">'
         
-        # KIRI: Rank, Kode, Sektor
         f'<div style="min-width: 150px;">'
         f'<div style="font-size:12px; color:#737373; font-weight:800; letter-spacing:1px; margin-bottom:4px;">RANK #{rank}</div>'
         f'<div style="font-size:26px; font-weight:800; color:#ffffff; margin-bottom:2px;">{row["Kode"]}</div>'
         f'<div style="font-size:13px; color:#a3a3a3;">{row["Sektor"]}</div>'
         f'</div>'
         
-        # TENGAH: Metrik Grid
         f'<div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px 24px; flex:1; max-width:650px;">'
-        
-        # Baris 1
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase; letter-spacing:0.5px;">Laba YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_yoy}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase; letter-spacing:0.5px;">Rev YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{rev_yoy}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase; letter-spacing:0.5px;">Δ Margin</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{npm_chg}</div></div>'
-        
-        # Baris 2
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase; letter-spacing:0.5px;">Kualitas Laba</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{cfo_ni}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase; letter-spacing:0.5px;">ROE</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{roe}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase; letter-spacing:0.5px;">DER / PER</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{der} / {per}</div></div>'
-        
         f'</div>'
         
-        # KANAN: Skor
         f'<div style="text-align:center; background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 24px; min-width:110px;">'
         f'<div style="font-size:11px; color:#a3a3a3; text-transform:uppercase; font-weight:700; letter-spacing:1px;">SCORE</div>'
         f'<div style="font-size:32px; font-weight:800; color:#ffffff; line-height:1.1;">{row["Score"]}</div>'
@@ -196,14 +197,13 @@ for idx, row in top_10.iterrows():
         unsafe_allow_html=True
     )
 
-# --- RED FLAGS (JEBAKAN) ---
+# --- RED FLAGS ---
 st.markdown(section_title("Waspada Jebakan (One-Off Items)", "Saham dengan skor tinggi tapi kualitas laba buruk (CFO < 50% Laba)"), unsafe_allow_html=True)
 traps = df_result[(df_result['Score'] > 50) & (df_result['CFO_to_NI'] < 0.5)].copy()
 
 if traps.empty:
     st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">[OK] Aman. Tidak ada anomali kualitas laba pada saham peringkat atas.</div>', unsafe_allow_html=True)
 else:
-    # Tampilkan sebagai list card kecil
     for _, t in traps.head(3).iterrows():
         st.markdown(
             f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:12px 16px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">'
