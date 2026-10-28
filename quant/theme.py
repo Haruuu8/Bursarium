@@ -74,29 +74,24 @@ html { scroll-behavior: smooth; }
 
 .block-container {
     padding-top: 3rem !important;
-    /* Beri jarak ekstra di bawah agar konten tidak tertutup footer */
-    padding-bottom: 6rem !important; 
+    padding-bottom: 2rem !important; /* Dikurangi agar tidak terlalu jauh kosong di bawah */
     max-width: 1250px !important;
 }
 
 /* ============================================================
-   GLOBAL FOOTER (Muncul di semua halaman)
+   GLOBAL FOOTER (Muncul di paling bawah halaman)
    ============================================================ */
-[data-testid="stAppViewContainer"]::after {
+.block-container::after {
     content: "© 2026 Bursarium · @bursarium · Data by Yahoo Finance";
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 12px 0;
-    background: #0a0a0a;
+    display: block;
+    margin-top: 80px; /* Jarak dari konten terakhir */
+    padding: 30px 0 20px 0;
     border-top: 1px solid #27272a;
     color: #737373;
     text-align: center;
     font-size: 12px;
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-    z-index: 9999;
-    pointer-events: none; /* Biarkan klik tembus ke elemen di belakangnya */
+    pointer-events: none;
 }
 
 /* SIDEBAR */

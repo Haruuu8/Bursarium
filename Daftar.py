@@ -172,5 +172,3 @@ with tab_daftar:
                         st.balloons()
                     except Exception as e: 
                         st.markdown(f'<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:8px;">Gagal submit: {e}</div>', unsafe_allow_html=True)
-
-st.markdown('<div style="text-align:center; padding:40px 20px 20px; font-size:12px; color:#737373;">© 2026 Bursarium · IDX Analysis</div>', unsafe_allow_html=True)
