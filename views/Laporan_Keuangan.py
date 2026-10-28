@@ -27,7 +27,7 @@ def load_fundamental_data():
         st.stop()
 
     data_list = []
-    latest_q_global = 0 # Untuk label UI
+    latest_q_global = 0 
     
     for file in json_files:
         with open(file, 'r', encoding='utf-8') as f:
@@ -61,12 +61,12 @@ def load_fundamental_data():
         latest_year = max(years)
         prev_year = latest_year - 1
         
-        # Cari Kuartal Terakhir yang Tersedia (Misal: Q2)
+        # Cari Kuartal Terakhir yang Tersedia
         q_list = [int(k.split("-Q")[1]) for k in q_rev.keys() if k.startswith(f"{latest_year}-Q")]
         if not q_list:
             continue
         max_q = max(q_list)
-        latest_q_global = max(latest_q_global, max_q) # Simpan untuk judul UI
+        latest_q_global = max(latest_q_global, max_q)
         
         # Fungsi Helper
         def get_q(data, year, q): return data.get(f"{year}-Q{q}", 0)
@@ -113,22 +113,18 @@ def load_fundamental_data():
 def run_screener(df):
     d = df.copy()
     
-    # YoY Growth
     d['NI_YoY_Raw'] = (d['NI_YTD'] - d['NI_YTD_LY']) / d['NI_YTD_LY'].abs().replace(0, np.nan)
     d['Rev_YoY_Raw'] = (d['Rev_YTD'] - d['Rev_YTD_LY']) / d['Rev_YTD_LY'].abs().replace(0, np.nan)
     
     d['NI_YoY'] = np.clip(d['NI_YoY_Raw'], -1.0, 2.0).fillna(-1)
     d['Rev_YoY'] = np.clip(d['Rev_YoY_Raw'], -1.0, 2.0).fillna(-1)
     
-    # Margin
     d['NPM_YTD'] = d['NI_YTD'] / d['Rev_YTD'].replace(0, np.nan)
     d['NPM_LY'] = d['NI_YTD_LY'] / d['Rev_YTD_LY'].replace(0, np.nan)
     d['NPM_Change'] = (d['NPM_YTD'] - d['NPM_LY']).fillna(-1)
     
-    # Kualitas Laba
     d['CFO_to_NI'] = d['CFO_YTD'] / d['NI_YTD'].replace(0, np.nan)
     
-    # FLAGS ANOMALI
     d['Flag_Anomali'] = ""
     d.loc[d['Rev_YoY_Raw'] > 3.0, 'Flag_Anomali'] += "CEK REV, "
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
@@ -175,7 +171,6 @@ def run_screener(df):
         (d['Rank_PER'] * 0.10)
     )
     
-    # Penalti Bank
     d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] = d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] - 10
     
     d = d.sort_values(by=['Score_Raw', 'CFO_to_NI', 'ROE', 'NI_YTD'], ascending=[False, False, False, False]).reset_index(drop=True)
@@ -252,13 +247,15 @@ st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental (YTD) B
 
 # LOAD DATA
 df_raw, latest_q_global = load_fundamental_data()
-label_q = f"Q{latest_q_global}")
+
+# PERBAIKAN SYNTAX ERROR DI SINI
+label_q = f"Q{latest_q_global}" 
 
 # Info Box untuk Q
 st.markdown(
     f'<div style="background:#262626; border:1px solid #404040; border-left:4px solid #ffffff; '
     f'border-radius:8px; padding:12px 16px; margin-bottom:24px; font-size:14px; color:#e5e5e5;">'
-    f'<b>INFORMASI DATA:</b> Data terbaru Anda tersedia hingga kuartal <b>Q{latest_q_global}</b>. '
+    f'<b>INFORMASI DATA:</b> Data terbaru Anda tersedia hingga kuartal <b>{label_q}</b>. '
     f'Sistem secara otomatis membandingkan Kumulatif (YTD) tahun ini vs Kumulatif tahun lalu pada periode yang sama.'
     f'</div>', 
     unsafe_allow_html=True
