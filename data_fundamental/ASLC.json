@@ -1,0 +1,104 @@
+{
+  "kode": "ASLC",
+  "nama": "PT Autopedia Sukses Lestari Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto & Truck Dealerships",
+  "harga": 44.0,
+  "update": "2026-10-28 17:44",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 72.1311475409836,
+    "pb": null,
+    "ps": 0.45423839936592275,
+    "roe": 0.010269476768162618,
+    "eps": null,
+    "de": 0.19659998142988763,
+    "margin_net": 0.008032748209604989,
+    "current_ratio": 4.668128352507894,
+    "roa": 0.008438043994497763,
+    "bv": 5.939932615565372e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.22514843574e+17,
+      "2025-Q2": 2.24581532808e+17,
+      "2025-Q3": 2.65877223462e+17,
+      "2026-Q1": 2.83597202059e+17,
+      "2026-Q2": 3.06274065567e+17,
+      "2026-Q3": 3.7496696142900006e+17
+    },
+    "eps": {
+      "2025-Q1": 0.96,
+      "2025-Q2": 0.49,
+      "2025-Q3": 0.89,
+      "2026-Q1": 0.56,
+      "2026-Q2": 0.11,
+      "2026-Q3": -0.06
+    },
+    "net_income": {
+      "2025-Q1": 1.2311530283e+16,
+      "2025-Q2": 6256107503000000.0,
+      "2025-Q3": 1.140222625e+16,
+      "2026-Q1": 7077079162000000.0,
+      "2026-Q2": 1410083114000000.0,
+      "2026-Q3": -736859719000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 560839589888,
+    "enterprise_value": 264496136192,
+    "shares_outstanding": 12705414027868852,
+    "free_float_pct": 19.236415895525543
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.263,
+    "vol_trend": 0.394,
+    "price_chg_20d": -24.14
+  },
+  "neraca": {
+    "aset": 918495158600.0,
+    "aset_lancar": 556879128580.0,
+    "kas": 258690580083.0,
+    "piutang_usaha": 68224528810.0,
+    "persediaan": 158275304947.0,
+    "aset_tetap": 187888956282.0,
+    "liabilitas": 148372636034.0,
+    "liabilitas_jangka_pendek": 119293876802.0,
+    "liabilitas_jangka_panjang": 29078759232.0,
+    "utang_usaha": 68224528810.0,
+    "utang_bank": null,
+    "ekuitas": 754693031784.0,
+    "ekuitas_induk": 754693031784.0,
+    "modal_saham": null,
+    "saldo_laba": 6500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 964838229055.0,
+    "beban_pokok": 788770081880.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 9525193045.0,
+    "beban_pajak": 2737457096.0,
+    "laba_bersih": 7750302557.0,
+    "laba_induk": 7750302557.0,
+    "eps_basic": 0.61,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 25000000.0,
+    "dividen_dibayar": 2279550000.0
+  }
+}

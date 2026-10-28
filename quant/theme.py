@@ -46,22 +46,44 @@ html { scroll-behavior: smooth; }
 }
 
 /* ============================================================
-   HILANGKAN GARIS ORANYE (RUNNING INDICATOR) DI ATAS
+   HILANGKAN GARIS ORANYE / PROGRESS BAR (PAHAT GODAM)
    ============================================================ */
-[data-testid="stDecoration"] {
+[data-testid="stDecoration"],
+[data-testid="stHeaderDecoration"],
+[data-testid="stStatusWidget"],
+[data-testid="stToolbar"],
+header[data-testid="stHeader"] {
+    display: none !important;
+    visibility: hidden !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Bunuh semua jenis Progress Bar / Loading Bar */
+.stProgress,
+.stProgress > div,
+.stProgress > div > div,
+.stProgress > div > div > div,
+div[role="progressbar"],
+div[data-testid="stProgress"] {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
+    height: 0 !important;
+    border: none !important;
+    background: transparent !important;
 }
 
-[data-testid="stStatusWidget"] {
+/* Kadang Streamlit menyuntikkan iframe untuk progress bar */
+iframe[title="streamlit_progress_bar"],
+iframe[title="st.iframe"] {
     display: none !important;
-    visibility: hidden !important;
 }
 
-/* Sembunyikan progress bar jika ada */
-.stProgress > div > div > div {
-    display: none !important;
+/* Hilangkan garis border di paling atas aplikasi jika ada */
+[data-testid="stAppViewContainer"] > section:first-child {
+    border-top: none !important;
 }
 
 /* ============================================================
