@@ -4,7 +4,7 @@
   "sektor": "Industrials",
   "industri": "Building Products & Equipment",
   "harga": 500.0,
-  "update": "2026-10-28 17:14",
+  "update": "2026-10-28 17:41",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,11 +57,11 @@
     "free_float_pct": 44.32576994155109
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.26,
-    "vol_trend": 1.187,
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.2345,
+    "vol_trend": 1.231,
     "price_chg_20d": -4.76
   },
   "neraca": {

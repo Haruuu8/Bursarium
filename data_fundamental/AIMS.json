@@ -4,7 +4,7 @@
   "sektor": "Energy",
   "industri": "Thermal Coal",
   "harga": 590.0,
-  "update": "2026-10-28 17:14",
+  "update": "2026-10-28 17:41",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 32.634
   },
   "akumulasi": {
-    "score": 8.1,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1047,
-    "vol_trend": 1.833,
-    "price_chg_20d": 26.03
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.135,
+    "vol_trend": 1.634,
+    "price_chg_20d": -2.48
   },
   "neraca": {
     "aset": 4431629552.0,

@@ -4,7 +4,7 @@
   "sektor": "Energy",
   "industri": "Oil & Gas Refining & Marketing",
   "harga": 1405.0,
-  "update": "2026-10-28 17:14",
+  "update": "2026-10-28 17:41",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 32.605582268997715
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1841,
-    "vol_trend": 1.401,
-    "price_chg_20d": 0.0
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1713,
+    "vol_trend": 1.435,
+    "price_chg_20d": -3.1
   },
   "neraca": {
     "aset": 38630838453.0,

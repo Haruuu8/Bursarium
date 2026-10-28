@@ -1,5 +1,5 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (PADAT & LENGKAP)
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + YF FALLBACK CFO)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -349,6 +349,21 @@ def fetch_yfinance(kode):
         "sektor": info.get("sector"), "industri": info.get("industry"), "nama": info.get("longName") or info.get("shortName"),
     }
 
+def fetch_yf_cashflow(kode):
+    if not HAS_YF: return None
+    try:
+        t = yf.Ticker(f"{kode}.JK")
+        cf = t.cashflow
+        if cf is not None and not cf.empty:
+            for idx in cf.index:
+                if "operating cash flow" in str(idx).lower() or "total cash from operating activities" in str(idx).lower():
+                    val = cf.loc[idx].iloc[0]
+                    if pd.notna(val):
+                        return float(val)
+    except Exception:
+        pass
+    return None
+
 def compute_akumulasi(kode):
     p = OHLCV_DIR / f"{kode}.csv"
     if not p.exists(): return {}
@@ -458,6 +473,14 @@ def build_one(kode, verbose=False):
         shares = yfd.get("shares_outstanding")
         if shares is not None and shares < 10_000_000: shares = shares * 1_000_000
         if not shares and yfd.get("market_cap") and harga: shares = yfd.get("market_cap") / harga
+    
+    # FALLBACK: Jika IDX gagal ambil CFO, ambil dari Yahoo Finance
+    cfo_idx = snap.get("arus_kas_operasi")
+    if not cfo_idx or cfo_idx == 0:
+        cfo_yf = fetch_yf_cashflow(kode)
+        if cfo_yf:
+            snap["arus_kas_operasi"] = cfo_yf
+
     ratios = compute_ratios(snap, harga=harga, shares=shares, periode=snap_periode, ttm_ni=ttm_ni, ttm_rev=ttm_rev)
     akum = compute_akumulasi(kode)
     warnings = []

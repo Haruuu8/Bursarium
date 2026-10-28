@@ -46,6 +46,25 @@ html { scroll-behavior: smooth; }
 }
 
 /* ============================================================
+   HILANGKAN GARIS ORANYE (RUNNING INDICATOR) DI ATAS
+   ============================================================ */
+[data-testid="stDecoration"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+[data-testid="stStatusWidget"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Sembunyikan progress bar jika ada */
+.stProgress > div > div > div {
+    display: none !important;
+}
+
+/* ============================================================
    ALERTS (INFO, SUCCESS, WARNING) JADI HITAM
    ============================================================ */
 [data-testid="stNotification"], [data-testid="stAlert"] {
