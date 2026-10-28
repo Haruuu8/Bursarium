@@ -249,7 +249,7 @@ div[data-testid="stTextInput"] input:focus {
 
 
 /* ============================================================
-   SELECTBOX FIX (BUNUH WARNA BIRU TOTAL)
+   SELECTBOX FIX (BUNUH WARNA BIRU TOTAL DENGAN PAHAT GODAM)
    ============================================================ */
 /* 1. Kotak Luar */
 div[data-testid="stSelectbox"] > div {
@@ -260,13 +260,11 @@ div[data-testid="stSelectbox"] > div {
     transition: all 0.2s ease !important;
 }
 
-/* 2. Bunuh semua background di layer dalam (biang kerok birunya) */
+/* 2. Bunuh paksa SEMUA background di dalam selectbox */
 div[data-testid="stSelectbox"] div[data-baseweb="select"],
-div[data-testid="stSelectbox"] div[data-baseweb="select"] > div,
-div[data-testid="stSelectbox"] div[data-baseweb="select"] > div > div {
+div[data-testid="stSelectbox"] div[data-baseweb="select"] * {
     background-color: transparent !important;
     background: transparent !important;
-    border: none !important;
     box-shadow: none !important;
 }
 
@@ -283,7 +281,7 @@ div[data-testid="stSelectbox"] > div:focus-within {
     box-shadow: 0 0 0 1px #737373 !important;
 }
 
-/* 5. List Dropdown saat diklik */
+/* 5. List Dropdown saat diklik (Berada di luar div stSelectbox) */
 ul[data-testid="stSelectboxVirtualDropdown"] {
     background-color: #171717 !important;
     border: 1px solid #27272a !important;
