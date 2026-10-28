@@ -14,16 +14,16 @@ from quant.theme import load_theme, page_header, section_title
 load_theme()
 
 # ============================================================
-# 1. SIMULASI DATABASE (DENGAN KASUS REALISTIS)
+# 1. SIMULASI DATABASE (ANGKA LEBIH REALISTIS)
 # ============================================================
 @st.cache_data(ttl=3600)
 def load_dummy_data():
-    np.random.seed(99)
+    # Tidak menggunakan seed agar angka berubah setiap refresh (bukti data simulasi)
     
     data_saham = [
+        # (Kode, Sektor, Tipe, Curr, NI_9M, NI_6M, NI_Q3_LY, Rev_9M, Rev_6M, Rev_Q3_LY, CFO_9M, ROE, DER, PER, PBV)
         ("BBCA", "Keuangan", "Bank", "IDR", 42000000000000, 27000000000000, 12000000000000, 75000000000000, 49000000000000, 25000000000000, 40000000000000, 22.5, 0.2, 22.0, 4.5),
         ("BBRI", "Keuangan", "Bank", "IDR", 35000000000000, 22000000000000, 10500000000000, 105000000000000, 70000000000000, 35000000000000, 15000000000000, 18.2, 0.8, 12.5, 2.0),
-        ("BMRI", "Keuangan", "Bank", "IDR", 38000000000000, 24000000000000, 11500000000000, 95000000000000, 62000000000000, 31000000000000, 32000000000000, 19.5, 0.7, 11.0, 1.8),
         ("ASII", "Industri", "Non-Bank", "IDR", 21000000000000, 13500000000000, 6000000000000, 150000000000000, 95000000000000, 45000000000000, 18000000000000, 12.0, 0.5, 9.0, 1.2),
         ("CPIN", "Konsumer", "Non-Bank", "IDR", 3200000000000, 2000000000000, 100000000000, 35000000000000, 22000000000000, 3500000000000, 1150000000000, 14.0, 0.6, 18.0, 2.2),
         ("ITMG", "Energi", "Non-Bank", "USD", 280000000, 180000000, 300000000, 1200000000, 750000000, 1500000000, 400000000, 3.6, 3.43, 5.0, 0.9),
@@ -34,21 +34,24 @@ def load_dummy_data():
         ("UNVR", "Konsumer", "Non-Bank", "IDR", 4500000000000, 3000000000000, 1400000000000, 28000000000000, 18000000000000, 9000000000000, 5500000000000, 35.0, 0.6, 30.0, 35.0)
     ]
     
+    # Generate 40 saham tambahan secara acak
     for i in range(40):
         sektor = np.random.choice(['Keuangan', 'Energi', 'Konsumer', 'Industri', 'Basic Material', 'Infrastruktur'])
         tipe = "Bank" if sektor == 'Keuangan' and np.random.rand() > 0.5 else "Non-Bank"
         curr = np.random.choice(['IDR', 'IDR', 'IDR', 'USD'])
         mult = 15500 if curr == 'USD' else 1
         
-        ni_9m = np.random.uniform(100e9, 5000e9) * mult
-        ni_6m = ni_9m * np.random.uniform(0.4, 0.7)
-        ni_q3_ly = np.random.uniform(50e9, 4000e9) * mult
+        # Angka dasar realistis
+        base_ni = np.random.uniform(50e9, 10000e9) / mult 
+        ni_9m = base_ni * np.random.uniform(0.8, 1.2)
+        ni_6m = ni_9m * np.random.uniform(0.5, 0.8)
+        ni_q3_ly = ni_9m * np.random.uniform(0.4, 0.9)
         
-        rev_9m = ni_9m * np.random.uniform(2, 5)
+        rev_9m = ni_9m * np.random.uniform(2, 6)
         rev_6m = rev_9m * np.random.uniform(0.5, 0.8)
         rev_q3_ly = rev_9m * np.random.uniform(0.5, 0.9)
         
-        cfo_9m = ni_9m * np.random.uniform(0.4, 1.5)
+        cfo_9m = ni_9m * np.random.uniform(0.3, 1.5)
         roe = np.random.uniform(5.4, 35.8) if tipe == "Bank" else np.random.uniform(-5.1, 28.7)
         der = np.random.uniform(3.5, 8.0) if tipe == "Bank" else np.random.uniform(0.1, 3.4)
         
@@ -70,7 +73,7 @@ def load_dummy_data():
     return df
 
 # ============================================================
-# 2. LOGIKA SCREENER V4 (BLENDED RANKING)
+# 2. LOGIKA SCREENER (WINSORIZE + HARD FILTERS + MULTI-TIE BREAKER)
 # ============================================================
 def run_screener(df):
     d = df.copy()
@@ -81,6 +84,7 @@ def run_screener(df):
     d['NI_YoY_Raw'] = (d['NI_Q3'] - d['NI_Q3_LY']) / d['NI_Q3_LY'].abs()
     d['Rev_YoY_Raw'] = (d['Rev_Q3'] - d['Rev_Q3_LY']) / d['Rev_Q3_LY'].abs()
     
+    # Winsorization
     d['NI_YoY'] = np.clip(d['NI_YoY_Raw'], -1.0, 2.0)
     d['Rev_YoY'] = np.clip(d['Rev_YoY_Raw'], -1.0, 2.0)
     
@@ -94,7 +98,7 @@ def run_screener(df):
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
     d.loc[d['NI_Q3_LY'] <= 0, 'Flag_Anomali'] += "LOW BASE, "
     
-    # HARD FILTERS
+    # Hard Filters
     d = d[
         (d['NI_YoY_Raw'] >= 0) & 
         (d['Rev_YoY_Raw'] >= -0.20) & 
@@ -105,7 +109,7 @@ def run_screener(df):
     
     if d.empty: return d
     
-    # BLENDED RANKING
+    # Blended Ranking
     def blended_rank(series, sector_series, ascending=True):
         global_rank = series.rank(method='min', pct=True, ascending=ascending) * 100
         sector_ranked = series.groupby(sector_series).rank(method='min', pct=True, ascending=ascending) * 100
@@ -126,32 +130,41 @@ def run_screener(df):
     
     d = d.fillna({'Rank_NI': 0, 'Rank_Rev': 0, 'Rank_Margin': 0, 'Rank_Quality': 0, 'Rank_ROE': 0, 'Rank_DER': 0, 'Rank_PER': 0})
     
-    d['Score'] = (
+    d['Score_Raw'] = (
         (d['Rank_NI'] * 0.20) + (d['Rank_Rev'] * 0.15) + 
         (d['Rank_Margin'] * 0.20) + (d['Rank_Quality'] * 0.20) + 
         (d['Rank_ROE'] * 0.10) + (d['Rank_DER'] * 0.05) + 
         (d['Rank_PER'] * 0.10)
     )
     
-    d['Score_Final'] = d['Score'] + (d['NI_Q3'].rank(pct=True) * 0.001)
-    d['Score'] = d['Score_Final'].round(1)
+    # Multi-Level Tie-Breaker: Score -> Kualitas Laba -> ROE -> Laba Absolut
+    d = d.sort_values(
+        by=['Score_Raw', 'CFO_to_NI', 'ROE', 'NI_Q3'], 
+        ascending=[False, False, False, False]
+    ).reset_index(drop=True)
     
-    return d.sort_values('Score', ascending=False).reset_index(drop=True)
+    d['Score'] = d['Score_Raw'].round(2) # Tampilkan 2 desimal
+    
+    return d
 
 # ============================================================
-# 3. FUNGSI RENDER KARTU
+# 3. FUNGSI FORMAT & RENDER KARTU
 # ============================================================
+def format_currency(val, curr):
+    # Tidak ada konversi! Format mentah sesuai mata uang aslinya
+    abs_val = abs(val)
+    if curr == 'USD':
+        if abs_val >= 1e9: return f"$ {val/1e9:,.2f} B"
+        elif abs_val >= 1e6: return f"$ {val/1e6:,.1f} M"
+        else: return f"$ {val:,.0f}"
+    else: # IDR
+        if abs_val >= 1e12: return f"Rp {val/1e12:,.1f} T"
+        elif abs_val >= 1e9: return f"Rp {val/1e9:,.1f} B"
+        elif abs_val >= 1e6: return f"Rp {val/1e6:,.1f} M"
+        else: return f"Rp {val:,.0f}"
+
 def render_card(row, rank):
-    def format_rp(val, curr):
-        if curr == 'USD': val = val * 15500 
-        abs_val = abs(val)
-        if abs_val >= 1e12: return f"{val/1e12:,.1f} T"
-        elif abs_val >= 1e9: return f"{val/1e9:,.1f} B"
-        elif abs_val >= 1e6: return f"{val/1e6:,.1f} M"
-        else: return f"{val:,.0f}"
-
-    ni_q3_rp = format_rp(row['NI_Q3'], row['Currency'])
-    curr_label = f" ({row['Currency']})" if row['Currency'] == 'USD' else ""
+    ni_q3_rp = format_currency(row['NI_Q3'], row['Currency'])
     
     ni_yoy = f"{row['NI_YoY']*100:+.1f}%"
     rev_yoy = f"{row['Rev_YoY']*100:+.1f}%"
@@ -162,11 +175,19 @@ def render_card(row, rank):
     per = f"{row['PER']:.1f}x" if row['PER'] > 0 else "N/A"
     pbv = f"{row['PBV']:.2f}x"
     
+    # Flags
     flag_html = ""
-    if row['Tipe'] == 'Bank': flag_html += '<span style="background:#e5e5e5; color:#0a0a0a; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">BANK</span>'
-    if row['Currency'] == 'USD': flag_html += '<span style="background:#404040; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">USD</span>'
+    if row['Tipe'] == 'Bank': 
+        flag_html += '<span style="background:#e5e5e5; color:#0a0a0a; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">BANK</span>'
+    if row['Currency'] == 'USD': 
+        flag_html += '<span style="background:#404040; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">USD</span>'
+    
+    # Flag Kualitas Laba
+    if row['CFO_to_NI'] < 0.8:
+        flag_html += '<span style="background:#737373; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ CFO LEMAH</span>'
+        
     if row['Flag_Anomali']:
-        flag_html += f'<span style="background:#737373; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ {row["Flag_Anomali"].strip(", ")}</span>'
+        flag_html += f'<span style="background:#525252; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ {row["Flag_Anomali"].strip(", ")}</span>'
     
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
@@ -181,7 +202,7 @@ def render_card(row, rank):
         f'</div>'
         
         f'<div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:16px 24px; flex:1; max-width:700px;">'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba Q3{curr_label}</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_q3_rp}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba Q3</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_q3_rp}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_yoy}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Rev YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{rev_yoy}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Δ Margin</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{npm_chg}</div></div>'
@@ -212,19 +233,16 @@ if df_result.empty:
     st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada saham yang lolos syarat gugur (Hard Filters).</div>', unsafe_allow_html=True)
     st.stop()
 
-# Membuat Tab
 sectors = df_result['Sektor'].unique().tolist()
 tab_names = ["Semua Sektor"] + sectors
 tabs = st.tabs(tab_names)
 
-# Tab 1: Semua Sektor (Top 10)
 with tabs[0]:
     st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
     top_10 = df_result.head(10)
     for idx, row in top_10.iterrows():
         render_card(row, idx + 1)
 
-# Tab Seterusnya: Per Sektor (Top 5)
 for i, sector in enumerate(sectors):
     with tabs[i + 1]:
         st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
