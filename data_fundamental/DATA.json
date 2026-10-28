@@ -1,0 +1,101 @@
+{
+  "kode": "DATA",
+  "nama": "PT Remala Abadi Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 995.0,
+  "update": "2026-10-28 18:19",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 23.27485380116959,
+    "pb": null,
+    "ps": 2.872504092956707,
+    "roe": 0.1418511078822329,
+    "eps": null,
+    "de": 1.5792607633600617,
+    "margin_net": 0.23678773305621528,
+    "current_ratio": 0.38335457293899233,
+    "roa": 0.052876560304246964,
+    "bv": 0.0003013723377859816
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.6394572595e+16,
+      "2025-Q2": 1.17510831888e+17,
+      "2025-Q3": 1.10529583233e+17,
+      "2026-Q1": 1.18309709877e+17,
+      "2026-Q2": 1.29936803341e+17
+    },
+    "eps": {
+      "2025-Q1": 9.96,
+      "2025-Q2": 14.99,
+      "2025-Q3": 22.12,
+      "2026-Q1": 19.09,
+      "2026-Q2": 23.66
+    },
+    "net_income": {
+      "2025-Q1": 1.3700766465e+16,
+      "2025-Q2": 2.0611636879e+16,
+      "2025-Q3": 3.0408981991e+16,
+      "2026-Q1": 2.6252130757e+16,
+      "2026-Q2": 3.2529598347e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1368125079552,
+    "enterprise_value": 1969029382144,
+    "shares_outstanding": 1375011207111111,
+    "free_float_pct": 14.444
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2217,
+    "vol_trend": 0.499,
+    "price_chg_20d": -37.81
+  },
+  "neraca": {
+    "aset": 1111678383877.0,
+    "aset_lancar": 233293958334.0,
+    "kas": 9786961354.0,
+    "piutang_usaha": 48194777192.0,
+    "persediaan": 73979934655.0,
+    "aset_tetap": 682598181581.0,
+    "liabilitas": 654430407787.0,
+    "liabilitas_jangka_pendek": 608559215938.0,
+    "liabilitas_jangka_panjang": 45871191849.0,
+    "utang_usaha": 48194777192.0,
+    "utang_bank": 467156404823.0,
+    "ekuitas": 414390341969.0,
+    "ekuitas_induk": 414390341969.0,
+    "modal_saham": null,
+    "saldo_laba": 13750000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 248246513218.0,
+    "beban_pokok": 71296012306.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 87820896406.0,
+    "beban_pajak": -25246769963.0,
+    "laba_bersih": 58781729104.0,
+    "laba_induk": 58781729104.0,
+    "eps_basic": 42.75,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4126557118.0,
+    "dividen_dibayar": null
+  }
+}

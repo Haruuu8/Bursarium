@@ -1,0 +1,101 @@
+{
+  "kode": "KREN",
+  "nama": "PT Quantum Clovera Investama Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 17.0,
+  "update": "2026-10-28 18:56",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.08420303862579963,
+    "roe": 2068.4214735849323,
+    "eps": -8710781.906664297,
+    "de": -52182.744235704646,
+    "margin_net": -0.02284717432546166,
+    "current_ratio": 1.5992203207199789,
+    "roa": -0.013071383514071859,
+    "bv": -918.0977168421618
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1296329339306.0,
+      "2025-Q2": 1151652100643.0,
+      "2025-Q3": 1010139565914.0,
+      "2026-Q1": 8.13769022021e+17,
+      "2026-Q2": -8.137675092099722e+17
+    },
+    "eps": {
+      "2025-Q1": -0.23,
+      "2025-Q2": -1.49,
+      "2025-Q3": 8.76,
+      "2026-Q1": -1.77,
+      "2026-Q2": -0.13
+    },
+    "net_income": {
+      "2025-Q1": -4161711591000000.0,
+      "2025-Q2": -2.7093590747e+16,
+      "2025-Q3": -9.6885696606e+16,
+      "2026-Q1": -3.2168151747e+16,
+      "2026-Q2": -2395305524000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 309412724736,
+    "enterprise_value": 2394785841152,
+    "shares_outstanding": 18200747800,
+    "free_float_pct": 71.65600000237353
+  },
+  "akumulasi": {
+    "score": 4.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.1246,
+    "vol_trend": 2.983,
+    "price_chg_20d": 13.33
+  },
+  "neraca": {
+    "aset": 2644208031521.0,
+    "aset_lancar": 1326725637622.0,
+    "kas": 132738029830.0,
+    "piutang_usaha": 215668203429.0,
+    "persediaan": 450738364397.0,
+    "aset_tetap": 5974255089.0,
+    "liabilitas": 871977048057.0,
+    "liabilitas_jangka_pendek": 829607791017.0,
+    "liabilitas_jangka_panjang": 42369257040.0,
+    "utang_usaha": 215668203429.0,
+    "utang_bank": 36947635018.0,
+    "ekuitas": -16710065.0,
+    "ekuitas_induk": -16710065.0,
+    "modal_saham": null,
+    "saldo_laba": 900000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1512811027685.0,
+    "beban_pokok": 1470089144858.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -75394320582.0,
+    "beban_pajak": -2706382100.0,
+    "laba_bersih": -34563457271.0,
+    "laba_induk": -34563457271.0,
+    "eps_basic": -1.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5974255089.0,
+    "dividen_dibayar": null
+  }
+}

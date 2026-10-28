@@ -1,0 +1,101 @@
+{
+  "kode": "BDKR",
+  "nama": "PT Berdikari Pondasi Perkasa Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 169.0,
+  "update": "2026-10-28 18:12",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 76.81818181818181,
+    "pb": null,
+    "ps": 2.143299002961954,
+    "roe": 0.013133045103738965,
+    "eps": null,
+    "de": 0.3660341598689514,
+    "margin_net": 0.05344439874440518,
+    "current_ratio": 5.153157691263614,
+    "roa": 0.009613994649298423,
+    "bv": 0.00016751636673917021
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.07722816393e+17,
+      "2025-Q2": 9.1132356263e+16,
+      "2025-Q3": 8.3847880425e+16,
+      "2026-Q1": 9.7598192504e+16,
+      "2026-Q2": 9.3531397724e+16
+    },
+    "eps": {
+      "2025-Q1": 0.97,
+      "2025-Q2": 0.94,
+      "2025-Q3": 0.4,
+      "2026-Q1": 1.06,
+      "2026-Q2": 1.14
+    },
+    "net_income": {
+      "2025-Q1": 4582774193000000.0,
+      "2025-Q2": 4455999489000000.0,
+      "2025-Q3": 1861636242000000.0,
+      "2026-Q1": 4928819344000000.0,
+      "2026-Q2": 5285986688000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 762109296640,
+    "enterprise_value": 822822895616,
+    "shares_outstanding": 4643093650909091,
+    "free_float_pct": 28.749994254935
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.2328,
+    "vol_trend": 2.858,
+    "price_chg_20d": -1.17
+  },
+  "neraca": {
+    "aset": 1062493417629.0,
+    "aset_lancar": 508549997536.0,
+    "kas": 86736752449.0,
+    "piutang_usaha": 320491511240.0,
+    "persediaan": 23579115493.0,
+    "aset_tetap": 527587763573.0,
+    "liabilitas": 284699238799.0,
+    "liabilitas_jangka_pendek": 98687062963.0,
+    "liabilitas_jangka_panjang": 186012175836.0,
+    "utang_usaha": 320491511240.0,
+    "utang_bank": 29435541643.0,
+    "ekuitas": 777794178830.0,
+    "ekuitas_induk": 777794178830.0,
+    "modal_saham": null,
+    "saldo_laba": 80020000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 191129590228.0,
+    "beban_pokok": 109274926047.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15188203039.0,
+    "beban_pajak": -4973397007.0,
+    "laba_bersih": 10214806032.0,
+    "laba_induk": 10214806032.0,
+    "eps_basic": 2.2,
+    "eps_diluted": 2.2
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": -2481872670.0,
+    "dividen_dibayar": null
+  }
+}

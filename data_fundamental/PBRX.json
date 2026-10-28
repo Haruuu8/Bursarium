@@ -1,0 +1,97 @@
+{
+  "kode": "PBRX",
+  "nama": "PT Pan Brothers Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 22.0,
+  "update": "2026-10-28 19:03",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0018547510662192833,
+    "roe": -0.07655538284003717,
+    "eps": 4138.14091397783,
+    "de": 2.071916859290681,
+    "margin_net": -0.04258975428188089,
+    "current_ratio": 3.468320321836203,
+    "roa": -0.027279157009326826,
+    "bv": 3488.1767280960867
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 51797314000000.0,
+      "2025-Q2": 68317467000000.0,
+      "2026-Q1": 57062457000000.0,
+      "2026-Q2": 77630337000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": -0.0
+    },
+    "net_income": {
+      "2025-Q1": 94649840000000.0,
+      "2025-Q2": -17647000000.0,
+      "2026-Q1": -1665587000000.0,
+      "2026-Q2": -4070946000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 472604639232,
+    "enterprise_value": 494151008256,
+    "shares_outstanding": 21482028246,
+    "free_float_pct": 50.751999998091804
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.178,
+    "vol_trend": 0.818,
+    "price_chg_20d": -18.52
+  },
+  "neraca": {
+    "aset": 210289966.0,
+    "aset_lancar": 158377289.0,
+    "kas": 7626955.0,
+    "piutang_usaha": 24318193.0,
+    "persediaan": 99553963.0,
+    "aset_tetap": 45090394.0,
+    "liabilitas": 155255176.0,
+    "liabilitas_jangka_pendek": 45663974.0,
+    "liabilitas_jangka_panjang": 109591202.0,
+    "utang_usaha": 24318193.0,
+    "utang_bank": 6568765.0,
+    "ekuitas": 74933111.0,
+    "ekuitas_induk": 74933111.0,
+    "modal_saham": null,
+    "saldo_laba": 1814636.0
+  },
+  "laba_rugi": {
+    "pendapatan": 134692794.0,
+    "beban_pokok": 122867258.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4737636.0,
+    "beban_pajak": -452262.0,
+    "laba_bersih": -5736533.0,
+    "laba_induk": -5736533.0,
+    "eps_basic": -0.00027,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2729176.0,
+    "dividen_dibayar": null
+  }
+}

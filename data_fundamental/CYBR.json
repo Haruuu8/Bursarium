@@ -1,0 +1,101 @@
+{
+  "kode": "CYBR",
+  "nama": "PT ITSEC Asia Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Infrastructure",
+  "harga": 386.0,
+  "update": "2026-10-28 18:17",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 76.28458498023716,
+    "pb": null,
+    "ps": 7.138044221077452,
+    "roe": 0.10930335376047742,
+    "eps": null,
+    "de": 0.5567130287539469,
+    "margin_net": 0.1688507554082279,
+    "current_ratio": 3.1479024481991598,
+    "roa": 0.06997377992344149,
+    "bv": 4.6293181553132044e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.35395659464e+17,
+      "2025-Q2": 9.5049549474e+16,
+      "2025-Q3": 6.6790726761e+16,
+      "2026-Q1": 8.6135422619e+16,
+      "2026-Q2": 1.15029529903e+17
+    },
+    "eps": {
+      "2025-Q1": 5.39,
+      "2025-Q2": 0.24,
+      "2025-Q3": -3.88,
+      "2026-Q1": -2.31,
+      "2026-Q2": 7.37
+    },
+    "net_income": {
+      "2025-Q1": 3.4964194527e+16,
+      "2025-Q2": 1780869053000000.0,
+      "2025-Q3": -2.5240647423e+16,
+      "2026-Q1": -1.5544046349e+16,
+      "2026-Q2": 4.9510900544e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 5206521151488,
+    "enterprise_value": 5255897546752,
+    "shares_outstanding": 6712817034584981,
+    "free_float_pct": 34.052936780556756
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3385,
+    "vol_trend": 1.046,
+    "price_chg_20d": -21.54
+  },
+  "neraca": {
+    "aset": 485422600182.0,
+    "aset_lancar": 351059589034.0,
+    "kas": 21164538718.0,
+    "piutang_usaha": 67733474975.0,
+    "persediaan": 166149319.0,
+    "aset_tetap": 14518392565.0,
+    "liabilitas": 173002836835.0,
+    "liabilitas_jangka_pendek": 111521749740.0,
+    "liabilitas_jangka_panjang": 61481087095.0,
+    "utang_usaha": 67733474975.0,
+    "utang_bank": 10000000000.0,
+    "ekuitas": 310757657715.0,
+    "ekuitas_induk": 310757657715.0,
+    "modal_saham": null,
+    "saldo_laba": 36847539690.0
+  },
+  "laba_rugi": {
+    "pendapatan": 201164952522.0,
+    "beban_pokok": 129572481561.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5420636663.0,
+    "beban_pajak": 28925990306.0,
+    "laba_bersih": 33966854195.0,
+    "laba_induk": 33966854195.0,
+    "eps_basic": 5.06,
+    "eps_diluted": 4.98
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14518392565.0,
+    "dividen_dibayar": null
+  }
+}

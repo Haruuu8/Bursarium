@@ -1,0 +1,101 @@
+{
+  "kode": "MCOR",
+  "nama": "PT Bank China Construction Bank Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 57.0,
+  "update": "2026-10-28 18:56",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 13.66906474820144,
+    "pb": 0.2972911810745687,
+    "ps": 0.9876442622968561,
+    "roe": 0.021749196931688718,
+    "eps": null,
+    "de": 4.392759953119586,
+    "margin_net": 0.14225954588280987,
+    "current_ratio": null,
+    "roa": 0.0040330363525836735,
+    "bv": 191.73121716551307
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 550731000000.0,
+      "2025-Q2": 535402000000.0,
+      "2025-Q3": 542297000000.0,
+      "2026-Q1": 561316000000.0,
+      "2026-Q2": 550996000000.0
+    },
+    "eps": {
+      "2025-Q1": 2.07,
+      "2025-Q2": 2.07,
+      "2025-Q3": 1.95,
+      "2026-Q1": 2.06,
+      "2026-Q2": 2.11
+    },
+    "net_income": {
+      "2025-Q1": 78535000000.0,
+      "2025-Q2": 78605000000.0,
+      "2025-Q3": 73736000000.0,
+      "2026-Q1": 78168000000.0,
+      "2026-Q2": 80069000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 2161424728064,
+    "enterprise_value": 4001794359296,
+    "shares_outstanding": 37946522781,
+    "free_float_pct": 33.04799999929662
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3942,
+    "vol_trend": 1.369,
+    "price_chg_20d": -14.93
+  },
+  "neraca": {
+    "aset": 39235203.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 809871.0,
+    "liabilitas": 31959670.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 7275533.0,
+    "ekuitas_induk": 7275533.0,
+    "modal_saham": null,
+    "saldo_laba": 1881274.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1112312.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 201174.0,
+    "laba_sebelum_pajak": 202868.0,
+    "beban_pajak": -44631.0,
+    "laba_bersih": 158237.0,
+    "laba_induk": 158237.0,
+    "eps_basic": 4.17,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1980369000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "kode": "FLMC",
+  "nama": "PT Falmaco Nonwoven Industri Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Household & Personal Products",
+  "harga": 143.0,
+  "update": "2026-10-28 17:58",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.544105842598471,
+    "roe": 8.974332859051884,
+    "eps": -59.57582092032,
+    "de": -15.321413804055679,
+    "margin_net": -2.309752845048576,
+    "current_ratio": 0.31203010197162073,
+    "roa": -0.6266373545124746,
+    "bv": -3.31923396736
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 111718744064,
+    "enterprise_value": 114089295872,
+    "shares_outstanding": 781250000,
+    "free_float_pct": 38.865000064
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2504,
+    "vol_trend": 0.371,
+    "price_chg_20d": 14.4
+  },
+  "neraca": {
+    "aset": 37137596218.0,
+    "aset_lancar": 10015558331.0,
+    "kas": 324918530.0,
+    "piutang_usaha": 4329483633.0,
+    "persediaan": 4967057848.0,
+    "aset_tetap": 17299896366.0,
+    "liabilitas": 39730747755.0,
+    "liabilitas_jangka_pendek": 32098051655.0,
+    "liabilitas_jangka_panjang": 7632696100.0,
+    "utang_usaha": 4329483633.0,
+    "utang_bank": null,
+    "ekuitas": -2593151537.0,
+    "ekuitas_induk": -2593151537.0,
+    "modal_saham": null,
+    "saldo_laba": -90676303123.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10075452487.0,
+    "beban_pokok": 21534282370.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -22648056292.0,
+    "beban_pajak": -623748755.0,
+    "laba_bersih": -23271805047.0,
+    "laba_induk": -23271805047.0,
+    "eps_basic": -29.79,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

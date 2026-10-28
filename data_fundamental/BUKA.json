@@ -1,0 +1,104 @@
+{
+  "kode": "BUKA",
+  "nama": "PT Bukalapak.com Tbk.",
+  "sektor": "Consumer Cyclical",
+  "industri": "Internet Retail",
+  "harga": 101.0,
+  "update": "2026-10-28 18:07",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0012740083971510866,
+    "roe": -0.03655448107228134,
+    "eps": 16959.22253676005,
+    "de": 0.027795108880780104,
+    "margin_net": -0.15704944470096963,
+    "current_ratio": 34.781110241886914,
+    "roa": -0.03555271386245457,
+    "bv": 0.26389871865803194
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1456510860000000.0,
+      "2025-Q2": 1630615129000000.0,
+      "2025-Q3": 1639493440000000.0,
+      "2026-Q1": 2369832294000000.0,
+      "2026-Q2": 1621929136000000.0,
+      "2026-Q3": 1649073109000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 4.5,
+      "2025-Q3": 26.27,
+      "2026-Q1": -4.39,
+      "2026-Q2": -4.14,
+      "2026-Q3": -0.68
+    },
+    "net_income": {
+      "2025-Q1": 110659427000000.0,
+      "2025-Q2": 353791457000000.0,
+      "2025-Q3": 2443317294000000.0,
+      "2026-Q1": -425780438000000.0,
+      "2026-Q2": -394959824000000.0,
+      "2026-Q3": -65149670000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 9275198930944,
+    "enterprise_value": -8269679034368,
+    "shares_outstanding": 91833653260,
+    "free_float_pct": 45.450000000359346
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1481,
+    "vol_trend": 1.427,
+    "price_chg_20d": -3.81
+  },
+  "neraca": {
+    "aset": 24917645821.0,
+    "aset_lancar": 19260057187.0,
+    "kas": 15564083750.0,
+    "piutang_usaha": 251849088.0,
+    "persediaan": 230839429.0,
+    "aset_tetap": 70898543.0,
+    "liabilitas": 673608444.0,
+    "liabilitas_jangka_pendek": 553750500.0,
+    "liabilitas_jangka_panjang": 119857944.0,
+    "utang_usaha": 251849088.0,
+    "utang_bank": null,
+    "ekuitas": 24234783425.0,
+    "ekuitas_induk": 24234783425.0,
+    "modal_saham": null,
+    "saldo_laba": -8000142513.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5640834539.0,
+    "beban_pokok": 5182178168.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -859897374.0,
+    "beban_pajak": 8754.0,
+    "laba_bersih": -885889932.0,
+    "laba_induk": -885889932.0,
+    "eps_basic": -9.21,
+    "eps_diluted": -9.21
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5352743.0,
+    "dividen_dibayar": 8797473.0
+  }
+}

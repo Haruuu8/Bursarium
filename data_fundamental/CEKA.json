@@ -1,0 +1,104 @@
+{
+  "kode": "CEKA",
+  "nama": "PT Wilmar Cahaya Indonesia Tbk.",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 2200.0,
+  "update": "2026-10-28 18:44",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 5.365853658536586,
+    "pb": null,
+    "ps": 120884.79608057582,
+    "roe": 0.11245402399646466,
+    "eps": null,
+    "de": 0.40475141513649016,
+    "margin_net": 0.029207813647261372,
+    "current_ratio": 2.7006600959212217,
+    "roa": 0.08005261485039206,
+    "bv": 0.00364593444884542
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2269697165081.0,
+      "2025-Q2": 2260544266534.0,
+      "2025-Q3": 2473731664693.0,
+      "2026-Q1": 2395333667727.0,
+      "2026-Q2": 2777913088326.0,
+      "2026-Q3": 3170393504739.0
+    },
+    "eps": {
+      "2025-Q1": 166.0,
+      "2025-Q2": 41.0,
+      "2025-Q3": 62.0,
+      "2026-Q1": 121.0,
+      "2026-Q2": 126.0,
+      "2026-Q3": 163.0
+    },
+    "net_income": {
+      "2025-Q1": 9.8598922892e+16,
+      "2025-Q2": 2.4538126741e+16,
+      "2025-Q3": 3.6916605516e+16,
+      "2026-Q1": 7.1808106489e+16,
+      "2026-Q2": 7.541171661e+16,
+      "2026-Q3": 9.6479666778e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1308999942144,
+    "enterprise_value": 785301307392,
+    "shares_outstanding": 594388999700000,
+    "free_float_pct": 14.002999999999998
+  },
+  "akumulasi": {
+    "score": 3.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1024,
+    "vol_trend": 1.177,
+    "price_chg_20d": 1.38
+  },
+  "neraca": {
+    "aset": 3044241469594.0,
+    "aset_lancar": 2253487985249.0,
+    "kas": 28475409911.0,
+    "piutang_usaha": 694471746118.0,
+    "persediaan": 613037913489.0,
+    "aset_tetap": 235499132462.0,
+    "liabilitas": 877138139573.0,
+    "liabilitas_jangka_pendek": 834421180456.0,
+    "liabilitas_jangka_panjang": 42716959117.0,
+    "utang_usaha": 694471746118.0,
+    "utang_bank": null,
+    "ekuitas": 2167103330021.0,
+    "ekuitas_induk": 2167103330021.0,
+    "modal_saham": null,
+    "saldo_laba": 12504956567.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8343640260792.0,
+    "beban_pokok": 7885322118388.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 322796826462.0,
+    "beban_pajak": -79097336585.0,
+    "laba_bersih": 243699489877.0,
+    "laba_induk": 243699489877.0,
+    "eps_basic": 410.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1531065840.0,
+    "dividen_dibayar": 89123430000.0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "PNSE",
+  "nama": "PT Pudjiadi and Sons Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Resorts & Casinos",
+  "harga": 535.0,
+  "update": "2026-10-28 19:06",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.9830873288199835,
+    "ps": 1.9467727548127978e-06,
+    "roe": -0.0843008367902381,
+    "eps": -6809829.085668914,
+    "de": 1.7959093627130218,
+    "margin_net": -0.09255671481779071,
+    "current_ratio": 0.45679383779047883,
+    "roa": -0.0242962562121472,
+    "bv": 134.31791869813142
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.5734629197e+16,
+      "2025-Q2": 5.4942354744e+16,
+      "2025-Q3": 6.670566826e+16,
+      "2026-Q1": 4.1608020208e+16,
+      "2026-Q2": 5.5994107739e+16
+    },
+    "eps": {
+      "2025-Q1": -7.0,
+      "2025-Q2": 2.0,
+      "2025-Q3": 3.0,
+      "2026-Q1": -10.0,
+      "2026-Q2": -1.0
+    },
+    "net_income": {
+      "2025-Q1": -5509663230000000.0,
+      "2025-Q2": 1439245942000000.0,
+      "2025-Q3": 2161512830000000.0,
+      "2026-Q1": -8078553989000000.0,
+      "2026-Q2": -955178333000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 426830233600,
+    "enterprise_value": 520745353216,
+    "shares_outstanding": 797813496,
+    "free_float_pct": 8.270999968142931
+  },
+  "akumulasi": {
+    "score": 8.4,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1297,
+    "vol_trend": 11.079,
+    "price_chg_20d": 18.36
+  },
+  "neraca": {
+    "aset": 371815815701.0,
+    "aset_lancar": 72988535417.0,
+    "kas": 27302435147.0,
+    "piutang_usaha": 14631329644.0,
+    "persediaan": 16199931827.0,
+    "aset_tetap": 18158499262.0,
+    "liabilitas": 192450811582.0,
+    "liabilitas_jangka_pendek": 159784413402.0,
+    "liabilitas_jangka_panjang": 32666398180.0,
+    "utang_usaha": 14631329644.0,
+    "utang_bank": 4900000000.0,
+    "ekuitas": 107160648292.0,
+    "ekuitas_induk": 107160648292.0,
+    "modal_saham": null,
+    "saldo_laba": 2000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 97602127947.0,
+    "beban_pokok": 47775258223.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -8124132444.0,
+    "beban_pajak": -153748660.0,
+    "laba_bersih": -9033732322.0,
+    "laba_induk": -9033732322.0,
+    "eps_basic": -11.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 18158499262.0,
+    "dividen_dibayar": 7624500000.0
+  }
+}

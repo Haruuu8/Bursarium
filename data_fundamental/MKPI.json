@@ -1,0 +1,101 @@
+{
+  "kode": "MKPI",
+  "nama": "PT Metropolitan Kentjana Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 18775.0,
+  "update": "2026-10-28 19:00",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 29.95086622212296,
+    "pb": null,
+    "ps": -28.04791369428779,
+    "roe": 0.07971712208675448,
+    "eps": null,
+    "de": 0.3666302305849011,
+    "margin_net": 0.4353080054160806,
+    "current_ratio": 1.6635322780032824,
+    "roa": 0.058333037626323095,
+    "bv": 0.00786355532651821
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.34710528186e+17,
+      "2025-Q2": -6.347092912104614e+17,
+      "2025-Q3": 609106819867.0,
+      "2026-Q1": 6.7317128109e+17,
+      "2026-Q2": -6.73169915664448e+17
+    },
+    "eps": {
+      "2025-Q1": 263.11,
+      "2025-Q2": 243.27,
+      "2025-Q3": 308.58,
+      "2026-Q1": 309.52,
+      "2026-Q2": 317.34
+    },
+    "net_income": {
+      "2025-Q1": 2.49483713342e+17,
+      "2025-Q2": 2.3066538393e+17,
+      "2025-Q3": 2.92590213926e+17,
+      "2026-Q1": 2.93487360025e+17,
+      "2026-Q2": 3.0089331355199994e+17
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 17802341646336,
+    "enterprise_value": 14648754569216,
+    "shares_outstanding": 948187272400535,
+    "free_float_pct": 15.758999951486722
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1955,
+    "vol_trend": 1.03,
+    "price_chg_20d": -12.57
+  },
+  "neraca": {
+    "aset": 10189434628530.0,
+    "aset_lancar": 3867404190077.0,
+    "kas": 3462945527827.0,
+    "piutang_usaha": 214961609130.0,
+    "persediaan": 17230341070.0,
+    "aset_tetap": 4599222786780.0,
+    "liabilitas": 2733640122778.0,
+    "liabilitas_jangka_pendek": 2324814637633.0,
+    "liabilitas_jangka_panjang": 408825485145.0,
+    "utang_usaha": 214961609130.0,
+    "utang_bank": null,
+    "ekuitas": 7456123076422.0,
+    "ekuitas_induk": 7456123076422.0,
+    "modal_saham": null,
+    "saldo_laba": 13218000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1365425551981.0,
+    "beban_pokok": 634280124992.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 732854315340.0,
+    "beban_pajak": -138483178271.0,
+    "laba_bersih": 594380673577.0,
+    "laba_induk": 594380673577.0,
+    "eps_basic": 626.86,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 186744356818.0,
+    "dividen_dibayar": null
+  }
+}

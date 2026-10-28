@@ -1,0 +1,98 @@
+{
+  "kode": "DPUM",
+  "nama": "PT Dua Putra Utama Makmur Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 103.0,
+  "update": "2026-10-28 19:33",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.2745387445932488,
+    "ps": 0.5262788405350567,
+    "roe": -0.09204007380845623,
+    "eps": -14.876170132115432,
+    "de": 2.3553287758119557,
+    "margin_net": -0.07600984047312574,
+    "current_ratio": 2.534491939047199,
+    "roa": -0.027431014949103896,
+    "bv": 80.81354955817449
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.27700418819e+17,
+      "2026-Q1": 2.19669387598e+17,
+      "2026-Q2": 1.87859461143e+17
+    },
+    "eps": {
+      "2025-Q1": 0.02,
+      "2026-Q1": -4.05,
+      "2026-Q2": -3.37
+    },
+    "net_income": {
+      "2025-Q1": 75085115000000.0,
+      "2026-Q1": -1.6890875e+16,
+      "2026-Q2": -1.4085327781e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 428947603456,
+    "enterprise_value": 1022356815872,
+    "shares_outstanding": 4164540000,
+    "free_float_pct": 31.014000009604903
+  },
+  "akumulasi": {
+    "score": 3.2,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1203,
+    "vol_trend": 0.391,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 1129240126130.0,
+    "aset_lancar": 447284772276.0,
+    "kas": 6720662752.0,
+    "piutang_usaha": 286746070509.0,
+    "persediaan": 61280262602.0,
+    "aset_tetap": 349914770444.0,
+    "liabilitas": 792688866453.0,
+    "liabilitas_jangka_pendek": 176479066824.0,
+    "liabilitas_jangka_panjang": 616209799629.0,
+    "utang_usaha": 286746070509.0,
+    "utang_bank": 6760017527.0,
+    "ekuitas": 336551259677.0,
+    "ekuitas_induk": 336551259677.0,
+    "modal_saham": null,
+    "saldo_laba": -793770526172.0
+  },
+  "laba_rugi": {
+    "pendapatan": 407528848741.0,
+    "beban_pokok": 384223337254.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -13464678700.0,
+    "beban_pajak": -17511524081.0,
+    "laba_bersih": -30976202781.0,
+    "laba_induk": -30976202781.0,
+    "eps_basic": -7.42,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1116482576.0,
+    "dividen_dibayar": null
+  }
+}

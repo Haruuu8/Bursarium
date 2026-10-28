@@ -1,0 +1,101 @@
+{
+  "kode": "YUPI",
+  "nama": "PT Yupi Indo Jelly Gum Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Confectioners",
+  "harga": 905.0,
+  "update": "2026-10-28 18:24",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 23.984546979679607,
+    "pb": null,
+    "ps": -11.052221018927671,
+    "roe": 0.18528242240932272,
+    "eps": null,
+    "de": 0.8101097029504376,
+    "margin_net": 0.22009568211123798,
+    "current_ratio": 3.1923894042836767,
+    "roa": 0.10235437079970565,
+    "bv": 0.0002036492613318345
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.99656247388e+17,
+      "2025-Q2": -6.996548154405299e+17,
+      "2025-Q3": 823479667579.0,
+      "2026-Q1": 7.63182015141e+17,
+      "2026-Q2": -7.631805503052658e+17
+    },
+    "eps": {
+      "2025-Q1": 19.57,
+      "2025-Q2": 17.2,
+      "2025-Q3": 18.57,
+      "2026-Q1": 20.72,
+      "2026-Q2": 17.01
+    },
+    "net_income": {
+      "2025-Q1": 1.67227017914e+17,
+      "2025-Q2": 1.46982233863e+17,
+      "2025-Q3": 1.58703027485e+17,
+      "2026-Q1": 1.77021756388e+17,
+      "2026-Q2": 1.453822637e+17
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 7732761985024,
+    "enterprise_value": 8051752960000,
+    "shares_outstanding": 8544435763799120,
+    "free_float_pct": 10.0
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1315,
+    "vol_trend": 0.606,
+    "price_chg_20d": -27.02
+  },
+  "neraca": {
+    "aset": 3149880337977.0,
+    "aset_lancar": 1857794343424.0,
+    "kas": 880531045455.0,
+    "piutang_usaha": 488748970489.0,
+    "persediaan": 455491359757.0,
+    "aset_tetap": 7377719554.0,
+    "liabilitas": 1409645996351.0,
+    "liabilitas_jangka_pendek": 581944778081.0,
+    "liabilitas_jangka_panjang": 827701218270.0,
+    "utang_usaha": 488748970489.0,
+    "utang_bank": 9519999998.0,
+    "ekuitas": 1740068031795.0,
+    "ekuitas_induk": 1740068031795.0,
+    "modal_saham": null,
+    "saldo_laba": 85444887000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1464835734147.0,
+    "beban_pokok": 855811860940.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 413514843541.0,
+    "beban_pajak": -91108826031.0,
+    "laba_bersih": 322404020088.0,
+    "laba_induk": 322404020088.0,
+    "eps_basic": 37.73262846143152,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7377719554.0,
+    "dividen_dibayar": 141618185212.0
+  }
+}

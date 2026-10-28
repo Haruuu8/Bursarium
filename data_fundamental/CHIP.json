@@ -1,0 +1,92 @@
+{
+  "kode": "CHIP",
+  "nama": "PT Pelita Teknologi Global Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 428.0,
+  "update": "2026-10-28 18:07",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 39.55412389336397,
+    "pb": null,
+    "ps": 2259925.6252895165,
+    "roe": 0.059878109928778324,
+    "eps": null,
+    "de": 0.6946901940194816,
+    "margin_net": 0.05713501912928644,
+    "current_ratio": 2.779566586475454,
+    "roa": 0.035332776539385574,
+    "bv": 9.03553599987593e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 4.1900955286e+16
+    },
+    "eps": {
+      "2025-Q3": 6.2
+    },
+    "net_income": {
+      "2025-Q3": 5001096813000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 344968003584,
+    "enterprise_value": 384116228096,
+    "shares_outstanding": 806000000000000,
+    "free_float_pct": 24.799
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1615,
+    "vol_trend": 0.952,
+    "price_chg_20d": -37.52
+  },
+  "neraca": {
+    "aset": 123418220109.0,
+    "aset_lancar": 85240292061.0,
+    "kas": 6423810186.0,
+    "piutang_usaha": 37071571623.0,
+    "persediaan": 41155165496.0,
+    "aset_tetap": 31544040608.0,
+    "liabilitas": 50591799950.0,
+    "liabilitas_jangka_pendek": 30666756636.0,
+    "liabilitas_jangka_panjang": 19925043314.0,
+    "utang_usaha": 37071571623.0,
+    "utang_bank": null,
+    "ekuitas": 72826420159.0,
+    "ekuitas_induk": 72826420159.0,
+    "modal_saham": null,
+    "saldo_laba": 1206000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 76322865704.0,
+    "beban_pokok": 66401198418.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5731147392.0,
+    "beban_pajak": -1370439000.0,
+    "laba_bersih": 4360708392.0,
+    "laba_induk": 4360708392.0,
+    "eps_basic": 5.41030817866005,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1824688719.0,
+    "dividen_dibayar": null
+  }
+}

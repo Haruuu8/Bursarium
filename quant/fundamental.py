@@ -1,5 +1,5 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + YF FALLBACK CFO)
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + 100 WORKERS)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -474,7 +474,6 @@ def build_one(kode, verbose=False):
         if shares is not None and shares < 10_000_000: shares = shares * 1_000_000
         if not shares and yfd.get("market_cap") and harga: shares = yfd.get("market_cap") / harga
     
-    # FALLBACK: Jika IDX gagal ambil CFO, ambil dari Yahoo Finance
     cfo_idx = snap.get("arus_kas_operasi")
     if not cfo_idx or cfo_idx == 0:
         cfo_yf = fetch_yf_cashflow(kode)
@@ -566,18 +565,26 @@ def batch(tickers, workers=4, delay=1.0, skip_existing=False):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) > 1 and sys.argv[1] == "batch":
-        q3_file = REPORT_LIST_CACHE_DIR / "2026_tw3.json"
-        if q3_file.exists():
-            with open(q3_file, 'r', encoding='utf-8') as f: q3_data = json.load(f)
-            tickers = list(q3_data.keys()); print(f"📌 MODE Q3 AKTIF: Memproses {len(tickers)} saham yang ada di laporan Q3 2026.")
-        else:
-            print("⚠️ File 2026_tw3.json tidak ditemukan. Menggunakan daftar_saham.csv.")
+        if os.path.exists("daftar_saham.csv"):
             with open("daftar_saham.csv", "r", encoding="utf-8-sig") as f:
                 tickers = []
                 for row in csv.DictReader(f):
                     for k in ["Kode", "kode"]:
-                        if k in row and row[k]: tickers.append(row[k].strip().upper()); break
-        batch(tickers, workers=10, delay=1.5)
+                        if k in row and row[k]: 
+                            tickers.append(row[k].strip().upper())
+                            break
+            print(f"📌 MODE ALL STOCKS (100 Workers): Memproses {len(tickers)} saham dari daftar_saham.csv.")
+        else:
+            print("⚠️ File daftar_saham.csv tidak ditemukan. Menggunakan 2026_tw3.json.")
+            q3_file = REPORT_LIST_CACHE_DIR / "2026_tw3.json"
+            if q3_file.exists():
+                with open(q3_file, 'r', encoding='utf-8') as f: 
+                    q3_data = json.load(f)
+                tickers = list(q3_data.keys())
+            else:
+                tickers = []
+                
+        batch(tickers, workers=100, delay=0.5)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]
         main([t.upper() for t in tickers])

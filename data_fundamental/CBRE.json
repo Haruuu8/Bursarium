@@ -1,0 +1,101 @@
+{
+  "kode": "CBRE",
+  "nama": "PT Cakra Buana Resources Energi Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 615.0,
+  "update": "2026-10-28 18:06",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.0235208420356634e-05,
+    "roe": -3.3056514714434164,
+    "eps": -15775098.008950017,
+    "de": 184.2916815342247,
+    "margin_net": -0.40482176820486887,
+    "current_ratio": 0.45763328735994846,
+    "roa": -0.0178402583649328,
+    "bv": 2.4007726230704116
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.1688974896e+16,
+      "2025-Q2": 7392992258000000.0,
+      "2025-Q3": -4050500000000000.0,
+      "2026-Q1": 6.7351180063e+16,
+      "2026-Q2": 2.1613e+16
+    },
+    "eps": {
+      "2025-Q1": 0.29,
+      "2025-Q2": -0.09,
+      "2025-Q3": -7.74,
+      "2026-Q1": 1.45,
+      "2026-Q2": -9.39
+    },
+    "net_income": {
+      "2025-Q1": 1336850275000000.0,
+      "2025-Q2": -436795234000000.0,
+      "2025-Q3": -3.5137026739e+16,
+      "2026-Q1": 6599116465000000.0,
+      "2026-Q2": -4.2613753145e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 2790911377408,
+    "enterprise_value": 3926270935040,
+    "shares_outstanding": 4538067441,
+    "free_float_pct": 23.99799998917645
+  },
+  "akumulasi": {
+    "score": 4.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0108,
+    "vol_trend": 0.563,
+    "price_chg_20d": -16.33
+  },
+  "neraca": {
+    "aset": 2018728425525.0,
+    "aset_lancar": 88910248492.0,
+    "kas": 5425642550.0,
+    "piutang_usaha": 14823630000.0,
+    "persediaan": 17308799033.0,
+    "aset_tetap": 1924339920897.0,
+    "liabilitas": 2007833557451.0,
+    "liabilitas_jangka_pendek": 194282738926.0,
+    "liabilitas_jangka_panjang": 1813550818525.0,
+    "utang_usaha": 14823630000.0,
+    "utang_bank": 9657868000.0,
+    "ekuitas": 10894868074.0,
+    "ekuitas_induk": 10894868074.0,
+    "modal_saham": null,
+    "saldo_laba": -162164555790.0
+  },
+  "laba_rugi": {
+    "pendapatan": 88964180063.0,
+    "beban_pokok": 85631715202.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -34947066519.0,
+    "beban_pajak": -1067570161.0,
+    "laba_bersih": -36014636680.0,
+    "laba_induk": -36014636680.0,
+    "eps_basic": -7.94,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2928720276.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "kode": "IMPC",
+  "nama": "PT Impack Pratama Industri Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 815.0,
+  "update": "2026-10-28 18:53",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 69.65811965811966,
+    "pb": null,
+    "ps": 9201914.023327861,
+    "roe": 0.1910624590761883,
+    "eps": null,
+    "de": 0.596553208032073,
+    "margin_net": 0.171952324615981,
+    "current_ratio": 2.2860990077070267,
+    "roa": 0.11424717974145476,
+    "bv": 6.123651949509606e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 9.37245752338e+17,
+      "2025-Q2": -9.372438517481655e+17,
+      "2025-Q3": 1123216705096.0,
+      "2026-Q1": 1175611319712.0,
+      "2026-Q2": 1289965716265.0,
+      "2026-Q3": 1257725052691.0
+    },
+    "eps": {
+      "2025-Q1": 2.81,
+      "2025-Q2": 2.64,
+      "2025-Q3": 3.13,
+      "2026-Q1": 3.69,
+      "2026-Q2": 4.46,
+      "2026-Q3": 3.55
+    },
+    "net_income": {
+      "2025-Q1": 1.524552216e+17,
+      "2025-Q2": 1.43181577826e+17,
+      "2025-Q3": 1.70125912489e+17,
+      "2026-Q1": 2.02606320902e+17,
+      "2026-Q2": 2.43898051256e+17,
+      "2026-Q3": 1.93726077236e+17
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 44568502337536,
+    "enterprise_value": 47047851900928,
+    "shares_outstanding": 54720551230256416,
+    "free_float_pct": 20.905000000265154
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1401,
+    "vol_trend": 1.202,
+    "price_chg_20d": -42.81
+  },
+  "neraca": {
+    "aset": 5603905941861.0,
+    "aset_lancar": 2964839248199.0,
+    "kas": 562000962733.0,
+    "piutang_usaha": 785867218560.0,
+    "persediaan": 1283382268132.0,
+    "aset_tetap": 69030937164.0,
+    "liabilitas": 1998987819546.0,
+    "liabilitas_jangka_pendek": 1296898882421.0,
+    "liabilitas_jangka_panjang": 702088937125.0,
+    "utang_usaha": 785867218560.0,
+    "utang_bank": 275547083045.0,
+    "ekuitas": 3350896102194.0,
+    "ekuitas_induk": 3350896102194.0,
+    "modal_saham": null,
+    "saldo_laba": 108537000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3723302088668.0,
+    "beban_pokok": 2235005336051.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 813537413443.0,
+    "beban_pajak": 2322996874.0,
+    "laba_bersih": 640230449394.0,
+    "laba_induk": 640230449394.0,
+    "eps_basic": 11.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 69030937164.0,
+    "dividen_dibayar": 15285000000.0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "MPOW",
+  "nama": "PT Megapower Makmur Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Independent Power Producers",
+  "harga": 83.0,
+  "update": "2026-10-28 19:53",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0026624280075275867,
+    "roe": -0.08200436693665716,
+    "eps": -12389.165863980174,
+    "de": 0.35520065009036084,
+    "margin_net": -0.9433745770311716,
+    "current_ratio": 0.3643303005752433,
+    "roa": -0.06051086747279036,
+    "bv": 117698.0255276392
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7974017000000.0,
+      "2025-Q2": 8225150000000.0,
+      "2025-Q3": 8885595000000.0,
+      "2026-Q1": 3457744000000.0,
+      "2026-Q2": 4901028000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.01,
+      "2026-Q2": -0.02
+    },
+    "net_income": {
+      "2025-Q1": -1689366000000.0,
+      "2025-Q2": 92969000000.0,
+      "2025-Q3": -2329428000000.0,
+      "2026-Q1": -4429455000000.0,
+      "2026-Q2": -3455998000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 67810754560,
+    "enterprise_value": 97199628288,
+    "shares_outstanding": 816997053,
+    "free_float_pct": 67.21499997870862
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2322,
+    "vol_trend": 0.261,
+    "price_chg_20d": -15.31
+  },
+  "neraca": {
+    "aset": 130314658.0,
+    "aset_lancar": 11363375.0,
+    "kas": 397108.0,
+    "piutang_usaha": 9420813.0,
+    "persediaan": 549152.0,
+    "aset_tetap": 115244001.0,
+    "liabilitas": 34155718.0,
+    "liabilitas_jangka_pendek": 31189761.0,
+    "liabilitas_jangka_panjang": 2965957.0,
+    "utang_usaha": 9420813.0,
+    "utang_bank": 1103528.0,
+    "ekuitas": 96158940.0,
+    "ekuitas_induk": 96158940.0,
+    "modal_saham": null,
+    "saldo_laba": -7174939.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8358772.0,
+    "beban_pokok": 13024732.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9981307.0,
+    "beban_pajak": 2095854.0,
+    "laba_bersih": -7885453.0,
+    "laba_induk": -7885453.0,
+    "eps_basic": -0.00965,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13850.0,
+    "dividen_dibayar": null
+  }
+}

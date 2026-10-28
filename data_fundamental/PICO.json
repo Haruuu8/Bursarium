@@ -1,0 +1,101 @@
+{
+  "kode": "PICO",
+  "nama": "PT Pelangi Indah Canindo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 133.0,
+  "update": "2026-10-28 19:06",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 25.9765625,
+    "pb": null,
+    "ps": 0.12495304730034623,
+    "roe": 0.013686495375442396,
+    "eps": null,
+    "de": 2.250883669878371,
+    "margin_net": 0.01006065370348159,
+    "current_ratio": 0.9210456280348954,
+    "roa": 0.004210084630913435,
+    "bv": 0.0003740913842112414
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.32443517088e+17,
+      "2025-Q2": 1.56463731254e+17,
+      "2025-Q3": 1.59281145537e+17,
+      "2026-Q1": 1.35837238026e+17,
+      "2026-Q2": 1.53434841878e+17
+    },
+    "eps": {
+      "2025-Q1": 4.2,
+      "2025-Q2": 4.63,
+      "2025-Q3": -0.42,
+      "2026-Q1": 4.2,
+      "2026-Q2": 0.92
+    },
+    "net_income": {
+      "2025-Q1": 2380154453000000.0,
+      "2025-Q2": 2640935717000000.0,
+      "2025-Q3": -243613996000000.0,
+      "2026-Q1": 1507145038000000.0,
+      "2026-Q2": 1403121184000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 75593875456,
+    "enterprise_value": 177384701952,
+    "shares_outstanding": 568411371484375,
+    "free_float_pct": 44.422999956014955
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2139,
+    "vol_trend": 4.612,
+    "price_chg_20d": -12.5
+  },
+  "neraca": {
+    "aset": 691260741086.0,
+    "aset_lancar": 214376697966.0,
+    "kas": 1977224550.0,
+    "piutang_usaha": 26097879505.0,
+    "persediaan": 127896224145.0,
+    "aset_tetap": 28701353876.0,
+    "liabilitas": 478622944326.0,
+    "liabilitas_jangka_pendek": 232753613329.0,
+    "liabilitas_jangka_panjang": 245869330997.0,
+    "utang_usaha": 26097879505.0,
+    "utang_bank": 73603694205.0,
+    "ekuitas": 212637796760.0,
+    "ekuitas_induk": 212637796760.0,
+    "modal_saham": null,
+    "saldo_laba": 76023546760.0
+  },
+  "laba_rugi": {
+    "pendapatan": 289272079904.0,
+    "beban_pokok": 246469829768.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3950731404.0,
+    "beban_pajak": -1040465182.0,
+    "laba_bersih": 2910266222.0,
+    "laba_induk": 2910266222.0,
+    "eps_basic": 5.12,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 28701353876.0,
+    "dividen_dibayar": null
+  }
+}

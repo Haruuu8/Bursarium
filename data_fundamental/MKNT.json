@@ -1,0 +1,98 @@
+{
+  "kode": "MKNT",
+  "nama": "PT Mitra Komunikasi Nusantara Tbk",
+  "sektor": "Technology",
+  "industri": "Communication Equipment",
+  "harga": 9.0,
+  "update": "2026-10-28 19:51",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 3.2608695652173916,
+    "pb": null,
+    "ps": 0.15679341973049418,
+    "roe": 2.6780124467298787,
+    "eps": null,
+    "de": 258.6105240643477,
+    "margin_net": 0.04847434344637374,
+    "current_ratio": 0.6110837409140832,
+    "roa": 0.010315585474040899,
+    "bv": 1.0306150755087924e-06
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 2542963961000000.0,
+      "2026-Q1": 40687400000000.0,
+      "2026-Q2": 7.5841233438e+16,
+      "2026-Q3": 2.36817217455e+17
+    },
+    "eps": {
+      "2025-Q3": 0.97,
+      "2026-Q1": -0.33,
+      "2026-Q2": -0.42,
+      "2026-Q3": 3.51
+    },
+    "net_income": {
+      "2025-Q3": 5343929194000000.0,
+      "2026-Q1": -1788329955000000.0,
+      "2026-Q2": -2356181684000000.0,
+      "2026-Q3": 1.9302397064e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 9269909913600,
+    "enterprise_value": 394258939904,
+    "shares_outstanding": 5491987472826087,
+    "free_float_pct": 0.37975465781221174
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 800.0
+  },
+  "neraca": {
+    "aset": 1469415910822.0,
+    "aset_lancar": 853725277308.0,
+    "kas": 23763803413.0,
+    "piutang_usaha": 130107850035.0,
+    "persediaan": 637371860889.0,
+    "aset_tetap": 421809380333.0,
+    "liabilitas": 1463767914243.0,
+    "liabilitas_jangka_pendek": 1397067570528.0,
+    "liabilitas_jangka_panjang": 66700343715.0,
+    "utang_usaha": 130107850035.0,
+    "utang_bank": 281563865253.0,
+    "ekuitas": 5660125084.0,
+    "ekuitas_induk": 5660125084.0,
+    "modal_saham": null,
+    "saldo_laba": 1500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 312699138293.0,
+    "beban_pokok": 247677977117.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 14780462731.0,
+    "beban_pajak": 377991232.0,
+    "laba_bersih": 15157885425.0,
+    "laba_induk": 15157885425.0,
+    "eps_basic": 2.76,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 425000000.0,
+    "dividen_dibayar": null
+  }
+}

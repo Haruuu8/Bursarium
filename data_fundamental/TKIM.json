@@ -1,0 +1,98 @@
+{
+  "kode": "TKIM",
+  "nama": "PT Pabrik Kertas Tjiwi Kimia Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Paper & Paper Products",
+  "harga": 6525.0,
+  "update": "2026-10-28 19:15",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 19940.442554922225,
+    "roe": 0.08181797779985961,
+    "eps": null,
+    "de": 0.30246101634900824,
+    "margin_net": 0.49662946432794564,
+    "current_ratio": 1.3531822385915073,
+    "roa": 0.06281798593036401,
+    "bv": 1.0303359025350787
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 255239000000.0,
+      "2025-Q2": 235124000000.0,
+      "2026-Q1": 261545000000.0,
+      "2026-Q2": 267006000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.03,
+      "2025-Q2": -0.0,
+      "2026-Q1": 0.03,
+      "2026-Q2": 0.06
+    },
+    "net_income": {
+      "2025-Q1": 98673000000.0,
+      "2025-Q2": -301000000.0,
+      "2026-Q1": 81715000000.0,
+      "2026-Q2": 180779000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 20313783926784,
+    "enterprise_value": 20781270564864,
+    "shares_outstanding": 3113807829181,
+    "free_float_pct": 40.03999998625219
+  },
+  "akumulasi": {
+    "score": 4.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.024,
+    "vol_trend": 0.873,
+    "price_chg_20d": -9.06
+  },
+  "neraca": {
+    "aset": 4178644.0,
+    "aset_lancar": 655449.0,
+    "kas": 60753.0,
+    "piutang_usaha": 10766.0,
+    "persediaan": 257820.0,
+    "aset_tetap": 834650.0,
+    "liabilitas": 970376.0,
+    "liabilitas_jangka_pendek": 484376.0,
+    "liabilitas_jangka_panjang": 486000.0,
+    "utang_usaha": 10766.0,
+    "utang_bank": 237484.0,
+    "ekuitas": 3208268.0,
+    "ekuitas_induk": 3208268.0,
+    "modal_saham": null,
+    "saldo_laba": 61100.0
+  },
+  "laba_rugi": {
+    "pendapatan": 528551.0,
+    "beban_pokok": 444254.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 270518.0,
+    "beban_pajak": -8024.0,
+    "laba_bersih": 262494.0,
+    "laba_induk": 262494.0,
+    "eps_basic": 0.0843,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 38886.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "AKSI",
+  "nama": "PT Mineral Sumberdaya Mandiri Tbk",
+  "sektor": "Industrials",
+  "industri": "Trucking",
+  "harga": 280.0,
+  "update": "2026-10-28 18:30",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.2632319052542298,
+    "ps": 5.371244659737074e-07,
+    "roe": -0.06648114382812313,
+    "eps": -26449229.843055554,
+    "de": 1.0246794056907889,
+    "margin_net": -0.06178530879856264,
+    "current_ratio": 2.230574336704759,
+    "roa": -0.032782557959003276,
+    "bv": 221.65367960972222
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.44466448302e+17,
+      "2025-Q2": 9.8915035389e+16,
+      "2025-Q3": 1.04697034347e+17,
+      "2026-Q1": 8.2272334104e+16,
+      "2026-Q2": 8.9447596043e+16
+    },
+    "eps": {
+      "2025-Q1": 13.21,
+      "2025-Q2": -2.71,
+      "2025-Q3": -9.0,
+      "2026-Q1": -4.38,
+      "2026-Q2": -10.36
+    },
+    "net_income": {
+      "2025-Q1": 9511306027000000.0,
+      "2025-Q2": -1954416513000000.0,
+      "2025-Q3": -6479260063000000.0,
+      "2026-Q1": -3155285104000000.0,
+      "2026-Q2": -7454483807000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 201600008192,
+    "enterprise_value": 264709799936,
+    "shares_outstanding": 720000000,
+    "free_float_pct": 7.542
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3916,
+    "vol_trend": 0.151,
+    "price_chg_20d": -16.67
+  },
+  "neraca": {
+    "aset": 323640666609.0,
+    "aset_lancar": 129042311040.0,
+    "kas": 53893956063.0,
+    "piutang_usaha": 50348035829.0,
+    "persediaan": null,
+    "aset_tetap": 155875082799.0,
+    "liabilitas": 163529251698.0,
+    "liabilitas_jangka_pendek": 57851607506.0,
+    "liabilitas_jangka_panjang": 105677644192.0,
+    "utang_usaha": 50348035829.0,
+    "utang_bank": 11559219999.0,
+    "ekuitas": 159590649319.0,
+    "ekuitas_induk": 159590649319.0,
+    "modal_saham": null,
+    "saldo_laba": 72760689363.0
+  },
+  "laba_rugi": {
+    "pendapatan": 171719930147.0,
+    "beban_pokok": 142962635686.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -11876355642.0,
+    "beban_pajak": 1247147015.0,
+    "laba_bersih": -10609768911.0,
+    "laba_induk": -10609768911.0,
+    "eps_basic": -14.74,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7164690.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "STRK",
+  "nama": "PT Lovina Beach Brewery Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Beverages - Brewers",
+  "harga": 121.0,
+  "update": "2026-10-28 18:18",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 11.59298054716373,
+    "ps": 6.608243801259403e-05,
+    "roe": -0.04075426846970173,
+    "eps": -1611115.9753486994,
+    "de": 0.12615745021431787,
+    "margin_net": -0.3383560105118639,
+    "current_ratio": 8.831721377924385,
+    "roa": -0.03617280528350342,
+    "bv": 10.437350386963526
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2783818922000000.0,
+      "2025-Q2": 1962244544000000.0,
+      "2025-Q3": 4190903074000000.0,
+      "2026-Q1": 8294172768000000.0,
+      "2026-Q2": 5184856362000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.43,
+      "2025-Q2": -0.62,
+      "2025-Q3": -0.56,
+      "2026-Q1": -0.11,
+      "2026-Q2": -0.32
+    },
+    "net_income": {
+      "2025-Q1": -4578499026000000.0,
+      "2025-Q2": -6640463537000000.0,
+      "2025-Q3": -6072946500000000.0,
+      "2026-Q1": -1225706471000000.0,
+      "2026-Q2": -3335004051000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1297342136320,
+    "enterprise_value": 1364710260736,
+    "shares_outstanding": 10721835562,
+    "free_float_pct": 38.13200000464622
+  },
+  "akumulasi": {
+    "score": 7.7,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.0788,
+    "vol_trend": 8.878,
+    "price_chg_20d": 157.45
+  },
+  "neraca": {
+    "aset": 126081195148.0,
+    "aset_lancar": 54499181101.0,
+    "kas": 32663965747.0,
+    "piutang_usaha": 6811475839.0,
+    "persediaan": 7093052290.0,
+    "aset_tetap": 45130670459.0,
+    "liabilitas": 14117971742.0,
+    "liabilitas_jangka_pendek": 6170844705.0,
+    "liabilitas_jangka_panjang": 7947127037.0,
+    "utang_usaha": 6811475839.0,
+    "utang_bank": null,
+    "ekuitas": 111907554552.0,
+    "ekuitas_induk": 111907554552.0,
+    "modal_saham": null,
+    "saldo_laba": -117523003210.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13479029130.0,
+    "beban_pokok": 7498909464.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4566809375.0,
+    "beban_pajak": null,
+    "laba_bersih": -4560710522.0,
+    "laba_induk": -4560710522.0,
+    "eps_basic": -0.43,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 77303293.0,
+    "dividen_dibayar": null
+  }
+}

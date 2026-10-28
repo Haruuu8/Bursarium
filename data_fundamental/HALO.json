@@ -1,0 +1,104 @@
+{
+  "kode": "HALO",
+  "nama": "PT Haloni Jane Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 57.0,
+  "update": "2026-10-28 18:14",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 16.86390532544379,
+    "pb": null,
+    "ps": 1.6003903561994728,
+    "roe": 0.07970404287685452,
+    "eps": null,
+    "de": 0.30451854958605745,
+    "margin_net": 0.12930141405424034,
+    "current_ratio": 5.597990316183458,
+    "roa": 0.061098435819211434,
+    "bv": 4.240688273770775e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5.1111075749e+16,
+      "2025-Q2": 4.9348181005e+16,
+      "2025-Q3": 5.7531744423e+16,
+      "2026-Q1": 4.1233332097e+16,
+      "2026-Q2": 5.3077106692e+16,
+      "2026-Q3": 6.439920466e+16
+    },
+    "eps": {
+      "2025-Q1": 0.96,
+      "2025-Q2": -0.31,
+      "2025-Q3": 0.75,
+      "2026-Q1": 0.1,
+      "2026-Q2": 1.44,
+      "2026-Q3": 1.84
+    },
+    "net_income": {
+      "2025-Q1": 5421756287000000.0,
+      "2025-Q2": -1768631072000000.0,
+      "2025-Q3": 4231865030000000.0,
+      "2026-Q1": 591005510000000.0,
+      "2026-Q2": 8769318482000000.0,
+      "2026-Q3": 1.116105733e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 346487554048,
+    "enterprise_value": 306764677120,
+    "shares_outstanding": 6071414592307692,
+    "free_float_pct": 12.41199999996644
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4269,
+    "vol_trend": 0.253,
+    "price_chg_20d": -8.06
+  },
+  "neraca": {
+    "aset": 335874086576.0,
+    "aset_lancar": 210709128606.0,
+    "kas": 58053484724.0,
+    "piutang_usaha": 10910180199.0,
+    "persediaan": 94334290473.0,
+    "aset_tetap": 116213069621.0,
+    "liabilitas": 78404319908.0,
+    "liabilitas_jangka_pendek": 37640138104.0,
+    "liabilitas_jangka_panjang": 40764181804.0,
+    "utang_usaha": 10910180199.0,
+    "utang_bank": null,
+    "ekuitas": 257469766668.0,
+    "ekuitas_induk": 257469766668.0,
+    "modal_saham": null,
+    "saldo_laba": -15145833785.0
+  },
+  "laba_rugi": {
+    "pendapatan": 158709643449.0,
+    "beban_pokok": 119225280364.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 27066998642.0,
+    "beban_pajak": -6545617320.0,
+    "laba_bersih": 20521381322.0,
+    "laba_induk": 20521381322.0,
+    "eps_basic": 3.38,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4047208506.0,
+    "dividen_dibayar": null
+  }
+}

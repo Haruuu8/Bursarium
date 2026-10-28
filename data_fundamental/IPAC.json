@@ -1,0 +1,104 @@
+{
+  "kode": "IPAC",
+  "nama": "PT Era Graharealty Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 189.0,
+  "update": "2026-10-28 18:06",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.995036781361338,
+    "ps": 3.0288326686158654e-06,
+    "roe": -0.017254395242700234,
+    "eps": 154350.53483719061,
+    "de": 0.4244039748126018,
+    "margin_net": -0.013917726918507489,
+    "current_ratio": 5.718544192320873,
+    "roa": -0.011168305241368815,
+    "bv": 37.83755921582829
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.4288728183e+16,
+      "2025-Q2": 1.1532218746e+16,
+      "2025-Q3": 1.4714844058e+16,
+      "2026-Q1": 1.2947707225e+16,
+      "2026-Q2": 1.4586105075e+16,
+      "2026-Q3": 1.7023401937e+16
+    },
+    "eps": {
+      "2025-Q1": -0.91,
+      "2025-Q2": -0.38,
+      "2025-Q3": 0.81,
+      "2026-Q1": -2.01,
+      "2026-Q2": 0.53,
+      "2026-Q3": 0.83
+    },
+    "net_income": {
+      "2025-Q1": -863757683000000.0,
+      "2025-Q2": -360339527000000.0,
+      "2025-Q3": 766747851000000.0,
+      "2026-Q1": -1443030080000000.0,
+      "2026-Q2": 34565577000000.0,
+      "2026-Q3": 788329363000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 179525140480,
+    "enterprise_value": 160109182976,
+    "shares_outstanding": 949868500,
+    "free_float_pct": 9.40199996104724
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 0.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 55526342323.0,
+    "aset_lancar": 30776817812.0,
+    "kas": 24077468364.0,
+    "piutang_usaha": 3813637895.0,
+    "persediaan": null,
+    "aset_tetap": 3470020259.0,
+    "liabilitas": 15253378321.0,
+    "liabilitas_jangka_pendek": 5381932320.0,
+    "liabilitas_jangka_panjang": 9871446001.0,
+    "utang_usaha": 3813637895.0,
+    "utang_bank": null,
+    "ekuitas": 35940705616.0,
+    "ekuitas_induk": 35940705616.0,
+    "modal_saham": null,
+    "saldo_laba": 3883468969.0
+  },
+  "laba_rugi": {
+    "pendapatan": 44557214237.0,
+    "beban_pokok": 22055682865.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -192603832.0,
+    "beban_pajak": -149854334.0,
+    "laba_bersih": -620135140.0,
+    "laba_induk": -620135140.0,
+    "eps_basic": -0.65,
+    "eps_diluted": -0.65
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 226129212.0,
+    "dividen_dibayar": 171500000.0
+  }
+}

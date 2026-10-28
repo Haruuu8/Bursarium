@@ -1,0 +1,101 @@
+{
+  "kode": "BCIP",
+  "nama": "PT Bumi Citra Permai Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 54.0,
+  "update": "2026-10-28 18:34",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 7.077326343381389,
+    "pb": null,
+    "ps": 0.5685488236305418,
+    "roe": 0.021511309908677712,
+    "eps": null,
+    "de": 0.7563473362040425,
+    "margin_net": 0.16175364887926919,
+    "current_ratio": 2.26365816313591,
+    "roa": 0.012002700135432087,
+    "bv": 0.0003546971352461451
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.4023716637e+16,
+      "2025-Q2": 3.1936951853e+16,
+      "2025-Q3": 3.646119622e+16,
+      "2026-Q1": 4.981141917e+16,
+      "2026-Q2": 1.7674446649e+16
+    },
+    "eps": {
+      "2025-Q1": 2.99,
+      "2025-Q2": 2.96,
+      "2025-Q3": 8.39,
+      "2026-Q1": 9.78,
+      "2026-Q2": -2.15
+    },
+    "net_income": {
+      "2025-Q1": 4279496146000000.0,
+      "2025-Q2": 4233811657000000.0,
+      "2025-Q3": 1.199089917e+16,
+      "2026-Q1": 1.3982826391e+16,
+      "2026-Q2": -3066741347000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 77215440896,
+    "enterprise_value": 101453971456,
+    "shares_outstanding": 1430679560157274,
+    "free_float_pct": 57.51399999660819
+  },
+  "akumulasi": {
+    "score": 5.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0573,
+    "vol_trend": 0.55,
+    "price_chg_20d": 3.85
+  },
+  "neraca": {
+    "aset": 909469112852.0,
+    "aset_lancar": 305870346312.0,
+    "kas": 8532490733.0,
+    "piutang_usaha": 7874572386.0,
+    "persediaan": 215732676405.0,
+    "aset_tetap": 25968576158.0,
+    "liabilitas": 383814462246.0,
+    "liabilitas_jangka_pendek": 135122144895.0,
+    "liabilitas_jangka_panjang": 248692317351.0,
+    "utang_usaha": 7874572386.0,
+    "utang_bank": 9125000000.0,
+    "ekuitas": 507457941443.0,
+    "ekuitas_induk": 507457941443.0,
+    "modal_saham": null,
+    "saldo_laba": 80000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 67485865819.0,
+    "beban_pokok": 37509109042.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 14708661420.0,
+    "beban_pajak": -2633775559.0,
+    "laba_bersih": 10916085044.0,
+    "laba_induk": 10916085044.0,
+    "eps_basic": 7.63,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 117944031.0,
+    "dividen_dibayar": null
+  }
+}

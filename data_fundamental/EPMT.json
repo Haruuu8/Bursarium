@@ -1,0 +1,101 @@
+{
+  "kode": "EPMT",
+  "nama": "PT Enseval Putera Megatrading Tbk.",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 2440.0,
+  "update": "2026-10-28 18:45",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 15.25,
+    "pb": null,
+    "ps": 192456.70626119277,
+    "roe": 0.052574731602989866,
+    "eps": null,
+    "de": 0.7225992019457541,
+    "margin_net": 0.023758793850012252,
+    "current_ratio": 2.1182739433971323,
+    "roa": 0.030421972100485646,
+    "bv": 0.003043287052955701
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8307891681470.0,
+      "2025-Q2": 7748876298644.0,
+      "2025-Q3": 8377960516072.0,
+      "2026-Q1": 9057132801049.0,
+      "2026-Q2": 9214551912263.0
+    },
+    "eps": {
+      "2025-Q1": 104.0,
+      "2025-Q2": 41.0,
+      "2025-Q3": 78.0,
+      "2026-Q1": 99.0,
+      "2026-Q2": 61.0
+    },
+    "net_income": {
+      "2025-Q1": 2.8098546116e+17,
+      "2025-Q2": 1.12262220021e+17,
+      "2025-Q3": 2.10624004217e+17,
+      "2026-Q1": 2.67587095367e+17,
+      "2026-Q2": 1.66526095029e+17
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 6609081729024,
+    "enterprise_value": 6340307582976,
+    "shares_outstanding": 2713207439975000,
+    "free_float_pct": 7.7790000147675595
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3747,
+    "vol_trend": 0.463,
+    "price_chg_20d": -7.22
+  },
+  "neraca": {
+    "aset": 14269725478746.0,
+    "aset_lancar": 12329513610735.0,
+    "kas": 442588599550.0,
+    "piutang_usaha": 5383282976446.0,
+    "persediaan": 5131965328616.0,
+    "aset_tetap": 1531033866270.0,
+    "liabilitas": 5966551523326.0,
+    "liabilitas_jangka_pendek": 5820547266404.0,
+    "liabilitas_jangka_panjang": 146004256922.0,
+    "utang_usaha": 5383282976446.0,
+    "utang_bank": 350000000000.0,
+    "ekuitas": 8257069074059.0,
+    "ekuitas_induk": 8257069074059.0,
+    "modal_saham": null,
+    "saldo_laba": 99427016423.0
+  },
+  "laba_rugi": {
+    "pendapatan": 18271684713312.0,
+    "beban_pokok": 16431766352253.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 564582217404.0,
+    "beban_pajak": 1658243191.0,
+    "laba_bersih": 434113190396.0,
+    "laba_induk": 434113190396.0,
+    "eps_basic": 160.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2595755918.0,
+    "dividen_dibayar": 1294755420.0
+  }
+}

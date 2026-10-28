@@ -1,0 +1,101 @@
+{
+  "kode": "BUAH",
+  "nama": "PT Segar Kumala Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Food Distribution",
+  "harga": 470.0,
+  "update": "2026-10-28 18:06",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 43.11926605504587,
+    "pb": null,
+    "ps": -1.262453506344851,
+    "roe": 0.11129346548076322,
+    "eps": null,
+    "de": 1.802530440209676,
+    "margin_net": 0.011964193396773251,
+    "current_ratio": 1.4017764670104913,
+    "roa": 0.03971177757214177,
+    "bv": 9.793926312667514e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7.44561167196e+17,
+      "2025-Q2": -7.4455973068257e+17,
+      "2025-Q3": 951394698269.0,
+      "2026-Q1": 8.70031856816e+17,
+      "2026-Q2": -8.700300347733679e+17
+    },
+    "eps": {
+      "2025-Q1": 3.71,
+      "2025-Q2": 17.95,
+      "2025-Q3": 27.69,
+      "2026-Q1": 5.81,
+      "2026-Q2": 5.09
+    },
+    "net_income": {
+      "2025-Q1": 3707382637000000.0,
+      "2025-Q2": 1.7954656005e+16,
+      "2025-Q3": 2.7689949421e+16,
+      "2026-Q1": 1.162084005e+16,
+      "2026-Q2": 1.0178430377e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 940000018432,
+    "enterprise_value": 816167190528,
+    "shares_outstanding": 1999933066697247,
+    "free_float_pct": 10.502
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.3663,
+    "vol_trend": 1.444,
+    "price_chg_20d": -2.89
+  },
+  "neraca": {
+    "aset": 548937160705.0,
+    "aset_lancar": 476698195203.0,
+    "kas": 125599964709.0,
+    "piutang_usaha": 146225674465.0,
+    "persediaan": 153198601685.0,
+    "aset_tetap": 51078947495.0,
+    "liabilitas": 353065189850.0,
+    "liabilitas_jangka_pendek": 340067197889.0,
+    "liabilitas_jangka_panjang": 12997991961.0,
+    "utang_usaha": 146225674465.0,
+    "utang_bank": null,
+    "ekuitas": 195871970855.0,
+    "ekuitas_induk": 195871970855.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1822042632049.0,
+    "beban_pokok": 1704097782764.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 28640694247.0,
+    "beban_pajak": -6841423820.0,
+    "laba_bersih": 21799270427.0,
+    "laba_induk": 21799270427.0,
+    "eps_basic": 10.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11219371078.0,
+    "dividen_dibayar": 25000000000.0
+  }
+}

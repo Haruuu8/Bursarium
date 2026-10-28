@@ -1,0 +1,98 @@
+{
+  "kode": "TOWR",
+  "nama": "PT Sarana Menara Nusantara Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 392.0,
+  "update": "2026-10-28 19:25",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 6.125,
+    "pb": 0.7970679495294627,
+    "ps": 1.5782374998057058,
+    "roe": 0.06506677139016022,
+    "eps": null,
+    "de": 1.84878201114666,
+    "margin_net": 0.2576714285397071,
+    "current_ratio": 0.20405436772131783,
+    "roa": 0.022685887233996904,
+    "bv": 491.80248714229623
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 3292471000000.0,
+      "2026-Q1": 3555778000000.0,
+      "2026-Q2": 3649790000000.0
+    },
+    "eps": {
+      "2025-Q3": 16.0,
+      "2026-Q1": 16.0,
+      "2026-Q2": 16.0
+    },
+    "net_income": {
+      "2025-Q3": 903188000000.0,
+      "2026-Q1": 940739000000.0,
+      "2026-Q2": 915930000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 22818941042688,
+    "enterprise_value": 68367901786112,
+    "shares_outstanding": 58020906250,
+    "free_float_pct": 23.34009719922718
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1371,
+    "vol_trend": 1.627,
+    "price_chg_20d": -2.0
+  },
+  "neraca": {
+    "aset": 81842468.0,
+    "aset_lancar": 6456210.0,
+    "kas": 941560.0,
+    "piutang_usaha": 3154823.0,
+    "persediaan": 432049.0,
+    "aset_tetap": 49730125.0,
+    "liabilitas": 52754673.0,
+    "liabilitas_jangka_pendek": 31639656.0,
+    "liabilitas_jangka_panjang": 21115017.0,
+    "utang_usaha": 3154823.0,
+    "utang_bank": 25020215.0,
+    "ekuitas": 28534826.0,
+    "ekuitas_induk": 28534826.0,
+    "modal_saham": null,
+    "saldo_laba": 13080.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7205568.0,
+    "beban_pokok": 2584770.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2412348.0,
+    "beban_pajak": -492492.0,
+    "laba_bersih": 1856669.0,
+    "laba_induk": 1856669.0,
+    "eps_basic": 32.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1947779.0,
+    "dividen_dibayar": 402745.0
+  }
+}

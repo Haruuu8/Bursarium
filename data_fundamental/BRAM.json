@@ -1,0 +1,101 @@
+{
+  "kode": "BRAM",
+  "nama": "PT Indo Kordsa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 4420.0,
+  "update": "2026-10-28 18:38",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 14745.644496848316,
+    "roe": 0.037430437022069836,
+    "eps": null,
+    "de": 0.27368878930771456,
+    "margin_net": 0.09625408543457238,
+    "current_ratio": 2.3125794835326725,
+    "roa": 0.028274384580899158,
+    "bv": 0.4745062880704572
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 42147525000000.0,
+      "2025-Q2": 19648432000000.0,
+      "2025-Q3": 32210609000000.0,
+      "2026-Q1": 37146621000000.0,
+      "2026-Q2": 45898706000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": -0.01,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.01
+    },
+    "net_income": {
+      "2025-Q1": 2522964000000.0,
+      "2025-Q2": -2799283000000.0,
+      "2025-Q3": -1053634000000.0,
+      "2026-Q1": 5710736000000.0,
+      "2026-Q2": 2282716000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1989251956736,
+    "enterprise_value": 1939734396928,
+    "shares_outstanding": 450056980000000,
+    "free_float_pct": 6.33300010145382
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.7169,
+    "vol_trend": 3.221,
+    "price_chg_20d": -2.64
+  },
+  "neraca": {
+    "aset": 282710026.0,
+    "aset_lancar": 107162623.0,
+    "kas": 24367846.0,
+    "piutang_usaha": 27402313.0,
+    "persediaan": 35567893.0,
+    "aset_tetap": 117990858.0,
+    "liabilitas": 58447573.0,
+    "liabilitas_jangka_pendek": 46339001.0,
+    "liabilitas_jangka_panjang": 12108572.0,
+    "utang_usaha": 27402313.0,
+    "utang_bank": 4031722.0,
+    "ekuitas": 213554867.0,
+    "ekuitas_induk": 213554867.0,
+    "modal_saham": null,
+    "saldo_laba": 1262643.0
+  },
+  "laba_rugi": {
+    "pendapatan": 83045327.0,
+    "beban_pokok": 69341328.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 12046123.0,
+    "beban_pajak": -2907133.0,
+    "laba_bersih": 7993452.0,
+    "laba_induk": 7993452.0,
+    "eps_basic": 0.017760977732197376,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3299024.0,
+    "dividen_dibayar": 5105465.0
+  }
+}

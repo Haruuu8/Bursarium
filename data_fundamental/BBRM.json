@@ -1,0 +1,101 @@
+{
+  "kode": "BBRM",
+  "nama": "PT Pelayaran Nasional Bina Buana Raya Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 93.0,
+  "update": "2026-10-28 18:34",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 58143.1400927946,
+    "roe": 0.06365204984059698,
+    "eps": null,
+    "de": 0.1660375219466014,
+    "margin_net": 0.4528374425835024,
+    "current_ratio": 10.27684710322058,
+    "roa": 0.05458833754709303,
+    "bv": 0.005577196663564206
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3232936000000.0,
+      "2025-Q2": 3649992000000.0,
+      "2025-Q3": 3263707000000.0,
+      "2026-Q1": 3071360000000.0,
+      "2026-Q2": 3574378000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 1233896000000.0,
+      "2025-Q2": 1488975000000.0,
+      "2025-Q3": 1459744000000.0,
+      "2026-Q1": 1237555000000.0,
+      "2026-Q2": 1771884000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 788592590848,
+    "enterprise_value": 788586102784,
+    "shares_outstanding": 8477292957746479,
+    "free_float_pct": 7.294000005609772
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3095,
+    "vol_trend": 0.206,
+    "price_chg_20d": -16.22
+  },
+  "neraca": {
+    "aset": 55129706.0,
+    "aset_lancar": 22635619.0,
+    "kas": 13638932.0,
+    "piutang_usaha": 2957747.0,
+    "persediaan": 107661.0,
+    "aset_tetap": 32465148.0,
+    "liabilitas": 7850176.0,
+    "liabilitas_jangka_pendek": 2202584.0,
+    "liabilitas_jangka_panjang": 5647592.0,
+    "utang_usaha": 2957747.0,
+    "utang_bank": 1459840.0,
+    "ekuitas": 47279530.0,
+    "ekuitas_induk": 47279530.0,
+    "modal_saham": null,
+    "saldo_laba": 30000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6645738.0,
+    "beban_pokok": 3259413.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3091341.0,
+    "beban_pajak": -81902.0,
+    "laba_bersih": 3009439.0,
+    "laba_induk": 3009439.0,
+    "eps_basic": 0.000355,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1231492.0,
+    "dividen_dibayar": null
+  }
+}

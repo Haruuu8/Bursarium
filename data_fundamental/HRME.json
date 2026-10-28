@@ -1,0 +1,101 @@
+{
+  "kode": "HRME",
+  "nama": "PT Menteng Heritage Realty Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 33.0,
+  "update": "2026-10-28 20:28",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.37218521215891004,
+    "ps": 2.153018222647636e-06,
+    "roe": -0.024645722189392472,
+    "eps": -3146664.340172016,
+    "de": 0.5527993269282933,
+    "margin_net": -0.2966561156074143,
+    "current_ratio": 0.3470473196328993,
+    "roa": -0.015871776277336398,
+    "bv": 88.665532433648
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.6715187677e+16,
+      "2025-Q2": 2.3606713446e+16,
+      "2025-Q3": 2.3831656553e+16,
+      "2026-Q1": 2.3906639069e+16,
+      "2026-Q2": 1.9986661018e+16
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": -0.43,
+      "2025-Q3": -0.53,
+      "2026-Q1": 0.1,
+      "2026-Q2": -2.29
+    },
+    "net_income": {
+      "2025-Q1": 27393104000000.0,
+      "2025-Q2": -2576059395000000.0,
+      "2025-Q3": -3152910837000000.0,
+      "2026-Q1": 572085459000000.0,
+      "2026-Q2": -1.3593301364e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 196638752768,
+    "enterprise_value": 356823400448,
+    "shares_outstanding": 5958750000,
+    "free_float_pct": 14.605000008391023
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3148,
+    "vol_trend": 1.055,
+    "price_chg_20d": -10.81
+  },
+  "neraca": {
+    "aset": 820400670818.0,
+    "aset_lancar": 90412824976.0,
+    "kas": 56955634331.0,
+    "piutang_usaha": 2888024305.0,
+    "persediaan": 601958684.0,
+    "aset_tetap": 538911438020.0,
+    "liabilitas": 292063642232.0,
+    "liabilitas_jangka_pendek": 260520165007.0,
+    "liabilitas_jangka_panjang": 31543477225.0,
+    "utang_usaha": 2888024305.0,
+    "utang_bank": 197750120168.0,
+    "ekuitas": 528335741389.0,
+    "ekuitas_induk": 528335741389.0,
+    "modal_saham": null,
+    "saldo_laba": -411362191678.0
+  },
+  "laba_rugi": {
+    "pendapatan": 43893300087.0,
+    "beban_pokok": 24745729694.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -12519979255.0,
+    "beban_pajak": -501674718.0,
+    "laba_bersih": -13021215905.0,
+    "laba_induk": -13021215905.0,
+    "eps_basic": -2.19,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 540595200.0,
+    "dividen_dibayar": null
+  }
+}

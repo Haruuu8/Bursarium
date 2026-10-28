@@ -1,0 +1,101 @@
+{
+  "kode": "BDMN",
+  "nama": "PT Bank Danamon Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 4920.0,
+  "update": "2026-10-28 18:33",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 20.146595143524017,
+    "pb": 0.8852314924168817,
+    "ps": 1.8219781723348005,
+    "roe": 0.043939508692591535,
+    "eps": null,
+    "de": 4.416412390149433,
+    "margin_net": 0.16311015509047502,
+    "current_ratio": null,
+    "roa": 0.007921472310671201,
+    "bv": 5557.868243669563
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5745969000000.0,
+      "2025-Q2": 5831860000000.0,
+      "2025-Q3": 5927076000000.0,
+      "2026-Q1": 6794839000000.0,
+      "2026-Q2": 7838039000000.0
+    },
+    "eps": {
+      "2025-Q1": 77.41,
+      "2025-Q2": -77.41,
+      "2025-Q3": 0.0,
+      "2026-Q1": 115.62,
+      "2026-Q2": 128.59
+    },
+    "net_income": {
+      "2025-Q1": 756602000000.0,
+      "2025-Q2": 876783000000.0,
+      "2025-Q3": 1198124000000.0,
+      "2026-Q1": 1130035000000.0,
+      "2026-Q2": 1256736000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 48085879226368,
+    "enterprise_value": 77304185225216,
+    "shares_outstanding": 9773436796,
+    "free_float_pct": 3160.2608660714286
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3421,
+    "vol_trend": 2.53,
+    "price_chg_20d": 10.56
+  },
+  "neraca": {
+    "aset": 301303963.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": 37465024.0,
+    "persediaan": null,
+    "aset_tetap": 2582884.0,
+    "liabilitas": 239897198.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 54319474.0,
+    "ekuitas_induk": 54319474.0,
+    "modal_saham": null,
+    "saldo_laba": 40296500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14632878.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 3418220.0,
+    "laba_sebelum_pajak": 3392996.0,
+    "beban_pajak": -722873.0,
+    "laba_bersih": 2386771.0,
+    "laba_induk": 2386771.0,
+    "eps_basic": 244.21,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 12342920000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 1582033.0
+  }
+}

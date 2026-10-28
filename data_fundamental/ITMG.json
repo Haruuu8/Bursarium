@@ -1,0 +1,101 @@
+{
+  "kode": "ITMG",
+  "nama": "PT Indo Tambangraya Megah Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 24975.0,
+  "update": "2026-10-28 18:54",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 14027.72718818604,
+    "roe": 0.05577524048264384,
+    "eps": null,
+    "de": 0.2663728413653826,
+    "margin_net": 0.10594598052356292,
+    "current_ratio": 3.4583118415876206,
+    "roa": 0.04386034602328118,
+    "bv": 1.7929102435895017
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 482516000000.0,
+      "2025-Q2": 436900000000.0,
+      "2025-Q3": 449800000000.0,
+      "2026-Q1": 497577000000.0,
+      "2026-Q2": 502914000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.06,
+      "2025-Q2": 0.02,
+      "2025-Q3": 0.04,
+      "2026-Q1": 0.05,
+      "2026-Q2": 0.05
+    },
+    "net_income": {
+      "2025-Q1": 64967000000.0,
+      "2025-Q2": 26011000000.0,
+      "2025-Q3": 39608000000.0,
+      "2026-Q1": 54674000000.0,
+      "2026-Q2": 51324000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 27844604329984,
+    "enterprise_value": 27180868304896,
+    "shares_outstanding": 1059980000000,
+    "free_float_pct": 32.76156981380647
+  },
+  "akumulasi": {
+    "score": 2.2,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1217,
+    "vol_trend": 1.644,
+    "price_chg_20d": -0.89
+  },
+  "neraca": {
+    "aset": 2416716.0,
+    "aset_lancar": 1186737.0,
+    "kas": 737575.0,
+    "piutang_usaha": 152680.0,
+    "persediaan": 110526.0,
+    "aset_tetap": 208187.0,
+    "liabilitas": 506228.0,
+    "liabilitas_jangka_pendek": 343155.0,
+    "liabilitas_jangka_panjang": 163073.0,
+    "utang_usaha": 152680.0,
+    "utang_bank": 3926.0,
+    "ekuitas": 1900449.0,
+    "ekuitas_induk": 1900449.0,
+    "modal_saham": null,
+    "saldo_laba": 13000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1000491.0,
+    "beban_pokok": 744014.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 158711.0,
+    "beban_pajak": -49197.0,
+    "laba_bersih": 105998.0,
+    "laba_induk": 105998.0,
+    "eps_basic": 0.1,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 27048.0,
+    "dividen_dibayar": 67939.0
+  }
+}

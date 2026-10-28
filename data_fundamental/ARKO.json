@@ -1,0 +1,101 @@
+{
+  "kode": "ARKO",
+  "nama": "PT Arkora Hydro Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Renewable",
+  "harga": 1365.0,
+  "update": "2026-10-28 18:06",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 105.0,
+    "pb": null,
+    "ps": 12.437546957267683,
+    "roe": 0.0664241404582401,
+    "eps": null,
+    "de": 2.1557006795803275,
+    "margin_net": 0.2755188853995629,
+    "current_ratio": 0.584558752195592,
+    "roa": 0.021035331407224144,
+    "bv": 0.0001957119792641188
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7.1066059655e+16,
+      "2025-Q2": 7.1468747991e+16,
+      "2025-Q3": 1.04900594029e+17,
+      "2026-Q1": 6.8055651617e+16,
+      "2026-Q2": 6.4954928336e+16
+    },
+    "eps": {
+      "2025-Q1": 7.0,
+      "2025-Q2": 6.0,
+      "2025-Q3": 3.0,
+      "2026-Q1": 6.0,
+      "2026-Q2": 7.0
+    },
+    "net_income": {
+      "2025-Q1": 2.1097466176e+16,
+      "2025-Q2": 1.5779900118e+16,
+      "2025-Q3": 1.0800541758e+16,
+      "2026-Q1": 1.7263806891e+16,
+      "2026-Q2": 1.9383119844e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 3997395845120,
+    "enterprise_value": 4992712835072,
+    "shares_outstanding": 2818994364230769,
+    "free_float_pct": 29.74700001195153
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.546,
+    "vol_trend": 1.974,
+    "price_chg_20d": -58.89
+  },
+  "neraca": {
+    "aset": 1742160654641.0,
+    "aset_lancar": 243666182826.0,
+    "kas": 67227112073.0,
+    "piutang_usaha": 29511718303.0,
+    "persediaan": null,
+    "aset_tetap": 200520513470.0,
+    "liabilitas": 1189323705541.0,
+    "liabilitas_jangka_pendek": 416837797588.0,
+    "liabilitas_jangka_panjang": 772485907953.0,
+    "utang_usaha": 29511718303.0,
+    "utang_bank": 1614285720.0,
+    "ekuitas": 551710966558.0,
+    "ekuitas_induk": 551710966558.0,
+    "modal_saham": null,
+    "saldo_laba": 6000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 133010579953.0,
+    "beban_pokok": 82200211615.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 41569455123.0,
+    "beban_pajak": -4932664690.0,
+    "laba_bersih": 36646926735.0,
+    "laba_induk": 36646926735.0,
+    "eps_basic": 13.0,
+    "eps_diluted": 13.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 529892904.0,
+    "dividen_dibayar": null
+  }
+}

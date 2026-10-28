@@ -1,0 +1,101 @@
+{
+  "kode": "TMAS",
+  "nama": "PT Temas Tbk.",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 110.0,
+  "update": "2026-10-28 19:28",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1255160.6560738888,
+    "roe": 0.136308521304496,
+    "eps": null,
+    "de": 0.8169429641080856,
+    "margin_net": 0.1646208298817682,
+    "current_ratio": 1.1679367927226512,
+    "roa": 0.07363357370260956,
+    "bv": 5.869038797749857e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1039588000000.0,
+      "2025-Q2": 1034613000000.0,
+      "2025-Q3": 1120350000000.0,
+      "2026-Q1": 1139380000000.0,
+      "2026-Q2": 1542978000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 135876000000.0,
+      "2025-Q2": 150343000000.0,
+      "2025-Q3": 79250000000.0,
+      "2026-Q1": 156763000000.0,
+      "2026-Q2": 284809000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 6255574253568,
+    "enterprise_value": 7926567141376,
+    "shares_outstanding": 55196500000000000,
+    "free_float_pct": 15.482999999155952
+  },
+  "akumulasi": {
+    "score": 4.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0158,
+    "vol_trend": 0.621,
+    "price_chg_20d": -7.56
+  },
+  "neraca": {
+    "aset": 5996884.0,
+    "aset_lancar": 1196480.0,
+    "kas": 381401.0,
+    "piutang_usaha": 453692.0,
+    "persediaan": 234317.0,
+    "aset_tetap": 3664456.0,
+    "liabilitas": 2646490.0,
+    "liabilitas_jangka_pendek": 1024439.0,
+    "liabilitas_jangka_panjang": 1622051.0,
+    "utang_usaha": 453692.0,
+    "utang_bank": 14194.0,
+    "ekuitas": 3239504.0,
+    "ekuitas_induk": 3239504.0,
+    "modal_saham": null,
+    "saldo_laba": 34823.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2682358.0,
+    "beban_pokok": 2053700.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 499082.0,
+    "beban_pajak": -43240.0,
+    "laba_bersih": 441572.0,
+    "laba_induk": 441572.0,
+    "eps_basic": 8e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 517663.0,
+    "dividen_dibayar": 44100.0
+  }
+}

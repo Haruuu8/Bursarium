@@ -1,0 +1,101 @@
+{
+  "kode": "PWON",
+  "nama": "PT Pakuwon Jati Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Diversified",
+  "harga": 290.0,
+  "update": "2026-10-28 19:08",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2013.4751698401892,
+    "roe": 0.04404983990595849,
+    "eps": null,
+    "de": 0.47272856763831606,
+    "margin_net": 0.29825342341383243,
+    "current_ratio": 3.0247291505462552,
+    "roa": 0.02669454803146217,
+    "bv": 4.743373845835572e-07
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1555182988000000.0,
+      "2025-Q2": 1818299860000000.0,
+      "2025-Q3": 1744231638000000.0,
+      "2026-Q1": 1645854130000000.0,
+      "2026-Q2": 1728022084000000.0
+    },
+    "eps": {
+      "2025-Q1": 6.26,
+      "2025-Q2": 17.33,
+      "2025-Q3": 12.26,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.01
+    },
+    "net_income": {
+      "2025-Q1": 301590018000000.0,
+      "2025-Q2": 834431169000000.0,
+      "2025-Q3": 590504693000000.0,
+      "2026-Q1": 389992883000000.0,
+      "2026-Q2": 616277248000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 13966284685312,
+    "enterprise_value": 18929158193152,
+    "shares_outstanding": 48159602399999992,
+    "free_float_pct": 30.403000000681068
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4088,
+    "vol_trend": 2.343,
+    "price_chg_20d": 12.4
+  },
+  "neraca": {
+    "aset": 37695717111.0,
+    "aset_lancar": 11382688219.0,
+    "kas": 4461085075.0,
+    "piutang_usaha": 112717843.0,
+    "persediaan": 64842180.0,
+    "aset_tetap": 2950598808.0,
+    "liabilitas": 10798964053.0,
+    "liabilitas_jangka_pendek": 3763209085.0,
+    "liabilitas_jangka_panjang": 7035754968.0,
+    "utang_usaha": 112717843.0,
+    "utang_bank": null,
+    "ekuitas": 22843899845.0,
+    "ekuitas_induk": 22843899845.0,
+    "modal_saham": null,
+    "saldo_laba": 15000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3373876214.0,
+    "beban_pokok": 1453536007.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1258078624.0,
+    "beban_pajak": 220545707.0,
+    "laba_bersih": 1006270131.0,
+    "laba_induk": 1006270131.0,
+    "eps_basic": 0.020894485852316756,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 124087547.0,
+    "dividen_dibayar": 350325420.0
+  }
+}

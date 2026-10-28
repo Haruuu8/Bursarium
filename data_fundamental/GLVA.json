@@ -1,0 +1,101 @@
+{
+  "kode": "GLVA",
+  "nama": "PT Galva Technologies Tbk",
+  "sektor": "Technology",
+  "industri": "Electronics & Computer Distribution",
+  "harga": 314.0,
+  "update": "2026-10-28 20:38",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 27723.24686204623,
+    "roe": 0.03733893653014562,
+    "eps": null,
+    "de": 1.274674460440423,
+    "margin_net": 0.019893945710489712,
+    "current_ratio": 1.7380235039827705,
+    "roa": 0.015854861464033643,
+    "bv": 0.00273441103277191
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 384238000000.0,
+      "2025-Q2": 418998000000.0,
+      "2025-Q3": 510287000000.0,
+      "2026-Q1": 371511000000.0,
+      "2026-Q2": 398472000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 11540000000.0,
+      "2025-Q2": 2953000000.0,
+      "2025-Q3": 9863000000.0,
+      "2026-Q1": 6319000000.0,
+      "2026-Q2": 8999000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 470999990272,
+    "enterprise_value": 672864993280,
+    "shares_outstanding": 150029382957884,
+    "free_float_pct": 40.211999999999996
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.003,
+    "vol_trend": 0.886,
+    "price_chg_20d": -1.88
+  },
+  "neraca": {
+    "aset": 966139.0,
+    "aset_lancar": 894154.0,
+    "kas": 89177.0,
+    "piutang_usaha": 250829.0,
+    "persediaan": 486471.0,
+    "aset_tetap": 49362.0,
+    "liabilitas": 522925.0,
+    "liabilitas_jangka_pendek": 514466.0,
+    "liabilitas_jangka_panjang": 8459.0,
+    "utang_usaha": 250829.0,
+    "utang_bank": 265639.0,
+    "ekuitas": 410242.0,
+    "ekuitas_induk": 410242.0,
+    "modal_saham": null,
+    "saldo_laba": 15000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 769983.0,
+    "beban_pokok": 659824.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 19741.0,
+    "beban_pajak": -3752.0,
+    "laba_bersih": 15318.0,
+    "laba_induk": 15318.0,
+    "eps_basic": 0.0001021,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10878.0,
+    "dividen_dibayar": null
+  }
+}

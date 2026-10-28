@@ -1,0 +1,101 @@
+{
+  "kode": "JSPT",
+  "nama": "PT Jakarta Setiabudi Internasional Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 1255.0,
+  "update": "2026-10-28 18:54",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1095.1495979723259,
+    "roe": 0.10492058633676578,
+    "eps": null,
+    "de": 1.2651791657008762,
+    "margin_net": 0.20082783998169498,
+    "current_ratio": 1.8231013410478831,
+    "roa": 0.04099031623399874,
+    "bv": 1.1437221634926202e-06
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 523690609000000.0,
+      "2025-Q2": 598411606000000.0,
+      "2025-Q3": 673596409000000.0,
+      "2026-Q1": 679646326000000.0,
+      "2026-Q2": 706221022000000.0
+    },
+    "eps": {
+      "2025-Q1": 20.0,
+      "2025-Q2": 34.0,
+      "2025-Q3": 46.0,
+      "2026-Q1": 55.0,
+      "2026-Q2": -54.88
+    },
+    "net_income": {
+      "2025-Q1": 46684755000000.0,
+      "2025-Q2": 77491548000000.0,
+      "2025-Q3": 107004241000000.0,
+      "2026-Q1": 127942098000000.0,
+      "2026-Q2": 150378648000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 2910013620224,
+    "enterprise_value": 4180572897280,
+    "shares_outstanding": 2319339550000000,
+    "free_float_pct": 18.441000010350468
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3802,
+    "vol_trend": 1.085,
+    "price_chg_20d": -8.39
+  },
+  "neraca": {
+    "aset": 6789914584.0,
+    "aset_lancar": 2426879549.0,
+    "kas": 2011367950.0,
+    "piutang_usaha": 85266834.0,
+    "persediaan": 10874514.0,
+    "aset_tetap": 1469210987.0,
+    "liabilitas": 3356115530.0,
+    "liabilitas_jangka_pendek": 1331181923.0,
+    "liabilitas_jangka_panjang": 2024933607.0,
+    "utang_usaha": 85266834.0,
+    "utang_bank": 69242428.0,
+    "ekuitas": 2652680048.0,
+    "ekuitas_induk": 2652680048.0,
+    "modal_saham": null,
+    "saldo_laba": 14600000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1385867348.0,
+    "beban_pokok": 395549034.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 421873920.0,
+    "beban_pajak": -63879386.0,
+    "laba_bersih": 278320746.0,
+    "laba_induk": 278320746.0,
+    "eps_basic": 0.12,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32782002.0,
+    "dividen_dibayar": 5411000.0
+  }
+}

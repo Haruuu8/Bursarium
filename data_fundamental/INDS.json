@@ -1,0 +1,101 @@
+{
+  "kode": "INDS",
+  "nama": "PT Indospring Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 230.0,
+  "update": "2026-10-28 18:52",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 71.875,
+    "pb": null,
+    "ps": -1.949199642125329,
+    "roe": 0.0061343386527224885,
+    "eps": null,
+    "de": 0.2929016521011554,
+    "margin_net": 0.011478752370394255,
+    "current_ratio": 2.6759238821233597,
+    "roa": 0.004538450179123641,
+    "bv": 0.0005216536257873217
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7.74238447711e+17,
+      "2025-Q2": -7.742368917376376e+17,
+      "2025-Q3": 904864216329.0,
+      "2026-Q1": 8.49149310197e+17,
+      "2026-Q2": -8.49147481018425e+17
+    },
+    "eps": {
+      "2025-Q1": 3.08,
+      "2025-Q2": 2.14,
+      "2025-Q3": 2.76,
+      "2026-Q1": -0.29,
+      "2026-Q2": 3.49
+    },
+    "net_income": {
+      "2025-Q1": 2.0238949494e+16,
+      "2025-Q2": 1.4030375524e+16,
+      "2025-Q3": 1.8117999665e+16,
+      "2026-Q1": -1905070668000000.0,
+      "2026-Q2": 2.2901758572e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1509374296064,
+    "enterprise_value": 1917172580352,
+    "shares_outstanding": 6561464970000000,
+    "free_float_pct": 11.480999999222858
+  },
+  "akumulasi": {
+    "score": 3.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0318,
+    "vol_trend": 1.622,
+    "price_chg_20d": -2.54
+  },
+  "neraca": {
+    "aset": 4626400439644.0,
+    "aset_lancar": 2047989602618.0,
+    "kas": 57341500501.0,
+    "piutang_usaha": 623648426007.0,
+    "persediaan": 1185234137978.0,
+    "aset_tetap": 19902501335.0,
+    "liabilitas": 1002547287311.0,
+    "liabilitas_jangka_pendek": 765339259573.0,
+    "liabilitas_jangka_panjang": 237208027738.0,
+    "utang_usaha": 623648426007.0,
+    "utang_bank": 206173450805.0,
+    "ekuitas": 3422811992077.0,
+    "ekuitas_induk": 3422811992077.0,
+    "modal_saham": null,
+    "saldo_laba": 50000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1829178575030.0,
+    "beban_pokok": 1616519709055.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 43999213547.0,
+    "beban_pajak": -10332857202.0,
+    "laba_bersih": 20996687904.0,
+    "laba_induk": 20996687904.0,
+    "eps_basic": 3.2,
+    "eps_diluted": 3.2
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 19902501335.0,
+    "dividen_dibayar": 40009063.0
+  }
+}

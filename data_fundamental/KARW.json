@@ -1,0 +1,101 @@
+{
+  "kode": "KARW",
+  "nama": "PT Meratus Jasa Prima Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 212.0,
+  "update": "2026-10-28 18:55",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 25268.88764804303,
+    "roe": -0.00465381061717351,
+    "eps": null,
+    "de": -1.389050017940286,
+    "margin_net": 0.05232527451630843,
+    "current_ratio": 0.12424564027094834,
+    "roa": 0.011959217701463763,
+    "bv": -0.05371941846482731
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1795533000000.0,
+      "2025-Q2": 1012578000000.0,
+      "2025-Q3": 1150118000000.0,
+      "2026-Q1": 1321425000000.0,
+      "2026-Q2": 1539334000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": -0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 85814000000.0,
+      "2025-Q2": -51632000000.0,
+      "2025-Q3": -359601000000.0,
+      "2026-Q1": 17903000000.0,
+      "2026-Q2": 131787000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 124476375040,
+    "enterprise_value": 124473712640,
+    "shares_outstanding": 598760000000000,
+    "free_float_pct": 22.97300003900178
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 12516705.0,
+    "aset_lancar": 5519521.0,
+    "kas": 2689349.0,
+    "piutang_usaha": 2089254.0,
+    "persediaan": 362831.0,
+    "aset_tetap": 5671496.0,
+    "liabilitas": 44678848.0,
+    "liabilitas_jangka_pendek": 44424263.0,
+    "liabilitas_jangka_panjang": 254585.0,
+    "utang_usaha": 2089254.0,
+    "utang_bank": null,
+    "ekuitas": -32165039.0,
+    "ekuitas_induk": -32165039.0,
+    "modal_saham": null,
+    "saldo_laba": -65116447.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2860759.0,
+    "beban_pokok": 2112840.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 182420.0,
+    "beban_pajak": -32700.0,
+    "laba_bersih": 149690.0,
+    "laba_induk": 149690.0,
+    "eps_basic": 0.00025,
+    "eps_diluted": 0.00025
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3960.0,
+    "dividen_dibayar": null
+  }
+}

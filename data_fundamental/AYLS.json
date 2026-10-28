@@ -1,0 +1,101 @@
+{
+  "kode": "AYLS",
+  "nama": "PT Arkayana Lestari Grup Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Food Distribution",
+  "harga": 193.0,
+  "update": "2026-10-28 20:41",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 5.104572339588461,
+    "ps": 0.0001555619595463311,
+    "roe": -0.06411248109541337,
+    "eps": -3646310.752663875,
+    "de": 0.02942532243483299,
+    "margin_net": -3.336670362903226,
+    "current_ratio": 28.680394971777837,
+    "roa": -0.062279875672547357,
+    "bv": 37.809239865833696
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 311351351000000.0,
+      "2025-Q2": 248108108000000.0,
+      "2025-Q3": 190702703000000.0,
+      "2026-Q1": 315000000000000.0,
+      "2026-Q2": 305000000000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.59,
+      "2025-Q2": -0.68,
+      "2025-Q3": -0.55,
+      "2026-Q1": -1.55,
+      "2026-Q2": -0.87
+    },
+    "net_income": {
+      "2025-Q1": -506834668000000.0,
+      "2025-Q2": -576600300000000.0,
+      "2025-Q3": -466510397000000.0,
+      "2026-Q1": -1322663376000000.0,
+      "2026-Q2": -746072249000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 164710678528,
+    "enterprise_value": 163449798656,
+    "shares_outstanding": 853423236,
+    "free_float_pct": 30.314000028000176
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1673,
+    "vol_trend": 0.507,
+    "price_chg_20d": -3.02
+  },
+  "neraca": {
+    "aset": 33216759068.0,
+    "aset_lancar": 27231324641.0,
+    "kas": 407465692.0,
+    "piutang_usaha": 26670346904.0,
+    "persediaan": 1356943792.0,
+    "aset_tetap": 1662000000.0,
+    "liabilitas": 949475231.0,
+    "liabilitas_jangka_pendek": 949475231.0,
+    "liabilitas_jangka_panjang": 152430043.0,
+    "utang_usaha": 26670346904.0,
+    "utang_bank": null,
+    "ekuitas": 32267283837.0,
+    "ekuitas_induk": 32267283837.0,
+    "modal_saham": null,
+    "saldo_laba": -16691780860.0
+  },
+  "laba_rugi": {
+    "pendapatan": 620000000.0,
+    "beban_pokok": 525360000.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2376262739.0,
+    "beban_pajak": 307527114.0,
+    "laba_bersih": -2068735625.0,
+    "laba_induk": -2068735625.0,
+    "eps_basic": -2.42,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

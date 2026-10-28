@@ -1,0 +1,101 @@
+{
+  "kode": "MDIA",
+  "nama": "PT Intermedia Capital Tbk",
+  "sektor": "Communication Services",
+  "industri": "Broadcasting",
+  "harga": 78.0,
+  "update": "2026-10-28 18:59",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.005272939058785379,
+    "roe": -0.035842116814514664,
+    "eps": 388.33713934168503,
+    "de": 2.208961942090079,
+    "margin_net": -0.11431861907853635,
+    "current_ratio": 0.8191612180369673,
+    "roa": -0.011102857371354214,
+    "bv": 22921.248991445696
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 167024918000000.0,
+      "2025-Q2": 141148856000000.0,
+      "2025-Q3": 157126496000000.0,
+      "2026-Q1": 141716426000000.0,
+      "2026-Q2": 140104438000000.0
+    },
+    "eps": {
+      "2025-Q1": -1.49,
+      "2025-Q2": 1.2,
+      "2025-Q3": 0.01,
+      "2026-Q1": -0.21,
+      "2026-Q2": -0.61
+    },
+    "net_income": {
+      "2025-Q1": -58264743000000.0,
+      "2025-Q2": 46912435000000.0,
+      "2025-Q3": 533787000000.0,
+      "2026-Q1": -8280082000000.0,
+      "2026-Q2": -23937290000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 3058812059648,
+    "enterprise_value": 4722975047680,
+    "shares_outstanding": 39215538400,
+    "free_float_pct": 12.543000001244407
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.309,
+    "vol_trend": 0.642,
+    "price_chg_20d": -50.0
+  },
+  "neraca": {
+    "aset": 2901718983.0,
+    "aset_lancar": 580098971.0,
+    "kas": 6639737.0,
+    "piutang_usaha": 168228642.0,
+    "persediaan": 211965300.0,
+    "aset_tetap": 6864832.0,
+    "liabilitas": 1985567677.0,
+    "liabilitas_jangka_pendek": 708162152.0,
+    "liabilitas_jangka_panjang": 1277405525.0,
+    "utang_usaha": 168228642.0,
+    "utang_bank": null,
+    "ekuitas": 898869120.0,
+    "ekuitas_induk": 898869120.0,
+    "modal_saham": null,
+    "saldo_laba": 39950971.0
+  },
+  "laba_rugi": {
+    "pendapatan": 281820864.0,
+    "beban_pokok": 145603881.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -35726898.0,
+    "beban_pajak": 3424880.0,
+    "laba_bersih": -32217372.0,
+    "laba_induk": -32217372.0,
+    "eps_basic": -0.821546083885973,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6864832.0,
+    "dividen_dibayar": null
+  }
+}

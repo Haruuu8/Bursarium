@@ -1,0 +1,98 @@
+{
+  "kode": "HADE",
+  "nama": "PT Himalaya Energi Perkasa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 21.0,
+  "update": "2026-10-28 18:48",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 10.79930283077526,
+    "ps": 1.025672216170787e-05,
+    "roe": -0.09759277596889455,
+    "eps": -196150.9641509434,
+    "de": 0.3571005243886269,
+    "margin_net": -0.12380379875182286,
+    "current_ratio": 3.417519107474338,
+    "roa": -0.04151104001283592,
+    "bv": 1.9445699716981133
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1090869000000000.0,
+      "2026-Q1": 1122392400000000.0,
+      "2026-Q2": 1075431000000000.0,
+      "2026-Q3": 1051875600000000.0
+    },
+    "eps": {
+      "2025-Q3": -0.01,
+      "2026-Q1": -0.13,
+      "2026-Q2": -0.03,
+      "2026-Q3": -0.03
+    },
+    "net_income": {
+      "2025-Q3": -13514963000000.0,
+      "2026-Q1": -267043818000000.0,
+      "2026-Q2": -68601993000000.0,
+      "2026-Q3": -66679270000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 44520001536,
+    "enterprise_value": 48301449216,
+    "shares_outstanding": 2120000000,
+    "free_float_pct": 56.736
+  },
+  "akumulasi": {
+    "score": 5.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0563,
+    "vol_trend": 0.755,
+    "price_chg_20d": -25.0
+  },
+  "neraca": {
+    "aset": 9692001956.0,
+    "aset_lancar": 1093923267.0,
+    "kas": 322016128.0,
+    "piutang_usaha": 344865000.0,
+    "persediaan": null,
+    "aset_tetap": 6400000000.0,
+    "liabilitas": 1472142748.0,
+    "liabilitas_jangka_pendek": 320092802.0,
+    "liabilitas_jangka_panjang": 1152049946.0,
+    "utang_usaha": 344865000.0,
+    "utang_bank": null,
+    "ekuitas": 4122488340.0,
+    "ekuitas_induk": 4122488340.0,
+    "modal_saham": null,
+    "saldo_laba": -208302793185.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3249699000.0,
+    "beban_pokok": 2668322931.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -538623133.0,
+    "beban_pajak": null,
+    "laba_bersih": -402325081.0,
+    "laba_induk": -402325081.0,
+    "eps_basic": -0.19,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6400000000.0,
+    "dividen_dibayar": null
+  }
+}

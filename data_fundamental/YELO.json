@@ -1,0 +1,101 @@
+{
+  "kode": "YELO",
+  "nama": "PT Yelooo Integra Datanet Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 65.0,
+  "update": "2026-10-28 20:21",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.46868597007388096,
+    "ps": 2.347712285523913e-06,
+    "roe": -0.0035149175637942155,
+    "eps": -304754.9457354852,
+    "de": 0.02821320807032085,
+    "margin_net": -0.04092999616298612,
+    "current_ratio": 20.242447032342785,
+    "roa": -0.0033928319402314563,
+    "bv": 138.6856107294054
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.3689327019e+16,
+      "2025-Q2": 1.6637503011e+16,
+      "2025-Q3": 1.353979727e+16,
+      "2026-Q1": 1.1279412284e+16,
+      "2026-Q2": 1.1501367985e+16
+    },
+    "eps": {
+      "2025-Q1": 0.31,
+      "2025-Q2": -0.56,
+      "2025-Q3": 0.12,
+      "2026-Q1": 0.21,
+      "2026-Q2": -0.7
+    },
+    "net_income": {
+      "2025-Q1": -592713842000000.0,
+      "2025-Q2": 109067640000000.0,
+      "2025-Q3": 240422149000000.0,
+      "2026-Q1": -405171411000000.0,
+      "2026-Q2": -527245838000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 124330336256,
+    "enterprise_value": 124349136896,
+    "shares_outstanding": 1912774405,
+    "free_float_pct": 54.055999980823664
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2407,
+    "vol_trend": 0.263,
+    "price_chg_20d": -16.67
+  },
+  "neraca": {
+    "aset": 274819756895.0,
+    "aset_lancar": 131189166189.0,
+    "kas": 3955203537.0,
+    "piutang_usaha": 471032009.0,
+    "persediaan": 82419016997.0,
+    "aset_tetap": 4150616643.0,
+    "liabilitas": 7484238642.0,
+    "liabilitas_jangka_pendek": 6480894626.0,
+    "liabilitas_jangka_panjang": 1003344016.0,
+    "utang_usaha": 471032009.0,
+    "utang_bank": null,
+    "ekuitas": 265274286545.0,
+    "ekuitas_induk": 265274286545.0,
+    "modal_saham": null,
+    "saldo_laba": 100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 22780780269.0,
+    "beban_pokok": 21893508026.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1142039690.0,
+    "beban_pajak": 204963657.0,
+    "laba_bersih": -932417249.0,
+    "laba_induk": -932417249.0,
+    "eps_basic": -0.49,
+    "eps_diluted": -0.49
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1987007270.0,
+    "dividen_dibayar": null
+  }
+}

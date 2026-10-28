@@ -1,0 +1,98 @@
+{
+  "kode": "MGRO",
+  "nama": "PT Mahkota Group Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 705.0,
+  "update": "2026-10-28 20:03",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 7.882022611341865,
+    "ps": 0.3506886620411222,
+    "roe": -0.11660473602148654,
+    "eps": -24198880.87968509,
+    "de": 7.9463832471421405,
+    "margin_net": -0.009913721958379926,
+    "current_ratio": 0.6071546627145702,
+    "roa": -0.012728675767408807,
+    "bv": 89.4440468853182
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1393306743205.0,
+      "2025-Q2": 1949580789326.0,
+      "2026-Q1": 1537906083438.0,
+      "2026-Q2": 2131993121093.0
+    },
+    "eps": {
+      "2025-Q1": -6.8,
+      "2025-Q2": -6.9,
+      "2026-Q1": -6.62,
+      "2026-Q2": -3.81
+    },
+    "net_income": {
+      "2025-Q1": -2.4000482259e+16,
+      "2025-Q2": -2.403194302e+16,
+      "2026-Q1": -2.3097616313e+16,
+      "2026-Q2": -1.3284744016e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 2459304722432,
+    "enterprise_value": 4615532707840,
+    "shares_outstanding": 3488375600,
+    "free_float_pct": 18.411000008141325
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.49,
+    "vol_trend": 0.817,
+    "price_chg_20d": -2.08
+  },
+  "neraca": {
+    "aset": 2858298930212.0,
+    "aset_lancar": 1099590559311.0,
+    "kas": 143291032193.0,
+    "piutang_usaha": 46136000138.0,
+    "persediaan": 522221380090.0,
+    "aset_tetap": 67829331041.0,
+    "liabilitas": 2479386245140.0,
+    "liabilitas_jangka_pendek": 1811055117974.0,
+    "liabilitas_jangka_panjang": 668331127166.0,
+    "utang_usaha": 46136000138.0,
+    "utang_bank": 1522902114363.0,
+    "ekuitas": 312014430720.0,
+    "ekuitas_induk": 312014430720.0,
+    "modal_saham": null,
+    "saldo_laba": 2150000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3669899204531.0,
+    "beban_pokok": 3515395948983.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -31370096569.0,
+    "beban_pajak": 141710885.0,
+    "laba_bersih": -36382360329.0,
+    "laba_induk": -36382360329.0,
+    "eps_basic": -10.43,
+    "eps_diluted": -10.43
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 67829331041.0,
+    "dividen_dibayar": 8550000000.0
+  }
+}

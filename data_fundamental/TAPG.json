@@ -1,0 +1,101 @@
+{
+  "kode": "TAPG",
+  "nama": "PT Triputra Agro Persada Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 1935.0,
+  "update": "2026-10-28 20:42",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 18.78640776699029,
+    "pb": 3.350149341635373,
+    "ps": 3.3491895153637965,
+    "roe": 0.17832836289463946,
+    "eps": null,
+    "de": 0.25258516126088854,
+    "margin_net": 0.3483554288348429,
+    "current_ratio": 2.357606645375591,
+    "roa": 0.137642052545444,
+    "bv": 577.5861917413602
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2620060000000.0,
+      "2025-Q2": 2888329000000.0,
+      "2025-Q3": 2699446000000.0,
+      "2026-Q1": 2492197000000.0,
+      "2026-Q2": 3364953000000.0
+    },
+    "eps": {
+      "2025-Q1": 41.0,
+      "2025-Q2": 44.0,
+      "2025-Q3": 50.0,
+      "2026-Q1": 37.0,
+      "2026-Q2": 66.0
+    },
+    "net_income": {
+      "2025-Q1": 805258000000.0,
+      "2025-Q2": 888861000000.0,
+      "2025-Q3": 985514000000.0,
+      "2026-Q1": 739762000000.0,
+      "2026-Q2": 1300608000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 38414665646080,
+    "enterprise_value": 37384087404544,
+    "shares_outstanding": 19809417475,
+    "free_float_pct": 41.05599999798514
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3127,
+    "vol_trend": 0.55,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 14823740.0,
+    "aset_lancar": 4125880.0,
+    "kas": 1706296.0,
+    "piutang_usaha": 126557.0,
+    "persediaan": 1173834.0,
+    "aset_tetap": 3360704.0,
+    "liabilitas": 2889990.0,
+    "liabilitas_jangka_pendek": 1750029.0,
+    "liabilitas_jangka_panjang": 1139961.0,
+    "utang_usaha": 126557.0,
+    "utang_bank": 280000.0,
+    "ekuitas": 11441646.0,
+    "ekuitas_induk": 11441646.0,
+    "modal_saham": null,
+    "saldo_laba": 397051.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5857150.0,
+    "beban_pokok": 3444058.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2539041.0,
+    "beban_pajak": -419070.0,
+    "laba_bersih": 2040370.0,
+    "laba_induk": 2040370.0,
+    "eps_basic": 103.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 324269.0,
+    "dividen_dibayar": 1872419.0
+  }
+}

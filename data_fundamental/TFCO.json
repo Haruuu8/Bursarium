@@ -1,0 +1,95 @@
+{
+  "kode": "TFCO",
+  "nama": "PT Tifico Fiber Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 2000.0,
+  "update": "2026-10-28 19:12",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 48040.3696510048,
+    "roe": 0.010382082649160825,
+    "eps": null,
+    "de": 0.09128492933197996,
+    "margin_net": 0.03362825875570336,
+    "current_ratio": 6.201398198978817,
+    "roa": 0.009513631472502898,
+    "bv": 0.06742385161580085
+  },
+  "quarterly": {
+    "revenue": {
+      "2026-Q1": 48825559000000.0,
+      "2026-Q2": 48503001000000.0
+    },
+    "eps": {
+      "2026-Q1": -0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2026-Q1": -1709737000000.0,
+      "2026-Q2": 4982727000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 9646152613888,
+    "enterprise_value": 9646105427968,
+    "shares_outstanding": 4675700000000000,
+    "free_float_pct": 14.160999999917065
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.7297,
+    "vol_trend": 9.142,
+    "price_chg_20d": 146.91
+  },
+  "neraca": {
+    "aset": 344031615.0,
+    "aset_lancar": 131687776.0,
+    "kas": 30628620.0,
+    "piutang_usaha": 15667945.0,
+    "persediaan": 60048134.0,
+    "aset_tetap": 12433.0,
+    "liabilitas": 28777912.0,
+    "liabilitas_jangka_pendek": 21235175.0,
+    "liabilitas_jangka_panjang": 7542737.0,
+    "utang_usaha": 15667945.0,
+    "utang_bank": 878700.0,
+    "ekuitas": 315253703.0,
+    "ekuitas_induk": 315253703.0,
+    "modal_saham": null,
+    "saldo_laba": 24527216.0
+  },
+  "laba_rugi": {
+    "pendapatan": 97328560.0,
+    "beban_pokok": 92981787.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3584026.0,
+    "beban_pajak": -311036.0,
+    "laba_bersih": 3272990.0,
+    "laba_induk": 3272990.0,
+    "eps_basic": 0.0007,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12433.0,
+    "dividen_dibayar": null
+  }
+}

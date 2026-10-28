@@ -1,0 +1,98 @@
+{
+  "kode": "MGNA",
+  "nama": "PT Magna Investama Mandiri Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 146.0,
+  "update": "2026-10-28 18:57",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 18.170793081620804,
+    "ps": 13.102124957565124,
+    "roe": -0.17435336786129024,
+    "eps": -2.8018140532892777,
+    "de": 3.115259801250571,
+    "margin_net": -0.2514364235209462,
+    "current_ratio": 0.3105550834836914,
+    "roa": -0.03900996220273265,
+    "bv": 8.034872189903174
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1.5298909677e+16,
+      "2026-Q1": 7878746125000000.0,
+      "2026-Q2": 1.1127035667e+16
+    },
+    "eps": {
+      "2025-Q3": 0.83,
+      "2026-Q1": -1.38,
+      "2026-Q2": -0.02
+    },
+    "net_income": {
+      "2025-Q3": 1571827127000000.0,
+      "2026-Q1": -4700783147000000.0,
+      "2026-Q2": -77962653000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 498032246784,
+    "enterprise_value": 566552166400,
+    "shares_outstanding": 3411179835,
+    "free_float_pct": 24.129378860496224
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1748,
+    "vol_trend": 0.391,
+    "price_chg_20d": 4.29
+  },
+  "neraca": {
+    "aset": 122500651889.0,
+    "aset_lancar": 8085775704.0,
+    "kas": 2307780340.0,
+    "piutang_usaha": 290474271.0,
+    "persediaan": 1162713839.0,
+    "aset_tetap": 38107024837.0,
+    "liabilitas": 85384268017.0,
+    "liabilitas_jangka_pendek": 26036526639.0,
+    "liabilitas_jangka_panjang": 59347741378.0,
+    "utang_usaha": 290474271.0,
+    "utang_bank": 10844172768.0,
+    "ekuitas": 27408393991.0,
+    "ekuitas_induk": 27408393991.0,
+    "modal_saham": null,
+    "saldo_laba": -150676915230.0
+  },
+  "laba_rugi": {
+    "pendapatan": 19005781792.0,
+    "beban_pokok": 8753862053.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4885545791.0,
+    "beban_pajak": 40393870.0,
+    "laba_bersih": -4778745800.0,
+    "laba_induk": -4778745800.0,
+    "eps_basic": -1.4,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 30446100.0,
+    "dividen_dibayar": null
+  }
+}

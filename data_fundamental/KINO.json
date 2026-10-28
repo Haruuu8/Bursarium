@@ -1,0 +1,98 @@
+{
+  "kode": "KINO",
+  "nama": "PT Kino Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Beverages - Non-Alcoholic",
+  "harga": 1380.0,
+  "update": "2026-10-28 19:39",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 6.2727272727272725,
+    "pb": null,
+    "ps": 361210.05148960574,
+    "roe": 0.08242571834370892,
+    "eps": null,
+    "de": 1.5385828235055454,
+    "margin_net": 0.05758421110703861,
+    "current_ratio": 0.6909515933451031,
+    "roa": 0.032425491787354904,
+    "bv": 0.001334534926845387
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1032990523386.0,
+      "2026-Q1": 1256024436522.0,
+      "2026-Q2": 1372957070763.0
+    },
+    "eps": {
+      "2025-Q3": 16.0,
+      "2026-Q1": 46.0,
+      "2026-Q2": 64.0
+    },
+    "net_income": {
+      "2025-Q3": 2.1313771685e+16,
+      "2026-Q1": 6.3012495861e+16,
+      "2026-Q2": 8.8375330251e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1902770126848,
+    "enterprise_value": 3142134267904,
+    "shares_outstanding": 1376252964654545,
+    "free_float_pct": 10.78999997751699
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3682,
+    "vol_trend": 1.175,
+    "price_chg_20d": 1.85
+  },
+  "neraca": {
+    "aset": 4668790441323.0,
+    "aset_lancar": 1750536317779.0,
+    "kas": 183955663951.0,
+    "piutang_usaha": 1002216062200.0,
+    "persediaan": 434745924312.0,
+    "aset_tetap": 2573900960484.0,
+    "liabilitas": 2825849912190.0,
+    "liabilitas_jangka_pendek": 2533515132810.0,
+    "liabilitas_jangka_panjang": 292334779380.0,
+    "utang_usaha": 1002216062200.0,
+    "utang_bank": 1055622946504.0,
+    "ekuitas": 1836657649506.0,
+    "ekuitas_induk": 1836657649506.0,
+    "modal_saham": null,
+    "saldo_laba": 48000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2628981507285.0,
+    "beban_pokok": 1483110954286.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 152594899657.0,
+    "beban_pajak": 1653757831.0,
+    "laba_bersih": 151387826112.0,
+    "laba_induk": 151387826112.0,
+    "eps_basic": 110.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 67347141802.0,
+    "dividen_dibayar": 63697545754.0
+  }
+}

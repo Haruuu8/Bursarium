@@ -1,0 +1,100 @@
+{
+  "kode": "SURI",
+  "nama": "PT Maja Agung Latexindo Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Instruments & Supplies",
+  "harga": 70.0,
+  "update": "2026-10-28 18:19",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 77.77777777777777,
+    "pb": null,
+    "ps": 2.8301377917334527,
+    "roe": 0.016456480681473307,
+    "eps": null,
+    "de": 0.12402691710455702,
+    "margin_net": 0.07344351974969397,
+    "current_ratio": 5.318645275857139,
+    "roa": 0.014640646439201353,
+    "bv": 5.468970051496e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.4061191867e+16,
+      "2025-Q2": 3.621819136e+16,
+      "2025-Q3": 4.2769473808e+16,
+      "2026-Q1": 3.6000067512e+16,
+      "2026-Q2": 4.1562538439e+16
+    },
+    "eps": {
+      "2025-Q1": 0.09,
+      "2025-Q3": 0.77,
+      "2026-Q1": 0.09,
+      "2026-Q2": 0.81
+    },
+    "net_income": {
+      "2025-Q1": 420320322000000.0,
+      "2025-Q2": 959297383000000.0,
+      "2025-Q3": -6817976289000000.0,
+      "2026-Q1": 3619169027000000.0,
+      "2026-Q2": 2077301755000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 443406254080,
+    "enterprise_value": 394268672000,
+    "shares_outstanding": 6329411980000000,
+    "free_float_pct": 13.86500000394672
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.289,
+    "vol_trend": 0.739,
+    "price_chg_20d": -11.39
+  },
+  "neraca": {
+    "aset": 389086015133.0,
+    "aset_lancar": 203166561954.0,
+    "kas": 50444034281.0,
+    "piutang_usaha": 58152645576.0,
+    "persediaan": 51443574304.0,
+    "aset_tetap": 178641253825.0,
+    "liabilitas": 42932369511.0,
+    "liabilitas_jangka_pendek": 38198930633.0,
+    "liabilitas_jangka_panjang": 4733438878.0,
+    "utang_usaha": 58152645576.0,
+    "utang_bank": null,
+    "ekuitas": 346153645622.0,
+    "ekuitas_induk": 346153645622.0,
+    "modal_saham": null,
+    "saldo_laba": 21270000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 77562605951.0,
+    "beban_pokok": 64474092362.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 7320315862.0,
+    "beban_pajak": -1623845080.0,
+    "laba_bersih": 5696470782.0,
+    "laba_induk": 5696470782.0,
+    "eps_basic": 0.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 510437190.0,
+    "dividen_dibayar": null
+  }
+}

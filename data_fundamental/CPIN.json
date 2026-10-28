@@ -1,0 +1,101 @@
+{
+  "kode": "CPIN",
+  "nama": "PT Charoen Pokphand Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 2670.0,
+  "update": "2026-10-28 18:42",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 11.814159292035399,
+    "pb": 1.255425261508523,
+    "ps": 0.6058048613009489,
+    "roe": 0.10626446033748285,
+    "eps": null,
+    "de": 0.5006027994239076,
+    "margin_net": 0.0940758923971068,
+    "current_ratio": 2.6814595034963373,
+    "roa": 0.07079541710339524,
+    "bv": 2126.76937597362
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 17704697000000.0,
+      "2025-Q2": 15356986000000.0,
+      "2025-Q3": 17542859000000.0,
+      "2026-Q1": 19952120000000.0,
+      "2026-Q2": 19466374000000.0
+    },
+    "eps": {
+      "2025-Q1": 94.0,
+      "2025-Q2": 22.0,
+      "2025-Q3": 89.0,
+      "2026-Q1": 157.0,
+      "2026-Q2": 69.0
+    },
+    "net_income": {
+      "2025-Q1": 1537031000000.0,
+      "2025-Q2": 363359000000.0,
+      "2025-Q3": 1464653000000.0,
+      "2026-Q1": 2577936000000.0,
+      "2026-Q2": 1130394000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 43782661734400,
+    "enterprise_value": 49627189477376,
+    "shares_outstanding": 16408539823,
+    "free_float_pct": 38.902
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2975,
+    "vol_trend": 0.526,
+    "price_chg_20d": -9.8
+  },
+  "neraca": {
+    "aset": 52380933.0,
+    "aset_lancar": 30932743.0,
+    "kas": 5368132.0,
+    "piutang_usaha": 2451876.0,
+    "persediaan": 17160669.0,
+    "aset_tetap": 247048.0,
+    "liabilitas": 17469626.0,
+    "liabilitas_jangka_pendek": 11535786.0,
+    "liabilitas_jangka_panjang": 5933840.0,
+    "utang_usaha": 2451876.0,
+    "utang_bank": 4832090.0,
+    "ekuitas": 34897180.0,
+    "ekuitas_induk": 34897180.0,
+    "modal_saham": null,
+    "saldo_laba": 33000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 39418494.0,
+    "beban_pokok": 32469647.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4754305.0,
+    "beban_pajak": -1046572.0,
+    "laba_bersih": 3708330.0,
+    "laba_induk": 3708330.0,
+    "eps_basic": 226.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 247048.0,
+    "dividen_dibayar": 2951640.0
+  }
+}

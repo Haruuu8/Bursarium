@@ -1,0 +1,98 @@
+{
+  "kode": "IKAI",
+  "nama": "PT Intikeramik Alamasri Industri Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 19.0,
+  "update": "2026-10-28 18:47",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.4101477610149725,
+    "ps": 8.564994959405465e-06,
+    "roe": -0.001914872390172574,
+    "eps": -89540.94927690194,
+    "de": 0.7716924628854877,
+    "margin_net": -0.0401205608197273,
+    "current_ratio": 0.4662571930314959,
+    "roa": -0.0010882134331919864,
+    "bv": 46.32476830540689
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 35297018000000.0,
+      "2025-Q2": 30988853000000.0,
+      "2025-Q3": 31447667000000.0,
+      "2026-Q1": 2.9418943302e+16
+    },
+    "eps": {
+      "2025-Q1": -0.87,
+      "2025-Q2": -0.66,
+      "2025-Q3": 0.7,
+      "2026-Q1": -0.09
+    },
+    "net_income": {
+      "2025-Q1": -11556419000000.0,
+      "2025-Q2": -8813436000000.0,
+      "2025-Q3": 9260451000000.0,
+      "2026-Q1": -1180304504000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 252810199040,
+    "enterprise_value": 505803210752,
+    "shares_outstanding": 13305799387,
+    "free_float_pct": 80.60800000095477
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1341,
+    "vol_trend": 2.808,
+    "price_chg_20d": -5.0
+  },
+  "neraca": {
+    "aset": 1084625927230.0,
+    "aset_lancar": 114100468814.0,
+    "kas": 2759348074.0,
+    "piutang_usaha": 6727560600.0,
+    "persediaan": 9956794884.0,
+    "aset_tetap": 712830117449.0,
+    "liabilitas": 475662030703.0,
+    "liabilitas_jangka_pendek": 244715728828.0,
+    "liabilitas_jangka_panjang": 230946301875.0,
+    "utang_usaha": 6727560600.0,
+    "utang_bank": 58769269391.0,
+    "ekuitas": 616388073721.0,
+    "ekuitas_induk": 616388073721.0,
+    "modal_saham": null,
+    "saldo_laba": -791138819631.0
+  },
+  "laba_rugi": {
+    "pendapatan": 29418943302.0,
+    "beban_pokok": 17626594307.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2068504004.0,
+    "beban_pajak": 344675107.0,
+    "laba_bersih": -1180304504.0,
+    "laba_induk": -1180304504.0,
+    "eps_basic": -0.09,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 172565964.0,
+    "dividen_dibayar": null
+  }
+}

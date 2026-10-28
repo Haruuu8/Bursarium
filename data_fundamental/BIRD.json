@@ -1,0 +1,101 @@
+{
+  "kode": "BIRD",
+  "nama": "PT Blue Bird Tbk",
+  "sektor": "Industrials",
+  "industri": "Railroads",
+  "harga": 1460.0,
+  "update": "2026-10-28 18:35",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 11.40625,
+    "pb": 0.5980701545978192,
+    "ps": 0.6316182337562819,
+    "roe": 0.05243354780035674,
+    "eps": null,
+    "de": 0.6307924702364645,
+    "margin_net": 0.10789206283600782,
+    "current_ratio": 1.144816732765807,
+    "roa": 0.03178352011820339,
+    "bv": 2441.1851833365567
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1301713000000.0,
+      "2025-Q2": 1368188000000.0,
+      "2025-Q3": 1449597000000.0,
+      "2026-Q1": 1451901000000.0,
+      "2026-Q2": 1519198000000.0
+    },
+    "eps": {
+      "2025-Q1": 66.0,
+      "2025-Q2": 68.0,
+      "2025-Q3": 59.0,
+      "2026-Q1": 62.0,
+      "2026-Q2": 66.0
+    },
+    "net_income": {
+      "2025-Q1": 165398000000.0,
+      "2025-Q2": 170046000000.0,
+      "2025-Q3": 147152000000.0,
+      "2026-Q1": 155488000000.0,
+      "2026-Q2": 165070000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 3653066031104,
+    "enterprise_value": 4571038482432,
+    "shares_outstanding": 2504359375,
+    "free_float_pct": 29.439999999999998
+  },
+  "akumulasi": {
+    "score": 4.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.072,
+    "vol_trend": 1.852,
+    "price_chg_20d": -5.81
+  },
+  "neraca": {
+    "aset": 10085667.0,
+    "aset_lancar": 2265993.0,
+    "kas": 1358091.0,
+    "piutang_usaha": 300466.0,
+    "persediaan": 28306.0,
+    "aset_tetap": 7562750.0,
+    "liabilitas": 3856416.0,
+    "liabilitas_jangka_pendek": 1979350.0,
+    "liabilitas_jangka_panjang": 1877066.0,
+    "utang_usaha": 300466.0,
+    "utang_bank": 849982.0,
+    "ekuitas": 6113605.0,
+    "ekuitas_induk": 6113605.0,
+    "modal_saham": null,
+    "saldo_laba": 54000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2971099.0,
+    "beban_pokok": 2053438.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 412456.0,
+    "beban_pajak": -88608.0,
+    "laba_bersih": 320558.0,
+    "laba_induk": 320558.0,
+    "eps_basic": 128.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 653905.0,
+    "dividen_dibayar": null
+  }
+}

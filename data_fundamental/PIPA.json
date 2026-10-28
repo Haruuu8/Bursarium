@@ -1,0 +1,101 @@
+{
+  "kode": "PIPA",
+  "nama": "PT Oxala Energy International Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 93.0,
+  "update": "2026-10-28 18:13",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 9.908489703870718,
+    "roe": 0.003446761596178256,
+    "eps": null,
+    "de": 0.38428170858049904,
+    "margin_net": 0.02045063074699376,
+    "current_ratio": 2.311206288567441,
+    "roa": 0.0024837237484109046,
+    "bv": 2.0308918399698863e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7112214810000000.0,
+      "2025-Q2": 4273267274000000.0,
+      "2025-Q3": 1.450633641e+16,
+      "2026-Q1": 5354307144000000.0,
+      "2026-Q2": 5425524575000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.09,
+      "2025-Q2": 0.04,
+      "2025-Q3": 0.78,
+      "2026-Q1": -0.24,
+      "2026-Q2": 0.31
+    },
+    "net_income": {
+      "2025-Q1": 300240886000000.0,
+      "2025-Q2": 101018338000000.0,
+      "2025-Q3": 2263626893000000.0,
+      "2026-Q1": -1183232150000000.0,
+      "2026-Q2": 1403686508000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 31852500992,
+    "enterprise_value": 356632363008,
+    "shares_outstanding": 3149347971428571,
+    "free_float_pct": 483.4
+  },
+  "akumulasi": {
+    "score": 2.7,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1208,
+    "vol_trend": 0.191,
+    "price_chg_20d": -33.09
+  },
+  "neraca": {
+    "aset": 88759612715.0,
+    "aset_lancar": 42087932295.0,
+    "kas": 714354214.0,
+    "piutang_usaha": 5099939709.0,
+    "persediaan": 34355020138.0,
+    "aset_tetap": 42548860372.0,
+    "liabilitas": 24578600809.0,
+    "liabilitas_jangka_pendek": 18210374601.0,
+    "liabilitas_jangka_panjang": 6368226208.0,
+    "utang_usaha": 5099939709.0,
+    "utang_bank": 784975275.0,
+    "ekuitas": 63959850964.0,
+    "ekuitas_induk": 63959850964.0,
+    "modal_saham": null,
+    "saldo_laba": 100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10779831719.0,
+    "beban_pokok": 6103618624.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 441615300.0,
+    "beban_pajak": null,
+    "laba_bersih": 220454358.0,
+    "laba_induk": 220454358.0,
+    "eps_basic": 0.07,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "kode": "LOPI",
+  "nama": "PT Logisticsplus International Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 45.0,
+  "update": "2026-10-28 18:10",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 40.90909090909091,
+    "pb": null,
+    "ps": 432208.6383443196,
+    "roe": 0.009732471060587685,
+    "eps": null,
+    "de": 0.8264009893975572,
+    "margin_net": 0.010565100048416704,
+    "current_ratio": 2.4830848859616688,
+    "roa": 0.005328770142529305,
+    "bv": 5.6511855681468534e-05
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 49500508160,
+    "enterprise_value": 87864819712,
+    "shares_outstanding": 1107620245454545,
+    "free_float_pct": 44.04200000896537
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1745,
+    "vol_trend": 1.289,
+    "price_chg_20d": -26.23
+  },
+  "neraca": {
+    "aset": 114321150792.0,
+    "aset_lancar": 96823198008.0,
+    "kas": 5092849347.0,
+    "piutang_usaha": 75272906588.0,
+    "persediaan": null,
+    "aset_tetap": 12701053116.0,
+    "liabilitas": 51727475331.0,
+    "liabilitas_jangka_pendek": 38993108353.0,
+    "liabilitas_jangka_panjang": 12734366978.0,
+    "utang_usaha": 75272906588.0,
+    "utang_bank": 22057210445.0,
+    "ekuitas": 62593675461.0,
+    "ekuitas_induk": 62593675461.0,
+    "modal_saham": null,
+    "saldo_laba": 1753628292.0
+  },
+  "laba_rugi": {
+    "pendapatan": 57660706686.0,
+    "beban_pokok": 58091849930.0,
+    "laba_kotor": null,
+    "beban_operasi": 58092270382.0,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 742295029.0,
+    "beban_pajak": -133103894.0,
+    "laba_bersih": 609191135.0,
+    "laba_induk": 609191135.0,
+    "eps_basic": 0.55,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7424305151.0,
+    "dividen_dibayar": null
+  }
+}

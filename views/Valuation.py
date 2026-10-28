@@ -736,7 +736,12 @@ st.markdown(section_title("Semua Saham Undervalued", "Auto-sorted by Skor"), uns
 tampil = val_underval.sort_values(by=["skor", "potential"], ascending=[False, False]).reset_index(drop=True)
 
 if tampil.empty:
-    st.info("Tidak ada saham undervalued saat ini.")
+    st.markdown(
+        '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
+        'border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
+        'Tidak ada saham undervalued saat ini.'
+        '</div>', unsafe_allow_html=True
+    )
 else:
     df_show = tampil[[
         "kode", "nama", "sektor", "harga",

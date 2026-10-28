@@ -1,0 +1,98 @@
+{
+  "kode": "FITT",
+  "nama": "PT Fortune Resources Investment Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 278.0,
+  "update": "2026-10-28 20:21",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.946287000842055,
+    "ps": 39.052072943073995,
+    "roe": -0.05667231411813231,
+    "eps": -6.370395944335082,
+    "de": 0.6574509500270879,
+    "margin_net": -0.8948818960231524,
+    "current_ratio": 9.376297635240771,
+    "roa": -0.03418697766853581,
+    "bv": 56.20377466019932
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1919489811000000.0,
+      "2026-Q1": 2146003302000000.0,
+      "2026-Q2": 2496357562000000.0
+    },
+    "eps": {
+      "2025-Q1": -2.06,
+      "2026-Q1": -1.87,
+      "2026-Q2": -1.32
+    },
+    "net_income": {
+      "2025-Q1": -2691102686000000.0,
+      "2026-Q1": -2443956880000000.0,
+      "2026-Q2": -1710407812000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 362587619328,
+    "enterprise_value": 359957692416,
+    "shares_outstanding": 1304272051,
+    "free_float_pct": 20.825999973835213
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.316,
+    "vol_trend": 0.72,
+    "price_chg_20d": -32.2
+  },
+  "neraca": {
+    "aset": 121518922564.0,
+    "aset_lancar": 23216460939.0,
+    "kas": 22885063043.0,
+    "piutang_usaha": 250741534.0,
+    "persediaan": 80656362.0,
+    "aset_tetap": 25019381192.0,
+    "liabilitas": 48194450077.0,
+    "liabilitas_jangka_pendek": 2476079775.0,
+    "liabilitas_jangka_panjang": 45718370302.0,
+    "utang_usaha": 250741534.0,
+    "utang_bank": 1200000000.0,
+    "ekuitas": 73305012450.0,
+    "ekuitas_induk": 73305012450.0,
+    "modal_saham": null,
+    "saldo_laba": -50007523179.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4642360864.0,
+    "beban_pokok": 3127271346.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4348328108.0,
+    "beban_pajak": 193926687.0,
+    "laba_bersih": -4154364692.0,
+    "laba_induk": -4154364692.0,
+    "eps_basic": -3.19,
+    "eps_diluted": -3.19
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 25019381192.0,
+    "dividen_dibayar": null
+  }
+}

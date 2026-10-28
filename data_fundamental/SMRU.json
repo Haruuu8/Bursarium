@@ -1,0 +1,101 @@
+{
+  "kode": "SMRU",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 19:15",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": null,
+    "roe": 1.014937308375906,
+    "eps": null,
+    "de": -17.82752519132591,
+    "margin_net": -56.50679789686217,
+    "current_ratio": 0.0316463923087561,
+    "roa": -0.06028193513292514,
+    "bv": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.6842257945e+16,
+      "2025-Q2": 1.5936006096e+16,
+      "2025-Q3": 2.7007935681e+16,
+      "2026-Q1": 339150000000000.0,
+      "2026-Q2": 328090338000000.0
+    },
+    "eps": {
+      "2025-Q1": -1.88,
+      "2025-Q2": -0.41,
+      "2025-Q3": -0.89,
+      "2026-Q1": -1.14,
+      "2026-Q2": -1.88
+    },
+    "net_income": {
+      "2025-Q1": -2.3552774954e+16,
+      "2025-Q2": -5028103079000000.0,
+      "2025-Q3": -1.1106503645e+16,
+      "2026-Q1": -1.4195936485e+16,
+      "2026-Q2": -2.3507678443e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 625454621602.0,
+    "aset_lancar": 20304161438.0,
+    "kas": 1226976077.0,
+    "piutang_usaha": 10025440933.0,
+    "persediaan": 6837295552.0,
+    "aset_tetap": 74722244484.0,
+    "liabilitas": 662269619400.0,
+    "liabilitas_jangka_pendek": 641594821928.0,
+    "liabilitas_jangka_panjang": 20674797472.0,
+    "utang_usaha": 10025440933.0,
+    "utang_bank": 184295725212.0,
+    "ekuitas": -37148713144.0,
+    "ekuitas_induk": -37148713144.0,
+    "modal_saham": null,
+    "saldo_laba": -1546950114760.0
+  },
+  "laba_rugi": {
+    "pendapatan": 667240338.0,
+    "beban_pokok": 21227650358.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -37396038983.0,
+    "beban_pajak": -307215322.0,
+    "laba_bersih": -37703614928.0,
+    "laba_induk": -37703614928.0,
+    "eps_basic": -3.02,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 606697703.0,
+    "dividen_dibayar": null
+  }
+}

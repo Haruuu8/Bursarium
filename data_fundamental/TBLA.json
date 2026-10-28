@@ -1,0 +1,98 @@
+{
+  "kode": "TBLA",
+  "nama": "PT Tunas Baru Lampung Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 560.0,
+  "update": "2026-10-28 19:14",
+  "periode_terbaru": "2026-tw1",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 12.205754141238012,
+    "pb": 0.35339209959624424,
+    "ps": 0.15194705573713357,
+    "roe": 0.028952909874122582,
+    "eps": null,
+    "de": 2.2335803094567557,
+    "margin_net": 0.04522854230183021,
+    "current_ratio": 1.1954128641564379,
+    "roa": 0.008949702813141076,
+    "bv": 1584.6421033175568
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5604565000000.0,
+      "2025-Q2": 4893682000000.0,
+      "2026-Q1": 6090623000000.0,
+      "2026-Q2": 5539358000000.0
+    },
+    "eps": {
+      "2025-Q1": 45.54,
+      "2025-Q2": 28.83,
+      "2026-Q1": 45.88,
+      "2026-Q2": 25.75
+    },
+    "net_income": {
+      "2025-Q1": 274370000000.0,
+      "2025-Q2": 172412000000.0,
+      "2026-Q1": 275470000000.0,
+      "2026-Q2": 154594000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 3362324742144,
+    "enterprise_value": 21932252594176,
+    "shares_outstanding": 6004141238,
+    "free_float_pct": 40.459000006704024
+  },
+  "akumulasi": {
+    "score": 3.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0402,
+    "vol_trend": 0.753,
+    "price_chg_20d": -5.88
+  },
+  "neraca": {
+    "aset": 30779793.0,
+    "aset_lancar": 15099022.0,
+    "kas": 442243.0,
+    "piutang_usaha": 3262606.0,
+    "persediaan": 3918221.0,
+    "aset_tetap": 8052736.0,
+    "liabilitas": 21251210.0,
+    "liabilitas_jangka_pendek": 12630801.0,
+    "liabilitas_jangka_panjang": 8620409.0,
+    "utang_usaha": 3262606.0,
+    "utang_bank": 8435377.0,
+    "ekuitas": 9514415.0,
+    "ekuitas_induk": 9514415.0,
+    "modal_saham": null,
+    "saldo_laba": 12000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6090623.0,
+    "beban_pokok": 5045632.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 346803.0,
+    "beban_pajak": -71035.0,
+    "laba_bersih": 275470.0,
+    "laba_induk": 275470.0,
+    "eps_basic": 45.88,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 188882.0,
+    "dividen_dibayar": null
+  }
+}

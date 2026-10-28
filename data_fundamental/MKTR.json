@@ -1,0 +1,101 @@
+{
+  "kode": "MKTR",
+  "nama": "PT Menthobi Karyatama Raya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 117.0,
+  "update": "2026-10-28 18:06",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 433.3333333333333,
+    "pb": 20.711171507104208,
+    "ps": 10.73873033872903,
+    "roe": 0.04779501117024052,
+    "eps": null,
+    "de": 1.2530108873843853,
+    "margin_net": 0.04662056204115551,
+    "current_ratio": 1.7207692512756951,
+    "roa": 0.021185700670616675,
+    "bv": 5.649125157399592
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 267674173000000.0,
+      "2025-Q2": 225882356000000.0,
+      "2025-Q3": 385557084000000.0,
+      "2026-Q1": 322801025000000.0,
+      "2026-Q2": 371030443000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.52,
+      "2025-Q2": -0.41,
+      "2025-Q3": 0.19,
+      "2026-Q1": 0.07,
+      "2026-Q2": 0.2
+    },
+    "net_income": {
+      "2025-Q1": 6199124000000.0,
+      "2025-Q2": 6957440000000.0,
+      "2025-Q3": 23474867000000.0,
+      "2026-Q1": 8733773000000.0,
+      "2026-Q2": 23613040000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1411070164992,
+    "enterprise_value": 1892387389440,
+    "shares_outstanding": 119803011111111,
+    "free_float_pct": 91.90300000370203
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3566,
+    "vol_trend": 1.177,
+    "price_chg_20d": -4.1
+  },
+  "neraca": {
+    "aset": 1526822903.0,
+    "aset_lancar": 691382710.0,
+    "kas": 196781272.0,
+    "piutang_usaha": 24680867.0,
+    "persediaan": 64634180.0,
+    "aset_tetap": 600150045.0,
+    "liabilitas": 848015470.0,
+    "liabilitas_jangka_pendek": 401786997.0,
+    "liabilitas_jangka_panjang": 446228473.0,
+    "utang_usaha": 24680867.0,
+    "utang_bank": 20000000.0,
+    "ekuitas": 676782204.0,
+    "ekuitas_induk": 676782204.0,
+    "modal_saham": null,
+    "saldo_laba": 32960390.0
+  },
+  "laba_rugi": {
+    "pendapatan": 693831468.0,
+    "beban_pokok": 583692996.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 49799227.0,
+    "beban_pajak": -17336579.0,
+    "laba_bersih": 32346813.0,
+    "laba_induk": 32346813.0,
+    "eps_basic": 0.27,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12178288.0,
+    "dividen_dibayar": 18199066.0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "RAJA",
+  "nama": "PT Rukun Raharja Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Regulated Gas",
+  "harga": 448.0,
+  "update": "2026-10-28 19:08",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7229.006141044162,
+    "roe": 0.10391054055805245,
+    "eps": null,
+    "de": 1.655779670674012,
+    "margin_net": 0.17345691208380254,
+    "current_ratio": 1.3353873132675755,
+    "roa": 0.03634054360181189,
+    "bv": 0.05196777892790524
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 66088930000000.0,
+      "2025-Q2": 61546763000000.0,
+      "2025-Q3": 68413198000000.0,
+      "2026-Q1": 55260642000000.0,
+      "2026-Q2": 75924479000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": -0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 6727648000000.0,
+      "2025-Q2": 4627096000000.0,
+      "2025-Q3": 6398136000000.0,
+      "2026-Q1": 8638129000000.0,
+      "2026-Q2": 14116837000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 9468665397248,
+    "enterprise_value": 9520105390080,
+    "shares_outstanding": 4213882592592592,
+    "free_float_pct": 23.82461660968292
+  },
+  "akumulasi": {
+    "score": 3.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0675,
+    "vol_trend": 1.071,
+    "price_chg_20d": -32.63
+  },
+  "neraca": {
+    "aset": 626159208.0,
+    "aset_lancar": 172428316.0,
+    "kas": 123778390.0,
+    "piutang_usaha": 31516479.0,
+    "persediaan": 412175.0,
+    "aset_tetap": 200748947.0,
+    "liabilitas": 362592764.0,
+    "liabilitas_jangka_pendek": 129122326.0,
+    "liabilitas_jangka_panjang": 233470438.0,
+    "utang_usaha": 31516479.0,
+    "utang_bank": 25000000.0,
+    "ekuitas": 218986119.0,
+    "ekuitas_induk": 218986119.0,
+    "modal_saham": null,
+    "saldo_laba": 190648.0
+  },
+  "laba_rugi": {
+    "pendapatan": 131185121.0,
+    "beban_pokok": 83977729.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 39569283.0,
+    "beban_pajak": -10682004.0,
+    "laba_bersih": 22754966.0,
+    "laba_induk": 22754966.0,
+    "eps_basic": 0.0054,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10389040.0,
+    "dividen_dibayar": 25048790.0
+  }
+}

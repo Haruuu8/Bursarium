@@ -1,0 +1,98 @@
+{
+  "kode": "BPII",
+  "nama": "PT Batavia Prosperindo Internasional Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 436.0,
+  "update": "2026-10-28 18:36",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
+  "rasio_kunci": {
+    "pe": 50.34642032332563,
+    "pb": null,
+    "ps": 1403931.2837748653,
+    "roe": 0.02903624259386716,
+    "eps": null,
+    "de": 2.698566334068138,
+    "margin_net": 0.027885424122684254,
+    "current_ratio": null,
+    "roa": 0.00734240418655908,
+    "bv": 0.00014912397793902417
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 2.57230002378e+17,
+      "2026-Q1": 3.1254292763e+17,
+      "2026-Q2": -3.1254139183898266e+17
+    },
+    "eps": {
+      "2025-Q3": 1.84,
+      "2026-Q1": 1.82,
+      "2026-Q2": 2.51
+    },
+    "net_income": {
+      "2025-Q3": 1.8207773199e+16,
+      "2026-Q1": 1.7965310441e+16,
+      "2026-Q2": 2.4860873441e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 4309490597888,
+    "enterprise_value": 5605911166976,
+    "shares_outstanding": 9890573644803694,
+    "free_float_pct": 14.431026749237247
+  },
+  "akumulasi": {
+    "score": 3.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0087,
+    "vol_trend": 3.075,
+    "price_chg_20d": -4.39
+  },
+  "neraca": {
+    "aset": 5832719473602.0,
+    "aset_lancar": null,
+    "kas": 242517903463.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 2311126106171.0,
+    "liabilitas": 3980174007259.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 1351099578601.0,
+    "ekuitas": 1474921686012.0,
+    "ekuitas_induk": 1474921686012.0,
+    "modal_saham": null,
+    "saldo_laba": 500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1535791017328.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 73013733182.0,
+    "beban_pajak": -19981933600.0,
+    "laba_bersih": 42826183882.0,
+    "laba_induk": 42826183882.0,
+    "eps_basic": 4.33,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 125077519054.0,
+    "dividen_dibayar": 6272456779.0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "NICE",
+  "nama": "PT Adhi Kartiko Pratama Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 280.0,
+  "update": "2026-10-28 18:19",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 10.010725777618878,
+    "pb": null,
+    "ps": 2.9154429204249355,
+    "roe": 0.534821274910902,
+    "eps": null,
+    "de": 1.8834435381124168,
+    "margin_net": 0.16839252508288377,
+    "current_ratio": 0.6440064613204335,
+    "roa": 0.1854800001994995,
+    "bv": 5.2297844741983446e-05
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.47886006987e+17,
+      "2025-Q2": 2.30256733023e+17,
+      "2025-Q3": 3.53963370392e+17,
+      "2026-Q1": 3.79781809885e+17,
+      "2026-Q2": -3.7978079948481485e+17
+    },
+    "eps": {
+      "2025-Q1": 8.75,
+      "2025-Q2": 6.72,
+      "2025-Q3": 7.71,
+      "2026-Q1": 10.02,
+      "2026-Q2": 17.95
+    },
+    "net_income": {
+      "2025-Q1": 5.3243169392e+16,
+      "2025-Q2": 4.0861680758e+16,
+      "2025-Q3": 4.6865001104e+16,
+      "2026-Q1": 6.0944230611e+16,
+      "2026-Q2": 1.09199607915e+17
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1702965542912,
+    "enterprise_value": 2059486756864,
+    "shares_outstanding": 6083083250840186,
+    "free_float_pct": 10.380999996711619
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2922,
+    "vol_trend": 0.295,
+    "price_chg_20d": -16.17
+  },
+  "neraca": {
+    "aset": 917316359408.0,
+    "aset_lancar": 351729645168.0,
+    "kas": 17434359306.0,
+    "piutang_usaha": 5237448049.0,
+    "persediaan": 111069476113.0,
+    "aset_tetap": 415034612279.0,
+    "liabilitas": 599183929762.0,
+    "liabilitas_jangka_pendek": 546158565625.0,
+    "liabilitas_jangka_panjang": 53025364137.0,
+    "utang_usaha": 5237448049.0,
+    "utang_bank": 361791232917.0,
+    "ekuitas": 318132143405.0,
+    "ekuitas_induk": 318132143405.0,
+    "modal_saham": null,
+    "saldo_laba": 12164040000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1010400185176.0,
+    "beban_pokok": 735791632495.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 223246462464.0,
+    "beban_pajak": -53102690126.0,
+    "laba_bersih": 170143838526.0,
+    "laba_induk": 170143838526.0,
+    "eps_basic": 27.97,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 98559298650.0,
+    "dividen_dibayar": null
+  }
+}

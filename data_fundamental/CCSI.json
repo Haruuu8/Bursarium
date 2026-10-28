@@ -1,0 +1,101 @@
+{
+  "kode": "CCSI",
+  "nama": "PT Communication Cable Systems Indonesia Tbk",
+  "sektor": "Technology",
+  "industri": "Communication Equipment",
+  "harga": 248.0,
+  "update": "2026-10-28 20:30",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1478.0822087193833,
+    "roe": 0.003231322400357286,
+    "eps": null,
+    "de": 0.4142649940093896,
+    "margin_net": 0.011943154064751127,
+    "current_ratio": 2.496921151103369,
+    "roa": 0.0022542960876710916,
+    "bv": 0.3094708221901443
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 58786181000000.0,
+      "2025-Q2": 73683737000000.0,
+      "2025-Q3": 75733959000000.0,
+      "2026-Q1": 77308112000000.0,
+      "2026-Q2": 71531800000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.01,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0
+    },
+    "net_income": {
+      "2025-Q1": -4296961000000.0,
+      "2025-Q2": 6856661000000.0,
+      "2025-Q3": -793191000000.0,
+      "2026-Q1": 2553826000000.0,
+      "2026-Q2": -776208000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 330666672128,
+    "enterprise_value": 387805052928,
+    "shares_outstanding": 1777618000000000,
+    "free_float_pct": 27.983999973972
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2148,
+    "vol_trend": 0.91,
+    "price_chg_20d": -34.04
+  },
+  "neraca": {
+    "aset": 788546815.0,
+    "aset_lancar": 425691208.0,
+    "kas": 71334965.0,
+    "piutang_usaha": 72399862.0,
+    "persediaan": 232598512.0,
+    "aset_tetap": 7293497.0,
+    "liabilitas": 227895833.0,
+    "liabilitas_jangka_pendek": 170486444.0,
+    "liabilitas_jangka_panjang": 57409389.0,
+    "utang_usaha": 72399862.0,
+    "utang_bank": 38533494.0,
+    "ekuitas": 550120904.0,
+    "ekuitas_induk": 550120904.0,
+    "modal_saham": null,
+    "saldo_laba": 600000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 148839912.0,
+    "beban_pokok": 127459191.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2606736.0,
+    "beban_pajak": -144965.0,
+    "laba_bersih": 1777618.0,
+    "laba_induk": 1777618.0,
+    "eps_basic": 0.001,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7293497.0,
+    "dividen_dibayar": null
+  }
+}

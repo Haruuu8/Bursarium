@@ -1,0 +1,97 @@
+{
+  "kode": "KKGI",
+  "nama": "PT Resource Alam Indonesia Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 288.0,
+  "update": "2026-10-28 18:52",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 9757.866911682288,
+    "roe": 0.014936704121418353,
+    "eps": null,
+    "de": 0.20213999403923166,
+    "margin_net": 0.030683698784945854,
+    "current_ratio": 4.133761695374248,
+    "roa": 0.012400899362775835,
+    "bv": 0.030127128203251113
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 36719114000000.0,
+      "2025-Q2": 34498620000000.0,
+      "2026-Q1": 31550198000000.0,
+      "2026-Q2": 38789301000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 795114000000.0,
+      "2025-Q2": 234542000000.0,
+      "2026-Q1": 1090971000000.0,
+      "2026-Q2": 1067305000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 1403518844928,
+    "enterprise_value": 1432717099008,
+    "shares_outstanding": 4796168888888889,
+    "free_float_pct": 18.298000007961704
+  },
+  "akumulasi": {
+    "score": 5.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.012,
+    "vol_trend": 0.492,
+    "price_chg_20d": -2.04
+  },
+  "neraca": {
+    "aset": 174041893.0,
+    "aset_lancar": 76494235.0,
+    "kas": 44673165.0,
+    "piutang_usaha": 9101670.0,
+    "persediaan": 9256756.0,
+    "aset_tetap": 21359010.0,
+    "liabilitas": 29208177.0,
+    "liabilitas_jangka_pendek": 18504752.0,
+    "liabilitas_jangka_panjang": 10703425.0,
+    "utang_usaha": 9101670.0,
+    "utang_bank": 133009.0,
+    "ekuitas": 144494795.0,
+    "ekuitas_induk": 144494795.0,
+    "modal_saham": null,
+    "saldo_laba": 901434.0
+  },
+  "laba_rugi": {
+    "pendapatan": 70339499.0,
+    "beban_pokok": 56033239.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4229297.0,
+    "beban_pajak": -2423311.0,
+    "laba_bersih": 2158276.0,
+    "laba_induk": 2158276.0,
+    "eps_basic": 0.00045,
+    "eps_diluted": 0.00045
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 690456.0,
+    "dividen_dibayar": 4523641.0
+  }
+}

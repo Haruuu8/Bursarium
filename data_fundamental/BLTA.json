@@ -1,0 +1,101 @@
+{
+  "kode": "BLTA",
+  "nama": "PT Berlian Laju Tanker Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 31.0,
+  "update": "2026-10-28 18:35",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 21428.645323540626,
+    "roe": 0.014706394443047333,
+    "eps": null,
+    "de": 1.182039775848116,
+    "margin_net": 0.04057566266972196,
+    "current_ratio": 1.1236498995775828,
+    "roa": 0.006739746271275575,
+    "bv": 0.0020399289653340526
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 13079911000000.0,
+      "2025-Q2": 12322184000000.0,
+      "2025-Q3": 11465427000000.0,
+      "2026-Q1": 12045279000000.0,
+      "2026-Q2": 12820464000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": -520781000000.0,
+      "2025-Q2": 2481693000000.0,
+      "2025-Q3": 608670000000.0,
+      "2026-Q1": 548604000000.0,
+      "2026-Q2": 460340000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 803183984640,
+    "enterprise_value": 803241656320,
+    "shares_outstanding": 33631466666666664,
+    "free_float_pct": 71.21726958391807
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1814,
+    "vol_trend": 1.593,
+    "price_chg_20d": -20.51
+  },
+  "neraca": {
+    "aset": 149700591.0,
+    "aset_lancar": 28671852.0,
+    "kas": 12269373.0,
+    "piutang_usaha": 6503577.0,
+    "persediaan": 2614627.0,
+    "aset_tetap": 74190482.0,
+    "liabilitas": 81094788.0,
+    "liabilitas_jangka_pendek": 25516713.0,
+    "liabilitas_jangka_panjang": 55578075.0,
+    "utang_usaha": 6503577.0,
+    "utang_bank": 767505.0,
+    "ekuitas": 68605803.0,
+    "ekuitas_induk": 68605803.0,
+    "modal_saham": null,
+    "saldo_laba": 5898328.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24865743.0,
+    "beban_pokok": 20115850.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1293460.0,
+    "beban_pajak": -284516.0,
+    "laba_bersih": 1008944.0,
+    "laba_induk": 1008944.0,
+    "eps_basic": 3e-05,
+    "eps_diluted": 3e-05
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 16010438.0,
+    "dividen_dibayar": null
+  }
+}

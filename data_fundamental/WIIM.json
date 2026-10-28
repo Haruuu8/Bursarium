@@ -1,0 +1,101 @@
+{
+  "kode": "WIIM",
+  "nama": "PT Wismilak Inti Makmur Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Tobacco",
+  "harga": 1435.0,
+  "update": "2026-10-28 19:41",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 9.873400302738407,
+    "pb": null,
+    "ps": 462203.93349483877,
+    "roe": 0.132250998244804,
+    "eps": null,
+    "de": 0.4796482356211264,
+    "margin_net": 0.09381976745149467,
+    "current_ratio": 2.483752421018417,
+    "roa": 0.08932194828375978,
+    "bv": 0.0010989709108355276
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1361977866712.0,
+      "2025-Q2": 1517233401656.0,
+      "2025-Q3": 1729100066968.0,
+      "2026-Q1": 1610941678783.0,
+      "2026-Q2": 1622016233704.0
+    },
+    "eps": {
+      "2025-Q1": 35.23,
+      "2025-Q2": 36.2,
+      "2025-Q3": 65.85,
+      "2026-Q1": 70.96,
+      "2026-Q2": 74.38
+    },
+    "net_income": {
+      "2025-Q1": 7.3128920617e+16,
+      "2025-Q2": 7.5150439903e+16,
+      "2025-Q3": 1.36685508366e+17,
+      "2026-Q1": 1.48083246606e+17,
+      "2026-Q2": 1.55232112924e+17
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 2994706841600,
+    "enterprise_value": 2954274799616,
+    "shares_outstanding": 2086936559309206,
+    "free_float_pct": 36.44399998589298
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1889,
+    "vol_trend": 0.548,
+    "price_chg_20d": -3.37
+  },
+  "neraca": {
+    "aset": 3395753959222.0,
+    "aset_lancar": 2592542031277.0,
+    "kas": 199617349150.0,
+    "piutang_usaha": 215918412144.0,
+    "persediaan": 1991191153395.0,
+    "aset_tetap": 101594522848.0,
+    "liabilitas": 1100064868819.0,
+    "liabilitas_jangka_pendek": 1043800504969.0,
+    "liabilitas_jangka_panjang": 56264363850.0,
+    "utang_usaha": 215918412144.0,
+    "utang_bank": 175000000000.0,
+    "ekuitas": 2293482571440.0,
+    "ekuitas_induk": 2293482571440.0,
+    "modal_saham": null,
+    "saldo_laba": 16000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3232957912487.0,
+    "beban_pokok": 2461211960275.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 389582126325.0,
+    "beban_pajak": -86017343484.0,
+    "laba_bersih": 303315359530.0,
+    "laba_induk": 303315359530.0,
+    "eps_basic": 145.34,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 101594522848.0,
+    "dividen_dibayar": 217977942839.0
+  }
+}

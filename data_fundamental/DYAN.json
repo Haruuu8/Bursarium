@@ -1,0 +1,101 @@
+{
+  "kode": "DYAN",
+  "nama": "PT Dyandra Media International Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 72.0,
+  "update": "2026-10-28 18:44",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 7.12166172106825,
+    "pb": null,
+    "ps": 0.22755830987072928,
+    "roe": 0.05824088197436867,
+    "eps": null,
+    "de": 0.7196489043228658,
+    "margin_net": 0.05531204040754378,
+    "current_ratio": 1.8025413598138258,
+    "roa": 0.03320197198751376,
+    "bv": 0.00017358940416543363
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.76982007698e+17,
+      "2025-Q2": 2.9128444674299994e+17,
+      "2025-Q3": 2.79488126564e+17,
+      "2026-Q1": 4.10639094622e+17,
+      "2026-Q2": 3.70123633634e+17
+    },
+    "eps": {
+      "2025-Q1": 4.62,
+      "2025-Q2": 2.96,
+      "2025-Q3": 4.27,
+      "2026-Q1": 7.12,
+      "2026-Q2": 2.99
+    },
+    "net_income": {
+      "2025-Q1": 1.9747639794e+16,
+      "2025-Q2": 1.265003087e+16,
+      "2025-Q3": 1.8240549231e+16,
+      "2026-Q1": 3.040404143e+16,
+      "2026-Q2": 1.2781538144e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 307653443584,
+    "enterprise_value": 235226365952,
+    "shares_outstanding": 4271570679920870,
+    "free_float_pct": 31.646000006264035
+  },
+  "akumulasi": {
+    "score": 2.6,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1269,
+    "vol_trend": 0.267,
+    "price_chg_20d": -10.0
+  },
+  "neraca": {
+    "aset": 1300693211543.0,
+    "aset_lancar": 684801651767.0,
+    "kas": 314551602930.0,
+    "piutang_usaha": 159689369487.0,
+    "persediaan": 16154163180.0,
+    "aset_tetap": 474527517994.0,
+    "liabilitas": 533619237371.0,
+    "liabilitas_jangka_pendek": 379908981305.0,
+    "liabilitas_jangka_panjang": 153710256066.0,
+    "utang_usaha": 159689369487.0,
+    "utang_bank": 81142500000.0,
+    "ekuitas": 741499409178.0,
+    "ekuitas_induk": 741499409178.0,
+    "modal_saham": null,
+    "saldo_laba": 20000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 780762728256.0,
+    "beban_pokok": 558751533218.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 48223564445.0,
+    "beban_pajak": -5528243948.0,
+    "laba_bersih": 43185579574.0,
+    "laba_induk": 43185579574.0,
+    "eps_basic": 10.11,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 23021267543.0,
+    "dividen_dibayar": 66478053.0
+  }
+}

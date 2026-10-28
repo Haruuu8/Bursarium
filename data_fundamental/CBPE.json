@@ -1,0 +1,104 @@
+{
+  "kode": "CBPE",
+  "nama": "PT Citra Buana Prasida Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 486.0,
+  "update": "2026-10-28 18:09",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 14.294117647058824,
+    "pb": null,
+    "ps": 6.631853052288382,
+    "roe": 0.12475390872498678,
+    "eps": null,
+    "de": 0.13588074873535205,
+    "margin_net": 0.6043074178850237,
+    "current_ratio": 4.151654165270227,
+    "roa": 0.10982935108995155,
+    "bv": 0.00027253655093846524
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.8682634028e+16,
+      "2025-Q2": 1.7024725708e+16,
+      "2025-Q3": 2.3156187991e+16,
+      "2026-Q1": 3.1423358728e+16,
+      "2026-Q2": 1.8690148106e+16,
+      "2026-Q3": 2.6433863122e+16
+    },
+    "eps": {
+      "2025-Q1": 6.0,
+      "2025-Q2": 5.0,
+      "2025-Q3": 9.0,
+      "2026-Q1": 16.0,
+      "2026-Q2": 7.0,
+      "2026-Q3": 11.0
+    },
+    "net_income": {
+      "2025-Q1": 7764783860000000.0,
+      "2025-Q2": 7673313942000000.0,
+      "2025-Q3": 1.1460455447e+16,
+      "2026-Q1": 2.1187404497e+16,
+      "2026-Q2": 1.0639362452e+16,
+      "2026-Q3": 1.4431376535e+16
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 659137495040,
+    "enterprise_value": 525438976000,
+    "shares_outstanding": 1360533631882353,
+    "free_float_pct": 20.0
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3965,
+    "vol_trend": 0.92,
+    "price_chg_20d": -4.71
+  },
+  "neraca": {
+    "aset": 421181979361.0,
+    "aset_lancar": 183217004880.0,
+    "kas": 155440772323.0,
+    "piutang_usaha": 9740922788.0,
+    "persediaan": 10301214694.0,
+    "aset_tetap": 106651300.0,
+    "liabilitas": 50383921722.0,
+    "liabilitas_jangka_pendek": 44131085487.0,
+    "liabilitas_jangka_panjang": 6252836235.0,
+    "utang_usaha": 9740922788.0,
+    "utang_bank": 4963954855.0,
+    "ekuitas": 370795143469.0,
+    "ekuitas_induk": 370795143469.0,
+    "modal_saham": null,
+    "saldo_laba": 27125000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 76547369956.0,
+    "beban_pokok": 21755685140.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 50414483971.0,
+    "beban_pajak": -4156308463.0,
+    "laba_bersih": 46258143484.0,
+    "laba_induk": 46258143484.0,
+    "eps_basic": 34.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 106651300.0,
+    "dividen_dibayar": 1356250000.0
+  }
+}

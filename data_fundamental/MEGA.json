@@ -1,0 +1,101 @@
+{
+  "kode": "MEGA",
+  "nama": "PT Bank Mega Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 1935.0,
+  "update": "2026-10-28 18:57",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 35.58947949236712,
+    "pb": 2.0315443207530453,
+    "ps": 4.637015452413096,
+    "roe": 0.05708272078638978,
+    "eps": null,
+    "de": 5.478322779440671,
+    "margin_net": 0.27282922407371235,
+    "current_ratio": null,
+    "roa": 0.008811342492465037,
+    "bv": 952.4773741006751
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2574284000000.0,
+      "2025-Q2": 2621668000000.0,
+      "2025-Q3": 2497747000000.0,
+      "2026-Q1": 2330500000000.0,
+      "2026-Q2": 2349094000000.0
+    },
+    "eps": {
+      "2025-Q1": 45.0,
+      "2025-Q2": 70.98,
+      "2025-Q3": 71.37,
+      "2026-Q1": 55.0,
+      "2026-Q2": -0.63
+    },
+    "net_income": {
+      "2025-Q1": 532492000000.0,
+      "2025-Q2": 829267000000.0,
+      "2025-Q3": 838147000000.0,
+      "2026-Q1": 650980000000.0,
+      "2026-Q2": 625750000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 45437373382656,
+    "enterprise_value": 68292081352704,
+    "shares_outstanding": 23482251241,
+    "free_float_pct": 41.979000000908364
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.8236,
+    "vol_trend": 0.652,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 144896195.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 6524138.0,
+    "liabilitas": 122529882.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 22366313.0,
+    "ekuitas_induk": 22366313.0,
+    "modal_saham": null,
+    "saldo_laba": 8602825.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4679594.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 1577604.0,
+    "laba_sebelum_pajak": 1588916.0,
+    "beban_pajak": -312186.0,
+    "laba_bersih": 1276730.0,
+    "laba_induk": 1276730.0,
+    "eps_basic": 54.37,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1002103000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 2018820.0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "kode": "SRAJ",
+  "nama": "PT Sejahteraraya Anugrahjaya Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 10975.0,
+  "update": "2026-10-28 19:15",
+  "periode_terbaru": "2026-tw2",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.0001678133185507955,
+    "roe": -0.224627017082255,
+    "eps": 2332568.5736635863,
+    "de": 5.995485004025673,
+    "margin_net": -0.18792006617374293,
+    "current_ratio": 1.3979982339238797,
+    "roa": -0.03210245305739335,
+    "bv": 88.99931047164081
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.00431814406e+17,
+      "2025-Q2": -8.00430625531383e+17,
+      "2025-Q3": 686193383026.0,
+      "2026-Q1": 644900000000.0,
+      "2026-Q2": 657127000000.0
+    },
+    "eps": {
+      "2025-Q1": -2.33,
+      "2025-Q2": -3.03,
+      "2025-Q3": -1.87,
+      "2026-Q1": -7.4,
+      "2026-Q2": 7.4
+    },
+    "net_income": {
+      "2025-Q1": -2.8548546586e+16,
+      "2025-Q2": -3.7002165871e+16,
+      "2025-Q3": 6.5550623995e+16,
+      "2026-Q1": -90596000000.0,
+      "2026-Q2": -154081000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 134322585600000,
+    "enterprise_value": 138725120016384,
+    "shares_outstanding": 12238959990,
+    "free_float_pct": 14.855999999065281
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.4985,
+    "vol_trend": 1.621,
+    "price_chg_20d": -15.58
+  },
+  "neraca": {
+    "aset": 7621754.0,
+    "aset_lancar": 2186356.0,
+    "kas": 1530185.0,
+    "piutang_usaha": 491029.0,
+    "persediaan": 67583.0,
+    "aset_tetap": 121032.0,
+    "liabilitas": 6530636.0,
+    "liabilitas_jangka_pendek": 1563919.0,
+    "liabilitas_jangka_panjang": 4966717.0,
+    "utang_usaha": 491029.0,
+    "utang_bank": 78871.0,
+    "ekuitas": 1089259.0,
+    "ekuitas_induk": 1089259.0,
+    "modal_saham": null,
+    "saldo_laba": 7000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1302027.0,
+    "beban_pokok": 788958.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -272934.0,
+    "beban_pajak": 28327.0,
+    "laba_bersih": -244677.0,
+    "laba_induk": -244677.0,
+    "eps_basic": -1.9e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 121032.0,
+    "dividen_dibayar": null
+  }
+}

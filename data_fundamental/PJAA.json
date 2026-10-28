@@ -1,0 +1,104 @@
+{
+  "kode": "PJAA",
+  "nama": "PT Pembangunan Jaya Ancol Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Leisure",
+  "harga": 416.0,
+  "update": "2026-10-28 19:07",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
+  "rasio_kunci": {
+    "pe": 26.0,
+    "pb": 0.36133121681056973,
+    "ps": 0.6076514579582777,
+    "roe": 0.01389735449271422,
+    "eps": null,
+    "de": 0.9018173885207874,
+    "margin_net": 0.03243136763310113,
+    "current_ratio": 1.0105538898873883,
+    "roa": 0.007266963604991774,
+    "bv": 1151.2982566853357
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 210797000000.0,
+      "2025-Q2": 284667000000.0,
+      "2025-Q3": 303065000000.0,
+      "2026-Q1": 207575000000.0,
+      "2026-Q2": 291092000000.0,
+      "2026-Q3": 283107000000.0
+    },
+    "eps": {
+      "2025-Q1": -7.0,
+      "2025-Q2": 7.0,
+      "2025-Q3": 37.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": 1.0,
+      "2026-Q3": 15.0
+    },
+    "net_income": {
+      "2025-Q1": -11171000000.0,
+      "2025-Q2": 32867000000.0,
+      "2025-Q3": 36929000000.0,
+      "2026-Q1": -38804000000.0,
+      "2026-Q2": 39837000000.0,
+      "2026-Q3": 24321000000.0
+    },
+    "note": "standalone"
+  },
+  "riwayat": {
+    "eps": {},
+    "revenue_per_share": {}
+  },
+  "statistik": {
+    "market_cap": 665600000000,
+    "enterprise_value": 1117113024512,
+    "shares_outstanding": 1584625000,
+    "free_float_pct": 9.9910000249775
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5195,
+    "vol_trend": 0.725,
+    "price_chg_20d": -7.56
+  },
+  "neraca": {
+    "aset": 3488940.0,
+    "aset_lancar": 747247.0,
+    "kas": 335068.0,
+    "piutang_usaha": 57915.0,
+    "persediaan": 7142.0,
+    "aset_tetap": 2428307.0,
+    "liabilitas": 1645254.0,
+    "liabilitas_jangka_pendek": 739443.0,
+    "liabilitas_jangka_panjang": 905811.0,
+    "utang_usaha": 57915.0,
+    "utang_bank": 25553.0,
+    "ekuitas": 1824376.0,
+    "ekuitas_induk": 1824376.0,
+    "modal_saham": null,
+    "saldo_laba": 48390.0
+  },
+  "laba_rugi": {
+    "pendapatan": 781774.0,
+    "beban_pokok": 463070.0,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 65856.0,
+    "beban_pajak": -40554.0,
+    "laba_bersih": 25354.0,
+    "laba_induk": 25354.0,
+    "eps_basic": 16.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8237.0,
+    "dividen_dibayar": 41680.0
+  }
+}
