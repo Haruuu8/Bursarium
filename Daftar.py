@@ -9,7 +9,12 @@ from quant.theme import load_theme, hero, section_title, info_banner
 from quant.auth import submit_registration, get_all_approved_users_for_auth
 
 # 1. SET PAGE CONFIG (Wajib paling atas)
-st.set_page_config(page_title="Bursarium", layout="wide")
+# DITAMBAHKAN toolbar_mode="viewer" AGAR MENU DEVELOPER HILANG
+st.set_page_config(
+    page_title="Bursarium", 
+    layout="wide", 
+    toolbar_mode="viewer" 
+)
 
 # 2. LOAD TEMA
 load_theme()
@@ -68,7 +73,7 @@ if st.session_state.get("authentication_status"):
         st.Page("views/Dashboard.py", title="Dashboard", icon=":material/dashboard:", default=True),
         st.Page("views/Fundamental.py", title="Fundamental", icon=":material/analytics:"),
         st.Page("views/Technical.py", title="Technical", icon=":material/trending_up:"),
-        st.Page("views/Laporan_Keuangan.py", title="Laporan Keuangan", icon=":material/newspaper:"),
+        st.Page("views/Laporan_Keuangan.py", title="Financial Report", icon=":material/description:"),
         st.Page("views/Watchlist.py", title="Watchlist", icon=":material/star:"),
         st.Page("views/Valuation.py", title="Valuation", icon=":material/payments:"),
         st.Page("views/News.py", title="News", icon=":material/newspaper:"),
