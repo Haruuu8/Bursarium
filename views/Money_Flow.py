@@ -134,12 +134,17 @@ if not saham_list:
 if "mf_kode" not in st.session_state:
     st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
-col_sel, col_cap = st.columns([2, 3])
+ccol_sel, col_cap = st.columns([1, 2])
 with col_sel:
     kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
 with col_cap:
-    st.markdown("<br><br>", unsafe_allow_html=True)
-    st.caption("Grafik Statis. Data menggunakan Daily (1 Hari).")
+    # Menggunakan flexbox HTML agar teks sejajar persis di tengah kotak input
+    st.markdown(
+        '<div style="display: flex; align-items: center; height: 100%; padding-top: 28px; color: #a3a3a3; font-size: 14px; font-weight: 500;">'
+        'Grafik Statis. Data menggunakan Daily (1 Hari).'
+        '</div>',
+        unsafe_allow_html=True
+    )
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:

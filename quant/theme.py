@@ -30,9 +30,7 @@ html, body, [class*="css"] {
 }
 html { scroll-behavior: smooth; }
 
-/* ============================================================
-   BUNUH SPINNER (RUNNING) TOTAL
-   ============================================================ */
+/* BUNUH SPINNER */
 .stSpinner, [data-testid="stSpinner"], [data-testid="stStatusWidget"], 
 [data-testid="stSpinnerContainer"], [data-testid="stLoadingIndicator"],
 [data-testid="stStatusWidgetContainer"] {
@@ -45,9 +43,7 @@ html { scroll-behavior: smooth; }
     z-index: -9999 !important;
 }
 
-/* ============================================================
-   ALERTS (INFO, SUCCESS, WARNING) JADI HITAM
-   ============================================================ */
+/* ALERTS */
 [data-testid="stNotification"], [data-testid="stAlert"] {
     background-color: #171717 !important;
     color: #ffffff !important;
@@ -79,9 +75,7 @@ html { scroll-behavior: smooth; }
     max-width: 1250px !important;
 }
 
-/* ============================================================
-   GLOBAL FOOTER
-   ============================================================ */
+/* GLOBAL FOOTER */
 .block-container::after {
     content: "© 2026 Bursarium · @bursarium · Data by Yahoo Finance";
     display: block;
@@ -134,9 +128,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* ============================================================
-   STYLING UNTUK ST.FORM (KOTAK INPUT)
-   ============================================================ */
+/* STYLING UNTUK ST.FORM */
 [data-testid="stForm"] {
     background-color: #171717 !important;
     border: 1px solid #27272a !important;
@@ -145,8 +137,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   INPUTS & TOMBOL PLUS MINUS (NUMBER INPUT) - FIX TOTAL
+   SEMUA INPUT (Number, Text, Select) DISERAGAMKAN (8px)
    ============================================================ */
+
+/* NUMBER INPUT */
 div[data-testid="stNumberInput"] > div {
     background-color: #171717 !important; 
     border: 1px solid #404040 !important;
@@ -196,13 +190,11 @@ div[data-testid="stNumberInput"] button svg {
     color: #ffffff !important;
 }
 
-/* ============================================================
-   CUSTOM SEARCH BAR / TEXT INPUT (FIX TOTAL WARNA BIRU)
-   ============================================================ */
+/* TEXT INPUT (Searchbar & Kode Saham) - DISERAGAMKAN JADI 8px */
 div[data-testid="stTextInput"] > div[data-baseweb="input"] {
     background-color: #171717 !important; 
     border: 1px solid #404040 !important;
-    border-radius: 50px !important; 
+    border-radius: 8px !important; /* Ganti dari 50px ke 8px agar sama */
     padding: 0 !important;
     overflow: hidden !important;
     transition: all 0.3s ease !important;
@@ -217,7 +209,7 @@ div[data-testid="stTextInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
     font-weight: 600 !important;
-    padding: 12px 20px !important;
+    padding: 10px 14px !important; /* Samakan padding dengan number input */
     font-size: 15px !important;
     border: none !important;
     box-shadow: none !important;
@@ -226,6 +218,7 @@ div[data-testid="stTextInput"] input::placeholder {
     color: #737373 !important; 
     font-weight: 400 !important;
 }
+/* Counter 4/6 */
 div[data-testid="stTextInput"] > div[data-baseweb="input"] > div:last-child {
     background-color: #262626 !important;
     color: #a3a3a3 !important;
@@ -235,53 +228,41 @@ div[data-testid="stTextInput"] > div[data-baseweb="input"] > div:last-child {
     align-items: center !important;
     font-size: 13px !important;
     font-weight: 600 !important;
-    border-radius: 0 50px 50px 0 !important;
+    border-radius: 0 8px 8px 0 !important; /* Ujung kanan ikut 8px */
 }
 div[data-testid="stTextInput"] > div[data-baseweb="input"]:focus-within {
-    border-color: #ffffff !important; 
-    box-shadow: 0 0 0 1px #ffffff !important; 
-    background-color: #0a0a0a !important; 
+    border-color: #737373 !important; 
+    box-shadow: 0 0 0 1px #737373 !important; 
+    background-color: #262626 !important; 
 }
 div[data-testid="stTextInput"] input:focus {
     outline: none !important;
     box-shadow: none !important;
 }
 
-
-/* ============================================================
-   SELECTBOX FIX (BUNUH WARNA BIRU TOTAL DENGAN PAHAT GODAM)
-   ============================================================ */
-/* 1. Kotak Luar */
+/* SELECTBOX - DISERAGAMKAN JADI 8px */
 div[data-testid="stSelectbox"] > div {
     background-color: #171717 !important;
     border: 1px solid #404040 !important;
-    border-radius: 8px !important;
+    border-radius: 8px !important; /* Sama dengan input lain */
     box-shadow: none !important;
     transition: all 0.2s ease !important;
 }
-
-/* 2. Bunuh paksa SEMUA background di dalam selectbox */
 div[data-testid="stSelectbox"] div[data-baseweb="select"],
 div[data-testid="stSelectbox"] div[data-baseweb="select"] * {
     background-color: transparent !important;
     background: transparent !important;
     box-shadow: none !important;
 }
-
-/* 3. Paksa teks dan panah jadi putih */
 div[data-testid="stSelectbox"] * {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important; 
     font-weight: 600 !important;
 }
-
-/* 4. Efek saat kotak diklik (Focus) */
 div[data-testid="stSelectbox"] > div:focus-within {
     border-color: #737373 !important;
     box-shadow: 0 0 0 1px #737373 !important;
 }
-
-/* 5. List Dropdown saat diklik (Berada di luar div stSelectbox) */
 ul[data-testid="stSelectboxVirtualDropdown"] {
     background-color: #171717 !important;
     border: 1px solid #27272a !important;
@@ -296,10 +277,7 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     color: #ffffff !important;
 }
 
-
-/* ============================================================
-   SLIDER & CHECKBOX
-   ============================================================ */
+/* SLIDER & CHECKBOX */
 [data-testid="stSlider"] [role="slider"] {
     background-color: #ffffff !important;
     border: 2px solid #0a0a0a !important;
@@ -317,7 +295,6 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
     color: #ffffff !important;
     font-weight: 700 !important;
 }
-
 [data-testid="stCheckbox"] input:checked + div {
     background-color: #ffffff !important;
     border-color: #ffffff !important;
@@ -350,7 +327,6 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
 .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] {
     display: none !important;
 }
-
 [data-testid="stExpander"] {
     background: #171717 !important;
     border: 1px solid #27272a !important;
