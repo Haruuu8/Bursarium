@@ -3,53 +3,49 @@
   "nama": "PT Fore Kopi Indonesia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 590.0,
-  "update": "2026-10-26 23:21",
-  "periode_terbaru": "2026-tw2",
+  "harga": 585.0,
+  "update": "2026-10-28 14:24",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 5.0308760991474934e-05,
-    "pb": 7.132816298644283,
-    "ps": -7.943943634133953e-06,
-    "roe": 0.07657492189317033,
-    "eps": 11727579.617792185,
-    "de": 0.707179150928853,
-    "margin_net": 0.056211428288455774,
-    "current_ratio": 1.2264354807675744,
-    "roa": 0.044854649174638155,
-    "bv": 82.71627577344728
+    "pe": 4.827069065389416e-05,
+    "pb": 6.762643368040515,
+    "ps": -7.876623705265644e-06,
+    "roe": 0.11666791187581979,
+    "eps": 12119155.373071218,
+    "de": 0.7814555602939809,
+    "margin_net": 0.056354124599552,
+    "current_ratio": 1.0714161100998678,
+    "roa": 0.06549021736841244,
+    "bv": 86.50463556375657
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": -6.623717151471776e+17,
-      "2025-Q4": 455381949971.0,
       "2026-Q1": 4.44458712375e+17,
-      "2026-Q2": -4.444577074402177e+17
+      "2026-Q2": -4.444577074402177e+17,
+      "2026-Q3": 592231236131.0
     },
     "eps": {
       "2025-Q3": 1.93,
-      "2025-Q4": 3.44,
       "2026-Q1": 1.06,
-      "2026-Q2": 5.27
+      "2026-Q2": 5.27,
+      "2026-Q3": 3.76
     },
     "net_income": {
       "2025-Q3": 1.8076088857e+16,
-      "2025-Q4": 3.0025860092e+16,
       "2026-Q1": 9431593245000000.0,
-      "2026-Q2": 4.7057226205e+16
+      "2026-Q2": 4.7057226205e+16,
+      "2026-Q3": 3.3518073359e+16
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2025": 10.95
-    },
-    "revenue_per_share": {
-      "2025": 1497134772364.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 5261831962624,
+    "market_cap": 5217240219648,
     "enterprise_value": 5377024327680,
     "shares_outstanding": 8918359270,
     "free_float_pct": 15.078999996374895
@@ -58,45 +54,45 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2305,
-    "vol_trend": 0.746,
-    "price_chg_20d": -26.25
+    "cmf": -0.2818,
+    "vol_trend": 0.776,
+    "price_chg_20d": -27.5
   },
   "neraca": {
-    "aset": 1259374902924.0,
-    "aset_lancar": 462997911462.0,
-    "kas": 263964211784.0,
-    "piutang_usaha": 12301862580.0,
-    "persediaan": 145786220196.0,
-    "aset_tetap": 7737624982.0,
-    "liabilitas": 521681438100.0,
-    "liabilitas_jangka_pendek": 377515098611.0,
-    "liabilitas_jangka_panjang": 144166339489.0,
-    "utang_usaha": 12301862580.0,
-    "utang_bank": 9981999011.0,
-    "ekuitas": 737693464824.0,
-    "ekuitas_induk": 737693464824.0,
+    "aset": 1374356299700.0,
+    "aset_lancar": 469291822826.0,
+    "kas": 233248405160.0,
+    "piutang_usaha": 9575373014.0,
+    "persediaan": 180404636233.0,
+    "aset_tetap": 6852613076.0,
+    "liabilitas": 602876881222.0,
+    "liabilitas_jangka_pendek": 438010795621.0,
+    "liabilitas_jangka_panjang": 164866085601.0,
+    "utang_usaha": 9575373014.0,
+    "utang_bank": 8010966332.0,
+    "ekuitas": 771479418478.0,
+    "ekuitas_induk": 771479418478.0,
     "modal_saham": null,
-    "saldo_laba": -121308031902.0
+    "saldo_laba": -87789958543.0
   },
   "laba_rugi": {
-    "pendapatan": 1004934782303.0,
-    "beban_pokok": 382919773796.0,
+    "pendapatan": 1597166018434.0,
+    "beban_pokok": 612082871438.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 78106960365.0,
-    "beban_pajak": 175962134.0,
-    "laba_bersih": 56488819450.0,
-    "laba_induk": 56488819450.0,
-    "eps_basic": 6.33,
+    "laba_sebelum_pajak": 124039132098.0,
+    "beban_pajak": -34032239289.0,
+    "laba_bersih": 90006892809.0,
+    "laba_induk": 90006892809.0,
+    "eps_basic": 10.09,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 7737624982.0,
+    "capex": 6852613076.0,
     "dividen_dibayar": null
   }
 }

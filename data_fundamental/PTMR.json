@@ -4,66 +4,57 @@
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
   "harga": 374.0,
-  "update": "2026-10-26 23:18",
-  "periode_terbaru": "2026-tw2",
+  "update": "2026-10-28 14:33",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 6.991976865366653,
-    "ps": 4.513336826203835e-06,
-    "roe": 0.07899602584595358,
-    "eps": -14391945.524456521,
-    "de": 0.6451268572571507,
-    "margin_net": 0.1068877998559424,
-    "current_ratio": 2.8599762435483442,
-    "roa": 0.04793049230938054,
-    "bv": 53.48987950067935
+    "pb": 8.728265931286844,
+    "ps": 5.7603308676855605e-06,
+    "roe": 0.11254445302566399,
+    "eps": -1404974.4934452018,
+    "de": 0.6218166138646762,
+    "margin_net": 0.10237948215455175,
+    "current_ratio": 2.78368532039369,
+    "roa": 0.06924959366690427,
+    "bv": 42.84929021919245
   },
   "quarterly": {
     "revenue": {
-      "2024-Q4": 3.9348642497e+16,
       "2025-Q1": 3.6504308302e+16,
       "2025-Q2": 2.6815709353e+16,
       "2025-Q3": 3.3988747555e+16,
-      "2025-Q4": 2.9798201162e+16,
       "2026-Q1": 2.9420913238e+16,
-      "2026-Q2": 2.8770182494e+16
+      "2026-Q2": 2.8770182494e+16,
+      "2026-Q3": 3.1635613912e+16
     },
     "eps": {
-      "2024-Q4": -259415.09,
       "2025-Q1": 4.54,
       "2025-Q2": -0.59,
       "2025-Q3": -31.95,
-      "2025-Q4": 41.61,
       "2026-Q1": 2.21,
-      "2026-Q2": 1.09
+      "2026-Q2": 1.09,
+      "2026-Q3": 1.58
     },
     "net_income": {
-      "2024-Q4": -282115437000000.0,
       "2025-Q1": 1669355541000000.0,
       "2025-Q2": -216492278000000.0,
       "2025-Q3": -1.1875698376e+16,
-      "2025-Q4": -1.552916363e+16,
       "2026-Q1": 4237843262000000.0,
-      "2026-Q2": 1982074932000000.0
+      "2026-Q2": 1982074932000000.0,
+      "2026-Q3": 2976493823000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2024": 23.03,
-      "2025": 13.61
-    },
-    "revenue_per_share": {
-      "2024": 1.28819630161e+17,
-      "2025": 1.27106966372e+17
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 550528024576,
+    "market_cap": 713217998848,
     "enterprise_value": 558255570944,
-    "shares_outstanding": 1472000000,
-    "free_float_pct": 22.811
+    "shares_outstanding": 1907000000,
+    "free_float_pct": 17.607651809124278
   },
   "akumulasi": {
     "score": 5.0,
@@ -74,40 +65,40 @@
     "price_chg_20d": 0.0
   },
   "neraca": {
-    "aset": 129769545321.0,
-    "aset_lancar": 101975818538.0,
-    "kas": 1104647443.0,
-    "piutang_usaha": 14932738281.0,
-    "persediaan": 17624720497.0,
-    "aset_tetap": 20390224207.0,
-    "liabilitas": 50795419566.0,
-    "liabilitas_jangka_pendek": 35656176784.0,
-    "liabilitas_jangka_panjang": 15139242782.0,
-    "utang_usaha": 14932738281.0,
-    "utang_bank": 1641733000.0,
-    "ekuitas": 78737102625.0,
-    "ekuitas_induk": 78737102625.0,
+    "aset": 132800952757.0,
+    "aset_lancar": 105329513874.0,
+    "kas": 1185369625.0,
+    "piutang_usaha": 16503953365.0,
+    "persediaan": 18487736105.0,
+    "aset_tetap": 20035277308.0,
+    "liabilitas": 50810871850.0,
+    "liabilitas_jangka_pendek": 37838154012.0,
+    "liabilitas_jangka_panjang": 12972717838.0,
+    "utang_usaha": 16503953365.0,
+    "utang_bank": 2009632858.0,
+    "ekuitas": 81713596448.0,
+    "ekuitas_induk": 81713596448.0,
     "modal_saham": null,
     "saldo_laba": 370000000.0
   },
   "laba_rugi": {
-    "pendapatan": 58191095732.0,
-    "beban_pokok": 40944135616.0,
+    "pendapatan": 89826709644.0,
+    "beban_pokok": 62782619654.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 8631405977.0,
-    "beban_pajak": -2346776845.0,
-    "laba_bersih": 6219918194.0,
-    "laba_induk": 6219918194.0,
-    "eps_basic": 3.3,
+    "laba_sebelum_pajak": 12860585675.0,
+    "beban_pajak": -3560001391.0,
+    "laba_bersih": 9196412017.0,
+    "laba_induk": 9196412017.0,
+    "eps_basic": 4.88,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 675058400.0,
+    "capex": null,
     "dividen_dibayar": null
   }
 }

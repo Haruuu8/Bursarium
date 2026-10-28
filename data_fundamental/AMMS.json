@@ -3,8 +3,8 @@
   "nama": "PT Agung Menjangan Mas Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 102.0,
-  "update": "2026-10-26 22:42",
+  "harga": 99.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.7353194464636876,
-    "ps": 18.11598938032414,
+    "pb": 1.6842806392147556,
+    "ps": 17.583166163255786,
     "roe": -0.021479904347250934,
     "eps": -2.525126135,
     "de": 0.021964422762301043,
@@ -29,22 +29,12 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2022": 1.35,
-      "2023": 0.19,
-      "2024": 0.09,
-      "2025": -0.38
-    },
-    "revenue_per_share": {
-      "2022": 9981424190000000.0,
-      "2023": 1.0309548266e+16,
-      "2024": 1.1495526042e+16,
-      "2025": 1.5638309272e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 122399997952,
-    "enterprise_value": 118174932992,
+    "market_cap": 118799998976,
+    "enterprise_value": 109774929920,
     "shares_outstanding": 1200000000,
     "free_float_pct": 24.9
   },
@@ -52,9 +42,9 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4312,
-    "vol_trend": 3.573,
-    "price_chg_20d": -50.49
+    "cmf": -0.4486,
+    "vol_trend": 4.934,
+    "price_chg_20d": -52.45
   },
   "neraca": {
     "aset": 72083814655.0,

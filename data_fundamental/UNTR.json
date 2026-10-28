@@ -1,105 +1,104 @@
 {
   "kode": "UNTR",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-27 12:38",
-  "periode_terbaru": "2026-tw1",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "nama": "PT United Tractors Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 25425.0,
+  "update": "2026-10-28 14:37",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": null,
-    "ps": null,
-    "roe": 0.006693577955817293,
-    "eps": null,
-    "de": 0.8460822290516956,
-    "margin_net": 0.022510089975220356,
-    "current_ratio": 1.159772612429901,
-    "roa": 0.0035223131086711094,
-    "bv": null
+    "pe": 11.370853463145128,
+    "pb": 0.8999663961593123,
+    "ps": 0.7263320293342544,
+    "roe": 0.04524945422276292,
+    "eps": 2235.9799185177044,
+    "de": 0.8003866540022155,
+    "margin_net": 0.04943153181592964,
+    "current_ratio": 1.2112755878220312,
+    "roa": 0.024426491019415804,
+    "bv": 28251.05482660628
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 35043483000000.0,
-      "2026-Q1": 28554084000000.0
+      "2025-Q1": 34260783000000.0,
+      "2025-Q2": 34264503000000.0,
+      "2025-Q3": 31939917000000.0,
+      "2026-Q1": 28554084000000.0,
+      "2026-Q2": 29735327000000.0,
+      "2026-Q3": 32045196000000.0
     },
     "eps": {
-      "2024-Q3": 1668.0,
-      "2026-Q1": 181.0
+      "2025-Q1": 878.0,
+      "2025-Q2": 1361.0,
+      "2025-Q3": 921.0,
+      "2026-Q1": 181.0,
+      "2026-Q2": 90.0,
+      "2026-Q3": 1002.0
     },
     "net_income": {
-      "2024-Q3": 6059486000000.0,
-      "2026-Q1": 642755000000.0
+      "2025-Q1": 3187427000000.0,
+      "2025-Q2": 4942630000000.0,
+      "2025-Q3": 3345109000000.0,
+      "2026-Q1": 642755000000.0,
+      "2026-Q2": 313526000000.0,
+      "2026-Q3": 3509097000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 2756.0,
-      "2022": 5679.0,
-      "2023": 5675.0,
-      "2025": 4082.0
-    },
-    "revenue_per_share": {
-      "2021": 79460503000000.0,
-      "2022": 123607460000000.0,
-      "2023": 1321419000000.0,
-      "2025": 131300810000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 88811904172032,
+    "enterprise_value": 107167151554560,
+    "shares_outstanding": 3493093536,
+    "free_float_pct": 36.43700000823568
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.242,
-    "vol_trend": 1.088,
-    "price_chg_20d": 2.56
+    "cmf": 0.2691,
+    "vol_trend": 1.142,
+    "price_chg_20d": 5.26
   },
   "neraca": {
-    "aset": 182480938.0,
-    "aset_lancar": 66236531.0,
-    "kas": 20562639.0,
-    "piutang_usaha": 17769286.0,
-    "persediaan": 15366446.0,
-    "aset_tetap": 46176802.0,
-    "liabilitas": 81245574.0,
-    "liabilitas_jangka_pendek": 57111653.0,
-    "liabilitas_jangka_panjang": 24133921.0,
-    "utang_usaha": 17769286.0,
-    "utang_bank": 731958.0,
-    "ekuitas": 96025624.0,
-    "ekuitas_induk": 96025624.0,
+    "aset": 182808820.0,
+    "aset_lancar": 67350158.0,
+    "kas": 23034385.0,
+    "piutang_usaha": 19793868.0,
+    "persediaan": 15451310.0,
+    "aset_tetap": 44542232.0,
+    "liabilitas": 78985018.0,
+    "liabilitas_jangka_pendek": 55602671.0,
+    "liabilitas_jangka_panjang": 23382347.0,
+    "utang_usaha": 19793868.0,
+    "utang_bank": 1236084.0,
+    "ekuitas": 98683577.0,
+    "ekuitas_induk": 98683577.0,
     "modal_saham": null,
     "saldo_laba": 186507.0
   },
   "laba_rugi": {
-    "pendapatan": 28554084.0,
-    "beban_pokok": 23726279.0,
+    "pendapatan": 90334607.0,
+    "beban_pokok": 72443908.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 1314751.0,
-    "beban_pajak": -629749.0,
-    "laba_bersih": 642755.0,
-    "laba_induk": 642755.0,
-    "eps_basic": 181.0,
+    "laba_sebelum_pajak": 6808306.0,
+    "beban_pajak": -2589095.0,
+    "laba_bersih": 4465378.0,
+    "laba_induk": 4465378.0,
+    "eps_basic": 1273.0,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 46628.0,
-    "dividen_dibayar": 168850.0
+    "capex": 420151.0,
+    "dividen_dibayar": 4156710.0
   }
 }

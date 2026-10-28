@@ -3,126 +3,102 @@
   "nama": "PT. Clipan Finance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 344.0,
-  "update": "2026-10-27 00:03",
-  "periode_terbaru": "2026-tw2",
+  "harga": 342.0,
+  "update": "2026-10-28 14:21",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.005856905026694504,
-    "pb": 240.87787290464698,
-    "ps": 1.4927474450193472,
-    "roe": 0.017984566861829702,
-    "eps": 58734.0922265467,
-    "de": 0.629047521681886,
-    "margin_net": 210.58099921807482,
+    "pe": 0.006526985901533003,
+    "pb": 237.20435948925928,
+    "ps": 1.2096566126870023,
+    "roe": 0.026745334960362754,
+    "eps": 52397.84567631347,
+    "de": 0.49421969349821343,
+    "margin_net": 164.1297104383003,
     "current_ratio": null,
-    "roa": 0.011039927701594487,
-    "bv": 1.4281095886967359
+    "roa": 0.017899198542717328,
+    "bv": 1.4417947492043708
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 315678000000.0,
-      "2024-Q2": 267880000000.0,
-      "2024-Q3": 270537000000.0,
-      "2024-Q4": 172034000000.0,
       "2025-Q1": 173985000000.0,
       "2025-Q2": 265833000000.0,
       "2025-Q3": 190384000000.0,
-      "2025-Q4": 241859000000.0,
       "2026-Q1": 138017000000.0,
-      "2026-Q2": 347963000000.0
+      "2026-Q2": 347963000000.0,
+      "2026-Q3": 450159000000.0
     },
     "eps": {
-      "2024-Q1": 0.02,
-      "2024-Q2": 32.16,
-      "2024-Q3": 8.14,
-      "2024-Q4": 13.59,
       "2025-Q1": 8.79,
       "2025-Q2": -8.77,
       "2025-Q3": 0.01,
-      "2025-Q4": 53.23,
       "2026-Q1": 14.89,
-      "2026-Q2": 10.79
+      "2026-Q2": 10.79,
+      "2026-Q3": -25.68
     },
     "net_income": {
-      "2024-Q1": 86092008000000.0,
-      "2024-Q2": 42115012000000.0,
-      "2024-Q3": 32453379000000.0,
-      "2024-Q4": 54140662000000.0,
       "2025-Q1": 35038257000000.0,
       "2025-Q2": 45488406000000.0,
       "2025-Q3": 55132065000000.0,
-      "2025-Q4": 76556973000000.0,
       "2026-Q1": 59332365000000.0,
-      "2026-Q2": 43005789000000.0
+      "2026-Q2": 43005789000000.0,
+      "2026-Q3": 51310069000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 11.62,
-      "2022": 77.98,
-      "2023": 0.2,
-      "2024": 53.91,
-      "2025": 53.26
-    },
-    "revenue_per_share": {
-      "2021": 35582785000000.0,
-      "2022": 2391749000000.0,
-      "2023": 1735489000000000.0,
-      "2024": 1026129000000.0,
-      "2025": 872061000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 1370675085312,
-    "enterprise_value": 3898708066304,
+    "market_cap": 1362706038784,
+    "enterprise_value": 3890739150848,
     "shares_outstanding": 3984520457,
     "free_float_pct": 35.89300000926059
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1552,
-    "vol_trend": 0.57,
-    "price_chg_20d": -2.27
+    "score": 5.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.061,
+    "vol_trend": 0.546,
+    "price_chg_20d": -3.39
   },
   "neraca": {
-    "aset": 9269821032.0,
+    "aset": 8584083954.0,
     "aset_lancar": null,
-    "kas": 70123632.0,
-    "piutang_usaha": 7780296322.0,
+    "kas": 64146635.0,
+    "piutang_usaha": 7275130532.0,
     "persediaan": null,
-    "aset_tetap": 139492519.0,
-    "liabilitas": 3579489161.0,
+    "aset_tetap": 140891110.0,
+    "liabilitas": 2839223281.0,
     "liabilitas_jangka_pendek": null,
     "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
-    "utang_bank": 3144312643.0,
-    "ekuitas": 5690331871.0,
-    "ekuitas_induk": 5690331871.0,
+    "utang_bank": 2585046243.0,
+    "ekuitas": 5744860673.0,
+    "ekuitas_induk": 5744860673.0,
     "modal_saham": null,
-    "saldo_laba": 4283054213.0
+    "saldo_laba": 4335460249.0
   },
   "laba_rugi": {
-    "pendapatan": 485980.0,
+    "pendapatan": 936139.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 132258845.0,
-    "beban_pajak": -29920691.0,
-    "laba_bersih": 102338154.0,
-    "laba_induk": 102338154.0,
-    "eps_basic": 25.68,
-    "eps_diluted": 25.68
+    "laba_sebelum_pajak": 196390406.0,
+    "beban_pajak": -42742183.0,
+    "laba_bersih": 153648223.0,
+    "laba_induk": 153648223.0,
+    "eps_basic": 3.8560000000000004e-05,
+    "eps_diluted": 3.8560000000000004e-05
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 6779378.0,
-    "dividen_dibayar": 198553083.0
+    "capex": 16346486.0,
+    "dividen_dibayar": 192670438.0
   }
 }

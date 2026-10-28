@@ -4,8 +4,8 @@
   "sektor": null,
   "industri": null,
   "harga": null,
-  "update": "2026-10-27 12:02",
-  "periode_terbaru": "2026-tw1",
+  "update": "2026-10-28 14:32",
+  "periode_terbaru": "2026-tw3",
   "warnings": [
     "revenue_missing",
     "quarterly_incomplete",
@@ -15,42 +15,37 @@
     "pe": null,
     "pb": null,
     "ps": null,
-    "roe": 0.015570373213505139,
+    "roe": 0.0836670413946476,
     "eps": null,
-    "de": -1.0291735622160663,
+    "de": -1.020075582136183,
     "margin_net": null,
-    "current_ratio": 0.06801208710529554,
-    "roa": -0.5337151869966126,
+    "current_ratio": 0.04712173786289885,
+    "roa": -4.1676022556701255,
     "bv": null
   },
   "quarterly": {
     "revenue": {},
     "eps": {
-      "2024-Q1": -15.94,
-      "2024-Q2": -34.1,
-      "2024-Q3": 33.44,
-      "2026-Q1": -17.06
+      "2025-Q1": -42.16,
+      "2025-Q2": -18.63,
+      "2025-Q3": -26.34,
+      "2026-Q1": -17.06,
+      "2026-Q2": -57.23,
+      "2026-Q3": -24.2
     },
     "net_income": {
-      "2024-Q1": -4354067012000000.0,
-      "2024-Q2": -8525696448000000.0,
-      "2024-Q3": 8609159799000000.0,
-      "2026-Q1": -4389292902000000.0
+      "2025-Q1": -1.084631687e+16,
+      "2025-Q2": -4792114623000000.0,
+      "2025-Q3": -6775555074000000.0,
+      "2026-Q1": -4389292902000000.0,
+      "2026-Q2": -1.4723132928e+16,
+      "2026-Q3": -6226098577000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": -33.98,
-      "2022": -115.96,
-      "2023": -21.86,
-      "2025": -113.93
-    },
-    "revenue_per_share": {
-      "2021": 5279536653000000.0,
-      "2022": 106000000000000.0,
-      "2025": 1500000000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
     "market_cap": null,
@@ -67,21 +62,21 @@
     "price_chg_20d": 0.0
   },
   "neraca": {
-    "aset": 8224035982.0,
-    "aset_lancar": 8217752607.0,
-    "kas": 8142082191.0,
+    "aset": 6079880673.0,
+    "aset_lancar": 6077132293.0,
+    "kas": 6042263170.0,
     "piutang_usaha": null,
     "persediaan": null,
-    "aset_tetap": 6283375.0,
-    "liabilitas": 290124337395.0,
-    "liabilitas_jangka_pendek": 120827825711.0,
-    "liabilitas_jangka_panjang": 169296511684.0,
+    "aset_tetap": 2748380.0,
+    "liabilitas": 308929413591.0,
+    "liabilitas_jangka_pendek": 128966641907.0,
+    "liabilitas_jangka_panjang": 179962771684.0,
     "utang_usaha": null,
     "utang_bank": null,
-    "ekuitas": -281900301413.0,
-    "ekuitas_induk": -281900301413.0,
+    "ekuitas": -302849532918.0,
+    "ekuitas_induk": -302849532918.0,
     "modal_saham": null,
-    "saldo_laba": -332973556313.0
+    "saldo_laba": -353922787818.0
   },
   "laba_rugi": {
     "pendapatan": null,
@@ -89,11 +84,11 @@
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -4389292902.0,
+    "laba_sebelum_pajak": -25338524407.0,
     "beban_pajak": null,
-    "laba_bersih": -4389292902.0,
-    "laba_induk": -4389292902.0,
-    "eps_basic": -17.06,
+    "laba_bersih": -25338524407.0,
+    "laba_induk": -25338524407.0,
+    "eps_basic": -98.49,
     "eps_diluted": null
   },
   "arus_kas": {

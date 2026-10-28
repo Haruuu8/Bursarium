@@ -3,8 +3,8 @@
   "nama": "PT NexAI Digital Infrastruktur Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 11350.0,
-  "update": "2026-10-26 22:20",
+  "harga": 10725.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 190.8964539245512,
-    "ps": 413.54210704796105,
+    "pb": 180.3845346555781,
+    "ps": 390.7699645893729,
     "roe": -0.12454685824050053,
     "eps": -14.810194867091527,
     "de": 0.6163823552644436,
@@ -29,24 +29,12 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 6.0,
-      "2022": 8.0,
-      "2023": 8.0,
-      "2024": 3.0,
-      "2025": -4.0
-    },
-    "revenue_per_share": {
-      "2021": 1.09849125348e+17,
-      "2022": 1.66545619384e+17,
-      "2023": 2.0689497527e+17,
-      "2024": 2.0880812538e+17,
-      "2025": 1.27866478461e+17
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 21620427063296,
-    "enterprise_value": 23454751391744,
+    "market_cap": 20429875970048,
+    "enterprise_value": 20502183673856,
     "shares_outstanding": 1904883411,
     "free_float_pct": 37.292999975629485
   },
@@ -54,9 +42,9 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2015,
-    "vol_trend": 0.609,
-    "price_chg_20d": -24.33
+    "cmf": 0.1799,
+    "vol_trend": 0.671,
+    "price_chg_20d": -26.62
   },
   "neraca": {
     "aset": 184043766370.0,

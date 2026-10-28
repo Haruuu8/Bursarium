@@ -3,29 +3,35 @@
   "nama": "PT Nitrasanata Dharma",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 1325.0,
-  "update": "2026-10-26 23:22",
-  "periode_terbaru": "2026-tw2",
+  "harga": 1190.0,
+  "update": "2026-10-28 14:26",
+  "periode_terbaru": "2026-tw3",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 114.24042053164423,
-    "pb": 7.5546278304532235,
-    "ps": 4.691630038812845,
-    "roe": 0.03306460093238459,
-    "eps": 11.598346660786138,
-    "de": 1.4515633215324757,
-    "margin_net": 0.041068038939101055,
-    "current_ratio": 0.8237454190395107,
-    "roa": 0.012288656409401284,
-    "bv": 175.38918259597568
+    "pe": 78.9638537598586,
+    "pb": 3.9562434335713075,
+    "ps": 4.107075176002297,
+    "roe": 0.0375764661157768,
+    "eps": 15.07018646302365,
+    "de": 0.393422636627295,
+    "margin_net": 0.052012091361353194,
+    "current_ratio": 1.512261384285997,
+    "roa": 0.0242369672744914,
+    "bv": 300.79038865558005
   },
   "quarterly": {
-    "revenue": {},
-    "eps": {},
-    "net_income": {},
+    "revenue": {
+      "2026-Q3": 247567000000.0
+    },
+    "eps": {
+      "2026-Q3": 4.86
+    },
+    "net_income": {
+      "2026-Q3": 17904000000.0
+    },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
@@ -33,8 +39,8 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 4310519775232,
-    "enterprise_value": 4224702480384,
+    "market_cap": 3871334727680,
+    "enterprise_value": 4078307377152,
     "shares_outstanding": 3253222300,
     "free_float_pct": 0.14759999647119104
   },
@@ -42,45 +48,45 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.384,
-    "vol_trend": 0.728,
-    "price_chg_20d": -6.03
+    "cmf": 0.3632,
+    "vol_trend": 0.841,
+    "price_chg_20d": -8.27
   },
   "neraca": {
-    "aset": 1535237.0,
-    "aset_lancar": 447975.0,
-    "kas": 284679.0,
-    "piutang_usaha": 85365.0,
-    "persediaan": 31433.0,
-    "aset_tetap": 912975.0,
-    "liabilitas": 828233.0,
-    "liabilitas_jangka_pendek": 543827.0,
-    "liabilitas_jangka_panjang": 284406.0,
-    "utang_usaha": 85365.0,
-    "utang_bank": 196270.0,
-    "ekuitas": 570580.0,
-    "ekuitas_induk": 570580.0,
+    "aset": 1517104.0,
+    "aset_lancar": 420265.0,
+    "kas": 279746.0,
+    "piutang_usaha": 84036.0,
+    "persediaan": 33928.0,
+    "aset_tetap": 925308.0,
+    "liabilitas": 384979.0,
+    "liabilitas_jangka_pendek": 277905.0,
+    "liabilitas_jangka_panjang": 107074.0,
+    "utang_usaha": 84036.0,
+    "utang_bank": 6750.0,
+    "ekuitas": 978538.0,
+    "ekuitas_induk": 978538.0,
     "modal_saham": null,
-    "saldo_laba": 157072.0
+    "saldo_laba": 9639.0
   },
   "laba_rugi": {
-    "pendapatan": 459384.0,
-    "beban_pokok": 177542.0,
+    "pendapatan": 706951.0,
+    "beban_pokok": 273820.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 34563.0,
-    "beban_pajak": -13624.0,
-    "laba_bersih": 18866.0,
-    "laba_induk": 18866.0,
-    "eps_basic": 6.44,
+    "laba_sebelum_pajak": 59089.0,
+    "beban_pajak": -19341.0,
+    "laba_bersih": 36770.0,
+    "laba_induk": 36770.0,
+    "eps_basic": 11.3,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 15761.0,
-    "dividen_dibayar": 100714.0
+    "capex": 20121.0,
+    "dividen_dibayar": 125808.0
   }
 }

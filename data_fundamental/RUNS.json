@@ -3,8 +3,8 @@
   "nama": "PT Global Sukses Solusi Tbk",
   "sektor": "Technology",
   "industri": "Software - Application",
-  "harga": 63.0,
-  "update": "2026-10-26 22:20",
+  "harga": 64.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.1771368824272868,
-    "ps": 3.645370626060379,
+    "pb": 1.1958215948467674,
+    "ps": 3.703233651870861,
     "roe": -0.04411827710725849,
     "eps": -4.722392950641363,
     "de": 0.5475587424467124,
@@ -29,23 +29,11 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": -12.86,
-      "2022": 4.1,
-      "2023": -8.08,
-      "2024": -3.26,
-      "2025": -7.66
-    },
-    "revenue_per_share": {
-      "2021": 4936138283000000.0,
-      "2022": 3.1286996762e+16,
-      "2023": 2.7716318804e+16,
-      "2024": 2.1074099438e+16,
-      "2025": 1.717092717e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 61794770944,
+    "market_cap": 62775640064,
     "enterprise_value": 77898579968,
     "shares_outstanding": 980869375,
     "free_float_pct": 20.76599995794547
@@ -54,9 +42,9 @@
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4401,
-    "vol_trend": 0.664,
-    "price_chg_20d": 1.61
+    "cmf": 0.4567,
+    "vol_trend": 0.655,
+    "price_chg_20d": 3.23
   },
   "neraca": {
     "aset": 85129273471.0,

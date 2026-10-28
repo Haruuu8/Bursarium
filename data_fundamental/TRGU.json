@@ -3,16 +3,19 @@
   "nama": "PT Cerestar Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 157.0,
-  "update": "2026-10-26 22:39",
+  "harga": 154.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
-  "warnings": [],
+  "warnings": [
+    "quarterly_incomplete",
+    "ttm_fallback"
+  ],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 1.2709498025285562,
-    "ps": 0.2704007387046397,
+    "pe": 39.51059944195439,
+    "pb": 1.2466641375120868,
+    "ps": 0.3476238436087984,
     "roe": 0.015776325278784743,
-    "eps": -862330.3978911001,
+    "eps": 3.8976882703651126,
     "de": 2.521983304071647,
     "margin_net": 0.008798242712553571,
     "current_ratio": 0.9910577064275419,
@@ -21,52 +24,39 @@
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 1783704080816.0,
-      "2024-Q2": 1069620128828.0,
+      "2025-Q3": 1093702073007.0,
       "2026-Q1": 8.57412906227e+17,
       "2026-Q2": -8.574111462879476e+17
     },
     "eps": {
-      "2024-Q1": 0.85,
-      "2024-Q2": 4.82,
+      "2025-Q3": -1.32,
       "2026-Q1": -2.2,
       "2026-Q2": 6.13
     },
     "net_income": {
-      "2024-Q1": 1670929229000000.0,
-      "2024-Q2": -2.4006871066e+16,
+      "2025-Q3": 3.5290080822e+16,
       "2026-Q1": -4304380227000000.0,
       "2026-Q2": 1.9788751169e+16
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2022": 6.93,
-      "2023": 0.2,
-      "2024": 8.16,
-      "2025": 1.43
-    },
-    "revenue_per_share": {
-      "2022": 3612965915354.0,
-      "2023": 5874659885532.0,
-      "2024": 5178832985240.0,
-      "2025": 3812557187886.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 1247429787648,
-    "enterprise_value": 3126914187264,
+    "market_cap": 1223593558016,
+    "enterprise_value": 3118968602624,
     "shares_outstanding": 7945412700,
     "free_float_pct": 18.850999999030886
   },
   "akumulasi": {
-    "score": 4.2,
+    "score": 4.6,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0502,
-    "vol_trend": 0.295,
-    "price_chg_20d": -3.09
+    "cmf": 0.0037,
+    "vol_trend": 0.264,
+    "price_chg_20d": -5.52
   },
   "neraca": {
     "aset": 3456806955105.0,

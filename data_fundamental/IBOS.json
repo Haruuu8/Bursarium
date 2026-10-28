@@ -3,17 +3,17 @@
   "nama": "PT Indo Boga Sukses Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 74.0,
-  "update": "2026-10-26 22:37",
+  "harga": 71.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 188.73171086920746,
-    "pb": 1.7342929687138313,
-    "ps": 5.689408988777891,
+    "pe": 181.08042529342876,
+    "pb": 1.6639837943065139,
+    "ps": 5.458757273016625,
     "roe": 0.004594598758010809,
     "eps": 0.3920909722017122,
     "de": 0.07262987507741062,
@@ -29,20 +29,12 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2022": 0.94,
-      "2023": 0.97,
-      "2025": 0.26
-    },
-    "revenue_per_share": {
-      "2022": 7.8494559551e+16,
-      "2023": 7.8038260092e+16,
-      "2025": 4.2753541658e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 596868399104,
-    "enterprise_value": 631333322752,
+    "market_cap": 572671066112,
+    "enterprise_value": 607135989760,
     "shares_outstanding": 8065789529,
     "free_float_pct": 40.666000001696794
   },
@@ -50,9 +42,9 @@
     "score": 6.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0997,
-    "vol_trend": 0.191,
-    "price_chg_20d": -12.94
+    "cmf": 0.0986,
+    "vol_trend": 0.239,
+    "price_chg_20d": -13.1
   },
   "neraca": {
     "aset": 370612766413.0,

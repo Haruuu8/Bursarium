@@ -3,17 +3,17 @@
   "nama": "PT Nanotech Indonesia Global Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Devices",
-  "harga": 33.0,
-  "update": "2026-10-26 22:34",
+  "harga": 28.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 27.786643151299128,
-    "pb": 0.8307761166322881,
-    "ps": 0.32411292840414885,
+    "pe": 23.57654570413259,
+    "pb": 0.7049009474455777,
+    "ps": 0.2750049089489748,
     "roe": 0.014949199010990398,
     "eps": 1.187620966675031,
     "de": 0.23245229030247058,
@@ -29,22 +29,12 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2022": 0.41,
-      "2023": 0.32,
-      "2024": 0.25,
-      "2025": 0.48
-    },
-    "revenue_per_share": {
-      "2022": 44703764000000.0,
-      "2023": 8.382041736e+16,
-      "2024": 1.14863286774e+17,
-      "2025": 7.2167413022e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 141412712448,
-    "enterprise_value": 150465511424,
+    "market_cap": 119986552832,
+    "enterprise_value": 146180276224,
     "shares_outstanding": 4285233928,
     "free_float_pct": 50.6090000088322
   },
@@ -52,9 +42,9 @@
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2827,
-    "vol_trend": 2.526,
-    "price_chg_20d": 6.45
+    "cmf": 0.2668,
+    "vol_trend": 2.334,
+    "price_chg_20d": 7.14
   },
   "neraca": {
     "aset": 213553057268.0,

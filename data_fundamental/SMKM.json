@@ -3,8 +3,8 @@
   "nama": "PT Sumber Mas Konstruksi Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 81.0,
-  "update": "2026-10-26 22:33",
+  "harga": 72.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5045584832384716,
-    "ps": 0.9354193548387096,
+    "pb": 0.44849642954530816,
+    "ps": 0.8314838709677419,
     "roe": -0.027430030062630763,
     "eps": -8.807036285714286,
     "de": 0.10807009524945707,
@@ -29,22 +29,12 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2022": 7.69,
-      "2023": 7.74,
-      "2024": 2.01,
-      "2025": -0.01
-    },
-    "revenue_per_share": {
-      "2022": 1.43045583951e+17,
-      "2023": 1.30026556493e+17,
-      "2024": 8.5299498625e+16,
-      "2025": 6.9503432704e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 101492998144,
-    "enterprise_value": 75725307904,
+    "market_cap": 90215997440,
+    "enterprise_value": 64448311296,
     "shares_outstanding": 1253000000,
     "free_float_pct": 69.987
   },
@@ -52,9 +42,9 @@
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.3408,
-    "vol_trend": 1.57,
-    "price_chg_20d": -7.95
+    "cmf": 0.253,
+    "vol_trend": 1.495,
+    "price_chg_20d": -17.05
   },
   "neraca": {
     "aset": 222890629953.0,

@@ -1,101 +1,91 @@
 {
   "kode": "HADE",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-27 11:24",
-  "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "nama": "PT Himalaya Energi Perkasa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 21.0,
+  "update": "2026-10-28 14:24",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": null,
-    "roe": -0.08012231599394039,
-    "eps": null,
-    "de": 0.3415858178088033,
-    "margin_net": -0.15271737074052447,
-    "current_ratio": 3.4152351431815458,
-    "roa": -0.034498343240661866,
-    "bv": null
+    "pb": 10.79930283077526,
+    "ps": 1.025672216170787e-05,
+    "roe": -0.09759277596889455,
+    "eps": -196150.9641509434,
+    "de": 0.3571005243886269,
+    "margin_net": -0.12380379875182286,
+    "current_ratio": 3.417519107474338,
+    "roa": -0.04151104001283592,
+    "bv": 1.9445699716981133
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 981607800000000.0,
+      "2025-Q3": 1090869000000000.0,
       "2026-Q1": 1122392400000000.0,
-      "2026-Q2": 1075431000000000.0
+      "2026-Q2": 1075431000000000.0,
+      "2026-Q3": 1051875600000000.0
     },
     "eps": {
-      "2024-Q3": -0.06,
+      "2025-Q3": -0.01,
       "2026-Q1": -0.13,
-      "2026-Q2": -0.03
+      "2026-Q2": -0.03,
+      "2026-Q3": -0.03
     },
     "net_income": {
-      "2024-Q3": -118940059000000.0,
+      "2025-Q3": -13514963000000.0,
       "2026-Q1": -267043818000000.0,
-      "2026-Q2": -68601993000000.0
+      "2026-Q2": -68601993000000.0,
+      "2026-Q3": -66679270000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": -0.07,
-      "2022": -0.08,
-      "2023": -0.21,
-      "2025": -1.36
-    },
-    "revenue_per_share": {
-      "2021": 3817867200000000.0,
-      "2022": 3919110600000000.0,
-      "2023": 4019407800000000.0,
-      "2025": 4231822200000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 44520001536,
+    "enterprise_value": 48301449216,
+    "shares_outstanding": 2120000000,
+    "free_float_pct": 56.736
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1857,
-    "vol_trend": 0.813,
+    "score": 6.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1085,
+    "vol_trend": 0.787,
     "price_chg_20d": -22.22
   },
   "neraca": {
-    "aset": 9729331309.0,
-    "aset_lancar": 1095245238.0,
-    "kas": 327755240.0,
-    "piutang_usaha": 329476800.0,
+    "aset": 9692001956.0,
+    "aset_lancar": 1093923267.0,
+    "kas": 322016128.0,
+    "piutang_usaha": 344865000.0,
     "persediaan": null,
     "aset_tetap": 6400000000.0,
-    "liabilitas": 1430960244.0,
-    "liabilitas_jangka_pendek": 320693947.0,
-    "liabilitas_jangka_panjang": 1110266297.0,
-    "utang_usaha": 329476800.0,
+    "liabilitas": 1472142748.0,
+    "liabilitas_jangka_pendek": 320092802.0,
+    "liabilitas_jangka_panjang": 1152049946.0,
+    "utang_usaha": 344865000.0,
     "utang_bank": null,
-    "ekuitas": 4189167610.0,
-    "ekuitas_induk": 4189167610.0,
+    "ekuitas": 4122488340.0,
+    "ekuitas_induk": 4122488340.0,
     "modal_saham": null,
-    "saldo_laba": -208236113915.0
+    "saldo_laba": -208302793185.0
   },
   "laba_rugi": {
-    "pendapatan": 2197823400.0,
-    "beban_pokok": 1887504006.0,
+    "pendapatan": 3249699000.0,
+    "beban_pokok": 2668322931.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -460111276.0,
+    "laba_sebelum_pajak": -538623133.0,
     "beban_pajak": null,
-    "laba_bersih": -335645811.0,
-    "laba_induk": -335645811.0,
-    "eps_basic": -0.16,
+    "laba_bersih": -402325081.0,
+    "laba_induk": -402325081.0,
+    "eps_basic": -0.19,
     "eps_diluted": null
   },
   "arus_kas": {

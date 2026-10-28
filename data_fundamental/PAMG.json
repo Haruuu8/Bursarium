@@ -1,82 +1,62 @@
 {
   "kode": "PAMG",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-27 13:18",
+  "nama": "PT Bima Sakti Pertiwi Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Diversified",
+  "harga": 43.0,
+  "update": "2026-10-28 14:32",
   "periode_terbaru": "2026-tw1",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": null,
-    "ps": null,
+    "pe": 0.0002322136633627822,
+    "pb": 0.3129796559971944,
+    "ps": 2.7327084901623e-06,
     "roe": -0.0009001304246374534,
-    "eps": null,
+    "eps": 185174.28896,
     "de": 0.377046895869414,
     "margin_net": -0.03389287245146522,
     "current_ratio": 0.31753227694880726,
     "roa": -0.0006536672261035424,
-    "bv": null
+    "bv": 137.38912154848
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 1.3021591954e+16,
-      "2024-Q4": 1.3324847692e+16,
       "2025-Q1": 1.2714064301e+16,
       "2025-Q2": 1.2861478004e+16,
       "2025-Q3": 1.2194801054e+16,
-      "2025-Q4": 1.2073984705e+16,
       "2026-Q1": 1.1402482972e+16
     },
     "eps": {
-      "2024-Q3": 0.1,
-      "2024-Q4": 1.25,
       "2025-Q1": 0.34,
       "2025-Q2": 0.12,
       "2025-Q3": -0.15,
       "2026-Q1": -0.01
     },
     "net_income": {
-      "2024-Q3": 304856571000000.0,
-      "2024-Q4": 3902248954000000.0,
       "2025-Q1": 1070962077000000.0,
       "2025-Q2": 364593051000000.0,
       "2025-Q3": -470422574000000.0,
-      "2025-Q4": 12786447000000.0,
       "2026-Q1": -386462901000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": -3.35,
-      "2022": -1.03,
-      "2023": 0.14,
-      "2024": 1.46,
-      "2025": 0.31
-    },
-    "revenue_per_share": {
-      "2021": 4.6931553767e+16,
-      "2022": 5.4825067e+16,
-      "2023": 5.1476967511e+16,
-      "2024": 5.244066765e+16,
-      "2025": 4.9844328064e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 134374998016,
+    "enterprise_value": 266073702400,
+    "shares_outstanding": 3125000000,
+    "free_float_pct": 28.563
   },
   "akumulasi": {
-    "score": 4.9,
+    "score": 3.7,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0427,
-    "vol_trend": 0.232,
-    "price_chg_20d": 6.82
+    "cmf": -0.085,
+    "vol_trend": 0.217,
+    "price_chg_20d": 4.65
   },
   "neraca": {
     "aset": 591222697983.0,

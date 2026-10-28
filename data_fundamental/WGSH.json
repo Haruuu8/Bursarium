@@ -3,17 +3,17 @@
   "nama": "PT Wira Global Solusi Tbk",
   "sektor": "Technology",
   "industri": "Software - Infrastructure",
-  "harga": 81.0,
-  "update": "2026-10-26 22:28",
+  "harga": 70.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
-    "pe": 16.195964941178477,
-    "pb": 2.4116692200435814,
-    "ps": 1.9610968765660106,
+    "pe": 13.99651291212955,
+    "pb": 2.084158585222848,
+    "ps": 1.6947750785138365,
     "roe": 0.07445277971403473,
     "eps": 5.001245698800959,
     "de": 0.2290560182940836,
@@ -29,34 +29,22 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 5.95,
-      "2022": 4.57,
-      "2023": 4.27,
-      "2024": 4.11,
-      "2025": 3.09
-    },
-    "revenue_per_share": {
-      "2021": 2.2120710071e+16,
-      "2022": 2.6693281182e+16,
-      "2023": 3.3147408581e+16,
-      "2024": 3.5229995282e+16,
-      "2025": 5.0077816458e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 168884994048,
-    "enterprise_value": 165614583808,
+    "market_cap": 145949999104,
+    "enterprise_value": 153104580608,
     "shares_outstanding": 2085000000,
     "free_float_pct": 21.078
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1403,
-    "vol_trend": 0.461,
-    "price_chg_20d": -20.59
+    "score": 6.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1103,
+    "vol_trend": 0.427,
+    "price_chg_20d": -29.13
   },
   "neraca": {
     "aset": 86470959940.0,

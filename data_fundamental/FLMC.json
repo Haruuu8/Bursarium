@@ -3,8 +3,8 @@
   "nama": "PT Falmaco Nonwoven Industri Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Household & Personal Products",
-  "harga": 152.0,
-  "update": "2026-10-26 22:23",
+  "harga": 144.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -13,7 +13,7 @@
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 5.89303558094383,
+    "ps": 5.5828758135257335,
     "roe": 8.974332859051884,
     "eps": -59.57582092032,
     "de": -15.321413804055679,
@@ -29,24 +29,12 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 35211327333.0,
-      "2022": -18037140795.0,
-      "2023": 7308577209.0,
-      "2024": -42495681325.0,
-      "2025": -22991911126.0
-    },
-    "revenue_per_share": {
-      "2021": 4.9213151806e+16,
-      "2022": 5.8039050603e+16,
-      "2023": 4.6081970517e+16,
-      "2024": 3.5472601407e+16,
-      "2025": 1.4381850279e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 118749995008,
-    "enterprise_value": 125026795520,
+    "market_cap": 112499998720,
+    "enterprise_value": 114089295872,
     "shares_outstanding": 781250000,
     "free_float_pct": 38.865000064
   },
@@ -54,9 +42,9 @@
     "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2544,
-    "vol_trend": 0.399,
-    "price_chg_20d": 12.59
+    "cmf": 0.3087,
+    "vol_trend": 0.402,
+    "price_chg_20d": 11.29
   },
   "neraca": {
     "aset": 37137596218.0,

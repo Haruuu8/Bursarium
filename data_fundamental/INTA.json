@@ -1,67 +1,54 @@
 {
   "kode": "INTA",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-27 11:34",
-  "periode_terbaru": "2026-tw2",
+  "nama": "PT Intraco Penta Tbk",
+  "sektor": "Industrials",
+  "industri": "Industrial Distribution",
+  "harga": 61.0,
+  "update": "2026-10-28 14:26",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": null,
-    "roe": 0.021661972094784914,
-    "eps": null,
-    "de": -2.3156599263921653,
-    "margin_net": -0.09846261537479219,
-    "current_ratio": 0.7951980369697034,
-    "roa": -0.01818519319256362,
-    "bv": null
+    "ps": 0.2218018119306258,
+    "roe": 0.02830783413186277,
+    "eps": -16.313714124556334,
+    "de": -2.288983084128762,
+    "margin_net": -0.08341352595804809,
+    "current_ratio": 0.8168901289798984,
+    "roa": -0.024287893694023614,
+    "bv": -578.7265563678767
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 283399000000.0,
-      "2024-Q2": 185769000000.0,
-      "2024-Q3": 191586000000.0,
+      "2025-Q3": 262898000000.0,
       "2026-Q1": 216970000000.0,
-      "2026-Q2": 205891000000.0
+      "2026-Q2": 205891000000.0,
+      "2026-Q3": 233891000000.0
     },
     "eps": {
-      "2024-Q1": -2.0,
-      "2024-Q2": -7.0,
-      "2024-Q3": 9.0,
+      "2025-Q3": 0.0,
       "2026-Q1": -0.0,
-      "2026-Q2": -0.0
+      "2026-Q2": -0.0,
+      "2026-Q3": -0.0
     },
     "net_income": {
-      "2024-Q1": -7991000000.0,
-      "2024-Q2": -21235000000.0,
-      "2024-Q3": -43268000000.0,
+      "2025-Q3": 230000000.0,
       "2026-Q1": -33140000000.0,
-      "2026-Q2": -8496000000.0
+      "2026-Q2": -8496000000.0,
+      "2026-Q3": -13146000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": -123.0,
-      "2022": -26.0,
-      "2023": -0.0,
-      "2025": -0.0
-    },
-    "revenue_per_share": {
-      "2021": 611377000000.0,
-      "2022": 661309000000.0,
-      "2023": 1081793000000.0,
-      "2025": 966917000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 203980029952,
+    "enterprise_value": 2668134924288,
+    "shares_outstanding": 3343935022,
+    "free_float_pct": 39.238000002022765
   },
   "akumulasi": {
     "score": 5.0,
@@ -72,40 +59,40 @@
     "price_chg_20d": 0.0
   },
   "neraca": {
-    "aset": 2289555.0,
-    "aset_lancar": 605362.0,
-    "kas": 37994.0,
-    "piutang_usaha": 233895.0,
-    "persediaan": 258801.0,
-    "aset_tetap": 871306.0,
-    "liabilitas": 4450879.0,
-    "liabilitas_jangka_pendek": 761272.0,
-    "liabilitas_jangka_panjang": 3689607.0,
-    "utang_usaha": 233895.0,
-    "utang_bank": 153575.0,
-    "ekuitas": -1922078.0,
-    "ekuitas_induk": -1922078.0,
+    "aset": 2255527.0,
+    "aset_lancar": 608963.0,
+    "kas": 39775.0,
+    "piutang_usaha": 285329.0,
+    "persediaan": 223422.0,
+    "aset_tetap": 864941.0,
+    "liabilitas": 4429695.0,
+    "liabilitas_jangka_pendek": 745465.0,
+    "liabilitas_jangka_panjang": 3684230.0,
+    "utang_usaha": 285329.0,
+    "utang_bank": 152473.0,
+    "ekuitas": -1935224.0,
+    "ekuitas_induk": -1935224.0,
     "modal_saham": null,
-    "saldo_laba": -3063676.0
+    "saldo_laba": -3076822.0
   },
   "laba_rugi": {
-    "pendapatan": 422861.0,
-    "beban_pokok": 352105.0,
+    "pendapatan": 656752.0,
+    "beban_pokok": 548272.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -38733.0,
-    "beban_pajak": -1307.0,
-    "laba_bersih": -41636.0,
-    "laba_induk": -41636.0,
-    "eps_basic": -1.2e-05,
+    "laba_sebelum_pajak": -49204.0,
+    "beban_pajak": -3680.0,
+    "laba_bersih": -54782.0,
+    "laba_induk": -54782.0,
+    "eps_basic": -1.6e-05,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 23923.0,
+    "capex": 35764.0,
     "dividen_dibayar": null
   }
 }

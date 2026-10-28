@@ -1,108 +1,98 @@
 {
   "kode": "MMLP",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-27 11:57",
-  "periode_terbaru": "2026-tw1",
+  "nama": "PT Mega Manunggal Property Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 230.0,
+  "update": "2026-10-28 14:31",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": null,
-    "roe": 0.009288696353007308,
-    "eps": null,
-    "de": 0.3902301170849791,
-    "margin_net": 0.4701469595231594,
-    "current_ratio": 1.7802294468766597,
-    "roa": 0.006543617290444603,
-    "bv": null
+    "pb": 348.08964401983303,
+    "ps": 0.004187803790265399,
+    "roe": -0.02271857212409595,
+    "eps": -12804.55819480774,
+    "de": 0.39384521423366275,
+    "margin_net": -0.35902858765645373,
+    "current_ratio": 2.7135507907221954,
+    "roa": -0.015959533748482628,
+    "bv": 0.6607493326830928
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 87111854000000.0,
-      "2024-Q2": 85572114000000.0,
-      "2024-Q3": 84435662000000.0,
-      "2026-Q1": 92839237000000.0
+      "2025-Q3": 90320440000000.0,
+      "2026-Q1": 92839237000000.0,
+      "2026-Q2": 96874600000000.0,
+      "2026-Q3": 98326563000000.0
     },
     "eps": {
-      "2024-Q1": 4.0,
-      "2024-Q2": 1.0,
-      "2024-Q3": 28.0,
-      "2026-Q1": 6.0
+      "2025-Q3": 2.0,
+      "2026-Q1": 6.0,
+      "2026-Q2": 5.0,
+      "2026-Q3": -11.02
     },
     "net_income": {
-      "2024-Q1": 29666678000000.0,
-      "2024-Q2": 2715438000000.0,
-      "2024-Q3": 194232680000000.0,
-      "2026-Q1": 43648085000000.0
+      "2025-Q3": 15202413000000.0,
+      "2026-Q1": 43648085000000.0,
+      "2026-Q2": 32757965000000.0,
+      "2026-Q3": -179820788000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 29.0,
-      "2022": 16.0,
-      "2023": 13.0,
-      "2025": 9.0
-    },
-    "revenue_per_share": {
-      "2021": 316572333000000.0,
-      "2022": 334523481000000.0,
-      "2023": 348348965000000.0,
-      "2025": 355657358000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 1584500965376,
+    "enterprise_value": 3153503453184,
+    "shares_outstanding": 6889134608,
+    "free_float_pct": 8.549000005255811
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.404,
-    "vol_trend": 0.692,
-    "price_chg_20d": -18.24
+    "cmf": -0.4351,
+    "vol_trend": 0.852,
+    "price_chg_20d": -21.62
   },
   "neraca": {
-    "aset": 6670329737.0,
-    "aset_lancar": 354359786.0,
-    "kas": 186977102.0,
-    "piutang_usaha": 28685530.0,
+    "aset": 6479809475.0,
+    "aset_lancar": 569622737.0,
+    "kas": 438430790.0,
+    "piutang_usaha": 43286057.0,
     "persediaan": null,
-    "aset_tetap": 4466220.0,
-    "liabilitas": 1833712361.0,
-    "liabilitas_jangka_pendek": 199052873.0,
-    "liabilitas_jangka_panjang": 1634659488.0,
-    "utang_usaha": 28685530.0,
-    "utang_bank": 33750000.0,
-    "ekuitas": 4699053919.0,
-    "ekuitas_induk": 4699053919.0,
+    "aset_tetap": 3851980.0,
+    "liabilitas": 1792779908.0,
+    "liabilitas_jangka_pendek": 209917846.0,
+    "liabilitas_jangka_panjang": 1582862062.0,
+    "utang_usaha": 43286057.0,
+    "utang_bank": 41250000.0,
+    "ekuitas": 4551991095.0,
+    "ekuitas_induk": 4551991095.0,
     "modal_saham": null,
     "saldo_laba": 60000000.0
   },
   "laba_rugi": {
-    "pendapatan": 92839237.0,
-    "beban_pokok": 10935258.0,
+    "pendapatan": 288040400.0,
+    "beban_pokok": 36723120.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 50480467.0,
-    "beban_pajak": -275787.0,
-    "laba_bersih": 43648085.0,
-    "laba_induk": 43648085.0,
-    "eps_basic": 6.0,
-    "eps_diluted": 6.0
+    "laba_sebelum_pajak": -94865884.0,
+    "beban_pajak": 832389.0,
+    "laba_bersih": -103414738.0,
+    "laba_induk": -103414738.0,
+    "eps_basic": -0.015,
+    "eps_diluted": -0.015
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 104737.0,
-    "dividen_dibayar": null
+    "capex": 223665.0,
+    "dividen_dibayar": 7743748.0
   }
 }

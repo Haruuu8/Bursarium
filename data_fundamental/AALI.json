@@ -3,74 +3,56 @@
   "nama": "PT Astra Agro Lestari Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 9500.0,
-  "update": "2026-10-26 23:29",
-  "periode_terbaru": "2026-tw2",
+  "harga": 9775.0,
+  "update": "2026-10-28 14:18",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 9.785772174149926,
-    "pb": 0.761916434328732,
-    "ps": 0.6205109950634111,
-    "roe": 0.0457906858420816,
-    "eps": 970.7971768538797,
-    "de": 0.17701546248055575,
-    "margin_net": 0.07201557213894158,
-    "current_ratio": 3.332303029807308,
-    "roa": 0.03808390138316056,
-    "bv": 12468.558980972428
+    "pe": 8.277113118237445,
+    "pb": 0.772477749493003,
+    "ps": 0.5994290383187886,
+    "roe": 0.07821747265837416,
+    "eps": 1180.967308331473,
+    "de": 0.21282707426578634,
+    "margin_net": 0.08033120577224201,
+    "current_ratio": 2.903324819117443,
+    "roa": 0.063131164588381,
+    "bv": 12654.086161595702
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 5973745000000.0,
-      "2024-Q4": 5528043000000.0,
       "2025-Q1": 7023961000000.0,
       "2025-Q2": 7422828000000.0,
       "2025-Q3": 7671927000000.0,
-      "2025-Q4": 6535932000000.0,
       "2026-Q1": 7501811000000.0,
-      "2026-Q2": 7757236000000.0
+      "2026-Q2": 7757236000000.0,
+      "2026-Q3": 8455274000000.0
     },
     "eps": {
-      "2024-Q3": 155.93,
-      "2024-Q4": 179.97,
       "2025-Q1": 143.94,
       "2025-Q2": 220.86,
       "2025-Q3": 191.19,
-      "2025-Q4": 208.66,
       "2026-Q1": 194.01,
-      "2026-Q2": 376.93
+      "2026-Q2": 376.93,
+      "2026-Q3": 418.83
     },
     "net_income": {
-      "2024-Q3": 300109000000.0,
-      "2024-Q4": 346396000000.0,
       "2025-Q1": 277032000000.0,
       "2025-Q2": 425089000000.0,
       "2025-Q3": 367994000000.0,
-      "2025-Q4": 401599000000.0,
       "2026-Q1": 373407000000.0,
-      "2026-Q2": 725482000000.0
+      "2026-Q2": 725482000000.0,
+      "2026-Q3": 806111000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 1024.25,
-      "2022": 897.08,
-      "2023": 548.61,
-      "2024": 596.22,
-      "2025": 764.65
-    },
-    "revenue_per_share": {
-      "2021": 24322048000000.0,
-      "2022": 21828591000000.0,
-      "2023": 20745473000000.0,
-      "2024": 21815035000000.0,
-      "2025": 28654648000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 18284539805696,
-    "enterprise_value": 13743602794496,
+    "market_cap": 18813829513216,
+    "enterprise_value": 14321009557504,
     "shares_outstanding": 1924688333,
     "free_float_pct": 20.315000007848024
   },
@@ -78,45 +60,45 @@
     "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4246,
-    "vol_trend": 1.73,
-    "price_chg_20d": 21.41
+    "cmf": 0.4621,
+    "vol_trend": 1.885,
+    "price_chg_20d": 25.64
   },
   "neraca": {
-    "aset": 28854423.0,
-    "aset_lancar": 10999829.0,
-    "kas": 5149236.0,
-    "piutang_usaha": 559013.0,
-    "persediaan": 3683216.0,
-    "aset_tetap": 7391730.0,
-    "liabilitas": 4248033.0,
-    "liabilitas_jangka_pendek": 3300969.0,
-    "liabilitas_jangka_panjang": 947064.0,
-    "utang_usaha": 559013.0,
-    "utang_bank": null,
-    "ekuitas": 23998090.0,
-    "ekuitas_induk": 23998090.0,
+    "aset": 30175271.0,
+    "aset_lancar": 12224754.0,
+    "kas": 5792153.0,
+    "piutang_usaha": 898028.0,
+    "persediaan": 3633293.0,
+    "aset_tetap": 7217664.0,
+    "liabilitas": 5183440.0,
+    "liabilitas_jangka_pendek": 4210605.0,
+    "liabilitas_jangka_panjang": 972835.0,
+    "utang_usaha": 898028.0,
+    "utang_bank": 3100000.0,
+    "ekuitas": 24355172.0,
+    "ekuitas_induk": 24355172.0,
     "modal_saham": null,
     "saldo_laba": 192500.0
   },
   "laba_rugi": {
-    "pendapatan": 15259047.0,
-    "beban_pokok": 12729684.0,
+    "pendapatan": 23714321.0,
+    "beban_pokok": 19341159.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 1520954.0,
-    "beban_pajak": -380068.0,
-    "laba_bersih": 1098889.0,
-    "laba_induk": 1098889.0,
-    "eps_basic": 570.94,
-    "eps_diluted": 570.94
+    "laba_sebelum_pajak": 2610519.0,
+    "beban_pajak": -635163.0,
+    "laba_bersih": 1905000.0,
+    "laba_induk": 1905000.0,
+    "eps_basic": 989.77,
+    "eps_diluted": 989.77
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 91883.0,
-    "dividen_dibayar": 644704.0
+    "capex": 155559.0,
+    "dividen_dibayar": 679544.0
   }
 }

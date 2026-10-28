@@ -3,53 +3,49 @@
   "nama": "PT Diastika Biotekindo Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 103.0,
-  "update": "2026-10-26 23:23",
-  "periode_terbaru": "2026-tw2",
+  "harga": 99.0,
+  "update": "2026-10-28 14:22",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 3.453892093945642e-05,
-    "pb": 2.0912450123615787,
-    "ps": 2.06395435316044e-06,
-    "roe": 0.017277053645618736,
-    "eps": 2982142.9621541915,
-    "de": 0.24400579356449434,
-    "margin_net": 0.042538473938707556,
-    "current_ratio": 4.091880913278582,
-    "roa": 0.013888242108675536,
-    "bv": 49.25295667946878
+    "pe": 2.389574886247303e-05,
+    "pb": 1.9657305163963719,
+    "ps": 1.9501428363582714e-06,
+    "roe": 0.03893626770508323,
+    "eps": 4142996.336702973,
+    "de": 0.09862229014614163,
+    "margin_net": 0.05190828342778953,
+    "current_ratio": 9.070430740746474,
+    "roa": 0.035440995558085595,
+    "bv": 50.36295625174979
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 5.3425555152e+16,
-      "2025-Q4": 6.956328393e+16,
       "2026-Q1": 3.7273939501e+16,
-      "2026-Q2": 4.5009756784e+16
+      "2026-Q2": 4.5009756784e+16,
+      "2026-Q3": 7.3106128351e+16
     },
     "eps": {
       "2025-Q3": 3.49,
-      "2025-Q4": -1.92,
       "2026-Q1": 0.68,
-      "2026-Q2": 1.05
+      "2026-Q2": 1.05,
+      "2026-Q3": 0.92
     },
     "net_income": {
       "2025-Q3": 8975498215000000.0,
-      "2025-Q4": -209178546000000.0,
       "2026-Q1": 686585057000000.0,
-      "2026-Q2": 2813637813000000.0
+      "2026-Q2": 2813637813000000.0,
+      "2026-Q3": 4565796189000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2025": 2.62
-    },
-    "revenue_per_share": {
-      "2025": 2.01306181384e+17
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 423673135104,
+    "market_cap": 407219798016,
     "enterprise_value": 390059720704,
     "shares_outstanding": 4113331485,
     "free_float_pct": 19.021709722478153
@@ -58,45 +54,45 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2266,
-    "vol_trend": 0.5,
-    "price_chg_20d": -17.6
+    "cmf": 0.2386,
+    "vol_trend": 0.534,
+    "price_chg_20d": -16.26
   },
   "neraca": {
-    "aset": 252027783114.0,
-    "aset_lancar": 198914871977.0,
-    "kas": 46959343197.0,
-    "piutang_usaha": 23162996254.0,
-    "persediaan": 116626413278.0,
-    "aset_tetap": 52458210132.0,
-    "liabilitas": 49434045675.0,
-    "liabilitas_jangka_pendek": 48612087251.0,
-    "liabilitas_jangka_panjang": 821958424.0,
-    "utang_usaha": 23162996254.0,
-    "utang_bank": 20464885100.0,
-    "ekuitas": 202593737439.0,
-    "ekuitas_induk": 202593737439.0,
+    "aset": 227590081260.0,
+    "aset_lancar": 178568645435.0,
+    "kas": 32775409465.0,
+    "piutang_usaha": 32967640073.0,
+    "persediaan": 103879026602.0,
+    "aset_tetap": 48488710578.0,
+    "liabilitas": 20430547632.0,
+    "liabilitas_jangka_pendek": 19686898069.0,
+    "liabilitas_jangka_panjang": 743649563.0,
+    "utang_usaha": 32967640073.0,
+    "utang_bank": 1347221945.0,
+    "ekuitas": 207159533628.0,
+    "ekuitas_induk": 207159533628.0,
     "modal_saham": null,
     "saldo_laba": 1022683840.0
   },
   "laba_rugi": {
-    "pendapatan": 82283696285.0,
-    "beban_pokok": 47500011501.0,
+    "pendapatan": 155389824636.0,
+    "beban_pokok": 101053336911.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 3500222870.0,
+    "laba_sebelum_pajak": 8066019059.0,
     "beban_pajak": null,
-    "laba_bersih": 3500222870.0,
-    "laba_induk": 3500222870.0,
-    "eps_basic": 1.7374345040069739,
+    "laba_bersih": 8066019059.0,
+    "laba_induk": 8066019059.0,
+    "eps_basic": 2.66,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 17937050.0,
+    "capex": 131274379.0,
     "dividen_dibayar": 3296649988.0
   }
 }

@@ -3,8 +3,8 @@
   "nama": "PT Klinko Karya Imaji Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Home Improvement Retail",
-  "harga": 100.0,
-  "update": "2026-10-26 22:43",
+  "harga": 98.0,
+  "update": "2026-10-28 14:15",
   "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
@@ -12,8 +12,8 @@
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.765084538605936,
-    "ps": 59.10785819303977,
+    "pb": 4.669782847833817,
+    "ps": 57.92570102917897,
     "roe": -0.05747718571381074,
     "eps": -2.4124308917560633,
     "de": 0.04503494699702338,
@@ -29,21 +29,11 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2022": -0.92,
-      "2023": 0.36,
-      "2024": -0.41,
-      "2025": -3.33
-    },
-    "revenue_per_share": {
-      "2022": 7514581488000000.0,
-      "2023": 1.6960809889e+16,
-      "2024": 1.9113702394e+16,
-      "2025": 7920822376000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 130753036288,
+    "market_cap": 128137977856,
     "enterprise_value": 128538361856,
     "shares_outstanding": 1307530330,
     "free_float_pct": 9.247000029437176
@@ -52,9 +42,9 @@
     "score": 5.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0349,
-    "vol_trend": 0.501,
-    "price_chg_20d": -12.28
+    "cmf": 0.0335,
+    "vol_trend": 0.485,
+    "price_chg_20d": -11.71
   },
   "neraca": {
     "aset": 28675564474.0,

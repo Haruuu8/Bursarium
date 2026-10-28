@@ -6,9 +6,6 @@ if not st.session_state.get("authentication_status"):
 import os, sys
 import pandas as pd
 import numpy as np
-import json
-import glob
-import re
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
@@ -16,102 +13,26 @@ from quant.theme import load_theme, page_header, section_title
 load_theme()
 
 # ============================================================
-# 1. FUNGSI LOAD BERITA (OPSIONAL, JIKA ADA)
+# 1. FUNGSI FORMAT (Diletakkan di atas agar bisa dipakai di mana saja)
 # ============================================================
-@st.cache_data(ttl=1800)
-def load_news_data():
-    """
-    Silakan ganti dengan query ke database berita asli Anda.
-    Jika tidak dipakai, biarkan kosong (return DataFrame kosong).
-    """
-    # CONTOH: df = pd.read_parquet("data/news.parquet")
-    # return df
-    
-    # SEMENTARA KOSONG (Karena kita fokus scan semua saham Q3 dari Fundamental)
-    return pd.DataFrame(columns=['Kode', 'Headline'])
+def format_idr(val):
+    abs_val = abs(val)
+    if abs_val >= 1e12: return f"Rp {val/1e12:,.1f} T"
+    elif abs_val >= 1e9: return f"Rp {val/1e9:,.1f} B"
+    elif abs_val >= 1e6: return f"Rp {val/1e6:,.1f} M"
+    else: return f"Rp {val:,.0f}"
 
 # ============================================================
-# 2. LOAD DATA FUNDAMENTAL (HANYA YANG PUNYA DATA Q3)
+# 2. LOAD DATA
 # ============================================================
 @st.cache_data(ttl=1800)
-def load_fundamental_data_q3_only():
-    folder_path = "data_fundamental"
-    json_files = glob.glob(os.path.join(folder_path, "*.json"))
-    
-    if not json_files:
-        st.error(f"⚠️ Tidak ada file JSON di folder `{folder_path}`.")
-        st.stop()
-
-    data_list = []
-    
-    for file in json_files:
-        with open(file, 'r', encoding='utf-8') as f:
-            try:
-                d = json.load(f)
-            except Exception:
-                continue
-                
-        kode = d.get("kode")
-        sektor = d.get("sektor") or "Unknown"
-        
-        # Ambil Rasio
-        rasio = d.get("rasio_kunci", {})
-        roe_raw = rasio.get("roe")
-        roe = (roe_raw * 100) if roe_raw is not None and abs(roe_raw) < 1 else roe_raw
-        
-        der = rasio.get("de")
-        per = rasio.get("pe")
-        pbv = rasio.get("pb")
-        
-        arus_kas = d.get("arus_kas", {})
-        cfo = arus_kas.get("arus_kas_operasi")
-        
-        q_rev = d.get("quarterly", {}).get("revenue", {})
-        q_ni = d.get("quarterly", {}).get("net_income", {})
-        
-        years = [int(k.split("-")[0]) for k in q_rev.keys() if "-" in k]
-        if not years:
-            continue
-            
-        latest_year = max(years)
-        prev_year = latest_year - 1
-        
-        def get_q(data, year, q): return data.get(f"{year}-Q{q}", 0)
-        
-        # --- KUNCI PERUBAHAN: CEK APAKAH DATA Q3 ADA ---
-        q3_rev = get_q(q_rev, latest_year, 3)
-        q3_ni = get_q(q_ni, latest_year, 3)
-        
-        # Jika Q3 revenue dan net income 0, berarti saham ini belum rilis Q3
-        if q3_rev == 0 and q3_ni == 0:
-            continue 
-            
-        # Jika ada, hitung YTD (Q1+Q2+Q3)
-        rev_ytd = sum([get_q(q_rev, latest_year, q) for q in range(1, 4)])
-        ni_ytd = sum([get_q(q_ni, latest_year, q) for q in range(1, 4)])
-        
-        rev_ytd_ly = sum([get_q(q_rev, prev_year, q) for q in range(1, 4)])
-        ni_ytd_ly = sum([get_q(q_ni, prev_year, q) for q in range(1, 4)])
-        
-        industri = str(d.get("industri", "")).lower()
-        sektor_str = str(sektor).lower()
-        is_bank = "bank" in sektor_str or "bank" in industri
-        tipe = "Bank" if is_bank else "Non-Bank"
-        
-        data_list.append({
-            'Kode': kode, 'Sektor': sektor, 'Tipe': tipe,
-            'NI_YTD': ni_ytd, 'NI_YTD_LY': ni_ytd_ly,
-            'Rev_YTD': rev_ytd, 'Rev_YTD_LY': rev_ytd_ly,
-            'CFO_YTD': cfo if cfo is not None else np.nan,
-            'ROE': roe if roe else 0, 'DER': der if der else 0,
-            'PER': per if per else 0, 'PBV': pbv if pbv else 0,
-            'Avg_Value_Daily': 2_000_000_000
-        })
-        
-    df = pd.DataFrame(data_list)
-    if df.empty:
+def load_clean_q3_data():
+    try:
+        df = pd.read_csv("data_q3_clean.csv")
         return df
-    return df.replace([np.inf, -np.inf], np.nan).fillna(0)
+    except FileNotFoundError:
+        st.error("⚠️ File `data_q3_clean.csv` tidak ditemukan. Silakan jalankan `python quant/find_q3.py` terlebih dahulu di terminal.")
+        st.stop()
 
 # ============================================================
 # 3. LOGIKA SCREENER & HARD FILTER
@@ -119,40 +40,50 @@ def load_fundamental_data_q3_only():
 def run_screener(df):
     d = df.copy()
     
-    # Hitung YoY Murni (Q1+Q2+Q3 vs Q1+Q2+Q3 tahun lalu)
+    # Hitung YoY
     d['NI_YoY_Raw'] = (d['NI_YTD'] - d['NI_YTD_LY']) / d['NI_YTD_LY'].abs().replace(0, np.nan)
     d['Rev_YoY_Raw'] = (d['Rev_YTD'] - d['Rev_YTD_LY']) / d['Rev_YTD_LY'].abs().replace(0, np.nan)
     
+    # Winsorization (Batas -100% s/d +200%)
     d['NI_YoY'] = np.clip(d['NI_YoY_Raw'], -1.0, 2.0).fillna(-1)
     d['Rev_YoY'] = np.clip(d['Rev_YoY_Raw'], -1.0, 2.0).fillna(-1)
     
+    # Margin & Kualitas Laba
     d['NPM_YTD'] = d['NI_YTD'] / d['Rev_YTD'].replace(0, np.nan)
     d['NPM_LY'] = d['NI_YTD_LY'] / d['Rev_YTD_LY'].replace(0, np.nan)
     d['NPM_Change'] = (d['NPM_YTD'] - d['NPM_LY']).fillna(-1)
     
     d['CFO_to_NI'] = d['CFO_YTD'] / d['NI_YTD'].replace(0, np.nan)
     
+    # Flag Anomali
     d['Flag_Anomali'] = ""
     d.loc[d['Rev_YoY_Raw'] > 3.0, 'Flag_Anomali'] += "CEK REV, "
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
-    d.loc[d['NI_YTD_LY'] <= 0, 'Flag_Anomali'] += "RUGI THN LALU, "
     
-    # Evaluasi Filter
+    # Evaluasi Filter (Hard Filters)
     d['is_failed'] = False
     d['fail_reason'] = ""
     
     for idx, row in d.iterrows():
         reason = []
-        cfo_valid = row['CFO_YTD'] > 0
+        cfo_valid = row['CFO_YTD'] > 0 # Valid hanya jika CFO > 0
         
-        if row['NI_YoY_Raw'] < 0: 
-            reason.append(f"Laba Turun ({row['NI_YoY_Raw']*100:.1f}%)")
-        if row['Rev_YoY_Raw'] < -0.20: 
-            reason.append(f"Rev Anjlok ({row['Rev_YoY_Raw']*100:.1f}%)")
-        if row['DER'] > 2.0 and row['Tipe'] != 'Bank': 
-            reason.append(f"DER Tinggi ({row['DER']:.2f}x)")
-        if cfo_valid and row['CFO_to_NI'] < 0.5 and row['Tipe'] != 'Bank': 
-            reason.append(f"CFO Lemah ({row['CFO_to_NI']:.2f}x)")
+        # Filter Laba & Rev (Tangani NaN)
+        if pd.isna(row['NI_YoY_Raw']) or row['NI_YoY_Raw'] < 0: 
+            reason.append(f"Laba Turun (N/A)" if pd.isna(row['NI_YoY_Raw']) else f"Laba Turun ({row['NI_YoY_Raw']*100:.1f}%)")
+        if pd.isna(row['Rev_YoY_Raw']) or row['Rev_YoY_Raw'] < -0.20: 
+            reason.append(f"Rev Anjlok (N/A)" if pd.isna(row['Rev_YoY_Raw']) else f"Rev Anjlok ({row['Rev_YoY_Raw']*100:.1f}%)")
+        
+        # Filter Laba Negatif Mutlak
+        if row['NI_YTD'] <= 0:
+            reason.append(f"Masih Rugi ({format_idr(row['NI_YTD'])})")
+            
+        # Filter DER & CFO
+        if row['Tipe'] != 'Bank':
+            if row['DER'] > 2.0 or row['DER'] < 0:
+                reason.append(f"DER Tidak Sehat ({row['DER']:.2f}x)")
+            if cfo_valid and row['CFO_to_NI'] < 0.5:
+                reason.append(f"CFO Lemah ({row['CFO_to_NI']:.2f}x)")
         
         if reason:
             d.at[idx, 'is_failed'] = True
@@ -163,7 +94,7 @@ def run_screener(df):
     
     if df_pass.empty: return df_pass, df_fail
     
-    # Ranking
+    # Blended Ranking (50% Global, 50% Sektor)
     def blended_rank(series, sector_series, ascending=True):
         global_rank = series.rank(method='min', pct=True, ascending=ascending) * 100
         sector_ranked = series.groupby(sector_series).rank(method='min', pct=True, ascending=ascending) * 100
@@ -175,6 +106,7 @@ def run_screener(df):
     d['Rank_Rev'] = blended_rank(d['Rev_YoY'], d['Sektor'], True)
     d['Rank_Margin'] = blended_rank(d['NPM_Change'], d['Sektor'], True)
     
+    # Bank tidak punya metrik CFO & DER standar, beri rank netral (50)
     d['Rank_Quality'] = blended_rank(d['CFO_to_NI'], d['Sektor'], True)
     d.loc[d['Tipe'] == 'Bank', 'Rank_Quality'] = 50 
     
@@ -187,6 +119,7 @@ def run_screener(df):
     
     d = d.fillna({'Rank_NI': 0, 'Rank_Rev': 0, 'Rank_Margin': 0, 'Rank_Quality': 0, 'Rank_ROE': 0, 'Rank_DER': 0, 'Rank_PER': 0})
     
+    # Skor Akhir
     d['Score_Raw'] = (
         (d['Rank_NI'] * 0.20) + (d['Rank_Rev'] * 0.15) + 
         (d['Rank_Margin'] * 0.20) + (d['Rank_Quality'] * 0.20) + 
@@ -194,23 +127,18 @@ def run_screener(df):
         (d['Rank_PER'] * 0.10)
     )
     
+    # Penalti Skor Bank (-10 poin) karena ketiadaan CFO/NPL
     d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] = d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] - 10
     
+    # Tie-Breaker
     d = d.sort_values(by=['Score_Raw', 'CFO_to_NI', 'ROE', 'NI_YTD'], ascending=[False, False, False, False]).reset_index(drop=True)
     d['Score'] = d['Score_Raw'].round(2)
     return d, df_fail
 
 # ============================================================
-# 4. FUNGSI FORMAT & RENDER KARTU
+# 4. RENDER KARTU
 # ============================================================
-def format_idr(val):
-    abs_val = abs(val)
-    if abs_val >= 1e12: return f"Rp {val/1e12:,.1f} T"
-    elif abs_val >= 1e9: return f"Rp {val/1e9:,.1f} B"
-    elif abs_val >= 1e6: return f"Rp {val/1e6:,.1f} M"
-    else: return f"Rp {val:,.0f}"
-
-def render_card(row, rank, headline=None):
+def render_card(row, rank):
     ni_ytd_rp = format_idr(row['NI_YTD'])
     ni_yoy = f"{row['NI_YoY']*100:+.1f}%" if row['NI_YoY'] != -1 else "N/A"
     rev_yoy = f"{row['Rev_YoY']*100:+.1f}%" if row['Rev_YoY'] != -1 else "N/A"
@@ -230,22 +158,16 @@ def render_card(row, rank, headline=None):
     if row['Flag_Anomali']:
         flag_html += f'<span style="background:#525252; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ {row["Flag_Anomali"].strip(", ")}</span>'
     
-    # Render Headline jika ada
-    headline_html = ""
-    if headline:
-        headline_html = f'<div style="font-size:13px; color:#e5e5e5; font-style:italic; border-left:2px solid #525252; padding-left:8px; margin-top:8px;">"{headline}"</div>'
-    
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
         f'border-radius:12px; padding:20px 24px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; '
         f'box-shadow: 0 4px 15px rgba(0,0,0,0.2);">'
         
-        f'<div style="min-width: 250px; flex: 1;">'
+        f'<div style="min-width: 180px;">'
         f'<div style="font-size:12px; color:#737373; font-weight:800; letter-spacing:1px; margin-bottom:4px;">RANK #{rank}</div>'
         f'<div style="font-size:26px; font-weight:800; color:#ffffff; margin-bottom:4px;">{row["Kode"]}</div>'
         f'<div style="font-size:13px; color:#a3a3a3; margin-bottom:8px;">{row["Sektor"]}</div>'
         f'<div style="display:flex; flex-wrap:wrap; gap:4px;">{flag_html}</div>'
-        f'{headline_html}'
         f'</div>'
         
         f'<div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:16px 24px; flex:1; max-width:700px;">'
@@ -271,36 +193,24 @@ def render_card(row, rank, headline=None):
 # ============================================================
 # 5. UI RENDERING UTAMA
 # ============================================================
-st.markdown(page_header("", "Q3 Fundamental Screener", "Menampilkan Seluruh Saham yang Telah Rilis Laporan Q3"), unsafe_allow_html=True)
+st.markdown(page_header("", "Q3 Fundamental Screener", "Peringkat Fundamental Q3 Berdasarkan Sektor"), unsafe_allow_html=True)
 
-# Load Berita (Opsional)
-df_news = load_news_data()
-
-# Load Fundamental (Hanya yang ada Q3)
-df_raw = load_fundamental_data_q3_only()
+df_raw = load_clean_q3_data()
 
 if df_raw.empty:
-    st.warning("⚠️ Tidak ada satu pun saham di database fundamental Anda yang memiliki data Q3. Pastikan scraper sudah mengambil data Q3.")
+    st.warning("Data kosong.")
     st.stop()
 
-# Tampilkan Info
+# Info Box
 st.markdown(
     f'<div style="background:#262626; border:1px solid #404040; border-left:4px solid #ffffff; '
     f'border-radius:8px; padding:12px 16px; margin-bottom:24px; font-size:14px; color:#e5e5e5;">'
-    f'<b>INFORMASI:</b> Ditemukan <b>{len(df_raw)} saham</b> di database Anda yang sudah memiliki data laporan Q3. '
-    f'Sistem akan memproses seluruh saham tersebut.'
+    f'<b>INFORMASI:</b> Memproses <b>{len(df_raw)} saham</b> yang terdeteksi sudah memiliki data Q3 2026 dan lolos seleksi awal.'
     f'</div>', 
     unsafe_allow_html=True
 )
 
-# Jalankan Screener
 df_pass, df_fail = run_screener(df_raw)
-
-# Fungsi bantu ambil berita (jika ada)
-def get_headline(kode):
-    if df_news.empty: return None
-    news = df_news[df_news['Kode'] == kode]['Headline'].values
-    return news[0] if len(news) > 0 else None
 
 # 1. TAMPILKAN YANG LOLOS
 if df_pass.empty:
@@ -313,14 +223,14 @@ else:
     with tabs[0]:
         st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
         for idx, row in df_pass.head(10).iterrows():
-            render_card(row, idx + 1, get_headline(row['Kode']))
+            render_card(row, idx + 1)
 
     for i, sector in enumerate(sectors):
         with tabs[i + 1]:
             st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
             df_sector = df_pass[df_pass['Sektor'] == sector].head(5)
             for idx, row in df_sector.iterrows():
-                render_card(row, idx + 1, get_headline(row['Kode']))
+                render_card(row, idx + 1)
 
 # 2. TAMPILKAN YANG GUGUR
 if not df_fail.empty:
@@ -333,8 +243,3 @@ if not df_fail.empty:
             f'</div>', 
             unsafe_allow_html=True
         )
-
-# Debug
-with st.expander("🔍 Debug Data Fundamental Q3"):
-    st.write("Data yang diproses:")
-    st.dataframe(df_raw[['Kode', 'Sektor', 'NI_YTD', 'NI_YTD_LY', 'Rev_YTD', 'CFO_YTD', 'DER', 'PER', 'ROE']])

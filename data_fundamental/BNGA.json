@@ -3,74 +3,56 @@
   "nama": "PT Bank CIMB Niaga Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 1610.0,
-  "update": "2026-10-26 23:57",
-  "periode_terbaru": "2026-tw2",
+  "harga": 1525.0,
+  "update": "2026-10-28 14:20",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.016869142885640218,
-    "pb": 0.0020617134970736138,
-    "ps": 0.004840005228058138,
-    "roe": 0.06123767320908381,
-    "eps": 95440.53369602466,
-    "de": 5.803844521436655,
-    "margin_net": 0.2956942046618048,
+    "pe": 0.017378415428765823,
+    "pb": 0.0019099744721449785,
+    "ps": 0.004554244620438997,
+    "roe": 0.07829115085488404,
+    "eps": 87752.53453060664,
+    "de": 5.703353325063426,
+    "margin_net": 0.2515704086644272,
     "current_ratio": null,
-    "roa": 0.008995826954998992,
-    "bv": 780903.8463808023
+    "roa": 0.011672974242545143,
+    "bv": 798439.9908169261
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 5844600000000.0,
-      "2024-Q4": 6204353000000.0,
       "2025-Q1": 6233370000000.0,
       "2025-Q2": 6157268000000.0,
       "2025-Q3": 6206038000000.0,
-      "2025-Q4": 6075284000000.0,
       "2026-Q1": 5697618000000.0,
-      "2026-Q2": 5922860000000.0
+      "2026-Q2": 5922860000000.0,
+      "2026-Q3": 6233951000000.0
     },
     "eps": {
-      "2024-Q1": 66.96,
-      "2024-Q4": 271.59,
       "2025-Q1": 0.0,
       "2025-Q2": 137.43,
       "2025-Q3": 72.14,
-      "2025-Q4": 63.96,
       "2026-Q1": 70.2,
-      "2026-Q2": 66.47
+      "2026-Q2": 66.47,
+      "2026-Q3": 41.98
     },
     "net_income": {
-      "2024-Q1": 1681041000000.0,
-      "2024-Q4": 1692729000000.0,
       "2025-Q1": 1804933000000.0,
       "2025-Q2": 1649934000000.0,
       "2025-Q3": 1813719000000.0,
-      "2025-Q4": 1607951000000.0,
       "2026-Q1": 1764956000000.0,
-      "2026-Q2": 1671152000000.0
+      "2026-Q2": 1671152000000.0,
+      "2026-Q3": 1055538000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 164.48,
-      "2022": 202.21,
-      "2023": 259.45,
-      "2024": 271.59,
-      "2025": 273.53
-    },
-    "revenue_per_share": {
-      "2021": 18862951000000.0,
-      "2022": 19114194000000.0,
-      "2023": 22306000000000.0,
-      "2024": 24227316000000.0,
-      "2025": 24671960000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 40478410014720,
-    "enterprise_value": 33423303376896,
+    "market_cap": 38341353406464,
+    "enterprise_value": 31286242574336,
     "shares_outstanding": 71853936,
     "free_float_pct": 100.07210739297565
   },
@@ -78,39 +60,39 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2912,
-    "vol_trend": 2.712,
-    "price_chg_20d": -6.94
+    "cmf": -0.3972,
+    "vol_trend": 3.158,
+    "price_chg_20d": -11.85
   },
   "neraca": {
-    "aset": 381966885.0,
+    "aset": 384790192.0,
     "aset_lancar": null,
     "kas": null,
-    "piutang_usaha": 9878746.0,
+    "piutang_usaha": 9791452.0,
     "persediaan": null,
-    "aset_tetap": 7250859.0,
-    "liabilitas": 325659607.0,
+    "aset_tetap": 7239865.0,
+    "liabilitas": 327207403.0,
     "liabilitas_jangka_pendek": null,
     "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
-    "ekuitas": 56111015.0,
-    "ekuitas_induk": 56111015.0,
+    "ekuitas": 57371056.0,
+    "ekuitas_induk": 57371056.0,
     "modal_saham": null,
-    "saldo_laba": 43109720.0
+    "saldo_laba": 44167951.0
   },
   "laba_rugi": {
-    "pendapatan": 11620478.0,
+    "pendapatan": 17854429.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
-    "laba_operasi": 4303401.0,
-    "laba_sebelum_pajak": 4327811.0,
-    "beban_pajak": -892330.0,
-    "laba_bersih": 3436108.0,
-    "laba_induk": 3436108.0,
-    "eps_basic": 136.67,
-    "eps_diluted": 136.67
+    "laba_operasi": 5747279.0,
+    "laba_sebelum_pajak": 5784378.0,
+    "beban_pajak": -1277896.0,
+    "laba_bersih": 4491646.0,
+    "laba_induk": 4491646.0,
+    "eps_basic": 178.65,
+    "eps_diluted": 178.65
   },
   "arus_kas": {
     "arus_kas_operasi": null,

@@ -1,64 +1,60 @@
 {
   "kode": "FASW",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-27 11:18",
-  "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "nama": "PT Fajar Surya Wisesa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 5450.0,
+  "update": "2026-10-28 14:24",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": null,
-    "roe": 0.015045352137477673,
-    "eps": null,
-    "de": 1.1327214869535265,
-    "margin_net": 0.02014043300713285,
-    "current_ratio": 0.79863962443256,
-    "roa": 0.007054532075338688,
-    "bv": null
+    "pb": 2.9410524518121073,
+    "ps": 2.004402286946995,
+    "roe": 0.03859504345445767,
+    "eps": -2.953817301187047,
+    "de": 1.0870261832414791,
+    "margin_net": 0.03362376838753085,
+    "current_ratio": 0.8266217746381118,
+    "roa": 0.018492841040697205,
+    "bv": 1853.0781376041164
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": 1792068000000.0,
+      "2025-Q1": 2007521000000.0,
+      "2025-Q2": 2010826000000.0,
+      "2025-Q3": 1906852000000.0,
       "2026-Q1": 1953110000000.0,
-      "2026-Q2": 2399428000000.0
+      "2026-Q2": 2399428000000.0,
+      "2026-Q3": 2499252000000.0
     },
     "eps": {
-      "2024-Q3": -134.52,
+      "2025-Q1": -123.73,
+      "2025-Q2": -74.69,
+      "2025-Q3": -71.59,
       "2026-Q1": -6.0,
-      "2026-Q2": 33.21
+      "2026-Q2": 33.21,
+      "2026-Q3": 44.31
     },
     "net_income": {
-      "2024-Q3": -333311000000.0,
+      "2025-Q1": -306585000000.0,
+      "2025-Q2": -185079000000.0,
+      "2025-Q3": -239898000000.0,
       "2026-Q1": -19337000000.0,
-      "2026-Q2": 106999000000.0
+      "2026-Q2": 106999000000.0,
+      "2026-Q3": 142721000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 248.17,
-      "2022": 48.4,
-      "2023": -252.58,
-      "2025": -400.21
-    },
-    "revenue_per_share": {
-      "2021": 11932773000000.0,
-      "2022": 10890282000000.0,
-      "2023": 2.71669e+17,
-      "2025": 8102378000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 17555842400256,
+    "enterprise_value": 21977641254912,
+    "shares_outstanding": 3221255423,
+    "free_float_pct": 0.22300001262582275
   },
   "akumulasi": {
     "score": 5.0,
@@ -69,40 +65,40 @@
     "price_chg_20d": 0.0
   },
   "neraca": {
-    "aset": 12426338.0,
-    "aset_lancar": 3182757.0,
-    "kas": 95756.0,
-    "piutang_usaha": 1241067.0,
-    "persediaan": 1046696.0,
-    "aset_tetap": 57909.0,
-    "liabilitas": 6599821.0,
-    "liabilitas_jangka_pendek": 3985223.0,
-    "liabilitas_jangka_panjang": 2614598.0,
-    "utang_usaha": 1241067.0,
-    "utang_bank": 1951000.0,
-    "ekuitas": 5826517.0,
-    "ekuitas_induk": 5826517.0,
+    "aset": 12457956.0,
+    "aset_lancar": 3189473.0,
+    "kas": 71789.0,
+    "piutang_usaha": 1469842.0,
+    "persediaan": 960605.0,
+    "aset_tetap": 111939.0,
+    "liabilitas": 6488718.0,
+    "liabilitas_jangka_pendek": 3858443.0,
+    "liabilitas_jangka_panjang": 2630275.0,
+    "utang_usaha": 1469842.0,
+    "utang_bank": 1817985.0,
+    "ekuitas": 5969238.0,
+    "ekuitas_induk": 5969238.0,
     "modal_saham": null,
     "saldo_laba": 2200.0
   },
   "laba_rugi": {
-    "pendapatan": 4352538.0,
-    "beban_pokok": 3870019.0,
+    "pendapatan": 6851790.0,
+    "beban_pokok": 6025351.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 112281.0,
-    "beban_pajak": -24619.0,
-    "laba_bersih": 87662.0,
-    "laba_induk": 87662.0,
-    "eps_basic": 27.21,
+    "laba_sebelum_pajak": 255878.0,
+    "beban_pajak": -25495.0,
+    "laba_bersih": 230383.0,
+    "laba_induk": 230383.0,
+    "eps_basic": 71.52,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 57909.0,
+    "capex": 111939.0,
     "dividen_dibayar": null
   }
 }

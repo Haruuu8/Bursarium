@@ -3,100 +3,96 @@
   "nama": "PT Trimitra Trans Persada Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 324.0,
-  "update": "2026-10-26 23:23",
-  "periode_terbaru": "2026-tw2",
+  "harga": 330.0,
+  "update": "2026-10-28 14:20",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 7.254843128025238e-06,
-    "pb": 1.7458135520293947,
-    "ps": 1.0290993333299245e-05,
-    "roe": 0.1236423855888081,
-    "eps": 44659821.62293735,
-    "de": 0.8152119120343451,
-    "margin_net": 0.1058120878863063,
-    "current_ratio": 1.4294677768043769,
-    "roa": 0.06811356929962141,
-    "bv": 185.58682834336523
+    "pe": 7.0236776777725165e-06,
+    "pb": 1.663250773200469,
+    "ps": 3.399636284717806e-06,
+    "roe": 0.18026720846711544,
+    "eps": 46983932.79696399,
+    "de": 0.7388466537020969,
+    "margin_net": 0.10685645291344668,
+    "current_ratio": 1.6997993684838317,
+    "roa": 0.10366903695384264,
+    "bv": 198.40664157035422
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 3.2804301315699994e+17,
-      "2025-Q4": -9.545190116185659e+17,
       "2026-Q1": 3.57517651214e+17,
-      "2026-Q2": 3.75357585624e+17
+      "2026-Q2": 3.75357585624e+17,
+      "2026-Q3": -7.32874105680729e+17
     },
     "eps": {
       "2025-Q3": -169.0,
-      "2025-Q4": -36.0,
       "2026-Q1": 47.0,
-      "2026-Q2": -1.0
+      "2026-Q2": -1.0,
+      "2026-Q3": -10.0
     },
     "net_income": {
       "2025-Q3": 3.7910145816e+16,
-      "2025-Q4": 3.5470090743e+16,
       "2026-Q1": 3.6553972627e+16,
-      "2026-Q2": 4.0993086343e+16
+      "2026-Q2": 4.0993086343e+16,
+      "2026-Q3": 4.3324394707e+16
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2025": 47.0
-    },
-    "revenue_per_share": {
-      "2025": 1327762434000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 1094953861120,
-    "enterprise_value": 1343644106752,
+    "market_cap": 1115230830592,
+    "enterprise_value": 1336885116928,
     "shares_outstanding": 3379487200,
     "free_float_pct": 16.66700001112595
   },
   "akumulasi": {
-    "score": 4.1,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.029,
-    "vol_trend": 0.607,
-    "price_chg_20d": -8.99
+    "score": 3.1,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.093,
+    "vol_trend": 0.648,
+    "price_chg_20d": -8.38
   },
   "neraca": {
-    "aset": 1138496481206.0,
-    "aset_lancar": 311463536300.0,
-    "kas": 129257237427.0,
-    "piutang_usaha": 19970258246.0,
+    "aset": 1165935917113.0,
+    "aset_lancar": 278651029626.0,
+    "kas": 91270003629.0,
+    "piutang_usaha": 28827522429.0,
     "persediaan": null,
-    "aset_tetap": 786690013475.0,
-    "liabilitas": 511291382114.0,
-    "liabilitas_jangka_pendek": 217887763092.0,
-    "liabilitas_jangka_panjang": 293403619022.0,
-    "utang_usaha": 19970258246.0,
-    "utang_bank": 43160097045.0,
-    "ekuitas": 627188310875.0,
-    "ekuitas_induk": 627188310875.0,
+    "aset_tetap": 845551684232.0,
+    "liabilitas": 495406068784.0,
+    "liabilitas_jangka_pendek": 163931717350.0,
+    "liabilitas_jangka_panjang": 331474351434.0,
+    "utang_usaha": 28827522429.0,
+    "utang_bank": 40901763713.0,
+    "ekuitas": 670512705582.0,
+    "ekuitas_induk": 670512705582.0,
     "modal_saham": null,
     "saldo_laba": 12300000000.0
   },
   "laba_rugi": {
-    "pendapatan": 732875236838.0,
-    "beban_pokok": 593743145914.0,
+    "pendapatan": 1131157271100.0,
+    "beban_pokok": 915699253114.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 100832127672.0,
-    "beban_pajak": -23284791090.0,
-    "laba_bersih": 77547058970.0,
-    "laba_induk": 77547058970.0,
-    "eps_basic": 46.0,
+    "laba_sebelum_pajak": 154435411017.0,
+    "beban_pajak": -33563325198.0,
+    "laba_bersih": 120871453677.0,
+    "laba_induk": 120871453677.0,
+    "eps_basic": 36.0,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 148838832912.0,
-    "dividen_dibayar": 49997433330.0
+    "capex": 235617353197.0,
+    "dividen_dibayar": 70969231200.0
   }
 }

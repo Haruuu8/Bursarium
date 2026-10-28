@@ -3,74 +3,56 @@
   "nama": "PT Bank Aladin Syariah Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 174.0,
-  "update": "2026-10-27 14:23",
-  "periode_terbaru": "2026-tw2",
+  "harga": 166.0,
+  "update": "2026-10-28 14:19",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 22.480108647679653,
-    "pb": 0.7410590984464321,
-    "ps": -928.6413669659091,
-    "roe": 0.011602487836491492,
-    "eps": 7.740176114227094,
-    "de": 0.26196733263689387,
-    "margin_net": -24.876215165262476,
+    "pe": 24.52366351179055,
+    "pb": 0.703977019076253,
+    "ps": -2.481765644746783,
+    "roe": 0.014223139095407752,
+    "eps": 6.7689723405391735,
+    "de": 0.5937425411667399,
+    "margin_net": -0.05087523052922944,
     "current_ratio": null,
-    "roa": 0.0025349344330729165,
-    "bv": 234.79908736668412
+    "roa": 0.002965420579221849,
+    "bv": 235.8031519520658
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": -7608000000.0,
-      "2024-Q4": -23152000000.0,
       "2025-Q1": -2036000000.0,
       "2025-Q2": -1032000000.0,
       "2025-Q3": -13591000000.0,
-      "2025-Q4": 12494000000.0,
       "2026-Q1": -2036000000.0,
-      "2026-Q2": 493000000.0
+      "2026-Q2": 493000000.0,
+      "2026-Q3": -927298000000.0
     },
     "eps": {
-      "2024-Q3": -1.54,
-      "2024-Q4": 0.68,
       "2025-Q1": 2.0,
       "2025-Q2": 4.0,
       "2025-Q3": 3.0,
-      "2025-Q4": -9.0,
       "2026-Q1": 0.0,
-      "2026-Q2": 2.39
+      "2026-Q2": 2.39,
+      "2026-Q3": -2.39
     },
     "net_income": {
-      "2024-Q3": -21427000000.0,
-      "2024-Q4": 5274000000.0,
       "2025-Q1": 33468000000.0,
       "2025-Q2": 46568000000.0,
       "2025-Q3": 48118000000.0,
-      "2025-Q4": 22555000000.0,
       "2026-Q1": 23323000000.0,
-      "2026-Q2": 15061000000.0
+      "2026-Q2": 15061000000.0,
+      "2026-Q3": 8871000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": -9.0,
-      "2022": -20.0,
-      "2023": -16.0,
-      "2024": -5.0,
-      "2025": 0.0
-    },
-    "revenue_per_share": {
-      "2021": -13460000000.0,
-      "2022": -53219000000.0,
-      "2023": -35673000000.0,
-      "2024": -39337000000.0,
-      "2025": -4165000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 2451613155328,
-    "enterprise_value": 3548342910976,
+    "market_cap": 2338895429632,
+    "enterprise_value": 3393356038144,
     "shares_outstanding": 14089731085,
     "free_float_pct": 48.68099999653045
   },
@@ -78,38 +60,38 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1411,
-    "vol_trend": 0.203,
-    "price_chg_20d": -18.42
+    "cmf": -0.2398,
+    "vol_trend": 0.191,
+    "price_chg_20d": -25.21
   },
   "neraca": {
-    "aset": 15142009.0,
+    "aset": 15935345.0,
     "aset_lancar": null,
     "kas": null,
     "piutang_usaha": null,
     "persediaan": null,
-    "aset_tetap": 12819.0,
-    "liabilitas": 866655.0,
+    "aset_tetap": 958119.0,
+    "liabilitas": 1972652.0,
     "liabilitas_jangka_pendek": null,
     "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
-    "ekuitas": 3308256.0,
-    "ekuitas_induk": 3308256.0,
+    "ekuitas": 3322403.0,
+    "ekuitas_induk": 3322403.0,
     "modal_saham": null,
-    "saldo_laba": -676282.0
+    "saldo_laba": -667411.0
   },
   "laba_rugi": {
-    "pendapatan": -1543.0,
+    "pendapatan": -928841.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
-    "laba_operasi": 31177.0,
-    "laba_sebelum_pajak": 33402.0,
-    "beban_pajak": 4982.0,
-    "laba_bersih": 38384.0,
-    "laba_induk": 38384.0,
-    "eps_basic": 2.39,
+    "laba_operasi": 42293.0,
+    "laba_sebelum_pajak": 44410.0,
+    "beban_pajak": 2845.0,
+    "laba_bersih": 47255.0,
+    "laba_induk": 47255.0,
+    "eps_basic": 3.36e-06,
     "eps_diluted": null
   },
   "arus_kas": {

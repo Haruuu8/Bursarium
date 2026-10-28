@@ -3,80 +3,56 @@
   "nama": "PT Bank Permata Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 1605.0,
-  "update": "2026-10-26 23:58",
-  "periode_terbaru": "2026-tw2",
+  "harga": 1565.0,
+  "update": "2026-10-28 14:20",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.011783461435408581,
-    "pb": 0.0009555449374238066,
-    "ps": 0.002659324729691238,
-    "roe": 0.038074199824681854,
-    "eps": 136207.85444055285,
-    "de": 5.03823315913885,
-    "margin_net": 0.22108297085205542,
+    "pe": 0.011051621495662243,
+    "pb": 0.0009063650916223945,
+    "ps": 0.0025686108952160443,
+    "roe": 0.05534561299625632,
+    "eps": 141608.17945260447,
+    "de": 4.9728986114359985,
+    "margin_net": 0.21197730883750207,
     "current_ratio": null,
-    "roa": 0.00630551997930995,
-    "bv": 1679669.8272790334
+    "roa": 0.00926612296587271,
+    "bv": 1726677.2677648566
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 4144297000000.0,
-      "2024-Q2": 4141485000000.0,
-      "2024-Q3": 4466144000000.0,
-      "2024-Q4": 4461113000000.0,
       "2025-Q1": 4260507000000.0,
       "2025-Q2": 4326824000000.0,
       "2025-Q3": 4259357000000.0,
-      "2025-Q4": 4188276000000.0,
       "2026-Q1": 3875804000000.0,
-      "2026-Q2": 3899770000000.0
+      "2026-Q2": 3899770000000.0,
+      "2026-Q3": 4342624000000.0
     },
     "eps": {
-      "2024-Q1": 22.31,
-      "2024-Q2": 19.97,
-      "2024-Q3": 34.71,
-      "2024-Q4": 21.58,
       "2025-Q1": 21.81,
       "2025-Q2": 23.66,
       "2025-Q3": 34.53,
-      "2025-Q4": 19.15,
       "2026-Q1": 25.43,
-      "2026-Q2": 22.08
+      "2026-Q2": 22.08,
+      "2026-Q3": 23.49
     },
     "net_income": {
-      "2024-Q1": 807314000000.0,
-      "2024-Q2": 722271000000.0,
-      "2024-Q3": 1256037000000.0,
-      "2024-Q4": 780897000000.0,
       "2025-Q1": 788974000000.0,
       "2025-Q2": 856309000000.0,
       "2025-Q3": 1237678000000.0,
-      "2025-Q4": 704574000000.0,
       "2026-Q1": 920104000000.0,
-      "2026-Q2": 798943000000.0
+      "2026-Q2": 798943000000.0,
+      "2026-Q3": 849736000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 39.03,
-      "2022": 56.0,
-      "2023": 71.0,
-      "2024": 98.57,
-      "2025": 99.15
-    },
-    "revenue_per_share": {
-      "2021": 11895321000000.0,
-      "2022": 12818030000000.0,
-      "2023": 16039144000000.0,
-      "2024": 17213039000000.0,
-      "2025": 17034964000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 58071002906624,
-    "enterprise_value": 55273481830400,
+    "market_cap": 56623754117120,
+    "enterprise_value": 53826228846592,
     "shares_outstanding": 26880234,
     "free_float_pct": 98.2594050334532
   },
@@ -84,39 +60,39 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4188,
-    "vol_trend": 1.194,
-    "price_chg_20d": -18.94
+    "cmf": -0.402,
+    "vol_trend": 1.079,
+    "price_chg_20d": -17.41
   },
   "neraca": {
-    "aset": 272625732.0,
+    "aset": 277223064.0,
     "aset_lancar": null,
     "kas": null,
     "piutang_usaha": null,
     "persediaan": null,
-    "aset_tetap": 3632696.0,
-    "liabilitas": 227475814.0,
+    "aset_tetap": 3613223.0,
+    "liabilitas": 230809575.0,
     "liabilitas_jangka_pendek": null,
     "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
-    "ekuitas": 45149918.0,
-    "ekuitas_induk": 45149918.0,
+    "ekuitas": 46413489.0,
+    "ekuitas_induk": 46413489.0,
     "modal_saham": null,
-    "saldo_laba": 10621220.0
+    "saldo_laba": 11516855.0
   },
   "laba_rugi": {
-    "pendapatan": 7775574.0,
+    "pendapatan": 12118198.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
-    "laba_operasi": 2219729.0,
-    "laba_sebelum_pajak": 2219729.0,
-    "beban_pajak": -500682.0,
-    "laba_bersih": 1719047.0,
-    "laba_induk": 1719047.0,
-    "eps_basic": 47.51,
-    "eps_diluted": 47.51
+    "laba_operasi": 3315695.0,
+    "laba_sebelum_pajak": 3315695.0,
+    "beban_pajak": -746912.0,
+    "laba_bersih": 2568783.0,
+    "laba_induk": 2568783.0,
+    "eps_basic": 71.0,
+    "eps_diluted": 71.0
   },
   "arus_kas": {
     "arus_kas_operasi": null,

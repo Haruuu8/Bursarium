@@ -3,122 +3,102 @@
   "nama": "PT Multikarya Asia Pasifik Raya Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Equipment & Services",
-  "harga": 1075.0,
-  "update": "2026-10-26 23:15",
-  "periode_terbaru": "2026-tw2",
+  "harga": 1090.0,
+  "update": "2026-10-28 14:30",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 8.253939034353763e-05,
-    "pb": 10.278682917550263,
-    "ps": 9.05497075992877e-06,
-    "roe": 0.048600121738951736,
-    "eps": 13024084.567692308,
-    "de": 0.4977684703439218,
-    "margin_net": 0.09164612475082697,
-    "current_ratio": 2.4534364123003414,
-    "roa": 0.03244835413566426,
-    "bv": 104.58538400523076
+    "pe": 0.00010542648790381227,
+    "pb": 10.931434502242219,
+    "ps": 1.1911861668580233e-05,
+    "roe": 0.05223474303151331,
+    "eps": 10338957.710461538,
+    "de": 0.6990370778608482,
+    "margin_net": 0.07355879422512794,
+    "current_ratio": 1.832452986532749,
+    "roa": 0.030743733442991618,
+    "bv": 99.71243936707693
   },
   "quarterly": {
     "revenue": {
-      "2024-Q1": 7.9659545887e+16,
-      "2024-Q2": 6.0275057728e+16,
-      "2024-Q3": 7.1699209178e+16,
-      "2024-Q4": 1.44629123643e+17,
       "2025-Q1": 1.27975736867e+17,
       "2025-Q2": 7.2073746622e+16,
       "2025-Q3": 6.727094668e+16,
-      "2025-Q4": 1.38315884735e+17,
       "2026-Q1": 8.9890868421e+16,
-      "2026-Q2": 9.0360100487e+16
+      "2026-Q2": 9.0360100487e+16,
+      "2026-Q3": 4.9870725341e+16
     },
     "eps": {
-      "2024-Q1": 19.38,
-      "2024-Q2": -5.58,
-      "2024-Q3": 0.09,
-      "2024-Q4": -0.96,
       "2025-Q1": 23.31,
       "2025-Q2": -4.98,
       "2025-Q3": 0.77,
-      "2025-Q4": -2.07,
       "2026-Q1": 7.78,
-      "2026-Q2": 2.47
+      "2026-Q2": 2.47,
+      "2026-Q3": -5.04
     },
     "net_income": {
-      "2024-Q1": 1.552983201e+16,
-      "2024-Q2": 6718120838000000.0,
-      "2024-Q3": 1.1510255788e+16,
-      "2024-Q4": 6917063569000000.0,
       "2025-Q1": 1.8683063853e+16,
       "2025-Q2": 1.0852141258e+16,
       "2025-Q3": 1.6674138205e+16,
-      "2025-Q4": 9134833857000000.0,
       "2026-Q1": 6238009248000000.0,
-      "2026-Q2": 1.0281293535e+16
+      "2026-Q2": 1.0281293535e+16,
+      "2026-Q3": 408171571000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2023": 12.4,
-      "2024": 12.93,
-      "2025": 17.03
-    },
-    "revenue_per_share": {
-      "2023": 2.32154374128e+17,
-      "2024": 3.56262936436e+17,
-      "2025": 4.05636314904e+17
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 3493749850112,
+    "market_cap": 3542499983360,
     "enterprise_value": 3571084427264,
     "shares_outstanding": 3250000000,
     "free_float_pct": 17.592
   },
   "akumulasi": {
-    "score": 5.3,
+    "score": 4.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0898,
-    "vol_trend": 1.622,
-    "price_chg_20d": -4.44
+    "cmf": -0.0019,
+    "vol_trend": 1.507,
+    "price_chg_20d": -4.02
   },
   "neraca": {
-    "aset": 509095244521.0,
-    "aset_lancar": 324813180891.0,
-    "kas": 32349756574.0,
-    "piutang_usaha": 85067239352.0,
-    "persediaan": 112663680173.0,
-    "aset_tetap": 179637777186.0,
-    "liabilitas": 169192746504.0,
-    "liabilitas_jangka_pendek": 132391114464.0,
-    "liabilitas_jangka_panjang": 36801632040.0,
-    "utang_usaha": 85067239352.0,
-    "utang_bank": 73294823398.0,
-    "ekuitas": 339902498017.0,
-    "ekuitas_induk": 339902498017.0,
+    "aset": 550599177728.0,
+    "aset_lancar": 357100058197.0,
+    "kas": 34614608427.0,
+    "piutang_usaha": 69521720932.0,
+    "persediaan": 150862836847.0,
+    "aset_tetap": 189265498447.0,
+    "liabilitas": 226533749785.0,
+    "liabilitas_jangka_pendek": 194875426994.0,
+    "liabilitas_jangka_panjang": 31658322791.0,
+    "utang_usaha": 69521720932.0,
+    "utang_bank": 105677848787.0,
+    "ekuitas": 324065427943.0,
+    "ekuitas_induk": 324065427943.0,
     "modal_saham": null,
-    "saldo_laba": 2000000000.0
+    "saldo_laba": 3000000000.0
   },
   "laba_rugi": {
-    "pendapatan": 180250968908.0,
-    "beban_pokok": 121760411702.0,
+    "pendapatan": 230121694249.0,
+    "beban_pokok": 154232090231.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 20685925758.0,
-    "beban_pajak": -4166622975.0,
-    "laba_bersih": 16519302783.0,
-    "laba_induk": 16519302783.0,
-    "eps_basic": 10.25,
+    "laba_sebelum_pajak": 19944232853.0,
+    "beban_pajak": -3016758499.0,
+    "laba_bersih": 16927474354.0,
+    "laba_induk": 16927474354.0,
+    "eps_basic": 5.21,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 13269325204.0,
-    "dividen_dibayar": 9743542365.0
+    "capex": 22897046465.0,
+    "dividen_dibayar": 16250000000.0
   }
 }

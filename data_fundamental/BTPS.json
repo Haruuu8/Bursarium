@@ -1,100 +1,98 @@
 {
   "kode": "BTPS",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-27 12:57",
-  "periode_terbaru": "2026-tw2",
-  "warnings": [
-    "quarterly_incomplete",
-    "ttm_fallback"
-  ],
+  "nama": "PT Bank BTPN Syariah Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 990.0,
+  "update": "2026-10-28 14:21",
+  "periode_terbaru": "2026-tw3",
+  "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": null,
-    "ps": null,
-    "roe": 0.06389281602324105,
-    "eps": null,
-    "de": 0.3159127462287244,
-    "margin_net": -10.868356907158374,
+    "pe": 5.805774667829852,
+    "pb": 0.7184976621180216,
+    "ps": -71.04814383529741,
+    "roe": 0.09532041117178985,
+    "eps": 170.51988005763465,
+    "de": 0.3212567886756675,
+    "margin_net": -13.364695470696237,
     "current_ratio": null,
-    "roa": 0.028128309841505262,
-    "bv": null
+    "roa": 0.04217462628933016,
+    "bv": 1377.8750470553111
   },
   "quarterly": {
     "revenue": {
-      "2024-Q3": -24310000000.0,
+      "2025-Q1": -3620000000.0,
+      "2025-Q2": -14004000000.0,
+      "2025-Q3": -31638000000.0,
       "2026-Q1": -31718000000.0,
-      "2026-Q2": -28589000000.0
+      "2026-Q2": -28589000000.0,
+      "2026-Q3": -15400000000.0
     },
     "eps": {
-      "2024-Q3": 28.0,
+      "2025-Q1": 40.0,
+      "2025-Q2": 44.0,
+      "2025-Q3": 39.0,
       "2026-Q1": 41.0,
-      "2026-Q2": 44.0
+      "2026-Q2": 44.0,
+      "2026-Q3": 46.0
     },
     "net_income": {
-      "2024-Q3": 218443000000.0,
+      "2025-Q1": 310790000000.0,
+      "2025-Q2": 333043000000.0,
+      "2025-Q3": 301833000000.0,
       "2026-Q1": 319433000000.0,
-      "2026-Q2": 336005000000.0
+      "2026-Q2": 336005000000.0,
+      "2026-Q3": 356363000000.0
     },
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2022": 231.0,
-      "2023": 140.0,
-      "2025": 156.0
-    },
-    "revenue_per_share": {
-      "2022": -92289000000.0,
-      "2023": -1.07674e+17,
-      "2025": -84576000000.0
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 7626662871040,
+    "enterprise_value": 7158513008640,
+    "shares_outstanding": 7703700000,
+    "free_float_pct": 30.22626953282189
   },
   "akumulasi": {
-    "score": 7.5,
+    "score": 7.7,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2156,
-    "vol_trend": 1.183,
-    "price_chg_20d": 8.11
+    "cmf": 0.111,
+    "vol_trend": 1.269,
+    "price_chg_20d": 2.65
   },
   "neraca": {
-    "aset": 23301720.0,
+    "aset": 23990752.0,
     "aset_lancar": null,
     "kas": null,
     "piutang_usaha": null,
     "persediaan": null,
-    "aset_tetap": 231019.0,
-    "liabilitas": 3240759.0,
+    "aset_tetap": 224610.0,
+    "liabilitas": 3410056.0,
     "liabilitas_jangka_pendek": null,
     "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
-    "ekuitas": 10258399.0,
-    "ekuitas_induk": 10258399.0,
+    "ekuitas": 10614736.0,
+    "ekuitas_induk": 10614736.0,
     "modal_saham": null,
-    "saldo_laba": 8370009.0
+    "saldo_laba": 8726372.0
   },
   "laba_rugi": {
-    "pendapatan": -60307.0,
+    "pendapatan": -75707.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
-    "laba_operasi": 835941.0,
-    "laba_sebelum_pajak": 834642.0,
-    "beban_pajak": -179154.0,
-    "laba_bersih": 655438.0,
-    "laba_induk": 655438.0,
-    "eps_basic": 85.0,
-    "eps_diluted": 85.0
+    "laba_operasi": 1285486.0,
+    "laba_sebelum_pajak": 1287076.0,
+    "beban_pajak": -275198.0,
+    "laba_bersih": 1011801.0,
+    "laba_induk": 1011801.0,
+    "eps_basic": 131.0,
+    "eps_diluted": 131.0
   },
   "arus_kas": {
     "arus_kas_operasi": null,

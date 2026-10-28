@@ -3,24 +3,24 @@
   "nama": "PT Atlas Nexus Group Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 46.0,
-  "update": "2026-10-26 22:36",
-  "periode_terbaru": "2025-audit",
+  "harga": 43.0,
+  "update": "2026-10-28 14:15",
+  "periode_terbaru": "2026-tw2",
   "warnings": [
     "quarterly_incomplete",
     "ttm_fallback"
   ],
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.356355243602848,
-    "ps": 8.593109180376574,
-    "roe": -0.22240177311937892,
-    "eps": -4.341655016265335,
-    "de": 0.10092775873931062,
-    "margin_net": -0.8110503386586448,
-    "current_ratio": 9.680926032521441,
-    "roa": -0.20196428419696302,
-    "bv": 19.52167446945155
+    "pb": 2.4058480847030292,
+    "ps": 3.591031918589168,
+    "roe": -0.09194647744658871,
+    "eps": -3.2867399694452,
+    "de": 0.021557994722809004,
+    "margin_net": -0.2744834450786163,
+    "current_ratio": 41.111225685790764,
+    "roa": -0.08998098862379972,
+    "bv": 17.87311521180598
   },
   "quarterly": {
     "revenue": {},
@@ -29,70 +29,58 @@
     "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
   },
   "riwayat": {
-    "eps": {
-      "2021": 0.91,
-      "2022": 0.41,
-      "2023": -1.7,
-      "2024": -2.93,
-      "2025": -4.34
-    },
-    "revenue_per_share": {
-      "2021": 5.0357169856e+16,
-      "2022": 5.7596429827e+16,
-      "2023": 2.0274939061e+16,
-      "2024": 1.0892479191e+16,
-      "2025": 1.0171332705e+16
-    }
+    "eps": {},
+    "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 87403372544,
-    "enterprise_value": 87206387712,
+    "market_cap": 81703157760,
+    "enterprise_value": 83406233600,
     "shares_outstanding": 1900073314,
     "free_float_pct": 26.997999983489056
   },
   "akumulasi": {
-    "score": 4.2,
+    "score": 3.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.021,
-    "vol_trend": 0.24,
-    "price_chg_20d": -6.12
+    "cmf": -0.0634,
+    "vol_trend": 0.233,
+    "price_chg_20d": -8.16
   },
   "neraca": {
-    "aset": 40846146970.0,
-    "aset_lancar": 36242233659.0,
-    "kas": 1290878.0,
-    "piutang_usaha": 5029522509.0,
-    "persediaan": 36113897256.0,
-    "aset_tetap": 7236997784.0,
-    "liabilitas": 3743674266.0,
-    "liabilitas_jangka_pendek": 3743674266.0,
-    "liabilitas_jangka_panjang": 498607675.0,
-    "utang_usaha": 5029522509.0,
-    "utang_bank": 5102913860.0,
-    "ekuitas": 37092612704.0,
-    "ekuitas_induk": 37092612704.0,
+    "aset": 34702035405.0,
+    "aset_lancar": 30098122094.0,
+    "kas": 2286936010.0,
+    "piutang_usaha": 2704801988.0,
+    "persediaan": 23470132767.0,
+    "aset_tetap": 79583333.0,
+    "liabilitas": 732114443.0,
+    "liabilitas_jangka_pendek": 732114443.0,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": 2704801988.0,
+    "utang_bank": 1314486918.0,
+    "ekuitas": 33960229252.0,
+    "ekuitas_induk": 33960229252.0,
     "modal_saham": null,
     "saldo_laba": 30000000.0
   },
   "laba_rugi": {
-    "pendapatan": 10171332705.0,
-    "beban_pokok": 6216817348.0,
+    "pendapatan": 11375999205.0,
+    "beban_pokok": 12643764489.0,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": -10560287580.0,
-    "beban_pajak": 2310747369.0,
-    "laba_bersih": -8249462835.0,
-    "laba_induk": -8249462835.0,
-    "eps_basic": -4.34,
+    "laba_sebelum_pajak": -3122691743.0,
+    "beban_pajak": null,
+    "laba_bersih": -3122523453.0,
+    "laba_induk": -3122523453.0,
+    "eps_basic": -1.64,
     "eps_diluted": null
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 523079361.0,
+    "capex": 555657910.0,
     "dividen_dibayar": null
   }
 }
