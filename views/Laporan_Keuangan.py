@@ -16,11 +16,25 @@ from quant.theme import load_theme, page_header, section_title
 load_theme()
 
 # ============================================================
-# 1. FUNGSI LOAD BERITA
+# 1. FUNGSI LOAD BERITA (GANTI DENGAN DATABASE ASLI ANDA)
 # ============================================================
 @st.cache_data(ttl=1800)
 def load_news_data():
-    # DUMMY: Ganti dengan database berita asli Anda
+    """
+    [PENTING: GANTI BAGIAN INI]
+    Anda bilang sudah ada 30an berita Q3. Tolong hubungkan fungsi ini ke database 
+    berita asli Anda (misal dari Supabase atau file Parquet).
+    """
+    # CONTOH JIKA PAKAI FILE PARQUET:
+    # df_news = pd.read_parquet("data/news.parquet")
+    # return df_news
+    
+    # CONTOH JIKA PAKAI SUPABASE:
+    # from quant.auth import supabase
+    # res = supabase.table("news").select("*").execute()
+    # return pd.DataFrame(res.data)
+    
+    # --- DUMMY SEMENTARA (Hapus jika sudah pakai asli) ---
     data = {
         'Kode': ['BBCA', 'BBRI', 'ADRO', 'TLKM', 'ASII', 'BMRI', 'ANTM', 'UNVR', 'ICBP', 'CPIN'],
         'Headline': [
@@ -33,7 +47,7 @@ def load_news_data():
     return pd.DataFrame(data)
 
 # ============================================================
-# 2. LOAD DATA FUNDAMENTAL (PAKSA Q3 & FIX ROE)
+# 2. LOAD DATA FUNDAMENTAL (DINAMIS & ANTI SALAH HITUNG)
 # ============================================================
 @st.cache_data(ttl=1800)
 def load_fundamental_data():
@@ -45,6 +59,7 @@ def load_fundamental_data():
         st.stop()
 
     data_list = []
+    global_latest_q = 0
     
     for file in json_files:
         with open(file, 'r', encoding='utf-8') as f:
@@ -56,10 +71,9 @@ def load_fundamental_data():
         kode = d.get("kode")
         sektor = d.get("sektor") or "Unknown"
         
-        # Ambil Rasio
         rasio = d.get("rasio_kunci", {})
-        # PERBAIKAN ROE: Kalikan 100 jika nilainya desimal (misal 0.15 jadi 15.0)
         roe_raw = rasio.get("roe")
+        # Perbaikan: Jika ROE desimal (misal 0.15), jadikan 15.0%
         roe = (roe_raw * 100) if roe_raw is not None and abs(roe_raw) < 1 else roe_raw
         
         der = rasio.get("de")
@@ -79,15 +93,18 @@ def load_fundamental_data():
         latest_year = max(years)
         prev_year = latest_year - 1
         
-        # PAKSA GUNAKAN Q3
-        max_q = 3
-        latest_q_global = max_q
+        # --- PERBAIKAN LOGIKA YTD ---
+        # Cari kuartal maksimal yang benar-benar ada di tahun terbaru
+        q_list = [int(k.split("-Q")[1]) for k in q_rev.keys() if k.startswith(f"{latest_year}-Q")]
+        max_q = max(q_list) if q_list else 0
+        global_latest_q = max(global_latest_q, max_q)
         
         def get_q(data, year, q): return data.get(f"{year}-Q{q}", 0)
         
-        # Hitung YTD (Q1+Q2+Q3)
+        # Jumlahkan hanya sampai max_q (apple-to-apple)
         rev_ytd = sum([get_q(q_rev, latest_year, q) for q in range(1, max_q + 1)])
         ni_ytd = sum([get_q(q_ni, latest_year, q) for q in range(1, max_q + 1)])
+        
         rev_ytd_ly = sum([get_q(q_rev, prev_year, q) for q in range(1, max_q + 1)])
         ni_ytd_ly = sum([get_q(q_ni, prev_year, q) for q in range(1, max_q + 1)])
         
@@ -98,6 +115,7 @@ def load_fundamental_data():
         
         data_list.append({
             'Kode': kode, 'Sektor': sektor, 'Tipe': tipe,
+            'Max_Q_Data': max_q,
             'NI_YTD': ni_ytd, 'NI_YTD_LY': ni_ytd_ly,
             'Rev_YTD': rev_ytd, 'Rev_YTD_LY': rev_ytd_ly,
             'CFO_YTD': cfo if cfo is not None else np.nan,
@@ -108,14 +126,15 @@ def load_fundamental_data():
         
     df = pd.DataFrame(data_list)
     df = df.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return df, latest_q_global
+    return df, global_latest_q
 
 # ============================================================
-# 3. LOGIKA SCREENER
+# 3. LOGIKA SCREENER & HARD FILTER
 # ============================================================
 def run_screener(df):
     d = df.copy()
     
+    # Hitung YoY Murni
     d['NI_YoY_Raw'] = (d['NI_YTD'] - d['NI_YTD_LY']) / d['NI_YTD_LY'].abs().replace(0, np.nan)
     d['Rev_YoY_Raw'] = (d['Rev_YTD'] - d['Rev_YTD_LY']) / d['Rev_YTD_LY'].abs().replace(0, np.nan)
     
@@ -133,31 +152,38 @@ def run_screener(df):
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
     d.loc[d['NI_YTD_LY'] <= 0, 'Flag_Anomali'] += "RUGI THN LALU, "
     
-    # Simpan data sebelum difilter untuk ditampilkan di "Gugur"
+    # Evaluasi Filter
     d['is_failed'] = False
     d['fail_reason'] = ""
     
-    # Evaluasi Filter
     for idx, row in d.iterrows():
         reason = []
-        # Jika CFO 0 (kosong di data), jangan gugurkan lewat CFO
+        # CFO Valid hanya jika di atas 0
         cfo_valid = row['CFO_YTD'] > 0
         
-        if row['NI_YoY_Raw'] < 0: reason.append(f"Laba Turun ({row['NI_YoY_Raw']*100:.1f}%)")
-        if row['Rev_YoY_Raw'] < -0.20: reason.append(f"Rev Anjlok ({row['Rev_YoY_Raw']*100:.1f}%)")
-        if row['DER'] > 2.0 and row['Tipe'] != 'Bank': reason.append(f"DER Tinggi ({row['DER']:.2f}x)")
-        if cfo_valid and row['CFO_to_NI'] < 0.5 and row['Tipe'] != 'Bank': reason.append(f"CFO Lemah ({row['CFO_to_NI']:.2f}x)")
+        if row['NI_YoY_Raw'] < 0: 
+            reason.append(f"Laba Turun ({row['NI_YoY_Raw']*100:.1f}%)")
+        if row['Rev_YoY_Raw'] < -0.20: 
+            reason.append(f"Rev Anjlok ({row['Rev_YoY_Raw']*100:.1f}%)")
+        if row['DER'] > 2.0 and row['Tipe'] != 'Bank': 
+            reason.append(f"DER Tinggi ({row['DER']:.2f}x)")
+        if cfo_valid and row['CFO_to_NI'] < 0.5 and row['Tipe'] != 'Bank': 
+            reason.append(f"CFO Lemah ({row['CFO_to_NI']:.2f}x)")
         
+        # Jika tidak ada data YTD sama sekali
+        if row['NI_YTD'] == 0 or row['Rev_YTD'] == 0:
+            reason = ["Data Laporan Keuangan Belum Tersedia"]
+
         if reason:
             d.at[idx, 'is_failed'] = True
             d.at[idx, 'fail_reason'] = ", ".join(reason)
             
-    # Pisahkan yang lolos dan gugur
     df_pass = d[~d['is_failed']].copy()
     df_fail = d[d['is_failed']].copy()
     
     if df_pass.empty: return df_pass, df_fail
     
+    # Ranking
     def blended_rank(series, sector_series, ascending=True):
         global_rank = series.rank(method='min', pct=True, ascending=ascending) * 100
         sector_ranked = series.groupby(sector_series).rank(method='min', pct=True, ascending=ascending) * 100
@@ -204,7 +230,7 @@ def format_idr(val):
     elif abs_val >= 1e6: return f"Rp {val/1e6:,.1f} M"
     else: return f"Rp {val:,.0f}"
 
-def render_card(row, rank, label_q, headline):
+def render_card(row, rank, headline):
     ni_ytd_rp = format_idr(row['NI_YTD'])
     ni_yoy = f"{row['NI_YoY']*100:+.1f}%" if row['NI_YoY'] != -1 else "N/A"
     rev_yoy = f"{row['Rev_YoY']*100:+.1f}%" if row['Rev_YoY'] != -1 else "N/A"
@@ -215,6 +241,8 @@ def render_card(row, rank, label_q, headline):
     der = f"{row['DER']:.2f}x" if row['Tipe'] != 'Bank' else "N/A (Bank)"
     per = f"{row['PER']:.1f}x" if row['PER'] > 0 else "N/A"
     pbv = f"{row['PBV']:.2f}x" if row['PBV'] > 0 else "N/A"
+    
+    label_q = f"Q{int(row['Max_Q_Data'])}" if row['Max_Q_Data'] > 0 else "Data Kosong"
     
     flag_html = ""
     if row['Tipe'] == 'Bank': 
@@ -267,19 +295,18 @@ q3_keywords = r"Q3|Kuartal 3|Kuartal III|Q-3"
 df_news_q3 = df_news[df_news['Headline'].str.contains(q3_keywords, case=False, na=False)].copy()
 
 if df_news_q3.empty:
-    st.warning("Belum ada berita yang mengandung kata 'Q3'.")
+    st.warning("Belum ada berita yang mengandung kata 'Q3' di database Anda.")
     st.stop()
 
 target_tickers = df_news_q3['Kode'].unique()
-df_raw, latest_q_global = load_fundamental_data()
+df_raw, global_latest_q = load_fundamental_data()
 df_filtered = df_raw[df_raw['Kode'].isin(target_tickers)].copy()
-label_q = f"Q{latest_q_global}"
 
 st.markdown(
     f'<div style="background:#262626; border:1px solid #404040; border-left:4px solid #ffffff; '
     f'border-radius:8px; padding:12px 16px; margin-bottom:24px; font-size:14px; color:#e5e5e5;">'
-    f'<b>INFORMASI:</b> Menemukan <b>{len(df_news_q3)} berita</b> terkait Q3 dari <b>{len(target_tickers)} emiten</b>. '
-    f'Data fundamental yang ditarik dikunci pada <b>{label_q} (YTD)</b>.'
+    f'<b>INFORMASI:</b> Menemukan <b>{len(df_news_q3)} berita</b> Q3 dari <b>{len(target_tickers)} emiten</b>. '
+    f'Sistem membandingkan YTD tahun ini dengan YTD tahun lalu secara <i>apple-to-apple</i> (berdasarkan kuartal terakhir yang tersedia di data JSON Anda).'
     f'</div>', 
     unsafe_allow_html=True
 )
@@ -305,16 +332,16 @@ else:
     with tabs[0]:
         st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
         for idx, row in df_pass.head(10).iterrows():
-            render_card(row, idx + 1, label_q, get_headline(row['Kode']))
+            render_card(row, idx + 1, get_headline(row['Kode']))
 
     for i, sector in enumerate(sectors):
         with tabs[i + 1]:
             st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
             df_sector = df_pass[df_pass['Sektor'] == sector].head(5)
             for idx, row in df_sector.iterrows():
-                render_card(row, idx + 1, label_q, get_headline(row['Kode']))
+                render_card(row, idx + 1, get_headline(row['Kode']))
 
-# 2. TAMPILKAN YANG GUGUR (Ini jawaban kenapa cuma 2 saham)
+# 2. TAMPILKAN YANG GUGUR
 if not df_fail.empty:
     st.markdown(section_title("Saham yang Gugur (Hard Filters)", "Saham dari berita Q3 yang gagal masuk kriteria"), unsafe_allow_html=True)
     for _, t in df_fail.iterrows():
@@ -329,4 +356,4 @@ if not df_fail.empty:
 # Debug
 with st.expander("🔍 Debug Data Fundamental"):
     st.write("Data yang diproses:")
-    st.dataframe(df_filtered[['Kode', 'NI_YTD', 'NI_YTD_LY', 'CFO_YTD', 'DER', 'PER', 'ROE']])
+    st.dataframe(df_filtered[['Kode', 'Max_Q_Data', 'NI_YTD', 'NI_YTD_LY', 'CFO_YTD', 'DER', 'PER', 'ROE']])
