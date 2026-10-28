@@ -6,70 +6,59 @@ if not st.session_state.get("authentication_status"):
 import os, sys
 import pandas as pd
 import numpy as np
-import random
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
+from quant.parquet_loader import load_parquet_safe # Asumsi Anda pakai loader ini
 
 load_theme()
 
 # ============================================================
-# 1. SIMULASI DATABASE (ANGKA LEBIH REALISTIS)
+# 1. LOAD DATA ASLI DARI DATABASE/FILE ANDA
 # ============================================================
-@st.cache_data(ttl=3600)
-def load_dummy_data():
-    # Tidak menggunakan seed agar angka berubah setiap refresh (bukti data simulasi)
+@st.cache_data(ttl=1800)
+def load_data_asli():
+    # ------------------------------------------------------------------
+    # GANTI BAGIAN INI DENGAN QUERY KE DATABASE ANDA (Supabase/Parquet)
+    # ------------------------------------------------------------------
     
-    data_saham = [
-        # (Kode, Sektor, Tipe, Curr, NI_9M, NI_6M, NI_Q3_LY, Rev_9M, Rev_6M, Rev_Q3_LY, CFO_9M, ROE, DER, PER, PBV)
-        ("BBCA", "Keuangan", "Bank", "IDR", 42000000000000, 27000000000000, 12000000000000, 75000000000000, 49000000000000, 25000000000000, 40000000000000, 22.5, 0.2, 22.0, 4.5),
-        ("BBRI", "Keuangan", "Bank", "IDR", 35000000000000, 22000000000000, 10500000000000, 105000000000000, 70000000000000, 35000000000000, 15000000000000, 18.2, 0.8, 12.5, 2.0),
-        ("ASII", "Industri", "Non-Bank", "IDR", 21000000000000, 13500000000000, 6000000000000, 150000000000000, 95000000000000, 45000000000000, 18000000000000, 12.0, 0.5, 9.0, 1.2),
-        ("CPIN", "Konsumer", "Non-Bank", "IDR", 3200000000000, 2000000000000, 100000000000, 35000000000000, 22000000000000, 3500000000000, 1150000000000, 14.0, 0.6, 18.0, 2.2),
-        ("ITMG", "Energi", "Non-Bank", "USD", 280000000, 180000000, 300000000, 1200000000, 750000000, 1500000000, 400000000, 3.6, 3.43, 5.0, 0.9),
-        ("ADRO", "Energi", "Non-Bank", "USD", 1200000000, 700000000, 400000000, 4500000000, 2800000000, 1500000000, 1100000000, 25.0, 0.3, 6.0, 1.0),
-        ("AMMN", "Basic Material", "Non-Bank", "USD", 80000000, 40000000, 15000000, 200000000, 120000000, 50000000, 60000000, 15.0, 0.5, 15.0, 3.5),
-        ("TLKM", "Infrastruktur", "Non-Bank", "IDR", 18000000000000, 11000000000000, 5500000000000, 110000000000000, 72000000000000, 36000000000000, 22000000000000, 15.4, 0.4, 15.0, 2.5),
-        ("ANTM", "Basic Material", "Non-Bank", "IDR", 3500000000000, 2000000000000, 1000000000000, 15000000000000, 9500000000000, 5000000000000, 800000000000, 8.5, 0.4, 12.0, 1.5),
-        ("UNVR", "Konsumer", "Non-Bank", "IDR", 4500000000000, 3000000000000, 1400000000000, 28000000000000, 18000000000000, 9000000000000, 5500000000000, 35.0, 0.6, 30.0, 35.0)
-    ]
+    # CONTOH: Jika dari Parquet
+    # df = load_parquet_safe("laporan_keuangan") 
     
-    # Generate 40 saham tambahan secara acak
-    for i in range(40):
-        sektor = np.random.choice(['Keuangan', 'Energi', 'Konsumer', 'Industri', 'Basic Material', 'Infrastruktur'])
-        tipe = "Bank" if sektor == 'Keuangan' and np.random.rand() > 0.5 else "Non-Bank"
-        curr = np.random.choice(['IDR', 'IDR', 'IDR', 'USD'])
-        mult = 15500 if curr == 'USD' else 1
-        
-        # Angka dasar realistis
-        base_ni = np.random.uniform(50e9, 10000e9) / mult 
-        ni_9m = base_ni * np.random.uniform(0.8, 1.2)
-        ni_6m = ni_9m * np.random.uniform(0.5, 0.8)
-        ni_q3_ly = ni_9m * np.random.uniform(0.4, 0.9)
-        
-        rev_9m = ni_9m * np.random.uniform(2, 6)
-        rev_6m = rev_9m * np.random.uniform(0.5, 0.8)
-        rev_q3_ly = rev_9m * np.random.uniform(0.5, 0.9)
-        
-        cfo_9m = ni_9m * np.random.uniform(0.3, 1.5)
-        roe = np.random.uniform(5.4, 35.8) if tipe == "Bank" else np.random.uniform(-5.1, 28.7)
-        der = np.random.uniform(3.5, 8.0) if tipe == "Bank" else np.random.uniform(0.1, 3.4)
-        
-        data_saham.append((
-            f"STK{i:02d}", sektor, tipe, curr, 
-            ni_9m, ni_6m, ni_q3_ly, 
-            rev_9m, rev_6m, rev_q3_ly, 
-            cfo_9m, roe, der, np.random.uniform(5, 40), np.random.uniform(0.5, 4.5)
-        ))
-        
-    df = pd.DataFrame(data_saham, columns=[
-        'Kode', 'Sektor', 'Tipe', 'Currency', 
-        'NI_9M', 'NI_6M', 'NI_Q3_LY', 
-        'Rev_9M', 'Rev_6M', 'Rev_Q3_LY', 
-        'CFO_9M', 'ROE', 'DER', 'PER', 'PBV'
-    ])
+    # CONTOH DUMMY SEMENTARA (Hapus baris ini jika sudah pakai database asli)
+    # Saya buat list kosong agar Anda sadar ini belum terhubung
+    data = {
+        'Kode': ['AMMN', 'ADRO', 'TLKM', 'BBCA'],
+        'Sektor': ['Basic Material', 'Energi', 'Infrastruktur', 'Keuangan'],
+        'Tipe': ['Non-Bank', 'Non-Bank', 'Non-Bank', 'Bank'],
+        'Currency': ['USD', 'USD', 'IDR', 'IDR'],
+        # Angka mentah (biarkan dalam satuan asli, misal USD dalam Jutaan, IDR dalam Rupiah)
+        'NI_9M': [551.0 * 1e6, 309.36 * 1e6, 10600000000000, 42000000000000], 
+        'NI_6M': [388.0 * 1e6, 181.0 * 1e6, 6300000000000, 27000000000000],
+        'NI_Q3_LY': [-175.05 * 1e6, 300.0 * 1e6, 5500000000000, 12000000000000],
+        'Rev_9M': [1200.0 * 1e6, 2800.0 * 1e6, 110000000000000, 75000000000000],
+        'Rev_6M': [800.0 * 1e6, 1500.0 * 1e6, 72000000000000, 49000000000000],
+        'Rev_Q3_LY': [1500.0 * 1e6, 1200.0 * 1e6, 36000000000000, 25000000000000],
+        'CFO_9M': [600.0 * 1e6, -42.9 * 1e6, 22000000000000, 40000000000000], # ADRO CFO negatif
+        'ROE': [15.4, 25.0, 15.4, 22.5],
+        'DER': [0.5, 0.3, 0.4, 0.2],
+        'PER': [15.0, 6.0, 15.0, 22.0],
+        'PBV': [3.5, 1.0, 2.5, 4.5],
+        'Avg_Value_Daily': [200e9, 500e9, 300e9, 1500e9]
+    }
+    df = pd.DataFrame(data)
     
-    df['Avg_Value_Daily'] = np.random.uniform(5e8, 2e12, len(df))
+    # ------------------------------------------------------------------
+    # LOGIKA AUTO-KONVERSI USD KE IDR
+    # ------------------------------------------------------------------
+    KURS_USD = 15500 
+    
+    cols_to_convert = ['NI_9M', 'NI_6M', 'NI_Q3_LY', 'Rev_9M', 'Rev_6M', 'Rev_Q3_LY', 'CFO_9M']
+    
+    for col in cols_to_convert:
+        # Jika Currency adalah USD, kalikan dengan kurs
+        df[col] = np.where(df['Currency'] == 'USD', df[col] * KURS_USD, df[col])
+        
     return df
 
 # ============================================================
@@ -78,27 +67,31 @@ def load_dummy_data():
 def run_screener(df):
     d = df.copy()
     
+    # Q3 Standalone
     d['NI_Q3'] = d['NI_9M'] - d['NI_6M']
     d['Rev_Q3'] = d['Rev_9M'] - d['Rev_6M']
     
+    # YoY Growth (Raw)
     d['NI_YoY_Raw'] = (d['NI_Q3'] - d['NI_Q3_LY']) / d['NI_Q3_LY'].abs()
     d['Rev_YoY_Raw'] = (d['Rev_Q3'] - d['Rev_Q3_LY']) / d['Rev_Q3_LY'].abs()
     
-    # Winsorization
+    # Winsorization (Batas -100% s/d +200%)
     d['NI_YoY'] = np.clip(d['NI_YoY_Raw'], -1.0, 2.0)
     d['Rev_YoY'] = np.clip(d['Rev_YoY_Raw'], -1.0, 2.0)
     
+    # Margin & Kualitas
     d['NPM_Q3'] = d['NI_Q3'] / d['Rev_Q3'].replace(0, np.nan)
     d['NPM_LY'] = d['NI_Q3_LY'] / d['Rev_Q3_LY'].replace(0, np.nan)
     d['NPM_Change'] = (d['NPM_Q3'] - d['NPM_LY']).fillna(-1)
     d['CFO_to_NI'] = d['CFO_9M'] / d['NI_9M'].replace(0, np.nan)
     
+    # FLAGS ANOMALI
     d['Flag_Anomali'] = ""
     d.loc[d['Rev_YoY_Raw'] > 3.0, 'Flag_Anomali'] += "CEK REV, "
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
-    d.loc[d['NI_Q3_LY'] <= 0, 'Flag_Anomali'] += "LOW BASE, "
+    d.loc[d['NI_Q3_LY'] <= 0, 'Flag_Anomali'] += "RUGI THN LALU, "
     
-    # Hard Filters
+    # HARD FILTERS (Syarat Gugur)
     d = d[
         (d['NI_YoY_Raw'] >= 0) & 
         (d['Rev_YoY_Raw'] >= -0.20) & 
@@ -109,7 +102,7 @@ def run_screener(df):
     
     if d.empty: return d
     
-    # Blended Ranking
+    # Blended Ranking (50% Global, 50% Sektor)
     def blended_rank(series, sector_series, ascending=True):
         global_rank = series.rank(method='min', pct=True, ascending=ascending) * 100
         sector_ranked = series.groupby(sector_series).rank(method='min', pct=True, ascending=ascending) * 100
@@ -130,6 +123,7 @@ def run_screener(df):
     
     d = d.fillna({'Rank_NI': 0, 'Rank_Rev': 0, 'Rank_Margin': 0, 'Rank_Quality': 0, 'Rank_ROE': 0, 'Rank_DER': 0, 'Rank_PER': 0})
     
+    # Skor Akhir
     d['Score_Raw'] = (
         (d['Rank_NI'] * 0.20) + (d['Rank_Rev'] * 0.15) + 
         (d['Rank_Margin'] * 0.20) + (d['Rank_Quality'] * 0.20) + 
@@ -137,34 +131,27 @@ def run_screener(df):
         (d['Rank_PER'] * 0.10)
     )
     
-    # Multi-Level Tie-Breaker: Score -> Kualitas Laba -> ROE -> Laba Absolut
+    # Multi-Level Tie-Breaker
     d = d.sort_values(
         by=['Score_Raw', 'CFO_to_NI', 'ROE', 'NI_Q3'], 
         ascending=[False, False, False, False]
     ).reset_index(drop=True)
     
-    d['Score'] = d['Score_Raw'].round(2) # Tampilkan 2 desimal
-    
+    d['Score'] = d['Score_Raw'].round(2)
     return d
 
 # ============================================================
 # 3. FUNGSI FORMAT & RENDER KARTU
 # ============================================================
-def format_currency(val, curr):
-    # Tidak ada konversi! Format mentah sesuai mata uang aslinya
+def format_idr(val):
     abs_val = abs(val)
-    if curr == 'USD':
-        if abs_val >= 1e9: return f"$ {val/1e9:,.2f} B"
-        elif abs_val >= 1e6: return f"$ {val/1e6:,.1f} M"
-        else: return f"$ {val:,.0f}"
-    else: # IDR
-        if abs_val >= 1e12: return f"Rp {val/1e12:,.1f} T"
-        elif abs_val >= 1e9: return f"Rp {val/1e9:,.1f} B"
-        elif abs_val >= 1e6: return f"Rp {val/1e6:,.1f} M"
-        else: return f"Rp {val:,.0f}"
+    if abs_val >= 1e12: return f"Rp {val/1e12:,.1f} T"
+    elif abs_val >= 1e9: return f"Rp {val/1e9:,.1f} B"
+    elif abs_val >= 1e6: return f"Rp {val/1e6:,.1f} M"
+    else: return f"Rp {val:,.0f}"
 
 def render_card(row, rank):
-    ni_q3_rp = format_currency(row['NI_Q3'], row['Currency'])
+    ni_q3_rp = format_idr(row['NI_Q3'])
     
     ni_yoy = f"{row['NI_YoY']*100:+.1f}%"
     rev_yoy = f"{row['Rev_YoY']*100:+.1f}%"
@@ -175,14 +162,10 @@ def render_card(row, rank):
     per = f"{row['PER']:.1f}x" if row['PER'] > 0 else "N/A"
     pbv = f"{row['PBV']:.2f}x"
     
-    # Flags
     flag_html = ""
     if row['Tipe'] == 'Bank': 
         flag_html += '<span style="background:#e5e5e5; color:#0a0a0a; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">BANK</span>'
-    if row['Currency'] == 'USD': 
-        flag_html += '<span style="background:#404040; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">USD</span>'
     
-    # Flag Kualitas Laba
     if row['CFO_to_NI'] < 0.8:
         flag_html += '<span style="background:#737373; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ CFO LEMAH</span>'
         
@@ -224,9 +207,16 @@ def render_card(row, rank):
 # ============================================================
 # 4. UI RENDERING UTAMA (TABS)
 # ============================================================
-st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental Q3 Berdasarkan Sektor"), unsafe_allow_html=True)
+st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental Q3 Berdasarkan Sektor (IDR)"), unsafe_allow_html=True)
 
-df_raw = load_dummy_data()
+# LOAD DATA ASLI
+df_raw = load_data_asli()
+
+if df_raw.empty:
+    st.warning("Database laporan keuangan kosong atau belum terhubung.")
+    st.stop()
+
+# JALANKAN SCREENER
 df_result = run_screener(df_raw)
 
 if df_result.empty:
@@ -253,7 +243,7 @@ for i, sector in enumerate(sectors):
             for idx, row in df_sector.iterrows():
                 render_card(row, idx + 1)
 
-# --- DISQUALIFIED / BOTTOM FEEDERS ---
+# --- DISQUALIFIED ---
 st.markdown(section_title("Saham yang Gugur (Hard Filters)", "Gagal memenuhi syarat: Laba Turun, Rev Anjlok, DER > 2, atau CFO < 0.5x"), unsafe_allow_html=True)
 
 df_raw['NI_Q3'] = df_raw['NI_9M'] - df_raw['NI_6M']
