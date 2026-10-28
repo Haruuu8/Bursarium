@@ -12,30 +12,34 @@ load_theme()
 st.markdown(page_header("", "Kalkulator Right Issue", "Simulasi Risiko Dilusi (HMETD)"), unsafe_allow_html=True)
 st.markdown(section_title("Data Right Issue", "Masukkan parameter saat ini (Cum-Date)"), unsafe_allow_html=True)
 
-# Gunakan st.container agar rapi dan tidak bug
-with st.container():
-    c1, c2 = st.columns([1, 1.2])
-    with c1:
-        lot_lama = st.number_input("Jumlah Lot Dimiliki", min_value=1, value=10, step=1)
-        harga_cum = st.number_input("Harga Saham Saat Ini (Cum-Date) - Rp", min_value=1.0, value=1000.0, step=50.0)
+# Menggunakan st.form agar tata letak rapi dan tombol sejajar di bawah
+with st.form("form_kalkulator"):
+    # Susunan 1 atas 1 bawah (Vertikal)
+    lot_lama = st.number_input("Jumlah Lot Dimiliki", min_value=1, value=10, step=1)
+    harga_cum = st.number_input("Harga Saham Saat Ini (Cum-Date) - Rp", min_value=1.0, value=1000.0, step=50.0)
     
-    with c2:
-        st.markdown('<div style="font-size: 14px; font-weight: 600; color: #ffffff; margin-bottom: 8px;">Rasio Right Issue (Lama : Baru)</div>', unsafe_allow_html=True)
-        r1, r2 = st.columns(2)
-        with r1:
-            rasio_lama = st.number_input("Saham Lama", min_value=1, value=1, step=1)
-        with r2:
-            rasio_baru = st.number_input("Saham Baru", min_value=1, value=1, step=1)
-        
-        harga_tebus = st.number_input("Harga Tebus (Exercise Price) - Rp", min_value=1.0, value=500.0, step=50.0)
-
-st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size: 14px; font-weight: 600; color: #ffffff; margin: 16px 0 8px 0;">Rasio Right Issue (Lama : Baru)</div>', unsafe_allow_html=True)
+    
+    # Khusus rasio, saya sandingkan kiri-kanan agar tidak terlalu panjang ke bawah, 
+    # tapi jika Anda benar-benar ingin 1 atas 1 bawah, Anda bisa menghapus st.columns ini.
+    r1, r2 = st.columns(2)
+    with r1:
+        rasio_lama = st.number_input("Saham Lama", min_value=1, value=1, step=1)
+    with r2:
+        rasio_baru = st.number_input("Saham Baru", min_value=1, value=1, step=1)
+    
+    st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
+    harga_tebus = st.number_input("Harga Tebus (Exercise Price) - Rp", min_value=1.0, value=500.0, step=50.0)
+    
+    st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
+    
+    # Tombol submit di dalam form
+    submit = st.form_submit_button("Hitung Harga Teoritis (TERP)", type="primary", use_container_width=True)
 
 # ============================================================
-# KALKULASI
+# KALKULASI (Hanya berjalan jika tombol ditekan)
 # ============================================================
-if st.button("Hitung Harga Teoritis (TERP)", type="primary", use_container_width=True):
-    
+if submit:
     # 1. Lot Baru yang berhak didapat
     lot_baru = (lot_lama / rasio_lama) * rasio_baru
     lembar_lama = lot_lama * 100
