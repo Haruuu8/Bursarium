@@ -9,14 +9,12 @@ from quant.theme import load_theme, hero, section_title, info_banner
 from quant.auth import submit_registration, get_all_approved_users_for_auth
 
 # 1. SET PAGE CONFIG (Wajib paling atas)
-# DITAMBAHKAN toolbar_mode="viewer" AGAR MENU DEVELOPER HILANG
-st.set_page_config(
-    page_title="Bursarium", 
-    layout="wide", 
-    toolbar_mode="viewer" 
-)
+st.set_page_config(page_title="Bursarium", layout="wide")
 
-# 2. LOAD TEMA
+# 2. SEMBUNYIKAN MENU DEVELOPER
+st.set_option("client.toolbarMode", "viewer")
+
+# 3. LOAD TEMA
 load_theme()
 
 try:

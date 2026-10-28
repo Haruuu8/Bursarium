@@ -1,4 +1,4 @@
-[theme]
+﻿[theme]
 base = "dark"
 primaryColor = "#6366f1"
 backgroundColor = "#070b16"
@@ -12,3 +12,6 @@ enableCORS = false
 
 [browser]
 gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
