@@ -4,7 +4,7 @@
   "sektor": "Industrials",
   "industri": "Staffing & Employment Services",
   "harga": 40.0,
-  "update": "2026-10-28 17:01",
+  "update": "2026-10-28 17:35",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -51,12 +51,12 @@
     "free_float_pct": 21.839999993807055
   },
   "akumulasi": {
-    "score": 2.6,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.126,
-    "vol_trend": 0.778,
-    "price_chg_20d": -22.64
+    "cmf": -0.1858,
+    "vol_trend": 0.694,
+    "price_chg_20d": -31.03
   },
   "neraca": {
     "aset": 1374602697212.0,

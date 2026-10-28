@@ -4,7 +4,7 @@
   "sektor": "Basic Materials",
   "industri": "Chemicals",
   "harga": 57.0,
-  "update": "2026-10-28 16:52",
+  "update": "2026-10-28 17:22",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 12.41199999996644
   },
   "akumulasi": {
-    "score": 3.0,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4308,
-    "vol_trend": 0.25,
-    "price_chg_20d": -4.76
+    "cmf": -0.4269,
+    "vol_trend": 0.253,
+    "price_chg_20d": -8.06
   },
   "neraca": {
     "aset": 335874086576.0,

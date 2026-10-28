@@ -4,7 +4,7 @@
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
   "harga": 25600.0,
-  "update": "2026-10-28 17:01",
+  "update": "2026-10-28 17:35",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 35.81523953213717
   },
   "akumulasi": {
-    "score": 7.5,
+    "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2691,
-    "vol_trend": 1.142,
-    "price_chg_20d": 5.26
+    "cmf": 0.174,
+    "vol_trend": 1.002,
+    "price_chg_20d": -5.45
   },
   "neraca": {
     "aset": 182808820.0,

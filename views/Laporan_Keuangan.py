@@ -100,6 +100,7 @@ def run_screener(df):
             total_w = w_roe + w_growth + w_per + w_margin
             score = (s_roe*w_roe + s_growth*w_growth + s_per*w_per + s_margin*w_margin) / total_w
             
+        # PENALTI DATA TIDAK LENGKAP & CFO KOSONG
         missing = 0
         if 'NI_Q3' not in row or pd.isna(row['NI_Q3']): missing += 1
         if not cfo_valid and row['Tipe'] != 'Bank': missing += 1
@@ -107,6 +108,11 @@ def run_screener(df):
         if row['PBV'] <= 0: missing += 1
         
         score = score - (missing * 2.5)
+        
+        # PENALTI TAMBAHAN KHUSUS CFO (-5 Poin)
+        if not cfo_valid and row['Tipe'] != 'Bank':
+            score -= 5.0 
+            
         row['Data_Lengkap'] = 4 - missing
         
         return score

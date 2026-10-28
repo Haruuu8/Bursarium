@@ -1,23 +1,23 @@
 {
   "kode": "CITY",
-  "nama": "PT Natura City Developments Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
-  "harga": 129.0,
-  "update": "2026-10-28 16:50",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 17:18",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 39.09090909090909,
+    "pe": null,
     "pb": null,
-    "ps": 4.401415211034841,
+    "ps": null,
     "roe": 0.019751217314629598,
     "eps": null,
     "de": 0.26534589470492237,
     "margin_net": 0.14236146640950642,
     "current_ratio": 5.196715659970873,
     "roa": 0.015610188771346114,
-    "bv": 0.00016707830952554563
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -51,10 +51,10 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 697269420032,
-    "enterprise_value": 769100742656,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 5403736208181818,
-    "free_float_pct": 54.15899999822504
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,

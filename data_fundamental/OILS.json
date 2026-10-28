@@ -4,7 +4,7 @@
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
   "harga": 274.0,
-  "update": "2026-10-28 16:58",
+  "update": "2026-10-28 17:30",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 36.86899995320627
   },
   "akumulasi": {
-    "score": 4.9,
+    "score": 3.7,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.0053,
-    "vol_trend": 0.621,
-    "price_chg_20d": 2.08
+    "cmf": -0.0508,
+    "vol_trend": 0.668,
+    "price_chg_20d": -8.67
   },
   "neraca": {
     "aset": 365056104206.0,

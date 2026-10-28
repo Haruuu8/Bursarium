@@ -4,7 +4,7 @@
   "sektor": "Real Estate",
   "industri": "Real Estate Services",
   "harga": 2520.0,
-  "update": "2026-10-28 16:58",
+  "update": "2026-10-28 17:30",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 21.567000076787224
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4663,
-    "vol_trend": 1.077,
-    "price_chg_20d": -15.96
+    "cmf": -0.2011,
+    "vol_trend": 1.736,
+    "price_chg_20d": -10.64
   },
   "neraca": {
     "aset": 390859551799.0,

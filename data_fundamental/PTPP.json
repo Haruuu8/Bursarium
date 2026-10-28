@@ -4,7 +4,7 @@
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
   "harga": 161.0,
-  "update": "2026-10-28 16:59",
+  "update": "2026-10-28 17:32",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -51,12 +51,12 @@
     "free_float_pct": 49.091958196715254
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.574,
-    "vol_trend": 0.154,
-    "price_chg_20d": -8.0
+    "cmf": -0.1977,
+    "vol_trend": 0.079,
+    "price_chg_20d": -4.73
   },
   "neraca": {
     "aset": 43087526440795.0,

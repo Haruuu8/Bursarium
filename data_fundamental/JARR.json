@@ -1,23 +1,23 @@
 {
   "kode": "JARR",
-  "nama": "PT Jhonlin Agro Raya Tbk",
-  "sektor": "Consumer Defensive",
-  "industri": "Farm Products",
-  "harga": 2230.0,
-  "update": "2026-10-28 16:54",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 17:25",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 58.93234672304439,
+    "pe": null,
     "pb": null,
-    "ps": 4498744.336948719,
+    "ps": null,
     "roe": 0.15830594065543158,
     "eps": null,
     "de": 1.023301813606566,
     "margin_net": 0.0990139674252966,
     "current_ratio": 3.25565973228176,
     "roa": 0.0782413872170899,
-    "bv": 0.00023903082754400535
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -51,18 +51,18 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 20584381546496,
-    "enterprise_value": 22685321003008,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 9230059235597250,
-    "free_float_pct": 13.294000002740864
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1794,
-    "vol_trend": 0.468,
-    "price_chg_20d": -30.75
+    "cmf": -0.2189,
+    "vol_trend": 0.424,
+    "price_chg_20d": -37.71
   },
   "neraca": {
     "aset": 4463947456682.0,

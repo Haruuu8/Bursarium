@@ -4,7 +4,7 @@
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
   "harga": 15.0,
-  "update": "2026-10-28 16:59",
+  "update": "2026-10-28 17:32",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 35.04199999960947
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2257,
-    "vol_trend": 1.821,
-    "price_chg_20d": -36.36
+    "cmf": -0.2135,
+    "vol_trend": 1.098,
+    "price_chg_20d": -28.57
   },
   "neraca": {
     "aset": 10464677883932.0,

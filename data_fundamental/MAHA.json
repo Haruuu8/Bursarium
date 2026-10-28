@@ -1,23 +1,23 @@
 {
   "kode": "MAHA",
-  "nama": "PT Mandiri Herindo Adiperkasa Tbk",
-  "sektor": "Industrials",
-  "industri": "Trucking",
-  "harga": 130.0,
-  "update": "2026-10-28 16:56",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 17:28",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 682.8319292332233,
+    "ps": null,
     "roe": 0.09201258969766163,
     "eps": null,
     "de": 0.45973254818307424,
     "margin_net": 0.0735658738459983,
     "current_ratio": 1.9695969358240868,
     "roa": 0.06278455408850363,
-    "bv": 1.1357141489373352e-07
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -51,18 +51,18 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 2131346063360,
-    "enterprise_value": 2475733811200,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 16409511387559810,
-    "free_float_pct": 21.581999997560228
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.309,
-    "vol_trend": 0.877,
-    "price_chg_20d": -2.94
+    "cmf": -0.286,
+    "vol_trend": 0.878,
+    "price_chg_20d": -3.7
   },
   "neraca": {
     "aset": 2731235357.0,

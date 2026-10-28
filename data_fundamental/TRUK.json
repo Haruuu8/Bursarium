@@ -1,23 +1,23 @@
 {
   "kode": "TRUK",
-  "nama": "PT Guna Timur Raya Tbk",
-  "sektor": "Industrials",
-  "industri": "Trucking",
-  "harga": 6025.0,
-  "update": "2026-10-28 17:01",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 17:35",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 6.129828451993495e-05,
+    "ps": null,
     "roe": -0.09705830459793431,
-    "eps": -11552442.473563218,
+    "eps": null,
     "de": 0.40459763961374745,
     "margin_net": -0.1131699744486288,
     "current_ratio": 1.0684636533939207,
     "roa": -0.06909987178689363,
-    "bv": 85.0845463724138
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -51,17 +51,17 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 2620875079680,
-    "enterprise_value": 2629321883648,
-    "shares_outstanding": 435000000,
-    "free_float_pct": 29.831000000000003
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
     "cmf": 0.9119,
-    "vol_trend": 0.897,
+    "vol_trend": 1.177,
     "price_chg_20d": 133.53
   },
   "neraca": {

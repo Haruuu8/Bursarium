@@ -1,23 +1,23 @@
 {
   "kode": "RATU",
-  "nama": "PT Raharja Energi Cepu Tbk",
-  "sektor": "Energy",
-  "industri": "Oil & Gas E&P",
-  "harga": 2230.0,
-  "update": "2026-10-28 17:00",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 17:33",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 114745.62015372608,
+    "ps": null,
     "roe": 0.373455514637017,
     "eps": null,
     "de": 2.3191975939865563,
     "margin_net": 0.6224173983538694,
     "current_ratio": 3.268802340926778,
     "roa": 0.10568427704922442,
-    "bv": 0.024742057413374277
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -51,18 +51,18 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 6054570098688,
-    "enterprise_value": 6299030388736,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 2715053800000000,
-    "free_float_pct": 31.315999999705348
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2857,
-    "vol_trend": 0.763,
-    "price_chg_20d": -44.1
+    "cmf": -0.2727,
+    "vol_trend": 0.806,
+    "price_chg_20d": -45.34
   },
   "neraca": {
     "aset": 237379246.0,

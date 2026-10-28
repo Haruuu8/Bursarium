@@ -1,23 +1,23 @@
 {
   "kode": "CHEK",
-  "nama": "PT Diastika Biotekindo Tbk",
-  "sektor": "Healthcare",
-  "industri": "Medical Distribution",
-  "harga": 100.0,
-  "update": "2026-10-28 16:50",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 17:18",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 37.59398496240601,
+    "pe": null,
     "pb": null,
-    "ps": 1.4521621899612216,
+    "ps": null,
     "roe": 0.03893626770508323,
     "eps": null,
     "de": 0.09862229014614163,
     "margin_net": 0.05190828342778953,
     "current_ratio": 9.070430740746474,
     "roa": 0.035440995558085595,
-    "bv": 6.831676883228153e-05
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -45,18 +45,18 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 411333132288,
-    "enterprise_value": 390059720704,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 3032337992105263,
-    "free_float_pct": 19.021709722478153
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2386,
-    "vol_trend": 0.534,
-    "price_chg_20d": -16.26
+    "cmf": 0.229,
+    "vol_trend": 0.59,
+    "price_chg_20d": -19.35
   },
   "neraca": {
     "aset": 227590081260.0,

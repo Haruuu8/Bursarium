@@ -4,7 +4,7 @@
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
   "harga": 1190.0,
-  "update": "2026-10-28 16:54",
+  "update": "2026-10-28 17:24",
   "periode_terbaru": "2026-tw3",
   "warnings": [
     "quarterly_incomplete",
@@ -48,9 +48,9 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.3632,
-    "vol_trend": 0.841,
-    "price_chg_20d": -8.27
+    "cmf": 0.3426,
+    "vol_trend": 0.925,
+    "price_chg_20d": -9.85
   },
   "neraca": {
     "aset": 1517104.0,

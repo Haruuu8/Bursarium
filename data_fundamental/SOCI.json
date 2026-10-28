@@ -4,7 +4,7 @@
   "sektor": "Industrials",
   "industri": "Marine Shipping",
   "harga": 458.0,
-  "update": "2026-10-28 17:01",
+  "update": "2026-10-28 17:34",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -51,12 +51,12 @@
     "free_float_pct": 29.898000000000003
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.9,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1321,
-    "vol_trend": 0.65,
-    "price_chg_20d": -28.46
+    "cmf": -0.1044,
+    "vol_trend": 0.66,
+    "price_chg_20d": -26.13
   },
   "neraca": {
     "aset": 727988706.0,

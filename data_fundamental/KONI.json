@@ -1,10 +1,10 @@
 {
   "kode": "KONI",
   "nama": "PT Perdana Bangun Pusaka Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Specialty Retail",
+  "sektor": null,
+  "industri": null,
   "harga": 1485.0,
-  "update": "2026-10-28 16:55",
+  "update": "2026-10-28 17:26",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -52,17 +52,17 @@
   },
   "statistik": {
     "market_cap": 463319990272,
-    "enterprise_value": 332178391040,
+    "enterprise_value": null,
     "shares_outstanding": 252027818986742,
-    "free_float_pct": 17.276022115384613
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.6862,
-    "vol_trend": 2.52,
-    "price_chg_20d": -17.78
+    "cmf": -0.6867,
+    "vol_trend": 2.719,
+    "price_chg_20d": -22.66
   },
   "neraca": {
     "aset": 201157016948.0,

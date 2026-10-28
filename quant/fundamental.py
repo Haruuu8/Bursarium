@@ -89,7 +89,16 @@ FIELDS = {
     "laba_induk": ["laba (rugi) yang dapat diatribusikan ke entitas induk", "laba (rugi) yang dapat diatribusikan kepada pemilik entitas induk", "laba yang dapat diatribusikan kepada pemilik entitas induk", "net income attributable to"],
     "eps_basic": ["laba (rugi) per saham dasar", "laba per saham dasar", "basic earnings per share", "eps dasar"],
     "eps_diluted": ["laba (rugi) per saham dilusian", "laba per saham dilusian", "diluted earnings per share", "eps dilusian"],
-    "arus_kas_operasi": ["arus kas dari aktivitas operasi", "kas neto dari aktivitas operasi", "arus kas bersih dari aktivitas operasi", "net cash from operating", "kas bersih dari aktivitas operasi", "net cash provided by operating"],
+    "arus_kas_operasi": [
+        "arus kas dari aktivitas operasi", "kas neto dari aktivitas operasi", 
+        "arus kas bersih dari aktivitas operasi", "net cash from operating", 
+        "kas bersih dari aktivitas operasi", "net cash provided by operating",
+        "kas neto yang diperoleh dari aktivitas operasi",
+        "kas bersih yang diperoleh dari aktivitas operasi",
+        "net cash flows provided by operating activities",
+        "net cash flow from operating activities",
+        "kas dari aktivitas operasi"
+    ],
     "arus_kas_investasi": ["arus kas dari aktivitas investasi", "kas neto dari aktivitas investasi", "net cash from investing"],
     "arus_kas_pendanaan": ["arus kas dari aktivitas pendanaan", "kas neto dari aktivitas pendanaan", "net cash from financing"],
     "capex": ["perolehan aset tetap", "pembelian aset tetap", "capex", "capital expenditure"],

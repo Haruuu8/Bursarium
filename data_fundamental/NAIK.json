@@ -4,7 +4,7 @@
   "sektor": "Basic Materials",
   "industri": "Building Materials",
   "harga": 68.0,
-  "update": "2026-10-28 16:58",
+  "update": "2026-10-28 17:30",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -56,12 +56,12 @@
     "free_float_pct": 27.46499999373615
   },
   "akumulasi": {
-    "score": 2.8,
+    "score": 3.2,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1106,
-    "vol_trend": 0.429,
-    "price_chg_20d": -16.05
+    "cmf": -0.0837,
+    "vol_trend": 0.432,
+    "price_chg_20d": -17.07
   },
   "neraca": {
     "aset": 290771813012.0,

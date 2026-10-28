@@ -4,7 +4,7 @@
   "sektor": "Consumer Cyclical",
   "industri": "Lodging",
   "harga": 224.0,
-  "update": "2026-10-28 17:01",
+  "update": "2026-10-28 17:34",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -57,12 +57,12 @@
     "free_float_pct": 20.612
   },
   "akumulasi": {
-    "score": 7.0,
+    "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.3798,
-    "vol_trend": 0.654,
-    "price_chg_20d": -1.72
+    "cmf": 0.3649,
+    "vol_trend": 0.641,
+    "price_chg_20d": -5.88
   },
   "neraca": {
     "aset": 202404153946.0,

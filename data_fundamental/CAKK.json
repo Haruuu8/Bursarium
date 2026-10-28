@@ -1,23 +1,23 @@
 {
   "kode": "CAKK",
-  "nama": "PT Cahayaputra Asa Keramik Tbk",
-  "sektor": "Industrials",
-  "industri": "Building Products & Equipment",
-  "harga": 150.0,
-  "update": "2026-10-28 16:50",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": null,
+  "update": "2026-10-28 17:18",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.2708392003582787,
-    "ps": 3.070055413164587e-07,
+    "pb": null,
+    "ps": null,
     "roe": -0.023902315037215547,
-    "eps": -11491329.524972022,
+    "eps": null,
     "de": 3.5486825166219687,
     "margin_net": -0.006717040953168098,
     "current_ratio": 0.6329225838252225,
     "roa": -0.005254811874026193,
-    "bv": 118.03224196870191
+    "bv": null
   },
   "quarterly": {
     "revenue": {
@@ -51,10 +51,10 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 180495040512,
-    "enterprise_value": 457223405568,
-    "shares_outstanding": 1203300219,
-    "free_float_pct": 11.35700001065154
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null,
+    "free_float_pct": null
   },
   "akumulasi": {
     "score": 5.5,
