@@ -1,17 +1,14 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (LENGKAP & CEPAT)
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP & AKURAT)
 
 Fitur:
-- CACHE INCREMENTAL: Skip data yang sudah ada di folder cache.
-- Hanya mengambil Q1-Q3 2025 & 2026 (fokus Q3 Screener).
-- Q1/Q2/Q3/Q4 STANDALONE (bukan kumulatif).
-- Revenue detection untuk bank, asuransi, multifinance, manufaktur.
-- 40+ field: neraca, laba rugi, arus kas, rasio.
-- Perhitungan TTM (Trailing Twelve Months) untuk P/E dan EPS.
-- Prioritas Net Interest Income untuk Bank.
-- Cache XLSX lokal (super cepat di run ke-2).
-- Penanganan Error Curl (16) / Rate-limit IDX.
-- Otomatis memfilter hanya saham yang rilis Q3 jika dijalankan mode batch.
+- Q1/Q2/Q3/Q4 STANDALONE (bukan kumulatif) 
+- Revenue detection untuk bank, asuransi, multifinance, manufaktur
+- 40+ field: neraca, laba rugi, arus kas, rasio
+- Perhitungan TTM (Trailing Twelve Months) untuk P/E dan EPS
+- Prioritas Net Interest Income untuk Bank
+- Cache XLSX lokal (super cepat di run ke-2)
+- CACHE INCREMENTAL: Tidak mendownload ulang data yang sudah ada.
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -79,7 +76,7 @@ QUARTERLY_PERIODS = [
 RIWAYAT_YEARS = []
 
 # ============================================================
-# FIELD DETECTION — diperluas untuk semua jenis emiten
+# FIELD DETECTION
 # ============================================================
 FIELDS = {
     "aset": ["jumlah aset", "total aset", "total assets"],
@@ -210,7 +207,7 @@ def _normalize_url(url):
 
 
 # ============================================================
-# CACHE DAFTAR LAPORAN (TIDAK PERLU API CALL LAGI)
+# CACHE DAFTAR LAPORAN
 # ============================================================
 def get_report_list(year, periode, verbose=False):
     cache_file = REPORT_LIST_CACHE_DIR / f"{year}_{periode}.json"
@@ -301,7 +298,6 @@ def download_xlsx(url, verbose=False):
 
 
 def parse_xlsx(content_bytes):
-    """Parse XLSX — ambil nilai dari kolom 2 (periode berjalan)."""
     try:
         xls = pd.ExcelFile(io.BytesIO(content_bytes))
     except Exception:
@@ -365,7 +361,7 @@ def parse_xlsx(content_bytes):
 
 
 # ============================================================
-# CACHE HASIL PARSING (HANYA PROSES DATA BARU)
+# CACHE HASIL PARSING
 # ============================================================
 def fetch_one_period(kode, year, periode, verbose=False):
     cache_file = PARSED_CACHE_DIR / f"{kode}_{year}_{periode}.json"
@@ -440,6 +436,10 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
             if eps_calc > 0: pe_calc = harga / eps_calc
         if pend_rp:
             ps_calc = (harga * shares) / (pend_rp * factor_rev)
+
+    # FIX: Sanity Check PER & PBV
+    if pe_calc is not None and (pe_calc < 1 or pe_calc > 1000): pe_calc = None
+    if pb_calc is not None and (pb_calc < 0.1 or pb_calc > 100): pb_calc = None
 
     return {
         "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")),
@@ -608,7 +608,6 @@ def build_one(kode, verbose=False):
             prev_eps = cum_eps
             prev_ni = cum_ni
 
-    # HITUNG TTM
     ttm_ni, ttm_rev = None, None
     standalone_data.sort(key=lambda x: (x["lbl"].split("-")[0], x["lbl"].split("-")[1]), reverse=True)
 
@@ -617,7 +616,6 @@ def build_one(kode, verbose=False):
         ttm_ni = sum(item["ni"] for item in recent_4)
         ttm_rev = sum(item["rev"] for item in recent_4)
 
-    # RIWAYAT TAHUNAN
     r_eps, r_rev = {}, {}
     for y in RIWAYAT_YEARS:
         if f"{y}-audit" == snap_periode:
@@ -631,17 +629,20 @@ def build_one(kode, verbose=False):
                 raw_rev = d["pendapatan"]
                 r_rev[str(y)] = raw_rev if abs(raw_rev) > 1_000_000_000_000 else raw_rev * 1_000_000
 
-    # YFINANCE + RATIO
     yfd = fetch_yfinance(kode)
     harga = yfd.get("harga")
     shares = yfd.get("shares_outstanding")
+    
+    # FIX BUG SHARES
+    if shares is not None and shares < 10_000_000:
+        shares = shares * 1_000_000
+        
     if not shares and yfd.get("market_cap") and harga:
         shares = yfd.get("market_cap") / harga
 
     ratios = compute_ratios(snap, harga=harga, shares=shares, periode=snap_periode, ttm_ni=ttm_ni, ttm_rev=ttm_rev)
     akum = compute_akumulasi(kode)
 
-    # VALIDASI
     warnings = []
     if not snap.get("pendapatan"):
         warnings.append("revenue_missing")
@@ -672,9 +673,9 @@ def build_one(kode, verbose=False):
             "roa": ratios.get("roa"), "bv": ratios.get("bv_calc"),
         },
         "quarterly": {
-            "revenue": q_rev,
-            "eps": q_eps,
-            "net_income": q_ni,
+            "revenue": q_rev,     
+            "eps": q_eps,          
+            "net_income": q_ni,    
             "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
         },
         "riwayat": {"eps": r_eps, "revenue_per_share": r_rev},
@@ -793,7 +794,6 @@ def batch(tickers, workers=4, delay=1.0, skip_existing=False):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) > 1 and sys.argv[1] == "batch":
-        # BACA HANYA SAHAM YANG ADA DI LAPORAN Q3 2026
         q3_file = REPORT_LIST_CACHE_DIR / "2026_tw3.json"
         
         if q3_file.exists():
@@ -810,7 +810,6 @@ if __name__ == "__main__":
                         if k in row and row[k]:
                             tickers.append(row[k].strip().upper()); break
         
-        # Turunkan workers jadi 10, delay 1.5 agar aman dari rate limit
         batch(tickers, workers=10, delay=1.5)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]

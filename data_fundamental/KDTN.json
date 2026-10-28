@@ -1,23 +1,23 @@
 {
   "kode": "KDTN",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-28 14:28",
+  "nama": "PT Puri Sentul Permai Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 276.0,
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": null,
+    "pb": 4.811678254325474,
+    "ps": 8.656720703106189e-06,
     "roe": 0.049300180138582124,
-    "eps": null,
+    "eps": 3129102.682532562,
     "de": 0.05879456009790032,
     "margin_net": 0.11280274488006277,
     "current_ratio": 1.9784955060350766,
     "roa": 0.04656255518919896,
-    "bv": null
+    "bv": 57.36044378110463
   },
   "quarterly": {
     "revenue": {
@@ -51,10 +51,10 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 345006440448,
+    "enterprise_value": 334549942272,
+    "shares_outstanding": 1250023298,
+    "free_float_pct": 20.00100001336135
   },
   "akumulasi": {
     "score": 1.9,

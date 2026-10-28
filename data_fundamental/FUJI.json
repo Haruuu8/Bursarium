@@ -3,14 +3,14 @@
   "nama": "PT Fuji Finance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 230.0,
-  "update": "2026-10-28 14:23",
+  "harga": 226.0,
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 4.300310772629658e-05,
-    "pb": 1.608641428899849,
-    "ps": 0.00011422196181890028,
+    "pe": null,
+    "pb": 1.58066505622333,
+    "ps": 0.00011223549291770202,
     "roe": 0.026237442455527088,
     "eps": 5348450.662307693,
     "de": 0.02256340512464785,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 299000004608,
+    "market_cap": 293799985152,
     "enterprise_value": 226675818496,
     "shares_outstanding": 1300000000,
     "free_float_pct": 3.4410000000000003

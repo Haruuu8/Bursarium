@@ -1,23 +1,23 @@
 {
   "kode": "CEKA",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-28 14:22",
+  "nama": "PT Wilmar Cahaya Indonesia Tbk.",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 2200.0,
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": null,
+    "pb": 0.6040321113748255,
+    "ps": 0.12100905922593677,
     "roe": 0.11245402399646466,
-    "eps": null,
+    "eps": 471623689.73613447,
     "de": 0.40475141513649016,
     "margin_net": 0.029207813647261372,
     "current_ratio": 2.7006600959212217,
     "roa": 0.08005261485039206,
-    "bv": null
+    "bv": 3642.1904706235296
   },
   "quarterly": {
     "revenue": {
@@ -51,10 +51,10 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 1308999942144,
+    "enterprise_value": 785301307392,
+    "shares_outstanding": 595000000,
+    "free_float_pct": 14.002999999999998
   },
   "akumulasi": {
     "score": 4.6,

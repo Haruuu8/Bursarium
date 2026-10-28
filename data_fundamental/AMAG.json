@@ -4,20 +4,20 @@
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
   "harga": 370.0,
-  "update": "2026-10-28 14:17",
-  "periode_terbaru": "2026-tw2",
+  "update": "2026-10-28 14:47",
+  "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.0069913692989482645,
-    "pb": 842.414540876286,
+    "pe": null,
+    "pb": null,
     "ps": 0.005177612439247746,
-    "roe": 0.07620179590147862,
+    "roe": 0.09295613909489166,
     "eps": 52922.393908681144,
-    "de": 1.6183754507195718,
-    "margin_net": 13.692209219578615,
+    "de": 1.5544329587590537,
+    "margin_net": -294.81473849805815,
     "current_ratio": null,
-    "roa": 0.029102700256579756,
-    "bv": 0.43921369117765136
+    "roa": 0.03639012673092421,
+    "bv": 0.4565472313127993
   },
   "quarterly": {
     "revenue": {
@@ -64,40 +64,40 @@
     "price_chg_20d": -2.59
   },
   "neraca": {
-    "aset": 5687738682.0,
+    "aset": 5767824898.0,
     "aset_lancar": null,
-    "kas": 250266922.0,
+    "kas": 86936194.0,
     "piutang_usaha": null,
     "persediaan": null,
-    "aset_tetap": 130048837.0,
-    "liabilitas": 3515499143.0,
+    "aset_tetap": 129568142.0,
+    "liabilitas": 3509858065.0,
     "liabilitas_jangka_pendek": null,
     "liabilitas_jangka_panjang": null,
     "utang_usaha": null,
     "utang_bank": null,
-    "ekuitas": 2172239539.0,
-    "ekuitas_induk": 2172239539.0,
+    "ekuitas": 2257966833.0,
+    "ekuitas_induk": 2257966833.0,
     "modal_saham": null,
     "saldo_laba": 63000000.0
   },
   "laba_rugi": {
-    "pendapatan": 12089251.0,
+    "pendapatan": -711945.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,
     "laba_operasi": null,
-    "laba_sebelum_pajak": 168052816.0,
-    "beban_pajak": -2524262.0,
-    "laba_bersih": 165528554.0,
-    "laba_induk": 165528554.0,
-    "eps_basic": 33.47,
-    "eps_diluted": 33.47
+    "laba_sebelum_pajak": 216249392.0,
+    "beban_pajak": -6357513.0,
+    "laba_bersih": 209891879.0,
+    "laba_induk": 209891879.0,
+    "eps_basic": 42.44,
+    "eps_diluted": 42.44
   },
   "arus_kas": {
     "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
-    "capex": 1683231.0,
+    "capex": 4619518.0,
     "dividen_dibayar": 148372380.0
   }
 }

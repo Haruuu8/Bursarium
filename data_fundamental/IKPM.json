@@ -1,23 +1,23 @@
 {
   "kode": "IKPM",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-28 14:26",
+  "nama": "PT Ikapharmindo Putramas Tbk",
+  "sektor": "Healthcare",
+  "industri": "Pharmaceutical Retailers",
+  "harga": 137.0,
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": null,
+    "pb": 1.03738621652012,
+    "ps": 5.932604893806389e-07,
     "roe": 0.016828479976252916,
-    "eps": null,
+    "eps": -11319922.875946963,
     "de": 1.0942600128557356,
     "margin_net": 0.012180337521205765,
     "current_ratio": 1.4237923142634332,
     "roa": 0.008035525614274409,
-    "bv": null
+    "bv": 132.0626761935996
   },
   "quarterly": {
     "revenue": {
@@ -51,10 +51,10 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 230798770176,
+    "enterprise_value": 374693920768,
+    "shares_outstanding": 1684662500,
+    "free_float_pct": 20.0
   },
   "akumulasi": {
     "score": 3.5,

@@ -3,14 +3,14 @@
   "nama": "PT AKR Corporindo Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Refining & Marketing",
-  "harga": 1415.0,
-  "update": "2026-10-28 14:18",
+  "harga": 1410.0,
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 0.010449046665116063,
-    "pb": 2199.294711898142,
-    "ps": 0.0004871684567428393,
+    "pe": null,
+    "pb": null,
+    "ps": 0.0004854470134327939,
     "roe": 0.17357835089521864,
     "eps": 135419.0526035212,
     "de": 1.7570726083533725,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 28016673554432,
+    "market_cap": 27917675397120,
     "enterprise_value": 31197384146944,
     "shares_outstanding": 19799769600,
     "free_float_pct": 32.605582268997715

@@ -1,10 +1,10 @@
 {
   "kode": "HDIT",
   "nama": "PT Hensel Davest Indonesia Tbk",
-  "sektor": null,
-  "industri": null,
+  "sektor": "Technology",
+  "industri": "Software - Infrastructure",
   "harga": 34.0,
-  "update": "2026-10-28 14:25",
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -52,9 +52,9 @@
   },
   "statistik": {
     "market_cap": 51839119360,
-    "enterprise_value": null,
+    "enterprise_value": 60211904512,
     "shares_outstanding": 1524680000,
-    "free_float_pct": null
+    "free_float_pct": 47.747000026235014
   },
   "akumulasi": {
     "score": 2.5,

@@ -1,10 +1,10 @@
 {
   "kode": "ASLI",
   "nama": "PT Asri Karya Lestari Tbk",
-  "sektor": null,
-  "industri": null,
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
   "harga": 294.0,
-  "update": "2026-10-28 14:20",
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -52,9 +52,9 @@
   },
   "statistik": {
     "market_cap": 1837499940864,
-    "enterprise_value": null,
+    "enterprise_value": 1992938881024,
     "shares_outstanding": 6250000000,
-    "free_float_pct": null
+    "free_float_pct": 31.447999999999997
   },
   "akumulasi": {
     "score": 5.3,

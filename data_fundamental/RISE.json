@@ -1,23 +1,23 @@
 {
   "kode": "RISE",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-28 14:35",
+  "nama": "PT Jaya Sukses Makmur Sentosa Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 498.0,
+  "update": "2026-10-28 14:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": null,
+    "pb": 2.8593141138001434,
+    "ps": 1.813995758923221e-05,
     "roe": 0.05207136892981964,
-    "eps": null,
+    "eps": 10231535.151514042,
     "de": 0.28226639670028475,
     "margin_net": 0.403056964752365,
     "current_ratio": 2.29072047889977,
     "roa": 0.03400876291348116,
-    "bv": null
+    "bv": 174.16764307092444
   },
   "quarterly": {
     "revenue": {
@@ -51,10 +51,10 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 8066902786048,
+    "enterprise_value": 9484880576512,
+    "shares_outstanding": 16198599990,
+    "free_float_pct": 19.704999999817886
   },
   "akumulasi": {
     "score": 5.8,
