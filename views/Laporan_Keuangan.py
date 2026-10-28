@@ -13,6 +13,7 @@ from quant.theme import load_theme, page_header, section_title
 load_theme()
 
 def format_idr(val):
+    if pd.isna(val): return "N/A"
     abs_val = abs(val)
     if abs_val >= 1e12: return f"Rp {val/1e12:,.1f} T"
     elif abs_val >= 1e9: return f"Rp {val/1e9:,.1f} B"
@@ -99,6 +100,15 @@ def run_screener(df):
             total_w = w_roe + w_growth + w_per + w_margin
             score = (s_roe*w_roe + s_growth*w_growth + s_per*w_per + s_margin*w_margin) / total_w
             
+        missing = 0
+        if 'NI_Q3' not in row or pd.isna(row['NI_Q3']): missing += 1
+        if not cfo_valid and row['Tipe'] != 'Bank': missing += 1
+        if row['PER'] <= 0: missing += 1
+        if row['PBV'] <= 0: missing += 1
+        
+        score = score - (missing * 2.5)
+        row['Data_Lengkap'] = 4 - missing
+        
         return score
 
     d['Score_Raw'] = d.apply(calc_score, axis=1)
@@ -109,8 +119,7 @@ def run_screener(df):
 def render_card(row, rank):
     ni_ytd_rp = format_idr(row['NI_YTD'])
     
-    # PENGAMAN: Cek apakah kolom NI_Q3 ada (jika CSV belum diupdate)
-    if 'NI_Q3' in row:
+    if 'NI_Q3' in row and not pd.isna(row['NI_Q3']):
         ni_q3_rp = format_idr(row['NI_Q3'])
         ni_q3_yoy = f"{row['NI_Q3_YoY']*100:+.1f}%" if not pd.isna(row['NI_Q3_YoY']) else "N/A"
     else:
@@ -126,6 +135,9 @@ def render_card(row, rank):
     der = f"{row['DER']:.2f}x" if row['Tipe'] != 'Bank' else "N/A"
     per = f"{row['PER']:.1f}x" if row['PER'] > 0 else "N/A"
     pbv = f"{row['PBV']:.2f}x" if row['PBV'] > 0 else "N/A"
+    
+    data_lengkap = row.get('Data_Lengkap', 4)
+    data_badge = f'<span style="background:#262626; border:1px solid #404040; color:#a3a3a3; font-size:10px; padding:2px 6px; border-radius:4px; font-weight:600;">Data {data_lengkap}/4</span>' if data_lengkap < 4 else ''
     
     flag_html = ""
     if row['Tipe'] == 'Bank': 
@@ -144,7 +156,7 @@ def render_card(row, rank):
         f'<div style="font-size:12px; color:#737373; font-weight:800; letter-spacing:1px; margin-bottom:4px;">RANK #{rank}</div>'
         f'<div style="font-size:26px; font-weight:800; color:#ffffff; margin-bottom:4px;">{row["Kode"]}</div>'
         f'<div style="font-size:13px; color:#a3a3a3; margin-bottom:8px;">{row["Sektor"]}</div>'
-        f'<div style="display:flex; flex-wrap:wrap; gap:4px;">{flag_html}</div>'
+        f'<div style="display:flex; flex-wrap:wrap; gap:4px;">{flag_html} {data_badge}</div>'
         f'</div>'
         
         f'<div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:16px 24px; flex:1; max-width:700px;">'
@@ -200,7 +212,6 @@ with tab1:
 with tab2:
     st.markdown("### Perbandingan Metrik Fundamental")
     if not df_pass.empty:
-        # PENGAMAN: Cek apakah kolom NI_Q3 ada
         cols = ['Kode', 'Sektor', 'Score', 'NI_YTD', 'ROE', 'PER', 'PBV', 'CFO_to_NI']
         if 'NI_Q3' in df_pass.columns:
             cols.insert(4, 'NI_Q3')

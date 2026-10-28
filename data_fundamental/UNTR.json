@@ -4,7 +4,7 @@
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
   "harga": 25600.0,
-  "update": "2026-10-28 16:32",
+  "update": "2026-10-28 17:01",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -44,7 +44,7 @@
       "2026-Q2": 313526000000.0,
       "2026-Q3": 3509097000000.0
     },
-    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+    "note": "standalone"
   },
   "riwayat": {
     "eps": {},
@@ -52,9 +52,9 @@
   },
   "statistik": {
     "market_cap": 89423198814208,
-    "enterprise_value": 107167151554560,
+    "enterprise_value": 100724692221952,
     "shares_outstanding": 3507759622,
-    "free_float_pct": 36.43700000823568
+    "free_float_pct": 35.81523953213717
   },
   "akumulasi": {
     "score": 7.5,

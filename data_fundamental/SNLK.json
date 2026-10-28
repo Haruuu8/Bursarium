@@ -4,7 +4,7 @@
   "sektor": "Consumer Cyclical",
   "industri": "Lodging",
   "harga": 224.0,
-  "update": "2026-10-28 16:31",
+  "update": "2026-10-28 17:01",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -44,7 +44,7 @@
       "2026-Q2": -125763856000000.0,
       "2026-Q3": -886432736000000.0
     },
-    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+    "note": "standalone"
   },
   "riwayat": {
     "eps": {},
@@ -52,7 +52,7 @@
   },
   "statistik": {
     "market_cap": 100800004096,
-    "enterprise_value": 106137034752,
+    "enterprise_value": 103700922368,
     "shares_outstanding": 450000000,
     "free_float_pct": 20.612
   },

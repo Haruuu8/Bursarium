@@ -4,7 +4,7 @@
   "sektor": "Industrials",
   "industri": "Marine Shipping",
   "harga": 126.0,
-  "update": "2026-10-28 16:29",
+  "update": "2026-10-28 16:58",
   "periode_terbaru": "2026-tw3",
   "warnings": [
     "quarterly_incomplete",
@@ -38,7 +38,7 @@
       "2026-Q2": 4240760539000000.0,
       "2026-Q3": 6620995501000000.0
     },
-    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+    "note": "standalone"
   },
   "riwayat": {
     "eps": {},

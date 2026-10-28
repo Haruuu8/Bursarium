@@ -4,7 +4,7 @@
   "sektor": "Industrials",
   "industri": "Building Products & Equipment",
   "harga": 500.0,
-  "update": "2026-10-28 16:18",
+  "update": "2026-10-28 16:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -44,7 +44,7 @@
       "2026-Q2": 1.37468055952e+17,
       "2026-Q3": 1.48936217343e+17
     },
-    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+    "note": "standalone"
   },
   "riwayat": {
     "eps": {},
@@ -54,7 +54,7 @@
     "market_cap": 3514988494848,
     "enterprise_value": 3261849927680,
     "shares_outstanding": 6954370374393227,
-    "free_float_pct": 43.74808081516654
+    "free_float_pct": 44.32576994155109
   },
   "akumulasi": {
     "score": 7.0,

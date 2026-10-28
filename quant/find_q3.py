@@ -34,13 +34,11 @@ def extract_all_q3():
             
         def get_q(data, key): return data.get(key, 0)
         
-        # YTD (9M)
         rev_ytd = sum([get_q(q_rev, f"2026-Q{q}") for q in [1, 2, 3]])
         ni_ytd = sum([get_q(q_ni, f"2026-Q{q}") for q in [1, 2, 3]])
         rev_ytd_ly = sum([get_q(q_rev, f"2025-Q{q}") for q in [1, 2, 3]])
         ni_ytd_ly = sum([get_q(q_ni, f"2025-Q{q}") for q in [1, 2, 3]])
         
-        # Q3 Standalone (BARU)
         ni_q3_2026 = get_q(q_ni, "2026-Q3")
         ni_q3_2025 = get_q(q_ni, "2025-Q3")
         ni_q3_yoy = (ni_q3_2026 - ni_q3_2025) / abs(ni_q3_2025) if ni_q3_2025 != 0 else np.nan
@@ -49,7 +47,6 @@ def extract_all_q3():
         rev_q3_2025 = get_q(q_rev, "2025-Q3")
         rev_q3_yoy = (rev_q3_2026 - rev_q3_2025) / abs(rev_q3_2025) if rev_q3_2025 != 0 else np.nan
         
-        # FILTER KETAT
         if ni_ytd <= 0 or rev_ytd <= 0:
             skipped += 1
             continue

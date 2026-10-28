@@ -4,7 +4,7 @@
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
   "harga": 5275.0,
-  "update": "2026-10-28 16:19",
+  "update": "2026-10-28 16:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -44,7 +44,7 @@
       "2026-Q2": 14850323000000.0,
       "2026-Q3": 15681381000000.0
     },
-    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+    "note": "standalone"
   },
   "riwayat": {
     "eps": {},
@@ -52,9 +52,9 @@
   },
   "statistik": {
     "market_cap": 647990238773248,
-    "enterprise_value": 576157447618560,
+    "enterprise_value": 508391420067840,
     "shares_outstanding": 122869095108,
-    "free_float_pct": 39.57100000006268
+    "free_float_pct": 39.57745082717654
   },
   "akumulasi": {
     "score": 1.5,

@@ -4,7 +4,7 @@
   "sektor": "Consumer Cyclical",
   "industri": "Specialty Retail",
   "harga": 1485.0,
-  "update": "2026-10-28 16:26",
+  "update": "2026-10-28 16:55",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
@@ -44,7 +44,7 @@
       "2026-Q2": 4394447584000000.0,
       "2026-Q3": 4209029222000000.0
     },
-    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+    "note": "standalone"
   },
   "riwayat": {
     "eps": {},
@@ -52,9 +52,9 @@
   },
   "statistik": {
     "market_cap": 463319990272,
-    "enterprise_value": 438639427584,
+    "enterprise_value": 332178391040,
     "shares_outstanding": 252027818986742,
-    "free_float_pct": 21.387
+    "free_float_pct": 17.276022115384613
   },
   "akumulasi": {
     "score": 1.5,

@@ -4,7 +4,7 @@
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
   "harga": 1190.0,
-  "update": "2026-10-28 16:24",
+  "update": "2026-10-28 16:54",
   "periode_terbaru": "2026-tw3",
   "warnings": [
     "quarterly_incomplete",
@@ -32,7 +32,7 @@
     "net_income": {
       "2026-Q3": 17904000000.0
     },
-    "note": "nilai standalone (Q1/Q2/Q3/Q4 individual, bukan cumulative)"
+    "note": "standalone"
   },
   "riwayat": {
     "eps": {},
