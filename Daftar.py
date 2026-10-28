@@ -11,7 +11,7 @@ from quant.auth import submit_registration, get_all_approved_users_for_auth
 # 1. SET PAGE CONFIG (Wajib paling atas)
 st.set_page_config(page_title="Bursarium", layout="wide")
 
-# 2. SEMBUNYIKAN MENU DEVELOPER
+# 2. SEMBUNYIKAN MENU DEVELOPER (Cara Python)
 st.set_option("client.toolbarMode", "viewer")
 
 # 3. LOAD TEMA
@@ -52,7 +52,6 @@ if db_users:
     config["credentials"]["usernames"].update(db_users)
 
 # ============ INISIALISASI AUTHENTICATOR ============
-# Mencegah error jika format YAML di secrets salah
 try:
     authenticator = stauth.Authenticate(
         config["credentials"],
@@ -105,7 +104,7 @@ with tab_login:
             # Render form login
             authenticator.login(location="main")
             
-            # Cek status autentikasi (Ganti st.error & st.info dengan HTML kustom)
+            # Cek status autentikasi
             if st.session_state.get("authentication_status") is False:
                 st.markdown('<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:16px;">Username atau password salah</div>', unsafe_allow_html=True)
             elif st.session_state.get("authentication_status") is None:
