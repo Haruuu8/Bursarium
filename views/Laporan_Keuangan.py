@@ -15,7 +15,7 @@ from quant.theme import load_theme, page_header, section_title
 load_theme()
 
 # ============================================================
-# 1. LOAD DATA DARI FILE JSON HASIL SCRAPER
+# 1. LOAD DATA DINAMIS (YTD) DARI JSON
 # ============================================================
 @st.cache_data(ttl=1800)
 def load_fundamental_data():
@@ -27,6 +27,7 @@ def load_fundamental_data():
         st.stop()
 
     data_list = []
+    latest_q_global = 0 # Untuk label UI
     
     for file in json_files:
         with open(file, 'r', encoding='utf-8') as f:
@@ -38,102 +39,100 @@ def load_fundamental_data():
         kode = d.get("kode")
         sektor = d.get("sektor") or "Unknown"
         
-        # Ekstrak Rasio Kunci
+        # Ekstrak Rasio
         rasio = d.get("rasio_kunci", {})
         roe = rasio.get("roe")
         der = rasio.get("de")
         per = rasio.get("pe")
         pbv = rasio.get("pb")
         
-        # Ekstrak Arus Kas (CFO)
+        # Ekstrak CFO
         arus_kas = d.get("arus_kas", {})
         cfo = arus_kas.get("arus_kas_operasi")
         
-        # Ekstrak Data Kuartalan
+        # Ekstrak Kuartalan
         q_rev = d.get("quarterly", {}).get("revenue", {})
         q_ni = d.get("quarterly", {}).get("net_income", {})
         
-        # Cari tahun terbaru yang ada di data (misal 2026 atau 2025)
         years = [int(k.split("-")[0]) for k in q_rev.keys() if "-" in k]
         if not years:
             continue
+            
         latest_year = max(years)
         prev_year = latest_year - 1
         
-        # Fungsi bantu ambil nilai, default 0
-        def get_q(data, year, q):
-            return data.get(f"{year}-Q{q}", 0)
-            
-        # Hitung Kumulatif 9 Bulan (Q1 + Q2 + Q3)
-        rev_9m = get_q(q_rev, latest_year, 1) + get_q(q_rev, latest_year, 2) + get_q(q_rev, latest_year, 3)
-        ni_9m = get_q(q_ni, latest_year, 1) + get_q(q_ni, latest_year, 2) + get_q(q_ni, latest_year, 3)
+        # Cari Kuartal Terakhir yang Tersedia (Misal: Q2)
+        q_list = [int(k.split("-Q")[1]) for k in q_rev.keys() if k.startswith(f"{latest_year}-Q")]
+        if not q_list:
+            continue
+        max_q = max(q_list)
+        latest_q_global = max(latest_q_global, max_q) # Simpan untuk judul UI
         
-        # Hitung Kumulatif 6 Bulan (Q1 + Q2)
-        rev_6m = get_q(q_rev, latest_year, 1) + get_q(q_rev, latest_year, 2)
-        ni_6m = get_q(q_ni, latest_year, 1) + get_q(q_ni, latest_year, 2)
+        # Fungsi Helper
+        def get_q(data, year, q): return data.get(f"{year}-Q{q}", 0)
         
-        # Ambil data Q3 Tahun Lalu
-        rev_q3_ly = get_q(q_rev, prev_year, 3)
-        ni_q3_ly = get_q(q_ni, prev_year, 3)
+        # Hitung YTD (Kumulatif) untuk Tahun Ini dan Tahun Lalu
+        rev_ytd = sum([get_q(q_rev, latest_year, q) for q in range(1, max_q + 1)])
+        ni_ytd = sum([get_q(q_ni, latest_year, q) for q in range(1, max_q + 1)])
         
-        # Tentukan Tipe (Bank / Non-Bank)
+        rev_ytd_ly = sum([get_q(q_rev, prev_year, q) for q in range(1, max_q + 1)])
+        ni_ytd_ly = sum([get_q(q_ni, prev_year, q) for q in range(1, max_q + 1)])
+        
+        # Deteksi Bank
         industri = str(d.get("industri", "")).lower()
         sektor_str = str(sektor).lower()
         is_bank = "bank" in sektor_str or "bank" in industri
         tipe = "Bank" if is_bank else "Non-Bank"
         
-        # Coba ambil nilai transaksi harian dari file OHLCV jika ada (opsional)
-        # Jika tidak ada, kita beri nilai default besar agar tidak gugur di filter likuiditas
-        avg_val = 2_000_000_000 
+        avg_val = 2_000_000_000 # Default likuiditas
         
         data_list.append({
             'Kode': kode,
             'Sektor': sektor,
             'Tipe': tipe,
-            'NI_9M': ni_9m,
-            'NI_6M': ni_6m,
-            'NI_Q3_LY': ni_q3_ly,
-            'Rev_9M': rev_9m,
-            'Rev_6M': rev_6m,
-            'Rev_Q3_LY': rev_q3_ly,
-            'CFO_9M': cfo if cfo else 0,
+            'NI_YTD': ni_ytd,
+            'NI_YTD_LY': ni_ytd_ly,
+            'Rev_YTD': rev_ytd,
+            'Rev_YTD_LY': rev_ytd_ly,
+            'CFO_YTD': cfo if cfo else 0,
             'ROE': roe if roe else 0,
             'DER': der if der else 0,
             'PER': per if per else 0,
             'PBV': pbv if pbv else 0,
-            'Avg_Value_Daily': avg_val
+            'Avg_Value_Daily': avg_val,
+            'Max_Q': max_q
         })
         
     df = pd.DataFrame(data_list)
-    
-    # Bersihkan data NaN / Inf
     df = df.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return df
+    return df, latest_q_global
 
 # ============================================================
-# 2. LOGIKA SCREENER (SAMA SEPERTI SEBELUMNYA)
+# 2. LOGIKA SCREENER
 # ============================================================
 def run_screener(df):
     d = df.copy()
     
-    d['NI_Q3'] = d['NI_9M'] - d['NI_6M']
-    d['Rev_Q3'] = d['Rev_9M'] - d['Rev_6M']
-    
-    d['NI_YoY_Raw'] = (d['NI_Q3'] - d['NI_Q3_LY']) / d['NI_Q3_LY'].abs().replace(0, np.nan)
-    d['Rev_YoY_Raw'] = (d['Rev_Q3'] - d['Rev_Q3_LY']) / d['Rev_Q3_LY'].abs().replace(0, np.nan)
+    # YoY Growth
+    d['NI_YoY_Raw'] = (d['NI_YTD'] - d['NI_YTD_LY']) / d['NI_YTD_LY'].abs().replace(0, np.nan)
+    d['Rev_YoY_Raw'] = (d['Rev_YTD'] - d['Rev_YTD_LY']) / d['Rev_YTD_LY'].abs().replace(0, np.nan)
     
     d['NI_YoY'] = np.clip(d['NI_YoY_Raw'], -1.0, 2.0).fillna(-1)
     d['Rev_YoY'] = np.clip(d['Rev_YoY_Raw'], -1.0, 2.0).fillna(-1)
     
-    d['NPM_Q3'] = d['NI_Q3'] / d['Rev_Q3'].replace(0, np.nan)
-    d['NPM_LY'] = d['NI_Q3_LY'] / d['Rev_Q3_LY'].replace(0, np.nan)
-    d['NPM_Change'] = (d['NPM_Q3'] - d['NPM_LY']).fillna(-1)
-    d['CFO_to_NI'] = d['CFO_9M'] / d['NI_9M'].replace(0, np.nan)
+    # Margin
+    d['NPM_YTD'] = d['NI_YTD'] / d['Rev_YTD'].replace(0, np.nan)
+    d['NPM_LY'] = d['NI_YTD_LY'] / d['Rev_YTD_LY'].replace(0, np.nan)
+    d['NPM_Change'] = (d['NPM_YTD'] - d['NPM_LY']).fillna(-1)
     
+    # Kualitas Laba
+    d['CFO_to_NI'] = d['CFO_YTD'] / d['NI_YTD'].replace(0, np.nan)
+    
+    # FLAGS ANOMALI
     d['Flag_Anomali'] = ""
     d.loc[d['Rev_YoY_Raw'] > 3.0, 'Flag_Anomali'] += "CEK REV, "
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
-    d.loc[d['NI_Q3_LY'] <= 0, 'Flag_Anomali'] += "RUGI THN LALU, "
+    d.loc[d['NI_YTD_LY'] <= 0, 'Flag_Anomali'] += "RUGI THN LALU, "
     
     # HARD FILTERS
     d = d[
@@ -176,10 +175,10 @@ def run_screener(df):
         (d['Rank_PER'] * 0.10)
     )
     
-    # Penalti Skor Bank
+    # Penalti Bank
     d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] = d.loc[d['Tipe'] == 'Bank', 'Score_Raw'] - 10
     
-    d = d.sort_values(by=['Score_Raw', 'CFO_to_NI', 'ROE', 'NI_Q3'], ascending=[False, False, False, False]).reset_index(drop=True)
+    d = d.sort_values(by=['Score_Raw', 'CFO_to_NI', 'ROE', 'NI_YTD'], ascending=[False, False, False, False]).reset_index(drop=True)
     d['Score'] = d['Score_Raw'].round(2)
     return d
 
@@ -193,8 +192,9 @@ def format_idr(val):
     elif abs_val >= 1e6: return f"Rp {val/1e6:,.1f} M"
     else: return f"Rp {val:,.0f}"
 
-def render_card(row, rank):
-    ni_q3_rp = format_idr(row['NI_Q3'])
+def render_card(row, rank, label_q):
+    ni_ytd_rp = format_idr(row['NI_YTD'])
+    
     ni_yoy = f"{row['NI_YoY']*100:+.1f}%" if row['NI_YoY'] != -1 else "N/A"
     rev_yoy = f"{row['Rev_YoY']*100:+.1f}%" if row['Rev_YoY'] != -1 else "N/A"
     npm_chg = f"{row['NPM_Change']*100:+.2f}%" if row['NPM_Change'] != -1 else "N/A"
@@ -226,9 +226,9 @@ def render_card(row, rank):
         f'</div>'
         
         f'<div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:16px 24px; flex:1; max-width:700px;">'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba Q3</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_q3_rp}</div></div>'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba Q3 YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_yoy}</div></div>'
-        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Rev Q3 YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{rev_yoy}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba YTD ({label_q})</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_ytd_rp}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Laba YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{ni_yoy}</div></div>'
+        f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Rev YoY</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{rev_yoy}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Δ Margin</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{npm_chg}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">Kualitas Laba</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{cfo_ni}</div></div>'
         f'<div><div style="font-size:11px; color:#737373; text-transform:uppercase;">ROE</div><div style="font-size:15px; font-weight:700; color:#ffffff;">{roe}</div></div>'
@@ -248,16 +248,32 @@ def render_card(row, rank):
 # ============================================================
 # 4. UI RENDERING UTAMA
 # ============================================================
-st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental Q3 Berdasarkan Sektor (Data IDX)"), unsafe_allow_html=True)
+st.markdown(page_header("", "Financial Screener", "Peringkat Fundamental (YTD) Berdasarkan Sektor"), unsafe_allow_html=True)
 
 # LOAD DATA
-df_raw = load_fundamental_data()
+df_raw, latest_q_global = load_fundamental_data()
+label_q = f"Q{latest_q_global}")
+
+# Info Box untuk Q
+st.markdown(
+    f'<div style="background:#262626; border:1px solid #404040; border-left:4px solid #ffffff; '
+    f'border-radius:8px; padding:12px 16px; margin-bottom:24px; font-size:14px; color:#e5e5e5;">'
+    f'<b>INFORMASI DATA:</b> Data terbaru Anda tersedia hingga kuartal <b>Q{latest_q_global}</b>. '
+    f'Sistem secara otomatis membandingkan Kumulatif (YTD) tahun ini vs Kumulatif tahun lalu pada periode yang sama.'
+    f'</div>', 
+    unsafe_allow_html=True
+)
 
 # JALANKAN SCREENER
 df_result = run_screener(df_raw)
 
+# Debug Expander
+with st.expander("🔍 Debug Data (Cek jika ada saham yang aneh)"):
+    st.write("Data Mentah Sebelum Filter:")
+    st.dataframe(df_raw[['Kode', 'Sektor', 'NI_YTD', 'NI_YTD_LY', 'Rev_YTD', 'CFO_YTD', 'DER']].head(20))
+
 if df_result.empty:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada saham yang lolos syarat gugur (Hard Filters) berdasarkan data fundamental Anda.</div>', unsafe_allow_html=True)
+    st.warning("Tidak ada saham yang lolos Hard Filters. Silakan cek data mentah di menu Debug di atas (kemungkinan nilai YoY minus atau CFO kurang dari 0.5).")
     st.stop()
 
 sectors = df_result['Sektor'].unique().tolist()
@@ -268,7 +284,7 @@ with tabs[0]:
     st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
     top_10 = df_result.head(10)
     for idx, row in top_10.iterrows():
-        render_card(row, idx + 1)
+        render_card(row, idx + 1, label_q)
 
 for i, sector in enumerate(sectors):
     with tabs[i + 1]:
@@ -278,16 +294,14 @@ for i, sector in enumerate(sectors):
             st.info(f"Tidak ada saham sektor {sector} yang lolos filter.")
         else:
             for idx, row in df_sector.iterrows():
-                render_card(row, idx + 1)
+                render_card(row, idx + 1, label_q)
 
 # --- DISQUALIFIED ---
-st.markdown(section_title("Saham yang Gugur (Hard Filters)", "Gagal memenuhi syarat: Laba Q3 Turun, Rev Q3 Anjlok >20%, DER > 2, atau CFO < 0.5x"), unsafe_allow_html=True)
+st.markdown(section_title("Saham yang Gugur (Hard Filters)", "Gagal memenuhi syarat: Laba Turun, Rev Anjlok >20%, DER > 2, atau CFO < 0.5x"), unsafe_allow_html=True)
 
-df_raw['NI_Q3'] = df_raw['NI_9M'] - df_raw['NI_6M']
-df_raw['Rev_Q3'] = df_raw['Rev_9M'] - df_raw['Rev_6M']
-df_raw['CFO_to_NI'] = df_raw['CFO_9M'] / df_raw['NI_9M'].replace(0, np.nan)
-df_raw['NI_YoY'] = (df_raw['NI_Q3'] - df_raw['NI_Q3_LY']) / df_raw['NI_Q3_LY'].abs().replace(0, np.nan)
-df_raw['Rev_YoY'] = (df_raw['Rev_Q3'] - df_raw['Rev_Q3_LY']) / df_raw['Rev_Q3_LY'].abs().replace(0, np.nan)
+df_raw['NI_YoY'] = (df_raw['NI_YTD'] - df_raw['NI_YTD_LY']) / df_raw['NI_YTD_LY'].abs().replace(0, np.nan)
+df_raw['Rev_YoY'] = (df_raw['Rev_YTD'] - df_raw['Rev_YTD_LY']) / df_raw['Rev_YTD_LY'].abs().replace(0, np.nan)
+df_raw['CFO_to_NI'] = df_raw['CFO_YTD'] / df_raw['NI_YTD'].replace(0, np.nan)
 
 failed = df_raw[
     (df_raw['NI_YoY'] < 0) | 
@@ -296,13 +310,12 @@ failed = df_raw[
     ((df_raw['CFO_to_NI'] < 0.5) & (df_raw['Tipe'] != 'Bank'))
 ].copy()
 
-# Tampilkan 10 teratas yang gugur
 for _, t in failed.sort_values('Kode').head(10).iterrows():
     reason = []
-    if t['NI_YoY'] < 0: reason.append(f"Laba Q3 Turun ({t['NI_YoY']*100:.1f}%)")
-    if t['Rev_YoY'] < -0.20: reason.append(f"Rev Q3 Anjlok ({t['Rev_YoY']*100:.1f}%)")
+    if t['NI_YoY'] < 0: reason.append(f"Laba Turun ({t['NI_YoY']*100:.1f}%)")
+    if t['Rev_YoY'] < -0.20: reason.append(f"Rev Anjlok ({t['Rev_YoY']*100:.1f}%)")
     if t['DER'] > 2.0 and t['Tipe'] != 'Bank': reason.append(f"DER Tinggi ({t['DER']:.2f}x)")
-    if t['CFO_to_NI'] < 0.5 and t['Tipe'] != 'Bank': reason.append(f"Kualitas Laba Lemah ({t['CFO_to_NI']:.2f}x)")
+    if t['CFO_to_NI'] < 0.5 and t['Tipe'] != 'Bank': reason.append(f"CFO Lemah ({t['CFO_to_NI']:.2f}x)")
     
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:12px 16px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">'
