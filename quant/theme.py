@@ -135,10 +135,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   INPUTS & TOMBOL PLUS MINUS (NUMBER INPUT)
+   INPUTS & TOMBOL PLUS MINUS (NUMBER INPUT) - FIX TOTAL
    ============================================================ */
+/* 1. Container Paling Luar */
 div[data-testid="stNumberInput"] > div {
-    background-color: #262626 !important;
+    background-color: #171717 !important; 
     border: 1px solid #404040 !important;
     border-radius: 8px !important;
     overflow: hidden !important;
@@ -146,6 +147,18 @@ div[data-testid="stNumberInput"] > div {
     flex-wrap: nowrap !important;
     box-shadow: none !important;
 }
+
+/* 2. Bunuh Semua Warna Background Biru di Layer Dalam BaseWeb */
+div[data-testid="stNumberInput"] div[data-baseweb="input"],
+div[data-testid="stNumberInput"] div[data-baseweb="base-input"],
+div[data-testid="stNumberInput"] > div > div {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. Elemen Input Teks Asli */
 div[data-testid="stNumberInput"] input {
     background-color: transparent !important;
     color: #ffffff !important;
@@ -157,15 +170,13 @@ div[data-testid="stNumberInput"] input {
     min-width: 0 !important;
     font-weight: 600 !important;
 }
-div[data-testid="stNumberInput"] > div > div {
-    background-color: transparent !important;
-    display: flex !important;
-}
+
+/* 4. Tombol Plus & Minus */
 div[data-testid="stNumberInput"] button {
-    background-color: #404040 !important;
+    background-color: #262626 !important;
     color: #ffffff !important;
     border: none !important;
-    border-left: 1px solid #525252 !important;
+    border-left: 1px solid #404040 !important;
     padding: 0 12px !important;
     margin: 0 !important;
     box-shadow: none !important;
@@ -174,9 +185,11 @@ div[data-testid="stNumberInput"] button {
     justify-content: center !important;
     height: 100% !important;
 }
+
 div[data-testid="stNumberInput"] button:hover {
-    background-color: #525252 !important;
+    background-color: #404040 !important;
 }
+
 div[data-testid="stNumberInput"] button svg {
     fill: #ffffff !important;
     color: #ffffff !important;

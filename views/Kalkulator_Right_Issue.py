@@ -4,38 +4,32 @@ if not st.session_state.get("authentication_status"):
     st.stop()
 
 import os, sys
-import streamlit as st
-
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from quant.theme import load_theme, page_header, section_title
 
 load_theme()
 
 st.markdown(page_header("", "Kalkulator Right Issue", "Simulasi Risiko Dilusi (HMETD)"), unsafe_allow_html=True)
-
 st.markdown(section_title("Data Right Issue", "Masukkan parameter saat ini (Cum-Date)"), unsafe_allow_html=True)
 
-# Bungkus input dalam kotak abu-abu agar terlihat rapi
-st.markdown('<div style="background:#171717; border:1px solid #27272a; border-radius:12px; padding:24px 28px; margin-bottom:24px;">', unsafe_allow_html=True)
-
-c1, c2 = st.columns([1, 1.2])
-with c1:
-    lot_lama = st.number_input("Jumlah Lot Dimiliki", min_value=1, value=10, step=1)
-    harga_cum = st.number_input("Harga Saham Saat Ini (Cum-Date) - Rp", min_value=1.0, value=1000.0, step=50.0)
-with c2:
-    st.markdown('<div style="font-size: 14px; font-weight: 600; color: #ffffff; margin-bottom: 8px;">Rasio Right Issue (Lama : Baru)</div>', unsafe_allow_html=True)
+# Gunakan st.container agar rapi dan tidak bug
+with st.container():
+    c1, c2 = st.columns([1, 1.2])
+    with c1:
+        lot_lama = st.number_input("Jumlah Lot Dimiliki", min_value=1, value=10, step=1)
+        harga_cum = st.number_input("Harga Saham Saat Ini (Cum-Date) - Rp", min_value=1.0, value=1000.0, step=50.0)
     
-    # Beri sedikit jarak antar kolom
-    r1, r2 = st.columns(2)
-    with r1:
-        rasio_lama = st.number_input("Saham Lama", min_value=1, value=1, step=1)
-    with r2:
-        rasio_baru = st.number_input("Saham Baru", min_value=1, value=1, step=1)
-    
-    # Harga tebus dipindah ke bawah agar lebih lega
-    harga_tebus = st.number_input("Harga Tebus (Exercise Price) - Rp", min_value=1.0, value=500.0, step=50.0)
+    with c2:
+        st.markdown('<div style="font-size: 14px; font-weight: 600; color: #ffffff; margin-bottom: 8px;">Rasio Right Issue (Lama : Baru)</div>', unsafe_allow_html=True)
+        r1, r2 = st.columns(2)
+        with r1:
+            rasio_lama = st.number_input("Saham Lama", min_value=1, value=1, step=1)
+        with r2:
+            rasio_baru = st.number_input("Saham Baru", min_value=1, value=1, step=1)
+        
+        harga_tebus = st.number_input("Harga Tebus (Exercise Price) - Rp", min_value=1.0, value=500.0, step=50.0)
 
-st.markdown('</div>', unsafe_allow_html=True)
+st.markdown('<div style="margin-top: 16px;"></div>', unsafe_allow_html=True)
 
 # ============================================================
 # KALKULASI
