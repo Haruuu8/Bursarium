@@ -108,10 +108,16 @@ def run_screener(df):
 
 def render_card(row, rank):
     ni_ytd_rp = format_idr(row['NI_YTD'])
-    ni_q3_rp = format_idr(row['NI_Q3'])
+    
+    # PENGAMAN: Cek apakah kolom NI_Q3 ada (jika CSV belum diupdate)
+    if 'NI_Q3' in row:
+        ni_q3_rp = format_idr(row['NI_Q3'])
+        ni_q3_yoy = f"{row['NI_Q3_YoY']*100:+.1f}%" if not pd.isna(row['NI_Q3_YoY']) else "N/A"
+    else:
+        ni_q3_rp = "N/A"
+        ni_q3_yoy = "N/A"
     
     ni_yoy = f"{row['NI_YoY_Raw']*100:+.1f}%" if not pd.isna(row['NI_YoY_Raw']) else "N/A"
-    ni_q3_yoy = f"{row['NI_Q3_YoY']*100:+.1f}%" if not pd.isna(row['NI_Q3_YoY']) else "N/A"
     rev_yoy = f"{row['Rev_YoY_Raw']*100:+.1f}%" if not pd.isna(row['Rev_YoY_Raw']) else "N/A"
     npm_chg = f"{row['NPM_Change']*100:+.2f}%" if row['NPM_Change'] != -1 else "N/A"
     
@@ -194,17 +200,27 @@ with tab1:
 with tab2:
     st.markdown("### Perbandingan Metrik Fundamental")
     if not df_pass.empty:
-        df_compare = df_pass[['Kode', 'Sektor', 'Score', 'NI_YTD', 'NI_Q3', 'NI_Q3_YoY', 'ROE', 'PER', 'PBV', 'CFO_to_NI']].copy()
+        # PENGAMAN: Cek apakah kolom NI_Q3 ada
+        cols = ['Kode', 'Sektor', 'Score', 'NI_YTD', 'ROE', 'PER', 'PBV', 'CFO_to_NI']
+        if 'NI_Q3' in df_pass.columns:
+            cols.insert(4, 'NI_Q3')
+            cols.insert(5, 'NI_Q3_YoY')
+            
+        df_compare = df_pass[cols].copy()
         
         df_compare['Laba YTD'] = df_compare['NI_YTD'].apply(format_idr)
-        df_compare['Laba Q3'] = df_compare['NI_Q3'].apply(format_idr)
-        df_compare['Q3 YoY'] = df_compare['NI_Q3_YoY'].apply(lambda x: f"{x*100:+.1f}%" if not pd.isna(x) else "N/A")
         df_compare['ROE'] = df_compare['ROE'].apply(lambda x: f"{x:.1f}%")
         df_compare['PER'] = df_compare['PER'].apply(lambda x: f"{x:.1f}x" if x > 0 else "N/A")
         df_compare['PBV'] = df_compare['PBV'].apply(lambda x: f"{x:.2f}x" if x > 0 else "N/A")
         df_compare['Kualitas Laba'] = df_compare['CFO_to_NI'].apply(lambda x: f"{x:.2f}x" if x > 0 else "N/A")
         
-        df_compare = df_compare[['Kode', 'Sektor', 'Score', 'Laba YTD', 'Laba Q3', 'Q3 YoY', 'ROE', 'PER', 'PBV', 'Kualitas Laba']]
+        if 'NI_Q3' in df_compare.columns:
+            df_compare['Laba Q3'] = df_compare['NI_Q3'].apply(format_idr)
+            df_compare['Q3 YoY'] = df_compare['NI_Q3_YoY'].apply(lambda x: f"{x*100:+.1f}%" if not pd.isna(x) else "N/A")
+            df_compare = df_compare[['Kode', 'Sektor', 'Score', 'Laba YTD', 'Laba Q3', 'Q3 YoY', 'ROE', 'PER', 'PBV', 'Kualitas Laba']]
+        else:
+            df_compare = df_compare[['Kode', 'Sektor', 'Score', 'Laba YTD', 'ROE', 'PER', 'PBV', 'Kualitas Laba']]
+            
         st.dataframe(df_compare, use_container_width=True, hide_index=True)
         
 with tab3:
