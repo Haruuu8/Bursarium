@@ -3,16 +3,16 @@
   "nama": "PT Bank CIMB Niaga Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 1540.0,
-  "update": "2026-10-28 14:57",
+  "harga": 1535.0,
+  "update": "2026-10-28 15:34",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
+    "pe": 8.59221942345368,
     "pb": null,
-    "ps": 0.004599040469164626,
+    "ps": 0.004584108519589416,
     "roe": 0.07829115085488404,
-    "eps": 87752.53453060664,
+    "eps": null,
     "de": 5.703353325063426,
     "margin_net": 0.2515704086644272,
     "current_ratio": null,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 38718480056320,
+    "market_cap": 38592772571136,
     "enterprise_value": 31286242574336,
     "shares_outstanding": 71853936,
     "free_float_pct": 100.07210739297565

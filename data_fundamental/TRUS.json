@@ -3,16 +3,16 @@
   "nama": "PT Trust Finance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 418.0,
-  "update": "2026-10-28 15:15",
+  "harga": 416.0,
+  "update": "2026-10-28 15:46",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 0.8908260780255131,
-    "ps": -9.875305054932149e-06,
+    "pe": 32.12355212355212,
+    "pb": 0.8865637522933335,
+    "ps": -9.82805479151142e-06,
     "roe": 0.027592461986772072,
-    "eps": 16902269.17375,
+    "eps": null,
     "de": 0.04691624214145083,
     "margin_net": -0.5773819879668919,
     "current_ratio": null,
@@ -45,7 +45,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 334399995904,
+    "market_cap": 332800000000,
     "enterprise_value": 220597436416,
     "shares_outstanding": 800000000,
     "free_float_pct": 20.723

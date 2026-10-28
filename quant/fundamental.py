@@ -9,8 +9,19 @@ Fitur:
 - Prioritas Net Interest Income untuk Bank
 - Cache XLSX lokal (super cepat di run ke-2)
 - CACHE INCREMENTAL: Tidak mendownload ulang data yang sudah ada.
+- Sanity Check: PER & PBV yang tidak wajar otomatis dibuang.
+- EPS Priority: Menggunakan EPS asli dari IDX untuk menghindari bug shares Yahoo.
 """
-import os, io, json, csv, zipfile, re, time, random, threading, hashlib
+import os
+import io
+import json
+import csv
+import zipfile
+import re
+import time
+import random
+import threading
+import hashlib
 from datetime import datetime
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -55,6 +66,7 @@ HEADERS = {
     "Accept-Language": "id-ID,id;q=0.9,en;q=0.8",
     "X-Requested-With": "XMLHttpRequest",
 }
+
 DL_HEADERS = {
     "Referer": f"{BASE}/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan",
     "Accept": "*/*",
@@ -73,10 +85,11 @@ QUARTERLY_PERIODS = [
     (2026, "tw2", "2026-Q2", 2),
     (2026, "tw3", "2026-Q3", 3),
 ]
+
 RIWAYAT_YEARS = []
 
 # ============================================================
-# FIELD DETECTION
+# FIELD DETECTION — diperluas untuk semua jenis emiten
 # ============================================================
 FIELDS = {
     "aset": ["jumlah aset", "total aset", "total assets"],
@@ -177,12 +190,16 @@ _RL_CACHE = {}
 
 
 def _to_num(v):
-    if v is None or (isinstance(v, float) and pd.isna(v)): return None
-    if isinstance(v, (int, float)): return float(v)
+    if v is None or (isinstance(v, float) and pd.isna(v)): 
+        return None
+    if isinstance(v, (int, float)): 
+        return float(v)
     s = str(v).strip().replace(",", "").replace(" ", "")
-    if not s: return None
+    if not s: 
+        return None
     neg = s.startswith("(") and s.endswith(")")
-    if neg: s = s[1:-1]
+    if neg: 
+        s = s[1:-1]
     try:
         val = float(s)
         return -val if neg else val
@@ -193,21 +210,25 @@ def _to_num(v):
 def _extract_cookies():
     try:
         c = get_session().cookies
-        if hasattr(c, "get_dict"): return c.get_dict()
-        if hasattr(c, "items"): return dict(c)
+        if hasattr(c, "get_dict"): 
+            return c.get_dict()
+        if hasattr(c, "items"): 
+            return dict(c)
         return dict(c) if c else {}
     except Exception:
         return {}
 
 
 def _normalize_url(url):
-    if not url: return url
-    if not url.startswith("http"): url = f"{BASE}{url}"
+    if not url: 
+        return url
+    if not url.startswith("http"): 
+        url = f"{BASE}{url}"
     return re.sub(r"([^:])//+", r"\1/", url)
 
 
 # ============================================================
-# CACHE DAFTAR LAPORAN
+# CACHE DAFTAR LAPORAN (TIDAK PERLU API CALL LAGI)
 # ============================================================
 def get_report_list(year, periode, verbose=False):
     cache_file = REPORT_LIST_CACHE_DIR / f"{year}_{periode}.json"
@@ -219,7 +240,8 @@ def get_report_list(year, periode, verbose=False):
             pass
 
     key = (year, periode)
-    if key in _RL_CACHE: return _RL_CACHE[key]
+    if key in _RL_CACHE: 
+        return _RL_CACHE[key]
 
     rl = {}
     for sort_order in ["asc", "desc"]:
@@ -230,22 +252,32 @@ def get_report_list(year, periode, verbose=False):
         }
         query = "&".join(f"{k}={v}" for k, v in params.items())
         url = f"{API_REPORT}?{query}"
-        if verbose: print(f"  [API] {year} {periode} ({sort_order})")
+        
+        if verbose: 
+            print(f"  [API] {year} {periode} ({sort_order})")
+            
         for attempt in range(3):
             try:
                 r = get_session().get(url, headers=HEADERS, timeout_seconds=60)
             except Exception as e:
-                if verbose: print(f"    attempt {attempt+1}: {e}")
-                time.sleep(3); continue
+                if verbose: 
+                    print(f"    attempt {attempt+1}: {e}")
+                time.sleep(3)
+                continue
+                
             if r.status_code == 200:
                 try:
                     for it in (r.json().get("Results") or []):
                         k = str(it.get("KodeEmiten", "")).strip().upper()
-                        if k and k not in rl: rl[k] = it
-                except Exception: pass
+                        if k and k not in rl: 
+                            rl[k] = it
+                except Exception: 
+                    pass
                 break
+                
             if r.status_code == 429:
-                time.sleep(20 * (attempt + 1)); continue
+                time.sleep(20 * (attempt + 1))
+                continue
             break
         time.sleep(1.5)
 
@@ -264,88 +296,115 @@ def _xlsx_cache_path(url):
 
 
 def download_xlsx(url, verbose=False):
-    if not url: return None
+    if not url: 
+        return None
     url = _normalize_url(url)
     cp = _xlsx_cache_path(url)
+    
     if cp.exists():
         try:
             content = cp.read_bytes()
             if content[:2] == b"PK" and zipfile.is_zipfile(io.BytesIO(content)):
                 return content
-        except Exception: pass
+        except Exception: 
+            pass
 
     cookies = _extract_cookies()
-    if verbose: print(f"    [dl] {url[:80]}...")
+    if verbose: 
+        print(f"    [dl] {url[:80]}...")
+        
     for attempt in range(3):
         try:
             r = curl_requests.get(url, headers=DL_HEADERS, cookies=cookies,
                                    impersonate="firefox", timeout=90)
             if r.status_code == 200 and r.content and r.content[:2] == b"PK":
                 if zipfile.is_zipfile(io.BytesIO(r.content)):
-                    try: cp.write_bytes(r.content)
-                    except Exception: pass
-                    if verbose: print(f"    [dl OK] {len(r.content)} bytes")
+                    try: 
+                        cp.write_bytes(r.content)
+                    except Exception: 
+                        pass
+                    if verbose: 
+                        print(f"    [dl OK] {len(r.content)} bytes")
                     return r.content
+                    
             if r.status_code == 429:
-                time.sleep(15 * (attempt + 1)); continue
+                time.sleep(15 * (attempt + 1))
+                continue
+                
         except Exception as e:
             if "curl: (16)" in str(e) or "HTTP/2" in str(e):
                 time.sleep(10 * (attempt + 1))
                 continue
-            if verbose: print(f"    [dl err] {e}")
+            if verbose: 
+                print(f"    [dl err] {e}")
             time.sleep(3)
     return None
 
 
 def parse_xlsx(content_bytes):
+    """Parse XLSX — ambil nilai dari kolom 2 (periode berjalan)."""
     try:
         xls = pd.ExcelFile(io.BytesIO(content_bytes))
     except Exception:
         return {}
+        
     hasil = {}
     for sheet in xls.sheet_names:
         try:
             df = pd.read_excel(xls, sheet_name=sheet, header=None)
-        except Exception: continue
-        if df.empty: continue
+        except Exception: 
+            continue
+            
+        if df.empty: 
+            continue
+            
         for _, row in df.iterrows():
-            if len(row) < 2: continue
+            if len(row) < 2: 
+                continue
+                
             label = row.iloc[0]
-            if pd.isna(label): continue
+            if pd.isna(label): 
+                continue
+                
             ll = str(label).lower().strip()
-            if len(ll) < 4: continue
-            if any(b in ll for b in BLACKLIST_LBL): continue
-
+            if len(ll) < 4: 
+                continue
+                
+            if any(b in ll for b in BLACKLIST_LBL): 
+                continue
+            
             for field, kws in FIELDS.items():
                 if field in hasil:
                     if field == "pendapatan" and "bunga bersih" in ll and "bunga bersih" not in str(hasil.get("pendapatan", "")):
                         pass
                     else:
                         continue
-
+                
                 matched = False
-
+                
                 if field in EXACT_ONLY:
                     for ex in EXACT_ONLY[field]:
-                        if ll == ex: matched = True; break
+                        if ll == ex: 
+                            matched = True; break
                         if ll.startswith(ex + " "):
                             rest = ll[len(ex):].strip()
-                            if not any(rest.startswith(x) for x in
-                                       ["lancar", "tidak", "current", "non", "jangka"]):
+                            if not any(rest.startswith(x) for x in ["lancar", "tidak", "current", "non", "jangka"]):
                                 matched = True; break
                 elif field == "kas":
                     for kw in kws:
                         if ll == kw or ll.startswith(kw + " ") or ll.startswith(kw + ":"):
                             matched = True; break
-                    if matched and any(b in ll for b in KAS_BLACKLIST): matched = False
+                    if matched and any(b in ll for b in KAS_BLACKLIST): 
+                        matched = False
                 else:
                     matched = any(kw in ll for kw in kws)
-
-                if not matched: continue
-
+                    
+                if not matched: 
+                    continue
+                
                 is_ps = "per saham" in ll or field.startswith("eps")
                 min_abs = 0.0000001 if is_ps else 1000
-
+                
                 for col in range(1, min(len(row), 5)):
                     num = _to_num(row.iloc[col])
                     if num is not None and num != 0 and abs(num) >= min_abs:
@@ -361,7 +420,7 @@ def parse_xlsx(content_bytes):
 
 
 # ============================================================
-# CACHE HASIL PARSING
+# CACHE HASIL PARSING (HANYA PROSES DATA BARU)
 # ============================================================
 def fetch_one_period(kode, year, periode, verbose=False):
     cache_file = PARSED_CACHE_DIR / f"{kode}_{year}_{periode}.json"
@@ -374,17 +433,24 @@ def fetch_one_period(kode, year, periode, verbose=False):
 
     rl = get_report_list(year, periode, verbose=verbose)
     row = rl.get(kode)
-    if not row: return None
+    if not row: 
+        return None
+        
     atts = row.get("Attachments") or []
     xurl = None
     for att in atts:
         fn = (att.get("File_Name") or "").lower()
         ft = (att.get("File_Type") or "").lower()
         if "financialstatement" in fn and ft in (".xlsx", "xlsx"):
-            xurl = att.get("File_Path"); break
-    if not xurl: return None
+            xurl = att.get("File_Path")
+            break
+            
+    if not xurl: 
+        return None
+        
     content = download_xlsx(xurl, verbose=verbose)
-    if not content: return None
+    if not content: 
+        return None
 
     parsed = parse_xlsx(content)
     if parsed:
@@ -397,14 +463,17 @@ def fetch_one_period(kode, year, periode, verbose=False):
 
 
 def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_rev=None):
-    def sd(a, b): return a / b if a and b and b != 0 else None
+    def sd(a, b): 
+        return a / b if a and b and b != 0 else None
 
     laba = d.get("laba_induk") or d.get("laba_bersih")
     ek = d.get("ekuitas_induk") or d.get("ekuitas")
     pendapatan = d.get("pendapatan")
+    eps_idx = d.get("eps_basic") # Ambil EPS asli dari IDX
 
     def nz(v):
-        if v is None: return None
+        if v is None: 
+            return None
         return v * 1_000_000 if abs(v) < 1_000_000_000 else v
 
     if ttm_ni is not None:
@@ -427,19 +496,33 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
 
     eps_calc, pe_calc, pb_calc, ps_calc, bv_calc = None, None, None, None, None
 
-    if shares and shares > 0 and harga:
-        if ek_rp:
+    if harga:
+        # PRIORITAS 1: Hitung PER dari EPS asli IDX (Lebih Akurat)
+        if eps_idx is not None and eps_idx > 0:
+            eps_annualized = eps_idx * factor
+            pe_calc = harga / eps_annualized
+            
+        # PRIORITAS 2: Jika EPS IDX kosong, hitung manual pakai Shares Yahoo
+        elif shares and shares > 0:
+            if laba_rp:
+                eps_calc = (laba_rp * factor) / shares
+                if eps_calc > 0: 
+                    pe_calc = harga / eps_calc
+                    
+        # Hitung PBV
+        if ek_rp and shares and shares > 0:
             bv_calc = ek_rp / shares
-            if bv_calc > 0: pb_calc = harga / bv_calc
-        if laba_rp:
-            eps_calc = (laba_rp * factor) / shares
-            if eps_calc > 0: pe_calc = harga / eps_calc
-        if pend_rp:
+            if bv_calc > 0: 
+                pb_calc = harga / bv_calc
+                
+        if pend_rp and shares and shares > 0: 
             ps_calc = (harga * shares) / (pend_rp * factor_rev)
 
-    # FIX: Sanity Check PER & PBV
-    if pe_calc is not None and (pe_calc < 1 or pe_calc > 1000): pe_calc = None
-    if pb_calc is not None and (pb_calc < 0.1 or pb_calc > 100): pb_calc = None
+    # Sanity Check PER & PBV
+    if pe_calc is not None and (pe_calc < 2 or pe_calc > 500): 
+        pe_calc = None
+    if pb_calc is not None and (pb_calc < 0.2 or pb_calc > 50): 
+        pb_calc = None
 
     return {
         "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")),
@@ -455,15 +538,19 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
 
 
 def fetch_yfinance(kode):
-    if not HAS_YF: return {}
+    if not HAS_YF: 
+        return {}
     try:
         t = yf.Ticker(f"{kode}.JK")
         info = t.info or {}
     except Exception:
         return {}
-    if not info: return {}
+    if not info: 
+        return {}
+        
     harga = (info.get("currentPrice") or info.get("regularMarketPrice")
               or info.get("previousClose"))
+              
     return {
         "harga": harga,
         "market_cap": info.get("marketCap"),
@@ -479,29 +566,41 @@ def fetch_yfinance(kode):
 
 def compute_akumulasi(kode):
     p = OHLCV_DIR / f"{kode}.csv"
-    if not p.exists(): return {}
+    if not p.exists(): 
+        return {}
     try:
         df = pd.read_csv(p)
         df.columns = [str(c).strip() for c in df.columns]
         ren = {}
         for c in df.columns:
             cl = c.lower()
-            if cl in ("date", "tanggal"): ren[c] = "Date"
-            elif cl in ("open", "openprice"): ren[c] = "Open"
-            elif cl in ("high", "highprice"): ren[c] = "High"
-            elif cl in ("low", "lowprice"): ren[c] = "Low"
-            elif cl in ("close", "closeprice"): ren[c] = "Close"
-            elif cl == "volume": ren[c] = "Volume"
+            if cl in ("date", "tanggal"): 
+                ren[c] = "Date"
+            elif cl in ("open", "openprice"): 
+                ren[c] = "Open"
+            elif cl in ("high", "highprice"): 
+                ren[c] = "High"
+            elif cl in ("low", "lowprice"): 
+                ren[c] = "Low"
+            elif cl in ("close", "closeprice"): 
+                ren[c] = "Close"
+            elif cl == "volume": 
+                ren[c] = "Volume"
         df = df.rename(columns=ren)
         df = df.loc[:, ~df.columns.duplicated(keep="first")]
         df["Date"] = pd.to_datetime(df["Date"], format="mixed", errors="coerce", utc=True).dt.tz_localize(None)
         df = df.dropna(subset=["Date"]).sort_values("Date")
-    except Exception: return {}
-    if len(df) < 20: return {}
+    except Exception: 
+        return {}
+    if len(df) < 20: 
+        return {}
 
     d = df.tail(20)
-    high = d["High"].astype(float); low = d["Low"].astype(float)
-    close = d["Close"].astype(float); vol = d["Volume"].astype(float)
+    high = d["High"].astype(float)
+    low = d["Low"].astype(float)
+    close = d["Close"].astype(float)
+    vol = d["Volume"].astype(float)
+    
     hl = (high - low).replace(0, np.nan)
     mfm = ((close - low) - (high - close)) / hl
     mfv = mfm.fillna(0) * vol
@@ -512,32 +611,46 @@ def compute_akumulasi(kode):
     if len(full) >= 40:
         vr = full["Volume"].tail(20).mean()
         vp = full["Volume"].head(20).mean()
-        if vp: vt = float(vr / vp)
+        if vp: 
+            vt = float(vr / vp)
+            
     chg = 0.0
     if len(df) >= 21:
-        pn = float(df["Close"].iloc[-1]); pt = float(df["Close"].iloc[-21])
+        pn = float(df["Close"].iloc[-1])
+        pt = float(df["Close"].iloc[-21])
         chg = (pn - pt) / pt * 100 if pt else 0.0
 
     score = 5.0
     score += min(cmf * 15, 2) if cmf > 0 else max(cmf * 15, -2)
-    if vt > 1.2 and chg > 0: score += 1
-    elif vt > 1.2 and chg < 0: score -= 1
-    if chg > 5: score += 0.5
-    elif chg < -5: score -= 0.5
+    if vt > 1.2 and chg > 0: 
+        score += 1
+    elif vt > 1.2 and chg < 0: 
+        score -= 1
+    if chg > 5: 
+        score += 0.5
+    elif chg < -5: 
+        score -= 0.5
     score = max(0, min(10, score))
 
-    if score >= 6.5: tipe, label = "ACCUMULATION", "AKUMULASI"
-    elif score <= 3.5: tipe, label = "DISTRIBUTION", "DISTRIBUSI"
-    else: tipe, label = "NEUTRAL", "NETRAL"
+    if score >= 6.5: 
+        tipe, label = "ACCUMULATION", "AKUMULASI"
+    elif score <= 3.5: 
+        tipe, label = "DISTRIBUTION", "DISTRIBUSI"
+    else: 
+        tipe, label = "NEUTRAL", "NETRAL"
+        
     return {"score": round(score, 1), "label": label, "tipe": tipe,
             "cmf": round(cmf, 4), "vol_trend": round(vt, 3),
             "price_chg_20d": round(chg, 2)}
 
 
 def _standalone(curr, prev, quarter_num):
-    if curr is None: return None
-    if quarter_num == 1: return curr
-    if prev is None: return None
+    if curr is None: 
+        return None
+    if quarter_num == 1: 
+        return curr
+    if prev is None: 
+        return None
     result = curr - prev
     return result if result != 0 else None
 
@@ -545,11 +658,15 @@ def _standalone(curr, prev, quarter_num):
 def build_one(kode, verbose=False):
     kode = kode.strip().upper()
 
-    snap = None; snap_periode = None
+    snap = None
+    snap_periode = None
     for y, p in SNAPSHOT_CANDIDATES:
         d = fetch_one_period(kode, y, p, verbose=verbose)
         if d and d.get("aset"):
-            snap = d; snap_periode = f"{y}-{p}"; break
+            snap = d
+            snap_periode = f"{y}-{p}"
+            break
+            
     if not snap:
         return None
 
@@ -608,6 +725,7 @@ def build_one(kode, verbose=False):
             prev_eps = cum_eps
             prev_ni = cum_ni
 
+    # HITUNG TTM
     ttm_ni, ttm_rev = None, None
     standalone_data.sort(key=lambda x: (x["lbl"].split("-")[0], x["lbl"].split("-")[1]), reverse=True)
 
@@ -616,6 +734,7 @@ def build_one(kode, verbose=False):
         ttm_ni = sum(item["ni"] for item in recent_4)
         ttm_rev = sum(item["rev"] for item in recent_4)
 
+    # RIWAYAT TAHUNAN
     r_eps, r_rev = {}, {}
     for y in RIWAYAT_YEARS:
         if f"{y}-audit" == snap_periode:
@@ -629,11 +748,11 @@ def build_one(kode, verbose=False):
                 raw_rev = d["pendapatan"]
                 r_rev[str(y)] = raw_rev if abs(raw_rev) > 1_000_000_000_000 else raw_rev * 1_000_000
 
+    # YFINANCE + RATIO
     yfd = fetch_yfinance(kode)
     harga = yfd.get("harga")
     shares = yfd.get("shares_outstanding")
     
-    # FIX BUG SHARES
     if shares is not None and shares < 10_000_000:
         shares = shares * 1_000_000
         
@@ -709,8 +828,10 @@ def main(tickers, verbose=False):
     print(f"Fetch {len(tickers)} saham\n")
 
     periods = set(SNAPSHOT_CANDIDATES)
-    for y, p, _, _ in QUARTERLY_PERIODS: periods.add((y, p))
-    for y in RIWAYAT_YEARS: periods.add((y, "audit"))
+    for y, p, _, _ in QUARTERLY_PERIODS: 
+        periods.add((y, p))
+    for y in RIWAYAT_YEARS: 
+        periods.add((y, "audit"))
 
     print(f"Pre-fetch {len(periods)} report list...")
     for y, p in sorted(periods):
@@ -720,6 +841,7 @@ def main(tickers, verbose=False):
 
     ok, err = 0, 0
     t0 = time.time()
+    
     for i, k in enumerate(tickers, 1):
         print(f"[{i}/{len(tickers)}] {k}...", end=" ", flush=True)
         try:
@@ -748,8 +870,10 @@ def batch(tickers, workers=4, delay=1.0, skip_existing=False):
     print(f"Batch {len(tickers)} saham, {workers} workers\n")
 
     periods = set(SNAPSHOT_CANDIDATES)
-    for y, p, _, _ in QUARTERLY_PERIODS: periods.add((y, p))
-    for y in RIWAYAT_YEARS: periods.add((y, "audit"))
+    for y, p, _, _ in QUARTERLY_PERIODS: 
+        periods.add((y, p))
+    for y in RIWAYAT_YEARS: 
+        periods.add((y, "audit"))
 
     print(f"Pre-fetch {len(periods)} report list...")
     for y, p in sorted(periods):
@@ -777,9 +901,13 @@ def batch(tickers, workers=4, delay=1.0, skip_existing=False):
             with lock:
                 counter["n"] += 1
                 n = counter["n"]
-                if status == "OK": ok += 1
-                elif status == "SKIP": skip += 1
-                else: err += 1
+                if status == "OK": 
+                    ok += 1
+                elif status == "SKIP": 
+                    skip += 1
+                else: 
+                    err += 1
+                    
             if n % 10 == 0 or n == len(tickers):
                 elapsed = time.time() - t0
                 rate = n / elapsed if elapsed > 0 else 0
@@ -808,7 +936,8 @@ if __name__ == "__main__":
                 for row in csv.DictReader(f):
                     for k in ["Kode", "kode"]:
                         if k in row and row[k]:
-                            tickers.append(row[k].strip().upper()); break
+                            tickers.append(row[k].strip().upper())
+                            break
         
         batch(tickers, workers=10, delay=1.5)
     else:

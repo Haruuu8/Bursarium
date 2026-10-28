@@ -1,23 +1,23 @@
 {
   "kode": "OILS",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": null,
-  "update": "2026-10-28 15:12",
+  "nama": "PT Indo Oil Perkasa Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 274.0,
+  "update": "2026-10-28 15:43",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": null,
-    "ps": null,
+    "pe": 5.286513602160911,
+    "pb": 1.0372251830445667,
+    "ps": 4.3638470177818473e-07,
     "roe": 0.1861584060583919,
     "eps": null,
     "de": 1.9966273520648052,
     "margin_net": 0.02028718587062108,
     "current_ratio": 1.304246412626577,
     "roa": 0.061166059747352675,
-    "bv": null
+    "bv": 264.16635893444845
   },
   "quarterly": {
     "revenue": {
@@ -51,10 +51,10 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": null,
-    "free_float_pct": null
+    "market_cap": 124411502592,
+    "enterprise_value": 242580160512,
+    "shares_outstanding": 454056563,
+    "free_float_pct": 36.86899995320627
   },
   "akumulasi": {
     "score": 4.9,

@@ -3,16 +3,16 @@
   "nama": "PT. Mitra Adiperkasa Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
-  "harga": 1315.0,
-  "update": "2026-10-28 15:10",
+  "harga": 1300.0,
+  "update": "2026-10-28 15:42",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 10.225946142444633,
-    "pb": 1.3787705464697595,
-    "ps": 0.4555860951592438,
+    "pe": 12.5,
+    "pb": 1.3630431257875948,
+    "ps": 0.4503892955946897,
     "roe": 0.10869043578914166,
-    "eps": 128.59445783132531,
+    "eps": null,
     "de": 1.221228973496517,
     "margin_net": 0.04596349574083143,
     "current_ratio": 1.5961161329252365,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 21829001412608,
+    "market_cap": 21580000264192,
     "enterprise_value": 28764476014592,
     "shares_outstanding": 16600000000,
     "free_float_pct": 49.0

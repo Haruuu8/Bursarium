@@ -3,16 +3,16 @@
   "nama": "PT Mutuagung Lestari Tbk",
   "sektor": "Industrials",
   "industri": "Specialty Business Services",
-  "harga": 102.0,
-  "update": "2026-10-28 15:11",
+  "harga": 104.0,
+  "update": "2026-10-28 15:43",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 1.3067393811901216,
-    "ps": 1.1955574156125018e-06,
+    "pe": 24.074074074074073,
+    "pb": 1.3323617219977708,
+    "ps": 1.2189997178794136e-06,
     "roe": 0.052019832232468324,
-    "eps": 4104214.993265141,
+    "eps": null,
     "de": 0.2853371142084589,
     "margin_net": 0.06257874154250395,
     "current_ratio": 5.691008924209522,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 352127352832,
+    "market_cap": 359031799808,
     "enterprise_value": 364598394880,
     "shares_outstanding": 3452228885,
     "free_float_pct": 39.16999999262795

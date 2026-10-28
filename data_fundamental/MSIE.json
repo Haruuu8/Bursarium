@@ -3,16 +3,16 @@
   "nama": "PT Multisarana Intan Eduka Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate Services",
-  "harga": 91.0,
-  "update": "2026-10-28 15:11",
+  "harga": 89.0,
+  "update": "2026-10-28 15:43",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 1.165066251044794,
-    "ps": 1.8204023893325022e-05,
+    "pe": 123.61111111111111,
+    "pb": 1.1394603993734798,
+    "ps": 1.7803935456109088e-05,
     "roe": 0.009254721478324427,
-    "eps": 778134.0420196152,
+    "eps": null,
     "de": 0.0922986073726522,
     "margin_net": 0.18886624167655774,
     "current_ratio": 2.6495946519162126,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 132860706816,
+    "market_cap": 129940692992,
     "enterprise_value": 128937705472,
     "shares_outstanding": 1460007754,
     "free_float_pct": 23.04510144402973

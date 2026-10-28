@@ -3,16 +3,16 @@
   "nama": "PT Jaya Sukses Makmur Sentosa Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 500.0,
-  "update": "2026-10-28 15:14",
+  "harga": 505.0,
+  "update": "2026-10-28 15:45",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 2.8707973030121923,
-    "ps": 1.8212808824530333e-05,
+    "pe": 55.678059536934946,
+    "pb": 2.899505276042314,
+    "ps": 1.8394936912775634e-05,
     "roe": 0.05207136892981964,
-    "eps": 10231535.151514042,
+    "eps": null,
     "de": 0.28226639670028475,
     "margin_net": 0.403056964752365,
     "current_ratio": 2.29072047889977,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 8099299590144,
+    "market_cap": 8180292648960,
     "enterprise_value": 9484880576512,
     "shares_outstanding": 16198599990,
     "free_float_pct": 19.704999999817886

@@ -3,16 +3,16 @@
   "nama": "PT Total Bangun Persada Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 1440.0,
-  "update": "2026-10-28 15:16",
+  "harga": 1435.0,
+  "update": "2026-10-28 15:47",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
+    "pe": 10.907570690179385,
     "pb": null,
-    "ps": 0.0010617955070790417,
+    "ps": 0.0010581087171239061,
     "roe": 0.3191361600076042,
-    "eps": 166974.27302052785,
+    "eps": null,
     "de": 2.070839378237782,
     "margin_net": 0.12767642034830196,
     "current_ratio": 1.1654209283306634,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 4910399619072,
+    "market_cap": 4893349773312,
     "enterprise_value": 3526624018432,
     "shares_outstanding": 3410000000,
     "free_float_pct": 30.263

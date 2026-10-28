@@ -3,16 +3,16 @@
   "nama": "PT Ikapharmindo Putramas Tbk",
   "sektor": "Healthcare",
   "industri": "Pharmaceutical Retailers",
-  "harga": 139.0,
-  "update": "2026-10-28 15:06",
+  "harga": 140.0,
+  "update": "2026-10-28 15:38",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 1.0525305408488808,
-    "ps": 6.01921226451889e-07,
+    "pe": 62.99456067982362,
+    "pb": 1.0601027030132613,
+    "ps": 6.062515949875141e-07,
     "roe": 0.016828479976252916,
-    "eps": -11319922.875946963,
+    "eps": null,
     "de": 1.0942600128557356,
     "margin_net": 0.012180337521205765,
     "current_ratio": 1.4237923142634332,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 234168090624,
+    "market_cap": 235852759040,
     "enterprise_value": 374693920768,
     "shares_outstanding": 1684662500,
     "free_float_pct": 20.0

@@ -3,16 +3,16 @@
   "nama": "PT Perdana Bangun Pusaka Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Specialty Retail",
-  "harga": 1490.0,
-  "update": "2026-10-28 15:09",
+  "harga": 1485.0,
+  "update": "2026-10-28 15:41",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 2.4917551047220554,
-    "ps": 1.4578601546853337e-06,
+    "pe": 35.15625,
+    "pb": 2.4833935104109077,
+    "ps": 1.4529680065152488e-06,
     "roe": 0.057060672375128525,
-    "eps": 46632750.708333336,
+    "eps": null,
     "de": 0.078199169737207,
     "margin_net": 0.044146766510871724,
     "current_ratio": 65.42211432040384,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 464880009216,
+    "market_cap": 463319990272,
     "enterprise_value": 438639427584,
     "shares_outstanding": 312000000,
     "free_float_pct": 21.387

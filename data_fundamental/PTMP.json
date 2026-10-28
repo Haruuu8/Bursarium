@@ -3,16 +3,16 @@
   "nama": "PT Mitra Pack Tbk",
   "sektor": "Industrials",
   "industri": "Specialty Industrial Machinery",
-  "harga": 42.0,
-  "update": "2026-10-28 15:13",
+  "harga": 40.0,
+  "update": "2026-10-28 15:45",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 0.7643846513000968,
-    "ps": 6.931354058580534e-07,
+    "pe": 9.615384615384615,
+    "pb": 0.7279853821905684,
+    "ps": 6.601289579600508e-07,
     "roe": 0.0626105474832715,
-    "eps": -9653625.977533763,
+    "eps": null,
     "de": 0.6780021705859388,
     "margin_net": 0.076912372827857,
     "current_ratio": 2.5990196574826725,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 133106401280,
+    "market_cap": 126768005120,
     "enterprise_value": 180839120896,
     "shares_outstanding": 3169200000,
     "free_float_pct": 23.49

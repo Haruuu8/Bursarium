@@ -34,43 +34,47 @@ def extract_all_q3():
             
         def get_q(data, key): return data.get(key, 0)
         
-        # Hitung YTD (Q1+Q2+Q3) tahun 2026 & 2025
         rev_ytd = sum([get_q(q_rev, f"2026-Q{q}") for q in [1, 2, 3]])
         ni_ytd = sum([get_q(q_ni, f"2026-Q{q}") for q in [1, 2, 3]])
         rev_ytd_ly = sum([get_q(q_rev, f"2025-Q{q}") for q in [1, 2, 3]])
         ni_ytd_ly = sum([get_q(q_ni, f"2025-Q{q}") for q in [1, 2, 3]])
         
-        # ===== FILTER BARU: BUANG DATA SAMPAH =====
-        # 1. Laba harus positif (bukan rugi)
-        if ni_ytd <= 0:
+        # FILTER KETAT
+        if ni_ytd <= 0 or rev_ytd <= 0:
             skipped += 1
             continue
-            
-        # 2. Pendapatan harus positif
-        if rev_ytd <= 0:
-            skipped += 1
-            continue
-            
-        # 3. Harus ada data tahun lalu (untuk YoY)
         if ni_ytd_ly == 0 or rev_ytd_ly == 0:
             skipped += 1
             continue
         
-        # 4. Filter outlier (angka tidak masuk akal)
+        # FILTER YOY ANOMALI (Buang jika YoY > 150%)
+        ni_yoy = (ni_ytd - ni_ytd_ly) / abs(ni_ytd_ly)
+        if ni_yoy > 1.5:
+            skipped += 1
+            continue
+
+        # Filter outlier
         if rev_ytd > 1e15 or rev_ytd_ly > 1e15:
             skipped += 1
             continue
-            
-        # 5. Laba tidak boleh lebih besar 5x dari pendapatan (kemungkinan one-off besar)
         if ni_ytd > rev_ytd * 5:
             skipped += 1
             continue
             
-        # Ambil Rasio
+        # FILTER VALUASI (Buang jika PER < 2.0 atau PBV < 0.2)
         rasio = d.get("rasio_kunci", {})
+        per_val = rasio.get("pe", 0)
+        pbv_val = rasio.get("pb", 0)
+        
+        if per_val is not None and 0 < per_val < 2.0:
+            skipped += 1
+            continue
+        if pbv_val is not None and 0 < pbv_val < 0.2:
+            skipped += 1
+            continue
+            
         roe_raw = rasio.get("roe")
         roe = (roe_raw * 100) if roe_raw is not None and abs(roe_raw) < 1 else roe_raw
-        
         cfo = d.get("arus_kas", {}).get("arus_kas_operasi")
         
         sektor = d.get("sektor") or "Unknown"
@@ -78,18 +82,10 @@ def extract_all_q3():
         is_bank = "bank" in sektor.lower() or "bank" in industri
         
         data_list.append({
-            'Kode': kode,
-            'Sektor': sektor,
-            'Tipe': 'Bank' if is_bank else 'Non-Bank',
-            'NI_YTD': ni_ytd,
-            'NI_YTD_LY': ni_ytd_ly,
-            'Rev_YTD': rev_ytd,
-            'Rev_YTD_LY': rev_ytd_ly,
-            'CFO_YTD': cfo if cfo else 0,
-            'ROE': roe if roe else 0,
-            'DER': rasio.get("de", 0),
-            'PER': rasio.get("pe", 0),
-            'PBV': rasio.get("pb", 0)
+            'Kode': kode, 'Sektor': sektor, 'Tipe': 'Bank' if is_bank else 'Non-Bank',
+            'NI_YTD': ni_ytd, 'NI_YTD_LY': ni_ytd_ly, 'Rev_YTD': rev_ytd, 'Rev_YTD_LY': rev_ytd_ly,
+            'CFO_YTD': cfo if cfo else 0, 'ROE': roe if roe else 0, 'DER': rasio.get("de", 0),
+            'PER': rasio.get("pe", 0), 'PBV': rasio.get("pb", 0)
         })
         
     if data_list:
@@ -98,7 +94,7 @@ def extract_all_q3():
         output_file = "data_q3_clean.csv"
         df.to_csv(output_file, index=False)
         print(f"✅ Selesai! Ditemukan {len(df)} saham yang VALID & SEHAT rilis Q3 2026.")
-        print(f"❌ Dilewati (rugi/data kosong/outlier): {skipped} saham.")
+        print(f"❌ Dilewati (rugi/anomali): {skipped} saham.")
     else:
         print("⚠️ Tidak ada satu pun saham yang valid.")
 

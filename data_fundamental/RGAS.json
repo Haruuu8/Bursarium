@@ -3,16 +3,16 @@
   "nama": "PT Kian Santang Muliatama Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Equipment & Services",
-  "harga": 68.0,
-  "update": "2026-10-28 15:14",
+  "harga": 66.0,
+  "update": "2026-10-28 15:45",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": null,
-    "pb": 0.9355134003382424,
-    "ps": 8.938849500981367e-07,
+    "pe": 24.90566037735849,
+    "pb": 0.9079983003282941,
+    "ps": 8.675942162717208e-07,
     "roe": 0.03648259133305867,
-    "eps": 3256326.135358774,
+    "eps": null,
     "de": 0.5761626770661482,
     "margin_net": 0.046603191439402565,
     "current_ratio": 2.2775403435541697,
@@ -51,7 +51,7 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 99227918336,
+    "market_cap": 96309444608,
     "enterprise_value": 88553406464,
     "shares_outstanding": 1459234110,
     "free_float_pct": 33.05599997247871
