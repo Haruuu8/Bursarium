@@ -1,6 +1,7 @@
 """Theme High-Contrast Monokrom — Premium & Clean (Mobile Ready)."""
 
 import streamlit as st
+import pandas as pd
 
 COLORS = {
     "bg": "#0a0a0a",
@@ -74,7 +75,7 @@ html { scroll-behavior: smooth; }
 
 .block-container {
     padding-top: 3rem !important;
-    padding-bottom: 2rem !important; /* Dikurangi agar tidak terlalu jauh kosong di bawah */
+    padding-bottom: 2rem !important;
     max-width: 1250px !important;
 }
 
@@ -84,7 +85,7 @@ html { scroll-behavior: smooth; }
 .block-container::after {
     content: "© 2026 Bursarium · @bursarium · Data by Yahoo Finance";
     display: block;
-    margin-top: 80px; /* Jarak dari konten terakhir */
+    margin-top: 80px;
     padding: 30px 0 20px 0;
     border-top: 1px solid #27272a;
     color: #737373;
@@ -201,6 +202,47 @@ div[data-testid="stNumberInput"] > div:focus-within {
     outline: none !important;
 }
 
+/* ============================================================
+   CUSTOM SEARCH BAR MONOKROM (TAMBAHAN BARU)
+   ============================================================ */
+/* Wadah luar searchbar */
+div[data-testid="stTextInput"] div[data-baseweb="input"] {
+    background-color: #171717 !important; 
+    border: 1px solid #404040 !important;
+    border-radius: 50px !important; /* Membuat ujung membulat */
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Teks yang diketik */
+div[data-testid="stTextInput"] input {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    padding: 10px 10px !important;
+    font-size: 15px !important;
+}
+
+/* Warna teks placeholder */
+div[data-testid="stTextInput"] input::placeholder {
+    color: #737373 !important; 
+    font-weight: 400 !important;
+}
+
+/* Efek saat searchbar diklik */
+div[data-testid="stTextInput"] div[data-baseweb="input"]:focus-within {
+    border-color: #a3a3a3 !important; 
+    box-shadow: 0 0 0 2px rgba(163, 163, 163, 0.2) !important; 
+    background-color: #262626 !important; 
+}
+
+/* Menghilangkan outline bawaan browser */
+div[data-testid="stTextInput"] input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
 /* Selectbox */
 .stSelectbox > div > div {
     background: #262626 !important;
@@ -310,6 +352,49 @@ ul[data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"] {
 #MainMenu { visibility: hidden; }
 footer { visibility: hidden; }
 [data-testid="stAppDeployButton"] { display: none !important; }
+
+/* CUSTOM TABLE CSS (Diambil dari fungsi render_table Anda) */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #27272a;
+    background-color: #171717;
+}
+.mono-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    margin: 0 !important;
+    border: none !important;
+}
+.mono-table th {
+    background-color: #262626 !important;
+    color: #a3a3a3 !important;
+    padding: 14px 16px !important;
+    text-align: left !important;
+    border: none !important;
+    border-bottom: 1px solid #27272a !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+}
+.mono-table td {
+    padding: 14px 16px !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-bottom: 1px solid #27272a !important;
+    font-weight: 500 !important;
+    background-color: transparent !important;
+    white-space: nowrap;
+}
+.mono-table tr:last-child td {
+    border-bottom: none !important;
+}
+.mono-table tr:hover td {
+    background-color: #262626 !important;
+}
 </style>
 """
 
@@ -490,6 +575,7 @@ def empty_state(icon, title, subtitle=""):
         '<div style="text-align: center; padding: 60px 24px; '
         'background: #171717; border: 1px dashed #404040; '
         'border-radius: 14px;">'
+        f'<div style="font-size: 40px; margin-bottom: 16px;">{icon}</div>'
         f'<div style="font-size: 18px; font-weight: 600; color: #ffffff; '
         f'margin-bottom: 8px;">{title}</div>'
         f'<div style="font-size: 14px; color: #a3a3a3;">{subtitle}</div>'
@@ -500,59 +586,61 @@ def render_table(df, hide_index=True):
     html_table = df.to_html(index=not hide_index, border=0, classes="mono-table")
     html_table = html_table.replace('\n', '').replace('\r', '')
     
-    css = """
-    <style>
-    .table-container {
-        width: 100%;
-        overflow-x: auto;
-        margin-bottom: 24px;
-        border-radius: 8px;
-        border: 1px solid #27272a;
-        background-color: #171717;
-    }
-    .mono-table {
-        width: 100% !important;
-        border-collapse: collapse !important;
-        font-size: 13px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-        margin: 0 !important;
-        border: none !important;
-    }
-    .mono-table th {
-        background-color: #262626 !important;
-        color: #a3a3a3 !important;
-        padding: 14px 16px !important;
-        text-align: left !important;
-        border: none !important;
-        border-bottom: 1px solid #27272a !important;
-        font-weight: 600 !important;
-        white-space: nowrap;
-    }
-    .mono-table td {
-        padding: 14px 16px !important;
-        color: #ffffff !important;
-        border: none !important;
-        border-bottom: 1px solid #27272a !important;
-        font-weight: 500 !important;
-        background-color: transparent !important;
-        white-space: nowrap;
-    }
-    .mono-table tr:last-child td {
-        border-bottom: none !important;
-    }
-    .mono-table tr:hover td {
-        background-color: #262626 !important;
-    }
-    
-    [data-testid="stMarkdownContainer"] table {
-        border: none !important;
-    }
-    [data-testid="stMarkdownContainer"] th, 
-    [data-testid="stMarkdownContainer"] td {
-        border: none !important;
-    }
-    </style>
-    """
-    
     html = f'<div class="table-container">{html_table}</div>'
-    st.markdown(css + html, unsafe_allow_html=True)
+    st.markdown(html, unsafe_allow_html=True)
+
+
+# ============================================================
+# MAIN APP (LOGIKA HALAMAN & SEARCHBAR)
+# ============================================================
+def main():
+    st.set_page_config(page_title="Monokrom Search", layout="wide")
+    
+    # 1. Panggil Tema
+    load_theme()
+
+    # 2. Tampilkan Hero
+    st.markdown(hero(
+        title="Kalkulator & Pencarian Saham", 
+        subtitle="Cari data emiten secara instan dengan antarmuka High-Contrast Monokrom.",
+        badge_text="BURSARIUM"
+    ), unsafe_allow_html=True)
+
+    # 3. SEARCH BAR MONOKROM
+    search_query = st.text_input(
+        label="Pencarian", 
+        placeholder="🔍 Ketik kode saham (misal: BBCA) atau nama perusahaan...", 
+        label_visibility="collapsed"
+    )
+
+    # 4. Dummy Data untuk Simulasi
+    data = {
+        "Ticker": ["BBCA", "BBRI", "TLKM", "ASII", "GOTO", "BMRI", "UNVR", "ICBP"],
+        "Nama Perusahaan": ["Bank Central Asia", "Bank Rakyat Indonesia", "Telkom Indonesia", "Astra International", "GoTo Gojek Tokopedia", "Bank Mandiri", "Unilever Indonesia", "Indofood CBP"],
+        "Harga (Rp)": ["9.800", "4.500", "3.100", "4.800", "50", "6.200", "2.500", "11.000"],
+        "Sektor": ["Keuangan", "Keuangan", "Infrastruktur", "Industri", "Teknologi", "Keuangan", "Konsumer", "Konsumer"]
+    }
+    df = pd.DataFrame(data)
+
+    # 5. Tampilkan Judul Bagian
+    st.markdown(section_title("Hasil Pencarian", "Data disimulasikan untuk demonstrasi searchbar"), unsafe_allow_html=True)
+    
+    # 6. Logika Filter Pencarian
+    if search_query:
+        mask = (
+            df["Ticker"].str.contains(search_query, case=False, na=False) | 
+            df["Nama Perusahaan"].str.contains(search_query, case=False, na=False)
+        )
+        filtered_df = df[mask]
+        
+        if filtered_df.empty:
+            st.markdown(empty_state("🔍", "Saham Tidak Ditemukan", f"Tidak ada hasil untuk kata kunci '{search_query}'. Coba kata kunci lain."), unsafe_allow_html=True)
+        else:
+            st.markdown(f'<div style="margin-bottom: 16px; color: #a3a3a3; font-size: 14px;">Ditemukan <b>{len(filtered_df)}</b> hasil untuk "{search_query}"</div>', unsafe_allow_html=True)
+            render_table(filtered_df)
+    else:
+        st.markdown(f'<div style="margin-bottom: 16px; color: #a3a3a3; font-size: 14px;">Menampilkan semua data (Total: {len(df)})</div>', unsafe_allow_html=True)
+        render_table(df)
+
+if __name__ == "__main__":
+    main()
