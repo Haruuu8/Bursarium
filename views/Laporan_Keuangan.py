@@ -8,127 +8,213 @@ import pandas as pd
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from quant.theme import load_theme, page_header, section_title, render_table, card, info_banner
+from quant.theme import load_theme, page_header, section_title, render_table, info_banner
 
 load_theme()
 
 # ============================================================
-# DUMMY DATA (GANTI DENGAN QUERY DATABASE ANDA NANTINYA)
+# 1. DUMMY DATA (SIMULASI DATA IDX)
+# GANTI FUNGSI INI DENGAN QUERY DATABASE ANDA (Supabase/Parquet)
 # ============================================================
-@st.cache_data(ttl=1800)
-def load_data_laporan():
-    # Simulasi data berita / laporan keuangan emiten
-    data = {
-        "Kode": ["BBCA", "BBRI", "GOTO", "ASII", "TLKM", "ADRO", "ANTM", "UNVR", "ICBP", "BMRI"],
-        "Headline Berita": [
-            "Laba Bersih Q3 2026 Naik 25.5% YoY, Kinerja Solid",
-            "Pendapatan Bunga Naik 12%, Laba Melonjak 18%",
-            "Kerugian Menyusut Drastis, Pendapatan Naik 40%",
-            "Penjualan Mobil Naik 20%, Laba Bersih +15%",
-            "EBITDA Margin Meningkat, Laba Tumbuh 10%",
-            "Laba Bersih Meroket 45% Didorong Harga Batu Bara",
-            "Lonjakan Laba 30% Berkat Efisiensi Biaya",
-            "Penjualan Turun 5%, Laba Bersih Anjlok -10%",
-            "Pendapatan Tumbuh 8.5%, Laba Naik 6%",
-            "Laba Bersih Tumbuh 20% Ditopang Kredit Macet Turun"
-        ],
-        "Laba Bersih (%)": [25.5, 18.0, -5.0, 15.0, 10.0, 45.0, 30.0, -10.0, 6.0, 20.0],
-        "Pendapatan (%)": [18.2, 12.0, 40.0, 20.0, 5.0, 25.0, 15.0, -5.0, 8.5, 14.0],
-        "EPS (%)": [24.0, 17.5, 0.0, 14.5, 9.0, 44.0, 29.0, -11.0, 5.5, 19.0],
-        "Margin (%)": [35.0, 25.0, -2.0, 12.0, 30.0, 18.0, 22.0, 20.0, 15.0, 28.0]
-    }
-    df = pd.DataFrame(data)
+@st.cache_data(ttl=3600)
+def load_raw_data():
+    np.random.seed(42)
+    n = 40
+    sectors = ['Keuangan', 'Konsumer', 'Energi', 'Teknologi', 'Infrastruktur', 'Industri']
     
-    # ========================================================
-    # KALKULASI SCORE (BOBOT)
-    # ========================================================
-    # Normalisasi sederhana (kita asumsikan skor maksimal pertumbuhan adalah 50% untuk perhitungan)
-    def normalize(val, max_val=50):
-        # Kalau minus, skornya 0 (tidak dapat poin)
-        if val <= 0: return 0
-        # Kalau di atas max_val, dianggap max_val
-        return min((val / max_val) * 100, 100)
-
-    df["Score"] = (
-        (df["Laba Bersih (%)"].apply(normalize) * 0.40) +
-        (df["Pendapatan (%)"].apply(normalize) * 0.30) +
-        (df["EPS (%)"].apply(normalize) * 0.20) +
-        (df["Margin (%)"].apply(normalize) * 0.10)
-    ).round(1)
-
-    # Urutkan dari skor tertinggi
-    df = df.sort_values("Score", ascending=False).reset_index(drop=True)
+    # Simulasi data mentah kumulatif (dalam Miliar Rupiah)
+    df = pd.DataFrame({
+        'Kode': [f"S{chr(65+i)}{i:02d}" for i in range(n)],
+        'Sektor': np.random.choice(sectors, n),
+        'NI_9M': np.random.uniform(-100, 2000, n),
+        'NI_6M': np.random.uniform(-100, 1500, n),
+        'NI_Q3_LY': np.random.uniform(-100, 1000, n),
+        'Rev_9M': np.random.uniform(100, 5000, n),
+        'Rev_6M': np.random.uniform(100, 4000, n),
+        'Rev_Q3_LY': np.random.uniform(100, 3000, n),
+        'CFO_9M': np.random.uniform(-50, 2500, n),
+        'ROE': np.random.uniform(-10, 40, n),
+        'DER': np.random.uniform(0.1, 3.5, n),
+        'PER': np.random.uniform(5, 50, n),
+        'PBV': np.random.uniform(0.5, 5.0, n),
+        'Avg_Value_Daily': np.random.uniform(1e8, 1e11, n) # Rata-rata nilai transaksi harian
+    })
     return df
 
 # ============================================================
-# HEADER & LOAD DATA
+# 2. LOGIKA KALKULASI & SCORING
 # ============================================================
-st.markdown(page_header("", "Financial Growth Screener", "Screening Laporan Keuangan & Berita Fundamental"), unsafe_allow_html=True)
-
-df_news = load_data_laporan()
-
-# ============================================================
-# TOP PERFORMER (Saham dengan skor tertinggi)
-# ============================================================
-top_stock = df_news.iloc[0]
-
-st.markdown(section_title("Top Performer", "Saham dengan pertumbuhan fundamental terbaik saat ini"), unsafe_allow_html=True)
-
-st.markdown(
-    f'<div style="background: linear-gradient(135deg, #171717 0%, #0a0a0a 100%); '
-    f'border: 1px solid #404040; border-left: 6px solid #ffffff; '
-    f'border-radius: 12px; padding: 30px; margin-bottom: 32px; '
-    f'box-shadow: 0 10px 30px -10px rgba(0,0,0,0.8);">'
-    f'<div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">'
+def calculate_screener(df):
+    d = df.copy()
     
-    # Kiri: Info Saham
-    f'<div style="flex: 1;">'
-    f'<div style="font-size: 32px; font-weight: 800; color: #ffffff; margin-bottom: 8px;">{top_stock["Kode"]}</div>'
-    f'<div style="font-size: 16px; color: #a3a3a3; line-height: 1.5; max-width: 600px;">{top_stock["Headline Berita"]}</div>'
-    f'<div style="margin-top: 20px; display: flex; gap: 24px; flex-wrap: wrap;">'
-    f'<div><div style="font-size: 11px; color: #737373; text-transform: uppercase; letter-spacing: 1px;">Laba Bersih</div><div style="font-size: 18px; font-weight: 700; color: #ffffff;">+{top_stock["Laba Bersih (%)"]}%</div></div>'
-    f'<div><div style="font-size: 11px; color: #737373; text-transform: uppercase; letter-spacing: 1px;">Pendapatan</div><div style="font-size: 18px; font-weight: 700; color: #ffffff;">+{top_stock["Pendapatan (%)"]}%</div></div>'
-    f'<div><div style="font-size: 11px; color: #737373; text-transform: uppercase; letter-spacing: 1px;">EPS</div><div style="font-size: 18px; font-weight: 700; color: #ffffff;">+{top_stock["EPS (%)"]}%</div></div>'
-    f'</div>'
-    f'</div>'
+    # --- A. Hitung Q3 Standalone ---
+    d['NI_Q3'] = d['NI_9M'] - d['NI_6M']
+    d['Rev_Q3'] = d['Rev_9M'] - d['Rev_6M']
     
-    # Kanan: Skor
-    f'<div style="text-align: center; background: #262626; padding: 20px 30px; border-radius: 8px; border: 1px solid #404040;">'
-    f'<div style="font-size: 12px; color: #a3a3a3; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 8px;">Growth Score</div>'
-    f'<div style="font-size: 48px; font-weight: 800; color: #ffffff; line-height: 1;">{top_stock["Score"]}</div>'
-    f'<div style="font-size: 14px; color: #737373; margin-top: 4px;">/ 100</div>'
-    f'</div>'
+    # --- B. Hitung Pertumbuhan (Growth) ---
+    # Menggunakan absolute denominator agar jika tahun lalu rugi, pertumbuhan turn-around tetap terbaca positif
+    d['NI_YoY'] = (d['NI_Q3'] - d['NI_Q3_LY']) / d['NI_Q3_LY'].abs()
+    d['Rev_YoY'] = (d['Rev_Q3'] - d['Rev_Q3_LY']) / d['Rev_Q3_LY'].abs()
     
-    f'</div></div>',
-    unsafe_allow_html=True
-)
-
-# ============================================================
-# TABEL SEMUA LAPORAN
-# ============================================================
-st.markdown(section_title("Daftar Seluruh Laporan", "Diurutkan berdasarkan Growth Score tertinggi"), unsafe_allow_html=True)
-
-# Filter minimum score
-min_score = st.slider("Filter Minimal Score", min_value=0, max_value=100, value=0, step=10)
-
-df_filtered = df_news[df_news["Score"] >= min_score].copy()
-
-if df_filtered.empty:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada laporan yang memenuhi skor minimal tersebut.</div>', unsafe_allow_html=True)
-else:
-    # Format Tabel
-    df_show = df_filtered.copy()
-    df_show["Laba Bersih (%)"] = df_show["Laba Bersih (%)"].apply(lambda x: f"{x:+.1f}%" if pd.notnull(x) else "-")
-    df_show["Pendapatan (%)"] = df_show["Pendapatan (%)"].apply(lambda x: f"{x:+.1f}%" if pd.notnull(x) else "-")
-    df_show["EPS (%)"] = df_show["EPS (%)"].apply(lambda x: f"{x:+.1f}%" if pd.notnull(x) else "-")
-    df_show["Margin (%)"] = df_show["Margin (%)"].apply(lambda x: f"{x:+.1f}%" if pd.notnull(x) else "-")
+    # --- C. Hitung Margin & Kualitas Laba ---
+    d['NPM_Q3'] = d['NI_Q3'] / d['Rev_Q3'].replace(0, np.nan)
+    d['NPM_LY'] = d['NI_Q3_LY'] / d['Rev_Q3_LY'].replace(0, np.nan)
+    d['NPM_Change'] = d['NPM_Q3'] - d['NPM_LY']
     
-    # Rename kolom untuk tabel
-    df_show = df_show[["Kode", "Headline Berita", "Laba Bersih (%)", "Pendapatan (%)", "EPS (%)", "Margin (%)", "Score"]]
-    df_show = df_show.rename(columns={
-        "Laba Bersih (%)": "Laba",
-        "Pendapatan (%)": "Rev",
+    d['CFO_to_NI'] = d['CFO_9M'] / d['NI_9M'].replace(0, np.nan)
+    
+    # --- D. Filter Awal (Buang Sampah) ---
+    # 1. Laba bersih 9M positif
+    # 2. CFO 9M positif
+    # 3. Likuiditas > 1 Miliar
+    d = d[
+        (d['NI_9M'] > 0) & 
+        (d['CFO_9M'] > 0) & 
+        (d['Avg_Value_Daily'] > 1_000_000_000)
+    ].copy()
+    
+    if d.empty:
+        return d
+    
+    # --- E. Percentile Ranking (0-100) ---
+    # Fungsi helper untuk ranking per sektor (jika sektor < 3 saham, pakai ranking global)
+    def sector_rank(series, sector_series, ascending=True):
+        # Global rank sebagai fallback
+        global_rank = series.rank(pct=True, ascending=ascending) * 100
+        # Sector rank
+        sector_ranked = series.groupby(sector_series).rank(pct=True, ascending=ascending) * 100
+        # Gabungkan: Pakai sector rank jika sektor punya > 2 saham, sisanya global rank
+        sector_counts = sector_series.map(sector_series.value_counts())
+        return np.where(sector_counts >= 3, sector_ranked, global_rank)
+    
+    # Rank untuk metrik "Semakin besar semakin bagus"
+    d['Rank_NI'] = sector_rank(d['NI_YoY'], d['Sektor'], ascending=True)
+    d['Rank_Rev'] = sector_rank(d['Rev_YoY'], d['Sektor'], ascending=True)
+    d['Rank_Margin'] = sector_rank(d['NPM_Change'], d['Sektor'], ascending=True)
+    d['Rank_Quality'] = sector_rank(d['CFO_to_NI'], d['Sektor'], ascending=True)
+    d['Rank_ROE'] = sector_rank(d['ROE'], d['Sektor'], ascending=True)
+    
+    # Rank untuk metrik "Semakin kecil semakin bagus" (Utang & Valuasi)
+    d['Rank_DER'] = sector_rank(d['DER'], d['Sektor'], ascending=False)
+    
+    # PER: Kita asumsikan PER positif > 0. Jika negatif, ranknya otomatis jelek (0)
+    d['PER_Fixed'] = d['PER'].apply(lambda x: x if x > 0 else np.nan)
+    d['Rank_PER'] = sector_rank(d['PER_Fixed'], d['Sektor'], ascending=False)
+    
+    # --- F. Skor Gabungan (Bobot) ---
+    # Isi NaN dengan 0 (skor terendah) jika data tidak tersedia
+    d = d.fillna({
+        'Rank_NI': 0, 'Rank_Rev': 0, 'Rank_Margin': 0, 
+        'Rank_Quality': 0, 'Rank_ROE': 0, 'Rank_DER': 0, 'Rank_PER': 0
     })
     
-    render_table(df_show)
-    st.caption("**Score** dihitung dari rata-rata tertimbang: Laba (40%), Pendapatan (30%), EPS (20%), dan Margin (10%). Hanya pertumbuhan positif yang dihitung.")
+    d['Score'] = (
+        (d['Rank_NI'] * 0.25) +
+        (d['Rank_Rev'] * 0.15) +
+        (d['Rank_Margin'] * 0.15) +
+        (d['Rank_Quality'] * 0.15) +
+        (d['Rank_ROE'] * 0.10) +
+        (d['Rank_DER'] * 0.10) +
+        (d['Rank_PER'] * 0.10)
+    ).round(2)
+    
+    # Urutkan berdasarkan skor tertinggi
+    d = d.sort_values('Score', ascending=False).reset_index(drop=True)
+    return d
+
+# ============================================================
+# 3. UI RENDERING
+# ============================================================
+st.markdown(page_header("", "Financial Report Screener", "Screening Laporan Keuangan Q3 (Percentile Ranking)"), unsafe_allow_html=True)
+
+# Penjelasan Metodologi
+st.markdown(
+    '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
+    'border-radius:8px; padding:16px 20px; margin-bottom:24px; font-size:13px; color:#a3a3a3; line-height:1.6;">'
+    '<b style="color:#ffffff;">METODOLOGI:</b> Data dihitung menggunakan Q3 Standalone (9M - 6M). '
+    'Hanya saham dengan Laba 9M Positif, CFO 9M Positif, dan Likuiditas > Rp 1 Miliar yang masuk kriteria. '
+    'Skor akhir menggunakan <i>Percentile Ranking (0-100)</i> per sektor untuk mencegah bias dari saham dengan basis kecil.'
+    '</div>', unsafe_allow_html=True
+)
+
+df_raw = load_raw_data()
+df_result = calculate_screener(df_raw)
+
+if df_result.empty:
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Tidak ada saham yang lolos filter awal (Laba positif, CFO positif, Likuiditas > 1M).</div>', unsafe_allow_html=True)
+    st.stop()
+
+# Tampilkan Top 20
+st.markdown(section_title("Top 20 Saham (Skor Tertinggi)", "Berdasarkan kalkulasi bobot fundamental Q3"), unsafe_allow_html=True)
+
+# Persiapkan tabel untuk ditampilkan
+df_show = df_result.head(20).copy()
+
+# Format kolom agar cantik dibaca (persentase dan angka)
+df_show['NI_YoY'] = df_show['NI_YoY'].apply(lambda x: f"{x*100:+.1f}%" if pd.notnull(x) else "-")
+df_show['Rev_YoY'] = df_show['Rev_YoY'].apply(lambda x: f"{x*100:+.1f}%" if pd.notnull(x) else "-")
+df_show['NPM_Change'] = df_show['NPM_Change'].apply(lambda x: f"{x*100:+.2f}%" if pd.notnull(x) else "-")
+df_show['CFO_to_NI'] = df_show['CFO_to_NI'].apply(lambda x: f"{x:.2f}x" if pd.notnull(x) else "-")
+df_show['DER'] = df_show['DER'].apply(lambda x: f"{x:.2f}x" if pd.notnull(x) else "-")
+df_show['PER'] = df_show['PER'].apply(lambda x: f"{x:.1f}x" if pd.notnull(x) and x > 0 else "N/A")
+
+df_final = df_show[[
+    'Kode', 'Sektor', 'Score', 'NI_YoY', 'Rev_YoY', 'NPM_Change', 'CFO_to_NI', 'ROE', 'DER', 'PER'
+]].rename(columns={
+    'NI_YoY': 'Laba YoY',
+    'Rev_YoY': 'Rev YoY',
+    'NPM_Change': 'Δ Margin',
+    'CFO_to_NI': 'Kualitas Laba',
+    'ROE': 'ROE (%)',
+    'DER': 'DER',
+    'PER': 'PER'
+})
+
+render_table(df_final)
+
+# ============================================================
+# 4. WARNING & JEBAKAN (Sesuai instruksi Anda)
+# ============================================================
+st.markdown(section_title("Waspadai Jebakan (Red Flags)", "Wajib dicek manual sebelum eksekusi"), unsafe_allow_html=True)
+
+# Cek anomali: Laba naik tapi CFO jelek, atau Laba naik karena one-off (CFO jauh lebih kecil dari Laba)
+traps = df_result[
+    (df_result['Score'] > 60) & # Skor lumayan bagus
+    (df_result['CFO_to_NI'] < 0.5) # Tapi kualitas laba buruk (CFO < 50% Laba Bersih)
+].copy()
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown(
+        '<div style="background:#171717; border:1px solid #27272a; border-top:4px solid #ffffff; border-radius:8px; padding:20px; height:100%;">'
+        '<div style="font-size:15px; font-weight:700; color:#ffffff; margin-bottom:12px;">1. Cek Kualitas Laba (One-Off)</div>'
+        '<div style="font-size:13px; color:#a3a3a3; line-height:1.6;">'
+        'Laba bisa melonjak karena penjualan aset, revaluasi, atau laba kurs. '
+        'Jika <b>CFO / Laba Bersih < 0.5</b>, berarti laba tersebut tidak menghasilkan uang kas riil.'
+        '</div></div>', 
+        unsafe_allow_html=True
+    )
+
+with col2:
+    st.markdown(
+        '<div style="background:#171717; border:1px solid #27272a; border-top:4px solid #737373; border-radius:8px; padding:20px; height:100%;">'
+        '<div style="font-size:15px; font-weight:700; color:#ffffff; margin-bottom:12px;">2. Basis Tahun Lalu (Low Base)</div>'
+        '<div style="font-size:13px; color:#a3a3a3; line-height:1.6;">'
+        'Saham dengan lonjakan YoY > 1000% seringkali hanya karena tahun lalu rugi/basis kecil. '
+        'Selalu cek nilai absolut Laba 9M-nya, bukan hanya persentasenya.'
+        '</div></div>', 
+        unsafe_allow_html=True
+    )
+
+# Tampilkan tabel "Jebakan" jika ada
+if not traps.empty:
+    st.markdown('<div style="margin-top: 24px;"></div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size: 14px; font-weight: 600; color: #ffffff; margin-bottom: 8px;">Saham dengan Skor Tinggi tapi Kualitas Laba Buruk (CFO < 50% Laba):</div>', unsafe_allow_html=True)
+    
+    df_traps = traps[['Kode', 'Score', 'CFO_to_NI', 'NI_YoY']].copy()
+    df_traps['CFO_to_NI'] = df_traps['CFO_to_NI'].apply(lambda x: f"{x:.2f}x")
+    df_traps['NI_YoY'] = df_traps['NI_YoY'].apply(lambda x: f"{x*100:+.1f}%")
+    render_table(df_traps)
+else:
+    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px; margin-top: 24px;">[OK] Tidak ada anomali kualitas laba pada 20 saham teratas. CFO mayoritas sejalan dengan Laba Bersih.</div>', unsafe_allow_html=True)
