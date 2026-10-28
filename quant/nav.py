@@ -4,14 +4,15 @@ import streamlit as st
 
 
 MENU = [
-    ("Dashboard",   "views/Dashboard.py",   ":material/dashboard:"),
-    ("Fundamental", "views/Fundamental.py", ":material/analytics:"),
-    ("Technical",   "views/Technical.py",   ":material/trending_up:"),
-    ("Watchlist",   "views/Watchlist.py",   ":material/star:"),
-    ("Valuation",   "views/Valuation.py",   ":material/payments:"),
-    ("News",        "views/News.py",        ":material/newspaper:"),
-    ("Money Flow",  "views/Money_Flow.py",  ":material/water_drop:"),
-    ("Right Issue", "views/Kalkulator_Right_Issue.py", ":material/calculate:"),
+    ("Dashboard",         "views/Dashboard.py",   ":material/dashboard:"),
+    ("Fundamental",       "views/Fundamental.py", ":material/analytics:"),
+    ("Technical",         "views/Technical.py",   ":material/trending_up:"),
+    ("Watchlist",         "views/Watchlist.py",   ":material/star:"),
+    ("Valuation",         "views/Valuation.py",   ":material/payments:"),
+    ("News",              "views/News.py",        ":material/newspaper:"),
+    ("Financial Report",  "views/Laporan_Keuangan.py", ":material/description:"), # <-- TAMBAHAN BARU
+    ("Money Flow",        "views/Money_Flow.py",  ":material/water_drop:"),
+    ("Right Issue",       "views/Kalkulator_Right_Issue.py", ":material/calculate:"),
 ]
 
 
