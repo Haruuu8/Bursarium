@@ -3,14 +3,14 @@
   "nama": "PT Antam (Persero) Tbk",
   "sektor": "Basic Materials",
   "industri": "Gold",
-  "harga": 2800.0,
-  "update": "2026-10-28 18:33",
+  "harga": 2620.0,
+  "update": "2026-10-30 21:29",
   "periode_terbaru": "2026-tw3",
   "warnings": [],
   "rasio_kunci": {
-    "pe": 7.613247049866769,
-    "pb": 1.696460310443849,
-    "ps": 0.662988119703357,
+    "pe": 7.1238240252324765,
+    "pb": 1.5874021476296014,
+    "ps": 0.6203674548652841,
     "roe": 0.22283006177895723,
     "eps": null,
     "de": 0.46698842660619944,
@@ -51,18 +51,18 @@
     "revenue_per_share": {}
   },
   "statistik": {
-    "market_cap": 67286140452864,
-    "enterprise_value": 63887684665344,
+    "market_cap": 62960605069312,
+    "enterprise_value": 61276369715200,
     "shares_outstanding": 24030781989,
-    "free_float_pct": 34.996999998092946
+    "free_float_pct": 34.997074627428326
   },
   "akumulasi": {
-    "score": 5.2,
+    "score": 5.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0485,
-    "vol_trend": 0.814,
-    "price_chg_20d": -12.5
+    "cmf": 0.0333,
+    "vol_trend": 0.904,
+    "price_chg_20d": -16.56
   },
   "neraca": {
     "aset": 59739193.0,
