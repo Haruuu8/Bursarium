@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from quant.theme import load_theme, page_header, section_title
+from quant.theme import load_theme, page_header, section_title, empty_state
 
 load_theme()
 
@@ -26,7 +26,14 @@ def load_clean_q3_data():
         df = pd.read_csv("data_q3_clean.csv")
         return df
     except FileNotFoundError:
-        st.error("⚠️ File `data_q3_clean.csv` tidak ditemukan. Jalankan `py quant/find_q3.py` dulu.")
+        # Kotak peringatan monokrom (tanpa warna merah)
+        st.markdown(
+            '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; '
+            'border-radius:8px; padding:24px; text-align:center; margin-top:24px;">'
+            '<div style="font-size:18px; font-weight:600; color:#ffffff; margin-bottom:8px;">Data Tidak Tersedia</div>'
+            '<div style="font-size:14px; color:#a3a3a3;">Data laporan keuangan belum tersedia saat ini. Silakan hubungi admin.</div>'
+            '</div>', unsafe_allow_html=True
+        )
         st.stop()
 
 def run_screener(df):
@@ -100,7 +107,6 @@ def run_screener(df):
             total_w = w_roe + w_growth + w_per + w_margin
             score = (s_roe*w_roe + s_growth*w_growth + s_per*w_per + s_margin*w_margin) / total_w
             
-        # PENALTI DATA TIDAK LENGKAP & CFO KOSONG
         missing = 0
         if 'NI_Q3' not in row or pd.isna(row['NI_Q3']): missing += 1
         if not cfo_valid and row['Tipe'] != 'Bank': missing += 1
@@ -108,13 +114,10 @@ def run_screener(df):
         if row['PBV'] <= 0: missing += 1
         
         score = score - (missing * 2.5)
-        
-        # PENALTI TAMBAHAN KHUSUS CFO (-5 Poin)
         if not cfo_valid and row['Tipe'] != 'Bank':
             score -= 5.0 
             
         row['Data_Lengkap'] = 4 - missing
-        
         return score
 
     d['Score_Raw'] = d.apply(calc_score, axis=1)
@@ -191,16 +194,22 @@ def render_card(row, rank):
         unsafe_allow_html=True
     )
 
-st.markdown(page_header("", "Q3 Fundamental Screener", "Peringkat Fundamental Q3 (Absolute Scoring)"), unsafe_allow_html=True)
+# JUDUL DIGANTI MENJADI FINANCIAL REPORT
+st.markdown(page_header("", "Financial Report", "Peringkat Fundamental Q3 (Absolute Scoring)"), unsafe_allow_html=True)
 
 df_raw = load_clean_q3_data()
+
+if df_raw.empty:
+    st.markdown(empty_state("", "Data Tidak Tersedia", "Data saham Q3 belum tersedia saat ini."), unsafe_allow_html=True)
+    st.stop()
+
 df_pass, df_fail = run_screener(df_raw)
 
 tab1, tab2, tab3 = st.tabs(["🏆 Peringkat Utama", "📊 Tabel Perbandingan", "❌ Saham Gugur"])
 
 with tab1:
     if df_pass.empty:
-        st.warning("Tidak ada saham yang lolos filter.")
+        st.markdown(empty_state("", "Tidak Ada Data", "Tidak ada saham yang memenuhi kriteria fundamental saat ini."), unsafe_allow_html=True)
     else:
         sectors = df_pass['Sektor'].unique().tolist()
         sector_tabs = st.tabs(["Semua Sektor"] + sectors)
@@ -242,7 +251,7 @@ with tab2:
         
 with tab3:
     if df_fail.empty:
-        st.success("Semua saham bersih!")
+        st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Semua saham bersih!</div>', unsafe_allow_html=True)
     else:
         for _, t in df_fail.iterrows():
             st.markdown(
