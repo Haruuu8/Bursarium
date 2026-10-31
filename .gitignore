@@ -21,6 +21,13 @@ ohlcv_idx_2026_all.csv
 # Cache Scraper (TIDAK PERLU DI UPLOAD)
 data_xlsx_fundamental/
 
+# Data Fundamental (JANGAN UPLOAD)
+data_fundamental/
+data_parsed_fundamental/
+data_report_list/
+data_q3_clean.csv
+data_sektor.csv
+
 # Backup
 pages_backup_*/
 pages_broken_*/

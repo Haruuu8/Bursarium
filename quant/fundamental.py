@@ -1,5 +1,5 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + 100 WORKERS)
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP & AKURAT)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -57,14 +57,14 @@ RIWAYAT_YEARS = []
 
 FIELDS = {
     "aset": ["jumlah aset", "total aset", "total assets"],
-    "aset_lancar": ["jumlah aset lancar", "total aset lancar", "total current assets"],
+    "aset_lancar": ["jumlah aset lancar", "total aset lancar", "total current assets", "current assets", "aset lancar"],
     "aset_tidak_lancar": ["jumlah aset tidak lancar", "total aset tidak lancar"],
     "kas": ["kas dan setara kas", "kas dan bank", "cash and cash equivalents"],
     "piutang_usaha": ["piutang usaha", "piutang dagang", "trade receivables", "piutang pembiayaan"],
     "persediaan": ["persediaan", "inventories"],
     "aset_tetap": ["aset tetap", "property, plant"],
     "liabilitas": ["jumlah liabilitas", "total liabilitas", "total liabilities"],
-    "liabilitas_jangka_pendek": ["jumlah liabilitas jangka pendek", "total liabilitas jangka pendek"],
+    "liabilitas_jangka_pendek": ["jumlah liabilitas jangka pendek", "total liabilitas jangka pendek", "total current liabilities", "current liabilities", "liabilitas jangka pendek"],
     "liabilitas_jangka_panjang": ["jumlah liabilitas jangka panjang", "total liabilitas jangka panjang"],
     "utang_usaha": ["utang usaha", "utang dagang", "trade payables"],
     "utang_bank": ["utang bank", "pinjaman bank", "bank loans"],
@@ -96,8 +96,7 @@ FIELDS = {
         "kas neto yang diperoleh dari aktivitas operasi",
         "kas bersih yang diperoleh dari aktivitas operasi",
         "net cash flows provided by operating activities",
-        "net cash flow from operating activities",
-        "kas dari aktivitas operasi"
+        "net cash flow from operating activities", "kas dari aktivitas operasi"
     ],
     "arus_kas_investasi": ["arus kas dari aktivitas investasi", "kas neto dari aktivitas investasi", "net cash from investing"],
     "arus_kas_pendanaan": ["arus kas dari aktivitas pendanaan", "kas neto dari aktivitas pendanaan", "net cash from financing"],
@@ -309,15 +308,26 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
         
     ek_rp = nz(ek)
     eps_calc, pe_calc, pb_calc, ps_calc, bv_calc = None, None, None, None, None
-    
+    eps_final = None
+
     if harga:
-        if eps_idx is not None and eps_idx > 0:
-            eps_annualized = eps_idx * factor
-            pe_calc = harga / eps_annualized
-        elif shares and shares > 0:
-            if laba_rp:
-                eps_calc = (laba_rp * factor) / shares
-                if eps_calc > 0: pe_calc = harga / eps_calc
+        # 1. Prioritas EPS dari IDX
+        if eps_idx is not None:
+            eps_final = eps_idx * factor
+            if eps_final > 0:
+                pe_calc = harga / eps_final
+        # 2. Fallback ke perhitungan manual
+        elif shares and shares > 0 and laba_rp is not None:
+            eps_calc = (laba_rp * factor) / shares
+            eps_final = eps_calc
+            if eps_calc > 0:
+                pe_calc = harga / eps_calc
+
+        # 3. SANITY CHECK: Jika EPS > 10.000 atau < -10.000, itu pasti bug Yahoo
+        if eps_final is not None and abs(eps_final) > 10000:
+            eps_final = None
+            pe_calc = None
+            
         if ek_rp and shares and shares > 0:
             bv_calc = ek_rp / shares
             if bv_calc > 0: pb_calc = harga / bv_calc
@@ -330,8 +340,9 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
         "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")), "der": sd(d.get("liabilitas"), d.get("ekuitas")),
         "dar": sd(d.get("liabilitas"), d.get("aset")), "current_ratio": sd(d.get("aset_lancar"), d.get("liabilitas_jangka_pendek")),
         "margin_laba_bersih": sd(laba, d.get("pendapatan")), "margin_laba_kotor": sd(d.get("laba_kotor"), d.get("pendapatan")),
-        "margin_laba_operasi": sd(d.get("laba_operasi"), d.get("pendapatan")), "eps_calc": eps_calc, "pe_calc": pe_calc,
-        "pb_calc": pb_calc, "ps_calc": ps_calc, "bv_calc": bv_calc,
+        "margin_laba_operasi": sd(d.get("laba_operasi"), d.get("pendapatan")), 
+        "eps_calc": eps_calc, "eps_final": eps_final, 
+        "pe_calc": pe_calc, "pb_calc": pb_calc, "ps_calc": ps_calc, "bv_calc": bv_calc,
     }
 
 def fetch_yfinance(kode):
@@ -463,17 +474,26 @@ def build_one(kode, verbose=False):
             if d.get("eps_basic") is not None: r_eps[str(y)] = round(d["eps_basic"], 2)
             if d.get("pendapatan") is not None:
                 raw_rev = d["pendapatan"]; r_rev[str(y)] = raw_rev if abs(raw_rev) > 1_000_000_000_000 else raw_rev * 1_000_000
+
     yfd = fetch_yfinance(kode)
-    harga = yfd.get("harga"); shares = yfd.get("shares_outstanding")
-    eps_idx = snap.get("eps_basic"); laba_bersih_idx = snap.get("laba_induk") or snap.get("laba_bersih")
-    if eps_idx and eps_idx > 0 and laba_bersih_idx:
-        laba_rp = laba_bersih_idx * 1_000_000 if abs(laba_bersih_idx) < 1_000_000_000_000 else laba_bersih_idx
-        shares = int(laba_rp / eps_idx)
+    harga = yfd.get("harga")
+    
+    shares = None
+    if yfd.get("market_cap") and harga and harga > 0:
+        shares = yfd.get("market_cap") / harga
+        
+    if not shares:
+        eps_idx = snap.get("eps_basic")
+        laba_bersih_idx = snap.get("laba_induk") or snap.get("laba_bersih")
+        if eps_idx and eps_idx > 0 and laba_bersih_idx:
+            laba_rp = laba_bersih_idx * 1_000_000 if abs(laba_bersih_idx) < 1_000_000_000_000 else laba_bersih_idx
+            shares = int(laba_rp / eps_idx)
+            
     if not shares:
         shares = yfd.get("shares_outstanding")
-        if shares is not None and shares < 10_000_000: shares = shares * 1_000_000
-        if not shares and yfd.get("market_cap") and harga: shares = yfd.get("market_cap") / harga
-    
+        if shares is not None and shares < 10_000_000:
+            shares = shares * 1_000_000
+
     cfo_idx = snap.get("arus_kas_operasi")
     if not cfo_idx or cfo_idx == 0:
         cfo_yf = fetch_yf_cashflow(kode)
@@ -493,7 +513,8 @@ def build_one(kode, verbose=False):
         "harga": harga, "update": datetime.now().strftime("%Y-%m-%d %H:%M"), "periode_terbaru": snap_periode, "warnings": warnings,
         "rasio_kunci": {
             "pe": ratios.get("pe_calc"), "pb": ratios.get("pb_calc"), "ps": ratios.get("ps_calc"), "roe": ratios.get("roe"),
-            "eps": ratios.get("eps_calc"), "de": ratios.get("der"), "margin_net": ratios.get("margin_laba_bersih"),
+            "eps": ratios.get("eps_final"), # <--- SUDAH DIPERBAIKI
+            "de": ratios.get("der"), "margin_net": ratios.get("margin_laba_bersih"),
             "current_ratio": ratios.get("current_ratio"), "roa": ratios.get("roa"), "bv": ratios.get("bv_calc"),
         },
         "quarterly": {"revenue": q_rev, "eps": q_eps, "net_income": q_ni, "note": "standalone"},
