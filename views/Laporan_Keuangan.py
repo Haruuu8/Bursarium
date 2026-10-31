@@ -52,6 +52,9 @@ def run_screener(df):
     d.loc[d['NPM_Change'].abs() > 0.30, 'Flag_Anomali'] += "CEK MARGIN, "
     d.loc[(d['NI_YoY_Raw'] > 0.5) & (d['ROE'] < 10), 'Flag_Anomali'] += "GROWTH LOW ROE, "
     
+    # ============================================================
+    # HARD FILTER AKTIF (MEMISAHKAN PASS & FAIL)
+    # ============================================================
     d['is_failed'] = False
     d['fail_reason'] = ""
     
@@ -79,6 +82,7 @@ def run_screener(df):
     
     if df_pass.empty: return df_pass, df_fail
     
+    # Hitung Skor untuk yang LOLOS
     d = df_pass
     
     def calc_score(row):
@@ -122,6 +126,11 @@ def run_screener(df):
     d['Score_Raw'] = d.apply(calc_score, axis=1)
     d = d.sort_values(by=['Score_Raw', 'NI_YTD'], ascending=[False, False]).reset_index(drop=True)
     d['Score'] = d['Score_Raw'].round(2)
+    
+    # Sort df_fail berdasarkan Kode Saham
+    if not df_fail.empty:
+        df_fail = df_fail.sort_values(by=['Kode']).reset_index(drop=True)
+        
     return d, df_fail
 
 def render_card(row, rank):
@@ -193,7 +202,24 @@ def render_card(row, rank):
         unsafe_allow_html=True
     )
 
-# JUDUL SUDAH DIGANTI
+def render_fail_card(row, rank):
+    # Kartu untuk saham yang gugur
+    st.markdown(
+        f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #525252; '
+        f'border-radius:8px; padding:16px 20px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">'
+        
+        f'<div style="display:flex; align-items:center; gap:16px;">'
+        f'<div style="font-size:14px; font-weight:700; color:#ffffff; width: 60px;">{row["Kode"]}</div>'
+        f'<div style="font-size:12px; color:#a3a3a3;">{row["Sektor"]}</div>'
+        f'</div>'
+        
+        f'<div style="font-size:13px; color:#a3a3a3; text-align: right;">'
+        f'Gugur: <b style="color:#fff; margin-left:8px;">{row["fail_reason"]}</b>'
+        f'</div>'
+        f'</div>', 
+        unsafe_allow_html=True
+    )
+
 st.markdown(page_header("", "Financial Report", "Peringkat Fundamental Q3 (Absolute Scoring)"), unsafe_allow_html=True)
 
 df_raw = load_clean_q3_data()
@@ -204,7 +230,6 @@ if df_raw.empty:
 
 df_pass, df_fail = run_screener(df_raw)
 
-# HAPUS TABEL PERBANDINGAN & EMOJI, TINGGAL 2 TAB
 tab1, tab2 = st.tabs(["Peringkat Utama", "Saham Gugur"])
 
 with tab1:
@@ -215,24 +240,20 @@ with tab1:
         sector_tabs = st.tabs(["Semua Sektor"] + sectors)
         
         with sector_tabs[0]:
-            for idx, row in df_pass.head(10).iterrows():
+            for idx, row in df_pass.iterrows():
                 render_card(row, idx + 1)
                 
         for i, sector in enumerate(sectors):
             with sector_tabs[i + 1]:
-                df_sec = df_pass[df_pass['Sektor'] == sector].head(5)
+                df_sec = df_pass[df_pass['Sektor'] == sector]
                 for idx, row in df_sec.iterrows():
                     render_card(row, idx + 1)
 
 with tab2:
     if df_fail.empty:
-        st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Semua saham bersih!</div>', unsafe_allow_html=True)
+        st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Semua saham lolos kriteria.</div>', unsafe_allow_html=True)
     else:
-        for _, t in df_fail.iterrows():
-            st.markdown(
-                f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:12px 16px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">'
-                f'<div style="font-size:14px; font-weight:700; color:#ffffff;">{t["Kode"]} <span style="font-size:11px; color:#a3a3a3; font-weight:400; margin-left:8px;">({t["Sektor"]})</span></div>'
-                f'<div style="font-size:13px; color:#a3a3a3;">Gugur: <b style="color:#fff;">{t["fail_reason"]}</b></div>'
-                f'</div>', 
-                unsafe_allow_html=True
-            )
+        st.markdown(f'<div style="font-size:14px; color:#a3a3a3; margin-bottom:16px;">Ditemukan <b>{len(df_fail)} saham</b> yang tidak memenuhi kriteria (Red Flag).</div>', unsafe_allow_html=True)
+        
+        for idx, row in df_fail.iterrows():
+            render_fail_card(row, idx + 1)
