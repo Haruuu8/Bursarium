@@ -26,7 +26,6 @@ def load_clean_q3_data():
         df = pd.read_csv("data_q3_clean.csv")
         return df
     except FileNotFoundError:
-        # Kotak peringatan monokrom (tanpa warna merah)
         st.markdown(
             '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; '
             'border-radius:8px; padding:24px; text-align:center; margin-top:24px;">'
@@ -152,9 +151,9 @@ def render_card(row, rank):
     if row['Tipe'] == 'Bank': 
         flag_html += '<span style="background:#e5e5e5; color:#0a0a0a; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">BANK</span>'
     if row['Tipe'] != 'Bank' and row['CFO_to_NI'] < 0.8 and row['CFO_to_NI'] > 0:
-        flag_html += '<span style="background:#737373; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ CFO LEMAH</span>'
+        flag_html += '<span style="background:#737373; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">CFO LEMAH</span>'
     if row['Flag_Anomali']:
-        flag_html += f'<span style="background:#525252; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">⚠ {row["Flag_Anomali"].strip(", ")}</span>'
+        flag_html += f'<span style="background:#525252; color:#ffffff; font-size:10px; padding:2px 6px; border-radius:4px; margin-right:4px; font-weight:700;">{row["Flag_Anomali"].strip(", ")}</span>'
     
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
@@ -194,7 +193,7 @@ def render_card(row, rank):
         unsafe_allow_html=True
     )
 
-# JUDUL DIGANTI MENJADI FINANCIAL REPORT
+# JUDUL SUDAH DIGANTI
 st.markdown(page_header("", "Financial Report", "Peringkat Fundamental Q3 (Absolute Scoring)"), unsafe_allow_html=True)
 
 df_raw = load_clean_q3_data()
@@ -205,7 +204,8 @@ if df_raw.empty:
 
 df_pass, df_fail = run_screener(df_raw)
 
-tab1, tab2, tab3 = st.tabs(["🏆 Peringkat Utama", "📊 Tabel Perbandingan", "❌ Saham Gugur"])
+# HAPUS TABEL PERBANDINGAN & EMOJI, TINGGAL 2 TAB
+tab1, tab2 = st.tabs(["Peringkat Utama", "Saham Gugur"])
 
 with tab1:
     if df_pass.empty:
@@ -225,31 +225,6 @@ with tab1:
                     render_card(row, idx + 1)
 
 with tab2:
-    st.markdown("### Perbandingan Metrik Fundamental")
-    if not df_pass.empty:
-        cols = ['Kode', 'Sektor', 'Score', 'NI_YTD', 'ROE', 'PER', 'PBV', 'CFO_to_NI']
-        if 'NI_Q3' in df_pass.columns:
-            cols.insert(4, 'NI_Q3')
-            cols.insert(5, 'NI_Q3_YoY')
-            
-        df_compare = df_pass[cols].copy()
-        
-        df_compare['Laba YTD'] = df_compare['NI_YTD'].apply(format_idr)
-        df_compare['ROE'] = df_compare['ROE'].apply(lambda x: f"{x:.1f}%")
-        df_compare['PER'] = df_compare['PER'].apply(lambda x: f"{x:.1f}x" if x > 0 else "N/A")
-        df_compare['PBV'] = df_compare['PBV'].apply(lambda x: f"{x:.2f}x" if x > 0 else "N/A")
-        df_compare['Kualitas Laba'] = df_compare['CFO_to_NI'].apply(lambda x: f"{x:.2f}x" if x > 0 else "N/A")
-        
-        if 'NI_Q3' in df_compare.columns:
-            df_compare['Laba Q3'] = df_compare['NI_Q3'].apply(format_idr)
-            df_compare['Q3 YoY'] = df_compare['NI_Q3_YoY'].apply(lambda x: f"{x*100:+.1f}%" if not pd.isna(x) else "N/A")
-            df_compare = df_compare[['Kode', 'Sektor', 'Score', 'Laba YTD', 'Laba Q3', 'Q3 YoY', 'ROE', 'PER', 'PBV', 'Kualitas Laba']]
-        else:
-            df_compare = df_compare[['Kode', 'Sektor', 'Score', 'Laba YTD', 'ROE', 'PER', 'PBV', 'Kualitas Laba']]
-            
-        st.dataframe(df_compare, use_container_width=True, hide_index=True)
-        
-with tab3:
     if df_fail.empty:
         st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">Semua saham bersih!</div>', unsafe_allow_html=True)
     else:
