@@ -1,5 +1,5 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (LENGKAP & FIXED)
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + AUTO SCALE)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -79,9 +79,9 @@ FIELDS = {
         "pendapatan pembiayaan", "pendapatan sewa", "pendapatan jasa", "pendapatan kontrak", "revenue", "sales", "total revenue",
     ],
     "beban_pokok": ["beban pokok pendapatan", "beban pokok penjualan", "harga pokok penjualan", "hpp", "cost of goods sold", "cost of revenue"],
-    "laba_kotor": ["laba kotor", "gross profit", "laba bruto"], # Tambah "laba bruto"
+    "laba_kotor": ["laba kotor", "gross profit", "laba bruto"], 
     "beban_operasi": ["jumlah beban operasional", "total beban operasional", "beban operasi", "beban usaha"],
-    "laba_operasi": ["laba operasi", "laba usaha", "operating profit", "operating income", "laba operasional"], # Tambah "laba operasional"
+    "laba_operasi": ["laba operasi", "laba usaha", "operating profit", "operating income", "laba operasional"], 
     "laba_sebelum_pajak": ["laba (rugi) sebelum pajak penghasilan", "jumlah laba (rugi) sebelum pajak", "laba sebelum pajak penghasilan", "laba sebelum pajak", "profit before tax"],
     "beban_pajak": ["beban pajak", "pendapatan (beban) pajak", "beban pajak penghasilan", "income tax expense"],
     "laba_bersih": ["jumlah laba (rugi) tahun berjalan", "laba (rugi) tahun berjalan", "laba bersih tahun berjalan", "jumlah laba (rugi) periode berjalan", "laba bersih", "net income", "net profit"],
@@ -285,36 +285,59 @@ def fetch_one_period(kode, year, periode, verbose=False):
     return parsed
 
 def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_rev=None):
-    def sd(a, b): return a / b if a and b and b != 0 else None
+    def sd(a, b): 
+        if a is None or b is None: return None
+        try:
+            a = float(a)
+            b = float(b)
+            if pd.isna(a) or pd.isna(b) or b == 0: return None
+            return a / b
+        except:
+            return None
+    
     laba = d.get("laba_induk") or d.get("laba_bersih")
-    ek = d.get("ekuitas_induk") or d.get("ekuitas")
+    
+    ek_induk = d.get("ekuitas_induk")
+    ek_total = d.get("ekuitas")
+    ek = ek_induk if (ek_induk is not None and not pd.isna(ek_induk) and ek_induk != 0) else ek_total
+    
     pendapatan = d.get("pendapatan")
     eps_idx = d.get("eps_basic")
     
-    def nz(v): return v * 1_000_000 if v is not None and abs(v) < 1_000_000_000 else v
+    # FUNGSI AUTO SCALE
+    def scale_num(v):
+        if v is None or pd.isna(v): return None
+        v = float(v)
+        if abs(v) < 1_000_000: return v * 1_000_000_000
+        elif abs(v) < 1_000_000_000: return v * 1_000_000
+        return v
     
     if ttm_ni is not None: laba_rp = ttm_ni; factor = 1
     else:
-        laba_rp = nz(laba)
+        laba_rp = scale_num(laba)
         p_key = str(periode).split("-")[-1] if periode else "audit"
         factor = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
         
     if ttm_rev is not None: pend_rp = ttm_rev; factor_rev = 1
     else:
-        pend_rp = nz(pendapatan)
+        pend_rp = scale_num(pendapatan)
         p_key = str(periode).split("-")[-1] if periode else "audit"
         factor_rev = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
         
-    ek_rp = nz(ek)
+    ek_rp = scale_num(ek)
     eps_calc, pe_calc, pb_calc, ps_calc, bv_calc = None, None, None, None, None
     eps_final = None
 
     if harga:
-        if eps_idx is not None:
-            eps_final = eps_idx * factor
-            if eps_final > 0:
-                pe_calc = harga / eps_final
-        elif shares and shares > 0 and laba_rp is not None:
+        if eps_idx is not None and not pd.isna(eps_idx):
+            if eps_idx < 1.0:
+                eps_idx = None
+            else:
+                eps_final = eps_idx * factor
+                if eps_final > 0:
+                    pe_calc = harga / eps_final
+
+        if eps_final is None and shares and shares > 0 and laba_rp is not None:
             eps_calc = (laba_rp * factor) / shares
             eps_final = eps_calc
             if eps_calc > 0:
@@ -333,7 +356,7 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
     if pb_calc is not None and (pb_calc < 0.2 or pb_calc > 50): pb_calc = None
     
     return {
-        "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")), "der": sd(d.get("liabilitas"), d.get("ekuitas")),
+        "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")), "der": sd(d.get("liabilitas"), ek),
         "dar": sd(d.get("liabilitas"), d.get("aset")), "current_ratio": sd(d.get("aset_lancar"), d.get("liabilitas_jangka_pendek")),
         "margin_laba_bersih": sd(laba, d.get("pendapatan")), "margin_laba_kotor": sd(d.get("laba_kotor"), d.get("pendapatan")),
         "margin_laba_operasi": sd(d.get("laba_operasi"), d.get("pendapatan")), 
@@ -354,7 +377,7 @@ def fetch_yfinance(kode):
         "shares_outstanding": info.get("sharesOutstanding"),
         "free_float_pct": (info.get("floatShares") / info.get("sharesOutstanding") * 100 if info.get("floatShares") and info.get("sharesOutstanding") else None),
         "sektor": info.get("sector"), "industri": info.get("industry"), "nama": info.get("longName") or info.get("shortName"),
-        "operating_cashflow": info.get("operatingCashflow"), # TAMBAHAN
+        "operating_cashflow": info.get("operatingCashflow"),
     }
 
 def fetch_yf_cashflow(kode):
@@ -385,7 +408,7 @@ def compute_akumulasi(kode):
             elif cl in ("open", "openprice"): ren[c] = "Open"
             elif cl in ("high", "highprice"): ren[c] = "High"
             elif cl in ("low", "lowprice"): ren[c] = "Low"
-            elif cl in ("close", "closeprice"): ren[c] = "Close"
+            elif cl in ("close", "closeprice", "close price"): ren[c] = "Close"
             elif cl == "volume": ren[c] = "Volume"
         df = df.rename(columns=ren)
         df = df.loc[:, ~df.columns.duplicated(keep="first")]
@@ -436,7 +459,6 @@ def build_one(kode, verbose=False):
             snap = d; snap_periode = f"{y}-{p}"; break
     if not snap: return None
     
-    # LOGIKA FALLBACK LABA KOTOR & LABA OPERASI
     if "pendapatan" in snap and "beban_pokok" in snap and "laba_kotor" not in snap:
         snap["laba_kotor"] = snap["pendapatan"] - snap["beban_pokok"]
     if "laba_kotor" in snap and "beban_operasi" in snap and "laba_operasi" not in snap:
@@ -455,11 +477,18 @@ def build_one(kode, verbose=False):
         for qnum in [1, 2, 3, 4]:
             if qnum not in year_data: prev_rev = prev_eps = prev_ni = None; continue
             d = year_data[qnum]["data"]; lbl = f"{year}-Q{qnum}"
-            cum_rev = d.get("pendapatan")
-            if cum_rev is not None: cum_rev = cum_rev * 1_000_000 if abs(cum_rev) < 1_000_000_000_000 else cum_rev
-            cum_ni = d.get("laba_induk") or d.get("laba_bersih")
-            if cum_ni is not None: cum_ni = cum_ni * 1_000_000 if abs(cum_ni) < 1_000_000_000_000 else cum_ni
+            
+            def scale_build(v):
+                if v is None or pd.isna(v): return None
+                v = float(v)
+                if abs(v) < 1_000_000: return v * 1_000_000_000
+                elif abs(v) < 1_000_000_000: return v * 1_000_000
+                return v
+                
+            cum_rev = scale_build(d.get("pendapatan"))
+            cum_ni = scale_build(d.get("laba_induk") or d.get("laba_bersih"))
             cum_eps = d.get("eps_basic")
+            
             rev_std = _standalone(cum_rev, prev_rev, qnum); eps_std = _standalone(cum_eps, prev_eps, qnum); ni_std = _standalone(cum_ni, prev_ni, qnum)
             if rev_std is not None: q_rev[lbl] = round(rev_std, 2)
             if eps_std is not None: q_eps[lbl] = round(eps_std, 2)
@@ -474,32 +503,42 @@ def build_one(kode, verbose=False):
     yfd = fetch_yfinance(kode)
     harga = yfd.get("harga")
     
-    # FALLBACK HARGA DARI OHLCV LOKAL
     if not harga:
         ohlcv_path = OHLCV_DIR / f"{kode}.csv"
         if ohlcv_path.exists():
             try:
                 df_price = pd.read_csv(ohlcv_path)
-                if not df_price.empty and "Close" in df_price.columns:
-                    harga = float(df_price["Close"].iloc[-1])
+                if not df_price.empty:
+                    col_close = None
+                    for c in df_price.columns:
+                        if str(c).lower() in ["close", "closeprice", "close price"]:
+                            col_close = c
+                            break
+                    if col_close:
+                        harga = float(df_price[col_close].iloc[-1])
             except Exception:
                 pass
 
     shares = None
-    if yfd.get("market_cap") and harga and harga > 0:
-        shares = yfd.get("market_cap") / harga
+    
+    shares_yf = yfd.get("shares_outstanding")
+    if shares_yf is not None and shares_yf > 0:
+        if shares_yf < 10_000_000:
+            shares_yf = shares_yf * 1_000_000
+        shares = shares_yf
+    
     if not shares:
-        eps_idx = snap.get("eps_basic")
+        mcap = yfd.get("market_cap")
+        if mcap and harga and harga > 0:
+            shares = mcap / harga
+    
+    if not shares:
+        eps_idx_ = snap.get("eps_basic")
         laba_bersih_idx = snap.get("laba_induk") or snap.get("laba_bersih")
-        if eps_idx and eps_idx > 0 and laba_bersih_idx:
+        if eps_idx_ and eps_idx_ > 0.1 and laba_bersih_idx:
             laba_rp = laba_bersih_idx * 1_000_000 if abs(laba_bersih_idx) < 1_000_000_000_000 else laba_bersih_idx
-            shares = int(laba_rp / eps_idx)
-    if not shares:
-        shares = yfd.get("shares_outstanding")
-        if shares is not None and shares < 10_000_000:
-            shares = shares * 1_000_000
+            shares = laba_rp / eps_idx_
 
-    # CFO FALLBACK (YF Dataframe -> YF Info)
     cfo_idx = snap.get("arus_kas_operasi")
     if not cfo_idx or cfo_idx == 0:
         cfo_yf = fetch_yf_cashflow(kode)
@@ -530,7 +569,6 @@ def build_one(kode, verbose=False):
     with open(OUTPUT_DIR / f"{kode}.json", "w", encoding="utf-8") as f: json.dump(data, f, ensure_ascii=False, indent=2, default=str)
     return data
 
-# (Fungsi main, batch, dan __main__ biarkan sama seperti sebelumnya)
 def main(tickers, verbose=False):
     print(f"Fetch {len(tickers)} saham\n")
     periods = set(SNAPSHOT_CANDIDATES)
@@ -569,7 +607,7 @@ def batch(tickers, workers=4, delay=1.0, skip_existing=False):
         try:
             d = build_one(kode, verbose=False)
             return kode, ("OK" if d else "SKIP"), None
-        except Exception as e: return kode, "ERR", str(e)[:100]
+        except Exception as e: return kode, "ERR", str(e)[:1000]
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futures = {ex.submit(worker, k): k for k in tickers}
         for fut in as_completed(futures):
