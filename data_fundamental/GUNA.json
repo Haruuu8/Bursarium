@@ -1,0 +1,98 @@
+{
+  "kode": "GUNA",
+  "nama": "PT Gunanusa Eramandiri Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 212.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 9.294169224024552,
+    "pb": 0.8320935046516588,
+    "ps": 0.2710536653016928,
+    "roe": 0.0895368759062412,
+    "eps": 22.81,
+    "de": 0.9263396447877037,
+    "margin_net": 0.03818917608294445,
+    "current_ratio": 1.86185553295878,
+    "roa": 0.0416649640320643,
+    "bv": 254.7790588616
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 428367322448.0,
+      "2025-Q2": 363727372372.0,
+      "2025-Q3": 461969351869.0,
+      "2026-Q1": 446143236786.0,
+      "2026-Q2": 469500858829.0,
+      "2026-Q3": 577718901223.0
+    },
+    "eps": {
+      "2025-Q1": 7.25,
+      "2025-Q2": 5.75,
+      "2025-Q3": 6.21,
+      "2026-Q1": 4.5,
+      "2026-Q2": 6.5,
+      "2026-Q3": 11.81
+    },
+    "net_income": {
+      "2025-Q1": 16324990197.0,
+      "2025-Q2": 11850007629.0,
+      "2025-Q3": 19839530987.0,
+      "2026-Q1": 11288025330.0,
+      "2026-Q2": 17514571693.0,
+      "2026-Q3": 28227705419.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 529999986688,
+    "enterprise_value": 828562866176,
+    "shares_outstanding": 2500000000
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1875,
+    "vol_trend": 1.505,
+    "price_chg_20d": -2.75
+  },
+  "neraca": {
+    "aset": 1368783191511.0,
+    "aset_lancar": 816596698399.0,
+    "kas": 23928002342.0,
+    "piutang_usaha": 372553099999.0,
+    "persediaan": 275643458646.0,
+    "aset_tetap": 2931135653.0,
+    "liabilitas": 590029857213.0,
+    "liabilitas_jangka_pendek": 438592943407.0,
+    "liabilitas_jangka_panjang": 151436913806.0,
+    "utang_usaha": 372553099999.0,
+    "utang_bank": 108971760663.0,
+    "ekuitas": 636947647154.0,
+    "ekuitas_induk": 636947647154.0,
+    "modal_saham": null,
+    "saldo_laba": 21784998103.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1493362996838.0,
+    "beban_pokok": 1291021581273.0,
+    "laba_kotor": 202341415565.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 115436961848.0,
+    "beban_pajak": -27994707922.0,
+    "laba_bersih": 57030302442.0,
+    "laba_induk": 57030302442.0,
+    "eps_basic": 22.81,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 80505044992,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2931135653.0,
+    "dividen_dibayar": 34023547764.0
+  }
+}

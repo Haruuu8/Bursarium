@@ -1,0 +1,95 @@
+{
+  "kode": "CRAB",
+  "nama": "PT Toba Surimi Industries Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 195.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 96.53465346534654,
+    "pb": 1.5676556359694158,
+    "ps": 0.6258543175890429,
+    "roe": 0.016246909849511475,
+    "eps": 2.02,
+    "de": 0.516281183041908,
+    "margin_net": 0.012233409608222752,
+    "current_ratio": 2.6521989710669853,
+    "roa": 0.010714971623480493,
+    "bv": 124.38956332358974
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 169898225327.0,
+      "2025-Q2": 128394324500.0,
+      "2025-Q3": 157037295157.0,
+      "2026-Q1": 104656460351.0,
+      "2026-Q2": 217481428284.0
+    },
+    "eps": {
+      "2025-Q1": 1.3,
+      "2025-Q2": 3.02,
+      "2025-Q3": 2.99,
+      "2026-Q1": 0.31,
+      "2026-Q2": 1.71
+    },
+    "net_income": {
+      "2025-Q1": 2529707046.0,
+      "2025-Q2": 5898271544.0,
+      "2025-Q3": 5836110072.0,
+      "2026-Q1": 614090597000000.0,
+      "2026-Q2": -614086656155258.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 380249997312,
+    "enterprise_value": 263195492352,
+    "shares_outstanding": 1950000000
+  },
+  "akumulasi": {
+    "score": 4.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0101,
+    "vol_trend": 0.626,
+    "price_chg_20d": -9.72
+  },
+  "neraca": {
+    "aset": 367788630757.0,
+    "aset_lancar": 313462566398.0,
+    "kas": 128918339069.0,
+    "piutang_usaha": 80972631864.0,
+    "persediaan": 80748737320.0,
+    "aset_tetap": 52421154786.0,
+    "liabilitas": 125228982276.0,
+    "liabilitas_jangka_pendek": 118189687055.0,
+    "liabilitas_jangka_panjang": 7039295221.0,
+    "utang_usaha": 80972631864.0,
+    "utang_bank": 11158273758.0,
+    "ekuitas": 242559648481.0,
+    "ekuitas_induk": 242559648481.0,
+    "modal_saham": null,
+    "saldo_laba": 19500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 322137888635.0,
+    "beban_pokok": 302159877771.0,
+    "laba_kotor": 19978010864.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4938179322.0,
+    "beban_pajak": -997334580.0,
+    "laba_bersih": 3940844742.0,
+    "laba_induk": 3940844742.0,
+    "eps_basic": 2.02,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 69638602752,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3767150697.0,
+    "dividen_dibayar": null
+  }
+}

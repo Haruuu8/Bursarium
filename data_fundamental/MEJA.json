@@ -1,0 +1,77 @@
+{
+  "kode": "MEJA",
+  "nama": "PT Harta Djaya Karya Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 82.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.357041393532369,
+    "ps": 16.785623332200487,
+    "roe": -0.09791953247017433,
+    "eps": -6.813118924925684,
+    "de": 0.30217834614238803,
+    "margin_net": -1.3946639998937713,
+    "current_ratio": 3.42817492517586,
+    "roa": -0.07519671384511506,
+    "bv": 34.789376302429325
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 213862662144,
+    "enterprise_value": 198480281600,
+    "shares_outstanding": 2608081058
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1354,
+    "vol_trend": 1.24,
+    "price_chg_20d": -38.35
+  },
+  "neraca": {
+    "aset": 118151216359.0,
+    "aset_lancar": 83564424466.0,
+    "kas": 30297648254.0,
+    "piutang_usaha": 18874072901.0,
+    "persediaan": null,
+    "aset_tetap": 7959727270.0,
+    "liabilitas": 27417703005.0,
+    "liabilitas_jangka_pendek": 24375776117.0,
+    "liabilitas_jangka_panjang": 3041926888.0,
+    "utang_usaha": 18874072901.0,
+    "utang_bank": 8401776175.0,
+    "ekuitas": 90733513354.0,
+    "ekuitas_induk": 90733513354.0,
+    "modal_saham": null,
+    "saldo_laba": 400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6370411230.0,
+    "beban_pokok": 8929069100.0,
+    "laba_kotor": -2558657870.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -8792739552.0,
+    "beban_pajak": -91843655.0,
+    "laba_bersih": -8884583207.0,
+    "laba_induk": -8884583207.0,
+    "eps_basic": -3.41,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -21391552512,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

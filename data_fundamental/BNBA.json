@@ -1,0 +1,95 @@
+{
+  "kode": "BNBA",
+  "nama": "PT Bank Bumi Arta Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 670.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 80.23952095808383,
+    "pb": 0.6971474965190756,
+    "ps": 4.442572220311432,
+    "roe": 0.008684035531110027,
+    "eps": 8.35,
+    "de": 1.3793924380609162,
+    "margin_net": 0.11753234181938413,
+    "current_ratio": null,
+    "roa": 0.003649686109865539,
+    "bv": 961.0591780726093
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 135233316550.0,
+      "2025-Q2": 135276182556.0,
+      "2025-Q3": 135101047409.0,
+      "2026-Q1": 127331718824.0,
+      "2026-Q2": 113247291747.0
+    },
+    "eps": {
+      "2025-Q1": 5.91,
+      "2025-Q2": -0.2,
+      "2025-Q3": -0.44,
+      "2026-Q1": 3.78,
+      "2026-Q2": 4.57
+    },
+    "net_income": {
+      "2025-Q1": 20026732483.0,
+      "2025-Q2": -673176537.0,
+      "2025-Q3": -1511613828.0,
+      "2026-Q1": 12821064868.0,
+      "2026-Q2": 15454749637.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2269959946240,
+    "enterprise_value": 1391925788672,
+    "shares_outstanding": 3388000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4839,
+    "vol_trend": 0.611,
+    "price_chg_20d": -17.28
+  },
+  "neraca": {
+    "aset": 7747464755549.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 804885311317.0,
+    "liabilitas": 4491396260239.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 3256068495310.0,
+    "ekuitas_induk": 3256068495310.0,
+    "modal_saham": null,
+    "saldo_laba": 799691895277.0
+  },
+  "laba_rugi": {
+    "pendapatan": 240579010571.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 36711333405.0,
+    "laba_sebelum_pajak": 36251044185.0,
+    "beban_pajak": -7975229680.0,
+    "laba_bersih": 28275814505.0,
+    "laba_induk": 28275814505.0,
+    "eps_basic": 8.35,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 142623419816.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

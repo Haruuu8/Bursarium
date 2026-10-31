@@ -1,0 +1,89 @@
+{
+  "kode": "DOID",
+  "nama": "PT Buma Internasional Grup Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 150.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.2527807219941078,
+    "ps": 0.0007964079294137424,
+    "roe": -11.59949900841598,
+    "eps": null,
+    "de": 323.19870207630225,
+    "margin_net": -0.07309048660557796,
+    "current_ratio": 0.976128638877099,
+    "roa": -0.035826279277746585,
+    "bv": 593.3996818139337
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 351883250000000.0,
+      "2025-Q2": 378325729000000.0,
+      "2025-Q3": -730207848485782.0
+    },
+    "eps": {
+      "2025-Q1": -0.01,
+      "2025-Q2": -0.0,
+      "2025-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": -67020278000000.0,
+      "2025-Q2": -7187286000000.0,
+      "2025-Q3": 1540364000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1103575384064,
+    "enterprise_value": 1104460644352,
+    "shares_outstanding": 7357169432
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3811,
+    "vol_trend": 0.837,
+    "price_chg_20d": -27.88
+  },
+  "neraca": {
+    "aset": 1413499281.0,
+    "aset_lancar": 493262018.0,
+    "kas": 158459180.0,
+    "piutang_usaha": 204716131.0,
+    "persediaan": 55040411.0,
+    "aset_tetap": 563538274.0,
+    "liabilitas": 1411002148.0,
+    "liabilitas_jangka_pendek": 505324809.0,
+    "liabilitas_jangka_panjang": 905677339.0,
+    "utang_usaha": 204716131.0,
+    "utang_bank": 24500000.0,
+    "ekuitas": 4365742.0,
+    "ekuitas_induk": 4365742.0,
+    "modal_saham": null,
+    "saldo_laba": 100000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 692845572.0,
+    "beban_pokok": 680671465.0,
+    "laba_kotor": 12174107.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -55014884.0,
+    "beban_pajak": 5188625.0,
+    "laba_bersih": -50640420.0,
+    "laba_induk": -50640420.0,
+    "eps_basic": -0.0068831390207950835,
+    "eps_diluted": -0.0068831390207950835
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 94420176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 49194896.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "AMMN",
+  "nama": "PT Amman Mineral Internasional Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Precious Metals & Mining",
+  "harga": 3650.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 45.837453315743296,
+    "ps": 0.48473225953521915,
+    "roe": 0.08635391109793843,
+    "eps": 6327.036699965469,
+    "de": 1.3768520829261433,
+    "margin_net": 0.24260698398468142,
+    "current_ratio": 2.773327230745622,
+    "roa": 0.03608025073118214,
+    "bv": 79.62920572523112
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2124000000000.0,
+      "2025-Q2": 180471000000000.0,
+      "2025-Q3": 362737000000000.0,
+      "2026-Q1": 807912000000000.0,
+      "2026-Q2": -805859590000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": -0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": -138763000000000.0,
+      "2025-Q2": -9957000000000.0,
+      "2025-Q3": -29816000000000.0,
+      "2026-Q1": 160169000000000.0,
+      "2026-Q2": 337760000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 264305308073984,
+    "enterprise_value": 264310458679296,
+    "shares_outstanding": 72412413856
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2442,
+    "vol_trend": 0.664,
+    "price_chg_20d": -13.92
+  },
+  "neraca": {
+    "aset": 13800597.0,
+    "aset_lancar": 3108445.0,
+    "kas": 818937.0,
+    "piutang_usaha": 284275.0,
+    "persediaan": 1490490.0,
+    "aset_tetap": 5540783.0,
+    "liabilitas": 7939126.0,
+    "liabilitas_jangka_pendek": 1120836.0,
+    "liabilitas_jangka_panjang": 6818290.0,
+    "utang_usaha": 284275.0,
+    "utang_bank": 115365.0,
+    "ekuitas": 5766143.0,
+    "ekuitas_induk": 5766143.0,
+    "modal_saham": null,
+    "saldo_laba": 3826406.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2052410.0,
+    "beban_pokok": 1088256.0,
+    "laba_kotor": 964154.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 695075.0,
+    "beban_pajak": -191389.0,
+    "laba_bersih": 497929.0,
+    "laba_induk": 497929.0,
+    "eps_basic": 0.00688,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 931246016,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 20000.0,
+    "dividen_dibayar": null
+  }
+}

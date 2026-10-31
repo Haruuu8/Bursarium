@@ -1,0 +1,95 @@
+{
+  "kode": "ADRO",
+  "nama": "PT Alamtri Resources Indonesia Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 2400.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 14.996996330225068,
+    "ps": 0.11167108992593514,
+    "roe": 0.06712277408428115,
+    "eps": null,
+    "de": 0.5809229416693679,
+    "margin_net": 0.30960367958912854,
+    "current_ratio": 2.9181791610902708,
+    "roa": 0.0396378830583217,
+    "bv": 160.03204556121818
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 381619000000000.0,
+      "2025-Q2": 476071000000000.0,
+      "2025-Q3": -856341822000000.0,
+      "2026-Q1": 470905000000000.0,
+      "2026-Q2": 528337000000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.01
+    },
+    "net_income": {
+      "2025-Q1": 76697000000000.0,
+      "2025-Q2": 98246000000000.0,
+      "2025-Q3": 126647000000000.0,
+      "2026-Q1": 128137000000000.0,
+      "2026-Q2": 181232000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 69121186201600,
+    "enterprise_value": 69122054422528,
+    "shares_outstanding": 28800494200
+  },
+  "akumulasi": {
+    "score": 5.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0444,
+    "vol_trend": 1.056,
+    "price_chg_20d": -4.0
+  },
+  "neraca": {
+    "aset": 7804882.0,
+    "aset_lancar": 2655794.0,
+    "kas": 978223.0,
+    "piutang_usaha": 68630.0,
+    "persediaan": 505126.0,
+    "aset_tetap": 2984332.0,
+    "liabilitas": 2677475.0,
+    "liabilitas_jangka_pendek": 910086.0,
+    "liabilitas_jangka_panjang": 1767389.0,
+    "utang_usaha": 68630.0,
+    "utang_bank": 227307.0,
+    "ekuitas": 4609002.0,
+    "ekuitas_induk": 4609002.0,
+    "modal_saham": null,
+    "saldo_laba": 68588.0
+  },
+  "laba_rugi": {
+    "pendapatan": 999242.0,
+    "beban_pokok": 576558.0,
+    "laba_kotor": 422684.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 415996.0,
+    "beban_pajak": -86801.0,
+    "laba_bersih": 309369.0,
+    "laba_induk": 309369.0,
+    "eps_basic": 0.01074,
+    "eps_diluted": 0.01074
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 218046000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33385.0,
+    "dividen_dibayar": 468662.0
+  }
+}

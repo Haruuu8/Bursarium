@@ -1,0 +1,95 @@
+{
+  "kode": "BATR",
+  "nama": "PT Benteng Api Technic Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 94.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 43.72093023255814,
+    "pb": 1.7370061418019955,
+    "ps": 1.7098071029793436,
+    "roe": 0.03954767833081117,
+    "eps": 2.15,
+    "de": 0.4681817742378862,
+    "margin_net": 0.0782751213298544,
+    "current_ratio": 2.9824679542387154,
+    "roa": 0.02673908211030005,
+    "bv": 54.11610111089362
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 23055078040.0,
+      "2025-Q2": 31447557085.0,
+      "2025-Q3": 50792261906.0,
+      "2026-Q1": 28975339774.0,
+      "2026-Q2": 52390207884.0
+    },
+    "eps": {
+      "2025-Q1": 0.8,
+      "2025-Q2": 0.65,
+      "2025-Q3": 2.09,
+      "2026-Q1": 0.75,
+      "2026-Q2": 1.4
+    },
+    "net_income": {
+      "2025-Q1": 1899222933.0,
+      "2025-Q2": 2402103965.0,
+      "2025-Q3": 6403359068.0,
+      "2026-Q1": 2225404664.0,
+      "2026-Q2": 4143493451.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 279733633024,
+    "enterprise_value": 298486005760,
+    "shares_outstanding": 2975889553
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1654,
+    "vol_trend": 1.937,
+    "price_chg_20d": 4.44
+  },
+  "neraca": {
+    "aset": 238186864034.0,
+    "aset_lancar": 144621540788.0,
+    "kas": 23689223730.0,
+    "piutang_usaha": 29546640808.0,
+    "persediaan": 74841971795.0,
+    "aset_tetap": 86994868242.0,
+    "liabilitas": 75397650261.0,
+    "liabilitas_jangka_pendek": 48490559834.0,
+    "liabilitas_jangka_panjang": 26907090427.0,
+    "utang_usaha": 29546640808.0,
+    "utang_bank": 19384361668.0,
+    "ekuitas": 161043539945.0,
+    "ekuitas_induk": 161043539945.0,
+    "modal_saham": null,
+    "saldo_laba": 12317204623.0
+  },
+  "laba_rugi": {
+    "pendapatan": 81365547658.0,
+    "beban_pokok": 59078003858.0,
+    "laba_kotor": 22287543800.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 7935616377.0,
+    "beban_pajak": -1405670968.0,
+    "laba_bersih": 6368898115.0,
+    "laba_induk": 6368898115.0,
+    "eps_basic": 2.15,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 20909971456,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2240081191.0,
+    "dividen_dibayar": 4228955800.0
+  }
+}

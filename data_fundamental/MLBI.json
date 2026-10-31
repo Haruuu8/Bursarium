@@ -1,0 +1,95 @@
+{
+  "kode": "MLBI",
+  "nama": "PT Multi Bintang Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Beverages - Brewers",
+  "harga": 6150.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 11.72937455646154,
+    "ps": -0.01946010421381731,
+    "roe": 0.47894731125175605,
+    "eps": null,
+    "de": 2.6336417585123177,
+    "margin_net": 0.30766967483834956,
+    "current_ratio": 0.8624953474095127,
+    "roa": 0.1317909837709072,
+    "bv": 524.3246321784528
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 669966000000000.0,
+      "2025-Q2": -668494155000000.0,
+      "2025-Q3": 896666000000.0,
+      "2026-Q1": 758543000000000.0,
+      "2026-Q2": -756823240000000.0
+    },
+    "eps": {
+      "2025-Q1": 92.0,
+      "2025-Q2": 110.0,
+      "2025-Q3": -202.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 194810000000000.0,
+      "2025-Q2": 230940000000000.0,
+      "2025-Q3": 298440000000000.0,
+      "2026-Q1": 228989000000000.0,
+      "2026-Q2": 300129000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 12958050549760,
+    "enterprise_value": 11770224705536,
+    "shares_outstanding": 2107000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2012,
+    "vol_trend": 1.132,
+    "price_chg_20d": -10.22
+  },
+  "neraca": {
+    "aset": 4014827.0,
+    "aset_lancar": 2412252.0,
+    "kas": 1290928.0,
+    "piutang_usaha": 659590.0,
+    "persediaan": 281411.0,
+    "aset_tetap": 1313216.0,
+    "liabilitas": 2909521.0,
+    "liabilitas_jangka_pendek": 2796829.0,
+    "liabilitas_jangka_panjang": 112692.0,
+    "utang_usaha": 659590.0,
+    "utang_bank": 75000.0,
+    "ekuitas": 1104752.0,
+    "ekuitas_induk": 1104752.0,
+    "modal_saham": null,
+    "saldo_laba": 1064087.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1719760.0,
+    "beban_pokok": 652509.0,
+    "laba_kotor": 1067251.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 680666.0,
+    "beban_pajak": -151443.0,
+    "laba_bersih": 529118.0,
+    "laba_induk": 529118.0,
+    "eps_basic": 0.000251,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1421944946688,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 90256.0,
+    "dividen_dibayar": 697280.0
+  }
+}

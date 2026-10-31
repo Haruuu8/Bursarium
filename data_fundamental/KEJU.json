@@ -1,0 +1,95 @@
+{
+  "kode": "KEJU",
+  "nama": "PT Mulia Boga Raya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 575.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 30.617678381256653,
+    "pb": 3.7909889144308706,
+    "ps": 1.9250670498104239,
+    "roe": 0.12365788288615849,
+    "eps": 18.78,
+    "de": 0.5683575434650013,
+    "margin_net": 0.10988652864045978,
+    "current_ratio": 1.7721248373456853,
+    "roa": 0.07884546696728276,
+    "bv": 151.67546331016453
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 368731551639.0,
+      "2025-Q2": 312630169734.0,
+      "2025-Q3": 407408899806.0,
+      "2026-Q1": 475537441996.0,
+      "2026-Q2": 484559772415.0
+    },
+    "eps": {
+      "2025-Q1": 9.88,
+      "2025-Q2": 6.38,
+      "2025-Q3": 10.03,
+      "2026-Q1": 9.9,
+      "2026-Q2": 8.88
+    },
+    "net_income": {
+      "2025-Q1": 55588208572.0,
+      "2025-Q2": 35883043126.0,
+      "2025-Q3": 56402212984.0,
+      "2026-Q1": 55657979124.0,
+      "2026-Q2": 49843770925.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3234374877184,
+    "enterprise_value": 3201716715520,
+    "shares_outstanding": 5624999999
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1468,
+    "vol_trend": 1.548,
+    "price_chg_20d": -0.86
+  },
+  "neraca": {
+    "aset": 1338082633118.0,
+    "aset_lancar": 713052263827.0,
+    "kas": 166673078923.0,
+    "piutang_usaha": 36648182819.0,
+    "persediaan": 316426225845.0,
+    "aset_tetap": 525570724551.0,
+    "liabilitas": 484908152150.0,
+    "liabilitas_jangka_pendek": 402371350370.0,
+    "liabilitas_jangka_panjang": 82536801780.0,
+    "utang_usaha": 36648182819.0,
+    "utang_bank": 20000000000.0,
+    "ekuitas": 853174480968.0,
+    "ekuitas_induk": 853174480968.0,
+    "modal_saham": null,
+    "saldo_laba": 18200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 960097214411.0,
+    "beban_pokok": 708470940719.0,
+    "laba_kotor": 251626273692.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 134312030218.0,
+    "beban_pajak": -28810280169.0,
+    "laba_bersih": 105501750049.0,
+    "laba_induk": 105501750049.0,
+    "eps_basic": 18.78,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 79086166016,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 75356037391.0,
+    "dividen_dibayar": 89873988784.0
+  }
+}

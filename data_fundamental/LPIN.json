@@ -1,0 +1,95 @@
+{
+  "kode": "LPIN",
+  "nama": "PT Multi Prima Sejahtera Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 440.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.0,
+    "pb": 0.541708098170833,
+    "ps": 0.9958999709152979,
+    "roe": 0.049238100572794104,
+    "eps": 40.0,
+    "de": 0.09808601322594242,
+    "margin_net": 0.1684644676243093,
+    "current_ratio": 8.74356199153206,
+    "roa": 0.04393618944199067,
+    "bv": 812.2455645129412
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 39016488543.0,
+      "2025-Q2": 52322417125.0,
+      "2025-Q3": 34552535133.0,
+      "2026-Q1": 42248857815.0,
+      "2026-Q2": 58646051822.0
+    },
+    "eps": {
+      "2025-Q1": 14.0,
+      "2025-Q2": 28.0,
+      "2025-Q3": 15.0,
+      "2026-Q1": 13.0,
+      "2026-Q2": 27.0
+    },
+    "net_income": {
+      "2025-Q1": 6073071275.0,
+      "2025-Q2": 11805660707.0,
+      "2025-Q3": 6515951015.0,
+      "2026-Q1": 5568718500.0,
+      "2026-Q2": 11428488738.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 186999996416,
+    "enterprise_value": 110704508928,
+    "shares_outstanding": 425000000
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2413,
+    "vol_trend": 2.627,
+    "price_chg_20d": 2.8
+  },
+  "neraca": {
+    "aset": 386861206078.0,
+    "aset_lancar": 206968723900.0,
+    "kas": 87548192343.0,
+    "piutang_usaha": 53528865946.0,
+    "persediaan": 45956542741.0,
+    "aset_tetap": 6855863477.0,
+    "liabilitas": 33859719903.0,
+    "liabilitas_jangka_pendek": 23670984903.0,
+    "liabilitas_jangka_panjang": 10188735000.0,
+    "utang_usaha": 53528865946.0,
+    "utang_bank": null,
+    "ekuitas": 345204364918.0,
+    "ekuitas_induk": 345204364918.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 100894909637.0,
+    "beban_pokok": 68896307815.0,
+    "laba_kotor": 31998601822.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 21071308918.0,
+    "beban_pajak": -4074101680.0,
+    "laba_bersih": 16997207238.0,
+    "laba_induk": 16997207238.0,
+    "eps_basic": 40.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 18198587392,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 450000000.0,
+    "dividen_dibayar": 18996390900.0
+  }
+}

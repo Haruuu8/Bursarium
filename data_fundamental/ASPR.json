@@ -1,0 +1,89 @@
+{
+  "kode": "ASPR",
+  "nama": "PT Asia Pramulia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 141.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 82.38706729601459,
+    "pb": 2.157302296837039,
+    "ps": 1.1390897259140222,
+    "roe": 0.01309248142724821,
+    "eps": 1.7114336585545722,
+    "de": 1.0333507707744982,
+    "margin_net": 0.013826074447113191,
+    "current_ratio": 1.2623354017556516,
+    "roa": 0.006370085141699204,
+    "bv": 65.35940753724189
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 59723478400.0,
+      "2026-Q1": 78293741764.0,
+      "2026-Q2": 89556073444.0
+    },
+    "eps": {
+      "2025-Q3": 0.41,
+      "2026-Q1": 1.01,
+      "2026-Q2": -0.15
+    },
+    "net_income": {
+      "2025-Q3": 1366257266.0,
+      "2026-Q1": 2733150934.0,
+      "2026-Q2": -412446893.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 382392008704,
+    "enterprise_value": 456280178688,
+    "shares_outstanding": 2712000000
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2132,
+    "vol_trend": 0.86,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 364312876418.0,
+    "aset_lancar": 165789048750.0,
+    "kas": 36710246408.0,
+    "piutang_usaha": 31252346974.0,
+    "persediaan": 89097679030.0,
+    "aset_tetap": 33226819611.0,
+    "liabilitas": 183166294551.0,
+    "liabilitas_jangka_pendek": 131335181220.0,
+    "liabilitas_jangka_panjang": 51831113331.0,
+    "utang_usaha": 31252346974.0,
+    "utang_bank": 46189864000.0,
+    "ekuitas": 177254713241.0,
+    "ekuitas_induk": 177254713241.0,
+    "modal_saham": null,
+    "saldo_laba": 9500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 167849815208.0,
+    "beban_pokok": 135093523866.0,
+    "laba_kotor": 32756291342.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3578448434.0,
+    "beban_pajak": -850256237.0,
+    "laba_bersih": 2320704041.0,
+    "laba_induk": 2320704041.0,
+    "eps_basic": 0.86,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 23809148928,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33226819611.0,
+    "dividen_dibayar": null
+  }
+}

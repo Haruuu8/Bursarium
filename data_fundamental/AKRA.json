@@ -1,0 +1,98 @@
+{
+  "kode": "AKRA",
+  "nama": "PT AKR Corporindo Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Refining & Marketing",
+  "harga": 1375.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 473.39691026247635,
+    "roe": 0.17357835089521864,
+    "eps": 0.13541905260352122,
+    "de": 1.7570726083533725,
+    "margin_net": 0.047520697674950575,
+    "current_ratio": 1.3092118129388826,
+    "roa": 0.05723933376932133,
+    "bv": 0.6433880790713847
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 10255845950.0,
+      "2025-Q2": 11162027852.0,
+      "2025-Q3": 10977835748.0,
+      "2026-Q1": 12940865115.0,
+      "2026-Q2": 17901983501.0,
+      "2026-Q3": 15688527483.0
+    },
+    "eps": {
+      "2025-Q1": 28.63,
+      "2025-Q2": 31.16,
+      "2025-Q3": 23.71,
+      "2026-Q1": 0.03,
+      "2026-Q2": 0.04,
+      "2026-Q3": 0.04
+    },
+    "net_income": {
+      "2025-Q1": 565208671000000.0,
+      "2025-Q2": -565207490922420.0,
+      "2025-Q3": 470062585.0,
+      "2026-Q1": 656492588000000.0,
+      "2026-Q2": -656491157199631.0,
+      "2026-Q3": 780403087.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 27224682004480,
+    "enterprise_value": 29992975073280,
+    "shares_outstanding": 19799769600
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1524,
+    "vol_trend": 1.488,
+    "price_chg_20d": -5.82
+  },
+  "neraca": {
+    "aset": 38630838453.0,
+    "aset_lancar": 23746249632.0,
+    "kas": 5970606944.0,
+    "piutang_usaha": 10776486498.0,
+    "persediaan": 6061876008.0,
+    "aset_tetap": 7015033038.0,
+    "liabilitas": 22383235029.0,
+    "liabilitas_jangka_pendek": 18137821090.0,
+    "liabilitas_jangka_panjang": 4245413939.0,
+    "utang_usaha": 10776486498.0,
+    "utang_bank": 472351110.0,
+    "ekuitas": 12738935729.0,
+    "ekuitas_induk": 12738935729.0,
+    "modal_saham": null,
+    "saldo_laba": 4318000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 46531376099.0,
+    "beban_pokok": 42921284074.0,
+    "laba_kotor": 3610092025.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2894414069.0,
+    "beban_pajak": -450591529.0,
+    "laba_bersih": 2211203456.0,
+    "laba_induk": 2211203456.0,
+    "eps_basic": 0.11183,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3556820647936,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 629417963.0,
+    "dividen_dibayar": 2010275700.0
+  }
+}

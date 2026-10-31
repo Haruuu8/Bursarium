@@ -1,0 +1,95 @@
+{
+  "kode": "GWSA",
+  "nama": "PT Greenwood Sejahtera Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 122.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.104189044038668,
+    "pb": null,
+    "ps": 14.206879410900072,
+    "roe": 0.00995527486062675,
+    "eps": 9.31,
+    "de": 0.04689356352581448,
+    "margin_net": 2.172418492993906,
+    "current_ratio": 33.318387835310105,
+    "roa": 0.0094320542710139,
+    "bv": 934.6913879474564
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 15347380803.0,
+      "2025-Q2": 16423778214.0,
+      "2025-Q3": 17151424645.0,
+      "2026-Q1": 12228732206.0,
+      "2026-Q2": 21184225563.0
+    },
+    "eps": {
+      "2025-Q1": 3.2,
+      "2025-Q2": 4.48,
+      "2025-Q3": 4.69,
+      "2026-Q1": 4.41,
+      "2026-Q2": 4.9
+    },
+    "net_income": {
+      "2025-Q1": 24926954837.0,
+      "2025-Q2": 35009275576.0,
+      "2025-Q3": 36549671768.0,
+      "2026-Q1": 34384114675.0,
+      "2026-Q2": 38202812688.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 951692689408,
+    "enterprise_value": 1062261161984,
+    "shares_outstanding": 7800760000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1567,
+    "vol_trend": 0.274,
+    "price_chg_20d": -15.86
+  },
+  "neraca": {
+    "aset": 7695770749122.0,
+    "aset_lancar": 1688446997013.0,
+    "kas": 103027387236.0,
+    "piutang_usaha": 528601330.0,
+    "persediaan": 294360019963.0,
+    "aset_tetap": 139750455469.0,
+    "liabilitas": 341915189394.0,
+    "liabilitas_jangka_pendek": 50676131311.0,
+    "liabilitas_jangka_panjang": 291239058083.0,
+    "utang_usaha": 528601330.0,
+    "utang_bank": 11916444460.0,
+    "ekuitas": 7291303191445.0,
+    "ekuitas_induk": 7291303191445.0,
+    "modal_saham": null,
+    "saldo_laba": 70000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 33412957769.0,
+    "beban_pokok": 19809925071.0,
+    "laba_kotor": 13603032698.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 72136501997.0,
+    "beban_pajak": null,
+    "laba_bersih": 72586927363.0,
+    "laba_induk": 72586927363.0,
+    "eps_basic": 9.31,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -131193094144,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 29180100.0,
+    "dividen_dibayar": null
+  }
+}

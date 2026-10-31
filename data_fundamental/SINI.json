@@ -1,0 +1,95 @@
+{
+  "kode": "SINI",
+  "nama": "PT Singaraja Putra Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Lumber & Wood Production",
+  "harga": 8825.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.6505896981800365,
+    "pb": null,
+    "ps": 18.34996696113717,
+    "roe": -5.095328647090135,
+    "eps": 1326.95,
+    "de": -43.721778713930476,
+    "margin_net": 1.6397858764049158,
+    "current_ratio": 0.32484846635598097,
+    "roa": 0.11768382831932223,
+    "bv": -104.16986825945946
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 98178912735.0,
+      "2025-Q2": 88379266972.0,
+      "2025-Q3": 100700471337.0,
+      "2026-Q1": 273935715267.0,
+      "2026-Q2": 115299620368.0
+    },
+    "eps": {
+      "2025-Q1": -23.0,
+      "2025-Q2": -29.0,
+      "2025-Q3": -28.0,
+      "2026-Q1": 6.0,
+      "2026-Q2": 1320.95
+    },
+    "net_income": {
+      "2025-Q1": -11030122514.0,
+      "2025-Q2": -13928993542.0,
+      "2025-Q3": -13363371424.0,
+      "2026-Q1": 2739738340.0,
+      "2026-Q2": 635522867632.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 10612062027776,
+    "enterprise_value": 14239771131904,
+    "shares_outstanding": 1202500000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2485,
+    "vol_trend": 1.782,
+    "price_chg_20d": -44.32
+  },
+  "neraca": {
+    "aset": 5423537074611.0,
+    "aset_lancar": 1318160164549.0,
+    "kas": 336313618627.0,
+    "piutang_usaha": 161460402418.0,
+    "persediaan": 163490384071.0,
+    "aset_tetap": 394456517463.0,
+    "liabilitas": 5476776544261.0,
+    "liabilitas_jangka_pendek": 4057769394252.0,
+    "liabilitas_jangka_panjang": 1419007150009.0,
+    "utang_usaha": 161460402418.0,
+    "utang_bank": 933466239095.0,
+    "ekuitas": -125264266582.0,
+    "ekuitas_induk": -125264266582.0,
+    "modal_saham": null,
+    "saldo_laba": 559991215920.0
+  },
+  "laba_rugi": {
+    "pendapatan": 389235335635.0,
+    "beban_pokok": 315665125309.0,
+    "laba_kotor": 73570210326.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 631406634846.0,
+    "beban_pajak": 921998619.0,
+    "laba_bersih": 638262605972.0,
+    "laba_induk": 638262605972.0,
+    "eps_basic": 1326.95,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 13132260352,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5433907519.0,
+    "dividen_dibayar": null
+  }
+}

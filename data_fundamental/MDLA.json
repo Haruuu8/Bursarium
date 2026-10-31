@@ -1,0 +1,89 @@
+{
+  "kode": "MDLA",
+  "nama": "PT Medela Potentia Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 191.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.0558021559923905,
+    "pb": 0.870381331115036,
+    "ps": 0.1637772572039792,
+    "roe": 0.07185423496543612,
+    "eps": 31.54,
+    "de": 1.1227740468307474,
+    "margin_net": 0.02704122687478468,
+    "current_ratio": 1.7804361290062072,
+    "roa": 0.03345038865029709,
+    "bv": 219.44404500876874
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 3671437000000.0,
+      "2026-Q1": 4032659000000.0,
+      "2026-Q2": 4138346000000.0
+    },
+    "eps": {
+      "2025-Q3": 6.34,
+      "2026-Q1": 8.33,
+      "2026-Q2": 7.44
+    },
+    "net_income": {
+      "2025-Q3": 91678000000000.0,
+      "2026-Q1": 116660000000000.0,
+      "2026-Q2": 104294000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2676449607680,
+    "enterprise_value": 2009590530048,
+    "shares_outstanding": 14012825000
+  },
+  "akumulasi": {
+    "score": 6.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1086,
+    "vol_trend": 0.591,
+    "price_chg_20d": -7.28
+  },
+  "neraca": {
+    "aset": 6605424.0,
+    "aset_lancar": 5996662.0,
+    "kas": 242578.0,
+    "piutang_usaha": 2633972.0,
+    "persediaan": 1886084.0,
+    "aset_tetap": 478305.0,
+    "liabilitas": 3452565.0,
+    "liabilitas_jangka_pendek": 3368086.0,
+    "liabilitas_jangka_panjang": 84479.0,
+    "utang_usaha": 2633972.0,
+    "utang_bank": 1589.0,
+    "ekuitas": 3075031.0,
+    "ekuitas_induk": 3075031.0,
+    "modal_saham": null,
+    "saldo_laba": 56051.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8171005.0,
+    "beban_pokok": 7408773.0,
+    "laba_kotor": 762232.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 291416.0,
+    "beban_pajak": -65778.0,
+    "laba_bersih": 220954.0,
+    "laba_induk": 220954.0,
+    "eps_basic": 15.77,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 123426996224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1037.0,
+    "dividen_dibayar": 176621.0
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "kode": "GPRA",
+  "nama": "PT Perdana Gapuraprima Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 90.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.293706293706293,
+    "pb": 0.2870114810926045,
+    "ps": 0.9487972866211536,
+    "roe": 0.022789918522843417,
+    "eps": 14.3,
+    "de": 0.37221689590504903,
+    "margin_net": 0.15067698877045493,
+    "current_ratio": 6.922390172410433,
+    "roa": 0.015291108098189779,
+    "bv": 313.57630592819885
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 126075729469.0,
+      "2026-Q1": 80953350035.0,
+      "2026-Q2": 121881852841.0
+    },
+    "eps": {
+      "2025-Q3": 7.86,
+      "2026-Q1": 1.49,
+      "2026-Q2": 5.66
+    },
+    "net_income": {
+      "2025-Q3": 31689361015.0,
+      "2026-Q1": 6386688512.0,
+      "2026-Q2": 24175909074.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 384898990080,
+    "enterprise_value": 789028667392,
+    "shares_outstanding": 4276655336
+  },
+  "akumulasi": {
+    "score": 6.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.116,
+    "vol_trend": 0.533,
+    "price_chg_20d": -8.16
+  },
+  "neraca": {
+    "aset": 1998716992238.0,
+    "aset_lancar": 1605525408280.0,
+    "kas": 49965401712.0,
+    "piutang_usaha": 42968002790.0,
+    "persediaan": 689103784823.0,
+    "aset_tetap": 34749170027.0,
+    "liabilitas": 499164364842.0,
+    "liabilitas_jangka_pendek": 231932232696.0,
+    "liabilitas_jangka_panjang": 267232132146.0,
+    "utang_usaha": 42968002790.0,
+    "utang_bank": 54475706000.0,
+    "ekuitas": 1341057781991.0,
+    "ekuitas_induk": 1341057781991.0,
+    "modal_saham": null,
+    "saldo_laba": 34700422490.0
+  },
+  "laba_rugi": {
+    "pendapatan": 202835202876.0,
+    "beban_pokok": 94612516343.0,
+    "laba_kotor": 108222686533.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 30523747176.0,
+    "beban_pajak": null,
+    "laba_bersih": 30562597586.0,
+    "laba_induk": 30562597586.0,
+    "eps_basic": 7.15,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 91978407936,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4399505727.0,
+    "dividen_dibayar": null
+  }
+}

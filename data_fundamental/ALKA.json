@@ -1,0 +1,95 @@
+{
+  "kode": "ALKA",
+  "nama": "PT Alakasa Industrindo Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Aluminum",
+  "harga": 5525.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.006749226108102634,
+    "roe": -0.0011381591609892013,
+    "eps": null,
+    "de": 0.09485982032750176,
+    "margin_net": -0.005427876531274169,
+    "current_ratio": 12.683160395117465,
+    "roa": -0.0010344529713641082,
+    "bv": 2182299.5244755247
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 69442108000000.0,
+      "2025-Q2": 10014546000000.0,
+      "2025-Q3": 28703875000000.0,
+      "2026-Q1": 18594315000000.0,
+      "2026-Q2": 30483441000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 3.0,
+      "2026-Q1": -7.64,
+      "2026-Q2": 8.16
+    },
+    "net_income": {
+      "2025-Q1": -1182868000000.0,
+      "2025-Q2": -515726132000000.0,
+      "2025-Q3": 518516433000000.0,
+      "2026-Q1": -3876565000000.0,
+      "2026-Q2": -262511435000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2804849311744,
+    "enterprise_value": 2783214829568,
+    "shares_outstanding": 107250000
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1956,
+    "vol_trend": 4.099,
+    "price_chg_20d": 20.9
+  },
+  "neraca": {
+    "aset": 257515815.0,
+    "aset_lancar": 246864831.0,
+    "kas": 22896624.0,
+    "piutang_usaha": 69250954.0,
+    "persediaan": 6851800.0,
+    "aset_tetap": 1865357.0,
+    "liabilitas": 22202095.0,
+    "liabilitas_jangka_pendek": 19463984.0,
+    "liabilitas_jangka_panjang": 2738111.0,
+    "utang_usaha": 69250954.0,
+    "utang_bank": null,
+    "ekuitas": 234051624.0,
+    "ekuitas_induk": 234051624.0,
+    "modal_saham": null,
+    "saldo_laba": 1536285.0
+  },
+  "laba_rugi": {
+    "pendapatan": 49077756.0,
+    "beban_pokok": 37967556.0,
+    "laba_kotor": 11110200.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -137649.0,
+    "beban_pajak": null,
+    "laba_bersih": -266388.0,
+    "laba_induk": -266388.0,
+    "eps_basic": 0.52,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 10874823680,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2917.0,
+    "dividen_dibayar": null
+  }
+}

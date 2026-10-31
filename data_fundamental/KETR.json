@@ -1,0 +1,95 @@
+{
+  "kode": "KETR",
+  "nama": "PT Ketrosden Triasmitra",
+  "sektor": "Technology",
+  "industri": "Communication Equipment",
+  "harga": 470.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 21.57943067033976,
+    "pb": 1.0881195623249527,
+    "ps": 1.5134679229983337,
+    "roe": 0.0504282417348391,
+    "eps": 21.78,
+    "de": 0.9105769115724923,
+    "margin_net": 0.15834162996549425,
+    "current_ratio": 2.682697895521251,
+    "roa": 0.026369879233770627,
+    "bv": 431.9378276737944
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 115573910594.0,
+      "2025-Q2": 401845235613.0,
+      "2025-Q3": 89643803037.0,
+      "2026-Q1": 229808826211.0,
+      "2026-Q2": 161042298130.0
+    },
+    "eps": {
+      "2025-Q1": 5.89,
+      "2025-Q2": 39.0,
+      "2025-Q3": 2.49,
+      "2026-Q1": 15.95,
+      "2026-Q2": 5.83
+    },
+    "net_income": {
+      "2025-Q1": 16739067293.0,
+      "2025-Q2": 110797988541.0,
+      "2025-Q3": 7092262327.0,
+      "2026-Q1": 45314503278.0,
+      "2026-Q2": 16573500824.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1335393517568,
+    "enterprise_value": 1804616204288,
+    "shares_outstanding": 2841262838
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2802,
+    "vol_trend": 0.954,
+    "price_chg_20d": -49.73
+  },
+  "neraca": {
+    "aset": 2346920270410.0,
+    "aset_lancar": 1604955590655.0,
+    "kas": 196719317338.0,
+    "piutang_usaha": 431962383061.0,
+    "persediaan": 852228185498.0,
+    "aset_tetap": 686970312390.0,
+    "liabilitas": 1117504511359.0,
+    "liabilitas_jangka_pendek": 598261769741.0,
+    "liabilitas_jangka_panjang": 519242741618.0,
+    "utang_usaha": 431962383061.0,
+    "utang_bank": 30106891558.0,
+    "ekuitas": 1227248898096.0,
+    "ekuitas_induk": 1227248898096.0,
+    "modal_saham": null,
+    "saldo_laba": 823162104688.0
+  },
+  "laba_rugi": {
+    "pendapatan": 390851124341.0,
+    "beban_pokok": 215215506846.0,
+    "laba_kotor": 175635617495.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 73673175105.0,
+    "beban_pajak": -11784154949.0,
+    "laba_bersih": 61888004102.0,
+    "laba_induk": 61888004102.0,
+    "eps_basic": 21.78,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 152372543488,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12500000000.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "VOKS",
+  "nama": "PT Voksel Electric Tbk",
+  "sektor": "Industrials",
+  "industri": "Electrical Equipment & Parts",
+  "harga": 204.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.5105187526181312,
+    "ps": 0.3688800051750896,
+    "roe": -0.030377376954610468,
+    "eps": -3.6470435152377703,
+    "de": 3.309737331667167,
+    "margin_net": -0.014418687766613756,
+    "current_ratio": 1.0322302158224022,
+    "roa": -0.007048536427356013,
+    "bv": 135.05294101540525
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 500470833824.0,
+      "2025-Q2": 629492543767.0,
+      "2025-Q3": 486266094418.0,
+      "2026-Q1": 539739863040.0,
+      "2026-Q2": 642655146267.0
+    },
+    "eps": {
+      "2025-Q1": -4.87,
+      "2025-Q2": -1.17,
+      "2025-Q3": 1.63,
+      "2026-Q1": -2.43,
+      "2026-Q2": -1.67
+    },
+    "net_income": {
+      "2025-Q1": -20254933051.0,
+      "2025-Q2": -4868601771.0,
+      "2025-Q3": 6761522731.0,
+      "2026-Q1": -10095983276.0,
+      "2026-Q2": -6952601180.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 847742959616,
+    "enterprise_value": 1554918932480,
+    "shares_outstanding": 4155602595
+  },
+  "akumulasi": {
+    "score": 3.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.051,
+    "vol_trend": 0.113,
+    "price_chg_20d": -22.14
+  },
+  "neraca": {
+    "aset": 2418741058049.0,
+    "aset_lancar": 1896757172899.0,
+    "kas": 416026501594.0,
+    "piutang_usaha": 532442788852.0,
+    "persediaan": 574963446026.0,
+    "aset_tetap": 424245090498.0,
+    "liabilitas": 1857511809213.0,
+    "liabilitas_jangka_pendek": 1837533084989.0,
+    "liabilitas_jangka_panjang": 19978724224.0,
+    "utang_usaha": 532442788852.0,
+    "utang_bank": 860171020246.0,
+    "ekuitas": 561226352146.0,
+    "ekuitas_induk": 561226352146.0,
+    "modal_saham": null,
+    "saldo_laba": 6000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1182395009307.0,
+    "beban_pokok": 1115672674250.0,
+    "laba_kotor": 66722335057.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -21058553982.0,
+    "beban_pajak": 2656481673.0,
+    "laba_bersih": -17048584456.0,
+    "laba_induk": -17048584456.0,
+    "eps_basic": -4.10255,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -262634225664,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 48337785707.0,
+    "dividen_dibayar": null
+  }
+}

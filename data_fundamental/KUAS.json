@@ -1,0 +1,98 @@
+{
+  "kode": "KUAS",
+  "nama": "PT Ace Oldfields Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 63.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 17.027027027027025,
+    "pb": 0.4688116816747551,
+    "ps": 0.46843726694299714,
+    "roe": 0.02753944262494093,
+    "eps": 3.7,
+    "de": 0.8113778840711208,
+    "margin_net": 0.035237179054669276,
+    "current_ratio": 1.909129643503157,
+    "roa": 0.015203587758864146,
+    "bv": 134.3823169570829
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 28737858424.0,
+      "2025-Q2": 59829222855.0,
+      "2025-Q3": 38091160974.0,
+      "2026-Q1": 26044222396.0,
+      "2026-Q2": 60950940561.0,
+      "2026-Q3": 48783090818.0
+    },
+    "eps": {
+      "2025-Q1": 0.69,
+      "2025-Q2": 1.99,
+      "2025-Q3": 0.38,
+      "2026-Q1": 0.07,
+      "2026-Q2": 1.49,
+      "2026-Q3": 2.14
+    },
+    "net_income": {
+      "2025-Q1": 895970267000000.0,
+      "2025-Q2": -895966806896781.0,
+      "2025-Q3": 495552685.0,
+      "2026-Q1": 89224355000000.0,
+      "2026-Q2": -89222337549798.0,
+      "2026-Q3": 2766992438.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 81446912000,
+    "enterprise_value": 150848503808,
+    "shares_outstanding": 1292808150
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5143,
+    "vol_trend": 0.394,
+    "price_chg_20d": -26.74
+  },
+  "neraca": {
+    "aset": 314691684350.0,
+    "aset_lancar": 188286645349.0,
+    "kas": 53521557494.0,
+    "piutang_usaha": 45050287943.0,
+    "persediaan": 81378560135.0,
+    "aset_tetap": 123117178908.0,
+    "liabilitas": 140961129772.0,
+    "liabilitas_jangka_pendek": 98624337006.0,
+    "liabilitas_jangka_panjang": 42336792766.0,
+    "utang_usaha": 45050287943.0,
+    "utang_bank": 83199401313.0,
+    "ekuitas": 173730554578.0,
+    "ekuitas_induk": 173730554578.0,
+    "modal_saham": null,
+    "saldo_laba": 1400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 135778253775.0,
+    "beban_pokok": 99336452765.0,
+    "laba_kotor": 36441801010.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6522607855.0,
+    "beban_pajak": -1738165215.0,
+    "laba_bersih": 4784442640.0,
+    "laba_induk": 4784442640.0,
+    "eps_basic": 3.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 25192087552,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15688516286.0,
+    "dividen_dibayar": 1939212225.0
+  }
+}

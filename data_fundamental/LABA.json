@@ -1,0 +1,92 @@
+{
+  "kode": "LABA",
+  "nama": "PT Green Power Group Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Steel",
+  "harga": 90.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": 15.0,
+    "pb": 1.0688314669784909,
+    "ps": 2.8649121936385558,
+    "roe": 0.04877427547920687,
+    "eps": 6.0,
+    "de": 0.6725850225398065,
+    "margin_net": 1.348029355899911,
+    "current_ratio": 4.1690016446901295,
+    "roa": 0.028874328812379224,
+    "bv": 84.20410773872842
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8743412670.0,
+      "2025-Q2": 7254821375.0,
+      "2025-Q3": 15302990266.0,
+      "2026-Q1": 3361698340.0
+    },
+    "eps": {
+      "2025-Q1": 2.0,
+      "2025-Q2": -1.0,
+      "2025-Q3": 1.0,
+      "2026-Q1": 6.0
+    },
+    "net_income": {
+      "2025-Q1": -1040286452.0,
+      "2025-Q2": 2694567709.0,
+      "2025-Q3": 1831655370.0,
+      "2026-Q1": 4531668048.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 99306225664,
+    "enterprise_value": 44643835904,
+    "shares_outstanding": 1103402553
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2674,
+    "vol_trend": 0.245,
+    "price_chg_20d": -16.67
+  },
+  "neraca": {
+    "aset": 156944532891.0,
+    "aset_lancar": 91516639639.0,
+    "kas": 1457798455.0,
+    "piutang_usaha": 17619570420.0,
+    "persediaan": 8388225365.0,
+    "aset_tetap": 35124805072.0,
+    "liabilitas": 62490565493.0,
+    "liabilitas_jangka_pendek": 21951691901.0,
+    "liabilitas_jangka_panjang": 40538873592.0,
+    "utang_usaha": 17619570420.0,
+    "utang_bank": 645527965.0,
+    "ekuitas": 92911027452.0,
+    "ekuitas_induk": 92911027452.0,
+    "modal_saham": null,
+    "saldo_laba": 300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3361698340.0,
+    "beban_pokok": 1299122363.0,
+    "laba_kotor": 2062575977.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6074607994.0,
+    "beban_pajak": null,
+    "laba_bersih": 4531668048.0,
+    "laba_induk": 4531668048.0,
+    "eps_basic": 6.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -11866198016,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 79986800.0,
+    "dividen_dibayar": null
+  }
+}

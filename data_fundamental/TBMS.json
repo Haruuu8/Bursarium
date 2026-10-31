@@ -1,0 +1,93 @@
+{
+  "kode": "TBMS",
+  "nama": "PT Tembaga Mulia Semanan Tbk",
+  "sektor": "Industrials",
+  "industri": "Metal Fabrication",
+  "harga": 1065.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0008073756118775957,
+    "roe": 0.04340755694512925,
+    "eps": null,
+    "de": 1.6278159328806765,
+    "margin_net": 0.00636892994447415,
+    "current_ratio": 1.4866566627993798,
+    "roa": 0.016518492182800954,
+    "bv": 104822.05722219197
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 214260121000000.0,
+      "2025-Q2": 216490889000000.0,
+      "2025-Q3": 227749551000000.0,
+      "2026-Q1": 265868036000000.0,
+      "2026-Q2": 258999568000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.01,
+      "2026-Q1": 0.01
+    },
+    "net_income": {
+      "2025-Q1": 712223000000000.0,
+      "2025-Q2": -709086469000000.0,
+      "2025-Q3": 2081039000000.0,
+      "2026-Q1": 3598393000000.0,
+      "2026-Q2": -255548000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 782434172928,
+    "enterprise_value": 782494859264,
+    "shares_outstanding": 734680000
+  },
+  "akumulasi": {
+    "score": 3.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.037,
+    "vol_trend": 0.495,
+    "price_chg_20d": -11.25
+  },
+  "neraca": {
+    "aset": 202369863.0,
+    "aset_lancar": 186158514.0,
+    "kas": 15627585.0,
+    "piutang_usaha": 107207638.0,
+    "persediaan": 41288577.0,
+    "aset_tetap": 6523856.0,
+    "liabilitas": 125359194.0,
+    "liabilitas_jangka_pendek": 125219574.0,
+    "liabilitas_jangka_panjang": 139620.0,
+    "utang_usaha": 107207638.0,
+    "utang_bank": 62346371.0,
+    "ekuitas": 77010669.0,
+    "ekuitas_induk": 77010669.0,
+    "modal_saham": null,
+    "saldo_laba": 40654247.0
+  },
+  "laba_rugi": {
+    "pendapatan": 524867604.0,
+    "beban_pokok": 515238487.0,
+    "laba_kotor": 9629117.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4074792.0,
+    "beban_pajak": -731947.0,
+    "laba_bersih": 3342845.0,
+    "laba_induk": 3342845.0,
+    "eps_basic": 0.005,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -60497904,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32714.0,
+    "dividen_dibayar": null
+  }
+}

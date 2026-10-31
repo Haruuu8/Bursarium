@@ -1,0 +1,95 @@
+{
+  "kode": "DMMX",
+  "nama": "PT Digital Mediatama Maxima Tbk",
+  "sektor": "Communication Services",
+  "industri": "Advertising Agencies",
+  "harga": 128.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 83.11688311688312,
+    "pb": 1.3698200403990501,
+    "ps": 2.1930817556537985,
+    "roe": -0.016485264253151933,
+    "eps": 1.54,
+    "de": 0.31457784043642517,
+    "margin_net": -0.09133091279988793,
+    "current_ratio": 2.7255556910624117,
+    "roa": -0.012509928277644399,
+    "bv": 93.44293135229033
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 190753362041.0,
+      "2025-Q2": 155001606155.0,
+      "2025-Q3": 146256771689.0,
+      "2026-Q1": 75158986967.0,
+      "2026-Q2": 47282163583.0
+    },
+    "eps": {
+      "2025-Q1": 1.33,
+      "2025-Q2": 1.18,
+      "2025-Q3": 1.44,
+      "2026-Q1": 0.09,
+      "2026-Q2": 1.45
+    },
+    "net_income": {
+      "2025-Q1": 9674328746.0,
+      "2025-Q2": 8518766761.0,
+      "2025-Q3": 10465095713.0,
+      "2026-Q1": 624087009000000.0,
+      "2026-Q2": -624098191662044.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 929207681024,
+    "enterprise_value": 903325286400,
+    "shares_outstanding": 7259435200
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6726,
+    "vol_trend": 1.342,
+    "price_chg_20d": -25.58
+  },
+  "neraca": {
+    "aset": 893902970170.0,
+    "aset_lancar": 525028013832.0,
+    "kas": 62832768851.0,
+    "piutang_usaha": 97447839966.0,
+    "persediaan": 188875951405.0,
+    "aset_tetap": 173451107460.0,
+    "liabilitas": 213391646146.0,
+    "liabilitas_jangka_pendek": 192631548698.0,
+    "liabilitas_jangka_panjang": 20760097448.0,
+    "utang_usaha": 97447839966.0,
+    "utang_bank": 33866000004.0,
+    "ekuitas": 678342905050.0,
+    "ekuitas_induk": 678342905050.0,
+    "modal_saham": null,
+    "saldo_laba": 500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 122441150550.0,
+    "beban_pokok": 84669971449.0,
+    "laba_kotor": 37771179101.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9234044876.0,
+    "beban_pajak": -3259112701.0,
+    "laba_bersih": -11182662044.0,
+    "laba_induk": -11182662044.0,
+    "eps_basic": 1.54,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -37917609984,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 36987241576.0,
+    "dividen_dibayar": null
+  }
+}

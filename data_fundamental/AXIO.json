@@ -1,0 +1,98 @@
+{
+  "kode": "AXIO",
+  "nama": "PT Tera Data Indonusa Tbk",
+  "sektor": "Technology",
+  "industri": "Computer Hardware",
+  "harga": 119.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 11.376673040152962,
+    "pb": 1.2633385720338033,
+    "ps": 0.37875549103578643,
+    "roe": 0.11094219364905489,
+    "eps": 10.46,
+    "de": 1.532995013504496,
+    "margin_net": 0.04492087091146334,
+    "current_ratio": 1.3778099650208682,
+    "roa": 0.04305653672722144,
+    "bv": 94.19486005911003
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 280781775109.0,
+      "2025-Q2": 336724970665.0,
+      "2025-Q3": 476270914538.0,
+      "2026-Q1": 351248410699.0,
+      "2026-Q2": 377883791647.0,
+      "2026-Q3": 629487914265.0
+    },
+    "eps": {
+      "2025-Q1": 1.34,
+      "2025-Q2": 1.12,
+      "2025-Q3": 3.23,
+      "2026-Q1": 1.62,
+      "2026-Q2": 2.1,
+      "2026-Q3": 6.74
+    },
+    "net_income": {
+      "2025-Q1": 7733344423.0,
+      "2025-Q2": 6632204524.0,
+      "2025-Q3": 18868791641.0,
+      "2026-Q1": 9447080876.0,
+      "2026-Q2": 12259709057.0,
+      "2026-Q3": 39323608943.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 694975070208,
+    "enterprise_value": 1110886449152,
+    "shares_outstanding": 5840126500
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.2793,
+    "vol_trend": 3.722,
+    "price_chg_20d": 7.21
+  },
+  "neraca": {
+    "aset": 1417447930442.0,
+    "aset_lancar": 1033260846823.0,
+    "kas": 11148545840.0,
+    "piutang_usaha": 194575446721.0,
+    "persediaan": 739089006670.0,
+    "aset_tetap": 297502699972.0,
+    "liabilitas": 843315731119.0,
+    "liabilitas_jangka_pendek": 749929869180.0,
+    "liabilitas_jangka_panjang": 93385861939.0,
+    "utang_usaha": 194575446721.0,
+    "utang_bank": 287843905325.0,
+    "ekuitas": 550109898395.0,
+    "ekuitas_induk": 550109898395.0,
+    "modal_saham": null,
+    "saldo_laba": 29200632500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1358620116611.0,
+    "beban_pokok": 1133631027551.0,
+    "laba_kotor": 224989089060.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 77831605575.0,
+    "beban_pajak": -16754223234.0,
+    "laba_bersih": 61030398876.0,
+    "laba_induk": 61030398876.0,
+    "eps_basic": 10.46,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -92614000640,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 30871768491.0,
+    "dividen_dibayar": 23360506000.0
+  }
+}

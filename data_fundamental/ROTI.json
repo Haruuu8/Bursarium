@@ -1,0 +1,95 @@
+{
+  "kode": "ROTI",
+  "nama": "PT Nippon Indosari Corpindo Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 500.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 23.908591762817352,
+    "pb": 1.7621597150789887,
+    "ps": 0.7691143806315394,
+    "roe": 0.0024950177525160646,
+    "eps": 20.91298412554771,
+    "de": 1.1758959088820329,
+    "margin_net": 0.0022459416338596757,
+    "current_ratio": 0.8590483818873292,
+    "roa": 0.001146653815671635,
+    "bv": 283.7427253168068
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 859636763985.0,
+      "2025-Q2": 911399270889.0,
+      "2025-Q3": 971435679429.0,
+      "2026-Q1": 870965608371.0,
+      "2026-Q2": 901231533796.0
+    },
+    "eps": {
+      "2025-Q1": 4.09,
+      "2025-Q2": 8.63,
+      "2025-Q3": 11.5,
+      "2026-Q1": 0.39,
+      "2026-Q2": 0.32
+    },
+    "net_income": {
+      "2025-Q1": 23101354731.0,
+      "2025-Q2": 48699150546.0,
+      "2025-Q3": 64899156139.0,
+      "2026-Q1": 2215816664.0,
+      "2026-Q2": 1764434681.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2811137884160,
+    "enterprise_value": 3637501755392,
+    "shares_outstanding": 5622275488
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4318,
+    "vol_trend": 1.108,
+    "price_chg_20d": -10.71
+  },
+  "neraca": {
+    "aset": 3471188331300.0,
+    "aset_lancar": 929843673166.0,
+    "kas": 168660100381.0,
+    "piutang_usaha": 250404038191.0,
+    "persediaan": 219435988376.0,
+    "aset_tetap": 2334258359619.0,
+    "liabilitas": 1875882954415.0,
+    "liabilitas_jangka_pendek": 1082411296932.0,
+    "liabilitas_jangka_panjang": 793471657483.0,
+    "utang_usaha": 250404038191.0,
+    "utang_bank": 526875000000.0,
+    "ekuitas": 1595279769447.0,
+    "ekuitas_induk": 1595279769447.0,
+    "modal_saham": null,
+    "saldo_laba": 26000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1772197142167.0,
+    "beban_pokok": 861224752949.0,
+    "laba_kotor": 910972389218.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6786187283.0,
+    "beban_pajak": -3187915524.0,
+    "laba_bersih": 3980251345.0,
+    "laba_induk": 3980251345.0,
+    "eps_basic": 0.71,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 472600051712,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11363807963.0,
+    "dividen_dibayar": 450006930060.0
+  }
+}

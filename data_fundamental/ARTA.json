@@ -1,0 +1,95 @@
+{
+  "kode": "ARTA",
+  "nama": "PT Arthavest Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 2620.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 220.53872053872053,
+    "pb": 8.108952570605897,
+    "ps": 19.419352939767876,
+    "roe": -0.03678243915058558,
+    "eps": 11.88,
+    "de": 0.04453119133193236,
+    "margin_net": -0.2009845482885014,
+    "current_ratio": 2.7259229904563704,
+    "roa": -0.021036643153835622,
+    "bv": 323.0996823803391
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 13524394764.0,
+      "2025-Q2": 14884242802.0,
+      "2025-Q3": 18967437824.0,
+      "2026-Q1": 11203785846.0,
+      "2026-Q2": 15208453862.0
+    },
+    "eps": {
+      "2025-Q1": -12.64,
+      "2025-Q2": -3.43,
+      "2025-Q3": -1.61,
+      "2026-Q1": -7.3,
+      "2026-Q2": 19.18
+    },
+    "net_income": {
+      "2025-Q1": -5644951632.0,
+      "2025-Q2": -1535131715.0,
+      "2025-Q3": -718686487.0,
+      "2026-Q1": -3262628463.0,
+      "2026-Q2": -2045823604.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1170286313472,
+    "enterprise_value": 1263244410880,
+    "shares_outstanding": 446674175
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.6877,
+    "vol_trend": 14.384,
+    "price_chg_20d": 36.46
+  },
+  "neraca": {
+    "aset": 252343115210.0,
+    "aset_lancar": 14377082115.0,
+    "kas": 8637989452.0,
+    "piutang_usaha": 1408542921.0,
+    "persediaan": 1383819234.0,
+    "aset_tetap": 809500549.0,
+    "liabilitas": 6426754183.0,
+    "liabilitas_jangka_pendek": 5274206999.0,
+    "liabilitas_jangka_panjang": 1152547184.0,
+    "utang_usaha": 1408542921.0,
+    "utang_bank": null,
+    "ekuitas": 144320284070.0,
+    "ekuitas_induk": 144320284070.0,
+    "modal_saham": null,
+    "saldo_laba": 900000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 26412239708.0,
+    "beban_pokok": 8542438150.0,
+    "laba_kotor": 17869801558.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9951067169.0,
+    "beban_pajak": 29650778.0,
+    "laba_bersih": -5308452067.0,
+    "laba_induk": -5308452067.0,
+    "eps_basic": 11.88,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 5264062464,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 809500549.0,
+    "dividen_dibayar": 5342617000.0
+  }
+}

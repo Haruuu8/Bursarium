@@ -1,0 +1,95 @@
+{
+  "kode": "BLUE",
+  "nama": "PT Berkah Prima Perkasa Tbk",
+  "sektor": "Technology",
+  "industri": "Electronics & Computer Distribution",
+  "harga": 2190.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 104.28571428571429,
+    "pb": 9.541465924950746,
+    "ps": 6.000272011203772,
+    "roe": 0.09162079819735815,
+    "eps": 21.0,
+    "de": 0.06713030656449523,
+    "margin_net": 0.12496100380942575,
+    "current_ratio": 14.18793090797515,
+    "roa": 0.08585717942199664,
+    "bv": 229.52447949043062
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 27774019675.0,
+      "2025-Q2": 38649634930.0,
+      "2025-Q3": 43569805159.0,
+      "2026-Q1": 35319996777.0,
+      "2026-Q2": 35023646656.0
+    },
+    "eps": {
+      "2025-Q1": 8.0,
+      "2025-Q2": 12.0,
+      "2025-Q3": 18.0,
+      "2026-Q1": 11.0,
+      "2026-Q2": 10.0
+    },
+    "net_income": {
+      "2025-Q1": 3540108910.0,
+      "2025-Q2": 5020408340.0,
+      "2025-Q3": 7449016846.0,
+      "2026-Q1": 4544407115.0,
+      "2026-Q2": 4245805180.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 915420020736,
+    "enterprise_value": 911274409984,
+    "shares_outstanding": 418000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1644,
+    "vol_trend": 1.542,
+    "price_chg_20d": -34.63
+  },
+  "neraca": {
+    "aset": 102381796772.0,
+    "aset_lancar": 59380954302.0,
+    "kas": 4145583754.0,
+    "piutang_usaha": 12277061119.0,
+    "persediaan": 27630012803.0,
+    "aset_tetap": 42314710653.0,
+    "liabilitas": 6440564345.0,
+    "liabilitas_jangka_pendek": 4185314595.0,
+    "liabilitas_jangka_panjang": 2255249750.0,
+    "utang_usaha": 12277061119.0,
+    "utang_bank": null,
+    "ekuitas": 95941232427.0,
+    "ekuitas_induk": 95941232427.0,
+    "modal_saham": null,
+    "saldo_laba": 300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 70343643433.0,
+    "beban_pokok": 46282582475.0,
+    "laba_kotor": 24061060958.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8790212295.0,
+    "beban_pajak": null,
+    "laba_bersih": 8790212295.0,
+    "laba_induk": 8790212295.0,
+    "eps_basic": 21.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 19963795456,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 40844438.0,
+    "dividen_dibayar": 14212000000.0
+  }
+}

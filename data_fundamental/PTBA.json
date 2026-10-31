@@ -1,0 +1,95 @@
+{
+  "kode": "PTBA",
+  "nama": "PT Bukit Asam (Persero) Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 3240.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 14.08695652173913,
+    "pb": 1.4788921065139564,
+    "ps": 0.8596020099744339,
+    "roe": 0.10504638271877535,
+    "eps": 230.0,
+    "de": 0.9023964966290718,
+    "margin_net": 0.12029739011447346,
+    "current_ratio": 1.2062172868946184,
+    "roa": 0.055088681397373294,
+    "bv": 2190.829192832279
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 9958441000000.0,
+      "2025-Q2": 10493950000000.0,
+      "2025-Q3": 10877905000000.0,
+      "2026-Q1": 9929722000000.0,
+      "2026-Q2": 12098179000000.0
+    },
+    "eps": {
+      "2025-Q1": 34.0,
+      "2025-Q2": 38.0,
+      "2025-Q3": 49.0,
+      "2026-Q1": 70.0,
+      "2026-Q2": 160.0
+    },
+    "net_income": {
+      "2025-Q1": 391479000000000.0,
+      "2025-Q2": 441565000000000.0,
+      "2025-Q3": -831649974000000.0,
+      "2026-Q1": 801794000000000.0,
+      "2026-Q2": -799144101000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 37306517946368,
+    "enterprise_value": 33101975650304,
+    "shares_outstanding": 11514357250
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1588,
+    "vol_trend": 1.242,
+    "price_chg_20d": 1.89
+  },
+  "neraca": {
+    "aset": 48102422.0,
+    "aset_lancar": 16530448.0,
+    "kas": 6875929.0,
+    "piutang_usaha": 1797983.0,
+    "persediaan": 4186041.0,
+    "aset_tetap": 11538725.0,
+    "liabilitas": 22763845.0,
+    "liabilitas_jangka_pendek": 13704370.0,
+    "liabilitas_jangka_panjang": 9059475.0,
+    "utang_usaha": 1797983.0,
+    "utang_bank": 55461.0,
+    "ekuitas": 25225990.0,
+    "ekuitas_induk": 25225990.0,
+    "modal_saham": null,
+    "saldo_laba": 15341877.0
+  },
+  "laba_rugi": {
+    "pendapatan": 22027901.0,
+    "beban_pokok": 17780740.0,
+    "laba_kotor": 4247161.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3271733.0,
+    "beban_pajak": -628376.0,
+    "laba_bersih": 2649899.0,
+    "laba_induk": 2649899.0,
+    "eps_basic": 230.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 8662679027712,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1147044.0,
+    "dividen_dibayar": null
+  }
+}

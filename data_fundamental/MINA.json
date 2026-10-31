@@ -1,0 +1,95 @@
+{
+  "kode": "MINA",
+  "nama": "PT Sanurhasta Mitra Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 130.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 5.107988455983459,
+    "ps": 125.25757110459925,
+    "roe": 0.000993194958263144,
+    "eps": null,
+    "de": 0.012133664143765849,
+    "margin_net": 0.06040939869388528,
+    "current_ratio": 135.29903424480105,
+    "roa": 0.0009809628852455333,
+    "bv": 25.450331597307937
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1386495368.0,
+      "2025-Q2": 2480133942.0,
+      "2025-Q3": 3617388130.0,
+      "2026-Q1": 1873401133.0,
+      "2026-Q2": 2245525100.0
+    },
+    "eps": {
+      "2025-Q1": -0.21,
+      "2025-Q2": -0.08,
+      "2025-Q3": -0.1,
+      "2026-Q1": -0.0,
+      "2026-Q2": 0.03
+    },
+    "net_income": {
+      "2025-Q1": -1375426531.0,
+      "2025-Q2": -532705925.0,
+      "2025-Q3": -1889986405.0,
+      "2026-Q1": -63991348000000.0,
+      "2026-Q2": 312813205000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1279687524352,
+    "enterprise_value": 1124693835776,
+    "shares_outstanding": 9843750000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1957,
+    "vol_trend": 1.282,
+    "price_chg_20d": -36.89
+  },
+  "neraca": {
+    "aset": 253650633212.0,
+    "aset_lancar": 177207858012.0,
+    "kas": 153299169511.0,
+    "piutang_usaha": 231965185.0,
+    "persediaan": 23560803688.0,
+    "aset_tetap": 8496473569.0,
+    "liabilitas": 3039806857.0,
+    "liabilitas_jangka_pendek": 1309749615.0,
+    "liabilitas_jangka_panjang": 1730057242.0,
+    "utang_usaha": 231965185.0,
+    "utang_bank": null,
+    "ekuitas": 250526701661.0,
+    "ekuitas_induk": 250526701661.0,
+    "modal_saham": null,
+    "saldo_laba": -37202319746.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4118926233.0,
+    "beban_pokok": 1512942688.0,
+    "laba_kotor": 2605983545.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 227454871.0,
+    "beban_pajak": 21367013.0,
+    "laba_bersih": 248821857.0,
+    "laba_induk": 248821857.0,
+    "eps_basic": 0.03,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3297336576,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 824410000.0,
+    "dividen_dibayar": null
+  }
+}

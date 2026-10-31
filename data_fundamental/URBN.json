@@ -1,0 +1,92 @@
+{
+  "kode": "URBN",
+  "nama": "PT Urban Jakarta Propertindo Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 204.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7381919741370288,
+    "ps": 80.49673105635263,
+    "roe": -0.013798523907086,
+    "eps": null,
+    "de": 2.7552736471871135,
+    "margin_net": -8.486832569398246,
+    "current_ratio": 1.00864524903054,
+    "roa": -0.002828516037887238,
+    "bv": 276.3508777489526
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 17135316286.0,
+      "2025-Q2": -10631102091.0,
+      "2026-Q1": 672621554000000.0,
+      "2026-Q2": -672620152327680.0
+    },
+    "eps": {
+      "2025-Q1": 0.25,
+      "2025-Q2": 0.05,
+      "2026-Q1": -1.75,
+      "2026-Q2": -1.93
+    },
+    "net_income": {
+      "2025-Q1": 821329461000000.0,
+      "2025-Q2": -1800930747000000.0,
+      "2026-Q1": -5667430949.0,
+      "2026-Q2": -6228327348.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 636398010368,
+    "enterprise_value": 2453651062784,
+    "shares_outstanding": 3119598140
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4429,
+    "vol_trend": 1.301,
+    "price_chg_20d": -29.66
+  },
+  "neraca": {
+    "aset": 4205653472584.0,
+    "aset_lancar": 2379095918975.0,
+    "kas": 9036244731.0,
+    "piutang_usaha": 63586167.0,
+    "persediaan": 774415122818.0,
+    "aset_tetap": 19631885187.0,
+    "liabilitas": 2375331562255.0,
+    "liabilitas_jangka_pendek": 2358704332630.0,
+    "liabilitas_jangka_panjang": 16627229625.0,
+    "utang_usaha": 63586167.0,
+    "utang_bank": 492000000000.0,
+    "ekuitas": 862103684213.0,
+    "ekuitas_induk": 862103684213.0,
+    "modal_saham": null,
+    "saldo_laba": -35541555008.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1401672320.0,
+    "beban_pokok": 477243795.0,
+    "laba_kotor": 924428525.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -11895915017.0,
+    "beban_pajak": -1484039667.0,
+    "laba_bersih": -11895758297.0,
+    "laba_induk": -11895758297.0,
+    "eps_basic": -3.68,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -46988943360,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 240890348.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "kode": "BKDP",
+  "nama": "PT Bukit Darmo Property Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 135.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.497120871219794,
+    "ps": 27.86219280407242,
+    "roe": -0.06544992224954908,
+    "eps": -5.05315076547939,
+    "de": 1.5130090948047994,
+    "margin_net": -1.0429026733024658,
+    "current_ratio": 0.987748374696856,
+    "roa": -0.02604744810733221,
+    "bv": 38.60318386790905
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 9336893539.0,
+      "2026-Q1": 9221152430.0,
+      "2026-Q2": 8982528830.0
+    },
+    "eps": {
+      "2025-Q3": -1.41,
+      "2026-Q1": -1.25,
+      "2026-Q2": -1.28
+    },
+    "net_income": {
+      "2025-Q3": -10640152484.0,
+      "2026-Q1": -9394374420.0,
+      "2026-Q2": -9590293430.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1014388948992,
+    "enterprise_value": 1356023595008,
+    "shares_outstanding": 7513992252
+  },
+  "akumulasi": {
+    "score": 3.1,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.095,
+    "vol_trend": 0.153,
+    "price_chg_20d": -24.58
+  },
+  "neraca": {
+    "aset": 728849435529.0,
+    "aset_lancar": 55995308756.0,
+    "kas": 2663473473.0,
+    "piutang_usaha": 215969654.0,
+    "persediaan": 731279767.0,
+    "aset_tetap": 421658913.0,
+    "liabilitas": 438869507123.0,
+    "liabilitas_jangka_pendek": 56689851576.0,
+    "liabilitas_jangka_panjang": 382179655547.0,
+    "utang_usaha": 215969654.0,
+    "utang_bank": null,
+    "ekuitas": 290064024486.0,
+    "ekuitas_induk": 290064024486.0,
+    "modal_saham": null,
+    "saldo_laba": -547820375647.0
+  },
+  "laba_rugi": {
+    "pendapatan": 18203681260.0,
+    "beban_pokok": 24043984153.0,
+    "laba_kotor": -5840302893.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -17509564942.0,
+    "beban_pajak": -1475102908.0,
+    "laba_bersih": -18984667850.0,
+    "laba_induk": -18984667850.0,
+    "eps_basic": -2.53,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -23226406912,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4500000.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "kode": "MAPB",
+  "nama": "PT Map Boga Adiperkasa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 1115.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.147705419650225,
+    "ps": 0.7829536290061718,
+    "roe": -0.1270513853632016,
+    "eps": null,
+    "de": 1.0522629870994127,
+    "margin_net": -0.06136348672484316,
+    "current_ratio": 0.6371778059587669,
+    "roa": -0.06190779960372908,
+    "bv": 519.15872158184
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 719612000000000.0,
+      "2025-Q2": -718091458000000.0,
+      "2025-Q3": 833841000000.0,
+      "2026-Q1": 805726000000000.0,
+      "2026-Q2": -804055173000000.0,
+      "2026-Q3": 895960000000.0
+    },
+    "eps": {
+      "2025-Q1": -22.0,
+      "2025-Q2": -12.0,
+      "2025-Q3": 34.0,
+      "2026-Q1": -22.0,
+      "2026-Q2": 22.0,
+      "2026-Q3": -66.0
+    },
+    "net_income": {
+      "2025-Q1": -53370000000000.0,
+      "2025-Q2": -26836000000000.0,
+      "2025-Q3": -28487000000000.0,
+      "2026-Q1": -51783000000000.0,
+      "2026-Q2": -69723000000000.0,
+      "2026-Q3": -36001000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2662533955584,
+    "enterprise_value": 2783824052224,
+    "shares_outstanding": 2387922900
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3385,
+    "vol_trend": 4.247,
+    "price_chg_20d": -4.29
+  },
+  "neraca": {
+    "aset": 2544219.0,
+    "aset_lancar": 589875.0,
+    "kas": 316685.0,
+    "piutang_usaha": 22535.0,
+    "persediaan": 176258.0,
+    "aset_tetap": 1085120.0,
+    "liabilitas": 1304502.0,
+    "liabilitas_jangka_pendek": 925762.0,
+    "liabilitas_jangka_panjang": 378740.0,
+    "utang_usaha": 22535.0,
+    "utang_bank": null,
+    "ekuitas": 1239711.0,
+    "ekuitas_induk": 1239711.0,
+    "modal_saham": null,
+    "saldo_laba": 4000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2566787.0,
+    "beban_pokok": 831127.0,
+    "laba_kotor": 1735660.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -157684.0,
+    "beban_pajak": 33130.0,
+    "laba_bersih": -157507.0,
+    "laba_induk": -157507.0,
+    "eps_basic": -66.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 397228998656,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1051.0,
+    "dividen_dibayar": null
+  }
+}

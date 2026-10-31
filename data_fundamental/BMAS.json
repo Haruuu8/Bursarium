@@ -1,0 +1,95 @@
+{
+  "kode": "BMAS",
+  "nama": "PT Bank Kasikorn Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 400.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.02433734703972714,
+    "roe": 0.0009827693279291505,
+    "eps": 418.64306325404016,
+    "de": 3.0914602139993974,
+    "margin_net": 0.009253232556365239,
+    "current_ratio": null,
+    "roa": 0.00024020014286500773,
+    "bv": 0.3591088142081491
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 392913306000000.0,
+      "2025-Q2": 379841051000000.0,
+      "2025-Q3": -772753209980198.0,
+      "2026-Q1": 327156543000000.0,
+      "2026-Q2": 363284550000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.02,
+      "2025-Q2": 1.36,
+      "2025-Q3": -1.36,
+      "2026-Q1": 0.14,
+      "2026-Q2": 0.21
+    },
+    "net_income": {
+      "2025-Q1": 30726938000000.0,
+      "2025-Q2": -5694078000000.0,
+      "2025-Q3": 6883820000000.0,
+      "2026-Q1": 2619454000000.0,
+      "2026-Q2": 3769358000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7241065299968,
+    "enterprise_value": 12241957027840,
+    "shares_outstanding": 18102662304
+  },
+  "akumulasi": {
+    "score": 2.6,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1246,
+    "vol_trend": 0.118,
+    "price_chg_20d": -15.61
+  },
+  "neraca": {
+    "aset": 26597869276.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 367480027.0,
+    "liabilitas": 20097043682.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 6500825594.0,
+    "ekuitas_induk": 6500825594.0,
+    "modal_saham": null,
+    "saldo_laba": 415761434.0
+  },
+  "laba_rugi": {
+    "pendapatan": 690441093.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 10987995.0,
+    "laba_sebelum_pajak": 11284221.0,
+    "beban_pajak": -4895409.0,
+    "laba_bersih": 6388812.0,
+    "laba_induk": 6388812.0,
+    "eps_basic": 0.35,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3094450614000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

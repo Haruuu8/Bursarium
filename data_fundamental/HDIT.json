@@ -1,0 +1,98 @@
+{
+  "kode": "HDIT",
+  "nama": "PT Hensel Davest Indonesia Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Infrastructure",
+  "harga": 31.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.21167900574119972,
+    "ps": 0.0027755570142651924,
+    "roe": -0.07599607931959391,
+    "eps": -11.460451328147546,
+    "de": 0.21442701581517842,
+    "margin_net": -64.49999901552277,
+    "current_ratio": 9.082791158922394,
+    "roa": -0.06153499331753903,
+    "bv": 146.44815574153264
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 180249043000000.0,
+      "2025-Q2": 65824216000000.0,
+      "2025-Q3": -246054746908081.0,
+      "2026-Q1": 257900000000000.0,
+      "2026-Q2": 2579000000000.0,
+      "2026-Q3": 2604790000000.0
+    },
+    "eps": {
+      "2025-Q1": -5.9,
+      "2025-Q2": -0.53,
+      "2025-Q3": -0.33,
+      "2026-Q1": -0.14,
+      "2026-Q2": -6.54,
+      "2026-Q3": -4.45
+    },
+    "net_income": {
+      "2025-Q1": -9002530253.0,
+      "2025-Q2": -806645305.0,
+      "2025-Q3": -504616735.0,
+      "2026-Q1": -213612313000000.0,
+      "2026-Q2": 213602124360821.0,
+      "2026-Q3": -6780265017.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 47265079296,
+    "enterprise_value": 56857952256,
+    "shares_outstanding": 1524680000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5091,
+    "vol_trend": 0.953,
+    "price_chg_20d": -11.43
+  },
+  "neraca": {
+    "aset": 275760234643.0,
+    "aset_lancar": 253498167828.0,
+    "kas": 2072841.0,
+    "piutang_usaha": 93419575790.0,
+    "persediaan": 123517685047.0,
+    "aset_tetap": 242446231.0,
+    "liabilitas": 47878673755.0,
+    "liabilitas_jangka_pendek": 27909721075.0,
+    "liabilitas_jangka_panjang": 19968952680.0,
+    "utang_usaha": 93419575790.0,
+    "utang_bank": 4999956905.0,
+    "ekuitas": 223286574096.0,
+    "ekuitas_induk": 223286574096.0,
+    "modal_saham": null,
+    "saldo_laba": -82814617837.0
+  },
+  "laba_rugi": {
+    "pendapatan": 263083790.0,
+    "beban_pokok": 263057482.0,
+    "laba_kotor": 26308.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -16969102871.0,
+    "beban_pajak": null,
+    "laba_bersih": -16968904196.0,
+    "laba_induk": -16968904196.0,
+    "eps_basic": -11.13,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -15228562,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

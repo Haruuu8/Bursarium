@@ -1,0 +1,95 @@
+{
+  "kode": "PUDP",
+  "nama": "PT Pudjiadi Prestige Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 197.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.25859730645764833,
+    "ps": 3.2869567037456333,
+    "roe": -0.016681313362541673,
+    "eps": -3.4324000166889186,
+    "de": 0.08618351740235373,
+    "margin_net": -0.4152927059719916,
+    "current_ratio": 6.894731674048318,
+    "roa": -0.015354624229460845,
+    "bv": 761.8022117034834
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7726213408.0,
+      "2025-Q2": 10038486598.0,
+      "2025-Q3": 9296198016.0,
+      "2026-Q1": 9549184117.0,
+      "2026-Q2": 10619736489.0
+    },
+    "eps": {
+      "2025-Q1": -6.84,
+      "2025-Q2": 5.57,
+      "2025-Q3": 3.71,
+      "2026-Q1": -8.38,
+      "2026-Q2": -4.32
+    },
+    "net_income": {
+      "2025-Q1": -4509791978.0,
+      "2025-Q2": -838408614208022.0,
+      "2025-Q3": 838414727850138.0,
+      "2026-Q1": -5525322301.0,
+      "2026-Q2": -2850683314.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 129846640640,
+    "enterprise_value": 94963810304,
+    "shares_outstanding": 659120000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4987,
+    "vol_trend": 2.257,
+    "price_chg_20d": -23.64
+  },
+  "neraca": {
+    "aset": 545503783735.0,
+    "aset_lancar": 271397653943.0,
+    "kas": 6244140802.0,
+    "piutang_usaha": 1651844475.0,
+    "persediaan": null,
+    "aset_tetap": 90448592094.0,
+    "liabilitas": 43274387933.0,
+    "liabilitas_jangka_pendek": 39363048016.0,
+    "liabilitas_jangka_panjang": 3911339917.0,
+    "utang_usaha": 1651844475.0,
+    "utang_bank": 25613319128.0,
+    "ekuitas": 502119073778.0,
+    "ekuitas_induk": 502119073778.0,
+    "modal_saham": null,
+    "saldo_laba": 14660238596.0
+  },
+  "laba_rugi": {
+    "pendapatan": 20168920606.0,
+    "beban_pokok": 7061043043.0,
+    "laba_kotor": 13107877563.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -7782893749.0,
+    "beban_pajak": -593111866.0,
+    "laba_bersih": -8376005615.0,
+    "laba_induk": -8376005615.0,
+    "eps_basic": -12.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -10015723520,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1769916718.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "PNGO",
+  "nama": "PT AEP Pinago Plantations Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 3380.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 16.568627450980394,
+    "pb": 2.0898710316844777,
+    "ps": 1.3067408621761814,
+    "roe": 0.126078360011288,
+    "eps": 204.0,
+    "de": 0.3541653724273604,
+    "margin_net": 0.142674578854313,
+    "current_ratio": 1.5773667501116253,
+    "roa": 0.09289062392730599,
+    "bv": 1617.32468116736
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 723499620570.0,
+      "2025-Q2": 487931229267.0,
+      "2025-Q3": 416282741134.0,
+      "2026-Q1": 571633377535.0,
+      "2026-Q2": 544924387634.0
+    },
+    "eps": {
+      "2025-Q1": 112.0,
+      "2025-Q2": 81.0,
+      "2025-Q3": 79.0,
+      "2026-Q1": 51.0,
+      "2026-Q2": 153.0
+    },
+    "net_income": {
+      "2025-Q1": 87384585360.0,
+      "2025-Q2": 63653376690.0,
+      "2025-Q3": 61688077974.0,
+      "2026-Q1": 39600883805.0,
+      "2026-Q2": 119703525107.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2640625008640,
+    "enterprise_value": 2858321444864,
+    "shares_outstanding": 781250000
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4191,
+    "vol_trend": 3.758,
+    "price_chg_20d": -0.29
+  },
+  "neraca": {
+    "aset": 1714967584206.0,
+    "aset_lancar": 410323104852.0,
+    "kas": 23206649839.0,
+    "piutang_usaha": 24673208942.0,
+    "persediaan": 209561984276.0,
+    "aset_tetap": 16666298445.0,
+    "liabilitas": 447500310970.0,
+    "liabilitas_jangka_pendek": 260131706734.0,
+    "liabilitas_jangka_panjang": 187368604236.0,
+    "utang_usaha": 24673208942.0,
+    "utang_bank": 83600000000.0,
+    "ekuitas": 1263534907162.0,
+    "ekuitas_induk": 1263534907162.0,
+    "modal_saham": null,
+    "saldo_laba": 12500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1116557765169.0,
+    "beban_pokok": 792869236893.0,
+    "laba_kotor": 323688528276.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 202393798313.0,
+    "beban_pajak": -42491058357.0,
+    "laba_bersih": 159304408912.0,
+    "laba_induk": 159304408912.0,
+    "eps_basic": 204.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 383812763648,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 16666298445.0,
+    "dividen_dibayar": 70642500000.0
+  }
+}

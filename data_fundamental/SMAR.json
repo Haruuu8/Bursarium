@@ -1,0 +1,95 @@
+{
+  "kode": "SMAR",
+  "nama": "PT Sinar Mas Agro Resources and Technology Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 6425.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7650968880121014,
+    "ps": 0.2091644695166761,
+    "roe": 0.09718687466611718,
+    "eps": null,
+    "de": 1.0888650171240295,
+    "margin_net": 0.05360396209819753,
+    "current_ratio": 1.5911070897844402,
+    "roa": 0.04651134273889825,
+    "bv": 8397.629242348163
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 21158050000000.0,
+      "2025-Q2": 22108083000000.0,
+      "2025-Q3": 22388222000000.0,
+      "2026-Q1": 20734239000000.0,
+      "2026-Q2": 22995924000000.0
+    },
+    "eps": {
+      "2025-Q1": 47.0,
+      "2025-Q2": -47.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 134235000000000.0,
+      "2025-Q2": 691145000000000.0,
+      "2025-Q3": -823781745000000.0,
+      "2026-Q1": 829521000000000.0,
+      "2026-Q2": -827176890000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 18453840789504,
+    "enterprise_value": 34783996411904,
+    "shares_outstanding": 2872193366
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1695,
+    "vol_trend": 0.848,
+    "price_chg_20d": -24.41
+  },
+  "neraca": {
+    "aset": 50398674.0,
+    "aset_lancar": 25767607.0,
+    "kas": 1586141.0,
+    "piutang_usaha": 3424280.0,
+    "persediaan": 13041457.0,
+    "aset_tetap": 2432.0,
+    "liabilitas": 26263005.0,
+    "liabilitas_jangka_pendek": 16194766.0,
+    "liabilitas_jangka_panjang": 10068239.0,
+    "utang_usaha": 3424280.0,
+    "utang_bank": 4425923.0,
+    "ekuitas": 24119615.0,
+    "ekuitas_induk": 24119615.0,
+    "modal_saham": null,
+    "saldo_laba": 114888.0
+  },
+  "laba_rugi": {
+    "pendapatan": 43730163.0,
+    "beban_pokok": 36802143.0,
+    "laba_kotor": 6928020.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2922682.0,
+    "beban_pajak": -577955.0,
+    "laba_bersih": 2344110.0,
+    "laba_induk": 2344110.0,
+    "eps_basic": 0.000816,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 6610969165824,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2432.0,
+    "dividen_dibayar": 775239.0
+  }
+}

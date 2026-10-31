@@ -1,0 +1,95 @@
+{
+  "kode": "WMPP",
+  "nama": "PT Widodo Makmur Perkasa Tbk",
+  "sektor": "Industrials",
+  "industri": "Conglomerates",
+  "harga": 21.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.615384615384616,
+    "pb": 1.5835211455465157,
+    "ps": 0.5849473258012757,
+    "roe": 0.3428250158811977,
+    "eps": 4.55,
+    "de": 7.856958526515928,
+    "margin_net": 0.2376866667963051,
+    "current_ratio": 1.5158856195850818,
+    "roa": 0.03540546276425892,
+    "bv": 13.261584828886093
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 204183804500.0,
+      "2025-Q2": 194290322617.0,
+      "2025-Q3": 299153168993.0,
+      "2026-Q1": 287755832976.0,
+      "2026-Q2": 274962440328.0
+    },
+    "eps": {
+      "2025-Q1": -2.2,
+      "2025-Q2": -1.86,
+      "2025-Q3": -1.21,
+      "2026-Q1": 4.78,
+      "2026-Q2": -0.23
+    },
+    "net_income": {
+      "2025-Q1": -64742630919.0,
+      "2025-Q2": -54589173991.0,
+      "2025-Q3": -35713273820.0,
+      "2026-Q1": 140506950355.0,
+      "2026-Q2": -6756319628.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 617799024640,
+    "enterprise_value": 2826710810624,
+    "shares_outstanding": 29419000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2936,
+    "vol_trend": 1.892,
+    "price_chg_20d": -8.7
+  },
+  "neraca": {
+    "aset": 3777683450081.0,
+    "aset_lancar": 797180560149.0,
+    "kas": 4205895334.0,
+    "piutang_usaha": 303194963529.0,
+    "persediaan": 3787967285.0,
+    "aset_tetap": 2475722435963.0,
+    "liabilitas": 3065333945413.0,
+    "liabilitas_jangka_pendek": 525884374025.0,
+    "liabilitas_jangka_panjang": 2539449571388.0,
+    "utang_usaha": 303194963529.0,
+    "utang_bank": 85770369786.0,
+    "ekuitas": 390142564081.0,
+    "ekuitas_induk": 390142564081.0,
+    "modal_saham": null,
+    "saldo_laba": 117168000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 562718273304.0,
+    "beban_pokok": 553679477004.0,
+    "laba_kotor": 9038796300.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 29017424553.0,
+    "beban_pajak": 94478027639.0,
+    "laba_bersih": 133750630727.0,
+    "laba_induk": 133750630727.0,
+    "eps_basic": 4.55,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 11970893824,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3826049623.0,
+    "dividen_dibayar": null
+  }
+}

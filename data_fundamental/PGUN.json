@@ -1,0 +1,98 @@
+{
+  "kode": "PGUN",
+  "nama": "PT Pradiksi Gunatama Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 8025.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 339.89834815756035,
+    "pb": 22.868492442001852,
+    "ps": 64.06369573656141,
+    "roe": 0.06726646329911465,
+    "eps": 23.61,
+    "de": 0.2548317804807124,
+    "margin_net": 0.23925553946272302,
+    "current_ratio": 2.12513257609792,
+    "roa": 0.053605960851059724,
+    "bv": 350.91950290788435
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 175693946759.0,
+      "2025-Q2": 209480050837.0,
+      "2025-Q3": 152657053458.0,
+      "2026-Q1": 166542924195.0,
+      "2026-Q2": 138436206577.0,
+      "2026-Q3": 261120933177.0
+    },
+    "eps": {
+      "2025-Q1": 7.92,
+      "2025-Q2": 6.64,
+      "2025-Q3": 3.12,
+      "2026-Q1": 5.66,
+      "2026-Q2": 2.1,
+      "2026-Q3": 15.85
+    },
+    "net_income": {
+      "2025-Q1": 45452050692.0,
+      "2025-Q2": 38082320657.0,
+      "2025-Q3": 17899621591.0,
+      "2026-Q1": 32478992704.0,
+      "2026-Q2": 12031485691.0,
+      "2026-Q3": 90932097795.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 46046235328512,
+    "enterprise_value": 46302381473792,
+    "shares_outstanding": 5737848882
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3397,
+    "vol_trend": 0.451,
+    "price_chg_20d": -14.17
+  },
+  "neraca": {
+    "aset": 2526632748293.0,
+    "aset_lancar": 432861706197.0,
+    "kas": 7513879040.0,
+    "piutang_usaha": 133366056.0,
+    "persediaan": 77684554595.0,
+    "aset_tetap": 1129075873634.0,
+    "liabilitas": 513109670861.0,
+    "liabilitas_jangka_pendek": 203686918673.0,
+    "liabilitas_jangka_panjang": 309422752188.0,
+    "utang_usaha": 133366056.0,
+    "utang_bank": 109066499980.0,
+    "ekuitas": 2013523077432.0,
+    "ekuitas_induk": 2013523077432.0,
+    "modal_saham": null,
+    "saldo_laba": 527426583793.0
+  },
+  "laba_rugi": {
+    "pendapatan": 566100063949.0,
+    "beban_pokok": 325792408315.0,
+    "laba_kotor": 240307655634.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 173827121147.0,
+    "beban_pajak": -38384544957.0,
+    "laba_bersih": 135442576190.0,
+    "laba_induk": 135442576190.0,
+    "eps_basic": 23.61,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 269597884416,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3823313786.0,
+    "dividen_dibayar": 39992806707.0
+  }
+}

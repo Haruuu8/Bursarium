@@ -1,0 +1,98 @@
+{
+  "kode": "LAJU",
+  "nama": "PT Jasa Berdikari Logistics Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 44.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 12.359550561797752,
+    "pb": 0.6687977678477177,
+    "ps": 0.4582559663221089,
+    "roe": 0.05410473476572293,
+    "eps": 3.56,
+    "de": 0.7875568600378176,
+    "margin_net": 0.04948778032259895,
+    "current_ratio": 1.216349183746615,
+    "roa": 0.030267420284789313,
+    "bv": 65.78969326048738
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 52600068605.0,
+      "2025-Q2": 53071770193.0,
+      "2025-Q3": 51789278815.0,
+      "2026-Q1": 48298852081.0,
+      "2026-Q2": 51505614286.0,
+      "2026-Q3": 54835625755.0
+    },
+    "eps": {
+      "2025-Q1": -0.93,
+      "2025-Q2": 0.43,
+      "2025-Q3": 0.65,
+      "2026-Q1": 0.67,
+      "2026-Q2": 1.27,
+      "2026-Q3": 1.62
+    },
+    "net_income": {
+      "2025-Q1": -1989151867.0,
+      "2025-Q2": 917109135.0,
+      "2025-Q3": 320176488042732.0,
+      "2026-Q1": 1433816690.0,
+      "2026-Q2": 2736116272.0,
+      "2026-Q3": 3482861946.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 94597496832,
+    "enterprise_value": 161746845696,
+    "shares_outstanding": 2149942974
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4908,
+    "vol_trend": 0.394,
+    "price_chg_20d": -18.52
+  },
+  "neraca": {
+    "aset": 252839351223.0,
+    "aset_lancar": 85273103821.0,
+    "kas": 51400053606.0,
+    "piutang_usaha": 17907554512.0,
+    "persediaan": null,
+    "aset_tetap": 164379980750.0,
+    "liabilitas": 111395262436.0,
+    "liabilitas_jangka_pendek": 70105776335.0,
+    "liabilitas_jangka_panjang": 41289486101.0,
+    "utang_usaha": 17907554512.0,
+    "utang_bank": 30000000000.0,
+    "ekuitas": 141444088787.0,
+    "ekuitas_induk": 141444088787.0,
+    "modal_saham": null,
+    "saldo_laba": 60000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 154640092122.0,
+    "beban_pokok": 121105078337.0,
+    "laba_kotor": 33535013785.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 9569771747.0,
+    "beban_pajak": -1916976839.0,
+    "laba_bersih": 7652794908.0,
+    "laba_induk": 7652794908.0,
+    "eps_basic": 3.56,
+    "eps_diluted": 3.56
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 5653668864,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 34447792396.0,
+    "dividen_dibayar": 319911515.0
+  }
+}

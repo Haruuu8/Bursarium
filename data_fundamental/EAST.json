@@ -1,0 +1,98 @@
+{
+  "kode": "EAST",
+  "nama": "PT Eastparc Hotel Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 86.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 15.579710144927537,
+    "pb": 0.7776752673347358,
+    "ps": 4.053545953214189,
+    "roe": 0.04995398995433866,
+    "eps": 5.52,
+    "de": 0.05202238658472543,
+    "margin_net": 0.35101319721105056,
+    "current_ratio": 1.0943673373831309,
+    "roa": 0.04748377086965685,
+    "bv": 110.58600371173037
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 20762208364.0,
+      "2025-Q2": 23587765756.0,
+      "2025-Q3": 22604811678.0,
+      "2026-Q1": 21822187575.0,
+      "2026-Q2": 22960639127.0,
+      "2026-Q3": 20158145729.0
+    },
+    "eps": {
+      "2025-Q1": 1.31,
+      "2025-Q2": 1.75,
+      "2025-Q3": 2.03,
+      "2026-Q1": 2.11,
+      "2026-Q2": 2.0,
+      "2026-Q3": 1.41
+    },
+    "net_income": {
+      "2025-Q1": 5420683463.0,
+      "2025-Q2": 7202091886.0,
+      "2025-Q3": 8361612458.0,
+      "2026-Q1": 8687392117.0,
+      "2026-Q2": 8267762883.0,
+      "2026-Q3": 5839983363.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 354870853632,
+    "enterprise_value": 355421192192,
+    "shares_outstanding": 4126405336
+  },
+  "akumulasi": {
+    "score": 3.2,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.051,
+    "vol_trend": 1.228,
+    "price_chg_20d": -3.37
+  },
+  "neraca": {
+    "aset": 480061670451.0,
+    "aset_lancar": 12315939820.0,
+    "kas": 5970579347.0,
+    "piutang_usaha": 1949579655.0,
+    "persediaan": 507742773.0,
+    "aset_tetap": 467744264189.0,
+    "liabilitas": 23738994648.0,
+    "liabilitas_jangka_pendek": 11253935858.0,
+    "liabilitas_jangka_panjang": 12485058790.0,
+    "utang_usaha": 1949579655.0,
+    "utang_bank": 5000000000.0,
+    "ekuitas": 456322675803.0,
+    "ekuitas_induk": 456322675803.0,
+    "modal_saham": null,
+    "saldo_laba": 1050000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 64940972431.0,
+    "beban_pokok": 15095569413.0,
+    "laba_kotor": 49845403018.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 27886670269.0,
+    "beban_pajak": -5091531906.0,
+    "laba_bersih": 22795138363.0,
+    "laba_induk": 22795138363.0,
+    "eps_basic": 5.52,
+    "eps_diluted": 5.52
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 40237256704,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4970424517.0,
+    "dividen_dibayar": 47041020831.0
+  }
+}

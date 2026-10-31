@@ -1,0 +1,98 @@
+{
+  "kode": "FUJI",
+  "nama": "PT Fuji Finance Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 216.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 57.6,
+    "pb": 1.5107241245320322,
+    "ps": 107.26932066470636,
+    "roe": 0.026237442455527088,
+    "eps": 3.75,
+    "de": 0.02256340512464785,
+    "margin_net": 2.200277152416187,
+    "current_ratio": null,
+    "roa": 0.025658499340027535,
+    "bv": 142.97779223384615
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 910152334000000.0,
+      "2025-Q2": -910150580025760.0,
+      "2025-Q3": 401269892.0,
+      "2026-Q1": 840492069000000.0,
+      "2026-Q2": -840490373302037.0,
+      "2026-Q3": 520742393.0
+    },
+    "eps": {
+      "2025-Q1": 2.96,
+      "2025-Q2": 0.33,
+      "2025-Q3": 1.6,
+      "2026-Q1": 1.02,
+      "2026-Q2": 1.54,
+      "2026-Q3": 1.19
+    },
+    "net_income": {
+      "2025-Q1": 3849782636.0,
+      "2025-Q2": 429515333.0,
+      "2025-Q3": 2076202786.0,
+      "2026-Q1": 1321881155.0,
+      "2026-Q2": 2005843256.0,
+      "2026-Q3": 1549058664.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 280800002048,
+    "enterprise_value": 199422083072,
+    "shares_outstanding": 1300000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5324,
+    "vol_trend": 1.046,
+    "price_chg_20d": -27.03
+  },
+  "neraca": {
+    "aset": 190065015509.0,
+    "aset_lancar": null,
+    "kas": 83428770068.0,
+    "piutang_usaha": 35234995950.0,
+    "persediaan": null,
+    "aset_tetap": 225188979.0,
+    "liabilitas": 4193885605.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 185871129904.0,
+    "ekuitas_induk": 185871129904.0,
+    "modal_saham": null,
+    "saldo_laba": 33297795237.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2216440356.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5500745835.0,
+    "beban_pajak": -623962760.0,
+    "laba_bersih": 4876783075.0,
+    "laba_induk": 4876783075.0,
+    "eps_basic": 3.75,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -18067263488,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

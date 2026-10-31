@@ -1,0 +1,95 @@
+{
+  "kode": "PGLI",
+  "nama": "PT Pembangunan Graha Lestari Indah Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 268.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 9.972091986127833,
+    "ps": 6.724894437127292,
+    "roe": -0.0010725099913912598,
+    "eps": null,
+    "de": 1.6176911095287325,
+    "margin_net": -0.0013466824541691384,
+    "current_ratio": 0.5623914691773,
+    "roa": -0.00041148339844505064,
+    "bv": 26.87500279508197
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4601840107.0,
+      "2025-Q2": 4660760223.0,
+      "2025-Q3": 4342075216.0,
+      "2026-Q1": 5395455076.0,
+      "2026-Q2": 5049449702.0
+    },
+    "eps": {
+      "2025-Q1": 1.72,
+      "2025-Q2": -5.14,
+      "2025-Q3": -2.28,
+      "2026-Q1": -0.54,
+      "2026-Q2": 0.51
+    },
+    "net_income": {
+      "2025-Q1": -874195585000000.0,
+      "2025-Q2": 874193867359908.0,
+      "2025-Q3": -1036510378.0,
+      "2026-Q1": -262938194000000.0,
+      "2026-Q2": 248872224000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 130784002048,
+    "enterprise_value": 144638722048,
+    "shares_outstanding": 488000000
+  },
+  "akumulasi": {
+    "score": 7.8,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1226,
+    "vol_trend": 1.463,
+    "price_chg_20d": 0.75
+  },
+  "neraca": {
+    "aset": 34183566222.0,
+    "aset_lancar": 2141307877.0,
+    "kas": 598254880.0,
+    "piutang_usaha": 269369844.0,
+    "persediaan": 694219049.0,
+    "aset_tetap": 18185389372.0,
+    "liabilitas": 21216021108.0,
+    "liabilitas_jangka_pendek": 3807504193.0,
+    "liabilitas_jangka_panjang": 17408516915.0,
+    "utang_usaha": 269369844.0,
+    "utang_bank": 1099794130.0,
+    "ekuitas": 13115001364.0,
+    "ekuitas_induk": 13115001364.0,
+    "modal_saham": null,
+    "saldo_laba": -38863617374.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10444904778.0,
+    "beban_pokok": 5345812448.0,
+    "laba_kotor": 5099092330.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 293021609.0,
+    "beban_pajak": -168309296.0,
+    "laba_bersih": -14065970.0,
+    "laba_induk": -14065970.0,
+    "eps_basic": -0.03,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 297516192,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 626028287.0,
+    "dividen_dibayar": null
+  }
+}

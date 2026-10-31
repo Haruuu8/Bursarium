@@ -1,0 +1,95 @@
+{
+  "kode": "BCAP",
+  "nama": "PT MNC Kapital Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Financial Conglomerates",
+  "harga": 19.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.666666666666666,
+    "pb": null,
+    "ps": -0.0015506515554057838,
+    "roe": 0.02679303468376258,
+    "eps": 2.85,
+    "de": 5.49815129250837,
+    "margin_net": 0.11382733481525038,
+    "current_ratio": null,
+    "roa": 0.004009847721047119,
+    "bv": 106.46049579730848
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 524837000000000.0,
+      "2025-Q2": -523795819000000.0,
+      "2025-Q3": 522722000000.0,
+      "2026-Q1": 539098000000000.0,
+      "2026-Q2": -538030014000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.77,
+      "2025-Q2": 1.38,
+      "2025-Q3": 1.08,
+      "2026-Q1": 1.1,
+      "2026-Q2": 1.75
+    },
+    "net_income": {
+      "2025-Q1": 32854000000000.0,
+      "2025-Q2": 58908000000000.0,
+      "2025-Q3": 45776000000000.0,
+      "2026-Q1": 46750000000000.0,
+      "2026-Q2": 74816000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 809758162944,
+    "enterprise_value": 650635182080,
+    "shares_outstanding": 42618850927
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.287,
+    "vol_trend": 0.865,
+    "price_chg_20d": -34.48
+  },
+  "neraca": {
+    "aset": 30316862.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": 1181513.0,
+    "persediaan": null,
+    "aset_tetap": 1063031.0,
+    "liabilitas": 24946344.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4537224.0,
+    "ekuitas_induk": 4537224.0,
+    "modal_saham": null,
+    "saldo_laba": 981127.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1067986.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 148172.0,
+    "laba_sebelum_pajak": 148172.0,
+    "beban_pajak": -15412.0,
+    "laba_bersih": 121566.0,
+    "laba_induk": 121566.0,
+    "eps_basic": 2.85,
+    "eps_diluted": 2.85
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -87238000640,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

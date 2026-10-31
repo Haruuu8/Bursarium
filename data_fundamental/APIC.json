@@ -1,0 +1,89 @@
+{
+  "kode": "APIC",
+  "nama": "PT Pacific Strategic Financial Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Life",
+  "harga": 440.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.030475372436093943,
+    "roe": -0.01974626925174668,
+    "eps": -1058.8161597586125,
+    "de": 1.3297392100166712,
+    "margin_net": -0.07333594729545104,
+    "current_ratio": 4.076552214160784,
+    "roa": -0.00837897168865851,
+    "bv": 26810.536873059034
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 530411180555.0,
+      "2026-Q1": 614210497946.0,
+      "2026-Q2": 396613079833.0
+    },
+    "eps": {
+      "2025-Q3": 0.68,
+      "2026-Q1": 10.43,
+      "2026-Q2": -16.73
+    },
+    "net_income": {
+      "2025-Q3": 8025347688.0,
+      "2026-Q1": 122702531827.0,
+      "2026-Q2": -196832236452.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 5177178324992,
+    "enterprise_value": 5119346212864,
+    "shares_outstanding": 140023750
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.449,
+    "vol_trend": 0.201,
+    "price_chg_20d": 10.0
+  },
+  "neraca": {
+    "aset": 8847112435687.0,
+    "aset_lancar": 6017144464334.0,
+    "kas": 340325879497.0,
+    "piutang_usaha": 940699637831.0,
+    "persediaan": null,
+    "aset_tetap": 13372407677.0,
+    "liabilitas": 4991989808814.0,
+    "liabilitas_jangka_pendek": 1476037628914.0,
+    "liabilitas_jangka_panjang": 3515952179900.0,
+    "utang_usaha": 940699637831.0,
+    "utang_bank": 1161086140959.0,
+    "ekuitas": 3754111912479.0,
+    "ekuitas_induk": 3754111912479.0,
+    "modal_saham": null,
+    "saldo_laba": 55000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1010823577779.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -70080474401.0,
+    "beban_pajak": -1437505474.0,
+    "laba_bersih": -74129704625.0,
+    "laba_induk": -74129704625.0,
+    "eps_basic": -6.3,
+    "eps_diluted": -6.3
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -433329700864,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3349088383.0,
+    "dividen_dibayar": null
+  }
+}

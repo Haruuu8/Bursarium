@@ -1,0 +1,89 @@
+{
+  "kode": "EMDE",
+  "nama": "PT Megapolitan Developments Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 54.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.121621621621621,
+    "pb": null,
+    "ps": 0.9411130073203737,
+    "roe": 0.005509146607263989,
+    "eps": 5.92,
+    "de": 0.5957329157702008,
+    "margin_net": 0.1032319345347287,
+    "current_ratio": 3.117450879941583,
+    "roa": 0.0030840956480443224,
+    "bv": 537.5906719134329
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 33112323483.0,
+      "2026-Q1": 45358312686.0,
+      "2026-Q2": 50751292958.0
+    },
+    "eps": {
+      "2025-Q3": 0.2,
+      "2026-Q1": -0.78,
+      "2026-Q2": 3.74
+    },
+    "net_income": {
+      "2025-Q3": 675472067.0,
+      "2026-Q1": -2601134318.0,
+      "2026-Q2": 12522714836.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 180900003840,
+    "enterprise_value": 872390459392,
+    "shares_outstanding": 3350000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6633,
+    "vol_trend": 0.719,
+    "price_chg_20d": -15.62
+  },
+  "neraca": {
+    "aset": 3217014532053.0,
+    "aset_lancar": 1433334592481.0,
+    "kas": 83376600937.0,
+    "piutang_usaha": 12773888436.0,
+    "persediaan": 265288540997.0,
+    "aset_tetap": 11851667017.0,
+    "liabilitas": 1072872535874.0,
+    "liabilitas_jangka_pendek": 459777763205.0,
+    "liabilitas_jangka_panjang": 613094772669.0,
+    "utang_usaha": 12773888436.0,
+    "utang_bank": 473421896.0,
+    "ekuitas": 1800928750910.0,
+    "ekuitas_induk": 1800928750910.0,
+    "modal_saham": null,
+    "saldo_laba": 1342610449787.0
+  },
+  "laba_rugi": {
+    "pendapatan": 96109605644.0,
+    "beban_pokok": 48467491936.0,
+    "laba_kotor": 47642113708.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 9373188599.0,
+    "beban_pajak": null,
+    "laba_bersih": 9921580518.0,
+    "laba_induk": 9921580518.0,
+    "eps_basic": 2.96,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 471318495232,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 283312966.0,
+    "dividen_dibayar": null
+  }
+}

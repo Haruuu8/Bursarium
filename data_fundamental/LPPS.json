@@ -1,0 +1,95 @@
+{
+  "kode": "LPPS",
+  "nama": "PT Lenox Pasifik Investama Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 52.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0002465,
+    "roe": -0.11409928001391272,
+    "eps": -26.816346901059273,
+    "de": 0.0008724655827548379,
+    "margin_net": -620.2059216201551,
+    "current_ratio": 261.21587171518263,
+    "roa": -0.11399981909531177,
+    "bv": 632.1400077800315
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 84000000000000.0,
+      "2025-Q2": 42000000000000.0,
+      "2025-Q3": 63000000000000.0,
+      "2026-Q1": 85000000000000.0,
+      "2026-Q2": 44000000000000.0
+    },
+    "eps": {
+      "2025-Q1": -11.59,
+      "2025-Q2": 13.1,
+      "2025-Q3": 6.32,
+      "2026-Q1": -27.01,
+      "2026-Q2": -3.9
+    },
+    "net_income": {
+      "2025-Q1": -30003407675.0,
+      "2025-Q2": 33913759411.0,
+      "2025-Q3": 16346771678.0,
+      "2026-Q1": -69912145347.0,
+      "2026-Q2": -10094418542.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 134589005824,
+    "enterprise_value": 2016344320,
+    "shares_outstanding": 1109250000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2852,
+    "vol_trend": 0.97,
+    "price_chg_20d": -14.75
+  },
+  "neraca": {
+    "aset": 701813077634.0,
+    "aset_lancar": 132727963350.0,
+    "kas": 121001362057.0,
+    "piutang_usaha": 23980000.0,
+    "persediaan": null,
+    "aset_tetap": 325980304.0,
+    "liabilitas": 611774004.0,
+    "liabilitas_jangka_pendek": 508115998.0,
+    "liabilitas_jangka_panjang": 103658006.0,
+    "utang_usaha": 23980000.0,
+    "utang_bank": null,
+    "ekuitas": 701201303630.0,
+    "ekuitas_induk": 701201303630.0,
+    "modal_saham": null,
+    "saldo_laba": 2500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 129000000.0,
+    "beban_pokok": null,
+    "laba_kotor": 129000000.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -80009714619.0,
+    "beban_pajak": 3150730.0,
+    "laba_bersih": -80006563889.0,
+    "laba_induk": -80006563889.0,
+    "eps_basic": -30.91,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1858764416,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "ESTA",
+  "nama": "PT Esta Multi Usaha Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 149.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.0487077359094745,
+    "ps": 7.504638752865905,
+    "roe": -0.025135651989056044,
+    "eps": -3.0919049811075037,
+    "de": 0.8702762315667013,
+    "margin_net": -0.18030938964494078,
+    "current_ratio": 0.8667415074861692,
+    "roa": -0.013429228601456008,
+    "bv": 72.72877306428242
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 10542145200.0,
+      "2025-Q2": 11590965775.0,
+      "2025-Q3": 11973253423.0,
+      "2026-Q1": 11346024166.0,
+      "2026-Q2": 13243676441.0
+    },
+    "eps": {
+      "2025-Q1": -5.71,
+      "2025-Q2": 1.6,
+      "2025-Q3": 0.53,
+      "2026-Q1": -1.15,
+      "2026-Q2": -0.68
+    },
+    "net_income": {
+      "2025-Q1": -3405455182.0,
+      "2025-Q2": -1521560073.0,
+      "2025-Q3": -1543650686.0,
+      "2026-Q1": -2779705956.0,
+      "2026-Q2": -1654047952.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 361377792000,
+    "enterprise_value": 489873080320,
+    "shares_outstanding": 2425354179
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1978,
+    "vol_trend": 0.523,
+    "price_chg_20d": -6.88
+  },
+  "neraca": {
+    "aset": 330157006004.0,
+    "aset_lancar": 37306756387.0,
+    "kas": 2279083437.0,
+    "piutang_usaha": 1055801333.0,
+    "persediaan": 376644252.0,
+    "aset_tetap": 240262378494.0,
+    "liabilitas": 153510664630.0,
+    "liabilitas_jangka_pendek": 43042540440.0,
+    "liabilitas_jangka_panjang": 110468124190.0,
+    "utang_usaha": 1055801333.0,
+    "utang_bank": 14878806387.0,
+    "ekuitas": 176393033685.0,
+    "ekuitas_induk": 176393033685.0,
+    "modal_saham": null,
+    "saldo_laba": 11310163679.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24589700607.0,
+    "beban_pokok": 10283410309.0,
+    "laba_kotor": 14306290298.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4426287827.0,
+    "beban_pajak": null,
+    "laba_bersih": -4433753908.0,
+    "laba_induk": -4433753908.0,
+    "eps_basic": -1.83,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 6780129280,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2878576705.0,
+    "dividen_dibayar": null
+  }
+}

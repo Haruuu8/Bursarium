@@ -1,0 +1,98 @@
+{
+  "kode": "MCOL",
+  "nama": "PT Prima Andalan Mandiri Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 3440.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.016866141187434396,
+    "roe": 0.09545395521425375,
+    "eps": null,
+    "de": 0.2775220293950591,
+    "margin_net": 0.1035913219557011,
+    "current_ratio": 2.582181434424172,
+    "roa": 0.07175565418583629,
+    "bv": 165495.03566245543
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 142884602000000.0,
+      "2025-Q2": 161118149000000.0,
+      "2025-Q3": 182983168000000.0,
+      "2026-Q1": 163794697000000.0,
+      "2026-Q2": 210382051000000.0,
+      "2026-Q3": 168028274000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.01,
+      "2026-Q3": 0.01
+    },
+    "net_income": {
+      "2025-Q1": 7515322000000.0,
+      "2025-Q2": 15585045000000.0,
+      "2025-Q3": 12690404000000.0,
+      "2026-Q1": 17790807000000.0,
+      "2026-Q2": 18949044000000.0,
+      "2026-Q3": 19427884000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 12231126286336,
+    "enterprise_value": 12231065468928,
+    "shares_outstanding": 3555560000
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2265,
+    "vol_trend": 2.015,
+    "price_chg_20d": -2.82
+  },
+  "neraca": {
+    "aset": 782763890.0,
+    "aset_lancar": 295631174.0,
+    "kas": 138511667.0,
+    "piutang_usaha": 66931935.0,
+    "persediaan": 27305863.0,
+    "aset_tetap": 3129445.0,
+    "liabilitas": 163301602.0,
+    "liabilitas_jangka_pendek": 114488924.0,
+    "liabilitas_jangka_panjang": 48812678.0,
+    "utang_usaha": 66931935.0,
+    "utang_bank": null,
+    "ekuitas": 588427529.0,
+    "ekuitas_induk": 588427529.0,
+    "modal_saham": null,
+    "saldo_laba": 5367423.0
+  },
+  "laba_rugi": {
+    "pendapatan": 542205022.0,
+    "beban_pokok": 425563237.0,
+    "laba_kotor": 116641785.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 76616424.0,
+    "beban_pajak": -18571938.0,
+    "laba_bersih": 56167735.0,
+    "laba_induk": 56167735.0,
+    "eps_basic": 0.0158,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 152387664,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3129445.0,
+    "dividen_dibayar": 43171913.0
+  }
+}

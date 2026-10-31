@@ -1,0 +1,95 @@
+{
+  "kode": "LINK",
+  "nama": "PT Link Net Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 1145.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.1577344021321294,
+    "ps": -0.003909753678690627,
+    "roe": -0.31266067522328395,
+    "eps": null,
+    "de": 3.9678495349276086,
+    "margin_net": -0.6226416473884471,
+    "current_ratio": 0.23288950555784488,
+    "roa": -0.06293678281887068,
+    "bv": 989.0005841506677
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 810278000000000.0,
+      "2025-Q2": -808701414000000.0,
+      "2025-Q3": 818157000000.0,
+      "2026-Q1": 661357000000000.0,
+      "2026-Q2": -659989308000000.0
+    },
+    "eps": {
+      "2025-Q1": -129.0,
+      "2025-Q2": -122.0,
+      "2025-Q3": -123.0,
+      "2026-Q1": -159.0,
+      "2026-Q2": -150.0
+    },
+    "net_income": {
+      "2025-Q1": -354933000000000.0,
+      "2025-Q2": -336766000000000.0,
+      "2025-Q3": 690671053000000.0,
+      "2026-Q1": -436920000000000.0,
+      "2026-Q2": -414662000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3153277222912,
+    "enterprise_value": 11438682800128,
+    "shares_outstanding": 2753953884
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3922,
+    "vol_trend": 1.302,
+    "price_chg_20d": -29.32
+  },
+  "neraca": {
+    "aset": 13530752.0,
+    "aset_lancar": 2232374.0,
+    "kas": 213035.0,
+    "piutang_usaha": 361964.0,
+    "persediaan": null,
+    "aset_tetap": 9844701.0,
+    "liabilitas": 10807081.0,
+    "liabilitas_jangka_pendek": 9585550.0,
+    "liabilitas_jangka_panjang": 1221531.0,
+    "utang_usaha": 361964.0,
+    "utang_bank": 7350000.0,
+    "ekuitas": 2723662.0,
+    "ekuitas_induk": 2723662.0,
+    "modal_saham": null,
+    "saldo_laba": -369747.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1367692.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": 675024.0,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -861719.0,
+    "beban_pajak": 10137.0,
+    "laba_bersih": -851582.0,
+    "laba_induk": -851582.0,
+    "eps_basic": -309.0,
+    "eps_diluted": -309.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -91595997184,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 362062.0,
+    "dividen_dibayar": null
+  }
+}

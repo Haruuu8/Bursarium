@@ -1,0 +1,98 @@
+{
+  "kode": "PBID",
+  "nama": "PT Panca Budi Idaman Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 580.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 6.25198653882297,
+    "pb": null,
+    "ps": 690.1945477170647,
+    "roe": 0.22293404583109772,
+    "eps": 92.7705132438103,
+    "de": 0.2338812780857335,
+    "margin_net": 0.14023737360260197,
+    "current_ratio": 4.311291997828353,
+    "roa": 0.17490504113405697,
+    "bv": 0.41613434586666664
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1277521756.0,
+      "2025-Q2": 1274678394.0,
+      "2025-Q3": 1341134111.0,
+      "2026-Q1": 1296395339.0,
+      "2026-Q2": 1826648939.0,
+      "2026-Q3": 1838392407.0
+    },
+    "eps": {
+      "2025-Q1": 13.57,
+      "2025-Q2": 12.23,
+      "2025-Q3": 14.24,
+      "2026-Q1": 0.02,
+      "2026-Q2": 54.71,
+      "2026-Q3": 38.04
+    },
+    "net_income": {
+      "2025-Q1": 101776093000000.0,
+      "2025-Q2": 91724766000000.0,
+      "2025-Q3": 106775685000000.0,
+      "2026-Q1": 126069470000000.0,
+      "2026-Q2": 284385942000000.0,
+      "2026-Q3": 285323438000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4350000234496,
+    "enterprise_value": 3765756755968,
+    "shares_outstanding": 7500000000
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1712,
+    "vol_trend": 2.512,
+    "price_chg_20d": 11.54
+  },
+  "neraca": {
+    "aset": 3978037714.0,
+    "aset_lancar": 2423164806.0,
+    "kas": 349614257.0,
+    "piutang_usaha": 440884545.0,
+    "persediaan": 1113140447.0,
+    "aset_tetap": 15183208.0,
+    "liabilitas": 729945245.0,
+    "liabilitas_jangka_pendek": 562050728.0,
+    "liabilitas_jangka_panjang": 167894517.0,
+    "utang_usaha": 440884545.0,
+    "utang_bank": 78979327.0,
+    "ekuitas": 3121007594.0,
+    "ekuitas_induk": 3121007594.0,
+    "modal_saham": null,
+    "saldo_laba": 27000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4961436685.0,
+    "beban_pokok": 3725288346.0,
+    "laba_kotor": 1236148339.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 927473057.0,
+    "beban_pajak": -228660002.0,
+    "laba_bersih": 695778850.0,
+    "laba_induk": 695778850.0,
+    "eps_basic": 92.7705132438103,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 986267385856,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15183208.0,
+    "dividen_dibayar": 399396958.0
+  }
+}

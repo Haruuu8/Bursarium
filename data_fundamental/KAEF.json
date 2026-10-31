@@ -1,0 +1,95 @@
+{
+  "kode": "KAEF",
+  "nama": "PT Kimia Farma Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 338.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 197.18792733100753,
+    "roe": 0.0035655661355495838,
+    "eps": null,
+    "de": 4.112000326682527,
+    "margin_net": 0.002196204277836746,
+    "current_ratio": 1.0340952827740821,
+    "roa": 0.0007025325073829337,
+    "bv": 0.5202465060787539
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2168207817.0,
+      "2025-Q2": 2201140777.0,
+      "2025-Q3": 2638862719.0,
+      "2026-Q1": 2030649486.0,
+      "2026-Q2": 2671041110.0
+    },
+    "eps": {
+      "2025-Q1": -234.05,
+      "2025-Q2": 216.98,
+      "2025-Q3": 17.03,
+      "2026-Q1": 0.02,
+      "2026-Q2": -0.0
+    },
+    "net_income": {
+      "2025-Q1": -102177254000000.0,
+      "2025-Q2": 7162125000000.0,
+      "2025-Q3": -84716853000000.0,
+      "2026-Q1": 74449546000000.0,
+      "2026-Q2": -64123673000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1881506840576,
+    "enterprise_value": 8756639301632,
+    "shares_outstanding": 5566588406
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.154,
+    "vol_trend": 0.185,
+    "price_chg_20d": -17.96
+  },
+  "neraca": {
+    "aset": 14698071465.0,
+    "aset_lancar": 4767564027.0,
+    "kas": 445472376.0,
+    "piutang_usaha": 1404782912.0,
+    "persediaan": 1441269929.0,
+    "aset_tetap": 8274749075.0,
+    "liabilitas": 11908345417.0,
+    "liabilitas_jangka_pendek": 4610372087.0,
+    "liabilitas_jangka_panjang": 7297973330.0,
+    "utang_usaha": 1404782912.0,
+    "utang_bank": 50053198.0,
+    "ekuitas": 2895998169.0,
+    "ekuitas_induk": 2895998169.0,
+    "modal_saham": null,
+    "saldo_laba": 2022339544.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4701690596.0,
+    "beban_pokok": 3029663857.0,
+    "laba_kotor": 1672026739.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 67791708.0,
+    "beban_pajak": -13714934.0,
+    "laba_bersih": 10325873.0,
+    "laba_induk": 10325873.0,
+    "eps_basic": 0.0185497269727396,
+    "eps_diluted": 0.0176143488190001
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 216065294336,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 20633746.0,
+    "dividen_dibayar": 8565.0
+  }
+}

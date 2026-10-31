@@ -1,0 +1,95 @@
+{
+  "kode": "GTBO",
+  "nama": "PT Garda Tujuh Buana Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 165.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.026824688467822568,
+    "roe": -0.30775167414468135,
+    "eps": null,
+    "de": 0.9753819782459655,
+    "margin_net": -0.9427755217313197,
+    "current_ratio": 0.2226511461680833,
+    "roa": -0.15579350097035335,
+    "bv": 9181.0464
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2106573000000.0,
+      "2025-Q2": 5385885000000.0,
+      "2025-Q3": 2499282000000.0,
+      "2026-Q1": 2106573000000.0,
+      "2026-Q2": 5385885000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": -0.0
+    },
+    "net_income": {
+      "2025-Q1": -1352394000000.0,
+      "2025-Q2": -844458606000000.0,
+      "2025-Q3": 157907000000000.0,
+      "2026-Q1": -4578800000000.0,
+      "2026-Q2": -2484906000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 412500000768,
+    "enterprise_value": 412500426752,
+    "shares_outstanding": 2500000000
+  },
+  "akumulasi": {
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.1501,
+    "vol_trend": 6.015,
+    "price_chg_20d": 3.77
+  },
+  "neraca": {
+    "aset": 45340184.0,
+    "aset_lancar": 4334825.0,
+    "kas": 39354.0,
+    "piutang_usaha": null,
+    "persediaan": 1752368.0,
+    "aset_tetap": 146283.0,
+    "liabilitas": 22387568.0,
+    "liabilitas_jangka_pendek": 19469134.0,
+    "liabilitas_jangka_panjang": 2918434.0,
+    "utang_usaha": 1878216.0,
+    "utang_bank": null,
+    "ekuitas": 22952616.0,
+    "ekuitas_induk": 22952616.0,
+    "modal_saham": null,
+    "saldo_laba": -8300732.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7492458.0,
+    "beban_pokok": 1299512.0,
+    "laba_kotor": -1299512.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -7063706.0,
+    "beban_pajak": null,
+    "laba_bersih": -7063706.0,
+    "laba_induk": -7063706.0,
+    "eps_basic": -0.00283,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3603115,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2886.0,
+    "dividen_dibayar": null
+  }
+}

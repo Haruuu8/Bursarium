@@ -1,0 +1,95 @@
+{
+  "kode": "ESTI",
+  "nama": "PT Ever Shine Tex Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 105.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.180167854101703,
+    "ps": 0.015643702768696525,
+    "roe": 0.007607206494490579,
+    "eps": null,
+    "de": 2.951588505705469,
+    "margin_net": 0.005944760487859482,
+    "current_ratio": 1.223985596808962,
+    "roa": 0.001925085031237539,
+    "bv": 88.9703948765168
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6610493000000.0,
+      "2025-Q2": 6588718000000.0,
+      "2025-Q3": 6707861000000.0,
+      "2026-Q1": 100947324056.0,
+      "2026-Q2": 128485946096.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": 1.33,
+      "2026-Q2": -0.65
+    },
+    "net_income": {
+      "2025-Q1": 403521000000000.0,
+      "2025-Q2": 191790000000000.0,
+      "2025-Q3": -107489000000000.0,
+      "2026-Q1": 2689371988.0,
+      "2026-Q2": -1325446149.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 211596918784,
+    "enterprise_value": 642690056192,
+    "shares_outstanding": 2015208720
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4752,
+    "vol_trend": 0.296,
+    "price_chg_20d": -29.53
+  },
+  "neraca": {
+    "aset": 708501607393.0,
+    "aset_lancar": 402421684919.0,
+    "kas": 1830464284.0,
+    "piutang_usaha": 53338278244.0,
+    "persediaan": 333164195931.0,
+    "aset_tetap": 3440136422.0,
+    "liabilitas": 529201860360.0,
+    "liabilitas_jangka_pendek": 328779755226.0,
+    "liabilitas_jangka_panjang": 200422105134.0,
+    "utang_usaha": 53338278244.0,
+    "utang_bank": 237309785951.0,
+    "ekuitas": 179293915577.0,
+    "ekuitas_induk": 179293915577.0,
+    "modal_saham": null,
+    "saldo_laba": 14606270612.0
+  },
+  "laba_rugi": {
+    "pendapatan": 229433270152.0,
+    "beban_pokok": 185713862887.0,
+    "laba_kotor": 43719407265.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1409176079.0,
+    "beban_pajak": -40413344.0,
+    "laba_bersih": 1363925839.0,
+    "laba_induk": 1363925839.0,
+    "eps_basic": 0.68,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 62438117376,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3440136422.0,
+    "dividen_dibayar": null
+  }
+}

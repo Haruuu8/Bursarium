@@ -1,0 +1,98 @@
+{
+  "kode": "UVCR",
+  "nama": "PT Trimegah Karya Pratama Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Application",
+  "harga": 174.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 33.91812865497076,
+    "pb": 3.114438159211231,
+    "ps": 0.30473492461024726,
+    "roe": 0.0950849889985321,
+    "eps": 5.13,
+    "de": 1.1994084689864215,
+    "margin_net": 0.011574621153191198,
+    "current_ratio": 1.631973366095352,
+    "roa": 0.04323207368677233,
+    "bv": 55.86882484257372
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 228745395886.0,
+      "2025-Q2": 212689700980.0,
+      "2025-Q3": 224072587699.0,
+      "2026-Q1": 330115022761.0,
+      "2026-Q2": 298766022967.0,
+      "2026-Q3": 289105164911.0
+    },
+    "eps": {
+      "2025-Q1": -0.57,
+      "2025-Q2": 1.16,
+      "2025-Q3": 0.48,
+      "2026-Q1": 2.13,
+      "2026-Q2": 2.06,
+      "2026-Q3": 0.94
+    },
+    "net_income": {
+      "2025-Q1": -1135223602.0,
+      "2025-Q2": 2322886122.0,
+      "2025-Q3": 956041380.0,
+      "2026-Q1": 4258320360.0,
+      "2026-Q2": 4115568051.0,
+      "2026-Q3": 2251454201.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 348025225216,
+    "enterprise_value": 400350117888,
+    "shares_outstanding": 2000144838
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1029,
+    "vol_trend": 0.466,
+    "price_chg_20d": -34.59
+  },
+  "neraca": {
+    "aset": 245774530479.0,
+    "aset_lancar": 213326247676.0,
+    "kas": 2374484246.0,
+    "piutang_usaha": 15247823754.0,
+    "persediaan": 137658856814.0,
+    "aset_tetap": 17335345903.0,
+    "liabilitas": 134028788865.0,
+    "liabilitas_jangka_pendek": 130716745817.0,
+    "liabilitas_jangka_panjang": 3312043048.0,
+    "utang_usaha": 15247823754.0,
+    "utang_bank": 52393436346.0,
+    "ekuitas": 111745741614.0,
+    "ekuitas_induk": 111745741614.0,
+    "modal_saham": null,
+    "saldo_laba": 7116673666.0
+  },
+  "laba_rugi": {
+    "pendapatan": 917986210639.0,
+    "beban_pokok": 873484202849.0,
+    "laba_kotor": 44502007790.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 13439645539.0,
+    "beban_pajak": -2814302927.0,
+    "laba_bersih": 10625342612.0,
+    "laba_induk": 10625342612.0,
+    "eps_basic": 5.13,
+    "eps_diluted": 5.13
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 18318792704,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 599623484.0,
+    "dividen_dibayar": 1000072419.0
+  }
+}

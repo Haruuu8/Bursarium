@@ -1,0 +1,95 @@
+{
+  "kode": "SAME",
+  "nama": "PT Sarana Meditama Metropolitan Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 258.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 150.6593368109727,
+    "pb": 1.1574452686461083,
+    "ps": 2.3109468503543313,
+    "roe": 0.001574692131681772,
+    "eps": 1.7124726914449657,
+    "de": 0.3953331276420141,
+    "margin_net": 0.006086491723278122,
+    "current_ratio": 0.4225900333495548,
+    "roa": 0.001054682992892897,
+    "bv": 222.90470831660906
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 440866183813.0,
+      "2025-Q2": 434156452489.0,
+      "2025-Q3": 492267299680.0,
+      "2026-Q1": 479093567334.0,
+      "2026-Q2": 510786032922.0
+    },
+    "eps": {
+      "2025-Q1": 0.56,
+      "2025-Q2": 0.27,
+      "2025-Q3": 1.09,
+      "2026-Q1": -0.05,
+      "2026-Q2": 0.4
+    },
+    "net_income": {
+      "2025-Q1": 9532964886.0,
+      "2025-Q2": 4761366915.0,
+      "2025-Q3": 18607703583.0,
+      "2026-Q1": -838672229000000.0,
+      "2026-Q2": 838678253893994.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4428475138048,
+    "enterprise_value": 5685546844160,
+    "shares_outstanding": 17164632545
+  },
+  "akumulasi": {
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.034,
+    "vol_trend": 1.353,
+    "price_chg_20d": -12.24
+  },
+  "neraca": {
+    "aset": 5712516495098.0,
+    "aset_lancar": 514894810729.0,
+    "kas": 128062031460.0,
+    "piutang_usaha": 297554878965.0,
+    "persediaan": 51075951751.0,
+    "aset_tetap": 8845931921.0,
+    "liabilitas": 1512575149414.0,
+    "liabilitas_jangka_pendek": 1218426299948.0,
+    "liabilitas_jangka_panjang": 294148849466.0,
+    "utang_usaha": 297554878965.0,
+    "utang_bank": 310000000000.0,
+    "ekuitas": 3826077410805.0,
+    "ekuitas_induk": 3826077410805.0,
+    "modal_saham": null,
+    "saldo_laba": 600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 989879600256.0,
+    "beban_pokok": 706654356518.0,
+    "laba_kotor": 283225243738.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15139165317.0,
+    "beban_pajak": -4727729500.0,
+    "laba_bersih": 6024893994.0,
+    "laba_induk": 6024893994.0,
+    "eps_basic": 0.35,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 349131014144,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8845931921.0,
+    "dividen_dibayar": null
+  }
+}

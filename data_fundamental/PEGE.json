@@ -1,0 +1,89 @@
+{
+  "kode": "PEGE",
+  "nama": "PT Panca Global Kapital Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 120.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.3186359715091287,
+    "ps": 0.003238190921142857,
+    "roe": -0.16877768944736762,
+    "eps": -12.205811609083502,
+    "de": 0.11764381871822804,
+    "margin_net": -329.37290281428574,
+    "current_ratio": 10.295026344967276,
+    "roa": -0.15100280294328725,
+    "bv": 36.159434487606894
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2025-Q1": 5.61,
+      "2025-Q2": -0.89,
+      "2025-Q3": -15.53,
+      "2026-Q1": -5.75,
+      "2026-Q2": -2.39
+    },
+    "net_income": {
+      "2025-Q1": 15894321707.0,
+      "2025-Q2": -2522863436.0,
+      "2025-Q3": -43988318493.0,
+      "2026-Q1": -16292159158.0,
+      "2026-Q2": -6763944039.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 453346721792,
+    "enterprise_value": 321924956160,
+    "shares_outstanding": 3777889408
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2305,
+    "vol_trend": 0.658,
+    "price_chg_20d": -12.41
+  },
+  "neraca": {
+    "aset": 152686590895.0,
+    "aset_lancar": 131560389093.0,
+    "kas": 54086841938.0,
+    "piutang_usaha": 13942517293.0,
+    "persediaan": null,
+    "aset_tetap": 839144181.0,
+    "liabilitas": 16070892034.0,
+    "liabilitas_jangka_pendek": 12779024034.0,
+    "liabilitas_jangka_panjang": 3291868000.0,
+    "utang_usaha": 13942517293.0,
+    "utang_bank": null,
+    "ekuitas": 136606344550.0,
+    "ekuitas_induk": 136606344550.0,
+    "modal_saham": null,
+    "saldo_laba": 3350000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 70000000.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -23603111553.0,
+    "beban_pajak": 546753968.0,
+    "laba_bersih": -23056103197.0,
+    "laba_induk": -23056103197.0,
+    "eps_basic": -8.14,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -5271276032,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 384100000.0,
+    "dividen_dibayar": null
+  }
+}

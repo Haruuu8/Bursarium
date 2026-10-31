@@ -1,0 +1,77 @@
+{
+  "kode": "RUNS",
+  "nama": "PT Global Sukses Solusi Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Application",
+  "harga": 57.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.0650286079104023,
+    "ps": 3.2981924711974857,
+    "roe": -0.04411827710725849,
+    "eps": -4.722392950641363,
+    "de": 0.5475587424467124,
+    "margin_net": -0.2732519451902004,
+    "current_ratio": 1.0251685274585356,
+    "roa": -0.027205979994519434,
+    "bv": 53.51968912068439
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 55909556224,
+    "enterprise_value": 71032496128,
+    "shares_outstanding": 980869375
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4362,
+    "vol_trend": 0.874,
+    "price_chg_20d": -12.31
+  },
+  "neraca": {
+    "aset": 85129273471.0,
+    "aset_lancar": 18746021633.0,
+    "kas": 1253020265.0,
+    "piutang_usaha": 1046998967.0,
+    "persediaan": null,
+    "aset_tetap": 21365316660.0,
+    "liabilitas": 28744547383.0,
+    "liabilitas_jangka_pendek": 18285795097.0,
+    "liabilitas_jangka_panjang": 10458752286.0,
+    "utang_usaha": 1046998967.0,
+    "utang_bank": 1680361665.0,
+    "ekuitas": 52495824018.0,
+    "ekuitas_induk": 52495824018.0,
+    "modal_saham": null,
+    "saldo_laba": 1466278577.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8475787096.0,
+    "beban_pokok": 2794343077.0,
+    "laba_kotor": 5681444019.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2427202529.0,
+    "beban_pajak": null,
+    "laba_bersih": -2316025311.0,
+    "laba_induk": -2316025311.0,
+    "eps_basic": -2.47,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3486385408,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 17290000.0,
+    "dividen_dibayar": 36866359.0
+  }
+}

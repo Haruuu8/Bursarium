@@ -1,0 +1,95 @@
+{
+  "kode": "EMTK",
+  "nama": "PT Elang Mahkota Teknologi Tbk",
+  "sektor": "Communication Services",
+  "industri": "Broadcasting",
+  "harga": 296.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.49445060964836085,
+    "ps": 0.8775373366094043,
+    "roe": -0.008753294365429366,
+    "eps": -5194.3089833935155,
+    "de": 0.2156488217714618,
+    "margin_net": -0.029649444378680712,
+    "current_ratio": 4.836682426465553,
+    "roa": -0.005354499810389684,
+    "bv": 598.6442209273577
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3938888000000.0,
+      "2025-Q2": 4870634000000.0,
+      "2025-Q3": 4953569000000.0,
+      "2026-Q1": 5814742000000.0,
+      "2026-Q2": 4998378000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 3634284000000.0,
+      "2025-Q2": 591432000000.0,
+      "2025-Q3": 2210733000000.0,
+      "2026-Q1": -335850000000000.0,
+      "2026-Q2": 15247000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 18110021107712,
+    "enterprise_value": 10856100265984,
+    "shares_outstanding": 61182504933
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1475,
+    "vol_trend": 1.206,
+    "price_chg_20d": -22.51
+  },
+  "neraca": {
+    "aset": 59875434.0,
+    "aset_lancar": 32631655.0,
+    "kas": 19853466.0,
+    "piutang_usaha": 3139855.0,
+    "persediaan": 1705620.0,
+    "aset_tetap": 6553772.0,
+    "liabilitas": 7898473.0,
+    "liabilitas_jangka_pendek": 6746702.0,
+    "liabilitas_jangka_panjang": 1151771.0,
+    "utang_usaha": 3139855.0,
+    "utang_bank": 2387279.0,
+    "ekuitas": 36626553.0,
+    "ekuitas_induk": 36626553.0,
+    "modal_saham": null,
+    "saldo_laba": 15000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10813120.0,
+    "beban_pokok": 7993018.0,
+    "laba_kotor": 2820102.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -124369.0,
+    "beban_pajak": -172460.0,
+    "laba_bersih": -320603.0,
+    "laba_induk": -320603.0,
+    "eps_basic": -5.25e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3221573074944,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14142.0,
+    "dividen_dibayar": 743207.0
+  }
+}

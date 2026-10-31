@@ -1,0 +1,98 @@
+{
+  "kode": "UNSP",
+  "nama": "PT Bakrie Sumatera Plantations Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 240.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.4723266868495635,
+    "ps": 1.3868069326720407,
+    "roe": -0.015681908697885702,
+    "eps": -7239.988734982579,
+    "de": 1.7017832714763144,
+    "margin_net": -0.019623359697943814,
+    "current_ratio": 0.20801926189273556,
+    "roa": -0.005804280773904103,
+    "bv": 163.0073013982679
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 497478000000000.0,
+      "2025-Q2": -496336611000000.0,
+      "2025-Q3": 727706000000.0,
+      "2026-Q1": 561076000000000.0,
+      "2026-Q2": -559796189000000.0,
+      "2026-Q3": 935406000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": -223793000000000.0,
+      "2025-Q2": 239973000000000.0,
+      "2025-Q3": -79648000000000.0,
+      "2026-Q1": 3241000000000.0,
+      "2026-Q2": -268015000000000.0,
+      "2026-Q3": 221304000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4352013500416,
+    "enterprise_value": 4621167230976,
+    "shares_outstanding": 17005275078
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1809,
+    "vol_trend": 1.007,
+    "price_chg_20d": -32.96
+  },
+  "neraca": {
+    "aset": 7489300.0,
+    "aset_lancar": 920033.0,
+    "kas": 175212.0,
+    "piutang_usaha": 53760.0,
+    "persediaan": 180299.0,
+    "aset_tetap": 5865606.0,
+    "liabilitas": 4717316.0,
+    "liabilitas_jangka_pendek": 4422826.0,
+    "liabilitas_jangka_panjang": 294490.0,
+    "utang_usaha": 53760.0,
+    "utang_bank": null,
+    "ekuitas": 2771984.0,
+    "ekuitas_induk": 2771984.0,
+    "modal_saham": null,
+    "saldo_laba": 87808.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2215217.0,
+    "beban_pokok": 1617334.0,
+    "laba_kotor": 597883.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 32641.0,
+    "beban_pajak": -76111.0,
+    "laba_bersih": -43470.0,
+    "laba_induk": -43470.0,
+    "eps_basic": 2.56e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 374428008448,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 237989.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "SURE",
+  "nama": "PT Super Energy Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Integrated",
+  "harga": 2820.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7.2379871810750345,
+    "roe": 0.039582492895515534,
+    "eps": -26.469601882600248,
+    "de": -4.555863371043975,
+    "margin_net": -0.03657473501831008,
+    "current_ratio": 0.628258277529588,
+    "roa": -0.0075646526893522305,
+    "bv": -214.73924017949395
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 91294116314.0,
+      "2025-Q2": 89384005790.0,
+      "2025-Q3": 146053865030.0,
+      "2026-Q1": 174644061739.0,
+      "2026-Q2": 173390570026.0
+    },
+    "eps": {
+      "2025-Q1": -18.24,
+      "2025-Q2": -18.03,
+      "2025-Q3": 0.06,
+      "2026-Q1": -5.1,
+      "2026-Q2": -3.4
+    },
+    "net_income": {
+      "2025-Q1": -27317407150.0,
+      "2025-Q2": -27002574734.0,
+      "2025-Q3": 91588251.0,
+      "2026-Q1": -7630971319.0,
+      "2026-Q2": -5098303115.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4223166578688,
+    "enterprise_value": 6008768823296,
+    "shares_outstanding": 1497576771
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2375,
+    "vol_trend": 0.771,
+    "price_chg_20d": -6.0
+  },
+  "neraca": {
+    "aset": 1682730847897.0,
+    "aset_lancar": 173837265462.0,
+    "kas": 26462974761.0,
+    "piutang_usaha": 65901346274.0,
+    "persediaan": 4475410915.0,
+    "aset_tetap": 1469643734705.0,
+    "liabilitas": 1465113258200.0,
+    "liabilitas_jangka_pendek": 276697135047.0,
+    "liabilitas_jangka_panjang": 1188416123153.0,
+    "utang_usaha": 65901346274.0,
+    "utang_bank": null,
+    "ekuitas": -321588497915.0,
+    "ekuitas_induk": -321588497915.0,
+    "modal_saham": null,
+    "saldo_laba": -513049225734.0
+  },
+  "laba_rugi": {
+    "pendapatan": 348034631765.0,
+    "beban_pokok": 247716567426.0,
+    "laba_kotor": 100318064339.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -19841077201.0,
+    "beban_pajak": -651859465.0,
+    "laba_bersih": -12729274434.0,
+    "laba_induk": -12729274434.0,
+    "eps_basic": -8.5,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 41534713856,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 136416467329.0,
+    "dividen_dibayar": null
+  }
+}

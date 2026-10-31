@@ -1,0 +1,92 @@
+{
+  "kode": "HEXA",
+  "nama": "PT Hexindo Adiperkasa Tbk",
+  "sektor": "Industrials",
+  "industri": "Industrial Distribution",
+  "harga": 2990.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.004878096871918633,
+    "roe": 0.02892656172419013,
+    "eps": null,
+    "de": 1.4114977318507065,
+    "margin_net": 0.04319149276642134,
+    "current_ratio": 1.647565036824748,
+    "roa": 0.011995268061890487,
+    "bv": 202279.97857142857
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 123383601000000.0,
+      "2025-Q2": 141573442000000.0,
+      "2025-Q3": 136118888000000.0,
+      "2026-Q1": 113796993000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": 0.01,
+      "2025-Q3": 0.01,
+      "2026-Q1": 0.01
+    },
+    "net_income": {
+      "2025-Q1": 6895739000000.0,
+      "2025-Q2": 5898792000000.0,
+      "2025-Q3": 5785295000000.0,
+      "2026-Q1": 4915062000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2511600091136,
+    "enterprise_value": 2511671132160,
+    "shares_outstanding": 840000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1895,
+    "vol_trend": 0.412,
+    "price_chg_20d": -15.06
+  },
+  "neraca": {
+    "aset": 409750076.0,
+    "aset_lancar": 360945380.0,
+    "kas": 17397181.0,
+    "piutang_usaha": 101470947.0,
+    "persediaan": 232588229.0,
+    "aset_tetap": 35060275.0,
+    "liabilitas": 239834894.0,
+    "liabilitas_jangka_pendek": 219078077.0,
+    "liabilitas_jangka_panjang": 20756817.0,
+    "utang_usaha": 101470947.0,
+    "utang_bank": 88475806.0,
+    "ekuitas": 169915182.0,
+    "ekuitas_induk": 169915182.0,
+    "modal_saham": null,
+    "saldo_laba": 4646585.0
+  },
+  "laba_rugi": {
+    "pendapatan": 113796993.0,
+    "beban_pokok": 92619947.0,
+    "laba_kotor": 21177046.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6314815.0,
+    "beban_pajak": -1399753.0,
+    "laba_bersih": 4915062.0,
+    "laba_induk": 4915062.0,
+    "eps_basic": 0.006,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 102689528,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 464644.0,
+    "dividen_dibayar": null
+  }
+}

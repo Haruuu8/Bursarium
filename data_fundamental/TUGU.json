@@ -1,0 +1,95 @@
+{
+  "kode": "TUGU",
+  "nama": "PT Asuransi Tugu Pratama Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Diversified",
+  "harga": 1245.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.222222222222221,
+    "pb": null,
+    "ps": 0.03501664701526639,
+    "roe": 0.05230928721805771,
+    "eps": 135.0,
+    "de": 2.116994976867158,
+    "margin_net": 4.958985782215128,
+    "current_ratio": null,
+    "roa": 0.016287766260848675,
+    "bv": 2.582324859581104
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5429200000000.0,
+      "2025-Q2": 18324750000000.0,
+      "2025-Q3": 11240441000000.0,
+      "2026-Q1": 52366042000000.0,
+      "2026-Q2": 44485543000000.0
+    },
+    "eps": {
+      "2025-Q1": 141.0,
+      "2025-Q2": -40.0,
+      "2025-Q3": 66.0,
+      "2026-Q1": 75.0,
+      "2026-Q2": 60.0
+    },
+    "net_income": {
+      "2025-Q1": 247313897000000.0,
+      "2025-Q2": 110216436000000.0,
+      "2025-Q3": 237287927000000.0,
+      "2026-Q1": 265617754000000.0,
+      "2026-Q2": 214667879000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4426691510272,
+    "enterprise_value": -2140425551872,
+    "shares_outstanding": 3555575600
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1789,
+    "vol_trend": 0.923,
+    "price_chg_20d": -11.7
+  },
+  "neraca": {
+    "aset": 29487507698.0,
+    "aset_lancar": null,
+    "kas": 389680741.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 3056995974.0,
+    "liabilitas": 19437509601.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 9181651262.0,
+    "ekuitas_induk": 9181651262.0,
+    "modal_saham": null,
+    "saldo_laba": 413313271.0
+  },
+  "laba_rugi": {
+    "pendapatan": 96851585.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 554777023.0,
+    "beban_pajak": -61270667.0,
+    "laba_bersih": 480285633.0,
+    "laba_induk": 480285633.0,
+    "eps_basic": 135.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 787438305280,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 150413435.0,
+    "dividen_dibayar": 348637308.0
+  }
+}

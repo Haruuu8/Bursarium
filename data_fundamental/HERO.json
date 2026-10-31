@@ -1,0 +1,95 @@
+{
+  "kode": "HERO",
+  "nama": "PT DFI Retail Nusantara Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 294.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7144963949540976,
+    "ps": 0.24532157294496368,
+    "roe": 0.03641932852970358,
+    "eps": null,
+    "de": 1.503536500073193,
+    "margin_net": 0.023110714310727875,
+    "current_ratio": 0.60683190486255,
+    "roa": 0.014547153008809271,
+    "bv": 411.4786331691539
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1210232000000.0,
+      "2025-Q2": 1144243000000.0,
+      "2025-Q3": 1156726000000.0,
+      "2026-Q1": 1407911000000.0,
+      "2026-Q2": 1304900000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0
+    },
+    "net_income": {
+      "2025-Q1": 27137000000000.0,
+      "2025-Q2": 48041000000000.0,
+      "2025-Q3": -4837000000000.0,
+      "2026-Q1": 87015000000000.0,
+      "2026-Q2": -24320000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1229988429824,
+    "enterprise_value": 2375981465600,
+    "shares_outstanding": 4183634000
+  },
+  "akumulasi": {
+    "score": 2.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.079,
+    "vol_trend": 2.205,
+    "price_chg_20d": -10.37
+  },
+  "neraca": {
+    "aset": 4309778.0,
+    "aset_lancar": 1358054.0,
+    "kas": 25591.0,
+    "piutang_usaha": 56535.0,
+    "persediaan": 1037446.0,
+    "aset_tetap": 1611.0,
+    "liabilitas": 2588302.0,
+    "liabilitas_jangka_pendek": 2237941.0,
+    "liabilitas_jangka_panjang": 350361.0,
+    "utang_usaha": 56535.0,
+    "utang_bank": 615000.0,
+    "ekuitas": 1721476.0,
+    "ekuitas_induk": 1721476.0,
+    "modal_saham": null,
+    "saldo_laba": 42000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2712811.0,
+    "beban_pokok": 1524804.0,
+    "laba_kotor": 1188007.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 37903.0,
+    "beban_pajak": -14324.0,
+    "laba_bersih": 62695.0,
+    "laba_induk": 62695.0,
+    "eps_basic": 6e-06,
+    "eps_diluted": 6e-06
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 475665006592,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1611.0,
+    "dividen_dibayar": null
+  }
+}

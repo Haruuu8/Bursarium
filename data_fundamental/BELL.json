@@ -1,0 +1,95 @@
+{
+  "kode": "BELL",
+  "nama": "PT Trisula Textile Industries Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 66.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 51.78467395179044,
+    "pb": 1.9784163770920764,
+    "ps": 0.8041836869818255,
+    "roe": 0.03840367515181487,
+    "eps": 1.2745083624827587,
+    "de": 1.287524683654181,
+    "margin_net": 0.027999504946662174,
+    "current_ratio": 1.3346780984688835,
+    "roa": 0.015646113244076866,
+    "bv": 33.360014991893856
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 151412672242.0,
+      "2025-Q2": 131655829410.0,
+      "2025-Q3": 130261701472.0,
+      "2026-Q1": 153281438711.0,
+      "2026-Q2": 176731025638.0
+    },
+    "eps": {
+      "2025-Q1": 0.84,
+      "2025-Q2": -0.14,
+      "2025-Q3": 0.05,
+      "2026-Q1": 0.43,
+      "2026-Q2": 0.84
+    },
+    "net_income": {
+      "2025-Q1": 6078859233.0,
+      "2025-Q2": -982693247.0,
+      "2025-Q3": 388689857.0,
+      "2026-Q1": 3123770582.0,
+      "2026-Q2": 6116415046.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 476020441088,
+    "enterprise_value": 662920495104,
+    "shares_outstanding": 7212431000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4655,
+    "vol_trend": 0.16,
+    "price_chg_20d": -28.26
+  },
+  "neraca": {
+    "aset": 590573868657.0,
+    "aset_lancar": 373389605051.0,
+    "kas": 26848281468.0,
+    "piutang_usaha": 110587865426.0,
+    "persediaan": 219789660543.0,
+    "aset_tetap": 197634847987.0,
+    "liabilitas": 309787202151.0,
+    "liabilitas_jangka_pendek": 279760045122.0,
+    "liabilitas_jangka_panjang": 30027157029.0,
+    "utang_usaha": 110587865426.0,
+    "utang_bank": 123187529590.0,
+    "ekuitas": 240606806288.0,
+    "ekuitas_induk": 240606806288.0,
+    "modal_saham": null,
+    "saldo_laba": 900000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 330012464349.0,
+    "beban_pokok": 236353502189.0,
+    "laba_kotor": 93658962160.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 18137613035.0,
+    "beban_pajak": -5140970782.0,
+    "laba_bersih": 9240185628.0,
+    "laba_induk": 9240185628.0,
+    "eps_basic": 1.2745083624827587,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 74688897024,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7342198764.0,
+    "dividen_dibayar": 11054100000.0
+  }
+}

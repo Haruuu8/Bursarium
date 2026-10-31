@@ -1,0 +1,95 @@
+{
+  "kode": "ASSA",
+  "nama": "PT Adi Sarana Armada Tbk",
+  "sektor": "Industrials",
+  "industri": "Rental & Leasing Services",
+  "harga": 486.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.928899503950028,
+    "pb": 0.7934495720406817,
+    "ps": 0.29438479458907885,
+    "roe": 0.08886715118398991,
+    "eps": 54.43,
+    "de": 2.486048808639957,
+    "margin_net": 0.06556980482215403,
+    "current_ratio": 0.986049566417188,
+    "roa": 0.022284771662413858,
+    "bv": 612.5152966559062
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1385235715994.0,
+      "2025-Q2": 1450535932280.0,
+      "2025-Q3": 1578982960381.0,
+      "2026-Q1": 1538512122034.0,
+      "2026-Q2": 1525669700269.0
+    },
+    "eps": {
+      "2025-Q1": 27.57,
+      "2025-Q2": 28.04,
+      "2025-Q3": 37.68,
+      "2026-Q1": 26.68,
+      "2026-Q2": 27.75
+    },
+    "net_income": {
+      "2025-Q1": 101752108963.0,
+      "2025-Q2": 103494724854.0,
+      "2025-Q3": 143352680115.0,
+      "2026-Q1": 98475511320.0,
+      "2026-Q2": 102442292708.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1793892810752,
+    "enterprise_value": 6110134665216,
+    "shares_outstanding": 3691137517
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.211,
+    "vol_trend": 0.933,
+    "price_chg_20d": -14.74
+  },
+  "neraca": {
+    "aset": 9015923836764.0,
+    "aset_lancar": 2422129593926.0,
+    "kas": 1124492275976.0,
+    "piutang_usaha": 666401332007.0,
+    "persediaan": 158359246479.0,
+    "aset_tetap": 5803121853703.0,
+    "liabilitas": 5620653533770.0,
+    "liabilitas_jangka_pendek": 2456397402746.0,
+    "liabilitas_jangka_panjang": 3164256131024.0,
+    "utang_usaha": 666401332007.0,
+    "utang_bank": 152915399178.0,
+    "ekuitas": 2260878191223.0,
+    "ekuitas_induk": 2260878191223.0,
+    "modal_saham": null,
+    "saldo_laba": 14000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3064181822303.0,
+    "beban_pokok": 2147434842060.0,
+    "laba_kotor": 916746980243.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 347863483940.0,
+    "beban_pajak": -76625286417.0,
+    "laba_bersih": 200917804028.0,
+    "laba_induk": 200917804028.0,
+    "eps_basic": 54.43,
+    "eps_diluted": 54.43
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1097842163712,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 365443228554.0,
+    "dividen_dibayar": 123423995090.0
+  }
+}

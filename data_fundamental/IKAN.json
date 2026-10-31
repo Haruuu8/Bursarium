@@ -1,0 +1,86 @@
+{
+  "kode": "IKAN",
+  "nama": "PT Era Mandiri Cemerlang Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 59.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.6622387285396396,
+    "ps": 0.43012989083421166,
+    "roe": -0.010066590054021746,
+    "eps": null,
+    "de": 0.7371898964357206,
+    "margin_net": -0.02615335584832053,
+    "current_ratio": 2.0450923555893654,
+    "roa": -0.005794755124166835,
+    "bv": 89.09173906229563
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 28916574774.0,
+      "2026-Q1": 28576627693.0
+    },
+    "eps": {
+      "2025-Q3": 0.14,
+      "2026-Q1": -0.9
+    },
+    "net_income": {
+      "2025-Q3": 117218440000000.0,
+      "2026-Q1": -747374713000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 49166647296,
+    "enterprise_value": 85508857856,
+    "shares_outstanding": 833333000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.331,
+    "vol_trend": 0.317,
+    "price_chg_20d": -23.38
+  },
+  "neraca": {
+    "aset": 128974339206.0,
+    "aset_lancar": 104569294510.0,
+    "kas": 6739193592.0,
+    "piutang_usaha": 12178035822.0,
+    "persediaan": 45883716031.0,
+    "aset_tetap": 17792591440.0,
+    "liabilitas": 54731253018.0,
+    "liabilitas_jangka_pendek": 51131820147.0,
+    "liabilitas_jangka_panjang": 3599432871.0,
+    "utang_usaha": 12178035822.0,
+    "utang_bank": 43063511955.0,
+    "ekuitas": 74243086188.0,
+    "ekuitas_induk": 74243086188.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 28576627693.0,
+    "beban_pokok": 23666335680.0,
+    "laba_kotor": 4910292013.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -775130918.0,
+    "beban_pajak": 27756205.0,
+    "laba_bersih": -747374713.0,
+    "laba_induk": -747374713.0,
+    "eps_basic": -0.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4503219200,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11715000.0,
+    "dividen_dibayar": null
+  }
+}

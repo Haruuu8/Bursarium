@@ -1,0 +1,95 @@
+{
+  "kode": "ERAA",
+  "nama": "PT Erajaya Swasembada Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 482.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 92.3519377677747,
+    "roe": 0.08270301251110657,
+    "eps": null,
+    "de": 1.941379520229117,
+    "margin_net": 0.018277545849898092,
+    "current_ratio": 1.264476392419359,
+    "roa": 0.02671392999100458,
+    "bv": 0.6233210822754804
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 15882480637.0,
+      "2025-Q2": 19163709669.0,
+      "2025-Q3": 17318189786.0,
+      "2026-Q1": 22412935967.0,
+      "2026-Q2": 20482428566.0
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": 35.99,
+      "2025-Q3": 13.77,
+      "2026-Q1": 28.76,
+      "2026-Q2": -28.71
+    },
+    "net_income": {
+      "2025-Q1": 203253246000000.0,
+      "2025-Q2": 365043263000000.0,
+      "2025-Q3": 217277432000000.0,
+      "2026-Q1": 452714205000000.0,
+      "2026-Q2": 331307787000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7330644099072,
+    "enterprise_value": 15471980052480,
+    "shares_outstanding": 15208805278
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2659,
+    "vol_trend": 1.211,
+    "price_chg_20d": -19.67
+  },
+  "neraca": {
+    "aset": 29348807617.0,
+    "aset_lancar": 18275714982.0,
+    "kas": 1312396735.0,
+    "piutang_usaha": 1320122271.0,
+    "persediaan": 12480667742.0,
+    "aset_tetap": 106153073.0,
+    "liabilitas": 18404217603.0,
+    "liabilitas_jangka_pendek": 14453187969.0,
+    "liabilitas_jangka_panjang": 3951029634.0,
+    "utang_usaha": 1320122271.0,
+    "utang_bank": 3363101186.0,
+    "ekuitas": 9479968966.0,
+    "ekuitas_induk": 9479968966.0,
+    "modal_saham": null,
+    "saldo_laba": 16000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 42895364533.0,
+    "beban_pokok": 38099576641.0,
+    "laba_kotor": 4795787892.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1149470256.0,
+    "beban_pajak": -277350661.0,
+    "laba_bersih": 784021992.0,
+    "laba_induk": 784021992.0,
+    "eps_basic": 0.05009,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4154797588480,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 106153073.0,
+    "dividen_dibayar": 319200.0
+  }
+}

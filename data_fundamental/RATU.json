@@ -1,0 +1,98 @@
+{
+  "kode": "RATU",
+  "nama": "PT Raharja Energi Cepu Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas E&P",
+  "harga": 1935.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.09956626681500447,
+    "roe": 0.373455514637017,
+    "eps": null,
+    "de": 2.3191975939865563,
+    "margin_net": 0.6224173983538694,
+    "current_ratio": 3.268802340926778,
+    "roa": 0.10568427704922442,
+    "bv": 24742.057413374278
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 13246815000000.0,
+      "2025-Q2": 11905783000000.0,
+      "2025-Q3": 12458993000000.0,
+      "2026-Q1": 11017175000000.0,
+      "2026-Q2": 14630557000000.0,
+      "2026-Q3": 14658426000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 5924233000000.0,
+      "2025-Q2": 1724281000000.0,
+      "2025-Q3": 4117749000000.0,
+      "2026-Q1": 4058124000000.0,
+      "2026-Q2": 10492977000000.0,
+      "2026-Q3": 10536153000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 5253628952576,
+    "enterprise_value": 6054675480576,
+    "shares_outstanding": 2715053800
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.352,
+    "vol_trend": 0.96,
+    "price_chg_20d": -52.57
+  },
+  "neraca": {
+    "aset": 237379246.0,
+    "aset_lancar": 73480395.0,
+    "kas": 53394310.0,
+    "piutang_usaha": 4948488.0,
+    "persediaan": null,
+    "aset_tetap": 1162671.0,
+    "liabilitas": 155794457.0,
+    "liabilitas_jangka_pendek": 22479302.0,
+    "liabilitas_jangka_panjang": 133315155.0,
+    "utang_usaha": 4948488.0,
+    "utang_bank": 16450311.0,
+    "ekuitas": 67176017.0,
+    "ekuitas_induk": 67176017.0,
+    "modal_saham": null,
+    "saldo_laba": 36184.0
+  },
+  "laba_rugi": {
+    "pendapatan": 40306158.0,
+    "beban_pokok": 16585479.0,
+    "laba_kotor": 23720679.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 41729092.0,
+    "beban_pajak": -9604112.0,
+    "laba_bersih": 25087254.0,
+    "laba_induk": 25087254.0,
+    "eps_basic": 0.00924005778449031,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 18025196,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1050805.0,
+    "dividen_dibayar": 7130580.0
+  }
+}

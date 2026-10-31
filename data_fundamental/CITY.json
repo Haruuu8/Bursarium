@@ -1,0 +1,98 @@
+{
+  "kode": "CITY",
+  "nama": "PT Natura City Developments Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 112.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 33.93939393939394,
+    "pb": 0.6705245627530869,
+    "ps": 3.822411102210477,
+    "roe": 0.019751217314629598,
+    "eps": 3.3,
+    "de": 0.26534589470492237,
+    "margin_net": 0.14236146640950642,
+    "current_ratio": 5.196715659970873,
+    "roa": 0.015610188771346114,
+    "bv": 167.03340372818337
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 38972461906.0,
+      "2025-Q2": 32670258471.0,
+      "2025-Q3": 33115851866.0,
+      "2026-Q1": 42367488872.0,
+      "2026-Q2": 41247541270.0,
+      "2026-Q3": 41645898512.0
+    },
+    "eps": {
+      "2025-Q1": 0.65,
+      "2025-Q2": 0.8,
+      "2025-Q3": 0.75,
+      "2026-Q1": 1.2,
+      "2026-Q2": 1.25,
+      "2026-Q3": 0.85
+    },
+    "net_income": {
+      "2025-Q1": 3525481186.0,
+      "2025-Q2": 4291389051.0,
+      "2025-Q3": 4107359527.0,
+      "2026-Q1": 6472424290.0,
+      "2026-Q2": 6771069382.0,
+      "2026-Q3": 4588835815.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 605381197824,
+    "enterprise_value": 657996578816,
+    "shares_outstanding": 5405188966
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5752,
+    "vol_trend": 0.351,
+    "price_chg_20d": -29.11
+  },
+  "neraca": {
+    "aset": 1142351943862.0,
+    "aset_lancar": 573943957118.0,
+    "kas": 61111026160.0,
+    "piutang_usaha": 80144067949.0,
+    "persediaan": 48294370191.0,
+    "aset_tetap": 21970400000.0,
+    "liabilitas": 239566774393.0,
+    "liabilitas_jangka_pendek": 110443594507.0,
+    "liabilitas_jangka_panjang": 129123179886.0,
+    "utang_usaha": 80144067949.0,
+    "utang_bank": 19452712967.0,
+    "ekuitas": 902847110785.0,
+    "ekuitas_induk": 902847110785.0,
+    "modal_saham": null,
+    "saldo_laba": 320667093795.0
+  },
+  "laba_rugi": {
+    "pendapatan": 125260928654.0,
+    "beban_pokok": 52357838933.0,
+    "laba_kotor": 72903089721.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17935756350.0,
+    "beban_pajak": -98408000.0,
+    "laba_bersih": 17832329487.0,
+    "laba_induk": 17832329487.0,
+    "eps_basic": 3.3,
+    "eps_diluted": 3.3
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -32815130624,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 21970400000.0,
+    "dividen_dibayar": null
+  }
+}

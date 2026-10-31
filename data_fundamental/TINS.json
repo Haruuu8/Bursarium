@@ -1,0 +1,95 @@
+{
+  "kode": "TINS",
+  "nama": "PT TIMAH Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 3660.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.054945054945055,
+    "pb": 2.584450433401244,
+    "ps": 1.8258242089144674,
+    "roe": 0.25738317494726576,
+    "eps": 364.0,
+    "de": 0.5595179357146487,
+    "margin_net": 0.2605325706261374,
+    "current_ratio": 2.6169989727791956,
+    "roa": 0.1650363919531477,
+    "bv": 1416.1618085990096
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2097892000000.0,
+      "2025-Q2": 2121979000000.0,
+      "2025-Q3": 2387869000000.0,
+      "2026-Q1": 5465058000000.0,
+      "2026-Q2": 4954668000000.0
+    },
+    "eps": {
+      "2025-Q1": 16.0,
+      "2025-Q2": 24.0,
+      "2025-Q3": 41.0,
+      "2026-Q1": 202.0,
+      "2026-Q2": 162.0
+    },
+    "net_income": {
+      "2025-Q1": 116859000000000.0,
+      "2025-Q2": 183208000000000.0,
+      "2025-Q3": 302353000000000.0,
+      "2026-Q1": 1500740000000.0,
+      "2026-Q2": 1213938000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 27258777501696,
+    "enterprise_value": 23986513641472,
+    "shares_outstanding": 7447753453
+  },
+  "akumulasi": {
+    "score": 4.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.007,
+    "vol_trend": 1.114,
+    "price_chg_20d": -20.95
+  },
+  "neraca": {
+    "aset": 16448966.0,
+    "aset_lancar": 9568973.0,
+    "kas": 4483933.0,
+    "piutang_usaha": 628239.0,
+    "persediaan": 2877480.0,
+    "aset_tetap": 1828581.0,
+    "liabilitas": 5901361.0,
+    "liabilitas_jangka_pendek": 3656468.0,
+    "liabilitas_jangka_panjang": 2244893.0,
+    "utang_usaha": 628239.0,
+    "utang_bank": 319292.0,
+    "ekuitas": 10547224.0,
+    "ekuitas_induk": 10547224.0,
+    "modal_saham": null,
+    "saldo_laba": 6782386.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10419726.0,
+    "beban_pokok": 6360781.0,
+    "laba_kotor": 4058945.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3546423.0,
+    "beban_pajak": -831719.0,
+    "laba_bersih": 2714678.0,
+    "laba_induk": 2714678.0,
+    "eps_basic": 364.0,
+    "eps_diluted": 364.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3816687927296,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 76787.0,
+    "dividen_dibayar": null
+  }
+}

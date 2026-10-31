@@ -1,0 +1,95 @@
+{
+  "kode": "SCMA",
+  "nama": "PT Surya Citra Media Tbk",
+  "sektor": "Communication Services",
+  "industri": "Broadcasting",
+  "harga": 130.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 15.384615384615385,
+    "pb": null,
+    "ps": 1205.3653921376817,
+    "roe": 0.08495068674400262,
+    "eps": 8.45,
+    "de": 0.47802131259097896,
+    "margin_net": 0.15123953270159293,
+    "current_ratio": 2.4471182425039326,
+    "roa": 0.051504359621565195,
+    "bv": 0.09934410610214997
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1737894633.0,
+      "2025-Q2": 1585365754.0,
+      "2025-Q3": 1723170465.0,
+      "2026-Q1": 1863956570.0,
+      "2026-Q2": 1683031254.0
+    },
+    "eps": {
+      "2025-Q1": 2.42,
+      "2025-Q2": 2.63,
+      "2025-Q3": 4.27,
+      "2026-Q1": 4.84,
+      "2026-Q2": 3.61
+    },
+    "net_income": {
+      "2025-Q1": 153652369000000.0,
+      "2025-Q2": 167063993000000.0,
+      "2025-Q3": 270857406000000.0,
+      "2026-Q1": 307630011000000.0,
+      "2026-Q2": 228814770000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 8263411171328,
+    "enterprise_value": 8309806989312,
+    "shares_outstanding": 63564703280
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1893,
+    "vol_trend": 0.981,
+    "price_chg_20d": -24.42
+  },
+  "neraca": {
+    "aset": 10415521811.0,
+    "aset_lancar": 6774495272.0,
+    "kas": 1104003864.0,
+    "piutang_usaha": 2014212904.0,
+    "persediaan": 1312960850.0,
+    "aset_tetap": 32567545.0,
+    "liabilitas": 3018598768.0,
+    "liabilitas_jangka_pendek": 2768356328.0,
+    "liabilitas_jangka_panjang": 250242440.0,
+    "utang_usaha": 2014212904.0,
+    "utang_bank": 752434343.0,
+    "ekuitas": 6314778627.0,
+    "ekuitas_induk": 6314778627.0,
+    "modal_saham": null,
+    "saldo_laba": 24000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3546987824.0,
+    "beban_pokok": 2025909401.0,
+    "laba_kotor": 1521078423.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 702836990.0,
+    "beban_pajak": -152559608.0,
+    "laba_bersih": 536444781.0,
+    "laba_induk": 536444781.0,
+    "eps_basic": 8.45,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1288050311168,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32567545.0,
+    "dividen_dibayar": 762072819.0
+  }
+}

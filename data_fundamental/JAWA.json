@@ -1,0 +1,95 @@
+{
+  "kode": "JAWA",
+  "nama": "PT Jaya Agra Wattie Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 101.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 63.945950107484954,
+    "pb": 1.2006435335699135,
+    "ps": 0.98302992066646,
+    "roe": 0.008541088760650269,
+    "eps": 1.5794588997463004,
+    "de": 1.9705911391938835,
+    "margin_net": 0.014602084306399617,
+    "current_ratio": 0.8757244671147623,
+    "roa": 0.0028697558475055717,
+    "bv": 84.12155412997005
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 475668309998.0,
+      "2025-Q2": 462413277728.0,
+      "2025-Q3": 406682250032.0,
+      "2026-Q1": 354571786533.0,
+      "2026-Q2": 444164052356.0
+    },
+    "eps": {
+      "2025-Q1": 1.33,
+      "2025-Q2": 0.73,
+      "2025-Q3": 0.13,
+      "2026-Q1": -1.43,
+      "2026-Q2": 2.15
+    },
+    "net_income": {
+      "2025-Q1": 21647014338.0,
+      "2025-Q2": 11793414149.0,
+      "2025-Q3": 2182658049.0,
+      "2026-Q1": -23139942941.0,
+      "2026-Q2": 34803150999.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1639528136704,
+    "enterprise_value": 3998928076800,
+    "shares_outstanding": 16232951842
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5474,
+    "vol_trend": 0.194,
+    "price_chg_20d": -42.61
+  },
+  "neraca": {
+    "aset": 4064181302440.0,
+    "aset_lancar": 637741509912.0,
+    "kas": 3567855052.0,
+    "piutang_usaha": 94041514971.0,
+    "persediaan": 214990885540.0,
+    "aset_tetap": 65159404072.0,
+    "liabilitas": 2690923264907.0,
+    "liabilitas_jangka_pendek": 728244480839.0,
+    "liabilitas_jangka_panjang": 1962678784068.0,
+    "utang_usaha": 94041514971.0,
+    "utang_bank": 85000000000.0,
+    "ekuitas": 1365541137066.0,
+    "ekuitas_induk": 1365541137066.0,
+    "modal_saham": null,
+    "saldo_laba": 29709895542.0
+  },
+  "laba_rugi": {
+    "pendapatan": 798735838889.0,
+    "beban_pokok": 736643091955.0,
+    "laba_kotor": 62092746934.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17460130573.0,
+    "beban_pajak": -5244401694.0,
+    "laba_bersih": 11663208058.0,
+    "laba_induk": 11663208058.0,
+    "eps_basic": 0.72,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 136264663040,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 65159404072.0,
+    "dividen_dibayar": null
+  }
+}

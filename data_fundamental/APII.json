@@ -1,0 +1,95 @@
+{
+  "kode": "APII",
+  "nama": "PT Arita Prima Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Tools & Accessories",
+  "harga": 173.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 21.625,
+    "pb": 0.45797857428694255,
+    "ps": 0.49828087487949535,
+    "roe": 0.02058649440312304,
+    "eps": 8.0,
+    "de": 0.5770569445532945,
+    "margin_net": 0.04515950857955403,
+    "current_ratio": 1.6061118233880087,
+    "roa": 0.012339765739706576,
+    "bv": 377.74692903342753
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 75717620598.0,
+      "2025-Q2": 93470165980.0,
+      "2025-Q3": 94780677885.0,
+      "2026-Q1": 85903486192.0,
+      "2026-Q2": 99342806563.0
+    },
+    "eps": {
+      "2025-Q1": 1.0,
+      "2025-Q2": 9.0,
+      "2025-Q3": 7.0,
+      "2026-Q1": 1.0,
+      "2026-Q2": 7.0
+    },
+    "net_income": {
+      "2025-Q1": -1429635002.0,
+      "2025-Q2": 12257804006.0,
+      "2025-Q3": 7631798921.0,
+      "2026-Q1": 1576571130.0,
+      "2026-Q2": 6789060417.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 186106478592,
+    "enterprise_value": 341664268288,
+    "shares_outstanding": 1075760000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1543,
+    "vol_trend": 0.066,
+    "price_chg_20d": -8.95
+  },
+  "neraca": {
+    "aset": 677940872093.0,
+    "aset_lancar": 343715710866.0,
+    "kas": 23254668202.0,
+    "piutang_usaha": 65542287463.0,
+    "persediaan": 188157760870.0,
+    "aset_tetap": 251551769235.0,
+    "liabilitas": 234495766265.0,
+    "liabilitas_jangka_pendek": 214004844408.0,
+    "liabilitas_jangka_panjang": 20490921857.0,
+    "utang_usaha": 65542287463.0,
+    "utang_bank": 120998761009.0,
+    "ekuitas": 406365036377.0,
+    "ekuitas_induk": 406365036377.0,
+    "modal_saham": null,
+    "saldo_laba": 16000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 185246292755.0,
+    "beban_pokok": 94154705609.0,
+    "laba_kotor": 91091587146.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 13975567310.0,
+    "beban_pajak": 496910800.0,
+    "laba_bersih": 8365631547.0,
+    "laba_induk": 8365631547.0,
+    "eps_basic": 8.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 15112397824,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7416186997.0,
+    "dividen_dibayar": null
+  }
+}

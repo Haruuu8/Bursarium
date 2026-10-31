@@ -1,0 +1,95 @@
+{
+  "kode": "DIVA",
+  "nama": "PT Distribusi Voucher Nusantara Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Application",
+  "harga": 88.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.20533442213192812,
+    "ps": 0.03941390666139117,
+    "roe": -0.05629194297801282,
+    "eps": -26.894857053733904,
+    "de": 0.12799127079933084,
+    "margin_net": -0.02409019413241693,
+    "current_ratio": 8.362995000563009,
+    "roa": -0.045101482526777446,
+    "bv": 428.5691560446678
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 883340427538.0,
+      "2025-Q2": 868032448479.0,
+      "2025-Q3": 855730363435.0,
+      "2026-Q1": 716469046201.0,
+      "2026-Q2": 685540724096.0
+    },
+    "eps": {
+      "2025-Q1": 14.37,
+      "2025-Q2": -2.19,
+      "2025-Q3": -0.58,
+      "2026-Q1": -17.81,
+      "2026-Q2": -6.31
+    },
+    "net_income": {
+      "2025-Q1": 20122169690.0,
+      "2025-Q2": -3068057279.0,
+      "2025-Q3": -809721558.0,
+      "2026-Q1": -24940622766.0,
+      "2026-Q2": -8834064776.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 123198906368,
+    "enterprise_value": 145093115904,
+    "shares_outstanding": 1399987600
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6141,
+    "vol_trend": 0.951,
+    "price_chg_20d": -31.78
+  },
+  "neraca": {
+    "aset": 748859807922.0,
+    "aset_lancar": 577885533904.0,
+    "kas": 38419522184.0,
+    "piutang_usaha": 10695857854.0,
+    "persediaan": 154086710859.0,
+    "aset_tetap": 56212662198.0,
+    "liabilitas": 76793675092.0,
+    "liabilitas_jangka_pendek": 69100308426.0,
+    "liabilitas_jangka_panjang": 7693366666.0,
+    "utang_usaha": 10695857854.0,
+    "utang_bank": 580120686560.0,
+    "ekuitas": 599991504205.0,
+    "ekuitas_induk": 599991504205.0,
+    "modal_saham": null,
+    "saldo_laba": 700000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1402009770297.0,
+    "beban_pokok": 1337041283010.0,
+    "laba_kotor": 64968487287.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -29446198614.0,
+    "beban_pajak": -2526371623.0,
+    "laba_bersih": -33774687542.0,
+    "laba_induk": -33774687542.0,
+    "eps_basic": -24.12499049420152,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 5902285824,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1156924773.0,
+    "dividen_dibayar": 3000000000.0
+  }
+}

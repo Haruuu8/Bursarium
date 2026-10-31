@@ -1,0 +1,95 @@
+{
+  "kode": "FWCT",
+  "nama": "PT Wijaya Cahaya Timber Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Lumber & Wood Production",
+  "harga": 75.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.67593848611897,
+    "pb": 0.45963143670698786,
+    "ps": 0.1202708681910519,
+    "roe": -0.08007706437661823,
+    "eps": 5.48408433367295,
+    "de": 1.3518184846332746,
+    "margin_net": -0.05786920520767541,
+    "current_ratio": 1.7167502572537185,
+    "roa": -0.03404598837742469,
+    "bv": 163.1742174498217
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 363869165083.0,
+      "2025-Q2": 325100339358.0,
+      "2025-Q3": 455778168157.0,
+      "2026-Q1": 120856162706.0,
+      "2026-Q2": 322377221664.0
+    },
+    "eps": {
+      "2025-Q1": 5.08,
+      "2025-Q2": 10.74,
+      "2025-Q3": 7.58,
+      "2026-Q1": -10.63,
+      "2026-Q2": -2.44
+    },
+    "net_income": {
+      "2025-Q1": 9521513853.0,
+      "2025-Q2": 20136284150.0,
+      "2025-Q3": 16278537072.0,
+      "2026-Q1": -20867725738.0,
+      "2026-Q2": -4781837937.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 147225001984,
+    "enterprise_value": 442242465792,
+    "shares_outstanding": 1963000000
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3813,
+    "vol_trend": 1.9,
+    "price_chg_20d": -3.85
+  },
+  "neraca": {
+    "aset": 753379910451.0,
+    "aset_lancar": 288597993225.0,
+    "kas": 61106008416.0,
+    "piutang_usaha": 41812389563.0,
+    "persediaan": 103881106904.0,
+    "aset_tetap": 10454948424.0,
+    "liabilitas": 433002315564.0,
+    "liabilitas_jangka_pendek": 168107150126.0,
+    "liabilitas_jangka_panjang": 264895165438.0,
+    "utang_usaha": 41812389563.0,
+    "utang_bank": 58674552407.0,
+    "ekuitas": 320310988854.0,
+    "ekuitas_induk": 320310988854.0,
+    "modal_saham": null,
+    "saldo_laba": 250000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 443233384370.0,
+    "beban_pokok": 419839443864.0,
+    "laba_kotor": 23393940506.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -25650134045.0,
+    "beban_pajak": 128547025.0,
+    "laba_bersih": -25649563675.0,
+    "laba_induk": -25649563675.0,
+    "eps_basic": -13.07,
+    "eps_diluted": -13.07
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 29592324096,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10454948424.0,
+    "dividen_dibayar": null
+  }
+}

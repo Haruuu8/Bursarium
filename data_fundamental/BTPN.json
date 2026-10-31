@@ -1,0 +1,89 @@
+{
+  "kode": "BTPN",
+  "nama": "PT Bank SMBC Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 2400.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2025-audit",
+  "rasio_kunci": {
+    "pe": 51.06382978723404,
+    "pb": 0.5384244681096768,
+    "ps": 1.0542645394212375,
+    "roe": 0.010653674540660291,
+    "eps": 47.0,
+    "de": 3.8450624194900604,
+    "margin_net": 0.020860477091960605,
+    "current_ratio": null,
+    "roa": 0.0020563789849722897,
+    "bv": 4457.44972999838
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6171229000000.0,
+      "2025-Q2": 6055534000000.0,
+      "2025-Q3": 5965714000000.0
+    },
+    "eps": {
+      "2025-Q1": 48.0,
+      "2025-Q2": 46.0,
+      "2025-Q3": 44.0
+    },
+    "net_income": {
+      "2025-Q1": 509582000000000.0,
+      "2025-Q2": -508581903000000.0,
+      "2025-Q3": 473499000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 25550269710336,
+    "enterprise_value": 65509865291776,
+    "shares_outstanding": 10645945748
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.2638,
+    "vol_trend": 2.75,
+    "price_chg_20d": -1.23
+  },
+  "neraca": {
+    "aset": 245848165.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": 30377030.0,
+    "persediaan": null,
+    "aset_tetap": 2305591.0,
+    "liabilitas": 182462700.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 47453768.0,
+    "ekuitas_induk": 47453768.0,
+    "modal_saham": null,
+    "saldo_laba": 28608134.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24235160.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 323918.0,
+    "laba_sebelum_pajak": 281327.0,
+    "beban_pajak": -383456.0,
+    "laba_bersih": 505557.0,
+    "laba_induk": 505557.0,
+    "eps_basic": 47.0,
+    "eps_diluted": 47.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4882236000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 811190.0
+  }
+}

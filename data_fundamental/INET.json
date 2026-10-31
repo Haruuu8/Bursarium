@@ -1,0 +1,95 @@
+{
+  "kode": "INET",
+  "nama": "PT Sinergi Inti Andalan Prima Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 150.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 47.92332268370607,
+    "pb": 0.9179697098336893,
+    "ps": 3.4149794604535884,
+    "roe": 0.009207990911628983,
+    "eps": 3.13,
+    "de": 0.6295462221917268,
+    "margin_net": 0.03634418188333821,
+    "current_ratio": 2.8353359095007087,
+    "roa": 0.005509920689372727,
+    "bv": 163.40408446284775
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 12102472660.0,
+      "2025-Q2": 32899883100.0,
+      "2025-Q3": 23602196146.0,
+      "2026-Q1": 383603471565.0,
+      "2026-Q2": 542849855575.0
+    },
+    "eps": {
+      "2025-Q1": 0.2,
+      "2025-Q2": 0.82,
+      "2025-Q3": 1.37,
+      "2026-Q1": 0.61,
+      "2026-Q2": 2.52
+    },
+    "net_income": {
+      "2025-Q1": 1533602898.0,
+      "2025-Q2": 6241950479.0,
+      "2025-Q3": 11599336505.0,
+      "2026-Q1": 13658452028.0,
+      "2026-Q2": 20012736200.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3356772532224,
+    "enterprise_value": 951882022912,
+    "shares_outstanding": 22378483489
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.153,
+    "vol_trend": 0.604,
+    "price_chg_20d": -42.75
+  },
+  "neraca": {
+    "aset": 6111011414909.0,
+    "aset_lancar": 4720207854212.0,
+    "kas": 4336912848074.0,
+    "piutang_usaha": 289944326487.0,
+    "persediaan": null,
+    "aset_tetap": 817362426620.0,
+    "liabilitas": 2302084086429.0,
+    "liabilitas_jangka_pendek": 1664779061414.0,
+    "liabilitas_jangka_panjang": 637305025015.0,
+    "utang_usaha": 289944326487.0,
+    "utang_bank": 774660266944.0,
+    "ekuitas": 3656735606187.0,
+    "ekuitas_induk": 3656735606187.0,
+    "modal_saham": null,
+    "saldo_laba": 4400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 926453327140.0,
+    "beban_pokok": 804346693684.0,
+    "laba_kotor": 122106633456.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 40144119655.0,
+    "beban_pajak": -5933685372.0,
+    "laba_bersih": 33671188228.0,
+    "laba_induk": 33671188228.0,
+    "eps_basic": 3.13,
+    "eps_diluted": 2.62
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 371615563776,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 102427733560.0,
+    "dividen_dibayar": 894468398.0
+  }
+}

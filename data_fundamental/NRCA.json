@@ -1,0 +1,95 @@
+{
+  "kode": "NRCA",
+  "nama": "PT Nusa Raya Cipta Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 402.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 10.864864864864865,
+    "pb": 0.738011263784747,
+    "ps": 0.28914464901433395,
+    "roe": 0.06839632870034935,
+    "eps": 37.0,
+    "de": 1.1213013134391052,
+    "margin_net": 0.054550004375607905,
+    "current_ratio": 1.7794372483214145,
+    "roa": 0.032242626884577436,
+    "bv": 544.7071335177478
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 889523044104.0,
+      "2025-Q2": 814923943027.0,
+      "2025-Q3": 950775628924.0,
+      "2026-Q1": 837777049692.0,
+      "2026-Q2": 867090299477.0
+    },
+    "eps": {
+      "2025-Q1": 17.0,
+      "2025-Q2": 15.0,
+      "2025-Q3": 32.0,
+      "2026-Q1": 16.0,
+      "2026-Q2": 21.0
+    },
+    "net_income": {
+      "2025-Q1": 41998856336.0,
+      "2025-Q2": 34516409565.0,
+      "2025-Q3": 79832420777.0,
+      "2026-Q1": 39902365367.0,
+      "2026-Q2": 53098155990.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1003495817216,
+    "enterprise_value": 759027073024,
+    "shares_outstanding": 2496258344
+  },
+  "akumulasi": {
+    "score": 4.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0226,
+    "vol_trend": 0.706,
+    "price_chg_20d": -23.43
+  },
+  "neraca": {
+    "aset": 2884396537848.0,
+    "aset_lancar": 2466575273166.0,
+    "kas": 583017037639.0,
+    "piutang_usaha": 489717046866.0,
+    "persediaan": 788362554.0,
+    "aset_tetap": 74259600530.0,
+    "liabilitas": 1524666728897.0,
+    "liabilitas_jangka_pendek": 1386154682045.0,
+    "liabilitas_jangka_panjang": 138512046852.0,
+    "utang_usaha": 489717046866.0,
+    "utang_bank": 325646901450.0,
+    "ekuitas": 1359729727080.0,
+    "ekuitas_induk": 1359729727080.0,
+    "modal_saham": null,
+    "saldo_laba": 65000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1704867349169.0,
+    "beban_pokok": 1497288160080.0,
+    "laba_kotor": 207579189089.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 93000511067.0,
+    "beban_pajak": 43606599786.0,
+    "laba_bersih": 93000521357.0,
+    "laba_induk": 93000521357.0,
+    "eps_basic": 37.0,
+    "eps_diluted": 37.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 62690533376,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3069625757.0,
+    "dividen_dibayar": 99850333760.0
+  }
+}

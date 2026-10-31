@@ -1,0 +1,95 @@
+{
+  "kode": "TALF",
+  "nama": "PT Tunas Alfin Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 605.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 28.823249166269655,
+    "pb": 0.6254217086613681,
+    "ps": 0.5883667454683127,
+    "roe": 0.021699866398560023,
+    "eps": 20.99,
+    "de": 0.45025481460002453,
+    "margin_net": 0.04029946808153,
+    "current_ratio": 1.964812790026885,
+    "roa": 0.014641261594552918,
+    "bv": 967.3472980253946
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 372776497544.0,
+      "2025-Q2": 328195344317.0,
+      "2025-Q3": 358520294997.0,
+      "2026-Q1": 294983936785.0,
+      "2026-Q2": 409997322658.0
+    },
+    "eps": {
+      "2025-Q1": 11.01,
+      "2025-Q2": 1.9,
+      "2025-Q3": 9.23,
+      "2026-Q1": 2.46,
+      "2026-Q2": 18.53
+    },
+    "net_income": {
+      "2025-Q1": 14904420222.0,
+      "2025-Q2": 2569302562.0,
+      "2025-Q3": 12488675720.0,
+      "2026-Q1": 3328438406.0,
+      "2026-Q2": 25081931357.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 818828148736,
+    "enterprise_value": 1088097157120,
+    "shares_outstanding": 1353435000
+  },
+  "akumulasi": {
+    "score": 3.1,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0946,
+    "vol_trend": 1.129,
+    "price_chg_20d": -9.02
+  },
+  "neraca": {
+    "aset": 1940431811803.0,
+    "aset_lancar": 672425459907.0,
+    "kas": 37870344553.0,
+    "piutang_usaha": 386093797934.0,
+    "persediaan": 238935862675.0,
+    "aset_tetap": 1083492400.0,
+    "liabilitas": 589492374534.0,
+    "liabilitas_jangka_pendek": 342233857251.0,
+    "liabilitas_jangka_panjang": 247258517283.0,
+    "utang_usaha": 386093797934.0,
+    "utang_bank": 41969465800.0,
+    "ekuitas": 1309241690303.0,
+    "ekuitas_induk": 1309241690303.0,
+    "modal_saham": null,
+    "saldo_laba": 3400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 704981259443.0,
+    "beban_pokok": 614052137049.0,
+    "laba_kotor": 90929122394.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 36931143031.0,
+    "beban_pajak": -8289900191.0,
+    "laba_bersih": 28410369763.0,
+    "laba_induk": 28410369763.0,
+    "eps_basic": 20.99,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 115761700864,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1083492400.0,
+    "dividen_dibayar": null
+  }
+}

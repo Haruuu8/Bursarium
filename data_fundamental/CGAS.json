@@ -1,0 +1,95 @@
+{
+  "kode": "CGAS",
+  "nama": "PT Citra Nusantara Gemilang Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Refining & Marketing",
+  "harga": 120.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 19.607843137254903,
+    "pb": 0.7925600344330499,
+    "ps": 0.31926133196231904,
+    "roe": 0.040392835827004245,
+    "eps": 6.12,
+    "de": 0.6604303698797725,
+    "margin_net": 0.028951413091040018,
+    "current_ratio": 2.4554186849365807,
+    "roa": 0.023553205715479593,
+    "bv": 151.40808870818327
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 135019835570.0,
+      "2025-Q2": 130455414933.0,
+      "2025-Q3": 161180197140.0,
+      "2026-Q1": 172971863612.0,
+      "2026-Q2": 201251679050.0
+    },
+    "eps": {
+      "2025-Q1": 0.8,
+      "2025-Q2": 0.25,
+      "2025-Q3": 3.95,
+      "2026-Q1": 2.79,
+      "2026-Q2": 3.33
+    },
+    "net_income": {
+      "2025-Q1": 1410527217.0,
+      "2025-Q2": 449025822.0,
+      "2025-Q3": 6921561503.0,
+      "2026-Q1": 4937889379.0,
+      "2026-Q2": 5896410993.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 212583071744,
+    "enterprise_value": 268358664192,
+    "shares_outstanding": 1771525672
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2294,
+    "vol_trend": 1.133,
+    "price_chg_20d": -17.81
+  },
+  "neraca": {
+    "aset": 459992601554.0,
+    "aset_lancar": 310208221142.0,
+    "kas": 42796771285.0,
+    "piutang_usaha": 65365270511.0,
+    "persediaan": 10487102391.0,
+    "aset_tetap": 135215436894.0,
+    "liabilitas": 177142823859.0,
+    "liabilitas_jangka_pendek": 126336181705.0,
+    "liabilitas_jangka_panjang": 50806642154.0,
+    "utang_usaha": 65365270511.0,
+    "utang_bank": 33206422898.0,
+    "ekuitas": 268223316095.0,
+    "ekuitas_induk": 268223316095.0,
+    "modal_saham": null,
+    "saldo_laba": 3000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 374223542662.0,
+    "beban_pokok": 304834879040.0,
+    "laba_kotor": 69388663622.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 13825488711.0,
+    "beban_pajak": -2677532527.0,
+    "laba_bersih": 10834300372.0,
+    "laba_induk": 10834300372.0,
+    "eps_basic": 6.12,
+    "eps_diluted": 6.12
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 72248786944,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 68560709974.0,
+    "dividen_dibayar": null
+  }
+}

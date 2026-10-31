@@ -1,0 +1,95 @@
+{
+  "kode": "INDF",
+  "nama": "PT Indofood Sukses Makmur Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 6400.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.895910780669144,
+    "pb": 0.7330243532876363,
+    "ps": 0.4497319982147006,
+    "roe": 0.061624823638605344,
+    "eps": 538.0,
+    "de": 1.3896539587934107,
+    "margin_net": 0.07209786134935331,
+    "current_ratio": 2.0294554754820653,
+    "roa": 0.0204296256985106,
+    "bv": 8730.951395128699
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 31555019000000.0,
+      "2025-Q2": 28288227000000.0,
+      "2025-Q3": 31137844000000.0,
+      "2026-Q1": 33890696000000.0,
+      "2026-Q2": 31634826000000.0
+    },
+    "eps": {
+      "2025-Q1": 310.0,
+      "2025-Q2": 355.0,
+      "2025-Q3": 233.0,
+      "2026-Q1": 337.0,
+      "2026-Q2": 201.0
+    },
+    "net_income": {
+      "2025-Q1": 2724025000000.0,
+      "2025-Q2": 3114234000000.0,
+      "2025-Q3": 2043088000000.0,
+      "2026-Q1": 2958189000000.0,
+      "2026-Q2": 1766061000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 56194727149568,
+    "enterprise_value": 119546228768768,
+    "shares_outstanding": 8780426500
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1402,
+    "vol_trend": 1.514,
+    "price_chg_20d": -6.23
+  },
+  "neraca": {
+    "aset": 231245059.0,
+    "aset_lancar": 101718139.0,
+    "kas": 54125470.0,
+    "piutang_usaha": 10713584.0,
+    "persediaan": 20881863.0,
+    "aset_tetap": 50149659.0,
+    "liabilitas": 106532925.0,
+    "liabilitas_jangka_pendek": 50120902.0,
+    "liabilitas_jangka_panjang": 56412023.0,
+    "utang_usaha": 10713584.0,
+    "utang_bank": 21651914.0,
+    "ekuitas": 76661477.0,
+    "ekuitas_induk": 76661477.0,
+    "modal_saham": null,
+    "saldo_laba": 145000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 65525522.0,
+    "beban_pokok": 44148492.0,
+    "laba_kotor": 21377030.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8712832.0,
+    "beban_pajak": -1761564.0,
+    "laba_bersih": 4724250.0,
+    "laba_induk": 4724250.0,
+    "eps_basic": 538.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 20143400812544,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1955114.0,
+    "dividen_dibayar": 775685.0
+  }
+}

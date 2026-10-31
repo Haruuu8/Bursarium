@@ -1,0 +1,95 @@
+{
+  "kode": "BUVA",
+  "nama": "PT Bukit Uluwatu Villa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 314.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 199.32804203998094,
+    "pb": 4.223145340877471,
+    "ps": 23.43295676473302,
+    "roe": 0.003776116629347284,
+    "eps": 1.5752926521849762,
+    "de": 0.26711052923661843,
+    "margin_net": 0.04677782548026894,
+    "current_ratio": 1.7752416368961859,
+    "roa": 0.002978293960530347,
+    "bv": 74.35216518850808
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 74306039893.0,
+      "2025-Q2": 91814316265.0,
+      "2025-Q3": 122587787665.0,
+      "2026-Q1": 64131882561.0,
+      "2026-Q2": 109816421672.0
+    },
+    "eps": {
+      "2025-Q1": 3.45,
+      "2025-Q2": 0.49,
+      "2025-Q3": 1.33,
+      "2026-Q1": -0.34,
+      "2026-Q2": 0.67
+    },
+    "net_income": {
+      "2025-Q1": 71064588006.0,
+      "2025-Q2": 10058625546.0,
+      "2025-Q3": 27458831779.0,
+      "2026-Q1": -8252844575.0,
+      "2026-Q2": 16389767993.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 9100197888000,
+    "enterprise_value": 7955764740096,
+    "shares_outstanding": 28981523325
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2723,
+    "vol_trend": 3.8,
+    "price_chg_20d": -46.78
+  },
+  "neraca": {
+    "aset": 2732075317559.0,
+    "aset_lancar": 254008217746.0,
+    "kas": 230776468678.0,
+    "piutang_usaha": 13249243127.0,
+    "persediaan": 2702842084.0,
+    "aset_tetap": 1491511872791.0,
+    "liabilitas": 575580188294.0,
+    "liabilitas_jangka_pendek": 143083742780.0,
+    "liabilitas_jangka_panjang": 432496445514.0,
+    "utang_usaha": 13249243127.0,
+    "utang_bank": 37932000000.0,
+    "ekuitas": 2154839009675.0,
+    "ekuitas_induk": 2154839009675.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 173948304233.0,
+    "beban_pokok": 53018423318.0,
+    "laba_kotor": 120929880915.0,
+    "beban_operasi": 85680923553.0,
+    "laba_operasi": 35248957362.0,
+    "laba_sebelum_pajak": 11239902229.0,
+    "beban_pajak": 630725717.0,
+    "laba_bersih": 8136923418.0,
+    "laba_induk": 8136923418.0,
+    "eps_basic": 0.33,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 79614205952,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9686501520.0,
+    "dividen_dibayar": null
+  }
+}

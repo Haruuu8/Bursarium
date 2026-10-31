@@ -1,0 +1,77 @@
+{
+  "kode": "PLAN",
+  "nama": "PT Planet Properindo Jaya Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 47.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8002063134600137,
+    "ps": 3.9335083659698737,
+    "roe": -0.02357545308074366,
+    "eps": -2.769401530972353,
+    "de": 0.4915632912690603,
+    "margin_net": -0.23177583171935162,
+    "current_ratio": 0.05245316661237318,
+    "roa": -0.015805868392406643,
+    "bv": 58.73485276162919
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 42145349632,
+    "enterprise_value": 64221741056,
+    "shares_outstanding": 896709596
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1389,
+    "vol_trend": 0.357,
+    "price_chg_20d": -31.88
+  },
+  "neraca": {
+    "aset": 78557813666.0,
+    "aset_lancar": 1338983561.0,
+    "kas": 116459706.0,
+    "piutang_usaha": 383614742.0,
+    "persediaan": 654627423.0,
+    "aset_tetap": 55179101558.0,
+    "liabilitas": 25889707575.0,
+    "liabilitas_jangka_pendek": 25527220709.0,
+    "liabilitas_jangka_panjang": 362486866.0,
+    "utang_usaha": 383614742.0,
+    "utang_bank": 22192851685.0,
+    "ekuitas": 52668106091.0,
+    "ekuitas_induk": 52668106091.0,
+    "modal_saham": null,
+    "saldo_laba": -25745545148.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5357221479.0,
+    "beban_pokok": 4903679589.0,
+    "laba_kotor": 453541890.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1241674464.0,
+    "beban_pajak": null,
+    "laba_bersih": -1241674464.0,
+    "laba_induk": -1241674464.0,
+    "eps_basic": -1.38,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -264795392,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 140569457.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "MKPI",
+  "nama": "PT Metropolitan Kentjana Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 18400.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 29.35264652394474,
+    "pb": 2.339925108689629,
+    "ps": 6.770718458742759,
+    "roe": 0.07971712208675448,
+    "eps": 626.86,
+    "de": 0.3666302305849011,
+    "margin_net": 0.4353080054160806,
+    "current_ratio": 1.6635322780032824,
+    "roa": 0.058333037626323095,
+    "bv": 7863.499533241088
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 634710528186.0,
+      "2025-Q2": 602265010337.0,
+      "2025-Q3": 609106819867.0,
+      "2026-Q1": 673171281090.0,
+      "2026-Q2": 692254270891.0
+    },
+    "eps": {
+      "2025-Q1": 263.11,
+      "2025-Q2": 243.27,
+      "2025-Q3": 308.58,
+      "2026-Q1": 309.52,
+      "2026-Q2": 317.34
+    },
+    "net_income": {
+      "2025-Q1": 249483713342.0,
+      "2025-Q2": 230665383930.0,
+      "2025-Q3": 292590213926.0,
+      "2026-Q1": 293487360025.0,
+      "2026-Q2": 300893313552.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 17446769524736,
+    "enterprise_value": 13985018544128,
+    "shares_outstanding": 948194000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2079,
+    "vol_trend": 1.037,
+    "price_chg_20d": -14.81
+  },
+  "neraca": {
+    "aset": 10189434628530.0,
+    "aset_lancar": 3867404190077.0,
+    "kas": 3462945527827.0,
+    "piutang_usaha": 214961609130.0,
+    "persediaan": 17230341070.0,
+    "aset_tetap": 4599222786780.0,
+    "liabilitas": 2733640122778.0,
+    "liabilitas_jangka_pendek": 2324814637633.0,
+    "liabilitas_jangka_panjang": 408825485145.0,
+    "utang_usaha": 214961609130.0,
+    "utang_bank": null,
+    "ekuitas": 7456123076422.0,
+    "ekuitas_induk": 7456123076422.0,
+    "modal_saham": null,
+    "saldo_laba": 13218000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1365425551981.0,
+    "beban_pokok": 634280124992.0,
+    "laba_kotor": 731145426989.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 732854315340.0,
+    "beban_pajak": -138483178271.0,
+    "laba_bersih": 594380673577.0,
+    "laba_induk": 594380673577.0,
+    "eps_basic": 626.86,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1718323380224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 186744356818.0,
+    "dividen_dibayar": null
+  }
+}

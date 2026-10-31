@@ -1,0 +1,95 @@
+{
+  "kode": "JRPT",
+  "nama": "PT Jaya Real Property, Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 1180.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 22.692307692307693,
+    "pb": null,
+    "ps": -0.023504169947069335,
+    "roe": 0.06088520291224924,
+    "eps": 52.0,
+    "de": 0.4093078499195243,
+    "margin_net": 0.4004505738569996,
+    "current_ratio": 1.25864350650468,
+    "roa": 0.04227347122153065,
+    "bv": 0.857105804476498
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 641621515000000.0,
+      "2025-Q2": -641620042902733.0,
+      "2025-Q3": 792981643.0,
+      "2026-Q1": 733724631000000.0,
+      "2026-Q2": -733722965531424.0
+    },
+    "eps": {
+      "2025-Q1": 0.02,
+      "2025-Q2": -0.02,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 52.0
+    },
+    "net_income": {
+      "2025-Q1": 244090320000000.0,
+      "2025-Q2": 340818452000000.0,
+      "2025-Q3": 318196768000000.0,
+      "2026-Q1": 285343795000000.0,
+      "2026-Q2": 381594052000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 15080689238016,
+    "enterprise_value": 13706315431936,
+    "shares_outstanding": 12780244700
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.343,
+    "vol_trend": 0.998,
+    "price_chg_20d": 1.72
+  },
+  "neraca": {
+    "aset": 15776746686.0,
+    "aset_lancar": 5374911896.0,
+    "kas": 1769993551.0,
+    "piutang_usaha": 32321791.0,
+    "persediaan": 652059875.0,
+    "aset_tetap": 1500000.0,
+    "liabilitas": 4483567158.0,
+    "liabilitas_jangka_pendek": 4270400529.0,
+    "liabilitas_jangka_panjang": 213166629.0,
+    "utang_usaha": 32321791.0,
+    "utang_bank": null,
+    "ekuitas": 10954021915.0,
+    "ekuitas_induk": 10954021915.0,
+    "modal_saham": null,
+    "saldo_laba": 55000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1665468576.0,
+    "beban_pokok": 749371210.0,
+    "laba_kotor": 916097366.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 691952019.0,
+    "beban_pajak": -14842730.0,
+    "laba_bersih": 666937847.0,
+    "laba_induk": 666937847.0,
+    "eps_basic": 52.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1064711290880,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1500000.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "BABY",
+  "nama": "PT Multitrend Indo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Retail",
+  "harga": 148.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 33.33333333333333,
+    "pb": 0.7008793653962101,
+    "ps": 0.2892499457115508,
+    "roe": 0.019546573863336716,
+    "eps": 4.44,
+    "de": 1.0504480967733307,
+    "margin_net": 0.012945569914343535,
+    "current_ratio": 2.4785758720094466,
+    "roa": 0.009532044196655716,
+    "bv": 211.16330042950398
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 266813642248.0,
+      "2025-Q2": 276649181517.0,
+      "2025-Q3": 273852144900.0,
+      "2026-Q1": 304931996817.0,
+      "2026-Q2": 605290664446.0
+    },
+    "eps": {
+      "2025-Q1": -6.67,
+      "2025-Q2": 2.64,
+      "2025-Q3": -4.6,
+      "2026-Q1": 2.51,
+      "2026-Q2": 1.93
+    },
+    "net_income": {
+      "2025-Q1": -17563216115.0,
+      "2025-Q2": 7007804397.0,
+      "2025-Q3": -12017831592.0,
+      "2026-Q1": 6571256235.0,
+      "2026-Q2": 5212094864.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 422514327552,
+    "enterprise_value": 633106661376,
+    "shares_outstanding": 2854826582
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3096,
+    "vol_trend": 0.626,
+    "price_chg_20d": -20.86
+  },
+  "neraca": {
+    "aset": 1236183011314.0,
+    "aset_lancar": 936552142879.0,
+    "kas": 103198096161.0,
+    "piutang_usaha": 166189364332.0,
+    "persediaan": 624039932593.0,
+    "aset_tetap": 93134270437.0,
+    "liabilitas": 633246461610.0,
+    "liabilitas_jangka_pendek": 377858976784.0,
+    "liabilitas_jangka_panjang": 255387484826.0,
+    "utang_usaha": 166189364332.0,
+    "utang_bank": 71117945338.0,
+    "ekuitas": 602834603209.0,
+    "ekuitas_induk": 602834603209.0,
+    "modal_saham": null,
+    "saldo_laba": -73797555118.0
+  },
+  "laba_rugi": {
+    "pendapatan": 910222661263.0,
+    "beban_pokok": 525674911136.0,
+    "laba_kotor": 384547750127.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 16514292305.0,
+    "beban_pajak": -4671002228.0,
+    "laba_bersih": 11783351099.0,
+    "laba_induk": 11783351099.0,
+    "eps_basic": 4.44,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 165890015232,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7327694464.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "kode": "KOTA",
+  "nama": "PT DMS Propertindo Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 74.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 15.132924335378323,
+    "pb": 0.6060887535858455,
+    "ps": 9.016075002026641,
+    "roe": 0.040062601773116255,
+    "eps": 4.89,
+    "de": 0.514157058711536,
+    "margin_net": 0.4125026768068882,
+    "current_ratio": 1.5729616031818947,
+    "roa": 0.0264369448392854,
+    "bv": 122.09432952218401
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5876998103.0,
+      "2025-Q2": 11485752264.0,
+      "2025-Q3": 11435642482.0,
+      "2026-Q3": 57758922397.0
+    },
+    "eps": {
+      "2025-Q1": -0.5,
+      "2025-Q2": -0.84,
+      "2025-Q3": -0.7,
+      "2026-Q3": 3.39
+    },
+    "net_income": {
+      "2025-Q1": -5551223301.0,
+      "2025-Q2": -8572717808.0,
+      "2025-Q3": -7406301032.0,
+      "2026-Q3": 35538463464.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 780407275520,
+    "enterprise_value": 1189799002112,
+    "shares_outstanding": 10546043868
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3134,
+    "vol_trend": 0.995,
+    "price_chg_20d": -51.95
+  },
+  "neraca": {
+    "aset": 1951250166182.0,
+    "aset_lancar": 303090686967.0,
+    "kas": 112013141970.0,
+    "piutang_usaha": 150310619877.0,
+    "persediaan": 3062618493.0,
+    "aset_tetap": 45000000000.0,
+    "liabilitas": 662034878466.0,
+    "liabilitas_jangka_pendek": 192687911996.0,
+    "liabilitas_jangka_panjang": 469346966470.0,
+    "utang_usaha": 150310619877.0,
+    "utang_bank": 94501762279.0,
+    "ekuitas": 1287612155175.0,
+    "ekuitas_induk": 1287612155175.0,
+    "modal_saham": null,
+    "saldo_laba": 2000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 125053959432.0,
+    "beban_pokok": 28304406762.0,
+    "laba_kotor": 96749552670.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 51915492272.0,
+    "beban_pajak": -243249776.0,
+    "laba_bersih": 51585093011.0,
+    "laba_induk": 51585093011.0,
+    "eps_basic": 4.89,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 130437234688,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 45000000000.0,
+    "dividen_dibayar": null
+  }
+}

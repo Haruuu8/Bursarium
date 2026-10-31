@@ -1,0 +1,95 @@
+{
+  "kode": "MARK",
+  "nama": "PT Mark Dynamics Indonesia Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Instruments & Supplies",
+  "harga": 1150.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 23.765240752221533,
+    "pb": 4.900459495583325,
+    "ps": 4.533932942782258,
+    "roe": 0.20621442475232984,
+    "eps": 48.39,
+    "de": 0.14565702481080187,
+    "margin_net": 0.32137922636162897,
+    "current_ratio": 4.19957118418272,
+    "roa": 0.1794903683421245,
+    "bv": 234.6718712880842
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 203032151045.0,
+      "2025-Q2": 177774225241.0,
+      "2025-Q3": 213871519702.0,
+      "2026-Q1": 250837665903.0,
+      "2026-Q2": 321359771585.0
+    },
+    "eps": {
+      "2025-Q1": 18.42,
+      "2025-Q2": 16.12,
+      "2025-Q3": 19.18,
+      "2026-Q1": 21.95,
+      "2026-Q2": 26.44
+    },
+    "net_income": {
+      "2025-Q1": 70003838418.0,
+      "2025-Q2": 61259470959.0,
+      "2025-Q3": 72857786216.0,
+      "2026-Q1": 83418481623.0,
+      "2026-Q2": 100473888163.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4370000248832,
+    "enterprise_value": 4333037944832,
+    "shares_outstanding": 3800000310
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3323,
+    "vol_trend": 0.777,
+    "price_chg_20d": -0.43
+  },
+  "neraca": {
+    "aset": 1024525000893.0,
+    "aset_lancar": 491880715644.0,
+    "kas": 43210400397.0,
+    "piutang_usaha": 203546608338.0,
+    "persediaan": 187589980231.0,
+    "aset_tetap": 507388321843.0,
+    "liabilitas": 129890115595.0,
+    "liabilitas_jangka_pendek": 117126414596.0,
+    "liabilitas_jangka_panjang": 12763700999.0,
+    "utang_usaha": 203546608338.0,
+    "utang_bank": 56521776000.0,
+    "ekuitas": 891753183643.0,
+    "ekuitas_induk": 891753183643.0,
+    "modal_saham": null,
+    "saldo_laba": 200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 572197437488.0,
+    "beban_pokok": 313222430575.0,
+    "laba_kotor": 258975006913.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 238802609230.0,
+    "beban_pajak": -54887569593.0,
+    "laba_bersih": 183892369786.0,
+    "laba_induk": 183892369786.0,
+    "eps_basic": 48.39,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 329822240768,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15925551014.0,
+    "dividen_dibayar": 190000015500.0
+  }
+}

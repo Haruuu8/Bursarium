@@ -1,0 +1,89 @@
+{
+  "kode": "PANS",
+  "nama": "PT Panin Sekuritas Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 1560.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 32.19149814279818,
+    "pb": 0.7752162896649827,
+    "ps": 495.1244437778993,
+    "roe": 0.01204238262929439,
+    "eps": 48.46,
+    "de": 0.5044070594143225,
+    "margin_net": 15.382746932902467,
+    "current_ratio": null,
+    "roa": 0.007825459814106237,
+    "bv": 2012.3416145888386
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 55647000000000.0,
+      "2026-Q1": 1101412696.0,
+      "2026-Q2": 19344865.0
+    },
+    "eps": {
+      "2025-Q1": -24.63,
+      "2026-Q1": 16.28,
+      "2026-Q2": 7.95
+    },
+    "net_income": {
+      "2025-Q1": -17524046925.0,
+      "2026-Q1": 11581441614.0,
+      "2026-Q2": 5658888320.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1109828960256,
+    "enterprise_value": 36074323968,
+    "shares_outstanding": 711428800
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.282,
+    "vol_trend": 0.782,
+    "price_chg_20d": -5.17
+  },
+  "neraca": {
+    "aset": 2203107592850.0,
+    "aset_lancar": null,
+    "kas": 14757801764.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 36328779752.0,
+    "liabilitas": 722128202785.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 13000000000.0,
+    "ekuitas": 1431637780057.0,
+    "ekuitas_induk": 1431637780057.0,
+    "modal_saham": null,
+    "saldo_laba": 8529684302.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1120757561.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 37845935727.0,
+    "beban_pajak": -21276958500.0,
+    "laba_bersih": 17240329934.0,
+    "laba_induk": 17240329934.0,
+    "eps_basic": 24.23,
+    "eps_diluted": 24.23
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 75857690624,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2886237684.0,
+    "dividen_dibayar": null
+  }
+}

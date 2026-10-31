@@ -1,0 +1,95 @@
+{
+  "kode": "BBYB",
+  "nama": "PT Bank Neo Commerce Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 144.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.518786781349027,
+    "pb": 0.43499763950895737,
+    "ps": -0.0023834633691318234,
+    "roe": 0.06671532985450371,
+    "eps": 22.09,
+    "de": 2.94921205911808,
+    "margin_net": 0.19944195107432874,
+    "current_ratio": null,
+    "roa": 0.016893326784128748,
+    "bv": 331.03627909924506
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 810442000000000.0,
+      "2025-Q2": -808842541000000.0,
+      "2025-Q3": 777642000000.0,
+      "2026-Q1": 738937000000000.0,
+      "2026-Q2": -737458635000000.0
+    },
+    "eps": {
+      "2025-Q1": 12.71,
+      "2025-Q2": 7.97,
+      "2025-Q3": 14.08,
+      "2026-Q1": 10.26,
+      "2026-Q2": 11.83
+    },
+    "net_income": {
+      "2025-Q1": 159945000000000.0,
+      "2025-Q2": 116101000000000.0,
+      "2025-Q3": 187957000000000.0,
+      "2026-Q1": 136982000000000.0,
+      "2026-Q2": 157866000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1922469462016,
+    "enterprise_value": 558103461888,
+    "shares_outstanding": 13350482346
+  },
+  "akumulasi": {
+    "score": 2.6,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1241,
+    "vol_trend": 0.887,
+    "price_chg_20d": -26.53
+  },
+  "neraca": {
+    "aset": 17453519.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 257127.0,
+    "liabilitas": 13034025.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4419494.0,
+    "ekuitas_induk": 4419494.0,
+    "modal_saham": null,
+    "saldo_laba": -1434490.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1478365.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 298166.0,
+    "laba_sebelum_pajak": 293648.0,
+    "beban_pajak": 1200.0,
+    "laba_bersih": 294848.0,
+    "laba_induk": 294848.0,
+    "eps_basic": 22.09,
+    "eps_diluted": 22.09
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4392183000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

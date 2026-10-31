@@ -1,0 +1,98 @@
+{
+  "kode": "AUTO",
+  "nama": "PT Astra Otoparts Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 3280.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 8.793565683646113,
+    "pb": 0.9497598517750409,
+    "ps": 0.7106379643456613,
+    "roe": 0.10813446945233304,
+    "eps": 373.0,
+    "de": 0.43778943428555295,
+    "margin_net": 0.10574024427656353,
+    "current_ratio": 2.055300742085152,
+    "roa": 0.07148738458035986,
+    "bv": 3453.5045821002946
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4894437000000.0,
+      "2025-Q2": 4688897000000.0,
+      "2025-Q3": 5223966000000.0,
+      "2026-Q1": 5256848000000.0,
+      "2026-Q2": 5595855000000.0,
+      "2026-Q3": 6169151000000.0
+    },
+    "eps": {
+      "2025-Q1": 105.0,
+      "2025-Q2": 90.0,
+      "2025-Q3": 130.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 239.0,
+      "2026-Q3": 134.0
+    },
+    "net_income": {
+      "2025-Q1": 505575000000000.0,
+      "2025-Q2": 433393000000000.0,
+      "2025-Q3": -937399433000000.0,
+      "2026-Q1": 558949000000000.0,
+      "2026-Q2": -557797565000000.0,
+      "2026-Q3": 648460000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 15808723943424,
+    "enterprise_value": 13596558884864,
+    "shares_outstanding": 4819733000
+  },
+  "akumulasi": {
+    "score": 6.6,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1079,
+    "vol_trend": 1.138,
+    "price_chg_20d": -2.67
+  },
+  "neraca": {
+    "aset": 25177799.0,
+    "aset_lancar": 12393260.0,
+    "kas": 5087783.0,
+    "piutang_usaha": 1974360.0,
+    "persediaan": 3295424.0,
+    "aset_tetap": 165836.0,
+    "liabilitas": 7286992.0,
+    "liabilitas_jangka_pendek": 6029901.0,
+    "liabilitas_jangka_panjang": 1257091.0,
+    "utang_usaha": 1974360.0,
+    "utang_bank": 351539.0,
+    "ekuitas": 16644970.0,
+    "ekuitas_induk": 16644970.0,
+    "modal_saham": null,
+    "saldo_laba": 96395.0
+  },
+  "laba_rugi": {
+    "pendapatan": 17021854.0,
+    "beban_pokok": 14372269.0,
+    "laba_kotor": 2649585.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2131117.0,
+    "beban_pajak": 30424.0,
+    "laba_bersih": 1799895.0,
+    "laba_induk": 1799895.0,
+    "eps_basic": 373.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1612079038464,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 165836.0,
+    "dividen_dibayar": 873658.0
+  }
+}

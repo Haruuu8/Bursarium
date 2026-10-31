@@ -1,0 +1,95 @@
+{
+  "kode": "GOTO",
+  "nama": "PT GoTo Gojek Tokopedia Tbk",
+  "sektor": "Technology",
+  "industri": "Software - Infrastructure",
+  "harga": 24.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.790102430177271,
+    "ps": 1.2761123453164072,
+    "roe": 0.018751064312288276,
+    "eps": 108.07529876256692,
+    "de": 0.5709016333607334,
+    "margin_net": 0.05525602656621776,
+    "current_ratio": 2.6097148869698725,
+    "roa": 0.01279552492475646,
+    "bv": 30.375808355146116
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4230634000000.0,
+      "2025-Q2": 4328335000000.0,
+      "2025-Q3": 4736512000000.0,
+      "2026-Q1": 5341314000000.0,
+      "2026-Q2": 5652799000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.27,
+      "2025-Q2": 0.82,
+      "2025-Q3": -1.28,
+      "2026-Q1": 0.24,
+      "2026-Q2": 0.33
+    },
+    "net_income": {
+      "2025-Q1": -283328000000000.0,
+      "2025-Q2": -296685000000000.0,
+      "2025-Q3": -195537000000000.0,
+      "2026-Q1": 257943000000000.0,
+      "2026-Q2": 349548000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 25597487087616,
+    "enterprise_value": 8895095373824,
+    "shares_outstanding": 1066561937092
+  },
+  "akumulasi": {
+    "score": 3.1,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0271,
+    "vol_trend": 2.447,
+    "price_chg_20d": -20.0
+  },
+  "neraca": {
+    "aset": 47476833.0,
+    "aset_lancar": 31221418.0,
+    "kas": 23464625.0,
+    "piutang_usaha": 325496.0,
+    "persediaan": 11723.0,
+    "aset_tetap": 696469.0,
+    "liabilitas": 18495889.0,
+    "liabilitas_jangka_pendek": 11963536.0,
+    "liabilitas_jangka_panjang": 6532353.0,
+    "utang_usaha": 325496.0,
+    "utang_bank": 1151389.0,
+    "ekuitas": 32397681.0,
+    "ekuitas_induk": 32397681.0,
+    "modal_saham": null,
+    "saldo_laba": -214737614.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10994113.0,
+    "beban_pokok": 4192326.0,
+    "laba_kotor": 6801787.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 691250.0,
+    "beban_pajak": -268000.0,
+    "laba_bersih": 607491.0,
+    "laba_induk": 607491.0,
+    "eps_basic": 0.57,
+    "eps_diluted": 0.55
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2964088946688,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 135733.0,
+    "dividen_dibayar": null
+  }
+}

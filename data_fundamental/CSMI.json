@@ -1,0 +1,95 @@
+{
+  "kode": "CSMI",
+  "nama": "PT Cipta Selera Murni Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 515.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0009400119223585358,
+    "roe": -0.2829448844669692,
+    "eps": null,
+    "de": 12.168718173832069,
+    "margin_net": -1.0818680641975105,
+    "current_ratio": 0.04537822690563252,
+    "roa": -0.02125228398478986,
+    "bv": 4.001316648316334
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 406900682000000.0,
+      "2025-Q2": 408935185000000.0,
+      "2025-Q3": -815834453690823.0,
+      "2026-Q1": 620676012000000.0,
+      "2026-Q2": 233315110000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.61,
+      "2025-Q2": -0.64,
+      "2025-Q3": -0.27,
+      "2026-Q1": -0.59,
+      "2026-Q2": -0.54
+    },
+    "net_income": {
+      "2025-Q1": -494204019000000.0,
+      "2025-Q2": 494202999819574.0,
+      "2025-Q3": -216361434.0,
+      "2026-Q1": -485407785000000.0,
+      "2026-Q2": -438497937000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 420271685632,
+    "enterprise_value": 420507189248,
+    "shares_outstanding": 816061500
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.9681,
+    "vol_trend": 0.205,
+    "price_chg_20d": 55.12
+  },
+  "neraca": {
+    "aset": 43473243754.0,
+    "aset_lancar": 1575606324.0,
+    "kas": 237652338.0,
+    "piutang_usaha": null,
+    "persediaan": 1337953986.0,
+    "aset_tetap": 39342574282.0,
+    "liabilitas": 39734764498.0,
+    "liabilitas_jangka_pendek": 34721637037.0,
+    "liabilitas_jangka_panjang": 5013127461.0,
+    "utang_usaha": 1831033335.0,
+    "utang_bank": null,
+    "ekuitas": 3265320466.0,
+    "ekuitas_induk": 3265320466.0,
+    "modal_saham": null,
+    "saldo_laba": -69487958223.0
+  },
+  "laba_rugi": {
+    "pendapatan": 853991122.0,
+    "beban_pokok": 333056538.0,
+    "laba_kotor": 520934584.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -923905722.0,
+    "beban_pajak": null,
+    "laba_bersih": -923905722.0,
+    "laba_induk": -923905722.0,
+    "eps_basic": -1.13215,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 101929592,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

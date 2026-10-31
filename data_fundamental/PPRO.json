@@ -1,0 +1,98 @@
+{
+  "kode": "PPRO",
+  "nama": "PT Pembangunan Perumahan Properti Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 14.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.5393735654854077,
+    "roe": -0.05511118960027419,
+    "eps": -6.084646173711794,
+    "de": 0.8744428395961191,
+    "margin_net": -1.158241364681283,
+    "current_ratio": 2.866665498044606,
+    "roa": -0.02781381116860867,
+    "bv": 85.63133045499472
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 64545174531.0,
+      "2025-Q2": 77696605753.0,
+      "2025-Q3": 88731513493.0,
+      "2026-Q1": 78725590468.0,
+      "2026-Q2": 92462655102.0,
+      "2026-Q3": 80108749581.0
+    },
+    "eps": {
+      "2025-Q1": 2.41,
+      "2025-Q2": -1.61,
+      "2025-Q3": -1.43,
+      "2026-Q1": -1.33,
+      "2026-Q2": -2.09,
+      "2026-Q3": -1.52
+    },
+    "net_income": {
+      "2025-Q1": 141828290298.0,
+      "2025-Q2": -94643253278.0,
+      "2025-Q3": -84212066330.0,
+      "2026-Q1": -78236272663.0,
+      "2026-Q2": -123479754585.0,
+      "2026-Q3": -89346547356.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 863459409920,
+    "enterprise_value": 2395790639104,
+    "shares_outstanding": 61675671883
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2026,
+    "vol_trend": 0.851,
+    "price_chg_20d": -26.32
+  },
+  "neraca": {
+    "aset": 10464677883932.0,
+    "aset_lancar": 7814853447226.0,
+    "kas": 89221081765.0,
+    "piutang_usaha": 1180823612892.0,
+    "persediaan": 6344247216437.0,
+    "aset_tetap": 252488068772.0,
+    "liabilitas": 4618256039888.0,
+    "liabilitas_jangka_pendek": 2726112778961.0,
+    "liabilitas_jangka_panjang": 1892143260927.0,
+    "utang_usaha": 1180823612892.0,
+    "utang_bank": 43429177095.0,
+    "ekuitas": 5281369840047.0,
+    "ekuitas_induk": 5281369840047.0,
+    "modal_saham": null,
+    "saldo_laba": 107990480916.0
+  },
+  "laba_rugi": {
+    "pendapatan": 251296995151.0,
+    "beban_pokok": 242808787585.0,
+    "laba_kotor": 8488207566.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -290522403679.0,
+    "beban_pajak": -7814251869.0,
+    "laba_bersih": -291062574604.0,
+    "laba_induk": -291062574604.0,
+    "eps_basic": -4.94,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 68676169728,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4842446986.0,
+    "dividen_dibayar": null
+  }
+}

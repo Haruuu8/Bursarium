@@ -1,0 +1,94 @@
+{
+  "kode": "FUTR",
+  "nama": "PT Futura Energi Global Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Renewable",
+  "harga": 120.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.6929165216818785,
+    "ps": 29.852995142390316,
+    "roe": -0.04074243073388577,
+    "eps": -0.8068654142234861,
+    "de": 0.16533109023048673,
+    "margin_net": -1.0290160878131178,
+    "current_ratio": 7.018761282560413,
+    "roa": -0.03496188173302055,
+    "bv": 25.570452712206695
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 13988112554.0,
+      "2025-Q2": 7759496497.0,
+      "2025-Q3": 12195409155.0,
+      "2026-Q1": 3168606919.0,
+      "2026-Q2": 3549396840.0
+    },
+    "eps": {
+      "2025-Q1": 0.34,
+      "2025-Q2": 0.24,
+      "2026-Q1": -0.53,
+      "2026-Q2": -0.51
+    },
+    "net_income": {
+      "2025-Q1": 2145706736.0,
+      "2025-Q2": 1557464493.0,
+      "2025-Q3": 1472073.0,
+      "2026-Q1": -3529455741.0,
+      "2026-Q2": -3383478205.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 796266201088,
+    "enterprise_value": 770749038592,
+    "shares_outstanding": 6635551959
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.355,
+    "vol_trend": 0.886,
+    "price_chg_20d": -52.0
+  },
+  "neraca": {
+    "aset": 197727742425.0,
+    "aset_lancar": 191431256544.0,
+    "kas": 30968856660.0,
+    "piutang_usaha": 10695309520.0,
+    "persediaan": null,
+    "aset_tetap": 5513964043.0,
+    "liabilitas": 28052398578.0,
+    "liabilitas_jangka_pendek": 27274222450.0,
+    "liabilitas_jangka_panjang": 778176128.0,
+    "utang_usaha": 10695309520.0,
+    "utang_bank": 4000000000.0,
+    "ekuitas": 169674067587.0,
+    "ekuitas_induk": 169674067587.0,
+    "modal_saham": null,
+    "saldo_laba": 171565949.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6718003759.0,
+    "beban_pokok": 5324507292.0,
+    "laba_kotor": 1393496467.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -6912980740.0,
+    "beban_pajak": null,
+    "laba_bersih": -6912933946.0,
+    "laba_induk": -6912933946.0,
+    "eps_basic": -1.04,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -24489336832,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8975225.0,
+    "dividen_dibayar": null
+  }
+}

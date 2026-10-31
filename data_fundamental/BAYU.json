@@ -1,0 +1,95 @@
+{
+  "kode": "BAYU",
+  "nama": "PT Bayu Buana Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 1210.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.764100609756098,
+    "pb": 0.719889836411573,
+    "ps": 0.1754500937698262,
+    "roe": 0.12489134464916311,
+    "eps": 209.92,
+    "de": 0.653209022711496,
+    "margin_net": 0.0659366342639951,
+    "current_ratio": 2.151195546252874,
+    "roa": 0.07554479980052595,
+    "bv": 1680.8127282800292
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 644606583720.0,
+      "2025-Q2": 663601017631.0,
+      "2025-Q3": 647872815983.0,
+      "2026-Q1": 554719143296.0,
+      "2026-Q2": 569811100470.0
+    },
+    "eps": {
+      "2025-Q1": 65.79,
+      "2025-Q2": 79.91,
+      "2025-Q3": 77.76,
+      "2026-Q1": 44.17,
+      "2026-Q2": 165.75
+    },
+    "net_income": {
+      "2025-Q1": 23236873152.0,
+      "2025-Q2": 28226542434.0,
+      "2025-Q3": 27463341458.0,
+      "2026-Q1": 15602901306.0,
+      "2026-Q2": 58544838096.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 427397120000,
+    "enterprise_value": -28352868352,
+    "shares_outstanding": 353220780
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3866,
+    "vol_trend": 1.728,
+    "price_chg_20d": -8.33
+  },
+  "neraca": {
+    "aset": 981506862124.0,
+    "aset_lancar": 716641412013.0,
+    "kas": 455750011716.0,
+    "piutang_usaha": 195131325406.0,
+    "persediaan": null,
+    "aset_tetap": 212025198973.0,
+    "liabilitas": 387808879207.0,
+    "liabilitas_jangka_pendek": 333136340516.0,
+    "liabilitas_jangka_panjang": 54672538691.0,
+    "utang_usaha": 195131325406.0,
+    "utang_bank": null,
+    "ekuitas": 593697982917.0,
+    "ekuitas_induk": 593697982917.0,
+    "modal_saham": null,
+    "saldo_laba": 851583000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1124530243766.0,
+    "beban_pokok": 1042721255504.0,
+    "laba_kotor": 81808988262.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 81766157297.0,
+    "beban_pajak": -7618417895.0,
+    "laba_bersih": 74147739402.0,
+    "laba_induk": 74147739402.0,
+    "eps_basic": 209.92,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 14827931648,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3349069684.0,
+    "dividen_dibayar": 35322078000.0
+  }
+}

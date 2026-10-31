@@ -1,0 +1,95 @@
+{
+  "kode": "DEPO",
+  "nama": "PT Caturkarda Depo Bangunan Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Home Improvement Retail",
+  "harga": 210.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 33.123028391167196,
+    "pb": 1.0255474672799976,
+    "ps": 0.5144492729426993,
+    "roe": 0.030967783340309855,
+    "eps": 6.34,
+    "de": 0.69155640395609,
+    "margin_net": 0.03156411568118991,
+    "current_ratio": 1.7099544512469809,
+    "roa": 0.018307272075019025,
+    "bv": 204.76867887643593
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 698091239963.0,
+      "2025-Q2": 670328812567.0,
+      "2025-Q3": 737261767256.0,
+      "2026-Q1": 640482287437.0,
+      "2026-Q2": 723628979734.0
+    },
+    "eps": {
+      "2025-Q1": 2.29,
+      "2025-Q2": 3.38,
+      "2025-Q3": 1.76,
+      "2026-Q1": 1.95,
+      "2026-Q2": 4.39
+    },
+    "net_income": {
+      "2025-Q1": 15538122428.0,
+      "2025-Q2": 22963040891.0,
+      "2025-Q3": 11917671490.0,
+      "2026-Q1": 13256742273.0,
+      "2026-Q2": 29800223566.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1425900044288,
+    "enterprise_value": 1375175704576,
+    "shares_outstanding": 6790000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1429,
+    "vol_trend": 0.306,
+    "price_chg_20d": -7.89
+  },
+  "neraca": {
+    "aset": 2351905060599.0,
+    "aset_lancar": 1082859235831.0,
+    "kas": 232932486171.0,
+    "piutang_usaha": 11263432557.0,
+    "persediaan": 671100283977.0,
+    "aset_tetap": 921422000.0,
+    "liabilitas": 961525729293.0,
+    "liabilitas_jangka_pendek": 633267883271.0,
+    "liabilitas_jangka_panjang": 328257846022.0,
+    "utang_usaha": 11263432557.0,
+    "utang_bank": 10996513365.0,
+    "ekuitas": 1390379329571.0,
+    "ekuitas_induk": 1390379329571.0,
+    "modal_saham": null,
+    "saldo_laba": 28000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1364111267171.0,
+    "beban_pokok": 1087123686301.0,
+    "laba_kotor": 276987580870.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 52134151544.0,
+    "beban_pajak": -9077185613.0,
+    "laba_bersih": 43056965839.0,
+    "laba_induk": 43056965839.0,
+    "eps_basic": 6.34,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 243355680768,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 921422000.0,
+    "dividen_dibayar": null
+  }
+}

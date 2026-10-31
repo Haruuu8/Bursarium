@@ -1,0 +1,95 @@
+{
+  "kode": "SPTO",
+  "nama": "PT Surya Pertiwi Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 595.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 17.0438269836723,
+    "pb": 0.936996441954701,
+    "ps": 0.6030799304739322,
+    "roe": 0.05498052634001674,
+    "eps": 34.91,
+    "de": 0.5317933254218197,
+    "margin_net": 0.06857904530799089,
+    "current_ratio": 1.9913097182540536,
+    "roa": 0.02802889871567412,
+    "bv": 635.0077474774074
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 714698350657.0,
+      "2025-Q2": 611635283668.0,
+      "2025-Q3": 677641654710.0,
+      "2026-Q1": 628455518836.0,
+      "2026-Q2": 746093544652.0
+    },
+    "eps": {
+      "2025-Q1": 22.46,
+      "2025-Q2": 17.4,
+      "2025-Q3": 23.85,
+      "2026-Q1": 11.98,
+      "2026-Q2": 22.93
+    },
+    "net_income": {
+      "2025-Q1": 60650757258.0,
+      "2025-Q2": 46958457453.0,
+      "2025-Q3": 64399395141.0,
+      "2026-Q1": 32341374763.0,
+      "2026-Q2": 61923887740.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1606499958784,
+    "enterprise_value": 2330892435456,
+    "shares_outstanding": 2700000000
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.4599,
+    "vol_trend": 2.201,
+    "price_chg_20d": -0.83
+  },
+  "neraca": {
+    "aset": 3363145425699.0,
+    "aset_lancar": 1397401501474.0,
+    "kas": 213260340965.0,
+    "piutang_usaha": 561025272441.0,
+    "persediaan": 573537227811.0,
+    "aset_tetap": 15865973176.0,
+    "liabilitas": 911770780589.0,
+    "liabilitas_jangka_pendek": 701749953141.0,
+    "liabilitas_jangka_panjang": 210020827448.0,
+    "utang_usaha": 561025272441.0,
+    "utang_bank": 19009308820.0,
+    "ekuitas": 1714520918189.0,
+    "ekuitas_induk": 1714520918189.0,
+    "modal_saham": null,
+    "saldo_laba": 735035355020.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1374549063488.0,
+    "beban_pokok": 995564981908.0,
+    "laba_kotor": 378984081580.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 128692121677.0,
+    "beban_pajak": -24019393239.0,
+    "laba_bersih": 94265262503.0,
+    "laba_induk": 94265262503.0,
+    "eps_basic": 34.91,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 383612223488,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15865973176.0,
+    "dividen_dibayar": 106750000000.0
+  }
+}

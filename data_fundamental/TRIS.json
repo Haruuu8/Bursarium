@@ -1,0 +1,95 @@
+{
+  "kode": "TRIS",
+  "nama": "PT Trisula International Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 155.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 18.128654970760234,
+    "pb": 0.8913308277220798,
+    "ps": 0.28603498380912157,
+    "roe": 0.05326629606657179,
+    "eps": 8.55,
+    "de": 1.0436514117838773,
+    "margin_net": 0.032205826820129034,
+    "current_ratio": 1.9084000520564903,
+    "roa": 0.020199743244698615,
+    "bv": 173.89727268395293
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 402343975741.0,
+      "2025-Q2": 365512558736.0,
+      "2025-Q3": 421020654382.0,
+      "2026-Q1": 455334981655.0,
+      "2026-Q2": 434317528806.0
+    },
+    "eps": {
+      "2025-Q1": 5.27,
+      "2025-Q2": 4.34,
+      "2025-Q3": 4.33,
+      "2026-Q1": 5.57,
+      "2026-Q2": 2.98
+    },
+    "net_income": {
+      "2025-Q1": 16297739010.0,
+      "2025-Q2": 13324401611.0,
+      "2025-Q3": 13302476409.0,
+      "2026-Q1": 17231555733.0,
+      "2026-Q2": 11420438949.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 479447777280,
+    "enterprise_value": 794478444544,
+    "shares_outstanding": 3093211331
+  },
+  "akumulasi": {
+    "score": 3.4,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0765,
+    "vol_trend": 0.444,
+    "price_chg_20d": -8.82
+  },
+  "neraca": {
+    "aset": 1418433607542.0,
+    "aset_lancar": 1002292955115.0,
+    "kas": 202780729369.0,
+    "piutang_usaha": 254947647608.0,
+    "persediaan": 453939895115.0,
+    "aset_tetap": 370728145705.0,
+    "liabilitas": 561381152970.0,
+    "liabilitas_jangka_pendek": 525200653833.0,
+    "liabilitas_jangka_panjang": 36180499137.0,
+    "utang_usaha": 254947647608.0,
+    "utang_bank": 192284046952.0,
+    "ekuitas": 537901014296.0,
+    "ekuitas_induk": 537901014296.0,
+    "modal_saham": null,
+    "saldo_laba": 5300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 889652510461.0,
+    "beban_pokok": 688178499773.0,
+    "laba_kotor": 201474010688.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 76968597220.0,
+    "beban_pajak": 338966912.0,
+    "laba_bersih": 28651994682.0,
+    "laba_induk": 28651994682.0,
+    "eps_basic": 8.55,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 175189409792,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 50698650.0,
+    "dividen_dibayar": 23954942105.0
+  }
+}

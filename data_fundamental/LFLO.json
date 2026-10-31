@@ -1,0 +1,77 @@
+{
+  "kode": "LFLO",
+  "nama": "PT Imago Mulia Persada Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 680.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 36.40256959314775,
+    "pb": 9.84600410014732,
+    "ps": 4.957357695321221,
+    "roe": 0.13528449469618042,
+    "eps": 18.68,
+    "de": 1.0998526410358302,
+    "margin_net": 0.13622859060757822,
+    "current_ratio": 1.8855807981192798,
+    "roa": 0.06437189645522794,
+    "bv": 69.06355035844699
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 889259753472,
+    "enterprise_value": 883249053696,
+    "shares_outstanding": 1307734937
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.7391,
+    "vol_trend": 0.108,
+    "price_chg_20d": 12.4
+  },
+  "neraca": {
+    "aset": 189810549554.0,
+    "aset_lancar": 167378173576.0,
+    "kas": 19112121360.0,
+    "piutang_usaha": 6831747432.0,
+    "persediaan": 73425811694.0,
+    "aset_tetap": 7370586746.0,
+    "liabilitas": 99335190452.0,
+    "liabilitas_jangka_pendek": 88767436401.0,
+    "liabilitas_jangka_panjang": 10567754051.0,
+    "utang_usaha": 6831747432.0,
+    "utang_bank": 48947612.0,
+    "ekuitas": 90316817677.0,
+    "ekuitas_induk": 90316817677.0,
+    "modal_saham": null,
+    "saldo_laba": 1930349034.0
+  },
+  "laba_rugi": {
+    "pendapatan": 89690901062.0,
+    "beban_pokok": 48259715745.0,
+    "laba_kotor": 41431185317.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 16707375297.0,
+    "beban_pajak": -4417006050.0,
+    "laba_bersih": 12218465042.0,
+    "laba_induk": 12218465042.0,
+    "eps_basic": 9.34,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 28250648576,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 251632171.0,
+    "dividen_dibayar": 9390000000.0
+  }
+}

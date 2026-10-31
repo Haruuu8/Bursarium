@@ -1,0 +1,89 @@
+{
+  "kode": "AMOR",
+  "nama": "PT Ashmore Asset Management Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 352.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2025-audit",
+  "rasio_kunci": {
+    "pe": 9.263157894736842,
+    "pb": null,
+    "ps": 0.002094016561377599,
+    "roe": 0.28782678570212533,
+    "eps": 38.0,
+    "de": 0.4383473955886058,
+    "margin_net": 0.22949035023659498,
+    "current_ratio": null,
+    "roa": 0.2001093661968497,
+    "bv": 134028.0726323779
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 58901000000000.0,
+      "2025-Q2": 81116000000000.0,
+      "2025-Q3": 112537000000000.0
+    },
+    "eps": {
+      "2025-Q1": 7.0,
+      "2025-Q2": 8.0,
+      "2025-Q3": 11.0
+    },
+    "net_income": {
+      "2025-Q1": 16060000000000.0,
+      "2025-Q2": 17306000000000.0,
+      "2025-Q3": 23469000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 771333160960,
+    "enterprise_value": 491956109312,
+    "shares_outstanding": 2191287200
+  },
+  "akumulasi": {
+    "score": 6.6,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1074,
+    "vol_trend": 0.559,
+    "price_chg_20d": -2.76
+  },
+  "neraca": {
+    "aset": 422434.0,
+    "aset_lancar": null,
+    "kas": 130176.0,
+    "piutang_usaha": 3121.0,
+    "persediaan": null,
+    "aset_tetap": 1088.0,
+    "liabilitas": 128740.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": 3121.0,
+    "utang_bank": null,
+    "ekuitas": 293694.0,
+    "ekuitas_induk": 293694.0,
+    "modal_saham": null,
+    "saldo_laba": 5560.0
+  },
+  "laba_rugi": {
+    "pendapatan": 368351.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 105564.0,
+    "beban_pajak": -21031.0,
+    "laba_bersih": 84533.0,
+    "laba_induk": 84533.0,
+    "eps_basic": 38.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 41634000896,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 69464.0
+  }
+}

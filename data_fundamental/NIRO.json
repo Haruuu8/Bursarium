@@ -1,0 +1,95 @@
+{
+  "kode": "NIRO",
+  "nama": "PT City Retail Developments Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 131.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.8115723244442425,
+    "ps": 1.8481316416892761,
+    "roe": -0.0584709713764791,
+    "eps": -7.97049520760411,
+    "de": 6.107376725684769,
+    "margin_net": -0.1147771102726184,
+    "current_ratio": 0.6030534416269824,
+    "roa": -0.006548083144481048,
+    "bv": 72.31287331582989
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 353064379704.0,
+      "2025-Q2": 374541744357.0,
+      "2025-Q3": 381196794971.0,
+      "2026-Q1": 411411655612.0,
+      "2026-Q2": 406359040401.0
+    },
+    "eps": {
+      "2025-Q1": 1.34,
+      "2025-Q2": 1.75,
+      "2025-Q3": -8.17,
+      "2026-Q1": -1.08,
+      "2026-Q2": -3.15
+    },
+    "net_income": {
+      "2025-Q1": -29699107878.0,
+      "2025-Q2": -38961275476.0,
+      "2025-Q3": -44113368498.0,
+      "2026-Q1": -23865870057.0,
+      "2026-Q2": -69995487297.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2908052258816,
+    "enterprise_value": 12470163865600,
+    "shares_outstanding": 22198871804
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3601,
+    "vol_trend": 0.261,
+    "price_chg_20d": -18.63
+  },
+  "neraca": {
+    "aset": 14334173113411.0,
+    "aset_lancar": 2316470101433.0,
+    "kas": 1228358719986.0,
+    "piutang_usaha": 155828657583.0,
+    "persediaan": 61570736346.0,
+    "aset_tetap": 67559359119.0,
+    "liabilitas": 9803953241242.0,
+    "liabilitas_jangka_pendek": 3841235190008.0,
+    "liabilitas_jangka_panjang": 5962718051234.0,
+    "utang_usaha": 155828657583.0,
+    "utang_bank": 1921233738193.0,
+    "ekuitas": 1605264204517.0,
+    "ekuitas_induk": 1605264204517.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 817770696013.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -146630715671.0,
+    "beban_pajak": -90955701993.0,
+    "laba_bersih": -93861357354.0,
+    "laba_induk": -93861357354.0,
+    "eps_basic": -4.23,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 89913597952,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 67559359119.0,
+    "dividen_dibayar": null
+  }
+}

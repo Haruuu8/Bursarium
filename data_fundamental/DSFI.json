@@ -1,0 +1,95 @@
+{
+  "kode": "DSFI",
+  "nama": "PT Dharma Samudera Fishing Industries Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 70.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 11.363636363636363,
+    "pb": 0.43653390381901575,
+    "ps": 0.18224960737306395,
+    "roe": 0.03839468126780653,
+    "eps": 6.16,
+    "de": 0.5150820664327616,
+    "margin_net": 0.029950515268782524,
+    "current_ratio": 2.423909025528071,
+    "roa": 0.02533224949514824,
+    "bv": 160.35409709900006
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 157532758387.0,
+      "2025-Q2": 171782688151.0,
+      "2025-Q3": 159761922248.0,
+      "2026-Q1": 182994264940.0,
+      "2026-Q2": 198765734058.0
+    },
+    "eps": {
+      "2025-Q1": 1.95,
+      "2025-Q2": 2.75,
+      "2025-Q3": 2.43,
+      "2026-Q1": 2.34,
+      "2026-Q2": 3.82
+    },
+    "net_income": {
+      "2025-Q1": 3615280582.0,
+      "2025-Q2": 5112875734.0,
+      "2025-Q3": 4514451116.0,
+      "2026-Q1": 4347192403.0,
+      "2026-Q2": 7086716276.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 129999486976,
+    "enterprise_value": 166900056064,
+    "shares_outstanding": 1857135500
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3354,
+    "vol_trend": 0.262,
+    "price_chg_20d": -14.63
+  },
+  "neraca": {
+    "aset": 451357810967.0,
+    "aset_lancar": 294103311554.0,
+    "kas": 35974930684.0,
+    "piutang_usaha": 122949725756.0,
+    "persediaan": 112295660384.0,
+    "aset_tetap": 156941153319.0,
+    "liabilitas": 153391071766.0,
+    "liabilitas_jangka_pendek": 121334302755.0,
+    "liabilitas_jangka_panjang": 32056769011.0,
+    "utang_usaha": 122949725756.0,
+    "utang_bank": 72708050539.0,
+    "ekuitas": 297799286293.0,
+    "ekuitas_induk": 297799286293.0,
+    "modal_saham": null,
+    "saldo_laba": -5668655216.0
+  },
+  "laba_rugi": {
+    "pendapatan": 381759998998.0,
+    "beban_pokok": 326584185211.0,
+    "laba_kotor": 55175813787.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 14562441447.0,
+    "beban_pajak": -3126869454.0,
+    "laba_bersih": 11433908679.0,
+    "laba_induk": 11433908679.0,
+    "eps_basic": 6.16,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 29975558144,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2863057803.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "SAPX",
+  "nama": "PT Satria Antaran Prima Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 244.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 85.52777456247172,
+    "pb": 0.9577450011377021,
+    "ps": 0.41328815578522765,
+    "roe": 0.011198058247705539,
+    "eps": 2.852874417090977,
+    "de": 0.9475890758418667,
+    "margin_net": 0.010434269141324165,
+    "current_ratio": 2.053170040355284,
+    "roa": 0.005749702740997896,
+    "bv": 254.76509896700395
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 138160477242.0,
+      "2025-Q2": 131369852078.0,
+      "2025-Q3": 132774463418.0,
+      "2026-Q1": 112695584631.0,
+      "2026-Q2": 115149338746.0
+    },
+    "eps": {
+      "2025-Q1": 0.12,
+      "2025-Q2": 1.34,
+      "2025-Q3": -0.37,
+      "2026-Q1": 0.89,
+      "2026-Q2": 1.96
+    },
+    "net_income": {
+      "2025-Q1": 102320624000000.0,
+      "2025-Q2": -102319404693224.0,
+      "2025-Q3": 911340960693224.0,
+      "2026-Q1": 472800778000000.0,
+      "2026-Q2": -472798400604747.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 203333320704,
+    "enterprise_value": 344219516928,
+    "shares_outstanding": 833333300
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2282,
+    "vol_trend": 0.175,
+    "price_chg_20d": -38.69
+  },
+  "neraca": {
+    "aset": 413481419839.0,
+    "aset_lancar": 294825739933.0,
+    "kas": 29519403415.0,
+    "piutang_usaha": 165716378451.0,
+    "persediaan": 3937292286.0,
+    "aset_tetap": 20685000000.0,
+    "liabilitas": 201177179192.0,
+    "liabilitas_jangka_pendek": 143595383791.0,
+    "liabilitas_jangka_panjang": 57581795401.0,
+    "utang_usaha": 165716378451.0,
+    "utang_bank": 93000000000.0,
+    "ekuitas": 212304240647.0,
+    "ekuitas_induk": 212304240647.0,
+    "modal_saham": null,
+    "saldo_laba": 30211737571.0
+  },
+  "laba_rugi": {
+    "pendapatan": 227844923377.0,
+    "beban_pokok": 187214137225.0,
+    "laba_kotor": 40630786152.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3047942632.0,
+    "beban_pajak": -670547379.0,
+    "laba_bersih": 2377395253.0,
+    "laba_induk": 2377395253.0,
+    "eps_basic": 2.852874417090977,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 15632263168,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 20685000000.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "kode": "PEVE",
+  "nama": "PT. Penta Valent Tbk",
+  "sektor": "Healthcare",
+  "industri": "Pharmaceutical Retailers",
+  "harga": 330.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.248878923766815,
+    "pb": 1.5452563542537625,
+    "ps": 0.1586136539237579,
+    "roe": 0.08244350410914265,
+    "eps": 35.68,
+    "de": 2.8294867627917015,
+    "margin_net": 0.01692491397046475,
+    "current_ratio": 1.3557424913419318,
+    "roa": 0.021521353210279395,
+    "bv": 213.5567985801062
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 901853502519.0,
+      "2026-Q1": 871412723536.0,
+      "2026-Q2": 965302576775.0
+    },
+    "eps": {
+      "2025-Q3": 8.6,
+      "2026-Q1": 9.14,
+      "2026-Q2": 8.7
+    },
+    "net_income": {
+      "2025-Q3": 15233879329.0,
+      "2026-Q1": 15919007862.0,
+      "2026-Q2": 15167240584.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 582656262144,
+    "enterprise_value": 996916264960,
+    "shares_outstanding": 1765625000
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2534,
+    "vol_trend": 1.571,
+    "price_chg_20d": 1.85
+  },
+  "neraca": {
+    "aset": 1444437445093.0,
+    "aset_lancar": 1402635722168.0,
+    "kas": 7524481974.0,
+    "piutang_usaha": 665666487532.0,
+    "persediaan": 443260904578.0,
+    "aset_tetap": 350526853.0,
+    "liabilitas": 1066889737806.0,
+    "liabilitas_jangka_pendek": 1034588597116.0,
+    "liabilitas_jangka_panjang": 32301140690.0,
+    "utang_usaha": 665666487532.0,
+    "utang_bank": 420661929606.0,
+    "ekuitas": 377061222493.0,
+    "ekuitas_induk": 377061222493.0,
+    "modal_saham": null,
+    "saldo_laba": 100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1836715300311.0,
+    "beban_pokok": 1629412923470.0,
+    "laba_kotor": 207302376841.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 39098235035.0,
+    "beban_pajak": -8601611708.0,
+    "laba_bersih": 31086248446.0,
+    "laba_induk": 31086248446.0,
+    "eps_basic": 17.84,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -63560818688,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 350526853.0,
+    "dividen_dibayar": null
+  }
+}

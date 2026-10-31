@@ -1,0 +1,89 @@
+{
+  "kode": "BINA",
+  "nama": "PT Bank Ina Perdana Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 3950.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 186.32075471698113,
+    "pb": 8.155778440397542,
+    "ps": 12.032093433303972,
+    "roe": 0.021877979685382246,
+    "eps": 21.2,
+    "de": 10.59322870756583,
+    "margin_net": 0.06455248818495718,
+    "current_ratio": null,
+    "roa": 0.0018871343123856867,
+    "bv": 484.3191890101741
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": -881022618000000.0,
+      "2026-Q1": 498863000000000.0,
+      "2026-Q2": -497856021000000.0
+    },
+    "eps": {
+      "2025-Q3": 1.33,
+      "2026-Q1": 8.64,
+      "2026-Q2": 1.96
+    },
+    "net_income": {
+      "2025-Q3": 8155000000000.0,
+      "2026-Q1": 52975000000000.0,
+      "2026-Q2": 12028000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 24232129986560,
+    "enterprise_value": 24425416097792,
+    "shares_outstanding": 6134716665
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1726,
+    "vol_trend": 1.111,
+    "price_chg_20d": -2.71
+  },
+  "neraca": {
+    "aset": 34445349.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 109005.0,
+    "liabilitas": 31474188.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 2971161.0,
+    "ekuitas_induk": 2971161.0,
+    "modal_saham": null,
+    "saldo_laba": 113919.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1006979.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 83654.0,
+    "beban_pajak": -18651.0,
+    "laba_bersih": 65003.0,
+    "laba_induk": 65003.0,
+    "eps_basic": 10.6,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4224819000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

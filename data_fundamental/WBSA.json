@@ -1,0 +1,77 @@
+{
+  "kode": "WBSA",
+  "nama": "PT BSA Logistics Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 478.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 2.037047225953003,
+    "pb": null,
+    "ps": 1063.969843555038,
+    "roe": 0.0016473406331436718,
+    "eps": 234.65337175792507,
+    "de": 1.7793884212474176,
+    "margin_net": 0.0005223098561484137,
+    "current_ratio": 1.6185847737805334,
+    "roa": 0.0005926975965779339,
+    "bv": 71221.87331412104
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4146650152960,
+    "enterprise_value": 4473291276288,
+    "shares_outstanding": 8675000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2208,
+    "vol_trend": 1.132,
+    "price_chg_20d": -20.33
+  },
+  "neraca": {
+    "aset": 1717248401.0,
+    "aset_lancar": 954350728.0,
+    "kas": 231037349.0,
+    "piutang_usaha": 600241396.0,
+    "persediaan": 11874891.0,
+    "aset_tetap": 288698.0,
+    "liabilitas": 1099394693.0,
+    "liabilitas_jangka_pendek": 589620478.0,
+    "liabilitas_jangka_panjang": 509774215.0,
+    "utang_usaha": 600241396.0,
+    "utang_bank": 20959981.0,
+    "ekuitas": 617849751.0,
+    "ekuitas_induk": 617849751.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1948668952.0,
+    "beban_pokok": 1808926664.0,
+    "laba_kotor": 139742288.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6917594.0,
+    "beban_pajak": 9458243.0,
+    "laba_bersih": 1017809.0,
+    "laba_induk": 1017809.0,
+    "eps_basic": 0.1,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 129786232832,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 288698.0,
+    "dividen_dibayar": null
+  }
+}

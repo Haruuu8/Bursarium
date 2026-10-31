@@ -1,0 +1,93 @@
+{
+  "kode": "PTRO",
+  "nama": "PT Petrosea Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 2320.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.021507690497680993,
+    "roe": 0.03969004455793451,
+    "eps": 2138.9939570000147,
+    "de": 4.439500921697984,
+    "margin_net": 0.019829663794640642,
+    "current_ratio": 1.524295534271945,
+    "roa": 0.007060215713905162,
+    "bv": 26946.227710550713
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 154219000000000.0,
+      "2025-Q2": 196891000000000.0,
+      "2025-Q3": 252733000000000.0,
+      "2026-Q1": 284132000000000.0,
+      "2026-Q2": 259851000000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": -0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q3": 5861000000000.0,
+      "2026-Q1": 1385000000000.0,
+      "2026-Q2": 9402000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 23399636140032,
+    "enterprise_value": 23400424669184,
+    "shares_outstanding": 10086050000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2274,
+    "vol_trend": 1.249,
+    "price_chg_20d": -54.73
+  },
+  "neraca": {
+    "aset": 1527857.0,
+    "aset_lancar": 676554.0,
+    "kas": 80398.0,
+    "piutang_usaha": 207056.0,
+    "persediaan": 21484.0,
+    "aset_tetap": 673832.0,
+    "liabilitas": 1206572.0,
+    "liabilitas_jangka_pendek": 443847.0,
+    "liabilitas_jangka_panjang": 762725.0,
+    "utang_usaha": 207056.0,
+    "utang_bank": 63228.0,
+    "ekuitas": 271781.0,
+    "ekuitas_induk": 271781.0,
+    "modal_saham": null,
+    "saldo_laba": 1475.0
+  },
+  "laba_rugi": {
+    "pendapatan": 543983.0,
+    "beban_pokok": 496958.0,
+    "laba_kotor": 47025.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4270.0,
+    "beban_pajak": -2720.0,
+    "laba_bersih": 10787.0,
+    "laba_induk": 10787.0,
+    "eps_basic": 0.0003,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 132883000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 43087.0,
+    "dividen_dibayar": 2045.0
+  }
+}

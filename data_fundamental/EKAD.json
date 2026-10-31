@@ -1,0 +1,95 @@
+{
+  "kode": "EKAD",
+  "nama": "PT Ekadharma International Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 308.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 38.001453199433875,
+    "pb": 0.8728170818984221,
+    "ps": 1.918967517848224,
+    "roe": 0.022967992232239814,
+    "eps": 8.104953207541769,
+    "de": 0.09341129547564268,
+    "margin_net": 0.09558665090428792,
+    "current_ratio": 14.002485520293199,
+    "roa": 0.020481201971035205,
+    "bv": 352.8803530403921
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 128584245804.0,
+      "2025-Q2": 123309503414.0,
+      "2025-Q3": 141216287543.0,
+      "2026-Q1": 142343364232.0,
+      "2026-Q2": 153908184704.0
+    },
+    "eps": {
+      "2025-Q1": 2.04,
+      "2025-Q2": 4.15,
+      "2025-Q3": 2.55,
+      "2026-Q1": 1.18,
+      "2026-Q2": 6.92
+    },
+    "net_income": {
+      "2025-Q1": 7132184321.0,
+      "2025-Q2": 14484804573.0,
+      "2025-Q3": 8923093961.0,
+      "2026-Q1": 4138324628.0,
+      "2026-Q2": 24179368760.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1076113506304,
+    "enterprise_value": 628915240960,
+    "shares_outstanding": 3493875000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2865,
+    "vol_trend": 0.199,
+    "price_chg_20d": -16.76
+  },
+  "neraca": {
+    "aset": 1382618726579.0,
+    "aset_lancar": 819809397846.0,
+    "kas": 53866127867.0,
+    "piutang_usaha": 80514785674.0,
+    "persediaan": 205010578364.0,
+    "aset_tetap": 488265676151.0,
+    "liabilitas": 115168639797.0,
+    "liabilitas_jangka_pendek": 58547419789.0,
+    "liabilitas_jangka_panjang": 56621220008.0,
+    "utang_usaha": 80514785674.0,
+    "utang_bank": 7688581902.0,
+    "ekuitas": 1232919843479.0,
+    "ekuitas_induk": 1232919843479.0,
+    "modal_saham": null,
+    "saldo_laba": 7200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 296251548936.0,
+    "beban_pokok": 186761037296.0,
+    "laba_kotor": 109490511640.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 39819335453.0,
+    "beban_pajak": -8322104492.0,
+    "laba_bersih": 28317693388.0,
+    "laba_induk": 28317693388.0,
+    "eps_basic": 8.104953207541769,
+    "eps_diluted": 8.104953207541769
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 77844258816,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 117405000.0,
+    "dividen_dibayar": 31473344951.0
+  }
+}

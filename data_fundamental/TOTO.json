@@ -1,0 +1,95 @@
+{
+  "kode": "TOTO",
+  "nama": "PT Surya Toto Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 234.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 27.464788732394368,
+    "pb": 0.9574105605762874,
+    "ps": 1.0635379959259692,
+    "roe": 0.03487946234583709,
+    "eps": 8.52,
+    "de": 0.3421277277529723,
+    "margin_net": 0.08540654760525362,
+    "current_ratio": 4.90506503600876,
+    "roa": 0.025988184004091218,
+    "bv": 244.40925307858527
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 576935002679.0,
+      "2025-Q2": 627592359906.0,
+      "2025-Q3": 612925769507.0,
+      "2026-Q1": 484483505155.0,
+      "2026-Q2": 545608357036.0
+    },
+    "eps": {
+      "2025-Q1": 8.32,
+      "2025-Q2": 8.07,
+      "2025-Q3": 8.55,
+      "2026-Q1": 4.4,
+      "2026-Q2": 4.12
+    },
+    "net_income": {
+      "2025-Q1": 85887772176.0,
+      "2025-Q2": 83211801710.0,
+      "2025-Q3": 88299815641.0,
+      "2026-Q1": 45364724302.0,
+      "2026-Q2": 42611865364.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2414879965184,
+    "enterprise_value": 2410904813568,
+    "shares_outstanding": 10320000000
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.4884,
+    "vol_trend": 1.303,
+    "price_chg_20d": -2.5
+  },
+  "neraca": {
+    "aset": 3385253454114.0,
+    "aset_lancar": 1592918029053.0,
+    "kas": 213485851256.0,
+    "piutang_usaha": 1235288633.0,
+    "persediaan": 862695740849.0,
+    "aset_tetap": 13124107237.0,
+    "liabilitas": 862949962343.0,
+    "liabilitas_jangka_pendek": 324749624594.0,
+    "liabilitas_jangka_panjang": 538200337749.0,
+    "utang_usaha": 1235288633.0,
+    "utang_bank": 5000000000.0,
+    "ekuitas": 2522303491771.0,
+    "ekuitas_induk": 2522303491771.0,
+    "modal_saham": null,
+    "saldo_laba": 2254218537232.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1030091862191.0,
+    "beban_pokok": 813915583360.0,
+    "laba_kotor": 216176278831.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 112790499572.0,
+    "beban_pajak": -24813909906.0,
+    "laba_bersih": 87976589666.0,
+    "laba_induk": 87976589666.0,
+    "eps_basic": 8.52,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 233110372352,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13124107237.0,
+    "dividen_dibayar": 129354766235.0
+  }
+}

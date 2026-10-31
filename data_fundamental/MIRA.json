@@ -1,0 +1,95 @@
+{
+  "kode": "MIRA",
+  "nama": "PT Mitra International Resources Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 19.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.5305620078958732,
+    "ps": 1.2728015631879743,
+    "roe": -0.028438250875353083,
+    "eps": -1.9825721954171562,
+    "de": 0.6292644167817623,
+    "margin_net": -0.13889909105787301,
+    "current_ratio": 0.6052595588634986,
+    "roa": -0.01753650783828661,
+    "bv": 35.811082808871035
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 16066629710.0,
+      "2025-Q2": 13120562394.0,
+      "2025-Q3": 16969541249.0,
+      "2026-Q1": 13406278683.0,
+      "2026-Q2": 15638985604.0
+    },
+    "eps": {
+      "2025-Q1": -0.56,
+      "2025-Q2": -0.77,
+      "2025-Q3": -0.19,
+      "2026-Q1": -0.39,
+      "2026-Q2": -0.62
+    },
+    "net_income": {
+      "2025-Q1": -2209909739.0,
+      "2025-Q2": -3063088577.0,
+      "2025-Q3": -756415280.0,
+      "2026-Q1": -1559336948.0,
+      "2026-Q2": -2475023861.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 75267588096,
+    "enterprise_value": 114071855104,
+    "shares_outstanding": 3961452039
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2066,
+    "vol_trend": 0.909,
+    "price_chg_20d": -17.39
+  },
+  "neraca": {
+    "aset": 230054971389.0,
+    "aset_lancar": 34163747045.0,
+    "kas": 742098373.0,
+    "piutang_usaha": 9716398891.0,
+    "persediaan": 2390321873.0,
+    "aset_tetap": 154017927818.0,
+    "liabilitas": 89269896123.0,
+    "liabilitas_jangka_pendek": 56444787273.0,
+    "liabilitas_jangka_panjang": 32825108850.0,
+    "utang_usaha": 9716398891.0,
+    "utang_bank": 19963641385.0,
+    "ekuitas": 141863887012.0,
+    "ekuitas_induk": 141863887012.0,
+    "modal_saham": null,
+    "saldo_laba": -1383037854566.0
+  },
+  "laba_rugi": {
+    "pendapatan": 29045264287.0,
+    "beban_pokok": 27448066343.0,
+    "laba_kotor": 1597197944.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4606304071.0,
+    "beban_pajak": 54494572.0,
+    "laba_bersih": -4034360809.0,
+    "laba_induk": -4034360809.0,
+    "eps_basic": -1.0184045570954479,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 9324693504,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2095158110.0,
+    "dividen_dibayar": null
+  }
+}

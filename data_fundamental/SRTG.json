@@ -1,0 +1,95 @@
+{
+  "kode": "SRTG",
+  "nama": "PT Saratoga Investama Sedaya Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 1615.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.40774660243619265,
+    "ps": 0.6678155558319092,
+    "roe": -0.07218505850599817,
+    "eps": -16.915263951336257,
+    "de": 0.0715915773185655,
+    "margin_net": -284.68797766019986,
+    "current_ratio": null,
+    "roa": -0.06732718329068678,
+    "bv": 3960.7932729561558
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 22118000000000.0,
+      "2025-Q2": 10112000000000.0,
+      "2025-Q3": 9048000000000.0,
+      "2026-Q1": 6313000000000.0,
+      "2026-Q2": 7295000000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 8.0,
+      "2025-Q3": -187.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0
+    },
+    "net_income": {
+      "2025-Q1": -6076019000000.0,
+      "2025-Q2": 108093019000000.0,
+      "2025-Q3": -104448184000000.0,
+      "2026-Q1": 5321362000000.0,
+      "2026-Q2": -9195396000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 21882980007936,
+    "enterprise_value": -30152916467712,
+    "shares_outstanding": 13549832900
+  },
+  "akumulasi": {
+    "score": 5.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.086,
+    "vol_trend": 1.157,
+    "price_chg_20d": -5.56
+  },
+  "neraca": {
+    "aset": 57540414.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": -25752.0,
+    "liabilitas": 3842183.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 53668087.0,
+    "ekuitas_induk": 53668087.0,
+    "modal_saham": null,
+    "saldo_laba": 47860317.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13608.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3305292.0,
+    "beban_pajak": -566914.0,
+    "laba_bersih": -3874034.0,
+    "laba_induk": -3874034.0,
+    "eps_basic": 0.000286,
+    "eps_diluted": 0.000285
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2371041886208,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 1399698.0
+  }
+}

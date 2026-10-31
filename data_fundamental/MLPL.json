@@ -1,0 +1,95 @@
+{
+  "kode": "MLPL",
+  "nama": "PT Multipolar Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 58.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0023489330044442606,
+    "roe": -0.005399876502672318,
+    "eps": null,
+    "de": 1.699445617333653,
+    "margin_net": -0.004358868696539791,
+    "current_ratio": 1.0911989358960328,
+    "roa": -0.001967257462351588,
+    "bv": 10406.719208790833
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3004566000000.0,
+      "2025-Q2": 2684550000000.0,
+      "2025-Q3": 2837145000000.0,
+      "2026-Q1": 3161406000000.0,
+      "2026-Q2": 2871352000000.0
+    },
+    "eps": {
+      "2025-Q1": 1.0,
+      "2025-Q2": -10.0,
+      "2025-Q3": 1.0,
+      "2026-Q1": 8.0,
+      "2026-Q2": -10.0
+    },
+    "net_income": {
+      "2025-Q1": 11731000000000.0,
+      "2025-Q2": -146299000000000.0,
+      "2025-Q3": 11168000000000.0,
+      "2026-Q1": 119805000000000.0,
+      "2026-Q2": -146101000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 905574940672,
+    "enterprise_value": 1262228996096,
+    "shares_outstanding": 467942000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.483,
+    "vol_trend": 0.88,
+    "price_chg_20d": -21.62
+  },
+  "neraca": {
+    "aset": 13366832.0,
+    "aset_lancar": 5813143.0,
+    "kas": 1256887.0,
+    "piutang_usaha": 830303.0,
+    "persediaan": 2398364.0,
+    "aset_tetap": 1253138.0,
+    "liabilitas": 8275860.0,
+    "liabilitas_jangka_pendek": 5327299.0,
+    "liabilitas_jangka_panjang": 2948561.0,
+    "utang_usaha": 830303.0,
+    "utang_bank": 394250.0,
+    "ekuitas": 4869741.0,
+    "ekuitas_induk": 4869741.0,
+    "modal_saham": null,
+    "saldo_laba": 2400.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6032758.0,
+    "beban_pokok": 5042336.0,
+    "laba_kotor": 990422.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 12159.0,
+    "beban_pajak": -33657.0,
+    "laba_bersih": -26296.0,
+    "laba_induk": -26296.0,
+    "eps_basic": -2.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 475966996480,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 48838.0,
+    "dividen_dibayar": 26079.0
+  }
+}

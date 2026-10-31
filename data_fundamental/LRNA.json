@@ -1,0 +1,95 @@
+{
+  "kode": "LRNA",
+  "nama": "PT Eka Sari Lorena Transport Tbk",
+  "sektor": "Industrials",
+  "industri": "Railroads",
+  "harga": 193.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.26921211905632786,
+    "ps": 1.1737692579801142,
+    "roe": -0.06306362191202856,
+    "eps": -89.56970499847569,
+    "de": 0.13993711997746167,
+    "margin_net": -0.5941554247353814,
+    "current_ratio": 0.8536681027401277,
+    "roa": -0.05532201803663997,
+    "bv": 716.9068044801437
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 16501424703.0,
+      "2025-Q2": 18452519956.0,
+      "2025-Q3": 12464767333.0,
+      "2026-Q1": 14384186788.0,
+      "2026-Q2": 12248171040.0
+    },
+    "eps": {
+      "2025-Q1": -19.89,
+      "2025-Q2": -15.36,
+      "2025-Q3": -29.27,
+      "2026-Q1": -19.07,
+      "2026-Q2": -26.14
+    },
+    "net_income": {
+      "2025-Q1": -6960389843.0,
+      "2025-Q2": -5377043072.0,
+      "2025-Q3": -10148595771.0,
+      "2026-Q1": -6673755806.0,
+      "2026-Q2": -9150004071.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 67550007296,
+    "enterprise_value": 72371167232,
+    "shares_outstanding": 350000022
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3521,
+    "vol_trend": 0.325,
+    "price_chg_20d": -8.96
+  },
+  "neraca": {
+    "aset": 286030055276.0,
+    "aset_lancar": 9859721656.0,
+    "kas": 527789126.0,
+    "piutang_usaha": 1720466963.0,
+    "persediaan": 3680467174.0,
+    "aset_tetap": 463429246.0,
+    "liabilitas": 35112657936.0,
+    "liabilitas_jangka_pendek": 11549830226.0,
+    "liabilitas_jangka_panjang": 23562827710.0,
+    "utang_usaha": 1720466963.0,
+    "utang_bank": 4167523698.0,
+    "ekuitas": 250917397340.0,
+    "ekuitas_induk": 250917397340.0,
+    "modal_saham": null,
+    "saldo_laba": 2500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 26632357828.0,
+    "beban_pokok": 27785769195.0,
+    "laba_kotor": -1153411367.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -15823759877.0,
+    "beban_pajak": null,
+    "laba_bersih": -15823759877.0,
+    "laba_induk": -15823759877.0,
+    "eps_basic": -45.21,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -9176638464,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 463429246.0,
+    "dividen_dibayar": null
+  }
+}

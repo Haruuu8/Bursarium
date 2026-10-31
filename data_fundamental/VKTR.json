@@ -1,0 +1,95 @@
+{
+  "kode": "VKTR",
+  "nama": "PT VKTR Teknologi Mobilitas Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Recreational Vehicles",
+  "harga": 280.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 15.374659346986263,
+    "ps": 0.013990076954583866,
+    "roe": 0.0013139244364069199,
+    "eps": -13.282203230310342,
+    "de": 0.5372829652715684,
+    "margin_net": 0.0021161456821984456,
+    "current_ratio": 2.0877898567905917,
+    "roa": 0.0007545450192598855,
+    "bv": 18.211785619489874
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 218078000000000.0,
+      "2025-Q2": 195958000000000.0,
+      "2025-Q3": 302873000000000.0,
+      "2026-Q1": 344996000000000.0,
+      "2026-Q2": 302880000000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.08,
+      "2025-Q2": 0.03,
+      "2025-Q3": -0.08,
+      "2026-Q1": 0.08,
+      "2026-Q2": -0.05
+    },
+    "net_income": {
+      "2025-Q1": 3305000000000.0,
+      "2025-Q2": 1427000000000.0,
+      "2025-Q3": -3559000000000.0,
+      "2026-Q1": 3467000000000.0,
+      "2026-Q2": -2096000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 16042519691264,
+    "enterprise_value": 12526944256000,
+    "shares_outstanding": 57294711337
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2304,
+    "vol_trend": 2.705,
+    "price_chg_20d": -66.47
+  },
+  "neraca": {
+    "aset": 1816989.0,
+    "aset_lancar": 704437.0,
+    "kas": 38040.0,
+    "piutang_usaha": 179371.0,
+    "persediaan": 141954.0,
+    "aset_tetap": 822030.0,
+    "liabilitas": 560622.0,
+    "liabilitas_jangka_pendek": 337408.0,
+    "liabilitas_jangka_panjang": 223214.0,
+    "utang_usaha": 179371.0,
+    "utang_bank": 53730.0,
+    "ekuitas": 1043439.0,
+    "ekuitas_induk": 1043439.0,
+    "modal_saham": null,
+    "saldo_laba": -78425.0
+  },
+  "laba_rugi": {
+    "pendapatan": 647876.0,
+    "beban_pokok": 537239.0,
+    "laba_kotor": 110637.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11187.0,
+    "beban_pajak": -1088.0,
+    "laba_bersih": 1371.0,
+    "laba_induk": 1371.0,
+    "eps_basic": 0.03,
+    "eps_diluted": 0.03
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 171970002944,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 49650.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "kode": "CMNT",
+  "nama": "PT Cemindo Gemilang Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 740.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 5.614921832043345,
+    "ps": 1.3822037126715092,
+    "roe": -0.11293403320072362,
+    "eps": null,
+    "de": 6.216862745619293,
+    "margin_net": -0.05560107322819187,
+    "current_ratio": 0.5026928739428009,
+    "roa": -0.015346339337659142,
+    "bv": 131.7916833279768
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 2364180000000.0,
+      "2026-Q1": 2076648000000.0,
+      "2026-Q2": 2507652000000.0
+    },
+    "eps": {
+      "2025-Q3": -1.09,
+      "2026-Q1": -5.15,
+      "2026-Q2": -9.73
+    },
+    "net_income": {
+      "2025-Q3": -18591000000000.0,
+      "2026-Q1": -88117000000000.0,
+      "2026-Q2": -166775000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 12672872480768,
+    "enterprise_value": 21577452224512,
+    "shares_outstanding": 17125504000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2784,
+    "vol_trend": 0.797,
+    "price_chg_20d": -1.33
+  },
+  "neraca": {
+    "aset": 16609303.0,
+    "aset_lancar": 3537029.0,
+    "kas": 509088.0,
+    "piutang_usaha": 571260.0,
+    "persediaan": 1712232.0,
+    "aset_tetap": 12747505.0,
+    "liabilitas": 14031453.0,
+    "liabilitas_jangka_pendek": 7036163.0,
+    "liabilitas_jangka_panjang": 6995290.0,
+    "utang_usaha": 571260.0,
+    "utang_bank": 1772596.0,
+    "ekuitas": 2256999.0,
+    "ekuitas_induk": 2256999.0,
+    "modal_saham": null,
+    "saldo_laba": -4031832.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4584300.0,
+    "beban_pokok": 3728802.0,
+    "laba_kotor": 855498.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -258065.0,
+    "beban_pajak": -24997.0,
+    "laba_bersih": -254892.0,
+    "laba_induk": -254892.0,
+    "eps_basic": -14.88,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1232501997568,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 170027.0,
+    "dividen_dibayar": null
+  }
+}

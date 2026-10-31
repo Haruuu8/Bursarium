@@ -1,0 +1,95 @@
+{
+  "kode": "BAUT",
+  "nama": "PT Mitra Angkasa Sejahtera Tbk",
+  "sektor": "Industrials",
+  "industri": "Tools & Accessories",
+  "harga": 25.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7151245710725028,
+    "ps": 0.9370604869387075,
+    "roe": -0.02354029608521146,
+    "eps": -1.8486541665824572,
+    "de": 0.38113827114805576,
+    "margin_net": -0.06504851067751752,
+    "current_ratio": 3.4644553882630165,
+    "roa": -0.017044259396429506,
+    "bv": 34.958944233319286
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 30955483746.0,
+      "2025-Q2": 30129103988.0,
+      "2025-Q3": 37207578170.0,
+      "2026-Q1": 28919101566.0,
+      "2026-Q2": 31809134067.0
+    },
+    "eps": {
+      "2025-Q1": -1.41,
+      "2025-Q2": -0.91,
+      "2025-Q3": -0.11,
+      "2026-Q1": -0.67,
+      "2026-Q2": -0.15
+    },
+    "net_income": {
+      "2025-Q1": -6752704283.0,
+      "2025-Q2": -4368126588.0,
+      "2025-Q3": -555470374.0,
+      "2026-Q1": -3216395578.0,
+      "2026-Q2": -733885706.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 120004567040,
+    "enterprise_value": 119039803392,
+    "shares_outstanding": 4800182969
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2204,
+    "vol_trend": 1.823,
+    "price_chg_20d": -16.67
+  },
+  "neraca": {
+    "aset": 231766085702.0,
+    "aset_lancar": 205531150380.0,
+    "kas": 155220510.0,
+    "piutang_usaha": 15913873510.0,
+    "persediaan": 122526173738.0,
+    "aset_tetap": 15110000.0,
+    "liabilitas": 63958557432.0,
+    "liabilitas_jangka_pendek": 59325673835.0,
+    "liabilitas_jangka_panjang": 4632883597.0,
+    "utang_usaha": 15913873510.0,
+    "utang_bank": 12772989592.0,
+    "ekuitas": 167809328723.0,
+    "ekuitas_induk": 167809328723.0,
+    "modal_saham": null,
+    "saldo_laba": 1500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 60728235633.0,
+    "beban_pokok": 46139985266.0,
+    "laba_kotor": 14588250367.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3960501877.0,
+    "beban_pajak": null,
+    "laba_bersih": -3950281284.0,
+    "laba_induk": -3950281284.0,
+    "eps_basic": -0.82,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -14936783872,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15110000.0,
+    "dividen_dibayar": null
+  }
+}

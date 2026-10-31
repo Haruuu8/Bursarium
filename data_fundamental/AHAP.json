@@ -1,0 +1,95 @@
+{
+  "kode": "AHAP",
+  "nama": "PT Asuransi Harta Aman Pratama Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Property & Casualty",
+  "harga": 43.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.9289919612542141,
+    "ps": 0.020598619629143094,
+    "roe": 0.0012378140051025333,
+    "eps": null,
+    "de": 4.141008528964927,
+    "margin_net": 0.0012803853646064574,
+    "current_ratio": null,
+    "roa": 0.00024077260291022128,
+    "bv": 22.291435559970797
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 29753735984.0,
+      "2025-Q2": 18939352297.0,
+      "2025-Q3": 15951306911719.0,
+      "2026-Q1": 95945251003.0,
+      "2026-Q2": 70641592221.0
+    },
+    "eps": {
+      "2025-Q1": -1.13,
+      "2025-Q2": -1.19,
+      "2025-Q3": 0.77,
+      "2026-Q1": 0.37,
+      "2026-Q2": -0.33
+    },
+    "net_income": {
+      "2025-Q1": -5520835593.0,
+      "2025-Q2": -5841334086.0,
+      "2025-Q3": 3780998666.0,
+      "2026-Q1": 1810834424.0,
+      "2026-Q2": 213293545165576.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 332396494848,
+    "enterprise_value": 27566000128,
+    "shares_outstanding": 7730150865
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4016,
+    "vol_trend": 1.01,
+    "price_chg_20d": -53.26
+  },
+  "neraca": {
+    "aset": 885878847601.0,
+    "aset_lancar": null,
+    "kas": 16256708355.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 5495908932.0,
+    "liabilitas": 713562687725.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 172316159876.0,
+    "ekuitas_induk": 172316159876.0,
+    "modal_saham": null,
+    "saldo_laba": 775991100.0
+  },
+  "laba_rugi": {
+    "pendapatan": 166586843224.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 213295356.0,
+    "beban_pajak": null,
+    "laba_bersih": 213295356.0,
+    "laba_induk": 213295356.0,
+    "eps_basic": 0.04,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 69466044.0,
+    "dividen_dibayar": null
+  }
+}

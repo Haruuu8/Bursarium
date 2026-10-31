@@ -1,0 +1,95 @@
+{
+  "kode": "SSMS",
+  "nama": "PT Sawit Sumbermas Sarana Tbk.",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 985.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.36489826963301,
+    "pb": null,
+    "ps": 551.4527404723988,
+    "roe": 0.37234456793951076,
+    "eps": 105.18,
+    "de": 4.994225257195275,
+    "margin_net": 0.09369644032908335,
+    "current_ratio": 1.169628678538143,
+    "roa": 0.060180492775264216,
+    "bv": 0.2550114094488189
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3656811334.0,
+      "2025-Q2": 3538405419.0,
+      "2025-Q3": 3822415927.0,
+      "2026-Q1": 3518838014.0,
+      "2026-Q2": 6133811263.0
+    },
+    "eps": {
+      "2025-Q1": 35.86,
+      "2025-Q2": -35.79,
+      "2025-Q3": 105.06,
+      "2026-Q1": 0.03,
+      "2026-Q2": 105.15
+    },
+    "net_income": {
+      "2025-Q1": 341523778000000.0,
+      "2025-Q2": 349921457000000.0,
+      "2025-Q3": -691444233653153.0,
+      "2026-Q1": 318108062000000.0,
+      "2026-Q2": 586310815000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 9382125371392,
+    "enterprise_value": 18955980767232,
+    "shares_outstanding": 9525000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1378,
+    "vol_trend": 1.038,
+    "price_chg_20d": -7.51
+  },
+  "neraca": {
+    "aset": 15028439205.0,
+    "aset_lancar": 7427311754.0,
+    "kas": 673551902.0,
+    "piutang_usaha": 978428408.0,
+    "persediaan": 1101293417.0,
+    "aset_tetap": 4034647863.0,
+    "liabilitas": 12130891619.0,
+    "liabilitas_jangka_pendek": 6350145042.0,
+    "liabilitas_jangka_panjang": 5780746577.0,
+    "utang_usaha": 978428408.0,
+    "utang_bank": 3425432900.0,
+    "ekuitas": 2428983675.0,
+    "ekuitas_induk": 2428983675.0,
+    "modal_saham": null,
+    "saldo_laba": 2588705189.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9652649277.0,
+    "beban_pokok": 5875259636.0,
+    "laba_kotor": 3777389641.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1357860074.0,
+    "beban_pajak": -356030037.0,
+    "laba_bersih": 904418877.0,
+    "laba_induk": 904418877.0,
+    "eps_basic": 105.18,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -41957810176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 65456782.0,
+    "dividen_dibayar": 1098342796.0
+  }
+}

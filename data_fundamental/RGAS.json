@@ -1,0 +1,98 @@
+{
+  "kode": "RGAS",
+  "nama": "PT Kian Santang Muliatama Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 61.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 23.0188679245283,
+    "pb": 0.8392105503034233,
+    "ps": 0.8018673817056814,
+    "roe": 0.03648259133305867,
+    "eps": 2.65,
+    "de": 0.5761626770661482,
+    "margin_net": 0.046603191439402565,
+    "current_ratio": 2.2775403435541697,
+    "roa": 0.023131762444560933,
+    "bv": 72.68736073199385
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 122302273904.0,
+      "2025-Q2": 24959778602.0,
+      "2025-Q3": 27973879436.0,
+      "2026-Q1": 30083652534.0,
+      "2026-Q2": 21574888157.0,
+      "2026-Q3": 31375064079.0
+    },
+    "eps": {
+      "2025-Q1": 1.36,
+      "2025-Q2": 0.78,
+      "2025-Q3": 0.61,
+      "2026-Q1": 1.11,
+      "2026-Q2": 1.45,
+      "2026-Q3": 0.09
+    },
+    "net_income": {
+      "2025-Q1": 1989182458.0,
+      "2025-Q2": 1137559553.0,
+      "2025-Q3": 882111191.0,
+      "2026-Q1": 1613678483.0,
+      "2026-Q2": 2120866510.0,
+      "2026-Q3": 135085986.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 89013280768,
+    "enterprise_value": 76879536128,
+    "shares_outstanding": 1459234110
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3719,
+    "vol_trend": 0.806,
+    "price_chg_20d": -32.22
+  },
+  "neraca": {
+    "aset": 167286474097.0,
+    "aset_lancar": 135511237720.0,
+    "kas": 39158026653.0,
+    "piutang_usaha": 20775347342.0,
+    "persediaan": 55384507553.0,
+    "aset_tetap": 21819250346.0,
+    "liabilitas": 61112351471.0,
+    "liabilitas_jangka_pendek": 59498940646.0,
+    "liabilitas_jangka_panjang": 1613410825.0,
+    "utang_usaha": 20775347342.0,
+    "utang_bank": 26808548377.0,
+    "ekuitas": 106067876146.0,
+    "ekuitas_induk": 106067876146.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 83033604770.0,
+    "beban_pokok": 60126186953.0,
+    "laba_kotor": 22907417817.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 6688167619.0,
+    "beban_pajak": -2810661082.0,
+    "laba_bersih": 3869630979.0,
+    "laba_induk": 3869630979.0,
+    "eps_basic": 2.65,
+    "eps_diluted": 2.65
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 23784388608,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 412900000.0,
+    "dividen_dibayar": 1605157521.0
+  }
+}

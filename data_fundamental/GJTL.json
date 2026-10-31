@@ -1,0 +1,95 @@
+{
+  "kode": "GJTL",
+  "nama": "PT. Gajah Tunggal Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 1085.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.737991266375546,
+    "pb": 0.34344819807768673,
+    "ps": 0.21338668272854996,
+    "roe": 0.07234497314333738,
+    "eps": 229.0,
+    "de": 1.1431348788863398,
+    "margin_net": 0.08849186303559987,
+    "current_ratio": 1.466155531051788,
+    "roa": 0.03375661226741397,
+    "bv": 3159.1372616681397
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4404016000000.0,
+      "2025-Q2": 4116886000000.0,
+      "2025-Q3": 4601120000000.0,
+      "2026-Q1": 4197841000000.0,
+      "2026-Q2": 4801461000000.0
+    },
+    "eps": {
+      "2025-Q1": 101.4,
+      "2025-Q2": 27.9,
+      "2025-Q3": 97.3,
+      "2026-Q1": 109.3,
+      "2026-Q2": 119.7
+    },
+    "net_income": {
+      "2025-Q1": 353347000000000.0,
+      "2025-Q2": 97156000000000.0,
+      "2025-Q3": 339188000000000.0,
+      "2026-Q1": 380807000000000.0,
+      "2026-Q2": 415558000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3780637360128,
+    "enterprise_value": 8386606792704,
+    "shares_outstanding": 3484458600
+  },
+  "akumulasi": {
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0105,
+    "vol_trend": 1.271,
+    "price_chg_20d": -12.85
+  },
+  "neraca": {
+    "aset": 23591378.0,
+    "aset_lancar": 9792812.0,
+    "kas": 859070.0,
+    "piutang_usaha": 1760221.0,
+    "persediaan": 2910172.0,
+    "aset_tetap": 1268099.0,
+    "liabilitas": 12583495.0,
+    "liabilitas_jangka_pendek": 6679245.0,
+    "liabilitas_jangka_panjang": 5904250.0,
+    "utang_usaha": 1760221.0,
+    "utang_bank": 1136253.0,
+    "ekuitas": 11007883.0,
+    "ekuitas_induk": 11007883.0,
+    "modal_saham": null,
+    "saldo_laba": 160000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8999302.0,
+    "beban_pokok": 7097250.0,
+    "laba_kotor": 1902052.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1013533.0,
+    "beban_pajak": -217168.0,
+    "laba_bersih": 796365.0,
+    "laba_induk": 796365.0,
+    "eps_basic": 229.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2113127055360,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1268099.0,
+    "dividen_dibayar": 252253.0
+  }
+}

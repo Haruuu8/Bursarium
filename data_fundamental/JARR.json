@@ -1,0 +1,98 @@
+{
+  "kode": "JARR",
+  "nama": "PT Jhonlin Agro Raya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 2240.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 59.196617336152215,
+    "pb": 9.37179126762514,
+    "ps": 4.519214677236806,
+    "roe": 0.15830594065543158,
+    "eps": 37.84,
+    "de": 1.023301813606566,
+    "margin_net": 0.0990139674252966,
+    "current_ratio": 3.25565973228176,
+    "roa": 0.0782413872170899,
+    "bv": 239.01513979916322
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 849085467907.0,
+      "2025-Q2": 1191765580240.0,
+      "2025-Q3": 1047847718741.0,
+      "2026-Q1": 776514418419.0,
+      "2026-Q2": 986801912905.0,
+      "2026-Q3": 1764119752262.0
+    },
+    "eps": {
+      "2025-Q1": 6.47,
+      "2025-Q2": 10.91,
+      "2025-Q3": 6.89,
+      "2026-Q1": 4.48,
+      "2026-Q2": 12.74,
+      "2026-Q3": 20.62
+    },
+    "net_income": {
+      "2025-Q1": 59726086775.0,
+      "2025-Q2": 100665721946.0,
+      "2025-Q3": 63611328366.0,
+      "2026-Q1": 41331460703.0,
+      "2026-Q2": 117601794500.0,
+      "2026-Q3": 190332186272.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 20676689788928,
+    "enterprise_value": 21984396181504,
+    "shares_outstanding": 9230665050
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1612,
+    "vol_trend": 0.402,
+    "price_chg_20d": -34.5
+  },
+  "neraca": {
+    "aset": 4463947456682.0,
+    "aset_lancar": 2391997153194.0,
+    "kas": 388692736053.0,
+    "piutang_usaha": 442065219162.0,
+    "persediaan": 423845458628.0,
+    "aset_tetap": 1235327450070.0,
+    "liabilitas": 2257678759317.0,
+    "liabilitas_jangka_pendek": 734719642067.0,
+    "liabilitas_jangka_panjang": 1522959117250.0,
+    "utang_usaha": 442065219162.0,
+    "utang_bank": 187753000000.0,
+    "ekuitas": 2206268697365.0,
+    "ekuitas_induk": 2206268697365.0,
+    "modal_saham": null,
+    "saldo_laba": 867167082019.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3527436083586.0,
+    "beban_pokok": 2817270694898.0,
+    "laba_kotor": 710165388688.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 447495785300.0,
+    "beban_pajak": -98230343825.0,
+    "laba_bersih": 349265441475.0,
+    "laba_induk": 349265441475.0,
+    "eps_basic": 37.84,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 505125044224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5476961949.0,
+    "dividen_dibayar": 59999322825.0
+  }
+}

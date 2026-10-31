@@ -1,0 +1,95 @@
+{
+  "kode": "IPOL",
+  "nama": "PT Indopoly Swakarsa Industry Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 102.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00246218495615623,
+    "roe": 0.00865876115647613,
+    "eps": null,
+    "de": 1.2281497435648825,
+    "margin_net": 0.010754406773377117,
+    "current_ratio": 1.1953786531881212,
+    "roa": 0.003801725429836311,
+    "bv": 27300.9503404683
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 53544888000000.0,
+      "2025-Q2": 63469156000000.0,
+      "2025-Q3": 61826476000000.0,
+      "2026-Q1": 61998216000000.0,
+      "2026-Q2": 79633585000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 350493000000000.0,
+      "2025-Q2": 169384000000000.0,
+      "2025-Q3": 46375000000000.0,
+      "2026-Q1": 363415000000000.0,
+      "2026-Q2": -361891834000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 657224761344,
+    "enterprise_value": 657398890496,
+    "shares_outstanding": 6443379509
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.255,
+    "vol_trend": 0.573,
+    "price_chg_20d": -8.11
+  },
+  "neraca": {
+    "aset": 400651238.0,
+    "aset_lancar": 149413860.0,
+    "kas": 17264028.0,
+    "piutang_usaha": 56889812.0,
+    "persediaan": 44898120.0,
+    "aset_tetap": 248891435.0,
+    "liabilitas": 216044293.0,
+    "liabilitas_jangka_pendek": 124992913.0,
+    "liabilitas_jangka_panjang": 91051380.0,
+    "utang_usaha": 56889812.0,
+    "utang_bank": 104656932.0,
+    "ekuitas": 175910384.0,
+    "ekuitas_induk": 175910384.0,
+    "modal_saham": null,
+    "saldo_laba": 1473817.0
+  },
+  "laba_rugi": {
+    "pendapatan": 141631801.0,
+    "beban_pokok": 120415633.0,
+    "laba_kotor": 21216168.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2126156.0,
+    "beban_pajak": -257555.0,
+    "laba_bersih": 1523166.0,
+    "laba_induk": 1523166.0,
+    "eps_basic": 0.00023639240834293066,
+    "eps_diluted": 0.00023639240834293066
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 5031181,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4672504.0,
+    "dividen_dibayar": null
+  }
+}

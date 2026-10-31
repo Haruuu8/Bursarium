@@ -1,0 +1,95 @@
+{
+  "kode": "VIVA",
+  "nama": "PT Visi Media Asia Tbk",
+  "sektor": "Communication Services",
+  "industri": "Broadcasting",
+  "harga": 27.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 6.778591835816971,
+    "pb": null,
+    "ps": 0.0004690719717477845,
+    "roe": 1.1719985396148767,
+    "eps": 3.983128156107057,
+    "de": 104.42016532433155,
+    "margin_net": 0.14855603710053392,
+    "current_ratio": 1.1386292068756425,
+    "roa": 0.010345461462064196,
+    "bv": 3626.5130350981262
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 267177313000000.0,
+      "2025-Q2": 210766858000000.0,
+      "2025-Q3": 235914595000000.0,
+      "2026-Q1": 234098759000000.0,
+      "2026-Q2": 207346101000000.0
+    },
+    "eps": {
+      "2025-Q1": -7.44,
+      "2025-Q2": 79.9,
+      "2025-Q3": -2.26,
+      "2026-Q1": 8.52,
+      "2026-Q2": -4.53
+    },
+    "net_income": {
+      "2025-Q1": -122466179000000.0,
+      "2025-Q2": 122467372002937.0,
+      "2025-Q3": -37132609.0,
+      "2026-Q1": 140202834000000.0,
+      "2026-Q2": -74623535000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 444535308288,
+    "enterprise_value": 3290481819648,
+    "shares_outstanding": 15429450400
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3199,
+    "vol_trend": 1.664,
+    "price_chg_20d": -35.71
+  },
+  "neraca": {
+    "aset": 6338943820.0,
+    "aset_lancar": 2427622158.0,
+    "kas": 17798799.0,
+    "piutang_usaha": 244597862.0,
+    "persediaan": 214120015.0,
+    "aset_tetap": 1525286265.0,
+    "liabilitas": 5842841106.0,
+    "liabilitas_jangka_pendek": 2132056813.0,
+    "liabilitas_jangka_panjang": 3710784293.0,
+    "utang_usaha": 244597862.0,
+    "utang_bank": null,
+    "ekuitas": 55955103.0,
+    "ekuitas_induk": 55955103.0,
+    "modal_saham": null,
+    "saldo_laba": -2779868190.0
+  },
+  "laba_rugi": {
+    "pendapatan": 441444860.0,
+    "beban_pokok": 174110920.0,
+    "laba_kotor": 267333940.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 44613399.0,
+    "beban_pajak": 15410098.0,
+    "laba_bersih": 65579299.0,
+    "laba_induk": 65579299.0,
+    "eps_basic": 3.983128156107057,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 104375132160,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1525286265.0,
+    "dividen_dibayar": null
+  }
+}

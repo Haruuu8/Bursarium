@@ -1,0 +1,95 @@
+{
+  "kode": "BELI",
+  "nama": "PT Global Digital Niaga Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Internet Retail",
+  "harga": 260.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.8995321120534094,
+    "ps": 1.4059320088040654,
+    "roe": -0.07775206770553818,
+    "eps": -546.9452614239547,
+    "de": 1.0290650484258987,
+    "margin_net": -0.0479660147115216,
+    "current_ratio": 1.2441485690570637,
+    "roa": -0.03793671855671989,
+    "bv": 66.67466571087925
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4693759000000.0,
+      "2025-Q2": 4901932000000.0,
+      "2025-Q3": 5643655000000.0,
+      "2026-Q1": 7835282000000.0,
+      "2026-Q2": 6995135000000.0
+    },
+    "eps": {
+      "2025-Q1": -5.0,
+      "2025-Q2": -4.0,
+      "2025-Q3": -5.0,
+      "2026-Q1": -2.0,
+      "2026-Q2": -3.0
+    },
+    "net_income": {
+      "2025-Q1": -638147000000000.0,
+      "2025-Q2": 636894627000000.0,
+      "2025-Q3": -589901000000.0,
+      "2026-Q1": -303004000000000.0,
+      "2026-Q2": -408352000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 35676934373376,
+    "enterprise_value": 36509851844608,
+    "shares_outstanding": 137218985689
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2518,
+    "vol_trend": 1.165,
+    "price_chg_20d": 0.78
+  },
+  "neraca": {
+    "aset": 18751121.0,
+    "aset_lancar": 10114740.0,
+    "kas": 1630052.0,
+    "piutang_usaha": 2313853.0,
+    "persediaan": 3626468.0,
+    "aset_tetap": 35280.0,
+    "liabilitas": 9414947.0,
+    "liabilitas_jangka_pendek": 8129849.0,
+    "liabilitas_jangka_panjang": 1285098.0,
+    "utang_usaha": 2313853.0,
+    "utang_bank": 3021100.0,
+    "ekuitas": 9149030.0,
+    "ekuitas_induk": 9149030.0,
+    "modal_saham": null,
+    "saldo_laba": -29016123.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14830417.0,
+    "beban_pokok": 12505657.0,
+    "laba_kotor": 2324760.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -651126.0,
+    "beban_pajak": -67945.0,
+    "laba_bersih": -711356.0,
+    "laba_induk": -711356.0,
+    "eps_basic": -5.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1142944038912,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 35280.0,
+    "dividen_dibayar": null
+  }
+}

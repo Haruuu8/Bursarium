@@ -1,0 +1,95 @@
+{
+  "kode": "BSBK",
+  "nama": "PT Wulandari Bangun Laksana Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 35.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 22.0125786163522,
+    "pb": 0.3991008251438689,
+    "ps": 2.3764922172043175,
+    "roe": 0.018104206533316923,
+    "eps": 1.59,
+    "de": 0.32742761267491005,
+    "margin_net": 0.2182225897370439,
+    "current_ratio": 1.5359074182488204,
+    "roa": 0.01363856406213744,
+    "bv": 87.69713765283024
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 90644095136.0,
+      "2025-Q2": 90078458390.0,
+      "2025-Q3": 96907481977.0,
+      "2026-Q1": 92068012265.0,
+      "2026-Q2": 90488971501.0
+    },
+    "eps": {
+      "2025-Q1": 0.68,
+      "2025-Q2": 0.69,
+      "2025-Q3": 0.79,
+      "2026-Q1": 0.77,
+      "2026-Q2": 0.82
+    },
+    "net_income": {
+      "2025-Q1": 17119592543.0,
+      "2025-Q2": 17265765746.0,
+      "2025-Q3": 19734679850.0,
+      "2026-Q1": 19261821071.0,
+      "2026-Q2": 20576236701.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 878215888896,
+    "enterprise_value": 1184152551424,
+    "shares_outstanding": 25091882375
+  },
+  "akumulasi": {
+    "score": 2.4,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0762,
+    "vol_trend": 1.382,
+    "price_chg_20d": -10.26
+  },
+  "neraca": {
+    "aset": 2920986226299.0,
+    "aset_lancar": 216899557352.0,
+    "kas": 7853455816.0,
+    "piutang_usaha": 37760339465.0,
+    "persediaan": 1577230856.0,
+    "aset_tetap": 623634038533.0,
+    "liabilitas": 720499963690.0,
+    "liabilitas_jangka_pendek": 141219161243.0,
+    "liabilitas_jangka_panjang": 579280802447.0,
+    "utang_usaha": 37760339465.0,
+    "utang_bank": 56059104036.0,
+    "ekuitas": 2200486262609.0,
+    "ekuitas_induk": 2200486262609.0,
+    "modal_saham": null,
+    "saldo_laba": 45200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 182556983766.0,
+    "beban_pokok": 52596947259.0,
+    "laba_kotor": 129960036507.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 40252143312.0,
+    "beban_pajak": -414085540.0,
+    "laba_bersih": 39838057772.0,
+    "laba_induk": 39838057772.0,
+    "eps_basic": 1.59,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 87868530688,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7841345410.0,
+    "dividen_dibayar": null
+  }
+}

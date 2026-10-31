@@ -1,0 +1,95 @@
+{
+  "kode": "SMDM",
+  "nama": "PT Suryamas Dutamakmur Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 418.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8536425903072278,
+    "ps": 6.609027618888423,
+    "roe": -0.0025114374738775076,
+    "eps": -2.648987333599741,
+    "de": 0.16263603875595534,
+    "margin_net": -0.03717594749753261,
+    "current_ratio": 4.4618275033205475,
+    "roa": -0.0016093731038044172,
+    "bv": 489.6662897871121
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 56389220508.0,
+      "2025-Q2": 87963852731.0,
+      "2025-Q3": 55998203330.0,
+      "2026-Q1": 84604867998.0,
+      "2026-Q2": 73255658338.0
+    },
+    "eps": {
+      "2025-Q1": -1.45,
+      "2025-Q2": 1.04,
+      "2025-Q3": -2.5,
+      "2026-Q1": 1.0,
+      "2026-Q2": -2.23
+    },
+    "net_income": {
+      "2025-Q1": -7112114243.0,
+      "2025-Q2": 5146867876.0,
+      "2025-Q3": -11919586981.0,
+      "2026-Q1": 4753941439.0,
+      "2026-Q2": -10622556078.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1994753703936,
+    "enterprise_value": 2797432471552,
+    "shares_outstanding": 4772138237
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0012,
+    "vol_trend": 0.437,
+    "price_chg_20d": -15.38
+  },
+  "neraca": {
+    "aset": 3646522130342.0,
+    "aset_lancar": 1175273535943.0,
+    "kas": 157811507270.0,
+    "piutang_usaha": 3874129582.0,
+    "persediaan": 3358592371.0,
+    "aset_tetap": 238558626774.0,
+    "liabilitas": 380040613314.0,
+    "liabilitas_jangka_pendek": 263406313908.0,
+    "liabilitas_jangka_panjang": 116634299406.0,
+    "utang_usaha": 3874129582.0,
+    "utang_bank": 30763989090.0,
+    "ekuitas": 2336755224863.0,
+    "ekuitas_induk": 2336755224863.0,
+    "modal_saham": null,
+    "saldo_laba": 4000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 157860526336.0,
+    "beban_pokok": 56592460200.0,
+    "laba_kotor": 101268066136.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -11950073416.0,
+    "beban_pajak": -1384415780.0,
+    "laba_bersih": -5868614639.0,
+    "laba_induk": -5868614639.0,
+    "eps_basic": -1.23,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -53773848576,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1185925291.0,
+    "dividen_dibayar": null
+  }
+}

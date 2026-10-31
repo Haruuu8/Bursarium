@@ -1,0 +1,89 @@
+{
+  "kode": "DEFI",
+  "nama": "PT Danasupra Erapacific Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 68.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.9445563535657664,
+    "ps": 14.03474490886331,
+    "roe": -0.1346990595911001,
+    "eps": -9.420694890532545,
+    "de": 0.1578195162248928,
+    "margin_net": -1.9443683772478857,
+    "current_ratio": 3.8542321780909923,
+    "roa": -0.11144979026227154,
+    "bv": 34.969415967455625
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1697590055.0,
+      "2026-Q1": 1334850000.0,
+      "2026-Q2": 302800000.0
+    },
+    "eps": {
+      "2025-Q3": -2.1,
+      "2026-Q1": -1.41,
+      "2026-Q2": -3.64
+    },
+    "net_income": {
+      "2025-Q3": -1212815681.0,
+      "2026-Q1": -815376221000000.0,
+      "2026-Q2": 815373036805127.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 45967998976,
+    "enterprise_value": 47602712576,
+    "shares_outstanding": 676000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1758,
+    "vol_trend": 0.345,
+    "price_chg_20d": -23.6
+  },
+  "neraca": {
+    "aset": 28570667253.0,
+    "aset_lancar": 14108222862.0,
+    "kas": 110140504.0,
+    "piutang_usaha": 391417969.0,
+    "persediaan": null,
+    "aset_tetap": 111847516.0,
+    "liabilitas": 3730746866.0,
+    "liabilitas_jangka_pendek": 3660449659.0,
+    "liabilitas_jangka_panjang": 70297207.0,
+    "utang_usaha": 391417969.0,
+    "utang_bank": null,
+    "ekuitas": 23639325194.0,
+    "ekuitas_induk": 23639325194.0,
+    "modal_saham": null,
+    "saldo_laba": 2450000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1637650000.0,
+    "beban_pokok": 1152128658.0,
+    "laba_kotor": 485521342.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3413389671.0,
+    "beban_pajak": null,
+    "laba_bersih": -3184194873.0,
+    "laba_induk": -3184194873.0,
+    "eps_basic": -5.05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -4002756864,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1350000.0,
+    "dividen_dibayar": null
+  }
+}

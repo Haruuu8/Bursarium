@@ -1,0 +1,95 @@
+{
+  "kode": "CBUT",
+  "nama": "PT Citra Borneo Utama Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 1065.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.5418068757570524,
+    "ps": 0.20566748364099594,
+    "roe": 0.12957687531408618,
+    "eps": null,
+    "de": 3.5109023228248435,
+    "margin_net": 0.018304451243530376,
+    "current_ratio": 1.1348336073356227,
+    "roa": 0.028725267372435987,
+    "bv": 418.99328
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3395086000000.0,
+      "2025-Q2": 3265410000000.0,
+      "2025-Q3": 3647764000000.0,
+      "2026-Q1": 3377149000000.0,
+      "2026-Q2": 5891744000000.0
+    },
+    "eps": {
+      "2025-Q1": 13.19,
+      "2025-Q2": 0.31,
+      "2025-Q3": -13.5,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 41210000000000.0,
+      "2025-Q2": 996000000000.0,
+      "2025-Q3": 14480000000000.0,
+      "2026-Q1": 45976000000000.0,
+      "2026-Q2": 123686000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3328124911616,
+    "enterprise_value": 6613392949248,
+    "shares_outstanding": 3125000000
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4187,
+    "vol_trend": 0.298,
+    "price_chg_20d": 16.39
+  },
+  "neraca": {
+    "aset": 5906368.0,
+    "aset_lancar": 4496499.0,
+    "kas": 231071.0,
+    "piutang_usaha": 972668.0,
+    "persediaan": 851186.0,
+    "aset_tetap": 823918.0,
+    "liabilitas": 4597014.0,
+    "liabilitas_jangka_pendek": 3962254.0,
+    "liabilitas_jangka_panjang": 634760.0,
+    "utang_usaha": 972668.0,
+    "utang_bank": 2724212.0,
+    "ekuitas": 1309354.0,
+    "ekuitas_induk": 1309354.0,
+    "modal_saham": null,
+    "saldo_laba": 62500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9268893.0,
+    "beban_pokok": 7236786.0,
+    "laba_kotor": 2032107.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 219171.0,
+    "beban_pajak": -49509.0,
+    "laba_bersih": 169662.0,
+    "laba_induk": 169662.0,
+    "eps_basic": 5.43e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -581736005632,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 36872.0,
+    "dividen_dibayar": null
+  }
+}

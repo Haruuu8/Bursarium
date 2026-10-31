@@ -1,0 +1,95 @@
+{
+  "kode": "CLAY",
+  "nama": "PT Citra Putra Realty Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 3000.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 46.77987713260187,
+    "roe": 0.4127218867193288,
+    "eps": 4.58,
+    "de": 17.02269116564,
+    "margin_net": 0.1368202108791255,
+    "current_ratio": 0.411745240851579,
+    "roa": 0.022901808529955762,
+    "bv": 11.112664089494164
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 24911216733.0,
+      "2025-Q2": 28211833214.0,
+      "2025-Q3": 50451973476.0,
+      "2026-Q1": 34049357782.0,
+      "2026-Q2": 52101291499.0
+    },
+    "eps": {
+      "2025-Q1": -2.53,
+      "2025-Q2": -1.26,
+      "2025-Q3": 2.54,
+      "2026-Q1": 0.59,
+      "2026-Q2": 3.99
+    },
+    "net_income": {
+      "2025-Q1": -6495960691.0,
+      "2025-Q2": -3227544323.0,
+      "2025-Q3": 6526961143.0,
+      "2026-Q1": 1524285097.0,
+      "2026-Q2": 10262864905.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7709999497216,
+    "enterprise_value": 7983174516736,
+    "shares_outstanding": 2570000000
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.5135,
+    "vol_trend": 0.86,
+    "price_chg_20d": 8.3
+  },
+  "neraca": {
+    "aset": 514682060440.0,
+    "aset_lancar": 29219787889.0,
+    "kas": 23897303283.0,
+    "piutang_usaha": 2737563778.0,
+    "persediaan": 626168579.0,
+    "aset_tetap": 425433003602.0,
+    "liabilitas": 486160343475.0,
+    "liabilitas_jangka_pendek": 70965696722.0,
+    "liabilitas_jangka_panjang": 415194646753.0,
+    "utang_usaha": 2737563778.0,
+    "utang_bank": 21000000000.0,
+    "ekuitas": 28559546710.0,
+    "ekuitas_induk": 28559546710.0,
+    "modal_saham": null,
+    "saldo_laba": -405727549033.0
+  },
+  "laba_rugi": {
+    "pendapatan": 86150649281.0,
+    "beban_pokok": 33911330717.0,
+    "laba_kotor": 52239318564.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15113397196.0,
+    "beban_pajak": -3431985351.0,
+    "laba_bersih": 11787150002.0,
+    "laba_induk": 11787150002.0,
+    "eps_basic": 4.58,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 56887631872,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2093430154.0,
+    "dividen_dibayar": null
+  }
+}

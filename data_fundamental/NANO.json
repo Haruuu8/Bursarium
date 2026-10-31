@@ -1,0 +1,77 @@
+{
+  "kode": "NANO",
+  "nama": "PT Nanotech Indonesia Global Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Devices",
+  "harga": 24.0,
+  "update": "2026-10-31 20:53",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 20.208467746399364,
+    "pb": 0.6042008120962096,
+    "ps": 0.2357184933848355,
+    "roe": 0.014949199010990398,
+    "eps": 1.187620966675031,
+    "de": 0.23245229030247058,
+    "margin_net": 0.01166434270737001,
+    "current_ratio": 2.9216544454024582,
+    "roa": 0.011915618828189447,
+    "bv": 39.721892985768406
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 102845612032,
+    "enterprise_value": 120468873216,
+    "shares_outstanding": 4285233928
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1513,
+    "vol_trend": 1.8,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 213553057268.0,
+    "aset_lancar": 107499421727.0,
+    "kas": 4513850813.0,
+    "piutang_usaha": 24576956934.0,
+    "persediaan": 541786784.0,
+    "aset_tetap": 64990103907.0,
+    "liabilitas": 39567471785.0,
+    "liabilitas_jangka_pendek": 36794023296.0,
+    "liabilitas_jangka_panjang": 2773448489.0,
+    "utang_usaha": 24576956934.0,
+    "utang_bank": 15716264444.0,
+    "ekuitas": 170217603507.0,
+    "ekuitas_induk": 170217603507.0,
+    "modal_saham": null,
+    "saldo_laba": 348076916.0
+  },
+  "laba_rugi": {
+    "pendapatan": 218153469410.0,
+    "beban_pokok": 211575012086.0,
+    "laba_kotor": 6578457324.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3025150684.0,
+    "beban_pajak": -542624644.0,
+    "laba_bersih": 2544616830.0,
+    "laba_induk": 2544616830.0,
+    "eps_basic": 0.59,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 43588562944,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 64990103907.0,
+    "dividen_dibayar": null
+  }
+}

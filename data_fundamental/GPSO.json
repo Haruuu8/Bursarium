@@ -1,0 +1,92 @@
+{
+  "kode": "GPSO",
+  "nama": "PT Geoprima Solusi Tbk",
+  "sektor": "Technology",
+  "industri": "Scientific & Technical Instruments",
+  "harga": 190.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.3084605181588107,
+    "ps": 0.00029846472567428295,
+    "roe": -0.0131769036277414,
+    "eps": null,
+    "de": 0.1267186634234699,
+    "margin_net": -1.1887302896471792,
+    "current_ratio": 12.787541097061725,
+    "roa": -0.011694936860018042,
+    "bv": 57.4285227093285
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 949171610000000.0,
+      "2025-Q2": -949169273821648.0,
+      "2025-Q3": 786415269.0,
+      "2026-Q1": 466882434000000.0
+    },
+    "eps": {
+      "2025-Q1": -2.93,
+      "2025-Q2": -1.18,
+      "2025-Q3": -2.08,
+      "2026-Q1": -0.84
+    },
+    "net_income": {
+      "2025-Q1": -1952507391.0,
+      "2025-Q2": -786665805.0,
+      "2025-Q3": -1386691230.0,
+      "2026-Q1": -554997291000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 139348869120,
+    "enterprise_value": 126698373120,
+    "shares_outstanding": 733415103
+  },
+  "akumulasi": {
+    "score": 5.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.054,
+    "vol_trend": 0.537,
+    "price_chg_20d": -15.93
+  },
+  "neraca": {
+    "aset": 47456202427.0,
+    "aset_lancar": 25258661753.0,
+    "kas": 127958491.0,
+    "piutang_usaha": 84993912.0,
+    "persediaan": 16270104594.0,
+    "aset_tetap": 19267311728.0,
+    "liabilitas": 5337256529.0,
+    "liabilitas_jangka_pendek": 1975255568.0,
+    "liabilitas_jangka_panjang": 3362000961.0,
+    "utang_usaha": 84993912.0,
+    "utang_bank": null,
+    "ekuitas": 42118945898.0,
+    "ekuitas_induk": 42118945898.0,
+    "modal_saham": null,
+    "saldo_laba": 5000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 466882434.0,
+    "beban_pokok": 155531324.0,
+    "laba_kotor": 311351110.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -554997291.0,
+    "beban_pajak": null,
+    "laba_bersih": -554997291.0,
+    "laba_induk": -554997291.0,
+    "eps_basic": -0.84,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1126407552,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

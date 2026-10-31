@@ -1,0 +1,95 @@
+{
+  "kode": "TGKA",
+  "nama": "PT Tigaraksa Satria Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Food Distribution",
+  "harga": 5150.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 23.623853211009173,
+    "pb": 2.0869254129301695,
+    "ps": 0.3527299187635954,
+    "roe": 0.08849751566880172,
+    "eps": 218.0,
+    "de": 1.162479054586461,
+    "margin_net": 0.02823396969284514,
+    "current_ratio": 1.8778336289279867,
+    "roa": 0.04018704227383782,
+    "bv": 2467.745118292986
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3212864000000.0,
+      "2025-Q2": 2991589000000.0,
+      "2025-Q3": 3314251000000.0,
+      "2026-Q1": 3578701000000.0,
+      "2026-Q2": 3525826000000.0
+    },
+    "eps": {
+      "2025-Q1": 112.0,
+      "2025-Q2": 90.0,
+      "2025-Q3": 80.0,
+      "2026-Q1": 121.0,
+      "2026-Q2": 97.0
+    },
+    "net_income": {
+      "2025-Q1": 103575000000000.0,
+      "2025-Q2": 81526000000000.0,
+      "2025-Q3": 74337000000000.0,
+      "2026-Q1": 110932000000000.0,
+      "2026-Q2": 89657000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4730237485056,
+    "enterprise_value": 4013646675968,
+    "shares_outstanding": 918492750
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2986,
+    "vol_trend": 1.972,
+    "price_chg_20d": 6.4
+  },
+  "neraca": {
+    "aset": 4991385.0,
+    "aset_lancar": 4188568.0,
+    "kas": 493038.0,
+    "piutang_usaha": 1531390.0,
+    "persediaan": 1439273.0,
+    "aset_tetap": 358568.0,
+    "liabilitas": 2634882.0,
+    "liabilitas_jangka_pendek": 2230532.0,
+    "liabilitas_jangka_panjang": 404350.0,
+    "utang_usaha": 1531390.0,
+    "utang_bank": 32955.0,
+    "ekuitas": 2266606.0,
+    "ekuitas_induk": 2266606.0,
+    "modal_saham": null,
+    "saldo_laba": 18370.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7104527.0,
+    "beban_pokok": 6421069.0,
+    "laba_kotor": 683458.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 249521.0,
+    "beban_pajak": -49180.0,
+    "laba_bersih": 200589.0,
+    "laba_induk": 200589.0,
+    "eps_basic": 218.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 658910019584,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11690.0,
+    "dividen_dibayar": 261770.0
+  }
+}

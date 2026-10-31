@@ -1,0 +1,77 @@
+{
+  "kode": "IDEA",
+  "nama": "PT Idea Indonesia Akademi Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Education & Training Services",
+  "harga": 214.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.5658259111332096,
+    "ps": 11.103184082309339,
+    "roe": 0.014991781317305672,
+    "eps": null,
+    "de": 0.1894843026443926,
+    "margin_net": 0.09336210563059791,
+    "current_ratio": 3.4982197760092784,
+    "roa": 0.012603088311641709,
+    "bv": 60.014146885816814
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 227361619968,
+    "enterprise_value": 231275970560,
+    "shares_outstanding": 1062437500
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3645,
+    "vol_trend": 1.787,
+    "price_chg_20d": 44.59
+  },
+  "neraca": {
+    "aset": 75846105761.0,
+    "aset_lancar": 13822525519.0,
+    "kas": 7182664918.0,
+    "piutang_usaha": 6055206365.0,
+    "persediaan": 97871164.0,
+    "aset_tetap": 61499233072.0,
+    "liabilitas": 12081761711.0,
+    "liabilitas_jangka_pendek": 3951302778.0,
+    "liabilitas_jangka_panjang": 8130458933.0,
+    "utang_usaha": 6055206365.0,
+    "utang_bank": 2358388237.0,
+    "ekuitas": 63761280182.0,
+    "ekuitas_induk": 63761280182.0,
+    "modal_saham": null,
+    "saldo_laba": 250000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10238577660.0,
+    "beban_pokok": 3000552953.0,
+    "laba_kotor": 7238024707.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 955825569.0,
+    "beban_pajak": null,
+    "laba_bersih": 955895169.0,
+    "laba_induk": 955895169.0,
+    "eps_basic": 0.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3848764416,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 266983747.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "SONA",
+  "nama": "PT Sona Topas Tourism Industry Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 2160.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 44.08163265306123,
+    "pb": 1.9671089637365722,
+    "ps": 1.5165613382584127,
+    "roe": 0.04467936826419305,
+    "eps": 49.0,
+    "de": 0.345629176182856,
+    "margin_net": 0.07358977006496663,
+    "current_ratio": 4.391959758487935,
+    "roa": 0.033182245972725066,
+    "bv": 1098.058134968297
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 176726817730.0,
+      "2025-Q2": 229657462846.0,
+      "2025-Q3": 272175847850.0,
+      "2026-Q1": 198337132101.0,
+      "2026-Q2": 243269142471.0
+    },
+    "eps": {
+      "2025-Q1": 10.0,
+      "2025-Q2": 29.0,
+      "2025-Q3": 51.0,
+      "2026-Q1": 5.0,
+      "2026-Q2": 44.0
+    },
+    "net_income": {
+      "2025-Q1": 6709690715.0,
+      "2025-Q2": 18818645061.0,
+      "2025-Q3": 34306444394.0,
+      "2026-Q1": 3409328864.0,
+      "2026-Q2": 29088375341.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1430784049152,
+    "enterprise_value": 837937397760,
+    "shares_outstanding": 662400000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4732,
+    "vol_trend": 1.715,
+    "price_chg_20d": -42.55
+  },
+  "neraca": {
+    "aset": 979370240089.0,
+    "aset_lancar": 780308442632.0,
+    "kas": 693798871247.0,
+    "piutang_usaha": 2675092482.0,
+    "persediaan": 71942521315.0,
+    "aset_tetap": 23483096841.0,
+    "liabilitas": 251394663098.0,
+    "liabilitas_jangka_pendek": 177667484572.0,
+    "liabilitas_jangka_panjang": 73727178526.0,
+    "utang_usaha": 2675092482.0,
+    "utang_bank": null,
+    "ekuitas": 727353708603.0,
+    "ekuitas_induk": 727353708603.0,
+    "modal_saham": null,
+    "saldo_laba": 15000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 441606274572.0,
+    "beban_pokok": 203489053606.0,
+    "laba_kotor": 238117220966.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 57418085260.0,
+    "beban_pajak": -24898061606.0,
+    "laba_bersih": 32497704205.0,
+    "laba_induk": 32497704205.0,
+    "eps_basic": 49.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 143062302720,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 28333333.0,
+    "dividen_dibayar": 12619077.0
+  }
+}

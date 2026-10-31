@@ -1,0 +1,92 @@
+{
+  "kode": "FORE",
+  "nama": "PT Fore Kopi Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 545.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 54.013875123885036,
+    "pb": 6.300240402704412,
+    "ps": 2.4590905527955873,
+    "roe": 0.11666791187581979,
+    "eps": 10.09,
+    "de": 0.7814555602939809,
+    "margin_net": 0.056354124599552,
+    "current_ratio": 1.0714161100998678,
+    "roa": 0.06549021736841244,
+    "bv": 86.50463556375657
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 379380065493.0,
+      "2026-Q1": 444458712375.0,
+      "2026-Q2": 560476069928.0,
+      "2026-Q3": 592231236131.0
+    },
+    "eps": {
+      "2025-Q3": 1.93,
+      "2026-Q1": 1.06,
+      "2026-Q2": 5.27,
+      "2026-Q3": 3.76
+    },
+    "net_income": {
+      "2025-Q3": 18076088857.0,
+      "2026-Q1": 9431593245.0,
+      "2026-Q2": 47057226205.0,
+      "2026-Q3": 33518073359.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4860505751552,
+    "enterprise_value": 4904902983680,
+    "shares_outstanding": 8918359270
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2636,
+    "vol_trend": 0.888,
+    "price_chg_20d": -31.01
+  },
+  "neraca": {
+    "aset": 1374356299700.0,
+    "aset_lancar": 469291822826.0,
+    "kas": 233248405160.0,
+    "piutang_usaha": 9575373014.0,
+    "persediaan": 180404636233.0,
+    "aset_tetap": 6852613076.0,
+    "liabilitas": 602876881222.0,
+    "liabilitas_jangka_pendek": 438010795621.0,
+    "liabilitas_jangka_panjang": 164866085601.0,
+    "utang_usaha": 9575373014.0,
+    "utang_bank": 8010966332.0,
+    "ekuitas": 771479418478.0,
+    "ekuitas_induk": 771479418478.0,
+    "modal_saham": null,
+    "saldo_laba": -87789958543.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1597166018434.0,
+    "beban_pokok": 612082871438.0,
+    "laba_kotor": 985083146996.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 124039132098.0,
+    "beban_pajak": -34032239289.0,
+    "laba_bersih": 90006892809.0,
+    "laba_induk": 90006892809.0,
+    "eps_basic": 10.09,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 434662965248,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6852613076.0,
+    "dividen_dibayar": null
+  }
+}

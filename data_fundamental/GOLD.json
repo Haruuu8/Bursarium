@@ -1,0 +1,95 @@
+{
+  "kode": "GOLD",
+  "nama": "PT Visi Telekomunikasi Infrastruktur Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 240.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.005169407464304471,
+    "roe": 0.022630596291778445,
+    "eps": null,
+    "de": 0.12955878870539334,
+    "margin_net": 0.31838948169923814,
+    "current_ratio": 0.5916494607169964,
+    "roa": 0.020034830749728595,
+    "bv": 348124.9902135482
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 13503235000000.0,
+      "2025-Q2": 13726705000000.0,
+      "2025-Q3": 13968263000000.0,
+      "2026-Q1": 14800700000000.0,
+      "2026-Q2": 16804405000000.0
+    },
+    "eps": {
+      "2025-Q1": 4.02,
+      "2025-Q2": 3.58,
+      "2025-Q3": -7.6,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 5136898000000.0,
+      "2025-Q2": 4571165000000.0,
+      "2025-Q3": 4618239000000.0,
+      "2026-Q1": 5241749000000.0,
+      "2026-Q2": 4820984000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 306546245632,
+    "enterprise_value": 317127983104,
+    "shares_outstanding": 1277276000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.7517,
+    "vol_trend": 2.296,
+    "price_chg_20d": -9.09
+  },
+  "neraca": {
+    "aset": 502261942.0,
+    "aset_lancar": 31410193.0,
+    "kas": 9419984.0,
+    "piutang_usaha": 8854530.0,
+    "persediaan": null,
+    "aset_tetap": 405381820.0,
+    "liabilitas": 57608535.0,
+    "liabilitas_jangka_pendek": 53089194.0,
+    "liabilitas_jangka_panjang": 4519341.0,
+    "utang_usaha": 8854530.0,
+    "utang_bank": 20000000.0,
+    "ekuitas": 444651695.0,
+    "ekuitas_induk": 444651695.0,
+    "modal_saham": null,
+    "saldo_laba": 6033800.0
+  },
+  "laba_rugi": {
+    "pendapatan": 31605105.0,
+    "beban_pokok": 12577683.0,
+    "laba_kotor": 19027422.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10259714.0,
+    "beban_pajak": -196945.0,
+    "laba_bersih": 10062733.0,
+    "laba_induk": 10062733.0,
+    "eps_basic": 0.0078,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 14484475904,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33596768.0,
+    "dividen_dibayar": null
+  }
+}

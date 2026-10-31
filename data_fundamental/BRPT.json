@@ -1,0 +1,95 @@
+{
+  "kode": "BRPT",
+  "nama": "PT Barito Pacific Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 1070.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 41.2017233179259,
+    "ps": -0.13150378600742496,
+    "roe": 0.07827054897245893,
+    "eps": 8072.318286917053,
+    "de": 5.1190488126182885,
+    "margin_net": 0.033501110020504994,
+    "current_ratio": 2.18026378153686,
+    "roa": 0.010051013570200646,
+    "bv": 25.96978751940864
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 773749000000000.0,
+      "2025-Q2": -770520402000000.0,
+      "2025-Q3": 2335034000000.0,
+      "2026-Q1": 2570247000000.0,
+      "2026-Q2": 3115684000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.01,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 16160000000000.0,
+      "2025-Q2": 523664000000000.0,
+      "2025-Q3": 42322000000000.0,
+      "2026-Q1": 90476000000000.0,
+      "2026-Q2": 100009000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 100271564783616,
+    "enterprise_value": 100318968807424,
+    "shares_outstanding": 93711740929
+  },
+  "akumulasi": {
+    "score": 1.9,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1063,
+    "vol_trend": 2.136,
+    "price_chg_20d": -24.65
+  },
+  "neraca": {
+    "aset": 18951820.0,
+    "aset_lancar": 7787839.0,
+    "kas": 3181792.0,
+    "piutang_usaha": 970093.0,
+    "persediaan": 2259647.0,
+    "aset_tetap": 18180.0,
+    "liabilitas": 12458096.0,
+    "liabilitas_jangka_pendek": 3571971.0,
+    "liabilitas_jangka_panjang": 8886125.0,
+    "utang_usaha": 970093.0,
+    "utang_bank": 481758.0,
+    "ekuitas": 2433674.0,
+    "ekuitas_induk": 2433674.0,
+    "modal_saham": null,
+    "saldo_laba": 5853.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5685931.0,
+    "beban_pokok": 4691198.0,
+    "laba_kotor": 994733.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 659248.0,
+    "beban_pajak": -140804.0,
+    "laba_bersih": 190485.0,
+    "laba_induk": 190485.0,
+    "eps_basic": 0.00203271296800993,
+    "eps_diluted": 0.00203271296800993
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 593552000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 18180.0,
+    "dividen_dibayar": 48018.0
+  }
+}

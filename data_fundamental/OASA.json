@@ -1,0 +1,95 @@
+{
+  "kode": "OASA",
+  "nama": "PT Maharaksa Biru Energi Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 161.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.9521433318308088,
+    "ps": 59.36795922394293,
+    "roe": -0.07330565157540038,
+    "eps": -6.871998735982052,
+    "de": 0.14605971964197623,
+    "margin_net": -5.466750986222638,
+    "current_ratio": 8.242086419753006,
+    "roa": -0.06448653738254839,
+    "bv": 82.47345232022839
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 20453361892.0,
+      "2025-Q2": 4051512969.0,
+      "2025-Q3": 6142020927.0,
+      "2026-Q1": 2383023565.0,
+      "2026-Q2": 4636471812.0
+    },
+    "eps": {
+      "2025-Q1": -1.27,
+      "2025-Q2": -1.17,
+      "2025-Q3": 0.34,
+      "2026-Q1": -3.73,
+      "2026-Q2": -2.32
+    },
+    "net_income": {
+      "2025-Q1": -8076297610.0,
+      "2025-Q2": -7398413503.0,
+      "2025-Q3": 2154158961.0,
+      "2026-Q1": -23705159796.0,
+      "2026-Q2": -14668673479.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1021902389248,
+    "enterprise_value": 1058140585984,
+    "shares_outstanding": 6347220000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1619,
+    "vol_trend": 1.103,
+    "price_chg_20d": -32.92
+  },
+  "neraca": {
+    "aset": 595067355646.0,
+    "aset_lancar": 323191978770.0,
+    "kas": 5125617619.0,
+    "piutang_usaha": 1125986007.0,
+    "persediaan": 396528660.0,
+    "aset_tetap": 46370453762.0,
+    "liabilitas": 76458925189.0,
+    "liabilitas_jangka_pendek": 39212398695.0,
+    "liabilitas_jangka_panjang": 37246526494.0,
+    "utang_usaha": 1125986007.0,
+    "utang_bank": 9307950000.0,
+    "ekuitas": 523477146036.0,
+    "ekuitas_induk": 523477146036.0,
+    "modal_saham": null,
+    "saldo_laba": -136906809824.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7019495377.0,
+    "beban_pokok": 5493444423.0,
+    "laba_kotor": 1526050954.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -36242409575.0,
+    "beban_pajak": -3254007249.0,
+    "laba_bersih": -38373833275.0,
+    "laba_induk": -38373833275.0,
+    "eps_basic": -6.05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 40727953408,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 988610601.0,
+    "dividen_dibayar": null
+  }
+}

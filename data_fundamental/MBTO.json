@@ -1,0 +1,95 @@
+{
+  "kode": "MBTO",
+  "nama": "PT Martina Berto Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Household & Personal Products",
+  "harga": 107.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.806584362139917,
+    "pb": 0.3247219794286553,
+    "ps": 0.25009922514294153,
+    "roe": 0.036885778341727835,
+    "eps": 12.15,
+    "de": 0.935346360032837,
+    "margin_net": 0.051060984562111764,
+    "current_ratio": 0.6901847764567927,
+    "roa": 0.019058673554612757,
+    "bv": 329.51265013925234
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 91243440156.0,
+      "2025-Q2": 95634239008.0,
+      "2025-Q3": 107446008435.0,
+      "2026-Q1": 113063679206.0,
+      "2026-Q2": 141634380879.0
+    },
+    "eps": {
+      "2025-Q1": -5.53,
+      "2025-Q2": -9.69,
+      "2025-Q3": -2.37,
+      "2026-Q1": 8.06,
+      "2026-Q2": 4.09
+    },
+    "net_income": {
+      "2025-Q1": -5915674066.0,
+      "2025-Q2": -10369023417.0,
+      "2025-Q3": -2537069274.0,
+      "2026-Q1": 8623169836.0,
+      "2026-Q2": 4381963878.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 114489999360,
+    "enterprise_value": 269487292416,
+    "shares_outstanding": 1070000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2086,
+    "vol_trend": 0.094,
+    "price_chg_20d": -25.69
+  },
+  "neraca": {
+    "aset": 682373496599.0,
+    "aset_lancar": 197651777811.0,
+    "kas": 6758755647.0,
+    "piutang_usaha": 77469749237.0,
+    "persediaan": 76126142401.0,
+    "aset_tetap": 418268504.0,
+    "liabilitas": 329783049945.0,
+    "liabilitas_jangka_pendek": 286375162932.0,
+    "liabilitas_jangka_panjang": 43407887013.0,
+    "utang_usaha": 77469749237.0,
+    "utang_bank": 159774431334.0,
+    "ekuitas": 352578535649.0,
+    "ekuitas_induk": 352578535649.0,
+    "modal_saham": null,
+    "saldo_laba": 7500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 254698060085.0,
+    "beban_pokok": 159052403234.0,
+    "laba_kotor": 95645656851.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17104624889.0,
+    "beban_pajak": -4099215268.0,
+    "laba_bersih": 13005133714.0,
+    "laba_induk": 13005133714.0,
+    "eps_basic": 12.15,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 22895900672,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 418268504.0,
+    "dividen_dibayar": null
+  }
+}

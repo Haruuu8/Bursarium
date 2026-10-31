@@ -1,0 +1,95 @@
+{
+  "kode": "ABDA",
+  "nama": "PT Asuransi Bina Dana Arta Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Property & Casualty",
+  "harga": 4970.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.03526674247987837,
+    "roe": 0.04745380862161026,
+    "eps": null,
+    "de": 0.580232934047012,
+    "margin_net": 39.18738266924316,
+    "current_ratio": null,
+    "roa": 0.030029111311586625,
+    "bv": 50.861290595246174
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2559302000000.0,
+      "2025-Q2": -380632000000.0,
+      "2025-Q3": -6783097000000.0,
+      "2026-Q1": 2559302000000.0,
+      "2026-Q2": -380632000000.0
+    },
+    "eps": {
+      "2025-Q1": 30.0,
+      "2025-Q2": -29.92,
+      "2025-Q3": 0.02,
+      "2026-Q1": 0.05,
+      "2026-Q2": 0.09
+    },
+    "net_income": {
+      "2025-Q1": 18613221000000.0,
+      "2025-Q2": 30792739000000.0,
+      "2025-Q3": 13526336000000.0,
+      "2026-Q1": 29632680000000.0,
+      "2026-Q2": 55743695000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3085409189888,
+    "enterprise_value": 926531911680,
+    "shares_outstanding": 35373600
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1535,
+    "vol_trend": 0.957,
+    "price_chg_20d": 1.22
+  },
+  "neraca": {
+    "aset": 2843120268.0,
+    "aset_lancar": null,
+    "kas": 438318306.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 68170254.0,
+    "liabilitas": 1043924313.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 1799146949.0,
+    "ekuitas_induk": 1799146949.0,
+    "modal_saham": null,
+    "saldo_laba": 8250000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2178670.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 104320961.0,
+    "beban_pajak": -18943263.0,
+    "laba_bersih": 85376375.0,
+    "laba_induk": 85376375.0,
+    "eps_basic": 0.138,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 69376344064,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 960911.0,
+    "dividen_dibayar": null
+  }
+}

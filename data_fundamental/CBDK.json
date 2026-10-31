@@ -1,0 +1,89 @@
+{
+  "kode": "CBDK",
+  "nama": "PT Bangun Kosambi Sukses Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 2900.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.876582160282868,
+    "pb": null,
+    "ps": 3711.0741923057217,
+    "roe": 0.1592637093004093,
+    "eps": 594.6787944267476,
+    "de": 0.8281995638659524,
+    "margin_net": 0.7642740319839956,
+    "current_ratio": 1.5057535627153777,
+    "roa": 0.07573015232078098,
+    "bv": 1.8749972824740624
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1102667028.0,
+      "2026-Q1": 742591511000000.0,
+      "2026-Q2": -742589309172406.0
+    },
+    "eps": {
+      "2025-Q3": 141.18,
+      "2026-Q1": 95.58,
+      "2026-Q2": 201.76
+    },
+    "net_income": {
+      "2025-Q3": -516994097455476.0,
+      "2026-Q1": 541437397000000.0,
+      "2026-Q2": -541435714200347.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 16342290792448,
+    "enterprise_value": 16060476555264,
+    "shares_outstanding": 5635272800
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1486,
+    "vol_trend": 1.335,
+    "price_chg_20d": -12.12
+  },
+  "neraca": {
+    "aset": 22220999185.0,
+    "aset_lancar": 11377101934.0,
+    "kas": 3425899867.0,
+    "piutang_usaha": 6706610.0,
+    "persediaan": 5359218273.0,
+    "aset_tetap": 568089463.0,
+    "liabilitas": 8750856958.0,
+    "liabilitas_jangka_pendek": 7555752957.0,
+    "liabilitas_jangka_panjang": 1195104001.0,
+    "utang_usaha": 6706610.0,
+    "utang_bank": 44995311.0,
+    "ekuitas": 10566121186.0,
+    "ekuitas_induk": 10566121186.0,
+    "modal_saham": null,
+    "saldo_laba": 12100000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2201827594.0,
+    "beban_pokok": 352574965.0,
+    "laba_kotor": 1849252629.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1691997857.0,
+    "beban_pajak": -563718.0,
+    "laba_bersih": 1682799653.0,
+    "laba_induk": 1682799653.0,
+    "eps_basic": 297.3393972133738,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 178408816640,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 153447848.0,
+    "dividen_dibayar": 28344723.0
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "kode": "KSIX",
+  "nama": "PT Kentanix Supra International Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 338.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 444.8225422315159,
+    "pb": 0.5738374344635961,
+    "ps": 9.645900045459749,
+    "roe": -0.001898421553623742,
+    "eps": 0.7598535773487887,
+    "de": 0.014796561240311474,
+    "margin_net": -0.08345902151497217,
+    "current_ratio": 54.1450246745697,
+    "roa": -0.0017567643878777536,
+    "bv": 589.0169927933526
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 37901546000.0,
+      "2025-Q2": 33507491000.0,
+      "2025-Q3": 12760687000.0,
+      "2026-Q1": 11112051500.0,
+      "2026-Q2": 17531095000.0
+    },
+    "eps": {
+      "2025-Q1": 2.0,
+      "2025-Q2": 3.0,
+      "2025-Q3": -1.0,
+      "2026-Q1": -1.0
+    },
+    "net_income": {
+      "2025-Q1": 3440747629.0,
+      "2025-Q2": 6159580966.0,
+      "2025-Q3": -2144612845.0,
+      "2026-Q1": -3062455771.0,
+      "2026-Q2": 671926791.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 722587156480,
+    "enterprise_value": 607872614400,
+    "shares_outstanding": 2137831800
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2841,
+    "vol_trend": 0.381,
+    "price_chg_20d": -19.14
+  },
+  "neraca": {
+    "aset": 1360756739205.0,
+    "aset_lancar": 633456477126.0,
+    "kas": 197619918284.0,
+    "piutang_usaha": null,
+    "persediaan": 46380900.0,
+    "aset_tetap": 8016651321.0,
+    "liabilitas": 18632114865.0,
+    "liabilitas_jangka_pendek": 11699255489.0,
+    "liabilitas_jangka_panjang": 6932859376.0,
+    "utang_usaha": 29509350.0,
+    "utang_bank": 4500000000.0,
+    "ekuitas": 1259219257934.0,
+    "ekuitas_induk": 1259219257934.0,
+    "modal_saham": null,
+    "saldo_laba": 44033558788.0
+  },
+  "laba_rugi": {
+    "pendapatan": 28643146500.0,
+    "beban_pokok": 12033747043.0,
+    "laba_kotor": 16609399457.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1943056013.0,
+    "beban_pajak": -775494910.0,
+    "laba_bersih": -2390528980.0,
+    "laba_induk": -2390528980.0,
+    "eps_basic": -1.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 16833756160,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 104616300.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "TRUE",
+  "nama": "PT Triniti Dinamik Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 30.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.0729609320611821,
+    "ps": 4.556937010362201,
+    "roe": -0.05811450552396787,
+    "eps": -3.1095141843613887,
+    "de": 2.1875726294025775,
+    "margin_net": -0.49665026471625046,
+    "current_ratio": 3.1764946973694017,
+    "roa": -0.01820947952614844,
+    "bv": 27.960011500483365
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 10737124919.0,
+      "2025-Q2": 13145298866.0,
+      "2025-Q3": 11927836387.0,
+      "2026-Q1": 12771077223.0,
+      "2026-Q2": 11999187879.0
+    },
+    "eps": {
+      "2025-Q1": -0.79,
+      "2025-Q2": -0.53,
+      "2025-Q3": -0.95,
+      "2026-Q1": -1.56,
+      "2026-Q2": -0.06
+    },
+    "net_income": {
+      "2025-Q1": -5943710317.0,
+      "2025-Q2": -4032245361.0,
+      "2025-Q3": -7208063201.0,
+      "2026-Q1": -11803085691.0,
+      "2026-Q2": -499073029.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 227133227008,
+    "enterprise_value": 576058425344,
+    "shares_outstanding": 7571107860
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3218,
+    "vol_trend": 0.663,
+    "price_chg_20d": -33.33
+  },
+  "neraca": {
+    "aset": 675590903207.0,
+    "aset_lancar": 536425408374.0,
+    "kas": 7171813644.0,
+    "piutang_usaha": 28172737319.0,
+    "persediaan": null,
+    "aset_tetap": 26454741864.0,
+    "liabilitas": 463083449748.0,
+    "liabilitas_jangka_pendek": 168873383865.0,
+    "liabilitas_jangka_panjang": 294210065883.0,
+    "utang_usaha": 28172737319.0,
+    "utang_bank": 64641868638.0,
+    "ekuitas": 211688262837.0,
+    "ekuitas_induk": 211688262837.0,
+    "modal_saham": null,
+    "saldo_laba": -88802672142.0
+  },
+  "laba_rugi": {
+    "pendapatan": 24770265102.0,
+    "beban_pokok": 19862655086.0,
+    "laba_kotor": 4907610016.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -12302247719.0,
+    "beban_pajak": null,
+    "laba_bersih": -12302158720.0,
+    "laba_induk": -12302158720.0,
+    "eps_basic": -1.62,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -76564463616,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7546975610.0,
+    "dividen_dibayar": null
+  }
+}

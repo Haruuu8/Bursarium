@@ -1,0 +1,92 @@
+{
+  "kode": "CHEK",
+  "nama": "PT Diastika Biotekindo Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 98.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 36.84210526315789,
+    "pb": 1.9458746525943882,
+    "ps": 1.9304444238698042,
+    "roe": 0.03893626770508323,
+    "eps": 2.66,
+    "de": 0.09862229014614163,
+    "margin_net": 0.05190828342778953,
+    "current_ratio": 9.070430740746474,
+    "roa": 0.035440995558085595,
+    "bv": 50.36295625174979
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 53425555152.0,
+      "2026-Q1": 37273939501.0,
+      "2026-Q2": 45009756784.0,
+      "2026-Q3": 73106128351.0
+    },
+    "eps": {
+      "2025-Q3": 3.49,
+      "2026-Q1": 0.68,
+      "2026-Q2": 1.05,
+      "2026-Q3": 0.92
+    },
+    "net_income": {
+      "2025-Q3": 8975498215.0,
+      "2026-Q1": 686585057000000.0,
+      "2026-Q2": -686581556777130.0,
+      "2026-Q3": 4565796189.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 403106496512,
+    "enterprise_value": 364881051648,
+    "shares_outstanding": 4113331485
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2058,
+    "vol_trend": 0.558,
+    "price_chg_20d": -16.95
+  },
+  "neraca": {
+    "aset": 227590081260.0,
+    "aset_lancar": 178568645435.0,
+    "kas": 32775409465.0,
+    "piutang_usaha": 32967640073.0,
+    "persediaan": 103879026602.0,
+    "aset_tetap": 48488710578.0,
+    "liabilitas": 20430547632.0,
+    "liabilitas_jangka_pendek": 19686898069.0,
+    "liabilitas_jangka_panjang": 743649563.0,
+    "utang_usaha": 32967640073.0,
+    "utang_bank": 1347221945.0,
+    "ekuitas": 207159533628.0,
+    "ekuitas_induk": 207159533628.0,
+    "modal_saham": null,
+    "saldo_laba": 1022683840.0
+  },
+  "laba_rugi": {
+    "pendapatan": 155389824636.0,
+    "beban_pokok": 101053336911.0,
+    "laba_kotor": 54336487725.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8066019059.0,
+    "beban_pajak": null,
+    "laba_bersih": 8066019059.0,
+    "laba_induk": 8066019059.0,
+    "eps_basic": 2.66,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -41621852160,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 131274379.0,
+    "dividen_dibayar": 3296649988.0
+  }
+}

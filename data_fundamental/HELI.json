@@ -1,0 +1,98 @@
+{
+  "kode": "HELI",
+  "nama": "PT Jaya Trishindo Tbk",
+  "sektor": "Industrials",
+  "industri": "Airports & Air Services",
+  "harga": 167.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 31.098696461824954,
+    "pb": 1.494124507290022,
+    "ps": 0.7892808429412524,
+    "roe": 0.048077087353983645,
+    "eps": 5.37,
+    "de": 1.3331102057534774,
+    "margin_net": 0.03814641569675301,
+    "current_ratio": 0.7540980202584276,
+    "roa": 0.02054658458448972,
+    "bv": 111.77114034686261
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 29427915853.0,
+      "2025-Q2": 30368615589.0,
+      "2025-Q3": 58897071558.0,
+      "2026-Q1": 29831974567.0,
+      "2026-Q2": 32544707698.0,
+      "2026-Q3": 54947447886.0
+    },
+    "eps": {
+      "2025-Q1": 2.25,
+      "2025-Q2": 1.1,
+      "2025-Q3": 15.37,
+      "2026-Q1": 2.5,
+      "2026-Q2": 0.5,
+      "2026-Q3": 2.37
+    },
+    "net_income": {
+      "2025-Q1": 1876576082.0,
+      "2025-Q2": 910853762.0,
+      "2025-Q3": 12802818219.0,
+      "2026-Q1": 2080179600.0,
+      "2026-Q2": 421964794.0,
+      "2026-Q3": 1973350646.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 139088019456,
+    "enterprise_value": 211452805120,
+    "shares_outstanding": 832862387
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3031,
+    "vol_trend": 1.423,
+    "price_chg_20d": -38.6
+  },
+  "neraca": {
+    "aset": 217821848765.0,
+    "aset_lancar": 70978106794.0,
+    "kas": 4641750533.0,
+    "piutang_usaha": 47430259038.0,
+    "persediaan": 122613703.0,
+    "aset_tetap": 18977851199.0,
+    "liabilitas": 124099200721.0,
+    "liabilitas_jangka_pendek": 94123184105.0,
+    "liabilitas_jangka_panjang": 29976016616.0,
+    "utang_usaha": 47430259038.0,
+    "utang_bank": 32800000000.0,
+    "ekuitas": 93089978747.0,
+    "ekuitas_induk": 93089978747.0,
+    "modal_saham": null,
+    "saldo_laba": 1056446680.0
+  },
+  "laba_rugi": {
+    "pendapatan": 117324130151.0,
+    "beban_pokok": 101882308682.0,
+    "laba_kotor": 15441821469.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4486201497.0,
+    "beban_pajak": 23544704.0,
+    "laba_bersih": 4475495040.0,
+    "laba_induk": 4475495040.0,
+    "eps_basic": 5.37,
+    "eps_diluted": 5.37
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 34087522304,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 18977851199.0,
+    "dividen_dibayar": null
+  }
+}

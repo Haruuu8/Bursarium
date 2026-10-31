@@ -1,0 +1,95 @@
+{
+  "kode": "JKON",
+  "nama": "PT Jaya Konstruksi Manggala Pratama Tbk",
+  "sektor": "Industrials",
+  "industri": "Conglomerates",
+  "harga": 77.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 8.351409978308025,
+    "pb": null,
+    "ps": -0.0020006446134698775,
+    "roe": 0.04485969321247664,
+    "eps": 9.22,
+    "de": 0.3599417584479878,
+    "margin_net": 0.0699795246059811,
+    "current_ratio": 2.2141241741314346,
+    "roa": 0.032653897243365156,
+    "bv": 0.20563502805827286
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 627680131000000.0,
+      "2025-Q2": -627678849116462.0,
+      "2025-Q3": 988820787.0,
+      "2026-Q1": 915786938000000.0,
+      "2026-Q2": -915784788205473.0
+    },
+    "eps": {
+      "2025-Q1": -0.36,
+      "2025-Q2": -0.64,
+      "2025-Q3": 2.1,
+      "2026-Q1": 0.0,
+      "2026-Q2": 9.22
+    },
+    "net_income": {
+      "2025-Q1": -5840464000000.0,
+      "2025-Q2": -10539485000000.0,
+      "2025-Q3": 34248252000000.0,
+      "2026-Q1": 26007536000000.0,
+      "2026-Q2": 124434063000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1255756005376,
+    "enterprise_value": 1019396882432,
+    "shares_outstanding": 16308519860
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1533,
+    "vol_trend": 0.482,
+    "price_chg_20d": -2.53
+  },
+  "neraca": {
+    "aset": 4607156012.0,
+    "aset_lancar": 2453851809.0,
+    "kas": 364202108.0,
+    "piutang_usaha": 731363295.0,
+    "persediaan": 383839714.0,
+    "aset_tetap": 493750192.0,
+    "liabilitas": 1207101739.0,
+    "liabilitas_jangka_pendek": 1108271992.0,
+    "liabilitas_jangka_panjang": 98829747.0,
+    "utang_usaha": 731363295.0,
+    "utang_bank": 37075467.0,
+    "ekuitas": 3353602939.0,
+    "ekuitas_induk": 3353602939.0,
+    "modal_saham": null,
+    "saldo_laba": 65234079.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2149794527.0,
+    "beban_pokok": 1805810780.0,
+    "laba_kotor": 343983747.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 198046916.0,
+    "beban_pajak": -47169616.0,
+    "laba_bersih": 150441599.0,
+    "laba_induk": 150441599.0,
+    "eps_basic": 9.22,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 163774038016,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4639743.0,
+    "dividen_dibayar": null
+  }
+}

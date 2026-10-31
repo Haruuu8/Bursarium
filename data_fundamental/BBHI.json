@@ -1,0 +1,89 @@
+{
+  "kode": "BBHI",
+  "nama": "PT Allo Bank Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 600.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 13.892940996679588,
+    "pb": 1.7663301546377363,
+    "ps": 6.657369634214652,
+    "roe": 0.03183451259959312,
+    "eps": 43.1874,
+    "de": 1.1213688318466466,
+    "margin_net": 0.23997112538003562,
+    "current_ratio": null,
+    "roa": 0.015006590142026951,
+    "bv": 339.6873446476694
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 493250125390.0,
+      "2026-Q1": 486785378024.0,
+      "2026-Q2": 486972979824.0
+    },
+    "eps": {
+      "2025-Q3": 2.41,
+      "2026-Q1": 19.21,
+      "2026-Q2": 2.39
+    },
+    "net_income": {
+      "2025-Q3": 152806509531.0,
+      "2026-Q1": 104062237589.0,
+      "2026-Q2": 129611651392.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 12965339201536,
+    "enterprise_value": 12294846152704,
+    "shares_outstanding": 21608897742
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2807,
+    "vol_trend": 0.098,
+    "price_chg_20d": -25.0
+  },
+  "neraca": {
+    "aset": 15571418074955.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 193178033328.0,
+    "liabilitas": 8231148980212.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 7340269094743.0,
+    "ekuitas_induk": 7340269094743.0,
+    "modal_saham": null,
+    "saldo_laba": 1523581832810.0
+  },
+  "laba_rugi": {
+    "pendapatan": 973758357848.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 300018458822.0,
+    "laba_sebelum_pajak": 300018948542.0,
+    "beban_pajak": -66345059561.0,
+    "laba_bersih": 233673888981.0,
+    "laba_induk": 233673888981.0,
+    "eps_basic": 21.5937,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3086299858734.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 286974625358.0
+  }
+}

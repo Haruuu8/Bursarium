@@ -1,0 +1,95 @@
+{
+  "kode": "KPIG",
+  "nama": "PT MNC Tourism Indonesia Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 26.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 7.449856733524355,
+    "pb": null,
+    "ps": 1.0206104625947492,
+    "roe": 0.011842541060911517,
+    "eps": 3.49,
+    "de": 0.22837856638298953,
+    "margin_net": 0.3141395597602138,
+    "current_ratio": 1.0423999790659824,
+    "roa": 0.009534170575699606,
+    "bv": 275.15289135402924
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 464710706444.0,
+      "2025-Q2": 499236275212.0,
+      "2025-Q3": 1121417427228.0,
+      "2026-Q1": 589058730897.0,
+      "2026-Q2": 524076802784.0
+    },
+    "eps": {
+      "2025-Q1": 0.55,
+      "2025-Q2": 3.77,
+      "2025-Q3": 1.95,
+      "2026-Q1": 0.95,
+      "2026-Q2": 2.54
+    },
+    "net_income": {
+      "2025-Q1": 53527939745.0,
+      "2025-Q2": 368186952889.0,
+      "2025-Q3": 190363618987.0,
+      "2026-Q1": 95356023450.0,
+      "2026-Q2": 254323883054.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2790133858304,
+    "enterprise_value": 8589460111360,
+    "shares_outstanding": 107312842189
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3372,
+    "vol_trend": 0.235,
+    "price_chg_20d": -39.53
+  },
+  "neraca": {
+    "aset": 36676489446838.0,
+    "aset_lancar": 3586296016323.0,
+    "kas": 157733777913.0,
+    "piutang_usaha": 61157888271.0,
+    "persediaan": 9119127331.0,
+    "aset_tetap": 21723652812335.0,
+    "liabilitas": 6743434143869.0,
+    "liabilitas_jangka_pendek": 3440422187591.0,
+    "liabilitas_jangka_panjang": 3303011956278.0,
+    "utang_usaha": 61157888271.0,
+    "utang_bank": 926120298864.0,
+    "ekuitas": 29527438807722.0,
+    "ekuitas_induk": 29527438807722.0,
+    "modal_saham": null,
+    "saldo_laba": 14000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1113135533681.0,
+    "beban_pokok": 809173200959.0,
+    "laba_kotor": 303962332722.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 342441922130.0,
+    "beban_pajak": -1102765701.0,
+    "laba_bersih": 349679906504.0,
+    "laba_induk": 349679906504.0,
+    "eps_basic": 3.49,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 240486711296,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 293859766404.0,
+    "dividen_dibayar": null
+  }
+}

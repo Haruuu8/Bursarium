@@ -1,0 +1,89 @@
+{
+  "kode": "STAR",
+  "nama": "PT Calculus Global Ventures Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 308.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 84.15300546448087,
+    "pb": 2.7036880411108934,
+    "ps": 155.28209933549047,
+    "roe": 0.016076951688178666,
+    "eps": 3.66,
+    "de": 0.0029210020856239964,
+    "margin_net": 1.846709214299659,
+    "current_ratio": 585.7723490488814,
+    "roa": 0.01603009488655813,
+    "bv": 113.91846815043378
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1486844172.0,
+      "2025-Q2": 1630583318.0,
+      "2025-Q3": 1474985830.0
+    },
+    "eps": {
+      "2025-Q1": 0.7,
+      "2025-Q2": 0.47,
+      "2025-Q3": 0.57
+    },
+    "net_income": {
+      "2025-Q1": 3357896768.0,
+      "2025-Q2": 2234923588.0,
+      "2025-Q3": 2747411309.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1478400147456,
+    "enterprise_value": 934594543616,
+    "shares_outstanding": 4800000602
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4718,
+    "vol_trend": 0.562,
+    "price_chg_20d": -20.21
+  },
+  "neraca": {
+    "aset": 548407066035.0,
+    "aset_lancar": 546919006958.0,
+    "kas": 28622765639.0,
+    "piutang_usaha": 722373777.0,
+    "persediaan": null,
+    "aset_tetap": 791698503.0,
+    "liabilitas": 1597229399.0,
+    "liabilitas_jangka_pendek": 933671601.0,
+    "liabilitas_jangka_panjang": 663557798.0,
+    "utang_usaha": 722373777.0,
+    "utang_bank": 27885912000.0,
+    "ekuitas": 546808715701.0,
+    "ekuitas_induk": 546808715701.0,
+    "modal_saham": null,
+    "saldo_laba": 4200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4760369005.0,
+    "beban_pokok": null,
+    "laba_kotor": 4760369005.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 9026247036.0,
+    "beban_pajak": -235220545.0,
+    "laba_bersih": 8791017305.0,
+    "laba_induk": 8791017305.0,
+    "eps_basic": 1.83,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1910038912,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 34857390000.0,
+    "dividen_dibayar": null
+  }
+}

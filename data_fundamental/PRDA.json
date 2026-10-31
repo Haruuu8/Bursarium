@@ -1,0 +1,95 @@
+{
+  "kode": "PRDA",
+  "nama": "PT Prodia Widyahusada Tbk",
+  "sektor": "Healthcare",
+  "industri": "Diagnostics & Research",
+  "harga": 3600.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 41.30808950086058,
+    "pb": 1.3691726768309076,
+    "ps": -0.006668845775341071,
+    "roe": 0.0331454164100245,
+    "eps": 87.15,
+    "de": 0.12865947512918308,
+    "margin_net": 0.06956640315212671,
+    "current_ratio": 5.354450478768926,
+    "roa": 0.029342584435988483,
+    "bv": 2629.3250376078013
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 483017000000000.0,
+      "2025-Q2": -481989651000000.0,
+      "2025-Q3": 553206000000.0,
+      "2026-Q1": 501383000000000.0,
+      "2026-Q2": -500268324000000.0
+    },
+    "eps": {
+      "2025-Q1": 7.37,
+      "2025-Q2": 68.51,
+      "2025-Q3": 50.01,
+      "2026-Q1": 19.36,
+      "2026-Q2": 67.79
+    },
+    "net_income": {
+      "2025-Q1": 6906000000000.0,
+      "2025-Q2": 62735000000000.0,
+      "2025-Q3": 44919000000000.0,
+      "2026-Q1": 17229000000000.0,
+      "2026-Q2": 60315000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3203191799808,
+    "enterprise_value": 2537383788544,
+    "shares_outstanding": 889775500
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3462,
+    "vol_trend": 1.846,
+    "price_chg_20d": 27.66
+  },
+  "neraca": {
+    "aset": 2642712.0,
+    "aset_lancar": 994798.0,
+    "kas": 542734.0,
+    "piutang_usaha": 204655.0,
+    "persediaan": 48130.0,
+    "aset_tetap": 690328.0,
+    "liabilitas": 301000.0,
+    "liabilitas_jangka_pendek": 185789.0,
+    "liabilitas_jangka_panjang": 115211.0,
+    "utang_usaha": 204655.0,
+    "utang_bank": null,
+    "ekuitas": 2339509.0,
+    "ekuitas_induk": 2339509.0,
+    "modal_saham": null,
+    "saldo_laba": 5000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1114676.0,
+    "beban_pokok": 486375.0,
+    "laba_kotor": 628301.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 98600.0,
+    "beban_pajak": -21034.0,
+    "laba_bersih": 77544.0,
+    "laba_induk": 77544.0,
+    "eps_basic": 87.15,
+    "eps_diluted": 7.588e-05
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 454972014592,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6173.0,
+    "dividen_dibayar": 139519.0
+  }
+}

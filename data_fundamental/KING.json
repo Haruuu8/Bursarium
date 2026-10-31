@@ -1,0 +1,77 @@
+{
+  "kode": "KING",
+  "nama": "PT Hoffmen Cleanindo Tbk",
+  "sektor": "Industrials",
+  "industri": "Specialty Business Services",
+  "harga": 280.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 10.44120785091203,
+    "ps": 5.420316408156322,
+    "roe": 0.009414804037009016,
+    "eps": null,
+    "de": 1.9459603867622237,
+    "margin_net": 0.009774964262763685,
+    "current_ratio": 0.766447362758894,
+    "roa": 0.0031954807518961978,
+    "bv": 26.816820812119193
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 728426610688,
+    "enterprise_value": 811059052544,
+    "shares_outstanding": 2601523713
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1439,
+    "vol_trend": 0.444,
+    "price_chg_20d": -27.84
+  },
+  "neraca": {
+    "aset": 205546533995.0,
+    "aset_lancar": 76538483760.0,
+    "kas": 28459857069.0,
+    "piutang_usaha": 13151309618.0,
+    "persediaan": 11463425210.0,
+    "aset_tetap": 20908380156.0,
+    "liabilitas": 135759138755.0,
+    "liabilitas_jangka_pendek": 99861370107.0,
+    "liabilitas_jangka_panjang": 35897768648.0,
+    "utang_usaha": 13151309618.0,
+    "utang_bank": 66132080814.0,
+    "ekuitas": 69764595250.0,
+    "ekuitas_induk": 69764595250.0,
+    "modal_saham": null,
+    "saldo_laba": 3827488116.0
+  },
+  "laba_rugi": {
+    "pendapatan": 67194106837.0,
+    "beban_pokok": 56530258254.0,
+    "laba_kotor": 10663848583.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 918464549.0,
+    "beban_pajak": -258814449.0,
+    "laba_bersih": 656819993.0,
+    "laba_induk": 656819993.0,
+    "eps_basic": 659650100.0,
+    "eps_diluted": 659650100.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -11140576256,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2305084475.0,
+    "dividen_dibayar": null
+  }
+}

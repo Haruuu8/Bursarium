@@ -1,0 +1,98 @@
+{
+  "kode": "BPFI",
+  "nama": "PT Woori Finance Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 244.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 6.670311645708037,
+    "pb": 0.5250117379309256,
+    "ps": 10.145606107767303,
+    "roe": 0.0787020421342475,
+    "eps": 36.58,
+    "de": 1.7966522878956988,
+    "margin_net": 1.7811485644095677,
+    "current_ratio": null,
+    "roa": 0.028141518513002464,
+    "bv": 464.75151386444327
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7246212205.0,
+      "2025-Q2": 7318831890.0,
+      "2025-Q3": 9397099729.0,
+      "2026-Q1": 18997060662.0,
+      "2026-Q2": 15032585833.0,
+      "2026-Q3": 20882360733.0
+    },
+    "eps": {
+      "2025-Q1": 7.85,
+      "2025-Q2": 5.68,
+      "2025-Q3": 5.85,
+      "2026-Q1": 12.37,
+      "2026-Q2": 12.93,
+      "2026-Q3": 11.28
+    },
+    "net_income": {
+      "2025-Q1": 20996364403.0,
+      "2025-Q2": 15176449963.0,
+      "2025-Q3": 15640636983.0,
+      "2026-Q1": 33092919847.0,
+      "2026-Q2": 34559280773.0,
+      "2026-Q3": 30154242223.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 652454854656,
+    "enterprise_value": 2507156488192,
+    "shares_outstanding": 2673995362
+  },
+  "akumulasi": {
+    "score": 6.8,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1188,
+    "vol_trend": 0.515,
+    "price_chg_20d": 2.52
+  },
+  "neraca": {
+    "aset": 3475521152059.0,
+    "aset_lancar": null,
+    "kas": 38830493268.0,
+    "piutang_usaha": 2702732926697.0,
+    "persediaan": null,
+    "aset_tetap": 114924693685.0,
+    "liabilitas": 2232777759503.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 2138563008468.0,
+    "ekuitas": 1242743392556.0,
+    "ekuitas_induk": 1242743392556.0,
+    "modal_saham": null,
+    "saldo_laba": 697062051755.0
+  },
+  "laba_rugi": {
+    "pendapatan": 54912007228.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 119013768003.0,
+    "beban_pajak": -21207325160.0,
+    "laba_bersih": 97806442843.0,
+    "laba_induk": 97806442843.0,
+    "eps_basic": 36.58,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -604687704257.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11875091826.0,
+    "dividen_dibayar": 21285003082.0
+  }
+}

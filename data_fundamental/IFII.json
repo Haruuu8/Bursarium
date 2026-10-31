@@ -1,0 +1,95 @@
+{
+  "kode": "IFII",
+  "nama": "PT Indonesia Fibreboard Industry Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Lumber & Wood Production",
+  "harga": 194.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 24.25,
+    "pb": 1.2980165055440764,
+    "ps": 1.5283852677492136,
+    "roe": 0.05553473661742079,
+    "eps": 8.0,
+    "de": 0.23925687713744814,
+    "margin_net": 0.12765812348077377,
+    "current_ratio": 2.564073178256437,
+    "roa": 0.04481293397838561,
+    "bv": 149.45880824426266
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 432900445660.0,
+      "2025-Q2": 262681434520.0,
+      "2025-Q3": 320041108148.0,
+      "2026-Q1": 331285295851.0,
+      "2026-Q2": 280669994701.0
+    },
+    "eps": {
+      "2025-Q1": 8.21,
+      "2025-Q2": 3.37,
+      "2025-Q3": 4.84,
+      "2026-Q1": 5.0,
+      "2026-Q2": 3.0
+    },
+    "net_income": {
+      "2025-Q1": 77276526416.0,
+      "2025-Q2": 31720346448.0,
+      "2025-Q3": 45571235389.0,
+      "2026-Q1": 44866321056.0,
+      "2026-Q2": 33254742990.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1825927987200,
+    "enterprise_value": 1869923483648,
+    "shares_outstanding": 9412000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5744,
+    "vol_trend": 0.172,
+    "price_chg_20d": -6.73
+  },
+  "neraca": {
+    "aset": 1743270460347.0,
+    "aset_lancar": 553997660943.0,
+    "kas": 149332779100.0,
+    "piutang_usaha": 30200570619.0,
+    "persediaan": 310516793300.0,
+    "aset_tetap": 10123933800.0,
+    "liabilitas": 336564157152.0,
+    "liabilitas_jangka_pendek": 216061563937.0,
+    "liabilitas_jangka_panjang": 120502593215.0,
+    "utang_usaha": 30200570619.0,
+    "utang_bank": 92254330699.0,
+    "ekuitas": 1406706303195.0,
+    "ekuitas_induk": 1406706303195.0,
+    "modal_saham": null,
+    "saldo_laba": 7000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 611955290552.0,
+    "beban_pokok": 407901519896.0,
+    "laba_kotor": 204053770656.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 100020715473.0,
+    "beban_pajak": -21899651427.0,
+    "laba_bersih": 78121064046.0,
+    "laba_induk": 78121064046.0,
+    "eps_basic": 8.0,
+    "eps_diluted": 8.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 359113818112,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10123933800.0,
+    "dividen_dibayar": null
+  }
+}

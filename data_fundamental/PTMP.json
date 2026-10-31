@@ -1,0 +1,98 @@
+{
+  "kode": "PTMP",
+  "nama": "PT Mitra Pack Tbk",
+  "sektor": "Industrials",
+  "industri": "Specialty Industrial Machinery",
+  "harga": 38.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 9.134615384615385,
+    "pb": 0.69158611308104,
+    "ps": 0.6271225100620482,
+    "roe": 0.0626105474832715,
+    "eps": 4.16,
+    "de": 0.6780021705859388,
+    "margin_net": 0.076912372827857,
+    "current_ratio": 2.5990196574826725,
+    "roa": 0.03616790142066071,
+    "bv": 54.94615823141487
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 52510982274.0,
+      "2025-Q2": 44803476302.0,
+      "2025-Q3": 50280242955.0,
+      "2026-Q1": 44743265852.0,
+      "2026-Q2": 46808099112.0,
+      "2026-Q3": 50203597432.0
+    },
+    "eps": {
+      "2025-Q1": 0.72,
+      "2025-Q2": -0.05,
+      "2025-Q3": -13.89,
+      "2026-Q1": 1.51,
+      "2026-Q2": 1.19,
+      "2026-Q3": 1.46
+    },
+    "net_income": {
+      "2025-Q1": 1957320834.0,
+      "2025-Q2": 174128477.0,
+      "2025-Q3": -41496981966.0,
+      "2026-Q1": 4779932249.0,
+      "2026-Q2": 2237007921.0,
+      "2026-Q3": 3885770348.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 120429608960,
+    "enterprise_value": 172243337216,
+    "shares_outstanding": 3169200000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2704,
+    "vol_trend": 0.432,
+    "price_chg_20d": -22.45
+  },
+  "neraca": {
+    "aset": 301447142072.0,
+    "aset_lancar": 249577428339.0,
+    "kas": 8737961989.0,
+    "piutang_usaha": 26327309460.0,
+    "persediaan": 103507752293.0,
+    "aset_tetap": 36489916512.0,
+    "liabilitas": 118064155220.0,
+    "liabilitas_jangka_pendek": 96027526233.0,
+    "liabilitas_jangka_panjang": 22036628987.0,
+    "utang_usaha": 26327309460.0,
+    "utang_bank": 44579314270.0,
+    "ekuitas": 174135364667.0,
+    "ekuitas_induk": 174135364667.0,
+    "modal_saham": null,
+    "saldo_laba": 325000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 141754962396.0,
+    "beban_pokok": 89834999366.0,
+    "laba_kotor": 51919963030.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17431963377.0,
+    "beban_pajak": -4256328410.0,
+    "laba_bersih": 10902710518.0,
+    "laba_induk": 10902710518.0,
+    "eps_basic": 4.16,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 12341649408,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1260283127.0,
+    "dividen_dibayar": null
+  }
+}

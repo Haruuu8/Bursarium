@@ -1,0 +1,98 @@
+{
+  "kode": "OKAS",
+  "nama": "PT Ancora Indonesia Resources Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 86.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0012223371844916528,
+    "roe": 0.12151771072185791,
+    "eps": -1613.8041026886708,
+    "de": 4.782909484729428,
+    "margin_net": 0.02015890184232838,
+    "current_ratio": 1.4163260680127074,
+    "roa": 0.01542016795188267,
+    "bv": 8491.477844649771
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 36743970000000.0,
+      "2025-Q2": 39340003000000.0,
+      "2025-Q3": 45500096000000.0,
+      "2026-Q1": 36741858000000.0,
+      "2026-Q2": 39585692000000.0,
+      "2026-Q3": 45161161000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": -0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": -0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 1310360000000.0,
+      "2025-Q2": -41763000000.0,
+      "2025-Q3": -6279361000000.0,
+      "2026-Q1": -780875000000000.0,
+      "2026-Q2": 779798772000000.0,
+      "2026-Q3": 3525307000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 204116639744,
+    "enterprise_value": 204188549120,
+    "shares_outstanding": 2373449165
+  },
+  "akumulasi": {
+    "score": 1.8,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1148,
+    "vol_trend": 1.814,
+    "price_chg_20d": -12.24
+  },
+  "neraca": {
+    "aset": 158823108.0,
+    "aset_lancar": 83302355.0,
+    "kas": 7713007.0,
+    "piutang_usaha": 35631324.0,
+    "persediaan": 28029063.0,
+    "aset_tetap": 73488557.0,
+    "liabilitas": 96395193.0,
+    "liabilitas_jangka_pendek": 58815803.0,
+    "liabilitas_jangka_panjang": 37579390.0,
+    "utang_usaha": 35631324.0,
+    "utang_bank": 3507039.0,
+    "ekuitas": 20154091.0,
+    "ekuitas_induk": 20154091.0,
+    "modal_saham": null,
+    "saldo_laba": 43052.0
+  },
+  "laba_rugi": {
+    "pendapatan": 121488711.0,
+    "beban_pokok": 90566696.0,
+    "laba_kotor": 30922015.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10182713.0,
+    "beban_pajak": -3417970.0,
+    "laba_bersih": 2449079.0,
+    "laba_induk": 2449079.0,
+    "eps_basic": 0.001,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 9317677,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4046548.0,
+    "dividen_dibayar": 3139238.0
+  }
+}

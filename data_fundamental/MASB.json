@@ -1,0 +1,95 @@
+{
+  "kode": "MASB",
+  "nama": "PT Bank Multiarta Sentosa Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 2610.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 33.95784543325527,
+    "pb": 0.8881459589966326,
+    "ps": 1.847171416003841,
+    "roe": 0.02615515481429973,
+    "eps": 76.86,
+    "de": 6.781759853323272,
+    "margin_net": 0.106780560240186,
+    "current_ratio": null,
+    "roa": 0.0033610848069450428,
+    "bv": 2938.706159231532
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 472547578416.0,
+      "2025-Q2": 481130488394.0,
+      "2025-Q3": 490681094085.0,
+      "2026-Q1": 504959611993.0,
+      "2026-Q2": 504229626419.0
+    },
+    "eps": {
+      "2025-Q1": 36.28,
+      "2025-Q2": 34.96,
+      "2025-Q3": 40.17,
+      "2026-Q1": 38.79,
+      "2026-Q2": 38.07
+    },
+    "net_income": {
+      "2025-Q1": 50859943595.0,
+      "2025-Q2": 49018113939.0,
+      "2025-Q3": 56325987530.0,
+      "2026-Q1": 54378773398.0,
+      "2026-Q2": 53383018868.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3659248173056,
+    "enterprise_value": 2024124317696,
+    "shares_outstanding": 1402010763
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4333,
+    "vol_trend": 0.435,
+    "price_chg_20d": -20.18
+  },
+  "neraca": {
+    "aset": 32061610597665.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 123167759018.0,
+    "liabilitas": 27941512933128.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4120097664537.0,
+    "ekuitas_induk": 4120097664537.0,
+    "modal_saham": null,
+    "saldo_laba": 1908237716551.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1009189238412.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 146014728890.0,
+    "laba_sebelum_pajak": 138156143932.0,
+    "beban_pajak": -30394351666.0,
+    "laba_bersih": 107761792266.0,
+    "laba_induk": 107761792266.0,
+    "eps_basic": 76.86,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2682289688070.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

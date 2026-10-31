@@ -1,0 +1,95 @@
+{
+  "kode": "BJBR",
+  "nama": "PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 720.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.677016476058599,
+    "pb": null,
+    "ps": 0.13373480659482073,
+    "roe": 0.04842331998028249,
+    "eps": 74.4030974610113,
+    "de": 12.202518157631568,
+    "margin_net": 0.09533476736311249,
+    "current_ratio": null,
+    "roa": 0.0034297102799789934,
+    "bv": 5203.6540264402365
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4273314000000.0,
+      "2025-Q2": 4209525000000.0,
+      "2025-Q3": 4305090000000.0,
+      "2026-Q1": 4105847000000.0,
+      "2026-Q2": 4105512000000.0
+    },
+    "eps": {
+      "2025-Q1": 37.87,
+      "2025-Q2": 8.98,
+      "2025-Q3": -46.1,
+      "2026-Q1": 0.39,
+      "2026-Q2": 74.01
+    },
+    "net_income": {
+      "2025-Q1": 398419000000000.0,
+      "2025-Q2": 94520000000000.0,
+      "2025-Q3": 297736000000000.0,
+      "2026-Q1": 410149000000000.0,
+      "2026-Q2": 372679000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7575439409152,
+    "enterprise_value": 32942380285952,
+    "shares_outstanding": 3106729025
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1715,
+    "vol_trend": 0.478,
+    "price_chg_20d": -4.0
+  },
+  "neraca": {
+    "aset": 228249017.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 5324305.0,
+    "liabilitas": 197270094.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 16166343.0,
+    "ekuitas_induk": 16166343.0,
+    "modal_saham": null,
+    "saldo_laba": 5208311.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8211359.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 1255633.0,
+    "laba_sebelum_pajak": 1221988.0,
+    "beban_pajak": -229821.0,
+    "laba_bersih": 782828.0,
+    "laba_induk": 782828.0,
+    "eps_basic": 74.4030974610113,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 8434896000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 900004.0
+  }
+}

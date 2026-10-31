@@ -1,0 +1,95 @@
+{
+  "kode": "VAST",
+  "nama": "PT Vastland Indonesia Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 98.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 36.84210526315789,
+    "pb": 0.7400196259131605,
+    "ps": 7.433515535435663,
+    "roe": 0.020100853323833243,
+    "eps": 2.66,
+    "de": 0.27854134021703386,
+    "margin_net": 0.3974509213591369,
+    "current_ratio": 0.527178731860868,
+    "roa": 0.015721707770842277,
+    "bv": 132.42892021825926
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 9431767471.0,
+      "2025-Q2": 9755807286.0,
+      "2025-Q3": 10063753198.0,
+      "2026-Q1": 10031057176.0,
+      "2026-Q2": 10434793647.0
+    },
+    "eps": {
+      "2025-Q1": 1.03,
+      "2025-Q2": 1.39,
+      "2025-Q3": 1.39,
+      "2026-Q1": 1.17,
+      "2026-Q2": 1.49
+    },
+    "net_income": {
+      "2025-Q1": 3153685938.0,
+      "2025-Q2": 4233176043.0,
+      "2025-Q3": 4267329820.0,
+      "2026-Q1": 3573311183.0,
+      "2026-Q2": 4560860083.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 299462230016,
+    "enterprise_value": 344855642112,
+    "shares_outstanding": 3055737049
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1323,
+    "vol_trend": 0.282,
+    "price_chg_20d": -4.85
+  },
+  "neraca": {
+    "aset": 517384713198.0,
+    "aset_lancar": 18250159353.0,
+    "kas": 10568245425.0,
+    "piutang_usaha": 268096566.0,
+    "persediaan": null,
+    "aset_tetap": 675217692.0,
+    "liabilitas": 112716755328.0,
+    "liabilitas_jangka_pendek": 34618542536.0,
+    "liabilitas_jangka_panjang": 78098212792.0,
+    "utang_usaha": 268096566.0,
+    "utang_bank": 1597114938.0,
+    "ekuitas": 404667957870.0,
+    "ekuitas_induk": 404667957870.0,
+    "modal_saham": null,
+    "saldo_laba": 180000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 20465850823.0,
+    "beban_pokok": 4063497307.0,
+    "laba_kotor": 16402353516.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8146070255.0,
+    "beban_pajak": -11898989.0,
+    "laba_bersih": 8134171266.0,
+    "laba_induk": 8134171266.0,
+    "eps_basic": 2.66,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 54727618560,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 287303529.0,
+    "dividen_dibayar": null
+  }
+}

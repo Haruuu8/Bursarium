@@ -1,0 +1,92 @@
+{
+  "kode": "BLES",
+  "nama": "PT Superior Prima Sukses Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 204.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 6.378625850131685,
+    "pb": 1.3068856726995872,
+    "ps": 0.9833702892512421,
+    "roe": 0.20488515813905087,
+    "eps": 31.98181,
+    "de": 0.6074164325737551,
+    "margin_net": 0.20203968788886945,
+    "current_ratio": 1.4687918943587204,
+    "roa": 0.1274316681402198,
+    "bv": 156.09628620275902
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 436999235306.0,
+      "2026-Q1": 334359805843.0,
+      "2026-Q2": 513629041343.0,
+      "2026-Q3": 559283729890.0
+    },
+    "eps": {
+      "2025-Q3": 4.57,
+      "2026-Q1": 5.27,
+      "2026-Q2": 11.27,
+      "2026-Q3": 15.44
+    },
+    "net_income": {
+      "2025-Q3": 40588294035.0,
+      "2026-Q1": 46886962412.0,
+      "2026-Q2": 100199425669.0,
+      "2026-Q3": 137238524166.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1813602107392,
+    "enterprise_value": 2069600403456,
+    "shares_outstanding": 8890206400
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1951,
+    "vol_trend": 1.169,
+    "price_chg_20d": 6.25
+  },
+  "neraca": {
+    "aset": 2231195089859.0,
+    "aset_lancar": 580797926100.0,
+    "kas": 188210229173.0,
+    "piutang_usaha": 185260525391.0,
+    "persediaan": 98729720505.0,
+    "aset_tetap": 10003288815.0,
+    "liabilitas": 842928914215.0,
+    "liabilitas_jangka_pendek": 395425606807.0,
+    "liabilitas_jangka_panjang": 447503307408.0,
+    "utang_usaha": 185260525391.0,
+    "utang_bank": 84420264745.0,
+    "ekuitas": 1387728202616.0,
+    "ekuitas_induk": 1387728202616.0,
+    "modal_saham": null,
+    "saldo_laba": 4000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1407272577076.0,
+    "beban_pokok": 839882811448.0,
+    "laba_kotor": 567389765628.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 362585380587.0,
+    "beban_pajak": -78127076849.0,
+    "laba_bersih": 284324912247.0,
+    "laba_induk": 284324912247.0,
+    "eps_basic": 31.98181,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 471106093056,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10003288815.0,
+    "dividen_dibayar": 16808990096.0
+  }
+}

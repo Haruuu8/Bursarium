@@ -1,0 +1,98 @@
+{
+  "kode": "ELSA",
+  "nama": "PT Elnusa Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 625.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 6.693082030413365,
+    "pb": 0.804289884360318,
+    "ps": 0.2913288388565501,
+    "roe": 0.12027914049040712,
+    "eps": 93.38,
+    "de": 1.077483316550173,
+    "margin_net": 0.05618070239705781,
+    "current_ratio": 1.495546365004573,
+    "roa": 0.057888693354592485,
+    "bv": 777.0830047142592
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3727628000000.0,
+      "2025-Q2": 3237560000000.0,
+      "2025-Q3": 3512199000000.0,
+      "2026-Q1": 3616611000000.0,
+      "2026-Q2": 3969510000000.0,
+      "2026-Q3": 4545251000000.0
+    },
+    "eps": {
+      "2025-Q1": 25.57,
+      "2025-Q2": 20.53,
+      "2025-Q3": 26.05,
+      "2026-Q1": 25.97,
+      "2026-Q2": 33.59,
+      "2026-Q3": 33.82
+    },
+    "net_income": {
+      "2025-Q1": 186654000000000.0,
+      "2025-Q2": 149828000000000.0,
+      "2025-Q3": 190078000000000.0,
+      "2026-Q1": 189555000000000.0,
+      "2026-Q2": 245151000000000.0,
+      "2026-Q3": 246843000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4557423247360,
+    "enterprise_value": 2737555374080,
+    "shares_outstanding": 7291877400
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1481,
+    "vol_trend": 1.111,
+    "price_chg_20d": -0.79
+  },
+  "neraca": {
+    "aset": 11773439.0,
+    "aset_lancar": 8602447.0,
+    "kas": 2129622.0,
+    "piutang_usaha": 153195.0,
+    "persediaan": 521017.0,
+    "aset_tetap": 2149492.0,
+    "liabilitas": 6105445.0,
+    "liabilitas_jangka_pendek": 5752043.0,
+    "liabilitas_jangka_panjang": 353402.0,
+    "utang_usaha": 153195.0,
+    "utang_bank": 55985.0,
+    "ekuitas": 5666394.0,
+    "ekuitas_induk": 5666394.0,
+    "modal_saham": null,
+    "saldo_laba": 158109.0
+  },
+  "laba_rugi": {
+    "pendapatan": 12131372.0,
+    "beban_pokok": 10982242.0,
+    "laba_kotor": 1149130.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 844879.0,
+    "beban_pajak": -163328.0,
+    "laba_bersih": 681549.0,
+    "laba_induk": 681549.0,
+    "eps_basic": 93.38,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1623460020224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 477809.0,
+    "dividen_dibayar": 323251.0
+  }
+}

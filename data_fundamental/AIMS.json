@@ -1,0 +1,98 @@
+{
+  "kode": "AIMS",
+  "nama": "PT Artha Mahiya Investama Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 520.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00013470689166153934,
+    "roe": -16.290463145385125,
+    "eps": null,
+    "de": 101.25229156457215,
+    "margin_net": -0.760809375,
+    "current_ratio": 0.11627616247201876,
+    "roa": -0.15931636246115546,
+    "bv": 197000.67727272728
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2314000000000.0,
+      "2025-Q2": 76436000000000.0,
+      "2025-Q3": -78748721250000.0,
+      "2026-Q1": 13629000000000.0,
+      "2026-Q2": 79371000000000.0,
+      "2026-Q3": 835000000000000.0
+    },
+    "eps": {
+      "2025-Q1": -1.51,
+      "2025-Q2": -2.38,
+      "2025-Q3": 3.11,
+      "2026-Q1": -1.7,
+      "2026-Q2": -0.41,
+      "2026-Q3": -1.1
+    },
+    "net_income": {
+      "2025-Q1": -332394096000000.0,
+      "2025-Q2": -523618098000000.0,
+      "2025-Q3": 683393798000000.0,
+      "2026-Q1": -374740381000000.0,
+      "2026-Q2": -89828437000000.0,
+      "2026-Q3": -241462282000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 114400002048,
+    "enterprise_value": 116165328896,
+    "shares_outstanding": 220000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4028,
+    "vol_trend": 1.174,
+    "price_chg_20d": -26.76
+  },
+  "neraca": {
+    "aset": 4431629552.0,
+    "aset_lancar": 302135137.0,
+    "kas": 24533977.0,
+    "piutang_usaha": 83520000.0,
+    "persediaan": null,
+    "aset_tetap": 3867195.0,
+    "liabilitas": 4388289403.0,
+    "liabilitas_jangka_pendek": 2598427146.0,
+    "liabilitas_jangka_panjang": 1789862257.0,
+    "utang_usaha": 83520000.0,
+    "utang_bank": null,
+    "ekuitas": 43340149.0,
+    "ekuitas_induk": 43340149.0,
+    "modal_saham": null,
+    "saldo_laba": 146324338.0
+  },
+  "laba_rugi": {
+    "pendapatan": 928000000.0,
+    "beban_pokok": null,
+    "laba_kotor": 928000000.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -706031100.0,
+    "beban_pajak": null,
+    "laba_bersih": -706031100.0,
+    "laba_induk": -706031100.0,
+    "eps_basic": -3.21,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -119750752,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

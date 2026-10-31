@@ -1,0 +1,95 @@
+{
+  "kode": "ACRO",
+  "nama": "PT Samcro Hyosung Adilestari Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 43.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 21.828804655618267,
+    "pb": 0.8206476394508706,
+    "ps": 3.7508963859007545,
+    "roe": 0.011802597444967642,
+    "eps": 1.9698742408660808,
+    "de": 0.30444276524679803,
+    "margin_net": 0.09129028592819928,
+    "current_ratio": 1.1537638845488127,
+    "roa": 0.00904799946721665,
+    "bv": 52.397640513257414
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 13921920104.0,
+      "2025-Q2": 5620460232.0,
+      "2025-Q3": 10649456078.0,
+      "2026-Q1": 11737005567.0,
+      "2026-Q2": 11765399921.0
+    },
+    "eps": {
+      "2025-Q1": 1.56,
+      "2025-Q2": -0.23,
+      "2025-Q3": 1.13,
+      "2026-Q1": 0.49,
+      "2026-Q2": 0.13
+    },
+    "net_income": {
+      "2025-Q1": 3435275722.0,
+      "2025-Q2": 1096807535.0,
+      "2025-Q3": 3591825554.0,
+      "2026-Q1": 1694608556.0,
+      "2026-Q2": 450932761.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 149181857792,
+    "enterprise_value": 162727706624,
+    "shares_outstanding": 3469345537
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1832,
+    "vol_trend": 0.204,
+    "price_chg_20d": -15.69
+  },
+  "neraca": {
+    "aset": 237128806735.0,
+    "aset_lancar": 60450671384.0,
+    "kas": 31469133746.0,
+    "piutang_usaha": 8329716953.0,
+    "persediaan": 19809089962.0,
+    "aset_tetap": 109463019201.0,
+    "liabilitas": 55343286471.0,
+    "liabilitas_jangka_pendek": 52394317584.0,
+    "liabilitas_jangka_panjang": 2948968887.0,
+    "utang_usaha": 8329716953.0,
+    "utang_bank": 45014976000.0,
+    "ekuitas": 181785520264.0,
+    "ekuitas_induk": 181785520264.0,
+    "modal_saham": null,
+    "saldo_laba": 1200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 23502405488.0,
+    "beban_pokok": 13750529546.0,
+    "laba_kotor": 9751875942.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2961244788.0,
+    "beban_pajak": -815703471.0,
+    "laba_bersih": 2145541317.0,
+    "laba_induk": 2145541317.0,
+    "eps_basic": 0.62,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 784790336,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 646670759.0,
+    "dividen_dibayar": 16936935595.0
+  }
+}

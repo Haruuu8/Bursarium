@@ -1,0 +1,95 @@
+{
+  "kode": "BSIM",
+  "nama": "PT Bank Sinarmas Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 765.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 121.04430379746834,
+    "pb": 1.8099172838030564,
+    "ps": -0.02330757607162251,
+    "roe": 0.014953221682963428,
+    "eps": 6.32,
+    "de": 5.673593485535111,
+    "margin_net": 0.10656427447492646,
+    "current_ratio": null,
+    "roa": 0.0020456079363520645,
+    "bv": 422.67124959023397
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 650191000000000.0,
+      "2025-Q2": -648905659000000.0,
+      "2025-Q3": 613484000000.0,
+      "2026-Q1": 567381000000000.0,
+      "2026-Q2": -566211640000000.0
+    },
+    "eps": {
+      "2025-Q1": 2.34,
+      "2025-Q2": 4.75,
+      "2025-Q3": 5.6,
+      "2026-Q1": 2.44,
+      "2026-Q2": 3.88
+    },
+    "net_income": {
+      "2025-Q1": 46137000000000.0,
+      "2025-Q2": 93654000000000.0,
+      "2025-Q3": 110410000000000.0,
+      "2026-Q1": 48141000000000.0,
+      "2026-Q2": 76471000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 15082863984640,
+    "enterprise_value": 11846828425216,
+    "shares_outstanding": 19716162403
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2018,
+    "vol_trend": 0.586,
+    "price_chg_20d": -16.85
+  },
+  "neraca": {
+    "aset": 60916854.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 1468126.0,
+    "liabilitas": 47280636.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 8333455.0,
+    "ekuitas_induk": 8333455.0,
+    "modal_saham": null,
+    "saldo_laba": 2389528.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1169360.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 178932.0,
+    "laba_sebelum_pajak": 178932.0,
+    "beban_pajak": -32029.0,
+    "laba_bersih": 124612.0,
+    "laba_induk": 124612.0,
+    "eps_basic": 6.32,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -562560000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

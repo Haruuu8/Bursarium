@@ -1,0 +1,95 @@
+{
+  "kode": "GOOD",
+  "nama": "PT Garudafood Putra Putri Jaya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 290.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 39.56343792633015,
+    "pb": 2.7381431443997646,
+    "ps": 0.7877227778327568,
+    "roe": 0.06922827174757538,
+    "eps": 7.33,
+    "de": 1.2984493077046857,
+    "margin_net": 0.037216827440119636,
+    "current_ratio": 1.2719520350931766,
+    "roa": 0.028814603549374273,
+    "bv": 105.91119043324218
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3130050445624.0,
+      "2025-Q2": 2910880383748.0,
+      "2025-Q3": 3400383792175.0,
+      "2026-Q1": 3522377531039.0,
+      "2026-Q2": 3742840462785.0
+    },
+    "eps": {
+      "2025-Q1": 3.75,
+      "2025-Q2": 3.24,
+      "2025-Q3": 6.03,
+      "2026-Q1": 3.79,
+      "2026-Q2": 3.54
+    },
+    "net_income": {
+      "2025-Q1": 138441857003.0,
+      "2025-Q2": 119255001840.0,
+      "2025-Q3": 222435432957.0,
+      "2026-Q1": 139686039173.0,
+      "2026-Q2": 130702325218.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 10694505267200,
+    "enterprise_value": 12599130324992,
+    "shares_outstanding": 36877600855
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3204,
+    "vol_trend": 0.889,
+    "price_chg_20d": -5.84
+  },
+  "neraca": {
+    "aset": 9383726690103.0,
+    "aset_lancar": 3968165267331.0,
+    "kas": 912625466839.0,
+    "piutang_usaha": 958075391768.0,
+    "persediaan": 1822377218116.0,
+    "aset_tetap": 3915292415542.0,
+    "liabilitas": 5071419171564.0,
+    "liabilitas_jangka_pendek": 3119744422627.0,
+    "liabilitas_jangka_panjang": 1951674748937.0,
+    "utang_usaha": 958075391768.0,
+    "utang_bank": 151113052776.0,
+    "ekuitas": 3905750606875.0,
+    "ekuitas_induk": 3905750606875.0,
+    "modal_saham": null,
+    "saldo_laba": 23000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7265217993824.0,
+    "beban_pokok": 5355058983796.0,
+    "laba_kotor": 1910159010028.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 406288354936.0,
+    "beban_pajak": -97004296239.0,
+    "laba_bersih": 270388364391.0,
+    "laba_induk": 270388364391.0,
+    "eps_basic": 7.33,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 910903541760,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 341408373847.0,
+    "dividen_dibayar": 382320187179.0
+  }
+}

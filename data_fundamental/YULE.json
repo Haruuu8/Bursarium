@@ -1,0 +1,98 @@
+{
+  "kode": "YULE",
+  "nama": "PT Yulie Sekuritas Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 3590.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 251.22463261021696,
+    "pb": 8.08471641260875,
+    "ps": -0.006498283537021885,
+    "roe": 0.03218353112696569,
+    "eps": 14.29,
+    "de": 0.49172513496550047,
+    "margin_net": 287.13902698962977,
+    "current_ratio": null,
+    "roa": 0.021554218381911776,
+    "bv": 444.04773362255645
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 506244620000000.0,
+      "2025-Q2": 449659514000000.0,
+      "2025-Q3": -955902172198321.0,
+      "2026-Q1": 728010923000000.0,
+      "2026-Q2": -728009566498967.0,
+      "2026-Q3": 78998541498967.0
+    },
+    "eps": {
+      "2025-Q1": -5.42,
+      "2025-Q2": 8.63,
+      "2025-Q3": 8.04,
+      "2026-Q1": -4.31,
+      "2026-Q2": -31.5,
+      "2026-Q3": 50.1
+    },
+    "net_income": {
+      "2025-Q1": -8599878014.0,
+      "2025-Q2": 13691330088.0,
+      "2025-Q3": 12768797449.0,
+      "2026-Q1": -6842709642.0,
+      "2026-Q2": -50004709015.0,
+      "2026-Q3": 79531372501.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 5698359394304,
+    "enterprise_value": 5756611461120,
+    "shares_outstanding": 1587286800
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.335,
+    "vol_trend": 0.684,
+    "price_chg_20d": 0.84
+  },
+  "neraca": {
+    "aset": 1052413659455.0,
+    "aset_lancar": null,
+    "kas": 45450149467.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 4620789446.0,
+    "liabilitas": 346583170799.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 100000000000.0,
+    "ekuitas": 704831106149.0,
+    "ekuitas_induk": 704831106149.0,
+    "modal_saham": null,
+    "saldo_laba": 71400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 78999898.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 24042376993.0,
+    "beban_pajak": -1358604101.0,
+    "laba_bersih": 22683953844.0,
+    "laba_induk": 22683953844.0,
+    "eps_basic": 14.29,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -153376653312,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 812100665.0,
+    "dividen_dibayar": 15872868000.0
+  }
+}

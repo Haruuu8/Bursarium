@@ -1,0 +1,95 @@
+{
+  "kode": "PTPW",
+  "nama": "PT Pratama Widya Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 1015.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 18.957788569293985,
+    "pb": 1.2928899339916171,
+    "ps": 2.543679530407888,
+    "roe": 0.06820342686184237,
+    "eps": 53.54,
+    "de": 0.12594104363366476,
+    "margin_net": 0.27829889683629966,
+    "current_ratio": 6.295940834439754,
+    "roa": 0.0593047230494556,
+    "bv": 785.0629611341542
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 72242721302.0,
+      "2025-Q2": 90990849516.0,
+      "2025-Q3": 90469782731.0,
+      "2026-Q1": 76842839938.0,
+      "2026-Q2": 92118152019.0
+    },
+    "eps": {
+      "2025-Q1": 5.41,
+      "2025-Q2": 18.53,
+      "2025-Q3": 22.81,
+      "2026-Q1": 15.29,
+      "2026-Q2": 38.25
+    },
+    "net_income": {
+      "2025-Q1": 4753548569.0,
+      "2025-Q2": 16273809501.0,
+      "2025-Q3": 20029067563.0,
+      "2026-Q1": 13425257243.0,
+      "2026-Q2": 33596400427.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 891360313344,
+    "enterprise_value": 850482298880,
+    "shares_outstanding": 878187500
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.168,
+    "vol_trend": 0.835,
+    "price_chg_20d": -7.31
+  },
+  "neraca": {
+    "aset": 792882172821.0,
+    "aset_lancar": 484529883709.0,
+    "kas": 86833188069.0,
+    "piutang_usaha": 170438985434.0,
+    "persediaan": 9269684089.0,
+    "aset_tetap": 297254835132.0,
+    "liabilitas": 86827845943.0,
+    "liabilitas_jangka_pendek": 76959091016.0,
+    "liabilitas_jangka_panjang": 9868754927.0,
+    "utang_usaha": 170438985434.0,
+    "utang_bank": 12055443025.0,
+    "ekuitas": 689432479181.0,
+    "ekuitas_induk": 689432479181.0,
+    "modal_saham": null,
+    "saldo_laba": 1100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 168960991957.0,
+    "beban_pokok": 86825679728.0,
+    "laba_kotor": 82135312229.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 46412237205.0,
+    "beban_pajak": -302418435.0,
+    "laba_bersih": 47021657670.0,
+    "laba_induk": 47021657670.0,
+    "eps_basic": 53.54,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 72470216704,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5219993337.0,
+    "dividen_dibayar": null
+  }
+}

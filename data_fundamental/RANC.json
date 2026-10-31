@@ -1,0 +1,95 @@
+{
+  "kode": "RANC",
+  "nama": "PT Supra Boga Lestari Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Grocery Stores",
+  "harga": 505.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.001048962817233567,
+    "roe": -0.06162681120571561,
+    "eps": null,
+    "de": 3.8792176266780465,
+    "margin_net": -0.009532382518930495,
+    "current_ratio": 0.8693636345569297,
+    "roa": -0.01261268618236323,
+    "bv": 158559.03099257743
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 753191772000000.0,
+      "2025-Q2": -753190320259373.0,
+      "2025-Q3": 734534087.0,
+      "2026-Q1": 823453026000000.0,
+      "2026-Q2": -823451422269771.0
+    },
+    "eps": {
+      "2025-Q1": -3.33,
+      "2025-Q2": -19.67,
+      "2025-Q3": -3.0,
+      "2026-Q1": 5.0,
+      "2026-Q2": -15.0
+    },
+    "net_income": {
+      "2025-Q1": -5210962000000.0,
+      "2025-Q2": -30682112000000.0,
+      "2025-Q3": -4358567000000.0,
+      "2026-Q1": 7170494000000.0,
+      "2026-Q2": -22457864000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 790066233344,
+    "enterprise_value": 1159753891840,
+    "shares_outstanding": 1564487500
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.242,
+    "vol_trend": 0.891,
+    "price_chg_20d": -7.34
+  },
+  "neraca": {
+    "aset": 1212062980.0,
+    "aset_lancar": 565482122.0,
+    "kas": 84763749.0,
+    "piutang_usaha": 5740500.0,
+    "persediaan": 460614595.0,
+    "aset_tetap": 227779529.0,
+    "liabilitas": 962292775.0,
+    "liabilitas_jangka_pendek": 650455229.0,
+    "liabilitas_jangka_panjang": 311837546.0,
+    "utang_usaha": 5740500.0,
+    "utang_bank": 100000000.0,
+    "ekuitas": 248063622.0,
+    "ekuitas_induk": 248063622.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1603730229.0,
+    "beban_pokok": 1204785100.0,
+    "laba_kotor": 398945129.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -14581321.0,
+    "beban_pajak": -939654.0,
+    "laba_bersih": -15287370.0,
+    "laba_induk": -15287370.0,
+    "eps_basic": -10.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 183504224256,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 26447065.0,
+    "dividen_dibayar": null
+  }
+}

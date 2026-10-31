@@ -1,0 +1,89 @@
+{
+  "kode": "JAYA",
+  "nama": "PT Armada Berjaya Trans Tbk",
+  "sektor": "Industrials",
+  "industri": "Trucking",
+  "harga": 116.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 5.642023346303502,
+    "pb": 0.69119424411071,
+    "ps": 0.745110636563207,
+    "roe": 0.06195365847896203,
+    "eps": 20.56,
+    "de": 2.2442818705008807,
+    "margin_net": 0.13357266875412524,
+    "current_ratio": 0.4407554658140023,
+    "roa": 0.019096261409226937,
+    "bv": 167.82547162157798
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 20478521203.0,
+      "2026-Q1": 26881028814.0,
+      "2026-Q2": 34574227097.0
+    },
+    "eps": {
+      "2025-Q3": 1.88,
+      "2026-Q1": 2.83,
+      "2026-Q2": 7.45
+    },
+    "net_income": {
+      "2025-Q3": 1498152760.0,
+      "2026-Q1": 2262448617.0,
+      "2026-Q2": 5946293924.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 91581931520,
+    "enterprise_value": 300719636480,
+    "shares_outstanding": 789499394
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2758,
+    "vol_trend": 0.05,
+    "price_chg_20d": -22.15
+  },
+  "neraca": {
+    "aset": 429861236453.0,
+    "aset_lancar": 73081360769.0,
+    "kas": 4608916013.0,
+    "piutang_usaha": 17649565335.0,
+    "persediaan": null,
+    "aset_tetap": 295819622281.0,
+    "liabilitas": 297363101981.0,
+    "liabilitas_jangka_pendek": 165809312504.0,
+    "liabilitas_jangka_panjang": 131553789477.0,
+    "utang_usaha": 17649565335.0,
+    "utang_bank": 6911344293.0,
+    "ekuitas": 132498108143.0,
+    "ekuitas_induk": 132498108143.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 61455255911.0,
+    "beban_pokok": 29570330307.0,
+    "laba_kotor": 31884925604.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8546323281.0,
+    "beban_pajak": -337580740.0,
+    "laba_bersih": 8208742541.0,
+    "laba_induk": 8208742541.0,
+    "eps_basic": 10.28,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 7447169024,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 57947701330.0,
+    "dividen_dibayar": null
+  }
+}

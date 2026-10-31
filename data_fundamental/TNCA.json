@@ -1,0 +1,89 @@
+{
+  "kode": "TNCA",
+  "nama": "PT Trimuda Nuansa Citra Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 135.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3646179188051366,
+    "ps": 0.6610063915209516,
+    "roe": -0.02580092051352793,
+    "eps": -5.104907712740727,
+    "de": 0.41225666677230866,
+    "margin_net": -0.024995382416638685,
+    "current_ratio": 1.9662508577345672,
+    "roa": -0.018270881877009825,
+    "bv": 98.92879035195902
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 19317376957.0,
+      "2026-Q1": 18122013900.0,
+      "2026-Q2": 24934604561.0
+    },
+    "eps": {
+      "2025-Q3": 0.63,
+      "2026-Q1": -7.47,
+      "2026-Q2": 4.92
+    },
+    "net_income": {
+      "2025-Q3": 265065617000000.0,
+      "2026-Q1": -3145422329.0,
+      "2026-Q2": 2069205685.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 56921399296,
+    "enterprise_value": 55442001920,
+    "shares_outstanding": 421640000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3782,
+    "vol_trend": 0.28,
+    "price_chg_20d": -22.41
+  },
+  "neraca": {
+    "aset": 58903377037.0,
+    "aset_lancar": 29587939996.0,
+    "kas": 2390757259.0,
+    "piutang_usaha": 23826407048.0,
+    "persediaan": 442011288.0,
+    "aset_tetap": 27074152179.0,
+    "liabilitas": 17196188258.0,
+    "liabilitas_jangka_pendek": 15047896803.0,
+    "liabilitas_jangka_panjang": 2148291455.0,
+    "utang_usaha": 23826407048.0,
+    "utang_bank": null,
+    "ekuitas": 41712335164.0,
+    "ekuitas_induk": 41712335164.0,
+    "modal_saham": null,
+    "saldo_laba": -7391016382.0
+  },
+  "laba_rugi": {
+    "pendapatan": 43056618461.0,
+    "beban_pokok": 35088293334.0,
+    "laba_kotor": 7968325127.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1148568914.0,
+    "beban_pajak": 71170854.0,
+    "laba_bersih": -1076216644.0,
+    "laba_induk": -1076216644.0,
+    "eps_basic": -2.55,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1685851392,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 56589419.0,
+    "dividen_dibayar": null
+  }
+}

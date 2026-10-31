@@ -1,0 +1,98 @@
+{
+  "kode": "BMRI",
+  "nama": "PT Bank Mandiri (Persero) Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 3720.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 7.620920656382521,
+    "pb": 1.1746456916452352,
+    "ps": -0.933100351731639,
+    "roe": 0.15485570501919863,
+    "eps": 488.13,
+    "de": 7.772716068680404,
+    "margin_net": -99.5100353597825,
+    "current_ratio": null,
+    "roa": 0.017592253830765733,
+    "bv": 3166.9123944852545
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": -987564000000000.0,
+      "2025-Q2": 112166000000000.0,
+      "2025-Q3": 87424000000000.0,
+      "2026-Q1": -621677000000000.0,
+      "2026-Q2": 75452000000000.0,
+      "2026-Q3": 88643000000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 164.99,
+      "2026-Q2": 161.18,
+      "2026-Q3": 161.96
+    },
+    "net_income": {
+      "2025-Q1": 13197259000000.0,
+      "2025-Q2": 11257823000000.0,
+      "2025-Q3": 13275060000000.0,
+      "2026-Q1": 15384131000000.0,
+      "2026-Q2": 15028188000000.0,
+      "2026-Q3": 15121682000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 347199988826112,
+    "enterprise_value": 476939206787072,
+    "shares_outstanding": 92847999999
+  },
+  "akumulasi": {
+    "score": 5.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1065,
+    "vol_trend": 1.838,
+    "price_chg_20d": -7.69
+  },
+  "neraca": {
+    "aset": 2588298318.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": 45409606.0,
+    "persediaan": null,
+    "aset_tetap": 61554856.0,
+    "liabilitas": 2285500952.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 294041482.0,
+    "ekuitas_induk": 294041482.0,
+    "modal_saham": null,
+    "saldo_laba": 220805350.0
+  },
+  "laba_rugi": {
+    "pendapatan": -457582.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 57848177.0,
+    "laba_sebelum_pajak": 57832621.0,
+    "beban_pajak": -10723098.0,
+    "laba_bersih": 45534001.0,
+    "laba_induk": 45534001.0,
+    "eps_basic": 488.13,
+    "eps_diluted": 488.13
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 206540138000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 44472220.0
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "NISP",
+  "nama": "PT Bank OCBC NISP Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 1165.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.791561606992772,
+    "pb": 0.6024224653993709,
+    "ps": 1.5045178400079606,
+    "roe": 0.06152613421257741,
+    "eps": 118.98,
+    "de": 6.425561375039959,
+    "margin_net": 0.3044438298788178,
+    "current_ratio": null,
+    "roa": 0.008285714751362715,
+    "bv": 1933.8588231892595
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4545996000000.0,
+      "2025-Q2": 4395648000000.0,
+      "2025-Q3": 4404196000000.0,
+      "2026-Q1": 4444435000000.0,
+      "2026-Q2": 4523055000000.0
+    },
+    "eps": {
+      "2025-Q1": 56.27,
+      "2025-Q2": 55.57,
+      "2025-Q3": 54.84,
+      "2026-Q1": 59.27,
+      "2026-Q2": 59.71
+    },
+    "net_income": {
+      "2025-Q1": 1291021000000.0,
+      "2025-Q2": 1275094000000.0,
+      "2025-Q3": 1258458000000.0,
+      "2026-Q1": 1359946000000.0,
+      "2026-Q2": 1370151000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 26731270373376,
+    "enterprise_value": 47536119218176,
+    "shares_outstanding": 22945296972
+  },
+  "akumulasi": {
+    "score": 2.8,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1151,
+    "vol_trend": 1.139,
+    "price_chg_20d": -5.28
+  },
+  "neraca": {
+    "aset": 329494447.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 3831394.0,
+    "liabilitas": 285121210.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 44372965.0,
+    "ekuitas_induk": 44372965.0,
+    "modal_saham": null,
+    "saldo_laba": 35313662.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8967490.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 3368663.0,
+    "laba_sebelum_pajak": 3406885.0,
+    "beban_pajak": -676766.0,
+    "laba_bersih": 2730097.0,
+    "laba_induk": 2730097.0,
+    "eps_basic": 118.98,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 29435124000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 1032538.0
+  }
+}

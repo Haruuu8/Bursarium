@@ -1,0 +1,95 @@
+{
+  "kode": "ATIC",
+  "nama": "PT Anabatic Technologies Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 416.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 18.538324420677363,
+    "pb": 1.931150432184321,
+    "ps": 0.12632736786528836,
+    "roe": 0.0833483847957611,
+    "eps": 22.44,
+    "de": 8.719677839984843,
+    "margin_net": 0.011093603436480439,
+    "current_ratio": 1.0019300397338327,
+    "roa": 0.008380418478244915,
+    "bv": 215.41563674532756
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1606122627524.0,
+      "2025-Q2": 1850990225275.0,
+      "2025-Q3": 2995559502631.0,
+      "2026-Q1": 2031914016727.0,
+      "2026-Q2": 2652233558994.0
+    },
+    "eps": {
+      "2025-Q1": 18.66,
+      "2025-Q2": 28.81,
+      "2025-Q3": 23.98,
+      "2026-Q1": 16.11,
+      "2026-Q2": 6.33
+    },
+    "net_income": {
+      "2025-Q1": 43206601066.0,
+      "2025-Q2": 66712962444.0,
+      "2025-Q3": 55514047183.0,
+      "2026-Q1": 37302321109.0,
+      "2026-Q2": 14661754534.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1203987808256,
+    "enterprise_value": 2594746400768,
+    "shares_outstanding": 2894201693
+  },
+  "akumulasi": {
+    "score": 4.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0271,
+    "vol_trend": 1.011,
+    "price_chg_20d": -5.45
+  },
+  "neraca": {
+    "aset": 6200654033912.0,
+    "aset_lancar": 5313826364754.0,
+    "kas": 678897754394.0,
+    "piutang_usaha": 1970377315952.0,
+    "persediaan": 1793964267243.0,
+    "aset_tetap": 425667725558.0,
+    "liabilitas": 5436338088253.0,
+    "liabilitas_jangka_pendek": 5303590224888.0,
+    "liabilitas_jangka_panjang": 132747863365.0,
+    "utang_usaha": 1970377315952.0,
+    "utang_bank": 1501238239871.0,
+    "ekuitas": 623456300567.0,
+    "ekuitas_induk": 623456300567.0,
+    "modal_saham": null,
+    "saldo_laba": 35806031813.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4684147575721.0,
+    "beban_pokok": 4113671820985.0,
+    "laba_kotor": 570475754736.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 137192347842.0,
+    "beban_pajak": 1321470686.0,
+    "laba_bersih": 51964075643.0,
+    "laba_induk": 51964075643.0,
+    "eps_basic": 22.44,
+    "eps_diluted": 22.44
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -363358420992,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13065830721.0,
+    "dividen_dibayar": 128501500000.0
+  }
+}

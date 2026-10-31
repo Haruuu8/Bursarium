@@ -1,0 +1,95 @@
+{
+  "kode": "PANI",
+  "nama": "PT Pantai Indah Kapuk Dua Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 3950.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.11740636932327542,
+    "roe": 0.05728570457968791,
+    "eps": null,
+    "de": 0.5843723111439524,
+    "margin_net": 0.5710020350102402,
+    "current_ratio": 2.3363741074143642,
+    "roa": 0.03286988150530817,
+    "bv": 1.6015518036663534
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 611970552000000.0,
+      "2025-Q2": -611968906558953.0,
+      "2025-Q3": 1453439499.0,
+      "2026-Q1": 1110916848.0,
+      "2026-Q2": 1811690067.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 16.93,
+      "2025-Q3": 35.63,
+      "2026-Q1": 31.92,
+      "2026-Q2": -31.83
+    },
+    "net_income": {
+      "2025-Q1": 49578865000000.0,
+      "2025-Q2": 236283104000000.0,
+      "2025-Q3": 505439056000000.0,
+      "2026-Q1": 578339351000000.0,
+      "2026-Q2": -578337682185504.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 71848536571904,
+    "enterprise_value": 72626034704384,
+    "shares_outstanding": 18189502198
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1776,
+    "vol_trend": 0.839,
+    "price_chg_20d": -8.14
+  },
+  "neraca": {
+    "aset": 50770322848.0,
+    "aset_lancar": 33597351674.0,
+    "kas": 4367851960.0,
+    "piutang_usaha": 6726644.0,
+    "persediaan": 22981505413.0,
+    "aset_tetap": 597567639.0,
+    "liabilitas": 17023601107.0,
+    "liabilitas_jangka_pendek": 14380124984.0,
+    "liabilitas_jangka_panjang": 2643476123.0,
+    "utang_usaha": 6726644.0,
+    "utang_bank": 128078301.0,
+    "ekuitas": 29131430053.0,
+    "ekuitas_induk": 29131430053.0,
+    "modal_saham": null,
+    "saldo_laba": 7624913.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2922606915.0,
+    "beban_pokok": 710144127.0,
+    "laba_kotor": 2212462788.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1924858164.0,
+    "beban_pajak": -11819708.0,
+    "laba_bersih": 1668814496.0,
+    "laba_induk": 1668814496.0,
+    "eps_basic": 0.0920988016213499,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -309513060352,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 154706806.0,
+    "dividen_dibayar": 60250000.0
+  }
+}

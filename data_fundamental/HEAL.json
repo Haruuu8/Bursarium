@@ -1,0 +1,98 @@
+{
+  "kode": "HEAL",
+  "nama": "PT Medikaloka Hermina Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 515.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.4039576410433388,
+    "ps": 1.0578163246815484,
+    "roe": 0.05423724570535528,
+    "eps": null,
+    "de": 0.9112367968843598,
+    "margin_net": 0.05491914527487999,
+    "current_ratio": 1.1682146651908962,
+    "roa": 0.02469319729353218,
+    "bv": 366.82018384634614
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1692471000000.0,
+      "2025-Q2": 1696090000000.0,
+      "2025-Q3": 1899407000000.0,
+      "2026-Q1": 1783206000000.0,
+      "2026-Q2": 1826203000000.0,
+      "2026-Q3": 1913583000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 15.11,
+      "2025-Q3": -15.11,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 124729000000000.0,
+      "2025-Q2": 100118000000000.0,
+      "2025-Q3": 131170000000000.0,
+      "2026-Q1": 101262000000000.0,
+      "2026-Q2": 91916000000000.0,
+      "2026-Q3": 110140000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7851535237120,
+    "enterprise_value": 12443404206080,
+    "shares_outstanding": 15245698700
+  },
+  "akumulasi": {
+    "score": 2.6,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1294,
+    "vol_trend": 0.795,
+    "price_chg_20d": -14.17
+  },
+  "neraca": {
+    "aset": 12283464.0,
+    "aset_lancar": 2320961.0,
+    "kas": 628772.0,
+    "piutang_usaha": 1453335.0,
+    "persediaan": 122768.0,
+    "aset_tetap": 842902.0,
+    "liabilitas": 5096028.0,
+    "liabilitas_jangka_pendek": 1986759.0,
+    "liabilitas_jangka_panjang": 3109269.0,
+    "utang_usaha": 1453335.0,
+    "utang_bank": 40496.0,
+    "ekuitas": 5592430.0,
+    "ekuitas_induk": 5592430.0,
+    "modal_saham": null,
+    "saldo_laba": 73760.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5522992.0,
+    "beban_pokok": 3626490.0,
+    "laba_kotor": 1896502.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 522668.0,
+    "beban_pajak": -132336.0,
+    "laba_bersih": 303318.0,
+    "laba_induk": 303318.0,
+    "eps_basic": 1.984e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1427705954304,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 842902.0,
+    "dividen_dibayar": 231605.0
+  }
+}

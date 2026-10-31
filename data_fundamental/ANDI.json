@@ -1,0 +1,95 @@
+{
+  "kode": "ANDI",
+  "nama": "PT Andira Agro, Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 29.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.587118775715813,
+    "ps": 1.6120160684462816,
+    "roe": -0.13187114300632918,
+    "eps": -4.795662773582888,
+    "de": 1.546400368104774,
+    "margin_net": -0.3100984833535883,
+    "current_ratio": 0.4567344863658355,
+    "roa": -0.051787277703104394,
+    "bv": 11.209380980962568
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 71995714625.0,
+      "2025-Q2": 62697241360.0,
+      "2025-Q3": 60938202544.0,
+      "2026-Q1": 24741085461.0,
+      "2026-Q2": 19828989989.0
+    },
+    "eps": {
+      "2025-Q1": 0.29,
+      "2025-Q2": -2.25,
+      "2025-Q3": -1.07,
+      "2026-Q1": 0.77,
+      "2026-Q2": -2.25
+    },
+    "net_income": {
+      "2025-Q1": 2704981230.0,
+      "2025-Q2": -21058391501.0,
+      "2025-Q3": -9959942632.0,
+      "2026-Q1": -7185674949.0,
+      "2026-Q2": -6635437851.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 271149989888,
+    "enterprise_value": 409558024192,
+    "shares_outstanding": 9350000000
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.1453,
+    "vol_trend": 5.775,
+    "price_chg_20d": 31.82
+  },
+  "neraca": {
+    "aset": 266882396855.0,
+    "aset_lancar": 21159465242.0,
+    "kas": 2246647243.0,
+    "piutang_usaha": 3004537240.0,
+    "persediaan": 6471519402.0,
+    "aset_tetap": 172547012623.0,
+    "liabilitas": 162074684683.0,
+    "liabilitas_jangka_pendek": 46327715278.0,
+    "liabilitas_jangka_panjang": 115746969405.0,
+    "utang_usaha": 3004537240.0,
+    "utang_bank": 28380393374.0,
+    "ekuitas": 104807712172.0,
+    "ekuitas_induk": 104807712172.0,
+    "modal_saham": null,
+    "saldo_laba": 17699020715.0
+  },
+  "laba_rugi": {
+    "pendapatan": 44570075450.0,
+    "beban_pokok": 37962615075.0,
+    "laba_kotor": 6607460375.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -13821112800.0,
+    "beban_pajak": null,
+    "laba_bersih": -13821112800.0,
+    "laba_induk": -13821112800.0,
+    "eps_basic": -1.48,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -11369993216,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

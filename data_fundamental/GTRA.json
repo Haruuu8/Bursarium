@@ -1,0 +1,95 @@
+{
+  "kode": "GTRA",
+  "nama": "PT Grahaprima Suksesmandiri Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 270.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.310344827586206,
+    "pb": 1.1603795243706705,
+    "ps": 0.6963137757110203,
+    "roe": 0.1236163952243884,
+    "eps": 29.0,
+    "de": 2.946599884364818,
+    "margin_net": 0.13088619558749395,
+    "current_ratio": 1.383262232062915,
+    "roa": 0.031313871796664706,
+    "bv": 232.68249252022434
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 136421123584.0,
+      "2025-Q2": 139610748593.0,
+      "2025-Q3": 178639693511.0,
+      "2026-Q1": 198217525096.0,
+      "2026-Q2": 218087728582.0
+    },
+    "eps": {
+      "2025-Q1": 9.0,
+      "2025-Q2": 6.0,
+      "2025-Q3": 9.0,
+      "2026-Q1": 11.0,
+      "2026-Q2": 18.0
+    },
+    "net_income": {
+      "2025-Q1": 17899314088.0,
+      "2025-Q2": 11380194413.0,
+      "2025-Q3": 15510289936.0,
+      "2026-Q1": 20081053204.0,
+      "2026-Q2": 34407557653.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 511481249792,
+    "enterprise_value": 1627953168384,
+    "shares_outstanding": 1894375000
+  },
+  "akumulasi": {
+    "score": 7.6,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.104,
+    "vol_trend": 1.572,
+    "price_chg_20d": 3.05
+  },
+  "neraca": {
+    "aset": 1740079004309.0,
+    "aset_lancar": 357569040589.0,
+    "kas": 29716666451.0,
+    "piutang_usaha": 198928601649.0,
+    "persediaan": 29729498368.0,
+    "aset_tetap": 1381723521203.0,
+    "liabilitas": 1298825565646.0,
+    "liabilitas_jangka_pendek": 258496930156.0,
+    "liabilitas_jangka_panjang": 1040328635490.0,
+    "utang_usaha": 198928601649.0,
+    "utang_bank": 17729771107.0,
+    "ekuitas": 440787896768.0,
+    "ekuitas_induk": 440787896768.0,
+    "modal_saham": null,
+    "saldo_laba": 25000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 416305253678.0,
+    "beban_pokok": 253093993171.0,
+    "laba_kotor": 163211260507.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 70590054708.0,
+    "beban_pajak": -15890375460.0,
+    "laba_bersih": 54488610857.0,
+    "laba_induk": 54488610857.0,
+    "eps_basic": 29.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 110034657280,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9699708013.0,
+    "dividen_dibayar": null
+  }
+}

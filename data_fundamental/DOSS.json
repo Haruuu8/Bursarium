@@ -1,0 +1,95 @@
+{
+  "kode": "DOSS",
+  "nama": "PT Global Sukses Digital Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 140.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 9.234828496042216,
+    "pb": 1.110965838171709,
+    "ps": 0.23894181689744484,
+    "roe": 0.120316005594092,
+    "eps": 15.16,
+    "de": 0.5368198743453786,
+    "margin_net": 0.045119645619898945,
+    "current_ratio": 2.644882940895021,
+    "roa": 0.07812736802807,
+    "bv": 126.01647610550725
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 192864004130.0,
+      "2025-Q2": 191269215879.0,
+      "2025-Q3": 239775986839.0,
+      "2026-Q1": 285577084060.0,
+      "2026-Q2": 294084014596.0
+    },
+    "eps": {
+      "2025-Q1": 3.23,
+      "2025-Q2": 3.93,
+      "2025-Q3": 6.94,
+      "2026-Q1": 6.14,
+      "2026-Q2": 9.02
+    },
+    "net_income": {
+      "2025-Q1": 5568595141.0,
+      "2025-Q2": 6787506637.0,
+      "2025-Q3": 11966554816.0,
+      "2026-Q1": 10598167565.0,
+      "2026-Q2": 15555935786.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 241499996160,
+    "enterprise_value": 179169443840,
+    "shares_outstanding": 1725000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1491,
+    "vol_trend": 0.454,
+    "price_chg_20d": -11.39
+  },
+  "neraca": {
+    "aset": 334762375991.0,
+    "aset_lancar": 299901321605.0,
+    "kas": 87023566182.0,
+    "piutang_usaha": 56844229138.0,
+    "persediaan": 97838883556.0,
+    "aset_tetap": 3211912223.0,
+    "liabilitas": 116693056798.0,
+    "liabilitas_jangka_pendek": 113389260813.0,
+    "liabilitas_jangka_panjang": 3303795985.0,
+    "utang_usaha": 56844229138.0,
+    "utang_bank": null,
+    "ekuitas": 217378421282.0,
+    "ekuitas_induk": 217378421282.0,
+    "modal_saham": null,
+    "saldo_laba": 860000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 579661098656.0,
+    "beban_pokok": 551712041967.0,
+    "laba_kotor": 27949056689.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 33041175010.0,
+    "beban_pajak": -7719106527.0,
+    "laba_bersih": 26154103351.0,
+    "laba_induk": 26154103351.0,
+    "eps_basic": 15.16,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3605071104,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3211912223.0,
+    "dividen_dibayar": null
+  }
+}

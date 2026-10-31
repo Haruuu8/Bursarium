@@ -1,0 +1,95 @@
+{
+  "kode": "KAQI",
+  "nama": "PT Jantra Grupo Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 64.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 16.0,
+    "pb": 1.0371388128245407,
+    "ps": 1.8751036704632698,
+    "roe": 0.06478253937671084,
+    "eps": 4.0,
+    "de": 0.17296293425445544,
+    "margin_net": 0.24695509160994572,
+    "current_ratio": 5.955802161454283,
+    "roa": 0.0552202346208049,
+    "bv": 61.70822961075248
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 15983909873.0,
+      "2025-Q2": 17193428146.0,
+      "2025-Q3": 20054360893.0,
+      "2026-Q1": 18526653607.0,
+      "2026-Q2": 15075613323.0
+    },
+    "eps": {
+      "2025-Q1": 1.05,
+      "2025-Q2": 1.77,
+      "2025-Q3": 0.6,
+      "2026-Q1": 2.03,
+      "2026-Q2": 1.97
+    },
+    "net_income": {
+      "2025-Q1": 1310721746.0,
+      "2025-Q2": 3631241809.0,
+      "2025-Q3": 1438773852.0,
+      "2026-Q1": 4222612607.0,
+      "2026-Q2": 4075638301.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 132851204096,
+    "enterprise_value": 125262651392,
+    "shares_outstanding": 2075800000
+  },
+  "akumulasi": {
+    "score": 5.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0731,
+    "vol_trend": 0.913,
+    "price_chg_20d": -17.95
+  },
+  "neraca": {
+    "aset": 150275546002.0,
+    "aset_lancar": 35356567311.0,
+    "kas": 24021762252.0,
+    "piutang_usaha": 232397945.0,
+    "persediaan": 3880766342.0,
+    "aset_tetap": 114270048018.0,
+    "liabilitas": 22155504246.0,
+    "liabilitas_jangka_pendek": 5936491232.0,
+    "liabilitas_jangka_panjang": 16219013014.0,
+    "utang_usaha": 232397945.0,
+    "utang_bank": 2513553306.0,
+    "ekuitas": 128093943026.0,
+    "ekuitas_induk": 128093943026.0,
+    "modal_saham": null,
+    "saldo_laba": 9846827031.0
+  },
+  "laba_rugi": {
+    "pendapatan": 33602266930.0,
+    "beban_pokok": 14957471847.0,
+    "laba_kotor": 18644795083.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 9224918309.0,
+    "beban_pajak": -921847987.0,
+    "laba_bersih": 8298250908.0,
+    "laba_induk": 8298250908.0,
+    "eps_basic": 4.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 13505162240,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 106600000.0,
+    "dividen_dibayar": null
+  }
+}

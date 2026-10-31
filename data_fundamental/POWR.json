@@ -1,0 +1,95 @@
+{
+  "kode": "POWR",
+  "nama": "PT Cikarang Listrindo Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Independent Power Producers",
+  "harga": 960.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.027579902070630123,
+    "roe": 0.05264123062645079,
+    "eps": 4889.8920228939105,
+    "de": 0.689200729590729,
+    "margin_net": 0.1351614393842279,
+    "current_ratio": 7.114134311639215,
+    "roa": 0.031163395625104343,
+    "bv": 44508.91890723446
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 135502454000000.0,
+      "2025-Q2": 135836301000000.0,
+      "2025-Q3": 141138497000000.0,
+      "2026-Q1": 128187874000000.0,
+      "2026-Q2": 146595601000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 16934380000000.0,
+      "2025-Q2": 22712038000000.0,
+      "2025-Q3": 17659951000000.0,
+      "2026-Q1": 17539679000000.0,
+      "2026-Q2": 19600451000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 15217439277056,
+    "enterprise_value": 15217485414400,
+    "shares_outstanding": 15851499100
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1821,
+    "vol_trend": 0.669,
+    "price_chg_20d": 1.05
+  },
+  "neraca": {
+    "aset": 1191787007.0,
+    "aset_lancar": 430732561.0,
+    "kas": 123951821.0,
+    "piutang_usaha": 57870260.0,
+    "persediaan": 66349478.0,
+    "aset_tetap": 718923128.0,
+    "liabilitas": 486253919.0,
+    "liabilitas_jangka_pendek": 60546026.0,
+    "liabilitas_jangka_panjang": 425707893.0,
+    "utang_usaha": 57870260.0,
+    "utang_bank": null,
+    "ekuitas": 705533088.0,
+    "ekuitas_induk": 705533088.0,
+    "modal_saham": null,
+    "saldo_laba": 1800349.0
+  },
+  "laba_rugi": {
+    "pendapatan": 274783475.0,
+    "beban_pokok": 214289641.0,
+    "laba_kotor": 60493834.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 55582220.0,
+    "beban_pajak": -18442090.0,
+    "laba_bersih": 37140130.0,
+    "laba_induk": 37140130.0,
+    "eps_basic": 0.0023,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 140587616,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4320049.0,
+    "dividen_dibayar": 45218312.0
+  }
+}

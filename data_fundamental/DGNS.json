@@ -1,0 +1,88 @@
+{
+  "kode": "DGNS",
+  "nama": "PT Diagnos Laboratorium Utama Tbk",
+  "sektor": "Healthcare",
+  "industri": "Diagnostics & Research",
+  "harga": 278.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.6603771215058205,
+    "ps": 2.2032843412548138,
+    "roe": -0.013128134318436853,
+    "eps": -4.396135424,
+    "de": 0.4741204046667686,
+    "margin_net": -0.034841497632139534,
+    "current_ratio": 4.71542794166072,
+    "roa": -0.008905740858667868,
+    "bv": 167.43184207927274
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 41390935174.0,
+      "2026-Q1": 41632490801.0,
+      "2026-Q2": 45113008371.0
+    },
+    "eps": {
+      "2025-Q3": -0.42,
+      "2026-Q1": -1.7
+    },
+    "net_income": {
+      "2025-Q3": -521624734.0,
+      "2026-Q1": -1316146979.0,
+      "2026-Q2": -1706196125.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 382250024960,
+    "enterprise_value": 437108637696,
+    "shares_outstanding": 1375000000
+  },
+  "akumulasi": {
+    "score": 4.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.023,
+    "vol_trend": 1.502,
+    "price_chg_20d": -2.11
+  },
+  "neraca": {
+    "aset": 339370205350.0,
+    "aset_lancar": 114577557443.0,
+    "kas": 16742627956.0,
+    "piutang_usaha": 16701254532.0,
+    "persediaan": 5484116966.0,
+    "aset_tetap": 183313506177.0,
+    "liabilitas": 109151422491.0,
+    "liabilitas_jangka_pendek": 24298443081.0,
+    "liabilitas_jangka_panjang": 84852979410.0,
+    "utang_usaha": 16701254532.0,
+    "utang_bank": 1952615985.0,
+    "ekuitas": 230218782859.0,
+    "ekuitas_induk": 230218782859.0,
+    "modal_saham": null,
+    "saldo_laba": 132179838506.0
+  },
+  "laba_rugi": {
+    "pendapatan": 86745499172.0,
+    "beban_pokok": 47629937565.0,
+    "laba_kotor": 39115561607.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3022343104.0,
+    "beban_pajak": null,
+    "laba_bersih": -3022343104.0,
+    "laba_induk": -3022343104.0,
+    "eps_basic": -1.7030142248,
+    "eps_diluted": -1.7030142248
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 8670715904,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 999820661.0,
+    "dividen_dibayar": null
+  }
+}

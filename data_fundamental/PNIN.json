@@ -1,0 +1,95 @@
+{
+  "kode": "PNIN",
+  "nama": "PT Paninvest Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Life",
+  "harga": 550.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 4.853512177903283,
+    "pb": null,
+    "ps": 0.021363167424097766,
+    "roe": 0.020789593298846346,
+    "eps": 113.32,
+    "de": 7.238415835155084,
+    "margin_net": 4.346850456803975,
+    "current_ratio": null,
+    "roa": 0.001884541194908011,
+    "bv": 5451.011383577343
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": -3009000000000.0,
+      "2025-Q2": 255000000000.0,
+      "2025-Q3": -1578000000000.0,
+      "2026-Q1": 117453000000000.0,
+      "2026-Q2": -11390000000000.0
+    },
+    "eps": {
+      "2025-Q1": 53.0,
+      "2025-Q2": -53.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 113.32
+    },
+    "net_income": {
+      "2025-Q1": 216314000000000.0,
+      "2025-Q2": 104268000000000.0,
+      "2025-Q3": 310271000000000.0,
+      "2026-Q1": 481504000000000.0,
+      "2026-Q2": -20464000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2237578084352,
+    "enterprise_value": 44837915066368,
+    "shares_outstanding": 4068323920
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1891,
+    "vol_trend": 1.286,
+    "price_chg_20d": -16.67
+  },
+  "neraca": {
+    "aset": 244643100.0,
+    "aset_lancar": null,
+    "kas": 15786415.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 10277506.0,
+    "liabilitas": 160522584.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 22176480.0,
+    "ekuitas_induk": 22176480.0,
+    "modal_saham": null,
+    "saldo_laba": 61000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 106063.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2022867.0,
+    "beban_pajak": -396707.0,
+    "laba_bersih": 461040.0,
+    "laba_induk": 461040.0,
+    "eps_basic": 113.32,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 17600268468224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 226367.0,
+    "dividen_dibayar": null
+  }
+}

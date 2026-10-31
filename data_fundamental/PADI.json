@@ -1,0 +1,96 @@
+{
+  "kode": "PADI",
+  "nama": "PT Minna Padi Investama Sekuritas Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 28.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.4195885491646065,
+    "ps": 165.1841231356522,
+    "roe": -0.004129114550888795,
+    "eps": -0.8298671287135683,
+    "de": 0.11657727488684805,
+    "margin_net": -0.9609321895652174,
+    "current_ratio": null,
+    "roa": -0.003698010557582978,
+    "bv": 19.724024976446394
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 150000000000000.0,
+      "2025-Q2": -149998850000000.0,
+      "2026-Q1": 150000000000000.0,
+      "2026-Q2": -149998850000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.03,
+      "2025-Q2": 0.3,
+      "2025-Q3": 1.92,
+      "2026-Q1": 0.64,
+      "2026-Q2": -1.9,
+      "2026-Q3": 1.16
+    },
+    "net_income": {
+      "2025-Q1": -392469702000000.0,
+      "2025-Q2": 392472698498297.0,
+      "2025-Q3": 21744234992.0,
+      "2026-Q1": 7235916208.0,
+      "2026-Q2": -21492629153.0,
+      "2026-Q3": 13151640927.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 379923496960,
+    "enterprise_value": 343440752640,
+    "shares_outstanding": 13568695829
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2231,
+    "vol_trend": 0.497,
+    "price_chg_20d": -30.0
+  },
+  "neraca": {
+    "aset": 298828789370.0,
+    "aset_lancar": null,
+    "kas": 36482731824.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 5952235707.0,
+    "liabilitas": 31199493941.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 6765756302.0,
+    "ekuitas": 267629295429.0,
+    "ekuitas_induk": 267629295429.0,
+    "modal_saham": null,
+    "saldo_laba": 1100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1150000000.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1105072018.0,
+    "beban_pajak": 116209002.0,
+    "laba_bersih": -1105072018.0,
+    "laba_induk": -1105072018.0,
+    "eps_basic": -0.1,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -79428534272,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 275007539.0,
+    "dividen_dibayar": null
+  }
+}

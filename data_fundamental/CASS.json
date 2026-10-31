@@ -1,0 +1,95 @@
+{
+  "kode": "CASS",
+  "nama": "PT Cahaya Aero Services Tbk",
+  "sektor": "Industrials",
+  "industri": "Airports & Air Services",
+  "harga": 1830.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.1668880390810727,
+    "ps": -0.0052818849774662405,
+    "roe": 0.1250151773910774,
+    "eps": null,
+    "de": 0.48036868294288193,
+    "margin_net": 0.13651994284871638,
+    "current_ratio": 3.6052359919716706,
+    "roa": 0.06916959009252938,
+    "bv": 844.529097486763
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 727047000000000.0,
+      "2025-Q2": -725506562000000.0,
+      "2025-Q3": 832837000000.0,
+      "2026-Q1": 779710000000000.0,
+      "2026-Q2": -778096038000000.0
+    },
+    "eps": {
+      "2025-Q1": 45.0,
+      "2025-Q2": 49.0,
+      "2025-Q3": 77.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 93957000000000.0,
+      "2025-Q2": 101940000000000.0,
+      "2025-Q3": 161901000000000.0,
+      "2026-Q1": 89956000000000.0,
+      "2026-Q2": 130382000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3819118526464,
+    "enterprise_value": 2958586544128,
+    "shares_outstanding": 2086950000
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4985,
+    "vol_trend": 0.691,
+    "price_chg_20d": 0.55
+  },
+  "neraca": {
+    "aset": 3185475.0,
+    "aset_lancar": 2256099.0,
+    "kas": 1584592.0,
+    "piutang_usaha": 426134.0,
+    "persediaan": 38562.0,
+    "aset_tetap": 488763.0,
+    "liabilitas": 846645.0,
+    "liabilitas_jangka_pendek": 625784.0,
+    "liabilitas_jangka_panjang": 220861.0,
+    "utang_usaha": 426134.0,
+    "utang_bank": null,
+    "ekuitas": 1762490.0,
+    "ekuitas_induk": 1762490.0,
+    "modal_saham": null,
+    "saldo_laba": 41739.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1613962.0,
+    "beban_pokok": 1145470.0,
+    "laba_kotor": 468492.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 540084.0,
+    "beban_pajak": -117801.0,
+    "laba_bersih": 220338.0,
+    "laba_induk": 220338.0,
+    "eps_basic": 0.000106,
+    "eps_diluted": 0.000106
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 957319020544,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 52298.0,
+    "dividen_dibayar": 340541.0
+  }
+}

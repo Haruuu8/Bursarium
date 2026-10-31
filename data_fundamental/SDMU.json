@@ -1,0 +1,95 @@
+{
+  "kode": "SDMU",
+  "nama": "PT Sidomulyo Selaras Tbk",
+  "sektor": "Industrials",
+  "industri": "Trucking",
+  "harga": 53.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.552735337777588,
+    "ps": 1.5154562280093413,
+    "roe": -0.014652284247573498,
+    "eps": -4.521744208701052,
+    "de": 0.6937520785757337,
+    "margin_net": -0.028548431050978915,
+    "current_ratio": 0.868739016160439,
+    "roa": -0.008646126645222917,
+    "bv": 34.13331216887115
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 19275027798.0,
+      "2025-Q2": 19450868561.0,
+      "2025-Q3": 19833325939.0,
+      "2026-Q1": 18240726283.0,
+      "2026-Q2": 21188423816.0
+    },
+    "eps": {
+      "2025-Q1": -3.64,
+      "2025-Q2": -5.86,
+      "2025-Q3": -2.11,
+      "2026-Q1": -0.41,
+      "2026-Q2": -0.25
+    },
+    "net_income": {
+      "2025-Q1": -4126714746.0,
+      "2025-Q2": -6654161885.0,
+      "2025-Q3": -2397247189.0,
+      "2026-Q1": -690667770000000.0,
+      "2026-Q2": 690666644359627.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 119286628352,
+    "enterprise_value": 149005467648,
+    "shares_outstanding": 2250691100
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2299,
+    "vol_trend": 0.165,
+    "price_chg_20d": -17.19
+  },
+  "neraca": {
+    "aset": 130190132436.0,
+    "aset_lancar": 26725241283.0,
+    "kas": 710111883.0,
+    "piutang_usaha": 14218653297.0,
+    "persediaan": 3441880908.0,
+    "aset_tetap": 98061924141.0,
+    "liabilitas": 53296491885.0,
+    "liabilitas_jangka_pendek": 30763256612.0,
+    "liabilitas_jangka_panjang": 22533235273.0,
+    "utang_usaha": 14218653297.0,
+    "utang_bank": 20324899648.0,
+    "ekuitas": 76823541912.0,
+    "ekuitas_induk": 76823541912.0,
+    "modal_saham": null,
+    "saldo_laba": 2298427877.0
+  },
+  "laba_rugi": {
+    "pendapatan": 39429150099.0,
+    "beban_pokok": 25214289867.0,
+    "laba_kotor": 14214860232.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1177873916.0,
+    "beban_pajak": -62793188.0,
+    "laba_bersih": -1125640373.0,
+    "laba_induk": -1125640373.0,
+    "eps_basic": -0.66,
+    "eps_diluted": -0.66
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 6797828096,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 294889877.0,
+    "dividen_dibayar": null
+  }
+}

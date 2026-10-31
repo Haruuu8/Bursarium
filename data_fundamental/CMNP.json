@@ -1,0 +1,95 @@
+{
+  "kode": "CMNP",
+  "nama": "PT Citra Marga Nusaphala Persada Tbk",
+  "sektor": "Industrials",
+  "industri": "Infrastructure Operations",
+  "harga": 1300.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1656.1978252285685,
+    "roe": 0.029854318626122364,
+    "eps": null,
+    "de": 0.7133180936150335,
+    "margin_net": 0.1552015216763425,
+    "current_ratio": 1.0081411240456897,
+    "roa": 0.016384965090189114,
+    "bv": 2.276094964371189
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1080196238.0,
+      "2025-Q2": 1111894528.0,
+      "2025-Q3": 1212439335.0,
+      "2026-Q1": 1017562580.0,
+      "2026-Q2": 1914275601.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.01,
+      "2025-Q3": -0.01,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 303147906000000.0,
+      "2025-Q2": 225435344000000.0,
+      "2025-Q3": 194344725000000.0,
+      "2026-Q1": 348958064000000.0,
+      "2026-Q2": 106067683000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 8705260650496,
+    "enterprise_value": 18005580840960,
+    "shares_outstanding": 6696354391
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4363,
+    "vol_trend": 2.169,
+    "price_chg_20d": -10.96
+  },
+  "neraca": {
+    "aset": 27770931735.0,
+    "aset_lancar": 3057340686.0,
+    "kas": 75558607.0,
+    "piutang_usaha": 68822769.0,
+    "persediaan": null,
+    "aset_tetap": 228996038.0,
+    "liabilitas": 10872065193.0,
+    "liabilitas_jangka_pendek": 3032651494.0,
+    "liabilitas_jangka_panjang": 7839413699.0,
+    "utang_usaha": 68822769.0,
+    "utang_bank": 375000000.0,
+    "ekuitas": 15241538509.0,
+    "ekuitas_induk": 15241538509.0,
+    "modal_saham": null,
+    "saldo_laba": 463237192.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2931838181.0,
+    "beban_pokok": 1915896900.0,
+    "laba_kotor": 1015941281.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 580290205.0,
+    "beban_pajak": -215619221.0,
+    "laba_bersih": 455025747.0,
+    "laba_induk": 455025747.0,
+    "eps_basic": 7.2e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1434306478080,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6282698.0,
+    "dividen_dibayar": null
+  }
+}

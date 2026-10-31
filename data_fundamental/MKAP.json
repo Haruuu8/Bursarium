@@ -1,0 +1,98 @@
+{
+  "kode": "MKAP",
+  "nama": "PT Multikarya Asia Pasifik Raya Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 1045.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 200.57581573896354,
+    "pb": 10.480136747562494,
+    "ps": 11.420087562996645,
+    "roe": 0.05223474303151331,
+    "eps": 5.21,
+    "de": 0.6990370778608482,
+    "margin_net": 0.07355879422512794,
+    "current_ratio": 1.832452986532749,
+    "roa": 0.030743733442991618,
+    "bv": 99.71243936707693
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 127975736867.0,
+      "2025-Q2": 72073746622.0,
+      "2025-Q3": 67270946680.0,
+      "2026-Q1": 89890868421.0,
+      "2026-Q2": 90360100487.0,
+      "2026-Q3": 49870725341.0
+    },
+    "eps": {
+      "2025-Q1": 23.31,
+      "2025-Q2": -4.98,
+      "2025-Q3": 0.77,
+      "2026-Q1": 7.78,
+      "2026-Q2": 2.47,
+      "2026-Q3": -5.04
+    },
+    "net_income": {
+      "2025-Q1": 18683063853.0,
+      "2025-Q2": 10852141258.0,
+      "2025-Q3": 16674138205.0,
+      "2026-Q1": 6238009248.0,
+      "2026-Q2": 10281293535.0,
+      "2026-Q3": 408171571.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3396249845760,
+    "enterprise_value": 3513664667648,
+    "shares_outstanding": 3250000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.066,
+    "vol_trend": 1.284,
+    "price_chg_20d": -7.93
+  },
+  "neraca": {
+    "aset": 550599177728.0,
+    "aset_lancar": 357100058197.0,
+    "kas": 34614608427.0,
+    "piutang_usaha": 69521720932.0,
+    "persediaan": 150862836847.0,
+    "aset_tetap": 189265498447.0,
+    "liabilitas": 226533749785.0,
+    "liabilitas_jangka_pendek": 194875426994.0,
+    "liabilitas_jangka_panjang": 31658322791.0,
+    "utang_usaha": 69521720932.0,
+    "utang_bank": 105677848787.0,
+    "ekuitas": 324065427943.0,
+    "ekuitas_induk": 324065427943.0,
+    "modal_saham": null,
+    "saldo_laba": 3000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 230121694249.0,
+    "beban_pokok": 154232090231.0,
+    "laba_kotor": 75889604018.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 19944232853.0,
+    "beban_pajak": -3016758499.0,
+    "laba_bersih": 16927474354.0,
+    "laba_induk": 16927474354.0,
+    "eps_basic": 5.21,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 25532585984,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 22897046465.0,
+    "dividen_dibayar": 16250000000.0
+  }
+}

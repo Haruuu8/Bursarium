@@ -1,0 +1,95 @@
+{
+  "kode": "INPP",
+  "nama": "PT Indonesian Paradise Property Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 690.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 136.9047619047619,
+    "pb": 1.34527090900056,
+    "ps": 0.008980231527727282,
+    "roe": 0.00983275391211756,
+    "eps": 5.04,
+    "de": 0.5994135289027415,
+    "margin_net": 0.06571632000727151,
+    "current_ratio": 2.8356478490023016,
+    "roa": 0.005528983436285657,
+    "bv": 512.9078428616439
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 286402626224.0,
+      "2025-Q2": 871823597373776.0,
+      "2025-Q3": -870794930000000.0,
+      "2026-Q1": 326906000000000.0,
+      "2026-Q2": 531237000000000.0
+    },
+    "eps": {
+      "2025-Q1": 31.85,
+      "2025-Q2": -31.45,
+      "2025-Q3": 34.82,
+      "2026-Q1": 0.55,
+      "2026-Q2": 4.49
+    },
+    "net_income": {
+      "2025-Q1": 356167979520.0,
+      "2025-Q2": 442834832020480.0,
+      "2025-Q3": -49355000000000.0,
+      "2026-Q1": 6113000000000.0,
+      "2026-Q2": 50281000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7715560095744,
+    "enterprise_value": 10289035608064,
+    "shares_outstanding": 11181971732
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.7505,
+    "vol_trend": 1.758,
+    "price_chg_20d": 1.47
+  },
+  "neraca": {
+    "aset": 10199705.0,
+    "aset_lancar": 1623743.0,
+    "kas": 742644.0,
+    "piutang_usaha": 67682.0,
+    "persediaan": 4424.0,
+    "aset_tetap": 1746721.0,
+    "liabilitas": 3437829.0,
+    "liabilitas_jangka_pendek": 572618.0,
+    "liabilitas_jangka_panjang": 2865211.0,
+    "utang_usaha": 67682.0,
+    "utang_bank": 86071.0,
+    "ekuitas": 5735321.0,
+    "ekuitas_induk": 5735321.0,
+    "modal_saham": null,
+    "saldo_laba": 2444869.0
+  },
+  "laba_rugi": {
+    "pendapatan": 858143.0,
+    "beban_pokok": 379109.0,
+    "laba_kotor": 479034.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 132812.0,
+    "beban_pajak": 9171.0,
+    "laba_bersih": 56394.0,
+    "laba_induk": 56394.0,
+    "eps_basic": 5.04,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 517351014400,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 17075.0,
+    "dividen_dibayar": 115072.0
+  }
+}

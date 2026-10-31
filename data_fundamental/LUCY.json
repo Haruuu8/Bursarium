@@ -1,0 +1,77 @@
+{
+  "kode": "LUCY",
+  "nama": "PT Lima Dua Lima Tiga Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 108.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 9.288288078497207,
+    "ps": 2.9054183055303824,
+    "roe": -0.25783247610253784,
+    "eps": -5.995918124791711,
+    "de": 2.7201189189937423,
+    "margin_net": -0.16130231739103001,
+    "current_ratio": 2.2278219377274096,
+    "roa": -0.06583241935775849,
+    "bv": 11.627546334402002
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {},
+    "net_income": {},
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 163595583488,
+    "enterprise_value": 153514311680,
+    "shares_outstanding": 1514773893
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5466,
+    "vol_trend": 0.76,
+    "price_chg_20d": -57.81
+  },
+  "neraca": {
+    "aset": 68981668368.0,
+    "aset_lancar": 21631482016.0,
+    "kas": 14641818623.0,
+    "piutang_usaha": 1527031527.0,
+    "persediaan": 3800633786.0,
+    "aset_tetap": 25296941345.0,
+    "liabilitas": 47909736398.0,
+    "liabilitas_jangka_pendek": 9709699707.0,
+    "liabilitas_jangka_panjang": 38200036691.0,
+    "utang_usaha": 1527031527.0,
+    "utang_bank": 8400445403.0,
+    "ekuitas": 17613103627.0,
+    "ekuitas_induk": 17613103627.0,
+    "modal_saham": null,
+    "saldo_laba": 388000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 28153533027.0,
+    "beban_pokok": 8301211510.0,
+    "laba_kotor": 19852321517.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -5878553588.0,
+    "beban_pajak": 1253395724.0,
+    "laba_bersih": -4541230120.0,
+    "laba_induk": -4541230120.0,
+    "eps_basic": -3.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1081442560,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4759300.0,
+    "dividen_dibayar": null
+  }
+}

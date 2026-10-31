@@ -1,0 +1,95 @@
+{
+  "kode": "KDSI",
+  "nama": "PT Kedawung Setia Industrial Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 442.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 18.493723849372387,
+    "pb": 0.897602613570653,
+    "ps": 0.3355045713948175,
+    "roe": 0.04854355343987985,
+    "eps": 23.9,
+    "de": 0.7876819222901091,
+    "margin_net": 0.03512948097100406,
+    "current_ratio": 1.7416607949479452,
+    "roa": 0.027154468993868926,
+    "bv": 492.42280862098767
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 542737323875.0,
+      "2025-Q2": 502835182233.0,
+      "2025-Q3": 529049628906.0,
+      "2026-Q1": 480252755855.0,
+      "2026-Q2": 622080744915.0
+    },
+    "eps": {
+      "2025-Q1": 7.25,
+      "2025-Q2": -2.67,
+      "2025-Q3": 4.01,
+      "2026-Q1": 5.5,
+      "2026-Q2": 18.4
+    },
+    "net_income": {
+      "2025-Q1": 11745519585.0,
+      "2025-Q2": -4320941937.0,
+      "2025-Q3": 6485086135.0,
+      "2026-Q1": 8924235504.0,
+      "2026-Q2": 29800168235.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 716039979008,
+    "enterprise_value": 822683631616,
+    "shares_outstanding": 1620000000
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.6713,
+    "vol_trend": 1.25,
+    "price_chg_20d": -5.56
+  },
+  "neraca": {
+    "aset": 1426078475250.0,
+    "aset_lancar": 892967188757.0,
+    "kas": 80913794186.0,
+    "piutang_usaha": 343573353706.0,
+    "persediaan": 402551853456.0,
+    "aset_tetap": 3267609000.0,
+    "liabilitas": 628353522048.0,
+    "liabilitas_jangka_pendek": 512710162247.0,
+    "liabilitas_jangka_panjang": 115643359801.0,
+    "utang_usaha": 343573353706.0,
+    "utang_bank": 120474084348.0,
+    "ekuitas": 797724949966.0,
+    "ekuitas_induk": 797724949966.0,
+    "modal_saham": null,
+    "saldo_laba": 39120000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1102333500770.0,
+    "beban_pokok": 943824934762.0,
+    "laba_kotor": 158508566008.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 51448525379.0,
+    "beban_pajak": -12724121457.0,
+    "laba_bersih": 38724403739.0,
+    "laba_induk": 38724403739.0,
+    "eps_basic": 23.9,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 39699701760,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3267609000.0,
+    "dividen_dibayar": 32225680000.0
+  }
+}

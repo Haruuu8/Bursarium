@@ -1,0 +1,95 @@
+{
+  "kode": "ZONE",
+  "nama": "PT Mega Perintis Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Retail",
+  "harga": 660.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 20.625,
+    "pb": 1.432042796983281,
+    "ps": 0.7072510788986607,
+    "roe": 0.06927923346879677,
+    "eps": 32.0,
+    "de": 0.6689447681953952,
+    "margin_net": 0.05092985299311876,
+    "current_ratio": 2.1439676237827787,
+    "roa": 0.04146327107291951,
+    "bv": 460.88008081207187
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 270307674982.0,
+      "2025-Q2": 132829727609.0,
+      "2025-Q3": 133670020372.0,
+      "2026-Q1": 398786059399.0,
+      "2026-Q2": 146749964095.0
+    },
+    "eps": {
+      "2025-Q1": 24.0,
+      "2025-Q2": -10.0,
+      "2025-Q3": -1.0,
+      "2026-Q1": 31.0,
+      "2026-Q2": 1.0
+    },
+    "net_income": {
+      "2025-Q1": 21035657022.0,
+      "2025-Q2": -9377859485.0,
+      "2025-Q3": -225737738.0,
+      "2026-Q1": 27246221228.0,
+      "2026-Q2": 537848251.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 574313136128,
+    "enterprise_value": 728612143104,
+    "shares_outstanding": 870171478
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.1931,
+    "vol_trend": 14.923,
+    "price_chg_20d": 6.45
+  },
+  "neraca": {
+    "aset": 670088701640.0,
+    "aset_lancar": 400417827094.0,
+    "kas": 6701446127.0,
+    "piutang_usaha": 16526680726.0,
+    "persediaan": 354750210474.0,
+    "aset_tetap": 96922146170.0,
+    "liabilitas": 268276754614.0,
+    "liabilitas_jangka_pendek": 186764866527.0,
+    "liabilitas_jangka_panjang": 81511888087.0,
+    "utang_usaha": 16526680726.0,
+    "utang_bank": 81147864682.0,
+    "ekuitas": 401044701101.0,
+    "ekuitas_induk": 401044701101.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 545536023494.0,
+    "beban_pokok": 257524380525.0,
+    "laba_kotor": 288011642969.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 36833692980.0,
+    "beban_pajak": -9050546292.0,
+    "laba_bersih": 27784069479.0,
+    "laba_induk": 27784069479.0,
+    "eps_basic": 32.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 149964718080,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6411836070.0,
+    "dividen_dibayar": 10442057736.0
+  }
+}

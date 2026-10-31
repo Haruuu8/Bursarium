@@ -1,0 +1,95 @@
+{
+  "kode": "BBMD",
+  "nama": "PT Bank Mestika Dharma Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 1980.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 67.07300459457109,
+    "pb": 1.4896833522700044,
+    "ps": 6.44706295468921,
+    "roe": 0.02220987953759537,
+    "eps": 29.52007311985338,
+    "de": 2.027766001402359,
+    "margin_net": 0.19537207156701267,
+    "current_ratio": null,
+    "roa": 0.0073354015889300905,
+    "bv": 1329.1415232524703
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 307047022148.0,
+      "2025-Q2": 312916811676.0,
+      "2025-Q3": 315706816033.0,
+      "2026-Q1": 303656773613.0,
+      "2026-Q2": 305130612665.0
+    },
+    "eps": {
+      "2025-Q1": 15.67,
+      "2025-Q2": 18.57,
+      "2025-Q3": 27.29,
+      "2026-Q1": 14.38,
+      "2026-Q2": 15.14
+    },
+    "net_income": {
+      "2025-Q1": 63127025247.0,
+      "2025-Q2": 74838736059.0,
+      "2025-Q3": 109940021899.0,
+      "2026-Q1": 57929008212.0,
+      "2026-Q2": 61011044589.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7977666871296,
+    "enterprise_value": 7589265408000,
+    "shares_outstanding": 4029124600
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.9465,
+    "vol_trend": 0.387,
+    "price_chg_20d": -3.88
+  },
+  "neraca": {
+    "aset": 16214525048021.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 607929804401.0,
+    "liabilitas": 10859248239803.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 5355276808218.0,
+    "ekuitas_induk": 5355276808218.0,
+    "modal_saham": null,
+    "saldo_laba": 4046842042950.0
+  },
+  "laba_rugi": {
+    "pendapatan": 608787386278.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 151187779114.0,
+    "laba_sebelum_pajak": 152487247179.0,
+    "beban_pajak": -33547194378.0,
+    "laba_bersih": 118940052801.0,
+    "laba_induk": 118940052801.0,
+    "eps_basic": 29.52007311985338,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1620316701333.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

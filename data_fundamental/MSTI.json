@@ -1,0 +1,95 @@
+{
+  "kode": "MSTI",
+  "nama": "PT Mastersystem Infotama Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 1170.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 17.727272727272727,
+    "pb": 1.6931795134134038,
+    "ps": 0.8799658109836805,
+    "roe": 0.09471156770888327,
+    "eps": 66.0,
+    "de": 0.45672505429593757,
+    "margin_net": 0.09774393322629964,
+    "current_ratio": 3.422962346193151,
+    "roa": 0.06501677679640043,
+    "bv": 691.007652012817
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1191670765532.0,
+      "2025-Q2": 879334190290.0,
+      "2025-Q3": 1192765207876.0,
+      "2026-Q1": 1095972132331.0,
+      "2026-Q2": 1006087179026.0
+    },
+    "eps": {
+      "2025-Q1": 37.0,
+      "2025-Q2": 26.0,
+      "2025-Q3": 36.0,
+      "2026-Q1": 34.0,
+      "2026-Q2": 32.0
+    },
+    "net_income": {
+      "2025-Q1": 115304071084.0,
+      "2025-Q2": 81493718531.0,
+      "2025-Q3": 113539407872.0,
+      "2026-Q1": 106613521116.0,
+      "2026-Q2": 98850023851.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3673117163520,
+    "enterprise_value": 2933032747008,
+    "shares_outstanding": 3139416200
+  },
+  "akumulasi": {
+    "score": 3.4,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0738,
+    "vol_trend": 0.828,
+    "price_chg_20d": -11.36
+  },
+  "neraca": {
+    "aset": 3160161962664.0,
+    "aset_lancar": 2897264337129.0,
+    "kas": 932278996083.0,
+    "piutang_usaha": 877255075089.0,
+    "persediaan": 773302514492.0,
+    "aset_tetap": 210965824906.0,
+    "liabilitas": 990801345611.0,
+    "liabilitas_jangka_pendek": 846420160114.0,
+    "liabilitas_jangka_panjang": 144381185497.0,
+    "utang_usaha": 877255075089.0,
+    "utang_bank": 7291266675.0,
+    "ekuitas": 2169360617053.0,
+    "ekuitas_induk": 2169360617053.0,
+    "modal_saham": null,
+    "saldo_laba": 15694118000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2102059311357.0,
+    "beban_pokok": 1716472879395.0,
+    "laba_kotor": 385586431962.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 254981615401.0,
+    "beban_pajak": -49518070434.0,
+    "laba_bersih": 205463544967.0,
+    "laba_induk": 205463544967.0,
+    "eps_basic": 66.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 588793708544,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 17176768393.0,
+    "dividen_dibayar": 332778117200.0
+  }
+}

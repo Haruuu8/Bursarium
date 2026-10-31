@@ -1,0 +1,92 @@
+{
+  "kode": "IBFN",
+  "nama": "PT Intan Baru Prana Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 63.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 3.0612244897959187,
+    "pb": null,
+    "ps": 0.36974256068152617,
+    "roe": -0.009618516094046566,
+    "eps": 20.58,
+    "de": -1.6260647593847428,
+    "margin_net": 0.04708140701043802,
+    "current_ratio": 0.2693386516100209,
+    "roa": 0.015363452342372762,
+    "bv": -579.4672349262544
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 68799120982.0,
+      "2026-Q1": 54023124765.0,
+      "2026-Q2": 56206661629.0,
+      "2026-Q3": 46378345036.0
+    },
+    "eps": {
+      "2025-Q3": -0.42,
+      "2026-Q1": -40.68,
+      "2026-Q2": 65.61,
+      "2026-Q3": -4.35
+    },
+    "net_income": {
+      "2025-Q3": 2844083458.0,
+      "2026-Q1": -3729646285.0,
+      "2026-Q2": 9816333664.0,
+      "2026-Q3": 1286643798.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 95591940096,
+    "enterprise_value": 938918150144,
+    "shares_outstanding": 1322899281
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 479926712609.0,
+    "aset_lancar": 95377841815.0,
+    "kas": 22253627091.0,
+    "piutang_usaha": 38749270409.0,
+    "persediaan": 7723731950.0,
+    "aset_tetap": 93563615299.0,
+    "liabilitas": 1246503501056.0,
+    "liabilitas_jangka_pendek": 354118657849.0,
+    "liabilitas_jangka_panjang": 892384843207.0,
+    "utang_usaha": 38749270409.0,
+    "utang_bank": 79164911790.0,
+    "ekuitas": -766576788447.0,
+    "ekuitas_induk": -766576788447.0,
+    "modal_saham": null,
+    "saldo_laba": 3082727676.0
+  },
+  "laba_rugi": {
+    "pendapatan": 156608131430.0,
+    "beban_pokok": 121695366025.0,
+    "laba_kotor": 34912765405.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3306890413.0,
+    "beban_pajak": 4066440764.0,
+    "laba_bersih": 7373331177.0,
+    "laba_induk": 7373331177.0,
+    "eps_basic": 20.58,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 75345821696,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 37787769994.0,
+    "dividen_dibayar": null
+  }
+}

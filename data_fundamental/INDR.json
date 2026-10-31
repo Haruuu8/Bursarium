@@ -1,0 +1,89 @@
+{
+  "kode": "INDR",
+  "nama": "PT. Indo-Rama Synthetics Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 2710.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0021394760681017044,
+    "roe": 0.009417339558111507,
+    "eps": null,
+    "de": 1.0549904644803594,
+    "margin_net": 0.008599279335088654,
+    "current_ratio": 1.0123456948333267,
+    "roa": 0.004533524298394094,
+    "bv": 578316.640656368
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 190589515000000.0,
+      "2026-Q1": 193181760000000.0,
+      "2026-Q2": 221240526000000.0
+    },
+    "eps": {
+      "2025-Q3": 0.01,
+      "2026-Q1": -0.04,
+      "2026-Q2": 0.05
+    },
+    "net_income": {
+      "2025-Q3": -2299451000000.0,
+      "2026-Q1": -5877032000000.0,
+      "2026-Q2": 9440765000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1773293010944,
+    "enterprise_value": 1773404291072,
+    "shares_outstanding": 654351707
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2238,
+    "vol_trend": 0.63,
+    "price_chg_20d": -6.55
+  },
+  "neraca": {
+    "aset": 786084460.0,
+    "aset_lancar": 302558379.0,
+    "kas": 18030905.0,
+    "piutang_usaha": 72854141.0,
+    "persediaan": 186347595.0,
+    "aset_tetap": 1227086.0,
+    "liabilitas": 399232109.0,
+    "liabilitas_jangka_pendek": 298868638.0,
+    "liabilitas_jangka_panjang": 100363471.0,
+    "utang_usaha": 72854141.0,
+    "utang_bank": 28450000.0,
+    "ekuitas": 378422481.0,
+    "ekuitas_induk": 378422481.0,
+    "modal_saham": null,
+    "saldo_laba": 24475.0
+  },
+  "laba_rugi": {
+    "pendapatan": 414422286.0,
+    "beban_pokok": 392302406.0,
+    "laba_kotor": 22119880.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4731848.0,
+    "beban_pajak": 1809860.0,
+    "laba_bersih": 3563733.0,
+    "laba_induk": 3563733.0,
+    "eps_basic": 0.0109,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 46907784,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1227086.0,
+    "dividen_dibayar": null
+  }
+}

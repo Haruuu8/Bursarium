@@ -1,0 +1,89 @@
+{
+  "kode": "PADA",
+  "nama": "PT Personel Alih Daya Tbk",
+  "sektor": "Industrials",
+  "industri": "Staffing & Employment Services",
+  "harga": 91.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 79.13943035247534,
+    "pb": 2.3530259228355153,
+    "ps": 0.15647006948929393,
+    "roe": 0.014866330932352463,
+    "eps": 1.1498692825396826,
+    "de": 1.763147699237122,
+    "margin_net": 0.0019771442477207546,
+    "current_ratio": 1.330238213662742,
+    "roa": 0.00538021580839016,
+    "bv": 38.673607084761905
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 290290590555.0,
+      "2026-Q1": 466274690735.0,
+      "2026-Q2": 449715188146.0
+    },
+    "eps": {
+      "2025-Q3": 0.21,
+      "2026-Q1": 0.88,
+      "2026-Q2": -0.31
+    },
+    "net_income": {
+      "2025-Q3": 644273694000000.0,
+      "2026-Q1": 2780740069.0,
+      "2026-Q2": -969695949.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 286650007552,
+    "enterprise_value": 435293716480,
+    "shares_outstanding": 3150000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2818,
+    "vol_trend": 0.653,
+    "price_chg_20d": -44.17
+  },
+  "neraca": {
+    "aset": 336611798578.0,
+    "aset_lancar": 276078393094.0,
+    "kas": 17369226915.0,
+    "piutang_usaha": 223820613737.0,
+    "persediaan": null,
+    "aset_tetap": 51490654884.0,
+    "liabilitas": 214789936261.0,
+    "liabilitas_jangka_pendek": 207540566989.0,
+    "liabilitas_jangka_panjang": 7249369272.0,
+    "utang_usaha": 223820613737.0,
+    "utang_bank": 164499677236.0,
+    "ekuitas": 121821862317.0,
+    "ekuitas_induk": 121821862317.0,
+    "modal_saham": null,
+    "saldo_laba": 3951507095.0
+  },
+  "laba_rugi": {
+    "pendapatan": 915989878881.0,
+    "beban_pokok": 881979356745.0,
+    "laba_kotor": 34010522136.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3191478881.0,
+    "beban_pajak": -1380434761.0,
+    "laba_bersih": 1811044120.0,
+    "laba_induk": 1811044120.0,
+    "eps_basic": 0.57,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -83594321920,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1215000000.0,
+    "dividen_dibayar": null
+  }
+}

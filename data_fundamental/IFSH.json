@@ -1,0 +1,95 @@
+{
+  "kode": "IFSH",
+  "nama": "PT Ifishdeco Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 925.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 45.03407984420643,
+    "pb": 2.197765080240706,
+    "ps": 1.6234560206812563,
+    "roe": 0.04880231159304676,
+    "eps": 20.54,
+    "de": 0.17630250262090763,
+    "margin_net": 0.06228106188335321,
+    "current_ratio": 5.904361979358729,
+    "roa": 0.038040696573990285,
+    "bv": 420.88210806347473
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 207269657790.0,
+      "2025-Q2": 129109735657.0,
+      "2025-Q3": 332436518705.0,
+      "2026-Q1": 296771088838.0,
+      "2026-Q2": 337523919105.0
+    },
+    "eps": {
+      "2025-Q1": 3.23,
+      "2025-Q2": -9.14,
+      "2025-Q3": 15.91,
+      "2026-Q1": -3.41,
+      "2026-Q2": 23.95
+    },
+    "net_income": {
+      "2025-Q1": 6214427429.0,
+      "2025-Q2": -17582689581.0,
+      "2025-Q3": 30756784609.0,
+      "2026-Q1": -6554936503.0,
+      "2026-Q2": 46059503145.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1779050086400,
+    "enterprise_value": 1749684584448,
+    "shares_outstanding": 1923297400
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3075,
+    "vol_trend": 6.151,
+    "price_chg_20d": -30.19
+  },
+  "neraca": {
+    "aset": 1038481684087.0,
+    "aset_lancar": 666660577657.0,
+    "kas": 258383950694.0,
+    "piutang_usaha": 286448045142.0,
+    "persediaan": 583847738.0,
+    "aset_tetap": 13438201474.0,
+    "liabilitas": 142713607954.0,
+    "liabilitas_jangka_pendek": 112909841908.0,
+    "liabilitas_jangka_panjang": 29803766046.0,
+    "utang_usaha": 286448045142.0,
+    "utang_bank": 25631642702.0,
+    "ekuitas": 809481464145.0,
+    "ekuitas_induk": 809481464145.0,
+    "modal_saham": null,
+    "saldo_laba": 723047942713.0
+  },
+  "laba_rugi": {
+    "pendapatan": 634295007943.0,
+    "beban_pokok": 343273642466.0,
+    "laba_kotor": 291021365477.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 51649960409.0,
+    "beban_pajak": -5462172591.0,
+    "laba_bersih": 39504566642.0,
+    "laba_induk": 39504566642.0,
+    "eps_basic": 20.54,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 331283333120,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13438201474.0,
+    "dividen_dibayar": 55543384588.0
+  }
+}

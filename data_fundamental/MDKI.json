@@ -1,0 +1,89 @@
+{
+  "kode": "MDKI",
+  "nama": "PT Emdeki Utama Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 173.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0014595299476028835,
+    "roe": 0.012254922314214298,
+    "eps": 9332.253021099736,
+    "de": 0.09631314305644365,
+    "margin_net": 0.07873238591273149,
+    "current_ratio": 5.604834738720995,
+    "roa": 0.011004139368366502,
+    "bv": 380755.290887295
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 78367000000000.0,
+      "2026-Q1": 71578000000000.0,
+      "2026-Q2": 78373000000000.0
+    },
+    "eps": {
+      "2025-Q3": 3.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q3": 6256000000000.0,
+      "2026-Q1": 6297000000000.0,
+      "2026-Q2": 5509000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 437715927040,
+    "enterprise_value": 247899947008,
+    "shares_outstanding": 2530150002
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4631,
+    "vol_trend": 1.597,
+    "price_chg_20d": -10.82
+  },
+  "neraca": {
+    "aset": 1072869.0,
+    "aset_lancar": 364247.0,
+    "kas": 222102.0,
+    "piutang_usaha": 11724.0,
+    "persediaan": 115477.0,
+    "aset_tetap": 3834.0,
+    "liabilitas": 92785.0,
+    "liabilitas_jangka_pendek": 64988.0,
+    "liabilitas_jangka_panjang": 27797.0,
+    "utang_usaha": 11724.0,
+    "utang_bank": 15570.0,
+    "ekuitas": 963368.0,
+    "ekuitas_induk": 963368.0,
+    "modal_saham": null,
+    "saldo_laba": 7224.0
+  },
+  "laba_rugi": {
+    "pendapatan": 149951.0,
+    "beban_pokok": 117589.0,
+    "laba_kotor": 32362.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15375.0,
+    "beban_pajak": -3169.0,
+    "laba_bersih": 11806.0,
+    "laba_induk": 11806.0,
+    "eps_basic": 5e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 87278002176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3834.0,
+    "dividen_dibayar": 21078.0
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "BMSR",
+  "nama": "PT Bintang Mitra Semestaraya Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 270.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 14.077163712200209,
+    "pb": 0.3636603138363465,
+    "ps": 0.0946170470469699,
+    "roe": 0.0258274922085958,
+    "eps": 19.18,
+    "de": 0.907652475571373,
+    "margin_net": 0.014588562977857263,
+    "current_ratio": 1.8584916601829706,
+    "roa": 0.013515541592089246,
+    "bv": 742.4510999061193
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 848240407524.0,
+      "2025-Q2": 860456793963.0,
+      "2025-Q3": 923758431103.0,
+      "2026-Q1": 734065561164.0,
+      "2026-Q2": 789622136640.0
+    },
+    "eps": {
+      "2025-Q1": -33.49,
+      "2025-Q2": 73.1,
+      "2025-Q3": -58.31,
+      "2026-Q1": 11.19,
+      "2026-Q2": 7.99
+    },
+    "net_income": {
+      "2025-Q1": -38821044202.0,
+      "2025-Q2": -7096524786.0,
+      "2025-Q3": 24239715590.0,
+      "2026-Q1": 12970529970.0,
+      "2026-Q2": 9257883968.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 312984010752,
+    "enterprise_value": 337980424192,
+    "shares_outstanding": 1159200024
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3702,
+    "vol_trend": 0.229,
+    "price_chg_20d": -16.67
+  },
+  "neraca": {
+    "aset": 1644655805063.0,
+    "aset_lancar": 1342922506056.0,
+    "kas": 36839643096.0,
+    "piutang_usaha": 376974602490.0,
+    "persediaan": 5008422200.0,
+    "aset_tetap": 100977350573.0,
+    "liabilitas": 781170497542.0,
+    "liabilitas_jangka_pendek": 722587318968.0,
+    "liabilitas_jangka_panjang": 58583178574.0,
+    "utang_usaha": 376974602490.0,
+    "utang_bank": 311550839327.0,
+    "ekuitas": 860649332830.0,
+    "ekuitas_induk": 860649332830.0,
+    "modal_saham": null,
+    "saldo_laba": 3150000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1523687697804.0,
+    "beban_pokok": 1384909792050.0,
+    "laba_kotor": 138777905754.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 29545476741.0,
+    "beban_pajak": -7329803308.0,
+    "laba_bersih": 22228413938.0,
+    "laba_induk": 22228413938.0,
+    "eps_basic": 19.18,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 54084198400,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 125194893.0,
+    "dividen_dibayar": null
+  }
+}

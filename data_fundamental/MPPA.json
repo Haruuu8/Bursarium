@@ -1,0 +1,95 @@
+{
+  "kode": "MPPA",
+  "nama": "PT Matahari Putra Prima Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 34.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.15605277357930963,
+    "roe": 0.8725925529638348,
+    "eps": -3019.2552316891874,
+    "de": -83.78244703616521,
+    "margin_net": -0.008145438818942584,
+    "current_ratio": 0.7554504609933961,
+    "roa": -0.010535736432506175,
+    "bv": -1105.0915191355673
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2108263000000.0,
+      "2025-Q2": 1665112000000.0,
+      "2025-Q3": 1700536000000.0,
+      "2026-Q1": 2202778000000.0,
+      "2026-Q2": 1802040000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": -0.0,
+      "2025-Q3": -7.0,
+      "2026-Q1": 0.14,
+      "2026-Q2": -2.81
+    },
+    "net_income": {
+      "2025-Q1": -22305000000000.0,
+      "2025-Q2": -36547000000000.0,
+      "2025-Q3": -32970000000000.0,
+      "2026-Q1": 1822000000000.0,
+      "2026-Q2": -34443000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1150181703680,
+    "enterprise_value": 1502311743488,
+    "shares_outstanding": 33828872408
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2498,
+    "vol_trend": 1.205,
+    "price_chg_20d": -5.56
+  },
+  "neraca": {
+    "aset": 3096224.0,
+    "aset_lancar": 1646119.0,
+    "kas": 249981.0,
+    "piutang_usaha": 69176.0,
+    "persediaan": 1007683.0,
+    "aset_tetap": 982914.0,
+    "liabilitas": 3132123.0,
+    "liabilitas_jangka_pendek": 2178990.0,
+    "liabilitas_jangka_panjang": 953133.0,
+    "utang_usaha": 69176.0,
+    "utang_bank": 377250.0,
+    "ekuitas": -37384.0,
+    "ekuitas_induk": -37384.0,
+    "modal_saham": null,
+    "saldo_laba": 36000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4004818.0,
+    "beban_pokok": 3305460.0,
+    "laba_kotor": 699358.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -37426.0,
+    "beban_pajak": 4361.0,
+    "laba_bersih": -32621.0,
+    "laba_induk": -32621.0,
+    "eps_basic": -2.666149,
+    "eps_diluted": -2.666149
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 383623004160,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 24130.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kode": "PDES",
+  "nama": "PT Destinasi Tirta Nusantara Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 320.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 21.333333333333332,
+    "pb": 2.112123911811063,
+    "ps": 0.4415132117502757,
+    "roe": 0.09799266635591151,
+    "eps": 15.0,
+    "de": 1.8901013579878998,
+    "margin_net": 0.03685316701428388,
+    "current_ratio": 1.8695515629341615,
+    "roa": 0.031804588777887076,
+    "bv": 151.50626258741258
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 152851664881.0,
+      "2025-Q2": 93529057187.0,
+      "2025-Q3": 136647017029.0,
+      "2026-Q1": 205839213490.0,
+      "2026-Q2": 82202500371.0
+    },
+    "eps": {
+      "2025-Q1": 5.05,
+      "2025-Q2": 8.96,
+      "2025-Q3": 14.8,
+      "2026-Q1": 10.0,
+      "2026-Q2": 5.0
+    },
+    "net_income": {
+      "2025-Q1": 3609046246.0,
+      "2025-Q2": 6405189398.0,
+      "2025-Q3": 10584847177.0,
+      "2026-Q1": 7015194235.0,
+      "2026-Q2": 3600055153.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 228800004096,
+    "enterprise_value": 328316747776,
+    "shares_outstanding": 715000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.5793,
+    "vol_trend": 0.199,
+    "price_chg_20d": -13.51
+  },
+  "neraca": {
+    "aset": 333764711191.0,
+    "aset_lancar": 181733803831.0,
+    "kas": 77529424592.0,
+    "piutang_usaha": 17772494273.0,
+    "persediaan": null,
+    "aset_tetap": 213424317.0,
+    "liabilitas": 204748967752.0,
+    "liabilitas_jangka_pendek": 97207163169.0,
+    "liabilitas_jangka_panjang": 107541804583.0,
+    "utang_usaha": 17772494273.0,
+    "utang_bank": 47084545503.0,
+    "ekuitas": 108326977750.0,
+    "ekuitas_induk": 108326977750.0,
+    "modal_saham": null,
+    "saldo_laba": 200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 288041713861.0,
+    "beban_pokok": 236546139763.0,
+    "laba_kotor": 51495574098.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 21814682937.0,
+    "beban_pajak": -4450748644.0,
+    "laba_bersih": 10615249388.0,
+    "laba_induk": 10615249388.0,
+    "eps_basic": 15.0,
+    "eps_diluted": 15.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 52873109504,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 213424317.0,
+    "dividen_dibayar": 715000000.0
+  }
+}

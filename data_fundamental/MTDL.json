@@ -1,0 +1,95 @@
+{
+  "kode": "MTDL",
+  "nama": "PT Metrodata Electronics Tbk",
+  "sektor": "Technology",
+  "industri": "Electronics & Computer Distribution",
+  "harga": 444.0,
+  "update": "2026-10-31 20:54",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 17.076923076923077,
+    "pb": 1.1611256245015473,
+    "ps": 0.20257046942934223,
+    "roe": 0.06682546147344312,
+    "eps": 26.0,
+    "de": 1.8819321133029774,
+    "margin_net": 0.023015488725334834,
+    "current_ratio": 1.6607165536417763,
+    "roa": 0.02052551747087185,
+    "bv": 382.38756481720236
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5527491000000.0,
+      "2025-Q2": 6148467000000.0,
+      "2025-Q3": 7129815000000.0,
+      "2026-Q1": 6711485000000.0,
+      "2026-Q2": 6919075000000.0
+    },
+    "eps": {
+      "2025-Q1": 13.0,
+      "2025-Q2": 11.0,
+      "2025-Q3": 14.0,
+      "2026-Q1": 13.0,
+      "2026-Q2": 13.0
+    },
+    "net_income": {
+      "2025-Q1": 153681000000000.0,
+      "2025-Q2": 140616000000000.0,
+      "2025-Q3": 175317000000000.0,
+      "2026-Q1": 158926000000000.0,
+      "2026-Q2": 154788000000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 5450936877056,
+    "enterprise_value": 9695335022592,
+    "shares_outstanding": 12276884585
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1707,
+    "vol_trend": 0.795,
+    "price_chg_20d": -10.84
+  },
+  "neraca": {
+    "aset": 15284097.0,
+    "aset_lancar": 14135267.0,
+    "kas": 1269398.0,
+    "piutang_usaha": 4302558.0,
+    "persediaan": 6764880.0,
+    "aset_tetap": 383816.0,
+    "liabilitas": 8834783.0,
+    "liabilitas_jangka_pendek": 8511547.0,
+    "liabilitas_jangka_panjang": 323236.0,
+    "utang_usaha": 4302558.0,
+    "utang_bank": 3075100.0,
+    "ekuitas": 4694528.0,
+    "ekuitas_induk": 4694528.0,
+    "modal_saham": null,
+    "saldo_laba": 35000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13630560.0,
+    "beban_pokok": 12595463.0,
+    "laba_kotor": 1035097.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 594816.0,
+    "beban_pajak": -128830.0,
+    "laba_bersih": 313714.0,
+    "laba_induk": 313714.0,
+    "eps_basic": 26.0,
+    "eps_diluted": 26.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1713826037760,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6353.0,
+    "dividen_dibayar": 294645.0
+  }
+}

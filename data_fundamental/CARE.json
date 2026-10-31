@@ -1,0 +1,95 @@
+{
+  "kode": "CARE",
+  "nama": "PT Metro Healthcare Indonesia Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 378.0,
+  "update": "2026-10-31 20:55",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": 373.54167595517913,
+    "pb": 4.155764267171648,
+    "ps": 34.00221193422072,
+    "roe": 0.0007639174808687641,
+    "eps": 1.0119352787969924,
+    "de": 0.37374542095757196,
+    "margin_net": 0.010927822611628672,
+    "current_ratio": 0.8680321691685433,
+    "roa": 0.0005558241631031965,
+    "bv": 90.95799850487218
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 77044953533.0,
+      "2025-Q2": 80994863304.0,
+      "2025-Q3": 77223200519.0,
+      "2026-Q1": 120221254868.0,
+      "2026-Q2": 91198398535.0
+    },
+    "eps": {
+      "2025-Q1": -0.87,
+      "2025-Q2": 0.91,
+      "2025-Q3": 0.03,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.07
+    },
+    "net_income": {
+      "2025-Q1": -29023374507.0,
+      "2025-Q2": 30286722520.0,
+      "2025-Q3": 1049769031.0,
+      "2026-Q1": 140691053000000.0,
+      "2026-Q2": -140688742643531.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 12568500371456,
+    "enterprise_value": 13162035281920,
+    "shares_outstanding": 33250000000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2263,
+    "vol_trend": 1.014,
+    "price_chg_20d": 1.61
+  },
+  "neraca": {
+    "aset": 4156631939319.0,
+    "aset_lancar": 521508127304.0,
+    "kas": 414279818127.0,
+    "piutang_usaha": 39538532599.0,
+    "persediaan": 4245048553.0,
+    "aset_tetap": 3264785854132.0,
+    "liabilitas": 1130338253402.0,
+    "liabilitas_jangka_pendek": 600793548704.0,
+    "liabilitas_jangka_panjang": 529544704698.0,
+    "utang_usaha": 39538532599.0,
+    "utang_bank": 16329236276.0,
+    "ekuitas": 3024353450287.0,
+    "ekuitas_induk": 3024353450287.0,
+    "modal_saham": null,
+    "saldo_laba": -303930709045.0
+  },
+  "laba_rugi": {
+    "pendapatan": 211419653403.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3925820542.0,
+    "beban_pajak": -1487645733.0,
+    "laba_bersih": 2310356469.0,
+    "laba_induk": 2310356469.0,
+    "eps_basic": 0.07,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 39754268672,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 929141213.0,
+    "dividen_dibayar": null
+  }
+}
