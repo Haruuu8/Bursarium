@@ -1,5 +1,5 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + AUTO SCALE)
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + AUTO SCALE FIX)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -304,7 +304,6 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
     pendapatan = d.get("pendapatan")
     eps_idx = d.get("eps_basic")
     
-    # FUNGSI AUTO SCALE
     def scale_num(v):
         if v is None or pd.isna(v): return None
         v = float(v)
@@ -474,20 +473,33 @@ def build_one(kode, verbose=False):
     for year in sorted(set(v["year"] for v in all_periods.values())):
         year_data = {qnum: all_periods[lbl] for lbl, v in all_periods.items() if v["year"] == year for qnum in [v["qnum"]]}
         prev_rev, prev_eps, prev_ni = None, None, None
+        
+        def scale_build(v):
+            if v is None or pd.isna(v): return None
+            v = float(v)
+            if abs(v) < 1_000_000: return v * 1_000_000_000
+            elif abs(v) < 1_000_000_000: return v * 1_000_000
+            return v
+
         for qnum in [1, 2, 3, 4]:
             if qnum not in year_data: prev_rev = prev_eps = prev_ni = None; continue
             d = year_data[qnum]["data"]; lbl = f"{year}-Q{qnum}"
             
-            def scale_build(v):
-                if v is None or pd.isna(v): return None
-                v = float(v)
-                if abs(v) < 1_000_000: return v * 1_000_000_000
-                elif abs(v) < 1_000_000_000: return v * 1_000_000
-                return v
-                
             cum_rev = scale_build(d.get("pendapatan"))
             cum_ni = scale_build(d.get("laba_induk") or d.get("laba_bersih"))
             cum_eps = d.get("eps_basic")
+            
+            if prev_rev is not None and cum_rev is not None:
+                if abs(cum_rev) > 0 and abs(prev_rev) / abs(cum_rev) > 1000:
+                    cum_rev = cum_rev * 1000
+                elif abs(cum_rev) > 0 and abs(prev_rev) / abs(cum_rev) < 0.001:
+                    cum_rev = cum_rev / 1000
+                    
+            if prev_ni is not None and cum_ni is not None:
+                if abs(cum_ni) > 0 and abs(prev_ni) / abs(cum_ni) > 1000:
+                    cum_ni = cum_ni * 1000
+                elif abs(cum_ni) > 0 and abs(prev_ni) / abs(cum_ni) < 0.001:
+                    cum_ni = cum_ni / 1000
             
             rev_std = _standalone(cum_rev, prev_rev, qnum); eps_std = _standalone(cum_eps, prev_eps, qnum); ni_std = _standalone(cum_ni, prev_ni, qnum)
             if rev_std is not None: q_rev[lbl] = round(rev_std, 2)
@@ -520,7 +532,6 @@ def build_one(kode, verbose=False):
                 pass
 
     shares = None
-    
     shares_yf = yfd.get("shares_outstanding")
     if shares_yf is not None and shares_yf > 0:
         if shares_yf < 10_000_000:
@@ -607,7 +618,7 @@ def batch(tickers, workers=4, delay=1.0, skip_existing=False):
         try:
             d = build_one(kode, verbose=False)
             return kode, ("OK" if d else "SKIP"), None
-        except Exception as e: return kode, "ERR", str(e)[:1000]
+        except Exception as e: return kode, "ERR", str(e)[:100]
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futures = {ex.submit(worker, k): k for k in tickers}
         for fut in as_completed(futures):
@@ -633,7 +644,7 @@ if __name__ == "__main__":
                         if k in row and row[k]: 
                             tickers.append(row[k].strip().upper())
                             break
-            print(f"📌 MODE ALL STOCKS (100 Workers): Memproses {len(tickers)} saham dari daftar_saham.csv.")
+            print(f"📌 MODE ALL STOCKS (1000 Workers): Memproses {len(tickers)} saham dari daftar_saham.csv.")
         else:
             print("⚠️ File daftar_saham.csv tidak ditemukan. Menggunakan 2026_tw3.json.")
             q3_file = REPORT_LIST_CACHE_DIR / "2026_tw3.json"
@@ -644,7 +655,8 @@ if __name__ == "__main__":
             else:
                 tickers = []
                 
-        batch(tickers, workers=100, delay=0.5)
+        # DISINI TEMPATNYA MENGUBAH WORKER MENJADI 1000
+        batch(tickers, workers=1000, delay=0.1)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]
         main([t.upper() for t in tickers])
