@@ -18,10 +18,6 @@ from quant.supres import get_support_resistance
 
 load_theme()
 
-if not st.session_state.get("authentication_status"):
-    st.error("Silakan login dulu di halaman utama.")
-    st.stop()
-
 WATCHLIST_FILE = "data_watchlist.json"
 OUTPUT_DIR = "quant/output"
 OHLCV_DIR = "data_ohlcv_idx"
@@ -29,6 +25,32 @@ FUND_DIR = "data_fundamental"
 SEKTOR_CSV = "data_sektor.csv"
 SETUPS_FILE = "data_setups.json"
 SCANS_DIR = "data_scans"
+
+
+# ============================================================
+# HELPER: FORMAT RUPIAH & LIKUIDITAS
+# ============================================================
+def format_rupiah(val):
+    if pd.isna(val) or val == 0: return "—"
+    if val >= 1e12: return f"Rp {val/1e12:.1f} T"
+    elif val >= 1e9: return f"Rp {val/1e9:.1f} B"
+    elif val >= 1e6: return f"Rp {val/1e6:.1f} M"
+    else: return f"Rp {val:,.0f}"
+
+@st.cache_data(ttl=1800)
+def get_avg_value_20d(kode):
+    try:
+        df_all = load_parquet_safe()
+        if df_all is None or "Kode" not in df_all.columns:
+            return 0
+        df = df_all[df_all["Kode"] == kode].copy()
+        if df.empty or len(df) < 20:
+            return 0
+        df = df.sort_values("Date")
+        val = (df['Close'] * df['Volume']).tail(20).mean()
+        return float(val) if not pd.isna(val) else 0
+    except Exception:
+        return 0
 
 
 # ============================================================
@@ -375,7 +397,7 @@ def bf_row(kode, nama, harga, rsi, rsi_chg, ni_g, rev_g, der, roe, special_flag=
 
 
 # ============================================================
-# CARD: SETUP (Buy Support / Breakout)
+# CARD: SETUP (Buy Support / Breakout) + LIKUIDITAS
 # ============================================================
 def setup_row(r, tipe="support"):
     kode = r["kode"]
@@ -397,6 +419,14 @@ def setup_row(r, tipe="support"):
     strong_info = signals.get("strong_zone_info", "")
     breakout_zone = signals.get("breakout_zone", False)
     breakout_info = signals.get("breakout_info", "")
+    
+    # ==========================================
+    # HITUNG LIKUIDITAS (AVG VALUE 20D)
+    # ==========================================
+    avg_val_20d = get_avg_value_20d(kode)
+    lik_str = format_rupiah(avg_val_20d)
+    # Abu-abu redup jika < 1 Miliar, Putih terang jika >= 1 Miliar
+    lik_color = "#737373" if avg_val_20d < 1_000_000_000 else "#ffffff"
 
     if tipe == "support":
         badge = ('<span style="background:#262626; color:#ffffff; '
@@ -538,6 +568,10 @@ def setup_row(r, tipe="support"):
         f'<span>RR <b style="color:{rr_color}; font-size:14px; font-weight:700;">{rr_tp1:.2f}</b></span>'
         f'<span>Risk <b style="color:#ffffff; font-weight:600;">{risk_pct:.2f}%</b></span>'
         f'<span>Zona <b style="color:#ffffff; font-weight:600;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
+        
+        # LIKUIDITAS DITAMBAHKAN DI SINI
+        f'<span>Likuiditas 20D <b style="color:{lik_color}; font-weight:600;">{lik_str}</b></span>'
+        
         f'</div>'
         f'</div>'
     )
