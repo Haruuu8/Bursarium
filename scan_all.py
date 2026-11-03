@@ -210,20 +210,6 @@ def scan_bottom():
 def scan_setups():
     """
     Generate data_setups.json dari supres.py (swing_w5, 91% WR support).
-
-    BUY SUPPORT:
-    - role='buy_limit'
-    - Harga 0-5% di atas zona atau di dalam zona
-    - RR >= 1.5
-    - Entry = zona_hi, SL = zona_lo × 0.99, TP1 = next resistance atau 2R
-
-    BREAKOUT:
-    - role='breakout_trigger'
-    - Harga 0-3% di bawah resistance
-    - RR >= 1.5
-    - Entry = zona_hi × 1.001, SL = zona_lo × 0.995, TP1 = next resistance atau 2R
-
-    Sort: imminence × score, limit top 30 support & top 20 breakout.
     """
     print("  [4/4] Setups (Buy Support + Breakout) — swing_w5 91% WR...")
 
@@ -243,6 +229,17 @@ def scan_setups():
 
         for i, kode in enumerate(kodes, 1):
             try:
+                # ============================================================
+                # TAMBAHAN: HITUNG LIKUIDITAS (AVG VALUE 20D)
+                # ============================================================
+                df_kode = df_all[df_all["Kode"] == kode]
+                if not df_kode.empty and len(df_kode) >= 20:
+                    df_kode = df_kode.sort_values("Date")
+                    avg_val = (df_kode["Close"] * df_kode["Volume"]).tail(20).mean()
+                else:
+                    avg_val = 0
+                # ============================================================
+
                 sr = get_support_resistance(kode, timeframe="daily")
                 if not sr:
                     continue
@@ -261,7 +258,6 @@ def scan_setups():
                     zona_lo = z["lower"]
                     zona_hi = z["upper"]
 
-                    # Filter kedekatan: harga 0-5% di atas zona atau di dalam zona
                     if current < zona_lo * 0.99:
                         continue
                     if current > zona_hi * 1.05:
@@ -275,7 +271,6 @@ def scan_setups():
                         continue
                     risk_pct = risk / entry * 100
 
-                    # TP1: next resistance, fallback 2R
                     tp1 = None
                     for r in sr["resistances"]:
                         if r["level"] > entry * 1.02 and r.get("role") == "breakout_trigger":
@@ -309,6 +304,7 @@ def scan_setups():
                         "zona_lo": zona_lo,
                         "zona_hi": zona_hi,
                         "lot": 0,
+                        "avg_value_20d": float(avg_val), # <--- LIKUIDITAS DISIMPAN DI SINI
                         "_source": "swing_w5",
                         "_score": z.get("score", 8.0),
                         "_strength": z.get("strength", "MODERATE"),
@@ -325,7 +321,6 @@ def scan_setups():
                     zona_lo = z["lower"]
                     zona_hi = z["upper"]
 
-                    # Filter kedekatan: harga 0-3% di bawah resistance
                     if current > zona_hi * 1.005:
                         continue
                     if current < zona_lo * 0.97:
@@ -372,6 +367,7 @@ def scan_setups():
                         "zona_lo": zona_lo,
                         "zona_hi": zona_hi,
                         "lot": 0,
+                        "avg_value_20d": float(avg_val), # <--- LIKUIDITAS DISIMPAN DI SINI
                         "_source": "swing_w5",
                         "_score": z.get("score", 8.0),
                         "_strength": z.get("strength", "MODERATE"),
@@ -383,15 +379,12 @@ def scan_setups():
             if i % 100 == 0 or i == len(kodes):
                 print(f"      [{i}/{len(kodes)}] S={len(sup)} B={len(brk)}", flush=True)
 
-        # Sort: imminence × score × RR
         sup.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
         brk.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
 
-        # Limit top N (buang yang kurang imminent)
         sup = sup[:30]
         brk = brk[:20]
 
-    # Save
     with open(Path("data_setups.json"), "w") as f:
         json.dump({
             "generated": time.strftime("%Y-%m-%d %H:%M"),

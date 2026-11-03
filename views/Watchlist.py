@@ -28,7 +28,7 @@ SCANS_DIR = "data_scans"
 
 
 # ============================================================
-# HELPER: FORMAT RUPIAH & LIKUIDITAS
+# HELPER: FORMAT RUPIAH
 # ============================================================
 def format_rupiah(val):
     if pd.isna(val) or val == 0: return "—"
@@ -36,21 +36,6 @@ def format_rupiah(val):
     elif val >= 1e9: return f"Rp {val/1e9:.1f} B"
     elif val >= 1e6: return f"Rp {val/1e6:.1f} M"
     else: return f"Rp {val:,.0f}"
-
-@st.cache_data(ttl=1800)
-def get_avg_value_20d(kode):
-    try:
-        df_all = load_parquet_safe()
-        if df_all is None or "Kode" not in df_all.columns:
-            return 0
-        df = df_all[df_all["Kode"] == kode].copy()
-        if df.empty or len(df) < 20:
-            return 0
-        df = df.sort_values("Date")
-        val = (df['Close'] * df['Volume']).tail(20).mean()
-        return float(val) if not pd.isna(val) else 0
-    except Exception:
-        return 0
 
 
 # ============================================================
@@ -284,13 +269,16 @@ def analyze_setup_signals(kode, harga):
 # ============================================================
 # CARD: HAKA PAGI
 # ============================================================
-def wl_row(kode, nama, harga, chg_pct):
+def wl_row(kode, nama, harga, chg_pct, avg_val_20d=None):
     nama_disp = nama[:50] + "…" if len(nama) > 50 else nama
 
     chg_color = "#ffffff" if chg_pct >= 0 else "#737373"
     chg_sign = "+" if chg_pct >= 0 else ""
 
     sl_price = harga * 0.97
+    
+    lik_str = format_rupiah(avg_val_20d) if avg_val_20d else "—"
+    lik_color = "#737373" if (avg_val_20d and avg_val_20d < 1_000_000_000) else "#ffffff"
     
     return (
         '<div style="'
@@ -317,6 +305,7 @@ def wl_row(kode, nama, harga, chg_pct):
         f'<span style="color:#a3a3a3;">Entry: <b style="color:#ffffff; font-weight:600;">T+1 Open (Gap 2-20%)</b></span>'
         f'<span style="color:#a3a3a3;">SL: <b style="color:#ffffff; font-weight:600;">{sl_price:,.0f} (-3%)</b></span>'
         f'<span style="color:#a3a3a3;">TP: <b style="color:#ffffff; font-weight:600;">Trailing 0.5%</b></span>'
+        f'<span style="color:#a3a3a3;">Likuiditas: <b style="color:{lik_color}; font-weight:600;">{lik_str}</b></span>'
         '</div>'
         '</div>'
     )
@@ -421,11 +410,10 @@ def setup_row(r, tipe="support"):
     breakout_info = signals.get("breakout_info", "")
     
     # ==========================================
-    # HITUNG LIKUIDITAS (AVG VALUE 20D)
+    # BACA LIKUIDITAS DARI JSON (Sangat Cepat)
     # ==========================================
-    avg_val_20d = get_avg_value_20d(kode)
+    avg_val_20d = r.get("avg_value_20d", 0)
     lik_str = format_rupiah(avg_val_20d)
-    # Abu-abu redup jika < 1 Miliar, Putih terang jika >= 1 Miliar
     lik_color = "#737373" if avg_val_20d < 1_000_000_000 else "#ffffff"
 
     if tipe == "support":
@@ -568,10 +556,7 @@ def setup_row(r, tipe="support"):
         f'<span>RR <b style="color:{rr_color}; font-size:14px; font-weight:700;">{rr_tp1:.2f}</b></span>'
         f'<span>Risk <b style="color:#ffffff; font-weight:600;">{risk_pct:.2f}%</b></span>'
         f'<span>Zona <b style="color:#ffffff; font-weight:600;">{zona_lo:,.0f} – {zona_hi:,.0f}</b></span>'
-        
-        # LIKUIDITAS DITAMBAHKAN DI SINI
         f'<span>Likuiditas 20D <b style="color:{lik_color}; font-weight:600;">{lik_str}</b></span>'
-        
         f'</div>'
         f'</div>'
     )
@@ -636,9 +621,11 @@ with tab1:
                     ret1d_raw = r.get("ret_1d", 0)
                     ret1d = (float(ret1d_raw) * 100
                              if pd.notna(ret1d_raw) else 0)
+                    
+                    avg_val_20d = r.get("avg_value_20d", 0)
 
                     st.markdown(
-                        wl_row(kode, nama, close, ret1d),
+                        wl_row(kode, nama, close, ret1d, avg_val_20d),
                         unsafe_allow_html=True,
                     )
 
