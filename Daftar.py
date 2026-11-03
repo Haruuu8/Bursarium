@@ -172,6 +172,6 @@ with tab_daftar:
                     try:
                         reg_id = submit_registration(telegram="@" + tele_clean, bukti_bytes=file_bytes, bukti_filename=bukti.name)
                         st.markdown(f'<div style="background:#ffffff; border:none; border-radius:8px; padding:16px 20px; color:#0a0a0a; font-size:14px; font-weight:600; margin-bottom:16px;">Pendaftaran BERHASIL!<br><br>ID Registrasi: {reg_id}<br><br>Akun di-approve 1x24 jam. Username & password dikirim via Telegram.</div>', unsafe_allow_html=True)
-                        st.balloons()
+                        st.balloons()Q
                     except Exception as e: 
                         st.markdown(f'<div style="background:#262626; border:1px solid #404040; border-radius:8px; padding:12px 18px; color:#ffffff; font-size:14px; margin-bottom:8px;">Gagal submit: {e}</div>', unsafe_allow_html=True)
