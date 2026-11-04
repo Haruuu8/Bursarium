@@ -1136,7 +1136,7 @@ with tab6:
                             f'</div>'
                             f'<div>'
                             f'<div style="font-size:11px; color:#a3a3a3; margin-bottom:4px; text-transform:uppercase;">IHSG</div>'
-                            f'<div style="font-size:15px; font-weight:700; color:{ihsg_color};">{ihsg_str}</div>'
+                            f'<div style="font-size:15px; font-weight:700; color:{ihsg_col};">{ihsg_str}</div>'
                             f'</div>'
                             f'</div></div>', unsafe_allow_html=True
                         )
