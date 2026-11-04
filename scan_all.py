@@ -1,12 +1,64 @@
 ﻿"""Scan SEMUA setup → simpan ke JSON. Jalankan sekali sehari setelah update."""
 import json
 import time
+from collections import Counter
 from pathlib import Path
+
+import pandas as pd
 
 OUT_DIR = Path("data_scans")
 OUT_DIR.mkdir(exist_ok=True)
 
 
+# ============================================================
+# KONFIG LIKUIDITAS — KHUSUS Buy Support & Breakout di scan_setups()
+# ============================================================
+# Rata-rata nilai transaksi harian (Close * Volume) 20 hari terakhir.
+# Semua item buy_support / breakout_buy akan punya field:
+#   - avg_value_20d : float (Rupiah)
+#   - likuiditas    : "VERY_LIQUID" | "LIQUID" | "MODERATE" | "ILLIQUID"
+
+# Filter minimum — set ke 0 untuk MATIKAN filter (tetap tampil likuiditasnya).
+MIN_AVG_VALUE_20D = 1_000_000_000   # 1 miliar Rupiah
+
+# Threshold klasifikasi likuiditas (Rupiah)
+LIQ_VERY_LIQUID = 50_000_000_000    # >= 50 M
+LIQ_LIQUID      = 10_000_000_000    # >= 10 M
+LIQ_MODERATE    =  1_000_000_000    # >= 1 M
+# < LIQ_MODERATE → ILLIQUID
+
+
+def _klasifikasi_likuiditas(avg_value):
+    """Label likuiditas dari rata-rata value 20 hari."""
+    if avg_value >= LIQ_VERY_LIQUID:
+        return "VERY_LIQUID"
+    if avg_value >= LIQ_LIQUID:
+        return "LIQUID"
+    if avg_value >= LIQ_MODERATE:
+        return "MODERATE"
+    return "ILLIQUID"
+
+
+def _fmt_value_rp(v):
+    """Format nilai Rupiah jadi T/B/M/K untuk print."""
+    try:
+        v = float(v)
+    except (TypeError, ValueError):
+        return "-"
+    if v >= 1e12:
+        return f"{v/1e12:.2f}T"
+    if v >= 1e9:
+        return f"{v/1e9:.2f}B"
+    if v >= 1e6:
+        return f"{v/1e6:.1f}M"
+    if v >= 1e3:
+        return f"{v/1e3:.1f}K"
+    return f"{v:.0f}"
+
+
+# ============================================================
+# 1/4 — PRE-CROSS 85+
+# ============================================================
 def scan_precross():
     print("  [1/4] Pre-Cross 85+...")
     from quant.pre_cross import scan_pre_cross
@@ -17,6 +69,9 @@ def scan_precross():
     print(f"      → {len(r or [])} saham")
 
 
+# ============================================================
+# 2/4 — EMERGING 65-84
+# ============================================================
 def scan_emerging():
     print("  [2/4] Emerging 65-84...")
     from quant.pre_cross import scan_emerging_pre_cross
@@ -27,11 +82,13 @@ def scan_emerging():
     print(f"      → {len(r or [])} saham")
 
 
+# ============================================================
+# 3/4 — BOTTOM FISHING
+# ============================================================
 def scan_bottom():
     print("  [3/4] Bottom Fishing...")
     import sys
     sys.path.insert(0, ".")
-    import pandas as pd
     import numpy as np
     import os
     from quant.rsi import _cek_df_hidup
@@ -205,11 +262,17 @@ def scan_bottom():
 
 
 # ============================================================
-# SCAN SETUPS — SWING_W5 (91% WR)
+# 4/4 — SETUPS — SWING_W5 (91% WR) + LIKUIDITAS
 # ============================================================
 def scan_setups():
     """
     Generate data_setups.json dari supres.py (swing_w5, 91% WR support).
+
+    Perubahan: menambah fitur LIKUIDITAS (avg value 20 hari) di
+    buy_support & breakout_buy.
+      - avg_value_20d : float (Rupiah)
+      - likuiditas    : VERY_LIQUID / LIQUID / MODERATE / ILLIQUID
+      - Filter MIN_AVG_VALUE_20D bisa diatur di atas (set 0 untuk off).
     """
     print("  [4/4] Setups (Buy Support + Breakout) — swing_w5 91% WR...")
 
@@ -220,25 +283,51 @@ def scan_setups():
     if df_all is None or df_all.empty:
         print("      ⚠️  Gagal load parquet")
         sup, brk = [], []
+        n_skip_illiquid = 0
+        liq_map = {}
     else:
         df_all["Kode"] = df_all["Kode"].astype(str).str.strip().str.upper()
         kodes = sorted(df_all["Kode"].unique())
 
+        # ============================================================
+        # PRE-COMPUTE LIKUIDITAS 20D — sekali untuk semua kode
+        # ============================================================
+        liq_map = {}
+        try:
+            needed = {"Kode", "Date", "Close", "Volume"}
+            if needed.issubset(df_all.columns):
+                _tmp = df_all[["Kode", "Date", "Close", "Volume"]].copy()
+                _tmp["Close"]  = pd.to_numeric(_tmp["Close"],  errors="coerce")
+                _tmp["Volume"] = pd.to_numeric(_tmp["Volume"], errors="coerce")
+                _tmp["value"]  = _tmp["Close"] * _tmp["Volume"]
+                _tmp = _tmp.dropna(subset=["value"])
+                _tmp = _tmp[_tmp["value"] > 0]
+                _tmp = _tmp.sort_values(["Kode", "Date"])
+                _avg = (_tmp.groupby("Kode")["value"]
+                            .apply(lambda s: s.tail(20).mean()))
+                liq_map = {k: (float(v) if pd.notna(v) else 0.0)
+                           for k, v in _avg.items()}
+                print(f"      [i] Likuiditas pre-computed: {len(liq_map)} kode")
+            else:
+                missing = needed - set(df_all.columns)
+                print(f"      ⚠️  Kolom hilang untuk likuiditas: {missing}")
+        except Exception as e:
+            print(f"      ⚠️  Gagal pre-compute likuiditas: {e}")
+            liq_map = {}
+
         sup = []
         brk = []
+        n_skip_illiquid = 0
 
         for i, kode in enumerate(kodes, 1):
             try:
-                # ============================================================
-                # TAMBAHAN: HITUNG LIKUIDITAS (AVG VALUE 20D)
-                # ============================================================
-                df_kode = df_all[df_all["Kode"] == kode]
-                if not df_kode.empty and len(df_kode) >= 20:
-                    df_kode = df_kode.sort_values("Date")
-                    avg_val = (df_kode["Close"] * df_kode["Volume"]).tail(20).mean()
-                else:
-                    avg_val = 0
-                # ============================================================
+                avg_val    = liq_map.get(kode, 0.0)
+                likuiditas = _klasifikasi_likuiditas(avg_val)
+
+                # ---- Filter likuiditas (khusus Buy Support & Breakout) ----
+                if avg_val < MIN_AVG_VALUE_20D:
+                    n_skip_illiquid += 1
+                    continue
 
                 sr = get_support_resistance(kode, timeframe="daily")
                 if not sr:
@@ -304,7 +393,10 @@ def scan_setups():
                         "zona_lo": zona_lo,
                         "zona_hi": zona_hi,
                         "lot": 0,
-                        "avg_value_20d": float(avg_val), # <--- LIKUIDITAS DISIMPAN DI SINI
+                        # ---- LIKUIDITAS ----
+                        "avg_value_20d": float(avg_val),
+                        "likuiditas": likuiditas,
+                        # ---------------------
                         "_source": "swing_w5",
                         "_score": z.get("score", 8.0),
                         "_strength": z.get("strength", "MODERATE"),
@@ -367,7 +459,10 @@ def scan_setups():
                         "zona_lo": zona_lo,
                         "zona_hi": zona_hi,
                         "lot": 0,
-                        "avg_value_20d": float(avg_val), # <--- LIKUIDITAS DISIMPAN DI SINI
+                        # ---- LIKUIDITAS ----
+                        "avg_value_20d": float(avg_val),
+                        "likuiditas": likuiditas,
+                        # ---------------------
                         "_source": "swing_w5",
                         "_score": z.get("score", 8.0),
                         "_strength": z.get("strength", "MODERATE"),
@@ -375,27 +470,57 @@ def scan_setups():
                     })
             except Exception:
                 continue
+            finally:
+                if i % 100 == 0 or i == len(kodes):
+                    print(
+                        f"      [{i}/{len(kodes)}] "
+                        f"S={len(sup)} B={len(brk)} "
+                        f"skip_illq={n_skip_illiquid}",
+                        flush=True,
+                    )
 
-            if i % 100 == 0 or i == len(kodes):
-                print(f"      [{i}/{len(kodes)}] S={len(sup)} B={len(brk)}", flush=True)
-
+        # Sort tetap sama seperti sebelumnya (tidak diubah)
         sup.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
         brk.sort(key=lambda x: (-x["_imminence"], -x["_score"], -x["rr_tp1"]))
 
         sup = sup[:30]
         brk = brk[:20]
 
+    # ============================================================
+    # SIMPAN JSON + BREAKDOWN LIKUIDITAS
+    # ============================================================
+    sup_liq = Counter(s.get("likuiditas", "?") for s in sup)
+    brk_liq = Counter(s.get("likuiditas", "?") for s in brk)
+
     with open(Path("data_setups.json"), "w") as f:
         json.dump({
             "generated": time.strftime("%Y-%m-%d %H:%M"),
             "method": "swing_w5",
+            "min_avg_value_20d": MIN_AVG_VALUE_20D,
             "buy_support": sup,
             "breakout_buy": brk,
+            "summary": {
+                "n_buy_support": len(sup),
+                "n_breakout_buy": len(brk),
+                "n_skipped_illiquid": n_skip_illiquid,
+                "buy_support_by_likuiditas": dict(sup_liq),
+                "breakout_by_likuiditas": dict(brk_liq),
+            },
         }, f, ensure_ascii=False, default=str)
 
-    print(f"      → {len(sup)} Buy Support · {len(brk)} Breakout Buy")
+    print(f"      → {len(sup)} Buy Support · {len(brk)} Breakout Buy "
+          f"(skip {n_skip_illiquid} illiquid)")
+    if sup_liq:
+        print(f"      Buy Support likuiditas : {dict(sup_liq)}")
+    if brk_liq:
+        print(f"      Breakout likuiditas    : {dict(brk_liq)}")
+    print(f"      Min avg value 20d      : Rp {_fmt_value_rp(MIN_AVG_VALUE_20D)} "
+          f"({'(OFF)' if MIN_AVG_VALUE_20D <= 0 else 'aktif'})")
 
 
+# ============================================================
+# MAIN
+# ============================================================
 def main():
     print("=" * 55)
     print(f"SCAN ALL — {time.strftime('%Y-%m-%d %H:%M')}")
