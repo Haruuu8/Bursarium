@@ -9,7 +9,12 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime, timedelta
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# ============================================================
+# PATH ABSOLUT — tidak tergantung CWD
+# ============================================================
+_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _BASE_DIR)
+
 from quant.theme import (
     load_theme, page_header, section_title, empty_state, render_table,
 )
@@ -18,13 +23,13 @@ from quant.supres import get_support_resistance
 
 load_theme()
 
-WATCHLIST_FILE = "data_watchlist.json"
-OUTPUT_DIR = "quant/output"
-OHLCV_DIR = "data_ohlcv_idx"
-FUND_DIR = "data_fundamental"
-SEKTOR_CSV = "data_sektor.csv"
-SETUPS_FILE = "data_setups.json"
-SCANS_DIR = "data_scans"
+WATCHLIST_FILE = os.path.join(_BASE_DIR, "data_watchlist.json")
+OUTPUT_DIR     = os.path.join(_BASE_DIR, "quant", "output")
+OHLCV_DIR      = os.path.join(_BASE_DIR, "data_ohlcv_idx")
+FUND_DIR       = os.path.join(_BASE_DIR, "data_fundamental")
+SEKTOR_CSV     = os.path.join(_BASE_DIR, "data_sektor.csv")
+SETUPS_FILE    = os.path.join(_BASE_DIR, "data_setups.json")
+SCANS_DIR      = os.path.join(_BASE_DIR, "data_scans")
 
 
 # ============================================================
@@ -169,38 +174,104 @@ def load_rekap_sheet(fname, sheet_name):
 
 
 # ============================================================
-# IHSG DATA LOADER
+# IHSG DATA LOADER — ROBUST (v2) — dengan log
 # ============================================================
 @st.cache_data(ttl=3600)
 def load_ihsg_history():
-    for fname in ["^JKSE.csv", "JKSE.csv", "IHSG.csv"]:
-        path = os.path.join(OHLCV_DIR, fname)
-        if os.path.exists(path):
+    """Coba baca IHSG dari CSV (multi folder), fallback parquet.
+    Log setiap langkah ke terminal Streamlit untuk diagnosa."""
+    search_dirs = [OHLCV_DIR, OUTPUT_DIR, _BASE_DIR]
+    fnames = ["IHSG.csv", "^JKSE.csv", "JKSE.csv"]
+
+    for folder in search_dirs:
+        for fname in fnames:
+            path = os.path.join(folder, fname)
+            if not os.path.exists(path):
+                continue
+
             try:
                 df = pd.read_csv(path)
-                close_col = next((c for c in df.columns if str(c).lower() == 'close'), None)
-                date_col = next((c for c in df.columns if str(c).lower() in ['date', 'tanggal']), None)
-                if close_col and date_col:
-                    df[date_col] = pd.to_datetime(df[date_col])
-                    df = df.sort_values(date_col)
-                    df['IHSG_Return'] = df[close_col].pct_change() * 100
-                    return df[[date_col, 'IHSG_Return']].rename(columns={date_col: 'Date'})
-            except Exception:
-                pass
-            
+            except Exception as e:
+                print(f"[IHSG] ❌ gagal read_csv {path}: {e}")
+                continue
+
+            # Normalisasi kolom (case-insensitive + alias)
+            col_map = {str(c).strip().lower(): c for c in df.columns}
+
+            close_col = None
+            for alias in ("close", "closeprice", "close_price", "last", "harga"):
+                if alias in col_map:
+                    close_col = col_map[alias]
+                    break
+
+            date_col = None
+            for alias in ("date", "tanggal", "datetime", "time"):
+                if alias in col_map:
+                    date_col = col_map[alias]
+                    break
+
+            if not close_col or not date_col:
+                print(f"[IHSG] ❌ {path} — kolom tidak ketemu. "
+                      f"close={close_col}, date={date_col}, "
+                      f"columns={df.columns.tolist()}")
+                continue
+
+            # Parse Date (coerce — baris malform dibuang, sisanya lanjut)
+            df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
+            df = df.dropna(subset=[date_col])
+
+            # Parse Close (handle angka ber-koma)
+            if not pd.api.types.is_numeric_dtype(df[close_col]):
+                s = df[close_col].astype(str).str.strip()
+                s_us = s.str.replace(",", "", regex=False).str.replace(" ", "", regex=False)
+                v_us = pd.to_numeric(s_us, errors="coerce")
+                if v_us.notna().sum() >= max(1, len(s) * 0.9):
+                    df[close_col] = v_us
+                else:
+                    s_id = (s.str.replace(".", "", regex=False)
+                             .str.replace(",", ".", regex=False)
+                             .str.replace(" ", "", regex=False))
+                    df[close_col] = pd.to_numeric(s_id, errors="coerce")
+            else:
+                df[close_col] = pd.to_numeric(df[close_col], errors="coerce")
+
+            df = df.dropna(subset=[close_col])
+            df = df[df[close_col] > 0]
+
+            if len(df) < 2:
+                print(f"[IHSG] ⚠️ {path} — hanya {len(df)} baris valid (butuh ≥2)")
+                continue
+
+            df = df.sort_values(date_col).reset_index(drop=True)
+            df["IHSG_Return"] = df[close_col].pct_change() * 100
+
+            last_date = pd.Timestamp(df[date_col].iloc[-1]).date()
+            print(f"[IHSG] ✅ loaded {len(df)} baris dari {path} "
+                  f"(terakhir {last_date})")
+
+            return df[[date_col, "IHSG_Return"]].rename(columns={date_col: "Date"})
+
+    # Fallback: parquet
     try:
-        df = load_parquet_safe()
-        if df is not None and "Kode" in df.columns:
+        df_all = load_parquet_safe()
+        if df_all is not None and "Kode" in df_all.columns:
             for code in ["^JKSE", "JKSE", "IHSG"]:
-                sub = df[df["Kode"] == code]
-                if not sub.empty:
-                    sub = sub.copy()
-                    sub["Date"] = pd.to_datetime(sub["Date"])
-                    sub = sub.sort_values("Date")
-                    sub['IHSG_Return'] = sub['Close'].pct_change() * 100
-                    return sub[['Date', 'IHSG_Return']]
-    except Exception:
-        pass
+                sub = df_all[df_all["Kode"].astype(str).str.upper() == code]
+                if sub.empty:
+                    continue
+                sub = sub.copy()
+                sub["Date"] = pd.to_datetime(sub["Date"], errors="coerce")
+                sub["Close"] = pd.to_numeric(sub["Close"], errors="coerce")
+                sub = sub.dropna(subset=["Date", "Close"]).sort_values("Date")
+                if len(sub) < 2:
+                    continue
+                sub["IHSG_Return"] = sub["Close"].pct_change() * 100
+                print(f"[IHSG] ✅ loaded {len(sub)} baris dari parquet Kode={code}")
+                return sub[["Date", "IHSG_Return"]]
+    except Exception as e:
+        print(f"[IHSG] ❌ parquet fallback gagal: {e}")
+
+    print("[IHSG] ❌ TIDAK ADA SUMBER DATA BERHASIL DI-LOAD")
     return None
 
 
@@ -276,20 +347,20 @@ def wl_row(kode, nama, harga, chg_pct, avg_val_20d=None):
     chg_sign = "+" if chg_pct >= 0 else ""
 
     sl_price = harga * 0.97
-    
+
     lik_str = format_rupiah(avg_val_20d) if avg_val_20d else "—"
     lik_color = "#737373" if (avg_val_20d and avg_val_20d < 1_000_000_000) else "#ffffff"
-    
+
     return (
         '<div style="'
         'background: #171717; '
         'border: 1px solid #27272a; border-radius: 8px; '
         'padding: 20px 24px; margin-bottom: 12px; '
         'position: relative; overflow: hidden;">'
-        
+
         '<div style="position:absolute; left:0; top:0; bottom:0; width:3px; '
         'background: #ffffff;"></div>'
-        
+
         '<div style="display: flex; justify-content: space-between; align-items: center; padding-left: 12px; margin-bottom: 16px;">'
         '<div style="flex: 1; min-width: 0;">'
         f'<div style="font-size:18px; font-weight:700; color:#ffffff; letter-spacing:-0.02em; line-height:1.2;">{kode}</div>'
@@ -408,10 +479,7 @@ def setup_row(r, tipe="support"):
     strong_info = signals.get("strong_zone_info", "")
     breakout_zone = signals.get("breakout_zone", False)
     breakout_info = signals.get("breakout_info", "")
-    
-    # ==========================================
-    # BACA LIKUIDITAS DARI JSON (Sangat Cepat)
-    # ==========================================
+
     avg_val_20d = r.get("avg_value_20d", 0)
     lik_str = format_rupiah(avg_val_20d)
     lik_color = "#737373" if avg_val_20d < 1_000_000_000 else "#ffffff"
@@ -515,7 +583,7 @@ def setup_row(r, tipe="support"):
         f'</div>'
 
         f'<div class="grid-4-col" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px; margin-bottom:20px;">'
-        
+
         f'<div style="background:#262626; border:1px solid #404040; '
         f'border-radius:6px; padding:16px;">'
         f'<div style="font-size:11px; color:#a3a3a3; letter-spacing:0.5px; '
@@ -586,9 +654,9 @@ with tab1:
     if not files:
         st.markdown(empty_state("", "Belum ada kandidat", "Jalankan screener dulu"), unsafe_allow_html=True)
     else:
-        selected = files[0] # Ambil yang paling baru
+        selected = files[0]
         tgl_str = extract_date_label(selected, "kandidat_", ".csv")
-        
+
         col1, col2 = st.columns([4, 1])
         with col1:
             st.markdown(f'<div style="font-size:20px; font-weight:700; color:#ffffff; margin-bottom:20px;">Kandidat: {tgl_str}</div>', unsafe_allow_html=True)
@@ -605,7 +673,7 @@ with tab1:
             for col in ["ret_1d"]:
                 if col in df.columns:
                     df[col] = pd.to_numeric(df[col], errors="coerce")
-            
+
             if "rating" in df.columns:
                 df["rating"] = pd.to_numeric(df["rating"], errors="coerce").fillna(0)
                 df = df.sort_values("rating", ascending=False, na_position="last")
@@ -621,7 +689,7 @@ with tab1:
                     ret1d_raw = r.get("ret_1d", 0)
                     ret1d = (float(ret1d_raw) * 100
                              if pd.notna(ret1d_raw) else 0)
-                    
+
                     avg_val_20d = r.get("avg_value_20d", 0)
 
                     st.markdown(
@@ -797,7 +865,7 @@ with tab3:
         for i, r in enumerate(items_emg):
             kode = r["kode"]; nama = nama_map.get(kode, kode)[:55]
             skor = r["skor"]; gap = r["gap_pct"]; konv = r["konv_pct"]; harga = r["harga"]
-            
+
             st.markdown(
                 f'<div style="background:#171717; '
                 f'border:1px solid #27272a; border-left:4px solid #737373; '
@@ -972,8 +1040,9 @@ with tab6:
                 wr = (eksekusi["P/L %"] > 0).sum() / n_exec * 100
                 avg = eksekusi["P/L %"].mean()
                 tot = eksekusi["P/L %"].sum()
+                compound = ((1 + eksekusi["P/L %"] / 100).prod() - 1) * 100
             else:
-                wr = avg = tot = 0
+                wr = avg = tot = compound = 0
 
             st.markdown(
                 '<div style="background: #171717; '
@@ -1001,8 +1070,8 @@ with tab6:
                 c1, c2, c3 = st.columns(3)
                 for col, label, val in [
                     (c1, "WIN RATE", f"{wr:.1f}%"),
-                    (c2, "AVG RETURN", f"{avg:+.2f}%"),
-                    (c3, "TOTAL RETURN", f"{tot:+.2f}%"),
+                    (c2, "AVG PER TRADE", f"{avg:+.2f}%"),
+                    (c3, "COMPOUND RETURN", f"{compound:+.2f}%"),
                 ]:
                     with col:
                         st.markdown(
@@ -1012,6 +1081,14 @@ with tab6:
                             f'<div style="font-size:32px; font-weight:700; color:#ffffff; margin-top:8px;">{val}</div>'
                             '</div>', unsafe_allow_html=True
                         )
+
+                st.caption(
+                    f"Sum semua trade: **{tot:+.2f}%** · "
+                    f"Compound: **{compound:+.2f}%** · "
+                    f"Rata-rata per trade: **{avg:+.2f}%** · "
+                    f"Compound = return kalau profit di-reinvest; "
+                    f"Avg = rata-rata per posisi"
+                )
 
             st.markdown(section_title("Ringkasan Harian vs IHSG"), unsafe_allow_html=True)
             df_rev["_tgl"] = pd.to_datetime(df_rev["Tanggal"], errors="coerce")
@@ -1031,10 +1108,19 @@ with tab6:
                     grp_pl = grp["P/L %"].dropna()
                     n_exec_d = len(grp_pl)
                     port_ret = grp_pl.mean() if n_exec_d > 0 else np.nan
-                    
+
                     tgl_date = pd.Timestamp(tgl).date()
                     ihsg_ret = ihsg_dict.get(tgl_date, np.nan)
-                    
+
+                    # Forward-fill: kalau tanggal tidak match, pakai IHSG terakhir ≤ tgl (max 3 hari)
+                    if pd.isna(ihsg_ret) and df_ihsg is not None and not df_ihsg.empty:
+                        prev = df_ihsg[df_ihsg["Date"].dt.date <= tgl_date]
+                        if not prev.empty:
+                            last = prev.iloc[-1]
+                            gap_days = (tgl_date - last["Date"].date()).days
+                            if gap_days <= 3:
+                                ihsg_ret = last["IHSG_Return"]
+
                     daily_rows.append({"Tanggal": tgl, "N_exec": n_exec_d, "Portofolio": port_ret, "IHSG": ihsg_ret})
 
                 df_daily = pd.DataFrame(daily_rows)
@@ -1045,11 +1131,11 @@ with tab6:
                         port = r["Portofolio"]
                         port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
                         port_col = "#ffffff" if (not pd.isna(port) and port >= 0) else "#737373"
-                        
+
                         ihsg = r["IHSG"]
                         ihsg_str = f"{ihsg:+.2f}%" if not pd.isna(ihsg) else "—"
                         ihsg_col = "#ffffff" if (not pd.isna(ihsg) and ihsg >= 0) else "#737373"
-                        
+
                         st.markdown(
                             '<div style="background:#171717; '
                             'border-radius:8px; margin-bottom:12px; padding:16px 20px; border:1px solid #27272a;">'
