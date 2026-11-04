@@ -178,8 +178,6 @@ def load_rekap_sheet(fname, sheet_name):
 # ============================================================
 @st.cache_data(ttl=3600)
 def load_ihsg_history():
-    """Coba baca IHSG dari CSV (multi folder), fallback parquet.
-    Log setiap langkah ke terminal Streamlit untuk diagnosa."""
     search_dirs = [OHLCV_DIR, OUTPUT_DIR, _BASE_DIR]
     fnames = ["IHSG.csv", "^JKSE.csv", "JKSE.csv"]
 
@@ -195,7 +193,6 @@ def load_ihsg_history():
                 print(f"[IHSG] ❌ gagal read_csv {path}: {e}")
                 continue
 
-            # Normalisasi kolom (case-insensitive + alias)
             col_map = {str(c).strip().lower(): c for c in df.columns}
 
             close_col = None
@@ -211,16 +208,11 @@ def load_ihsg_history():
                     break
 
             if not close_col or not date_col:
-                print(f"[IHSG] ❌ {path} — kolom tidak ketemu. "
-                      f"close={close_col}, date={date_col}, "
-                      f"columns={df.columns.tolist()}")
                 continue
 
-            # Parse Date (coerce — baris malform dibuang, sisanya lanjut)
             df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
             df = df.dropna(subset=[date_col])
 
-            # Parse Close (handle angka ber-koma)
             if not pd.api.types.is_numeric_dtype(df[close_col]):
                 s = df[close_col].astype(str).str.strip()
                 s_us = s.str.replace(",", "", regex=False).str.replace(" ", "", regex=False)
@@ -239,19 +231,12 @@ def load_ihsg_history():
             df = df[df[close_col] > 0]
 
             if len(df) < 2:
-                print(f"[IHSG] ⚠️ {path} — hanya {len(df)} baris valid (butuh ≥2)")
                 continue
 
             df = df.sort_values(date_col).reset_index(drop=True)
             df["IHSG_Return"] = df[close_col].pct_change() * 100
-
-            last_date = pd.Timestamp(df[date_col].iloc[-1]).date()
-            print(f"[IHSG] ✅ loaded {len(df)} baris dari {path} "
-                  f"(terakhir {last_date})")
-
             return df[[date_col, "IHSG_Return"]].rename(columns={date_col: "Date"})
 
-    # Fallback: parquet
     try:
         df_all = load_parquet_safe()
         if df_all is not None and "Kode" in df_all.columns:
@@ -266,12 +251,10 @@ def load_ihsg_history():
                 if len(sub) < 2:
                     continue
                 sub["IHSG_Return"] = sub["Close"].pct_change() * 100
-                print(f"[IHSG] ✅ loaded {len(sub)} baris dari parquet Kode={code}")
                 return sub[["Date", "IHSG_Return"]]
     except Exception as e:
-        print(f"[IHSG] ❌ parquet fallback gagal: {e}")
+        pass
 
-    print("[IHSG] ❌ TIDAK ADA SUMBER DATA BERHASIL DI-LOAD")
     return None
 
 
@@ -1100,12 +1083,9 @@ with tab6:
                     grp_pl = grp["P/L %"].dropna()
                     n_exec_d = len(grp_pl)
 
-                    # Skip hari tanpa eksekusi
-                    if n_exec_d == 0:
-                        continue
-
                     # Portofolio harian = SUM semua P/L trade hari itu
-                    port_ret = grp_pl.sum()
+                    # Jika 0 trade, portofolio kita set 0.00% (Flat)
+                    port_ret = grp_pl.sum() if n_exec_d > 0 else 0.0
 
                     tgl_date = pd.Timestamp(tgl).date()
                     ihsg_ret = ihsg_dict.get(tgl_date, np.nan)
@@ -1128,18 +1108,26 @@ with tab6:
                         tgl_str = pd.Timestamp(r["Tanggal"]).strftime("%d %b (%a)")
                         port = r["Portofolio"]
                         port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
-                        port_col = "#ffffff" if (not pd.isna(port) and port >= 0) else "#737373"
+                        
+                        # Jika 0 trade, warnanya abu-abu, jika profit/rugi baru warna putih/abu
+                        if r["N_exec"] == 0:
+                            port_col = "#737373"
+                        else:
+                            port_col = "#ffffff" if (not pd.isna(port) and port >= 0) else "#737373"
 
                         ihsg = r["IHSG"]
                         ihsg_str = f"{ihsg:+.2f}%" if not pd.isna(ihsg) else "—"
                         ihsg_col = "#ffffff" if (not pd.isna(ihsg) and ihsg >= 0) else "#737373"
+
+                        # Teks jumlah trade
+                        trade_txt = f"{r['N_exec']} trade" if r["N_exec"] > 0 else "Tidak ada trade"
 
                         st.markdown(
                             '<div style="background:#171717; '
                             'border-radius:8px; margin-bottom:12px; padding:16px 20px; border:1px solid #27272a;">'
                             f'<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">'
                             f'<span style="font-size:14px; color:#ffffff; font-weight:600;">{tgl_str}</span>'
-                            f'<span style="font-size:12px; color:#a3a3a3;">{r["N_exec"]} trade</span>'
+                            f'<span style="font-size:12px; color:#a3a3a3;">{trade_txt}</span>'
                             f'</div>'
                             f'<div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">'
                             f'<div>'
@@ -1148,7 +1136,7 @@ with tab6:
                             f'</div>'
                             f'<div>'
                             f'<div style="font-size:11px; color:#a3a3a3; margin-bottom:4px; text-transform:uppercase;">IHSG</div>'
-                            f'<div style="font-size:15px; font-weight:700; color:{ihsg_col};">{ihsg_str}</div>'
+                            f'<div style="font-size:15px; font-weight:700; color:{ihsg_color};">{ihsg_str}</div>'
                             f'</div>'
                             f'</div></div>', unsafe_allow_html=True
                         )
