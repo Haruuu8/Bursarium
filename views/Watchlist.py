@@ -1082,14 +1082,6 @@ with tab6:
                             '</div>', unsafe_allow_html=True
                         )
 
-                st.caption(
-                    f"Sum semua trade: **{tot:+.2f}%** · "
-                    f"Compound: **{compound:+.2f}%** · "
-                    f"Rata-rata per trade: **{avg:+.2f}%** · "
-                    f"Compound = return kalau profit di-reinvest; "
-                    f"Avg = rata-rata per posisi"
-                )
-
             st.markdown(section_title("Ringkasan Harian vs IHSG"), unsafe_allow_html=True)
             df_rev["_tgl"] = pd.to_datetime(df_rev["Tanggal"], errors="coerce")
             valid_tgl = df_rev.dropna(subset=["_tgl"])
@@ -1107,7 +1099,13 @@ with tab6:
                 for tgl, grp in valid_tgl.groupby("_tgl"):
                     grp_pl = grp["P/L %"].dropna()
                     n_exec_d = len(grp_pl)
-                    port_ret = grp_pl.mean() if n_exec_d > 0 else np.nan
+
+                    # Skip hari tanpa eksekusi
+                    if n_exec_d == 0:
+                        continue
+
+                    # Portofolio harian = SUM semua P/L trade hari itu
+                    port_ret = grp_pl.sum()
 
                     tgl_date = pd.Timestamp(tgl).date()
                     ihsg_ret = ihsg_dict.get(tgl_date, np.nan)
