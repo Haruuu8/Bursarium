@@ -252,7 +252,7 @@ def load_ihsg_history():
                     continue
                 sub["IHSG_Return"] = sub["Close"].pct_change() * 100
                 return sub[["Date", "IHSG_Return"]]
-    except Exception as e:
+    except Exception:
         pass
 
     return None
@@ -1023,9 +1023,8 @@ with tab6:
                 wr = (eksekusi["P/L %"] > 0).sum() / n_exec * 100
                 avg = eksekusi["P/L %"].mean()
                 tot = eksekusi["P/L %"].sum()
-                compound = ((1 + eksekusi["P/L %"] / 100).prod() - 1) * 100
             else:
-                wr = avg = tot = compound = 0
+                wr = avg = tot = 0
 
             st.markdown(
                 '<div style="background: #171717; '
@@ -1054,7 +1053,7 @@ with tab6:
                 for col, label, val in [
                     (c1, "WIN RATE", f"{wr:.1f}%"),
                     (c2, "AVG PER TRADE", f"{avg:+.2f}%"),
-                    (c3, "COMPOUND RETURN", f"{compound:+.2f}%"),
+                    (c3, "TOTAL RETURN", f"{tot:+.2f}%"),
                 ]:
                     with col:
                         st.markdown(
@@ -1109,7 +1108,7 @@ with tab6:
                         port = r["Portofolio"]
                         port_str = f"{port:+.2f}%" if not pd.isna(port) else "—"
                         
-                        # Jika 0 trade, warnanya abu-abu, jika profit/rugi baru warna putih/abu
+                        # Jika 0 trade, warnanya abu-abu
                         if r["N_exec"] == 0:
                             port_col = "#737373"
                         else:
