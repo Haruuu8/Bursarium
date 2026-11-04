@@ -248,7 +248,10 @@ def parse_xlsx(content_bytes):
                     matched = any(kw in ll for kw in kws)
                 if not matched: continue
                 is_ps = "per saham" in ll or field.startswith("eps")
-                min_abs = 0.0000001 if is_ps else 1000
+                
+                # FIX BUG 2: min_abs diturunkan jadi 1.0 agar data kecil tidak terbuang
+                min_abs = 0.0000001 if is_ps else 1.0
+                
                 for col in range(1, min(len(row), 5)):
                     num = _to_num(row.iloc[col])
                     if num is not None and num != 0 and abs(num) >= min_abs:
@@ -304,10 +307,12 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
     pendapatan = d.get("pendapatan")
     eps_idx = d.get("eps_basic")
     
+    # FIX BUG 1: Auto-scale diubah ke 1000 (bukan 1 Miliar)
     def scale_num(v):
         if v is None or pd.isna(v): return None
         v = float(v)
-        if abs(v) < 1_000_000: return v * 1_000_000_000
+        if abs(v) == 0: return 0
+        if abs(v) < 1_000_000: return v * 1000
         elif abs(v) < 1_000_000_000: return v * 1_000_000
         return v
     
@@ -367,9 +372,25 @@ def fetch_yfinance(kode):
     if not HAS_YF: return {}
     try:
         t = yf.Ticker(f"{kode}.JK")
-        info = t.info or {}
-    except Exception: return {}
+        try:
+            # Coba ambil t.info
+            info = t.info
+            if not info or ("currentPrice" not in info and "regularMarketPrice" not in info and "previousClose" not in info):
+                raise ValueError("Info kosong / Limit")
+        except Exception:
+            # FIX BUG 3: Fallback ke fast_info jika t.info error/kena limit
+            fi = t.fast_info
+            info = {
+                "currentPrice": fi.get("last_price"),
+                "marketCap": fi.get("market_cap"),
+                "sharesOutstanding": fi.get("shares"),
+                "previousClose": fi.get("previous_close")
+            }
+    except Exception: 
+        return {}
+    
     if not info: return {}
+    
     harga = (info.get("currentPrice") or info.get("regularMarketPrice") or info.get("previousClose"))
     return {
         "harga": harga, "market_cap": info.get("marketCap"), "enterprise_value": info.get("enterpriseValue"),
@@ -447,7 +468,8 @@ def _standalone(curr, prev, quarter_num):
     if quarter_num == 1: return curr
     if prev is None: return None
     result = curr - prev
-    return result if result != 0 else None
+    # FIX BUG 4: Hapus if result != 0 else None agar data 0 tidak dianggap hilang
+    return result
 
 def build_one(kode, verbose=False):
     kode = kode.strip().upper()
@@ -474,10 +496,12 @@ def build_one(kode, verbose=False):
         year_data = {qnum: all_periods[lbl] for lbl, v in all_periods.items() if v["year"] == year for qnum in [v["qnum"]]}
         prev_rev, prev_eps, prev_ni = None, None, None
         
+        # FIX BUG 1 (Bagian 2): Auto-scale di build_one juga diperbaiki
         def scale_build(v):
             if v is None or pd.isna(v): return None
             v = float(v)
-            if abs(v) < 1_000_000: return v * 1_000_000_000
+            if abs(v) == 0: return 0
+            if abs(v) < 1_000_000: return v * 1000
             elif abs(v) < 1_000_000_000: return v * 1_000_000
             return v
 
@@ -644,7 +668,7 @@ if __name__ == "__main__":
                         if k in row and row[k]: 
                             tickers.append(row[k].strip().upper())
                             break
-            print(f"📌 MODE ALL STOCKS (1000 Workers): Memproses {len(tickers)} saham dari daftar_saham.csv.")
+            print(f"📌 MODE ALL STOCKS: Memproses {len(tickers)} saham dari daftar_saham.csv.")
         else:
             print("⚠️ File daftar_saham.csv tidak ditemukan. Menggunakan 2026_tw3.json.")
             q3_file = REPORT_LIST_CACHE_DIR / "2026_tw3.json"
@@ -655,8 +679,8 @@ if __name__ == "__main__":
             else:
                 tickers = []
                 
-        # DISINI TEMPATNYA MENGUBAH WORKER MENJADI 1000
-        batch(tickers, workers=1000, delay=0.1)
+        # FIX BUG 5: Ubah workers dari 1000 menjadi 10 (atau 5) agar tidak diblokir server
+        batch(tickers, workers=10, delay=1.0)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]
         main([t.upper() for t in tickers])
