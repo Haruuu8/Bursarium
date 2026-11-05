@@ -96,7 +96,6 @@ if not saham_list:
 if "fund_kode" not in st.session_state:
     st.session_state.fund_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
-# GUNAKAN KEY, JANGAN GUNAKAN VALUE
 kode_input = st.text_input(
     "Kode Saham",
     key="fund_kode",
@@ -162,7 +161,7 @@ st.markdown(
 
 
 # ============================================================
-# RASIO KUNCI
+# RASIO KUNCI (Dikelompokkan ala Stockbit)
 # ============================================================
 rk = data.get("rasio_kunci", {})
 tahun = data.get("update", "")[:4] or "2026"
@@ -170,19 +169,62 @@ tahun = data.get("update", "")[:4] or "2026"
 st.markdown(section_title("Rasio Kunci", f"Tahun fiskal {tahun}"),
             unsafe_allow_html=True)
 
-metrics = [
-    ("P/E", fmt_num(rk.get("pe"), 2)),
+# 1. Valuation
+st.markdown('<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; font-weight: 600; text-transform: uppercase; margin: 0 0 12px 4px;">Valuation</div>', unsafe_allow_html=True)
+val_metrics = [
+    ("P/E (TTM)", fmt_num(rk.get("pe"), 2)),
     ("P/B", fmt_num(rk.get("pb"), 2)),
     ("P/S", fmt_num(rk.get("ps"), 2)),
+    ("PCF (TTM)", fmt_num(rk.get("pcf"), 2)),
+]
+cols = st.columns(2)
+for i, (label, val) in enumerate(val_metrics):
+    with cols[i % 2]:
+        st.markdown(
+            '<div style="background: #171717; border: 1px solid #27272a; '
+            'border-radius: 6px; padding: 14px 18px; margin-bottom: 10px; '
+            'display: flex; justify-content: space-between; align-items: center;">'
+            f'<div style="font-size: 13px; color: #a3a3a3;">{label}</div>'
+            f'<div style="font-size: 18px; font-weight: 600; color: #ffffff; '
+            f'letter-spacing: -0.02em;">{val}</div>'
+            '</div>',
+            unsafe_allow_html=True
+        )
+
+# 2. Per Share & Dividends
+st.markdown('<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; font-weight: 600; text-transform: uppercase; margin: 24px 0 12px 4px;">Per Share & Dividends</div>', unsafe_allow_html=True)
+share_metrics = [
+    ("EPS (TTM)", fmt_num(rk.get("eps"), 2)),
+    ("EPS (Annualised)", fmt_num(rk.get("eps_annualized"), 2)),
+    ("Book Value", fmt_num(rk.get("bv"), 2)),
+    ("Dividend Yield", fmt_pct(rk.get("div_yield"))),
+    ("Payout Ratio", fmt_pct(rk.get("payout_ratio"))),
+]
+cols = st.columns(2)
+for i, (label, val) in enumerate(share_metrics):
+    with cols[i % 2]:
+        st.markdown(
+            '<div style="background: #171717; border: 1px solid #27272a; '
+            'border-radius: 6px; padding: 14px 18px; margin-bottom: 10px; '
+            'display: flex; justify-content: space-between; align-items: center;">'
+            f'<div style="font-size: 13px; color: #a3a3a3;">{label}</div>'
+            f'<div style="font-size: 18px; font-weight: 600; color: #ffffff; '
+            f'letter-spacing: -0.02em;">{val}</div>'
+            '</div>',
+            unsafe_allow_html=True
+        )
+
+# 3. Profitability & Solvency
+st.markdown('<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; font-weight: 600; text-transform: uppercase; margin: 24px 0 12px 4px;">Profitability & Solvency</div>', unsafe_allow_html=True)
+prof_metrics = [
     ("ROE", fmt_pct(rk.get("roe"))),
-    ("EPS", fmt_num(rk.get("eps"), 2)),
-    ("D/E", fmt_num(rk.get("de"), 2)),
+    ("ROA", fmt_pct(rk.get("roa"))),
     ("Margin Bersih", fmt_pct(rk.get("margin_net"))),
+    ("D/E", fmt_num(rk.get("de"), 2)),
     ("Current Ratio", fmt_num(rk.get("current_ratio"), 2)),
 ]
-
 cols = st.columns(2)
-for i, (label, val) in enumerate(metrics):
+for i, (label, val) in enumerate(prof_metrics):
     with cols[i % 2]:
         st.markdown(
             '<div style="background: #171717; border: 1px solid #27272a; '
@@ -204,13 +246,11 @@ q_rev = quarterly.get("revenue", {}) or {}
 q_eps = quarterly.get("eps", {}) or {}
 q_ni = quarterly.get("net_income", {}) or {}
 
-
 def get_last_4(d):
     if not d:
         return []
     keys = sorted(d.keys(), reverse=True)[:4]
     return [(k, d[k]) for k in keys]
-
 
 rev_4q = get_last_4(q_rev)
 eps_4q = get_last_4(q_eps)
@@ -300,58 +340,6 @@ if rev_4q or eps_4q:
 
 
 # ============================================================
-# RIWAYAT TAHUNAN
-# ============================================================
-riwayat = data.get("riwayat", {})
-eps_hist = riwayat.get("eps", {}) or {}
-rev_hist = riwayat.get("revenue_per_share", {}) or riwayat.get("revenue", {}) or {}
-tahun_list = sorted(set(list(eps_hist.keys()) + list(rev_hist.keys())),
-                    reverse=True)[:5]
-
-if tahun_list:
-    st.markdown(section_title("Riwayat Tahunan", "EPS & pendapatan per tahun"),
-                unsafe_allow_html=True)
-
-    rows = ""
-    for y in tahun_list:
-        e = eps_hist.get(y)
-        r = rev_hist.get(y)
-        rows += (
-            '<tr>'
-            f'<td style="padding: 12px 14px; color: #ffffff; font-weight: 500; '
-            f'border-bottom: 1px solid #27272a; font-size: 13px;">{y}</td>'
-            f'<td style="padding: 12px 14px; color: #a3a3a3; '
-            f'border-bottom: 1px solid #27272a; font-size: 13px;">'
-            f'{fmt_num(e, 0) if e else "—"}</td>'
-            f'<td style="padding: 12px 14px; color: #a3a3a3; '
-            f'border-bottom: 1px solid #27272a; font-size: 13px;">'
-            f'{fmt_num(r, 0) if r else "—"}</td>'
-            '</tr>'
-        )
-
-    st.markdown(
-        '<div style="background: #171717; border: 1px solid #27272a; '
-        'border-radius: 8px; padding: 4px; margin-bottom: 12px; overflow: hidden;">'
-        '<table style="width: 100%; border-collapse: collapse;">'
-        '<thead><tr>'
-        '<th style="text-align: left; padding: 12px 14px; font-size: 11px; '
-        'color: #a3a3a3; font-weight: 500; letter-spacing: 0.06em; '
-        'text-transform: uppercase; border-bottom: 1px solid #27272a;">Tahun</th>'
-        '<th style="text-align: left; padding: 12px 14px; font-size: 11px; '
-        'color: #a3a3a3; font-weight: 500; letter-spacing: 0.06em; '
-        'text-transform: uppercase; border-bottom: 1px solid #27272a;">EPS</th>'
-        '<th style="text-align: left; padding: 12px 14px; font-size: 11px; '
-        'color: #a3a3a3; font-weight: 500; letter-spacing: 0.06em; '
-        'text-transform: uppercase; border-bottom: 1px solid #27272a;">'
-        'Pendapatan/Saham</th>'
-        '</tr></thead>'
-        f'<tbody>{rows}</tbody>'
-        '</table></div>',
-        unsafe_allow_html=True
-    )
-
-
-# ============================================================
 # STATISTIK
 # ============================================================
 stat = data.get("statistik", {})
@@ -378,32 +366,3 @@ for i, (label, val) in enumerate(stat_items):
             '</div>',
             unsafe_allow_html=True
         )
-
-st.markdown(
-    f'<div style="font-size: 11px; color: #a3a3a3; letter-spacing: 0.08em; '
-    f'font-weight: 500; text-transform: uppercase; margin: 24px 0 12px 2px;">'
-    f'RASIO EKUITAS {tahun}</div>',
-    unsafe_allow_html=True
-)
-
-roe_str = fmt_pct(rk.get("roe"))
-roa_str = fmt_pct(rk.get("roa"))
-
-c1, c2 = st.columns(2)
-for col, label, val in [
-    (c1, "ROE", roe_str),
-    (c2, "ROA", roa_str),
-]:
-    with col:
-        st.markdown(
-            '<div style="background: #171717; border: 1px solid #27272a; '
-            'border-radius: 6px; padding: 16px 18px;">'
-            f'<div style="font-size: 11px; color: #a3a3a3; font-weight: 500; '
-            f'letter-spacing: 0.06em; text-transform: uppercase; '
-            f'margin-bottom: 6px;">{label}</div>'
-            f'<div style="font-size: 24px; font-weight: 600; color: #ffffff; '
-            f'letter-spacing: -0.02em;">{val}</div>'
-            '</div>',
-            unsafe_allow_html=True
-        )
-
