@@ -1064,6 +1064,40 @@ with tab6:
                             '</div>', unsafe_allow_html=True
                         )
 
+                # ============================================================
+                # TAMBAHAN: TOP 5 SAHAM PROFIT TERBESAR
+                # ============================================================
+                profit_df = eksekusi[eksekusi["P/L %"] > 0].copy()
+                if not profit_df.empty:
+                    top_profits = profit_df.sort_values("P/L %", ascending=False).head(5)
+
+                    st.markdown(section_title("Top 5 Saham Kontributor Profit", "Berdasarkan persentase keuntungan terbesar"), unsafe_allow_html=True)
+
+                    html_top = '<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">'
+                    for i, (_, row) in enumerate(top_profits.iterrows()):
+                        kode = str(row.get("Kode", "-"))
+                        nama = nama_map.get(kode, kode)
+                        pl_pct = row.get("P/L %", 0)
+                        tgl = pd.to_datetime(row.get("Tanggal", ""), errors="coerce")
+                        tgl_str = tgl.strftime("%d %b") if pd.notna(tgl) else ""
+
+                        html_top += (
+                            f'<div style="background:#171717; border-radius:8px; padding:16px 20px; border:1px solid #27272a; display:flex; justify-content:space-between; align-items:center;">'
+                            f'<div style="display:flex; align-items:center; gap:16px;">'
+                            f'<div style="font-size:18px; font-weight:700; color:#a3a3a3; width:25px;">#{i+1}</div>'
+                            f'<div>'
+                            f'<div style="font-size:16px; font-weight:700; color:#ffffff;">{kode}</div>'
+                            f'<div style="font-size:12px; color:#a3a3a3;">{nama} {f"· {tgl_str}" if tgl_str else ""}</div>'
+                            f'</div>'
+                            f'</div>'
+                            f'<div style="text-align:right;">'
+                            f'<div style="font-size:18px; font-weight:700; color:#ffffff;">{pl_pct:+.2f}%</div>'
+                            f'</div>'
+                            f'</div>'
+                        )
+                    html_top += '</div>'
+                    st.markdown(html_top, unsafe_allow_html=True)
+
             st.markdown(section_title("Ringkasan Harian vs IHSG"), unsafe_allow_html=True)
             df_rev["_tgl"] = pd.to_datetime(df_rev["Tanggal"], errors="coerce")
             valid_tgl = df_rev.dropna(subset=["_tgl"])
