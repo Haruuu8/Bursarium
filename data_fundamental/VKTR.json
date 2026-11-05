@@ -3,20 +3,24 @@
   "nama": "PT VKTR Teknologi Mobilitas Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Recreational Vehicles",
-  "harga": 248.0,
-  "update": "2026-11-04 19:59",
+  "harga": 238.0,
+  "update": "2026-11-05 11:46",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 13.617555421616405,
-    "ps": 12391.211016917137,
-    "roe": 0.0013139244364069199,
+    "pb": 13.068460444938324,
+    "ps": 11891.565411396285,
+    "roe": -7.293191072980787e-07,
     "eps": -1.3282203230310343e-05,
+    "eps_annualized": 0.06,
     "de": 0.5372829652715684,
-    "margin_net": 0.0021161456821984456,
+    "margin_net": -0.0006636394475659431,
     "current_ratio": 2.0877898567905917,
-    "roa": 0.0007545450192598855,
-    "bv": 18.211785619489874
+    "roa": -4.1882476999035217e-07,
+    "bv": 18.211785619489874,
+    "pcf": 8.213553074684975e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 14209088749568,
-    "enterprise_value": 11961306710016,
+    "market_cap": 13636141580288,
+    "enterprise_value": 11173807259648,
     "shares_outstanding": 57294711337
   },
   "akumulasi": {

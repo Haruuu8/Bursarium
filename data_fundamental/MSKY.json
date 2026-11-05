@@ -3,20 +3,24 @@
   "nama": "PT MNC Sky Vision Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 27.0,
-  "update": "2026-11-04 20:51",
+  "harga": 26.0,
+  "update": "2026-11-05 12:30",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 839.7061304844123,
-    "roe": -0.10055945596367066,
+    "ps": 808.605903429434,
+    "roe": -0.27126130349568195,
     "eps": -0.01926462529283634,
+    "eps_annualized": -1.42e-05,
     "de": 0.7720675865730569,
-    "margin_net": -0.5932803492285648,
+    "margin_net": -0.5991342207362866,
     "current_ratio": 0.6434282946498616,
-    "roa": -0.056746919020397496,
-    "bv": 0.07101870058345053
+    "roa": -0.00015307603919812455,
+    "bv": 0.07101870058345053,
+    "pcf": 1.3037395714585303e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 269240008704,
+    "market_cap": 259268165632,
     "enterprise_value": 447283265536,
     "shares_outstanding": 9971852402
   },

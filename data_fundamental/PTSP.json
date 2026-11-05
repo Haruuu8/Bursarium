@@ -3,20 +3,24 @@
   "nama": "PT Pioneerindo Gourmet International Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 2040.0,
-  "update": "2026-11-04 20:57",
+  "harga": 1900.0,
+  "update": "2026-11-05 12:34",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0005837382626313877,
+    "ps": 0.0005436777936272727,
     "roe": 0.11018898135354238,
     "eps": null,
+    "eps_annualized": 0.0001904,
     "de": 0.8238658984245634,
     "margin_net": 0.054467543318802006,
     "current_ratio": 1.2834050356501736,
     "roa": 0.057663480888327664,
-    "bv": 863737.2106083113
+    "bv": 863737.2106083113,
+    "pcf": 4.1441805654559915e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 450448326656,
-    "enterprise_value": 523066703872,
+    "market_cap": 419535192064,
+    "enterprise_value": 489904996352,
     "shares_outstanding": 220808000
   },
   "akumulasi": {

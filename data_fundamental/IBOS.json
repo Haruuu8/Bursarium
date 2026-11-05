@@ -3,20 +3,24 @@
   "nama": "PT Indo Boga Sukses Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 50.0,
-  "update": "2026-11-04 19:48",
+  "harga": 48.0,
+  "update": "2026-11-05 11:37",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 127.52142626297801,
-    "pb": 1.1718195734552914,
-    "ps": 3.844195262687764,
+    "pe": null,
+    "pb": null,
+    "ps": 3.6904274521802536e-06,
     "roe": 0.004594598758010809,
-    "eps": 0.3920909722017122,
+    "eps": null,
+    "eps_annualized": 0.4,
     "de": 0.07262987507741062,
     "margin_net": 0.03014548515760923,
     "current_ratio": 2.0142412035026354,
     "roa": 0.004266614030337769,
-    "bv": 42.66868478102585
+    "bv": 42668684.78102586,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 403289473024,
-    "enterprise_value": 453885984768,
+    "market_cap": 387157884928,
+    "enterprise_value": 421622808576,
     "shares_outstanding": 8065789529
   },
   "akumulasi": {

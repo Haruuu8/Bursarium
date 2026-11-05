@@ -3,20 +3,24 @@
   "nama": "PT Link Net Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 930.0,
-  "update": "2026-11-04 20:45",
+  "harga": 900.0,
+  "update": "2026-11-05 12:25",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.9403432261859217,
-    "ps": 867.5612821811307,
-    "roe": -0.31266067522328395,
+    "pb": 0.9100095737283114,
+    "ps": 839.5754343688361,
+    "roe": -0.0005597596177499264,
     "eps": -0.5536025889386317,
+    "eps_annualized": -618.0,
     "de": 3.9678495349276086,
-    "margin_net": -0.6226416473884471,
+    "margin_net": -0.5164345934176265,
     "current_ratio": 0.23288950555784488,
-    "roa": -0.06293678281887068,
-    "bv": 989.0005841506677
+    "roa": -0.00011267636861572809,
+    "bv": 989.0005841506677,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2561177026560,
-    "enterprise_value": 11025589993472,
+    "market_cap": 2478558412800,
+    "enterprise_value": 10846583390208,
     "shares_outstanding": 2753953884
   },
   "akumulasi": {

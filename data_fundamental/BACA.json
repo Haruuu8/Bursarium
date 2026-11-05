@@ -3,20 +3,24 @@
   "nama": "PT Bank Capital Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 87.0,
-  "update": "2026-11-04 20:19",
+  "harga": 89.0,
+  "update": "2026-11-05 12:03",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 32.103321033210335,
-    "pb": 0.2548927488041393,
-    "ps": 1080.9179575824335,
-    "roe": 0.007948617159691982,
-    "eps": 2.71,
+    "pe": null,
+    "pb": 0.26075235222492416,
+    "ps": 1105.7666462624893,
+    "roe": 1.4245928303129626e-05,
+    "eps": 0.004862420638433439,
+    "eps_annualized": 5.42,
     "de": 2.759826746488111,
-    "margin_net": 0.06179171194535509,
+    "margin_net": 0.060412388337955696,
     "current_ratio": null,
-    "roa": 0.00211409133868108,
-    "bv": 341.32002737689163
+    "roa": 3.7889853080161526e-06,
+    "bv": 341.32002737689163,
+    "pcf": 1.102028170834859,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1735913111552,
+    "market_cap": 1775819292672,
     "enterprise_value": 4903475347456,
     "shares_outstanding": 19953024885
   },

@@ -3,20 +3,24 @@
   "nama": "PT Sumber Alfaria Trijaya Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Grocery Stores",
-  "harga": 870.0,
-  "update": "2026-11-04 20:17",
+  "harga": 920.0,
+  "update": "2026-11-05 12:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 8.826615731964393,
-    "pb": 2.0083355129596168,
-    "ps": 0.26303843389882764,
+    "pe": 9.333892498169243,
+    "pb": 2.1237570941641923,
+    "ps": 0.2781555852723235,
     "roe": 0.11376588569992356,
     "eps": 98.56552345984802,
+    "eps_annualized": 9.846e-05,
     "de": 1.3275156035490174,
     "margin_net": 0.029800598767007563,
     "current_ratio": 1.0360073606254334,
     "roa": 0.0473280757930136,
-    "bv": 433.1945506046996
+    "bv": 433.1945506046996,
+    "pcf": 4.197036328851605,
+    "div_yield": 4.804443038755422,
+    "payout_ratio": 44892216.08424728
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 35749894291456,
-    "enterprise_value": 34960215900160,
+    "market_cap": 37804486688768,
+    "enterprise_value": 35576594038784,
     "shares_outstanding": 41091832700
   },
   "akumulasi": {

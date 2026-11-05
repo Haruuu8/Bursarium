@@ -3,20 +3,24 @@
   "nama": "PT Gunung Raja Paksi Tbk",
   "sektor": "Basic Materials",
   "industri": "Steel",
-  "harga": 326.0,
-  "update": "2026-11-04 21:26",
+  "harga": 332.0,
+  "update": "2026-11-05 13:00",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.01987067060239928,
-    "roe": 0.0028861962464139363,
+    "ps": 0.02023638846624712,
+    "roe": -0.04397067000095665,
     "eps": -2310.9596826305556,
+    "eps_annualized": 0.0004,
     "de": 0.33683542170056197,
-    "margin_net": 0.016735546263753613,
+    "margin_net": -0.14085987309502132,
     "current_ratio": 1.8448072852450212,
-    "roa": 0.0021589764899724627,
-    "bv": 52556.84488274292
+    "roa": -0.032891610505818604,
+    "bv": 52556.84488274292,
+    "pcf": null,
+    "div_yield": 469.3752922211023,
+    "payout_ratio": 389581492.5435149
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3948308594688,
-    "enterprise_value": 3899989950464,
+    "market_cap": 4020977008640,
+    "enterprise_value": 3948435472384,
     "shares_outstanding": 12111376157
   },
   "akumulasi": {

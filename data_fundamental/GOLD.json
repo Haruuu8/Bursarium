@@ -3,20 +3,24 @@
   "nama": "PT Visi Telekomunikasi Infrastruktur Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 248.0,
-  "update": "2026-11-04 20:36",
+  "harga": 264.0,
+  "update": "2026-11-05 12:16",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.005341721046447953,
-    "roe": 0.022630596291778445,
+    "ps": 0.005686348210734917,
+    "roe": 0.04329711820844403,
     "eps": null,
+    "eps_annualized": 0.0156,
     "de": 0.12955878870539334,
-    "margin_net": 0.31838948169923814,
+    "margin_net": 0.3246562107942093,
     "current_ratio": 0.5916494607169964,
-    "roa": 0.020034830749728595,
-    "bv": 348124.9902135482
+    "roa": 0.0383308695923451,
+    "bv": 348124.9902135482,
+    "pcf": 2.3280156371200104e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 316764454912,
+    "market_cap": 337200873472,
     "enterprise_value": 317127983104,
     "shares_outstanding": 1277276000
   },

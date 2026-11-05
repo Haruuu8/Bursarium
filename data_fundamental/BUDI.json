@@ -3,20 +3,24 @@
   "nama": "PT Budi Starch & Sweetener Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 208.0,
-  "update": "2026-11-04 20:15",
+  "harga": 210.0,
+  "update": "2026-11-05 11:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 12.515042117930204,
-    "pb": 0.5744910295711853,
-    "ps": 0.4223356170418989,
-    "roe": 0.04591755785278979,
-    "eps": 16.62,
+    "pe": null,
+    "pb": 0.5800149817786004,
+    "ps": 0.4263965364365325,
+    "roe": 8.70642207476739e-05,
+    "eps": 0.03152243809452248,
+    "eps_annualized": 33.24,
     "de": 1.5538506005128805,
-    "margin_net": 0.03377706243104195,
+    "margin_net": 6.400504011209237e-05,
     "current_ratio": 1.6644794805417835,
-    "roa": 0.017383321956620734,
-    "bv": 362.0596132810925
+    "roa": 3.296049378347245e-05,
+    "bv": 362.0596132810925,
+    "pcf": 3.363748381503083e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 934185598976,
-    "enterprise_value": 2845791485952,
+    "market_cap": 943168159744,
+    "enterprise_value": 2854789578752,
     "shares_outstanding": 4491276962
   },
   "akumulasi": {

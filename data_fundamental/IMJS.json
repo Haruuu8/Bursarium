@@ -3,20 +3,24 @@
   "nama": "PT Indomobil Multi Jasa Tbk",
   "sektor": "Industrials",
   "industri": "Conglomerates",
-  "harga": 135.0,
-  "update": "2026-11-04 20:38",
+  "harga": 139.0,
+  "update": "2026-11-05 12:19",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.26624542662060824,
-    "ps": 0.2382529430854369,
-    "roe": 0.030892567689287054,
+    "pb": 0.2741341800019596,
+    "ps": 0.24531228954722764,
+    "roe": 4.228041189363129e-05,
     "eps": 0.02143832357268524,
+    "eps_annualized": 3.132e-05,
     "de": 5.1822614957765945,
-    "margin_net": 0.05133208363966535,
+    "margin_net": 3.783513841489005e-05,
     "current_ratio": 0.7545014413395064,
-    "roa": 0.00499062158763929,
-    "bv": 507.05096314150387
+    "roa": 6.830301011327393e-06,
+    "bv": 507.05096314150387,
+    "pcf": 1.0375612075560645,
+    "div_yield": 0.002983990913615046,
+    "payout_ratio": 13243.126979326036
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1464650432512,
-    "enterprise_value": 26910088232960,
+    "market_cap": 1508047454208,
+    "enterprise_value": 26899237568512,
     "shares_outstanding": 10849262500
   },
   "akumulasi": {

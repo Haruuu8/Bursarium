@@ -3,20 +3,24 @@
   "nama": "PT Bank Artha Graha Internasional Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 106.0,
-  "update": "2026-11-04 20:39",
+  "harga": 110.0,
+  "update": "2026-11-05 12:20",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 14.247311827956988,
-    "pb": 0.5536788609832461,
-    "ps": 1355.8252649387448,
-    "roe": 0.019445433098484233,
+    "pe": 14.784946236559138,
+    "pb": 0.5745724029071422,
+    "ps": 1406.988482483603,
+    "roe": 1.9445433098484235e-05,
     "eps": 7.44,
+    "eps_annualized": 7.44,
     "de": 6.314357288492463,
     "margin_net": 0.09523430038770722,
     "current_ratio": null,
-    "roa": 0.0026585292912990944,
-    "bv": 191.44671662515842
+    "roa": 2.6585292912990946e-06,
+    "bv": 191.44671662515842,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2143681642496,
-    "enterprise_value": 657085562880,
+    "market_cap": 2224575217664,
+    "enterprise_value": 616638775296,
     "shares_outstanding": 20223412907
   },
   "akumulasi": {

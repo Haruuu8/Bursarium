@@ -3,28 +3,32 @@
   "nama": "PT Argha Karya Prima Industry Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
-  "harga": 620.0,
-  "update": "2026-11-04 20:16",
+  "harga": 630.0,
+  "update": "2026-11-05 11:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": -0.0005218449320651648,
-    "roe": 0.03421289145241684,
+    "ps": 0.00011847572881506394,
+    "roe": 0.03517458074182697,
     "eps": null,
+    "eps_annualized": 0.216,
     "de": 1.1277013839505154,
-    "margin_net": 0.03774571411615214,
+    "margin_net": 0.020916695438618568,
     "current_ratio": 1.2827710725435553,
-    "roa": 0.016080316436981296,
-    "bv": 3.1620978410709384
+    "roa": 0.016532317639781656,
+    "bv": 3162097.8410709384,
+    "pcf": 3.292335183134017e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 729164217000000.0,
-      "2025-Q2": -727709587370000.0,
-      "2025-Q3": -1452399598223.0,
+      "2025-Q2": 725465413000000.0,
+      "2025-Q3": 775402147000000.0,
       "2026-Q1": 720592582000000.0,
-      "2026-Q2": -718837793369000.0
+      "2026-Q2": 1034196049000000.0
     },
     "eps": {
       "2025-Q1": 0.0,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 379593752576,
-    "enterprise_value": 1713306861568,
+    "market_cap": 385716224000,
+    "enterprise_value": 1728584220672,
     "shares_outstanding": 612248000
   },
   "akumulasi": {

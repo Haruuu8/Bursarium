@@ -3,28 +3,32 @@
   "nama": "PT KMI Wire and Cable Tbk",
   "sektor": "Industrials",
   "industri": "Electrical Equipment & Parts",
-  "harga": 326.0,
-  "update": "2026-11-04 20:43",
+  "harga": 324.0,
+  "update": "2026-11-05 12:22",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": -0.00022332704747547673,
-    "roe": 0.03287566365279464,
+    "ps": 4.5547526842769954e-05,
+    "roe": 0.06735130191198575,
     "eps": null,
+    "eps_annualized": 0.046,
     "de": 0.2803798826606178,
-    "margin_net": 0.045247787845847626,
+    "margin_net": 0.049070015773236074,
     "current_ratio": 4.3205427427485095,
-    "roa": 0.024941145493919372,
-    "bv": 5.182632476785714
+    "roa": 0.05109611285516761,
+    "bv": 5182632.476785715,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 819567242000000.0,
-      "2025-Q2": -817849798009000.0,
-      "2025-Q3": -1714749596405.0,
+      "2025-Q2": 897876749000000.0,
+      "2025-Q3": 976950604000000.0,
       "2026-Q1": 869981878000000.0,
-      "2026-Q2": -867873174027000.0
+      "2026-Q2": 1238722095000000.0
     },
     "eps": {
       "2025-Q1": 10.5,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1306358579200,
-    "enterprise_value": 1693679091712,
+    "market_cap": 1298344181760,
+    "enterprise_value": 1685664563200,
     "shares_outstanding": 560000000
   },
   "akumulasi": {

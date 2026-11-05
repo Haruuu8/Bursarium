@@ -3,20 +3,24 @@
   "nama": "PT Alakasa Industrindo Tbk",
   "sektor": "Basic Materials",
   "industri": "Aluminum",
-  "harga": 4460.0,
-  "update": "2026-11-04 20:17",
+  "harga": 5575.0,
+  "update": "2026-11-05 12:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.005448244061925385,
-    "roe": -0.0011381591609892013,
+    "ps": 0.00681030507740673,
+    "roe": 0.010783573969134262,
     "eps": null,
+    "eps_annualized": 1.04,
     "de": 0.09485982032750176,
-    "margin_net": -0.005427876531274169,
+    "margin_net": 0.028747413455143953,
     "current_ratio": 12.683160395117465,
-    "roa": -0.0010344529713641082,
-    "bv": 2182299.5244755247
+    "roa": 0.009801001930696955,
+    "bv": 2182299.5244755247,
+    "pcf": 5.935675975031086e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2264186224640,
-    "enterprise_value": 2403584704512,
+    "market_cap": 2830232715264,
+    "enterprise_value": 2236055289856,
     "shares_outstanding": 107250000
   },
   "akumulasi": {

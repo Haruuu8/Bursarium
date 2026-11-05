@@ -3,20 +3,24 @@
   "nama": "PT Matahari Putra Prima Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
-  "harga": 28.0,
-  "update": "2026-11-04 20:51",
+  "harga": 27.0,
+  "update": "2026-11-05 12:29",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.1285140488300197,
-    "roe": 0.8725925529638348,
+    "ps": 0.12392426137180472,
+    "roe": 2.7321313931093516,
     "eps": -0.0030192552316891876,
+    "eps_annualized": -5.332298,
     "de": -83.78244703616521,
-    "margin_net": -0.008145438818942584,
+    "margin_net": -1.3857739795557025e-05,
     "current_ratio": 0.7554504609933961,
-    "roa": -0.010535736432506175,
-    "bv": -0.0011050915191355673
+    "roa": -3.2987923354382626e-05,
+    "bv": -0.0011050915191355673,
+    "pcf": 2.380930093115717e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 947208454144,
+    "market_cap": 913379557376,
     "enterprise_value": 1502311743488,
     "shares_outstanding": 33828872408
   },

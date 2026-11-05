@@ -3,20 +3,24 @@
   "nama": "PT Hanjaya Mandala Sampoerna Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Tobacco",
-  "harga": 625.0,
-  "update": "2026-11-04 20:37",
+  "harga": 645.0,
+  "update": "2026-11-05 12:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 8.17054147000474,
-    "pb": 2.5728564137469245,
-    "ps": 0.6262761227686208,
-    "roe": 0.2305679860235316,
+    "pe": 8.43199879704489,
+    "pb": 2.655187818986826,
+    "ps": 0.6463169586972166,
+    "roe": 0.31489423598084165,
     "eps": 76.49431831347617,
+    "eps_annualized": 7.466666666666666e-05,
     "de": 0.7840742155710642,
-    "margin_net": 0.07444673544545241,
+    "margin_net": 0.0766505041395081,
     "current_ratio": 1.8761619264183325,
-    "roa": 0.12923676829762887,
-    "bv": 242.92066850702895
+    "roa": 0.1765028793267141,
+    "bv": 242.92066850702895,
+    "pcf": 7.297759334178877,
+    "div_yield": 8.725235687411152,
+    "payout_ratio": 75372013.63902044
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 72698797490176,
-    "enterprise_value": 64438493249536,
+    "market_cap": 75025159815168,
+    "enterprise_value": 63856902668288,
     "shares_outstanding": 116318076900
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT FKS Food Sejahtera Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 88.0,
-  "update": "2026-11-04 20:15",
+  "harga": 90.0,
+  "update": "2026-11-05 11:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 152.62468203191244,
+    "pe": 156.093424805365,
     "pb": null,
-    "ps": 5.848592350159359,
-    "roe": 0.03528670924812328,
+    "ps": 5.981514903572072,
+    "roe": 6.552897231195084e-05,
     "eps": 0.5765777777777777,
+    "eps_annualized": 9e-06,
     "de": 0.9061726274812875,
-    "margin_net": 0.03988349433267107,
+    "margin_net": 0.03832009523162493,
     "current_ratio": 0.9533349456116126,
-    "roa": 0.018523035912991447,
-    "bv": 8798.822222222223
+    "roa": 3.4398093031025366e-05,
+    "bv": 8798.822222222223,
+    "pcf": 9.801548846253686e-08,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 334903377920,
-    "enterprise_value": 968312815616,
+    "market_cap": 342514794496,
+    "enterprise_value": 940377374720,
     "shares_outstanding": 135000000
   },
   "akumulasi": {

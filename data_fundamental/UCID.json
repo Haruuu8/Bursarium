@@ -4,19 +4,23 @@
   "sektor": "Consumer Defensive",
   "industri": "Household & Personal Products",
   "harga": 390.0,
-  "update": "2026-11-04 21:28",
+  "update": "2026-11-05 13:03",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 10.263157894736842,
+    "pe": null,
     "pb": 0.3409721000622602,
     "ps": 0.18861525001308968,
-    "roe": 0.03336369219896345,
-    "eps": 38.0,
+    "roe": 8.627036077269973e-06,
+    "eps": 0.009867505492446265,
+    "eps_annualized": 76.0,
     "de": 0.763557582284445,
-    "margin_net": 0.0356863960000027,
+    "margin_net": 4.772210296059712e-06,
     "current_ratio": 2.2899970985899145,
-    "roa": 0.018915898255628835,
-    "bv": 1143.788597157326
+    "roa": 4.8911893717311075e-06,
+    "bv": 1143.788597157326,
+    "pcf": 4.557362998846426e-06,
+    "div_yield": 4323.582210101831,
+    "payout_ratio": 22186.803446575184
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 1621063237632,
-    "enterprise_value": 756414611456,
+    "enterprise_value": 789667184640,
     "shares_outstanding": 4156572300
   },
   "akumulasi": {

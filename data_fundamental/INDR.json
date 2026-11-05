@@ -3,20 +3,24 @@
   "nama": "PT. Indo-Rama Synthetics Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Textile Manufacturing",
-  "harga": 2360.0,
-  "update": "2026-11-04 20:39",
+  "harga": 2470.0,
+  "update": "2026-11-05 12:19",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0018631599707453956,
+    "ps": 0.001950002172771664,
     "roe": 0.009417339558111507,
     "eps": null,
+    "eps_annualized": 0.0218,
     "de": 1.0549904644803594,
     "margin_net": 0.008599279335088654,
     "current_ratio": 1.0123456948333267,
     "roa": 0.004533524298394094,
-    "bv": 578316.640656368
+    "bv": 578316.640656368,
+    "pcf": 0.04970084805289374,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1544269987840,
-    "enterprise_value": 1622881337344,
+    "market_cap": 1616248700928,
+    "enterprise_value": 1544359116800,
     "shares_outstanding": 654351707
   },
   "akumulasi": {

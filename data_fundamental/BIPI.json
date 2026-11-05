@@ -3,20 +3,24 @@
   "nama": "PT Astrindo Nusantara Infrastruktur Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 79.0,
-  "update": "2026-11-04 20:23",
+  "harga": 78.0,
+  "update": "2026-11-05 12:06",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.021658233457807586,
-    "roe": 0.00943636584565351,
+    "ps": 0.021384078603911286,
+    "roe": -0.01907090589997348,
     "eps": -149.50723784376564,
+    "eps_annualized": 0.00014,
     "de": 1.990565798379525,
-    "margin_net": 0.04593250959415767,
+    "margin_net": -0.04098813494749673,
     "current_ratio": 1.218687105947384,
-    "roa": 0.0028937990069941317,
-    "bv": 7839.5456738095245
+    "roa": -0.005848371021058035,
+    "bv": 7839.5456738095245,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5033105555456,
-    "enterprise_value": 4831275646976,
+    "market_cap": 4969395126272,
+    "enterprise_value": 4956747726848,
     "shares_outstanding": 60059379917
   },
   "akumulasi": {

@@ -4,35 +4,39 @@
   "sektor": "Communication Services",
   "industri": "Telecom Services",
   "harga": 420.0,
-  "update": "2026-11-04 19:55",
+  "update": "2026-11-05 11:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": 38.81479447479642,
-    "pb": 4.6483130608495955,
-    "ps": 2.2176840248168155,
+    "pb": null,
+    "ps": 2.2176840248168155e-06,
     "roe": 0.059878109928778324,
     "eps": 10.8206163573201,
+    "eps_annualized": 10.8206163573201,
     "de": 0.6946901940194816,
     "margin_net": 0.05713501912928644,
     "current_ratio": 2.779566586475454,
     "roa": 0.035332776539385574,
-    "bv": 90.35535999875931
+    "bv": 90355359.9987593,
+    "pcf": 3.501470791502694e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q3": 41900955286.0
+      "2025-Q3": 4.1900955286e+16
     },
     "eps": {
       "2025-Q3": 6.2
     },
     "net_income": {
-      "2025-Q3": 5001096813.0
+      "2025-Q3": 5001096813000000.0
     },
     "note": "standalone"
   },
   "statistik": {
     "market_cap": 338520014848,
-    "enterprise_value": 366384218112,
+    "enterprise_value": 364772229120,
     "shares_outstanding": 806000000
   },
   "akumulasi": {

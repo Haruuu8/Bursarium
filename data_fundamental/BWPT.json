@@ -3,20 +3,24 @@
   "nama": "PT Eagle High Plantations Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 76.0,
-  "update": "2026-11-04 20:27",
+  "harga": 78.0,
+  "update": "2026-11-05 12:09",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 11.199655213689784,
-    "pb": 0.7884956188872254,
-    "ps": 0.38318235323182637,
-    "roe": 0.07040356188138863,
-    "eps": 6.7859231869122345,
+    "pe": null,
+    "pb": 0.809245503594784,
+    "ps": 0.393266099369506,
+    "roe": 0.00013797656681544508,
+    "eps": 0.013299020091922182,
+    "eps_annualized": 13.571846373824469,
     "de": 2.300530075209275,
-    "margin_net": 0.06487940137221375,
+    "margin_net": 6.705197124342213e-05,
     "current_ratio": 0.7667799335151574,
-    "roa": 0.021239972954470644,
-    "bv": 96.38607771499856
+    "roa": 4.1625998304575584e-05,
+    "bv": 96.38607771499856,
+    "pcf": 2.423715241452381,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2365299884032,
-    "enterprise_value": 7176975810560,
+    "market_cap": 2427544666112,
+    "enterprise_value": 7208501248000,
     "shares_outstanding": 31122368200
   },
   "akumulasi": {

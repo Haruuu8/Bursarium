@@ -3,20 +3,24 @@
   "nama": "PT Bank Woori Saudara Indonesia 1906 Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 170.0,
-  "update": "2026-11-04 20:59",
+  "harga": 162.0,
+  "update": "2026-11-05 12:36",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 4.20375865479723,
-    "pb": 0.22408564614261484,
-    "ps": 1.2788453660695165,
-    "roe": 0.053300443986445074,
-    "eps": 40.44,
+    "pe": null,
+    "pb": 0.21354043926531532,
+    "ps": 1.2186644076662452,
+    "roe": 4.0772430726872926e-05,
+    "eps": 0.0309315359679803,
+    "eps_annualized": 80.88,
     "de": 3.40784820754166,
-    "margin_net": 0.3429585798816568,
+    "margin_net": 0.00023268618492978932,
     "current_ratio": null,
-    "roa": 0.012092168667525813,
-    "bv": 758.6385068671774
+    "roa": 9.24996252300904e-06,
+    "bv": 758.6385068671774,
+    "pcf": 0.42348447172467096,
+    "div_yield": 4938.291809172405,
+    "payout_ratio": 9891.237303238498
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2497672380416,
+    "market_cap": 2380134875136,
     "enterprise_value": 7769663995904,
     "shares_outstanding": 14692189889
   },

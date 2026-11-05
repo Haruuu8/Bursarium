@@ -3,20 +3,24 @@
   "nama": "PT Indah Kiat Pulp & Paper Tbk",
   "sektor": "Basic Materials",
   "industri": "Paper & Paper Products",
-  "harga": 6575.0,
-  "update": "2026-11-04 20:40",
+  "harga": 6625.0,
+  "update": "2026-11-05 12:20",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.001502720395246,
-    "ps": 10964.535314844274,
-    "roe": 0.0517687193912389,
+    "pb": 5.039536961614981,
+    "ps": 11047.915811535106,
+    "roe": 7.760246856968699e-05,
     "eps": 0.10201658568834496,
+    "eps_annualized": 0.13612,
     "de": 0.8421140958493676,
-    "margin_net": 0.21896741335811196,
+    "margin_net": 0.17012387170793844,
     "current_ratio": 2.733353609741652,
-    "roa": 0.028101904405371463,
-    "bv": 1314.6049032800302
+    "roa": 4.2125383417061156e-05,
+    "bv": 1314.6049032800302,
+    "pcf": 0.06241929720089716,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 35971714252800,
-    "enterprise_value": 33514594500608,
+    "market_cap": 36245262565376,
+    "enterprise_value": 35976537702400,
     "shares_outstanding": 5470982941
   },
   "akumulasi": {

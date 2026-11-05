@@ -4,19 +4,23 @@
   "sektor": "Industrials",
   "industri": "Metal Fabrication",
   "harga": 16.0,
-  "update": "2026-11-04 19:53",
+  "update": "2026-11-05 11:40",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.37451916081071296,
-    "ps": 2.7728660923853172,
+    "pb": null,
+    "ps": 2.7728660923853174e-06,
     "roe": -0.005605813524735383,
     "eps": null,
+    "eps_annualized": -0.48,
     "de": 0.016389138851739298,
     "margin_net": -0.08300867816389237,
     "current_ratio": 106.26925785416823,
     "roa": -0.005515420531813754,
-    "bv": 42.721445720868246
+    "bv": 42721445.720868245,
+    "pcf": 1.4186130286674245e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -26,7 +30,7 @@
   },
   "statistik": {
     "market_cap": 64326127616,
-    "enterprise_value": 68690165760,
+    "enterprise_value": 64669810688,
     "shares_outstanding": 4020382916
   },
   "akumulasi": {

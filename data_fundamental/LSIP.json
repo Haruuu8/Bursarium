@@ -4,19 +4,23 @@
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
   "harga": 1440.0,
-  "update": "2026-11-04 20:47",
+  "update": "2026-11-05 12:26",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 10.992366412213741,
+    "pe": null,
     "pb": 0.685673702660351,
     "ps": 1.8332531472990696,
-    "roe": 0.06220779050312328,
-    "eps": 131.0,
+    "roe": 0.00012194294512263408,
+    "eps": 0.25609534140698353,
+    "eps_annualized": 262.0,
     "de": 0.1380147641811236,
-    "margin_net": 0.3312537062063504,
+    "margin_net": 0.0003260330490576266,
     "current_ratio": 7.0827541783404735,
-    "roa": 0.05467873387139732,
-    "bv": 2100.1242929587825
+    "roa": 0.00010718409687802932,
+    "bv": 2100.1242929587825,
+    "pcf": 3.9582825428657444,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 9820747857920,
-    "enterprise_value": 1231317499904,
+    "enterprise_value": 1299517145088,
     "shares_outstanding": 6819963965
   },
   "akumulasi": {

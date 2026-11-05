@@ -1,28 +1,32 @@
 {
   "kode": "INCF",
-  "nama": "PT Indo Komoditi Korpora Tbk",
-  "sektor": "Basic Materials",
-  "industri": "Specialty Chemicals",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 50.0,
-  "update": "2026-11-04 21:11",
+  "update": "2026-11-05 12:47",
   "periode_terbaru": "2025-audit",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4843556161384615,
-    "ps": 0.5576292636528986,
+    "pb": null,
+    "ps": 5.576292636528985e-07,
     "roe": -0.0017018017729553204,
     "eps": null,
+    "eps_annualized": -0.18,
     "de": 1.765327824307312,
     "margin_net": -0.0019592515043017314,
     "current_ratio": 0.9490575919101816,
     "roa": -0.0006136184699793812,
-    "bv": 103.22993753768435
+    "bv": 103229937.53768435,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": 32236327411.0,
-      "2025-Q2": 56022429133.0,
-      "2025-Q3": 18255365574.0
+      "2025-Q1": 3.2236327411e+16,
+      "2025-Q2": 5.6022429133e+16,
+      "2025-Q3": 1.8255365574e+16
     },
     "eps": {
       "2025-Q1": 0.46,
@@ -31,14 +35,14 @@
     },
     "net_income": {
       "2025-Q1": 658724790000000.0,
-      "2025-Q2": -657037771581000.0,
-      "2025-Q3": -576124802000.0
+      "2025-Q2": 1028293629000000.0,
+      "2025-Q3": -576124802000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 71918518272,
-    "enterprise_value": 335185346560,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 1438370465
   },
   "akumulasi": {
@@ -80,7 +84,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 13237958656,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,

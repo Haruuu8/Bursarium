@@ -1,22 +1,26 @@
 {
   "kode": "SRSN",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 101.0,
-  "update": "2026-11-04 21:03",
+  "nama": "PT Indo Acidatama Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 98.0,
+  "update": "2026-11-05 12:39",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 8.437761069340016,
+    "pe": null,
     "pb": null,
-    "ps": 0.0005074160548018686,
-    "roe": 0.08234079407358932,
-    "eps": 11.97,
+    "ps": 0.0004923442907978527,
+    "roe": 0.12306314146900364,
+    "eps": null,
+    "eps_annualized": 23.94,
     "de": 0.15707270869220624,
-    "margin_net": 0.1292452253091876,
+    "margin_net": 0.08989048243723476,
     "current_ratio": 5.45598731401551,
-    "roa": 0.07116302498107996,
-    "bv": 145392.79435215946
+    "roa": 0.10635731060332161,
+    "bv": 145392.79435215946,
+    "pcf": 3.3821484748946515e-06,
+    "div_yield": 1122.4489795918369,
+    "payout_ratio": 4594.820384294068
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
+    "market_cap": 589959987200,
     "enterprise_value": null,
     "shares_outstanding": 6020000000
   },
@@ -86,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 174433501184,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 731413.0,

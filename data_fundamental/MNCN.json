@@ -4,19 +4,23 @@
   "sektor": "Communication Services",
   "industri": "Advertising Agencies",
   "harga": 70.0,
-  "update": "2026-11-04 20:51",
+  "update": "2026-11-05 12:29",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 2.10589651022864,
+    "pe": null,
     "pb": null,
     "ps": 0.13132893599741058,
-    "roe": 0.01976715101024459,
-    "eps": 33.24,
+    "roe": 3.36915700395423e-05,
+    "eps": 0.05666983044195096,
+    "eps_annualized": 66.48,
     "de": 0.07986745069572654,
-    "margin_net": 0.1250244484876052,
+    "margin_net": 0.0001063198362156441,
     "current_ratio": 8.661627019080269,
-    "roa": 0.01741834002054384,
-    "bv": 1682.0180945987406
+    "roa": 2.968820456071651e-05,
+    "bv": 1682.0180945987406,
+    "pcf": 1.2182591178974215e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 925901324288,
-    "enterprise_value": 2995264159744,
+    "enterprise_value": 2929161404416,
     "shares_outstanding": 13227161510
   },
   "akumulasi": {

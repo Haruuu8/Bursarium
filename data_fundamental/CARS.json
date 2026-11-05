@@ -1,22 +1,26 @@
 {
   "kode": "CARS",
-  "nama": "PT Industri dan Perdagangan Bintraco Dharma Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Auto & Truck Dealerships",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 84.0,
-  "update": "2026-11-04 21:12",
+  "update": "2026-11-05 12:48",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 15.135135135135135,
+    "pe": null,
     "pb": 1.1439867908469945,
     "ps": 0.2852112469944227,
-    "roe": 0.07557490120808197,
-    "eps": 5.55,
+    "roe": 154215.52500712994,
+    "eps": null,
+    "eps_annualized": 11.1,
     "de": 1.5496916828728262,
-    "margin_net": 0.034987540136069424,
+    "margin_net": 38447.99830303797,
     "current_ratio": 0.964750258722181,
-    "roa": 0.026576631516927036,
-    "bv": 73.42742125353334
+    "roa": 54231.35348889669,
+    "bv": 73.42742125353334,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -34,17 +38,17 @@
       "2026-Q2": 2.27
     },
     "net_income": {
-      "2025-Q1": 48402750809.0,
-      "2025-Q2": 24311355121.0,
-      "2025-Q3": 62304318049.0,
-      "2026-Q1": 49140966965.0,
-      "2026-Q2": 34098084643.0
+      "2025-Q1": 4.8402750809e+16,
+      "2025-Q2": 2.4311355121e+16,
+      "2025-Q3": 6.2304318049e+16,
+      "2026-Q1": 4.9140966965e+16,
+      "2026-Q2": 3.4098084643e+16
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1259999985664,
-    "enterprise_value": 2314686431232,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 15000000000
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 176015933440,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 10344495049.0,

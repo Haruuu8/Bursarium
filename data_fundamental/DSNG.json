@@ -3,20 +3,24 @@
   "nama": "PT Dharma Satya Nusantara Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 1315.0,
-  "update": "2026-11-04 20:31",
+  "harga": 1335.0,
+  "update": "2026-11-05 12:13",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 13.918289585097375,
-    "pb": 1.1631087328827134,
-    "ps": 1.110099093765306,
-    "roe": 0.0835678388102086,
-    "eps": 94.48,
+    "pe": null,
+    "pb": 1.1807985995425268,
+    "ps": 1.126982730172383,
+    "roe": 0.0001627359254157431,
+    "eps": 0.18398773551576578,
+    "eps_annualized": 188.96,
     "de": 0.4741864292673516,
-    "margin_net": 0.15921234178467883,
+    "margin_net": 0.0001553191014904809,
     "current_ratio": 1.3449786466588072,
-    "roa": 0.056217934846217774,
-    "bv": 1130.5907718024184
+    "roa": 0.00010947605900086532,
+    "bv": 1130.5907718024184,
+    "pcf": 5.3984951701258685,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 13938793119744,
-    "enterprise_value": 17064783773696,
+    "market_cap": 14150790021120,
+    "enterprise_value": 16746762207232,
     "shares_outstanding": 10599842400
   },
   "akumulasi": {

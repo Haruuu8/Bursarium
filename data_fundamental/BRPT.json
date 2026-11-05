@@ -3,20 +3,24 @@
   "nama": "PT Barito Pacific Tbk",
   "sektor": "Basic Materials",
   "industri": "Chemicals",
-  "harga": 975.0,
-  "update": "2026-11-04 20:26",
+  "harga": 925.0,
+  "update": "2026-11-05 12:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 37.542624815721005,
-    "ps": 16.055349011882825,
-    "roe": 0.07827054897245893,
+    "pb": 35.61736200465839,
+    "ps": 15.231997780504217,
+    "roe": 0.0003108349762540094,
     "eps": 0.00807253364236671,
+    "eps_annualized": 0.00406542593601986,
     "de": 5.1190488126182885,
-    "margin_net": 0.033501110020504994,
+    "margin_net": 0.00013293061029575714,
     "current_ratio": 2.18026378153686,
-    "roa": 0.010051013570200646,
-    "bv": 25.970480348292483
+    "roa": 3.991548041296298e-05,
+    "bv": 25.970480348292483,
+    "pcf": 0.14603783301096618,
+    "div_yield": 55.396192346369176,
+    "payout_ratio": 12604208.938204888
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 91366503743488,
-    "enterprise_value": 97935597502464,
+    "market_cap": 86681046745088,
+    "enterprise_value": 91375957704704,
     "shares_outstanding": 93709240929
   },
   "akumulasi": {

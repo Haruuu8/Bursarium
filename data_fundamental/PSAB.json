@@ -3,20 +3,24 @@
   "nama": "PT J Resources Asia Pasifik Tbk",
   "sektor": "Basic Materials",
   "industri": "Gold",
-  "harga": 406.0,
-  "update": "2026-11-04 20:55",
+  "harga": 422.0,
+  "update": "2026-11-05 12:33",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.033437927523554484,
+    "ps": 0.034755678361921165,
     "roe": 0.4084829468065466,
     "eps": null,
+    "eps_annualized": 0.0134,
     "de": 0.46236084431656765,
     "margin_net": 1.107422907654078,
     "current_ratio": 2.0705296135940525,
     "roa": 0.2793261750605799,
-    "bv": 16458.727626606196
+    "bv": 16458.727626606196,
+    "pcf": 0.12414711205745244,
+    "div_yield": 1392.9080557973584,
+    "payout_ratio": 43866208.9213795
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 10742759686144,
-    "enterprise_value": 10372223336448,
+    "market_cap": 11166120148992,
+    "enterprise_value": 10742663217152,
     "shares_outstanding": 26460000000
   },
   "akumulasi": {

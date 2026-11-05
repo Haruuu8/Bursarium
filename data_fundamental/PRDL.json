@@ -4,7 +4,7 @@
   "sektor": "Healthcare",
   "industri": "Medical Devices",
   "harga": 107.0,
-  "update": "2026-11-04 20:12",
+  "update": "2026-11-05 11:56",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
@@ -12,11 +12,15 @@
     "ps": 0.006806074239044972,
     "roe": -0.11909954894667456,
     "eps": null,
+    "eps_annualized": -14.5,
     "de": 1.5093739049585686,
     "margin_net": -0.6452187414509072,
     "current_ratio": 1.5783662209388578,
     "roa": -0.04746185839875504,
-    "bv": 42584.73578518561
+    "bv": 42584.73578518561,
+    "pcf": 9.258422719877548e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},

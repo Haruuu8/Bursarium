@@ -3,20 +3,24 @@
   "nama": "PT Wira Global Solusi Tbk",
   "sektor": "Technology",
   "industri": "Software - Infrastructure",
-  "harga": 67.0,
-  "update": "2026-11-04 19:44",
+  "harga": 66.0,
+  "update": "2026-11-05 11:34",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 13.4,
-    "pb": 1.9948375029990117,
-    "ps": 1.6221418608632434,
+    "pe": 13.2,
+    "pb": null,
+    "ps": 1.5979307883130457e-06,
     "roe": 0.07445277971403473,
     "eps": 5.0,
+    "eps_annualized": 5.0,
     "de": 0.2290560182940836,
     "margin_net": 0.12108552245503403,
     "current_ratio": 3.550239604748394,
     "roa": 0.06029537135493491,
-    "bv": 33.58669560767386
+    "bv": 33586695.60767386,
+    "pcf": null,
+    "div_yield": 1453.3827483467771,
+    "payout_ratio": 19184.65227817746
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 139694997504,
-    "enterprise_value": 155189575680,
+    "market_cap": 137610002432,
+    "enterprise_value": 140594577408,
     "shares_outstanding": 2085000000
   },
   "akumulasi": {

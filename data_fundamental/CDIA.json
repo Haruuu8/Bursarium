@@ -3,20 +3,24 @@
   "nama": "PT Chandra Daya Investasi TBK.",
   "sektor": "Utilities",
   "industri": "Utilities - Regulated Electric",
-  "harga": 332.0,
-  "update": "2026-11-04 20:11",
+  "harga": 330.0,
+  "update": "2026-11-05 11:56",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.2520948580860609,
+    "ps": 0.2505762143626509,
     "roe": 0.016653705357946386,
     "eps": 277.1536881284843,
+    "eps_annualized": 0.00027705188733855826,
     "de": 0.7959878164751283,
     "margin_net": 0.21044885444812841,
     "current_ratio": 10.911132950436585,
     "roa": 0.008941372783864724,
-    "bv": 0.00832108177043733
+    "bv": 8321.08177043733,
+    "pcf": 3.989520478062769,
+    "div_yield": 121.66935471616512,
+    "payout_ratio": 144921904.13151735
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 41416948449280,
-    "enterprise_value": 44411194966016,
+    "market_cap": 41167446081536,
+    "enterprise_value": 41417200107520,
     "shares_outstanding": 124749839100
   },
   "akumulasi": {

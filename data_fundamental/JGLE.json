@@ -1,22 +1,26 @@
 {
   "kode": "JGLE",
-  "nama": "PT Graha Andrasentra Propertindo Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Leisure",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 29.0,
-  "update": "2026-11-04 21:11",
+  "update": "2026-11-05 12:47",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": 0.6110912927133791,
     "ps": 4559.397437513924,
-    "roe": -0.015325913615372198,
+    "roe": -4.265389133942177e-06,
     "eps": -0.00020241866699668483,
+    "eps_annualized": -9.733333333333333e-05,
     "de": 0.399477814097713,
-    "margin_net": -0.16038592619356853,
+    "margin_net": -0.03182438453826445,
     "current_ratio": 1.1959193420623457,
-    "roa": -0.010949012162309906,
-    "bv": 47.45608446036541
+    "roa": -3.047243947510873e-06,
+    "bv": 47.45608446036541,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 654875361280,
-    "enterprise_value": 882962399232,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 22581909405
   },
   "akumulasi": {
@@ -89,7 +93,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 1086000000,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 1003.0,

@@ -4,19 +4,23 @@
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
   "harga": 468.0,
-  "update": "2026-11-04 21:31",
+  "update": "2026-11-05 13:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": 76.47058823529412,
-    "pb": 16.187994372600773,
-    "ps": 7.424646154863458,
+    "pb": null,
+    "ps": 7.424646154863458e-06,
     "roe": 0.06361045920678192,
     "eps": 6.12,
+    "eps_annualized": 6.12,
     "de": 0.3385096993782637,
     "margin_net": 0.05835005133904733,
     "current_ratio": 4.140309184944653,
     "roa": 0.047523345730201956,
-    "bv": 28.910313978865737
+    "bv": 28910313.978865735,
+    "pcf": 9.976521143599e-05,
+    "div_yield": 5064102.504254066,
+    "payout_ratio": 387254897.3841345
   },
   "quarterly": {
     "revenue": {},

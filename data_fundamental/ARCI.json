@@ -3,20 +3,24 @@
   "nama": "PT Archi Indonesia Tbk",
   "sektor": "Basic Materials",
   "industri": "Gold",
-  "harga": 870.0,
-  "update": "2026-11-04 19:41",
+  "harga": 960.0,
+  "update": "2026-11-05 11:32",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.03918956827134925,
-    "roe": 0.19488606346003526,
+    "ps": 0.04324366154079917,
+    "roe": 0.341060736450735,
     "eps": 5565.4513572419255,
+    "eps_annualized": 0.0064,
     "de": 1.6051360436336144,
-    "margin_net": 0.24900503621966,
+    "margin_net": 0.2506984320982825,
     "current_ratio": 1.0078450137531894,
-    "roa": 0.07467945685309174,
-    "bv": 16318.065266494947
+    "roa": 0.1306929294986733,
+    "bv": 16318.065266494947,
+    "pcf": 0.2441923476398449,
+    "div_yield": 123.83594214384783,
+    "payout_ratio": 18575391.321577176
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 21954448850944,
-    "enterprise_value": 20566996156416,
+    "market_cap": 24225599455232,
+    "enterprise_value": 21954920710144,
     "shares_outstanding": 25235000000
   },
   "akumulasi": {

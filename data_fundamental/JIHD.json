@@ -3,26 +3,30 @@
   "nama": "PT Jakarta International Hotels & Development Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Lodging",
-  "harga": 316.0,
-  "update": "2026-11-04 20:42",
+  "harga": 310.0,
+  "update": "2026-11-05 12:22",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.001851586645172447,
-    "roe": 0.004469349491315434,
+    "ps": 0.00045583098830267945,
+    "roe": 0.01908868490914573,
     "eps": null,
+    "eps_annualized": 0.01352,
     "de": 0.7014579898736513,
-    "margin_net": 0.019986375314201603,
+    "margin_net": 0.04243346938198798,
     "current_ratio": 0.8594662150578184,
-    "roa": 0.0022158084560663428,
-    "bv": 1.5117862111939022
+    "roa": 0.009463764138172633,
+    "bv": 1511786.2111939022,
+    "pcf": 1.6710026589935054e-06,
+    "div_yield": 72128.5541745449,
+    "payout_ratio": 1653835191.871961
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 391071119000000.0,
       "2025-Q2": 395390232000000.0,
-      "2025-Q3": -785273721773000.0,
+      "2025-Q3": 401167876000000.0,
       "2026-Q1": 386790537000000.0,
       "2026-Q2": 400577345000000.0
     },
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 735976751104,
+    "market_cap": 722002509824,
     "enterprise_value": 1877572583424,
     "shares_outstanding": 2329040482
   },

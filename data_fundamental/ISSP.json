@@ -3,20 +3,24 @@
   "nama": "PT Steel Pipe Industry of Indonesia Tbk",
   "sektor": "Basic Materials",
   "industri": "Steel",
-  "harga": 368.0,
-  "update": "2026-11-04 20:41",
+  "harga": 390.0,
+  "update": "2026-11-05 12:21",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 5.452659653281968,
-    "pb": 0.4313850106523065,
-    "ps": 0.42661574655532236,
-    "roe": 0.079117562697611,
-    "eps": 67.49,
+    "pe": null,
+    "pb": 0.4571743319413031,
+    "ps": 0.4521199487950427,
+    "roe": 0.00010510092399988067,
+    "eps": 0.08965805272990723,
+    "eps_annualized": 89.98666666666665,
     "de": 0.8560316154256531,
-    "margin_net": 0.10506506228246729,
+    "margin_net": 0.00010393895951104845,
     "current_ratio": 1.936462193787037,
-    "roa": 0.042627420305372865,
-    "bv": 853.0662654308255
+    "roa": 5.662688673751631e-05,
+    "bv": 853.0662654308255,
+    "pcf": null,
+    "div_yield": 5135.25625993492,
+    "payout_ratio": 22256.0743225806
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2588357165056,
-    "enterprise_value": 6601950887936,
+    "market_cap": 2743095787520,
+    "enterprise_value": 6461279174656,
     "shares_outstanding": 7033579035
   },
   "akumulasi": {

@@ -4,19 +4,23 @@
   "sektor": "Industrials",
   "industri": "Infrastructure Operations",
   "harga": 2750.0,
-  "update": "2026-11-04 20:42",
+  "update": "2026-11-05 12:22",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 10.456273764258555,
+    "pe": null,
     "pb": 0.5374783248348342,
     "ps": 0.719636608242485,
-    "roe": 0.05141124797467561,
-    "eps": 263.0,
+    "roe": 9.991242175262486e-05,
+    "eps": 0.5112004468350445,
+    "eps_annualized": 526.0,
     "de": 2.6924527004217502,
-    "margin_net": 0.1456103884495022,
+    "margin_net": 0.00013377402025178695,
     "current_ratio": 0.5042569781141164,
-    "roa": 0.011697205127064576,
-    "bv": 5116.485396587981
+    "roa": 2.2732303494323336e-05,
+    "bv": 5116.485396587981,
+    "pcf": 2.6393505058666626,
+    "div_yield": 7.541630364799453,
+    "payout_ratio": 39.4286758615941
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 19959147134976,
-    "enterprise_value": 118002095751168,
+    "enterprise_value": 117784361041920,
     "shares_outstanding": 7257871199
   },
   "akumulasi": {

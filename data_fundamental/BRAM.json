@@ -3,20 +3,24 @@
   "nama": "PT Indo Kordsa Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Textile Manufacturing",
-  "harga": 4410.0,
-  "update": "2026-11-04 20:26",
+  "harga": 4590.0,
+  "update": "2026-11-05 12:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.014712283310203862,
-    "roe": 0.037430437022069836,
+    "ps": 0.01531278466980402,
+    "roe": 0.019388623908065745,
     "eps": 9200.023961410398,
+    "eps_annualized": 0.03552195546439475,
     "de": 0.27368878930771456,
-    "margin_net": 0.09625408543457238,
+    "margin_net": 0.0306923716510054,
     "current_ratio": 2.3125794835326725,
-    "roa": 0.028274384580899158,
-    "bv": 474506.28807045723
+    "roa": 0.014645872516739112,
+    "bv": 474506.28807045723,
+    "pcf": 0.05932339907408056,
+    "div_yield": 247.1468708072009,
+    "payout_ratio": 31935295.289194204
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1984751337472,
-    "enterprise_value": 2056749056000,
+    "market_cap": 2065761566720,
+    "enterprise_value": 1984739934208,
     "shares_outstanding": 450056980
   },
   "akumulasi": {

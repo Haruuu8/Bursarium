@@ -3,20 +3,24 @@
   "nama": "PT Bank China Construction Bank Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 55.0,
-  "update": "2026-11-04 20:47",
+  "harga": 56.0,
+  "update": "2026-11-05 12:27",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 13.189448441247002,
-    "pb": 0.286657373180769,
-    "ps": 952.317215881564,
-    "roe": 0.021749196931688718,
-    "eps": 4.17,
+    "pe": null,
+    "pb": 0.2918693254204194,
+    "ps": 969.6320743521379,
+    "roe": 4.268800650069212e-05,
+    "eps": 0.008190406308012509,
+    "eps_annualized": 8.34,
     "de": 4.392759953119586,
-    "margin_net": 0.14225954588280987,
+    "margin_net": 0.14181572603973222,
     "current_ratio": null,
-    "roa": 0.0040330363525836735,
-    "bv": 191.86668526860618
+    "roa": 7.915799492613813e-06,
+    "bv": 191.86668526860618,
+    "pcf": 1.072277393144409,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2085585289216,
+    "market_cap": 2123504943104,
     "enterprise_value": 4683014340608,
     "shares_outstanding": 37919730514
   },

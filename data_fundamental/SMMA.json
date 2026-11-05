@@ -4,27 +4,31 @@
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
   "harga": 20750.0,
-  "update": "2026-11-04 21:01",
+  "update": "2026-11-05 12:38",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 57.162534435261705,
+    "pe": null,
     "pb": null,
-    "ps": -6545.259413253276,
-    "roe": 0.08648488314558127,
-    "eps": 363.0,
+    "ps": 0.6679888877264962,
+    "roe": 0.00017275339417153918,
+    "eps": 32.396009645749054,
+    "eps_annualized": 726.0,
     "de": 3.78944926726916,
-    "margin_net": -6.596998264166458,
+    "margin_net": 0.0010428999734959398,
     "current_ratio": null,
-    "roa": 0.017812391868813022,
-    "bv": 187527.48564569873
+    "roa": 3.5580219822592144e-05,
+    "bv": 187527.48564569873,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": -23667000.0,
-      "2025-Q2": -11319000.0,
-      "2025-Q3": -90094000.0,
-      "2026-Q1": -271526000.0,
-      "2026-Q2": -78738000.0
+      "2025-Q1": 1186113000000.0,
+      "2025-Q2": 1144034000000.0,
+      "2025-Q3": 1135009000000.0,
+      "2026-Q1": 1067212000000.0,
+      "2026-Q2": 1079482000000.0
     },
     "eps": {
       "2025-Q1": 0.0,
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 132129040105472,
-    "enterprise_value": 56217208619008,
+    "enterprise_value": 56853975269376,
     "shares_outstanding": 142474368
   },
   "akumulasi": {
@@ -73,7 +77,7 @@
     "saldo_laba": 21754172.0
   },
   "laba_rugi": {
-    "pendapatan": -350264.0,
+    "pendapatan": 2146694.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

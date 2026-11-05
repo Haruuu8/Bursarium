@@ -3,20 +3,24 @@
   "nama": "PT. Clipan Finance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 330.0,
-  "update": "2026-11-04 20:27",
+  "harga": 340.0,
+  "update": "2026-11-05 12:09",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1167.2125210137742,
-    "roe": 0.026745334960362754,
+    "ps": 1202.582597408131,
+    "roe": 0.03634209772592687,
     "eps": null,
+    "eps_annualized": 5.141333333333334e-05,
     "de": 0.49421969349821343,
-    "margin_net": 164.1297104383003,
+    "margin_net": 185331.5804470925,
     "current_ratio": null,
-    "roa": 0.017899198542717328,
-    "bv": 1.4417947492043708
+    "roa": 0.024321790084859646,
+    "bv": 1441794.749204371,
+    "pcf": 0.9490570666763919,
+    "div_yield": 14221.981413798258,
+    "payout_ratio": 94050966299.75507
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1314891759616,
-    "enterprise_value": 3826986778624,
+    "market_cap": 1354736992256,
+    "enterprise_value": 3842924871680,
     "shares_outstanding": 3984520457
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 700.0,
-  "update": "2026-11-04 20:23",
+  "harga": 710.0,
+  "update": "2026-11-05 12:06",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.408210462834749,
+    "pe": null,
     "pb": null,
-    "ps": 0.1300199508560757,
-    "roe": 0.04842331998028249,
-    "eps": 74.4030974610113,
+    "ps": 0.13187737872544822,
+    "roe": 7.268706348739476e-05,
+    "eps": 0.37823833058629885,
+    "eps_annualized": 148.8061949220226,
     "de": 12.202518157631568,
-    "margin_net": 0.09533476736311249,
+    "margin_net": 7.025504164959242e-05,
     "current_ratio": null,
-    "roa": 0.0034297102799789934,
-    "bv": 5203.6540264402365
+    "roa": 5.148254373424092e-06,
+    "bv": 5203.6540264402365,
+    "pcf": 0.2615062008766913,
+    "div_yield": 40802.11880099952,
+    "payout_ratio": 194679.42422619066
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 7365010128896,
+    "market_cap": 7470224769024,
     "enterprise_value": 32942380285952,
     "shares_outstanding": 3106729025
   },

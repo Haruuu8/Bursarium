@@ -3,20 +3,24 @@
   "nama": "PT Berlina Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
-  "harga": 500.0,
-  "update": "2026-11-04 20:26",
+  "harga": 494.0,
+  "update": "2026-11-05 12:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0006122787179934547,
-    "roe": -0.00253871598373248,
+    "ps": 0.0006049313733775333,
+    "roe": 0.004602084541824922,
     "eps": 3226.092149067734,
+    "eps_annualized": -0.004,
     "de": 1.1984259410704348,
-    "margin_net": -0.004047773622973063,
+    "margin_net": 0.003950535130319883,
     "current_ratio": 1.1184167964358407,
-    "roa": -0.0010979897092872404,
-    "bv": 701006.7111432184
+    "roa": 0.001990392584508232,
+    "bv": 701006.7111432184,
+    "pcf": 4.604928811917206e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 682670096384,
-    "enterprise_value": 1206999056384,
+    "market_cap": 674478030848,
+    "enterprise_value": 1214831919104,
     "shares_outstanding": 1365340107
   },
   "akumulasi": {

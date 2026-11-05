@@ -3,20 +3,24 @@
   "nama": "PT Samator Indo Gas Tbk",
   "sektor": "Basic Materials",
   "industri": "Chemicals",
-  "harga": 3350.0,
-  "update": "2026-11-04 20:14",
+  "harga": 3410.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.71339751298353,
-    "ps": 3369.9074049775895,
-    "roe": 0.017220427226335613,
+    "pb": 2.7619956773951753,
+    "ps": 3430.2639555145015,
+    "roe": 3.117816733282393e-05,
     "eps": 0.03849301846308362,
+    "eps_annualized": 4.25218016914702e-05,
     "de": 1.2019958041732708,
-    "margin_net": 0.042238739348645325,
+    "margin_net": 0.03872176356975658,
     "current_ratio": 1.815379303194789,
-    "roa": 0.00773919647391103,
-    "bv": 1234.6145317707212
+    "roa": 1.4012077604914608e-05,
+    "bv": 1234.6145317707212,
+    "pcf": 2.2162596501192752e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 10273311162368,
-    "enterprise_value": 13442313355264,
+    "market_cap": 10457311084544,
+    "enterprise_value": 13626313277440,
     "shares_outstanding": 3066660000
   },
   "akumulasi": {

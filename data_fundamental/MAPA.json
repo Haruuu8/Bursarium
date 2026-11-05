@@ -3,20 +3,24 @@
   "nama": "PT Map Aktif Adiperkasa Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Specialty Retail",
-  "harga": 545.0,
-  "update": "2026-11-04 21:18",
+  "harga": 560.0,
+  "update": "2026-11-05 12:53",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 10.686274509803921,
-    "pb": 1.5330134612900452,
-    "ps": 0.7197278811970033,
-    "roe": 0.14235519730886698,
-    "eps": 51.0,
+    "pe": null,
+    "pb": 1.5752064923347255,
+    "ps": 0.7395369054501317,
+    "roe": 0.00019165766921693916,
+    "eps": 0.0681360159977547,
+    "eps_annualized": 68.0,
     "de": 0.8702637321016868,
-    "margin_net": 0.08778106997848048,
+    "margin_net": 8.998053289407175e-05,
     "current_ratio": 1.9020853452583375,
-    "roa": 0.07563276918417101,
-    "bv": 355.50894611282627
+    "roa": 0.0001018269830135528,
+    "bv": 355.50894611282627,
+    "pcf": 4.863051054014499,
+    "div_yield": 714.3045086403913,
+    "payout_ratio": 5882.507718214987
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 15534680702976,
-    "enterprise_value": 17214661984256,
+    "market_cap": 15962240712704,
+    "enterprise_value": 16929622327296,
     "shares_outstanding": 28504000000
   },
   "akumulasi": {

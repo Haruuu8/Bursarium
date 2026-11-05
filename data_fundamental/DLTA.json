@@ -3,20 +3,24 @@
   "nama": "PT Delta Djakarta Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Beverages - Brewers",
-  "harga": 1660.0,
-  "update": "2026-11-04 20:30",
+  "harga": 1670.0,
+  "update": "2026-11-05 12:12",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0019573169114015226,
-    "roe": 0.09335099714264736,
+    "ps": 0.001969107977132857,
+    "roe": 0.19472657643691657,
     "eps": null,
+    "eps_annualized": 1.58e-05,
     "de": 0.8257606178034546,
-    "margin_net": 0.17909207727374285,
+    "margin_net": 0.19313041204112613,
     "current_ratio": 1.9747913035120344,
-    "roa": 0.051090829991167826,
-    "bv": 841147.9255745626
+    "roa": 0.10657349911643925,
+    "bv": 841147.9255745626,
+    "pcf": 5.095661962024515e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1329094066176,
-    "enterprise_value": 709241012224,
+    "market_cap": 1337100599296,
+    "enterprise_value": 713244278784,
     "shares_outstanding": 800659050
   },
   "akumulasi": {

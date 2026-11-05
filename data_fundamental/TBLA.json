@@ -3,20 +3,24 @@
   "nama": "PT Tunas Baru Lampung Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 505.0,
-  "update": "2026-11-04 21:04",
+  "harga": 515.0,
+  "update": "2026-11-05 12:41",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 7.050118665363675,
-    "pb": 0.31358916336307063,
-    "ps": 0.1353086960721965,
-    "roe": 0.04447860168503308,
-    "eps": 71.63,
+    "pe": null,
+    "pb": 0.31979884976629974,
+    "ps": 0.137988076192438,
+    "roe": 8.121235588879895e-05,
+    "eps": 0.13078334494728658,
+    "eps_annualized": 143.26,
     "de": 2.2831898284508783,
-    "margin_net": 0.03697890822005642,
+    "margin_net": 3.504182945104482e-05,
     "current_ratio": 1.2272170824296138,
-    "roa": 0.013541268983883723,
-    "bv": 1610.3872805557241
+    "roa": 2.4724661168365187e-05,
+    "bv": 1610.3872805557241,
+    "pcf": 3.4756089190217853e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3032096440320,
-    "enterprise_value": 21402241466368,
+    "market_cap": 3092137902080,
+    "enterprise_value": 21372113780736,
     "shares_outstanding": 6004151372
   },
   "akumulasi": {

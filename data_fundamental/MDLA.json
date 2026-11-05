@@ -3,20 +3,24 @@
   "nama": "PT Medela Potentia Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 183.0,
-  "update": "2026-11-04 20:11",
+  "harga": 185.0,
+  "update": "2026-11-05 11:55",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 5.802155992390615,
-    "pb": 0.8339255685552439,
-    "ps": 0.1569174767975298,
-    "roe": 0.07185423496543612,
+    "pe": 5.865567533291059,
+    "pb": 0.8430395091951919,
+    "ps": 0.15863242189914215,
+    "roe": 7.185423496543613e-05,
     "eps": 31.54,
+    "eps_annualized": 31.54,
     "de": 1.1227740468307474,
-    "margin_net": 0.02704122687478468,
+    "margin_net": 2.704122687478468e-05,
     "current_ratio": 1.7804361290062072,
-    "roa": 0.03345038865029709,
-    "bv": 219.44404500876874
+    "roa": 3.345038865029709e-05,
+    "bv": 219.44404500876874,
+    "pcf": 2.1003286998050764e-05,
+    "div_yield": 6813.102340949154,
+    "payout_ratio": 39962.71189206066
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2564346871808,
-    "enterprise_value": 1925513609216,
+    "market_cap": 2592372424704,
+    "enterprise_value": 1897487925248,
     "shares_outstanding": 14012825000
   },
   "akumulasi": {

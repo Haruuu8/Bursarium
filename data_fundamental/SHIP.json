@@ -3,20 +3,24 @@
   "nama": "PT Sillo Maritime Perdana Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Equipment & Services",
-  "harga": 2010.0,
-  "update": "2026-11-04 21:10",
+  "harga": 1990.0,
+  "update": "2026-11-05 12:46",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.02775840475192826,
-    "roe": 0.06653542604659593,
+    "ps": 0.027482201719570765,
+    "roe": 0.1240034148530215,
     "eps": 6943.093032917983,
+    "eps_annualized": 0.0074,
     "de": 2.568567636843999,
-    "margin_net": 0.08717326847410871,
+    "margin_net": 0.09588516748160723,
     "current_ratio": 1.3248934304065711,
-    "roa": 0.016162508197627354,
-    "bv": 55991.143801543505
+    "roa": 0.030122392358202757,
+    "bv": 55991.143801543505,
+    "pcf": 0.06025954957363032,
+    "div_yield": 101.20807989517222,
+    "payout_ratio": 27216767.431269284
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5466778238976,
+    "market_cap": 5412382310400,
     "enterprise_value": 5467167260672,
     "shares_outstanding": 2719790000
   },

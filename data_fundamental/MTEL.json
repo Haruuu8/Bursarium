@@ -3,20 +3,24 @@
   "nama": "PT Dayamitra Telekomunikasi Tbk.",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 360.0,
-  "update": "2026-11-04 19:45",
+  "harga": 356.0,
+  "update": "2026-11-05 11:34",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 25.714285714285715,
-    "pb": 0.9019631480211932,
-    "ps": 3.1052574972219915,
-    "roe": 0.03466716445184813,
-    "eps": 14.0,
+    "pe": null,
+    "pb": 0.8919413352654021,
+    "ps": 3.0707546361417473,
+    "roe": 6.634933381348012e-05,
+    "eps": 0.026481969053010146,
+    "eps_annualized": 28.0,
     "de": 0.8753018480462061,
-    "margin_net": 0.23685206785765445,
+    "margin_net": 0.00022842592484183477,
     "current_ratio": 0.4081418861153303,
-    "roa": 0.018486178365347588,
-    "bv": 399.12938881128343
+    "roa": 3.5380615596687304e-05,
+    "bv": 399.12938881128343,
+    "pcf": 4.285942511618443,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 28909099810816,
-    "enterprise_value": 48610796371968,
+    "market_cap": 28587887427584,
+    "enterprise_value": 48126006132736,
     "shares_outstanding": 80303054344
   },
   "akumulasi": {

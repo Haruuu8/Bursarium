@@ -3,20 +3,24 @@
   "nama": "PT Trimegah Bangun Persada Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 725.0,
-  "update": "2026-11-04 19:57",
+  "harga": 750.0,
+  "update": "2026-11-05 11:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 3.927410617551463,
-    "pb": 1.040887565417313,
-    "ps": 1.3354816877136817,
+    "pe": 4.062838569880824,
+    "pb": 1.0767802400868756,
+    "ps": 1.3815327803934638,
     "roe": 0.1325222260051651,
     "eps": 184.6,
+    "eps_annualized": 184.6,
     "de": 0.41351870011851877,
     "margin_net": 0.34005787353986994,
     "current_ratio": 1.6929238311045378,
     "roa": 0.08190509318693774,
-    "bv": 696.5209539315927
+    "bv": 696.5209539315927,
+    "pcf": 9.107929614114097,
+    "div_yield": 424.7802219978979,
+    "payout_ratio": 1725.813469655598
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 45666202025984,
-    "enterprise_value": 56546922856448,
+    "market_cap": 47240898936832,
+    "enterprise_value": 58121678487552,
     "shares_outstanding": 62987866700
   },
   "akumulasi": {

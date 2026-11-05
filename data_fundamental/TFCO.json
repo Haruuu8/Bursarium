@@ -4,19 +4,23 @@
   "sektor": "Consumer Cyclical",
   "industri": "Textile Manufacturing",
   "harga": 2000.0,
-  "update": "2026-11-04 21:05",
+  "update": "2026-11-05 12:41",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.05017739059968892,
-    "roe": 0.010382082649160825,
+    "roe": 0.018444328947343085,
     "eps": 1205.5879935884905,
+    "eps_annualized": 0.0014,
     "de": 0.09128492933197996,
-    "margin_net": 0.03362825875570336,
+    "margin_net": 0.030246629828292473,
     "current_ratio": 6.201398198978817,
-    "roa": 0.009513631472502898,
-    "bv": 65363.613771492404
+    "roa": 0.016901478662070053,
+    "bv": 65363.613771492404,
+    "pcf": 4.97477469207272,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

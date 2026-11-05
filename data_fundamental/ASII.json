@@ -4,19 +4,23 @@
   "sektor": "Industrials",
   "industri": "Conglomerates",
   "harga": 4900.0,
-  "update": "2026-11-04 20:19",
+  "update": "2026-11-05 12:03",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 15.654952076677317,
+    "pe": null,
     "pb": null,
     "ps": 611230.907392507,
-    "roe": 0.05447519863692474,
-    "eps": 313.0,
+    "roe": 0.13071787471530155,
+    "eps": 0.0007577682259192783,
+    "eps_annualized": 626.0,
     "de": 0.9765504111827807,
-    "margin_net": 0.07936648660971547,
+    "margin_net": 0.09452476741262258,
     "current_ratio": 1.1866718753001901,
-    "roa": 0.02435876754315212,
-    "bv": 0.00579697480218117
+    "roa": 0.058450935537601285,
+    "bv": 0.00579697480218117,
+    "pcf": 5.086689310897924,
+    "div_yield": 7.240220124335102,
+    "payout_ratio": 56.672649535530354
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 194469223727104,
-    "enterprise_value": 311354091110400,
+    "enterprise_value": 317307217772544,
     "shares_outstanding": 39687597040
   },
   "akumulasi": {

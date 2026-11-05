@@ -3,20 +3,24 @@
   "nama": "PT Graha Mitra Asia Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 28.0,
-  "update": "2026-11-04 19:58",
+  "harga": 29.0,
+  "update": "2026-11-05 11:45",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 46.14529186079047,
-    "pb": 0.6507545091510294,
-    "ps": 5.798100407138433,
+    "pe": null,
+    "pb": null,
+    "ps": 6.005175421679092e-06,
     "roe": 0.007051147396729044,
-    "eps": 0.6067791289405956,
+    "eps": null,
+    "eps_annualized": 0.6,
     "de": 0.17765504264420187,
     "margin_net": 0.12564879694834183,
     "current_ratio": 8.469720812978906,
     "roa": 0.0059874472077129015,
-    "bv": 43.026978078920486
+    "bv": 43026978.07892048,
+    "pcf": 1.5533593976737714e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,7 +29,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 160379305984,
+    "market_cap": 166107136000,
     "enterprise_value": 180671692800,
     "shares_outstanding": 5727832195
   },

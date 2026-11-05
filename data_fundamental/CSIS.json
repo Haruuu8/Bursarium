@@ -1,28 +1,32 @@
 {
   "kode": "CSIS",
-  "nama": "PT Cahayasakti Investindo Sukses Tbk",
-  "sektor": "Real Estate",
-  "industri": "Real Estate - Development",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 135.0,
-  "update": "2026-11-04 21:12",
+  "update": "2026-11-05 12:48",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": 8.447108586016594,
-    "pb": 0.7016444466882205,
-    "ps": 2.07438940304074,
+    "pb": null,
+    "ps": 2.07438940304074e-06,
     "roe": 0.02966523161926723,
     "eps": 15.9818,
+    "eps_annualized": 15.9818,
     "de": 0.4614199495099467,
     "margin_net": 0.17540862013578068,
     "current_ratio": 4.7509177273333405,
-    "roa": 0.014196290561800535,
-    "bv": 192.40514285718845
+    "roa": 0.014196290561800533,
+    "bv": 192405142.85718846,
+    "pcf": null,
+    "div_yield": 2307470.9393934086,
+    "payout_ratio": 19491457.584133837
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": 10574819809.0,
-      "2026-Q1": 38379986612.0,
-      "2026-Q2": 21161316409.0
+      "2025-Q1": 1.0574819809e+16,
+      "2026-Q1": 3.8379986612e+16,
+      "2026-Q2": 2.1161316409e+16
     },
     "eps": {
       "2025-Q1": 0.15,
@@ -31,14 +35,14 @@
     },
     "net_income": {
       "2025-Q1": 193125661000000.0,
-      "2026-Q1": 10925551828.0,
-      "2026-Q2": -481494024.0
+      "2026-Q1": 1.0925551828e+16,
+      "2026-Q2": -481494024000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 247023697920,
-    "enterprise_value": 352691060736,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 1829805156
   },
   "akumulasi": {
@@ -80,7 +84,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 33384060928,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 2287377273.0,

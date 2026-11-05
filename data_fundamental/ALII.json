@@ -3,20 +3,24 @@
   "nama": "PT Ancara Logistics Indonesia Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 640.0,
-  "update": "2026-11-04 20:06",
+  "harga": 650.0,
+  "update": "2026-11-05 11:51",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.010993205487456095,
-    "roe": 0.13388246779593935,
+    "ps": 0.011164974323197597,
+    "roe": 0.17219292752475984,
     "eps": null,
+    "eps_annualized": 0.024399999999999998,
     "de": 0.28963660648129086,
-    "margin_net": 0.4138427603373361,
+    "margin_net": 0.40526848094852014,
     "current_ratio": 1.873794901100387,
-    "roa": 0.09918121146695331,
-    "bv": 0.1370197424458795
+    "roa": 0.12756190888247845,
+    "bv": 137019.7424458795,
+    "pcf": 3.3909467666468556e-05,
+    "div_yield": 2000.0,
+    "payout_ratio": 53278688.524590164
   },
   "quarterly": {
     "revenue": {
@@ -46,7 +50,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 10128512253952,
+    "market_cap": 10286769635328,
     "enterprise_value": 10632059420672,
     "shares_outstanding": 15825800000
   },

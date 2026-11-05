@@ -3,20 +3,24 @@
   "nama": "PT Dana Brata Luhur Tbk",
   "sektor": "Industrials",
   "industri": "Infrastructure Operations",
-  "harga": 1395.0,
-  "update": "2026-11-04 21:27",
+  "harga": 1340.0,
+  "update": "2026-11-05 13:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 89.82614294913071,
+    "pe": null,
     "pb": null,
-    "ps": 0.004178520698007958,
-    "roe": 0.01924832916244818,
-    "eps": 15.53,
+    "ps": 0.004013776154358898,
+    "roe": 0.019326663716332005,
+    "eps": null,
+    "eps_annualized": 31.06,
     "de": 0.049131513386355234,
-    "margin_net": 0.11284375563524156,
+    "margin_net": 0.04671982000007664,
     "current_ratio": 12.826387728505692,
-    "roa": 0.018232225977045075,
-    "bv": 0.8070415984435798
+    "roa": 0.018306425315396332,
+    "bv": 807041.5984435797,
+    "pcf": 1.815878461376545e-05,
+    "div_yield": 11641.791044776119,
+    "payout_ratio": 502253.7025112685
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1792574881792,
-    "enterprise_value": 1476083974144,
+    "market_cap": 1721899941888,
+    "enterprise_value": 1347584000000,
     "shares_outstanding": 1285000000
   },
   "akumulasi": {

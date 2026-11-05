@@ -3,20 +3,24 @@
   "nama": "PT Equity Development Investment Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 67.0,
-  "update": "2026-11-04 20:36",
+  "harga": 69.0,
+  "update": "2026-11-05 12:16",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 104.00223993107905,
-    "roe": -0.008460097209560938,
+    "ps": 107.10678440663364,
+    "roe": 1.0459532859125511e-05,
     "eps": 0.018283799533799532,
+    "eps_annualized": -0.027581670929923367,
     "de": 1.3019116081169626,
-    "margin_net": -0.05417872855229415,
+    "margin_net": 0.02838143441740254,
     "current_ratio": null,
-    "roa": -0.003603326751096448,
-    "bv": 1748.0512543012544
+    "roa": 4.454926890516812e-06,
+    "bv": 1748.0512543012544,
+    "pcf": null,
+    "div_yield": 0.2201904375817419,
+    "payout_ratio": 830.9618668184406
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1035606622208,
-    "enterprise_value": 937056403456,
+    "market_cap": 1066520215552,
+    "enterprise_value": 921599606784,
     "shares_outstanding": 1441440000
   },
   "akumulasi": {

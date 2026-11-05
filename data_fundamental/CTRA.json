@@ -3,20 +3,24 @@
   "nama": "PT Ciputra Development Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 490.0,
-  "update": "2026-11-04 20:29",
+  "harga": 500.0,
+  "update": "2026-11-05 12:11",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 8.305084745762711,
-    "pb": 0.3707364519291173,
-    "ps": 0.8367767056373611,
-    "roe": 0.0447767639746254,
-    "eps": 59.0,
+    "pe": null,
+    "pb": 0.3783025019684871,
+    "ps": 0.8538537812626132,
+    "roe": 8.40249468232966e-05,
+    "eps": 0.11105523540827117,
+    "eps_annualized": 118.0,
     "de": 0.7856012875885104,
-    "margin_net": 0.2111957847249417,
+    "margin_net": 0.000189649865364724,
     "current_ratio": 2.285114078717697,
-    "roa": 0.02352812486058539,
-    "bv": 1321.6936113249667
+    "roa": 4.415123525636846e-05,
+    "bv": 1321.6936113249667,
+    "pcf": 9.182659999591799,
+    "div_yield": 326.7209520164287,
+    "payout_ratio": 1384.410813628935
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 9082490585088,
-    "enterprise_value": 11731080314880,
+    "market_cap": 9267847364608,
+    "enterprise_value": 11582794891264,
     "shares_outstanding": 18535695255
   },
   "akumulasi": {

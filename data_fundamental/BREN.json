@@ -3,20 +3,24 @@
   "nama": "PT Barito Renewables Energy Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Renewable",
-  "harga": 2240.0,
-  "update": "2026-11-04 20:03",
+  "harga": 2090.0,
+  "update": "2026-11-05 11:49",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 467238.35872744623,
-    "roe": 0.125284472781903,
+    "ps": 435950.0757769476,
+    "roe": 0.22924301127827656,
     "eps": 0.00119194627099873,
+    "eps_annualized": 0.0013,
     "de": 4.453836698606209,
-    "margin_net": 0.2605752353956052,
+    "margin_net": 0.2486263479253332,
     "current_ratio": 1.6301052247546997,
-    "roa": 0.021554738067612513,
-    "bv": 0.005199487933579071
+    "roa": 3.944042667231263e-05,
+    "bv": 0.005199487933579071,
+    "pcf": 1.1144027676806325,
+    "div_yield": 3.6094524288704966,
+    "payout_ratio": 5802888.904876414
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 299666142920704,
+    "market_cap": 279599200075776,
     "enterprise_value": 240136403025920,
     "shares_outstanding": 133779520000
   },

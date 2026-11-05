@@ -3,20 +3,24 @@
   "nama": "PT Nitrasanata Dharma",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 900.0,
-  "update": "2026-11-04 20:12",
+  "harga": 905.0,
+  "update": "2026-11-05 11:56",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 59.73451327433629,
+    "pe": 60.06637168141593,
     "pb": null,
-    "ps": 3106.1913095815694,
+    "ps": 3123.4479279681336,
     "roe": 0.0375764661157768,
     "eps": 15.066666666666666,
+    "eps_annualized": 15.066666666666666,
     "de": 0.393422636627295,
     "margin_net": 0.052012091361353194,
     "current_ratio": 1.512261384285997,
-    "roa": 0.0242369672744914,
-    "bv": 0.30079038865558005
+    "roa": 2.42369672744914e-05,
+    "bv": 0.30079038865558005,
+    "pcf": 2.247815502009874e-05,
+    "div_yield": 4273.128357717331,
+    "payout_ratio": 256671.3161770476
   },
   "quarterly": {
     "revenue": {
@@ -31,8 +35,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2927900229632,
-    "enterprise_value": 2906276233216,
+    "market_cap": 2944166264832,
+    "enterprise_value": 2890010198016,
     "shares_outstanding": 3253222300
   },
   "akumulasi": {

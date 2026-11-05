@@ -3,20 +3,24 @@
   "nama": "PT Multipolar Technology Tbk",
   "sektor": "Technology",
   "industri": "Information Technology Services",
-  "harga": 382.0,
-  "update": "2026-11-04 20:50",
+  "harga": 408.0,
+  "update": "2026-11-05 12:29",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 127.33333333333333,
+    "pe": null,
     "pb": null,
-    "ps": 4826.71926223874,
-    "roe": 0.18561311913962952,
-    "eps": 3.0,
+    "ps": 5155.239421448708,
+    "roe": 0.42539177006447926,
+    "eps": 0.006730346666666667,
+    "eps_annualized": 6.0,
     "de": 4.0328342551716885,
-    "margin_net": 0.07741180479833183,
+    "margin_net": 0.08504055994121544,
     "current_ratio": 1.0295279677855484,
-    "roa": 0.036839307964700294,
-    "bv": 0.015821525333333333
+    "roa": 8.442904518653953e-05,
+    "bv": 0.015821525333333333,
+    "pcf": 5.934317602676941e-05,
+    "div_yield": 784.313725490196,
+    "payout_ratio": 53333.333333333336
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 17906251333632,
-    "enterprise_value": 19141746491392,
+    "market_cap": 19125000732672,
+    "enterprise_value": 17829246009344,
     "shares_outstanding": 46875000000
   },
   "akumulasi": {

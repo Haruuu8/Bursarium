@@ -3,20 +3,24 @@
   "nama": "PT Daya Intiguna Yasa Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
-  "harga": 740.0,
-  "update": "2026-11-04 20:09",
+  "harga": 750.0,
+  "update": "2026-11-05 11:54",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.321339811015321,
-    "ps": 2.1640607171150457,
-    "roe": 0.13669989194848114,
+    "pb": 4.37973629494796,
+    "ps": 2.1933047808598434,
+    "roe": 0.00026769584134949184,
     "eps": 0.045841088935813304,
+    "eps_annualized": 4.682e-05,
     "de": 0.8980724823775877,
-    "margin_net": 0.12686957163446985,
+    "margin_net": 0.00013405797269698744,
     "current_ratio": 1.295473266769486,
-    "roa": 0.0711402024663095,
-    "bv": 171.2431866880039
+    "roa": 0.00013931200735819974,
+    "bv": 171.2431866880039,
+    "pcf": 9.563071381839872,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 18640889970688,
-    "enterprise_value": 20993133248512,
+    "market_cap": 18892793577472,
+    "enterprise_value": 20867180396544,
     "shares_outstanding": 25190392000
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Transcoal Pacific Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 1615.0,
-  "update": "2026-11-04 21:18",
+  "harga": 1515.0,
+  "update": "2026-11-05 12:53",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 3.7575703991865965,
-    "ps": 3975.88765692447,
-    "roe": 0.05419696183564875,
+    "pb": 3.524903501404145,
+    "ps": 3729.7026626876604,
+    "roe": 9.17796458344482e-05,
     "eps": 0.0394468,
+    "eps_annualized": 4.6e-05,
     "de": 0.8766162787721703,
-    "margin_net": 0.1112419626585978,
+    "margin_net": 0.09711210230660569,
     "current_ratio": 0.9530991321433661,
-    "roa": 0.02781941848866672,
-    "bv": 429.799
+    "roa": 4.711069199695792e-05,
+    "bv": 429.799,
+    "pcf": 7.4847859955888225,
+    "div_yield": 450.8514851485148,
+    "payout_ratio": 14848695652.173912
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 8074999889920,
-    "enterprise_value": 10159027912704,
+    "market_cap": 7575000055808,
+    "enterprise_value": 9559027482624,
     "shares_outstanding": 5000000000
   },
   "akumulasi": {

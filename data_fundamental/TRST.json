@@ -3,20 +3,24 @@
   "nama": "PT Trias Sentosa Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
-  "harga": 498.0,
-  "update": "2026-11-04 21:07",
+  "harga": 494.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.49743135518157666,
-    "ps": 334.9890535612518,
-    "roe": 0.037782662981420814,
+    "pb": 0.49343592260983704,
+    "ps": 332.2983784322457,
+    "roe": 3.312843935529541e-05,
     "eps": 0.03316631054131054,
+    "eps_annualized": 8.6e-05,
     "de": 1.0801932264042886,
-    "margin_net": 0.04680679104997219,
+    "margin_net": 0.022309941723598768,
     "current_ratio": 1.140863981456835,
-    "roa": 0.01761605216003333,
-    "bv": 1001.1431623931624
+    "roa": 1.5446034493396076e-05,
+    "bv": 1001.1431623931624,
+    "pcf": 3.004490038664272e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1398383968256,
-    "enterprise_value": 3396245127168,
+    "market_cap": 1387152015360,
+    "enterprise_value": 3446789111808,
     "shares_outstanding": 2808000000
   },
   "akumulasi": {

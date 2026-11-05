@@ -3,20 +3,24 @@
   "nama": "PT Eratex Djaja Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Apparel Manufacturing",
-  "harga": 116.0,
-  "update": "2026-11-04 20:33",
+  "harga": 124.0,
+  "update": "2026-11-05 12:14",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0013995794570965555,
-    "roe": 0.04477517484410624,
+    "ps": 0.0014961021782756282,
+    "roe": 0.01895193199910049,
     "eps": 438.3053268203927,
+    "eps_annualized": 0.002,
     "de": 1.6876510402255127,
-    "margin_net": 0.02482422931717326,
+    "margin_net": 0.005288302856498392,
     "current_ratio": 1.3578950242653671,
-    "roa": 0.016659375564901994,
-    "bv": 23127.210821629993
+    "roa": 0.007051392963908396,
+    "bv": 23127.210821629993,
+    "pcf": 0.012809605888160663,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 149238611968,
-    "enterprise_value": 150551134208,
+    "market_cap": 159530926080,
+    "enterprise_value": 149264596992,
     "shares_outstanding": 1286539792
   },
   "akumulasi": {

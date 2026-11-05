@@ -4,19 +4,23 @@
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
   "harga": 675.0,
-  "update": "2026-11-04 19:52",
+  "update": "2026-11-05 11:40",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 160.70215323020776,
+    "pe": null,
     "pb": 2.8627213330935226,
     "ps": 3578.8047795713687,
-    "roe": 0.01781383307909161,
-    "eps": 4.200317086187728,
+    "roe": 5.476339417412252e-05,
+    "eps": 0.01291264037480978,
+    "eps_annualized": 8.400634172375456,
     "de": 0.8479225347084768,
-    "margin_net": 0.04092601084817786,
+    "margin_net": 0.06846195420778588,
     "current_ratio": 1.6087372122160333,
-    "roa": 0.009286944963518402,
-    "bv": 235.7896286295458
+    "roa": 2.8549982783181815e-05,
+    "bv": 235.7896286295458,
+    "pcf": 2.8580039541071773e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 9422609842176,
-    "enterprise_value": 11632142974976,
+    "enterprise_value": 11073765769216,
     "shares_outstanding": 13959422300
   },
   "akumulasi": {

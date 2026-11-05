@@ -3,20 +3,24 @@
   "nama": "PT Multipolar Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
-  "harga": 51.0,
-  "update": "2026-11-04 20:50",
+  "harga": 53.0,
+  "update": "2026-11-05 12:29",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.002065441090114781,
-    "roe": -0.005399876502672318,
+    "ps": 0.002146438779923204,
+    "roe": -3.314899088062384e-05,
     "eps": -0.34497224014942024,
+    "eps_annualized": -4.0,
     "de": 1.699445617333653,
-    "margin_net": -0.004358868696539791,
+    "margin_net": -1.3970977250069735e-05,
     "current_ratio": 1.0911989358960328,
-    "roa": -0.001967257462351588,
-    "bv": 10406.719208790833
+    "roa": -1.2076683540273417e-05,
+    "bv": 10406.719208790833,
+    "pcf": null,
+    "div_yield": 105153.33177478937,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 796281405440,
-    "enterprise_value": 2263265574912,
+    "market_cap": 827508129792,
+    "enterprise_value": 2216218591232,
     "shares_outstanding": 467942000
   },
   "akumulasi": {

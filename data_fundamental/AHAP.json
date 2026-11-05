@@ -3,29 +3,27 @@
   "nama": "PT Asuransi Harta Aman Pratama Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 41.0,
-  "update": "2026-11-04 20:14",
+  "harga": 42.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.8392714049168088,
-    "ps": 0.019640544297555042,
+    "pb": null,
+    "ps": null,
     "roe": 0.0012378140051025333,
-    "eps": 27.326118761331575,
+    "eps": null,
+    "eps_annualized": 0.08,
     "de": 4.141008528964927,
-    "margin_net": 0.0012803853646064574,
+    "margin_net": null,
     "current_ratio": null,
     "roa": 0.00024077260291022128,
-    "bv": 22.291435559970797
+    "bv": 22291435.559970796,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": 29753735984.0,
-      "2025-Q2": 18939352297.0,
-      "2025-Q3": 15951306911719.0,
-      "2026-Q1": 95945251003.0,
-      "2026-Q2": 70641592221.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": -1.13,
       "2025-Q2": -1.19,
@@ -34,16 +32,16 @@
       "2026-Q2": -0.33
     },
     "net_income": {
-      "2025-Q1": -5520835593.0,
-      "2025-Q2": -5841334086.0,
-      "2025-Q3": 3780998666.0,
-      "2026-Q1": 1810834424.0,
-      "2026-Q2": 211484521576.0
+      "2025-Q1": -5520835593000000.0,
+      "2025-Q2": -5841334086000000.0,
+      "2025-Q3": 3780998666000000.0,
+      "2026-Q1": 1810834424000000.0,
+      "2026-Q2": -1597539068000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 316936192000,
+    "market_cap": 324666327040,
     "enterprise_value": 17766000640,
     "shares_outstanding": 7730150865
   },
@@ -73,7 +71,7 @@
     "saldo_laba": 775991100.0
   },
   "laba_rugi": {
-    "pendapatan": 166586843224.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

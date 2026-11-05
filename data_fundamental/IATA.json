@@ -3,20 +3,24 @@
   "nama": "PT Karya Pacific Energy Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 70.0,
-  "update": "2026-11-04 20:37",
+  "harga": 73.0,
+  "update": "2026-11-05 12:18",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.02990589109547703,
-    "roe": 0.007287580545780472,
+    "ps": 0.031187572142426043,
+    "roe": 0.041928610586921954,
     "eps": 176.78990576298082,
+    "eps_annualized": 6e-05,
     "de": 0.7721796469534682,
-    "margin_net": 0.028789019758493784,
+    "margin_net": 0.07552942383610502,
     "current_ratio": 0.7742265293577212,
-    "roa": 0.004121341282798078,
-    "bv": 4216.450373343011
+    "roa": 0.023711863307267163,
+    "bv": 4216.450373343011,
+    "pcf": 0.24067369332518554,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2189308067840,
+    "market_cap": 2283135565824,
     "enterprise_value": 2408294907904,
     "shares_outstanding": 31275829981
   },

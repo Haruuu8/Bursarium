@@ -3,20 +3,24 @@
   "nama": "PT Bank Jago Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 496.0,
-  "update": "2026-11-04 20:18",
+  "harga": 500.0,
+  "update": "2026-11-05 12:02",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 36.36363636363636,
-    "pb": 0.7616748695666624,
-    "ps": 1854.8769497572414,
-    "roe": 0.02094621916700364,
-    "eps": 13.64,
+    "pe": null,
+    "pb": 0.7678174088373613,
+    "ps": 1869.8356348359289,
+    "roe": 3.633000792116502e-05,
+    "eps": 0.023657973564428794,
+    "eps_annualized": 27.28,
     "de": 3.5382913548515753,
-    "margin_net": 0.09320432189628672,
+    "margin_net": 0.08847304403755069,
     "current_ratio": null,
-    "roa": 0.004564397683583264,
-    "bv": 651.1964879216613
+    "roa": 7.916684279764867e-06,
+    "bv": 651.1964879216613,
+    "pcf": 3.81275894564507,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 6875220279296,
-    "enterprise_value": 6469972393984,
+    "market_cap": 6930665308160,
+    "enterprise_value": 6442249617408,
     "shares_outstanding": 13861330900
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Pembangunan Jaya Ancol Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Leisure",
-  "harga": 406.0,
-  "update": "2026-11-04 20:54",
+  "harga": 402.0,
+  "update": "2026-11-05 12:32",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 25.375,
-    "pb": 0.3560669502207878,
-    "ps": 598.7985298979848,
-    "roe": 0.01389735449271422,
-    "eps": 16.0,
+    "pe": null,
+    "pb": 0.3525589014501397,
+    "ps": 592.899036992586,
+    "roe": 3.4139344082579465e-05,
+    "eps": 0.03892687509731719,
+    "eps_annualized": 21.333333333333332,
     "de": 0.9018173885207874,
-    "margin_net": 0.03243136763310113,
+    "margin_net": 0.05741220586649263,
     "current_ratio": 1.0105538898873883,
-    "roa": 0.007266963604991774,
-    "bv": 1140.2350028505875
+    "roa": 1.7851553767046723e-05,
+    "bv": 1140.2350028505875,
+    "pcf": 4.422351127870009e-06,
+    "div_yield": 6480.099518687811,
+    "payout_ratio": 122109.37530527344
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 649599975424,
-    "enterprise_value": 1094713016320,
+    "market_cap": 643199991808,
+    "enterprise_value": 1091513024512,
     "shares_outstanding": 1599999996
   },
   "akumulasi": {

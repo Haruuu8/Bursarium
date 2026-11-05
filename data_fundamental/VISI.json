@@ -3,20 +3,24 @@
   "nama": "PT Satu Visi Putra Tbk",
   "sektor": "Industrials",
   "industri": "Industrial Distribution",
-  "harga": 560.0,
-  "update": "2026-11-04 20:06",
+  "harga": 590.0,
+  "update": "2026-11-05 11:52",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 5488.726118304041,
-    "roe": -0.02095327615243019,
+    "ps": 5782.7650174989,
+    "roe": -0.006070575333881644,
     "eps": -0.00035284552845528454,
+    "eps_annualized": -2.72,
     "de": 0.1091864310052537,
-    "margin_net": -0.026937213634761592,
+    "margin_net": -0.003458343692427343,
     "current_ratio": 8.309510869565218,
-    "roa": -0.018980284830976635,
-    "bv": 0.05812390243902439
+    "roa": -0.005498961025796969,
+    "bv": 0.05812390243902439,
+    "pcf": 1.4753999776232802e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1722000080896,
-    "enterprise_value": 1719685873664,
+    "market_cap": 1814249996288,
+    "enterprise_value": 1612536610816,
     "shares_outstanding": 3075000000
   },
   "akumulasi": {

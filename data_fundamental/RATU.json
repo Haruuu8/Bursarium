@@ -3,20 +3,24 @@
   "nama": "PT Raharja Energi Cepu Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas E&P",
-  "harga": 1815.0,
-  "update": "2026-11-04 20:10",
+  "harga": 1985.0,
+  "update": "2026-11-05 11:55",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0933916146094228,
-    "roe": 0.373455514637017,
+    "ps": 0.10213903856733017,
+    "roe": 0.4347534180241737,
     "eps": null,
+    "eps_annualized": 0.012320077045987081,
     "de": 2.3191975939865563,
-    "margin_net": 0.6224173983538694,
+    "margin_net": 0.5534903709457782,
     "current_ratio": 3.268802340926778,
-    "roa": 0.10568427704922442,
-    "bv": 24742.057413374278
+    "roa": 0.12303098730038092,
+    "bv": 24742.057413374278,
+    "pcf": 0.5941726467981501,
+    "div_yield": 132.3079394609147,
+    "payout_ratio": 21317339.075851027
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4927822757888,
-    "enterprise_value": 5022959534080,
+    "market_cap": 5389381795840,
+    "enterprise_value": 4927932858368,
     "shares_outstanding": 2715053800
   },
   "akumulasi": {

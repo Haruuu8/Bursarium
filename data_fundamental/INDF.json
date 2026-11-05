@@ -3,20 +3,24 @@
   "nama": "PT Indofood Sukses Makmur Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 6600.0,
-  "update": "2026-11-04 20:39",
+  "harga": 6800.0,
+  "update": "2026-11-05 12:20",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 12.267657992565056,
-    "pb": 0.7559313643278749,
-    "ps": 0.46378612315891005,
-    "roe": 0.061624823638605344,
-    "eps": 538.0,
+    "pe": 6.04224714448268,
+    "pb": 0.7788383753681135,
+    "ps": 0.4778402481031194,
+    "roe": 0.12889879489277253,
+    "eps": 1125.4091130994605,
+    "eps_annualized": 1076.0,
     "de": 1.3896539587934107,
-    "margin_net": 0.07209786134935331,
+    "margin_net": 0.0790832014442585,
     "current_ratio": 2.0294554754820653,
-    "roa": 0.0204296256985106,
-    "bv": 8730.951395128699
+    "roa": 0.04273203519561471,
+    "bv": 8730.951395128699,
+    "pcf": 2.7863542154913064,
+    "div_yield": 1299.1546997109053,
+    "payout_ratio": 8210.27133646297
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 57950815125504,
-    "enterprise_value": 122625040842752,
+    "market_cap": 59706898907136,
+    "enterprise_value": 123503084830720,
     "shares_outstanding": 8780426500
   },
   "akumulasi": {

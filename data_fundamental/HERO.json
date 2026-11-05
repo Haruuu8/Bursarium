@@ -3,20 +3,24 @@
   "nama": "PT DFI Retail Nusantara Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
-  "harga": 284.0,
-  "update": "2026-11-04 20:37",
+  "harga": 300.0,
+  "update": "2026-11-05 12:17",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.6901937964862711,
-    "ps": 0.23697730175635948,
-    "roe": 0.03641932852970358,
+    "pb": 0.7290779540347934,
+    "ps": 0.2503281356581262,
+    "roe": 6.151639639472173e-05,
     "eps": 0.02531268270599197,
+    "eps_annualized": 1.2e-05,
     "de": 1.503536500073193,
-    "margin_net": 0.023110714310727875,
+    "margin_net": 2.1121588900988873e-05,
     "current_ratio": 0.60683190486255,
-    "roa": 0.014547153008809271,
-    "bv": 411.4786331691539
+    "roa": 2.457179928989382e-05,
+    "bv": 411.4786331691539,
+    "pcf": 2.638601079764838e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1188152082432,
-    "enterprise_value": 2401083326464,
+    "market_cap": 1255090159616,
+    "enterprise_value": 2334145118208,
     "shares_outstanding": 4183634000
   },
   "akumulasi": {

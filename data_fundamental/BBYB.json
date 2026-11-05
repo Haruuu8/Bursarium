@@ -3,20 +3,24 @@
   "nama": "PT Bank Neo Commerce Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 149.0,
-  "update": "2026-11-04 20:21",
+  "harga": 152.0,
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 6.7451335445903124,
-    "pb": 0.4501017242141295,
-    "ps": 653.2696850842555,
-    "roe": 0.06671532985450371,
-    "eps": 22.09,
+    "pe": null,
+    "pb": 0.4591641750372328,
+    "ps": 666.4227659919922,
+    "roe": 0.00013551460868597173,
+    "eps": 0.04486025182299432,
+    "eps_annualized": 44.18,
     "de": 2.94921205911808,
-    "margin_net": 0.19944195107432874,
+    "margin_net": 0.19668350725642886,
     "current_ratio": null,
-    "roa": 0.016893326784128748,
-    "bv": 331.03627909924506
+    "roa": 3.431434085011739e-05,
+    "bv": 331.03627909924506,
+    "pcf": 0.46201930033243155,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1989221810176,
+    "market_cap": 2029273219072,
     "enterprise_value": 611505405952,
     "shares_outstanding": 13350482346
   },

@@ -3,20 +3,24 @@
   "nama": "PT Blue Bird Tbk",
   "sektor": "Industrials",
   "industri": "Railroads",
-  "harga": 1395.0,
-  "update": "2026-11-04 20:23",
+  "harga": 1415.0,
+  "update": "2026-11-05 12:06",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 10.8984375,
-    "pb": 0.5709282003008045,
-    "ps": 0.60295378176519,
-    "roe": 0.05243354780035674,
-    "eps": 128.0,
+    "pe": null,
+    "pb": 0.5791135508427515,
+    "ps": 0.6115982804284902,
+    "roe": 0.00010431750170316859,
+    "eps": 0.2548882938331801,
+    "eps_annualized": 256.0,
     "de": 0.6307924702364645,
-    "margin_net": 0.10789206283600782,
+    "margin_net": 0.0001101690757665899,
     "current_ratio": 1.144816732765807,
-    "roa": 0.03178352011820339,
-    "bv": 2443.3895527756686
+    "roa": 6.323389419856912e-05,
+    "bv": 2443.3895527756686,
+    "pcf": 2.96189509109342,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3490429534208,
-    "enterprise_value": 5075691372544,
+    "market_cap": 3540471513088,
+    "enterprise_value": 5025649655808,
     "shares_outstanding": 2502100000
   },
   "akumulasi": {

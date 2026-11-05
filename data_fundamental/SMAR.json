@@ -3,20 +3,24 @@
   "nama": "PT Sinar Mas Agro Resources and Technology Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 6350.0,
-  "update": "2026-11-04 21:01",
+  "harga": 6950.0,
+  "update": "2026-11-05 12:37",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.7561657959341391,
-    "ps": 0.20672286092309622,
-    "roe": 0.09718687466611718,
+    "pb": 0.8276145325578372,
+    "ps": 0.22625572967173524,
+    "roe": 0.0001578851901243034,
     "eps": 1.3258612895215496,
+    "eps_annualized": 0.001632,
     "de": 1.0888650171240295,
-    "margin_net": 0.05360396209819753,
+    "margin_net": 4.31631242452095e-05,
     "current_ratio": 1.5911070897844402,
-    "roa": 0.04651134273889825,
-    "bv": 8397.629242348163
+    "roa": 7.556012287148665e-05,
+    "bv": 8397.629242348163,
+    "pcf": 4.934644856569417,
+    "div_yield": 3883.6236158939414,
+    "payout_ratio": 16538715766.215008
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 18238427627520,
-    "enterprise_value": 33959159267328,
+    "market_cap": 19961743409152,
+    "enterprise_value": 34030965751808,
     "shares_outstanding": 2872193366
   },
   "akumulasi": {

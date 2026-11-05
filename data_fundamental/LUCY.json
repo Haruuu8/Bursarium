@@ -3,20 +3,24 @@
   "nama": "PT Lima Dua Lima Tiga Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 86.0,
-  "update": "2026-11-04 21:34",
+  "harga": 79.0,
+  "update": "2026-11-05 13:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 7.3962293958403675,
-    "ps": 2.3135738358853044,
+    "pb": null,
+    "ps": 2.1252596864527796e-06,
     "roe": -0.25783247610253784,
-    "eps": -5.995918124791711,
+    "eps": null,
+    "eps_annualized": -6.0,
     "de": 2.7201189189937423,
     "margin_net": -0.16130231739103001,
     "current_ratio": 2.2278219377274096,
     "roa": -0.06583241935775849,
-    "bv": 11.627546334402002
+    "bv": 11627546.334402002,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 130270552064,
-    "enterprise_value": 133822251008,
+    "market_cap": 119667138560,
+    "enterprise_value": 120189288448,
     "shares_outstanding": 1514773893
   },
   "akumulasi": {

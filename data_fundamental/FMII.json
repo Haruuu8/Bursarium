@@ -3,20 +3,24 @@
   "nama": "PT Fortune Mate Indonesia Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 232.0,
-  "update": "2026-11-04 20:34",
+  "harga": 244.0,
+  "update": "2026-11-05 12:15",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 280362.5377643505,
-    "roe": -0.0018725997397403753,
+    "ps": 294864.0483383686,
+    "roe": -0.008296857552578503,
     "eps": -0.00089859375,
+    "eps_annualized": -4e-07,
     "de": 0.07797112907088469,
-    "margin_net": -0.24513692162417375,
+    "margin_net": -1.0859138972809668,
     "current_ratio": 3.2313569623183933,
-    "roa": -0.0017364920185582568,
-    "bv": 0.1083053125
+    "roa": -0.007693810168511968,
+    "bv": 0.1083053125,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1484800000000,
-    "enterprise_value": 1615508799488,
+    "market_cap": 1561599934464,
+    "enterprise_value": 1525908897792,
     "shares_outstanding": 6400000000
   },
   "akumulasi": {

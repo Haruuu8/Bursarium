@@ -3,20 +3,24 @@
   "nama": "PT Salim Ivomas Pratama Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 530.0,
-  "update": "2026-11-04 21:00",
+  "harga": 540.0,
+  "update": "2026-11-05 12:37",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.39286913594935124,
-    "ps": 0.4164531208964903,
-    "roe": 0.041771251563334,
+    "pb": 0.4002817611559428,
+    "ps": 0.424310726951141,
+    "roe": 8.821105814746511e-05,
     "eps": 0.11900110377768072,
+    "eps_annualized": 0.00011270299090851032,
     "de": 0.7244549766024717,
-    "margin_net": 0.09075839901852484,
+    "margin_net": 9.350637935536275e-05,
     "current_ratio": 1.3685091510867111,
-    "roa": 0.020627704971409092,
-    "bv": 1349.0497254748147
+    "roa": 4.356086098887506e-05,
+    "bv": 1349.0497254748147,
+    "pcf": 3.140538858233671,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 8215694147584,
-    "enterprise_value": 14365105324032,
+    "market_cap": 8370707234816,
+    "enterprise_value": 14521830735872,
     "shares_outstanding": 15501310000
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Energi Mega Persada Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas E&P",
-  "harga": 550.0,
-  "update": "2026-11-04 20:33",
+  "harga": 555.0,
+  "update": "2026-11-05 12:14",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.041529947372846335,
-    "roe": 0.047093375754407314,
+    "ps": 0.04190749234896312,
+    "roe": 0.08633759336539595,
     "eps": 2081.194963744358,
+    "eps_annualized": 0.00342,
     "de": 1.1257881044254567,
-    "margin_net": 0.1596269666315124,
+    "margin_net": 0.15714894057624731,
     "current_ratio": 0.5980011120212129,
-    "roa": 0.022974505522571822,
-    "bv": 24105.31591883009
+    "roa": 0.04211979888473411,
+    "bv": 24105.31591883009,
+    "pcf": 0.05467194678155354,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 21915748007936,
-    "enterprise_value": 15540559020032,
+    "market_cap": 22114981642240,
+    "enterprise_value": 14610799263744,
     "shares_outstanding": 39846815625
   },
   "akumulasi": {

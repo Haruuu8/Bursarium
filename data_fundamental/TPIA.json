@@ -3,20 +3,24 @@
   "nama": "PT Chandra Asri Pacific Tbk",
   "sektor": "Basic Materials",
   "industri": "Specialty Chemicals",
-  "harga": 1300.0,
-  "update": "2026-11-04 21:07",
+  "harga": 1285.0,
+  "update": "2026-11-05 12:43",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 28.380731417531166,
-    "ps": 10.507449943117752,
-    "roe": 0.07151472427320418,
+    "pb": 28.05326143963658,
+    "ps": 10.386210136081779,
+    "roe": 7.151472427320418e-05,
     "eps": 0.006551567694815442,
+    "eps_annualized": 0.0066,
     "de": 2.2223604739622007,
-    "margin_net": 0.05295405354016971,
+    "margin_net": 5.295405354016971e-05,
     "current_ratio": 2.2982448807224163,
-    "roa": 0.02057506806380618,
-    "bv": 45.805725753670046
+    "roa": 2.057506806380618e-05,
+    "bv": 45.805725753670046,
+    "pcf": 0.1509618623867826,
+    "div_yield": 44.54089707675023,
+    "payout_ratio": 8671977.688427884
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 112403840761856,
-    "enterprise_value": 108576160874496,
+    "market_cap": 111106878078976,
+    "enterprise_value": 112469179629568,
     "shares_outstanding": 86464496192
   },
   "akumulasi": {

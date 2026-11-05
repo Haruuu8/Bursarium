@@ -3,20 +3,24 @@
   "nama": "PT Citra Tubindo Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Equipment & Services",
-  "harga": 2210.0,
-  "update": "2026-11-04 20:29",
+  "harga": 2250.0,
+  "update": "2026-11-05 12:11",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.010600895875333794,
-    "roe": -0.004728212519482507,
+    "ps": 0.010792767293891873,
+    "roe": 0.05569783111062482,
     "eps": 7148.753155253529,
+    "eps_annualized": -0.002,
     "de": 0.45687031725031363,
-    "margin_net": -0.010811584948250127,
+    "margin_net": 0.03429103522050072,
     "current_ratio": 2.8900647206999075,
-    "roa": -0.003244873041270843,
-    "bv": 128348.86049790628
+    "roa": 0.0382242527981597,
+    "bv": 128348.86049790628,
+    "pcf": 0.050887992328974486,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1768821096448,
-    "enterprise_value": 1736273690624,
+    "market_cap": 1800835956736,
+    "enterprise_value": 1646849687552,
     "shares_outstanding": 800371500
   },
   "akumulasi": {

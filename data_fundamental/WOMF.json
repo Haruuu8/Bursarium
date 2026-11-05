@@ -3,28 +3,32 @@
   "nama": "PT Wahana Ottomitra Multiartha Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 272.0,
-  "update": "2026-11-04 21:09",
+  "harga": 266.0,
+  "update": "2026-11-05 12:45",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.791216702663787,
-    "pb": 0.4648517411317595,
-    "ps": -883.4005277848262,
-    "roe": 0.04748005649126786,
-    "eps": 27.78,
+    "pe": null,
+    "pb": 0.4545976586067942,
+    "ps": 35238.73948554033,
+    "roe": 6.736097713988657e-05,
+    "eps": 0.03941511703804899,
+    "eps_annualized": 55.56,
     "de": 3.1138356971993426,
-    "margin_net": -0.09750105844640229,
+    "margin_net": 5.221575342465753,
     "current_ratio": null,
-    "roa": 0.011541553913684933,
-    "bv": 585.132798121333
+    "roa": 1.6374250723174298e-05,
+    "bv": 585.132798121333,
+    "pcf": null,
+    "div_yield": 4595.420734638269,
+    "payout_ratio": 22001.114388296966
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": -854925000.0,
-      "2025-Q2": -36220000.0,
-      "2025-Q3": -43712000.0,
-      "2026-Q1": -972479000.0,
-      "2026-Q2": -19541000.0
+      "2025-Q1": 3499000.0,
+      "2025-Q2": 4215000.0,
+      "2025-Q3": 8185000.0,
+      "2026-Q1": 6531000.0,
+      "2026-Q2": 7349000.0
     },
     "eps": {
       "2025-Q1": 18.08,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 946962956288,
-    "enterprise_value": 5395655950336,
+    "market_cap": 926074077184,
+    "enterprise_value": 5388692881408,
     "shares_outstanding": 3481481480
   },
   "akumulasi": {
@@ -73,7 +77,7 @@
     "saldo_laba": 1421616.0
   },
   "laba_rugi": {
-    "pendapatan": -992020.0,
+    "pendapatan": 13880.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

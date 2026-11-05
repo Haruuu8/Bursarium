@@ -3,20 +3,24 @@
   "nama": "PT TBS Energi Utama Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 368.0,
-  "update": "2026-11-04 21:06",
+  "harga": 374.0,
+  "update": "2026-11-05 12:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.007847492052034229,
-    "roe": -0.11755790302846457,
+    "ps": 0.007975440292013048,
+    "roe": -0.5202734364636726,
     "eps": null,
+    "eps_annualized": -0.004724334239048411,
     "de": 3.4426379677879377,
-    "margin_net": -0.11358530491880456,
+    "margin_net": -0.22319918841865974,
     "current_ratio": 1.2456627721808564,
-    "roa": -0.025708347985431697,
-    "bv": 20117.679848425218
+    "roa": -0.11377687256760505,
+    "bv": 20117.679848425218,
+    "pcf": 0.05520085086794358,
+    "div_yield": 268.3262781912054,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3057923391488,
-    "enterprise_value": 3157061533696,
+    "market_cap": 3107780820992,
+    "enterprise_value": 3089898143744,
     "shares_outstanding": 8309574775
   },
   "akumulasi": {

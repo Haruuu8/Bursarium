@@ -3,20 +3,24 @@
   "nama": "PT Makmur Berkah Amanda Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 184.0,
-  "update": "2026-11-04 21:30",
+  "harga": 185.0,
+  "update": "2026-11-05 13:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 23.28308365196244,
+    "pe": null,
     "pb": null,
-    "ps": 0.0030551271696405737,
-    "roe": 0.034388528450079434,
-    "eps": 7.90273327839422,
+    "ps": 0.00307173112164949,
+    "roe": 0.06206323375612487,
+    "eps": null,
+    "eps_annualized": 15.80546655678844,
     "de": 0.7616632406544953,
-    "margin_net": 0.22109278606056323,
+    "margin_net": 0.22606931144124728,
     "current_ratio": 2.188397441250298,
-    "roa": 0.01943991352180564,
-    "bv": 219379.34813476185
+    "roa": 0.03508448751606553,
+    "bv": 219379.34813476185,
+    "pcf": 4.414416677167011e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 712723988480,
-    "enterprise_value": 967157088256,
+    "market_cap": 716597493760,
+    "enterprise_value": 982651109376,
     "shares_outstanding": 3873500000
   },
   "akumulasi": {

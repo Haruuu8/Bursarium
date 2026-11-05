@@ -4,19 +4,23 @@
   "sektor": "Technology",
   "industri": "Information Technology Services",
   "harga": 4790.0,
-  "update": "2026-11-04 21:34",
+  "update": "2026-11-05 13:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": 5.354442079938737,
     "ps": 10731.01971882215,
-    "roe": -0.0031378576914308986,
+    "roe": 2.2154791388625142e-05,
     "eps": 0.01981932929092934,
+    "eps_annualized": -6e-06,
     "de": 5.076614964775874,
-    "margin_net": -0.011530078642821708,
+    "margin_net": 0.04440117190705473,
     "current_ratio": 0.40005604893214164,
-    "roa": -0.0005161159033775695,
-    "bv": 894.5843336220764
+    "roa": 3.644027644372753e-06,
+    "bv": 894.5843336220764,
+    "pcf": 8.999598112905407e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

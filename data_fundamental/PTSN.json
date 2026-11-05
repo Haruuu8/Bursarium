@@ -3,20 +3,24 @@
   "nama": "PT Sat Nusapersada Tbk",
   "sektor": "Technology",
   "industri": "Electronic Components",
-  "harga": 298.0,
-  "update": "2026-11-04 20:57",
+  "harga": 278.0,
+  "update": "2026-11-05 12:34",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.004870014544501611,
-    "roe": 0.03614619040482679,
+    "ps": 0.004543167930776671,
+    "roe": 0.10855151590367212,
     "eps": 2651.8151628874607,
+    "eps_annualized": 0.00176,
     "de": 0.967790490074116,
-    "margin_net": 0.02574418712305293,
+    "margin_net": 0.04333684031071088,
     "current_ratio": 1.1565464542151052,
-    "roa": 0.018368839001724462,
-    "bv": 24429.093788433718
+    "roa": 0.05516391344968461,
+    "bv": 24429.093788433718,
+    "pcf": 0.0848818413504082,
+    "div_yield": 140.34190858855112,
+    "payout_ratio": 22167642.379327964
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1583674556416,
-    "enterprise_value": null,
+    "market_cap": 1477387616256,
+    "enterprise_value": 1583699329024,
     "shares_outstanding": 5314344000
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Era Digital Media Tbk",
   "sektor": "Communication Services",
   "industri": "Internet Content & Information",
-  "harga": 135.0,
-  "update": "2026-11-04 19:58",
+  "harga": 139.0,
+  "update": "2026-11-05 11:45",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0066147785214243655,
-    "roe": 0.019650776290481696,
+    "ps": 0.0068107719590961985,
+    "roe": 0.03238498344212688,
     "eps": 688.3253813682678,
+    "eps_annualized": 0.8354,
     "de": 0.27328425952527136,
-    "margin_net": 0.04377045383238173,
+    "margin_net": 0.03372681443278558,
     "current_ratio": 2.99025586836427,
-    "roa": 0.014843313720269298,
-    "bv": 21254.461426491995
+    "roa": 0.024462161797142556,
+    "bv": 21254.461426491995,
+    "pcf": 5.1257038645123974e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 463725002752,
-    "enterprise_value": 495116320768,
+    "market_cap": 477465018368,
+    "enterprise_value": 477941334016,
     "shares_outstanding": 3435000000
   },
   "akumulasi": {

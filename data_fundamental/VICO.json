@@ -3,20 +3,24 @@
   "nama": "PT Victoria Investama Tbk",
   "sektor": "Financial Services",
   "industri": "Asset Management",
-  "harga": 134.0,
-  "update": "2026-11-04 21:08",
+  "harga": 139.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.01018831925946402,
-    "roe": 0.02710501611169169,
+    "ps": 0.01056848042586193,
+    "roe": 0.14321519600478988,
     "eps": null,
+    "eps_annualized": 0.1318,
     "de": 8.260140029413218,
-    "margin_net": 0.2529352233749019,
+    "margin_net": 2.6492642672624687,
     "current_ratio": null,
-    "roa": 0.002775560923373767,
-    "bv": 0.24329794069556435
+    "roa": 0.014665274502188833,
+    "bv": 243297.94069556435,
+    "pcf": 3.5231249469039504e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2039088021504,
-    "enterprise_value": 6553089343488,
+    "market_cap": 2115173482496,
+    "enterprise_value": 6477049757696,
     "shares_outstanding": 15217075658
   },
   "akumulasi": {

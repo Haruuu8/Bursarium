@@ -3,20 +3,24 @@
   "nama": "PT Lupromax Pelumas Indonesia Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Refining & Marketing",
-  "harga": 57.0,
-  "update": "2026-11-04 20:01",
+  "harga": 60.0,
+  "update": "2026-11-05 11:47",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 23.553719008264462,
-    "pb": 0.7122399433402531,
-    "ps": 0.432132517405932,
+    "pe": 24.793388429752067,
+    "pb": null,
+    "ps": 4.548763341115074e-07,
     "roe": 0.015169632225996425,
     "eps": 2.42,
+    "eps_annualized": 2.42,
     "de": 0.29476594482800206,
     "margin_net": 0.018407536458006194,
     "current_ratio": 4.972044919851204,
     "roa": 0.011716119262011925,
-    "bv": 80.02921000566492
+    "bv": 80029210.00566493,
+    "pcf": 1.586936312369173e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 37050499072,
-    "enterprise_value": 17906100224,
+    "market_cap": 39000526848,
+    "enterprise_value": 14006046720,
     "shares_outstanding": 650008775
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Temas Tbk.",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 113.0,
-  "update": "2026-11-04 21:06",
+  "harga": 115.0,
+  "update": "2026-11-05 12:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.9836927900073593,
-    "ps": 1.3284586092177881,
-    "roe": 0.136308521304496,
+    "pb": 2.0188023969101443,
+    "ps": 1.3519711509738552,
+    "roe": 0.00020718140801801756,
     "eps": 0.011801978221612195,
+    "eps_annualized": 1.6e-05,
     "de": 0.8169429641080856,
-    "margin_net": 0.1646208298817682,
+    "margin_net": 0.00013874725286992532,
     "current_ratio": 1.1679367927226512,
-    "roa": 0.07363357370260956,
-    "bv": 56.9644657525729
+    "roa": 0.00011191895657811623,
+    "bv": 56.9644657525729,
+    "pcf": 6.503628239377353,
+    "div_yield": 674.3203360193587,
+    "payout_ratio": 4846677415.139141
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 6426180714496,
-    "enterprise_value": 7983436136448,
+    "market_cap": 6539918180352,
+    "enterprise_value": 8097173602304,
     "shares_outstanding": 56868856000
   },
   "akumulasi": {

@@ -4,19 +4,23 @@
   "sektor": "Technology",
   "industri": "Communication Equipment",
   "harga": 204.0,
-  "update": "2026-11-04 21:23",
+  "update": "2026-11-05 12:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.0009119633237452907,
-    "roe": 0.003231322400357286,
+    "roe": 0.014253390378344903,
     "eps": 5880.816010291428,
+    "eps_annualized": 0.002,
     "de": 0.4142649940093896,
-    "margin_net": 0.011943154064751127,
+    "margin_net": 0.026289649583724952,
     "current_ratio": 2.496921151103369,
-    "roa": 0.0022542960876710916,
-    "bv": 412590.6787220337
+    "roa": 0.009943719067586367,
+    "bv": 412590.6787220337,
+    "pcf": 7.143571727649966e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 272000008192,
-    "enterprise_value": 267335778304,
+    "enterprise_value": 259335782400,
     "shares_outstanding": 1333333331
   },
   "akumulasi": {

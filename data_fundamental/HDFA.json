@@ -3,20 +3,24 @@
   "nama": "PT Radana Bhaskara Finance Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 81.0,
-  "update": "2026-11-04 20:36",
+  "harga": 83.0,
+  "update": "2026-11-05 12:17",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 296.77602465376754,
-    "roe": 0.0031043398208101484,
+    "ps": 304.1038277316383,
+    "roe": -0.00879091172672794,
     "eps": -661.8543192595532,
+    "eps_annualized": 0.00046,
     "de": 5.07609001315612,
-    "margin_net": 3.964200254582881,
+    "margin_net": -2424.96905888612,
     "current_ratio": null,
-    "roa": 0.0005109107689465667,
-    "bv": 75288.47289493847
+    "roa": -0.0014468040644054997,
+    "bv": 75288.47289493847,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 529938087936,
-    "enterprise_value": 2773801762816,
+    "market_cap": 543022972928,
+    "enterprise_value": 2760716845056,
     "shares_outstanding": 6542445783
   },
   "akumulasi": {

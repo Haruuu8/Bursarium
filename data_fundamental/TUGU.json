@@ -3,29 +3,27 @@
   "nama": "PT Asuransi Tugu Pratama Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 1230.0,
-  "update": "2026-11-04 21:17",
+  "harga": 1200.0,
+  "update": "2026-11-05 12:52",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.11111111111111,
+    "pe": 4.444444444444445,
     "pb": null,
-    "ps": 0.034594759701829444,
+    "ps": null,
     "roe": 0.05230928721805771,
-    "eps": 135.0,
+    "eps": 270.0,
+    "eps_annualized": 270.0,
     "de": 2.116994976867158,
-    "margin_net": 4.958985782215128,
+    "margin_net": null,
     "current_ratio": null,
     "roa": 0.016287766260848675,
-    "bv": 2.582324859581104
+    "bv": 2582324.859581104,
+    "pcf": 3.521619599147852,
+    "div_yield": 8171.140841443507,
+    "payout_ratio": 36316.1815175267
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": 5429200000000.0,
-      "2025-Q2": 18324750000000.0,
-      "2025-Q3": 11240441000000.0,
-      "2026-Q1": 52366042000000.0,
-      "2026-Q2": 44485543000000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 141.0,
       "2025-Q2": -40.0,
@@ -43,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4373358051328,
-    "enterprise_value": -2145004027904,
+    "market_cap": 4266690609152,
+    "enterprise_value": -2127126200320,
     "shares_outstanding": 3555575600
   },
   "akumulasi": {
@@ -73,7 +71,7 @@
     "saldo_laba": 413313271.0
   },
   "laba_rugi": {
-    "pendapatan": 96851585.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

@@ -3,20 +3,24 @@
   "nama": "PT Medikaloka Hermina Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 478.0,
-  "update": "2026-11-04 21:17",
+  "harga": 488.0,
+  "update": "2026-11-05 12:53",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.303090781395565,
-    "ps": 0.9818178702869517,
-    "roe": 0.05423724570535528,
+    "pb": 1.3303520948138823,
+    "ps": 1.0023579930963022,
+    "roe": 7.769216601727693e-05,
     "eps": 0.028499054621878368,
+    "eps_annualized": 2.6453333333333333e-05,
     "de": 0.9112367968843598,
-    "margin_net": 0.05491914527487999,
+    "margin_net": 5.853740818837683e-05,
     "current_ratio": 1.1682146651908962,
-    "roa": 0.02469319729353218,
-    "bv": 366.82018384634614
+    "roa": 3.537178111972323e-05,
+    "bv": 366.82018384634614,
+    "pcf": 5.211087719548607,
+    "div_yield": 3113.0118676428096,
+    "payout_ratio": 57427537477.684906
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 7287444340736,
-    "enterprise_value": 11726855602176,
+    "market_cap": 7439900999680,
+    "enterprise_value": 11879313309696,
     "shares_outstanding": 15245698700
   },
   "akumulasi": {

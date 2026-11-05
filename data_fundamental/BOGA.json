@@ -1,30 +1,34 @@
 {
   "kode": "BOGA",
-  "nama": "PT Apollo Global Interactive Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Auto & Truck Dealerships",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 1730.0,
-  "update": "2026-11-04 21:12",
+  "update": "2026-11-05 12:47",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 430.90269225457047,
-    "pb": 14.184763770656984,
-    "ps": 20.32212055404111,
-    "roe": 0.005466304340441614,
-    "eps": 4.01482754945969,
+    "pe": null,
+    "pb": null,
+    "ps": 2.0322120554041108e-05,
+    "roe": 0.03291871697630715,
+    "eps": null,
+    "eps_annualized": 1.28,
     "de": 0.5893513605372329,
-    "margin_net": 0.0169193884698372,
+    "margin_net": 0.0471617395744539,
     "current_ratio": 1.364097975389903,
-    "roa": 0.003438567389899707,
-    "bv": 121.96184779465474
+    "roa": 0.020707450530082074,
+    "bv": 121961847.79465474,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": 126574440339.0,
-      "2025-Q2": 75713028600.0,
-      "2025-Q3": 98205344362.0,
-      "2026-Q1": 88923456963.0,
-      "2026-Q2": 60948215794.0
+      "2025-Q1": 1.26574440339e+17,
+      "2025-Q2": 7.57130286e+16,
+      "2025-Q3": 9.8205344362e+16,
+      "2026-Q1": 8.8923456963e+16,
+      "2026-Q2": 6.0948215794e+16
     },
     "eps": {
       "2025-Q1": -2.57,
@@ -34,17 +38,17 @@
       "2026-Q2": 2.76
     },
     "net_income": {
-      "2025-Q1": -9870077575.0,
-      "2025-Q2": 15889997390.0,
-      "2025-Q3": -3155232629.0,
-      "2026-Q1": -8019841218.0,
-      "2026-Q2": 10555578270.0
+      "2025-Q1": -9870077575000000.0,
+      "2025-Q2": 1.588999739e+16,
+      "2025-Q3": -3155232629000000.0,
+      "2026-Q1": -8019841218000000.0,
+      "2026-Q2": 1.055557827e+16
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 6580100136960,
-    "enterprise_value": 6988828770304,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 3803526210
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 24386754560,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 30000000000.0,

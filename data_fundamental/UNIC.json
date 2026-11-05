@@ -3,20 +3,24 @@
   "nama": "PT Unggul Indah Cahaya Tbk",
   "sektor": "Basic Materials",
   "industri": "Chemicals",
-  "harga": 14300.0,
-  "update": "2026-11-04 21:08",
+  "harga": 14100.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.013007533569266922,
+    "ps": 0.012825610022843608,
     "roe": 0.0999149719808852,
     "eps": null,
+    "eps_annualized": 0.1622,
     "de": 0.16351609414638493,
     "margin_net": 0.14757817874756118,
     "current_ratio": 6.467052641249684,
     "roa": 0.08352427441779081,
-    "bv": 811900.2253410713
+    "bv": 811900.2253410713,
+    "pcf": 0.05524695011042905,
+    "div_yield": 563.6112410875886,
+    "payout_ratio": 48994565.34731812
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5481638658048,
-    "enterprise_value": 5433529991168,
+    "market_cap": 5404972023808,
+    "enterprise_value": 5481446768640,
     "shares_outstanding": 383331363
   },
   "akumulasi": {

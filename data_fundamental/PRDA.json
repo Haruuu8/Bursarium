@@ -1,22 +1,26 @@
 {
   "kode": "PRDA",
-  "nama": "PT Prodia Widyahusada Tbk",
-  "sektor": "Healthcare",
-  "industri": "Diagnostics & Research",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 3700.0,
-  "update": "2026-11-04 21:12",
+  "update": "2026-11-05 12:47",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 42.455536431440045,
+    "pe": null,
     "pb": 1.3855160121204921,
     "ps": 1465.2412379634159,
-    "roe": 0.0331454164100245,
-    "eps": 87.15,
+    "roe": 7.916105473413439e-05,
+    "eps": 0.21139842481360324,
+    "eps_annualized": 174.3,
     "de": 0.12865947512918308,
-    "margin_net": 0.06956640315212671,
+    "margin_net": 0.08371613234524328,
     "current_ratio": 5.354450478768926,
-    "roa": 0.029342584435988483,
-    "bv": 2670.485196585536
+    "roa": 7.007876756907299e-05,
+    "bv": 2670.485196585536,
+    "pcf": null,
+    "div_yield": 4304.246008080922,
+    "payout_ratio": 91369.53660297998
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3241427075072,
-    "enterprise_value": 2537383788544,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 876061400
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": 7.588e-05
   },
   "arus_kas": {
-    "arus_kas_operasi": 454972014592,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 6173.0,

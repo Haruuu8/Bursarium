@@ -3,20 +3,24 @@
   "nama": "PT Bank Mega Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 1920.0,
-  "update": "2026-11-04 20:48",
+  "harga": 1915.0,
+  "update": "2026-11-05 12:27",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 35.31359205444179,
-    "pb": 2.015761190572626,
-    "ps": 4.6009903370432665,
-    "roe": 0.05708272078638978,
-    "eps": 54.37,
+    "pe": null,
+    "pb": 2.0105118124721764,
+    "ps": 4.589008591373883,
+    "roe": 0.00013163296069405807,
+    "eps": 0.12537957656620818,
+    "eps_annualized": 108.74,
     "de": 5.478322779440671,
-    "margin_net": 0.27282922407371235,
+    "margin_net": 0.0003004532397102605,
     "current_ratio": null,
-    "roa": 0.008811342492465037,
-    "bv": 952.4937819913962
+    "roa": 2.0318987672519628e-05,
+    "bv": 952.4937819913962,
+    "pcf": 44.87336779547611,
+    "div_yield": 4.489485479307999,
+    "payout_ratio": 79.06349726756316
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 45085144121344,
+    "market_cap": 44967732969472,
     "enterprise_value": 68262557646848,
     "shares_outstanding": 23481846730
   },

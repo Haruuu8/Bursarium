@@ -3,20 +3,24 @@
   "nama": "PT Lippo Karawaci Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 39.0,
-  "update": "2026-11-04 20:46",
+  "harga": 40.0,
+  "update": "2026-11-05 12:25",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 3.5845588235294117,
+    "pe": 3.676470588235294,
     "pb": null,
-    "ps": 0.38290775282826134,
-    "roe": 0.012669539132304128,
+    "ps": 0.3927259003366783,
+    "roe": 1.2669539132304129e-05,
     "eps": 10.88,
+    "eps_annualized": 10.88,
     "de": 0.5870902742669987,
-    "margin_net": 0.10681340583274607,
+    "margin_net": 0.00010681340583274607,
     "current_ratio": 3.794762678917661,
-    "roa": 0.007830647137714456,
-    "bv": 429.343999434459
+    "roa": 7.830647137714455e-06,
+    "bv": 429.343999434459,
+    "pcf": null,
+    "div_yield": 61.10868838298924,
+    "payout_ratio": 224.66429552569576
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2763436589056,
-    "enterprise_value": 11395698524160,
+    "market_cap": 2834294112256,
+    "enterprise_value": 11253902737408,
     "shares_outstanding": 70857354569
   },
   "akumulasi": {

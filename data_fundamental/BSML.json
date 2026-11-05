@@ -1,30 +1,34 @@
 {
   "kode": "BSML",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 364.0,
-  "update": "2026-11-04 19:47",
+  "nama": "PT Bintang Samudera Mandiri Lines Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 340.0,
+  "update": "2026-11-05 11:35",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.068214603720652,
-    "ps": 12.468566033088727,
-    "roe": 0.010901911276293499,
-    "eps": 783.4911133851289,
+    "pb": null,
+    "ps": 1.1646462778159801e-05,
+    "roe": 0.018059598564836955,
+    "eps": null,
+    "eps_annualized": 1.56,
     "de": 0.5033726017034204,
-    "margin_net": 0.05865733546956771,
+    "margin_net": 0.04442931383991474,
     "current_ratio": 1.2428027348390065,
-    "roa": 0.007251532806122776,
-    "bv": 71.82016320555609
+    "roa": 0.012012551573695022,
+    "bv": 71820163.20555608,
+    "pcf": 0.00010954482363133725,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": 31052540766.0,
-      "2025-Q2": 14002013611.0,
-      "2025-Q3": 15314968784.0,
-      "2026-Q1": 10606164328.0,
-      "2026-Q2": 14091236183.0
+      "2025-Q1": 3.1052540766e+16,
+      "2025-Q2": 1.4002013611e+16,
+      "2025-Q3": 1.5314968784e+16,
+      "2026-Q1": 1.0606164328e+16,
+      "2026-Q2": 1.4091236183e+16
     },
     "eps": {
       "2025-Q1": 0.7,
@@ -34,17 +38,17 @@
       "2026-Q2": 0.26
     },
     "net_income": {
-      "2025-Q1": 1302806887.0,
-      "2025-Q2": 733760409.0,
-      "2025-Q3": 217377854.0,
+      "2025-Q1": 1302806887000000.0,
+      "2025-Q2": 733760409000000.0,
+      "2025-Q3": 217377854000000.0,
       "2026-Q1": 964329474000000.0,
-      "2026-Q2": -962880790293000.0
+      "2026-Q2": 484354233000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
+    "market_cap": 629076525056,
+    "enterprise_value": 846153056256,
     "shares_outstanding": 1850225000
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": 0.78
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 5742640128,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 11999000.0,

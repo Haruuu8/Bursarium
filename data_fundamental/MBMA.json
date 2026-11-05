@@ -3,20 +3,24 @@
   "nama": "PT Merdeka Battery Materials Tbk.",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 300.0,
-  "update": "2026-11-04 19:58",
+  "harga": 316.0,
+  "update": "2026-11-05 11:45",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.05652948369617823,
-    "roe": 0.03335052843711591,
+    "ps": 0.0209914964999745,
+    "roe": 0.05097342805339161,
     "eps": 774.6745945766982,
+    "eps_annualized": 0.001,
     "de": 1.0871233411576948,
-    "margin_net": 0.0519497990486134,
+    "margin_net": 0.051460693166695964,
     "current_ratio": 1.5337241963742942,
-    "roa": 0.012818342142647814,
-    "bv": 0.015197616172984737
+    "roa": 0.019591738769717683,
+    "bv": 15197.616172984735,
+    "pcf": 0.12180407592157141,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -24,7 +28,7 @@
       "2025-Q2": 261592725000000.0,
       "2025-Q3": 307288415000000.0,
       "2026-Q1": 455134050000000.0,
-      "2026-Q2": -454086273204000.0
+      "2026-Q2": 592642746000000.0
     },
     "eps": {
       "2025-Q1": -0.0,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 32217787006976,
-    "enterprise_value": 31575093805056,
+    "market_cap": 33936069623808,
+    "enterprise_value": 32219447951360,
     "shares_outstanding": 107392624700
   },
   "akumulasi": {

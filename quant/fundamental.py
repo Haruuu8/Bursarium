@@ -1,5 +1,5 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + AUTO SCALE FIX)
+quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + AUTO SCALE FIX + DIVIDEND)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from datetime import datetime
@@ -72,11 +72,13 @@ FIELDS = {
     "modal_saham": ["modal saham", "share capital"],
     "saldo_laba": ["saldo laba", "retained earnings"],
     "pendapatan": [
+        "jumlah pendapatan", "total pendapatan", "pendapatan bunga", "pendapatan syariah", 
+        "pendapatan premi", "premi bruto", "premi neto", "pendapatan premi bruto",
+        "pendapatan pembiayaan", "pendapatan sewa", "pendapatan jasa", "pendapatan kontrak", 
+        "revenue", "sales", "total revenue", "pendapatan usaha", "penjualan neto", 
+        "penjualan bersih", "penjualan", "total penjualan", "pendapatan operasional", 
+        "pendapatan operasi", "pendapatan bruto", "pendapatan neto",
         "pendapatan bunga bersih", "jumlah pendapatan bunga dan syariah", "pendapatan bunga dan syariah",
-        "jumlah pendapatan", "total pendapatan", "penjualan neto", "penjualan bersih", "penjualan", "total penjualan",
-        "pendapatan usaha", "pendapatan operasional", "pendapatan operasi", "pendapatan bruto", "pendapatan neto",
-        "pendapatan bunga", "pendapatan syariah", "pendapatan premi", "premi bruto", "premi neto", "pendapatan premi bruto",
-        "pendapatan pembiayaan", "pendapatan sewa", "pendapatan jasa", "pendapatan kontrak", "revenue", "sales", "total revenue",
     ],
     "beban_pokok": ["beban pokok pendapatan", "beban pokok penjualan", "harga pokok penjualan", "hpp", "cost of goods sold", "cost of revenue"],
     "laba_kotor": ["laba kotor", "gross profit", "laba bruto"], 
@@ -244,12 +246,18 @@ def parse_xlsx(content_bytes):
                     for kw in kws:
                         if ll == kw or ll.startswith(kw + " ") or ll.startswith(kw + ":"): matched = True; break
                     if matched and any(b in ll for b in KAS_BLACKLIST): matched = False
+                elif field == "pendapatan":
+                    for kw in kws:
+                        if ll == kw or ll.startswith(kw + " ") or ll.startswith(kw + ":"):
+                            if kw == "pendapatan bunga" and "bersih" in ll:
+                                continue
+                            matched = True
+                            break
                 else:
                     matched = any(kw in ll for kw in kws)
                 if not matched: continue
                 is_ps = "per saham" in ll or field.startswith("eps")
                 
-                # FIX BUG 2: min_abs diturunkan jadi 1.0 agar data kecil tidak terbuang
                 min_abs = 0.0000001 if is_ps else 1.0
                 
                 for col in range(1, min(len(row), 5)):
@@ -299,21 +307,18 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
             return None
     
     laba = d.get("laba_induk") or d.get("laba_bersih")
-    
     ek_induk = d.get("ekuitas_induk")
     ek_total = d.get("ekuitas")
     ek = ek_induk if (ek_induk is not None and not pd.isna(ek_induk) and ek_induk != 0) else ek_total
-    
     pendapatan = d.get("pendapatan")
     eps_idx = d.get("eps_basic")
     
-    # FIX BUG 1: Auto-scale diubah ke 1000 (bukan 1 Miliar)
     def scale_num(v):
         if v is None or pd.isna(v): return None
         v = float(v)
         if abs(v) == 0: return 0
         if abs(v) < 1_000_000: return v * 1000
-        elif abs(v) < 1_000_000_000: return v * 1_000_000
+        elif abs(v) < 1_000_000_000_000: return v * 1_000_000
         return v
     
     if ttm_ni is not None: laba_rp = ttm_ni; factor = 1
@@ -329,14 +334,21 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
         factor_rev = {"tw1": 4, "tw2": 2, "tw3": 4/3, "audit": 1}.get(p_key, 1)
         
     ek_rp = scale_num(ek)
-    eps_calc, pe_calc, pb_calc, ps_calc, bv_calc = None, None, None, None, None
-    eps_final = None
+    aset_rp = scale_num(d.get("aset"))
+    
+    eps_calc, pe_calc, pb_calc, ps_calc, bv_calc, pcf_calc = None, None, None, None, None, None
+    eps_final, eps_annualized = None, None
+    
+    div_paid = scale_num(d.get("dividen_dibayar"))
+    div_yield, payout_ratio = None, None
 
     if harga:
-        if eps_idx is not None and not pd.isna(eps_idx):
-            if eps_idx < 1.0:
-                eps_idx = None
-            else:
+        if ttm_ni is not None and shares and shares > 0:
+            eps_final = ttm_ni / shares
+            if eps_final > 0:
+                pe_calc = harga / eps_final
+        elif eps_idx is not None and not pd.isna(eps_idx):
+            if eps_idx >= 1.0:
                 eps_final = eps_idx * factor
                 if eps_final > 0:
                     pe_calc = harga / eps_final
@@ -354,18 +366,60 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
         if ek_rp and shares and shares > 0:
             bv_calc = ek_rp / shares
             if bv_calc > 0: pb_calc = harga / bv_calc
+            
         if pend_rp and shares and shares > 0: ps_calc = (harga * shares) / (pend_rp * factor_rev)
+        
+        # --- TAMBAHAN: Annualized EPS ---
+        if eps_idx is not None and not pd.isna(eps_idx):
+            q_key = str(periode).split("-")[-1] if periode else "audit"
+            q_mult = {"tw1": 4, "tw2": 4/2, "tw3": 4/3, "audit": 1}.get(q_key, 1)
+            eps_annualized = eps_idx * q_mult
+
+        # --- TAMBAHAN: Price to Cash Flow (PCF) ---
+        cfo = d.get("arus_kas_operasi")
+        if cfo and shares and shares > 0 and harga:
+            cfo_rp = scale_num(cfo)
+            if cfo_rp:
+                cf_per_share = cfo_rp / shares
+                if cf_per_share > 0:
+                    pcf_calc = harga / cf_per_share
+
+        # --- TAMBAHAN: Dividend Yield & Payout Ratio ---
+        if div_paid and shares and shares > 0 and harga:
+            div_rp = scale_num(div_paid)
+            dps = div_rp / shares
+            if dps > 0:
+                div_yield = (dps / harga) * 100
+                # UBAH BARIS INI:
+                eps_for_payout = eps_annualized if (eps_annualized and eps_annualized > 0) else eps_final
+                if eps_for_payout and eps_for_payout > 0:
+                    payout_ratio = (dps / eps_for_payout) * 100
     
     if pe_calc is not None and (pe_calc < 2 or pe_calc > 500): pe_calc = None
     if pb_calc is not None and (pb_calc < 0.2 or pb_calc > 50): pb_calc = None
     
+    ni_for_ratio = ttm_ni if ttm_ni is not None else laba_rp
+    rev_for_ratio = ttm_rev if ttm_rev is not None else pend_rp
+
     return {
-        "roe": sd(laba, ek), "roa": sd(laba, d.get("aset")), "der": sd(d.get("liabilitas"), ek),
-        "dar": sd(d.get("liabilitas"), d.get("aset")), "current_ratio": sd(d.get("aset_lancar"), d.get("liabilitas_jangka_pendek")),
-        "margin_laba_bersih": sd(laba, d.get("pendapatan")), "margin_laba_kotor": sd(d.get("laba_kotor"), d.get("pendapatan")),
-        "margin_laba_operasi": sd(d.get("laba_operasi"), d.get("pendapatan")), 
-        "eps_calc": eps_calc, "eps_final": eps_final, 
-        "pe_calc": pe_calc, "pb_calc": pb_calc, "ps_calc": ps_calc, "bv_calc": bv_calc,
+        "roe": sd(ni_for_ratio, ek_rp), 
+        "roa": sd(ni_for_ratio, aset_rp), 
+        "der": sd(d.get("liabilitas"), ek), 
+        "dar": sd(d.get("liabilitas"), d.get("aset")), 
+        "current_ratio": sd(d.get("aset_lancar"), d.get("liabilitas_jangka_pendek")),
+        "margin_laba_bersih": sd(ni_for_ratio, rev_for_ratio), 
+        "margin_laba_kotor": sd(d.get("laba_kotor"), pend_rp),
+        "margin_laba_operasi": sd(d.get("laba_operasi"), pend_rp), 
+        "eps_calc": eps_calc, 
+        "eps_final": eps_final, 
+        "eps_annualized": eps_annualized, 
+        "pe_calc": pe_calc, 
+        "pb_calc": pb_calc, 
+        "ps_calc": ps_calc, 
+        "pcf_calc": pcf_calc, 
+        "bv_calc": bv_calc,
+        "div_yield": div_yield,
+        "payout_ratio": payout_ratio,
     }
 
 def fetch_yfinance(kode):
@@ -373,12 +427,10 @@ def fetch_yfinance(kode):
     try:
         t = yf.Ticker(f"{kode}.JK")
         try:
-            # Coba ambil t.info
             info = t.info
             if not info or ("currentPrice" not in info and "regularMarketPrice" not in info and "previousClose" not in info):
                 raise ValueError("Info kosong / Limit")
         except Exception:
-            # FIX BUG 3: Fallback ke fast_info jika t.info error/kena limit
             fi = t.fast_info
             info = {
                 "currentPrice": fi.get("last_price"),
@@ -468,7 +520,6 @@ def _standalone(curr, prev, quarter_num):
     if quarter_num == 1: return curr
     if prev is None: return None
     result = curr - prev
-    # FIX BUG 4: Hapus if result != 0 else None agar data 0 tidak dianggap hilang
     return result
 
 def build_one(kode, verbose=False):
@@ -496,13 +547,12 @@ def build_one(kode, verbose=False):
         year_data = {qnum: all_periods[lbl] for lbl, v in all_periods.items() if v["year"] == year for qnum in [v["qnum"]]}
         prev_rev, prev_eps, prev_ni = None, None, None
         
-        # FIX BUG 1 (Bagian 2): Auto-scale di build_one juga diperbaiki
         def scale_build(v):
             if v is None or pd.isna(v): return None
             v = float(v)
             if abs(v) == 0: return 0
             if abs(v) < 1_000_000: return v * 1000
-            elif abs(v) < 1_000_000_000: return v * 1_000_000
+            elif abs(v) < 1_000_000_000_000: return v * 1_000_000
             return v
 
         for qnum in [1, 2, 3, 4]:
@@ -589,10 +639,20 @@ def build_one(kode, verbose=False):
         "kode": kode, "nama": yfd.get("nama"), "sektor": yfd.get("sektor"), "industri": yfd.get("industri"),
         "harga": harga, "update": datetime.now().strftime("%Y-%m-%d %H:%M"), "periode_terbaru": snap_periode,
         "rasio_kunci": {
-            "pe": ratios.get("pe_calc"), "pb": ratios.get("pb_calc"), "ps": ratios.get("ps_calc"), "roe": ratios.get("roe"),
+            "pe": ratios.get("pe_calc"), 
+            "pb": ratios.get("pb_calc"), 
+            "ps": ratios.get("ps_calc"), 
+            "roe": ratios.get("roe"),
             "eps": ratios.get("eps_final"),
-            "de": ratios.get("der"), "margin_net": ratios.get("margin_laba_bersih"),
-            "current_ratio": ratios.get("current_ratio"), "roa": ratios.get("roa"), "bv": ratios.get("bv_calc"),
+            "eps_annualized": ratios.get("eps_annualized"),
+            "de": ratios.get("der"), 
+            "margin_net": ratios.get("margin_laba_bersih"),
+            "current_ratio": ratios.get("current_ratio"), 
+            "roa": ratios.get("roa"), 
+            "bv": ratios.get("bv_calc"),
+            "pcf": ratios.get("pcf_calc"),
+            "div_yield": ratios.get("div_yield"),
+            "payout_ratio": ratios.get("payout_ratio"),
         },
         "quarterly": {"revenue": q_rev, "eps": q_eps, "net_income": q_ni, "note": "standalone"},
         "statistik": {"market_cap": yfd.get("market_cap"), "enterprise_value": yfd.get("enterprise_value"), "shares_outstanding": shares},
@@ -679,7 +739,6 @@ if __name__ == "__main__":
             else:
                 tickers = []
                 
-        # FIX BUG 5: Ubah workers dari 1000 menjadi 10 (atau 5) agar tidak diblokir server
         batch(tickers, workers=10, delay=1.0)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]

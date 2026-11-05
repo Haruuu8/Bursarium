@@ -3,39 +3,43 @@
   "nama": "PT Abadi Lestari Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 2250.0,
-  "update": "2026-11-04 20:12",
+  "harga": 2110.0,
+  "update": "2026-11-05 11:56",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 172.54601226993867,
-    "pb": 21.633626120895393,
-    "ps": 12.924694303549224,
+    "pe": 161.80981595092027,
+    "pb": null,
+    "ps": 1.2120491102439493e-05,
     "roe": 0.06266316672274103,
     "eps": 13.04,
+    "eps_annualized": 13.04,
     "de": 1.5694781917602623,
     "margin_net": 0.07487438947662142,
     "current_ratio": 1.4941987822283318,
     "roa": 0.02436697456772039,
-    "bv": 104.00475571808
+    "bv": 104004755.71808,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2026-Q1": 92267765225.0,
-      "2026-Q2": 179740602434.0
+      "2026-Q1": 9.2267765225e+16,
+      "2026-Q2": 1.79740602434e+17
     },
     "eps": {
       "2026-Q1": 0.97,
       "2026-Q2": 5.55
     },
     "net_income": {
-      "2026-Q1": 3025480321.0,
-      "2026-Q2": 17340980140.0
+      "2026-Q1": 3025480321000000.0,
+      "2026-Q2": 1.734098014e+16
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 7031249960960,
-    "enterprise_value": 7963570339840,
+    "market_cap": 6593749975040,
+    "enterprise_value": 7463570505728,
     "shares_outstanding": 3125000000
   },
   "akumulasi": {

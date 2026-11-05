@@ -3,20 +3,24 @@
   "nama": "PT XLSMART Telecom Sejahtera Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 1560.0,
-  "update": "2026-11-04 20:34",
+  "harga": 1510.0,
+  "update": "2026-11-05 12:15",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.983235058383659,
-    "ps": 0.618033757575036,
-    "roe": -0.03442837844501959,
+    "pb": 0.9517211142046956,
+    "ps": 0.5982249832937848,
+    "roe": -0.00013796296065423166,
     "eps": -0.21889192903109594,
+    "eps_annualized": -0.00011,
     "de": 2.9262979202578983,
-    "margin_net": -0.041435684036810506,
+    "margin_net": -8.671961628329251e-05,
     "current_ratio": 0.3176100804638474,
-    "roa": -0.00875548852834166,
-    "bv": 1586.5992436889765
+    "roa": -3.5085391003040885e-05,
+    "bv": 1586.5992436889765,
+    "pcf": 1.2287058663879018,
+    "div_yield": 4.076393518041501,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 28391786938368,
-    "enterprise_value": 86167722655744,
+    "market_cap": 27481792839680,
+    "enterprise_value": 85894723796992,
     "shares_outstanding": 18199862451
   },
   "akumulasi": {

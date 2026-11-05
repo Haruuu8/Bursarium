@@ -3,20 +3,24 @@
   "nama": "PT. Polychem Indonesia Tbk",
   "sektor": "Basic Materials",
   "industri": "Chemicals",
-  "harga": 183.0,
-  "update": "2026-11-04 20:14",
+  "harga": 188.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.004372219314605157,
-    "roe": 0.04786309174349515,
+    "ps": 0.004491678858720052,
+    "roe": 0.06542288971488977,
     "eps": 1990.872851854357,
+    "eps_annualized": 0.003,
     "de": 0.5251430273533135,
-    "margin_net": 0.062244789892628716,
+    "margin_net": 0.04756575265464848,
     "current_ratio": 1.4800239681214813,
-    "roa": 0.031383317560352564,
-    "bv": 30430.83025727689
+    "roa": 0.042897089361498435,
+    "bv": 30430.83025727689,
+    "pcf": 0.09985540733641117,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 711719845888,
-    "enterprise_value": 696133550080,
+    "market_cap": 731165753344,
+    "enterprise_value": 711690289152,
     "shares_outstanding": 3889179559
   },
   "akumulasi": {

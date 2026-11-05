@@ -3,20 +3,24 @@
   "nama": "PT Prima Multi Usaha Indonesia Tbk",
   "sektor": "Technology",
   "industri": "Electronics & Computer Distribution",
-  "harga": 77.0,
-  "update": "2026-11-04 20:12",
+  "harga": 78.0,
+  "update": "2026-11-05 11:56",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 8.555555555555555,
-    "pb": 1.0827197124309687,
-    "ps": 0.10891250887231786,
+    "pe": 8.666666666666666,
+    "pb": null,
+    "ps": 0.11032695703949082,
     "roe": 0.06324662093713175,
     "eps": 9.0,
+    "eps_annualized": 9.0,
     "de": 0.23957360944698078,
-    "margin_net": 0.012724157664948157,
+    "margin_net": 12724.157664948156,
     "current_ratio": 5.281672380518546,
     "roa": 0.0471993150921231,
-    "bv": 71.11720523413793
+    "bv": 71117205.23413794,
+    "pcf": 7.153237865267019e-06,
+    "div_yield": 6410256.41025641,
+    "payout_ratio": 55555555.55555555
   },
   "quarterly": {
     "revenue": {
@@ -30,15 +34,15 @@
       "2026-Q2": 2.85
     },
     "net_income": {
-      "2025-Q3": 9685686607.0,
-      "2026-Q1": 9559062832.0,
-      "2026-Q2": 16528890113.0
+      "2025-Q3": 9685686607000000.0,
+      "2026-Q1": 9559062832000000.0,
+      "2026-Q2": 1.6528890113e+16
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 446599987200,
-    "enterprise_value": 299618926592,
+    "market_cap": 452399988736,
+    "enterprise_value": 282317029376,
     "shares_outstanding": 5800000000
   },
   "akumulasi": {

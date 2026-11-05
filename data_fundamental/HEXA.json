@@ -3,20 +3,24 @@
   "nama": "PT Hexindo Adiperkasa Tbk",
   "sektor": "Industrials",
   "industri": "Industrial Distribution",
-  "harga": 2860.0,
-  "update": "2026-11-04 20:36",
+  "harga": 2910.0,
+  "update": "2026-11-05 12:17",
   "periode_terbaru": "2026-tw1",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.004666005703574345,
-    "roe": 0.02892656172419013,
+    "ps": 0.004747579229860609,
+    "roe": 0.138274212600967,
     "eps": null,
+    "eps_annualized": 0.024,
     "de": 1.4114977318507065,
-    "margin_net": 0.04319149276642134,
+    "margin_net": 0.04563240152049634,
     "current_ratio": 1.647565036824748,
-    "roa": 0.011995268061890487,
-    "bv": 202279.97857142857
+    "roa": 0.05733955739400522,
+    "bv": 202279.97857142857,
+    "pcf": 0.023803790392336793,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -40,7 +44,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2402400075776,
+    "market_cap": 2444400001024,
     "enterprise_value": 2511671132160,
     "shares_outstanding": 840000000
   },

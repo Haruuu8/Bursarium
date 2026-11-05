@@ -3,20 +3,24 @@
   "nama": "PT Techno9 Indonesia Tbk",
   "sektor": "Technology",
   "industri": "Information Technology Services",
-  "harga": 50.0,
-  "update": "2026-11-04 19:53",
+  "harga": 54.0,
+  "update": "2026-11-05 11:40",
   "periode_terbaru": "2025-audit",
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.20581432744372,
-    "ps": 45.813073193759124,
+    "pb": null,
+    "ps": 4.9478119049259853e-05,
     "roe": -0.38785964024531744,
-    "eps": -4.610993377839592,
+    "eps": null,
+    "eps_annualized": -4.61,
     "de": 0.1893183962035448,
     "margin_net": -4.224875542298077,
     "current_ratio": 2.8167178667075503,
     "roa": -0.3261192641797307,
-    "bv": 11.88830416828929
+    "bv": 11888304.16828929,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 107849998336,
-    "enterprise_value": 120715673600,
+    "market_cap": 116477992960,
+    "enterprise_value": 109930676224,
     "shares_outstanding": 2157000000
   },
   "akumulasi": {

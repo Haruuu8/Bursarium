@@ -3,20 +3,24 @@
   "nama": "PT ESSA Industries Indonesia Tbk.",
   "sektor": "Basic Materials",
   "industri": "Chemicals",
-  "harga": 494.0,
-  "update": "2026-11-04 20:33",
+  "harga": 496.0,
+  "update": "2026-11-05 12:14",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 282.2857142857143,
+    "pe": null,
     "pb": null,
-    "ps": 0.026827797589527497,
-    "roe": 0.07077748757625053,
-    "eps": 1.75,
+    "ps": 0.026936412154667282,
+    "roe": 0.10168379736763723,
+    "eps": 2516.3759301059445,
+    "eps_annualized": 3.5,
     "de": 0.32635222397443625,
-    "margin_net": 0.16181021712020466,
+    "margin_net": 0.13665753868834263,
     "current_ratio": 3.158122737037123,
-    "roa": 0.043520076994978917,
-    "bv": 24747.06880790457
+    "roa": 0.06252393016655082,
+    "bv": 24747.06880790457,
+    "pcf": 0.05811134059421885,
+    "div_yield": 245.90860088898157,
+    "payout_ratio": 34848.761725981385
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 8510125899776,
+    "market_cap": 8544579485696,
     "enterprise_value": 8544507658240,
     "shares_outstanding": 17226975700
   },

@@ -3,20 +3,24 @@
   "nama": "PT Cikarang Listrindo Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Independent Power Producers",
-  "harga": 940.0,
-  "update": "2026-11-04 21:11",
+  "harga": 960.0,
+  "update": "2026-11-05 12:47",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.027395225397916237,
-    "roe": 0.05264123062645079,
+    "ps": 0.027978102534042114,
+    "roe": 0.10986319467982202,
     "eps": 4820.296264311577,
+    "eps_annualized": 0.0046,
     "de": 0.689200729590729,
-    "margin_net": 0.1351614393842279,
+    "margin_net": 0.14048202409100988,
     "current_ratio": 7.114134311639215,
-    "roa": 0.031163395625104343,
-    "bv": 43875.44234772644
+    "roa": 0.06503856691231741,
+    "bv": 43875.44234772644,
+    "pcf": 0.09478140805753399,
+    "div_yield": 292.91879238812345,
+    "payout_ratio": 61130878.41143445
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 15115542855680,
-    "enterprise_value": 14713532448768,
+    "market_cap": 15437149503488,
+    "enterprise_value": 15115541807104,
     "shares_outstanding": 16080364100
   },
   "akumulasi": {

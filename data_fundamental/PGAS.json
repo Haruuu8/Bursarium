@@ -3,26 +3,30 @@
   "nama": "PT Perusahaan Gas Negara (Persero) Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Regulated Gas",
-  "harga": 1370.0,
-  "update": "2026-11-04 20:54",
+  "harga": 1415.0,
+  "update": "2026-11-05 12:32",
   "periode_terbaru": "2026-tw1",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.035727340232536646,
-    "roe": 0.031965568444525375,
+    "ps": 0.008903845563674734,
+    "roe": 0.1160400947789995,
     "eps": null,
+    "eps_annualized": 0.020104530463183726,
     "de": 0.8743386789588403,
-    "margin_net": 0.0973017428514532,
+    "margin_net": 0.08522871817806547,
     "current_ratio": 2.0063837014897725,
-    "roa": 0.014582891387117608,
-    "bv": 0.11672307041455512
+    "roa": 0.05293821386751531,
+    "bv": 116723.07041455511,
+    "pcf": 0.04660513471633016,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 966563402000000.0,
-      "2025-Q2": -964625609467000.0,
-      "2025-Q3": -1934869631719.0,
+      "2025-Q2": 971229131000000.0,
+      "2025-Q3": 985108748000000.0,
       "2026-Q1": 929561551000000.0
     },
     "eps": {
@@ -40,8 +44,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 33210866073600,
-    "enterprise_value": 32241788911616,
+    "market_cap": 34301735337984,
+    "enterprise_value": 33211449081856,
     "shares_outstanding": 24241508195
   },
   "akumulasi": {

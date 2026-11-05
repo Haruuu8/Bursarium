@@ -3,20 +3,24 @@
   "nama": "PT ABM Investama Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 2600.0,
-  "update": "2026-11-04 20:13",
+  "harga": 2560.0,
+  "update": "2026-11-05 11:57",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.006897305518611207,
-    "roe": 0.044330018027046385,
+    "ps": 0.006791193126017189,
+    "roe": 0.06789064953454264,
     "eps": null,
+    "eps_annualized": 0.0286,
     "de": 1.3080315874974713,
-    "margin_net": 0.07780198157413469,
+    "margin_net": 0.058116795975124126,
     "current_ratio": 1.1380277590596588,
-    "roa": 0.01914839397444152,
-    "bv": 322690.05707976094
+    "roa": 0.029325431441850767,
+    "bv": 322690.05707976094,
+    "pcf": 0.02099938656939746,
+    "div_yield": 219.91734966847244,
+    "payout_ratio": 19684909.620674457
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 7158229368832,
-    "enterprise_value": 6911102550016,
+    "market_cap": 7048102674432,
+    "enterprise_value": 7158887350272,
     "shares_outstanding": 2753165000
   },
   "akumulasi": {

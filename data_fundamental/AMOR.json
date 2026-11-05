@@ -3,20 +3,24 @@
   "nama": "PT Ashmore Asset Management Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Asset Management",
-  "harga": 348.0,
-  "update": "2026-11-04 21:28",
+  "harga": 350.0,
+  "update": "2026-11-05 13:03",
   "periode_terbaru": "2025-audit",
   "rasio_kunci": {
-    "pe": 9.157894736842104,
+    "pe": 9.210526315789474,
     "pb": null,
-    "ps": 2069.7126425610354,
+    "ps": 2081.6075428056392,
     "roe": 0.28782678570212533,
     "eps": 38.0,
+    "eps_annualized": 38.0,
     "de": 0.4383473955886058,
     "margin_net": 0.22949035023659498,
     "current_ratio": null,
     "roa": 0.2001093661968497,
-    "bv": 0.13406098699020408
+    "bv": 0.13406098699020408,
+    "pcf": 8.908691864022241e-06,
+    "div_yield": 9059.392623700212,
+    "payout_ratio": 83441.77416565985
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 762380746752,
-    "enterprise_value": 460439519232,
+    "market_cap": 766762221568,
+    "enterprise_value": 469328396288,
     "shares_outstanding": 2190749200
   },
   "akumulasi": {

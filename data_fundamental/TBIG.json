@@ -3,20 +3,24 @@
   "nama": "PT Tower Bersama Infrastructure Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 995.0,
-  "update": "2026-11-04 21:04",
+  "harga": 990.0,
+  "update": "2026-11-05 12:41",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 26.606054907755627,
-    "pb": 1.7381421512283652,
-    "ps": 3.2558960732203865,
-    "roe": 0.06475522007488357,
-    "eps": 37.3975023147817,
+    "pe": null,
+    "pb": 1.729407768558876,
+    "ps": 3.2395347864202844,
+    "roe": 0.00011858497404855147,
+    "eps": 0.06788400424839956,
+    "eps_annualized": 74.7950046295634,
     "de": 2.6873987245902233,
-    "margin_net": 0.24157573365091375,
+    "margin_net": 0.0002221339325294876,
     "current_ratio": 0.12889721951837177,
-    "roa": 0.017327918015199974,
-    "bv": 572.4503023511753
+    "roa": 3.173227896950532e-05,
+    "bv": 572.4503023511753,
+    "pcf": 4.158786861006614,
+    "div_yield": 250.54301862741517,
+    "payout_ratio": 3316.2320086694926
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 22437861261312,
-    "enterprise_value": 52182715990016,
+    "market_cap": 22325107884032,
+    "enterprise_value": 52295467270144,
     "shares_outstanding": 22550614345
   },
   "akumulasi": {

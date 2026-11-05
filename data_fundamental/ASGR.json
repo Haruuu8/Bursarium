@@ -3,20 +3,24 @@
   "nama": "PT Astra Graphia Tbk",
   "sektor": "Industrials",
   "industri": "Specialty Business Services",
-  "harga": 2300.0,
-  "update": "2026-11-04 20:19",
+  "harga": 2350.0,
+  "update": "2026-11-05 12:03",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 14.872292272874232,
-    "pb": 1.538695687756681,
-    "ps": 1003.7523967853471,
-    "roe": 0.10346011150129952,
-    "eps": 154.65,
+    "pe": null,
+    "pb": 1.5721455940122613,
+    "ps": 1025.5731010632894,
+    "roe": 0.00014069351030692617,
+    "eps": 0.21030479014190967,
+    "eps_annualized": 206.2,
     "de": 0.5516179592484575,
-    "margin_net": 0.08858089990801665,
+    "margin_net": 0.09177997267842664,
     "current_ratio": 2.543769481947862,
-    "roa": 0.06667875008830808,
-    "bv": 1494.7725000472649
+    "roa": 9.067521073263575e-05,
+    "bv": 1494.7725000472649,
+    "pcf": 8.067875435307563e-06,
+    "div_yield": 8978.73332653602,
+    "payout_ratio": 102327.95013268499
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3102195318784,
-    "enterprise_value": 1294832500736,
+    "market_cap": 3169634222080,
+    "enterprise_value": 1321808166912,
     "shares_outstanding": 1348780500
   },
   "akumulasi": {

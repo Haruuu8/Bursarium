@@ -1,22 +1,26 @@
 {
   "kode": "RAJA",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 364.0,
-  "update": "2026-11-04 20:57",
+  "nama": "PT Rukun Raharja Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Regulated Gas",
+  "harga": 374.0,
+  "update": "2026-11-05 12:34",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.02935708525424193,
-    "roe": 0.10391054055805245,
+    "ps": 0.030163598585402424,
+    "roe": 0.15425725682640187,
     "eps": 1603.8686147779435,
+    "eps_annualized": 0.0108,
     "de": 1.655779670674012,
-    "margin_net": 0.17345691208380254,
+    "margin_net": 0.1293541419248324,
     "current_ratio": 1.3353873132675755,
-    "roa": 0.03634054360181189,
-    "bv": 10397.362482485387
+    "roa": 0.053948257197872274,
+    "bv": 10397.362482485387,
+    "pcf": 0.22880920620435624,
+    "div_yield": 317.99606637408885,
+    "payout_ratio": 11012086.002213817
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
+    "market_cap": 7877075402752,
+    "enterprise_value": 7693570408448,
     "shares_outstanding": 21061699000
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 34426392,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 10389040.0,

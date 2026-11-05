@@ -3,20 +3,24 @@
   "nama": "PT Citra Borneo Utama Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 1035.0,
-  "update": "2026-11-04 19:52",
+  "harga": 1010.0,
+  "update": "2026-11-05 11:40",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.4702066820737554,
-    "ps": 0.19987403339758758,
-    "roe": 0.12957687531408618,
+    "pb": 2.410539854004341,
+    "ps": 0.1950461581947473,
+    "roe": 0.00014139644435347506,
     "eps": 0.05924416,
+    "eps_annualized": 0.0001086,
     "de": 3.5109023228248435,
-    "margin_net": 0.018304451243530376,
+    "margin_net": 1.144093643908408e-05,
     "current_ratio": 1.1348336073356227,
-    "roa": 0.028725267372435987,
-    "bv": 418.99328
+    "roa": 3.13454901557099e-05,
+    "bv": 418.99328,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3234374877184,
-    "enterprise_value": 8940842647552,
+    "market_cap": 3156249935872,
+    "enterprise_value": 8847095758848,
     "shares_outstanding": 3125000000
   },
   "akumulasi": {

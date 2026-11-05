@@ -3,20 +3,24 @@
   "nama": "PT Garuda Maintenance Facility Aero Asia Tbk",
   "sektor": "Industrials",
   "industri": "Aerospace & Defense",
-  "harga": 37.0,
-  "update": "2026-11-04 21:14",
+  "harga": 38.0,
+  "update": "2026-11-05 12:50",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.00958163824045159,
-    "roe": 0.07487260686799059,
+    "ps": 0.00984060143613947,
+    "roe": 0.20311870290367384,
     "eps": 235.00387124612118,
+    "eps_annualized": 0.0018,
     "de": 4.721101174446199,
-    "margin_net": 0.04000893784209569,
+    "margin_net": 0.06085735349691882,
     "current_ratio": 1.0846060978561516,
-    "roa": 0.013084113278043558,
-    "bv": 1156.9780029442607
+    "roa": 0.03549533305774516,
+    "bv": 1156.9780029442607,
+    "pcf": 0.48144955732344835,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4618904403968,
+    "market_cap": 4743739998208,
     "enterprise_value": 4619210063872,
     "shares_outstanding": 124835258434
   },

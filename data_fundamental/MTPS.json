@@ -4,19 +4,23 @@
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
   "harga": 81.0,
-  "update": "2026-11-04 21:23",
+  "update": "2026-11-05 12:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.489447921928861,
+    "pb": null,
     "ps": null,
     "roe": -0.09303163174747217,
-    "eps": -3.357010618048396,
+    "eps": null,
+    "eps_annualized": -3.3570106180484,
     "de": 1.1814428036162847,
     "margin_net": null,
     "current_ratio": 1.5890604654538871,
     "roa": -0.04264683520156892,
-    "bv": 18.04230751945083
+    "bv": 18042307.519450832,
+    "pcf": 0.0008236971671755126,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -28,9 +32,9 @@
       "2026-Q2": -0.98
     },
     "net_income": {
-      "2025-Q3": -1886078765.0,
-      "2026-Q1": -1465182115.0,
-      "2026-Q2": -2034251070.0
+      "2025-Q3": -1886078765000000.0,
+      "2026-Q1": -1465182115000000.0,
+      "2026-Q2": -2034251070000000.0
     },
     "note": "standalone"
   },

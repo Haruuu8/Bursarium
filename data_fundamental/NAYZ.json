@@ -3,20 +3,24 @@
   "nama": "PT Hassana Boga Sejahtera Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 62.0,
-  "update": "2026-11-04 19:54",
+  "harga": 56.0,
+  "update": "2026-11-05 11:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.5130452976851783,
-    "ps": 21.67327552152604,
+    "pb": null,
+    "ps": 1.957586176137836e-05,
     "roe": -0.04726678334224861,
-    "eps": -2.3322624307001547,
+    "eps": null,
+    "eps_annualized": -0.24,
     "de": 0.027246460491034952,
     "margin_net": -0.8152865524043306,
     "current_ratio": 5.852999694609032,
     "roa": -0.04601345402583671,
-    "bv": 24.671262415010812
+    "bv": 24671262.415010814,
+    "pcf": 2.2940894589384664e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 158100701184,
-    "enterprise_value": 167307919360,
+    "market_cap": 142800633856,
+    "enterprise_value": 152007835648,
     "shares_outstanding": 2550011472
   },
   "akumulasi": {

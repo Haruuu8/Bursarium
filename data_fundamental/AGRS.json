@@ -3,20 +3,24 @@
   "nama": "PT Bank IBK Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 50.0,
-  "update": "2026-11-04 20:14",
+  "harga": 53.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.4042945636400679,
-    "ps": 1769.355212059199,
-    "roe": 0.021427676081773206,
+    "pb": 0.428552237458472,
+    "ps": 1875.5165247827508,
+    "roe": 2.1427676081773207e-05,
     "eps": 0.005300015881699973,
+    "eps_annualized": 5.3e-06,
     "de": 3.295148200167109,
     "margin_net": 0.18755221448564757,
     "current_ratio": null,
-    "roa": 0.0049888094853024,
-    "bv": 123.67220461691292
+    "roa": 4.9888094853024e-06,
+    "bv": 123.67220461691292,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2393219268608,
-    "enterprise_value": 6928463822848,
+    "market_cap": 2536812314624,
+    "enterprise_value": 6880599474176,
     "shares_outstanding": 47864384874
   },
   "akumulasi": {

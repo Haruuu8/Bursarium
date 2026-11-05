@@ -3,20 +3,24 @@
   "nama": "PT Atlas Nexus Group Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 41.0,
-  "update": "2026-11-04 19:48",
+  "harga": 44.0,
+  "update": "2026-11-05 11:36",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.2939481737866094,
-    "ps": 3.424007178189672,
+    "pb": null,
+    "ps": 3.674544288788916e-06,
     "roe": -0.09194647744658871,
-    "eps": -3.2867399694452,
+    "eps": null,
+    "eps_annualized": -3.28,
     "de": 0.021557994722809004,
     "margin_net": -0.2744834450786163,
     "current_ratio": 41.111225685790764,
     "roa": -0.08998098862379972,
-    "bv": 17.87311521180598
+    "bv": 17873115.21180598,
+    "pcf": 8.531373313181542e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 77903003648,
-    "enterprise_value": 79606087680,
+    "market_cap": 83603226624,
+    "enterprise_value": 75805941760,
     "shares_outstanding": 1900073314
   },
   "akumulasi": {

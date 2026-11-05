@@ -3,20 +3,24 @@
   "nama": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 1885.0,
-  "update": "2026-11-04 21:06",
+  "harga": 1990.0,
+  "update": "2026-11-05 12:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1240387.8617095717,
-    "roe": 0.08977208386502497,
+    "ps": 1309481.084775622,
+    "roe": 0.17405964523843728,
     "eps": 0.00021027685422606208,
+    "eps_annualized": 2.15e-07,
     "de": 1.4217420330761494,
-    "margin_net": 0.1400010543240465,
+    "margin_net": 0.13836862471113023,
     "current_ratio": 0.7906758631469939,
-    "roa": 0.035049342268061646,
-    "bv": 0.0012080735539706077
+    "roa": 0.06795738517323409,
+    "bv": 0.0012080735539706077,
+    "pcf": 3.131562733506575,
+    "div_yield": 2.2095777990590166,
+    "payout_ratio": 20451441023.848568
   },
   "quarterly": {
     "revenue": {
@@ -41,8 +45,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 185611877089280,
-    "enterprise_value": 246517533245440,
+    "market_cap": 195951004221440,
+    "enterprise_value": 247009877426176,
     "shares_outstanding": 97951817264
   },
   "akumulasi": {

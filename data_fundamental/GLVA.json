@@ -3,20 +3,24 @@
   "nama": "PT Galva Technologies Tbk",
   "sektor": "Technology",
   "industri": "Electronics & Computer Distribution",
-  "harga": 302.0,
-  "update": "2026-11-04 21:28",
+  "harga": 296.0,
+  "update": "2026-11-05 13:02",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 266.5853767622294,
-    "roe": 0.03733893653014562,
+    "ps": 261.2889785484103,
+    "roe": 0.06857903383856358,
     "eps": 0.018756,
+    "eps_annualized": 0.0002042,
     "de": 1.274674460440423,
-    "margin_net": 0.019893945710489712,
+    "margin_net": 0.01655654081639859,
     "current_ratio": 1.7380235039827705,
-    "roa": 0.015854861464033643,
-    "bv": 0.27349466666666666
+    "roa": 0.029120033452743343,
+    "bv": 0.27349466666666666,
+    "pcf": 6.236577213759073e-07,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 453000003584,
-    "enterprise_value": 720412999680,
+    "market_cap": 444000010240,
+    "enterprise_value": 717413023744,
     "shares_outstanding": 1500000000
   },
   "akumulasi": {

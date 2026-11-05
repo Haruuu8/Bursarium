@@ -3,20 +3,24 @@
   "nama": "PT Samudera Indonesia Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 340.0,
-  "update": "2026-11-04 21:02",
+  "harga": 334.0,
+  "update": "2026-11-05 12:38",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.006855362540792314,
-    "roe": 0.05821252062356921,
+    "ps": 0.0067343855547783325,
+    "roe": 0.10756478428332054,
     "eps": 3670.0245487188254,
+    "eps_annualized": 0.004,
     "de": 1.2424769885186417,
-    "margin_net": 0.07711578673036705,
+    "margin_net": 0.07399808475022134,
     "current_ratio": 2.310436139794256,
-    "roa": 0.021946779728247996,
-    "bv": 34119.20149490706
+    "roa": 0.04055314220883854,
+    "bv": 34119.20149490706,
+    "pcf": 0.033746074696513945,
+    "div_yield": 200.82282856061738,
+    "payout_ratio": 16768706.18481155
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5567704203264,
+    "market_cap": 5469450534912,
     "enterprise_value": 5797223333888,
     "shares_outstanding": 16375600000
   },

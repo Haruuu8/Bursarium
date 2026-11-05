@@ -3,20 +3,24 @@
   "nama": "PT Lippo Cikarang Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 412.0,
-  "update": "2026-11-04 20:46",
+  "harga": 440.0,
+  "update": "2026-11-05 12:25",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.30770891829015184,
-    "ps": 0.8997680528773129,
-    "roe": 0.03321482135275295,
+    "pb": 0.32862117487297765,
+    "ps": 0.9609173380243148,
+    "roe": 5.096747289043899e-05,
     "eps": 0.06824176220677618,
+    "eps_annualized": 8.8e-05,
     "de": 0.5754173870937384,
-    "margin_net": 0.14052870810158147,
+    "margin_net": 0.00014903339200414466,
     "current_ratio": 2.953990319343604,
-    "roa": 0.021192689848685692,
-    "bv": 1338.9277187328958
+    "roa": 3.25197547765478e-05,
+    "bv": 1338.9277187328958,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2115490545664,
-    "enterprise_value": 2479823257600,
+    "market_cap": 2259261587456,
+    "enterprise_value": 2377129394176,
     "shares_outstanding": 5134685692
   },
   "akumulasi": {

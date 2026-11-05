@@ -3,20 +3,24 @@
   "nama": "PT Inocycle Technology Group Tbk",
   "sektor": "Industrials",
   "industri": "Waste Management",
-  "harga": 140.0,
-  "update": "2026-11-04 21:25",
+  "harga": 157.0,
+  "update": "2026-11-05 13:00",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 5.763507930043534,
+    "pe": null,
     "pb": null,
-    "ps": 0.0003432879801759898,
-    "roe": 0.12016595371115948,
-    "eps": 24.290762101708868,
+    "ps": 0.00038497294919736,
+    "roe": 0.21834825189624657,
+    "eps": null,
+    "eps_annualized": 48.581524203417736,
     "de": 1.962909115308685,
-    "margin_net": 0.12836215989768945,
+    "margin_net": 0.10822808747671547,
     "current_ratio": 0.6400504922906717,
-    "roa": 0.04055674643892687,
-    "bv": 202143.46369768004
+    "roa": 0.07369387429674784,
+    "bv": 202143.46369768004,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 253151068160,
-    "enterprise_value": 760023941120,
+    "market_cap": 283890843648,
+    "enterprise_value": 752790994944,
     "shares_outstanding": 1808221900
   },
   "akumulasi": {

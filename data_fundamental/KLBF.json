@@ -3,20 +3,24 @@
   "nama": "PT Kalbe Farma Tbk.",
   "sektor": "Healthcare",
   "industri": "Drug Manufacturers - General",
-  "harga": 725.0,
-  "update": "2026-11-04 20:44",
+  "harga": 735.0,
+  "update": "2026-11-05 12:24",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.431438049125338,
-    "pb": 1.3467471713613315,
-    "ps": 0.8946914807986297,
-    "roe": 0.07889574734065444,
+    "pe": 9.56152684980293,
+    "pb": 1.3653229944145913,
+    "ps": 0.9070320529475763,
+    "roe": 0.1427934069382163,
     "eps": 76.8705680113369,
+    "eps_annualized": 8.484e-05,
     "de": 0.30062880239002615,
-    "margin_net": 0.09854109648501574,
+    "margin_net": 0.09486267906744107,
     "current_ratio": 3.153238520252332,
-    "roa": 0.058028215527990756,
-    "bv": 538.3341546336042
+    "roa": 0.10502526274337176,
+    "bv": 538.3341546336042,
+    "pcf": 8.911251741018258,
+    "div_yield": 2849.024586746177,
+    "payout_ratio": 24682143697.058468
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 32765156261888,
-    "enterprise_value": 28656919379968,
+    "market_cap": 33217088323584,
+    "enterprise_value": 29108851441664,
     "shares_outstanding": 45193316810
   },
   "akumulasi": {

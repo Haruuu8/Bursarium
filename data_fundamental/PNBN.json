@@ -3,20 +3,24 @@
   "nama": "PT Bank Pan Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 710.0,
-  "update": "2026-11-04 20:54",
+  "harga": 705.0,
+  "update": "2026-11-05 12:32",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 12.535310734463277,
-    "pb": 0.3204733670724514,
-    "ps": 1.107455160461166,
-    "roe": 0.025564545728343692,
-    "eps": 56.64,
+    "pe": null,
+    "pb": 0.31821651237475806,
+    "ps": 1.0996561804579184,
+    "roe": 5.158498375922346e-05,
+    "eps": 0.11428512392035542,
+    "eps_annualized": 113.28,
     "de": 2.959783091043941,
-    "margin_net": 0.1771861804417217,
+    "margin_net": 0.00017826147922470628,
     "current_ratio": null,
-    "roa": 0.00594617552161349,
-    "bv": 2215.4727130241868
+    "roa": 1.1998389135146858e-05,
+    "bv": 2215.4727130241868,
+    "pcf": null,
+    "div_yield": 569.8596281492523,
+    "payout_ratio": 3546.5310544246363
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 17091029630976,
-    "enterprise_value": 32696300470272,
+    "market_cap": 16970669883392,
+    "enterprise_value": 32335223324672,
     "shares_outstanding": 24071873098
   },
   "akumulasi": {

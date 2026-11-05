@@ -4,19 +4,23 @@
   "sektor": "Basic Materials",
   "industri": "Aluminum",
   "harga": 74.0,
-  "update": "2026-11-04 20:17",
+  "update": "2026-11-05 12:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 545.7423308615062,
-    "roe": -0.16034067434674618,
+    "roe": -0.4407812307315816,
     "eps": -530.5324211215933,
+    "eps_annualized": 0.0004,
     "de": 4.502971690883186,
-    "margin_net": -1.4232738278147232,
+    "margin_net": -3912.6216229796823,
     "current_ratio": 0.4012528656909316,
-    "roa": -0.029137106885791138,
-    "bv": 1203.6184486373165
+    "roa": -0.08009876399361224,
+    "bv": 1203.6184486373165,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

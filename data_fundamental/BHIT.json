@@ -4,19 +4,23 @@
   "sektor": "Communication Services",
   "industri": "Entertainment",
   "harga": 14.0,
-  "update": "2026-11-04 20:23",
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 12.727272727272727,
+    "pe": null,
     "pb": null,
     "ps": 0.08239201369966365,
-    "roe": 0.005561103843976906,
-    "eps": 1.1,
+    "roe": 1.451805173750103e-05,
+    "eps": 0.0028612060720912256,
+    "eps_annualized": 2.2,
     "de": 1.9783236540450546,
-    "margin_net": 0.013076858697487117,
+    "margin_net": 1.683860927780722e-05,
     "current_ratio": 1.0941104240337665,
-    "roa": 0.00128053345243824,
-    "bv": 197.07920345128352
+    "roa": 3.3430145229592275e-06,
+    "bv": 197.07920345128352,
+    "pcf": 1.5554618263750376e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

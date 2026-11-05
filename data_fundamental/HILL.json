@@ -4,19 +4,23 @@
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
   "harga": 16.0,
-  "update": "2026-11-04 19:56",
+  "update": "2026-11-05 11:43",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.14440762572305393,
-    "roe": 5.376128746615048,
+    "roe": 6.509220456955756,
     "eps": -0.042884509717464304,
+    "eps_annualized": -70.84,
     "de": -48.15161499572698,
-    "margin_net": -1.717848835487766,
+    "margin_net": -0.00038705313928726585,
     "current_ratio": 0.12614953674656293,
-    "roa": -0.11751169186588226,
-    "bv": -0.006588271207136316
+    "roa": -0.0001422788673181403,
+    "bv": -0.006588271207136316,
+    "pcf": 6.330610689390323e-07,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

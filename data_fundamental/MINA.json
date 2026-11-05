@@ -1,30 +1,34 @@
 {
   "kode": "MINA",
-  "nama": "PT Sanurhasta Mitra Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Lodging",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 124.0,
-  "update": "2026-11-04 21:12",
+  "update": "2026-11-05 12:48",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.872235142630376,
-    "ps": 119.47645243823314,
-    "roe": 0.000993194958263144,
+    "pb": null,
+    "ps": 0.00011947645243823314,
+    "roe": -0.00867720070789728,
     "eps": null,
+    "eps_annualized": 0.06,
     "de": 0.012133664143765849,
-    "margin_net": 0.06040939869388528,
+    "margin_net": -0.21278142932863398,
     "current_ratio": 135.29903424480105,
-    "roa": 0.0009809628852455333,
-    "bv": 25.450331597307937
+    "roa": -0.008570333318202637,
+    "bv": 25450331.597307935,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": 1386495368.0,
-      "2025-Q2": 2480133942.0,
-      "2025-Q3": 3617388130.0,
-      "2026-Q1": 1873401133.0,
-      "2026-Q2": 2245525100.0
+      "2025-Q1": 1386495368000000.0,
+      "2025-Q2": 2480133942000000.0,
+      "2025-Q3": 3617388130000000.0,
+      "2026-Q1": 1873401133000000.0,
+      "2026-Q2": 2245525100000000.0
     },
     "eps": {
       "2025-Q1": -0.21,
@@ -34,17 +38,17 @@
       "2026-Q2": 0.03
     },
     "net_income": {
-      "2025-Q1": -1375426531.0,
-      "2025-Q2": -532705925.0,
-      "2025-Q3": -1889986405.0,
+      "2025-Q1": -1375426531000000.0,
+      "2025-Q2": -532705925000000.0,
+      "2025-Q3": -1889986405000000.0,
       "2026-Q1": -63991348000000.0,
       "2026-Q2": 312813205000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1220625039360,
-    "enterprise_value": 1075544784896,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 9843750000
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 3297336576,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 824410000.0,

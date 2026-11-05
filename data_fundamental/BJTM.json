@@ -3,20 +3,24 @@
   "nama": "PT Bank Pembangunan Daerah Jawa Timur Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 492.0,
-  "update": "2026-11-04 20:23",
+  "harga": 494.0,
+  "update": "2026-11-05 12:06",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 10.131359240389257,
+    "pe": null,
     "pb": null,
-    "ps": 0.13270713222898722,
-    "roe": 0.055820942208057604,
-    "eps": 48.56209204769022,
+    "ps": 0.13324659211609693,
+    "roe": 0.00011041267907283453,
+    "eps": 0.46807761312159885,
+    "eps_annualized": 97.12418409538044,
     "de": 9.554786295336468,
-    "margin_net": 0.11107978101021143,
+    "margin_net": 0.00012625454816657874,
     "current_ratio": null,
-    "roa": 0.004499548433996596,
-    "bv": 4239.346577333098
+    "roa": 8.900014538698141e-06,
+    "bv": 4239.346577333098,
+    "pcf": null,
+    "div_yield": 104.99840381826886,
+    "payout_ratio": 534.0504218319802
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 7387624767488,
+    "market_cap": 7417655984128,
     "enterprise_value": 16289796980736,
     "shares_outstanding": 3081350100
   },

@@ -3,29 +3,27 @@
   "nama": "PT Victoria Insurance Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 107.0,
-  "update": "2026-11-04 21:08",
+  "harga": 110.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 13.595933926302415,
-    "pb": 0.6789705487440684,
-    "ps": 2.4561478137249058,
+    "pe": 6.98856416772554,
+    "pb": null,
+    "ps": null,
     "roe": 0.04992180314710431,
-    "eps": 7.87,
+    "eps": 15.74,
+    "eps_annualized": 15.74,
     "de": 0.22011105825494137,
-    "margin_net": 0.18229678712211012,
+    "margin_net": null,
     "current_ratio": null,
     "roa": 0.04091578615679851,
-    "bv": 157.591518804349
+    "bv": 157591518.80434898,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": -7466164960.0,
-      "2025-Q2": 39711907812.0,
-      "2025-Q3": -39116191512.0,
-      "2026-Q1": -7466164960.0,
-      "2026-Q2": 70499101642.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 1.94,
       "2025-Q2": 0.91,
@@ -34,17 +32,17 @@
       "2026-Q2": 3.14
     },
     "net_income": {
-      "2025-Q1": 2836723054.0,
-      "2025-Q2": 1330001517.0,
-      "2025-Q3": 7279103727.0,
-      "2026-Q1": 6909292581.0,
-      "2026-Q2": 4581409259.0
+      "2025-Q1": 2836723054000000.0,
+      "2025-Q2": 1330001517000000.0,
+      "2025-Q3": 7279103727000000.0,
+      "2026-Q1": 6909292581000000.0,
+      "2026-Q2": 4581409259000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 156281372672,
-    "enterprise_value": 159307988992,
+    "market_cap": 160663093248,
+    "enterprise_value": 154926268416,
     "shares_outstanding": 1460573616
   },
   "akumulasi": {
@@ -73,7 +71,7 @@
     "saldo_laba": 20000000000.0
   },
   "laba_rugi": {
-    "pendapatan": 63032936682.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

@@ -3,20 +3,24 @@
   "nama": "PT Soho Global Health Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 1090.0,
-  "update": "2026-11-04 21:32",
+  "harga": 1065.0,
+  "update": "2026-11-05 13:06",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 37.58620689655172,
-    "pb": 5.635914974885959,
-    "ps": 1.3031203830423608,
-    "roe": 0.15192762332646054,
-    "eps": 29.0,
+    "pe": null,
+    "pb": 5.506650869957382,
+    "ps": 1.2732323008624902,
+    "roe": 0.00027693684070295683,
+    "eps": 0.053560275077132624,
+    "eps_annualized": 58.0,
     "de": 1.2791090860721672,
-    "margin_net": 0.06954362752027164,
+    "margin_net": 6.403255612327273e-05,
     "current_ratio": 1.691291908200509,
-    "roa": 0.06666097040062864,
-    "bv": 193.4024918504126
+    "roa": 0.00012151100725952165,
+    "bv": 193.4024918504126,
+    "pcf": 1.7049138235591304e-05,
+    "div_yield": 6202.768526349591,
+    "payout_ratio": 113895.66345797095
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 13833933422592,
-    "enterprise_value": 13663000854528,
+    "market_cap": 13516641665024,
+    "enterprise_value": 13091875061760,
     "shares_outstanding": 12691682390
   },
   "akumulasi": {

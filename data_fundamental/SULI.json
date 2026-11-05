@@ -3,20 +3,24 @@
   "nama": "PT SLJ Global Tbk",
   "sektor": "Basic Materials",
   "industri": "Lumber & Wood Production",
-  "harga": 59.0,
-  "update": "2026-11-04 21:04",
+  "harga": 62.0,
+  "update": "2026-11-05 12:40",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.005569501180988795,
-    "roe": -0.07041449807237823,
+    "ps": 0.005852696156293311,
+    "roe": -0.00017610632755981235,
     "eps": -1.7992150952362542,
+    "eps_annualized": 2.82e-05,
     "de": 2.1639511922556833,
-    "margin_net": -0.15811873709008348,
+    "margin_net": -0.0001698428914876472,
     "current_ratio": 0.24575341923214664,
-    "roa": -0.022256519987901503,
-    "bv": 10216.640822432533
+    "roa": -5.5663451513949166e-05,
+    "bv": 10216.640822432533,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 372925825024,
+    "market_cap": 391888142336,
     "enterprise_value": 372932608000,
     "shares_outstanding": 1236022311
   },

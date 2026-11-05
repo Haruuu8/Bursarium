@@ -3,20 +3,24 @@
   "nama": "PT Pelayaran Nasional Bina Buana Raya Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 88.0,
-  "update": "2026-11-04 20:21",
+  "harga": 92.0,
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.05503142563101993,
-    "roe": 0.06365204984059698,
+    "ps": 0.05753285406879356,
+    "roe": 0.12601982295509281,
     "eps": 702.6552032644762,
+    "eps_annualized": 0.00071,
     "de": 0.1660375219466014,
-    "margin_net": 0.4528374425835024,
+    "margin_net": 0.43941042684884335,
     "current_ratio": 10.27684710322058,
-    "roa": 0.05458833754709303,
-    "bv": 5575.751392023994
+    "roa": 0.10807527252185962,
+    "bv": 5575.751392023994,
+    "pcf": 0.12168812333518127,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 746195189760,
+    "market_cap": 780113149952,
     "enterprise_value": 745335357440,
     "shares_outstanding": 8479490328
   },

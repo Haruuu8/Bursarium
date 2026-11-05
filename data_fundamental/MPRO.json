@@ -1,22 +1,26 @@
 {
   "kode": "MPRO",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
+  "nama": "PT Maha Properti Indonesia Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
   "harga": 11475.0,
-  "update": "2026-11-04 21:20",
+  "update": "2026-11-05 12:56",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 31.374192314902984,
-    "roe": -0.04283193266537091,
+    "roe": -0.0872516091399833,
     "eps": -6773.611767664069,
+    "eps_annualized": -0.0044399999999999995,
     "de": 0.6738366798461053,
-    "margin_net": -9.092614121258675,
+    "margin_net": -18.51996499042984,
     "current_ratio": 0.02170464987844414,
-    "roa": -0.019766067512773187,
-    "bv": 77633.0870505406
+    "roa": -0.04026484656512694,
+    "bv": 77633.0870505406,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
+    "market_cap": 114090194239488,
+    "enterprise_value": 114820791664640,
     "shares_outstanding": 9942500000
   },
   "akumulasi": {
@@ -89,7 +93,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": -45636370432,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 152820.0,

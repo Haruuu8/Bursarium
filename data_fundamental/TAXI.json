@@ -3,20 +3,24 @@
   "nama": "PT Express Transindo Utama Tbk",
   "sektor": "Industrials",
   "industri": "Railroads",
-  "harga": 10.0,
-  "update": "2026-11-04 21:04",
+  "harga": 11.0,
+  "update": "2026-11-05 12:41",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.018258405953559598,
-    "roe": 0.032150080319912816,
+    "ps": 0.02008424654891556,
+    "roe": -0.0608015196867375,
     "eps": -226.4278982516951,
+    "eps_annualized": 0.24,
     "de": 0.0958783189500967,
-    "margin_net": 0.21866418669260015,
+    "margin_net": -0.41342124854907364,
     "current_ratio": null,
-    "roa": 0.030172445029896074,
-    "bv": 3724.0499812883018
+    "roa": -0.057061459636415804,
+    "bv": 3724.0499812883018,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 102236471296,
+    "market_cap": 112460111872,
     "enterprise_value": 108691406848,
     "shares_outstanding": 10223647156
   },

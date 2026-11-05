@@ -4,25 +4,29 @@
   "sektor": "Financial Services",
   "industri": "Credit Services",
   "harga": 715.0,
-  "update": "2026-11-04 20:22",
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": 6.383928571428571,
     "pb": 0.963530742385265,
-    "ps": -1.3962622086842036,
-    "roe": 0.0757402217129266,
+    "ps": 198595.33140559678,
+    "roe": 7.57402217129266e-05,
     "eps": 112.0,
+    "eps_annualized": 112.0,
     "de": 1.2896255300611312,
-    "margin_net": -0.21951185282023322,
+    "margin_net": 31.221950209031675,
     "current_ratio": null,
-    "roa": 0.0330793499133246,
-    "bv": 742.0624672856668
+    "roa": 3.30793499133246e-05,
+    "bv": 742.0624672856668,
+    "pcf": 4.526650283018473,
+    "div_yield": 4895.110331387538,
+    "payout_ratio": 31250.03470484009
   },
   "quarterly": {
     "revenue": {
-      "2025-Q3": 95666000000.0,
-      "2026-Q1": -3903024000000.0,
-      "2026-Q2": 126581000000.0
+      "2025-Q3": 11689000.0,
+      "2026-Q1": 8510000.0,
+      "2026-Q2": 18041000.0
     },
     "eps": {
       "2025-Q3": 26.0,
@@ -38,7 +42,7 @@
   },
   "statistik": {
     "market_cap": 10545809850368,
-    "enterprise_value": 21832094711808,
+    "enterprise_value": 21606504071168,
     "shares_outstanding": 14749383620
   },
   "akumulasi": {
@@ -67,7 +71,7 @@
     "saldo_laba": 10154457.0
   },
   "laba_rugi": {
-    "pendapatan": -3776443.0,
+    "pendapatan": 26551.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

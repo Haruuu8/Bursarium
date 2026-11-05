@@ -3,20 +3,24 @@
   "nama": "PT Asahimas Flat Glass Tbk",
   "sektor": "Basic Materials",
   "industri": "Building Materials",
-  "harga": 3100.0,
-  "update": "2026-11-04 20:17",
+  "harga": 3190.0,
+  "update": "2026-11-05 12:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.281249555778723,
-    "ps": 0.2593790172515772,
-    "roe": 0.018023259217016623,
+    "pb": 0.2894148654626214,
+    "ps": 0.26690937581694557,
+    "roe": 2.2034420564037686e-05,
     "eps": 0.24286866359447004,
+    "eps_annualized": 0.000398,
     "de": 0.5337422120170949,
-    "margin_net": 0.03237799526593354,
+    "margin_net": 2.0320979123979853e-05,
     "current_ratio": 1.7318465912006487,
-    "roa": 0.011751165923322543,
-    "bv": 11022.239631336406
+    "roa": 1.436644332495694e-05,
+    "bv": 11022.239631336406,
+    "pcf": 1.8374819856974903e-06,
+    "div_yield": 2507.836990595611,
+    "payout_ratio": 20100502512.562813
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1345399947264,
-    "enterprise_value": 2342147063808,
+    "market_cap": 1384460058624,
+    "enterprise_value": 2359507025920,
     "shares_outstanding": 434000000
   },
   "akumulasi": {

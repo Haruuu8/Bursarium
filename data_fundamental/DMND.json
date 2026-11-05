@@ -3,20 +3,24 @@
   "nama": "PT Diamond Food Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 530.0,
-  "update": "2026-11-04 21:29",
+  "harga": 520.0,
+  "update": "2026-11-05 13:03",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.7534021678310234,
-    "ps": 0.4249245573362297,
-    "roe": 0.028098899840093297,
+    "pb": 0.7391870325889286,
+    "ps": 0.41690711285818766,
+    "roe": 5.92458006662604e-05,
     "eps": 0.04167797186397347,
+    "eps_annualized": 4e-05,
     "de": 0.2668377582794994,
-    "margin_net": 0.029658214276319605,
+    "margin_net": 3.341508253768069e-05,
     "current_ratio": 3.3472363467917554,
-    "roa": 0.022085091796030323,
-    "bv": 703.4755441782468
+    "roa": 4.656584256643021e-05,
+    "bv": 703.4755441782468,
+    "pcf": 1.1587241899614403e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5018229932032,
-    "enterprise_value": 4610413035520,
+    "market_cap": 4923546664960,
+    "enterprise_value": 4563071401984,
     "shares_outstanding": 9468359000
   },
   "akumulasi": {

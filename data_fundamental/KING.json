@@ -3,20 +3,24 @@
   "nama": "PT Hoffmen Cleanindo Tbk",
   "sektor": "Industrials",
   "industri": "Specialty Business Services",
-  "harga": 242.0,
-  "update": "2026-11-04 19:55",
+  "harga": 256.0,
+  "update": "2026-11-05 11:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 9.02418678543111,
-    "ps": 4.684702038477964,
+    "pb": null,
+    "ps": 4.9557178588857805e-06,
     "roe": 0.009414804037009016,
     "eps": null,
+    "eps_annualized": 1319300200.0,
     "de": 1.9459603867622237,
     "margin_net": 0.009774964262763685,
     "current_ratio": 0.766447362758894,
     "roa": 0.0031954807518961978,
-    "bv": 26.816820812119193
+    "bv": 26816820.812119193,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,7 +29,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 629568765952,
+    "market_cap": 665990070272,
     "enterprise_value": 712201142272,
     "shares_outstanding": 2601523713
   },

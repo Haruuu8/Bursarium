@@ -3,20 +3,24 @@
   "nama": "PT Bank JTrust Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 89.0,
-  "update": "2026-11-04 20:21",
+  "harga": 97.0,
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 20.090293453724605,
-    "pb": 6.435196702367049,
-    "ps": 9418.648421346546,
-    "roe": 0.020463809972932047,
-    "eps": 4.43,
+    "pe": null,
+    "pb": 7.01364134977083,
+    "ps": 10265.268504164214,
+    "roe": 1.431670956952699e-05,
+    "eps": 0.00019800282891418373,
+    "eps_annualized": 8.86,
     "de": 9.15994728724955,
-    "margin_net": 0.06740798989165793,
+    "margin_net": 0.020954146426682325,
     "current_ratio": null,
-    "roa": 0.002014164974912179,
-    "bv": 13.830191075163755
+    "roa": 1.4091322685791945e-06,
+    "bv": 13.830191075163755,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1611782946816,
-    "enterprise_value": -2364472295424,
+    "market_cap": 1756662333440,
+    "enterprise_value": -2400626933760,
     "shares_outstanding": 283501000000
   },
   "akumulasi": {

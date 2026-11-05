@@ -3,20 +3,24 @@
   "nama": "PT Sreeya Sewu Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 585.0,
-  "update": "2026-11-04 21:00",
+  "harga": 580.0,
+  "update": "2026-11-05 12:37",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 797.8135429518215,
-    "roe": -0.04658395591764984,
+    "ps": 790.9946237812931,
+    "roe": -5.878604509651465e-05,
     "eps": -9.51545827633379e-06,
+    "eps_annualized": -5.994e-05,
     "de": 1.372085122206822,
-    "margin_net": -0.01980975163056682,
+    "margin_net": -1.2977028171371099e-05,
     "current_ratio": 1.4233562751752356,
-    "roa": -0.01963839976969772,
-    "bv": 0.1618659370725034
+    "roa": -2.4782434890795248e-05,
+    "bv": 0.1618659370725034,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1075874693120,
-    "enterprise_value": 2005709225984,
+    "market_cap": 1066679205888,
+    "enterprise_value": 1941340684288,
     "shares_outstanding": 7310000000000
   },
   "akumulasi": {

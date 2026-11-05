@@ -3,20 +3,24 @@
   "nama": "PT Bank Permata Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 1405.0,
-  "update": "2026-11-04 20:25",
+  "harga": 1350.0,
+  "update": "2026-11-05 12:07",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 19.788732394366196,
+    "pe": 9.533347616066472,
     "pb": null,
-    "ps": 0.002306005308484691,
-    "roe": 0.05534561299625632,
-    "eps": 71.0,
+    "ps": 0.002215734638045789,
+    "roe": 8.20119556191951e-05,
+    "eps": 141.60817945260447,
+    "eps_annualized": 94.66666666666666,
     "de": 4.9728986114359985,
-    "margin_net": 0.21197730883750207,
+    "margin_net": 0.0002324193690694368,
     "current_ratio": null,
-    "roa": 0.00926612296587271,
-    "bv": 1726677.2677648566
+    "roa": 1.3730679349247796e-05,
+    "bv": 1726677.2677648566,
+    "pcf": 0.008188074032289,
+    "div_yield": 3489.6769623855703,
+    "payout_ratio": 49764.75949880832
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 50834742181888,
-    "enterprise_value": 56718142734336,
+    "market_cap": 48844771426304,
+    "enterprise_value": 54728167784448,
     "shares_outstanding": 26880234
   },
   "akumulasi": {

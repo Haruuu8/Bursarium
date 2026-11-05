@@ -3,20 +3,24 @@
   "nama": "PT Triputra Agro Persada Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 1875.0,
-  "update": "2026-11-04 21:34",
+  "harga": 1905.0,
+  "update": "2026-11-05 13:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 18.203883495145632,
-    "pb": 3.2533354466656283,
-    "ps": 3.252403357820169,
-    "roe": 0.17832836289463946,
-    "eps": 103.0,
+    "pe": null,
+    "pb": 3.3053888138122787,
+    "ps": 3.304441811545292,
+    "roe": 0.000342148760763967,
+    "eps": 0.19719114027726428,
+    "eps_annualized": 206.0,
     "de": 0.25258516126088854,
-    "margin_net": 0.3483554288348429,
+    "margin_net": 0.0003420507342774199,
     "current_ratio": 2.357606645375591,
-    "roa": 0.137642052545444,
-    "bv": 576.3315928339648
+    "roa": 0.0002640861887755722,
+    "bv": 576.3315928339648,
+    "pcf": 9.14159501449665,
+    "div_yield": 4.950989207733078,
+    "payout_ratio": 45.784633207434524
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 37223512670208,
-    "enterprise_value": 35861701853184,
+    "market_cap": 37819087060992,
+    "enterprise_value": 36159489048576,
     "shares_outstanding": 19852540000
   },
   "akumulasi": {

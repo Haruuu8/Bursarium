@@ -3,20 +3,24 @@
   "nama": "PT Alamtri Minerals Indonesia Tbk",
   "sektor": "Basic Materials",
   "industri": "Coking Coal",
-  "harga": 1310.0,
-  "update": "2026-11-04 19:47",
+  "harga": 1340.0,
+  "update": "2026-11-05 11:36",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 32.798462018265916,
-    "ps": 0.11269994715812913,
-    "roe": 0.10666878154325157,
+    "pb": 33.54957183547811,
+    "ps": 0.1152808619785443,
+    "roe": 84.96287851258852,
     "eps": 3393.4935970322535,
+    "eps_annualized": 0.0086,
     "de": 1.4361063325651595,
-    "margin_net": 0.29831060598275666,
+    "margin_net": 0.29194393058548435,
     "current_ratio": 1.5834678965615292,
-    "roa": 0.04214820656509914,
-    "bv": 39.940897206413
+    "roa": 33.57151832152487,
+    "bv": 39.940897206413,
+    "pcf": 0.3087117591784373,
+    "div_yield": 219.04875656607342,
+    "payout_ratio": 34130852.767271906
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 53555855622144,
-    "enterprise_value": 53148353822720,
+    "market_cap": 54782324637696,
+    "enterprise_value": 53557176827904,
     "shares_outstanding": 40882331500
   },
   "akumulasi": {

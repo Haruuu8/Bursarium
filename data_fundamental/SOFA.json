@@ -3,20 +3,24 @@
   "nama": "PT Solusi Environment Asia Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Renewable",
-  "harga": 125.0,
-  "update": "2026-11-04 21:30",
+  "harga": 128.0,
+  "update": "2026-11-05 13:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 6.2169905839656305,
-    "ps": 4.8327996725792115,
+    "pb": null,
+    "ps": 4.948786864721113e-06,
     "roe": -0.17115978331501153,
-    "eps": -6.882742582739842,
+    "eps": null,
+    "eps_annualized": -6.88,
     "de": 0.3990891729396695,
     "margin_net": -0.2661033288024969,
     "current_ratio": 1.5880045790449673,
     "roa": -0.12205695795262399,
-    "bv": 20.106190979666287
+    "bv": 20106190.97966629,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,7 +29,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 206696808448,
+    "market_cap": 211657539584,
     "enterprise_value": 204991528960,
     "shares_outstanding": 1653574499
   },

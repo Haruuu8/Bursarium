@@ -4,19 +4,23 @@
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
   "harga": 362.0,
-  "update": "2026-11-04 20:57",
+  "update": "2026-11-05 12:35",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 10.665880966411315,
+    "pe": null,
     "pb": 0.6404615055358599,
     "ps": 940.2885077887067,
-    "roe": 0.05909473817175167,
-    "eps": 33.94,
+    "roe": 0.00010701393489167791,
+    "eps": 0.06048614022223757,
+    "eps_annualized": 67.88,
     "de": 0.30683899531735265,
-    "margin_net": 0.15607529027520922,
+    "margin_net": 0.1571116644515642,
     "current_ratio": 4.402658863026364,
-    "roa": 0.04521960117772665,
-    "bv": 565.2174203617791
+    "roa": 8.188761987905837e-05,
+    "bv": 565.2174203617791,
+    "pcf": 3.150225794514221e-06,
+    "div_yield": 13812.160775052149,
+    "payout_ratio": 73659.43135782084
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 2220789334016,
-    "enterprise_value": 528697229312,
+    "enterprise_value": 516428496896,
     "shares_outstanding": 6134777300
   },
   "akumulasi": {

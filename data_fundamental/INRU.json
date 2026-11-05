@@ -4,19 +4,23 @@
   "sektor": "Basic Materials",
   "industri": "Paper & Paper Products",
   "harga": 590.0,
-  "update": "2026-11-04 20:40",
+  "update": "2026-11-05 12:20",
   "periode_terbaru": "2026-tw1",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 11735.472989574084,
-    "roe": -1.387092868386003,
+    "roe": -2.850587238164427,
     "eps": -0.016951028418418945,
+    "eps_annualized": -0.033,
     "de": 47.35718610001211,
-    "margin_net": -1.128447596532703,
+    "margin_net": -0.33716667144043766,
     "current_ratio": 0.8855086208992972,
-    "roa": -0.028684317270182433,
-    "bv": 0.0059465040015173115
+    "roa": -0.05894857554922355,
+    "bv": 0.0059465040015173115,
+    "pcf": 0.02662597923609306,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

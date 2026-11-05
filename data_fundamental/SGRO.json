@@ -3,20 +3,24 @@
   "nama": "PT Prime Agri Resources Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 4050.0,
-  "update": "2026-11-04 21:00",
+  "harga": 4150.0,
+  "update": "2026-11-05 12:37",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.3072328369562536,
-    "ps": 1.1658626813790745,
-    "roe": 0.16870153286292194,
+    "pb": 1.3395101909551734,
+    "ps": 1.194649414252632,
+    "roe": 0.00022839137513246848,
     "eps": 0.7075901424265185,
+    "eps_annualized": 0.0006933333333333332,
     "de": 0.6079877054337504,
-    "margin_net": 0.1901583203930382,
+    "margin_net": 0.0002036920841399462,
     "current_ratio": 1.1571856236055187,
-    "roa": 0.10491469076090676,
-    "bv": 3098.14738851724
+    "roa": 0.00014203552325722573,
+    "bv": 3098.14738851724,
+    "pcf": 3.4666974923870524,
+    "div_yield": 4650.601800147558,
+    "payout_ratio": 27836534813.38322
   },
   "quarterly": {
     "revenue": {
@@ -46,7 +50,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 7365419073536,
+    "market_cap": 7547280949248,
     "enterprise_value": 6849913421824,
     "shares_outstanding": 1818622000
   },

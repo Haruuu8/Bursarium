@@ -3,20 +3,24 @@
   "nama": "PT Acset Indonusa Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 74.0,
-  "update": "2026-11-04 20:14",
+  "harga": 75.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 656.7454901407475,
-    "roe": 0.42484300163049016,
+    "ps": 665.6204291967035,
+    "roe": 0.5403785157444206,
     "eps": -0.01920067484537622,
+    "eps_annualized": -20.046094114637274,
     "de": -5.101044214307551,
-    "margin_net": -0.19211342407086196,
+    "margin_net": -0.17040481908594227,
     "current_ratio": 0.7598830290563696,
-    "roa": -0.10232688533781889,
-    "bv": -0.03553189900402599
+    "roa": -0.0001301545516988261,
+    "bv": -0.03553189900402599,
+    "pcf": 9.210033953856211e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1307961851904,
-    "enterprise_value": 2779716780032,
+    "market_cap": 1325636911104,
+    "enterprise_value": 2797391839232,
     "shares_outstanding": 17675160000
   },
   "akumulasi": {

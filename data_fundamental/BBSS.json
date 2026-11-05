@@ -3,20 +3,24 @@
   "nama": "PT Bumi Benowo Sukses Sejahtera Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 41.0,
-  "update": "2026-11-04 21:31",
+  "harga": 43.0,
+  "update": "2026-11-05 13:05",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.8027281426887771,
-    "ps": 0.0003217395371044098,
-    "roe": -0.003803380327919018,
+    "pb": null,
+    "ps": 0.00033743414867047855,
+    "roe": -0.004400227149415612,
     "eps": null,
+    "eps_annualized": -0.2533333333333333,
     "de": 0.014428653789423582,
-    "margin_net": -2.169406362907801,
+    "margin_net": -1.763644465566124,
     "current_ratio": 100.55366420422799,
-    "roa": -0.003749283218402197,
-    "bv": 51.075822335901286
+    "roa": -0.00433764083159368,
+    "bv": 51075822.33590129,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 196800643072,
-    "enterprise_value": 210635833344,
+    "market_cap": 206400684032,
+    "enterprise_value": 196235788288,
     "shares_outstanding": 4800016020
   },
   "akumulasi": {

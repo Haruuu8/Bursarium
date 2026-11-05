@@ -3,20 +3,24 @@
   "nama": "PT Mora Telematika Indonesia Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 1840.0,
-  "update": "2026-11-04 21:15",
+  "harga": 1715.0,
+  "update": "2026-11-05 12:51",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 70.76923076923077,
-    "pb": 4.883355939993349,
-    "ps": 15.768336142014505,
-    "roe": 0.01735304999385863,
+    "pe": 65.96153846153847,
+    "pb": 4.551606215809017,
+    "ps": 14.697117654105911,
+    "roe": 17353.04999385863,
     "eps": 26.0,
+    "eps_annualized": 26.0,
     "de": 1.356994637009194,
-    "margin_net": 0.11206585338226166,
+    "margin_net": 112065.85338226166,
     "current_ratio": 1.3246989625792454,
-    "roa": 0.007243043621815832,
-    "bv": 376.7900645805692
+    "roa": 7243.043621815832,
+    "bv": 376.7900645805692,
+    "pcf": 32.11959346223282,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -30,15 +34,15 @@
       "2026-Q2": 7.55
     },
     "net_income": {
-      "2025-Q3": -170650240232.0,
+      "2025-Q3": -1.70881565675e+17,
       "2026-Q1": 128823000.0,
-      "2026-Q2": 183546496.69
+      "2026-Q2": 312369367867000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 87904508444672,
-    "enterprise_value": 111219662913536,
+    "market_cap": 81932742295552,
+    "enterprise_value": 104770148761600,
     "shares_outstanding": 47774192736
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Global Mediacom Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 59.0,
-  "update": "2026-11-04 20:25",
+  "harga": 56.0,
+  "update": "2026-11-05 12:07",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.10757132891800972,
-    "roe": 0.011164150220835365,
+    "ps": 0.10210160032895838,
+    "roe": 2.2695633141887906e-05,
     "eps": 0.02229584042393962,
+    "eps_annualized": 2e-05,
     "de": 0.4163179879854008,
-    "margin_net": 0.04069888822726349,
+    "margin_net": 4.065073192791637e-05,
     "current_ratio": 4.008688769644609,
-    "roa": 0.005093214868600078,
-    "bv": 982.3845972725735
+    "roa": 1.0354011177207788e-05,
+    "bv": 982.3845972725735,
+    "pcf": 0.7402071837006937,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 964798185472,
+    "market_cap": 915740688384,
     "enterprise_value": 16110446444544,
     "shares_outstanding": 16352512086
   },

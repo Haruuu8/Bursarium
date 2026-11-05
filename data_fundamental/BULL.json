@@ -3,20 +3,24 @@
   "nama": "PT Buana Lintas Lautan Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 228.0,
-  "update": "2026-11-04 20:26",
+  "harga": 224.0,
+  "update": "2026-11-05 12:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.017960110533302587,
-    "roe": 0.2252200289092538,
+    "ps": 0.017645020874823596,
+    "roe": 0.2518612346096908,
     "eps": 4214.148775793438,
+    "eps_annualized": 0.007536774848125644,
     "de": 0.769464347725477,
-    "margin_net": 0.45359269577437783,
+    "margin_net": 0.33195867463610496,
     "current_ratio": 0.9242472397196348,
-    "roa": 0.12656437598424305,
-    "bv": 16732.026198172585
+    "roa": 0.141535635828554,
+    "bv": 16732.026198172585,
+    "pcf": 0.07667925104557179,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3532731711488,
-    "enterprise_value": 3523798368256,
+    "market_cap": 3470753792000,
+    "enterprise_value": 3463046758400,
     "shares_outstanding": 15494436593
   },
   "akumulasi": {

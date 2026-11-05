@@ -3,20 +3,24 @@
   "nama": "PT Sumber Mas Konstruksi Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 67.0,
-  "update": "2026-11-04 19:47",
+  "harga": 71.0,
+  "update": "2026-11-05 11:36",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 7.613636363636363,
-    "pb": 0.41735084416021734,
-    "ps": 0.7737419354838709,
+    "pe": 8.068181818181818,
+    "pb": null,
+    "ps": 8.199354838709677e-07,
     "roe": -0.027430030062630763,
     "eps": 8.8,
+    "eps_annualized": 8.8,
     "de": 0.10807009524945707,
     "margin_net": -0.10170706420276497,
     "current_ratio": 9.959462951373904,
     "roa": -0.024754778763752764,
-    "bv": 160.5363950678372
+    "bv": 160536395.06783718,
+    "pcf": 1.1094787756684024e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 83950993408,
-    "enterprise_value": 50665312256,
+    "market_cap": 88962998272,
+    "enterprise_value": 56930312192,
     "shares_outstanding": 1253000000
   },
   "akumulasi": {

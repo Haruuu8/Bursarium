@@ -3,30 +3,27 @@
   "nama": "PT Asuransi Multi Artha Guna Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 376.0,
-  "update": "2026-11-04 20:16",
+  "harga": 378.0,
+  "update": "2026-11-05 12:00",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 8.859566446748351,
+    "pe": 6.680018850141377,
     "pb": null,
-    "ps": -2612.0004388204143,
+    "ps": null,
     "roe": 0.09295613909489166,
-    "eps": 42.44,
+    "eps": 56.58666666666666,
+    "eps_annualized": 56.58666666666666,
     "de": 1.5544329587590537,
-    "margin_net": -294.81473849805815,
+    "margin_net": null,
     "current_ratio": null,
     "roa": 0.03639012673092421,
-    "bv": 0.4565472313127993
+    "bv": 456547.23131279927,
+    "pcf": 8.051899297252918e-06,
+    "div_yield": 7936.507268946962,
+    "payout_ratio": 53016.018160849766
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": -2446265000000.0,
-      "2025-Q2": 354142449000000.0,
-      "2025-Q3": 0.0,
-      "2026-Q1": -11842000.0,
-      "2026-Q2": 12101093000.0,
-      "2026-Q3": -12801196000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 4.23,
       "2025-Q2": 10.47,
@@ -46,7 +43,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1859600646144,
+    "market_cap": 1869492125696,
     "enterprise_value": 1060314742784,
     "shares_outstanding": 4945746416
   },
@@ -76,7 +73,7 @@
     "saldo_laba": 63000000.0
   },
   "laba_rugi": {
-    "pendapatan": -711945.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

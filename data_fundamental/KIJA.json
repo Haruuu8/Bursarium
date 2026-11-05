@@ -3,20 +3,24 @@
   "nama": "PT Kawasan Industri Jababeka Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 103.0,
-  "update": "2026-11-04 20:43",
+  "harga": 106.0,
+  "update": "2026-11-05 12:23",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.015213494132462271,
-    "roe": -0.029386032152165065,
+    "ps": 0.01565660561204855,
+    "roe": 9.280190893567981e-06,
     "eps": 0.07890225757583344,
+    "eps_annualized": -17.28,
     "de": 1.1805554270655467,
-    "margin_net": -0.07300729046829654,
+    "margin_net": 1.1654165365708435e-05,
     "current_ratio": 5.6521973740620055,
-    "roa": -0.011929167249835377,
-    "bv": 8502.22355129784
+    "roa": 3.76726428074827e-06,
+    "bv": 8502.22355129784,
+    "pcf": 0.05914504458598109,
+    "div_yield": 400223.023968051,
+    "payout_ratio": 537673342.23409
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2142073651200,
-    "enterprise_value": 5797367513088,
+    "market_cap": 2204464054272,
+    "enterprise_value": 5691704606720,
     "shares_outstanding": 711956815
   },
   "akumulasi": {

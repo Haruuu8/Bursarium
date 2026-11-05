@@ -3,28 +3,32 @@
   "nama": "PT Bank Panin Dubai Syariah Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 34.0,
-  "update": "2026-11-04 20:55",
+  "harga": 35.0,
+  "update": "2026-11-05 12:33",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 16.346153846153847,
+    "pe": null,
     "pb": null,
-    "ps": -167.9661870281032,
-    "roe": 0.026846007218392167,
-    "eps": 2.08,
+    "ps": 0.0010813190250853661,
+    "roe": 0.036872725879146334,
+    "eps": 2858.6474556224052,
+    "eps_annualized": 4.16,
     "de": 0.5338650804221563,
-    "margin_net": -145.2449207456525,
+    "margin_net": 0.08831742513646805,
     "current_ratio": null,
-    "roa": 0.003948211715730204,
-    "bv": 0.0775274240638427
+    "roa": 0.005422829813113373,
+    "bv": 77527.4240638427,
+    "pcf": 8.979312715795024e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": -236407000.0,
-      "2025-Q2": -1755898000.0,
-      "2025-Q3": -5544641000.0,
-      "2026-Q1": -140976000.0,
-      "2026-Q2": -415208000.0
+      "2025-Q1": 285148207000000.0,
+      "2025-Q2": 290875049000000.0,
+      "2025-Q3": 301604905000000.0,
+      "2026-Q1": 328230068000000.0,
+      "2026-Q2": 335605103000000.0
     },
     "eps": {
       "2025-Q1": 0.34,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1319663828992,
-    "enterprise_value": 1326623621120,
+    "market_cap": 1358477524992,
+    "enterprise_value": 1287775322112,
     "shares_outstanding": 38813641319
   },
   "akumulasi": {
@@ -73,7 +77,7 @@
     "saldo_laba": -954237567.0
   },
   "laba_rugi": {
-    "pendapatan": -556184.0,
+    "pendapatan": 663835171.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

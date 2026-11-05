@@ -3,20 +3,24 @@
   "nama": "PT Planet Properindo Jaya Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Lodging",
-  "harga": 39.0,
-  "update": "2026-11-04 21:32",
+  "harga": 38.0,
+  "update": "2026-11-05 13:06",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.6640009835093731,
-    "ps": 3.2639750270813845,
+    "pb": null,
+    "ps": 3.1802833597203233e-06,
     "roe": -0.02357545308074366,
-    "eps": -2.769401530972353,
+    "eps": null,
+    "eps_annualized": -2.76,
     "de": 0.4915632912690603,
     "margin_net": -0.23177583171935162,
     "current_ratio": 0.05245316661237318,
     "roa": -0.015805868392406643,
-    "bv": 58.73485276162919
+    "bv": 58734852.761629194,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,7 +29,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 34971672576,
+    "market_cap": 34074963968,
     "enterprise_value": 57048068096,
     "shares_outstanding": 896709596
   },

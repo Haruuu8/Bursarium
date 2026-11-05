@@ -3,20 +3,24 @@
   "nama": "PT Pelayaran Tamarin Samudra Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 20.0,
-  "update": "2026-11-04 21:13",
+  "harga": 22.0,
+  "update": "2026-11-05 12:48",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.39937112849528195,
-    "roe": 0.008492821993407751,
+    "ps": 0.4393082413448101,
+    "roe": 3.359034237054448e-05,
     "eps": 0.01530504,
+    "eps_annualized": 7.8e-06,
     "de": 1.1675295639597951,
-    "margin_net": 0.08960423642941517,
+    "margin_net": 0.0003056195548232715,
     "current_ratio": 1.1098154681356005,
-    "roa": 0.003918188614858276,
-    "bv": 455.63810666666666
+    "roa": 1.549700407563223e-05,
+    "bv": 455.63810666666666,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 749999947776,
-    "enterprise_value": 507972648960,
+    "market_cap": 824999936000,
+    "enterprise_value": 483784032256,
     "shares_outstanding": 37500000000
   },
   "akumulasi": {

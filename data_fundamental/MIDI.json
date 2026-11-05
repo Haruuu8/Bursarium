@@ -3,20 +3,24 @@
   "nama": "PT Midi Utama Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Grocery Stores",
-  "harga": 246.0,
-  "update": "2026-11-04 20:50",
+  "harga": 250.0,
+  "update": "2026-11-05 12:28",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 11.658767772511847,
-    "pb": 1.6954552815118074,
-    "ps": 0.3811291271896923,
-    "roe": 0.14544036355143714,
-    "eps": 21.1,
+    "pe": null,
+    "pb": 1.723023660072975,
+    "ps": 0.3873263487700125,
+    "roe": 0.00018670846480280456,
+    "eps": 0.02709023519661026,
+    "eps_annualized": 28.133333333333333,
     "de": 0.9583876577865553,
-    "margin_net": 0.042309584442990884,
+    "margin_net": 4.197104754409574e-05,
     "current_ratio": 1.0044889976478022,
-    "roa": 0.07426535955389925,
-    "bv": 145.0937707897823
+    "roa": 9.533784797940853e-05,
+    "bv": 145.0937707897823,
+    "pcf": 5.23110128771737,
+    "div_yield": 4739.997088346294,
+    "payout_ratio": 42120.82720686873
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 8225082572800,
-    "enterprise_value": 8986511278080,
+    "market_cap": 8358823723008,
+    "enterprise_value": 8585287303168,
     "shares_outstanding": 33435294800
   },
   "akumulasi": {

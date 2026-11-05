@@ -3,20 +3,24 @@
   "nama": "PT Metropolitan Land Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate Services",
-  "harga": 700.0,
-  "update": "2026-11-04 20:51",
+  "harga": 695.0,
+  "update": "2026-11-05 12:30",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 31.774745652057895,
-    "pb": 0.9603700748354037,
-    "ps": 3441.1204253471888,
-    "roe": 0.030224319821524837,
-    "eps": 22.030074061494947,
+    "pe": null,
+    "pb": 0.9535102885865794,
+    "ps": 3416.540993737566,
+    "roe": 5.838778058795866e-05,
+    "eps": 0.042558017458609335,
+    "eps_annualized": 44.060148122989894,
     "de": 0.40094363293302593,
-    "margin_net": 0.21301834193736635,
+    "margin_net": 0.20921037591300407,
     "current_ratio": 3.151593729145223,
-    "roa": 0.020247234213855447,
-    "bv": 728.8856851562892
+    "roa": 3.911390151283673e-05,
+    "bv": 728.8856851562892,
+    "pcf": 0.00010148427104940176,
+    "div_yield": 1048.0210864070273,
+    "payout_ratio": 16531.37100265057
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5358588788736,
+    "market_cap": 5320313143296,
     "enterprise_value": 6723450437632,
     "shares_outstanding": 7655126330
   },

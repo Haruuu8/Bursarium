@@ -3,20 +3,24 @@
   "nama": "PT Bumi Resources Minerals Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 308.0,
-  "update": "2026-11-04 20:26",
+  "harga": 324.0,
+  "update": "2026-11-05 12:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.03645180772026777,
-    "roe": 0.010267393769471951,
+    "ps": 0.03834540812132064,
+    "roe": 0.028890002220909327,
     "eps": 1422.0961974869153,
+    "eps_annualized": 0.18,
     "de": 0.28948644615801306,
-    "margin_net": 0.13491022059326993,
+    "margin_net": 0.16830512061856162,
     "current_ratio": 3.1403478106038842,
-    "roa": 0.00914609249314684,
-    "bv": 0.049224509801444875
+    "roa": 0.025734927321604387,
+    "bv": 49224.509801444874,
+    "pcf": 0.19473000368027074,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 43669482635264,
-    "enterprise_value": 46788799102976,
+    "market_cap": 45938030673920,
+    "enterprise_value": 43669549744128,
     "shares_outstanding": 25570150644
   },
   "akumulasi": {

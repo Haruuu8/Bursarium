@@ -3,20 +3,24 @@
   "nama": "PT Multi Spunindo Jaya Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Textile Manufacturing",
-  "harga": 520.0,
-  "update": "2026-11-04 20:04",
+  "harga": 484.0,
+  "update": "2026-11-05 11:50",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.04182609314282053,
+    "ps": 0.038930440540625263,
     "roe": 0.02200332764049638,
     "eps": 616.5247124658972,
+    "eps_annualized": 0.0006,
     "de": 0.29960343730915895,
     "margin_net": 0.04959003855471012,
     "current_ratio": 2.2137034224480923,
     "roa": 0.016488689565127234,
-    "bv": 14009.80621065707
+    "bv": 14009.80621065707,
+    "pcf": 4942.206555414629,
+    "div_yield": 172.938720563523,
+    "payout_ratio": 139503901.25457522
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2980756848640,
-    "enterprise_value": 3095404478464,
+    "market_cap": 2774396567552,
+    "enterprise_value": 2980759994368,
     "shares_outstanding": 5732224400
   },
   "akumulasi": {

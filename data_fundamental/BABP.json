@@ -3,20 +3,24 @@
   "nama": "PT Bank MNC Internasional Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 19.0,
-  "update": "2026-11-04 20:19",
+  "harga": 20.0,
+  "update": "2026-11-05 12:03",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.22283430442732055,
-    "ps": 550.7251434809764,
-    "roe": 0.011046208415472922,
+    "pb": 0.234562425712969,
+    "ps": 579.7106773483962,
+    "roe": 2.1727322680709075e-05,
     "eps": 0.0018525833892335782,
+    "eps_annualized": 1.88e-06,
     "de": 4.7195317192689785,
-    "margin_net": 0.0540346630156643,
+    "margin_net": 0.05369811857084926,
     "current_ratio": null,
-    "roa": 0.001931313428730273,
-    "bv": 85.26514824021193
+    "roa": 3.7987939829951806e-06,
+    "bv": 85.26514824021193,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 844720898048,
-    "enterprise_value": 2142226219008,
+    "market_cap": 889179930624,
+    "enterprise_value": 2097901338624,
     "shares_outstanding": 44458997354
   },
   "akumulasi": {

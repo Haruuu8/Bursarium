@@ -3,20 +3,24 @@
   "nama": "PT Merck Tbk",
   "sektor": "Healthcare",
   "industri": "Drug Manufacturers - Specialty & Generic",
-  "harga": 3430.0,
-  "update": "2026-11-04 20:49",
+  "harga": 3530.0,
+  "update": "2026-11-05 12:28",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0012501288261806843,
-    "roe": 0.11591493311428026,
+    "ps": 0.0012865757307340571,
+    "roe": 0.2081128256951645,
     "eps": null,
+    "eps_annualized": 0.0005,
     "de": 0.2731499634111594,
-    "margin_net": 0.17735501375794668,
+    "margin_net": 0.1632635013597978,
     "current_ratio": 4.995151941541502,
-    "roa": 0.0910457812869967,
-    "bv": 2152432.8459821427
+    "roa": 0.16346293184313213,
+    "bv": 2152432.8459821427,
+    "pcf": 3.04656295107379e-06,
+    "div_yield": 7765.458253237555,
+    "payout_ratio": 54824135267.85715
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1536640024576,
-    "enterprise_value": 1071766175744,
+    "market_cap": 1581440040960,
+    "enterprise_value": 1085186179072,
     "shares_outstanding": 448000000
   },
   "akumulasi": {

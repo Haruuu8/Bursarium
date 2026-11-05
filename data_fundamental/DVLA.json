@@ -3,28 +3,32 @@
   "nama": "PT Darya-Varia Laboratoria Tbk",
   "sektor": "Healthcare",
   "industri": "Drug Manufacturers - Specialty & Generic",
-  "harga": 1555.0,
-  "update": "2026-11-04 20:32",
+  "harga": 1565.0,
+  "update": "2026-11-05 12:13",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 18.511904761904763,
+    "pe": null,
     "pb": null,
-    "ps": -0.003206877376421259,
-    "roe": 0.06247493044614771,
-    "eps": 84.0,
+    "ps": 0.0007645804444963529,
+    "roe": 0.11944741467927482,
+    "eps": null,
+    "eps_annualized": 168.0,
     "de": 0.7375250211564832,
-    "margin_net": 0.07754227868309962,
+    "margin_net": 0.07815962067161095,
     "current_ratio": 2.153656664323216,
-    "roa": 0.03595625713164961,
-    "bv": 1.3393585196428572
+    "roa": 0.06874568607356668,
+    "bv": 1339358.5196428571,
+    "pcf": 1.3314235907039166e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 544293044000000.0,
-      "2025-Q2": -543206944102000.0,
-      "2025-Q3": -1084471704438.0,
+      "2025-Q2": 541806854000000.0,
+      "2025-Q3": 542093664000000.0,
       "2026-Q1": 594799409000000.0,
-      "2026-Q2": -593590810393000.0
+      "2026-Q2": 613799198000000.0
     },
     "eps": {
       "2025-Q1": 0.07,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1741600063488,
-    "enterprise_value": 1439737970688,
+    "market_cap": 1752800034816,
+    "enterprise_value": 1417337896960,
     "shares_outstanding": 1120000000
   },
   "akumulasi": {

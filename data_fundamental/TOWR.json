@@ -3,20 +3,24 @@
   "nama": "PT Sarana Menara Nusantara Tbk.",
   "sektor": "Real Estate",
   "industri": "Real Estate Services",
-  "harga": 334.0,
-  "update": "2026-11-04 21:07",
+  "harga": 344.0,
+  "update": "2026-11-05 12:43",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 10.4375,
-    "pb": 0.6837237551446081,
-    "ps": 1.4257660180581035,
-    "roe": 0.06506677139016022,
-    "eps": 32.0,
+    "pe": null,
+    "pb": 0.7041945262567222,
+    "ps": 1.4684536233891845,
+    "roe": 0.00012647853538689881,
+    "eps": 0.06178493946036669,
+    "eps_annualized": 64.0,
     "de": 1.84878201114666,
-    "margin_net": 0.2576714285397071,
+    "margin_net": 0.00026374511110888627,
     "current_ratio": 0.20405436772131783,
-    "roa": 0.022685887233996904,
-    "bv": 488.5013830320386
+    "roa": 4.409743606461135e-05,
+    "bv": 488.5013830320386,
+    "pcf": 2.025920781505126,
+    "div_yield": 2004.2979572396166,
+    "payout_ratio": 10773.10152016294
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 19509939273728,
-    "enterprise_value": 66100490403840,
+    "market_cap": 20094069506048,
+    "enterprise_value": 65982294917120,
     "shares_outstanding": 58412989177
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT MDS Retailing Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Department Stores",
-  "harga": 1610.0,
-  "update": "2026-11-04 20:46",
+  "harga": 1625.0,
+  "update": "2026-11-05 12:26",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 2.756849315068493,
+    "pe": 2.7825342465753424,
     "pb": null,
-    "ps": 321.1003476580727,
+    "ps": 324.09196580395536,
     "roe": 2.167772123842265,
     "eps": 584.0,
+    "eps_annualized": 584.0,
     "de": 13.540303981309842,
-    "margin_net": 0.18612150802510957,
+    "margin_net": 0.00018612150802510956,
     "current_ratio": 0.6063292942188085,
-    "roa": 0.14908712545684927,
-    "bv": 0.00021524746233801586
+    "roa": 0.00014908712545684926,
+    "bv": 0.00021524746233801586,
+    "pcf": 1381.1101544771223,
+    "div_yield": 24.546262565704247,
+    "payout_ratio": 68.30081621450239
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1884056715264,
-    "enterprise_value": 5686701850624,
+    "market_cap": 1901610008576,
+    "enterprise_value": 5697794736128,
     "shares_outstanding": 1395970000000
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Cahaya Aero Services Tbk",
   "sektor": "Industrials",
   "industri": "Airports & Air Services",
-  "harga": 1785.0,
-  "update": "2026-11-04 20:27",
+  "harga": 1830.0,
+  "update": "2026-11-05 12:09",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.113603906972522,
-    "ps": 1142.6345550412707,
-    "roe": 0.1250151773910774,
+    "pb": 2.1668880390810727,
+    "ps": 1171.4404681935716,
+    "roe": 0.0002747130480172937,
     "eps": 0.23200316250988284,
+    "eps_annualized": 0.000212,
     "de": 0.48036868294288193,
-    "margin_net": 0.13651994284871638,
+    "margin_net": 0.14851251000708549,
     "current_ratio": 3.6052359919716706,
-    "roa": 0.06916959009252938,
-    "bv": 844.529097486763
+    "roa": 0.00015199585619099192,
+    "bv": 844.529097486763,
+    "pcf": 3.989389553578254e-06,
+    "div_yield": 8916.74348413122,
+    "payout_ratio": 76970002716.79309
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3725205700608,
-    "enterprise_value": 2749891608576,
+    "market_cap": 3819118526464,
+    "enterprise_value": 2864673718272,
     "shares_outstanding": 2086950000
   },
   "akumulasi": {

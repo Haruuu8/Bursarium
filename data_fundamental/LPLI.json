@@ -3,20 +3,24 @@
   "nama": "PT Star Pacific Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate Services",
-  "harga": 184.0,
-  "update": "2026-11-04 20:46",
+  "harga": 185.0,
+  "update": "2026-11-05 12:26",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 147.50950893169878,
+    "pe": 148.31119104545803,
     "pb": null,
-    "ps": 2130.3985126099706,
-    "roe": -0.05988658677154591,
+    "ps": 2141.9767653958943,
+    "roe": 0.00011410540827024554,
     "eps": 1.2473772120358517,
+    "eps_annualized": -176.68,
     "de": 0.010720967545744687,
-    "margin_net": -21.03560528992879,
+    "margin_net": 14.442448680351907,
     "current_ratio": 73.50763883275403,
-    "roa": -0.059251354918424086,
-    "bv": 10931.797457676874
+    "roa": 0.00011289506395352502,
+    "bv": 10931.797457676874,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3124029030400,
-    "enterprise_value": 148806336512,
+    "market_cap": 3141007572992,
+    "enterprise_value": 152317591552,
     "shares_outstanding": 157927368
   },
   "akumulasi": {

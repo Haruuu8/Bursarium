@@ -3,20 +3,24 @@
   "nama": "PT Indo Tambangraya Megah Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 23900.0,
-  "update": "2026-11-04 20:41",
+  "harga": 24275.0,
+  "update": "2026-11-05 12:21",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 14.02094372961337,
-    "ps": 14119.444449448943,
-    "roe": 0.05577524048264384,
+    "pb": 14.240937616584292,
+    "ps": 14340.983849806405,
+    "roe": 9.030339672361637e-05,
     "eps": 0.15393052160504928,
+    "eps_annualized": 0.2,
     "de": 0.2663728413653826,
-    "margin_net": 0.10594598052356292,
+    "margin_net": 0.09093780120825078,
     "current_ratio": 3.4583118415876206,
-    "roa": 0.04386034602328118,
-    "bv": 1704.5928192066888
+    "roa": 7.101248140037969e-05,
+    "bv": 1704.5928192066888,
+    "pcf": 0.40638730952595464,
+    "div_yield": 251.02926049670486,
+    "payout_ratio": 30468676.492787547
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 26646088253440,
-    "enterprise_value": 27236002430976,
+    "market_cap": 27064174379008,
+    "enterprise_value": 26353841733632,
     "shares_outstanding": 1114899100
   },
   "akumulasi": {

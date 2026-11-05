@@ -3,28 +3,32 @@
   "nama": "PT KDB Tifa Finance Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 240.0,
-  "update": "2026-11-04 21:05",
+  "harga": 246.0,
+  "update": "2026-11-05 12:41",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": -0.004716131863743295,
-    "roe": 0.019028040396721034,
+    "ps": 0.3457831909554877,
+    "roe": 0.04727560202899088,
     "eps": null,
+    "eps_annualized": 0.01316,
     "de": 0.613084725968063,
-    "margin_net": -0.12554493511905965,
+    "margin_net": 22.96308164965165,
     "current_ratio": null,
-    "roa": 0.011796057634419486,
-    "bv": 0.3455606890690395
+    "roa": 0.029307575273592217,
+    "bv": 345560.6890690395,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": -172772754000000.0,
-      "2025-Q2": 486874000000.0,
-      "2025-Q3": 4789066000000.0,
-      "2026-Q1": -172237826000000.0,
-      "2026-Q2": -13807258000000.0
+      "2025-Q1": 1083692000000.0,
+      "2025-Q2": 1245040000000.0,
+      "2025-Q3": 1281501000000.0,
+      "2026-Q1": 222818000.0,
+      "2026-Q2": 381575000.0
     },
     "eps": {
       "2025-Q1": 2.48,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 852531085312,
-    "enterprise_value": 1638708936704,
+    "market_cap": 873844375552,
+    "enterprise_value": 1603186851840,
     "shares_outstanding": 3552213000
   },
   "akumulasi": {
@@ -73,7 +77,7 @@
     "saldo_laba": 466055217.0
   },
   "laba_rugi": {
-    "pendapatan": -186045084.0,
+    "pendapatan": 604393.0,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

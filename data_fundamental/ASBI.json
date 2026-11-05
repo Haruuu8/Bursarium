@@ -3,29 +3,27 @@
   "nama": "PT Asuransi Bintang Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 398.0,
-  "update": "2026-11-04 20:18",
+  "harga": 394.0,
+  "update": "2026-11-05 12:02",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 15.316977490860305,
+    "pe": 7.581519009295175,
     "pb": null,
-    "ps": 10.488527215872434,
+    "ps": null,
     "roe": 0.019466541024002876,
-    "eps": 25.984238746677537,
+    "eps": 51.968477493355074,
+    "eps_annualized": 51.968477493355074,
     "de": 0.8327982148837313,
-    "margin_net": 651.2622302158273,
+    "margin_net": null,
     "current_ratio": null,
     "roa": 0.01061827925205797,
-    "bv": 1334813.5917286708
+    "bv": 1334813.5917286708,
+    "pcf": 7.784044038051345e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": 865121000.0,
-      "2025-Q2": -678297000.0,
-      "2025-Q3": -1752000.0,
-      "2026-Q1": 3003027000000.0,
-      "2026-Q2": -2989127000000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 0.0,
       "2025-Q2": 18.65,
@@ -43,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 138657808384,
-    "enterprise_value": 127702384640,
+    "market_cap": 137264267264,
+    "enterprise_value": 124915294208,
     "shares_outstanding": 348386472
   },
   "akumulasi": {
@@ -73,7 +71,7 @@
     "saldo_laba": 15151797.0
   },
   "laba_rugi": {
-    "pendapatan": 13900.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

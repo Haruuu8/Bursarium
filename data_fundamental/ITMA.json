@@ -3,20 +3,24 @@
   "nama": "PT Sumber Energi Andalan Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 975.0,
-  "update": "2026-11-04 20:41",
+  "harga": 1060.0,
+  "update": "2026-11-05 12:21",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 453.7529197325957,
-    "roe": 0.002704249592102919,
+    "ps": 493.3108665810784,
+    "roe": 6.33621182670552e-06,
     "eps": 1.3774051726718564,
+    "eps_annualized": 0.0011636157497912222,
     "de": 0.19600578407635935,
-    "margin_net": 0.4675074705991922,
+    "margin_net": 0.6410273012868051,
     "current_ratio": 0.5938401116983074,
-    "roa": 0.0022553164098981643,
-    "bv": 217386.2254520034
+    "roa": 5.284335643829109e-06,
+    "bv": 217386.2254520034,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 974076837888,
-    "enterprise_value": 954736312320,
+    "market_cap": 1058996355072,
+    "enterprise_value": 926237196288,
     "shares_outstanding": 999053167
   },
   "akumulasi": {

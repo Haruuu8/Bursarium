@@ -3,20 +3,24 @@
   "nama": "PT GoTo Gojek Tokopedia Tbk",
   "sektor": "Technology",
   "industri": "Software - Infrastructure",
-  "harga": 24.0,
-  "update": "2026-11-04 19:49",
+  "harga": 25.0,
+  "update": "2026-11-05 11:37",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.790102430177271,
-    "ps": 1.2761123453164072,
-    "roe": 0.018751064312288276,
+    "pb": 0.8230233647679907,
+    "ps": 1.3292836930379242,
+    "roe": 3.557939841434947e-06,
     "eps": 0.00010807529876256692,
+    "eps_annualized": 1.14,
     "de": 0.5709016333607334,
-    "margin_net": 0.05525602656621776,
+    "margin_net": 5.746509290611278e-06,
     "current_ratio": 2.6097148869698725,
-    "roa": 0.01279552492475646,
-    "bv": 30.375808355146116
+    "roa": 2.427899940166607e-06,
+    "bv": 30.375808355146116,
+    "pcf": 8.995697803567518,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 25597487087616,
+    "market_cap": 26664048263168,
     "enterprise_value": 5905101357056,
     "shares_outstanding": 1066561937092
   },

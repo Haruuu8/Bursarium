@@ -3,20 +3,24 @@
   "nama": "PT Astra Otoparts Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 3260.0,
-  "update": "2026-11-04 20:20",
+  "harga": 3230.0,
+  "update": "2026-11-05 12:03",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 8.73994638069705,
-    "pb": 0.9439686331666564,
-    "ps": 0.7063048060264805,
-    "roe": 0.10813446945233304,
-    "eps": 373.0,
+    "pe": null,
+    "pb": 0.9352818052540798,
+    "ps": 0.6998050685477092,
+    "roe": 0.00014595965027272505,
+    "eps": 0.5040723210186124,
+    "eps_annualized": 497.3333333333333,
     "de": 0.43778943428555295,
-    "margin_net": 0.10574024427656353,
+    "margin_net": 0.00010921125856453032,
     "current_ratio": 2.055300742085152,
-    "roa": 0.07148738458035986,
-    "bv": 3453.5045821002946
+    "roa": 9.649350207299693e-05,
+    "bv": 3453.5045821002946,
+    "pcf": 8.869550803980863,
+    "div_yield": 5611.977944445813,
+    "payout_ratio": 36447.76560434311
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 15712329400320,
-    "enterprise_value": 12189927735296,
+    "market_cap": 15567737061376,
+    "enterprise_value": 12430914617344,
     "shares_outstanding": 4819733000
   },
   "akumulasi": {

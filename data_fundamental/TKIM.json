@@ -3,20 +3,24 @@
   "nama": "PT Pabrik Kertas Tjiwi Kimia Tbk",
   "sektor": "Basic Materials",
   "industri": "Paper & Paper Products",
-  "harga": 5875.0,
-  "update": "2026-11-04 21:06",
+  "harga": 5950.0,
+  "update": "2026-11-05 12:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 5.700954057999518,
-    "ps": 18068.98792358942,
-    "roe": 0.08181797779985961,
+    "pb": 5.773732194910151,
+    "ps": 18299.655854528857,
+    "roe": 0.00011752228928505972,
     "eps": 0.12111015849722608,
+    "eps_annualized": 0.1686,
     "de": 0.30246101634900824,
-    "margin_net": 0.49662946432794564,
+    "margin_net": 0.3724830623507027,
     "current_ratio": 1.3531822385915073,
-    "roa": 0.06281798593036401,
-    "bv": 1030.5292658438918
+    "roa": 9.023094573263479e-05,
+    "bv": 1030.5292658438918,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 18290189533184,
-    "enterprise_value": 18213008048128,
+    "market_cap": 18523680145408,
+    "enterprise_value": 18290837553152,
     "shares_outstanding": 3113223570
   },
   "akumulasi": {

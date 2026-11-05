@@ -3,20 +3,24 @@
   "nama": "PT MNC Vision Networks Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 16.0,
-  "update": "2026-11-04 21:24",
+  "harga": 15.0,
+  "update": "2026-11-05 12:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 238.90437814424112,
-    "roe": -0.011640833857939743,
+    "ps": 223.97285451022606,
+    "roe": -1.1640833857939744e-05,
     "eps": -0.0064928866420027286,
+    "eps_annualized": -3.2e-06,
     "de": 0.15828614747836506,
     "margin_net": -0.09694869034804449,
     "current_ratio": 2.7845679634644678,
-    "roa": -0.009914748050119609,
-    "bv": 278.88408688069165
+    "roa": -9.91474805011961e-06,
+    "bv": 278.88408688069165,
+    "pcf": 1.1274127491045298e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 675167207424,
-    "enterprise_value": 1280664797184,
+    "market_cap": 632969232384,
+    "enterprise_value": 1238357770240,
     "shares_outstanding": 20807078184
   },
   "akumulasi": {

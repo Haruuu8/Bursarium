@@ -3,20 +3,24 @@
   "nama": "PT Metrodata Electronics Tbk",
   "sektor": "Technology",
   "industri": "Electronics & Computer Distribution",
-  "harga": 404.0,
-  "update": "2026-11-04 20:51",
+  "harga": 408.0,
+  "update": "2026-11-05 12:30",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 15.538461538461538,
-    "pb": 1.0565197123842909,
-    "ps": 0.18432087758886095,
-    "roe": 0.06682546147344312,
-    "eps": 26.0,
+    "pe": null,
+    "pb": 1.0669803035960164,
+    "ps": 0.18614583677290908,
+    "roe": 0.00013412360092431017,
+    "eps": 0.05128719714196124,
+    "eps_annualized": 52.0,
     "de": 1.8819321133029774,
-    "margin_net": 0.023015488725334834,
+    "margin_net": 2.339926036207727e-05,
     "current_ratio": 1.6607165536417763,
-    "roa": 0.02052551747087185,
-    "bv": 382.38756481720236
+    "roa": 4.119621852700882e-05,
+    "bv": 382.38756481720236,
+    "pcf": null,
+    "div_yield": 5882.348348614526,
+    "payout_ratio": 46153.8101198986
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4959861473280,
-    "enterprise_value": 9291765383168,
+    "market_cap": 5008968908800,
+    "enterprise_value": 9119889096704,
     "shares_outstanding": 12276884585
   },
   "akumulasi": {

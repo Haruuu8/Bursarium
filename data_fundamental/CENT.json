@@ -3,20 +3,24 @@
   "nama": "PT Centratama Telekomunikasi Indonesia Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 58.0,
-  "update": "2026-11-04 20:27",
+  "harga": 68.0,
+  "update": "2026-11-05 12:10",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.7390186402054464,
-    "ps": 733.5241513622775,
-    "roe": -0.5542465232873858,
+    "pb": 0.8664356471374198,
+    "ps": 859.9938326316358,
+    "roe": -0.000887219876152009,
     "eps": -0.06963119739782349,
+    "eps_annualized": -87.0,
     "de": 10.63269774920271,
-    "margin_net": -1.1240357420756624,
+    "margin_net": -0.88062353413065,
     "current_ratio": 0.095229102622477,
-    "roa": -0.047645570721148764,
-    "bv": 78.48245882387495
+    "roa": -7.626948583038856e-05,
+    "bv": 78.48245882387495,
+    "pcf": 1.3814001873919584,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1808640901120,
-    "enterprise_value": 25649999773696,
+    "market_cap": 2120475607040,
+    "enterprise_value": 25525265367040,
     "shares_outstanding": 31183464900
   },
   "akumulasi": {

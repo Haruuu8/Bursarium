@@ -3,20 +3,24 @@
   "nama": "PT Austindo Nusantara Jaya Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 1415.0,
-  "update": "2026-11-04 20:17",
+  "harga": 1365.0,
+  "update": "2026-11-05 12:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 5.130157348995722,
-    "pb": 1.1162658465511774,
-    "ps": 1.0117127494713338,
-    "roe": 0.1087936859306912,
+    "pe": 4.9488797041548835,
+    "pb": 1.0768218237048461,
+    "ps": 0.9759631823522054,
+    "roe": 108793.68593069121,
     "eps": 275.82,
+    "eps_annualized": 275.82,
     "de": 0.6566538593758245,
-    "margin_net": 0.19720742949921305,
+    "margin_net": 197207.42949921306,
     "current_ratio": 2.4909173273363687,
-    "roa": 0.06559546458190121,
-    "bv": 1267.6191826273227
+    "roa": 65595.46458190122,
+    "bv": 1267.6191826273227,
+    "pcf": 5.332206284767351e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -31,14 +35,14 @@
     },
     "net_income": {
       "2025-Q3": 9807882000000.0,
-      "2026-Q1": 232539655013.0,
-      "2026-Q2": 230031141744.0
+      "2026-Q1": 2.32539655013e+17,
+      "2026-Q2": 2.30031141744e+17
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4746157490176,
-    "enterprise_value": 4858845855744,
+    "market_cap": 4578448769024,
+    "enterprise_value": 5244576071680,
     "shares_outstanding": 3354175000
   },
   "akumulasi": {

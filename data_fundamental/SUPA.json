@@ -4,19 +4,23 @@
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
   "harga": 326.0,
-  "update": "2026-11-04 20:12",
+  "update": "2026-11-05 11:56",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": 30.185185185185183,
     "pb": 1.3385740116043212,
     "ps": 3.684281547531727,
-    "roe": 0.02211989694469287,
+    "roe": 2.211989694469287e-05,
     "eps": 10.8,
+    "eps_annualized": 10.8,
     "de": 2.271273629913512,
-    "margin_net": 0.1217652926773321,
+    "margin_net": 0.00012176529267733211,
     "current_ratio": null,
-    "roa": 0.0067618608062688075,
-    "bv": 243.542753089371
+    "roa": 6.7618608062688075e-06,
+    "bv": 243.542753089371,
+    "pcf": 3.37587826837285,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

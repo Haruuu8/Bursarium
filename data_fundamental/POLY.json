@@ -4,19 +4,23 @@
   "sektor": "Basic Materials",
   "industri": "Specialty Chemicals",
   "harga": 32.0,
-  "update": "2026-11-04 20:55",
+  "update": "2026-11-05 12:33",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.001769358992253659,
-    "roe": -0.002457241822458307,
+    "roe": 0.0053309791887168325,
     "eps": -2178.1226925066003,
+    "eps_annualized": 0.002,
     "de": -1.0760080522439113,
-    "margin_net": 0.10866390085760608,
+    "margin_net": -0.12043378038182204,
     "current_ratio": 0.022875718507014902,
-    "roa": 0.03232870399800501,
-    "bv": -0.40857835219403194
+    "roa": -0.07013703195037313,
+    "bv": -408578.35219403193,
+    "pcf": 285.33697436886825,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

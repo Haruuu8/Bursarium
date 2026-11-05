@@ -3,20 +3,24 @@
   "nama": "PT Bank OCBC NISP Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 1130.0,
-  "update": "2026-11-04 20:52",
+  "harga": 1140.0,
+  "update": "2026-11-05 12:30",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.49739452008741,
-    "pb": 0.5843239363959564,
-    "ps": 1.4593177332266056,
-    "roe": 0.06152613421257741,
-    "eps": 118.98,
+    "pe": 4.969487621245261,
+    "pb": 0.5894949446826463,
+    "ps": 1.47223204944985,
+    "roe": 0.11862288219865406,
+    "eps": 229.3999073720073,
+    "eps_annualized": 237.96,
     "de": 6.425561375039959,
-    "margin_net": 0.3044438298788178,
+    "margin_net": 0.2962542945385053,
     "current_ratio": null,
-    "roa": 0.008285714751362715,
-    "bv": 1933.8588231892595
+    "roa": 0.015974924761023364,
+    "bv": 1933.8588231892595,
+    "pcf": 0.8886539274670627,
+    "div_yield": 3.9473670304836803,
+    "payout_ratio": 18.910734639230945
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 25928184889344,
-    "enterprise_value": 47077262360576,
+    "market_cap": 26157638483968,
+    "enterprise_value": 47191989157888,
     "shares_outstanding": 22945296972
   },
   "akumulasi": {

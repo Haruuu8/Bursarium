@@ -3,20 +3,24 @@
   "nama": "PT Agro Bahari Nusantara Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 224.0,
-  "update": "2026-11-04 20:02",
+  "harga": 234.0,
+  "update": "2026-11-05 11:48",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 8.134528102989362,
-    "ps": 16.806319470300824,
+    "pb": null,
+    "ps": 1.7556601589510682e-05,
     "roe": -0.07479735841632974,
-    "eps": -4.119380515533703,
+    "eps": null,
+    "eps_annualized": -4.12,
     "de": 0.14430499747484152,
     "margin_net": -0.30906975430264255,
     "current_ratio": 1.557110599326444,
     "roa": -0.06536487844150658,
-    "bv": 27.536938487886236
+    "bv": 27536938.487886235,
+    "pcf": 0.00037984558787998305,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 392008957952,
-    "enterprise_value": 411229782016,
+    "market_cap": 409509363712,
+    "enterprise_value": 386729771008,
     "shares_outstanding": 1750040072
   },
   "akumulasi": {

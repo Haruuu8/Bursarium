@@ -4,19 +4,23 @@
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
   "harga": 101.0,
-  "update": "2026-11-04 20:41",
+  "update": "2026-11-05 12:21",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": 374.2434724953635,
     "pb": null,
     "ps": 0.0024380458879586196,
-    "roe": 0.00865876115647613,
+    "roe": 9.885289091290938e-06,
     "eps": 0.2698777865825069,
+    "eps_annualized": 0.0004727848166858613,
     "de": 1.2281497435648825,
-    "margin_net": 0.010754406773377117,
+    "margin_net": 6.514598295335197e-06,
     "current_ratio": 1.1953786531881212,
-    "roa": 0.003801725429836311,
-    "bv": 27300.9503404683
+    "roa": 4.340246166916874e-06,
+    "bv": 27300.9503404683,
+    "pcf": 0.06643993918641614,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 650781327360,
-    "enterprise_value": 663826857984,
+    "enterprise_value": 650940121088,
     "shares_outstanding": 6443379509
   },
   "akumulasi": {

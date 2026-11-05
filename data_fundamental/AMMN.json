@@ -3,20 +3,24 @@
   "nama": "PT Amman Mineral Internasional Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Precious Metals & Mining",
-  "harga": 3380.0,
-  "update": "2026-11-04 19:59",
+  "harga": 3670.0,
+  "update": "2026-11-05 11:46",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 42.446737591017076,
-    "ps": 94295.06145868922,
-    "roe": 0.08635391109793843,
+    "pb": 46.088617443500794,
+    "ps": 102385.46614005604,
+    "roe": 7.945623270182511e-05,
     "eps": 0.006327036699965469,
+    "eps_annualized": 0.01376,
     "de": 1.3768520829261433,
-    "margin_net": 0.24260698398468142,
+    "margin_net": 0.1765113356433805,
     "current_ratio": 2.773327230745622,
-    "roa": 0.03608025073118214,
-    "bv": 79.62920572523112
+    "roa": 3.319827395872802e-05,
+    "bv": 79.62920572523112,
+    "pcf": 0.21217476598919321,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 244753962631168,
-    "enterprise_value": 248742577963008,
+    "market_cap": 265753550913536,
+    "enterprise_value": 245116669263872,
     "shares_outstanding": 72412413856
   },
   "akumulasi": {

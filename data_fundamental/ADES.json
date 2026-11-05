@@ -3,20 +3,24 @@
   "nama": "PT Akasha Wira International Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Beverages - Non-Alcoholic",
-  "harga": 28200.0,
-  "update": "2026-11-04 20:13",
+  "harga": 29600.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.711250144083894,
-    "ps": 5030.84259127369,
-    "roe": 0.15016614607657078,
+    "pb": 4.945141995208626,
+    "ps": 5280.60073410288,
+    "roe": 0.00024709644402365496,
     "eps": 1.4790383673890077,
+    "eps_annualized": 0.0018,
     "de": 0.232600259025316,
-    "margin_net": 0.2615604854861274,
+    "margin_net": 0.2638584827229973,
     "current_ratio": 3.3847094521844108,
-    "roa": 0.12182874778504048,
-    "bv": 5985.672409140039
+    "roa": 0.00020046762298999316,
+    "bv": 5985.672409140039,
+    "pcf": 2.2136283259887855e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 16635090960384,
-    "enterprise_value": 17002745823232,
+    "market_cap": 17460946272256,
+    "enterprise_value": 16058911031296,
     "shares_outstanding": 589896800
   },
   "akumulasi": {

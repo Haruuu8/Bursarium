@@ -3,20 +3,24 @@
   "nama": "PT Bank Central Asia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 4930.0,
-  "update": "2026-11-04 20:19",
+  "harga": 5075.0,
+  "update": "2026-11-05 12:03",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 13.396739130434783,
-    "pb": 2.1373977881424593,
-    "ps": 6.010266171052919,
-    "roe": 0.15953684501231882,
-    "eps": 368.0,
+    "pe": 10.460655520919671,
+    "pb": 2.1996448522065917,
+    "ps": 6.185302107492788,
+    "roe": 0.21027791688653227,
+    "eps": 485.1512402689101,
+    "eps_annualized": 490.66666666666663,
     "de": 4.752915907241305,
-    "margin_net": 0.594012250577386,
+    "margin_net": 0.5912920175148827,
     "current_ratio": null,
-    "roa": 0.02754524750649738,
-    "bv": 2306.5430437656146
+    "roa": 0.03630607879542164,
+    "bv": 2307.1906334829337,
+    "pcf": 8.043241651220567,
+    "div_yield": 6.425199817462686,
+    "payout_ratio": 66.4562956663515
   },
   "quarterly": {
     "revenue": {
@@ -46,9 +50,9 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 605779837059072,
-    "enterprise_value": 501658521960448,
-    "shares_outstanding": 122876240600
+    "market_cap": 623421884989440,
+    "enterprise_value": 512714304651264,
+    "shares_outstanding": 122841751300
   },
   "akumulasi": {
     "score": 1.5,

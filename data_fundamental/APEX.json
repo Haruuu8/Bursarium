@@ -3,20 +3,24 @@
   "nama": "PT Apexindo Pratama Duta Tbk",
   "sektor": "Energy",
   "industri": "Oil & Gas Drilling",
-  "harga": 135.0,
-  "update": "2026-11-04 20:17",
+  "harga": 137.0,
+  "update": "2026-11-05 12:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.006830225546336191,
-    "roe": 0.03580662504565482,
+    "ps": 0.00693141407294858,
+    "roe": 0.035821685485095185,
     "eps": 683.1843183753241,
+    "eps_annualized": 0.0014,
     "de": 2.5197296585567495,
-    "margin_net": 0.0765913689488862,
+    "margin_net": 0.034565207290543826,
     "current_ratio": 4.485609314716458,
-    "roa": 0.010173118374456927,
-    "bv": 19071.808294994546
+    "roa": 0.010177397237181432,
+    "bv": 19071.808294994546,
+    "pcf": 0.018690513354831798,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 508215197696,
-    "enterprise_value": 489505554432,
+    "market_cap": 515744301056,
+    "enterprise_value": 478866145280,
     "shares_outstanding": 3764556978
   },
   "akumulasi": {

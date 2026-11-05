@@ -3,20 +3,24 @@
   "nama": "PT Paragon Karya Perkasa Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 6350.0,
-  "update": "2026-11-04 20:55",
+  "harga": 6075.0,
+  "update": "2026-11-05 12:32",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 113.92177969142446,
+    "pe": null,
     "pb": null,
-    "ps": 0.006811447420080175,
-    "roe": 0.2053421258564144,
-    "eps": 55.74,
+    "ps": 0.006516463476690875,
+    "roe": 0.23183394955631045,
+    "eps": null,
+    "eps_annualized": 111.48,
     "de": 2.0529892689498217,
-    "margin_net": 0.1138983912656091,
+    "margin_net": 0.06751008905602794,
     "current_ratio": 0.8766966740884198,
-    "roa": 0.06202635341003662,
-    "bv": 271472.5758333333
+    "roa": 0.07002856538886429,
+    "bv": 271472.5758333333,
+    "pcf": 3.561324478485123e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 7620000219136,
-    "enterprise_value": 7341646807040,
+    "market_cap": 7290000244736,
+    "enterprise_value": 7731646824448,
     "shares_outstanding": 1200000000
   },
   "akumulasi": {

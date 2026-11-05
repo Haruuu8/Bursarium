@@ -3,20 +3,24 @@
   "nama": "PT Bank Mayapada Internasional Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 159.0,
-  "update": "2026-11-04 20:47",
+  "harga": 158.0,
+  "update": "2026-11-05 12:26",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 67.94871794871796,
+    "pe": null,
     "pb": null,
-    "ps": 0.004874819867615875,
-    "roe": 0.003150010086847785,
-    "eps": 2.34,
+    "ps": 0.004844160623165461,
+    "roe": 4.713304194465983e-06,
+    "eps": 0.23582863390567835,
+    "eps_annualized": 4.68,
     "de": 7.717550914387294,
-    "margin_net": 0.0097382110801373,
+    "margin_net": 7.230327735321456e-06,
     "current_ratio": null,
-    "roa": 0.0003613411745779498,
-    "bv": 50034.67295460604
+    "roa": 5.406683873434255e-07,
+    "bv": 50034.67295460604,
+    "pcf": 0.014732900505262289,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4160689274880,
-    "enterprise_value": -3369786933248,
+    "market_cap": 4134521536512,
+    "enterprise_value": -3422122672128,
     "shares_outstanding": 388256500
   },
   "akumulasi": {

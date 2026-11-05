@@ -3,20 +3,24 @@
   "nama": "PT. Bank Pembangunan Daerah Banten, Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 25.0,
-  "update": "2026-11-04 20:21",
+  "harga": 26.0,
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 42.15828116033378,
-    "roe": 0.01118816066324422,
+    "ps": 43.84461240674713,
+    "roe": 1.4979878595885837e-05,
     "eps": 0.02659106321310503,
+    "eps_annualized": null,
     "de": 4.448220972458582,
-    "margin_net": 0.05948767079032824,
+    "margin_net": 0.044841340771611615,
     "current_ratio": null,
-    "roa": 0.0020535438484969182,
-    "bv": 1775.1187396410646
+    "roa": 2.749499088163079e-06,
+    "bv": 1775.1187396410646,
+    "pcf": 4.8242204853323763e-08,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -39,8 +43,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1296760963072,
-    "enterprise_value": 677758369792,
+    "market_cap": 1348631396352,
+    "enterprise_value": 625887936512,
     "shares_outstanding": 1075511715
   },
   "akumulasi": {

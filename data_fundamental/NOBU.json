@@ -3,20 +3,24 @@
   "nama": "PT Bank Nationalnobu Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 368.0,
-  "update": "2026-11-04 20:52",
+  "harga": 378.0,
+  "update": "2026-11-05 12:31",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.6186484110278574,
-    "ps": 1059.7640522475535,
-    "roe": 0.07623014056822545,
+    "pb": 0.6354595091536144,
+    "ps": 1088.5619884499329,
+    "roe": 0.0001323774040601405,
     "eps": 0.0787440553079156,
+    "eps_annualized": 9.071728225439285e-05,
     "de": 8.70215640451782,
-    "margin_net": 0.2502677135601439,
+    "margin_net": 0.22676662810739706,
     "current_ratio": null,
-    "roa": 0.007857030683686855,
-    "bv": 594.8451389191868
+    "roa": 1.3644121836512428e-05,
+    "bv": 594.8451389191868,
+    "pcf": 2.4536173387245728,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2752067403776,
-    "enterprise_value": 8509468442624,
+    "market_cap": 2826851844096,
+    "enterprise_value": 8494511554560,
     "shares_outstanding": 7478443899
   },
   "akumulasi": {

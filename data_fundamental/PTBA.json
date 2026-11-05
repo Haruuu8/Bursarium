@@ -3,20 +3,24 @@
   "nama": "PT Bukit Asam (Persero) Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 3020.0,
-  "update": "2026-11-04 20:56",
+  "harga": 2970.0,
+  "update": "2026-11-05 12:33",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 13.130434782608695,
-    "pb": 1.3784735060903457,
-    "ps": 0.8012339719121924,
-    "roe": 0.10504638271877535,
-    "eps": 230.0,
+    "pe": null,
+    "pb": 1.3556510976377933,
+    "ps": 0.7879685091432311,
+    "roe": 0.00014478900530762122,
+    "eps": 0.31720797962908437,
+    "eps_annualized": 460.0,
     "de": 0.9023964966290718,
-    "margin_net": 0.12029739011447346,
+    "margin_net": 8.415821508305254e-05,
     "current_ratio": 1.2062172868946184,
-    "roa": 0.055088681397373294,
-    "bv": 2190.8291937836257
+    "roa": 7.593060490800235e-05,
+    "bv": 2190.829192832279,
+    "pcf": 5.26618021376029,
+    "div_yield": 1.4620891526547725e-05,
+    "payout_ratio": 9.440010398662334e-05
   },
   "quarterly": {
     "revenue": {
@@ -43,9 +47,9 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 34773357559808,
-    "enterprise_value": 32266761797632,
-    "shares_outstanding": 11514357245
+    "market_cap": 34197643198464,
+    "enterprise_value": 32497175887872,
+    "shares_outstanding": 11514357250
   },
   "akumulasi": {
     "score": 3.9,

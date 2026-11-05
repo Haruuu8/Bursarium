@@ -4,19 +4,23 @@
   "sektor": "Industrials",
   "industri": "Industrial Distribution",
   "harga": 61.0,
-  "update": "2026-11-04 20:40",
+  "update": "2026-11-05 12:21",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 221.80181193062577,
-    "roe": 0.02830783413186277,
+    "roe": 2.8188984841031323e-05,
     "eps": -0.016313714124556334,
+    "eps_annualized": -2.133333333333333e-05,
     "de": -2.288983084128762,
-    "margin_net": -0.08341352595804809,
+    "margin_net": -0.05931821888762029,
     "current_ratio": 0.8168901289798984,
-    "roa": -0.024287893694023614,
-    "bv": -578.7265563678767
+    "roa": -2.4185921959701657e-05,
+    "bv": -578.7265563678767,
+    "pcf": 2.409317337215345e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

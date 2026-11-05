@@ -3,20 +3,24 @@
   "nama": "PT Elang Mahkota Teknologi Tbk",
   "sektor": "Communication Services",
   "industri": "Broadcasting",
-  "harga": 288.0,
-  "update": "2026-11-04 20:33",
+  "harga": 300.0,
+  "update": "2026-11-05 12:14",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 6.288915058798677,
-    "pb": 0.48108707965786457,
-    "ps": 0.8538201112956365,
-    "roe": -0.008753294365429366,
+    "pe": 6.5509531862486226,
+    "pb": 0.5011323746436089,
+    "ps": 0.8893959492662881,
+    "roe": 0.07649762719958933,
     "eps": 45.794862437689595,
+    "eps_annualized": -1.05e-05,
     "de": 0.2156488217714618,
-    "margin_net": -0.029649444378680712,
+    "margin_net": 0.13576588383096005,
     "current_ratio": 4.836682426465553,
-    "roa": -0.005354499810389684,
-    "bv": 598.6442209273577
+    "roa": 0.04679455679603091,
+    "bv": 598.6442209273577,
+    "pcf": 5.18548385777949,
+    "div_yield": 4049.1259215025293,
+    "payout_ratio": 26525.63435698888
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 17620560510976,
-    "enterprise_value": 13641942302720,
+    "market_cap": 18354752454656,
+    "enterprise_value": 13150531354624,
     "shares_outstanding": 61182504933
   },
   "akumulasi": {

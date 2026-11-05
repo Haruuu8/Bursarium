@@ -3,20 +3,24 @@
   "nama": "PT. Anugerah Spareparts Sejahtera Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 35.0,
-  "update": "2026-11-04 20:01",
+  "harga": 38.0,
+  "update": "2026-11-05 11:47",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5075697267169169,
-    "ps": 1.1253665397062145,
+    "pb": null,
+    "ps": 1.2218265288238899e-06,
     "roe": 0.0017682203359394562,
     "eps": null,
+    "eps_annualized": 0.24385895572687352,
     "de": 0.058306861361323764,
     "margin_net": 0.007840877405220647,
     "current_ratio": 10.005345128453547,
     "roa": 0.0016708011641018324,
-    "bv": 68.95604319506685
+    "bv": 68956043.19506685,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 35212824576,
-    "enterprise_value": 24659908608,
+    "market_cap": 38231068672,
+    "enterprise_value": 23653826560,
     "shares_outstanding": 1006080721
   },
   "akumulasi": {

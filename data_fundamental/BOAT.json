@@ -3,20 +3,24 @@
   "nama": "PT Newport Marine Services TBK",
   "sektor": "Energy",
   "industri": "Oil & Gas Drilling",
-  "harga": 94.0,
-  "update": "2026-11-04 20:09",
+  "harga": 95.0,
+  "update": "2026-11-05 11:54",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 198.47789239217542,
+    "pe": 200.58935933251772,
     "pb": null,
-    "ps": 0.019435527679446157,
-    "roe": 0.015044196713522433,
+    "ps": 0.01964228861220622,
+    "roe": 6.95589153478145e-05,
     "eps": 0.47360438418130724,
+    "eps_annualized": 0.0002048,
     "de": 0.492143887685075,
-    "margin_net": 0.049311845409692884,
+    "margin_net": 9.792288423258349e-05,
     "current_ratio": 1.0445728144159325,
-    "roa": 0.010082269436402766,
-    "bv": 6808.679833679834
+    "roa": 4.661676123991555e-05,
+    "bv": 6808.679833679834,
+    "pcf": 0.04312046536871309,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 329157935104,
-    "enterprise_value": 350175592448,
+    "market_cap": 332659621888,
+    "enterprise_value": 329165504512,
     "shares_outstanding": 3501680000
   },
   "akumulasi": {

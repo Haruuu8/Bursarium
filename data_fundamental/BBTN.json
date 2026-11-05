@@ -3,20 +3,24 @@
   "nama": "PT Bank Tabungan Negara (Persero) Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 850.0,
-  "update": "2026-11-04 20:21",
+  "harga": 910.0,
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 4.970760233918129,
-    "pb": 0.31762477871954475,
-    "ps": 0.39586129501801126,
-    "roe": 0.06396045686207977,
-    "eps": 171.0,
+    "pe": 5.313399120873541,
+    "pb": 0.34004535133504205,
+    "ps": 0.4238044452545768,
+    "roe": 0.06399770534819854,
+    "eps": 171.26513166027567,
+    "eps_annualized": 342.0,
     "de": 12.657700079514843,
-    "margin_net": 0.17147337450520164,
+    "margin_net": 0.07976145507113756,
     "current_ratio": null,
-    "roa": 0.004406424090325146,
-    "bv": 2676.1136313943884
+    "roa": 0.004408990248145372,
+    "bv": 2676.1136313943884,
+    "pcf": 0.5250311507582325,
+    "div_yield": 5886.8743616504335,
+    "payout_ratio": 15663.905465210217
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 11929277956096,
-    "enterprise_value": 56923911094272,
+    "market_cap": 12771344252928,
+    "enterprise_value": 56853736194048,
     "shares_outstanding": 14034444412
   },
   "akumulasi": {

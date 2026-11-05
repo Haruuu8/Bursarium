@@ -3,20 +3,24 @@
   "nama": "PT Duta Anggada Realty Tbk.",
   "sektor": "Real Estate",
   "industri": "Real Estate Services",
-  "harga": 115.0,
-  "update": "2026-11-04 20:30",
+  "harga": 120.0,
+  "update": "2026-11-05 12:11",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0007068319556441475,
-    "roe": -0.112314083741022,
+    "ps": 0.0007375637798025887,
+    "roe": -0.2265796934781351,
     "eps": null,
+    "eps_annualized": -76.0,
     "de": 4.704392396614234,
-    "margin_net": -0.4714061440045788,
+    "margin_net": -0.47097653680009083,
     "current_ratio": 0.07514979746754072,
-    "roa": -0.019689162366408743,
-    "bv": 0.3381893692479529
+    "roa": -0.03972043598832045,
+    "bv": 338189.3692479529,
+    "pcf": 1.3881498254965064e-05,
+    "div_yield": 1099.035440594102,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 361259958272,
-    "enterprise_value": 3691345346560,
+    "market_cap": 376966905856,
+    "enterprise_value": 3685062541312,
     "shares_outstanding": 3141390962
   },
   "akumulasi": {

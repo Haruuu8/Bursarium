@@ -3,20 +3,24 @@
   "nama": "PT Saratoga Investama Sedaya Tbk",
   "sektor": "Financial Services",
   "industri": "Asset Management",
-  "harga": 1580.0,
-  "update": "2026-11-04 21:03",
+  "harga": 1630.0,
+  "update": "2026-11-05 12:39",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.39925321455933394,
-    "ps": 653904.9149780273,
-    "roe": -0.07218505850599817,
+    "pb": 0.4118878099567812,
+    "ps": 674598.1084899902,
+    "roe": -0.004270675792859917,
     "eps": -16.90072241538805,
+    "eps_annualized": 0.000572,
     "de": 0.0715915773185655,
-    "margin_net": -284.68797766019986,
+    "margin_net": -6994.598388671875,
     "current_ratio": null,
-    "roa": -0.06732718329068678,
-    "bv": 3957.3882999135944
+    "roa": -0.003983269915298141,
+    "bv": 3957.3882999135944,
+    "pcf": 7.7257841966658765,
+    "div_yield": 6.331976406222026,
+    "payout_ratio": 18043918.77996836
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 21427155632128,
-    "enterprise_value": 20198365069312,
+    "market_cap": 22105231982592,
+    "enterprise_value": 20401155473408,
     "shares_outstanding": 13561491300
   },
   "akumulasi": {

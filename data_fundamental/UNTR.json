@@ -3,20 +3,24 @@
   "nama": "PT United Tractors Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 23150.0,
-  "update": "2026-11-04 21:08",
+  "harga": 23500.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 18.18538884524745,
-    "pb": 0.8054555434629208,
-    "ps": 0.6500555597615739,
-    "roe": 0.04524945422276292,
-    "eps": 1273.0,
+    "pe": 24.088718637195164,
+    "pb": 0.8176330570789909,
+    "ps": 0.6598836135808633,
+    "roe": 0.03394257159932498,
+    "eps": 975.5604004487757,
+    "eps_annualized": 1697.3333333333333,
     "de": 0.8003866540022155,
-    "margin_net": 0.04943153181592964,
+    "margin_net": 0.02739388605593754,
     "current_ratio": 1.2112755878220312,
-    "roa": 0.024426491019415804,
-    "bv": 28741.499376204505
+    "roa": 0.018322826973009288,
+    "bv": 28741.499376204505,
+    "pcf": 4.3683161071991155,
+    "div_yield": 5.151650614507874,
+    "payout_ratio": 71.3258775182257
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 79485231693824,
-    "enterprise_value": 89308350382080,
+    "market_cap": 80686950121472,
+    "enterprise_value": 89222509756416,
     "shares_outstanding": 3433487436
   },
   "akumulasi": {

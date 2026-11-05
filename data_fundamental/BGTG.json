@@ -3,20 +3,24 @@
   "nama": "PT Bank Ganesha Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 80.0,
-  "update": "2026-11-04 20:22",
+  "harga": 83.0,
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 16.842105263157894,
-    "pb": 0.5097430254127269,
-    "ps": 2733.1703346483628,
-    "roe": 0.0302417404118816,
-    "eps": 4.75,
+    "pe": null,
+    "pb": 0.5288583888657041,
+    "ps": 2835.6642221976763,
+    "roe": 6.167724422735252e-05,
+    "eps": 0.009679739186609004,
+    "eps_annualized": 9.5,
     "de": 1.9575497627358687,
-    "margin_net": 0.31646833675473296,
+    "margin_net": 0.3307046998996625,
     "current_ratio": null,
-    "roa": 0.010225268495197393,
-    "bv": 156.94182364776034
+    "roa": 2.085416955767407e-05,
+    "bv": 156.94182364776034,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1917679697920,
-    "enterprise_value": 1260030787584,
+    "market_cap": 1989592743936,
+    "enterprise_value": 1212088713216,
     "shares_outstanding": 23970997103
   },
   "akumulasi": {

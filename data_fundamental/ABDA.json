@@ -3,29 +3,27 @@
   "nama": "PT Asuransi Bina Dana Arta Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 5025.0,
-  "update": "2026-11-04 20:12",
+  "harga": 5000.0,
+  "update": "2026-11-05 11:57",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": -0.0356570183020903,
+    "ps": null,
     "roe": 0.04745380862161026,
     "eps": null,
+    "eps_annualized": 0.276,
     "de": 0.580232934047012,
-    "margin_net": 39.18738266924316,
+    "margin_net": null,
     "current_ratio": null,
     "roa": 0.030029111311586625,
-    "bv": 50.861290595246174
+    "bv": 50861290.59524617,
+    "pcf": 1.7894039106742312e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": 2559302000000.0,
-      "2025-Q2": -380632000000.0,
-      "2025-Q3": -6783097000000.0,
-      "2026-Q1": 2559302000000.0,
-      "2026-Q2": -380632000000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 30.0,
       "2025-Q2": -29.92,
@@ -43,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3119553445888,
-    "enterprise_value": 857785696256,
+    "market_cap": 3104033210368,
+    "enterprise_value": 879645818880,
     "shares_outstanding": 35373600
   },
   "akumulasi": {
@@ -73,7 +71,7 @@
     "saldo_laba": 8250000.0
   },
   "laba_rugi": {
-    "pendapatan": 2178670.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

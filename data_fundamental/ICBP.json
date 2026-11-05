@@ -3,20 +3,24 @@
   "nama": "PT Indofood CBP Sukses Makmur Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 5925.0,
-  "update": "2026-11-04 20:37",
+  "harga": 6125.0,
+  "update": "2026-11-05 12:18",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 18.690851735015773,
-    "pb": 1.3094945454661233,
-    "ps": 0.8864886076456058,
-    "roe": 0.07016948713122378,
-    "eps": 317.0,
+    "pe": 8.759909461509,
+    "pb": 1.3536968929924058,
+    "ps": 0.91641227372647,
+    "roe": 0.15453320595841125,
+    "eps": 699.2081398687076,
+    "eps_annualized": 634.0,
     "de": 1.3022262891499172,
-    "margin_net": 0.08844396444931786,
+    "margin_net": 0.10461435449226743,
     "current_ratio": 3.581164382651838,
-    "roa": 0.025714763618143673,
-    "bv": 4524.646567268409
+    "roa": 0.056631237092314664,
+    "bv": 4524.646567268409,
+    "pcf": 5.786899978714768,
+    "div_yield": 929.7221941621862,
+    "payout_ratio": 8981.937601330268
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 69096804712448,
-    "enterprise_value": 105348190961664,
+    "market_cap": 71429190057984,
+    "enterprise_value": 108555214520320,
     "shares_outstanding": 11661908000
   },
   "akumulasi": {

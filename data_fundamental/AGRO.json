@@ -3,20 +3,24 @@
   "nama": "PT Bank Raya Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 103.0,
-  "update": "2026-11-04 20:14",
+  "harga": 105.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0009297207380468028,
-    "roe": 0.00412019442860476,
+    "ps": 0.0009477735679117893,
+    "roe": 0.01271423440006719,
     "eps": 3391.36247325251,
+    "eps_annualized": 0.98,
     "de": 3.43358866631604,
-    "margin_net": 0.01975025651552188,
+    "margin_net": 0.030611844870063635,
     "current_ratio": null,
-    "roa": 0.00092931364154454,
-    "bv": 0.266737450839713
+    "roa": 0.0028677072586058617,
+    "bv": 266737.450839713,
+    "pcf": 2.9348073707795313e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1125784879104,
+    "market_cap": 1147644674048,
     "enterprise_value": 3697276092416,
     "shares_outstanding": 10929949922
   },

@@ -4,19 +4,23 @@
   "sektor": "Industrials",
   "industri": "Marine Shipping",
   "harga": 212.0,
-  "update": "2026-11-04 20:43",
+  "update": "2026-11-05 12:23",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.024779036022020702,
-    "roe": -0.00465381061717351,
+    "roe": 8.131281917612473e-06,
     "eps": -0.4454428975631041,
+    "eps_annualized": 0.0005,
     "de": -1.389050017940286,
-    "margin_net": 0.05232527451630843,
+    "margin_net": -5.2064366058818086e-05,
     "current_ratio": 0.12424564027094834,
-    "roa": 0.011959217701463763,
-    "bv": -54781.386511549725
+    "roa": -2.0895515233442027e-05,
+    "bv": -54781.386511549725,
+    "pcf": 0.06491708717803227,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

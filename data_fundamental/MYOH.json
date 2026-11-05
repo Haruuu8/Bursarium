@@ -3,20 +3,24 @@
   "nama": "PT Samindo Resources Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 975.0,
-  "update": "2026-11-04 20:52",
+  "harga": 1000.0,
+  "update": "2026-11-05 12:30",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.012805650031690366,
+    "ps": 0.01313400003250294,
     "roe": 0.04602683189247197,
     "eps": 7234.805586244016,
+    "eps_annualized": 0.0072,
     "de": 0.22473858859974585,
     "margin_net": 0.09502193680488134,
     "current_ratio": 5.594536218844721,
     "roa": 0.03686490147790817,
-    "bv": 78593.34749723804
+    "bv": 78593.34749723804,
+    "pcf": 0.06107496252421891,
+    "div_yield": 337.32338460666836,
+    "payout_ratio": 46850470.084259495
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2151154581504,
-    "enterprise_value": 2162103287808,
+    "market_cap": 2206312431616,
+    "enterprise_value": 2151071612928,
     "shares_outstanding": 2206312500
   },
   "akumulasi": {

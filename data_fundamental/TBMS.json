@@ -3,20 +3,24 @@
   "nama": "PT Tembaga Mulia Semanan Tbk",
   "sektor": "Industrials",
   "industri": "Metal Fabrication",
-  "harga": 1050.0,
-  "update": "2026-11-04 21:05",
+  "harga": 1075.0,
+  "update": "2026-11-05 12:41",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.000796004124386362,
-    "roe": 0.04340755694512925,
+    "ps": 0.0008149566035384183,
+    "roe": 0.04346605983905944,
     "eps": 4556.20181167311,
+    "eps_annualized": 0.01,
     "de": 1.6278159328806765,
-    "margin_net": 0.00636892994447415,
+    "margin_net": 0.0034540527939318187,
     "current_ratio": 1.4866566627993798,
-    "roa": 0.016518492182800954,
-    "bv": 104822.05722219197
+    "roa": 0.01654075511727752,
+    "bv": 104822.05722219197,
+    "pcf": null,
+    "div_yield": 0.02000554584118889,
+    "payout_ratio": 2150.5961779278055
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 771414032384,
+    "market_cap": 789781020672,
     "enterprise_value": 771474653184,
     "shares_outstanding": 734680000
   },

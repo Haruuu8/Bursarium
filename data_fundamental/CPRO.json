@@ -3,20 +3,24 @@
   "nama": "PT Central Proteina Prima Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 31.0,
-  "update": "2026-11-04 20:29",
+  "harga": 32.0,
+  "update": "2026-11-05 12:11",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.6875,
-    "pb": 0.3151798105709696,
-    "ps": 0.12543183322748983,
-    "roe": 0.0483331248200631,
-    "eps": 3.2,
+    "pe": null,
+    "pb": 0.3253469012345493,
+    "ps": 0.12947802139611853,
+    "roe": 0.00011534778254929832,
+    "eps": 0.011345210381814994,
+    "eps_annualized": 6.4,
     "de": 0.807742223334293,
-    "margin_net": 0.03801340712891914,
+    "margin_net": 4.590485601750337e-05,
     "current_ratio": 1.186840882062359,
-    "roa": 0.026726008714329414,
-    "bv": 98.35655381555499
+    "roa": 6.37820511930041e-05,
+    "bv": 98.35655381555499,
+    "pcf": 4.3987985338293086e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1846743924736,
+    "market_cap": 1906316279808,
     "enterprise_value": 3402688364544,
     "shares_outstanding": 40470734746
   },

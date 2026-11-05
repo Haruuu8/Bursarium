@@ -3,20 +3,24 @@
   "nama": "PT Perintis Triniti Properti Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 89.0,
-  "update": "2026-11-04 21:29",
+  "harga": 83.0,
+  "update": "2026-11-05 13:03",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 74.16666666666667,
+    "pe": null,
     "pb": null,
-    "ps": 0.005660059273684337,
-    "roe": 0.009023366785491073,
-    "eps": 1.2,
+    "ps": 0.005278482243997753,
+    "roe": 0.05313346537952433,
+    "eps": 7240.6865014134755,
+    "eps_annualized": 2.4,
     "de": 2.605005290914281,
-    "margin_net": 0.188850508320458,
+    "margin_net": 0.4604799413501836,
     "current_ratio": 1.0139278023593183,
-    "roa": 0.0025909830975061492,
-    "bv": 136273.5603577584
+    "roa": 0.015256823088654208,
+    "bv": 136273.5603577584,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 399735586816,
-    "enterprise_value": 1071262138368,
+    "market_cap": 372787118080,
+    "enterprise_value": 1062159187968,
     "shares_outstanding": 4491411000
   },
   "akumulasi": {

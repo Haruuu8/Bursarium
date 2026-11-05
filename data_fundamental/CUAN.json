@@ -3,20 +3,24 @@
   "nama": "PT Petrindo Jaya Kreasi Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 358.0,
-  "update": "2026-11-04 19:56",
+  "harga": 348.0,
+  "update": "2026-11-05 11:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 30511.80953049671,
-    "roe": 0.05697644608697405,
+    "ps": 29659.524348080602,
+    "roe": 0.0985767410509821,
     "eps": 0.00030446836083069113,
+    "eps_annualized": 0.00036,
     "de": 5.7890517656073115,
-    "margin_net": 0.026871166477608493,
+    "margin_net": 0.025949387245051934,
     "current_ratio": 1.8413000696209652,
-    "roa": 0.00746949515577938,
-    "bv": 0.003088642996152871
+    "roa": 1.2923208454048632e-05,
+    "bv": 0.003088642996152871,
+    "pcf": null,
+    "div_yield": 19.330219085397573,
+    "payout_ratio": 18685878.44921765
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 40238911062016,
-    "enterprise_value": 42720773013504,
+    "market_cap": 39114921476096,
+    "enterprise_value": 40247555522560,
     "shares_outstanding": 112399199400
   },
   "akumulasi": {

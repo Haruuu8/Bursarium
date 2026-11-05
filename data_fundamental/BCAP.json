@@ -3,20 +3,24 @@
   "nama": "PT MNC Kapital Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Financial Conglomerates",
-  "harga": 18.0,
-  "update": "2026-11-04 20:21",
+  "harga": 19.0,
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 6.315789473684211,
+    "pe": null,
     "pb": null,
-    "ps": 364.0818151075531,
-    "roe": 0.02679303468376258,
-    "eps": 2.85,
+    "ps": 384.3085826135283,
+    "roe": 4.986529208167814e-05,
+    "eps": 0.005308683718093055,
+    "eps_annualized": 5.7,
     "de": 5.49815129250837,
-    "margin_net": 0.11382733481525038,
+    "margin_net": 0.10737751132862407,
     "current_ratio": null,
-    "roa": 0.004009847721047119,
-    "bv": 106.46049579730848
+    "roa": 7.462843614883361e-06,
+    "bv": 106.46049579730848,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 767139315712,
+    "market_cap": 809758162944,
     "enterprise_value": 650635182080,
     "shares_outstanding": 42618850927
   },

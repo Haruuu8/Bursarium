@@ -3,20 +3,24 @@
   "nama": "PT Indosat Tbk",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 1360.0,
-  "update": "2026-11-04 20:41",
+  "harga": 1405.0,
+  "update": "2026-11-05 12:21",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 8.911604744118995,
-    "pb": 1.1645462748721023,
-    "ps": 0.7334370124574138,
-    "roe": 0.13067779030856355,
-    "eps": 152.61,
+    "pe": 7.339342615713269,
+    "pb": 1.2030790560259585,
+    "ps": 0.7577051488990193,
+    "roe": 0.16392190949775387,
+    "eps": 191.43403892767526,
+    "eps_annualized": 203.48000000000002,
     "de": 2.8369348574611024,
-    "margin_net": 0.10758012580111484,
+    "margin_net": 0.1032388305836547,
     "current_ratio": 0.37357800732948326,
-    "roa": 0.033336381950541595,
-    "bv": 1167.836804208887
+    "roa": 0.04181707826690372,
+    "bv": 1167.836804208887,
+    "pcf": 2.2631671442094135,
+    "div_yield": 7.899713627855521,
+    "payout_ratio": 54.546381202757054
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 43861103607808,
-    "enterprise_value": 109480301821952,
+    "market_cap": 45312387317760,
+    "enterprise_value": 108996539187200,
     "shares_outstanding": 32250810956
   },
   "akumulasi": {

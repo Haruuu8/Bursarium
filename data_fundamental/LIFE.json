@@ -3,29 +3,27 @@
   "nama": "PT MSIG Life Insurance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Life",
-  "harga": 9425.0,
-  "update": "2026-11-04 21:24",
+  "harga": 9975.0,
+  "update": "2026-11-05 12:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 109.59302325581395,
-    "pb": 2.415757881558842,
-    "ps": -77903.29246452679,
-    "roe": 0.022043233796907414,
-    "eps": 86.0,
+    "pe": 57.99418604651163,
+    "pb": 2.556730490031772,
+    "ps": null,
+    "roe": 2.2043233796907414e-05,
+    "eps": 172.0,
+    "eps_annualized": 172.0,
     "de": 0.8424491348248602,
-    "margin_net": -6.384628981510941,
+    "margin_net": null,
     "current_ratio": null,
-    "roa": 0.01195465515802244,
-    "bv": 3901.467142857143
+    "roa": 1.195465515802244e-05,
+    "bv": 3901.467142857143,
+    "pcf": 8.026784550101565e-05,
+    "div_yield": 962.406015037594,
+    "payout_ratio": 55813.95348837209
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": -7585000.0,
-      "2025-Q2": 26704000.0,
-      "2025-Q3": -252482000.0,
-      "2026-Q1": -7585000.0,
-      "2026-Q2": -20702000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 6.0,
       "2025-Q2": -6.0,
@@ -43,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 19792499048448,
-    "enterprise_value": 18924756271104,
+    "market_cap": 20947499220992,
+    "enterprise_value": 18872256167936,
     "shares_outstanding": 2100000000
   },
   "akumulasi": {
@@ -73,7 +71,7 @@
     "saldo_laba": 14918.0
   },
   "laba_rugi": {
-    "pendapatan": -28287.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

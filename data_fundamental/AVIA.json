@@ -3,20 +3,24 @@
   "nama": "PT Avia Avian Tbk",
   "sektor": "Basic Materials",
   "industri": "Specialty Chemicals",
-  "harga": 290.0,
-  "update": "2026-11-04 19:46",
+  "harga": 300.0,
+  "update": "2026-11-05 11:35",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 18.27347195967234,
-    "pb": 1.7837274163161743,
-    "ps": 2.017265437306577,
-    "roe": 0.09762282487591897,
-    "eps": 15.87,
+    "pe": null,
+    "pb": 1.8452352582581113,
+    "ps": 2.086826314455079,
+    "roe": 0.00017489011897838997,
+    "eps": 0.028433792091662875,
+    "eps_annualized": 31.74,
     "de": 0.17528158149608797,
-    "margin_net": 0.20441826959312656,
+    "margin_net": 0.00019778795185542274,
     "current_ratio": 4.95083925721338,
-    "roa": 0.08306330548081009,
-    "bv": 162.5808951229329
+    "roa": 0.00014880691474295426,
+    "bv": 162.5808951229329,
+    "pcf": 7.968708895070042,
+    "div_yield": 3998.520071241888,
+    "payout_ratio": 37793.19538035811
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 17146382909440,
-    "enterprise_value": 13730116009984,
+    "market_cap": 17737636118528,
+    "enterprise_value": 13358394769408,
     "shares_outstanding": 59125458700
   },
   "akumulasi": {

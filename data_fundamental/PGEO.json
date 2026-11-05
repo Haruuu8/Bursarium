@@ -3,20 +3,24 @@
   "nama": "PT Pertamina Geothermal Energy Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Renewable",
-  "harga": 965.0,
-  "update": "2026-11-04 19:56",
+  "harga": 950.0,
+  "update": "2026-11-05 11:43",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 20.180840995509815,
-    "ps": 89495.03782357129,
-    "roe": 0.03968839864157918,
+    "pb": 19.867149166564065,
+    "ps": 88103.92324600281,
+    "roe": 7.602859801819701e-05,
     "eps": 0.0036355074153690734,
+    "eps_annualized": 0.0038,
     "de": 0.4791179934930187,
-    "margin_net": 0.33877384300527175,
+    "margin_net": 0.3371604908252115,
     "current_ratio": 4.363431492656956,
-    "roa": 0.026836654729302717,
-    "bv": 47.81763060393321
+    "roa": 5.140931114388034e-05,
+    "bv": 47.81763060393321,
+    "pcf": 0.12197235316348093,
+    "div_yield": 310.8649099900643,
+    "payout_ratio": 77716227.49751607
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 40485854904320,
-    "enterprise_value": 36392142897152,
+    "market_cap": 39856541532160,
+    "enterprise_value": 40365994278912,
     "shares_outstanding": 41954253581
   },
   "akumulasi": {

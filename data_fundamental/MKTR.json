@@ -3,20 +3,24 @@
   "nama": "PT Menthobi Karyatama Raya Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 113.0,
-  "update": "2026-11-04 19:53",
+  "harga": 115.0,
+  "update": "2026-11-05 11:40",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0010440962267980005,
-    "roe": 0.04779501117024052,
+    "ps": 0.0010625758060333634,
+    "roe": 0.09276118613780808,
     "eps": 5205.380518838782,
+    "eps_annualized": 0.54,
     "de": 1.2530108873843853,
-    "margin_net": 0.04662056204115551,
+    "margin_net": 0.0480966208740477,
     "current_ratio": 1.7207692512756951,
-    "roa": 0.021185700670616675,
-    "bv": 56115.93313506743
+    "roa": 0.04111748643319899,
+    "bv": 56115.93313506743,
+    "pcf": 7.017494394275158e-06,
+    "div_yield": 1312.1652080924669,
+    "payout_ratio": 279442.5906122846
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1362828460032,
+    "market_cap": 1386949246976,
     "enterprise_value": 1840955260928,
     "shares_outstanding": 12060428584
   },

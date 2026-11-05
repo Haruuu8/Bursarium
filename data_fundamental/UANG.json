@@ -3,20 +3,24 @@
   "nama": "PT Pakuan Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 1540.0,
-  "update": "2026-11-04 21:31",
+  "harga": 1835.0,
+  "update": "2026-11-05 13:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 6419.5846596938,
-    "roe": -0.11635202699374415,
+    "ps": 7649.310292557223,
+    "roe": 0.17601657553815084,
     "eps": 0.0472504132231405,
+    "eps_annualized": 6.246e-05,
     "de": 4.132037830648737,
-    "margin_net": -1.5310727596823854,
+    "margin_net": 0.19696625187757522,
     "current_ratio": 1.4326883762834464,
-    "roa": -0.02030420036328686,
-    "bv": 0.2684429752066116
+    "roa": 3.0716059782769286e-05,
+    "bv": 0.2684429752066116,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1863400030208,
-    "enterprise_value": 2920003928064,
+    "market_cap": 2220349980672,
+    "enterprise_value": 2871604019200,
     "shares_outstanding": 1210000000
   },
   "akumulasi": {

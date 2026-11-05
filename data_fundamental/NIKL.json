@@ -3,20 +3,24 @@
   "nama": "PT Pelat Timah Nusantara Tbk",
   "sektor": "Industrials",
   "industri": "Metal Fabrication",
-  "harga": 139.0,
-  "update": "2026-11-04 20:52",
+  "harga": 141.0,
+  "update": "2026-11-05 12:30",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 374.9481800757068,
+    "pe": 380.3431179185227,
     "pb": null,
-    "ps": 0.0026943488874409597,
-    "roe": 0.0010653725132655503,
+    "ps": 0.0027331164973321965,
+    "roe": 1.651838600611228e-05,
     "eps": 0.37071789486198903,
+    "eps_annualized": 4e-05,
     "de": 1.018257171844853,
-    "margin_net": 0.000865819850948911,
+    "margin_net": 7.185923363855071e-06,
     "current_ratio": 1.5400067602862566,
-    "roa": 0.0005278675721447888,
-    "bv": 22442.74317871084
+    "roa": 8.184480271665834e-06,
+    "bv": 22442.74317871084,
+    "pcf": null,
+    "div_yield": 81127.09562192667,
+    "payout_ratio": 285973012067.29144
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 350745657344,
-    "enterprise_value": 346234519552,
+    "market_cap": 355792355328,
+    "enterprise_value": 351288295424,
     "shares_outstanding": 2523350000
   },
   "akumulasi": {

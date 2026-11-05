@@ -4,19 +4,23 @@
   "sektor": "Energy",
   "industri": "Thermal Coal",
   "harga": 2350.0,
-  "update": "2026-11-04 20:14",
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": 14.684558906678713,
     "ps": 34429.3045786425,
-    "roe": 0.06712277408428115,
+    "roe": 0.0001159170683805301,
     "eps": 0.018550445568395836,
+    "eps_annualized": 0.02148,
     "de": 0.5809229416693679,
-    "margin_net": 0.30960367958912854,
+    "margin_net": 0.2717782725718422,
     "current_ratio": 2.9181791610902708,
-    "roa": 0.0396378830583217,
-    "bv": 160.03204556121818
+    "roa": 6.845228409603118e-05,
+    "bv": 160.03204556121818,
+    "pcf": 0.11419261284263675,
+    "div_yield": 692.4556117438858,
+    "payout_ratio": 75757480.8006579
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 67681160003584,
-    "enterprise_value": 66817531838464,
+    "enterprise_value": 67681545879552,
     "shares_outstanding": 28800494200
   },
   "akumulasi": {

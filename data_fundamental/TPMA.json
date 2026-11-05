@@ -3,20 +3,24 @@
   "nama": "PT Trans Power Marine Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 294.0,
-  "update": "2026-11-04 21:07",
+  "harga": 280.0,
+  "update": "2026-11-05 12:43",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.008183661140905353,
+    "ps": 0.007793962991338431,
     "roe": 0.025401187818340047,
     "eps": 1815.5378428356316,
+    "eps_annualized": 0.0018,
     "de": 1.072690328263069,
     "margin_net": 0.05053655270155472,
     "current_ratio": 0.9580802703368991,
     "roa": 0.011438339076114747,
-    "bv": 35737.262678810344
+    "bv": 35737.262678810344,
+    "pcf": 0.034414593116184555,
+    "div_yield": 921.5944785099945,
+    "payout_ratio": 143359141.1015547
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1027965190144,
-    "enterprise_value": 1101450182656,
+    "market_cap": 979014451200,
+    "enterprise_value": 1031301758976,
     "shares_outstanding": 3496480134
   },
   "akumulasi": {

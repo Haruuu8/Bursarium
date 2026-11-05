@@ -3,20 +3,24 @@
   "nama": "PT Harta Djaya Karya Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 82.0,
-  "update": "2026-11-04 20:05",
+  "harga": 83.0,
+  "update": "2026-11-05 11:50",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.357041393532369,
-    "ps": 16.785623332200487,
+    "pb": null,
+    "ps": 1.6990326055763906e-05,
     "roe": -0.09791953247017433,
-    "eps": -6.813118924925684,
+    "eps": null,
+    "eps_annualized": -6.82,
     "de": 0.30217834614238803,
     "margin_net": -1.3946639998937713,
     "current_ratio": 3.42817492517586,
     "roa": -0.07519671384511506,
-    "bv": 34.789376302429325
+    "bv": 34789376.302429326,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 213862662144,
-    "enterprise_value": 195872194560,
+    "market_cap": 216470732800,
+    "enterprise_value": 198480281600,
     "shares_outstanding": 2608081058
   },
   "akumulasi": {

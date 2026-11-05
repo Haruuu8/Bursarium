@@ -3,20 +3,24 @@
   "nama": "PT Global Digital Niaga Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Internet Retail",
-  "harga": 244.0,
-  "update": "2026-11-04 19:53",
+  "harga": 242.0,
+  "update": "2026-11-05 11:40",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 3.659560905157815,
-    "ps": 1.3194131159545845,
-    "roe": -0.07775206770553818,
+    "pb": 3.6295645042958657,
+    "ps": 1.3085982543483994,
+    "roe": -0.00020936459930724895,
     "eps": -0.013959314670503008,
+    "eps_annualized": -10.0,
     "de": 1.0290650484258987,
-    "margin_net": -0.0479660147115216,
+    "margin_net": -7.548402813933983e-05,
     "current_ratio": 1.2441485690570637,
-    "roa": -0.03793671855671989,
-    "bv": 66.67466571087925
+    "roa": -0.00010215298594681352,
+    "bv": 66.67466571087925,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 33481432236032,
-    "enterprise_value": 36673874296832,
+    "market_cap": 33206992633856,
+    "enterprise_value": 35301686771712,
     "shares_outstanding": 137218985689
   },
   "akumulasi": {

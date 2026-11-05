@@ -3,20 +3,24 @@
   "nama": "PT Goodyear Indonesia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 1055.0,
-  "update": "2026-11-04 20:34",
+  "harga": 1065.0,
+  "update": "2026-11-05 12:15",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0029260172156286702,
-    "roe": 0.02085874196370596,
+    "ps": 0.0029537519759663825,
+    "roe": 0.0327347009680302,
     "eps": 4872.0215536585365,
+    "eps_annualized": 0.006,
     "de": 0.8464334677504266,
-    "margin_net": 0.017120616591143827,
+    "margin_net": 0.013512435015088928,
     "current_ratio": 1.1887301814303168,
-    "roa": 0.011296774201736541,
-    "bv": 148833.54390243904
+    "roa": 0.017728611152132125,
+    "bv": 148833.54390243904,
+    "pcf": 0.049537834074065666,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 432549986304,
-    "enterprise_value": 438687465472,
+    "market_cap": 436649984000,
+    "enterprise_value": 432537468928,
     "shares_outstanding": 410000000
   },
   "akumulasi": {

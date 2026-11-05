@@ -3,20 +3,24 @@
   "nama": "PT Gozco Plantations Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 109.0,
-  "update": "2026-11-04 20:36",
+  "harga": 113.0,
+  "update": "2026-11-05 12:17",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 26.01431980906921,
-    "pb": 0.5223194334588592,
-    "ps": 880.9867442888147,
-    "roe": 0.020071700634925374,
-    "eps": 4.19,
+    "pe": null,
+    "pb": 0.541487119090377,
+    "ps": 913.3165330700557,
+    "roe": 4.8019858621736037e-05,
+    "eps": 0.010021002961938426,
+    "eps_annualized": 8.38,
     "de": 0.7447231881246238,
-    "margin_net": 0.07390188135525959,
+    "margin_net": 0.08099422728391471,
     "current_ratio": 0.49547931669636364,
-    "roa": 0.011240775659488401,
-    "bv": 208.6845577967289
+    "roa": 2.6892612030494823e-05,
+    "bv": 208.6845577967289,
+    "pcf": 6.036059923554639e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 629983019008,
-    "enterprise_value": 908299010048,
+    "market_cap": 653101694976,
+    "enterprise_value": 890299023360,
     "shares_outstanding": 5779661000
   },
   "akumulasi": {

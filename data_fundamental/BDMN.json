@@ -3,20 +3,24 @@
   "nama": "PT Bank Danamon Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 4600.0,
-  "update": "2026-11-04 20:21",
+  "harga": 4660.0,
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 18.836247491912697,
+    "pe": null,
     "pb": null,
-    "ps": 0.0039042409134893113,
-    "roe": 0.043939508692591535,
-    "eps": 244.21,
+    "ps": 0.003955165794969607,
+    "roe": 0.043977706908575734,
+    "eps": null,
+    "eps_annualized": 488.42,
     "de": 4.416412390149433,
-    "margin_net": 0.16311015509047502,
+    "margin_net": 0.0905146537862081,
     "current_ratio": null,
-    "roa": 0.007921472310671201,
-    "bv": 2424976.5178571427
+    "roa": 0.007928358735195262,
+    "bv": 2424976.5178571427,
+    "pcf": 0.008456993969012195,
+    "div_yield": 1515.5895539546289,
+    "payout_ratio": 14460.192705926398
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 44958341922816,
+    "market_cap": 45544755953664,
     "enterprise_value": 68272250683392,
     "shares_outstanding": 22400000
   },

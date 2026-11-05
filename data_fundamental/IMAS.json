@@ -3,20 +3,24 @@
   "nama": "PT Indomobil Sukses Internasional Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto & Truck Dealerships",
-  "harga": 710.0,
-  "update": "2026-11-04 20:38",
+  "harga": 720.0,
+  "update": "2026-11-05 12:19",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 255.39568345323744,
-    "pb": 0.20015824074887692,
-    "ps": 0.08712170543547987,
-    "roe": 0.0007834267552094174,
-    "eps": 2.78,
+    "pe": null,
+    "pb": 0.20297737090026954,
+    "ps": 0.08834877170921902,
+    "roe": 1.8592904849715105e-05,
+    "eps": 0.06595263024848401,
+    "eps_annualized": 5.56,
     "de": 4.818552928911504,
-    "margin_net": 0.0006391150134104755,
+    "margin_net": 8.092824824230341e-06,
     "current_ratio": 0.9235653155381195,
-    "roa": 0.0001305411391226784,
-    "bv": 3547.1934472624694
+    "roa": 3.0981058057336633e-06,
+    "bv": 3547.1934472624694,
+    "pcf": null,
+    "div_yield": 50.55826990889545,
+    "payout_ratio": 6547.114088921714
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2835946668032,
-    "enterprise_value": 59997933273088,
+    "market_cap": 2875889549312,
+    "enterprise_value": 59977964191744,
     "shares_outstanding": 3994291039
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Arkayana Lestari Grup Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Food Distribution",
-  "harga": 166.0,
-  "update": "2026-11-04 21:29",
+  "harga": 167.0,
+  "update": "2026-11-05 13:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.3904611832729765,
-    "ps": 0.0001337994056201604,
-    "roe": -0.06411248109541337,
+    "pb": null,
+    "ps": 0.0001346054261359445,
+    "roe": -0.096439673624829,
     "eps": null,
+    "eps_annualized": -4.84,
     "de": 0.02942532243483299,
-    "margin_net": -3.336670362903226,
+    "margin_net": -2.9390012735712423,
     "current_ratio": 28.680394971777837,
-    "roa": -0.062279875672547357,
-    "bv": 37.809239865833696
+    "roa": -0.09368302053880556,
+    "bv": 37809239.8658337,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -35,16 +39,16 @@
     },
     "net_income": {
       "2025-Q1": -506834668000000.0,
-      "2025-Q2": 505751233032000.0,
-      "2025-Q3": 1081885022635.0,
-      "2026-Q1": -1322663376.0,
-      "2026-Q2": -746072249.0
+      "2025-Q2": -576600300000000.0,
+      "2025-Q3": -466510397000000.0,
+      "2026-Q1": -1322663376000000.0,
+      "2026-Q2": -746072249000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 141668253696,
-    "enterprise_value": 139465801728,
+    "market_cap": 142521679872,
+    "enterprise_value": 141170622464,
     "shares_outstanding": 853423236
   },
   "akumulasi": {

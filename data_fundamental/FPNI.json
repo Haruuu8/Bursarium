@@ -3,20 +3,24 @@
   "nama": "PT Lotte Chemical Titan Tbk",
   "sektor": "Basic Materials",
   "industri": "Specialty Chemicals",
-  "harga": 356.0,
-  "update": "2026-11-04 20:34",
+  "harga": 362.0,
+  "update": "2026-11-05 12:15",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 5601.818753356891,
+    "ps": 5696.231428975265,
     "roe": 0.07649864312954732,
     "eps": 0.0030486413694705426,
+    "eps_annualized": 0.003,
     "de": 0.6345916315803709,
     "margin_net": 0.04797173144876325,
     "current_ratio": 1.5310925656534722,
     "roa": 0.04675935876028458,
-    "bv": 0.019926114011641967
+    "bv": 0.019926114011641967,
+    "pcf": 0.07576199827048162,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -37,7 +41,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1981643358208,
+    "market_cap": 2015041814528,
     "enterprise_value": 1981584637952,
     "shares_outstanding": 5566414000
   },

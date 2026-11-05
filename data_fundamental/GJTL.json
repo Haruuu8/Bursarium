@@ -3,20 +3,24 @@
   "nama": "PT. Gajah Tunggal Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 1060.0,
-  "update": "2026-11-04 20:35",
+  "harga": 1085.0,
+  "update": "2026-11-05 12:16",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 4.62882096069869,
-    "pb": 0.3355346451265879,
-    "ps": 0.2084699388868783,
-    "roe": 0.07234497314333738,
-    "eps": 229.0,
+    "pe": null,
+    "pb": 0.34344819807768673,
+    "ps": 0.21338668272854996,
+    "roe": 0.00011198420259372307,
+    "eps": 0.35377346713202446,
+    "eps_annualized": 458.0,
     "de": 1.1431348788863398,
-    "margin_net": 0.08849186303559987,
+    "margin_net": 6.957654063472849e-05,
     "current_ratio": 1.466155531051788,
-    "roa": 0.03375661226741397,
-    "bv": 3159.1372616681397
+    "roa": 5.225252208667082e-05,
+    "bv": 3159.1372616681397,
+    "pcf": 1.7891198597880416,
+    "div_yield": 6672.23436776179,
+    "payout_ratio": 15806.494080833061
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3693526122496,
-    "enterprise_value": 8269042024448,
+    "market_cap": 3780637360128,
+    "enterprise_value": 8303889874944,
     "shares_outstanding": 3484458600
   },
   "akumulasi": {

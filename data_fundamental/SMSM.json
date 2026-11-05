@@ -3,20 +3,24 @@
   "nama": "PT Selamat Sempurna Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto Parts",
-  "harga": 1595.0,
-  "update": "2026-11-04 21:02",
+  "harga": 1645.0,
+  "update": "2026-11-05 12:39",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 16.614583333333332,
-    "pb": 2.2913042840122615,
-    "ps": 1.7287174650937902,
-    "roe": 0.13744751379010306,
-    "eps": 96.0,
+    "pe": null,
+    "pb": 2.3631320045142132,
+    "ps": 1.7829092351594262,
+    "roe": 0.0002757900870911863,
+    "eps": 0.1919802585714051,
+    "eps_annualized": 192.0,
     "de": 0.2965598083355286,
-    "margin_net": 0.2079853899645847,
+    "margin_net": 0.00020807500059285883,
     "current_ratio": 4.391129967881524,
-    "roa": 0.09638377599888603,
-    "bv": 696.1100763129655
+    "roa": 0.0001933952040595164,
+    "bv": 696.1100763129655,
+    "pcf": 9.95434335539735e-06,
+    "div_yield": 1900.6185895944793,
+    "payout_ratio": 16283.945728556868
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 9185087455232,
-    "enterprise_value": 8678530351104,
+    "market_cap": 9473021181952,
+    "enterprise_value": 8764541894656,
     "shares_outstanding": 5758675440
   },
   "akumulasi": {

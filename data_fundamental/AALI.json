@@ -3,20 +3,24 @@
   "nama": "PT Astra Agro Lestari Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 9525.0,
-  "update": "2026-11-04 20:14",
+  "harga": 9400.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 9.623447871727775,
-    "pb": 0.7527212853115962,
-    "ps": 0.5840983723771316,
-    "roe": 0.07821747265837416,
-    "eps": 989.77,
+    "pe": null,
+    "pb": 0.7428430532208928,
+    "ps": 0.5764330394063031,
+    "roe": 9.332695330585225e-05,
+    "eps": 1.1809673083314731,
+    "eps_annualized": 1319.6933333333332,
     "de": 0.21282707426578634,
-    "margin_net": 0.08033120577224201,
+    "margin_net": 7.24200611681906e-05,
     "current_ratio": 2.903324819117443,
-    "roa": 0.063131164588381,
-    "bv": 12654.086161595702
+    "roa": 7.532638232147112e-05,
+    "bv": 12654.086161595702,
+    "pcf": 6.879007099517397,
+    "div_yield": 3756.032270478621,
+    "payout_ratio": 26753.71804244853
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 18332656861184,
-    "enterprise_value": 13032810872832,
+    "market_cap": 18092071583744,
+    "enterprise_value": 13177162039296,
     "shares_outstanding": 1924688333
   },
   "akumulasi": {

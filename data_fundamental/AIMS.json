@@ -3,26 +3,30 @@
   "nama": "PT Artha Mahiya Investama Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 755.0,
-  "update": "2026-11-04 20:15",
+  "harga": 940.0,
+  "update": "2026-11-05 11:59",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.19529028266240264,
-    "roe": -16.290463145385125,
+    "ps": 0.09718045112781955,
+    "roe": -0.5223171244750451,
     "eps": null,
+    "eps_annualized": -4.279999999999999,
     "de": 101.25229156457215,
-    "margin_net": -0.760809375,
+    "margin_net": -10.637829887218045,
     "current_ratio": 0.11627616247201876,
-    "roa": -0.15931636246115546,
-    "bv": 197000.67727272728
+    "roa": -0.005108121456086905,
+    "bv": 197000.67727272728,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 851000.0,
       "2025-Q2": 78749149000.0,
-      "2025-Q3": -77471250000.0,
+      "2025-Q3": 1200000000000.0,
       "2026-Q1": 13629000.0,
       "2026-Q2": 92986371000.0,
       "2026-Q3": 835000000000.0
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 166099992576,
-    "enterprise_value": 134865330176,
+    "market_cap": 206799994880,
+    "enterprise_value": 167865335808,
     "shares_outstanding": 220000000
   },
   "akumulasi": {

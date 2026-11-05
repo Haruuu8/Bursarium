@@ -3,20 +3,24 @@
   "nama": "PT Bakrie Sumatera Plantations Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 240.0,
-  "update": "2026-11-04 21:08",
+  "harga": 246.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.4723266868495635,
-    "ps": 1386.8069326720406,
-    "roe": -0.015681908697885702,
+    "pb": 1.5091348540208025,
+    "ps": 1421.4771059888417,
+    "roe": -4.441511927918776e-05,
     "eps": -0.007239988734982579,
+    "eps_annualized": 3.4133333333333334e-06,
     "de": 1.7017832714763144,
-    "margin_net": -0.019623359697943814,
+    "margin_net": -0.04183527737558883,
     "current_ratio": 0.20801926189273556,
-    "roa": -0.005804280773904103,
-    "bv": 163.0073013982679
+    "roa": -1.6439186572843925e-05,
+    "bv": 163.0073013982679,
+    "pcf": 1.1172501989174696e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4352013500416,
-    "enterprise_value": 4519135543296,
+    "market_cap": 4460813746176,
+    "enterprise_value": 4621167230976,
     "shares_outstanding": 17005275078
   },
   "akumulasi": {

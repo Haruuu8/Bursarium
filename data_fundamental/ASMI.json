@@ -3,29 +3,27 @@
   "nama": "PT Asuransi Maximus Graha Persada Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 21.0,
-  "update": "2026-11-04 20:19",
+  "harga": 22.0,
+  "update": "2026-11-05 12:02",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.7264423555843228,
-    "ps": 0.007976937843990835,
+    "pb": null,
+    "ps": null,
     "roe": -0.4797829236011051,
-    "eps": -13.87451016754428,
+    "eps": null,
+    "eps_annualized": -27.74,
     "de": 3.0129673470722,
-    "margin_net": -877.9929540368146,
+    "margin_net": null,
     "current_ratio": null,
-    "roa": -0.1195581429166493,
-    "bv": 28.908006035948155
+    "roa": -119558.1429166493,
+    "bv": 28908006.035948154,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": 119599550000000.0,
-      "2025-Q2": 12759710000000.0,
-      "2025-Q3": -130690622820000.0,
-      "2026-Q1": 313842135000000.0,
-      "2026-Q2": -172327487000000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 0.24,
       "2025-Q2": -0.17,
@@ -34,17 +32,17 @@
       "2026-Q2": -3.95
     },
     "net_income": {
-      "2025-Q1": 2131911671.0,
-      "2025-Q2": 617364801329.0,
-      "2025-Q3": -617409078269.0,
-      "2026-Q1": -88864841279.0,
-      "2026-Q2": -35384022558.0
+      "2025-Q1": 2131911671000000.0,
+      "2025-Q2": -1512414958000000.0,
+      "2025-Q3": 1468138018000000.0,
+      "2026-Q1": -8.8864841279e+16,
+      "2026-Q2": -3.5384022558e+16
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 188125986816,
-    "enterprise_value": -120723357696,
+    "market_cap": 197084364800,
+    "enterprise_value": -129681735680,
     "shares_outstanding": 8958380460
   },
   "akumulasi": {
@@ -73,7 +71,7 @@
     "saldo_laba": 500000000.0
   },
   "laba_rugi": {
-    "pendapatan": 141514648.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

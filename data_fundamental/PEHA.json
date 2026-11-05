@@ -3,20 +3,24 @@
   "nama": "PT Phapros Tbk",
   "sektor": "Healthcare",
   "industri": "Drug Manufacturers - Specialty & Generic",
-  "harga": 260.0,
-  "update": "2026-11-04 21:22",
+  "harga": 262.0,
+  "update": "2026-11-05 12:57",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 14.444444444444445,
+    "pe": null,
     "pb": null,
-    "ps": 0.00022614326596086061,
-    "roe": 0.03593452815700447,
-    "eps": 18.0,
+    "ps": 0.00022788282954517493,
+    "roe": 0.06761459270812521,
+    "eps": null,
+    "eps_annualized": 36.0,
     "de": 2.3814696736977274,
-    "margin_net": 0.03167427859757204,
+    "margin_net": 0.02979738742752599,
     "current_ratio": 2.049831359630388,
-    "roa": 0.010534422096727648,
-    "bv": 506672.6238095238
+    "roa": 0.01982162271266318,
+    "bv": 506672.6238095238,
+    "pcf": 1.0992944271066743e-06,
+    "div_yield": 3891.766630316248,
+    "payout_ratio": 28323.4126984127
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 218399997952,
+    "market_cap": 220079996928,
     "enterprise_value": 757067218944,
     "shares_outstanding": 840000000
   },

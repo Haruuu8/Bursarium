@@ -3,20 +3,24 @@
   "nama": "PT Pan Brothers Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Apparel Manufacturing",
-  "harga": 20.0,
-  "update": "2026-11-04 20:54",
+  "harga": 22.0,
+  "update": "2026-11-05 12:32",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0015064380063865468,
-    "roe": -0.07655538284003717,
+    "ps": 0.0016570818070252016,
+    "roe": -0.0857550809547998,
     "eps": -299.12887770252865,
+    "eps_annualized": -0.00054,
     "de": 2.071916859290681,
-    "margin_net": -0.04258975428188089,
+    "margin_net": -0.022530955508942123,
     "current_ratio": 3.468320321836203,
-    "roa": -0.027279157009326826,
-    "bv": 3488.1767280960867
+    "roa": -0.030557306761845215,
+    "bv": 3488.1767280960867,
+    "pcf": 0.0801254565566939,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 429640581120,
-    "enterprise_value": 451177644032,
+    "market_cap": 472604639232,
+    "enterprise_value": 429695598592,
     "shares_outstanding": 21482028246
   },
   "akumulasi": {

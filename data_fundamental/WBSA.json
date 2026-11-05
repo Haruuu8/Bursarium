@@ -3,20 +3,24 @@
   "nama": "PT BSA Logistics Indonesia Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 394.0,
-  "update": "2026-11-04 20:12",
+  "harga": 368.0,
+  "update": "2026-11-05 11:56",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 876.9960635160774,
+    "ps": 0.0008191232268373515,
     "roe": 0.0016473406331436718,
     "eps": 234.65337175792507,
+    "eps_annualized": 0.2,
     "de": 1.7793884212474176,
     "margin_net": 0.0005223098561484137,
     "current_ratio": 1.6185847737805334,
     "roa": 0.0005926975965779339,
-    "bv": 71221.87331412104
+    "bv": 71221.87331412104,
+    "pcf": 2.459737007801404e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,7 +29,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3417950126080,
+    "market_cap": 3192400117760,
     "enterprise_value": 4473291276288,
     "shares_outstanding": 8675000000
   },

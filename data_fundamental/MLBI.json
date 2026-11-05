@@ -3,20 +3,24 @@
   "nama": "PT Multi Bintang Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Beverages - Brewers",
-  "harga": 6125.0,
-  "update": "2026-11-04 20:50",
+  "harga": 6075.0,
+  "update": "2026-11-05 12:29",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 11.68169417208568,
-    "ps": 3775.372589631411,
-    "roe": 0.47894731125175605,
+    "pb": 11.58633340333396,
+    "ps": 3744.553221552787,
+    "roe": 0.0009581317798021638,
     "eps": 0.5023720930232558,
+    "eps_annualized": 0.000502,
     "de": 2.6336417585123177,
-    "margin_net": 0.30766967483834956,
+    "margin_net": 0.3096558089462467,
     "current_ratio": 0.8624953474095127,
-    "roa": 0.1317909837709072,
-    "bv": 524.3246321784528
+    "roa": 0.00026364722564633543,
+    "bv": 524.3246321784528,
+    "pcf": 6.722465813705001,
+    "div_yield": 0.002796869537364185,
+    "payout_ratio": 33846.57856471599
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 12905375334400,
-    "enterprise_value": 11661953990656,
+    "market_cap": 12800024903680,
+    "enterprise_value": 11714629206016,
     "shares_outstanding": 2107000000
   },
   "akumulasi": {

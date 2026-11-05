@@ -3,20 +3,24 @@
   "nama": "PT Sumi Indo Kabel Tbk",
   "sektor": "Industrials",
   "industri": "Electrical Equipment & Parts",
-  "harga": 488.0,
-  "update": "2026-11-04 20:38",
+  "harga": 490.0,
+  "update": "2026-11-05 12:19",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.00217199251160899,
-    "roe": 0.02203060417634484,
+    "ps": 0.0021808941202631255,
+    "roe": 0.07174878188267103,
     "eps": 4986.850490196079,
+    "eps_annualized": 0.003062444,
     "de": 0.46294990515883533,
-    "margin_net": 0.01170239978692848,
+    "margin_net": 0.022195495740203904,
     "current_ratio": 2.4276502909328133,
-    "roa": 0.015059028404634904,
-    "bv": 69504.3227124183
+    "roa": 0.04904390890601351,
+    "bv": 69504.3227124183,
+    "pcf": 0.10960530321831256,
+    "div_yield": 453.8632119514473,
+    "payout_ratio": 72619441.8105961
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 597312012288,
-    "enterprise_value": 592418766848,
+    "market_cap": 599759978496,
+    "enterprise_value": 597314764800,
     "shares_outstanding": 1224000000
   },
   "akumulasi": {

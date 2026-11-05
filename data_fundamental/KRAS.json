@@ -3,20 +3,24 @@
   "nama": "PT Krakatau Steel (Persero) Tbk",
   "sektor": "Basic Materials",
   "industri": "Steel",
-  "harga": 156.0,
-  "update": "2026-11-04 20:44",
+  "harga": 161.0,
+  "update": "2026-11-05 12:24",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2758.5721380804307,
-    "roe": 0.0135214406362476,
+    "ps": 2846.987911736855,
+    "roe": 0.11534788158201151,
     "eps": 0.004045249376851421,
+    "eps_annualized": 0.001,
     "de": 3.061792718407966,
-    "margin_net": 0.014731740686678325,
+    "margin_net": 0.07153277065749714,
     "current_ratio": 0.8527052699547018,
-    "roa": 0.003265721669668729,
-    "bv": 0.035069992802384306
+    "roa": 2.785901935796211e-05,
+    "bv": 0.035069992802384306,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3018037919744,
-    "enterprise_value": 2961141137408,
+    "market_cap": 3114769842176,
+    "enterprise_value": 3019180343296,
     "shares_outstanding": 19346396899
   },
   "akumulasi": {

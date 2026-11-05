@@ -3,20 +3,24 @@
   "nama": "PT Kencana Energi Lestari Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Independent Power Producers",
-  "harga": 755.0,
-  "update": "2026-11-04 21:25",
+  "harga": 760.0,
+  "update": "2026-11-05 13:00",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.08440425606555761,
-    "roe": 0.03450949350069705,
+    "ps": 0.08496322464877323,
+    "roe": 0.06799620537315534,
     "eps": 3338.196621264554,
+    "eps_annualized": 0.003388408925862157,
     "de": 0.8667744620671098,
-    "margin_net": 0.3696467282827564,
+    "margin_net": 0.37318940717667903,
     "current_ratio": 1.555183653497619,
-    "roa": 0.017205698689257063,
-    "bv": 49093.86638482126
+    "roa": 0.033901460235564514,
+    "bv": 49093.86638482126,
+    "pcf": 0.4284051932030128,
+    "div_yield": 12038.914045824404,
+    "payout_ratio": 2700256927.3714504
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2768065789952,
-    "enterprise_value": 2841522208768,
+    "market_cap": 2786397519872,
+    "enterprise_value": 2768195813376,
     "shares_outstanding": 3666312500
   },
   "akumulasi": {

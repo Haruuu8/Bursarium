@@ -3,29 +3,27 @@
   "nama": "PT Panin Financial Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 158.0,
-  "update": "2026-11-04 20:54",
+  "harga": 156.0,
+  "update": "2026-11-05 12:32",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 6.121658271987602,
+    "pe": 3.0220844633862844,
     "pb": null,
-    "ps": 12431173.415955774,
-    "roe": 0.026205216234197425,
-    "eps": 25.81,
+    "ps": null,
+    "roe": 2.6205216234197425e-05,
+    "eps": 51.62,
+    "eps_annualized": 51.62,
     "de": 5.094922447310965,
-    "margin_net": -300.1604938271605,
+    "margin_net": null,
     "current_ratio": null,
-    "roa": 0.003400535668636421,
-    "bv": 985.099893794063
+    "roa": 3.4005356686364213e-06,
+    "bv": 985.099893794063,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": -3009000.0,
-      "2025-Q2": 255000.0,
-      "2025-Q3": 2906000.0,
-      "2026-Q1": -3009000.0,
-      "2026-Q2": 255000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": 13.77,
       "2025-Q2": 11.6,
@@ -43,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5059487727616,
-    "enterprise_value": 36584325906432,
+    "market_cap": 4995443326976,
+    "enterprise_value": 36712415756288,
     "shares_outstanding": 32022073293
   },
   "akumulasi": {
@@ -73,7 +71,7 @@
     "saldo_laba": 34692.0
   },
   "laba_rugi": {
-    "pendapatan": -2754.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

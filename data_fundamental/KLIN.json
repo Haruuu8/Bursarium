@@ -3,20 +3,24 @@
   "nama": "PT Klinko Karya Imaji Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Home Improvement Retail",
-  "harga": 96.0,
-  "update": "2026-11-04 19:51",
+  "harga": 98.0,
+  "update": "2026-11-05 11:39",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 4.574481157061698,
-    "ps": 56.74354386531817,
+    "pb": null,
+    "ps": 5.792570102917897e-05,
     "roe": -0.05747718571381074,
-    "eps": -2.4124308917560633,
+    "eps": null,
+    "eps_annualized": -2.42,
     "de": 0.04503494699702338,
     "margin_net": -1.4259362305042587,
     "current_ratio": 14.83136733414948,
     "roa": -0.0550002522680942,
-    "bv": 20.98598654227776
+    "bv": 20985986.54227776,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 125522919424,
-    "enterprise_value": 120693178368,
+    "market_cap": 128137977856,
+    "enterprise_value": 125923295232,
     "shares_outstanding": 1307530330
   },
   "akumulasi": {

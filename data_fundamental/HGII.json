@@ -3,20 +3,24 @@
   "nama": "PT Hero Global Investment Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Renewable",
-  "harga": 129.0,
-  "update": "2026-11-04 20:10",
+  "harga": 125.0,
+  "update": "2026-11-05 11:54",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.01349971551583403,
-    "roe": 0.015324666006150678,
+    "ps": 0.013081119685885689,
+    "roe": 0.023847270118730356,
     "eps": 2773.6723076923076,
+    "eps_annualized": 0.00356,
     "de": 0.26032199110197163,
-    "margin_net": 0.3143068764190477,
+    "margin_net": 0.29026191541079865,
     "current_ratio": 8.656122078959758,
-    "roa": 0.012154244905698242,
-    "bv": 116309.84569230769
+    "roa": 0.01891366253848903,
+    "bv": 116309.84569230769,
+    "pcf": 2.2529664706645324e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 838499958784,
+    "market_cap": 812499992576,
     "enterprise_value": 588889260032,
     "shares_outstanding": 6500000000
   },

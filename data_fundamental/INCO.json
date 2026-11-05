@@ -3,20 +3,24 @@
   "nama": "PT Vale Indonesia Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 3070.0,
-  "update": "2026-11-04 20:39",
+  "harga": 3360.0,
+  "update": "2026-11-05 12:19",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 11.428174325226006,
-    "ps": 29791.05611026612,
-    "roe": 0.03686477253944058,
+    "pb": 12.507708707739212,
+    "ps": 32605.194961073015,
+    "roe": 3.686477253944058e-05,
     "eps": 0.019806287246820486,
+    "eps_annualized": 0.019825625677819574,
     "de": 0.1949601391280761,
     "margin_net": 0.19219876700523691,
     "current_ratio": 1.5840430385008868,
-    "roa": 0.030850211092680976,
-    "bv": 268.63433411436756
+    "roa": 3.085021109268098e-05,
+    "bv": 268.63433411436756,
+    "pcf": 0.23579408558944187,
+    "div_yield": 128.87111734990327,
+    "payout_ratio": 21840771.198465258
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 32357136465920,
-    "enterprise_value": 32884071071744,
+    "market_cap": 35413674688512,
+    "enterprise_value": 32357081939968,
     "shares_outstanding": 10539784534
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Mizuho Leasing Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 65.0,
-  "update": "2026-11-04 21:08",
+  "harga": 66.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1205.8086111174534,
-    "roe": 0.003238415569758483,
+    "ps": 1224.3595128269528,
+    "roe": 0.003971743121460103,
     "eps": 521.4136488715562,
+    "eps_annualized": 0.86,
     "de": 3.213944932733029,
-    "margin_net": 27.659113007469774,
+    "margin_net": 9672.693350207612,
     "current_ratio": null,
-    "roa": 0.000768499736340444,
-    "bv": 131280.80868429193
+    "roa": 0.0009425237360385149,
+    "bv": 131280.80868429193,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 369677991936,
-    "enterprise_value": 2585545146368,
+    "market_cap": 375365369856,
+    "enterprise_value": 2574170193920,
     "shares_outstanding": 5687353997
   },
   "akumulasi": {

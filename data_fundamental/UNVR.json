@@ -3,20 +3,24 @@
   "nama": "PT Unilever Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Household & Personal Products",
-  "harga": 1390.0,
-  "update": "2026-11-04 21:08",
+  "harga": 1430.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 15.977011494252874,
-    "pb": 12.554289719110567,
-    "ps": 1.5015230636637824,
-    "roe": 0.9990107601238357,
-    "eps": 87.0,
+    "pe": 10.093952032267543,
+    "pb": 12.91556424340152,
+    "ps": 1.5447323604598626,
+    "roe": 1.2795349336032182,
+    "eps": 141.66899103826626,
+    "eps_annualized": 116.0,
     "de": 3.3298170928760698,
-    "margin_net": 0.16313947640443863,
+    "margin_net": 0.15303543701434136,
     "current_ratio": 0.6817011953954284,
-    "roa": 0.230728166731922,
-    "bv": 110.71912717484085
+    "roa": 0.29551708678605876,
+    "bv": 110.71912717484085,
+    "pcf": 12.197516084020357,
+    "div_yield": 7.9720287154941465,
+    "payout_ratio": 98.27587123410888
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 52793914163200,
-    "enterprise_value": 50950458834944,
+    "market_cap": 54313162375168,
+    "enterprise_value": 51330274033664,
     "shares_outstanding": 37981233300
   },
   "akumulasi": {

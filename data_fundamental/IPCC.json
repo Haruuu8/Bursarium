@@ -3,20 +3,24 @@
   "nama": "PT Indonesia Kendaraan Terminal Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 965.0,
-  "update": "2026-11-04 21:18",
+  "harga": 975.0,
+  "update": "2026-11-05 12:54",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.001971247731809788,
-    "roe": 0.128379902549565,
+    "ps": 0.0019916751694451225,
+    "roe": 0.18377400245502096,
     "eps": null,
+    "eps_annualized": 0.0012991650717879026,
     "de": 0.43330758779098383,
-    "margin_net": 0.2744922756668925,
+    "margin_net": 0.28492235095869245,
     "current_ratio": 6.631889822941259,
-    "roa": 0.08956898271042041,
-    "bv": 0.7589768891713471
+    "roa": 0.12821672334704776,
+    "bv": 758976.8891713471,
+    "pcf": 4.9771152093531075e-06,
+    "div_yield": 11458.834983974179,
+    "payout_ratio": 8599649384.04593
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1754741342208,
-    "enterprise_value": 1194206560256,
+    "market_cap": 1772925091840,
+    "enterprise_value": 1166930739200,
     "shares_outstanding": 1818384820
   },
   "akumulasi": {

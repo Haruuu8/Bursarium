@@ -3,20 +3,24 @@
   "nama": "PT Soechi Lines Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 418.0,
-  "update": "2026-11-04 21:02",
+  "harga": 410.0,
+  "update": "2026-11-05 12:39",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.016458931731123335,
-    "roe": 0.07371511412722354,
+    "ps": 0.01614392825301571,
+    "roe": 0.08532731417505908,
     "eps": 5291.504887377816,
+    "eps_annualized": 0.006133333333333333,
     "de": 0.6618945118238763,
-    "margin_net": 0.2346990420565414,
+    "margin_net": 0.20835530549343764,
     "current_ratio": 0.6363787481378249,
-    "roa": 0.044326782454232196,
-    "bv": 62014.197195070126
+    "roa": 0.05130949517780019,
+    "bv": 62014.197195070126,
+    "pcf": 0.06786433014846822,
+    "div_yield": 27053.68341401221,
+    "payout_ratio": 1808479923.8714688
   },
   "quarterly": {
     "revenue": {
@@ -40,7 +44,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2950661931008,
+    "market_cap": 2894189821952,
     "enterprise_value": 2950898122752,
     "shares_outstanding": 7059000000
   },

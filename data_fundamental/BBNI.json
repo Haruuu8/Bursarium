@@ -3,20 +3,24 @@
   "nama": "PT Bank Negara Indonesia (Persero) Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 3170.0,
-  "update": "2026-11-04 20:21",
+  "harga": 3270.0,
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.014505361104000108,
-    "roe": 0.09487143769682102,
+    "ps": 0.014962943473211468,
+    "roe": 0.12442937862100441,
     "eps": null,
+    "eps_annualized": 0.0005733333333333332,
     "de": 7.6973602662729155,
-    "margin_net": 0.26856974286588897,
+    "margin_net": 0.2725276472243505,
     "current_ratio": null,
-    "roa": 0.010875804375711444,
-    "bv": 478650.31819004175
+    "roa": 0.01426424657754208,
+    "bv": 478650.31819004175,
+    "pcf": 0.01125601868022489,
+    "div_yield": 1122.4648098712646,
+    "payout_ratio": 6401964991.184365
   },
   "quarterly": {
     "revenue": {
@@ -40,8 +44,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 118187458822144,
-    "enterprise_value": -36005235130368,
+    "market_cap": 121915775647744,
+    "enterprise_value": -36022599548928,
     "shares_outstanding": 354899856
   },
   "akumulasi": {

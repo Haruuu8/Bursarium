@@ -1,22 +1,26 @@
 {
   "kode": "PORT",
-  "nama": "PT Nusantara Pelabuhan Handal Tbk",
-  "sektor": "Industrials",
-  "industri": "Marine Shipping",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 865.0,
-  "update": "2026-11-04 21:12",
+  "update": "2026-11-05 12:48",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.001991837065585703,
-    "roe": 0.07556419132333136,
+    "roe": 0.1241823300716949,
     "eps": null,
+    "eps_annualized": 0.06711933046480345,
     "de": 0.862078250021816,
-    "margin_net": 0.15568091484658214,
+    "margin_net": 0.12699864511682094,
     "current_ratio": 3.8349103599742165,
-    "roa": 0.03931257205304341,
-    "bv": 0.4441212781435506
+    "roa": 0.06460635273351982,
+    "bv": 444121.2781435506,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2434059730944,
-    "enterprise_value": 2747787902976,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 2813941985
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": 0.033559665232401725
   },
   "arus_kas": {
-    "arus_kas_operasi": 380686041088,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 4684724.0,

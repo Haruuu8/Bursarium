@@ -4,19 +4,23 @@
   "sektor": "Communication Services",
   "industri": "Publishing",
   "harga": 292.0,
-  "update": "2026-11-04 21:06",
+  "update": "2026-11-05 12:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.0018005289488750632,
-    "roe": -0.024576609728589893,
+    "roe": -0.028650481956616895,
     "eps": -6336.908530465239,
+    "eps_annualized": 0.001088,
     "de": 0.7711387551132144,
-    "margin_net": -0.0721593258130077,
+    "margin_net": -0.039074613888616425,
     "current_ratio": 1.871793653635893,
-    "roa": -0.013387639224876456,
-    "bv": 221179.82308502545
+    "roa": -0.015606803391104944,
+    "bv": 221179.82308502545,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

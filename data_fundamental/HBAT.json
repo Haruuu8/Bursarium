@@ -3,20 +3,24 @@
   "nama": "PT Minahasa Membangun Hebat Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 314.0,
-  "update": "2026-11-04 19:59",
+  "harga": 310.0,
+  "update": "2026-11-05 11:46",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 148.1132075471698,
-    "pb": 3.973014832058823,
-    "ps": 15.14769292815561,
+    "pe": 146.22641509433961,
+    "pb": null,
+    "ps": 1.4954728687032609e-05,
     "roe": 0.013352460556699162,
     "eps": 2.12,
+    "eps_annualized": 2.12,
     "de": 0.01958187823843977,
     "margin_net": 0.10181636912912184,
     "current_ratio": 90.17050932783185,
     "roa": 0.013096015966631912,
-    "bv": 79.03318091497903
+    "bv": 79033180.91497903,
+    "pcf": 0.0001145812497988442,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 326792609792,
-    "enterprise_value": 296070381568,
+    "market_cap": 322629632000,
+    "enterprise_value": 321048182784,
     "shares_outstanding": 1040740800
   },
   "akumulasi": {

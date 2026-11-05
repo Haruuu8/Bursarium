@@ -3,20 +3,24 @@
   "nama": "PT Atlas Resources Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 496.0,
-  "update": "2026-11-04 20:18",
+  "harga": 498.0,
+  "update": "2026-11-05 12:02",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 4586.703491812981,
-    "roe": 0.08689325821736373,
+    "ps": 4605.198263957388,
+    "roe": -0.0398960315387581,
     "eps": -0.0008554666666666667,
+    "eps_annualized": 0.004062,
     "de": 6.23314554340932,
-    "margin_net": 0.029435679228192867,
+    "margin_net": -0.007910830538567766,
     "current_ratio": 0.8039696394271548,
-    "roa": 0.011805735083157185,
-    "bv": 0.0214424
+    "roa": -0.005420466315552919,
+    "bv": 0.0214424,
+    "pcf": 0.07693733778272153,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1860000022528,
-    "enterprise_value": 1837590249472,
+    "market_cap": 1867500093440,
+    "enterprise_value": 1860090200064,
     "shares_outstanding": 3750000000
   },
   "akumulasi": {

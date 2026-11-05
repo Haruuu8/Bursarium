@@ -3,20 +3,24 @@
   "nama": "PT MNC Digital Entertainment Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 97.0,
-  "update": "2026-11-04 21:17",
+  "harga": 91.0,
+  "update": "2026-11-05 12:53",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.8601014812116966,
-    "ps": 2.9359995406496244,
-    "roe": 0.04155357501153385,
+    "pb": 0.8068993277346844,
+    "ps": 2.7543913216403695,
+    "roe": 8.255036862289839e-05,
     "eps": 0.009309815098958407,
+    "eps_annualized": 9.38e-05,
     "de": 0.22086086003582397,
-    "margin_net": 0.1419801939659154,
+    "margin_net": 0.0002817898232378847,
     "current_ratio": 2.9714433771243773,
-    "roa": 0.03306918411466865,
-    "bv": 112.7773897835265
+    "roa": 6.569527021361395e-05,
+    "bv": 112.7773897835265,
+    "pcf": 0.0003798783758061771,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 5885589454848,
-    "enterprise_value": 6707047038976,
+    "market_cap": 5521532256256,
+    "enterprise_value": 6281076146176,
     "shares_outstanding": 60676178205
   },
   "akumulasi": {

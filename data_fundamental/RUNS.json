@@ -3,20 +3,24 @@
   "nama": "PT Global Sukses Solusi Tbk",
   "sektor": "Technology",
   "industri": "Software - Application",
-  "harga": 48.0,
-  "update": "2026-11-04 19:42",
+  "harga": 47.0,
+  "update": "2026-11-05 11:33",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.8968661961350757,
-    "ps": 2.7774252389031457,
+    "pb": null,
+    "ps": 2.7195622130926635e-06,
     "roe": -0.04411827710725849,
-    "eps": -4.722392950641363,
+    "eps": null,
+    "eps_annualized": -4.94,
     "de": 0.5475587424467124,
     "margin_net": -0.2732519451902004,
     "current_ratio": 1.0251685274585356,
     "roa": -0.027205979994519434,
-    "bv": 53.51968912068439
+    "bv": 53519689.12068439,
+    "pcf": 1.3223110823953976e-05,
+    "div_yield": 79968.91706617679,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 47081730048,
-    "enterprise_value": 64166408192,
+    "market_cap": 46100860928,
+    "enterprise_value": 62204669952,
     "shares_outstanding": 980869375
   },
   "akumulasi": {

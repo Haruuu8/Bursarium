@@ -3,20 +3,24 @@
   "nama": "PT Logisticsplus International Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 34.0,
-  "update": "2026-11-04 20:02",
+  "harga": 32.0,
+  "update": "2026-11-05 11:48",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5975105879395581,
-    "ps": 0.3243143032365991,
+    "pb": null,
+    "ps": 3.0523699128150504e-07,
     "roe": 0.009732471060587685,
     "eps": null,
+    "eps_annualized": 1.1,
     "de": 0.8264009893975572,
     "margin_net": 0.010565100048416704,
     "current_ratio": 2.4830848859616688,
     "roa": 0.005328770142529305,
-    "bv": 56.90275735070206
+    "bv": 56902757.35070206,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 37400383488,
-    "enterprise_value": 76864708608,
+    "market_cap": 35200360448,
+    "enterprise_value": 73564676096,
     "shares_outstanding": 1100011289
   },
   "akumulasi": {

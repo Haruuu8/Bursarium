@@ -3,20 +3,24 @@
   "nama": "PT Japfa Comfeed Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 1620.0,
-  "update": "2026-11-04 20:42",
+  "harga": 1665.0,
+  "update": "2026-11-05 12:22",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 5.750611093936925,
-    "pb": 0.7186265769738462,
-    "ps": 0.2221382894700422,
-    "roe": 0.12487793031562713,
+    "pe": 5.910350290990729,
+    "pb": 0.7385884263342309,
+    "ps": 0.2283087975108767,
+    "roe": 0.12496525416777356,
     "eps": 281.70919116892185,
+    "eps_annualized": 0.00042,
     "de": 1.2012030251791204,
-    "margin_net": 0.07001578582930844,
+    "margin_net": 0.03862864065077371,
     "current_ratio": 1.4932188724133055,
-    "roa": 0.05483242357116156,
-    "bv": 2254.300149629671
+    "roa": 0.05487076644276951,
+    "bv": 2254.300149629671,
+    "pcf": null,
+    "div_yield": 11.500994328541164,
+    "payout_ratio": 45593227.516716756
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 18961890541568,
-    "enterprise_value": 35950251999232,
+    "market_cap": 19488609140736,
+    "enterprise_value": 35422554030080,
     "shares_outstanding": 8793280701
   },
   "akumulasi": {

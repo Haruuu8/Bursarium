@@ -3,20 +3,24 @@
   "nama": "PT Wintermar Offshore Marine Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 525.0,
-  "update": "2026-11-04 21:09",
+  "harga": 530.0,
+  "update": "2026-11-05 12:45",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.025614187624078088,
-    "roe": 0.04817304611788178,
+    "ps": 0.025858132268116927,
+    "roe": 0.0917758078408756,
     "eps": 3572.329387892866,
+    "eps_annualized": 0.0037,
     "de": 0.817804726338849,
-    "margin_net": 0.16801637860527946,
+    "margin_net": 0.17429012418380171,
     "current_ratio": 3.767865427979499,
-    "roa": 0.022292719086510225,
-    "bv": 38924.52130834639
+    "roa": 0.04247047816174396,
+    "bv": 38924.52130834639,
+    "pcf": 0.04886497355601934,
+    "div_yield": 106.13445640468831,
+    "payout_ratio": 15203043.75526616
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2346635755520,
+    "market_cap": 2368984842240,
     "enterprise_value": 2374732611584,
     "shares_outstanding": 4469782393
   },

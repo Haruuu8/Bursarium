@@ -3,20 +3,24 @@
   "nama": "PT Ancora Indonesia Resources Tbk",
   "sektor": "Basic Materials",
   "industri": "Specialty Chemicals",
-  "harga": 82.0,
-  "update": "2026-11-04 20:53",
+  "harga": 84.0,
+  "update": "2026-11-05 12:31",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0011654842921897154,
-    "roe": 0.12151771072185791,
+    "ps": 0.001193910738340684,
+    "roe": -0.3114460444283992,
     "eps": -2644.63718606756,
+    "eps_annualized": 0.0013333333333333333,
     "de": 4.782909484729428,
-    "margin_net": 0.02015890184232838,
+    "margin_net": -0.0375888182792994,
     "current_ratio": 1.4163260680127074,
-    "roa": 0.01542016795188267,
-    "bv": 8491.477844649771
+    "roa": -0.03952140214382406,
+    "bv": 8491.477844649771,
+    "pcf": 0.021396935079419473,
+    "div_yield": 1574.581057116551,
+    "payout_ratio": 99198606.59834272
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 194622832640,
-    "enterprise_value": 192321290240,
+    "market_cap": 199369736192,
+    "enterprise_value": 194694742016,
     "shares_outstanding": 2373449165
   },
   "akumulasi": {

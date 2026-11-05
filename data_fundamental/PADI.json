@@ -3,30 +3,27 @@
   "nama": "PT Minna Padi Investama Sekuritas Tbk",
   "sektor": "Financial Services",
   "industri": "Capital Markets",
-  "harga": 27.0,
-  "update": "2026-11-04 20:53",
+  "harga": 29.0,
+  "update": "2026-11-05 12:31",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.3688889581230135,
-    "ps": -0.3192077959248933,
+    "pb": null,
+    "ps": null,
     "roe": -0.004129114550888795,
-    "eps": -219.09715371282644,
+    "eps": null,
+    "eps_annualized": -0.13333333333333333,
     "de": 0.11657727488684805,
-    "margin_net": -0.9609321895652174,
+    "margin_net": null,
     "current_ratio": null,
     "roa": -0.003698010557582978,
-    "bv": 19.724024976446394
+    "bv": 19724024.976446394,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
-    "revenue": {
-      "2025-Q1": 150000000000000.0,
-      "2025-Q2": -148850000000000.0,
-      "2025-Q3": -1148850000000.0,
-      "2026-Q1": 150000000000000.0,
-      "2026-Q2": -148850000000000.0,
-      "2026-Q3": -1148850000000.0
-    },
+    "revenue": {},
     "eps": {
       "2025-Q1": -0.03,
       "2025-Q2": 0.3,
@@ -37,16 +34,16 @@
     },
     "net_income": {
       "2025-Q1": -392469702000000.0,
-      "2025-Q2": 395466200297000.0,
-      "2025-Q3": -2971757563711.0,
-      "2026-Q1": 7235916208.0,
-      "2026-Q2": -21492629153.0,
-      "2026-Q3": 13151640927.0
+      "2025-Q2": 3388967999000000.0,
+      "2025-Q3": 2.1744234992e+16,
+      "2026-Q1": 7235916208000000.0,
+      "2026-Q2": -2.1492629153e+16,
+      "2026-Q3": 1.3151640927e+16
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 366354792448,
+    "market_cap": 393492201472,
     "enterprise_value": 329872048128,
     "shares_outstanding": 13568695829
   },
@@ -76,7 +73,7 @@
     "saldo_laba": 1100000000.0
   },
   "laba_rugi": {
-    "pendapatan": 1150000000.0,
+    "pendapatan": null,
     "beban_pokok": null,
     "laba_kotor": null,
     "beban_operasi": null,

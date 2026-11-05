@@ -3,20 +3,24 @@
   "nama": "PT Ultrajaya Milk Industry & Trading Company Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Beverages - Non-Alcoholic",
-  "harga": 2070.0,
-  "update": "2026-11-04 21:08",
+  "harga": 2080.0,
+  "update": "2026-11-05 12:44",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 20.495049504950494,
-    "pb": 2.715458114517117,
-    "ps": 2.2783180191667185,
-    "roe": 0.1323374738048178,
-    "eps": 101.0,
+    "pe": null,
+    "pb": 2.728576269659712,
+    "ps": 2.2893243864090698,
+    "roe": 0.0002075528921587984,
+    "eps": 0.15821804964394137,
+    "eps_annualized": 202.0,
     "de": 0.13215403971940892,
-    "margin_net": 0.19093560960586425,
+    "margin_net": 0.00017414059587497876,
     "current_ratio": 5.556336615558523,
-    "roa": 0.1156931674878575,
-    "bv": 762.3023124288193
+    "roa": 0.00018144861636495063,
+    "bv": 762.3023124288193,
+    "pcf": 12.536483071784177,
+    "div_yield": 6.321375430447568,
+    "payout_ratio": 65.09139057094526
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 21524222312448,
-    "enterprise_value": 19188982743040,
+    "market_cap": 21628205400064,
+    "enterprise_value": 19084999655424,
     "shares_outstanding": 10398175200
   },
   "akumulasi": {

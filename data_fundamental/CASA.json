@@ -4,19 +4,23 @@
   "sektor": "Financial Services",
   "industri": "Insurance - Life",
   "harga": 1875.0,
-  "update": "2026-11-04 21:10",
+  "update": "2026-11-05 12:46",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": 12.473246733150225,
     "ps": 63602.38030577623,
-    "roe": 0.0037750793231918016,
+    "roe": 5.8859682790271346e-06,
     "eps": 0.0008847889213836303,
+    "eps_annualized": 1.1349552043707514,
     "de": 2.6191884763975724,
-    "margin_net": 0.035287698503292025,
+    "margin_net": 0.03001316344969557,
     "current_ratio": null,
-    "roa": 0.0009215144195514394,
-    "bv": 150.3217277837374
+    "roa": 1.4367922307815028e-06,
+    "bv": 150.3217277837374,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

@@ -1,22 +1,26 @@
 {
   "kode": "SMMT",
   "nama": "PT Golden Eagle Energy Tbk",
-  "sektor": null,
-  "industri": null,
-  "harga": 2630.0,
-  "update": "2026-11-04 21:01",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 2540.0,
+  "update": "2026-11-05 12:38",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 4.56260454918785,
-    "pb": 0.24906121114573215,
-    "ps": 0.07333592062390736,
-    "roe": 0.10548704154516024,
+    "pe": 4.406469792751764,
+    "pb": 0.2405382039202128,
+    "ps": 0.07082632638202459,
+    "roe": 0.05458750774052189,
     "eps": 576.4251474452554,
+    "eps_annualized": 0.0022278131386861315,
     "de": 2.907769255415711,
-    "margin_net": 0.06194178391584335,
+    "margin_net": 0.016073258121167052,
     "current_ratio": 0.7535760229362712,
-    "roa": 0.02696198906748739,
-    "bv": 10559.653138686132
+    "roa": 0.01395230888422674,
+    "bv": 10559.653138686132,
+    "pcf": 0.4304453376231243,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 9007750184960,
-    "enterprise_value": null,
+    "market_cap": 8699499773952,
+    "enterprise_value": 9007775350784,
     "shares_outstanding": 3425000000
   },
   "akumulasi": {
@@ -86,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 20210464,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 2108349.0,

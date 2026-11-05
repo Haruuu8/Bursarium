@@ -3,20 +3,24 @@
   "nama": "PT Megapower Makmur Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Independent Power Producers",
-  "harga": 67.0,
-  "update": "2026-11-04 21:14",
+  "harga": 69.0,
+  "update": "2026-11-05 12:49",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0021491888735463652,
-    "roe": -0.08200436693665716,
+    "ps": 0.002213343765294018,
+    "roe": -0.10526230842394893,
     "eps": null,
+    "eps_annualized": -0.0193,
     "de": 0.35520065009036084,
-    "margin_net": -0.9433745770311716,
+    "margin_net": -0.397412797423681,
     "current_ratio": 0.3643303005752433,
-    "roa": -0.06051086747279036,
-    "bv": 117698.0255276392
+    "roa": -0.07767285856668557,
+    "bv": 117698.0255276392,
+    "pcf": 7.982388961350463e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 54738804736,
-    "enterprise_value": 84201906176,
+    "market_cap": 56372797440,
+    "enterprise_value": 81749827584,
     "shares_outstanding": 816997053
   },
   "akumulasi": {

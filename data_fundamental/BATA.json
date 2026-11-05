@@ -4,19 +4,23 @@
   "sektor": "Consumer Cyclical",
   "industri": "Footwear & Accessories",
   "harga": 59.0,
-  "update": "2026-11-04 20:20",
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
     "ps": 0.0002605645231971066,
-    "roe": 0.2615962856476193,
+    "roe": 0.444304421829053,
     "eps": null,
+    "eps_annualized": -71.24010307692308,
     "de": -2.538920244538002,
-    "margin_net": -0.30394735192499167,
+    "margin_net": -0.26718179876563825,
     "current_ratio": 0.4675971623528703,
-    "roa": -0.17065318576476438,
-    "bv": -136164.2069230769
+    "roa": -0.2898434312505295,
+    "bv": -136164.2069230769,
+    "pcf": 2.5078372903803245e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {

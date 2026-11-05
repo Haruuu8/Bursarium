@@ -3,20 +3,24 @@
   "nama": "PT Abadi Nusantara Hijau Investama Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
-  "harga": 296.0,
-  "update": "2026-11-04 19:55",
+  "harga": 302.0,
+  "update": "2026-11-05 11:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 13.463674124179063,
-    "pb": 1.9444955297345485,
-    "ps": 23.70982570812485,
-    "roe": 0.036719736334571894,
+    "pe": 13.736586437507016,
+    "pb": 1.9839109796616001,
+    "ps": 2.4190430283289542e-05,
+    "roe": 36719.7363345719,
     "eps": 21.9850835121166,
+    "eps_annualized": 21.9850835121166,
     "de": 0.01422946248473949,
     "margin_net": 0.8954698380405646,
     "current_ratio": 11.87610293692505,
-    "roa": 0.036203273299672364,
-    "bv": 152.22457211840864
+    "roa": 36203.273299672364,
+    "bv": 152.22457211840864,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 10100394688512,
-    "enterprise_value": 9167898148864,
+    "market_cap": 10305132298240,
+    "enterprise_value": 8779347263488,
     "shares_outstanding": 34122954271
   },
   "akumulasi": {

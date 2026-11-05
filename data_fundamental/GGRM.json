@@ -4,19 +4,23 @@
   "sektor": "Consumer Defensive",
   "industri": "Tobacco",
   "harga": 15050.0,
-  "update": "2026-11-04 20:35",
+  "update": "2026-11-05 12:16",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.728506787330316,
+    "pe": 9.726506294123816,
     "pb": 0.4524286731935499,
     "ps": 0.33893069040301954,
-    "roe": 0.046499363530300264,
-    "eps": 1547.0,
+    "roe": 0.04651502394717831,
+    "eps": 1547.3181782745903,
+    "eps_annualized": 3094.0,
     "de": 0.21528579390943323,
-    "margin_net": 0.07227682737849352,
+    "margin_net": 0.03484608760370428,
     "current_ratio": 3.644119620193322,
-    "roa": 0.03826054341270702,
-    "bv": 33264.91199986695
+    "roa": 0.03827342909574294,
+    "bv": 33264.91199986695,
+    "pcf": 2.8769751732122675,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -44,7 +48,7 @@
   },
   "statistik": {
     "market_cap": 28957525147648,
-    "enterprise_value": 20661672083456,
+    "enterprise_value": 19892038270976,
     "shares_outstanding": 1924088000
   },
   "akumulasi": {

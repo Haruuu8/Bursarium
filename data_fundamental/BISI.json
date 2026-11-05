@@ -3,20 +3,24 @@
   "nama": "PT BISI International Tbk",
   "sektor": "Basic Materials",
   "industri": "Agricultural Inputs",
-  "harga": 535.0,
-  "update": "2026-11-04 20:23",
+  "harga": 515.0,
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw1",
   "rasio_kunci": {
-    "pe": 34.14167198468411,
-    "pb": 0.45339392898466874,
-    "ps": 1097.7458933702303,
-    "roe": 0.013278933594879954,
-    "eps": 15.67,
+    "pe": null,
+    "pb": 0.4364446232282325,
+    "ps": 1056.70866371153,
+    "roe": 3.892973043824125e-05,
+    "eps": 0.04593666666666667,
+    "eps_annualized": 62.68,
     "de": 0.06262147002458779,
-    "margin_net": 0.12143907120695045,
+    "margin_net": 0.09425567698775791,
     "current_ratio": 16.247531619993126,
-    "roa": 0.012484857724359987,
-    "bv": 1179.9893333333334
+    "roa": 3.660174533567447e-05,
+    "bv": 1179.9893333333334,
+    "pcf": 6.51720006658581e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -40,8 +44,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1604999970816,
-    "enterprise_value": 1395470368768,
+    "market_cap": 1545000058880,
+    "enterprise_value": 1289706668032,
     "shares_outstanding": 3000000000
   },
   "akumulasi": {

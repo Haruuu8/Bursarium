@@ -3,20 +3,24 @@
   "nama": "PT First Media Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 71.0,
-  "update": "2026-11-04 20:43",
+  "harga": 73.0,
+  "update": "2026-11-05 12:23",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 97704.51927093207,
-    "roe": -0.003470291708365766,
+    "ps": 100456.75925039494,
+    "roe": -3.6112743774258286e-06,
     "eps": -0.0031317302873493926,
+    "eps_annualized": -6.0,
     "de": 0.9341200563401164,
-    "margin_net": -14.094086021505376,
+    "margin_net": -4.309636650868878,
     "current_ratio": 0.19792611600318752,
-    "roa": -0.002577154895709526,
-    "bv": 867.2091788222798
+    "roa": -2.6818533494165888e-06,
+    "bv": 867.2091788222798,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 123693924352,
-    "enterprise_value": -966414827520,
+    "market_cap": 127178260480,
+    "enterprise_value": -954158874624,
     "shares_outstanding": 1742167907
   },
   "akumulasi": {

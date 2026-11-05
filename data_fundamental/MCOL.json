@@ -3,20 +3,24 @@
   "nama": "PT Prima Andalan Mandiri Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 3490.0,
-  "update": "2026-11-04 19:43",
+  "harga": 3500.0,
+  "update": "2026-11-05 11:33",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.017111288588414545,
-    "roe": 0.09545395521425375,
+    "ps": 0.017160318068610576,
+    "roe": 0.1170205940517783,
     "eps": null,
+    "eps_annualized": 0.021066666666666668,
     "de": 0.2775220293950591,
-    "margin_net": 0.1035913219557011,
+    "margin_net": 0.09495209650339176,
     "current_ratio": 2.582181434424172,
-    "roa": 0.07175565418583629,
-    "bv": 165495.03566245543
+    "roa": 0.08796795544567085,
+    "bv": 165495.03566245543,
+    "pcf": 0.08166317189559387,
+    "div_yield": 346.9167243898088,
+    "payout_ratio": 57636481.10906633
   },
   "quarterly": {
     "revenue": {
@@ -46,7 +50,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 12408903958528,
+    "market_cap": 12444460122112,
     "enterprise_value": 12408843141120,
     "shares_outstanding": 3555560000
   },

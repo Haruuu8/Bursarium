@@ -4,19 +4,23 @@
   "sektor": "Financial Services",
   "industri": "Credit Services",
   "harga": 605.0,
-  "update": "2026-11-04 20:20",
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": 0.6973814663683946,
     "ps": 26507.643496792058,
-    "roe": 0.002564122318650155,
+    "roe": 8.859214206120135e-06,
     "eps": 0.007685642439874267,
+    "eps_annualized": 4.44e-06,
     "de": 4.362626148724698,
-    "margin_net": 0.19284660766961653,
+    "margin_net": 0.33674094188430104,
     "current_ratio": null,
-    "roa": 0.0004781467601018462,
-    "bv": 867.5309413519835
+    "roa": 1.652029054501025e-06,
+    "bv": 867.5309413519835,
+    "pcf": 3.7176397714543355e-06,
+    "div_yield": 412.7721908945631,
+    "payout_ratio": 56244859344.86726
   },
   "quarterly": {
     "revenue": {

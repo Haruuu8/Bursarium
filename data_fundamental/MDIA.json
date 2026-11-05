@@ -3,20 +3,24 @@
   "nama": "PT Intermedia Capital Tbk",
   "sektor": "Communication Services",
   "industri": "Broadcasting",
-  "harga": 67.0,
-  "update": "2026-11-04 20:48",
+  "harga": 69.0,
+  "update": "2026-11-05 12:27",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.004529319447931031,
-    "roe": -0.035842116814514664,
+    "ps": 0.004664523013540913,
+    "roe": 0.016942232924855624,
     "eps": 388.33713934168503,
+    "eps_annualized": -1.643092167771946,
     "de": 2.208961942090079,
-    "margin_net": -0.11431861907853635,
+    "margin_net": 0.026252282948868607,
     "current_ratio": 0.8191612180369673,
-    "roa": -0.011102857371354214,
-    "bv": 22921.248991445696
+    "roa": 0.005248216691285298,
+    "bv": 22921.248991445696,
+    "pcf": 3.4719973125066616e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2627441000448,
-    "enterprise_value": 4330819944448,
+    "market_cap": 2705872125952,
+    "enterprise_value": 4134742261760,
     "shares_outstanding": 39215538400
   },
   "akumulasi": {

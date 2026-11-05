@@ -3,20 +3,24 @@
   "nama": "PT Bank Ina Perdana Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 3900.0,
-  "update": "2026-11-04 20:22",
+  "harga": 3760.0,
+  "update": "2026-11-05 12:05",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 183.9622641509434,
-    "pb": 8.052540738620358,
-    "ps": 11.879788453135568,
-    "roe": 0.021877979685382246,
+    "pe": 177.35849056603774,
+    "pb": 7.763475173644242,
+    "ps": 11.453334508664033,
+    "roe": 2.1877979685382248e-05,
     "eps": 21.2,
+    "eps_annualized": 21.2,
     "de": 10.59322870756583,
-    "margin_net": 0.06455248818495718,
+    "margin_net": 6.455248818495718e-05,
     "current_ratio": null,
-    "roa": 0.0018871343123856867,
-    "bv": 484.3191890101741
+    "roa": 1.8871343123856868e-06,
+    "bv": 484.3191890101741,
+    "pcf": 5.459768728648493,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 23925394243584,
-    "enterprise_value": 22503321763840,
+    "market_cap": 23066532904960,
+    "enterprise_value": 24589126074368,
     "shares_outstanding": 6134716665
   },
   "akumulasi": {

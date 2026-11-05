@@ -1,22 +1,26 @@
 {
   "kode": "SIDO",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 318.0,
-  "update": "2026-11-04 21:00",
+  "nama": "PT Industri Jamu dan Farmasi Sido Muncul Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 320.0,
+  "update": "2026-11-05 12:37",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 15.114068441064639,
-    "pb": 2.859330694265786,
-    "ps": 2753.510460546443,
-    "roe": 0.1891166108825338,
-    "eps": 21.04,
+    "pe": null,
+    "pb": 2.8773139061794075,
+    "ps": 2770.8281363989363,
+    "roe": 0.0002557325489647428,
+    "eps": 0.028441254008805785,
+    "eps_annualized": 28.05333333333333,
     "de": 0.1143155719138779,
-    "margin_net": 0.24772223649367267,
+    "margin_net": 0.24626820888146284,
     "current_ratio": 6.377625336867191,
-    "roa": 0.16971516215649426,
-    "bv": 111.214838017068
+    "roa": 0.0002294969797402042,
+    "bv": 111.214838017068,
+    "pcf": 7.1170000045556225,
+    "div_yield": 4687.5,
+    "payout_ratio": 53469.58174904944
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
+    "market_cap": 9419263836160,
+    "enterprise_value": 8483819749376,
     "shares_outstanding": 29435200000
   },
   "akumulasi": {
@@ -89,7 +93,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 1323487985664,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 10946.0,

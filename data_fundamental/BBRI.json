@@ -3,20 +3,24 @@
   "nama": "PT Bank Rakyat Indonesia (Persero) Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 2690.0,
-  "update": "2026-11-04 20:21",
+  "harga": 2720.0,
+  "update": "2026-11-05 12:04",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 6.954723283279887,
-    "pb": 1.2523858182018743,
-    "ps": 1.8906471379023713,
-    "roe": 0.09587815741896218,
+    "pe": 7.032285252981893,
+    "pb": 1.26635294628591,
+    "ps": 1.911732421968197,
+    "roe": 0.18007701632253037,
     "eps": 386.7874954086427,
+    "eps_annualized": 0.00041,
     "de": 6.286299939618826,
-    "margin_net": 0.2859934597719602,
+    "margin_net": 0.27185080712668286,
     "current_ratio": null,
-    "roa": 0.013120921905379657,
-    "bv": 2147.9004001036956
+    "roa": 0.0246435322885586,
+    "bv": 2147.9004001036956,
+    "pcf": 27.889972967491396,
+    "div_yield": 12.816392448611087,
+    "payout_ratio": 85025823.07371257
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 405340457795584,
-    "enterprise_value": 623312967303168,
+    "market_cap": 409860977983488,
+    "enterprise_value": 627833487491072,
     "shares_outstanding": 149878079535
   },
   "akumulasi": {

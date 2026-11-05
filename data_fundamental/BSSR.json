@@ -3,20 +3,24 @@
   "nama": "PT Baramulti Suksessarana Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 5000.0,
-  "update": "2026-11-04 20:15",
+  "harga": 4990.0,
+  "update": "2026-11-05 11:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.018096292443500077,
-    "roe": 0.23658433056628178,
+    "ps": 0.018060099858613076,
+    "roe": 0.3944407712815172,
     "eps": null,
+    "eps_annualized": 0.0482,
     "de": 0.6239366491176815,
-    "margin_net": 0.17452397158330976,
+    "margin_net": 0.1453239470807281,
     "current_ratio": 1.8573179578643826,
-    "roa": 0.1456852166967108,
-    "bv": 101797.18861073954
+    "roa": 0.24289093491788266,
+    "bv": 101797.18861073954,
+    "pcf": 0.08874598586973946,
+    "div_yield": 153.18379162299374,
+    "payout_ratio": 15858653.946031924
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 13082499743744,
+    "market_cap": 13056334626816,
     "enterprise_value": 13082394886144,
     "shares_outstanding": 2616500000
   },

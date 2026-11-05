@@ -3,20 +3,24 @@
   "nama": "PT FKS Multi Agro Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Food Distribution",
-  "harga": 442.0,
-  "update": "2026-11-04 20:34",
+  "harga": 446.0,
+  "update": "2026-11-05 12:15",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.001824491293649403,
-    "roe": 0.0500328207938619,
+    "ps": 0.0018410025270760946,
+    "roe": 0.08747753683148998,
     "eps": 3095.7279166666667,
+    "eps_annualized": 0.00354120625,
     "de": 1.8891794414171275,
-    "margin_net": 0.014850991732176544,
+    "margin_net": 0.012778571564402123,
     "current_ratio": 1.372490386643252,
-    "roa": 0.017042622458981575,
-    "bv": 35388.832708333335
+    "roa": 0.029797373208340847,
+    "bv": 35388.832708333335,
+    "pcf": null,
+    "div_yield": 93.96225710014947,
+    "payout_ratio": 11834150.204232432
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2121599942656,
-    "enterprise_value": 2160085041152,
+    "market_cap": 2140800024576,
+    "enterprise_value": 2121685139456,
     "shares_outstanding": 4800000000
   },
   "akumulasi": {

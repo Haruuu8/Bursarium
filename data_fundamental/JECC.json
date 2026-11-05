@@ -3,28 +3,32 @@
   "nama": "PT Jembo Cable Company Tbk",
   "sektor": "Industrials",
   "industri": "Electrical Equipment & Parts",
-  "harga": 610.0,
-  "update": "2026-11-04 20:41",
+  "harga": 620.0,
+  "update": "2026-11-05 12:21",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 22.88072018004501,
+    "pe": null,
     "pb": null,
-    "ps": 0.2547573910924235,
-    "roe": 0.022222812571471986,
-    "eps": 26.66,
+    "ps": 0.0001242269877162766,
+    "roe": 0.08669313240867177,
+    "eps": null,
+    "eps_annualized": 53.32,
     "de": 1.9987232646428759,
-    "margin_net": 0.01114728923165403,
+    "margin_net": 0.020840617835163194,
     "current_ratio": 1.2391533259729874,
-    "roa": 0.007410736094667065,
-    "bv": 1199780.0317460317
+    "roa": 0.02890992863457067,
+    "bv": 1199780.0317460317,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q1": 1027358957.0,
-      "2025-Q2": 863233648.0,
-      "2025-Q3": 1101631577.0,
+      "2025-Q1": 1027358957000000.0,
+      "2025-Q2": 863233648000000.0,
+      "2025-Q3": 1101631577000000.0,
       "2026-Q1": 856562920000000.0,
-      "2026-Q2": -854754692046000.0
+      "2026-Q2": 951665034000000.0
     },
     "eps": {
       "2025-Q1": 0.04,
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 461159989248,
-    "enterprise_value": 1687009099776,
+    "market_cap": 468719992832,
+    "enterprise_value": 1679449128960,
     "shares_outstanding": 756000000
   },
   "akumulasi": {

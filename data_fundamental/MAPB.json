@@ -3,20 +3,24 @@
   "nama": "PT Map Boga Adiperkasa Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 1005.0,
-  "update": "2026-11-04 21:14",
+  "harga": 1030.0,
+  "update": "2026-11-05 12:49",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.9358241674874224,
-    "ps": 705.7115669517513,
-    "roe": -0.1270513853632016,
+    "pb": 1.9839789975244229,
+    "ps": 723.2665810550286,
+    "roe": -0.00015003012798950723,
     "eps": -0.0778894494457924,
+    "eps_annualized": -88.0,
     "de": 1.0522629870994127,
-    "margin_net": -0.06136348672484316,
+    "margin_net": -0.054694015340695894,
     "current_ratio": 0.6371778059587669,
-    "roa": -0.06190779960372908,
-    "bv": 519.15872158184
+    "roa": -7.310455585780942e-05,
+    "bv": 519.15872158184,
+    "pcf": 6.191795149200518e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -46,8 +50,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2399862521856,
-    "enterprise_value": 2545031839744,
+    "market_cap": 2459560574976,
+    "enterprise_value": 2521152618496,
     "shares_outstanding": 2387922900
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Bank SMBC Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 2440.0,
-  "update": "2026-11-04 20:15",
+  "harga": 2420.0,
+  "update": "2026-11-05 11:58",
   "periode_terbaru": "2025-audit",
   "rasio_kunci": {
-    "pe": 51.91489361702128,
-    "pb": 0.5473982092448381,
-    "ps": 1.0718356150782582,
-    "roe": 0.010653674540660291,
+    "pe": 51.48936170212766,
+    "pb": 0.5429113386772575,
+    "ps": 1.063050077249748,
+    "roe": 1.065367454066029e-05,
     "eps": 47.0,
+    "eps_annualized": 47.0,
     "de": 3.8450624194900604,
-    "margin_net": 0.020860477091960605,
+    "margin_net": 2.0860477091960607e-05,
     "current_ratio": null,
-    "roa": 0.0020563789849722897,
-    "bv": 4457.44972999838
+    "roa": 2.0563789849722895e-06,
+    "bv": 4457.44972999838,
+    "pcf": 5.2769240794914465,
+    "div_yield": 3148.6397476881352,
+    "payout_ratio": 162121.45083841035
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 25976106909696,
-    "enterprise_value": 65722784940032,
+    "market_cap": 25763187261440,
+    "enterprise_value": 65935704588288,
     "shares_outstanding": 10645945748
   },
   "akumulasi": {

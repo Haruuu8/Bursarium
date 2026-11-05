@@ -3,20 +3,24 @@
   "nama": "PT Widiant Jaya Krenindo Tbk",
   "sektor": "Industrials",
   "industri": "Rental & Leasing Services",
-  "harga": 20.0,
-  "update": "2026-11-04 19:59",
+  "harga": 19.0,
+  "update": "2026-11-05 11:46",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.7274890543837512,
-    "ps": 2.6714615264763792,
+    "pb": null,
+    "ps": 2.5378884501525605e-06,
     "roe": -0.05223948989454877,
-    "eps": -2.87231757397644,
+    "eps": null,
+    "eps_annualized": -2.88,
     "de": 0.040081027263087175,
     "margin_net": -0.3836642945350015,
     "current_ratio": 15.258151564934957,
     "roa": -0.05022636556693468,
-    "bv": 27.491822563491077
+    "bv": 27491822.563491076,
+    "pcf": 1.5419071211541864e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -25,8 +29,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 32000634880,
-    "enterprise_value": 26704861184,
+    "market_cap": 30400602112,
+    "enterprise_value": 28304893952,
     "shares_outstanding": 1600031683
   },
   "akumulasi": {

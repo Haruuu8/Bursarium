@@ -3,20 +3,24 @@
   "nama": "PT Mitra Pinasthika Mustika Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto & Truck Dealerships",
-  "harga": 1050.0,
-  "update": "2026-11-04 20:51",
+  "harga": 1080.0,
+  "update": "2026-11-05 12:29",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 13.94653583918811,
-    "pb": 0.8272167138183758,
-    "ps": 0.30313063188508604,
-    "roe": 0.0603547865975735,
-    "eps": 75.28751312204889,
+    "pe": null,
+    "pb": 0.8508514770703295,
+    "ps": 0.31179150708180275,
+    "roe": 0.000105839764186964,
+    "eps": 0.13434418156680564,
+    "eps_annualized": 150.57502624409778,
     "de": 0.4134438148568033,
-    "margin_net": 0.04354233260737291,
+    "margin_net": 3.878460633183859e-05,
     "current_ratio": 1.6088129931742265,
-    "roa": 0.04270023830805475,
-    "bv": 1269.3167128517891
+    "roa": 7.488027724106606e-05,
+    "bv": 1269.3167128517891,
+    "pcf": 5.830801060268172e-06,
+    "div_yield": 15744.223119863364,
+    "payout_ratio": 112925.50560069349
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4604935798784,
-    "enterprise_value": 2187273830400,
+    "market_cap": 4736505348096,
+    "enterprise_value": 2231143497728,
     "shares_outstanding": 4385653276
   },
   "akumulasi": {

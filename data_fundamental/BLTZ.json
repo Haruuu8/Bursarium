@@ -3,20 +3,24 @@
   "nama": "PT Graha Layar Prima Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 3020.0,
-  "update": "2026-11-04 20:24",
+  "harga": 2900.0,
+  "update": "2026-11-05 12:06",
   "periode_terbaru": "2026-tw1",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.001453011506011383,
-    "roe": -0.0584644129618367,
+    "ps": 0.0013952759494811292,
+    "roe": 0.009022942614958345,
     "eps": 7027.375059058325,
+    "eps_annualized": -0.00112,
     "de": 3.1576172739841573,
-    "margin_net": -0.11630152382853082,
+    "margin_net": 0.0033810784165129695,
     "current_ratio": null,
-    "roa": -0.014061635509900897,
-    "bv": 778834.0632254778
+    "roa": 0.002170163418233874,
+    "bv": 778834.0632254778,
+    "pcf": 6.8338182391027945e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -40,8 +44,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2639290171392,
-    "enterprise_value": 3818902519808,
+    "market_cap": 2534417629184,
+    "enterprise_value": 3626636410880,
     "shares_outstanding": 546709542
   },
   "akumulasi": {

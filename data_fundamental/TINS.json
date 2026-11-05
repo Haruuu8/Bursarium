@@ -3,20 +3,24 @@
   "nama": "PT TIMAH Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 3360.0,
-  "update": "2026-11-04 21:05",
+  "harga": 3500.0,
+  "update": "2026-11-05 12:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 9.23076923076923,
-    "pb": 2.3726102339421256,
-    "ps": 1.6761664868722979,
-    "roe": 0.25738317494726576,
-    "eps": 364.0,
+    "pe": 9.600577092268955,
+    "pb": 2.4714689936897143,
+    "ps": 1.7460067571586437,
+    "roe": 0.2574292118001855,
+    "eps": 364.5614181691683,
+    "eps_annualized": 728.0,
     "de": 0.5595179357146487,
-    "margin_net": 0.2605325706261374,
+    "margin_net": 0.18186477129220163,
     "current_ratio": 2.6169989727791956,
-    "roa": 0.1650363919531477,
-    "bv": 1416.1618085990096
+    "roa": 0.1650659111946611,
+    "bv": 1416.1618085990096,
+    "pcf": 6.829779531901033,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 25024450789376,
-    "enterprise_value": 21975619600384,
+    "market_cap": 26067135889408,
+    "enterprise_value": 21752186929152,
     "shares_outstanding": 7447753453
   },
   "akumulasi": {

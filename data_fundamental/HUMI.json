@@ -3,20 +3,24 @@
   "nama": "PT Humpuss Maritim Internasional Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 73.0,
-  "update": "2026-11-04 20:01",
+  "harga": 74.0,
+  "update": "2026-11-05 11:47",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.009509947735611006,
+    "ps": 0.00964022099226321,
     "roe": 0.015425866650364451,
     "eps": 260.99555009214725,
+    "eps_annualized": 0.00028,
     "de": 1.1454153755674576,
     "margin_net": 0.03400074028223787,
     "current_ratio": 1.109442705904996,
     "roa": 0.0067710446114368624,
-    "bv": 8459.672185937798
+    "bv": 8459.672185937798,
+    "pcf": 0.0382042999943296,
+    "div_yield": 83.15247404055415,
+    "payout_ratio": 21976010.99643217
   },
   "quarterly": {
     "revenue": {
@@ -37,8 +41,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1318655361024,
-    "enterprise_value": 1372960980992,
+    "market_cap": 1336719048704,
+    "enterprise_value": 1318769655808,
     "shares_outstanding": 18063771579
   },
   "akumulasi": {

@@ -3,20 +3,24 @@
   "nama": "PT Indoritel Makmur Internasional Tbk.",
   "sektor": "Communication Services",
   "industri": "Telecom Services",
-  "harga": 9725.0,
-  "update": "2026-11-04 20:31",
+  "harga": 9950.0,
+  "update": "2026-11-05 12:12",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 8.835563264804149,
-    "ps": 80461.35108460553,
-    "roe": 0.025529533994711705,
+    "pb": 9.039985036997562,
+    "ps": 82322.92476008483,
+    "roe": 6.613467727058438e-05,
     "eps": 0.07279216018048505,
+    "eps_annualized": 5.62e-05,
     "de": 0.5248228267776252,
-    "margin_net": 0.45715678515306885,
+    "margin_net": 0.6022576407700617,
     "current_ratio": 0.972803661409778,
-    "roa": 0.016544143819397887,
-    "bv": 1100.6655386350817
+    "roa": 4.2857876388995486e-05,
+    "bv": 1100.6655386350817,
+    "pcf": 0.00032455351465129624,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 137939392659456,
+    "market_cap": 141130796630016,
     "enterprise_value": 145477488082944,
     "shares_outstanding": 14184000000
   },

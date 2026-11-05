@@ -3,20 +3,24 @@
   "nama": "PT Delta Giri Wacana Tbk",
   "sektor": "Basic Materials",
   "industri": "Agricultural Inputs",
-  "harga": 258.0,
-  "update": "2026-11-04 20:10",
+  "harga": 256.0,
+  "update": "2026-11-05 11:55",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.3473202014525678,
-    "ps": 0.6349655303716975,
-    "roe": 0.08852744848941646,
+    "pb": 1.3368758588056486,
+    "ps": 0.6300433169579633,
+    "roe": 0.0001572647478424991,
     "eps": 0.030114819698851804,
+    "eps_annualized": 0.000339,
     "de": 2.927038695192464,
-    "margin_net": 0.041753427043612505,
+    "margin_net": 7.411578473693596e-05,
     "current_ratio": 1.1216818914732418,
-    "roa": 0.022391173136789615,
-    "bv": 191.49122808508773
+    "roa": 3.977684048666486e-05,
+    "bv": 191.49122808508773,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1517647167488,
-    "enterprise_value": 3013324832768,
+    "market_cap": 1505882406912,
+    "enterprise_value": 3036855402496,
     "shares_outstanding": 5882353000
   },
   "akumulasi": {

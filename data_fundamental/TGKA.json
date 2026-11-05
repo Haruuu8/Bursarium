@@ -3,20 +3,24 @@
   "nama": "PT Tigaraksa Satria Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Food Distribution",
-  "harga": 4840.0,
-  "update": "2026-11-04 21:05",
+  "harga": 4830.0,
+  "update": "2026-11-05 12:41",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 22.201834862385322,
-    "pb": 1.961304659918839,
-    "ps": 0.3314976323914178,
-    "roe": 0.08849751566880172,
-    "eps": 218.0,
+    "pe": null,
+    "pb": 1.957252377563635,
+    "ps": 0.33081271992779915,
+    "roe": 0.00015726244437718774,
+    "eps": 0.3880836294026273,
+    "eps_annualized": 436.0,
     "de": 1.162479054586461,
-    "margin_net": 0.02823396969284514,
+    "margin_net": 2.6580331470421355e-05,
     "current_ratio": 1.8778336289279867,
-    "roa": 0.04018704227383782,
-    "bv": 2467.745118292986
+    "roa": 7.141344536636625e-05,
+    "bv": 2467.745118292986,
+    "pcf": 6.732816091187764e-06,
+    "div_yield": 5900.611340764574,
+    "payout_ratio": 65366.86416489196
   },
   "quarterly": {
     "revenue": {
@@ -43,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4445505060864,
+    "market_cap": 4436320059392,
     "enterprise_value": 3728913989632,
     "shares_outstanding": 918492750
   },

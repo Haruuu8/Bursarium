@@ -3,25 +3,29 @@
   "nama": "PT Era Mandiri Cemerlang Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 53.0,
-  "update": "2026-11-04 21:29",
+  "harga": 54.0,
+  "update": "2026-11-05 13:03",
   "periode_terbaru": "2026-tw1",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5948924171627271,
-    "ps": 0.3863878680375122,
+    "pb": null,
+    "ps": 3.936782051702954e-07,
     "roe": -0.010066590054021746,
     "eps": null,
+    "eps_annualized": -3.6,
     "de": 0.7371898964357206,
     "margin_net": -0.02615335584832053,
     "current_ratio": 2.0450923555893654,
     "roa": -0.005794755124166835,
-    "bv": 89.09173906229563
+    "bv": 89091739.06229563,
+    "pcf": 9.9928473390769e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
-      "2025-Q3": 28916574774.0,
-      "2026-Q1": 28576627693.0
+      "2025-Q3": 2.8916574774e+16,
+      "2026-Q1": 2.8576627693e+16
     },
     "eps": {
       "2025-Q3": 0.14,
@@ -34,8 +38,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 44166647808,
-    "enterprise_value": 83008864256,
+    "market_cap": 44999983104,
+    "enterprise_value": 80508862464,
     "shares_outstanding": 833333000
   },
   "akumulasi": {

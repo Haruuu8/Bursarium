@@ -1,22 +1,26 @@
 {
   "kode": "SMGR",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 1340.0,
-  "update": "2026-11-04 21:02",
+  "nama": "PT Semen Indonesia (Persero) Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 1370.0,
+  "update": "2026-11-05 12:38",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.20661816715011566,
-    "ps": 0.2556877371801651,
-    "roe": 0.005225324013080708,
-    "eps": 0.044615994792577475,
+    "pb": 0.21015973588667353,
+    "ps": 0.26007039001659543,
+    "roe": 6.879459007180196e-06,
+    "eps": 0.044846168082924916,
+    "eps_annualized": 6.8e-06,
     "de": 0.6121796411160952,
-    "margin_net": 0.012932705916694827,
+    "margin_net": 8.513255783997137e-06,
     "current_ratio": 1.0543517895005419,
-    "roa": 0.0030588713601442984,
-    "bv": 6485.392927846664
+    "roa": 4.027191438783837e-06,
+    "bv": 6518.850978851431,
+    "pcf": 1.8569670245448155,
+    "div_yield": 2078.8785692985803,
+    "payout_ratio": 418832888226.33167
   },
   "quarterly": {
     "revenue": {
@@ -43,9 +47,9 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
-    "shares_outstanding": 6735544089
+    "market_cap": 9227695292416,
+    "enterprise_value": 17004419350528,
+    "shares_outstanding": 6700973859
   },
   "akumulasi": {
     "score": 3.4,
@@ -86,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 4943724937216,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 533370.0,

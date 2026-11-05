@@ -3,20 +3,24 @@
   "nama": "PT Bank Sinarmas Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 760.0,
-  "update": "2026-11-04 20:26",
+  "harga": 755.0,
+  "update": "2026-11-05 12:08",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 120.25316455696202,
-    "pb": 1.7980877590723174,
-    "ps": 6196.989498849046,
-    "roe": 0.014953221682963428,
-    "eps": 6.32,
+    "pe": null,
+    "pb": 1.7862582343415785,
+    "ps": 6156.21983109346,
+    "roe": 3.944054416805515e-05,
+    "eps": 0.016670384088030683,
+    "eps_annualized": 12.64,
     "de": 5.673593485535111,
-    "margin_net": 0.10656427447492646,
+    "margin_net": 0.13592920412540313,
     "current_ratio": null,
-    "roa": 0.0020456079363520645,
-    "bv": 422.67124959023397
+    "roa": 5.395485459574127e-06,
+    "bv": 422.67124959023397,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -43,8 +47,8 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 14984283160576,
-    "enterprise_value": 11846828425216,
+    "market_cap": 14885702336512,
+    "enterprise_value": 11748247601152,
     "shares_outstanding": 19716162403
   },
   "akumulasi": {
