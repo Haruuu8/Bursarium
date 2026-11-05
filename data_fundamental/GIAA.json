@@ -1,0 +1,93 @@
+{
+  "kode": "GIAA",
+  "nama": "PT. Garuda Indonesia (Persero) Tbk",
+  "sektor": "Industrials",
+  "industri": "Airlines",
+  "harga": 38.0,
+  "update": "2026-11-04 20:35",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.5434191245899979,
+    "roe": 0.7469135802469136,
+    "eps": -6490.863149956328,
+    "de": -45.84567901234568,
+    "margin_net": -0.06740947075208914,
+    "current_ratio": 0.7696108709079679,
+    "roa": -0.01640677966101695,
+    "bv": -7.317044811399491e-06
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 723563972000000.0,
+      "2025-Q2": -722015770534000.0,
+      "2025-Q3": 2290378534000.0,
+      "2026-Q1": 762000.0,
+      "2026-Q2": 1033000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": -0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": -0.0
+    },
+    "net_income": {
+      "2025-Q1": -76486250000000.0,
+      "2025-Q2": -67222017000000.0,
+      "2026-Q1": -46000.0,
+      "2026-Q2": -75000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 12976904994816,
+    "enterprise_value": 15472811573248,
+    "shares_outstanding": 22140085810
+  },
+  "akumulasi": {
+    "score": 2.6,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1279,
+    "vol_trend": 0.254,
+    "price_chg_20d": -26.92
+  },
+  "neraca": {
+    "aset": 7375.0,
+    "aset_lancar": 1246.0,
+    "kas": 624.0,
+    "piutang_usaha": 208.0,
+    "persediaan": 132.0,
+    "aset_tetap": 172.0,
+    "liabilitas": 7427.0,
+    "liabilitas_jangka_pendek": 1619.0,
+    "liabilitas_jangka_panjang": 5808.0,
+    "utang_usaha": 208.0,
+    "utang_bank": 1.0,
+    "ekuitas": -162.0,
+    "ekuitas_induk": -162.0,
+    "modal_saham": null,
+    "saldo_laba": 6.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1795.0,
+    "beban_pokok": null,
+    "laba_kotor": 1795.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -130.0,
+    "beban_pajak": 17.0,
+    "laba_bersih": -121.0,
+    "laba_induk": -121.0,
+    "eps_basic": -0.0003,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 486117248,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 172.0,
+    "dividen_dibayar": null
+  }
+}

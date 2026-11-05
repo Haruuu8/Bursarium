@@ -1,0 +1,95 @@
+{
+  "kode": "ERTX",
+  "nama": "PT Eratex Djaja Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 116.0,
+  "update": "2026-11-04 20:33",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0013995794570965555,
+    "roe": 0.04477517484410624,
+    "eps": 438.3053268203927,
+    "de": 1.6876510402255127,
+    "margin_net": 0.02482422931717326,
+    "current_ratio": 1.3578950242653671,
+    "roa": 0.016659375564901994,
+    "bv": 23127.210821629993
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 33830252000000.0,
+      "2025-Q2": 28687863000000.0,
+      "2025-Q3": 24276095000000.0,
+      "2026-Q1": 28306544000000.0,
+      "2026-Q2": 25360540000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 1215291000000.0,
+      "2025-Q2": 227228000000.0,
+      "2025-Q3": 335337000000.0,
+      "2026-Q1": 812624000.0,
+      "2026-Q2": 519620000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 149238611968,
+    "enterprise_value": 150551134208,
+    "shares_outstanding": 1286539792
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.246,
+    "vol_trend": 0.684,
+    "price_chg_20d": -30.12
+  },
+  "neraca": {
+    "aset": 79969624.0,
+    "aset_lancar": 42867479.0,
+    "kas": 8647358.0,
+    "piutang_usaha": 15304821.0,
+    "persediaan": 16187384.0,
+    "aset_tetap": 36282639.0,
+    "liabilitas": 50214499.0,
+    "liabilitas_jangka_pendek": 31569067.0,
+    "liabilitas_jangka_panjang": 18645432.0,
+    "utang_usaha": 15304821.0,
+    "utang_bank": 23276387.0,
+    "ekuitas": 29754077.0,
+    "ekuitas_induk": 29754077.0,
+    "modal_saham": null,
+    "saldo_laba": 2418541.0
+  },
+  "laba_rugi": {
+    "pendapatan": 53667084.0,
+    "beban_pokok": 48676944.0,
+    "laba_kotor": 4990140.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1689765.0,
+    "beban_pajak": -357521.0,
+    "laba_bersih": 1332244.0,
+    "laba_induk": 1332244.0,
+    "eps_basic": 0.001,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 12454008,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2676300.0,
+    "dividen_dibayar": null
+  }
+}
