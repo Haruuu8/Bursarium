@@ -1065,23 +1065,26 @@ with tab6:
                         )
 
                 # ============================================================
-                # TAMBAHAN: TOP 5 SAHAM PROFIT TERBESAR (DIPERBAIKI)
+                # TAMBAHAN: TOP 5 SAHAM PROFIT TERBESAR (DIJUMLAHKAN)
                 # ============================================================
                 profit_df = eksekusi[eksekusi["P/L %"] > 0].copy()
-                st.markdown(section_title("Top 5 Saham Kontributor Profit", "Berdasarkan persentase keuntungan terbesar"), unsafe_allow_html=True)
+                st.markdown(section_title("Top 5 Saham Kontributor Profit", "Berdasarkan total akumulasi keuntungan per saham"), unsafe_allow_html=True)
                 
                 if not profit_df.empty:
-                    top_profits = profit_df.sort_values("P/L %", ascending=False).head(5)
+                    # Group by Kode dan jumlahkan P/L-nya, hitung jumlah trade
+                    agg_df = profit_df.groupby("Kode").agg(
+                        total_pl=("P/L %", "sum"),
+                        n_trades=("P/L %", "count")
+                    ).reset_index()
+                    
+                    # Urutkan berdasarkan total profit terbesar
+                    top_aggs = agg_df.sort_values("total_pl", ascending=False).head(5)
 
-                    for i, (_, row) in enumerate(top_profits.iterrows()):
+                    for i, (_, row) in enumerate(top_aggs.iterrows()):
                         kode = str(row.get("Kode", "-"))
                         nama = nama_map.get(kode, kode)
-                        pl_pct = float(row.get("P/L %", 0))
-                        
-                        # Hindari nested f-string (penyebab error)
-                        tgl = pd.to_datetime(row.get("Tanggal", ""), errors="coerce")
-                        tgl_str = tgl.strftime("%d %b") if pd.notna(tgl) else ""
-                        tgl_extra = f"· {tgl_str}" if tgl_str else ""
+                        total_pl = float(row.get("total_pl", 0))
+                        n_trades = int(row.get("n_trades", 0))
 
                         st.markdown(
                             f'<div style="background:#171717; border-radius:8px; padding:16px 20px; border:1px solid #27272a; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">'
@@ -1089,11 +1092,11 @@ with tab6:
                             f'<div style="font-size:18px; font-weight:700; color:#a3a3a3; width:25px;">#{i+1}</div>'
                             f'<div>'
                             f'<div style="font-size:16px; font-weight:700; color:#ffffff;">{kode}</div>'
-                            f'<div style="font-size:12px; color:#a3a3a3;">{nama} {tgl_extra}</div>'
+                            f'<div style="font-size:12px; color:#a3a3a3;">{nama} · {n_trades}x Trade</div>'
                             f'</div>'
                             f'</div>'
                             f'<div style="text-align:right;">'
-                            f'<div style="font-size:18px; font-weight:700; color:#ffffff;">+{pl_pct:.2f}%</div>'
+                            f'<div style="font-size:18px; font-weight:700; color:#ffffff;">+{total_pl:.2f}%</div>'
                             f'</div>'
                             f'</div>',
                             unsafe_allow_html=True
