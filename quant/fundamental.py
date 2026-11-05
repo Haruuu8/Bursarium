@@ -1,20 +1,26 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (LENGKAP + AUTO SCALE FIX + DIVIDEND)
+quant/fundamental.py — Scraper Fundamental IDX (FINAL: Anti-403, Gross Revenue, Stockbit Accurate)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
+from urllib.parse import quote
 from datetime import datetime
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import pandas as pd
 import numpy as np
 import tls_client
-from curl_cffi import requests as curl_requests
 
 try:
     import yfinance as yf
     HAS_YF = True
 except ImportError:
     HAS_YF = False
+
+try:
+    from curl_cffi import requests as curl_requests
+    HAS_CFFI = True
+except ImportError:
+    HAS_CFFI = False
 
 BASE = "https://www.idx.co.id"
 API_REPORT = f"{BASE}/primary/ListedCompany/GetFinancialReport"
@@ -43,9 +49,10 @@ HEADERS = {
     "X-Requested-With": "XMLHttpRequest",
 }
 DL_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Referer": f"{BASE}/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan",
-    "Accept": "*/*",
-    "Accept-Language": "id-ID,id;q=0.9,en;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
 SNAPSHOT_CANDIDATES = [(2026, "tw3"), (2026, "tw2"), (2026, "tw1"), (2025, "audit")]
@@ -72,13 +79,12 @@ FIELDS = {
     "modal_saham": ["modal saham", "share capital"],
     "saldo_laba": ["saldo laba", "retained earnings"],
     "pendapatan": [
-        "jumlah pendapatan", "total pendapatan", "pendapatan bunga", "pendapatan syariah", 
-        "pendapatan premi", "premi bruto", "premi neto", "pendapatan premi bruto",
+        "pendapatan bunga", "pendapatan bunga dan syariah", 
+        "penjualan dan pendapatan usaha", "pendapatan usaha", 
+        "pendapatan premi", "premi bruto", "pendapatan premi bruto",
         "pendapatan pembiayaan", "pendapatan sewa", "pendapatan jasa", "pendapatan kontrak", 
-        "revenue", "sales", "total revenue", "pendapatan usaha", "penjualan neto", 
-        "penjualan bersih", "penjualan", "total penjualan", "pendapatan operasional", 
-        "pendapatan operasi", "pendapatan bruto", "pendapatan neto",
-        "pendapatan bunga bersih", "jumlah pendapatan bunga dan syariah", "pendapatan bunga dan syariah",
+        "revenue", "sales", "total revenue", "penjualan", 
+        "total penjualan", "pendapatan operasional", "pendapatan operasi", "pendapatan bruto"
     ],
     "beban_pokok": ["beban pokok pendapatan", "beban pokok penjualan", "harga pokok penjualan", "hpp", "cost of goods sold", "cost of revenue"],
     "laba_kotor": ["laba kotor", "gross profit", "laba bruto"], 
@@ -143,7 +149,9 @@ def _extract_cookies():
 def _normalize_url(url):
     if not url: return url
     if not url.startswith("http"): url = f"{BASE}{url}"
-    return re.sub(r"([^:])//+", r"\1/", url)
+    # Hilangkan double slash setelah domain (kecuali http://)
+    url = re.sub(r'(?<!http:)(?<!https:)//+', '/', url)
+    return url
 
 def get_report_list(year, periode, verbose=False):
     cache_file = REPORT_LIST_CACHE_DIR / f"{year}_{periode}.json"
@@ -188,31 +196,48 @@ def _xlsx_cache_path(url):
 
 def download_xlsx(url, verbose=False):
     if not url: return None
+    
+    # Normalisasi URL (hapus // ganda dan encode spasi)
     url = _normalize_url(url)
+    url = quote(url, safe=':/?=&%')
+    
     cp = _xlsx_cache_path(url)
     if cp.exists():
         try:
             content = cp.read_bytes()
-            if content[:2] == b"PK" and zipfile.is_zipfile(io.BytesIO(content)): return content
+            if content[:2] == b"PK": return content
         except Exception: pass
-    cookies = _extract_cookies()
-    if verbose: print(f"    [dl] {url[:80]}...")
-    for attempt in range(3):
+
+    if verbose: print(f"    [dl] Mencoba download: {url[:80]}...")
+    
+    # METODE 1: Curl CFFI (Safari biasanya paling ampuh untuk IDX)
+    if HAS_CFFI:
         try:
-            r = curl_requests.get(url, headers=DL_HEADERS, cookies=cookies, impersonate="firefox", timeout=90)
-            if r.status_code == 200 and r.content and r.content[:2] == b"PK":
-                if zipfile.is_zipfile(io.BytesIO(r.content)):
-                    try: cp.write_bytes(r.content)
-                    except Exception: pass
-                    if verbose: print(f"    [dl OK] {len(r.content)} bytes")
+            r = curl_requests.get(url, headers=DL_HEADERS, impersonate="safari15_5", timeout=30)
+            if verbose: print(f"      -> CFFI Status: {r.status_code} | Size: {len(r.content)}")
+            if r.status_code == 200:
+                if r.content[:2] == b"PK":  # Cek magic bytes file Excel
+                    cp.write_bytes(r.content)
                     return r.content
-            if r.status_code == 429:
-                time.sleep(15 * (attempt + 1)); continue
+                elif verbose:
+                    print(f"      -> Konten bukan Excel (HTML). Preview: {r.text[:80]}")
         except Exception as e:
-            if "curl: (16)" in str(e) or "HTTP/2" in str(e):
-                time.sleep(10 * (attempt + 1)); continue
-            if verbose: print(f"    [dl err] {e}")
-            time.sleep(3)
+            if verbose: print(f"      -> CFFI Error: {e}")
+
+    # METODE 2: TLS Client (Firefox)
+    try:
+        r = get_session().get(url, headers=DL_HEADERS, timeout_seconds=30)
+        if verbose: print(f"      -> TLS Status: {r.status_code} | Size: {len(r.content)}")
+        if r.status_code == 200:
+            if r.content[:2] == b"PK":
+                cp.write_bytes(r.content)
+                return r.content
+            elif verbose:
+                print(f"      -> Konten bukan Excel (HTML). Preview: {r.text[:80]}")
+    except Exception as e:
+        if verbose: print(f"      -> TLS Error: {e}")
+        
+    if verbose: print("      -> GAGAL: File tidak bisa didownload (diblokir Cloudflare).")
     return None
 
 def parse_xlsx(content_bytes):
@@ -231,11 +256,11 @@ def parse_xlsx(content_bytes):
             if pd.isna(label): continue
             ll = str(label).lower().strip()
             if len(ll) < 4 or any(b in ll for b in BLACKLIST_LBL): continue
+            
             for field, kws in FIELDS.items():
-                if field in hasil:
-                    if field == "pendapatan" and "bunga bersih" in ll and "bunga bersih" not in str(hasil.get("pendapatan", "")): pass
-                    else: continue
+                if field in hasil: continue
                 matched = False
+                
                 if field in EXACT_ONLY:
                     for ex in EXACT_ONLY[field]:
                         if ll == ex: matched = True; break
@@ -247,17 +272,22 @@ def parse_xlsx(content_bytes):
                         if ll == kw or ll.startswith(kw + " ") or ll.startswith(kw + ":"): matched = True; break
                     if matched and any(b in ll for b in KAS_BLACKLIST): matched = False
                 elif field == "pendapatan":
-                    for kw in kws:
-                        if ll == kw or ll.startswith(kw + " ") or ll.startswith(kw + ":"):
-                            if kw == "pendapatan bunga" and "bersih" in ll:
-                                continue
+                    # LOGIKA MUTLAK UNTUK GROSS REVENUE (Tolak yang bersih/neto/beban)
+                    if any(b in ll for b in ["bersih", "neto", "net", "beban", "biaya", "pajak", "komprehensif", "lain"]):
+                        matched = False
+                    else:
+                        if "pendapatan bunga" in ll or "pendapatan usaha" in ll or "penjualan dan pendapatan" in ll or "revenue" in ll:
                             matched = True
-                            break
+                        else:
+                            for kw in kws:
+                                if ll == kw or ll.startswith(kw + " ") or ll.startswith(kw + ":"): 
+                                    matched = True
+                                    break
                 else:
                     matched = any(kw in ll for kw in kws)
+                    
                 if not matched: continue
                 is_ps = "per saham" in ll or field.startswith("eps")
-                
                 min_abs = 0.0000001 if is_ps else 1.0
                 
                 for col in range(1, min(len(row), 5)):
@@ -265,6 +295,7 @@ def parse_xlsx(content_bytes):
                     if num is not None and num != 0 and abs(num) >= min_abs:
                         hasil[field] = num
                         break
+                        
     if "laba_induk" in hasil and "laba_bersih" not in hasil: hasil["laba_bersih"] = hasil["laba_induk"]
     if "laba_bersih" in hasil and "laba_induk" not in hasil: hasil["laba_induk"] = hasil["laba_bersih"]
     return hasil
@@ -369,13 +400,11 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
             
         if pend_rp and shares and shares > 0: ps_calc = (harga * shares) / (pend_rp * factor_rev)
         
-        # --- TAMBAHAN: Annualized EPS ---
         if eps_idx is not None and not pd.isna(eps_idx):
             q_key = str(periode).split("-")[-1] if periode else "audit"
             q_mult = {"tw1": 4, "tw2": 4/2, "tw3": 4/3, "audit": 1}.get(q_key, 1)
             eps_annualized = eps_idx * q_mult
 
-        # --- TAMBAHAN: Price to Cash Flow (PCF) ---
         cfo = d.get("arus_kas_operasi")
         if cfo and shares and shares > 0 and harga:
             cfo_rp = scale_num(cfo)
@@ -384,13 +413,11 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
                 if cf_per_share > 0:
                     pcf_calc = harga / cf_per_share
 
-        # --- TAMBAHAN: Dividend Yield & Payout Ratio ---
         if div_paid and shares and shares > 0 and harga:
             div_rp = scale_num(div_paid)
             dps = div_rp / shares
             if dps > 0:
                 div_yield = (dps / harga) * 100
-                # UBAH BARIS INI:
                 eps_for_payout = eps_annualized if (eps_annualized and eps_annualized > 0) else eps_final
                 if eps_for_payout and eps_for_payout > 0:
                     payout_ratio = (dps / eps_for_payout) * 100
@@ -677,7 +704,8 @@ def main(tickers, verbose=False):
     for i, k in enumerate(tickers, 1):
         print(f"[{i}/{len(tickers)}] {k}...", end=" ", flush=True)
         try:
-            d = build_one(k, verbose=verbose)
+            is_verbose = verbose or (len(tickers) == 1)
+            d = build_one(k, verbose=is_verbose)
             if d:
                 ok += 1
                 print("OK")
@@ -686,7 +714,7 @@ def main(tickers, verbose=False):
         time.sleep(random.uniform(0.3, 0.8))
     print(f"\nSelesai: OK={ok}, ERR={err} | {time.time()-t0:.0f}s")
 
-def batch(tickers, workers=4, delay=1.0, skip_existing=False):
+def batch(tickers, workers=5, delay=1.0, skip_existing=False):
     if not tickers: print("Tidak ada ticker."); return
     print(f"Batch {len(tickers)} saham, {workers} workers\n")
     periods = set(SNAPSHOT_CANDIDATES)
@@ -739,7 +767,7 @@ if __name__ == "__main__":
             else:
                 tickers = []
                 
-        batch(tickers, workers=10, delay=1.0)
+        batch(tickers, workers=5, delay=1.0)
     else:
         tickers = sys.argv[1:] if len(sys.argv) > 1 else ["BBCA"]
         main([t.upper() for t in tickers])
