@@ -1,4 +1,4 @@
-"""Admin Panel — Monokrom Style (Sama seperti Watchlist)"""
+"""Admin Panel — Monokrom Style (Gambar & Form Selalu Muncul)"""
 
 import os
 import sys
@@ -52,7 +52,7 @@ if not st.session_state.admin_logged_in:
     st.stop()
 
 # ==========================================
-# HEADER SETELAH LOGIN (Gaya Watchlist)
+# HEADER SETELAH LOGIN
 # ==========================================
 st.markdown(
     '<div style="background:#141414; border:1px solid #27272a; '
@@ -101,7 +101,7 @@ with tab1:
             submitted = r.get("submitted_at", "?")[:19].replace("T", " ")
             bukti = r.get("bukti_file", "")
 
-            # Card Header User Info (Monokrom + Garis Putih Kiri)
+            # Card Header User Info
             st.markdown(
                 f'<div style="background:#141414; border:1px solid #27272a; border-left:4px solid #ffffff; '
                 f'border-radius:8px; padding:24px 28px; margin-bottom:16px;">'
@@ -116,53 +116,80 @@ with tab1:
                 unsafe_allow_html=True
             )
 
-            if bukti and os.path.exists(bukti):
-                c1, c2 = st.columns([1, 1.5], gap="large")
+            c1, c2 = st.columns([1, 1.5], gap="large")
+            
+            # ==========================================
+            # KOLOM KIRI: BUKTI TRANSFER
+            # ==========================================
+            with c1:
+                st.markdown("<div style='font-size:11px; color:#737373; font-weight:700; letter-spacing:1px; margin-bottom:10px;'>BUKTI TRANSFER</div>", unsafe_allow_html=True)
                 
-                # Kolom Kiri: Bukti Transfer
-                with c1:
-                    st.markdown("<div style='font-size:11px; color:#737373; font-weight:700; letter-spacing:1px; margin-bottom:10px;'>BUKTI TRANSFER</div>", unsafe_allow_html=True)
-                    if bukti.lower().endswith((".jpg", ".jpeg", ".png")):
+                if bukti:
+                    # Cek apakah bukti berupa URL (Supabase Storage)
+                    if bukti.startswith("http://") or bukti.startswith("https://"):
                         st.markdown('<div style="background:#141414; padding:10px; border-radius:8px; border:1px solid #27272a;">', unsafe_allow_html=True)
                         st.image(bukti, use_container_width=True, caption="")
                         st.markdown('</div>', unsafe_allow_html=True)
+                    # Cek apakah bukti berupa file lokal
+                    elif os.path.exists(bukti):
+                        if bukti.lower().endswith((".jpg", ".jpeg", ".png")):
+                            st.markdown('<div style="background:#141414; padding:10px; border-radius:8px; border:1px solid #27272a;">', unsafe_allow_html=True)
+                            st.image(bukti, use_container_width=True, caption="")
+                            st.markdown('</div>', unsafe_allow_html=True)
+                        else:
+                            st.markdown(f'<div style="background:#141414; border:1px solid #27272a; padding:16px; border-radius:8px; color:#a3a3a3; font-size:13px;">FILE: {os.path.basename(bukti)}</div>', unsafe_allow_html=True)
+                            with open(bukti, "rb") as f:
+                                st.download_button("DOWNLOAD BUKTI", f.read(), file_name=os.path.basename(bukti), key=f"dl_{reg_id}", use_container_width=True)
+                    # Jika file lokal tapi terhapus
                     else:
-                        st.markdown(f'<div style="background:#141414; border:1px solid #27272a; padding:16px; border-radius:8px; color:#a3a3a3; font-size:13px;">FILE: {os.path.basename(bukti)}</div>', unsafe_allow_html=True)
-                        with open(bukti, "rb") as f:
-                            st.download_button("DOWNLOAD BUKTI", f.read(), file_name=os.path.basename(bukti), key=f"dl_{reg_id}", use_container_width=True)
+                        st.markdown(
+                            f'<div style="background:#141414; border:1px dashed #404040; border-radius:8px; '
+                            f'padding:40px 20px; text-align:center; color:#737373; font-size:13px;">'
+                            f'File gambar tidak ditemukan di server.<br><br><span style="font-size:10px; word-break:break-all;">{bukti}</span></div>', 
+                            unsafe_allow_html=True
+                        )
+                else:
+                    st.markdown(
+                        '<div style="background:#141414; border:1px dashed #404040; border-radius:8px; '
+                        'padding:40px 20px; text-align:center; color:#737373; font-size:13px;">'
+                        'Tidak ada lampiran bukti transfer.</div>', 
+                        unsafe_allow_html=True
+                    )
+            
+            # ==========================================
+            # KOLOM KANAN: FORM AKSI
+            # ==========================================
+            with c2:
+                st.markdown("<div style='font-size:11px; color:#737373; font-weight:700; letter-spacing:1px; margin-bottom:10px;'>TINDAKAN ADMIN</div>", unsafe_allow_html=True)
                 
-                # Kolom Kanan: Form Aksi
-                with c2:
-                    st.markdown("<div style='font-size:11px; color:#737373; font-weight:700; letter-spacing:1px; margin-bottom:10px;'>TINDAKAN ADMIN</div>", unsafe_allow_html=True)
-                    
-                    with st.container(border=True):
-                        with st.form(key=f"form_approve_{reg_id}"):
-                            st.markdown("**Buat Kredensial User**")
-                            st.markdown("<div style='font-size:12px; color:#737373; margin-bottom:12px;'>Biarkan kosong jika ingin generate otomatis.</div>", unsafe_allow_html=True)
-                            
-                            new_user = st.text_input("Username", key=f"u_{reg_id}")
-                            new_pass = st.text_input("Password", key=f"p_{reg_id}")
-                            
-                            st.markdown("<br>", unsafe_allow_html=True)
-                            col_btn1, col_btn2 = st.columns(2)
-                            
-                            with col_btn1:
-                                submit_approve = st.form_submit_button("APPROVE", type="primary", use_container_width=True)
-                            with col_btn2:
-                                submit_reject = st.form_submit_button("REJECT", use_container_width=True)
-                            
-                            if submit_approve:
-                                result = approve_registration(reg_id, custom_username=new_user, custom_password=new_pass)
-                                if result.get("success"):
-                                    st.success(f"Approved! Username: `{result['username']}` | Pass: `{result['password']}`")
-                                    st.balloons()
-                                    st.stop()
-                                else:
-                                    st.error(f"Gagal: {result.get('error')}")
-                                    
-                            if submit_reject:
-                                reject_registration(reg_id, "Bukti tidak valid")
-                                st.warning("Registrasi ditolak."); st.rerun()
+                with st.container(border=True):
+                    with st.form(key=f"form_approve_{reg_id}"):
+                        st.markdown("**Buat Kredensial User**")
+                        st.markdown("<div style='font-size:12px; color:#737373; margin-bottom:12px;'>Biarkan kosong jika ingin generate otomatis.</div>", unsafe_allow_html=True)
+                        
+                        new_user = st.text_input("Username", key=f"u_{reg_id}")
+                        new_pass = st.text_input("Password", key=f"p_{reg_id}")
+                        
+                        st.markdown("<br>", unsafe_allow_html=True)
+                        col_btn1, col_btn2 = st.columns(2)
+                        
+                        with col_btn1:
+                            submit_approve = st.form_submit_button("APPROVE", type="primary", use_container_width=True)
+                        with col_btn2:
+                            submit_reject = st.form_submit_button("REJECT", use_container_width=True)
+                        
+                        if submit_approve:
+                            result = approve_registration(reg_id, custom_username=new_user, custom_password=new_pass)
+                            if result.get("success"):
+                                st.success(f"Approved! Username: `{result['username']}` | Pass: `{result['password']}`")
+                                st.balloons()
+                                st.stop()
+                            else:
+                                st.error(f"Gagal: {result.get('error')}")
+                                
+                        if submit_reject:
+                            reject_registration(reg_id, "Bukti tidak valid")
+                            st.warning("Registrasi ditolak."); st.rerun()
             
             st.markdown("<hr style='border-color:#27272a; margin: 30px 0;'>", unsafe_allow_html=True)
 
