@@ -1,4 +1,4 @@
-"""Admin Panel — HANYA bisa diakses via ?admin=SECRET_KEY di URL."""
+"""Admin Panel — Monokrom Style (Sama seperti Watchlist)"""
 
 import os
 import sys
@@ -28,9 +28,15 @@ if "admin_logged_in" not in st.session_state:
 # FORM LOGIN ADMIN
 # ==========================================
 if not st.session_state.admin_logged_in:
-    st.markdown(page_header("🔐", "Admin Panel", "Khusus admin"), unsafe_allow_html=True)
+    st.markdown(
+        '<div style="background:#141414; border:1px solid #27272a; '
+        'border-radius:12px; padding:32px 40px; margin-bottom:32px;">'
+        '<div style="font-size:11px; color:#737373; font-weight:700; letter-spacing:1.5px; margin-bottom:12px;">'
+        'KHUSUS ADMIN</div>'
+        '<div style="font-size:36px; font-weight:800; color:#ffffff; letter-spacing:-0.04em;">Admin Panel</div>'
+        '</div>', unsafe_allow_html=True
+    )
     
-    # Bikin form login terpusat (di tengah)
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         with st.form("admin_login"):
@@ -46,19 +52,24 @@ if not st.session_state.admin_logged_in:
     st.stop()
 
 # ==========================================
-# HEADER SETELAH LOGIN
+# HEADER SETELAH LOGIN (Gaya Watchlist)
 # ==========================================
-st.markdown(page_header("🔐", "Admin Panel", "Approve · Reject · Kelola User"), unsafe_allow_html=True)
+st.markdown(
+    '<div style="background:#141414; border:1px solid #27272a; '
+    'border-radius:12px; padding:32px 40px; margin-bottom:24px;">'
+    '<div style="font-size:11px; color:#737373; font-weight:700; letter-spacing:1.5px; margin-bottom:12px;">'
+    'APPROVE · REJECT · KELOLA USER</div>'
+    '<div style="font-size:36px; font-weight:800; color:#ffffff; letter-spacing:-0.04em;">Admin Panel</div>'
+    '</div>', unsafe_allow_html=True
+)
 
-# Tombol Logout dengan styling yang lebih rapi
 col_logout, _ = st.columns([1, 4])
 with col_logout:
-    if st.button("🚪 Logout Admin", use_container_width=True):
+    if st.button("Logout Admin", use_container_width=True):
         st.session_state.admin_logged_in = False
         st.rerun()
 
-st.markdown("<hr style='border-color:#27272a; margin: 15px 0;'>", unsafe_allow_html=True)
-
+# Tabs
 tab1, tab2, tab3 = st.tabs(["⏳ Pending", "✅ Approved", "📊 Statistik"])
 
 # ==========================================
@@ -67,14 +78,19 @@ tab1, tab2, tab3 = st.tabs(["⏳ Pending", "✅ Approved", "📊 Statistik"])
 with tab1:
     pending = list_pending()
     if not pending:
-        st.info("Tidak ada registrasi pending saat ini.")
-    else:
-        # Banner Peringatan
         st.markdown(
-            f'<div style="background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.3); '
+            '<div style="background:#141414; border:1px solid #27272a; border-radius:8px; '
+            'padding:24px; text-align:center; color:#737373;">'
+            'Tidak ada registrasi pending saat ini.</div>', 
+            unsafe_allow_html=True
+        )
+    else:
+        # Banner Peringatan (Monokrom)
+        st.markdown(
+            f'<div style="background:#141414; border:1px solid #27272a; '
             f'border-radius:8px; padding:16px 20px; margin-bottom:24px; display:flex; align-items:center; gap:12px;">'
-            f'<span style="font-size:20px;">⚠️</span>'
-            f'<span style="color:#f59e0b; font-size:14px;"><b>{len(pending)} registrasi</b> menunggu persetujuan Anda.</span>'
+            f'<span style="font-size:20px; color:#ffffff;">⚠️</span>'
+            f'<span style="color:#a3a3a3; font-size:14px;"><b>{len(pending)} registrasi</b> menunggu persetujuan Anda.</span>'
             f'</div>', 
             unsafe_allow_html=True
         )
@@ -85,17 +101,17 @@ with tab1:
             submitted = r.get("submitted_at", "?")[:19].replace("T", " ")
             bukti = r.get("bukti_file", "")
 
-            # Card Header User Info
+            # Card Header User Info (Monokrom + Garis Putih Kiri)
             st.markdown(
-                f'<div style="background:#0d1424; border:1px solid #1e2942; border-left:4px solid #f59e0b; '
-                f'border-radius:10px; padding:20px 24px; margin-bottom:16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">'
+                f'<div style="background:#141414; border:1px solid #27272a; border-left:4px solid #ffffff; '
+                f'border-radius:8px; padding:24px 28px; margin-bottom:16px;">'
                 f'<div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">'
                 f'<div>'
-                f'<div style="font-size:12px; color:#f59e0b; font-weight:700; letter-spacing:1px; margin-bottom:6px;">ID: {reg_id}</div>'
-                f'<div style="font-size:22px; font-weight:800; color:#ffffff;">✈️ {tele}</div>'
+                f'<div style="font-size:11px; color:#737373; font-weight:700; letter-spacing:1.5px; margin-bottom:6px;">{reg_id}</div>'
+                f'<div style="font-size:22px; font-weight:700; color:#ffffff;">✈️ {tele}</div>'
                 f'</div>'
-                f'<div style="background:#1e2942; padding:6px 12px; border-radius:6px; font-size:11px; color:#94a3b8; font-weight:600;">'
-                f'⏱ {submitted}</div>'
+                f'<div style="background:#1f1f1f; padding:6px 12px; border-radius:6px; font-size:12px; color:#a3a3a3; font-weight:500;">'
+                f'{submitted}</div>'
                 f'</div></div>',
                 unsafe_allow_html=True
             )
@@ -105,21 +121,20 @@ with tab1:
                 
                 # Kolom Kiri: Bukti Transfer
                 with c1:
-                    st.markdown("<div style='font-size:12px; color:#94a3b8; font-weight:700; margin-bottom:10px;'>BUKTI TRANSFER</div>", unsafe_allow_html=True)
+                    st.markdown("<div style='font-size:11px; color:#737373; font-weight:700; letter-spacing:1px; margin-bottom:10px;'>BUKTI TRANSFER</div>", unsafe_allow_html=True)
                     if bukti.lower().endswith((".jpg", ".jpeg", ".png")):
-                        # Bungkus gambar dengan container
-                        st.markdown('<div style="background:#171717; padding:10px; border-radius:8px; border:1px solid #27272a;">', unsafe_allow_html=True)
+                        st.markdown('<div style="background:#141414; padding:10px; border-radius:8px; border:1px solid #27272a;">', unsafe_allow_html=True)
                         st.image(bukti, use_container_width=True, caption="")
                         st.markdown('</div>', unsafe_allow_html=True)
                     else:
-                        st.info(f"📎 File: {os.path.basename(bukti)}")
+                        st.markdown(f'<div style="background:#141414; border:1px solid #27272a; padding:16px; border-radius:8px; color:#a3a3a3; font-size:13px;">📎 {os.path.basename(bukti)}</div>', unsafe_allow_html=True)
                         with open(bukti, "rb") as f:
                             st.download_button("⬇️ Download Bukti", f.read(), file_name=os.path.basename(bukti), key=f"dl_{reg_id}", use_container_width=True)
                 
                 # Kolom Kanan: Form Aksi
                 with c2:
-                    st.markdown("<div style='font-size:12px; color:#94a3b8; font-weight:700; margin-bottom:10px;'>TINDAKAN ADMIN</div>", unsafe_allow_html=True)
-                    # Bungkus form di dalam container Streamlit
+                    st.markdown("<div style='font-size:11px; color:#737373; font-weight:700; letter-spacing:1px; margin-bottom:10px;'>TINDAKAN ADMIN</div>", unsafe_allow_html=True)
+                    
                     with st.container(border=True):
                         with st.form(key=f"form_approve_{reg_id}"):
                             st.markdown("**Buat Kredensial User**")
@@ -157,11 +172,16 @@ with tab1:
 with tab2:
     approved = list_approved()
     if not approved:
-        st.info("Belum ada user yang di-approve.")
+        st.markdown(
+            '<div style="background:#141414; border:1px solid #27272a; border-radius:8px; '
+            'padding:24px; text-align:center; color:#737373;">'
+            'Belum ada user yang di-approve.</div>', 
+            unsafe_allow_html=True
+        )
     else:
         st.markdown(
-            f'<div style="font-size:14px; color:#94a3b8; margin-bottom:20px;">'
-            f'Total: <b style="color:#10b981;">{len(approved)}</b> user aktif</div>', 
+            f'<div style="font-size:14px; color:#a3a3a3; margin-bottom:20px;">'
+            f'Total: <b style="color:#ffffff;">{len(approved)}</b> user aktif</div>', 
             unsafe_allow_html=True
         )
         
@@ -172,16 +192,16 @@ with tab2:
             approved_at = r.get("approved_at", "?")[:19].replace("T", " ")
 
             with st.container():
-                # Card Informasi User
+                # Card Informasi User (Monokrom + Garis Putih Kiri)
                 st.markdown(
-                    f'<div style="background:#0d1424; border:1px solid #1e2942; border-left:4px solid #10b981; '
-                    f'border-radius:10px; padding:20px 24px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">'
+                    f'<div style="background:#141414; border:1px solid #27272a; border-left:4px solid #ffffff; '
+                    f'border-radius:8px; padding:24px 28px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">'
                     f'<div>'
-                    f'<div style="font-size:18px; font-weight:800; color:#ffffff;">{uname}</div>'
-                    f'<div style="font-size:14px; color:#94a3b8; margin-top:4px;">✈️ {tele}</div>'
+                    f'<div style="font-size:20px; font-weight:700; color:#ffffff;">{uname}</div>'
+                    f'<div style="font-size:14px; color:#a3a3a3; margin-top:4px;">✈️ {tele}</div>'
                     f'</div>'
-                    f'<div style="text-align:right; font-size:12px; color:#7d8ba3;">'
-                    f'Approved<br><b>{approved_at}</b>'
+                    f'<div style="text-align:right; font-size:12px; color:#737373;">'
+                    f'Approved<br><b style="color:#a3a3a3;">{approved_at}</b>'
                     f'</div></div>', unsafe_allow_html=True
                 )
                 
@@ -218,17 +238,16 @@ with tab3:
     users = list_all_users()
     
     c1, c2, c3 = st.columns(3, gap="large")
-    for col, label, val, color, icon in [
-        (c1, "PENDING", len(pending), "#f59e0b", "⏳"),
-        (c2, "APPROVED", len(approved), "#10b981", "✅"),
-        (c3, "TOTAL AKTIF", len(users), "#06b6d4", "👥"),
+    for col, label, val in [
+        (c1, "PENDING", len(pending)),
+        (c2, "APPROVED", len(approved)),
+        (c3, "TOTAL AKTIF", len(users)),
     ]:
         with col:
             st.markdown(
-                f'<div style="background:linear-gradient(180deg, #0d1424, #0a1020); border:1px solid #1e2942; '
-                f'border-top:4px solid {color}; border-radius:12px; padding:24px 20px; text-align:center;">'
-                f'<div style="font-size:24px; margin-bottom:8px;">{icon}</div>'
-                f'<div style="font-size:12px; color:#7d8ba3; font-weight:700; letter-spacing:1px;">{label}</div>'
-                f'<div style="font-size:36px; font-weight:900; color:{color}; margin-top:8px;">{val}</div></div>',
+                f'<div style="background:#141414; border:1px solid #27272a; '
+                f'border-radius:8px; padding:24px 20px; text-align:center;">'
+                f'<div style="font-size:11px; color:#737373; font-weight:700; letter-spacing:1.5px;">{label}</div>'
+                f'<div style="font-size:36px; font-weight:800; color:#ffffff; margin-top:8px;">{val}</div></div>',
                 unsafe_allow_html=True
             )
