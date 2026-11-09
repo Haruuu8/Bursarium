@@ -1,0 +1,102 @@
+{
+  "kode": "BAIK",
+  "nama": "PT Bersama Mencapai Puncak Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 176.0,
+  "update": "2026-11-09 15:45",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 9.046021591702272e-07,
+    "roe": 0.02896055943781174,
+    "eps": null,
+    "eps_annualized": 3.893333333333333,
+    "de": 0.07382859150787652,
+    "margin_net": 0.018186458796246543,
+    "current_ratio": 12.150995864179782,
+    "roa": 0.02687859398674366,
+    "bv": 122178909.29436077,
+    "pcf": 1.5113696298097303e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5.0913066859e+16,
+      "2025-Q2": 5.3683337863e+16,
+      "2025-Q3": 5.6120621612e+16,
+      "2026-Q1": 5.615053529e+16,
+      "2026-Q2": 5.5440653577e+16,
+      "2026-Q3": 5.1654869846e+16
+    },
+    "eps": {
+      "2025-Q1": 5.02,
+      "2025-Q2": 6.75,
+      "2025-Q3": 2.25,
+      "2026-Q1": 1.52,
+      "2026-Q2": 0.45,
+      "2026-Q3": 0.95
+    },
+    "net_income": {
+      "2025-Q1": 1547926910000000.0,
+      "2025-Q2": 2080165501000000.0,
+      "2025-Q3": 694570302000000.0,
+      "2026-Q1": 1840567648000000.0,
+      "2026-Q2": 385300962000000.0,
+      "2026-Q3": 1069064181000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 198439583744,
+    "enterprise_value": 170749263872,
+    "shares_outstanding": 1127497572
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2486,
+    "vol_trend": 0.93,
+    "price_chg_20d": -24.79
+  },
+  "neraca": {
+    "aset": 148426777642.0,
+    "aset_lancar": 105311497660.0,
+    "kas": 32968758727.0,
+    "piutang_usaha": 3315341441.0,
+    "persediaan": 68965924416.0,
+    "aset_tetap": 247750000.0,
+    "liabilitas": 10170362724.0,
+    "liabilitas_jangka_pendek": 8666902601.0,
+    "liabilitas_jangka_panjang": 1503460123.0,
+    "utang_usaha": 3315341441.0,
+    "utang_bank": 173022043.0,
+    "ekuitas": 137756423579.0,
+    "ekuitas_induk": 137756423579.0,
+    "modal_saham": null,
+    "saldo_laba": 13000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 163246058713.0,
+    "beban_pokok": 131049426106.0,
+    "laba_kotor": 32196632607.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4147996649.0,
+    "beban_pajak": -1046014972.0,
+    "laba_bersih": 3294932791.0,
+    "laba_induk": 3294932791.0,
+    "eps_basic": 2.92,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 13129784320,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 247750000.0,
+    "dividen_dibayar": null
+  }
+}

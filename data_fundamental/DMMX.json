@@ -1,0 +1,102 @@
+{
+  "kode": "DMMX",
+  "nama": "PT Digital Mediatama Maxima Tbk",
+  "sektor": "Communication Services",
+  "industri": "Advertising Agencies",
+  "harga": 123.0,
+  "update": "2026-11-09 17:38",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.7123376155022508e-06,
+    "roe": 0.0013844567025567247,
+    "eps": null,
+    "eps_annualized": -1.76,
+    "de": 0.353904885654725,
+    "margin_net": 0.002691909122440685,
+    "current_ratio": 2.5924571618850756,
+    "roa": 0.0010206538699858146,
+    "bv": 88174373.08704126,
+    "pcf": null,
+    "div_yield": 4471544.715447154,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.90753362041e+17,
+      "2025-Q2": 1.55001606155e+17,
+      "2025-Q3": 1.46256771689e+17,
+      "2026-Q1": 7.5158986967e+16,
+      "2026-Q2": 4.7282163583e+16,
+      "2026-Q3": 6.0505390983e+16
+    },
+    "eps": {
+      "2025-Q1": 1.33,
+      "2025-Q2": 1.18,
+      "2025-Q3": 1.44,
+      "2026-Q1": 0.09,
+      "2026-Q2": 1.45,
+      "2026-Q3": -2.86
+    },
+    "net_income": {
+      "2025-Q1": 9674328746000000.0,
+      "2025-Q2": 8518766761000000.0,
+      "2025-Q3": 1.0465095713e+16,
+      "2026-Q1": 624087009000000.0,
+      "2026-Q2": -1.1806749053e+16,
+      "2026-Q3": 1603751733000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 892910501888,
+    "enterprise_value": 859768619008,
+    "shares_outstanding": 7259435200
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.207,
+    "vol_trend": 0.279,
+    "price_chg_20d": -25.45
+  },
+  "neraca": {
+    "aset": 868252625165.0,
+    "aset_lancar": 503733177014.0,
+    "kas": 51180470855.0,
+    "piutang_usaha": 100984275411.0,
+    "persediaan": 191766204391.0,
+    "aset_tetap": 169358292425.0,
+    "liabilitas": 226533153969.0,
+    "liabilitas_jangka_pendek": 194307232698.0,
+    "liabilitas_jangka_panjang": 32225921271.0,
+    "utang_usaha": 100984275411.0,
+    "utang_bank": 33866000004.0,
+    "ekuitas": 640096147726.0,
+    "ekuitas_induk": 640096147726.0,
+    "modal_saham": null,
+    "saldo_laba": 600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 182946541533.0,
+    "beban_pokok": 123563946985.0,
+    "laba_kotor": 59382594548.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -7344615365.0,
+    "beban_pajak": -4089855740.0,
+    "laba_bersih": -9578910311.0,
+    "laba_induk": -9578910311.0,
+    "eps_basic": -1.32,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -37917609984,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 43649776827.0,
+    "dividen_dibayar": 39926893600.0
+  }
+}

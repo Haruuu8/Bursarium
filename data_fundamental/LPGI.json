@@ -1,0 +1,95 @@
+{
+  "kode": "LPGI",
+  "nama": "PT Lippo General Insurance Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Diversified",
+  "harga": 600.0,
+  "update": "2026-11-09 16:50",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 7.894736842105263,
+    "pb": 1.540183251573448,
+    "ps": null,
+    "roe": 146780.9287552194,
+    "eps": 76.0,
+    "eps_annualized": 76.0,
+    "de": 2.295294511960229,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 44542.58283212013,
+    "bv": 389.564033622,
+    "pcf": 5.2979525249926075e-06,
+    "div_yield": 1666361.111111111,
+    "payout_ratio": 13155482.45614035
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2025-Q1": 14.0,
+      "2025-Q2": 21.0,
+      "2025-Q3": 4.0,
+      "2026-Q1": 16.0,
+      "2026-Q2": 24.0,
+      "2026-Q3": 17.0
+    },
+    "net_income": {
+      "2025-Q1": 4.3446565734e+16,
+      "2025-Q2": 6.2259956447e+16,
+      "2025-Q3": 1.2229931124e+16,
+      "2026-Q1": 4.8836221743e+16,
+      "2026-Q2": 6.9810746029e+16,
+      "2026-Q3": 5.2894744222e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1799999979520,
+    "enterprise_value": 1787616952320,
+    "shares_outstanding": 3000000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3441,
+    "vol_trend": 3.99,
+    "price_chg_20d": -6.25
+  },
+  "neraca": {
+    "aset": 3851184666155.0,
+    "aset_lancar": null,
+    "kas": 12383442402.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 42667049675.0,
+    "liabilitas": 2682492565289.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 1168692100866.0,
+    "ekuitas_induk": 1168692100866.0,
+    "modal_saham": null,
+    "saldo_laba": 25000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 192978492679.0,
+    "beban_pajak": -21436780685.0,
+    "laba_bersih": 171541711994.0,
+    "laba_induk": 171541711994.0,
+    "eps_basic": 57.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 339753893888,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6706743814.0,
+    "dividen_dibayar": 29994500000.0
+  }
+}

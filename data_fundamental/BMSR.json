@@ -1,0 +1,102 @@
+{
+  "kode": "BMSR",
+  "nama": "PT Bintang Mitra Semestaraya Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 272.0,
+  "update": "2026-11-09 16:17",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.3098481476824971,
+    "ps": -0.0001850842202092377,
+    "roe": 63372.31884735079,
+    "eps": null,
+    "eps_annualized": 46.29333333333333,
+    "de": 0.9194484865162791,
+    "margin_net": -37.85472433655496,
+    "current_ratio": 1.8131819438843397,
+    "roa": 32968.01479478424,
+    "bv": 877.8493660020836,
+    "pcf": 3.691663255803481e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.48240407524e+17,
+      "2025-Q2": -8.46531710322513e+17,
+      "2025-Q3": -1706064745854410.0,
+      "2026-Q1": 7.34065561164e+17,
+      "2026-Q2": -7.32541873466196e+17,
+      "2026-Q3": -1521184747609731.0
+    },
+    "eps": {
+      "2025-Q1": -33.49,
+      "2025-Q2": 73.1,
+      "2025-Q3": -58.31,
+      "2026-Q1": 11.19,
+      "2026-Q2": 7.99,
+      "2026-Q3": 15.54
+    },
+    "net_income": {
+      "2025-Q1": -3.8821044202e+16,
+      "2025-Q2": -7096524786000000.0,
+      "2025-Q3": 2.423971559e+16,
+      "2026-Q1": 1.297052997e+16,
+      "2026-Q2": 9257883968000000.0,
+      "2026-Q3": 1.8019732637e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 315302412288,
+    "enterprise_value": 122950221824,
+    "shares_outstanding": 1159200024
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3322,
+    "vol_trend": 0.219,
+    "price_chg_20d": -12.18
+  },
+  "neraca": {
+    "aset": 1956073563010.0,
+    "aset_lancar": 1603567358317.0,
+    "kas": 58313029517.0,
+    "piutang_usaha": 460682951687.0,
+    "persediaan": 2823952300.0,
+    "aset_tetap": 93364343040.0,
+    "liabilitas": 935633543868.0,
+    "liabilitas_jangka_pendek": 884394069622.0,
+    "liabilitas_jangka_panjang": 51239474246.0,
+    "utang_usaha": 460682951687.0,
+    "utang_bank": 309164025220.0,
+    "ekuitas": 1017603006138.0,
+    "ekuitas_induk": 1017603006138.0,
+    "modal_saham": null,
+    "saldo_laba": 3150000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2502950194269.0,
+    "beban_pokok": 2281162676428.0,
+    "laba_kotor": 221787517841.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 52252439432.0,
+    "beban_pajak": -12015995049.0,
+    "laba_bersih": 40248146575.0,
+    "laba_induk": 40248146575.0,
+    "eps_basic": 34.72,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 85409308672,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 130726140.0,
+    "dividen_dibayar": null
+  }
+}

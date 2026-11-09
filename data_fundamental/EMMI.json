@@ -1,0 +1,87 @@
+{
+  "kode": "EMMI",
+  "nama": "PT Esa Medika Mandiri Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 398.0,
+  "update": "2026-11-09 15:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.323122649891258e-06,
+    "roe": -0.14147115379535063,
+    "eps": null,
+    "eps_annualized": -37.586666666666666,
+    "de": 0.7929822966218238,
+    "margin_net": -0.46981412552932283,
+    "current_ratio": 1.7919100125650467,
+    "roa": -0.07724843072345076,
+    "bv": 186224165.72042343,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2026-Q3": 3.2387593151e+16
+    },
+    "eps": {
+      "2026-Q3": -1.42
+    },
+    "net_income": {
+      "2026-Q3": -1.5965166207e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 693657075712,
+    "enterprise_value": 809686859776,
+    "shares_outstanding": 1742857000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4093,
+    "vol_trend": 0.379,
+    "price_chg_20d": 1.49
+  },
+  "neraca": {
+    "aset": 594396197217.0,
+    "aset_lancar": 339429456122.0,
+    "kas": 118040189986.0,
+    "piutang_usaha": 43190074978.0,
+    "persediaan": 63984777987.0,
+    "aset_tetap": 239754608614.0,
+    "liabilitas": 257371992155.0,
+    "liabilitas_jangka_pendek": 189423271114.0,
+    "liabilitas_jangka_panjang": 67948721041.0,
+    "utang_usaha": 43190074978.0,
+    "utang_bank": 114750120429.0,
+    "ekuitas": 324562090795.0,
+    "ekuitas_induk": 324562090795.0,
+    "modal_saham": null,
+    "saldo_laba": 300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 97732637160.0,
+    "beban_pokok": 49581031529.0,
+    "laba_kotor": 48151605631.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -49125032196.0,
+    "beban_pajak": null,
+    "laba_bersih": -45916173463.0,
+    "laba_induk": -45916173463.0,
+    "eps_basic": -28.19,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -76281126912,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2062359080.0,
+    "dividen_dibayar": null
+  }
+}

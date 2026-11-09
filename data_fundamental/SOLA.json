@@ -1,0 +1,102 @@
+{
+  "kode": "SOLA",
+  "nama": "PT Xolare RCR Energy TBK",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 57.0,
+  "update": "2026-11-09 15:47",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.068864425692163e-06,
+    "roe": 0.06993379746479231,
+    "eps": null,
+    "eps_annualized": 0.8266666666666667,
+    "de": 0.4232788553177747,
+    "margin_net": 0.07772568302654842,
+    "current_ratio": 1.7602748538897885,
+    "roa": 0.04910114234602679,
+    "bv": 59269282.310962394,
+    "pcf": null,
+    "div_yield": 1051710.9916126488,
+    "payout_ratio": 72517169.17974313
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.4948854526e+16,
+      "2025-Q2": 8.5071762845e+16,
+      "2025-Q3": 7.2321768875e+16,
+      "2026-Q1": 7.5268216755e+16,
+      "2026-Q2": 1.2318091421e+16,
+      "2026-Q3": 1.539982028e+16
+    },
+    "eps": {
+      "2025-Q1": 0.03,
+      "2025-Q2": 3.05,
+      "2025-Q3": 3.52,
+      "2026-Q1": 3.33,
+      "2026-Q2": -4.18,
+      "2026-Q3": 1.47
+    },
+    "net_income": {
+      "2025-Q1": 113448286000000.0,
+      "2025-Q2": 1.0001065945e+16,
+      "2025-Q3": 1.1571903547e+16,
+      "2026-Q1": 1.0935714753e+16,
+      "2026-Q2": -1.372972716e+16,
+      "2026-Q3": 4848034920000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 187380383744,
+    "enterprise_value": 227820929024,
+    "shares_outstanding": 3287375000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2633,
+    "vol_trend": 3.523,
+    "price_chg_20d": -29.11
+  },
+  "neraca": {
+    "aset": 277507312640.0,
+    "aset_lancar": 136611847393.0,
+    "kas": 2476385498.0,
+    "piutang_usaha": 38183295012.0,
+    "persediaan": 15674863957.0,
+    "aset_tetap": 117106883990.0,
+    "liabilitas": 82471803254.0,
+    "liabilitas_jangka_pendek": 77608247991.0,
+    "liabilitas_jangka_panjang": 4863555263.0,
+    "utang_usaha": 38183295012.0,
+    "utang_bank": 17726631781.0,
+    "ekuitas": 194840356937.0,
+    "ekuitas_induk": 194840356937.0,
+    "modal_saham": null,
+    "saldo_laba": 14000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 102986128456.0,
+    "beban_pokok": 80548617072.0,
+    "laba_kotor": 22437511384.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2053454722.0,
+    "beban_pajak": 1421344852.0,
+    "laba_bersih": 2054022513.0,
+    "laba_induk": 2054022513.0,
+    "eps_basic": 0.62,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -25897646080,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8853520370.0,
+    "dividen_dibayar": 1970700000.0
+  }
+}

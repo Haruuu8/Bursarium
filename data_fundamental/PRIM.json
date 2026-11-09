@@ -1,0 +1,102 @@
+{
+  "kode": "PRIM",
+  "nama": "PT Royal Prima Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 121.0,
+  "update": "2026-11-09 17:27",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.2708908384615588e-06,
+    "roe": -0.011131714125275994,
+    "eps": null,
+    "eps_annualized": -3.3866666666666667,
+    "de": 0.1115808304746517,
+    "margin_net": -0.03221375866778801,
+    "current_ratio": 2.213185778840857,
+    "roa": -10004.884288105304,
+    "bv": 275522123.8263293,
+    "pcf": 2.4562024054448544e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.0871862373e+16,
+      "2025-Q2": 8.6071649805e+16,
+      "2025-Q3": 8.3488833752e+16,
+      "2026-Q1": 7.185639071e+16,
+      "2026-Q2": 7.6965799189e+16,
+      "2026-Q3": 8.933481125e+16
+    },
+    "eps": {
+      "2025-Q1": -1.32,
+      "2025-Q2": -0.16,
+      "2025-Q3": -0.51,
+      "2026-Q1": -0.65,
+      "2026-Q2": -0.04,
+      "2026-Q3": -1.85
+    },
+    "net_income": {
+      "2025-Q1": -4466349751000000.0,
+      "2025-Q2": -567350867000000.0,
+      "2025-Q3": -1732586551000000.0,
+      "2026-Q1": -2212550900000000.0,
+      "2026-Q2": -119664035000000.0,
+      "2026-Q3": -6296619816000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 408776736768,
+    "enterprise_value": 387264937984,
+    "shares_outstanding": 3378320205
+  },
+  "akumulasi": {
+    "score": 6.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1133,
+    "vol_trend": 0.903,
+    "price_chg_20d": -7.63
+  },
+  "neraca": {
+    "aset": 1035636295596.0,
+    "aset_lancar": 191635263504.0,
+    "kas": 24315354511.0,
+    "piutang_usaha": 92055978625.0,
+    "persediaan": 73915908377.0,
+    "aset_tetap": 54551940839.0,
+    "liabilitas": 103859655464.0,
+    "liabilitas_jangka_pendek": 86587969856.0,
+    "liabilitas_jangka_panjang": 17271685608.0,
+    "utang_usaha": 92055978625.0,
+    "utang_bank": null,
+    "ekuitas": 930801957847.0,
+    "ekuitas_induk": 930801957847.0,
+    "modal_saham": null,
+    "saldo_laba": 134738112930.0
+  },
+  "laba_rugi": {
+    "pendapatan": 238157001149.0,
+    "beban_pokok": 179629118839.0,
+    "laba_kotor": 58527882310.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -7958195792.0,
+    "beban_pajak": -658548761.0,
+    "laba_bersih": -8628834751.0,
+    "laba_induk": -8628834751.0,
+    "eps_basic": -2.54,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 16642632704,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 54551940839.0,
+    "dividen_dibayar": null
+  }
+}

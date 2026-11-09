@@ -1,0 +1,102 @@
+{
+  "kode": "MTEL",
+  "nama": "PT Dayamitra Telekomunikasi Tbk.",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 338.0,
+  "update": "2026-11-09 15:00",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8412420209121959,
+    "ps": 2.921789642276682,
+    "roe": 6.201710208920811e-05,
+    "eps": 0.024917657445859106,
+    "eps_annualized": 25.333333333333332,
+    "de": 0.8215616236846737,
+    "margin_net": 0.00021539690365417034,
+    "current_ratio": 0.31408762297046977,
+    "roa": 3.404611805762534e-05,
+    "bv": 401.7868717892761,
+    "pcf": 4.238287258889304,
+    "div_yield": 7.500042635749968,
+    "payout_ratio": 100.06635832434827
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2262108000000.0,
+      "2025-Q2": 2334141000000.0,
+      "2025-Q3": 2284354000000.0,
+      "2026-Q1": 2293649000000.0,
+      "2026-Q2": 2397583000000.0,
+      "2026-Q3": 2314074000000.0
+    },
+    "eps": {
+      "2025-Q1": 6.0,
+      "2025-Q2": 7.0,
+      "2025-Q3": 6.0,
+      "2026-Q1": 7.0,
+      "2026-Q2": 7.0,
+      "2026-Q3": 5.0
+    },
+    "net_income": {
+      "2025-Q1": 526313000.0,
+      "2025-Q2": 568106000.0,
+      "2025-Q3": 447349000.0,
+      "2026-Q1": 545058000.0,
+      "2026-Q2": 566070000.0,
+      "2026-Q3": 442487000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 27142431703040,
+    "enterprise_value": 48823837655040,
+    "shares_outstanding": 80303054344
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.136,
+    "vol_trend": 0.754,
+    "price_chg_20d": -25.78
+  },
+  "neraca": {
+    "aset": 58772163.0,
+    "aset_lancar": 3122123.0,
+    "kas": 572983.0,
+    "piutang_usaha": 730651.0,
+    "persediaan": null,
+    "aset_tetap": 45204631.0,
+    "liabilitas": 26507450.0,
+    "liabilitas_jangka_pendek": 9940293.0,
+    "liabilitas_jangka_panjang": 16567157.0,
+    "utang_usaha": 730651.0,
+    "utang_bank": 2200000.0,
+    "ekuitas": 32264713.0,
+    "ekuitas_induk": 32264713.0,
+    "modal_saham": null,
+    "saldo_laba": 367855.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7005306.0,
+    "beban_pokok": 3504835.0,
+    "laba_kotor": 3500471.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2218791.0,
+    "beban_pajak": -665176.0,
+    "laba_bersih": 1553615.0,
+    "laba_induk": 1553615.0,
+    "eps_basic": 19.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 6404103995392,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 32138.0,
+    "dividen_dibayar": 2035694.0
+  }
+}

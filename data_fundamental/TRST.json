@@ -1,0 +1,102 @@
+{
+  "kode": "TRST",
+  "nama": "PT Trias Sentosa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 498.0,
+  "update": "2026-11-09 17:15",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.47377632920784535,
+    "ps": 308.30467747024124,
+    "roe": 7.961525560972635e-05,
+    "eps": 0.08368589743589744,
+    "eps_annualized": 0.00011466666666666667,
+    "de": 0.9489949416751084,
+    "margin_net": 0.05180874220438162,
+    "current_ratio": 1.2281996810513593,
+    "roa": 3.955669700654161e-05,
+    "bv": 1051.1289173789173,
+    "pcf": 3.028817893228355e-06,
+    "div_yield": 1004.0160642570281,
+    "payout_ratio": 4360465116.279069
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 842906000.0,
+      "2025-Q2": 927841000.0,
+      "2025-Q3": 977354000.0,
+      "2026-Q1": 970464000.0,
+      "2026-Q2": 1298758000.0,
+      "2026-Q3": 1289145000.0
+    },
+    "eps": {
+      "2025-Q1": -5.0,
+      "2025-Q2": -10.7,
+      "2025-Q3": 6.6,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": -15205000.0,
+      "2025-Q2": -28198000.0,
+      "2025-Q3": 15114000.0,
+      "2026-Q1": 27850000.0,
+      "2026-Q2": 78365000.0,
+      "2026-Q3": 113661000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1398383968256,
+    "enterprise_value": 3441172938752,
+    "shares_outstanding": 2808000000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2737,
+    "vol_trend": 1.169,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 5940587.0,
+    "aset_lancar": 2328179.0,
+    "kas": 50756.0,
+    "piutang_usaha": 1153395.0,
+    "persediaan": 972713.0,
+    "aset_tetap": 25175.0,
+    "liabilitas": 2801025.0,
+    "liabilitas_jangka_pendek": 1895603.0,
+    "liabilitas_jangka_panjang": 905422.0,
+    "utang_usaha": 1153395.0,
+    "utang_bank": 1109663.0,
+    "ekuitas": 2951570.0,
+    "ekuitas_induk": 2951570.0,
+    "modal_saham": null,
+    "saldo_laba": 14000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3558367.0,
+    "beban_pokok": 3046951.0,
+    "laba_kotor": 511416.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 262572.0,
+    "beban_pajak": -21032.0,
+    "laba_bersih": 219876.0,
+    "laba_induk": 219876.0,
+    "eps_basic": 8.6e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 461692993536,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 25175.0,
+    "dividen_dibayar": 14040.0
+  }
+}

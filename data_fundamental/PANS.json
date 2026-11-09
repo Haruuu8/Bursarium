@@ -1,0 +1,91 @@
+{
+  "kode": "PANS",
+  "nama": "PT Panin Sekuritas Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 1560.0,
+  "update": "2026-11-09 17:00",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 9.97357429034183,
+    "pb": 0.7409450100802744,
+    "ps": null,
+    "roe": 55718.6729422676,
+    "eps": 156.41333333333333,
+    "eps_annualized": 156.41333333333333,
+    "de": 0.4414326184913435,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 37736.766780162914,
+    "bv": 2105.419401948586,
+    "pcf": 1.4630407528500086e-05,
+    "div_yield": 16025641.025641024,
+    "payout_ratio": 159832921.3195806
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2025-Q1": -24.63,
+      "2026-Q1": 16.28,
+      "2026-Q2": 7.95,
+      "2026-Q3": 93.08
+    },
+    "net_income": {
+      "2025-Q1": -1.7524046925e+16,
+      "2026-Q1": 1.1581441614e+16,
+      "2026-Q2": 5658888320000000.0,
+      "2026-Q3": 6.6218218568e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1109828960256,
+    "enterprise_value": 36074323968,
+    "shares_outstanding": 711428800
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1617,
+    "vol_trend": 0.915,
+    "price_chg_20d": -5.5
+  },
+  "neraca": {
+    "aset": 2211597749966.0,
+    "aset_lancar": null,
+    "kas": 10023102737.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 34465725018.0,
+    "liabilitas": 661202495596.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 123000000000.0,
+    "ekuitas": 1497855998625.0,
+    "ekuitas_induk": 1497855998625.0,
+    "modal_saham": null,
+    "saldo_laba": 8529684302.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 115098499899.0,
+    "beban_pajak": -29113658367.0,
+    "laba_bersih": 83458548502.0,
+    "laba_induk": 83458548502.0,
+    "eps_basic": 117.31,
+    "eps_diluted": 117.31
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 75857690624,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3194010276.0,
+    "dividen_dibayar": 177857200000.0
+  }
+}

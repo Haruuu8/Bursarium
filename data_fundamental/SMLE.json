@@ -1,0 +1,102 @@
+{
+  "kode": "SMLE",
+  "nama": "PT Sinergi Multi Lestarindo Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 154.0,
+  "update": "2026-11-09 15:42",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.951443240273077e-06,
+    "roe": -0.10118103408658619,
+    "eps": null,
+    "eps_annualized": -4.333333333333333,
+    "de": 1.0035302238571873,
+    "margin_net": -0.054834530246025644,
+    "current_ratio": 1.6780932534636428,
+    "roa": -0.050501491125328396,
+    "bv": 42768085.59580573,
+    "pcf": 5.292297441686387e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5.3982579807e+16,
+      "2025-Q2": 5.4706291476e+16,
+      "2025-Q3": 4.4903291333e+16,
+      "2026-Q1": 4.4021702732e+16,
+      "2026-Q2": 5.2053196236e+16,
+      "2026-Q3": 4.2750222595e+16
+    },
+    "eps": {
+      "2025-Q1": 0.12,
+      "2025-Q2": 0.05,
+      "2025-Q3": -1.08,
+      "2026-Q1": -1.52,
+      "2026-Q2": -1.26,
+      "2026-Q3": -0.48
+    },
+    "net_income": {
+      "2025-Q1": 280850877000000.0,
+      "2025-Q2": 109390812000000.0,
+      "2025-Q3": -2503451355000000.0,
+      "2026-Q1": -3532693089000000.0,
+      "2026-Q2": -2923675503000000.0,
+      "2026-Q3": -1114841267000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 358535561216,
+    "enterprise_value": 386163834880,
+    "shares_outstanding": 2328153048
+  },
+  "akumulasi": {
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0771,
+    "vol_trend": 0.393,
+    "price_chg_20d": -51.47
+  },
+  "neraca": {
+    "aset": 199492351404.0,
+    "aset_lancar": 144583627972.0,
+    "kas": 43809602584.0,
+    "piutang_usaha": 31393595914.0,
+    "persediaan": 67606711775.0,
+    "aset_tetap": 10974330147.0,
+    "liabilitas": 99922155517.0,
+    "liabilitas_jangka_pendek": 86159471575.0,
+    "liabilitas_jangka_panjang": 13762683942.0,
+    "utang_usaha": 31393595914.0,
+    "utang_bank": 33945764443.0,
+    "ekuitas": 99570648837.0,
+    "ekuitas_induk": 99570648837.0,
+    "modal_saham": null,
+    "saldo_laba": 400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 138825121563.0,
+    "beban_pokok": 101725571529.0,
+    "laba_kotor": 37099550034.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -8214355276.0,
+    "beban_pajak": 642678312.0,
+    "laba_bersih": -7571209859.0,
+    "laba_induk": -7571209859.0,
+    "eps_basic": -3.25,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 6774667776,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10974330147.0,
+    "dividen_dibayar": null
+  }
+}

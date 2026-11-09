@@ -1,0 +1,96 @@
+{
+  "kode": "BLTZ",
+  "nama": "PT Graha Layar Prima Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 2740.0,
+  "update": "2026-11-09 16:16",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.001318295207440791,
+    "roe": 0.008507247014341551,
+    "eps": 7027.375059058325,
+    "eps_annualized": 0.00013333333333333334,
+    "de": 2.79819155050363,
+    "margin_net": 0.0033810784165129695,
+    "current_ratio": null,
+    "roa": 0.0022397526191715515,
+    "bv": 826045.7286842087,
+    "pcf": 6.456779991428158e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 192894630000000.0,
+      "2025-Q2": 421870962000000.0,
+      "2025-Q3": 307492102000000.0,
+      "2026-Q1": 214046327000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.33,
+      "2026-Q1": -0.0
+    },
+    "net_income": {
+      "2025-Q1": -32607671000000.0,
+      "2025-Q2": 57822288000000.0,
+      "2025-Q3": 3521230000000.0,
+      "2026-Q1": -24893914000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2394587922432,
+    "enterprise_value": 3285800976384,
+    "shares_outstanding": 546709542
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2951,
+    "vol_trend": 5.681,
+    "price_chg_20d": -30.79
+  },
+  "neraca": {
+    "aset": 1715338099.0,
+    "aset_lancar": null,
+    "kas": 131020807.0,
+    "piutang_usaha": 58306341.0,
+    "persediaan": 14059733.0,
+    "aset_tetap": 1358271183.0,
+    "liabilitas": 1263683121.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": 58306341.0,
+    "utang_bank": 370000000.0,
+    "ekuitas": 451607082.0,
+    "ekuitas_induk": 451607082.0,
+    "modal_saham": null,
+    "saldo_laba": -1268619507.0
+  },
+  "laba_rugi": {
+    "pendapatan": 811585088.0,
+    "beban_pokok": 469439301.0,
+    "laba_kotor": 342145787.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15238928.0,
+    "beban_pajak": -14319396.0,
+    "laba_bersih": 917154.0,
+    "laba_induk": 917154.0,
+    "eps_basic": 0.0001,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 232001732608,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 22678062.0,
+    "dividen_dibayar": null
+  }
+}

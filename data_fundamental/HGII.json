@@ -1,0 +1,102 @@
+{
+  "kode": "HGII",
+  "nama": "PT Hero Global Investment Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Renewable",
+  "harga": 126.0,
+  "update": "2026-11-09 15:52",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.01403822909745397,
+    "roe": 0.021216446481614665,
+    "eps": 2475.559230769231,
+    "eps_annualized": 0.0028666666666666667,
+    "de": 0.23587771181235137,
+    "margin_net": 0.27581323512583633,
+    "current_ratio": 10.471739604944071,
+    "roa": 0.017159975713127378,
+    "bv": 116681.14323076923,
+    "pcf": 2.2709902024298488e-05,
+    "div_yield": 341.2761904761905,
+    "payout_ratio": 15000279.069767442
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 20805905000000.0,
+      "2025-Q2": 14826118000000.0,
+      "2025-Q3": 10425314000000.0,
+      "2026-Q1": 17959562000000.0,
+      "2026-Q2": 18901426000000.0,
+      "2026-Q3": 11054390000000.0
+    },
+    "eps": {
+      "2025-Q1": 1.08,
+      "2025-Q2": 0.67,
+      "2025-Q3": 0.31,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 6885232000000.0,
+      "2025-Q2": 4351169000000.0,
+      "2025-Q3": 2092039000000.0,
+      "2026-Q1": 5830981000000.0,
+      "2026-Q2": 5754681000000.0,
+      "2026-Q3": 2413434000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 818999984128,
+    "enterprise_value": 588889260032,
+    "shares_outstanding": 6500000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.5388,
+    "vol_trend": 0.803,
+    "price_chg_20d": -7.86
+  },
+  "neraca": {
+    "aset": 937713157.0,
+    "aset_lancar": 367681501.0,
+    "kas": 274939690.0,
+    "piutang_usaha": 5591467.0,
+    "persediaan": null,
+    "aset_tetap": 9216825.0,
+    "liabilitas": 178896127.0,
+    "liabilitas_jangka_pendek": 35111788.0,
+    "liabilitas_jangka_panjang": 143784339.0,
+    "utang_usaha": 5591467.0,
+    "utang_bank": 20517723.0,
+    "ekuitas": 758427431.0,
+    "ekuitas_induk": 758427431.0,
+    "modal_saham": null,
+    "saldo_laba": 250000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 47915378.0,
+    "beban_pokok": 12837404.0,
+    "laba_kotor": 35077974.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17191492.0,
+    "beban_pajak": -3203971.0,
+    "laba_bersih": 13999096.0,
+    "laba_induk": 13999096.0,
+    "eps_basic": 0.00215,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 36063563776,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 91474.0,
+    "dividen_dibayar": 2795052.0
+  }
+}

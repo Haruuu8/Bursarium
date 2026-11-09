@@ -1,0 +1,102 @@
+{
+  "kode": "CUAN",
+  "nama": "PT Petrindo Jaya Kreasi Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 358.0,
+  "update": "2026-11-09 15:29",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 27841.62323343797,
+    "roe": -0.02605733568915843,
+    "eps": -7.282080338376503e-05,
+    "eps_annualized": 0.0002666666666666667,
+    "de": 6.34780573993601,
+    "margin_net": -0.005663266400466623,
+    "current_ratio": 2.1749096187960024,
+    "roa": -3.035555872029717e-06,
+    "bv": 0.0027946373432976607,
+    "pcf": null,
+    "div_yield": 5.082145187231019,
+    "payout_ratio": 6822779.913857642
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 213934000.0,
+      "2025-Q2": 248185000.0,
+      "2025-Q3": 334508000.0,
+      "2026-Q1": 371330000.0,
+      "2026-Q2": 364775000.0,
+      "2026-Q3": 374666000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 1706000.0,
+      "2025-Q2": 237000.0,
+      "2025-Q3": 14205000.0,
+      "2026-Q1": 5698000.0,
+      "2026-Q2": 14082000.0,
+      "2026-Q3": -42170000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 40238911062016,
+    "enterprise_value": 40240144187392,
+    "shares_outstanding": 112399199400
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2138,
+    "vol_trend": 1.323,
+    "price_chg_20d": -53.51
+  },
+  "neraca": {
+    "aset": 2696376.0,
+    "aset_lancar": 1322904.0,
+    "kas": 239709.0,
+    "piutang_usaha": 250057.0,
+    "persediaan": 114352.0,
+    "aset_tetap": 206.0,
+    "liabilitas": 1993941.0,
+    "liabilitas_jangka_pendek": 608257.0,
+    "liabilitas_jangka_panjang": 1385684.0,
+    "utang_usaha": 250057.0,
+    "utang_bank": 65255.0,
+    "ekuitas": 314115.0,
+    "ekuitas_induk": 314115.0,
+    "modal_saham": null,
+    "saldo_laba": 2958.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1110771.0,
+    "beban_pokok": 967355.0,
+    "laba_kotor": 143416.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 50764.0,
+    "beban_pajak": 7644.0,
+    "laba_bersih": -22390.0,
+    "laba_induk": -22390.0,
+    "eps_basic": 0.0002,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -34798000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 206.0,
+    "dividen_dibayar": 2045.0
+  }
+}

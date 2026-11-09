@@ -1,0 +1,102 @@
+{
+  "kode": "LPLI",
+  "nama": "PT Star Pacific Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 185.0,
+  "update": "2026-11-09 16:52",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2457.031627281137,
+    "roe": -7.886064503164875e-05,
+    "eps": -0.8946011181545177,
+    "eps_annualized": -301.1333333333333,
+    "de": 0.008684707011844558,
+    "margin_net": -11.881422924901186,
+    "current_ratio": 81.77962677953059,
+    "roa": -7.81816602189476e-05,
+    "bv": 11344.075587962689,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4515000.0,
+      "2025-Q2": 4207000.0,
+      "2025-Q3": 4518000.0,
+      "2026-Q1": 2458000.0,
+      "2026-Q2": 2457000.0,
+      "2026-Q3": 2458000.0
+    },
+    "eps": {
+      "2025-Q1": 22.08,
+      "2025-Q2": 151.51,
+      "2025-Q3": 105.14,
+      "2026-Q1": -3.96,
+      "2026-Q2": -84.38,
+      "2026-Q3": -137.51
+    },
+    "net_income": {
+      "2025-Q1": 25852000.0,
+      "2025-Q2": 177326000.0,
+      "2025-Q3": 123059000.0,
+      "2026-Q1": -4638000.0,
+      "2026-Q2": -98752000.0,
+      "2026-Q3": -160951000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3141007572992,
+    "enterprise_value": -482804662272,
+    "shares_outstanding": 157927368
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3024,
+    "vol_trend": 1.122,
+    "price_chg_20d": -12.14
+  },
+  "neraca": {
+    "aset": 1807099.0,
+    "aset_lancar": 850181.0,
+    "kas": 73075.0,
+    "piutang_usaha": 236.0,
+    "persediaan": null,
+    "aset_tetap": 1156.0,
+    "liabilitas": 15559.0,
+    "liabilitas_jangka_pendek": 10396.0,
+    "liabilitas_jangka_panjang": 5163.0,
+    "utang_usaha": 236.0,
+    "utang_bank": null,
+    "ekuitas": 1791540.0,
+    "ekuitas_induk": 1791540.0,
+    "modal_saham": null,
+    "saldo_laba": -549723.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7373.0,
+    "beban_pokok": 5661.0,
+    "laba_kotor": 1712.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -263574.0,
+    "beban_pajak": -767.0,
+    "laba_bersih": -264341.0,
+    "laba_induk": -264341.0,
+    "eps_basic": -225.85,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -4200999936,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3.0,
+    "dividen_dibayar": null
+  }
+}

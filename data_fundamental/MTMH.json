@@ -1,0 +1,96 @@
+{
+  "kode": "MTMH",
+  "nama": "PT Murni Sadar Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 845.0,
+  "update": "2026-11-09 15:08",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.121599376236568,
+    "ps": -2.7408484160262732e-06,
+    "roe": 64644.31032600428,
+    "eps": null,
+    "eps_annualized": 45.626666666666665,
+    "de": 0.9194792024379403,
+    "margin_net": -0.15797107177132452,
+    "current_ratio": 0.555596438236068,
+    "roa": 33253.10424974435,
+    "bv": 753.3884361057031,
+    "pcf": 7.757393570012112e-06,
+    "div_yield": 286390.5325443787,
+    "payout_ratio": 5303915.838690825
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": -6.389397316691119e+17,
+      "2026-Q1": 3.80096975056e+17,
+      "2026-Q2": 4.0805859862700006e+17,
+      "2026-Q3": -7.869400089286501e+17
+    },
+    "eps": {
+      "2025-Q3": 14.49,
+      "2026-Q1": 5.24,
+      "2026-Q2": 13.8,
+      "2026-Q3": 15.18
+    },
+    "net_income": {
+      "2025-Q3": 2.9959435168e+16,
+      "2026-Q1": 1.0843493479e+16,
+      "2026-Q2": 2.8539741134e+16,
+      "2026-Q3": 3.1399300361e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1747905282048,
+    "enterprise_value": 2774667886592,
+    "shares_outstanding": 2068526950
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3522,
+    "vol_trend": 0.929,
+    "price_chg_20d": -14.43
+  },
+  "neraca": {
+    "aset": 3029550846904.0,
+    "aset_lancar": 389524161885.0,
+    "kas": 2659338444.0,
+    "piutang_usaha": 305414643340.0,
+    "persediaan": 48831915827.0,
+    "aset_tetap": 2498984434049.0,
+    "liabilitas": 1432920328039.0,
+    "liabilitas_jangka_pendek": 701091898864.0,
+    "liabilitas_jangka_panjang": 731828429175.0,
+    "utang_usaha": 305414643340.0,
+    "utang_bank": 237399731438.0,
+    "ekuitas": 1558404283903.0,
+    "ekuitas_induk": 1558404283903.0,
+    "modal_saham": null,
+    "saldo_laba": 41370539000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1215564754350.0,
+    "beban_pokok": 830971183019.0,
+    "laba_kotor": 384593571331.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 97020495197.0,
+    "beban_pajak": -26816624415.0,
+    "laba_bersih": 70782534974.0,
+    "laba_induk": 70782534974.0,
+    "eps_basic": 34.22,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 225321205760,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 370199719344.0,
+    "dividen_dibayar": 5005835219.0
+  }
+}

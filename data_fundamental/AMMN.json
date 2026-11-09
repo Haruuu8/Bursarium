@@ -1,0 +1,102 @@
+{
+  "kode": "AMMN",
+  "nama": "PT Amman Mineral Internasional Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Precious Metals & Mining",
+  "harga": 3600.0,
+  "update": "2026-11-09 15:34",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 42.138806605076056,
+    "ps": 72403.90639699835,
+    "roe": 0.00013604974061370444,
+    "eps": 0.011622993285014791,
+    "eps_annualized": 0.01604,
+    "de": 1.2542965275228475,
+    "margin_net": 0.2337639216280976,
+    "current_ratio": 2.544909335803988,
+    "roa": 5.993191117263459e-05,
+    "bv": 85.43194005798784,
+    "pcf": 0.20812783584770997,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2124000.0,
+      "2025-Q2": 180471000.0,
+      "2025-Q3": 362737000.0,
+      "2026-Q1": 807912000.0,
+      "2026-Q2": 1244498000.0,
+      "2026-Q3": 1185276000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": -0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.01
+    },
+    "net_income": {
+      "2025-Q1": -138763000.0,
+      "2025-Q2": -9957000.0,
+      "2025-Q3": -29816000.0,
+      "2026-Q1": 160169000.0,
+      "2026-Q2": 337760000.0,
+      "2026-Q3": 373536000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 260684684197888,
+    "enterprise_value": 262138060865536,
+    "shares_outstanding": 72412413856
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2392,
+    "vol_trend": 0.658,
+    "price_chg_20d": -17.91
+  },
+  "neraca": {
+    "aset": 14043420.0,
+    "aset_lancar": 3268707.0,
+    "kas": 569556.0,
+    "piutang_usaha": 647876.0,
+    "persediaan": 1513627.0,
+    "aset_tetap": 5474371.0,
+    "liabilitas": 7759496.0,
+    "liabilitas_jangka_pendek": 1284410.0,
+    "liabilitas_jangka_panjang": 6475086.0,
+    "utang_usaha": 647876.0,
+    "utang_bank": 157006.0,
+    "ekuitas": 6186333.0,
+    "ekuitas_induk": 6186333.0,
+    "modal_saham": null,
+    "saldo_laba": 600.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3237686.0,
+    "beban_pokok": 1583934.0,
+    "laba_kotor": 1653752.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1215756.0,
+    "beban_pajak": -335640.0,
+    "laba_bersih": 871465.0,
+    "laba_induk": 871465.0,
+    "eps_basic": 0.01203,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1252521984,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 38000.0,
+    "dividen_dibayar": null
+  }
+}

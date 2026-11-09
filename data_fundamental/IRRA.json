@@ -1,0 +1,102 @@
+{
+  "kode": "IRRA",
+  "nama": "PT Itama Ranoraya Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 344.0,
+  "update": "2026-11-09 17:37",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.4271805817208223e-06,
+    "roe": 0.10453828660666148,
+    "eps": null,
+    "eps_annualized": 41.85333333333333,
+    "de": 4.208249820584248,
+    "margin_net": 0.179820516783487,
+    "current_ratio": 1.5747640314379812,
+    "roa": 20071.67286667033,
+    "bv": 414613442.2165443,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.4043934917e+17,
+      "2025-Q2": 3.4990344772699994e+17,
+      "2025-Q3": -5.893291876540489e+17,
+      "2026-Q1": 2.4321566902e+17,
+      "2026-Q2": 2.95101003117e+17,
+      "2026-Q3": 4.1444878437000006e+17
+    },
+    "eps": {
+      "2025-Q1": 6.93,
+      "2025-Q2": 10.7,
+      "2025-Q3": 11.95,
+      "2026-Q1": 7.09,
+      "2026-Q2": 10.58,
+      "2026-Q3": 13.72
+    },
+    "net_income": {
+      "2025-Q1": 1.0442989503e+16,
+      "2025-Q2": 1.6143198458e+16,
+      "2025-Q3": 1.8020852404e+16,
+      "2026-Q1": 1.0692963012e+16,
+      "2026-Q2": 1.595427495e+16,
+      "2026-Q3": 2.0685207317e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 518689161216,
+    "enterprise_value": 1676770410496,
+    "shares_outstanding": 1507817400
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4305,
+    "vol_trend": 0.522,
+    "price_chg_20d": -8.51
+  },
+  "neraca": {
+    "aset": 3255996553806.0,
+    "aset_lancar": 1811466983174.0,
+    "kas": 18872411647.0,
+    "piutang_usaha": 567250391930.0,
+    "persediaan": 914307010329.0,
+    "aset_tetap": 514331032726.0,
+    "liabilitas": 2630835191358.0,
+    "liabilitas_jangka_pendek": 1150310108061.0,
+    "liabilitas_jangka_panjang": 1480525083297.0,
+    "utang_usaha": 567250391930.0,
+    "utang_bank": 588125584046.0,
+    "ekuitas": 625161362448.0,
+    "ekuitas_induk": 625161362448.0,
+    "modal_saham": null,
+    "saldo_laba": 2355496789.0
+  },
+  "laba_rugi": {
+    "pendapatan": 952765456507.0,
+    "beban_pokok": 740335054290.0,
+    "laba_kotor": 212430402217.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 61487225314.0,
+    "beban_pajak": -14154780035.0,
+    "laba_bersih": 47332445279.0,
+    "laba_induk": 47332445279.0,
+    "eps_basic": 31.39,
+    "eps_diluted": 31.39
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -246573727744,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 17905655188.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "RUIS",
+  "nama": "PT Radiant Utama Interinsco Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 171.0,
+  "update": "2026-11-09 17:05",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -1.397677416519453e-07,
+    "roe": 0.02529376901509508,
+    "eps": null,
+    "eps_annualized": 20.439999999999998,
+    "de": 1.365304551209384,
+    "margin_net": -0.01527603247208158,
+    "current_ratio": 1.5727135695888306,
+    "roa": 10693.39579313422,
+    "bv": 738900885.622078,
+    "pcf": 2.3455557305415384e-06,
+    "div_yield": 3508771.929824561,
+    "payout_ratio": 29354207.43639922
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.40026382058e+17,
+      "2025-Q2": 5.0501039499700006e+17,
+      "2025-Q3": -9.43562066143042e+17,
+      "2026-Q1": 4.92407202025e+17,
+      "2026-Q2": 5.0232829503999994e+17,
+      "2026-Q3": -9.93236302109284e+17
+    },
+    "eps": {
+      "2025-Q1": 5.23,
+      "2025-Q2": 5.13,
+      "2025-Q3": 3.36,
+      "2026-Q1": 4.14,
+      "2026-Q2": 5.73,
+      "2026-Q3": 5.46
+    },
+    "net_income": {
+      "2025-Q1": 4029965657000000.0,
+      "2025-Q2": 3949444687000000.0,
+      "2025-Q3": 2583538840000000.0,
+      "2026-Q1": 3186479047000000.0,
+      "2026-Q2": 4408890811000000.0,
+      "2026-Q3": 4212074313000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 131669999616,
+    "enterprise_value": 464820666368,
+    "shares_outstanding": 770000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2324,
+    "vol_trend": 1.079,
+    "price_chg_20d": -11.92
+  },
+  "neraca": {
+    "aset": 1345782321107.0,
+    "aset_lancar": 1133126249876.0,
+    "kas": 167530527770.0,
+    "piutang_usaha": 810135222013.0,
+    "persediaan": 15680767504.0,
+    "aset_tetap": 171651250067.0,
+    "liabilitas": 776795051365.0,
+    "liabilitas_jangka_pendek": 720491176389.0,
+    "liabilitas_jangka_panjang": 56303874976.0,
+    "utang_usaha": 810135222013.0,
+    "utang_bank": 522157816785.0,
+    "ekuitas": 568953681929.0,
+    "ekuitas_induk": 568953681929.0,
+    "modal_saham": null,
+    "saldo_laba": 15400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1499194955716.0,
+    "beban_pokok": 1349688929418.0,
+    "laba_kotor": 149506026298.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17424723029.0,
+    "beban_pajak": -5614703180.0,
+    "laba_bersih": 11807444171.0,
+    "laba_induk": 11807444171.0,
+    "eps_basic": 15.33,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 56135950336,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 66096019258.0,
+    "dividen_dibayar": 4620000000.0
+  }
+}

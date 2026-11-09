@@ -1,0 +1,102 @@
+{
+  "kode": "CASA",
+  "nama": "PT Capital Financial Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Life",
+  "harga": 1875.0,
+  "update": "2026-11-09 17:18",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 12.334820240516482,
+    "ps": 61022.83173728634,
+    "roe": 5.320940428097686e-06,
+    "eps": 0.0008088292417843468,
+    "eps_annualized": 0.6266666666666666,
+    "de": 2.4848719343034973,
+    "margin_net": 0.02632376038698831,
+    "current_ratio": null,
+    "roa": 1.3411878854408457e-06,
+    "bv": 152.00870085168668,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 340743000.0,
+      "2025-Q2": 367271000.0,
+      "2025-Q3": 362635000.0,
+      "2026-Q1": 442118000.0,
+      "2026-Q2": 433938000.0,
+      "2026-Q3": 435158000.0
+    },
+    "eps": {
+      "2025-Q1": 0.3,
+      "2025-Q2": -0.05,
+      "2025-Q3": 0.34,
+      "2026-Q1": 0.18,
+      "2026-Q2": 0.39,
+      "2026-Q3": -0.1
+    },
+    "net_income": {
+      "2025-Q1": 14794000.0,
+      "2025-Q2": -1163000.0,
+      "2025-Q3": 18449000.0,
+      "2026-Q1": 9757000.0,
+      "2026-Q2": 21157000.0,
+      "2026-Q3": -5301000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 102143012896768,
+    "enterprise_value": 98412120768512,
+    "shares_outstanding": 54476269803
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.9583,
+    "vol_trend": 7.896,
+    "price_chg_20d": 5.19
+  },
+  "neraca": {
+    "aset": 32852966.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 759175.0,
+    "liabilitas": 20576894.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 8280867.0,
+    "ekuitas_induk": 8280867.0,
+    "modal_saham": null,
+    "saldo_laba": 847426.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1311214.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 167811.0,
+    "laba_sebelum_pajak": 100703.0,
+    "beban_pajak": -26675.0,
+    "laba_bersih": 25613.0,
+    "laba_induk": 25613.0,
+    "eps_basic": 0.47,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3675991048192,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

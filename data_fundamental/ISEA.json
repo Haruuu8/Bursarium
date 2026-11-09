@@ -1,0 +1,102 @@
+{
+  "kode": "ISEA",
+  "nama": "PT Indo American Seafoods Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 58.0,
+  "update": "2026-11-09 15:48",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.1589811111159056e-07,
+    "roe": 0.04599421260913384,
+    "eps": null,
+    "eps_annualized": 6.16,
+    "de": 1.3393820366321603,
+    "margin_net": 0.012631450607521159,
+    "current_ratio": 1.5256699335894515,
+    "roa": 0.019660838584256376,
+    "bv": 137436369.81870502,
+    "pcf": 4.444041911925744e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.06612161952e+17,
+      "2025-Q2": 1.21444128456e+17,
+      "2025-Q3": 1.33972412825e+17,
+      "2026-Q1": 1.81190148551e+17,
+      "2026-Q2": 1.86573850374e+17,
+      "2026-Q3": 1.93874579894e+17
+    },
+    "eps": {
+      "2025-Q1": -3.86,
+      "2025-Q2": 4.74,
+      "2025-Q3": 1.7,
+      "2026-Q1": 1.56,
+      "2026-Q2": 2.08,
+      "2026-Q3": 0.98
+    },
+    "net_income": {
+      "2025-Q1": -5368040290000000.0,
+      "2025-Q2": 6593789872000000.0,
+      "2025-Q3": 2360938728000000.0,
+      "2026-Q1": 2166655859000000.0,
+      "2026-Q2": 2899123798000000.0,
+      "2026-Q3": 1359857498000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 80620003328,
+    "enterprise_value": 312056086528,
+    "shares_outstanding": 1390000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4313,
+    "vol_trend": 0.367,
+    "price_chg_20d": -24.05
+  },
+  "neraca": {
+    "aset": 446907482880.0,
+    "aset_lancar": 374280861279.0,
+    "kas": 1266428078.0,
+    "piutang_usaha": 136439497472.0,
+    "persediaan": 213966685206.0,
+    "aset_tetap": 63720443566.0,
+    "liabilitas": 255870928832.0,
+    "liabilitas_jangka_pendek": 245322302707.0,
+    "liabilitas_jangka_panjang": 10548626125.0,
+    "utang_usaha": 136439497472.0,
+    "utang_bank": 229687729202.0,
+    "ekuitas": 191036554048.0,
+    "ekuitas_induk": 191036554048.0,
+    "modal_saham": null,
+    "saldo_laba": 610000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 561638578819.0,
+    "beban_pokok": 485968216764.0,
+    "laba_kotor": 75670362055.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 8297867075.0,
+    "beban_pajak": -1872229920.0,
+    "laba_bersih": 6425637155.0,
+    "laba_induk": 6425637155.0,
+    "eps_basic": 4.62,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1814114304,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1338623909.0,
+    "dividen_dibayar": null
+  }
+}

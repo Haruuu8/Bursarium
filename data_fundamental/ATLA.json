@@ -1,0 +1,102 @@
+{
+  "kode": "ATLA",
+  "nama": "PT Atlantis Subsea Indonesia Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 18.0,
+  "update": "2026-11-09 15:46",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.2412810469723346e-06,
+    "roe": 0.0034714507814724033,
+    "eps": null,
+    "eps_annualized": 0.14666666666666667,
+    "de": 0.03487391561003376,
+    "margin_net": 0.01159020736940272,
+    "current_ratio": 95.98331754978157,
+    "roa": 0.003354467369511449,
+    "bv": 26813677.440593373,
+    "pcf": 1.1188784827300581e-05,
+    "div_yield": 3136414.350674134,
+    "payout_ratio": 384923579.4009165
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.4051657288e+16,
+      "2025-Q2": 2.6682584936e+16,
+      "2025-Q3": 1.2667660762e+16,
+      "2026-Q1": 1.644510783e+16,
+      "2026-Q2": 1.2628088399e+16,
+      "2026-Q3": 8048703593000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.17,
+      "2025-Q2": 0.27,
+      "2025-Q3": -0.02,
+      "2026-Q1": 0.1,
+      "2026-Q2": 0.04,
+      "2026-Q3": -0.03
+    },
+    "net_income": {
+      "2025-Q1": 1051866700000000.0,
+      "2025-Q2": 1664581260000000.0,
+      "2025-Q3": -120535572000000.0,
+      "2026-Q1": 621138542000000.0,
+      "2026-Q2": 224343773000000.0,
+      "2026-Q3": -147875411000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 111592398848,
+    "enterprise_value": 94561402880,
+    "shares_outstanding": 6199577693
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.7558,
+    "vol_trend": 2.469,
+    "price_chg_20d": -54.55
+  },
+  "neraca": {
+    "aset": 172030688760.0,
+    "aset_lancar": 72861276037.0,
+    "kas": 2780362574.0,
+    "piutang_usaha": 11704614297.0,
+    "persediaan": null,
+    "aset_tetap": 73998573394.0,
+    "liabilitas": 5797212232.0,
+    "liabilitas_jangka_pendek": 759103539.0,
+    "liabilitas_jangka_panjang": 5038108693.0,
+    "utang_usaha": 11704614297.0,
+    "utang_bank": null,
+    "ekuitas": 166233476528.0,
+    "ekuitas_induk": 166233476528.0,
+    "modal_saham": null,
+    "saldo_laba": 100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 37121899822.0,
+    "beban_pokok": 28713741084.0,
+    "laba_kotor": 8408158738.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1065124164.0,
+    "beban_pajak": -367517260.0,
+    "laba_bersih": 697606904.0,
+    "laba_induk": 697606904.0,
+    "eps_basic": 0.11,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 9973594112,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2068900000.0,
+    "dividen_dibayar": 3500000000.0
+  }
+}

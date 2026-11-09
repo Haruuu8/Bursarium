@@ -1,0 +1,102 @@
+{
+  "kode": "BNGA",
+  "nama": "PT Bank CIMB Niaga Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 1510.0,
+  "update": "2026-11-09 16:17",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.004509448771713367,
+    "roe": 0.10990498414392093,
+    "eps": null,
+    "eps_annualized": 238.2,
+    "de": 5.703353325063426,
+    "margin_net": 0.2620632841415755,
+    "current_ratio": null,
+    "roa": 0.016386501348246423,
+    "bv": 798439.9908169261,
+    "pcf": 0.026143190569897976,
+    "div_yield": 3768.610117595722,
+    "payout_ratio": 23890.013759737787
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6233370000000.0,
+      "2025-Q2": 6157268000000.0,
+      "2025-Q3": 6206038000000.0,
+      "2026-Q1": 5697618000000.0,
+      "2026-Q2": 5922860000000.0,
+      "2026-Q3": 6233951000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 137.43,
+      "2025-Q3": 72.14,
+      "2026-Q1": 70.2,
+      "2026-Q2": 66.47,
+      "2026-Q3": 41.98
+    },
+    "net_income": {
+      "2025-Q1": 1804933000000.0,
+      "2025-Q2": 1649934000000.0,
+      "2025-Q3": 1813719000000.0,
+      "2026-Q1": 1764956000000.0,
+      "2026-Q2": 1671152000000.0,
+      "2026-Q3": 1055538000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 37964222562304,
+    "enterprise_value": 27870669832192,
+    "shares_outstanding": 71853936
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2575,
+    "vol_trend": 4.426,
+    "price_chg_20d": -12.09
+  },
+  "neraca": {
+    "aset": 384790192.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": 9791452.0,
+    "persediaan": null,
+    "aset_tetap": 7239865.0,
+    "liabilitas": 327207403.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 57371056.0,
+    "ekuitas_induk": 57371056.0,
+    "modal_saham": null,
+    "saldo_laba": 44167951.0
+  },
+  "laba_rugi": {
+    "pendapatan": 17854429.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 5747279.0,
+    "laba_sebelum_pajak": 5784378.0,
+    "beban_pajak": -1277896.0,
+    "laba_bersih": 4491646.0,
+    "laba_induk": 4491646.0,
+    "eps_basic": 178.65,
+    "eps_diluted": 178.65
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4150199000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 4088921.0
+  }
+}

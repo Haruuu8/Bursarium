@@ -1,0 +1,102 @@
+{
+  "kode": "HAIS",
+  "nama": "PT Hasnur Internasional Shipping Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 153.0,
+  "update": "2026-11-09 14:58",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.901126578749232e-07,
+    "roe": 0.07083853496933498,
+    "eps": null,
+    "eps_annualized": 10.426666666666666,
+    "de": 1.1036265617836452,
+    "margin_net": 0.06685578410753465,
+    "current_ratio": 1.3281841403689223,
+    "roa": 32490.013774540108,
+    "bv": 294621833.3951452,
+    "pcf": 1.8962807567750655e-06,
+    "div_yield": 6501135.441386456,
+    "payout_ratio": 95397096.15077952
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.35361632168e+17,
+      "2025-Q2": 1.99498635758e+17,
+      "2025-Q3": 2.2638713321700006e+17,
+      "2026-Q1": 1.62899847225e+17,
+      "2026-Q2": 2.0944538863e+17,
+      "2026-Q3": 2.21112300401e+17
+    },
+    "eps": {
+      "2025-Q1": 6.51,
+      "2025-Q2": 6.8,
+      "2025-Q3": 13.04,
+      "2026-Q1": 1.2,
+      "2026-Q2": 6.0,
+      "2026-Q3": 0.62
+    },
+    "net_income": {
+      "2025-Q1": 1.7085271755e+16,
+      "2025-Q2": 1.7875028972e+16,
+      "2025-Q3": 3.4256894662e+16,
+      "2026-Q1": 3151814105000000.0,
+      "2026-Q2": 1.5768985066e+16,
+      "2026-Q3": 1633664391000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 401816256512,
+    "enterprise_value": 960728727552,
+    "shares_outstanding": 2626250000
+  },
+  "akumulasi": {
+    "score": 2.8,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1147,
+    "vol_trend": 0.799,
+    "price_chg_20d": -14.29
+  },
+  "neraca": {
+    "aset": 1687021698555.0,
+    "aset_lancar": 367213798346.0,
+    "kas": 109193529724.0,
+    "piutang_usaha": 64744828228.0,
+    "persediaan": 30771307243.0,
+    "aset_tetap": 19411847940.0,
+    "liabilitas": 853931703269.0,
+    "liabilitas_jangka_pendek": 276478077990.0,
+    "liabilitas_jangka_panjang": 577453625279.0,
+    "utang_usaha": 64744828228.0,
+    "utang_bank": 86228827921.0,
+    "ekuitas": 773750589954.0,
+    "ekuitas_induk": 773750589954.0,
+    "modal_saham": null,
+    "saldo_laba": 52525000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 593457536256.0,
+    "beban_pokok": 495878605424.0,
+    "laba_kotor": 97578930832.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 28543989065.0,
+    "beban_pajak": -8189839881.0,
+    "laba_bersih": 20554463562.0,
+    "laba_induk": 20554463562.0,
+    "eps_basic": 7.82,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 211897024512,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 19411847940.0,
+    "dividen_dibayar": 26122618638.0
+  }
+}

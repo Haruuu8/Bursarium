@@ -1,0 +1,99 @@
+{
+  "kode": "DKFT",
+  "nama": "PT Central Omega Resources Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 705.0,
+  "update": "2026-11-09 16:25",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.5270437218702475,
+    "ps": -9.283152437750891e-06,
+    "roe": 462084.99026925187,
+    "eps": null,
+    "eps_annualized": 144.1,
+    "de": 1.0970833802212676,
+    "margin_net": -1.697479694055865,
+    "current_ratio": 2.01771573003778,
+    "roa": 220756.24725390115,
+    "bv": 278.98211411959045,
+    "pcf": 7.031536108027142e-06,
+    "div_yield": 5076878.006359837,
+    "payout_ratio": 24838299.75353008
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.20967646133e+17,
+      "2025-Q2": 5.2968257983000006e+17,
+      "2025-Q3": -9.494057159143781e+17,
+      "2026-Q1": 5.06014505076e+17,
+      "2026-Q2": -5.05007701394835e+17
+    },
+    "eps": {
+      "2025-Q1": 25.0,
+      "2025-Q2": 31.25,
+      "2025-Q3": 23.98,
+      "2026-Q1": 43.25,
+      "2026-Q2": 28.8
+    },
+    "net_income": {
+      "2025-Q1": 1.37851543552e+17,
+      "2025-Q2": 1.72275391359e+17,
+      "2025-Q3": 1.32242754761e+17,
+      "2026-Q1": 2.38454035755e+17,
+      "2026-Q2": 1.67790289949e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3887007531008,
+    "enterprise_value": 3442315886592,
+    "shares_outstanding": 5513485875
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4225,
+    "vol_trend": 1.796,
+    "price_chg_20d": 1.48
+  },
+  "neraca": {
+    "aset": 3219670929659.0,
+    "aset_lancar": 1425980065044.0,
+    "kas": 659664734928.0,
+    "piutang_usaha": 195379750392.0,
+    "persediaan": 148282384875.0,
+    "aset_tetap": 46194916125.0,
+    "liabilitas": 1687494100747.0,
+    "liabilitas_jangka_pendek": 706729914336.0,
+    "liabilitas_jangka_panjang": 980764186411.0,
+    "utang_usaha": 195379750392.0,
+    "utang_bank": 350184371840.0,
+    "ekuitas": 1538163945576.0,
+    "ekuitas_induk": 1538163945576.0,
+    "modal_saham": null,
+    "saldo_laba": 12000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1006803681165.0,
+    "beban_pokok": 444489592161.0,
+    "laba_kotor": 562314089004.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 488834943436.0,
+    "beban_pajak": -85806795869.0,
+    "laba_bersih": 406244325704.0,
+    "laba_induk": 406244325704.0,
+    "eps_basic": 72.05,
+    "eps_diluted": 72.05
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 552796356608,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 46194916125.0,
+    "dividen_dibayar": 197338630999.0
+  }
+}

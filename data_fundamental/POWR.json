@@ -1,0 +1,102 @@
+{
+  "kode": "POWR",
+  "nama": "PT Cikarang Listrindo Tbk",
+  "sektor": null,
+  "industri": null,
+  "harga": 955.0,
+  "update": "2026-11-09 17:19",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.026987281248803296,
+    "roe": 0.1181265920248486,
+    "eps": 5508.706982573858,
+    "eps_annualized": 0.005999999999999999,
+    "de": 0.6587101903449666,
+    "margin_net": 0.1556701828858296,
+    "current_ratio": 7.2281740347382035,
+    "roa": 0.07121593194063724,
+    "bv": 46633.92795937997,
+    "pcf": null,
+    "div_yield": 294.4523986309932,
+    "payout_ratio": 46867006.78209975
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 135502454000000.0,
+      "2025-Q2": 135836301000000.0,
+      "2025-Q3": 141138497000000.0,
+      "2026-Q1": 128187874000000.0,
+      "2026-Q2": 146595601000000.0,
+      "2026-Q3": 153114515000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 16934380000000.0,
+      "2025-Q2": 22712038000000.0,
+      "2025-Q3": 17659951000000.0,
+      "2026-Q1": 17539679000000.0,
+      "2026-Q2": 19600451000000.0,
+      "2026-Q3": 33781933000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 15356747841536,
+    "enterprise_value": null,
+    "shares_outstanding": 16080364100
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1477,
+    "vol_trend": 1.214,
+    "price_chg_20d": 1.05
+  },
+  "neraca": {
+    "aset": 1243851082.0,
+    "aset_lancar": 482749635.0,
+    "kas": 133823541.0,
+    "piutang_usaha": 54430188.0,
+    "persediaan": 75913635.0,
+    "aset_tetap": 715004290.0,
+    "liabilitas": 493960541.0,
+    "liabilitas_jangka_pendek": 66787218.0,
+    "liabilitas_jangka_panjang": 427173323.0,
+    "utang_usaha": 54430188.0,
+    "utang_bank": null,
+    "ekuitas": 749890541.0,
+    "ekuitas_induk": 749890541.0,
+    "modal_saham": null,
+    "saldo_laba": 1800349.0
+  },
+  "laba_rugi": {
+    "pendapatan": 427897990.0,
+    "beban_pokok": 320521306.0,
+    "laba_kotor": 107376684.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 100455507.0,
+    "beban_pajak": -29533444.0,
+    "laba_bersih": 70922063.0,
+    "laba_induk": 70922063.0,
+    "eps_basic": 0.0045,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12487656.0,
+    "dividen_dibayar": 45218312.0
+  }
+}

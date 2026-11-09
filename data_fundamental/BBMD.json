@@ -1,0 +1,102 @@
+{
+  "kode": "BBMD",
+  "nama": "PT Bank Mestika Dharma Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 2000.0,
+  "update": "2026-11-09 16:11",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.5046404100384687,
+    "ps": 6.502219867367723e-06,
+    "roe": 58323.09021253854,
+    "eps": null,
+    "eps_annualized": 66.98666666666666,
+    "de": 2.088215424050016,
+    "margin_net": 0.2520399913335788,
+    "current_ratio": null,
+    "roa": 18885.693581586736,
+    "bv": 1329.2212455924048,
+    "pcf": 4.973255656360667,
+    "div_yield": 1116500.0,
+    "payout_ratio": 33334992.038216565
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.07047022148e+17,
+      "2025-Q2": 3.12916811676e+17,
+      "2025-Q3": 3.1570681603299994e+17,
+      "2026-Q1": 3.03656773613e+17,
+      "2026-Q2": 3.05130612665e+17,
+      "2026-Q3": 3.14813197988e+17
+    },
+    "eps": {
+      "2025-Q1": 15.67,
+      "2025-Q2": 18.57,
+      "2025-Q3": 27.29,
+      "2026-Q1": 14.38,
+      "2026-Q2": 15.14,
+      "2026-Q3": 20.72
+    },
+    "net_income": {
+      "2025-Q1": 6.3127025247e+16,
+      "2025-Q2": 7.4838736059e+16,
+      "2025-Q3": 1.09940021899e+17,
+      "2026-Q1": 5.7929008212e+16,
+      "2026-Q2": 6.1011044589e+16,
+      "2026-Q3": 8.3474951731e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 8058249412608,
+    "enterprise_value": 7589265408000,
+    "shares_outstanding": 4029124600
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.8219,
+    "vol_trend": 0.822,
+    "price_chg_20d": -1.96
+  },
+  "neraca": {
+    "aset": 16539240408705.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 602193139377.0,
+    "liabilitas": 11183642389246.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 5355598019459.0,
+    "ekuitas_induk": 5355598019459.0,
+    "modal_saham": null,
+    "saldo_laba": 4040346642363.0
+  },
+  "laba_rugi": {
+    "pendapatan": 923600584266.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 257575381046.0,
+    "laba_sebelum_pajak": 259506416067.0,
+    "beban_pajak": -57091411535.0,
+    "laba_bersih": 202415004532.0,
+    "laba_induk": 202415004532.0,
+    "eps_basic": 50.24,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1620316701333.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 89970352318.0
+  }
+}

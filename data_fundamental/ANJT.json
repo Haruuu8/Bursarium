@@ -1,0 +1,96 @@
+{
+  "kode": "ANJT",
+  "nama": "PT Austindo Nusantara Jaya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 1315.0,
+  "update": "2026-11-09 16:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.9537981579413283,
+    "ps": 0.06118691733238211,
+    "roe": 180598.74165591074,
+    "eps": null,
+    "eps_annualized": 331.98436,
+    "de": 0.6560989331482168,
+    "margin_net": 11585.554222376877,
+    "current_ratio": 1.6640763116585295,
+    "roa": 109244.56094623788,
+    "bv": 1378.6984060005814,
+    "pcf": 5.136887373237411e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 68106199000000.0,
+      "2026-Q1": 1154772962596.0,
+      "2026-Q2": 1190832362374.0,
+      "2026-Q3": 1634522577884.0
+    },
+    "eps": {
+      "2025-Q3": 0.0,
+      "2026-Q1": 69.33,
+      "2026-Q2": 68.58,
+      "2026-Q3": 111.08
+    },
+    "net_income": {
+      "2025-Q3": 9807882000000.0,
+      "2026-Q1": 2.32539655013e+17,
+      "2026-Q2": 2.30031141744e+17,
+      "2026-Q3": 3.7257944438600006e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4410740047872,
+    "enterprise_value": 5026554576896,
+    "shares_outstanding": 3354175000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1967,
+    "vol_trend": 1.844,
+    "price_chg_20d": -9.09
+  },
+  "neraca": {
+    "aset": 7644866177237.0,
+    "aset_lancar": 2706133101779.0,
+    "kas": 1149100560346.0,
+    "piutang_usaha": 1634720234.0,
+    "persediaan": 411744862978.0,
+    "aset_tetap": 1592179749376.0,
+    "liabilitas": 3034061102249.0,
+    "liabilitas_jangka_pendek": 1626207333654.0,
+    "liabilitas_jangka_panjang": 1407853768595.0,
+    "utang_usaha": 1634720234.0,
+    "utang_bank": 992265777497.0,
+    "ekuitas": 4624395725947.0,
+    "ekuitas_induk": 4624395725947.0,
+    "modal_saham": null,
+    "saldo_laba": 107355470143.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3980127902854.0,
+    "beban_pokok": 2804895306359.0,
+    "laba_kotor": 1175232596495.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1004270974424.0,
+    "beban_pajak": -188361254494.0,
+    "laba_bersih": 835150241143.0,
+    "laba_induk": 835150241143.0,
+    "eps_basic": 248.98827,
+    "eps_diluted": 248.98827
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 858640613376,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 108705317908.0,
+    "dividen_dibayar": null
+  }
+}

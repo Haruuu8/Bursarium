@@ -1,0 +1,102 @@
+{
+  "kode": "GDST",
+  "nama": "PT Gunawan Dianjaya Steel Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Steel",
+  "harga": 88.0,
+  "update": "2026-11-09 16:31",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.5486513472459075,
+    "ps": -0.000634735525304969,
+    "roe": 63328.5034357094,
+    "eps": null,
+    "eps_annualized": 10.369492229880082,
+    "de": 1.6523964824557118,
+    "margin_net": -73.2648358503459,
+    "current_ratio": 0.9737069724769596,
+    "roa": 23875.95665074813,
+    "bv": 160.3932997553692,
+    "pcf": null,
+    "div_yield": 1960507.4882582931,
+    "payout_ratio": 16637715.246036204
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.39737487632e+17,
+      "2025-Q2": -6.38452517524363e+17,
+      "2025-Q3": -1283182023342342.0,
+      "2026-Q1": 4.69426208229e+17,
+      "2026-Q2": -4.68334157212948e+17,
+      "2026-Q3": -1090253077221452.0
+    },
+    "eps": {
+      "2025-Q1": 11.97,
+      "2025-Q2": -7.06,
+      "2025-Q3": 0.0,
+      "2026-Q1": 1.44,
+      "2026-Q2": 6.34,
+      "2026-Q3": -0.0
+    },
+    "net_income": {
+      "2025-Q1": 3.9030717324e+16,
+      "2025-Q2": 3931733461000000.0,
+      "2025-Q3": 2.2000370662e+16,
+      "2026-Q1": 1.3302752723e+16,
+      "2026-Q2": 5.8608550479e+16,
+      "2026-Q3": -31279251000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 813340033024,
+    "enterprise_value": 1307328512000,
+    "shares_outstanding": 9242500000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2762,
+    "vol_trend": 0.335,
+    "price_chg_20d": -21.82
+  },
+  "neraca": {
+    "aset": 3932005573065.0,
+    "aset_lancar": 2253246971864.0,
+    "kas": 538329017629.0,
+    "piutang_usaha": 141873120611.0,
+    "persediaan": 539486409366.0,
+    "aset_tetap": 1655493963824.0,
+    "liabilitas": 2449570500076.0,
+    "liabilitas_jangka_pendek": 2314091441835.0,
+    "liabilitas_jangka_panjang": 135479058241.0,
+    "utang_usaha": 141873120611.0,
+    "utang_bank": 1629762316657.0,
+    "ekuitas": 1482435072989.0,
+    "ekuitas_induk": 1482435072989.0,
+    "modal_saham": null,
+    "saldo_laba": 398306844212.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1797938830548.0,
+    "beban_pokok": 1618188972341.0,
+    "laba_kotor": 179749858207.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 77647651533.0,
+    "beban_pajak": -5767627582.0,
+    "laba_bersih": 71880023951.0,
+    "laba_induk": 71880023951.0,
+    "eps_basic": 7.777119172410062,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -171918180352,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2494150404.0,
+    "dividen_dibayar": 15945591605.0
+  }
+}

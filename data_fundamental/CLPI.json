@@ -1,0 +1,102 @@
+{
+  "kode": "CLPI",
+  "nama": "PT Colorpak Indonesia Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 1545.0,
+  "update": "2026-11-09 16:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.279010063493114e-07,
+    "roe": 0.1319497700904542,
+    "eps": null,
+    "eps_annualized": 259.1866666666666,
+    "de": 0.5001137409560371,
+    "margin_net": 0.07249793324955688,
+    "current_ratio": 2.8120800459369315,
+    "roa": 0.08794660810960564,
+    "bv": 1983819542.0179822,
+    "pcf": 6.629452104991319e-06,
+    "div_yield": 11036536.357792625,
+    "payout_ratio": 65788294.17455738
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.2470892772e+17,
+      "2025-Q2": 2.340425519e+17,
+      "2025-Q3": 2.5533421119e+17,
+      "2026-Q1": 2.50830072724e+17,
+      "2026-Q2": 2.85074689668e+17,
+      "2026-Q3": 3.1376524698300006e+17
+    },
+    "eps": {
+      "2025-Q1": 48.37,
+      "2025-Q2": 43.89,
+      "2025-Q3": 67.37,
+      "2026-Q1": 50.35,
+      "2026-Q2": 61.99,
+      "2026-Q3": 82.05
+    },
+    "net_income": {
+      "2025-Q1": 1.4816489443e+16,
+      "2025-Q2": 1.3434790875e+16,
+      "2025-Q3": 2.0617889861e+16,
+      "2026-Q1": 1.5409305597e+16,
+      "2026-Q2": 1.8971930703e+16,
+      "2026-Q3": 2.5111396062e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 472832409600,
+    "enterprise_value": null,
+    "shares_outstanding": 306040400
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.14,
+    "vol_trend": 3.408,
+    "price_chg_20d": -1.27
+  },
+  "neraca": {
+    "aset": 910899509884.0,
+    "aset_lancar": 810695576573.0,
+    "kas": 172233933111.0,
+    "piutang_usaha": 370224150077.0,
+    "persediaan": 240093698320.0,
+    "aset_tetap": 90004417017.0,
+    "liabilitas": 303633518508.0,
+    "liabilitas_jangka_pendek": 288290362767.0,
+    "liabilitas_jangka_panjang": 15343155741.0,
+    "utang_usaha": 370224150077.0,
+    "utang_bank": 81139424966.0,
+    "ekuitas": 607128926167.0,
+    "ekuitas_induk": 607128926167.0,
+    "modal_saham": null,
+    "saldo_laba": 43802218843.0
+  },
+  "laba_rugi": {
+    "pendapatan": 849670009375.0,
+    "beban_pokok": 726665189244.0,
+    "laba_kotor": 123004820131.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 75260619324.0,
+    "beban_pajak": -15736125059.0,
+    "laba_bersih": 59492632362.0,
+    "laba_induk": 59492632362.0,
+    "eps_basic": 194.39,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 71323000832,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3796683049.0,
+    "dividen_dibayar": 52184321724.0
+  }
+}

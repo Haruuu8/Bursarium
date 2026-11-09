@@ -1,0 +1,102 @@
+{
+  "kode": "WMUU",
+  "nama": "PT Widodo Makmur Unggas Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 26.0,
+  "update": "2026-11-09 17:47",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.2744720469128593e-07,
+    "roe": -0.04929294599834204,
+    "eps": null,
+    "eps_annualized": -1.653795065180769,
+    "de": 1.6364507671136346,
+    "margin_net": -0.036387322227619916,
+    "current_ratio": 1.061323925828111,
+    "roa": -18674.086283347984,
+    "bv": 58613463.21464667,
+    "pcf": 0.00026893366153919583,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.40275915283e+17,
+      "2025-Q2": 1.61089140705e+17,
+      "2025-Q3": 2.04337508649e+17,
+      "2026-Q1": 2.46142676931e+17,
+      "2026-Q2": 2.44915708624e+17,
+      "2026-Q3": 3.3216086664000006e+17
+    },
+    "eps": {
+      "2025-Q1": -2.1,
+      "2025-Q2": -1.61,
+      "2025-Q3": -1.65,
+      "2026-Q1": -1.2,
+      "2026-Q2": 0.1,
+      "2026-Q3": -0.14
+    },
+    "net_income": {
+      "2025-Q1": -2.7217803639e+16,
+      "2025-Q2": -2.0795741197e+16,
+      "2025-Q3": -2.1338498589e+16,
+      "2026-Q1": -1.5575240011e+16,
+      "2026-Q2": 1844015296000000.0,
+      "2026-Q3": -2320315660000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 336470605824,
+    "enterprise_value": 1339598700544,
+    "shares_outstanding": 12941176500
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.264,
+    "vol_trend": 1.066,
+    "price_chg_20d": -10.0
+  },
+  "neraca": {
+    "aset": 2002241951583.0,
+    "aset_lancar": 134941015409.0,
+    "kas": 1762242701.0,
+    "piutang_usaha": 20858004553.0,
+    "persediaan": 29853519405.0,
+    "aset_tetap": 684187250.0,
+    "liabilitas": 1241292373702.0,
+    "liabilitas_jangka_pendek": 127144043515.0,
+    "liabilitas_jangka_panjang": 1114148330187.0,
+    "utang_usaha": 20858004553.0,
+    "utang_bank": 7495304588.0,
+    "ekuitas": 758527172737.0,
+    "ekuitas_induk": 758527172737.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 823219252195.0,
+    "beban_pokok": 814497343431.0,
+    "laba_kotor": 8721908764.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -33930675413.0,
+    "beban_pajak": 16846225145.0,
+    "laba_bersih": -16051540375.0,
+    "laba_induk": -16051540375.0,
+    "eps_basic": -1.2403462988855767,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1251128576,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 684187250.0,
+    "dividen_dibayar": null
+  }
+}

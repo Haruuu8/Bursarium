@@ -1,0 +1,102 @@
+{
+  "kode": "RMKO",
+  "nama": "PT Royaltama Mulia Kontraktorindo Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 172.0,
+  "update": "2026-11-09 15:35",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.784126421370255e-07,
+    "roe": 0.0189322499349382,
+    "eps": null,
+    "eps_annualized": 1.2266666666666666,
+    "de": 1.1169013747092233,
+    "margin_net": 0.01175441486876897,
+    "current_ratio": 0.47184102950130624,
+    "roa": 0.008943312006438145,
+    "bv": 184624552.67478764,
+    "pcf": 1.0776917731400446e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.2528756527e+16,
+      "2025-Q2": 5.3283351164e+16,
+      "2025-Q3": 1.23576627916e+17,
+      "2026-Q1": 7.001465237e+16,
+      "2026-Q2": 1.1121072086e+17,
+      "2026-Q3": 1.64060403621e+17
+    },
+    "eps": {
+      "2025-Q1": -19.95,
+      "2025-Q2": -24.53,
+      "2025-Q3": 3.43,
+      "2026-Q1": -15.56,
+      "2026-Q2": -22.34,
+      "2026-Q3": 38.82
+    },
+    "net_income": {
+      "2025-Q1": -2.493666398e+16,
+      "2025-Q2": -3.0668164558e+16,
+      "2025-Q3": 4286538824000000.0,
+      "2026-Q1": -1.9444932983e+16,
+      "2026-Q2": -2.7934141731e+16,
+      "2026-Q3": 4.8603739112e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 271195947008,
+    "enterprise_value": 244039401472,
+    "shares_outstanding": 1576720595
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.175,
+    "vol_trend": 0.717,
+    "price_chg_20d": -42.8
+  },
+  "neraca": {
+    "aset": 616237387003.0,
+    "aset_lancar": 143195512279.0,
+    "kas": 50755525062.0,
+    "piutang_usaha": 1409796096.0,
+    "persediaan": 52286277993.0,
+    "aset_tetap": 1405165050.0,
+    "liabilitas": 325131480733.0,
+    "liabilitas_jangka_pendek": 303482536121.0,
+    "liabilitas_jangka_panjang": 21648944612.0,
+    "utang_usaha": 1409796096.0,
+    "utang_bank": 1000000000.0,
+    "ekuitas": 291101334545.0,
+    "ekuitas_induk": 291101334545.0,
+    "modal_saham": null,
+    "saldo_laba": 5000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 345285776851.0,
+    "beban_pokok": 325909325559.0,
+    "laba_kotor": 19376451292.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -5083746303.0,
+    "beban_pajak": 6310939480.0,
+    "laba_bersih": 1224664398.0,
+    "laba_induk": 1224664398.0,
+    "eps_basic": 0.92,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 251645181952,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1405165050.0,
+    "dividen_dibayar": null
+  }
+}

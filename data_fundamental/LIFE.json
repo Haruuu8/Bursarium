@@ -1,0 +1,95 @@
+{
+  "kode": "LIFE",
+  "nama": "PT MSIG Life Insurance Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Life",
+  "harga": 9575.0,
+  "update": "2026-11-09 17:35",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 63.55088495575222,
+    "pb": 2.4211315567571874,
+    "ps": null,
+    "roe": 2.8677058557849664e-05,
+    "eps": 150.66666666666666,
+    "eps_annualized": 150.66666666666666,
+    "de": 0.8583915883935475,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": 1.5416298244909956e-05,
+    "bv": 3954.762380952381,
+    "pcf": 7.70490847791704e-05,
+    "div_yield": 1002.6109660574413,
+    "payout_ratio": 63716.81415929204
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2025-Q1": 6.0,
+      "2025-Q2": -6.0,
+      "2025-Q3": 84.0,
+      "2026-Q1": 35.0,
+      "2026-Q2": 51.0,
+      "2026-Q3": 27.0
+    },
+    "net_income": {
+      "2025-Q1": 12542000.0,
+      "2025-Q2": 94569000.0,
+      "2025-Q3": 68647000.0,
+      "2026-Q1": 74452000.0,
+      "2026-Q2": 106150000.0,
+      "2026-Q3": 57561000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 20107499667456,
+    "enterprise_value": 15098903003136,
+    "shares_outstanding": 2100000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1347,
+    "vol_trend": 0.498,
+    "price_chg_20d": -9.91
+  },
+  "neraca": {
+    "aset": 15448780.0,
+    "aset_lancar": null,
+    "kas": 929290.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 168820.0,
+    "liabilitas": 7128943.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 8305001.0,
+    "ekuitas_induk": 8305001.0,
+    "modal_saham": null,
+    "saldo_laba": 14918.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 298570.0,
+    "beban_pajak": -60407.0,
+    "laba_bersih": 238163.0,
+    "laba_induk": 238163.0,
+    "eps_basic": 113.0,
+    "eps_diluted": 113.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 260970004480,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4518.0,
+    "dividen_dibayar": 201600.0
+  }
+}

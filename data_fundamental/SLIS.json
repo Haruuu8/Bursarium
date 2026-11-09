@@ -1,0 +1,102 @@
+{
+  "kode": "SLIS",
+  "nama": "PT Gaya Abadi Sempurna Tbk",
+  "sektor": "Technology",
+  "industri": "Electronics & Computer Distribution",
+  "harga": 48.0,
+  "update": "2026-11-09 17:37",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 6.118390898731003e-07,
+    "roe": -0.020951375262147902,
+    "eps": null,
+    "eps_annualized": -5.946666666666666,
+    "de": 0.3115132529253973,
+    "margin_net": -0.0342188319311755,
+    "current_ratio": 7.18628806426533,
+    "roa": -0.015908976788992772,
+    "bv": 128131721.83146282,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.7527042673e+16,
+      "2025-Q2": 3.6550218064e+16,
+      "2025-Q3": 4.5553939566e+16,
+      "2026-Q1": 4.8410924149e+16,
+      "2026-Q2": 4.2856721982e+16,
+      "2026-Q3": 5.6434559203e+16
+    },
+    "eps": {
+      "2025-Q1": 0.31,
+      "2025-Q2": -5.91,
+      "2025-Q3": 1.4,
+      "2026-Q1": -2.06,
+      "2026-Q2": -2.37,
+      "2026-Q3": -0.03
+    },
+    "net_income": {
+      "2025-Q1": 657963331000000.0,
+      "2025-Q2": -1.2774632841e+16,
+      "2025-Q3": 2982677850000000.0,
+      "2026-Q1": -4427959932000000.0,
+      "2026-Q2": -5099934712000000.0,
+      "2026-Q3": -67782748000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 118241656832,
+    "enterprise_value": 184189911040,
+    "shares_outstanding": 2463367996
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3523,
+    "vol_trend": 0.206,
+    "price_chg_20d": -34.25
+  },
+  "neraca": {
+    "aset": 415677238688.0,
+    "aset_lancar": 378044200192.0,
+    "kas": 1533854481.0,
+    "piutang_usaha": 85130904078.0,
+    "persediaan": 191861251663.0,
+    "aset_tetap": 31680699127.0,
+    "liabilitas": 98324667147.0,
+    "liabilitas_jangka_pendek": 52606324268.0,
+    "liabilitas_jangka_panjang": 45718342879.0,
+    "utang_usaha": 85130904078.0,
+    "utang_bank": 6796246800.0,
+    "ekuitas": 315635582832.0,
+    "ekuitas_induk": 315635582832.0,
+    "modal_saham": null,
+    "saldo_laba": 20300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 147702205334.0,
+    "beban_pokok": 133263739459.0,
+    "laba_kotor": 14438465875.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9752938067.0,
+    "beban_pajak": 84229002.0,
+    "laba_bersih": -9595677392.0,
+    "laba_induk": -9595677392.0,
+    "eps_basic": -4.46,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -14350074880,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4303605.0,
+    "dividen_dibayar": null
+  }
+}

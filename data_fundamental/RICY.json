@@ -1,0 +1,102 @@
+{
+  "kode": "RICY",
+  "nama": "PT Ricky Putra Globalindo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Apparel Manufacturing",
+  "harga": 58.0,
+  "update": "2026-11-09 17:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 8.708705114469609e-08,
+    "roe": -0.4821041684378476,
+    "eps": null,
+    "eps_annualized": -127.41333333333333,
+    "de": 7.837102238703726,
+    "margin_net": -0.22196838858807252,
+    "current_ratio": 3.0260454711125075,
+    "roa": -54327.72305324589,
+    "bv": 306637066.1991131,
+    "pcf": 1.0526631862905414e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.11970725652e+17,
+      "2025-Q2": 1.17315665175e+17,
+      "2025-Q3": 1.35247940566e+17,
+      "2026-Q1": 1.15926218167e+17,
+      "2026-Q2": 8.7389624812e+16,
+      "2026-Q3": 8.8820254504e+16
+    },
+    "eps": {
+      "2025-Q1": -103.29,
+      "2025-Q2": -62.28,
+      "2025-Q3": -52.27,
+      "2026-Q1": -27.79,
+      "2026-Q2": -33.06,
+      "2026-Q3": -34.71
+    },
+    "net_income": {
+      "2025-Q1": -6.6285843434e+16,
+      "2025-Q2": -3.9966183784e+16,
+      "2025-Q3": -3.3540360881e+16,
+      "2026-Q1": -1.7831153213e+16,
+      "2026-Q2": -2.1216144527e+16,
+      "2026-Q3": -2.2278087613e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 37219614720,
+    "enterprise_value": 1317059952640,
+    "shares_outstanding": 641717510
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5142,
+    "vol_trend": 0.379,
+    "price_chg_20d": -19.72
+  },
+  "neraca": {
+    "aset": 1746175633774.0,
+    "aset_lancar": 871189241060.0,
+    "kas": 18275813340.0,
+    "piutang_usaha": 93361030657.0,
+    "persediaan": 580061359164.0,
+    "aset_tetap": 852140672250.0,
+    "liabilitas": 1542140891658.0,
+    "liabilitas_jangka_pendek": 287896943181.0,
+    "liabilitas_jangka_panjang": 1254243948477.0,
+    "utang_usaha": 93361030657.0,
+    "utang_bank": 60542940293.0,
+    "ekuitas": 196774374595.0,
+    "ekuitas_induk": 196774374595.0,
+    "modal_saham": null,
+    "saldo_laba": 1150000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 292136097483.0,
+    "beban_pokok": 244623930477.0,
+    "laba_kotor": 47512167006.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -65286311190.0,
+    "beban_pajak": -474234199.0,
+    "laba_bersih": -61325385353.0,
+    "laba_induk": -61325385353.0,
+    "eps_basic": -95.56,
+    "eps_diluted": -95.56
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 35357573120,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 250080012.0,
+    "dividen_dibayar": null
+  }
+}

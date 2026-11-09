@@ -1,0 +1,96 @@
+{
+  "kode": "RMKE",
+  "nama": "PT RMK Energy Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 308.0,
+  "update": "2026-11-09 15:02",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.187196455062803,
+    "ps": -1.1725669457663549e-05,
+    "roe": 186664.33714247704,
+    "eps": null,
+    "eps_annualized": 20.975357925417608,
+    "de": 0.6564866222495065,
+    "margin_net": -0.686736556006688,
+    "current_ratio": 3.566675774540534,
+    "roa": 112266.92690057372,
+    "bv": 96.63665366806858,
+    "pcf": 9.322608553312436e-06,
+    "div_yield": 1942941.3283858998,
+    "payout_ratio": 28529950.777035084
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": -5.74596506393902e+17,
+      "2026-Q1": 8.15590416332e+17,
+      "2026-Q2": -8.139975242904e+17,
+      "2026-Q3": -1590443950831428.0
+    },
+    "eps": {
+      "2025-Q3": 11.69,
+      "2026-Q1": 12.67,
+      "2026-Q2": -5.19,
+      "2026-Q3": 8.25
+    },
+    "net_income": {
+      "2025-Q3": 5.1136065122e+16,
+      "2026-Q1": 5.5437433365e+16,
+      "2026-Q2": 1.07895469662e+17,
+      "2026-Q3": 1.80125776552e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 6737499783168,
+    "enterprise_value": 7257932693504,
+    "shares_outstanding": 21875000000
+  },
+  "akumulasi": {
+    "score": 6.4,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1247,
+    "vol_trend": 0.545,
+    "price_chg_20d": -5.42
+  },
+  "neraca": {
+    "aset": 3514790647565.0,
+    "aset_lancar": 1666772507575.0,
+    "kas": 570354139800.0,
+    "piutang_usaha": 471067027263.0,
+    "persediaan": 61170323815.0,
+    "aset_tetap": 11964718801.0,
+    "liabilitas": 1387764663951.0,
+    "liabilitas_jangka_pendek": 467318201299.0,
+    "liabilitas_jangka_panjang": 920446462652.0,
+    "utang_usaha": 471067027263.0,
+    "utang_bank": 26918184859.0,
+    "ekuitas": 2113926798989.0,
+    "ekuitas_induk": 2113926798989.0,
+    "modal_saham": null,
+    "saldo_laba": 87500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2448090768572.0,
+    "beban_pokok": 1912105202721.0,
+    "laba_kotor": 535985565851.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 446277514532.0,
+    "beban_pajak": -101842366132.0,
+    "laba_bersih": 343458679579.0,
+    "laba_induk": 343458679579.0,
+    "eps_basic": 15.731518444063207,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 722705448960,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11964718801.0,
+    "dividen_dibayar": 130905672000.0
+  }
+}

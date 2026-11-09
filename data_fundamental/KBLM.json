@@ -1,0 +1,102 @@
+{
+  "kode": "KBLM",
+  "nama": "PT Kabelindo Murni Tbk",
+  "sektor": "Industrials",
+  "industri": "Electrical Equipment & Parts",
+  "harga": 328.0,
+  "update": "2026-11-09 16:46",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.2498363203916583,
+    "ps": -4.2004370737834076e-07,
+    "roe": 36941.472109757065,
+    "eps": null,
+    "eps_annualized": 66.66666666666666,
+    "de": 0.4088978737065749,
+    "margin_net": -0.06210879537719139,
+    "current_ratio": 1.552802126690028,
+    "roa": 26220.12056315354,
+    "bv": 1312.85955335,
+    "pcf": 2.9988136818460554e-06,
+    "div_yield": 2132542.149390244,
+    "payout_ratio": 10492107.375000002
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.68861107527e+17,
+      "2025-Q2": 4.07013134533e+17,
+      "2025-Q3": -8.7457778211054e+17,
+      "2026-Q1": 6.80499704491e+17,
+      "2026-Q2": -6.79209845904182e+17,
+      "2026-Q3": -1287730264402464.0
+    },
+    "eps": {
+      "2025-Q1": 19.92,
+      "2025-Q2": 5.08,
+      "2025-Q3": -1.0,
+      "2026-Q1": 14.27,
+      "2026-Q2": 12.73,
+      "2026-Q3": 23.0
+    },
+    "net_income": {
+      "2025-Q1": 2.2306108266e+16,
+      "2025-Q2": 5547792846000000.0,
+      "2025-Q3": -1309429131000000.0,
+      "2026-Q1": 1.5980533726e+16,
+      "2026-Q2": 1.3887918213e+16,
+      "2026-Q3": 2.5759817515e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 367360016384,
+    "enterprise_value": 146892046336,
+    "shares_outstanding": 1120000000
+  },
+  "akumulasi": {
+    "score": 6.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1101,
+    "vol_trend": 0.242,
+    "price_chg_20d": -13.04
+  },
+  "neraca": {
+    "aset": 2071647237173.0,
+    "aset_lancar": 902166172194.0,
+    "kas": 211507962516.0,
+    "piutang_usaha": 267151294538.0,
+    "persediaan": 202659925820.0,
+    "aset_tetap": 2753100000.0,
+    "liabilitas": 601244537421.0,
+    "liabilitas_jangka_pendek": 580992359997.0,
+    "liabilitas_jangka_panjang": 20252177424.0,
+    "utang_usaha": 267151294538.0,
+    "utang_bank": 70000000000.0,
+    "ekuitas": 1470402699752.0,
+    "ekuitas_induk": 1470402699752.0,
+    "modal_saham": null,
+    "saldo_laba": 4074142257.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2128322415536.0,
+    "beban_pokok": 2018291399868.0,
+    "laba_kotor": 110031015668.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 71618689066.0,
+    "beban_pajak": -15990419612.0,
+    "laba_bersih": 55628269454.0,
+    "laba_induk": 55628269454.0,
+    "eps_basic": 50.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 122501775360,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2753100000.0,
+    "dividen_dibayar": 7834106840.0
+  }
+}

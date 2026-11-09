@@ -1,0 +1,102 @@
+{
+  "kode": "POLI",
+  "nama": "PT Pollux Hotels Group Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 680.0,
+  "update": "2026-11-09 17:33",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.6374085485454832,
+    "ps": 2.5922432006443044e-06,
+    "roe": 32736.926942842834,
+    "eps": null,
+    "eps_annualized": 40.879999999999995,
+    "de": 0.9117455318212431,
+    "margin_net": 0.1331360812013305,
+    "current_ratio": 1.850111879934147,
+    "roa": 17035.32911145552,
+    "bv": 1066.8197054333632,
+    "pcf": 0.00010439402988820795,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.32342844999e+17,
+      "2025-Q2": 2.30143053438e+17,
+      "2025-Q3": 1.16873601261e+17,
+      "2026-Q1": 1.1322764959e+17,
+      "2026-Q2": 1.83775297225e+17,
+      "2026-Q3": 1.13526880607e+17
+    },
+    "eps": {
+      "2025-Q1": 10.79,
+      "2025-Q2": 17.88,
+      "2025-Q3": 4.27,
+      "2026-Q1": 9.7,
+      "2026-Q2": 19.04,
+      "2026-Q3": 1.92
+    },
+    "net_income": {
+      "2025-Q1": 2.1893787258e+16,
+      "2025-Q2": 3.5441643344e+16,
+      "2025-Q3": 8491326351000000.0,
+      "2026-Q1": 1.980779017e+16,
+      "2026-Q2": 3.8307217103e+16,
+      "2026-Q3": 3610092083000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1367158030336,
+    "enterprise_value": 2846813847552,
+    "shares_outstanding": 2010526400
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6392,
+    "vol_trend": 5.66,
+    "price_chg_20d": -17.51
+  },
+  "neraca": {
+    "aset": 4121812102813.0,
+    "aset_lancar": 1100879175777.0,
+    "kas": 17515080617.0,
+    "piutang_usaha": 38125576621.0,
+    "persediaan": 927468207858.0,
+    "aset_tetap": 448580161842.0,
+    "liabilitas": 1955574892860.0,
+    "liabilitas_jangka_pendek": 595033839692.0,
+    "liabilitas_jangka_panjang": 1360541053168.0,
+    "utang_usaha": 38125576621.0,
+    "utang_bank": 99422173525.0,
+    "ekuitas": 2144869181814.0,
+    "ekuitas_induk": 2144869181814.0,
+    "modal_saham": null,
+    "saldo_laba": 88006248604.0
+  },
+  "laba_rugi": {
+    "pendapatan": 410529827422.0,
+    "beban_pokok": 221616919895.0,
+    "laba_kotor": 188912907527.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 61646062888.0,
+    "beban_pajak": 1685616968.0,
+    "laba_bersih": 61725099356.0,
+    "laba_induk": 61725099356.0,
+    "eps_basic": 30.66,
+    "eps_diluted": 30.66
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 13096131584,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3800670174.0,
+    "dividen_dibayar": null
+  }
+}

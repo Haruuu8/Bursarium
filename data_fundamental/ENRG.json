@@ -1,0 +1,102 @@
+{
+  "kode": "ENRG",
+  "nama": "PT Energi Mega Persada Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas E&P",
+  "harga": 560.0,
+  "update": "2026-11-09 16:28",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.04069490478023689,
+    "roe": 0.09380408485355983,
+    "eps": 2327.4530610625175,
+    "eps_annualized": 0.0036799999999999997,
+    "de": 1.1026885142263498,
+    "margin_net": 0.1691347869650179,
+    "current_ratio": 0.6176189836372097,
+    "roa": 0.046237204915901456,
+    "bv": 24811.85190064984,
+    "pcf": 0.055164486842648616,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 117045214000000.0,
+      "2025-Q2": 122064988000000.0,
+      "2025-Q3": 122270526000000.0,
+      "2026-Q1": 136937401000000.0,
+      "2026-Q2": 146436605000000.0,
+      "2026-Q3": 142684967000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 17958002000000.0,
+      "2025-Q2": 17767155000000.0,
+      "2025-Q3": 19927704000000.0,
+      "2026-Q1": 18323069000000.0,
+      "2026-Q2": 26911064000000.0,
+      "2026-Q3": 27579756000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 22314215276544,
+    "enterprise_value": 14743622385664,
+    "shares_outstanding": 39846815625
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2059,
+    "vol_trend": 2.112,
+    "price_chg_20d": -44.22
+  },
+  "neraca": {
+    "aset": 2005778532.0,
+    "aset_lancar": 302218170.0,
+    "kas": 124453816.0,
+    "piutang_usaha": 52174508.0,
+    "persediaan": 43070265.0,
+    "aset_tetap": 223727309.0,
+    "liabilitas": 1090198679.0,
+    "liabilitas_jangka_pendek": 489327851.0,
+    "liabilitas_jangka_panjang": 600870828.0,
+    "utang_usaha": 52174508.0,
+    "utang_bank": 13328595.0,
+    "ekuitas": 988673288.0,
+    "ekuitas_induk": 988673288.0,
+    "modal_saham": null,
+    "saldo_laba": -211051345.0
+  },
+  "laba_rugi": {
+    "pendapatan": 426058973.0,
+    "beban_pokok": 252945895.0,
+    "laba_kotor": 173113078.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 140517824.0,
+    "beban_pajak": -67828213.0,
+    "laba_bersih": 72813889.0,
+    "laba_induk": 72813889.0,
+    "eps_basic": 0.00276,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 404503296,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3056593.0,
+    "dividen_dibayar": null
+  }
+}

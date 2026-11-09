@@ -1,0 +1,102 @@
+{
+  "kode": "AVIA",
+  "nama": "PT Avia Avian Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 304.0,
+  "update": "2026-11-09 15:02",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.7834274149780347,
+    "ps": 2.0058144559914957,
+    "roe": 0.00017780754433356402,
+    "eps": 0.030308771202818593,
+    "eps_annualized": 31.226666666666667,
+    "de": 0.19648308143385498,
+    "margin_net": 0.000199979511256422,
+    "current_ratio": 4.5468964575984625,
+    "roa": 0.00014860839165304506,
+    "bv": 170.45829701106405,
+    "pcf": 8.040663845566987,
+    "div_yield": 3945.9079650413373,
+    "payout_ratio": 38414.475492289705
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2018597000000.0,
+      "2025-Q2": 1865685000000.0,
+      "2025-Q3": 2043464000000.0,
+      "2026-Q1": 2357880000000.0,
+      "2026-Q2": 2232786000000.0,
+      "2026-Q3": 2326888000000.0
+    },
+    "eps": {
+      "2025-Q1": 7.38,
+      "2025-Q2": 5.56,
+      "2025-Q3": 6.81,
+      "2026-Q1": 8.5,
+      "2026-Q2": 7.37,
+      "2026-Q3": 7.55
+    },
+    "net_income": {
+      "2025-Q1": 447048000.0,
+      "2025-Q2": 335483000.0,
+      "2025-Q3": 407262000.0,
+      "2026-Q1": 503132000.0,
+      "2026-Q2": 435284000.0,
+      "2026-Q3": 446342000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 17974138241024,
+    "enterprise_value": 13422933573632,
+    "shares_outstanding": 59125458700
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3392,
+    "vol_trend": 2.728,
+    "price_chg_20d": -12.14
+  },
+  "neraca": {
+    "aset": 12058673.0,
+    "aset_lancar": 8595253.0,
+    "kas": 3678265.0,
+    "piutang_usaha": 1579842.0,
+    "persediaan": 2233620.0,
+    "aset_tetap": 2447839.0,
+    "liabilitas": 1980240.0,
+    "liabilitas_jangka_pendek": 1890356.0,
+    "liabilitas_jangka_panjang": 89884.0,
+    "utang_usaha": 1579842.0,
+    "utang_bank": 7187.0,
+    "ekuitas": 10078425.0,
+    "ekuitas_induk": 10078425.0,
+    "modal_saham": null,
+    "saldo_laba": 124000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6917554.0,
+    "beban_pokok": 3857747.0,
+    "laba_kotor": 3059807.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1773562.0,
+    "beban_pajak": -389166.0,
+    "laba_bersih": 1384758.0,
+    "laba_induk": 1384758.0,
+    "eps_basic": 23.42,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2235404910592,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 337371.0,
+    "dividen_dibayar": 709243.0
+  }
+}

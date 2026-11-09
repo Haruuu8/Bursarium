@@ -1,0 +1,90 @@
+{
+  "kode": "IKAN",
+  "nama": "PT Era Mandiri Cemerlang Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 56.0,
+  "update": "2026-11-09 17:41",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.8974861416498937e-07,
+    "roe": 0.008270432404118832,
+    "eps": null,
+    "eps_annualized": 1.0,
+    "de": 0.6018983887888975,
+    "margin_net": 0.006963982750343347,
+    "current_ratio": 2.321050683225554,
+    "roa": 0.0051628945144090105,
+    "bv": 90739040.17481607,
+    "pcf": 1.0362952796079747e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 2.8916574774e+16,
+      "2026-Q1": 2.8576627693e+16
+    },
+    "eps": {
+      "2025-Q3": 0.14,
+      "2026-Q1": -0.9
+    },
+    "net_income": {
+      "2025-Q3": 117218440000000.0,
+      "2026-Q1": -747374713000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 46666645504,
+    "enterprise_value": 82175533056,
+    "shares_outstanding": 833333000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4337,
+    "vol_trend": 0.732,
+    "price_chg_20d": -32.1
+  },
+  "neraca": {
+    "aset": 121128886762.0,
+    "aset_lancar": 97871133895.0,
+    "kas": 2553589772.0,
+    "piutang_usaha": 18247857530.0,
+    "persediaan": 43355943621.0,
+    "aset_tetap": 17203587271.0,
+    "liabilitas": 45513050196.0,
+    "liabilitas_jangka_pendek": 42166737074.0,
+    "liabilitas_jangka_panjang": 3346313122.0,
+    "utang_usaha": 18247857530.0,
+    "utang_bank": 36737185576.0,
+    "ekuitas": 75615836566.0,
+    "ekuitas_induk": 75615836566.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 89801437973.0,
+    "beban_pokok": 74198172832.0,
+    "laba_kotor": 15603265141.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 537310597.0,
+    "beban_pajak": 88065068.0,
+    "laba_bersih": 625375665.0,
+    "laba_induk": 625375665.0,
+    "eps_basic": 0.75,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4503219200,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 444527357.0,
+    "dividen_dibayar": null
+  }
+}

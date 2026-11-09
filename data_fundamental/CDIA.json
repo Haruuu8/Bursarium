@@ -1,0 +1,96 @@
+{
+  "kode": "CDIA",
+  "nama": "PT Chandra Daya Investasi TBK.",
+  "sektor": "Utilities",
+  "industri": "Utilities - Regulated Electric",
+  "harga": 330.0,
+  "update": "2026-11-09 15:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.34405613030087506,
+    "roe": -0.02704859141361221,
+    "eps": -224.82880300564653,
+    "eps_annualized": 0.0002666666666666667,
+    "de": 0.9204873990556683,
+    "margin_net": -0.23440523618878936,
+    "current_ratio": 8.925421465575424,
+    "roa": -0.013575937924149635,
+    "bv": 8312.033686623008,
+    "pcf": 3.989520478062769,
+    "div_yield": 126.2302787987882,
+    "payout_ratio": 156209970.0135004
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": -2355659000000.0,
+      "2026-Q1": 41240230000000.0,
+      "2026-Q2": 40905330000000.0,
+      "2026-Q3": 39863386000000.0
+    },
+    "eps": {
+      "2025-Q3": 2625.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q3": -58310488000000.0,
+      "2026-Q1": 8400901000000.0,
+      "2026-Q2": 8886538000000.0,
+      "2026-Q3": 12975692000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 41167446081536,
+    "enterprise_value": 41167697739776,
+    "shares_outstanding": 124749839100
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2895,
+    "vol_trend": 1.481,
+    "price_chg_20d": -40.54
+  },
+  "neraca": {
+    "aset": 2065960905.0,
+    "aset_lancar": 762047067.0,
+    "kas": 485937794.0,
+    "piutang_usaha": 15257273.0,
+    "persediaan": 2651888.0,
+    "aset_tetap": 2773750.0,
+    "liabilitas": 954476272.0,
+    "liabilitas_jangka_pendek": 85379393.0,
+    "liabilitas_jangka_panjang": 869096879.0,
+    "utang_usaha": 15257273.0,
+    "utang_bank": 35461078.0,
+    "ekuitas": 1036924865.0,
+    "ekuitas_induk": 1036924865.0,
+    "modal_saham": null,
+    "saldo_laba": 7210.0
+  },
+  "laba_rugi": {
+    "pendapatan": 122008946.0,
+    "beban_pokok": 96408586.0,
+    "laba_kotor": 25600360.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 44532318.0,
+    "beban_pajak": -12378239.0,
+    "laba_bersih": 30263131.0,
+    "laba_induk": 30263131.0,
+    "eps_basic": 0.0002,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 10318896,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2773750.0,
+    "dividen_dibayar": 51965783.0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "TMPO",
+  "nama": "PT Tempo Inti Media Tbk",
+  "sektor": "Communication Services",
+  "industri": "Publishing",
+  "harga": 292.0,
+  "update": "2026-11-09 17:13",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0018055099591711282,
+    "roe": -0.02080558452674026,
+    "eps": -4592.318156875445,
+    "eps_annualized": -0.006666666666666666,
+    "de": 0.739132197730054,
+    "margin_net": -0.02839546632849663,
+    "current_ratio": 1.8639964989400672,
+    "roa": -0.011507951286906841,
+    "bv": 220725.26493899725,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 38433898000000.0,
+      "2025-Q2": 44575859000000.0,
+      "2025-Q3": 47333339000000.0,
+      "2026-Q1": 36841458000000.0,
+      "2026-Q2": 42884079000000.0,
+      "2026-Q3": 44102356000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.04,
+      "2025-Q2": 0.05,
+      "2025-Q3": -5.01,
+      "2026-Q1": -0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": -0.01
+    },
+    "net_income": {
+      "2025-Q1": -4286865000000.0,
+      "2025-Q2": -2327432000000.0,
+      "2025-Q3": 1373812000000.0,
+      "2026-Q1": -4620571000000.0,
+      "2026-Q2": -1132370000000.0,
+      "2026-Q3": -481074000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 309033304064,
+    "enterprise_value": 313361858560,
+    "shares_outstanding": 1058333250
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2446,
+    "vol_trend": 2.974,
+    "price_chg_20d": 88.39
+  },
+  "neraca": {
+    "aset": 422334339.0,
+    "aset_lancar": 204994577.0,
+    "kas": 5846803.0,
+    "piutang_usaha": 91318299.0,
+    "persediaan": 22965000.0,
+    "aset_tetap": 55717600.0,
+    "liabilitas": 172661937.0,
+    "liabilitas_jangka_pendek": 109975838.0,
+    "liabilitas_jangka_panjang": 62686099.0,
+    "utang_usaha": 91318299.0,
+    "utang_bank": 17927007.0,
+    "ekuitas": 233600887.0,
+    "ekuitas_induk": 233600887.0,
+    "modal_saham": null,
+    "saldo_laba": 2000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 123827893.0,
+    "beban_pokok": 76459935.0,
+    "laba_kotor": 47367958.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -7997446.0,
+    "beban_pajak": 1882359.0,
+    "laba_bersih": -6234015.0,
+    "laba_induk": -6234015.0,
+    "eps_basic": -0.005,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -17821790208,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 172052.0,
+    "dividen_dibayar": null
+  }
+}

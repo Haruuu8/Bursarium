@@ -1,0 +1,96 @@
+{
+  "kode": "TAMA",
+  "nama": "PT Lancartama Sejati Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 104.0,
+  "update": "2026-11-09 17:41",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 6.604389002144669e-06,
+    "roe": 0.1799113025417154,
+    "eps": null,
+    "eps_annualized": -108.0,
+    "de": -2.3012059851317894,
+    "margin_net": -0.5954739680396721,
+    "current_ratio": 1.559038551628094,
+    "roa": -0.138265043811256,
+    "bv": -52120074.33035689,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5498420564000000.0,
+      "2025-Q2": 8552259493000000.0,
+      "2025-Q3": 3380400892000000.0,
+      "2026-Q1": 1465454725000000.0
+    },
+    "eps": {
+      "2025-Q1": 1.6,
+      "2025-Q2": -5.23,
+      "2025-Q3": -2.26,
+      "2026-Q1": 2.54
+    },
+    "net_income": {
+      "2025-Q1": -1919837124000000.0,
+      "2025-Q2": -2436054442000000.0,
+      "2025-Q3": -3847433024000000.0,
+      "2026-Q1": -3049070490000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 124800065536,
+    "enterprise_value": 256176046080,
+    "shares_outstanding": 1200000696
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5108,
+    "vol_trend": 1.167,
+    "price_chg_20d": -49.48
+  },
+  "neraca": {
+    "aset": 81382790399.0,
+    "aset_lancar": 1964670549.0,
+    "kas": 701851298.0,
+    "piutang_usaha": 1262819251.0,
+    "persediaan": null,
+    "aset_tetap": 1862469850.0,
+    "liabilitas": 143926915871.0,
+    "liabilitas_jangka_pendek": 1260180864.0,
+    "liabilitas_jangka_panjang": 142666735007.0,
+    "utang_usaha": 1262819251.0,
+    "utang_bank": 35571531712.0,
+    "ekuitas": -62544125472.0,
+    "ekuitas_induk": -62544125472.0,
+    "modal_saham": null,
+    "saldo_laba": -128252322676.0
+  },
+  "laba_rugi": {
+    "pendapatan": 8286446538.0,
+    "beban_pokok": 4620970999.0,
+    "laba_kotor": 3665475539.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -96988809754.0,
+    "beban_pajak": -214959926.0,
+    "laba_bersih": -97203769680.0,
+    "laba_induk": -97203769680.0,
+    "eps_basic": -81.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -12353182720,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 384883797.0,
+    "dividen_dibayar": null
+  }
+}

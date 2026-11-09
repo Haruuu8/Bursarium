@@ -1,0 +1,102 @@
+{
+  "kode": "HDFA",
+  "nama": "PT Radana Bhaskara Finance Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 80.0,
+  "update": "2026-11-09 16:34",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 377.18213828156587,
+    "roe": -0.006460173250586582,
+    "eps": -485.99898347831675,
+    "eps_annualized": 0.00024,
+    "de": 4.8844808390303465,
+    "margin_net": -2291.3766973877364,
+    "current_ratio": null,
+    "roa": -0.0010978323198433764,
+    "bv": 75230.02319391174,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 541339000.0,
+      "2025-Q2": 547524000.0,
+      "2025-Q3": 852397000.0,
+      "2026-Q1": 263307000.0,
+      "2026-Q2": 122422000.0,
+      "2026-Q3": 149521000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.46,
+      "2025-Q3": -0.46,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0,
+      "2026-Q3": -0.0
+    },
+    "net_income": {
+      "2025-Q1": 3708729000000.0,
+      "2025-Q2": -1532929000000.0,
+      "2025-Q3": -4326324000000.0,
+      "2026-Q1": 1795370000000.0,
+      "2026-Q2": -266263000000.0,
+      "2026-Q3": -382405000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 523395661824,
+    "enterprise_value": 2760716845056,
+    "shares_outstanding": 6542445783
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6618,
+    "vol_trend": 0.296,
+    "price_chg_20d": -16.49
+  },
+  "neraca": {
+    "aset": 2896272903.0,
+    "aset_lancar": null,
+    "kas": 114.0,
+    "piutang_usaha": 570037868.0,
+    "persediaan": null,
+    "aset_tetap": 4871266.0,
+    "liabilitas": 2404084555.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 986005000.0,
+    "ekuitas": 492188348.0,
+    "ekuitas_induk": 492188348.0,
+    "modal_saham": null,
+    "saldo_laba": -504458575.0
+  },
+  "laba_rugi": {
+    "pendapatan": 535250.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1041800.0,
+    "beban_pajak": 104902.0,
+    "laba_bersih": 1146702.0,
+    "laba_induk": 1146702.0,
+    "eps_basic": 0.00018,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -256303309000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 45351.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "PGAS",
+  "nama": "PT Perusahaan Gas Negara (Persero) Tbk",
+  "sektor": "Utilities",
+  "industri": "Utilities - Regulated Gas",
+  "harga": 1485.0,
+  "update": "2026-11-09 17:00",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.008989938283538345,
+    "roe": 0.13571875106218115,
+    "eps": null,
+    "eps_annualized": 0.01611290060180544,
+    "de": 0.8368654899462876,
+    "margin_net": 0.0965005022735961,
+    "current_ratio": 1.8101926981666552,
+    "roa": 0.06422759316317304,
+    "bv": 117451.74207383922,
+    "pcf": 0.048910689083922466,
+    "div_yield": 989.2749650231559,
+    "payout_ratio": 91173734.59715736
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 966563402000000.0,
+      "2025-Q2": 971229131000000.0,
+      "2025-Q3": 985108748000000.0,
+      "2026-Q1": 929561551000000.0,
+      "2026-Q2": 1075164186000000.0,
+      "2026-Q3": 1014491077000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.01,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 62016053000000.0,
+      "2025-Q2": 82407788000000.0,
+      "2025-Q3": 93468669000000.0,
+      "2026-Q1": 90447959000000.0,
+      "2026-Q2": 111831559000000.0,
+      "2026-Q3": 90671241000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 35998641684480,
+    "enterprise_value": 34665939337216,
+    "shares_outstanding": 24241508195
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.069,
+    "vol_trend": 2.261,
+    "price_chg_20d": 0.7
+  },
+  "neraca": {
+    "aset": 6016408353.0,
+    "aset_lancar": 2014493660.0,
+    "kas": 1277511332.0,
+    "piutang_usaha": 260205724.0,
+    "persediaan": 102625774.0,
+    "aset_tetap": 2948706624.0,
+    "liabilitas": 2382729589.0,
+    "liabilitas_jangka_pendek": 1112861444.0,
+    "liabilitas_jangka_panjang": 1269868145.0,
+    "utang_usaha": 260205724.0,
+    "utang_bank": 35000000.0,
+    "ekuitas": 2847207368.0,
+    "ekuitas_induk": 2847207368.0,
+    "modal_saham": null,
+    "saldo_laba": 2758778649.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3019216814.0,
+    "beban_pokok": 2448074733.0,
+    "laba_kotor": 571142081.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 486805510.0,
+    "beban_pajak": -89556112.0,
+    "laba_bersih": 292950759.0,
+    "laba_induk": 292950759.0,
+    "eps_basic": 0.012084675451354082,
+    "eps_diluted": 0.012084675451354082
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 736007616,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 111985816.0,
+    "dividen_dibayar": 356125530.0
+  }
+}

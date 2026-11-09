@@ -1,0 +1,102 @@
+{
+  "kode": "SICO",
+  "nama": "PT Sigma Energy Compressindo Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 90.0,
+  "update": "2026-11-09 15:06",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.279429415106136e-07,
+    "roe": 0.07609904273940048,
+    "eps": null,
+    "eps_annualized": 12.479999999999999,
+    "de": 0.3399950131376873,
+    "margin_net": 0.06586664379834753,
+    "current_ratio": 6.658477234757716,
+    "roa": 0.05498921819088162,
+    "bv": 147550899.9140869,
+    "pcf": 5.700563545720574e-06,
+    "div_yield": 2222222.221001325,
+    "payout_ratio": 16025641.016836481
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.2740172016e+16,
+      "2025-Q2": 4.1054550261e+16,
+      "2025-Q3": 4.4010984251e+16,
+      "2026-Q1": 3.8981285138e+16,
+      "2026-Q2": 3.7733515763e+16,
+      "2026-Q3": 3.4417872088e+16
+    },
+    "eps": {
+      "2025-Q1": 6.08,
+      "2025-Q2": 3.14,
+      "2025-Q3": 1.87,
+      "2026-Q1": 7.16,
+      "2026-Q2": 1.77,
+      "2026-Q3": 0.43
+    },
+    "net_income": {
+      "2025-Q1": 5529913481000000.0,
+      "2025-Q2": 2865230300000000.0,
+      "2025-Q3": 1697961752000000.0,
+      "2026-Q1": 6520704440000000.0,
+      "2026-Q2": 1606071285000000.0,
+      "2026-Q3": 394054532000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 81906999296,
+    "enterprise_value": 103236190208,
+    "shares_outstanding": 910077764
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1379,
+    "vol_trend": 1.069,
+    "price_chg_20d": -24.37
+  },
+  "neraca": {
+    "aset": 185832647657.0,
+    "aset_lancar": 71509285143.0,
+    "kas": 19299019814.0,
+    "piutang_usaha": 16710599541.0,
+    "persediaan": 13268496642.0,
+    "aset_tetap": 15754054055.0,
+    "liabilitas": 45655479994.0,
+    "liabilitas_jangka_pendek": 10739585437.0,
+    "liabilitas_jangka_panjang": 34915894557.0,
+    "utang_usaha": 16710599541.0,
+    "utang_bank": 2875033333.0,
+    "ekuitas": 134282793070.0,
+    "ekuitas_induk": 134282793070.0,
+    "modal_saham": null,
+    "saldo_laba": 9100548840.0
+  },
+  "laba_rugi": {
+    "pendapatan": 111132672989.0,
+    "beban_pokok": 78212096634.0,
+    "laba_kotor": 32920576355.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10580002807.0,
+    "beban_pajak": -2021023672.0,
+    "laba_bersih": 8520830257.0,
+    "laba_induk": 8520830257.0,
+    "eps_basic": 9.36,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 14368228352,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15754054055.0,
+    "dividen_dibayar": 1820155527.0
+  }
+}

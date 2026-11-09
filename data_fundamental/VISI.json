@@ -1,0 +1,102 @@
+{
+  "kode": "VISI",
+  "nama": "PT Satu Visi Putra Tbk",
+  "sektor": "Industrials",
+  "industri": "Industrial Distribution",
+  "harga": 590.0,
+  "update": "2026-11-09 15:46",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7371.221577159299,
+    "roe": -0.012547963421024459,
+    "eps": -0.0006968686035629355,
+    "eps_annualized": -1.893333333333333,
+    "de": 0.07723730694899116,
+    "margin_net": -0.008706394723776238,
+    "current_ratio": 13.55214240705734,
+    "roa": -0.011648281525417524,
+    "bv": 0.055536391060505716,
+    "pcf": 1.533324132764283e-05,
+    "div_yield": 163.08866956048092,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 75372000.0,
+      "2025-Q2": 80916000.0,
+      "2025-Q3": 93791000.0,
+      "2026-Q1": 72744000.0,
+      "2026-Q2": 66283000.0,
+      "2026-Q3": 22971000.0
+    },
+    "eps": {
+      "2025-Q1": -0.07,
+      "2025-Q2": 0.15,
+      "2025-Q3": 0.71,
+      "2026-Q1": -0.0,
+      "2026-Q2": -1.36,
+      "2026-Q3": -0.06
+    },
+    "net_income": {
+      "2025-Q1": -201000.0,
+      "2025-Q2": 527000.0,
+      "2025-Q3": 2133000.0,
+      "2026-Q1": -3312000.0,
+      "2026-Q2": -433000.0,
+      "2026-Q3": -615000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1885477273600,
+    "enterprise_value": 1727771443200,
+    "shares_outstanding": 3195724400
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.385,
+    "vol_trend": 0.379,
+    "price_chg_20d": -45.41
+  },
+  "neraca": {
+    "aset": 191187.0,
+    "aset_lancar": 172058.0,
+    "kas": 101985.0,
+    "piutang_usaha": 23893.0,
+    "persediaan": 35505.0,
+    "aset_tetap": 3261.0,
+    "liabilitas": 13708.0,
+    "liabilitas_jangka_pendek": 12696.0,
+    "liabilitas_jangka_panjang": 1012.0,
+    "utang_usaha": 23893.0,
+    "utang_bank": 62197.0,
+    "ekuitas": 177479.0,
+    "ekuitas_induk": 177479.0,
+    "modal_saham": null,
+    "saldo_laba": 2500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 161998.0,
+    "beban_pokok": 136064.0,
+    "laba_kotor": 25934.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4360.0,
+    "beban_pajak": -966.0,
+    "laba_bersih": -4360.0,
+    "laba_induk": -4360.0,
+    "eps_basic": -1.42,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 122966654976,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3261.0,
+    "dividen_dibayar": 3075.0
+  }
+}

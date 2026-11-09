@@ -1,0 +1,102 @@
+{
+  "kode": "SWID",
+  "nama": "PT Saraswanti Indoland Development Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 84.0,
+  "update": "2026-11-09 15:09",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.7020457162610263e-06,
+    "roe": 0.11654038977370781,
+    "eps": null,
+    "eps_annualized": 5.706666666666667,
+    "de": 1.0877240915482416,
+    "margin_net": 0.1992302617906198,
+    "current_ratio": 1.378522054546271,
+    "roa": 0.055821739206583704,
+    "bv": 53145369.73217377,
+    "pcf": 4.8352483472542565e-06,
+    "div_yield": 1696070.9997661528,
+    "payout_ratio": 24965531.07132421
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.1064281115e+16,
+      "2025-Q2": 5.688877618e+16,
+      "2025-Q3": 4.6208824344e+16,
+      "2026-Q1": 2.8589967609e+16,
+      "2026-Q2": 3.2227803438e+16,
+      "2026-Q3": 6.0380495526e+16
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": 3.47,
+      "2025-Q3": 1.91,
+      "2026-Q1": 0.59,
+      "2026-Q2": 0.64,
+      "2026-Q3": 3.05
+    },
+    "net_income": {
+      "2025-Q1": 61674868000000.0,
+      "2025-Q2": 1.8652830379e+16,
+      "2025-Q3": 1.0329671665e+16,
+      "2026-Q1": 3175161622000000.0,
+      "2026-Q2": 3471462943000000.0,
+      "2026-Q3": 1.6376262319e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 452341628928,
+    "enterprise_value": 615854571520,
+    "shares_outstanding": 5385019201
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3039,
+    "vol_trend": 0.311,
+    "price_chg_20d": -18.27
+  },
+  "neraca": {
+    "aset": 597483328593.0,
+    "aset_lancar": 215050570583.0,
+    "kas": 5057412311.0,
+    "piutang_usaha": 7196156325.0,
+    "persediaan": 909318000.0,
+    "aset_tetap": 270318147313.0,
+    "liabilitas": 311294492141.0,
+    "liabilitas_jangka_pendek": 156000819772.0,
+    "liabilitas_jangka_panjang": 155293672369.0,
+    "utang_usaha": 7196156325.0,
+    "utang_bank": 9200000000.0,
+    "ekuitas": 286188836452.0,
+    "ekuitas_induk": 286188836452.0,
+    "modal_saham": null,
+    "saldo_laba": 15300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 121198266573.0,
+    "beban_pokok": 46797194634.0,
+    "laba_kotor": 74401071939.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 26533312538.0,
+    "beban_pajak": -3510425654.0,
+    "laba_bersih": 23022886884.0,
+    "laba_induk": 23022886884.0,
+    "eps_basic": 4.28,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 93550854144,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 25811748034.0,
+    "dividen_dibayar": 7672034916.0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "IATA",
+  "nama": "PT Karya Pacific Energy Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 72.0,
+  "update": "2026-11-09 16:36",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.02894678195580212,
+    "roe": 0.01291561104854459,
+    "eps": 54.42099439196334,
+    "eps_annualized": 3.9999999999999996e-05,
+    "de": 0.8429569456656623,
+    "margin_net": 0.021879342478917957,
+    "current_ratio": 0.803314431127256,
+    "roa": 0.007023915701214212,
+    "bv": 4213.582631701799,
+    "pcf": 0.7071455537595982,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 22566703000000.0,
+      "2025-Q2": 17399495000000.0,
+      "2025-Q3": 22425090000000.0,
+      "2026-Q1": 21663544000000.0,
+      "2026-Q2": 11718454000000.0,
+      "2026-Q3": 21986007000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 1641997000000.0,
+      "2025-Q2": 3827194000000.0,
+      "2025-Q3": 1701096000000.0,
+      "2026-Q1": 473057000.0,
+      "2026-Q2": 487978000.0,
+      "2026-Q3": 4733000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2251859689472,
+    "enterprise_value": 2220638863360,
+    "shares_outstanding": 31275829981
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1484,
+    "vol_trend": 0.505,
+    "price_chg_20d": -33.02
+  },
+  "neraca": {
+    "aset": 242323775.0,
+    "aset_lancar": 62133015.0,
+    "kas": 1454209.0,
+    "piutang_usaha": 8011764.0,
+    "persediaan": 37529667.0,
+    "aset_tetap": 26883858.0,
+    "liabilitas": 111087643.0,
+    "liabilitas_jangka_pendek": 77345822.0,
+    "liabilitas_jangka_panjang": 33741821.0,
+    "utang_usaha": 8011764.0,
+    "utang_bank": 6776652.0,
+    "ekuitas": 131783294.0,
+    "ekuitas_induk": 131783294.0,
+    "modal_saham": null,
+    "saldo_laba": 263894.0
+  },
+  "laba_rugi": {
+    "pendapatan": 55368005.0,
+    "beban_pokok": 33656756.0,
+    "laba_kotor": 21711249.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2458866.0,
+    "beban_pajak": -1565994.0,
+    "laba_bersih": 965768.0,
+    "laba_induk": 965768.0,
+    "eps_basic": 3e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3184436,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1001708.0,
+    "dividen_dibayar": null
+  }
+}

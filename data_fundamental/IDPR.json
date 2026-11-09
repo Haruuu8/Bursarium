@@ -1,0 +1,102 @@
+{
+  "kode": "IDPR",
+  "nama": "PT Indonesia Pondasi Raya Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 200.0,
+  "update": "2026-11-09 17:19",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.254978143919448e-06,
+    "roe": 0.02586817731109028,
+    "eps": null,
+    "eps_annualized": 12.159999999999998,
+    "de": 1.6129372021709945,
+    "margin_net": 0.056378452447036626,
+    "current_ratio": 1.198239479273572,
+    "roa": 9853.601303893098,
+    "bv": 347329086.98352474,
+    "pcf": null,
+    "div_yield": 2500000.0,
+    "payout_ratio": 41118421.05263159
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.888321308e+17,
+      "2025-Q2": 2.78671519431e+17,
+      "2025-Q3": 3.17978746083e+17,
+      "2026-Q1": 4.00930952047e+17,
+      "2026-Q2": 4.9234155334800006e+17,
+      "2026-Q3": -8.92042505141687e+17
+    },
+    "eps": {
+      "2025-Q1": 0.53,
+      "2025-Q2": 0.67,
+      "2025-Q3": -0.14,
+      "2026-Q1": 2.46,
+      "2026-Q2": 1.81,
+      "2026-Q3": 4.85
+    },
+    "net_income": {
+      "2025-Q1": 1063638304000000.0,
+      "2025-Q2": 1341794324000000.0,
+      "2025-Q3": -274022840000000.0,
+      "2026-Q1": 4685486363000000.0,
+      "2026-Q2": 3869720181000000.0,
+      "2026-Q3": 9715311422000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 400600006656,
+    "enterprise_value": 944942612480,
+    "shares_outstanding": 2003000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.9088,
+    "vol_trend": 3.465,
+    "price_chg_20d": -15.97
+  },
+  "neraca": {
+    "aset": 1826387588758.0,
+    "aset_lancar": 1234084507727.0,
+    "kas": 5534260562.0,
+    "piutang_usaha": 226353311752.0,
+    "persediaan": 347523070049.0,
+    "aset_tetap": 499551607932.0,
+    "liabilitas": 1122120671601.0,
+    "liabilitas_jangka_pendek": 1029914744985.0,
+    "liabilitas_jangka_panjang": 92205926616.0,
+    "utang_usaha": 226353311752.0,
+    "utang_bank": 2900000052.0,
+    "ekuitas": 695700161228.0,
+    "ekuitas_induk": 695700161228.0,
+    "modal_saham": null,
+    "saldo_laba": 40600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1230000253313.0,
+    "beban_pokok": 1070410300601.0,
+    "laba_kotor": 159589952712.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 21487044595.0,
+    "beban_pajak": -2138899101.0,
+    "laba_bersih": 18270517966.0,
+    "laba_induk": 18270517966.0,
+    "eps_basic": 9.12,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -8412279296,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 18509029359.0,
+    "dividen_dibayar": 10015000000.0
+  }
+}

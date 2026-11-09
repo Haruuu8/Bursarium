@@ -1,0 +1,96 @@
+{
+  "kode": "BISI",
+  "nama": "PT BISI International Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Agricultural Inputs",
+  "harga": 505.0,
+  "update": "2026-11-09 16:15",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.43507353173452185,
+    "ps": 1036.19004888218,
+    "roe": 3.9575896639164656e-05,
+    "eps": 0.04593666666666667,
+    "eps_annualized": 29.333333333333332,
+    "de": 0.08007420660105624,
+    "margin_net": 0.09425567698775791,
+    "current_ratio": 12.5395832295859,
+    "roa": 3.656289183528684e-05,
+    "bv": 1160.7233333333334,
+    "pcf": 6.390652492477348e-06,
+    "div_yield": 5152.013201320132,
+    "payout_ratio": 88696.59090909091
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 317393000.0,
+      "2025-Q2": 309530000.0,
+      "2025-Q3": 448081000.0,
+      "2026-Q1": 387083000.0
+    },
+    "eps": {
+      "2025-Q1": 10.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 20.0,
+      "2026-Q1": 15.67
+    },
+    "net_income": {
+      "2025-Q1": 29671000.0,
+      "2025-Q2": 824000.0,
+      "2025-Q3": 60308000.0,
+      "2026-Q1": 47007000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1515000037376,
+    "enterprise_value": 1218034008064,
+    "shares_outstanding": 3000000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1529,
+    "vol_trend": 1.216,
+    "price_chg_20d": -26.95
+  },
+  "neraca": {
+    "aset": 3769122.0,
+    "aset_lancar": 2769856.0,
+    "kas": 335086.0,
+    "piutang_usaha": 328624.0,
+    "persediaan": 1969404.0,
+    "aset_tetap": 38879.0,
+    "liabilitas": 278832.0,
+    "liabilitas_jangka_pendek": 220889.0,
+    "liabilitas_jangka_panjang": 57943.0,
+    "utang_usaha": 328624.0,
+    "utang_bank": 16806.0,
+    "ekuitas": 3482170.0,
+    "ekuitas_induk": 3482170.0,
+    "modal_saham": null,
+    "saldo_laba": 60000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1267668.0,
+    "beban_pokok": 869320.0,
+    "laba_kotor": 398348.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 84344.0,
+    "beban_pajak": -18520.0,
+    "laba_bersih": 66160.0,
+    "laba_induk": 66160.0,
+    "eps_basic": 22.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 237064994816,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 38879.0,
+    "dividen_dibayar": 78053.0
+  }
+}

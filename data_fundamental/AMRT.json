@@ -1,0 +1,96 @@
+{
+  "kode": "AMRT",
+  "nama": "PT Sumber Alfaria Trijaya Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Grocery Stores",
+  "harga": 945.0,
+  "update": "2026-11-09 16:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 13.702729658043836,
+    "pb": 2.136631619271808,
+    "ps": 0.2942886179645522,
+    "roe": 0.15592744457434093,
+    "eps": 68.96436137782679,
+    "eps_annualized": 7.790666666666666e-05,
+    "de": 1.2494054928886116,
+    "margin_net": 0.021476641903374165,
+    "current_ratio": 1.0093278176295601,
+    "roa": 0.06701352738842896,
+    "bv": 442.2849458354774,
+    "pcf": 4.262978924554419,
+    "div_yield": 4.67734137106348,
+    "payout_ratio": 56735678.53399351
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 30663189000000.0,
+      "2026-Q1": 35240388000000.0,
+      "2026-Q2": 32715260000000.0,
+      "2026-Q3": 33332518000000.0
+    },
+    "eps": {
+      "2025-Q3": 10.38,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q3": 431095000000.0,
+      "2026-Q1": 1075532000000.0,
+      "2026-Q2": 949587000000.0,
+      "2026-Q3": 377658000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 38831784984576,
+    "enterprise_value": 39891236814848,
+    "shares_outstanding": 41091832700
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1857,
+    "vol_trend": 3.121,
+    "price_chg_20d": -21.37
+  },
+  "neraca": {
+    "aset": 42288059.0,
+    "aset_lancar": 20747351.0,
+    "kas": 3565356.0,
+    "piutang_usaha": 2687909.0,
+    "persediaan": 13613264.0,
+    "aset_tetap": 279683.0,
+    "liabilitas": 22707069.0,
+    "liabilitas_jangka_pendek": 20555612.0,
+    "liabilitas_jangka_panjang": 2151457.0,
+    "utang_usaha": 2687909.0,
+    "utang_bank": 39422.0,
+    "ekuitas": 18174299.0,
+    "ekuitas_induk": 18174299.0,
+    "modal_saham": null,
+    "saldo_laba": 18000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 101288166.0,
+    "beban_pokok": 79085434.0,
+    "laba_kotor": 22202732.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3197494.0,
+    "beban_pajak": -638609.0,
+    "laba_bersih": 2402777.0,
+    "laba_induk": 2402777.0,
+    "eps_basic": 5.843e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 9109071986688,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 279683.0,
+    "dividen_dibayar": 1816295.0
+  }
+}

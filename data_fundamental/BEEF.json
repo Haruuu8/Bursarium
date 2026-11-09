@@ -1,0 +1,102 @@
+{
+  "kode": "BEEF",
+  "nama": "PT Estika Tata Tiara Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 376.0,
+  "update": "2026-11-09 17:33",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.5855482900784549,
+    "roe": 0.13653630887050375,
+    "eps": null,
+    "eps_annualized": 4.08,
+    "de": 5.1552109927864915,
+    "margin_net": 9642.513952445086,
+    "current_ratio": 1.000700363597136,
+    "roa": 22173.885159300273,
+    "bv": 45348951.034546755,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2368037448902.0,
+      "2025-Q2": 1085513505559.0,
+      "2025-Q3": 1564137335306.0,
+      "2026-Q1": 1270515396063.0,
+      "2026-Q2": 1105511470522.0,
+      "2026-Q3": 1274117695233.0
+    },
+    "eps": {
+      "2025-Q1": 6.06,
+      "2025-Q2": 3.02,
+      "2025-Q3": 3.11,
+      "2026-Q1": 2.6,
+      "2026-Q2": 0.14,
+      "2026-Q3": 0.32
+    },
+    "net_income": {
+      "2025-Q1": 4.3585156243e+16,
+      "2025-Q2": 3.018351612e+16,
+      "2025-Q3": 2.5285915267e+16,
+      "2026-Q1": 2.1184151415e+16,
+      "2026-Q2": 1124484955000000.0,
+      "2026-Q3": 2684234308000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3053213712384,
+    "enterprise_value": 4580832706560,
+    "shares_outstanding": 8120249598
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3837,
+    "vol_trend": 0.705,
+    "price_chg_20d": -13.08
+  },
+  "neraca": {
+    "aset": 2267477511667.0,
+    "aset_lancar": 1257982956164.0,
+    "kas": 28092047233.0,
+    "piutang_usaha": 50492293547.0,
+    "persediaan": 824552453335.0,
+    "aset_tetap": 904853422115.0,
+    "liabilitas": 1898379648255.0,
+    "liabilitas_jangka_pendek": 1257102527316.0,
+    "liabilitas_jangka_panjang": 641277120939.0,
+    "utang_usaha": 50492293547.0,
+    "utang_bank": 1141296356446.0,
+    "ekuitas": 368244801408.0,
+    "ekuitas_induk": 368244801408.0,
+    "modal_saham": null,
+    "saldo_laba": 6271589469.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3650144561818.0,
+    "beban_pokok": 3380725310726.0,
+    "laba_kotor": 269419251092.0,
+    "beban_operasi": 9556031149.0,
+    "laba_operasi": 259863219943.0,
+    "laba_sebelum_pajak": 28484208732.0,
+    "beban_pajak": -3595690939.0,
+    "laba_bersih": 24992870678.0,
+    "laba_induk": 24992870678.0,
+    "eps_basic": 3.06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -260700864512,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9215873789.0,
+    "dividen_dibayar": null
+  }
+}

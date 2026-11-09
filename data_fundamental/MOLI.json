@@ -1,0 +1,102 @@
+{
+  "kode": "MOLI",
+  "nama": "PT Madusari Murni Indah Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 298.0,
+  "update": "2026-11-09 17:29",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0005285169737272075,
+    "roe": 0.08855594394896896,
+    "eps": null,
+    "eps_annualized": 3.9999999999999996e-05,
+    "de": 0.22963162250545155,
+    "margin_net": 0.07538798327147929,
+    "current_ratio": 4.587425598683132,
+    "roa": 0.0634949330485903,
+    "bv": 480000.54812773457,
+    "pcf": 4.7189583437659755e-06,
+    "div_yield": 3264.4104532063493,
+    "payout_ratio": 24319857876.387306
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 366074361000000.0,
+      "2025-Q2": 332243818000000.0,
+      "2025-Q3": 385098440000000.0,
+      "2026-Q1": 319166487000000.0,
+      "2026-Q2": 411490152000000.0,
+      "2026-Q3": 420170807000000.0
+    },
+    "eps": {
+      "2025-Q1": 2.72,
+      "2025-Q2": 4.57,
+      "2025-Q3": -7.27,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.01,
+      "2026-Q3": -0.02
+    },
+    "net_income": {
+      "2025-Q1": 7406888000000.0,
+      "2025-Q2": 12461460000000.0,
+      "2025-Q3": 24945616000000.0,
+      "2026-Q1": 28716967000000.0,
+      "2026-Q2": 34504647000000.0,
+      "2026-Q3": 27623125000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 811762909184,
+    "enterprise_value": 1043432865792,
+    "shares_outstanding": 2724036581
+  },
+  "akumulasi": {
+    "score": 4.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0221,
+    "vol_trend": 0.378,
+    "price_chg_20d": -21.21
+  },
+  "neraca": {
+    "aset": 1823615672.0,
+    "aset_lancar": 1048242108.0,
+    "kas": 95126148.0,
+    "piutang_usaha": 362888349.0,
+    "persediaan": 387603179.0,
+    "aset_tetap": 754206797.0,
+    "liabilitas": 300252314.0,
+    "liabilitas_jangka_pendek": 228503348.0,
+    "liabilitas_jangka_panjang": 71748966.0,
+    "utang_usaha": 362888349.0,
+    "utang_bank": 72835307.0,
+    "ekuitas": 1307539052.0,
+    "ekuitas_induk": 1307539052.0,
+    "modal_saham": null,
+    "saldo_laba": 6250000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1150827446.0,
+    "beban_pokok": 769333165.0,
+    "laba_kotor": 381494281.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 144785784.0,
+    "beban_pajak": -36446812.0,
+    "laba_bersih": 90844739.0,
+    "laba_induk": 90844739.0,
+    "eps_basic": 3e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 172021628928,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 74639052.0,
+    "dividen_dibayar": 26499273.0
+  }
+}

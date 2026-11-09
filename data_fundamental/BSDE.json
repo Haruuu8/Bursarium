@@ -1,0 +1,102 @@
+{
+  "kode": "BSDE",
+  "nama": "PT Bumi Serpong Damai Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 462.0,
+  "update": "2026-11-09 16:19",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.21396258258022727,
+    "ps": 0.9751082450123011,
+    "roe": 18677.0988555364,
+    "eps": null,
+    "eps_annualized": 53.853550709950994,
+    "de": 0.6240911114691825,
+    "margin_net": 85118.58880799648,
+    "current_ratio": 3.436615416849253,
+    "roa": 10355.455206184322,
+    "bv": 2159.2560457470117,
+    "pcf": null,
+    "div_yield": 2702928.500108332,
+    "payout_ratio": 23187941.195849624
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2700904014931.0,
+      "2025-Q2": 3689852468453.0,
+      "2025-Q3": 2372024732117.0,
+      "2026-Q1": 2368795970407.0,
+      "2026-Q2": 2382857125253.0,
+      "2026-Q3": 2784953948403.0
+    },
+    "eps": {
+      "2025-Q1": 15.33,
+      "2025-Q2": 46.26,
+      "2025-Q3": 3.61,
+      "2026-Q1": 13.28,
+      "2026-Q2": 15.6,
+      "2026-Q3": 11.51
+    },
+    "net_income": {
+      "2025-Q1": 3.20620755668e+17,
+      "2025-Q2": -3.19332707767267e+17,
+      "2025-Q3": -1286684329486886.0,
+      "2026-Q1": 2.77628647645e+17,
+      "2026-Q2": 3.26267377319e+17,
+      "2026-Q3": 2.40799413172e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 9661989257216,
+    "enterprise_value": 28013240516608,
+    "shares_outstanding": 20913395112
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1407,
+    "vol_trend": 0.625,
+    "price_chg_20d": -14.44
+  },
+  "neraca": {
+    "aset": 81445840575200.0,
+    "aset_lancar": 30694945994284.0,
+    "kas": 6913957146204.0,
+    "piutang_usaha": 96139684742.0,
+    "persediaan": 5777427169.0,
+    "aset_tetap": 1280417265629.0,
+    "liabilitas": 28182316250359.0,
+    "liabilitas_jangka_pendek": 8931737267950.0,
+    "liabilitas_jangka_panjang": 19250578982409.0,
+    "utang_usaha": 96139684742.0,
+    "utang_bank": 1668279095310.0,
+    "ekuitas": 45157374832682.0,
+    "ekuitas_induk": 45157374832682.0,
+    "modal_saham": null,
+    "saldo_laba": 55812873217.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7536607044063.0,
+    "beban_pokok": 2511797721763.0,
+    "laba_kotor": 5024809322300.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1011609104793.0,
+    "beban_pajak": -16513710003.0,
+    "laba_bersih": 844695438136.0,
+    "laba_induk": 844695438136.0,
+    "eps_basic": 40.39016303246325,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1574928384000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 50127081292.0,
+    "dividen_dibayar": 261156641972.0
+  }
+}

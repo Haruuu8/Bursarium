@@ -1,0 +1,96 @@
+{
+  "kode": "GPSO",
+  "nama": "PT Geoprima Solusi Tbk",
+  "sektor": "Technology",
+  "industri": "Scientific & Technical Instruments",
+  "harga": 183.0,
+  "update": "2026-11-09 14:58",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.739124089211956e-05,
+    "roe": -0.06744197339401124,
+    "eps": null,
+    "eps_annualized": -3.4799999999999995,
+    "de": 0.1465481440753115,
+    "margin_net": -1.3040515231964682,
+    "current_ratio": 8.371310705235267,
+    "roa": -0.05882175444835161,
+    "bv": 94633672.15932557,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 949171610000000.0,
+      "2025-Q2": 1387006742000000.0,
+      "2025-Q3": 786415269000000.0,
+      "2026-Q1": 466882434000000.0
+    },
+    "eps": {
+      "2025-Q1": -2.93,
+      "2025-Q2": -1.18,
+      "2025-Q3": -2.08,
+      "2026-Q1": -0.84
+    },
+    "net_income": {
+      "2025-Q1": -1952507391000000.0,
+      "2025-Q2": -786665805000000.0,
+      "2025-Q3": -1386691230000000.0,
+      "2026-Q1": -554997291000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 134214967296,
+    "enterprise_value": 125964804096,
+    "shares_outstanding": 733415103
+  },
+  "akumulasi": {
+    "score": 6.1,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1098,
+    "vol_trend": 0.649,
+    "price_chg_20d": -15.91
+  },
+  "neraca": {
+    "aset": 79577050377.0,
+    "aset_lancar": 58744710190.0,
+    "kas": 1430901978.0,
+    "piutang_usaha": 263252312.0,
+    "persediaan": 15435566939.0,
+    "aset_tetap": 17903018635.0,
+    "liabilitas": 10171285963.0,
+    "liabilitas_jangka_pendek": 7017385002.0,
+    "liabilitas_jangka_panjang": 3153900961.0,
+    "utang_usaha": 263252312.0,
+    "utang_bank": null,
+    "ekuitas": 69405764414.0,
+    "ekuitas_induk": 69405764414.0,
+    "modal_saham": null,
+    "saldo_laba": 5000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9182534569.0,
+    "beban_pokok": 8032367503.0,
+    "laba_kotor": 1150167066.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1737976775.0,
+    "beban_pajak": null,
+    "laba_bersih": -1737976775.0,
+    "laba_induk": -1737976775.0,
+    "eps_basic": -2.61,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -6308928000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 28469798000.0,
+    "dividen_dibayar": null
+  }
+}

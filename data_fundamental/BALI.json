@@ -1,0 +1,102 @@
+{
+  "kode": "BALI",
+  "nama": "PT Bali Towerindo Sentra Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 1235.0,
+  "update": "2026-11-09 16:10",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.9849091734942867,
+    "ps": 3.9788098909351566e-06,
+    "roe": 62189.184055689955,
+    "eps": null,
+    "eps_annualized": 35.599999999999994,
+    "de": 1.646167997097622,
+    "margin_net": 0.12466008215094701,
+    "current_ratio": 0.6189802750896612,
+    "roa": 23501.779374451988,
+    "bv": 622.1947162579098,
+    "pcf": 6.310214397664302e-06,
+    "div_yield": 2429155.3540161946,
+    "payout_ratio": 84269855.68005621
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.06430027185e+17,
+      "2025-Q2": 3.02417667531e+17,
+      "2025-Q3": 3.13168964388e+17,
+      "2026-Q1": 3.08112063484e+17,
+      "2026-Q2": 3.00568136434e+17,
+      "2026-Q3": 2.9942600859700006e+17
+    },
+    "eps": {
+      "2025-Q1": 12.45,
+      "2025-Q2": 10.81,
+      "2025-Q3": 12.0,
+      "2026-Q1": 13.21,
+      "2026-Q2": 9.18,
+      "2026-Q3": 4.31
+    },
+    "net_income": {
+      "2025-Q1": 4.8995082848e+16,
+      "2025-Q2": 4.2530726767e+16,
+      "2025-Q3": 4.7197228062e+16,
+      "2026-Q1": 5.1967396973e+16,
+      "2026-Q2": 3.6136284963e+16,
+      "2026-Q3": 1.6943353385e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4859221770240,
+    "enterprise_value": 8369239752704,
+    "shares_outstanding": 3934592500
+  },
+  "akumulasi": {
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1149,
+    "vol_trend": 0.466,
+    "price_chg_20d": -4.36
+  },
+  "neraca": {
+    "aset": 6477988792138.0,
+    "aset_lancar": 854852032467.0,
+    "kas": 450785512381.0,
+    "piutang_usaha": 228257512934.0,
+    "persediaan": 126319911038.0,
+    "aset_tetap": 5486463212672.0,
+    "liabilitas": 4029955335937.0,
+    "liabilitas_jangka_pendek": 1381065062765.0,
+    "liabilitas_jangka_panjang": 2648890273172.0,
+    "utang_usaha": 228257512934.0,
+    "utang_bank": 459806827168.0,
+    "ekuitas": 2448082664128.0,
+    "ekuitas_induk": 2448082664128.0,
+    "modal_saham": null,
+    "saldo_laba": 33605380519.0
+  },
+  "laba_rugi": {
+    "pendapatan": 908106208515.0,
+    "beban_pokok": 450142716834.0,
+    "laba_kotor": 457963491681.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 134951263571.0,
+    "beban_pajak": -29904479586.0,
+    "laba_bersih": 105047035321.0,
+    "laba_induk": 105047035321.0,
+    "eps_basic": 26.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 770056519680,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8716524786.0,
+    "dividen_dibayar": 118038045000.0
+  }
+}

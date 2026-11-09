@@ -1,0 +1,102 @@
+{
+  "kode": "JECC",
+  "nama": "PT Jembo Cable Company Tbk",
+  "sektor": "Industrials",
+  "industri": "Electrical Equipment & Parts",
+  "harga": 655.0,
+  "update": "2026-11-09 16:44",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00012027124150974914,
+    "roe": 0.1150321627414689,
+    "eps": null,
+    "eps_annualized": 116.58992416225749,
+    "de": 2.3167292047509274,
+    "margin_net": 0.02657465363401684,
+    "current_ratio": 1.214497922445575,
+    "roa": 0.034682319460927986,
+    "bv": 1258136.7076719576,
+    "pcf": null,
+    "div_yield": 5710.650672482734,
+    "payout_ratio": 32082.328017218646
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1027358957000000.0,
+      "2025-Q2": 863233648000000.0,
+      "2025-Q3": 1101631577000000.0,
+      "2026-Q1": 856562920000000.0,
+      "2026-Q2": 951665034000000.0,
+      "2026-Q3": 1207334187000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.04,
+      "2025-Q2": 0.02,
+      "2025-Q3": 0.06,
+      "2026-Q1": -21.53,
+      "2026-Q2": 48.19,
+      "2026-Q3": 60.78
+    },
+    "net_income": {
+      "2025-Q1": 32750017000000.0,
+      "2025-Q2": 15170243000000.0,
+      "2025-Q3": 43306510000000.0,
+      "2026-Q1": -16274005000000.0,
+      "2026-Q2": 36430845000000.0,
+      "2026-Q3": 45949647000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 495179988992,
+    "enterprise_value": 1663667535872,
+    "shares_outstanding": 756000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4727,
+    "vol_trend": 0.869,
+    "price_chg_20d": -15.44
+  },
+  "neraca": {
+    "aset": 3154719716.0,
+    "aset_lancar": 2561488485.0,
+    "kas": 151247396.0,
+    "piutang_usaha": 634878014.0,
+    "persediaan": 1039109644.0,
+    "aset_tetap": 528770297.0,
+    "liabilitas": 2203560113.0,
+    "liabilitas_jangka_pendek": 2109092521.0,
+    "liabilitas_jangka_panjang": 94467592.0,
+    "utang_usaha": 634878014.0,
+    "utang_bank": 1330550546.0,
+    "ekuitas": 951151351.0,
+    "ekuitas_induk": 951151351.0,
+    "modal_saham": null,
+    "saldo_laba": 40000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3015562141.0,
+    "beban_pokok": 2786210423.0,
+    "laba_kotor": 229351718.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 84960765.0,
+    "beban_pajak": -18853818.0,
+    "laba_bersih": 66106487.0,
+    "laba_induk": 66106487.0,
+    "eps_basic": 87.44244312169312,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -242580750336,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 21952684.0,
+    "dividen_dibayar": 28278000.0
+  }
+}

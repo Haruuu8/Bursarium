@@ -1,0 +1,102 @@
+{
+  "kode": "PANR",
+  "nama": "PT Panorama Sentrawisata Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 286.0,
+  "update": "2026-11-09 17:00",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00010597997977517138,
+    "roe": 0.06725558923579299,
+    "eps": null,
+    "eps_annualized": 48.05333333333333,
+    "de": 0.8355650248619312,
+    "margin_net": 0.016883527762398393,
+    "current_ratio": 1.4886585251544733,
+    "roa": 0.030949042841863516,
+    "bv": 677449.6381981982,
+    "pcf": null,
+    "div_yield": 22442.20601020601,
+    "payout_ratio": 133569.7333293338
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 852021885000000.0,
+      "2025-Q2": 948559632000000.0,
+      "2025-Q3": 804717590000000.0,
+      "2026-Q1": 1001886573000000.0,
+      "2026-Q2": 1092922798000000.0,
+      "2026-Q3": 844812308000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.1,
+      "2025-Q2": 29.35,
+      "2025-Q3": 9.53,
+      "2026-Q1": 11.12,
+      "2026-Q2": 13.43,
+      "2026-Q3": 11.49
+    },
+    "net_income": {
+      "2025-Q1": 14466893000000.0,
+      "2025-Q2": 26399431000000.0,
+      "2025-Q3": 13213616000000.0,
+      "2026-Q1": 15424745000000.0,
+      "2026-Q2": 18635658000000.0,
+      "2026-Q3": 15943637000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 396825001984,
+    "enterprise_value": 716138676224,
+    "shares_outstanding": 1387500000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6036,
+    "vol_trend": 1.484,
+    "price_chg_20d": -27.78
+  },
+  "neraca": {
+    "aset": 2042636870.0,
+    "aset_lancar": 1009132764.0,
+    "kas": 372512893.0,
+    "piutang_usaha": 297307750.0,
+    "persediaan": 1357301.0,
+    "aset_tetap": 553411980.0,
+    "liabilitas": 785398848.0,
+    "liabilitas_jangka_pendek": 677880620.0,
+    "liabilitas_jangka_panjang": 107518228.0,
+    "utang_usaha": 297307750.0,
+    "utang_bank": 67008819.0,
+    "ekuitas": 939961373.0,
+    "ekuitas_induk": 939961373.0,
+    "modal_saham": null,
+    "saldo_laba": 13875000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2939621679.0,
+    "beban_pokok": 2670298240.0,
+    "laba_kotor": 269323439.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 111932347.0,
+    "beban_pajak": 885284.0,
+    "laba_bersih": 50004040.0,
+    "laba_induk": 50004040.0,
+    "eps_basic": 36.04,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3840228096,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3906950.0,
+    "dividen_dibayar": 89056284.0
+  }
+}

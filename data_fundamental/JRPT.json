@@ -1,0 +1,102 @@
+{
+  "kode": "JRPT",
+  "nama": "PT Jaya Real Property, Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 1170.0,
+  "update": "2026-11-09 16:44",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0044862584530165435,
+    "roe": 0.1179883278553264,
+    "eps": null,
+    "eps_annualized": 0.00010525333333333332,
+    "de": 0.3605630965093715,
+    "margin_net": 0.3982367757117035,
+    "current_ratio": 1.3548744394734475,
+    "roa": 0.08479970635998041,
+    "bv": 880245.6526517054,
+    "pcf": 12.235345574455232,
+    "div_yield": 2658.685654732671,
+    "payout_ratio": 29554049430.30047
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 641621515000000.0,
+      "2025-Q2": 830475752000000.0,
+      "2025-Q3": 792981643000000.0,
+      "2026-Q1": 733724631000000.0,
+      "2026-Q2": 931743945000000.0,
+      "2026-Q3": 874591436000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.02,
+      "2025-Q2": -0.02,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 52.0,
+      "2026-Q3": -52.0
+    },
+    "net_income": {
+      "2025-Q1": 244090320000000.0,
+      "2025-Q2": 340818452000000.0,
+      "2025-Q3": 318196768000000.0,
+      "2026-Q1": 285343795000000.0,
+      "2026-Q2": 381594052000000.0,
+      "2026-Q3": 342205147000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 14952886697984,
+    "enterprise_value": 13636528504832,
+    "shares_outstanding": 12780244700
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.208,
+    "vol_trend": 1.107,
+    "price_chg_20d": 1.3
+  },
+  "neraca": {
+    "aset": 15652645734.0,
+    "aset_lancar": 5207131347.0,
+    "kas": 1670353131.0,
+    "piutang_usaha": 34267503.0,
+    "persediaan": 652131121.0,
+    "aset_tetap": 1500000.0,
+    "liabilitas": 4056246439.0,
+    "liabilitas_jangka_pendek": 3843257497.0,
+    "liabilitas_jangka_panjang": 212988942.0,
+    "utang_usaha": 34267503.0,
+    "utang_bank": null,
+    "ekuitas": 11249754837.0,
+    "ekuitas_induk": 11249754837.0,
+    "modal_saham": null,
+    "saldo_laba": 55000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2540060012.0,
+    "beban_pokok": 1150865161.0,
+    "laba_kotor": 1389194851.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1048796610.0,
+    "beban_pajak": -20955329.0,
+    "laba_bersih": 1009142994.0,
+    "laba_induk": 1009142994.0,
+    "eps_basic": 7.894e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1222105759744,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1500000.0,
+    "dividen_dibayar": 397550243.0
+  }
+}

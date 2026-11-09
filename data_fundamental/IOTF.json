@@ -1,0 +1,102 @@
+{
+  "kode": "IOTF",
+  "nama": "PT Sumber Sinergi Makmur Tbk",
+  "sektor": "Technology",
+  "industri": "Communication Equipment",
+  "harga": 40.0,
+  "update": "2026-11-09 15:38",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.111173140722882e-06,
+    "roe": 0.003591553320742066,
+    "eps": null,
+    "eps_annualized": 0.0026666666666666666,
+    "de": 0.03793387383121145,
+    "margin_net": 0.008282821446189081,
+    "current_ratio": 33.70462191158032,
+    "roa": 0.0034602470652009263,
+    "bv": 29650484.303231604,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.6852938251e+16,
+      "2025-Q2": 1.2958429193e+16,
+      "2025-Q3": 1.5494964844e+16,
+      "2026-Q1": 1.6239277458e+16,
+      "2026-Q2": 1.7158469354e+16,
+      "2026-Q3": 1.9124050224e+16
+    },
+    "eps": {
+      "2025-Q1": 0.1,
+      "2025-Q2": -0.07,
+      "2025-Q3": 1.35,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.0,
+      "2026-Q3": -0.01
+    },
+    "net_income": {
+      "2025-Q1": 516488522000000.0,
+      "2025-Q2": -351547176000000.0,
+      "2025-Q3": 459257114000000.0,
+      "2026-Q1": 45825542000000.0,
+      "2026-Q2": 6814978000000.0,
+      "2026-Q3": 51473060000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 211611910144,
+    "enterprise_value": 181753004032,
+    "shares_outstanding": 5290298067
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1416,
+    "vol_trend": 0.309,
+    "price_chg_20d": -32.0
+  },
+  "neraca": {
+    "aset": 162812274206.0,
+    "aset_lancar": 91212487571.0,
+    "kas": 2604395557.0,
+    "piutang_usaha": 2737575900.0,
+    "persediaan": 60267106340.0,
+    "aset_tetap": 32590550614.0,
+    "liabilitas": 5950303648.0,
+    "liabilitas_jangka_pendek": 2706230849.0,
+    "liabilitas_jangka_panjang": 3244072799.0,
+    "utang_usaha": 2737575900.0,
+    "utang_bank": 14276886501.0,
+    "ekuitas": 156859899795.0,
+    "ekuitas_induk": 156859899795.0,
+    "modal_saham": null,
+    "saldo_laba": 200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 52521797036.0,
+    "beban_pokok": 31008440171.0,
+    "laba_kotor": 21513356865.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 432392921.0,
+    "beban_pajak": -327973050.0,
+    "laba_bersih": 104113580.0,
+    "laba_induk": 104113580.0,
+    "eps_basic": 0.002,
+    "eps_diluted": 0.002
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -14522125312,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": -19245430.0,
+    "dividen_dibayar": null
+  }
+}

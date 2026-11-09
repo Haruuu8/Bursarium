@@ -1,0 +1,102 @@
+{
+  "kode": "MPMX",
+  "nama": "PT Mitra Pinasthika Mustika Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto & Truck Dealerships",
+  "harga": 1075.0,
+  "update": "2026-11-09 16:57",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8163695245221126,
+    "ps": 0.2943170228815015,
+    "roe": 0.00012063196649450664,
+    "eps": 0.15884885469911006,
+    "eps_annualized": 163.60719454053014,
+    "de": 0.447694246269255,
+    "margin_net": 4.349016000295654e-05,
+    "current_ratio": 1.6124551776821798,
+    "roa": 8.332637607244483e-05,
+    "bv": 1316.8056470864524,
+    "pcf": 5.5584106242857385e-06,
+    "div_yield": 15817.452064606914,
+    "payout_ratio": 103930.39876519683
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3997819000000.0,
+      "2025-Q2": 3438333000000.0,
+      "2025-Q3": 4036711000000.0,
+      "2026-Q1": 3999619000000.0,
+      "2026-Q2": 3716596000000.0,
+      "2026-Q3": 4265778000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 75.29,
+      "2026-Q3": 47.42
+    },
+    "net_income": {
+      "2025-Q1": 153518000.0,
+      "2025-Q2": 95452000.0,
+      "2025-Q3": 157753000.0,
+      "2026-Q1": 172971000.0,
+      "2026-Q2": 163011000.0,
+      "2026-Q3": 202921000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4714577002496,
+    "enterprise_value": 2361337577472,
+    "shares_outstanding": 4385653276
+  },
+  "akumulasi": {
+    "score": 7.8,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1199,
+    "vol_trend": 3.077,
+    "price_chg_20d": 4.85
+  },
+  "neraca": {
+    "aset": 8360570.0,
+    "aset_lancar": 4048467.0,
+    "kas": 1656078.0,
+    "piutang_usaha": 194360.0,
+    "persediaan": 656120.0,
+    "aset_tetap": 823947.0,
+    "liabilitas": 2585458.0,
+    "liabilitas_jangka_pendek": 2510747.0,
+    "liabilitas_jangka_panjang": 74711.0,
+    "utang_usaha": 194360.0,
+    "utang_bank": 12665.0,
+    "ekuitas": 5775053.0,
+    "ekuitas_induk": 5775053.0,
+    "modal_saham": null,
+    "saldo_laba": 165298.0
+  },
+  "laba_rugi": {
+    "pendapatan": 11981993.0,
+    "beban_pokok": 10887053.0,
+    "laba_kotor": 1094940.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 682737.0,
+    "beban_pajak": -145291.0,
+    "laba_bersih": 538903.0,
+    "laba_induk": 538903.0,
+    "eps_basic": 122.70539590539762,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 848188014592,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 20294.0,
+    "dividen_dibayar": 745726.0
+  }
+}

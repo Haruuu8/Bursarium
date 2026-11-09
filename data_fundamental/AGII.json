@@ -1,0 +1,102 @@
+{
+  "kode": "AGII",
+  "nama": "PT Samator Indo Gas Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Chemicals",
+  "harga": 3310.0,
+  "update": "2026-11-09 15:59",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.649464581126674,
+    "ps": 3201.819338013055,
+    "roe": 3.869799744519089e-05,
+    "eps": 0.04834575727338538,
+    "eps_annualized": 4.8e-05,
+    "de": 1.163304191943738,
+    "margin_net": 0.04676567388181589,
+    "current_ratio": 1.923243854385262,
+    "roa": 1.769944466291189e-05,
+    "bv": 1249.3090202370006,
+    "pcf": 2.151266698502874e-05,
+    "div_yield": 362.9621708950385,
+    "payout_ratio": 25029266367.970364
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 706260000.0,
+      "2025-Q2": 711237000.0,
+      "2025-Q3": 793724000.0,
+      "2026-Q1": 762149000.0,
+      "2026-Q2": 781434000.0,
+      "2026-Q3": 832967000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 7.37,
+      "2025-Q3": -7.37,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 7761000.0,
+      "2025-Q2": 14848000.0,
+      "2025-Q3": 37998000.0,
+      "2026-Q1": 35199000.0,
+      "2026-Q2": 30000000.0,
+      "2026-Q3": 45063000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 10150644547584,
+    "enterprise_value": 13595646623744,
+    "shares_outstanding": 3066660000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1599,
+    "vol_trend": 0.628,
+    "price_chg_20d": -1.76
+  },
+  "neraca": {
+    "aset": 8376534.0,
+    "aset_lancar": 2068493.0,
+    "kas": 612389.0,
+    "piutang_usaha": 608076.0,
+    "persediaan": 512061.0,
+    "aset_tetap": 143180.0,
+    "liabilitas": 4456858.0,
+    "liabilitas_jangka_pendek": 1075523.0,
+    "liabilitas_jangka_panjang": 3381335.0,
+    "utang_usaha": 608076.0,
+    "utang_bank": 200000.0,
+    "ekuitas": 3831206.0,
+    "ekuitas_induk": 3831206.0,
+    "modal_saham": null,
+    "saldo_laba": 50000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2376550.0,
+    "beban_pokok": 1246608.0,
+    "laba_kotor": 1129942.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 138655.0,
+    "beban_pajak": 2361.0,
+    "laba_bersih": 110262.0,
+    "laba_induk": 110262.0,
+    "eps_basic": 3.6e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 471845011456,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 143180.0,
+    "dividen_dibayar": 36843.0
+  }
+}

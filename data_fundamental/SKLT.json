@@ -1,0 +1,102 @@
+{
+  "kode": "SKLT",
+  "nama": "PT Sekar Laut Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 170.0,
+  "update": "2026-11-09 17:07",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.000833100177560662,
+    "roe": 52840807.29573295,
+    "eps": null,
+    "eps_annualized": 19.72,
+    "de": 1.1535269196888023,
+    "margin_net": -33.598699263926235,
+    "current_ratio": 1.5102266445550028,
+    "roa": 21815.59106105583,
+    "bv": 0.1297492077560238,
+    "pcf": 5.961696283349135e-06,
+    "div_yield": 4705.804199476113,
+    "payout_ratio": 40567.277581690636
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.54388262657e+17,
+      "2025-Q2": -6.531133997668709e+17,
+      "2025-Q3": -1272931623291745.0,
+      "2026-Q1": 725038000.0,
+      "2026-Q2": 765556000.0,
+      "2026-Q3": 849325000.0
+    },
+    "eps": {
+      "2025-Q1": 5.37,
+      "2025-Q2": 3.56,
+      "2025-Q3": 6.86,
+      "2026-Q1": 3.41,
+      "2026-Q2": 5.04,
+      "2026-Q3": 6.34
+    },
+    "net_income": {
+      "2025-Q1": 3.3452305719e+16,
+      "2025-Q2": 2.2155337465e+16,
+      "2025-Q3": 4.2768768084e+16,
+      "2026-Q1": 21278000.0,
+      "2026-Q2": 31459000.0,
+      "2026-Q3": 39549000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1060477599744,
+    "enterprise_value": 1528978866176,
+    "shares_outstanding": 6238103600
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2273,
+    "vol_trend": 0.27,
+    "price_chg_20d": -9.47
+  },
+  "neraca": {
+    "aset": 1960468.0,
+    "aset_lancar": 999912.0,
+    "kas": 163707.0,
+    "piutang_usaha": 322644.0,
+    "persediaan": 430658.0,
+    "aset_tetap": 75032.0,
+    "liabilitas": 933652.0,
+    "liabilitas_jangka_pendek": 662094.0,
+    "liabilitas_jangka_panjang": 271558.0,
+    "utang_usaha": 322644.0,
+    "utang_bank": 217261.0,
+    "ekuitas": 809389.0,
+    "ekuitas_induk": 809389.0,
+    "modal_saham": null,
+    "saldo_laba": 13815.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2339919.0,
+    "beban_pokok": 1749851.0,
+    "laba_kotor": 590068.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 117597.0,
+    "beban_pajak": -25310.0,
+    "laba_bersih": 92286.0,
+    "laba_induk": 92286.0,
+    "eps_basic": 14.79,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 177881858048,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 75032.0,
+    "dividen_dibayar": 49904.0
+  }
+}

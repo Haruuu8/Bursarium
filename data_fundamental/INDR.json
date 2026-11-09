@@ -1,0 +1,96 @@
+{
+  "kode": "INDR",
+  "nama": "PT. Indo-Rama Synthetics Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 2550.0,
+  "update": "2026-11-09 16:40",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0019800902050982868,
+    "roe": 0.014814785720304572,
+    "eps": 8669.362270036838,
+    "eps_annualized": 0.021599999999999998,
+    "de": 1.0392385854508572,
+    "margin_net": 0.006731811496215135,
+    "current_ratio": 1.0223264089529656,
+    "roa": 0.007173704879337409,
+    "bv": 585183.1024565509,
+    "pcf": 0.05131059211938422,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 190589515000000.0,
+      "2026-Q1": 193181760000000.0,
+      "2026-Q2": 221240526000000.0,
+      "2026-Q3": 237675491000000.0
+    },
+    "eps": {
+      "2025-Q3": 0.01,
+      "2026-Q1": -0.04,
+      "2026-Q2": 0.05,
+      "2026-Q3": 0.01
+    },
+    "net_income": {
+      "2025-Q3": -2299451000000.0,
+      "2026-Q1": -5877032000000.0,
+      "2026-Q2": 9440765000000.0,
+      "2026-Q3": 4408530000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1668596760576,
+    "enterprise_value": 1622881337344,
+    "shares_outstanding": 654351707
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3499,
+    "vol_trend": 0.808,
+    "price_chg_20d": -8.82
+  },
+  "neraca": {
+    "aset": 790778558.0,
+    "aset_lancar": 309207321.0,
+    "kas": 27800043.0,
+    "piutang_usaha": 78513498.0,
+    "persediaan": 178122215.0,
+    "aset_tetap": 1616747.0,
+    "liabilitas": 397940627.0,
+    "liabilitas_jangka_pendek": 302454596.0,
+    "liabilitas_jangka_panjang": 95486031.0,
+    "utang_usaha": 78513498.0,
+    "utang_bank": 23214074.0,
+    "ekuitas": 382915562.0,
+    "ekuitas_induk": 382915562.0,
+    "modal_saham": null,
+    "saldo_laba": 24475.0
+  },
+  "laba_rugi": {
+    "pendapatan": 652097777.0,
+    "beban_pokok": 614868442.0,
+    "laba_kotor": 37229335.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 13409431.0,
+    "beban_pajak": -735546.0,
+    "laba_bersih": 7972263.0,
+    "laba_induk": 7972263.0,
+    "eps_basic": 0.0162,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 32519540,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1616747.0,
+    "dividen_dibayar": null
+  }
+}

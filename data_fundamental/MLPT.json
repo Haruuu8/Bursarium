@@ -1,0 +1,102 @@
+{
+  "kode": "MLPT",
+  "nama": "PT Multipolar Technology Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 390.0,
+  "update": "2026-11-09 16:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4631.049876897986,
+    "roe": 0.4023809462317826,
+    "eps": 0.006647530666666667,
+    "eps_annualized": 5.333333333333333,
+    "de": 3.9805410137939408,
+    "margin_net": 0.07893601557831348,
+    "current_ratio": 1.0357751667365802,
+    "roa": 8.068872706990099e-05,
+    "bv": 0.016520490666666665,
+    "pcf": 5.672509473147076e-05,
+    "div_yield": 820.5128205128204,
+    "payout_ratio": 60000.0
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 788699000.0,
+      "2025-Q2": 900326000.0,
+      "2025-Q3": 1031249000.0,
+      "2026-Q1": 839360000.0,
+      "2026-Q2": 938883000.0,
+      "2026-Q3": 1138047000.0
+    },
+    "eps": {
+      "2025-Q1": 34.0,
+      "2025-Q2": 22.0,
+      "2025-Q3": 73.0,
+      "2026-Q1": 16.0,
+      "2026-Q2": -13.0,
+      "2026-Q3": 1.0
+    },
+    "net_income": {
+      "2025-Q1": 63523000.0,
+      "2025-Q2": 41017000.0,
+      "2025-Q3": 136811000.0,
+      "2026-Q1": 29728000.0,
+      "2026-Q2": 107929000.0,
+      "2026-Q3": 37135000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 18281249374208,
+    "enterprise_value": 17883507720192,
+    "shares_outstanding": 46875000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4106,
+    "vol_trend": 2.13,
+    "price_chg_20d": -58.03
+  },
+  "neraca": {
+    "aset": 3861791.0,
+    "aset_lancar": 2943267.0,
+    "kas": 313464.0,
+    "piutang_usaha": 950789.0,
+    "persediaan": 1366290.0,
+    "aset_tetap": 609841.0,
+    "liabilitas": 3082523.0,
+    "liabilitas_jangka_pendek": 2841608.0,
+    "liabilitas_jangka_panjang": 240915.0,
+    "utang_usaha": 950789.0,
+    "utang_bank": 115534.0,
+    "ekuitas": 774398.0,
+    "ekuitas_induk": 774398.0,
+    "modal_saham": null,
+    "saldo_laba": 1300.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2916290.0,
+    "beban_pokok": 2457868.0,
+    "laba_kotor": 458422.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 235122.0,
+    "beban_pajak": -59939.0,
+    "laba_bersih": 174792.0,
+    "laba_induk": 174792.0,
+    "eps_basic": 4.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 322277998592,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 80910.0,
+    "dividen_dibayar": 150000.0
+  }
+}

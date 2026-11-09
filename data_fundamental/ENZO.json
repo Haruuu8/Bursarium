@@ -1,0 +1,102 @@
+{
+  "kode": "ENZO",
+  "nama": "PT Morenzo Abadi Perkasa Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 42.0,
+  "update": "2026-11-09 17:45",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.488554342200489e-07,
+    "roe": 0.04134833752507303,
+    "eps": null,
+    "eps_annualized": 5.266666666666667,
+    "de": 1.6364024376827169,
+    "margin_net": 0.011587535543510736,
+    "current_ratio": 1.3201485688574477,
+    "roa": 0.015512062128155642,
+    "bv": 79071071.32207036,
+    "pcf": 1.8197040810683803e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.3674973147e+16,
+      "2025-Q2": 8.5918602444e+16,
+      "2025-Q3": 1.28851908594e+17,
+      "2026-Q1": 9.2790630093e+16,
+      "2026-Q2": 1.68246398324e+17,
+      "2026-Q3": 2.20280114592e+17
+    },
+    "eps": {
+      "2025-Q1": -2.98,
+      "2025-Q2": -0.53,
+      "2025-Q3": -0.65,
+      "2026-Q1": 0.45,
+      "2026-Q2": 3.36,
+      "2026-Q3": 0.14
+    },
+    "net_income": {
+      "2025-Q1": -4256289959000000.0,
+      "2025-Q2": -3268587134000000.0,
+      "2025-Q3": -1475592766000000.0,
+      "2026-Q1": 971115707000000.0,
+      "2026-Q2": 7277886322000000.0,
+      "2026-Q3": 296946310000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 90826981376,
+    "enterprise_value": 264297283584,
+    "shares_outstanding": 2162547122
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2477,
+    "vol_trend": 0.191,
+    "price_chg_20d": -37.5
+  },
+  "neraca": {
+    "aset": 455797270188.0,
+    "aset_lancar": 345976093314.0,
+    "kas": 2315531214.0,
+    "piutang_usaha": 70346696560.0,
+    "persediaan": 248381519431.0,
+    "aset_tetap": 82059729541.0,
+    "liabilitas": 279816500190.0,
+    "liabilitas_jangka_pendek": 262073604044.0,
+    "liabilitas_jangka_panjang": 17742896146.0,
+    "utang_usaha": 70346696560.0,
+    "utang_bank": 167742000000.0,
+    "ekuitas": 170994917721.0,
+    "ekuitas_induk": 170994917721.0,
+    "modal_saham": null,
+    "saldo_laba": 1200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 481317143009.0,
+    "beban_pokok": 434150720289.0,
+    "laba_kotor": 47166422720.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9000469859.0,
+    "beban_pajak": null,
+    "laba_bersih": 8545948339.0,
+    "laba_induk": 8545948339.0,
+    "eps_basic": 3.95,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 49913049088,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15600000.0,
+    "dividen_dibayar": null
+  }
+}

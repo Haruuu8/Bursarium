@@ -1,0 +1,102 @@
+{
+  "kode": "CMNP",
+  "nama": "PT Citra Marga Nusaphala Persada Tbk",
+  "sektor": "Industrials",
+  "industri": "Infrastructure Operations",
+  "harga": 1275.0,
+  "update": "2026-11-09 16:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0016055723026749491,
+    "roe": 0.062487748479443044,
+    "eps": null,
+    "eps_annualized": 0.00014666666666666666,
+    "de": 0.67545180109962,
+    "margin_net": 0.18291135747068754,
+    "current_ratio": 1.0699902110226822,
+    "roa": 0.03507824740333594,
+    "bv": 2324481.6026941966,
+    "pcf": 4.950550853513557,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1080196238000000.0,
+      "2025-Q2": 1111894528000000.0,
+      "2025-Q3": 1212439335000000.0,
+      "2026-Q1": 1017562580000000.0,
+      "2026-Q2": 1914275601000000.0,
+      "2026-Q3": 1173360210000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.01,
+      "2025-Q3": -0.01,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 303147906000000.0,
+      "2025-Q2": 225435344000000.0,
+      "2025-Q3": 194344725000000.0,
+      "2026-Q1": 348958064000000.0,
+      "2026-Q2": 106067683000000.0,
+      "2026-Q3": 323285863000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 8537851822080,
+    "enterprise_value": 17333016854528,
+    "shares_outstanding": 6696354391
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3824,
+    "vol_trend": 1.677,
+    "price_chg_20d": -10.6
+  },
+  "neraca": {
+    "aset": 27728190745.0,
+    "aset_lancar": 2691953609.0,
+    "kas": 399492320.0,
+    "piutang_usaha": 70870935.0,
+    "persediaan": null,
+    "aset_tetap": 216233826.0,
+    "liabilitas": 10513780530.0,
+    "liabilitas_jangka_pendek": 2515867511.0,
+    "liabilitas_jangka_panjang": 7997913019.0,
+    "utang_usaha": 70870935.0,
+    "utang_bank": 375000000.0,
+    "ekuitas": 15565552587.0,
+    "ekuitas_induk": 15565552587.0,
+    "modal_saham": null,
+    "saldo_laba": 463237192.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4105198391.0,
+    "beban_pokok": 2624974516.0,
+    "laba_kotor": 1480223875.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 950922377.0,
+    "beban_pajak": -271435935.0,
+    "laba_bersih": 778311610.0,
+    "laba_induk": 778311610.0,
+    "eps_basic": 0.00011,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1724626632704,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13302473.0,
+    "dividen_dibayar": null
+  }
+}

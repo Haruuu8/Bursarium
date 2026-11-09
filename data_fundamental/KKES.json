@@ -1,0 +1,102 @@
+{
+  "kode": "KKES",
+  "nama": "PT Kusuma Kemindo Sentosa Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 50.0,
+  "update": "2026-11-09 15:17",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.4551677604811554e-07,
+    "roe": 0.004922076097998717,
+    "eps": null,
+    "eps_annualized": 2.333333333333333,
+    "de": 1.0884777830047632,
+    "margin_net": 0.001453147976297448,
+    "current_ratio": 1.7590160078016461,
+    "roa": 0.0023567768534828084,
+    "bv": 42723063.15733334,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.772790781e+16,
+      "2025-Q2": 4.4340323709e+16,
+      "2025-Q3": 5.269299265e+16,
+      "2026-Q1": 5.1640255387e+16,
+      "2026-Q2": 6.2778960377e+16,
+      "2026-Q3": 4.9953952187e+16
+    },
+    "eps": {
+      "2025-Q1": -3.83,
+      "2025-Q2": 0.35,
+      "2025-Q3": -0.3,
+      "2026-Q1": 0.12,
+      "2026-Q2": 2.0,
+      "2026-Q3": -0.37
+    },
+    "net_income": {
+      "2025-Q1": -1417893327000000.0,
+      "2025-Q2": -1170637768000000.0,
+      "2025-Q3": -1649010295000000.0,
+      "2026-Q1": 44430351000000.0,
+      "2026-Q2": 1534177818000000.0,
+      "2026-Q3": 385831378000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 74999996416,
+    "enterprise_value": 120075788288,
+    "shares_outstanding": 1500000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.168,
+    "vol_trend": 0.336,
+    "price_chg_20d": -42.68
+  },
+  "neraca": {
+    "aset": 133839252339.0,
+    "aset_lancar": 109707705466.0,
+    "kas": 735692038.0,
+    "piutang_usaha": 56485964816.0,
+    "persediaan": 50497957362.0,
+    "aset_tetap": 674172500.0,
+    "liabilitas": 69754657603.0,
+    "liabilitas_jangka_pendek": 62368793109.0,
+    "liabilitas_jangka_panjang": 7385864494.0,
+    "utang_usaha": 56485964816.0,
+    "utang_bank": 37522981520.0,
+    "ekuitas": 64084594736.0,
+    "ekuitas_induk": 64084594736.0,
+    "modal_saham": null,
+    "saldo_laba": 150000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 164373167951.0,
+    "beban_pokok": 135677513244.0,
+    "laba_kotor": 28695654707.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2650840520.0,
+    "beban_pajak": -686400973.0,
+    "laba_bersih": 1964439547.0,
+    "laba_induk": 1964439547.0,
+    "eps_basic": 1.75,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -15542716416,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 674172500.0,
+    "dividen_dibayar": null
+  }
+}

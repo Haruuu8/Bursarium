@@ -1,0 +1,102 @@
+{
+  "kode": "MDKI",
+  "nama": "PT Emdeki Utama Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Specialty Chemicals",
+  "harga": 175.0,
+  "update": "2026-11-09 17:23",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1391.8091671643667,
+    "roe": 0.02524992653010719,
+    "eps": 0.009678082319484551,
+    "eps_annualized": 9.606901687161193e-06,
+    "de": 0.07415664296725563,
+    "margin_net": 0.07697167824474271,
+    "current_ratio": 8.016626429189632,
+    "roa": 2.31476536142272e-05,
+    "bv": 0.3832915041532783,
+    "pcf": 5.289786262407937e-06,
+    "div_yield": 5304.936744333672,
+    "payout_ratio": 96635102605.35631
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 73629000.0,
+      "2025-Q2": 77780000.0,
+      "2025-Q3": 78367000.0,
+      "2026-Q1": 71578000.0,
+      "2026-Q2": 78373000.0,
+      "2026-Q3": 89812000.0
+    },
+    "eps": {
+      "2025-Q1": 4.0,
+      "2025-Q2": 3.0,
+      "2025-Q3": 3.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 10020000.0,
+      "2025-Q2": 7801000.0,
+      "2025-Q3": 6256000.0,
+      "2026-Q1": 6297000.0,
+      "2026-Q2": 5509000.0,
+      "2026-Q3": 6425000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 442776223744,
+    "enterprise_value": 270254555136,
+    "shares_outstanding": 2530150002
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.336,
+    "vol_trend": 0.771,
+    "price_chg_20d": -8.76
+  },
+  "neraca": {
+    "aset": 1057861.0,
+    "aset_lancar": 351978.0,
+    "kas": 208652.0,
+    "piutang_usaha": 1520.0,
+    "persediaan": 116553.0,
+    "aset_tetap": 1568.0,
+    "liabilitas": 71916.0,
+    "liabilitas_jangka_pendek": 43906.0,
+    "liabilitas_jangka_panjang": 28010.0,
+    "utang_usaha": 1520.0,
+    "utang_bank": 14910.0,
+    "ekuitas": 969785.0,
+    "ekuitas_induk": 969785.0,
+    "modal_saham": null,
+    "saldo_laba": 7224.0
+  },
+  "laba_rugi": {
+    "pendapatan": 239763.0,
+    "beban_pokok": 186723.0,
+    "laba_kotor": 53040.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 24017.0,
+    "beban_pajak": -5225.0,
+    "laba_bersih": 18231.0,
+    "laba_induk": 18231.0,
+    "eps_basic": 7.205176265370895e-06,
+    "eps_diluted": 7.205176265370895e-06
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 83703996416,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1568.0,
+    "dividen_dibayar": 23489.0
+  }
+}

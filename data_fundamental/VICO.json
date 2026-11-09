@@ -1,0 +1,102 @@
+{
+  "kode": "VICO",
+  "nama": "PT Victoria Investama Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 138.0,
+  "update": "2026-11-09 17:16",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0030101893767250105,
+    "roe": 0.04457562269755793,
+    "eps": null,
+    "eps_annualized": 0.12639999999999998,
+    "de": 8.066866152674187,
+    "margin_net": 0.243589516810089,
+    "current_ratio": null,
+    "roa": 0.004658007102492292,
+    "bv": 250522.33035299534,
+    "pcf": 3.497778724264353e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 590798913000000.0,
+      "2025-Q2": -318585335000000.0,
+      "2025-Q3": 121981476000000.0,
+      "2026-Q1": 166493710000000.0,
+      "2026-Q2": 230249945000000.0,
+      "2026-Q3": 178890925000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": 0.27,
+      "2025-Q3": 0.02,
+      "2026-Q1": 0.02,
+      "2026-Q2": 0.05,
+      "2026-Q3": 0.03
+    },
+    "net_income": {
+      "2025-Q1": 21698765000000.0,
+      "2025-Q2": 404169627000000.0,
+      "2025-Q3": 25703138000000.0,
+      "2026-Q1": 28647611000000.0,
+      "2026-Q2": 71702834000000.0,
+      "2026-Q3": 43878375000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2099956416512,
+    "enterprise_value": 6690248851456,
+    "shares_outstanding": 15217075658
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1471,
+    "vol_trend": 0.21,
+    "price_chg_20d": -10.97
+  },
+  "neraca": {
+    "aset": 36481687181.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": 348839577.0,
+    "persediaan": null,
+    "aset_tetap": 355395597.0,
+    "liabilitas": 30752646341.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": 6803911.0,
+    "utang_bank": null,
+    "ekuitas": 3812217255.0,
+    "ekuitas_induk": 3812217255.0,
+    "modal_saham": null,
+    "saldo_laba": 1492857514.0
+  },
+  "laba_rugi": {
+    "pendapatan": 575634580.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 410985273.0,
+    "laba_sebelum_pajak": 221390335.0,
+    "beban_pajak": -33903395.0,
+    "laba_bersih": 144228820.0,
+    "laba_induk": 144228820.0,
+    "eps_basic": 0.0948,
+    "eps_diluted": 0.0948
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 60036857856,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

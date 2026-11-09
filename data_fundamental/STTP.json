@@ -1,0 +1,102 @@
+{
+  "kode": "STTP",
+  "nama": "PT Siantar Top Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 8025.0,
+  "update": "2026-11-09 17:11",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.2843916697943536,
+    "ps": 1.8603469163714001,
+    "roe": 150873.48998782577,
+    "eps": null,
+    "eps_annualized": 904.8399999999999,
+    "de": 0.0953059019301208,
+    "margin_net": 218529.15933811895,
+    "current_ratio": 10.763694353072372,
+    "roa": 137309.19390779338,
+    "bv": 6248.09408899771,
+    "pcf": 7.800212336691305,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1264389000192.0,
+      "2025-Q2": 1242114766126.0,
+      "2025-Q3": 1355289603056.0,
+      "2026-Q1": 1214743045425.0,
+      "2026-Q2": 1520008098840.0,
+      "2026-Q3": 1560921397151.0
+    },
+    "eps": {
+      "2025-Q1": 230.64,
+      "2025-Q2": 181.03,
+      "2025-Q3": 264.04,
+      "2026-Q1": 184.0,
+      "2026-Q2": 271.24,
+      "2026-Q3": 223.39
+    },
+    "net_income": {
+      "2025-Q1": 3.02139492646e+17,
+      "2025-Q2": 2.37154342918e+17,
+      "2025-Q3": 3.45889343464e+17,
+      "2026-Q1": 2.41630883669e+17,
+      "2026-Q2": 3.5473697951800006e+17,
+      "2026-Q3": 2.92642800232e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 10512750346240,
+    "enterprise_value": 4947311067136,
+    "shares_outstanding": 1310000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6641,
+    "vol_trend": 0.584,
+    "price_chg_20d": -5.23
+  },
+  "neraca": {
+    "aset": 8993571164013.0,
+    "aset_lancar": 7045746427757.0,
+    "kas": 4532677588050.0,
+    "piutang_usaha": 224749180250.0,
+    "persediaan": 543759092628.0,
+    "aset_tetap": 1625385405722.0,
+    "liabilitas": 780079117670.0,
+    "liabilitas_jangka_pendek": 654584401660.0,
+    "liabilitas_jangka_panjang": 125494716010.0,
+    "utang_usaha": 224749180250.0,
+    "utang_bank": null,
+    "ekuitas": 8185003256587.0,
+    "ekuitas_induk": 8185003256587.0,
+    "modal_saham": null,
+    "saldo_laba": 150000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4295672541416.0,
+    "beban_pokok": 3061435348586.0,
+    "laba_kotor": 1234237192830.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1076786135763.0,
+    "beban_pajak": -187884206825.0,
+    "laba_bersih": 889010663419.0,
+    "laba_induk": 889010663419.0,
+    "eps_basic": 678.63,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1347751772160,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12733459239.0,
+    "dividen_dibayar": null
+  }
+}

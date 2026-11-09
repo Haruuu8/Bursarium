@@ -1,0 +1,102 @@
+{
+  "kode": "HOMI",
+  "nama": "PT Grand House Mulia Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 158.0,
+  "update": "2026-11-09 17:45",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.094060132675702e-05,
+    "roe": 0.004194124898957986,
+    "eps": null,
+    "eps_annualized": 0.24,
+    "de": 0.33122702322931374,
+    "margin_net": 0.024456208257130886,
+    "current_ratio": 2.2346004248588,
+    "roa": 0.0031486737424218764,
+    "bv": 84209998.34349206,
+    "pcf": 5.220964633960584e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8471085589000000.0,
+      "2025-Q2": 8593005182000000.0,
+      "2025-Q3": 9086533292000000.0,
+      "2026-Q1": 5373639729000000.0,
+      "2026-Q2": 5442021625000000.0,
+      "2026-Q3": 2843355856000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.07,
+      "2025-Q2": 0.5,
+      "2025-Q3": 0.18,
+      "2026-Q1": 0.19,
+      "2026-Q2": -0.08,
+      "2026-Q3": 0.07
+    },
+    "net_income": {
+      "2025-Q1": 123053923000000.0,
+      "2025-Q2": 778240641000000.0,
+      "2025-Q3": 279888250000000.0,
+      "2026-Q1": 297159714000000.0,
+      "2026-Q2": -116072266000000.0,
+      "2026-Q3": 95294222000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 248850006016,
+    "enterprise_value": 252497657856,
+    "shares_outstanding": 1575000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1923,
+    "vol_trend": 0.231,
+    "price_chg_20d": -37.4
+  },
+  "neraca": {
+    "aset": 176668008662.0,
+    "aset_lancar": 83318058512.0,
+    "kas": 1278663237.0,
+    "piutang_usaha": 2237251358.0,
+    "persediaan": 41547464726.0,
+    "aset_tetap": 6880510000.0,
+    "liabilitas": 43930887647.0,
+    "liabilitas_jangka_pendek": 37285439305.0,
+    "liabilitas_jangka_panjang": 6645448342.0,
+    "utang_usaha": 2237251358.0,
+    "utang_bank": 4458195366.0,
+    "ekuitas": 132630747391.0,
+    "ekuitas_induk": 132630747391.0,
+    "modal_saham": null,
+    "saldo_laba": 775000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13659017210.0,
+    "beban_pokok": 8250590062.0,
+    "laba_kotor": 5408427148.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 407514439.0,
+    "beban_pajak": -134684889.0,
+    "laba_bersih": 276381670.0,
+    "laba_induk": 276381670.0,
+    "eps_basic": 0.18,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4766360576,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6880510000.0,
+    "dividen_dibayar": null
+  }
+}

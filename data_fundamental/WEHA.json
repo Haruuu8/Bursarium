@@ -1,0 +1,102 @@
+{
+  "kode": "WEHA",
+  "nama": "PT WEHA Transportasi Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Railroads",
+  "harga": 92.0,
+  "update": "2026-11-09 17:17",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.0310406739950355e-07,
+    "roe": 0.08205437524082324,
+    "eps": null,
+    "eps_annualized": 16.0,
+    "de": 0.5132285673907337,
+    "margin_net": 0.06614064806629363,
+    "current_ratio": 0.867428586669845,
+    "roa": 0.054178846184105865,
+    "bv": 183965908.65104666,
+    "pcf": 1.746255434713304e-06,
+    "div_yield": 6521739.130434782,
+    "payout_ratio": 37500000.0
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7.0296896318e+16,
+      "2025-Q2": 8.222310639e+16,
+      "2025-Q3": 7.7417127931e+16,
+      "2026-Q1": 8.2599923303e+16,
+      "2026-Q2": 8.6089995872e+16,
+      "2026-Q3": 8.7233780276e+16
+    },
+    "eps": {
+      "2025-Q1": 2.0,
+      "2025-Q2": 7.0,
+      "2025-Q3": 3.0,
+      "2026-Q1": 3.0,
+      "2026-Q2": 5.0,
+      "2026-Q3": 4.0
+    },
+    "net_income": {
+      "2025-Q1": 2633504938000000.0,
+      "2025-Q2": 1.1001563054e+16,
+      "2025-Q3": 4280494780000000.0,
+      "2026-Q1": 4909913914000000.0,
+      "2026-Q2": 6804917918000000.0,
+      "2026-Q3": 6052051738000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 134371049472,
+    "enterprise_value": 220825665536,
+    "shares_outstanding": 1460554819
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1887,
+    "vol_trend": 0.193,
+    "price_chg_20d": -13.46
+  },
+  "neraca": {
+    "aset": 406937022525.0,
+    "aset_lancar": 48580722675.0,
+    "kas": 16730883204.0,
+    "piutang_usaha": 9247147572.0,
+    "persediaan": 4293598485.0,
+    "aset_tetap": 274088267282.0,
+    "liabilitas": 137900561330.0,
+    "liabilitas_jangka_pendek": 56005443470.0,
+    "liabilitas_jangka_panjang": 81895117860.0,
+    "utang_usaha": 9247147572.0,
+    "utang_bank": 2372050408.0,
+    "ekuitas": 268692294412.0,
+    "ekuitas_induk": 268692294412.0,
+    "modal_saham": null,
+    "saldo_laba": 58450082109.0
+  },
+  "laba_rugi": {
+    "pendapatan": 255923699451.0,
+    "beban_pokok": 164027853104.0,
+    "laba_kotor": 91895846347.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 22389544693.0,
+    "beban_pajak": -4598471849.0,
+    "laba_bersih": 17766883570.0,
+    "laba_induk": 17766883570.0,
+    "eps_basic": 12.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 76948103168,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12407721569.0,
+    "dividen_dibayar": 8763328914.0
+  }
+}

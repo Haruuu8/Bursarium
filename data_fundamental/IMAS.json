@@ -1,0 +1,102 @@
+{
+  "kode": "IMAS",
+  "nama": "PT Indomobil Sukses Internasional Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto & Truck Dealerships",
+  "harga": 680.0,
+  "update": "2026-11-09 16:38",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.07661203528807019,
+    "roe": 1.665573204482506e-05,
+    "eps": 0.05748804925779471,
+    "eps_annualized": 5.066666666666666,
+    "de": 4.986853501817178,
+    "margin_net": 6.476877144677184e-06,
+    "current_ratio": 0.9026550124933829,
+    "roa": 2.698606523427397e-06,
+    "bv": 3451.547437427481,
+    "pcf": null,
+    "div_yield": 1221.1546457677964,
+    "payout_ratio": 163891.80772146746
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7536997000000.0,
+      "2025-Q2": 7223508000000.0,
+      "2025-Q3": 7960277000000.0,
+      "2026-Q1": 8505045000000.0,
+      "2026-Q2": 8862721000000.0,
+      "2026-Q3": 10124845000000.0
+    },
+    "eps": {
+      "2025-Q1": 1.32,
+      "2025-Q2": 9.48,
+      "2025-Q3": 53.69,
+      "2026-Q1": 0.4,
+      "2026-Q2": 2.38,
+      "2026-Q3": 1.02
+    },
+    "net_income": {
+      "2025-Q1": 5263000.0,
+      "2025-Q2": 37894000.0,
+      "2025-Q3": 214440000.0,
+      "2026-Q1": 1584000.0,
+      "2026-Q2": 9516000.0,
+      "2026-Q3": 4084000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2716117762048,
+    "enterprise_value": 59878106202112,
+    "shares_outstanding": 3994291039
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3062,
+    "vol_trend": 1.724,
+    "price_chg_20d": -19.41
+  },
+  "neraca": {
+    "aset": 85089841.0,
+    "aset_lancar": 35530340.0,
+    "kas": 3158555.0,
+    "piutang_usaha": 4836488.0,
+    "persediaan": 10354283.0,
+    "aset_tetap": 24324694.0,
+    "liabilitas": 68751181.0,
+    "liabilitas_jangka_pendek": 39362037.0,
+    "liabilitas_jangka_panjang": 29389144.0,
+    "utang_usaha": 4836488.0,
+    "utang_bank": 15266649.0,
+    "ekuitas": 13786485.0,
+    "ekuitas_induk": 13786485.0,
+    "modal_saham": null,
+    "saldo_laba": 25000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 27492611.0,
+    "beban_pokok": 22404641.0,
+    "laba_kotor": 5087970.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 330500.0,
+    "beban_pajak": 27469.0,
+    "laba_bersih": 15184.0,
+    "laba_induk": 15184.0,
+    "eps_basic": 3.8,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -2985330999296,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1951728.0,
+    "dividen_dibayar": 33168.0
+  }
+}

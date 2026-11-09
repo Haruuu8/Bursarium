@@ -1,0 +1,102 @@
+{
+  "kode": "MAYA",
+  "nama": "PT Bank Mayapada Internasional Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 160.0,
+  "update": "2026-11-09 16:53",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0049483530273743215,
+    "roe": 5.498531610856698e-06,
+    "eps": 0.27019509010151793,
+    "eps_annualized": 4.426666666666666,
+    "de": 8.008305322209601,
+    "margin_net": 8.356379325534524e-06,
+    "current_ratio": null,
+    "roa": 6.103846854857702e-07,
+    "bv": 49139.49927431994,
+    "pcf": 0.014919392916721305,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3141657000000.0,
+      "2025-Q2": 3263808000000.0,
+      "2025-Q3": 3115992000000.0,
+      "2026-Q1": 3050526000000.0,
+      "2026-Q2": 3233277000000.0,
+      "2026-Q3": 3154087000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.95,
+      "2025-Q2": 1.05,
+      "2025-Q3": 1.52,
+      "2026-Q1": 1.42,
+      "2026-Q2": 0.92,
+      "2026-Q3": 0.98
+    },
+    "net_income": {
+      "2025-Q1": 11278000.0,
+      "2025-Q2": 12420000.0,
+      "2025-Q3": 17949000.0,
+      "2026-Q1": 37174000.0,
+      "2026-Q2": 24019000.0,
+      "2026-Q3": 25763000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4186857013248,
+    "enterprise_value": -4152575393792,
+    "shares_outstanding": 388256500
+  },
+  "akumulasi": {
+    "score": 6.4,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1246,
+    "vol_trend": 0.403,
+    "price_chg_20d": -20.2
+  },
+  "neraca": {
+    "aset": 171867025.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 2768818.0,
+    "liabilitas": 152788295.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 19078730.0,
+    "ekuitas_induk": 19078730.0,
+    "modal_saham": null,
+    "saldo_laba": 3573915.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9437890.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 90064.0,
+    "laba_sebelum_pajak": 108760.0,
+    "beban_pajak": -21804.0,
+    "laba_bersih": 86956.0,
+    "laba_induk": 86956.0,
+    "eps_basic": 3.32,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4163778000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

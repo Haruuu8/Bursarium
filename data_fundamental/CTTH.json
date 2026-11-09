@@ -1,0 +1,102 @@
+{
+  "kode": "CTTH",
+  "nama": "PT Citatah Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 63.0,
+  "update": "2026-11-09 16:24",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 8.407323807508408e-07,
+    "roe": -0.1360890625894058,
+    "eps": null,
+    "eps_annualized": -20.864739987966267,
+    "de": 3.512605672269472,
+    "margin_net": -0.21467021131424927,
+    "current_ratio": 2.5286340745954234,
+    "roa": -0.030160288177963047,
+    "bv": 118203772.15761206,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.8817257002e+16,
+      "2025-Q2": 2.8412502816e+16,
+      "2025-Q3": 3.1105647775e+16,
+      "2026-Q1": 1.6730855594e+16,
+      "2026-Q2": 2.0997596293e+16,
+      "2026-Q3": 2.3398471009e+16
+    },
+    "eps": {
+      "2025-Q1": -2.04,
+      "2025-Q2": -8.35,
+      "2025-Q3": -0.44,
+      "2026-Q1": -4.67,
+      "2026-Q2": -4.06,
+      "2026-Q3": -6.92
+    },
+    "net_income": {
+      "2025-Q1": -2512051973000000.0,
+      "2025-Q2": -1.0274762589e+16,
+      "2025-Q3": -538720812000000.0,
+      "2026-Q1": -5753296739000000.0,
+      "2026-Q2": -4993247706000000.0,
+      "2026-Q3": -8514320179000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 77542907904,
+    "enterprise_value": 407775084544,
+    "shares_outstanding": 1230839821
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4023,
+    "vol_trend": 2.038,
+    "price_chg_20d": -32.98
+  },
+  "neraca": {
+    "aset": 656478655614.0,
+    "aset_lancar": 366009836573.0,
+    "kas": 3676057114.0,
+    "piutang_usaha": 48593966881.0,
+    "persediaan": 276283791538.0,
+    "aset_tetap": 241343389971.0,
+    "liabilitas": 511048682295.0,
+    "liabilitas_jangka_pendek": 144746066760.0,
+    "liabilitas_jangka_panjang": 366302615535.0,
+    "utang_usaha": 48593966881.0,
+    "utang_bank": 8400000000.0,
+    "ekuitas": 145489909764.0,
+    "ekuitas_induk": 145489909764.0,
+    "modal_saham": null,
+    "saldo_laba": -609716496832.0
+  },
+  "laba_rugi": {
+    "pendapatan": 61126922896.0,
+    "beban_pokok": 48608301359.0,
+    "laba_kotor": 12518621537.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -19408060182.0,
+    "beban_pajak": 142159160.0,
+    "laba_bersih": -19260864624.0,
+    "laba_induk": -19260864624.0,
+    "eps_basic": -15.6485549909747,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -12657135616,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 39569369.0,
+    "dividen_dibayar": null
+  }
+}

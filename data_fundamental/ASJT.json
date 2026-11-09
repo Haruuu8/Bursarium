@@ -1,0 +1,95 @@
+{
+  "kode": "ASJT",
+  "nama": "PT Asuransi Jasa Tania Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Property & Casualty",
+  "harga": 148.0,
+  "update": "2026-11-09 16:07",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": null,
+    "roe": -0.018146515841670232,
+    "eps": null,
+    "eps_annualized": -5.359999999999999,
+    "de": 0.8766664334358225,
+    "margin_net": null,
+    "current_ratio": null,
+    "roa": -0.009669547831389185,
+    "bv": 221296906.3692857,
+    "pcf": null,
+    "div_yield": 646836.9015444015,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {},
+    "eps": {
+      "2025-Q1": 1.44,
+      "2025-Q2": -4.34,
+      "2025-Q3": 4.8,
+      "2026-Q1": -6.46,
+      "2026-Q2": -1.24,
+      "2026-Q3": 3.68
+    },
+    "net_income": {
+      "2025-Q1": 2013127675000000.0,
+      "2025-Q2": -6020324822000000.0,
+      "2025-Q3": 6668093655000000.0,
+      "2026-Q1": -9050166337000000.0,
+      "2026-Q2": -1724039957000000.0,
+      "2026-Q3": 5152131350000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 207199993856,
+    "enterprise_value": 63667998720,
+    "shares_outstanding": 1400000000
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1012,
+    "vol_trend": 0.253,
+    "price_chg_20d": -8.59
+  },
+  "neraca": {
+    "aset": 581420666409.0,
+    "aset_lancar": null,
+    "kas": 13133172568.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 98754217844.0,
+    "liabilitas": 271604997492.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 309815668917.0,
+    "ekuitas_induk": 309815668917.0,
+    "modal_saham": null,
+    "saldo_laba": 87406423409.0
+  },
+  "laba_rugi": {
+    "pendapatan": null,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -5622074944.0,
+    "beban_pajak": -759051700.0,
+    "laba_bersih": -5622074944.0,
+    "laba_induk": -5622074944.0,
+    "eps_basic": -4.02,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2058512000.0,
+    "dividen_dibayar": 1340246060.0
+  }
+}

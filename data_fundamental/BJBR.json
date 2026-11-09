@@ -1,0 +1,102 @@
+{
+  "kode": "BJBR",
+  "nama": "PT Bank Pembangunan Daerah Jawa Barat dan Banten Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 710.0,
+  "update": "2026-11-09 16:15",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.1320611165599963,
+    "roe": 8.311449796788793e-05,
+    "eps": 0.4452518996245577,
+    "eps_annualized": 137.56,
+    "de": 11.247349866421551,
+    "margin_net": 8.281755354208239e-05,
+    "current_ratio": null,
+    "roa": 6.297199708955552e-06,
+    "bv": 5357.090646166027,
+    "pcf": 0.2615062008766913,
+    "div_yield": 40802.11880099952,
+    "payout_ratio": 210595.4081761388
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4273314000000.0,
+      "2025-Q2": 4209525000000.0,
+      "2025-Q3": 4305090000000.0,
+      "2026-Q1": 4105847000000.0,
+      "2026-Q2": 4105512000000.0,
+      "2026-Q3": 4186254000000.0
+    },
+    "eps": {
+      "2025-Q1": 37.87,
+      "2025-Q2": 8.98,
+      "2025-Q3": -46.1,
+      "2026-Q1": 0.39,
+      "2026-Q2": 74.01,
+      "2026-Q3": 28.77
+    },
+    "net_income": {
+      "2025-Q1": 398419000.0,
+      "2025-Q2": 94520000.0,
+      "2025-Q3": 297736000.0,
+      "2026-Q1": 410149000.0,
+      "2026-Q2": 372679000.0,
+      "2026-Q3": 302713000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7470224769024,
+    "enterprise_value": 45351495008256,
+    "shares_outstanding": 3106729025
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1025,
+    "vol_trend": 0.537,
+    "price_chg_20d": -5.96
+  },
+  "neraca": {
+    "aset": 219665417.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 5307965.0,
+    "liabilitas": 187189970.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 16643029.0,
+    "ekuitas_induk": 16643029.0,
+    "modal_saham": null,
+    "saldo_laba": 5512931.0
+  },
+  "laba_rugi": {
+    "pendapatan": 12397613.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 1690982.0,
+    "laba_sebelum_pajak": 1648326.0,
+    "beban_pajak": -300702.0,
+    "laba_bersih": 1085541.0,
+    "laba_induk": 1085541.0,
+    "eps_basic": 103.17,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 8434896000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 900004.0
+  }
+}

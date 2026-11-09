@@ -1,0 +1,102 @@
+{
+  "kode": "NTBK",
+  "nama": "PT Nusatama Berkah Tbk",
+  "sektor": "Industrials",
+  "industri": "Farm & Heavy Construction Machinery",
+  "harga": 38.0,
+  "update": "2026-11-09 15:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.1078832211543825e-06,
+    "roe": -0.05289531838376283,
+    "eps": null,
+    "eps_annualized": -2.385333333333333,
+    "de": 0.4615319309287025,
+    "margin_net": -0.09760621102863794,
+    "current_ratio": 3.273402385256833,
+    "roa": -0.03563233324174788,
+    "bv": 33265746.09970011,
+    "pcf": 2.876230159478589e-05,
+    "div_yield": 137894.73727601295,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.9808268257e+16,
+      "2025-Q2": 1.5391383588e+16,
+      "2025-Q3": 1.7765030446e+16,
+      "2026-Q1": 1.5589909758e+16,
+      "2026-Q2": 7761631267000000.0,
+      "2026-Q3": 7559021321000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.05,
+      "2025-Q2": -0.03,
+      "2025-Q3": 0.07,
+      "2026-Q1": -0.65,
+      "2026-Q2": -1.63,
+      "2026-Q3": 0.49
+    },
+    "net_income": {
+      "2025-Q1": 143924743000000.0,
+      "2025-Q2": -90893218000000.0,
+      "2025-Q3": 179677935000000.0,
+      "2026-Q1": -1765184966000000.0,
+      "2026-Q2": -4290013315000000.0,
+      "2026-Q3": 1124480164000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 102602457088,
+    "enterprise_value": 106986332160,
+    "shares_outstanding": 2700064877
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3955,
+    "vol_trend": 0.704,
+    "price_chg_20d": -42.42
+  },
+  "neraca": {
+    "aset": 133335085013.0,
+    "aset_lancar": 109892478448.0,
+    "kas": 6676895848.0,
+    "piutang_usaha": 23971325431.0,
+    "persediaan": 61621292543.0,
+    "aset_tetap": 304569500.0,
+    "liabilitas": 41454646954.0,
+    "liabilitas_jangka_pendek": 33571332062.0,
+    "liabilitas_jangka_panjang": 7883314892.0,
+    "utang_usaha": 23971325431.0,
+    "utang_bank": 9000000000.0,
+    "ekuitas": 89819672651.0,
+    "ekuitas_induk": 89819672651.0,
+    "modal_saham": null,
+    "saldo_laba": 1604746605.0
+  },
+  "laba_rugi": {
+    "pendapatan": 30910562346.0,
+    "beban_pokok": 26660853603.0,
+    "laba_kotor": 4249708743.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -6062427153.0,
+    "beban_pajak": 1232512315.0,
+    "laba_bersih": -4930718117.0,
+    "laba_induk": -4930718117.0,
+    "eps_basic": -1.789,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3567255040,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 304569500.0,
+    "dividen_dibayar": 141483400.0
+  }
+}

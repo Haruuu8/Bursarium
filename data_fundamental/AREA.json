@@ -1,0 +1,102 @@
+{
+  "kode": "AREA",
+  "nama": "PT Dunia Virtual Online Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 149.0,
+  "update": "2026-11-09 15:46",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.040377650520127e-06,
+    "roe": -0.003925561922459928,
+    "eps": null,
+    "eps_annualized": -1.8399999999999999,
+    "de": 0.41500755440006,
+    "margin_net": -0.012485912278960435,
+    "current_ratio": 1.8401895646251483,
+    "roa": -0.002774233897376118,
+    "bv": 94024631.11921912,
+    "pcf": 6.054602841286586e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.456756159e+16,
+      "2025-Q2": 1.4823823768e+16,
+      "2025-Q3": 1.6970300274e+16,
+      "2026-Q1": 1.9078263979e+16,
+      "2026-Q2": 2.0867434657e+16,
+      "2026-Q3": 1.8157849765e+16
+    },
+    "eps": {
+      "2025-Q1": 0.79,
+      "2025-Q2": 0.7,
+      "2025-Q3": 1.01,
+      "2026-Q1": 0.28,
+      "2026-Q2": 0.47,
+      "2026-Q3": -2.13
+    },
+    "net_income": {
+      "2025-Q1": 2005169438000000.0,
+      "2025-Q2": 1771121362000000.0,
+      "2025-Q3": 2568299471000000.0,
+      "2026-Q1": 713021115000000.0,
+      "2026-Q2": 1199600428000000.0,
+      "2026-Q3": -5418286503000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 378400538624,
+    "enterprise_value": 352015056896,
+    "shares_outstanding": 2539601000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4231,
+    "vol_trend": 0.685,
+    "price_chg_20d": -54.02
+  },
+  "neraca": {
+    "aset": 337882645687.0,
+    "aset_lancar": 121662833124.0,
+    "kas": 77497822721.0,
+    "piutang_usaha": 18981740178.0,
+    "persediaan": 179205682.0,
+    "aset_tetap": 14057018561.0,
+    "liabilitas": 99097598472.0,
+    "liabilitas_jangka_pendek": 66114293583.0,
+    "liabilitas_jangka_panjang": 32983304889.0,
+    "utang_usaha": 18981740178.0,
+    "utang_bank": 5500000000.0,
+    "ekuitas": 238785047215.0,
+    "ekuitas_induk": 238785047215.0,
+    "modal_saham": null,
+    "saldo_laba": 186000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 58103548401.0,
+    "beban_pokok": 42383044077.0,
+    "laba_kotor": 15720504324.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3413026158.0,
+    "beban_pajak": -92638802.0,
+    "laba_bersih": -3505664960.0,
+    "laba_induk": -3505664960.0,
+    "eps_basic": -1.38,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 62497996800,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 14057018561.0,
+    "dividen_dibayar": null
+  }
+}

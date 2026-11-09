@@ -1,0 +1,96 @@
+{
+  "kode": "NASA",
+  "nama": "PT Andalan Perkasa Abadi Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 28.0,
+  "update": "2026-11-09 17:23",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.28250204882875873,
+    "ps": 5.2633946848327305e-05,
+    "roe": 308.03228616620925,
+    "eps": null,
+    "eps_annualized": -0.18666666666666668,
+    "de": 0.018177229309029458,
+    "margin_net": 0.057390574846657626,
+    "current_ratio": 2.986337172624954,
+    "roa": 303.2597173997129,
+    "bv": 99.11432542201655,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 3330216533000000.0,
+      "2026-Q1": 757105861000000.0,
+      "2026-Q2": 803842831000000.0,
+      "2026-Q3": 963193786000000.0
+    },
+    "eps": {
+      "2025-Q3": 0.17,
+      "2026-Q1": 0.07,
+      "2026-Q2": -0.19,
+      "2026-Q3": -0.02
+    },
+    "net_income": {
+      "2025-Q3": 1862084796000000.0,
+      "2026-Q1": -796415918000000.0,
+      "2026-Q2": -505318953000000.0,
+      "2026-Q3": -224364896000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 308138016768,
+    "enterprise_value": 247828496384,
+    "shares_outstanding": 11004929322
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3721,
+    "vol_trend": 0.462,
+    "price_chg_20d": -37.78
+  },
+  "neraca": {
+    "aset": 1107911831749.0,
+    "aset_lancar": 59102111437.0,
+    "kas": 57648461310.0,
+    "piutang_usaha": null,
+    "persediaan": 121802281.0,
+    "aset_tetap": 330630830002.0,
+    "liabilitas": 19826742815.0,
+    "liabilitas_jangka_pendek": 19790836741.0,
+    "liabilitas_jangka_panjang": 35906074.0,
+    "utang_usaha": 33122066.0,
+    "utang_bank": null,
+    "ekuitas": 1090746146067.0,
+    "ekuitas_induk": 1090746146067.0,
+    "modal_saham": null,
+    "saldo_laba": -9766425393.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2524142478.0,
+    "beban_pokok": 808592844.0,
+    "laba_kotor": 1715549634.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1470851951.0,
+    "beban_pajak": -55323950.0,
+    "laba_bersih": -1526099767.0,
+    "laba_induk": -1526099767.0,
+    "eps_basic": -0.14,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -9319937024,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 330630830002.0,
+    "dividen_dibayar": null
+  }
+}

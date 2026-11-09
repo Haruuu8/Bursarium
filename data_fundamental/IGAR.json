@@ -1,0 +1,102 @@
+{
+  "kode": "IGAR",
+  "nama": "PT Champion Pacific Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 510.0,
+  "update": "2026-11-09 16:37",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.457329836010011e-07,
+    "roe": 0.1105376017529553,
+    "eps": null,
+    "eps_annualized": 94.66666666666666,
+    "de": 0.21739007223949414,
+    "margin_net": 0.07733298287847984,
+    "current_ratio": 7.0039741862083735,
+    "roa": 72622.08377457756,
+    "bv": 800479340.8204483,
+    "pcf": 5.652643395464022e-06,
+    "div_yield": 3723257.168351917,
+    "payout_ratio": 20058392.491473358
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.22135107286e+17,
+      "2025-Q2": 2.34176479918e+17,
+      "2025-Q3": 2.5106958491299994e+17,
+      "2026-Q1": 2.09673230452e+17,
+      "2026-Q2": 2.88803562264e+17,
+      "2026-Q3": 3.1200419952899994e+17
+    },
+    "eps": {
+      "2025-Q1": 14.55,
+      "2025-Q2": 17.62,
+      "2025-Q3": 17.48,
+      "2026-Q1": 11.33,
+      "2026-Q2": 30.29,
+      "2026-Q3": 29.38
+    },
+    "net_income": {
+      "2025-Q1": 1.3528571671e+16,
+      "2025-Q2": 1.6315255065e+16,
+      "2025-Q3": 1.6223300138e+16,
+      "2026-Q1": 1.0508608784e+16,
+      "2026-Q2": 2.8101726609e+16,
+      "2026-Q3": 2.7259237077e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 473168117760,
+    "enterprise_value": 247193567232,
+    "shares_outstanding": 927780600
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3053,
+    "vol_trend": 0.305,
+    "price_chg_20d": 5.81
+  },
+  "neraca": {
+    "aset": 1130411967561.0,
+    "aset_lancar": 914041642185.0,
+    "kas": 453745301929.0,
+    "piutang_usaha": 228717124708.0,
+    "persediaan": 213827342335.0,
+    "aset_tetap": 2727383305.0,
+    "liabilitas": 161448911715.0,
+    "liabilitas_jangka_pendek": 130503285404.0,
+    "liabilitas_jangka_panjang": 30945626311.0,
+    "utang_usaha": 228717124708.0,
+    "utang_bank": null,
+    "ekuitas": 742669203114.0,
+    "ekuitas_induk": 742669203114.0,
+    "modal_saham": null,
+    "saldo_laba": 8980651104.0
+  },
+  "laba_rugi": {
+    "pendapatan": 810480992245.0,
+    "beban_pokok": 662860472360.0,
+    "laba_kotor": 147620519885.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 120349061098.0,
+    "beban_pajak": -26108018729.0,
+    "laba_bersih": 65869572470.0,
+    "laba_induk": 65869572470.0,
+    "eps_basic": 71.0,
+    "eps_diluted": 71.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 83707404288,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2727383305.0,
+    "dividen_dibayar": 17617265425.0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "kode": "MICE",
+  "nama": "PT Multi Indocitra Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Household & Personal Products",
+  "harga": 464.0,
+  "update": "2026-11-09 16:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.2919522347790067e-07,
+    "roe": 0.041614244724807514,
+    "eps": null,
+    "eps_annualized": 75.09333333333333,
+    "de": 0.4832964698599395,
+    "margin_net": 0.034110919312828135,
+    "current_ratio": 1.8154380253670703,
+    "roa": 28054.951315270308,
+    "bv": 1659448677.37,
+    "pcf": 0.00012279300047152514,
+    "div_yield": 2155173.2252155175,
+    "payout_ratio": 13316766.377397018
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.43528163462e+17,
+      "2025-Q2": 3.28189892092e+17,
+      "2025-Q3": 3.13249901558e+17,
+      "2026-Q1": 3.29717042756e+17
+    },
+    "eps": {
+      "2025-Q1": 6.86,
+      "2025-Q2": 36.28,
+      "2025-Q3": 24.98,
+      "2026-Q1": 1.75
+    },
+    "net_income": {
+      "2025-Q1": 4060173192000000.0,
+      "2025-Q2": 2.1475481568e+16,
+      "2025-Q3": 1.4847589459e+16,
+      "2026-Q1": 1050777802000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 278400008192,
+    "enterprise_value": 525943898112,
+    "shares_outstanding": 600000000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2671,
+    "vol_trend": 0.043,
+    "price_chg_20d": -2.45
+  },
+  "neraca": {
+    "aset": 1476888038599.0,
+    "aset_lancar": 797909788283.0,
+    "kas": 65884153781.0,
+    "piutang_usaha": 228852582292.0,
+    "persediaan": 444733386001.0,
+    "aset_tetap": 525939383759.0,
+    "liabilitas": 481203412612.0,
+    "liabilitas_jangka_pendek": 439513647469.0,
+    "liabilitas_jangka_panjang": 41689765143.0,
+    "utang_usaha": 228852582292.0,
+    "utang_bank": 290874481160.0,
+    "ekuitas": 995669206422.0,
+    "ekuitas_induk": 995669206422.0,
+    "modal_saham": null,
+    "saldo_laba": 12000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 983223696977.0,
+    "beban_pokok": 478800628460.0,
+    "laba_kotor": 504423068517.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 49138729175.0,
+    "beban_pajak": -15348110180.0,
+    "laba_bersih": 33790608303.0,
+    "laba_induk": 33790608303.0,
+    "eps_basic": 56.32,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2267230208,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5919598628.0,
+    "dividen_dibayar": 6000002259.0
+  }
+}

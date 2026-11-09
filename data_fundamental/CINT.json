@@ -1,0 +1,102 @@
+{
+  "kode": "CINT",
+  "nama": "PT Chitose Internasional Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 176.0,
+  "update": "2026-11-09 16:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.2657274516212184e-07,
+    "roe": 0.08359243054533813,
+    "eps": null,
+    "eps_annualized": 25.560000000000002,
+    "de": 0.6061426465424615,
+    "margin_net": 0.04860599457361539,
+    "current_ratio": 1.7239107703585639,
+    "roa": 0.05041472399531376,
+    "bv": 313368697.107,
+    "pcf": 6.314517375788346e-06,
+    "div_yield": 7828125.0,
+    "payout_ratio": 53902582.15962441
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.07426897969e+17,
+      "2025-Q2": 9.8091275828e+16,
+      "2025-Q3": 1.18774834856e+17,
+      "2026-Q1": 1.14406438851e+17,
+      "2026-Q2": 1.44806661456e+17,
+      "2026-Q3": 1.6094252553e+17
+    },
+    "eps": {
+      "2025-Q1": 1.2,
+      "2025-Q2": 0.36,
+      "2025-Q3": 7.01,
+      "2026-Q1": 1.05,
+      "2026-Q2": 9.0,
+      "2026-Q3": 9.12
+    },
+    "net_income": {
+      "2025-Q1": 1204259084000000.0,
+      "2025-Q2": 350980513000000.0,
+      "2025-Q3": 7015620563000000.0,
+      "2026-Q1": 1052295468000000.0,
+      "2026-Q2": 8999660412000000.0,
+      "2026-Q3": 9127674605000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 176000008192,
+    "enterprise_value": 243074662400,
+    "shares_outstanding": 1000000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4695,
+    "vol_trend": 0.137,
+    "price_chg_20d": -12.12
+  },
+  "neraca": {
+    "aset": 519595248611.0,
+    "aset_lancar": 290210627192.0,
+    "kas": 26279502163.0,
+    "piutang_usaha": 143721108970.0,
+    "persediaan": 106338711525.0,
+    "aset_tetap": 221121447594.0,
+    "liabilitas": 189946131408.0,
+    "liabilitas_jangka_pendek": 168344343676.0,
+    "liabilitas_jangka_panjang": 21601787732.0,
+    "utang_usaha": 143721108970.0,
+    "utang_bank": 75542606356.0,
+    "ekuitas": 313368697107.0,
+    "ekuitas_induk": 313368697107.0,
+    "modal_saham": null,
+    "saldo_laba": 21000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 420155625837.0,
+    "beban_pokok": 261956731526.0,
+    "laba_kotor": 158198894311.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 30788427545.0,
+    "beban_pajak": -8826390125.0,
+    "laba_bersih": 19179630485.0,
+    "laba_induk": 19179630485.0,
+    "eps_basic": 19.17,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 27872280576,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4361291073.0,
+    "dividen_dibayar": 13777500000.0
+  }
+}

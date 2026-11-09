@@ -1,0 +1,102 @@
+{
+  "kode": "SMMT",
+  "nama": "PT Golden Eagle Energy Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 2480.0,
+  "update": "2026-11-09 17:09",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 18.102513078074683,
+    "pb": null,
+    "ps": 0.046183562282788346,
+    "roe": 0.010096259431798257,
+    "eps": 136.99755328467154,
+    "eps_annualized": 0.005497856934306569,
+    "de": 2.9638167354548597,
+    "margin_net": 0.0025512238043194527,
+    "current_ratio": 0.8235808852886545,
+    "roa": 0.002544813834397962,
+    "bv": 13569.139562043796,
+    "pcf": 0.41968650890195897,
+    "div_yield": 30.739345420296683,
+    "payout_ratio": 13866053.18276637
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 29233343000000.0,
+      "2025-Q2": 24761280000000.0,
+      "2025-Q3": 36475153000000.0,
+      "2026-Q1": 23133735000000.0,
+      "2026-Q2": 38458453000000.0,
+      "2026-Q3": 85850910000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 1923095000000.0,
+      "2025-Q2": 1515347000000.0,
+      "2025-Q3": 455094000000.0,
+      "2026-Q1": 712926000.0,
+      "2026-Q2": 3102204000.0,
+      "2026-Q3": 10307490000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 8493999849472,
+    "enterprise_value": 8528275177472,
+    "shares_outstanding": 3425000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4424,
+    "vol_trend": 0.438,
+    "price_chg_20d": -37.59
+  },
+  "neraca": {
+    "aset": 184381511.0,
+    "aset_lancar": 90368494.0,
+    "kas": 13214641.0,
+    "piutang_usaha": 1593041.0,
+    "persediaan": 11339759.0,
+    "aset_tetap": 3010638.0,
+    "liabilitas": 137741317.0,
+    "liabilitas_jangka_pendek": 109726313.0,
+    "liabilitas_jangka_panjang": 28015004.0,
+    "utang_usaha": 1593041.0,
+    "utang_bank": 20821719.0,
+    "ekuitas": 46474303.0,
+    "ekuitas_induk": 46474303.0,
+    "modal_saham": null,
+    "saldo_laba": 1666648.0
+  },
+  "laba_rugi": {
+    "pendapatan": 147443098.0,
+    "beban_pokok": 125540863.0,
+    "laba_kotor": 21902235.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 18590275.0,
+    "beban_pajak": -4475768.0,
+    "laba_bersih": 14122620.0,
+    "laba_induk": 14122620.0,
+    "eps_basic": 0.004123392700729927,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 20238916,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 813544.0,
+    "dividen_dibayar": 2611.0
+  }
+}

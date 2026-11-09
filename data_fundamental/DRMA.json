@@ -1,0 +1,102 @@
+{
+  "kode": "DRMA",
+  "nama": "PT Dharma Polimetal Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 950.0,
+  "update": "2026-11-09 15:03",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.527969656049457,
+    "ps": 0.6656838002635743,
+    "roe": 225297.75483012377,
+    "eps": null,
+    "eps_annualized": 136.0,
+    "de": 0.5803949796570373,
+    "margin_net": 98154.47907122145,
+    "current_ratio": 1.8486254087820821,
+    "roa": 137936.74212922537,
+    "bv": 621.7400955829261,
+    "pcf": 5.522926800337009e-06,
+    "div_yield": 7368421.032500001,
+    "payout_ratio": 51470588.09466912
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1460942836350.0,
+      "2025-Q2": 1312727589906.0,
+      "2025-Q3": 1618905561328.0,
+      "2026-Q1": 1547154537165.0,
+      "2026-Q2": 1609928341058.0,
+      "2026-Q3": 1939794914693.0
+    },
+    "eps": {
+      "2025-Q1": 30.0,
+      "2025-Q2": 21.0,
+      "2025-Q3": 38.0,
+      "2026-Q1": 31.0,
+      "2026-Q2": 29.0,
+      "2026-Q3": 42.0
+    },
+    "net_income": {
+      "2025-Q1": 1.42719952379e+17,
+      "2025-Q2": 9.7454031075e+16,
+      "2025-Q3": 1.79697564948e+17,
+      "2026-Q1": 1.44850407418e+17,
+      "2026-Q2": 1.38139501202e+17,
+      "2026-Q3": 1.96496743123e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4470588047360,
+    "enterprise_value": 4254842486784,
+    "shares_outstanding": 4705882300
+  },
+  "akumulasi": {
+    "score": 5.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1201,
+    "vol_trend": 1.539,
+    "price_chg_20d": -2.6
+  },
+  "neraca": {
+    "aset": 4778887818544.0,
+    "aset_lancar": 2530236057466.0,
+    "kas": 716697971097.0,
+    "piutang_usaha": 832845675837.0,
+    "persediaan": 640320869869.0,
+    "aset_tetap": 62144434053.0,
+    "liabilitas": 1698140357968.0,
+    "liabilitas_jangka_pendek": 1368712149820.0,
+    "liabilitas_jangka_panjang": 329428208148.0,
+    "utang_usaha": 832845675837.0,
+    "utang_bank": 160665711031.0,
+    "ekuitas": 2925835711004.0,
+    "ekuitas_induk": 2925835711004.0,
+    "modal_saham": null,
+    "saldo_laba": 6000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5096877792916.0,
+    "beban_pokok": 4239551866165.0,
+    "laba_kotor": 857325926751.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 619971778052.0,
+    "beban_pajak": -132346070888.0,
+    "laba_bersih": 479486651743.0,
+    "laba_induk": 479486651743.0,
+    "eps_basic": 102.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 809459974144,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 62144434053.0,
+    "dividen_dibayar": 329411760100.0
+  }
+}

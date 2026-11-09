@@ -1,0 +1,102 @@
+{
+  "kode": "EDGE",
+  "nama": "PT Indointernet Tbk.",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 4790.0,
+  "update": "2026-11-09 17:47",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.906853675121277,
+    "ps": 9366.788208123371,
+    "roe": 1.8542303559738943e-05,
+    "eps": 0.018100730107659942,
+    "eps_annualized": 6.666666666666667e-06,
+    "de": 6.881031712267746,
+    "margin_net": 0.03539576311708827,
+    "current_ratio": 0.37750609708380695,
+    "roa": 2.3519027399975636e-06,
+    "bv": 976.185620591511,
+    "pcf": 8.999598112905407e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 185179000.0,
+      "2025-Q2": 189884000.0,
+      "2025-Q3": 220050000.0,
+      "2026-Q1": 243024000.0,
+      "2026-Q2": 248820000.0,
+      "2026-Q3": 321224000.0
+    },
+    "eps": {
+      "2025-Q1": 18.0,
+      "2025-Q2": 9.0,
+      "2025-Q3": 13.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 35604000.0,
+      "2025-Q2": 18873000.0,
+      "2025-Q3": 26838000.0,
+      "2026-Q1": 34404000.0,
+      "2026-Q2": -40075000.0,
+      "2026-Q3": 15401000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 9676997525504,
+    "enterprise_value": 17641368453120,
+    "shares_outstanding": 2020250000
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 15548262.0,
+    "aset_lancar": 1871716.0,
+    "kas": 682130.0,
+    "piutang_usaha": 516110.0,
+    "persediaan": null,
+    "aset_tetap": 1267885.0,
+    "liabilitas": 13570351.0,
+    "liabilitas_jangka_pendek": 4958108.0,
+    "liabilitas_jangka_panjang": 8612243.0,
+    "utang_usaha": 516110.0,
+    "utang_bank": 111941.0,
+    "ekuitas": 1972139.0,
+    "ekuitas_induk": 1972139.0,
+    "modal_saham": null,
+    "saldo_laba": 4040.0
+  },
+  "laba_rugi": {
+    "pendapatan": 813068.0,
+    "beban_pokok": 400998.0,
+    "laba_kotor": 412070.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 27189.0,
+    "beban_pajak": -17082.0,
+    "laba_bersih": 9730.0,
+    "laba_induk": 9730.0,
+    "eps_basic": 5e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 107526995968,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1267885.0,
+    "dividen_dibayar": null
+  }
+}

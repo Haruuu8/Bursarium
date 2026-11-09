@@ -1,0 +1,102 @@
+{
+  "kode": "ITMA",
+  "nama": "PT Sumber Energi Andalan Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 980.0,
+  "update": "2026-11-09 16:43",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 430.1524330643797,
+    "roe": 8.406437142838233e-06,
+    "eps": 1.8371594832249805,
+    "eps_annualized": 0.0021333333333333334,
+    "de": 0.19647574703586893,
+    "margin_net": 0.8063863486086977,
+    "current_ratio": 0.5633072283194298,
+    "roa": 7.009853847438423e-06,
+    "bv": 218541.98776590236,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 45315000.0,
+      "2025-Q2": 399557000.0,
+      "2025-Q3": 490897000.0,
+      "2026-Q1": 740295000.0,
+      "2026-Q2": 515963000.0,
+      "2026-Q3": 528950000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 111856000.0,
+      "2025-Q2": 525679000.0,
+      "2025-Q3": 263112000.0,
+      "2026-Q1": 631336000.0,
+      "2026-Q2": -44026000.0,
+      "2026-Q3": 984998000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 979072122880,
+    "enterprise_value": 1009058971648,
+    "shares_outstanding": 999053167
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3603,
+    "vol_trend": 1.116,
+    "price_chg_20d": -21.09
+  },
+  "neraca": {
+    "aset": 261834275.0,
+    "aset_lancar": 2612366.0,
+    "kas": 618336.0,
+    "piutang_usaha": 845773.0,
+    "persediaan": 64463.0,
+    "aset_tetap": 143128.0,
+    "liabilitas": 42897545.0,
+    "liabilitas_jangka_pendek": 4637551.0,
+    "liabilitas_jangka_panjang": 38259994.0,
+    "utang_usaha": 845773.0,
+    "utang_bank": 3542812.0,
+    "ekuitas": 218335065.0,
+    "ekuitas_induk": 218335065.0,
+    "modal_saham": null,
+    "saldo_laba": 85000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1785208.0,
+    "beban_pokok": 1626102.0,
+    "laba_kotor": 159106.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1505577.0,
+    "beban_pajak": null,
+    "laba_bersih": 1572308.0,
+    "laba_induk": 1572308.0,
+    "eps_basic": 0.0016,
+    "eps_diluted": 0.0016
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3357474,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 143128.0,
+    "dividen_dibayar": null
+  }
+}

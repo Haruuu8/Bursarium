@@ -1,0 +1,102 @@
+{
+  "kode": "RDTX",
+  "nama": "PT Roda Vivatex Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 12525.0,
+  "update": "2026-11-09 17:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.9813681703316364,
+    "ps": 5.844693161990448e-06,
+    "roe": 118437.32321876442,
+    "eps": null,
+    "eps_annualized": 1527.6799999999998,
+    "de": 0.11182677082225746,
+    "margin_net": 0.7053721875932024,
+    "current_ratio": 4.441324438741671,
+    "roa": 106524.97882486986,
+    "bv": 12762.794207771578,
+    "pcf": 6.627189838696933e-06,
+    "div_yield": 3097804.391217565,
+    "payout_ratio": 25397989.10766653
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.40407638872e+17,
+      "2025-Q2": 1.42629311111e+17,
+      "2025-Q3": 1.4216097301e+17,
+      "2026-Q1": 1.42080972881e+17,
+      "2026-Q2": 1.711314901e+17,
+      "2026-Q3": 1.20656803183e+17
+    },
+    "eps": {
+      "2025-Q1": 312.5,
+      "2025-Q2": 309.42,
+      "2025-Q3": 369.87,
+      "2026-Q1": 384.51,
+      "2026-Q2": 483.69,
+      "2026-Q3": 277.56
+    },
+    "net_income": {
+      "2025-Q1": 8.3998724929e+16,
+      "2025-Q2": 8.262149299e+16,
+      "2025-Q3": 9.9174173575e+16,
+      "2026-Q1": 1.03356384574e+17,
+      "2026-Q2": 1.29445801636e+17,
+      "2026-Q3": 7.4339350141e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3366720110592,
+    "enterprise_value": 2663013679104,
+    "shares_outstanding": 268800000
+  },
+  "akumulasi": {
+    "score": 2.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1862,
+    "vol_trend": 1.557,
+    "price_chg_20d": -1.64
+  },
+  "neraca": {
+    "aset": 3814276373563.0,
+    "aset_lancar": 899853627079.0,
+    "kas": 743728044733.0,
+    "piutang_usaha": 7421256213.0,
+    "persediaan": 2648323862.0,
+    "aset_tetap": 2347016259085.0,
+    "liabilitas": 383637290514.0,
+    "liabilitas_jangka_pendek": 202609298080.0,
+    "liabilitas_jangka_panjang": 181027992434.0,
+    "utang_usaha": 7421256213.0,
+    "utang_bank": null,
+    "ekuitas": 3430639083049.0,
+    "ekuitas_induk": 3430639083049.0,
+    "modal_saham": null,
+    "saldo_laba": 4550000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 433869266164.0,
+    "beban_pokok": 147396898569.0,
+    "laba_kotor": 286472367595.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 307989685415.0,
+    "beban_pajak": -7702830.0,
+    "laba_bersih": 307141536351.0,
+    "laba_induk": 307141536351.0,
+    "eps_basic": 1145.76,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 508016230400,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 25801249276.0,
+    "dividen_dibayar": 104294400000.0
+  }
+}

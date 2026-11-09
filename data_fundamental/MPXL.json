@@ -1,0 +1,102 @@
+{
+  "kode": "MPXL",
+  "nama": "PT MPX Logistics International Tbk",
+  "sektor": "Industrials",
+  "industri": "Trucking",
+  "harga": 254.0,
+  "update": "2026-11-09 15:33",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.6851456959915227e-06,
+    "roe": 0.041046104652855915,
+    "eps": null,
+    "eps_annualized": 4.066666666666666,
+    "de": 1.1313372385728981,
+    "margin_net": 0.028238373693112065,
+    "current_ratio": 0.7611633478568365,
+    "roa": 0.019128295928937958,
+    "bv": 47418388.10225085,
+    "pcf": 1.845720291591543e-05,
+    "div_yield": 393700.78740157484,
+    "payout_ratio": 24590163.93442623
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.2506526771e+16,
+      "2025-Q2": 2.426215166e+16,
+      "2025-Q3": 3.4653545394e+16,
+      "2026-Q1": 3.5617864393e+16,
+      "2026-Q2": 3.7502903865e+16,
+      "2026-Q3": 3.0077420669e+16
+    },
+    "eps": {
+      "2025-Q1": 0.02,
+      "2025-Q2": -1.77,
+      "2025-Q3": -1.1,
+      "2026-Q1": 0.59,
+      "2026-Q2": 1.47,
+      "2026-Q3": 0.99
+    },
+    "net_income": {
+      "2025-Q1": 43624126000000.0,
+      "2025-Q2": -3552705108000000.0,
+      "2025-Q3": -2194017691000000.0,
+      "2026-Q1": 1183853885000000.0,
+      "2026-Q2": 2931463419000000.0,
+      "2026-Q3": 1971409175000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 508003745792,
+    "enterprise_value": 644729667584,
+    "shares_outstanding": 2000014667
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2028,
+    "vol_trend": 0.845,
+    "price_chg_20d": -15.17
+  },
+  "neraca": {
+    "aset": 203505257471.0,
+    "aset_lancar": 51835242276.0,
+    "kas": 15041124713.0,
+    "piutang_usaha": 24923299651.0,
+    "persediaan": 1774063653.0,
+    "aset_tetap": 1681670986.0,
+    "liabilitas": 107293163335.0,
+    "liabilitas_jangka_pendek": 68100024025.0,
+    "liabilitas_jangka_panjang": 39193139310.0,
+    "utang_usaha": 24923299651.0,
+    "utang_bank": 23214286697.0,
+    "ekuitas": 94837471690.0,
+    "ekuitas_induk": 94837471690.0,
+    "modal_saham": null,
+    "saldo_laba": 400000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 103198188927.0,
+    "beban_pokok": 79815192556.0,
+    "laba_kotor": 23382996371.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 7002024025.0,
+    "beban_pajak": -917974006.0,
+    "laba_bersih": 6086726479.0,
+    "laba_induk": 6086726479.0,
+    "eps_basic": 3.05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 27523332096,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1681670986.0,
+    "dividen_dibayar": 2000014667.0
+  }
+}

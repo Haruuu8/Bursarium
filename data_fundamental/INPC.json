@@ -1,0 +1,96 @@
+{
+  "kode": "INPC",
+  "nama": "PT Bank Artha Graha Internasional Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 112.0,
+  "update": "2026-11-09 16:41",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.5766084214510482,
+    "ps": 1406.9946799252095,
+    "roe": 3.326985187291522e-05,
+    "eps": 0.0064623118066666095,
+    "eps_annualized": 8.28,
+    "de": 5.646816427247115,
+    "margin_net": 0.08118248510712311,
+    "current_ratio": null,
+    "roa": 5.0053814840640125e-06,
+    "bv": 194.23927197967288,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 439960000.0,
+      "2026-Q1": 397445000.0,
+      "2026-Q2": 393100000.0,
+      "2026-Q3": 379325000.0
+    },
+    "eps": {
+      "2025-Q3": 0.25,
+      "2026-Q1": 2.9,
+      "2026-Q2": 0.82,
+      "2026-Q3": 2.49
+    },
+    "net_income": {
+      "2025-Q3": 5084000.0,
+      "2026-Q1": 58593000.0,
+      "2026-Q2": 16694000.0,
+      "2026-Q3": 50319000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2265022201856,
+    "enterprise_value": 1204782891008,
+    "shares_outstanding": 20223412907
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2693,
+    "vol_trend": 0.701,
+    "price_chg_20d": -25.0
+  },
+  "neraca": {
+    "aset": 26109898.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 2099698.0,
+    "liabilitas": 22181717.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 3928181.0,
+    "ekuitas_induk": 3928181.0,
+    "modal_saham": null,
+    "saldo_laba": -219803.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1169870.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 169753.0,
+    "laba_sebelum_pajak": 155695.0,
+    "beban_pajak": -30089.0,
+    "laba_bersih": 125606.0,
+    "laba_induk": 125606.0,
+    "eps_basic": 6.21,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1165237000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

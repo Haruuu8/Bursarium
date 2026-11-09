@@ -1,0 +1,102 @@
+{
+  "kode": "KDTN",
+  "nama": "PT Puri Sentul Permai Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 222.0,
+  "update": "2026-11-09 15:23",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 6.9630144785854136e-06,
+    "roe": 0.05455157729381679,
+    "eps": null,
+    "eps_annualized": 3.7733333333333334,
+    "de": 0.05879456009790032,
+    "margin_net": 0.09814408686240848,
+    "current_ratio": 1.9784955060350766,
+    "roa": 0.051522343757388345,
+    "bv": 57360443.78110463,
+    "pcf": 1.8107755838697174e-05,
+    "div_yield": 396389.6922907196,
+    "payout_ratio": 23321160.3414858
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7344521555000000.0,
+      "2025-Q2": 7903732334000000.0,
+      "2025-Q3": 8517024798000000.0,
+      "2026-Q1": 9289528716000000.0,
+      "2026-Q2": 1.0667994783e+16,
+      "2026-Q3": 1.1379623055e+16
+    },
+    "eps": {
+      "2025-Q1": 0.12,
+      "2025-Q2": 0.09,
+      "2025-Q3": 0.3,
+      "2026-Q1": 1.64,
+      "2026-Q2": -0.14,
+      "2026-Q3": 1.33
+    },
+    "net_income": {
+      "2025-Q1": 155131001000000.0,
+      "2025-Q2": 103718448000000.0,
+      "2025-Q3": 376535107000000.0,
+      "2026-Q1": 671299155000000.0,
+      "2026-Q2": 1200579569000000.0,
+      "2026-Q3": 1663037424000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 277505179648,
+    "enterprise_value": 295629193216,
+    "shares_outstanding": 1250023298
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6112,
+    "vol_trend": 0.926,
+    "price_chg_20d": -49.58
+  },
+  "neraca": {
+    "aset": 75917572256.0,
+    "aset_lancar": 5952465096.0,
+    "kas": 1876346378.0,
+    "piutang_usaha": 686344185.0,
+    "persediaan": 1741046532.0,
+    "aset_tetap": 64738454439.0,
+    "liabilitas": 4215681146.0,
+    "liabilitas_jangka_pendek": 3008581560.0,
+    "liabilitas_jangka_panjang": 1207099586.0,
+    "utang_usaha": 686344185.0,
+    "utang_bank": 4076551147.0,
+    "ekuitas": 71701891110.0,
+    "ekuitas_induk": 71701891110.0,
+    "modal_saham": null,
+    "saldo_laba": 1200000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 31337146554.0,
+    "beban_pokok": 16005661720.0,
+    "laba_kotor": 15331484834.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3534916148.0,
+    "beban_pajak": -5225778.0,
+    "laba_bersih": 3534916148.0,
+    "laba_induk": 3534916148.0,
+    "eps_basic": 2.83,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 15325210624,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3787988198.0,
+    "dividen_dibayar": 1100001898.0
+  }
+}

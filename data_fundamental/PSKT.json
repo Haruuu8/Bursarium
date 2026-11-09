@@ -1,0 +1,102 @@
+{
+  "kode": "PSKT",
+  "nama": "PT Red Planet Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 180.0,
+  "update": "2026-11-09 17:02",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.7110568233690884e-05,
+    "roe": -0.01743009196575544,
+    "eps": null,
+    "eps_annualized": -0.42666666666666664,
+    "de": 0.16651063049049797,
+    "margin_net": -0.11062115465310121,
+    "current_ratio": 1.1409592032211158,
+    "roa": -0.014942709285447078,
+    "bv": 30783174.87745185,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.1453863062e+16,
+      "2025-Q2": 1.3566843941e+16,
+      "2025-Q3": 1.2670101453e+16,
+      "2026-Q1": 1.1372863003e+16,
+      "2026-Q2": 1.3057648913e+16,
+      "2026-Q3": 1.3106693691e+16
+    },
+    "eps": {
+      "2025-Q1": -0.28,
+      "2025-Q2": -0.28,
+      "2025-Q3": -0.21,
+      "2026-Q1": -0.19,
+      "2026-Q2": -0.24,
+      "2026-Q3": 0.11
+    },
+    "net_income": {
+      "2025-Q1": -2947687409000000.0,
+      "2025-Q2": -2820628039000000.0,
+      "2025-Q3": -2194154614000000.0,
+      "2026-Q1": -2007149400000000.0,
+      "2026-Q2": -2460800497000000.0,
+      "2026-Q3": 1108114232000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1863221772288,
+    "enterprise_value": 1585269702656,
+    "shares_outstanding": 10351231636
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2891,
+    "vol_trend": 1.946,
+    "price_chg_20d": -21.76
+  },
+  "neraca": {
+    "aset": 371685627613.0,
+    "aset_lancar": 35022888299.0,
+    "kas": 30891234811.0,
+    "piutang_usaha": 931638745.0,
+    "persediaan": 89487272.0,
+    "aset_tetap": 334899726627.0,
+    "liabilitas": 53057575652.0,
+    "liabilitas_jangka_pendek": 30696004029.0,
+    "liabilitas_jangka_panjang": 22361571623.0,
+    "utang_usaha": 931638745.0,
+    "utang_bank": 3973550657.0,
+    "ekuitas": 318643773648.0,
+    "ekuitas_induk": 318643773648.0,
+    "modal_saham": null,
+    "saldo_laba": -342982350486.0
+  },
+  "laba_rugi": {
+    "pendapatan": 37537205607.0,
+    "beban_pokok": 16803918491.0,
+    "laba_kotor": 20733287116.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -3359009755.0,
+    "beban_pajak": 192711274.0,
+    "laba_bersih": -3359835665.0,
+    "laba_induk": -3359835665.0,
+    "eps_basic": -0.32,
+    "eps_diluted": -0.32
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -5381217280,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3761295454.0,
+    "dividen_dibayar": null
+  }
+}

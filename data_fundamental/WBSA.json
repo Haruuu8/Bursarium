@@ -1,0 +1,87 @@
+{
+  "kode": "WBSA",
+  "nama": "PT BSA Logistics Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 336.0,
+  "update": "2026-11-09 15:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 148.23529411764707,
+    "pb": null,
+    "ps": 0.0007539698834629818,
+    "roe": 0.021380848761585858,
+    "eps": 2.2666666666666666,
+    "eps_annualized": 2.2666666666666666,
+    "de": 1.698883730567178,
+    "margin_net": 0.004649795145251415,
+    "current_ratio": 1.642631209194048,
+    "roa": 0.007922090056092802,
+    "bv": 72686.77832853026,
+    "pcf": 1.793999802529737e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2026-Q3": 950783729000000.0
+    },
+    "eps": {
+      "2026-Q3": 1.6
+    },
+    "net_income": {
+      "2026-Q3": 12464052000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2914800107520,
+    "enterprise_value": 3235642343424,
+    "shares_outstanding": 8675000000
+  },
+  "akumulasi": {
+    "score": 5.6,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0744,
+    "vol_trend": 1.098,
+    "price_chg_20d": -44.52
+  },
+  "neraca": {
+    "aset": 1701806077.0,
+    "aset_lancar": 934027457.0,
+    "kas": 272044676.0,
+    "piutang_usaha": 555067387.0,
+    "persediaan": 10141630.0,
+    "aset_tetap": 604414.0,
+    "liabilitas": 1071244391.0,
+    "liabilitas_jangka_pendek": 568616651.0,
+    "liabilitas_jangka_panjang": 502627740.0,
+    "utang_usaha": 555067387.0,
+    "utang_bank": 13182957.0,
+    "ekuitas": 630557802.0,
+    "ekuitas_induk": 630557802.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2899452681.0,
+    "beban_pokok": 2662601205.0,
+    "laba_kotor": 236851476.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 24406841.0,
+    "beban_pajak": 12043468.0,
+    "laba_bersih": 13481861.0,
+    "laba_induk": 13481861.0,
+    "eps_basic": 1.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 162474934272,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 604414.0,
+    "dividen_dibayar": null
+  }
+}

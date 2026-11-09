@@ -1,0 +1,102 @@
+{
+  "kode": "APLN",
+  "nama": "PT Agung Podomoro Land Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 81.0,
+  "update": "2026-11-09 16:05",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0003439291598459018,
+    "roe": 0.02271407801986442,
+    "eps": null,
+    "eps_annualized": 12.706666666666665,
+    "de": 0.8604505069708633,
+    "margin_net": 0.04999498498926915,
+    "current_ratio": 2.0357920938534964,
+    "roa": 0.011053740920633685,
+    "bv": 518378.93989375746,
+    "pcf": 1.475978538257856,
+    "div_yield": 23849.05123742425,
+    "payout_ratio": 152028.3171745565
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 874491194000000.0,
+      "2025-Q2": 813798593000000.0,
+      "2025-Q3": 957624483000000.0,
+      "2026-Q1": 2902668935000000.0,
+      "2026-Q2": 757033718000000.0,
+      "2026-Q3": 728673389000000.0
+    },
+    "eps": {
+      "2025-Q1": -2.74,
+      "2025-Q2": 2.74,
+      "2025-Q3": 0.0,
+      "2026-Q1": 9.57,
+      "2026-Q2": -1.43,
+      "2026-Q3": 1.39
+    },
+    "net_income": {
+      "2025-Q1": -62087098000000.0,
+      "2025-Q2": -46735516000000.0,
+      "2025-Q3": 50876650000000.0,
+      "2026-Q1": 217039333000000.0,
+      "2026-Q2": -32352632000000.0,
+      "2026-Q3": 31709865000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1838645510144,
+    "enterprise_value": 8064043319296,
+    "shares_outstanding": 22699326779
+  },
+  "akumulasi": {
+    "score": 2.8,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1151,
+    "vol_trend": 0.871,
+    "price_chg_20d": -25.23
+  },
+  "neraca": {
+    "aset": 24179435534.0,
+    "aset_lancar": 10626586518.0,
+    "kas": 1083916448.0,
+    "piutang_usaha": 262132620.0,
+    "persediaan": 4238229.0,
+    "aset_tetap": 2387698249.0,
+    "liabilitas": 10124794588.0,
+    "liabilitas_jangka_pendek": 5219878076.0,
+    "liabilitas_jangka_panjang": 4904916512.0,
+    "utang_usaha": 262132620.0,
+    "utang_bank": 33662000.0,
+    "ekuitas": 11766852952.0,
+    "ekuitas_induk": 11766852952.0,
+    "modal_saham": null,
+    "saldo_laba": 130000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4388376042.0,
+    "beban_pokok": 2778368864.0,
+    "laba_kotor": 1610007178.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 717771124.0,
+    "beban_pajak": -123383585.0,
+    "laba_bersih": 216396566.0,
+    "laba_induk": 216396566.0,
+    "eps_basic": 9.53,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1245712875520,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 19679029.0,
+    "dividen_dibayar": 438499500.0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "MYOR",
+  "nama": "PT Mayora Indah Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 1345.0,
+  "update": "2026-11-09 16:58",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.5690323327558513,
+    "ps": 0.7901624972391843,
+    "roe": -61.56100087394608,
+    "eps": null,
+    "eps_annualized": 145.33333333333331,
+    "de": 0.5303497887256426,
+    "margin_net": -31.002034290564204,
+    "current_ratio": 3.4646812851299313,
+    "roa": -39.83317976506897,
+    "bv": 857.2162420882937,
+    "pcf": 4.673984045580909,
+    "div_yield": 4.529534608743916,
+    "payout_ratio": 41.918972812572704
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 9859853629442.0,
+      "2025-Q2": 7936942521251.0,
+      "2025-Q3": 9360699459052.0,
+      "2026-Q1": 9392264159669.0,
+      "2026-Q2": 8529580568601.0,
+      "2026-Q3": 10210870630690.0
+    },
+    "eps": {
+      "2025-Q1": 31.0,
+      "2025-Q2": 21.0,
+      "2025-Q3": 31.0,
+      "2026-Q1": 42.0,
+      "2026-Q2": 35.0,
+      "2026-Q3": 32.0
+    },
+    "net_income": {
+      "2025-Q1": 6.89439163826e+17,
+      "2025-Q2": -6.88272514815488e+17,
+      "2025-Q3": -1164799443944547.0,
+      "2026-Q1": 9.45583410286e+17,
+      "2026-Q2": -9.43873947680239e+17,
+      "2026-Q3": -1707035293674833.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 29625889587200,
+    "enterprise_value": 30735190720512,
+    "shares_outstanding": 22026684225
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1596,
+    "vol_trend": 0.777,
+    "price_chg_20d": -1.09
+  },
+  "neraca": {
+    "aset": 29181002840192.0,
+    "aset_lancar": 19312445808204.0,
+    "kas": 4259220141625.0,
+    "piutang_usaha": 548566474179.0,
+    "persediaan": 5414766736187.0,
+    "aset_tetap": 9484718784975.0,
+    "liabilitas": 10013869264633.0,
+    "liabilitas_jangka_pendek": 5574090145345.0,
+    "liabilitas_jangka_panjang": 4439779119288.0,
+    "utang_usaha": 548566474179.0,
+    "utang_bank": 235000000000.0,
+    "ekuitas": 18881631477020.0,
+    "ekuitas_induk": 18881631477020.0,
+    "modal_saham": null,
+    "saldo_laba": 59000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 28132715358960.0,
+    "beban_pokok": 21071692406193.0,
+    "laba_kotor": 7061022952767.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3103743303217.0,
+    "beban_pajak": -634861065272.0,
+    "laba_bersih": 2427312086167.0,
+    "laba_induk": 2427312086167.0,
+    "eps_basic": 109.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 6338466283520,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 46870316891.0,
+    "dividen_dibayar": 1341914953500.0
+  }
+}

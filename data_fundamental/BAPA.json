@@ -1,0 +1,102 @@
+{
+  "kode": "BAPA",
+  "nama": "PT Bekasi Asri Pemula Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 79.0,
+  "update": "2026-11-09 16:10",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.0930049843204581e-05,
+    "roe": -0.03170827297248833,
+    "eps": null,
+    "eps_annualized": -4.3999999999999995,
+    "de": 0.1290312053384488,
+    "margin_net": -0.7488119555256949,
+    "current_ratio": 1.8231144532686918,
+    "roa": -0.02808157549360174,
+    "bv": 170688841.30743948,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 244332677000000.0,
+      "2025-Q2": 56271865000000.0,
+      "2025-Q3": 571573219000000.0,
+      "2026-Q1": 95377274000000.0,
+      "2026-Q2": 942553611000000.0,
+      "2026-Q3": 3173729077000000.0
+    },
+    "eps": {
+      "2025-Q1": -2.56,
+      "2025-Q2": -2.7,
+      "2025-Q3": -2.26,
+      "2026-Q1": -2.43,
+      "2026-Q2": -1.25,
+      "2026-Q3": 0.38
+    },
+    "net_income": {
+      "2025-Q1": -1542928693000000.0,
+      "2025-Q2": -1634617557000000.0,
+      "2025-Q3": -1343641543000000.0,
+      "2026-Q1": -1628328366000000.0,
+      "2026-Q2": -840982069000000.0,
+      "2026-Q3": 231209786000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 52280975360,
+    "enterprise_value": 54837690368,
+    "shares_outstanding": 661784520
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1835,
+    "vol_trend": 1.498,
+    "price_chg_20d": -23.3
+  },
+  "neraca": {
+    "aset": 127547765004.0,
+    "aset_lancar": 23780997593.0,
+    "kas": 456553361.0,
+    "piutang_usaha": 161659602.0,
+    "persediaan": null,
+    "aset_tetap": 15657403.0,
+    "liabilitas": 14575265977.0,
+    "liabilitas_jangka_pendek": 13044160530.0,
+    "liabilitas_jangka_panjang": 1531105447.0,
+    "utang_usaha": 161659602.0,
+    "utang_bank": 3000000000.0,
+    "ekuitas": 112959232914.0,
+    "ekuitas_induk": 112959232914.0,
+    "modal_saham": null,
+    "saldo_laba": 50282879469.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4211659962.0,
+    "beban_pokok": 2502979515.0,
+    "laba_kotor": 1708680447.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2129082020.0,
+    "beban_pajak": -109018629.0,
+    "laba_bersih": -2238100649.0,
+    "laba_induk": -2238100649.0,
+    "eps_basic": -3.3,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -2628015360,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 350550.0,
+    "dividen_dibayar": null
+  }
+}

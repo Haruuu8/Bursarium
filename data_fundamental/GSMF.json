@@ -1,0 +1,102 @@
+{
+  "kode": "GSMF",
+  "nama": "PT Equity Development Investment Tbk",
+  "sektor": "Financial Services",
+  "industri": "Insurance - Diversified",
+  "harga": 68.0,
+  "update": "2026-11-09 16:34",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 120.0624700664265,
+    "roe": 6.38791189358065e-06,
+    "eps": 0.011276917526917526,
+    "eps_annualized": -0.005253333333333333,
+    "de": 1.2257328119780717,
+    "margin_net": 0.01991080254436906,
+    "current_ratio": null,
+    "roa": 2.811760788434677e-06,
+    "bv": 1765.3527028527028,
+    "pcf": null,
+    "div_yield": 3566.694743165331,
+    "payout_ratio": 21507228.545063056
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 252842000.0,
+      "2025-Q2": 266427000.0,
+      "2025-Q3": 268716000.0,
+      "2026-Q1": 331601000.0,
+      "2026-Q2": 61856000.0,
+      "2026-Q3": 154218000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 1.33,
+      "2025-Q3": -1.33,
+      "2026-Q1": -0.02,
+      "2026-Q2": 0.01,
+      "2026-Q3": 0.01
+    },
+    "net_income": {
+      "2025-Q1": -6398000.0,
+      "2025-Q2": 25325000.0,
+      "2025-Q3": 22347000.0,
+      "2026-Q1": -353000.0,
+      "2026-Q2": -20964000.0,
+      "2026-Q3": 15225000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1051063418880,
+    "enterprise_value": 455960231936,
+    "shares_outstanding": 1441440000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3363,
+    "vol_trend": 0.19,
+    "price_chg_20d": -25.81
+  },
+  "neraca": {
+    "aset": 5781075.0,
+    "aset_lancar": null,
+    "kas": 286599.0,
+    "piutang_usaha": 8558.0,
+    "persediaan": null,
+    "aset_tetap": 120166.0,
+    "liabilitas": 3119061.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": 8558.0,
+    "utang_bank": 55228.0,
+    "ekuitas": 2544650.0,
+    "ekuitas_induk": 2544650.0,
+    "modal_saham": null,
+    "saldo_laba": -975589.0
+  },
+  "laba_rugi": {
+    "pendapatan": 547675.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2226.0,
+    "beban_pajak": 10332.0,
+    "laba_bersih": -6092.0,
+    "laba_induk": -6092.0,
+    "eps_basic": -0.00394,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -37326000128,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9939.0,
+    "dividen_dibayar": 3496.0
+  }
+}

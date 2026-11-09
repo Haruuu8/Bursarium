@@ -1,0 +1,102 @@
+{
+  "kode": "KJEN",
+  "nama": "PT Krida Jaringan Nusantara Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 103.0,
+  "update": "2026-11-09 17:35",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.4460498864978177e-05,
+    "roe": -0.00013562473123285792,
+    "eps": null,
+    "eps_annualized": 0.018666666666666665,
+    "de": 0.07380622586300928,
+    "margin_net": -0.00237684018878849,
+    "current_ratio": 2.706682533002784,
+    "roa": -0.0001263027983692844,
+    "bv": 124828870.414,
+    "pcf": 3.3323942409104604e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 842114380000000.0,
+      "2025-Q2": 1086895706000000.0,
+      "2025-Q3": 970191608000000.0,
+      "2026-Q1": 984731920000000.0,
+      "2026-Q2": 1217591962000000.0,
+      "2026-Q3": 388910743000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.05,
+      "2025-Q2": 0.25,
+      "2025-Q3": -0.02,
+      "2026-Q1": 0.02,
+      "2026-Q2": 0.3,
+      "2026-Q3": -0.3
+    },
+    "net_income": {
+      "2025-Q1": 24389600000000.0,
+      "2025-Q2": 132612588000000.0,
+      "2025-Q3": -15667810000000.0,
+      "2026-Q1": 12268732000000.0,
+      "2026-Q2": 145746370000000.0,
+      "2026-Q3": -150812233000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 51499999232,
+    "enterprise_value": 49985200128,
+    "shares_outstanding": 500000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4105,
+    "vol_trend": 0.317,
+    "price_chg_20d": -32.88
+  },
+  "neraca": {
+    "aset": 67021009109.0,
+    "aset_lancar": 8898167652.0,
+    "kas": 1215199040.0,
+    "piutang_usaha": 736580474.0,
+    "persediaan": null,
+    "aset_tetap": 56516528131.0,
+    "liabilitas": 4606573902.0,
+    "liabilitas_jangka_pendek": 3287481093.0,
+    "liabilitas_jangka_panjang": 1319092809.0,
+    "utang_usaha": 736580474.0,
+    "utang_bank": 2099600000.0,
+    "ekuitas": 62414435207.0,
+    "ekuitas_induk": 62414435207.0,
+    "modal_saham": null,
+    "saldo_laba": -587982213.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2591234625.0,
+    "beban_pokok": 1253686449.0,
+    "laba_kotor": 1337548176.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 7202869.0,
+    "beban_pajak": null,
+    "laba_bersih": 7202869.0,
+    "laba_induk": 7202869.0,
+    "eps_basic": 0.014,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1545435392,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 33836000.0,
+    "dividen_dibayar": null
+  }
+}

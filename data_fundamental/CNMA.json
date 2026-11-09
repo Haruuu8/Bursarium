@@ -1,0 +1,102 @@
+{
+  "kode": "CNMA",
+  "nama": "PT Nusantara Sejahtera Raya Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 70.0,
+  "update": "2026-11-09 15:35",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.4825079115555158,
+    "ps": 1.4042667522095604,
+    "roe": 0.00013325493890015188,
+    "eps": 0.0062919365558214285,
+    "eps_annualized": 5.88e-06,
+    "de": 0.5611761402880588,
+    "margin_net": 0.0001262222473193138,
+    "current_ratio": null,
+    "roa": 8.256241080878207e-05,
+    "bv": 47.21728596143056,
+    "pcf": 3.8076318867006935,
+    "div_yield": 10563.839025991005,
+    "payout_ratio": 125759988404.65482
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 929271000.0,
+      "2025-Q2": 1949354000.0,
+      "2025-Q3": 1412245000.0,
+      "2026-Q1": 1098318000000.0,
+      "2026-Q2": 1532905000000.0,
+      "2026-Q3": 1518709000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": -0.01,
+      "2026-Q2": 0.01,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": -69425000.0,
+      "2025-Q2": 357981000.0,
+      "2025-Q3": 156354000.0,
+      "2026-Q1": -8153000.0,
+      "2026-Q2": 181203000.0,
+      "2026-Q3": 194588000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 5829594447872,
+    "enterprise_value": 6415543435264,
+    "shares_outstanding": 83279924289
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2524,
+    "vol_trend": 5.04,
+    "price_chg_20d": -16.85
+  },
+  "neraca": {
+    "aset": 6346617.0,
+    "aset_lancar": null,
+    "kas": 1582563.0,
+    "piutang_usaha": 96227.0,
+    "persediaan": 110561.0,
+    "aset_tetap": 150779.0,
+    "liabilitas": 2206686.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": 96227.0,
+    "utang_bank": null,
+    "ekuitas": 3932252.0,
+    "ekuitas_induk": 3932252.0,
+    "modal_saham": null,
+    "saldo_laba": 133352.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4149932.0,
+    "beban_pokok": 1663658.0,
+    "laba_kotor": 2486274.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 522848.0,
+    "beban_pajak": -106551.0,
+    "laba_bersih": 367638.0,
+    "laba_induk": 367638.0,
+    "eps_basic": 4.41e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1531028963328,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 150779.0,
+    "dividen_dibayar": 615829.0
+  }
+}

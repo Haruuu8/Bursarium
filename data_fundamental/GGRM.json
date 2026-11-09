@@ -1,0 +1,102 @@
+{
+  "kode": "GGRM",
+  "nama": "PT Gudang Garam Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Tobacco",
+  "harga": 15350.0,
+  "update": "2026-11-09 16:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 6.530109920860465,
+    "pb": 0.4505661430042643,
+    "ps": 0.3497453504347128,
+    "roe": 0.06899824788016642,
+    "eps": 2350.6495581283184,
+    "eps_annualized": 3133.333333333333,
+    "de": 0.17753696088489954,
+    "margin_net": 0.05355887644669652,
+    "current_ratio": 4.44321548338803,
+    "roa": 0.058593024395240056,
+    "bv": 34068.24999688164,
+    "pcf": 2.9343235155354352,
+    "div_yield": 5.211725030028017,
+    "payout_ratio": 25.53190825880747
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 23066333000000.0,
+      "2025-Q2": 21302201000000.0,
+      "2025-Q3": 22958263000000.0,
+      "2026-Q1": 20114143000000.0,
+      "2026-Q2": 21063287000000.0,
+      "2026-Q3": 20310750000000.0
+    },
+    "eps": {
+      "2025-Q1": 54.0,
+      "2025-Q2": 7.0,
+      "2025-Q3": 514.0,
+      "2026-Q1": 799.0,
+      "2026-Q2": 748.0,
+      "2026-Q3": 803.0
+    },
+    "net_income": {
+      "2025-Q1": 104432000.0,
+      "2025-Q2": 12732000.0,
+      "2025-Q3": 989607000.0,
+      "2026-Q1": 1538215000000.0,
+      "2026-Q2": 1437959000000.0,
+      "2026-Q3": 1545693000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 29534751555584,
+    "enterprise_value": 19614008344576,
+    "shares_outstanding": 1924088000
+  },
+  "akumulasi": {
+    "score": 1.9,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1051,
+    "vol_trend": 1.429,
+    "price_chg_20d": -16.25
+  },
+  "neraca": {
+    "aset": 77191042.0,
+    "aset_lancar": 42642321.0,
+    "kas": 9068615.0,
+    "piutang_usaha": 1748584.0,
+    "persediaan": 30897854.0,
+    "aset_tetap": 66919.0,
+    "liabilitas": 11637603.0,
+    "liabilitas_jangka_pendek": 9597176.0,
+    "liabilitas_jangka_panjang": 2040427.0,
+    "utang_usaha": 1748584.0,
+    "utang_bank": 761931.0,
+    "ekuitas": 65550311.0,
+    "ekuitas_induk": 65550311.0,
+    "modal_saham": null,
+    "saldo_laba": 200000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 61488180.0,
+    "beban_pokok": 52486732.0,
+    "laba_kotor": 9001448.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5931974.0,
+    "beban_pajak": -1410102.0,
+    "laba_bersih": 4521867.0,
+    "laba_induk": 4521867.0,
+    "eps_basic": 2350.0,
+    "eps_diluted": 2350.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 10065267392512,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 66919.0,
+    "dividen_dibayar": 1539270.0
+  }
+}

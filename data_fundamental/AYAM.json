@@ -1,0 +1,102 @@
+{
+  "kode": "AYAM",
+  "nama": "PT Janu Putra Sejahtera Tbk.",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 486.0,
+  "update": "2026-11-09 15:41",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7.954246668184507e-06,
+    "roe": -0.0013988070858345764,
+    "eps": null,
+    "eps_annualized": 5.862802715999999,
+    "de": 1.1923096947630782,
+    "margin_net": -0.0012957052638619979,
+    "current_ratio": 1.2160326728538065,
+    "roa": -0.0006380517721451507,
+    "bv": 56595983.85775,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.048054859e+17,
+      "2025-Q2": 7.949472361e+16,
+      "2025-Q3": 4.1119305073e+16,
+      "2026-Q1": 5.6393715459e+16,
+      "2026-Q2": 7.3521029382e+16,
+      "2026-Q3": 7.3363701513e+16
+    },
+    "eps": {
+      "2025-Q1": 0.86,
+      "2025-Q2": -0.57,
+      "2025-Q3": -4.48,
+      "2026-Q1": 1.33,
+      "2026-Q2": -0.66,
+      "2026-Q3": 3.73
+    },
+    "net_income": {
+      "2025-Q1": 3459342439000000.0,
+      "2025-Q2": -2298245421000000.0,
+      "2025-Q3": -1.7905075601e+16,
+      "2026-Q1": 5307487265000000.0,
+      "2026-Q2": -2631309143000000.0,
+      "2026-Q3": 1.4912230026e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1944000004096,
+    "enterprise_value": 1965646282752,
+    "shares_outstanding": 4000000000
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.3244,
+    "vol_trend": 1.373,
+    "price_chg_20d": -6.54
+  },
+  "neraca": {
+    "aset": 496303696384.0,
+    "aset_lancar": 283460342157.0,
+    "kas": 8314952963.0,
+    "piutang_usaha": 2158988715.0,
+    "persediaan": 5435835344.0,
+    "aset_tetap": 122670550000.0,
+    "liabilitas": 269919760953.0,
+    "liabilitas_jangka_pendek": 233102570749.0,
+    "liabilitas_jangka_panjang": 36817190204.0,
+    "utang_usaha": 2158988715.0,
+    "utang_bank": 23922000000.0,
+    "ekuitas": 226383935431.0,
+    "ekuitas_induk": 226383935431.0,
+    "modal_saham": null,
+    "saldo_laba": 2000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 203278446354.0,
+    "beban_pokok": 192662901495.0,
+    "laba_kotor": 10615544859.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 19229169536.0,
+    "beban_pajak": -1640761388.0,
+    "laba_bersih": 17588408148.0,
+    "laba_induk": 17588408148.0,
+    "eps_basic": 4.397102037,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -18889394176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 122670550000.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "CCSI",
+  "nama": "PT Communication Cable Systems Indonesia Tbk",
+  "sektor": "Technology",
+  "industri": "Communication Equipment",
+  "harga": 204.0,
+  "update": "2026-11-09 17:35",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0009239865935795535,
+    "roe": 0.021630451002410744,
+    "eps": 9105.50851593464,
+    "eps_annualized": 0.013223703637131145,
+    "de": 0.3521071474929351,
+    "margin_net": 0.04124199900219639,
+    "current_ratio": 2.8353734926684173,
+    "roa": 0.01578393128555178,
+    "bv": 420957.8669866763,
+    "pcf": 7.143571727649966e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 58786181000000.0,
+      "2025-Q2": 73683737000000.0,
+      "2025-Q3": 75733959000000.0,
+      "2026-Q1": 77308112000000.0,
+      "2026-Q2": 71531800000000.0,
+      "2026-Q3": 69802694000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": 0.01,
+      "2025-Q3": -0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": -0.0,
+      "2026-Q3": 0.01
+    },
+    "net_income": {
+      "2025-Q1": -4296961000000.0,
+      "2025-Q2": 6856661000000.0,
+      "2025-Q3": -793191000000.0,
+      "2026-Q1": 2553826000000.0,
+      "2026-Q2": -776208000000.0,
+      "2026-Q3": 11156251000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 272000008192,
+    "enterprise_value": 264669102080,
+    "shares_outstanding": 1333333331
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4971,
+    "vol_trend": 0.138,
+    "price_chg_20d": -48.0
+  },
+  "neraca": {
+    "aset": 769179603.0,
+    "aset_lancar": 415110965.0,
+    "kas": 74122115.0,
+    "piutang_usaha": 45320076.0,
+    "persediaan": 249930919.0,
+    "aset_tetap": 7293497.0,
+    "liabilitas": 197629698.0,
+    "liabilitas_jangka_pendek": 146404333.0,
+    "liabilitas_jangka_panjang": 51225365.0,
+    "utang_usaha": 45320076.0,
+    "utang_bank": 48353987.0,
+    "ekuitas": 561277155.0,
+    "ekuitas_induk": 561277155.0,
+    "modal_saham": null,
+    "saldo_laba": 600000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 218642606.0,
+    "beban_pokok": 172760652.0,
+    "laba_kotor": 45881954.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17985144.0,
+    "beban_pajak": -4624450.0,
+    "laba_bersih": 12933869.0,
+    "laba_induk": 12933869.0,
+    "eps_basic": 0.009917777727848359,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 38076190720,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7293497.0,
+    "dividen_dibayar": null
+  }
+}

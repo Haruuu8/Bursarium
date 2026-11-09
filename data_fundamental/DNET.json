@@ -1,0 +1,102 @@
+{
+  "kode": "DNET",
+  "nama": "PT Indoritel Makmur Internasional Tbk.",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 9600.0,
+  "update": "2026-11-09 16:25",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 8.580360505655392,
+    "ps": 77546.64340072975,
+    "roe": 5.991773046016511e-05,
+    "eps": 0.06703800056401579,
+    "eps_annualized": 6.137333333333333e-05,
+    "de": 0.6668916678949104,
+    "margin_net": 0.5415179087537139,
+    "current_ratio": 0.4889135259861554,
+    "roa": 3.558904496071539e-05,
+    "bv": 1118.834108855048,
+    "pcf": 0.0002967564536355171,
+    "div_yield": 52.083333333333336,
+    "payout_ratio": 8146860742.9937
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 379408000.0,
+      "2025-Q2": 421970000.0,
+      "2025-Q3": 420556000.0,
+      "2026-Q1": 425022000.0,
+      "2026-Q2": 446808000.0,
+      "2026-Q3": 463543000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 204743000.0,
+      "2025-Q2": 335916000.0,
+      "2025-Q3": 298005000.0,
+      "2026-Q1": 233624000.0,
+      "2026-Q2": 164939000.0,
+      "2026-Q3": 254299000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 136166393249792,
+    "enterprise_value": 144402051760128,
+    "shares_outstanding": 14184000000
+  },
+  "akumulasi": {
+    "score": 3.0,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3051,
+    "vol_trend": 1.097,
+    "price_chg_20d": -2.04
+  },
+  "neraca": {
+    "aset": 26717969.0,
+    "aset_lancar": 2224801.0,
+    "kas": 702117.0,
+    "piutang_usaha": 754719.0,
+    "persediaan": null,
+    "aset_tetap": 343107.0,
+    "liabilitas": 10583266.0,
+    "liabilitas_jangka_pendek": 4550500.0,
+    "liabilitas_jangka_panjang": 6032766.0,
+    "utang_usaha": 754719.0,
+    "utang_bank": 2000000.0,
+    "ekuitas": 15869543.0,
+    "ekuitas_induk": 15869543.0,
+    "modal_saham": null,
+    "saldo_laba": 20000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1335373.0,
+    "beban_pokok": null,
+    "laba_kotor": 1335373.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 657773.0,
+    "beban_pajak": -27946.0,
+    "laba_bersih": 652862.0,
+    "laba_induk": 652862.0,
+    "eps_basic": 4.603e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 458848993280,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 343107.0,
+    "dividen_dibayar": 70920.0
+  }
+}

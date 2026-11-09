@@ -1,0 +1,102 @@
+{
+  "kode": "GMTD",
+  "nama": "PT Gowa Makassar Tourism Development Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 770.0,
+  "update": "2026-11-09 16:33",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.1744571926426564e-06,
+    "roe": 0.0845819970246134,
+    "eps": null,
+    "eps_annualized": 82.40771803528399,
+    "de": 0.5670743095218473,
+    "margin_net": 0.21617145663830284,
+    "current_ratio": 2.8856542478107134,
+    "roa": 53974.46734774118,
+    "bv": 905024376.5536054,
+    "pcf": null,
+    "div_yield": 524401.6143402777,
+    "payout_ratio": 4899895.940197324
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.5316366811e+16,
+      "2025-Q2": 7.101351804e+16,
+      "2025-Q3": 8.3128952405e+16,
+      "2026-Q1": 2.2268541204e+16,
+      "2026-Q2": 1.00961337769e+17,
+      "2026-Q3": 1.53198764258e+17
+    },
+    "eps": {
+      "2025-Q1": 4.55,
+      "2025-Q2": 17.12,
+      "2025-Q3": 14.75,
+      "2026-Q1": -13.79,
+      "2026-Q2": 33.01,
+      "2026-Q3": 42.59
+    },
+    "net_income": {
+      "2025-Q1": 4617466910000000.0,
+      "2025-Q2": 1.7387923628e+16,
+      "2025-Q3": 1.4969727627e+16,
+      "2026-Q1": -1.4005287314e+16,
+      "2026-Q2": 3.3522882737e+16,
+      "2026-Q3": 4.3238766144e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 781842579456,
+    "enterprise_value": 784809328640,
+    "shares_outstanding": 1015380000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.165,
+    "vol_trend": 0.458,
+    "price_chg_20d": -17.86
+  },
+  "neraca": {
+    "aset": 1440052917859.0,
+    "aset_lancar": 843438375492.0,
+    "kas": 32699239715.0,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 16056363300.0,
+    "liabilitas": 521109336644.0,
+    "liabilitas_jangka_pendek": 292286706258.0,
+    "liabilitas_jangka_panjang": 228822630386.0,
+    "utang_usaha": 27050147032.0,
+    "utang_bank": 21500000000.0,
+    "ekuitas": 918943651465.0,
+    "ekuitas_induk": 918943651465.0,
+    "modal_saham": null,
+    "saldo_laba": 1500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 276428643231.0,
+    "beban_pokok": 133493547670.0,
+    "laba_kotor": 142935095561.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 62808383238.0,
+    "beban_pajak": -52021684.0,
+    "laba_bersih": 62756361567.0,
+    "laba_induk": 62756361567.0,
+    "eps_basic": 61.805788526463,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -61484126208,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1647726245.0,
+    "dividen_dibayar": 4099995216.0
+  }
+}

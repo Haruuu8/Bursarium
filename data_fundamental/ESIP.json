@@ -1,0 +1,102 @@
+{
+  "kode": "ESIP",
+  "nama": "PT Sinergi Inti Plastindo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 70.0,
+  "update": "2026-11-09 17:38",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.2060446930822416e-06,
+    "roe": 0.028233191890374293,
+    "eps": null,
+    "eps_annualized": 3.0133333333333328,
+    "de": 0.032172412191311284,
+    "margin_net": 0.04385225277267417,
+    "current_ratio": 14.594898031132647,
+    "roa": 0.02735317429230159,
+    "bv": 90150173.50897114,
+    "pcf": 2.3949221921477357e-05,
+    "div_yield": 714285.7136421868,
+    "payout_ratio": 16592920.339033104
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.4146801638e+16,
+      "2025-Q2": 1.5564317234e+16,
+      "2025-Q3": 1.4065716481e+16,
+      "2026-Q1": 1.4717089662e+16,
+      "2026-Q2": 1.6853879779e+16,
+      "2026-Q3": 1.878610847e+16
+    },
+    "eps": {
+      "2025-Q1": 0.45,
+      "2025-Q2": 0.37,
+      "2025-Q3": 0.28,
+      "2026-Q1": 1.55,
+      "2026-Q2": 0.09,
+      "2026-Q3": 0.62
+    },
+    "net_income": {
+      "2025-Q1": 502993846000000.0,
+      "2025-Q2": 404413066000000.0,
+      "2025-Q3": 311249706000000.0,
+      "2026-Q1": 1715982763000000.0,
+      "2026-Q2": 105936797000000.0,
+      "2026-Q3": 691915398000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 77696761856,
+    "enterprise_value": 75187781632,
+    "shares_outstanding": 1109953847
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2589,
+    "vol_trend": 3.584,
+    "price_chg_20d": -27.84
+  },
+  "neraca": {
+    "aset": 103281784915.0,
+    "aset_lancar": 40335822545.0,
+    "kas": 3471894058.0,
+    "piutang_usaha": 9166987870.0,
+    "persediaan": 25680031732.0,
+    "aset_tetap": 1925699657.0,
+    "liabilitas": 3219253021.0,
+    "liabilitas_jangka_pendek": 2763693344.0,
+    "liabilitas_jangka_panjang": 455559677.0,
+    "utang_usaha": 9166987870.0,
+    "utang_bank": null,
+    "ekuitas": 100062531894.0,
+    "ekuitas_induk": 100062531894.0,
+    "modal_saham": null,
+    "saldo_laba": 650000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 50357077911.0,
+    "beban_pokok": 45149271038.0,
+    "laba_kotor": 5207806873.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3007819658.0,
+    "beban_pajak": -493984700.0,
+    "laba_bersih": 2513834958.0,
+    "laba_induk": 2513834958.0,
+    "eps_basic": 2.26,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3244229376,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1925699657.0,
+    "dividen_dibayar": 554976923.0
+  }
+}

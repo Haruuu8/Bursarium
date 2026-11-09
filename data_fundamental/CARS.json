@@ -1,0 +1,102 @@
+{
+  "kode": "CARS",
+  "nama": "PT Industri dan Perdagangan Bintraco Dharma Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto & Truck Dealerships",
+  "harga": 82.0,
+  "update": "2026-11-09 17:21",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.0516952854493598,
+    "ps": 0.2660501989319448,
+    "roe": 181764.88366723264,
+    "eps": null,
+    "eps_annualized": 13.36,
+    "de": 1.4362490903855016,
+    "margin_net": 45981.55390403486,
+    "current_ratio": 1.030183394914765,
+    "roa": 66901.63919652811,
+    "bv": 77.96935208753334,
+    "pcf": 6.9880037333056575e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1429125414488.0,
+      "2025-Q2": 970448421093.0,
+      "2025-Q3": 1068224106237.0,
+      "2026-Q1": 1130897942724.0,
+      "2026-Q2": 1248207626981.0,
+      "2026-Q3": 1175857996677.0
+    },
+    "eps": {
+      "2025-Q1": 3.23,
+      "2025-Q2": 1.62,
+      "2025-Q3": 4.15,
+      "2026-Q1": 3.28,
+      "2026-Q2": 2.27,
+      "2026-Q3": 4.47
+    },
+    "net_income": {
+      "2025-Q1": 4.8402750809e+16,
+      "2025-Q2": 2.4311355121e+16,
+      "2025-Q3": 6.2304318049e+16,
+      "2026-Q1": 4.9140966965e+16,
+      "2026-Q2": 3.4098084643e+16,
+      "2026-Q3": 6.703798352e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1230000095232,
+    "enterprise_value": 2329686310912,
+    "shares_outstanding": 15000000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1991,
+    "vol_trend": 0.647,
+    "price_chg_20d": -17.65
+  },
+  "neraca": {
+    "aset": 3177520845977.0,
+    "aset_lancar": 1605534828437.0,
+    "kas": 343058707592.0,
+    "piutang_usaha": 336576818347.0,
+    "persediaan": 431507778154.0,
+    "aset_tetap": 886884873466.0,
+    "liabilitas": 1679751165205.0,
+    "liabilitas_jangka_pendek": 1558494183038.0,
+    "liabilitas_jangka_panjang": 121256982167.0,
+    "utang_usaha": 336576818347.0,
+    "utang_bank": 285647728067.0,
+    "ekuitas": 1169540281313.0,
+    "ekuitas_induk": 1169540281313.0,
+    "modal_saham": null,
+    "saldo_laba": 30000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3554963566382.0,
+    "beban_pokok": 3031240809330.0,
+    "laba_kotor": 523722757052.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 219584807874.0,
+    "beban_pajak": 1023111602.0,
+    "laba_bersih": 150277035128.0,
+    "laba_induk": 150277035128.0,
+    "eps_basic": 10.02,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 176015933440,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 43566271249.0,
+    "dividen_dibayar": null
+  }
+}

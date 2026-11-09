@@ -1,0 +1,102 @@
+{
+  "kode": "TRON",
+  "nama": "PT Teknologi Karya Digital Nusa Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 57.0,
+  "update": "2026-11-09 15:28",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.379201196241317e-06,
+    "roe": -0.1338242137863571,
+    "eps": null,
+    "eps_annualized": 0.26666666666666666,
+    "de": 0.4120733239679324,
+    "margin_net": -0.33830629828466297,
+    "current_ratio": 3.6850630029705433,
+    "roa": -0.09293319541381172,
+    "bv": 60564630.045540765,
+    "pcf": 3.9115367319198465e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.0685402031e+16,
+      "2025-Q2": 1.6029179122e+16,
+      "2025-Q3": 2674533440000000.0,
+      "2026-Q1": 1.9927296497e+16,
+      "2026-Q2": 8311299756000000.0,
+      "2026-Q3": 3.9793678038e+16
+    },
+    "eps": {
+      "2025-Q1": 1.0,
+      "2025-Q2": -3.43,
+      "2025-Q3": -8.27,
+      "2026-Q1": 0.04,
+      "2026-Q2": 0.03,
+      "2026-Q3": 0.13
+    },
+    "net_income": {
+      "2025-Q1": 2943759842000000.0,
+      "2025-Q2": -9447174186000000.0,
+      "2025-Q3": -2.4522465306e+16,
+      "2026-Q1": 108000205000000.0,
+      "2026-Q2": 168556305000000.0,
+      "2026-Q3": 325350409000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 168225718272,
+    "enterprise_value": 203370823680,
+    "shares_outstanding": 2951328448
+  },
+  "akumulasi": {
+    "score": 4.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0898,
+    "vol_trend": 2.301,
+    "price_chg_20d": -27.63
+  },
+  "neraca": {
+    "aset": 257395199643.0,
+    "aset_lancar": 124929277400.0,
+    "kas": 10970991804.0,
+    "piutang_usaha": 59441407823.0,
+    "persediaan": 47667593199.0,
+    "aset_tetap": 42723053296.0,
+    "liabilitas": 73656506000.0,
+    "liabilitas_jangka_pendek": 33901530937.0,
+    "liabilitas_jangka_panjang": 39754975063.0,
+    "utang_usaha": 59441407823.0,
+    "utang_bank": 9760632609.0,
+    "ekuitas": 178746115596.0,
+    "ekuitas_induk": 178746115596.0,
+    "modal_saham": null,
+    "saldo_laba": 22600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 68032274291.0,
+    "beban_pokok": 54935501959.0,
+    "laba_kotor": 13096772332.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 542462839.0,
+    "beban_pajak": null,
+    "laba_bersih": 601906919.0,
+    "laba_induk": 601906919.0,
+    "eps_basic": 0.2,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 43007578112,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": -5245287546.0,
+    "dividen_dibayar": null
+  }
+}

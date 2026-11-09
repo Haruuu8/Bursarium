@@ -1,0 +1,102 @@
+{
+  "kode": "WTON",
+  "nama": "PT Wijaya Karya Beton Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 59.0,
+  "update": "2026-11-09 17:18",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.0003287313583573499,
+    "roe": 5263.725099460691,
+    "eps": null,
+    "eps_annualized": 2.32,
+    "de": 0.7798250922847133,
+    "margin_net": -12.245099852178233,
+    "current_ratio": 1.2918087202338207,
+    "roa": 2933.797560237618,
+    "bv": 417.522619223852,
+    "pcf": 1.8387088126343128e-06,
+    "div_yield": 779661.0169491525,
+    "payout_ratio": 19827586.206896555
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.71599459666e+17,
+      "2025-Q2": -8.70030158157846e+17,
+      "2025-Q3": -1566781902339443.0,
+      "2026-Q1": 6.77037399528e+17,
+      "2026-Q2": -6.75554576078682e+17,
+      "2026-Q3": -1480274822348127.0
+    },
+    "eps": {
+      "2025-Q1": 0.18,
+      "2025-Q2": 0.32,
+      "2025-Q3": 0.46,
+      "2026-Q1": 0.17,
+      "2026-Q2": 0.37,
+      "2026-Q3": 1.2
+    },
+    "net_income": {
+      "2025-Q1": 1589770873000000.0,
+      "2025-Q2": 2758299303000000.0,
+      "2025-Q3": 4001962365000000.0,
+      "2026-Q1": 1501426031000000.0,
+      "2026-Q2": 3244123245000000.0,
+      "2026-Q3": 1.0406681008e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 514212528128,
+    "enterprise_value": 707423174656,
+    "shares_outstanding": 8715466600
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1668,
+    "vol_trend": 0.731,
+    "price_chg_20d": -17.81
+  },
+  "neraca": {
+    "aset": 6528805159770.0,
+    "aset_lancar": 3493077308432.0,
+    "kas": 239574046354.0,
+    "piutang_usaha": 439725970888.0,
+    "persediaan": 911079908757.0,
+    "aset_tetap": 2866048489168.0,
+    "liabilitas": 2837708992758.0,
+    "liabilitas_jangka_pendek": 2704020536260.0,
+    "liabilitas_jangka_panjang": 133688456498.0,
+    "utang_usaha": 439725970888.0,
+    "utang_bank": 10017009920.0,
+    "ekuitas": 3638904442590.0,
+    "ekuitas_induk": 3638904442590.0,
+    "modal_saham": null,
+    "saldo_laba": 372988876808.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2548626969873.0,
+    "beban_pokok": 2388259019427.0,
+    "laba_kotor": 160367950446.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15287917384.0,
+    "beban_pajak": 14949824911.0,
+    "laba_bersih": 15152230284.0,
+    "laba_induk": 15152230284.0,
+    "eps_basic": 1.74,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 279659577344,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6770775484.0,
+    "dividen_dibayar": 4009114636.0
+  }
+}

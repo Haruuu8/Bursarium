@@ -1,0 +1,102 @@
+{
+  "kode": "SAGE",
+  "nama": "PT Saptausaha Gemilangindah Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 23.0,
+  "update": "2026-11-09 15:28",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.2687878835647843e-05,
+    "roe": -0.0003569148690947676,
+    "eps": null,
+    "eps_annualized": 0.07999999999999999,
+    "de": 0.10498426257317835,
+    "margin_net": -0.0069731018928607,
+    "current_ratio": 7.462642084709685,
+    "roa": -0.0003229947162661839,
+    "bv": 35416055.01354831,
+    "pcf": 5.219716248700788e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1839153001000000.0,
+      "2025-Q2": 139105000000000.0,
+      "2025-Q3": 1054194876000000.0,
+      "2026-Q1": 1985648303000000.0,
+      "2026-Q2": 7404348059000000.0,
+      "2026-Q3": 4118615467000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.14,
+      "2025-Q2": -0.18,
+      "2025-Q3": -0.07,
+      "2026-Q1": -0.09,
+      "2026-Q2": 0.16,
+      "2026-Q3": -0.01
+    },
+    "net_income": {
+      "2025-Q1": -1144195873000000.0,
+      "2025-Q2": -1450196154000000.0,
+      "2025-Q3": -560783276000000.0,
+      "2026-Q1": -691595346000000.0,
+      "2026-Q2": 1229519339000000.0,
+      "2026-Q3": -78688652000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 184771133440,
+    "enterprise_value": 209781522432,
+    "shares_outstanding": 8033527260
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.177,
+    "vol_trend": 0.564,
+    "price_chg_20d": -25.0
+  },
+  "neraca": {
+    "aset": 314395034612.0,
+    "aset_lancar": 80912239842.0,
+    "kas": 814045158.0,
+    "piutang_usaha": 3416283291.0,
+    "persediaan": 55296106504.0,
+    "aset_tetap": 548567127.0,
+    "liabilitas": 29869686009.0,
+    "liabilitas_jangka_pendek": 10842304766.0,
+    "liabilitas_jangka_panjang": 19027381243.0,
+    "utang_usaha": 3416283291.0,
+    "utang_bank": 17781400000.0,
+    "ekuitas": 284515843393.0,
+    "ekuitas_induk": 284515843393.0,
+    "modal_saham": null,
+    "saldo_laba": 40000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 13508611829.0,
+    "beban_pokok": 6897480496.0,
+    "laba_kotor": 6611131333.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 815178219.0,
+    "beban_pajak": -353944415.0,
+    "laba_bersih": 459235341.0,
+    "laba_induk": 459235341.0,
+    "eps_basic": 0.06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3539869184,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 165709004.0,
+    "dividen_dibayar": null
+  }
+}

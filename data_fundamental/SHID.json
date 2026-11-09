@@ -1,0 +1,102 @@
+{
+  "kode": "SHID",
+  "nama": "PT Hotel Sahid Jaya International Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 575.0,
+  "update": "2026-11-09 17:06",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.97407303641691e-06,
+    "roe": -0.06177030076300788,
+    "eps": null,
+    "eps_annualized": -24.77333333333333,
+    "de": 0.7662576632277881,
+    "margin_net": -0.400452872385896,
+    "current_ratio": 2.6547860099156084,
+    "roa": -34972.41769930913,
+    "bv": 623977621.1771724,
+    "pcf": 2.088565739481182e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.2790885125e+16,
+      "2025-Q2": 2.250531012e+16,
+      "2025-Q3": 2.7484878965e+16,
+      "2026-Q1": 1.7833596422e+16,
+      "2026-Q2": 2.6856282667e+16,
+      "2026-Q3": 3.5559536903e+16
+    },
+    "eps": {
+      "2025-Q1": -15.13,
+      "2025-Q2": -14.21,
+      "2025-Q3": -19.96,
+      "2026-Q1": -13.61,
+      "2026-Q2": 0.14,
+      "2026-Q3": -5.11
+    },
+    "net_income": {
+      "2025-Q1": -1.6937027272e+16,
+      "2025-Q2": -1.5905265013e+16,
+      "2025-Q3": -2.2346511126e+16,
+      "2026-Q1": -1.5236364971e+16,
+      "2026-Q2": 163958108000000.0,
+      "2026-Q3": -5723589881000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 643612540928,
+    "enterprise_value": 1062073663488,
+    "shares_outstanding": 1119326168
+  },
+  "akumulasi": {
+    "score": 2.9,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0431,
+    "vol_trend": 2.016,
+    "price_chg_20d": -9.09
+  },
+  "neraca": {
+    "aset": 1233615251909.0,
+    "aset_lancar": 229213313470.0,
+    "kas": 4233818155.0,
+    "piutang_usaha": 7770481518.0,
+    "persediaan": 212299588060.0,
+    "aset_tetap": 964310656871.0,
+    "liabilitas": 535180772279.0,
+    "liabilitas_jangka_pendek": 86339656987.0,
+    "liabilitas_jangka_panjang": 448841115292.0,
+    "utang_usaha": 7770481518.0,
+    "utang_bank": 13112686170.0,
+    "ekuitas": 698434479630.0,
+    "ekuitas_induk": 698434479630.0,
+    "modal_saham": null,
+    "saldo_laba": 8242636363.0
+  },
+  "laba_rugi": {
+    "pendapatan": 80249415992.0,
+    "beban_pokok": 30787475195.0,
+    "laba_kotor": 49461940797.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -20795996744.0,
+    "beban_pajak": 358729704.0,
+    "laba_bersih": -20795996744.0,
+    "laba_induk": -20795996744.0,
+    "eps_basic": -18.58,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 30816006144,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6925884188.0,
+    "dividen_dibayar": null
+  }
+}

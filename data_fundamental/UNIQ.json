@@ -1,0 +1,102 @@
+{
+  "kode": "UNIQ",
+  "nama": "PT Ulima Nitra Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 140.0,
+  "update": "2026-11-09 17:47",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7.5652078117383e-07,
+    "roe": 0.11411672642842914,
+    "eps": null,
+    "eps_annualized": 14.866666666666667,
+    "de": 0.51321804359326,
+    "margin_net": 0.10150264433999455,
+    "current_ratio": 1.9418725132627486,
+    "roa": 0.07541327365978907,
+    "bv": 164602044.4277653,
+    "pcf": 2.109356688922255e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.35177434906e+17,
+      "2025-Q2": 1.5299232455e+17,
+      "2025-Q3": 1.49528012708e+17,
+      "2026-Q1": 5.7202848725e+16,
+      "2026-Q2": 1.55282536735e+17,
+      "2026-Q3": 2.18879593718e+17
+    },
+    "eps": {
+      "2025-Q1": 1.74,
+      "2025-Q2": 3.91,
+      "2025-Q3": 7.64,
+      "2026-Q1": -7.94,
+      "2026-Q2": 10.18,
+      "2026-Q3": 8.91
+    },
+    "net_income": {
+      "2025-Q1": 5468854336000000.0,
+      "2025-Q2": 1.2265338861e+16,
+      "2025-Q3": 2.3977714359e+16,
+      "2026-Q1": -2.4918691638e+16,
+      "2026-Q2": 3.1936905041e+16,
+      "2026-Q3": 2.7966246993e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 439457611776,
+    "enterprise_value": 479720472576,
+    "shares_outstanding": 3138983000
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1509,
+    "vol_trend": 1.411,
+    "price_chg_20d": 7.87
+  },
+  "neraca": {
+    "aset": 781854067508.0,
+    "aset_lancar": 415355445864.0,
+    "kas": 60310630414.0,
+    "piutang_usaha": 314508413878.0,
+    "persediaan": 6955817884.0,
+    "aset_tetap": 366463071644.0,
+    "liabilitas": 265171048284.0,
+    "liabilitas_jangka_pendek": 213894291735.0,
+    "liabilitas_jangka_panjang": 51276756549.0,
+    "utang_usaha": 314508413878.0,
+    "utang_bank": 19800000000.0,
+    "ekuitas": 516683019224.0,
+    "ekuitas_induk": 516683019224.0,
+    "modal_saham": null,
+    "saldo_laba": 437716890224.0
+  },
+  "laba_rugi": {
+    "pendapatan": 431364979178.0,
+    "beban_pokok": 344855632611.0,
+    "laba_kotor": 86509346567.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 55694052748.0,
+    "beban_pajak": 214428472.0,
+    "laba_bersih": 34984460396.0,
+    "laba_induk": 34984460396.0,
+    "eps_basic": 11.15,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 208337272832,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 41664534315.0,
+    "dividen_dibayar": null
+  }
+}

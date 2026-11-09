@@ -1,0 +1,102 @@
+{
+  "kode": "KMDS",
+  "nama": "PT Kurniamitra Duta Sentosa, Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Food Distribution",
+  "harga": 486.0,
+  "update": "2026-11-09 17:45",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 8.371208956786144e-07,
+    "roe": 0.22064323278889353,
+    "eps": null,
+    "eps_annualized": 68.0,
+    "de": 0.22393943334348207,
+    "margin_net": 0.1259780378908727,
+    "current_ratio": 3.342169659810623,
+    "roa": 0.1802729994458582,
+    "bv": 331476171.77875,
+    "pcf": 9.575991792169168e-06,
+    "div_yield": 5349794.238683127,
+    "payout_ratio": 38235294.11764706
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 9.0167962618e+16,
+      "2025-Q2": 1.04045679758e+17,
+      "2025-Q3": 1.23289909286e+17,
+      "2026-Q1": 1.09726419722e+17,
+      "2026-Q2": 1.13031719126e+17,
+      "2026-Q3": 1.18400996212e+17
+    },
+    "eps": {
+      "2025-Q1": 16.0,
+      "2025-Q2": 19.0,
+      "2025-Q3": 22.0,
+      "2026-Q1": 15.0,
+      "2026-Q2": 18.0,
+      "2026-Q3": 18.0
+    },
+    "net_income": {
+      "2025-Q1": 1.2839075311e+16,
+      "2025-Q2": 1.5114654344e+16,
+      "2025-Q3": 1.803276788e+16,
+      "2026-Q1": 1.1852126613e+16,
+      "2026-Q2": 1.4401159736e+16,
+      "2026-Q3": 1.4224325078e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 388799987712,
+    "enterprise_value": 353898496000,
+    "shares_outstanding": 800000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.434,
+    "vol_trend": 1.181,
+    "price_chg_20d": -6.02
+  },
+  "neraca": {
+    "aset": 324565406283.0,
+    "aset_lancar": 183088396900.0,
+    "kas": 34954725941.0,
+    "piutang_usaha": 44226731640.0,
+    "persediaan": 78513731955.0,
+    "aset_tetap": 94615552461.0,
+    "liabilitas": 59384468860.0,
+    "liabilitas_jangka_pendek": 54781299436.0,
+    "liabilitas_jangka_panjang": 4603169424.0,
+    "utang_usaha": 44226731640.0,
+    "utang_bank": null,
+    "ekuitas": 265180937423.0,
+    "ekuitas_induk": 265180937423.0,
+    "modal_saham": null,
+    "saldo_laba": 8440000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 341159135060.0,
+    "beban_pokok": 242305202777.0,
+    "laba_kotor": 98853932283.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 50962536723.0,
+    "beban_pajak": -10484925296.0,
+    "laba_bersih": 40477611427.0,
+    "laba_induk": 40477611427.0,
+    "eps_basic": 51.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 40601538560,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 369221464.0,
+    "dividen_dibayar": 20800000000.0
+  }
+}

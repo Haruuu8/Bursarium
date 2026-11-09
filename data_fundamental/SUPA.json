@@ -1,0 +1,93 @@
+{
+  "kode": "SUPA",
+  "nama": "PT Super Bank Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 332.0,
+  "update": "2026-11-09 15:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": 28.16742081447964,
+    "pb": 1.3361212435706835,
+    "ps": 3.593340253562429,
+    "roe": 3.560465909811361e-05,
+    "eps": 11.786666666666665,
+    "eps_annualized": 11.786666666666665,
+    "de": 2.2648152989535717,
+    "margin_net": 0.00012767269973166037,
+    "current_ratio": null,
+    "roa": 1.090556611564688e-05,
+    "bv": 248.48044411954336,
+    "pcf": 3.438010997238608,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2026-Q1": 724646000.0,
+      "2026-Q2": 775026000.0,
+      "2026-Q3": 849217000.0
+    },
+    "eps": {
+      "2026-Q1": 2.3,
+      "2026-Q2": 3.1,
+      "2026-Q3": 3.44
+    },
+    "net_income": {
+      "2026-Q1": 78190000.0,
+      "2026-Q2": 104418000.0,
+      "2026-Q3": 117281000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 11253809414144,
+    "enterprise_value": 11828236124160,
+    "shares_outstanding": 33897017650
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1344,
+    "vol_trend": 1.267,
+    "price_chg_20d": -33.06
+  },
+  "neraca": {
+    "aset": 27498710.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 47523.0,
+    "liabilitas": 19075964.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 8422746.0,
+    "ekuitas_induk": 8422746.0,
+    "modal_saham": null,
+    "saldo_laba": -546414.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2348889.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 385067.0,
+    "laba_sebelum_pajak": 385058.0,
+    "beban_pajak": -85169.0,
+    "laba_bersih": 299889.0,
+    "laba_induk": 299889.0,
+    "eps_basic": 8.84,
+    "eps_diluted": 8.84
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3273349000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

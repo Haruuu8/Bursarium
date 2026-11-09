@@ -1,0 +1,102 @@
+{
+  "kode": "INPP",
+  "nama": "PT Indonesian Paradise Property Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 675.0,
+  "update": "2026-11-09 16:41",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.3279929015711416,
+    "ps": 16.9894318034558,
+    "roe": -0.008674016712535176,
+    "eps": -4.4088799526219375,
+    "eps_annualized": 6.56,
+    "de": 0.612897584258533,
+    "margin_net": -0.11096943005139828,
+    "current_ratio": 2.7715580244595825,
+    "roa": -0.004822131798231715,
+    "bv": 508.28584942089,
+    "pcf": 1.4589380728002687e-05,
+    "div_yield": 2191.2255556954237,
+    "payout_ratio": 225469.0930021968
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.86402626224e+17,
+      "2025-Q2": -2.86401754114e+17,
+      "2025-Q3": 442960000000.0,
+      "2026-Q1": 326906000.0,
+      "2026-Q2": 531237000.0,
+      "2026-Q3": 448093000.0
+    },
+    "eps": {
+      "2025-Q1": 31.85,
+      "2025-Q2": -31.45,
+      "2025-Q3": 34.82,
+      "2026-Q1": 0.55,
+      "2026-Q2": 4.49,
+      "2026-Q3": -0.12
+    },
+    "net_income": {
+      "2025-Q1": 3.5616797952e+17,
+      "2025-Q2": -3.56167536329e+17,
+      "2025-Q3": -49355000000.0,
+      "2026-Q1": 6113000.0,
+      "2026-Q2": 50281000.0,
+      "2026-Q3": -1365000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7547830927360,
+    "enterprise_value": 10227361513472,
+    "shares_outstanding": 11181971732
+  },
+  "akumulasi": {
+    "score": 7.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.8315,
+    "vol_trend": 0.933,
+    "price_chg_20d": 7.87
+  },
+  "neraca": {
+    "aset": 10223688.0,
+    "aset_lancar": 1653445.0,
+    "kas": 772167.0,
+    "piutang_usaha": 98392.0,
+    "persediaan": 4153.0,
+    "aset_tetap": 1737846.0,
+    "liabilitas": 3483488.0,
+    "liabilitas_jangka_pendek": 596576.0,
+    "liabilitas_jangka_panjang": 2886912.0,
+    "utang_usaha": 98392.0,
+    "utang_bank": 91410.0,
+    "ekuitas": 5683638.0,
+    "ekuitas_induk": 5683638.0,
+    "modal_saham": null,
+    "saldo_laba": 351.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1306236.0,
+    "beban_pokok": 544788.0,
+    "laba_kotor": 761448.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 168833.0,
+    "beban_pajak": 55431.0,
+    "laba_bersih": 55029.0,
+    "laba_induk": 55029.0,
+    "eps_basic": 4.92,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 517351014400,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 31910.0,
+    "dividen_dibayar": 165390.0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "FOLK",
+  "nama": "PT Multi Garam Utama Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Internet Retail",
+  "harga": 65.0,
+  "update": "2026-11-09 15:35",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.4628426967147498e-05,
+    "roe": 0.09969314373567166,
+    "eps": null,
+    "eps_annualized": 6.013333333333333,
+    "de": 0.07333868967961918,
+    "margin_net": 0.8617565350303867,
+    "current_ratio": 10.287367349816092,
+    "roa": 0.10307777002284627,
+    "bv": 38409178.89844535,
+    "pcf": null,
+    "div_yield": 564.0407329045471,
+    "payout_ratio": 6096.892622859573
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5431711091000000.0,
+      "2025-Q2": 4899936689000000.0,
+      "2025-Q3": 3726883538000000.0,
+      "2026-Q1": 4098229430000000.0,
+      "2026-Q2": 5261639914000000.0,
+      "2026-Q3": 5092798546000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.74,
+      "2025-Q2": -0.66,
+      "2025-Q3": 3.5,
+      "2026-Q1": 3.74,
+      "2026-Q2": -4.41,
+      "2026-Q3": 5.18
+    },
+    "net_income": {
+      "2025-Q1": -2916957033000000.0,
+      "2025-Q2": -2623882825000000.0,
+      "2025-Q3": -2733000378000000.0,
+      "2026-Q1": 1.5232791881e+16,
+      "2026-Q2": -1.7980134492e+16,
+      "2026-Q3": 2.1146690236e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 265938239488,
+    "enterprise_value": 165573017600,
+    "shares_outstanding": 4091357544
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3436,
+    "vol_trend": 1.172,
+    "price_chg_20d": -61.64
+  },
+  "neraca": {
+    "aset": 151985702092.0,
+    "aset_lancar": 85566568671.0,
+    "kas": 9941719850.0,
+    "piutang_usaha": 2232321772.0,
+    "persediaan": 4221997055.0,
+    "aset_tetap": 9029890019.0,
+    "liabilitas": 11524858542.0,
+    "liabilitas_jangka_pendek": 8317635189.0,
+    "liabilitas_jangka_panjang": 3207223353.0,
+    "utang_usaha": 2232321772.0,
+    "utang_bank": null,
+    "ekuitas": 157145683845.0,
+    "ekuitas_induk": 157145683845.0,
+    "modal_saham": null,
+    "saldo_laba": 1045961985.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14452667890.0,
+    "beban_pokok": 6586510445.0,
+    "laba_kotor": 7866157445.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 17276894428.0,
+    "beban_pajak": 36993495.0,
+    "laba_bersih": 18399347625.0,
+    "laba_induk": 18399347625.0,
+    "eps_basic": 4.51,
+    "eps_diluted": 4.51
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -8879050752,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 54138629.0,
+    "dividen_dibayar": 1500000.0
+  }
+}

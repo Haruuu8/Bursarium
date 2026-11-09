@@ -1,0 +1,102 @@
+{
+  "kode": "CLAY",
+  "nama": "PT Citra Putra Realty Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 2940.0,
+  "update": "2026-11-09 17:33",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.657746474105694e-05,
+    "roe": 0.7776664823928385,
+    "eps": null,
+    "eps_annualized": 14.946666666666667,
+    "de": 10.386406562058786,
+    "margin_net": 0.17105845643667414,
+    "current_ratio": 0.5983765257940277,
+    "roa": 0.06831386649168837,
+    "bv": 17680107.353307392,
+    "pcf": 0.00012693371081836866,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.4911216733e+16,
+      "2025-Q2": 2.8211833214e+16,
+      "2025-Q3": 5.0451973476e+16,
+      "2026-Q1": 3.4049357782e+16,
+      "2026-Q2": 5.2101291499e+16,
+      "2026-Q3": 6.9967188833e+16
+    },
+    "eps": {
+      "2025-Q1": -2.53,
+      "2025-Q2": -1.26,
+      "2025-Q3": 2.54,
+      "2026-Q1": 0.59,
+      "2026-Q2": 3.99,
+      "2026-Q3": 6.63
+    },
+    "net_income": {
+      "2025-Q1": -6495960691000000.0,
+      "2025-Q2": -3227544323000000.0,
+      "2025-Q3": 6526961143000000.0,
+      "2026-Q1": 1524285097000000.0,
+      "2026-Q2": 1.0262864905e+16,
+      "2026-Q3": 1.7021401972e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7555799580672,
+    "enterprise_value": 7650630172672,
+    "shares_outstanding": 2570000000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4397,
+    "vol_trend": 0.992,
+    "price_chg_20d": 2.13
+  },
+  "neraca": {
+    "aset": 517252425191.0,
+    "aset_lancar": 40620750473.0,
+    "kas": 36789313034.0,
+    "piutang_usaha": 2040054546.0,
+    "persediaan": 513047509.0,
+    "aset_tetap": 421801434500.0,
+    "liabilitas": 471936252393.0,
+    "liabilitas_jangka_pendek": 67884933185.0,
+    "liabilitas_jangka_panjang": 404051319208.0,
+    "utang_usaha": 2040054546.0,
+    "utang_bank": 21000000000.0,
+    "ekuitas": 45437875898.0,
+    "ekuitas_induk": 45437875898.0,
+    "modal_saham": null,
+    "saldo_laba": -388706147066.0
+  },
+  "laba_rugi": {
+    "pendapatan": 156117838114.0,
+    "beban_pokok": 59974265463.0,
+    "laba_kotor": 96143572651.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 37289076872.0,
+    "beban_pajak": -8671097006.0,
+    "laba_bersih": 28808551974.0,
+    "laba_induk": 28808551974.0,
+    "eps_basic": 11.21,
+    "eps_diluted": 11.21
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 59525558272,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 875823054.0,
+    "dividen_dibayar": null
+  }
+}

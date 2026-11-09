@@ -1,0 +1,102 @@
+{
+  "kode": "BAUT",
+  "nama": "PT Mitra Angkasa Sejahtera Tbk",
+  "sektor": "Industrials",
+  "industri": "Tools & Accessories",
+  "harga": 22.0,
+  "update": "2026-11-09 15:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7.643395708085574e-07,
+    "roe": -0.02019441943397928,
+    "eps": null,
+    "eps_annualized": -0.7866666666666666,
+    "de": 0.601847295338006,
+    "margin_net": -0.024687526957587816,
+    "current_ratio": 4.6764844700333414,
+    "roa": -0.012607039946252476,
+    "bv": 35187025.17003993,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.0955483746e+16,
+      "2025-Q2": 3.0129103988e+16,
+      "2025-Q3": 3.720757817e+16,
+      "2026-Q1": 2.8919101566e+16,
+      "2026-Q2": 3.1809134067e+16,
+      "2026-Q3": 4.0227941354e+16
+    },
+    "eps": {
+      "2025-Q1": -1.41,
+      "2025-Q2": -0.91,
+      "2025-Q3": -0.11,
+      "2026-Q1": -0.67,
+      "2026-Q2": -0.15,
+      "2026-Q3": 0.23
+    },
+    "net_income": {
+      "2025-Q1": -6752704283000000.0,
+      "2025-Q2": -4368126588000000.0,
+      "2025-Q3": -555470374000000.0,
+      "2026-Q1": -3216395578000000.0,
+      "2026-Q2": -733885706000000.0,
+      "2026-Q3": 1094830228000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 105604022272,
+    "enterprise_value": 151468179456,
+    "shares_outstanding": 4800182969
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2577,
+    "vol_trend": 0.831,
+    "price_chg_20d": -28.12
+  },
+  "neraca": {
+    "aset": 270556882864.0,
+    "aset_lancar": 244962581618.0,
+    "kas": 18640940651.0,
+    "piutang_usaha": 25924104509.0,
+    "persediaan": 123201983293.0,
+    "aset_tetap": 244790488.0,
+    "liabilitas": 101654511236.0,
+    "liabilitas_jangka_pendek": 52381780200.0,
+    "liabilitas_jangka_panjang": 49272731036.0,
+    "utang_usaha": 25924104509.0,
+    "utang_bank": 11312763323.0,
+    "ekuitas": 168904158951.0,
+    "ekuitas_induk": 168904158951.0,
+    "modal_saham": null,
+    "saldo_laba": 1500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 100956176987.0,
+    "beban_pokok": 76778942826.0,
+    "laba_kotor": 24177234161.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2865658519.0,
+    "beban_pajak": null,
+    "laba_bersih": -2855451056.0,
+    "laba_induk": -2855451056.0,
+    "eps_basic": -0.59,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -14936783872,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 244790488.0,
+    "dividen_dibayar": null
+  }
+}

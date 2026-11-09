@@ -1,0 +1,102 @@
+{
+  "kode": "BLUE",
+  "nama": "PT Berkah Prima Perkasa Tbk",
+  "sektor": "Technology",
+  "industri": "Electronics & Computer Distribution",
+  "harga": 1430.0,
+  "update": "2026-11-09 17:36",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.741455628426784e-06,
+    "roe": 0.2213372369999267,
+    "eps": null,
+    "eps_annualized": 48.0,
+    "de": 0.08190740312691026,
+    "margin_net": 0.14180860833966022,
+    "current_ratio": 11.12572777643063,
+    "roa": 0.20458057349475714,
+    "bv": 244874492.61722487,
+    "pcf": 2.5266177809463576e-05,
+    "div_yield": 2377622.3776223776,
+    "payout_ratio": 70833333.33333334
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.7774019675e+16,
+      "2025-Q2": 3.864963493e+16,
+      "2025-Q3": 4.3569805159e+16,
+      "2026-Q1": 3.5319996777e+16,
+      "2026-Q2": 3.5023646656e+16,
+      "2026-Q3": 4.584790083e+16
+    },
+    "eps": {
+      "2025-Q1": 8.0,
+      "2025-Q2": 12.0,
+      "2025-Q3": 18.0,
+      "2026-Q1": 11.0,
+      "2026-Q2": 10.0,
+      "2026-Q3": 15.0
+    },
+    "net_income": {
+      "2025-Q1": 3540108910000000.0,
+      "2025-Q2": 5020408340000000.0,
+      "2025-Q3": 7449016846000000.0,
+      "2026-Q1": 4544407115000000.0,
+      "2026-Q2": 4245805180000000.0,
+      "2026-Q3": 6416305487000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 597740027904,
+    "enterprise_value": 636373696512,
+    "shares_outstanding": 418000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5277,
+    "vol_trend": 0.688,
+    "price_chg_20d": -61.72
+  },
+  "neraca": {
+    "aset": 110741378035.0,
+    "aset_lancar": 68185028121.0,
+    "kas": 5256271449.0,
+    "piutang_usaha": 21443457685.0,
+    "persediaan": 27155882933.0,
+    "aset_tetap": 41870218097.0,
+    "liabilitas": 8383840121.0,
+    "liabilitas_jangka_pendek": 6128590371.0,
+    "liabilitas_jangka_panjang": 2255249750.0,
+    "utang_usaha": 21443457685.0,
+    "utang_bank": null,
+    "ekuitas": 102357537914.0,
+    "ekuitas_induk": 102357537914.0,
+    "modal_saham": null,
+    "saldo_laba": 300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 116191544263.0,
+    "beban_pokok": 78185329817.0,
+    "laba_kotor": 38006214446.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15206517782.0,
+    "beban_pajak": null,
+    "laba_bersih": 15206517782.0,
+    "laba_induk": 15206517782.0,
+    "eps_basic": 36.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 23657713664,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 46437366.0,
+    "dividen_dibayar": 14212000000.0
+  }
+}

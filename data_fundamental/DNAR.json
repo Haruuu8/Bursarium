@@ -1,0 +1,102 @@
+{
+  "kode": "DNAR",
+  "nama": "PT Bank Oke Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 99.0,
+  "update": "2026-11-09 16:25",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.42194795132837654,
+    "ps": 5.213554521675341e-06,
+    "roe": 60392.35493653224,
+    "eps": null,
+    "eps_annualized": 13.96,
+    "de": 2.57974208060062,
+    "margin_net": 0.7462030190281554,
+    "current_ratio": null,
+    "roa": 16870.588320820985,
+    "bv": 234.62609473118238,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.8170598689e+17,
+      "2025-Q2": 2.85315713602e+17,
+      "2025-Q3": 3.19766924894e+17,
+      "2026-Q1": 3.26379464472e+17,
+      "2026-Q2": 3.27216645954e+17,
+      "2026-Q3": -6.5259402439622e+17
+    },
+    "eps": {
+      "2025-Q1": 1.79,
+      "2025-Q2": 1.77,
+      "2025-Q3": 3.67,
+      "2026-Q1": 3.83,
+      "2026-Q2": 3.49,
+      "2026-Q3": 3.15
+    },
+    "net_income": {
+      "2025-Q1": 3.0429502948e+16,
+      "2025-Q2": 3.0214372723e+16,
+      "2025-Q3": 6.255999605e+16,
+      "2026-Q1": 6.4676101524e+16,
+      "2026-Q2": 5.9000698246e+16,
+      "2026-Q3": 5.3122008542e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1672346730496,
+    "enterprise_value": 1642800087040,
+    "shares_outstanding": 16892391185
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3196,
+    "vol_trend": 0.929,
+    "price_chg_20d": -20.97
+  },
+  "neraca": {
+    "aset": 14187934635723.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 113218456806.0,
+    "liabilitas": 10224538861315.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 3963395774408.0,
+    "ekuitas_induk": 3963395774408.0,
+    "modal_saham": null,
+    "saldo_laba": 531985260103.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1002086029780.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 242106068344.0,
+    "laba_sebelum_pajak": 242098808312.0,
+    "beban_pajak": -65300000000.0,
+    "laba_bersih": 176798808312.0,
+    "laba_induk": 176798808312.0,
+    "eps_basic": 10.47,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -68071515541.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

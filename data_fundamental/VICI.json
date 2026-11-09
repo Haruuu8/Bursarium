@@ -1,0 +1,96 @@
+{
+  "kode": "VICI",
+  "nama": "PT Victoria Care Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Household & Personal Products",
+  "harga": 855.0,
+  "update": "2026-11-09 17:45",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 5.0087217771446495,
+    "ps": -8.502835681300094e-06,
+    "roe": 110139.70086771154,
+    "eps": null,
+    "eps_annualized": 17.439999999999998,
+    "de": 0.29929213997447024,
+    "margin_net": -0.18697380691797427,
+    "current_ratio": 3.4129210690625187,
+    "roa": 84769.00419783627,
+    "bv": 170.7022346302922,
+    "pcf": 4.641891951109993e-05,
+    "div_yield": 584795.3216374269,
+    "payout_ratio": 28669724.770642206
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": -6.75641581023743e+17,
+      "2026-Q1": 3.63109363671e+17,
+      "2026-Q2": 3.82192629795e+17,
+      "2026-Q3": -7.44181268186121e+17
+    },
+    "eps": {
+      "2025-Q3": 5.72,
+      "2026-Q1": 3.92,
+      "2026-Q2": 2.8,
+      "2026-Q3": 6.36
+    },
+    "net_income": {
+      "2025-Q3": 3.8392672757e+16,
+      "2026-Q1": 2.6287245598e+16,
+      "2026-Q2": 1.8803050894e+16,
+      "2026-Q3": 4.2634762995e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 5735339524096,
+    "enterprise_value": 5512788180992,
+    "shares_outstanding": 6708000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.228,
+    "vol_trend": 0.523,
+    "price_chg_20d": -34.4
+  },
+  "neraca": {
+    "aset": 1487781217173.0,
+    "aset_lancar": 861556545801.0,
+    "kas": 158010228534.0,
+    "piutang_usaha": 280611237637.0,
+    "persediaan": 317348333748.0,
+    "aset_tetap": 12050642889.0,
+    "liabilitas": 342710627273.0,
+    "liabilitas_jangka_pendek": 252439634075.0,
+    "liabilitas_jangka_panjang": 90270993198.0,
+    "utang_usaha": 280611237637.0,
+    "utang_bank": 100000000000.0,
+    "ekuitas": 1145070589900.0,
+    "ekuitas_induk": 1145070589900.0,
+    "modal_saham": null,
+    "saldo_laba": 49000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1120725279879.0,
+    "beban_pokok": 531370164488.0,
+    "laba_kotor": 589355115391.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 112524478448.0,
+    "beban_pajak": -24799418961.0,
+    "laba_bersih": 87725059487.0,
+    "laba_induk": 87725059487.0,
+    "eps_basic": 13.08,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 123556085760,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12050642889.0,
+    "dividen_dibayar": 33540000000.0
+  }
+}

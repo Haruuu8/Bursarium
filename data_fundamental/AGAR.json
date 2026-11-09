@@ -1,0 +1,102 @@
+{
+  "kode": "AGAR",
+  "nama": "PT Asia Sejahtera Mina Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 1125.0,
+  "update": "2026-11-09 17:39",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.2548035857933636e-06,
+    "roe": 0.05846785798048727,
+    "eps": null,
+    "eps_annualized": 1.0002933333333333,
+    "de": 0.9974310530722352,
+    "margin_net": 0.019105644436515305,
+    "current_ratio": 1.5866554188921222,
+    "roa": 0.029271540805578474,
+    "bv": 112946361.353,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.3068225521e+16,
+      "2025-Q2": 4.5912759052e+16,
+      "2025-Q3": 7.95473083e+16,
+      "2026-Q1": 4.6210698056e+16,
+      "2026-Q2": 9.5710082705e+16,
+      "2026-Q3": 1.24174887649e+17
+    },
+    "eps": {
+      "2025-Q1": -1.45,
+      "2025-Q2": -1.82,
+      "2025-Q3": 4.42,
+      "2026-Q1": 0.88,
+      "2026-Q2": -0.06,
+      "2026-Q3": -0.07
+    },
+    "net_income": {
+      "2025-Q1": -1804929984000000.0,
+      "2025-Q2": -2261185850000000.0,
+      "2025-Q3": 5481993996000000.0,
+      "2026-Q1": 1100958879000000.0,
+      "2026-Q2": -79608984000000.0,
+      "2026-Q3": 100387924000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1125000019968,
+    "enterprise_value": 1213177004032,
+    "shares_outstanding": 1000000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2662,
+    "vol_trend": 0.25,
+    "price_chg_20d": -35.1
+  },
+  "neraca": {
+    "aset": 225602466876.0,
+    "aset_lancar": 164869105078.0,
+    "kas": 6548976730.0,
+    "piutang_usaha": 43094191962.0,
+    "persediaan": 94837578910.0,
+    "aset_tetap": 54021543723.0,
+    "liabilitas": 112656208145.0,
+    "liabilitas_jangka_pendek": 103909836449.0,
+    "liabilitas_jangka_panjang": 8746371696.0,
+    "utang_usaha": 43094191962.0,
+    "utang_bank": 3793100222.0,
+    "ekuitas": 112946361353.0,
+    "ekuitas_induk": 112946361353.0,
+    "modal_saham": null,
+    "saldo_laba": 7549623051.0
+  },
+  "laba_rugi": {
+    "pendapatan": 266095668410.0,
+    "beban_pokok": 247963491468.0,
+    "laba_kotor": 18132176942.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1472227058.0,
+    "beban_pajak": -350547817.0,
+    "laba_bersih": 1121737819.0,
+    "laba_induk": 1121737819.0,
+    "eps_basic": 0.75022,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -11056955392,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 57081100.0,
+    "dividen_dibayar": null
+  }
+}

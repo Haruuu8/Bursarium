@@ -1,0 +1,102 @@
+{
+  "kode": "TOBA",
+  "nama": "PT TBS Energi Utama Tbk",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 344.0,
+  "update": "2026-11-09 17:14",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.007657265483795628,
+    "roe": -0.34932885745650505,
+    "eps": -6236.041362297025,
+    "eps_annualized": -0.0063999999999999994,
+    "de": 3.9075121316099133,
+    "margin_net": -0.1388111170902293,
+    "current_ratio": 1.7940350799343603,
+    "roa": -0.06893712632226552,
+    "bv": 17851.492166156,
+    "pcf": 0.06220012819543117,
+    "div_yield": 377.4363020180662,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 71518641000000.0,
+      "2025-Q2": 100693196000000.0,
+      "2025-Q3": 115959651000000.0,
+      "2026-Q1": 86285923000000.0,
+      "2026-Q2": 86730120000000.0,
+      "2026-Q3": 84329075000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.01,
+      "2025-Q2": -0.01,
+      "2025-Q3": -0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": -0.0,
+      "2026-Q3": -0.0
+    },
+    "net_income": {
+      "2025-Q1": -60056955000000.0,
+      "2025-Q2": -55557929000000.0,
+      "2025-Q3": -11763771000000.0,
+      "2026-Q1": -9065254000000.0,
+      "2026-Q2": -10586826000000.0,
+      "2026-Q3": -20403001000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2858493673472,
+    "enterprise_value": 3008457342976,
+    "shares_outstanding": 8309574775
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.162,
+    "vol_trend": 9.669,
+    "price_chg_20d": -21.65
+  },
+  "neraca": {
+    "aset": 751682798.0,
+    "aset_lancar": 168511146.0,
+    "kas": 85158134.0,
+    "piutang_usaha": 34562139.0,
+    "persediaan": 12587844.0,
+    "aset_tetap": 3591178.0,
+    "liabilitas": 579633742.0,
+    "liabilitas_jangka_pendek": 93928568.0,
+    "liabilitas_jangka_panjang": 485705174.0,
+    "utang_usaha": 34562139.0,
+    "utang_bank": 10007243.0,
+    "ekuitas": 148338309.0,
+    "ekuitas_induk": 148338309.0,
+    "modal_saham": null,
+    "saldo_laba": 6708768.0
+  },
+  "laba_rugi": {
+    "pendapatan": 257345118.0,
+    "beban_pokok": 212147163.0,
+    "laba_kotor": 45197955.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -29621502.0,
+    "beban_pajak": -5790425.0,
+    "laba_bersih": -40055081.0,
+    "laba_induk": -40055081.0,
+    "eps_basic": -0.0048,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 45956396,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3591178.0,
+    "dividen_dibayar": 10788993.0
+  }
+}

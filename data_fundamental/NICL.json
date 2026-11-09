@@ -1,0 +1,102 @@
+{
+  "kode": "NICL",
+  "nama": "PT PAM Mineral Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Other Industrial Metals & Mining",
+  "harga": 238.0,
+  "update": "2026-11-09 14:57",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.4627499630506386e-06,
+    "roe": 0.2580697412563077,
+    "eps": null,
+    "eps_annualized": 23.626666666666665,
+    "de": 0.14729048264785857,
+    "margin_net": 0.317237583288732,
+    "current_ratio": 3.508345228465869,
+    "roa": 224245.5859213452,
+    "bv": 84489622.58594762,
+    "pcf": 1.4009362820039379e-05,
+    "div_yield": 2520736.7307251566,
+    "payout_ratio": 25392297.202846527
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5.4391142367e+17,
+      "2025-Q2": -5.42854771577467e+17,
+      "2025-Q3": -1055298377696287.0,
+      "2026-Q1": 2.95057232416e+17,
+      "2026-Q2": 1.79356332369e+17,
+      "2026-Q3": 2.57576832827e+17
+    },
+    "eps": {
+      "2025-Q1": 18.13,
+      "2025-Q2": 15.48,
+      "2025-Q3": 4.08,
+      "2026-Q1": 11.14,
+      "2026-Q2": 0.25,
+      "2026-Q3": 6.33
+    },
+    "net_income": {
+      "2025-Q1": 1.92850942838e+17,
+      "2025-Q2": 1.64670824274e+17,
+      "2025-Q3": 4.3410673639e+16,
+      "2026-Q1": 1.18566172907e+17,
+      "2026-Q2": 2630800244000000.0,
+      "2026-Q3": 6.7272437632e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2531045408768,
+    "enterprise_value": 2009288671232,
+    "shares_outstanding": 10634644907
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1863,
+    "vol_trend": 0.363,
+    "price_chg_20d": -40.33
+  },
+  "neraca": {
+    "aset": 1034045256540.0,
+    "aset_lancar": 384480991539.0,
+    "kas": 292378618124.0,
+    "piutang_usaha": 63570290175.0,
+    "persediaan": 10456647595.0,
+    "aset_tetap": 30364462792.0,
+    "liabilitas": 132343022412.0,
+    "liabilitas_jangka_pendek": 109590409866.0,
+    "liabilitas_jangka_panjang": 22752612546.0,
+    "utang_usaha": 63570290175.0,
+    "utang_bank": null,
+    "ekuitas": 898517134528.0,
+    "ekuitas_induk": 898517134528.0,
+    "modal_saham": null,
+    "saldo_laba": 42542579628.0
+  },
+  "laba_rugi": {
+    "pendapatan": 731990397612.0,
+    "beban_pokok": 382472475602.0,
+    "laba_kotor": 349517922010.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 250961758017.0,
+    "beban_pajak": -61887871815.0,
+    "laba_bersih": 188469410783.0,
+    "laba_induk": 188469410783.0,
+    "eps_basic": 17.72,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 180668137472,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 35057000.0,
+    "dividen_dibayar": 63800993284.0
+  }
+}

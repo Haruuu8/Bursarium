@@ -1,0 +1,102 @@
+{
+  "kode": "PDPP",
+  "nama": "PT Primadaya Plastisindo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 282.0,
+  "update": "2026-11-09 15:23",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.2329520329629506e-06,
+    "roe": 0.15673421098335524,
+    "eps": null,
+    "eps_annualized": 26.093333333333334,
+    "de": 0.4893960169824598,
+    "margin_net": 0.10904051919192707,
+    "current_ratio": 1.509995828825505,
+    "roa": 0.10523340279968069,
+    "bv": 159120830.20613396,
+    "pcf": 1.803070562248806e-05,
+    "div_yield": 800703.1941304472,
+    "payout_ratio": 8653486.231915666
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.0607544224e+17,
+      "2025-Q2": 1.26657482217e+17,
+      "2025-Q3": 1.54566064099e+17,
+      "2026-Q1": 1.66038885841e+17,
+      "2026-Q2": 2.05269347216e+17,
+      "2026-Q3": 1.74313757558e+17
+    },
+    "eps": {
+      "2025-Q1": 0.16,
+      "2025-Q2": 3.07,
+      "2025-Q3": 5.37,
+      "2026-Q1": 2.5,
+      "2026-Q2": 12.66,
+      "2026-Q3": 4.41
+    },
+    "net_income": {
+      "2025-Q1": 495115663000000.0,
+      "2025-Q2": 9391531661000000.0,
+      "2025-Q3": 1.6451136589e+16,
+      "2026-Q1": 7656889490000000.0,
+      "2026-Q2": 3.8767525179e+16,
+      "2026-Q3": 1.347331776e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 863298256896,
+    "enterprise_value": 1030253576192,
+    "shares_outstanding": 3061341438
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2758,
+    "vol_trend": 0.634,
+    "price_chg_20d": -11.18
+  },
+  "neraca": {
+    "aset": 725519340692.0,
+    "aset_lancar": 294904039267.0,
+    "kas": 24789989233.0,
+    "piutang_usaha": 165144188456.0,
+    "persediaan": 91875864251.0,
+    "aset_tetap": 24497047683.0,
+    "liabilitas": 238396149533.0,
+    "liabilitas_jangka_pendek": 195301227750.0,
+    "liabilitas_jangka_panjang": 43094921783.0,
+    "utang_usaha": 165144188456.0,
+    "utang_bank": 116821968295.0,
+    "ekuitas": 487123191159.0,
+    "ekuitas_induk": 487123191159.0,
+    "modal_saham": null,
+    "saldo_laba": 35000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 545621990615.0,
+    "beban_pokok": 428629067358.0,
+    "laba_kotor": 116992923257.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 77449647759.0,
+    "beban_pajak": -17551915330.0,
+    "laba_bersih": 59897732429.0,
+    "laba_induk": 59897732429.0,
+    "eps_basic": 19.57,
+    "eps_diluted": 19.57
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 47879340032,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 24497047683.0,
+    "dividen_dibayar": 6912456947.0
+  }
+}

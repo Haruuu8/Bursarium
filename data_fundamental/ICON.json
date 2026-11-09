@@ -1,0 +1,102 @@
+{
+  "kode": "ICON",
+  "nama": "PT Island Concepts Indonesia Tbk",
+  "sektor": "Energy",
+  "industri": "Oil & Gas Equipment & Services",
+  "harga": 70.0,
+  "update": "2026-11-09 16:37",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.876977779417746e-07,
+    "roe": 0.005539093828106578,
+    "eps": null,
+    "eps_annualized": -0.5066666666666666,
+    "de": 1.1378939068932963,
+    "margin_net": 0.0031916746111011985,
+    "current_ratio": 0.9875951210727998,
+    "roa": 0.002129931648147685,
+    "bv": 140197871.28882772,
+    "pcf": null,
+    "div_yield": 1062805.735260381,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 5.4321258754e+16,
+      "2025-Q2": 5.507823176e+16,
+      "2025-Q3": 6.0037109884e+16,
+      "2026-Q1": 5.9036473862e+16,
+      "2026-Q2": 7.0640006939e+16,
+      "2026-Q3": 7.5434442594e+16
+    },
+    "eps": {
+      "2025-Q1": 0.59,
+      "2025-Q2": -1.16,
+      "2025-Q3": 1.15,
+      "2026-Q1": -0.16,
+      "2026-Q2": 1.19,
+      "2026-Q3": -1.41
+    },
+    "net_income": {
+      "2025-Q1": -646751046000000.0,
+      "2025-Q2": 21888771000000.0,
+      "2025-Q3": 1262038595000000.0,
+      "2026-Q1": -174930444000000.0,
+      "2026-Q2": 1298702597000000.0,
+      "2026-Q3": -1539544502000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 76282503168,
+    "enterprise_value": 164869406720,
+    "shares_outstanding": 1089750000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5636,
+    "vol_trend": 0.325,
+    "price_chg_20d": -48.03
+  },
+  "neraca": {
+    "aset": 397320846768.0,
+    "aset_lancar": 167028025468.0,
+    "kas": 7842628051.0,
+    "piutang_usaha": 7834300947.0,
+    "persediaan": 44826011529.0,
+    "aset_tetap": 1080333536.0,
+    "liabilitas": 173848148238.0,
+    "liabilitas_jangka_pendek": 169126013185.0,
+    "liabilitas_jangka_panjang": 4722135053.0,
+    "utang_usaha": 7834300947.0,
+    "utang_bank": 21881400000.0,
+    "ekuitas": 152780630237.0,
+    "ekuitas_induk": 152780630237.0,
+    "modal_saham": null,
+    "saldo_laba": 32530306531.0
+  },
+  "laba_rugi": {
+    "pendapatan": 205110923395.0,
+    "beban_pokok": 188602143321.0,
+    "laba_kotor": 16508780074.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 367165736.0,
+    "beban_pajak": null,
+    "laba_bersih": -415772349.0,
+    "laba_induk": -415772349.0,
+    "eps_basic": -0.38,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -20071571456,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1080333536.0,
+    "dividen_dibayar": 810734785.0
+  }
+}

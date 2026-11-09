@@ -1,0 +1,102 @@
+{
+  "kode": "HRTA",
+  "nama": "PT Hartadinata Abadi Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Luxury Goods",
+  "harga": 1405.0,
+  "update": "2026-11-09 17:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.6446351687294567,
+    "ps": 0.11801162545065551,
+    "roe": 286233.65550347045,
+    "eps": null,
+    "eps_annualized": 260.24,
+    "de": 1.5606170935777086,
+    "margin_net": 20538.84021630341,
+    "current_ratio": 1.91307798273116,
+    "roa": 111657.97076691764,
+    "bv": 854.2928101710339,
+    "pcf": 1.4051770208577955e-05,
+    "div_yield": 2846975.0889679715,
+    "payout_ratio": 15370427.29787888
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6788278060014.0,
+      "2025-Q2": 8263042111418.0,
+      "2025-Q3": 10141803829352.0,
+      "2026-Q1": 20158489321037.0,
+      "2026-Q2": 13647640361624.0,
+      "2026-Q3": 10880509425632.0
+    },
+    "eps": {
+      "2025-Q1": 32.52,
+      "2025-Q2": 43.16,
+      "2025-Q3": 49.34,
+      "2026-Q1": 94.13,
+      "2026-Q2": 57.87,
+      "2026-Q3": 43.18
+    },
+    "net_income": {
+      "2025-Q1": 1.49749971103e+17,
+      "2025-Q2": 1.98759554343e+17,
+      "2025-Q3": 2.27246882512e+17,
+      "2026-Q1": 4.33493059715e+17,
+      "2026-Q2": 2.6652054171200006e+17,
+      "2026-Q3": 1.9885214486599987e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 6470393397248,
+    "enterprise_value": 8975904931840,
+    "shares_outstanding": 4605262400
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2535,
+    "vol_trend": 1.969,
+    "price_chg_20d": -38.53
+  },
+  "neraca": {
+    "aset": 10085376091562.0,
+    "aset_lancar": 9351051098903.0,
+    "kas": 1346735647119.0,
+    "piutang_usaha": 215869724141.0,
+    "persediaan": 6586623007731.0,
+    "aset_tetap": 681996564274.0,
+    "liabilitas": 6139846185158.0,
+    "liabilitas_jangka_pendek": 4887961276703.0,
+    "liabilitas_jangka_panjang": 1251884908455.0,
+    "utang_usaha": 215869724141.0,
+    "utang_bank": 2695022500000.0,
+    "ekuitas": 3934242557271.0,
+    "ekuitas_induk": 3934242557271.0,
+    "modal_saham": null,
+    "saldo_laba": 546860065188.0
+  },
+  "laba_rugi": {
+    "pendapatan": 44686639108293.0,
+    "beban_pokok": 43007132963587.0,
+    "laba_kotor": 1679506144706.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1151514491195.0,
+    "beban_pajak": -251405059846.0,
+    "laba_bersih": 898865746293.0,
+    "laba_induk": 898865746293.0,
+    "eps_basic": 195.18,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 460468224000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7582134947.0,
+    "dividen_dibayar": 184210496000.0
+  }
+}

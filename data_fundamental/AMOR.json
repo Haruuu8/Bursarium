@@ -1,0 +1,96 @@
+{
+  "kode": "AMOR",
+  "nama": "PT Ashmore Asset Management Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Asset Management",
+  "harga": 354.0,
+  "update": "2026-11-09 17:40",
+  "periode_terbaru": "2026-tw1",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2148.0491384539537,
+    "roe": 0.25265418258755173,
+    "eps": 0.03652083953745139,
+    "eps_annualized": 44.0,
+    "de": 0.24674582372817128,
+    "margin_net": 0.22160609577411733,
+    "current_ratio": null,
+    "roa": 0.2026509155106166,
+    "bv": 0.14454872333172597,
+    "pcf": 9.010505485325352e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 58901000.0,
+      "2025-Q2": 81116000.0,
+      "2025-Q3": 112537000.0,
+      "2026-Q1": 108483000.0
+    },
+    "eps": {
+      "2025-Q1": 7.0,
+      "2025-Q2": 8.0,
+      "2025-Q3": 11.0,
+      "2026-Q1": 11.0
+    },
+    "net_income": {
+      "2025-Q1": 16060000.0,
+      "2025-Q2": 17306000.0,
+      "2025-Q3": 23469000.0,
+      "2026-Q1": 23173000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 775525236736,
+    "enterprise_value": 473772851200,
+    "shares_outstanding": 2190749200
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1919,
+    "vol_trend": 1.197,
+    "price_chg_20d": -3.85
+  },
+  "neraca": {
+    "aset": 394807.0,
+    "aset_lancar": null,
+    "kas": 174102.0,
+    "piutang_usaha": 3306.0,
+    "persediaan": null,
+    "aset_tetap": 639.0,
+    "liabilitas": 78137.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": 3306.0,
+    "utang_bank": null,
+    "ekuitas": 316670.0,
+    "ekuitas_induk": 316670.0,
+    "modal_saham": null,
+    "saldo_laba": 5560.0
+  },
+  "laba_rugi": {
+    "pendapatan": 108483.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 28946.0,
+    "beban_pajak": -5773.0,
+    "laba_bersih": 23173.0,
+    "laba_induk": 23173.0,
+    "eps_basic": 11.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 86069002240,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "NETV",
+  "nama": "PT MDTV Media Technologies Tbk",
+  "sektor": "Communication Services",
+  "industri": "Broadcasting",
+  "harga": 25.0,
+  "update": "2026-11-09 15:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.166424433326232e-05,
+    "roe": -0.305226517213466,
+    "eps": null,
+    "eps_annualized": -2.2666666666666666,
+    "de": 1.3992909761939953,
+    "margin_net": -1.2075042145171584,
+    "current_ratio": 1.0787804475306475,
+    "roa": -0.13233394307289817,
+    "bv": 8479100.725338837,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.2692617084e+16,
+      "2025-Q2": 1.541454906e+16,
+      "2025-Q3": 1.6772449846e+16,
+      "2026-Q1": 2.6365465376e+16,
+      "2026-Q2": 2.1843703352e+16,
+      "2026-Q3": 2.3666468135e+16
+    },
+    "eps": {
+      "2025-Q1": -1.0,
+      "2025-Q2": -1.0,
+      "2025-Q3": -1.31,
+      "2026-Q1": -0.62,
+      "2026-Q2": -0.56,
+      "2026-Q3": -0.52
+    },
+    "net_income": {
+      "2025-Q1": -5.3707894699e+16,
+      "2025-Q2": -4.6540108911e+16,
+      "2025-Q3": -3.682659671e+16,
+      "2026-Q1": -2.5500774255e+16,
+      "2026-Q2": -2.3486573158e+16,
+      "2026-Q3": -2.1228994187e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1034012983296,
+    "enterprise_value": 1383842971648,
+    "shares_outstanding": 41360517722
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3185,
+    "vol_trend": 1.136,
+    "price_chg_20d": -35.14
+  },
+  "neraca": {
+    "aset": 808884975573.0,
+    "aset_lancar": 507735432084.0,
+    "kas": 7936236441.0,
+    "piutang_usaha": 28740371308.0,
+    "persediaan": 442611201107.0,
+    "aset_tetap": 14132015344.0,
+    "liabilitas": 490731339498.0,
+    "liabilitas_jangka_pendek": 470656872996.0,
+    "liabilitas_jangka_panjang": 20074466502.0,
+    "utang_usaha": 28740371308.0,
+    "utang_bank": 389220000000.0,
+    "ekuitas": 350699995817.0,
+    "ekuitas_induk": 350699995817.0,
+    "modal_saham": null,
+    "saldo_laba": -4088001563296.0
+  },
+  "laba_rugi": {
+    "pendapatan": 71875636863.0,
+    "beban_pokok": 73854809145.0,
+    "laba_kotor": -1979172282.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -71025553842.0,
+    "beban_pajak": 625207962.0,
+    "laba_bersih": -70216341600.0,
+    "laba_induk": -70216341600.0,
+    "eps_basic": -1.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -181593718784,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1339260204.0,
+    "dividen_dibayar": null
+  }
+}

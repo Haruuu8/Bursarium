@@ -1,0 +1,102 @@
+{
+  "kode": "WIRG",
+  "nama": "PT WIR ASIA Tbk",
+  "sektor": "Technology",
+  "industri": "Information Technology Services",
+  "harga": 38.0,
+  "update": "2026-11-09 15:06",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.00035408830279465243,
+    "roe": 0.09274597131894594,
+    "eps": null,
+    "eps_annualized": 6.279999999999999,
+    "de": 0.8135924737097978,
+    "margin_net": -63.413434231797034,
+    "current_ratio": 1.7568325222954257,
+    "roa": 48948.46559761734,
+    "bv": 73376710.12530392,
+    "pcf": 3.830660941679404e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.73320448823e+17,
+      "2025-Q2": -6.720355457783241e+17,
+      "2025-Q3": -1282952627899349.0,
+      "2026-Q1": 5.08780160791e+17,
+      "2026-Q2": -5.07770172096339e+17,
+      "2026-Q3": -1008263510287494.0
+    },
+    "eps": {
+      "2025-Q1": 2.06,
+      "2025-Q2": 2.11,
+      "2025-Q3": 2.1,
+      "2026-Q1": 2.31,
+      "2026-Q2": 2.18,
+      "2026-Q3": 0.22
+    },
+    "net_income": {
+      "2025-Q1": 2.4558715038e+16,
+      "2025-Q2": 2.5265982225e+16,
+      "2025-Q3": 2.4998943244e+16,
+      "2026-Q1": 2.7572837764e+16,
+      "2026-Q2": 2.6011740146e+16,
+      "2026-Q3": 2663511072000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 453667651584,
+    "enterprise_value": 618173431808,
+    "shares_outstanding": 11938622394
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1373,
+    "vol_trend": 0.507,
+    "price_chg_20d": -35.59
+  },
+  "neraca": {
+    "aset": 1659848398393.0,
+    "aset_lancar": 1005892751953.0,
+    "kas": 44002173625.0,
+    "piutang_usaha": 596958789336.0,
+    "persediaan": 850218165.0,
+    "aset_tetap": 13038791140.0,
+    "liabilitas": 712720703555.0,
+    "liabilitas_jangka_pendek": 572560411529.0,
+    "liabilitas_jangka_panjang": 140160292026.0,
+    "utang_usaha": 596958789336.0,
+    "utang_bank": null,
+    "ekuitas": 876016834700.0,
+    "ekuitas_induk": 876016834700.0,
+    "modal_saham": null,
+    "saldo_laba": 12000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1725184373506.0,
+    "beban_pokok": 1539046409390.0,
+    "laba_kotor": 186137964116.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 86749241162.0,
+    "beban_pajak": -25905145204.0,
+    "laba_bersih": 56248088982.0,
+    "laba_induk": 56248088982.0,
+    "eps_basic": 4.71,
+    "eps_diluted": 4.71
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 118430646272,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 159426445.0,
+    "dividen_dibayar": null
+  }
+}

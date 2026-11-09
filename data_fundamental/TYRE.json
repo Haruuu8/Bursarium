@@ -1,0 +1,102 @@
+{
+  "kode": "TYRE",
+  "nama": "PT King Tire Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 82.0,
+  "update": "2026-11-09 15:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.437719330987599e-07,
+    "roe": 0.052540550005576635,
+    "eps": null,
+    "eps_annualized": 5.333333333333333,
+    "de": 0.836824877324724,
+    "margin_net": 0.028453140113180675,
+    "current_ratio": 0.9839872037868291,
+    "roa": 0.028015467179358326,
+    "bv": 100066707.13869435,
+    "pcf": 1.5801480478976064e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.60335136902e+17,
+      "2025-Q2": 1.44114576567e+17,
+      "2025-Q3": 1.47293323124e+17,
+      "2026-Q1": 1.32966335708e+17,
+      "2026-Q2": 1.75636586103e+17,
+      "2026-Q3": 1.87244252079e+17
+    },
+    "eps": {
+      "2025-Q1": 2.39,
+      "2025-Q2": 1.76,
+      "2025-Q3": 1.26,
+      "2026-Q1": 1.55,
+      "2026-Q2": 0.36,
+      "2026-Q3": 2.09
+    },
+    "net_income": {
+      "2025-Q1": 8311654839000000.0,
+      "2025-Q2": 6122293751000000.0,
+      "2025-Q3": 4383953899000000.0,
+      "2026-Q1": 5384968497000000.0,
+      "2026-Q2": 1257468854000000.0,
+      "2026-Q3": 7272975424000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 285407707136,
+    "enterprise_value": 512089882624,
+    "shares_outstanding": 3480581727
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3546,
+    "vol_trend": 1.063,
+    "price_chg_20d": -22.43
+  },
+  "neraca": {
+    "aset": 653187989222.0,
+    "aset_lancar": 271784628258.0,
+    "kas": 9952686078.0,
+    "piutang_usaha": 57429341459.0,
+    "persediaan": 190338731735.0,
+    "aset_tetap": 168598560.0,
+    "liabilitas": 291458031377.0,
+    "liabilitas_jangka_pendek": 276207482386.0,
+    "liabilitas_jangka_panjang": 15250548991.0,
+    "utang_usaha": 57429341459.0,
+    "utang_bank": 198672214102.0,
+    "ekuitas": 348290352348.0,
+    "ekuitas_induk": 348290352348.0,
+    "modal_saham": null,
+    "saldo_laba": 14229716984.0
+  },
+  "laba_rugi": {
+    "pendapatan": 495847173890.0,
+    "beban_pokok": 409245286359.0,
+    "laba_kotor": 86601887531.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 19445634556.0,
+    "beban_pajak": -5125221187.0,
+    "laba_bersih": 13915412775.0,
+    "laba_induk": 13915412775.0,
+    "eps_basic": 4.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 18062086144,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 168598560.0,
+    "dividen_dibayar": null
+  }
+}

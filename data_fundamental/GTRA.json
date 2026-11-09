@@ -1,0 +1,102 @@
+{
+  "kode": "GTRA",
+  "nama": "PT Grahaprima Suksesmandiri Tbk",
+  "sektor": "Industrials",
+  "industri": "Integrated Freight & Logistics",
+  "harga": 236.0,
+  "update": "2026-11-09 15:29",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.149599324866423e-07,
+    "roe": 0.21726932796367765,
+    "eps": null,
+    "eps_annualized": 61.33333333333333,
+    "de": 3.3811095834983216,
+    "margin_net": 0.11855186435728769,
+    "current_ratio": 1.4829760030952386,
+    "roa": 49575.92893809846,
+    "bv": 250062478.20098978,
+    "pcf": 6.001573217592396e-06,
+    "div_yield": 771186.4406779661,
+    "payout_ratio": 2967391.304347826
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.36421123584e+17,
+      "2025-Q2": 1.39610748593e+17,
+      "2025-Q3": 1.78639693511e+17,
+      "2026-Q1": 1.98217525096e+17,
+      "2026-Q2": 2.18087728582e+17,
+      "2026-Q3": 2.7322453901e+17
+    },
+    "eps": {
+      "2025-Q1": 9.0,
+      "2025-Q2": 6.0,
+      "2025-Q3": 9.0,
+      "2026-Q1": 11.0,
+      "2026-Q2": 18.0,
+      "2026-Q3": 17.0
+    },
+    "net_income": {
+      "2025-Q1": 1.7899314088e+16,
+      "2025-Q2": 1.1380194413e+16,
+      "2025-Q3": 1.5510289936e+16,
+      "2026-Q1": 2.0081053204e+16,
+      "2026-Q2": 3.4407557653e+16,
+      "2026-Q3": 3.2924210374e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 447072501760,
+    "enterprise_value": 1847820025856,
+    "shares_outstanding": 1894375000
+  },
+  "akumulasi": {
+    "score": 3.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0516,
+    "vol_trend": 0.637,
+    "price_chg_20d": -20.53
+  },
+  "neraca": {
+    "aset": 2076070249647.0,
+    "aset_lancar": 421965757655.0,
+    "kas": 35909430007.0,
+    "piutang_usaha": 241668738586.0,
+    "persediaan": 25804299324.0,
+    "aset_tetap": 1650853765810.0,
+    "liabilitas": 1601672545277.0,
+    "liabilitas_jangka_pendek": 284539842030.0,
+    "liabilitas_jangka_panjang": 1317132703247.0,
+    "utang_usaha": 241668738586.0,
+    "utang_bank": 18759782925.0,
+    "ekuitas": 473712107142.0,
+    "ekuitas_induk": 473712107142.0,
+    "modal_saham": null,
+    "saldo_laba": 25000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 689529792688.0,
+    "beban_pokok": 429905764339.0,
+    "laba_kotor": 259624028349.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 113110077231.0,
+    "beban_pajak": -25266132276.0,
+    "laba_bersih": 87412821231.0,
+    "laba_induk": 87412821231.0,
+    "eps_basic": 46.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 74492551168,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 9617960250.0,
+    "dividen_dibayar": 3447762500.0
+  }
+}

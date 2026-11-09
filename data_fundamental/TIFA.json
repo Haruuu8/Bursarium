@@ -1,0 +1,102 @@
+{
+  "kode": "TIFA",
+  "nama": "PT KDB Tifa Finance Tbk",
+  "sektor": "Financial Services",
+  "industri": "Credit Services",
+  "harga": 310.0,
+  "update": "2026-11-09 17:12",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.8584490990575057,
+    "roe": 0.05235888008640023,
+    "eps": null,
+    "eps_annualized": 0.01568,
+    "de": 0.7702334445486797,
+    "margin_net": 50.85548940778672,
+    "current_ratio": null,
+    "roa": 0.029577387235359295,
+    "bv": 350747.54019536555,
+    "pcf": null,
+    "div_yield": 1290.3225806451612,
+    "payout_ratio": 25510204.081632655
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1083692000000.0,
+      "2025-Q2": 1245040000000.0,
+      "2025-Q3": 1281501000000.0,
+      "2026-Q1": 222818000.0,
+      "2026-Q2": 381575000.0,
+      "2026-Q3": 656778000.0
+    },
+    "eps": {
+      "2025-Q1": 2.48,
+      "2025-Q2": 3.16,
+      "2025-Q3": 6.6,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.01,
+      "2026-Q3": 0.01
+    },
+    "net_income": {
+      "2025-Q1": 8816160000000.0,
+      "2025-Q2": 11220348000000.0,
+      "2025-Q3": 23453680000000.0,
+      "2026-Q1": 4398299000000.0,
+      "2026-Q2": 18958719000000.0,
+      "2026-Q3": 18424800000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1101186072576,
+    "enterprise_value": 1595604598784,
+    "shares_outstanding": 3552213000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4177,
+    "vol_trend": 1.698,
+    "price_chg_20d": -19.48
+  },
+  "neraca": {
+    "aset": 2205586906.0,
+    "aset_lancar": null,
+    "kas": 164589257.0,
+    "piutang_usaha": 11673017.0,
+    "persediaan": null,
+    "aset_tetap": 10623084.0,
+    "liabilitas": 959656934.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": 1074874622.0,
+    "ekuitas": 1245929972.0,
+    "ekuitas_induk": 1245929972.0,
+    "modal_saham": null,
+    "saldo_laba": 484480017.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1261171.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 53325242.0,
+    "beban_pajak": -11543424.0,
+    "laba_bersih": 41781818.0,
+    "laba_induk": 41781818.0,
+    "eps_basic": 0.01176,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -265828139008,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 8332421.0,
+    "dividen_dibayar": 14208852.0
+  }
+}

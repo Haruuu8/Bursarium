@@ -1,0 +1,102 @@
+{
+  "kode": "PURA",
+  "nama": "PT Putra Rajawali Kencana Tbk",
+  "sektor": "Industrials",
+  "industri": "Trucking",
+  "harga": 27.0,
+  "update": "2026-11-09 17:41",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.030555295763837e-07,
+    "roe": 0.015163158577179136,
+    "eps": null,
+    "eps_annualized": 1.72,
+    "de": 0.27499540245651244,
+    "margin_net": 0.018609774125021832,
+    "current_ratio": 1.8431658952799694,
+    "roa": 0.01189271627800738,
+    "bv": 82214856.96353324,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 9.5170282266e+16,
+      "2025-Q2": 7.6066595325e+16,
+      "2025-Q3": 1.15683489212e+17,
+      "2026-Q1": 1.23652545918e+17,
+      "2026-Q2": 1.25370068152e+17,
+      "2026-Q3": 5.7449460575e+16
+    },
+    "eps": {
+      "2025-Q1": 0.44,
+      "2025-Q2": 0.3,
+      "2025-Q3": -0.05,
+      "2026-Q1": 0.68,
+      "2026-Q2": 1.0,
+      "2026-Q3": -0.39
+    },
+    "net_income": {
+      "2025-Q1": 2794433211000000.0,
+      "2025-Q2": 1880337195000000.0,
+      "2025-Q3": -302691852000000.0,
+      "2026-Q1": 4298252254000000.0,
+      "2026-Q2": 6319853490000000.0,
+      "2026-Q3": -2459194203000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 170152132608,
+    "enterprise_value": 308675870720,
+    "shares_outstanding": 6301930902
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3048,
+    "vol_trend": 0.505,
+    "price_chg_20d": -38.64
+  },
+  "neraca": {
+    "aset": 660590861276.0,
+    "aset_lancar": 248768482073.0,
+    "kas": 914759642.0,
+    "piutang_usaha": 247217373431.0,
+    "persediaan": 636349000.0,
+    "aset_tetap": 387631245870.0,
+    "liabilitas": 142478513574.0,
+    "liabilitas_jangka_pendek": 134968036632.0,
+    "liabilitas_jangka_panjang": 7510476942.0,
+    "utang_usaha": 247217373431.0,
+    "utang_bank": 103500000000.0,
+    "ekuitas": 518112347702.0,
+    "ekuitas_induk": 518112347702.0,
+    "modal_saham": null,
+    "saldo_laba": 51371162985.0
+  },
+  "laba_rugi": {
+    "pendapatan": 306472074645.0,
+    "beban_pokok": 274511376904.0,
+    "laba_kotor": 31960697741.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10139069282.0,
+    "beban_pajak": -1980157741.0,
+    "laba_bersih": 8158911541.0,
+    "laba_induk": 8158911541.0,
+    "eps_basic": 1.29,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -52448014336,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

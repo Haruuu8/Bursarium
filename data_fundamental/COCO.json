@@ -1,0 +1,102 @@
+{
+  "kode": "COCO",
+  "nama": "PT Wahana Interfood Nusantara Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Confectioners",
+  "harga": 73.0,
+  "update": "2026-11-09 17:34",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7692921092585195,
+    "ps": 6.521051016507386e-06,
+    "roe": -43768.602783022194,
+    "eps": null,
+    "eps_annualized": -3.5599999999999996,
+    "de": 0.26368493834457757,
+    "margin_net": -0.37101289384656977,
+    "current_ratio": 10.563970889071237,
+    "roa": -34635.69237468232,
+    "bv": 94.89243308417772,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.6366545281e+16,
+      "2025-Q2": 3.6788901257e+16,
+      "2025-Q3": 3.830216583e+16,
+      "2026-Q1": 4.3442138921e+16,
+      "2026-Q2": 3.8366976537e+16,
+      "2026-Q3": 3.9274242177e+16
+    },
+    "eps": {
+      "2025-Q1": -20.51,
+      "2025-Q2": -72.24,
+      "2025-Q3": -22.52,
+      "2026-Q1": -0.04,
+      "2026-Q2": -8.45,
+      "2026-Q3": 5.82
+    },
+    "net_income": {
+      "2025-Q1": -1.825597589e+16,
+      "2025-Q2": -6.4279078922e+16,
+      "2025-Q3": -2.1082441895e+16,
+      "2026-Q1": -1.5041680964e+16,
+      "2026-Q2": -1.5195152856e+16,
+      "2026-Q3": -7814808583000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1039361179648,
+    "enterprise_value": 426347200512,
+    "shares_outstanding": 14237823696
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2744,
+    "vol_trend": 0.424,
+    "price_chg_20d": -44.09
+  },
+  "neraca": {
+    "aset": 1707316361928.0,
+    "aset_lancar": 1521971147944.0,
+    "kas": 905778032082.0,
+    "piutang_usaha": 52031263988.0,
+    "persediaan": 38941319883.0,
+    "aset_tetap": 3014500000.0,
+    "liabilitas": 356254629591.0,
+    "liabilitas_jangka_pendek": 144071880160.0,
+    "liabilitas_jangka_panjang": 212182749431.0,
+    "utang_usaha": 52031263988.0,
+    "utang_bank": 111858350337.0,
+    "ekuitas": 1351061732337.0,
+    "ekuitas_induk": 1351061732337.0,
+    "modal_saham": null,
+    "saldo_laba": 100500000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 121083357635.0,
+    "beban_pokok": 115290537324.0,
+    "laba_kotor": 5792820311.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -38054205606.0,
+    "beban_pajak": 2563203.0,
+    "laba_bersih": -38051642403.0,
+    "laba_induk": -38051642403.0,
+    "eps_basic": -2.67,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -91348656128,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 3014500000.0,
+    "dividen_dibayar": null
+  }
+}

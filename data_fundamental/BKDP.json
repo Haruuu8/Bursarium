@@ -1,0 +1,96 @@
+{
+  "kode": "BKDP",
+  "nama": "PT Bukit Darmo Property Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 128.0,
+  "update": "2026-11-09 16:15",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.6368889650111706e-05,
+    "roe": -0.1050874041482445,
+    "eps": null,
+    "eps_annualized": -3.5066666666666664,
+    "de": 1.508729146272908,
+    "margin_net": -0.8334751348481544,
+    "current_ratio": 0.9708044189340373,
+    "roa": -0.041893555052410526,
+    "bv": 38499945.13316142,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 9336893539000000.0,
+      "2026-Q1": 9221152430000000.0,
+      "2026-Q2": 8982528830000000.0,
+      "2026-Q3": 8933885105000000.0
+    },
+    "eps": {
+      "2025-Q3": -1.41,
+      "2026-Q1": -1.25,
+      "2026-Q2": -1.28,
+      "2026-Q3": -0.1
+    },
+    "net_income": {
+      "2025-Q3": -1.0640152484e+16,
+      "2026-Q1": -9394374420000000.0,
+      "2026-Q2": -9590293430000000.0,
+      "2026-Q3": -775735053000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 961791000576,
+    "enterprise_value": 1325967605760,
+    "shares_outstanding": 7513992252
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1535,
+    "vol_trend": 0.178,
+    "price_chg_20d": -29.19
+  },
+  "neraca": {
+    "aset": 725661867296.0,
+    "aset_lancar": 53944210119.0,
+    "kas": 1780446120.0,
+    "piutang_usaha": 250437241.0,
+    "persediaan": 712881464.0,
+    "aset_tetap": 349778714.0,
+    "liabilitas": 436457673943.0,
+    "liabilitas_jangka_pendek": 55566506566.0,
+    "liabilitas_jangka_panjang": 380891167377.0,
+    "utang_usaha": 250437241.0,
+    "utang_bank": null,
+    "ekuitas": 289288289433.0,
+    "ekuitas_induk": 289288289433.0,
+    "modal_saham": null,
+    "saldo_laba": -548596110700.0
+  },
+  "laba_rugi": {
+    "pendapatan": 27137566365.0,
+    "beban_pokok": 30443935254.0,
+    "laba_kotor": -3306368889.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -17521881778.0,
+    "beban_pajak": -2238521125.0,
+    "laba_bersih": -19760402903.0,
+    "laba_induk": -19760402903.0,
+    "eps_basic": -2.63,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -23226406912,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1209586854.0,
+    "dividen_dibayar": null
+  }
+}

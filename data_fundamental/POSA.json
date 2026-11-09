@@ -1,0 +1,102 @@
+{
+  "kode": "POSA",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": 50.0,
+  "update": "2026-11-09 17:34",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": null,
+    "roe": 0.15960968671696193,
+    "eps": null,
+    "eps_annualized": -11.08,
+    "de": -2.195416068100871,
+    "margin_net": -1.7747926622838106,
+    "current_ratio": 0.013453096886370343,
+    "roa": -0.137025592799586,
+    "bv": null,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.3578637683e+16,
+      "2025-Q2": 1.3271045993e+16,
+      "2025-Q3": 1.260019009e+16,
+      "2026-Q1": 1.2942064815e+16,
+      "2026-Q2": 1.3537409405e+16,
+      "2026-Q3": 1.3221825377e+16
+    },
+    "eps": {
+      "2025-Q1": -1.76,
+      "2025-Q2": -3.42,
+      "2025-Q3": -2.77,
+      "2026-Q1": -1.64,
+      "2026-Q2": -1.75,
+      "2026-Q3": -4.92
+    },
+    "net_income": {
+      "2025-Q1": -1.47488853e+16,
+      "2025-Q2": -2.8781732906e+16,
+      "2025-Q3": -2.3148148201e+16,
+      "2026-Q1": -1.3780166145e+16,
+      "2026-Q2": -1.468939042e+16,
+      "2026-Q3": -4.1206595357e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": null
+  },
+  "akumulasi": {
+    "score": 5.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0,
+    "vol_trend": 1.0,
+    "price_chg_20d": 0.0
+  },
+  "neraca": {
+    "aset": 677423087370.0,
+    "aset_lancar": 16742409357.0,
+    "kas": 8172009154.0,
+    "piutang_usaha": 3559656747.0,
+    "persediaan": 435795378.0,
+    "aset_tetap": 15445076428.0,
+    "liabilitas": 1276789424201.0,
+    "liabilitas_jangka_pendek": 1244502250925.0,
+    "liabilitas_jangka_panjang": 32287173276.0,
+    "utang_usaha": 3559656747.0,
+    "utang_bank": 579656136528.0,
+    "ekuitas": -581570592815.0,
+    "ekuitas_induk": -581570592815.0,
+    "modal_saham": null,
+    "saldo_laba": -1499543363144.0
+  },
+  "laba_rugi": {
+    "pendapatan": 39701299597.0,
+    "beban_pokok": 41560579703.0,
+    "laba_kotor": -1859280106.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -69784633193.0,
+    "beban_pajak": -374904263.0,
+    "laba_bersih": -69676151922.0,
+    "laba_induk": -69676151922.0,
+    "eps_basic": -8.31,
+    "eps_diluted": -8.26
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 157608254.0,
+    "dividen_dibayar": null
+  }
+}

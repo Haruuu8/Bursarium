@@ -1,0 +1,102 @@
+{
+  "kode": "URBN",
+  "nama": "PT Urban Jakarta Propertindo Tbk.",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 204.0,
+  "update": "2026-11-09 17:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 9.75265418910865e-05,
+    "roe": -0.014115695081851842,
+    "eps": null,
+    "eps_annualized": -5.666666666666666,
+    "de": 2.715360145276631,
+    "margin_net": -1.8619513394997729,
+    "current_ratio": 1.0412792079240247,
+    "roa": -2916.3291392436604,
+    "bv": 275913786.0977825,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.7135316286e+16,
+      "2025-Q2": -1.0631102091e+16,
+      "2025-Q3": 3867766576000000.0,
+      "2026-Q1": 672621554000000.0,
+      "2026-Q2": 729050766000000.0,
+      "2026-Q3": 1255943920000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.25,
+      "2025-Q2": 0.05,
+      "2025-Q3": -0.26,
+      "2026-Q1": -1.75,
+      "2026-Q2": -1.93,
+      "2026-Q3": -0.57
+    },
+    "net_income": {
+      "2025-Q1": 821329461000000.0,
+      "2025-Q2": -1800930747000000.0,
+      "2025-Q3": 1109363324000000.0,
+      "2026-Q1": -5667430949000000.0,
+      "2026-Q2": -6228327348000000.0,
+      "2026-Q3": -1363550302000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 636398010368,
+    "enterprise_value": 2378649567232,
+    "shares_outstanding": 3119598140
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5582,
+    "vol_trend": 0.795,
+    "price_chg_20d": -35.67
+  },
+  "neraca": {
+    "aset": 4166177648299.0,
+    "aset_lancar": 2418429223955.0,
+    "kas": 16577938506.0,
+    "piutang_usaha": 41830167.0,
+    "persediaan": 725176672641.0,
+    "aset_tetap": 19108355207.0,
+    "liabilitas": 2337219455062.0,
+    "liabilitas_jangka_pendek": 2322555953822.0,
+    "liabilitas_jangka_panjang": 14663501240.0,
+    "utang_usaha": 41830167.0,
+    "utang_bank": 492000000000.0,
+    "ekuitas": 860740133911.0,
+    "ekuitas_induk": 860740133911.0,
+    "modal_saham": null,
+    "saldo_laba": -36905105310.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2657616240.0,
+    "beban_pokok": 1315970599.0,
+    "laba_kotor": 1341645641.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -13259632109.0,
+    "beban_pajak": -2276299263.0,
+    "laba_bersih": -13259308599.0,
+    "laba_induk": -13259308599.0,
+    "eps_basic": -4.25,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -5158246400,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

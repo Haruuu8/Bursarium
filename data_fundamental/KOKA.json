@@ -1,0 +1,99 @@
+{
+  "kode": "KOKA",
+  "nama": "PT Koka Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 113.0,
+  "update": "2026-11-09 15:39",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.928985552562035e-06,
+    "roe": -0.16056259056833413,
+    "eps": null,
+    "eps_annualized": -4.333333333333333,
+    "de": 0.698939187424652,
+    "margin_net": -0.21019515494392516,
+    "current_ratio": 1.9264191385383334,
+    "roa": -0.09429254973201592,
+    "bv": 50505601.60107195,
+    "pcf": 9.582876117251461e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1515409725000000.0,
+      "2025-Q2": 8063492674000000.0,
+      "2026-Q1": 2888058465000000.0,
+      "2026-Q2": 4.3037648407e+16,
+      "2026-Q3": 5.6400771042e+16
+    },
+    "eps": {
+      "2025-Q1": -1.32,
+      "2025-Q2": 7.5,
+      "2026-Q1": -1.84,
+      "2026-Q2": 4.2,
+      "2026-Q3": -5.61
+    },
+    "net_income": {
+      "2025-Q1": -3782948111000000.0,
+      "2025-Q2": -1.3910000976e+16,
+      "2026-Q1": -5271843143000000.0,
+      "2026-Q2": -1482419138000000.0,
+      "2026-Q3": -2539173715000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 323330637824,
+    "enterprise_value": 281983909888,
+    "shares_outstanding": 2861333000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2629,
+    "vol_trend": 1.866,
+    "price_chg_20d": -25.17
+  },
+  "neraca": {
+    "aset": 246079218750.0,
+    "aset_lancar": 192884840156.0,
+    "kas": 36912347861.0,
+    "piutang_usaha": 4638516791.0,
+    "persediaan": null,
+    "aset_tetap": 38569378594.0,
+    "liabilitas": 101006039609.0,
+    "liabilitas_jangka_pendek": 100126102517.0,
+    "liabilitas_jangka_panjang": 879937092.0,
+    "utang_usaha": 4638516791.0,
+    "utang_bank": 2100000000.0,
+    "ekuitas": 144513344546.0,
+    "ekuitas_induk": 144513344546.0,
+    "modal_saham": null,
+    "saldo_laba": 14306665000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 102326477914.0,
+    "beban_pokok": 93232717765.0,
+    "laba_kotor": 9093760149.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -7628644204.0,
+    "beban_pajak": -1744957197.0,
+    "laba_bersih": -9293435996.0,
+    "laba_induk": -9293435996.0,
+    "eps_basic": -3.25,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 33740457984,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 81894261.0,
+    "dividen_dibayar": null
+  }
+}

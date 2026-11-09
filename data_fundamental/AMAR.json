@@ -1,0 +1,102 @@
+{
+  "kode": "AMAR",
+  "nama": "PT Bank Amar Indonesia Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 186.0,
+  "update": "2026-11-09 17:39",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.969892256573356,
+    "ps": 1954.357823239205,
+    "roe": 8.229605459694918e-05,
+    "eps": 0.01578223359480428,
+    "eps_annualized": 1.6533333333333333e-05,
+    "de": 0.978829092744877,
+    "margin_net": 0.16582866502255023,
+    "current_ratio": null,
+    "roa": 4.1588257873647155e-05,
+    "bv": 191.77387873694425,
+    "pcf": 1.0921933014518926e-05,
+    "div_yield": 5381.694470643969,
+    "payout_ratio": 60544062794.74466
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 340064000.0,
+      "2025-Q2": 341924000.0,
+      "2025-Q3": 372099000.0,
+      "2026-Q1": 416514000.0,
+      "2026-Q2": 440587000.0,
+      "2026-Q3": 485196000.0
+    },
+    "eps": {
+      "2025-Q1": 4.0,
+      "2025-Q2": -4.0,
+      "2025-Q3": 9.5,
+      "2026-Q1": 0.0,
+      "2026-Q2": 8.0,
+      "2026-Q3": -8.0
+    },
+    "net_income": {
+      "2025-Q1": 67494000.0,
+      "2025-Q2": 50505000.0,
+      "2025-Q3": 56643000.0,
+      "2026-Q1": 71116000.0,
+      "2026-Q2": 72439000.0,
+      "2026-Q3": 84098000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3350543204352,
+    "enterprise_value": 2472763457536,
+    "shares_outstanding": 18013673305
+  },
+  "akumulasi": {
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.0791,
+    "vol_trend": 1.148,
+    "price_chg_20d": -18.86
+  },
+  "neraca": {
+    "aset": 6835968.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 23748.0,
+    "liabilitas": 3381416.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 3454552.0,
+    "ekuitas_induk": 3454552.0,
+    "modal_saham": null,
+    "saldo_laba": 260752.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1342297.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 294735.0,
+    "laba_sebelum_pajak": 294796.0,
+    "beban_pajak": -67143.0,
+    "laba_bersih": 227653.0,
+    "laba_induk": 227653.0,
+    "eps_basic": 1.24e-05,
+    "eps_diluted": 1.24e-05
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 306772000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 180316.0
+  }
+}

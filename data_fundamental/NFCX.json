@@ -1,0 +1,96 @@
+{
+  "kode": "NFCX",
+  "nama": "PT NFC Indonesia Tbk",
+  "sektor": "Communication Services",
+  "industri": "Internet Content & Information",
+  "harga": 1800.0,
+  "update": "2026-11-09 17:29",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.45418006922125786,
+    "roe": -0.09777730226994996,
+    "eps": null,
+    "eps_annualized": -49.53333333333333,
+    "de": 3.064565879628701,
+    "margin_net": -9659.036269112261,
+    "current_ratio": 1.3407156018685853,
+    "roa": -17294.306008839438,
+    "bv": 391507583.8039239,
+    "pcf": null,
+    "div_yield": 2366573.960054788,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 934528814691.0,
+      "2026-Q1": 6.89784170646e+17,
+      "2026-Q2": -6.88554587082999e+17,
+      "2026-Q3": -1227892828795976.0
+    },
+    "eps": {
+      "2025-Q3": 1.13,
+      "2026-Q1": -13.65,
+      "2026-Q2": 46.15,
+      "2026-Q3": -69.65
+    },
+    "net_income": {
+      "2025-Q3": -748588458000000.0,
+      "2026-Q1": -9045072190000000.0,
+      "2026-Q2": -1.2485842736e+16,
+      "2026-Q3": -3078007339000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1192342061056,
+    "enterprise_value": 1826887041024,
+    "shares_outstanding": 662412300
+  },
+  "akumulasi": {
+    "score": 7.1,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.0754,
+    "vol_trend": 1.307,
+    "price_chg_20d": 3.15
+  },
+  "neraca": {
+    "aset": 1466234650297.0,
+    "aset_lancar": 945249184576.0,
+    "kas": 114989956246.0,
+    "piutang_usaha": 173791541894.0,
+    "persediaan": 322491664134.0,
+    "aset_tetap": 272152880703.0,
+    "liabilitas": 794762796170.0,
+    "liabilitas_jangka_pendek": 705033329409.0,
+    "liabilitas_jangka_panjang": 89729466761.0,
+    "utang_usaha": 173791541894.0,
+    "utang_bank": 56338581707.0,
+    "ekuitas": 259339439055.0,
+    "ekuitas_induk": 259339439055.0,
+    "modal_saham": null,
+    "saldo_laba": 600000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1690734205024.0,
+    "beban_pokok": 1596921863390.0,
+    "laba_kotor": 93812341634.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -50542060387.0,
+    "beban_pajak": -5901597047.0,
+    "laba_bersih": -24608922265.0,
+    "laba_induk": -24608922265.0,
+    "eps_basic": -37.15,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -73004310528,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 44101915132.0,
+    "dividen_dibayar": 28217658600.0
+  }
+}

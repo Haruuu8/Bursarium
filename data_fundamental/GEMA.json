@@ -1,0 +1,102 @@
+{
+  "kode": "GEMA",
+  "nama": "PT Gema Grahasarana Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 69.0,
+  "update": "2026-11-09 16:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -1.5046422430823906e-07,
+    "roe": -0.05327448873206757,
+    "eps": null,
+    "eps_annualized": 11.626666666666667,
+    "de": 1.8609047529416896,
+    "margin_net": 0.03112389583482829,
+    "current_ratio": 1.095471660071317,
+    "roa": -18751.74439848275,
+    "bv": 267910973.71321228,
+    "pcf": null,
+    "div_yield": 3399489.985752271,
+    "payout_ratio": 20174725.546178903
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.79386670191e+17,
+      "2025-Q2": 3.55076488691e+17,
+      "2025-Q3": -7.33423444263527e+17,
+      "2026-Q1": 3.3675775664e+17,
+      "2026-Q2": 3.7668937784099994e+17,
+      "2026-Q3": -7.12377181597989e+17
+    },
+    "eps": {
+      "2025-Q1": 1.64,
+      "2025-Q2": 7.06,
+      "2025-Q3": -5.53,
+      "2026-Q1": -4.5,
+      "2026-Q2": -1.44,
+      "2026-Q3": 14.66
+    },
+    "net_income": {
+      "2025-Q1": 2623834073000000.0,
+      "2025-Q2": 1.1297784132e+16,
+      "2025-Q3": -8850669121000000.0,
+      "2026-Q1": -7193924433000000.0,
+      "2026-Q2": -2301847140000000.0,
+      "2026-Q3": -4447253086000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 110192992256,
+    "enterprise_value": 533487517696,
+    "shares_outstanding": 1597000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3183,
+    "vol_trend": 0.714,
+    "price_chg_20d": -22.47
+  },
+  "neraca": {
+    "aset": 1215550580022.0,
+    "aset_lancar": 758351064358.0,
+    "kas": 63149585301.0,
+    "piutang_usaha": 145942786547.0,
+    "persediaan": 218672085529.0,
+    "aset_tetap": 354301689334.0,
+    "liabilitas": 796195216544.0,
+    "liabilitas_jangka_pendek": 692259865772.0,
+    "liabilitas_jangka_panjang": 103935350772.0,
+    "utang_usaha": 145942786547.0,
+    "utang_bank": 372937360807.0,
+    "ekuitas": 427853825020.0,
+    "ekuitas_induk": 427853825020.0,
+    "modal_saham": null,
+    "saldo_laba": 277263907211.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1069952883011.0,
+    "beban_pokok": 818785720177.0,
+    "laba_kotor": 251167162834.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1054536044.0,
+    "beban_pajak": -15021106472.0,
+    "laba_bersih": -13943024659.0,
+    "laba_induk": -13943024659.0,
+    "eps_basic": 8.72,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -12798995456,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12261484988.0,
+    "dividen_dibayar": 3746000000.0
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "kode": "LPPF",
+  "nama": "PT MDS Retailing Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 1610.0,
+  "update": "2026-11-09 16:52",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 403.11645511906806,
+    "roe": 1.7997525617624703,
+    "eps": 0.00046476643480877094,
+    "eps_annualized": 390.66666666666663,
+    "de": 10.780479009359379,
+    "margin_net": 0.0001163695637630057,
+    "current_ratio": 0.6144035427274432,
+    "roa": 0.00015277414104575878,
+    "bv": 0.0002582390739055997,
+    "pcf": 1368.3614453588718,
+    "div_yield": 24.77495445296236,
+    "payout_ratio": 102.1015614401094
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1024568000000.0,
+      "2026-Q1": 2488328000000.0,
+      "2026-Q2": 1011375000000.0,
+      "2026-Q3": 1051070000000.0
+    },
+    "eps": {
+      "2025-Q3": -1.0,
+      "2026-Q1": 311.0,
+      "2026-Q2": -19.0,
+      "2026-Q3": 1.0
+    },
+    "net_income": {
+      "2025-Q3": -2889000.0,
+      "2026-Q1": 692093000.0,
+      "2026-Q2": -40723000.0,
+      "2026-Q3": 319000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1884056715264,
+    "enterprise_value": 5700658397184,
+    "shares_outstanding": 1395970000000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1565,
+    "vol_trend": 0.97,
+    "price_chg_20d": 0.63
+  },
+  "neraca": {
+    "aset": 4246792.0,
+    "aset_lancar": 1172642.0,
+    "kas": 143748.0,
+    "piutang_usaha": 14998.0,
+    "persediaan": 742638.0,
+    "aset_tetap": 20721.0,
+    "liabilitas": 3886298.0,
+    "liabilitas_jangka_pendek": 1908586.0,
+    "liabilitas_jangka_panjang": 1977712.0,
+    "utang_usaha": 14998.0,
+    "utang_bank": 100000.0,
+    "ekuitas": 360494.0,
+    "ekuitas_induk": 360494.0,
+    "modal_saham": null,
+    "saldo_laba": 50857.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4550773.0,
+    "beban_pokok": 1608725.0,
+    "laba_kotor": 2942048.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 804785.0,
+    "beban_pajak": -153096.0,
+    "laba_bersih": 651689.0,
+    "laba_induk": 651689.0,
+    "eps_basic": 293.0,
+    "eps_diluted": 293.0
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1642483941376,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 20721.0,
+    "dividen_dibayar": 556820.0
+  }
+}

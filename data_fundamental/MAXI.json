@@ -1,0 +1,93 @@
+{
+  "kode": "MAXI",
+  "nama": "PT Maxindo Karya Anugerah Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 16.0,
+  "update": "2026-11-09 15:33",
+  "periode_terbaru": "2026-tw2",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.0372455897589135e-06,
+    "roe": -0.12625623455021473,
+    "eps": null,
+    "eps_annualized": -3.4,
+    "de": 1.3082336994332233,
+    "margin_net": -0.22091316633127597,
+    "current_ratio": 0.6264133472124017,
+    "roa": -0.05469820260453541,
+    "bv": 13495132.644551829,
+    "pcf": 1.761367085264793e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.8849614473e+16,
+      "2026-Q1": 3.6538874815e+16,
+      "2026-Q2": 3.7581276292e+16
+    },
+    "eps": {
+      "2025-Q1": 0.85,
+      "2026-Q1": -3.57,
+      "2026-Q2": 1.87
+    },
+    "net_income": {
+      "2025-Q1": 2001473864000000.0,
+      "2026-Q1": -8417127920000000.0,
+      "2026-Q2": -7956989350000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 153761595392,
+    "enterprise_value": 290392965120,
+    "shares_outstanding": 9610099981
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2907,
+    "vol_trend": 1.279,
+    "price_chg_20d": -42.86
+  },
+  "neraca": {
+    "aset": 299353845105.0,
+    "aset_lancar": 51759219243.0,
+    "kas": 2921998003.0,
+    "piutang_usaha": 23260095221.0,
+    "persediaan": 12640823771.0,
+    "aset_tetap": 243384482169.0,
+    "liabilitas": 169664271134.0,
+    "liabilitas_jangka_pendek": 82627899730.0,
+    "liabilitas_jangka_panjang": 87036371404.0,
+    "utang_usaha": 23260095221.0,
+    "utang_bank": 36635122276.0,
+    "ekuitas": 129689573971.0,
+    "ekuitas_induk": 129689573971.0,
+    "modal_saham": null,
+    "saldo_laba": 9000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 74120151107.0,
+    "beban_pokok": 68859506902.0,
+    "laba_kotor": 5260644205.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -16374117270.0,
+    "beban_pajak": null,
+    "laba_bersih": -16374117270.0,
+    "laba_induk": -16374117270.0,
+    "eps_basic": -1.7,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 8729673728,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": -9462710512.0,
+    "dividen_dibayar": null
+  }
+}

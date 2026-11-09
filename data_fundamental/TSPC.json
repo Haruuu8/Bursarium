@@ -1,0 +1,102 @@
+{
+  "kode": "TSPC",
+  "nama": "PT Tempo Scan Pacific Tbk",
+  "sektor": "Industrials",
+  "industri": "Conglomerates",
+  "harga": 2250.0,
+  "update": "2026-11-09 17:15",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 1.0132097759649805,
+    "ps": 0.6983224359529806,
+    "roe": -69897.04763754338,
+    "eps": null,
+    "eps_annualized": 310.66666666666663,
+    "de": 0.3994157357217864,
+    "margin_net": -48174.30479851377,
+    "current_ratio": 2.9473898325176293,
+    "roa": -48398.62164040248,
+    "bv": 2220.66550617033,
+    "pcf": 6.470228876939455e-05,
+    "div_yield": 2409705.1476545166,
+    "payout_ratio": 17452263.67668239
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3275226666779.0,
+      "2025-Q2": 3323485004419.0,
+      "2025-Q3": 3535168451218.0,
+      "2026-Q1": 3413260289082.0,
+      "2026-Q2": 3696672310851.0,
+      "2026-Q3": 3885714733326.0
+    },
+    "eps": {
+      "2025-Q1": 91.0,
+      "2025-Q2": 65.0,
+      "2025-Q3": 96.0,
+      "2026-Q1": 78.0,
+      "2026-Q2": 94.0,
+      "2026-Q3": 61.0
+    },
+    "net_income": {
+      "2025-Q1": 4.0925356202e+17,
+      "2025-Q2": 2.9294521145699994e+17,
+      "2025-Q3": -7.010624634955959e+17,
+      "2026-Q1": 3.51810530431e+17,
+      "2026-Q2": 4.2296113592400006e+17,
+      "2026-Q3": -7.737211514318541e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 10147194732544,
+    "enterprise_value": 6997927788544,
+    "shares_outstanding": 4509864300
+  },
+  "akumulasi": {
+    "score": 2.4,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.075,
+    "vol_trend": 1.544,
+    "price_chg_20d": -14.07
+  },
+  "neraca": {
+    "aset": 14463468686639.0,
+    "aset_lancar": 10099461539584.0,
+    "kas": 4878851227977.0,
+    "piutang_usaha": 1522885647701.0,
+    "persediaan": 2862163231563.0,
+    "aset_tetap": 35171579722.0,
+    "liabilitas": 4000108687036.0,
+    "liabilitas_jangka_pendek": 3426578129625.0,
+    "liabilitas_jangka_panjang": 573530557411.0,
+    "utang_usaha": 1522885647701.0,
+    "utang_bank": 1193446540559.0,
+    "ekuitas": 10014900088519.0,
+    "ekuitas_induk": 10014900088519.0,
+    "modal_saham": null,
+    "saldo_laba": 45100000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10995647333259.0,
+    "beban_pokok": 7010672383658.0,
+    "laba_kotor": 3984974949601.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1284338325884.0,
+    "beban_pajak": -234367714959.0,
+    "laba_bersih": 1050514923146.0,
+    "laba_induk": 1050514923146.0,
+    "eps_basic": 233.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 156828991184.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 35171579722.0,
+    "dividen_dibayar": 244517472426.0
+  }
+}

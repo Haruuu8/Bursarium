@@ -1,0 +1,96 @@
+{
+  "kode": "MSJA",
+  "nama": "PT Multi Spunindo Jaya Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 432.0,
+  "update": "2026-11-09 15:42",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.03442023338285998,
+    "roe": 0.05187840289668736,
+    "eps": 737.8100899190199,
+    "eps_annualized": 0.0007066666666666666,
+    "de": 0.28581390679599494,
+    "margin_net": 0.05878610066491106,
+    "current_ratio": 2.425182262175174,
+    "roa": 0.03936948583792736,
+    "bv": 14221.912177757731,
+    "pcf": 4411.225685824628,
+    "div_yield": 205.7503902686377,
+    "payout_ratio": 125779483.86233701
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 15954153000000.0,
+      "2026-Q1": 15250665000000.0,
+      "2026-Q2": 20382076000000.0,
+      "2026-Q3": 20356864000000.0
+    },
+    "eps": {
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q3": 1215871000000.0,
+      "2026-Q1": 1100707000000.0,
+      "2026-Q2": 666322000000.0,
+      "2026-Q3": 1246393000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2476321013760,
+    "enterprise_value": 2659755229184,
+    "shares_outstanding": 5732224400
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3635,
+    "vol_trend": 0.489,
+    "price_chg_20d": -42.36
+  },
+  "neraca": {
+    "aset": 107425660.0,
+    "aset_lancar": 39080083.0,
+    "kas": 12578324.0,
+    "piutang_usaha": 14117547.0,
+    "persediaan": 10059274.0,
+    "aset_tetap": 318452.0,
+    "liabilitas": 23300462.0,
+    "liabilitas_jangka_pendek": 16114287.0,
+    "liabilitas_jangka_panjang": 7186175.0,
+    "utang_usaha": 14117547.0,
+    "utang_bank": 8801146.0,
+    "ekuitas": 81523192.0,
+    "ekuitas_induk": 81523192.0,
+    "modal_saham": null,
+    "saldo_laba": 2499029.0
+  },
+  "laba_rugi": {
+    "pendapatan": 55989605.0,
+    "beban_pokok": 46467121.0,
+    "laba_kotor": 9522484.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3915125.0,
+    "beban_pajak": -589418.0,
+    "laba_bersih": 3013422.0,
+    "laba_induk": 3013422.0,
+    "eps_basic": 0.00053,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 561368,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 318452.0,
+    "dividen_dibayar": 5095040.0
+  }
+}

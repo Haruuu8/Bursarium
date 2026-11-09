@@ -1,0 +1,96 @@
+{
+  "kode": "REAL",
+  "nama": "PT Repower Asia Indonesia Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Diversified",
+  "harga": 28.0,
+  "update": "2026-11-09 17:39",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.6532210340835014e-05,
+    "roe": 0.0009635309227010728,
+    "eps": null,
+    "eps_annualized": 0.0824,
+    "de": 0.005129469820321252,
+    "margin_net": 0.03217907129495481,
+    "current_ratio": 30.553479492269265,
+    "roa": 0.0009586112014362719,
+    "bv": 56563328.52503198,
+    "pcf": null,
+    "div_yield": 17857.1429890469,
+    "payout_ratio": 6067961.209870306
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1999801802000000.0,
+      "2026-Q1": 1500000000000000.0,
+      "2026-Q2": 4674490280000000.0,
+      "2026-Q3": 3060810811000000.0
+    },
+    "eps": {
+      "2025-Q3": -0.01,
+      "2026-Q1": -0.38,
+      "2026-Q2": 0.38,
+      "2026-Q3": 0.06
+    },
+    "net_income": {
+      "2025-Q3": -48359776000000.0,
+      "2026-Q1": -2537071291000000.0,
+      "2026-Q2": 2561617654000000.0,
+      "2026-Q3": 385348590000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 185741082624,
+    "enterprise_value": 191824723968,
+    "shares_outstanding": 6633610151
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.474,
+    "vol_trend": 0.79,
+    "price_chg_20d": -39.58
+  },
+  "neraca": {
+    "aset": 377144744875.0,
+    "aset_lancar": 50012119104.0,
+    "kas": 719144927.0,
+    "piutang_usaha": 5051595343.0,
+    "persediaan": null,
+    "aset_tetap": 17422554104.0,
+    "liabilitas": 1924674897.0,
+    "liabilitas_jangka_pendek": 1636871477.0,
+    "liabilitas_jangka_panjang": 287803420.0,
+    "utang_usaha": 5051595343.0,
+    "utang_bank": null,
+    "ekuitas": 375219070278.0,
+    "ekuitas_induk": 375219070278.0,
+    "modal_saham": null,
+    "saldo_laba": 120000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9235301091.0,
+    "beban_pokok": 5257652000.0,
+    "laba_kotor": 3977649091.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 654877180.0,
+    "beban_pajak": -244982527.0,
+    "laba_bersih": 409894953.0,
+    "laba_induk": 409894953.0,
+    "eps_basic": 0.0618,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -931373696,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": 33168051.0
+  }
+}

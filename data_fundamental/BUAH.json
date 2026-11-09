@@ -1,0 +1,102 @@
+{
+  "kode": "BUAH",
+  "nama": "PT Segar Kumala Indonesia Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Food Distribution",
+  "harga": 454.0,
+  "update": "2026-11-09 15:20",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.0006343864428955381,
+    "roe": 0.3318607425771874,
+    "eps": null,
+    "eps_annualized": 30.013333333333335,
+    "de": 1.8682695425384555,
+    "margin_net": -50.79802647800559,
+    "current_ratio": 1.4024866331675654,
+    "roa": 0.11570068212051172,
+    "bv": 109545090.6235,
+    "pcf": 7.601421321715112e-06,
+    "div_yield": 2753303.9647577093,
+    "payout_ratio": 41648156.37494446
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7.44561167196e+17,
+      "2025-Q2": -7.43124653765979e+17,
+      "2025-Q3": -1434125521892710.0,
+      "2026-Q1": 8.70031856816e+17,
+      "2026-Q2": -8.68209814183951e+17,
+      "2026-Q3": -1819221341463030.0
+    },
+    "eps": {
+      "2025-Q1": 3.71,
+      "2025-Q2": 17.95,
+      "2025-Q3": 27.69,
+      "2026-Q1": 5.81,
+      "2026-Q2": 5.09,
+      "2026-Q3": 11.61
+    },
+    "net_income": {
+      "2025-Q1": 3707382637000000.0,
+      "2025-Q2": 1.7954656005e+16,
+      "2025-Q3": 2.7689949421e+16,
+      "2026-Q1": 1.162084005e+16,
+      "2026-Q2": 1.0178430377e+16,
+      "2026-Q3": 2.3218210392e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 907999969280,
+    "enterprise_value": 724281458688,
+    "shares_outstanding": 2000000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1854,
+    "vol_trend": 1.003,
+    "price_chg_20d": -5.83
+  },
+  "neraca": {
+    "aset": 628409693940.0,
+    "aset_lancar": 556795452213.0,
+    "kas": 181331548159.0,
+    "piutang_usaha": 172894154790.0,
+    "persediaan": 133259293527.0,
+    "aset_tetap": 56153497395.0,
+    "liabilitas": 409319512693.0,
+    "liabilitas_jangka_pendek": 397005888716.0,
+    "liabilitas_jangka_panjang": 12313623977.0,
+    "utang_usaha": 172894154790.0,
+    "utang_bank": null,
+    "ekuitas": 219090181247.0,
+    "ekuitas_induk": 219090181247.0,
+    "modal_saham": null,
+    "saldo_laba": 10000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2821290585970.0,
+    "beban_pokok": 2623962063113.0,
+    "laba_kotor": 197328522857.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 58234917359.0,
+    "beban_pajak": -13217436540.0,
+    "laba_bersih": 45017480819.0,
+    "laba_induk": 45017480819.0,
+    "eps_basic": 22.51,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 119451344896,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 21141243432.0,
+    "dividen_dibayar": 25000000000.0
+  }
+}

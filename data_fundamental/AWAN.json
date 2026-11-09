@@ -1,0 +1,96 @@
+{
+  "kode": "AWAN",
+  "nama": "PT Era Digital Media Tbk",
+  "sektor": "Communication Services",
+  "industri": "Internet Content & Information",
+  "harga": 135.0,
+  "update": "2026-11-09 15:31",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.007281839252289486,
+    "roe": 0.032271563551706836,
+    "eps": 688.7167199417759,
+    "eps_annualized": 0.6726569901989325,
+    "de": 0.2960082582745519,
+    "margin_net": 0.03714906996281547,
+    "current_ratio": 2.67173112512247,
+    "roa": 0.02393022630287541,
+    "bv": 21341.287627365356,
+    "pcf": 4.978201595030026e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 17252931000000.0,
+      "2026-Q1": 15759393000000.0,
+      "2026-Q2": 17018083000000.0,
+      "2026-Q3": 13651993000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.69,
+      "2026-Q1": -0.12,
+      "2026-Q2": 0.53,
+      "2026-Q3": 0.09
+    },
+    "net_income": {
+      "2025-Q1": 2364009000000.0,
+      "2026-Q1": -397898000.0,
+      "2026-Q2": 1832583000.0,
+      "2026-Q3": 298248000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 463725002752,
+    "enterprise_value": 481376337920,
+    "shares_outstanding": 3435000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3454,
+    "vol_trend": 3.053,
+    "price_chg_20d": -11.11
+  },
+  "neraca": {
+    "aset": 98859990.0,
+    "aset_lancar": 48950926.0,
+    "kas": 1156248.0,
+    "piutang_usaha": 23277172.0,
+    "persediaan": null,
+    "aset_tetap": 27419281.0,
+    "liabilitas": 21699573.0,
+    "liabilitas_jangka_pendek": 18321801.0,
+    "liabilitas_jangka_panjang": 3377772.0,
+    "utang_usaha": 23277172.0,
+    "utang_bank": 11260049.0,
+    "ekuitas": 73307323.0,
+    "ekuitas_induk": 73307323.0,
+    "modal_saham": null,
+    "saldo_laba": 50000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 46429469.0,
+    "beban_pokok": 24082168.0,
+    "laba_kotor": 22347301.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3170598.0,
+    "beban_pajak": -990601.0,
+    "laba_bersih": 1732933.0,
+    "laba_induk": 1732933.0,
+    "eps_basic": 0.5044927426491994,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 9315110912,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6771345.0,
+    "dividen_dibayar": null
+  }
+}

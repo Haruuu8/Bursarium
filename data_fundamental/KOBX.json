@@ -1,0 +1,102 @@
+{
+  "kode": "KOBX",
+  "nama": "PT Kobexindo Tractors Tbk",
+  "sektor": "Industrials",
+  "industri": "Farm & Heavy Construction Machinery",
+  "harga": 144.0,
+  "update": "2026-11-09 16:48",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -3.638348137265839e-07,
+    "roe": -0.3965069388378698,
+    "eps": null,
+    "eps_annualized": -65.96,
+    "de": 6.549968468339611,
+    "margin_net": 0.19820542275650685,
+    "current_ratio": 0.6732220695316298,
+    "roa": -52459.39623925031,
+    "bv": 197844043.8028603,
+    "pcf": 1.7927669187619378e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.45764955588e+17,
+      "2025-Q2": 4.5487686525e+17,
+      "2025-Q3": -8.99420728805682e+17,
+      "2026-Q1": 4.59031671492e+17,
+      "2026-Q2": -4.58011774443067e+17,
+      "2026-Q3": -1018321260080365.0
+    },
+    "eps": {
+      "2025-Q1": -23.62,
+      "2025-Q2": -16.77,
+      "2025-Q3": -28.98,
+      "2026-Q1": -10.14,
+      "2026-Q2": -24.66,
+      "2026-Q3": -14.68
+    },
+    "net_income": {
+      "2025-Q1": -5.3682862772e+16,
+      "2025-Q2": -3.8111924921e+16,
+      "2025-Q3": -6.5851965134e+16,
+      "2026-Q1": -2.303994658e+16,
+      "2026-Q2": -5.6029365605e+16,
+      "2026-Q3": -3.334847614e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 327239991296,
+    "enterprise_value": 1568005423104,
+    "shares_outstanding": 2272500000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3796,
+    "vol_trend": 0.413,
+    "price_chg_20d": -15.79
+  },
+  "neraca": {
+    "aset": 3398242569281.0,
+    "aset_lancar": 1866583000306.0,
+    "kas": 30205741569.0,
+    "piutang_usaha": 560476148133.0,
+    "persediaan": 1160666821379.0,
+    "aset_tetap": 973813304783.0,
+    "liabilitas": 2944869684847.0,
+    "liabilitas_jangka_pendek": 2772611126080.0,
+    "liabilitas_jangka_panjang": 172258558767.0,
+    "utang_usaha": 560476148133.0,
+    "utang_bank": 995558740495.0,
+    "ekuitas": 449600589542.0,
+    "ekuitas_induk": 449600589542.0,
+    "modal_saham": null,
+    "saldo_laba": 1308244050.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1575788852635.0,
+    "beban_pokok": 1325883269531.0,
+    "laba_kotor": 249905583104.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -156752943025.0,
+    "beban_pajak": 44127717527.0,
+    "laba_bersih": -112417788325.0,
+    "laba_induk": -112417788325.0,
+    "eps_basic": -49.47,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 182533488640,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 53838031416.0,
+    "dividen_dibayar": null
+  }
+}

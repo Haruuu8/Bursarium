@@ -1,0 +1,102 @@
+{
+  "kode": "LUCK",
+  "nama": "PT Sentral Mitra Informatika Tbk",
+  "sektor": "Technology",
+  "industri": "Computer Hardware",
+  "harga": 85.0,
+  "update": "2026-11-09 17:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.128939141847982e-07,
+    "roe": 0.011998612748874938,
+    "eps": null,
+    "eps_annualized": 3.1999999999999997,
+    "de": 0.199048788406114,
+    "margin_net": 0.011932401884410573,
+    "current_ratio": 4.922425148701217,
+    "roa": 0.010014963952442175,
+    "bv": 164811766.7512903,
+    "pcf": 1.2608031008656814e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.2293300609e+16,
+      "2025-Q2": 1.6456261787e+16,
+      "2025-Q3": 2.6518024115e+16,
+      "2026-Q1": 5.6769537255e+16,
+      "2026-Q2": 1.6992640083e+16,
+      "2026-Q3": 1.8338323192e+16
+    },
+    "eps": {
+      "2025-Q1": -1.47,
+      "2025-Q2": -3.05,
+      "2025-Q3": -0.43,
+      "2026-Q1": 1.25,
+      "2026-Q2": 2.26,
+      "2026-Q3": -1.11
+    },
+    "net_income": {
+      "2025-Q1": -1055644459000000.0,
+      "2025-Q2": -2180654490000000.0,
+      "2025-Q3": -304167315000000.0,
+      "2026-Q1": 900571751000000.0,
+      "2026-Q2": 1608447265000000.0,
+      "2026-Q3": -789447794000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 60838719488,
+    "enterprise_value": 43615711232,
+    "shares_outstanding": 715749640
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2378,
+    "vol_trend": 0.419,
+    "price_chg_20d": -23.15
+  },
+  "neraca": {
+    "aset": 141328906796.0,
+    "aset_lancar": 76179803599.0,
+    "kas": 26489699434.0,
+    "piutang_usaha": 18746106892.0,
+    "persediaan": 13764676660.0,
+    "aset_tetap": 58947942000.0,
+    "liabilitas": 23480583855.0,
+    "liabilitas_jangka_pendek": 15476071509.0,
+    "liabilitas_jangka_panjang": 8004512346.0,
+    "utang_usaha": 18746106892.0,
+    "utang_bank": 7682877009.0,
+    "ekuitas": 117963962720.0,
+    "ekuitas_induk": 117963962720.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 92100500530.0,
+    "beban_pokok": 71153092497.0,
+    "laba_kotor": 20947408033.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 2021472531.0,
+    "beban_pajak": -294295321.0,
+    "laba_bersih": 1719571222.0,
+    "laba_induk": 1719571222.0,
+    "eps_basic": 2.4,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 4825394176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 941257890.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "SULI",
+  "nama": "PT SLJ Global Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Lumber & Wood Production",
+  "harga": 60.0,
+  "update": "2026-11-09 17:11",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0072178684041664725,
+    "roe": -0.00019437123599585972,
+    "eps": -1.8360461456103927,
+    "eps_annualized": -4.0533333333333334e-05,
+    "de": 2.4950901305418625,
+    "margin_net": -0.00022087232438321478,
+    "current_ratio": 0.30146193490321066,
+    "roa": -5.5615756695737945e-05,
+    "bv": 9446.07948909427,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3562380000000.0,
+      "2025-Q2": 3579588000000.0,
+      "2025-Q3": 3890517000000.0,
+      "2026-Q1": 3044209000000.0,
+      "2026-Q2": 2579375000000.0,
+      "2026-Q3": 760586000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.0,
+      "2025-Q2": -0.0,
+      "2025-Q3": -0.0,
+      "2026-Q1": -0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": -0.0
+    },
+    "net_income": {
+      "2025-Q1": 165258000.0,
+      "2025-Q2": -988382000.0,
+      "2025-Q3": -346294000.0,
+      "2026-Q1": -341472000.0,
+      "2026-Q2": -547722000.0,
+      "2026-Q3": -1033906000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 379246608384,
+    "enterprise_value": 385574174720,
+    "shares_outstanding": 1236022311
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.6868,
+    "vol_trend": 1.984,
+    "price_chg_20d": -20.78
+  },
+  "neraca": {
+    "aset": 40804875.0,
+    "aset_lancar": 6221342.0,
+    "kas": 506594.0,
+    "piutang_usaha": 773172.0,
+    "persediaan": 2553489.0,
+    "aset_tetap": 30384253.0,
+    "liabilitas": 29131587.0,
+    "liabilitas_jangka_pendek": 20637239.0,
+    "liabilitas_jangka_panjang": 8494348.0,
+    "utang_usaha": 773172.0,
+    "utang_bank": 2000000.0,
+    "ekuitas": 11675565.0,
+    "ekuitas_induk": 11675565.0,
+    "modal_saham": null,
+    "saldo_laba": 249593.0
+  },
+  "laba_rugi": {
+    "pendapatan": 6384170.0,
+    "beban_pokok": 7088691.0,
+    "laba_kotor": -704521.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -2410791.0,
+    "beban_pajak": 487577.0,
+    "laba_bersih": -1923100.0,
+    "laba_induk": -1923100.0,
+    "eps_basic": -3.04e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1683946,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 11614.0,
+    "dividen_dibayar": null
+  }
+}

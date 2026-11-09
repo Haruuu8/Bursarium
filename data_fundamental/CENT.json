@@ -1,0 +1,102 @@
+{
+  "kode": "CENT",
+  "nama": "PT Centratama Telekomunikasi Indonesia Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 62.0,
+  "update": "2026-11-09 16:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.9706535021096199,
+    "ps": 786.8491129009283,
+    "roe": -0.001205878218400384,
+    "eps": -0.07702485941515755,
+    "eps_annualized": -77.29333333333332,
+    "de": 12.971497036892744,
+    "margin_net": -0.9775313274537973,
+    "current_ratio": 0.07573897790891916,
+    "roa": -8.630987897833538e-05,
+    "bv": 63.87449266421962,
+    "pcf": 1.259511935563256,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 625602000.0,
+      "2025-Q2": 628815000.0,
+      "2025-Q3": 630115000.0,
+      "2026-Q1": 599206000.0,
+      "2026-Q2": 607551000.0,
+      "2026-Q3": 620238000.0
+    },
+    "eps": {
+      "2025-Q1": -21.09,
+      "2025-Q2": -7.08,
+      "2025-Q3": -19.06,
+      "2026-Q1": -14.51,
+      "2026-Q2": -28.99,
+      "2026-Q3": -14.47
+    },
+    "net_income": {
+      "2025-Q1": -657760000.0,
+      "2025-Q2": -220801000.0,
+      "2025-Q3": -594103000.0,
+      "2026-Q1": -451994000.0,
+      "2026-Q2": -904444000.0,
+      "2026-Q3": -451361000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1933374783488,
+    "enterprise_value": 25462898163712,
+    "shares_outstanding": 31183464900
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3589,
+    "vol_trend": 0.693,
+    "price_chg_20d": -39.78
+  },
+  "neraca": {
+    "aset": 27828819.0,
+    "aset_lancar": 1029530.0,
+    "kas": 247107.0,
+    "piutang_usaha": 699784.0,
+    "persediaan": 4726.0,
+    "aset_tetap": 23052153.0,
+    "liabilitas": 25836991.0,
+    "liabilitas_jangka_pendek": 13593133.0,
+    "liabilitas_jangka_panjang": 12243858.0,
+    "utang_usaha": 699784.0,
+    "utang_bank": 12143958.0,
+    "ekuitas": 1991828.0,
+    "ekuitas_induk": 1991828.0,
+    "modal_saham": null,
+    "saldo_laba": 1500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1826995.0,
+    "beban_pokok": 1126238.0,
+    "laba_kotor": 700757.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1642739.0,
+    "beban_pajak": -165060.0,
+    "laba_bersih": -1807799.0,
+    "laba_induk": -1807799.0,
+    "eps_basic": -57.97,
+    "eps_diluted": -57.97
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1535019057152,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 319039.0,
+    "dividen_dibayar": null
+  }
+}

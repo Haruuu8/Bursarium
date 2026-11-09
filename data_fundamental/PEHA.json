@@ -1,0 +1,102 @@
+{
+  "kode": "PEHA",
+  "nama": "PT Phapros Tbk",
+  "sektor": "Healthcare",
+  "industri": "Drug Manufacturers - Specialty & Generic",
+  "harga": 268.0,
+  "update": "2026-11-09 17:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00022246790823095616,
+    "roe": 0.08331914331124093,
+    "eps": null,
+    "eps_annualized": 50.666666666666664,
+    "de": 2.241663789437797,
+    "margin_net": 0.03657749812232668,
+    "current_ratio": 2.127596762240652,
+    "roa": 0.02547451295094933,
+    "bv": 528855.0107142857,
+    "pcf": 1.1244691086434682e-06,
+    "div_yield": 1820.8253375977258,
+    "payout_ratio": 9631.207706766918
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 200670566000000.0,
+      "2025-Q2": 257557801000000.0,
+      "2025-Q3": 225351995000000.0,
+      "2026-Q1": 221087724000000.0,
+      "2026-Q2": 261761947000000.0,
+      "2026-Q3": 303719567000000.0
+    },
+    "eps": {
+      "2025-Q1": -7.0,
+      "2025-Q2": 10.0,
+      "2025-Q3": 6.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 18.0,
+      "2026-Q3": 20.0
+    },
+    "net_income": {
+      "2025-Q1": -5748072000000.0,
+      "2025-Q2": 8131931000000.0,
+      "2025-Q3": 5351263000000.0,
+      "2026-Q1": 1532161000000.0,
+      "2026-Q2": 13761754000000.0,
+      "2026-Q3": 16368369000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 225119993856,
+    "enterprise_value": 760427249664,
+    "shares_outstanding": 840000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.504,
+    "vol_trend": 0.583,
+    "price_chg_20d": -8.33
+  },
+  "neraca": {
+    "aset": 1452963873.0,
+    "aset_lancar": 733221447.0,
+    "kas": 157542619.0,
+    "piutang_usaha": 122702701.0,
+    "persediaan": 176038729.0,
+    "aset_tetap": 439888859.0,
+    "liabilitas": 995832707.0,
+    "liabilitas_jangka_pendek": 344624254.0,
+    "liabilitas_jangka_panjang": 651208453.0,
+    "utang_usaha": 122702701.0,
+    "utang_bank": 56963208.0,
+    "ekuitas": 444238209.0,
+    "ekuitas_induk": 444238209.0,
+    "modal_saham": null,
+    "saldo_laba": 493558617.0
+  },
+  "laba_rugi": {
+    "pendapatan": 786569238.0,
+    "beban_pokok": 384042717.0,
+    "laba_kotor": 402526521.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 48651997.0,
+    "beban_pajak": -17050938.0,
+    "laba_bersih": 31662284.0,
+    "laba_induk": 31662284.0,
+    "eps_basic": 38.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 200201142272,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12684544.0,
+    "dividen_dibayar": 4099042.0
+  }
+}

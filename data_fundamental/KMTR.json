@@ -1,0 +1,102 @@
+{
+  "kode": "KMTR",
+  "nama": "PT Kirana Megatara Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 206.0,
+  "update": "2026-11-09 17:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7866460869195602,
+    "ps": 0.12780713671994093,
+    "roe": 9145.735613916051,
+    "eps": null,
+    "eps_annualized": 1.88,
+    "de": 1.5943202034650028,
+    "margin_net": 1485.9163497392803,
+    "current_ratio": 1.3109494544897036,
+    "roa": 3502.333319291141,
+    "bv": 261.8712575138823,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3596311474645.0,
+      "2025-Q2": 3415964801825.0,
+      "2025-Q3": 3130493544116.0,
+      "2026-Q1": 2830653261171.0,
+      "2026-Q2": 3302692647713.0,
+      "2026-Q3": 3977717454596.0
+    },
+    "eps": {
+      "2025-Q1": 14.62,
+      "2025-Q2": 9.78,
+      "2025-Q3": 0.98,
+      "2026-Q1": -0.77,
+      "2026-Q2": -1.25,
+      "2026-Q3": 3.43
+    },
+    "net_income": {
+      "2025-Q1": 1.20112105626e+17,
+      "2025-Q2": 8.0347424671e+16,
+      "2025-Q3": 8064149662000000.0,
+      "2026-Q1": -6310618612000000.0,
+      "2026-Q2": -1.0301939297e+16,
+      "2026-Q3": 2.8224254152e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1692365488128,
+    "enterprise_value": 4321163083776,
+    "shares_outstanding": 8215366379
+  },
+  "akumulasi": {
+    "score": 5.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1828,
+    "vol_trend": 1.822,
+    "price_chg_20d": -14.29
+  },
+  "neraca": {
+    "aset": 5617924997779.0,
+    "aset_lancar": 4341212366728.0,
+    "kas": 514737297417.0,
+    "piutang_usaha": 789455376552.0,
+    "persediaan": 1917839818576.0,
+    "aset_tetap": 392499142.0,
+    "liabilitas": 3429969985014.0,
+    "liabilitas_jangka_pendek": 3311502477735.0,
+    "liabilitas_jangka_panjang": 118467507279.0,
+    "utang_usaha": 789455376552.0,
+    "utang_bank": 3123378947375.0,
+    "ekuitas": 2151368324606.0,
+    "ekuitas_induk": 2151368324606.0,
+    "modal_saham": null,
+    "saldo_laba": 60000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 10111063363480.0,
+    "beban_pokok": 9614335142075.0,
+    "laba_kotor": 496728221405.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 15914017200.0,
+    "beban_pajak": -9447694585.0,
+    "laba_bersih": 11611696243.0,
+    "laba_induk": 11611696243.0,
+    "eps_basic": 1.41,
+    "eps_diluted": 1.41
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -521788096512,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 392499142.0,
+    "dividen_dibayar": null
+  }
+}

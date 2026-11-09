@@ -1,0 +1,102 @@
+{
+  "kode": "TIRA",
+  "nama": "PT Tira Austenite Tbk",
+  "sektor": null,
+  "industri": null,
+  "harga": 278.0,
+  "update": "2026-11-09 17:13",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.307014274075137e-07,
+    "roe": 0.010464599382279251,
+    "eps": null,
+    "eps_annualized": 4.546666666666667,
+    "de": 1.3787902147871471,
+    "margin_net": 0.006328015654895706,
+    "current_ratio": 1.1527811230874432,
+    "roa": 0.004399126630515259,
+    "bv": 316766669.3605442,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.3613462967e+16,
+      "2025-Q2": 7.1095727216e+16,
+      "2025-Q3": 8.0466276271e+16,
+      "2026-Q1": 6.7403739595e+16,
+      "2026-Q2": 6.830543497e+16,
+      "2026-Q3": 9.1839548857e+16
+    },
+    "eps": {
+      "2025-Q1": 3.6,
+      "2025-Q2": -2.94,
+      "2025-Q3": -0.11,
+      "2026-Q1": 2.7,
+      "2026-Q2": -0.09,
+      "2026-Q3": 0.8
+    },
+    "net_income": {
+      "2025-Q1": -2098444333000000.0,
+      "2025-Q2": 2565262107000000.0,
+      "2025-Q3": -63874663000000.0,
+      "2026-Q1": 1619955529000000.0,
+      "2026-Q2": -53569362000000.0,
+      "2026-Q3": 446612236000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 163464003584,
+    "enterprise_value": null,
+    "shares_outstanding": 588000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1935,
+    "vol_trend": 0.742,
+    "price_chg_20d": -9.27
+  },
+  "neraca": {
+    "aset": 443070614626.0,
+    "aset_lancar": 233642509009.0,
+    "kas": 11458856273.0,
+    "piutang_usaha": 55132004985.0,
+    "persediaan": 120488716384.0,
+    "aset_tetap": 185303072384.0,
+    "liabilitas": 256811813042.0,
+    "liabilitas_jangka_pendek": 202677250980.0,
+    "liabilitas_jangka_panjang": 54134562062.0,
+    "utang_usaha": 55132004985.0,
+    "utang_bank": 137065887129.0,
+    "ekuitas": 186258801584.0,
+    "ekuitas_induk": 186258801584.0,
+    "modal_saham": null,
+    "saldo_laba": 480372551.0
+  },
+  "laba_rugi": {
+    "pendapatan": 227548723422.0,
+    "beban_pokok": 145797323916.0,
+    "laba_kotor": 81751399506.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1738181813.0,
+    "beban_pajak": 274816590.0,
+    "laba_bersih": 2012998403.0,
+    "laba_induk": 2012998403.0,
+    "eps_basic": 3.41,
+    "eps_diluted": 3.41
+  },
+  "arus_kas": {
+    "arus_kas_operasi": null,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4130324717.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "MLIA",
+  "nama": "PT Mulia Industrindo Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 179.0,
+  "update": "2026-11-09 16:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00029154031321326773,
+    "roe": -0.03265536864979127,
+    "eps": null,
+    "eps_annualized": -0.032799999999999996,
+    "de": 0.4248593956932661,
+    "margin_net": -0.042090997086093616,
+    "current_ratio": 1.6989330157863167,
+    "roa": -0.022918309517763177,
+    "bv": 791387.2294784581,
+    "pcf": 9.96846087126999e-06,
+    "div_yield": 3898.35273650118,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 991944129000000.0,
+      "2025-Q2": 1009608138000000.0,
+      "2025-Q3": 1068508901000000.0,
+      "2026-Q1": 885458118000000.0,
+      "2026-Q2": 1064780731000000.0,
+      "2026-Q3": 1042731731000000.0
+    },
+    "eps": {
+      "2025-Q1": 4.09,
+      "2025-Q2": 0.31,
+      "2025-Q3": -1.24,
+      "2026-Q1": -7.08,
+      "2026-Q2": -16.91,
+      "2026-Q3": 23.97
+    },
+    "net_income": {
+      "2025-Q1": 27064710000000.0,
+      "2025-Q2": 2019801000000.0,
+      "2025-Q3": -8182995000000.0,
+      "2026-Q1": -46824612000000.0,
+      "2026-Q2": -111878917000000.0,
+      "2026-Q3": -4065197000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1184085049344,
+    "enterprise_value": 1847373725696,
+    "shares_outstanding": 6615000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.326,
+    "vol_trend": 0.525,
+    "price_chg_20d": -15.09
+  },
+  "neraca": {
+    "aset": 7459176728.0,
+    "aset_lancar": 2367045660.0,
+    "kas": 218741359.0,
+    "piutang_usaha": 756934398.0,
+    "persediaan": 1283007098.0,
+    "aset_tetap": 27159556.0,
+    "liabilitas": 2224150205.0,
+    "liabilitas_jangka_pendek": 1393254259.0,
+    "liabilitas_jangka_panjang": 830895946.0,
+    "utang_usaha": 756934398.0,
+    "utang_bank": 390338345.0,
+    "ekuitas": 5235026523.0,
+    "ekuitas_induk": 5235026523.0,
+    "modal_saham": null,
+    "saldo_laba": 132300000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2992970580.0,
+    "beban_pokok": 2756736216.0,
+    "laba_kotor": 236234364.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -199010185.0,
+    "beban_pajak": 36241459.0,
+    "laba_bersih": -162768726.0,
+    "laba_induk": -162768726.0,
+    "eps_basic": -0.0246,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 118783131648,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 27159556.0,
+    "dividen_dibayar": 46159810.0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "WAPO",
+  "nama": "PT Wahana Pronatural Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 159.0,
+  "update": "2026-11-09 17:17",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 6.818250852206012e-07,
+    "roe": -0.10032826251858888,
+    "eps": null,
+    "eps_annualized": -0.0152,
+    "de": 0.5386607085130328,
+    "margin_net": -0.020415043713614484,
+    "current_ratio": 1.5295311683815558,
+    "roa": -0.06520492917216719,
+    "bv": 47451633.98685384,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7.1256865466e+16,
+      "2025-Q2": 3.66333180383e+17,
+      "2025-Q3": -4.36420332713906e+17,
+      "2026-Q1": 2.06545940932e+17,
+      "2026-Q2": 4.64425051342e+17,
+      "2026-Q3": 5.4829679952e+16
+    },
+    "eps": {
+      "2025-Q1": -0.01,
+      "2025-Q2": -0.01,
+      "2025-Q3": -0.04,
+      "2026-Q1": 0.01,
+      "2026-Q2": 0.0,
+      "2026-Q3": -0.02
+    },
+    "net_income": {
+      "2025-Q1": -1075869687000000.0,
+      "2025-Q2": -637906432000000.0,
+      "2025-Q3": -4583662100000000.0,
+      "2026-Q1": 616080414000000.0,
+      "2026-Q2": 252665480000000.0,
+      "2026-Q3": -2192796075000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 197306777600,
+    "enterprise_value": 186769145856,
+    "shares_outstanding": 1240923111
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5477,
+    "vol_trend": 0.477,
+    "price_chg_20d": -48.68
+  },
+  "neraca": {
+    "aset": 90602234463.0,
+    "aset_lancar": 46505619797.0,
+    "kas": 3818869988.0,
+    "piutang_usaha": 8081252592.0,
+    "persediaan": 12574540176.0,
+    "aset_tetap": 5920229150.0,
+    "liabilitas": 31718405194.0,
+    "liabilitas_jangka_pendek": 30405146857.0,
+    "liabilitas_jangka_panjang": 1313258337.0,
+    "utang_usaha": 8081252592.0,
+    "utang_bank": null,
+    "ekuitas": 58883829269.0,
+    "ekuitas_induk": 58883829269.0,
+    "modal_saham": null,
+    "saldo_laba": -78613475964.0
+  },
+  "laba_rugi": {
+    "pendapatan": 725800672226.0,
+    "beban_pokok": 708271964576.0,
+    "laba_kotor": 17528707650.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1255588573.0,
+    "beban_pajak": -68461608.0,
+    "laba_bersih": -1324050181.0,
+    "laba_induk": -1324050181.0,
+    "eps_basic": -0.0114,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1910917376,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 240000000.0,
+    "dividen_dibayar": null
+  }
+}

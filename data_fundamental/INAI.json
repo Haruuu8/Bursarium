@@ -1,0 +1,102 @@
+{
+  "kode": "INAI",
+  "nama": "PT Indal Aluminium Industry Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Aluminum",
+  "harga": 105.0,
+  "update": "2026-11-09 16:39",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7.820817584156207e-08,
+    "roe": -0.9899787746061071,
+    "eps": null,
+    "eps_annualized": 83.05333333333333,
+    "de": 16.56484237233946,
+    "margin_net": -0.07722761679070876,
+    "current_ratio": 0.7331716684763795,
+    "roa": -56361.38108276413,
+    "bv": 104733084.05776516,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.07337218e+17,
+      "2025-Q2": 1.65833515268e+17,
+      "2025-Q3": 2.1034111232099994e+17,
+      "2026-Q1": 1.78272295791e+17,
+      "2026-Q2": 2.47926297531e+17,
+      "2026-Q3": 2.14113046248e+17
+    },
+    "eps": {
+      "2025-Q1": -34.52,
+      "2025-Q2": -34.48,
+      "2025-Q3": 179.46,
+      "2026-Q1": -30.52,
+      "2026-Q2": -8.48,
+      "2026-Q3": 101.29
+    },
+    "net_income": {
+      "2025-Q1": -2.1874450564e+16,
+      "2025-Q2": -2.1886550307e+16,
+      "2025-Q3": -2.6225978655e+16,
+      "2026-Q1": -1.9337411117e+16,
+      "2026-Q2": -5212150944000000.0,
+      "2026-Q3": -1.4918344029e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 66528002048,
+    "enterprise_value": 723386892288,
+    "shares_outstanding": 633600000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5345,
+    "vol_trend": 0.129,
+    "price_chg_20d": -33.33
+  },
+  "neraca": {
+    "aset": 1165583303371.0,
+    "aset_lancar": 742906412937.0,
+    "kas": 30795637292.0,
+    "piutang_usaha": 145865980877.0,
+    "persediaan": 381104726820.0,
+    "aset_tetap": 7457056161.0,
+    "liabilitas": 1099224421312.0,
+    "liabilitas_jangka_pendek": 1013277578607.0,
+    "liabilitas_jangka_panjang": 85946842705.0,
+    "utang_usaha": 145865980877.0,
+    "utang_bank": 382181012009.0,
+    "ekuitas": 66358882059.0,
+    "ekuitas_induk": 66358882059.0,
+    "modal_saham": null,
+    "saldo_laba": -316727320103.0
+  },
+  "laba_rugi": {
+    "pendapatan": 640311639570.0,
+    "beban_pokok": 563402765417.0,
+    "laba_kotor": 76908874153.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -38003314285.0,
+    "beban_pajak": -1464591805.0,
+    "laba_bersih": -39467906090.0,
+    "laba_induk": -39467906090.0,
+    "eps_basic": 62.29,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -40895209472,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7457056161.0,
+    "dividen_dibayar": null
+  }
+}

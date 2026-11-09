@@ -1,0 +1,102 @@
+{
+  "kode": "YPAS",
+  "nama": "PT Yanaprima Hastapersada Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Packaging & Containers",
+  "harga": 800.0,
+  "update": "2026-11-09 17:18",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.275690185863423e-06,
+    "roe": 0.21321420605324085,
+    "eps": null,
+    "eps_annualized": 63.14666666666666,
+    "de": 0.8034473588237943,
+    "margin_net": 0.0823626236236434,
+    "current_ratio": 2.4065133336530065,
+    "roa": 0.1182259105096912,
+    "bv": 242247223.13322926,
+    "pcf": 1.7391033407016875e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.6863802303e+16,
+      "2025-Q2": 8.5070015407e+16,
+      "2025-Q3": 9.1064168842e+16,
+      "2026-Q1": 8.6418815228e+16,
+      "2026-Q2": 1.10027488346e+17,
+      "2026-Q3": 1.31400072732e+17
+    },
+    "eps": {
+      "2025-Q1": -6.5,
+      "2025-Q2": 1.09,
+      "2025-Q3": 4.29,
+      "2026-Q1": -1.07,
+      "2026-Q2": 24.35,
+      "2026-Q3": 24.08
+    },
+    "net_income": {
+      "2025-Q1": -4346570467000000.0,
+      "2025-Q2": 735560470000000.0,
+      "2025-Q3": 2863458930000000.0,
+      "2026-Q1": -715210540000000.0,
+      "2026-Q2": 1.6265494934e+16,
+      "2026-Q3": 1.6088828238e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 534400040960,
+    "enterprise_value": 559571861504,
+    "shares_outstanding": 668000089
+  },
+  "akumulasi": {
+    "score": 1.8,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1136,
+    "vol_trend": 2.63,
+    "price_chg_20d": -33.19
+  },
+  "neraca": {
+    "aset": 291835955530.0,
+    "aset_lancar": 196467628099.0,
+    "kas": 5408237593.0,
+    "piutang_usaha": 81122200577.0,
+    "persediaan": 78892740965.0,
+    "aset_tetap": 1449868727.0,
+    "liabilitas": 130014788917.0,
+    "liabilitas_jangka_pendek": 81639949944.0,
+    "liabilitas_jangka_panjang": 48374838973.0,
+    "utang_usaha": 81122200577.0,
+    "utang_bank": 40600000000.0,
+    "ekuitas": 161821166613.0,
+    "ekuitas_induk": 161821166613.0,
+    "modal_saham": null,
+    "saldo_laba": 14000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 327846376306.0,
+    "beban_pokok": 264064378970.0,
+    "laba_kotor": 63781997336.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 40656076282.0,
+    "beban_pajak": -9016963650.0,
+    "laba_bersih": 31639112632.0,
+    "laba_induk": 31639112632.0,
+    "eps_basic": 47.36,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 30728482816,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1449868727.0,
+    "dividen_dibayar": null
+  }
+}

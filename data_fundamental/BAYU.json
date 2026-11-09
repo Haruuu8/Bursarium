@@ -1,0 +1,102 @@
+{
+  "kode": "BAYU",
+  "nama": "PT Bayu Buana Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 1115.0,
+  "update": "2026-11-09 16:10",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.0003018419756917628,
+    "roe": 0.17984869363982406,
+    "eps": null,
+    "eps_annualized": 308.4133333333333,
+    "de": 0.6526380844163657,
+    "margin_net": -83.66677045235323,
+    "current_ratio": 2.116876449410768,
+    "roa": 108825.21426543199,
+    "bv": 1718466025.387861,
+    "pcf": 1.077968082044963e-05,
+    "div_yield": 8968609.865470853,
+    "payout_ratio": 32424019.71380399
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.4460658372e+17,
+      "2025-Q2": -6.43298376118649e+17,
+      "2025-Q3": -1306251520933666.0,
+      "2026-Q1": 5.54719143296e+17,
+      "2026-Q2": -5.53594613052234e+17,
+      "2026-Q3": -1123071301125654.0
+    },
+    "eps": {
+      "2025-Q1": 65.79,
+      "2025-Q2": 79.91,
+      "2025-Q3": 77.76,
+      "2026-Q1": 44.17,
+      "2026-Q2": 165.75,
+      "2026-Q3": 21.39
+    },
+    "net_income": {
+      "2025-Q1": 2.3236873152e+16,
+      "2025-Q2": 2.8226542434e+16,
+      "2025-Q3": 2.7463341458e+16,
+      "2026-Q1": 1.5602901306e+16,
+      "2026-Q2": 5.8544838096e+16,
+      "2026-Q3": 7556700276000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 393841147904,
+    "enterprise_value": -60066852864,
+    "shares_outstanding": 353220780
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4684,
+    "vol_trend": 3.217,
+    "price_chg_20d": -12.21
+  },
+  "neraca": {
+    "aset": 1003147863047.0,
+    "aset_lancar": 723265736583.0,
+    "kas": 466270750486.0,
+    "piutang_usaha": 189641190032.0,
+    "persediaan": null,
+    "aset_tetap": 221010847594.0,
+    "liabilitas": 396149953156.0,
+    "liabilitas_jangka_pendek": 341666485441.0,
+    "liabilitas_jangka_panjang": 54483467715.0,
+    "utang_usaha": 189641190032.0,
+    "utang_bank": null,
+    "ekuitas": 606997909891.0,
+    "ekuitas_induk": 606997909891.0,
+    "modal_saham": null,
+    "saldo_laba": 951583000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1458942640346.0,
+    "beban_pokok": 1342907916347.0,
+    "laba_kotor": 116034723999.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 90884563000.0,
+    "beban_pajak": -9180123322.0,
+    "laba_bersih": 81704439678.0,
+    "laba_induk": 81704439678.0,
+    "eps_basic": 231.31,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 36535513088,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 15397758816.0,
+    "dividen_dibayar": 35322078000.0
+  }
+}

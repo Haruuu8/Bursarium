@@ -1,0 +1,96 @@
+{
+  "kode": "TOOL",
+  "nama": "PT Rohartindo Nusantara Luas Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 40.0,
+  "update": "2026-11-09 15:19",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.6596388038081217e-06,
+    "roe": -0.0679229694456599,
+    "eps": null,
+    "eps_annualized": -5.92,
+    "de": 0.11932942181728085,
+    "margin_net": -0.24309150207226846,
+    "current_ratio": 9.338678812982272,
+    "roa": -0.06068090079272507,
+    "bv": 86258027.74530546,
+    "pcf": 0.001172099371543699,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1.2903561033e+16,
+      "2026-Q1": 1.0155126049e+16,
+      "2026-Q2": 1.4741174564e+16,
+      "2026-Q3": 1.1608969126e+16
+    },
+    "eps": {
+      "2025-Q3": 4.74,
+      "2026-Q1": -2.37,
+      "2026-Q2": -0.86,
+      "2026-Q3": -1.21
+    },
+    "net_income": {
+      "2025-Q3": -2905184859000000.0,
+      "2026-Q1": -4863467828000000.0,
+      "2026-Q2": -1767041144000000.0,
+      "2026-Q3": -2475173057000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 82000814080,
+    "enterprise_value": 98993242112,
+    "shares_outstanding": 2050020320
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3315,
+    "vol_trend": 0.116,
+    "price_chg_20d": -30.36
+  },
+  "neraca": {
+    "aset": 197934881175.0,
+    "aset_lancar": 76722571989.0,
+    "kas": 1252410790.0,
+    "piutang_usaha": 9539683890.0,
+    "persediaan": 56976949291.0,
+    "aset_tetap": 10452822738.0,
+    "liabilitas": 21101106341.0,
+    "liabilitas_jangka_pendek": 8215570267.0,
+    "liabilitas_jangka_panjang": 12885536074.0,
+    "utang_usaha": 9539683890.0,
+    "utang_bank": 5513924874.0,
+    "ekuitas": 176830709641.0,
+    "ekuitas_induk": 176830709641.0,
+    "modal_saham": null,
+    "saldo_laba": 450000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 36505269739.0,
+    "beban_pokok": 22229998965.0,
+    "laba_kotor": 14275270774.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -9111302769.0,
+    "beban_pajak": 3939259.0,
+    "laba_bersih": -9105682029.0,
+    "laba_induk": -9105682029.0,
+    "eps_basic": -4.44,
+    "eps_diluted": -4.44
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 69960632,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10452822738.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "TEBE",
+  "nama": "PT Dana Brata Luhur Tbk",
+  "sektor": "Industrials",
+  "industri": "Infrastructure Operations",
+  "harga": 1315.0,
+  "update": "2026-11-09 17:38",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0035774499900903083,
+    "roe": 0.05734156435804058,
+    "eps": null,
+    "eps_annualized": 63.93333333333334,
+    "de": 0.05044157282801885,
+    "margin_net": 0.13056204283165262,
+    "current_ratio": 12.559790998125111,
+    "roa": 0.054094217959087976,
+    "bv": 836950.1299610895,
+    "pcf": 1.782000131873251e-05,
+    "div_yield": 11908.175644686422,
+    "payout_ratio": 244930.93283778903
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 71275505000000.0,
+      "2025-Q2": 99656128000000.0,
+      "2025-Q3": 152446797000000.0,
+      "2026-Q1": 85026621000000.0,
+      "2026-Q2": 91867970000000.0,
+      "2026-Q3": 142999247000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.08,
+      "2025-Q2": 21.37,
+      "2025-Q3": 41.85,
+      "2026-Q1": 9.05,
+      "2026-Q2": 6.48,
+      "2026-Q3": 32.42
+    },
+    "net_income": {
+      "2025-Q1": 108806000.0,
+      "2025-Q2": 27460510000.0,
+      "2025-Q3": 53776218000.0,
+      "2026-Q1": 11631770000000.0,
+      "2026-Q2": 8329680000000.0,
+      "2026-Q3": 41654532000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1689774981120,
+    "enterprise_value": 1276908929024,
+    "shares_outstanding": 1285000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.366,
+    "vol_trend": 0.826,
+    "price_chg_20d": -52.14
+  },
+  "neraca": {
+    "aset": 1140043438.0,
+    "aset_lancar": 558685741.0,
+    "kas": 455304624.0,
+    "piutang_usaha": 63549145.0,
+    "persediaan": 10093282.0,
+    "aset_tetap": 516028873.0,
+    "liabilitas": 54248949.0,
+    "liabilitas_jangka_pendek": 44482089.0,
+    "liabilitas_jangka_panjang": 9766860.0,
+    "utang_usaha": 63549145.0,
+    "utang_bank": null,
+    "ekuitas": 1075480917.0,
+    "ekuitas_induk": 1075480917.0,
+    "modal_saham": null,
+    "saldo_laba": 25810000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 319893838.0,
+    "beban_pokok": 245161030.0,
+    "laba_kotor": 74732808.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 81277203.0,
+    "beban_pajak": -19298331.0,
+    "laba_bersih": 61615982.0,
+    "laba_induk": 61615982.0,
+    "eps_basic": 47.95,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 94824628224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4170417.0,
+    "dividen_dibayar": 201221375.0
+  }
+}

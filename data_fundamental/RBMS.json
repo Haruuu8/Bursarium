@@ -1,0 +1,102 @@
+{
+  "kode": "RBMS",
+  "nama": "PT Ristia Bintang Mahkotasejati Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 41.0,
+  "update": "2026-11-09 17:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.768876994150939e-08,
+    "roe": 0.02120326820057686,
+    "eps": null,
+    "eps_annualized": 2.4266666666666667,
+    "de": 0.5264069515362632,
+    "margin_net": 0.04750900686821863,
+    "current_ratio": 2.0076603203710386,
+    "roa": 0.013837021748729484,
+    "bv": 1926375212.273077,
+    "pcf": 3.253415394218021e-07,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.7985914096e+16,
+      "2025-Q2": 3.9262668559e+16,
+      "2025-Q3": 6.9336548373e+16,
+      "2026-Q1": 4.1435726132e+16,
+      "2026-Q2": 4.5487675906e+16,
+      "2026-Q3": 6.7272759975e+16
+    },
+    "eps": {
+      "2025-Q1": -6.7,
+      "2025-Q2": -1.74,
+      "2025-Q3": 4.64,
+      "2026-Q1": -4.61,
+      "2026-Q2": 0.2,
+      "2026-Q3": 6.23
+    },
+    "net_income": {
+      "2025-Q1": -1.101280658e+16,
+      "2025-Q2": -2856002984000000.0,
+      "2025-Q3": 7624022222000000.0,
+      "2026-Q1": -7573141207000000.0,
+      "2026-Q2": 326960522000000.0,
+      "2026-Q3": 1.0241975536e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 108904718336,
+    "enterprise_value": 186740064256,
+    "shares_outstanding": 260000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.297,
+    "vol_trend": 0.642,
+    "price_chg_20d": -16.33
+  },
+  "neraca": {
+    "aset": 767492981210.0,
+    "aset_lancar": 229613364488.0,
+    "kas": 52707831291.0,
+    "piutang_usaha": 42057162925.0,
+    "persediaan": null,
+    "aset_tetap": 311637533887.0,
+    "liabilitas": 263654898782.0,
+    "liabilitas_jangka_pendek": 114368632063.0,
+    "liabilitas_jangka_panjang": 149286266719.0,
+    "utang_usaha": 42057162925.0,
+    "utang_bank": 8568000000.0,
+    "ekuitas": 500857555191.0,
+    "ekuitas_induk": 500857555191.0,
+    "modal_saham": null,
+    "saldo_laba": 2300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 154196162013.0,
+    "beban_pokok": 67239563346.0,
+    "laba_kotor": 86956598667.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4482696631.0,
+    "beban_pajak": -1543941000.0,
+    "laba_bersih": 2995794851.0,
+    "laba_induk": 2995794851.0,
+    "eps_basic": 1.82,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 32765566976,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 31320452897.0,
+    "dividen_dibayar": null
+  }
+}

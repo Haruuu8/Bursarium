@@ -1,0 +1,102 @@
+{
+  "kode": "JSMR",
+  "nama": "PT Jasa Marga (Persero) Tbk",
+  "sektor": "Industrials",
+  "industri": "Infrastructure Operations",
+  "harga": 2790.0,
+  "update": "2026-11-09 16:45",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.5356096435688709,
+    "ps": 0.6991279913794014,
+    "roe": 9.298888668996539e-05,
+    "eps": 0.48438073694176065,
+    "eps_annualized": 488.0,
+    "de": 2.6573404889513617,
+    "margin_net": 0.00012137782497525712,
+    "current_ratio": 0.4237912216017917,
+    "roa": 2.1346104193432357e-05,
+    "bv": 5209.017487828803,
+    "pcf": 2.6777410586792683,
+    "div_yield": 9.161947730389834,
+    "payout_ratio": 52.3808077208763
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6459639000000.0,
+      "2025-Q2": 6482427000000.0,
+      "2025-Q3": 8141276000000.0,
+      "2026-Q1": 6448145000000.0,
+      "2026-Q2": 6663186000000.0,
+      "2026-Q3": 7711275000000.0
+    },
+    "eps": {
+      "2025-Q1": 127.79,
+      "2025-Q2": 130.02,
+      "2025-Q3": 118.14,
+      "2026-Q1": 107.0,
+      "2026-Q2": 156.0,
+      "2026-Q3": 103.0
+    },
+    "net_income": {
+      "2025-Q1": 927491000.0,
+      "2025-Q2": 943692000.0,
+      "2025-Q3": 857389000.0,
+      "2026-Q1": 774660000.0,
+      "2026-Q2": 1134486000.0,
+      "2026-Q3": 749038000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 20249460080640,
+    "enterprise_value": 117929517514752,
+    "shares_outstanding": 7257871199
+  },
+  "akumulasi": {
+    "score": 8.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2756,
+    "vol_trend": 2.93,
+    "price_chg_20d": 4.92
+  },
+  "neraca": {
+    "aset": 164693893.0,
+    "aset_lancar": 9419093.0,
+    "kas": 6351264.0,
+    "piutang_usaha": null,
+    "persediaan": 173314.0,
+    "aset_tetap": 622865.0,
+    "liabilitas": 100464419.0,
+    "liabilitas_jangka_pendek": 22225786.0,
+    "liabilitas_jangka_panjang": 78238633.0,
+    "utang_usaha": 73629.0,
+    "utang_bank": 57559.0,
+    "ekuitas": 37806378.0,
+    "ekuitas_induk": 37806378.0,
+    "modal_saham": null,
+    "saldo_laba": 8971304.0
+  },
+  "laba_rugi": {
+    "pendapatan": 20822606.0,
+    "beban_pokok": 11728482.0,
+    "laba_kotor": 9094124.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 5052635.0,
+    "beban_pajak": -1356580.0,
+    "laba_bersih": 2658184.0,
+    "laba_induk": 2658184.0,
+    "eps_basic": 366.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 7562142941184,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 40863.0,
+    "dividen_dibayar": 1855245.0
+  }
+}

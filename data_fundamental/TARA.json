@@ -1,0 +1,102 @@
+{
+  "kode": "TARA",
+  "nama": "PT Agung Semesta Sejahtera Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Diversified",
+  "harga": 33.0,
+  "update": "2026-11-09 17:11",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.31971290772214767,
+    "ps": 6.922769679239554e-05,
+    "roe": -1192.445282682537,
+    "eps": null,
+    "eps_annualized": -0.18666666666666668,
+    "de": 0.040693777273151134,
+    "margin_net": -0.2582011500855976,
+    "current_ratio": 3.46620288559213,
+    "roa": -1135.667447845008,
+    "bv": 103.21760305242118,
+    "pcf": 1.6279357147140175e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 901722500000000.0,
+      "2025-Q2": 1015385000000000.0,
+      "2025-Q3": 886567500000000.0,
+      "2026-Q1": 2064600000000000.0,
+      "2026-Q2": 863835000000000.0,
+      "2026-Q3": 985075000000000.0
+    },
+    "eps": {
+      "2025-Q1": -0.09,
+      "2025-Q2": -0.02,
+      "2025-Q3": 0.02,
+      "2026-Q1": -0.06,
+      "2026-Q2": -0.04,
+      "2026-Q3": -0.04
+    },
+    "net_income": {
+      "2025-Q1": -859309235000000.0,
+      "2025-Q2": -218388888000000.0,
+      "2025-Q3": 140809627000000.0,
+      "2026-Q1": -598359094000000.0,
+      "2026-Q2": -406134296000000.0,
+      "2026-Q3": -375701768000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 332298289152,
+    "enterprise_value": 306846990336,
+    "shares_outstanding": 10069645750
+  },
+  "akumulasi": {
+    "score": 2.9,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1072,
+    "vol_trend": 0.546,
+    "price_chg_20d": -30.23
+  },
+  "neraca": {
+    "aset": 1091327864818.0,
+    "aset_lancar": 144760613443.0,
+    "kas": 4909883828.0,
+    "piutang_usaha": null,
+    "persediaan": 644688588137.0,
+    "aset_tetap": 39176068.0,
+    "liabilitas": 42295675522.0,
+    "liabilitas_jangka_pendek": 41763456503.0,
+    "liabilitas_jangka_panjang": 532219019.0,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 1039364697902.0,
+    "ekuitas_induk": 1039364697902.0,
+    "modal_saham": null,
+    "saldo_laba": 3500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 3913510000.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1262434879.0,
+    "beban_pajak": -97837750.0,
+    "laba_bersih": -1380195158.0,
+    "laba_induk": -1380195158.0,
+    "eps_basic": -0.14,
+    "eps_diluted": -0.14
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 20412250112,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 57750000.0,
+    "dividen_dibayar": null
+  }
+}

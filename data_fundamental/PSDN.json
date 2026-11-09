@@ -1,0 +1,102 @@
+{
+  "kode": "PSDN",
+  "nama": "PT Prasidha Aneka Niaga Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 85.0,
+  "update": "2026-11-09 17:02",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.686923804821748e-06,
+    "roe": 0.8729868371690784,
+    "eps": null,
+    "eps_annualized": 42.82666666666666,
+    "de": 1.7294135906925345,
+    "margin_net": 1.2805237604196187,
+    "current_ratio": 0.6444563940959726,
+    "roa": 0.3198441013652223,
+    "bv": 33816971.31458333,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1438218600000000.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 4030303000000000.0,
+      "2026-Q1": 4010084400000000.0,
+      "2026-Q2": 5415993800000000.0,
+      "2026-Q3": 1.97420266e+16
+    },
+    "eps": {
+      "2025-Q1": -3.66,
+      "2025-Q2": -3.28,
+      "2025-Q3": -2.59,
+      "2026-Q1": -4.48,
+      "2026-Q2": 35.34,
+      "2026-Q3": 1.26
+    },
+    "net_income": {
+      "2025-Q1": -5276152750000000.0,
+      "2025-Q2": -4717551623000000.0,
+      "2025-Q3": -3734780662000000.0,
+      "2026-Q1": -6452995989000000.0,
+      "2026-Q2": 5.089525029e+16,
+      "2026-Q3": 1803876357000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 122399997952,
+    "enterprise_value": 99289538560,
+    "shares_outstanding": 1440000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5715,
+    "vol_trend": 0.75,
+    "price_chg_20d": -36.15
+  },
+  "neraca": {
+    "aset": 132912721587.0,
+    "aset_lancar": 40799692123.0,
+    "kas": 20230461703.0,
+    "piutang_usaha": 10677631215.0,
+    "persediaan": 9806697352.0,
+    "aset_tetap": 85882306295.0,
+    "liabilitas": 84216282894.0,
+    "liabilitas_jangka_pendek": 63308693182.0,
+    "liabilitas_jangka_panjang": 20907589712.0,
+    "utang_usaha": 10677631215.0,
+    "utang_bank": null,
+    "ekuitas": 48696438693.0,
+    "ekuitas_induk": 48696438693.0,
+    "modal_saham": null,
+    "saldo_laba": -267584260662.0
+  },
+  "laba_rugi": {
+    "pendapatan": 29168104800.0,
+    "beban_pokok": 26737935194.0,
+    "laba_kotor": 2430169606.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 46246130658.0,
+    "beban_pajak": null,
+    "laba_bersih": 46246130658.0,
+    "laba_induk": 46246130658.0,
+    "eps_basic": 32.12,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -33408032768,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 514834870.0,
+    "dividen_dibayar": null
+  }
+}

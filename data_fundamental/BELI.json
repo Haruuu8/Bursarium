@@ -1,0 +1,102 @@
+{
+  "kode": "BELI",
+  "nama": "PT Global Digital Niaga Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Internet Retail",
+  "harga": 234.0,
+  "update": "2026-11-09 15:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.6702321663745994,
+    "ps": 1.151621304816136,
+    "roe": -0.0001947580167202393,
+    "eps": -0.012417028091591464,
+    "eps_annualized": -10.666666666666666,
+    "de": 1.1344774608024017,
+    "margin_net": -6.110988928537254e-05,
+    "current_ratio": 1.1822325299755523,
+    "roa": -9.034470559490157e-05,
+    "bv": 63.75618472962753,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4693759000000.0,
+      "2025-Q2": 4901932000000.0,
+      "2025-Q3": 5643655000000.0,
+      "2026-Q1": 7835282000000.0,
+      "2026-Q2": 6995135000000.0,
+      "2026-Q3": 7407700000000.0
+    },
+    "eps": {
+      "2025-Q1": -5.0,
+      "2025-Q2": -4.0,
+      "2025-Q3": -5.0,
+      "2026-Q1": -2.0,
+      "2026-Q2": -3.0,
+      "2026-Q3": -3.0
+    },
+    "net_income": {
+      "2025-Q1": -638147000.0,
+      "2025-Q2": -614226000.0,
+      "2025-Q3": -589901000.0,
+      "2026-Q1": -303004000.0,
+      "2026-Q2": -408352000.0,
+      "2026-Q3": -402595000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 32109242613760,
+    "enterprise_value": 34478372159488,
+    "shares_outstanding": 137218985689
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4924,
+    "vol_trend": 1.093,
+    "price_chg_20d": -19.05
+  },
+  "neraca": {
+    "aset": 18859456.0,
+    "aset_lancar": 10172041.0,
+    "kas": 1365631.0,
+    "piutang_usaha": 2281176.0,
+    "persediaan": 3908091.0,
+    "aset_tetap": 42928.0,
+    "liabilitas": 9925043.0,
+    "liabilitas_jangka_pendek": 8604095.0,
+    "liabilitas_jangka_panjang": 1320948.0,
+    "utang_usaha": 2281176.0,
+    "utang_bank": 3497000.0,
+    "ekuitas": 8748559.0,
+    "ekuitas_induk": 8748559.0,
+    "modal_saham": null,
+    "saldo_laba": -29418718.0
+  },
+  "laba_rugi": {
+    "pendapatan": 22238117.0,
+    "beban_pokok": 18776367.0,
+    "laba_kotor": 3461750.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -1039785.0,
+    "beban_pajak": -83165.0,
+    "laba_bersih": -1113951.0,
+    "laba_induk": -1113951.0,
+    "eps_basic": -8.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -1481792946176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 42928.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "BTON",
+  "nama": "PT Betonjaya Manunggal Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Steel",
+  "harga": 324.0,
+  "update": "2026-11-09 16:00",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.662241104468543e-06,
+    "roe": 0.13214641290979626,
+    "eps": null,
+    "eps_annualized": 60.54666666666666,
+    "de": 0.43956128751607115,
+    "margin_net": 0.31690950961870396,
+    "current_ratio": 3.0162095317779984,
+    "roa": 0.09179630909484357,
+    "bv": 467445394.6013889,
+    "pcf": 1.4304458143515071e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.617622722e+16,
+      "2025-Q2": 2.241566964e+16,
+      "2025-Q3": 3.912417192e+16,
+      "2026-Q1": 3.067099186e+16,
+      "2026-Q2": 2.778946103e+16,
+      "2026-Q3": 4.275602696e+16
+    },
+    "eps": {
+      "2025-Q1": 13.85,
+      "2025-Q2": -8.16,
+      "2025-Q3": 16.37,
+      "2026-Q1": 9.58,
+      "2026-Q2": 30.55,
+      "2026-Q3": 5.28
+    },
+    "net_income": {
+      "2025-Q1": 9972614969000000.0,
+      "2025-Q2": -5874688213000000.0,
+      "2025-Q3": 1.178316444e+16,
+      "2026-Q1": 6897968502000000.0,
+      "2026-Q2": 2.1997789459e+16,
+      "2026-Q3": 3796364731000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 233279995904,
+    "enterprise_value": -132029964288,
+    "shares_outstanding": 720000000
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2689,
+    "vol_trend": 4.574,
+    "price_chg_20d": -11.17
+  },
+  "neraca": {
+    "aset": 484499731749.0,
+    "aset_lancar": 433331830210.0,
+    "kas": 853008429.0,
+    "piutang_usaha": 33543824974.0,
+    "persediaan": 26741207147.0,
+    "aset_tetap": 10553683533.0,
+    "liabilitas": 147939047636.0,
+    "liabilitas_jangka_pendek": 143667681454.0,
+    "liabilitas_jangka_panjang": 4271366182.0,
+    "utang_usaha": 33543824974.0,
+    "utang_bank": null,
+    "ekuitas": 336560684113.0,
+    "ekuitas_induk": 336560684113.0,
+    "modal_saham": null,
+    "saldo_laba": 316918773674.0
+  },
+  "laba_rugi": {
+    "pendapatan": 101216479850.0,
+    "beban_pokok": 93232128201.0,
+    "laba_kotor": 7984351649.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 34768786420.0,
+    "beban_pajak": -2076663728.0,
+    "laba_bersih": 32692122692.0,
+    "laba_induk": 32692122692.0,
+    "eps_basic": 45.41,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 16308202496,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 193345091.0,
+    "dividen_dibayar": null
+  }
+}

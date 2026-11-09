@@ -1,0 +1,87 @@
+{
+  "kode": "PRDL",
+  "nama": "PT Prodia Diagnostic Line Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Devices",
+  "harga": 103.0,
+  "update": "2026-11-09 15:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.006267353290665929,
+    "roe": -0.08500058547453357,
+    "eps": -8483.757721804654,
+    "eps_annualized": -8.48,
+    "de": 0.5167066961293814,
+    "margin_net": -0.5162204550967464,
+    "current_ratio": 4.2055673539101255,
+    "roa": -0.056042862928906506,
+    "bv": 74856.1701761432,
+    "pcf": 8.912313459321378e-06,
+    "div_yield": 25624.071475562152,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2026-Q3": 7782313000000.0
+    },
+    "eps": {
+      "2026-Q3": 0.89
+    },
+    "net_income": {
+      "2026-Q3": -2250076000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 179518701568,
+    "enterprise_value": 236723552256,
+    "shares_outstanding": 1742900000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2387,
+    "vol_trend": 0.451,
+    "price_chg_20d": -43.1
+  },
+  "neraca": {
+    "aset": 197879898.0,
+    "aset_lancar": 52978924.0,
+    "kas": 21761432.0,
+    "piutang_usaha": 1169102.0,
+    "persediaan": 25906251.0,
+    "aset_tetap": 131298497.0,
+    "liabilitas": 67413079.0,
+    "liabilitas_jangka_pendek": 12597331.0,
+    "liabilitas_jangka_panjang": 54815748.0,
+    "utang_usaha": 1169102.0,
+    "utang_bank": 7184347.0,
+    "ekuitas": 130466819.0,
+    "ekuitas_induk": 130466819.0,
+    "modal_saham": null,
+    "saldo_laba": 3000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 21482597.0,
+    "beban_pokok": 14901106.0,
+    "laba_kotor": 6581491.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -10874824.0,
+    "beban_pajak": -214932.0,
+    "laba_bersih": -11089756.0,
+    "laba_induk": -11089756.0,
+    "eps_basic": -6.36,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 20142772224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1129600.0,
+    "dividen_dibayar": 46000000.0
+  }
+}

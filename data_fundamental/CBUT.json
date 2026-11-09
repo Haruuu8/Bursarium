@@ -1,0 +1,102 @@
+{
+  "kode": "CBUT",
+  "nama": "PT Citra Borneo Utama Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Packaged Foods",
+  "harga": 1000.0,
+  "update": "2026-11-09 15:22",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.218020404368187,
+    "ps": 0.1756828906396212,
+    "roe": 0.0002211866728558308,
+    "eps": 0.09972256,
+    "eps_annualized": 0.00012678666666666666,
+    "de": 5.433276977870899,
+    "margin_net": 1.7519547602783064e-05,
+    "current_ratio": 1.0874762708047012,
+    "roa": 3.43816492926802e-05,
+    "bv": 450.85248,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3395086000000.0,
+      "2025-Q2": 3265410000000.0,
+      "2025-Q3": 3647764000000.0,
+      "2026-Q1": 3377149000000.0,
+      "2026-Q2": 5891744000000.0,
+      "2026-Q3": 4871074000000.0
+    },
+    "eps": {
+      "2025-Q1": 13.19,
+      "2025-Q2": 0.31,
+      "2025-Q3": -13.5,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 41210000.0,
+      "2025-Q2": 996000.0,
+      "2025-Q3": 14480000.0,
+      "2026-Q1": 45976000.0,
+      "2026-Q2": 123686000.0,
+      "2026-Q3": 127491000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3125000011776,
+    "enterprise_value": 8722201968640,
+    "shares_outstanding": 3125000000
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4972,
+    "vol_trend": 1.773,
+    "price_chg_20d": 9.94
+  },
+  "neraca": {
+    "aset": 9063934.0,
+    "aset_lancar": 7570888.0,
+    "kas": 462730.0,
+    "piutang_usaha": 465555.0,
+    "persediaan": 2030312.0,
+    "aset_tetap": 835182.0,
+    "liabilitas": 7655020.0,
+    "liabilitas_jangka_pendek": 6961888.0,
+    "liabilitas_jangka_panjang": 693132.0,
+    "utang_usaha": 465555.0,
+    "utang_bank": 5238020.0,
+    "ekuitas": 1408914.0,
+    "ekuitas_induk": 1408914.0,
+    "modal_saham": null,
+    "saldo_laba": 62500.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14139967.0,
+    "beban_pokok": 11083554.0,
+    "laba_kotor": 3056413.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 383272.0,
+    "beban_pajak": -86119.0,
+    "laba_bersih": 297153.0,
+    "laba_induk": 297153.0,
+    "eps_basic": 9.509e-05,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3036084961280,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 868.0,
+    "dividen_dibayar": null
+  }
+}

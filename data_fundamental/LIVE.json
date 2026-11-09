@@ -1,0 +1,102 @@
+{
+  "kode": "LIVE",
+  "nama": "PT Homeco Victoria Makmur Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 102.0,
+  "update": "2026-11-09 15:45",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.5933527060586365e-06,
+    "roe": 0.009651956226494224,
+    "eps": null,
+    "eps_annualized": 0.7999999999999999,
+    "de": 0.532053995893676,
+    "margin_net": 0.01802455942696093,
+    "current_ratio": 2.758976680740494,
+    "roa": 0.006298944013752663,
+    "bv": 73449340.34335022,
+    "pcf": 7.82261715478332e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.7009377367e+16,
+      "2025-Q2": 8.8536109842e+16,
+      "2025-Q3": 4.9424205432e+16,
+      "2026-Q1": 4.5219108586e+16,
+      "2026-Q2": 4.4943446073e+16,
+      "2026-Q3": 4.1062216168e+16
+    },
+    "eps": {
+      "2025-Q1": 1.0,
+      "2025-Q2": 1.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 1.0,
+      "2026-Q2": -0.7,
+      "2026-Q3": 0.3
+    },
+    "net_income": {
+      "2025-Q1": 4276899917000000.0,
+      "2025-Q2": 5553339024000000.0,
+      "2025-Q3": 429125856000000.0,
+      "2026-Q1": 737687193000000.0,
+      "2026-Q2": 450321702000000.0,
+      "2026-Q3": 1638983457000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 468486520832,
+    "enterprise_value": 673439088640,
+    "shares_outstanding": 4593005014
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2975,
+    "vol_trend": 2.934,
+    "price_chg_20d": -32.05
+  },
+  "neraca": {
+    "aset": 516930806321.0,
+    "aset_lancar": 433571747946.0,
+    "kas": 5122632518.0,
+    "piutang_usaha": 106748410829.0,
+    "persediaan": 211894253748.0,
+    "aset_tetap": 79714047325.0,
+    "liabilitas": 179490111954.0,
+    "liabilitas_jangka_pendek": 157149478998.0,
+    "liabilitas_jangka_panjang": 22340632956.0,
+    "utang_usaha": 106748410829.0,
+    "utang_bank": 142277890596.0,
+    "ekuitas": 337353188472.0,
+    "ekuitas_induk": 337353188472.0,
+    "modal_saham": null,
+    "saldo_laba": 20200236.0
+  },
+  "laba_rugi": {
+    "pendapatan": 131224770827.0,
+    "beban_pokok": 74678034328.0,
+    "laba_kotor": 56546736499.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 3624349170.0,
+    "beban_pajak": 285067453.0,
+    "laba_bersih": 2826992352.0,
+    "laba_induk": 2826992352.0,
+    "eps_basic": 0.6,
+    "eps_diluted": 0.6
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 59888717824,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1342945348.0,
+    "dividen_dibayar": null
+  }
+}

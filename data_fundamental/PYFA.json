@@ -1,0 +1,102 @@
+{
+  "kode": "PYFA",
+  "nama": "PT Pyridam Farma Tbk",
+  "sektor": "Healthcare",
+  "industri": "Drug Manufacturers - Specialty & Generic",
+  "harga": 118.0,
+  "update": "2026-11-09 17:03",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": -0.000960177761986586,
+    "roe": -0.9005264942727754,
+    "eps": null,
+    "eps_annualized": -40.18666666666667,
+    "de": 12.079774580280501,
+    "margin_net": 355.78731024556504,
+    "current_ratio": 0.6751855285514853,
+    "roa": -66834.31714138974,
+    "bv": 48553922.800234206,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 6.85456361094e+17,
+      "2025-Q2": -6.84070957693642e+17,
+      "2025-Q3": -1383343158915407.0,
+      "2026-Q1": 7.66533599124e+17,
+      "2026-Q2": -7.64916075733729e+17,
+      "2026-Q3": -1615108638265001.0
+    },
+    "eps": {
+      "2025-Q1": -8.15,
+      "2025-Q2": -11.95,
+      "2025-Q3": -12.46,
+      "2026-Q1": -7.2,
+      "2026-Q2": -8.66,
+      "2026-Q3": -14.28
+    },
+    "net_income": {
+      "2025-Q1": -9.0593121244e+16,
+      "2025-Q2": -1.22608651277e+17,
+      "2025-Q3": -1.52614250612e+17,
+      "2026-Q1": -8.087590438e+16,
+      "2026-Q2": -9.7403880869e+16,
+      "2026-Q3": -1.60422767675e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1325936803840,
+    "enterprise_value": 6909222453248,
+    "shares_outstanding": 11236752095
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4057,
+    "vol_trend": 0.952,
+    "price_chg_20d": -47.79
+  },
+  "neraca": {
+    "aset": 7351265406013.0,
+    "aset_lancar": 1543724248218.0,
+    "kas": 126057983754.0,
+    "piutang_usaha": 769102618756.0,
+    "persediaan": 563275689889.0,
+    "aset_tetap": 54740678420.0,
+    "liabilitas": 6590584810069.0,
+    "liabilitas_jangka_pendek": 2286370461064.0,
+    "liabilitas_jangka_panjang": 4304214349005.0,
+    "utang_usaha": 769102618756.0,
+    "utang_bank": 232629511177.0,
+    "ekuitas": 545588393746.0,
+    "ekuitas_induk": 545588393746.0,
+    "modal_saham": null,
+    "saldo_laba": 2000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2414752005999.0,
+    "beban_pokok": 1871995239822.0,
+    "laba_kotor": 542756766177.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -333530512431.0,
+    "beban_pajak": -5172040493.0,
+    "laba_bersih": -338702552924.0,
+    "laba_induk": -338702552924.0,
+    "eps_basic": -30.14,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -364436914176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 54740678420.0,
+    "dividen_dibayar": null
+  }
+}

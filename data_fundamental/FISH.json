@@ -1,0 +1,102 @@
+{
+  "kode": "FISH",
+  "nama": "PT FKS Multi Agro Tbk",
+  "sektor": "Consumer Defensive",
+  "industri": "Food Distribution",
+  "harga": 434.0,
+  "update": "2026-11-09 16:30",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.001754910306556977,
+    "roe": 0.08292266077477883,
+    "eps": 2969.372083333333,
+    "eps_annualized": 0.003034526388888889,
+    "de": 1.7784659162366971,
+    "margin_net": 0.012006870214387625,
+    "current_ratio": 1.4075120598926842,
+    "roa": 0.02934901004567584,
+    "bv": 35808.933958333335,
+    "pcf": null,
+    "div_yield": 278.22110215053766,
+    "payout_ratio": 39791368.68786498
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 294422658000000.0,
+      "2025-Q2": 288531530000000.0,
+      "2025-Q3": 302035210000000.0,
+      "2026-Q1": 274472671000000.0,
+      "2026-Q2": 297805272000000.0,
+      "2026-Q3": 312756062000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.01,
+      "2025-Q2": 0.01,
+      "2025-Q3": -0.01,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 4742246000000.0,
+      "2025-Q2": 3031908000000.0,
+      "2025-Q3": 3328691000000.0,
+      "2026-Q1": 7663088000000.0,
+      "2026-Q2": 835807000000.0,
+      "2026-Q3": 2425400000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2083200040960,
+    "enterprise_value": 2121685139456,
+    "shares_outstanding": 4800000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1396,
+    "vol_trend": 0.204,
+    "price_chg_20d": -26.33
+  },
+  "neraca": {
+    "aset": 485637709.0,
+    "aset_lancar": 347601968.0,
+    "kas": 93954057.0,
+    "piutang_usaha": 60060193.0,
+    "persediaan": 148768865.0,
+    "aset_tetap": 1330005.0,
+    "liabilitas": 305687849.0,
+    "liabilitas_jangka_pendek": 246961982.0,
+    "liabilitas_jangka_panjang": 58725867.0,
+    "utang_usaha": 60060193.0,
+    "utang_bank": 114678636.0,
+    "ekuitas": 171882883.0,
+    "ekuitas_induk": 171882883.0,
+    "modal_saham": null,
+    "saldo_laba": 1433919.0
+  },
+  "laba_rugi": {
+    "pendapatan": 885034005.0,
+    "beban_pokok": 835551175.0,
+    "laba_kotor": 49482830.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 20385685.0,
+    "beban_pajak": 32421.0,
+    "laba_bersih": 10924295.0,
+    "laba_induk": 10924295.0,
+    "eps_basic": 0.0022758947916666668,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -8875511,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1330005.0,
+    "dividen_dibayar": 5795902.0
+  }
+}

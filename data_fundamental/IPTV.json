@@ -1,0 +1,96 @@
+{
+  "kode": "IPTV",
+  "nama": "PT MNC Vision Networks Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 18.0,
+  "update": "2026-11-09 17:35",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 258.68243050585465,
+    "roe": -4.013884052224768e-05,
+    "eps": -0.010674732801782603,
+    "eps_annualized": -4.973333333333333e-06,
+    "de": 0.1808073055545064,
+    "margin_net": -0.15340921256476084,
+    "current_ratio": 2.745952164261517,
+    "roa": -3.367481178356121e-05,
+    "bv": 265.9452207112445,
+    "pcf": 1.3528952989254357e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 422262000.0,
+      "2026-Q1": 394069000.0,
+      "2026-Q2": 302681000.0,
+      "2026-Q3": 328815000.0
+    },
+    "eps": {
+      "2025-Q3": -1.53,
+      "2026-Q1": 0.43,
+      "2026-Q2": -0.43,
+      "2026-Q3": -0.0
+    },
+    "net_income": {
+      "2025-Q3": -64576000.0,
+      "2026-Q1": 18240000.0,
+      "2026-Q2": -85789000.0,
+      "2026-Q3": -89985000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 759563091968,
+    "enterprise_value": 1236612153344,
+    "shares_outstanding": 20807078184
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2906,
+    "vol_trend": 0.807,
+    "price_chg_20d": -36.0
+  },
+  "neraca": {
+    "aset": 6595731.0,
+    "aset_lancar": 2205568.0,
+    "kas": 8484.0,
+    "piutang_usaha": 139848.0,
+    "persediaan": 52259.0,
+    "aset_tetap": 2884003.0,
+    "liabilitas": 1000505.0,
+    "liabilitas_jangka_pendek": 803207.0,
+    "liabilitas_jangka_panjang": 197298.0,
+    "utang_usaha": 139848.0,
+    "utang_bank": 166035.0,
+    "ekuitas": 5533543.0,
+    "ekuitas_induk": 5533543.0,
+    "modal_saham": null,
+    "saldo_laba": 2000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1025565.0,
+    "beban_pokok": 1017229.0,
+    "laba_kotor": 8336.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -170191.0,
+    "beban_pajak": 3985.0,
+    "laba_bersih": -157534.0,
+    "laba_induk": -157534.0,
+    "eps_basic": -3.73e-06,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 276833992704,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 19690.0,
+    "dividen_dibayar": null
+  }
+}

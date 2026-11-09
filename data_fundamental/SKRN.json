@@ -1,0 +1,102 @@
+{
+  "kode": "SKRN",
+  "nama": "PT Superkrane Mitra Utama Tbk",
+  "sektor": "Industrials",
+  "industri": "Rental & Leasing Services",
+  "harga": 282.0,
+  "update": "2026-11-09 17:31",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.249941550740305e-06,
+    "roe": 0.26931494997027794,
+    "eps": null,
+    "eps_annualized": 24.813333333333333,
+    "de": 1.1237497624107373,
+    "margin_net": 0.19036676984701364,
+    "current_ratio": 2.4008028869477744,
+    "roa": 126811.05596196504,
+    "bv": 88594865.02086353,
+    "pcf": 4.819276780503693e-06,
+    "div_yield": 6382978.723404256,
+    "payout_ratio": 72541644.27727029
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.24768242355e+17,
+      "2025-Q2": 1.89563749715e+17,
+      "2025-Q3": 2.0800978473499994e+17,
+      "2026-Q1": 2.18831882707e+17,
+      "2026-Q2": 2.69237320331e+17,
+      "2026-Q3": 1.96066832758e+17
+    },
+    "eps": {
+      "2025-Q1": 11.6,
+      "2025-Q2": 7.73,
+      "2025-Q3": 5.25,
+      "2026-Q1": 8.03,
+      "2026-Q2": 7.84,
+      "2026-Q3": 2.74
+    },
+    "net_income": {
+      "2025-Q1": 8.2600449407e+16,
+      "2025-Q2": 5.4959241126e+16,
+      "2025-Q3": 3.7368243256e+16,
+      "2026-Q1": 5.7192512536e+16,
+      "2026-Q2": 5.5748344529e+16,
+      "2026-Q3": 1.9525817766e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2007275929600,
+    "enterprise_value": 2155240357888,
+    "shares_outstanding": 7117999826
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1808,
+    "vol_trend": 0.572,
+    "price_chg_20d": -29.23
+  },
+  "neraca": {
+    "aset": 1339275324211.0,
+    "aset_lancar": 336623510828.0,
+    "kas": 66665032591.0,
+    "piutang_usaha": 63318992058.0,
+    "persediaan": null,
+    "aset_tetap": 785325307832.0,
+    "liabilitas": 708657090408.0,
+    "liabilitas_jangka_pendek": 140212889887.0,
+    "liabilitas_jangka_panjang": 568444200521.0,
+    "utang_usaha": 63318992058.0,
+    "utang_bank": 34833984829.0,
+    "ekuitas": 630618233803.0,
+    "ekuitas_induk": 630618233803.0,
+    "modal_saham": null,
+    "saldo_laba": 19836231035.0
+  },
+  "laba_rugi": {
+    "pendapatan": 684136035796.0,
+    "beban_pokok": 429783301337.0,
+    "laba_kotor": 254352734459.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 169964672763.0,
+    "beban_pajak": -37497997932.0,
+    "laba_bersih": 132466674831.0,
+    "laba_induk": 132466674831.0,
+    "eps_basic": 18.61,
+    "eps_diluted": 18.61
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 416509788160,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7914655325.0,
+    "dividen_dibayar": 128123996868.0
+  }
+}

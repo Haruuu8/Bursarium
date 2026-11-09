@@ -1,0 +1,102 @@
+{
+  "kode": "MDLN",
+  "nama": "PT Modernland Realty Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 30.0,
+  "update": "2026-11-09 16:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.2412297580814192e-07,
+    "roe": -429956.38920245797,
+    "eps": null,
+    "eps_annualized": -101.35999999999999,
+    "de": 3.498212366545091,
+    "margin_net": -1.7166833696497403,
+    "current_ratio": 0.594890165077065,
+    "roa": -95598.0639878286,
+    "bv": 534.4421069379474,
+    "pcf": 2.6732059455424725e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.17396658527e+17,
+      "2025-Q2": 3.00184703551e+17,
+      "2025-Q3": 1.8584586764699994e+17,
+      "2026-Q1": 1.42217764279e+17,
+      "2026-Q2": 1.40297475844e+17,
+      "2026-Q3": 2.71581835081e+17
+    },
+    "eps": {
+      "2025-Q1": 63.74,
+      "2025-Q2": 3.81,
+      "2025-Q3": -30.3,
+      "2026-Q1": -20.13,
+      "2026-Q2": -39.06,
+      "2026-Q3": -16.83
+    },
+    "net_income": {
+      "2025-Q1": 7.61479777594e+17,
+      "2025-Q2": 4.555311518299994e+16,
+      "2025-Q3": -3.6198504086899994e+17,
+      "2026-Q1": -2.40513524636e+17,
+      "2026-Q2": -4.6661119024499994e+17,
+      "2026-Q3": -2.01137988732e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 358419496960,
+    "enterprise_value": 7242195664896,
+    "shares_outstanding": 5527940476
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2903,
+    "vol_trend": 0.502,
+    "price_chg_20d": -27.91
+  },
+  "neraca": {
+    "aset": 13287379382952.0,
+    "aset_lancar": 2697265172156.0,
+    "kas": 78339646690.0,
+    "piutang_usaha": 98389168489.0,
+    "persediaan": null,
+    "aset_tetap": 1152182738185.0,
+    "liabilitas": 10334993222372.0,
+    "liabilitas_jangka_pendek": 4534055747596.0,
+    "liabilitas_jangka_panjang": 5800937474776.0,
+    "utang_usaha": 98389168489.0,
+    "utang_bank": 379015437887.0,
+    "ekuitas": 2954364155021.0,
+    "ekuitas_induk": 2954364155021.0,
+    "modal_saham": null,
+    "saldo_laba": 4500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 554097075204.0,
+    "beban_pokok": 267124564115.0,
+    "laba_kotor": 286972511089.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -895567730185.0,
+    "beban_pajak": -13132086889.0,
+    "laba_bersih": -908262703613.0,
+    "laba_induk": -908262703613.0,
+    "eps_basic": -76.02,
+    "eps_diluted": -76.02
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 62037200896,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 16880848239.0,
+    "dividen_dibayar": null
+  }
+}

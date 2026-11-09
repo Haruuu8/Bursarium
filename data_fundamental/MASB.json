@@ -1,0 +1,102 @@
+{
+  "kode": "MASB",
+  "nama": "PT Bank Multiarta Sentosa Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 2210.0,
+  "update": "2026-11-09 14:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7320541674192679,
+    "ps": -3.2538742107756227e-06,
+    "roe": 53193.10412504143,
+    "eps": null,
+    "eps_annualized": 160.54666666666665,
+    "de": 6.098090229692926,
+    "margin_net": -0.23643560464077631,
+    "current_ratio": null,
+    "roa": 7494.002246198924,
+    "bv": 3018.9022866859405,
+    "pcf": 1.1551488267695043,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4.72547578416e+17,
+      "2025-Q2": 4.81130488394e+17,
+      "2025-Q3": -9.52233707649105e+17,
+      "2026-Q1": 5.04959611993e+17,
+      "2026-Q2": -5.03950422754588e+17,
+      "2026-Q3": -1007677895207548.0
+    },
+    "eps": {
+      "2025-Q1": 36.28,
+      "2025-Q2": 34.96,
+      "2025-Q3": 40.17,
+      "2026-Q1": 38.79,
+      "2026-Q2": 38.07,
+      "2026-Q3": 43.55
+    },
+    "net_income": {
+      "2025-Q1": 5.0859943595e+16,
+      "2025-Q2": 4.9018113939e+16,
+      "2025-Q3": 5.632598753e+16,
+      "2026-Q1": 5.4378773398e+16,
+      "2026-Q2": 5.3383018868e+16,
+      "2026-Q3": 6.1053815296e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3098443776000,
+    "enterprise_value": 2024124317696,
+    "shares_outstanding": 1402010763
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2055,
+    "vol_trend": 1.109,
+    "price_chg_20d": -28.21
+  },
+  "neraca": {
+    "aset": 30042904671692.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 129175821254.0,
+    "liabilitas": 25810371173313.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 4232533498379.0,
+    "ekuitas_induk": 4232533498379.0,
+    "modal_saham": null,
+    "saldo_laba": 1969291531847.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1511343204452.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 228583816031.0,
+    "laba_sebelum_pajak": 216430266106.0,
+    "beban_pajak": -47614658544.0,
+    "laba_bersih": 168815607562.0,
+    "laba_induk": 168815607562.0,
+    "eps_basic": 120.41,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2682289688070.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

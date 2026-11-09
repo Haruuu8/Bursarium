@@ -1,0 +1,102 @@
+{
+  "kode": "MLPL",
+  "nama": "PT Multipolar Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 53.0,
+  "update": "2026-11-09 16:56",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.002086175339686902,
+    "roe": -3.86840363143847e-05,
+    "eps": -0.3887383479149125,
+    "eps_annualized": -16.0,
+    "de": 1.7897326013067003,
+    "margin_net": -1.530144066057958e-05,
+    "current_ratio": 1.0753288855857366,
+    "roa": -1.3400543176266202e-05,
+    "bv": 10049.06377286074,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3004566000000.0,
+      "2025-Q2": 2684550000000.0,
+      "2025-Q3": 2837145000000.0,
+      "2026-Q1": 3161406000000.0,
+      "2026-Q2": 2871352000000.0,
+      "2026-Q3": 3018324000000.0
+    },
+    "eps": {
+      "2025-Q1": 1.0,
+      "2025-Q2": -10.0,
+      "2025-Q3": 1.0,
+      "2026-Q1": 8.0,
+      "2026-Q2": -10.0,
+      "2026-Q3": -10.0
+    },
+    "net_income": {
+      "2025-Q1": 11731000.0,
+      "2025-Q2": -146299000.0,
+      "2025-Q3": 11168000.0,
+      "2026-Q1": 119805000.0,
+      "2026-Q2": -146101000.0,
+      "2026-Q3": -166779000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 827508129792,
+    "enterprise_value": 1992076427264,
+    "shares_outstanding": 467942000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5656,
+    "vol_trend": 1.149,
+    "price_chg_20d": -32.89
+  },
+  "neraca": {
+    "aset": 13574599.0,
+    "aset_lancar": 5731061.0,
+    "kas": 804130.0,
+    "piutang_usaha": 1088311.0,
+    "persediaan": 2480936.0,
+    "aset_tetap": 1317417.0,
+    "liabilitas": 8416001.0,
+    "liabilitas_jangka_pendek": 5329589.0,
+    "liabilitas_jangka_panjang": 3086412.0,
+    "utang_usaha": 1088311.0,
+    "utang_bank": 396000.0,
+    "ekuitas": 4702379.0,
+    "ekuitas_induk": 4702379.0,
+    "modal_saham": null,
+    "saldo_laba": 2400.0
+  },
+  "laba_rugi": {
+    "pendapatan": 9051082.0,
+    "beban_pokok": 7537021.0,
+    "laba_kotor": 1514061.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -124364.0,
+    "beban_pajak": -69541.0,
+    "laba_bersih": -193075.0,
+    "laba_induk": -193075.0,
+    "eps_basic": -12.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -52702998528,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 169745.0,
+    "dividen_dibayar": null
+  }
+}

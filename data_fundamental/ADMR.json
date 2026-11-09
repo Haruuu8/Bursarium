@@ -1,0 +1,102 @@
+{
+  "kode": "ADMR",
+  "nama": "PT Alamtri Minerals Indonesia Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Coking Coal",
+  "harga": 1325.0,
+  "update": "2026-11-09 15:03",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 30.778136438301214,
+    "ps": 0.2342928666666624,
+    "roe": 36.18738986048753,
+    "eps": 1557.8685753526556,
+    "eps_annualized": 0.0104,
+    "de": 1.2454542252040641,
+    "margin_net": 0.2754698071013457,
+    "current_ratio": 1.973298944528212,
+    "roa": 15.363255997018497,
+    "bv": 43.05003984422953,
+    "pcf": 0.30525707641135164,
+    "div_yield": 221.5285538102177,
+    "payout_ratio": 28223589.788321
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 199937386000000.0,
+      "2025-Q2": 244005648000000.0,
+      "2025-Q3": 231201216000000.0,
+      "2026-Q1": 267491000.0,
+      "2026-Q2": 316387000.0,
+      "2026-Q3": 669101000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 65450053000000.0,
+      "2025-Q2": 75044774000000.0,
+      "2025-Q3": 63688982000000.0,
+      "2026-Q1": 87708000.0,
+      "2026-Q2": 86469000.0,
+      "2026-Q3": 143354000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 54169088032768,
+    "enterprise_value": 53557176827904,
+    "shares_outstanding": 40882331500
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2117,
+    "vol_trend": 2.107,
+    "price_chg_20d": -13.82
+  },
+  "neraca": {
+    "aset": 4145560.0,
+    "aset_lancar": 1243277.0,
+    "kas": 577628.0,
+    "piutang_usaha": 105384.0,
+    "persediaan": 484849.0,
+    "aset_tetap": 2434851.0,
+    "liabilitas": 2191982.0,
+    "liabilitas_jangka_pendek": 630050.0,
+    "liabilitas_jangka_panjang": 1561932.0,
+    "utang_usaha": 105384.0,
+    "utang_bank": 114237.0,
+    "ekuitas": 1759986.0,
+    "ekuitas_induk": 1759986.0,
+    "modal_saham": null,
+    "saldo_laba": 16378.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1252979.0,
+    "beban_pokok": 720623.0,
+    "laba_kotor": 532356.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 423531.0,
+    "beban_pajak": -69898.0,
+    "laba_bersih": 317531.0,
+    "laba_induk": 317531.0,
+    "eps_basic": 0.0078,
+    "eps_diluted": 0.0078
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 177454000,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 105938.0,
+    "dividen_dibayar": 120000.0
+  }
+}

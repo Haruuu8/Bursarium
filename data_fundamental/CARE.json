@@ -1,0 +1,102 @@
+{
+  "kode": "CARE",
+  "nama": "PT Metro Healthcare Indonesia Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 360.0,
+  "update": "2026-11-09 17:42",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.955412819407968,
+    "ps": 2.697235299504308e-05,
+    "roe": 1731.3513610360394,
+    "eps": null,
+    "eps_annualized": 0.16800815001503758,
+    "de": 0.5362707095105744,
+    "margin_net": 0.01180625694470546,
+    "current_ratio": 1.6930933161402204,
+    "roa": 1126.4630150307535,
+    "bv": 91.01452021230075,
+    "pcf": 0.00039956726874141907,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 7.7044953533e+16,
+      "2025-Q2": 8.0994863304e+16,
+      "2025-Q3": 7.7223200519e+16,
+      "2026-Q1": 1.20221254868e+17,
+      "2026-Q2": 9.1198398535e+16,
+      "2026-Q3": 1.55144901718e+17
+    },
+    "eps": {
+      "2025-Q1": -0.87,
+      "2025-Q2": 0.91,
+      "2025-Q3": 0.03,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.07,
+      "2026-Q3": 0.06
+    },
+    "net_income": {
+      "2025-Q1": -2.9023374507e+16,
+      "2025-Q2": 3.028672252e+16,
+      "2025-Q3": 1049769031000000.0,
+      "2026-Q1": 140691053000000.0,
+      "2026-Q2": 2169665416000000.0,
+      "2026-Q3": 1879346772000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 11970000453632,
+    "enterprise_value": 13027363520512,
+    "shares_outstanding": 33250000000
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2262,
+    "vol_trend": 1.023,
+    "price_chg_20d": -1.06
+  },
+  "neraca": {
+    "aset": 4651259918957.0,
+    "aset_lancar": 1018167426499.0,
+    "kas": 900164887011.0,
+    "piutang_usaha": 44464351569.0,
+    "persediaan": 4348454516.0,
+    "aset_tetap": 3263121338758.0,
+    "liabilitas": 1622880009223.0,
+    "liabilitas_jangka_pendek": 601365215250.0,
+    "liabilitas_jangka_panjang": 1021514793973.0,
+    "utang_usaha": 44464351569.0,
+    "utang_bank": 16238802296.0,
+    "ekuitas": 3026232797059.0,
+    "ekuitas_induk": 3026232797059.0,
+    "modal_saham": null,
+    "saldo_laba": -302051362273.0
+  },
+  "laba_rugi": {
+    "pendapatan": 366564555121.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 7903615139.0,
+    "beban_pajak": -3379216513.0,
+    "laba_bersih": 4189703241.0,
+    "laba_induk": 4189703241.0,
+    "eps_basic": 0.1260061125112782,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 29957408768,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": -19671516098.0,
+    "dividen_dibayar": null
+  }
+}

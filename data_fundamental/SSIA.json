@@ -1,0 +1,102 @@
+{
+  "kode": "SSIA",
+  "nama": "PT Surya Semesta Internusa Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 1020.0,
+  "update": "2026-11-09 17:10",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8180441351800579,
+    "ps": 0.798283650534443,
+    "roe": 65323.66620695479,
+    "eps": null,
+    "eps_annualized": 97.60326748160668,
+    "de": 0.7856302960470646,
+    "margin_net": 63745.72285699887,
+    "current_ratio": 2.0045904381683934,
+    "roa": 28978.515954362116,
+    "bv": 1246.8764900753063,
+    "pcf": 2.2564992643496934e-05,
+    "div_yield": 1239497.308284314,
+    "payout_ratio": 12953329.197593255
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1068246787876.0,
+      "2025-Q2": 1043632945876.0,
+      "2025-Q3": 1203242936452.0,
+      "2026-Q1": 1445987114958.0,
+      "2026-Q2": 1907543153656.0,
+      "2026-Q3": 1455318393687.0
+    },
+    "eps": {
+      "2025-Q1": -4.69,
+      "2025-Q2": -2.29,
+      "2025-Q3": 8.37,
+      "2026-Q1": 18.92,
+      "2026-Q2": 36.88,
+      "2026-Q3": 17.4
+    },
+    "net_income": {
+      "2025-Q1": -2.1701750452e+16,
+      "2025-Q2": -1.0640774842e+16,
+      "2025-Q3": 3.88093351e+16,
+      "2026-Q1": 8.9014164086e+16,
+      "2026-Q2": 1.73544586607e+17,
+      "2026-Q3": 8.1877039052e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4799354372096,
+    "enterprise_value": 9090560425984,
+    "shares_outstanding": 4705249440
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2103,
+    "vol_trend": 1.13,
+    "price_chg_20d": -38.58
+  },
+  "neraca": {
+    "aset": 13225146706911.0,
+    "aset_lancar": 4495862900544.0,
+    "kas": 928948058213.0,
+    "piutang_usaha": 562216435119.0,
+    "persediaan": 13413196834.0,
+    "aset_tetap": 44762410939.0,
+    "liabilitas": 4609186813500.0,
+    "liabilitas_jangka_pendek": 2242783770161.0,
+    "liabilitas_jangka_panjang": 2366403043339.0,
+    "utang_usaha": 562216435119.0,
+    "utang_bank": 370400641577.0,
+    "ekuitas": 5866864906676.0,
+    "ekuitas_induk": 5866864906676.0,
+    "modal_saham": null,
+    "saldo_laba": 43000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4808848662301.0,
+    "beban_pokok": 3227192452104.0,
+    "laba_kotor": 1581656210197.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 617240811913.0,
+    "beban_pajak": -14104303597.0,
+    "laba_bersih": 344435789745.0,
+    "laba_induk": 344435789745.0,
+    "eps_basic": 73.20245061120501,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 212690272256,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 44762410939.0,
+    "dividen_dibayar": 59487868960.0
+  }
+}

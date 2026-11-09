@@ -1,0 +1,102 @@
+{
+  "kode": "NZIA",
+  "nama": "PT Nusantara Almazia Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate - Development",
+  "harga": 82.0,
+  "update": "2026-11-09 17:37",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.3900595829285913e-06,
+    "roe": -0.02176879491889935,
+    "eps": null,
+    "eps_annualized": -3.2666666666666666,
+    "de": 0.1630276445552098,
+    "margin_net": -0.186290550262884,
+    "current_ratio": 7.127592645760048,
+    "roa": -0.01797226943457126,
+    "bv": 206996479.2046935,
+    "pcf": 1.2447280859175538e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.73727e+16,
+      "2025-Q2": 2.090177e+16,
+      "2025-Q3": 6702050000000000.0,
+      "2026-Q1": 4361050000000000.0,
+      "2026-Q2": 2.61329e+16,
+      "2026-Q3": 1.5958917606e+16
+    },
+    "eps": {
+      "2025-Q1": -1.53,
+      "2025-Q2": 0.0,
+      "2025-Q3": -1.35,
+      "2026-Q1": -1.54,
+      "2026-Q2": 0.26,
+      "2026-Q3": -1.17
+    },
+    "net_income": {
+      "2025-Q1": -3371282729000000.0,
+      "2025-Q2": -730266587000000.0,
+      "2025-Q3": -2861454165000000.0,
+      "2026-Q1": -3394735979000000.0,
+      "2026-Q2": -579609473000000.0,
+      "2026-Q3": -3066459233000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 180198326272,
+    "enterprise_value": 241814011904,
+    "shares_outstanding": 2197540705
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3369,
+    "vol_trend": 0.178,
+    "price_chg_20d": -47.37
+  },
+  "neraca": {
+    "aset": 550974315517.0,
+    "aset_lancar": 178135039169.0,
+    "kas": 5930690709.0,
+    "piutang_usaha": 18886668897.0,
+    "persediaan": 52069037963.0,
+    "aset_tetap": 970261968.0,
+    "liabilitas": 74158534825.0,
+    "liabilitas_jangka_pendek": 24992314800.0,
+    "liabilitas_jangka_panjang": 49166220025.0,
+    "utang_usaha": 18886668897.0,
+    "utang_bank": 3300000000.0,
+    "ekuitas": 454883188844.0,
+    "ekuitas_induk": 454883188844.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 46452867606.0,
+    "beban_pokok": 31292709940.0,
+    "laba_kotor": 15160157666.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4803155751.0,
+    "beban_pajak": -570813885.0,
+    "laba_bersih": -7040804685.0,
+    "laba_induk": -7040804685.0,
+    "eps_basic": -2.45,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 14476923904,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 970261968.0,
+    "dividen_dibayar": null
+  }
+}

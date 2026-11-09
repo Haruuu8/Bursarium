@@ -1,0 +1,102 @@
+{
+  "kode": "INOV",
+  "nama": "PT Inocycle Technology Group Tbk",
+  "sektor": "Industrials",
+  "industri": "Waste Management",
+  "harga": 146.0,
+  "update": "2026-11-09 17:36",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00033740124373119335,
+    "roe": 0.3094547351847678,
+    "eps": null,
+    "eps_annualized": 67.15332670177261,
+    "de": 1.5542804279361098,
+    "margin_net": 0.16320756062291814,
+    "current_ratio": 0.6929919920934096,
+    "roa": 0.12115143341360175,
+    "bv": 228217.6966223006,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 129744391000000.0,
+      "2025-Q2": 155461139000000.0,
+      "2025-Q3": 239788508000000.0,
+      "2026-Q1": 177053727000000.0,
+      "2026-Q2": 165127240000000.0,
+      "2026-Q3": 200482879000000.0
+    },
+    "eps": {
+      "2025-Q1": -10.03,
+      "2025-Q2": -0.41,
+      "2025-Q3": 20.26,
+      "2026-Q1": 10.38,
+      "2026-Q2": 13.91,
+      "2026-Q3": 26.07
+    },
+    "net_income": {
+      "2025-Q1": -18137509000000.0,
+      "2025-Q2": -743436000000.0,
+      "2025-Q3": 36631053000000.0,
+      "2026-Q1": 18773664000000.0,
+      "2026-Q2": 25149424000000.0,
+      "2026-Q3": 47147999000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 264000405504,
+    "enterprise_value": 765448552448,
+    "shares_outstanding": 1808221900
+  },
+  "akumulasi": {
+    "score": 6.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.021,
+    "vol_trend": 2.815,
+    "price_chg_20d": 5.76
+  },
+  "neraca": {
+    "aset": 1054070401.0,
+    "aset_lancar": 416679882.0,
+    "kas": 59160351.0,
+    "piutang_usaha": 43594591.0,
+    "persediaan": 115898780.0,
+    "aset_tetap": 380203685.0,
+    "liabilitas": 641402164.0,
+    "liabilitas_jangka_pendek": 601276619.0,
+    "liabilitas_jangka_panjang": 40125545.0,
+    "utang_usaha": 43594591.0,
+    "utang_bank": 510873519.0,
+    "ekuitas": 412668237.0,
+    "ekuitas_induk": 412668237.0,
+    "modal_saham": null,
+    "saldo_laba": 13410867.0
+  },
+  "laba_rugi": {
+    "pendapatan": 542663846.0,
+    "beban_pokok": 403792992.0,
+    "laba_kotor": 138870854.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 98444382.0,
+    "beban_pajak": -7373295.0,
+    "laba_bersih": 91071087.0,
+    "laba_induk": 91071087.0,
+    "eps_basic": 50.36499502632946,
+    "eps_diluted": 50.36499502632946
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -9129396224,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13929357.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "BINO",
+  "nama": "PT Perma Plasindo Tbk",
+  "sektor": "Industrials",
+  "industri": "Business Equipment & Supplies",
+  "harga": 94.0,
+  "update": "2026-11-09 15:01",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 4.4999370216761983e-07,
+    "roe": 0.011379842101105316,
+    "eps": null,
+    "eps_annualized": 6.906666666666666,
+    "de": 0.476581503082174,
+    "margin_net": 0.009949249703587088,
+    "current_ratio": 2.2304588780020254,
+    "roa": 0.007706896245356503,
+    "bv": 182631427.0285585,
+    "pcf": 2.3652002588538426e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.3974029664e+16,
+      "2025-Q2": 7.7586428852e+16,
+      "2025-Q3": 9.7611399458e+16,
+      "2026-Q1": 1.06578361884e+17,
+      "2026-Q2": 1.38609011891e+17,
+      "2026-Q3": 1.32496132904e+17
+    },
+    "eps": {
+      "2025-Q1": -0.27,
+      "2025-Q2": -1.45,
+      "2025-Q3": -3.01,
+      "2026-Q1": -0.0,
+      "2026-Q2": 3.03,
+      "2026-Q3": 2.15
+    },
+    "net_income": {
+      "2025-Q1": -590891055000000.0,
+      "2025-Q2": -3153852238000000.0,
+      "2025-Q3": -6541710094000000.0,
+      "2026-Q1": -8992869000000.0,
+      "2026-Q2": 6602759120000000.0,
+      "2026-Q3": 4676771547000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 213879717888,
+    "enterprise_value": 209113006080,
+    "shares_outstanding": 2275316111
+  },
+  "akumulasi": {
+    "score": 2.9,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1039,
+    "vol_trend": 0.789,
+    "price_chg_20d": -12.26
+  },
+  "neraca": {
+    "aset": 613583932293.0,
+    "aset_lancar": 264379679432.0,
+    "kas": 19616205135.0,
+    "piutang_usaha": 87673679390.0,
+    "persediaan": 131287774239.0,
+    "aset_tetap": 1722094868.0,
+    "liabilitas": 198040692917.0,
+    "liabilitas_jangka_pendek": 118531519249.0,
+    "liabilitas_jangka_panjang": 79509173668.0,
+    "utang_usaha": 87673679390.0,
+    "utang_bank": 14959129131.0,
+    "ekuitas": 415544228293.0,
+    "ekuitas_induk": 415544228293.0,
+    "modal_saham": null,
+    "saldo_laba": 500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 377683506679.0,
+    "beban_pokok": 281320772264.0,
+    "laba_kotor": 96362734415.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11245693196.0,
+    "beban_pajak": null,
+    "laba_bersih": 11270537798.0,
+    "laba_induk": 11270537798.0,
+    "eps_basic": 5.18,
+    "eps_diluted": 5.18
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 9042774016,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1722094868.0,
+    "dividen_dibayar": null
+  }
+}

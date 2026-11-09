@@ -1,0 +1,102 @@
+{
+  "kode": "TFAS",
+  "nama": "PT Telefast Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Staffing & Employment Services",
+  "harga": 132.0,
+  "update": "2026-11-09 17:37",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.754783828947309e-07,
+    "roe": -0.015408088625202978,
+    "eps": null,
+    "eps_annualized": 3.44,
+    "de": 0.33524743422744396,
+    "margin_net": -0.0066144094788382875,
+    "current_ratio": 3.5342723760835115,
+    "roa": -0.011455464467747414,
+    "bv": 98466210.92621431,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 8.317496913e+16,
+      "2025-Q2": 7.3518247021e+16,
+      "2025-Q3": 7.7129449954e+16,
+      "2026-Q1": 1.09811020772e+17,
+      "2026-Q2": 1.23613272025e+17,
+      "2026-Q3": 7.156019608e+16
+    },
+    "eps": {
+      "2025-Q1": -1.34,
+      "2025-Q2": -1.15,
+      "2025-Q3": 3.93,
+      "2026-Q1": 0.19,
+      "2026-Q2": -0.98,
+      "2026-Q3": 3.37
+    },
+    "net_income": {
+      "2025-Q1": -2217621405000000.0,
+      "2025-Q2": -1906295473000000.0,
+      "2025-Q3": 1745248005000000.0,
+      "2026-Q1": 310537201000000.0,
+      "2026-Q2": -1613508045000000.0,
+      "2026-Q3": -2969735220000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 219898314752,
+    "enterprise_value": 259202449408,
+    "shares_outstanding": 1665896300
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3841,
+    "vol_trend": 0.165,
+    "price_chg_20d": -30.11
+  },
+  "neraca": {
+    "aset": 220633398682.0,
+    "aset_lancar": 188041696983.0,
+    "kas": 2312753583.0,
+    "piutang_usaha": 29323909317.0,
+    "persediaan": 92187309271.0,
+    "aset_tetap": 242349499.0,
+    "liabilitas": 54992144062.0,
+    "liabilitas_jangka_pendek": 53205208024.0,
+    "liabilitas_jangka_panjang": 1786936038.0,
+    "utang_usaha": 29323909317.0,
+    "utang_bank": 2164906923.0,
+    "ekuitas": 164034496457.0,
+    "ekuitas_induk": 164034496457.0,
+    "modal_saham": null,
+    "saldo_laba": 500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 304984488877.0,
+    "beban_pokok": 298475875604.0,
+    "laba_kotor": 6508613273.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -4533576029.0,
+    "beban_pajak": null,
+    "laba_bersih": -4272706064.0,
+    "laba_induk": -4272706064.0,
+    "eps_basic": 2.58,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -7674157568,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 173875467.0,
+    "dividen_dibayar": null
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "MERK",
+  "nama": "PT Merck Tbk",
+  "sektor": "Healthcare",
+  "industri": "Drug Manufacturers - Specialty & Generic",
+  "harga": 3450.0,
+  "update": "2026-11-09 16:54",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0011681954834256653,
+    "roe": 0.18573814988028026,
+    "eps": null,
+    "eps_annualized": 0.0002933333333333333,
+    "de": 0.2771990135367354,
+    "margin_net": 0.1332579007278498,
+    "current_ratio": 5.344773500763723,
+    "roa": 0.145426161398251,
+    "bv": 2118826.6383928573,
+    "pcf": 3.451510175734582e-06,
+    "div_yield": 7946.3363742236015,
+    "payout_ratio": 93459751674.10713
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 215161233000000.0,
+      "2025-Q2": 264995649000000.0,
+      "2025-Q3": 333953182000000.0,
+      "2026-Q1": 283105215000000.0,
+      "2026-Q2": 347131273000000.0,
+      "2026-Q3": 358876565000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.03,
+      "2025-Q2": -0.03,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": -0.0
+    },
+    "net_income": {
+      "2025-Q1": 13193847000000.0,
+      "2025-Q2": 9316489000000.0,
+      "2025-Q3": 79589009000000.0,
+      "2026-Q1": 65179144000000.0,
+      "2026-Q2": 46596457000000.0,
+      "2026-Q3": -15055581000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1545599975424,
+    "enterprise_value": 1114351861760,
+    "shares_outstanding": 448000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3563,
+    "vol_trend": 0.823,
+    "price_chg_20d": -6.93
+  },
+  "neraca": {
+    "aset": 1212361155.0,
+    "aset_lancar": 1081796069.0,
+    "kas": 465123157.0,
+    "piutang_usaha": 194340872.0,
+    "persediaan": 356725767.0,
+    "aset_tetap": 1777984.0,
+    "liabilitas": 263126821.0,
+    "liabilitas_jangka_pendek": 202402603.0,
+    "liabilitas_jangka_panjang": 60724218.0,
+    "utang_usaha": 194340872.0,
+    "utang_bank": null,
+    "ekuitas": 949234334.0,
+    "ekuitas_induk": 949234334.0,
+    "modal_saham": null,
+    "saldo_laba": 4480000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 989113053.0,
+    "beban_pokok": 696288398.0,
+    "laba_kotor": 292824655.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 153701666.0,
+    "beban_pajak": -56981646.0,
+    "laba_bersih": 96720020.0,
+    "laba_induk": 96720020.0,
+    "eps_basic": 0.00022,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 447803981824,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1777984.0,
+    "dividen_dibayar": 122818575.0
+  }
+}

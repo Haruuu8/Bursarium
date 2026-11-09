@@ -1,0 +1,96 @@
+{
+  "kode": "MORA",
+  "nama": "PT Mora Telematika Indonesia Tbk",
+  "sektor": "Communication Services",
+  "industri": "Telecom Services",
+  "harga": 1485.0,
+  "update": "2026-11-09 17:24",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 3.898461408716177,
+    "ps": 72.08221647959577,
+    "roe": -9362.219379419033,
+    "eps": null,
+    "eps_annualized": 17.333333333333332,
+    "de": 1.486180938101433,
+    "margin_net": -173106.63189532197,
+    "current_ratio": 1.0805635309126573,
+    "roa": -3706.996999867439,
+    "bv": 380.919507547218,
+    "pcf": 27.13781280426523,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 979211400842.0,
+      "2026-Q1": 962605000.0,
+      "2026-Q2": 1824769452.27,
+      "2026-Q3": 2220074760.68
+    },
+    "eps": {
+      "2025-Q3": 3.0,
+      "2026-Q1": 5.45,
+      "2026-Q2": 7.55,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q3": -1.70881565675e+17,
+      "2026-Q1": 128823000.0,
+      "2026-Q2": 312369367867000.0,
+      "2026-Q3": 194385997410000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 70944672448512,
+    "enterprise_value": 93065465298944,
+    "shares_outstanding": 47774192736
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.7857,
+    "vol_trend": 1.983,
+    "price_chg_20d": -68.04
+  },
+  "neraca": {
+    "aset": 45960331283514.0,
+    "aset_lancar": 9159454206014.0,
+    "kas": 1712800109813.0,
+    "piutang_usaha": 830478775493.0,
+    "persediaan": null,
+    "aset_tetap": 27199981894386.0,
+    "liabilitas": 27045701981747.0,
+    "liabilitas_jangka_pendek": 8476553153962.0,
+    "liabilitas_jangka_panjang": 18569148827785.0,
+    "utang_usaha": 830478775493.0,
+    "utang_bank": 918002690094.0,
+    "ekuitas": 18198121970463.0,
+    "ekuitas_induk": 18198121970463.0,
+    "modal_saham": null,
+    "saldo_laba": 64750031803.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5007449212954.0,
+    "beban_pokok": 1949824537982.0,
+    "laba_kotor": 3057624674972.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 754252785406.0,
+    "beban_pajak": 94960699.0,
+    "laba_bersih": 506755494100.0,
+    "laba_induk": 506755494100.0,
+    "eps_basic": 13.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2614237069312,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 4667383241363.0,
+    "dividen_dibayar": null
+  }
+}

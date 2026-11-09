@@ -1,0 +1,102 @@
+{
+  "kode": "SOTS",
+  "nama": "PT Satria Mega Kencana Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Lodging",
+  "harga": 725.0,
+  "update": "2026-11-09 17:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.385843585567295e-05,
+    "roe": -0.06135395615521683,
+    "eps": null,
+    "eps_annualized": -8.573333333333332,
+    "de": 1.1908765925528861,
+    "margin_net": -0.47804871468890947,
+    "current_ratio": 0.705816286502496,
+    "roa": -0.027288230612874012,
+    "bv": 166840198.72884926,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4450563558000000.0,
+      "2025-Q2": 4848560980000000.0,
+      "2025-Q3": 5554708768000000.0,
+      "2026-Q1": 4920054046000000.0,
+      "2026-Q2": 5138519054000000.0,
+      "2026-Q3": 5799487696000000.0
+    },
+    "eps": {
+      "2025-Q1": -4.91,
+      "2025-Q2": -3.35,
+      "2025-Q3": -3.86,
+      "2026-Q1": 0.63,
+      "2026-Q2": -3.93,
+      "2026-Q3": -3.13
+    },
+    "net_income": {
+      "2025-Q1": -3970606583000000.0,
+      "2025-Q2": -4201504942000000.0,
+      "2025-Q3": -3811079350000000.0,
+      "2026-Q1": 674340720000000.0,
+      "2026-Q2": -3883313438000000.0,
+      "2026-Q3": -3216294900000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 725002878976,
+    "enterprise_value": 726787555328,
+    "shares_outstanding": 1000003979
+  },
+  "akumulasi": {
+    "score": 4.5,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.1033,
+    "vol_trend": 1.421,
+    "price_chg_20d": 0.87
+  },
+  "neraca": {
+    "aset": 375119483312.0,
+    "aset_lancar": 11407159433.0,
+    "kas": 4708427022.0,
+    "piutang_usaha": 579407929.0,
+    "persediaan": 2453409088.0,
+    "aset_tetap": 360431954367.0,
+    "liabilitas": 198686877935.0,
+    "liabilitas_jangka_pendek": 16161655166.0,
+    "liabilitas_jangka_panjang": 182525222769.0,
+    "utang_usaha": 579407929.0,
+    "utang_bank": 11477604060.0,
+    "ekuitas": 166840862586.0,
+    "ekuitas_induk": 166840862586.0,
+    "modal_saham": null,
+    "saldo_laba": -119950655225.0
+  },
+  "laba_rugi": {
+    "pendapatan": 15858060796.0,
+    "beban_pokok": 6790390245.0,
+    "laba_kotor": 9067670551.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -6569822949.0,
+    "beban_pajak": -57956140.0,
+    "laba_bersih": -6425267618.0,
+    "laba_induk": -6425267618.0,
+    "eps_basic": -6.43,
+    "eps_diluted": -6.43
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -901179712,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5064000.0,
+    "dividen_dibayar": null
+  }
+}

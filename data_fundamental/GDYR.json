@@ -1,0 +1,102 @@
+{
+  "kode": "GDYR",
+  "nama": "PT Goodyear Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Auto Parts",
+  "harga": 1055.0,
+  "update": "2026-11-09 16:32",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00300064045342407,
+    "roe": 0.02507099078580435,
+    "eps": 3630.9539365853657,
+    "eps_annualized": -0.0013333333333333333,
+    "de": 0.8097758248998005,
+    "margin_net": 0.010327191721931207,
+    "current_ratio": 1.1287234251195712,
+    "roa": 0.013853091880698772,
+    "bv": 144826.9024390244,
+    "pcf": 0.04907269009214956,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 46795606000000.0,
+      "2025-Q2": 37175939000000.0,
+      "2025-Q3": 36307715000000.0,
+      "2026-Q1": 35128992000000.0,
+      "2026-Q2": 39216286000000.0,
+      "2026-Q3": 33499566000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": -0.0
+    },
+    "net_income": {
+      "2025-Q1": 1347598000000.0,
+      "2025-Q2": 507195000000.0,
+      "2025-Q3": 1489061000000.0,
+      "2026-Q1": 968579000.0,
+      "2026-Q2": 304258000.0,
+      "2026-Q3": -1642723000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 432549986304,
+    "enterprise_value": 424337473536,
+    "shares_outstanding": 410000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4205,
+    "vol_trend": 0.131,
+    "price_chg_20d": -6.33
+  },
+  "neraca": {
+    "aset": 107462733.0,
+    "aset_lancar": 51278412.0,
+    "kas": 13690125.0,
+    "piutang_usaha": 5390951.0,
+    "persediaan": 25306106.0,
+    "aset_tetap": 50285784.0,
+    "liabilitas": 48083703.0,
+    "liabilitas_jangka_pendek": 45430449.0,
+    "liabilitas_jangka_panjang": 2653254.0,
+    "utang_usaha": 5390951.0,
+    "utang_bank": 2894000.0,
+    "ekuitas": 59379030.0,
+    "ekuitas_induk": 59379030.0,
+    "modal_saham": null,
+    "saldo_laba": 80991.0
+  },
+  "laba_rugi": {
+    "pendapatan": 107844844.0,
+    "beban_pokok": 99457889.0,
+    "laba_kotor": 8386955.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -217523.0,
+    "beban_pajak": -152363.0,
+    "laba_bersih": -369886.0,
+    "laba_induk": -369886.0,
+    "eps_basic": -0.001,
+    "eps_diluted": -0.001
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 8814475,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 1865640.0,
+    "dividen_dibayar": null
+  }
+}

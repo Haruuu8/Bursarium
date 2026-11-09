@@ -1,0 +1,102 @@
+{
+  "kode": "CSAP",
+  "nama": "PT Catur Sentosa Adiprana Tbk",
+  "sektor": "Industrials",
+  "industri": "Industrial Distribution",
+  "harga": 256.0,
+  "update": "2026-11-09 16:23",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 7.709815610363272e-05,
+    "roe": 0.054941111993938606,
+    "eps": null,
+    "eps_annualized": 37.33333333333333,
+    "de": 2.453984342069708,
+    "margin_net": 0.010721591826503096,
+    "current_ratio": 1.0012796609526855,
+    "roa": 0.015638579985627694,
+    "bv": 647974.325294554,
+    "pcf": 3.2089674167820406e-06,
+    "div_yield": 2249.217270890513,
+    "payout_ratio": 15423.204143249233
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 4135472923000000.0,
+      "2025-Q2": 4182325751000000.0,
+      "2025-Q3": 4544281017000000.0,
+      "2026-Q1": 4191881419000000.0,
+      "2026-Q2": 4980032286000000.0,
+      "2026-Q3": 5154462012000000.0
+    },
+    "eps": {
+      "2025-Q1": 1.0,
+      "2025-Q2": 3.6,
+      "2025-Q3": 7.4,
+      "2026-Q1": 3.45,
+      "2026-Q2": 13.55,
+      "2026-Q3": 11.0
+    },
+    "net_income": {
+      "2025-Q1": 4258814000000.0,
+      "2025-Q2": 21883022000000.0,
+      "2025-Q3": 40973334000000.0,
+      "2026-Q1": 19616522000000.0,
+      "2026-Q2": 77017616000000.0,
+      "2026-Q3": 64716007000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1454892777472,
+    "enterprise_value": 6146793406464,
+    "shares_outstanding": 5683175151
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.1851,
+    "vol_trend": 1.097,
+    "price_chg_20d": -14.29
+  },
+  "neraca": {
+    "aset": 12937458464.0,
+    "aset_lancar": 6980590690.0,
+    "kas": 122798024.0,
+    "piutang_usaha": 1782400384.0,
+    "persediaan": 4468402710.0,
+    "aset_tetap": 5416850469.0,
+    "liabilitas": 9036923926.0,
+    "liabilitas_jangka_pendek": 6971669317.0,
+    "liabilitas_jangka_panjang": 2065254609.0,
+    "utang_usaha": 1782400384.0,
+    "utang_bank": 2428120569.0,
+    "ekuitas": 3682551584.0,
+    "ekuitas_induk": 3682551584.0,
+    "modal_saham": null,
+    "saldo_laba": 3800000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14326375717.0,
+    "beban_pokok": 11986081973.0,
+    "laba_kotor": 2340293744.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 228856825.0,
+    "beban_pajak": -45525800.0,
+    "laba_bersih": 161350145.0,
+    "laba_induk": 161350145.0,
+    "eps_basic": 28.0,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 453383487488,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 324413805.0,
+    "dividen_dibayar": 32723701.0
+  }
+}

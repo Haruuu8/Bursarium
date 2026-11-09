@@ -1,0 +1,102 @@
+{
+  "kode": "PKPK",
+  "nama": "PT Paragon Karya Perkasa Tbk",
+  "sektor": "Industrials",
+  "industri": "Engineering & Construction",
+  "harga": 6075.0,
+  "update": "2026-11-09 17:01",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.004072672377065077,
+    "roe": 0.5871487199789346,
+    "eps": null,
+    "eps_annualized": 194.46666666666664,
+    "de": 8.215401557120675,
+    "margin_net": 0.06900399338655214,
+    "current_ratio": 0.5042655985823546,
+    "roa": 0.043986442683485165,
+    "bv": 175304.43916666668,
+    "pcf": 9.584532296179704e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 57819608000000.0,
+      "2025-Q2": 199913111000000.0,
+      "2025-Q3": 331481471000000.0,
+      "2026-Q1": 196533114000000.0,
+      "2026-Q2": 390777262000000.0,
+      "2026-Q3": 871187637000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 7.93,
+      "2025-Q3": -0.74,
+      "2026-Q1": 14.4,
+      "2026-Q2": 41.34,
+      "2026-Q3": 90.11
+    },
+    "net_income": {
+      "2025-Q1": 94658000.0,
+      "2025-Q2": 9417866000.0,
+      "2025-Q3": 8620746476000.0,
+      "2026-Q1": 17284061000000.0,
+      "2026-Q2": 49609646000000.0,
+      "2026-Q3": 48001279000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 7290000244736,
+    "enterprise_value": 9159092207616,
+    "shares_outstanding": 1200000000
+  },
+  "akumulasi": {
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2036,
+    "vol_trend": 1.143,
+    "price_chg_20d": -13.78
+  },
+  "neraca": {
+    "aset": 2808040954.0,
+    "aset_lancar": 864273351.0,
+    "kas": 93775038.0,
+    "piutang_usaha": 74926465.0,
+    "persediaan": 582374790.0,
+    "aset_tetap": 10317000.0,
+    "liabilitas": 1728235635.0,
+    "liabilitas_jangka_pendek": 1713924871.0,
+    "liabilitas_jangka_panjang": 14310764.0,
+    "utang_usaha": 74926465.0,
+    "utang_bank": 48450000.0,
+    "ekuitas": 210365327.0,
+    "ekuitas_induk": 210365327.0,
+    "modal_saham": null,
+    "saldo_laba": 1000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1458498013.0,
+    "beban_pokok": 1028658878.0,
+    "laba_kotor": 429839135.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 216850437.0,
+    "beban_pajak": 6911733.0,
+    "laba_bersih": 114894986.0,
+    "laba_induk": 114894986.0,
+    "eps_basic": 145.85,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 76060049408,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 10317000.0,
+    "dividen_dibayar": null
+  }
+}

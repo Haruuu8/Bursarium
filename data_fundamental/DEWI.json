@@ -1,0 +1,102 @@
+{
+  "kode": "DEWI",
+  "nama": "PT Dewi Shri Farmindo Tbk.",
+  "sektor": "Consumer Defensive",
+  "industri": "Farm Products",
+  "harga": 242.0,
+  "update": "2026-11-09 15:12",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 6.242955914913122e-06,
+    "roe": 0.032051988799339536,
+    "eps": null,
+    "eps_annualized": 2.6133333333333333,
+    "de": 0.1782640752833497,
+    "margin_net": 0.06901442997012044,
+    "current_ratio": 3.739709130959818,
+    "roa": 0.027202720910956785,
+    "bv": 83466080.6775,
+    "pcf": 2.8137988681611724e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.2068038255e+16,
+      "2025-Q2": 1.354134035e+16,
+      "2025-Q3": 2.1087563059e+16,
+      "2026-Q1": 2.4419581959e+16,
+      "2026-Q2": 1.2684148715e+16,
+      "2026-Q3": 1.9336083778e+16
+    },
+    "eps": {
+      "2025-Q1": 0.54,
+      "2025-Q2": 0.39,
+      "2025-Q3": 0.71,
+      "2026-Q1": 1.21,
+      "2026-Q2": 0.11,
+      "2026-Q3": 0.63
+    },
+    "net_income": {
+      "2025-Q1": 1071850001000000.0,
+      "2025-Q2": 787159616000000.0,
+      "2025-Q3": 1424075025000000.0,
+      "2026-Q1": 2424480537000000.0,
+      "2026-Q2": 226610952000000.0,
+      "2026-Q3": 1275341252000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 484000006144,
+    "enterprise_value": 484845584384,
+    "shares_outstanding": 2000000000
+  },
+  "akumulasi": {
+    "score": 6.3,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1184,
+    "vol_trend": 0.629,
+    "price_chg_20d": -7.87
+  },
+  "neraca": {
+    "aset": 196690168734.0,
+    "aset_lancar": 108669548565.0,
+    "kas": 8777248393.0,
+    "piutang_usaha": 71440371701.0,
+    "persediaan": 17910127406.0,
+    "aset_tetap": 54878019362.0,
+    "liabilitas": 29758007379.0,
+    "liabilitas_jangka_pendek": 29058288963.0,
+    "liabilitas_jangka_panjang": 699718416.0,
+    "utang_usaha": 71440371701.0,
+    "utang_bank": 25622830871.0,
+    "ekuitas": 166932161355.0,
+    "ekuitas_induk": 166932161355.0,
+    "modal_saham": null,
+    "saldo_laba": 800000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 56439814452.0,
+    "beban_pokok": 46533552168.0,
+    "laba_kotor": 9906262284.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 4543833335.0,
+    "beban_pajak": -617400594.0,
+    "laba_bersih": 3926432741.0,
+    "laba_induk": 3926432741.0,
+    "eps_basic": 1.96,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 17200945152,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13059627729.0,
+    "dividen_dibayar": null
+  }
+}

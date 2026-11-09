@@ -1,0 +1,102 @@
+{
+  "kode": "RALS",
+  "nama": "PT Ramayana Lestari Sentosa Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 362.0,
+  "update": "2026-11-09 17:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.6337339322368307,
+    "ps": 1088.8490899329518,
+    "roe": 7.994023330811664e-05,
+    "eps": 0.04566327126495692,
+    "eps_annualized": 52.17333333333333,
+    "de": 0.257723312519815,
+    "margin_net": 0.13734920265251338,
+    "current_ratio": 5.777064414659165,
+    "roa": 6.35594748959201e-05,
+    "bv": 571.2176381691964,
+    "pcf": 3.150225794514221e-06,
+    "div_yield": 13812.160775052149,
+    "payout_ratio": 95834.44033801836
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 829094000.0,
+      "2025-Q2": 673932000.0,
+      "2025-Q3": 374993000.0,
+      "2026-Q1": 985162000.0,
+      "2026-Q2": 327730000.0,
+      "2026-Q3": 351690000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 38.84,
+      "2025-Q3": 7.18,
+      "2026-Q1": 32.54,
+      "2026-Q2": 1.4,
+      "2026-Q3": 5.19
+    },
+    "net_income": {
+      "2025-Q1": 106817000.0,
+      "2025-Q2": 123551000.0,
+      "2025-Q3": 42608000.0,
+      "2026-Q1": 193294000.0,
+      "2026-Q2": 11616000.0,
+      "2026-Q3": 32616000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 2220789334016,
+    "enterprise_value": 516428496896,
+    "shares_outstanding": 6134777300
+  },
+  "akumulasi": {
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1315,
+    "vol_trend": 1.436,
+    "price_chg_20d": -3.72
+  },
+  "neraca": {
+    "aset": 4407431.0,
+    "aset_lancar": 2371017.0,
+    "kas": 988098.0,
+    "piutang_usaha": 3648.0,
+    "persediaan": 217738.0,
+    "aset_tetap": 36728.0,
+    "liabilitas": 903138.0,
+    "liabilitas_jangka_pendek": 410419.0,
+    "liabilitas_jangka_panjang": 492719.0,
+    "utang_usaha": 3648.0,
+    "utang_bank": null,
+    "ekuitas": 3504293.0,
+    "ekuitas_induk": 3504293.0,
+    "modal_saham": null,
+    "saldo_laba": 70000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 1664582.0,
+    "beban_pokok": 734985.0,
+    "laba_kotor": 929597.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 267158.0,
+    "beban_pajak": -29632.0,
+    "laba_bersih": 237526.0,
+    "laba_induk": 237526.0,
+    "eps_basic": 39.13,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 704961970176,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 36728.0,
+    "dividen_dibayar": 306739.0
+  }
+}

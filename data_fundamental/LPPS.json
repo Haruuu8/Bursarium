@@ -1,0 +1,102 @@
+{
+  "kode": "LPPS",
+  "nama": "PT Lenox Pasifik Investama Tbk",
+  "sektor": "Financial Services",
+  "industri": "Capital Markets",
+  "harga": 54.0,
+  "update": "2026-11-09 16:52",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0002321686046511628,
+    "roe": -0.3626318505018139,
+    "eps": null,
+    "eps_annualized": -118.93333333333334,
+    "de": 0.00024387011601538657,
+    "margin_net": -831.4593684806201,
+    "current_ratio": 3763.2871407120465,
+    "roa": -0.36254343699177405,
+    "bv": 533292349.5812485,
+    "pcf": 3.222543937488418e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 84000000000000.0,
+      "2025-Q2": 42000000000000.0,
+      "2025-Q3": 63000000000000.0,
+      "2026-Q1": 85000000000000.0,
+      "2026-Q2": 44000000000000.0,
+      "2026-Q3": 66000000000000.0
+    },
+    "eps": {
+      "2025-Q1": -11.59,
+      "2025-Q2": 13.1,
+      "2025-Q3": 6.32,
+      "2026-Q1": -27.01,
+      "2026-Q2": -3.9,
+      "2026-Q3": -58.29
+    },
+    "net_income": {
+      "2025-Q1": -3.0003407675e+16,
+      "2025-Q2": 3.3913759411e+16,
+      "2025-Q3": 1.6346771678e+16,
+      "2026-Q1": -6.9912145347e+16,
+      "2026-Q2": -1.0094418542e+16,
+      "2026-Q3": -1.50856724857e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 139765514240,
+    "enterprise_value": 2016344320,
+    "shares_outstanding": 1109250000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2999,
+    "vol_trend": 0.696,
+    "price_chg_20d": -11.67
+  },
+  "neraca": {
+    "aset": 591698801247.0,
+    "aset_lancar": 125858313887.0,
+    "kas": 111590981289.0,
+    "piutang_usaha": 23980000.0,
+    "persediaan": null,
+    "aset_tetap": 321174364.0,
+    "liabilitas": 144262474.0,
+    "liabilitas_jangka_pendek": 33443718.0,
+    "liabilitas_jangka_panjang": 110818756.0,
+    "utang_usaha": 23980000.0,
+    "utang_bank": null,
+    "ekuitas": 591554538773.0,
+    "ekuitas_induk": 591554538773.0,
+    "modal_saham": null,
+    "saldo_laba": 2500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 195000000.0,
+    "beban_pokok": null,
+    "laba_kotor": 195000000.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -230868014841.0,
+    "beban_pajak": 4726095.0,
+    "laba_bersih": -230863288746.0,
+    "laba_induk": -230863288746.0,
+    "eps_basic": -89.2,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1858764416,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}

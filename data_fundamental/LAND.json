@@ -1,0 +1,102 @@
+{
+  "kode": "LAND",
+  "nama": "PT Trimitra Propertindo Tbk",
+  "sektor": "Real Estate",
+  "industri": "Real Estate Services",
+  "harga": 34.0,
+  "update": "2026-11-09 17:29",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.985352881752868e-06,
+    "roe": 0.0006444334781918963,
+    "eps": null,
+    "eps_annualized": 0.26666666666666666,
+    "de": 0.8722168419866494,
+    "margin_net": 0.0061905598223413,
+    "current_ratio": 1.074820746722982,
+    "roa": 0.00034420878166445407,
+    "bv": 164510278.4159678,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.1282699255e+16,
+      "2025-Q2": 1.3102964026e+16,
+      "2025-Q3": 1.1415272106e+16,
+      "2026-Q1": 9774184792000000.0,
+      "2026-Q2": 9666065456000000.0,
+      "2026-Q3": 1.6969265306e+16
+    },
+    "eps": {
+      "2025-Q1": 0.05,
+      "2025-Q2": 0.13,
+      "2025-Q3": -0.09,
+      "2026-Q1": 0.13,
+      "2026-Q2": -0.02,
+      "2026-Q3": 0.09
+    },
+    "net_income": {
+      "2025-Q1": 135642817000000.0,
+      "2025-Q2": 373585683000000.0,
+      "2025-Q3": -263818302000000.0,
+      "2026-Q1": 359641687000000.0,
+      "2026-Q2": -55612996000000.0,
+      "2026-Q3": 255851820000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 94949081088,
+    "enterprise_value": 325603491840,
+    "shares_outstanding": 2792620000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.3464,
+    "vol_trend": 0.154,
+    "price_chg_20d": -38.6
+  },
+  "neraca": {
+    "aset": 860123927020.0,
+    "aset_lancar": 179765781094.0,
+    "kas": 10071031972.0,
+    "piutang_usaha": 8435341497.0,
+    "persediaan": 750231944.0,
+    "aset_tetap": 20848098172.0,
+    "liabilitas": 400709233310.0,
+    "liabilitas_jangka_pendek": 167251871200.0,
+    "liabilitas_jangka_panjang": 233457362110.0,
+    "utang_usaha": 8435341497.0,
+    "utang_bank": 4924999998.0,
+    "ekuitas": 459414693710.0,
+    "ekuitas_induk": 459414693710.0,
+    "modal_saham": null,
+    "saldo_laba": -44615496870.0
+  },
+  "laba_rugi": {
+    "pendapatan": 36409515554.0,
+    "beban_pokok": 18999313029.0,
+    "laba_kotor": 17410202525.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1077708657.0,
+    "beban_pajak": -517828146.0,
+    "laba_bersih": 559880511.0,
+    "laba_induk": 559880511.0,
+    "eps_basic": 0.2,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -101580390400,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 13107049.0,
+    "dividen_dibayar": null
+  }
+}

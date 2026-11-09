@@ -1,0 +1,102 @@
+{
+  "kode": "ARGO",
+  "nama": "PT Argo Pantes Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Textile Manufacturing",
+  "harga": 1175.0,
+  "update": "2026-11-09 16:06",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.445069368265077e-05,
+    "roe": -0.31233652274912227,
+    "eps": null,
+    "eps_annualized": 15.12,
+    "de": 6.744195113679876,
+    "margin_net": -0.4532481159390127,
+    "current_ratio": 0.5047072086730857,
+    "roa": -40331.695956031595,
+    "bv": 49494065.878493786,
+    "pcf": 3.967316783405699e-05,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.0429399853e+16,
+      "2025-Q2": 2.5197140753e+16,
+      "2025-Q3": 2.95563951e+16,
+      "2026-Q1": 2.9435141976e+16,
+      "2026-Q2": 2.3425734985e+16,
+      "2026-Q3": 2.5849005345e+16
+    },
+    "eps": {
+      "2025-Q1": -2.98,
+      "2025-Q2": 6.61,
+      "2025-Q3": -4.12,
+      "2026-Q1": -0.78,
+      "2026-Q2": -9.79,
+      "2026-Q3": 21.91
+    },
+    "net_income": {
+      "2025-Q1": -9446597573000000.0,
+      "2025-Q2": 2.0976819552e+16,
+      "2025-Q3": -1.3090121552e+16,
+      "2026-Q1": -2474933813000000.0,
+      "2026-Q2": -3.1070737909e+16,
+      "2026-Q3": -2435692980000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 3729848532992,
+    "enterprise_value": 4496881090560,
+    "shares_outstanding": 3174339029
+  },
+  "akumulasi": {
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.4509,
+    "vol_trend": 0.478,
+    "price_chg_20d": -0.42
+  },
+  "neraca": {
+    "aset": 1216697812745.0,
+    "aset_lancar": 255688242901.0,
+    "kas": 74603103806.0,
+    "piutang_usaha": 16730031320.0,
+    "persediaan": 4861372977.0,
+    "aset_tetap": 2533699036.0,
+    "liabilitas": 1059586867723.0,
+    "liabilitas_jangka_pendek": 506607075364.0,
+    "liabilitas_jangka_panjang": 552979792359.0,
+    "utang_usaha": 16730031320.0,
+    "utang_bank": 152983000000.0,
+    "ekuitas": 157110945022.0,
+    "ekuitas_induk": 157110945022.0,
+    "modal_saham": null,
+    "saldo_laba": -2331771661957.0
+  },
+  "laba_rugi": {
+    "pendapatan": 78709882306.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -37642555736.0,
+    "beban_pajak": 1661191034.0,
+    "laba_bersih": -35981364702.0,
+    "laba_induk": -35981364702.0,
+    "eps_basic": 11.34,
+    "eps_diluted": 11.34
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 94014382080,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 2533699036.0,
+    "dividen_dibayar": null
+  }
+}

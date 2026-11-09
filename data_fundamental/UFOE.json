@@ -1,0 +1,102 @@
+{
+  "kode": "UFOE",
+  "nama": "PT Damai Sejahtera Abadi Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Department Stores",
+  "harga": 110.0,
+  "update": "2026-11-09 17:46",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.6404899517548113e-07,
+    "roe": 0.09726644128073417,
+    "eps": null,
+    "eps_annualized": 9.933333333333334,
+    "de": 1.275380155750843,
+    "margin_net": 0.021363356229116157,
+    "current_ratio": 1.0532507357269623,
+    "roa": 0.04267357627723389,
+    "bv": 91498636.39832471,
+    "pcf": 0.0001062847779779646,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2.71742596853e+17,
+      "2025-Q2": 2.82941783596e+17,
+      "2025-Q3": 2.6599010375999994e+17,
+      "2026-Q1": 3.18835320502e+17,
+      "2026-Q2": 3.3068025014299994e+17,
+      "2026-Q3": 2.9187928844300006e+17
+    },
+    "eps": {
+      "2025-Q1": 0.95,
+      "2025-Q2": 3.05,
+      "2025-Q3": 2.15,
+      "2026-Q1": 0.93,
+      "2026-Q2": 2.46,
+      "2026-Q3": 4.06
+    },
+    "net_income": {
+      "2025-Q1": 2744364056000000.0,
+      "2025-Q2": 5016694133000000.0,
+      "2025-Q3": 4195977577000000.0,
+      "2026-Q1": 2695951628000000.0,
+      "2026-Q2": 7133073064000000.0,
+      "2026-Q3": 1.1768792798e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 318808784896,
+    "enterprise_value": 463589933056,
+    "shares_outstanding": 2898261693
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.461,
+    "vol_trend": 0.526,
+    "price_chg_20d": -21.83
+  },
+  "neraca": {
+    "aset": 604444185775.0,
+    "aset_lancar": 329967768549.0,
+    "kas": 5476214475.0,
+    "piutang_usaha": 24812836707.0,
+    "persediaan": 267462766638.0,
+    "aset_tetap": 226207439219.0,
+    "liabilitas": 338214228225.0,
+    "liabilitas_jangka_pendek": 313285106154.0,
+    "liabilitas_jangka_panjang": 24929122071.0,
+    "utang_usaha": 24812836707.0,
+    "utang_bank": 122355003394.0,
+    "ekuitas": 265186992835.0,
+    "ekuitas_induk": 265186992835.0,
+    "modal_saham": null,
+    "saldo_laba": 9000000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 941394859088.0,
+    "beban_pokok": 815077601229.0,
+    "laba_kotor": 126317257859.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 27283570402.0,
+    "beban_pajak": -5542533702.0,
+    "laba_bersih": 21597817490.0,
+    "laba_induk": 21597817490.0,
+    "eps_basic": 7.45,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 2999571456,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 12230226463.0,
+    "dividen_dibayar": null
+  }
+}

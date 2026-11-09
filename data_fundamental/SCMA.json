@@ -1,0 +1,102 @@
+{
+  "kode": "SCMA",
+  "nama": "PT Surya Citra Media Tbk",
+  "sektor": "Communication Services",
+  "industri": "Broadcasting",
+  "harga": 134.0,
+  "update": "2026-11-09 17:05",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.0012124863547371555,
+    "roe": 0.17087907162996088,
+    "eps": null,
+    "eps_annualized": 18.146666666666665,
+    "de": 0.4159055948411437,
+    "margin_net": 0.1617517891587385,
+    "current_ratio": 2.7312408190051056,
+    "roa": 0.10813036279971502,
+    "bv": 104613.6020305172,
+    "pcf": 7.330172038221243,
+    "div_yield": 9072.013674750991,
+    "payout_ratio": 66990.25527644929
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1737894633000000.0,
+      "2025-Q2": 1585365754000000.0,
+      "2025-Q3": 1723170465000000.0,
+      "2026-Q1": 1863956570000000.0,
+      "2026-Q2": 1683031254000000.0,
+      "2026-Q3": 1748172438000000.0
+    },
+    "eps": {
+      "2025-Q1": 2.42,
+      "2025-Q2": 2.63,
+      "2025-Q3": 4.27,
+      "2026-Q1": 4.84,
+      "2026-Q2": 3.61,
+      "2026-Q3": 5.16
+    },
+    "net_income": {
+      "2025-Q1": 153652369000000.0,
+      "2025-Q2": 167063993000000.0,
+      "2025-Q3": 270857406000000.0,
+      "2026-Q1": 307630011000000.0,
+      "2026-Q2": 228814770000000.0,
+      "2026-Q3": 327925365000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 8509630447616,
+    "enterprise_value": 8145199431680,
+    "shares_outstanding": 63504703280
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2164,
+    "vol_trend": 1.087,
+    "price_chg_20d": -24.44
+  },
+  "neraca": {
+    "aset": 10498693638.0,
+    "aset_lancar": 6854225339.0,
+    "kas": 1669403323.0,
+    "piutang_usaha": 2037756568.0,
+    "persediaan": 1342984162.0,
+    "aset_tetap": 36424274.0,
+    "liabilitas": 2763050418.0,
+    "liabilitas_jangka_pendek": 2509564624.0,
+    "liabilitas_jangka_panjang": 253485794.0,
+    "utang_usaha": 2037756568.0,
+    "utang_bank": 405188049.0,
+    "ekuitas": 6643455756.0,
+    "ekuitas_induk": 6643455756.0,
+    "modal_saham": null,
+    "saldo_laba": 24000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 5295160262.0,
+    "beban_pokok": 2999641722.0,
+    "laba_kotor": 2295518540.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1123757448.0,
+    "beban_pajak": -226281550.0,
+    "laba_bersih": 864370146.0,
+    "laba_induk": 864370146.0,
+    "eps_basic": 13.61,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1160904572928,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 36424274.0,
+    "dividen_dibayar": 771994819.0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "kode": "MSIN",
+  "nama": "PT MNC Digital Entertainment Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 82.0,
+  "update": "2026-11-09 17:27",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.7280242540996524,
+    "ps": 1.872541057385117,
+    "roe": 5.743968878769163e-05,
+    "eps": 0.0064696395127874385,
+    "eps_annualized": 6.72e-05,
+    "de": 0.22680082766366746,
+    "margin_net": 0.00014773982456311614,
+    "current_ratio": 2.8433541698602762,
+    "roa": 4.548653183691068e-05,
+    "bv": 112.63361012801613,
+    "pcf": 0.00034230798699018156,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 989790000.0,
+      "2025-Q2": 887731000.0,
+      "2025-Q3": 1018086000.0,
+      "2026-Q1": 1065041000000.0,
+      "2026-Q2": 937682000000.0,
+      "2026-Q3": 653315000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 122877000.0,
+      "2025-Q2": 194089000.0,
+      "2025-Q3": 86448000.0,
+      "2026-Q1": 162477000.0,
+      "2026-Q2": 121870000.0,
+      "2026-Q3": 21758000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 4975446458368,
+    "enterprise_value": 5550839955456,
+    "shares_outstanding": 60676178205
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.5763,
+    "vol_trend": 0.648,
+    "price_chg_20d": -52.51
+  },
+  "neraca": {
+    "aset": 8630093.0,
+    "aset_lancar": 3004851.0,
+    "kas": 129193.0,
+    "piutang_usaha": 588297.0,
+    "persediaan": 774497.0,
+    "aset_tetap": 1727287.0,
+    "liabilitas": 1549997.0,
+    "liabilitas_jangka_pendek": 1056798.0,
+    "liabilitas_jangka_panjang": 493199.0,
+    "utang_usaha": 588297.0,
+    "utang_bank": 8271.0,
+    "ekuitas": 6834177.0,
+    "ekuitas_induk": 6834177.0,
+    "modal_saham": null,
+    "saldo_laba": 8000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2656038.0,
+    "beban_pokok": 1910225.0,
+    "laba_kotor": 745813.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 331244.0,
+    "beban_pajak": -28850.0,
+    "laba_bersih": 306105.0,
+    "laba_induk": 306105.0,
+    "eps_basic": 5.04e-05,
+    "eps_diluted": 5.04e-05
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 14535000064,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 19013.0,
+    "dividen_dibayar": null
+  }
+}

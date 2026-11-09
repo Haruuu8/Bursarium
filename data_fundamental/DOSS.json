@@ -1,0 +1,102 @@
+{
+  "kode": "DOSS",
+  "nama": "PT Global Sukses Digital Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Specialty Retail",
+  "harga": 122.0,
+  "update": "2026-11-09 15:49",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 1.9786782730552859e-07,
+    "roe": 0.21006644662172344,
+    "eps": null,
+    "eps_annualized": 27.64,
+    "de": 0.4093008998929789,
+    "margin_net": 0.044877752668699915,
+    "current_ratio": 3.133272645298777,
+    "roa": 0.14853822373209294,
+    "bv": 131722224.75072464,
+    "pcf": null,
+    "div_yield": 2459016.393442623,
+    "payout_ratio": 10853835.02170767
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1.9286400413e+17,
+      "2025-Q2": 1.91269215879e+17,
+      "2025-Q3": 2.39775986839e+17,
+      "2026-Q1": 2.8557708406e+17,
+      "2026-Q2": 2.94084014596e+17,
+      "2026-Q3": 2.4415168922300006e+17
+    },
+    "eps": {
+      "2025-Q1": 3.23,
+      "2025-Q2": 3.93,
+      "2025-Q3": 6.94,
+      "2026-Q1": 6.14,
+      "2026-Q2": 9.02,
+      "2026-Q3": 5.57
+    },
+    "net_income": {
+      "2025-Q1": 5568595141000000.0,
+      "2025-Q2": 6787506637000000.0,
+      "2025-Q3": 1.1966554816e+16,
+      "2026-Q1": 1.0598167565e+16,
+      "2026-Q2": 1.5555935786e+16,
+      "2026-Q3": 9610815806000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 210449989632,
+    "enterprise_value": 146394447872,
+    "shares_outstanding": 1725000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2463,
+    "vol_trend": 0.55,
+    "price_chg_20d": -23.9
+  },
+  "neraca": {
+    "aset": 321341354257.0,
+    "aset_lancar": 286876335123.0,
+    "kas": 67377873793.0,
+    "piutang_usaha": 51757347174.0,
+    "persediaan": 104066590300.0,
+    "aset_tetap": 5637238148.0,
+    "liabilitas": 93001693343.0,
+    "liabilitas_jangka_pendek": 91558050511.0,
+    "liabilitas_jangka_panjang": 1443642832.0,
+    "utang_usaha": 51757347174.0,
+    "utang_bank": null,
+    "ekuitas": 227220837695.0,
+    "ekuitas_induk": 227220837695.0,
+    "modal_saham": null,
+    "saldo_laba": 1500000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 823812787879.0,
+    "beban_pokok": 778459144850.0,
+    "laba_kotor": 45353643029.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 46151818636.0,
+    "beban_pajak": -10801009039.0,
+    "laba_bersih": 35764919157.0,
+    "laba_induk": 35764919157.0,
+    "eps_basic": 20.73,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -3605071104,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 5637238148.0,
+    "dividen_dibayar": 5175000000.0
+  }
+}

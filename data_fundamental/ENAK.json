@@ -1,0 +1,96 @@
+{
+  "kode": "ENAK",
+  "nama": "PT Champ Resto Indonesia Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Restaurants",
+  "harga": 175.0,
+  "update": "2026-11-09 15:04",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 3.3710680348049584e-06,
+    "roe": -1.0669210674797904,
+    "eps": null,
+    "eps_annualized": -68.88,
+    "de": 5.743366986135869,
+    "margin_net": -1.2793695007423955,
+    "current_ratio": 0.16051882993906766,
+    "roa": -0.15821785610561362,
+    "bv": 62249265.81021967,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": -7.41993251744018e+17,
+      "2026-Q1": 3.41550454877e+17,
+      "2026-Q2": 2.7469047591400006e+17,
+      "2026-Q3": 2.3785595134499994e+17
+    },
+    "eps": {
+      "2025-Q3": -14.53,
+      "2026-Q1": -8.35,
+      "2026-Q2": -21.41,
+      "2026-Q3": -21.9
+    },
+    "net_income": {
+      "2025-Q3": -3.1486366303e+16,
+      "2026-Q1": -1.8098439663e+16,
+      "2026-Q2": -4.6375888983e+16,
+      "2026-Q3": -4.7461270697e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 377908953088,
+    "enterprise_value": 851510165504,
+    "shares_outstanding": 2159479800
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4971,
+    "vol_trend": 2.512,
+    "price_chg_20d": -13.11
+  },
+  "neraca": {
+    "aset": 906484066819.0,
+    "aset_lancar": 77891388634.0,
+    "kas": 12477241430.0,
+    "piutang_usaha": 2662202981.0,
+    "persediaan": 29152473051.0,
+    "aset_tetap": 473502486399.0,
+    "liabilitas": 772058034737.0,
+    "liabilitas_jangka_pendek": 485247672585.0,
+    "liabilitas_jangka_panjang": 286810362152.0,
+    "utang_usaha": 2662202981.0,
+    "utang_bank": 48337826263.0,
+    "ekuitas": 134426032082.0,
+    "ekuitas_induk": 134426032082.0,
+    "modal_saham": null,
+    "saldo_laba": 300000000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 854096882136.0,
+    "beban_pokok": 295131470841.0,
+    "laba_kotor": 558965411295.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": -100898000281.0,
+    "beban_pajak": -11037599062.0,
+    "laba_bersih": -111935599343.0,
+    "laba_induk": -111935599343.0,
+    "eps_basic": -51.66,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -12002270208,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": -837364536.0,
+    "dividen_dibayar": null
+  }
+}

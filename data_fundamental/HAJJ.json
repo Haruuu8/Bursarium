@@ -1,0 +1,102 @@
+{
+  "kode": "HAJJ",
+  "nama": "PT Arsy Buana Travelindo Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Travel Services",
+  "harga": 81.0,
+  "update": "2026-11-09 15:29",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 2.3165111776632862e-07,
+    "roe": 0.08509167267851402,
+    "eps": null,
+    "eps_annualized": 4.76,
+    "de": 2.498204460999171,
+    "margin_net": 0.020415116808573122,
+    "current_ratio": 1.7020002423024574,
+    "roa": 0.024324385160211532,
+    "bv": 83891010.77498518,
+    "pcf": 1.8857680578227973e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3.25138640616e+17,
+      "2025-Q2": 1.96627044644e+17,
+      "2025-Q3": 2.05485446892e+17,
+      "2026-Q1": 2.8764395726e+17,
+      "2026-Q2": 7.5951750652e+16,
+      "2026-Q3": 2.94073468666e+17
+    },
+    "eps": {
+      "2025-Q1": 11.72,
+      "2025-Q2": -0.65,
+      "2025-Q3": 3.31,
+      "2026-Q1": 8.95,
+      "2026-Q2": 0.19,
+      "2026-Q3": -5.57
+    },
+    "net_income": {
+      "2025-Q1": 2.6840399829e+16,
+      "2025-Q2": -144544404000000.0,
+      "2025-Q3": 8801784013000000.0,
+      "2026-Q1": 2.2088206968e+16,
+      "2026-Q2": 466927040000000.0,
+      "2026-Q3": -1.3735515559e+16
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 199950729216,
+    "enterprise_value": 226239250432,
+    "shares_outstanding": 2468527572
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2473,
+    "vol_trend": 0.712,
+    "price_chg_20d": -36.51
+  },
+  "neraca": {
+    "aset": 724433622718.0,
+    "aset_lancar": 704919457994.0,
+    "kas": 94309098271.0,
+    "piutang_usaha": 190426112905.0,
+    "persediaan": 285530779809.0,
+    "aset_tetap": 11704677301.0,
+    "liabilitas": 517346349577.0,
+    "liabilitas_jangka_pendek": 414171185452.0,
+    "liabilitas_jangka_panjang": 103175164125.0,
+    "utang_usaha": 190426112905.0,
+    "utang_bank": 18468528075.0,
+    "ekuitas": 207087273141.0,
+    "ekuitas_induk": 207087273141.0,
+    "modal_saham": null,
+    "saldo_laba": 21836293780.0
+  },
+  "laba_rugi": {
+    "pendapatan": 657669176578.0,
+    "beban_pokok": 609086807026.0,
+    "laba_kotor": 48582369552.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 11234335954.0,
+    "beban_pajak": -2414717505.0,
+    "laba_bersih": 8819618449.0,
+    "laba_induk": 8819618449.0,
+    "eps_basic": 3.57,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 106031456256,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 7527010507.0,
+    "dividen_dibayar": null
+  }
+}

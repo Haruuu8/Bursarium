@@ -1,0 +1,102 @@
+{
+  "kode": "MIKA",
+  "nama": "PT Mitra Keluarga Karyasehat Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Care Facilities",
+  "harga": 1310.0,
+  "update": "2026-11-09 16:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 2.3616486324916965,
+    "ps": 3.2006649261888724,
+    "roe": -82764.84074316573,
+    "eps": null,
+    "eps_annualized": 104.14666666666666,
+    "de": 0.14796702051981997,
+    "margin_net": -112168.47385496482,
+    "current_ratio": 4.497874382225376,
+    "roa": -64858.55624042124,
+    "bv": 554.697249191495,
+    "pcf": 9.274547674788217,
+    "div_yield": 3282865.983540412,
+    "payout_ratio": 41293250.91317955
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 1272182084647.0,
+      "2025-Q2": 1291278362241.0,
+      "2025-Q3": 1417045559671.0,
+      "2026-Q1": 1356542155192.0,
+      "2026-Q2": 1412421768013.0,
+      "2026-Q3": 1498503921551.0
+    },
+    "eps": {
+      "2025-Q1": 22.36,
+      "2025-Q2": 23.64,
+      "2025-Q3": 27.12,
+      "2026-Q1": 23.43,
+      "2026-Q2": 25.82,
+      "2026-Q3": 28.86
+    },
+    "net_income": {
+      "2025-Q1": 3.10964198049e+17,
+      "2025-Q2": 3.28760809131e+17,
+      "2025-Q3": -6.38708043042821e+17,
+      "2026-Q1": 3.25801396451e+17,
+      "2026-Q2": 3.5825029982999994e+17,
+      "2026-Q3": -6.82966846420846e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 18194223857664,
+    "enterprise_value": 16330643210240,
+    "shares_outstanding": 13888719600
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2261,
+    "vol_trend": 4.081,
+    "price_chg_20d": -25.5
+  },
+  "neraca": {
+    "aset": 9830980369330.0,
+    "aset_lancar": 3758651142186.0,
+    "kas": 2517975965939.0,
+    "piutang_usaha": 862392013786.0,
+    "persediaan": 73560256218.0,
+    "aset_tetap": 147289833137.0,
+    "liabilitas": 1139943039368.0,
+    "liabilitas_jangka_pendek": 835650536849.0,
+    "liabilitas_jangka_panjang": 304292502519.0,
+    "utang_usaha": 862392013786.0,
+    "utang_bank": 554036562.0,
+    "ekuitas": 7704034556912.0,
+    "ekuitas_induk": 7704034556912.0,
+    "modal_saham": null,
+    "saldo_laba": 103258094594.0
+  },
+  "laba_rugi": {
+    "pendapatan": 4267467844756.0,
+    "beban_pokok": 1966440824735.0,
+    "laba_kotor": 2301027020021.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1449578391573.0,
+    "beban_pajak": -293160384114.0,
+    "laba_bersih": 1084849860154.0,
+    "laba_induk": 1084849860154.0,
+    "eps_basic": 78.11,
+    "eps_diluted": 78.11
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 1961736929280,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 147289833137.0,
+    "dividen_dibayar": 597291947200.0
+  }
+}

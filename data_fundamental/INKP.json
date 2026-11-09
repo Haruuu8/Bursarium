@@ -1,0 +1,102 @@
+{
+  "kode": "INKP",
+  "nama": "PT Indah Kiat Pulp & Paper Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Paper & Paper Products",
+  "harga": 6300.0,
+  "update": "2026-11-09 16:40",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 4.734892755394914,
+    "ps": 10061.642440265261,
+    "roe": 8.544340792782046e-05,
+    "eps": 0.11368651789038726,
+    "eps_annualized": 0.11205006606874009,
+    "de": 0.8516121445673498,
+    "margin_net": 0.18156715766538037,
+    "current_ratio": 2.981288164062134,
+    "roa": 4.614383520789086e-05,
+    "bv": 1330.5475594609425,
+    "pcf": 0.059573792398943004,
+    "div_yield": 65.78719743820801,
+    "payout_ratio": 3698876.389831394
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 782718000.0,
+      "2025-Q2": 780960000.0,
+      "2025-Q3": 799383000.0,
+      "2026-Q1": 816292000.0,
+      "2026-Q2": 884098000.0,
+      "2026-Q3": 925830000.0
+    },
+    "eps": {
+      "2025-Q1": 0.03,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.03,
+      "2026-Q1": 0.03,
+      "2026-Q2": 0.04,
+      "2026-Q3": 0.02
+    },
+    "net_income": {
+      "2025-Q1": 140120000.0,
+      "2025-Q2": 23592000.0,
+      "2025-Q3": 162209000.0,
+      "2026-Q1": 156113000.0,
+      "2026-Q2": 216217000.0,
+      "2026-Q3": 87438000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 34467194339328,
+    "enterprise_value": 35152289857536,
+    "shares_outstanding": 5470982941
+  },
+  "akumulasi": {
+    "score": 1.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2706,
+    "vol_trend": 1.715,
+    "price_chg_20d": -22.36
+  },
+  "neraca": {
+    "aset": 13479092.0,
+    "aset_lancar": 7000321.0,
+    "kas": 488118.0,
+    "piutang_usaha": 212062.0,
+    "persediaan": 509483.0,
+    "aset_tetap": 184195.0,
+    "liabilitas": 6199228.0,
+    "liabilitas_jangka_pendek": 2348086.0,
+    "liabilitas_jangka_panjang": 3851142.0,
+    "utang_usaha": 212062.0,
+    "utang_bank": 898740.0,
+    "ekuitas": 7279403.0,
+    "ekuitas_induk": 7279403.0,
+    "modal_saham": null,
+    "saldo_laba": 67000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2626220.0,
+    "beban_pokok": 1826519.0,
+    "laba_kotor": 799701.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 525783.0,
+    "beban_pajak": -65992.0,
+    "laba_bersih": 459768.0,
+    "laba_induk": 459768.0,
+    "eps_basic": 0.08403754955155507,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 578563008,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 184195.0,
+    "dividen_dibayar": 22675.0
+  }
+}

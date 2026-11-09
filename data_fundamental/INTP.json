@@ -1,0 +1,102 @@
+{
+  "kode": "INTP",
+  "nama": "PT Indocement Tunggal Prakarsa Tbk",
+  "sektor": "Basic Materials",
+  "industri": "Building Materials",
+  "harga": 5850.0,
+  "update": "2026-11-09 16:42",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.8417502575208949,
+    "ps": 1.0134374271807474,
+    "roe": 8.19549791433776e-05,
+    "eps": 0.5695711093701185,
+    "eps_annualized": 0.0005284,
+    "de": 0.35771835255689177,
+    "margin_net": 9.867088541479262e-05,
+    "current_ratio": 1.577275510091467,
+    "roa": 6.036228278791237e-05,
+    "bv": 6949.804823617514,
+    "pcf": 5.043226404378058,
+    "div_yield": 7.997509837585988,
+    "payout_ratio": 88541696.72573435
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 3975728000000.0,
+      "2025-Q2": 4057088000000.0,
+      "2025-Q3": 4883365000000.0,
+      "2026-Q1": 3844318000000.0,
+      "2026-Q2": 4606862000000.0,
+      "2026-Q3": 5619577000000.0
+    },
+    "eps": {
+      "2025-Q1": 0.0,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.0,
+      "2026-Q1": 0.0,
+      "2026-Q2": 0.0,
+      "2026-Q3": 0.0
+    },
+    "net_income": {
+      "2025-Q1": 210675000.0,
+      "2025-Q2": 284082000.0,
+      "2025-Q3": 568345000.0,
+      "2026-Q1": 215193000.0,
+      "2026-Q2": 374449000.0,
+      "2026-Q3": 712233000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 19208817606656,
+    "enterprise_value": 16890513588224,
+    "shares_outstanding": 3283558399
+  },
+  "akumulasi": {
+    "score": 8.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.3568,
+    "vol_trend": 2.157,
+    "price_chg_20d": 14.85
+  },
+  "neraca": {
+    "aset": 30983255.0,
+    "aset_lancar": 10861769.0,
+    "kas": 4738554.0,
+    "piutang_usaha": 3321736.0,
+    "persediaan": 2282038.0,
+    "aset_tetap": 18238749.0,
+    "liabilitas": 8163165.0,
+    "liabilitas_jangka_pendek": 6886412.0,
+    "liabilitas_jangka_panjang": 1276753.0,
+    "utang_usaha": 3321736.0,
+    "utang_bank": 2000000.0,
+    "ekuitas": 22820090.0,
+    "ekuitas_induk": 22820090.0,
+    "modal_saham": null,
+    "saldo_laba": 400000.0
+  },
+  "laba_rugi": {
+    "pendapatan": 14070757.0,
+    "beban_pokok": 9565557.0,
+    "laba_kotor": 4505200.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 1626266.0,
+    "beban_pajak": 33858.0,
+    "laba_bersih": 1301875.0,
+    "laba_induk": 1301875.0,
+    "eps_basic": 0.00039630000000000004,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 3808834879488,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 529252.0,
+    "dividen_dibayar": 1536227.0
+  }
+}

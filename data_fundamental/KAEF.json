@@ -1,0 +1,102 @@
+{
+  "kode": "KAEF",
+  "nama": "PT Kimia Farma Tbk",
+  "sektor": "Healthcare",
+  "industri": "Medical Distribution",
+  "harga": 352.0,
+  "update": "2026-11-09 16:46",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.00020170279374753152,
+    "roe": -0.051804380466126496,
+    "eps": null,
+    "eps_annualized": -0.03093333333333333,
+    "de": 4.202021076407933,
+    "margin_net": -0.015103892017678531,
+    "current_ratio": 1.0434257865543108,
+    "roa": -0.010027189575033782,
+    "bv": 508807.0704036888,
+    "pcf": 1.5252502368025384e-05,
+    "div_yield": 87.25782717604235,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 2168207817000000.0,
+      "2025-Q2": 2201140777000000.0,
+      "2025-Q3": 2638862719000000.0,
+      "2026-Q1": 2030649486000000.0,
+      "2026-Q2": 2671041110000000.0,
+      "2026-Q3": 2373933443000000.0
+    },
+    "eps": {
+      "2025-Q1": -234.05,
+      "2025-Q2": 216.98,
+      "2025-Q3": 17.03,
+      "2026-Q1": 0.02,
+      "2026-Q2": -0.0,
+      "2026-Q3": -0.04
+    },
+    "net_income": {
+      "2025-Q1": -102177254000000.0,
+      "2025-Q2": 7162125000000.0,
+      "2025-Q3": -84716853000000.0,
+      "2026-Q1": 74449546000000.0,
+      "2026-Q2": -64123673000000.0,
+      "2026-Q3": -72335579000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1959439106048,
+    "enterprise_value": 8796296445952,
+    "shares_outstanding": 5566588406
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.2009,
+    "vol_trend": 0.703,
+    "price_chg_20d": -19.72
+  },
+  "neraca": {
+    "aset": 14632869749.0,
+    "aset_lancar": 4787763460.0,
+    "kas": 467616955.0,
+    "piutang_usaha": 1178728938.0,
+    "persediaan": 1517041082.0,
+    "aset_tetap": 8139882427.0,
+    "liabilitas": 11901466398.0,
+    "liabilitas_jangka_pendek": 4588504062.0,
+    "liabilitas_jangka_panjang": 7312962336.0,
+    "utang_usaha": 1178728938.0,
+    "utang_bank": 72166263.0,
+    "ekuitas": 2832319539.0,
+    "ekuitas_induk": 2832319539.0,
+    "modal_saham": null,
+    "saldo_laba": 2024733103.0
+  },
+  "laba_rugi": {
+    "pendapatan": 7075624039.0,
+    "beban_pokok": 4554987242.0,
+    "laba_kotor": 2520636797.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 10273682.0,
+    "beban_pajak": -23181552.0,
+    "laba_bersih": -62009706.0,
+    "laba_induk": -62009706.0,
+    "eps_basic": -0.0232,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 128466731008,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 31132959.0,
+    "dividen_dibayar": 1709764.0
+  }
+}

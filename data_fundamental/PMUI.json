@@ -1,0 +1,96 @@
+{
+  "kode": "PMUI",
+  "nama": "PT Prima Multi Usaha Indonesia Tbk",
+  "sektor": "Technology",
+  "industri": "Electronics & Computer Distribution",
+  "harga": 77.0,
+  "update": "2026-11-09 15:55",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 0.12000306932473805,
+    "roe": 0.10163083093302497,
+    "eps": null,
+    "eps_annualized": 7.666666666666666,
+    "de": 0.2180192908562543,
+    "margin_net": 11547.007043638587,
+    "current_ratio": 5.729466517524166,
+    "roa": 0.07688195830200568,
+    "bv": 72902483.85103448,
+    "pcf": 7.061529687507185e-06,
+    "div_yield": 6493506.493506493,
+    "payout_ratio": 65217391.30434783
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 883546354602.0,
+      "2026-Q1": 1185624710885.0,
+      "2026-Q2": 864644834019.0,
+      "2026-Q3": 787755577899.0
+    },
+    "eps": {
+      "2025-Q3": 0.64,
+      "2026-Q1": 1.65,
+      "2026-Q2": 2.85,
+      "2026-Q3": 1.25
+    },
+    "net_income": {
+      "2025-Q3": 9685686607000000.0,
+      "2026-Q1": 9559062832000000.0,
+      "2026-Q2": 1.6528890113e+16,
+      "2026-Q3": 7199372511000000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 446599987200,
+    "enterprise_value": 282317029376,
+    "shares_outstanding": 5800000000
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4004,
+    "vol_trend": 0.25,
+    "price_chg_20d": -22.22
+  },
+  "neraca": {
+    "aset": 558947938009.0,
+    "aset_lancar": 507297923221.0,
+    "kas": 229313142532.0,
+    "piutang_usaha": 68203268766.0,
+    "persediaan": 168391884814.0,
+    "aset_tetap": 50523159912.0,
+    "liabilitas": 92186057419.0,
+    "liabilitas_jangka_pendek": 88541912527.0,
+    "liabilitas_jangka_panjang": 3644144892.0,
+    "utang_usaha": 68203268766.0,
+    "utang_bank": 23620591104.0,
+    "ekuitas": 422834406336.0,
+    "ekuitas_induk": 422834406336.0,
+    "modal_saham": null,
+    "saldo_laba": 24114721184.0
+  },
+  "laba_rugi": {
+    "pendapatan": 2838025122803.0,
+    "beban_pokok": 2639730967760.0,
+    "laba_kotor": 198294155043.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 44594740702.0,
+    "beban_pajak": -8752879603.0,
+    "laba_bersih": 33287325456.0,
+    "laba_induk": 33287325456.0,
+    "eps_basic": 5.75,
+    "eps_diluted": 5.75
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 63244087296,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 6422748175.0,
+    "dividen_dibayar": 29000000000.0
+  }
+}

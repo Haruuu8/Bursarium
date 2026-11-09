@@ -1,0 +1,96 @@
+{
+  "kode": "LMPI",
+  "nama": "PT Langgeng Makmur Industri Tbk",
+  "sektor": "Consumer Cyclical",
+  "industri": "Furnishings, Fixtures & Appliances",
+  "harga": 137.0,
+  "update": "2026-11-09 16:50",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": null,
+    "ps": 5.441328991933833e-07,
+    "roe": 0.10467354899935963,
+    "eps": null,
+    "eps_annualized": 17.013333333333332,
+    "de": 6.432000690046336,
+    "margin_net": 0.030430053682364816,
+    "current_ratio": 0.942485392071448,
+    "roa": 0.014084168363916962,
+    "bv": 73194989.26696543,
+    "pcf": 1.2958691564976641e-06,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q3": 1.2823355277e+17,
+      "2026-Q1": 6.8843842135e+16,
+      "2026-Q2": 3.8995025357e+16,
+      "2026-Q3": 1.7848856797e+16
+    },
+    "eps": {
+      "2025-Q3": -5.1,
+      "2026-Q1": -23.19,
+      "2026-Q2": -74.93,
+      "2026-Q3": 110.88
+    },
+    "net_income": {
+      "2025-Q3": -5142691940000000.0,
+      "2026-Q1": -2.3383866159e+16,
+      "2026-Q2": -7.5575981437e+16,
+      "2026-Q3": 1.11829377628e+17
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 138166927360,
+    "enterprise_value": 285753671680,
+    "shares_outstanding": 1008517669
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.4596,
+    "vol_trend": 0.19,
+    "price_chg_20d": -14.1
+  },
+  "neraca": {
+    "aset": 548618696706.0,
+    "aset_lancar": 390835767984.0,
+    "kas": 9613110019.0,
+    "piutang_usaha": 127030656092.0,
+    "persediaan": 179077067134.0,
+    "aset_tetap": 42298023.0,
+    "liabilitas": 474800256748.0,
+    "liabilitas_jangka_pendek": 414686287206.0,
+    "liabilitas_jangka_panjang": 60113969542.0,
+    "utang_usaha": 127030656092.0,
+    "utang_bank": 152464990261.0,
+    "ekuitas": 73818439958.0,
+    "ekuitas_induk": 73818439958.0,
+    "modal_saham": null,
+    "saldo_laba": -423512242282.0
+  },
+  "laba_rugi": {
+    "pendapatan": 125687724289.0,
+    "beban_pokok": 181387146499.0,
+    "laba_kotor": -55699422210.0,
+    "beban_operasi": null,
+    "laba_operasi": null,
+    "laba_sebelum_pajak": 7845606778.0,
+    "beban_pajak": 5023923254.0,
+    "laba_bersih": 12869530032.0,
+    "laba_induk": 12869530032.0,
+    "eps_basic": 12.76,
+    "eps_diluted": null
+  },
+  "arus_kas": {
+    "arus_kas_operasi": 106621042688,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": 42298023.0,
+    "dividen_dibayar": null
+  }
+}

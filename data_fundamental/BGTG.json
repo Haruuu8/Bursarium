@@ -1,0 +1,102 @@
+{
+  "kode": "BGTG",
+  "nama": "PT Bank Ganesha Tbk",
+  "sektor": "Financial Services",
+  "industri": "Banks - Regional",
+  "harga": 83.0,
+  "update": "2026-11-09 16:13",
+  "periode_terbaru": "2026-tw3",
+  "rasio_kunci": {
+    "pe": null,
+    "pb": 0.5194483842107064,
+    "ps": 2720.7696835315983,
+    "roe": 6.26066033575766e-05,
+    "eps": 0.010003588877410078,
+    "eps_annualized": 9.746666666666666,
+    "de": 1.840207425037263,
+    "margin_net": 0.32792122101411125,
+    "current_ratio": null,
+    "roa": 2.2042968695061143e-05,
+    "bv": 159.78488435596387,
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
+  },
+  "quarterly": {
+    "revenue": {
+      "2025-Q1": 192631000.0,
+      "2025-Q2": 168367000.0,
+      "2025-Q3": 173763000.0,
+      "2026-Q1": 179308000.0,
+      "2026-Q2": 180194000.0,
+      "2026-Q3": 197996000.0
+    },
+    "eps": {
+      "2025-Q1": 2.24,
+      "2025-Q2": 2.24,
+      "2025-Q3": 2.7,
+      "2026-Q1": 2.42,
+      "2026-Q2": 2.33,
+      "2026-Q3": 2.56
+    },
+    "net_income": {
+      "2025-Q1": 53786000.0,
+      "2025-Q2": 53660000.0,
+      "2025-Q3": 64602000.0,
+      "2026-Q1": 57975000.0,
+      "2026-Q2": 55796000.0,
+      "2026-Q3": 61423000.0
+    },
+    "note": "standalone"
+  },
+  "statistik": {
+    "market_cap": 1989592743936,
+    "enterprise_value": 1284001759232,
+    "shares_outstanding": 23970997103
+  },
+  "akumulasi": {
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.488,
+    "vol_trend": 1.033,
+    "price_chg_20d": -22.43
+  },
+  "neraca": {
+    "aset": 10878571.0,
+    "aset_lancar": null,
+    "kas": null,
+    "piutang_usaha": null,
+    "persediaan": null,
+    "aset_tetap": 58782.0,
+    "liabilitas": 7048368.0,
+    "liabilitas_jangka_pendek": null,
+    "liabilitas_jangka_panjang": null,
+    "utang_usaha": null,
+    "utang_bank": null,
+    "ekuitas": 3830203.0,
+    "ekuitas_induk": 3830203.0,
+    "modal_saham": null,
+    "saldo_laba": 743144.0
+  },
+  "laba_rugi": {
+    "pendapatan": 557498.0,
+    "beban_pokok": null,
+    "laba_kotor": null,
+    "beban_operasi": null,
+    "laba_operasi": 228748.0,
+    "laba_sebelum_pajak": 224608.0,
+    "beban_pajak": -49414.0,
+    "laba_bersih": 175194.0,
+    "laba_induk": 175194.0,
+    "eps_basic": 7.31,
+    "eps_diluted": 7.31
+  },
+  "arus_kas": {
+    "arus_kas_operasi": -462085000000.0,
+    "arus_kas_investasi": null,
+    "arus_kas_pendanaan": null,
+    "capex": null,
+    "dividen_dibayar": null
+  }
+}
