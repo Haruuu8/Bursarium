@@ -43,7 +43,6 @@ def calculate_money_flow(df):
     mfr = pos_mf.rolling(14).sum() / neg_mf.rolling(14).sum()
     d['MFI'] = 100 - (100 / (1 + mfr))
 
-    # FIX: Gunakan 0.0001 agar tidak division by zero
     rng = (d['High'] - d['Low']).replace(0, 0.0001)
     mfm = ((d['Close'] - d['Low']) - (d['High'] - d['Close'])) / rng
     mfv = mfm * d['Volume']
@@ -76,6 +75,7 @@ def compute_all_indicators():
     d = d.sort_values(["Kode", "Date"]).reset_index(drop=True)
 
     d["Prev_Close"] = d.groupby("Kode")["Close"].shift(1)
+    # Menghitung Price Change % (Return harian)
     d["Pct_Change"] = (d["Close"] / d["Prev_Close"] - 1) * 100
 
     d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
@@ -83,23 +83,8 @@ def compute_all_indicators():
     )
     d["Vol_Ratio"] = d["Volume"] / d["Vol_MA20"]
 
-    # FIX LOGIKA ARA/ARB (High == Low)
-    rng = d["High"] - d["Low"]
-    rng_safe = rng.replace(0, 0.0001)
-    d["Close_Pct"] = (d["Close"] - d["Low"]) / rng_safe
-
-    # Jika High == Low, pakai logika harga (Naik = 1.0, Turun = 0.0, Flat = 0.5)
-    is_flat = rng == 0
-    d.loc[is_flat & (d["Close"] > d["Prev_Close"]), "Close_Pct"] = 1.0  # ARA
-    d.loc[is_flat & (d["Close"] < d["Prev_Close"]), "Close_Pct"] = 0.0  # ARB
-    d.loc[is_flat & (d["Close"] == d["Prev_Close"]), "Close_Pct"] = 0.5 # Flat
-
-    # Metrik tambahan: Tebalnya badan candle (Body vs Shadow)
-    # Jika Body positif dan tebal, artinya buyer pegang kendali penuh dari open ke close
-    d["Body_Pct"] = (d["Close"] - d["Open"]) / rng_safe
-    d.loc[is_flat & (d["Close"] > d["Prev_Close"]), "Body_Pct"] = 1.0 # ARA dari open
-
-    d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng_safe
+    rng = (d["High"] - d["Low"]).replace(0, 0.0001)
+    d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng
     d["MFV"] = d["MFM"] * d["Volume"]
     d["CMF_20"] = d.groupby("Kode")["MFV"].transform(
         lambda x: x.rolling(20, min_periods=10).sum()
@@ -116,25 +101,27 @@ def compute_all_indicators():
     return d
 
 
-def classify_verdict(close_pct, cmf, close_gt_open):
-    if pd.isna(close_pct) or pd.isna(cmf):
+def classify_verdict(pct_change, cmf, close_gt_open):
+    if pd.isna(pct_change) or pd.isna(cmf):
         return "—"
-    if not close_gt_open:
-        if close_pct < 0.3 and cmf < 0:
-            return "DISTRIBUSI"
-        return "BEARISH"
     
-    # Threshold diturunkan agar lebih realistis
-    if close_pct >= 0.8 and cmf >= 0.1:
-        return "AKUMULASI KUAT"
-    elif close_pct >= 0.5 and cmf > 0:
-        return "AKUMULASI"
-    elif close_pct >= 0.4:
-        return "CAMPURAN"
-    elif close_pct >= 0.3:
-        return "BUYER LEMAH"
+    # LOGIKA BARU MURNI PAKAI CMF & PRICE ACTION
+    if close_gt_open:
+        if pct_change > 0 and cmf >= 0.1:
+            return "AKUMULASI KUAT"
+        elif pct_change > 0 and cmf > 0:
+            return "AKUMULASI"
+        elif pct_change > 0 and cmf < 0:
+            return "DISTRIBUSI TERSAMAR" # Harga naik (hijau) tapi uang keluar
+        else:
+            return "CAMPURAN"
     else:
-        return "DISTRIBUSI TERSAMAR"
+        if pct_change < 0 and cmf < 0:
+            return "DISTRIBUSI"
+        elif pct_change < 0 and cmf > 0:
+            return "AKUMULASI DIAM-DIAM" # Harga turun (merah) tapi uang masuk
+        else:
+            return "BEARISH"
 
 
 # ============================================================
@@ -261,26 +248,27 @@ st.markdown(
     'border:1px solid #27272a; border-left:4px solid #ffffff; '
     'border-radius:8px; padding:20px 24px; margin:32px 0 24px; '
     'font-size:14px; color:#e5e5e5; line-height:1.7;">'
-    '<b style="color:#ffffff;">LOGIKA AKUMULASI BARU:</b><br>'
-    '- Volume spike >1.5x MA20 (terjadi lonjakan transaksi)<br>'
-    '- Harga Close di atas atau sama dengan Open (Buyer pegang kendali)<br>'
-    '- Close di <b>40%+ range</b> hari itu (Buyer dominan, TIDAK harus 60% agar ARA tetap masuk)<br>'
-    '- <b>Khusus ARA/ARB:</b> Jika harga mentok (High == Low) dan naik, otomatis dihitung 100% kuat!'
+    '<b style="color:#ffffff;">LOGIKA AKUMULASI (BARU):</b><br>'
+    '- Volume meledak >1.5x dari rata-rata 20 hari<br>'
+    '- Harga tutup hijau (Close >= Open) dan naik dari kemarin<br>'
+    '- CMF positif (terjadi aliran uang masuk)<br>'
+    '<b style="color:#ffffff;">DISTRIBUSI TERSAMAR:</b> Harga terlihat naik (hijau), '
+    'tapi CMF negatif. Ini pertanda bandar jualan sembunyi-sembunyi di balik harga yang dinaikkan.'
     '</div>', unsafe_allow_html=True
 )
 
 st.markdown(
-    section_title("Akumulasi Kuat — Volume Meledak + Buyer Dominan",
-                  "Vol >1.5x · Green Candle · Close% >40% · CMF >0"),
+    section_title("Akumulasi Kuat — Volume Meledak + Harga Naik",
+                  "Vol >1.5x MA20 · Close >= Open · CMF >0"),
     unsafe_allow_html=True
 )
 
-# FILTER BARU YANG LEBIH MASUK AKAL
+# FILTER AKUMULASI: Vol Spike, Candle Hijau (atau ARA), CMF Positif
 df_accum = df_today[
     (df_today["Vol_Ratio"] > 1.5) &
     (df_today["Vol_Ratio"] < 100) &
-    (df_today["Close"] >= df_today["Open"]) & # >= agar ARA dari Open masuk
-    (df_today["Close_Pct"] >= 0.4) &          # Turun ke 40%
+    (df_today["Close"] >= df_today["Open"]) &
+    (df_today["Pct_Change"] > 0) &
     (df_today["CMF_20"] > 0) &
     (df_today["Close"] > 0) &
     (df_today["Volume"] > 0)
@@ -311,7 +299,7 @@ else:
     df_show = df_accum.head(30).reset_index(drop=True).copy()
 
     df_show["Verdict"] = df_show.apply(
-        lambda r: classify_verdict(r["Close_Pct"], r["CMF_20"], True),
+        lambda r: classify_verdict(r["Pct_Change"], r["CMF_20"], True),
         axis=1
     )
 
@@ -319,17 +307,16 @@ else:
     df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
     df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
     df_show["CMF_20"] = df_show["CMF_20"].round(3)
-    df_show["Close_Pct"] = (df_show["Close_Pct"] * 100).round(0)
     df_show["Spike_Count_20"] = df_show["Spike_Count_20"].fillna(0).astype(int)
 
+    # PERHATIKAN: Kolom "Close %" SUDAH DIHAPUS
     df_show = df_show[[
         "Kode", "Close", "Pct_Change", "Vol_Ratio",
-        "Close_Pct", "CMF_20", "Spike_Count_20", "Verdict"
+        "CMF_20", "Spike_Count_20", "Verdict"
     ]].rename(columns={
         "Close": "Harga",
         "Pct_Change": "Chg %",
         "Vol_Ratio": "Vol Ratio",
-        "Close_Pct": "Close %",
         "CMF_20": "CMF (20)",
         "Spike_Count_20": "Spike 20d",
     })
@@ -340,15 +327,18 @@ else:
 # SECTION 2: PERINGATAN DISTRIBUSI TERSAMAR
 # ============================================================
 st.markdown(
-    section_title("Distribusi Tersamar — Volume Meledak, Close Lemah",
-                  "Vol >1.5x MA20 tapi close <30% range -> big player jual di puncak"),
+    section_title("Distribusi Tersamar — Volume Meledak, Harga Naik tapi Uang Keluar",
+                  "Vol >1.5x MA20 · Candle Hijau TAPI CMF <0 (Bandar jualan)"),
     unsafe_allow_html=True
 )
 
+# FILTER DISTRIBUSI TERSAMAR: Harga naik (hijau), tapi CMF negatif
 df_dist = df_today[
     (df_today["Vol_Ratio"] > 1.5) &
     (df_today["Vol_Ratio"] < 100) &
-    (df_today["Close_Pct"] < 0.3) &
+    (df_today["Close"] >= df_today["Open"]) &
+    (df_today["Pct_Change"] > 0) &
+    (df_today["CMF_20"] < 0) &
     (df_today["Close"] > 0) &
     (df_today["Volume"] > 0)
 ].copy()
@@ -384,8 +374,7 @@ else:
     df_show_d = df_dist.head(15).reset_index(drop=True).copy()
 
     df_show_d["Verdict"] = df_show_d.apply(
-        lambda r: classify_verdict(r["Close_Pct"], r["CMF_20"],
-                                    r["Close"] > r["Open"]),
+        lambda r: classify_verdict(r["Pct_Change"], r["CMF_20"], r["Close"] > r["Open"]),
         axis=1
     )
 
@@ -393,16 +382,15 @@ else:
     df_show_d["Pct_Change"] = df_show_d["Pct_Change"].round(2)
     df_show_d["Vol_Ratio"] = df_show_d["Vol_Ratio"].round(2)
     df_show_d["CMF_20"] = df_show_d["CMF_20"].round(3)
-    df_show_d["Close_Pct"] = (df_show_d["Close_Pct"] * 100).round(0)
 
+    # PERHATIKAN: Kolom "Close %" SUDAH DIHAPUS
     df_show_d = df_show_d[[
         "Kode", "Close", "Pct_Change", "Vol_Ratio",
-        "Close_Pct", "CMF_20", "Verdict"
+        "CMF_20", "Verdict"
     ]].rename(columns={
         "Close": "Harga",
         "Pct_Change": "Chg %",
         "Vol_Ratio": "Vol Ratio",
-        "Close_Pct": "Close %",
         "CMF_20": "CMF (20)",
     })
 
