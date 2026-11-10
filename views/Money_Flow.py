@@ -42,7 +42,9 @@ def compute_volume_spikes():
 
     d = d.copy()
     d["Kode"] = d["Kode"].astype(str).str.strip().str.upper()
-    d["Date"] = pd.to_datetime(d["Date"], errors="coerce")
+    
+    # NORMALISASI TANGGAL (Buang komponen jam/menit agar seragam)
+    d["Date"] = pd.to_datetime(d["Date"], errors="coerce").dt.normalize()
     d = d.dropna(subset=["Date"])
 
     for c in ["Open", "High", "Low", "Close", "Volume"]:
@@ -90,34 +92,35 @@ df_ind = compute_volume_spikes()
 if df_ind is None or df_ind.empty:
     st.stop()
 
-# 1. CARI TANGGAL TERAKHIR DI SELURUH DATA
-latest_date = df_ind["Date"].max()
+# 1. CARI TANGGAL MAKSIMAL DI SELURUH DATA
+global_max_date = df_ind["Date"].max()
 
-# 2. FILTER DATA HANYA UNTUK TANGGAL TERAKHIR TERSEBUT
-df_today = df_ind[df_ind["Date"] == latest_date].copy()
+# 2. AMBIL DATA TERAKHIR MASING-MASING SAHAM
+# (Tapi batasi hanya saham yang tanggal terakhirnya minimal H-3 dari tanggal global, agar saham suspend tidak ikut)
+df_latest = df_ind[df_ind["Date"] >= (global_max_date - pd.Timedelta(days=3))]
+df_latest = df_latest.sort_values("Date").groupby("Kode").tail(1).copy()
 
 # 3. FILTER VOLUME SPIKE (> 1.5x)
-df_spike = df_today[df_today["Vol_Ratio"] > 1.5].copy()
+df_spike = df_latest[df_latest["Vol_Ratio"] > 1.5].copy()
 df_spike = df_spike.sort_values("Vol_Ratio", ascending=False)
 
 # Panel Debug / Info Data
 st.markdown(
     f'<div style="background:#171717; border:1px solid #27272a; border-radius:8px; '
     f'padding:20px 24px; margin-bottom:24px; font-size:14px; color:#e5e5e5;">'
-    f'Tanggal Data Terakhir di Parquet: <b>{latest_date.strftime("%d %b %Y")}</b><br>'
-    f'Total Saham Aktif di Tanggal Tersebut: <b>{len(df_today)}</b><br>'
-    f'Total Saham yang Volume-nya > 1.5x MA20: <b style="color:#ffffff; font-size:18px;">{len(df_spike)}</b>'
+    f'Data Terakhir (Global): <b>{global_max_date.strftime("%d %b %Y")}</b><br>'
+    f'Total Saham yang datanya masih fresh (H-3): <b>{len(df_latest)}</b><br>'
+    f'Total Saham Volume > 1.5x MA20: <b style="color:#ffffff; font-size:18px;">{len(df_spike)}</b>'
     f'</div>',
     unsafe_allow_html=True
 )
 
 if df_spike.empty:
-    st.warning("Tidak ada saham yang volume-nya meledak > 1.5x MA20 pada tanggal tersebut.")
+    st.warning("Tidak ada saham yang volume-nya meledak > 1.5x MA20 saat ini.")
 else:
     # Siapkan Tabel
     df_show = df_spike.copy()
 
-    # Logika Verdict
     def get_verdict(row):
         pct = row["Pct_Change"]
         cmf = row["CMF_5"]
@@ -137,16 +140,19 @@ else:
     df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
     df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
     df_show["CMF_5"] = df_show["CMF_5"].round(3)
-    df_show["Volume"] = df_show["Volume"].apply(lambda x: f"{x:,.0f}")
-    df_show["Vol_MA20"] = df_show["Vol_MA20"].apply(lambda x: f"{x:,.0f}")
+    
+    # Format volume dengan ribuan
+    df_show["Volume_Str"] = df_show["Volume"].apply(lambda x: f"{x:,.0f}")
+    df_show["Vol_MA20_Str"] = df_show["Vol_MA20"].apply(lambda x: f"{x:,.0f}")
 
     df_show = df_show[[
-        "Kode", "Close", "Pct_Change", "Volume", "Vol_MA20", "Vol_Ratio", "CMF_5", "Verdict"
+        "Kode", "Date", "Close", "Pct_Change", "Volume_Str", "Vol_MA20_Str", "Vol_Ratio", "CMF_5", "Verdict"
     ]].rename(columns={
+        "Date": "Tanggal",
         "Close": "Harga",
         "Pct_Change": "Chg %",
-        "Volume": "Volume Hari Ini",
-        "Vol_MA20": "Avg Vol 20D",
+        "Volume_Str": "Volume",
+        "Vol_MA20_Str": "Avg Vol 20D",
         "Vol_Ratio": "Vol Ratio",
         "CMF_5": "CMF (5)",
     })
@@ -183,3 +189,12 @@ if df is not None and not df.empty:
         dragmode=False, margin=dict(l=40, r=40, t=40, b=40)
     )
     st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
+
+# ============================================================
+# PANEL DEBUGGING
+# ============================================================
+with st.expander("🔍 Cek Distribusi Tanggal di Parquet (Debug)"):
+    st.markdown("**10 Tanggal Terakhir di Database (dan jumlah sahamnya):**")
+    date_counts = df_ind.groupby("Date").size().reset_index(name="Jumlah Saham")
+    date_counts = date_counts.sort_values("Date", ascending=False).head(10)
+    st.dataframe(date_counts)
