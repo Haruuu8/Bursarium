@@ -255,7 +255,7 @@ fig2.update_layout(
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
 # ============================================================
-# SCAN: AKUMULASI & DISTRIBUSI (SANGAT KETAT)
+# SCAN: AKUMULASI & DISTRIBUSI (SNIPER FILTER)
 # ============================================================
 df_ind = compute_all_indicators()
 if df_ind is None or df_ind.empty:
@@ -269,30 +269,31 @@ st.markdown(
     'border:1px solid #27272a; border-left:4px solid #ffffff; '
     'border-radius:8px; padding:20px 24px; margin:32px 0 24px; '
     'font-size:14px; color:#e5e5e5; line-height:1.7;">'
-    '<b style="color:#ffffff;">LOGIKA AKUMULASI & DISTRIBUSI (HIGH CONVICTION):</b><br>'
-    'Volume meledak >2.0x MA20. Hanya menyaring saham dengan pergerakan harga yang signifikan (>1.5%) dan aliran dana ekstrem (CMF >0.1 atau <-0.1).'
+    '<b style="color:#ffffff;">SNIPER FILTER (HIGH CONVICTION):</b><br>'
+    'Hanya menampilkan saham dengan Volume >3.0x MA20, pergerakan harga signifikan, aliran dana ekstrem, dan memiliki riwayat spike.'
     '</div>', unsafe_allow_html=True
 )
 
-# SECTION 1: AKUMULASI KUAT
+# SECTION 1: AKUMULASI KUAT (SNIPER)
 st.markdown(
     section_title("Akumulasi Kuat — Volume Meledak + Harga Naik Signifikan",
-                  "Vol >2.0x MA20 · Harga Naik >1.5% · CMF (5) >0.1"),
+                  "Vol >3.0x MA20 · Harga Naik >3.0% · CMF (5) >0.15"),
     unsafe_allow_html=True
 )
 
-# PERKETAT: Vol > 2.0, Harga Naik > 1.5%, CMF > 0.1
+# PERKETAT MAKSIMAL
 df_accum = df_latest[
-    (df_latest["Vol_Ratio"] > 2.0) &
-    (df_latest["Pct_Change"] > 1.5) &
-    (df_latest["CMF_5"] > 0.1) & 
+    (df_latest["Vol_Ratio"] > 3.0) &
+    (df_latest["Pct_Change"] > 3.0) &
+    (df_latest["CMF_5"] > 0.15) & 
+    (df_latest["Spike_Count_20"] > 0) &
     (df_latest["Close"] > 0)
 ].copy()
 
 if df_accum.empty:
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
-        'Tidak ada saham dengan kriteria Akumulasi Kuat saat ini (Pasar sedang sepi / tidak ada bandar masuk).'
+        'Tidak ada saham dengan kriteria SNIPER Akumulasi saat ini. (Sangat wajar, sinyal ini langka).'
         '</div>', unsafe_allow_html=True
     )
 else:
@@ -300,7 +301,7 @@ else:
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-radius:8px; '
         f'padding:14px 20px; margin-bottom:20px; font-size:14px;">'
-        f'<span style="color:#a3a3a3;">Saham akumulasi: <b style="color:#ffffff;">{len(df_accum)}</b></span>'
+        f'<span style="color:#a3a3a3;">Saham akumulasi sniper: <b style="color:#ffffff;">{len(df_accum)}</b></span>'
         f'</div>', unsafe_allow_html=True
     )
 
@@ -321,18 +322,19 @@ else:
     })
     render_table(df_show)
 
-# SECTION 2: DISTRIBUSI TERSAMAR
+# SECTION 2: DISTRIBUSI TERSAMAR (SNIPER)
 st.markdown(
     section_title("Distribusi Tersamar — Harga Naik tapi Uang Keluar Deras",
-                  "Vol >2.0x MA20 · Harga Naik >0.5% · CMF (5) < -0.1"),
+                  "Vol >3.0x MA20 · Harga Naik >1.0% · CMF (5) < -0.15"),
     unsafe_allow_html=True
 )
 
-# PERKETAT: Vol > 2.0, Harga Naik > 0.5%, CMF < -0.1
+# PERKETAT MAKSIMAL
 df_dist = df_latest[
-    (df_latest["Vol_Ratio"] > 2.0) &
-    (df_latest["Pct_Change"] > 0.5) &
-    (df_latest["CMF_5"] < -0.1) &
+    (df_latest["Vol_Ratio"] > 3.0) &
+    (df_latest["Pct_Change"] > 1.0) &
+    (df_latest["CMF_5"] < -0.15) &
+    (df_latest["Spike_Count_20"] > 0) &
     (df_latest["Close"] > 0)
 ].copy()
 
@@ -340,7 +342,7 @@ if df_dist.empty:
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
         'border-radius:8px; padding:16px 20px; font-size:14px; color:#e5e5e5;">'
-        'Tidak ada saham yang terindikasi <b>Distribusi Tersamar</b> saat ini.'
+        'Tidak ada saham yang terindikasi <b>Distribusi Tersamar Sniper</b> saat ini.'
         '</div>', unsafe_allow_html=True
     )
 else:
@@ -348,7 +350,7 @@ else:
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
         f'border-radius:8px; padding:14px 20px; margin-bottom:20px; font-size:14px;">'
-        f'<span style="color:#a3a3a3;">Saham distribusi: <b style="color:#ffffff;">{len(df_dist)}</b></span>'
+        f'<span style="color:#a3a3a3;">Saham distribusi sniper: <b style="color:#ffffff;">{len(df_dist)}</b></span>'
         f'</div>', unsafe_allow_html=True
     )
 
