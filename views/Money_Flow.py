@@ -75,7 +75,6 @@ def compute_all_indicators():
     d = d.sort_values(["Kode", "Date"]).reset_index(drop=True)
 
     d["Prev_Close"] = d.groupby("Kode")["Close"].shift(1)
-    # Menghitung Price Change % (Return harian)
     d["Pct_Change"] = (d["Close"] / d["Prev_Close"] - 1) * 100
 
     d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
@@ -105,21 +104,20 @@ def classify_verdict(pct_change, cmf, close_gt_open):
     if pd.isna(pct_change) or pd.isna(cmf):
         return "—"
     
-    # LOGIKA BARU MURNI PAKAI CMF & PRICE ACTION
     if close_gt_open:
         if pct_change > 0 and cmf >= 0.1:
             return "AKUMULASI KUAT"
         elif pct_change > 0 and cmf > 0:
             return "AKUMULASI"
         elif pct_change > 0 and cmf < 0:
-            return "DISTRIBUSI TERSAMAR" # Harga naik (hijau) tapi uang keluar
+            return "DISTRIBUSI TERSAMAR" # Harga naik tapi uang keluar
         else:
             return "CAMPURAN"
     else:
         if pct_change < 0 and cmf < 0:
             return "DISTRIBUSI"
         elif pct_change < 0 and cmf > 0:
-            return "AKUMULASI DIAM-DIAM" # Harga turun (merah) tapi uang masuk
+            return "AKUMULASI DIAM-DIAM" # Harga turun tapi uang masuk
         else:
             return "BEARISH"
 
@@ -243,41 +241,47 @@ if df_ind is None or df_ind.empty:
 last_date = df_ind["Date"].max()
 df_today = df_ind[df_ind["Date"] == last_date].copy()
 
-st.markdown(
-    '<div style="background:#171717; '
-    'border:1px solid #27272a; border-left:4px solid #ffffff; '
-    'border-radius:8px; padding:20px 24px; margin:32px 0 24px; '
-    'font-size:14px; color:#e5e5e5; line-height:1.7;">'
-    '<b style="color:#ffffff;">LOGIKA AKUMULASI (BARU):</b><br>'
-    '- Volume meledak >1.5x dari rata-rata 20 hari<br>'
-    '- Harga tutup hijau (Close >= Open) dan naik dari kemarin<br>'
-    '- CMF positif (terjadi aliran uang masuk)<br>'
-    '<b style="color:#ffffff;">DISTRIBUSI TERSAMAR:</b> Harga terlihat naik (hijau), '
-    'tapi CMF negatif. Ini pertanda bandar jualan sembunyi-sembunyi di balik harga yang dinaikkan.'
-    '</div>', unsafe_allow_html=True
-)
+# ============================================================
+# PANEL DEBUGGING (Fitur Baru)
+# ============================================================
+with st.expander("🔍 Lihat Proses Filter (Jika data kosong, cek di sini)"):
+    st.write(f"Tanggal Data: **{last_date.strftime('%d %b %Y')}**")
+    st.write(f"Total saham di data hari ini: **{len(df_today)}**")
+    
+    c_debug1 = len(df_today[df_today["Vol_Ratio"] > 1.2])
+    st.write(f"Saham dengan Volume Ratio > 1.2: **{c_debug1}**")
+    
+    c_debug2 = len(df_today[(df_today["Vol_Ratio"] > 1.2) & (df_today["Pct_Change"] > 0)])
+    st.write(f"Saham dengan Vol > 1.2 & Harga Naik: **{c_debug2}**")
+    
+    c_debug3 = len(df_today[(df_today["Vol_Ratio"] > 1.2) & (df_today["Pct_Change"] > 0) & (df_today["CMF_20"] > 0)])
+    st.write(f"Saham dengan Vol > 1.2 & Harga Naik & CMF > 0: **{c_debug3}**")
 
+    st.markdown("**Top 5 Volume Ratio tertinggi hari ini:**")
+    top_vol = df_today[["Kode", "Vol_Ratio", "Pct_Change", "CMF_20", "Close", "Open"]].sort_values("Vol_Ratio", ascending=False).head(5)
+    st.dataframe(top_vol)
+
+# ============================================================
+# SECTION 1: AKUMULASI KUAT (RELAXED FILTER)
+# ============================================================
 st.markdown(
-    section_title("Akumulasi Kuat — Volume Meledak + Harga Naik",
-                  "Vol >1.5x MA20 · Close >= Open · CMF >0"),
+    section_title("Top Volume Spike — Harga Naik",
+                  "Vol >1.0x MA20 · Harga Naik · Cek CMF untuk konfirmasi"),
     unsafe_allow_html=True
 )
 
-# FILTER AKUMULASI: Vol Spike, Candle Hijau (atau ARA), CMF Positif
+# FILTER BARU: Hanya butuh Volume > rata-rata (1.0) dan Harga Naik.
+# Tidak memaksa CMF > 0 agar data pasti muncul.
 df_accum = df_today[
-    (df_today["Vol_Ratio"] > 1.5) &
-    (df_today["Vol_Ratio"] < 100) &
-    (df_today["Close"] >= df_today["Open"]) &
+    (df_today["Vol_Ratio"] > 1.0) &
     (df_today["Pct_Change"] > 0) &
-    (df_today["CMF_20"] > 0) &
-    (df_today["Close"] > 0) &
-    (df_today["Volume"] > 0)
+    (df_today["Close"] > 0)
 ].copy()
 
 if df_accum.empty:
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
-        'Tidak ada saham yang memenuhi kriteria Akumulasi Kuat hari ini.'
+        'Tidak ada saham yang harganya naik dengan volume di atas rata-rata hari ini. Pasar sedang lesu atau libur.'
         '</div>', unsafe_allow_html=True
     )
 else:
@@ -288,7 +292,7 @@ else:
         f'border:1px solid #27272a; border-radius:8px; '
         f'padding:14px 20px; margin-bottom:20px; '
         f'display:flex; gap:24px; flex-wrap:wrap; font-size:14px;">'
-        f'<span style="color:#a3a3a3;">Saham akumulasi: '
+        f'<span style="color:#a3a3a3;">Saham naik dengan volume tinggi: '
         f'<b style="color:#ffffff;">{len(df_accum)}</b></span>'
         f'<span style="color:#a3a3a3;">Tanggal: '
         f'<b style="color:#ffffff;">{last_date.strftime("%d %b %Y")}</b></span>'
@@ -298,8 +302,9 @@ else:
 
     df_show = df_accum.head(30).reset_index(drop=True).copy()
 
+    # Verdict akan menilai apakah ini Akumulasi Kuat atau Distribusi Tersamar
     df_show["Verdict"] = df_show.apply(
-        lambda r: classify_verdict(r["Pct_Change"], r["CMF_20"], True),
+        lambda r: classify_verdict(r["Pct_Change"], r["CMF_20"], r["Close"] >= r["Open"]),
         axis=1
     )
 
@@ -309,7 +314,6 @@ else:
     df_show["CMF_20"] = df_show["CMF_20"].round(3)
     df_show["Spike_Count_20"] = df_show["Spike_Count_20"].fillna(0).astype(int)
 
-    # PERHATIKAN: Kolom "Close %" SUDAH DIHAPUS
     df_show = df_show[[
         "Kode", "Close", "Pct_Change", "Vol_Ratio",
         "CMF_20", "Spike_Count_20", "Verdict"
@@ -327,17 +331,15 @@ else:
 # SECTION 2: PERINGATAN DISTRIBUSI TERSAMAR
 # ============================================================
 st.markdown(
-    section_title("Distribusi Tersamar — Volume Meledak, Harga Naik tapi Uang Keluar",
-                  "Vol >1.5x MA20 · Candle Hijau TAPI CMF <0 (Bandar jualan)"),
+    section_title("Distribusi Tersamar — Harga Naik tapi Uang Keluar",
+                  "Vol >1.2x MA20 · Candle Hijau TAPI CMF <0 (Bandar jualan)"),
     unsafe_allow_html=True
 )
 
-# FILTER DISTRIBUSI TERSAMAR: Harga naik (hijau), tapi CMF negatif
 df_dist = df_today[
-    (df_today["Vol_Ratio"] > 1.5) &
-    (df_today["Vol_Ratio"] < 100) &
-    (df_today["Close"] >= df_today["Open"]) &
+    (df_today["Vol_Ratio"] > 1.2) &
     (df_today["Pct_Change"] > 0) &
+    (df_today["Close"] >= df_today["Open"]) &
     (df_today["CMF_20"] < 0) &
     (df_today["Close"] > 0) &
     (df_today["Volume"] > 0)
@@ -374,7 +376,7 @@ else:
     df_show_d = df_dist.head(15).reset_index(drop=True).copy()
 
     df_show_d["Verdict"] = df_show_d.apply(
-        lambda r: classify_verdict(r["Pct_Change"], r["CMF_20"], r["Close"] > r["Open"]),
+        lambda r: classify_verdict(r["Pct_Change"], r["CMF_20"], r["Close"] >= r["Open"]),
         axis=1
     )
 
@@ -383,7 +385,6 @@ else:
     df_show_d["Vol_Ratio"] = df_show_d["Vol_Ratio"].round(2)
     df_show_d["CMF_20"] = df_show_d["CMF_20"].round(3)
 
-    # PERHATIKAN: Kolom "Close %" SUDAH DIHAPUS
     df_show_d = df_show_d[[
         "Kode", "Close", "Pct_Change", "Vol_Ratio",
         "CMF_20", "Verdict"
