@@ -79,8 +79,9 @@ def compute_all_indicators():
     d["Prev_Close"] = d.groupby("Kode")["Close"].shift(1)
     d["Pct_Change"] = (d["Close"] / d["Prev_Close"] - 1) * 100
 
+    # Vol MA20 (min_periods diturunkan ke 5 agar saham baru tetap terhitung)
     d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
-        lambda x: x.rolling(20, min_periods=10).mean()
+        lambda x: x.rolling(20, min_periods=5).mean()
     )
     d["Vol_Ratio"] = d["Volume"] / d["Vol_MA20"]
 
@@ -228,7 +229,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# FILTER BARU: HANYA VOLUME YANG MELEDAK (Tanpa memaksa harga naik atau CMF positif)
+# FILTER BARU: HANYA VOLUME YANG MELEDAK
 df_spike = df_latest[
     (df_latest["Vol_Ratio"] > 1.5) &
     (df_latest["Close"] > 0)
@@ -256,7 +257,6 @@ else:
 
     df_show = df_spike.head(50).reset_index(drop=True).copy()
 
-    # LOGIKA VERDICT OTOMATIS
     def get_verdict(row):
         pct = row["Pct_Change"]
         cmf = row["CMF_5"]
@@ -290,3 +290,15 @@ else:
     })
 
     render_table(df_show)
+
+# ============================================================
+# PANEL DEBUGGING (Membantu mengecek Data Parquet)
+# ============================================================
+with st.expander("🔍 Cek Data Parquet (Klik untuk Debug)"):
+    st.write(f"**Tanggal terakhir data di Parquet:** `{df_ind['Date'].max().strftime('%Y-%m-%d')}`")
+    st.write(f"**Total saham di data:** {len(df_latest)}")
+    st.write(f"**Saham dengan Volume > 1.5x:** {len(df_latest[df_latest['Vol_Ratio'] > 1.5])}")
+    
+    st.markdown("**Top 10 Volume Ratio Tertinggi:**")
+    debug_df = df_latest[["Kode", "Date", "Volume", "Vol_MA20", "Vol_Ratio", "Pct_Change", "CMF_5"]].sort_values("Vol_Ratio", ascending=False).head(10)
+    st.dataframe(debug_df)
