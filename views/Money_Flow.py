@@ -14,7 +14,7 @@ from quant.theme import load_theme, page_header, section_title, render_table
 load_theme()
 
 # ============================================================
-# CUSTOM LOADER (FIX BUG OPENPRICE & AGAR 963 SAHAM TERBACA)
+# CUSTOM LOADER
 # ============================================================
 @st.cache_data(ttl=1800)
 def load_parquet_for_money_flow():
@@ -201,7 +201,7 @@ mfi_desc = "Overbought" if mfi_val > 80 else "Oversold" if mfi_val < 20 else "Ne
 render_metric(c1, "MFI (14)", f"{mfi_val:.1f}", mfi_desc)
 
 cmf_val = last['CMF']
-cmf_desc = "Akumulasi" if cmf_val > 0 else "Distribusi"
+cmf_desc = "Uang Masuk" if cmf_val > 0 else "Uang Keluar"
 render_metric(c2, "CMF (5)", f"{cmf_val:+.3f}", cmf_desc)
 
 vr_val = last['Vol_Ratio']
@@ -255,13 +255,12 @@ fig2.update_layout(
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
 # ============================================================
-# SCAN: AKUMULASI & DISTRIBUSI (SNIPER FILTER)
+# SCAN: AKUMULASI & DISTRIBUSI (MURNI LPM / ALIRAN UANG)
 # ============================================================
 df_ind = compute_all_indicators()
 if df_ind is None or df_ind.empty:
     st.stop()
 
-# Mengambil data terakhir MASING-MASING saham
 df_latest = df_ind.sort_values("Date").groupby("Kode").tail(1).copy()
 
 st.markdown(
@@ -269,23 +268,22 @@ st.markdown(
     'border:1px solid #27272a; border-left:4px solid #ffffff; '
     'border-radius:8px; padding:20px 24px; margin:32px 0 24px; '
     'font-size:14px; color:#e5e5e5; line-height:1.7;">'
-    '<b style="color:#ffffff;">SNIPER FILTER (HIGH CONVICTION):</b><br>'
-    'Hanya menampilkan saham dengan Volume >3.0x MA20, pergerakan harga signifikan, aliran dana ekstrem, dan memiliki riwayat spike.'
+    '<b style="color:#ffffff;">LOGIKA DETEKSI BANDAR (MURNI ALIRAN UANG):</b><br>'
+    'Kita <b>TIDAK PEDULI</b> harga naik atau turun. Yang penting Volume meledak (lonjakan transaksi) '
+    'dan CMF menunjukkan arah uang (Positif = Masuk, Negatif = Keluar).'
     '</div>', unsafe_allow_html=True
 )
 
-# SECTION 1: AKUMULASI KUAT (SNIPER)
+# SECTION 1: AKUMULASI (UANG MASUK)
 st.markdown(
-    section_title("Akumulasi Kuat — Volume Meledak + Harga Naik Signifikan",
-                  "Vol >3.0x MA20 · Harga Naik >3.0% · CMF (5) >0.15"),
+    section_title("Akumulasi — Volume Meledak + Uang Masuk (CMF Positif)",
+                  "Vol >2.5x MA20 · CMF (5) > 0.1 (Harga naik/turun tidak masalah)"),
     unsafe_allow_html=True
 )
 
-# PERKETAT MAKSIMAL
 df_accum = df_latest[
-    (df_latest["Vol_Ratio"] > 3.0) &
-    (df_latest["Pct_Change"] > 3.0) &
-    (df_latest["CMF_5"] > 0.15) & 
+    (df_latest["Vol_Ratio"] > 2.5) &
+    (df_latest["CMF_5"] > 0.1) & 
     (df_latest["Spike_Count_20"] > 0) &
     (df_latest["Close"] > 0)
 ].copy()
@@ -293,7 +291,7 @@ df_accum = df_latest[
 if df_accum.empty:
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
-        'Tidak ada saham dengan kriteria SNIPER Akumulasi saat ini. (Sangat wajar, sinyal ini langka).'
+        'Tidak ada saham dengan Volume meledak dan aliran uang masuk (CMF Positif) saat ini.'
         '</div>', unsafe_allow_html=True
     )
 else:
@@ -301,17 +299,26 @@ else:
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-radius:8px; '
         f'padding:14px 20px; margin-bottom:20px; font-size:14px;">'
-        f'<span style="color:#a3a3a3;">Saham akumulasi sniper: <b style="color:#ffffff;">{len(df_accum)}</b></span>'
+        f'<span style="color:#a3a3a3;">Saham akumulasi: <b style="color:#ffffff;">{len(df_accum)}</b></span>'
         f'</div>', unsafe_allow_html=True
     )
 
     df_show = df_accum.head(30).reset_index(drop=True).copy()
+    
+    # Verdict Dinamis
+    def get_accum_verdict(row):
+        if row["Pct_Change"] > 0:
+            return "AKUMULASI (Harga Naik)"
+        else:
+            return "AKUMULASI DIAM-DIAM (Harga Turun)"
+            
+    df_show["Verdict"] = df_show.apply(get_accum_verdict, axis=1)
+
     df_show["Close"] = df_show["Close"].round(0)
     df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
     df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
     df_show["CMF_5"] = df_show["CMF_5"].round(3)
     df_show["Spike_Count_20"] = df_show["Spike_Count_20"].fillna(0).astype(int)
-    df_show["Verdict"] = "AKUMULASI"
 
     df_show = df_show[[
         "Kode", "Close", "Pct_Change", "Vol_Ratio",
@@ -322,18 +329,16 @@ else:
     })
     render_table(df_show)
 
-# SECTION 2: DISTRIBUSI TERSAMAR (SNIPER)
+# SECTION 2: DISTRIBUSI (UANG KELUAR)
 st.markdown(
-    section_title("Distribusi Tersamar — Harga Naik tapi Uang Keluar Deras",
-                  "Vol >3.0x MA20 · Harga Naik >1.0% · CMF (5) < -0.15"),
+    section_title("Distribusi — Volume Meledak + Uang Keluar (CMF Negatif)",
+                  "Vol >2.5x MA20 · CMF (5) < -0.1 (Harga naik/turun tidak masalah)"),
     unsafe_allow_html=True
 )
 
-# PERKETAT MAKSIMAL
 df_dist = df_latest[
-    (df_latest["Vol_Ratio"] > 3.0) &
-    (df_latest["Pct_Change"] > 1.0) &
-    (df_latest["CMF_5"] < -0.15) &
+    (df_latest["Vol_Ratio"] > 2.5) &
+    (df_latest["CMF_5"] < -0.1) &
     (df_latest["Spike_Count_20"] > 0) &
     (df_latest["Close"] > 0)
 ].copy()
@@ -342,7 +347,7 @@ if df_dist.empty:
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
         'border-radius:8px; padding:16px 20px; font-size:14px; color:#e5e5e5;">'
-        'Tidak ada saham yang terindikasi <b>Distribusi Tersamar Sniper</b> saat ini.'
+        'Tidak ada saham yang terindikasi <b>Distribusi</b> saat ini.'
         '</div>', unsafe_allow_html=True
     )
 else:
@@ -350,16 +355,25 @@ else:
     st.markdown(
         f'<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; '
         f'border-radius:8px; padding:14px 20px; margin-bottom:20px; font-size:14px;">'
-        f'<span style="color:#a3a3a3;">Saham distribusi sniper: <b style="color:#ffffff;">{len(df_dist)}</b></span>'
+        f'<span style="color:#a3a3a3;">Saham distribusi: <b style="color:#ffffff;">{len(df_dist)}</b></span>'
         f'</div>', unsafe_allow_html=True
     )
 
     df_show_d = df_dist.head(15).reset_index(drop=True).copy()
+    
+    # Verdict Dinamis
+    def get_dist_verdict(row):
+        if row["Pct_Change"] > 0:
+            return "DISTRIBUSI TERSAMAR (Harga Naik)"
+        else:
+            return "DISTRIBUSI TOTAL (Harga Turun)"
+            
+    df_show_d["Verdict"] = df_show_d.apply(get_dist_verdict, axis=1)
+
     df_show_d["Close"] = df_show_d["Close"].round(0)
     df_show_d["Pct_Change"] = df_show_d["Pct_Change"].round(2)
     df_show_d["Vol_Ratio"] = df_show_d["Vol_Ratio"].round(2)
     df_show_d["CMF_5"] = df_show_d["CMF_5"].round(3)
-    df_show_d["Verdict"] = "DISTRIBUSI TERSAMAR"
 
     df_show_d = df_show_d[[
         "Kode", "Close", "Pct_Change", "Vol_Ratio",
