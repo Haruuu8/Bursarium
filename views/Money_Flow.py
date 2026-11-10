@@ -43,7 +43,9 @@ def calculate_money_flow(df):
     mfr = pos_mf.rolling(14).sum() / neg_mf.rolling(14).sum()
     d['MFI'] = 100 - (100 / (1 + mfr))
 
-    mfm = ((d['Close'] - d['Low']) - (d['High'] - d['Close'])) / (d['High'] - d['Low'])
+    # FIX: Gunakan 0.0001 agar tidak division by zero
+    rng = (d['High'] - d['Low']).replace(0, 0.0001)
+    mfm = ((d['Close'] - d['Low']) - (d['High'] - d['Close'])) / rng
     mfv = mfm * d['Volume']
     d['CMF'] = mfv.rolling(20).sum() / d['Volume'].rolling(20).sum()
 
@@ -62,7 +64,6 @@ def compute_all_indicators():
 
     d = d.copy()
     d["Kode"] = d["Kode"].astype(str).str.strip().str.upper()
-
     d["Date"] = pd.to_datetime(d["Date"], errors="coerce")
     d = d.dropna(subset=["Date"])
 
@@ -74,22 +75,38 @@ def compute_all_indicators():
     d = d[d["Close"] > 0]
     d = d.sort_values(["Kode", "Date"]).reset_index(drop=True)
 
+    d["Prev_Close"] = d.groupby("Kode")["Close"].shift(1)
+    d["Pct_Change"] = (d["Close"] / d["Prev_Close"] - 1) * 100
+
     d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
         lambda x: x.rolling(20, min_periods=10).mean()
     )
     d["Vol_Ratio"] = d["Volume"] / d["Vol_MA20"]
-    d["Pct_Change"] = d.groupby("Kode")["Close"].pct_change() * 100
 
-    rng = (d["High"] - d["Low"]).replace(0, np.nan)
-    d["Close_Pct"] = (d["Close"] - d["Low"]) / rng
+    # FIX LOGIKA ARA/ARB (High == Low)
+    rng = d["High"] - d["Low"]
+    rng_safe = rng.replace(0, 0.0001)
+    d["Close_Pct"] = (d["Close"] - d["Low"]) / rng_safe
 
-    d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng
+    # Jika High == Low, pakai logika harga (Naik = 1.0, Turun = 0.0, Flat = 0.5)
+    is_flat = rng == 0
+    d.loc[is_flat & (d["Close"] > d["Prev_Close"]), "Close_Pct"] = 1.0  # ARA
+    d.loc[is_flat & (d["Close"] < d["Prev_Close"]), "Close_Pct"] = 0.0  # ARB
+    d.loc[is_flat & (d["Close"] == d["Prev_Close"]), "Close_Pct"] = 0.5 # Flat
+
+    # Metrik tambahan: Tebalnya badan candle (Body vs Shadow)
+    # Jika Body positif dan tebal, artinya buyer pegang kendali penuh dari open ke close
+    d["Body_Pct"] = (d["Close"] - d["Open"]) / rng_safe
+    d.loc[is_flat & (d["Close"] > d["Prev_Close"]), "Body_Pct"] = 1.0 # ARA dari open
+
+    d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng_safe
     d["MFV"] = d["MFM"] * d["Volume"]
     d["CMF_20"] = d.groupby("Kode")["MFV"].transform(
         lambda x: x.rolling(20, min_periods=10).sum()
     ) / d.groupby("Kode")["Volume"].transform(
         lambda x: x.rolling(20, min_periods=10).sum()
     )
+    d["CMF_20"] = d["CMF_20"].fillna(0)
 
     d["Spike_Flag"] = (d["Vol_Ratio"] > 1.5).astype(int)
     d["Spike_Count_20"] = d.groupby("Kode")["Spike_Flag"].transform(
@@ -106,11 +123,13 @@ def classify_verdict(close_pct, cmf, close_gt_open):
         if close_pct < 0.3 and cmf < 0:
             return "DISTRIBUSI"
         return "BEARISH"
-    if close_pct >= 0.7 and cmf >= 0.1:
+    
+    # Threshold diturunkan agar lebih realistis
+    if close_pct >= 0.8 and cmf >= 0.1:
         return "AKUMULASI KUAT"
-    elif close_pct >= 0.6 and cmf > 0:
+    elif close_pct >= 0.5 and cmf > 0:
         return "AKUMULASI"
-    elif close_pct >= 0.5:
+    elif close_pct >= 0.4:
         return "CAMPURAN"
     elif close_pct >= 0.3:
         return "BUYER LEMAH"
@@ -125,23 +144,17 @@ st.markdown(page_header("", "Smart Money Flow", "Bandarmology & Aliran Uang Besa
 
 saham_list = list_available()
 if not saham_list:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data tidak tersedia.</div>', unsafe_allow_html=True)
     st.stop()
 
-# ============================================================
-# PERBAIKAN LAYOUT: Selectbox & Teks Sejajar
-# ============================================================
 if "mf_kode" not in st.session_state:
     st.session_state.mf_kode = "BBCA" if "BBCA" in saham_list else saham_list[0]
 
-# Gunakan kolom agar selectbox tidak terlalu lebar
 col_sel, _ = st.columns([1, 2])
 with col_sel:
     kode = st.selectbox("Pilih Saham", saham_list, key="mf_kode")
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data saham tidak cukup.</div>', unsafe_allow_html=True)
     st.stop()
 
 df = calculate_money_flow(df)
@@ -191,9 +204,6 @@ obv_prev = df['OBV'].iloc[-10]
 obv_trend = "Naik" if obv_now > obv_prev else "Turun"
 render_metric(c4, "OBV Trend (10d)", obv_trend, "")
 
-# ============================================================
-# GRAFIK 1: HARGA VS VOLUME
-# ============================================================
 st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe_allow_html=True)
 fig1 = go.Figure()
 fig1.add_trace(go.Bar(
@@ -215,7 +225,6 @@ fig1.update_layout(
 )
 st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
-# PINDAHKAN TEKS KE SINI (Bawah Grafik 1)
 st.markdown(
     '<div style="text-align: right; margin-top: -10px; margin-bottom: 24px; font-size: 13px; color: #737373; font-weight: 500;">'
     'Grafik Statis. Data menggunakan Daily (1 Hari).'
@@ -223,9 +232,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ============================================================
-# GRAFIK 2: CMF
-# ============================================================
 st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
 fig2 = go.Figure()
 fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='CMF', line=dict(color='#ffffff', width=2)))
@@ -245,41 +251,36 @@ st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'di
 df_ind = compute_all_indicators()
 
 if df_ind is None or df_ind.empty:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data tidak tersedia untuk analisa volume spike.</div>', unsafe_allow_html=True)
     st.stop()
 
 last_date = df_ind["Date"].max()
 df_today = df_ind[df_ind["Date"] == last_date].copy()
 
-# --- Info box ---
 st.markdown(
     '<div style="background:#171717; '
     'border:1px solid #27272a; border-left:4px solid #ffffff; '
     'border-radius:8px; padding:20px 24px; margin:32px 0 24px; '
     'font-size:14px; color:#e5e5e5; line-height:1.7;">'
-    '<b style="color:#ffffff;">CIRI AKUMULASI ASLI:</b><br>'
-    '- Volume spike >2x MA20 <b>DAN</b> close di atas open (candle hijau)<br>'
-    '- Close di <b>60%+ range</b> hari itu (CLV) — buyer dominan sampai tutup<br>'
-    '- CMF(20) <b>positif</b> — tekanan beli konsisten 20 hari<br>'
-    '<b style="color:#ffffff;">DISTRIBUSI TERSAMAR:</b> candle hijau + volume besar, '
-    'tapi close &lt;30% range = big player jual di puncak, retail kejebak.'
+    '<b style="color:#ffffff;">LOGIKA AKUMULASI BARU:</b><br>'
+    '- Volume spike >1.5x MA20 (terjadi lonjakan transaksi)<br>'
+    '- Harga Close di atas atau sama dengan Open (Buyer pegang kendali)<br>'
+    '- Close di <b>40%+ range</b> hari itu (Buyer dominan, TIDAK harus 60% agar ARA tetap masuk)<br>'
+    '- <b>Khusus ARA/ARB:</b> Jika harga mentok (High == Low) dan naik, otomatis dihitung 100% kuat!'
     '</div>', unsafe_allow_html=True
 )
 
-# ============================================================
-# SECTION 1: AKUMULASI KUAT
-# ============================================================
 st.markdown(
     section_title("Akumulasi Kuat — Volume Meledak + Buyer Dominan",
-                  "Vol >2x MA20 · Close > Open · Close% >60% · CMF >0"),
+                  "Vol >1.5x · Green Candle · Close% >40% · CMF >0"),
     unsafe_allow_html=True
 )
 
+# FILTER BARU YANG LEBIH MASUK AKAL
 df_accum = df_today[
-    (df_today["Vol_Ratio"] > 2) &
-    (df_today["Vol_Ratio"] < 50) &
-    (df_today["Close"] > df_today["Open"]) &
-    (df_today["Close_Pct"] > 0.6) &
+    (df_today["Vol_Ratio"] > 1.5) &
+    (df_today["Vol_Ratio"] < 100) &
+    (df_today["Close"] >= df_today["Open"]) & # >= agar ARA dari Open masuk
+    (df_today["Close_Pct"] >= 0.4) &          # Turun ke 40%
     (df_today["CMF_20"] > 0) &
     (df_today["Close"] > 0) &
     (df_today["Volume"] > 0)
@@ -288,8 +289,7 @@ df_accum = df_today[
 if df_accum.empty:
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
-        'Tidak ada saham yang memenuhi kriteria <b>Akumulasi Kuat</b> hari ini. '
-        'Belum terdeteksi adanya volume meledak yang diiringi dengan dominasi pembeli.'
+        'Tidak ada saham yang memenuhi kriteria Akumulasi Kuat hari ini.'
         '</div>', unsafe_allow_html=True
     )
 else:
@@ -336,26 +336,18 @@ else:
 
     render_table(df_show)
 
-    st.caption(
-        "**Verdict** = klasifikasi berdasarkan **CLV** (Close%) dan **CMF**: "
-        "AKUMULASI KUAT (CLV>70% + CMF>0.1), "
-        "AKUMULASI (CLV>60% + CMF>0), "
-        "CAMPURAN. "
-        "**Spike 20d** = berapa kali volume spike >1.5x dalam 20 hari."
-    )
-
 # ============================================================
 # SECTION 2: PERINGATAN DISTRIBUSI TERSAMAR
 # ============================================================
 st.markdown(
     section_title("Distribusi Tersamar — Volume Meledak, Close Lemah",
-                  "Vol >2x MA20 tapi close <30% range -> big player jual di puncak"),
+                  "Vol >1.5x MA20 tapi close <30% range -> big player jual di puncak"),
     unsafe_allow_html=True
 )
 
 df_dist = df_today[
-    (df_today["Vol_Ratio"] > 2) &
-    (df_today["Vol_Ratio"] < 50) &
+    (df_today["Vol_Ratio"] > 1.5) &
+    (df_today["Vol_Ratio"] < 100) &
     (df_today["Close_Pct"] < 0.3) &
     (df_today["Close"] > 0) &
     (df_today["Volume"] > 0)
@@ -415,10 +407,3 @@ else:
     })
 
     render_table(df_show_d)
-
-    st.caption(
-        "[WARN] HINDARI saham di tabel ini. Volume besar tapi close di bawah "
-        "range = big player jual ke retail. Candle mungkin hijau, tapi "
-        "top-heavy — harga gagal ditahan di atas. "
-        "Cek besok: kalau gap down atau follow-through lemah, konfirmasi distribusi."
-    )
