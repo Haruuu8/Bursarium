@@ -43,7 +43,7 @@ def compute_volume_spikes():
     d = d.copy()
     d["Kode"] = d["Kode"].astype(str).str.strip().str.upper()
     
-    # NORMALISASI TANGGAL (Buang komponen jam/menit agar seragam)
+    # Normalisasi tanggal (hilangkan jam)
     d["Date"] = pd.to_datetime(d["Date"], errors="coerce").dt.normalize()
     d = d.dropna(subset=["Date"])
 
@@ -82,34 +82,28 @@ def compute_volume_spikes():
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown(page_header("", "Volume Spike Screener", "Mencari saham dengan volume meledak hari ini"), unsafe_allow_html=True)
+st.markdown(page_header("", "Volume Spike Screener", "Mencari saham dengan volume meledak"), unsafe_allow_html=True)
 
 # ============================================================
-# SCAN LOGIC
+# SCAN LOGIC (BERDASARKAN MASING-MASING SAHAM)
 # ============================================================
 df_ind = compute_volume_spikes()
 
 if df_ind is None or df_ind.empty:
     st.stop()
 
-# 1. CARI TANGGAL MAKSIMAL DI SELURUH DATA
-global_max_date = df_ind["Date"].max()
+# 1. Ambil baris terakhir dari MASING-MASING saham (tanpa peduli tanggalnya sama atau tidak)
+df_latest = df_ind.sort_values("Date").groupby("Kode").tail(1).copy()
 
-# 2. AMBIL DATA TERAKHIR MASING-MASING SAHAM
-# (Tapi batasi hanya saham yang tanggal terakhirnya minimal H-3 dari tanggal global, agar saham suspend tidak ikut)
-df_latest = df_ind[df_ind["Date"] >= (global_max_date - pd.Timedelta(days=3))]
-df_latest = df_latest.sort_values("Date").groupby("Kode").tail(1).copy()
-
-# 3. FILTER VOLUME SPIKE (> 1.5x)
+# 2. Filter Volume Spike (> 1.5x MA20)
 df_spike = df_latest[df_latest["Vol_Ratio"] > 1.5].copy()
 df_spike = df_spike.sort_values("Vol_Ratio", ascending=False)
 
-# Panel Debug / Info Data
+# Panel Info
 st.markdown(
     f'<div style="background:#171717; border:1px solid #27272a; border-radius:8px; '
     f'padding:20px 24px; margin-bottom:24px; font-size:14px; color:#e5e5e5;">'
-    f'Data Terakhir (Global): <b>{global_max_date.strftime("%d %b %Y")}</b><br>'
-    f'Total Saham yang datanya masih fresh (H-3): <b>{len(df_latest)}</b><br>'
+    f'Total Saham di Database: <b>{len(df_latest)}</b><br>'
     f'Total Saham Volume > 1.5x MA20: <b style="color:#ffffff; font-size:18px;">{len(df_spike)}</b>'
     f'</div>',
     unsafe_allow_html=True
@@ -118,9 +112,9 @@ st.markdown(
 if df_spike.empty:
     st.warning("Tidak ada saham yang volume-nya meledak > 1.5x MA20 saat ini.")
 else:
-    # Siapkan Tabel
     df_show = df_spike.copy()
 
+    # Logika Verdict
     def get_verdict(row):
         pct = row["Pct_Change"]
         cmf = row["CMF_5"]
@@ -189,12 +183,3 @@ if df is not None and not df.empty:
         dragmode=False, margin=dict(l=40, r=40, t=40, b=40)
     )
     st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
-
-# ============================================================
-# PANEL DEBUGGING
-# ============================================================
-with st.expander("🔍 Cek Distribusi Tanggal di Parquet (Debug)"):
-    st.markdown("**10 Tanggal Terakhir di Database (dan jumlah sahamnya):**")
-    date_counts = df_ind.groupby("Date").size().reset_index(name="Jumlah Saham")
-    date_counts = date_counts.sort_values("Date", ascending=False).head(10)
-    st.dataframe(date_counts)
