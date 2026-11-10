@@ -9,7 +9,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from quant.theme import load_theme, page_header, section_title
+from quant.theme import load_theme, page_header, section_title, render_table
 from quant.parquet_loader import load_parquet_safe
 
 load_theme()
@@ -55,14 +55,58 @@ def calculate_money_flow(df):
     return d
 
 
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_all_indicators():
+    d = load_parquet_safe()
+    if d is None or d.empty:
+        return None
+
+    d = d.copy()
+    d["Kode"] = d["Kode"].astype(str).str.strip().str.upper()
+    d["Date"] = pd.to_datetime(d["Date"], errors="coerce")
+    d = d.dropna(subset=["Date"])
+
+    for c in ["Open", "High", "Low", "Close", "Volume"]:
+        if c in d.columns:
+            d[c] = pd.to_numeric(d[c], errors="coerce")
+
+    d = d.dropna(subset=["Open", "High", "Low", "Close"])
+    d = d[d["Close"] > 0]
+    d = d.sort_values(["Kode", "Date"]).reset_index(drop=True)
+
+    d["Prev_Close"] = d.groupby("Kode")["Close"].shift(1)
+    d["Pct_Change"] = (d["Close"] / d["Prev_Close"] - 1) * 100
+
+    d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
+        lambda x: x.rolling(20, min_periods=10).mean()
+    )
+    d["Vol_Ratio"] = d["Volume"] / d["Vol_MA20"]
+
+    rng = (d["High"] - d["Low"]).replace(0, 0.0001)
+    d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng
+    d["MFV"] = d["MFM"] * d["Volume"]
+    d["CMF_20"] = d.groupby("Kode")["MFV"].transform(
+        lambda x: x.rolling(20, min_periods=10).sum()
+    ) / d.groupby("Kode")["Volume"].transform(
+        lambda x: x.rolling(20, min_periods=10).sum()
+    )
+    d["CMF_20"] = d["CMF_20"].fillna(0)
+
+    d["Spike_Flag"] = (d["Vol_Ratio"] > 1.5).astype(int)
+    d["Spike_Count_20"] = d.groupby("Kode")["Spike_Flag"].transform(
+        lambda x: x.rolling(20, min_periods=5).sum()
+    )
+
+    return d
+
+
 # ============================================================
-# HEADER
+# HEADER & CHART
 # ============================================================
 st.markdown(page_header("", "Smart Money Flow", "Bandarmology & Aliran Uang Besar"), unsafe_allow_html=True)
 
 saham_list = list_available()
 if not saham_list:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data tidak tersedia.</div>', unsafe_allow_html=True)
     st.stop()
 
 if "mf_kode" not in st.session_state:
@@ -74,7 +118,6 @@ with col_sel:
 
 df = load_ohlcv(kode)
 if df is None or len(df) < 50:
-    st.markdown('<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #ffffff; border-radius:8px; padding:16px 20px; color:#ffffff; font-size:14px;">Data saham tidak cukup.</div>', unsafe_allow_html=True)
     st.stop()
 
 df = calculate_money_flow(df)
@@ -94,9 +137,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ============================================================
-# METRIK
-# ============================================================
 st.markdown(section_title("Indikator Aliran Uang"), unsafe_allow_html=True)
 c1, c2, c3, c4 = st.columns(4)
 
@@ -127,9 +167,6 @@ obv_prev = df['OBV'].iloc[-10]
 obv_trend = "Naik" if obv_now > obv_prev else "Turun"
 render_metric(c4, "OBV Trend (10d)", obv_trend, "")
 
-# ============================================================
-# GRAFIK 1: HARGA VS VOLUME
-# ============================================================
 st.markdown(section_title("Harga vs Volume", "Melihat aktivitas bandar"), unsafe_allow_html=True)
 fig1 = go.Figure()
 fig1.add_trace(go.Bar(
@@ -158,9 +195,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ============================================================
-# GRAFIK 2: CMF
-# ============================================================
 st.markdown(section_title("Tekanan Beli vs Jual", "CMF & MFI"), unsafe_allow_html=True)
 fig2 = go.Figure()
 fig2.add_trace(go.Scatter(x=df['Date'], y=df['CMF'], name='CMF', line=dict(color='#ffffff', width=2)))
@@ -173,3 +207,72 @@ fig2.update_layout(
     dragmode=False, margin=dict(l=40, r=40, t=20, b=40)
 )
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
+
+# ============================================================
+# SCAN: AKUMULASI KUAT (BAGIAN YANG DIKEMBALIKAN)
+# ============================================================
+df_ind = compute_all_indicators()
+
+if df_ind is None or df_ind.empty:
+    st.stop()
+
+# PERBAIKAN: Ambil data terakhir masing-masing saham agar tidak terpengaruh bug tanggal
+df_latest = df_ind.sort_values("Date").groupby("Kode").tail(1).copy()
+
+st.markdown(
+    section_title("Akumulasi Kuat — Volume Meledak + Harga Naik + Uang Masuk",
+                  "Vol >1.2x MA20 · Harga Naik · CMF Positif"),
+    unsafe_allow_html=True
+)
+
+# FILTER: Volume melonjak, Harga naik, dan CMF Positif (Bandar beli)
+df_accum = df_latest[
+    (df_latest["Vol_Ratio"] > 1.2) &
+    (df_latest["Pct_Change"] > 0) &
+    (df_latest["CMF_20"] > 0) & 
+    (df_latest["Close"] > 0)
+].copy()
+
+if df_accum.empty:
+    st.markdown(
+        '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
+        'Tidak ada saham dengan kriteria Akumulasi (Vol naik, Harga naik, CMF positif) saat ini.'
+        '</div>', unsafe_allow_html=True
+    )
+else:
+    df_accum = df_accum.sort_values("Vol_Ratio", ascending=False)
+
+    st.markdown(
+        f'<div style="background:#171717; '
+        f'border:1px solid #27272a; border-radius:8px; '
+        f'padding:14px 20px; margin-bottom:20px; '
+        f'display:flex; gap:24px; flex-wrap:wrap; font-size:14px;">'
+        f'<span style="color:#a3a3a3;">Saham akumulasi: '
+        f'<b style="color:#ffffff;">{len(df_accum)}</b></span>'
+        f'</div>',
+        unsafe_allow_html=True
+    )
+
+    df_show = df_accum.head(30).reset_index(drop=True).copy()
+
+    df_show["Close"] = df_show["Close"].round(0)
+    df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
+    df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
+    df_show["CMF_20"] = df_show["CMF_20"].round(3)
+    df_show["Spike_Count_20"] = df_show["Spike_Count_20"].fillna(0).astype(int)
+    
+    # Verdict untuk tabel atas
+    df_show["Verdict"] = "AKUMULASI KUAT"
+
+    df_show = df_show[[
+        "Kode", "Close", "Pct_Change", "Vol_Ratio",
+        "CMF_20", "Spike_Count_20", "Verdict"
+    ]].rename(columns={
+        "Close": "Harga",
+        "Pct_Change": "Chg %",
+        "Vol_Ratio": "Vol Ratio",
+        "CMF_20": "CMF (20)",
+        "Spike_Count_20": "Spike 20d",
+    })
+
+    render_table(df_show)
