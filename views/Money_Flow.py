@@ -59,7 +59,7 @@ def compute_volume_spikes():
     d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
         lambda x: x.rolling(20, min_periods=10).mean()
     )
-    d["Vol_Ratio"] = d["Volume"] / d["Vol_MA20"]
+    d["Vol_Ratio"] = (d["Volume"] / d["Vol_MA20"]).fillna(0)
     
     # Hitung Pct Change
     d["Prev_Close"] = d.groupby("Kode")["Close"].shift(1)
@@ -85,18 +85,18 @@ def compute_volume_spikes():
 st.markdown(page_header("", "Volume Spike Screener", "Mencari saham dengan volume meledak"), unsafe_allow_html=True)
 
 # ============================================================
-# SCAN LOGIC (BERDASARKAN MASING-MASING SAHAM)
+# SCAN LOGIC
 # ============================================================
 df_ind = compute_volume_spikes()
 
 if df_ind is None or df_ind.empty:
     st.stop()
 
-# 1. Ambil baris terakhir dari MASING-MASING saham (tanpa peduli tanggalnya sama atau tidak)
+# Ambil baris terakhir dari MASING-MASING saham
 df_latest = df_ind.sort_values("Date").groupby("Kode").tail(1).copy()
 
-# 2. Filter Volume Spike (> 1.5x MA20)
-df_spike = df_latest[df_latest["Vol_Ratio"] > 1.5].copy()
+# Filter Volume Spike (> 1.5x MA20)
+df_spike = df_latest[(df_latest["Vol_Ratio"] > 1.5) & (df_latest["Volume"] > 0)].copy()
 df_spike = df_spike.sort_values("Vol_Ratio", ascending=False)
 
 # Panel Info
@@ -114,7 +114,6 @@ if df_spike.empty:
 else:
     df_show = df_spike.copy()
 
-    # Logika Verdict
     def get_verdict(row):
         pct = row["Pct_Change"]
         cmf = row["CMF_5"]
@@ -134,8 +133,6 @@ else:
     df_show["Pct_Change"] = df_show["Pct_Change"].round(2)
     df_show["Vol_Ratio"] = df_show["Vol_Ratio"].round(2)
     df_show["CMF_5"] = df_show["CMF_5"].round(3)
-    
-    # Format volume dengan ribuan
     df_show["Volume_Str"] = df_show["Volume"].apply(lambda x: f"{x:,.0f}")
     df_show["Vol_MA20_Str"] = df_show["Vol_MA20"].apply(lambda x: f"{x:,.0f}")
 
@@ -183,3 +180,21 @@ if df is not None and not df.empty:
         dragmode=False, margin=dict(l=40, r=40, t=40, b=40)
     )
     st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
+
+# ============================================================
+# PANEL DEBUGGING BARU (VALIDASI CSV vs PARQUET)
+# ============================================================
+with st.expander("🕵️ Cek Validasi Data (CSV vs Parquet)"):
+    st.markdown("Panel ini akan mengecek apakah data Parquet yang dibaca Streamlit sudah sesuai dengan folder CSV asli di laptop Anda.")
+    
+    csv_dir = "data_ohlcv_idx"
+    csv_count = 0
+    if os.path.exists(csv_dir):
+        csv_files = [f for f in os.listdir(csv_dir) if f.endswith('.csv')]
+        csv_count = len(csv_files)
+        
+    df_raw = load_parquet_safe()
+    
+    col1, col2 = st.columns(2)
+    col1.metric("Total File CSV di Folder", f"{csv_count:,} file")
+    col2.metric("Total Saham di Parquet (Dibaca Aplikasi)", f"{df_raw['Kode'].nunique():,} saham")
