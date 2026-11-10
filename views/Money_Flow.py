@@ -255,13 +255,13 @@ fig2.update_layout(
 st.plotly_chart(fig2, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
 
 # ============================================================
-# SCAN: AKUMULASI & DISTRIBUSI (BAGIAN BAWAH)
+# SCAN: AKUMULASI & DISTRIBUSI (SANGAT KETAT)
 # ============================================================
 df_ind = compute_all_indicators()
 if df_ind is None or df_ind.empty:
     st.stop()
 
-# Mengambil data terakhir MASING-MASING saham (Fix Bug Tanggal)
+# Mengambil data terakhir MASING-MASING saham
 df_latest = df_ind.sort_values("Date").groupby("Kode").tail(1).copy()
 
 st.markdown(
@@ -269,30 +269,30 @@ st.markdown(
     'border:1px solid #27272a; border-left:4px solid #ffffff; '
     'border-radius:8px; padding:20px 24px; margin:32px 0 24px; '
     'font-size:14px; color:#e5e5e5; line-height:1.7;">'
-    '<b style="color:#ffffff;">LOGIKA AKUMULASI & DISTRIBUSI:</b><br>'
-    'Volume meledak >1.5x MA20. Jika harga naik dan CMF positif, itu <b>Akumulasi</b>. '
-    'Jika harga naik tapi CMF negatif, itu jebakan <b>Distribusi Tersamar</b>.'
+    '<b style="color:#ffffff;">LOGIKA AKUMULASI & DISTRIBUSI (HIGH CONVICTION):</b><br>'
+    'Volume meledak >2.0x MA20. Hanya menyaring saham dengan pergerakan harga yang signifikan (>1.5%) dan aliran dana ekstrem (CMF >0.1 atau <-0.1).'
     '</div>', unsafe_allow_html=True
 )
 
 # SECTION 1: AKUMULASI KUAT
 st.markdown(
-    section_title("Akumulasi Kuat — Volume Meledak + Harga Naik + Uang Masuk",
-                  "Vol >1.5x MA20 · Harga Naik · CMF (5 Hari) Positif"),
+    section_title("Akumulasi Kuat — Volume Meledak + Harga Naik Signifikan",
+                  "Vol >2.0x MA20 · Harga Naik >1.5% · CMF (5) >0.1"),
     unsafe_allow_html=True
 )
 
+# PERKETAT: Vol > 2.0, Harga Naik > 1.5%, CMF > 0.1
 df_accum = df_latest[
-    (df_latest["Vol_Ratio"] > 1.5) &
-    (df_latest["Pct_Change"] > 0) &
-    (df_latest["CMF_5"] > 0) & 
+    (df_latest["Vol_Ratio"] > 2.0) &
+    (df_latest["Pct_Change"] > 1.5) &
+    (df_latest["CMF_5"] > 0.1) & 
     (df_latest["Close"] > 0)
 ].copy()
 
 if df_accum.empty:
     st.markdown(
         '<div style="background:#171717; border:1px solid #27272a; border-left:4px solid #737373; border-radius:8px; padding:16px 20px; color:#e5e5e5; font-size:14px;">'
-        'Tidak ada saham dengan kriteria Akumulasi Kuat saat ini.'
+        'Tidak ada saham dengan kriteria Akumulasi Kuat saat ini (Pasar sedang sepi / tidak ada bandar masuk).'
         '</div>', unsafe_allow_html=True
     )
 else:
@@ -323,15 +323,16 @@ else:
 
 # SECTION 2: DISTRIBUSI TERSAMAR
 st.markdown(
-    section_title("Distribusi Tersamar — Harga Naik tapi Uang Keluar",
-                  "Vol >1.5x MA20 · Harga Naik · CMF (5 Hari) Negatif"),
+    section_title("Distribusi Tersamar — Harga Naik tapi Uang Keluar Deras",
+                  "Vol >2.0x MA20 · Harga Naik >0.5% · CMF (5) < -0.1"),
     unsafe_allow_html=True
 )
 
+# PERKETAT: Vol > 2.0, Harga Naik > 0.5%, CMF < -0.1
 df_dist = df_latest[
-    (df_latest["Vol_Ratio"] > 1.5) &
-    (df_latest["Pct_Change"] > 0) &
-    (df_latest["CMF_5"] < 0) &
+    (df_latest["Vol_Ratio"] > 2.0) &
+    (df_latest["Pct_Change"] > 0.5) &
+    (df_latest["CMF_5"] < -0.1) &
     (df_latest["Close"] > 0)
 ].copy()
 
