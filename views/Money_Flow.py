@@ -14,10 +14,55 @@ from quant.parquet_loader import load_parquet_safe
 
 load_theme()
 
+# ============================================================
+# CUSTOM LOADER (KHUSUS MONEY FLOW)
+# ============================================================
+@st.cache_data(ttl=1800)
+def load_parquet_for_money_flow():
+    """Membaca Parquet langsung & memperbaiki bug openprice tanpa mengganggu file lain."""
+    PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
+    if not os.path.exists(PARQUET_FILE):
+        return None
+        
+    df = pd.read_parquet(PARQUET_FILE)
+    df.columns = [str(c).strip().lower() for c in df.columns]
+    
+    # FIX UTAMA: Jika 'open' NaN tapi ada 'openprice', pakai 'openprice'
+    if 'openprice' in df.columns:
+        if 'open' in df.columns:
+            df['open'] = df['open'].fillna(df['openprice'])
+        else:
+            df['open'] = df['openprice']
+            
+    if 'closeprice' in df.columns:
+        if 'close' in df.columns:
+            df['close'] = df['close'].fillna(df['closeprice'])
+        else:
+            df['close'] = df['closeprice']
+
+    df = df.loc[:, ~df.columns.duplicated(keep="first")]
+    
+    col_map = {
+        "date": "Date", "tanggal": "Date",
+        "open": "Open", "high": "High", "low": "Low", "close": "Close",
+        "volume": "Volume", "vol": "Volume",
+        "kode": "Kode"
+    }
+    df = df.rename(columns=col_map)
+    df = df.loc[:, ~df.columns.duplicated(keep="first")]
+    
+    if "Date" in df.columns:
+        date_col = df["Date"]
+        if isinstance(date_col, pd.DataFrame):
+            date_col = date_col.iloc[:, 0]
+        df["Date"] = pd.to_datetime(date_col, errors="coerce").dt.tz_localize(None)
+        
+    return df
+
 
 @st.cache_data(ttl=1800)
 def load_ohlcv(kode):
-    df_all = load_parquet_safe()
+    df_all = load_parquet_for_money_flow()
     if df_all is None or "Kode" not in df_all.columns:
         return None
     df = df_all[df_all["Kode"] == kode].copy()
@@ -28,7 +73,7 @@ def load_ohlcv(kode):
 
 @st.cache_data(ttl=1800)
 def list_available():
-    df = load_parquet_safe()
+    df = load_parquet_for_money_flow()
     if df is None or "Kode" not in df.columns:
         return []
     return sorted(df["Kode"].unique())
@@ -36,14 +81,13 @@ def list_available():
 
 @st.cache_data(ttl=1800, show_spinner=False)
 def compute_volume_spikes():
-    d = load_parquet_safe()
+    d = load_parquet_for_money_flow()
     if d is None or d.empty:
         return None
 
     d = d.copy()
     d["Kode"] = d["Kode"].astype(str).str.strip().str.upper()
     
-    # Normalisasi tanggal (hilangkan jam)
     d["Date"] = pd.to_datetime(d["Date"], errors="coerce").dt.normalize()
     d = d.dropna(subset=["Date"])
 
@@ -55,17 +99,14 @@ def compute_volume_spikes():
     d = d[d["Close"] > 0]
     d = d.sort_values(["Kode", "Date"]).reset_index(drop=True)
 
-    # Hitung MA20 dan Vol Ratio
     d["Vol_MA20"] = d.groupby("Kode")["Volume"].transform(
         lambda x: x.rolling(20, min_periods=10).mean()
     )
     d["Vol_Ratio"] = (d["Volume"] / d["Vol_MA20"]).fillna(0)
     
-    # Hitung Pct Change
     d["Prev_Close"] = d.groupby("Kode")["Close"].shift(1)
     d["Pct_Change"] = (d["Close"] / d["Prev_Close"] - 1) * 100
     
-    # Hitung CMF 5
     rng = (d["High"] - d["Low"]).replace(0, 0.0001)
     d["MFM"] = ((d["Close"] - d["Low"]) - (d["High"] - d["Close"])) / rng
     d["MFV"] = d["MFM"] * d["Volume"]
@@ -92,14 +133,11 @@ df_ind = compute_volume_spikes()
 if df_ind is None or df_ind.empty:
     st.stop()
 
-# Ambil baris terakhir dari MASING-MASING saham
 df_latest = df_ind.sort_values("Date").groupby("Kode").tail(1).copy()
 
-# Filter Volume Spike (> 1.5x MA20)
 df_spike = df_latest[(df_latest["Vol_Ratio"] > 1.5) & (df_latest["Volume"] > 0)].copy()
 df_spike = df_spike.sort_values("Vol_Ratio", ascending=False)
 
-# Panel Info
 st.markdown(
     f'<div style="background:#171717; border:1px solid #27272a; border-radius:8px; '
     f'padding:20px 24px; margin-bottom:24px; font-size:14px; color:#e5e5e5;">'
@@ -180,21 +218,3 @@ if df is not None and not df.empty:
         dragmode=False, margin=dict(l=40, r=40, t=40, b=40)
     )
     st.plotly_chart(fig1, use_container_width=True, config={'staticPlot': False, 'displayModeBar': False}, theme=None)
-
-# ============================================================
-# PANEL DEBUGGING BARU (VALIDASI CSV vs PARQUET)
-# ============================================================
-with st.expander("🕵️ Cek Validasi Data (CSV vs Parquet)"):
-    st.markdown("Panel ini akan mengecek apakah data Parquet yang dibaca Streamlit sudah sesuai dengan folder CSV asli di laptop Anda.")
-    
-    csv_dir = "data_ohlcv_idx"
-    csv_count = 0
-    if os.path.exists(csv_dir):
-        csv_files = [f for f in os.listdir(csv_dir) if f.endswith('.csv')]
-        csv_count = len(csv_files)
-        
-    df_raw = load_parquet_safe()
-    
-    col1, col2 = st.columns(2)
-    col1.metric("Total File CSV di Folder", f"{csv_count:,} file")
-    col2.metric("Total Saham di Parquet (Dibaca Aplikasi)", f"{df_raw['Kode'].nunique():,} saham")
