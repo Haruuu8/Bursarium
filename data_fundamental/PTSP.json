@@ -3,40 +3,43 @@
   "nama": "PT Pioneerindo Gourmet International Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 2210.0,
-  "update": "2026-11-09 17:03",
+  "harga": 2760.0,
+  "update": "2026-11-10 23:13",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0006766314478906948,
-    "roe": 0.09016263651090642,
+    "ps": 0.0008396056938955567,
+    "roe": 0.11361535594874235,
     "eps": null,
     "eps_annualized": 9.333333333333332e-05,
     "de": 0.9643736337461642,
-    "margin_net": 0.02315201121288859,
+    "margin_net": 0.028987151669076054,
     "current_ratio": 1.2451483001050472,
-    "roa": 0.04391081204719389,
+    "roa": 0.05533270469677066,
     "bv": 838691.4513966885,
-    "pcf": 4.820336341925127e-06,
+    "pcf": 6.019967558241335e-06,
     "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 164894954000000.0,
+      "2025-Q4": 169549038000000.0,
       "2026-Q1": 204531720000000.0,
       "2026-Q2": 181299010000000.0,
       "2026-Q3": 170472956000000.0
     },
     "eps": {
       "2025-Q3": -0.06,
+      "2025-Q4": 0.0,
       "2026-Q1": 0.0,
       "2026-Q2": 0.0,
       "2026-Q3": -0.0
     },
     "net_income": {
       "2025-Q3": 1212251000000.0,
+      "2025-Q4": 5555455000000.0,
       "2026-Q1": 17413044000000.0,
       "2026-Q2": 3602208000000.0,
       "2026-Q3": -5530304000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 487985676288,
-    "enterprise_value": 429736198144,
+    "market_cap": 609430077440,
+    "enterprise_value": 648336113664,
     "shares_outstanding": 220808000
   },
   "akumulasi": {
-    "score": 6.6,
+    "score": 8.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.0097,
-    "vol_trend": 40.12,
-    "price_chg_20d": 62.39
+    "cmf": 0.1662,
+    "vol_trend": 34.783,
+    "price_chg_20d": 157.94
   },
   "neraca": {
     "aset": 380252567.0,

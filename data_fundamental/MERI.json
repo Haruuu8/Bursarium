@@ -3,13 +3,13 @@
   "nama": "PT Merry Riana Edukasi Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Education & Training Services",
-  "harga": 81.0,
-  "update": "2026-11-09 15:55",
+  "harga": 82.0,
+  "update": "2026-11-10 22:16",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.04002539377289e-06,
+    "ps": 2.0652108924614443e-06,
     "roe": -0.011861482422409239,
     "eps": null,
     "eps_annualized": 0.6533333333333333,
@@ -25,30 +25,33 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": 9180465476000000.0,
+      "2025-Q4": 7478720838000000.0,
       "2026-Q1": 1.0019617194e+16
     },
     "eps": {
       "2025-Q3": 0.0,
+      "2025-Q4": -0.19,
       "2026-Q1": 0.52
     },
     "net_income": {
       "2025-Q3": 76443847000000.0,
+      "2025-Q4": -43798502000000.0,
       "2026-Q1": 543186868000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 83845734400,
-    "enterprise_value": 39764828160,
+    "market_cap": 84880867328,
+    "enterprise_value": 40799961088,
     "shares_outstanding": 1035132500
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4447,
-    "vol_trend": 0.539,
-    "price_chg_20d": -26.17
+    "cmf": -0.5306,
+    "vol_trend": 1.478,
+    "price_chg_20d": -19.61
   },
   "neraca": {
     "aset": 57954849966.0,

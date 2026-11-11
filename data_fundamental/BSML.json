@@ -3,13 +3,13 @@
   "nama": "PT Bintang Samudera Mandiri Lines Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 296.0,
-  "update": "2026-11-09 15:02",
+  "harga": 276.0,
+  "update": "2026-11-10 21:45",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 7.793182771254338e-06,
+    "ps": 7.2666163677912065e-06,
     "roe": 0.017510467687145197,
     "eps": null,
     "eps_annualized": 1.5333333333333332,
@@ -18,7 +18,7 @@
     "current_ratio": 1.1674931954302088,
     "roa": 0.011577554118731138,
     "bv": 72215946.00332391,
-    "pcf": 9.536843469081126e-05,
+    "pcf": 8.892462153602671e-05,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -50,7 +50,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 547666591744,
+    "market_cap": 510662115328,
     "enterprise_value": 846153056256,
     "shares_outstanding": 1850225000
   },
@@ -58,9 +58,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1714,
-    "vol_trend": 0.851,
-    "price_chg_20d": -44.7
+    "cmf": -0.1927,
+    "vol_trend": 0.681,
+    "price_chg_20d": -51.15
   },
   "neraca": {
     "aset": 202087092490.0,

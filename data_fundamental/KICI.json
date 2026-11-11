@@ -1,22 +1,22 @@
 {
   "kode": "KICI",
-  "nama": "PT Kedaung Indah Can Tbk",
-  "sektor": "Consumer Cyclical",
-  "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 188.0,
-  "update": "2026-11-09 16:47",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": 189.0,
+  "update": "2026-11-10 22:56",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 5.76313758642954e-07,
-    "roe": -0.029529424173663187,
+    "ps": 5.137369046340165e-07,
+    "roe": -0.01158695015375453,
     "eps": null,
     "eps_annualized": -10.573333333333332,
     "de": 1.0366512509965844,
-    "margin_net": -0.036325725430070274,
+    "margin_net": -0.012638812711746801,
     "current_ratio": 5.461256046157505,
-    "roa": -0.014499008683599462,
+    "roa": -0.005689216623653532,
     "bv": 401289853.75,
     "pcf": null,
     "div_yield": null,
@@ -27,6 +27,7 @@
       "2025-Q1": 2.2000414803e+16,
       "2025-Q2": 1.5697617132e+16,
       "2025-Q3": 1.994274169e+16,
+      "2025-Q4": 3.1446806435e+16,
       "2026-Q1": 2.1126802827e+16,
       "2026-Q2": 2.3400215021e+16,
       "2026-Q3": 2.5564530329e+16
@@ -35,6 +36,7 @@
       "2025-Q1": -6.56,
       "2025-Q2": -14.12,
       "2025-Q3": -3.92,
+      "2025-Q4": 3.29,
       "2026-Q1": -7.21,
       "2026-Q2": -2.95,
       "2026-Q3": 2.23
@@ -43,6 +45,7 @@
       "2025-Q1": -1811537455000000.0,
       "2025-Q2": -3895748522000000.0,
       "2025-Q3": -1081368599000000.0,
+      "2025-Q4": 905868047000000.0,
       "2026-Q1": -1991276231000000.0,
       "2026-Q2": -811726255000000.0,
       "2026-Q3": 613810192000000.0
@@ -50,17 +53,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 51888001024,
-    "enterprise_value": 83134570496,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 276000000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.496,
-    "vol_trend": 0.389,
-    "price_chg_20d": -33.9
+    "cmf": -0.5229,
+    "vol_trend": 0.415,
+    "price_chg_20d": -32.01
   },
   "neraca": {
     "aset": 225571345212.0,
@@ -93,7 +96,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": -4149498368,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 292188727.0,

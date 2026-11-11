@@ -3,20 +3,20 @@
   "nama": "PT Cipta Sarana Medika Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 97.0,
-  "update": "2026-11-09 15:54",
+  "harga": 98.0,
+  "update": "2026-11-10 22:16",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.7417134360595653e-06,
-    "roe": 0.03066330818479396,
+    "ps": 1.6552093030235643e-06,
+    "roe": 0.024590069905367933,
     "eps": null,
     "eps_annualized": 4.0,
     "de": 0.7755886959404638,
-    "margin_net": 0.045584650311703126,
+    "margin_net": 0.03438596826728655,
     "current_ratio": 2.570440571471688,
-    "roa": 0.017269198256015035,
+    "roa": 0.013848825109342032,
     "bv": 82793196.79068711,
     "pcf": null,
     "div_yield": null,
@@ -25,18 +25,21 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": 2.5001113094e+16,
+      "2025-Q4": 3.3963950485e+16,
       "2026-Q1": 3.7569206729e+16,
       "2026-Q2": 3.947077449e+16,
       "2026-Q3": 3.9978627276e+16
     },
     "eps": {
       "2025-Q3": 984.09,
+      "2025-Q4": -989.99,
       "2026-Q1": 1.0,
       "2026-Q2": 1.0,
       "2026-Q3": 1.0
     },
     "net_income": {
       "2025-Q3": 483831651000000.0,
+      "2025-Q4": -798406213000000.0,
       "2026-Q1": 898607002000000.0,
       "2026-Q2": 4354918344000000.0,
       "2026-Q3": 736562349000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 247357652992,
-    "enterprise_value": 218125385728,
+    "market_cap": 249907740672,
+    "enterprise_value": 215601790976,
     "shares_outstanding": 2550078941
   },
   "akumulasi": {
-    "score": 8.5,
+    "score": 8.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2971,
-    "vol_trend": 4.358,
-    "price_chg_20d": 19.75
+    "cmf": 0.248,
+    "vol_trend": 2.242,
+    "price_chg_20d": 1.03
   },
   "neraca": {
     "aset": 374882449667.0,

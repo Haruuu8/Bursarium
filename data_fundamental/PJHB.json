@@ -3,13 +3,13 @@
   "nama": "PT Pelayaran Jaya Hidup Baru TBK",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 108.0,
-  "update": "2026-11-09 15:55",
+  "harga": 126.0,
+  "update": "2026-11-10 22:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 10.137672090112641,
+    "pe": 11.827284105131415,
     "pb": null,
-    "ps": 3.0326743358401974e-06,
+    "ps": 3.53812005848023e-06,
     "roe": 0.045800213842847666,
     "eps": 10.653333333333332,
     "eps_annualized": 10.653333333333332,
@@ -18,9 +18,9 @@
     "current_ratio": 53.92368622438693,
     "roa": 0.0440724413777079,
     "bv": 174470774.0516736,
-    "pcf": 2.6925596490024434e-05,
-    "div_yield": 8195431.895329294,
-    "payout_ratio": 83082601.19169873
+    "pcf": 3.1413195905028506e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -41,17 +41,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 207432630272,
-    "enterprise_value": 152340316160,
+    "market_cap": 242004738048,
+    "enterprise_value": 158100324352,
     "shares_outstanding": 1920672509
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.7,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2911,
-    "vol_trend": 1.222,
-    "price_chg_20d": -34.59
+    "cmf": -0.0542,
+    "vol_trend": 1.839,
+    "price_chg_20d": -17.65
   },
   "neraca": {
     "aset": 348238196597.0,

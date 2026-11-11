@@ -3,55 +3,58 @@
   "nama": "PT Graha Prima Mentari Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Beverages - Non-Alcoholic",
-  "harga": 90.0,
-  "update": "2026-11-09 15:34",
+  "harga": 87.0,
+  "update": "2026-11-10 22:00",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 18.36734693877551,
+    "pe": null,
     "pb": null,
-    "ps": 1.4380569075232211e-07,
-    "roe": 0.04835688965015777,
-    "eps": 4.9,
+    "ps": 1.5119183806171288e-07,
+    "roe": 0.06277190039253477,
+    "eps": null,
     "eps_annualized": 4.9,
     "de": 1.2237123791661815,
-    "margin_net": 0.007615769902306184,
+    "margin_net": 0.005376086744707925,
     "current_ratio": 1.620097419339897,
-    "roa": 0.019631186965030672,
+    "roa": 0.02548317151229581,
     "bv": 49282405.340289794,
-    "pcf": 8.827499867521958e-06,
-    "div_yield": 2235436.086026214,
-    "payout_ratio": 41059030.151501894
+    "pcf": 8.533249871937893e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 1.91273831121e+17,
+      "2025-Q4": 2.2129748085800006e+17,
       "2026-Q1": 2.98403418635e+17,
       "2026-Q2": 1.93405985673e+17
     },
     "eps": {
       "2025-Q3": 0.65,
+      "2025-Q4": 0.08,
       "2026-Q1": 1.28,
       "2026-Q2": 1.17
     },
     "net_income": {
       "2025-Q3": 1005580627000000.0,
+      "2025-Q4": 110941295000000.0,
       "2026-Q1": 1986699482000000.0,
       "2026-Q2": 1758807777000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 141449986048,
-    "enterprise_value": 159055282176,
+    "market_cap": 136734982144,
+    "enterprise_value": 160603373568,
     "shares_outstanding": 1571666469
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3912,
-    "vol_trend": 0.943,
-    "price_chg_20d": -38.46
+    "cmf": -0.3866,
+    "vol_trend": 0.879,
+    "price_chg_20d": -35.56
   },
   "neraca": {
     "aset": 190793723562.0,

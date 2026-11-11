@@ -3,20 +3,20 @@
   "nama": "PT Esta Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
-  "harga": 505.0,
-  "update": "2026-11-09 15:48",
+  "harga": 515.0,
+  "update": "2026-11-10 22:12",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 6.490653586121473e-06,
-    "roe": 0.04920120911975278,
+    "ps": 6.305890233226554e-06,
+    "roe": 0.061749867858746435,
     "eps": null,
     "eps_annualized": 4.68,
     "de": 0.18529220497429996,
-    "margin_net": 0.05898803437044345,
+    "margin_net": 0.0705287694157098,
     "current_ratio": 4.550941313139293,
-    "roa": 0.04150968403292193,
+    "roa": 0.05209663643941207,
     "bv": 93280549.5737386,
     "pcf": null,
     "div_yield": null,
@@ -25,18 +25,21 @@
   "quarterly": {
     "revenue": {
       "2025-Q1": 8.3671128071e+16,
+      "2025-Q4": 9.9567959674e+16,
       "2026-Q1": 9.3576788214e+16,
       "2026-Q2": 8.1979572271e+16,
       "2026-Q3": 6.0742214409e+16
     },
     "eps": {
       "2025-Q1": 1.08,
+      "2025-Q4": 2.25,
       "2026-Q1": 1.49,
       "2026-Q2": 0.32,
       "2026-Q3": 1.7
     },
     "net_income": {
       "2025-Q1": 4425941370000000.0,
+      "2025-Q4": 9239810905000000.0,
       "2026-Q1": 6118656479000000.0,
       "2026-Q2": 1330125280000000.0,
       "2026-Q3": 6999660707000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2076812509184,
-    "enterprise_value": 2033745788928,
+    "market_cap": 2117937528832,
+    "enterprise_value": 2054308233216,
     "shares_outstanding": 4112500000
   },
   "akumulasi": {
-    "score": 6.4,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.1261,
-    "vol_trend": 0.492,
-    "price_chg_20d": -40.59
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.2268,
+    "vol_trend": 0.458,
+    "price_chg_20d": -37.95
   },
   "neraca": {
     "aset": 454698325842.0,

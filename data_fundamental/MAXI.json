@@ -3,55 +3,58 @@
   "nama": "PT Maxindo Karya Anugerah Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Packaged Foods",
-  "harga": 16.0,
-  "update": "2026-11-09 15:33",
+  "harga": 17.0,
+  "update": "2026-11-10 21:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.0372455897589135e-06,
-    "roe": -0.12625623455021473,
+    "ps": 1.0572722274959663e-06,
+    "roe": -0.13282953193178085,
     "eps": null,
     "eps_annualized": -3.4,
     "de": 1.3082336994332233,
-    "margin_net": -0.22091316633127597,
+    "margin_net": -0.11148327101243388,
     "current_ratio": 0.6264133472124017,
-    "roa": -0.05469820260453541,
+    "roa": -0.057545963376410526,
     "bv": 13495132.644551829,
-    "pcf": 1.761367085264793e-05,
+    "pcf": 1.8714525280938426e-05,
     "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 3.8849614473e+16,
+      "2025-Q4": 4.1552121431e+16,
       "2026-Q1": 3.6538874815e+16,
       "2026-Q2": 3.7581276292e+16
     },
     "eps": {
       "2025-Q1": 0.85,
+      "2025-Q4": -0.29,
       "2026-Q1": -3.57,
       "2026-Q2": 1.87
     },
     "net_income": {
       "2025-Q1": 2001473864000000.0,
+      "2025-Q4": -2853962001000000.0,
       "2026-Q1": -8417127920000000.0,
       "2026-Q2": -7956989350000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 153761595392,
-    "enterprise_value": 290392965120,
+    "market_cap": 163371696128,
+    "enterprise_value": 300003065856,
     "shares_outstanding": 9610099981
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2907,
-    "vol_trend": 1.279,
-    "price_chg_20d": -42.86
+    "cmf": -0.3142,
+    "vol_trend": 0.94,
+    "price_chg_20d": -39.29
   },
   "neraca": {
     "aset": 299353845105.0,

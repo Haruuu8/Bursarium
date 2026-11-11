@@ -3,40 +3,43 @@
   "nama": "PT Kokoh Exa Nusantara Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 64.0,
-  "update": "2026-11-09 15:39",
+  "harga": 63.0,
+  "update": "2026-11-10 22:03",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 5.982709407166615e-06,
-    "roe": 0.07692399809068233,
+    "ps": 5.0234713665836565e-06,
+    "roe": 0.0975390174506708,
     "eps": null,
     "eps_annualized": 2.4266666666666667,
     "de": 0.07805892977872124,
-    "margin_net": 0.2280228088222656,
+    "margin_net": 0.24662679891705652,
     "current_ratio": 6.3745113437265,
-    "roa": 0.07135416809401272,
+    "roa": 0.09047651733722138,
     "bv": 31710165.44264927,
-    "pcf": 1.5729379981409644e-05,
-    "div_yield": 3122377.4127176413,
-    "payout_ratio": 82348415.28046526
+    "pcf": 1.5483608419200116e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 1.2158612611e+16,
+      "2025-Q4": 2.040090991e+16,
       "2026-Q1": 9659256799000000.0,
       "2026-Q2": 7379121583000000.0,
       "2026-Q3": 1.8628076312e+16
     },
     "eps": {
       "2025-Q3": 1.64,
+      "2025-Q4": 1.3,
       "2026-Q1": 0.3,
       "2026-Q2": 0.24,
       "2026-Q3": 1.28
     },
     "net_income": {
       "2025-Q3": 2786896459000000.0,
+      "2025-Q4": 5709404936000000.0,
       "2026-Q1": 1349404237000000.0,
       "2026-Q2": 1057973705000000.0,
       "2026-Q3": 5710931778000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 286123491328,
-    "enterprise_value": 255188320256,
+    "market_cap": 281652822016,
+    "enterprise_value": 264125628416,
     "shares_outstanding": 4470679376
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.7083,
-    "vol_trend": 1.337,
-    "price_chg_20d": -41.18
+    "cmf": -0.7338,
+    "vol_trend": 1.729,
+    "price_chg_20d": -37.62
   },
   "neraca": {
     "aset": 152832083539.0,

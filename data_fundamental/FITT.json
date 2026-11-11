@@ -3,13 +3,13 @@
   "nama": "PT Fortune Resources Investment Tbk",
   "sektor": "Basic Materials",
   "industri": "Other Industrial Metals & Mining",
-  "harga": 272.0,
-  "update": "2026-11-09 17:34",
+  "harga": 284.0,
+  "update": "2026-11-10 23:46",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 7.368381179144574e-06,
+    "ps": 7.693456819400952e-06,
     "roe": 0.16072431195976614,
     "eps": null,
     "eps_annualized": 30.064186666666664,
@@ -18,7 +18,7 @@
     "current_ratio": 1.9168074339769048,
     "roa": 0.0670655345824073,
     "bv": 71904502.80683045,
-    "pcf": 3.303636102890363e-05,
+    "pcf": 3.4493847544884674e-05,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -50,17 +50,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 354761998336,
-    "enterprise_value": 291429482496,
+    "market_cap": 370413240320,
+    "enterprise_value": 312297816064,
     "shares_outstanding": 1304272051
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.499,
-    "vol_trend": 1.058,
-    "price_chg_20d": -34.31
+    "cmf": -0.5009,
+    "vol_trend": 1.24,
+    "price_chg_20d": -29.35
   },
   "neraca": {
     "aset": 224753498244.0,

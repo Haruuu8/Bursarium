@@ -3,30 +3,31 @@
   "nama": "PT Barito Renewables Energy Tbk",
   "sektor": "Utilities",
   "industri": "Utilities - Renewable",
-  "harga": 2180.0,
-  "update": "2026-11-09 15:40",
+  "harga": 2060.0,
+  "update": "2026-11-10 22:04",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 443127.29317059164,
-    "roe": 0.23111535767963715,
-    "eps": 0.0013000121393767895,
+    "ps": 424890.0504929811,
+    "roe": 0.2105945092577704,
+    "eps": 0.00118458341007652,
     "eps_annualized": 0.00132,
     "de": 4.12121014799941,
-    "margin_net": 0.2642526882619021,
+    "margin_net": 0.24432898297114578,
     "current_ratio": 1.673062748062748,
-    "roa": 4.231391148761324e-05,
+    "roa": 3.855683808283663e-05,
     "bv": 0.005624949170097187,
-    "pcf": 1.1623914036094636,
-    "div_yield": 19.16133721673425,
-    "payout_ratio": 31645238.736727774
+    "pcf": 0.8831406662992065,
+    "div_yield": 20.27753161770906,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 150478000.0,
       "2025-Q2": 149595000.0,
       "2025-Q3": 157324000.0,
+      "2025-Q4": 147790000.0,
       "2026-Q1": 165167000.0,
       "2026-Q2": 169270000.0,
       "2026-Q3": 166378000.0
@@ -35,6 +36,7 @@
       "2025-Q1": 0.0,
       "2025-Q2": 0.0,
       "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
       "2026-Q1": 0.0,
       "2026-Q2": 0.0,
       "2026-Q3": 0.0
@@ -43,6 +45,7 @@
       "2025-Q1": 34241000.0,
       "2025-Q2": 31225000.0,
       "2025-Q3": 41087000.0,
+      "2025-Q4": 25645000.0,
       "2026-Q1": 43009000.0,
       "2026-Q2": 44137000.0,
       "2026-Q3": 45682000.0
@@ -50,17 +53,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 291639352360960,
-    "enterprise_value": 240136403025920,
+    "market_cap": 275585821573120,
+    "enterprise_value": 284952558043136,
     "shares_outstanding": 133779520000
   },
   "akumulasi": {
-    "score": 2.9,
+    "score": 2.4,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0426,
-    "vol_trend": 3.049,
-    "price_chg_20d": -21.85
+    "cmf": -0.0701,
+    "vol_trend": 3.021,
+    "price_chg_20d": -15.23
   },
   "neraca": {
     "aset": 4110114.0,
@@ -93,7 +96,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 250896000,
+    "arus_kas_operasi": 312052000,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 74877.0,

@@ -3,37 +3,40 @@
   "nama": "PT Electronic City Indonesia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Specialty Retail",
-  "harga": 135.0,
-  "update": "2026-11-09 16:27",
+  "harga": 137.0,
+  "update": "2026-11-10 22:40",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.07421015224752095,
-    "roe": -0.04211836863925257,
+    "ps": 0.07627176991860196,
+    "roe": -0.14898518466445637,
     "eps": null,
     "eps_annualized": -43.919999999999995,
     "de": 0.5136805364859129,
-    "margin_net": -24144.492824994915,
+    "margin_net": -64873.09170848342,
     "current_ratio": 1.5451940330254468,
-    "roa": -27823.651790137254,
+    "roa": -98420.52372678727,
     "bv": 782128758.5577102,
-    "pcf": 6.225537252877108e-06,
+    "pcf": 6.317767434401213e-06,
     "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
+      "2025-Q4": 524634439259.0,
       "2026-Q1": 6.00290961136e+17,
       "2026-Q2": -5.99149320098068e+17,
       "2026-Q3": -1139983491369557.0
     },
     "eps": {
+      "2025-Q4": -83.64,
       "2026-Q1": 0.16,
       "2026-Q2": -8.16,
       "2026-Q3": -24.94
     },
     "net_income": {
+      "2025-Q4": -1.01544207166e+17,
       "2026-Q1": 195088266000000.0,
       "2026-Q2": -9917312870000000.0,
       "2026-Q3": -3.029839648e+16
@@ -41,17 +44,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 164009050112,
-    "enterprise_value": -20661170176,
+    "market_cap": 166438797312,
+    "enterprise_value": -34118416384,
     "shares_outstanding": 1214881805
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2363,
-    "vol_trend": 0.231,
-    "price_chg_20d": -13.64
+    "cmf": -0.265,
+    "vol_trend": 0.317,
+    "price_chg_20d": -12.18
   },
   "neraca": {
     "aset": 1438366947152.0,

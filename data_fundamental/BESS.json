@@ -3,40 +3,43 @@
   "nama": "PT Batulicin Nusantara Maritim Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 625.0,
-  "update": "2026-11-09 17:42",
+  "harga": 595.0,
+  "update": "2026-11-10 23:54",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 7.44539890680183e-06,
-    "roe": 0.02808838357203513,
+    "ps": 6.8944914527293e-06,
+    "roe": 0.007553319364220824,
     "eps": null,
     "eps_annualized": 1.24,
     "de": 0.06427652999979916,
-    "margin_net": 0.06304461538663207,
+    "margin_net": 0.016490598501646626,
     "current_ratio": 10.597821968903208,
-    "roa": 0.02639103112725968,
+    "roa": 0.0070968799590784715,
     "bv": 188414055.92381778,
-    "pcf": 0.00011515416938718698,
-    "div_yield": 697582.0441414525,
-    "payout_ratio": 351603852.89387727
+    "pcf": 0.000109626769256602,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 8.3898611016e+16,
+      "2025-Q4": 9.2005425849e+16,
       "2026-Q1": 5.4846329741e+16,
       "2026-Q2": 5.5562449856e+16,
       "2026-Q3": 9.4499795129e+16
     },
     "eps": {
       "2025-Q3": 4.25,
+      "2025-Q4": 0.52,
       "2026-Q1": 2.32,
       "2026-Q2": -4.09,
       "2026-Q3": 2.7
     },
     "net_income": {
       "2025-Q3": 1.501843747e+16,
+      "2025-Q4": 1706989097000000.0,
       "2026-Q1": 8732933900000000.0,
       "2026-Q2": -1.4286677616e+16,
       "2026-Q3": 8743044192000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2150284656640,
-    "enterprise_value": 1913773490176,
+    "market_cap": 2047070961664,
+    "enterprise_value": 1896737669120,
     "shares_outstanding": 3440455528
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.1,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1333,
-    "vol_trend": 0.687,
-    "price_chg_20d": -30.23
+    "cmf": -0.0908,
+    "vol_trend": 0.683,
+    "price_chg_20d": -28.74
   },
   "neraca": {
     "aset": 689921430436.0,

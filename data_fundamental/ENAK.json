@@ -3,20 +3,20 @@
   "nama": "PT Champ Resto Indonesia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Restaurants",
-  "harga": 175.0,
-  "update": "2026-11-09 15:04",
+  "harga": 177.0,
+  "update": "2026-11-10 21:46",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 3.3710680348049584e-06,
-    "roe": -1.0669210674797904,
+    "ps": 4.4808994274909496e-07,
+    "roe": -1.114896786171435,
     "eps": null,
     "eps_annualized": -68.88,
     "de": 5.743366986135869,
-    "margin_net": -1.2793695007423955,
+    "margin_net": -0.1756955764208759,
     "current_ratio": 0.16051882993906766,
-    "roa": -0.15821785610561362,
+    "roa": -0.1653323611874638,
     "bv": 62249265.81021967,
     "pcf": null,
     "div_yield": null,
@@ -25,18 +25,21 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": -7.41993251744018e+17,
+      "2025-Q4": -1080806267441473.0,
       "2026-Q1": 3.41550454877e+17,
       "2026-Q2": 2.7469047591400006e+17,
       "2026-Q3": 2.3785595134499994e+17
     },
     "eps": {
       "2025-Q3": -14.53,
+      "2025-Q4": -17.51,
       "2026-Q1": -8.35,
       "2026-Q2": -21.41,
       "2026-Q3": -21.9
     },
     "net_income": {
       "2025-Q3": -3.1486366303e+16,
+      "2025-Q4": -3.7935551803e+16,
       "2026-Q1": -1.8098439663e+16,
       "2026-Q2": -4.6375888983e+16,
       "2026-Q3": -4.7461270697e+16
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 377908953088,
-    "enterprise_value": 851510165504,
+    "market_cap": 382227939328,
+    "enterprise_value": 892540289024,
     "shares_outstanding": 2159479800
   },
   "akumulasi": {
-    "score": 1.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.4971,
-    "vol_trend": 2.512,
-    "price_chg_20d": -13.11
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.4475,
+    "vol_trend": 2.756,
+    "price_chg_20d": 4.73
   },
   "neraca": {
     "aset": 906484066819.0,

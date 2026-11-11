@@ -3,8 +3,8 @@
   "nama": "PT Panca Global Kapital Tbk",
   "sektor": "Financial Services",
   "industri": "Capital Markets",
-  "harga": 108.0,
-  "update": "2026-11-09 17:00",
+  "harga": 109.0,
+  "update": "2026-11-10 23:09",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
@@ -28,6 +28,7 @@
       "2025-Q1": 5.61,
       "2025-Q2": -0.89,
       "2025-Q3": -15.53,
+      "2025-Q4": 4.13,
       "2026-Q1": -5.75,
       "2026-Q2": -2.39,
       "2026-Q3": 4.21
@@ -36,6 +37,7 @@
       "2025-Q1": 1.5894321707e+16,
       "2025-Q2": -2522863436000000.0,
       "2025-Q3": -4.3988318493e+16,
+      "2025-Q4": 1.1685980731e+16,
       "2026-Q1": -1.6292159158e+16,
       "2026-Q2": -6763944039000000.0,
       "2026-Q3": 8200844327000000.0
@@ -43,7 +45,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 408012029952,
+    "market_cap": 411789918208,
     "enterprise_value": 276590297088,
     "shares_outstanding": 3777889408
   },
@@ -51,9 +53,9 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.2399,
-    "vol_trend": 0.652,
-    "price_chg_20d": -14.29
+    "cmf": 0.3169,
+    "vol_trend": 0.576,
+    "price_chg_20d": -10.66
   },
   "neraca": {
     "aset": 261956119735.0,

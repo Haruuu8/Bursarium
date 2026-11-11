@@ -3,12 +3,12 @@
   "nama": "PT Woori Finance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 234.0,
-  "update": "2026-11-09 16:18",
+  "harga": 228.0,
+  "update": "2026-11-10 22:32",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 4.797703663203937,
-    "pb": 0.5034948634255597,
+    "pe": 4.674685620557683,
+    "pb": 0.49058473872234026,
     "ps": null,
     "roe": 78702.0421342475,
     "eps": 48.773333333333326,
@@ -19,8 +19,8 @@
     "roa": 28141.518513002466,
     "bv": 464.75151386444327,
     "pcf": null,
-    "div_yield": 3401709.401786114,
-    "payout_ratio": 16320393.658104513
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -28,6 +28,7 @@
       "2025-Q1": 7.85,
       "2025-Q2": 5.68,
       "2025-Q3": 5.85,
+      "2025-Q4": 7.17,
       "2026-Q1": 12.37,
       "2026-Q2": 12.93,
       "2026-Q3": 11.28
@@ -36,6 +37,7 @@
       "2025-Q1": 2.0996364403e+16,
       "2025-Q2": 1.5176449963e+16,
       "2025-Q3": 1.5640636983e+16,
+      "2025-Q4": 1.918135442e+16,
       "2026-Q1": 3.3092919847e+16,
       "2026-Q2": 3.4559280773e+16,
       "2026-Q3": 3.0154242223e+16
@@ -43,17 +45,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 625714921472,
-    "enterprise_value": 2459024490496,
+    "market_cap": 609670922240,
+    "enterprise_value": 2480416489472,
     "shares_outstanding": 2673995362
   },
   "akumulasi": {
-    "score": 6.2,
+    "score": 4.4,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.1139,
-    "vol_trend": 0.668,
-    "price_chg_20d": -5.83
+    "cmf": -0.0064,
+    "vol_trend": 0.611,
+    "price_chg_20d": -8.06
   },
   "neraca": {
     "aset": 3475521152059.0,

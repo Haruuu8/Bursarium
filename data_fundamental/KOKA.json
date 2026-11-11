@@ -3,13 +3,13 @@
   "nama": "PT Koka Indonesia Tbk",
   "sektor": "Industrials",
   "industri": "Engineering & Construction",
-  "harga": 113.0,
-  "update": "2026-11-09 15:39",
+  "harga": 111.0,
+  "update": "2026-11-10 22:04",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.928985552562035e-06,
+    "ps": 2.8771451003043e-06,
     "roe": -0.16056259056833413,
     "eps": null,
     "eps_annualized": -4.333333333333333,
@@ -18,7 +18,7 @@
     "current_ratio": 1.9264191385383334,
     "roa": -0.09429254973201592,
     "bv": 50505601.60107195,
-    "pcf": 9.582876117251461e-06,
+    "pcf": 9.413267690397453e-06,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -47,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 323330637824,
-    "enterprise_value": 281983909888,
+    "market_cap": 317607968768,
+    "enterprise_value": 276261240832,
     "shares_outstanding": 2861333000
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2629,
-    "vol_trend": 1.866,
-    "price_chg_20d": -25.17
+    "cmf": -0.2927,
+    "vol_trend": 2.64,
+    "price_chg_20d": -20.14
   },
   "neraca": {
     "aset": 246079218750.0,

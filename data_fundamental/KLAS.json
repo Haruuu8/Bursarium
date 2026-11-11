@@ -3,40 +3,43 @@
   "nama": "PT Pelayaran Kurnia Lautan Semesta Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 67.0,
-  "update": "2026-11-09 15:33",
+  "harga": 68.0,
+  "update": "2026-11-10 21:59",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.4228508981591646e-06,
-    "roe": 0.04389620574122694,
+    "ps": 1.214307525023071e-06,
+    "roe": 0.02947669684962604,
     "eps": null,
     "eps_annualized": 1.7733333333333334,
     "de": 0.6441487445224893,
-    "margin_net": 0.06813016733226072,
+    "margin_net": 0.03847037961618107,
     "current_ratio": 2.2838937787517115,
-    "roa": 0.026692297626861223,
+    "roa": 0.017924117861239753,
     "bv": 73084938.05732481,
-    "pcf": 2.5923955147202927e-05,
+    "pcf": 2.6310879850892522e-05,
     "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 4.756448327e+16,
+      "2025-Q4": 8.0037811576e+16,
       "2026-Q1": 4.466020754e+16,
       "2026-Q2": 3.9598629252e+16,
       "2026-Q3": 3.9786980526e+16
     },
     "eps": {
       "2025-Q3": 1.88,
+      "2025-Q4": 0.83,
       "2026-Q1": 1.74,
       "2026-Q2": 1.96,
       "2026-Q3": -2.37
     },
     "net_income": {
       "2025-Q3": 6861872659000000.0,
+      "2025-Q4": 3021208841000000.0,
       "2026-Q1": 6357075392000000.0,
       "2026-Q2": 481272083000000.0,
       "2026-Q3": -2008381639000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 244175863808,
-    "enterprise_value": 332191465472,
+    "market_cap": 247820288000,
+    "enterprise_value": 335835856896,
     "shares_outstanding": 3644415975
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2213,
-    "vol_trend": 0.606,
-    "price_chg_20d": -23.26
+    "cmf": -0.1914,
+    "vol_trend": 0.489,
+    "price_chg_20d": -19.05
   },
   "neraca": {
     "aset": 438022932999.0,

@@ -3,13 +3,13 @@
   "nama": "PT Autopedia Sukses Lestari Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto & Truck Dealerships",
-  "harga": 44.0,
-  "update": "2026-11-09 15:03",
+  "harga": 45.0,
+  "update": "2026-11-10 21:45",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 4.5570209521055234e-07,
+    "ps": 4.660589610107921e-07,
     "roe": 0.02537790598347757,
     "eps": null,
     "eps_annualized": 0.8133333333333332,
@@ -19,8 +19,8 @@
     "roa": 0.020852073772705457,
     "bv": 59208538.033804834,
     "pcf": null,
-    "div_yield": 406453.10317852726,
-    "payout_ratio": 21988446.565395743
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -50,17 +50,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 560839589888,
+    "market_cap": 573585948672,
     "enterprise_value": 283003191296,
     "shares_outstanding": 12746354780
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 2.9,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1509,
-    "vol_trend": 0.378,
-    "price_chg_20d": -22.81
+    "cmf": -0.1088,
+    "vol_trend": 0.311,
+    "price_chg_20d": -15.09
   },
   "neraca": {
     "aset": 918495158600.0,

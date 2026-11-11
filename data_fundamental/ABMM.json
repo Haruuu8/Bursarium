@@ -1,42 +1,51 @@
 {
   "kode": "ABMM",
   "nama": "PT ABM Investama Tbk",
-  "sektor": null,
-  "industri": null,
-  "harga": 2470.0,
-  "update": "2026-11-09 15:58",
+  "sektor": "Energy",
+  "industri": "Thermal Coal",
+  "harga": 2520.0,
+  "update": "2026-11-10 22:18",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.006364076249655343,
-    "roe": 0.13016498004978663,
+    "ps": 0.006453649813734533,
+    "roe": 0.1372960161637252,
     "eps": null,
     "eps_annualized": 0.04954666666666666,
     "de": 1.1944381619665372,
-    "margin_net": 0.11582660662076756,
+    "margin_net": 0.1214335095655935,
     "current_ratio": 1.2537132399566076,
-    "roa": 0.059142365357926927,
+    "roa": 0.062382456072570855,
     "bv": 345362.95826802973,
-    "pcf": null,
-    "div_yield": 227.93053244991478,
-    "payout_ratio": 11362790.94088986
+    "pcf": 0.020671271154250624,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 250022267000000.0,
+      "2025-Q2": 256869007000000.0,
+      "2025-Q3": 274757345000000.0,
+      "2025-Q4": 256521635000000.0,
       "2026-Q1": 222655357000000.0,
       "2026-Q2": 283548061000000.0,
       "2026-Q3": 312321781000000.0
     },
     "eps": {
       "2025-Q1": 0.01,
+      "2025-Q2": 0.0,
+      "2025-Q3": 0.01,
+      "2025-Q4": 0.01,
       "2026-Q1": 0.01,
       "2026-Q2": 0.01,
       "2026-Q3": 0.02
     },
     "net_income": {
       "2025-Q1": 21452061000000.0,
+      "2025-Q2": 6294206000000.0,
+      "2025-Q3": 14637506000000.0,
+      "2025-Q4": 28232544000000.0,
       "2026-Q1": 14426495000000.0,
       "2026-Q2": 24957134000000.0,
       "2026-Q3": 62930537000000.0
@@ -44,17 +53,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 6800317874176,
-    "enterprise_value": null,
+    "market_cap": 6937975980032,
+    "enterprise_value": 6773443919872,
     "shares_outstanding": 2753165000
   },
   "akumulasi": {
-    "score": 3.8,
+    "score": 4.4,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0178,
-    "vol_trend": 2.182,
-    "price_chg_20d": -8.52
+    "cmf": 0.0574,
+    "vol_trend": 2.46,
+    "price_chg_20d": -6.67
   },
   "neraca": {
     "aset": 2092683075.0,
@@ -87,7 +96,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 335633728,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 608501.0,

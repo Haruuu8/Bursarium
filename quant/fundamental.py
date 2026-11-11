@@ -1,5 +1,5 @@
 ﻿"""
-quant/fundamental.py — Scraper Fundamental IDX (FINAL: Anti-403, Gross Revenue, Stockbit Accurate)
+quant/fundamental.py — Scraper Fundamental IDX (FINAL FIX Q4 & REVENUE)
 """
 import os, io, json, csv, zipfile, re, time, random, threading, hashlib
 from urllib.parse import quote
@@ -51,14 +51,20 @@ HEADERS = {
 DL_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Referer": f"{BASE}/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-    "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept": "*/*",
 }
 
 SNAPSHOT_CANDIDATES = [(2026, "tw3"), (2026, "tw2"), (2026, "tw1"), (2025, "audit")]
+
+# PERBAIKAN FATAL: Memasukkan 2025 audit (Q4) ke dalam list kuartal
 QUARTERLY_PERIODS = [
-    (2025, "tw1", "2025-Q1", 1), (2025, "tw2", "2025-Q2", 2), (2025, "tw3", "2025-Q3", 3),
-    (2026, "tw1", "2026-Q1", 1), (2026, "tw2", "2026-Q2", 2), (2026, "tw3", "2026-Q3", 3),
+    (2025, "tw1", "2025-Q1", 1), 
+    (2025, "tw2", "2025-Q2", 2), 
+    (2025, "tw3", "2025-Q3", 3),
+    (2025, "audit", "2025-Q4", 4), # <--- INI YANG BIKIN TTM SALAH SEBELUMNYA
+    (2026, "tw1", "2026-Q1", 1), 
+    (2026, "tw2", "2026-Q2", 2), 
+    (2026, "tw3", "2026-Q3", 3),
 ]
 
 FIELDS = {
@@ -79,7 +85,7 @@ FIELDS = {
     "modal_saham": ["modal saham", "share capital"],
     "saldo_laba": ["saldo laba", "retained earnings"],
     "pendapatan": [
-        "pendapatan bunga", "pendapatan bunga dan syariah", 
+        "pendapatan bunga dan syariah", "pendapatan bunga", 
         "penjualan dan pendapatan usaha", "pendapatan usaha", 
         "pendapatan premi", "premi bruto", "pendapatan premi bruto",
         "pendapatan pembiayaan", "pendapatan sewa", "pendapatan jasa", "pendapatan kontrak", 
@@ -96,15 +102,7 @@ FIELDS = {
     "laba_induk": ["laba (rugi) yang dapat diatribusikan ke entitas induk", "laba (rugi) yang dapat diatribusikan kepada pemilik entitas induk", "laba yang dapat diatribusikan kepada pemilik entitas induk", "net income attributable to"],
     "eps_basic": ["laba (rugi) per saham dasar", "laba per saham dasar", "basic earnings per share", "eps dasar"],
     "eps_diluted": ["laba (rugi) per saham dilusian", "laba per saham dilusian", "diluted earnings per share", "eps dilusian"],
-    "arus_kas_operasi": [
-        "arus kas dari aktivitas operasi", "kas neto dari aktivitas operasi", 
-        "arus kas bersih dari aktivitas operasi", "net cash from operating", 
-        "kas bersih dari aktivitas operasi", "net cash provided by operating",
-        "kas neto yang diperoleh dari aktivitas operasi",
-        "kas bersih yang diperoleh dari aktivitas operasi",
-        "net cash flows provided by operating activities",
-        "net cash flow from operating activities", "kas dari aktivitas operasi"
-    ],
+    "arus_kas_operasi": ["arus kas dari aktivitas operasi", "kas neto dari aktivitas operasi", "arus kas bersih dari aktivitas operasi", "net cash from operating", "kas bersih dari aktivitas operasi", "net cash provided by operating", "kas neto yang diperoleh dari aktivitas operasi", "kas bersih yang diperoleh dari aktivitas operasi", "net cash flows provided by operating activities", "net cash flow from operating activities", "kas dari aktivitas operasi"],
     "arus_kas_investasi": ["arus kas dari aktivitas investasi", "kas neto dari aktivitas investasi", "net cash from investing"],
     "arus_kas_pendanaan": ["arus kas dari aktivitas pendanaan", "kas neto dari aktivitas pendanaan", "net cash from financing"],
     "capex": ["perolehan aset tetap", "pembelian aset tetap", "capex", "capital expenditure"],
@@ -149,9 +147,7 @@ def _extract_cookies():
 def _normalize_url(url):
     if not url: return url
     if not url.startswith("http"): url = f"{BASE}{url}"
-    # Hilangkan double slash setelah domain (kecuali http://)
-    url = re.sub(r'(?<!http:)(?<!https:)//+', '/', url)
-    return url
+    return re.sub(r"([^:])//+", r"\1/", url)
 
 def get_report_list(year, periode, verbose=False):
     cache_file = REPORT_LIST_CACHE_DIR / f"{year}_{periode}.json"
@@ -196,11 +192,8 @@ def _xlsx_cache_path(url):
 
 def download_xlsx(url, verbose=False):
     if not url: return None
-    
-    # Normalisasi URL (hapus // ganda dan encode spasi)
     url = _normalize_url(url)
     url = quote(url, safe=':/?=&%')
-    
     cp = _xlsx_cache_path(url)
     if cp.exists():
         try:
@@ -210,34 +203,25 @@ def download_xlsx(url, verbose=False):
 
     if verbose: print(f"    [dl] Mencoba download: {url[:80]}...")
     
-    # METODE 1: Curl CFFI (Safari biasanya paling ampuh untuk IDX)
     if HAS_CFFI:
         try:
             r = curl_requests.get(url, headers=DL_HEADERS, impersonate="safari15_5", timeout=30)
             if verbose: print(f"      -> CFFI Status: {r.status_code} | Size: {len(r.content)}")
-            if r.status_code == 200:
-                if r.content[:2] == b"PK":  # Cek magic bytes file Excel
-                    cp.write_bytes(r.content)
-                    return r.content
-                elif verbose:
-                    print(f"      -> Konten bukan Excel (HTML). Preview: {r.text[:80]}")
+            if r.status_code == 200 and r.content[:2] == b"PK":
+                cp.write_bytes(r.content)
+                return r.content
         except Exception as e:
-            if verbose: print(f"      -> CFFI Error: {e}")
+            pass
 
-    # METODE 2: TLS Client (Firefox)
     try:
         r = get_session().get(url, headers=DL_HEADERS, timeout_seconds=30)
         if verbose: print(f"      -> TLS Status: {r.status_code} | Size: {len(r.content)}")
-        if r.status_code == 200:
-            if r.content[:2] == b"PK":
-                cp.write_bytes(r.content)
-                return r.content
-            elif verbose:
-                print(f"      -> Konten bukan Excel (HTML). Preview: {r.text[:80]}")
+        if r.status_code == 200 and r.content[:2] == b"PK":
+            cp.write_bytes(r.content)
+            return r.content
     except Exception as e:
-        if verbose: print(f"      -> TLS Error: {e}")
+        pass
         
-    if verbose: print("      -> GAGAL: File tidak bisa didownload (diblokir Cloudflare).")
     return None
 
 def parse_xlsx(content_bytes):
@@ -272,11 +256,11 @@ def parse_xlsx(content_bytes):
                         if ll == kw or ll.startswith(kw + " ") or ll.startswith(kw + ":"): matched = True; break
                     if matched and any(b in ll for b in KAS_BLACKLIST): matched = False
                 elif field == "pendapatan":
-                    # LOGIKA MUTLAK UNTUK GROSS REVENUE (Tolak yang bersih/neto/beban)
+                    # Tolak jika ada kata bersih/neto agar mengambil Gross Revenue
                     if any(b in ll for b in ["bersih", "neto", "net", "beban", "biaya", "pajak", "komprehensif", "lain"]):
                         matched = False
                     else:
-                        if "pendapatan bunga" in ll or "pendapatan usaha" in ll or "penjualan dan pendapatan" in ll or "revenue" in ll:
+                        if "pendapatan bunga dan syariah" in ll or "pendapatan usaha" in ll or "penjualan dan pendapatan" in ll or "revenue" in ll:
                             matched = True
                         else:
                             for kw in kws:
@@ -422,9 +406,14 @@ def compute_ratios(d, harga=None, shares=None, periode=None, ttm_ni=None, ttm_re
                 if eps_for_payout and eps_for_payout > 0:
                     payout_ratio = (dps / eps_for_payout) * 100
     
-    if pe_calc is not None and (pe_calc < 2 or pe_calc > 500): pe_calc = None
-    if pb_calc is not None and (pb_calc < 0.2 or pb_calc > 50): pb_calc = None
-    
+    # ==========================================
+    # SANITY CHECK (FILTER ANGKA TIDAK WAJAR)
+    # ==========================================
+    if pe_calc is not None and (pe_calc < 2 or pe_calc > 1000): pe_calc = None
+    if pb_calc is not None and (pb_calc < 0.1 or pb_calc > 50): pb_calc = None
+    if div_yield is not None and (div_yield > 100 or div_yield < 0): div_yield = None
+    if payout_ratio is not None and (payout_ratio > 300 or payout_ratio < 0): payout_ratio = None
+
     ni_for_ratio = ttm_ni if ttm_ni is not None else laba_rp
     rev_for_ratio = ttm_rev if ttm_rev is not None else pend_rp
 

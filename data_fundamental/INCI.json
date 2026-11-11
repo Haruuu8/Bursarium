@@ -3,40 +3,43 @@
   "nama": "PT Intanwijaya Internasional Tbk",
   "sektor": "Basic Materials",
   "industri": "Specialty Chemicals",
-  "harga": 805.0,
-  "update": "2026-11-09 16:39",
+  "harga": 800.0,
+  "update": "2026-11-10 22:50",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 3.447620829979509e-07,
-    "roe": 0.10467828685709916,
+    "ps": 3.4041085932125483e-07,
+    "roe": 0.09699863098360197,
     "eps": null,
     "eps_annualized": 278.66666666666663,
     "de": 0.17666324336648329,
-    "margin_net": 0.11164325104511201,
+    "margin_net": 0.10278536353426206,
     "current_ratio": 4.812312469887839,
-    "roa": 0.08866526932072333,
+    "roa": 0.08216039828434828,
     "bv": 2490303348.6142173,
-    "pcf": 3.2298097097404562e-06,
-    "div_yield": 2464250.742709574,
-    "payout_ratio": 7118619.071344045
+    "pcf": 3.5379480851024993e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 1.06168550286e+17,
+      "2025-Q4": 1.0931615672e+17,
       "2026-Q1": 9.112716809e+16,
       "2026-Q2": 1.4406788431e+17,
       "2026-Q3": 1.435028746e+17
     },
     "eps": {
       "2025-Q3": 52.0,
+      "2025-Q4": 32.0,
       "2026-Q1": 35.0,
       "2026-Q2": 99.0,
       "2026-Q3": 75.0
     },
     "net_income": {
       "2025-Q3": 1.0678803894e+16,
+      "2025-Q4": 6707439052000000.0,
       "2026-Q1": 7215621377000000.0,
       "2026-Q2": 2.0567289741e+16,
       "2026-Q3": 1.5670354835e+16
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 167163576320,
-    "enterprise_value": -33991151616,
+    "market_cap": 166125305856,
+    "enterprise_value": -64164302848,
     "shares_outstanding": 207656617
   },
   "akumulasi": {
-    "score": 2.6,
+    "score": 2.9,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1272,
-    "vol_trend": 0.978,
-    "price_chg_20d": -16.67
+    "cmf": -0.1036,
+    "vol_trend": 0.737,
+    "price_chg_20d": -9.6
   },
   "neraca": {
     "aset": 610521687485.0,
@@ -87,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 51756478464,
+    "arus_kas_operasi": 46955266048,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 2368506409.0,

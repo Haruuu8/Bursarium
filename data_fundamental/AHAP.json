@@ -3,8 +3,8 @@
   "nama": "PT Asuransi Harta Aman Pratama Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 42.0,
-  "update": "2026-11-09 15:59",
+  "harga": 43.0,
+  "update": "2026-11-10 22:19",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
@@ -28,6 +28,7 @@
       "2025-Q1": -1.13,
       "2025-Q2": -1.19,
       "2025-Q3": 0.77,
+      "2025-Q4": -4.68,
       "2026-Q1": 0.37,
       "2026-Q2": -0.33,
       "2026-Q3": -3.79
@@ -36,6 +37,7 @@
       "2025-Q1": -5520835593000000.0,
       "2025-Q2": -5841334086000000.0,
       "2025-Q3": 3780998666000000.0,
+      "2025-Q4": -2.2924377095e+16,
       "2026-Q1": 1810834424000000.0,
       "2026-Q2": -1597539068000000.0,
       "2026-Q3": -1.8603644563e+16
@@ -43,7 +45,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 324666327040,
+    "market_cap": 332396494848,
     "enterprise_value": 22666000384,
     "shares_outstanding": 7730150865
   },
@@ -51,9 +53,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3425,
-    "vol_trend": 0.448,
-    "price_chg_20d": -46.15
+    "cmf": -0.3199,
+    "vol_trend": 0.549,
+    "price_chg_20d": -39.44
   },
   "neraca": {
     "aset": 864877059797.0,

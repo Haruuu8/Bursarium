@@ -3,11 +3,11 @@
   "nama": "PT Paninvest Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Life",
-  "harga": 535.0,
-  "update": "2026-11-09 17:01",
+  "harga": 540.0,
+  "update": "2026-11-10 23:10",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 2.0262081502802607,
+    "pe": 2.0451446750492352,
     "pb": null,
     "ps": null,
     "roe": 3.576643411618787e-05,
@@ -18,7 +18,7 @@
     "current_ratio": null,
     "roa": 3.23459115030678e-06,
     "bv": 5536.678603507068,
-    "pcf": 0.13127814162684553,
+    "pcf": 0.1325050401467226,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -28,6 +28,7 @@
       "2025-Q1": 53.0,
       "2025-Q2": -53.0,
       "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
       "2026-Q1": 0.0,
       "2026-Q2": 113.32,
       "2026-Q3": 84.71
@@ -36,6 +37,7 @@
       "2025-Q1": 216314000.0,
       "2025-Q2": 104268000.0,
       "2025-Q3": 310271000.0,
+      "2025-Q4": 305836000.0,
       "2026-Q1": 481504000.0,
       "2026-Q2": -20464000.0,
       "2026-Q3": 344599000.0
@@ -43,17 +45,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2176553189376,
-    "enterprise_value": 43913880535040,
+    "market_cap": 2196894908416,
+    "enterprise_value": 43893538160640,
     "shares_outstanding": 4068323920
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.16,
-    "vol_trend": 1.708,
-    "price_chg_20d": -19.26
+    "cmf": -0.2489,
+    "vol_trend": 2.041,
+    "price_chg_20d": -19.4
   },
   "neraca": {
     "aset": 249069809.0,

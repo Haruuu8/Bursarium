@@ -3,13 +3,13 @@
   "nama": "PT Nitrasanata Dharma",
   "sektor": "Healthcare",
   "industri": "Medical Care Facilities",
-  "harga": 905.0,
-  "update": "2026-11-09 15:56",
+  "harga": 910.0,
+  "update": "2026-11-10 22:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 60.06637168141593,
+    "pe": 60.39823008849557,
     "pb": null,
-    "ps": 3123.4479279681336,
+    "ps": 3140.7045463546983,
     "roe": 0.0375764661157768,
     "eps": 15.066666666666666,
     "eps_annualized": 15.066666666666666,
@@ -18,9 +18,9 @@
     "current_ratio": 1.512261384285997,
     "roa": 2.42369672744914e-05,
     "bv": 0.30079038865558005,
-    "pcf": 2.247815502009874e-05,
-    "div_yield": 4273.128357717331,
-    "payout_ratio": 256671.3161770476
+    "pcf": 2.2602343721867244e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -35,17 +35,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2944166264832,
-    "enterprise_value": 2890010198016,
+    "market_cap": 2960432300032,
+    "enterprise_value": 2971340636160,
     "shares_outstanding": 3253222300
   },
   "akumulasi": {
-    "score": 5.4,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0599,
-    "vol_trend": 0.494,
-    "price_chg_20d": -44.1
+    "score": 3.3,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.083,
+    "vol_trend": 0.393,
+    "price_chg_20d": -43.3
   },
   "neraca": {
     "aset": 1517104.0,

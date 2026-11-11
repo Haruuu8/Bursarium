@@ -3,20 +3,20 @@
   "nama": "PT Bima Sakti Pertiwi Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Diversified",
-  "harga": 39.0,
-  "update": "2026-11-09 17:35",
+  "harga": 40.0,
+  "update": "2026-11-10 23:47",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.4785030492169696e-06,
-    "roe": 0.0013546699861679788,
+    "ps": 2.5755805803147484e-06,
+    "roe": -0.001122527078899804,
     "eps": null,
     "eps_annualized": -1.0933333333333333,
     "de": 0.39847999715696214,
-    "margin_net": 0.0117680779442037,
+    "margin_net": -0.009880050260048403,
     "current_ratio": 0.701359765249095,
-    "roa": 0.0009686731229062648,
+    "roa": -0.0008026765353682882,
     "bv": 136693283.86304,
     "pcf": null,
     "div_yield": null,
@@ -27,34 +27,37 @@
       "2025-Q1": 1.2714064301e+16,
       "2025-Q2": 1.2861478004e+16,
       "2025-Q3": 1.2194801054e+16,
+      "2025-Q4": 1.2073984705e+16,
       "2026-Q1": 1.1402482972e+16
     },
     "eps": {
       "2025-Q1": 0.34,
       "2025-Q2": 0.12,
       "2025-Q3": -0.15,
+      "2025-Q4": 0.0,
       "2026-Q1": -0.01
     },
     "net_income": {
       "2025-Q1": 1070962077000000.0,
       "2025-Q2": 364593051000000.0,
       "2025-Q3": -470422574000000.0,
+      "2025-Q4": 12786447000000.0,
       "2026-Q1": -386462901000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 121874997248,
-    "enterprise_value": 244198703104,
+    "market_cap": 124999999488,
+    "enterprise_value": 250448691200,
     "shares_outstanding": 3125000000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1855,
-    "vol_trend": 0.139,
-    "price_chg_20d": -24.0
+    "cmf": -0.2113,
+    "vol_trend": 0.093,
+    "price_chg_20d": -21.57
   },
   "neraca": {
     "aset": 597383822588.0,

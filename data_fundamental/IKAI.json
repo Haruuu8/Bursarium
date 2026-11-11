@@ -3,22 +3,22 @@
   "nama": "PT Intikeramik Alamasri Industri Tbk",
   "sektor": "Industrials",
   "industri": "Building Products & Equipment",
-  "harga": 19.0,
-  "update": "2026-11-09 16:38",
+  "harga": 18.0,
+  "update": "2026-11-10 22:49",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 8.564994959405465e-06,
-    "roe": -0.0017613094262322576,
+    "ps": 8.10982563560717e-06,
+    "roe": -0.0018231526073998856,
     "eps": null,
     "eps_annualized": 1.5066666666666664,
     "de": 0.7483788278320659,
-    "margin_net": -0.04036409364300239,
+    "margin_net": -0.04175880571397025,
     "current_ratio": 1.0449949639239928,
-    "roa": -1007.5056682405728,
+    "roa": -1042.8812556532287,
     "bv": 50837716.49848338,
-    "pcf": 6.074600283751483e-06,
+    "pcf": 5.75488447934351e-06,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -27,34 +27,37 @@
       "2025-Q1": 35297018000000.0,
       "2025-Q2": 30988853000000.0,
       "2025-Q3": 31447667000000.0,
+      "2025-Q4": 51238970003000.0,
       "2026-Q1": 2.9418943302e+16
     },
     "eps": {
       "2025-Q1": -0.87,
       "2025-Q2": -0.66,
       "2025-Q3": 0.7,
+      "2025-Q4": -4.02,
       "2026-Q1": -0.09
     },
     "net_income": {
       "2025-Q1": -11556419000000.0,
       "2025-Q2": -8813436000000.0,
       "2025-Q3": 9260451000000.0,
+      "2025-Q4": -53389401360000.0,
       "2026-Q1": -1180304504000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 252810199040,
-    "enterprise_value": 525360627712,
+    "market_cap": 239504392192,
+    "enterprise_value": 538666434560,
     "shares_outstanding": 13305799387
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2154,
-    "vol_trend": 0.849,
-    "price_chg_20d": -28.0
+    "cmf": -0.1477,
+    "vol_trend": 0.617,
+    "price_chg_20d": -25.0
   },
   "neraca": {
     "aset": 1182538168823.0,

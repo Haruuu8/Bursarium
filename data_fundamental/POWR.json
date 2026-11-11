@@ -1,48 +1,45 @@
 {
   "kode": "POWR",
   "nama": "PT Cikarang Listrindo Tbk",
-  "sektor": null,
-  "industri": null,
-  "harga": 955.0,
-  "update": "2026-11-09 17:19",
+  "sektor": "Utilities",
+  "industri": "Utilities - Independent Power Producers",
+  "harga": 965.0,
+  "update": "2026-11-10 23:31",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.026987281248803296,
-    "roe": 0.1181265920248486,
-    "eps": 5508.706982573858,
+    "ps": 0.027275620670755483,
+    "roe": 0.11424601100549153,
+    "eps": 5327.740246876624,
     "eps_annualized": 0.005999999999999999,
     "de": 0.6587101903449666,
-    "margin_net": 0.1556701828858296,
+    "margin_net": 0.15058800207888495,
     "current_ratio": 7.2281740347382035,
-    "roa": 0.07121593194063724,
+    "roa": 0.06887641474110162,
     "bv": 46633.92795937997,
-    "pcf": null,
-    "div_yield": 294.4523986309932,
-    "payout_ratio": 46867006.78209975
+    "pcf": 0.09527506122450032,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 135502454000000.0,
-      "2025-Q2": 135836301000000.0,
-      "2025-Q3": 141138497000000.0,
+      "2025-Q4": 141018536000000.0,
       "2026-Q1": 128187874000000.0,
       "2026-Q2": 146595601000000.0,
       "2026-Q3": 153114515000000.0
     },
     "eps": {
       "2025-Q1": 0.0,
-      "2025-Q2": 0.0,
-      "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
       "2026-Q1": 0.0,
       "2026-Q2": 0.0,
       "2026-Q3": 0.0
     },
     "net_income": {
       "2025-Q1": 16934380000000.0,
-      "2025-Q2": 22712038000000.0,
-      "2025-Q3": 17659951000000.0,
+      "2025-Q4": 14749940000000.0,
       "2026-Q1": 17539679000000.0,
       "2026-Q2": 19600451000000.0,
       "2026-Q3": 33781933000000.0
@@ -50,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 15356747841536,
-    "enterprise_value": null,
+    "market_cap": 15517552214016,
+    "enterprise_value": 15517551165440,
     "shares_outstanding": 16080364100
   },
   "akumulasi": {
-    "score": 8.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1477,
-    "vol_trend": 1.214,
-    "price_chg_20d": 1.05
+    "score": 5.8,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.1215,
+    "vol_trend": 1.314,
+    "price_chg_20d": -0.52
   },
   "neraca": {
     "aset": 1243851082.0,
@@ -93,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 162871072,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 12487656.0,

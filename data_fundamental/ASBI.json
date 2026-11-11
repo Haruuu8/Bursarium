@@ -3,11 +3,11 @@
   "nama": "PT Asuransi Bintang Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 412.0,
-  "update": "2026-11-09 16:07",
+  "harga": 410.0,
+  "update": "2026-11-10 22:24",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 7.927882821902569,
+    "pe": 7.889397953835082,
     "pb": null,
     "ps": null,
     "roe": 0.019466541024002876,
@@ -18,7 +18,7 @@
     "current_ratio": null,
     "roa": 0.01061827925205797,
     "bv": 1334813.5917286708,
-    "pcf": 8.139660263139985e-06,
+    "pcf": 8.100147349241248e-06,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -28,6 +28,7 @@
       "2025-Q1": 0.0,
       "2025-Q2": 18.65,
       "2025-Q3": 0.35,
+      "2025-Q4": 28.0,
       "2026-Q1": 20.0,
       "2026-Q2": 5.98
     },
@@ -35,23 +36,24 @@
       "2025-Q1": 1547568000000.0,
       "2025-Q2": 4951432000000.0,
       "2025-Q3": 64640000000.0,
+      "2025-Q4": 9839409000000.0,
       "2026-Q1": 7056420000000.0,
       "2026-Q2": 1996125000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 143535226880,
+    "market_cap": 142838448128,
     "enterprise_value": 123521744896,
     "shares_outstanding": 348386472
   },
   "akumulasi": {
-    "score": 3.0,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.3105,
-    "vol_trend": 6.003,
-    "price_chg_20d": 0.0
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.2916,
+    "vol_trend": 5.53,
+    "price_chg_20d": 3.02
   },
   "neraca": {
     "aset": 852543504.0,

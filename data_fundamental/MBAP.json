@@ -3,40 +3,43 @@
   "nama": "PT Mitrabara Adiperdana Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 1780.0,
-  "update": "2026-11-09 16:53",
+  "harga": 1790.0,
+  "update": "2026-11-10 23:00",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.01186518365722522,
-    "roe": 0.07595241159458947,
+    "ps": 0.011052931353448871,
+    "roe": 0.09101472248782941,
     "eps": null,
     "eps_annualized": 0.018533333333333332,
     "de": 0.3446943144035814,
-    "margin_net": 0.08190186089362274,
+    "margin_net": 0.0909146413914705,
     "current_ratio": 6.059941727293402,
-    "roa": 0.05628663426948765,
+    "roa": 0.06744897614516696,
     "bv": 161769.90819065014,
-    "pcf": 0.2726286341974116,
-    "div_yield": 126.82417499669934,
-    "payout_ratio": 12180595.224503139
+    "pcf": 0.05062612930987121,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 33002343000000.0,
+      "2025-Q4": 47642765000000.0,
       "2026-Q1": 46267159000000.0,
       "2026-Q2": 47382854000000.0,
       "2026-Q3": 57461446000000.0
     },
     "eps": {
       "2025-Q3": -0.0,
+      "2025-Q4": 0.0,
       "2026-Q1": 0.0,
       "2026-Q2": 0.0,
       "2026-Q3": 0.01
     },
     "net_income": {
       "2025-Q3": -1945381000000.0,
+      "2025-Q4": 1045025000000.0,
       "2026-Q1": 1752913000000.0,
       "2026-Q2": 3075618000000.0,
       "2026-Q3": 12196113000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2184543993856,
-    "enterprise_value": 2104699125760,
+    "market_cap": 2196816789504,
+    "enterprise_value": 2184462860288,
     "shares_outstanding": 1227271952
   },
   "akumulasi": {
-    "score": 4.0,
+    "score": 4.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": -0.2479,
-    "vol_trend": 2.549,
-    "price_chg_20d": 2.37
+    "cmf": -0.188,
+    "vol_trend": 2.697,
+    "price_chg_20d": 6.87
   },
   "neraca": {
     "aset": 267901309.0,
@@ -87,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 8012893,
+    "arus_kas_operasi": 43392944,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 75545.0,

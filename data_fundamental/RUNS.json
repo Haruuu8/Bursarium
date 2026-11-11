@@ -3,13 +3,13 @@
   "nama": "PT Global Sukses Solusi Tbk",
   "sektor": "Technology",
   "industri": "Software - Application",
-  "harga": 50.0,
-  "update": "2026-11-09 14:58",
+  "harga": 55.0,
+  "update": "2026-11-10 21:42",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.8931512905241103e-06,
+    "ps": 3.182466419576521e-06,
     "roe": -0.04411827710725849,
     "eps": null,
     "eps_annualized": -4.94,
@@ -18,8 +18,8 @@
     "current_ratio": 1.0251685274585356,
     "roa": -0.027205979994519434,
     "bv": 53519689.12068439,
-    "pcf": 1.4067139174419123e-05,
-    "div_yield": 75170.78204220618,
+    "pcf": 1.5473853091861034e-05,
+    "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
@@ -29,7 +29,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 49043468288,
+    "market_cap": 53947813888,
     "enterprise_value": 64166408192,
     "shares_outstanding": 980869375
   },
@@ -37,9 +37,9 @@
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1809,
-    "vol_trend": 0.751,
-    "price_chg_20d": -29.58
+    "cmf": 0.1961,
+    "vol_trend": 0.705,
+    "price_chg_20d": -22.54
   },
   "neraca": {
     "aset": 85129273471.0,

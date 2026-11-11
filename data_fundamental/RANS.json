@@ -3,13 +3,13 @@
   "nama": "PT Rans Entertainmen Indonesia Tbk",
   "sektor": "Industrials",
   "industri": "Conglomerates",
-  "harga": 90.0,
-  "update": "2026-11-09 15:56",
+  "harga": 96.0,
+  "update": "2026-11-10 22:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 22.41690799436755,
+    "pe": 23.911368527325383,
     "pb": null,
-    "ps": 3.4919785389119233e-06,
+    "ps": 3.7247771081727184e-06,
     "roe": 0.04937905874298472,
     "eps": 4.014826666666666,
     "eps_annualized": 4.014826666666666,
@@ -18,9 +18,9 @@
     "current_ratio": 8.65931137286148,
     "roa": 0.04436917219611024,
     "bv": 60979653.52967067,
-    "pcf": 3.3210739254070165e-05,
-    "div_yield": 1734328.1938083374,
-    "payout_ratio": 38878275.55263915
+    "pcf": 3.542478853767484e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -35,17 +35,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1134832517120,
-    "enterprise_value": 624400400384,
+    "market_cap": 1210488061952,
+    "enterprise_value": 662228172800,
     "shares_outstanding": 12609250000
   },
   "akumulasi": {
-    "score": 3.3,
+    "score": 2.6,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.08,
-    "vol_trend": 0.85,
-    "price_chg_20d": -49.72
+    "cmf": -0.1238,
+    "vol_trend": 0.828,
+    "price_chg_20d": -46.96
   },
   "neraca": {
     "aset": 855727894453.0,

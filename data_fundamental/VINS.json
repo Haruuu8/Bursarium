@@ -3,11 +3,11 @@
   "nama": "PT Victoria Insurance Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 104.0,
-  "update": "2026-11-09 17:16",
+  "harga": 106.0,
+  "update": "2026-11-10 23:27",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 6.388206388206388,
+    "pe": 6.511056511056511,
     "pb": null,
     "ps": null,
     "roe": 0.07496038594140225,
@@ -28,6 +28,7 @@
       "2025-Q1": 1.94,
       "2025-Q2": 0.91,
       "2025-Q3": 4.3,
+      "2025-Q4": 1.86,
       "2026-Q1": 4.73,
       "2026-Q2": 3.14,
       "2026-Q3": 4.34
@@ -36,6 +37,7 @@
       "2025-Q1": 2836723054000000.0,
       "2025-Q2": 1330001517000000.0,
       "2025-Q3": 7279103727000000.0,
+      "2025-Q4": 1716523168000000.0,
       "2026-Q1": 6909292581000000.0,
       "2026-Q2": 4581409259000000.0,
       "2026-Q3": 6342482184000000.0
@@ -43,17 +45,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 151899652096,
-    "enterprise_value": 128082165760,
+    "market_cap": 154820804608,
+    "enterprise_value": 131189022720,
     "shares_outstanding": 1460573616
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4524,
-    "vol_trend": 0.411,
-    "price_chg_20d": -25.18
+    "cmf": -0.4998,
+    "vol_trend": 0.607,
+    "price_chg_20d": -25.35
   },
   "neraca": {
     "aset": 363827297285.0,

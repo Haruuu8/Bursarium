@@ -3,40 +3,43 @@
   "nama": "PT Cahayasakti Investindo Sukses Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 135.0,
-  "update": "2026-11-09 17:21",
+  "harga": 136.0,
+  "update": "2026-11-10 23:33",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.5823956178886194e-06,
-    "roe": 0.04863953362565978,
+    "ps": 2.053648221319574e-06,
+    "roe": 0.062049242207201476,
     "eps": null,
     "eps_annualized": 12.373333333333331,
     "de": 0.4162781303235011,
-    "margin_net": 0.17955253210457547,
+    "margin_net": 0.18081595575045042,
     "current_ratio": 5.695104362210947,
-    "roa": 0.023680133628002042,
+    "roa": 0.03020864382235047,
     "bv": 192980365.39277914,
-    "pcf": 7.3994502895486694e-06,
-    "div_yield": 4529134.797472447,
-    "payout_ratio": 49415398.517681606
+    "pcf": 7.454261032434215e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 1.0574819809e+16,
+      "2025-Q4": 3.6094326131e+16,
       "2026-Q1": 3.8379986612e+16,
       "2026-Q2": 2.1161316409e+16,
       "2026-Q3": 2.5540676457e+16
     },
     "eps": {
       "2025-Q1": 0.15,
+      "2025-Q4": 3.77,
       "2026-Q1": 8.36,
       "2026-Q2": -0.37,
       "2026-Q3": 1.29
     },
     "net_income": {
       "2025-Q1": 193125661000000.0,
+      "2025-Q4": 4928314649000000.0,
       "2026-Q1": 1.0925551828e+16,
       "2026-Q2": -481494024000000.0,
       "2026-Q3": 6538237060000000.0
@@ -44,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 247023697920,
+    "market_cap": 248853512192,
     "enterprise_value": 352691060736,
     "shares_outstanding": 1829805180
   },
@@ -52,9 +55,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5047,
-    "vol_trend": 0.452,
-    "price_chg_20d": -25.56
+    "cmf": -0.4735,
+    "vol_trend": 0.459,
+    "price_chg_20d": -23.16
   },
   "neraca": {
     "aset": 725309273791.0,

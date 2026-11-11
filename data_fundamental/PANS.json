@@ -3,12 +3,12 @@
   "nama": "PT Panin Sekuritas Tbk",
   "sektor": "Financial Services",
   "industri": "Capital Markets",
-  "harga": 1560.0,
-  "update": "2026-11-09 17:00",
+  "harga": 1550.0,
+  "update": "2026-11-10 23:08",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 9.97357429034183,
-    "pb": 0.7409450100802744,
+    "pe": 9.909641121813998,
+    "pb": 0.7361953625797597,
     "ps": null,
     "roe": 55718.6729422676,
     "eps": 156.41333333333333,
@@ -18,20 +18,22 @@
     "current_ratio": null,
     "roa": 37736.766780162914,
     "bv": 2105.419401948586,
-    "pcf": 1.4630407528500086e-05,
-    "div_yield": 16025641.025641024,
-    "payout_ratio": 159832921.3195806
+    "pcf": 1.4536622864855855e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
     "eps": {
       "2025-Q1": -24.63,
+      "2025-Q4": 109.82,
       "2026-Q1": 16.28,
       "2026-Q2": 7.95,
       "2026-Q3": 93.08
     },
     "net_income": {
       "2025-Q1": -1.7524046925e+16,
+      "2025-Q4": 7.8124922866e+16,
       "2026-Q1": 1.1581441614e+16,
       "2026-Q2": 5658888320000000.0,
       "2026-Q3": 6.6218218568e+16
@@ -39,17 +41,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1109828960256,
+    "market_cap": 1102714634240,
     "enterprise_value": 36074323968,
     "shares_outstanding": 711428800
   },
   "akumulasi": {
-    "score": 6.5,
+    "score": 6.6,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.1617,
-    "vol_trend": 0.915,
-    "price_chg_20d": -5.5
+    "cmf": 0.1096,
+    "vol_trend": 0.898,
+    "price_chg_20d": -4.02
   },
   "neraca": {
     "aset": 2211597749966.0,

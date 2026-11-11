@@ -3,40 +3,43 @@
   "nama": "PT MNC Vision Networks Tbk",
   "sektor": "Communication Services",
   "industri": "Entertainment",
-  "harga": 18.0,
-  "update": "2026-11-09 17:35",
+  "harga": 19.0,
+  "update": "2026-11-10 23:47",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 258.68243050585465,
-    "roe": -4.013884052224768e-05,
-    "eps": -0.010674732801782603,
+    "ps": 295.0076827358326,
+    "roe": -4.599566679069811e-05,
+    "eps": -0.012232327756413067,
     "eps_annualized": -4.973333333333333e-06,
     "de": 0.1808073055545064,
-    "margin_net": -0.15340921256476084,
+    "margin_net": -0.1899279297834013,
     "current_ratio": 2.745952164261517,
-    "roa": -3.367481178356121e-05,
+    "roa": -3.8588444556031775e-05,
     "bv": 265.9452207112445,
-    "pcf": 1.3528952989254357e-06,
+    "pcf": 1.4280561488657379e-06,
     "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 422262000.0,
+      "2025-Q4": 314517000.0,
       "2026-Q1": 394069000.0,
       "2026-Q2": 302681000.0,
       "2026-Q3": 328815000.0
     },
     "eps": {
       "2025-Q3": -1.53,
+      "2025-Q4": -2.3,
       "2026-Q1": 0.43,
       "2026-Q2": -0.43,
       "2026-Q3": -0.0
     },
     "net_income": {
       "2025-Q3": -64576000.0,
+      "2025-Q4": -96985000.0,
       "2026-Q1": 18240000.0,
       "2026-Q2": -85789000.0,
       "2026-Q3": -89985000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 759563091968,
-    "enterprise_value": 1236612153344,
+    "market_cap": 801761067008,
+    "enterprise_value": 1363206078464,
     "shares_outstanding": 20807078184
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2906,
-    "vol_trend": 0.807,
-    "price_chg_20d": -36.0
+    "cmf": -0.2381,
+    "vol_trend": 0.806,
+    "price_chg_20d": -17.39
   },
   "neraca": {
     "aset": 6595731.0,

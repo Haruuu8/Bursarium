@@ -3,11 +3,11 @@
   "nama": "PT Asuransi Dayin Mitra Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 482.0,
-  "update": "2026-11-09 16:07",
+  "harga": 484.0,
+  "update": "2026-11-10 22:24",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 8.817073170731708,
+    "pe": 8.853658536585366,
     "pb": null,
     "ps": null,
     "roe": 0.042607648056813,
@@ -18,9 +18,9 @@
     "current_ratio": null,
     "roa": 0.014880643883125566,
     "bv": 953071.203125,
-    "pcf": 3.927269361465112e-05,
-    "div_yield": 6639.004149377594,
-    "payout_ratio": 58536.58536585366
+    "pcf": 3.943565084956668e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -28,6 +28,7 @@
       "2025-Q1": 14.0,
       "2025-Q2": 17.0,
       "2025-Q3": 11.0,
+      "2025-Q4": 5.0,
       "2026-Q1": 10.0,
       "2026-Q2": 18.0,
       "2026-Q3": 13.0
@@ -36,6 +37,7 @@
       "2025-Q1": 5519324000000.0,
       "2025-Q2": 6551404000000.0,
       "2025-Q3": 4143841000000.0,
+      "2025-Q4": 1836038000000.0,
       "2026-Q1": 3779975000000.0,
       "2026-Q2": 7067097000000.0,
       "2026-Q3": 4746447000000.0
@@ -43,7 +45,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 185088000000,
+    "market_cap": 185856000000,
     "enterprise_value": 23611990016,
     "shares_outstanding": 384000000
   },
@@ -51,9 +53,9 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.548,
-    "vol_trend": 3.869,
-    "price_chg_20d": -5.49
+    "cmf": -0.5418,
+    "vol_trend": 6.046,
+    "price_chg_20d": -5.1
   },
   "neraca": {
     "aset": 1047906201.0,

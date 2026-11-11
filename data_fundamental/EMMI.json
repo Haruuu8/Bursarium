@@ -3,13 +3,13 @@
   "nama": "PT Esa Medika Mandiri Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 398.0,
-  "update": "2026-11-09 15:56",
+  "harga": 404.0,
+  "update": "2026-11-10 22:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 5.323122649891258e-06,
+    "ps": 5.403370730040372e-06,
     "roe": -0.14147115379535063,
     "eps": null,
     "eps_annualized": -37.586666666666666,
@@ -35,17 +35,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 693657075712,
-    "enterprise_value": 809686859776,
+    "market_cap": 704114196480,
+    "enterprise_value": 799229673472,
     "shares_outstanding": 1742857000
   },
   "akumulasi": {
     "score": 7.0,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.4093,
-    "vol_trend": 0.379,
-    "price_chg_20d": 1.49
+    "cmf": 0.3916,
+    "vol_trend": 0.397,
+    "price_chg_20d": -1.46
   },
   "neraca": {
     "aset": 594396197217.0,

@@ -3,13 +3,13 @@
   "nama": "PT Wira Global Solusi Tbk",
   "sektor": "Technology",
   "industri": "Software - Infrastructure",
-  "harga": 75.0,
-  "update": "2026-11-09 15:01",
+  "harga": 78.0,
+  "update": "2026-11-10 21:43",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 15.0,
+    "pe": 15.6,
     "pb": null,
-    "ps": 1.8158304412648247e-06,
+    "ps": 1.8884636589154176e-06,
     "roe": 0.07445277971403473,
     "eps": 5.0,
     "eps_annualized": 5.0,
@@ -19,8 +19,8 @@
     "roa": 0.06029537135493491,
     "bv": 33586695.60767386,
     "pcf": null,
-    "div_yield": 1278.976818545164,
-    "payout_ratio": 19184.65227817746
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -29,17 +29,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 156374990848,
-    "enterprise_value": 153104580608,
+    "market_cap": 162629992448,
+    "enterprise_value": 157274570752,
     "shares_outstanding": 2085000000
   },
   "akumulasi": {
-    "score": 3.7,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": -0.0534,
-    "vol_trend": 0.464,
-    "price_chg_20d": -34.82
+    "score": 2.5,
+    "label": "DISTRIBUSI",
+    "tipe": "DISTRIBUTION",
+    "cmf": -0.14,
+    "vol_trend": 0.485,
+    "price_chg_20d": -30.97
   },
   "neraca": {
     "aset": 86470959940.0,

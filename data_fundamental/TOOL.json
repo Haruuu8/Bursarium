@@ -3,40 +3,43 @@
   "nama": "PT Rohartindo Nusantara Luas Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 40.0,
-  "update": "2026-11-09 15:19",
+  "harga": 41.0,
+  "update": "2026-11-10 21:50",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.6596388038081217e-06,
-    "roe": -0.0679229694456599,
+    "ps": 1.6263001436876345e-06,
+    "roe": -0.05529390579187581,
     "eps": null,
     "eps_annualized": -5.92,
     "de": 0.11932942181728085,
-    "margin_net": -0.24309150207226846,
+    "margin_net": -0.18918802168214513,
     "current_ratio": 9.338678812982272,
-    "roa": -0.06068090079272507,
+    "roa": -0.04939837052447206,
     "bv": 86258027.74530546,
-    "pcf": 0.001172099371543699,
+    "pcf": 0.0012014018558322915,
     "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 1.2903561033e+16,
+      "2025-Q4": 1.5176969512e+16,
       "2026-Q1": 1.0155126049e+16,
       "2026-Q2": 1.4741174564e+16,
       "2026-Q3": 1.1608969126e+16
     },
     "eps": {
       "2025-Q3": 4.74,
+      "2025-Q4": -6.49,
       "2026-Q1": -2.37,
       "2026-Q2": -0.86,
       "2026-Q3": -1.21
     },
     "net_income": {
       "2025-Q3": -2905184859000000.0,
+      "2025-Q4": -671978571000000.0,
       "2026-Q1": -4863467828000000.0,
       "2026-Q2": -1767041144000000.0,
       "2026-Q3": -2475173057000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 82000814080,
-    "enterprise_value": 98993242112,
+    "market_cap": 84050837504,
+    "enterprise_value": 101043265536,
     "shares_outstanding": 2050020320
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3315,
-    "vol_trend": 0.116,
-    "price_chg_20d": -30.36
+    "cmf": -0.33,
+    "vol_trend": 0.138,
+    "price_chg_20d": -25.45
   },
   "neraca": {
     "aset": 197934881175.0,

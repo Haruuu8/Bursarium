@@ -4,7 +4,7 @@
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
   "harga": 198.0,
-  "update": "2026-11-09 16:08",
+  "update": "2026-11-10 22:25",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": 12.901824500434406,
@@ -18,7 +18,7 @@
     "current_ratio": null,
     "roa": 9449.065005417107,
     "bv": 560557472.5874114,
-    "pcf": 6.452071748640312e-06,
+    "pcf": 5.295092595989564e-06,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -28,6 +28,7 @@
       "2025-Q1": 49.46,
       "2025-Q2": -27.7,
       "2025-Q3": -2.25,
+      "2025-Q4": -2.57,
       "2026-Q1": 7.2,
       "2026-Q2": 0.89,
       "2026-Q3": 3.42
@@ -36,6 +37,7 @@
       "2025-Q1": 1.5049547084e+16,
       "2025-Q2": 1.14364521e+16,
       "2025-Q3": -2748006806000000.0,
+      "2025-Q4": -2091120117000000.0,
       "2026-Q1": 9196993550000000.0,
       "2026-Q2": 1146587090000000.0,
       "2026-Q3": 4364922496000000.0
@@ -44,16 +46,16 @@
   },
   "statistik": {
     "market_cap": 253042425856,
-    "enterprise_value": 14843851776,
+    "enterprise_value": 60384784384,
     "shares_outstanding": 1277992036
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5172,
-    "vol_trend": 0.489,
-    "price_chg_20d": -28.15
+    "cmf": -0.5099,
+    "vol_trend": 0.526,
+    "price_chg_20d": -21.43
   },
   "neraca": {
     "aset": 1556609371146.0,
@@ -86,7 +88,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 39218786304,
+    "arus_kas_operasi": 47788101632,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 419194900.0,

@@ -3,40 +3,43 @@
   "nama": "PT Repower Asia Indonesia Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Diversified",
-  "harga": 28.0,
-  "update": "2026-11-09 17:39",
+  "harga": 30.0,
+  "update": "2026-11-10 23:51",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.6532210340835014e-05,
-    "roe": 0.0009635309227010728,
+    "ps": 1.932389179460104e-05,
+    "roe": 0.00021387255434683378,
     "eps": null,
     "eps_annualized": 0.0824,
     "de": 0.005129469820321252,
-    "margin_net": 0.03217907129495481,
+    "margin_net": 0.00779225859465865,
     "current_ratio": 30.553479492269265,
-    "roa": 0.0009586112014362719,
+    "roa": 0.0002127805360952267,
     "bv": 56563328.52503198,
     "pcf": null,
-    "div_yield": 17857.1429890469,
-    "payout_ratio": 6067961.209870306
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 1999801802000000.0,
+      "2025-Q4": 1063261261000000.0,
       "2026-Q1": 1500000000000000.0,
       "2026-Q2": 4674490280000000.0,
       "2026-Q3": 3060810811000000.0
     },
     "eps": {
       "2025-Q3": -0.01,
+      "2025-Q4": -0.05,
       "2026-Q1": -0.38,
       "2026-Q2": 0.38,
       "2026-Q3": 0.06
     },
     "net_income": {
       "2025-Q3": -48359776000000.0,
+      "2025-Q4": -329645892000000.0,
       "2026-Q1": -2537071291000000.0,
       "2026-Q2": 2561617654000000.0,
       "2026-Q3": 385348590000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 185741082624,
-    "enterprise_value": 191824723968,
+    "market_cap": 199008305152,
+    "enterprise_value": 198458327040,
     "shares_outstanding": 6633610151
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.474,
-    "vol_trend": 0.79,
-    "price_chg_20d": -39.58
+    "cmf": -0.4104,
+    "vol_trend": 0.592,
+    "price_chg_20d": -31.82
   },
   "neraca": {
     "aset": 377144744875.0,

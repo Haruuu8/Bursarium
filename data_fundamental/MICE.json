@@ -3,58 +3,61 @@
   "nama": "PT Multi Indocitra Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Household & Personal Products",
-  "harga": 464.0,
-  "update": "2026-11-09 16:55",
+  "harga": 462.0,
+  "update": "2026-11-10 23:03",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.2919522347790067e-07,
-    "roe": 0.041614244724807514,
+    "ps": 3.171647057071296e-06,
+    "roe": 0.04078120483600688,
     "eps": null,
     "eps_annualized": 75.09333333333333,
     "de": 0.4832964698599395,
-    "margin_net": 0.034110919312828135,
+    "margin_net": 0.4645866808094134,
     "current_ratio": 1.8154380253670703,
-    "roa": 28054.951315270308,
+    "roa": 27493.34329670526,
     "bv": 1659448677.37,
-    "pcf": 0.00012279300047152514,
-    "div_yield": 2155173.2252155175,
-    "payout_ratio": 13316766.377397018
+    "pcf": 0.0001222637202970789,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 2.43528163462e+17,
       "2025-Q2": 3.28189892092e+17,
       "2025-Q3": 3.13249901558e+17,
+      "2025-Q4": -8.83757452107557e+17,
       "2026-Q1": 3.29717042756e+17
     },
     "eps": {
       "2025-Q1": 6.86,
       "2025-Q2": 36.28,
       "2025-Q3": 24.98,
+      "2025-Q4": 5.23,
       "2026-Q1": 1.75
     },
     "net_income": {
       "2025-Q1": 4060173192000000.0,
       "2025-Q2": 2.1475481568e+16,
       "2025-Q3": 1.4847589459e+16,
+      "2025-Q4": 3230741027000000.0,
       "2026-Q1": 1050777802000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 278400008192,
-    "enterprise_value": 525943898112,
+    "market_cap": 277200011264,
+    "enterprise_value": 517543886848,
     "shares_outstanding": 600000000
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.2671,
-    "vol_trend": 0.043,
-    "price_chg_20d": -2.45
+    "score": 5.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0817,
+    "vol_trend": 0.034,
+    "price_chg_20d": -5.33
   },
   "neraca": {
     "aset": 1476888038599.0,

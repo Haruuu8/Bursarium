@@ -3,55 +3,58 @@
   "nama": "PT Bank SMBC Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 2460.0,
-  "update": "2026-11-09 16:00",
+  "harga": 2420.0,
+  "update": "2026-11-10 22:20",
   "periode_terbaru": "2025-audit",
   "rasio_kunci": {
-    "pe": 52.340425531914896,
-    "pb": 0.5518850798124187,
-    "ps": 1.0806211529067684,
+    "pe": null,
+    "pb": 0.5429113386772575,
+    "ps": 1.063050077249748,
     "roe": 1.065367454066029e-05,
-    "eps": 47.0,
+    "eps": 0.04748821870475683,
     "eps_annualized": 47.0,
     "de": 3.8450624194900604,
     "margin_net": 2.0860477091960607e-05,
     "current_ratio": null,
     "roa": 2.0563789849722895e-06,
     "bv": 4457.44972999838,
-    "pcf": 5.364145965102876,
-    "div_yield": 3097.442353416783,
-    "payout_ratio": 162121.45083841035
+    "pcf": 5.2769240794914465,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 6171229000000.0,
       "2025-Q2": 6055534000000.0,
-      "2025-Q3": 5965714000000.0
+      "2025-Q3": 5965714000000.0,
+      "2025-Q4": 6042683000000.0
     },
     "eps": {
       "2025-Q1": 48.0,
       "2025-Q2": 46.0,
-      "2025-Q3": 44.0
+      "2025-Q3": 44.0,
+      "2025-Q4": -91.0
     },
     "net_income": {
       "2025-Q1": 509582000.0,
       "2025-Q2": 490515000.0,
-      "2025-Q3": 473499000.0
+      "2025-Q3": 473499000.0,
+      "2025-Q4": -968039000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 26189026557952,
-    "enterprise_value": 65829244764160,
+    "market_cap": 25763187261440,
+    "enterprise_value": 66148624236544,
     "shares_outstanding": 10645945748
   },
   "akumulasi": {
     "score": 6.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.525,
-    "vol_trend": 2.416,
-    "price_chg_20d": -2.8
+    "cmf": 0.6726,
+    "vol_trend": 3.525,
+    "price_chg_20d": -0.41
   },
   "neraca": {
     "aset": 245848165.0,

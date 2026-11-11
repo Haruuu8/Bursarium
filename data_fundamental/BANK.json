@@ -3,12 +3,12 @@
   "nama": "PT Bank Aladin Syariah Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 165.0,
-  "update": "2026-11-09 17:46",
+  "harga": 157.0,
+  "update": "2026-11-10 23:58",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.699736193660131,
+    "pb": 0.6658095903311549,
     "ps": null,
     "roe": 1.4223139095407751e-05,
     "eps": 0.004471814705799736,
@@ -18,7 +18,7 @@
     "current_ratio": null,
     "roa": 2.965420579221849e-06,
     "bv": 235.8031519520658,
-    "pcf": 0.49120067278461593,
+    "pcf": 0.4673848825889982,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -28,6 +28,7 @@
       "2025-Q1": 2.0,
       "2025-Q2": 4.0,
       "2025-Q3": 3.0,
+      "2025-Q4": -9.0,
       "2026-Q1": 0.0,
       "2026-Q2": 2.39,
       "2026-Q3": -2.39
@@ -36,6 +37,7 @@
       "2025-Q1": 33468000.0,
       "2025-Q2": 46568000.0,
       "2025-Q3": 48118000.0,
+      "2025-Q4": 22555000.0,
       "2026-Q1": 23323000.0,
       "2026-Q2": 15061000.0,
       "2026-Q3": 8871000.0
@@ -43,17 +45,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2324805713920,
-    "enterprise_value": -1158661537792,
+    "market_cap": 2212087726080,
+    "enterprise_value": -1279772327936,
     "shares_outstanding": 14089731085
   },
   "akumulasi": {
-    "score": 4.7,
+    "score": 3.8,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.01,
-    "vol_trend": 0.721,
-    "price_chg_20d": -30.17
+    "cmf": -0.0437,
+    "vol_trend": 0.74,
+    "price_chg_20d": -34.58
   },
   "neraca": {
     "aset": 15935345.0,

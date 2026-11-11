@@ -3,40 +3,43 @@
   "nama": "PT Trimitra Trans Persada Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 306.0,
-  "update": "2026-11-09 15:55",
+  "harga": 312.0,
+  "update": "2026-11-10 22:16",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 3.1415681304978906e-06,
-    "roe": 0.23680625015924012,
+    "ps": -1.1074915804895636e-06,
+    "roe": 0.23316716166369542,
     "eps": null,
     "eps_annualized": 48.0,
     "de": 0.7388466537020969,
-    "margin_net": 0.48236348339998913,
+    "margin_net": -0.16421371687681838,
     "current_ratio": 1.6997993684838317,
-    "roa": 136183.8135033722,
+    "roa": 134091.02689547534,
     "bv": 198406641.57035422,
-    "pcf": 5.10689847566574e-06,
-    "div_yield": 6862745.098039215,
-    "payout_ratio": 43750000.0
+    "pcf": 5.2070337398944795e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 3.2804301315699994e+17,
+      "2025-Q4": -9.531925769469999e+17,
       "2026-Q1": 3.57517651214e+17,
       "2026-Q2": 3.75357585624e+17,
       "2026-Q3": -7.317440795669e+17
     },
     "eps": {
       "2025-Q3": -169.0,
+      "2025-Q4": -36.0,
       "2026-Q1": 47.0,
       "2026-Q2": -1.0,
       "2026-Q3": -10.0
     },
     "net_income": {
       "2025-Q3": 3.7910145816e+16,
+      "2025-Q4": 3.5470090743e+16,
       "2026-Q1": 3.6553972627e+16,
       "2026-Q2": 4.0993086343e+16,
       "2026-Q3": 4.3324394707e+16
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1034123083776,
+    "market_cap": 1054399987712,
     "enterprise_value": 1328085598208,
     "shares_outstanding": 3379487200
   },
   "akumulasi": {
-    "score": 1.9,
+    "score": 1.8,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1084,
-    "vol_trend": 1.369,
-    "price_chg_20d": -15.56
+    "cmf": -0.1146,
+    "vol_trend": 1.462,
+    "price_chg_20d": -13.33
   },
   "neraca": {
     "aset": 1165935917113.0,

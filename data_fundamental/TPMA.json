@@ -1,42 +1,45 @@
 {
   "kode": "TPMA",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 260.0,
-  "update": "2026-11-09 17:14",
+  "nama": "PT Trans Power Marine Tbk",
+  "sektor": "Industrials",
+  "industri": "Marine Shipping",
+  "harga": 278.0,
+  "update": "2026-11-10 23:25",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0072799849881338505,
-    "roe": 0.059036628340157174,
-    "eps": 2105.6833494939,
+    "ps": 0.007795329495057782,
+    "roe": 0.05640927674549352,
+    "eps": 2011.9725353486022,
     "eps_annualized": 0.0012,
     "de": 1.054976645327036,
-    "margin_net": 0.05895901220799614,
+    "margin_net": 0.05641722607211922,
     "current_ratio": 0.9297253966849568,
-    "roa": 0.026814139334207246,
+    "roa": 0.025620809469003174,
     "bv": 35667.40528204585,
-    "pcf": null,
-    "div_yield": 992.4863614723017,
-    "payout_ratio": 215038711.65233207
+    "pcf": 0.034168774593926095,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 29703714000000.0,
+      "2025-Q4": 29521968000000.0,
       "2026-Q1": 26379119000000.0,
       "2026-Q2": 36426827000000.0,
       "2026-Q3": 32364888000000.0
     },
     "eps": {
       "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
       "2026-Q1": 0.0,
       "2026-Q2": 0.0,
       "2026-Q3": 0.0
     },
     "net_income": {
       "2025-Q3": 4326172000000.0,
+      "2025-Q4": 3998514000000.0,
       "2026-Q1": 776479000.0,
       "2026-Q2": 2397517000.0,
       "2026-Q3": 3033134004000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
+    "market_cap": 972021497856,
+    "enterprise_value": 972145950720,
     "shares_outstanding": 3496480134
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.5218,
-    "vol_trend": 3.283,
-    "price_chg_20d": -41.7
+    "cmf": -0.4686,
+    "vol_trend": 3.996,
+    "price_chg_20d": -36.82
   },
   "neraca": {
     "aset": 274574541.0,
@@ -87,7 +90,7 @@
     "eps_diluted": 0.0009
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 28447654,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 270823.0,

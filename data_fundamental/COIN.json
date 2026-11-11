@@ -3,40 +3,43 @@
   "nama": "PT Indokripto Koin Semesta Tbk",
   "sektor": "Financial Services",
   "industri": "Financial Data & Stock Exchanges",
-  "harga": 286.0,
-  "update": "2026-11-09 15:54",
+  "harga": 292.0,
+  "update": "2026-11-10 22:16",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 2.820267607297153,
-    "ps": 2.13876207568532e-05,
-    "roe": -29200.914414973868,
+    "pb": 2.879434060597093,
+    "ps": 2.3175834831592254e-05,
+    "roe": -34295.00682798739,
     "eps": null,
     "eps_annualized": -5.359999999999999,
     "de": 0.016420816228924624,
-    "margin_net": -0.2214463909895858,
+    "margin_net": -0.27603181634551743,
     "current_ratio": 22.054325192883585,
-    "roa": -28760.13964912307,
+    "roa": -33777.33901150606,
     "bv": 101.40881640451579,
     "pcf": null,
-    "div_yield": 294.5120410156034,
+    "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 9.1484280769e+16,
+      "2025-Q4": 8.0118236386e+16,
       "2026-Q1": 4.1489414545e+16,
       "2026-Q2": 3.229158633e+16,
       "2026-Q3": 3.1385033705e+16
     },
     "eps": {
       "2025-Q3": 1.06,
+      "2025-Q4": 0.5,
       "2026-Q1": -1.38,
       "2026-Q2": -1.39,
       "2026-Q3": -1.25
     },
     "net_income": {
       "2025-Q3": 1.5570803899e+16,
+      "2025-Q4": 7973952665000000.0,
       "2026-Q1": -1.9574186013e+16,
       "2026-Q2": -2.120607941e+16,
       "2026-Q3": -1.8338041097e+16
@@ -44,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4205882376192,
+    "market_cap": 4294117687296,
     "enterprise_value": 4006741803008,
     "shares_outstanding": 14705882400
   },
@@ -52,9 +55,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3113,
-    "vol_trend": 0.764,
-    "price_chg_20d": -56.15
+    "cmf": -0.2914,
+    "vol_trend": 0.766,
+    "price_chg_20d": -51.74
   },
   "neraca": {
     "aset": 1514161723562.0,

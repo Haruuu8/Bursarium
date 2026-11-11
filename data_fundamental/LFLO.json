@@ -3,13 +3,13 @@
   "nama": "PT Imago Mulia Persada Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Furnishings, Fixtures & Appliances",
-  "harga": 670.0,
-  "update": "2026-11-09 17:47",
+  "harga": 685.0,
+  "update": "2026-11-10 23:59",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 35.86723768736617,
+    "pe": 36.67023554603855,
     "pb": null,
-    "ps": 4.88445537627238e-06,
+    "ps": 4.993808854845642e-06,
     "roe": 0.13528449469618042,
     "eps": 18.68,
     "eps_annualized": 18.68,
@@ -18,9 +18,9 @@
     "current_ratio": 1.8855807981192798,
     "roa": 0.06437189645522794,
     "bv": 69063550.35844699,
-    "pcf": 3.101459442366043e-05,
-    "div_yield": 1071694.6513094748,
-    "payout_ratio": 38438726.78679594
+    "pcf": 3.1708951015234914e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -29,17 +29,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 876182372352,
-    "enterprise_value": 804784963584,
+    "market_cap": 895798411264,
+    "enterprise_value": 889787777024,
     "shares_outstanding": 1307734937
   },
   "akumulasi": {
     "score": 7.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.642,
-    "vol_trend": 0.135,
-    "price_chg_20d": 6.9
+    "cmf": 0.6693,
+    "vol_trend": 0.138,
+    "price_chg_20d": 21.24
   },
   "neraca": {
     "aset": 189810549554.0,

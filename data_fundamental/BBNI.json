@@ -3,40 +3,43 @@
   "nama": "PT Bank Negara Indonesia (Persero) Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 3380.0,
-  "update": "2026-11-09 16:11",
+  "harga": 3400.0,
+  "update": "2026-11-10 22:27",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.015466284079343964,
-    "roe": 0.12442937862100441,
+    "ps": 0.015423616293054401,
+    "roe": 0.12386705241304222,
     "eps": null,
     "eps_annualized": 0.0005733333333333332,
     "de": 7.6973602662729155,
-    "margin_net": 0.2725276472243505,
+    "margin_net": 0.2689561320224562,
     "current_ratio": null,
-    "roa": 0.01426424657754208,
+    "roa": 0.014199783025796648,
     "bv": 478650.31819004175,
-    "pcf": 0.011634661510446523,
-    "div_yield": 1085.9348900233833,
-    "payout_ratio": 6401964991.184365
+    "pcf": 0.01170350566139591,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 17552684000000.0,
+      "2025-Q4": 18227448000000.0,
       "2026-Q1": 18998562000000.0,
       "2026-Q2": 19631646000000.0,
       "2026-Q3": 21376883000000.0
     },
     "eps": {
       "2025-Q3": 134.0,
+      "2025-Q4": 132.0,
       "2026-Q1": 152.0,
       "2026-Q2": -152.0,
       "2026-Q3": 0.0
     },
     "net_income": {
       "2025-Q3": 5021094000000.0,
+      "2025-Q4": 4925570000000.0,
       "2026-Q1": 5660764000000.0,
       "2026-Q2": 5095072000000.0,
       "2026-Q3": 5360253000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 126016915767296,
-    "enterprise_value": -35889501700096,
+    "market_cap": 126762579132416,
+    "enterprise_value": -35901073784832,
     "shares_outstanding": 354899856
   },
   "akumulasi": {
-    "score": 6.0,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.1771,
-    "vol_trend": 2.021,
-    "price_chg_20d": -0.87
+    "score": 7.0,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1423,
+    "vol_trend": 2.335,
+    "price_chg_20d": 0.0
   },
   "neraca": {
     "aset": 1481829614.0,

@@ -3,20 +3,20 @@
   "nama": "PT. Penta Valent Tbk",
   "sektor": "Healthcare",
   "industri": "Pharmaceutical Retailers",
-  "harga": 330.0,
-  "update": "2026-11-09 15:25",
+  "harga": 322.0,
+  "update": "2026-11-10 21:54",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.15655962661300782,
-    "roe": 0.15836438635448863,
+    "ps": 0.15039802723632376,
+    "roe": 0.14789541696832223,
     "eps": null,
     "eps_annualized": 34.82666666666667,
     "de": 2.871092555721122,
-    "margin_net": 16722.027951167616,
+    "margin_net": 15374.697151902576,
     "current_ratio": 1.3503967728954975,
-    "roa": 40904.40116982385,
+    "roa": 38200.34040550656,
     "bv": 222569466.9898761,
     "pcf": null,
     "div_yield": null,
@@ -25,18 +25,21 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": 901853502519.0,
+      "2025-Q4": 960405889191.0,
       "2026-Q1": 8.71412723536e+17,
       "2026-Q2": -8.69576008235689e+17,
       "2026-Q3": -1833895528624453.0
     },
     "eps": {
       "2025-Q3": 8.6,
+      "2025-Q4": 6.74,
       "2026-Q1": 9.14,
       "2026-Q2": 8.7,
       "2026-Q3": 8.28
     },
     "net_income": {
       "2025-Q3": 1.5233879329e+16,
+      "2025-Q4": 1.1119844301e+16,
       "2026-Q1": 1.5919007862e+16,
       "2026-Q2": 1.5167240584e+16,
       "2026-Q3": 1.5912992661e+16
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 582656262144,
-    "enterprise_value": 1015779360768,
+    "market_cap": 568531222528,
+    "enterprise_value": 1012248150016,
     "shares_outstanding": 1765625000
   },
   "akumulasi": {
-    "score": 5.4,
-    "label": "NETRAL",
-    "tipe": "NEUTRAL",
-    "cmf": 0.0569,
-    "vol_trend": 0.769,
-    "price_chg_20d": -14.06
+    "score": 6.5,
+    "label": "AKUMULASI",
+    "tipe": "ACCUMULATION",
+    "cmf": 0.1364,
+    "vol_trend": 0.644,
+    "price_chg_20d": -9.04
   },
   "neraca": {
     "aset": 1521428468727.0,

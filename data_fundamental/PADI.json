@@ -3,8 +3,8 @@
   "nama": "PT Minna Padi Investama Sekuritas Tbk",
   "sektor": "Financial Services",
   "industri": "Capital Markets",
-  "harga": 28.0,
-  "update": "2026-11-09 16:59",
+  "harga": 32.0,
+  "update": "2026-11-10 23:08",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
@@ -28,6 +28,7 @@
       "2025-Q1": -0.03,
       "2025-Q2": 0.3,
       "2025-Q3": 1.92,
+      "2025-Q4": -2.03,
       "2026-Q1": 0.64,
       "2026-Q2": -1.9,
       "2026-Q3": 1.16
@@ -36,6 +37,7 @@
       "2025-Q1": -392469702000000.0,
       "2025-Q2": 3388967999000000.0,
       "2025-Q3": 2.1744234992e+16,
+      "2025-Q4": -2.2928191056e+16,
       "2026-Q1": 7235916208000000.0,
       "2026-Q2": -2.1492629153e+16,
       "2026-Q3": 1.3151640927e+16
@@ -43,17 +45,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 379923496960,
-    "enterprise_value": 177188110336,
+    "market_cap": 434198282240,
+    "enterprise_value": 217894207488,
     "shares_outstanding": 13568695829
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3064,
-    "vol_trend": 0.465,
-    "price_chg_20d": -29.27
+    "cmf": -0.2507,
+    "vol_trend": 0.437,
+    "price_chg_20d": -15.79
   },
   "neraca": {
     "aset": 298828789370.0,

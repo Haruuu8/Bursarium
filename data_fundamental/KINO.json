@@ -3,40 +3,43 @@
   "nama": "PT Kino Indonesia Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Beverages - Non-Alcoholic",
-  "harga": 1570.0,
-  "update": "2026-11-09 17:19",
+  "harga": 1555.0,
+  "update": "2026-11-10 23:30",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.1347161794248766,
-    "ps": 0.4212304436099289,
-    "roe": 127627.99781834031,
+    "pb": 1.1238749420418364,
+    "ps": 0.4019096935188167,
+    "roe": 141803.65887146397,
     "eps": null,
     "eps_annualized": 214.66666666666666,
     "de": 1.5530381466944796,
-    "margin_net": 47378.18946524129,
+    "margin_net": 50710.50429626482,
     "current_ratio": 0.7273476933114634,
-    "roa": 49925.37810873816,
+    "roa": 55470.59741889183,
     "bv": 1383.6058994027424,
-    "pcf": 2.480635646560245e-06,
-    "div_yield": 2942495.580357259,
-    "payout_ratio": 21520425.75074952
+    "pcf": 2.456935305988013e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 1032990523386.0,
+      "2025-Q4": 1228579229835.0,
       "2026-Q1": 1256024436522.0,
       "2026-Q2": 1372957070763.0,
       "2026-Q3": 1477128682108.0
     },
     "eps": {
       "2025-Q3": 16.0,
+      "2025-Q4": 35.0,
       "2026-Q1": 46.0,
       "2026-Q2": 64.0,
       "2026-Q3": 51.0
     },
     "net_income": {
       "2025-Q3": 2.1313771685e+16,
+      "2025-Q4": 4.8357275147e+16,
       "2026-Q1": 6.3012495861e+16,
       "2026-Q2": 8.8375330251e+16,
       "2026-Q3": 7.0779689454e+16
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2164745699328,
-    "enterprise_value": 3307027824640,
+    "market_cap": 2144063455232,
+    "enterprise_value": 3286345449472,
     "shares_outstanding": 1378818900
   },
   "akumulasi": {
-    "score": 6.7,
+    "score": 6.6,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.0108,
-    "vol_trend": 2.159,
-    "price_chg_20d": 11.35
+    "cmf": 0.0083,
+    "vol_trend": 2.394,
+    "price_chg_20d": 9.89
   },
   "neraca": {
     "aset": 4876904221350.0,

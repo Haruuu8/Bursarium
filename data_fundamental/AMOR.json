@@ -3,22 +3,22 @@
   "nama": "PT Ashmore Asset Management Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Asset Management",
-  "harga": 354.0,
-  "update": "2026-11-09 17:40",
+  "harga": 362.0,
+  "update": "2026-11-10 23:52",
   "periode_terbaru": "2026-tw1",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2148.0491384539537,
-    "roe": 0.25265418258755173,
-    "eps": 0.03652083953745139,
+    "ps": 1897.5558532109214,
+    "roe": 0.2894053746802665,
+    "eps": 0.041833177435372335,
     "eps_annualized": 44.0,
     "de": 0.24674582372817128,
-    "margin_net": 0.22160609577411733,
+    "margin_net": 0.21928395221243596,
     "current_ratio": null,
-    "roa": 0.2026509155106166,
+    "roa": 0.23212860967510707,
     "bv": 0.14454872333172597,
-    "pcf": 9.010505485325352e-06,
+    "pcf": 9.214132727931575e-06,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -27,34 +27,37 @@
       "2025-Q1": 58901000.0,
       "2025-Q2": 81116000.0,
       "2025-Q3": 112537000.0,
+      "2025-Q4": 115797000.0,
       "2026-Q1": 108483000.0
     },
     "eps": {
       "2025-Q1": 7.0,
       "2025-Q2": 8.0,
       "2025-Q3": 11.0,
+      "2025-Q4": 12.0,
       "2026-Q1": 11.0
     },
     "net_income": {
       "2025-Q1": 16060000.0,
       "2025-Q2": 17306000.0,
       "2025-Q3": 23469000.0,
+      "2025-Q4": 27698000.0,
       "2026-Q1": 23173000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 775525236736,
-    "enterprise_value": 473772851200,
+    "market_cap": 793051201536,
+    "enterprise_value": 500439515136,
     "shares_outstanding": 2190749200
   },
   "akumulasi": {
-    "score": 7.0,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.1919,
-    "vol_trend": 1.197,
-    "price_chg_20d": -3.85
+    "score": 6.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.2275,
+    "vol_trend": 1.91,
+    "price_chg_20d": -1.63
   },
   "neraca": {
     "aset": 394807.0,

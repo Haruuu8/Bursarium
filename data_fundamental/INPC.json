@@ -3,20 +3,20 @@
   "nama": "PT Bank Artha Graha Internasional Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 112.0,
-  "update": "2026-11-09 16:41",
+  "harga": 114.0,
+  "update": "2026-11-10 22:51",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.5766084214510482,
-    "ps": 1406.9946799252095,
-    "roe": 3.326985187291522e-05,
-    "eps": 0.0064623118066666095,
+    "pb": 0.5869050004055312,
+    "ps": 1441.6371861703524,
+    "roe": -0.00012667109789492897,
+    "eps": -0.02460450183597688,
     "eps_annualized": 8.28,
     "de": 5.646816427247115,
-    "margin_net": 0.08118248510712311,
+    "margin_net": -0.3111470595959735,
     "current_ratio": null,
-    "roa": 5.0053814840640125e-06,
+    "roa": -1.9057408803358787e-05,
     "bv": 194.23927197967288,
     "pcf": null,
     "div_yield": null,
@@ -25,18 +25,21 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": 439960000.0,
+      "2025-Q4": 429332000.0,
       "2026-Q1": 397445000.0,
       "2026-Q2": 393100000.0,
       "2026-Q3": 379325000.0
     },
     "eps": {
       "2025-Q3": 0.25,
+      "2025-Q4": -30.81,
       "2026-Q1": 2.9,
       "2026-Q2": 0.82,
       "2026-Q3": 2.49
     },
     "net_income": {
       "2025-Q3": 5084000.0,
+      "2025-Q4": -623193000.0,
       "2026-Q1": 58593000.0,
       "2026-Q2": 16694000.0,
       "2026-Q3": 50319000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2265022201856,
-    "enterprise_value": 1204782891008,
+    "market_cap": 2305468923904,
+    "enterprise_value": 1225006252032,
     "shares_outstanding": 20223412907
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2693,
-    "vol_trend": 0.701,
-    "price_chg_20d": -25.0
+    "cmf": -0.3166,
+    "vol_trend": 0.583,
+    "price_chg_20d": -24.0
   },
   "neraca": {
     "aset": 26109898.0,

@@ -1,32 +1,33 @@
 {
   "kode": "TOTO",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 230.0,
-  "update": "2026-11-09 17:14",
+  "nama": "PT Surya Toto Indonesia Tbk",
+  "sektor": "Industrials",
+  "industri": "Building Products & Equipment",
+  "harga": 232.0,
+  "update": "2026-11-10 23:25",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.9176881816964636,
-    "ps": -0.0019761804359285776,
-    "roe": 92972.13886594189,
+    "pb": 0.9256680789286067,
+    "ps": 1.117802303387258,
+    "roe": 95080.13787158414,
     "eps": null,
     "eps_annualized": 19.666666666666664,
     "de": 0.3556442595201012,
-    "margin_net": -200.20931464286863,
+    "margin_net": 114815.2340331829,
     "current_ratio": 4.608117001838479,
-    "roa": 68581.5162886863,
+    "roa": 70136.49576861894,
     "bv": 250.62979407102713,
-    "pcf": null,
-    "div_yield": 5413153.946536906,
-    "payout_ratio": 63306376.66288924
+    "pcf": 1.454250723006345e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 5.76935002679e+17,
       "2025-Q2": -5.7573047531641504e+17,
       "2025-Q3": -1202709909452908.0,
+      "2025-Q4": 536905296768.0,
       "2026-Q1": 4.84483505155e+17,
       "2026-Q2": -4.83453413292809e+17,
       "2026-Q3": -1028486850269695.0
@@ -35,6 +36,7 @@
       "2025-Q1": 8.32,
       "2025-Q2": 8.07,
       "2025-Q3": 8.55,
+      "2025-Q4": 9.09,
       "2026-Q1": 4.4,
       "2026-Q2": 4.12,
       "2026-Q3": 6.23
@@ -43,6 +45,7 @@
       "2025-Q1": 8.5887772176e+16,
       "2025-Q2": 8.321180171e+16,
       "2025-Q3": 8.8299815641e+16,
+      "2025-Q4": 9.3752153962e+16,
       "2026-Q1": 4.5364724302e+16,
       "2026-Q2": 4.2611865364e+16,
       "2026-Q3": 6.4195983042e+16
@@ -50,17 +53,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
+    "market_cap": 2394240057344,
+    "enterprise_value": 2360298700800,
     "shares_outstanding": 10320000000
   },
   "akumulasi": {
     "score": 6.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.4915,
-    "vol_trend": 1.549,
-    "price_chg_20d": -4.96
+    "cmf": 0.4795,
+    "vol_trend": 1.639,
+    "price_chg_20d": -3.33
   },
   "neraca": {
     "aset": 3506373165282.0,
@@ -93,7 +96,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": 164637360128,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 8461928258.0,

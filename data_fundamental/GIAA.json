@@ -3,13 +3,13 @@
   "nama": "PT. Garuda Indonesia (Persero) Tbk",
   "sektor": "Industrials",
   "industri": "Airlines",
-  "harga": 38.0,
-  "update": "2026-11-09 16:32",
+  "harga": 40.0,
+  "update": "2026-11-10 22:44",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.0010202340593771576,
+    "ps": 0.0010739305888180606,
     "roe": 305554623.6136364,
     "eps": -3036.2130378301367,
     "eps_annualized": -0.0006399999999999999,
@@ -18,7 +18,7 @@
     "current_ratio": 0.6091661362189688,
     "roa": -9232525.366707869,
     "bv": -9.93672752165363e-06,
-    "pcf": 0.0017307002873101101,
+    "pcf": 0.0018217897761159054,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -27,6 +27,7 @@
       "2025-Q1": 723563972000000.0,
       "2025-Q2": 824637494000000.0,
       "2025-Q3": -1544362886000000.0,
+      "2025-Q4": 3212765904000000.0,
       "2026-Q1": 762000.0,
       "2026-Q2": 1033000.0,
       "2026-Q3": 912000.0
@@ -48,17 +49,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 12976904994816,
-    "enterprise_value": 15879903379456,
+    "market_cap": 13659900215296,
+    "enterprise_value": 15472811573248,
     "shares_outstanding": 22140085810
   },
   "akumulasi": {
-    "score": 3.1,
+    "score": 3.4,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0926,
-    "vol_trend": 0.353,
-    "price_chg_20d": -25.0
+    "cmf": -0.0718,
+    "vol_trend": 0.392,
+    "price_chg_20d": -18.37
   },
   "neraca": {
     "aset": 7281.0,

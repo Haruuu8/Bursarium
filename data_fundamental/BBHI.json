@@ -3,40 +3,43 @@
   "nama": "PT Allo Bank Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 590.0,
-  "update": "2026-11-09 16:10",
+  "harga": 600.0,
+  "update": "2026-11-10 22:27",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.770581729975224,
-    "ps": -1.4665585941140313e-05,
-    "roe": 69750.57511156316,
+    "pb": 1.8005915898053126,
+    "ps": 0.06874635298856284,
+    "roe": 75658.04121849935,
     "eps": null,
     "eps_annualized": 27.872266666666665,
     "de": 1.1342748780722984,
-    "margin_net": -0.5777383988690011,
+    "margin_net": 2888.614185181533,
     "current_ratio": null,
-    "roa": 32681.158283867666,
+    "roa": 35449.06140995042,
     "bv": 333.22381565987126,
-    "pcf": 4.0376689301640605,
-    "div_yield": 2302896.754196937,
-    "payout_ratio": 48747706.8594897
+    "pcf": 4.10610399677701,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": -8.512357172646711e+17,
+      "2025-Q4": -1343967589504233.0,
       "2026-Q1": 4.86785378024e+17,
       "2026-Q2": 4.86972979824e+17,
       "2026-Q3": -9.722300507607e+17
     },
     "eps": {
       "2025-Q3": 2.41,
+      "2025-Q4": 3.15,
       "2026-Q1": 19.21,
       "2026-Q2": 2.39,
       "2026-Q3": -0.69
     },
     "net_income": {
       "2025-Q3": 1.52806509531e+17,
+      "2025-Q4": 1.9438359909e+17,
       "2026-Q1": 1.04062237589e+17,
       "2026-Q2": 1.29611651392e+17,
       "2026-Q3": 1.04428200151e+17
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 12461457539072,
+    "market_cap": 12672668008448,
     "enterprise_value": 12570745372672,
     "shares_outstanding": 21121113642
   },
   "akumulasi": {
-    "score": 2.5,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1526,
-    "vol_trend": 0.234,
-    "price_chg_20d": -25.79
+    "score": 4.0,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0364,
+    "vol_trend": 0.379,
+    "price_chg_20d": -22.08
   },
   "neraca": {
     "aset": 15021150547939.0,

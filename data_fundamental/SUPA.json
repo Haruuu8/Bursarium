@@ -3,13 +3,13 @@
   "nama": "PT Super Bank Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Banks - Regional",
-  "harga": 332.0,
-  "update": "2026-11-09 15:56",
+  "harga": 322.0,
+  "update": "2026-11-10 22:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 28.16742081447964,
-    "pb": 1.3361212435706835,
-    "ps": 3.593340253562429,
+    "pe": 27.319004524886882,
+    "pb": 1.295876627800482,
+    "ps": 3.4851071133948857,
     "roe": 3.560465909811361e-05,
     "eps": 11.786666666666665,
     "eps_annualized": 11.786666666666665,
@@ -18,7 +18,7 @@
     "current_ratio": null,
     "roa": 1.090556611564688e-05,
     "bv": 248.48044411954336,
-    "pcf": 3.438010997238608,
+    "pcf": 3.334456449129011,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -41,17 +41,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 11253809414144,
-    "enterprise_value": 11828236124160,
+    "market_cap": 10914839396352,
+    "enterprise_value": 11245810876416,
     "shares_outstanding": 33897017650
   },
   "akumulasi": {
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.1344,
-    "vol_trend": 1.267,
-    "price_chg_20d": -33.06
+    "cmf": 0.1668,
+    "vol_trend": 1.273,
+    "price_chg_20d": -31.78
   },
   "neraca": {
     "aset": 27498710.0,

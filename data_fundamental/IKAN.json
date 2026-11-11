@@ -4,7 +4,7 @@
   "sektor": "Consumer Defensive",
   "industri": "Farm Products",
   "harga": 56.0,
-  "update": "2026-11-09 17:41",
+  "update": "2026-11-10 23:53",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
@@ -25,30 +25,33 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": 2.8916574774e+16,
+      "2025-Q4": 2.7090040052e+16,
       "2026-Q1": 2.8576627693e+16
     },
     "eps": {
       "2025-Q3": 0.14,
+      "2025-Q4": -0.06,
       "2026-Q1": -0.9
     },
     "net_income": {
       "2025-Q3": 117218440000000.0,
+      "2025-Q4": 15606104000000.0,
       "2026-Q1": -747374713000000.0
     },
     "note": "standalone"
   },
   "statistik": {
     "market_cap": 46666645504,
-    "enterprise_value": 82175533056,
+    "enterprise_value": 83008864256,
     "shares_outstanding": 833333000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4337,
-    "vol_trend": 0.732,
-    "price_chg_20d": -32.1
+    "cmf": -0.4507,
+    "vol_trend": 0.723,
+    "price_chg_20d": -30.0
   },
   "neraca": {
     "aset": 121128886762.0,

@@ -3,40 +3,43 @@
   "nama": "PT Habco Trans Maritima Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 374.0,
-  "update": "2026-11-09 15:13",
+  "harga": 378.0,
+  "update": "2026-11-10 21:49",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 1.7288213091559517,
-    "ps": 3.2141227902265302e-06,
-    "roe": 78532.78130988248,
+    "pb": 1.7473113766335553,
+    "ps": 3.4399006445746366e-06,
+    "roe": 42266.42495063434,
     "eps": null,
     "eps_annualized": 16.84,
     "de": 0.12909199184074363,
-    "margin_net": 0.14600352323931237,
+    "margin_net": 0.08320915457648514,
     "current_ratio": 5.089818061963687,
-    "roa": 69553.92640935442,
+    "roa": 37433.99586222195,
     "bv": 216.3323635700644,
-    "pcf": 1.568061888996629e-05,
-    "div_yield": 498037.6856165799,
-    "payout_ratio": 11060931.972719766
+    "pcf": 1.5848326043869673e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 2.44837654485e+17,
+      "2025-Q4": 1.8449476555100006e+17,
       "2026-Q1": 2.27702405472e+17,
       "2026-Q2": 2.9225788921e+17,
       "2026-Q3": 3.19690798618e+17
     },
     "eps": {
       "2025-Q1": 6.87,
+      "2025-Q4": -1.92,
       "2026-Q1": 0.71,
       "2026-Q2": 5.23,
       "2026-Q3": 6.69
     },
     "net_income": {
       "2025-Q1": 4.8071645798e+16,
+      "2025-Q4": -2.5049221214e+16,
       "2026-Q1": 5982030769000000.0,
       "2026-Q2": 4.5617818624e+16,
       "2026-Q3": 5.8667682899e+16
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 3485679747072,
-    "enterprise_value": 3052249022464,
+    "market_cap": 3522959769600,
+    "enterprise_value": 3108169056256,
     "shares_outstanding": 9320000000
   },
   "akumulasi": {
-    "score": 6.5,
-    "label": "AKUMULASI",
-    "tipe": "ACCUMULATION",
-    "cmf": 0.2498,
-    "vol_trend": 0.773,
-    "price_chg_20d": -32.73
+    "score": 5.9,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": 0.0902,
+    "vol_trend": 0.502,
+    "price_chg_20d": -37.52
   },
   "neraca": {
     "aset": 2276495178117.0,

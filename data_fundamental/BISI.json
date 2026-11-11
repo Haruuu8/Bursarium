@@ -4,57 +4,60 @@
   "sektor": "Basic Materials",
   "industri": "Agricultural Inputs",
   "harga": 505.0,
-  "update": "2026-11-09 16:15",
+  "update": "2026-11-10 22:30",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": 0.43507353173452185,
-    "ps": 1036.19004888218,
-    "roe": 3.9575896639164656e-05,
-    "eps": 0.04593666666666667,
+    "ps": 857.8087205457363,
+    "roe": 5.962661214127972e-05,
+    "eps": 0.06921,
     "eps_annualized": 29.333333333333332,
     "de": 0.08007420660105624,
-    "margin_net": 0.09425567698775791,
+    "margin_net": 0.1175622604930107,
     "current_ratio": 12.5395832295859,
-    "roa": 3.656289183528684e-05,
+    "roa": 5.508709986039189e-05,
     "bv": 1160.7233333333334,
     "pcf": 6.390652492477348e-06,
-    "div_yield": 5152.013201320132,
-    "payout_ratio": 88696.59090909091
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 317393000.0,
       "2025-Q2": 309530000.0,
       "2025-Q3": 448081000.0,
+      "2025-Q4": 621434000.0,
       "2026-Q1": 387083000.0
     },
     "eps": {
       "2025-Q1": 10.0,
       "2025-Q2": 0.0,
       "2025-Q3": 20.0,
+      "2025-Q4": 33.43,
       "2026-Q1": 15.67
     },
     "net_income": {
       "2025-Q1": 29671000.0,
       "2025-Q2": 824000.0,
       "2025-Q3": 60308000.0,
+      "2025-Q4": 99491000.0,
       "2026-Q1": 47007000.0
     },
     "note": "standalone"
   },
   "statistik": {
     "market_cap": 1515000037376,
-    "enterprise_value": 1218034008064,
+    "enterprise_value": 1188033986560,
     "shares_outstanding": 3000000000
   },
   "akumulasi": {
-    "score": 1.5,
+    "score": 1.7,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1529,
-    "vol_trend": 1.216,
-    "price_chg_20d": -26.95
+    "cmf": -0.1188,
+    "vol_trend": 1.379,
+    "price_chg_20d": -27.86
   },
   "neraca": {
     "aset": 3769122.0,

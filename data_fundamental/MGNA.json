@@ -3,20 +3,20 @@
   "nama": "PT Magna Investama Mandiri Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 124.0,
-  "update": "2026-11-09 16:55",
+  "harga": 128.0,
+  "update": "2026-11-10 23:02",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 8.562066547884274e-06,
-    "roe": -0.06900423820605657,
+    "ps": 9.545910781365287e-06,
+    "roe": -0.1669074974770603,
     "eps": null,
     "eps_annualized": -1.3866666666666667,
     "de": 2.9677231778683826,
-    "margin_net": -0.04000820221752076,
+    "margin_net": -0.1045200488532005,
     "current_ratio": 0.3191957550656067,
-    "roa": -0.016018523534973187,
+    "roa": -0.038745615428953495,
     "bv": 8396849.265003664,
     "pcf": null,
     "div_yield": null,
@@ -25,18 +25,21 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": 1.5298909677e+16,
+      "2025-Q4": 1.1636659931e+16,
       "2026-Q1": 7878746125000000.0,
       "2026-Q2": 1.1127035667e+16,
       "2026-Q3": 1.5097670633e+16
     },
     "eps": {
       "2025-Q3": 0.83,
+      "2025-Q4": -0.73,
       "2026-Q1": -1.38,
       "2026-Q2": -0.02,
       "2026-Q3": 0.36
     },
     "net_income": {
       "2025-Q3": 1571827127000000.0,
+      "2025-Q4": -1232431958000000.0,
       "2026-Q1": -4700783147000000.0,
       "2026-Q2": -77962653000000.0,
       "2026-Q3": 1230418980000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 422986317824,
-    "enterprise_value": 487127678976,
+    "market_cap": 436631044096,
+    "enterprise_value": 490538860544,
     "shares_outstanding": 3411179935
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2714,
-    "vol_trend": 0.381,
-    "price_chg_20d": -34.92
+    "cmf": -0.149,
+    "vol_trend": 0.312,
+    "price_chg_20d": -20.0
   },
   "neraca": {
     "aset": 123388381500.0,

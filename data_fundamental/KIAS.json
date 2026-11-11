@@ -1,24 +1,24 @@
 {
   "kode": "KIAS",
-  "nama": "PT Keramika Indonesia Assosiasi Tbk",
-  "sektor": "Industrials",
-  "industri": "Building Products & Equipment",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
   "harga": 21.0,
-  "update": "2026-11-09 16:47",
+  "update": "2026-11-10 22:56",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 12.609993048608874,
-    "ps": 14.444131555693659,
-    "roe": -0.028082489841361344,
-    "eps": -0.04676705882352941,
+    "pb": null,
+    "ps": 495.57178423236513,
+    "roe": -0.010225044223280943,
+    "eps": -0.00048475795593840216,
     "eps_annualized": -1.2715296849532227,
     "de": 0.27235606946869895,
-    "margin_net": -0.032167121434282034,
+    "margin_net": -0.011439636435487057,
     "current_ratio": 1.684248731175886,
-    "roa": -0.020683203378242677,
-    "bv": 1.6653458823529412,
-    "pcf": 2.4037167125876295e-06,
+    "roa": -0.007530908776833481,
+    "bv": 0.04740888600116551,
+    "pcf": null,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -27,6 +27,7 @@
       "2025-Q1": 143621000.0,
       "2025-Q2": 154250000.0,
       "2025-Q3": 149672000.0,
+      "2025-Q4": 164399000.0,
       "2026-Q1": 140411000.0,
       "2026-Q2": 160886000.0,
       "2026-Q3": 166929000.0
@@ -35,6 +36,7 @@
       "2025-Q1": -1.03,
       "2025-Q2": 1.03,
       "2025-Q3": 0.0,
+      "2025-Q4": -0.7,
       "2026-Q1": -0.0,
       "2026-Q2": -0.02,
       "2026-Q3": -0.94
@@ -43,6 +45,7 @@
       "2025-Q1": -15354000.0,
       "2025-Q2": 3554000.0,
       "2025-Q3": -5639000.0,
+      "2025-Q4": 7000000.0,
       "2026-Q1": -14973000.0,
       "2026-Q2": -14148000.0,
       "2026-Q3": 14884000.0
@@ -50,9 +53,9 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 313511084032,
-    "enterprise_value": 382478090240,
-    "shares_outstanding": 425000000
+    "market_cap": null,
+    "enterprise_value": null,
+    "shares_outstanding": 14929100000
   },
   "akumulasi": {
     "score": 5.0,
@@ -93,7 +96,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": 3712999936,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 12192.0,

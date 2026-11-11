@@ -3,13 +3,13 @@
   "nama": "PT Bahtera Bumi Raya Tbk",
   "sektor": "Industrials",
   "industri": "Marine Shipping",
-  "harga": 785.0,
-  "update": "2026-11-09 17:39",
+  "harga": 805.0,
+  "update": "2026-11-10 23:51",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 66.6383701188455,
+    "pe": 68.33616298811545,
     "pb": null,
-    "ps": 2.158651787051357e-06,
+    "ps": 2.2136492848106274e-06,
     "roe": 1.7046113384973398,
     "eps": 11.78,
     "eps_annualized": 11.78,
@@ -18,7 +18,7 @@
     "current_ratio": 1.9159567973528393,
     "roa": 0.031229513105782956,
     "bv": 3458150.8150007385,
-    "pcf": 0.0002763348631784453,
+    "pcf": 0.00028337524185815096,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -29,17 +29,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 624749379584,
-    "enterprise_value": 527459975168,
+    "market_cap": 640666566656,
+    "enterprise_value": 591128690688,
     "shares_outstanding": 795859095
   },
   "akumulasi": {
-    "score": 2.1,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.09,
-    "vol_trend": 1.502,
-    "price_chg_20d": -17.61
+    "score": 3.7,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.0223,
+    "vol_trend": 1.51,
+    "price_chg_20d": -1.83
   },
   "neraca": {
     "aset": 150224329022.0,

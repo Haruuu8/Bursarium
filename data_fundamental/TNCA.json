@@ -3,20 +3,20 @@
   "nama": "PT Trimuda Nuansa Citra Tbk",
   "sektor": "Industrials",
   "industri": "Integrated Freight & Logistics",
-  "harga": 137.0,
-  "update": "2026-11-09 17:27",
+  "harga": 138.0,
+  "update": "2026-11-10 23:39",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 6.833840589179297e-07,
-    "roe": 0.00432758922265704,
+    "ps": 6.794195429821805e-07,
+    "roe": -0.03622758693208175,
     "eps": null,
     "eps_annualized": -0.2533333333333333,
     "de": 0.42669600489195325,
-    "margin_net": 0.0021865574434633897,
+    "margin_net": -0.018066288435858405,
     "current_ratio": 1.9947042208203583,
-    "roa": 0.0030335430986063562,
+    "roa": -0.02539472687047307,
     "bv": 101290935.90266578,
     "pcf": null,
     "div_yield": null,
@@ -25,18 +25,21 @@
   "quarterly": {
     "revenue": {
       "2025-Q3": 1.9317376957e+16,
+      "2025-Q4": 2.0431195724e+16,
       "2026-Q1": 1.81220139e+16,
       "2026-Q2": 2.4934604561e+16,
       "2026-Q3": 2.2153407945e+16
     },
     "eps": {
       "2025-Q3": 0.63,
+      "2025-Q4": -3.48,
       "2026-Q1": -7.47,
       "2026-Q2": 4.92,
       "2026-Q3": 2.36
     },
     "net_income": {
       "2025-Q3": 265065617000000.0,
+      "2025-Q4": -1466977427000000.0,
       "2026-Q1": -3145422329000000.0,
       "2026-Q2": 2069205685000000.0,
       "2026-Q3": 995975050000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 57764679680,
-    "enterprise_value": 55416754176,
+    "market_cap": 58186321920,
+    "enterprise_value": 57524957184,
     "shares_outstanding": 421640000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.4315,
-    "vol_trend": 0.608,
-    "price_chg_20d": -24.0
+    "cmf": -0.3601,
+    "vol_trend": 0.662,
+    "price_chg_20d": -18.34
   },
   "neraca": {
     "aset": 60926783300.0,

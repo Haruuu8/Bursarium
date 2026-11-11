@@ -3,13 +3,13 @@
   "nama": "PT Estee Gold Feet Tbk",
   "sektor": "Consumer Defensive",
   "industri": "Household & Personal Products",
-  "harga": 800.0,
-  "update": "2026-11-09 15:15",
+  "harga": 815.0,
+  "update": "2026-11-10 21:49",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.10720146954665286,
+    "ps": 0.10921149710065259,
     "roe": 1.1619072997777992e-05,
     "eps": 0.4702352372187503,
     "eps_annualized": 0.00048,
@@ -18,9 +18,9 @@
     "current_ratio": 3.2398376808312963,
     "roa": 1.0041852362279437e-05,
     "bv": 20235.488550105383,
-    "pcf": 0.000389299995889543,
-    "div_yield": 99.2218407741651,
-    "payout_ratio": 165369734.6236085
+    "pcf": 0.0003965993708124719,
+    "div_yield": 97.39567192556083,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -29,17 +29,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 2039061151744,
-    "enterprise_value": 2024556462080,
+    "market_cap": 2077293543424,
+    "enterprise_value": 1935347548160,
     "shares_outstanding": 2548826428
   },
   "akumulasi": {
     "score": 6.5,
     "label": "AKUMULASI",
     "tipe": "ACCUMULATION",
-    "cmf": 0.702,
+    "cmf": 0.7089,
     "vol_trend": 0.292,
-    "price_chg_20d": -41.97
+    "price_chg_20d": -36.58
   },
   "neraca": {
     "aset": 59677635.0,

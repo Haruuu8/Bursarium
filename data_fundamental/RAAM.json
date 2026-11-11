@@ -1,22 +1,22 @@
 {
   "kode": "RAAM",
-  "nama": null,
-  "sektor": null,
-  "industri": null,
-  "harga": 124.0,
-  "update": "2026-11-09 15:31",
+  "nama": "PT Tripar Multivision Plus Tbk",
+  "sektor": "Communication Services",
+  "industri": "Entertainment",
+  "harga": 123.0,
+  "update": "2026-11-10 21:57",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": 0.6873757573768419,
-    "ps": 3.758521214027388e-06,
-    "roe": -77066.6263391202,
+    "pb": 0.6818324044947706,
+    "ps": 3.6916232653053943e-06,
+    "roe": -82365.36585294019,
     "eps": null,
     "eps_annualized": -13.159999999999998,
     "de": 0.24984129421893717,
-    "margin_net": -0.4213947711721609,
+    "margin_net": -0.44594815211725025,
     "current_ratio": 0.9202686696238523,
-    "roa": -61657.320687997526,
+    "roa": -65896.58866903179,
     "bv": 180.39623694790728,
     "pcf": null,
     "div_yield": null,
@@ -24,19 +24,28 @@
   },
   "quarterly": {
     "revenue": {
+      "2025-Q1": 4.9752254691e+16,
+      "2025-Q2": 6.2362282231e+16,
       "2025-Q3": 3.3307305571e+16,
+      "2025-Q4": 3.5535204586e+16,
       "2026-Q1": 4.819977995e+16,
       "2026-Q2": 8.0377390791e+16,
       "2026-Q3": 6.290842278e+16
     },
     "eps": {
+      "2025-Q1": 0.98,
+      "2025-Q2": 0.07,
       "2025-Q3": -4.03,
+      "2025-Q4": -4.99,
       "2026-Q1": -1.32,
       "2026-Q2": -8.19,
       "2026-Q3": -0.36
     },
     "net_income": {
+      "2025-Q1": 6650846038000000.0,
+      "2025-Q2": 536625095000000.0,
       "2025-Q3": -2.748202081e+16,
+      "2025-Q4": -3.3994973944e+16,
       "2026-Q1": -8966317590000000.0,
       "2026-Q2": -5.5828022528e+16,
       "2026-Q3": -2450191346000000.0
@@ -44,17 +53,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": null,
-    "enterprise_value": null,
+    "market_cap": 838075285504,
+    "enterprise_value": 1051029995520,
     "shares_outstanding": 6813620000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3955,
-    "vol_trend": 0.374,
-    "price_chg_20d": -25.3
+    "cmf": -0.41,
+    "vol_trend": 0.375,
+    "price_chg_20d": -22.15
   },
   "neraca": {
     "aset": 1536339095131.0,
@@ -87,7 +96,7 @@
     "eps_diluted": -9.87
   },
   "arus_kas": {
-    "arus_kas_operasi": null,
+    "arus_kas_operasi": -13117429760,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 17695709257.0,

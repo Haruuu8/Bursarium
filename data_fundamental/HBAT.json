@@ -3,13 +3,13 @@
   "nama": "PT Minahasa Membangun Hebat Tbk",
   "sektor": "Real Estate",
   "industri": "Real Estate - Development",
-  "harga": 350.0,
-  "update": "2026-11-09 15:35",
+  "harga": 336.0,
+  "update": "2026-11-10 22:01",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 165.0943396226415,
+    "pe": 158.49056603773585,
     "pb": null,
-    "ps": 1.6884371098262623e-05,
+    "ps": 1.6208996254332118e-05,
     "roe": 0.013352460556699162,
     "eps": 2.12,
     "eps_annualized": 2.12,
@@ -18,7 +18,7 @@
     "current_ratio": 90.17050932783185,
     "roa": 0.013096015966631912,
     "bv": 79033180.91497903,
-    "pcf": 0.00012936592719224347,
+    "pcf": 0.00012419129010455372,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -29,17 +29,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 364259278848,
-    "enterprise_value": 366840774656,
+    "market_cap": 349688922112,
+    "enterprise_value": 346025951232,
     "shares_outstanding": 1040740800
   },
   "akumulasi": {
-    "score": 3.3,
+    "score": 3.2,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.0165,
-    "vol_trend": 2.3,
-    "price_chg_20d": -10.05
+    "cmf": -0.0199,
+    "vol_trend": 1.653,
+    "price_chg_20d": -14.29
   },
   "neraca": {
     "aset": 83863725258.0,

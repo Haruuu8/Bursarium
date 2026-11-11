@@ -3,12 +3,12 @@
   "nama": "PT Lippo General Insurance Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 600.0,
-  "update": "2026-11-09 16:50",
+  "harga": 610.0,
+  "update": "2026-11-10 22:58",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 7.894736842105263,
-    "pb": 1.540183251573448,
+    "pe": 8.026315789473685,
+    "pb": 1.5658529724330055,
     "ps": null,
     "roe": 146780.9287552194,
     "eps": 76.0,
@@ -18,9 +18,9 @@
     "current_ratio": null,
     "roa": 44542.58283212013,
     "bv": 389.564033622,
-    "pcf": 5.2979525249926075e-06,
-    "div_yield": 1666361.111111111,
-    "payout_ratio": 13155482.45614035
+    "pcf": 5.386251733742484e-06,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -28,6 +28,7 @@
       "2025-Q1": 14.0,
       "2025-Q2": 21.0,
       "2025-Q3": 4.0,
+      "2025-Q4": 9.0,
       "2026-Q1": 16.0,
       "2026-Q2": 24.0,
       "2026-Q3": 17.0
@@ -36,6 +37,7 @@
       "2025-Q1": 4.3446565734e+16,
       "2025-Q2": 6.2259956447e+16,
       "2025-Q3": 1.2229931124e+16,
+      "2025-Q4": 2.6794999787e+16,
       "2026-Q1": 4.8836221743e+16,
       "2026-Q2": 6.9810746029e+16,
       "2026-Q3": 5.2894744222e+16
@@ -43,7 +45,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1799999979520,
+    "market_cap": 1830000001024,
     "enterprise_value": 1787616952320,
     "shares_outstanding": 3000000000
   },
@@ -51,9 +53,9 @@
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3441,
-    "vol_trend": 3.99,
-    "price_chg_20d": -6.25
+    "cmf": -0.3474,
+    "vol_trend": 3.791,
+    "price_chg_20d": -6.15
   },
   "neraca": {
     "aset": 3851184666155.0,

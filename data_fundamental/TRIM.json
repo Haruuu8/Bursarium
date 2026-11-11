@@ -3,11 +3,11 @@
   "nama": "PT Trimegah Sekuritas Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Capital Markets",
-  "harga": 570.0,
-  "update": "2026-11-09 17:14",
+  "harga": 580.0,
+  "update": "2026-11-10 23:25",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
-    "pe": 6.368670491245721,
+    "pe": 6.480401552495647,
     "pb": null,
     "ps": null,
     "roe": 0.18823033751276286,
@@ -19,8 +19,8 @@
     "roa": 0.05140355459339244,
     "bv": 356613.43859451707,
     "pcf": null,
-    "div_yield": 987.0935056403757,
-    "payout_ratio": 6286.473281472153
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {},
@@ -28,6 +28,7 @@
       "2025-Q1": 16.11,
       "2025-Q2": 6.13,
       "2025-Q3": 30.16,
+      "2025-Q4": 31.08,
       "2026-Q1": 19.27,
       "2026-Q2": 20.21,
       "2026-Q3": 27.65
@@ -36,6 +37,7 @@
       "2025-Q1": 114496272000000.0,
       "2025-Q2": 43568066000000.0,
       "2025-Q3": 214409670000000.0,
+      "2025-Q4": 220983061000000.0,
       "2026-Q1": 136977034000000.0,
       "2026-Q2": 143675146000000.0,
       "2026-Q3": 196562909000000.0
@@ -43,17 +45,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 4052301119488,
+    "market_cap": 4123394048000,
     "enterprise_value": 3080542224384,
     "shares_outstanding": 7109300000
   },
   "akumulasi": {
-    "score": 2.5,
+    "score": 3.0,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1676,
-    "vol_trend": 0.179,
-    "price_chg_20d": -23.49
+    "cmf": -0.0998,
+    "vol_trend": 0.19,
+    "price_chg_20d": -22.15
   },
   "neraca": {
     "aset": 9283698234.0,

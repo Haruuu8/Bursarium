@@ -3,20 +3,20 @@
   "nama": "PT Danasupra Erapacific Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 64.0,
-  "update": "2026-11-09 16:24",
+  "harga": 70.0,
+  "update": "2026-11-10 22:37",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.2336786322282794e-05,
-    "roe": -0.9465242733710932,
+    "ps": 1.9615104016978757e-05,
+    "roe": -0.8949440873091665,
     "eps": null,
     "eps_annualized": -42.18666666666667,
     "de": 0.1303087340270991,
-    "margin_net": -6.346277051579528,
+    "margin_net": -11.630340195764154,
     "current_ratio": 4.450476555478553,
-    "roa": -0.8046130720130587,
+    "roa": -0.7607662387834361,
     "bv": 34782853.14497042,
     "pcf": null,
     "div_yield": null,
@@ -24,19 +24,16 @@
   },
   "quarterly": {
     "revenue": {
-      "2025-Q3": 1697590055000000.0,
       "2026-Q1": 1334850000000000.0,
       "2026-Q2": 302800000000000.0,
       "2026-Q3": 171670000000000.0
     },
     "eps": {
-      "2025-Q3": -2.1,
       "2026-Q1": -1.41,
       "2026-Q2": -3.64,
       "2026-Q3": -26.59
     },
     "net_income": {
-      "2025-Q3": -1212815681000000.0,
       "2026-Q1": -815376221000000.0,
       "2026-Q2": -2368818652000000.0,
       "2026-Q3": -1.785881225e+16
@@ -44,17 +41,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 43264000000,
-    "enterprise_value": 46466355200,
+    "market_cap": 47319998464,
+    "enterprise_value": 49170354176,
     "shares_outstanding": 676000000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.1866,
-    "vol_trend": 0.287,
-    "price_chg_20d": -26.67
+    "cmf": -0.1714,
+    "vol_trend": 0.406,
+    "price_chg_20d": -16.67
   },
   "neraca": {
     "aset": 27660279926.0,

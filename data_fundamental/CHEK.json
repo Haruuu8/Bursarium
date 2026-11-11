@@ -3,40 +3,43 @@
   "nama": "PT Diastika Biotekindo Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Distribution",
-  "harga": 100.0,
-  "update": "2026-11-09 15:55",
+  "harga": 101.0,
+  "update": "2026-11-10 22:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.969841248846739e-06,
-    "roe": 0.08226277099369103,
+    "ps": 1.8468136876762042e-06,
+    "roe": 0.0379265215334413,
     "eps": null,
     "eps_annualized": 3.546666666666667,
     "de": 0.09862229014614163,
-    "margin_net": 0.08161045077858449,
+    "margin_net": 0.03492657008869405,
     "current_ratio": 9.070430740746474,
-    "roa": 0.07487811937872499,
+    "roa": 0.03452189335098619,
     "bv": 50362956.25174979,
     "pcf": null,
-    "div_yield": 801454.976342613,
-    "payout_ratio": 22597414.746502247
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 5.3425555152e+16,
+      "2025-Q4": 6.956328393e+16,
       "2026-Q1": 3.7273939501e+16,
       "2026-Q2": 4.5009756784e+16,
       "2026-Q3": 7.3106128351e+16
     },
     "eps": {
       "2025-Q3": 3.49,
+      "2025-Q4": -1.92,
       "2026-Q1": 0.68,
       "2026-Q2": 1.05,
       "2026-Q3": 0.92
     },
     "net_income": {
       "2025-Q3": 8975498215000000.0,
+      "2025-Q4": -209178546000000.0,
       "2026-Q1": 686585057000000.0,
       "2026-Q2": 2813637813000000.0,
       "2026-Q3": 4565796189000000.0
@@ -44,7 +47,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 411333132288,
+    "market_cap": 415446466560,
     "enterprise_value": 372947714048,
     "shares_outstanding": 4113331485
   },
@@ -52,9 +55,9 @@
     "score": 5.5,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.1798,
-    "vol_trend": 1.966,
-    "price_chg_20d": -17.36
+    "cmf": 0.2276,
+    "vol_trend": 2.047,
+    "price_chg_20d": -15.13
   },
   "neraca": {
     "aset": 227590081260.0,

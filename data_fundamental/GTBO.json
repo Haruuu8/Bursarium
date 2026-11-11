@@ -3,13 +3,13 @@
   "nama": "PT Garda Tujuh Buana Tbk",
   "sektor": "Energy",
   "industri": "Thermal Coal",
-  "harga": 200.0,
-  "update": "2026-11-09 16:33",
+  "harga": 198.0,
+  "update": "2026-11-10 22:46",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.03251477390039099,
+    "ps": 0.03218962616138708,
     "roe": -0.2788011614885205,
     "eps": -2559.6864,
     "eps_annualized": -0.00566,
@@ -47,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 499999997952,
-    "enterprise_value": 485000445952,
+    "market_cap": 494999994368,
+    "enterprise_value": 500000456704,
     "shares_outstanding": 2500000000
   },
   "akumulasi": {
-    "score": 5.5,
+    "score": 4.0,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.2027,
-    "vol_trend": 1.283,
-    "price_chg_20d": -9.35
+    "cmf": -0.0324,
+    "vol_trend": 0.619,
+    "price_chg_20d": -22.05
   },
   "neraca": {
     "aset": 45340184.0,

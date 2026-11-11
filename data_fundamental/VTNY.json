@@ -3,22 +3,22 @@
   "nama": "PT Venteny Fortuna International Tbk",
   "sektor": "Industrials",
   "industri": "Staffing & Employment Services",
-  "harga": 39.0,
-  "update": "2026-11-09 15:23",
+  "harga": 37.0,
+  "update": "2026-11-10 21:52",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.4650145509157985e-06,
-    "roe": 0.02995694890087808,
+    "ps": 8.393020422728018e-07,
+    "roe": 0.008276801469112412,
     "eps": null,
     "eps_annualized": 0.31999999999999995,
     "de": 2.3469716967246463,
-    "margin_net": 0.0737829086751213,
+    "margin_net": 0.012310053946486741,
     "current_ratio": null,
-    "roa": 8952.322810044732,
+    "roa": 2473.436090948999,
     "bv": 65566328.032829,
-    "pcf": 1.0596096558773306e-05,
+    "pcf": 1.0052706991656727e-05,
     "div_yield": null,
     "payout_ratio": null
   },
@@ -27,34 +27,37 @@
       "2025-Q1": 8.1282026051e+16,
       "2025-Q2": 2.273054969e+16,
       "2025-Q3": 3.2608686404e+16,
+      "2025-Q4": 1.90693309162e+17,
       "2026-Q1": 3.0163800981e+16
     },
     "eps": {
       "2025-Q1": 0.83,
       "2025-Q2": 0.35,
       "2025-Q3": 0.42,
+      "2025-Q4": -0.59,
       "2026-Q1": 0.36
     },
     "net_income": {
       "2025-Q1": 5228967685000000.0,
       "2025-Q2": 2166710502000000.0,
       "2025-Q3": 2639980100000000.0,
+      "2025-Q4": -3676927474000000.0,
       "2026-Q1": 2270228794000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 244342538240,
-    "enterprise_value": 1118581948416,
+    "market_cap": 231812153344,
+    "enterprise_value": 1131112431616,
     "shares_outstanding": 6265193445
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3272,
-    "vol_trend": 0.462,
-    "price_chg_20d": -32.73
+    "cmf": -0.3742,
+    "vol_trend": 0.467,
+    "price_chg_20d": -30.19
   },
   "neraca": {
     "aset": 1374602697212.0,

@@ -3,13 +3,13 @@
   "nama": "PT Trust Finance Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Credit Services",
-  "harga": 362.0,
-  "update": "2026-11-09 17:15",
+  "harga": 358.0,
+  "update": "2026-11-10 23:26",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 4.599742715011311e-05,
+    "ps": 4.548916828657595e-05,
     "roe": 0.03602148841574938,
     "eps": null,
     "eps_annualized": 17.266666666666666,
@@ -18,9 +18,9 @@
     "current_ratio": null,
     "roa": 0.03440723046006812,
     "bv": 469227395.01125,
-    "pcf": 2.6141234440275094e-05,
-    "div_yield": 16574585.635359116,
-    "payout_ratio": 347490347.4903475
+    "pcf": 2.5852381021045538e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
@@ -44,17 +44,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 289600012288,
-    "enterprise_value": 264050343936,
+    "market_cap": 286399987712,
+    "enterprise_value": 257650343936,
     "shares_outstanding": 800000000
   },
   "akumulasi": {
     "score": 1.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3654,
-    "vol_trend": 2.036,
-    "price_chg_20d": -17.78
+    "cmf": -0.3758,
+    "vol_trend": 2.423,
+    "price_chg_20d": -20.8
   },
   "neraca": {
     "aset": 392993424876.0,

@@ -3,40 +3,43 @@
   "nama": "PT Asia Pramulia Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Packaging & Containers",
-  "harga": 158.0,
-  "update": "2026-11-09 15:54",
+  "harga": 164.0,
+  "update": "2026-11-10 22:16",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 1.3609376328434075e-06,
-    "roe": 0.030503818320004754,
+    "ps": 1.3525414653722328e-06,
+    "roe": 0.04624467193018056,
     "eps": null,
     "eps_annualized": 1.9866666666666666,
     "de": 1.0278092400808019,
-    "margin_net": 0.017171323915984412,
+    "margin_net": 0.02492509841227428,
     "current_ratio": 1.209640299971935,
-    "roa": 0.014867110110726868,
+    "roa": 0.022538969463031053,
     "bv": 65353437.92735988,
-    "pcf": 1.7997115365013353e-05,
-    "div_yield": 405063.29113924055,
-    "payout_ratio": 32214765.100671142
+    "pcf": 1.8680550125710066e-05,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 5.97234784e+16,
+      "2025-Q4": 7.3708678367e+16,
       "2026-Q1": 7.8293741764e+16,
       "2026-Q2": 8.9556073444e+16,
       "2026-Q3": 8.7280223305e+16
     },
     "eps": {
       "2025-Q3": 0.41,
+      "2025-Q4": 2.06,
       "2026-Q1": 1.01,
       "2026-Q2": -0.15,
       "2026-Q3": 0.63
     },
     "net_income": {
       "2025-Q3": 1366257266000000.0,
+      "2025-Q4": 4156142921000000.0,
       "2026-Q1": 2733150934000000.0,
       "2026-Q2": -412446893000000.0,
       "2026-Q3": 1719490418000000.0
@@ -44,17 +47,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 428495994880,
+    "market_cap": 444767993856,
     "enterprise_value": 456280178688,
     "shares_outstanding": 2712000000
   },
   "akumulasi": {
-    "score": 3.0,
+    "score": 3.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2851,
-    "vol_trend": 0.616,
-    "price_chg_20d": -1.91
+    "cmf": -0.1758,
+    "vol_trend": 0.544,
+    "price_chg_20d": 5.13
   },
   "neraca": {
     "aset": 363651825051.0,

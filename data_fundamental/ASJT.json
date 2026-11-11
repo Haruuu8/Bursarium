@@ -3,8 +3,8 @@
   "nama": "PT Asuransi Jasa Tania Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Property & Casualty",
-  "harga": 148.0,
-  "update": "2026-11-09 16:07",
+  "harga": 150.0,
+  "update": "2026-11-10 22:25",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
@@ -19,7 +19,7 @@
     "roa": -0.009669547831389185,
     "bv": 221296906.3692857,
     "pcf": null,
-    "div_yield": 646836.9015444015,
+    "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
@@ -28,6 +28,7 @@
       "2025-Q1": 1.44,
       "2025-Q2": -4.34,
       "2025-Q3": 4.8,
+      "2025-Q4": 2.89,
       "2026-Q1": -6.46,
       "2026-Q2": -1.24,
       "2026-Q3": 3.68
@@ -36,6 +37,7 @@
       "2025-Q1": 2013127675000000.0,
       "2025-Q2": -6020324822000000.0,
       "2025-Q3": 6668093655000000.0,
+      "2025-Q4": 4041041409000000.0,
       "2026-Q1": -9050166337000000.0,
       "2026-Q2": -1724039957000000.0,
       "2026-Q3": 5152131350000000.0
@@ -43,17 +45,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 207199993856,
-    "enterprise_value": 63667998720,
+    "market_cap": 210000003072,
+    "enterprise_value": 62267998208,
     "shares_outstanding": 1400000000
   },
   "akumulasi": {
-    "score": 3.0,
-    "label": "DISTRIBUSI",
-    "tipe": "DISTRIBUTION",
-    "cmf": -0.1012,
-    "vol_trend": 0.253,
-    "price_chg_20d": -8.59
+    "score": 4.2,
+    "label": "NETRAL",
+    "tipe": "NEUTRAL",
+    "cmf": -0.02,
+    "vol_trend": 0.485,
+    "price_chg_20d": -6.25
   },
   "neraca": {
     "aset": 581420666409.0,

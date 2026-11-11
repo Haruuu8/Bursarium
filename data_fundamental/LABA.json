@@ -3,20 +3,20 @@
   "nama": "PT Green Power Group Tbk",
   "sektor": "Basic Materials",
   "industri": "Steel",
-  "harga": 80.0,
-  "update": "2026-11-09 14:56",
+  "harga": 81.0,
+  "update": "2026-11-10 21:40",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 2.5465886165676054e-06,
-    "roe": 0.12623593085264023,
+    "ps": 3.4624031063538613e-06,
+    "roe": 0.3909757122342916,
     "eps": null,
     "eps_annualized": -22.666666666666664,
     "de": 0.9832196350214909,
-    "margin_net": 0.23130203865739804,
+    "margin_net": 0.9619888905025543,
     "current_ratio": 2.802578306855743,
-    "roa": 0.06388064817213787,
+    "roa": 0.19785002374834892,
     "bv": 57560912.132491685,
     "pcf": null,
     "div_yield": null,
@@ -27,34 +27,37 @@
       "2025-Q1": 8743412670000000.0,
       "2025-Q2": 7254821375000000.0,
       "2025-Q3": 1.5302990266e+16,
+      "2025-Q4": -106338017000000.0,
       "2026-Q1": 3361698340000000.0
     },
     "eps": {
       "2025-Q1": 2.0,
       "2025-Q2": -1.0,
       "2025-Q3": 1.0,
+      "2025-Q4": 15.0,
       "2026-Q1": 6.0
     },
     "net_income": {
       "2025-Q1": -1040286452000000.0,
       "2025-Q2": 2694567709000000.0,
       "2025-Q3": 1831655370000000.0,
+      "2025-Q4": 1.5774093531e+16,
       "2026-Q1": 4531668048000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 88272199680,
-    "enterprise_value": 40230223872,
+    "market_cap": 89375604736,
+    "enterprise_value": 82939658240,
     "shares_outstanding": 1103402553
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3437,
-    "vol_trend": 0.303,
-    "price_chg_20d": -29.46
+    "cmf": -0.3954,
+    "vol_trend": 0.319,
+    "price_chg_20d": -29.57
   },
   "neraca": {
     "aset": 125509131551.0,
@@ -87,7 +90,7 @@
     "eps_diluted": null
   },
   "arus_kas": {
-    "arus_kas_operasi": -11866198016,
+    "arus_kas_operasi": -23373328384,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,

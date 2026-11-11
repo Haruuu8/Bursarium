@@ -4,7 +4,7 @@
   "sektor": null,
   "industri": null,
   "harga": 50.0,
-  "update": "2026-11-09 17:25",
+  "update": "2026-11-10 23:37",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
@@ -25,10 +25,12 @@
   "quarterly": {
     "revenue": {},
     "eps": {
-      "2025-Q1": -6.0
+      "2025-Q1": -6.0,
+      "2025-Q4": -20.07
     },
     "net_income": {
-      "2025-Q1": -8462631837000000.0
+      "2025-Q1": -8462631837000000.0,
+      "2025-Q4": -2.7487404343e+16
     },
     "note": "standalone"
   },

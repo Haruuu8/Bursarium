@@ -3,20 +3,20 @@
   "nama": "PT MNC Kapital Indonesia Tbk",
   "sektor": "Financial Services",
   "industri": "Financial Conglomerates",
-  "harga": 18.0,
-  "update": "2026-11-09 16:12",
+  "harga": 19.0,
+  "update": "2026-11-10 22:28",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
-    "pb": null,
-    "ps": 362.0077525836147,
-    "roe": 4.769443842174896e-05,
-    "eps": 0.005058231165576258,
+    "pb": 0.1791524152119276,
+    "ps": 377.4049471652385,
+    "roe": 6.378580246640442e-05,
+    "eps": 0.006764799935451812,
     "eps_annualized": 5.306666666666667,
     "de": 4.7561410107213815,
-    "margin_net": 0.10172882757214774,
+    "margin_net": 0.13437205064329474,
     "current_ratio": null,
-    "roa": 8.026097101790991e-06,
+    "roa": 1.073397782324172e-05,
     "bv": 106.05494755693933,
     "pcf": null,
     "div_yield": null,
@@ -27,6 +27,7 @@
       "2025-Q1": 524837000.0,
       "2025-Q2": 516344000.0,
       "2025-Q3": 522722000.0,
+      "2025-Q4": 549193000.0,
       "2026-Q1": 539098000.0,
       "2026-Q2": 528888000.0,
       "2026-Q3": 528416000.0
@@ -35,6 +36,7 @@
       "2025-Q1": 0.77,
       "2025-Q2": 1.38,
       "2025-Q3": 1.08,
+      "2025-Q4": 2.85,
       "2026-Q1": 1.1,
       "2026-Q2": 1.75,
       "2026-Q3": 1.13
@@ -43,6 +45,7 @@
       "2025-Q1": 32854000.0,
       "2025-Q2": 58908000.0,
       "2025-Q3": 45776000.0,
+      "2025-Q4": 118508000.0,
       "2026-Q1": 46750000.0,
       "2026-Q2": 74816000.0,
       "2026-Q3": 48234000.0
@@ -50,17 +53,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 767139315712,
-    "enterprise_value": 650635182080,
+    "market_cap": 809758162944,
+    "enterprise_value": 1403092336640,
     "shares_outstanding": 42618850927
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3322,
-    "vol_trend": 0.711,
-    "price_chg_20d": -41.94
+    "cmf": -0.3848,
+    "vol_trend": 0.573,
+    "price_chg_20d": -34.48
   },
   "neraca": {
     "aset": 26859381.0,
@@ -93,7 +96,7 @@
     "eps_diluted": 3.98
   },
   "arus_kas": {
-    "arus_kas_operasi": -87238000640,
+    "arus_kas_operasi": -2220854083584,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": null,

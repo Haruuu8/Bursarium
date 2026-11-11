@@ -1,32 +1,33 @@
 {
   "kode": "KKGI",
-  "nama": "PT Resource Alam Indonesia Tbk",
-  "sektor": "Energy",
-  "industri": "Thermal Coal",
-  "harga": 282.0,
-  "update": "2026-11-09 16:47",
+  "nama": null,
+  "sektor": null,
+  "industri": null,
+  "harga": 286.0,
+  "update": "2026-11-10 22:56",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.009592624115720694,
-    "roe": 0.022037055978383166,
-    "eps": 653.4013247698791,
+    "ps": 0.00915513827372084,
+    "roe": 0.031688285685307904,
+    "eps": 939.5614308361754,
     "eps_annualized": 0.0009,
     "de": 0.20213999403923166,
-    "margin_net": 0.022226359238409193,
+    "margin_net": 0.030076275580280365,
     "current_ratio": 4.133761695374248,
-    "roa": 0.018295824247326474,
+    "roa": 0.026308564363868418,
     "bv": 29650.118664254464,
-    "pcf": 0.09400888776946312,
-    "div_yield": 329.1647008684447,
-    "payout_ratio": 103138272.93877934
+    "pcf": null,
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 36719114000000.0,
       "2025-Q2": 34498620000000.0,
       "2025-Q3": 38426005000000.0,
+      "2025-Q4": 43473836000000.0,
       "2026-Q1": 31550198000000.0,
       "2026-Q2": 38789301000000.0
     },
@@ -34,6 +35,7 @@
       "2025-Q1": 0.0,
       "2025-Q2": 0.0,
       "2025-Q3": 0.0,
+      "2025-Q4": 0.0,
       "2026-Q1": 0.0,
       "2026-Q2": 0.0
     },
@@ -41,23 +43,24 @@
       "2025-Q1": 795114000.0,
       "2025-Q2": 234542000.0,
       "2025-Q3": 1025729344000.0,
+      "2025-Q4": 1394787000000.0,
       "2026-Q1": 1090971000000.0,
       "2026-Q2": 1067305000000.0
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1374278778880,
-    "enterprise_value": 1383983742976,
+    "market_cap": null,
+    "enterprise_value": null,
     "shares_outstanding": 4873329400
   },
   "akumulasi": {
     "score": 5.7,
     "label": "NETRAL",
     "tipe": "NEUTRAL",
-    "cmf": 0.0493,
-    "vol_trend": 0.488,
-    "price_chg_20d": -4.7
+    "cmf": 0.0457,
+    "vol_trend": 0.503,
+    "price_chg_20d": -2.72
   },
   "neraca": {
     "aset": 174041893.0,
@@ -90,7 +93,7 @@
     "eps_diluted": 0.00045
   },
   "arus_kas": {
-    "arus_kas_operasi": 14618606,
+    "arus_kas_operasi": null,
     "arus_kas_investasi": null,
     "arus_kas_pendanaan": null,
     "capex": 690456.0,

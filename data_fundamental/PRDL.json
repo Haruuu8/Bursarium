@@ -3,13 +3,13 @@
   "nama": "PT Prodia Diagnostic Line Tbk",
   "sektor": "Healthcare",
   "industri": "Medical Devices",
-  "harga": 103.0,
-  "update": "2026-11-09 15:56",
+  "harga": 102.0,
+  "update": "2026-11-10 22:17",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 0.006267353290665929,
+    "ps": 0.006206505200465289,
     "roe": -0.08500058547453357,
     "eps": -8483.757721804654,
     "eps_annualized": -8.48,
@@ -18,8 +18,8 @@
     "current_ratio": 4.2055673539101255,
     "roa": -0.056042862928906506,
     "bv": 74856.1701761432,
-    "pcf": 8.912313459321378e-06,
-    "div_yield": 25624.071475562152,
+    "pcf": 8.825786144182336e-06,
+    "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
@@ -35,7 +35,7 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 179518701568,
+    "market_cap": 177775804416,
     "enterprise_value": 236723552256,
     "shares_outstanding": 1742900000
   },
@@ -43,9 +43,9 @@
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.2387,
-    "vol_trend": 0.451,
-    "price_chg_20d": -43.1
+    "cmf": -0.2365,
+    "vol_trend": 0.448,
+    "price_chg_20d": -36.65
   },
   "neraca": {
     "aset": 197879898.0,

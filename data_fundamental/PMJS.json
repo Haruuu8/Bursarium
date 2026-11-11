@@ -3,55 +3,58 @@
   "nama": "PT Putra Mandiri Jembar Tbk",
   "sektor": "Consumer Cyclical",
   "industri": "Auto & Truck Dealerships",
-  "harga": 121.0,
-  "update": "2026-11-09 17:39",
+  "harga": 124.0,
+  "update": "2026-11-10 23:51",
   "periode_terbaru": "2026-tw2",
   "rasio_kunci": {
-    "pe": 6.54054054054054,
-    "pb": 0.5948028800349351,
-    "ps": 0.13617938156719883,
-    "roe": 45473.118054826235,
-    "eps": 18.5,
+    "pe": null,
+    "pb": 0.6095500588787764,
+    "ps": 0.13568042113565298,
+    "roe": 70173.45676272688,
+    "eps": null,
     "eps_annualized": 18.5,
     "de": 1.9274953792767875,
-    "margin_net": 20822.027944029964,
+    "margin_net": 15619.987279838539,
     "current_ratio": 1.2389612445712963,
-    "roa": 14499.986486049935,
+    "roa": 22376.169004116855,
     "bv": 203.42873927055163,
-    "pcf": 0.9115942772949979,
+    "pcf": 0.9341957883023119,
     "div_yield": null,
     "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q3": 2406217870083.0,
+      "2025-Q4": 4054034972590.0,
       "2026-Q1": 2423213476707.0,
       "2026-Q2": 3687945132053.0
     },
     "eps": {
       "2025-Q3": 1.88,
+      "2025-Q4": 3.15,
       "2026-Q1": 2.23,
       "2026-Q2": 7.02
     },
     "net_income": {
       "2025-Q3": 2.5760290807e+16,
+      "2025-Q4": 4.3358280832e+16,
       "2026-Q1": 3.0696579615e+16,
       "2026-Q2": 9.6550135707e+16
     },
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1664427622400,
-    "enterprise_value": 572260614144,
+    "market_cap": 1705694330880,
+    "enterprise_value": 558505000960,
     "shares_outstanding": 13755600000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.348,
-    "vol_trend": 0.941,
-    "price_chg_20d": -8.09
+    "cmf": -0.3517,
+    "vol_trend": 1.078,
+    "price_chg_20d": -7.46
   },
   "neraca": {
     "aset": 8775643718318.0,

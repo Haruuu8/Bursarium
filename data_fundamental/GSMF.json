@@ -3,30 +3,31 @@
   "nama": "PT Equity Development Investment Tbk",
   "sektor": "Financial Services",
   "industri": "Insurance - Diversified",
-  "harga": 68.0,
-  "update": "2026-11-09 16:34",
+  "harga": 69.0,
+  "update": "2026-11-10 22:46",
   "periode_terbaru": "2026-tw3",
   "rasio_kunci": {
     "pe": null,
     "pb": null,
-    "ps": 120.0624700664265,
-    "roe": 6.38791189358065e-06,
-    "eps": 0.011276917526917526,
+    "ps": 255.9519900356678,
+    "roe": 2.5720629556127562e-06,
+    "eps": 0.004540598290598291,
     "eps_annualized": -0.005253333333333333,
     "de": 1.2257328119780717,
-    "margin_net": 0.01991080254436906,
+    "margin_net": 0.016843118383060636,
     "current_ratio": null,
-    "roa": 2.811760788434677e-06,
+    "roa": 1.1321423783638857e-06,
     "bv": 1765.3527028527028,
     "pcf": null,
-    "div_yield": 3566.694743165331,
-    "payout_ratio": 21507228.545063056
+    "div_yield": null,
+    "payout_ratio": null
   },
   "quarterly": {
     "revenue": {
       "2025-Q1": 252842000.0,
       "2025-Q2": 266427000.0,
       "2025-Q3": 268716000.0,
+      "2025-Q4": -159089000.0,
       "2026-Q1": 331601000.0,
       "2026-Q2": 61856000.0,
       "2026-Q3": 154218000.0
@@ -35,6 +36,7 @@
       "2025-Q1": -0.0,
       "2025-Q2": 1.33,
       "2025-Q3": -1.33,
+      "2025-Q4": 3.79,
       "2026-Q1": -0.02,
       "2026-Q2": 0.01,
       "2026-Q3": 0.01
@@ -43,6 +45,7 @@
       "2025-Q1": -6398000.0,
       "2025-Q2": 25325000.0,
       "2025-Q3": 22347000.0,
+      "2025-Q4": 12637000.0,
       "2026-Q1": -353000.0,
       "2026-Q2": -20964000.0,
       "2026-Q3": 15225000.0
@@ -50,17 +53,17 @@
     "note": "standalone"
   },
   "statistik": {
-    "market_cap": 1051063418880,
-    "enterprise_value": 455960231936,
+    "market_cap": 1066520215552,
+    "enterprise_value": 440503402496,
     "shares_outstanding": 1441440000
   },
   "akumulasi": {
     "score": 2.5,
     "label": "DISTRIBUSI",
     "tipe": "DISTRIBUTION",
-    "cmf": -0.3363,
-    "vol_trend": 0.19,
-    "price_chg_20d": -25.81
+    "cmf": -0.4022,
+    "vol_trend": 0.2,
+    "price_chg_20d": -25.0
   },
   "neraca": {
     "aset": 5781075.0,
