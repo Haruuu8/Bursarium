@@ -351,7 +351,7 @@ def _load_ohlcv(kode):
         return None
 
     try:
-        df["Date"] = pd.to_datetime(df["Date"])
+        df["Date"] = pd.to_datetime(df["Date"]).dt.normalize()
         df = df.sort_values("Date").reset_index(drop=True)
         for c in ["Open", "High", "Low", "Close"]:
             df[c] = pd.to_numeric(df[c], errors="coerce")
@@ -370,7 +370,7 @@ def simulate_trade(kode, entry, tanggal_signal, max_gap_days=MAX_GAP_DAYS):
 
     try:
         entry = float(entry)
-        sig_dt = pd.Timestamp(tanggal_signal)
+        sig_dt = pd.Timestamp(tanggal_signal).normalize()
     except (ValueError, TypeError):
         return None, "SUSPENDED"
 

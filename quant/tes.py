@@ -1,198 +1,195 @@
-# quant/backtest_valuasi.py
+# quant/bandingkan_rules.py
 import os
 import sys
 import pandas as pd
 import numpy as np
-from datetime import datetime, timedelta
-import yfinance as yf
-import warnings
-warnings.filterwarnings("ignore")
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-PARQUET_FILE = "ohlcv_idx_2026_all.parquet"
+from quant.data_loader import load_panel_from_gabungan
+from quant.data_cleaner import clean_panel
+from quant.feature_engineering import build_features
+from quant.event_detector import detect_events
 
-def load_price_data():
-    print("Memuat data harga lokal (Parquet)...")
-    df = pd.read_parquet(PARQUET_FILE)
-    df["Kode"] = df["Kode"].astype(str).str.strip().str.upper()
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce").dt.normalize()
-    df = df.dropna(subset=["Date"])
-    df.columns = [str(c).strip().lower() for c in df.columns]
-    if 'openprice' in df.columns:
-        df['open'] = df['open'].fillna(df['openprice'])
-    df = df.rename(columns={"date": "Date", "open": "Open", "high": "High", "low": "Low", "close": "Close", "volume": "Volume", "kode": "Kode"})
-    
-    # Ambil daftar saham unik, buang IHSG
-    kodes = [k for k in df["Kode"].unique() if k not in ("IHSG", "JKSE", "^JKSE")]
-    return df, kodes
-
-def get_historical_fund_yf(kode, target_year):
-    """Menarik data fundamental (EPS, BV, ROE, DER) dari tahun tertentu via yfinance"""
+def simulate_trade(df_ohlcv, entry, tanggal_signal, gap_min_pct, gap_max_pct):
     try:
-        t = yf.Ticker(f"{kode}.JK")
-        
-        # Ambil data income statement & balance sheet (tahunan)
-        inc = t.income_stmt
-        bs = t.balance_sheet
-        
-        if inc is None or bs is None or inc.empty or bs.empty:
-            return None
-            
-        # Cari kolom tahun target (misal target_year = 2023)
-        cols = [c for c in inc.columns if str(target_year) in str(c)]
-        if not cols:
-            return None
-            
-        col = cols[0]
-        
-        # EPS
-        try:
-            net_income = inc.loc["Net Income", col]
-            shares = bs.loc["Ordinary Shares Number", col]
-            if shares > 0:
-                eps = net_income / shares
-            else:
-                eps = inc.loc["Basic EPS", col]
-        except:
-            return None
+        entry = float(entry)
+        sig_dt = pd.Timestamp(tanggal_signal).normalize()
+    except (ValueError, TypeError):
+        return None, "SUSPENDED"
 
-        # Book Value per Share
-        try:
-            equity = bs.loc["Stockholders Equity", col]
-            shares = bs.loc["Ordinary Shares Number", col]
-            if shares > 0:
-                bv = equity / shares
-            else:
-                bv = 0
-        except:
-            bv = 0
+    if pd.isna(entry) or entry <= 0:
+        return None, "SUSPENDED"
 
-        # ROE & DER
-        try:
-            roe = (net_income / equity) * 100
-            total_liab = bs.loc["Total Liabilities Net Minority Interest", col]
-            der = total_liab / equity
-        except:
-            roe = 0
-            der = 99
+    m = df_ohlcv.index[df_ohlcv["Date"] == sig_dt].tolist()
+    if m:
+        sig_idx = m[0]
+    else:
+        v = df_ohlcv[df_ohlcv["Date"] >= sig_dt]
+        if len(v) == 0:
+            return None, "SUSPENDED"
+        sig_idx = v.index[0]
 
-        if eps > 0 and bv > 0 and 5.0 < roe < 50.0 and der < 2.0:
-            return {"eps": eps, "bv": bv, "roe": roe, "der": der}
-            
-    except Exception:
-        pass
-    return None
+    entry_idx = sig_idx + 1
+    if entry_idx >= len(df_ohlcv):
+        return None, "PENDING"
 
-def run_scenario(df_price, kodes, target_year, hold_years, label):
-    print(f"\n{'='*70}")
-    print(f"SKENARIO: {label}")
-    print(f"Data Fundamental: Tahun {target_year} | Periode Hold: {hold_years} Tahun")
-    print(f"{'='*70}")
-    
-    buy_date_str = f"{target_year}-12-31"
-    sell_date_str = f"{target_year + hold_years}-12-31"
-    
-    # Cek IHSG
-    ihsg = df_price[df_price["Kode"].isin(["IHSG", "JKSE"])].sort_values("Date")
-    ihsg_buy = ihsg[ihsg["Date"] <= buy_date_str]["Close"].iloc[-1] if not ihsg[ihsg["Date"] <= buy_date_str].empty else 0
-    ihsg_sell = ihsg[ihsg["Date"] <= sell_date_str]["Close"].iloc[-1] if not ihsg[ihsg["Date"] <= sell_date_str].empty else 0
-    
-    if ihsg_buy == 0 or ihsg_sell == 0:
-        print("Data IHSG tidak mencukupi untuk periode ini.")
-        return
-        
-    ihsg_ret = ((ihsg_sell / ihsg_buy) - 1) * 100
-    print(f"Return IHSG ({hold_years} Tahun): {ihsg_ret:+.2f}%")
+    signal_close = df_ohlcv.iloc[sig_idx]["Close"]
+    open_t1 = df_ohlcv.iloc[entry_idx]["Open"]
 
-    winners = []
-    losers = []
-    
-    # Batasi sampel agar tidak terlalu lama (maksimal 150 saham berkapitalisasi besar/menengah)
-    # Kita urutkan kodes berdasarkan likuiditas atau alfabetis sebagai sampel
-    sample_kodes = kodes[:150] 
-    
-    print(f"Menganalisa {len(sample_kodes)} saham...")
-    
-    for i, kode in enumerate(sample_kodes):
-        df_stock = df_price[df_price["Kode"] == kode].sort_values("Date")
-        if df_stock.empty: continue
-        
-        past_buy = df_stock[df_stock["Date"] <= buy_date_str]
-        past_sell = df_stock[df_stock["Date"] <= sell_date_str]
-        if past_buy.empty or past_sell.empty: continue
-        
-        price_buy = past_buy["Close"].iloc[-1]
-        price_sell = past_sell["Close"].iloc[-1]
-        
-        if price_buy <= 0 or price_sell <= 0: continue
-        
-        # Ambil data fundamental historis
-        fund = get_historical_fund_yf(kode, target_year)
-        if not fund: continue
-        
-        eps = fund["eps"]
-        bv = fund["bv"]
-        
-        # --- HITUNG FAIR VALUE (Sama seperti aplikasi Valuation Anda) ---
-        # Graham: sqrt(22.5 * EPS * BV)
-        fv_graham = np.sqrt(22.5 * eps * bv)
-        # PE-based: EPS x Target PE 10 x Diskon 0.9
-        fv_pe = eps * (10 * 0.9) 
-        # PB-based: BV x Target PB 1.5 x Diskon 0.9
-        fv_pb = bv * (1.5 * 0.9)
-        
-        fv_raw = (0.4 * fv_graham) + (0.3 * fv_pe) + (0.3 * fv_pb)
-        fv = fv_raw * 0.85 # Margin of Safety 15%
-        
-        potential = ((fv - price_buy) / price_buy) * 100
-        pe_buy = price_buy / eps
-        
-        # FILTER: Undervalued (Potential > 0) & PE Wajar (2 - 15)
-        if potential > 0 and 2.0 < pe_buy < 15.0:
-            # Buang data anomali
-            if potential > 300: continue
-            
-            ret = ((price_sell / price_buy) - 1) * 100
-            
-            res = {
-                "Kode": kode, "Buy": price_buy, "Sell": price_sell,
-                "FV": round(fv, 0), "Potential": round(potential, 1),
-                "ROE": round(fund["roe"], 1), "Return": round(ret, 1)
-            }
-            
-            if ret > 0: winners.append(res)
-            else: losers.append(res)
+    if pd.isna(open_t1) or open_t1 <= 0:
+        return None, "SUSPENDED"
 
-    total = len(winners) + len(losers)
-    if total == 0:
-        print("Tidak ada saham yang memenuhi kriteria Undervalued & Sehat.")
-        return
-        
-    win_rate = (len(winners) / total) * 100
-    avg_ret = np.mean([w["Return"] for w in winners] + [l["Return"] for l in losers])
-    
-    print(f"Saham Terpilih : {total}")
-    print(f"Win Rate       : {win_rate:.1f}%")
-    print(f"Avg Return     : {avg_ret:+.2f}%")
-    print(f"Alpha vs IHSG  : {avg_ret - ihsg_ret:+.2f}%")
-    
-    print(f"\nTop 3 Cuan:")
-    winners.sort(key=lambda x: x["Return"], reverse=True)
-    for w in winners[:3]:
-        print(f"  {w['Kode']:<5} | Ret: {w['Return']:+6.1f}% | Pot: {w['Potential']:+5.1f}% | ROE: {w['ROE']}%")
+    gap_pct = (open_t1 / signal_close) - 1
+    if gap_pct < gap_min_pct:
+        return None, "SKIP_GAP_LOW"
+    if gap_pct > gap_max_pct:
+        return None, "SKIP_GAP_HIGH"
 
-    print(f"\nTop 3 Buntung:")
-    losers.sort(key=lambda x: x["Return"])
-    for l in losers[:3]:
-        print(f"  {l['Kode']:<5} | Ret: {l['Return']:+6.1f}% | Pot: {l['Potential']:+5.1f}% | ROE: {l['ROE']}%")
+    SL_PCT = -0.03
+    TRAIL_PCT = 0.005
+    MAX_HOLD_DAYS = 30
+
+    sl_price = entry * (1 + SL_PCT)
+    peak = entry
+    end_idx = min(entry_idx + MAX_HOLD_DAYS, len(df_ohlcv))
+
+    for i in range(entry_idx, end_idx):
+        row = df_ohlcv.iloc[i]
+        high = row["High"]
+        low = row["Low"]
+        if pd.isna(high) or pd.isna(low):
+            continue
+
+        if high > peak:
+            peak = high
+
+        trail_price = peak * (1 - TRAIL_PCT)
+
+        if trail_price > entry and low <= trail_price:
+            return (trail_price / entry - 1), "TRAIL"
+
+        if low <= sl_price:
+            return SL_PCT, "SL"
+
+    last_close = float(df_ohlcv.iloc[end_idx - 1]["Close"])
+    if pd.isna(last_close):
+        return None, "SUSPENDED"
+    return last_close / entry - 1, "HOLD"
+
+def load_all_data():
+    print("Memuat data panel...")
+    panel = load_panel_from_gabungan()
+    panel = clean_panel(panel)
+    panel = build_features(panel)
+    panel = detect_events(panel)
+    
+    panel["date"] = pd.to_datetime(panel["date"]).dt.normalize()
+    panel = panel[(panel["open"] > 0) & (panel["close"] > 0)].copy()
+    
+    print("Menghitung MA200 & Forward Return...")
+    panel["ma200"] = panel.groupby("kode")["close"].transform(lambda x: x.rolling(200, min_periods=100).mean())
+    panel["px_vs_ma200"] = (panel["close"] / panel["ma200"]) - 1
+    
+    panel = panel.sort_values(["kode", "date"]).reset_index(drop=True)
+    panel["open_T1"] = panel.groupby("kode")["open"].shift(-1)
+    
+    return panel
+
+def apply_rules(panel):
+    m_a = (panel["ret_1d"] > 0.10) & (panel["ret_5d"] > 0.10) & (panel["px_vs_sma20"] > 0.10)
+    m_a_mid = (panel["ret_1d"] > 0.08) & (panel["ret_5d"] > 0.08) & (panel["px_vs_sma20"] > 0.08)
+    m_b = (panel["ret_1d"] > 0.10) & (panel["ret_5d"] > 0.15) & (panel["range"] > 0.08) & (panel["vol_z_20"] > 1.5)
+    m_ma200 = panel["px_vs_ma200"] > 0.10
+    
+    rule1 = m_b & m_a_mid & m_ma200
+    rule2 = m_a & m_ma200
+    
+    print(f"\n--- TOTAL SINYAL SEBELUM GAP ---")
+    print(f"Rule 1 (B ∩ A_Mid + MA200) : {rule1.sum()} kali")
+    print(f"Rule 2 (A + MA200)         : {rule2.sum()} kali")
+    print(f"--------------------------------\n")
+    
+    return rule1, rule2
+
+def run_backtest(panel, mask, df_ohlcv_map, gap_min, gap_max):
+    df_signals = panel[mask].copy()
+    if df_signals.empty: return 0, 0, 0, {}
+    
+    n_exec = 0
+    n_win = 0
+    tot_ret = 0
+    status_counts = {"TRAIL":0, "SL":0, "HOLD":0, "SKIP_GAP_LOW":0, "SKIP_GAP_HIGH":0, "SUSPENDED":0, "PENDING":0}
+    
+    for _, row in df_signals.iterrows():
+        kode = row["kode"]
+        if kode not in df_ohlcv_map: 
+            status_counts["SUSPENDED"] += 1
+            continue
+        
+        ret, status = simulate_trade(df_ohlcv_map[kode], row["open_T1"], row["date"], gap_min, gap_max)
+        status_counts[status] = status_counts.get(status, 0) + 1
+        
+        if status in ("TRAIL", "SL", "HOLD"):
+            n_exec += 1
+            tot_ret += ret
+            if ret > 0:
+                n_win += 1
+                
+    wr = (n_win / n_exec * 100) if n_exec > 0 else 0
+    avg = (tot_ret / n_exec * 100) if n_exec > 0 else 0
+    
+    return n_exec, wr, avg, status_counts
 
 def main():
-    df_price, kodes = load_price_data()
+    panel = load_all_data()
+    rule1, rule2 = apply_rules(panel)
     
-    # Jalankan 3 Skenario
-    run_scenario(df_price, kodes, 2021, 3, "BULL MARKET (Beli 2021, Jual 2024)")
-    run_scenario(df_price, kodes, 2022, 2, "SIDEWAYS (Beli 2022, Jual 2024)")
-    run_scenario(df_price, kodes, 2023, 1, "BEAR MARKET (Beli 2023, Jual 2024)")
+    print("Memuat data OHLCV individual (CSV)...")
+    df_ohlcv_map = {}
+    kodes = panel["kode"].unique()
+    for k in kodes:
+        path = os.path.join("data_ohlcv_idx", f"{k}.csv")
+        if os.path.exists(path):
+            try:
+                df = pd.read_csv(path)
+                
+                # FIX BUG: Normalisasi nama kolom persis seperti screen.py
+                rename_map = {}
+                for col in df.columns:
+                    cl = str(col).lower().strip()
+                    if cl in ("open", "openprice", "open_price"): rename_map[col] = "Open"
+                    elif cl in ("high", "highprice", "high_price"): rename_map[col] = "High"
+                    elif cl in ("low", "lowprice", "low_price"): rename_map[col] = "Low"
+                    elif cl in ("close", "closeprice", "close_price"): rename_map[col] = "Close"
+                    elif cl in ("date", "tanggal"): rename_map[col] = "Date"
+
+                df = df.rename(columns=rename_map)
+                df = df.loc[:, ~df.columns.duplicated(keep="first")]
+                
+                if all(c in df.columns for c in ["Date", "Open", "High", "Low", "Close"]):
+                    df["Date"] = pd.to_datetime(df["Date"]).dt.normalize()
+                    df = df.sort_values("Date").reset_index(drop=True)
+                    df_ohlcv_map[k] = df
+            except:
+                pass
+
+    gaps_to_test = [(0.02, 0.10), (0.02, 0.15), (0.02, 0.20)]
+    
+    print("\n" + "="*95)
+    print("BANDINGKAN RULE 1 vs RULE 2 (TRAIL 0.5%, SL 3%)")
+    print("="*95)
+    print(f"{'Rule':<10} | {'Gap Filter':<12} | {'N (Trade)':<10} | {'Win Rate':<10} | {'Avg P/L':<10} | {'Status Sinyal'}")
+    print("-" * 95)
+    
+    for gmin, gmax in gaps_to_test:
+        gap_str = f"{int(gmin*100)}-{int(gmax*100)}%"
+        
+        n1, wr1, avg1, st1 = run_backtest(panel, rule1, df_ohlcv_map, gmin, gmax)
+        print(f"{'Rule 1':<10} | {gap_str:<12} | {n1:<10} | {wr1:>6.1f}%   | {avg1:>+6.2f}%   | SkipLow:{st1['SKIP_GAP_LOW']}, SkipHigh:{st1['SKIP_GAP_HIGH']}")
+        
+        n2, wr2, avg2, st2 = run_backtest(panel, rule2, df_ohlcv_map, gmin, gmax)
+        print(f"{'Rule 2':<10} | {gap_str:<12} | {n2:<10} | {wr2:>6.1f}%   | {avg2:>+6.2f}%   | SkipLow:{st2['SKIP_GAP_LOW']}, SkipHigh:{st2['SKIP_GAP_HIGH']}")
+        print("-" * 95)
 
 if __name__ == "__main__":
     main()
