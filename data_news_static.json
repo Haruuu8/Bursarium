@@ -1,8 +1,1321 @@
 {
-  "cached_at": 1794585512.802098,
-  "generated_at": "2026-11-13T22:58:32.802101",
+  "cached_at": 1794825176.0493145,
+  "generated_at": "2026-11-16T17:32:56.049318",
   "total": 5000,
   "data": [
+    {
+      "tanggal": "2026-11-16T17:29:28",
+      "kode": "XKIV",
+      "no_pengumuman": "161126/nav/xkiv",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d43ef35040_d39871ef91.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:29:12",
+      "kode": "HMSP",
+      "no_pengumuman": "134/CLD/HMS/XI/2026",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/94e39e5dd2_2dafde58f0.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:29:02",
+      "kode": "XPTD",
+      "no_pengumuman": "214/NAV-XPTD/XI/26",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/155941eaaf_a5f823d22b.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:28:20",
+      "kode": "KETR",
+      "no_pengumuman": "018/KT-OJK/VP/CORSEC/SPE/XI/2026",
+      "judul": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Luar Biasa",
+      "isi": "",
+      "kategori": [
+        "RUPSLB"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/262c6b13dc_87c61382d0.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:28:02",
+      "kode": "XISC",
+      "no_pengumuman": "719/IPIM-RD/XI/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/6305ce5de2_8c0a94d737.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:27:47",
+      "kode": "XISI",
+      "no_pengumuman": "716/IPIM-RD/XI/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/56c73e73fa_0a94a49c6e.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:27:19",
+      "kode": "XIIF",
+      "no_pengumuman": "718/IPIM-RD/XI/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/11209243c2_09a4a6f6ae.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:27:14",
+      "kode": "XIJI",
+      "no_pengumuman": "715/IPIM-RD/XI/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/543f3c7d3a_7cb185f470.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:26:31",
+      "kode": "XIIT",
+      "no_pengumuman": "713/IPIM-RD/XI/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3a499dedd4_0af4e0a221.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:25:53",
+      "kode": "R-LQ45X",
+      "no_pengumuman": "712/IPIM-RD/XI/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/c6691fa669_3e01f66c97.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:25:21",
+      "kode": "XMIG",
+      "no_pengumuman": "2550/MAJORIS/XI/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d913f6fb06_5f737c1c7b.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:23:54",
+      "kode": "HRUM",
+      "no_pengumuman": "074/HE/XI/2026",
+      "judul": "Keterbukaan Informasi sehubungan dengan Program Pembelian Kembali Saham PT Harum Energy Tbk",
+      "isi": "",
+      "kategori": [
+        "BUYBACK"
+      ],
+      "tipe": "good",
+      "bobot": 6,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/932e44e08b_108486d2f7.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:23:46",
+      "kode": "XKMS",
+      "no_pengumuman": "161126/nav/xkms",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/2bc4ccb392_2829388ed1.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:20:21",
+      "kode": "BRPT",
+      "no_pengumuman": "061/BP/M-Corps/XI/2026",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d284f55d33_6a03495834.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:18:34",
+      "kode": "XSSK",
+      "no_pengumuman": "1513/OPS/SAM/XI/26",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/6d38afa9cc_485db76bfc.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:18:13",
+      "kode": "UFOE",
+      "no_pengumuman": "02/Corsec-DSA/XI/2026",
+      "judul": "Penyampaian Bukti Iklan Bukti Iklan Koran PT. Damai Sejahtera Abadi, Tbk mengadakan UFO PADEL CUP di Graha Padel Club Surabaya",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/c2dcbbfc1a_fd4fed9172.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:17:21",
+      "kode": "XKID",
+      "no_pengumuman": "161126/nav/xkid",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/19fd201993_9f09d6ef27.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:06:56",
+      "kode": "DAAZ",
+      "no_pengumuman": "102/DIR-XI/2026",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/b528d62a50_b463f6db5b.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:03:42",
+      "kode": "XIPI",
+      "no_pengumuman": "Peng-P-01115/BEI.PP3/11-2026",
+      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/461810eb3f_3f6d756732.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:03:23",
+      "kode": "MGLV",
+      "no_pengumuman": "Peng-RI-00063/BEI.PP3/11-2026",
+      "judul": "Pencatatan Saham",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/2b008edaa3_6c91af9982.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:03:20",
+      "kode": "CMNP",
+      "no_pengumuman": "680/DIR-TU.00/XI/2026",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/32be611f91_5363c6d42a.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:02:48",
+      "kode": "INET",
+      "no_pengumuman": "Peng-P-01237/BEI.PP2/11-2026",
+      "judul": "Pencatatan Saham",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/e9957b5631_91b770986f.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:02:03",
+      "kode": "R-ABFII",
+      "no_pengumuman": "Peng-P-01234/BEI.PP2/11-2026",
+      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/b4376e4c93_6e34adc533.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:01:31",
+      "kode": "ISAP",
+      "no_pengumuman": "Peng-P-01235/BEI.PP2/11-2026",
+      "judul": "Pencatatan Saham",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/8638708936_87067d8b95.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:00:35",
+      "kode": "CYBR",
+      "no_pengumuman": "Peng-P-01236/BEI.PP2/11-2026",
+      "judul": "Pencatatan Saham",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d112b8d001_7c02702517.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T17:00:05",
+      "kode": "R-ABFII",
+      "no_pengumuman": "Peng-P-01238/BEI.PP2/11-2026",
+      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/7145dd6ec3_a6571d25dc.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:59:20",
+      "kode": "DJPU",
+      "no_pengumuman": "Peng-JTO-00085/BEI.PP2/11-2026",
+      "judul": "Jatuh Tempo Surat Berharga Negara",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/7c6296a659_9311f02a53.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:58:20",
+      "kode": "R-LQ45X",
+      "no_pengumuman": "Peng-P-01243/BEI.PP1/11-2026.",
+      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/8989e19f3e_b3d12b1545.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:57:54",
+      "kode": "MKNT",
+      "no_pengumuman": "Peng-PNE-00013/BEI.PP1/11-2026",
+      "judul": "Perubahan Nama Emiten",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/a73ee0526d_4d9774ce93.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:57:31",
+      "kode": "PTPP",
+      "no_pengumuman": "294A/EXT/PP/CORSEC/2026",
+      "judul": "Pemberitahuan Hasil RUPO PP (Persero) Tbk (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/c321b64f7c_e1c8f6aff6.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:57:21",
+      "kode": "PTPP",
+      "no_pengumuman": "296A/EXT/PP/CORSEC/2026",
+      "judul": "Pemberitahuan Hasil RUPSU PP (Persero) Tbk (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "RUPS"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/2507710ddb_b1f72bc838.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:57:10",
+      "kode": "PTPP",
+      "no_pengumuman": "295A/EXT/PP/CORSEC/2026",
+      "judul": "Pemberitahuan Hasil RUPSU PP (Persero) Tbk (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "RUPS"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/15032aec5b_5018fe7ee2.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:56:57",
+      "kode": "PTPP",
+      "no_pengumuman": "297A/EXT/PP/CORSEC/2026",
+      "judul": "Pemberitahuan Hasil RUPO PP (Persero) Tbk (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3a7b6472fa_8d7db13a1f.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:55:32",
+      "kode": "PTPP",
+      "no_pengumuman": "302/EXT/PP/CORSEC/2026",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/7f4d3d5f61_7a84c748a5.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:55:00",
+      "kode": "XKGS",
+      "no_pengumuman": "161126/nav/xkgs",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/a2c2fd5069_91b49ccfce.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:52:28",
+      "kode": "ENRG",
+      "no_pengumuman": "383/EMP.DIR/1070/11-26/E",
+      "judul": "Keterbukaan Informasi",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/119287e022_17162b6a72.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:50:51",
+      "kode": "ZP",
+      "no_pengumuman": "042/ECD-MSI/XI/2026",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/0c2218b9ef_540fb171ca.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:49:13",
+      "kode": "HD",
+      "no_pengumuman": "00012/E087/KGI/11/2026",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/1dd91a6e35_ceb4e6f9e5.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:46:26",
+      "kode": "DRMA",
+      "no_pengumuman": "0051/DP/EXT/./CKR/CORSEC/X/2026",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/c100041e6b_034b88ad82.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:44:50",
+      "kode": "STAR",
+      "no_pengumuman": "055/Corsec-STAR/XI/2026",
+      "judul": "Penjelasan atas Volatilitas Transaksi",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/75b6885696_2703d7104a.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:44:50",
+      "kode": "XBGS",
+      "no_pengumuman": "001/XBGS/16/11/2026",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/df24a456fb_1b462c21d9.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:39:33",
+      "kode": "PZZA",
+      "no_pengumuman": "010/CS-SMK/XI/2026",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/6b38af52d8_d54f73e526.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:39:13",
+      "kode": "WINS",
+      "no_pengumuman": "2995/A.20/XI/2026/WINS.349",
+      "judul": "Jadwal Dividen Tunai Interim",
+      "isi": "",
+      "kategori": [
+        "DIVIDEN"
+      ],
+      "tipe": "good",
+      "bobot": 6,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/7e08131d45_982b81a037.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:36:10",
+      "kode": "R-ABFII",
+      "no_pengumuman": "02808/FMS/OPS-BTIM/XI/26",
+      "judul": "Laporan Jumlah Peredaran Unit Penyertaan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3d601be4d3_a2f07fe894.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:32:47",
+      "kode": "IRSX",
+      "no_pengumuman": "168/IRSX-BEI/XI/2026",
+      "judul": "Penjelasan S-13462/BEI.PP2/10-2026 Permintaan Penjelasan PT Bursa Efek Indonesia",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/11cf2f7826_238b6bbba7.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:31:20",
+      "kode": "GOTO",
+      "no_pengumuman": "105/GOTO/CS/JKT/XI/2026",
+      "judul": "Perubahan Corporate Secretary",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/383983519f_c51435d2e7.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:27:22",
+      "kode": "PTPP",
+      "no_pengumuman": "300/EXT/PP/CORSEC/2026",
+      "judul": "Penyampaian Bukti Iklan Pemberitahuan Kelalaian Obligasi dan Sukuk Mudharabah PT PP (Persero) Tbk ",
+      "isi": "",
+      "kategori": [
+        "AKSI_KORPORASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/6e3c0f1182_63f1b7cea6.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:21:32",
+      "kode": "DR",
+      "no_pengumuman": "026/EQD/RHB/11/2026",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d8218eaedc_7bd7c52a21.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:20:59",
+      "kode": "ALMI",
+      "no_pengumuman": "037R/ALMI/CS/XI/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/725a01506c_3d1912b739.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:20:24",
+      "kode": "YU",
+      "no_pengumuman": "001/CGSI/DIGBIZ-SW/161126",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/eb4bd33ae3_d4246314da.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:18:31",
+      "kode": "ALMI",
+      "no_pengumuman": "035R2/ALMI/CS/X/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3e34946c9c_2db11d3a3d.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:16:18",
+      "kode": "BQ",
+      "no_pengumuman": "SWS/DO/422/KISI-BEI/XI/2026",
+      "judul": "Laporan Jumlah Structured Warrant Beredar",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/169ad1cb37_7bfb00ec51.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:13:29",
+      "kode": "XCLQ",
+      "no_pengumuman": "INS/064/CAM/OPS/11/26",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/5208cac13a_6ed4a53f19.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:10:25",
+      "kode": "CUAN",
+      "no_pengumuman": "084/CS-L/PJK/XI/2026",
+      "judul": "Penyampaian Materi Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/927ed4cadc_9020e19971.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:04:07",
+      "kode": "MGLV",
+      "no_pengumuman": "025/NexAI/Corsec/XI/2026",
+      "judul": "Penyampaian Bukti Iklan Hasil RUPS",
+      "isi": "",
+      "kategori": [
+        "RUPS"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d4f308aa30_629baf411d.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T16:00:04",
+      "kode": "ALMI",
+      "no_pengumuman": "031R/ALMI/CS/IX/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/11c4d76fcd_cd24d6ab8b.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:50:42",
+      "kode": "AGRS",
+      "no_pengumuman": "019/DIR/XI/26",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/9a022e3747_18b50ac568.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:47:32",
+      "kode": "INAI",
+      "no_pengumuman": "045R/INAI-CS/X/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/428781ae14_d8154fb052.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:42:29",
+      "kode": "CEKA",
+      "no_pengumuman": "0006/WICA/LEG-ADM/XI/2026",
+      "judul": "Perubahan Komite Audit",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/c1f77a0193_b5b37edabd.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:37:35",
+      "kode": "INAI",
+      "no_pengumuman": "041R2/INAI-CS/IX/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/f5ce85f820_6b09f29b92.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:35:42",
+      "kode": "MDKI",
+      "no_pengumuman": "11.0764/CORSEC/BEI/2026",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/34cdb43f0d_79865381df.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:28:46",
+      "kode": "INAI",
+      "no_pengumuman": "040R/INAI-CS/VIII/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d035527478_bec0ba2c7a.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:26:11",
+      "kode": "GMFI",
+      "no_pengumuman": "GMF/DT/SPE-2033/26",
+      "judul": "Perubahan Jadwal Rapat Umum Pemegang Saham Luar Biasa",
+      "isi": "",
+      "kategori": [
+        "RUPSLB"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/99e9430f6f_7a10e849b8.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:25:24",
+      "kode": "ATLA",
+      "no_pengumuman": "LK/16112026/0005/1",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-16112026-8061-00.pdf-0.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:21:35",
+      "kode": "INET",
+      "no_pengumuman": "205/INET-BEI/XI/2026",
+      "judul": "Laporan Hasil Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/d1bb39ee60_18043867a1.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:13:35",
+      "kode": "INAI",
+      "no_pengumuman": "036R/INAI-CS/VII/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/248e431e61_97c365f406.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:12:58",
+      "kode": "KARW",
+      "no_pengumuman": "057/MJP/CORSEC/XI/2026",
+      "judul": "Perubahan Internal Audit",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/36524664af_e9b2e49da1.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:07:16",
+      "kode": "DJPU",
+      "no_pengumuman": "Peng-LSB-00011/BEI.PP2/11-2026",
+      "judul": "Rencana Lelang Surat Berharga Syariah Negara Pada Hari Selasa, 17 November 2026",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/7fb4c47e43_48a158235c.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:06:44",
+      "kode": "UNSP",
+      "no_pengumuman": "022/CS-BSP/RPL/XI/2026",
+      "judul": "Rencana Transaksi Perubahan Kegiatan Usaha",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/79105700a1_b40b943f69.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:06:19",
+      "kode": "UNSP",
+      "no_pengumuman": "021/CS-BSP/RPL/XI/2026",
+      "judul": "Pemberitahuan Rencana Rapat Umum Pemegang Saham Luar Biasa",
+      "isi": "",
+      "kategori": [
+        "RUPSLB"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/fdbffeb916_5882549711.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:03:20",
+      "kode": "INAI",
+      "no_pengumuman": "025R/INAI-CS/VI/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/133162252e_e46f918f26.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T15:01:23",
+      "kode": "MYTX",
+      "no_pengumuman": "054/API/CORP-LGL/XI/2026",
+      "judul": "Penyampaian Laporan Keuangan Interim (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/20261116150813-65808-0/FinancialStatement-2026-II-MYTX.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:51:35",
+      "kode": "HEAL",
+      "no_pengumuman": "LK/16112026/0004/1",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-16112026-3951-00.pdf-0.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:48:16",
+      "kode": "INAI",
+      "no_pengumuman": "019r/INAI-CS/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/ad562c1883_4f7cfdb753.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:42:23",
+      "kode": "SRSN",
+      "no_pengumuman": "SEC/LTR/26/XI/1366",
+      "judul": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa",
+      "isi": "",
+      "kategori": [
+        "RUPSLB"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/6a01e48579_39e21004f1.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:34:51",
+      "kode": "INAI",
+      "no_pengumuman": "015r/INAI-CS/IV/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/42f3b558f0_72df224f80.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:28:30",
+      "kode": "TRIN",
+      "no_pengumuman": "166/CORSEC/PTP/XI/2026",
+      "judul": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa",
+      "isi": "",
+      "kategori": [
+        "RUPSLB"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/9e62ba353f_ec3ab34f0b.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:25:25",
+      "kode": "HIFI",
+      "no_pengumuman": "045/COS/XI/2026",
+      "judul": "Informasi Kupon",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/2db9de21c7_e728115c0d.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:21:45",
+      "kode": "MDIA",
+      "no_pengumuman": "0060/CORSEC/MDIA/XI/2026",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/db88ee164c_4f794d31a3.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T14:08:52",
+      "kode": "VIVA",
+      "no_pengumuman": "0112/GLRCC/VMA/XI/2026",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/15d5dba7aa_78e16dc8af.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T13:52:02",
+      "kode": "AVIA",
+      "no_pengumuman": "123/AA/CORSEC/XI/2026",
+      "judul": "Siaran Pers",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/f7e0897336_562ab3bf63.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T13:39:17",
+      "kode": "XRDN",
+      "no_pengumuman": "730/IPIM-RD/XI/2026",
+      "judul": "Laporan Jumlah Peredaran Unit Penyertaan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/ddf2c38e37_f334660a86.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T13:38:27",
+      "kode": "XIPI",
+      "no_pengumuman": "723/IPIM-RD/XI/2026",
+      "judul": "Laporan Jumlah Peredaran Unit Penyertaan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/756fc48266_e418a3ec80.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T10:55:42",
+      "kode": "RAAM",
+      "no_pengumuman": "LK/16112026/0003/1",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-16112026-8597-00.pdf-0.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T09:45:16",
+      "kode": "NSSS",
+      "no_pengumuman": "LK/16112026/0002/1",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-16112026-6081-00.pdf-0.pdf"
+    },
+    {
+      "tanggal": "2026-11-16T09:40:19",
+      "kode": "MTLA",
+      "no_pengumuman": "LK/16112026/0001/1",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-16112026-0581-00.pdf-0.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T13:28:54",
+      "kode": "INAI",
+      "no_pengumuman": "049r/INAI-CS/XI/2026",
+      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/422753f756_d500513b0f.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T12:43:17",
+      "kode": "SMBR",
+      "no_pengumuman": "000816/HM.04/EKS/10000914/SMBR/11.2026",
+      "judul": "Penjelasan atas Permintaan Penjelasan Bursa",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3b558c9b5a_dad85ec97f.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T12:43:15",
+      "kode": "ARMY",
+      "no_pengumuman": "083/ARMY/DIR/XI/2026",
+      "judul": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Luar Biasa",
+      "isi": "",
+      "kategori": [
+        "RUPSLB"
+      ],
+      "tipe": "neutral",
+      "bobot": 4,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/0f87884111_0c7abdd87f.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T12:15:00",
+      "kode": "WBSA",
+      "no_pengumuman": "226/Dir-BLI/XI/2026",
+      "judul": "Laporan Hasil Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/ecc9dd1b39_91d9dde176.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T12:08:48",
+      "kode": "SPTO",
+      "no_pengumuman": "SPTO-021/OJKIDX/2026",
+      "judul": "Jadwal Dividen Tunai Interim",
+      "isi": "",
+      "kategori": [
+        "DIVIDEN"
+      ],
+      "tipe": "good",
+      "bobot": 6,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/eec805de86_d2a4a37f7c.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T09:48:05",
+      "kode": "CHEM",
+      "no_pengumuman": "047/CHEM-CORSEC/XI/2026",
+      "judul": "Laporan Hasil Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/b5cea0014e_d77a2efa60.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T09:20:00",
+      "kode": "BIKE",
+      "no_pengumuman": "2026/296/XI/BIKE/MK",
+      "judul": "Penjelasan atas Permintaan Penjelasan Bursa",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/cf4536c0c5_d3c9a375c6.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T09:00:39",
+      "kode": "BLTA",
+      "no_pengumuman": "037/BLT/IRD/XI/2026",
+      "judul": "Laporan Hasil Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/50541393ec_fd4d55f41e.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T08:20:29",
+      "kode": "SMRA",
+      "no_pengumuman": "0742/XI/DIR/SMRA/26",
+      "judul": "Penggabungan usaha, pemisahan usaha, peleburan usaha, atau pembentukan usaha patungan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/402eef1e33_2d72df847a.pdf"
+    },
+    {
+      "tanggal": "2026-11-15T07:41:45",
+      "kode": "COIN",
+      "no_pengumuman": "IKS/CS/079/XI/2026",
+      "judul": "Laporan dan Pengumuman Informasi atau Fakta Material",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/ea615d3e32_3d51f4103d.pdf"
+    },
+    {
+      "tanggal": "2026-11-14T23:23:59",
+      "kode": "MERI",
+      "no_pengumuman": "MERI/13.11.2026/107",
+      "judul": "Penjelasan atas Volatilitas Transaksi",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3aaf584c22_c1ce634e09.pdf"
+    },
+    {
+      "tanggal": "2026-11-14T13:13:42",
+      "kode": "PGEO",
+      "no_pengumuman": "480/PGE500/2026-S0",
+      "judul": "Pertamina Geothermal Energy dan Lintasarta Bersinergi Dukung Percepatan Digitalisasi Berdaulat Berbasis AI",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/bf3dc8785d_c763fe1659.pdf"
+    },
+    {
+      "tanggal": "2026-11-13T23:43:48",
+      "kode": "R-ABFII",
+      "no_pengumuman": "02778/AM/OPS-BTIM/XI/26",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/c5b845d45a_75a3d7c6b3.pdf"
+    },
+    {
+      "tanggal": "2026-11-13T23:14:09",
+      "kode": "BEER",
+      "no_pengumuman": "LK/13112026/0015/1",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13112026-5114-00.pdf-0.pdf"
+    },
+    {
+      "tanggal": "2026-11-13T23:12:14",
+      "kode": "WINR",
+      "no_pengumuman": "LK/13112026/0014/1",
+      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13112026-2960-00.pdf-0.pdf"
+    },
     {
       "tanggal": "2026-11-13T22:15:46",
       "kode": "XPIN",
@@ -496,6 +1809,19 @@
       "tipe": "neutral",
       "bobot": 2,
       "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/a91f16d22f_20dd6e9499.pdf"
+    },
+    {
+      "tanggal": "2026-11-13T18:11:52",
+      "kode": "XSSK",
+      "no_pengumuman": "1511/OPS/SAM/XI/26",
+      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/0f84926b1e_e3329a7781.pdf"
     },
     {
       "tanggal": "2026-11-13T18:11:46",
@@ -992,6 +2318,19 @@
       "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/5c44931dc2_97b8751446.pdf"
     },
     {
+      "tanggal": "2026-11-13T16:42:20",
+      "kode": "BRMS",
+      "no_pengumuman": "131/BRM-Corsec/XI/2026",
+      "judul": "Rencana Penyelenggaraan Public Expose - Tahunan",
+      "isi": "",
+      "kategori": [
+        "PUBLIKASI"
+      ],
+      "tipe": "neutral",
+      "bobot": 2,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/75415c98aa_34a2a7e5aa.pdf"
+    },
+    {
       "tanggal": "2026-11-13T16:39:54",
       "kode": "STTP",
       "no_pengumuman": "070/STTP-CS/XI/2026-R-068/STTP-CS/XI/2026",
@@ -1081,6 +2420,19 @@
       "tipe": "neutral",
       "bobot": 2,
       "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3d2fefa88a_12dbfde091.pdf"
+    },
+    {
+      "tanggal": "2026-11-13T16:05:40",
+      "kode": "WIRG",
+      "no_pengumuman": "186/CORSEC/WIRG/XI/2026",
+      "judul": "Keterbukaan Informasi atas Penerimaan Permohonan Pengunduran Diri sebagai Anggota Direksi dan selaku Direktur Utama PT WIR ASIA Tbk (Perseroan)",
+      "isi": "",
+      "kategori": [
+        "RESIGN"
+      ],
+      "tipe": "warning",
+      "bobot": 5,
+      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202611/3f9970a5a9_be63243b0e.pdf"
     },
     {
       "tanggal": "2026-11-13T16:05:39",
@@ -63719,1361 +65071,6 @@
       "tipe": "neutral",
       "bobot": 2,
       "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/2d7ed6729b_0b15eb5509.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:57:22",
-      "kode": "PJHB",
-      "no_pengumuman": "Peng-P-01196/BEI.PP1/10-2026",
-      "judul": "Pencatatan Saham",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/64ebc0cdf4_def8415e14.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:56:09",
-      "kode": "ASDF",
-      "no_pengumuman": "Peng-JTO-00097/BEI.PP1/10-2026",
-      "judul": "Jatuh Tempo Obligasi / Sukuk Korporasi",
-      "isi": "",
-      "kategori": [
-        "AKSI_KORPORASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 4,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/71a1517c0b_0bbda10625.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:48:07",
-      "kode": "PJHB",
-      "no_pengumuman": "Peng-P-01194/BEI.PP1/10-2026",
-      "judul": "Pencatatan Saham",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/58ddc4a5f2_ef1697dfe9.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:47:29",
-      "kode": "ENRG",
-      "no_pengumuman": "Peng-P-01189/BEI.PP1/10-2026",
-      "judul": "Pengumuman Bursa Pencatatan Awal Obligasi dan Sukuk",
-      "isi": "",
-      "kategori": [
-        "AKSI_KORPORASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 4,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/97fab501a0_9d3ebbb139.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:47:06",
-      "kode": "MANG",
-      "no_pengumuman": "Peng-P-01197/BEI.PP1/10-2026",
-      "judul": "Pencatatan Saham",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/9fe00a5343_10b64d3270.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:46:21",
-      "kode": "ENRG",
-      "no_pengumuman": "Peng-RI-00049/BEI.PP1/10-2026",
-      "judul": "Pencatatan Saham",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/b83dc4d6c8_bc81f038ca.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:45:49",
-      "kode": "XISR",
-      "no_pengumuman": "Peng-P-01193/BEI.PP1/10-2026",
-      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/8b6b9ae688_b6d03b63ac.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:45:29",
-      "kode": "XIID",
-      "no_pengumuman": "Peng-P-01191/BEI.PP1/10-2026",
-      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7f14494bc6_734aa8a225.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:44:58",
-      "kode": "XIIT",
-      "no_pengumuman": "Peng-P-01192/BEI.PP1/10-2026",
-      "judul": "Pengumuman Bursa Pencatatan Tambahan ETF",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/ee291cd150_4f62527492.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:40:03",
-      "kode": "VKTR",
-      "no_pengumuman": "Peng-RI-00057/BEI.PP3/10-2026",
-      "judul": "Pencatatan Saham",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/19ceaa2b63_3c414f9d23.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:20:46",
-      "kode": "UNTR",
-      "no_pengumuman": "371A/CORP/9981/X/26",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/de3426d22d_0fcf5f06af.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:19:26",
-      "kode": "UNTR",
-      "no_pengumuman": "316A/CORP/9981/IX/26",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/92a9de5737_e25f33d08b.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:15:40",
-      "kode": "APII",
-      "no_pengumuman": "122/SEKPER/APII/X/26",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/767f15fbe5_ab9af9891d.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:14:56",
-      "kode": "SOHO",
-      "no_pengumuman": "666/SOHO/X/2026",
-      "judul": "Pelepasan seluruh kepemilikan saham Perusahaan Terkendali Perseroan, yaitu PT. Soho Industri Pharmasi (PT SIP), di PT Pfizer Indonesia kepada Pfizer Corporation Hong Kong Limited",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/ad9dc057dd_1c58bd9e5d.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:13:45",
-      "kode": "APII",
-      "no_pengumuman": "121/SEKPER/APII/X/26",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/c7ad29d912_4bd4226713.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:07:19",
-      "kode": "ASDM",
-      "no_pengumuman": "B.099/Dir-Keu/X/2026",
-      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/20261023190916-64573-0/FinancialStatement-2026-III-ASDM.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T19:05:45",
-      "kode": "APII",
-      "no_pengumuman": "120/SEKPER/APII/X/26",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/c2129e142e_f02207bec0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:56:26",
-      "kode": "PRDA",
-      "no_pengumuman": "163/CORSEC/EKS/X/2026",
-      "judul": "Penjelasan atas Volatilitas Transaksi",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/540308097c_facf20f1b4.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:51:42",
-      "kode": "LSIP",
-      "no_pengumuman": "CS-53/LSIP/X/2026",
-      "judul": "Keterbukaan Informasi atas Rencana Pembelian Kembali Saham dalam Kondisi Pasar Yang Berfluktuasi Secara Signifikan",
-      "isi": "",
-      "kategori": [
-        "BUYBACK"
-      ],
-      "tipe": "good",
-      "bobot": 6,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/0884db7e64_fba905f667.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:46:58",
-      "kode": "XMSK",
-      "no_pengumuman": "062/XMSK/08/26",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/acf7a3cf4e_93f59c5ee7.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:45:26",
-      "kode": "VTNY",
-      "no_pengumuman": "054/VFI/CRSC/X/2026",
-      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/20261023184832-64561-0/FinancialStatement-2026-III-VTNY.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:44:38",
-      "kode": "XMLF",
-      "no_pengumuman": "1227/RDXMLF/IDX/MMI-2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/3a34f4e819_8879d6b98c.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:41:38",
-      "kode": "BACH",
-      "no_pengumuman": "010/S-CORPSEC/BACH/X/2026",
-      "judul": "Penjelasan atas Volatilitas Transaksi",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7d2d0d0939_e1c554dea7.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:39:52",
-      "kode": "VIVA",
-      "no_pengumuman": "0095/GLRCC/VMA/X/2026",
-      "judul": "Penjelasan atas Permintaan Penjelasan Bursa",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/e1c5631e50_4105b21005.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:37:20",
-      "kode": "TRIS",
-      "no_pengumuman": "05/X/TI/2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/f8f8841eaa_9df5a1898b.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:33:48",
-      "kode": "INDF",
-      "no_pengumuman": "040/ISM/CS/X/26",
-      "judul": "Keterbukaan Informasi Rencana Pembelian Kembali Saham dalam Kondisi Pasar Yang Berfluktuasi Secara Signifikan",
-      "isi": "",
-      "kategori": [
-        "BUYBACK"
-      ],
-      "tipe": "good",
-      "bobot": 6,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/5420d68012_2245af1070.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:32:58",
-      "kode": "ICBP",
-      "no_pengumuman": "040/ICBP/CS/X/26",
-      "judul": "Keterbukaan Informasi Atas Rencana Pembelian Kembali Saham Dalam Kondisi Pasar Yang Berfluktuasi Secara Signifikan",
-      "isi": "",
-      "kategori": [
-        "BUYBACK"
-      ],
-      "tipe": "good",
-      "bobot": 6,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7d6a58566b_f3263030cc.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:21:27",
-      "kode": "XBSK",
-      "no_pengumuman": "001/XBSK/23/10/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/c1df2f8d35_ac7939bbd8.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:19:55",
-      "kode": "ENRG",
-      "no_pengumuman": "LK/23102026/0015/1",
-      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23102026-0701-00.pdf-0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:18:35",
-      "kode": "XMES",
-      "no_pengumuman": "024/XMES/10/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/931fac4c8f_e5fba17e1c.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:18:00",
-      "kode": "XSGO",
-      "no_pengumuman": "02269/SK-OPR/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/e115f9bf0c_5f58835e12.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:17:45",
-      "kode": "XBID",
-      "no_pengumuman": "001/XBID/23/10/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/e473917e47_d67aba0185.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:13:29",
-      "kode": "XBLQ",
-      "no_pengumuman": "001/XBLQ/23/10/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/164872b50c_0bec4320ef.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:13:02",
-      "kode": "BGTG",
-      "no_pengumuman": "062/CRP/X/2026",
-      "judul": "Bank Ganesha Raih Predikat Gold pada The Best Indonesia Annual Report Award 2026!",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI",
-        "PENGHARGAAN"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/493c56ffd0_b7bfd993bf.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:12:54",
-      "kode": "KETR",
-      "no_pengumuman": "037/KT-OJK/VP/CORSEC/SPE/X/2026",
-      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal III 2026 Diaudit",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7dd3eeb9bf_42e8aa3bad.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:11:16",
-      "kode": "BGTG",
-      "no_pengumuman": "061/CRP/X/2026",
-      "judul": "Bank Ganesha Raih Penghargaan The Finance Award 2026!",
-      "isi": "",
-      "kategori": [
-        "PENGHARGAAN"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/76000cf062_130bd7e75e.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:08:18",
-      "kode": "DOID",
-      "no_pengumuman": "294/BIG/CORSEC/X/2026",
-      "judul": "Penjelasan atas Permintaan Penjelasan Bursa",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/f64dc16ddc_01ca04bac2.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T18:03:45",
-      "kode": "XCEG",
-      "no_pengumuman": "199/ETFXCEG/23102026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/2070cc78a4_e277f3c18b.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:57:25",
-      "kode": "XPFT",
-      "no_pengumuman": "23/XPFT/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/8f39a8d2e5_9655e6747f.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:57:22",
-      "kode": "CYBR",
-      "no_pengumuman": "LK/23102026/0014/1",
-      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23102026-2953-00.pdf-0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:56:09",
-      "kode": "XPSG",
-      "no_pengumuman": "23/XPSG/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/3e5d17d2e5_1fdc7f07ac.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:54:07",
-      "kode": "PPGD",
-      "no_pengumuman": "2560/00013.00/2026",
-      "judul": "Penyampaian Prospektus",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/ccabb941bd_37508ef44c.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:53:24",
-      "kode": "XPDV",
-      "no_pengumuman": "23/XPDV/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/be6f4e1a24_d2fb3e4fa2.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:52:39",
-      "kode": "XPLQ",
-      "no_pengumuman": "23/XPLQ/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/083f240e0c_e122ffead6.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:52:03",
-      "kode": "CYBR",
-      "no_pengumuman": "LK/23102026/0013/1",
-      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23102026-6436-00.pdf-0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:51:59",
-      "kode": "BUKA",
-      "no_pengumuman": "1064/BL/CORSEC/SURAT/X/2026",
-      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/20261023110320-64761-0/FinancialStatement-2026-III-BUKA.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:46:13",
-      "kode": "KDTN",
-      "no_pengumuman": "134/PSP-CORSEC/LO/X/2026",
-      "judul": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/84e3585b3a_768cac188c.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:44:18",
-      "kode": "XISB",
-      "no_pengumuman": "1124/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/023cc21ae6_31fb9667de.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:41:31",
-      "kode": "XGLD",
-      "no_pengumuman": "1133/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/8ad12abb94_72f286e3a8.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:38:57",
-      "kode": "XIML",
-      "no_pengumuman": "1128/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/825dcc7207_9ea5890173.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:38:52",
-      "kode": "XIPI",
-      "no_pengumuman": "1127/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/6ccaa1220d_46a7f9f08e.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:38:51",
-      "kode": "BNBA",
-      "no_pengumuman": "LB-01/BNBA/092026.",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/a7c0b6ab8f_1fbb170173.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:38:51",
-      "kode": "UVCR",
-      "no_pengumuman": "021-R/SK/LGL/TKP-REG/IX/2026",
-      "judul": "Keterbukaan Informasi Kepada Pemegang Saham Dalam Rangka Penambahan Modal Tanpa Hak Memesan Efek Terlebih Dahulu (PMTHMETD) KOREKSI (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PMTHMETD",
-        "AKSI_KORPORASI"
-      ],
-      "tipe": "good",
-      "bobot": 9,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/1198e2168b_0556f39d07.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:38:30",
-      "kode": "UVCR",
-      "no_pengumuman": "071/SK/LGL/TKP-REG/X/2026",
-      "judul": "Penyampaian Materi, Tata Tertib, dan Prosedur RUPSLB UVCR 27 Oktober 2026",
-      "isi": "",
-      "kategori": [
-        "RUPSLB",
-        "RUPS"
-      ],
-      "tipe": "neutral",
-      "bobot": 4,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/5b64cab7e2_e25cbdaa96.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:38:01",
-      "kode": "XIHD",
-      "no_pengumuman": "1125/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/e478f8b7b4_9557a81b3e.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:37:06",
-      "kode": "XIIF",
-      "no_pengumuman": "1122/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/def7a3a104_b8a195a06d.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:36:19",
-      "kode": "XISR",
-      "no_pengumuman": "1120/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/2b20d2dbfc_dd315c0060.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:35:52",
-      "kode": "XIID",
-      "no_pengumuman": "1129/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/25e0731e8e_208be4cfe7.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:35:23",
-      "kode": "XISI",
-      "no_pengumuman": "1119/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7cecea0857_69c7ae2b71.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:34:45",
-      "kode": "XIFE",
-      "no_pengumuman": "1131/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/2851d8d574_ac8aa70a39.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:32:08",
-      "kode": "XIJI",
-      "no_pengumuman": "1117/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/79aaff62af_f125adfb81.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:31:15",
-      "kode": "XIPB",
-      "no_pengumuman": "1133/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/cbc7ee5062_b0da958835.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:30:59",
-      "kode": "XIIT",
-      "no_pengumuman": "1114/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/4469edd0b0_8ba844d456.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:30:29",
-      "kode": "R-LQ45X",
-      "no_pengumuman": "1112/IPIM-RD/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7130c01331_249063da36.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:26:06",
-      "kode": "ADHI",
-      "no_pengumuman": "SD-007/COR/10/2026-3",
-      "judul": "Penyampaian Bukti Iklan Panggilan RUPS",
-      "isi": "",
-      "kategori": [
-        "RUPS"
-      ],
-      "tipe": "neutral",
-      "bobot": 4,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7fc2b5fe25_b56fedc904.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:15:53",
-      "kode": "XMGB",
-      "no_pengumuman": "2302/MAJORIS/X/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/a1d84fa484_fac0f4e3e7.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:11:13",
-      "kode": "BNGA",
-      "no_pengumuman": "144/CORSEC/X./2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/9dd77beee2_25df291f5f.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:09:47",
-      "kode": "TGRA",
-      "no_pengumuman": "024/TGRA-IDX/X/2026",
-      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal III 2026 Diaudit",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/26295308ae_c7204e521e.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:08:43",
-      "kode": "BNGA",
-      "no_pengumuman": "129/CORSEC/IX./2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/89994b294c_6326b2a10a.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:05:39",
-      "kode": "XDES",
-      "no_pengumuman": "S-35/2043/BRI-MI/ITO",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/686c85fb46_b3efc99f61.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:04:47",
-      "kode": "XTRA",
-      "no_pengumuman": "3013A/OPR-FA/X/2026.TRAM",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/09b400d7e4_cb6cbd4049.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:01:29",
-      "kode": "BBMD",
-      "no_pengumuman": "027/CORSEC/2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/37b699ab1a_454a017274.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T17:00:13",
-      "kode": "R-ABFII",
-      "no_pengumuman": "02640/FMS/OPS-BTIM/X/26",
-      "judul": "Laporan Jumlah Peredaran Unit Penyertaan",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/316e04b032_020ea05d07.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:58:50",
-      "kode": "UNSP",
-      "no_pengumuman": "004/CS-BSP/X/2026",
-      "judul": "Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/20261023170512-64539-0/FinancialStatement-2026-III-UNSP.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:58:32",
-      "kode": "BLUE",
-      "no_pengumuman": "069D/BPP/CS/1026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/87be503927_0d47592611.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:56:50",
-      "kode": "BLUE",
-      "no_pengumuman": "068B/BPP/CS/0926",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/bb31e4ff50_1df6e00861.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:56:12",
-      "kode": "PRDA",
-      "no_pengumuman": "162./CORSEC/EKS/X/2026",
-      "judul": "Laporan Hasil Pelaksanaan Pembelian Kembali Saham",
-      "isi": "",
-      "kategori": [
-        "BUYBACK"
-      ],
-      "tipe": "good",
-      "bobot": 6,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/93ee98442a_8955dc608a.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:55:23",
-      "kode": "PGEO",
-      "no_pengumuman": "444/PGE500/2026-S0",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/3e3aefb2af_401f606a06.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:53:41",
-      "kode": "IMPC",
-      "no_pengumuman": "LK/23102026/0012/1",
-      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23102026-8774-00.pdf-0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:53:40",
-      "kode": "PGEO",
-      "no_pengumuman": "443/PGE500/2026-S0",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/35d1a6a5d1_5e38f6004d.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:48:47",
-      "kode": "BNII",
-      "no_pengumuman": "S.2026.212./MBI/DIRCOMPLIANCE",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/7b79887db4_339ec2a6b3.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:47:42",
-      "kode": "HD",
-      "no_pengumuman": "00017/E087/KGI/10/2026",
-      "judul": "Laporan Jumlah Structured Warrant Beredar",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/22ce0ee237_a991324387.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:45:35",
-      "kode": "MSIN",
-      "no_pengumuman": "306/MDE-CORSEC/X/2026",
-      "judul": "Penyampaian Materi Public Expose - Insidentil",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/b28e6f3cca_d66e6dbfc4.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:42:59",
-      "kode": "BBMD",
-      "no_pengumuman": "028/CORSEC/2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/8e943fcfde_0e8289eec9.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:42:47",
-      "kode": "PTPP",
-      "no_pengumuman": "Peng-SPT-00021/BEI.PP3/10-2026",
-      "judul": "Penghentian Sementara Perdagangan Efek PP (Persero) Tbk",
-      "isi": "",
-      "kategori": [
-        "SUSPENSI"
-      ],
-      "tipe": "warning",
-      "bobot": 10,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/1f227bbcf5_d4402922a0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:40:41",
-      "kode": "ARCI",
-      "no_pengumuman": "0060/ARCHI/10/2026/G",
-      "judul": "Rencana Penyampaian Laporan Keuangan Kuartal III 2026 Ditelaah secara terbatas",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/1301baa53b_f50456a43c.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:37:48",
-      "kode": "WGSH",
-      "no_pengumuman": "06/SK-WIRA/X-23/2026/A",
-      "judul": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Luar Biasa (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "RUPSLB"
-      ],
-      "tipe": "neutral",
-      "bobot": 4,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/ffd1cecce5_910d8a11d8.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:35:55",
-      "kode": "YU",
-      "no_pengumuman": "001/CGSI/DIGBIZ-SW/231026",
-      "judul": "Laporan Jumlah Structured Warrant Beredar",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/dbe4f921cc_61d41783af.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:32:55",
-      "kode": "XILV",
-      "no_pengumuman": "23B/IIM-XILV/X/2026",
-      "judul": "Laporan Jumlah Peredaran Unit Penyertaan",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/6bf1635c08_9ae1106882.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:31:56",
-      "kode": "",
-      "no_pengumuman": "Peng-CK-00078/BEI.PLP/10-2026",
-      "judul": "Pencabutan Efek Bersifat Ekuitas Dari Pemantauan Khusus",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/2bb127a8d5_df2ebe33b1.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:28:20",
-      "kode": "WGSH",
-      "no_pengumuman": "06/SK-WIRA/X-23/2026",
-      "judul": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Luar Biasa",
-      "isi": "",
-      "kategori": [
-        "RUPSLB"
-      ],
-      "tipe": "neutral",
-      "bobot": 4,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/e736d1516b_7feadf6f60.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:25:18",
-      "kode": "KONI",
-      "no_pengumuman": "055/GP-X/2026",
-      "judul": "Penjelasan atas Volatilitas Transaksi",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/b81832cf31_935aa33eb4.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:24:46",
-      "kode": "ZP",
-      "no_pengumuman": "054/ECD-MSI/X/2026",
-      "judul": "Keterbukaan Informasi terkait Penyesuaian Syarat Ketentuan WT SIDO",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/cc3cfe8934_33b4178ea5.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:23:27",
-      "kode": "NSSS",
-      "no_pengumuman": "LK/23102026/0011/1",
-      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23102026-5503-00.pdf-0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:21:26",
-      "kode": "HRTA",
-      "no_pengumuman": "LK/23102026/0010/1",
-      "judul": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23102026-8708-00.pdf-0.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:17:51",
-      "kode": "BQ",
-      "no_pengumuman": "SWS/DO/393/KISI-BEI/X/2026",
-      "judul": "Laporan Jumlah Structured Warrant Beredar",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/4a0ca0c91d_f867e121f7.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:15:31",
-      "kode": "XCLQ",
-      "no_pengumuman": "INS/077/CAM/OPS/10/26",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/9385ca9d68_2233b30c84.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:11:58",
-      "kode": "ZP",
-      "no_pengumuman": "053/ECD-MSI/X/2026",
-      "judul": "Laporan Jumlah Structured Warrant Beredar",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/0272248b91_988f27a4ae.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:11:01",
-      "kode": "ANDI",
-      "no_pengumuman": "005/DIR-FI/OJK-BEI/X/2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/572bbed2b6_467f542e6f.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:10:15",
-      "kode": "ANDI",
-      "no_pengumuman": "006/DIR-FI/OJK-BEI/X/2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/093c3af288_ee669509c4.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:10:08",
-      "kode": "ASSA",
-      "no_pengumuman": "053/ASSA-CORSEC/X/2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/c5f070099d_8f9e59652f.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:04:51",
-      "kode": "ASSA",
-      "no_pengumuman": "052/ASSA-CORSEC/X/2026",
-      "judul": "Laporan Bulanan Registrasi Pemegang Efek (KOREKSI)",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/73d66906c6_92f8c2ed70.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T16:00:13",
-      "kode": "XBGS",
-      "no_pengumuman": "001/XBGS/23/10/2026",
-      "judul": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/e3d737e1e0_7afc11fb43.pdf"
-    },
-    {
-      "tanggal": "2026-10-23T15:54:37",
-      "kode": "PSKT",
-      "no_pengumuman": "038/RPI-CS/X/2026",
-      "judul": "Penjelasan atas Volatilitas Transaksi",
-      "isi": "",
-      "kategori": [
-        "PUBLIKASI"
-      ],
-      "tipe": "neutral",
-      "bobot": 2,
-      "lampiran": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202610/8afa6e9f4b_22364de794.pdf"
     }
   ]
 }
